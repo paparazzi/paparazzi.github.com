@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('bat__voltage__ardrone2_8c.html','');})
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="i2c__smbus_8h_source.html">mcu_periph/i2c_smbus.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="electrical_8h_source.html">modules/energy/electrical.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for bat_voltage_ardrone2.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('bat__voltage__ardrone2_8c.html','');})
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bat__voltage__ardrone2_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2bat__voltage__ardrone2_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2bat__voltage__ardrone2_8c" id="sw_2airborne_2modules_2sensors_2bat__voltage__ardrone2_8c">
-<area shape="rect" id="node2" href="bat__voltage__ardrone2_8h.html" title="modules/sensors/bat\l_voltage_ardrone2.h" alt="" coords="5,109,161,151"/><area shape="rect" id="node10" href="i2c__smbus_8h.html" title="I2C&#45;bus driver. " alt="" coords="850,117,1031,143"/><area shape="rect" id="node14" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1064,117,1236,143"/></map>
+</map>
 </div>
 </div>
 <p><a href="bat__voltage__ardrone2_8c_source.html">Go to the source code of this file.</a></p>
@@ -182,7 +182,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bat__voltage__ardrone2_8c_ab9af5b4a5c98f740f8a494b3e13b6b5c_cgraph.png" border="0" usemap="#bat__voltage__ardrone2_8c_ab9af5b4a5c98f740f8a494b3e13b6b5c_cgraph" alt=""/></div>
 <map name="bat__voltage__ardrone2_8c_ab9af5b4a5c98f740f8a494b3e13b6b5c_cgraph" id="bat__voltage__ardrone2_8c_ab9af5b4a5c98f740f8a494b3e13b6b5c_cgraph">
-<area shape="rect" id="node2" href="bat__voltage__ardrone2_8c.html#a4ac53f6381d5f6f4c68a9a25aa9c4d10" title="electrical_ardrone2\l_setup" alt="" coords="241,5,385,47"/><area shape="rect" id="node3" href="i2c__smbus_8h.html#a77fd74b2c8d519ec584b44f182365f98" title="i2c_smbus_write_byte_data" alt="" coords="433,13,632,39"/><area shape="rect" id="node4" href="i2c__smbus_8h.html#a692ece12f1304be77218167ca15bc3a0" title="i2c_smbus_access" alt="" coords="680,13,821,39"/></map>
+</map>
 </div>
 </p>
 
@@ -213,7 +213,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bat__voltage__ardrone2_8c_a29f655da1d6e283a278fa280cc567b01_cgraph.png" border="0" usemap="#bat__voltage__ardrone2_8c_a29f655da1d6e283a278fa280cc567b01_cgraph" alt=""/></div>
 <map name="bat__voltage__ardrone2_8c_a29f655da1d6e283a278fa280cc567b01_cgraph" id="bat__voltage__ardrone2_8c_a29f655da1d6e283a278fa280cc567b01_cgraph">
-<area shape="rect" id="node2" href="bat__voltage__ardrone2_8c.html#a4ac53f6381d5f6f4c68a9a25aa9c4d10" title="electrical_ardrone2\l_setup" alt="" coords="216,5,360,47"/><area shape="rect" id="node5" href="i2c__smbus_8h.html#aea6f5d01ddd9b73cba89994e500e0f57" title="i2c_smbus_read_byte_data" alt="" coords="409,67,606,94"/><area shape="rect" id="node3" href="i2c__smbus_8h.html#a77fd74b2c8d519ec584b44f182365f98" title="i2c_smbus_write_byte_data" alt="" coords="408,15,607,42"/><area shape="rect" id="node4" href="i2c__smbus_8h.html#a692ece12f1304be77218167ca15bc3a0" title="i2c_smbus_access" alt="" coords="655,42,796,69"/></map>
+</map>
 </div>
 </p>
 
@@ -246,7 +246,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_cgraph.png" border="0" usemap="#bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_cgraph" alt=""/></div>
 <map name="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_cgraph" id="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_cgraph">
-<area shape="rect" id="node2" href="i2c__smbus_8h.html#a77fd74b2c8d519ec584b44f182365f98" title="i2c_smbus_write_byte_data" alt="" coords="197,13,396,39"/><area shape="rect" id="node3" href="i2c__smbus_8h.html#a692ece12f1304be77218167ca15bc3a0" title="i2c_smbus_access" alt="" coords="444,13,585,39"/></map>
+</map>
 </div>
 </p>
 
@@ -257,7 +257,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_icgraph.png" border="0" usemap="#bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_icgraph" alt=""/></div>
 <map name="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_icgraph" id="bat__voltage__ardrone2_8c_a4ac53f6381d5f6f4c68a9a25aa9c4d10_icgraph">
-<area shape="rect" id="node2" href="bat__voltage__ardrone2_8h.html#ab9af5b4a5c98f740f8a494b3e13b6b5c" title="bat_voltage_ardrone2_init" alt="" coords="197,5,385,32"/><area shape="rect" id="node3" href="bat__voltage__ardrone2_8h.html#a29f655da1d6e283a278fa280cc567b01" title="bat_voltage_ardrone2\l_periodic" alt="" coords="210,57,373,98"/></map>
+</map>
 </div>
 </p>
 
@@ -294,7 +294,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="bat__voltage__ardrone2_8c.html">bat_voltage_ardrone2.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:09 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

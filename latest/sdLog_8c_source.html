@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -236,8 +236,8 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define WRITE_BYTE_CACHE_SIZE 15 // limit overhead :</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">// malloc (15+1) occupies 20bytes</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> fcntl: 2;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>: 6;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> fcntl: 2;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>: 6;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;} FileOp;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">struct </span>LogMessage {</div>
@@ -247,14 +247,14 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">struct </span>FilePoolUnit {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  FIL   fil;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> autoFlushPeriod;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> autoFlushPeriod;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  systime_t lastFlushTs;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">bool</span>  inUse;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">bool</span>  tagAtClose;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="comment">// optimise write byte by caching at send level now that we are based upon tlsf where</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="comment">// allocation granularity is 16 bytes</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  LogMessage *writeByteCache;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> writeByteSeek;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> writeByteSeek;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;};</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">static</span>  <span class="keyword">struct </span>FilePoolUnit <a class="code" href="sdLog_8c.html#ae82bd97eb545159246a84ebf2233421f">IN_DMA_SECTION</a>(fileDes[<a class="code" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1">SDLOG_NUM_FILES</a>]) = {</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">struct  </span>_SdLogBuffer {</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  LogMessage *lm;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">size_t</span>     len;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   <a class="code" href="dw1000__arduino_8c.html#a890c7c6e4d157853f9930bb1e33634a0">offset</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>   <a class="code" href="dw1000__arduino_8c.html#a890c7c6e4d157853f9930bb1e33634a0">offset</a>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} ;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -307,10 +307,10 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif //  SDLOG_NEED_QUEUE</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">uiGetIndexOfLogFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *prefix, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileName) ;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">uiGetIndexOfLogFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *prefix, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileName) ;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> <a class="code" href="sdLog_8c.html#a870830d3ea4fe67badf79e52582f4fae">flushWriteByteBuffer</a>(<span class="keyword">const</span> <a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="sdLog_8h.html#a598888320386c21f975d32d68f29bcf3">  202</a></span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> <a class="code" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3">sdLogInit</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *freeSpaceInKo)</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="sdLog_8h.html#a598888320386c21f975d32d68f29bcf3">  202</a></span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> <a class="code" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3">sdLogInit</a>(<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *freeSpaceInKo)</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="usb__msd_8c.html#af483253b2143078cede883fc3c111ad2">DWORD</a> clusters = 0;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  FATFS *fsp = NULL;</div>
@@ -351,11 +351,11 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">if</span> (freeSpaceInKo != NULL) {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    f_getfree(<span class="stringliteral">&quot;/&quot;</span>, &amp;clusters, &amp;fsp);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    *freeSpaceInKo = clusters * (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)fatfs.csize / 2;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    *freeSpaceInKo = clusters * (<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)fatfs.csize / 2;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifdef SDLOG_NEED_QUEUE</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1">SDLOG_NUM_FILES</a>; i++) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1">SDLOG_NUM_FILES</a>; i++) {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    fileDes[i].inUse = fileDes[i].tagAtClose = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    fileDes[i].writeByteCache = NULL;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    fileDes[i].writeByteSeek = 0;</div>
@@ -392,7 +392,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#ifdef SDLOG_NEED_QUEUE</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogOpenLog(<a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> *<a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *directoryName, <span class="keyword">const</span> <span class="keywordtype">char</span> *prefix,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                       <span class="keyword">const</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> autoFlushPeriod, <span class="keyword">const</span> <span class="keywordtype">bool</span> appendTagAtClose,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                       <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> autoFlushPeriod, <span class="keyword">const</span> <span class="keywordtype">bool</span> appendTagAtClose,</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">size_t</span> sizeInMo, <span class="keyword">const</span> <span class="keywordtype">bool</span> preallocate, <span class="keywordtype">char</span> *fileName, <span class="keyword">const</span> <span class="keywordtype">size_t</span> nameLength)</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  FRESULT rc; <span class="comment">/* fatfs result code */</span></div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">return</span> storageStatus = <a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a5c4deae284478f4565f1a1707f96f464">SDLOG_OK</a>;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;}</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogWriteRaw(<span class="keyword">const</span> <a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> fd, <span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> len)</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogWriteRaw(<span class="keyword">const</span> <a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> fd, <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> len)</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;{</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  FD_CHECK(fd);</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
@@ -690,7 +690,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordflow">return</span>  sdb-&gt;lm-&gt;mess + sdb-&gt;offset;</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;}</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="keywordtype">bool</span>   sdLogSeekBufferFromSDB(<a class="code" href="sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a">SdLogBuffer</a> *sdb, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="dw1000__arduino_8c.html#a890c7c6e4d157853f9930bb1e33634a0">offset</a>)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="keywordtype">bool</span>   sdLogSeekBufferFromSDB(<a class="code" href="sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a">SdLogBuffer</a> *sdb, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="dw1000__arduino_8c.html#a890c7c6e4d157853f9930bb1e33634a0">offset</a>)</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;{</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordflow">if</span> ((sdb-&gt;offset + offset) &lt; sdb-&gt;len) {</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    sdb-&gt;offset += <a class="code" href="dw1000__arduino_8c.html#a890c7c6e4d157853f9930bb1e33634a0">offset</a>;</div>
@@ -742,7 +742,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogWriteByte(<span class="keyword">const</span> <a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> fd, <span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a> sdLogWriteByte(<span class="keyword">const</span> <a class="code" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a> fd, <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;{</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  FD_CHECK(fd);</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  LogMessage *lm;</div>
@@ -844,8 +844,8 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  DIR <a class="code" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>; <span class="comment">/* Directory object */</span></div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  FRESULT rc; <span class="comment">/* Result code */</span></div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  FILINFO fno; <span class="comment">/* File information object */</span></div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> fileIndex ;</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> maxCurrentIndex = 0;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> fileIndex ;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> maxCurrentIndex = 0;</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> directoryNameLen = <a class="code" href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">MIN</a>(strlen(directoryName), 128);</div>
@@ -959,7 +959,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
-<div class="line"><a name="l00851"></a><span class="lineno"><a class="line" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">  851</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">uiGetIndexOfLogFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *prefix, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileName)</div>
+<div class="line"><a name="l00851"></a><span class="lineno"><a class="line" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">  851</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="sdLog_8c.html#a4fbab9a978291b87726867c0dcb05b81">uiGetIndexOfLogFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *prefix, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileName)</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;{</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> len = strlen(prefix);</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
@@ -977,7 +977,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  }</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>) atoi(suffix);</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>) atoi(suffix);</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;}</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;</div>
@@ -1018,7 +1018,7 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  LogMessage *lm = NULL;</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; nbMsgToRFemove; i++) {</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> retLen = (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)(<a class="code" href="msg__queue_8c.html#a38dd61b3d9daa051032159c2473eb2cc">msgqueue_pop_timeout</a>(&amp;messagesQueue, (<span class="keywordtype">void</span> **) &amp;lm, TIME_IMMEDIATE));</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> retLen = (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)(<a class="code" href="msg__queue_8c.html#a38dd61b3d9daa051032159c2473eb2cc">msgqueue_pop_timeout</a>(&amp;messagesQueue, (<span class="keywordtype">void</span> **) &amp;lm, TIME_IMMEDIATE));</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    <span class="keywordflow">if</span> (retLen &lt; 0) {</div>
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    }</div>
@@ -1044,8 +1044,8 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  (void) arg;</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keyword">struct </span>PerfBuffer {</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    <span class="comment">// each element of buffer should be word aligned for sdio efficient write</span></div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    ALIGNED_VAR(4) <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> buffer[<a class="code" href="sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77">SDLOG_WRITE_BUFFER_SIZE</a>] ;</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    ALIGNED_VAR(4) <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> buffer[<a class="code" href="sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77">SDLOG_WRITE_BUFFER_SIZE</a>] ;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size;</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;  } ;</div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  UINT bw;</div>
@@ -1054,16 +1054,16 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  chRegSetThreadName(&quot;thdSdLog&quot;);</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  while (<a class="code" href="microrl_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>) {</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    LogMessage *lm = NULL;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> retLen = (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)(<a class="code" href="msg__queue_8c.html#a6ddc872b801355fb65d98f18829419bd">msgqueue_pop</a>(&amp;messagesQueue, (<span class="keywordtype">void</span> **) &amp;lm));</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> retLen = (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)(<a class="code" href="msg__queue_8c.html#a6ddc872b801355fb65d98f18829419bd">msgqueue_pop</a>(&amp;messagesQueue, (<span class="keywordtype">void</span> **) &amp;lm));</div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordflow">if</span> (retLen &gt; 0) {</div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;      FIL *fo =  &amp;fileDes[lm-&gt;op.fd].fil;</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<span class="keyword">const</span> perfBuffer = perfBuffers[lm-&gt;op.fd].buffer;</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<span class="keyword">const</span> perfBuffer = perfBuffers[lm-&gt;op.fd].buffer;</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;</div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;      <span class="keywordflow">switch</span> (lm-&gt;op.fcntl) {</div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        <span class="keywordflow">case</span> FCNTL_FLUSH:</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        <span class="keywordflow">case</span> FCNTL_CLOSE: {</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;          <span class="keyword">const</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> curBufFill = perfBuffers[lm-&gt;op.fd].size;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;          <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> curBufFill = perfBuffers[lm-&gt;op.fd].size;</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;          <span class="keywordflow">if</span> (fileDes[lm-&gt;op.fd].inUse) {</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;            <span class="keywordflow">if</span> (curBufFill) {</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;              f_write(fo, perfBuffer, curBufFill, &amp;bw);</div>
@@ -1092,16 +1092,16 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        <span class="keywordflow">case</span> FCNTL_WRITE: {</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;          <span class="keyword">const</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> curBufFill = perfBuffers[lm-&gt;op.fd].size;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;          <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> curBufFill = perfBuffers[lm-&gt;op.fd].size;</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;          <span class="keywordflow">if</span> (fileDes[lm-&gt;op.fd].inUse) {</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;            <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> messLen = retLen - (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)(<span class="keyword">sizeof</span>(LogMessage));</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;            <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> messLen = retLen - (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)(<span class="keyword">sizeof</span>(LogMessage));</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;            <span class="keywordflow">if</span> (messLen &lt; (SDLOG_WRITE_BUFFER_SIZE - curBufFill)) {</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;              <span class="comment">// the buffer can accept this message</span></div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;              memcpy(&amp;(perfBuffer[curBufFill]), lm-&gt;mess, (<span class="keywordtype">size_t</span>)(messLen));</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;              perfBuffers[lm-&gt;op.fd].size = (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((perfBuffers[lm-&gt;op.fd].size) + messLen);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;              perfBuffers[lm-&gt;op.fd].size = (<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((perfBuffers[lm-&gt;op.fd].size) + messLen);</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;              <span class="comment">// fill the buffer</span></div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;              <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> stayLen = SDLOG_WRITE_BUFFER_SIZE - curBufFill;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;              <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> stayLen = SDLOG_WRITE_BUFFER_SIZE - curBufFill;</div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;              memcpy(&amp;(perfBuffer[curBufFill]), lm-&gt;mess, (<span class="keywordtype">size_t</span>)(stayLen));</div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;              FRESULT rc = f_write(fo, perfBuffer, SDLOG_WRITE_BUFFER_SIZE, &amp;bw);</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;              nbBytesWritten += bw;</div>
@@ -1122,8 +1122,8 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;                chThdExit(storageStatus = <a class="code" href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a34cd85153505593b951d06813ee58193">SDLOG_FSFULL</a>);</div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;              }</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;              memcpy(perfBuffer, &amp;(lm-&gt;mess[stayLen]), (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(messLen - stayLen));</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;              perfBuffers[lm-&gt;op.fd].size = (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(messLen - stayLen); <span class="comment">// curBufFill</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;              memcpy(perfBuffer, &amp;(lm-&gt;mess[stayLen]), (<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(messLen - stayLen));</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;              perfBuffers[lm-&gt;op.fd].size = (<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(messLen - stayLen); <span class="comment">// curBufFill</span></div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;            }</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;          }</div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        }</div>
@@ -1176,7 +1176,6 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;</div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="sdLog_8c_html_a03326adcb90b1cc07d684a6abaff2051"><div class="ttname"><a href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051">sdLogFinish</a></div><div class="ttdeci">SdioError sdLogFinish(void)</div><div class="ttdoc">unmount filesystem </div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8c_source.html#l00262">sdLog.c:262</a></div></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="ram__arch_8h_html"><div class="ttname"><a href="ram__arch_8h.html">ram_arch.h</a></div><div class="ttdoc">Specific RAM section for DMA usage on F7. </div></div>
 <div class="ttc" id="msg__queue_8c_html_a38dd61b3d9daa051032159c2473eb2cc"><div class="ttname"><a href="msg__queue_8c.html#a38dd61b3d9daa051032159c2473eb2cc">msgqueue_pop_timeout</a></div><div class="ttdeci">int32_t msgqueue_pop_timeout(MsgQueue *que, void **msgPtr, const systime_t timout)</div><div class="ttdoc">receive message specifying timeout </div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8c_source.html#l00139">msg_queue.c:139</a></div></div>
 <div class="ttc" id="sdLog_8c_html_ae82bd97eb545159246a84ebf2233421f"><div class="ttname"><a href="sdLog_8c.html#ae82bd97eb545159246a84ebf2233421f">IN_DMA_SECTION</a></div><div class="ttdeci">static IN_DMA_SECTION(FATFS fatfs)</div></div>
@@ -1219,21 +1218,19 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="ttc" id="microrl_8h_html_a41f9c5fb8b08eb5dc3edce4dcb37fee7"><div class="ttname"><a href="microrl_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></div><div class="ttdeci">#define true</div><div class="ttdef"><b>Definition:</b> <a href="microrl_8h_source.html#l00006">microrl.h:6</a></div></div>
 <div class="ttc" id="nps__radio__control__spektrum_8c_html_ade818037fd6c985038ff29656089758d"><div class="ttname"><a href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a></div><div class="ttdeci">uint8_t status</div><div class="ttdef"><b>Definition:</b> <a href="nps__radio__control__spektrum_8c_source.html#l00101">nps_radio_control_spektrum.c:101</a></div></div>
 <div class="ttc" id="tlsf__malloc__arch_8c_html_acd409acd35fa6782d1d26ab94d1c2a89"><div class="ttname"><a href="tlsf__malloc__arch_8c.html#acd409acd35fa6782d1d26ab94d1c2a89">tlsf_realloc_r</a></div><div class="ttdeci">void * tlsf_realloc_r(tlsf_memory_heap_t *heap, void *ptr, size_t bytes)</div><div class="ttdef"><b>Definition:</b> <a href="tlsf__malloc__arch_8c_source.html#l00111">tlsf_malloc_arch.c:111</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="shift__tracking_8c_html_a04c95be5dd36c679da64fa7181ff7cd2"><div class="ttname"><a href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a></div><div class="ttdeci">static const float dir[]</div><div class="ttdef"><b>Definition:</b> <a href="shift__tracking_8c_source.html#l00091">shift_tracking.c:91</a></div></div>
 <div class="ttc" id="sdLog_8c_html_a0feebb43817c3a4d97e34f991012932c"><div class="ttname"><a href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c">removeEmptyLogs</a></div><div class="ttdeci">SdioError removeEmptyLogs(const char *directoryName, const char *prefix, const size_t sizeConsideredEmpty)</div><div class="ttdoc">remove spurious log file left on sd </div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8c_source.html#l00791">sdLog.c:791</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="msg__queue_8h_html_a515d85b3345a7403ee1c9f4b8b5769fcab738f26664be5b03e2d40eb391d707bb"><div class="ttname"><a href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fcab738f26664be5b03e2d40eb391d707bb">MsgQueue_REGULAR</a></div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8h_source.html#l00047">msg_queue.h:47</a></div></div>
 <div class="ttc" id="msg__queue_8h_html_structMsgQueue"><div class="ttname"><a href="msg__queue_8h.html#structMsgQueue">MsgQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8h_source.html#l00225">msg_queue.h:225</a></div></div>
 <div class="ttc" id="chibios_2mcu__periph_2spi__arch_8c_html_a4f06fb8dc08823fc33049d42efeb735d"><div class="ttname"><a href="chibios_2mcu__periph_2spi__arch_8c.html#a4f06fb8dc08823fc33049d42efeb735d">THD_WORKING_AREA</a></div><div class="ttdeci">static THD_WORKING_AREA(wa_thd_spi1, SPI_THREAD_STACK_SIZE)</div></div>
 <div class="ttc" id="sdLog_8h_html_ae9361ce95c5a174983481365e90d87b3a1486fb4bf54767066d617d124c7d1b85"><div class="ttname"><a href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a1486fb4bf54767066d617d124c7d1b85">SDLOG_QUEUEFULL</a></div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00118">sdLog.h:118</a></div></div>
 <div class="ttc" id="sdLog_8h_html_ae9361ce95c5a174983481365e90d87b3"><div class="ttname"><a href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3">SdioError</a></div><div class="ttdeci">SdioError</div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00111">sdLog.h:111</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="chdk__pipe_8c_html_a67a6bf1b649a09da4a2df5ed5b83b67f"><div class="ttname"><a href="chdk__pipe_8c.html#a67a6bf1b649a09da4a2df5ed5b83b67f">fo</a></div><div class="ttdeci">static int fo</div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00024">chdk_pipe.c:24</a></div></div>
 <div class="ttc" id="group__chprintf_html_ga561a2515db27520c8a995f2f2213aed4"><div class="ttname"><a href="group__chprintf.html#ga561a2515db27520c8a995f2f2213aed4">chvsnprintf</a></div><div class="ttdeci">void chvsnprintf(char *buffer, size_t size, const char *fmt, va_list ap)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00372">printf.c:372</a></div></div>
 <div class="ttc" id="sdLog_8h_html_ae9361ce95c5a174983481365e90d87b3a4237d6b686f973c6af0bf0c44b849390"><div class="ttname"><a href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a4237d6b686f973c6af0bf0c44b849390">SDLOG_WAS_LAUNCHED</a></div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00124">sdLog.h:124</a></div></div>
 <div class="ttc" id="msg__queue_8c_html_a6ddc872b801355fb65d98f18829419bd"><div class="ttname"><a href="msg__queue_8c.html#a6ddc872b801355fb65d98f18829419bd">msgqueue_pop</a></div><div class="ttdeci">int32_t msgqueue_pop(MsgQueue *que, void **msgPtr)</div><div class="ttdoc">wait then receive message </div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8c_source.html#l00134">msg_queue.c:134</a></div></div>
 <div class="ttc" id="sdLog_8h_html_ae9361ce95c5a174983481365e90d87b3ab1eb9ddaabcd32c1f783882931674a70"><div class="ttname"><a href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3ab1eb9ddaabcd32c1f783882931674a70">SDLOG_FATFS_NOENT</a></div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00115">sdLog.h:115</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="msg__queue_8c_html_a6b457b8a24d51625e782035fe54622a7"><div class="ttname"><a href="msg__queue_8c.html#a6b457b8a24d51625e782035fe54622a7">msgqueue_send</a></div><div class="ttdeci">int32_t msgqueue_send(MsgQueue *que, void *msg, const uint16_t msgLen, const MsgQueueUrgency urgency)</div><div class="ttdoc">send a buffer previously allocated by msgqueue_malloc_before_send </div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8c_source.html#l00069">msg_queue.c:69</a></div></div>
 <div class="ttc" id="serial_8c_html_a6f8059414f0228f0256115e024eeed4b"><div class="ttname"><a href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00026">serial.c:26</a></div></div>
 <div class="ttc" id="msg__queue_8h_html_a515d85b3345a7403ee1c9f4b8b5769fcacc844e0c7a5a368697a91aa4754b6923"><div class="ttname"><a href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fcacc844e0c7a5a368697a91aa4754b6923">MsgQueue_OUT_OF_BAND</a></div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8h_source.html#l00047">msg_queue.h:47</a></div></div>
@@ -1244,16 +1241,19 @@ $(document).ready(function(){initNavTree('sdLog_8c_source.html','');});
 <div class="ttc" id="sdLog_8c_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="sdLog_8c.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8c_source.html#l00039">sdLog.c:39</a></div></div>
 <div class="ttc" id="msg__queue_8h_html_ae17057bd2c7a165ba13f8246407b5cf9"><div class="ttname"><a href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">MsgQueue::mb</a></div><div class="ttdeci">mailbox_t mb</div><div class="ttdef"><b>Definition:</b> <a href="msg__queue_8h_source.html#l00226">msg_queue.h:226</a></div></div>
 <div class="ttc" id="sdLog_8h_html_a0e787f1aae89ff3c1ee8ce8431208d5a"><div class="ttname"><a href="sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a">SdLogBuffer</a></div><div class="ttdeci">struct _SdLogBuffer SdLogBuffer</div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00127">sdLog.h:127</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="tlsf__malloc__arch_8c_html_ad0333be97f2cbeecedde494c53243648"><div class="ttname"><a href="tlsf__malloc__arch_8c.html#ad0333be97f2cbeecedde494c53243648">tlsf_malloc_r</a></div><div class="ttdeci">void * tlsf_malloc_r(tlsf_memory_heap_t *heap, size_t bytes)</div><div class="ttdef"><b>Definition:</b> <a href="tlsf__malloc__arch_8c_source.html#l00095">tlsf_malloc_arch.c:95</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="sdLog_8h_html_ae9361ce95c5a174983481365e90d87b3a1170f7c80aeb4aa3e9e380c66dc99010"><div class="ttname"><a href="sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a1170f7c80aeb4aa3e9e380c66dc99010">SDLOG_NOCARD</a></div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8h_source.html#l00113">sdLog.h:113</a></div></div>
 <div class="ttc" id="sdLog_8c_html_a74e75242132eaabbc1c512488a135926"><div class="ttname"><a href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">MIN</a></div><div class="ttdeci">#define MIN(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="sdLog_8c_source.html#l00042">sdLog.c:42</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="sdLog_8c.html">sdLog.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

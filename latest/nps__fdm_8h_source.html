@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -224,8 +224,8 @@ $(document).ready(function(){initNavTree('nps__fdm_8h_source.html','');});
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#a02895a89b70e21ec7b062d3cd4175f85">  123</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="nps__fdm_8h.html#a02895a89b70e21ec7b062d3cd4175f85">rudder</a>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">//engine state for first engine</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#af76f2c4fcfbc1c7918a76e0c2724167b">  126</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="nps__fdm_8h.html#af76f2c4fcfbc1c7918a76e0c2724167b">num_engines</a>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#ab56630c26a1465a22149500573d8a602">  127</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="nps__fdm_8h.html#ab56630c26a1465a22149500573d8a602">eng_state</a>[<a class="code" href="flight__gear_8h.html#a7e0bc684c00b74b809596824a366b0f5">FG_NET_FDM_MAX_ENGINES</a>];<span class="comment">// Engine state (off, cranking, running)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#af76f2c4fcfbc1c7918a76e0c2724167b">  126</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="nps__fdm_8h.html#af76f2c4fcfbc1c7918a76e0c2724167b">num_engines</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#ab56630c26a1465a22149500573d8a602">  127</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="nps__fdm_8h.html#ab56630c26a1465a22149500573d8a602">eng_state</a>[<a class="code" href="flight__gear_8h.html#a7e0bc684c00b74b809596824a366b0f5">FG_NET_FDM_MAX_ENGINES</a>];<span class="comment">// Engine state (off, cranking, running)</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="nps__fdm_8h.html#ab52534a13ea16399eaeb5bdf4ed30d39">  128</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="nps__fdm_8h.html#ab52534a13ea16399eaeb5bdf4ed30d39">rpm</a>[<a class="code" href="flight__gear_8h.html#a7e0bc684c00b74b809596824a366b0f5">FG_NET_FDM_MAX_ENGINES</a>];       <span class="comment">// Engine RPM rev/min</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
@@ -285,7 +285,6 @@ $(document).ready(function(){initNavTree('nps__fdm_8h_source.html','');});
 <div class="ttc" id="nps__fdm_8h_html_ac07a0f8dffd889c21a81979e521a8d97"><div class="ttname"><a href="nps__fdm_8h.html#ac07a0f8dffd889c21a81979e521a8d97">nps_fdm_set_turbulence</a></div><div class="ttdeci">void nps_fdm_set_turbulence(double wind_speed, int turbulence_severity)</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm__crrcsim_8c_source.html#l00211">nps_fdm_crrcsim.c:211</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_a3169da126f2088c6a9df6760946843a1"><div class="ttname"><a href="nps__fdm_8h.html#a3169da126f2088c6a9df6760946843a1">NpsFdm::init_dt</a></div><div class="ttdeci">double init_dt</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00047">nps_fdm.h:47</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_af76f2c4fcfbc1c7918a76e0c2724167b"><div class="ttname"><a href="nps__fdm_8h.html#af76f2c4fcfbc1c7918a76e0c2724167b">NpsFdm::num_engines</a></div><div class="ttdeci">uint32_t num_engines</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00126">nps_fdm.h:126</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="shift__tracking_8c_html_a04c95be5dd36c679da64fa7181ff7cd2"><div class="ttname"><a href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a></div><div class="ttdeci">static const float dir[]</div><div class="ttdef"><b>Definition:</b> <a href="shift__tracking_8c_source.html#l00091">shift_tracking.c:91</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_ad44d2d683ca1e135085467cd51fc3dec"><div class="ttname"><a href="nps__fdm_8h.html#ad44d2d683ca1e135085467cd51fc3dec">NpsFdm::wind</a></div><div class="ttdeci">struct DoubleVect3 wind</div><div class="ttdoc">velocity in m/s in NED </div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00107">nps_fdm.h:107</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_af985f694ff7650bab92783b431b6e4b2"><div class="ttname"><a href="nps__fdm_8h.html#af985f694ff7650bab92783b431b6e4b2">NpsFdm::lla_pos_geod</a></div><div class="ttdeci">struct LlaCoor_d lla_pos_geod</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00059">nps_fdm.h:59</a></div></div>
@@ -318,13 +317,14 @@ $(document).ready(function(){initNavTree('nps__fdm_8h_source.html','');});
 <div class="ttc" id="nps__fdm_8h_html_aace0f682e85d74dbe1b75c443d119bcd"><div class="ttname"><a href="nps__fdm_8h.html#aace0f682e85d74dbe1b75c443d119bcd">NpsFdm::body_inertial_rotaccel</a></div><div class="ttdeci">struct DoubleRates body_inertial_rotaccel</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00102">nps_fdm.h:102</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_a0ba36b2cc1255eb1f05991c12f1e8494"><div class="ttname"><a href="nps__fdm_8h.html#a0ba36b2cc1255eb1f05991c12f1e8494">NpsFdm::aoa</a></div><div class="ttdeci">double aoa</div><div class="ttdoc">angle of attack in rad </div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00115">nps_fdm.h:115</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_a81842da1e4312e0ff5e6aa91ffa9a5c5"><div class="ttname"><a href="nps__fdm_8h.html#a81842da1e4312e0ff5e6aa91ffa9a5c5">NpsFdm::ltp_h</a></div><div class="ttdeci">struct DoubleVect3 ltp_h</div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00105">nps_fdm.h:105</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__fdm_8h.html">nps_fdm.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

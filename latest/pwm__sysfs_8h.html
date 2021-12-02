@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('pwm__sysfs_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2mcu__periph_2pwm__sysfs_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2linux_2mcu__periph_2pwm__sysfs_8hdep" id="sw_2airborne_2arch_2linux_2mcu__periph_2pwm__sysfs_8hdep">
-<area shape="rect" id="node2" href="pwm__sysfs_8c.html" title="PWM servos handling using Linux sysfs. " alt="" coords="5,95,191,136"/><area shape="rect" id="node3" href="boards_2disco_2actuators_8h.html" title="Actuator driver for the disco. " alt="" coords="215,95,357,136"/><area shape="rect" id="node4" href="boards_2disco_2actuators_8c.html" title="Actuator driver for the Parrot Disco. " alt="" coords="215,184,357,225"/></map>
+</map>
 </div>
 </div>
 <p><a href="pwm__sysfs_8h_source.html">Go to the source code of this file.</a></p>
@@ -151,11 +151,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adf37ab1100ee3be44941eb1cad61524d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#adf37ab1100ee3be44941eb1cad61524d">pwm_sysfs_init</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, char *base_path, char *_export, char *_enable, char *_duty, char *_period, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>)</td></tr>
+<tr class="memitem:adf37ab1100ee3be44941eb1cad61524d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#adf37ab1100ee3be44941eb1cad61524d">pwm_sysfs_init</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, char *base_path, char *_export, char *_enable, char *_duty, char *_period, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channel)</td></tr>
 <tr class="separator:adf37ab1100ee3be44941eb1cad61524d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e6802ca3a6585dac2523484f402131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#a06e6802ca3a6585dac2523484f402131">pwm_sysfs_set_period</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period)</td></tr>
+<tr class="memitem:a06e6802ca3a6585dac2523484f402131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#a06e6802ca3a6585dac2523484f402131">pwm_sysfs_set_period</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> period)</td></tr>
 <tr class="separator:a06e6802ca3a6585dac2523484f402131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e2b5ad11b55ee4c60e50ed3633cf4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#a0e2b5ad11b55ee4c60e50ed3633cf4b5">pwm_sysfs_set_duty</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> duty)</td></tr>
+<tr class="memitem:a0e2b5ad11b55ee4c60e50ed3633cf4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#a0e2b5ad11b55ee4c60e50ed3633cf4b5">pwm_sysfs_set_duty</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> duty)</td></tr>
 <tr class="separator:a0e2b5ad11b55ee4c60e50ed3633cf4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cec5176794d1f0922decb1cbb55072b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__sysfs_8h.html#a7cec5176794d1f0922decb1cbb55072b">pwm_sysfs_enable</a> (struct <a class="el" href="pwm__sysfs_8h.html#structPWM__Sysfs">PWM_Sysfs</a> *pwm, bool enable)</td></tr>
 <tr class="separator:a7cec5176794d1f0922decb1cbb55072b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ duty_cycle_fd</td>
 <td class="fielddoc">
 file descriptor to write/update duty cycle </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a6b8b3d52e53908eec137c925ab9c66db"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a6b8b3d52e53908eec137c925ab9c66db"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 duty_cycle_nsec</td>
 <td class="fielddoc">
@@ -211,7 +211,7 @@ enabled</td>
 <td class="fielddoc">
 true if pwm is enabled </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa2f4d712af0ab00617225b247ced9248"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="aa2f4d712af0ab00617225b247ced9248"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 period_nsec</td>
 <td class="fielddoc">
@@ -281,7 +281,7 @@ path to period file </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_cgraph.png" border="0" usemap="#pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_cgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_cgraph" id="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_cgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d" title="write_file" alt="" coords="195,5,272,32"/></map>
+</map>
 </div>
 </p>
 
@@ -292,7 +292,7 @@ path to period file </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_icgraph.png" border="0" usemap="#pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_icgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_icgraph" id="pwm__sysfs_8h_a7cec5176794d1f0922decb1cbb55072b_icgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8h.html#a0e2b5ad11b55ee4c60e50ed3633cf4b5" title="pwm_sysfs_set_duty" alt="" coords="195,5,348,32"/><area shape="rect" id="node3" href="boards_2disco_2actuators_8h.html#aee9c4499f32c1157c62c8d2a47f600d7" title="actuators_disco_set" alt="" coords="396,5,547,32"/></map>
+</map>
 </div>
 </p>
 
@@ -341,7 +341,7 @@ path to period file </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>channel</em>&#160;</td>
         </tr>
         <tr>
@@ -365,7 +365,7 @@ path to period file </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_cgraph.png" border="0" usemap="#pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_cgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_cgraph" id="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_cgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8c.html#a06e6802ca3a6585dac2523484f402131" title="pwm_sysfs_set_period" alt="" coords="171,5,336,32"/><area shape="rect" id="node3" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d" title="write_file" alt="" coords="384,31,461,57"/></map>
+</map>
 </div>
 </p>
 
@@ -376,7 +376,7 @@ path to period file </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_icgraph.png" border="0" usemap="#pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_icgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_icgraph" id="pwm__sysfs_8h_adf37ab1100ee3be44941eb1cad61524d_icgraph">
-<area shape="rect" id="node2" href="boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a" title="actuators_disco_init" alt="" coords="171,5,320,32"/></map>
+</map>
 </div>
 </p>
 
@@ -395,7 +395,7 @@ path to period file </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>duty</em>&#160;</td>
         </tr>
         <tr>
@@ -419,7 +419,7 @@ path to period file </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_cgraph.png" border="0" usemap="#pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_cgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_cgraph" id="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_cgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8c.html#a7cec5176794d1f0922decb1cbb55072b" title="pwm_sysfs_enable" alt="" coords="207,5,348,32"/><area shape="rect" id="node3" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d" title="write_file" alt="" coords="396,5,473,32"/></map>
+</map>
 </div>
 </p>
 
@@ -430,7 +430,7 @@ path to period file </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_icgraph.png" border="0" usemap="#pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_icgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_icgraph" id="pwm__sysfs_8h_a0e2b5ad11b55ee4c60e50ed3633cf4b5_icgraph">
-<area shape="rect" id="node2" href="boards_2disco_2actuators_8h.html#aee9c4499f32c1157c62c8d2a47f600d7" title="actuators_disco_set" alt="" coords="207,5,357,32"/></map>
+</map>
 </div>
 </p>
 
@@ -449,7 +449,7 @@ path to period file </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>period</em>&#160;</td>
         </tr>
         <tr>
@@ -473,7 +473,7 @@ path to period file </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_cgraph.png" border="0" usemap="#pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_cgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_cgraph" id="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_cgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d" title="write_file" alt="" coords="219,5,296,32"/></map>
+</map>
 </div>
 </p>
 
@@ -484,7 +484,7 @@ path to period file </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_icgraph.png" border="0" usemap="#pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_icgraph" alt=""/></div>
 <map name="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_icgraph" id="pwm__sysfs_8h_a06e6802ca3a6585dac2523484f402131_icgraph">
-<area shape="rect" id="node2" href="pwm__sysfs_8h.html#adf37ab1100ee3be44941eb1cad61524d" title="pwm_sysfs_init" alt="" coords="219,5,336,32"/><area shape="rect" id="node3" href="boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a" title="actuators_disco_init" alt="" coords="384,5,533,32"/></map>
+</map>
 </div>
 </p>
 
@@ -496,7 +496,7 @@ path to period file </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="pwm__sysfs_8h.html">pwm_sysfs.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:26 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

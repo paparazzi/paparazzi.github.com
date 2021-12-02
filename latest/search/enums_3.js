@@ -10,6 +10,6 @@ var searchData=
   ['dmlstatus',['DMLStatus',['../direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dd',1,'direct_memory_logger.h']]],
   ['dshot_5fspecial_5fcommands_5ft',['dshot_special_commands_t',['../esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecde',1,'esc_dshot.h']]],
   ['dshotstate_5ft',['dshotstate_t',['../esc__dshot_8h.html#a4009747aee92bff90d44021394b37d02',1,'esc_dshot.h']]],
-  ['dsm_5fprotocol',['dsm_protocol',['../arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3',1,'dsm_protocol():&#160;superbitrf.h'],['../subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3',1,'dsm_protocol():&#160;superbitrf.h']]],
-  ['dsm_5fresolution',['dsm_resolution',['../subsystems_2datalink_2superbitrf_8h.html#aa74389f2d838aceac27d2f44fe95a76a',1,'superbitrf.h']]]
+  ['dsm_5fprotocol',['dsm_protocol',['../arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3',1,'dsm_protocol():&#160;superbitrf.h'],['../modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3',1,'dsm_protocol():&#160;superbitrf.h']]],
+  ['dsm_5fresolution',['dsm_resolution',['../modules_2datalink_2superbitrf_8h.html#aa74389f2d838aceac27d2f44fe95a76a',1,'superbitrf.h']]]
 ];

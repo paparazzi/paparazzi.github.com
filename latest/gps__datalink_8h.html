@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/gps/gps_datalink.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/gps/gps_datalink.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,15 +118,15 @@ $(document).ready(function(){initNavTree('gps__datalink_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps_8h_source.html">modules/gps/gps.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gps_datalink.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__datalink_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__datalink_8h" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2gps_2gps__datalink_8h" id="sw_2airborne_2subsystems_2gps_2gps__datalink_8h">
-<area shape="rect" id="node4" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="76,95,214,121"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="70,169,220,211"/><area shape="rect" id="node14" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="284,169,435,211"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="576,259,746,285"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="239,259,363,285"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="75,259,215,285"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="489,341,644,367"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="68,341,219,367"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1112,259,1264,285"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="668,341,753,367"/></map>
+<div class="center"><img src="gps__datalink_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps_2gps__datalink_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2gps_2gps__datalink_8h" id="sw_2airborne_2modules_2gps_2gps__datalink_8h">
+</map>
 </div>
 </div>
 <p><a href="gps__datalink_8h_source.html">Go to the source code of this file.</a></p>
@@ -143,11 +143,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a2454f9173636f105da3b60752f958ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#a2454f9173636f105da3b60752f958ec3">gps_datalink_init</a> (void)</td></tr>
 <tr class="memdesc:a2454f9173636f105da3b60752f958ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#a2454f9173636f105da3b60752f958ec3">More...</a><br /></td></tr>
 <tr class="separator:a2454f9173636f105da3b60752f958ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217a35f230e3154843b789ea864ac86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#a217a35f230e3154843b789ea864ac86c">gps_datalink_parse_REMOTE_GPS</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a217a35f230e3154843b789ea864ac86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#a217a35f230e3154843b789ea864ac86c">gps_datalink_parse_REMOTE_GPS</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a217a35f230e3154843b789ea864ac86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7bc5db77d4658562ccbc897069a1251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#ac7bc5db77d4658562ccbc897069a1251">gps_datalink_parse_REMOTE_GPS_SMALL</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:ac7bc5db77d4658562ccbc897069a1251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#ac7bc5db77d4658562ccbc897069a1251">gps_datalink_parse_REMOTE_GPS_SMALL</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:ac7bc5db77d4658562ccbc897069a1251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e6a1eebb70356993012b6353da9cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#a22e6a1eebb70356993012b6353da9cc2">gps_datalink_parse_REMOTE_GPS_LOCAL</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a22e6a1eebb70356993012b6353da9cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__datalink_8h.html#a22e6a1eebb70356993012b6353da9cc2">gps_datalink_parse_REMOTE_GPS_LOCAL</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a22e6a1eebb70356993012b6353da9cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -209,9 +209,9 @@ Variables</h2></td></tr>
 
 <p>GPS initialization. </p>
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00041">41</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00050">50</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00104">GpsState::cacc</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps__datalink_8c_source.html#l00038">gps_datalink</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00240">GPS_DATALINK_ID</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00036">ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::pdop</a>, and <a class="el" href="gps_8h_source.html#l00103">GpsState::sacc</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00104">GpsState::cacc</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00256">GPS_DATALINK_ID</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::pdop</a>, and <a class="el" href="gps_8h_source.html#l00103">GpsState::sacc</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -220,7 +220,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__datalink_8h_a2454f9173636f105da3b60752f958ec3_cgraph.png" border="0" usemap="#gps__datalink_8h_a2454f9173636f105da3b60752f958ec3_cgraph" alt=""/></div>
 <map name="gps__datalink_8h_a2454f9173636f105da3b60752f958ec3_cgraph" id="gps__datalink_8h_a2454f9173636f105da3b60752f958ec3_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="181,60,315,87"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="397,31,495,57"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="363,82,529,123"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="579,5,679,32"/><area shape="rect" id="node5" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="577,56,681,83"/></map>
+</map>
 </div>
 </p>
 
@@ -233,16 +233,16 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_datalink_parse_REMOTE_GPS </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00231">231</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00272">272</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
-<p>References <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>.</p>
+<p>References <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -251,7 +251,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__datalink_8h_a217a35f230e3154843b789ea864ac86c_cgraph.png" border="0" usemap="#gps__datalink_8h_a217a35f230e3154843b789ea864ac86c_cgraph" alt=""/></div>
 <map name="gps__datalink_8h_a217a35f230e3154843b789ea864ac86c_cgraph" id="gps__datalink_8h_a217a35f230e3154843b789ea864ac86c_cgraph">
-<area shape="rect" id="node2" href="gps__datalink_8c.html#acf0d0a2f2aabd5cd4c83a13af96466f3" title="Parse the REMOTE_GPS datalink packet. " alt="" coords="199,31,344,57"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="392,5,536,32"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="393,56,535,83"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="584,56,727,83"/></map>
+</map>
 </div>
 </p>
 
@@ -264,16 +264,16 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_datalink_parse_REMOTE_GPS_LOCAL </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00260">260</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00301">301</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
-<p>References <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>.</p>
+<p>References <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -282,7 +282,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__datalink_8h_a22e6a1eebb70356993012b6353da9cc2_cgraph.png" border="0" usemap="#gps__datalink_8h_a22e6a1eebb70356993012b6353da9cc2_cgraph" alt=""/></div>
 <map name="gps__datalink_8h_a22e6a1eebb70356993012b6353da9cc2_cgraph" id="gps__datalink_8h_a22e6a1eebb70356993012b6353da9cc2_cgraph">
-<area shape="rect" id="node2" href="gps__datalink_8c.html#a32ff35ad73d20aa133b2d6d93778f422" title="Parse the REMOTE_GPS_LOCAL datalink packet. " alt="" coords="217,74,363,115"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF. " alt="" coords="411,5,559,32"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="607,31,749,57"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="413,107,557,133"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="435,157,534,184"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="628,132,728,159"/><area shape="rect" id="node8" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="626,183,730,209"/></map>
+</map>
 </div>
 </p>
 
@@ -295,16 +295,16 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_datalink_parse_REMOTE_GPS_SMALL </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00250">250</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00291">291</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
-<p>References <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>.</p>
+<p>References <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -313,7 +313,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__datalink_8h_ac7bc5db77d4658562ccbc897069a1251_cgraph.png" border="0" usemap="#gps__datalink_8h_ac7bc5db77d4658562ccbc897069a1251_cgraph" alt=""/></div>
 <map name="gps__datalink_8h_ac7bc5db77d4658562ccbc897069a1251_cgraph" id="gps__datalink_8h_ac7bc5db77d4658562ccbc897069a1251_cgraph">
-<area shape="rect" id="node2" href="gps__datalink_8c.html#a8f42454ba316e49b13649c79007e0cff" title="parse_gps_datalink\l_small" alt="" coords="219,74,364,115"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF. " alt="" coords="412,5,560,32"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="608,31,751,57"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="414,107,558,133"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="437,157,535,184"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="629,132,729,159"/><area shape="rect" id="node8" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="627,183,731,209"/></map>
+</map>
 </div>
 </p>
 
@@ -330,9 +330,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00038">38</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00047">47</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__datalink_8c_source.html#l00041">gps_datalink_init()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, and <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>.</p>
+<p>Referenced by <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, and <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>.</p>
 
 </div>
 </div>
@@ -341,8 +341,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__datalink_8h.html">gps_datalink.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:19 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__datalink_8h.html">gps_datalink.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

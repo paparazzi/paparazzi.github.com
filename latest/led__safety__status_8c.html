@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('led__safety__status_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="electrical_8h_source.html">modules/energy/electrical.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;autopilot_rc_helpers.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="led__safety__status_8h_source.html">modules/light/led_safety_status.h</a>&quot;</code><br />
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('led__safety__status_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="led__safety__status_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2light_2led__safety__status_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2light_2led__safety__status_8c" id="sw_2airborne_2modules_2light_2led__safety__status_8c">
-<area shape="rect" id="node2" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="130,169,183,196"/><area shape="rect" id="node5" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="857,95,1029,121"/><area shape="rect" id="node7" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="364,95,563,121"/><area shape="rect" id="node11" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="742,95,833,121"/><area shape="rect" id="node30" href="led__safety__status_8h.html" title="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..." alt="" coords="1392,333,1569,375"/><area shape="rect" id="node8" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="415,169,511,196"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="106,251,191,278"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="719,169,786,196"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="879,341,1058,367"/><area shape="rect" id="node20" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="363,341,553,367"/><area shape="rect" id="node22" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="859,244,1009,285"/><area shape="rect" id="node24" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="496,244,647,285"/><area shape="rect" id="node25" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="671,244,835,285"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="498,423,653,449"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1024,423,1175,449"/><area shape="rect" id="node23" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="629,341,753,367"/></map>
+</map>
 </div>
 </div>
 <p><a href="led__safety__status_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('led__safety__status_8c.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_802df40992caaa23f4b723bcb0bc8bd1.html">light</a></li><li class="navelem"><a class="el" href="led__safety__status_8c.html">led_safety_status.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

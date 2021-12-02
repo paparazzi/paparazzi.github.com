@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ms5611__spi_8h.html">peripherals/ms5611_spi.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ms5611__spi_8h.html#a440b24ebb33eae9b2d964542ab03792a">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#ac102daf0219645404f2d06f2d2e49f2d">ms5611_spi_init</a>(<span class="keyword">struct</span> <a class="code" href="ms5611__spi_8h.html#structMs5611__Spi">Ms5611_Spi</a> *ms, <span class="keyword">struct</span> <a class="code" href="group__spi.html#structspi__periph">spi_periph</a> *spi_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ms5611__spi_8h.html#a440b24ebb33eae9b2d964542ab03792a">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#ac102daf0219645404f2d06f2d2e49f2d">ms5611_spi_init</a>(<span class="keyword">struct</span> <a class="code" href="ms5611__spi_8h.html#structMs5611__Spi">Ms5611_Spi</a> *ms, <span class="keyword">struct</span> <a class="code" href="group__spi.html#structspi__periph">spi_periph</a> *spi_p, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                     <span class="keywordtype">bool</span> is_ms5607)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">/* set spi_peripheral */</span></div>
@@ -365,7 +365,6 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div class="ttc" id="ms5611__spi_8h_html_ac9198d857286e8fd2fbdfac49d492481"><div class="ttname"><a href="ms5611__spi_8h.html#ac9198d857286e8fd2fbdfac49d492481">Ms5611_Spi::spi_trans</a></div><div class="ttdeci">struct spi_transaction spi_trans</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00038">ms5611_spi.h:38</a></div></div>
 <div class="ttc" id="ms5611__spi_8h_html_a527c32f992041828f69609dda89bb71b"><div class="ttname"><a href="ms5611__spi_8h.html#a527c32f992041828f69609dda89bb71b">Ms5611_Spi::status</a></div><div class="ttdeci">enum Ms5611Status status</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00041">ms5611_spi.h:41</a></div></div>
 <div class="ttc" id="ms5611__spi_8c_html_ab46a8e3a6d57f0c4b1368abbb786f905"><div class="ttname"><a href="ms5611__spi_8c.html#ab46a8e3a6d57f0c4b1368abbb786f905">ms5611_spi_periodic_check</a></div><div class="ttdeci">void ms5611_spi_periodic_check(struct Ms5611_Spi *ms)</div><div class="ttdoc">Periodic function to ensure proper delay after triggering reset or conversion. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8c_source.html#l00092">ms5611_spi.c:92</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="group__spi_html_gga52e70c55efc6a9b04903157a0965baaca3f30804ee098adcaa3b21455346c3707"><div class="ttname"><a href="group__spi.html#gga52e70c55efc6a9b04903157a0965baaca3f30804ee098adcaa3b21455346c3707">SPITransFailed</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00100">spi.h:100</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d">MS5611_STATUS_UNINIT</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00038">ms5611.h:38</a></div></div>
 <div class="ttc" id="ms5611__spi_8c_html_ac102daf0219645404f2d06f2d2e49f2d"><div class="ttname"><a href="ms5611__spi_8c.html#ac102daf0219645404f2d06f2d2e49f2d">ms5611_spi_init</a></div><div class="ttdeci">void ms5611_spi_init(struct Ms5611_Spi *ms, struct spi_periph *spi_p, uint8_t slave_idx, bool is_ms5607)</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8c_source.html#l00033">ms5611_spi.c:33</a></div></div>
@@ -384,13 +383,14 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div class="ttc" id="ms5611__regs_8h_html_a94a2476bb62db682aa6512deea1dc72a"><div class="ttname"><a href="ms5611__regs_8h.html#a94a2476bb62db682aa6512deea1dc72a">MS5611_START_CONV_D2</a></div><div class="ttdeci">#define MS5611_START_CONV_D2</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__regs_8h_source.html#l00070">ms5611_regs.h:70</a></div></div>
 <div class="ttc" id="group__spi_html_afcc49de6913e59398111a070be5aeda2"><div class="ttname"><a href="group__spi.html#afcc49de6913e59398111a070be5aeda2">spi_transaction::status</a></div><div class="ttdeci">enum SPITransactionStatus status</div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00162">spi.h:162</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855ba715209b60f5a4b9e20c3fc46e1fbaf52"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba715209b60f5a4b9e20c3fc46e1fbaf52">MS5611_STATUS_CONV_D1</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00043">ms5611.h:43</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__spi_8c.html">ms5611_spi.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

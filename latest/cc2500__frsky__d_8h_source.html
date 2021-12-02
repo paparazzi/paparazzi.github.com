@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control/cc2500_frsky/cc2500_frsky_d.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/cc2500_frsky/cc2500_frsky_d.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,13 +114,13 @@ $(document).ready(function(){initNavTree('cc2500__frsky__d_8h_source.html','');}
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#a824fb8130d9a96293957b22db08713f2">    4</a></span>&#160;<span class="preprocessor">#define RC_CHANNEL_COUNT_FRSKY_D 8</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821">    6</a></span>&#160;<span class="keyword">static</span> <a class="code" href="cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aa">rx_spi_received_e</a> <a class="code" href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821">frSkyDHandlePacket</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * <span class="keyword">const</span> packet, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * <span class="keyword">const</span> <a class="code" href="cc2500__frsky__shared_8c.html#aeb8e90c8f46c08ed700f34020638df57">protocolState</a>) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821">    6</a></span>&#160;<span class="keyword">static</span> <a class="code" href="cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aa">rx_spi_received_e</a> <a class="code" href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821">frSkyDHandlePacket</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * <span class="keyword">const</span> packet, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * <span class="keyword">const</span> <a class="code" href="cc2500__frsky__shared_8c.html#aeb8e90c8f46c08ed700f34020638df57">protocolState</a>) {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  (void) packet;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  (void) protocolState;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaa037926346f1c2157ec4e10dfb8d4cb29">RX_SPI_RECEIVED_NONE</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f">   12</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f">frSkyDSetRcData</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="code" href="cc2500__rx_8c.html#abfcd8aa775c6829c0e3791b2a16d6482">rcData</a>, <span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *payload) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f">   12</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f">frSkyDSetRcData</a>(<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="code" href="cc2500__rx_8c.html#abfcd8aa775c6829c0e3791b2a16d6482">rcData</a>, <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *payload) {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  (void) rcData;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  (void) payload;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">return</span>;</div>
@@ -129,23 +129,23 @@ $(document).ready(function(){initNavTree('cc2500__frsky__d_8h_source.html','');}
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="cc2500__frsky__d_8h.html#affefe39779ed1cef49b38cd6da7bb8f9">   18</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__frsky__d_8h.html#affefe39779ed1cef49b38cd6da7bb8f9">frSkyDInit</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="cc2500__frsky__shared_8c_html_aeb8e90c8f46c08ed700f34020638df57"><div class="ttname"><a href="cc2500__frsky__shared_8c.html#aeb8e90c8f46c08ed700f34020638df57">protocolState</a></div><div class="ttdeci">static uint8_t protocolState</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__frsky__shared_8c_source.html#l00065">cc2500_frsky_shared.c:65</a></div></div>
 <div class="ttc" id="cc2500__frsky__d_8h_html_a1fabcc6286af8150d908f18c6cc66821"><div class="ttname"><a href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821">frSkyDHandlePacket</a></div><div class="ttdeci">static rx_spi_received_e frSkyDHandlePacket(uint8_t *const packet, uint8_t *const protocolState)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__frsky__d_8h_source.html#l00006">cc2500_frsky_d.h:6</a></div></div>
 <div class="ttc" id="cc2500__compat_8h_html"><div class="ttname"><a href="cc2500__compat_8h.html">cc2500_compat.h</a></div></div>
 <div class="ttc" id="cc2500__rx__spi_8h_html_ae762e48ba5ed309f3196601e6c0900aa"><div class="ttname"><a href="cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aa">rx_spi_received_e</a></div><div class="ttdeci">rx_spi_received_e</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__rx__spi_8h_source.html#l00054">cc2500_rx_spi.h:54</a></div></div>
 <div class="ttc" id="cc2500__rx_8c_html_abfcd8aa775c6829c0e3791b2a16d6482"><div class="ttname"><a href="cc2500__rx_8c.html#abfcd8aa775c6829c0e3791b2a16d6482">rcData</a></div><div class="ttdeci">int16_t rcData[MAX_SUPPORTED_RC_CHANNEL_COUNT]</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__rx_8c_source.html#l00118">cc2500_rx.c:118</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="cc2500__frsky__d_8h_html_a0e8b3f46bfa560c14661c76e64d2583f"><div class="ttname"><a href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f">frSkyDSetRcData</a></div><div class="ttdeci">static void frSkyDSetRcData(uint16_t *rcData, const uint8_t *payload)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__frsky__d_8h_source.html#l00012">cc2500_frsky_d.h:12</a></div></div>
 <div class="ttc" id="cc2500__rx__spi_8h_html_ae762e48ba5ed309f3196601e6c0900aaa037926346f1c2157ec4e10dfb8d4cb29"><div class="ttname"><a href="cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaa037926346f1c2157ec4e10dfb8d4cb29">RX_SPI_RECEIVED_NONE</a></div><div class="ttdef"><b>Definition:</b> <a href="cc2500__rx__spi_8h_source.html#l00055">cc2500_rx_spi.h:55</a></div></div>
 <div class="ttc" id="cc2500__frsky__d_8h_html_affefe39779ed1cef49b38cd6da7bb8f9"><div class="ttname"><a href="cc2500__frsky__d_8h.html#affefe39779ed1cef49b38cd6da7bb8f9">frSkyDInit</a></div><div class="ttdeci">static void frSkyDInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__frsky__d_8h_source.html#l00018">cc2500_frsky_d.h:18</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_69e9f3afec1dbdad02870a66666e16a1.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__frsky__d_8h.html">cc2500_frsky_d.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__frsky__d_8h.html">cc2500_frsky_d.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

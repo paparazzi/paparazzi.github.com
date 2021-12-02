@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('orange__avoider__guided_8c.html','');}
 <code>#include &quot;<a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">firmwares/rotorcraft/guidance/guidance_h.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('orange__avoider__guided_8c.html','');}
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2orange__avoider_2orange__avoider__guided_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2orange__avoider_2orange__avoider__guided_8c" id="sw_2airborne_2modules_2orange__avoider_2orange__avoider__guided_8c">
-<area shape="rect" id="node2" href="orange__avoider__guided_8h.html" title="modules/orange_avoider\l/orange_avoider_guided.h" alt="" coords="5,109,192,151"/><area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="473,109,647,151"/><area shape="rect" id="node17" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="847,117,913,143"/><area shape="rect" id="node22" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="938,117,1073,143"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="677,288,856,315"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1205,288,1395,315"/><area shape="rect" id="node14" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="369,199,565,240"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1048,363,1203,389"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="627,363,778,389"/><area shape="rect" id="node15" href="inttypes_8h.html" title="inttypes.h" alt="" coords="416,288,501,315"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="691,199,842,240"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1106,199,1257,240"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="918,199,1082,240"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="881,288,1005,315"/></map>
+</map>
 </div>
 </div>
 <p><a href="orange__avoider__guided_8c_source.html">Go to the source code of this file.</a></p>
@@ -145,6 +145,11 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ad710ff56d81a195834d8503cc2a7aab3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a> { <br />
+&#160;&#160;<a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac">SAFE</a>, 
+<a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b">OBSTACLE_FOUND</a>, 
+<a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7">OUT_OF_BOUNDS</a>, 
+<a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a">HOLD</a>, 
+<br />
 &#160;&#160;<a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac">SAFE</a>, 
 <a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b">OBSTACLE_FOUND</a>, 
 <a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1">SEARCH_FOR_SAFE_HEADING</a>, 
@@ -162,11 +167,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1296b3545ad39ed2510a2057a20dfb26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26">chooseRandomIncrementAvoidance</a> (void)</td></tr>
+<tr class="memitem:a1296b3545ad39ed2510a2057a20dfb26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26">chooseRandomIncrementAvoidance</a> (void)</td></tr>
 <tr class="separator:a1296b3545ad39ed2510a2057a20dfb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0111a459dae5b767ece1246ad1d1032e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a0111a459dae5b767ece1246ad1d1032e">color_detection_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_x, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_y, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_width, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_height, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> quality, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> extra)</td></tr>
+<tr class="memitem:a0111a459dae5b767ece1246ad1d1032e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a0111a459dae5b767ece1246ad1d1032e">color_detection_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_x, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_y, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_width, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_height, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> quality, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> extra)</td></tr>
 <tr class="separator:a0111a459dae5b767ece1246ad1d1032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3195b561be7153ab68967154ee6a4d3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a3195b561be7153ab68967154ee6a4d3a">floor_detection_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_x, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_y, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_width, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pixel_height, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> quality, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> extra)</td></tr>
+<tr class="memitem:a3195b561be7153ab68967154ee6a4d3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a3195b561be7153ab68967154ee6a4d3a">floor_detection_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_x, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_y, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_width, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pixel_height, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> quality, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> extra)</td></tr>
 <tr class="separator:a3195b561be7153ab68967154ee6a4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b3ef53a7a869aec22a2a48a90e69cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#ae8b3ef53a7a869aec22a2a48a90e69cb">orange_avoider_guided_init</a> (void)</td></tr>
 <tr class="separator:ae8b3ef53a7a869aec22a2a48a90e69cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,19 +188,19 @@ Variables</h2></td></tr>
 <tr class="separator:ad1eeb8136a08c3afc50e14fe613919cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae051cd0ad23cb5636414bd42eb5e1dda"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#ae051cd0ad23cb5636414bd42eb5e1dda">oag_heading_rate</a> = RadOfDeg(20.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</td></tr>
 <tr class="separator:ae051cd0ad23cb5636414bd42eb5e1dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9937b8848c8c0f2f9db6341383271d03"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a9937b8848c8c0f2f9db6341383271d03">navigation_state</a> = <a class="el" href="orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1">SEARCH_FOR_SAFE_HEADING</a></td></tr>
+<tr class="memitem:a9937b8848c8c0f2f9db6341383271d03"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a9937b8848c8c0f2f9db6341383271d03">navigation_state</a> = <a class="el" href="orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1">SEARCH_FOR_SAFE_HEADING</a></td></tr>
 <tr class="separator:a9937b8848c8c0f2f9db6341383271d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fc0752f9ac5d1c38f991acadda7726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#ac2fc0752f9ac5d1c38f991acadda7726">color_count</a> = 0</td></tr>
+<tr class="memitem:ac2fc0752f9ac5d1c38f991acadda7726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#ac2fc0752f9ac5d1c38f991acadda7726">color_count</a> = 0</td></tr>
 <tr class="separator:ac2fc0752f9ac5d1c38f991acadda7726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec8c25b07666ab38c49236a6252867c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a4ec8c25b07666ab38c49236a6252867c">floor_count</a> = 0</td></tr>
+<tr class="memitem:a4ec8c25b07666ab38c49236a6252867c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a4ec8c25b07666ab38c49236a6252867c">floor_count</a> = 0</td></tr>
 <tr class="separator:a4ec8c25b07666ab38c49236a6252867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a260f9270bc72fd1a3f6651ec4d86e841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a260f9270bc72fd1a3f6651ec4d86e841">floor_centroid</a> = 0</td></tr>
+<tr class="memitem:a260f9270bc72fd1a3f6651ec4d86e841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a260f9270bc72fd1a3f6651ec4d86e841">floor_centroid</a> = 0</td></tr>
 <tr class="separator:a260f9270bc72fd1a3f6651ec4d86e841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2924c696a50a0f96590951d193efa3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a5c2924c696a50a0f96590951d193efa3">avoidance_heading_direction</a> = 0</td></tr>
 <tr class="separator:a5c2924c696a50a0f96590951d193efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f129766a0e204df3a617dee55a770c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a6f129766a0e204df3a617dee55a770c7">obstacle_free_confidence</a> = 0</td></tr>
+<tr class="memitem:a6f129766a0e204df3a617dee55a770c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a6f129766a0e204df3a617dee55a770c7">obstacle_free_confidence</a> = 0</td></tr>
 <tr class="separator:a6f129766a0e204df3a617dee55a770c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904927e5a5b9ba1e6aa746cb8f0e8450"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a904927e5a5b9ba1e6aa746cb8f0e8450">max_trajectory_confidence</a> = 5</td></tr>
+<tr class="memitem:a904927e5a5b9ba1e6aa746cb8f0e8450"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a904927e5a5b9ba1e6aa746cb8f0e8450">max_trajectory_confidence</a> = 5</td></tr>
 <tr class="separator:a904927e5a5b9ba1e6aa746cb8f0e8450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa0dc3b6f3dc521aca2caa29ac10d2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider__guided_8c.html#a1fa0dc3b6f3dc521aca2caa29ac10d2b">color_detection_ev</a></td></tr>
 <tr class="separator:a1fa0dc3b6f3dc521aca2caa29ac10d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,12 +282,20 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a></td>
+          <td class="memname">enum <a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac"></a>SAFE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b"></a>OBSTACLE_FOUND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7"></a>OUT_OF_BOUNDS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a"></a>HOLD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac"></a>SAFE&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b"></a>OBSTACLE_FOUND&#160;</td><td class="fielddoc">
 </td></tr>
@@ -312,7 +325,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> chooseRandomIncrementAvoidance </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> chooseRandomIncrementAvoidance </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -334,7 +347,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c_a1296b3545ad39ed2510a2057a20dfb26_icgraph.png" border="0" usemap="#orange__avoider__guided_8c_a1296b3545ad39ed2510a2057a20dfb26_icgraph" alt=""/></div>
 <map name="orange__avoider__guided_8c_a1296b3545ad39ed2510a2057a20dfb26_icgraph" id="orange__avoider__guided_8c_a1296b3545ad39ed2510a2057a20dfb26_icgraph">
-<area shape="rect" id="node2" href="orange__avoider__guided_8h.html#ae8b3ef53a7a869aec22a2a48a90e69cb" title="orange_avoider_guided_init" alt="" coords="304,5,501,32"/><area shape="rect" id="node3" href="orange__avoider__guided_8h.html#a3f1ea4da9ed0b0b23370129310934e54" title="orange_avoider_guided\l_periodic" alt="" coords="317,57,488,98"/></map>
+</map>
 </div>
 </p>
 
@@ -350,43 +363,43 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void color_detection_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>sender_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>quality</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>extra</em>&#160;</td>
         </tr>
         <tr>
@@ -415,7 +428,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c_a0111a459dae5b767ece1246ad1d1032e_icgraph.png" border="0" usemap="#orange__avoider__guided_8c_a0111a459dae5b767ece1246ad1d1032e_icgraph" alt=""/></div>
 <map name="orange__avoider__guided_8c_a0111a459dae5b767ece1246ad1d1032e_icgraph" id="orange__avoider__guided_8c_a0111a459dae5b767ece1246ad1d1032e_icgraph">
-<area shape="rect" id="node2" href="orange__avoider__guided_8h.html#ae8b3ef53a7a869aec22a2a48a90e69cb" title="orange_avoider_guided_init" alt="" coords="196,5,393,32"/></map>
+</map>
 </div>
 </p>
 
@@ -431,43 +444,43 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void floor_detection_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>sender_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>pixel_height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>quality</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td>
           <td class="paramname"><em>extra</em>&#160;</td>
         </tr>
         <tr>
@@ -496,7 +509,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c_a3195b561be7153ab68967154ee6a4d3a_icgraph.png" border="0" usemap="#orange__avoider__guided_8c_a3195b561be7153ab68967154ee6a4d3a_icgraph" alt=""/></div>
 <map name="orange__avoider__guided_8c_a3195b561be7153ab68967154ee6a4d3a_icgraph" id="orange__avoider__guided_8c_a3195b561be7153ab68967154ee6a4d3a_icgraph">
-<area shape="rect" id="node2" href="orange__avoider__guided_8h.html#ae8b3ef53a7a869aec22a2a48a90e69cb" title="orange_avoider_guided_init" alt="" coords="192,5,389,32"/></map>
+</map>
 </div>
 </p>
 
@@ -518,7 +531,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="orange__avoider__guided_8c_source.html#l00102">102</a> of file <a class="el" href="orange__avoider__guided_8c_source.html">orange_avoider_guided.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider__guided_8c_source.html#l00208">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00077">color_detection_cb()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00090">floor_detection_cb()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00073">ORANGE_AVOIDER_VISUAL_DETECTION_ID</a>.</p>
+<p>References <a class="el" href="orange__avoider__guided_8c_source.html#l00208">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00077">color_detection_cb()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00090">floor_detection_cb()</a>, and <a class="el" href="mav__exercise_8c_source.html#l00056">ORANGE_AVOIDER_VISUAL_DETECTION_ID</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -527,7 +540,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c_ae8b3ef53a7a869aec22a2a48a90e69cb_cgraph.png" border="0" usemap="#orange__avoider__guided_8c_ae8b3ef53a7a869aec22a2a48a90e69cb_cgraph" alt=""/></div>
 <map name="orange__avoider__guided_8c_ae8b3ef53a7a869aec22a2a48a90e69cb_cgraph" id="orange__avoider__guided_8c_ae8b3ef53a7a869aec22a2a48a90e69cb_cgraph">
-<area shape="rect" id="node2" href="orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26" title="chooseRandomIncrementAvoidance" alt="" coords="251,5,501,32"/><area shape="rect" id="node3" href="orange__avoider__guided_8c.html#a0111a459dae5b767ece1246ad1d1032e" title="color_detection_cb" alt="" coords="305,56,447,83"/><area shape="rect" id="node4" href="orange__avoider__guided_8c.html#a3195b561be7153ab68967154ee6a4d3a" title="floor_detection_cb" alt="" coords="307,107,445,133"/></map>
+</map>
 </div>
 </p>
 
@@ -549,7 +562,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="orange__avoider__guided_8c_source.html#l00116">116</a> of file <a class="el" href="orange__avoider__guided_8c_source.html">orange_avoider_guided.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider__guided_8c_source.html#l00066">avoidance_heading_direction</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00208">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00063">color_count</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00065">floor_centroid</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00064">floor_count</a>, <a class="el" href="mt9f002__nps_8c_source.html#l00003">front_camera</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00090">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00066">GUIDANCE_H_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00731">guidance_h_set_guided_body_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00720">guidance_h_set_guided_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00750">guidance_h_set_guided_heading_rate()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00069">max_trajectory_confidence</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00096">HorizontalGuidance::mode</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00056">oag_color_count_frac</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00057">oag_floor_count_frac</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00059">oag_heading_rate</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00058">oag_max_speed</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00049">OBSTACLE_FOUND</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00067">obstacle_free_confidence</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00051">OUT_OF_BOUNDS</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00052">REENTER_ARENA</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00048">SAFE</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00050">SEARCH_FOR_SAFE_HEADING</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00134">speed_sp</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="orange__avoider__guided_8c_source.html#l00042">VERBOSE_PRINT</a>.</p>
+<p>References <a class="el" href="orange__avoider__guided_8c_source.html#l00066">avoidance_heading_direction</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00208">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00063">color_count</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00065">floor_centroid</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00064">floor_count</a>, <a class="el" href="mt9f002__nps_8c_source.html#l00003">front_camera</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00090">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00066">GUIDANCE_H_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00731">guidance_h_set_guided_body_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00720">guidance_h_set_guided_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00750">guidance_h_set_guided_heading_rate()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00069">max_trajectory_confidence</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00096">HorizontalGuidance::mode</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00056">oag_color_count_frac</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00057">oag_floor_count_frac</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00059">oag_heading_rate</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00058">oag_max_speed</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00049">OBSTACLE_FOUND</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00067">obstacle_free_confidence</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00051">OUT_OF_BOUNDS</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00052">REENTER_ARENA</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00048">SAFE</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00050">SEARCH_FOR_SAFE_HEADING</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00147">speed_sp</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="orange__avoider__guided_8c_source.html#l00042">VERBOSE_PRINT</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -558,7 +571,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider__guided_8c_a3f1ea4da9ed0b0b23370129310934e54_cgraph.png" border="0" usemap="#orange__avoider__guided_8c_a3f1ea4da9ed0b0b23370129310934e54_cgraph" alt=""/></div>
 <map name="orange__avoider__guided_8c_a3f1ea4da9ed0b0b23370129310934e54_cgraph" id="orange__avoider__guided_8c_a3f1ea4da9ed0b0b23370129310934e54_cgraph">
-<area shape="rect" id="node2" href="orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26" title="chooseRandomIncrementAvoidance" alt="" coords="224,5,475,32"/><area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__h_8c.html#ae192e6147e70b8acc536020ece52714b" title="Set body relative horizontal velocity setpoint in GUIDED mode. " alt="" coords="263,57,435,98"/><area shape="rect" id="node5" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="523,119,721,145"/><area shape="rect" id="node10" href="rotorcraft_2guidance_2guidance__h_8c.html#a326822b3cfdaaf76105134072212346c" title="Set heading setpoint in GUIDED mode. " alt="" coords="263,174,435,215"/><area shape="rect" id="node11" href="rotorcraft_2guidance_2guidance__h_8c.html#af1c1fe7554cfb835e5f674228cb3858b" title="Set heading rate setpoint in GUIDED mode. " alt="" coords="263,239,435,281"/><area shape="rect" id="node4" href="rotorcraft_2guidance_2guidance__h_8c.html#a21a4387750aad0a127dfa928b8557a90" title="Set horizontal velocity setpoint in GUIDED mode. " alt="" coords="523,64,721,91"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="769,119,933,145"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="981,119,1149,145"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1197,93,1351,120"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1199,144,1349,171"/></map>
+</map>
 </div>
 </p>
 
@@ -586,7 +599,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> color_count = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> color_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -624,7 +637,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> floor_centroid = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> floor_centroid = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,7 +653,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> floor_count = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> floor_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -678,7 +691,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> max_trajectory_confidence = 5</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> max_trajectory_confidence = 5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -694,7 +707,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a> <a class="el" href="wedgebug_8c.html#a17e419311a44de1996fd19462767ff73">navigation_state</a> = <a class="el" href="orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1">SEARCH_FOR_SAFE_HEADING</a></td>
+          <td class="memname">enum <a class="el" href="mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3">navigation_state_t</a> <a class="el" href="wedgebug_8c.html#a17e419311a44de1996fd19462767ff73">navigation_state</a> = <a class="el" href="orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1">SEARCH_FOR_SAFE_HEADING</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -772,7 +785,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> obstacle_free_confidence = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> obstacle_free_confidence = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -789,7 +802,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_183f1dc71a771a05a9ab5222da140bc3.html">orange_avoider</a></li><li class="navelem"><a class="el" href="orange__avoider__guided_8c.html">orange_avoider_guided.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

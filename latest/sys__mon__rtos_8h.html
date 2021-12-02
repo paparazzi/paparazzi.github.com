@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('sys__mon__rtos_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2core_2sys__mon__rtos_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2core_2sys__mon__rtos_8h" id="sw_2airborne_2modules_2core_2sys__mon__rtos_8h">
-<area shape="rect" id="node2" href="sys__mon_8h.html" title="System monitoring common header return cpu load, average exec time, ... " alt="" coords="23,95,146,121"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('sys__mon__rtos_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2core_2sys__mon__rtos_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2core_2sys__mon__rtos_8hdep" id="sw_2airborne_2modules_2core_2sys__mon__rtos_8hdep">
-<area shape="rect" id="node2" href="chibios_2modules_2core_2rtos__mon__arch_8c.html" title="sw/airborne/arch/chibios\l/modules/core/rtos_mon_arch.c" alt="" coords="5,102,229,143"/><area shape="rect" id="node3" href="sim_2modules_2core_2rtos__mon__arch_8c.html" title="sw/airborne/arch/sim\l/modules/core/rtos_mon\l_arch.c" alt="" coords="253,95,432,151"/><area shape="rect" id="node4" href="rtos__mon_8c.html" title="sw/airborne/modules\l/core/rtos_mon.c" alt="" coords="456,102,611,143"/></map>
+</map>
 </div>
 </div>
 <p><a href="sys__mon__rtos_8h_source.html">Go to the source code of this file.</a></p>
@@ -184,13 +184,13 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2efc220deeedb557b03258d0b129e8af"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a2efc220deeedb557b03258d0b129e8af"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 core_free_memory</td>
 <td class="fielddoc">
 core free memory in bytes </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0299205b83498f43e45714b726db113a"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a0299205b83498f43e45714b726db113a"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 cpu_load</td>
 <td class="fielddoc">
@@ -202,43 +202,43 @@ cpu_time</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a990b699965a8b565266d73ba82235518"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a990b699965a8b565266d73ba82235518"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 heap_fragments</td>
 <td class="fielddoc">
 Number of fragments in the heap. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4508640470b961fb3d1e9a5b0f522ef3"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a4508640470b961fb3d1e9a5b0f522ef3"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 heap_free_memory</td>
 <td class="fielddoc">
 Total fragmented free memory in the heap. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af6d3f10096fb7c3814f675486f163363"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="af6d3f10096fb7c3814f675486f163363"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 heap_largest</td>
 <td class="fielddoc">
 Largest free block in the heap. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a69b817f26b165508c27a3d6f68d5d35a"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a69b817f26b165508c27a3d6f68d5d35a"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 thread_counter</td>
 <td class="fielddoc">
 number of threads </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3b162568a36d8b0b2357dcbc03226bcc"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a3b162568a36d8b0b2357dcbc03226bcc"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 thread_free_stack[<a class="el" href="sys__mon__rtos_8h.html#a90588fda6cc5fc888afa537c4faf0cd3">RTOS_MON_MAX_THREADS</a>]</td>
 <td class="fielddoc">
 individual thread free stack in bytes </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4ff8354f3128b6319d13597519d8a433"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a4ff8354f3128b6319d13597519d8a433"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 thread_load[<a class="el" href="sys__mon__rtos_8h.html#a90588fda6cc5fc888afa537c4faf0cd3">RTOS_MON_MAX_THREADS</a>]</td>
 <td class="fielddoc">
 individual thread load in centi-percent (10*%) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a593d9092415bdf395f975d43bf0790c5"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a593d9092415bdf395f975d43bf0790c5"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 thread_name_idx</td>
 <td class="fielddoc">
@@ -266,7 +266,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="sys__mon__rtos_8h_source.html#l00036">36</a> of file <a class="el" href="sys__mon__rtos_8h_source.html">sys_mon_rtos.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00166">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="sys__mon__rtos_8h_source.html#l00040">40</a> of file <a class="el" href="sys__mon__rtos_8h_source.html">sys_mon_rtos.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00166">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -315,9 +315,9 @@ string of thread names / identifiers </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00144">144</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00157">157</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, and <a class="el" href="shell__arch_8c_source.html#l00085">shell_add_entry()</a>.</p>
+<p>References <a class="el" href="shell__arch_8c_source.html#l00085">shell_add_entry()</a>.</p>
 
 <p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>.</p>
 
@@ -328,7 +328,7 @@ string of thread names / identifiers </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph.png" border="0" usemap="#sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" id="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph">
-<area shape="rect" id="node2" href="shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry. " alt="" coords="197,5,320,32"/></map>
+</map>
 </div>
 </p>
 
@@ -339,7 +339,7 @@ string of thread names / identifiers </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph.png" border="0" usemap="#sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph" id="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph">
-<area shape="rect" id="node2" href="sys__mon_8h.html#acb5edde6b801b04f23b2c89bd0117cde" title="Init system monitoring. " alt="" coords="197,5,296,32"/></map>
+</map>
 </div>
 </p>
 
@@ -359,9 +359,9 @@ string of thread names / identifiers </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">156</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00166">166</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00210">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">thread_p_time</a>.</p>
+<p>References <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00221">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">thread_p_time</a>.</p>
 
 <p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>.</p>
 
@@ -372,7 +372,7 @@ string of thread names / identifiers </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph.png" border="0" usemap="#sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph" id="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph">
-<area shape="rect" id="node2" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a5837f98f14d1dd47e1dc966abe9a9632" title="get_stack_free" alt="" coords="228,5,344,32"/></map>
+</map>
 </div>
 </p>
 
@@ -383,7 +383,7 @@ string of thread names / identifiers </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph.png" border="0" usemap="#sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph" id="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph">
-<area shape="rect" id="node2" href="sys__mon_8h.html#ac92d4ce59d619452e70fd3a3a53fb7a0" title="Report system status. " alt="" coords="228,5,403,32"/></map>
+</map>
 </div>
 </p>
 
@@ -402,7 +402,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="rtos__mon_8c_source.html#l00030">30</a> of file <a class="el" href="rtos__mon_8c_source.html">rtos_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>, <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>, <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00166">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ string of thread names / identifiers </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="sys__mon__rtos_8h.html">sys_mon_rtos.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

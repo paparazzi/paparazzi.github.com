@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/imu/imu_mpu9250_spi.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/imu/imu_mpu9250_spi.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8h_source.html','');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu_8h.html">subsystems/imu.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu_8h.html">modules/imu/imu.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpu9250__spi_8h.html">peripherals/mpu9250_spi.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
@@ -178,8 +178,8 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8h_source.html','');
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0">   74</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> <a class="code" href="imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5">mpu</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380">   76</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="group__spi.html#structspi__transaction">spi_transaction</a> <a class="code" href="imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380">wait_slave4_trans</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274">   77</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274">wait_slave4_tx_buf</a>[1];</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005">   78</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005">wait_slave4_rx_buf</a>[2];</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274">   77</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274">wait_slave4_tx_buf</a>[1];</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005">   78</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005">wait_slave4_rx_buf</a>[2];</div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec">   79</a></span>&#160;  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec">slave4_ready</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -200,19 +200,19 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8h_source.html','');
 <div class="ttc" id="mpu9250__spi_8h_html_structMpu9250__Spi"><div class="ttname"><a href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu9250__spi_8h_source.html#l00051">mpu9250_spi.h:51</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_a38ba54b488a6adbea2dfb5a060d5d8b5"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5">imu_mpu9250_periodic</a></div><div class="ttdeci">void imu_mpu9250_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250_8c_source.html#l00042">imu_mpu9250.c:42</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_structImuMpu9250"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#structImuMpu9250">ImuMpu9250</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__i2c_8h_source.html#l00073">imu_mpu9250_i2c.h:73</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_af140d4e8a775be026073e67fd3080aa2"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a></div><div class="ttdeci">void imu_mpu9250_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250_8c_source.html#l00047">imu_mpu9250.c:47</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_a0f051bef0ac297a2c71ef42cf1169380"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380">ImuMpu9250::wait_slave4_trans</a></div><div class="ttdeci">struct spi_transaction wait_slave4_trans</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__spi_8h_source.html#l00076">imu_mpu9250_spi.h:76</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_adad553c3f90fb29838650e9d3306b1c4"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a></div><div class="ttdeci">struct ImuMpu9250 imu_mpu9250</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__i2c_8c_source.html#l00100">imu_mpu9250_i2c.c:100</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__spi_8h.html">imu_mpu9250_spi.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:20 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__spi_8h.html">imu_mpu9250_spi.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

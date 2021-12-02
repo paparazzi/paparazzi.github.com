@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('sim__MPPT_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="MPPT_8h_source.html">modules/energy/MPPT.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sim_MPPT.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('sim__MPPT_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__MPPT_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2energy_2sim__MPPT_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2energy_2sim__MPPT_8c" id="sw_2airborne_2modules_2energy_2sim__MPPT_8c">
-<area shape="rect" id="node2" href="MPPT_8h.html" title="Solar cells MPTT monitoring. " alt="" coords="5,102,179,129"/><area shape="rect" id="node5" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="326,95,479,136"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="39,191,124,218"/><area shape="rect" id="node8" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="326,184,479,225"/><area shape="rect" id="node11" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="503,191,697,218"/><area shape="rect" id="node13" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="517,273,656,300"/></map>
+</map>
 </div>
 </div>
 <p><a href="sim__MPPT_8c_source.html">Go to the source code of this file.</a></p>
@@ -136,10 +136,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a204d628ca12dfdc88844dcdd0380d93a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT_mode</a></td></tr>
+<tr class="memitem:a204d628ca12dfdc88844dcdd0380d93a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT_mode</a></td></tr>
 <tr class="memdesc:a204d628ca12dfdc88844dcdd0380d93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">0: VBat (mV) 1: IBat (mA) 2: PBat (mW) 3: VSol (mV) 4: ISol (mA) 5: PSol (mW) 6: IConv (mA) 7: PConv (mW)  <a href="#a204d628ca12dfdc88844dcdd0380d93a">More...</a><br /></td></tr>
 <tr class="separator:a204d628ca12dfdc88844dcdd0380d93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13227707deb233f37302dde38f46a1db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__MPPT_8c.html#a13227707deb233f37302dde38f46a1db">MPPT_data</a> [<a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">NB_DATA</a>]</td></tr>
+<tr class="memitem:a13227707deb233f37302dde38f46a1db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__MPPT_8c.html#a13227707deb233f37302dde38f46a1db">MPPT_data</a> [<a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">NB_DATA</a>]</td></tr>
 <tr class="separator:a13227707deb233f37302dde38f46a1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -179,7 +179,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim__MPPT_8c_source.html#l00043">43</a> of file <a class="el" href="sim__MPPT_8c_source.html">sim_MPPT.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="MPPT_8c_source.html#l00070">data_index</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="MPPT_8c_source.html#l00080">MPPT_ask()</a>, <a class="el" href="MPPT_8c_source.html#l00071">MPPT_data</a>, <a class="el" href="MPPT_8h_source.html#l00039">MPPT_IBAT_INDEX</a>, <a class="el" href="MPPT_8h_source.html#l00040">MPPT_ICONV_INDEX</a>, <a class="el" href="MPPT_8h_source.html#l00041">MPPT_ITOTAL_INDEX</a>, <a class="el" href="MPPT_8c_source.html#l00060">MPPT_mode</a>, <a class="el" href="MPPT_8c_source.html#l00037">MPPT_MODE_ADDR</a>, <a class="el" href="MPPT_8c_source.html#l00035">MPPT_SLAVE_ADDR</a>, <a class="el" href="MPPT_8c_source.html#l00063">MPPT_status</a>, <a class="el" href="MPPT_8c_source.html#l00066">MPPT_STATUS_ASKING</a>, <a class="el" href="MPPT_8c_source.html#l00064">MPPT_STATUS_IDLE</a>, <a class="el" href="MPPT_8c_source.html#l00067">MPPT_STATUS_READING</a>, <a class="el" href="MPPT_8c_source.html#l00065">MPPT_STATUS_WRITING</a>, <a class="el" href="MPPT_8c_source.html#l00039">mppt_trans</a>, <a class="el" href="generic__com_8c_source.html#l00038">NB_DATA</a>, <a class="el" href="MPPT_8c_source.html#l00036">NB_I2C_DATA</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="MPPT_8c_source.html#l00070">data_index</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="MPPT_8c_source.html#l00080">MPPT_ask()</a>, <a class="el" href="MPPT_8c_source.html#l00071">MPPT_data</a>, <a class="el" href="MPPT_8h_source.html#l00039">MPPT_IBAT_INDEX</a>, <a class="el" href="MPPT_8h_source.html#l00040">MPPT_ICONV_INDEX</a>, <a class="el" href="MPPT_8h_source.html#l00041">MPPT_ITOTAL_INDEX</a>, <a class="el" href="MPPT_8c_source.html#l00060">MPPT_mode</a>, <a class="el" href="MPPT_8c_source.html#l00037">MPPT_MODE_ADDR</a>, <a class="el" href="MPPT_8c_source.html#l00035">MPPT_SLAVE_ADDR</a>, <a class="el" href="MPPT_8c_source.html#l00063">MPPT_status</a>, <a class="el" href="MPPT_8c_source.html#l00066">MPPT_STATUS_ASKING</a>, <a class="el" href="MPPT_8c_source.html#l00064">MPPT_STATUS_IDLE</a>, <a class="el" href="MPPT_8c_source.html#l00067">MPPT_STATUS_READING</a>, <a class="el" href="MPPT_8c_source.html#l00065">MPPT_STATUS_WRITING</a>, <a class="el" href="MPPT_8c_source.html#l00039">mppt_trans</a>, <a class="el" href="generic__com_8c_source.html#l00038">NB_DATA</a>, <a class="el" href="MPPT_8c_source.html#l00036">NB_I2C_DATA</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -188,7 +188,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__MPPT_8c_a83382406fe8c87d91b746b22318ec7c9_cgraph.png" border="0" usemap="#sim__MPPT_8c_a83382406fe8c87d91b746b22318ec7c9_cgraph" alt=""/></div>
 <map name="sim__MPPT_8c_a83382406fe8c87d91b746b22318ec7c9_cgraph" id="sim__MPPT_8c_a83382406fe8c87d91b746b22318ec7c9_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="304,5,397,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="300,56,401,83"/><area shape="rect" id="node5" href="MPPT_8c.html#a1a77f26b064f914c26b738def5b6d5fb" title="MPPT_ask" alt="" coords="167,107,252,133"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="449,31,540,57"/></map>
+</map>
 </div>
 </p>
 
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> MPPT_data[<a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">NB_DATA</a>]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> MPPT_data[<a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">NB_DATA</a>]</td>
         </tr>
       </table>
   </td>
@@ -224,7 +224,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> MPPT_mode</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> MPPT_mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,7 +242,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f40bc035e2479aed27dd3b0d2c095b9e.html">energy</a></li><li class="navelem"><a class="el" href="sim__MPPT_8c.html">sim_MPPT.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

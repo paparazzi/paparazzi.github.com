@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/actuators/actuators_esc32.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/actuators/actuators_esc32.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,8 +125,8 @@ $(document).ready(function(){initNavTree('actuators__esc32_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="actuators__esc32_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2actuators_2actuators__esc32_8h" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2actuators_2actuators__esc32_8h" id="sw_2airborne_2subsystems_2actuators_2actuators__esc32_8h">
+<div class="center"><img src="actuators__esc32_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2actuators_2actuators__esc32_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2actuators_2actuators__esc32_8h" id="sw_2airborne_2modules_2actuators_2actuators__esc32_8h">
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -134,9 +134,9 @@ $(document).ready(function(){initNavTree('actuators__esc32_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="actuators__esc32_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2actuators_2actuators__esc32_8hdep" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2actuators_2actuators__esc32_8hdep" id="sw_2airborne_2subsystems_2actuators_2actuators__esc32_8hdep">
-<area shape="rect" id="node2" href="actuators__esc32_8c.html" title="Actuators driver for AutoQuad ESC32 motor controllers. " alt="" coords="6,95,214,136"/></map>
+<div class="center"><img src="actuators__esc32_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2actuators_2actuators__esc32_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2actuators_2actuators__esc32_8hdep" id="sw_2airborne_2modules_2actuators_2actuators__esc32_8hdep">
+</map>
 </div>
 </div>
 <p><a href="actuators__esc32_8h_source.html">Go to the source code of this file.</a></p>
@@ -154,55 +154,55 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a6a83a5d3d7992844e695c2e8469d5afd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a6a83a5d3d7992844e695c2e8469d5afd">ESC32_RESPONSE_CNT</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:a6a83a5d3d7992844e695c2e8469d5afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec134e041a43d6645f049d19e541907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a0ec134e041a43d6645f049d19e541907">ESC32_CAN_LCC_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;30)</td></tr>
+<tr class="memitem:a0ec134e041a43d6645f049d19e541907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a0ec134e041a43d6645f049d19e541907">ESC32_CAN_LCC_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;30)</td></tr>
 <tr class="separator:a0ec134e041a43d6645f049d19e541907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5931e7cd2d81c2120155dee7095224e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a5931e7cd2d81c2120155dee7095224e0">ESC32_CAN_LCC_EXCEPTION</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;30)</td></tr>
+<tr class="memitem:a5931e7cd2d81c2120155dee7095224e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a5931e7cd2d81c2120155dee7095224e0">ESC32_CAN_LCC_EXCEPTION</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;30)</td></tr>
 <tr class="separator:a5931e7cd2d81c2120155dee7095224e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814c39c779f75ee373b15b574b771c96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a814c39c779f75ee373b15b574b771c96">ESC32_CAN_LCC_HIGH</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;30)</td></tr>
+<tr class="memitem:a814c39c779f75ee373b15b574b771c96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a814c39c779f75ee373b15b574b771c96">ESC32_CAN_LCC_HIGH</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;30)</td></tr>
 <tr class="separator:a814c39c779f75ee373b15b574b771c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac3f257da41f617e97aea732ebbc857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a1ac3f257da41f617e97aea732ebbc857">ESC32_CAN_LCC_NORMAL</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x2&lt;&lt;30)</td></tr>
+<tr class="memitem:a1ac3f257da41f617e97aea732ebbc857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a1ac3f257da41f617e97aea732ebbc857">ESC32_CAN_LCC_NORMAL</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x2&lt;&lt;30)</td></tr>
 <tr class="separator:a1ac3f257da41f617e97aea732ebbc857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae826d6dac04414b4de19194e1c4cf3c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ae826d6dac04414b4de19194e1c4cf3c9">ESC32_CAN_LCC_INFO</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;30)</td></tr>
+<tr class="memitem:ae826d6dac04414b4de19194e1c4cf3c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ae826d6dac04414b4de19194e1c4cf3c9">ESC32_CAN_LCC_INFO</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;30)</td></tr>
 <tr class="separator:ae826d6dac04414b4de19194e1c4cf3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf3763648183d7237f50d4dc9d35095"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#aacf3763648183d7237f50d4dc9d35095">ESC32_CAN_TT_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;29)</td></tr>
+<tr class="memitem:aacf3763648183d7237f50d4dc9d35095"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#aacf3763648183d7237f50d4dc9d35095">ESC32_CAN_TT_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;29)</td></tr>
 <tr class="separator:aacf3763648183d7237f50d4dc9d35095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33650f5ee75de4cf019075f6542db11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad33650f5ee75de4cf019075f6542db11">ESC32_CAN_TT_GROUP</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;29)</td></tr>
+<tr class="memitem:ad33650f5ee75de4cf019075f6542db11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad33650f5ee75de4cf019075f6542db11">ESC32_CAN_TT_GROUP</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;29)</td></tr>
 <tr class="separator:ad33650f5ee75de4cf019075f6542db11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6721514a85769e18e68ec56d5255dcae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a6721514a85769e18e68ec56d5255dcae">ESC32_CAN_TT_NODE</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;29)</td></tr>
+<tr class="memitem:a6721514a85769e18e68ec56d5255dcae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a6721514a85769e18e68ec56d5255dcae">ESC32_CAN_TT_NODE</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;29)</td></tr>
 <tr class="separator:a6721514a85769e18e68ec56d5255dcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6bb08ea0639cebe63d1bbc0f0905cf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad6bb08ea0639cebe63d1bbc0f0905cf0">ESC32_CAN_FID_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xf&lt;&lt;25)</td></tr>
+<tr class="memitem:ad6bb08ea0639cebe63d1bbc0f0905cf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad6bb08ea0639cebe63d1bbc0f0905cf0">ESC32_CAN_FID_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xf&lt;&lt;25)</td></tr>
 <tr class="separator:ad6bb08ea0639cebe63d1bbc0f0905cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7afb66b65d8042260f555542b6cfbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a3e7afb66b65d8042260f555542b6cfbc">ESC32_CAN_FID_RESET_BUS</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;25)</td></tr>
+<tr class="memitem:a3e7afb66b65d8042260f555542b6cfbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a3e7afb66b65d8042260f555542b6cfbc">ESC32_CAN_FID_RESET_BUS</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;25)</td></tr>
 <tr class="separator:a3e7afb66b65d8042260f555542b6cfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c0a23b150f5a90f857425af109932da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4c0a23b150f5a90f857425af109932da">ESC32_CAN_FID_ACK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;25)</td></tr>
+<tr class="memitem:a4c0a23b150f5a90f857425af109932da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4c0a23b150f5a90f857425af109932da">ESC32_CAN_FID_ACK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;25)</td></tr>
 <tr class="separator:a4c0a23b150f5a90f857425af109932da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5b4939b9ed5ae568812c3634abda23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#acb5b4939b9ed5ae568812c3634abda23">ESC32_CAN_FID_NACK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x2&lt;&lt;25)</td></tr>
+<tr class="memitem:acb5b4939b9ed5ae568812c3634abda23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#acb5b4939b9ed5ae568812c3634abda23">ESC32_CAN_FID_NACK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x2&lt;&lt;25)</td></tr>
 <tr class="separator:acb5b4939b9ed5ae568812c3634abda23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c098e1092818a6a20394eb5936d95b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a32c098e1092818a6a20394eb5936d95b">ESC32_CAN_FID_CMD</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;25)</td></tr>
+<tr class="memitem:a32c098e1092818a6a20394eb5936d95b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a32c098e1092818a6a20394eb5936d95b">ESC32_CAN_FID_CMD</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;25)</td></tr>
 <tr class="separator:a32c098e1092818a6a20394eb5936d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b24c651db51e95523563ab1ea3e9c11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a0b24c651db51e95523563ab1ea3e9c11">ESC32_CAN_FID_GET</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x4&lt;&lt;25)</td></tr>
+<tr class="memitem:a0b24c651db51e95523563ab1ea3e9c11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a0b24c651db51e95523563ab1ea3e9c11">ESC32_CAN_FID_GET</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x4&lt;&lt;25)</td></tr>
 <tr class="separator:a0b24c651db51e95523563ab1ea3e9c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80d714141f106e09b7f9ce6253143240"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a80d714141f106e09b7f9ce6253143240">ESC32_CAN_FID_SET</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x5&lt;&lt;25)</td></tr>
+<tr class="memitem:a80d714141f106e09b7f9ce6253143240"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a80d714141f106e09b7f9ce6253143240">ESC32_CAN_FID_SET</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x5&lt;&lt;25)</td></tr>
 <tr class="separator:a80d714141f106e09b7f9ce6253143240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e2ebe1155704b32287c811939003bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad3e2ebe1155704b32287c811939003bc">ESC32_CAN_FID_REPLY</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x6&lt;&lt;25)</td></tr>
+<tr class="memitem:ad3e2ebe1155704b32287c811939003bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad3e2ebe1155704b32287c811939003bc">ESC32_CAN_FID_REPLY</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x6&lt;&lt;25)</td></tr>
 <tr class="separator:ad3e2ebe1155704b32287c811939003bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb06c93186ee4719607280f3c4c18f60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#aeb06c93186ee4719607280f3c4c18f60">ESC32_CAN_FID_REQ_ADDR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x7&lt;&lt;25)</td></tr>
+<tr class="memitem:aeb06c93186ee4719607280f3c4c18f60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#aeb06c93186ee4719607280f3c4c18f60">ESC32_CAN_FID_REQ_ADDR</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x7&lt;&lt;25)</td></tr>
 <tr class="separator:aeb06c93186ee4719607280f3c4c18f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81626cbd282c90a546d64dbac99f845d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a81626cbd282c90a546d64dbac99f845d">ESC32_CAN_FID_GRANT_ADDR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x8&lt;&lt;25)</td></tr>
+<tr class="memitem:a81626cbd282c90a546d64dbac99f845d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a81626cbd282c90a546d64dbac99f845d">ESC32_CAN_FID_GRANT_ADDR</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x8&lt;&lt;25)</td></tr>
 <tr class="separator:a81626cbd282c90a546d64dbac99f845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2dbf9999ed04459d708f00d3ced01f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4d2dbf9999ed04459d708f00d3ced01f">ESC32_CAN_FID_ERROR</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x9&lt;&lt;25)</td></tr>
+<tr class="memitem:a4d2dbf9999ed04459d708f00d3ced01f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4d2dbf9999ed04459d708f00d3ced01f">ESC32_CAN_FID_ERROR</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x9&lt;&lt;25)</td></tr>
 <tr class="separator:a4d2dbf9999ed04459d708f00d3ced01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd97db0022fbfc1d75d18750386f51b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#acd97db0022fbfc1d75d18750386f51b5">ESC32_CAN_FID_PING</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xa&lt;&lt;25)</td></tr>
+<tr class="memitem:acd97db0022fbfc1d75d18750386f51b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#acd97db0022fbfc1d75d18750386f51b5">ESC32_CAN_FID_PING</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xa&lt;&lt;25)</td></tr>
 <tr class="separator:acd97db0022fbfc1d75d18750386f51b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e92497a69777a4dd57456b0078726c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a15e92497a69777a4dd57456b0078726c">ESC32_CAN_FID_TELEM</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xb&lt;&lt;25)</td></tr>
+<tr class="memitem:a15e92497a69777a4dd57456b0078726c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a15e92497a69777a4dd57456b0078726c">ESC32_CAN_FID_TELEM</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xb&lt;&lt;25)</td></tr>
 <tr class="separator:a15e92497a69777a4dd57456b0078726c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62e4c3df9fc2fb0768a90b2b3e3bdaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad62e4c3df9fc2fb0768a90b2b3e3bdaa">ESC32_CAN_DOC_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3f&lt;&lt;19)</td></tr>
+<tr class="memitem:ad62e4c3df9fc2fb0768a90b2b3e3bdaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ad62e4c3df9fc2fb0768a90b2b3e3bdaa">ESC32_CAN_DOC_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3f&lt;&lt;19)</td></tr>
 <tr class="separator:ad62e4c3df9fc2fb0768a90b2b3e3bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a43056a52ee7766048c9de8d3e129ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4a43056a52ee7766048c9de8d3e129ea">ESC32_CAN_SID_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1f&lt;&lt;14)</td></tr>
+<tr class="memitem:a4a43056a52ee7766048c9de8d3e129ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a4a43056a52ee7766048c9de8d3e129ea">ESC32_CAN_SID_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1f&lt;&lt;14)</td></tr>
 <tr class="separator:a4a43056a52ee7766048c9de8d3e129ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ada429f0d0481a6ed25d345425154d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a7ada429f0d0481a6ed25d345425154d7">ESC32_CAN_TID_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1f&lt;&lt;9)</td></tr>
+<tr class="memitem:a7ada429f0d0481a6ed25d345425154d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a7ada429f0d0481a6ed25d345425154d7">ESC32_CAN_TID_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1f&lt;&lt;9)</td></tr>
 <tr class="separator:a7ada429f0d0481a6ed25d345425154d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab84c3bfc7eb1faf53644f22f6f8e0c2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ab84c3bfc7eb1faf53644f22f6f8e0c2a">ESC32_CAN_SEQ_MASK</a>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3f&lt;&lt;3)</td></tr>
+<tr class="memitem:ab84c3bfc7eb1faf53644f22f6f8e0c2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ab84c3bfc7eb1faf53644f22f6f8e0c2a">ESC32_CAN_SEQ_MASK</a>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3f&lt;&lt;3)</td></tr>
 <tr class="separator:ab84c3bfc7eb1faf53644f22f6f8e0c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b00ef60629df21d60951c4430802302"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a6b00ef60629df21d60951c4430802302">ActuatorESC32Set</a>(_i, _v)&#160;&#160;&#160;{ <a class="el" href="actuators__esc32_8h.html#ae951efe4ff751720b166f1240380b5da">actuators_esc32_set</a>(_i, _v); }</td></tr>
 <tr class="separator:a6b00ef60629df21d60951c4430802302"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,81 +213,81 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ac96d10b474330fddfb7baaf7ecbf4340"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a269f867f30fe36b65a25fa784acd28fd">ESC32_CAN_TYPE_ESC</a> = 1, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a927ecffb4af9521cdab063e1c504415b">ESC32_CAN_TYPE_SERVO</a>, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a1723b678af80376aefc6dc92933a86b1">ESC32_CAN_TYPE_SENSOR</a>, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340ac205c048fcee6f5279ee047444b399df">ESC32_CAN_TYPE_SWITCH</a>, 
+<tr class="memitem:abd4fc2111b94dec34e056f8ef38c38e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a269f867f30fe36b65a25fa784acd28fd">ESC32_CAN_TYPE_ESC</a> = 1, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a927ecffb4af9521cdab063e1c504415b">ESC32_CAN_TYPE_SERVO</a>, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a1723b678af80376aefc6dc92933a86b1">ESC32_CAN_TYPE_SENSOR</a>, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5ac205c048fcee6f5279ee047444b399df">ESC32_CAN_TYPE_SWITCH</a>, 
 <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a518d409bb0fb45f2caae3069bb3204b4">ESC32_CAN_TYPE_OSD</a>, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a776f362c746f4fd581a132ba04b937d8">ESC32_CAN_TYPE_UART</a>, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a72be8b531da617d969a89b84c16e9ccd">ESC32_CAN_TYPE_HUB</a>, 
-<a class="el" href="actuators__esc32_8h.html#ac96d10b474330fddfb7baaf7ecbf4340a2a04d594705090cf31cb83cc20dc3530">ESC32_CAN_TYPE_NUM</a>
-<br />
- }</td></tr>
-<tr class="separator:ac96d10b474330fddfb7baaf7ecbf4340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e42fc87bb951a8ba0c1f8641d68d5b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a6b978a3e53e285aeffc0bed86c0b69b1">ESC32_CAN_CMD_DISARM</a> = 1, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0ab5f155cc0d66bf4768c8a99abffb2e70">ESC32_CAN_CMD_ARM</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a465f8440b3235d05675c94c157e4af9a">ESC32_CAN_CMD_START</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0afa9a437b5813e05c356770c5f1b22b0c">ESC32_CAN_CMD_STOP</a>, 
-<br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0aec28914b666abfc07ae31095d7a09081">ESC32_CAN_CMD_SETPOINT10</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a26920b2344c73ff2757a1eb394120195">ESC32_CAN_CMD_SETPOINT12</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a86fceae3c9836abb107c225094ab0368">ESC32_CAN_CMD_SETPOINT16</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a3f645fbb8786697e201608a7155846af">ESC32_CAN_CMD_RPM</a>, 
-<br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a25fd5d6330f79938c2b0d967f5d6e5ab">ESC32_CAN_CMD_CFG_READ</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a3429587ec17f8ab84b359fa64f9e00e9">ESC32_CAN_CMD_CFG_WRITE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a5abf83e1598a76f0976c8c5c44196108">ESC32_CAN_CMD_CFG_DEFAULT</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0af7a4942fd18a1e98b2a615c2ae8aa019">ESC32_CAN_CMD_TELEM_RATE</a>, 
-<br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a15323447f1b3c6ce5073e4b31ce51e42">ESC32_CAN_CMD_TELEM_VALUE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a08a25adb9923f77995cbc28a2279124c">ESC32_CAN_CMD_BEEP</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0ac8c15c83ec9a8e60ed5478652fc37765">ESC32_CAN_CMD_POS</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0ab134644da35ab056f07c69a4e507a86c">ESC32_CAN_CMD_USER_DEFINED</a>, 
-<br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a3bcc0c11783048cff9eb0a56aef5760d">ESC32_CAN_CMD_RESET</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a2c3d3aa3c59317d04d3eed29de41a05b">ESC32_CAN_CMD_STREAM</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a50e7fb31516fafe8e767987f44bc8d66">ESC32_CAN_CMD_ON</a>, 
-<a class="el" href="actuators__esc32_8h.html#a4e42fc87bb951a8ba0c1f8641d68d5b0a02ef8677c4c2c61e9a5a1dc88acafdbe">ESC32_CAN_CMD_OFF</a>
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a518d409bb0fb45f2caae3069bb3204b4">ESC32_CAN_TYPE_OSD</a>, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a776f362c746f4fd581a132ba04b937d8">ESC32_CAN_TYPE_UART</a>, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a72be8b531da617d969a89b84c16e9ccd">ESC32_CAN_TYPE_HUB</a>, 
+<a class="el" href="actuators__esc32_8h.html#abd4fc2111b94dec34e056f8ef38c38e5a2a04d594705090cf31cb83cc20dc3530">ESC32_CAN_TYPE_NUM</a>
 <br />
  }</td></tr>
-<tr class="separator:a4e42fc87bb951a8ba0c1f8641d68d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e63dc1307b88cc08ad0bd6c737d748"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748ab7ef9095204d048be9fcc689234ed4fc">ESC32_CAN_DATA_GROUP</a> = 1, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748a52fe773119f1d0444d6fe8487d47a79c">ESC32_CAN_DATA_TYPE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748a253e74fd9dc7d47921bd1120a867a68c">ESC32_CAN_DATA_ID</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748adf0e51388c6a59de5a2e4875f609e08d">ESC32_CAN_DATA_INPUT_MODE</a>, 
+<tr class="separator:abd4fc2111b94dec34e056f8ef38c38e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63d52f2a7873cd40a13c4ce18552e27"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a6b978a3e53e285aeffc0bed86c0b69b1">ESC32_CAN_CMD_DISARM</a> = 1, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27ab5f155cc0d66bf4768c8a99abffb2e70">ESC32_CAN_CMD_ARM</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a465f8440b3235d05675c94c157e4af9a">ESC32_CAN_CMD_START</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27afa9a437b5813e05c356770c5f1b22b0c">ESC32_CAN_CMD_STOP</a>, 
 <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748a6ec254370031069c5f6604761d8ad091">ESC32_CAN_DATA_RUN_MODE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748ac5c52ebe4cc514f96553743f9cb9ca95">ESC32_CAN_DATA_STATE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748afbcf8186ad298d6c50588c3ea0b8385e">ESC32_CAN_DATA_PARAM_ID</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748a5dcd413d2cfbc430b246e21b92afe416">ESC32_CAN_DATA_TELEM</a>, 
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27aec28914b666abfc07ae31095d7a09081">ESC32_CAN_CMD_SETPOINT10</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a26920b2344c73ff2757a1eb394120195">ESC32_CAN_CMD_SETPOINT12</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a86fceae3c9836abb107c225094ab0368">ESC32_CAN_CMD_SETPOINT16</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a3f645fbb8786697e201608a7155846af">ESC32_CAN_CMD_RPM</a>, 
 <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748aa9d70d923b5c2aa4df5da196cf8ede93">ESC32_CAN_DATA_VERSION</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748acd14611391fce3dd27199268aa368c3f">ESC32_CAN_DATA_VALUE</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748ab0be60b5ae04b42f31813a775627ef3a">ESC32_CAN_DATA_PARAM_NAME1</a>, 
-<a class="el" href="actuators__esc32_8h.html#a72e63dc1307b88cc08ad0bd6c737d748aa930671ff11a3d9e61080ea1d8575ace">ESC32_CAN_DATA_PARAM_NAME2</a>
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a25fd5d6330f79938c2b0d967f5d6e5ab">ESC32_CAN_CMD_CFG_READ</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a3429587ec17f8ab84b359fa64f9e00e9">ESC32_CAN_CMD_CFG_WRITE</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a5abf83e1598a76f0976c8c5c44196108">ESC32_CAN_CMD_CFG_DEFAULT</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27af7a4942fd18a1e98b2a615c2ae8aa019">ESC32_CAN_CMD_TELEM_RATE</a>, 
 <br />
- }</td></tr>
-<tr class="separator:a72e63dc1307b88cc08ad0bd6c737d748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1ea5ceca73af21930eb45f54580537"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537aca4f473f1dc8217f033bacce8d2ec579">ESC32_CAN_TELEM_NONE</a> = 0, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a73f4174e2530eb03c275fbed5bf4d250">ESC32_CAN_TELEM_STATUS</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a371bbd19da5b0e1aa42ebce8fd6c5fae">ESC32_CAN_TELEM_STATE</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a5b49265d9ca44d9558a5a191208080cf">ESC32_CAN_TELEM_TEMP</a>, 
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a15323447f1b3c6ce5073e4b31ce51e42">ESC32_CAN_CMD_TELEM_VALUE</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a08a25adb9923f77995cbc28a2279124c">ESC32_CAN_CMD_BEEP</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27ac8c15c83ec9a8e60ed5478652fc37765">ESC32_CAN_CMD_POS</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27ab134644da35ab056f07c69a4e507a86c">ESC32_CAN_CMD_USER_DEFINED</a>, 
 <br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537ac9b82ea6ed685df1f342e12c0bfafe8e">ESC32_CAN_TELEM_VIN</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a5b58c47867ec64639875ad9ea2feae54">ESC32_CAN_TELEM_AMPS</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537ae8c880521a280439e9074c3fdbb8a5cc">ESC32_CAN_TELEM_RPM</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a48aa1a18fe9d32daa0111a18fa8054dd">ESC32_CAN_TELEM_ERRORS</a>, 
-<br />
-&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537a6f15803696a6c3c94ea9cf1ce56d74c6">ESC32_CAN_TELEM_VALUE</a>, 
-<a class="el" href="actuators__esc32_8h.html#ace1ea5ceca73af21930eb45f54580537ab9395d6a2f381c16d9c86a9f44bb749a">ESC32_CAN_TELEM_NUM</a>
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a3bcc0c11783048cff9eb0a56aef5760d">ESC32_CAN_CMD_RESET</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a2c3d3aa3c59317d04d3eed29de41a05b">ESC32_CAN_CMD_STREAM</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a50e7fb31516fafe8e767987f44bc8d66">ESC32_CAN_CMD_ON</a>, 
+<a class="el" href="actuators__esc32_8h.html#ad63d52f2a7873cd40a13c4ce18552e27a02ef8677c4c2c61e9a5a1dc88acafdbe">ESC32_CAN_CMD_OFF</a>
 <br />
  }</td></tr>
-<tr class="separator:ace1ea5ceca73af21930eb45f54580537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad63d52f2a7873cd40a13c4ce18552e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb54519fb8dc889cce6aeafd34ab647"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647ab7ef9095204d048be9fcc689234ed4fc">ESC32_CAN_DATA_GROUP</a> = 1, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647a52fe773119f1d0444d6fe8487d47a79c">ESC32_CAN_DATA_TYPE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647a253e74fd9dc7d47921bd1120a867a68c">ESC32_CAN_DATA_ID</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647adf0e51388c6a59de5a2e4875f609e08d">ESC32_CAN_DATA_INPUT_MODE</a>, 
+<br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647a6ec254370031069c5f6604761d8ad091">ESC32_CAN_DATA_RUN_MODE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647ac5c52ebe4cc514f96553743f9cb9ca95">ESC32_CAN_DATA_STATE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647afbcf8186ad298d6c50588c3ea0b8385e">ESC32_CAN_DATA_PARAM_ID</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647a5dcd413d2cfbc430b246e21b92afe416">ESC32_CAN_DATA_TELEM</a>, 
+<br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647aa9d70d923b5c2aa4df5da196cf8ede93">ESC32_CAN_DATA_VERSION</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647acd14611391fce3dd27199268aa368c3f">ESC32_CAN_DATA_VALUE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647ab0be60b5ae04b42f31813a775627ef3a">ESC32_CAN_DATA_PARAM_NAME1</a>, 
+<a class="el" href="actuators__esc32_8h.html#a5fb54519fb8dc889cce6aeafd34ab647aa930671ff11a3d9e61080ea1d8575ace">ESC32_CAN_DATA_PARAM_NAME2</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5fb54519fb8dc889cce6aeafd34ab647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7c5804a12566fee0141f284efcb572"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572aca4f473f1dc8217f033bacce8d2ec579">ESC32_CAN_TELEM_NONE</a> = 0, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a73f4174e2530eb03c275fbed5bf4d250">ESC32_CAN_TELEM_STATUS</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a371bbd19da5b0e1aa42ebce8fd6c5fae">ESC32_CAN_TELEM_STATE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a5b49265d9ca44d9558a5a191208080cf">ESC32_CAN_TELEM_TEMP</a>, 
+<br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572ac9b82ea6ed685df1f342e12c0bfafe8e">ESC32_CAN_TELEM_VIN</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a5b58c47867ec64639875ad9ea2feae54">ESC32_CAN_TELEM_AMPS</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572ae8c880521a280439e9074c3fdbb8a5cc">ESC32_CAN_TELEM_RPM</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a48aa1a18fe9d32daa0111a18fa8054dd">ESC32_CAN_TELEM_ERRORS</a>, 
+<br />
+&#160;&#160;<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572a6f15803696a6c3c94ea9cf1ce56d74c6">ESC32_CAN_TELEM_VALUE</a>, 
+<a class="el" href="actuators__esc32_8h.html#a3b7c5804a12566fee0141f284efcb572ab9395d6a2f381c16d9c86a9f44bb749a">ESC32_CAN_TELEM_NUM</a>
+<br />
+ }</td></tr>
+<tr class="separator:a3b7c5804a12566fee0141f284efcb572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac095295c2c5a8d1f39a04215f7903785"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ac095295c2c5a8d1f39a04215f7903785">ESC32_esc_status</a> { <a class="el" href="actuators__esc32_8h.html#ac095295c2c5a8d1f39a04215f7903785a4d1b65031688be4db1df3f92ce1b2ffc">ESC32_STATUS_ESC_FREE</a> = 0, 
 <a class="el" href="actuators__esc32_8h.html#ac095295c2c5a8d1f39a04215f7903785a2a37f2404c2e9285d950bbf20148ebab">ESC32_STATUS_ESC_INIT</a>, 
 <a class="el" href="actuators__esc32_8h.html#ac095295c2c5a8d1f39a04215f7903785af7d24b7fce3e84240aa8037825539e78">ESC32_STATUS_ESC_RDY</a>
@@ -314,10 +314,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a699563136f20e59e607791d62ac81660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a699563136f20e59e607791d62ac81660">actuators_esc32_commit</a> (void)</td></tr>
 <tr class="memdesc:a699563136f20e59e607791d62ac81660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commits the commands and sends them to the ESCs.  <a href="#a699563136f20e59e607791d62ac81660">More...</a><br /></td></tr>
 <tr class="separator:a699563136f20e59e607791d62ac81660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae951efe4ff751720b166f1240380b5da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ae951efe4ff751720b166f1240380b5da">actuators_esc32_set</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> v)</td></tr>
+<tr class="memitem:ae951efe4ff751720b166f1240380b5da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#ae951efe4ff751720b166f1240380b5da">actuators_esc32_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> v)</td></tr>
 <tr class="memdesc:ae951efe4ff751720b166f1240380b5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the commands (either RPM or duty cycle)  <a href="#ae951efe4ff751720b166f1240380b5da">More...</a><br /></td></tr>
 <tr class="separator:ae951efe4ff751720b166f1240380b5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d41ab7b14c53b0834f1f238a6528d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a8d41ab7b14c53b0834f1f238a6528d13">actuators_esc32_config_cmd</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i)</td></tr>
+<tr class="memitem:a8d41ab7b14c53b0834f1f238a6528d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__esc32_8h.html#a8d41ab7b14c53b0834f1f238a6528d13">actuators_esc32_config_cmd</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i)</td></tr>
 <tr class="memdesc:a8d41ab7b14c53b0834f1f238a6528d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">When receiving a configuration setting command.  <a href="#a8d41ab7b14c53b0834f1f238a6528d13">More...</a><br /></td></tr>
 <tr class="separator:a8d41ab7b14c53b0834f1f238a6528d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -345,13 +345,13 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a7c9374976e2a9822b4870bacde53d2a0"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a7c9374976e2a9822b4870bacde53d2a0"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 data[8]</td>
 <td class="fielddoc">
 The data of the response. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af7cd979db30d85297d2db75de890013f"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="af7cd979db30d85297d2db75de890013f"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 fid</td>
 <td class="fielddoc">
@@ -374,13 +374,13 @@ The FID of the response. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab74807beba82394e3171fe023badc952"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab74807beba82394e3171fe023badc952"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 can_id</td>
 <td class="fielddoc">
 The CAN identifier. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a85b965b8d00c0be4b8ac3396dcb5d737"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a85b965b8d00c0be4b8ac3396dcb5d737"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 network_id</td>
 <td class="fielddoc">
@@ -392,13 +392,13 @@ status</td>
 <td class="fielddoc">
 The current status of the esc. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3cce13252e6d1830174d8cbcab49f8c8"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a3cce13252e6d1830174d8cbcab49f8c8"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 type</td>
 <td class="fielddoc">
 The type of ESC. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa255854ced26635734fa80e732348d81"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="aa255854ced26635734fa80e732348d81"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 uuid</td>
 <td class="fielddoc">
@@ -430,13 +430,13 @@ The UUID of the ESC. </td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa3138f30352236685cdfc54475e8595d"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="aa3138f30352236685cdfc54475e8595d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 can_seq_idx</td>
 <td class="fielddoc">
 CAN seq ID used for communicating. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0f0c969eeba7126abc08b1ce3b96f418"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a0f0c969eeba7126abc08b1ce3b96f418"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 cmds[SERVOS_ESC32_NB]</td>
 <td class="fielddoc">
@@ -448,7 +448,7 @@ config_cmd</td>
 <td class="fielddoc">
 The command. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0179feb46f2cb87ece5ab4e7a6f6a6ec"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a0179feb46f2cb87ece5ab4e7a6f6a6ec"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 config_idx</td>
 <td class="fielddoc">
@@ -460,13 +460,13 @@ escs[SERVOS_ESC32_NB]</td>
 <td class="fielddoc">
 The ESCs connected via CAN. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab1c7f64a7c8dbdcc60a7d6d1fbaaada7"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab1c7f64a7c8dbdcc60a7d6d1fbaaada7"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 escs_sorted[SERVOS_ESC32_NB]</td>
 <td class="fielddoc">
 The ESCs sorted by uuid. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae0d6e2820f6d759c9c5231302c401667"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="ae0d6e2820f6d759c9c5231302c401667"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 melody_status</td>
 <td class="fielddoc">
@@ -555,7 +555,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_DOC_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3f&lt;&lt;19)</td>
+          <td class="memname">#define ESC32_CAN_DOC_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3f&lt;&lt;19)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -569,7 +569,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_ACK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_ACK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -585,7 +585,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_CMD&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_CMD&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -601,7 +601,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_ERROR&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x9&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_ERROR&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x9&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -615,7 +615,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_GET&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x4&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_GET&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x4&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -631,7 +631,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_GRANT_ADDR&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x8&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_GRANT_ADDR&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x8&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -647,7 +647,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xf&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xf&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -663,7 +663,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_NACK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x2&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_NACK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x2&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -679,7 +679,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_PING&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xa&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_PING&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xa&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -693,7 +693,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_REPLY&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x6&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_REPLY&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x6&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -709,7 +709,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_REQ_ADDR&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x7&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_REQ_ADDR&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x7&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -725,7 +725,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_RESET_BUS&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_RESET_BUS&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -741,7 +741,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_SET&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x5&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_SET&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x5&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -757,7 +757,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_FID_TELEM&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0xb&lt;&lt;25)</td>
+          <td class="memname">#define ESC32_CAN_FID_TELEM&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0xb&lt;&lt;25)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -773,7 +773,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_LCC_EXCEPTION&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;30)</td>
+          <td class="memname">#define ESC32_CAN_LCC_EXCEPTION&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -789,7 +789,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_LCC_HIGH&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;30)</td>
+          <td class="memname">#define ESC32_CAN_LCC_HIGH&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -805,7 +805,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_LCC_INFO&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;30)</td>
+          <td class="memname">#define ESC32_CAN_LCC_INFO&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -819,7 +819,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_LCC_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3&lt;&lt;30)</td>
+          <td class="memname">#define ESC32_CAN_LCC_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3&lt;&lt;30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -833,7 +833,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_LCC_NORMAL&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x2&lt;&lt;30)</td>
+          <td class="memname">#define ESC32_CAN_LCC_NORMAL&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x2&lt;&lt;30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -849,7 +849,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_SEQ_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x3f&lt;&lt;3)</td>
+          <td class="memname">#define ESC32_CAN_SEQ_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x3f&lt;&lt;3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -865,7 +865,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_SID_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1f&lt;&lt;14)</td>
+          <td class="memname">#define ESC32_CAN_SID_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1f&lt;&lt;14)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -879,7 +879,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_TID_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1f&lt;&lt;9)</td>
+          <td class="memname">#define ESC32_CAN_TID_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1f&lt;&lt;9)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -895,7 +895,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_TT_GROUP&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x0&lt;&lt;29)</td>
+          <td class="memname">#define ESC32_CAN_TT_GROUP&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x0&lt;&lt;29)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -911,7 +911,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_TT_MASK&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;29)</td>
+          <td class="memname">#define ESC32_CAN_TT_MASK&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;29)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -925,7 +925,7 @@ The current status of all actuators. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ESC32_CAN_TT_NODE&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)0x1&lt;&lt;29)</td>
+          <td class="memname">#define ESC32_CAN_TT_NODE&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)0x1&lt;&lt;29)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -953,7 +953,7 @@ The current status of all actuators. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340"></a>
+<a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -963,21 +963,21 @@ The current status of all actuators. </td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a269f867f30fe36b65a25fa784acd28fd"></a>ESC32_CAN_TYPE_ESC&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a269f867f30fe36b65a25fa784acd28fd"></a>ESC32_CAN_TYPE_ESC&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a927ecffb4af9521cdab063e1c504415b"></a>ESC32_CAN_TYPE_SERVO&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a927ecffb4af9521cdab063e1c504415b"></a>ESC32_CAN_TYPE_SERVO&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a1723b678af80376aefc6dc92933a86b1"></a>ESC32_CAN_TYPE_SENSOR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a1723b678af80376aefc6dc92933a86b1"></a>ESC32_CAN_TYPE_SENSOR&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340ac205c048fcee6f5279ee047444b399df"></a>ESC32_CAN_TYPE_SWITCH&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5ac205c048fcee6f5279ee047444b399df"></a>ESC32_CAN_TYPE_SWITCH&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a518d409bb0fb45f2caae3069bb3204b4"></a>ESC32_CAN_TYPE_OSD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a518d409bb0fb45f2caae3069bb3204b4"></a>ESC32_CAN_TYPE_OSD&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a776f362c746f4fd581a132ba04b937d8"></a>ESC32_CAN_TYPE_UART&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a776f362c746f4fd581a132ba04b937d8"></a>ESC32_CAN_TYPE_UART&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a72be8b531da617d969a89b84c16e9ccd"></a>ESC32_CAN_TYPE_HUB&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a72be8b531da617d969a89b84c16e9ccd"></a>ESC32_CAN_TYPE_HUB&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ac96d10b474330fddfb7baaf7ecbf4340a2a04d594705090cf31cb83cc20dc3530"></a>ESC32_CAN_TYPE_NUM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="abd4fc2111b94dec34e056f8ef38c38e5a2a04d594705090cf31cb83cc20dc3530"></a>ESC32_CAN_TYPE_NUM&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -985,7 +985,7 @@ The current status of all actuators. </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0"></a>
+<a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -995,45 +995,45 @@ The current status of all actuators. </td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a6b978a3e53e285aeffc0bed86c0b69b1"></a>ESC32_CAN_CMD_DISARM&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a6b978a3e53e285aeffc0bed86c0b69b1"></a>ESC32_CAN_CMD_DISARM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0ab5f155cc0d66bf4768c8a99abffb2e70"></a>ESC32_CAN_CMD_ARM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27ab5f155cc0d66bf4768c8a99abffb2e70"></a>ESC32_CAN_CMD_ARM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a465f8440b3235d05675c94c157e4af9a"></a>ESC32_CAN_CMD_START&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a465f8440b3235d05675c94c157e4af9a"></a>ESC32_CAN_CMD_START&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0afa9a437b5813e05c356770c5f1b22b0c"></a>ESC32_CAN_CMD_STOP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27afa9a437b5813e05c356770c5f1b22b0c"></a>ESC32_CAN_CMD_STOP&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0aec28914b666abfc07ae31095d7a09081"></a>ESC32_CAN_CMD_SETPOINT10&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27aec28914b666abfc07ae31095d7a09081"></a>ESC32_CAN_CMD_SETPOINT10&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a26920b2344c73ff2757a1eb394120195"></a>ESC32_CAN_CMD_SETPOINT12&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a26920b2344c73ff2757a1eb394120195"></a>ESC32_CAN_CMD_SETPOINT12&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a86fceae3c9836abb107c225094ab0368"></a>ESC32_CAN_CMD_SETPOINT16&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a86fceae3c9836abb107c225094ab0368"></a>ESC32_CAN_CMD_SETPOINT16&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a3f645fbb8786697e201608a7155846af"></a>ESC32_CAN_CMD_RPM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a3f645fbb8786697e201608a7155846af"></a>ESC32_CAN_CMD_RPM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a25fd5d6330f79938c2b0d967f5d6e5ab"></a>ESC32_CAN_CMD_CFG_READ&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a25fd5d6330f79938c2b0d967f5d6e5ab"></a>ESC32_CAN_CMD_CFG_READ&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a3429587ec17f8ab84b359fa64f9e00e9"></a>ESC32_CAN_CMD_CFG_WRITE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a3429587ec17f8ab84b359fa64f9e00e9"></a>ESC32_CAN_CMD_CFG_WRITE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a5abf83e1598a76f0976c8c5c44196108"></a>ESC32_CAN_CMD_CFG_DEFAULT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a5abf83e1598a76f0976c8c5c44196108"></a>ESC32_CAN_CMD_CFG_DEFAULT&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0af7a4942fd18a1e98b2a615c2ae8aa019"></a>ESC32_CAN_CMD_TELEM_RATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27af7a4942fd18a1e98b2a615c2ae8aa019"></a>ESC32_CAN_CMD_TELEM_RATE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a15323447f1b3c6ce5073e4b31ce51e42"></a>ESC32_CAN_CMD_TELEM_VALUE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a15323447f1b3c6ce5073e4b31ce51e42"></a>ESC32_CAN_CMD_TELEM_VALUE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a08a25adb9923f77995cbc28a2279124c"></a>ESC32_CAN_CMD_BEEP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a08a25adb9923f77995cbc28a2279124c"></a>ESC32_CAN_CMD_BEEP&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0ac8c15c83ec9a8e60ed5478652fc37765"></a>ESC32_CAN_CMD_POS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27ac8c15c83ec9a8e60ed5478652fc37765"></a>ESC32_CAN_CMD_POS&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0ab134644da35ab056f07c69a4e507a86c"></a>ESC32_CAN_CMD_USER_DEFINED&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27ab134644da35ab056f07c69a4e507a86c"></a>ESC32_CAN_CMD_USER_DEFINED&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a3bcc0c11783048cff9eb0a56aef5760d"></a>ESC32_CAN_CMD_RESET&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a3bcc0c11783048cff9eb0a56aef5760d"></a>ESC32_CAN_CMD_RESET&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a2c3d3aa3c59317d04d3eed29de41a05b"></a>ESC32_CAN_CMD_STREAM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a2c3d3aa3c59317d04d3eed29de41a05b"></a>ESC32_CAN_CMD_STREAM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a50e7fb31516fafe8e767987f44bc8d66"></a>ESC32_CAN_CMD_ON&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a50e7fb31516fafe8e767987f44bc8d66"></a>ESC32_CAN_CMD_ON&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e42fc87bb951a8ba0c1f8641d68d5b0a02ef8677c4c2c61e9a5a1dc88acafdbe"></a>ESC32_CAN_CMD_OFF&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad63d52f2a7873cd40a13c4ce18552e27a02ef8677c4c2c61e9a5a1dc88acafdbe"></a>ESC32_CAN_CMD_OFF&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -1041,7 +1041,7 @@ The current status of all actuators. </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748"></a>
+<a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1051,29 +1051,29 @@ The current status of all actuators. </td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748ab7ef9095204d048be9fcc689234ed4fc"></a>ESC32_CAN_DATA_GROUP&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647ab7ef9095204d048be9fcc689234ed4fc"></a>ESC32_CAN_DATA_GROUP&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748a52fe773119f1d0444d6fe8487d47a79c"></a>ESC32_CAN_DATA_TYPE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647a52fe773119f1d0444d6fe8487d47a79c"></a>ESC32_CAN_DATA_TYPE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748a253e74fd9dc7d47921bd1120a867a68c"></a>ESC32_CAN_DATA_ID&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647a253e74fd9dc7d47921bd1120a867a68c"></a>ESC32_CAN_DATA_ID&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748adf0e51388c6a59de5a2e4875f609e08d"></a>ESC32_CAN_DATA_INPUT_MODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647adf0e51388c6a59de5a2e4875f609e08d"></a>ESC32_CAN_DATA_INPUT_MODE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748a6ec254370031069c5f6604761d8ad091"></a>ESC32_CAN_DATA_RUN_MODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647a6ec254370031069c5f6604761d8ad091"></a>ESC32_CAN_DATA_RUN_MODE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748ac5c52ebe4cc514f96553743f9cb9ca95"></a>ESC32_CAN_DATA_STATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647ac5c52ebe4cc514f96553743f9cb9ca95"></a>ESC32_CAN_DATA_STATE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748afbcf8186ad298d6c50588c3ea0b8385e"></a>ESC32_CAN_DATA_PARAM_ID&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647afbcf8186ad298d6c50588c3ea0b8385e"></a>ESC32_CAN_DATA_PARAM_ID&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748a5dcd413d2cfbc430b246e21b92afe416"></a>ESC32_CAN_DATA_TELEM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647a5dcd413d2cfbc430b246e21b92afe416"></a>ESC32_CAN_DATA_TELEM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748aa9d70d923b5c2aa4df5da196cf8ede93"></a>ESC32_CAN_DATA_VERSION&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647aa9d70d923b5c2aa4df5da196cf8ede93"></a>ESC32_CAN_DATA_VERSION&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748acd14611391fce3dd27199268aa368c3f"></a>ESC32_CAN_DATA_VALUE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647acd14611391fce3dd27199268aa368c3f"></a>ESC32_CAN_DATA_VALUE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748ab0be60b5ae04b42f31813a775627ef3a"></a>ESC32_CAN_DATA_PARAM_NAME1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647ab0be60b5ae04b42f31813a775627ef3a"></a>ESC32_CAN_DATA_PARAM_NAME1&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a72e63dc1307b88cc08ad0bd6c737d748aa930671ff11a3d9e61080ea1d8575ace"></a>ESC32_CAN_DATA_PARAM_NAME2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5fb54519fb8dc889cce6aeafd34ab647aa930671ff11a3d9e61080ea1d8575ace"></a>ESC32_CAN_DATA_PARAM_NAME2&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -1081,7 +1081,7 @@ The current status of all actuators. </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ace1ea5ceca73af21930eb45f54580537"></a>
+<a class="anchor" id="a3b7c5804a12566fee0141f284efcb572"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1091,25 +1091,25 @@ The current status of all actuators. </td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537aca4f473f1dc8217f033bacce8d2ec579"></a>ESC32_CAN_TELEM_NONE&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572aca4f473f1dc8217f033bacce8d2ec579"></a>ESC32_CAN_TELEM_NONE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a73f4174e2530eb03c275fbed5bf4d250"></a>ESC32_CAN_TELEM_STATUS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a73f4174e2530eb03c275fbed5bf4d250"></a>ESC32_CAN_TELEM_STATUS&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a371bbd19da5b0e1aa42ebce8fd6c5fae"></a>ESC32_CAN_TELEM_STATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a371bbd19da5b0e1aa42ebce8fd6c5fae"></a>ESC32_CAN_TELEM_STATE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a5b49265d9ca44d9558a5a191208080cf"></a>ESC32_CAN_TELEM_TEMP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a5b49265d9ca44d9558a5a191208080cf"></a>ESC32_CAN_TELEM_TEMP&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537ac9b82ea6ed685df1f342e12c0bfafe8e"></a>ESC32_CAN_TELEM_VIN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572ac9b82ea6ed685df1f342e12c0bfafe8e"></a>ESC32_CAN_TELEM_VIN&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a5b58c47867ec64639875ad9ea2feae54"></a>ESC32_CAN_TELEM_AMPS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a5b58c47867ec64639875ad9ea2feae54"></a>ESC32_CAN_TELEM_AMPS&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537ae8c880521a280439e9074c3fdbb8a5cc"></a>ESC32_CAN_TELEM_RPM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572ae8c880521a280439e9074c3fdbb8a5cc"></a>ESC32_CAN_TELEM_RPM&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a48aa1a18fe9d32daa0111a18fa8054dd"></a>ESC32_CAN_TELEM_ERRORS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a48aa1a18fe9d32daa0111a18fa8054dd"></a>ESC32_CAN_TELEM_ERRORS&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537a6f15803696a6c3c94ea9cf1ce56d74c6"></a>ESC32_CAN_TELEM_VALUE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572a6f15803696a6c3c94ea9cf1ce56d74c6"></a>ESC32_CAN_TELEM_VALUE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ace1ea5ceca73af21930eb45f54580537ab9395d6a2f381c16d9c86a9f44bb749a"></a>ESC32_CAN_TELEM_NUM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3b7c5804a12566fee0141f284efcb572ab9395d6a2f381c16d9c86a9f44bb749a"></a>ESC32_CAN_TELEM_NUM&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -1215,7 +1215,7 @@ The current status of all actuators. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__esc32_8h_a699563136f20e59e607791d62ac81660_cgraph.png" border="0" usemap="#actuators__esc32_8h_a699563136f20e59e607791d62ac81660_cgraph" alt=""/></div>
 <map name="actuators__esc32_8h_a699563136f20e59e607791d62ac81660_cgraph" id="actuators__esc32_8h_a699563136f20e59e607791d62ac81660_cgraph">
-<area shape="rect" id="node2" href="actuators__esc32_8c.html#a2cb2dd9eee7094f3f7200f2592d8d237" title="Arms the ESC. " alt="" coords="477,5,638,32"/><area shape="rect" id="node6" href="actuators__esc32_8c.html#a3bb04f25c575660bde096c9613fdf830" title="Disarms the ESC. " alt="" coords="468,56,647,83"/><area shape="rect" id="node7" href="actuators__esc32_8c.html#a65aac5d03b776508a6f8513a8889a8f3" title="Set the duty cycle of an ESC. " alt="" coords="476,107,639,133"/><area shape="rect" id="node8" href="actuators__esc32_8c.html#a09aecb001a7e18cb5ad6718d2f9cf139" title="Plays a full melody. " alt="" coords="248,158,409,199"/><area shape="rect" id="node10" href="actuators__esc32_8c.html#a89b5bf5ffc5d58da9cf4cb87217ebadc" title="Starts the ESC (let&#39;s it turn when armed) " alt="" coords="246,224,411,251"/><area shape="rect" id="node11" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="237,275,420,301"/><area shape="rect" id="node3" href="actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621" title="Transmit a message on the CAN bus. " alt="" coords="695,107,861,133"/><area shape="rect" id="node4" href="can_8c.html#a152615d451206e5d152705c704cdf89f" title="ppz_can_transmit" alt="" coords="909,107,1045,133"/><area shape="rect" id="node5" href="can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title="can_hw_transmit" alt="" coords="1093,107,1224,133"/><area shape="rect" id="node9" href="actuators__esc32_8c.html#accbcddb98ed84f6ffd67fd62a0aa6ec9" title="Let an ESC beep for a certain amount of time with a specified frequency(frequency doesn&#39;t really matc..." alt="" coords="474,161,641,188"/></map>
+</map>
 </div>
 </p>
 
@@ -1228,7 +1228,7 @@ The current status of all actuators. </td></tr>
         <tr>
           <td class="memname">void actuators_esc32_config_cmd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1248,7 +1248,7 @@ The current status of all actuators. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__esc32_8h_a8d41ab7b14c53b0834f1f238a6528d13_cgraph.png" border="0" usemap="#actuators__esc32_8h_a8d41ab7b14c53b0834f1f238a6528d13_cgraph" alt=""/></div>
 <map name="actuators__esc32_8h_a8d41ab7b14c53b0834f1f238a6528d13_cgraph" id="actuators__esc32_8h_a8d41ab7b14c53b0834f1f238a6528d13_cgraph">
-<area shape="rect" id="node2" href="actuators__esc32_8c.html#a2cb2dd9eee7094f3f7200f2592d8d237" title="Arms the ESC. " alt="" coords="270,5,431,32"/><area shape="rect" id="node6" href="actuators__esc32_8c.html#accbcddb98ed84f6ffd67fd62a0aa6ec9" title="Let an ESC beep for a certain amount of time with a specified frequency(frequency doesn&#39;t really matc..." alt="" coords="267,56,434,83"/><area shape="rect" id="node7" href="actuators__esc32_8c.html#a149a983edfeaa8eb144ea4866e8f1245" title="Changes the direction the ESC is turing. " alt="" coords="275,107,426,133"/><area shape="rect" id="node8" href="actuators__esc32_8c.html#a3bb04f25c575660bde096c9613fdf830" title="Disarms the ESC. " alt="" coords="261,157,440,184"/><area shape="rect" id="node9" href="actuators__esc32_8c.html#a65aac5d03b776508a6f8513a8889a8f3" title="Set the duty cycle of an ESC. " alt="" coords="269,208,432,235"/><area shape="rect" id="node10" href="actuators__esc32_8c.html#a89b5bf5ffc5d58da9cf4cb87217ebadc" title="Starts the ESC (let&#39;s it turn when armed) " alt="" coords="268,259,433,285"/><area shape="rect" id="node3" href="actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621" title="Transmit a message on the CAN bus. " alt="" coords="488,132,655,159"/><area shape="rect" id="node4" href="can_8c.html#a152615d451206e5d152705c704cdf89f" title="ppz_can_transmit" alt="" coords="703,132,839,159"/><area shape="rect" id="node5" href="can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title="can_hw_transmit" alt="" coords="887,132,1017,159"/></map>
+</map>
 </div>
 </p>
 
@@ -1281,7 +1281,7 @@ The current status of all actuators. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__esc32_8h_add58c115774df9caa262424894e2cf56_cgraph.png" border="0" usemap="#actuators__esc32_8h_add58c115774df9caa262424894e2cf56_cgraph" alt=""/></div>
 <map name="actuators__esc32_8h_add58c115774df9caa262424894e2cf56_cgraph" id="actuators__esc32_8h_add58c115774df9caa262424894e2cf56_cgraph">
-<area shape="rect" id="node2" href="actuators__esc32_8c.html#ad4cda969a3da2d7d9a00391905163e2b" title="When receiving messages on the CAN bus. " alt="" coords="208,57,367,98"/><area shape="rect" id="node4" href="actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621" title="Transmit a message on the CAN bus. " alt="" coords="657,64,824,91"/><area shape="rect" id="node8" href="can_8c.html#ac7e36a7bd650eb577df12f0437f270bc" title="ppz_can_init" alt="" coords="237,173,338,200"/><area shape="rect" id="node3" href="actuators__esc32_8c.html#ae2311b30f312b1a622644defc5d02af3" title="When we receive a message to grant an id. " alt="" coords="415,5,609,32"/><area shape="rect" id="node7" href="actuators__esc32_8c.html#afd6425e413c12e0db8fb154c960951f7" title="When we receive a telemetry message. " alt="" coords="431,57,593,98"/><area shape="rect" id="node5" href="can_8c.html#a152615d451206e5d152705c704cdf89f" title="ppz_can_transmit" alt="" coords="872,64,1008,91"/><area shape="rect" id="node6" href="can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title="can_hw_transmit" alt="" coords="1056,64,1187,91"/><area shape="rect" id="node9" href="can__arch_8c.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title="can_hw_init" alt="" coords="465,173,559,200"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="703,173,779,200"/></map>
+</map>
 </div>
 </p>
 
@@ -1294,13 +1294,13 @@ The current status of all actuators. </td></tr>
         <tr>
           <td class="memname">void actuators_esc32_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -1341,8 +1341,8 @@ The current status of all actuators. </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__esc32_8h.html">actuators_esc32.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__esc32_8h.html">actuators_esc32.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

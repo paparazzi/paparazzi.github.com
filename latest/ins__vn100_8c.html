@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('ins__vn100_8c.html','');});
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_vn100.c:</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('ins__vn100_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__vn100_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__vn100_8c" id="sw_2airborne_2modules_2ins_2ins__vn100_8c">
-<area shape="rect" id="node2" href="ins__vn100_8h.html" title="Interface for the VectorNav VN100 AHRS use the binary protocal on the SPI link. " alt="" coords="225,191,403,218"/><area shape="rect" id="node12" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1286,191,1417,218"/><area shape="rect" id="node19" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="705,102,771,129"/><area shape="rect" id="node26" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2045,273,2183,300"/><area shape="rect" id="node29" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1872,95,2025,136"/><area shape="rect" id="node4" href="VN100_8h.html" title="VN100.h" alt="" coords="463,273,541,300"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="119,273,309,300"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="271,355,389,382"/><area shape="rect" id="node14" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1362,273,1533,300"/><area shape="rect" id="node15" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1553,355,1638,382"/><area shape="rect" id="node20" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="615,273,794,300"/><area shape="rect" id="node22" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="893,184,1044,225"/><area shape="rect" id="node24" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="719,184,869,225"/><area shape="rect" id="node25" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="479,184,643,225"/><area shape="rect" id="node21" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="616,355,767,382"/><area shape="rect" id="node23" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="869,273,993,300"/><area shape="rect" id="node32" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1608,184,1761,225"/><area shape="rect" id="node34" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1785,191,1979,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="ins__vn100_8c_source.html">Go to the source code of this file.</a></p>
@@ -177,19 +177,19 @@ Variables</h2></td></tr>
 <tr class="separator:ad8b814168fe2648fc2624cddbf45c2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ea661db7d341539857f39f1e3deb0a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a85ea661db7d341539857f39f1e3deb0a">ins_mag</a></td></tr>
 <tr class="separator:a85ea661db7d341539857f39f1e3deb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3989b340d21f6f17c56833594d188c6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a></td></tr>
+<tr class="memitem:af3989b340d21f6f17c56833594d188c6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a></td></tr>
 <tr class="separator:af3989b340d21f6f17c56833594d188c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a273cc8a61a7331cfb89c91d78d7f0761"><td class="memItemLeft" align="right" valign="top"><a class="el" href="VN100_8h.html#structVN100__Res__Packet">VN100_Res_Packet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a273cc8a61a7331cfb89c91d78d7f0761">last_received_packet</a></td></tr>
 <tr class="separator:a273cc8a61a7331cfb89c91d78d7f0761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d0a3455364a38bf83c1f87c9a808cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="VN100_8h.html#structVN100__Req__Packet">VN100_Req_Packet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a1d0a3455364a38bf83c1f87c9a808cb5">last_send_packet</a></td></tr>
 <tr class="separator:a1d0a3455364a38bf83c1f87c9a808cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15fb77fb390a32bcfe86200e0190975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#af15fb77fb390a32bcfe86200e0190975">ins_ador</a></td></tr>
+<tr class="memitem:af15fb77fb390a32bcfe86200e0190975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#af15fb77fb390a32bcfe86200e0190975">ins_ador</a></td></tr>
 <tr class="separator:af15fb77fb390a32bcfe86200e0190975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281cdf3f820bcbd806002351f8f26ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a281cdf3f820bcbd806002351f8f26ee1">ins_adof</a></td></tr>
+<tr class="memitem:a281cdf3f820bcbd806002351f8f26ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a281cdf3f820bcbd806002351f8f26ee1">ins_adof</a></td></tr>
 <tr class="separator:a281cdf3f820bcbd806002351f8f26ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa086e7049935a63e359ee3886d9a77eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#aa086e7049935a63e359ee3886d9a77eb">ins_baud</a></td></tr>
+<tr class="memitem:aa086e7049935a63e359ee3886d9a77eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#aa086e7049935a63e359ee3886d9a77eb">ins_baud</a></td></tr>
 <tr class="separator:aa086e7049935a63e359ee3886d9a77eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8318f2bc6236b941d491abbf7a4dda4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a8318f2bc6236b941d491abbf7a4dda4f">ins_init_status</a></td></tr>
+<tr class="memitem:a8318f2bc6236b941d491abbf7a4dda4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#a8318f2bc6236b941d491abbf7a4dda4f">ins_init_status</a></td></tr>
 <tr class="separator:a8318f2bc6236b941d491abbf7a4dda4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a66511f5a1d4eea4a23def9763c6b5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vn100_8c.html#ae8a66511f5a1d4eea4a23def9763c6b5">vn100_trans</a></td></tr>
 <tr class="separator:ae8a66511f5a1d4eea4a23def9763c6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +281,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_cgraph.png" border="0" usemap="#ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_cgraph" alt=""/></div>
 <map name="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_cgraph" id="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="160,5,251,32"/></map>
+</map>
 </div>
 </p>
 
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_icgraph.png" border="0" usemap="#ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_icgraph" alt=""/></div>
 <map name="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_icgraph" id="ins__vn100_8c_a281f454da7c974941b9ba7c0301136dc_icgraph">
-<area shape="rect" id="node2" href="ins__vn100_8h.html#a315de9dd8d9761361e22f6789b80da31" title="vn100_periodic_task" alt="" coords="160,5,312,32"/></map>
+</map>
 </div>
 </p>
 
@@ -322,7 +322,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__vn100_8c_source.html#l00185">185</a> of file <a class="el" href="ins__vn100_8c_source.html">ins_vn100.c</a>.</p>
 
-<p>References <a class="el" href="VN100_8h_source.html#l00192">VN100_Res_Packet::Data</a>, <a class="el" href="VN100_8h_source.html#l00191">VN100_Res_Packet::ErrID</a>, <a class="el" href="VN100_8h_source.html#l00171">VN100_Param::Float</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="ins__vn100_8c_source.html#l00061">ins_accel</a>, <a class="el" href="ins__vn100_8c_source.html#l00073">ins_adof</a>, <a class="el" href="ins__vn100_8c_source.html#l00072">ins_ador</a>, <a class="el" href="ins__vn100_8c_source.html#l00074">ins_baud</a>, <a class="el" href="ins__vn100_8c_source.html#l00057">ins_eulers</a>, <a class="el" href="ins__vn100_8c_source.html#l00062">ins_mag</a>, <a class="el" href="ins__vn100_8c_source.html#l00058">ins_quat</a>, <a class="el" href="ins__vn100_8c_source.html#l00059">ins_rates</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="VN100_8h_source.html#l00190">VN100_Res_Packet::RegID</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="VN100_8h_source.html#l00170">VN100_Param::UInt</a>, <a class="el" href="VN100_8h_source.html#l00104">VN100_Error_None</a>, <a class="el" href="VN100_8h_source.html#l00040">VN100_REG_ADOF</a>, <a class="el" href="VN100_8h_source.html#l00039">VN100_REG_ADOR</a>, <a class="el" href="VN100_8h_source.html#l00047">VN100_REG_QAR</a>, <a class="el" href="VN100_8h_source.html#l00046">VN100_REG_QMA</a>, <a class="el" href="VN100_8h_source.html#l00048">VN100_REG_QMR</a>, <a class="el" href="VN100_8h_source.html#l00044">VN100_REG_QTA</a>, <a class="el" href="VN100_8h_source.html#l00043">VN100_REG_QTM</a>, <a class="el" href="VN100_8h_source.html#l00042">VN100_REG_QTN</a>, <a class="el" href="VN100_8h_source.html#l00045">VN100_REG_QTR</a>, <a class="el" href="VN100_8h_source.html#l00038">VN100_REG_SBAUD</a>, <a class="el" href="VN100_8h_source.html#l00060">VN100_REG_YMR</a>, <a class="el" href="VN100_8h_source.html#l00041">VN100_REG_YPR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="VN100_8h_source.html#l00192">VN100_Res_Packet::Data</a>, <a class="el" href="VN100_8h_source.html#l00191">VN100_Res_Packet::ErrID</a>, <a class="el" href="VN100_8h_source.html#l00171">VN100_Param::Float</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00688">float_eulers_of_quat()</a>, <a class="el" href="ins__vn100_8c_source.html#l00061">ins_accel</a>, <a class="el" href="ins__vn100_8c_source.html#l00073">ins_adof</a>, <a class="el" href="ins__vn100_8c_source.html#l00072">ins_ador</a>, <a class="el" href="ins__vn100_8c_source.html#l00074">ins_baud</a>, <a class="el" href="ins__vn100_8c_source.html#l00057">ins_eulers</a>, <a class="el" href="ins__vn100_8c_source.html#l00062">ins_mag</a>, <a class="el" href="ins__vn100_8c_source.html#l00058">ins_quat</a>, <a class="el" href="ins__vn100_8c_source.html#l00059">ins_rates</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="VN100_8h_source.html#l00190">VN100_Res_Packet::RegID</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="VN100_8h_source.html#l00170">VN100_Param::UInt</a>, <a class="el" href="VN100_8h_source.html#l00104">VN100_Error_None</a>, <a class="el" href="VN100_8h_source.html#l00040">VN100_REG_ADOF</a>, <a class="el" href="VN100_8h_source.html#l00039">VN100_REG_ADOR</a>, <a class="el" href="VN100_8h_source.html#l00047">VN100_REG_QAR</a>, <a class="el" href="VN100_8h_source.html#l00046">VN100_REG_QMA</a>, <a class="el" href="VN100_8h_source.html#l00048">VN100_REG_QMR</a>, <a class="el" href="VN100_8h_source.html#l00044">VN100_REG_QTA</a>, <a class="el" href="VN100_8h_source.html#l00043">VN100_REG_QTM</a>, <a class="el" href="VN100_8h_source.html#l00042">VN100_REG_QTN</a>, <a class="el" href="VN100_8h_source.html#l00045">VN100_REG_QTR</a>, <a class="el" href="VN100_8h_source.html#l00038">VN100_REG_SBAUD</a>, <a class="el" href="VN100_8h_source.html#l00060">VN100_REG_YMR</a>, <a class="el" href="VN100_8h_source.html#l00041">VN100_REG_YPR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__vn100_8c_source.html#l00160">vn100_event_task()</a>.</p>
 
@@ -333,7 +333,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_cgraph.png" border="0" usemap="#ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_cgraph" alt=""/></div>
 <map name="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_cgraph" id="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_cgraph">
-<area shape="rect" id="node2" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="172,5,323,32"/></map>
+</map>
 </div>
 </p>
 
@@ -344,7 +344,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph.png" border="0" usemap="#ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph" alt=""/></div>
 <map name="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph" id="ins__vn100_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph">
-<area shape="rect" id="node2" href="ins__vn100_8h.html#a579de7597d4a8e23e8577ca9745c385d" title="vn100_event_task" alt="" coords="172,5,311,32"/></map>
+</map>
 </div>
 </p>
 
@@ -375,7 +375,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a579de7597d4a8e23e8577ca9745c385d_cgraph.png" border="0" usemap="#ins__vn100_8c_a579de7597d4a8e23e8577ca9745c385d_cgraph" alt=""/></div>
 <map name="ins__vn100_8c_a579de7597d4a8e23e8577ca9745c385d_cgraph" id="ins__vn100_8c_a579de7597d4a8e23e8577ca9745c385d_cgraph">
-<area shape="rect" id="node2" href="ins__vn100_8c.html#a9ea3d2bf0a03b37852747429c24bee61" title="parse_ins_msg" alt="" coords="232,5,351,32"/><area shape="rect" id="node4" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="213,56,369,83"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="192,107,391,133"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="445,5,595,32"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="439,107,601,133"/></map>
+</map>
 </div>
 </p>
 
@@ -426,7 +426,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vn100_8c_a315de9dd8d9761361e22f6789b80da31_cgraph.png" border="0" usemap="#ins__vn100_8c_a315de9dd8d9761361e22f6789b80da31_cgraph" alt=""/></div>
 <map name="ins__vn100_8c_a315de9dd8d9761361e22f6789b80da31_cgraph" id="ins__vn100_8c_a315de9dd8d9761361e22f6789b80da31_cgraph">
-<area shape="rect" id="node2" href="ins__vn100_8c.html#a281f454da7c974941b9ba7c0301136dc" title="ins_configure" alt="" coords="205,5,312,32"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="360,31,451,57"/></map>
+</map>
 </div>
 </p>
 
@@ -448,7 +448,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__vn100_8c_source.html#l00311">311</a> of file <a class="el" href="ins__vn100_8c_source.html">ins_vn100.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="ins__vn100_8c_source.html#l00061">ins_accel</a>, <a class="el" href="ins__vn100_8c_source.html#l00057">ins_eulers</a>, <a class="el" href="ins__vn100_8c_source.html#l00062">ins_mag</a>, <a class="el" href="ins__vn100_8c_source.html#l00058">ins_quat</a>, <a class="el" href="ins__vn100_8c_source.html#l00059">ins_rates</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="ins__vn100_8c_source.html#l00061">ins_accel</a>, <a class="el" href="ins__vn100_8c_source.html#l00057">ins_eulers</a>, <a class="el" href="ins__vn100_8c_source.html#l00062">ins_mag</a>, <a class="el" href="ins__vn100_8c_source.html#l00058">ins_quat</a>, <a class="el" href="ins__vn100_8c_source.html#l00059">ins_rates</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ins_adof</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ins_adof</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -490,7 +490,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ins_ador</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ins_ador</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -506,7 +506,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ins_baud</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ins_baud</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -538,7 +538,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_init_status</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_init_status</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -570,7 +570,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_msg_received</td>
+          <td class="memname">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_msg_received</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -725,7 +725,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__vn100_8c.html">ins_vn100.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

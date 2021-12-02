@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,13 +118,13 @@ $(document).ready(function(){initNavTree('jevois__mavlink_8c.html','');});
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;mavlink/mavlink_types.h&gt;</code><br />
 <code>#include &quot;mavlink/paparazzi/mavlink.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;generated/modules.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi__sender__ids_8h_source.html">subsystems/abi_sender_ids.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi__sender__ids_8h_source.html">modules/core/abi_sender_ids.h</a>&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="low__pass__filter_8h_source.html">filters/low_pass_filter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('jevois__mavlink_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2cameras_2jevois__mavlink_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2cameras_2jevois__mavlink_8c" id="sw_2airborne_2modules_2sensors_2cameras_2jevois__mavlink_8c">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html" title="modules/sensors/cameras\l/jevois_mavlink.h" alt="" coords="1403,109,1593,151"/><area shape="rect" id="node10" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="506,206,645,233"/><area shape="rect" id="node22" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1099,117,1190,143"/><area shape="rect" id="node25" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="415,206,482,233"/><area shape="rect" id="node33" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2115,117,2249,143"/><area shape="rect" id="node35" href="abi__sender__ids_8h.html" title="Convenience defines for ABI sender IDs. " alt="" coords="1618,109,1791,151"/><area shape="rect" id="node36" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1824,109,1977,151"/><area shape="rect" id="node44" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform. " alt="" coords="1177,295,1341,322"/><area shape="rect" id="node45" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2578,206,2749,233"/><area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2229,377,2367,404"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="778,377,957,404"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="120,377,311,404"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="477,288,641,329"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="333,452,487,479"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="785,452,936,479"/><area shape="rect" id="node23" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="2025,206,2121,233"/><area shape="rect" id="node24" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2223,295,2309,322"/><area shape="rect" id="node26" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="665,288,816,329"/><area shape="rect" id="node28" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="251,288,401,329"/><area shape="rect" id="node27" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="472,377,596,404"/><area shape="rect" id="node38" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1824,199,1977,240"/><area shape="rect" id="node40" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1651,288,1804,329"/><area shape="rect" id="node42" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2005,295,2199,322"/></map>
+</map>
 </div>
 </div>
 <p><a href="jevois__mavlink_8c_source.html">Go to the source code of this file.</a></p>
@@ -411,7 +411,7 @@ z</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_cgraph" id="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_cgraph">
-<area shape="rect" id="node2" href="low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter. " alt="" coords="228,5,365,47"/><area shape="rect" id="node3" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version). " alt="" coords="413,5,576,47"/></map>
+</map>
 </div>
 </p>
 
@@ -422,7 +422,7 @@ z</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_icgraph.png" border="0" usemap="#jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_icgraph" id="jevois__mavlink_8c_a30ee093c5bc29abb2b73dc16e1a50320_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a3deb6a4c7ca666dceb2ec5fe2d3b9b89" title="jevois_mavlink_init" alt="" coords="228,5,368,32"/></map>
+</map>
 </div>
 </p>
 
@@ -453,7 +453,7 @@ z</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a5d772dc781ff5e41f8786995c09a7914_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a5d772dc781ff5e41f8786995c09a7914_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a5d772dc781ff5e41f8786995c09a7914_cgraph" id="jevois__mavlink_8c_a5d772dc781ff5e41f8786995c09a7914_cgraph">
-<area shape="rect" id="node2" href="low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066" title="Update second order Butterworth low pass filter state with a new value(fixed point version)..." alt="" coords="203,5,351,47"/><area shape="rect" id="node3" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version). " alt="" coords="399,5,560,47"/></map>
+</map>
 </div>
 </p>
 
@@ -484,7 +484,7 @@ z</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a3deb6a4c7ca666dceb2ec5fe2d3b9b89_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a3deb6a4c7ca666dceb2ec5fe2d3b9b89_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a3deb6a4c7ca666dceb2ec5fe2d3b9b89_cgraph" id="jevois__mavlink_8c_a3deb6a4c7ca666dceb2ec5fe2d3b9b89_cgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8c.html#a30ee093c5bc29abb2b73dc16e1a50320" title="jevois_mavlink_filter_init" alt="" coords="205,13,379,39"/><area shape="rect" id="node5" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="193,63,391,90"/><area shape="rect" id="node6" href="jevois__mavlink_8c.html#ae70ec2f8655ac508e7b01dd357fe1d22" title="send_jevois_mavlink\l_visual_position" alt="" coords="216,115,368,156"/><area shape="rect" id="node7" href="jevois__mavlink_8c.html#a87bfe12c051e3f83897b8c07707a9574" title="send_jevois_mavlink\l_visual_target" alt="" coords="216,180,368,221"/><area shape="rect" id="node3" href="low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter. " alt="" coords="439,5,576,47"/><area shape="rect" id="node4" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version). " alt="" coords="624,5,787,47"/><area shape="rect" id="node8" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="488,187,527,214"/></map>
+</map>
 </div>
 </p>
 
@@ -515,7 +515,7 @@ z</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a59ceb7f0074d2eceb086a01cac2c5057_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a59ceb7f0074d2eceb086a01cac2c5057_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a59ceb7f0074d2eceb086a01cac2c5057_cgraph" id="jevois__mavlink_8c_a59ceb7f0074d2eceb086a01cac2c5057_cgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="mavlink_send_attitude" alt="" coords="238,56,405,83"/><area shape="rect" id="node11" href="jevois__mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3" title="mavlink_send_heartbeat" alt="" coords="232,157,411,184"/><area shape="rect" id="node12" href="jevois__mavlink_8c.html#aab409a1c2cff3fdcd6338918e3d7c17c" title="mavlink_send_highres_imu" alt="" coords="224,107,419,133"/><area shape="rect" id="node14" href="jevois__mavlink_8c.html#a6ce7b0cb528d8cbd69451a201f83c1f5" title="mavlink_send_set_mode" alt="" coords="231,5,411,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="491,5,641,32"/><area shape="rect" id="node4" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="467,56,665,83"/><area shape="rect" id="node9" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="487,107,645,133"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="713,56,877,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="925,56,1093,83"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1141,31,1295,57"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1143,81,1293,108"/><area shape="rect" id="node10" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="715,107,876,133"/><area shape="rect" id="node13" href="low__pass__filter_8h.html#a16879244610df52fc90ad73b1ffd2035" title="Get current value of the second order Butterworth low pass filter(fixed point version). " alt="" coords="483,158,649,199"/></map>
+</map>
 </div>
 </p>
 
@@ -545,7 +545,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="jevois__mavlink_8c_source.html#l00294">294</a> of file <a class="el" href="jevois__mavlink_8c_source.html">jevois_mavlink.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00082">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>.</p>
 
 <p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00168">jevois_mavlink_periodic()</a>.</p>
 
@@ -556,7 +556,7 @@ z</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph.png" border="0" usemap="#jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph" id="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="245,5,394,32"/><area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="241,56,398,83"/><area shape="rect" id="node5" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="220,107,419,133"/><area shape="rect" id="node4" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="468,56,629,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="467,107,631,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="679,107,847,133"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="895,81,1048,108"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="896,132,1047,159"/></map>
+</map>
 </div>
 </p>
 
@@ -567,7 +567,7 @@ z</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_icgraph.png" border="0" usemap="#jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_icgraph" id="jevois__mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a59ceb7f0074d2eceb086a01cac2c5057" title="jevois_mavlink_periodic" alt="" coords="220,5,391,32"/></map>
+</map>
 </div>
 </p>
 
@@ -608,7 +608,7 @@ z</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph.png" border="0" usemap="#jevois__mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph" id="jevois__mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a59ceb7f0074d2eceb086a01cac2c5057" title="jevois_mavlink_periodic" alt="" coords="232,5,403,32"/></map>
+</map>
 </div>
 </p>
 
@@ -638,7 +638,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="jevois__mavlink_8c_source.html#l00330">330</a> of file <a class="el" href="jevois__mavlink_8c_source.html">jevois_mavlink.c</a>.</p>
 
-<p>References <a class="el" href="low__pass__filter_8h_source.html#l00333">get_butterworth_2_low_pass_int()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>.</p>
+<p>References <a class="el" href="low__pass__filter_8h_source.html#l00333">get_butterworth_2_low_pass_int()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00082">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>.</p>
 
 <p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00168">jevois_mavlink_periodic()</a>.</p>
 
@@ -649,7 +649,7 @@ z</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_cgraph.png" border="0" usemap="#jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_cgraph" id="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_cgraph">
-<area shape="rect" id="node2" href="low__pass__filter_8h.html#a16879244610df52fc90ad73b1ffd2035" title="Get current value of the second order Butterworth low pass filter(fixed point version). " alt="" coords="264,5,431,47"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="273,71,422,98"/><area shape="rect" id="node4" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="269,122,426,149"/><area shape="rect" id="node6" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="248,173,447,199"/><area shape="rect" id="node5" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="496,122,657,149"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="495,173,659,199"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="707,173,875,199"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="923,147,1076,174"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="924,198,1075,225"/></map>
+</map>
 </div>
 </p>
 
@@ -660,7 +660,7 @@ z</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_icgraph.png" border="0" usemap="#jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_icgraph" id="jevois__mavlink_8c_aab409a1c2cff3fdcd6338918e3d7c17c_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a59ceb7f0074d2eceb086a01cac2c5057" title="jevois_mavlink_periodic" alt="" coords="248,5,419,32"/></map>
+</map>
 </div>
 </p>
 
@@ -690,7 +690,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="jevois__mavlink_8c_source.html#l00308">308</a> of file <a class="el" href="jevois__mavlink_8c_source.html">jevois_mavlink.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, and <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00082">get_sys_time_msec()</a>, and <a class="el" href="mavlink_8h_source.html#l00067">MAVLinkSendMessage</a>.</p>
 
 <p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00168">jevois_mavlink_periodic()</a>.</p>
 
@@ -701,7 +701,7 @@ z</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_cgraph" id="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="233,5,383,32"/></map>
+</map>
 </div>
 </p>
 
@@ -712,7 +712,7 @@ z</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_icgraph.png" border="0" usemap="#jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_icgraph" id="jevois__mavlink_8c_a6ce7b0cb528d8cbd69451a201f83c1f5_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a59ceb7f0074d2eceb086a01cac2c5057" title="jevois_mavlink_periodic" alt="" coords="233,5,404,32"/></map>
+</map>
 </div>
 </p>
 
@@ -752,7 +752,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="jevois__mavlink_8c_source.html#l00135">135</a> of file <a class="el" href="jevois__mavlink_8c_source.html">jevois_mavlink.c</a>.</p>
 
-<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="main__demo5_8c_source.html#l00059">foo</a>, <a class="el" href="jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467">jevois_vision_position</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
+<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467">jevois_vision_position</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
 
 <p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00154">jevois_mavlink_init()</a>.</p>
 
@@ -763,7 +763,7 @@ z</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_ae70ec2f8655ac508e7b01dd357fe1d22_icgraph.png" border="0" usemap="#jevois__mavlink_8c_ae70ec2f8655ac508e7b01dd357fe1d22_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_ae70ec2f8655ac508e7b01dd357fe1d22_icgraph" id="jevois__mavlink_8c_ae70ec2f8655ac508e7b01dd357fe1d22_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a3deb6a4c7ca666dceb2ec5fe2d3b9b89" title="jevois_mavlink_init" alt="" coords="205,13,345,39"/></map>
+</map>
 </div>
 </p>
 
@@ -814,7 +814,7 @@ z</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_cgraph.png" border="0" usemap="#jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_cgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_cgraph" id="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_cgraph">
-<area shape="rect" id="node2" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="205,13,244,39"/></map>
+</map>
 </div>
 </p>
 
@@ -825,7 +825,7 @@ z</td>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_icgraph.png" border="0" usemap="#jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_icgraph" alt=""/></div>
 <map name="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_icgraph" id="jevois__mavlink_8c_a87bfe12c051e3f83897b8c07707a9574_icgraph">
-<area shape="rect" id="node2" href="jevois__mavlink_8h.html#a3deb6a4c7ca666dceb2ec5fe2d3b9b89" title="jevois_mavlink_init" alt="" coords="205,13,345,39"/></map>
+</map>
 </div>
 </p>
 
@@ -924,7 +924,7 @@ z</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="dir_a975c919dcb72580e31cb51fbd2aacf9.html">cameras</a></li><li class="navelem"><a class="el" href="jevois__mavlink_8c.html">jevois_mavlink.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:09 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

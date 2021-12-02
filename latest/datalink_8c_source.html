@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/datalink/datalink.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/datalink/datalink.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="datalink_8c.html#abfcb795f0df1bc44a2fc9e4ef8a51c39">   29</a></span>&#160;<span class="preprocessor">#define MODULES_DATALINK_C</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">datalink.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html">subsystems/datalink/downlink.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html">modules/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;generated/modules.h&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;generated/settings.h&quot;</span></div>
@@ -142,11 +142,11 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;pprzlink/messages.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL &amp;&amp; defined RADIO_CONTROL_TYPE_DATALINK</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">subsystems/radio_control.h</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if USE_GPS</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef RADIO_CONTROL_DATALINK_LED</span></div>
@@ -158,10 +158,10 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe">dl_parse_msg</a>(<span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <span class="keyword">struct</span> transport_tx *trans, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe">dl_parse_msg</a>(<span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <span class="keyword">struct</span> transport_tx *trans, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id = SenderIdOfPprzMsg(buf);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> msg_id = IdOfPprzMsg(buf);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id = SenderIdOfPprzMsg(buf);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> msg_id = IdOfPprzMsg(buf);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">/* parse telemetry messages coming from other AC */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (sender_id != 0) {</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          <span class="comment">// Reply to the sender of the message</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <span class="keyword">struct </span>pprzlink_msg msg;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          msg.trans = trans;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          msg.dev = <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          msg.dev = <a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          msg.sender_id = AC_ID;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          msg.receiver_id = sender_id;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          msg.component_id = 0;</div>
@@ -195,14 +195,14 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">case</span> DL_SETTING : {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          <span class="keywordflow">if</span> (DL_SETTING_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = DL_SETTING_index(buf);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = DL_SETTING_index(buf);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          <span class="keywordtype">float</span> var = DL_SETTING_value(buf);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          DlSetting(i, var);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#if PPRZLINK_DEFAULT_VER == 2</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          <span class="comment">// Reply to the sender of the message</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          <span class="keyword">struct </span>pprzlink_msg msg;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;          msg.trans = trans;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          msg.dev = <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          msg.dev = <a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          msg.sender_id = AC_ID;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          msg.receiver_id = sender_id;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          msg.component_id = 0;</div>
@@ -215,13 +215,13 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">case</span> DL_GET_SETTING : {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          <span class="keywordflow">if</span> (DL_GET_SETTING_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = DL_GET_SETTING_index(buf);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = DL_GET_SETTING_index(buf);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          <span class="keywordtype">float</span> <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a> = settings_get_value(i);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if PPRZLINK_DEFAULT_VER == 2</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="comment">// Reply to the sender of the message</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keyword">struct </span>pprzlink_msg msg;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          msg.trans = trans;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          msg.dev = <a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          msg.dev = <a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          msg.sender_id = AC_ID;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          msg.receiver_id = sender_id;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;          msg.component_id = 0;</div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifdef RADIO_CONTROL_DATALINK_LED</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <a class="code" href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a>(RADIO_CONTROL_DATALINK_LED);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <a class="code" href="subsystems_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a>(</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <a class="code" href="modules_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a>(</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            DL_RC_3CH_throttle_mode(buf),</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            DL_RC_3CH_roll(buf),</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            DL_RC_3CH_pitch(buf));</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#ifdef RADIO_CONTROL_DATALINK_LED</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <a class="code" href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a>(RADIO_CONTROL_DATALINK_LED);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a>(DL_RC_4CH_mode(buf),</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="modules_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a>(DL_RC_4CH_mode(buf),</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                  DL_RC_4CH_throttle(buf),</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                  DL_RC_4CH_roll(buf),</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                  DL_RC_4CH_pitch(buf),</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          <span class="keywordflow">if</span> (DL_GPS_INJECT_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="comment">// GPS parse data</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <a class="code" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a>(</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <a class="code" href="gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb">gps_inject_data</a>(</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            DL_GPS_INJECT_packet_id(buf),</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            DL_GPS_INJECT_data_length(buf),</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            DL_GPS_INJECT_data(buf)</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#if USE_GPS_UBX_RTCM</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">case</span> DL_RTCM_INJECT : {</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          <span class="comment">// GPS parse data</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          <a class="code" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a>(DL_RTCM_INJECT_packet_id(buf),</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          <a class="code" href="gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb">gps_inject_data</a>(DL_RTCM_INJECT_packet_id(buf),</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                          DL_RTCM_INJECT_data_length(buf),</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                          DL_RTCM_INJECT_data(buf));</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
@@ -295,30 +295,30 @@ $(document).ready(function(){initNavTree('datalink_8c_source.html','');});
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">/* default empty WEAK implementation for firmwares without an extra firmware_parse_msg */</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f">  193</a></span>&#160;WEAK <span class="keywordtype">void</span> <a class="code" href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f">firmware_parse_msg</a>(<span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a> __attribute__((unused)), <span class="keyword">struct</span> transport_tx *trans __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf __attribute__((unused)))</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f">  193</a></span>&#160;WEAK <span class="keywordtype">void</span> <a class="code" href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f">firmware_parse_msg</a>(<span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a> __attribute__((unused)), <span class="keyword">struct</span> transport_tx *trans __attribute__((unused)), <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf __attribute__((unused)))</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
+<div class="ttc" id="usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="radio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div></div>
 <div class="ttc" id="datalink_8h_html"><div class="ttname"><a href="datalink_8h.html">datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground and other A/Cs. </div></div>
 <div class="ttc" id="datalink_8c_html_a8622e4eaf1529d8c64af55c0d05dadbe"><div class="ttname"><a href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe">dl_parse_msg</a></div><div class="ttdeci">void dl_parse_msg(struct link_device *dev, struct transport_tx *trans, uint8_t *buf)</div><div class="ttdoc">Should be called when chars are available in dl_buffer. </div><div class="ttdef"><b>Definition:</b> <a href="datalink_8c_source.html#l00056">datalink.c:56</a></div></div>
-<div class="ttc" id="subsystems_2radio__control_2rc__datalink_8c_html_a22105107236d00fa616659322bd89a02"><div class="ttname"><a href="subsystems_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a></div><div class="ttdeci">void parse_rc_3ch_datalink(uint8_t throttle_mode, int8_t roll, int8_t pitch)</div><div class="ttdoc">Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ...</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">rc_datalink.c:40</a></div></div>
+<div class="ttc" id="gps_8c_html_a95067acaf0b8b646abb5d9ec7e98b0cb"><div class="ttname"><a href="gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb">gps_inject_data</a></div><div class="ttdeci">void WEAK gps_inject_data(uint8_t packet_id, uint8_t length, uint8_t *data)</div><div class="ttdoc">Default parser for GPS injected data. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00380">gps.c:380</a></div></div>
+<div class="ttc" id="modules_2radio__control_2rc__datalink_8c_html_a22105107236d00fa616659322bd89a02"><div class="ttname"><a href="modules_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a></div><div class="ttdeci">void parse_rc_3ch_datalink(uint8_t throttle_mode, int8_t roll, int8_t pitch)</div><div class="ttdoc">Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ...</div><div class="ttdef"><b>Definition:</b> <a href="modules_2radio__control_2rc__datalink_8c_source.html#l00040">rc_datalink.c:40</a></div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="temp__tcouple__adc_8c_html_a530497e1435a9d2606cd3b9b2336de34"><div class="ttname"><a href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a></div><div class="ttdeci">uint16_t val[TCOUPLE_NB]</div><div class="ttdef"><b>Definition:</b> <a href="temp__tcouple__adc_8c_source.html#l00049">temp_tcouple_adc.c:49</a></div></div>
 <div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00053">led_hw.h:53</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
-<div class="ttc" id="gps__piksi_8c_html_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><div class="ttname"><a href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a></div><div class="ttdeci">void gps_inject_data(uint8_t packet_id, uint8_t length, uint8_t *data)</div><div class="ttdoc">Override the default GPS packet injector to inject the data trough UART. </div><div class="ttdef"><b>Definition:</b> <a href="gps__piksi_8c_source.html#l00408">gps_piksi.c:408</a></div></div>
-<div class="ttc" id="subsystems_2radio__control_2rc__datalink_8c_html_aa3d40235f29aab16121c0073217835a2"><div class="ttname"><a href="subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a></div><div class="ttdeci">void parse_rc_4ch_datalink(uint8_t mode, uint8_t throttle, int8_t roll, int8_t pitch, int8_t yaw)</div><div class="ttdoc">Decode datalink message to get rc values with RC_4CH message. </div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">rc_datalink.c:56</a></div></div>
 <div class="ttc" id="datalink_8c_html_aa3b127ff90392c842dc3299876f5e02f"><div class="ttname"><a href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f">firmware_parse_msg</a></div><div class="ttdeci">WEAK void firmware_parse_msg(struct link_device *dev, struct transport_tx *trans, uint8_t *buf)</div><div class="ttdoc">Firmware specfic msg handler. </div><div class="ttdef"><b>Definition:</b> <a href="datalink_8c_source.html#l00193">datalink.c:193</a></div></div>
+<div class="ttc" id="modules_2radio__control_2rc__datalink_8c_html_aa3d40235f29aab16121c0073217835a2"><div class="ttname"><a href="modules_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a></div><div class="ttdeci">void parse_rc_4ch_datalink(uint8_t mode, uint8_t throttle, int8_t roll, int8_t pitch, int8_t yaw)</div><div class="ttdoc">Decode datalink message to get rc values with RC_4CH message. </div><div class="ttdef"><b>Definition:</b> <a href="modules_2radio__control_2rc__datalink_8c_source.html#l00056">rc_datalink.c:56</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="datalink_8c.html">datalink.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="datalink_8c.html">datalink.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

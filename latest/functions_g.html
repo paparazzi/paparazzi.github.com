@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -240,9 +240,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gConfigInfo
 : <a class="el" href="imu__chimu_8h.html#ac254179d39d936403552bbb88625fc03">CHIMU_PARSER_DATA</a>
 </li>
-<li>gdr
-: <a class="el" href="lpcADC_8h.html#ac81ec17b5bf3b664dbf7e114ac6c61a6">adcRegs_t</a>
-</li>
 <li>gear_compression
 : <a class="el" href="flight__gear_8h.html#a60c33b3342ad0d8a8def15dd73f4e543">FGNetFDM</a>
 </li>
@@ -373,9 +370,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="group__ac__info.html#a80b7d57528d59f1d20fa876794c25d29">acInfo</a>
 , <a class="el" href="gps_8h.html#aa2ab49f1a4a8aae71b3929e2c8aad7ba">GpsState</a>
 </li>
-<li>gsr
-: <a class="el" href="lpcADC_8h.html#aef9f9010fef01ddde8afbbb4e32c376d">adcRegs_t</a>
-</li>
 <li>gu_lut
 : <a class="el" href="avi__isp__gamma__corrector_8h.html#a812b2ee9ce336cdcae89698a2a242c45">avi_isp_gamma_corrector_gu_lut_regs</a>
 </li>
@@ -398,7 +392,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gyro_bias
 : <a class="el" href="ahrs__float__cmpl_8h.html#a0022d20b44e1d701ed8dc0ccda589a2e">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__float__dcm_8h.html#aae8cc61944a9c33bfbc8067f39060ad8">AhrsFloatDCM</a>
-, <a class="el" href="ahrs__int__cmpl__euler_8h.html#a44b547510655944e0ed0c8dbe6651dc1">AhrsIntCmplEuler</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a176f7ac5ec5b346cf25e625d14a70ea5">AhrsIntCmplQuat</a>
 , <a class="el" href="ahrs__float__mlkf_8h.html#a967f441178e1c3a26174b0cbca4fe738">AhrsMlkf</a>
 </li>
@@ -434,6 +427,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="logger__uart_8h.html#a59e93ba3eba882855736b9d81af7749e">logger_uart_data_struct</a>
 , <a class="el" href="direct__memory__logger_8c.html#ace66778c8e567838ac2bb45c95e30020">LogStruct</a>
 </li>
+<li>gyro_pitch
+: <a class="el" href="ins__ekf2_8cpp.html#a8a44d65dcf002add5b55d2dd055aa2f4">ekf2_t</a>
+</li>
 <li>gyro_prev
 : <a class="el" href="imu_8h.html#a7ac65ce9270568f68550482ef718678c">Imu</a>
 </li>
@@ -452,6 +448,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce">Mpu60x0Config</a>
 , <a class="el" href="mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d">Mpu9250Config</a>
 , <a class="el" href="px4flow__i2c_8h.html#ae0634b64c909c20edb3e3991f749eaea">px4flow_i2c_frame</a>
+</li>
+<li>gyro_roll
+: <a class="el" href="ins__ekf2_8cpp.html#a22e6ac0012e094090dcd7ec4c2a1bed6">ekf2_t</a>
 </li>
 <li>gyro_stamp
 : <a class="el" href="ins__ekf2_8cpp.html#ac601869259cfdb22e9698f8d5a5291eb">ekf2_t</a>
@@ -481,6 +480,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gyro_y_rate_integral
 : <a class="el" href="px4flow__i2c_8h.html#a28d63be865e860289db7cf18bb32dff3">px4flow_i2c_integral_frame</a>
 </li>
+<li>gyro_yaw
+: <a class="el" href="ins__ekf2_8cpp.html#a31a4fd04685e11b8fcc83db2b7365dbd">ekf2_t</a>
+</li>
 <li>gyro_z_rate
 : <a class="el" href="px4flow__i2c_8h.html#abc220483e0a219a7787290541d1a0289">px4flow_i2c_frame</a>
 </li>
@@ -493,7 +495,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

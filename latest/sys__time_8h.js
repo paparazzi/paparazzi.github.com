@@ -39,6 +39,7 @@ var sys__time_8h =
     [ "sys_time_check_and_ack_timer", "sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1", null ],
     [ "sys_time_init", "sys__time_8h.html#a1e6b75f4db9128a3326d8a6283b0af43", null ],
     [ "sys_time_register_timer", "sys__time_8h.html#a3ababed8b6819006aaf919a663efe8cd", null ],
+    [ "sys_time_register_timer_offset", "sys__time_8h.html#a47c219332312321b7b2bc31ed6a23ba9", null ],
     [ "sys_time_ticks_of_msec", "sys__time_8h.html#abbcaf989fa430c72909add47bb557d8e", null ],
     [ "sys_time_ticks_of_sec", "sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406", null ],
     [ "sys_time_ticks_of_usec", "sys__time_8h.html#a46ccccbd8fdf3b1c359475fd05bebd0b", null ],

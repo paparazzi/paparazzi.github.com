@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('geiger__counter_8c.html','');});
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for geiger_counter.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('geiger__counter_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geiger__counter_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2geiger__counter_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2geiger__counter_8c" id="sw_2airborne_2modules_2meteo_2geiger__counter_8c">
-<area shape="rect" id="node2" href="geiger__counter_8h.html" title="modules/meteo/geiger\l_counter.h" alt="" coords="5,95,172,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="197,102,327,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1293,273,1431,300"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="689,95,843,136"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="723,191,809,218"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="545,184,699,225"/><area shape="rect" id="node16" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1199,191,1392,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="geiger__counter_8c_source.html">Go to the source code of this file.</a></p>
@@ -153,11 +153,11 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a7e9ff01bcdeadfc789027692778d40c6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#a7e9ff01bcdeadfc789027692778d40c6">geiger_trans</a></td></tr>
 <tr class="separator:a7e9ff01bcdeadfc789027692778d40c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032776faf43a209e2c888e2bea72ec2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c">count_geiger_1</a></td></tr>
+<tr class="memitem:a032776faf43a209e2c888e2bea72ec2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c">count_geiger_1</a></td></tr>
 <tr class="separator:a032776faf43a209e2c888e2bea72ec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf72a5e0a4ec7503979dbf07551a30fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#acf72a5e0a4ec7503979dbf07551a30fd">count_geiger_2</a></td></tr>
+<tr class="memitem:acf72a5e0a4ec7503979dbf07551a30fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#acf72a5e0a4ec7503979dbf07551a30fd">count_geiger_2</a></td></tr>
 <tr class="separator:acf72a5e0a4ec7503979dbf07551a30fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9dbdd1fb84676af7d2a603f1f7717d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#af9dbdd1fb84676af7d2a603f1f7717d3">volt_geiger</a></td></tr>
+<tr class="memitem:af9dbdd1fb84676af7d2a603f1f7717d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geiger__counter_8c.html#af9dbdd1fb84676af7d2a603f1f7717d3">volt_geiger</a></td></tr>
 <tr class="separator:af9dbdd1fb84676af7d2a603f1f7717d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -214,7 +214,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="geiger__counter_8c_source.html#l00054">54</a> of file <a class="el" href="geiger__counter_8c_source.html">geiger_counter.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_1</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_2</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="geiger__counter_8c_source.html#l00041">geiger_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="geiger__counter_8c_source.html#l00043">volt_geiger</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_1</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_2</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="geiger__counter_8c_source.html#l00041">geiger_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="geiger__counter_8c_source.html#l00043">volt_geiger</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph.png" border="0" usemap="#geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph" alt=""/></div>
 <map name="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph" id="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="228,5,321,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="369,5,460,32"/></map>
+</map>
 </div>
 </p>
 
@@ -273,7 +273,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> count_geiger_1</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count_geiger_1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -289,7 +289,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> count_geiger_2</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count_geiger_2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,7 +321,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> volt_geiger</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> volt_geiger</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,7 +338,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="geiger__counter_8c.html">geiger_counter.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

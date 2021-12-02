@@ -2,13 +2,10 @@ var sim__ap_8c =
 [
     [ "MODULES_C", "sim__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b", null ],
     [ "SIM_UPDATE_DL", "sim__ap_8c.html#a0a55c04d25c5857e49e149e3b4b6a8d0", null ],
-    [ "adc_buf_channel", "sim__ap_8c.html#a89f4f8d26f26d00385ef45a5bc445fb9", null ],
     [ "ftimeofday", "sim__ap_8c.html#a9037ef79ac8d270ab46865ea3c7e66d6", null ],
     [ "get_commands", "sim__ap_8c.html#ac4193ac502da248636d99cfcc43626cf", null ],
     [ "set_datalink_message", "sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7", null ],
     [ "sim_init", "sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157", null ],
-    [ "sim_monitor_task", "sim__ap_8c.html#a521e30549ead301bc629cdeeac4a840c", null ],
-    [ "sim_nav_task", "sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f", null ],
     [ "sim_periodic_task", "sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0", null ],
     [ "sim_sys_time_task", "sim__ap_8c.html#ad4b81a07a0e1d3b8cad9a7a2af3d7d1b", null ],
     [ "update_bat", "sim__ap_8c.html#a7e41927f9c350afbed960e8c407f8f82", null ],

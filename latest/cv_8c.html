@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('cv_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2cv_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2cv_8c" id="sw_2airborne_2modules_2computer__vision_2cv_8c">
-<area shape="rect" id="node4" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="1282,95,1328,121"/><area shape="rect" id="node26" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="1542,95,1636,121"/><area shape="rect" id="node7" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="950,169,1140,196"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="976,251,1061,278"/><area shape="rect" id="node10" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="765,244,952,285"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="662,333,729,360"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="545,497,724,524"/><area shape="rect" id="node19" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="279,497,470,524"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="915,408,1066,449"/><area shape="rect" id="node23" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="740,408,891,449"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="552,408,716,449"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="316,572,470,599"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="596,572,747,599"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="874,497,998,524"/></map>
+</map>
 </div>
 </div>
 <p><a href="cv_8c_source.html">Go to the source code of this file.</a></p>
@@ -134,15 +134,15 @@ $(document).ready(function(){initNavTree('cv_8c.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:a320424a660d1f3dc96e65784fea1af1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a320424a660d1f3dc96e65784fea1af1c">cv_attach_listener</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *new_listener)</td></tr>
 <tr class="separator:a320424a660d1f3dc96e65784fea1af1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcef27aac4d31a36682981e347cd6f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a">cv_async_function</a> (struct <a class="el" href="cv_8h.html#structcv__async">cv_async</a> *async, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
+<tr class="memitem:abcef27aac4d31a36682981e347cd6f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a">cv_async_function</a> (struct <a class="el" href="cv_8h.html#structcv__async">cv_async</a> *async, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
 <tr class="separator:abcef27aac4d31a36682981e347cd6f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13a0fca79c7d85448a2fa4bbab340b52"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a13a0fca79c7d85448a2fa4bbab340b52">cv_async_thread</a> (void *args)</td></tr>
 <tr class="separator:a13a0fca79c7d85448a2fa4bbab340b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ccbed9793580feadb878ae82db54f7f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f">timeval_diff</a> (struct timeval *<a class="el" href="ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166">A</a>, struct timeval *<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>)</td></tr>
+<tr class="memitem:a9ccbed9793580feadb878ae82db54f7f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f">timeval_diff</a> (struct timeval *<a class="el" href="ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166">A</a>, struct timeval *<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>)</td></tr>
 <tr class="separator:a9ccbed9793580feadb878ae82db54f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c5a4c16f124cdc564d637fcc733b97"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97">cv_add_to_device</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, <a class="el" href="cv_8h.html#a91f788d8c962e3f30e573b260fa5167a">cv_function</a> func, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> fps, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
+<tr class="memitem:a27c5a4c16f124cdc564d637fcc733b97"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97">cv_add_to_device</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, <a class="el" href="cv_8h.html#a91f788d8c962e3f30e573b260fa5167a">cv_function</a> func, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> fps, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
 <tr class="separator:a27c5a4c16f124cdc564d637fcc733b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89655c9c578e838cb71808c422d0b15"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#af89655c9c578e838cb71808c422d0b15">cv_add_to_device_async</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, <a class="el" href="cv_8h.html#a91f788d8c962e3f30e573b260fa5167a">cv_function</a> func, int nice_level, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> fps, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
+<tr class="memitem:af89655c9c578e838cb71808c422d0b15"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#af89655c9c578e838cb71808c422d0b15">cv_add_to_device_async</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, <a class="el" href="cv_8h.html#a91f788d8c962e3f30e573b260fa5167a">cv_function</a> func, int nice_level, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> fps, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id)</td></tr>
 <tr class="separator:af89655c9c578e838cb71808c422d0b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600c1d8570ebc9340cee21772e84f022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022">cv_run_device</a> (struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> *device, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
 <tr class="separator:a600c1d8570ebc9340cee21772e84f022"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,13 +171,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>fps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cv_8h_source.html#l00060">video_listener::active</a>, <a class="el" href="video__thread_8c_source.html#l00197">add_video_device()</a>, <a class="el" href="cv_8h_source.html#l00053">video_listener::async</a>, <a class="el" href="video__device_8h_source.html#l00066">video_config_t::cv_listener</a>, <a class="el" href="cv_8h_source.html#l00055">video_listener::func</a>, <a class="el" href="cv_8h_source.html#l00056">video_listener::id</a>, <a class="el" href="colorfilter_8c_source.html#l00043">listener</a>, <a class="el" href="cv_8h_source.html#l00059">video_listener::maximum_fps</a>, and <a class="el" href="cv_8h_source.html#l00052">video_listener::next</a>.</p>
 
-<p>Referenced by <a class="el" href="cv__detect__color__object_8c_source.html#l00154">color_object_detector_init()</a>, <a class="el" href="colorfilter_8c_source.html#l00082">colorfilter_init()</a>, <a class="el" href="cv_8c_source.html#l00083">cv_add_to_device_async()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00230">cv_blob_locator_init()</a>, <a class="el" href="detect__contour_8c_source.html#l00047">detect_contour_init()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="detect__window_8c_source.html#l00039">detect_window_init()</a>, <a class="el" href="cv__opencvdemo_8c_source.html#l00050">opencvdemo_init()</a>, <a class="el" href="opticflow__module_8c_source.html#l00105">opticflow_module_init()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00313">pano_unwrap_init()</a>, <a class="el" href="qr__code_8c_source.html#l00042">qrcode_init()</a>, <a class="el" href="undistort__image_8c_source.html#l00109">undistort_image_init()</a>, <a class="el" href="video__capture_8c_source.html#l00068">video_capture_init()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00127">video_usb_logger_start()</a>, and <a class="el" href="wedgebug_8c_source.html#l01584">wedgebug_init()</a>.</p>
+<p>Referenced by <a class="el" href="cv__detect__color__object_8c_source.html#l00154">color_object_detector_init()</a>, <a class="el" href="colorfilter_8c_source.html#l00082">colorfilter_init()</a>, <a class="el" href="cv_8c_source.html#l00083">cv_add_to_device_async()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00230">cv_blob_locator_init()</a>, <a class="el" href="detect__contour_8c_source.html#l00047">detect_contour_init()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="detect__window_8c_source.html#l00039">detect_window_init()</a>, <a class="el" href="cv__opencvdemo_8c_source.html#l00050">opencvdemo_init()</a>, <a class="el" href="opticflow__module_8c_source.html#l00106">opticflow_module_init()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00313">pano_unwrap_init()</a>, <a class="el" href="qr__code_8c_source.html#l00042">qrcode_init()</a>, <a class="el" href="undistort__image_8c_source.html#l00109">undistort_image_init()</a>, <a class="el" href="video__capture_8c_source.html#l00068">video_capture_init()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00127">video_usb_logger_start()</a>, and <a class="el" href="wedgebug_8c_source.html#l01584">wedgebug_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_cgraph.png" border="0" usemap="#cv_8c_a27c5a4c16f124cdc564d637fcc733b97_cgraph" alt=""/></div>
 <map name="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_cgraph" id="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_cgraph">
-<area shape="rect" id="node2" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="188,31,323,57"/><area shape="rect" id="node3" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="371,31,500,57"/><area shape="rect" id="node4" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="548,5,675,32"/><area shape="rect" id="node5" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="574,56,649,83"/><area shape="rect" id="node6" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="723,56,851,83"/><area shape="rect" id="node7" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="899,31,1021,57"/><area shape="rect" id="node8" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="920,81,1000,108"/></map>
+</map>
 </div>
 </p>
 
@@ -212,7 +212,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_icgraph.png" border="0" usemap="#cv_8c_a27c5a4c16f124cdc564d637fcc733b97_icgraph" alt=""/></div>
 <map name="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_icgraph" id="cv_8c_a27c5a4c16f124cdc564d637fcc733b97_icgraph">
-<area shape="rect" id="node2" href="cv__detect__color__object_8h.html#aaaa68a4d10f42cf735a96f4ab74ec29a" title="color_object_detector_init" alt="" coords="188,5,375,32"/><area shape="rect" id="node3" href="colorfilter_8h.html#ab8b6b333c3f84d7497aef5629a2e4453" title="colorfilter_init" alt="" coords="228,56,335,83"/><area shape="rect" id="node4" href="cv_8h.html#af89655c9c578e838cb71808c422d0b15" title="cv_add_to_device_async" alt="" coords="192,107,371,133"/><area shape="rect" id="node7" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="208,157,355,184"/><area shape="rect" id="node8" href="detect__contour_8h.html#a036a42163f78df4cd62571fe108efbf1" title="detect_contour_init" alt="" coords="209,208,354,235"/><area shape="rect" id="node9" href="detect__gate_8h.html#afad85937ed43b1d2963bec59f0031ec1" title="detect_gate_init" alt="" coords="219,259,344,285"/><area shape="rect" id="node10" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="211,309,352,336"/><area shape="rect" id="node11" href="cv__opencvdemo_8h.html#ad6b89073e490f7f45751cf66f4b97c4b" title="opencvdemo_init" alt="" coords="216,360,347,387"/><area shape="rect" id="node12" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="202,411,361,437"/><area shape="rect" id="node13" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="215,461,348,488"/><area shape="rect" id="node14" href="qr__code_8h.html#ac2cd906083090c455a8cf7bb2b491dee" title="qrcode_init" alt="" coords="235,512,327,539"/><area shape="rect" id="node15" href="undistort__image_8h.html#a2fe19ff135bf0c4edca40d4f630b973f" title="undistort_image_init" alt="" coords="205,563,357,589"/><area shape="rect" id="node16" href="video__capture_8h.html#afd5936d0a4d5e8abd118dfac97638829" title="video_capture_init" alt="" coords="212,613,351,640"/><area shape="rect" id="node17" href="video__usb__logger_8h.html#a371634939fbb925daf5f698a8f9fad1f" title="Start the file logger and open a new file. " alt="" coords="196,664,367,691"/><area shape="rect" id="node18" href="wedgebug_8h.html#aa5dd4cdf2fa1c2edd243c2e1f6cdf95c" title="wedgebug_init" alt="" coords="225,715,338,741"/><area shape="rect" id="node5" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="423,81,565,108"/><area shape="rect" id="node6" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="439,132,549,159"/></map>
+</map>
 </div>
 </p>
 
@@ -243,13 +243,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>fps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_af89655c9c578e838cb71808c422d0b15_cgraph.png" border="0" usemap="#cv_8c_af89655c9c578e838cb71808c422d0b15_cgraph" alt=""/></div>
 <map name="cv_8c_af89655c9c578e838cb71808c422d0b15_cgraph" id="cv_8c_af89655c9c578e838cb71808c422d0b15_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title="cv_add_to_device" alt="" coords="232,31,367,57"/><area shape="rect" id="node10" href="cv_8c.html#a13a0fca79c7d85448a2fa4bbab340b52" title="cv_async_thread" alt="" coords="235,81,364,108"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="415,31,549,57"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="597,31,727,57"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="775,5,901,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="801,56,875,83"/><area shape="rect" id="node7" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="949,56,1077,83"/><area shape="rect" id="node8" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1125,31,1248,57"/><area shape="rect" id="node9" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1147,81,1227,108"/><area shape="rect" id="node11" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="427,81,537,108"/></map>
+</map>
 </div>
 </p>
 
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_af89655c9c578e838cb71808c422d0b15_icgraph.png" border="0" usemap="#cv_8c_af89655c9c578e838cb71808c422d0b15_icgraph" alt=""/></div>
 <map name="cv_8c_af89655c9c578e838cb71808c422d0b15_icgraph" id="cv_8c_af89655c9c578e838cb71808c422d0b15_icgraph">
-<area shape="rect" id="node2" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="232,5,375,32"/><area shape="rect" id="node3" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="249,56,358,83"/></map>
+</map>
 </div>
 </p>
 
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> cv_async_function </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> cv_async_function </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="cv_8h.html#structcv__async">cv_async</a> *&#160;</td>
           <td class="paramname"><em>async</em>, </td>
@@ -327,7 +327,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_abcef27aac4d31a36682981e347cd6f3a_cgraph.png" border="0" usemap="#cv_8c_abcef27aac4d31a36682981e347cd6f3a_cgraph" alt=""/></div>
 <map name="cv_8c_abcef27aac4d31a36682981e347cd6f3a_cgraph" id="cv_8c_abcef27aac4d31a36682981e347cd6f3a_cgraph">
-<area shape="rect" id="node2" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="198,5,297,32"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="192,56,303,83"/><area shape="rect" id="node4" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="200,107,295,133"/></map>
+</map>
 </div>
 </p>
 
@@ -338,7 +338,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_abcef27aac4d31a36682981e347cd6f3a_icgraph.png" border="0" usemap="#cv_8c_abcef27aac4d31a36682981e347cd6f3a_icgraph" alt=""/></div>
 <map name="cv_8c_abcef27aac4d31a36682981e347cd6f3a_icgraph" id="cv_8c_abcef27aac4d31a36682981e347cd6f3a_icgraph">
-<area shape="rect" id="node2" href="cv_8h.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="192,5,304,32"/><area shape="rect" id="node3" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="352,5,515,32"/><area shape="rect" id="node4" href="video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title="start_video_thread" alt="" coords="563,5,705,32"/><area shape="rect" id="node5" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Starts the streaming of a all cameras. " alt="" coords="753,5,896,32"/></map>
+</map>
 </div>
 </p>
 
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_cgraph.png" border="0" usemap="#cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_cgraph" alt=""/></div>
 <map name="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_cgraph" id="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_cgraph">
-<area shape="rect" id="node2" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="183,5,293,32"/></map>
+</map>
 </div>
 </p>
 
@@ -382,7 +382,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_icgraph.png" border="0" usemap="#cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_icgraph" alt=""/></div>
 <map name="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_icgraph" id="cv_8c_a13a0fca79c7d85448a2fa4bbab340b52_icgraph">
-<area shape="rect" id="node2" href="cv_8h.html#af89655c9c578e838cb71808c422d0b15" title="cv_add_to_device_async" alt="" coords="183,31,361,57"/><area shape="rect" id="node3" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="409,5,552,32"/><area shape="rect" id="node4" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="426,56,535,83"/></map>
+</map>
 </div>
 </p>
 
@@ -451,7 +451,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a600c1d8570ebc9340cee21772e84f022_cgraph.png" border="0" usemap="#cv_8c_a600c1d8570ebc9340cee21772e84f022_cgraph" alt=""/></div>
 <map name="cv_8c_a600c1d8570ebc9340cee21772e84f022_cgraph" id="cv_8c_a600c1d8570ebc9340cee21772e84f022_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title="cv_async_function" alt="" coords="165,56,304,83"/><area shape="rect" id="node6" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="187,107,282,133"/><area shape="rect" id="node3" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="358,5,457,32"/><area shape="rect" id="node4" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="352,56,463,83"/><area shape="rect" id="node5" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="360,107,455,133"/></map>
+</map>
 </div>
 </p>
 
@@ -462,7 +462,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a600c1d8570ebc9340cee21772e84f022_icgraph.png" border="0" usemap="#cv_8c_a600c1d8570ebc9340cee21772e84f022_icgraph" alt=""/></div>
 <map name="cv_8c_a600c1d8570ebc9340cee21772e84f022_icgraph" id="cv_8c_a600c1d8570ebc9340cee21772e84f022_icgraph">
-<area shape="rect" id="node2" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="165,5,328,32"/><area shape="rect" id="node3" href="video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title="start_video_thread" alt="" coords="376,5,519,32"/><area shape="rect" id="node4" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Starts the streaming of a all cameras. " alt="" coords="567,5,709,32"/></map>
+</map>
 </div>
 </p>
 
@@ -476,7 +476,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timeval_diff </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> timeval_diff </td>
           <td>(</td>
           <td class="paramtype">struct timeval *&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -511,7 +511,7 @@ Functions</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv_8c_a9ccbed9793580feadb878ae82db54f7f_icgraph.png" border="0" usemap="#cv_8c_a9ccbed9793580feadb878ae82db54f7f_icgraph" alt=""/></div>
 <map name="cv_8c_a9ccbed9793580feadb878ae82db54f7f_icgraph" id="cv_8c_a9ccbed9793580feadb878ae82db54f7f_icgraph">
-<area shape="rect" id="node2" href="cv_8h.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="148,5,260,32"/><area shape="rect" id="node3" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="308,5,471,32"/><area shape="rect" id="node4" href="video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title="start_video_thread" alt="" coords="519,5,661,32"/><area shape="rect" id="node5" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Starts the streaming of a all cameras. " alt="" coords="709,5,852,32"/></map>
+</map>
 </div>
 </p>
 
@@ -523,7 +523,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="cv_8c.html">cv.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:53 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

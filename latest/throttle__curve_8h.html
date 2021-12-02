@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('throttle__curve_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="throttle__curve_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2helicopter_2throttle__curve_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2helicopter_2throttle__curve_8h" id="sw_2airborne_2modules_2helicopter_2throttle__curve_8h">
-<area shape="rect" id="node3" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="85,109,181,136"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="90,184,175,211"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('throttle__curve_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="throttle__curve_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2helicopter_2throttle__curve_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2helicopter_2throttle__curve_8hdep" id="sw_2airborne_2modules_2helicopter_2throttle__curve_8hdep">
-<area shape="rect" id="node2" href="swashplate__mixing_8c.html" title="sw/airborne/modules\l/helicopter/swashplate\l_mixing.c" alt="" coords="5,109,169,165"/><area shape="rect" id="node3" href="throttle__curve_8c.html" title="sw/airborne/modules\l/helicopter/throttle\l_curve.c" alt="" coords="194,109,349,165"/><area shape="rect" id="node4" href="nav__heli__spinup_8h.html" title="sw/airborne/modules\l/nav/nav_heli_spinup.h" alt="" coords="373,117,540,158"/><area shape="rect" id="node5" href="nav__heli__spinup_8c.html" title="sw/airborne/modules\l/nav/nav_heli_spinup.c" alt="" coords="374,213,539,255"/></map>
+</map>
 </div>
 </div>
 <p><a href="throttle__curve_8h_source.html">Go to the source code of this file.</a></p>
@@ -149,10 +149,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6dd506225a07a2ea4e6f39cfb34d6397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8h.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve_init</a> (void)</td></tr>
 <tr class="memdesc:a6dd506225a07a2ea4e6f39cfb34d6397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the default throttle curve values.  <a href="#a6dd506225a07a2ea4e6f39cfb34d6397">More...</a><br /></td></tr>
 <tr class="separator:a6dd506225a07a2ea4e6f39cfb34d6397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543adeeedcc71be82aa23201232c2d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8h.html#a543adeeedcc71be82aa23201232c2d66">throttle_curve_run</a> (<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> in_cmd[], <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> autopilot_mode)</td></tr>
+<tr class="memitem:a543adeeedcc71be82aa23201232c2d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8h.html#a543adeeedcc71be82aa23201232c2d66">throttle_curve_run</a> (<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> in_cmd[], <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> autopilot_mode)</td></tr>
 <tr class="memdesc:a543adeeedcc71be82aa23201232c2d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the throttle curve and generate the output throttle and pitch This depends on the FMODE(flight mode) and TRHUST command.  <a href="#a543adeeedcc71be82aa23201232c2d66">More...</a><br /></td></tr>
 <tr class="separator:a543adeeedcc71be82aa23201232c2d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace063d8946e46ee57829acb1c90cc5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8h.html#ace063d8946e46ee57829acb1c90cc5e7">nav_throttle_curve_set</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>)</td></tr>
+<tr class="memitem:ace063d8946e46ee57829acb1c90cc5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8h.html#ace063d8946e46ee57829acb1c90cc5e7">nav_throttle_curve_set</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>)</td></tr>
 <tr class="memdesc:ace063d8946e46ee57829acb1c90cc5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a specific throttle curve based on the mode given with this function.  <a href="#ace063d8946e46ee57829acb1c90cc5e7">More...</a><br /></td></tr>
 <tr class="separator:ace063d8946e46ee57829acb1c90cc5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -180,25 +180,25 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a407da26e0c6b494c85475c120c7281c8"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<a class="anchor" id="a407da26e0c6b494c85475c120c7281c8"></a><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></td>
 <td class="fieldname">
 collective[THROTTLE_POINTS_NB]</td>
 <td class="fielddoc">
 The collective points in the curve. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ad5251e7d21a96d89260488d8d3e267dc"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ad5251e7d21a96d89260488d8d3e267dc"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_points</td>
 <td class="fielddoc">
 The number of points in the curve. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a51774334fc5e17498f2ae03430511dd5"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a51774334fc5e17498f2ae03430511dd5"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 rpm[THROTTLE_POINTS_NB]</td>
 <td class="fielddoc">
 RPM points in the curve. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a368315ff03aed8ea68faa87320f87ccf"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a368315ff03aed8ea68faa87320f87ccf"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 throttle[THROTTLE_POINTS_NB]</td>
 <td class="fielddoc">
@@ -230,13 +230,13 @@ Throttle points in the curve. </td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a08dcd9676185f0295551960ad66eec27"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a08dcd9676185f0295551960ad66eec27"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 coll_trim</td>
 <td class="fielddoc">
 Collective trim. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aae897c6a8aa6e94373ed0c0db1eb9ebf"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<a class="anchor" id="aae897c6a8aa6e94373ed0c0db1eb9ebf"></a><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></td>
 <td class="fieldname">
 collective</td>
 <td class="fielddoc">
@@ -248,25 +248,25 @@ curves[THROTTLE_CURVES_NB]</td>
 <td class="fielddoc">
 Throttle/pitch curves. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a118b529a7735b60fb4b5383d44878bef"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a118b529a7735b60fb4b5383d44878bef"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 mode</td>
 <td class="fielddoc">
 Flight mode. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5dde05672d88b2f56ceda099c5a4c3fb"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a5dde05672d88b2f56ceda099c5a4c3fb"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nav_mode</td>
 <td class="fielddoc">
 Nav Flight mode. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a56ed79e056e59509563ee38cee47b11b"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a56ed79e056e59509563ee38cee47b11b"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_curves</td>
 <td class="fielddoc">
 The number of throttle/pitch curves. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a39d5b281efa82717969e59614063b5c9"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a39d5b281efa82717969e59614063b5c9"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 rpm</td>
 <td class="fielddoc">
@@ -290,7 +290,7 @@ rpm_fb_p</td>
 <td class="fielddoc">
 RPM feedback p gain. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3f72dd633e4ce3a0b9b340f7c7cca88a"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a3f72dd633e4ce3a0b9b340f7c7cca88a"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 rpm_meas</td>
 <td class="fielddoc">
@@ -302,13 +302,13 @@ rpm_measured</td>
 <td class="fielddoc">
 Whenever the RPM is measured. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a872e44c3e0589415992c9a067184e1de"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a872e44c3e0589415992c9a067184e1de"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 throttle</td>
 <td class="fielddoc">
 Output thrust(throttle) of the throttle curve. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a71b94c3f20e327d42a39399df67581d8"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a71b94c3f20e327d42a39399df67581d8"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 throttle_trim</td>
 <td class="fielddoc">
@@ -325,7 +325,7 @@ RPM feedback i gain. </td></tr>
         <tr>
           <td class="memname">void nav_throttle_curve_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>mode</em></td><td>)</td>
           <td></td>
         </tr>
@@ -367,7 +367,7 @@ RPM feedback i gain. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="throttle__curve_8h_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph.png" border="0" usemap="#throttle__curve_8h_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph" alt=""/></div>
 <map name="throttle__curve_8h_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph" id="throttle__curve_8h_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="191,5,388,32"/><area shape="rect" id="node3" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243" title="RPM callback for RPM based control throttle curves. " alt="" coords="254,56,325,83"/><area shape="rect" id="node4" href="throttle__curve_8c.html#a6f584cc127d0e7a4cc646365f4513c9a" title="throttle_curve_send\l_telem" alt="" coords="215,107,364,149"/></map>
+</map>
 </div>
 </p>
 
@@ -386,7 +386,7 @@ RPM feedback i gain. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>autopilot_mode</em>&#160;</td>
         </tr>
         <tr>
@@ -403,7 +403,7 @@ RPM feedback i gain. </td></tr>
 
 <p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00212">autopilot_get_motors_on()</a>, <a class="el" href="throttle__curve_8h_source.html#l00060">throttle_curve_t::coll_trim</a>, <a class="el" href="throttle__curve_8h_source.html#l00039">curve_t::collective</a>, <a class="el" href="throttle__curve_8h_source.html#l00050">throttle_curve_t::collective</a>, <a class="el" href="throttle__curve_8h_source.html#l00047">throttle_curve_t::curves</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="throttle__curve_8h_source.html#l00044">throttle_curve_t::mode</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, <a class="el" href="throttle__curve_8h_source.html#l00045">throttle_curve_t::nav_mode</a>, <a class="el" href="throttle__curve_8h_source.html#l00036">curve_t::nb_points</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="throttle__curve_8h_source.html#l00038">curve_t::rpm</a>, <a class="el" href="throttle__curve_8h_source.html#l00051">throttle_curve_t::rpm</a>, <a class="el" href="throttle__curve_8h_source.html#l00055">throttle_curve_t::rpm_err_sum</a>, <a class="el" href="throttle__curve_8h_source.html#l00057">throttle_curve_t::rpm_fb_i</a>, <a class="el" href="throttle__curve_8h_source.html#l00056">throttle_curve_t::rpm_fb_p</a>, <a class="el" href="throttle__curve_8h_source.html#l00053">throttle_curve_t::rpm_meas</a>, <a class="el" href="throttle__curve_8h_source.html#l00054">throttle_curve_t::rpm_measured</a>, <a class="el" href="throttle__curve_8h_source.html#l00037">curve_t::throttle</a>, <a class="el" href="throttle__curve_8h_source.html#l00049">throttle_curve_t::throttle</a>, <a class="el" href="throttle__curve_8c_source.html#l00046">THROTTLE_CURVE_RPM_INC_LIMIT</a>, <a class="el" href="throttle__curve_8c_source.html#l00034">THROTTLE_CURVE_SWITCH_VAL</a>, <a class="el" href="throttle__curve_8h_source.html#l00059">throttle_curve_t::throttle_trim</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00237">main_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00136">handle_periodic_tasks()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -412,7 +412,7 @@ RPM feedback i gain. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_cgraph.png" border="0" usemap="#throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_cgraph" alt=""/></div>
 <map name="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_cgraph" id="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_cgraph">
-<area shape="rect" id="node2" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="192,5,375,32"/></map>
+</map>
 </div>
 </p>
 
@@ -423,7 +423,7 @@ RPM feedback i gain. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_icgraph.png" border="0" usemap="#throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_icgraph" alt=""/></div>
 <map name="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_icgraph" id="throttle__curve_8h_a543adeeedcc71be82aa23201232c2d66_icgraph">
-<area shape="rect" id="node2" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="192,5,303,32"/><area shape="rect" id="node3" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="351,5,513,32"/></map>
+</map>
 </div>
 </p>
 
@@ -450,7 +450,7 @@ RPM feedback i gain. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ced032e2525c5750f626a61130b62832.html">helicopter</a></li><li class="navelem"><a class="el" href="throttle__curve_8h.html">throttle_curve.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

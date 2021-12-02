@@ -81,8 +81,6 @@ var searchData=
   ['ahrs_5fdcm_5funinit',['AHRS_DCM_UNINIT',['../ahrs__float__dcm_8h.html#add6357441f20327a6508da7f6036d2faa6f2e250a2bbaa296e0e27d656f825694',1,'ahrs_float_dcm.h']]],
   ['ahrs_5ffc_5frunning',['AHRS_FC_RUNNING',['../ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937da6cafb221e2a4f678ce0dd4340755a45d',1,'ahrs_float_cmpl.h']]],
   ['ahrs_5ffc_5funinit',['AHRS_FC_UNINIT',['../ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937da58489631ed6a13334b5af5a3fa5dd9de',1,'ahrs_float_cmpl.h']]],
-  ['ahrs_5fice_5frunning',['AHRS_ICE_RUNNING',['../ahrs__int__cmpl__euler_8h.html#a0344e9e10b7b91b87aa7ac14d04c41f7a3b0d0814590b9eaaaee5aa71e668e678',1,'ahrs_int_cmpl_euler.h']]],
-  ['ahrs_5fice_5funinit',['AHRS_ICE_UNINIT',['../ahrs__int__cmpl__euler_8h.html#a0344e9e10b7b91b87aa7ac14d04c41f7a45c1f43d1cac422c3b1bdc46462cf49c',1,'ahrs_int_cmpl_euler.h']]],
   ['ahrs_5ficq_5frunning',['AHRS_ICQ_RUNNING',['../ahrs__int__cmpl__quat_8h.html#a1a85a4fab3af926588660327b3e8d6f8a4d4bc1090582db0eae264568411a578b',1,'ahrs_int_cmpl_quat.h']]],
   ['ahrs_5ficq_5funinit',['AHRS_ICQ_UNINIT',['../ahrs__int__cmpl__quat_8h.html#a1a85a4fab3af926588660327b3e8d6f8a39c0fc775fb8f8067d83bf260f7fe192',1,'ahrs_int_cmpl_quat.h']]],
   ['ahrs_5fmlkf_5frunning',['AHRS_MLKF_RUNNING',['../ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192a7a4a437b23da8e85d02b4864c78605fc',1,'ahrs_float_mlkf.h']]],

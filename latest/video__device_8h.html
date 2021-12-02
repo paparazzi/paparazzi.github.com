@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="image_8h_source.html">modules/computer_vision/lib/vision/image.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for video_device.h:</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__device_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2video__device_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2video__device_8h" id="sw_2airborne_2peripherals_2video__device_8h">
-<area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="220,102,305,129"/><area shape="rect" id="node4" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="329,95,516,136"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="389,184,456,211"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="209,348,388,375"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="565,348,755,375"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="438,259,589,300"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="665,259,815,300"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="250,259,414,300"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="564,423,719,449"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="145,423,295,449"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="779,348,903,375"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__device_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2video__device_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2video__device_8hdep" id="sw_2airborne_2peripherals_2video__device_8hdep">
-<area shape="rect" id="node2" href="ardrone_2board_8c.html" title="ARDrone2 specific board initialization function. " alt="" coords="161,102,303,143"/><area shape="rect" id="node3" href="ardrone2_8h.html" title="sw/airborne/boards\l/ardrone2.h" alt="" coords="327,102,470,143"/><area shape="rect" id="node4" href="mt9f002_8c.html" title="Initialization of MT9F002 chip and options to change settings. " alt="" coords="29,206,171,247"/><area shape="rect" id="node6" href="mt9v117_8c.html" title="Initialization of MT9V117 chip and options to change settings. " alt="" coords="195,206,338,247"/><area shape="rect" id="node8" href="bebop_8h.html" title="sw/airborne/boards\l/bebop.h" alt="" coords="597,102,739,143"/><area shape="rect" id="node11" href="disco_8h.html" title="sw/airborne/boards\l/disco.h" alt="" coords="5037,102,5179,143"/><area shape="rect" id="node13" href="pc__sim_8h.html" title="sw/airborne/boards\l/pc_sim.h" alt="" coords="5203,102,5346,143"/><area shape="rect" id="node14" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="2661,102,2821,143"/><area shape="rect" id="node35" href="video__thread__nps_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread_nps.c" alt="" coords="4767,303,4937,359"/><area shape="rect" id="node40" href="PnP__AHRS_8h.html" title="Functions for solving a perspective&#45;n&#45;point problem, using the AHRS to get the relevant angles..." alt="" coords="772,95,927,151"/><area shape="rect" id="node42" href="video__thread__nps_8h.html" title="This header gives NPS access to the list of added cameras. " alt="" coords="4843,95,5013,151"/><area shape="rect" id="node5" href="mt9f002__nps_8c.html" title="sw/airborne/boards\l/bebop/mt9f002_nps.c" alt="" coords="5,310,171,351"/><area shape="rect" id="node7" href="mt9v117__nps_8c.html" title="sw/airborne/boards\l/bebop/mt9v117_nps.c" alt="" coords="195,310,363,351"/><area shape="rect" id="node9" href="bebop_2board_8c.html" title="Bebop specific board initialization function. " alt="" coords="362,206,505,247"/><area shape="rect" id="node10" href="bebop__ae__awb_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_ae_awb.c" alt="" coords="581,199,755,255"/><area shape="rect" id="node12" href="disco_2board_8c.html" title="Disco specific board initialization function. " alt="" coords="5037,206,5179,247"/><area shape="rect" id="node15" href="colorfilter_8h.html" title="sw/airborne/modules\l/computer_vision/colorfilter.h" alt="" coords="3164,206,3369,247"/><area shape="rect" id="node17" href="cv_8c.html" title="Computer vision framework for onboard processing. " alt="" coords="2018,206,2177,247"/><area shape="rect" id="node18" href="cv__blob__locator_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_blob_locator.c" alt="" coords="2201,199,2356,255"/><area shape="rect" id="node19" href="cv__detect__color__object_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_detect_color_object.c" alt="" coords="2380,199,2545,255"/><area shape="rect" id="node20" href="cv__opencvdemo_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_opencvdemo.c" alt="" coords="2569,199,2724,255"/><area shape="rect" id="node21" href="detect__contour_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_contour.c" alt="" coords="2748,199,2924,255"/><area shape="rect" id="node22" href="detect__gate_8h.html" title="sw/airborne/modules\l/computer_vision/detect\l_gate.h" alt="" coords="1191,199,1367,255"/><area shape="rect" id="node24" href="detect__window_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_window.c" alt="" coords="3588,199,3764,255"/><area shape="rect" id="node25" href="opticflow__module_8c.html" title="Optical&#45;flow estimation module. " alt="" coords="3789,199,3979,255"/><area shape="rect" id="node26" href="qr__code_8c.html" title="sw/airborne/modules\l/computer_vision/qrcode\l/qr_code.c" alt="" coords="4004,199,4183,255"/><area shape="rect" id="node27" href="snake__gate__detection_8h.html" title="Detects gates as used in the IROS drone races, i.e., square colored gates. " alt="" coords="1820,199,1993,255"/><area shape="rect" id="node29" href="textons_8c.html" title="Takes an image and represents the texture and colors in the image with a texton histogram. " alt="" coords="4207,206,4401,247"/><area shape="rect" id="node30" href="undistort__image_8h.html" title="sw/airborne/modules\l/computer_vision/undistort\l_image.h" alt="" coords="2948,199,3140,255"/><area shape="rect" id="node32" href="video__capture_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_capture.c" alt="" coords="4426,199,4595,255"/><area shape="rect" id="node33" href="video__thread_8h.html" title="Start a Video thread and grab images. " alt="" coords="3394,199,3563,255"/><area shape="rect" id="node36" href="video__usb__logger_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_usb_logger.c" alt="" coords="4619,199,4789,255"/><area shape="rect" id="node37" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="959,206,1166,247"/><area shape="rect" id="node38" href="pano__unwrap_8c.html" title="sw/airborne/modules\l/pano_unwrap/pano_unwrap.c" alt="" coords="1391,206,1601,247"/><area shape="rect" id="node39" href="wedgebug_8c.html" title="sw/airborne/modules\l/wedgebug/wedgebug.c" alt="" coords="1625,206,1796,247"/><area shape="rect" id="node16" href="colorfilter_8c.html" title="sw/airborne/modules\l/computer_vision/colorfilter.c" alt="" coords="3165,310,3369,351"/><area shape="rect" id="node23" href="detect__gate_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_gate.c" alt="" coords="1191,303,1367,359"/><area shape="rect" id="node28" href="snake__gate__detection_8c.html" title="Detects gates as used in the IROS drone races, i.e., square colored gates. " alt="" coords="1820,303,1993,359"/><area shape="rect" id="node31" href="undistort__image_8c.html" title="sw/airborne/modules\l/computer_vision/undistort\l_image.c" alt="" coords="2948,303,3140,359"/><area shape="rect" id="node34" href="video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="3394,303,3563,359"/><area shape="rect" id="node41" href="PnP__AHRS_8c.html" title="Functions for solving a perspective&#45;n&#45;point problem, using the AHRS to get the relevant angles..." alt="" coords="780,199,935,255"/></map>
+</map>
 </div>
 </div>
 <p><a href="video__device_8h_source.html">Go to the source code of this file.</a></p>
@@ -271,7 +271,7 @@ focal length in the y-direction in pixels </td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab7d8e2731b25c538b5826e6a5d882f20"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab7d8e2731b25c538b5826e6a5d882f20"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 buf_cnt</td>
 <td class="fielddoc">
@@ -301,13 +301,13 @@ dev_name</td>
 <td class="fielddoc">
 path to device </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a44bf9ccc04ee62fd4808222ee1f467c0"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a44bf9ccc04ee62fd4808222ee1f467c0"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 filters</td>
 <td class="fielddoc">
 filters to use (bitfield with VIDEO_FILTER_x) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4aec9ee3d72122a284df613b9f2bf33d"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a4aec9ee3d72122a284df613b9f2bf33d"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 format</td>
 <td class="fielddoc">
@@ -331,7 +331,7 @@ sensor_size</td>
 <td class="fielddoc">
 Original sensor size. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a99aa438348a6f10c4fbdb466e16b44cd"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a99aa438348a6f10c4fbdb466e16b44cd"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 subdev_format</td>
 <td class="fielddoc">
@@ -408,7 +408,7 @@ Information about the thread this camera is running on. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="video__device_8h.html">video_device.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:15 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

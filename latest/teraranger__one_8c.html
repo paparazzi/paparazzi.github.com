@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,8 +115,8 @@ $(document).ready(function(){initNavTree('teraranger__one_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="teraranger__one_8h_source.html">modules/range_finder/teraranger_one.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for teraranger_one.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('teraranger__one_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="teraranger__one_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2range__finder_2teraranger__one_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2range__finder_2teraranger__one_8c" id="sw_2airborne_2modules_2range__finder_2teraranger__one_8c">
-<area shape="rect" id="node2" href="teraranger__one_8h.html" title="modules/range_finder\l/teraranger_one.h" alt="" coords="5,273,167,315"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="261,102,391,129"/><area shape="rect" id="node6" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="423,102,557,129"/><area shape="rect" id="node8" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="880,95,1033,136"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="585,191,670,218"/><area shape="rect" id="node13" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1237,184,1391,225"/><area shape="rect" id="node15" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1415,191,1608,218"/><area shape="rect" id="node17" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1531,281,1670,307"/></map>
+</map>
 </div>
 </div>
 <p><a href="teraranger__one_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,7 +140,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9e39a423baba5d5781fbee657bcfc35e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#a9e39a423baba5d5781fbee657bcfc35e">teraranger_crc8</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
+<tr class="memitem:a9e39a423baba5d5781fbee657bcfc35e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#a9e39a423baba5d5781fbee657bcfc35e">teraranger_crc8</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
 <tr class="separator:a9e39a423baba5d5781fbee657bcfc35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1444827154e6e78091db77c5061a5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#af1444827154e6e78091db77c5061a5ef">teraranger_init</a> (void)</td></tr>
 <tr class="separator:af1444827154e6e78091db77c5061a5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a672b3118e1505f358e8af467f91d40e5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#a672b3118e1505f358e8af467f91d40e5">crc_table</a> []</td></tr>
+<tr class="memitem:a672b3118e1505f358e8af467f91d40e5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#a672b3118e1505f358e8af467f91d40e5">crc_table</a> []</td></tr>
 <tr class="separator:a672b3118e1505f358e8af467f91d40e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc6502608aba2c138d780638d462305"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="teraranger__one_8h.html#structTeraRanger">TeraRanger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="teraranger__one_8c.html#a5bc6502608aba2c138d780638d462305">teraranger</a></td></tr>
 <tr class="separator:a5bc6502608aba2c138d780638d462305"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,15 +222,15 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> teraranger_crc8 </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> teraranger_crc8 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -259,7 +259,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="teraranger__one_8c_a9e39a423baba5d5781fbee657bcfc35e_icgraph.png" border="0" usemap="#teraranger__one_8c_a9e39a423baba5d5781fbee657bcfc35e_icgraph" alt=""/></div>
 <map name="teraranger__one_8c_a9e39a423baba5d5781fbee657bcfc35e_icgraph" id="teraranger__one_8c_a9e39a423baba5d5781fbee657bcfc35e_icgraph">
-<area shape="rect" id="node2" href="teraranger__one_8h.html#a2261a73bca73087fa67b6cfdb3f8e918" title="teraranger_event" alt="" coords="177,5,311,32"/></map>
+</map>
 </div>
 </p>
 
@@ -281,7 +281,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="teraranger__one_8c_source.html#l00143">143</a> of file <a class="el" href="teraranger__one_8c_source.html">teraranger_one.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="teraranger__one_8h_source.html#l00033">TeraRanger::dist</a>, <a class="el" href="teraranger__one_8h_source.html#l00032">TeraRanger::raw</a>, and <a class="el" href="teraranger__one_8c_source.html#l00090">teraranger</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="teraranger__one_8h_source.html#l00033">TeraRanger::dist</a>, <a class="el" href="teraranger__one_8h_source.html#l00032">TeraRanger::raw</a>, and <a class="el" href="teraranger__one_8c_source.html#l00090">teraranger</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="teraranger__one_8c_source.html#l00114">114</a> of file <a class="el" href="teraranger__one_8c_source.html">teraranger_one.c</a>.</p>
 
-<p>References <a class="el" href="abi__sender__ids_8h_source.html#l00145">AGL_TERARANGER_ONE_ID</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="teraranger__one_8h_source.html#l00035">TeraRanger::data_available</a>, <a class="el" href="teraranger__one_8h_source.html#l00033">TeraRanger::dist</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="teraranger__one_8h_source.html#l00034">TeraRanger::offset</a>, <a class="el" href="teraranger__one_8h_source.html#l00032">TeraRanger::raw</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="teraranger__one_8c_source.html#l00090">teraranger</a>, <a class="el" href="teraranger__one_8c_source.html#l00076">teraranger_crc8()</a>, <a class="el" href="teraranger__one_8c_source.html#l00093">teraranger_i2c_trans</a>, and <a class="el" href="teraranger__one_8c_source.html#l00049">USE_TERARANGER_ONE_AGL</a>.</p>
+<p>References <a class="el" href="abi__sender__ids_8h_source.html#l00153">AGL_TERARANGER_ONE_ID</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="teraranger__one_8h_source.html#l00035">TeraRanger::data_available</a>, <a class="el" href="teraranger__one_8h_source.html#l00033">TeraRanger::dist</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="teraranger__one_8h_source.html#l00034">TeraRanger::offset</a>, <a class="el" href="teraranger__one_8h_source.html#l00032">TeraRanger::raw</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="teraranger__one_8c_source.html#l00090">teraranger</a>, <a class="el" href="teraranger__one_8c_source.html#l00076">teraranger_crc8()</a>, <a class="el" href="teraranger__one_8c_source.html#l00093">teraranger_i2c_trans</a>, and <a class="el" href="teraranger__one_8c_source.html#l00049">USE_TERARANGER_ONE_AGL</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="teraranger__one_8c_a2261a73bca73087fa67b6cfdb3f8e918_cgraph.png" border="0" usemap="#teraranger__one_8c_a2261a73bca73087fa67b6cfdb3f8e918_cgraph" alt=""/></div>
 <map name="teraranger__one_8c_a2261a73bca73087fa67b6cfdb3f8e918_cgraph" id="teraranger__one_8c_a2261a73bca73087fa67b6cfdb3f8e918_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="187,5,331,32"/><area shape="rect" id="node3" href="teraranger__one_8c.html#a9e39a423baba5d5781fbee657bcfc35e" title="teraranger_crc8" alt="" coords="197,56,321,83"/></map>
+</map>
 </div>
 </p>
 
@@ -361,7 +361,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="teraranger__one_8c_a919628ae3fa5e3c4566b9685a8eb727c_cgraph.png" border="0" usemap="#teraranger__one_8c_a919628ae3fa5e3c4566b9685a8eb727c_cgraph" alt=""/></div>
 <map name="teraranger__one_8c_a919628ae3fa5e3c4566b9685a8eb727c_cgraph" id="teraranger__one_8c_a919628ae3fa5e3c4566b9685a8eb727c_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="200,5,293,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="341,5,432,32"/></map>
+</map>
 </div>
 </p>
 
@@ -376,7 +376,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_table[]</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_table[]</td>
         </tr>
       </table>
   </td>
@@ -449,7 +449,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_80a5891e1425a0a362a7328cd2bc25aa.html">range_finder</a></li><li class="navelem"><a class="el" href="teraranger__one_8c.html">teraranger_one.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

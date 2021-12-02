@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,10 +116,10 @@ $(document).ready(function(){initNavTree('mag__pitot__uart_8c.html','');});
 <code>#include &quot;pprzlink/pprz_transport.h&quot;</code><br />
 <code>#include &quot;pprzlink/intermcu_msg.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mag_pitot_uart.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('mag__pitot__uart_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2mag__pitot__uart_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2mag__pitot__uart_8c" id="sw_2airborne_2modules_2sensors_2mag__pitot__uart_8c">
-<area shape="rect" id="node2" href="mag__pitot__uart_8h.html" title="modules/sensors/mag\l_pitot_uart.h" alt="" coords="1048,95,1212,136"/><area shape="rect" id="node17" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2030,363,2169,389"/><area shape="rect" id="node20" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2509,102,2644,129"/><area shape="rect" id="node22" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="885,102,1023,129"/><area shape="rect" id="node23" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="589,102,655,129"/><area shape="rect" id="node27" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1359,95,1512,136"/><area shape="rect" id="node6" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="767,184,931,225"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="698,281,877,307"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="181,281,372,307"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="110,363,265,389"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="841,363,992,389"/><area shape="rect" id="node24" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="489,184,640,225"/><area shape="rect" id="node26" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="315,184,465,225"/><area shape="rect" id="node25" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="448,281,572,307"/><area shape="rect" id="node29" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1556,184,1709,225"/><area shape="rect" id="node30" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1911,281,1997,307"/><area shape="rect" id="node33" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1733,273,1887,315"/><area shape="rect" id="node35" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1339,281,1532,307"/></map>
+</map>
 </div>
 </div>
 <p><a href="mag__pitot__uart_8c_source.html">Go to the source code of this file.</a></p>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aa49294deed20f0447e660b047b054dce"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="mag__pitot__uart_8h.html#structmag__pitot__t">mag_pitot_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__pitot__uart_8c.html#aa49294deed20f0447e660b047b054dce">mag_pitot</a></td></tr>
 <tr class="separator:aa49294deed20f0447e660b047b054dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53df6fa7b781a9f4acac22ee4ca711dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__pitot__uart_8c.html#a53df6fa7b781a9f4acac22ee4ca711dc">mp_msg_buf</a> [128]</td></tr>
+<tr class="memitem:a53df6fa7b781a9f4acac22ee4ca711dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__pitot__uart_8c.html#a53df6fa7b781a9f4acac22ee4ca711dc">mp_msg_buf</a> [128]</td></tr>
 <tr class="memdesc:a53df6fa7b781a9f4acac22ee4ca711dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message buffer for the Magneto and pitot.  <a href="#a53df6fa7b781a9f4acac22ee4ca711dc">More...</a><br /></td></tr>
 <tr class="separator:a53df6fa7b781a9f4acac22ee4ca711dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -181,7 +181,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c_ae9f2ad8bc5b5d330a8dba204b5a358ed_cgraph.png" border="0" usemap="#mag__pitot__uart_8c_ae9f2ad8bc5b5d330a8dba204b5a358ed_cgraph" alt=""/></div>
 <map name="mag__pitot__uart_8c_ae9f2ad8bc5b5d330a8dba204b5a358ed_cgraph" id="mag__pitot__uart_8c_ae9f2ad8bc5b5d330a8dba204b5a358ed_cgraph">
-<area shape="rect" id="node2" href="mag__pitot__uart_8c.html#a507efea07b8c1b9e6094e6895f931b87" title="mag_pitot_parse_msg" alt="" coords="184,81,349,108"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="403,5,547,32"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="397,56,553,83"/><area shape="rect" id="node7" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix. " alt="" coords="408,107,543,133"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="414,157,537,184"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="601,56,761,83"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="809,56,956,83"/></map>
+</map>
 </div>
 </p>
 
@@ -212,7 +212,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c_a03ba8318975b305c3484f67ba8fe988a_cgraph.png" border="0" usemap="#mag__pitot__uart_8c_a03ba8318975b305c3484f67ba8fe988a_cgraph" alt=""/></div>
 <map name="mag__pitot__uart_8c_a03ba8318975b305c3484f67ba8fe988a_cgraph" id="mag__pitot__uart_8c_a03ba8318975b305c3484f67ba8fe988a_cgraph">
-<area shape="rect" id="node2" href="mag__pitot__uart_8c.html#a9a47635f8c4d6498f0272f9b2c74f5fa" title="mag_pitot_raw_downlink" alt="" coords="177,5,354,32"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="184,56,347,83"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="167,107,364,133"/></map>
+</map>
 </div>
 </p>
 
@@ -242,7 +242,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mag__pitot__uart_8c_source.html#l00070">70</a> of file <a class="el" href="mag__pitot__uart_8c_source.html">mag_pitot_uart.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00205">IMU_MAG_PITOT_ID</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="mag__pitot__uart_8h_source.html#l00046">mag_pitot_t::imu_to_mag</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00041">mp_msg_buf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00221">IMU_MAG_PITOT_ID</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="mag__pitot__uart_8h_source.html#l00046">mag_pitot_t::imu_to_mag</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00041">mp_msg_buf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="mag__pitot__uart_8c_source.html#l00128">mag_pitot_event()</a>.</p>
 
@@ -253,7 +253,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_cgraph.png" border="0" usemap="#mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_cgraph" alt=""/></div>
 <map name="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_cgraph" id="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="225,5,369,32"/><area shape="rect" id="node3" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="235,56,358,83"/><area shape="rect" id="node4" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix. " alt="" coords="229,107,364,133"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="219,157,375,184"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="423,157,583,184"/><area shape="rect" id="node7" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="631,157,777,184"/></map>
+</map>
 </div>
 </p>
 
@@ -264,7 +264,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_icgraph.png" border="0" usemap="#mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_icgraph" alt=""/></div>
 <map name="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_icgraph" id="mag__pitot__uart_8c_a507efea07b8c1b9e6094e6895f931b87_icgraph">
-<area shape="rect" id="node2" href="mag__pitot__uart_8h.html#aac788d30836b603e187ffb4f8fdcf1c6" title="mag_pitot_event" alt="" coords="219,5,349,32"/></map>
+</map>
 </div>
 </p>
 
@@ -315,7 +315,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__pitot__uart_8c_a9a47635f8c4d6498f0272f9b2c74f5fa_icgraph.png" border="0" usemap="#mag__pitot__uart_8c_a9a47635f8c4d6498f0272f9b2c74f5fa_icgraph" alt=""/></div>
 <map name="mag__pitot__uart_8c_a9a47635f8c4d6498f0272f9b2c74f5fa_icgraph" id="mag__pitot__uart_8c_a9a47635f8c4d6498f0272f9b2c74f5fa_icgraph">
-<area shape="rect" id="node2" href="mag__pitot__uart_8h.html#a2a2c4bb26198f8ea6aebe22921e79836" title="mag_pitot_init" alt="" coords="231,5,344,32"/></map>
+</map>
 </div>
 </p>
 
@@ -356,7 +356,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mp_msg_buf[128]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mp_msg_buf[128]</td>
         </tr>
       </table>
   </td>
@@ -380,7 +380,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="mag__pitot__uart_8c.html">mag_pitot_uart.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

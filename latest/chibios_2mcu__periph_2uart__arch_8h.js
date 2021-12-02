@@ -10,6 +10,7 @@ var chibios_2mcu__periph_2uart__arch_8h =
     [ "B2400", "chibios_2mcu__periph_2uart__arch_8h.html#af5bd4045b436cba08feb96e15994c04b", null ],
     [ "B3000000", "chibios_2mcu__periph_2uart__arch_8h.html#acb80c15451346a6ae479344124cea120", null ],
     [ "B38400", "chibios_2mcu__periph_2uart__arch_8h.html#ab282ae5b7fb59155ee42d1b6c9a80683", null ],
+    [ "B460800", "chibios_2mcu__periph_2uart__arch_8h.html#a644a0912fa1e82fd24c0516b4723ee59", null ],
     [ "B4800", "chibios_2mcu__periph_2uart__arch_8h.html#a3b0ce0abd5ad4af8d485c843c9bab66c", null ],
     [ "B57600", "chibios_2mcu__periph_2uart__arch_8h.html#a4bde6a10c31adfe1959fb9724e13029a", null ],
     [ "B921600", "chibios_2mcu__periph_2uart__arch_8h.html#ae2d3cdb046f933a4a6ccd5497516c2a5", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('pprz__dl_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="pprz__dl_8h_source.html">modules/datalink/pprz_dl.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="datalink_8h_source.html">subsystems/datalink/datalink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="datalink_8h_source.html">modules/datalink/datalink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for pprz_dl.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('pprz__dl_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__dl_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2datalink_2pprz__dl_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2datalink_2pprz__dl_8c" id="sw_2airborne_2modules_2datalink_2pprz__dl_8c">
-<area shape="rect" id="node2" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="173,102,367,129"/><area shape="rect" id="node8" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="391,95,544,136"/><area shape="rect" id="node4" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="227,184,366,211"/></map>
+</map>
 </div>
 </div>
 <p><a href="pprz__dl_8c_source.html">Go to the source code of this file.</a></p>
@@ -183,9 +183,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__dl_8c_source.html#l00040">40</a> of file <a class="el" href="pprz__dl_8c_source.html">pprz_dl.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00061">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00079">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="pprz__dl_8c_source.html#l00033">pprz_tp</a>, and <a class="el" href="pprz__dl_8c_source.html#l00030">PPRZ_UPDATE_DL</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00060">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00079">DlCheckAndParse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="pprz__dl_8c_source.html#l00033">pprz_tp</a>, and <a class="el" href="pprz__dl_8c_source.html#l00030">PPRZ_UPDATE_DL</a>.</p>
 
-<p>Referenced by <a class="el" href="setup__actuators_8c_source.html#l00104">main_event()</a>.</p>
+<p>Referenced by <a class="el" href="setup__actuators_8c_source.html#l00103">main_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -194,7 +194,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_cgraph.png" border="0" usemap="#pprz__dl_8c_adfe1564dac687b426549de7dfe029931_cgraph" alt=""/></div>
 <map name="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_cgraph" id="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_cgraph">
-<area shape="rect" id="node2" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse. " alt="" coords="164,81,299,108"/><area shape="rect" id="node3" href="datalink_8h.html#ad118dedfd61ae7367be31daafcc47f99" title="Should be called when chars are available in dl_buffer. " alt="" coords="347,81,457,108"/><area shape="rect" id="node4" href="subsystems_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02" title="Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ..." alt="" coords="505,5,669,32"/><area shape="rect" id="node5" href="subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="505,56,669,83"/><area shape="rect" id="node6" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="Override the default GPS packet injector to inject the data trough UART. " alt="" coords="526,107,649,133"/><area shape="rect" id="node7" href="datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f" title="Firmware specfic msg handler. " alt="" coords="510,157,665,184"/><area shape="rect" id="node8" href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title="nav_goto_block" alt="" coords="768,5,889,32"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="779,56,878,83"/><area shape="rect" id="node13" href="common__nav_8c.html#af9adf1af7508631a6122c216c6b57602" title="Move a waypoint to given UTM coordinates. " alt="" coords="753,107,904,133"/><area shape="rect" id="node14" href="group__state__wind__airspeed.html#ga2ad82d1791a3f1b5e9539ec571fca846" title="Set horizontal windspeed (float). " alt="" coords="717,157,940,184"/><area shape="rect" id="node15" href="group__state__wind__airspeed.html#gad1a3cf7bf63a90f1873d3bcfee610d4d" title="Set vertical windspeed (float). " alt="" coords="727,208,931,235"/><area shape="rect" id="node16" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="757,259,901,285"/><area shape="rect" id="node17" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float). " alt="" coords="756,309,901,336"/><area shape="rect" id="node9" href="common__flight__plan_8c.html#aa3cbfa3c23e459645a8e67b1bb4a1bef" title="nav_init_block" alt="" coords="1007,5,1118,32"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="989,56,1136,83"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="995,107,1131,149"/><area shape="rect" id="node18" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title="stateCalcAirspeed_f" alt="" coords="988,309,1137,336"/></map>
+</map>
 </div>
 </p>
 
@@ -205,7 +205,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_icgraph.png" border="0" usemap="#pprz__dl_8c_adfe1564dac687b426549de7dfe029931_icgraph" alt=""/></div>
 <map name="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_icgraph" id="pprz__dl_8c_adfe1564dac687b426549de7dfe029931_icgraph">
-<area shape="rect" id="node2" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="164,5,261,32"/><area shape="rect" id="node3" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="309,5,364,32"/></map>
+</map>
 </div>
 </p>
 
@@ -240,7 +240,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__dl_8c_a6d36e01500ee43587013813aacb843c2_icgraph.png" border="0" usemap="#pprz__dl_8c_a6d36e01500ee43587013813aacb843c2_icgraph" alt=""/></div>
 <map name="pprz__dl_8c_a6d36e01500ee43587013813aacb843c2_icgraph" id="pprz__dl_8c_a6d36e01500ee43587013813aacb843c2_icgraph">
-<area shape="rect" id="node2" href="setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="148,5,228,32"/><area shape="rect" id="node3" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="276,5,331,32"/></map>
+</map>
 </div>
 </p>
 
@@ -271,7 +271,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="pprz__dl_8c.html">pprz_dl.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:57 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

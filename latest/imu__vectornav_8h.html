@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,9 +115,9 @@ $(document).ready(function(){initNavTree('imu__vectornav_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Vectornav VN-200 IMU subsystems, to be used with other AHRS/INS algorithms.  
+<p>Vectornav VN-200 IMU module, to be used with other AHRS/INS algorithms.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vn200__serial_8h_source.html">peripherals/vn200_serial.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_vectornav.h:</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('imu__vectornav_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__vectornav_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__vectornav_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__vectornav_8h" id="sw_2airborne_2modules_2imu_2imu__vectornav_8h">
-<area shape="rect" id="node2" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="422,95,561,121"/><area shape="rect" id="node15" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="637,95,826,121"/><area shape="rect" id="node3" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="655,259,834,285"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="275,259,465,285"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="409,169,573,211"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="62,333,217,360"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="765,333,916,360"/><area shape="rect" id="node16" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1194,177,1333,203"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="885,169,1036,211"/><area shape="rect" id="node21" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="708,169,859,211"/><area shape="rect" id="node22" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="473,333,598,360"/><area shape="rect" id="node20" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="909,259,1033,285"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('imu__vectornav_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__vectornav_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__vectornav_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__vectornav_8hdep" id="sw_2airborne_2modules_2imu_2imu__vectornav_8hdep">
-<area shape="rect" id="node2" href="imu__vectornav_8c.html" title="Vectornav VN&#45;200 IMU subsystems, to be used with other AHRS/INS algorithms. " alt="" coords="5,95,164,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="imu__vectornav_8h_source.html">Go to the source code of this file.</a></p>
@@ -181,7 +181,7 @@ Variables</h2></td></tr>
 <tr class="separator:a23c30cbf8678af476ddd962a2b44b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Vectornav VN-200 IMU subsystems, to be used with other AHRS/INS algorithms. </p>
+<div class="textblock"><p>Vectornav VN-200 IMU module, to be used with other AHRS/INS algorithms. </p>
 
 <p>Definition in file <a class="el" href="imu__vectornav_8h_source.html">imu_vectornav.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -348,7 +348,7 @@ VN status. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__vectornav_8h_a0bfcb922f5c1a64dde22695f3642cef2_cgraph.png" border="0" usemap="#imu__vectornav_8h_a0bfcb922f5c1a64dde22695f3642cef2_cgraph" alt=""/></div>
 <map name="imu__vectornav_8h_a0bfcb922f5c1a64dde22695f3642cef2_cgraph" id="imu__vectornav_8h_a0bfcb922f5c1a64dde22695f3642cef2_cgraph">
-<area shape="rect" id="node2" href="imu__vectornav_8c.html#aa773e594a6e95f3ca4aad637b7fc546c" title="Send ABI messages. " alt="" coords="212,5,401,32"/><area shape="rect" id="node3" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="255,56,359,83"/><area shape="rect" id="node10" href="vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements. " alt="" coords="225,115,388,141"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="653,5,800,32"/><area shape="rect" id="node5" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="457,56,598,83"/><area shape="rect" id="node6" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="675,56,779,83"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="681,107,772,133"/><area shape="rect" id="node7" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="848,56,933,83"/><area shape="rect" id="node8" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="981,56,1085,83"/><area shape="rect" id="node11" href="vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="449,107,605,149"/><area shape="rect" id="node12" href="vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status. " alt="" coords="451,173,603,200"/></map>
+</map>
 </div>
 </p>
 
@@ -381,7 +381,7 @@ VN status. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__vectornav_8h_a005b7bf0a6505e1d8f3192520c3048b7_cgraph.png" border="0" usemap="#imu__vectornav_8h_a005b7bf0a6505e1d8f3192520c3048b7_cgraph" alt=""/></div>
 <map name="imu__vectornav_8h_a005b7bf0a6505e1d8f3192520c3048b7_cgraph" id="imu__vectornav_8h_a005b7bf0a6505e1d8f3192520c3048b7_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="196,5,393,32"/><area shape="rect" id="node3" href="imu__vectornav_8c.html#acf9e77d2ea5dca2b0ecbb660edc513c4" title="send_vn_info" alt="" coords="242,56,347,83"/></map>
+</map>
 </div>
 </p>
 
@@ -427,7 +427,7 @@ VN status. </td></tr>
 
 <p>Definition at line <a class="el" href="imu__vectornav_8c_source.html#l00149">149</a> of file <a class="el" href="imu__vectornav_8c_source.html">imu_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="vn200__serial_8h_source.html#l00090">VNData::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00343">IMU_VECTORNAV_ID</a>, <a class="el" href="imu__vectornav_8c_source.html#l00040">imu_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00085">VNData::nanostamp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, and <a class="el" href="imu__vectornav_8h_source.html#l00042">ImuVectornav::vn_data</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="vn200__serial_8h_source.html#l00090">VNData::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00359">IMU_VECTORNAV_ID</a>, <a class="el" href="imu__vectornav_8c_source.html#l00040">imu_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00085">VNData::nanostamp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, and <a class="el" href="imu__vectornav_8h_source.html#l00042">ImuVectornav::vn_data</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__vectornav_8c_source.html#l00109">imu_vectornav_event()</a>.</p>
 
@@ -438,7 +438,7 @@ VN status. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__vectornav_8h_aa773e594a6e95f3ca4aad637b7fc546c_icgraph.png" border="0" usemap="#imu__vectornav_8h_aa773e594a6e95f3ca4aad637b7fc546c_icgraph" alt=""/></div>
 <map name="imu__vectornav_8h_aa773e594a6e95f3ca4aad637b7fc546c_icgraph" id="imu__vectornav_8h_aa773e594a6e95f3ca4aad637b7fc546c_icgraph">
-<area shape="rect" id="node2" href="imu__vectornav_8h.html#a0bfcb922f5c1a64dde22695f3642cef2" title="Event function to read and parse data from the serial port. " alt="" coords="243,5,401,32"/></map>
+</map>
 </div>
 </p>
 
@@ -467,7 +467,7 @@ VN status. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__vectornav_8h.html">imu_vectornav.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

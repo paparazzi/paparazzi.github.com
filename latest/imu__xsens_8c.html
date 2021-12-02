@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('imu__xsens_8c.html','');});
 <code>#include &quot;<a class="el" href="xsens_8h_source.html">xsens.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_xsens.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('imu__xsens_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__xsens_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2imu__xsens_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2imu__xsens_8c" id="sw_2airborne_2modules_2ins_2imu__xsens_8c">
-<area shape="rect" id="node2" href="imu__xsens_8h.html" title="XSENS to just provide IMU measurements. " alt="" coords="633,95,736,121"/><area shape="rect" id="node16" href="xsens_8h.html" title="Parser for the Xsens protocol. " alt="" coords="865,169,936,196"/><area shape="rect" id="node22" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1342,333,1513,360"/><area shape="rect" id="node26" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1427,95,1561,121"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="541,169,679,196"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="589,333,767,360"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="307,333,497,360"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="408,244,572,285"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="127,415,282,442"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="656,415,807,442"/><area shape="rect" id="node17" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="883,244,1033,285"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1057,244,1208,285"/><area shape="rect" id="node20" href="xsens__parser_8h.html" title="Parser for the XSens protocol. " alt="" coords="1232,251,1351,278"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="933,333,1057,360"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1386,415,1471,442"/></map>
+</map>
 </div>
 </div>
 <p><a href="imu__xsens_8c_source.html">Go to the source code of this file.</a></p>
@@ -170,7 +170,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__xsens_8c_source.html#l00053">53</a> of file <a class="el" href="imu__xsens_8c_source.html">imu_xsens.c</a>.</p>
 
-<p>References <a class="el" href="xsens_8h_source.html#l00057">Xsens::accel</a>, <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="xsens_8h_source.html#l00070">Xsens::accel_available</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">ACCEL_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="xsens_8h_source.html#l00056">Xsens::gyro</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="xsens_8h_source.html#l00069">Xsens::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__vectornav_8c_source.html#l00044">imu_scale_accel()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00043">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00331">IMU_XSENS_ID</a>, <a class="el" href="xsens_8h_source.html#l00058">Xsens::mag</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="xsens_8h_source.html#l00071">Xsens::mag_available</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00222">MAG_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra_8h_source.html#l00813">MAGS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00208">RATE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, and <a class="el" href="xsens_8c_source.html#l00109">xsens</a>.</p>
+<p>References <a class="el" href="xsens_8h_source.html#l00057">Xsens::accel</a>, <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="xsens_8h_source.html#l00070">Xsens::accel_available</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00220">ACCEL_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="xsens_8h_source.html#l00056">Xsens::gyro</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="xsens_8h_source.html#l00069">Xsens::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00347">IMU_XSENS_ID</a>, <a class="el" href="xsens_8h_source.html#l00058">Xsens::mag</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="xsens_8h_source.html#l00071">Xsens::mag_available</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00222">MAG_BFP_OF_REAL</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra_8h_source.html#l00813">MAGS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00208">RATE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, and <a class="el" href="xsens_8c_source.html#l00109">xsens</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00043">imu_xsens_event()</a>.</p>
 
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph.png" border="0" usemap="#imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph" alt=""/></div>
 <map name="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph" id="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="179,5,323,32"/><area shape="rect" id="node3" href="imu__vectornav_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="187,56,314,83"/><area shape="rect" id="node4" href="imu__vectornav_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="190,107,311,133"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="189,157,312,184"/></map>
+</map>
 </div>
 </p>
 
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph.png" border="0" usemap="#imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph" alt=""/></div>
 <map name="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph" id="imu__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph">
-<area shape="rect" id="node2" href="imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title="imu_xsens_event" alt="" coords="179,5,312,32"/></map>
+</map>
 </div>
 </p>
 
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__xsens_8c_a881da7d1492e95d09c81c6f3c5a1e4cd_cgraph.png" border="0" usemap="#imu__xsens_8c_a881da7d1492e95d09c81c6f3c5a1e4cd_cgraph" alt=""/></div>
 <map name="imu__xsens_8c_a881da7d1492e95d09c81c6f3c5a1e4cd_cgraph" id="imu__xsens_8c_a881da7d1492e95d09c81c6f3c5a1e4cd_cgraph">
-<area shape="rect" id="node2" href="imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title="handle_ins_msg" alt="" coords="199,107,325,133"/><area shape="rect" id="node7" href="xsens_8c.html#a7dcaa5041c2da4d7b3a8af364132770a" title="parse_xsens_msg" alt="" coords="193,216,331,243"/><area shape="rect" id="node9" href="xsens__parser_8c.html#a9d0046af933b2f7d8eb98e697b678c6a" title="xsens_parser_event" alt="" coords="187,271,337,297"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="385,5,529,32"/><area shape="rect" id="node4" href="imu__vectornav_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="394,56,521,83"/><area shape="rect" id="node5" href="imu__vectornav_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="397,107,518,133"/><area shape="rect" id="node6" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="396,157,519,184"/><area shape="rect" id="node8" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="387,209,527,250"/><area shape="rect" id="node10" href="xsens__parser_8c.html#aeb457d2fb42319908f48ab6713852cd4" title="xsens_parser_func" alt="" coords="387,275,528,301"/></map>
+</map>
 </div>
 </p>
 
@@ -254,7 +254,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__xsens_8c_ae98fa030dfb8217636d62dd368d3f375_cgraph.png" border="0" usemap="#imu__xsens_8c_ae98fa030dfb8217636d62dd368d3f375_cgraph" alt=""/></div>
 <map name="imu__xsens_8c_ae98fa030dfb8217636d62dd368d3f375_cgraph" id="imu__xsens_8c_ae98fa030dfb8217636d62dd368d3f375_cgraph">
-<area shape="rect" id="node2" href="xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19" title="xsens_init" alt="" coords="169,5,255,32"/></map>
+</map>
 </div>
 </p>
 
@@ -266,7 +266,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="imu__xsens_8c.html">imu_xsens.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

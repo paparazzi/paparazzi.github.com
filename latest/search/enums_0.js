@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['actuators_5fasctec_5faddr',['actuators_asctec_addr',['../actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20',1,'actuators_asctec.h']]],
-  ['actuators_5fasctec_5fcmd',['actuators_asctec_cmd',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79d',1,'actuators_asctec.h']]],
-  ['actuators_5fasctec_5fcmds',['actuators_asctec_cmds',['../actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1d',1,'actuators_asctec.h']]],
-  ['actuators_5fasctec_5fv2_5faddr',['actuators_asctec_v2_addr',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2_new.h']]],
-  ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2_new.h']]],
+  ['actuators_5fasctec_5fv2_5faddr',['actuators_asctec_v2_addr',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2.h']]],
+  ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2.h']]],
   ['adc1_5fchannels',['adc1_channels',['../chibios_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc1_channels():&#160;adc_arch.h'],['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc1_channels():&#160;adc_arch.h']]],
   ['adc2_5fchannels',['adc2_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#a33afbc7bbad301d909dfd2faaeae1b45',1,'adc_arch.h']]],
   ['adc3_5fchannels',['adc3_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085b',1,'adc_arch.h']]],
@@ -21,7 +18,6 @@ var searchData=
   ['adxl345rates',['Adxl345Rates',['../adxl345__regs_8h.html#a746dd7df1b3e0f992547870f19047133',1,'adxl345_regs.h']]],
   ['ahrsdcmstatus',['AhrsDCMStatus',['../ahrs__float__dcm_8h.html#add6357441f20327a6508da7f6036d2fa',1,'ahrs_float_dcm.h']]],
   ['ahrsfcstatus',['AhrsFCStatus',['../ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937d',1,'ahrs_float_cmpl.h']]],
-  ['ahrsicestatus',['AhrsICEStatus',['../ahrs__int__cmpl__euler_8h.html#a0344e9e10b7b91b87aa7ac14d04c41f7',1,'ahrs_int_cmpl_euler.h']]],
   ['ahrsicqstatus',['AhrsICQStatus',['../ahrs__int__cmpl__quat_8h.html#a1a85a4fab3af926588660327b3e8d6f8',1,'ahrs_int_cmpl_quat.h']]],
   ['ahrsmlkfstatus',['AhrsMlkfStatus',['../ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192',1,'ahrs_float_mlkf.h']]],
   ['ak8963confstatus',['Ak8963ConfStatus',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01e',1,'ak8963.h']]],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/navigation/common_flight_plan.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/nav/common_flight_plan.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,15 +135,15 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0">stage_time</a>, <a class="code" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0">stage_time</a>, <a class="code" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>, <a class="code" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>, <a class="code" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>, <a class="code" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>, <a class="code" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8h.html#a2580ee456d7dd3d157fd7c43ad2eac2d">nav_init_stage</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8h.html#aa3cbfa3c23e459645a8e67b1bb4a1bef">nav_init_block</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> block_id);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> block_id);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a9f3e30fbd9ad4c0bdc20d1dee3e43eb0">   44</a></span>&#160;<span class="preprocessor">#define InitStage() nav_init_stage();</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
@@ -170,7 +170,6 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a5c88d2e597858eb217b5b573a428257c">   67</a></span>&#160;<span class="preprocessor">#define NavBlockTime() (block_time)</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMON_FLIGHT_PLAN_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_ae3eebf6396d9b2539b27b9477c46724d"><div class="ttname"><a href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a></div><div class="ttdeci">uint16_t block_time</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00033">common_flight_plan.c:33</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_a731227193d590af31f6ab76fcd4f6543"><div class="ttname"><a href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a></div><div class="ttdeci">uint8_t last_stage</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00038">common_flight_plan.c:38</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_aa3cbfa3c23e459645a8e67b1bb4a1bef"><div class="ttname"><a href="common__flight__plan_8h.html#aa3cbfa3c23e459645a8e67b1bb4a1bef">nav_init_block</a></div><div class="ttdeci">void nav_init_block(void)</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00041">common_flight_plan.c:41</a></div></div>
@@ -179,16 +178,17 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div class="ttc" id="common__flight__plan_8h_html_ac9b0a7aa731d9b8755a79251720cf9e0"><div class="ttname"><a href="common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0">stage_time</a></div><div class="ttdeci">uint16_t stage_time</div><div class="ttdoc">In s. </div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00033">common_flight_plan.c:33</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_a2580ee456d7dd3d157fd7c43ad2eac2d"><div class="ttname"><a href="common__flight__plan_8h.html#a2580ee456d7dd3d157fd7c43ad2eac2d">nav_init_stage</a></div><div class="ttdeci">void nav_init_stage(void)</div><div class="ttdoc">needs to be implemented by fixedwing and rotorcraft seperately </div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00093">nav.c:93</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_a0a51b60cbd4b84900c8898cfb1f25d49"><div class="ttname"><a href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a></div><div class="ttdeci">uint8_t nav_stage</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00035">common_flight_plan.c:35</a></div></div>
 <div class="ttc" id="common__flight__plan_8h_html_a9bac2a1702848ebb785b932741bfa4be"><div class="ttname"><a href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a></div><div class="ttdeci">uint8_t nav_block</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00035">common_flight_plan.c:35</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="common__flight__plan_8h.html">common_flight_plan.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="common__flight__plan_8h.html">common_flight_plan.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/actuators/motor_mixing.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/actuators/motor_mixing.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,17 +116,17 @@ $(document).ready(function(){initNavTree('motor__mixing_8c.html','');});
 
 <p>Motor Mixing.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="motor__mixing_8h_source.html">subsystems/actuators/motor_mixing.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="motor__mixing_8h_source.html">modules/actuators/motor_mixing.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="paparazzi_8h_source.html">paparazzi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for motor_mixing.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="motor__mixing_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2actuators_2motor__mixing_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2actuators_2motor__mixing_8c" id="sw_2airborne_2subsystems_2actuators_2motor__mixing_8c">
-<area shape="rect" id="node2" href="motor__mixing_8h.html" title="Motor Mixing. " alt="" coords="1145,95,1309,136"/><area shape="rect" id="node4" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1025,191,1121,218"/><area shape="rect" id="node8" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="221,95,375,136"/><area shape="rect" id="node7" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types. " alt="" coords="1145,191,1309,218"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1091,281,1177,307"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="125,363,263,389"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="733,184,887,225"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="553,273,707,315"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="336,281,529,307"/></map>
+<div class="center"><img src="motor__mixing_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2actuators_2motor__mixing_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2actuators_2motor__mixing_8c" id="sw_2airborne_2modules_2actuators_2motor__mixing_8c">
+</map>
 </div>
 </div>
 <p><a href="motor__mixing_8c_source.html">Go to the source code of this file.</a></p>
@@ -161,26 +161,26 @@ Functions</h2></td></tr>
 <tr class="separator:a6b93fe889f4597c3a354af3a8910eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6be133f8fea4274105384f0276801a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#aa6be133f8fea4274105384f0276801a1">motor_mixing_init</a> (void)</td></tr>
 <tr class="separator:aa6be133f8fea4274105384f0276801a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fd0bea41cfac070770a7725f19154a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a">offset_commands</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>)</td></tr>
+<tr class="memitem:a04fd0bea41cfac070770a7725f19154a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a">offset_commands</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>)</td></tr>
 <tr class="separator:a04fd0bea41cfac070770a7725f19154a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad73ee7ccd2962e63ce77477f90e6d0ca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#ad73ee7ccd2962e63ce77477f90e6d0ca">bound_commands</a> (void)</td></tr>
 <tr class="separator:ad73ee7ccd2962e63ce77477f90e6d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32824363dfc8e0863aa3f6160c50c537"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a32824363dfc8e0863aa3f6160c50c537">bound_commands_step</a> (void)</td></tr>
 <tr class="separator:a32824363dfc8e0863aa3f6160c50c537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6511bd941233c791d1436bb35ebb10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing_run_spinup</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> max_counter)</td></tr>
+<tr class="memitem:a4d6511bd941233c791d1436bb35ebb10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing_run_spinup</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a>, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> max_counter)</td></tr>
 <tr class="separator:a4d6511bd941233c791d1436bb35ebb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11440fe0ddbae893cd3789bb407e943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#aa11440fe0ddbae893cd3789bb407e943">motor_mixing_run</a> (bool motors_on, bool override_on, <a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> in_cmd[])</td></tr>
 <tr class="separator:aa11440fe0ddbae893cd3789bb407e943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac24face7eff523838a17e0706583464a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">roll_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_ROLL_COEF</td></tr>
+<tr class="memitem:ac24face7eff523838a17e0706583464a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">roll_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_ROLL_COEF</td></tr>
 <tr class="separator:ac24face7eff523838a17e0706583464a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283724cdd12c661eabd1bbdb1af0a853"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853">pitch_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_PITCH_COEF</td></tr>
+<tr class="memitem:a283724cdd12c661eabd1bbdb1af0a853"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853">pitch_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_PITCH_COEF</td></tr>
 <tr class="separator:a283724cdd12c661eabd1bbdb1af0a853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae1edcc370497aedc22bc48bba04dd0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a2ae1edcc370497aedc22bc48bba04dd0">yaw_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_YAW_COEF</td></tr>
+<tr class="memitem:a2ae1edcc370497aedc22bc48bba04dd0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a2ae1edcc370497aedc22bc48bba04dd0">yaw_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_YAW_COEF</td></tr>
 <tr class="separator:a2ae1edcc370497aedc22bc48bba04dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9210d61b97637a7c08d7baf222d3b9ec"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a9210d61b97637a7c08d7baf222d3b9ec">thrust_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_THRUST_COEF</td></tr>
+<tr class="memitem:a9210d61b97637a7c08d7baf222d3b9ec"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a9210d61b97637a7c08d7baf222d3b9ec">thrust_coef</a> [MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_THRUST_COEF</td></tr>
 <tr class="separator:a9210d61b97637a7c08d7baf222d3b9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f7b209886f3636c9c5f7f0431ce3f0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="motor__mixing_8h.html#structMotorMixing">MotorMixing</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motor__mixing_8c.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing</a></td></tr>
 <tr class="separator:a56f7b209886f3636c9c5f7f0431ce3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,7 +390,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_ad73ee7ccd2962e63ce77477f90e6d0ca_icgraph.png" border="0" usemap="#motor__mixing_8c_ad73ee7ccd2962e63ce77477f90e6d0ca_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_ad73ee7ccd2962e63ce77477f90e6d0ca_icgraph" id="motor__mixing_8c_ad73ee7ccd2962e63ce77477f90e6d0ca_icgraph">
-<area shape="rect" id="node2" href="motor__mixing_8h.html#aa11440fe0ddbae893cd3789bb407e943" title="motor_mixing_run" alt="" coords="195,5,333,32"/></map>
+</map>
 </div>
 </p>
 
@@ -431,7 +431,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_a32824363dfc8e0863aa3f6160c50c537_icgraph.png" border="0" usemap="#motor__mixing_8c_a32824363dfc8e0863aa3f6160c50c537_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_a32824363dfc8e0863aa3f6160c50c537_icgraph" id="motor__mixing_8c_a32824363dfc8e0863aa3f6160c50c537_icgraph">
-<area shape="rect" id="node2" href="motor__mixing_8h.html#aa11440fe0ddbae893cd3789bb407e943" title="motor_mixing_run" alt="" coords="229,5,368,32"/></map>
+</map>
 </div>
 </p>
 
@@ -455,7 +455,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="motor__mixing_8h_source.html#l00037">MotorMixing::commands</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="motor__mixing_8c_source.html#l00094">motor_mixing</a>, <a class="el" href="motor__mixing_8c_source.html#l00047">MOTOR_MIXING_STOP_MOTOR</a>, <a class="el" href="motor__mixing_8c_source.html#l00055">MOTOR_MIXING_TRIM_PITCH</a>, <a class="el" href="motor__mixing_8c_source.html#l00051">MOTOR_MIXING_TRIM_ROLL</a>, <a class="el" href="motor__mixing_8c_source.html#l00059">MOTOR_MIXING_TRIM_YAW</a>, <a class="el" href="motor__mixing_8h_source.html#l00042">MotorMixing::nb_failure</a>, <a class="el" href="motor__mixing_8h_source.html#l00041">MotorMixing::nb_saturation</a>, <a class="el" href="motor__mixing_8h_source.html#l00039">MotorMixing::override_enabled</a>, <a class="el" href="motor__mixing_8h_source.html#l00040">MotorMixing::override_value</a>, <a class="el" href="motor__mixing_8c_source.html#l00090">pitch_coef</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="motor__mixing_8c_source.html#l00089">roll_coef</a>, <a class="el" href="motor__mixing_8c_source.html#l00098">send_motor_mixing()</a>, <a class="el" href="motor__mixing_8h_source.html#l00038">MotorMixing::trim</a>, and <a class="el" href="motor__mixing_8c_source.html#l00091">yaw_coef</a>.</p>
 
-<p>Referenced by <a class="el" href="rover_2main__ap_8c_source.html#l00115">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00075">main_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -464,7 +464,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_cgraph.png" border="0" usemap="#motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_cgraph" alt=""/></div>
 <map name="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_cgraph" id="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="189,5,387,32"/><area shape="rect" id="node3" href="motor__mixing_8c.html#a6b93fe889f4597c3a354af3a8910eecc" title="send_motor_mixing" alt="" coords="214,56,362,83"/></map>
+</map>
 </div>
 </p>
 
@@ -475,7 +475,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph.png" border="0" usemap="#motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph" id="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph">
-<area shape="rect" id="node2" href="rover_2main__ap_8c.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="189,5,269,32"/></map>
+</map>
 </div>
 </p>
 
@@ -522,7 +522,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_aa11440fe0ddbae893cd3789bb407e943_cgraph.png" border="0" usemap="#motor__mixing_8c_aa11440fe0ddbae893cd3789bb407e943_cgraph" alt=""/></div>
 <map name="motor__mixing_8c_aa11440fe0ddbae893cd3789bb407e943_cgraph" id="motor__mixing_8c_aa11440fe0ddbae893cd3789bb407e943_cgraph">
-<area shape="rect" id="node2" href="motor__mixing_8c.html#ad73ee7ccd2962e63ce77477f90e6d0ca" title="bound_commands" alt="" coords="209,5,351,32"/><area shape="rect" id="node3" href="motor__mixing_8c.html#a32824363dfc8e0863aa3f6160c50c537" title="bound_commands_step" alt="" coords="192,56,368,83"/><area shape="rect" id="node4" href="motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a" title="offset_commands" alt="" coords="211,107,349,133"/></map>
+</map>
 </div>
 </p>
 
@@ -535,13 +535,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void motor_mixing_run_spinup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>counter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>max_counter</em>&#160;</td>
         </tr>
         <tr>
@@ -568,7 +568,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void offset_commands </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td></td>
         </tr>
@@ -593,7 +593,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_a04fd0bea41cfac070770a7725f19154a_icgraph.png" border="0" usemap="#motor__mixing_8c_a04fd0bea41cfac070770a7725f19154a_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_a04fd0bea41cfac070770a7725f19154a_icgraph" id="motor__mixing_8c_a04fd0bea41cfac070770a7725f19154a_icgraph">
-<area shape="rect" id="node2" href="motor__mixing_8h.html#aa11440fe0ddbae893cd3789bb407e943" title="motor_mixing_run" alt="" coords="191,5,329,32"/></map>
+</map>
 </div>
 </p>
 
@@ -644,7 +644,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph.png" border="0" usemap="#motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph" id="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph">
-<area shape="rect" id="node2" href="motor__mixing_8h.html#aa6be133f8fea4274105384f0276801a1" title="motor_mixing_init" alt="" coords="201,5,337,32"/><area shape="rect" id="node3" href="rover_2main__ap_8c.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="385,5,465,32"/></map>
+</map>
 </div>
 </p>
 
@@ -675,7 +675,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> pitch_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_PITCH_COEF</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> pitch_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_PITCH_COEF</td>
         </tr>
       </table>
   </td>
@@ -699,7 +699,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> roll_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_ROLL_COEF</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> roll_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_ROLL_COEF</td>
         </tr>
       </table>
   </td>
@@ -723,7 +723,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> thrust_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_THRUST_COEF</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_THRUST_COEF</td>
         </tr>
       </table>
   </td>
@@ -747,7 +747,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> yaw_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_YAW_COEF</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> yaw_coef[MOTOR_MIXING_NB_MOTOR] = MOTOR_MIXING_YAW_COEF</td>
         </tr>
       </table>
   </td>
@@ -768,8 +768,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="motor__mixing_8c.html">motor_mixing.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="motor__mixing_8c.html">motor_mixing.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

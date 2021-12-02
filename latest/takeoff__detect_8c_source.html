@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('takeoff__detect_8c_source.html','');})
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="takeoff__detect_8c.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="takeoff__detect_8c.html#structtakeoff__detect__struct">takeoff_detect_struct</a> {</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="takeoff__detect_8c.html#a219cf5c2864bb180fff667068c237fbf">   65</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8">takeoff_detect_state</a> <a class="code" href="takeoff__detect_8c.html#a219cf5c2864bb180fff667068c237fbf">state</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">   66</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">timer</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">   66</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">timer</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="takeoff__detect_8c.html#ac0c4cb682a809a7d7bb2e1c15e3c79c0">   69</a></span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="takeoff__detect_8c.html#structtakeoff__detect__struct">takeoff_detect_struct</a> <a class="code" href="takeoff__detect_8c.html#ac0c4cb682a809a7d7bb2e1c15e3c79c0">takeoff_detect</a>;</div>
@@ -259,7 +259,6 @@ $(document).ready(function(){initNavTree('takeoff__detect_8c_source.html','');})
 <div class="ttc" id="takeoff__detect_8c_html_a06e2c8e9dfe36613c4773f5c01303b0a"><div class="ttname"><a href="takeoff__detect_8c.html#a06e2c8e9dfe36613c4773f5c01303b0a">takeoff_detect_periodic</a></div><div class="ttdeci">void takeoff_detect_periodic(void)</div><div class="ttdoc">Periodic call. </div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00085">takeoff_detect.c:85</a></div></div>
 <div class="ttc" id="takeoff__detect_8c_html_ac89055b0a35082ca89dd62b639fb2249"><div class="ttname"><a href="takeoff__detect_8c.html#ac89055b0a35082ca89dd62b639fb2249">TAKEOFF_DETECT_TIMER</a></div><div class="ttdeci">#define TAKEOFF_DETECT_TIMER</div><div class="ttdoc">Detection timer in seconds. </div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00048">takeoff_detect.c:48</a></div></div>
 <div class="ttc" id="takeoff__detect_8c_html_ae4ecd72a6a1aa21c820285960fab79c4"><div class="ttname"><a href="takeoff__detect_8c.html#ae4ecd72a6a1aa21c820285960fab79c4">takeoff_detect_init</a></div><div class="ttdeci">void takeoff_detect_init(void)</div><div class="ttdoc">Init function. </div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00072">takeoff_detect.c:72</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
@@ -268,6 +267,7 @@ $(document).ready(function(){initNavTree('takeoff__detect_8c_source.html','');})
 <div class="ttc" id="takeoff__detect_8c_html_ae398a6008f13ebecb65a2f4abb54d3e8ae278f78b316913c44eaf48c2b959dd7a"><div class="ttname"><a href="takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8ae278f78b316913c44eaf48c2b959dd7a">TO_DETECT_DISABLED</a></div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00058">takeoff_detect.c:58</a></div></div>
 <div class="ttc" id="takeoff__detect_8c_html_ac0c4cb682a809a7d7bb2e1c15e3c79c0"><div class="ttname"><a href="takeoff__detect_8c.html#ac0c4cb682a809a7d7bb2e1c15e3c79c0">takeoff_detect</a></div><div class="ttdeci">static struct takeoff_detect_struct takeoff_detect</div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00069">takeoff_detect.c:69</a></div></div>
 <div class="ttc" id="autopilot_8c_html_a23af2ac2d4bcb9b71c869a409de61cc4"><div class="ttname"><a href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a></div><div class="ttdeci">uint8_t autopilot_get_mode(void)</div><div class="ttdoc">get autopilot mode </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00184">autopilot.c:184</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 <div class="ttc" id="takeoff__detect_8c_html_a8d3bde9a56cf0e549b47e7362c7a17f1"><div class="ttname"><a href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">takeoff_detect_struct::timer</a></div><div class="ttdeci">uint32_t timer</div><div class="ttdef"><b>Definition:</b> <a href="takeoff__detect_8c_source.html#l00066">takeoff_detect.c:66</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('takeoff__detect_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="takeoff__detect_8c.html">takeoff_detect.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:11 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

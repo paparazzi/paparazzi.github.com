@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('baro__sim_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__isa_8h.html">math/pprz_isa.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">subsystems/abi.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">modules/core/abi.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="abi__sender__ids_8h.html#a0d2714c1cf5e33e117c0a1e0d5694c7a">BARO_SIM_SENDER_ID</a>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('baro__sim_8c_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="baro__sim_8h.html#ad43ede516cb291db8ea546cc89c3fdaf">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="baro__sim_8c.html#ad43ede516cb291db8ea546cc89c3fdaf">baro_sim_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">float</span> pressure = <a class="code" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b">pprz_isa_pressure_of_altitude</a>(<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">hmsl</a> / 1000.0);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a0d2714c1cf5e33e117c0a1e0d5694c7a">BARO_SIM_SENDER_ID</a>, now_ts, pressure);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
@@ -153,18 +153,18 @@ $(document).ready(function(){initNavTree('baro__sim_8c_source.html','');});
 <div class="ttc" id="gps_8h_html_a10af95f7fdab3171a789866838b0c8c3"><div class="ttname"><a href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">GpsState::hmsl</a></div><div class="ttdeci">int32_t hmsl</div><div class="ttdoc">height above mean sea level (MSL) in mm </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00094">gps.h:94</a></div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="pprz__isa_8h_html"><div class="ttname"><a href="pprz__isa_8h.html">pprz_isa.h</a></div><div class="ttdoc">Paparazzi atmospheric pressure conversion utilities. </div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="abi__sender__ids_8h_html_a0d2714c1cf5e33e117c0a1e0d5694c7a"><div class="ttname"><a href="abi__sender__ids_8h.html#a0d2714c1cf5e33e117c0a1e0d5694c7a">BARO_SIM_SENDER_ID</a></div><div class="ttdeci">#define BARO_SIM_SENDER_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00072">abi_sender_ids.h:72</a></div></div>
 <div class="ttc" id="baro__sim_8c_html_ad5cb7d6c6d8638f28738876d683a3ea4"><div class="ttname"><a href="baro__sim_8c.html#ad5cb7d6c6d8638f28738876d683a3ea4">baro_sim_init</a></div><div class="ttdeci">void baro_sim_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="baro__sim_8c_source.html#l00034">baro_sim.c:34</a></div></div>
-<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">sys_time_arch.c:71</a></div></div>
 <div class="ttc" id="gps_8c_html_a5cf954024f8e0433b21db7439c5bee9d"><div class="ttname"><a href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></div><div class="ttdeci">struct GpsState gps</div><div class="ttdoc">global GPS state </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00069">gps.c:69</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__sim_8c.html">baro_sim.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

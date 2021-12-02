@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('px4__flash_2protocol_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="px4__flash_2protocol_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2px4__flash_2protocol_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2px4__flash_2protocol_8hdep" id="sw_2airborne_2modules_2px4__flash_2protocol_8hdep">
-<area shape="rect" id="node2" href="px4__flash_8c.html" title="sw/airborne/modules\l/px4_flash/px4_flash.c" alt="" coords="5,95,167,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="px4__flash_2protocol_8h_source.html">Go to the source code of this file.</a></p>
@@ -149,13 +149,13 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:aacbb9e1f38be71e22df1584a37c56693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aacbb9e1f38be71e22df1584a37c56693">__STDC_FORMAT_MACROS</a></td></tr>
 <tr class="separator:aacbb9e1f38be71e22df1584a37c56693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba798484529a2285ff5ea680e418142"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0ba798484529a2285ff5ea680e418142">REG_TO_SIGNED</a>(_reg)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(_reg))</td></tr>
+<tr class="memitem:a0ba798484529a2285ff5ea680e418142"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0ba798484529a2285ff5ea680e418142">REG_TO_SIGNED</a>(_reg)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(_reg))</td></tr>
 <tr class="separator:a0ba798484529a2285ff5ea680e418142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8eead349d624480d8868043a3d2c2ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>(_signed)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_signed))</td></tr>
+<tr class="memitem:ad8eead349d624480d8868043a3d2c2ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>(_signed)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_signed))</td></tr>
 <tr class="separator:ad8eead349d624480d8868043a3d2c2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51806ac27d3c0e9fc8c78eca99965125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a51806ac27d3c0e9fc8c78eca99965125">REG_TO_FLOAT</a>(_reg)&#160;&#160;&#160;((float)<a class="el" href="px4__flash_2protocol_8h.html#a0ba798484529a2285ff5ea680e418142">REG_TO_SIGNED</a>(_reg) / 10000.0f)</td></tr>
 <tr class="separator:a51806ac27d3c0e9fc8c78eca99965125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70eb78ccd8da3260eb82a60ac10c6164"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a70eb78ccd8da3260eb82a60ac10c6164">FLOAT_TO_REG</a>(_float)&#160;&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_float) * 10000.0f))</td></tr>
+<tr class="memitem:a70eb78ccd8da3260eb82a60ac10c6164"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a70eb78ccd8da3260eb82a60ac10c6164">FLOAT_TO_REG</a>(_float)&#160;&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_float) * 10000.0f))</td></tr>
 <tr class="separator:a70eb78ccd8da3260eb82a60ac10c6164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf782ef5d6ed55a7428827c342a1156"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a6bf782ef5d6ed55a7428827c342a1156">PX4IO_PROTOCOL_VERSION</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a6bf782ef5d6ed55a7428827c342a1156"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
 <tr class="separator:a3d7f47ba0c566e9ddf999a4599eef984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca44d1cc1a7cec0361c3a2e687b98503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aca44d1cc1a7cec0361c3a2e687b98503">PX4IO_P_STATUS_FLAGS_FMU_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 6) /* controls from FMU are valid */</td></tr>
 <tr class="separator:aca44d1cc1a7cec0361c3a2e687b98503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796b262242fabe263cbc22847d58e171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a796b262242fabe263cbc22847d58e171">PX4IO_P_STATUS_FLAGS_RAW_PWM</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* raw <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> from FMU is bypassing the mixer */</td></tr>
+<tr class="memitem:a796b262242fabe263cbc22847d58e171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a796b262242fabe263cbc22847d58e171">PX4IO_P_STATUS_FLAGS_RAW_PWM</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* raw PWM from FMU is bypassing the mixer */</td></tr>
 <tr class="separator:a796b262242fabe263cbc22847d58e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3433030e88b4034424aaf767649073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a2f3433030e88b4034424aaf767649073">PX4IO_P_STATUS_FLAGS_MIXER_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 8) /* mixer is OK */</td></tr>
 <tr class="separator:a2f3433030e88b4034424aaf767649073"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +239,7 @@ Macros</h2></td></tr>
 <tr class="separator:a34db300d7174592567fbf89cbce30d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5349ca22808a178a9d90e0a5a37a20a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a5349ca22808a178a9d90e0a5a37a20a6">PX4IO_P_STATUS_ALARMS_RC_LOST</a>&#160;&#160;&#160;(1 &lt;&lt; 5) /* timed out waiting for RC input */</td></tr>
 <tr class="separator:a5349ca22808a178a9d90e0a5a37a20a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e97732fd3d3f09367ec0e7bf4c0e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a55e97732fd3d3f09367ec0e7bf4c0e11">PX4IO_P_STATUS_ALARMS_PWM_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 6) /* <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> configuration or output was bad */</td></tr>
+<tr class="memitem:a55e97732fd3d3f09367ec0e7bf4c0e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a55e97732fd3d3f09367ec0e7bf4c0e11">PX4IO_P_STATUS_ALARMS_PWM_ERROR</a>&#160;&#160;&#160;(1 &lt;&lt; 6) /* PWM configuration or output was bad */</td></tr>
 <tr class="separator:a55e97732fd3d3f09367ec0e7bf4c0e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2dcbb34e355f9ea0e5c3d082fb8d719"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aa2dcbb34e355f9ea0e5c3d082fb8d719">PX4IO_P_STATUS_ALARMS_VSERVO_FAULT</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* [2] VServo was out of the valid range (2.5 - 5.5 V) */</td></tr>
 <tr class="separator:aa2dcbb34e355f9ea0e5c3d082fb8d719"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,7 +251,7 @@ Macros</h2></td></tr>
 <tr class="separator:a16d29b5bfcccf263fcbd4cf6960e3bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593afe6681efbead8086570ee79d22cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a593afe6681efbead8086570ee79d22cb">PX4IO_P_STATUS_VRSSI</a>&#160;&#160;&#160;7 /* [2] <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">RSSI</a> voltage */</td></tr>
 <tr class="separator:a593afe6681efbead8086570ee79d22cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0c4e6e487488a92a8808c3e48775f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#abf0c4e6e487488a92a8808c3e48775f0">PX4IO_P_STATUS_PRSSI</a>&#160;&#160;&#160;8 /* [2] <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">RSSI</a> <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> value */</td></tr>
+<tr class="memitem:abf0c4e6e487488a92a8808c3e48775f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#abf0c4e6e487488a92a8808c3e48775f0">PX4IO_P_STATUS_PRSSI</a>&#160;&#160;&#160;8 /* [2] <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">RSSI</a> PWM value */</td></tr>
 <tr class="separator:abf0c4e6e487488a92a8808c3e48775f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4874b8839c33d3a97bef4c2cef3311"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0a4874b8839c33d3a97bef4c2cef3311">PX4IO_P_STATUS_MIXER</a>&#160;&#160;&#160;9  /* mixer actuator limit flags */</td></tr>
 <tr class="separator:a0a4874b8839c33d3a97bef4c2cef3311"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,7 +304,7 @@ Macros</h2></td></tr>
 <tr class="separator:a2f3ed373bb757d475bc35e1d65b40fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6adeb14a4419fbbd5e6717c6b0669c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a9f6adeb14a4419fbbd5e6717c6b0669c">PX4IO_PAGE_PWM_INFO</a>&#160;&#160;&#160;7</td></tr>
 <tr class="separator:a9f6adeb14a4419fbbd5e6717c6b0669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2820f6ea6aa80d74492c2eaa5225519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab2820f6ea6aa80d74492c2eaa5225519">PX4IO_RATE_MAP_BASE</a>&#160;&#160;&#160;0 /* 0..CONFIG_ACTUATOR_COUNT bitmaps of <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> rate groups */</td></tr>
+<tr class="memitem:ab2820f6ea6aa80d74492c2eaa5225519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab2820f6ea6aa80d74492c2eaa5225519">PX4IO_RATE_MAP_BASE</a>&#160;&#160;&#160;0 /* 0..CONFIG_ACTUATOR_COUNT bitmaps of PWM rate groups */</td></tr>
 <tr class="separator:ab2820f6ea6aa80d74492c2eaa5225519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13b899755d69d96c213b39d8f6066d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab13b899755d69d96c213b39d8f6066d6">PX4IO_PAGE_SETUP</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:ab13b899755d69d96c213b39d8f6066d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,13 +328,13 @@ Macros</h2></td></tr>
 <tr class="separator:a02e5d1c5ee50a7e22539232229cfd5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c80c9cdb085ea35baad67ec23c5802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a28c80c9cdb085ea35baad67ec23c5802">PX4IO_P_SETUP_ARMING_FMU_ARMED</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* FMU is already armed */</td></tr>
 <tr class="separator:a28c80c9cdb085ea35baad67ec23c5802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e0355fc30cd3bb4f3436cdd954c5116">PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> */</td></tr>
+<tr class="memitem:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e0355fc30cd3bb4f3436cdd954c5116">PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC channel */</td></tr>
 <tr class="separator:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830cd23c0fd0ab9dcadff82e58a504d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a830cd23c0fd0ab9dcadff82e58a504d2">PX4IO_P_SETUP_ARMING_FAILSAFE_CUSTOM</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* use custom failsafe values, not 0 values of mixer */</td></tr>
 <tr class="separator:a830cd23c0fd0ab9dcadff82e58a504d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6d6350313be52fa76007b2ab9ab3d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8f6d6350313be52fa76007b2ab9ab3d9">PX4IO_P_SETUP_ARMING_INAIR_RESTART_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 4) /* OK to try in-air restart */</td></tr>
 <tr class="separator:a8f6d6350313be52fa76007b2ab9ab3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af978ca9046bd3b9d8a3ce1ce3431787d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#af978ca9046bd3b9d8a3ce1ce3431787d">PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 5) /* Output of <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> right after startup enabled to help ESCs initialize and prevent them from beeping */</td></tr>
+<tr class="memitem:af978ca9046bd3b9d8a3ce1ce3431787d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#af978ca9046bd3b9d8a3ce1ce3431787d">PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 5) /* Output of PWM right after startup enabled to help ESCs initialize and prevent them from beeping */</td></tr>
 <tr class="separator:af978ca9046bd3b9d8a3ce1ce3431787d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b38e3a3449175c098185f6c06e359e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0b38e3a3449175c098185f6c06e359e4">PX4IO_P_SETUP_ARMING_RC_HANDLING_DISABLED</a>&#160;&#160;&#160;(1 &lt;&lt; 6) /* Disable the IO-internal evaluation of the RC */</td></tr>
 <tr class="separator:a0b38e3a3449175c098185f6c06e359e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,9 +348,9 @@ Macros</h2></td></tr>
 <tr class="separator:aa178f6b4e49bf420b23a8161bd3a1f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad81dfcb47b8bd7f15ec7384071c4506d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad81dfcb47b8bd7f15ec7384071c4506d">PX4IO_P_SETUP_PWM_RATES</a>&#160;&#160;&#160;2 /* bitmask, 0 = low rate, 1 = high rate */</td></tr>
 <tr class="separator:ad81dfcb47b8bd7f15ec7384071c4506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf6153808d2979322af3c748f8a9318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8cf6153808d2979322af3c748f8a9318">PX4IO_P_SETUP_PWM_DEFAULTRATE</a>&#160;&#160;&#160;3 /* 'low' <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td></tr>
+<tr class="memitem:a8cf6153808d2979322af3c748f8a9318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8cf6153808d2979322af3c748f8a9318">PX4IO_P_SETUP_PWM_DEFAULTRATE</a>&#160;&#160;&#160;3 /* 'low' PWM <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td></tr>
 <tr class="separator:a8cf6153808d2979322af3c748f8a9318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a52b45bb3c9f860019dca0fa6fd5a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a26a52b45bb3c9f860019dca0fa6fd5a3">PX4IO_P_SETUP_PWM_ALTRATE</a>&#160;&#160;&#160;4 /* 'high' <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td></tr>
+<tr class="memitem:a26a52b45bb3c9f860019dca0fa6fd5a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a26a52b45bb3c9f860019dca0fa6fd5a3">PX4IO_P_SETUP_PWM_ALTRATE</a>&#160;&#160;&#160;4 /* 'high' PWM <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td></tr>
 <tr class="separator:a26a52b45bb3c9f860019dca0fa6fd5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e38b30745dd80d1f4dc7c9527b99610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a3e38b30745dd80d1f4dc7c9527b99610">PX4IO_P_SETUP_RELAYS_PAD</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a3e38b30745dd80d1f4dc7c9527b99610"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,7 +373,7 @@ Macros</h2></td></tr>
 <tr class="memitem:aac01f777e2933284df26d195c8665ced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aac01f777e2933284df26d195c8665ced">PX4IO_P_SETUP_RC_THR_FAILSAFE_US</a>&#160;&#160;&#160;13</td></tr>
 <tr class="memdesc:aac01f777e2933284df26d195c8665ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">the throttle failsafe pulse length in microseconds  <a href="#aac01f777e2933284df26d195c8665ced">More...</a><br /></td></tr>
 <tr class="separator:aac01f777e2933284df26d195c8665ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e68df0ce86b374db12d25bc6ad4d390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e68df0ce86b374db12d25bc6ad4d390">PX4IO_P_SETUP_FORCE_SAFETY_ON</a>&#160;&#160;&#160;14  /* force safety switch into 'disarmed' (<a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> disabled <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>) */</td></tr>
+<tr class="memitem:a1e68df0ce86b374db12d25bc6ad4d390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e68df0ce86b374db12d25bc6ad4d390">PX4IO_P_SETUP_FORCE_SAFETY_ON</a>&#160;&#160;&#160;14  /* force safety switch into 'disarmed' (PWM disabled <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>) */</td></tr>
 <tr class="separator:a1e68df0ce86b374db12d25bc6ad4d390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1ba81db2254a146dfcaedd7a663b49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0c1ba81db2254a146dfcaedd7a663b49">PX4IO_FORCE_SAFETY_MAGIC</a>&#160;&#160;&#160;22027 /* required argument for force safety (random) */</td></tr>
 <tr class="separator:a0c1ba81db2254a146dfcaedd7a663b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,30 +503,30 @@ Macros</h2></td></tr>
 <tr class="separator:a27ee7f2b296c6e5b44cc90c1ed692f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6292323e7c8c8241bd76dc3eda4e3b7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a6292323e7c8c8241bd76dc3eda4e3b7b">PKT_CODE</a>(_p)&#160;&#160;&#160;((_p).count_code &amp; <a class="el" href="px4__flash_2protocol_8h.html#a1f872d56066eb5ffdd39396593dd20f2">PKT_CODE_MASK</a>)</td></tr>
 <tr class="separator:a6292323e7c8c8241bd76dc3eda4e3b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7aee4bcdaec6fbb4fdcbd3504c3f40f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab7aee4bcdaec6fbb4fdcbd3504c3f40f">PKT_SIZE</a>(_p)&#160;&#160;&#160;((size_t)((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;((_p).regs[<a class="el" href="px4__flash_2protocol_8h.html#a27ee7f2b296c6e5b44cc90c1ed692f83">PKT_COUNT</a>(_p)]) - ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;(_p))))</td></tr>
+<tr class="memitem:ab7aee4bcdaec6fbb4fdcbd3504c3f40f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab7aee4bcdaec6fbb4fdcbd3504c3f40f">PKT_SIZE</a>(_p)&#160;&#160;&#160;((size_t)((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;((_p).regs[<a class="el" href="px4__flash_2protocol_8h.html#a27ee7f2b296c6e5b44cc90c1ed692f83">PKT_COUNT</a>(_p)]) - ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;(_p))))</td></tr>
 <tr class="separator:ab7aee4bcdaec6fbb4fdcbd3504c3f40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a91208fef98a8e6a0f21eddcb9c5a8b78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78acd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
-<a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
+<tr class="memitem:a0efc1b13f14c790dd3d59de11e12bc6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a0efc1b13f14c790dd3d59de11e12bc6dacd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
+<a class="el" href="px4__flash_2protocol_8h.html#a0efc1b13f14c790dd3d59de11e12bc6da47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a0efc1b13f14c790dd3d59de11e12bc6da8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a0efc1b13f14c790dd3d59de11e12bc6da0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
 <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78afd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a0efc1b13f14c790dd3d59de11e12bc6dafd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
 <br />
  }</td></tr>
-<tr class="separator:a91208fef98a8e6a0f21eddcb9c5a8b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0efc1b13f14c790dd3d59de11e12bc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad790e31d705934f4ac34e7ddf3761b0e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad790e31d705934f4ac34e7ddf3761b0e">crc_packet</a> (struct <a class="el" href="px4__flash_2protocol_8h.html#structIOPacket">IOPacket</a> *pkt)</td></tr>
+<tr class="memitem:ad790e31d705934f4ac34e7ddf3761b0e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad790e31d705934f4ac34e7ddf3761b0e">crc_packet</a> (struct <a class="el" href="px4__flash_2protocol_8h.html#structIOPacket">IOPacket</a> *pkt)</td></tr>
 <tr class="separator:ad790e31d705934f4ac34e7ddf3761b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:acb838d15dc4bc40adc8c47fffc4989c1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#acb838d15dc4bc40adc8c47fffc4989c1">crc8_tab</a> [256]</td></tr>
+<tr class="memitem:acb838d15dc4bc40adc8c47fffc4989c1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#acb838d15dc4bc40adc8c47fffc4989c1">crc8_tab</a> [256]</td></tr>
 <tr class="separator:acb838d15dc4bc40adc8c47fffc4989c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -546,13 +546,13 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8c998a740c7a24b4bdf2fe1ba8f903c6"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a8c998a740c7a24b4bdf2fe1ba8f903c6"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 action</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab79dcabd75072f9a989334673f7f0d6d"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="ab79dcabd75072f9a989334673f7f0d6d"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 f2i_mixer_magic</td>
 <td class="fielddoc">
@@ -581,31 +581,31 @@ text[0]</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab300ebecfbec9f6a18239faf9b196765"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab300ebecfbec9f6a18239faf9b196765"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 count_code</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af856646ceb9df0f094d8a26287189fcf"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="af856646ceb9df0f094d8a26287189fcf"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 crc</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a338a71aff88023b64b73cfde6d4ca2ef"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a338a71aff88023b64b73cfde6d4ca2ef"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 offset</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a93abdcba6eb1657fcb6760babb7c0d00"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a93abdcba6eb1657fcb6760babb7c0d00"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 page</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4154a2062c02bf69b9f0d6ed316dede3"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a4154a2062c02bf69b9f0d6ed316dede3"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c36ccc4b8">PKT_MAX_REGS</a>]</td>
 <td class="fielddoc">
@@ -680,7 +680,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_float</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_float) * 10000.0f))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea">SIGNED_TO_REG</a>((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_float) * 10000.0f))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -852,7 +852,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_p</td><td>)</td>
-          <td>&#160;&#160;&#160;((size_t)((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;((_p).regs[<a class="el" href="px4__flash_2protocol_8h.html#a27ee7f2b296c6e5b44cc90c1ed692f83">PKT_COUNT</a>(_p)]) - ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;(_p))))</td>
+          <td>&#160;&#160;&#160;((size_t)((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;((_p).regs[<a class="el" href="px4__flash_2protocol_8h.html#a27ee7f2b296c6e5b44cc90c1ed692f83">PKT_COUNT</a>(_p)]) - ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)&amp;(_p))))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1546,7 +1546,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 5) /* Output of <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> right after startup enabled to help ESCs initialize and prevent them from beeping */</td>
+          <td class="memname">#define PX4IO_P_SETUP_ARMING_ALWAYS_PWM_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 5) /* Output of PWM right after startup enabled to help ESCs initialize and prevent them from beeping */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1644,7 +1644,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> */</td>
+          <td class="memname">#define PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC channel */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1823,7 +1823,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_FORCE_SAFETY_ON&#160;&#160;&#160;14  /* force safety switch into 'disarmed' (<a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> disabled <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>) */</td>
+          <td class="memname">#define PX4IO_P_SETUP_FORCE_SAFETY_ON&#160;&#160;&#160;14  /* force safety switch into 'disarmed' (PWM disabled <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>) */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1837,7 +1837,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_PWM_ALTRATE&#160;&#160;&#160;4 /* 'high' <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td>
+          <td class="memname">#define PX4IO_P_SETUP_PWM_ALTRATE&#160;&#160;&#160;4 /* 'high' PWM <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1851,7 +1851,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_PWM_DEFAULTRATE&#160;&#160;&#160;3 /* 'low' <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td>
+          <td class="memname">#define PX4IO_P_SETUP_PWM_DEFAULTRATE&#160;&#160;&#160;3 /* 'low' PWM <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a> output rate in Hz */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2073,7 +2073,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_ALARMS_PWM_ERROR&#160;&#160;&#160;(1 &lt;&lt; 6) /* <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> configuration or output was bad */</td>
+          <td class="memname">#define PX4IO_P_STATUS_ALARMS_PWM_ERROR&#160;&#160;&#160;(1 &lt;&lt; 6) /* PWM configuration or output was bad */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2297,7 +2297,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_FLAGS_RAW_PWM&#160;&#160;&#160;(1 &lt;&lt; 7) /* raw <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> from FMU is bypassing the mixer */</td>
+          <td class="memname">#define PX4IO_P_STATUS_FLAGS_RAW_PWM&#160;&#160;&#160;(1 &lt;&lt; 7) /* raw PWM from FMU is bypassing the mixer */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2499,7 +2499,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_PRSSI&#160;&#160;&#160;8 /* [2] <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">RSSI</a> <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> value */</td>
+          <td class="memname">#define PX4IO_P_STATUS_PRSSI&#160;&#160;&#160;8 /* [2] <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">RSSI</a> PWM value */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2883,7 +2883,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_RATE_MAP_BASE&#160;&#160;&#160;0 /* 0..CONFIG_ACTUATOR_COUNT bitmaps of <a class="el" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> rate groups */</td>
+          <td class="memname">#define PX4IO_RATE_MAP_BASE&#160;&#160;&#160;0 /* 0..CONFIG_ACTUATOR_COUNT bitmaps of PWM rate groups */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2935,7 +2935,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_reg</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(_reg))</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(_reg))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2953,7 +2953,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_signed</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_signed))</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_signed))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2963,7 +2963,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78"></a>
+<a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2973,15 +2973,15 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78acd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6dacd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78a47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6da47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78a8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6da8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78a0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6da0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a91208fef98a8e6a0f21eddcb9c5a8b78afd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a0efc1b13f14c790dd3d59de11e12bc6dafd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -2998,7 +2998,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_packet </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_packet </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="px4__flash_2protocol_8h.html#structIOPacket">IOPacket</a> *&#160;</td>
           <td class="paramname"><em>pkt</em></td><td>)</td>
@@ -3025,7 +3025,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="px4__flash_2protocol_8h_ad790e31d705934f4ac34e7ddf3761b0e_icgraph.png" border="0" usemap="#px4__flash_2protocol_8h_ad790e31d705934f4ac34e7ddf3761b0e_icgraph" alt=""/></div>
 <map name="px4__flash_2protocol_8h_ad790e31d705934f4ac34e7ddf3761b0e_icgraph" id="px4__flash_2protocol_8h_ad790e31d705934f4ac34e7ddf3761b0e_icgraph">
-<area shape="rect" id="node2" href="px4__flash_8h.html#a5bbeb4ac8fb18641568992822ee3ba00" title="px4flash_event" alt="" coords="144,5,263,32"/></map>
+</map>
 </div>
 </p>
 
@@ -3040,7 +3040,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc8_tab[256]</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc8_tab[256]</td>
         </tr>
       </table>
   </td>
@@ -3062,7 +3062,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7d07a2235bf732e635d4183f1ff4bace.html">px4_flash</a></li><li class="navelem"><a class="el" href="px4__flash_2protocol_8h.html">protocol.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:58 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

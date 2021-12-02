@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('pano__unwrap_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2pano__unwrap_2pano__unwrap_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2pano__unwrap_2pano__unwrap_8c" id="sw_2airborne_2modules_2pano__unwrap_2pano__unwrap_8c">
-<area shape="rect" id="node2" href="pano__unwrap_8h.html" title="modules/pano_unwrap\l/pano_unwrap.h" alt="" coords="5,95,172,136"/><area shape="rect" id="node6" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="557,348,623,375"/><area shape="rect" id="node20" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="196,102,411,129"/><area shape="rect" id="node3" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="111,259,298,300"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="501,512,679,539"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="772,512,963,539"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="227,423,377,464"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="401,423,552,464"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="628,423,792,464"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="790,587,945,613"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="615,587,765,613"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="245,512,369,539"/><area shape="rect" id="node22" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="383,184,573,211"/><area shape="rect" id="node24" href="inttypes_8h.html" title="inttypes.h" alt="" coords="355,266,441,293"/></map>
+</map>
 </div>
 </div>
 <p><a href="pano__unwrap_8c_source.html">Go to the source code of this file.</a></p>
@@ -163,11 +163,11 @@ Macros</h2></td></tr>
 <tr class="separator:a8dfc9f820dd405b4c3026b19ac1f0ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd084360218b0354d7b6274d5f087e99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#acd084360218b0354d7b6274d5f087e99">PANO_UNWRAP_FPS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:acd084360218b0354d7b6274d5f087e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a996bfbde9f09cc95822038d93bad15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a3a996bfbde9f09cc95822038d93bad15">PIXEL_U</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w] )</td></tr>
+<tr class="memitem:a3a996bfbde9f09cc95822038d93bad15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a3a996bfbde9f09cc95822038d93bad15">PIXEL_U</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w] )</td></tr>
 <tr class="separator:a3a996bfbde9f09cc95822038d93bad15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9490f2b264033697992adcd184584f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#abc9490f2b264033697992adcd184584f">PIXEL_V</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w + 2] )</td></tr>
+<tr class="memitem:abc9490f2b264033697992adcd184584f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#abc9490f2b264033697992adcd184584f">PIXEL_V</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w + 2] )</td></tr>
 <tr class="separator:abc9490f2b264033697992adcd184584f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a830da9bbb44ec93a5e027d51bfd3e2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a830da9bbb44ec93a5e027d51bfd3e2ad">PIXEL_Y</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[2*(x) + 1 + 2*(y)*(img)-&gt;w] )</td></tr>
+<tr class="memitem:a830da9bbb44ec93a5e027d51bfd3e2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a830da9bbb44ec93a5e027d51bfd3e2ad">PIXEL_Y</a>(img, x, y)&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[2*(x) + 1 + 2*(y)*(img)-&gt;w] )</td></tr>
 <tr class="separator:a830da9bbb44ec93a5e027d51bfd3e2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7989608711b7dbc393bc1a07737c13b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a7989608711b7dbc393bc1a07737c13b5">RED_Y</a>&#160;&#160;&#160;76</td></tr>
 <tr class="separator:a7989608711b7dbc393bc1a07737c13b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
 <tr class="separator:ab8cfdd94ca198ffad976368529b78510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7749a199c15590f0007e9976535686c5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5">unwrap_LUT</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img_raw, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
 <tr class="separator:a7749a199c15590f0007e9976535686c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710b27b04793f5a2412ab67f7eb0bb54"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54">camera_cb</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
+<tr class="memitem:a710b27b04793f5a2412ab67f7eb0bb54"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54">camera_cb</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
 <tr class="separator:a710b27b04793f5a2412ab67f7eb0bb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2038ddd6c9204939f22d0879640b52e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6">pano_unwrap_init</a> ()</td></tr>
 <tr class="separator:a2038ddd6c9204939f22d0879640b52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,13 +257,13 @@ settings</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a1aaf0c100b08b53483cf0a82696da815"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *</td>
+<a class="anchor" id="a1aaf0c100b08b53483cf0a82696da815"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *</td>
 <td class="fieldname">
 x</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac5e773a3abbf74d11e53c506e7b30397"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *</td>
+<a class="anchor" id="ac5e773a3abbf74d11e53c506e7b30397"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *</td>
 <td class="fieldname">
 y</td>
 <td class="fielddoc">
@@ -580,7 +580,7 @@ y</td>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w] )</td>
+          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w] )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -616,7 +616,7 @@ y</td>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w + 2] )</td>
+          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[4*(int)((x)/2) + 2*(y)*(img)-&gt;w + 2] )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -652,7 +652,7 @@ y</td>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[2*(x) + 1 + 2*(y)*(img)-&gt;w] )</td>
+          <td></td><td>&#160;&#160;&#160;( ((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)((img)-&gt;buf))[2*(x) + 1 + 2*(y)*(img)-&gt;w] )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -728,7 +728,7 @@ y</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>camera_id</em>&#160;</td>
         </tr>
         <tr>
@@ -757,7 +757,7 @@ y</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph.png" border="0" usemap="#pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph" id="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title="set_output_image_size" alt="" coords="147,56,317,83"/><area shape="rect" id="node5" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title="unwrap_LUT" alt="" coords="183,107,281,133"/><area shape="rect" id="node10" href="pano__unwrap_8c.html#ab8cfdd94ca198ffad976368529b78510" title="update_LUT" alt="" coords="183,157,281,184"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="414,5,509,32"/><area shape="rect" id="node4" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="406,56,517,83"/><area shape="rect" id="node6" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="365,107,557,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="605,107,763,133"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="811,107,972,133"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1020,107,1163,133"/></map>
+</map>
 </div>
 </p>
 
@@ -768,7 +768,7 @@ y</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph.png" border="0" usemap="#pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph" id="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="147,5,280,32"/></map>
+</map>
 </div>
 </p>
 
@@ -799,7 +799,7 @@ y</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph.png" border="0" usemap="#pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph" id="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="207,107,301,133"/><area shape="rect" id="node3" href="pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title="set_output_image_size" alt="" coords="369,56,540,83"/><area shape="rect" id="node5" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="629,5,739,32"/><area shape="rect" id="node12" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title="cv_add_to_device" alt="" coords="187,183,321,209"/><area shape="rect" id="node6" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title="unwrap_LUT" alt="" coords="405,157,504,184"/><area shape="rect" id="node11" href="pano__unwrap_8c.html#ab8cfdd94ca198ffad976368529b78510" title="update_LUT" alt="" coords="406,107,503,133"/><area shape="rect" id="node4" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="637,56,731,83"/><area shape="rect" id="node7" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="588,157,780,184"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="828,157,985,184"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="1033,157,1195,184"/><area shape="rect" id="node10" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1243,157,1385,184"/><area shape="rect" id="node13" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="387,208,522,235"/><area shape="rect" id="node14" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="619,208,749,235"/><area shape="rect" id="node15" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="869,259,944,285"/><area shape="rect" id="node19" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="843,208,970,235"/><area shape="rect" id="node16" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1050,259,1178,285"/><area shape="rect" id="node17" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1253,284,1375,311"/><area shape="rect" id="node18" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1274,233,1354,260"/></map>
+</map>
 </div>
 </p>
 
@@ -840,7 +840,7 @@ y</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_cgraph.png" border="0" usemap="#pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_cgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_cgraph" id="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_cgraph">
-<area shape="rect" id="node2" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="224,5,335,32"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="232,56,327,83"/></map>
+</map>
 </div>
 </p>
 
@@ -851,7 +851,7 @@ y</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph.png" border="0" usemap="#pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph" id="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="224,5,317,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="365,31,499,57"/></map>
+</map>
 </div>
 </p>
 
@@ -902,7 +902,7 @@ y</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_cgraph.png" border="0" usemap="#pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_cgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_cgraph" id="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="152,5,344,32"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="392,5,549,32"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="597,5,759,32"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="807,5,949,32"/></map>
+</map>
 </div>
 </p>
 
@@ -913,7 +913,7 @@ y</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph.png" border="0" usemap="#pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph" id="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="152,5,245,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="293,5,427,32"/></map>
+</map>
 </div>
 </p>
 
@@ -954,7 +954,7 @@ y</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph.png" border="0" usemap="#pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph" id="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="151,5,244,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="292,5,425,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1057,7 +1057,7 @@ y</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_051d73f15ec2effa2186b6ce7fd3cd5a.html">pano_unwrap</a></li><li class="navelem"><a class="el" href="pano__unwrap_8c.html">pano_unwrap.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

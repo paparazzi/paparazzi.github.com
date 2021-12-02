@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c.html','');});
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="met__module_8h_source.html">met_module.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="airspeed__otf_8h_source.html">airspeed_otf.h</a>&quot;</code><br />
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__otf_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2airspeed__otf_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2airspeed__otf_8c" id="sw_2airborne_2modules_2sensors_2airspeed__otf_8c">
-<area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="565,273,703,300"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="841,95,995,136"/><area shape="rect" id="node20" href="met__module_8h.html" title="Device independent serial meteo code. " alt="" coords="394,191,509,218"/><area shape="rect" id="node23" href="airspeed__otf_8h.html" title="airspeed_otf.h" alt="" coords="1539,273,1651,300"/><area shape="rect" id="node12" href="inttypes_8h.html" title="inttypes.h" alt="" coords="711,191,797,218"/><area shape="rect" id="node15" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1404,184,1557,225"/><area shape="rect" id="node17" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="821,191,1015,218"/><area shape="rect" id="node21" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="425,273,478,300"/></map>
+</map>
 </div>
 </div>
 <p><a href="airspeed__otf_8c_source.html">Go to the source code of this file.</a></p>
@@ -364,7 +364,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__otf_8c_a8e36db24cf5b93acf35d81dfceb7579b_cgraph.png" border="0" usemap="#airspeed__otf_8c_a8e36db24cf5b93acf35d81dfceb7579b_cgraph" alt=""/></div>
 <map name="airspeed__otf_8c_a8e36db24cf5b93acf35d81dfceb7579b_cgraph" id="airspeed__otf_8c_a8e36db24cf5b93acf35d81dfceb7579b_cgraph">
-<area shape="rect" id="node2" href="airspeed__otf_8c.html#a10616f1c2762b766f82daf5e37c5c10e" title="airspeed_otf_parse" alt="" coords="197,5,341,32"/></map>
+</map>
 </div>
 </p>
 
@@ -404,7 +404,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="airspeed__otf_8c_source.html#l00058">58</a> of file <a class="el" href="airspeed__otf_8c_source.html">airspeed_otf.c</a>.</p>
 
-<p>References <a class="el" href="airspeed__uADC_8c_source.html#l00059">altitude</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00061">checksum</a>, <a class="el" href="avoid__navigation_8c_source.html#l00055">counter</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00059">foo</a>, <a class="el" href="airspeed__otf_8c_source.html#l00051">OTF_END</a>, <a class="el" href="airspeed__otf_8c_source.html#l00050">OTF_LIMITER</a>, <a class="el" href="airspeed__otf_8c_source.html#l00049">OTF_START</a>, <a class="el" href="airspeed__otf_8c_source.html#l00042">OTF_UNINIT</a>, <a class="el" href="airspeed__otf_8c_source.html#l00046">OTF_WAIT_ALTITUDE</a>, <a class="el" href="airspeed__otf_8c_source.html#l00045">OTF_WAIT_ANGLES</a>, <a class="el" href="airspeed__otf_8c_source.html#l00047">OTF_WAIT_CHECKSUM</a>, <a class="el" href="airspeed__otf_8c_source.html#l00044">OTF_WAIT_COUNTER</a>, and <a class="el" href="airspeed__otf_8c_source.html#l00043">OTF_WAIT_START</a>.</p>
+<p>References <a class="el" href="airspeed__uADC_8c_source.html#l00059">altitude</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00061">checksum</a>, <a class="el" href="avoid__navigation_8c_source.html#l00055">counter</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="airspeed__otf_8c_source.html#l00051">OTF_END</a>, <a class="el" href="airspeed__otf_8c_source.html#l00050">OTF_LIMITER</a>, <a class="el" href="airspeed__otf_8c_source.html#l00049">OTF_START</a>, <a class="el" href="airspeed__otf_8c_source.html#l00042">OTF_UNINIT</a>, <a class="el" href="airspeed__otf_8c_source.html#l00046">OTF_WAIT_ALTITUDE</a>, <a class="el" href="airspeed__otf_8c_source.html#l00045">OTF_WAIT_ANGLES</a>, <a class="el" href="airspeed__otf_8c_source.html#l00047">OTF_WAIT_CHECKSUM</a>, <a class="el" href="airspeed__otf_8c_source.html#l00044">OTF_WAIT_COUNTER</a>, and <a class="el" href="airspeed__otf_8c_source.html#l00043">OTF_WAIT_START</a>.</p>
 
 <p>Referenced by <a class="el" href="airspeed__otf_8c_source.html#l00155">airspeed_otf_event()</a>.</p>
 
@@ -415,7 +415,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__otf_8c_a10616f1c2762b766f82daf5e37c5c10e_icgraph.png" border="0" usemap="#airspeed__otf_8c_a10616f1c2762b766f82daf5e37c5c10e_icgraph" alt=""/></div>
 <map name="airspeed__otf_8c_a10616f1c2762b766f82daf5e37c5c10e_icgraph" id="airspeed__otf_8c_a10616f1c2762b766f82daf5e37c5c10e_icgraph">
-<area shape="rect" id="node2" href="airspeed__otf_8h.html#a8e36db24cf5b93acf35d81dfceb7579b" title="airspeed_otf_event" alt="" coords="197,5,341,32"/></map>
+</map>
 </div>
 </p>
 
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__otf_8c.html">airspeed_otf.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

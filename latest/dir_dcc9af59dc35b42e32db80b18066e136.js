@@ -43,6 +43,8 @@ var dir_dcc9af59dc35b42e32db80b18066e136 =
     [ "temp_temod.h", "temp__temod_8h.html", "temp__temod_8h" ],
     [ "temp_tmp102.c", "temp__tmp102_8c.html", "temp__tmp102_8c" ],
     [ "temp_tmp102.h", "temp__tmp102_8h.html", "temp__tmp102_8h" ],
+    [ "wind_estimation_quadrotor.c", "wind__estimation__quadrotor_8c.html", "wind__estimation__quadrotor_8c" ],
+    [ "wind_estimation_quadrotor.h", "wind__estimation__quadrotor_8h.html", "wind__estimation__quadrotor_8h" ],
     [ "wind_estimator.c", "wind__estimator_8c.html", "wind__estimator_8c" ],
     [ "wind_estimator.h", "wind__estimator_8h.html", "wind__estimator_8h" ],
     [ "wind_gfi.c", "wind__gfi_8c.html", "wind__gfi_8c" ],

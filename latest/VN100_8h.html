@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('VN100_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="VN100_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2VN100_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2VN100_8hdep" id="sw_2airborne_2modules_2ins_2VN100_8hdep">
-<area shape="rect" id="node2" href="ins__vn100_8h.html" title="Interface for the VectorNav VN100 AHRS use the binary protocal on the SPI link. " alt="" coords="5,95,160,136"/><area shape="rect" id="node3" href="ins__vn100_8c.html" title="sw/airborne/modules\l/ins/ins_vn100.c" alt="" coords="5,184,160,225"/></map>
+</map>
 </div>
 </div>
 <p><a href="VN100_8h_source.html">Go to the source code of this file.</a></p>
@@ -390,9 +390,9 @@ Macros</h2></td></tr>
 <tr class="separator:a20216543d7700ff501f3f13e58ae6979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984dd640bd58d74ea6a6c1ffebb4f306"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VN100_8h.html#a984dd640bd58d74ea6a6c1ffebb4f306">VN100_Packet_SetaDOF</a>(_f)&#160;&#160;&#160;{ <a class="el" href="VN100_8h.html#a7adf9bbf872f88c269546c8f300d1ffc">VN100_CmdID_WriteRegister</a>, <a class="el" href="VN100_8h.html#ae774afc3a4a1fa04895c859d2d6c534a">VN100_REG_ADOF</a>, 0, 0, { _f } }</td></tr>
 <tr class="separator:a984dd640bd58d74ea6a6c1ffebb4f306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ded4f720b505992708b69973d220a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VN100_8h.html#a08ded4f720b505992708b69973d220a0">VN100_BytesOfWord</a>(_w)&#160;&#160;&#160;{ (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(_w &amp; 0xFF), (uint8_t)((_w &amp; (0xFF&lt;&lt;8))&gt;&gt;8), (uint8_t)((_w &amp; (0xFF&lt;&lt;16))&gt;&gt;16), (uint8_t)((_w &amp; (0xFF&lt;&lt;24))&gt;&gt;24) }</td></tr>
+<tr class="memitem:a08ded4f720b505992708b69973d220a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VN100_8h.html#a08ded4f720b505992708b69973d220a0">VN100_BytesOfWord</a>(_w)&#160;&#160;&#160;{ (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(_w &amp; 0xFF), (uint8_t)((_w &amp; (0xFF&lt;&lt;8))&gt;&gt;8), (uint8_t)((_w &amp; (0xFF&lt;&lt;16))&gt;&gt;16), (uint8_t)((_w &amp; (0xFF&lt;&lt;24))&gt;&gt;24) }</td></tr>
 <tr class="separator:a08ded4f720b505992708b69973d220a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaceff71c29258142d716504690f1773"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VN100_8h.html#acaceff71c29258142d716504690f1773">VN100_WordOfBytes</a>(_b)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(_b[3])&lt;&lt;24)|((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(_b[2])&lt;&lt;16)|((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[1])&lt;&lt;8)|(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[0]))</td></tr>
+<tr class="memitem:acaceff71c29258142d716504690f1773"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VN100_8h.html#acaceff71c29258142d716504690f1773">VN100_WordOfBytes</a>(_b)&#160;&#160;&#160;(((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(_b[3])&lt;&lt;24)|((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(_b[2])&lt;&lt;16)|((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[1])&lt;&lt;8)|(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[0]))</td></tr>
 <tr class="separator:acaceff71c29258142d716504690f1773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -416,7 +416,7 @@ Float</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="adbe313d9cb7774810f07231de6da2a90"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="adbe313d9cb7774810f07231de6da2a90"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 UInt</td>
 <td class="fielddoc">
@@ -443,12 +443,12 @@ UInt</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structVN100__Req__Packet__coll__graph.png" border="0" usemap="#VN100__Req__Packet_coll__map" alt="Collaboration graph"/></div>
 <map name="VN100__Req__Packet_coll__map" id="VN100__Req__Packet_coll__map">
-<area shape="rect" id="node2" href="VN100_8h.html#unionVN100__Param" title="VN100_Param" alt="" coords="21,5,134,32"/></map>
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a711dd5f0ef400684ad1cd641ae379d23"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a711dd5f0ef400684ad1cd641ae379d23"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 CmdID</td>
 <td class="fielddoc">
@@ -460,19 +460,19 @@ Data[<a class="el" href="VN100_8h.html#abcb1b6349c92dfa9dbae913ec30b9a19">VN100_
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="afc67a1c0741d1cf924678307e5f34972"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="afc67a1c0741d1cf924678307e5f34972"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 RegID</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9c21d48f2392db817e0820e204269970"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a9c21d48f2392db817e0820e204269970"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 ZeroByte1</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a1d1544c8b0ad8462030dbfc7e7280846"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a1d1544c8b0ad8462030dbfc7e7280846"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 ZeroByte2</td>
 <td class="fielddoc">
@@ -499,12 +499,12 @@ ZeroByte2</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structVN100__Res__Packet__coll__graph.png" border="0" usemap="#VN100__Res__Packet_coll__map" alt="Collaboration graph"/></div>
 <map name="VN100__Res__Packet_coll__map" id="VN100__Res__Packet_coll__map">
-<area shape="rect" id="node2" href="VN100_8h.html#unionVN100__Param" title="VN100_Param" alt="" coords="20,5,133,32"/></map>
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a222edba75feead594b31bec79da82090"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a222edba75feead594b31bec79da82090"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 CmdID</td>
 <td class="fielddoc">
@@ -516,19 +516,19 @@ Data[<a class="el" href="VN100_8h.html#abcb1b6349c92dfa9dbae913ec30b9a19">VN100_
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a42be581f2cfc78b3e93e0f0a7f2df767"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a42be581f2cfc78b3e93e0f0a7f2df767"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 ErrID</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a11355ffb4b3a9f416f298f8bb14db232"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a11355ffb4b3a9f416f298f8bb14db232"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 RegID</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9f78d8190e6812fb9cded7c2672eb13e"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a9f78d8190e6812fb9cded7c2672eb13e"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 ZeroByte</td>
 <td class="fielddoc">
@@ -1135,7 +1135,7 @@ ZeroByte</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_w</td><td>)</td>
-          <td>&#160;&#160;&#160;{ (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(_w &amp; 0xFF), (uint8_t)((_w &amp; (0xFF&lt;&lt;8))&gt;&gt;8), (uint8_t)((_w &amp; (0xFF&lt;&lt;16))&gt;&gt;16), (uint8_t)((_w &amp; (0xFF&lt;&lt;24))&gt;&gt;24) }</td>
+          <td>&#160;&#160;&#160;{ (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(_w &amp; 0xFF), (uint8_t)((_w &amp; (0xFF&lt;&lt;8))&gt;&gt;8), (uint8_t)((_w &amp; (0xFF&lt;&lt;16))&gt;&gt;16), (uint8_t)((_w &amp; (0xFF&lt;&lt;24))&gt;&gt;24) }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2329,7 +2329,7 @@ ZeroByte</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_b</td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(_b[3])&lt;&lt;24)|((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(_b[2])&lt;&lt;16)|((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[1])&lt;&lt;8)|(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[0]))</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(_b[3])&lt;&lt;24)|((<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(_b[2])&lt;&lt;16)|((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[1])&lt;&lt;8)|(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(_b[0]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2344,7 +2344,7 @@ ZeroByte</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="VN100_8h.html">VN100.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

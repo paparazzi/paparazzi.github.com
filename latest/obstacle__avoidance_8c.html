@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,11 +120,11 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c.html','');});
 <code>#include &lt;sys/fcntl.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__int_8h_source.html">math/pprz_geodetic_int.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stereocam_8h_source.html">modules/stereocam/stereocam.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="guidance__OA_8h_source.html">modules/obstacle_avoidance/guidance_OA.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="obstacle__avoidance_8h_source.html">modules/obstacle_avoidance/obstacle_avoidance.h</a>&quot;</code><br />
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2obstacle__avoidance_2obstacle__avoidance_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2obstacle__avoidance_2obstacle__avoidance_8c" id="sw_2airborne_2modules_2obstacle__avoidance_2obstacle__avoidance_8c">
-<area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="526,474,611,501"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="2238,385,2305,411"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="2464,556,2655,583"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="2275,467,2425,508"/><area shape="rect" id="node21" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="412,288,565,329"/><area shape="rect" id="node34" href="stereocam_8h.html" title="interface to the TU Delft serial stereocam " alt="" coords="1726,474,1961,501"/><area shape="rect" id="node35" href="guidance__OA_8h.html" title="Guidance for the obstacle avoidance methods. " alt="" coords="1956,109,2163,151"/><area shape="rect" id="node41" href="obstacle__avoidance_8h.html" title="Obstacle avoidance methods. " alt="" coords="2928,109,3135,151"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1959,556,2138,583"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="2449,467,2600,508"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="2087,467,2251,508"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="2597,631,2751,657"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1843,631,1993,657"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="2264,556,2388,583"/><area shape="rect" id="node22" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="983,556,1122,583"/><area shape="rect" id="node26" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="819,377,972,419"/><area shape="rect" id="node30" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="996,467,1149,508"/><area shape="rect" id="node32" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1356,474,1549,501"/><area shape="rect" id="node36" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="1679,199,1866,240"/><area shape="rect" id="node40" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="1839,288,2026,329"/></map>
+</map>
 </div>
 </div>
 <p><a href="obstacle__avoidance_8c_source.html">Go to the source code of this file.</a></p>
@@ -157,11 +157,11 @@ Functions</h2></td></tr>
 <tr class="separator:ad2b461e9e9044364a28a61cfadcacdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb03a88d0d45166c5c9c43c02db733bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#adb03a88d0d45166c5c9c43c02db733bc">serial_start</a> (void)</td></tr>
 <tr class="separator:adb03a88d0d45166c5c9c43c02db733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a00e51657aca7b745bdebaa2df636f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a6a00e51657aca7b745bdebaa2df636f1">setAnglesMeasurements</a> (float *anglesMeasurements, float *centersensorRad, float *fieldOfViewRad, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *size_matrix_local)</td></tr>
+<tr class="memitem:a6a00e51657aca7b745bdebaa2df636f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a6a00e51657aca7b745bdebaa2df636f1">setAnglesMeasurements</a> (float *anglesMeasurements, float *centersensorRad, float *fieldOfViewRad, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *size_matrix_local)</td></tr>
 <tr class="separator:a6a00e51657aca7b745bdebaa2df636f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510b29d4d94a1e5cbe6aa87b57386f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a510b29d4d94a1e5cbe6aa87b57386f93">serial_update</a> (void)</td></tr>
 <tr class="separator:a510b29d4d94a1e5cbe6aa87b57386f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f82978f324957d5b038267b1ac46ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a53f82978f324957d5b038267b1ac46ca">matrix_2_pingpong</a> (float *distancesMeters, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *size_matrix_local, float *distances_hor_local)</td></tr>
+<tr class="memitem:a53f82978f324957d5b038267b1ac46ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a53f82978f324957d5b038267b1ac46ca">matrix_2_pingpong</a> (float *distancesMeters, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *size_matrix_local, float *distances_hor_local)</td></tr>
 <tr class="separator:a53f82978f324957d5b038267b1ac46ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156dd5c713412e468c2ba8ff9c528bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a156dd5c713412e468c2ba8ff9c528bc4">CN_matrix_Kalman_filter</a> (void)</td></tr>
 <tr class="separator:a156dd5c713412e468c2ba8ff9c528bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,13 +184,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ace5a80bc67333fd49bd33c64bf724e39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ace5a80bc67333fd49bd33c64bf724e39">size_matrix</a> [] = {<a class="el" href="obstacle__avoidance_8c.html#a65b9955be1147ea419bb9f4c0e3021c0">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c.html#ad3cf05ec4b8dab2014f1d1a5f1400a5f">AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</a>, <a class="el" href="obstacle__avoidance_8c.html#a6fe57a4456543113123b011fcf97c76d">AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</a>}</td></tr>
+<tr class="memitem:ace5a80bc67333fd49bd33c64bf724e39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ace5a80bc67333fd49bd33c64bf724e39">size_matrix</a> [] = {<a class="el" href="obstacle__avoidance_8c.html#a65b9955be1147ea419bb9f4c0e3021c0">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c.html#ad3cf05ec4b8dab2014f1d1a5f1400a5f">AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</a>, <a class="el" href="obstacle__avoidance_8c.html#a6fe57a4456543113123b011fcf97c76d">AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</a>}</td></tr>
 <tr class="separator:ace5a80bc67333fd49bd33c64bf724e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a28a09e3430fbe26927a800e3fd6cb9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a0a28a09e3430fbe26927a800e3fd6cb9">stereo_fow</a> [2] = {1.0018, 0.7767}</td></tr>
 <tr class="separator:a0a28a09e3430fbe26927a800e3fd6cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7cd7da20697c8f45a444a2441d4f4d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#af7cd7da20697c8f45a444a2441d4f4d1">angle_hor_board</a> [] = {0, 1.0472, 2.0944, 3.1416, -2.0944, -1.0472}</td></tr>
 <tr class="separator:af7cd7da20697c8f45a444a2441d4f4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac855c2ab732c6413721c204efb34b4b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ac855c2ab732c6413721c204efb34b4b0">focal</a> = 118 * 6</td></tr>
+<tr class="memitem:ac855c2ab732c6413721c204efb34b4b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ac855c2ab732c6413721c204efb34b4b0">focal</a> = 118 * 6</td></tr>
 <tr class="separator:ac855c2ab732c6413721c204efb34b4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d9f165b1e496d7ee3acfc4dffe61f5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a81d9f165b1e496d7ee3acfc4dffe61f5">baseline</a> = 60</td></tr>
 <tr class="separator:a81d9f165b1e496d7ee3acfc4dffe61f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,7 +204,7 @@ Variables</h2></td></tr>
 <tr class="separator:aeaa1545f2bd5eb0a0bfdea9e1419be01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae86a3e0897c702be857c4fe8ece3e237"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ae86a3e0897c702be857c4fe8ece3e237">distances_hor</a> [<a class="el" href="obstacle__avoidance_8c.html#a8bd40be701295c212592fca0f71dce24">AVOIDANCES_DISTANCES_HOR_COUNT</a>]</td></tr>
 <tr class="separator:ae86a3e0897c702be857c4fe8ece3e237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adabdd79b875004ed20061c168bc97500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#adabdd79b875004ed20061c168bc97500">READimageBuffer_old</a></td></tr>
+<tr class="memitem:adabdd79b875004ed20061c168bc97500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#adabdd79b875004ed20061c168bc97500">READimageBuffer_old</a></td></tr>
 <tr class="separator:adabdd79b875004ed20061c168bc97500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21413e24a9fb5a67dc927272e9a16280"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a21413e24a9fb5a67dc927272e9a16280">heading_goal_f</a> = 0</td></tr>
 <tr class="separator:a21413e24a9fb5a67dc927272e9a16280"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,7 +256,7 @@ Variables</h2></td></tr>
 <tr class="separator:a4f5a8add4fb1265417671cc1ea68a3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae300e554cb529ecf303fa34a382f3428"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ae300e554cb529ecf303fa34a382f3428">Dist_offset</a> = 0</td></tr>
 <tr class="separator:ae300e554cb529ecf303fa34a382f3428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735f47bf661d1595cd6e246c07ba9351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a735f47bf661d1595cd6e246c07ba9351">dis_treshold</a> = 2</td></tr>
+<tr class="memitem:a735f47bf661d1595cd6e246c07ba9351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a735f47bf661d1595cd6e246c07ba9351">dis_treshold</a> = 2</td></tr>
 <tr class="separator:a735f47bf661d1595cd6e246c07ba9351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab879e80e449f7ae2c9077c72c7343636"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ab879e80e449f7ae2c9077c72c7343636">Repulsionforce_Used</a></td></tr>
 <tr class="separator:ab879e80e449f7ae2c9077c72c7343636"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,19 +286,19 @@ Variables</h2></td></tr>
 <tr class="separator:a2dceb63003a97fa431d06d1d07edc449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0591f0882f895e9d83496c77e5c5055"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ab0591f0882f895e9d83496c77e5c5055">vmin</a> = 0.2</td></tr>
 <tr class="separator:ab0591f0882f895e9d83496c77e5c5055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f896916dceb66a5f5e290571ea7bcd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a5f896916dceb66a5f5e290571ea7bcd9">point_index</a> = 0</td></tr>
+<tr class="memitem:a5f896916dceb66a5f5e290571ea7bcd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a5f896916dceb66a5f5e290571ea7bcd9">point_index</a> = 0</td></tr>
 <tr class="separator:a5f896916dceb66a5f5e290571ea7bcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6b9d90100705fc2fc95cff9121dd65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#aac6b9d90100705fc2fc95cff9121dd65">set_bias</a> = 0</td></tr>
+<tr class="memitem:aac6b9d90100705fc2fc95cff9121dd65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#aac6b9d90100705fc2fc95cff9121dd65">set_bias</a> = 0</td></tr>
 <tr class="separator:aac6b9d90100705fc2fc95cff9121dd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1eeda0c19608ea45fbaac12da783375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ab1eeda0c19608ea45fbaac12da783375">obstacle_flag</a> = 0</td></tr>
+<tr class="memitem:ab1eeda0c19608ea45fbaac12da783375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ab1eeda0c19608ea45fbaac12da783375">obstacle_flag</a> = 0</td></tr>
 <tr class="separator:ab1eeda0c19608ea45fbaac12da783375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6116d5235e13e059e591879c46d7174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a> = 0</td></tr>
+<tr class="memitem:ac6116d5235e13e059e591879c46d7174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a> = 0</td></tr>
 <tr class="separator:ac6116d5235e13e059e591879c46d7174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4144134b2b8c085bfcce8a476c589fef"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a4144134b2b8c085bfcce8a476c589fef">waypoint_rot</a> = 0</td></tr>
 <tr class="separator:a4144134b2b8c085bfcce8a476c589fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb09d8e58d79b068dec1f4753614135d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#adb09d8e58d79b068dec1f4753614135d">new_heading_old</a></td></tr>
 <tr class="separator:adb09d8e58d79b068dec1f4753614135d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d912c2313bd615c412ef423cfdc4403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a1d912c2313bd615c412ef423cfdc4403">escape_flag</a> = 0</td></tr>
+<tr class="memitem:a1d912c2313bd615c412ef423cfdc4403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a1d912c2313bd615c412ef423cfdc4403">escape_flag</a> = 0</td></tr>
 <tr class="separator:a1d912c2313bd615c412ef423cfdc4403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98201fef6d97a7d07e7ec254170e182d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a98201fef6d97a7d07e7ec254170e182d">v_min</a> = 0.3</td></tr>
 <tr class="separator:a98201fef6d97a7d07e7ec254170e182d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +308,7 @@ Variables</h2></td></tr>
 <tr class="separator:a90c32c96d7f78e4ee0e91d398fd301dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d52eab9069096966fe17bbf042619a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a6d52eab9069096966fe17bbf042619a8">V_hys_high</a> = 10</td></tr>
 <tr class="separator:a6d52eab9069096966fe17bbf042619a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8656f47ecae049bd6f79b6d3e642ef7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a8656f47ecae049bd6f79b6d3e642ef7b">hysteris_flag</a></td></tr>
+<tr class="memitem:a8656f47ecae049bd6f79b6d3e642ef7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#a8656f47ecae049bd6f79b6d3e642ef7b">hysteris_flag</a></td></tr>
 <tr class="separator:a8656f47ecae049bd6f79b6d3e642ef7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adabd864dd51e52c2eea913cc683bc5fb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="obstacle__avoidance_8c.html#adabd864dd51e52c2eea913cc683bc5fb">Attractforce_goal_send</a></td></tr>
 <tr class="separator:adabd864dd51e52c2eea913cc683bc5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +412,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_cgraph" id="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="204,147,403,173"/><area shape="rect" id="node7" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="221,239,386,265"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="453,65,617,92"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="668,56,836,83"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="884,5,1037,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="885,56,1036,83"/><area shape="rect" id="node8" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="451,259,620,285"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="886,224,1035,251"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="683,375,821,401"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="684,269,820,296"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="703,320,801,347"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="703,165,801,192"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1085,224,1235,251"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="891,376,1030,403"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1086,376,1234,403"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="911,275,1011,301"/><area shape="rect" id="node17" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="909,325,1013,352"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="887,107,1034,133"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="893,158,1029,199"/></map>
+</map>
 </div>
 </p>
 
@@ -423,7 +423,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_icgraph" id="obstacle__avoidance_8c_afb4f90a66f93fdb70da178189b76b6a2_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="204,5,312,32"/></map>
+</map>
 </div>
 </p>
 
@@ -456,7 +456,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_cgraph" id="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="203,31,401,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="449,31,613,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="661,31,829,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="877,5,1031,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="879,56,1029,83"/></map>
+</map>
 </div>
 </p>
 
@@ -467,7 +467,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_icgraph" id="obstacle__avoidance_8c_acd83f8e2b7ef14ad389992c9a4ac1c5e_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="203,5,311,32"/></map>
+</map>
 </div>
 </p>
 
@@ -540,7 +540,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_cgraph" id="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="237,5,394,32"/><area shape="rect" id="node4" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="216,56,415,83"/><area shape="rect" id="node3" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="464,5,625,32"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="463,56,627,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="675,56,843,83"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="891,31,1044,57"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="892,81,1043,108"/></map>
+</map>
 </div>
 </p>
 
@@ -551,7 +551,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_icgraph" id="obstacle__avoidance_8c_a43e6d081b68544c534a4c9d9e621ccad_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="216,5,324,32"/></map>
+</map>
 </div>
 </p>
 
@@ -584,7 +584,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_cgraph" id="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="233,5,390,32"/><area shape="rect" id="node4" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="212,56,411,83"/><area shape="rect" id="node3" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="460,5,621,32"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="459,56,623,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="671,56,839,83"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="887,31,1040,57"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="888,81,1039,108"/></map>
+</map>
 </div>
 </p>
 
@@ -595,7 +595,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_icgraph" id="obstacle__avoidance_8c_a310adf7eac35923617e12182c1c75fea_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="212,5,320,32"/></map>
+</map>
 </div>
 </p>
 
@@ -628,7 +628,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_cgraph" id="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="249,31,448,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="496,31,660,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="708,31,876,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="924,5,1077,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="925,56,1076,83"/></map>
+</map>
 </div>
 </p>
 
@@ -639,7 +639,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_icgraph" id="obstacle__avoidance_8c_aedea9242ba41a4e570586e68755af4ca_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="249,5,357,32"/></map>
+</map>
 </div>
 </p>
 
@@ -672,7 +672,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_cgraph" id="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="196,31,395,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="443,31,607,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="655,31,823,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="871,5,1024,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="872,56,1023,83"/></map>
+</map>
 </div>
 </p>
 
@@ -683,7 +683,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_icgraph" id="obstacle__avoidance_8c_a53290242178aea1256bfde6beba0d989_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="196,5,304,32"/></map>
+</map>
 </div>
 </p>
 
@@ -702,7 +702,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>size_matrix_local</em>, </td>
         </tr>
         <tr>
@@ -732,7 +732,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a53f82978f324957d5b038267b1ac46ca_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_a53f82978f324957d5b038267b1ac46ca_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a53f82978f324957d5b038267b1ac46ca_icgraph" id="obstacle__avoidance_8c_a53f82978f324957d5b038267b1ac46ca_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="197,5,305,32"/></map>
+</map>
 </div>
 </p>
 
@@ -799,7 +799,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_ace8a4e1603e46c5aa253e1a4ccaf2a92_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_ace8a4e1603e46c5aa253e1a4ccaf2a92_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_ace8a4e1603e46c5aa253e1a4ccaf2a92_icgraph" id="obstacle__avoidance_8c_ace8a4e1603e46c5aa253e1a4ccaf2a92_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="173,5,281,32"/></map>
+</map>
 </div>
 </p>
 
@@ -859,7 +859,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="obstacle__avoidance_8c_source.html#l00176">176</a> of file <a class="el" href="obstacle__avoidance_8c_source.html">obstacle_avoidance.c</a>.</p>
 
-<p>References <a class="el" href="obstacle__avoidance_8c_source.html#l00059">angle_hor_board</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00045">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00066">dist_treshold</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00067">distances_hor</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">LOGICBASED</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00237">matrix_2_pingpong()</a>, <a class="el" href="guidance__OA_8c_source.html#l00096">OA_method_flag</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">PINGPONG</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">POT_HEADING</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">POT_VEL</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00064">reference_pitch</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00065">reference_roll</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">SAFETYZONE</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00164">setAnglesMeasurements()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00057">size_matrix</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00058">stereo_fow</a>.</p>
+<p>References <a class="el" href="obstacle__avoidance_8c_source.html#l00059">angle_hor_board</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00045">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00066">dist_treshold</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00067">distances_hor</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">LOGICBASED</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00237">matrix_2_pingpong()</a>, <a class="el" href="guidance__OA_8c_source.html#l00096">OA_method_flag</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">PINGPONG</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">POT_HEADING</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">POT_VEL</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00064">reference_pitch</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00065">reference_roll</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">SAFETYZONE</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00164">setAnglesMeasurements()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00057">size_matrix</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00058">stereo_fow</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -868,7 +868,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a510b29d4d94a1e5cbe6aa87b57386f93_cgraph.png" border="0" usemap="#obstacle__avoidance_8c_a510b29d4d94a1e5cbe6aa87b57386f93_cgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a510b29d4d94a1e5cbe6aa87b57386f93_cgraph" id="obstacle__avoidance_8c_a510b29d4d94a1e5cbe6aa87b57386f93_cgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title="CN_calculate_target" alt="" coords="184,161,335,188"/><area shape="rect" id="node22" href="obstacle__avoidance_8c.html#acd83f8e2b7ef14ad389992c9a4ac1c5e" title="CN_escape_velocity" alt="" coords="185,212,334,239"/><area shape="rect" id="node23" href="obstacle__avoidance_8c.html#a43e6d081b68544c534a4c9d9e621ccad" title="CN_potential_heading" alt="" coords="178,415,341,441"/><area shape="rect" id="node26" href="obstacle__avoidance_8c.html#a310adf7eac35923617e12182c1c75fea" title="CN_potential_velocity" alt="" coords="180,364,339,391"/><area shape="rect" id="node27" href="obstacle__avoidance_8c.html#aedea9242ba41a4e570586e68755af4ca" title="CN_vector_escape_velocity" alt="" coords="161,263,357,289"/><area shape="rect" id="node28" href="obstacle__avoidance_8c.html#a53290242178aea1256bfde6beba0d989" title="CN_vector_velocity" alt="" coords="188,313,331,340"/><area shape="rect" id="node29" href="obstacle__avoidance_8c.html#a53f82978f324957d5b038267b1ac46ca" title="matrix_2_pingpong" alt="" coords="187,465,331,492"/><area shape="rect" id="node30" href="obstacle__avoidance_8c.html#ace8a4e1603e46c5aa253e1a4ccaf2a92" title="pingpong_euler" alt="" coords="199,516,319,543"/><area shape="rect" id="node31" href="obstacle__avoidance_8c.html#a6a00e51657aca7b745bdebaa2df636f1" title="setAnglesMeasurements" alt="" coords="169,567,350,593"/><area shape="rect" id="node3" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="405,313,604,340"/><area shape="rect" id="node8" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="422,145,587,172"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="655,321,819,348"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="869,325,1037,352"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1085,325,1239,352"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1087,376,1237,403"/><area shape="rect" id="node9" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="652,115,821,141"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1087,157,1237,184"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="884,8,1023,35"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="885,111,1021,137"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="904,60,1003,87"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="904,216,1003,243"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1287,157,1436,184"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1093,5,1231,32"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1287,5,1435,32"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1112,107,1212,133"/><area shape="rect" id="node18" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1110,56,1214,83"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1089,275,1235,301"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1094,209,1230,250"/><area shape="rect" id="node24" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="426,393,583,420"/><area shape="rect" id="node25" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="656,393,817,420"/></map>
+</map>
 </div>
 </p>
 
@@ -899,7 +899,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>size_matrix_local</em>&#160;</td>
         </tr>
         <tr>
@@ -921,7 +921,7 @@ Variables</h2></td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="obstacle__avoidance_8c_a6a00e51657aca7b745bdebaa2df636f1_icgraph.png" border="0" usemap="#obstacle__avoidance_8c_a6a00e51657aca7b745bdebaa2df636f1_icgraph" alt=""/></div>
 <map name="obstacle__avoidance_8c_a6a00e51657aca7b745bdebaa2df636f1_icgraph" id="obstacle__avoidance_8c_a6a00e51657aca7b745bdebaa2df636f1_icgraph">
-<area shape="rect" id="node2" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93" title="serial_update" alt="" coords="235,5,343,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1167,7 +1167,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> direction = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> direction = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1183,7 +1183,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> dis_treshold = 2</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> dis_treshold = 2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1293,7 +1293,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> escape_flag = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> escape_flag = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1355,7 +1355,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> focal = 118 * 6</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> focal = 118 * 6</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1419,7 +1419,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> hysteris_flag</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> hysteris_flag</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1559,7 +1559,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> obstacle_flag = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> obstacle_flag = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1591,7 +1591,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> point_index = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> point_index = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1653,7 +1653,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* READimageBuffer_old</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* READimageBuffer_old</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1775,7 +1775,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> set_bias = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> set_bias = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1791,7 +1791,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size_matrix[] = {<a class="el" href="obstacle__avoidance_8c.html#a65b9955be1147ea419bb9f4c0e3021c0">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c.html#ad3cf05ec4b8dab2014f1d1a5f1400a5f">AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</a>, <a class="el" href="obstacle__avoidance_8c.html#a6fe57a4456543113123b011fcf97c76d">AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</a>}</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size_matrix[] = {<a class="el" href="obstacle__avoidance_8c.html#a65b9955be1147ea419bb9f4c0e3021c0">AVOIDANCE_AMOUNT_OF_BOARDS</a>, <a class="el" href="obstacle__avoidance_8c.html#ad3cf05ec4b8dab2014f1d1a5f1400a5f">AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</a>, <a class="el" href="obstacle__avoidance_8c.html#a6fe57a4456543113123b011fcf97c76d">AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1830,7 +1830,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="obstacle__avoidance_8c_source.html#l00078">78</a> of file <a class="el" href="obstacle__avoidance_8c_source.html">obstacle_avoidance.c</a>.</p>
 
-<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00032">lsm303d_spi_init()</a>, <a class="el" href="mavlink_8c_source.html#l00222">mavlink_common_message_handler()</a>, <a class="el" href="nav_8c_source.html#l00604">nav_eight()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00611">nav_get_speed_sp_from_go()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00525">nav_get_speed_sp_from_line()</a>, and <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00032">lsm303d_spi_init()</a>, <a class="el" href="mavlink_8c_source.html#l00222">mavlink_common_message_handler()</a>, <a class="el" href="nav_8c_source.html#l00604">nav_eight()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00672">nav_get_speed_sp_from_go()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">nav_get_speed_sp_from_line()</a>, and <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -1952,7 +1952,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_e1bb5e76ffaaafe6f13f5c4932daceba.html">obstacle_avoidance</a></li><li class="navelem"><a class="el" href="obstacle__avoidance_8c.html">obstacle_avoidance.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('nav__heli__spinup_8c_source.html','');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">   30</a></span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="nav__heli__spinup_8h.html#structnav__heli__spinup__t">nav_heli_spinup_t</a> <a class="code" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">nav_heli_spinup</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="nav__heli__spinup_8h.html#a4c97ec71a58c162894d6254593ce433f">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="nav__heli__spinup_8c.html#a4c97ec71a58c162894d6254593ce433f">nav_heli_spinup_setup</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="nav__heli__spinup_8h.html#a99837778350c7930ea8dab2b430759db">duration</a>, <span class="keywordtype">float</span> <a class="code" href="nav__heli__spinup_8h.html#adfa3888f766723c0aa61b6b9d177042f">throttle</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="nav__heli__spinup_8h.html#a4c97ec71a58c162894d6254593ce433f">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="nav__heli__spinup_8c.html#a4c97ec71a58c162894d6254593ce433f">nav_heli_spinup_setup</a>(<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="nav__heli__spinup_8h.html#a99837778350c7930ea8dab2b430759db">duration</a>, <span class="keywordtype">float</span> <a class="code" href="nav__heli__spinup_8h.html#adfa3888f766723c0aa61b6b9d177042f">throttle</a>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">nav_heli_spinup</a>.<a class="code" href="nav__heli__spinup_8h.html#a99837778350c7930ea8dab2b430759db">duration</a> = (duration &gt; 0) ? duration : 1;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">nav_heli_spinup</a>.<a class="code" href="nav__heli__spinup_8h.html#adfa3888f766723c0aa61b6b9d177042f">throttle</a> = throttle * <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>;</div>
@@ -161,7 +161,6 @@ $(document).ready(function(){initNavTree('nav__heli__spinup_8c_source.html','');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="rotorcraft_2navigation_8c.html#a6f265609aee15b9f0c1861cba83f6ef7">nav_throttle</a> = <a class="code" href="common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0">stage_time</a> * <a class="code" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">nav_heli_spinup</a>.<a class="code" href="nav__heli__spinup_8h.html#adfa3888f766723c0aa61b6b9d177042f">throttle</a> / <a class="code" href="nav__heli__spinup_8c.html#a4e19fba78e96813c7833aca3d58b9727">nav_heli_spinup</a>.<a class="code" href="nav__heli__spinup_8h.html#a99837778350c7930ea8dab2b430759db">duration</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="rotorcraft_2navigation_8c_html_a4897b70305002dc8f7a19dbec3e17500"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a4897b70305002dc8f7a19dbec3e17500">nav_cmd_pitch</a></div><div class="ttdeci">int32_t nav_cmd_pitch</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00109">navigation.c:109</a></div></div>
 <div class="ttc" id="nav_8c_html_ad2a5195a657a7961bfb54e3c2da48a21"><div class="ttname"><a href="nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">horizontal_mode</a></div><div class="ttdeci">uint8_t horizontal_mode</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00071">nav.c:71</a></div></div>
 <div class="ttc" id="rotorcraft_2navigation_8c_html_ad06d96f7680cec95b9879067bd97c7b8"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#ad06d96f7680cec95b9879067bd97c7b8">nav_cmd_roll</a></div><div class="ttdeci">int32_t nav_cmd_roll</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00109">navigation.c:109</a></div></div>
@@ -181,13 +180,14 @@ $(document).ready(function(){initNavTree('nav__heli__spinup_8c_source.html','');
 <div class="ttc" id="sim__ap_8c_html_af752145e6cd167ae0146e1a957f2e9e3"><div class="ttname"><a href="sim__ap_8c.html#af752145e6cd167ae0146e1a957f2e9e3">vertical_mode</a></div><div class="ttdeci">uint8_t vertical_mode</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00035">sim_ap.c:35</a></div></div>
 <div class="ttc" id="rotorcraft_2navigation_8h_html_acd4ac1c69b7ba0c736108439491f5647"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#acd4ac1c69b7ba0c736108439491f5647">VERTICAL_MODE_MANUAL</a></div><div class="ttdeci">#define VERTICAL_MODE_MANUAL</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8h_source.html#l00073">navigation.h:73</a></div></div>
 <div class="ttc" id="paparazzi_8h_html"><div class="ttname"><a href="paparazzi_8h.html">paparazzi.h</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__heli__spinup_8c.html">nav_heli_spinup.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

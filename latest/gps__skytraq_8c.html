@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/gps/gps_skytraq.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/gps/gps_skytraq.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,9 +113,9 @@ $(document).ready(function(){initNavTree('gps__skytraq_8c.html','');});
 <div class="title">gps_skytraq.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps__skytraq_8h_source.html">subsystems/gps/gps_skytraq.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="gps_8h_source.html">modules/gps/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps__skytraq_8h_source.html">modules/gps/gps_skytraq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/pprzlink_device.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -123,9 +123,9 @@ $(document).ready(function(){initNavTree('gps__skytraq_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__skytraq_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__skytraq_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2gps_2gps__skytraq_8c" id="sw_2airborne_2subsystems_2gps_2gps__skytraq_8c">
-<area shape="rect" id="node2" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="941,102,1079,129"/><area shape="rect" id="node20" href="gps__skytraq_8h.html" title="subsystems/gps/gps\l_skytraq.h" alt="" coords="1485,95,1639,136"/><area shape="rect" id="node24" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1715,102,1849,129"/><area shape="rect" id="node26" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1877,102,1930,129"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="619,184,769,225"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="404,184,555,225"/><area shape="rect" id="node16" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="925,273,1095,300"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="479,273,603,300"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="679,273,819,300"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="265,355,419,382"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="560,355,711,382"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="86,273,238,300"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1114,355,1199,382"/><area shape="rect" id="node21" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1493,191,1631,218"/></map>
+<div class="center"><img src="gps__skytraq_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps_2gps__skytraq_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2gps_2gps__skytraq_8c" id="sw_2airborne_2modules_2gps_2gps__skytraq_8c">
+</map>
 </div>
 </div>
 <p><a href="gps__skytraq_8c_source.html">Go to the source code of this file.</a></p>
@@ -166,43 +166,43 @@ Macros</h2></td></tr>
 <tr class="separator:ae333bafff036b3511790a916b93dd728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965e7430c8f11d32eb1c529af10704da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a965e7430c8f11d32eb1c529af10704da">SKYTRAQ_SYNC4</a>&#160;&#160;&#160;0x0A</td></tr>
 <tr class="separator:a965e7430c8f11d32eb1c529af10704da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f833e4dcabcbe607f7ac71e8aad1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a87f833e4dcabcbe607f7ac71e8aad1c1">SKYTRAQ_NAVIGATION_DATA_FixMode</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+2-2))</td></tr>
+<tr class="memitem:a87f833e4dcabcbe607f7ac71e8aad1c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a87f833e4dcabcbe607f7ac71e8aad1c1">SKYTRAQ_NAVIGATION_DATA_FixMode</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+2-2))</td></tr>
 <tr class="separator:a87f833e4dcabcbe607f7ac71e8aad1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8765aea2a2d0fb22e8b46406e05aaf37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8765aea2a2d0fb22e8b46406e05aaf37">SKYTRAQ_NAVIGATION_DATA_NumSV</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+3-2))</td></tr>
+<tr class="memitem:a8765aea2a2d0fb22e8b46406e05aaf37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8765aea2a2d0fb22e8b46406e05aaf37">SKYTRAQ_NAVIGATION_DATA_NumSV</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+3-2))</td></tr>
 <tr class="separator:a8765aea2a2d0fb22e8b46406e05aaf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a207a3c9d987eb3e18c7f193ad1ea86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8a207a3c9d987eb3e18c7f193ad1ea86">SKYTRAQ_NAVIGATION_DATA_WEEK</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[4-2])</td></tr>
+<tr class="memitem:a8a207a3c9d987eb3e18c7f193ad1ea86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8a207a3c9d987eb3e18c7f193ad1ea86">SKYTRAQ_NAVIGATION_DATA_WEEK</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[4-2])</td></tr>
 <tr class="separator:a8a207a3c9d987eb3e18c7f193ad1ea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb532bbfceba25a59c7d40e1f82b783"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a1cb532bbfceba25a59c7d40e1f82b783">SKYTRAQ_NAVIGATION_DATA_TOW</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[6-2])</td></tr>
+<tr class="memitem:a1cb532bbfceba25a59c7d40e1f82b783"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a1cb532bbfceba25a59c7d40e1f82b783">SKYTRAQ_NAVIGATION_DATA_TOW</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[6-2])</td></tr>
 <tr class="separator:a1cb532bbfceba25a59c7d40e1f82b783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fa64de089c8aacac5926d52199e4c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a71fa64de089c8aacac5926d52199e4c0">SKYTRAQ_NAVIGATION_DATA_LAT</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*( <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>*)&amp;_payload[10-2])</td></tr>
+<tr class="memitem:a71fa64de089c8aacac5926d52199e4c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a71fa64de089c8aacac5926d52199e4c0">SKYTRAQ_NAVIGATION_DATA_LAT</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*( <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>*)&amp;_payload[10-2])</td></tr>
 <tr class="separator:a71fa64de089c8aacac5926d52199e4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa47477f1dfc98a283d9a7e0159718b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#afa47477f1dfc98a283d9a7e0159718b9">SKYTRAQ_NAVIGATION_DATA_LON</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*( <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>*)&amp;_payload[14-2])</td></tr>
+<tr class="memitem:afa47477f1dfc98a283d9a7e0159718b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#afa47477f1dfc98a283d9a7e0159718b9">SKYTRAQ_NAVIGATION_DATA_LON</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*( <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>*)&amp;_payload[14-2])</td></tr>
 <tr class="separator:afa47477f1dfc98a283d9a7e0159718b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46eb74b862f74d95426ab83dc7652704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a46eb74b862f74d95426ab83dc7652704">SKYTRAQ_NAVIGATION_DATA_AEL</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[18-2])</td></tr>
+<tr class="memitem:a46eb74b862f74d95426ab83dc7652704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a46eb74b862f74d95426ab83dc7652704">SKYTRAQ_NAVIGATION_DATA_AEL</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[18-2])</td></tr>
 <tr class="separator:a46eb74b862f74d95426ab83dc7652704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4dfb1815412cb13c39a00717700b5da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#ae4dfb1815412cb13c39a00717700b5da">SKYTRAQ_NAVIGATION_DATA_ASL</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[22-2])</td></tr>
+<tr class="memitem:ae4dfb1815412cb13c39a00717700b5da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#ae4dfb1815412cb13c39a00717700b5da">SKYTRAQ_NAVIGATION_DATA_ASL</a>(_payload)&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[22-2])</td></tr>
 <tr class="separator:ae4dfb1815412cb13c39a00717700b5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8762e21a31e59707292fbe796c7d2b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8762e21a31e59707292fbe796c7d2b2a">SKYTRAQ_NAVIGATION_DATA_GDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[26-2])</td></tr>
+<tr class="memitem:a8762e21a31e59707292fbe796c7d2b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8762e21a31e59707292fbe796c7d2b2a">SKYTRAQ_NAVIGATION_DATA_GDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[26-2])</td></tr>
 <tr class="separator:a8762e21a31e59707292fbe796c7d2b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6be66afa29de42a29198cdcaa7abc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a6e6be66afa29de42a29198cdcaa7abc0">SKYTRAQ_NAVIGATION_DATA_PDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[28-2])</td></tr>
+<tr class="memitem:a6e6be66afa29de42a29198cdcaa7abc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a6e6be66afa29de42a29198cdcaa7abc0">SKYTRAQ_NAVIGATION_DATA_PDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[28-2])</td></tr>
 <tr class="separator:a6e6be66afa29de42a29198cdcaa7abc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240b7da8b5b55b835fe056cb8f129094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a240b7da8b5b55b835fe056cb8f129094">SKYTRAQ_NAVIGATION_DATA_HDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[30-2])</td></tr>
+<tr class="memitem:a240b7da8b5b55b835fe056cb8f129094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a240b7da8b5b55b835fe056cb8f129094">SKYTRAQ_NAVIGATION_DATA_HDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[30-2])</td></tr>
 <tr class="separator:a240b7da8b5b55b835fe056cb8f129094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e11113361a7e3fcc7615832b2a87f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#ab3e11113361a7e3fcc7615832b2a87f5">SKYTRAQ_NAVIGATION_DATA_VDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[32-2])</td></tr>
+<tr class="memitem:ab3e11113361a7e3fcc7615832b2a87f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#ab3e11113361a7e3fcc7615832b2a87f5">SKYTRAQ_NAVIGATION_DATA_VDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[32-2])</td></tr>
 <tr class="separator:ab3e11113361a7e3fcc7615832b2a87f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e6a47b1c8738e3e26b7b1d83815769"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a94e6a47b1c8738e3e26b7b1d83815769">SKYTRAQ_NAVIGATION_DATA_TDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[34-2])</td></tr>
+<tr class="memitem:a94e6a47b1c8738e3e26b7b1d83815769"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a94e6a47b1c8738e3e26b7b1d83815769">SKYTRAQ_NAVIGATION_DATA_TDOP</a>(_payload)&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[34-2])</td></tr>
 <tr class="separator:a94e6a47b1c8738e3e26b7b1d83815769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cfd4ce9ed75482f496e0452f72497d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a14cfd4ce9ed75482f496e0452f72497d">SKYTRAQ_NAVIGATION_DATA_ECEFX</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[36-2])</td></tr>
+<tr class="memitem:a14cfd4ce9ed75482f496e0452f72497d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a14cfd4ce9ed75482f496e0452f72497d">SKYTRAQ_NAVIGATION_DATA_ECEFX</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[36-2])</td></tr>
 <tr class="separator:a14cfd4ce9ed75482f496e0452f72497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a526213f8af1b1d5af93d070d9ceb7366"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a526213f8af1b1d5af93d070d9ceb7366">SKYTRAQ_NAVIGATION_DATA_ECEFY</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[40-2])</td></tr>
+<tr class="memitem:a526213f8af1b1d5af93d070d9ceb7366"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a526213f8af1b1d5af93d070d9ceb7366">SKYTRAQ_NAVIGATION_DATA_ECEFY</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[40-2])</td></tr>
 <tr class="separator:a526213f8af1b1d5af93d070d9ceb7366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e28d09d487c9daccc8273e96ab0867c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8e28d09d487c9daccc8273e96ab0867c">SKYTRAQ_NAVIGATION_DATA_ECEFZ</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[44-2])</td></tr>
+<tr class="memitem:a8e28d09d487c9daccc8273e96ab0867c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a8e28d09d487c9daccc8273e96ab0867c">SKYTRAQ_NAVIGATION_DATA_ECEFZ</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[44-2])</td></tr>
 <tr class="separator:a8e28d09d487c9daccc8273e96ab0867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57b964eabc2378c5417df5b9362d9b98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a57b964eabc2378c5417df5b9362d9b98">SKYTRAQ_NAVIGATION_DATA_ECEFVX</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[48-2])</td></tr>
+<tr class="memitem:a57b964eabc2378c5417df5b9362d9b98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a57b964eabc2378c5417df5b9362d9b98">SKYTRAQ_NAVIGATION_DATA_ECEFVX</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[48-2])</td></tr>
 <tr class="separator:a57b964eabc2378c5417df5b9362d9b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd42f3f2bebf50caf1966e741630b116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#afd42f3f2bebf50caf1966e741630b116">SKYTRAQ_NAVIGATION_DATA_ECEFVY</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[52-2])</td></tr>
+<tr class="memitem:afd42f3f2bebf50caf1966e741630b116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#afd42f3f2bebf50caf1966e741630b116">SKYTRAQ_NAVIGATION_DATA_ECEFVY</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[52-2])</td></tr>
 <tr class="separator:afd42f3f2bebf50caf1966e741630b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ad4246f56570ecf6dcca3a4881b7ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a29ad4246f56570ecf6dcca3a4881b7ac">SKYTRAQ_NAVIGATION_DATA_ECEFVZ</a>(_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[56-2])</td></tr>
+<tr class="memitem:a29ad4246f56570ecf6dcca3a4881b7ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a29ad4246f56570ecf6dcca3a4881b7ac">SKYTRAQ_NAVIGATION_DATA_ECEFVZ</a>(_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[56-2])</td></tr>
 <tr class="separator:a29ad4246f56570ecf6dcca3a4881b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e4da5f3d0c7936fa52467f40e4b6aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a08e4da5f3d0c7936fa52467f40e4b6aa">MAX_DISTANCE</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="separator:a08e4da5f3d0c7936fa52467f40e4b6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,11 +211,11 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a82455efa55f2f00f1ab1524b9f82dc1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d">gps_skytraq_read_message</a> (void)</td></tr>
 <tr class="separator:a82455efa55f2f00f1ab1524b9f82dc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999669a94a88d88ca091e18b133cfc4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a999669a94a88d88ca091e18b133cfc4b">gps_skytraq_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
+<tr class="memitem:a999669a94a88d88ca091e18b133cfc4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a999669a94a88d88ca091e18b133cfc4b">gps_skytraq_parse</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="separator:a999669a94a88d88ca091e18b133cfc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9480384f1c4dd5c8ff24fb7989dbe194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194">gps_skytraq_msg</a> (void)</td></tr>
 <tr class="separator:a9480384f1c4dd5c8ff24fb7989dbe194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e53651134885da8ecc0858a04249828"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a)</td></tr>
+<tr class="memitem:a4e53651134885da8ecc0858a04249828"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a)</td></tr>
 <tr class="separator:a4e53651134885da8ecc0858a04249828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf131e077c10d69ef3d5bed870040fc0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0">distance_too_great</a> (struct <a class="el" href="group__math__geodetic__int.html#structEcefCoor__i">EcefCoor_i</a> *ecef_ref, struct <a class="el" href="group__math__geodetic__int.html#structEcefCoor__i">EcefCoor_i</a> *ecef_pos)</td></tr>
 <tr class="separator:adf131e077c10d69ef3d5bed870040fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,7 +445,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[18-2])</td>
+          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[18-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -465,7 +465,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[22-2])</td>
+          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[22-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -485,7 +485,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[48-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[48-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,7 +505,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[52-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[52-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -525,7 +525,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[56-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[56-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -545,7 +545,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[36-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[36-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -565,7 +565,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[40-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[40-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -585,7 +585,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[44-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[44-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -605,7 +605,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+2-2))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+2-2))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -625,7 +625,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[26-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[26-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -643,7 +643,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[30-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[30-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -661,7 +661,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*( <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>*)&amp;_payload[10-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*( <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>*)&amp;_payload[10-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -681,7 +681,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)__builtin_bswap32(*( <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>*)&amp;_payload[14-2])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)__builtin_bswap32(*( <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>*)&amp;_payload[14-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -701,7 +701,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+3-2))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) (*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_payload+3-2))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -721,7 +721,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[28-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[28-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -741,7 +741,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[34-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[34-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -759,7 +759,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)&amp;_payload[6-2])</td>
+          <td>&#160;&#160;&#160;__builtin_bswap32(*(<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>*)&amp;_payload[6-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -779,7 +779,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[32-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[32-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -797,7 +797,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[4-2])</td>
+          <td>&#160;&#160;&#160;<a class="el" href="gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828">bswap16</a>(*(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>*)&amp;_payload[4-2])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -893,9 +893,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> bswap16 </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> bswap16 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
@@ -956,7 +956,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_adf131e077c10d69ef3d5bed870040fc0_icgraph.png" border="0" usemap="#gps__skytraq_8c_adf131e077c10d69ef3d5bed870040fc0_icgraph" alt=""/></div>
 <map name="gps__skytraq_8c_adf131e077c10d69ef3d5bed870040fc0_icgraph" id="gps__skytraq_8c_adf131e077c10d69ef3d5bed870040fc0_icgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="199,5,400,32"/><area shape="rect" id="node3" href="gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="448,5,583,32"/><area shape="rect" id="node4" href="gps__skytraq_8h.html#a7b24ce985ade2631c7aa2ac72d643a43" title="gps_skytraq_event" alt="" coords="631,5,773,32"/></map>
+</map>
 </div>
 </p>
 
@@ -978,7 +978,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__skytraq_8c_source.html#l00115">115</a> of file <a class="el" href="gps__skytraq_8c_source.html">gps_skytraq.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="gps__skytraq_8c_source.html#l00051">gps_skytraq</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00201">gps_skytraq_parse()</a>, and <a class="el" href="gps__skytraq_8h_source.html#l00046">GpsSkytraq::msg_available</a>.</p>
+<p>References <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="gps__skytraq_8c_source.html#l00051">gps_skytraq</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00201">gps_skytraq_parse()</a>, and <a class="el" href="gps__skytraq_8h_source.html#l00046">GpsSkytraq::msg_available</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -987,7 +987,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a7b24ce985ade2631c7aa2ac72d643a43_cgraph.png" border="0" usemap="#gps__skytraq_8c_a7b24ce985ade2631c7aa2ac72d643a43_cgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a7b24ce985ade2631c7aa2ac72d643a43_cgraph" id="gps__skytraq_8c_a7b24ce985ade2631c7aa2ac72d643a43_cgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="200,64,335,91"/><area shape="rect" id="node13" href="gps__skytraq_8c.html#a999669a94a88d88ca091e18b133cfc4b" title="gps_skytraq_parse" alt="" coords="196,115,339,141"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="415,39,559,65"/><area shape="rect" id="node4" href="gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="387,89,588,116"/><area shape="rect" id="node5" href="gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0" title="distance_too_great" alt="" coords="637,39,782,65"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="636,89,783,116"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="638,144,781,171"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="865,31,963,57"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="831,82,997,123"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1047,5,1147,32"/><area shape="rect" id="node9" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1045,56,1149,83"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="843,148,985,175"/></map>
+</map>
 </div>
 </p>
 
@@ -1029,7 +1029,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__skytraq_8c_source.html#l00098">98</a> of file <a class="el" href="gps__skytraq_8c_source.html">gps_skytraq.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps__skytraq_8c_source.html#l00051">gps_skytraq</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00224">GPS_SKYTRAQ_ID</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00115">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00116">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, <a class="el" href="gps__skytraq_8h_source.html#l00046">GpsSkytraq::msg_available</a>, <a class="el" href="gps__skytraq_8h_source.html#l00047">GpsSkytraq::msg_id</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="gps__skytraq_8h_source.html#l00027">SKYTRAQ_ID_NAVIGATION_DATA</a>, and <a class="el" href="gps__skytraq_8h_source.html#l00058">GpsSkytraq::state</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps__skytraq_8c_source.html#l00051">gps_skytraq</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00240">GPS_SKYTRAQ_ID</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00115">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00116">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, <a class="el" href="gps__skytraq_8h_source.html#l00046">GpsSkytraq::msg_available</a>, <a class="el" href="gps__skytraq_8h_source.html#l00047">GpsSkytraq::msg_id</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec_rem</a>, <a class="el" href="gps__skytraq_8h_source.html#l00027">SKYTRAQ_ID_NAVIGATION_DATA</a>, and <a class="el" href="gps__skytraq_8h_source.html#l00058">GpsSkytraq::state</a>.</p>
 
 <p>Referenced by <a class="el" href="gps__skytraq_8c_source.html#l00115">gps_skytraq_event()</a>.</p>
 
@@ -1040,7 +1040,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_cgraph.png" border="0" usemap="#gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_cgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_cgraph" id="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="217,39,361,65"/><area shape="rect" id="node3" href="gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="188,89,389,116"/><area shape="rect" id="node4" href="gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0" title="distance_too_great" alt="" coords="438,39,583,65"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="437,89,584,116"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="439,144,582,171"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="666,31,765,57"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="632,82,799,123"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="849,5,949,32"/><area shape="rect" id="node8" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="847,56,951,83"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="644,148,787,175"/></map>
+</map>
 </div>
 </p>
 
@@ -1051,7 +1051,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_icgraph.png" border="0" usemap="#gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_icgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_icgraph" id="gps__skytraq_8c_a9480384f1c4dd5c8ff24fb7989dbe194_icgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8h.html#a7b24ce985ade2631c7aa2ac72d643a43" title="gps_skytraq_event" alt="" coords="188,5,331,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1064,7 +1064,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_skytraq_parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1084,7 +1084,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a999669a94a88d88ca091e18b133cfc4b_icgraph.png" border="0" usemap="#gps__skytraq_8c_a999669a94a88d88ca091e18b133cfc4b_icgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a999669a94a88d88ca091e18b133cfc4b_icgraph" id="gps__skytraq_8c_a999669a94a88d88ca091e18b133cfc4b_icgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8h.html#a7b24ce985ade2631c7aa2ac72d643a43" title="gps_skytraq_event" alt="" coords="196,5,339,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1117,7 +1117,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_cgraph.png" border="0" usemap="#gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_cgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_cgraph" id="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_cgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0" title="distance_too_great" alt="" coords="255,39,401,65"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="255,89,401,116"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="257,144,399,171"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="483,31,582,57"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="449,82,616,123"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="666,5,766,32"/><area shape="rect" id="node6" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="664,56,768,83"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="461,148,604,175"/></map>
+</map>
 </div>
 </p>
 
@@ -1128,7 +1128,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_icgraph.png" border="0" usemap="#gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_icgraph" alt=""/></div>
 <map name="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_icgraph" id="gps__skytraq_8c_a82455efa55f2f00f1ab1524b9f82dc1d_icgraph">
-<area shape="rect" id="node2" href="gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="255,5,389,32"/><area shape="rect" id="node3" href="gps__skytraq_8h.html#a7b24ce985ade2631c7aa2ac72d643a43" title="gps_skytraq_event" alt="" coords="437,5,580,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1156,8 +1156,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__skytraq_8c.html">gps_skytraq.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:20 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__skytraq_8c.html">gps_skytraq.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

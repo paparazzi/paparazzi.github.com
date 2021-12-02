@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('stabilization__rate__indi_8c.html','')
 <code>#include &quot;<a class="el" href="stabilization__rate__indi_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_rate_indi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization__indi_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html">firmwares/rotorcraft/autopilot_rc_helpers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_rate_indi.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('stabilization__rate__indi_8c.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate__indi_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate__indi_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate__indi_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate__indi_8c">
-<area shape="rect" id="node2" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="787,325,935,366"/><area shape="rect" id="node5" href="stabilization__rate__indi_8h.html" title="Rate stabilization for rotorcrafts based on INDI. " alt="" coords="241,109,424,165"/><area shape="rect" id="node13" href="stabilization__indi_8h.html" title="firmwares/rotorcraft\l/stabilization/stabilization\l_indi.h" alt="" coords="580,109,763,165"/><area shape="rect" id="node21" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="893,221,1060,262"/><area shape="rect" id="node28" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1472,221,1625,262"/><area shape="rect" id="node6" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts. " alt="" coords="109,213,292,269"/><area shape="rect" id="node7" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="71,429,261,455"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="269,511,386,537"/><area shape="rect" id="node14" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations. " alt="" coords="580,317,763,373"/><area shape="rect" id="node18" href="stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation. " alt="" coords="352,213,535,269"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="397,429,575,455"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="411,511,561,537"/><area shape="rect" id="node19" href="stabilization__attitude__ref__int_8h.html" title="Rotorcraft attitude reference generation API. " alt="" coords="401,325,555,366"/><area shape="rect" id="node20" href="attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation. " alt="" coords="219,325,377,366"/><area shape="rect" id="node22" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1009,332,1208,359"/><area shape="rect" id="node23" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="965,429,1018,455"/><area shape="rect" id="node25" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1250,429,1346,455"/><area shape="rect" id="node26" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1421,511,1506,537"/><area shape="rect" id="node29" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2035,511,2174,537"/><area shape="rect" id="node33" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1472,325,1625,366"/><area shape="rect" id="node36" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1649,421,1803,463"/><area shape="rect" id="node38" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1827,429,2020,455"/></map>
+</map>
 </div>
 </div>
 <p><a href="stabilization__rate__indi_8c_source.html">Go to the source code of this file.</a></p>
@@ -362,7 +362,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate__indi_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph.png" border="0" usemap="#stabilization__rate__indi_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph" alt=""/></div>
 <map name="stabilization__rate__indi_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph" id="stabilization__rate__indi_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph">
-<area shape="rect" id="node2" href="stabilization__rate__indi_8c.html#afe4783ecccebfb6cfe611d7f248801c2" title="Initialize rate controller. " alt="" coords="140,5,297,32"/></map>
+</map>
 </div>
 </p>
 
@@ -386,7 +386,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__rate__indi_8c_source.html#l00107">107</a> of file <a class="el" href="stabilization__rate__indi_8c_source.html">stabilization_rate_indi.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="stabilization__indi_8c_source.html#l00256">stabilization_indi_enter()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">stabilization_indi_enter()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -395,7 +395,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate__indi_8c_a3c8ef06f1db709ae713371b0a2a5054d_cgraph.png" border="0" usemap="#stabilization__rate__indi_8c_a3c8ef06f1db709ae713371b0a2a5054d_cgraph" alt=""/></div>
 <map name="stabilization__rate__indi_8c_a3c8ef06f1db709ae713371b0a2a5054d_cgraph" id="stabilization__rate__indi_8c_a3c8ef06f1db709ae713371b0a2a5054d_cgraph">
-<area shape="rect" id="node2" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI. " alt="" coords="184,5,311,47"/></map>
+</map>
 </div>
 </p>
 
@@ -419,7 +419,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__rate__indi_8c_source.html#l00095">95</a> of file <a class="el" href="stabilization__rate__indi_8c_source.html">stabilization_rate_indi.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00099">send_rate()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00206">stabilization_indi_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00043">STABILIZATION_RATE_IGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00047">STABILIZATION_RATE_IGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00051">STABILIZATION_RATE_IGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>.</p>
+<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00099">send_rate()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">stabilization_indi_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00043">STABILIZATION_RATE_IGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00047">STABILIZATION_RATE_IGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00051">STABILIZATION_RATE_IGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -428,7 +428,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate__indi_8c_afe4783ecccebfb6cfe611d7f248801c2_cgraph.png" border="0" usemap="#stabilization__rate__indi_8c_afe4783ecccebfb6cfe611d7f248801c2_cgraph" alt=""/></div>
 <map name="stabilization__rate__indi_8c_afe4783ecccebfb6cfe611d7f248801c2_cgraph" id="stabilization__rate__indi_8c_afe4783ecccebfb6cfe611d7f248801c2_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="211,5,408,32"/><area shape="rect" id="node3" href="stabilization__rate_8c.html#aa7683726c8b977e5b4bf8206ece55102" title="send_rate" alt="" coords="266,56,353,83"/><area shape="rect" id="node4" href="stabilization__indi_8c.html#a9b355db7dd60fd053f3fff04eccdc11b" title="Function that initializes important values upon engaging INDI. " alt="" coords="233,107,386,133"/></map>
+</map>
 </div>
 </p>
 
@@ -496,7 +496,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__rate__indi_8c_source.html#l00164">164</a> of file <a class="el" href="stabilization__rate__indi_8c_source.html">stabilization_rate_indi.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00040">MAX_SUM_ERR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00401">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00347">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00072">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00040">MAX_SUM_ERR</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00401">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00373">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00072">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00068">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00069">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00070">stabilization_rate_sum_err</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -505,7 +505,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate__indi_8c_acfa2e0820b52aea2dce670dd9295b540_cgraph.png" border="0" usemap="#stabilization__rate__indi_8c_acfa2e0820b52aea2dce670dd9295b540_cgraph" alt=""/></div>
 <map name="stabilization__rate__indi_8c_acfa2e0820b52aea2dce670dd9295b540_cgraph" id="stabilization__rate__indi_8c_acfa2e0820b52aea2dce670dd9295b540_cgraph">
-<area shape="rect" id="node2" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title="stabilization_indi\l_rate_run" alt="" coords="227,5,354,47"/><area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="212,71,369,98"/><area shape="rect" id="node4" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="417,71,579,98"/></map>
+</map>
 </div>
 </p>
 
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__rate__indi_8c.html">stabilization_rate_indi.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,10 +116,10 @@ $(document).ready(function(){initNavTree('px4__gimbal_8c_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="px4__gimbal_8h.html">modules/px4_gimbal/px4_gimbal.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">subsystems/radio_control.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span> <span class="comment">// AC_ID is required</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="subsystems_2actuators_8h.html">subsystems/actuators.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_2actuators_2actuators_8h.html">modules/actuators/actuators.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef PX4_GIMBAL_PWM_CHAN</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="px4__gimbal_8c.html#af0fedb76eceb20715e211dce7af6cd02">   20</a></span>&#160;<span class="preprocessor">#define PX4_GIMBAL_PWM_CHAN 0</span></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('px4__gimbal_8c_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   value = ((<a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>-value) / (<span class="keywordtype">float</span>)<a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>) * range + PX4_GIMBAL_PWM_MIN;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keywordflow">if</span> (value &lt; 1) {value=1;} <span class="comment">// 0 does not seem to work</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <a class="code" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(<a class="code" href="px4__gimbal_8c.html#af0fedb76eceb20715e211dce7af6cd02">PX4_GIMBAL_PWM_CHAN</a>, (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)value);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <a class="code" href="chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(<a class="code" href="px4__gimbal_8c.html#af0fedb76eceb20715e211dce7af6cd02">PX4_GIMBAL_PWM_CHAN</a>, (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)value);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef INTER_MCU_AP</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   AllActuatorsCommit();</div>
@@ -164,14 +164,14 @@ $(document).ready(function(){initNavTree('px4__gimbal_8c_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="ttc" id="radio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div></div>
-<div class="ttc" id="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a3e02a20951a8d18ade2922fd0c3fac1f"><div class="ttname"><a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a></div><div class="ttdeci">#define ActuatorPwmSet(_i, _v)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00085">actuators_pwm_arch.h:85</a></div></div>
+<div class="ttc" id="chibios_2modules_2actuators_2actuators__pwm__arch_8h_html_a3e02a20951a8d18ade2922fd0c3fac1f"><div class="ttname"><a href="chibios_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a></div><div class="ttdeci">#define ActuatorPwmSet(_i, _v)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2modules_2actuators_2actuators__pwm__arch_8h_source.html#l00085">actuators_pwm_arch.h:85</a></div></div>
 <div class="ttc" id="radio__control_8h_html_a7a57c95d2958828cb2d13bd360622f6f"><div class="ttname"><a href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">RadioControl::values</a></div><div class="ttdeci">pprz_t values[RADIO_CONTROL_NB_CHANNEL]</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00069">radio_control.h:69</a></div></div>
 <div class="ttc" id="px4__gimbal_8c_html_ab5a974bc3d33f30eaf7efd35bf55ecba"><div class="ttname"><a href="px4__gimbal_8c.html#ab5a974bc3d33f30eaf7efd35bf55ecba">px4_set_gimbal_angle_periodic</a></div><div class="ttdeci">void px4_set_gimbal_angle_periodic()</div><div class="ttdef"><b>Definition:</b> <a href="px4__gimbal_8c_source.html#l00041">px4_gimbal.c:41</a></div></div>
 <div class="ttc" id="px4__gimbal_8c_html_af96611c09bd50ababca82dadc814f9c1"><div class="ttname"><a href="px4__gimbal_8c.html#af96611c09bd50ababca82dadc814f9c1">PX4_GIMBAL_RC_CHAN</a></div><div class="ttdeci">#define PX4_GIMBAL_RC_CHAN</div><div class="ttdef"><b>Definition:</b> <a href="px4__gimbal_8c_source.html#l00023">px4_gimbal.c:23</a></div></div>
-<div class="ttc" id="subsystems_2actuators_8h_html"><div class="ttname"><a href="subsystems_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="px4__gimbal_8c_html_ab49f875b530fb2ff6b664891fca3116a"><div class="ttname"><a href="px4__gimbal_8c.html#ab49f875b530fb2ff6b664891fca3116a">px4_gimbal_init</a></div><div class="ttdeci">void px4_gimbal_init()</div><div class="ttdef"><b>Definition:</b> <a href="px4__gimbal_8c_source.html#l00035">px4_gimbal.c:35</a></div></div>
 <div class="ttc" id="radio__control_8c_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00030">radio_control.c:30</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators_8h_html"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
 <div class="ttc" id="px4__gimbal_8c_html_a32529bed4faf338f8ebcb39da6c7d1a2"><div class="ttname"><a href="px4__gimbal_8c.html#a32529bed4faf338f8ebcb39da6c7d1a2">PX4_GIMBAL_PWM_MAX</a></div><div class="ttdeci">#define PX4_GIMBAL_PWM_MAX</div><div class="ttdef"><b>Definition:</b> <a href="px4__gimbal_8c_source.html#l00031">px4_gimbal.c:31</a></div></div>
 <div class="ttc" id="px4__gimbal_8h_html"><div class="ttname"><a href="px4__gimbal_8h.html">px4_gimbal.h</a></div></div>
 <div class="ttc" id="px4__gimbal_8c_html_a417bcf72757d478e28c34b8da7323159"><div class="ttname"><a href="px4__gimbal_8c.html#a417bcf72757d478e28c34b8da7323159">PX4_GIMBAL_PWM_MIN</a></div><div class="ttdeci">#define PX4_GIMBAL_PWM_MIN</div><div class="ttdef"><b>Definition:</b> <a href="px4__gimbal_8c_source.html#l00027">px4_gimbal.c:27</a></div></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('px4__gimbal_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7440be264615bd5608c4336d4816dee8.html">px4_gimbal</a></li><li class="navelem"><a class="el" href="px4__gimbal_8c.html">px4_gimbal.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:11 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

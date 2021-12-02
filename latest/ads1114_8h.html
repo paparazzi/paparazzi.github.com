@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('ads1114_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ads1114_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ads1114_8h" id="sw_2airborne_2peripherals_2ads1114_8h">
-<area shape="rect" id="node3" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="77,95,208,121"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('ads1114_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ads1114_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ads1114_8hdep" id="sw_2airborne_2peripherals_2ads1114_8hdep">
-<area shape="rect" id="node2" href="umarim_2baro__board_8c.html" title="sw/airborne/boards\l/umarim/baro_board.c" alt="" coords="5,95,169,136"/><area shape="rect" id="node3" href="airspeed__ads1114_8c.html" title="sw/airborne/modules\l/sensors/airspeed_ads1114.c" alt="" coords="194,95,402,136"/><area shape="rect" id="node4" href="ads1114_8c.html" title="sw/airborne/peripherals\l/ads1114.c" alt="" coords="426,95,597,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="ads1114_8h_source.html">Go to the source code of this file.</a></p>
@@ -205,7 +205,7 @@ Macros</h2></td></tr>
 <tr class="separator:a4020b88dc5dee9fc6ab82f4103d91175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95351e73a4dfe90ea157b044127f5756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#a95351e73a4dfe90ea157b044127f5756">Ads1114Event</a>()</td></tr>
 <tr class="separator:a95351e73a4dfe90ea157b044127f5756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab935e23c858967df52590b3b1e06ce06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(_p)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td></tr>
+<tr class="memitem:ab935e23c858967df52590b3b1e06ce06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(_p)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td></tr>
 <tr class="separator:ab935e23c858967df52590b3b1e06ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -251,7 +251,7 @@ data_available</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a761a47a8b62cef73bbe01ea9e9cd1f41"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a761a47a8b62cef73bbe01ea9e9cd1f41"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 i2c_addr</td>
 <td class="fielddoc">
@@ -749,8 +749,6 @@ trans</td>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="ads1114_8h_source.html#l00158">158</a> of file <a class="el" href="ads1114_8h_source.html">ads1114.h</a>.</p>
 
-<p>Referenced by <a class="el" href="umarim_2baro__board_8c_source.html#l00075">umarim_baro_event()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab935e23c858967df52590b3b1e06ce06"></a>
@@ -762,14 +760,12 @@ trans</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_p</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ads1114_8h_source.html#l00165">165</a> of file <a class="el" href="ads1114_8h_source.html">ads1114.h</a>.</p>
-
-<p>Referenced by <a class="el" href="umarim_2baro__board_8c_source.html#l00075">umarim_baro_event()</a>.</p>
 
 </div>
 </div>
@@ -792,8 +788,6 @@ trans</td>
 
 <p>References <a class="el" href="ads1114_8h_source.html#l00076">ADS1114_1_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00075">ADS1114_1_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00036">ADS1114_1_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00108">ADS1114_2_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00107">ADS1114_2_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00039">ADS1114_2_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00113">ADS1114_I2C_DEV</a>, <a class="el" href="ads1114_8h_source.html#l00044">ADS1114_POINTER_CONFIG_REG</a>, and <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>.</p>
 
-<p>Referenced by <a class="el" href="umarim_2baro__board_8c_source.html#l00049">baro_init()</a>.</p>
-
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -801,18 +795,7 @@ trans</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph.png" border="0" usemap="#ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph" alt=""/></div>
 <map name="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph" id="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="156,5,257,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="305,5,396,32"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ads1114_8h_a663d281bebd9216206400b2277496baf_icgraph.png" border="0" usemap="#ads1114_8h_a663d281bebd9216206400b2277496baf_icgraph" alt=""/></div>
-<map name="ads1114_8h_a663d281bebd9216206400b2277496baf_icgraph" id="ads1114_8h_a663d281bebd9216206400b2277496baf_icgraph">
-<area shape="rect" id="node2" href="umarim_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="156,5,233,32"/></map>
+</map>
 </div>
 </p>
 
@@ -836,27 +819,27 @@ trans</td>
 
 <p>References <a class="el" href="ads1114_8h_source.html#l00113">ADS1114_I2C_DEV</a>, <a class="el" href="ads1114_8h_source.html#l00043">ADS1114_POINTER_CONV_REG</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ads1114_8h_source.html#l00119">ads1114_periph::config_done</a>, <a class="el" href="ads1114_8h_source.html#l00118">ads1114_periph::i2c_addr</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="ads1114_8h_source.html#l00117">ads1114_periph::trans</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__ads1114_8c_source.html#l00033">airspeed_periodic()</a>, and <a class="el" href="umarim_2baro__board_8c_source.html#l00058">baro_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__ads1114_8c_source.html#l00033">airspeed_periodic()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph.png" border="0" usemap="#ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph" alt=""/></div>
 <map name="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph" id="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="167,5,280,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="328,5,419,32"/></map>
+</map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_icgraph.png" border="0" usemap="#ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_icgraph" alt=""/></div>
 <map name="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_icgraph" id="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_icgraph">
-<area shape="rect" id="node2" href="airspeed__ads1114_8h.html#abc1ef85820f6067126dc796a05dac64b" title="airspeed_periodic" alt="" coords="167,5,301,32"/><area shape="rect" id="node3" href="umarim_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="180,56,288,83"/></map>
+</map>
 </div>
 </p>
 
@@ -868,7 +851,7 @@ trans</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ads1114_8h.html">ads1114.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:11 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

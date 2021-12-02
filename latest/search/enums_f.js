@@ -2,6 +2,7 @@ var searchData=
 [
   ['rc_5fspi_5faetr_5fe',['rc_spi_aetr_e',['../cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64',1,'cc2500_rx_spi.h']]],
   ['resourceowner_5fe',['resourceOwner_e',['../cc2500__compat_8h.html#a47b810272e63cca7d5d1c7af7034cd74',1,'cc2500_compat.h']]],
+  ['rm3100status',['Rm3100Status',['../rm3100_8h.html#a2eeb551c5dd2961e7c733e161ee07cd5',1,'rm3100.h']]],
   ['rssisource_5fe',['rssiSource_e',['../cc2500__rx_8h.html#a47f6ed557b0de23d57c79416b9451b69',1,'cc2500_rx.h']]],
   ['rx_5fspi_5fprotocol_5fe',['rx_spi_protocol_e',['../cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ec',1,'cc2500_rx_spi.h']]],
   ['rx_5fspi_5freceived_5fe',['rx_spi_received_e',['../cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aa',1,'cc2500_rx_spi.h']]],

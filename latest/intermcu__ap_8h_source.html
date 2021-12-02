@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/intermcu/intermcu_ap.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/intermcu/intermcu_ap.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,11 +134,11 @@ $(document).ready(function(){initNavTree('intermcu__ap_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef INTERMCU_AP_ROTORCRAFT_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define INTERMCU_AP_ROTORCRAFT_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu_8h.html">subsystems/intermcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu_8h.html">modules/intermcu/intermcu.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="electrical_8h.html">subsystems/electrical.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="electrical_8h.html">modules/energy/electrical.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="intermcu__ap_8h.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_set_actuators</a>(<a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> *command_values, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ap_mode);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="intermcu__ap_8h.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_set_actuators</a>(<a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> *command_values, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ap_mode);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="intermcu__ap_8h.html#af92639a882c9a02ecc422e3ba96c1274">RadioControlEvent</a>(<span class="keywordtype">void</span> (*frame_handler)(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="intermcu__ap_8h.html#a609bd43c94c68e55513f2c65cf8447cd">intermcu_send_spektrum_bind</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="intermcu__ap_8h.html#a93c1caa54aaade98a45ffc18f7406a6f">intermcu_set_enabled</a>(<span class="keywordtype">bool</span> value);</div>
@@ -157,9 +157,9 @@ $(document).ready(function(){initNavTree('intermcu__ap_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* Structure for FBW status */</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="intermcu__ap_8h.html#structfbw__status__t">fbw_status_t</a> {</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#a065f1e17cdb9e3530edaac597936c748">   53</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#a065f1e17cdb9e3530edaac597936c748">rc_status</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#ac74d63d324f6881f7826d7ae345a6690">   54</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#ac74d63d324f6881f7826d7ae345a6690">frame_rate</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#a19d319320bd3f4e558dd0be80ef0cdde">   55</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#a19d319320bd3f4e558dd0be80ef0cdde">mode</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#a065f1e17cdb9e3530edaac597936c748">   53</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#a065f1e17cdb9e3530edaac597936c748">rc_status</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#ac74d63d324f6881f7826d7ae345a6690">   54</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#ac74d63d324f6881f7826d7ae345a6690">frame_rate</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#a19d319320bd3f4e558dd0be80ef0cdde">   55</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="intermcu__ap_8h.html#a19d319320bd3f4e558dd0be80ef0cdde">mode</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="intermcu__ap_8h.html#a322af08d9490d76716acd4b941e49893">   56</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="electrical_8h.html#structElectrical">Electrical</a> <a class="code" href="intermcu__ap_8h.html#a322af08d9490d76716acd4b941e49893">electrical</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -174,17 +174,17 @@ $(document).ready(function(){initNavTree('intermcu__ap_8h_source.html','');});
 <div class="ttc" id="electrical_8h_html_structElectrical"><div class="ttname"><a href="electrical_8h.html#structElectrical">Electrical</a></div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00044">electrical.h:44</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a93c1caa54aaade98a45ffc18f7406a6f"><div class="ttname"><a href="intermcu__ap_8h.html#a93c1caa54aaade98a45ffc18f7406a6f">intermcu_set_enabled</a></div><div class="ttdeci">void intermcu_set_enabled(bool value)</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8c_source.html#l00105">intermcu_ap.c:105</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a065f1e17cdb9e3530edaac597936c748"><div class="ttname"><a href="intermcu__ap_8h.html#a065f1e17cdb9e3530edaac597936c748">fbw_status_t::rc_status</a></div><div class="ttdeci">uint8_t rc_status</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00053">intermcu_ap.h:53</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a609bd43c94c68e55513f2c65cf8447cd"><div class="ttname"><a href="intermcu__ap_8h.html#a609bd43c94c68e55513f2c65cf8447cd">intermcu_send_spektrum_bind</a></div><div class="ttdeci">void intermcu_send_spektrum_bind(void)</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8c_source.html#l00129">intermcu_ap.c:129</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a19d319320bd3f4e558dd0be80ef0cdde"><div class="ttname"><a href="intermcu__ap_8h.html#a19d319320bd3f4e558dd0be80ef0cdde">fbw_status_t::mode</a></div><div class="ttdeci">uint8_t mode</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00055">intermcu_ap.h:55</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a322af08d9490d76716acd4b941e49893"><div class="ttname"><a href="intermcu__ap_8h.html#a322af08d9490d76716acd4b941e49893">fbw_status_t::electrical</a></div><div class="ttdeci">struct Electrical electrical</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00056">intermcu_ap.h:56</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_20e4859fd0a482048af55ed36cbc5ed3.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__ap_8h.html">intermcu_ap.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b59edde850f8ccf4b394776fda69f2c6.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__ap_8h.html">intermcu_ap.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

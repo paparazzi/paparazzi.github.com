@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('joystick_8c_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="joystick_8h.html">modules/joystick/joystick.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">subsystems/datalink/datalink.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">subsystems/abi.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">modules/datalink/datalink.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">modules/core/abi.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;pprzlink/dl_protocol.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('joystick_8c_source.html','');});
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="joystick_8c.html#a23b18d268c4c1956a1f97b1949412023">joystick</a>.<a class="code" href="joystick_8h.html#a74e6b46c490d7f83a315fdf0cbed5e98">throttle</a> = 0;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="joystick_8h.html#a573cdbbbb3c9b0f6be055bb99fc5b978">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="joystick_8c.html#a573cdbbbb3c9b0f6be055bb99fc5b978">joystick_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="joystick_8h.html#a573cdbbbb3c9b0f6be055bb99fc5b978">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="joystick_8c.html#a573cdbbbb3c9b0f6be055bb99fc5b978">joystick_parse</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (DL_JOYSTICK_RAW_ac_id(buf) == AC_ID) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="joystick_8c.html#a23b18d268c4c1956a1f97b1949412023">joystick</a>.<a class="code" href="joystick_8h.html#a37d738c05aca156b3f7b12fc5a3a2b4c">roll</a> = DL_JOYSTICK_RAW_roll(buf);</div>
@@ -161,20 +161,20 @@ $(document).ready(function(){initNavTree('joystick_8c_source.html','');});
 <div class="ttc" id="abi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div><div class="ttdoc">Main include for ABI (AirBorneInterface). </div></div>
 <div class="ttc" id="joystick_8c_html_a573cdbbbb3c9b0f6be055bb99fc5b978"><div class="ttname"><a href="joystick_8c.html#a573cdbbbb3c9b0f6be055bb99fc5b978">joystick_parse</a></div><div class="ttdeci">void joystick_parse(uint8_t *buf)</div><div class="ttdoc">JOYSTICK_RAW message parser if valid, send a JOYSTICK ABI message. </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8c_source.html#l00042">joystick.c:42</a></div></div>
 <div class="ttc" id="joystick_8h_html_a37d738c05aca156b3f7b12fc5a3a2b4c"><div class="ttname"><a href="joystick_8h.html#a37d738c05aca156b3f7b12fc5a3a2b4c">Joystick::roll</a></div><div class="ttdeci">int32_t roll</div><div class="ttdoc">roll command </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8h_source.html#l00035">joystick.h:35</a></div></div>
-<div class="ttc" id="abi__sender__ids_8h_html_a282ea2232aeb43e13a86a84c6cedd975"><div class="ttname"><a href="abi__sender__ids_8h.html#a282ea2232aeb43e13a86a84c6cedd975">JOYSTICK_ID</a></div><div class="ttdeci">#define JOYSTICK_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00511">abi_sender_ids.h:511</a></div></div>
+<div class="ttc" id="abi__sender__ids_8h_html_a282ea2232aeb43e13a86a84c6cedd975"><div class="ttname"><a href="abi__sender__ids_8h.html#a282ea2232aeb43e13a86a84c6cedd975">JOYSTICK_ID</a></div><div class="ttdeci">#define JOYSTICK_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00527">abi_sender_ids.h:527</a></div></div>
 <div class="ttc" id="joystick_8c_html_a23b18d268c4c1956a1f97b1949412023"><div class="ttname"><a href="joystick_8c.html#a23b18d268c4c1956a1f97b1949412023">joystick</a></div><div class="ttdeci">struct Joystick joystick</div><div class="ttdef"><b>Definition:</b> <a href="joystick_8c_source.html#l00032">joystick.c:32</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="joystick_8h_html_a96ef4a24cdb1f844b2d263536e6283a8"><div class="ttname"><a href="joystick_8h.html#a96ef4a24cdb1f844b2d263536e6283a8">Joystick::yaw</a></div><div class="ttdeci">int32_t yaw</div><div class="ttdoc">yaw command </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8h_source.html#l00037">joystick.h:37</a></div></div>
 <div class="ttc" id="joystick_8h_html_structJoystick"><div class="ttname"><a href="joystick_8h.html#structJoystick">Joystick</a></div><div class="ttdoc">Joystick structure. </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8h_source.html#l00034">joystick.h:34</a></div></div>
 <div class="ttc" id="joystick_8h_html_a74e6b46c490d7f83a315fdf0cbed5e98"><div class="ttname"><a href="joystick_8h.html#a74e6b46c490d7f83a315fdf0cbed5e98">Joystick::throttle</a></div><div class="ttdeci">int32_t throttle</div><div class="ttdoc">throttle command </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8h_source.html#l00038">joystick.h:38</a></div></div>
 <div class="ttc" id="joystick_8c_html_a6a02aa5c938b511ffde7a43e8db031c8"><div class="ttname"><a href="joystick_8c.html#a6a02aa5c938b511ffde7a43e8db031c8">joystick_init</a></div><div class="ttdeci">void joystick_init(void)</div><div class="ttdoc">Init function. </div><div class="ttdef"><b>Definition:</b> <a href="joystick_8c_source.html#l00034">joystick.c:34</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_bd315249509f9387de8b396532230b31.html">joystick</a></li><li class="navelem"><a class="el" href="joystick_8c.html">joystick.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -30,6 +30,7 @@ var pprz__algebra__float_8c =
     [ "float_quat_of_eulers_zxy", "group__math__algebra__float.html#ga2b04e80e9af8e229f2249bb4b6514fa8", null ],
     [ "float_quat_of_orientation_vect", "group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a", null ],
     [ "float_quat_of_rmat", "group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f", null ],
+    [ "float_quat_tilt_twist", "group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7", null ],
     [ "float_quat_vmult", "group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171", null ],
     [ "float_rates_integrate_fi", "group__math__algebra__float.html#gaa756a8ac8762d40f02b0e31539340c22", null ],
     [ "float_rates_of_euler_dot", "group__math__algebra__float.html#ga83f3d83e8b8917ca4e81e8aae59796e2", null ],

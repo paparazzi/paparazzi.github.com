@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,11 +121,11 @@ $(document).ready(function(){initNavTree('nav__fish_8c.html','');});
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot__guided_8h_source.html">autopilot_guided.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="subsystems_2navigation_2waypoints_8h_source.html">subsystems/navigation/waypoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nav_2waypoints_8h_source.html">modules/nav/waypoints.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__float_8h_source.html">math/pprz_geodetic_float.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('nav__fish_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2nav_2nav__fish_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2nav_2nav__fish_8c" id="sw_2airborne_2modules_2nav_2nav__fish_8c">
-<area shape="rect" id="node2" href="nav__fish_8h.html" title="modules/nav/nav_fish.h" alt="" coords="2042,191,2214,218"/><area shape="rect" id="node4" href="traffic__info_8h.html" title="modules/multi/traffic\l_info.h" alt="" coords="553,184,706,225"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="589,363,739,404"/><area shape="rect" id="node22" href="rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1341,95,1489,136"/><area shape="rect" id="node23" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1054,273,1223,315"/><area shape="rect" id="node25" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1751,191,1841,218"/><area shape="rect" id="node28" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="963,281,1029,307"/><area shape="rect" id="node33" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="1535,273,1708,315"/><area shape="rect" id="node35" href="autopilot__guided_8h.html" title="Autopilot guided mode interface. " alt="" coords="1697,102,1837,129"/><area shape="rect" id="node37" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2517,273,2670,315"/><area shape="rect" id="node5" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="332,370,503,397"/><area shape="rect" id="node10" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="866,363,1017,404"/><area shape="rect" id="node21" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="749,281,888,307"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1669,459,1755,486"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="578,459,702,486"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1055,459,1195,486"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="724,541,879,568"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1106,541,1257,568"/><area shape="rect" id="node19" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="727,459,879,486"/><area shape="rect" id="node24" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1299,184,1469,225"/><area shape="rect" id="node26" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1857,370,1953,397"/><area shape="rect" id="node29" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1143,363,1307,404"/><area shape="rect" id="node34" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="1586,363,1782,404"/><area shape="rect" id="node38" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3017,541,3156,568"/><area shape="rect" id="node42" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2517,363,2670,404"/><area shape="rect" id="node45" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2517,452,2670,493"/><area shape="rect" id="node47" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2871,459,3065,486"/></map>
+</map>
 </div>
 </div>
 <p><a href="nav__fish_8c_source.html">Go to the source code of this file.</a></p>
@@ -805,7 +805,7 @@ current velocity </td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a6be52ce767bc23639f6140db166e18fc_icgraph.png" border="0" usemap="#nav__fish_8c_a6be52ce767bc23639f6140db166e18fc_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a6be52ce767bc23639f6140db166e18fc_icgraph" id="nav__fish_8c_a6be52ce767bc23639f6140db166e18fc_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="160,5,329,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="377,5,535,32"/></map>
+</map>
 </div>
 </p>
 
@@ -849,7 +849,7 @@ current velocity </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_cgraph.png" border="0" usemap="#nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_cgraph" alt=""/></div>
 <map name="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_cgraph" id="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_cgraph">
-<area shape="rect" id="node2" href="group__ac__info.html#ga5c99bec43d11d7091e213e401d4a5733" title="Get vehicle course (float). " alt="" coords="258,44,386,70"/><area shape="rect" id="node3" href="group__ac__info.html#gaa35b881ac79b26e3504539214918c63f" title="Get time of week from latest message (ms). " alt="" coords="268,94,376,121"/><area shape="rect" id="node4" href="group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="238,196,406,222"/><area shape="rect" id="node31" href="nav__fish_8c.html#a6be52ce767bc23639f6140db166e18fc" title="calculates the relative orientation too the wall " alt="" coords="269,246,375,273"/><area shape="rect" id="node32" href="nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="469,377,653,404"/><area shape="rect" id="node33" href="nav__fish_8c.html#a73d46dd3746708693a4793f1fc047dfc" title="Calculates distance between the uav and wall. " alt="" coords="259,500,385,526"/><area shape="rect" id="node36" href="nav__fish_8c.html#a04d15699e98da660fe2dd5e4c435cbbb" title="calculates the alignement effect between two uavs " alt="" coords="243,297,401,324"/><area shape="rect" id="node38" href="nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="249,449,395,476"/><area shape="rect" id="node41" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="251,348,393,374"/><area shape="rect" id="node42" href="nav__fish_8c.html#ab79919b0725eedc17018a87fb450b62c" title="Gaussian random number generator with mean =0 and invariance =1 using Box&#45;Muller method. " alt="" coords="245,550,399,577"/><area shape="rect" id="node43" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="223,601,421,628"/><area shape="rect" id="node48" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="241,145,403,172"/><area shape="rect" id="node5" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="475,230,647,257"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="719,212,855,238"/><area shape="rect" id="node9" href="group__ac__info.html#ga9712309206b85d9fb005f0ba19553a04" title="Get position from LLA coordinates (float). " alt="" coords="706,313,869,340"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="720,60,855,86"/><area shape="rect" id="node23" href="group__ac__info.html#gafc650e7d5bdaa36628912178842e55bd" title="Get position from LLA coordinates (int). " alt="" coords="707,364,868,390"/><area shape="rect" id="node25" href="group__ac__info.html#ga74acacb611beb144c68c7b41ef3e50a4" title="Get position from UTM coordinates (float). " alt="" coords="701,262,873,289"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1173,110,1273,137"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="935,161,1084,188"/><area shape="rect" id="node10" href="group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20" title="acInfoCalcPositionLla_f" alt="" coords="926,313,1093,340"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e" title="Convert a UTM to LLA. " alt="" coords="1174,414,1273,441"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1370,342,1469,369"/><area shape="rect" id="node17" href="traffic__info_8c.html#a613e84a3cdf3fbb12be8f2de43e6bff1" title="Update estimate of the geoid height Requires an available hsml and/or lla measurement, if not available value isn&#39;t updated. " alt="" coords="1145,262,1301,289"/><area shape="rect" id="node15" href="group__math__geodetic__double.html#ga0f160507506fc364a8b2c35327d252fa" title="lla_of_utm_d" alt="" coords="1368,410,1471,437"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1537,342,1737,369"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1569,244,1705,286"/><area shape="rect" id="node16" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="1569,396,1705,438"/><area shape="rect" id="node18" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="1349,263,1489,304"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="960,60,1059,86"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="935,110,1083,137"/><area shape="rect" id="node21" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1171,60,1275,86"/><area shape="rect" id="node24" href="group__ac__info.html#ga660def4d2d1433508928beb427d1b7c7" title="acInfoCalcPositionLla_i" alt="" coords="927,364,1092,390"/><area shape="rect" id="node26" href="group__ac__info.html#ga372e62985b33d1539347cfadb62d9aff" title="acInfoCalcPositionUtm_f" alt="" coords="921,262,1097,289"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="1174,212,1273,238"/><area shape="rect" id="node28" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1370,161,1469,188"/><area shape="rect" id="node30" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="1368,212,1471,238"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1564,161,1711,188"/><area shape="rect" id="node34" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="501,497,621,524"/><area shape="rect" id="node35" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="501,548,621,574"/><area shape="rect" id="node37" href="nav__fish_8c.html#ac7f5aa101851d1bc52e80625037a7fbd" title="calculates difference between two headings " alt="" coords="521,301,601,328"/><area shape="rect" id="node39" href="nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="506,440,617,466"/><area shape="rect" id="node40" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="763,440,811,466"/><area shape="rect" id="node44" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="479,601,643,628"/><area shape="rect" id="node45" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="703,601,871,628"/><area shape="rect" id="node46" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="933,576,1086,602"/><area shape="rect" id="node47" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="934,626,1085,653"/><area shape="rect" id="node49" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="478,128,645,154"/><area shape="rect" id="node50" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="718,110,857,137"/></map>
+</map>
 </div>
 </p>
 
@@ -860,7 +860,7 @@ current velocity </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_icgraph.png" border="0" usemap="#nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_icgraph" alt=""/></div>
 <map name="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_icgraph" id="nav__fish_8c_aabac53beb17b84ea4474a72fb85e2abb_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="223,5,380,32"/></map>
+</map>
 </div>
 </p>
 
@@ -921,7 +921,7 @@ current velocity </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_ac7f5aa101851d1bc52e80625037a7fbd_icgraph.png" border="0" usemap="#nav__fish_8c_ac7f5aa101851d1bc52e80625037a7fbd_icgraph" alt=""/></div>
 <map name="nav__fish_8c_ac7f5aa101851d1bc52e80625037a7fbd_icgraph" id="nav__fish_8c_ac7f5aa101851d1bc52e80625037a7fbd_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#a04d15699e98da660fe2dd5e4c435cbbb" title="calculates the alignement effect between two uavs " alt="" coords="133,5,291,32"/><area shape="rect" id="node5" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="141,56,283,83"/><area shape="rect" id="node3" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="339,31,508,57"/><area shape="rect" id="node4" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="556,31,713,57"/></map>
+</map>
 </div>
 </p>
 
@@ -982,7 +982,7 @@ current velocity </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a32e7c37a922432f684505b726d724051_icgraph.png" border="0" usemap="#nav__fish_8c_a32e7c37a922432f684505b726d724051_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a32e7c37a922432f684505b726d724051_icgraph" id="nav__fish_8c_a32e7c37a922432f684505b726d724051_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="443,52,612,79"/><area shape="rect" id="node4" href="nav__fish_8c.html#a04d15699e98da660fe2dd5e4c435cbbb" title="calculates the alignement effect between two uavs " alt="" coords="237,27,395,53"/><area shape="rect" id="node5" href="nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="243,77,389,104"/><area shape="rect" id="node6" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="245,128,387,155"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="660,52,817,79"/></map>
+</map>
 </div>
 </p>
 
@@ -1021,7 +1021,7 @@ current velocity </td></tr>
 
 <p>Definition at line <a class="el" href="nav__fish_8c_source.html#l00256">256</a> of file <a class="el" href="nav__fish_8c_source.html">nav_fish.c</a>.</p>
 
-<p>References <a class="el" href="nav__fish_8c_source.html#l00152">distance_wall</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p>References <a class="el" href="nav__fish_8c_source.html#l00152">distance_wall</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
 <p>Referenced by <a class="el" href="nav__fish_8c_source.html#l00403">calculate_new_heading()</a>.</p>
 
@@ -1032,7 +1032,7 @@ current velocity </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_cgraph.png" border="0" usemap="#nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_cgraph" alt=""/></div>
 <map name="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_cgraph" id="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_cgraph">
-<area shape="rect" id="node2" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="180,5,300,32"/><area shape="rect" id="node3" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="180,56,300,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1043,7 +1043,7 @@ current velocity </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_icgraph.png" border="0" usemap="#nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_icgraph" id="nav__fish_8c_a73d46dd3746708693a4793f1fc047dfc_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="180,5,349,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="397,5,555,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1101,7 +1101,7 @@ current velocity </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_ae25f7a8ee455c00944445f6b12b3a49f_cgraph.png" border="0" usemap="#nav__fish_8c_ae25f7a8ee455c00944445f6b12b3a49f_cgraph" alt=""/></div>
 <map name="nav__fish_8c_ae25f7a8ee455c00944445f6b12b3a49f_cgraph" id="nav__fish_8c_ae25f7a8ee455c00944445f6b12b3a49f_cgraph">
-<area shape="rect" id="node2" href="autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="211,316,391,343"/><area shape="rect" id="node26" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="455,653,625,680"/><area shape="rect" id="node50" href="nav__fish_8c.html#ac355d105d112168a520efe4e3458141a" title="send_swarm_message" alt="" coords="217,553,385,580"/><area shape="rect" id="node3" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="465,56,615,83"/><area shape="rect" id="node4" href="rotorcraft_2guidance_2guidance__h_8c.html#ae192e6147e70b8acc536020ece52714b" title="Set body relative horizontal velocity setpoint in GUIDED mode. " alt="" coords="454,158,626,199"/><area shape="rect" id="node5" href="rotorcraft_2guidance_2guidance__h_8c.html#a21a4387750aad0a127dfa928b8557a90" title="Set horizontal velocity setpoint in GUIDED mode. " alt="" coords="690,124,887,151"/><area shape="rect" id="node6" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="689,191,888,217"/><area shape="rect" id="node11" href="rotorcraft_2guidance_2guidance__h_8c.html#a326822b3cfdaaf76105134072212346c" title="Set heading setpoint in GUIDED mode. " alt="" coords="454,275,626,317"/><area shape="rect" id="node12" href="rotorcraft_2guidance_2guidance__h_8c.html#af1c1fe7554cfb835e5f674228cb3858b" title="Set heading rate setpoint in GUIDED mode. " alt="" coords="454,341,626,382"/><area shape="rect" id="node13" href="rotorcraft_2guidance_2guidance__h_8c.html#a4df96f9ee6b60d5df3ccfd2bd45dc6f2" title="Set horizontal position setpoint in GUIDED mode. " alt="" coords="439,407,641,433"/><area shape="rect" id="node14" href="rotorcraft_2guidance_2guidance__v_8c.html#acac5c328b4af288851a9ede4552381f8" title="Set z velocity setpoint in GUIDED mode. " alt="" coords="444,457,636,484"/><area shape="rect" id="node15" href="rotorcraft_2guidance_2guidance__v_8c.html#a37acdbbaffc177a9c200f95098d5b398" title="Set z setpoint in GUIDED mode. " alt="" coords="447,508,633,535"/><area shape="rect" id="node16" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="457,559,623,585"/><area shape="rect" id="node25" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="441,5,639,32"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="946,147,1110,173"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1170,147,1338,173"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1388,121,1541,148"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1389,172,1540,199"/><area shape="rect" id="node17" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="704,324,873,351"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1179,273,1329,300"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="959,349,1097,376"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="960,299,1096,325"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1415,425,1514,452"/><area shape="rect" id="node24" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1205,375,1303,401"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1390,527,1539,553"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1185,324,1323,351"/><area shape="rect" id="node27" href="group__ac__info.html#ga5c99bec43d11d7091e213e401d4a5733" title="Get vehicle course (float). " alt="" coords="725,603,853,629"/><area shape="rect" id="node28" href="group__ac__info.html#gaa35b881ac79b26e3504539214918c63f" title="Get time of week from latest message (ms). " alt="" coords="735,653,843,680"/><area shape="rect" id="node29" href="group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="705,552,873,579"/><area shape="rect" id="node36" href="nav__fish_8c.html#a6be52ce767bc23639f6140db166e18fc" title="calculates the relative orientation too the wall " alt="" coords="735,755,842,781"/><area shape="rect" id="node37" href="nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="936,856,1120,883"/><area shape="rect" id="node38" href="nav__fish_8c.html#a73d46dd3746708693a4793f1fc047dfc" title="Calculates distance between the uav and wall. " alt="" coords="725,957,852,984"/><area shape="rect" id="node41" href="nav__fish_8c.html#a04d15699e98da660fe2dd5e4c435cbbb" title="calculates the alignement effect between two uavs " alt="" coords="710,856,867,883"/><area shape="rect" id="node43" href="nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="715,805,862,832"/><area shape="rect" id="node46" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="717,704,860,731"/><area shape="rect" id="node47" href="nav__fish_8c.html#ab79919b0725eedc17018a87fb450b62c" title="Gaussian random number generator with mean =0 and invariance =1 using Box&#45;Muller method. " alt="" coords="711,501,866,528"/><area shape="rect" id="node48" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="707,451,870,477"/><area shape="rect" id="node30" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="942,603,1114,629"/><area shape="rect" id="node31" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1186,577,1322,604"/><area shape="rect" id="node32" href="group__ac__info.html#ga9712309206b85d9fb005f0ba19553a04" title="Get position from LLA coordinates (float). " alt="" coords="1173,679,1335,705"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="1187,476,1321,503"/><area shape="rect" id="node34" href="group__ac__info.html#gafc650e7d5bdaa36628912178842e55bd" title="Get position from LLA coordinates (int). " alt="" coords="1173,628,1335,655"/><area shape="rect" id="node35" href="group__ac__info.html#ga74acacb611beb144c68c7b41ef3e50a4" title="Get position from UTM coordinates (float). " alt="" coords="1168,729,1340,756"/><area shape="rect" id="node39" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="968,932,1088,959"/><area shape="rect" id="node40" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="968,983,1088,1009"/><area shape="rect" id="node42" href="nav__fish_8c.html#ac7f5aa101851d1bc52e80625037a7fbd" title="calculates difference between two headings " alt="" coords="988,805,1068,832"/><area shape="rect" id="node44" href="nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="973,755,1083,781"/><area shape="rect" id="node45" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="1230,780,1278,807"/><area shape="rect" id="node49" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="945,451,1111,477"/></map>
+</map>
 </div>
 </p>
 
@@ -1176,7 +1176,7 @@ current velocity </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_cgraph.png" border="0" usemap="#nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_cgraph" alt=""/></div>
 <map name="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_cgraph" id="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_cgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#ac7f5aa101851d1bc52e80625037a7fbd" title="calculates difference between two headings " alt="" coords="263,5,343,32"/><area shape="rect" id="node3" href="nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="211,56,395,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1187,7 +1187,7 @@ current velocity </td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_icgraph.png" border="0" usemap="#nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_icgraph" id="nav__fish_8c_a04d15699e98da660fe2dd5e4c435cbbb_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="211,5,380,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="428,5,585,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1255,7 +1255,7 @@ current velocity </td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_cgraph.png" border="0" usemap="#nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_cgraph" alt=""/></div>
 <map name="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_cgraph" id="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_cgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="200,5,384,32"/><area shape="rect" id="node3" href="nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="237,56,347,83"/><area shape="rect" id="node4" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="432,56,480,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1266,7 +1266,7 @@ current velocity </td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_icgraph.png" border="0" usemap="#nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_icgraph" id="nav__fish_8c_a79ca39ea4ea5646c25b0671360ff26b0_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="200,5,369,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="417,5,575,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1341,7 +1341,7 @@ current velocity </td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_cgraph.png" border="0" usemap="#nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_cgraph" alt=""/></div>
 <map name="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_cgraph" id="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_cgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#ac7f5aa101851d1bc52e80625037a7fbd" title="calculates difference between two headings " alt="" coords="248,5,328,32"/><area shape="rect" id="node3" href="nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="196,56,380,83"/><area shape="rect" id="node4" href="nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="233,107,343,133"/><area shape="rect" id="node5" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="428,107,476,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1352,7 +1352,7 @@ current velocity </td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_icgraph.png" border="0" usemap="#nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_icgraph" id="nav__fish_8c_a7468ae781e1d813fc3a6a672175e15b4_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="196,5,365,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="413,5,571,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1396,7 +1396,7 @@ current velocity </td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_ab79919b0725eedc17018a87fb450b62c_icgraph.png" border="0" usemap="#nav__fish_8c_ab79919b0725eedc17018a87fb450b62c_icgraph" alt=""/></div>
 <map name="nav__fish_8c_ab79919b0725eedc17018a87fb450b62c_icgraph" id="nav__fish_8c_ab79919b0725eedc17018a87fb450b62c_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="208,5,377,32"/><area shape="rect" id="node3" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="425,5,583,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1426,7 +1426,7 @@ current velocity </td></tr>
 
 <p>Definition at line <a class="el" href="nav__fish_8c_source.html#l00213">213</a> of file <a class="el" href="nav__fish_8c_source.html">nav_fish.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="nav__fish_8c_source.html#l00166">NavFish::f_ali</a>, <a class="el" href="nav__fish_8c_source.html#l00167">NavFish::f_att</a>, <a class="el" href="nav__fish_8c_source.html#l00164">NavFish::f_fluct</a>, <a class="el" href="nav__fish_8c_source.html#l00162">NavFish::f_w</a>, <a class="el" href="nav__fish_8c_source.html#l00165">NavFish::f_wall</a>, <a class="el" href="nav__fish_8c_source.html#l00159">NavFish::heading</a>, <a class="el" href="nav__fish_8c_source.html#l00171">nav_fish</a>, <a class="el" href="nav__fish_8c_source.html#l00161">NavFish::r_w</a>, <a class="el" href="nav__fish_8c_source.html#l00160">NavFish::step_size</a>, and <a class="el" href="nav__fish_8c_source.html#l00163">NavFish::theta_w</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav__fish_8c_source.html#l00166">NavFish::f_ali</a>, <a class="el" href="nav__fish_8c_source.html#l00167">NavFish::f_att</a>, <a class="el" href="nav__fish_8c_source.html#l00164">NavFish::f_fluct</a>, <a class="el" href="nav__fish_8c_source.html#l00162">NavFish::f_w</a>, <a class="el" href="nav__fish_8c_source.html#l00165">NavFish::f_wall</a>, <a class="el" href="nav__fish_8c_source.html#l00159">NavFish::heading</a>, <a class="el" href="nav__fish_8c_source.html#l00171">nav_fish</a>, <a class="el" href="nav__fish_8c_source.html#l00161">NavFish::r_w</a>, <a class="el" href="nav__fish_8c_source.html#l00160">NavFish::step_size</a>, and <a class="el" href="nav__fish_8c_source.html#l00163">NavFish::theta_w</a>.</p>
 
 <p>Referenced by <a class="el" href="nav__fish_8c_source.html#l00487">nav_fish_velocity_run()</a>.</p>
 
@@ -1437,7 +1437,7 @@ current velocity </td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_ac355d105d112168a520efe4e3458141a_icgraph.png" border="0" usemap="#nav__fish_8c_ac355d105d112168a520efe4e3458141a_icgraph" alt=""/></div>
 <map name="nav__fish_8c_ac355d105d112168a520efe4e3458141a_icgraph" id="nav__fish_8c_ac355d105d112168a520efe4e3458141a_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="221,5,379,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1487,7 +1487,7 @@ current velocity </td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_ab74daa0c9784c63e060bfb98cc06fbf5_icgraph.png" border="0" usemap="#nav__fish_8c_ab74daa0c9784c63e060bfb98cc06fbf5_icgraph" alt=""/></div>
 <map name="nav__fish_8c_ab74daa0c9784c63e060bfb98cc06fbf5_icgraph" id="nav__fish_8c_ab74daa0c9784c63e060bfb98cc06fbf5_icgraph">
-<area shape="rect" id="node2" href="gec__dl_8h.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="101,5,247,32"/><area shape="rect" id="node4" href="nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="119,56,229,83"/><area shape="rect" id="node3" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event. " alt="" coords="315,5,421,32"/><area shape="rect" id="node5" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="297,56,439,83"/><area shape="rect" id="node8" href="nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="295,107,441,133"/><area shape="rect" id="node6" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="489,81,659,108"/><area shape="rect" id="node7" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="707,81,864,108"/></map>
+</map>
 </div>
 </p>
 
@@ -1555,7 +1555,7 @@ current velocity </td></tr>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_cgraph.png" border="0" usemap="#nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_cgraph" alt=""/></div>
 <map name="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_cgraph" id="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_cgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="164,5,212,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1566,7 +1566,7 @@ current velocity </td></tr>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_icgraph.png" border="0" usemap="#nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_icgraph" alt=""/></div>
 <map name="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_icgraph" id="nav__fish_8c_a7c7502a079a6db56c8e70fc5d8d18700_icgraph">
-<area shape="rect" id="node2" href="nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="164,5,311,32"/><area shape="rect" id="node5" href="nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="166,56,309,83"/><area shape="rect" id="node3" href="nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="359,31,528,57"/><area shape="rect" id="node4" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="576,31,733,57"/></map>
+</map>
 </div>
 </p>
 
@@ -1635,7 +1635,7 @@ current velocity </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__fish_8c.html">nav_fish.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

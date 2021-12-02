@@ -19,6 +19,7 @@ var stabilization__indi__simple_8h =
       [ "adaptive", "stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808", null ],
       [ "angular_accel_ref", "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342", null ],
       [ "attitude_max_yaw_rate", "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b", null ],
+      [ "cutoff_r", "stabilization__indi__simple_8h.html#a03426f866205fb759e38fdeadf4043ef", null ],
       [ "du", "stabilization__indi__simple_8h.html#a58bd02934d2f55aa4c8735e593233376", null ],
       [ "est", "stabilization__indi__simple_8h.html#a25c3237e5e06e294741eca5ee3266173", null ],
       [ "g1", "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df", null ],
@@ -39,6 +40,7 @@ var stabilization__indi__simple_8h =
     [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604", null ],
     [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi__simple_8h.html#a2d7051eac973a8507897f6753deaf818", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi__simple_8h.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
+    [ "stabilization_indi_simple_reset_r_filter_cutoff", "stabilization__indi__simple_8h.html#a579eabe525912021499370675a0eaf38", null ],
     [ "indi", "stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ],
     [ "stab_att_sp_euler", "stabilization__indi__simple_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi__simple_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]

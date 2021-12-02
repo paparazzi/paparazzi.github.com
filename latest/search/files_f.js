@@ -59,7 +59,6 @@ var searchData=
   ['nav_5fvertical_5fraster_2eh',['nav_vertical_raster.h',['../nav__vertical__raster_8h.html',1,'']]],
   ['navdata_2ec',['navdata.c',['../navdata_8c.html',1,'']]],
   ['navdata_2eh',['navdata.h',['../navdata_8h.html',1,'']]],
-  ['navgo_5f1_2e0_2eh',['navgo_1.0.h',['../navgo__1_80_8h.html',1,'']]],
   ['navigation_2ec',['navigation.c',['../rotorcraft_2navigation_8c.html',1,'']]],
   ['navigation_2ec',['navigation.c',['../rover_2navigation_8c.html',1,'']]],
   ['navigation_2eh',['navigation.h',['../rotorcraft_2navigation_8h.html',1,'']]],

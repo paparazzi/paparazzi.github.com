@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2hmc5843__arch_8h_s
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/* returns true if conversion done */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d">   28</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d">mag_eoc</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a>(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="code" href="gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a>) != 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a>(<a class="code" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="code" href="gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a>) != 0);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HMC5843_ARCH_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="lpc21_2mcu__periph_2gpio__arch_8h_html_a68b66ac73be4c836db878a42e1fea3cd"><div class="ttname"><a href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></div><div class="ttdeci">#define GPIOB</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00037">gpio_arch.h:37</a></div></div>
+<div class="ttc" id="sim_2mcu__periph_2gpio__arch_8h_html_a68b66ac73be4c836db878a42e1fea3cd"><div class="ttname"><a href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></div><div class="ttdeci">#define GPIOB</div><div class="ttdef"><b>Definition:</b> <a href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00035">gpio_arch.h:35</a></div></div>
 <div class="ttc" id="stm32_2peripherals_2hmc5843__arch_8h_html_acd369327ebe1b867cebf4b3dc17bd37d"><div class="ttname"><a href="stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d">mag_eoc</a></div><div class="ttdeci">static int mag_eoc(void)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2peripherals_2hmc5843__arch_8h_source.html#l00028">hmc5843_arch.h:28</a></div></div>
 <div class="ttc" id="chibios_2mcu__periph_2gpio__arch_8h_html_afd6403990094d8cd6010b2e641a977da"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a></div><div class="ttdeci">static uint8_t gpio_get(ioportid_t port, uint16_t pin)</div><div class="ttdoc">Get level of a gpio. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_arch.h:88</a></div></div>
 <div class="ttc" id="gpio__def_8h_html_a1a96368c99d63b0e715b7e0421f4a209"><div class="ttname"><a href="gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a></div><div class="ttdeci">#define GPIO5</div><div class="ttdef"><b>Definition:</b> <a href="gpio__def_8h_source.html#l00036">gpio_def.h:36</a></div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2hmc5843__arch_8h_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_40949b6ea70303acfc197760b8c0e0ae.html">peripherals</a></li><li class="navelem"><a class="el" href="stm32_2peripherals_2hmc5843__arch_8h.html">hmc5843_arch.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:01:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

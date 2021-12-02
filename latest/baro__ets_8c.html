@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('baro__ets_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="baro__ets_8h_source.html">sensors/baro_ets.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br />
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('baro__ets_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ets_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__ets_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__ets_8c" id="sw_2airborne_2modules_2sensors_2baro__ets_8c">
-<area shape="rect" id="node2" href="baro__ets_8h.html" title="Driver for the EagleTree Systems Altitude Sensor. " alt="" coords="105,102,249,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="112,191,243,218"/><area shape="rect" id="node6" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1640,281,1707,307"/><area shape="rect" id="node20" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2602,102,2737,129"/><area shape="rect" id="node22" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="285,281,456,307"/><area shape="rect" id="node26" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1179,95,1325,136"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1817,452,1996,479"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="2075,452,2266,479"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1567,363,1718,404"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1742,363,1893,404"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1969,363,2133,404"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="2039,527,2193,553"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1813,527,1963,553"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1618,452,1742,479"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1153,370,1239,397"/><area shape="rect" id="node27" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="480,281,576,307"/><area shape="rect" id="node28" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1163,184,1341,225"/><area shape="rect" id="node29" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1314,273,1483,315"/><area shape="rect" id="node30" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1365,184,1534,225"/><area shape="rect" id="node31" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="976,191,1067,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="baro__ets_8c_source.html">Go to the source code of this file.</a></p>
@@ -179,9 +179,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8dcbf03c82eb75cdda21eacb04a0cc18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a8dcbf03c82eb75cdda21eacb04a0cc18">baro_ets_adc</a></td></tr>
+<tr class="memitem:a8dcbf03c82eb75cdda21eacb04a0cc18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a8dcbf03c82eb75cdda21eacb04a0cc18">baro_ets_adc</a></td></tr>
 <tr class="separator:a8dcbf03c82eb75cdda21eacb04a0cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab555328369f0264c4182eff10220a57c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#ab555328369f0264c4182eff10220a57c">baro_ets_offset</a></td></tr>
+<tr class="memitem:ab555328369f0264c4182eff10220a57c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#ab555328369f0264c4182eff10220a57c">baro_ets_offset</a></td></tr>
 <tr class="separator:ab555328369f0264c4182eff10220a57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e53a1472f63179c5b73ac9dcc75601c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a1e53a1472f63179c5b73ac9dcc75601c">baro_ets_valid</a></td></tr>
 <tr class="separator:a1e53a1472f63179c5b73ac9dcc75601c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,11 +197,11 @@ Variables</h2></td></tr>
 <tr class="separator:a4ddf405039552176e251f37d10213d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7039f78fff0ad5316ecc0005346fb11c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a7039f78fff0ad5316ecc0005346fb11c">baro_ets_offset_init</a></td></tr>
 <tr class="separator:a7039f78fff0ad5316ecc0005346fb11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60c4ed3c973466fa3541555b8115a12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#aa60c4ed3c973466fa3541555b8115a12">baro_ets_offset_tmp</a></td></tr>
+<tr class="memitem:aa60c4ed3c973466fa3541555b8115a12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#aa60c4ed3c973466fa3541555b8115a12">baro_ets_offset_tmp</a></td></tr>
 <tr class="separator:aa60c4ed3c973466fa3541555b8115a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b73f1b123bdb65f66fc7f1cf4f3cd0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a9b73f1b123bdb65f66fc7f1cf4f3cd0d">baro_ets_cnt</a></td></tr>
+<tr class="memitem:a9b73f1b123bdb65f66fc7f1cf4f3cd0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a9b73f1b123bdb65f66fc7f1cf4f3cd0d">baro_ets_cnt</a></td></tr>
 <tr class="separator:a9b73f1b123bdb65f66fc7f1cf4f3cd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120fec1fd8b6ab46a167802b5fe2d520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a120fec1fd8b6ab46a167802b5fe2d520">baro_ets_delay_time</a></td></tr>
+<tr class="memitem:a120fec1fd8b6ab46a167802b5fe2d520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#a120fec1fd8b6ab46a167802b5fe2d520">baro_ets_delay_time</a></td></tr>
 <tr class="separator:a120fec1fd8b6ab46a167802b5fe2d520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7031129c213edf0e0a2f300d44778d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8c.html#ae7031129c213edf0e0a2f300d44778d8">baro_ets_delay_done</a></td></tr>
 <tr class="separator:ae7031129c213edf0e0a2f300d44778d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,7 +339,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pressure offset in Pascal when converting raw adc to real pressure (. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>find real value) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>find real value) </dd></dl>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00085">85</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
@@ -388,7 +388,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>scale factor to convert raw ADC measurement to pressure in Pascal. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5 </dd></dl>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00075">75</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
@@ -447,7 +447,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00120">120</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00062">BARO_ETS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__ets_8c_source.html#l00064">BARO_ETS_R</a>, <a class="el" href="baro__ets_8c_source.html#l00065">BARO_ETS_SIGMA2</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="sys__time_8h_source.html#l00218">SysTimeTimerStart</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00062">BARO_ETS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__ets_8c_source.html#l00064">BARO_ETS_R</a>, <a class="el" href="baro__ets_8c_source.html#l00065">BARO_ETS_SIGMA2</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="sys__time_8h_source.html#l00223">SysTimeTimerStart</a>.</p>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00151">151</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00103">baro_ets_adc</a>, <a class="el" href="baro__ets_8c_source.html#l00080">BARO_ETS_ALT_SCALE</a>, <a class="el" href="baro__ets_8c_source.html#l00106">baro_ets_altitude</a>, <a class="el" href="baro__ets_8c_source.html#l00116">baro_ets_cnt</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00104">baro_ets_offset</a>, <a class="el" href="baro__ets_8c_source.html#l00114">baro_ets_offset_init</a>, <a class="el" href="baro__ets_8c_source.html#l00060">BARO_ETS_OFFSET_MAX</a>, <a class="el" href="baro__ets_8c_source.html#l00061">BARO_ETS_OFFSET_MIN</a>, <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00115">baro_ets_offset_tmp</a>, <a class="el" href="baro__ets_8c_source.html#l00085">BARO_ETS_PRESSURE_OFFSET</a>, <a class="el" href="baro__ets_8c_source.html#l00075">BARO_ETS_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00052">BARO_ETS_SENDER_ID</a>, <a class="el" href="baro__ets_8c_source.html#l00105">baro_ets_valid</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="common__nav_8c_source.html#l00040">ground_alt</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="bmp3__i2c_8h_source.html#l00050">Bmp3_I2c::pressure</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00103">baro_ets_adc</a>, <a class="el" href="baro__ets_8c_source.html#l00080">BARO_ETS_ALT_SCALE</a>, <a class="el" href="baro__ets_8c_source.html#l00106">baro_ets_altitude</a>, <a class="el" href="baro__ets_8c_source.html#l00116">baro_ets_cnt</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00104">baro_ets_offset</a>, <a class="el" href="baro__ets_8c_source.html#l00114">baro_ets_offset_init</a>, <a class="el" href="baro__ets_8c_source.html#l00060">BARO_ETS_OFFSET_MAX</a>, <a class="el" href="baro__ets_8c_source.html#l00061">BARO_ETS_OFFSET_MIN</a>, <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00115">baro_ets_offset_tmp</a>, <a class="el" href="baro__ets_8c_source.html#l00085">BARO_ETS_PRESSURE_OFFSET</a>, <a class="el" href="baro__ets_8c_source.html#l00075">BARO_ETS_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00052">BARO_ETS_SENDER_ID</a>, <a class="el" href="baro__ets_8c_source.html#l00105">baro_ets_valid</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="common__nav_8c_source.html#l00040">ground_alt</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="bmp3__i2c_8h_source.html#l00050">Bmp3_I2c::pressure</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -476,7 +476,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ets_8c_a96839d4b74df9e3c49695989b344bac1_cgraph.png" border="0" usemap="#baro__ets_8c_a96839d4b74df9e3c49695989b344bac1_cgraph" alt=""/></div>
 <map name="baro__ets_8c_a96839d4b74df9e3c49695989b344bac1_cgraph" id="baro__ets_8c_a96839d4b74df9e3c49695989b344bac1_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="211,5,355,32"/></map>
+</map>
 </div>
 </p>
 
@@ -498,7 +498,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00139">139</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00058">BARO_ETS_ADDR</a>, <a class="el" href="baro__ets_8c_source.html#l00118">baro_ets_delay_done</a>, <a class="el" href="baro__ets_8c_source.html#l00117">baro_ets_delay_time</a>, <a class="el" href="baro__ets_8c_source.html#l00089">BARO_ETS_I2C_DEV</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00098">BARO_ETS_START_DELAY</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="sys__time_8h_source.html#l00219">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00210">USEC_OF_SEC</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00058">BARO_ETS_ADDR</a>, <a class="el" href="baro__ets_8c_source.html#l00118">baro_ets_delay_done</a>, <a class="el" href="baro__ets_8c_source.html#l00117">baro_ets_delay_time</a>, <a class="el" href="baro__ets_8c_source.html#l00089">BARO_ETS_I2C_DEV</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00098">BARO_ETS_START_DELAY</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="sys__time_8h_source.html#l00224">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00215">USEC_OF_SEC</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -507,7 +507,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph.png" border="0" usemap="#baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph" alt=""/></div>
 <map name="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph" id="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="224,5,317,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="365,5,456,32"/></map>
+</map>
 </div>
 </p>
 
@@ -519,7 +519,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_adc</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_adc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -551,7 +551,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_cnt</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -583,7 +583,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baro_ets_delay_time</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> baro_ets_delay_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -631,7 +631,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_offset</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> baro_ets_offset</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -663,7 +663,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baro_ets_offset_tmp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> baro_ets_offset_tmp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -728,7 +728,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ets_8c.html">baro_ets.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:09 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

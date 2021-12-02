@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if !defined(PPRZ_TRIG_INT_USE_FLOAT)</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if !defined(PPRZ_TRIG_INT_COMPR_FLASH) || defined(PPRZ_TRIG_INT_TEST)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#addcf33d6609d6b7bae80076cd27487a6">   31</a></span>&#160;<a class="code" href="pprz__trig__int_8h.html#a5292d1716a00153e3ed02fa7e671eb2c">PPRZ_TRIG_CONST</a> <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[6434] = {    0,</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#addcf33d6609d6b7bae80076cd27487a6">   31</a></span>&#160;<a class="code" href="pprz__trig__int_8h.html#a5292d1716a00153e3ed02fa7e671eb2c">PPRZ_TRIG_CONST</a> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> <a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[6434] = {    0,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                   3,     7,    11,    15,    19,    23,    27,    31,    35,    39,    43,    47,    51,    55,    59,    63,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                   67,    71,    75,    79,    83,    87,    91,    95,    99,   103,   107,   111,   115,   119,   123,   127,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                   131,   135,   139,   143,   147,   151,   155,   159,   163,   167,   171,   175,   179,   183,   187,   191,</div>
@@ -542,7 +542,7 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_FLASH)</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pprz_trig_int_compr[<a class="code" href="pprz__trig__int_8h.html#a0a931bbe72494fad16bc758af0db7332">TRIG_INT_COMPR_LEN</a>] = {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pprz_trig_int_compr[<a class="code" href="pprz__trig__int_8h.html#a0a931bbe72494fad16bc758af0db7332">TRIG_INT_COMPR_LEN</a>] = {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  0xF3, 0xCF, 0xFF, 0xFC, 0xCF, 0xFF, 0xFC, 0xCF, 0xFF, 0xFC, 0xCF, 0x9E,</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  0xF3, 0xCF, 0x8F, 0x3C, 0xFF, 0xFC, 0x41, 0xF3, 0xCF, 0x34, 0x9F, 0x3C,</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  0x4F, 0x3C, 0x1F, 0x3C, 0xFF, 0x34, 0xCF, 0x34, 0xBF, 0x34, 0xAF, 0x34,</div>
@@ -691,10 +691,10 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_FLASH)</span></div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_HIGHEST)</span></div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_4[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a> / 2];</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_4[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#a42c7f677c1b0e4f5e479b945aa6e409e">TREE_SIZE_4</a>)];</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_4[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a> / 2];</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_4[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#a42c7f677c1b0e4f5e479b945aa6e409e">TREE_SIZE_4</a>)];</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keywordtype">void</span> table_encode_4(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val_prev, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> cnt, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *tab)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keywordtype">void</span> table_encode_4(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val_prev, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> cnt, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *tab)</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  <span class="comment">/* build 4 bit table */</span></div>
@@ -711,10 +711,10 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  }</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;}</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pprz_trig_int_4(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val)</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pprz_trig_int_4(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val)</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> k;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> k;</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="comment">/* search tree for the 4 bit data */</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  k = 1 &lt;&lt; (<a class="code" href="pprz__trig__int_8h.html#a42c7f677c1b0e4f5e479b945aa6e409e">TREE_SIZE_4</a> - 1);</div>
@@ -734,10 +734,10 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_HIGH)</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_8[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a>];</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_8[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#a68d448239b64576551dff4204bd189f7">TREE_SIZE_8</a>)];</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_8[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a>];</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_8[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#a68d448239b64576551dff4204bd189f7">TREE_SIZE_8</a>)];</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="keywordtype">void</span> table_encode_8(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val_prev, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> cnt, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *tab)</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="keywordtype">void</span> table_encode_8(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val_prev, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> cnt, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *tab)</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;{</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  <span class="comment">/* build 8 bit table */</span></div>
@@ -750,9 +750,9 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  }</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;}</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pprz_trig_int_8(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pprz_trig_int_8(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val)</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;{</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j, k;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j, k;</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  <span class="comment">/* search the tree for 8 bit data */</span></div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  k = 1 &lt;&lt; (<a class="code" href="pprz__trig__int_8h.html#a68d448239b64576551dff4204bd189f7">TREE_SIZE_8</a> - 1);</div>
@@ -772,12 +772,12 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_LOW)</span></div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_12[(<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a> * 3) / 2];</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_buf_12[(<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a> * 3) / 2];</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="preprocessor">#if USE_REAL_TABLE_12_USE</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_12[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#aa679ed14395f7c842c1c1c9ad7915ef3">TREE_SIZE_12</a>)];</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tree_buf_12[(1 &lt;&lt; <a class="code" href="pprz__trig__int_8h.html#aa679ed14395f7c842c1c1c9ad7915ef3">TREE_SIZE_12</a>)];</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="keywordtype">void</span> table_encode_12(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val_prev, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> cnt, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *tab)</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="keywordtype">void</span> table_encode_12(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val_prev, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> cnt, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *tab)</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;{</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="comment">/* build 12 bit table */</span></div>
@@ -806,10 +806,10 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;}</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pprz_trig_int_12(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val)</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pprz_trig_int_12(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val)</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;{</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="preprocessor">#if USE_REAL_TABLE_12_USE</span></div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> k;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> k;</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  <span class="comment">/* search tree for the 12 bit data */</span></div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  k = 1 &lt;&lt; (<a class="code" href="pprz__trig__int_8h.html#aa679ed14395f7c842c1c1c9ad7915ef3">TREE_SIZE_12</a> - 1);</div>
@@ -823,7 +823,7 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  }</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  <span class="keywordflow">return</span> (k &lt;&lt; 12) | ((data_buf_12[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a> + (val / 2)] &lt;&lt; ((val % 2) ? 4 : 8)) &amp; 0xF00) | (data_buf_12[val]);</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> k;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> k;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <span class="comment">/* search tree for the 12 bit data */</span></div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="keywordflow">if</span> (val &lt; <a class="code" href="pprz__trig__int_8h.html#a3a2375ba895a8ea2c2569a93dbcd3009">TREE_BUF_12_2</a>) {</div>
@@ -846,36 +846,36 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_NONE)</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> data_buf_16[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a>];</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> data_buf_16[<a class="code" href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a>];</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pprz_trig_int_16(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> val)</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="keyword">inline</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pprz_trig_int_16(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> val)</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;{</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">return</span> data_buf_16[<a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>];</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;}</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="keywordtype">void</span> table_encode_16(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> val, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> cnt)</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="keywordtype">void</span> table_encode_16(<a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> val, <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> cnt)</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;{</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  data_buf_16[cnt] = <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;}</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> get_nibble(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pos)</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> get_nibble(<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pos)</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;{</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="keywordflow">return</span> (pprz_trig_int_compr[pos / 2] &gt;&gt; (4 * (pos % 2))) &amp; 0xF;</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;}</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="keywordtype">int</span> pprz_trig_int_init(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pprz__trig__int_8c.html#a4da1dd8c55ab01104adbcae594ca9621">pprz_trig_int_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;{</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> i, j, k, cnt, temp, <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, val_prev;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> i, j, k, cnt, temp, <a class="code" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, val_prev;</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_HIGHEST)</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> tab_4 = 0;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> tab_4 = 0;</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_HIGH)</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> tab_8 = 0;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> tab_8 = 0;</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_LOW)</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> tab_12 = 0;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> tab_12 = 0;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  cnt = 0;</div>
@@ -946,7 +946,7 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;}</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> pprz_trig_int_f(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> angle)</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="keyword">inline</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> pprz_trig_int_f(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> angle)</div>
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;{</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_HIGHEST)</span></div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="keywordflow">return</span> pprz_trig_int_4(angle);</div>
@@ -959,133 +959,140 @@ $(document).ready(function(){initNavTree('pprz__trig__int_8c_source.html','');})
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;}</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor">#endif // PPRZ_TRIG_INT_COMPR_FLASH</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
-<div class="line"><a name="l00859"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#aab62d96cc0a5f76ed59b60d27332d663">  859</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> angle)</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;{</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_USE_FLOAT)</span></div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <span class="keywordtype">float</span> tmp;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  tmp = <a class="code" href="group__math__algebra__int.html#gacb03bec97dc344a1416432700179ee1c">ANGLE_FLOAT_OF_BFP</a>(angle);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  tmp = sinf(tmp);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  angle = <a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(tmp);</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  <span class="keywordflow">return</span> angle;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <a class="code" href="group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3">INT32_ANGLE_NORMALIZE</a>(angle);</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="keywordflow">if</span> (angle &gt; <a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>) {</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    angle = <a class="code" href="group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55">INT32_ANGLE_PI</a> - angle;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (angle &lt; -<a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>) {</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    angle = -<a class="code" href="group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55">INT32_ANGLE_PI</a> - angle;</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  }</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="keywordflow">if</span> (angle &gt;= 0) {</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_FLASH)</span></div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keywordflow">return</span> pprz_trig_int_f(angle);</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keywordflow">return</span> -pprz_trig_int_f(-angle);</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[angle];</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">return</span> -<a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[-angle];</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  }</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;}</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
-<div class="line"><a name="l00888"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a728b04d5a78d866cd79c86b0c3c6c5a0">  888</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0">pprz_itrig_cos</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> angle)</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;{</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a>(angle + <a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>);</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;}</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="comment">// dummy init</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a4da1dd8c55ab01104adbcae594ca9621">  860</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="pprz__trig__int_8c.html#a4da1dd8c55ab01104adbcae594ca9621">pprz_trig_int_init</a>(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;<span class="preprocessor">#endif // PPRZ_TRIG_INT_COMPR_FLASH</span></div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
+<div class="line"><a name="l00865"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#aab62d96cc0a5f76ed59b60d27332d663">  865</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> angle)</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;{</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_USE_FLOAT)</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keywordtype">float</span> tmp;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  tmp = <a class="code" href="group__math__algebra__int.html#gacb03bec97dc344a1416432700179ee1c">ANGLE_FLOAT_OF_BFP</a>(angle);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  tmp = sinf(tmp);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  angle = <a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(tmp);</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="keywordflow">return</span> angle;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <a class="code" href="group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3">INT32_ANGLE_NORMALIZE</a>(angle);</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="keywordflow">if</span> (angle &gt; <a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>) {</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    angle = <a class="code" href="group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55">INT32_ANGLE_PI</a> - angle;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (angle &lt; -<a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>) {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    angle = -<a class="code" href="group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55">INT32_ANGLE_PI</a> - angle;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  }</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keywordflow">if</span> (angle &gt;= 0) {</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;<span class="preprocessor">#if defined(PPRZ_TRIG_INT_COMPR_FLASH)</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">return</span> pprz_trig_int_f(angle);</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <span class="keywordflow">return</span> -pprz_trig_int_f(-angle);</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[angle];</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    <span class="keywordflow">return</span> -<a class="code" href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a>[-angle];</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  }</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;}</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;<span class="comment">/* http://jet.ro/files/The_neglected_art_of_Fixed_Point_arithmetic_20060913.pdf */</span></div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="comment">/* http://www.dspguru.com/dsp/tricks/fixed-point-atan2-with-self-normalization */</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;</div>
-<div class="line"><a name="l00897"></a><span class="lineno"><a class="line" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">  897</a></span>&#160;<span class="preprocessor">#define R_FRAC 14</span></div>
+<div class="line"><a name="l00894"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a728b04d5a78d866cd79c86b0c3c6c5a0">  894</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0">pprz_itrig_cos</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> angle)</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;{</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a>(angle + <a class="code" href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a>);</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;}</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a6956acbbebece339445b927026010cdb">  899</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a6956acbbebece339445b927026010cdb">int32_atan2</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> y, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x)</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;{</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a> = <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a> = 3 * <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> abs_y = abs(y) + 1;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> r;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> a;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keywordflow">if</span> (x &gt;= 0) {</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    r = ((x - abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (x + abs_y);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    a = c1 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    r = ((x + abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (abs_y - x);</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    a = c2 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  }</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="keywordflow">if</span> (y &lt; 0) {</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    <span class="keywordflow">return</span> -a;  <span class="comment">// negate if in quad III or IV</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="comment">/* http://jet.ro/files/The_neglected_art_of_Fixed_Point_arithmetic_20060913.pdf */</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;<span class="comment">/* http://www.dspguru.com/dsp/tricks/fixed-point-atan2-with-self-normalization */</span></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
+<div class="line"><a name="l00903"></a><span class="lineno"><a class="line" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">  903</a></span>&#160;<span class="preprocessor">#define R_FRAC 14</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
+<div class="line"><a name="l00905"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a6956acbbebece339445b927026010cdb">  905</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a6956acbbebece339445b927026010cdb">int32_atan2</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> y, <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> x)</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;{</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a> = <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a> = 3 * <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> abs_y = abs(y) + 1;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> r;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> a;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="keywordflow">if</span> (x &gt;= 0) {</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    r = ((x - abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (x + abs_y);</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    a = c1 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    <span class="keywordflow">return</span> a;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  }</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;}</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00921"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a819fd8c37d7553e4ad43e32acbe43ea5">  921</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a819fd8c37d7553e4ad43e32acbe43ea5">int32_atan2_2</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> y, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x)</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;{</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a> = <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a> = 3 * <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;  <span class="keyword">const</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> abs_y = abs(y) + 1;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> r;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> a;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  <span class="keywordflow">if</span> (x &gt;= 0) {</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    r = ((x - abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (x + abs_y);</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> r2 = (r * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> tmp1 = ((r2 * (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)<a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(0.1963)) &gt;&gt; <a class="code" href="group__math__algebra__int.html#gaa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a>) - <a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(0.9817);</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    a = ((tmp1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) + <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a>;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    r = ((x + abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (abs_y - x);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    a = c2 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  }</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="keywordflow">if</span> (y &lt; 0) {</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <span class="keywordflow">return</span> -a;  <span class="comment">// negate if in quad III or IV</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    r = ((x + abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (abs_y - x);</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    a = c2 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  }</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;  <span class="keywordflow">if</span> (y &lt; 0) {</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <span class="keywordflow">return</span> -a;  <span class="comment">// negate if in quad III or IV</span></div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  }</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;}</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;</div>
+<div class="line"><a name="l00927"></a><span class="lineno"><a class="line" href="pprz__trig__int_8h.html#a819fd8c37d7553e4ad43e32acbe43ea5">  927</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__trig__int_8c.html#a819fd8c37d7553e4ad43e32acbe43ea5">int32_atan2_2</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> y, <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> x)</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;{</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a> = <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a> = 3 * <a class="code" href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a>;</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> abs_y = abs(y) + 1;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> r;</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> a;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keywordflow">if</span> (x &gt;= 0) {</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    r = ((x - abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (x + abs_y);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> r2 = (r * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> tmp1 = ((r2 * (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)<a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(0.1963)) &gt;&gt; <a class="code" href="group__math__algebra__int.html#gaa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a>) - <a class="code" href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(0.9817);</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    a = ((tmp1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) + <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a>;</div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="keywordflow">return</span> a;</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  }</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;}</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    r = ((x + abs_y) &lt;&lt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>) / (abs_y - x);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    a = c2 - ((c1 * r) &gt;&gt; <a class="code" href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a>);</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  }</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordflow">if</span> (y &lt; 0) {</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">return</span> -a;  <span class="comment">// negate if in quad III or IV</span></div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  }</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;}</div>
 <div class="ttc" id="pprz__trig__int_8h_html_afe5058505fa494bcd67642089d17784b"><div class="ttname"><a href="pprz__trig__int_8h.html#afe5058505fa494bcd67642089d17784b">TREE_BUF_12_1</a></div><div class="ttdeci">#define TREE_BUF_12_1</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00068">pprz_trig_int.h:68</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a68d448239b64576551dff4204bd189f7"><div class="ttname"><a href="pprz__trig__int_8h.html#a68d448239b64576551dff4204bd189f7">TREE_SIZE_8</a></div><div class="ttdeci">#define TREE_SIZE_8</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00058">pprz_trig_int.h:58</a></div></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_aa679ed14395f7c842c1c1c9ad7915ef3"><div class="ttname"><a href="pprz__trig__int_8h.html#aa679ed14395f7c842c1c1c9ad7915ef3">TREE_SIZE_12</a></div><div class="ttdeci">#define TREE_SIZE_12</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00059">pprz_trig_int.h:59</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a3a2375ba895a8ea2c2569a93dbcd3009"><div class="ttname"><a href="pprz__trig__int_8h.html#a3a2375ba895a8ea2c2569a93dbcd3009">TREE_BUF_12_2</a></div><div class="ttdeci">#define TREE_BUF_12_2</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00069">pprz_trig_int.h:69</a></div></div>
 <div class="ttc" id="pprz__trig__int_8c_html_a196bd3118faa3bb82247b23c728514d1"><div class="ttname"><a href="pprz__trig__int_8c.html#a196bd3118faa3bb82247b23c728514d1">pprz_trig_int</a></div><div class="ttdeci">PPRZ_TRIG_CONST int16_t pprz_trig_int[6434]</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00031">pprz_trig_int.c:31</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a0a931bbe72494fad16bc758af0db7332"><div class="ttname"><a href="pprz__trig__int_8h.html#a0a931bbe72494fad16bc758af0db7332">TRIG_INT_COMPR_LEN</a></div><div class="ttdeci">#define TRIG_INT_COMPR_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00063">pprz_trig_int.h:63</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_gaa44eb0f6e2852cfa82eadb3fa158a5e8"><div class="ttname"><a href="group__math__algebra__int.html#gaa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a></div><div class="ttdeci">#define INT32_ANGLE_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00116">pprz_algebra_int.h:116</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdoc">Typedef defining 8 bit char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00103">vl53l1_types.h:103</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aa343fa3b3d06292b959ffdd4c4703b06"><div class="ttname"><a href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></div><div class="ttdeci">short int16_t</div><div class="ttdoc">Typedef defining 16 bit short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00093">vl53l1_types.h:93</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html"><div class="ttname"><a href="pprz__trig__int_8h.html">pprz_trig_int.h</a></div><div class="ttdoc">Paparazzi fixed point trig functions. </div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga791b71cee6aa92a59ccbe7ec6bb8aa6e"><div class="ttname"><a href="group__math__algebra__int.html#ga791b71cee6aa92a59ccbe7ec6bb8aa6e">INT32_ANGLE_PI_2</a></div><div class="ttdeci">#define INT32_ANGLE_PI_2</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00119">pprz_algebra_int.h:119</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_gacb03bec97dc344a1416432700179ee1c"><div class="ttname"><a href="group__math__algebra__int.html#gacb03bec97dc344a1416432700179ee1c">ANGLE_FLOAT_OF_BFP</a></div><div class="ttdeci">#define ANGLE_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00211">pprz_algebra_int.h:211</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a42c7f677c1b0e4f5e479b945aa6e409e"><div class="ttname"><a href="pprz__trig__int_8h.html#a42c7f677c1b0e4f5e479b945aa6e409e">TREE_SIZE_4</a></div><div class="ttdeci">#define TREE_SIZE_4</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00057">pprz_trig_int.h:57</a></div></div>
-<div class="ttc" id="pprz__trig__int_8c_html_aef4b2f7e743782995888ba8eca64e7a4"><div class="ttname"><a href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a></div><div class="ttdeci">#define R_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00897">pprz_trig_int.c:897</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_aef4b2f7e743782995888ba8eca64e7a4"><div class="ttname"><a href="pprz__trig__int_8c.html#aef4b2f7e743782995888ba8eca64e7a4">R_FRAC</a></div><div class="ttdeci">#define R_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00903">pprz_trig_int.c:903</a></div></div>
 <div class="ttc" id="temp__tcouple__adc_8c_html_a530497e1435a9d2606cd3b9b2336de34"><div class="ttname"><a href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a></div><div class="ttdeci">uint16_t val[TCOUPLE_NB]</div><div class="ttdef"><b>Definition:</b> <a href="temp__tcouple__adc_8c_source.html#l00049">temp_tcouple_adc.c:49</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_gafafafd344e879ac5e7177086414524f3"><div class="ttname"><a href="group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3">INT32_ANGLE_NORMALIZE</a></div><div class="ttdeci">#define INT32_ANGLE_NORMALIZE(_a)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00126">pprz_algebra_int.h:126</a></div></div>
-<div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="baro__MS5534A_8c_html_a6d94ee929fd62c2982e49f8e2a04166e"><div class="ttname"><a href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a></div><div class="ttdeci">static uint16_t c1</div><div class="ttdef"><b>Definition:</b> <a href="baro__MS5534A_8c_source.html#l00203">baro_MS5534A.c:203</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a5292d1716a00153e3ed02fa7e671eb2c"><div class="ttname"><a href="pprz__trig__int_8h.html#a5292d1716a00153e3ed02fa7e671eb2c">PPRZ_TRIG_CONST</a></div><div class="ttdeci">#define PPRZ_TRIG_CONST</div><div class="ttdoc">Allow makefile to define PPRZ_TRIG_CONST in case we want to make the trig tables const and store them...</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00040">pprz_trig_int.h:40</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_a4da1dd8c55ab01104adbcae594ca9621"><div class="ttname"><a href="pprz__trig__int_8c.html#a4da1dd8c55ab01104adbcae594ca9621">pprz_trig_int_init</a></div><div class="ttdeci">int pprz_trig_int_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00860">pprz_trig_int.c:860</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga488bd4dc490bfad7ff4aa4eb489c193e"><div class="ttname"><a href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a></div><div class="ttdeci">#define ANGLE_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00210">pprz_algebra_int.h:210</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga0d7f28c0b8099d27fd6604cea0f2d149"><div class="ttname"><a href="group__math__algebra__int.html#ga0d7f28c0b8099d27fd6604cea0f2d149">INT32_ANGLE_PI_4</a></div><div class="ttdeci">#define INT32_ANGLE_PI_4</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00118">pprz_algebra_int.h:118</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a334b4601904a590d6d723b62e22b3aae"><div class="ttname"><a href="pprz__trig__int_8h.html#a334b4601904a590d6d723b62e22b3aae">TREE_BUF_12_3</a></div><div class="ttdeci">#define TREE_BUF_12_3</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00070">pprz_trig_int.h:70</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a95b747c5c747d13e65890f1307801454"><div class="ttname"><a href="pprz__trig__int_8h.html#a95b747c5c747d13e65890f1307801454">ONE_MIN</a></div><div class="ttdeci">#define ONE_MIN</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00066">pprz_trig_int.h:66</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="pprz__trig__int_8c_html_aab62d96cc0a5f76ed59b60d27332d663"><div class="ttname"><a href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a></div><div class="ttdeci">int32_t pprz_itrig_sin(int32_t angle)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00859">pprz_trig_int.c:859</a></div></div>
-<div class="ttc" id="pprz__trig__int_8c_html_a819fd8c37d7553e4ad43e32acbe43ea5"><div class="ttname"><a href="pprz__trig__int_8c.html#a819fd8c37d7553e4ad43e32acbe43ea5">int32_atan2_2</a></div><div class="ttdeci">int32_t int32_atan2_2(int32_t y, int32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00921">pprz_trig_int.c:921</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_aab62d96cc0a5f76ed59b60d27332d663"><div class="ttname"><a href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663">pprz_itrig_sin</a></div><div class="ttdeci">int32_t pprz_itrig_sin(int32_t angle)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00865">pprz_trig_int.c:865</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_a819fd8c37d7553e4ad43e32acbe43ea5"><div class="ttname"><a href="pprz__trig__int_8c.html#a819fd8c37d7553e4ad43e32acbe43ea5">int32_atan2_2</a></div><div class="ttdeci">int32_t int32_atan2_2(int32_t y, int32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00927">pprz_trig_int.c:927</a></div></div>
 <div class="ttc" id="baro__MS5534A_8c_html_ac7bcd4e07054b2ecda5619619b8bfa19"><div class="ttname"><a href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a></div><div class="ttdeci">static uint16_t c2</div><div class="ttdef"><b>Definition:</b> <a href="baro__MS5534A_8c_source.html#l00203">baro_MS5534A.c:203</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga58a2d2d9497e4eca375996eeffdb4b55"><div class="ttname"><a href="group__math__algebra__int.html#ga58a2d2d9497e4eca375996eeffdb4b55">INT32_ANGLE_PI</a></div><div class="ttdeci">#define INT32_ANGLE_PI</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00120">pprz_algebra_int.h:120</a></div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a655f09f213aa12c28ff321af1cd6b92e"><div class="ttname"><a href="pprz__trig__int_8h.html#a655f09f213aa12c28ff321af1cd6b92e">TRIG_INT_SIZE</a></div><div class="ttdeci">#define TRIG_INT_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00055">pprz_trig_int.h:55</a></div></div>
-<div class="ttc" id="types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00015">types.h:15</a></div></div>
-<div class="ttc" id="pprz__trig__int_8c_html_a728b04d5a78d866cd79c86b0c3c6c5a0"><div class="ttname"><a href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0">pprz_itrig_cos</a></div><div class="ttdeci">int32_t pprz_itrig_cos(int32_t angle)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00888">pprz_trig_int.c:888</a></div></div>
-<div class="ttc" id="pprz__trig__int_8c_html_a6956acbbebece339445b927026010cdb"><div class="ttname"><a href="pprz__trig__int_8c.html#a6956acbbebece339445b927026010cdb">int32_atan2</a></div><div class="ttdeci">int32_t int32_atan2(int32_t y, int32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00899">pprz_trig_int.c:899</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_a728b04d5a78d866cd79c86b0c3c6c5a0"><div class="ttname"><a href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0">pprz_itrig_cos</a></div><div class="ttdeci">int32_t pprz_itrig_cos(int32_t angle)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00894">pprz_trig_int.c:894</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="pprz__trig__int_8c_html_a6956acbbebece339445b927026010cdb"><div class="ttname"><a href="pprz__trig__int_8c.html#a6956acbbebece339445b927026010cdb">int32_atan2</a></div><div class="ttdeci">int32_t int32_atan2(int32_t y, int32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8c_source.html#l00905">pprz_trig_int.c:905</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
 <div class="ttc" id="pprz__trig__int_8h_html_a7415f7308abdfc22c58573b4570d440f"><div class="ttname"><a href="pprz__trig__int_8h.html#a7415f7308abdfc22c58573b4570d440f">TRIG_INT_RLE_LEN</a></div><div class="ttdeci">#define TRIG_INT_RLE_LEN</div><div class="ttdef"><b>Definition:</b> <a href="pprz__trig__int_8h_source.html#l00062">pprz_trig_int.h:62</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__trig__int_8c.html">pprz_trig_int.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

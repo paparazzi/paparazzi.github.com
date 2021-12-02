@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gps__ubx__i2c_8h_source.html">modules/gps/gps_ubx_i2c.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps_2gps__ubx__i2c_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2gps_2gps__ubx__i2c_8c" id="sw_2airborne_2modules_2gps_2gps__ubx__i2c_8c">
-<area shape="rect" id="node2" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="23,273,154,300"/><area shape="rect" id="node5" href="gps__ubx__i2c_8h.html" title="pprz link device for Ublox over I2C " alt="" coords="124,184,285,225"/><area shape="rect" id="node7" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="588,95,741,136"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="705,191,790,218"/><area shape="rect" id="node12" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="309,184,463,225"/><area shape="rect" id="node14" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="487,191,680,218"/><area shape="rect" id="node16" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="511,273,650,300"/></map>
+</map>
 </div>
 </div>
 <p><a href="gps__ubx__i2c_8c_source.html">Go to the source code of this file.</a></p>
@@ -146,25 +146,25 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afb78ffee07cb1190a736971f18eb17d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#afb78ffee07cb1190a736971f18eb17d1">null_function</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baudrate)</td></tr>
+<tr class="memitem:afb78ffee07cb1190a736971f18eb17d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#afb78ffee07cb1190a736971f18eb17d1">null_function</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> baudrate)</td></tr>
 <tr class="memdesc:afb78ffee07cb1190a736971f18eb17d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">null function  <a href="#afb78ffee07cb1190a736971f18eb17d1">More...</a><br /></td></tr>
 <tr class="separator:afb78ffee07cb1190a736971f18eb17d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201e7f484b96faa23d7a9506d7442bc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9">gps_i2c_check_free_space</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:a201e7f484b96faa23d7a9506d7442bc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9">gps_i2c_check_free_space</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:a201e7f484b96faa23d7a9506d7442bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check available space in transmit buffer.  <a href="#a201e7f484b96faa23d7a9506d7442bc9">More...</a><br /></td></tr>
 <tr class="separator:a201e7f484b96faa23d7a9506d7442bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee916f88f710ec46463e53d9350df177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177">gps_i2c_put_byte</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="memitem:aee916f88f710ec46463e53d9350df177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177">gps_i2c_put_byte</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
 <tr class="memdesc:aee916f88f710ec46463e53d9350df177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put byte into transmit buffer.  <a href="#aee916f88f710ec46463e53d9350df177">More...</a><br /></td></tr>
 <tr class="separator:aee916f88f710ec46463e53d9350df177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb47044db85e0eb5ea321cfb97f48059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059">gps_i2c_put_buffer</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:afb47044db85e0eb5ea321cfb97f48059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059">gps_i2c_put_buffer</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:afb47044db85e0eb5ea321cfb97f48059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put bytes into transmit buffer.  <a href="#afb47044db85e0eb5ea321cfb97f48059">More...</a><br /></td></tr>
 <tr class="separator:afb47044db85e0eb5ea321cfb97f48059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af038668157161a873a764a7edc0a367b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b">gps_i2c_msg_ready</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>)</td></tr>
 <tr class="memdesc:af038668157161a873a764a7edc0a367b"><td class="mdescLeft">&#160;</td><td class="mdescRight">send buffer when ready  <a href="#af038668157161a873a764a7edc0a367b">More...</a><br /></td></tr>
 <tr class="separator:af038668157161a873a764a7edc0a367b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9375743ce0fb16c3a4892eb0f823bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd">gps_i2c_char_available</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memitem:a4e9375743ce0fb16c3a4892eb0f823bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd">gps_i2c_char_available</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a4e9375743ce0fb16c3a4892eb0f823bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if a new character is available  <a href="#a4e9375743ce0fb16c3a4892eb0f823bd">More...</a><br /></td></tr>
 <tr class="separator:a4e9375743ce0fb16c3a4892eb0f823bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a241634e6c8b878f03d15aa698baf0fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4">gps_i2c_getch</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memitem:a241634e6c8b878f03d15aa698baf0fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4">gps_i2c_getch</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a241634e6c8b878f03d15aa698baf0fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a new char  <a href="#a241634e6c8b878f03d15aa698baf0fe4">More...</a><br /></td></tr>
 <tr class="separator:a241634e6c8b878f03d15aa698baf0fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ccc0087dc23753c79b16f60f859b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a02ccc0087dc23753c79b16f60f859b56">gps_ubx_i2c_init</a> (void)</td></tr>
@@ -190,7 +190,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a249b40aa07e26dfa8d3b1c8f004a218e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a249b40aa07e26dfa8d3b1c8f004a218e">gps_ubx_i2c_ucenter_done</a></td></tr>
 <tr class="memdesc:a249b40aa07e26dfa8d3b1c8f004a218e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ucenter finished configuring flag  <a href="#a249b40aa07e26dfa8d3b1c8f004a218e">More...</a><br /></td></tr>
 <tr class="separator:a249b40aa07e26dfa8d3b1c8f004a218e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49339255e2d031cd472c67bfdc914261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a49339255e2d031cd472c67bfdc914261">gps_ubx_i2c_bytes_to_read</a></td></tr>
+<tr class="memitem:a49339255e2d031cd472c67bfdc914261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a49339255e2d031cd472c67bfdc914261">gps_ubx_i2c_bytes_to_read</a></td></tr>
 <tr class="memdesc:a49339255e2d031cd472c67bfdc914261"><td class="mdescLeft">&#160;</td><td class="mdescRight">ublox bytes to read  <a href="#a49339255e2d031cd472c67bfdc914261">More...</a><br /></td></tr>
 <tr class="separator:a49339255e2d031cd472c67bfdc914261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -282,7 +282,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a0eba8e874698ad3731835fe274aa7702_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a0eba8e874698ad3731835fe274aa7702_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a0eba8e874698ad3731835fe274aa7702_icgraph" id="gps__ubx__i2c_8c_a0eba8e874698ad3731835fe274aa7702_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="165,5,353,32"/></map>
+</map>
 </div>
 </p>
 
@@ -293,7 +293,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gps_i2c_char_available </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gps_i2c_char_available </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -323,7 +323,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a4e9375743ce0fb16c3a4892eb0f823bd_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a4e9375743ce0fb16c3a4892eb0f823bd_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a4e9375743ce0fb16c3a4892eb0f823bd_icgraph" id="gps__ubx__i2c_8c_a4e9375743ce0fb16c3a4892eb0f823bd_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="237,5,363,32"/><area shape="rect" id="node3" href="gps__ubx__i2c_8h.html#a5b24ad52c404f9b8e7cc0b44685107f3" title="handle message sending " alt="" coords="221,56,379,83"/></map>
+</map>
 </div>
 </p>
 
@@ -348,7 +348,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -382,7 +382,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a201e7f484b96faa23d7a9506d7442bc9_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a201e7f484b96faa23d7a9506d7442bc9_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a201e7f484b96faa23d7a9506d7442bc9_icgraph" id="gps__ubx__i2c_8c_a201e7f484b96faa23d7a9506d7442bc9_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="200,13,327,39"/></map>
+</map>
 </div>
 </p>
 
@@ -393,7 +393,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gps_i2c_getch </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gps_i2c_getch </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -423,7 +423,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a241634e6c8b878f03d15aa698baf0fe4_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a241634e6c8b878f03d15aa698baf0fe4_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a241634e6c8b878f03d15aa698baf0fe4_icgraph" id="gps__ubx__i2c_8c_a241634e6c8b878f03d15aa698baf0fe4_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="167,5,293,32"/></map>
+</map>
 </div>
 </p>
 
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_af038668157161a873a764a7edc0a367b_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_af038668157161a873a764a7edc0a367b_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_af038668157161a873a764a7edc0a367b_icgraph" id="gps__ubx__i2c_8c_af038668157161a873a764a7edc0a367b_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="201,5,328,32"/></map>
+</map>
 </div>
 </p>
 
@@ -499,13 +499,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -539,7 +539,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_cgraph.png" border="0" usemap="#gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_cgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_cgraph" id="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_cgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177" title="Put byte into transmit buffer. " alt="" coords="196,5,329,32"/></map>
+</map>
 </div>
 </p>
 
@@ -550,7 +550,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_icgraph" id="gps__ubx__i2c_8c_afb47044db85e0eb5ea321cfb97f48059_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="196,5,323,32"/></map>
+</map>
 </div>
 </p>
 
@@ -575,7 +575,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -609,7 +609,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_aee916f88f710ec46463e53d9350df177_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_aee916f88f710ec46463e53d9350df177_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_aee916f88f710ec46463e53d9350df177_icgraph" id="gps__ubx__i2c_8c_aee916f88f710ec46463e53d9350df177_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059" title="Put bytes into transmit buffer. " alt="" coords="187,5,329,32"/><area shape="rect" id="node3" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="377,31,504,57"/></map>
+</map>
 </div>
 </p>
 
@@ -644,7 +644,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a4bd0e1237b9ef913c47d7546f2b4c390_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a4bd0e1237b9ef913c47d7546f2b4c390_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a4bd0e1237b9ef913c47d7546f2b4c390_icgraph" id="gps__ubx__i2c_8c_a4bd0e1237b9ef913c47d7546f2b4c390_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="203,5,391,32"/></map>
+</map>
 </div>
 </p>
 
@@ -684,7 +684,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph" id="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd" title="check if a new character is available " alt="" coords="180,5,348,32"/><area shape="rect" id="node3" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9" title="Check available space in transmit buffer. " alt="" coords="191,57,337,98"/><area shape="rect" id="node4" href="gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4" title="get a new char " alt="" coords="207,123,321,149"/><area shape="rect" id="node5" href="gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b" title="send buffer when ready " alt="" coords="190,173,338,200"/><area shape="rect" id="node6" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059" title="Put bytes into transmit buffer. " alt="" coords="193,224,335,251"/><area shape="rect" id="node7" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177" title="Put byte into transmit buffer. " alt="" coords="396,249,529,276"/><area shape="rect" id="node8" href="gps__ubx__i2c_8c.html#afb78ffee07cb1190a736971f18eb17d1" title="null function " alt="" coords="213,325,315,352"/></map>
+</map>
 </div>
 </p>
 
@@ -717,7 +717,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a5b24ad52c404f9b8e7cc0b44685107f3_cgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a5b24ad52c404f9b8e7cc0b44685107f3_cgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a5b24ad52c404f9b8e7cc0b44685107f3_cgraph" id="gps__ubx__i2c_8c_a5b24ad52c404f9b8e7cc0b44685107f3_cgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd" title="check if a new character is available " alt="" coords="211,5,379,32"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="238,56,351,83"/><area shape="rect" id="node5" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="244,107,345,133"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="427,81,517,108"/></map>
+</map>
 </div>
 </p>
 
@@ -752,7 +752,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_cgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_cgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_cgraph" id="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="232,5,345,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="393,5,484,32"/></map>
+</map>
 </div>
 </p>
 
@@ -763,7 +763,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_icgraph" id="gps__ubx__i2c_8c_a83ac056eaf39eaf7a5d1647718905dd1_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a2b6c8aa56559a024b287d7645a61d88e" title="i2c event " alt="" coords="232,5,359,32"/></map>
+</map>
 </div>
 </p>
 
@@ -782,7 +782,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>baudrate</em>&#160;</td>
         </tr>
         <tr>
@@ -812,7 +812,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph" id="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="156,5,283,32"/></map>
+</map>
 </div>
 </p>
 
@@ -840,7 +840,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_ubx_i2c_bytes_to_read</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_ubx_i2c_bytes_to_read</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -875,7 +875,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx__i2c_8c.html">gps_ubx_i2c.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

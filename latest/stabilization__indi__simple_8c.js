@@ -3,7 +3,10 @@ var stabilization__indi__simple_8c =
     [ "INDI_EST_SCALE", "stabilization__indi__simple_8c.html#aa4dcd992c5421324c0187a6d25e22dac", null ],
     [ "STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF", "stabilization__indi__simple_8c.html#a3c41519cb45ffcbf35b6f6228603e5cc", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF", "stabilization__indi__simple_8c.html#a9f39ad982e74b87b0011957d57b8032e", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_P", "stabilization__indi__simple_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_Q", "stabilization__indi__simple_8c.html#a51a4671d083da69c010c0985faf4d2f3", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_R", "stabilization__indi__simple_8c.html#abae06312debbf68b936cfb6eb0ad8913", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_RDOT", "stabilization__indi__simple_8c.html#ad31bdc7cf43bceba87592b4597742ad2", null ],
     [ "STABILIZATION_INDI_MAX_R", "stabilization__indi__simple_8c.html#abacc20368230ddb3afc1c707c3d11bce", null ],
     [ "STABILIZATION_INDI_MAX_RATE", "stabilization__indi__simple_8c.html#a6b8e94ede31416d0e5b7251270d743bb", null ],
     [ "filter_pqr", "stabilization__indi__simple_8c.html#ac0d13e690fd500a3c737add9bf8a8574", null ],
@@ -21,8 +24,9 @@ var stabilization__indi__simple_8c =
     [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi__simple_8c.html#a487bd4ac66f844d9d1adfb696f950604", null ],
     [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi__simple_8c.html#a2d7051eac973a8507897f6753deaf818", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi__simple_8c.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
+    [ "stabilization_indi_simple_reset_r_filter_cutoff", "stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38", null ],
     [ "indi", "stabilization__indi__simple_8c.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ],
-    [ "rates_filt_fo", "stabilization__indi__simple_8c.html#a8307db92f1398ffb8d7cd3527c43f491", null ],
+    [ "rates_filt_fo", "stabilization__indi__simple_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
     [ "stab_att_sp_euler", "stabilization__indi__simple_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi__simple_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
 ];

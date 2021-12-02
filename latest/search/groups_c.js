@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['utm_20_28mercator_29_20projections',['UTM (Mercator) projections',['../group__math__geodetic__utm.html',1,'']]]
+  ['wgs_2d84_20geoid',['WGS-84 Geoid',['../group__math__geodetic__wgs84.html',1,'']]],
+  ['wind_2d_20and_20airspeed_20representations',['Wind- and airspeed representations',['../group__state__wind__airspeed.html',1,'']]]
 ];

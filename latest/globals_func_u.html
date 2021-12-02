@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,20 +168,10 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 , <a class="el" href="uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de">uart.c</a>
 , <a class="el" href="uart_8h.html#a84e0ba332e04b6e93ac83a1f9874dc40">uart.h</a>
 </li>
-<li>uart_disable_interrupts()
-: <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c.html#a199e1fae90e1e67b9f8eb64a8dad6f40">uart_arch.c</a>
-</li>
-<li>uart_enable_interrupts()
-: <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c.html#ac5fd8cc59f0c367eb6ead6403ed92225">uart_arch.c</a>
-</li>
 <li>uart_getch()
-: <a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_arch.c</a>
-, <a class="el" href="uart_8c.html#afa153121a413694044ed9a969b771512">uart.c</a>
+: <a class="el" href="uart_8c.html#afa153121a413694044ed9a969b771512">uart.c</a>
 , <a class="el" href="uart_8h.html#adb9a60ec94a31a08e6454ccf64f24039">uart.h</a>
 , <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_arch.c</a>
-</li>
-<li>uart_ISR()
-: <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c.html#acdcaa1de22fab46482eb7cc711743d3e">uart_arch.c</a>
 </li>
 <li>uart_periph_init()
 : <a class="el" href="uart_8c.html#a43baf084a9bcc968ef00790e25becbb7">uart.c</a>
@@ -195,12 +185,13 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e">uart_arch.c</a>
 </li>
 <li>uart_periph_set_baudrate()
-: <a class="el" href="uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart.h</a>
-, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_arch.c</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_arch.c</a>
+, <a class="el" href="uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart.h</a>
 </li>
 <li>uart_periph_set_bits_stop_parity()
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">uart_arch.c</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">uart_arch.c</a>
 , <a class="el" href="uart_8h.html#a0cdaf8266fcef9b52d422621b36413d6">uart.h</a>
+, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">uart_arch.c</a>
 </li>
 <li>uart_periph_set_mode()
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a39c8427d611bb45f1d3ba4e5ecc6654e">uart_arch.c</a>
@@ -223,9 +214,6 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 , <a class="el" href="uart_8c.html#a28a378d8f12e11fc3f4dac7eb9252d6e">uart.c</a>
 , <a class="el" href="uart_8h.html#a0aa8ed2f93f482313707afd606c4da12">uart.h</a>
 </li>
-<li>uart_set_baudrate()
-: <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c.html#a8af8009489a4355fe25541d5dc6f3c5b">uart_arch.c</a>
-</li>
 <li>uart_speed()
 : <a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">uart_arch.h</a>
 , <a class="el" href="serial__port_8c.html#a5bffc785e3d573a3d06ea17334623162">serial_port.c</a>
@@ -241,6 +229,21 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>uav_recovery_periodic()
 : <a class="el" href="uav__recovery_8c.html#a4522492e3e1f40a73ba5fa47e1e07590">uav_recovery.c</a>
 , <a class="el" href="uav__recovery_8h.html#a4522492e3e1f40a73ba5fa47e1e07590">uav_recovery.h</a>
+</li>
+<li>uavcan_bind()
+: <a class="el" href="uavcan_8c.html#ae5140a66e4d2d1166229eac0ebb40869">uavcan.c</a>
+, <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h.html#ae5140a66e4d2d1166229eac0ebb40869">uavcan.h</a>
+</li>
+<li>uavcan_broadcast()
+: <a class="el" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4">uavcan.c</a>
+, <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h.html#a712d2f97a70e8a78c0318d3709e317b4">uavcan.h</a>
+</li>
+<li>uavcan_init()
+: <a class="el" href="chibios_2modules_2uavcan_2uavcan_8h.html#a4d583c42b105e62f758c5645a45fe9e7">uavcan.h</a>
+, <a class="el" href="uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7">uavcan.c</a>
+</li>
+<li>uavcanInitIface()
+: <a class="el" href="uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e">uavcan.c</a>
 </li>
 <li>ubx_header()
 : <a class="el" href="gps__ubx_8c.html#a2318a808b3f3f117741ab7d86e4eaf78">gps_ubx.c</a>
@@ -382,10 +385,6 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>UM6_verify_chk()
 : <a class="el" href="imu__um6_8c.html#a033110c36d24455d12bfe0fd8ffb9acc">imu_um6.c</a>
 </li>
-<li>umarim_baro_event()
-: <a class="el" href="umarim_2baro__board_8h.html#aa1f86f3ff4d588de0fa1237151e66adf">baro_board.h</a>
-, <a class="el" href="umarim_2baro__board_8c.html#aa1f86f3ff4d588de0fa1237151e66adf">baro_board.c</a>
-</li>
 <li>undistort_image_func()
 : <a class="el" href="undistort__image_8c.html#a2cd16878ee59ab414a6efac1f717f060">undistort_image.c</a>
 </li>
@@ -476,9 +475,9 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="pid_8h.html#a8539e216d350ea0802391edce976a0cf">pid.h</a>
 </li>
 <li>update_rc_channel()
-: <a class="el" href="spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">spektrum_arch.c</a>
-, <a class="el" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">ppm_arch.c</a>
-, <a class="el" href="arch_2sim_2subsystems_2radio__control_2rc__datalink_8c.html#a50c13e7e6658484cb5565f2f3c01b851">rc_datalink.c</a>
+: <a class="el" href="sim_2modules_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">ppm_arch.c</a>
+, <a class="el" href="spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">spektrum_arch.c</a>
+, <a class="el" href="arch_2sim_2modules_2radio__control_2rc__datalink_8c.html#a50c13e7e6658484cb5565f2f3c01b851">rc_datalink.c</a>
 </li>
 <li>update_ref_model()
 : <a class="el" href="stabilization__attitude__ref__quat__int_8c.html#a6bedc159cb8a8c40bc1ea0b3a5c7af06">stabilization_attitude_ref_quat_int.c</a>
@@ -505,8 +504,8 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="ahrs__float__mlkf_8c.html#a728279f726c100f831375b815a025ab6">ahrs_float_mlkf.c</a>
 </li>
 <li>update_state_interface()
-: <a class="el" href="ins__xsens700_8c.html#a8011d2c59733cc2b3ba2110bf3675bde">ins_xsens700.c</a>
-, <a class="el" href="ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde">ins_xsens.c</a>
+: <a class="el" href="ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde">ins_xsens.c</a>
+, <a class="el" href="ins__xsens700_8c.html#a8011d2c59733cc2b3ba2110bf3675bde">ins_xsens700.c</a>
 </li>
 <li>update_vz_conf()
 : <a class="el" href="vf__float_8c.html#a0b39a581ab3b41a47578b26dd98f567f">vf_float.c</a>
@@ -532,8 +531,8 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 , <a class="el" href="nps__sensors__utils_8h.html#a3161ab2cb241afbcb27234e69fd1528f">nps_sensors_utils.h</a>
 </li>
 <li>UpdateSensorLatency_Single()
-: <a class="el" href="nps__sensors__utils_8c.html#ae79b4a67a1de0346dab12bba1bf3b6bb">nps_sensors_utils.c</a>
-, <a class="el" href="nps__sensors__utils_8h.html#ae79b4a67a1de0346dab12bba1bf3b6bb">nps_sensors_utils.h</a>
+: <a class="el" href="nps__sensors__utils_8h.html#ae79b4a67a1de0346dab12bba1bf3b6bb">nps_sensors_utils.h</a>
+, <a class="el" href="nps__sensors__utils_8c.html#ae79b4a67a1de0346dab12bba1bf3b6bb">nps_sensors_utils.c</a>
 </li>
 <li>updateSlot()
 : <a class="el" href="formation_8h.html#a6827e5dcc339fa55b8c8d49bc3de0617">formation.h</a>
@@ -548,27 +547,27 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#ad0ce3e25719e0b3fc9b7b71fc1685625">uart_arch.c</a>
 </li>
 <li>usb_serial_char_available()
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_ser_hw.c</a>
 </li>
 <li>usb_serial_check_free_space()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_ser_hw.c</a>
 </li>
 <li>usb_serial_getch()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_ser_hw.c</a>
 </li>
 <li>usb_serial_parse_packet()
-: <a class="el" href="usb__serial__stm32_8h.html#a314b7a150d97d280b9d3f05fe1151ef6">usb_serial_stm32.h</a>
-, <a class="el" href="usb__serial__stm32__example1_8c.html#a4a15762007447868777bd94670fd6493">usb_serial_stm32_example1.c</a>
+: <a class="el" href="usb__serial__stm32__example1_8c.html#a4a15762007447868777bd94670fd6493">usb_serial_stm32_example1.c</a>
 , <a class="el" href="usb__serial__stm32__example2_8c.html#a4a15762007447868777bd94670fd6493">usb_serial_stm32_example2.c</a>
+, <a class="el" href="usb__serial__stm32_8h.html#a314b7a150d97d280b9d3f05fe1151ef6">usb_serial_stm32.h</a>
 </li>
 <li>usb_serial_send()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_ser_hw.c</a>
 </li>
 <li>usb_serial_transmit()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_ser_hw.c</a>
 </li>
 <li>usb_serial_transmit_buffer()
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_ser_hw.c</a>
+: <a class="el" href="usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_ser_hw.c</a>
 </li>
 <li>usbActivity()
 : <a class="el" href="usbStorage_8c.html#a61324eacdf529369618ac16356918c47">usbStorage.c</a>
@@ -576,23 +575,17 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <li>usbEvent()
 : <a class="el" href="usb__msd_8c.html#a1ff1ec942dc13d30fc5c898a7c2388d8">usb_msd.c</a>
 </li>
-<li>USBFrameHandler()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a91556b7ca9fb44db13f40512a45c655d">usb_ser_hw.c</a>
-</li>
-<li>USBIntHandler()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#ae891f923dd9e5e6d7630c5ffc64ce0ec">usb_ser_hw.c</a>
-</li>
 <li>usbStorageIsItRunning()
-: <a class="el" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d">usbStorage.c</a>
-, <a class="el" href="usbStorage_8h.html#a5d838dcbf84e935691629f3a533ac82d">usbStorage.h</a>
+: <a class="el" href="usbStorage_8h.html#a5d838dcbf84e935691629f3a533ac82d">usbStorage.h</a>
+, <a class="el" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d">usbStorage.c</a>
 </li>
 <li>usbStorageStartPolling()
-: <a class="el" href="usbStorage_8h.html#a12081a3972cd8a738a527d104c647665">usbStorage.h</a>
-, <a class="el" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665">usbStorage.c</a>
+: <a class="el" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665">usbStorage.c</a>
+, <a class="el" href="usbStorage_8h.html#a12081a3972cd8a738a527d104c647665">usbStorage.h</a>
 </li>
 <li>usbStorageStop()
-: <a class="el" href="usbStorage_8h.html#af1851f7340f3e0beead91016cb83ceeb">usbStorage.h</a>
-, <a class="el" href="usbStorage_8c.html#af1851f7340f3e0beead91016cb83ceeb">usbStorage.c</a>
+: <a class="el" href="usbStorage_8c.html#af1851f7340f3e0beead91016cb83ceeb">usbStorage.c</a>
+, <a class="el" href="usbStorage_8h.html#af1851f7340f3e0beead91016cb83ceeb">usbStorage.h</a>
 </li>
 <li>usbStorageWaitForDeconnexion()
 : <a class="el" href="usbStorage_8c.html#a52b935e7f5e8e3245f804878e80a4b1b">usbStorage.c</a>
@@ -605,16 +598,16 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 : <a class="el" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273">sys_time.h</a>
 </li>
 <li>utm_float_from_gps()
-: <a class="el" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f">gps.c</a>
-, <a class="el" href="gps_8h.html#a1343b41c94f919a6a593b958b275683f">gps.h</a>
+: <a class="el" href="gps_8h.html#a1343b41c94f919a6a593b958b275683f">gps.h</a>
+, <a class="el" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f">gps.c</a>
 </li>
 <li>utm_int_from_gps()
 : <a class="el" href="gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed">gps.h</a>
 , <a class="el" href="gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed">gps.c</a>
 </li>
 <li>utm_of_lla_d()
-: <a class="el" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250">pprz_geodetic_double.c</a>
-, <a class="el" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250">pprz_geodetic_double.h</a>
+: <a class="el" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250">pprz_geodetic_double.h</a>
+, <a class="el" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250">pprz_geodetic_double.c</a>
 </li>
 <li>utm_of_lla_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd">pprz_geodetic_float.c</a>
@@ -639,7 +632,7 @@ $(document).ready(function(){initNavTree('globals_func_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

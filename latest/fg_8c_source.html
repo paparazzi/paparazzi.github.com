@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> Val_int(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="flight__gear_8h.html#structFGNetGUI">FGNetGUI</a>));</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;value <a class="code" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, value lat, value lon, value z, value phi, value theta, value psi);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;value <a class="code" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, value lat, value lon, value <a class="code" href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>, value phi, value theta, value psi);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="fg_8c.html#a5c0ed707e561055d71ee007ec3378858">   19</a></span>&#160;value <a class="code" href="fg_8c.html#a5c0ed707e561055d71ee007ec3378858">fg_msg_bytecode</a>(value *argv, <span class="keywordtype">int</span> argc) {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a>(argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6]);</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">   25</a></span>&#160;value <a class="code" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, value lat, value lon, value z, value phi, value theta, value psi) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">   25</a></span>&#160;value <a class="code" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, value lat, value lon, value <a class="code" href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>, value phi, value theta, value psi) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">struct </span><a class="code" href="flight__gear_8h.html#structFGNetGUI">FGNetGUI</a> msg = {0};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#a726c5cad3c29b38be1f4cc1a9f0bd3c7">version</a> = <a class="code" href="flight__gear_8h.html#ad026fa6ec05d73986d820b1ceb03dcd5">FG_NET_GUI_VERSION</a>;</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#a6ac15222d878862888ab9f25aa330eaf">num_tanks</a> = 1;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#ab78da6b0b571657235d5c8db6f3ab3a5">fuel_quantity</a>[0] = 10.;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#adac964e00a13b7d442f1ec85f956afc2">cur_time</a> = 3213092700ul+((<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)((msg.<a class="code" href="flight__gear_8h.html#a977d11d209af216033db55ed39f17902">longitude</a>)*13578)); <span class="comment">//time(NULL);</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#adac964e00a13b7d442f1ec85f956afc2">cur_time</a> = 3213092700ul+((<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)((msg.<a class="code" href="flight__gear_8h.html#a977d11d209af216033db55ed39f17902">longitude</a>)*13578)); <span class="comment">//time(NULL);</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#a61b74b74087377d7eb17f5d13d99a685">warp</a> = 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  msg.<a class="code" href="flight__gear_8h.html#a65672b13c87b4306e8f6ac3c48017e3e">ground_elev</a> = 0.;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
@@ -168,6 +168,7 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="ttc" id="flight__gear_8h_html_a0299b8cbdb09a7041cef259ce9ff3c9f"><div class="ttname"><a href="flight__gear_8h.html#a0299b8cbdb09a7041cef259ce9ff3c9f">FGNetGUI::climb_rate</a></div><div class="ttdeci">float climb_rate</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00267">flight_gear.h:267</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_a6ac15222d878862888ab9f25aa330eaf"><div class="ttname"><a href="flight__gear_8h.html#a6ac15222d878862888ab9f25aa330eaf">FGNetGUI::num_tanks</a></div><div class="ttdeci">uint32_t num_tanks</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00270">flight_gear.h:270</a></div></div>
 <div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
+<div class="ttc" id="group__math__algebra__float_html_adeaa53529844ee1fa7df48e61c3994f7"><div class="ttname"><a href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">FloatVect3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00057">pprz_algebra_float.h:57</a></div></div>
 <div class="ttc" id="fg_8c_html_a67cd52da2a832f94332d4b22b5cdb301"><div class="ttname"><a href="fg_8c.html#a67cd52da2a832f94332d4b22b5cdb301">fg_sizeof</a></div><div class="ttdeci">value fg_sizeof(value unit)</div><div class="ttdoc">Values boxing for Flight Gear. </div><div class="ttdef"><b>Definition:</b> <a href="fg_8c_source.html#l00013">fg.c:13</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_a970d60e28568866223bb1b0f1cac7231"><div class="ttname"><a href="flight__gear_8h.html#a970d60e28568866223bb1b0f1cac7231">FGNetGUI::altitude</a></div><div class="ttdeci">float altitude</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00259">flight_gear.h:259</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_structFGNetGUI"><div class="ttname"><a href="flight__gear_8h.html#structFGNetGUI">FGNetGUI</a></div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00252">flight_gear.h:252</a></div></div>
@@ -185,7 +186,6 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="ttc" id="flight__gear_8h_html_aba85afb28db9d6925dda0a545fde29b9"><div class="ttname"><a href="flight__gear_8h.html#aba85afb28db9d6925dda0a545fde29b9">FGNetGUI::theta</a></div><div class="ttdeci">float theta</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00262">flight_gear.h:262</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_ab65cb49f6d8ae2ece0d9a678983b36ba"><div class="ttname"><a href="flight__gear_8h.html#ab65cb49f6d8ae2ece0d9a678983b36ba">FGNetGUI::agl</a></div><div class="ttdeci">float agl</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00260">flight_gear.h:260</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_aec2968b955a4aafa3e8c437fff0e6acb"><div class="ttname"><a href="flight__gear_8h.html#aec2968b955a4aafa3e8c437fff0e6acb">FGNetGUI::tuned_freq</a></div><div class="ttdeci">float tuned_freq</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00280">flight_gear.h:280</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_a95433b0b0677dbf67909402329c5713b"><div class="ttname"><a href="flight__gear_8h.html#a95433b0b0677dbf67909402329c5713b">FGNetGUI::psi</a></div><div class="ttdeci">float psi</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00263">flight_gear.h:263</a></div></div>
 <div class="ttc" id="fg_8c_html_a1f0da6a3132967828416661f68352c41"><div class="ttname"><a href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg_msg_native</a></div><div class="ttdeci">value fg_msg_native(value s, value lat, value lon, value z, value phi, value theta, value psi)</div><div class="ttdef"><b>Definition:</b> <a href="fg_8c_source.html#l00025">fg.c:25</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_ae5f49680364313cfa8e5f315e5935281"><div class="ttname"><a href="flight__gear_8h.html#ae5f49680364313cfa8e5f315e5935281">FGNetGUI::gs_deviation_deg</a></div><div class="ttdeci">float gs_deviation_deg</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00285">flight_gear.h:285</a></div></div>
@@ -194,13 +194,14 @@ $(document).ready(function(){initNavTree('fg_8c_source.html','');});
 <div class="ttc" id="nav_8c_html_a04b783250b1673126fa3f4729cb2078e"><div class="ttname"><a href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a></div><div class="ttdeci">static unit_t unit</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00031">nav.c:31</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_a977d11d209af216033db55ed39f17902"><div class="ttname"><a href="flight__gear_8h.html#a977d11d209af216033db55ed39f17902">FGNetGUI::longitude</a></div><div class="ttdeci">double longitude</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00257">flight_gear.h:257</a></div></div>
 <div class="ttc" id="flight__gear_8h_html_a420fb72f208a81b35b1defc4837c3f0e"><div class="ttname"><a href="flight__gear_8h.html#a420fb72f208a81b35b1defc4837c3f0e">FGNetGUI::course_deviation_deg</a></div><div class="ttdeci">float course_deviation_deg</div><div class="ttdef"><b>Definition:</b> <a href="flight__gear_8h_source.html#l00284">flight_gear.h:284</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="fg_8c.html">fg.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

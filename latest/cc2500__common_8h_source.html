@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control/cc2500_frsky/cc2500_common.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/cc2500_frsky/cc2500_common.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('cc2500__common_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//#include &quot;rx/rx_spi.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="cc2500__common_8h.html#adcd2120ef440303205db6619ab61f557">cc2500getRssiDbm</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cc2500__common_8h.html#acfa3dd5dc7caabd9fb83ab92867a6977">cc2500setRssiDbm</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="cc2500__common_8h.html#adcd2120ef440303205db6619ab61f557">cc2500getRssiDbm</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cc2500__common_8h.html#acfa3dd5dc7caabd9fb83ab92867a6977">cc2500setRssiDbm</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="cc2500__common_8h.html#a809767f1771e2d9ec936050fe7ec887e">cc2500getGdo</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if defined(USE_RX_CC2500_SPI_PA_LNA) &amp;&amp; defined(USE_RX_CC2500_SPI_DIVERSITY)</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> cc2500switchAntennae(<span class="keywordtype">void</span>);</div>
@@ -149,21 +149,21 @@ $(document).ready(function(){initNavTree('cc2500__common_8h_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> cc2500TxDisable(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="cc2500__common_8h.html#a384a659dc20e7a7df306027141c8d0ef">cc2500SpiInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="cc2500__common_8h_html_acfa3dd5dc7caabd9fb83ab92867a6977"><div class="ttname"><a href="cc2500__common_8h.html#acfa3dd5dc7caabd9fb83ab92867a6977">cc2500setRssiDbm</a></div><div class="ttdeci">void cc2500setRssiDbm(uint8_t value)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__common_8c_source.html#l00069">cc2500_common.c:69</a></div></div>
 <div class="ttc" id="cc2500__common_8h_html_adcd2120ef440303205db6619ab61f557"><div class="ttname"><a href="cc2500__common_8h.html#adcd2120ef440303205db6619ab61f557">cc2500getRssiDbm</a></div><div class="ttdeci">uint16_t cc2500getRssiDbm(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__common_8c_source.html#l00064">cc2500_common.c:64</a></div></div>
 <div class="ttc" id="cc2500__common_8h_html_a809767f1771e2d9ec936050fe7ec887e"><div class="ttname"><a href="cc2500__common_8h.html#a809767f1771e2d9ec936050fe7ec887e">cc2500getGdo</a></div><div class="ttdeci">bool cc2500getGdo(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__common_8c_source.html#l00080">cc2500_common.c:80</a></div></div>
 <div class="ttc" id="cc2500__compat_8h_html"><div class="ttname"><a href="cc2500__compat_8h.html">cc2500_compat.h</a></div></div>
 <div class="ttc" id="cc2500__rx__spi_8h_html"><div class="ttname"><a href="cc2500__rx__spi_8h.html">cc2500_rx_spi.h</a></div></div>
 <div class="ttc" id="cc2500__common_8h_html_a384a659dc20e7a7df306027141c8d0ef"><div class="ttname"><a href="cc2500__common_8h.html#a384a659dc20e7a7df306027141c8d0ef">cc2500SpiInit</a></div><div class="ttdeci">bool cc2500SpiInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__common_8c_source.html#l00127">cc2500_common.c:127</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_69e9f3afec1dbdad02870a66666e16a1.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__common_8h.html">cc2500_common.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__common_8h.html">cc2500_common.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">point.h</a>&quot;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">modules/nav/common_nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__geodetic__float_8h.html">math/pprz_geodetic_float.h</a>&quot;</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if defined(SHOW_CAM_COORDINATES)</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">float</span>   cam_point_x;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">float</span>   cam_point_y;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> cam_point_distance_from_home;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> cam_point_distance_from_home;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">float</span> cam_point_lon,  cam_point_lat;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">float</span> distance_correction = 1;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -427,7 +427,7 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        cam_point_x = fObjectEast;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        cam_point_y = fObjectNorth;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        cam_point_distance_from_home = distance_correction * (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((cam_point_x * cam_point_x) +</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        cam_point_distance_from_home = distance_correction * (<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((cam_point_x * cam_point_x) +</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                       (cam_point_y * cam_point_y)));</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> utm = *<a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac">stateGetPositionUtm_f</a>();</div>
@@ -467,9 +467,9 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="comment">/***    THE BELOW CODE IS ONLY EXECUTED IN CAM_MODE_WP_TARGET OR CAM_MODE_XY_TARGET           ***/</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#ifdef SHOW_CAM_COORDINATES</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      cam_point_distance_from_home = distance_correction * (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>) fabs(((<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((fObjectNorth * fObjectNorth) +</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      cam_point_distance_from_home = distance_correction * (<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>) fabs(((<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((fObjectNorth * fObjectNorth) +</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                     (fObjectEast * fObjectEast)))) -</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                     ((<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((fPlaneNorth * fPlaneNorth) + (fPlaneEast * fPlaneEast)))));</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                     ((<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(sqrt((fPlaneNorth * fPlaneNorth) + (fPlaneEast * fPlaneEast)))));</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> utm;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      utm.<a class="code" href="pprz__geodetic__float_8h.html#ac734d9cc1b4426967f32055e68bc475b">east</a> = <a class="code" href="common__nav_8c.html#a3de43e2f62e53fe06e76fe5c22c017b5">nav_utm_east0</a> + fObjectEast;</div>
@@ -807,7 +807,6 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;}</div>
 <div class="ttc" id="guidance__OA_8h_html_a4dac0a956aca3da3fa670abc875414d2a1a85ef13eaa80e8561743892f9dba958"><div class="ttname"><a href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a1a85ef13eaa80e8561743892f9dba958">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8h_source.html#l00052">guidance_OA.h:52</a></div></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_ae59b042496b1debe96e1d98fbc3e4b1f"><div class="ttname"><a href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a></div><div class="ttdeci">#define RADIO_ROLL</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00041">intermcu_ap.h:41</a></div></div>
 <div class="ttc" id="point_8c_html_a321e80867d2643a4b146c37fc77e0a7f"><div class="ttname"><a href="point_8c.html#a321e80867d2643a4b146c37fc77e0a7f">cam_phi</a></div><div class="ttdeci">float cam_phi</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00097">point.c:97</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a8293fd2de3ce739deb6d53691fd21fcf"><div class="ttname"><a href="common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf">point::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00040">common_nav.h:40</a></div></div>
@@ -873,6 +872,7 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div class="ttc" id="pprz__mutex_8h_html_a4bdd0a645d5bfed3992e8bafa3c27b48"><div class="ttname"><a href="pprz__mutex_8h.html#a4bdd0a645d5bfed3992e8bafa3c27b48">PPRZ_MUTEX_UNLOCK</a></div><div class="ttdeci">#define PPRZ_MUTEX_UNLOCK(_mtx)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__mutex_8h_source.html#l00047">pprz_mutex.h:47</a></div></div>
 <div class="ttc" id="cam_8h_html_a90794536f5be1f71f0cd9aa9aca02131"><div class="ttname"><a href="cam_8h.html#a90794536f5be1f71f0cd9aa9aca02131">CAM_TILT_MIN</a></div><div class="ttdeci">#define CAM_TILT_MIN</div><div class="ttdef"><b>Definition:</b> <a href="cam_8h_source.html#l00053">cam.h:53</a></div></div>
 <div class="ttc" id="point_8c_html_a35c6a2d16d309f11f32712b4116155f6"><div class="ttname"><a href="point_8c.html#a35c6a2d16d309f11f32712b4116155f6">vMultiplyMatrixByVector</a></div><div class="ttdeci">void vMultiplyMatrixByVector(VECTOR *svA, MATRIX smB, VECTOR svC)</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00128">point.c:128</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="max7456_8c_html_a99e2572b9e06d8a2877e921c15ecdae5"><div class="ttname"><a href="max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5">MATRIX::fz3</a></div><div class="ttdeci">float fz3</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00093">point.c:93</a></div></div>
 <div class="ttc" id="autopilot_8c_html_a23af2ac2d4bcb9b71c869a409de61cc4"><div class="ttname"><a href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4">autopilot_get_mode</a></div><div class="ttdeci">uint8_t autopilot_get_mode(void)</div><div class="ttdoc">get autopilot mode </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00184">autopilot.c:184</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -881,7 +881,7 @@ $(document).ready(function(){initNavTree('point_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="point_8c.html">point.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

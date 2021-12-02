@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('boards_2ardrone_2actuators_8h.html',''
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2ardrone_2actuators_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2ardrone_2actuators_8hdep" id="sw_2airborne_2boards_2ardrone_2actuators_8hdep">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="6,95,158,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="boards_2ardrone_2actuators_8h_source.html">Go to the source code of this file.</a></p>
@@ -165,12 +165,12 @@ Functions</h2></td></tr>
 <tr class="separator:a1e5faec000e4e1602bba080db2aec27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66817eeee5ae2f12c1a42abd2ff443ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea">actuators_ardrone_init</a> (void)</td></tr>
 <tr class="separator:a66817eeee5ae2f12c1a42abd2ff443ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa094cbe3e6efb249130aae09c22ff6ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab">actuators_ardrone_cmd</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *reply, int replylen)</td></tr>
+<tr class="memitem:aa094cbe3e6efb249130aae09c22ff6ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab">actuators_ardrone_cmd</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *reply, int replylen)</td></tr>
 <tr class="separator:aa094cbe3e6efb249130aae09c22ff6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e18bc7da29945523e0b38e96549ef24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a3e18bc7da29945523e0b38e96549ef24">actuators_ardrone_set_pwm</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm0, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm1, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm2, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm3)</td></tr>
+<tr class="memitem:a3e18bc7da29945523e0b38e96549ef24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a3e18bc7da29945523e0b38e96549ef24">actuators_ardrone_set_pwm</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm0, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm1, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm2, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pwm3)</td></tr>
 <tr class="memdesc:a3e18bc7da29945523e0b38e96549ef24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0.  <a href="#a3e18bc7da29945523e0b38e96549ef24">More...</a><br /></td></tr>
 <tr class="separator:a3e18bc7da29945523e0b38e96549ef24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c0ec8b46c2dfe8877fbf3b0ca3244a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a">actuators_ardrone_set_leds</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led0, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led1, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led2, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led3)</td></tr>
+<tr class="memitem:a11c0ec8b46c2dfe8877fbf3b0ca3244a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a">actuators_ardrone_set_leds</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led0, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led1, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led2, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> led3)</td></tr>
 <tr class="memdesc:a11c0ec8b46c2dfe8877fbf3b0ca3244a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format)  <a href="#a11c0ec8b46c2dfe8877fbf3b0ca3244a">More...</a><br /></td></tr>
 <tr class="separator:a11c0ec8b46c2dfe8877fbf3b0ca3244a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11b81e709161ad962f71da6791eb3357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a11b81e709161ad962f71da6791eb3357">actuators_ardrone_close</a> (void)</td></tr>
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a31dfdeb0332592438855ae2d138b39e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a31dfdeb0332592438855ae2d138b39e0">actuators_pwm_values</a> [<a class="el" href="boards_2ardrone_2actuators_8h.html#a61109e924997d601762cb673fb422879">ACTUATORS_ARDRONE_NB</a>]</td></tr>
+<tr class="memitem:a31dfdeb0332592438855ae2d138b39e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2ardrone_2actuators_8h.html#a31dfdeb0332592438855ae2d138b39e0">actuators_pwm_values</a> [<a class="el" href="boards_2ardrone_2actuators_8h.html#a61109e924997d601762cb673fb422879">ACTUATORS_ARDRONE_NB</a>]</td></tr>
 <tr class="separator:a31dfdeb0332592438855ae2d138b39e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -368,13 +368,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int actuators_ardrone_cmd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>reply</em>, </td>
         </tr>
         <tr>
@@ -404,7 +404,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_cgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_cgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_cgraph" id="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_cgraph">
-<area shape="rect" id="node2" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="229,5,305,32"/><area shape="rect" id="node3" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="228,56,305,83"/></map>
+</map>
 </div>
 </p>
 
@@ -415,7 +415,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_icgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_icgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_icgraph" id="boards_2ardrone_2actuators_8h_aa094cbe3e6efb249130aae09c22ff6ab_icgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="228,5,395,32"/></map>
+</map>
 </div>
 </p>
 
@@ -437,7 +437,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00220">220</a> of file <a class="el" href="boards_2ardrone_2actuators_8c_source.html">actuators.c</a>.</p>
 
-<p>References <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00170">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00231">actuators_ardrone_set_pwm()</a>, and <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00050">actuators_pwm_values</a>.</p>
+<p>References <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00170">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00231">actuators_ardrone_set_pwm()</a>, and <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00050">actuators_pwm_values</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -446,7 +446,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a1e5faec000e4e1602bba080db2aec27c_cgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a1e5faec000e4e1602bba080db2aec27c_cgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a1e5faec000e4e1602bba080db2aec27c_cgraph" id="boards_2ardrone_2actuators_8h_a1e5faec000e4e1602bba080db2aec27c_cgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="258,150,445,191"/><area shape="rect" id="node11" href="boards_2ardrone_2actuators_8c.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0. " alt="" coords="249,309,453,336"/><area shape="rect" id="node3" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="507,5,690,32"/><area shape="rect" id="node4" href="autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="508,56,689,83"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="555,107,642,133"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="560,157,637,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="561,208,637,235"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="528,259,669,285"/><area shape="rect" id="node5" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title="autopilot_generated\l_set_motors_on" alt="" coords="769,17,919,58"/><area shape="rect" id="node6" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title="autopilot_static_set\l_motors_on" alt="" coords="771,82,917,123"/><area shape="rect" id="node12" href="boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title="actuators_ardrone_led_run" alt="" coords="501,309,696,336"/><area shape="rect" id="node14" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="992,335,1069,361"/><area shape="rect" id="node13" href="boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format) ..." alt="" coords="744,309,944,336"/></map>
+</map>
 </div>
 </p>
 
@@ -477,7 +477,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a66817eeee5ae2f12c1a42abd2ff443ea_cgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a66817eeee5ae2f12c1a42abd2ff443ea_cgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a66817eeee5ae2f12c1a42abd2ff443ea_cgraph" id="boards_2ardrone_2actuators_8h_a66817eeee5ae2f12c1a42abd2ff443ea_cgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html#aa094cbe3e6efb249130aae09c22ff6ab" title="actuators_ardrone_cmd" alt="" coords="233,5,407,32"/><area shape="rect" id="node5" href="boards_2ardrone_2actuators_8c.html#a8643b68e3bff54891b4180367aaf4316" title="actuators_ardrone_reset\l_flipflop" alt="" coords="230,209,410,250"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="495,136,582,163"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="501,201,577,228"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="468,256,609,283"/><area shape="rect" id="node9" href="boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format) ..." alt="" coords="220,56,420,83"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="255,325,385,352"/><area shape="rect" id="node3" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="501,5,577,32"/><area shape="rect" id="node4" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="500,56,577,83"/></map>
+</map>
 </div>
 </p>
 
@@ -490,25 +490,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void actuators_ardrone_set_leds </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>led0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>led1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>led2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>led3</em>&#160;</td>
         </tr>
         <tr>
@@ -535,7 +535,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_cgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_cgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_cgraph" id="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_cgraph">
-<area shape="rect" id="node2" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="253,5,331,32"/></map>
+</map>
 </div>
 </p>
 
@@ -546,7 +546,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_icgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_icgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_icgraph" id="boards_2ardrone_2actuators_8h_a11c0ec8b46c2dfe8877fbf3b0ca3244a_icgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="267,5,434,32"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title="actuators_ardrone_led_run" alt="" coords="253,56,448,83"/><area shape="rect" id="node4" href="boards_2ardrone_2actuators_8h.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0. " alt="" coords="496,56,700,83"/><area shape="rect" id="node5" href="boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="748,56,944,83"/></map>
+</map>
 </div>
 </p>
 
@@ -559,25 +559,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void actuators_ardrone_set_pwm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pwm0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pwm1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pwm2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pwm3</em>&#160;</td>
         </tr>
         <tr>
@@ -603,7 +603,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_cgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_cgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_cgraph" id="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_cgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title="actuators_ardrone_led_run" alt="" coords="257,5,452,32"/><area shape="rect" id="node4" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="748,31,825,57"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format) ..." alt="" coords="500,5,700,32"/></map>
+</map>
 </div>
 </p>
 
@@ -614,7 +614,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_icgraph.png" border="0" usemap="#boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_icgraph" alt=""/></div>
 <map name="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_icgraph" id="boards_2ardrone_2actuators_8h_a3e18bc7da29945523e0b38e96549ef24_icgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="257,5,453,32"/></map>
+</map>
 </div>
 </p>
 
@@ -626,7 +626,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> actuators_pwm_values[<a class="el" href="boards_2ardrone_2actuators_8h.html#a61109e924997d601762cb673fb422879">ACTUATORS_ARDRONE_NB</a>]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> actuators_pwm_values[<a class="el" href="boards_2ardrone_2actuators_8h.html#a61109e924997d601762cb673fb422879">ACTUATORS_ARDRONE_NB</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -641,7 +641,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="boards_2ardrone_2actuators_8h.html">actuators.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:36 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

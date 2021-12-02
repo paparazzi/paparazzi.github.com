@@ -1,8 +1,6 @@
 var searchData=
 [
   ['dac_2eh',['dac.h',['../dac_8h.html',1,'']]],
-  ['dac_5farch_2ec',['dac_arch.c',['../dac__arch_8c.html',1,'']]],
-  ['dac_5farch_2eh',['dac_arch.h',['../dac__arch_8h.html',1,'']]],
   ['datalink_2ec',['datalink.c',['../datalink_8c.html',1,'']]],
   ['datalink_2eh',['datalink.h',['../datalink_8h.html',1,'']]],
   ['dc_2ec',['dc.c',['../dc_8c.html',1,'']]],

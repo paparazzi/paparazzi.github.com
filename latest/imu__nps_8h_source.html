@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/imu/imu_nps.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/imu/imu_nps.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('imu__nps_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef IMU_NPS_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define IMU_NPS_H</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu_8h.html">subsystems/imu.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu_8h.html">modules/imu/imu.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -177,9 +177,9 @@ $(document).ready(function(){initNavTree('imu__nps_8h_source.html','');});
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="imu__nps_8h.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__nps_8h.html#structImuNps">ImuNps</a> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#ae9310ba211a69592dade8f317e221784">   73</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#ae9310ba211a69592dade8f317e221784">mag_available</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb">   74</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb">accel_available</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b">   75</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b">gyro_available</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#ae9310ba211a69592dade8f317e221784">   73</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#ae9310ba211a69592dade8f317e221784">mag_available</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb">   74</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb">accel_available</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b">   75</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b">gyro_available</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__nps_8h.html#structImuNps">ImuNps</a> <a class="code" href="imu__nps_8h.html#ad6e7c496430e1f1a0f673f23b5bcdb7d">imu_nps</a>;</div>
@@ -198,17 +198,17 @@ $(document).ready(function(){initNavTree('imu__nps_8h_source.html','');});
 <div class="ttc" id="imu__nps_8h_html_af25f098236ec92998a69e688afcfebed"><div class="ttname"><a href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed">imu_nps_init</a></div><div class="ttdeci">void imu_nps_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__nps_8c_source.html#l00030">imu_nps.c:30</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="imu__nps_8h_html_a18428bf984166238838fe9d1a4842b5e"><div class="ttname"><a href="imu__nps_8h.html#a18428bf984166238838fe9d1a4842b5e">imu_feed_mag</a></div><div class="ttdeci">void imu_feed_mag(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__nps_8c_source.html#l00053">imu_nps.c:53</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="imu__nps_8h_html_ad6e7c496430e1f1a0f673f23b5bcdb7d"><div class="ttname"><a href="imu__nps_8h.html#ad6e7c496430e1f1a0f673f23b5bcdb7d">imu_nps</a></div><div class="ttdeci">struct ImuNps imu_nps</div><div class="ttdef"><b>Definition:</b> <a href="imu__nps_8c_source.html#l00028">imu_nps.c:28</a></div></div>
 <div class="ttc" id="imu__nps_8h_html_acdb60db0f4e817b6bd5b2a0b1d96615b"><div class="ttname"><a href="imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b">ImuNps::gyro_available</a></div><div class="ttdeci">uint8_t gyro_available</div><div class="ttdef"><b>Definition:</b> <a href="imu__nps_8h_source.html#l00075">imu_nps.h:75</a></div></div>
 <div class="ttc" id="imu__nps_8h_html_ae9310ba211a69592dade8f317e221784"><div class="ttname"><a href="imu__nps_8h.html#ae9310ba211a69592dade8f317e221784">ImuNps::mag_available</a></div><div class="ttdeci">uint8_t mag_available</div><div class="ttdef"><b>Definition:</b> <a href="imu__nps_8h_source.html#l00073">imu_nps.h:73</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__nps_8h.html">imu_nps.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:20 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__nps_8h.html">imu_nps.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,11 +129,11 @@ $(document).ready(function(){initNavTree('spektrum__soft__bind__ap_8c_source.htm
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spektrum__soft__bind__ap_8h.html">modules/spektrum_soft_bind/spektrum_soft_bind_ap.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu__ap_8h.html">subsystems/intermcu/intermcu_ap.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu__ap_8h.html">modules/intermcu/intermcu_ap.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led_8h.html">led.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mcu_8h.html">mcu.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">subsystems/radio_control.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;mcu_periph/sys_time_arch.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html">mcu_periph/uart.h</a>&quot;</span></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('spektrum__soft__bind__ap_8c_source.htm
 <div class="ttc" id="spektrum__soft__bind__ap_8c_html_afa6263c88719c5877209b3aa106e66d1"><div class="ttname"><a href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">bind_soft_value</a></div><div class="ttdeci">bool bind_soft_value</div><div class="ttdef"><b>Definition:</b> <a href="spektrum__soft__bind__ap_8c_source.html#l00045">spektrum_soft_bind_ap.c:45</a></div></div>
 <div class="ttc" id="spektrum__soft__bind__ap_8c_html_aaf9bff7a8e7fbd6badec3bf168f55aac"><div class="ttname"><a href="spektrum__soft__bind__ap_8c.html#aaf9bff7a8e7fbd6badec3bf168f55aac">UART_INIT</a></div><div class="ttdeci">#define UART_INIT(i)</div><div class="ttdef"><b>Definition:</b> <a href="spektrum__soft__bind__ap_8c_source.html#l00043">spektrum_soft_bind_ap.c:43</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_a6142c3480c91e7bb5442a558f28287d1"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">RADIO_CONTROL_POWER_PIN</a></div><div class="ttdeci">#define RADIO_CONTROL_POWER_PIN</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00150">opa_ftd_1.0.h:150</a></div></div>
-<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a74db3eed857f9c53bb67db256c12bc83"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a></div><div class="ttdeci">void sys_time_usleep(uint32_t us)</div><div class="ttdoc">sys_time_usleep(uint32_t us) </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_arch.c:95</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a74db3eed857f9c53bb67db256c12bc83"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a></div><div class="ttdeci">void sys_time_usleep(uint32_t us)</div><div class="ttdoc">sys_time_usleep(uint32_t us) </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">sys_time_arch.c:100</a></div></div>
 <div class="ttc" id="temp__tcouple__adc_8c_html_a530497e1435a9d2606cd3b9b2336de34"><div class="ttname"><a href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a></div><div class="ttdeci">uint16_t val[TCOUPLE_NB]</div><div class="ttdef"><b>Definition:</b> <a href="temp__tcouple__adc_8c_source.html#l00049">temp_tcouple_adc.c:49</a></div></div>
 <div class="ttc" id="intermcu__ap_8c_html_a609bd43c94c68e55513f2c65cf8447cd"><div class="ttname"><a href="intermcu__ap_8c.html#a609bd43c94c68e55513f2c65cf8447cd">intermcu_send_spektrum_bind</a></div><div class="ttdeci">void intermcu_send_spektrum_bind(void)</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8c_source.html#l00129">intermcu_ap.c:129</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_a540b8a2f018b4b319b4cd2c67853b00a"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">RADIO_CONTROL_POWER_ON</a></div><div class="ttdeci">#define RADIO_CONTROL_POWER_ON</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00151">opa_ftd_1.0.h:151</a></div></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('spektrum__soft__bind__ap_8c_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4fce34fdfa3ee0c77fb7c89ba1db056f.html">spektrum_soft_bind</a></li><li class="navelem"><a class="el" href="spektrum__soft__bind__ap_8c.html">spektrum_soft_bind_ap.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

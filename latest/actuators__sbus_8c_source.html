@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/actuators/actuators_sbus.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/actuators/actuators_sbus.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="subsystems_2actuators_8h.html">subsystems/actuators.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actuators__sbus_8h.html">subsystems/actuators/actuators_sbus.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_2actuators_2actuators_8h.html">modules/actuators/actuators.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actuators__sbus_8h.html">modules/actuators/actuators_sbus.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html">mcu_periph/uart.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -144,12 +144,12 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if PERIODIC_FREQUENCY &lt; 150</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#error Sbus actuators need at leest a frequency of 150 Hz</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> freq_trig = PERIODIC_FREQUENCY / 142.0 + 0.5; <span class="comment">// Round it to nearest value</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> freq_trig = PERIODIC_FREQUENCY / 142.0 + 0.5; <span class="comment">// Round it to nearest value</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* Main actuator structure */</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="actuators__sbus_8h.html#a8d5efd814dc9418b103becfb0777f00d">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="actuators__sbus_8h.html#structActuatorsSbus">ActuatorsSbus</a> <a class="code" href="actuators__sbus_8c.html#a8d5efd814dc9418b103becfb0777f00d">actuators_sbus</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">actuators_sbus_send</a>(<span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">actuators_sbus_send</a>(<span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * Initialize the sbus devices (UART output devices)</span></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="actuators__sbus_8h.html#a57098face7892a446a7fb62a768ed4c2">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="actuators__sbus_8c.html#a57098face7892a446a7fb62a768ed4c2">actuators_sbus_set</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cnt = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cnt = 0;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Only send every 7 ms</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  cnt++;</div>
@@ -194,11 +194,11 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">   89</a></span>&#160;<span class="preprocessor">#define SBUS_BIT_PER_CHANNEL 11</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">   91</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">actuators_sbus_send</a>(<span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">   91</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="actuators__sbus_8c.html#a8c9ad67ea17ec1d6ffed5bb72cbdd39a">actuators_sbus_send</a>(<span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> bits_sent = 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[22];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> bits_sent = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[22];</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">/* start */</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  dev-&gt;put_byte(dev-&gt;periph, 0, <a class="code" href="actuators__sbus_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f">SBUS_START_BYTE</a>);</div>
@@ -208,9 +208,9 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    data[i] = 0x00;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="actuators__sbus_8h.html#ab7b5de8b8b36ed4319f5412b8ed8a647">ACTUATORS_SBUS_MAX_NB</a>; i++) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chn = <a class="code" href="actuators__sbus_8c.html#a8d5efd814dc9418b103becfb0777f00d">actuators_sbus</a>.<a class="code" href="actuators__sbus_8h.html#a571a8a1522afe4a844af9391d689efaa">cmds</a>[i] &amp; 0x07ff; <span class="comment">// 11 bit</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ind = bits_sent / <a class="code" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">SBUS_BIT_PER_CHANNEL</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> shift = bits_sent % <a class="code" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">SBUS_BIT_PER_CHANNEL</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chn = <a class="code" href="actuators__sbus_8c.html#a8d5efd814dc9418b103becfb0777f00d">actuators_sbus</a>.<a class="code" href="actuators__sbus_8h.html#a571a8a1522afe4a844af9391d689efaa">cmds</a>[i] &amp; 0x07ff; <span class="comment">// 11 bit</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ind = bits_sent / <a class="code" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">SBUS_BIT_PER_CHANNEL</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> shift = bits_sent % <a class="code" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">SBUS_BIT_PER_CHANNEL</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    data[ind] |= (chn &gt;&gt; (3 + shift)) &amp; 0xff; <span class="comment">// Sends (8 - shift) bits of the 11: 11-(8-shift) remain = 3 + shift</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (shift &gt; 5) { <span class="comment">// need 3 bytes to fit the 11 bits</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      data[ind + 1] |= (chn &gt;&gt; (shift - 5)) &amp; 0xff; <span class="comment">// Sends next 8</span></div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  dev-&gt;put_byte(dev-&gt;periph, 0, <a class="code" href="actuators__sbus_8c.html#a5d52f2e3b979944cb52e335853132a2c">SBUS_END_BYTE</a>);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="serial__port_8c_html_adfeb7b8d8b2acf82e2f0fbf1d9323aad"><div class="ttname"><a href="serial__port_8c.html#adfeb7b8d8b2acf82e2f0fbf1d9323aad">UPARITY_EVEN</a></div><div class="ttdeci">#define UPARITY_EVEN</div><div class="ttdef"><b>Definition:</b> <a href="serial__port_8c_source.html#l00057">serial_port.c:57</a></div></div>
 <div class="ttc" id="chibios_2mcu__periph_2uart__arch_8h_html_a82fce4c6435c1524dd934d40c26330bf"><div class="ttname"><a href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">B100000</a></div><div class="ttdeci">#define B100000</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">uart_arch.h:47</a></div></div>
@@ -248,23 +248,23 @@ $(document).ready(function(){initNavTree('actuators__sbus_8c_source.html','');})
 <div class="ttc" id="actuators__sbus_8c_html_a9b651aaf39795d5f8d0f80b81852625e"><div class="ttname"><a href="actuators__sbus_8c.html#a9b651aaf39795d5f8d0f80b81852625e">actuators_sbus_init</a></div><div class="ttdeci">void actuators_sbus_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8c_source.html#l00051">actuators_sbus.c:51</a></div></div>
 <div class="ttc" id="serial__port_8c_html_a8af70d2ac65676d6dd797b3a0f5de1a9"><div class="ttname"><a href="serial__port_8c.html#a8af70d2ac65676d6dd797b3a0f5de1a9">UBITS_8</a></div><div class="ttdeci">#define UBITS_8</div><div class="ttdef"><b>Definition:</b> <a href="serial__port_8c_source.html#l00050">serial_port.c:50</a></div></div>
 <div class="ttc" id="serial__port_8c_html_a9e425ef705476c0a778712761281a232"><div class="ttname"><a href="serial__port_8c.html#a9e425ef705476c0a778712761281a232">USTOP_2</a></div><div class="ttdeci">#define USTOP_2</div><div class="ttdef"><b>Definition:</b> <a href="serial__port_8c_source.html#l00053">serial_port.c:53</a></div></div>
-<div class="ttc" id="subsystems_2actuators_8h_html"><div class="ttname"><a href="subsystems_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
 <div class="ttc" id="actuators__sbus_8c_html_af410d706508c510446b23150520e81b4"><div class="ttname"><a href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">SBUS_BIT_PER_CHANNEL</a></div><div class="ttdeci">#define SBUS_BIT_PER_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8c_source.html#l00089">actuators_sbus.c:89</a></div></div>
 <div class="ttc" id="actuators__sbus_8h_html_a571a8a1522afe4a844af9391d689efaa"><div class="ttname"><a href="actuators__sbus_8h.html#a571a8a1522afe4a844af9391d689efaa">ActuatorsSbus::cmds</a></div><div class="ttdeci">int32_t cmds[ACTUATORS_SBUS_MAX_NB]</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8h_source.html#l00037">actuators_sbus.h:37</a></div></div>
 <div class="ttc" id="actuators__sbus_8h_html_structActuatorsSbus"><div class="ttname"><a href="actuators__sbus_8h.html#structActuatorsSbus">ActuatorsSbus</a></div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8h_source.html#l00036">actuators_sbus.h:36</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators_8h_html"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
 <div class="ttc" id="chibios_2mcu__periph_2uart__arch_8c_html_a0cdaf8266fcef9b52d422621b36413d6"><div class="ttname"><a href="chibios_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">uart_periph_set_bits_stop_parity</a></div><div class="ttdeci">void uart_periph_set_bits_stop_parity(struct uart_periph *p, uint8_t bits, uint8_t stop, uint8_t parity)</div><div class="ttdoc">Set parity and stop bits. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2uart__arch_8c_source.html#l01013">uart_arch.c:1013</a></div></div>
 <div class="ttc" id="actuators__sbus_8h_html_ab7b5de8b8b36ed4319f5412b8ed8a647"><div class="ttname"><a href="actuators__sbus_8h.html#ab7b5de8b8b36ed4319f5412b8ed8a647">ACTUATORS_SBUS_MAX_NB</a></div><div class="ttdeci">#define ACTUATORS_SBUS_MAX_NB</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8h_source.html#l00033">actuators_sbus.h:33</a></div></div>
 <div class="ttc" id="actuators__sbus_8c_html_a5d52f2e3b979944cb52e335853132a2c"><div class="ttname"><a href="actuators__sbus_8c.html#a5d52f2e3b979944cb52e335853132a2c">SBUS_END_BYTE</a></div><div class="ttdeci">#define SBUS_END_BYTE</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8c_source.html#l00087">actuators_sbus.c:87</a></div></div>
 <div class="ttc" id="actuators__sbus_8c_html_a8d5efd814dc9418b103becfb0777f00d"><div class="ttname"><a href="actuators__sbus_8c.html#a8d5efd814dc9418b103becfb0777f00d">actuators_sbus</a></div><div class="ttdeci">struct ActuatorsSbus actuators_sbus</div><div class="ttdef"><b>Definition:</b> <a href="actuators__sbus_8c_source.html#l00045">actuators_sbus.c:45</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__sbus_8c.html">actuators_sbus.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__sbus_8c.html">actuators_sbus.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

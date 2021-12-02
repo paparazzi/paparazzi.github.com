@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * Integer implementations</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *********/</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a9ea37190b84005b38d22358e2d2c3a74">   39</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a9ea37190b84005b38d22358e2d2c3a74">   39</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (n_elements == 0) {</div>
@@ -144,19 +144,19 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// determine the mean for the vector:</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">float</span> sum = 0.f;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; n_elements; i++) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    sum += (float)array[i];</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)(sum / n_elements);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)(sum / n_elements);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56">   64</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__stat_8c.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56">   64</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__stat_8c.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a>(array, array, n_elements));</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117">   78</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array1, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array2, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117">   78</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="code" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a>(<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *array1, <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *array2, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> (n_elements == 0) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Note that something else is wrong if you want the covariance of 0 samples.</span></div>
@@ -166,31 +166,31 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">float</span> sumX = 0.f, sumY = 0.f, sumXY = 0.f;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Determine the covariance:</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; n_elements; i++) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    sumX += (float)array1[i];</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    sumY += (float)array2[i];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    sumXY += (float)(array1[i]) * (float)(array2[i]);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)(sumXY / n_elements - sumX * sumY / (n_elements * n_elements));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)(sumXY / n_elements - sumX * sumY / (n_elements * n_elements));</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/*********</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * Float implementations</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> *********/</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a234aff5aa9b0f7e40ac863e2b60d6365">  106</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a234aff5aa9b0f7e40ac863e2b60d6365">  106</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">// determine the mean for the vector:</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">float</span> sum = 0.f;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; n_elements; i++) {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    sum += array[i];</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">return</span> sum;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f">  122</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">mean_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f">  122</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">mean_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (n_elements == 0) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// Note that something else is wrong if you want the mean of 0 samples.</span></div>
@@ -199,12 +199,12 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a>(array, n_elements) / n_elements);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e">  139</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e">  139</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a>(<span class="keywordtype">float</span> *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">covariance_f</a>(array, array, n_elements);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#acfa4250d4cb12b024d2d6a19d8253695">  152</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">covariance_f</a>(<span class="keywordtype">float</span> *arr1, <span class="keywordtype">float</span> *arr2, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="pprz__stat_8h.html#acfa4250d4cb12b024d2d6a19d8253695">  152</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">covariance_f</a>(<span class="keywordtype">float</span> *arr1, <span class="keywordtype">float</span> *arr2, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n_elements)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> (n_elements == 0) {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// Note that something else is wrong if you want the covariance of 0 samples.</span></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">float</span> sumX = 0.f, sumY = 0.f, sumXY = 0.f;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// Determine the covariance:</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; n_elements; i++) {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    sumX += arr1[i];</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    sumY += arr2[i];</div>
@@ -225,21 +225,21 @@ $(document).ready(function(){initNavTree('pprz__stat_8c_source.html','');});
 <div class="ttc" id="pprz__stat_8c_html_a50abca98517a26ee5a4e1f3e6e9e0f56"><div class="ttname"><a href="pprz__stat_8c.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a></div><div class="ttdeci">int32_t variance_i(int32_t *array, uint32_t n_elements)</div><div class="ttdoc">Compute the variance of an array of values (integer). </div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00064">pprz_stat.c:64</a></div></div>
 <div class="ttc" id="snake__gate__detection_8c_html_a0483d856b36b358ff3b62e6a3c6f95f1"><div class="ttname"><a href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a></div><div class="ttdeci">int * array</div><div class="ttdef"><b>Definition:</b> <a href="snake__gate__detection_8c_source.html#l00094">snake_gate_detection.c:94</a></div></div>
 <div class="ttc" id="pprz__stat_8c_html_adea85d32f16991e739b2cea3b3ec427e"><div class="ttname"><a href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">mean_f</a></div><div class="ttdeci">float mean_f(float *array, uint32_t n_elements)</div><div class="ttdoc">Compute the mean value of an array (float) </div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00122">pprz_stat.c:122</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="pprz__stat_8c_html_a938b3854a384a0e327d27cf1c515b117"><div class="ttname"><a href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a></div><div class="ttdeci">int32_t covariance_i(int32_t *array1, int32_t *array2, uint32_t n_elements)</div><div class="ttdoc">Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the ...</div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00078">pprz_stat.c:78</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="pprz__stat_8c_html_ac75c0169ede28d21ada6d51e7431ea18"><div class="ttname"><a href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">covariance_f</a></div><div class="ttdeci">float covariance_f(float *arr1, float *arr2, uint32_t n_elements)</div><div class="ttdoc">Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the ...</div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00152">pprz_stat.c:152</a></div></div>
 <div class="ttc" id="pprz__stat_8c_html_aef701f0d6d92883bf903cc4e8b20048e"><div class="ttname"><a href="pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a></div><div class="ttdeci">float variance_f(float *array, uint32_t n_elements)</div><div class="ttdoc">Compute the variance of an array of values (float). </div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00139">pprz_stat.c:139</a></div></div>
 <div class="ttc" id="pprz__stat_8h_html"><div class="ttname"><a href="pprz__stat_8h.html">pprz_stat.h</a></div><div class="ttdoc">Statistics functions. </div></div>
 <div class="ttc" id="pprz__stat_8c_html_a9ea37190b84005b38d22358e2d2c3a74"><div class="ttname"><a href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a></div><div class="ttdeci">int32_t mean_i(int32_t *array, uint32_t n_elements)</div><div class="ttdoc">Compute the mean value of an array This is implemented using floats to handle scaling of all variable...</div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00039">pprz_stat.c:39</a></div></div>
 <div class="ttc" id="pprz__stat_8c_html_a234aff5aa9b0f7e40ac863e2b60d6365"><div class="ttname"><a href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a></div><div class="ttdeci">float sum_f(float *array, uint32_t n_elements)</div><div class="ttdoc">Compute the sum array elements (float) </div><div class="ttdef"><b>Definition:</b> <a href="pprz__stat_8c_source.html#l00106">pprz_stat.c:106</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__stat_8c.html">pprz_stat.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

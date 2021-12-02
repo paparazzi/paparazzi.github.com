@@ -10,7 +10,7 @@ var searchData=
   ['filter1eimu',['Filter1eImu',['../filter__1euro__imu_8h.html#structFilter1eImu',1,'']]],
   ['firstorderhighpass',['FirstOrderHighPass',['../high__pass__filter_8h.html#structFirstOrderHighPass',1,'']]],
   ['firstorderlowpass',['FirstOrderLowPass',['../low__pass__filter_8h.html#structFirstOrderLowPass',1,'']]],
-  ['flashinfo',['FlashInfo',['../stm32_2subsystems_2settings__arch_8c.html#structFlashInfo',1,'']]],
+  ['flashinfo',['FlashInfo',['../stm32_2modules_2core_2settings__arch_8c.html#structFlashInfo',1,'']]],
   ['floatattitudegains',['FloatAttitudeGains',['../stabilization__attitude__common__float_8h.html#structFloatAttitudeGains',1,'']]],
   ['floateulers',['FloatEulers',['../group__math__algebra__float.html#structFloatEulers',1,'']]],
   ['floatmat33',['FloatMat33',['../group__math__algebra__float.html#structFloatMat33',1,'']]],

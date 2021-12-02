@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('mpu9250_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2mpu9250_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2mpu9250_8h" id="sw_2airborne_2peripherals_2mpu9250_8h">
-<area shape="rect" id="node3" href="mpu9250__regs_8h.html" title="Register and address definitions for MPU&#45;9250. " alt="" coords="84,95,243,136"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('mpu9250_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2mpu9250_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2mpu9250_8hdep" id="sw_2airborne_2peripherals_2mpu9250_8hdep">
-<area shape="rect" id="node2" href="mpu9250_8c.html" title="MPU&#45;9250 driver common functions (I2C and SPI). " alt="" coords="119,95,289,136"/><area shape="rect" id="node3" href="mpu9250__i2c_8h.html" title="Driver for the MPU&#45;9250 using I2C. " alt="" coords="313,95,484,136"/><area shape="rect" id="node8" href="mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI. " alt="" coords="616,95,787,136"/><area shape="rect" id="node4" href="imu__mpu9250_8h.html" title="sw/airborne/modules\l/sensors/imu_mpu9250.h" alt="" coords="5,184,189,225"/><area shape="rect" id="node6" href="mpu9250__i2c_8c.html" title="Driver for the MPU&#45;9250 using I2C. " alt="" coords="213,184,384,225"/><area shape="rect" id="node7" href="imu__mpu9250__i2c_8h.html" title="IMU driver for the MPU9250 using I2C. " alt="" coords="409,184,591,225"/><area shape="rect" id="node5" href="imu__mpu9250_8c.html" title="sw/airborne/modules\l/sensors/imu_mpu9250.c" alt="" coords="6,273,189,315"/><area shape="rect" id="node9" href="mpu9250__spi_8c.html" title="Driver for the MPU&#45;9250 using SPI. " alt="" coords="616,184,787,225"/><area shape="rect" id="node10" href="imu__mpu9250__spi_8h.html" title="IMU driver for the MPU9250 using SPI. " alt="" coords="811,184,994,225"/></map>
+</map>
 </div>
 </div>
 <p><a href="mpu9250_8h_source.html">Go to the source code of this file.</a></p>
@@ -227,7 +227,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a62c163eaf8e2918e26d119173cb0f7ee"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> )(void *mpu, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _reg, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _val)</td></tr>
+<tr class="memitem:a62c163eaf8e2918e26d119173cb0f7ee"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> )(void *mpu, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _val)</td></tr>
 <tr class="memdesc:a62c163eaf8e2918e26d119173cb0f7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration function prototype.  <a href="#a62c163eaf8e2918e26d119173cb0f7ee">More...</a><br /></td></tr>
 <tr class="separator:a62c163eaf8e2918e26d119173cb0f7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6615089619127aa79399b3e49e84a43a"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a6615089619127aa79399b3e49e84a43a">Mpu9250I2cSlaveConfigure</a> )(<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu)</td></tr>
@@ -259,7 +259,7 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aae5fa60698653c8ac15e41796c53c66e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aae5fa60698653c8ac15e41796c53c66e">mpu9250_set_default_config</a> (struct <a class="el" href="mpu9250_8h.html#structMpu9250Config">Mpu9250Config</a> *c)</td></tr>
 <tr class="separator:aae5fa60698653c8ac15e41796c53c66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a845891a5217c8082995fbbf9c94653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653">mpu9250_send_config</a> (<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu, struct <a class="el" href="mpu9250_8h.html#structMpu9250Config">Mpu9250Config</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae">config</a>)</td></tr>
+<tr class="memitem:a5a845891a5217c8082995fbbf9c94653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653">mpu9250_send_config</a> (<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu, struct <a class="el" href="mpu9250_8h.html#structMpu9250Config">Mpu9250Config</a> *<a class="el" href="usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae">config</a>)</td></tr>
 <tr class="memdesc:a5a845891a5217c8082995fbbf9c94653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration sequence called once before normal use.  <a href="#a5a845891a5217c8082995fbbf9c94653">More...</a><br /></td></tr>
 <tr class="separator:a5a845891a5217c8082995fbbf9c94653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8c9bdb9e4d73f97f5b3daceb9e6e31b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b">mpu9250_configure_i2c_slaves</a> (<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu)</td></tr>
@@ -270,11 +270,11 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a67ca0e1d73649dcfa1efd8fe39737400"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a> [4]</td></tr>
 <tr class="separator:a67ca0e1d73649dcfa1efd8fe39737400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad87c96ac74a96fe8d27ddb025b47751"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a> [4][2]</td></tr>
+<tr class="memitem:aad87c96ac74a96fe8d27ddb025b47751"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a> [4][2]</td></tr>
 <tr class="separator:aad87c96ac74a96fe8d27ddb025b47751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa3719b5d2ad4f0c9dcf6f7fd005cab"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a> [4]</td></tr>
 <tr class="separator:a9fa3719b5d2ad4f0c9dcf6f7fd005cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4baa1f9b32c4c697569e3260103dd43b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
+<tr class="memitem:a4baa1f9b32c4c697569e3260103dd43b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
 <tr class="separator:a4baa1f9b32c4c697569e3260103dd43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -334,7 +334,7 @@ accel_range</td>
 <td class="fielddoc">
 g Range </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0f73249f413cf67b324e878300e640a7"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a0f73249f413cf67b324e878300e640a7"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 clk_sel</td>
 <td class="fielddoc">
@@ -377,7 +377,7 @@ i2c_mst_clk</td>
 <td class="fielddoc">
 MPU I2C master clock speed. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5dbcd328c27bdfb517b28695416dab5c"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a5dbcd328c27bdfb517b28695416dab5c"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 i2c_mst_delay</td>
 <td class="fielddoc">
@@ -395,19 +395,19 @@ initialized</td>
 <td class="fielddoc">
 config done flag </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a80ee0c5434de57f6f25ba3bc09d50b78"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a80ee0c5434de57f6f25ba3bc09d50b78"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_bytes</td>
 <td class="fielddoc">
 number of bytes to read starting with MPU9250_REG_INT_STATUS </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5a3ef6764170e2bc2e25ac5f74d50735"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a5a3ef6764170e2bc2e25ac5f74d50735"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_slave_init</td>
 <td class="fielddoc">
 number of already configured/initialized slaves </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a69947f1fe40926633938b1f52ccb1d45"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a69947f1fe40926633938b1f52ccb1d45"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_slaves</td>
 <td class="fielddoc">
@@ -419,7 +419,7 @@ slaves[<a class="el" href="mpu9250_8h.html#a86533d677bbb1562223508b115f29f86">MP
 <td class="fielddoc">
 I2C slaves. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab1ab338ddc1260c0a36bebbea83e5d63"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab1ab338ddc1260c0a36bebbea83e5d63"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 smplrt_div</td>
 <td class="fielddoc">
@@ -915,7 +915,7 @@ Sample rate divider. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* Mpu9250ConfigSet)(void *mpu, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _reg, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _val)</td>
+          <td class="memname">typedef void(* Mpu9250ConfigSet)(void *mpu, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1032,7 +1032,7 @@ Sample rate divider. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h_ad8c9bdb9e4d73f97f5b3daceb9e6e31b_icgraph.png" border="0" usemap="#mpu9250_8h_ad8c9bdb9e4d73f97f5b3daceb9e6e31b_icgraph" alt=""/></div>
 <map name="mpu9250_8h_ad8c9bdb9e4d73f97f5b3daceb9e6e31b_icgraph" id="mpu9250_8h_ad8c9bdb9e4d73f97f5b3daceb9e6e31b_icgraph">
-<area shape="rect" id="node2" href="mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="228,81,395,108"/><area shape="rect" id="node3" href="mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6" title="mpu9250_i2c_start_configure" alt="" coords="443,5,653,32"/><area shape="rect" id="node6" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="473,56,623,83"/><area shape="rect" id="node8" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="443,107,653,133"/><area shape="rect" id="node11" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="473,157,623,184"/><area shape="rect" id="node4" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="701,5,867,32"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="915,5,1085,32"/><area shape="rect" id="node7" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="705,56,863,83"/><area shape="rect" id="node9" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="701,107,867,133"/><area shape="rect" id="node10" href="imu__mpu9250__spi_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="915,107,1085,133"/><area shape="rect" id="node12" href="imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="705,157,863,184"/></map>
+</map>
 </div>
 </p>
 
@@ -1083,7 +1083,7 @@ Sample rate divider. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_cgraph.png" border="0" usemap="#mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_cgraph" alt=""/></div>
 <map name="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_cgraph" id="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_cgraph">
-<area shape="rect" id="node2" href="mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b" title="Configure I2C slaves of the MPU. " alt="" coords="220,5,395,47"/></map>
+</map>
 </div>
 </p>
 
@@ -1094,7 +1094,7 @@ Sample rate divider. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_icgraph.png" border="0" usemap="#mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_icgraph" alt=""/></div>
 <map name="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_icgraph" id="mpu9250_8h_a5a845891a5217c8082995fbbf9c94653_icgraph">
-<area shape="rect" id="node2" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="250,5,401,32"/><area shape="rect" id="node4" href="mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6" title="mpu9250_i2c_start_configure" alt="" coords="220,56,431,83"/><area shape="rect" id="node7" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="250,107,401,133"/><area shape="rect" id="node9" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="220,157,431,184"/><area shape="rect" id="node3" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="483,5,640,32"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="479,56,644,83"/><area shape="rect" id="node6" href="imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="692,56,863,83"/><area shape="rect" id="node8" href="imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="483,107,640,133"/><area shape="rect" id="node10" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="479,157,644,184"/><area shape="rect" id="node11" href="imu__mpu9250__spi_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="692,157,863,184"/></map>
+</map>
 </div>
 </p>
 
@@ -1127,7 +1127,7 @@ Sample rate divider. </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250_8h_aae5fa60698653c8ac15e41796c53c66e_icgraph.png" border="0" usemap="#mpu9250_8h_aae5fa60698653c8ac15e41796c53c66e_icgraph" alt=""/></div>
 <map name="mpu9250_8h_aae5fa60698653c8ac15e41796c53c66e_icgraph" id="mpu9250_8h_aae5fa60698653c8ac15e41796c53c66e_icgraph">
-<area shape="rect" id="node2" href="mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c" title="mpu9250_i2c_init" alt="" coords="215,5,349,32"/><area shape="rect" id="node4" href="mpu9250__spi_8h.html#a30b85044110ae7aea38da2a7c6cb66cb" title="mpu9250_spi_init" alt="" coords="215,56,349,83"/><area shape="rect" id="node3" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="397,5,537,32"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="397,56,537,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1153,7 +1153,7 @@ Sample rate divider. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> MPU9250_ACCEL_SENS_FRAC[4][2]</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> MPU9250_ACCEL_SENS_FRAC[4][2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1181,7 +1181,7 @@ Sample rate divider. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> MPU9250_GYRO_SENS_FRAC[4][2]</td>
+          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> MPU9250_GYRO_SENS_FRAC[4][2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1196,7 +1196,7 @@ Sample rate divider. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu9250_8h.html">mpu9250.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

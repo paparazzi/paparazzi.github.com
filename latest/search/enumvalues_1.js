@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['back',['BACK',['../actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20ac921ff2cfc571c1d19b0485d7f6926ee',1,'BACK():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899ac921ff2cfc571c1d19b0485d7f6926ee',1,'BACK():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899ac921ff2cfc571c1d19b0485d7f6926ee',1,'BACK():&#160;actuators_asctec_v2_new.h']]],
+  ['back',['BACK',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899ac921ff2cfc571c1d19b0485d7f6926ee',1,'actuators_asctec_v2.h']]],
   ['bad_5fdetects_5fdisarm',['BAD_DETECTS_DISARM',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a5b4332a67c30b628d6209b861c448459',1,'esc32.h']]],
   ['battery_5fmonitor_5fbus_5fcurrent_5fread',['BATTERY_MONITOR_BUS_CURRENT_READ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84aa429c9f072e669c7d6064a0649f0485a',1,'battery_monitor.h']]],
   ['battery_5fmonitor_5fbus_5fcurrent_5freq',['BATTERY_MONITOR_BUS_CURRENT_REQ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a5694ba1167e15d1b771e2af97fef4e4a',1,'battery_monitor.h']]],
@@ -9,8 +9,6 @@ var searchData=
   ['battery_5fmonitor_5fbus_5fvoltage_5fread',['BATTERY_MONITOR_BUS_VOLTAGE_READ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a40d8630e1ed6658a3798b0db9108544c',1,'battery_monitor.h']]],
   ['battery_5fmonitor_5fbus_5fvoltage_5freq',['BATTERY_MONITOR_BUS_VOLTAGE_REQ',['../battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84a1721a7d2d23f8e86eb5b6515e904492e',1,'battery_monitor.h']]],
   ['baud_5frate',['BAUD_RATE',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610aa6784f71bbdc61f1d864f2fe0c4465bc',1,'esc32.h']]],
-  ['bb_5frunning',['BB_RUNNING',['../booz_2baro__board_8h.html#a080d7bfaad497259d3c3430293e21c22ab6e3cb841e7902cb6d49e7112ce5491f',1,'baro_board.h']]],
-  ['bb_5funinitialized',['BB_UNINITIALIZED',['../booz_2baro__board_8h.html#a080d7bfaad497259d3c3430293e21c22a7620464f013e95570bcb4e149d832024',1,'baro_board.h']]],
   ['binary_5fcommand_5fack',['BINARY_COMMAND_ACK',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015ac5b0ddf43c6431820190188a30abbe02',1,'esc32.h']]],
   ['binary_5fcommand_5farm',['BINARY_COMMAND_ARM',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015a5b1e290fa7684dc37a2646c1c4eaddf3',1,'esc32.h']]],
   ['binary_5fcommand_5fcli',['BINARY_COMMAND_CLI',['../esc32_8h.html#a4521dc742b139291f3b4b20b35cdf015a1552470540ede1c2af5edc71401e0345',1,'esc32.h']]],

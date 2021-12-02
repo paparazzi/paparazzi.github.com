@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('lis3mdl_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2lis3mdl_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2lis3mdl_8c" id="sw_2airborne_2peripherals_2lis3mdl_8c">
-<area shape="rect" id="node2" href="lis3mdl_8h.html" title="ST LIS3MDL 3&#45;axis magnetometer driver interface (I2C). " alt="" coords="13,95,168,121"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="25,169,156,196"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="271,169,449,196"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="460,244,615,271"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="285,244,435,271"/></map>
+</map>
 </div>
 </div>
 <p><a href="lis3mdl_8c_source.html">Go to the source code of this file.</a></p>
@@ -182,12 +182,12 @@ Macros</h2></td></tr>
 <tr class="separator:a4bfa1fdbdb023df16d1936d4444b8e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b4a7393a70868f51c90eb9e6b1fc68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#a88b4a7393a70868f51c90eb9e6b1fc68">LIS3MDL_REG_CTL_2_RESET</a>&#160;&#160;&#160;0b00000100</td></tr>
 <tr class="separator:a88b4a7393a70868f51c90eb9e6b1fc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(_buf[_idx] | (_buf[_idx+1] &lt;&lt; 8)))</td></tr>
+<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(_buf[_idx] | (_buf[_idx+1] &lt;&lt; 8)))</td></tr>
 <tr class="separator:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a28e69651911173da490b88c97b3d8f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#a28e69651911173da490b88c97b3d8f7e">lis3mdl_init</a> (struct <a class="el" href="lis3mdl_8h.html#structLis3mdl">Lis3mdl</a> *mag, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_rate, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> perf)</td></tr>
+<tr class="memitem:a28e69651911173da490b88c97b3d8f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#a28e69651911173da490b88c97b3d8f7e">lis3mdl_init</a> (struct <a class="el" href="lis3mdl_8h.html#structLis3mdl">Lis3mdl</a> *mag, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data_rate, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> perf)</td></tr>
 <tr class="separator:a28e69651911173da490b88c97b3d8f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af653de6ff8c2ca71878ecbf4c1d7cf3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lis3mdl_8c.html#af653de6ff8c2ca71878ecbf4c1d7cf3e">lis3mdl_configure</a> (struct <a class="el" href="lis3mdl_8h.html#structLis3mdl">Lis3mdl</a> *mag)</td></tr>
 <tr class="separator:af653de6ff8c2ca71878ecbf4c1d7cf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +198,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ST LIS3MDL 3-axis magnetometer driver interface (I2C). </p>
+<p>PNI RM3100 3-axis magnetometer driver interface (I2C).</p>
 
 <p>Definition in file <a class="el" href="lis3mdl_8c_source.html">lis3mdl.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -220,7 +221,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(_buf[_idx] | (_buf[_idx+1] &lt;&lt; 8)))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(_buf[_idx] | (_buf[_idx+1] &lt;&lt; 8)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -631,7 +632,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_cgraph.png" border="0" usemap="#lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_cgraph" alt=""/></div>
 <map name="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_cgraph" id="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="187,5,288,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="336,5,427,32"/></map>
+</map>
 </div>
 </p>
 
@@ -642,7 +643,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_icgraph.png" border="0" usemap="#lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_icgraph" alt=""/></div>
 <map name="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_icgraph" id="lis3mdl_8c_af653de6ff8c2ca71878ecbf4c1d7cf3e_icgraph">
-<area shape="rect" id="node2" href="lis3mdl_8h.html#ac9bc501edf81be7fe225feabca69af21" title="convenience function: read or start configuration if not already initialized " alt="" coords="187,13,311,39"/><area shape="rect" id="node3" href="mag__lis3mdl_8h.html#afe2b496b6f26ead3d40da59a4cfda5fa" title="mag_lis3mdl_module\l_periodic" alt="" coords="359,5,517,47"/></map>
+</map>
 </div>
 </p>
 
@@ -664,7 +665,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lis3mdl_8c_source.html#l00127">127</a> of file <a class="el" href="lis3mdl_8c_source.html">lis3mdl.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lis3mdl_8h.html#a508572687ecc7ab81467d12c49e63450">Lis3mdl::data</a>, <a class="el" href="lis3mdl_8h_source.html#l00074">Lis3mdl::data_available</a>, <a class="el" href="lis3mdl_8h_source.html#l00071">Lis3mdl::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lis3mdl_8h_source.html#l00072">Lis3mdl::initialized</a>, <a class="el" href="lis3mdl_8c_source.html#l00125">Int16FromBuf</a>, <a class="el" href="lis3mdl_8h_source.html#l00064">LIS3MDL_STATUS_IDLE</a>, <a class="el" href="lis3mdl_8h_source.html#l00065">LIS3MDL_STATUS_MEAS</a>, <a class="el" href="lis3mdl_8c_source.html#l00035">LIS3MDL_STATUS_ZYXDA</a>, <a class="el" href="lis3mdl_8h_source.html#l00073">Lis3mdl::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lis3mdl_8h.html#a83a88dfcf41ac94c5013bb70f5f8b40b">Lis3mdl::data</a>, <a class="el" href="lis3mdl_8h_source.html#l00074">Lis3mdl::data_available</a>, <a class="el" href="lis3mdl_8h_source.html#l00071">Lis3mdl::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lis3mdl_8h_source.html#l00072">Lis3mdl::initialized</a>, <a class="el" href="lis3mdl_8c_source.html#l00125">Int16FromBuf</a>, <a class="el" href="lis3mdl_8h_source.html#l00064">LIS3MDL_STATUS_IDLE</a>, <a class="el" href="lis3mdl_8h_source.html#l00065">LIS3MDL_STATUS_MEAS</a>, <a class="el" href="lis3mdl_8c_source.html#l00035">LIS3MDL_STATUS_ZYXDA</a>, <a class="el" href="lis3mdl_8h_source.html#l00073">Lis3mdl::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>.</p>
 
@@ -675,7 +676,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_af00752ab8b60a2dc96c19c54901412b1_icgraph.png" border="0" usemap="#lis3mdl_8c_af00752ab8b60a2dc96c19c54901412b1_icgraph" alt=""/></div>
 <map name="lis3mdl_8c_af00752ab8b60a2dc96c19c54901412b1_icgraph" id="lis3mdl_8c_af00752ab8b60a2dc96c19c54901412b1_icgraph">
-<area shape="rect" id="node2" href="mag__lis3mdl_8h.html#a8c19f6525e337de402148b12623deaed" title="mag_lis3mdl_module\l_event" alt="" coords="164,5,323,47"/></map>
+</map>
 </div>
 </p>
 
@@ -700,31 +701,31 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>data_rate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>perf</em>&#160;</td>
         </tr>
         <tr>
@@ -748,7 +749,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_a28e69651911173da490b88c97b3d8f7e_icgraph.png" border="0" usemap="#lis3mdl_8c_a28e69651911173da490b88c97b3d8f7e_icgraph" alt=""/></div>
 <map name="lis3mdl_8c_a28e69651911173da490b88c97b3d8f7e_icgraph" id="lis3mdl_8c_a28e69651911173da490b88c97b3d8f7e_icgraph">
-<area shape="rect" id="node2" href="mag__lis3mdl_8h.html#a6978fda020fd614ae2f1e0fa7feb2165" title="mag_lis3mdl_module_init" alt="" coords="147,5,331,32"/></map>
+</map>
 </div>
 </p>
 
@@ -781,7 +782,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_cgraph.png" border="0" usemap="#lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_cgraph" alt=""/></div>
 <map name="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_cgraph" id="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="156,5,269,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="317,5,408,32"/></map>
+</map>
 </div>
 </p>
 
@@ -792,7 +793,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_icgraph.png" border="0" usemap="#lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_icgraph" alt=""/></div>
 <map name="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_icgraph" id="lis3mdl_8c_a29056b00bd0cdba806dddbb2846ed948_icgraph">
-<area shape="rect" id="node2" href="lis3mdl_8h.html#ac9bc501edf81be7fe225feabca69af21" title="convenience function: read or start configuration if not already initialized " alt="" coords="156,13,280,39"/><area shape="rect" id="node3" href="mag__lis3mdl_8h.html#afe2b496b6f26ead3d40da59a4cfda5fa" title="mag_lis3mdl_module\l_periodic" alt="" coords="328,5,487,47"/></map>
+</map>
 </div>
 </p>
 
@@ -804,7 +805,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lis3mdl_8c.html">lis3mdl.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

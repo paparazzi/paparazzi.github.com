@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('temp__temod_8c.html','');});
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for temp_temod.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('temp__temod_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__temod_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2temp__temod_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2temp__temod_8c" id="sw_2airborne_2modules_2meteo_2temp__temod_8c">
-<area shape="rect" id="node2" href="temp__temod_8h.html" title="modules/meteo/temp\l_temod.h" alt="" coords="5,273,167,315"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="201,102,331,129"/><area shape="rect" id="node6" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="363,102,417,129"/><area shape="rect" id="node8" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1243,281,1382,307"/><area shape="rect" id="node12" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="761,95,915,136"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1342,191,1427,218"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="581,184,735,225"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1124,191,1317,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="temp__temod_8c_source.html">Go to the source code of this file.</a></p>
@@ -230,7 +230,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="temp__temod_8c_source.html#l00074">74</a> of file <a class="el" href="temp__temod_8c_source.html">temp_temod.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="temp__temod_8c_source.html#l00043">ftmd_temperature</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="temp__temod_8c_source.html#l00052">TEMOD_TYPE</a>, <a class="el" href="temp__temod_8c_source.html#l00044">tmd_trans</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="temp__temod_8c_source.html#l00043">ftmd_temperature</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="temp__temod_8c_source.html#l00052">TEMOD_TYPE</a>, <a class="el" href="temp__temod_8c_source.html#l00044">tmd_trans</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__temod_8c_acaab54d6e397dba4b085c68b909c6c11_cgraph.png" border="0" usemap="#temp__temod_8c_acaab54d6e397dba4b085c68b909c6c11_cgraph" alt=""/></div>
 <map name="temp__temod_8c_acaab54d6e397dba4b085c68b909c6c11_cgraph" id="temp__temod_8c_acaab54d6e397dba4b085c68b909c6c11_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="175,5,268,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="316,5,407,32"/></map>
+</map>
 </div>
 </p>
 
@@ -324,7 +324,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="temp__temod_8c.html">temp_temod.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

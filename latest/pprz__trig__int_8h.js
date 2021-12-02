@@ -20,5 +20,6 @@ var pprz__trig__int_8h =
     [ "int32_atan2_2", "pprz__trig__int_8h.html#a819fd8c37d7553e4ad43e32acbe43ea5", null ],
     [ "pprz_itrig_cos", "pprz__trig__int_8h.html#a728b04d5a78d866cd79c86b0c3c6c5a0", null ],
     [ "pprz_itrig_sin", "pprz__trig__int_8h.html#aab62d96cc0a5f76ed59b60d27332d663", null ],
+    [ "pprz_trig_int_init", "pprz__trig__int_8h.html#a4da1dd8c55ab01104adbcae594ca9621", null ],
     [ "pprz_trig_int", "pprz__trig__int_8h.html#addcf33d6609d6b7bae80076cd27487a6", null ]
 ];

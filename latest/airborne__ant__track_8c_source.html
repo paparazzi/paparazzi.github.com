@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,9 +129,9 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if defined(USE_AIRBORNE_ANT_TRACKING) &amp;&amp; USE_AIRBORNE_ANT_TRACKING == 1</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inttypes_8h.html">inttypes.h</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">inter_mcu.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">modules/nav/common_nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
@@ -311,7 +311,6 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="ttc" id="point_8c_html_a31893a86d66bebf3f735a51b2bcdb80c"><div class="ttname"><a href="point_8c.html#a31893a86d66bebf3f735a51b2bcdb80c">vSubtractVectors</a></div><div class="ttdeci">void vSubtractVectors(VECTOR *svA, VECTOR svB, VECTOR svC)</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00116">point.c:116</a></div></div>
 <div class="ttc" id="max7456_8c_html_af2cd1aafbb7c19268a9715b5aa72dddb"><div class="ttname"><a href="max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb">VECTOR::fz</a></div><div class="ttdeci">float fz</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00087">point.c:87</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a983349c9ccc3f390fafe929d3c9fdd16"><div class="ttname"><a href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a></div><div class="ttdeci">#define WaypointY(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00046">common_nav.h:46</a></div></div>
-<div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="group__state__velocity_html_ga6f8b83126a235daea584aa9ce97f7fac"><div class="ttname"><a href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac">stateGetHorizontalSpeedDir_f</a></div><div class="ttdeci">static float stateGetHorizontalSpeedDir_f(void)</div><div class="ttdoc">Get dir of horizontal ground speed (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00944">state.h:944</a></div></div>
 <div class="ttc" id="max7456_8c_html_structMATRIX"><div class="ttname"><a href="max7456_8c.html#structMATRIX">MATRIX</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00090">point.c:90</a></div></div>
@@ -331,7 +330,7 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b38d3b7daf8f5f4aa9cdde7d2cfcefba.html">airborne_ant_track</a></li><li class="navelem"><a class="el" href="airborne__ant__track_8c.html">airborne_ant_track.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

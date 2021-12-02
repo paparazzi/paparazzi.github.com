@@ -1,8 +1,8 @@
 var searchData=
 [
   ['uart_5fperiph',['uart_periph',['../uart_8h.html#structuart__periph',1,'']]],
-  ['uartregs_5ft',['uartRegs_t',['../lpcUART_8h.html#structuartRegs__t',1,'']]],
-  ['uartregs_5ft_2e_5f_5funnamed_5f_5f',['uartRegs_t.__unnamed__',['../lpcUART_8h.html#unionuartRegs__t_8____unnamed____',1,'uartRegs_t.__unnamed__'],['../lpcUART_8h.html#unionuartRegs__t_8____unnamed____',1,'uartRegs_t.__unnamed__'],['../lpcUART_8h.html#unionuartRegs__t_8____unnamed____',1,'uartRegs_t.__unnamed__']]],
+  ['uavcan_5fevent_5ft',['uavcan_event_t',['../chibios_2modules_2uavcan_2uavcan_8h.html#structuavcan__event__t',1,'']]],
+  ['uavcan_5fiface_5ft',['uavcan_iface_t',['../sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t',1,'']]],
   ['udp_5fperiph',['udp_periph',['../udp_8h.html#structudp__periph',1,'']]],
   ['udpsocket',['UdpSocket',['../udp__socket_8h.html#structUdpSocket',1,'']]],
   ['uint16vect3',['Uint16Vect3',['../group__math__algebra__int.html#structUint16Vect3',1,'']]],

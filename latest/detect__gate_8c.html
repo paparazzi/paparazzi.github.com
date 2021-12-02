@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,10 +121,10 @@ $(document).ready(function(){initNavTree('detect__gate_8c.html','');});
 <code>#include &quot;<a class="el" href="pprz__algebra_8h_source.html">math/pprz_algebra.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__simple__matrix_8h_source.html">math/pprz_simple_matrix.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi__sender__ids_8h_source.html">subsystems/abi_sender_ids.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi__sender__ids_8h_source.html">modules/core/abi_sender_ids.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="snake__gate__detection_8h_source.html">modules/computer_vision/snake_gate_detection.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for detect_gate.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('detect__gate_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__gate_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2detect__gate_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2detect__gate_8c" id="sw_2airborne_2modules_2computer__vision_2detect__gate_8c">
-<area shape="rect" id="node3" href="detect__gate_8h.html" title="detect_gate.h" alt="" coords="590,117,701,143"/><area shape="rect" id="node11" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="1193,363,1380,404"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="632,720,787,747"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="481,638,671,665"/><area shape="rect" id="node28" href="PnP__AHRS_8h.html" title="Functions for solving a perspective&#45;n&#45;point problem, using the AHRS to get the relevant angles..." alt="" coords="628,199,815,240"/><area shape="rect" id="node29" href="pprz__simple__matrix_8h.html" title="Simple matrix helper macros. " alt="" coords="5,370,203,397"/><area shape="rect" id="node31" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="777,117,911,143"/><area shape="rect" id="node33" href="abi__sender__ids_8h.html" title="Convenience defines for ABI sender IDs. " alt="" coords="936,109,1109,151"/><area shape="rect" id="node34" href="snake__gate__detection_8h.html" title="Detects gates as used in the IROS drone races, i.e., square colored gates. " alt="" coords="379,109,565,151"/><area shape="rect" id="node35" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1850,452,2003,493"/><area shape="rect" id="node5" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="931,206,1146,233"/><area shape="rect" id="node8" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="943,288,1134,315"/><area shape="rect" id="node10" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1685,638,1771,665"/><area shape="rect" id="node13" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1253,459,1320,486"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1213,638,1392,665"/><area shape="rect" id="node23" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1119,541,1270,583"/><area shape="rect" id="node25" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="945,541,1095,583"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1294,541,1458,583"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1307,720,1458,747"/><area shape="rect" id="node24" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1014,638,1138,665"/><area shape="rect" id="node30" href="undistortion_8h.html" title="Functions for undistorting camera images. " alt="" coords="683,363,869,404"/><area shape="rect" id="node36" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2717,720,2856,747"/><area shape="rect" id="node40" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2031,541,2185,583"/><area shape="rect" id="node44" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2389,631,2542,672"/><area shape="rect" id="node46" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2566,638,2759,665"/></map>
+</map>
 </div>
 </div>
 <p><a href="detect__gate_8c_source.html">Go to the source code of this file.</a></p>
@@ -170,7 +170,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a33f5e6c0b684ec61feb65db935e01ff9"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a33f5e6c0b684ec61feb65db935e01ff9">detect_gate_func</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
+<tr class="memitem:a33f5e6c0b684ec61feb65db935e01ff9"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a33f5e6c0b684ec61feb65db935e01ff9">detect_gate_func</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
 <tr class="separator:a33f5e6c0b684ec61feb65db935e01ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c10819cde7e0649fb2a208d89d8c68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a31c10819cde7e0649fb2a208d89d8c68">detect_gate_event</a> (void)</td></tr>
 <tr class="separator:a31c10819cde7e0649fb2a208d89d8c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,17 +193,17 @@ Variables</h2></td></tr>
 <tr class="separator:aec9db33fc2a537911338a8d63b5d4848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3596ea51639ad76194d7479bc4b1c468"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a3596ea51639ad76194d7479bc4b1c468">gate_thickness</a></td></tr>
 <tr class="separator:a3596ea51639ad76194d7479bc4b1c468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b642a27bf33f567a99c04f1c29959d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#af7b642a27bf33f567a99c04f1c29959d">color_Ym</a></td></tr>
+<tr class="memitem:af7b642a27bf33f567a99c04f1c29959d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#af7b642a27bf33f567a99c04f1c29959d">color_Ym</a></td></tr>
 <tr class="separator:af7b642a27bf33f567a99c04f1c29959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d1a6910ada1a7631089262ca6c043b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a75d1a6910ada1a7631089262ca6c043b">color_YM</a></td></tr>
+<tr class="memitem:a75d1a6910ada1a7631089262ca6c043b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a75d1a6910ada1a7631089262ca6c043b">color_YM</a></td></tr>
 <tr class="separator:a75d1a6910ada1a7631089262ca6c043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231e9845ab1ac427d0795addae86565f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a231e9845ab1ac427d0795addae86565f">color_Um</a></td></tr>
+<tr class="memitem:a231e9845ab1ac427d0795addae86565f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a231e9845ab1ac427d0795addae86565f">color_Um</a></td></tr>
 <tr class="separator:a231e9845ab1ac427d0795addae86565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f0cfa1154072a5f43337c170ea94f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#af4f0cfa1154072a5f43337c170ea94f3">color_UM</a></td></tr>
+<tr class="memitem:af4f0cfa1154072a5f43337c170ea94f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#af4f0cfa1154072a5f43337c170ea94f3">color_UM</a></td></tr>
 <tr class="separator:af4f0cfa1154072a5f43337c170ea94f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a3889ee09c7b4f03b90ab67c9d9220d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a4a3889ee09c7b4f03b90ab67c9d9220d">color_Vm</a></td></tr>
+<tr class="memitem:a4a3889ee09c7b4f03b90ab67c9d9220d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a4a3889ee09c7b4f03b90ab67c9d9220d">color_Vm</a></td></tr>
 <tr class="separator:a4a3889ee09c7b4f03b90ab67c9d9220d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652d90c6c205e914be17d2bd61b4f4ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a652d90c6c205e914be17d2bd61b4f4ac">color_VM</a></td></tr>
+<tr class="memitem:a652d90c6c205e914be17d2bd61b4f4ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#a652d90c6c205e914be17d2bd61b4f4ac">color_VM</a></td></tr>
 <tr class="separator:a652d90c6c205e914be17d2bd61b4f4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6498d58fc8ce79a34c4e4f5bc544d90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__gate_8c.html#ad6498d58fc8ce79a34c4e4f5bc544d90">exclude_top</a></td></tr>
 <tr class="separator:ad6498d58fc8ce79a34c4e4f5bc544d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,7 +484,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="detect__gate_8c_source.html#l00264">264</a> of file <a class="el" href="detect__gate_8c_source.html">detect_gate.c</a>.</p>
 
-<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00493">DETECT_GATE_ABI_ID</a>, <a class="el" href="detect__gate_8c_source.html#l00115">detect_gate_has_new_data</a>, <a class="el" href="detect__gate_8c_source.html#l00116">detect_gate_x</a>, <a class="el" href="detect__gate_8c_source.html#l00117">detect_gate_y</a>, <a class="el" href="detect__gate_8c_source.html#l00118">detect_gate_z</a>, <a class="el" href="detect__gate_8c.html#a34a09dfc6709ca84cece5956482f7e15">detectgate_vision_position</a>, <a class="el" href="detect__gate_8c_source.html#l00120">gate_detect_mutex</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
+<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00509">DETECT_GATE_ABI_ID</a>, <a class="el" href="detect__gate_8c_source.html#l00115">detect_gate_has_new_data</a>, <a class="el" href="detect__gate_8c_source.html#l00116">detect_gate_x</a>, <a class="el" href="detect__gate_8c_source.html#l00117">detect_gate_y</a>, <a class="el" href="detect__gate_8c_source.html#l00118">detect_gate_z</a>, <a class="el" href="detect__gate_8c.html#a34a09dfc6709ca84cece5956482f7e15">detectgate_vision_position</a>, <a class="el" href="detect__gate_8c_source.html#l00120">gate_detect_mutex</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
 
 </div>
 </div>
@@ -504,7 +504,7 @@ z</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>camera_id</em>&#160;</td>
         </tr>
         <tr>
@@ -533,7 +533,7 @@ z</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_cgraph.png" border="0" usemap="#detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_cgraph" alt=""/></div>
 <map name="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_cgraph" id="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_cgraph">
-<area shape="rect" id="node2" href="PnP__AHRS_8c.html#a30f92e7ee757f2657644e0df845ff43a" title="Get the world position of the camera, given image coordinates and corresponding world coordinates..." alt="" coords="192,103,344,145"/><area shape="rect" id="node12" href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9" title="Filter colors in an YUV422 image. " alt="" coords="413,191,581,217"/><area shape="rect" id="node13" href="snake__gate__detection_8c.html#a6f4b4ad6fe02036ec21c3ad960c041bd" title="Run snake gate detection on an image. " alt="" coords="187,469,349,496"/><area shape="rect" id="node3" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0" title="Rotation matrix from 321 Euler angles (float). " alt="" coords="405,89,589,116"/><area shape="rect" id="node4" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="397,140,596,167"/><area shape="rect" id="node9" href="undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates. " alt="" coords="421,23,572,65"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="644,140,808,167"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="863,140,1031,167"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1092,165,1245,192"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1093,115,1244,141"/><area shape="rect" id="node10" href="undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates. " alt="" coords="648,5,804,32"/><area shape="rect" id="node11" href="undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method. " alt="" coords="653,56,799,83"/><area shape="rect" id="node14" href="snake__gate__detection_8c.html#a0981ce70dd28acd9b61fd0da4248798f" title="check_color_snake_gate\l_detection" alt="" coords="858,563,1037,605"/><area shape="rect" id="node16" href="snake__gate__detection_8c.html#ac1ed4c7026af2f6090d0098ea9276559" title="The actual snaking. " alt="" coords="649,596,803,623"/><area shape="rect" id="node18" href="snake__gate__detection_8c.html#aef693c11bfcfa77faaaefba6304e4308" title="The actual snaking. " alt="" coords="649,495,803,521"/><area shape="rect" id="node19" href="snake__gate__detection_8c.html#a864922da035b3c31db233b17ccc345d8" title="Check the outline and the center of the gate. " alt="" coords="429,748,564,775"/><area shape="rect" id="node22" href="snake__gate__detection_8c.html#ace002ac27557c54636e18910bbf442b8" title="Check only the outline of the gate. " alt="" coords="424,647,569,673"/><area shape="rect" id="node24" href="snake__gate__detection_8c.html#ae8a819264189a243f210db763c40d893" title="Determine and set the corner locations in gate.x_corners, g.y_corners, based on the center of the gat..." alt="" coords="435,697,559,724"/><area shape="rect" id="node25" href="snake__gate__detection_8c.html#aebc98e80a4263c1220b508a0a3ca975a" title="intersection_over_union" alt="" coords="409,799,584,825"/><area shape="rect" id="node28" href="snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon. " alt="" coords="856,317,1039,344"/><area shape="rect" id="node29" href="image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image. " alt="" coords="1087,368,1251,395"/><area shape="rect" id="node31" href="snake__gate__detection_8c.html#a2a3da4e9600e16e13b490769b3374ffa" title="Refine the four corners of the gate, based on the color around the supposed corner locations..." alt="" coords="422,444,571,471"/><area shape="rect" id="node33" href="snake__gate__detection_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9" title="cmpfunc" alt="" coords="458,343,535,369"/><area shape="rect" id="node34" href="snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c" title="Draw the gate on an image. " alt="" coords="682,241,770,268"/><area shape="rect" id="node15" href="image_8c.html#a6f14c04ea0779b7962d796490e0c8420" title="Checks the color of a single pixel in a YUV422 image. " alt="" coords="1093,571,1244,597"/><area shape="rect" id="node17" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="928,697,967,724"/><area shape="rect" id="node20" href="snake__gate__detection_8c.html#a4fc05622300f85dd1b71353c16923ca6" title="Checks whether points on a line between two 2D&#45;points are of a given color. " alt="" coords="682,697,770,724"/><area shape="rect" id="node21" href="snake__gate__detection_8c.html#ad427f2f71b35a1c9cfddeda6016eadbf" title="check_inside" alt="" coords="675,748,777,775"/><area shape="rect" id="node23" href="snake__gate__detection_8c.html#a95be7abc3abcecbe58309a065d099f87" title="Determine the segment length between two 2D&#45;points. " alt="" coords="663,647,789,673"/><area shape="rect" id="node26" href="snake__gate__detection_8c.html#a1dc48b4673a3131cf83a0d0692c95183" title="intersection_boxes" alt="" coords="655,799,797,825"/><area shape="rect" id="node27" href="snake__gate__detection_8c.html#a12f648ab707f85b8c8fdf5915a415beb" title="overlap_intervals" alt="" coords="882,799,1013,825"/><area shape="rect" id="node30" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image. " alt="" coords="1299,343,1465,369"/><area shape="rect" id="node32" href="snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate. " alt="" coords="651,444,801,471"/></map>
+</map>
 </div>
 </p>
 
@@ -544,7 +544,7 @@ z</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_icgraph.png" border="0" usemap="#detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_icgraph" alt=""/></div>
 <map name="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_icgraph" id="detect__gate_8c_a33f5e6c0b684ec61feb65db935e01ff9_icgraph">
-<area shape="rect" id="node2" href="detect__gate_8h.html#afad85937ed43b1d2963bec59f0031ec1" title="detect_gate_init" alt="" coords="187,5,312,32"/></map>
+</map>
 </div>
 </p>
 
@@ -575,7 +575,7 @@ z</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__gate_8c_afad85937ed43b1d2963bec59f0031ec1_cgraph.png" border="0" usemap="#detect__gate_8c_afad85937ed43b1d2963bec59f0031ec1_cgraph" alt=""/></div>
 <map name="detect__gate_8c_afad85937ed43b1d2963bec59f0031ec1_cgraph" id="detect__gate_8c_afad85937ed43b1d2963bec59f0031ec1_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title="cv_add_to_device" alt="" coords="210,293,345,320"/><area shape="rect" id="node10" href="detect__gate_8c.html#a33f5e6c0b684ec61feb65db935e01ff9" title="detect_gate_func" alt="" coords="211,375,344,401"/><area shape="rect" id="node44" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="179,425,376,452"/><area shape="rect" id="node45" href="detect__gate_8c.html#a0ed115d365adec933afde8a8a926a1fb" title="send_detect_gate_visual\l_position" alt="" coords="187,477,367,518"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="438,84,573,111"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="669,56,799,83"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="900,5,1027,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="926,56,1001,83"/><area shape="rect" id="node7" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1121,56,1249,83"/><area shape="rect" id="node8" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1345,5,1467,32"/><area shape="rect" id="node9" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1366,56,1446,83"/><area shape="rect" id="node11" href="PnP__AHRS_8c.html#a30f92e7ee757f2657644e0df845ff43a" title="Get the world position of the camera, given image coordinates and corresponding world coordinates..." alt="" coords="429,190,581,231"/><area shape="rect" id="node21" href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9" title="Filter colors in an YUV422 image. " alt="" coords="650,883,818,909"/><area shape="rect" id="node22" href="snake__gate__detection_8c.html#a6f4b4ad6fe02036ec21c3ad960c041bd" title="Run snake gate detection on an image. " alt="" coords="424,553,587,580"/><area shape="rect" id="node12" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0" title="Rotation matrix from 321 Euler angles (float). " alt="" coords="642,224,826,251"/><area shape="rect" id="node13" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="635,107,833,133"/><area shape="rect" id="node18" href="undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates. " alt="" coords="659,158,809,199"/><area shape="rect" id="node14" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="881,107,1045,133"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1101,107,1269,133"/><area shape="rect" id="node16" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1329,157,1483,184"/><area shape="rect" id="node17" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1331,107,1481,133"/><area shape="rect" id="node19" href="undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates. " alt="" coords="885,212,1041,239"/><area shape="rect" id="node20" href="undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method. " alt="" coords="890,161,1037,188"/><area shape="rect" id="node23" href="snake__gate__detection_8c.html#a0981ce70dd28acd9b61fd0da4248798f" title="check_color_snake_gate\l_detection" alt="" coords="1095,694,1274,735"/><area shape="rect" id="node25" href="snake__gate__detection_8c.html#ac1ed4c7026af2f6090d0098ea9276559" title="The actual snaking. " alt="" coords="886,731,1041,757"/><area shape="rect" id="node27" href="snake__gate__detection_8c.html#aef693c11bfcfa77faaaefba6304e4308" title="The actual snaking. " alt="" coords="886,680,1041,707"/><area shape="rect" id="node28" href="snake__gate__detection_8c.html#a864922da035b3c31db233b17ccc345d8" title="Check the outline and the center of the gate. " alt="" coords="667,781,801,808"/><area shape="rect" id="node31" href="snake__gate__detection_8c.html#ace002ac27557c54636e18910bbf442b8" title="Check only the outline of the gate. " alt="" coords="661,832,807,859"/><area shape="rect" id="node33" href="snake__gate__detection_8c.html#ae8a819264189a243f210db763c40d893" title="Determine and set the corner locations in gate.x_corners, g.y_corners, based on the center of the gat..." alt="" coords="672,275,796,301"/><area shape="rect" id="node34" href="snake__gate__detection_8c.html#aebc98e80a4263c1220b508a0a3ca975a" title="intersection_over_union" alt="" coords="647,325,821,352"/><area shape="rect" id="node37" href="snake__gate__detection_8c.html#a187099f3c8b15ddf2fc47461c89e13fe" title="Draw the gate on an image, using the corner points, possibly resulting in a polygon. " alt="" coords="1093,452,1276,479"/><area shape="rect" id="node38" href="image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image. " alt="" coords="1324,401,1488,428"/><area shape="rect" id="node40" href="snake__gate__detection_8c.html#a2a3da4e9600e16e13b490769b3374ffa" title="Refine the four corners of the gate, based on the color around the supposed corner locations..." alt="" coords="659,579,809,605"/><area shape="rect" id="node42" href="snake__gate__detection_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9" title="cmpfunc" alt="" coords="695,528,773,555"/><area shape="rect" id="node43" href="snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c" title="Draw the gate on an image. " alt="" coords="690,427,778,453"/><area shape="rect" id="node24" href="image_8c.html#a6f14c04ea0779b7962d796490e0c8420" title="Checks the color of a single pixel in a YUV422 image. " alt="" coords="1331,701,1481,728"/><area shape="rect" id="node26" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="1165,781,1204,808"/><area shape="rect" id="node29" href="snake__gate__detection_8c.html#a4fc05622300f85dd1b71353c16923ca6" title="Checks whether points on a line between two 2D&#45;points are of a given color. " alt="" coords="919,832,1007,859"/><area shape="rect" id="node30" href="snake__gate__detection_8c.html#ad427f2f71b35a1c9cfddeda6016eadbf" title="check_inside" alt="" coords="912,781,1015,808"/><area shape="rect" id="node32" href="snake__gate__detection_8c.html#a95be7abc3abcecbe58309a065d099f87" title="Determine the segment length between two 2D&#45;points. " alt="" coords="900,883,1027,909"/><area shape="rect" id="node35" href="snake__gate__detection_8c.html#a1dc48b4673a3131cf83a0d0692c95183" title="intersection_boxes" alt="" coords="892,325,1035,352"/><area shape="rect" id="node36" href="snake__gate__detection_8c.html#a12f648ab707f85b8c8fdf5915a415beb" title="overlap_intervals" alt="" coords="1119,325,1250,352"/><area shape="rect" id="node39" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image. " alt="" coords="1536,427,1703,453"/><area shape="rect" id="node41" href="snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c" title="Refine a single corner, based on the color around the coordinate. " alt="" coords="888,579,1039,605"/></map>
+</map>
 </div>
 </p>
 
@@ -615,7 +615,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="detect__gate_8c_source.html#l00288">288</a> of file <a class="el" href="detect__gate_8c_source.html">detect_gate.c</a>.</p>
 
-<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="detect__gate_8c.html#a34a09dfc6709ca84cece5956482f7e15">detectgate_vision_position</a>, <a class="el" href="main__demo5_8c_source.html#l00059">foo</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
+<p>References <a class="el" href="detect__gate_8c_source.html#l00125">vision_relative_position_struct::cnt</a>, <a class="el" href="detect__gate_8c.html#a34a09dfc6709ca84cece5956482f7e15">detectgate_vision_position</a>, <a class="el" href="main__demo5_8c_source.html#l00058">foo</a>, <a class="el" href="detect__gate_8c_source.html#l00124">vision_relative_position_struct::received</a>, <a class="el" href="detect__gate_8c_source.html#l00126">vision_relative_position_struct::x</a>, <a class="el" href="detect__gate_8c_source.html#l00127">vision_relative_position_struct::y</a>, and <a class="el" href="detect__gate_8c_source.html#l00128">vision_relative_position_struct::z</a>.</p>
 
 <p>Referenced by <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>.</p>
 
@@ -626,7 +626,7 @@ z</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__gate_8c_a0ed115d365adec933afde8a8a926a1fb_icgraph.png" border="0" usemap="#detect__gate_8c_a0ed115d365adec933afde8a8a926a1fb_icgraph" alt=""/></div>
 <map name="detect__gate_8c_a0ed115d365adec933afde8a8a926a1fb_icgraph" id="detect__gate_8c_a0ed115d365adec933afde8a8a926a1fb_icgraph">
-<area shape="rect" id="node2" href="detect__gate_8h.html#afad85937ed43b1d2963bec59f0031ec1" title="detect_gate_init" alt="" coords="233,13,359,39"/></map>
+</map>
 </div>
 </p>
 
@@ -670,7 +670,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Um</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Um</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -686,7 +686,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_UM</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_UM</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -702,7 +702,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Vm</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Vm</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -718,7 +718,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_VM</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_VM</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -734,7 +734,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Ym</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_Ym</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -750,7 +750,7 @@ z</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_YM</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> color_YM</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1069,7 +1069,7 @@ z</td>
 
 <p>Definition at line <a class="el" href="detect__gate_8c_source.html#l00085">85</a> of file <a class="el" href="detect__gate_8c_source.html">detect_gate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00492">calc_fast9_lukas_kanade()</a>, <a class="el" href="snake__gate__detection_8c_source.html#l00761">check_inside()</a>, <a class="el" href="detect__gate_8c_source.html#l00134">detect_gate_func()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00103">fit_linear_flow_field()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00526">fit_linear_model()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00614">fit_linear_model_prior()</a>, <a class="el" href="RANSAC_8c_source.html#l00160">get_indices_without_replacement()</a>, <a class="el" href="size__divergence_8c_source.html#l00042">get_size_divergence()</a>, and <a class="el" href="RANSAC_8c_source.html#l00057">RANSAC_linear_model()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00492">calc_fast9_lukas_kanade()</a>, <a class="el" href="snake__gate__detection_8c_source.html#l00761">check_inside()</a>, <a class="el" href="detect__gate_8c_source.html#l00134">detect_gate_func()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00103">fit_linear_flow_field()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00529">fit_linear_model()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00617">fit_linear_model_prior()</a>, <a class="el" href="RANSAC_8c_source.html#l00160">get_indices_without_replacement()</a>, <a class="el" href="size__divergence_8c_source.html#l00042">get_size_divergence()</a>, and <a class="el" href="RANSAC_8c_source.html#l00057">RANSAC_linear_model()</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ z</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="detect__gate_8c.html">detect_gate.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:53 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

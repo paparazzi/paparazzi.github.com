@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('jpeg_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8h" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8h">
-<area shape="rect" id="node3" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="151,109,283,136"/><area shape="rect" id="node5" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="292,184,359,211"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="236,348,415,375"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="615,348,806,375"/><area shape="rect" id="node15" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="431,259,582,300"/><area shape="rect" id="node17" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="658,259,809,300"/><area shape="rect" id="node18" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="243,259,407,300"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="615,423,769,449"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="195,423,346,449"/><area shape="rect" id="node16" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="830,348,954,375"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('jpeg_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8hdep" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8hdep">
-<area shape="rect" id="node2" href="jpeg_8c.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="5,109,160,165"/><area shape="rect" id="node3" href="opticflow__module_8c.html" title="Optical&#45;flow estimation module. " alt="" coords="185,109,375,165"/><area shape="rect" id="node4" href="video__capture_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_capture.c" alt="" coords="399,109,569,165"/><area shape="rect" id="node5" href="video__usb__logger_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_usb_logger.c" alt="" coords="593,109,762,165"/><area shape="rect" id="node6" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="786,117,993,158"/></map>
+</map>
 </div>
 </div>
 <p><a href="jpeg_8h_source.html">Go to the source code of this file.</a></p>
@@ -153,10 +153,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac1a4731c71f3529891f1750260db2626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8h.html#ac1a4731c71f3529891f1750260db2626">jpeg_encode_image</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *in, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *out, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> quality_factor, bool add_dri_header)</td></tr>
+<tr class="memitem:ac1a4731c71f3529891f1750260db2626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8h.html#ac1a4731c71f3529891f1750260db2626">jpeg_encode_image</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *in, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *out, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> quality_factor, bool add_dri_header)</td></tr>
 <tr class="memdesc:ac1a4731c71f3529891f1750260db2626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode an YUV422 image.  <a href="#ac1a4731c71f3529891f1750260db2626">More...</a><br /></td></tr>
 <tr class="separator:ac1a4731c71f3529891f1750260db2626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f2550b4c98bfb1f9b4b28bff5b9285"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285">jpeg_create_svs_header</a> (unsigned char *buf, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> size, int w)</td></tr>
+<tr class="memitem:a64f2550b4c98bfb1f9b4b28bff5b9285"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285">jpeg_create_svs_header</a> (unsigned char *buf, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> size, int w)</td></tr>
 <tr class="separator:a64f2550b4c98bfb1f9b4b28bff5b9285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -280,7 +280,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8h_a64f2550b4c98bfb1f9b4b28bff5b9285_cgraph.png" border="0" usemap="#jpeg_8h_a64f2550b4c98bfb1f9b4b28bff5b9285_cgraph" alt=""/></div>
 <map name="jpeg_8h_a64f2550b4c98bfb1f9b4b28bff5b9285_cgraph" id="jpeg_8h_a64f2550b4c98bfb1f9b4b28bff5b9285_cgraph">
-<area shape="rect" id="node2" href="jpeg_8c.html#aeeebdcbde98e380664acf5bb80364783" title="svs_size_code" alt="" coords="231,5,344,32"/></map>
+</map>
 </div>
 </p>
 
@@ -305,7 +305,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>quality_factor</em>, </td>
         </tr>
         <tr>
@@ -346,7 +346,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8h_ac1a4731c71f3529891f1750260db2626_cgraph.png" border="0" usemap="#jpeg_8h_ac1a4731c71f3529891f1750260db2626_cgraph" alt=""/></div>
 <map name="jpeg_8h_ac1a4731c71f3529891f1750260db2626_cgraph" id="jpeg_8h_ac1a4731c71f3529891f1750260db2626_cgraph">
-<area shape="rect" id="node2" href="jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1" title="jpeg_close_bitstream" alt="" coords="204,81,363,108"/><area shape="rect" id="node3" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="217,132,350,159"/><area shape="rect" id="node8" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="218,195,349,221"/><area shape="rect" id="node11" href="jpeg_8c.html#a0908916b4be15d17fa2ad6e441b633f1" title="jpeg_write_markers" alt="" coords="210,245,357,272"/><area shape="rect" id="node12" href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13" title="MakeTables" alt="" coords="236,296,331,323"/><area shape="rect" id="node4" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="453,5,535,32"/><area shape="rect" id="node5" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="439,56,549,83"/><area shape="rect" id="node6" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="438,107,550,133"/><area shape="rect" id="node7" href="jpeg_8c.html#a185e0318b222708896d55e8d98c0576b" title="jpeg_quantization" alt="" coords="427,157,561,184"/><area shape="rect" id="node9" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="411,208,577,235"/><area shape="rect" id="node10" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="411,259,577,285"/></map>
+</map>
 </div>
 </p>
 
@@ -357,7 +357,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8h_ac1a4731c71f3529891f1750260db2626_icgraph.png" border="0" usemap="#jpeg_8h_ac1a4731c71f3529891f1750260db2626_icgraph" alt=""/></div>
 <map name="jpeg_8h_ac1a4731c71f3529891f1750260db2626_icgraph" id="jpeg_8h_ac1a4731c71f3529891f1750260db2626_icgraph">
-<area shape="rect" id="node2" href="video__usb__logger_8c.html#abc8ecf0e87a6e3a49488238acc2ceee8" title="save_shot_on_disk" alt="" coords="207,5,350,32"/><area shape="rect" id="node5" href="video__capture_8c.html#a827eff900b2ec2115c0098701f7a2706" title="video_capture_save" alt="" coords="204,56,353,83"/><area shape="rect" id="node8" href="viewvideo_8c.html#a4796c0ca6ba23a9dd0172784d2e94d59" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="208,107,349,133"/><area shape="rect" id="node3" href="video__usb__logger_8c.html#a8dfbc751f11f51fb2020f0b6c3409510" title="log_image" alt="" coords="431,5,519,32"/><area shape="rect" id="node4" href="video__usb__logger_8h.html#a371634939fbb925daf5f698a8f9fad1f" title="Start the file logger and open a new file. " alt="" coords="596,5,767,32"/><area shape="rect" id="node6" href="video__capture_8c.html#a3e437d208a036f18893d795ea51bad16" title="video_capture_func" alt="" coords="401,56,548,83"/><area shape="rect" id="node7" href="video__capture_8h.html#afd5936d0a4d5e8abd118dfac97638829" title="video_capture_init" alt="" coords="612,56,751,83"/></map>
+</map>
 </div>
 </p>
 
@@ -369,7 +369,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7aa332c18e5fa1eaa6661da2f3ea70ae.html">encoding</a></li><li class="navelem"><a class="el" href="jpeg_8h.html">jpeg.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:53 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -221,9 +221,6 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 </li>
 <li>electrical_tid
 : <a class="el" href="fixedwing_2main__fbw_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">main_fbw.c</a>
-, <a class="el" href="rotorcraft_2main__ap_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">main_fbw.c</a>
-, <a class="el" href="rover_2main__ap_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">main_ap.c</a>
 </li>
 <li>EntryRadius
 : <a class="el" href="nav__survey__poly__osam_8c.html#a0937fb021fae4f70e16e9930ff1a75b8">nav_survey_poly_osam.c</a>
@@ -254,6 +251,9 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 </li>
 <li>esc32_priv
 : <a class="el" href="esc32_8c.html#aa0e81a6f49046f1f1d06a125f5e182c9">esc32.c</a>
+</li>
+<li>esc_status_ev
+: <a class="el" href="actuators__uavcan_8c.html#aeb829098b5ac01dda6bdfa56ab3ab775">actuators_uavcan.c</a>
 </li>
 <li>escape_flag
 : <a class="el" href="obstacle__avoidance_8c.html#a1d912c2313bd615c412ef423cfdc4403">obstacle_avoidance.c</a>
@@ -290,8 +290,8 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 , <a class="el" href="rotorcraft_2navigation_8c.html#adeee457a987f1cfcc2e8373d24dab99a">navigation.c</a>
 </li>
 <li>exclude_bottom
-: <a class="el" href="detect__gate_8h.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.h</a>
-, <a class="el" href="detect__gate_8c.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.c</a>
+: <a class="el" href="detect__gate_8c.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.c</a>
+, <a class="el" href="detect__gate_8h.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.h</a>
 </li>
 <li>exclude_top
 : <a class="el" href="detect__gate_8c.html#ad6498d58fc8ce79a34c4e4f5bc544d90">detect_gate.c</a>
@@ -313,15 +313,15 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 : <a class="el" href="cc2500__settings_8c.html#aa049a862a7363fc394cfe7a8adcea389">cc2500_settings.c</a>
 </li>
 <li>extra_dl_buffer
-: <a class="el" href="extra__pprz__dl_8c.html#a6b4b905f67b3133492603b5040e51768">extra_pprz_dl.c</a>
-, <a class="el" href="extra__pprz__dl_8h.html#a6b4b905f67b3133492603b5040e51768">extra_pprz_dl.h</a>
+: <a class="el" href="extra__pprz__dl_8h.html#a6b4b905f67b3133492603b5040e51768">extra_pprz_dl.h</a>
+, <a class="el" href="extra__pprz__dl_8c.html#a6b4b905f67b3133492603b5040e51768">extra_pprz_dl.c</a>
 </li>
 <li>extra_dl_msg_available
 : <a class="el" href="extra__pprz__dl_8c.html#a54a5f64737d71d4cb541d4c97bc4bbcc">extra_pprz_dl.c</a>
 </li>
 <li>extra_pprz_tp
-: <a class="el" href="extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_dl.h</a>
-, <a class="el" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_dl.c</a>
+: <a class="el" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_dl.c</a>
+, <a class="el" href="extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_dl.h</a>
 </li>
 <li>Ey
 : <a class="el" href="trilateration_8c.html#a42807c9801696434a57f4f6cd127edd6">trilateration.c</a>
@@ -338,7 +338,7 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,24 +124,24 @@ $(document).ready(function(){initNavTree('l3g4200_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2l3g4200_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2l3g4200_8c" id="sw_2airborne_2peripherals_2l3g4200_8c">
-<area shape="rect" id="node2" href="l3g4200_8h.html" title="Driver for the gyro L3G4200 From ST. " alt="" coords="565,95,725,121"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="199,177,378,203"/><area shape="rect" id="node11" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="417,177,547,203"/><area shape="rect" id="node13" href="l3g4200__regs_8h.html" title="Register defs for L3G4200 gyros. " alt="" coords="571,169,719,211"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="97,259,251,285"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="327,259,477,285"/></map>
+</map>
 </div>
 </div>
 <p><a href="l3g4200_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td></tr>
+<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td></tr>
 <tr class="separator:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a67ca73762166a11d1b624e0b30c28039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039">l3g4200_set_default_config</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200Config">L3g4200Config</a> *c)</td></tr>
 <tr class="separator:a67ca73762166a11d1b624e0b30c28039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda51925a723a1df17a65d9e377c6e8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f">l3g4200_init</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> *l3g, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
+<tr class="memitem:acda51925a723a1df17a65d9e377c6e8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f">l3g4200_init</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> *l3g, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
 <tr class="memdesc:acda51925a723a1df17a65d9e377c6e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> struct and set default config options.  <a href="#acda51925a723a1df17a65d9e377c6e8f">More...</a><br /></td></tr>
 <tr class="separator:acda51925a723a1df17a65d9e377c6e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a891e6ea3c7cd89f932116dad069799fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe">l3g4200_i2c_tx_reg</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> *l3g, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>)</td></tr>
+<tr class="memitem:a891e6ea3c7cd89f932116dad069799fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe">l3g4200_i2c_tx_reg</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> *l3g, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>)</td></tr>
 <tr class="separator:a891e6ea3c7cd89f932116dad069799fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae602f4d8dcd9c775da7e8233f1f193e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5">l3g4200_send_config</a> (struct <a class="el" href="l3g4200_8h.html#structL3g4200">L3g4200</a> *l3g)</td></tr>
 <tr class="separator:ae602f4d8dcd9c775da7e8233f1f193e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +176,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="l3g4200_8c_source.html#l00114">114</a> of file <a class="el" href="l3g4200_8c_source.html">l3g4200.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="l3g4200_8h.html#a7ca7302f8cbb05cc226756c04f21a91e">L3g4200::data</a>, <a class="el" href="l3g4200_8h_source.html#l00072">L3g4200::data_available</a>, <a class="el" href="l3g4200_8h_source.html#l00069">L3g4200::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="l3g4200_8h_source.html#l00071">L3g4200::init_status</a>, <a class="el" href="l3g4200_8h_source.html#l00070">L3g4200::initialized</a>, <a class="el" href="l3g4200_8c_source.html#l00112">Int16FromBuf</a>, <a class="el" href="l3g4200_8c_source.html#l00068">l3g4200_send_config()</a>, <a class="el" href="l3g4200_8h_source.html#l00060">L3G_CONF_UNINIT</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="l3g4200_8h.html#aa2b0e5514b7a6b82362f083ba1fe6e39">L3g4200::data</a>, <a class="el" href="l3g4200_8h_source.html#l00072">L3g4200::data_available</a>, <a class="el" href="l3g4200_8h_source.html#l00069">L3g4200::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="l3g4200_8h_source.html#l00071">L3g4200::init_status</a>, <a class="el" href="l3g4200_8h_source.html#l00070">L3g4200::initialized</a>, <a class="el" href="l3g4200_8c_source.html#l00112">Int16FromBuf</a>, <a class="el" href="l3g4200_8c_source.html#l00068">l3g4200_send_config()</a>, <a class="el" href="l3g4200_8h_source.html#l00060">L3G_CONF_UNINIT</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>.</p>
 
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_cgraph.png" border="0" usemap="#l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_cgraph" alt=""/></div>
 <map name="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_cgraph" id="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_cgraph">
-<area shape="rect" id="node2" href="l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5" title="l3g4200_send_config" alt="" coords="169,5,325,32"/><area shape="rect" id="node3" href="l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe" title="l3g4200_i2c_tx_reg" alt="" coords="373,5,519,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="567,5,668,32"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="716,5,807,32"/></map>
+</map>
 </div>
 </p>
 
@@ -226,7 +226,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_icgraph.png" border="0" usemap="#l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_icgraph" alt=""/></div>
 <map name="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_icgraph" id="l3g4200_8c_affef29745f5a82cfc679e157c57b9c40_icgraph">
-<area shape="rect" id="node2" href="imu__gl1_8h.html#accca4f4c7d6f0ecd6cd6f210818c4b1b" title="imu_gl1_event" alt="" coords="169,5,284,32"/></map>
+</map>
 </div>
 </p>
 
@@ -248,13 +248,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_cgraph.png" border="0" usemap="#l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_cgraph" alt=""/></div>
 <map name="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_cgraph" id="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="199,5,300,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="348,5,439,32"/></map>
+</map>
 </div>
 </p>
 
@@ -294,7 +294,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_icgraph.png" border="0" usemap="#l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_icgraph" alt=""/></div>
 <map name="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_icgraph" id="l3g4200_8c_a891e6ea3c7cd89f932116dad069799fe_icgraph">
-<area shape="rect" id="node2" href="l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5" title="l3g4200_send_config" alt="" coords="199,31,355,57"/><area shape="rect" id="node3" href="l3g4200_8h.html#a04567c5211452c8a7be46d598b33aa84" title="l3g4200_start_configure" alt="" coords="403,5,579,32"/><area shape="rect" id="node6" href="l3g4200_8h.html#affef29745f5a82cfc679e157c57b9c40" title="l3g4200_event" alt="" coords="433,56,549,83"/><area shape="rect" id="node4" href="l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572" title="convenience function: read or start configuration if not already initialized " alt="" coords="627,5,757,32"/><area shape="rect" id="node5" href="imu__gl1_8h.html#a80f3bffaf9eb81ccbca95d0c5b8ae5ef" title="imu_gl1_periodic" alt="" coords="805,5,935,32"/><area shape="rect" id="node7" href="imu__gl1_8h.html#accca4f4c7d6f0ecd6cd6f210818c4b1b" title="imu_gl1_event" alt="" coords="635,56,749,83"/></map>
+</map>
 </div>
 </p>
 
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_cgraph.png" border="0" usemap="#l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_cgraph" alt=""/></div>
 <map name="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_cgraph" id="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_cgraph">
-<area shape="rect" id="node2" href="l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039" title="l3g4200_set_default\l_config" alt="" coords="152,5,303,47"/></map>
+</map>
 </div>
 </p>
 
@@ -364,7 +364,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_icgraph.png" border="0" usemap="#l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_icgraph" alt=""/></div>
 <map name="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_icgraph" id="l3g4200_8c_acda51925a723a1df17a65d9e377c6e8f_icgraph">
-<area shape="rect" id="node2" href="imu__gl1_8h.html#a81309c506e7d40f9bcf314ced6c19596" title="imu_gl1_init" alt="" coords="152,5,251,32"/></map>
+</map>
 </div>
 </p>
 
@@ -397,7 +397,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_cgraph.png" border="0" usemap="#l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_cgraph" alt=""/></div>
 <map name="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_cgraph" id="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="163,5,276,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="324,5,415,32"/></map>
+</map>
 </div>
 </p>
 
@@ -408,7 +408,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_icgraph.png" border="0" usemap="#l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_icgraph" alt=""/></div>
 <map name="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_icgraph" id="l3g4200_8c_a98a6955be50d60c5afde8a6e87dd8373_icgraph">
-<area shape="rect" id="node2" href="l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572" title="convenience function: read or start configuration if not already initialized " alt="" coords="163,5,293,32"/><area shape="rect" id="node3" href="imu__gl1_8h.html#a80f3bffaf9eb81ccbca95d0c5b8ae5ef" title="imu_gl1_periodic" alt="" coords="341,5,471,32"/></map>
+</map>
 </div>
 </p>
 
@@ -449,7 +449,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_cgraph.png" border="0" usemap="#l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_cgraph" alt=""/></div>
 <map name="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_cgraph" id="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_cgraph">
-<area shape="rect" id="node2" href="l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe" title="l3g4200_i2c_tx_reg" alt="" coords="209,5,355,32"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="403,5,504,32"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="552,5,643,32"/></map>
+</map>
 </div>
 </p>
 
@@ -460,7 +460,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_icgraph.png" border="0" usemap="#l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_icgraph" alt=""/></div>
 <map name="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_icgraph" id="l3g4200_8c_ae602f4d8dcd9c775da7e8233f1f193e5_icgraph">
-<area shape="rect" id="node2" href="l3g4200_8h.html#affef29745f5a82cfc679e157c57b9c40" title="l3g4200_event" alt="" coords="239,5,355,32"/><area shape="rect" id="node4" href="l3g4200_8h.html#a04567c5211452c8a7be46d598b33aa84" title="l3g4200_start_configure" alt="" coords="209,56,385,83"/><area shape="rect" id="node3" href="imu__gl1_8h.html#accca4f4c7d6f0ecd6cd6f210818c4b1b" title="imu_gl1_event" alt="" coords="441,5,556,32"/><area shape="rect" id="node5" href="l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572" title="convenience function: read or start configuration if not already initialized " alt="" coords="433,56,564,83"/><area shape="rect" id="node6" href="imu__gl1_8h.html#a80f3bffaf9eb81ccbca95d0c5b8ae5ef" title="imu_gl1_periodic" alt="" coords="612,56,741,83"/></map>
+</map>
 </div>
 </p>
 
@@ -493,7 +493,7 @@ Functions</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a67ca73762166a11d1b624e0b30c28039_icgraph.png" border="0" usemap="#l3g4200_8c_a67ca73762166a11d1b624e0b30c28039_icgraph" alt=""/></div>
 <map name="l3g4200_8c_a67ca73762166a11d1b624e0b30c28039_icgraph" id="l3g4200_8c_a67ca73762166a11d1b624e0b30c28039_icgraph">
-<area shape="rect" id="node2" href="l3g4200_8h.html#aa78509836bbf5a035172dc6da198b26d" title="Initialize L3g4200 struct and set default config options. " alt="" coords="204,13,303,39"/><area shape="rect" id="node3" href="imu__gl1_8h.html#a81309c506e7d40f9bcf314ced6c19596" title="imu_gl1_init" alt="" coords="351,13,449,39"/></map>
+</map>
 </div>
 </p>
 
@@ -526,7 +526,7 @@ Functions</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_cgraph.png" border="0" usemap="#l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_cgraph" alt=""/></div>
 <map name="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_cgraph" id="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_cgraph">
-<area shape="rect" id="node2" href="l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5" title="l3g4200_send_config" alt="" coords="229,5,385,32"/><area shape="rect" id="node3" href="l3g4200_8c.html#a891e6ea3c7cd89f932116dad069799fe" title="l3g4200_i2c_tx_reg" alt="" coords="433,5,579,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="627,5,728,32"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="776,5,867,32"/></map>
+</map>
 </div>
 </p>
 
@@ -537,7 +537,7 @@ Functions</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_icgraph.png" border="0" usemap="#l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_icgraph" alt=""/></div>
 <map name="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_icgraph" id="l3g4200_8c_a04567c5211452c8a7be46d598b33aa84_icgraph">
-<area shape="rect" id="node2" href="l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572" title="convenience function: read or start configuration if not already initialized " alt="" coords="229,5,360,32"/><area shape="rect" id="node3" href="imu__gl1_8h.html#a80f3bffaf9eb81ccbca95d0c5b8ae5ef" title="imu_gl1_periodic" alt="" coords="408,5,537,32"/></map>
+</map>
 </div>
 </p>
 
@@ -549,7 +549,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="l3g4200_8c.html">l3g4200.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

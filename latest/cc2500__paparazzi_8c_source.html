@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control/cc2500_frsky/cc2500_paparazzi.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/cc2500_frsky/cc2500_paparazzi.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cc2500__paparazzi_8h.html">cc2500_paparazzi.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">subsystems/radio_control.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cc2500_8h.html">peripherals/cc2500.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cc2500__common_8h.html">cc2500_common.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cc2500__frsky__common_8h.html">cc2500_frsky_common.h</a>&quot;</span></div>
@@ -142,13 +142,13 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8c.html#a5e44c13df6b1f4da1dc64576ee8d0ef0">   34</a></span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="cc2500__paparazzi_8c.html#a5e44c13df6b1f4da1dc64576ee8d0ef0">frsky_raw</a>[RADIO_CTL_NB];</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8c.html#a5e44c13df6b1f4da1dc64576ee8d0ef0">   34</a></span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="cc2500__paparazzi_8c.html#a5e44c13df6b1f4da1dc64576ee8d0ef0">frsky_raw</a>[RADIO_CTL_NB];</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">subsystems/datalink/telemetry.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">modules/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8c.html#aec5542fe88c901a966eb6f7a721df6ad">   40</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__paparazzi_8c.html#aec5542fe88c901a966eb6f7a721df6ad">send_cc2500_ppm</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8c.html#aec5542fe88c901a966eb6f7a721df6ad">   40</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__paparazzi_8c.html#aec5542fe88c901a966eb6f7a721df6ad">send_cc2500_ppm</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  pprz_msg_send_PPM(trans, dev, AC_ID,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      &amp;<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">frame_rate</a>,</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="cc2500__settings_8c_html_a05d761a2c53707eb1216a322cd8a0141"><div class="ttname"><a href="cc2500__settings_8c.html#a05d761a2c53707eb1216a322cd8a0141">cc2500_settings_init</a></div><div class="ttdeci">void cc2500_settings_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__settings_8c_source.html#l00159">cc2500_settings.c:159</a></div></div>
 <div class="ttc" id="telemetry_8h_html"><div class="ttname"><a href="telemetry_8h.html">telemetry.h</a></div><div class="ttdoc">Periodic telemetry system header (includes downlink utility and generated code). </div></div>
 <div class="ttc" id="radio__control_8h_html_a8a646c0d264de984fd5aeb22525bbf16"><div class="ttname"><a href="radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16">RadioControl::radio_ok_cpt</a></div><div class="ttdeci">uint8_t radio_ok_cpt</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00066">radio_control.h:66</a></div></div>
@@ -204,7 +204,6 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <div class="ttc" id="radio__control_8c_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00030">radio_control.c:30</a></div></div>
 <div class="ttc" id="cc2500__settings_8h_html"><div class="ttname"><a href="cc2500__settings_8h.html">cc2500_settings.h</a></div></div>
 <div class="ttc" id="radio__control_8h_html_ac96a9e3f6c17299d532eb572ef0ea415"><div class="ttname"><a href="radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415">RC_OK</a></div><div class="ttdeci">#define RC_OK</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00056">radio_control.h:56</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="cc2500__rx_8c_html_a2b22f66cf63b1438ff45127b7674d1a9"><div class="ttname"><a href="cc2500__rx_8c.html#a2b22f66cf63b1438ff45127b7674d1a9">rxInit</a></div><div class="ttdeci">void rxInit(void)</div><div class="ttdoc">!TODO remove this extern, only needed once for channelCount </div><div class="ttdef"><b>Definition:</b> <a href="cc2500__rx_8c_source.html#l00263">cc2500_rx.c:263</a></div></div>
 <div class="ttc" id="cc2500_8c_html_a789c41a330de75ba23528bbdc7060592"><div class="ttname"><a href="cc2500_8c.html#a789c41a330de75ba23528bbdc7060592">cc2500_init</a></div><div class="ttdeci">void cc2500_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500_8c_source.html#l00043">cc2500.c:43</a></div></div>
 <div class="ttc" id="cc2500__frsky__common_8h_html"><div class="ttname"><a href="cc2500__frsky__common_8h.html">cc2500_frsky_common.h</a></div></div>
@@ -215,6 +214,7 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <div class="ttc" id="cc2500__rx_8h_html"><div class="ttname"><a href="cc2500__rx_8h.html">cc2500_rx.h</a></div></div>
 <div class="ttc" id="cc2500__paparazzi_8c_html_a760dbd4fa3f62cc43524fc420c2a9e5f"><div class="ttname"><a href="cc2500__paparazzi_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a></div><div class="ttdeci">void radio_control_impl_event(void(*_received_frame_handler)(void))</div><div class="ttdoc">RC event function with handler callback. </div><div class="ttdef"><b>Definition:</b> <a href="cc2500__paparazzi_8c_source.html#l00061">cc2500_paparazzi.c:61</a></div></div>
 <div class="ttc" id="cc2500__paparazzi_8h_html"><div class="ttname"><a href="cc2500__paparazzi_8h.html">cc2500_paparazzi.h</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="telemetry_8c_html_a8b8cf43739f06c54d16370c141b541a0"><div class="ttname"><a href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a></div><div class="ttdeci">int8_t register_periodic_telemetry(struct periodic_telemetry *_pt, uint8_t _id, telemetry_cb _cb)</div><div class="ttdoc">Register a telemetry callback function. </div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8c_source.html#l00046">telemetry.c:46</a></div></div>
 <div class="ttc" id="radio__control_8h_html_ab19a0ca633267915e1e0ca584d31ef88"><div class="ttname"><a href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">RadioControl::frame_cpt</a></div><div class="ttdeci">uint8_t frame_cpt</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00068">radio_control.h:68</a></div></div>
 <div class="ttc" id="radio__control_8h_html_aa6eb017ab6023648e26cedd9de0c6c8c"><div class="ttname"><a href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">RadioControl::frame_rate</a></div><div class="ttdeci">uint8_t frame_rate</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00067">radio_control.h:67</a></div></div>
@@ -224,8 +224,8 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8c_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_69e9f3afec1dbdad02870a66666e16a1.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__paparazzi_8c.html">cc2500_paparazzi.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__paparazzi_8c.html">cc2500_paparazzi.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('boards_2swing_2actuators_8c.html','');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;sys/ioctl.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="subsystems_2actuators_8h_source.html">subsystems/actuators.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="motor__mixing_8h_source.html">subsystems/actuators/motor_mixing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="modules_2actuators_2actuators_8h_source.html">modules/actuators/actuators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__mixing_8h_source.html">modules/actuators/motor_mixing.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="boards_2swing_2actuators_8h_source.html">actuators.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('boards_2swing_2actuators_8c.html','');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2swing_2actuators_8c__incl.png" border="0" usemap="#sw_2airborne_2boards_2swing_2actuators_8c" alt=""/></div>
 <map name="sw_2airborne_2boards_2swing_2actuators_8c" id="sw_2airborne_2boards_2swing_2actuators_8c">
-<area shape="rect" id="node4" href="subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="200,102,376,129"/><area shape="rect" id="node9" href="motor__mixing_8h.html" title="Motor Mixing. " alt="" coords="401,95,565,136"/><area shape="rect" id="node11" href="boards_2swing_2actuators_8h.html" title="Actuator driver for the swing. " alt="" coords="1085,102,1179,129"/><area shape="rect" id="node13" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="683,102,773,129"/><area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="435,184,531,211"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="440,266,525,293"/><area shape="rect" id="node10" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types. " alt="" coords="246,184,410,211"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="753,184,820,211"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="859,348,1037,375"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1266,348,1457,375"/><area shape="rect" id="node24" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="758,259,909,300"/><area shape="rect" id="node26" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1173,259,1323,300"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="985,259,1149,300"/><area shape="rect" id="node16" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1229,423,1384,449"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="859,423,1010,449"/><area shape="rect" id="node25" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1062,348,1186,375"/></map>
+</map>
 </div>
 </div>
 <p><a href="boards_2swing_2actuators_8c_source.html">Go to the source code of this file.</a></p>
@@ -164,12 +164,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a930200ae35b2712706fbd833d42a70f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="boards_2swing_2actuators_8c.html#a930200ae35b2712706fbd833d42a70f3a7203056b93bf0d31f07fc978eb015579">SiP6_PWM0_START</a> = (1&lt;&lt;0), 
-<a class="el" href="boards_2swing_2actuators_8c.html#a930200ae35b2712706fbd833d42a70f3a089cac2ce20b18e99eb10844b484b8a3">SiP6_PWM1_START</a> = (1&lt;&lt;1), 
-<a class="el" href="boards_2swing_2actuators_8c.html#a930200ae35b2712706fbd833d42a70f3aa8ea889eed8be33c4cf28063b7ec0bcf">SiP6_PWM2_START</a> = (1&lt;&lt;2), 
-<a class="el" href="boards_2swing_2actuators_8c.html#a930200ae35b2712706fbd833d42a70f3aebeb093d25e51b2165743f7d18d4107a">SiP6_PWM3_START</a> = (1&lt;&lt;3)
+<tr class="memitem:ad86178b9def692404403c1e6ef728ced"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="boards_2swing_2actuators_8c.html#ad86178b9def692404403c1e6ef728ceda7203056b93bf0d31f07fc978eb015579">SiP6_PWM0_START</a> = (1&lt;&lt;0), 
+<a class="el" href="boards_2swing_2actuators_8c.html#ad86178b9def692404403c1e6ef728ceda089cac2ce20b18e99eb10844b484b8a3">SiP6_PWM1_START</a> = (1&lt;&lt;1), 
+<a class="el" href="boards_2swing_2actuators_8c.html#ad86178b9def692404403c1e6ef728cedaa8ea889eed8be33c4cf28063b7ec0bcf">SiP6_PWM2_START</a> = (1&lt;&lt;2), 
+<a class="el" href="boards_2swing_2actuators_8c.html#ad86178b9def692404403c1e6ef728cedaebeb093d25e51b2165743f7d18d4107a">SiP6_PWM3_START</a> = (1&lt;&lt;3)
  }</td></tr>
-<tr class="separator:a930200ae35b2712706fbd833d42a70f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad86178b9def692404403c1e6ef728ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -353,7 +353,7 @@ val[4]</td>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a930200ae35b2712706fbd833d42a70f3"></a>
+<a class="anchor" id="ad86178b9def692404403c1e6ef728ced"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -363,13 +363,13 @@ val[4]</td>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a930200ae35b2712706fbd833d42a70f3a7203056b93bf0d31f07fc978eb015579"></a>SiP6_PWM0_START&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad86178b9def692404403c1e6ef728ceda7203056b93bf0d31f07fc978eb015579"></a>SiP6_PWM0_START&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a930200ae35b2712706fbd833d42a70f3a089cac2ce20b18e99eb10844b484b8a3"></a>SiP6_PWM1_START&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad86178b9def692404403c1e6ef728ceda089cac2ce20b18e99eb10844b484b8a3"></a>SiP6_PWM1_START&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a930200ae35b2712706fbd833d42a70f3aa8ea889eed8be33c4cf28063b7ec0bcf"></a>SiP6_PWM2_START&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad86178b9def692404403c1e6ef728cedaa8ea889eed8be33c4cf28063b7ec0bcf"></a>SiP6_PWM2_START&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a930200ae35b2712706fbd833d42a70f3aebeb093d25e51b2165743f7d18d4107a"></a>SiP6_PWM3_START&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ad86178b9def692404403c1e6ef728cedaebeb093d25e51b2165743f7d18d4107a"></a>SiP6_PWM3_START&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -405,7 +405,7 @@ val[4]</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2swing_2actuators_8c_a813eb13a9d87a031d6930684668086bd_icgraph.png" border="0" usemap="#boards_2swing_2actuators_8c_a813eb13a9d87a031d6930684668086bd_icgraph" alt=""/></div>
 <map name="boards_2swing_2actuators_8c_a813eb13a9d87a031d6930684668086bd_icgraph" id="boards_2swing_2actuators_8c_a813eb13a9d87a031d6930684668086bd_icgraph">
-<area shape="rect" id="node2" href="boards_2swing_2actuators_8h.html#a5471c2998cc11eb177e480bb24d09de6" title="actuators_swing_init" alt="" coords="235,5,385,32"/></map>
+</map>
 </div>
 </p>
 
@@ -436,7 +436,7 @@ val[4]</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2swing_2actuators_8c_a5471c2998cc11eb177e480bb24d09de6_cgraph.png" border="0" usemap="#boards_2swing_2actuators_8c_a5471c2998cc11eb177e480bb24d09de6_cgraph" alt=""/></div>
 <map name="boards_2swing_2actuators_8c_a5471c2998cc11eb177e480bb24d09de6_cgraph" id="boards_2swing_2actuators_8c_a5471c2998cc11eb177e480bb24d09de6_cgraph">
-<area shape="rect" id="node2" href="boards_2swing_2actuators_8c.html#a813eb13a9d87a031d6930684668086bd" title="actuators_swing_commit" alt="" coords="204,5,385,32"/></map>
+</map>
 </div>
 </p>
 
@@ -487,7 +487,7 @@ val[4]</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_ac03d41c96f56bce96151277973f6cb5.html">swing</a></li><li class="navelem"><a class="el" href="boards_2swing_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:36 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('xbee__dl_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xbee__dl_8h.html">modules/datalink/xbee_dl.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">subsystems/datalink/datalink.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">modules/datalink/datalink.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mcu_8h.html">mcu.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html">mcu_periph/sys_time.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html">mcu_periph/uart.h</a>&quot;</span></div>
@@ -182,10 +182,10 @@ $(document).ready(function(){initNavTree('xbee__dl_8c_source.html','');});
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="xbee__dl_8c_html_a637a2c0512132f836bac769f5bdb50d9"><div class="ttname"><a href="xbee__dl_8c.html#a637a2c0512132f836bac769f5bdb50d9">XBEE_TYPE</a></div><div class="ttdeci">#define XBEE_TYPE</div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00037">xbee_dl.c:37</a></div></div>
 <div class="ttc" id="datalink_8h_html"><div class="ttname"><a href="datalink_8h.html">datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground and other A/Cs. </div></div>
-<div class="ttc" id="main__demo5_8c_html_a61d3db27cf64e56c9011bef1de4df9ac"><div class="ttname"><a href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">dl_msg_available</a></div><div class="ttdeci">bool dl_msg_available</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00061">main_demo5.c:61</a></div></div>
+<div class="ttc" id="main__demo5_8c_html_a61d3db27cf64e56c9011bef1de4df9ac"><div class="ttname"><a href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">dl_msg_available</a></div><div class="ttdeci">bool dl_msg_available</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00060">main_demo5.c:60</a></div></div>
 <div class="ttc" id="xbee__dl_8c_html_a88fa737059e67b4b17ec980e5877361e"><div class="ttname"><a href="xbee__dl_8c.html#a88fa737059e67b4b17ec980e5877361e">CONCAT</a></div><div class="ttdeci">#define CONCAT(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00050">xbee_dl.c:50</a></div></div>
 <div class="ttc" id="xbee__dl_8c_html_a49dfd19411acd2cc456d38091309c844"><div class="ttname"><a href="xbee__dl_8c.html#a49dfd19411acd2cc456d38091309c844">XBEE_CHANNEL_CONF</a></div><div class="ttdeci">#define XBEE_CHANNEL_CONF</div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00047">xbee_dl.c:47</a></div></div>
-<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a74db3eed857f9c53bb67db256c12bc83"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a></div><div class="ttdeci">void sys_time_usleep(uint32_t us)</div><div class="ttdoc">sys_time_usleep(uint32_t us) </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_arch.c:95</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a74db3eed857f9c53bb67db256c12bc83"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83">sys_time_usleep</a></div><div class="ttdeci">void sys_time_usleep(uint32_t us)</div><div class="ttdoc">sys_time_usleep(uint32_t us) </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00100">sys_time_arch.c:100</a></div></div>
 <div class="ttc" id="sys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions. </div></div>
 <div class="ttc" id="xbee__dl_8c_html_ad96029ee81312c14a9470dcb3cc279d5"><div class="ttname"><a href="xbee__dl_8c.html#ad96029ee81312c14a9470dcb3cc279d5">XBEE_UPDATE_DL</a></div><div class="ttdeci">#define XBEE_UPDATE_DL</div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00053">xbee_dl.c:53</a></div></div>
 <div class="ttc" id="xbee__dl_8c_html_ab188dcb256c0341757d97bcff05bfe4d"><div class="ttname"><a href="xbee__dl_8c.html#ab188dcb256c0341757d97bcff05bfe4d">XBEE_INIT</a></div><div class="ttdeci">#define XBEE_INIT</div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00040">xbee_dl.c:40</a></div></div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('xbee__dl_8c_source.html','');});
 <div class="ttc" id="datalink_8h_html_aa9106add8d47671f6ebb3d8321813611"><div class="ttname"><a href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611">DlCheckAndParse</a></div><div class="ttdeci">static void DlCheckAndParse(struct link_device *dev, struct transport_tx *trans, uint8_t *buf, bool *msg_available, bool update_dl)</div><div class="ttdoc">Check for new message and parse. </div><div class="ttdef"><b>Definition:</b> <a href="datalink_8h_source.html#l00079">datalink.h:79</a></div></div>
 <div class="ttc" id="mcu_8h_html"><div class="ttname"><a href="mcu_8h.html">mcu.h</a></div><div class="ttdoc">Arch independent mcu ( Micro Controller Unit ) utilities. </div></div>
 <div class="ttc" id="xbee__dl_8h_html"><div class="ttname"><a href="xbee__dl_8h.html">xbee_dl.h</a></div><div class="ttdoc">Datalink using XBEE protocol. </div></div>
-<div class="ttc" id="main__demo5_8c_html_a41ca1f0c42c768e235066d83071b1ed9"><div class="ttname"><a href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a></div><div class="ttdeci">uint8_t dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00064">main_demo5.c:64</a></div></div>
+<div class="ttc" id="main__demo5_8c_html_a41ca1f0c42c768e235066d83071b1ed9"><div class="ttname"><a href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a></div><div class="ttdeci">uint8_t dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00063">main_demo5.c:63</a></div></div>
 <div class="ttc" id="xbee__dl_8c_html_add294366c202c587c00b54177fefe4c8"><div class="ttname"><a href="xbee__dl_8c.html#add294366c202c587c00b54177fefe4c8">xbee_dl_init</a></div><div class="ttdeci">void xbee_dl_init(void)</div><div class="ttdoc">Init function. </div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00058">xbee_dl.c:58</a></div></div>
 <div class="ttc" id="xbee__dl_8c_html_ae70130a34c8efc48df440e2b410793c6"><div class="ttname"><a href="xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6">xbee_dl_event</a></div><div class="ttdeci">void xbee_dl_event(void)</div><div class="ttdoc">Datalink Event. </div><div class="ttdef"><b>Definition:</b> <a href="xbee__dl_8c_source.html#l00069">xbee_dl.c:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('xbee__dl_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="xbee__dl_8c.html">xbee_dl.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

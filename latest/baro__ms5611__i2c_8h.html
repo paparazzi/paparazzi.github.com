@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('baro__ms5611__i2c_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ms5611__i2c_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8h" id="sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8h">
-<area shape="rect" id="node3" href="ms5611__i2c_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA and MS5607&#45;02BA03 pressure/temperature sensor interfa..." alt="" coords="211,95,360,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="224,184,355,211"/><area shape="rect" id="node6" href="ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI). " alt="" coords="39,184,201,211"/><area shape="rect" id="node7" href="ms5611__regs_8h.html" title="Register definitions for MS5611 barometer. " alt="" coords="5,259,155,300"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('baro__ms5611__i2c_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ms5611__i2c_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8hdep" id="sw_2airborne_2modules_2sensors_2baro__ms5611__i2c_8hdep">
-<area shape="rect" id="node2" href="baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C..." alt="" coords="6,95,210,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="baro__ms5611__i2c_8h_source.html">Go to the source code of this file.</a></p>
@@ -145,6 +145,8 @@ Macros</h2></td></tr>
 <tr class="separator:a73ab789fe82b033e89be51be8b72b4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d2d6897b288382c3923d8180e16d6bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ms5611__i2c_8h.html#a9d2d6897b288382c3923d8180e16d6bc">BARO_MS5611_SIGMA2</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a9d2d6897b288382c3923d8180e16d6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435bdf375c51437bd791094adcfccf41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ms5611__i2c_8h.html#a435bdf375c51437bd791094adcfccf41">baro_ms5611_periodic</a>()&#160;&#160;&#160;{ <a class="el" href="baro__ms5611__spi_8h.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_read</a>(); <a class="el" href="baro__ms5611__spi_8h.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_periodic_check</a>(); }</td></tr>
+<tr class="separator:a435bdf375c51437bd791094adcfccf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -192,6 +194,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a435bdf375c51437bd791094adcfccf41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define baro_ms5611_periodic</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="baro__ms5611__spi_8h.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_read</a>(); <a class="el" href="baro__ms5611__spi_8h.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_periodic_check</a>(); }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8h_source.html#l00026">26</a> of file <a class="el" href="baro__ms5611__i2c_8h_source.html">baro_ms5611_i2c.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a73ab789fe82b033e89be51be8b72b4dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +223,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ms5611__i2c_8h_source.html#l00009">9</a> of file <a class="el" href="baro__ms5611__i2c_8h_source.html">baro_ms5611_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__ms5611__i2c_8c_source.html#l00060">baro_ms5611_init()</a>.</p>
+<p>Referenced by <a class="el" href="baro__ms5611__i2c_8c_source.html#l00066">baro_ms5611_init()</a>.</p>
 
 </div>
 </div>
@@ -220,7 +239,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ms5611__i2c_8h_source.html#l00010">10</a> of file <a class="el" href="baro__ms5611__i2c_8h_source.html">baro_ms5611_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__ms5611__i2c_8c_source.html#l00060">baro_ms5611_init()</a>.</p>
+<p>Referenced by <a class="el" href="baro__ms5611__i2c_8c_source.html#l00066">baro_ms5611_init()</a>.</p>
 
 </div>
 </div>
@@ -239,7 +258,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00090">90</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00096">96</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -257,7 +276,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00060">60</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00066">66</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -275,7 +294,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00071">71</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00077">77</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -295,7 +314,7 @@ Variables</h2></td></tr>
 
 <p>trigger new measurement or initialize if needed </p>
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00083">83</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00089">89</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -313,7 +332,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00115">115</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00121">121</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -328,7 +347,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00049">49</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00055">55</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -342,7 +361,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00052">52</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00058">58</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -356,7 +375,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00053">53</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00059">59</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -370,7 +389,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00054">54</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00060">60</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -384,7 +403,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00056">56</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00062">62</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -398,7 +417,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00057">57</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="baro__ms5611__i2c_8c_source.html#l00063">63</a> of file <a class="el" href="baro__ms5611__i2c_8c_source.html">baro_ms5611_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -408,7 +427,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ms5611__i2c_8h.html">baro_ms5611_i2c.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:09 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

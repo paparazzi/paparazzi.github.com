@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ahrs/ahrs_float_dcm.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_float_dcm.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,12 +117,12 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm_8c.html','');});
 <p>Attitude estimation for fixedwings based on the DCM.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs__float__dcm_8h_source.html">subsystems/ahrs/ahrs_float_dcm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs__float__utils_8h_source.html">subsystems/ahrs/ahrs_float_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs__float__dcm_8h_source.html">modules/ahrs/ahrs_float_dcm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs__float__utils_8h_source.html">modules/ahrs/ahrs_float_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs__float__dcm__algebra_8h_source.html">subsystems/ahrs/ahrs_float_dcm_algebra.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs__float__dcm__algebra_8h_source.html">modules/ahrs/ahrs_float_dcm_algebra.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps_8h_source.html">modules/gps/gps.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -130,9 +130,9 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__dcm_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__float__dcm_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__float__dcm_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__float__dcm_8c">
-<area shape="rect" id="node3" href="ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="183,95,346,136"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="160,370,351,397"/><area shape="rect" id="node15" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="917,191,1055,218"/><area shape="rect" id="node22" href="ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1197,95,1359,136"/><area shape="rect" id="node25" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="719,102,810,129"/><area shape="rect" id="node31" href="ahrs__float__dcm__algebra_8h.html" title="Algebra helper functions for DCM. " alt="" coords="1679,95,1842,136"/><area shape="rect" id="node32" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1866,102,1919,129"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="50,370,135,397"/><area shape="rect" id="node11" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="395,273,559,315"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="246,452,363,479"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="590,370,769,397"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="591,452,741,479"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="911,273,1061,315"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="736,273,887,315"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1086,281,1257,307"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="844,370,968,397"/><area shape="rect" id="node23" href="ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1373,184,1554,225"/><area shape="rect" id="node26" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="122,281,218,307"/><area shape="rect" id="node27" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="815,191,882,218"/></map>
+<div class="center"><img src="ahrs__float__dcm_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__float__dcm_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__float__dcm_8c" id="sw_2airborne_2modules_2ahrs_2ahrs__float__dcm_8c">
+</map>
 </div>
 </div>
 <p><a href="ahrs__float__dcm_8c_source.html">Go to the source code of this file.</a></p>
@@ -275,7 +275,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">119</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00034">AHRS_DCM_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00034">AHRS_DCM_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00688">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00139">aligner_cb()</a>.</p>
 
@@ -286,7 +286,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph" id="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="439,5,588,47"/><area shape="rect" id="node8" href="ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="201,115,351,156"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="442,239,585,266"/><area shape="rect" id="node14" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="201,231,351,258"/><area shape="rect" id="node15" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="176,282,376,309"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place " alt="" coords="661,13,823,39"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="664,71,820,98"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="881,13,1015,39"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="1063,13,1204,39"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="885,71,1011,98"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="424,122,603,149"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="428,173,599,215"/><area shape="rect" id="node12" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="677,155,807,182"/><area shape="rect" id="node13" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="651,206,833,233"/></map>
+</map>
 </div>
 </p>
 
@@ -297,7 +297,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_icgraph" id="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="176,5,263,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="311,5,452,32"/></map>
+</map>
 </div>
 </p>
 
@@ -319,7 +319,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00099">99</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00033">AHRS_DCM_UNINIT</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00050">AhrsFloatDCM::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00516">FLOAT_EULERS_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00042">AhrsFloatDCM::imu_rate</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00033">AHRS_DCM_UNINIT</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00050">AhrsFloatDCM::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00519">FLOAT_EULERS_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00042">AhrsFloatDCM::imu_rate</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00198">ahrs_dcm_register()</a>.</p>
 
@@ -330,7 +330,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_cgraph" id="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_cgraph">
-<area shape="rect" id="node2" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="185,5,343,32"/><area shape="rect" id="node5" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="164,56,364,83"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="412,5,573,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="621,5,764,32"/></map>
+</map>
 </div>
 </p>
 
@@ -341,7 +341,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_icgraph" id="ahrs__float__dcm_8c_a72e0ab470bdd713dbf05bbb7d2aaac0c_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="164,5,305,32"/></map>
+</map>
 </div>
 </p>
 
@@ -384,7 +384,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_cgraph" id="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2" title="compute_ahrs_representations" alt="" coords="212,5,435,32"/><area shape="rect" id="node3" href="ahrs__float__dcm_8c.html#a9edefa5b854086647ebcd488b4a3f390" title="Matrix_update" alt="" coords="267,56,380,83"/><area shape="rect" id="node6" href="ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="280,157,367,184"/><area shape="rect" id="node4" href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="535,56,630,83"/><area shape="rect" id="node5" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3" title="Matrix_Multiply" alt="" coords="525,5,641,32"/><area shape="rect" id="node7" href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde" title="Vector_Dot_Product" alt="" coords="508,107,657,133"/><area shape="rect" id="node8" href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33" title="Vector_Scale" alt="" coords="530,157,635,184"/><area shape="rect" id="node9" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3" title="Vector_Cross_Product" alt="" coords="501,208,664,235"/><area shape="rect" id="node10" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="483,259,683,285"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="504,309,661,336"/><area shape="rect" id="node12" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="731,309,892,336"/><area shape="rect" id="node13" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="940,309,1083,336"/></map>
+</map>
 </div>
 </p>
 
@@ -395,7 +395,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_icgraph" id="ahrs__float__dcm_8c_a085ad70d62a69cf92b8e08b27b9e60d1_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="212,5,284,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="332,5,473,32"/></map>
+</map>
 </div>
 </p>
 
@@ -426,7 +426,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a7f3247a388db0709627a935f09a7b406_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a7f3247a388db0709627a935f09a7b406_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a7f3247a388db0709627a935f09a7b406_cgraph" id="ahrs__float__dcm_8c_a7f3247a388db0709627a935f09a7b406_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8c.html#afe8393fd937ef9065e871dc5623510f2" title="ahrs_dcm_set_body_to\l_imu_quat" alt="" coords="255,45,425,86"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="262,111,418,137"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="478,5,633,32"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="473,56,637,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="685,56,853,83"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="901,31,1055,57"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="903,81,1053,108"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="475,111,635,137"/><area shape="rect" id="node10" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="698,108,841,135"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="694,159,845,185"/></map>
+</map>
 </div>
 </p>
 
@@ -459,7 +459,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_cgraph" id="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_cgraph">
-<area shape="rect" id="node2" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="224,31,388,57"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="229,81,383,108"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="436,31,604,57"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="652,5,805,32"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="653,56,804,83"/></map>
+</map>
 </div>
 </p>
 
@@ -470,7 +470,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_icgraph" id="ahrs__float__dcm_8c_afe8393fd937ef9065e871dc5623510f2_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#a7f3247a388db0709627a935f09a7b406" title="ahrs_dcm_set_body_to_imu" alt="" coords="224,5,425,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="261,56,388,83"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="473,56,615,83"/></map>
+</map>
 </div>
 </p>
 
@@ -503,7 +503,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_cgraph" id="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8c.html#a0983667a3515b42c82ce0b23d0007439" title="Drift_correction" alt="" coords="231,120,351,147"/><area shape="rect" id="node6" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="405,208,555,235"/><area shape="rect" id="node3" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3" title="Vector_Cross_Product" alt="" coords="399,5,561,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33" title="Vector_Scale" alt="" coords="427,56,533,83"/><area shape="rect" id="node5" href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="433,107,527,133"/><area shape="rect" id="node7" href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde" title="Vector_Dot_Product" alt="" coords="405,157,555,184"/></map>
+</map>
 </div>
 </p>
 
@@ -514,7 +514,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_icgraph" id="ahrs__float__dcm_8c_a9e8f7f86867387eac6081a8b23ea9533_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="231,5,308,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="356,5,497,32"/></map>
+</map>
 </div>
 </p>
 
@@ -536,7 +536,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00175">175</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00076">AHRS_FLOAT_MIN_SPEED_GPS_COURSE</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00165">gps_cb()</a>.</p>
 
@@ -547,7 +547,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph" id="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="220,5,287,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="335,5,476,32"/></map>
+</map>
 </div>
 </p>
 
@@ -569,7 +569,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00227">227</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">MAG_Heading_X</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">MAG_Heading_Y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">MAG_Heading_X</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">MAG_Heading_Y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00128">mag_cb()</a>.</p>
 
@@ -580,7 +580,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a28f19eadfba62ddde0404977ec9b808a_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a28f19eadfba62ddde0404977ec9b808a_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a28f19eadfba62ddde0404977ec9b808a_icgraph" id="ahrs__float__dcm_8c_a28f19eadfba62ddde0404977ec9b808a_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="227,5,300,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="348,5,489,32"/></map>
+</map>
 </div>
 </p>
 
@@ -621,7 +621,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a682bd53351651a47152def7839ecdbd2_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a682bd53351651a47152def7839ecdbd2_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a682bd53351651a47152def7839ecdbd2_icgraph" id="ahrs__float__dcm_8c_a682bd53351651a47152def7839ecdbd2_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1" title="ahrs_dcm_propagate" alt="" coords="276,5,435,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="483,5,555,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="603,5,744,32"/></map>
+</map>
 </div>
 </p>
 
@@ -654,7 +654,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_cgraph" id="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_cgraph">
-<area shape="rect" id="node2" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="179,5,330,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="207,56,302,83"/><area shape="rect" id="node4" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3" title="Vector_Cross_Product" alt="" coords="173,107,336,133"/><area shape="rect" id="node5" href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde" title="Vector_Dot_Product" alt="" coords="180,157,329,184"/><area shape="rect" id="node6" href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33" title="Vector_Scale" alt="" coords="202,208,307,235"/></map>
+</map>
 </div>
 </p>
 
@@ -665,7 +665,7 @@ Variables</h2></td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_icgraph" id="ahrs__float__dcm_8c_a0983667a3515b42c82ce0b23d0007439_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533" title="ahrs_dcm_update_accel" alt="" coords="173,5,351,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="399,5,476,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="524,5,665,32"/></map>
+</map>
 </div>
 </p>
 
@@ -698,7 +698,7 @@ Variables</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_cgraph" id="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3" title="Matrix_Multiply" alt="" coords="167,5,283,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="177,56,272,83"/></map>
+</map>
 </div>
 </p>
 
@@ -709,7 +709,7 @@ Variables</h2></td></tr>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_icgraph" id="ahrs__float__dcm_8c_a9edefa5b854086647ebcd488b4a3f390_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1" title="ahrs_dcm_propagate" alt="" coords="167,5,325,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="373,5,445,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="493,5,635,32"/></map>
+</map>
 </div>
 </p>
 
@@ -742,7 +742,7 @@ Variables</h2></td></tr>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_cgraph" id="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_cgraph">
-<area shape="rect" id="node2" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="161,5,319,32"/><area shape="rect" id="node5" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="140,56,340,83"/><area shape="rect" id="node6" href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="193,107,287,133"/><area shape="rect" id="node7" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3" title="Vector_Cross_Product" alt="" coords="159,157,321,184"/><area shape="rect" id="node8" href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde" title="Vector_Dot_Product" alt="" coords="165,208,315,235"/><area shape="rect" id="node9" href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33" title="Vector_Scale" alt="" coords="187,259,293,285"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="388,5,549,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="597,5,740,32"/></map>
+</map>
 </div>
 </p>
 
@@ -753,7 +753,7 @@ Variables</h2></td></tr>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_icgraph" id="ahrs__float__dcm_8c_a231f7602591a267c2669a2af9b9c8749_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1" title="ahrs_dcm_propagate" alt="" coords="140,5,299,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="347,5,419,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="467,5,608,32"/></map>
+</map>
 </div>
 </p>
 
@@ -794,7 +794,7 @@ Variables</h2></td></tr>
 <div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_aae3abaa3b95367596d2fe07e62b59dfe_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_aae3abaa3b95367596d2fe07e62b59dfe_icgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_aae3abaa3b95367596d2fe07e62b59dfe_icgraph" id="ahrs__float__dcm_8c_aae3abaa3b95367596d2fe07e62b59dfe_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__dcm_8h.html#ac19ef4cf9dfcc61561addd93a8c41a5e" title="ahrs_dcm_align" alt="" coords="253,5,376,32"/><area shape="rect" id="node5" href="ahrs__float__dcm_8h.html#a72e0ab470bdd713dbf05bbb7d2aaac0c" title="ahrs_dcm_init" alt="" coords="448,56,559,83"/><area shape="rect" id="node6" href="ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="271,107,358,133"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="631,5,717,32"/><area shape="rect" id="node4" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="765,56,907,83"/><area shape="rect" id="node7" href="ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1" title="ahrs_dcm_propagate" alt="" coords="424,107,583,133"/><area shape="rect" id="node8" href="ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="638,107,710,133"/></map>
+</map>
 </div>
 </p>
 
@@ -994,8 +994,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__dcm_8c.html">ahrs_float_dcm.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__dcm_8c.html">ahrs_float_dcm.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

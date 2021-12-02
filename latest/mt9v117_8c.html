@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('mt9v117_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2mt9v117_8c" alt=""/></div>
 <map name="sw_2airborne_2boards_2bebop_2mt9v117_8c" id="sw_2airborne_2boards_2bebop_2mt9v117_8c">
-<area shape="rect" id="node3" href="mt9v117_8h.html" title="Initialization and configuration of the MT9V117 CMOS Chip. " alt="" coords="64,497,155,524"/><area shape="rect" id="node6" href="mt9v117__regs_8h.html" title="mt9v117_regs.h" alt="" coords="95,95,222,121"/><area shape="rect" id="node7" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="214,169,405,196"/><area shape="rect" id="node34" href="bebop_8h.html" title="boards/bebop.h" alt="" coords="1341,95,1464,121"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="44,572,175,599"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="267,251,352,278"/><area shape="rect" id="node10" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="376,244,563,285"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="633,333,700,360"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="601,497,780,524"/><area shape="rect" id="node20" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="906,497,1097,524"/><area shape="rect" id="node22" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="526,408,677,449"/><area shape="rect" id="node24" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="351,408,502,449"/><area shape="rect" id="node25" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="753,408,917,449"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="888,572,1043,599"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="561,572,711,599"/><area shape="rect" id="node23" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="402,497,526,524"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('mt9v117_8c.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2mt9v117_8cdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2bebop_2mt9v117_8cdep" id="sw_2airborne_2boards_2bebop_2mt9v117_8cdep">
-<area shape="rect" id="node2" href="mt9v117__nps_8c.html" title="sw/airborne/boards\l/bebop/mt9v117_nps.c" alt="" coords="5,95,173,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="mt9v117_8c_source.html">Go to the source code of this file.</a></p>
@@ -163,15 +163,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a930a08d54ce09662cbac826ff7a052bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf">write_reg</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> addr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:a930a08d54ce09662cbac826ff7a052bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf">write_reg</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> addr, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:a930a08d54ce09662cbac826ff7a052bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple bytes to a single register.  <a href="#a930a08d54ce09662cbac826ff7a052bf">More...</a><br /></td></tr>
 <tr class="separator:a930a08d54ce09662cbac826ff7a052bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa371a374d0c17594e7eed5c751c2df08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08">read_reg</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> addr, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:aa371a374d0c17594e7eed5c751c2df08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08">read_reg</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> addr, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:aa371a374d0c17594e7eed5c751c2df08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read multiple bytes from a register.  <a href="#aa371a374d0c17594e7eed5c751c2df08">More...</a><br /></td></tr>
 <tr class="separator:aa371a374d0c17594e7eed5c751c2df08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd33743f2f52bd5711b8c978e7cf3df2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2">write_var</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> var, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:acd33743f2f52bd5711b8c978e7cf3df2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2">write_var</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> var, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="separator:acd33743f2f52bd5711b8c978e7cf3df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb04605c4916694762cf7744dd5e744"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744">read_var</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> var, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:affb04605c4916694762cf7744dd5e744"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744">read_var</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> var, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="separator:affb04605c4916694762cf7744dd5e744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8703a6aee9810c99eaa79ca4adad8a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a">mt9v117_write_patch</a> (struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt)</td></tr>
 <tr class="separator:aef8703a6aee9810c99eaa79ca4adad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,31 +187,31 @@ Variables</h2></td></tr>
 <tr class="separator:aebe228d13ad2e4e0c8528d945ad76a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2aace6511d89f4676f13ec941992bd4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a></td></tr>
 <tr class="separator:af2aace6511d89f4676f13ec941992bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3aa1b600758e7fa22b2184140444f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4">patch_line1</a> []</td></tr>
+<tr class="memitem:add3aa1b600758e7fa22b2184140444f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4">patch_line1</a> []</td></tr>
 <tr class="separator:add3aa1b600758e7fa22b2184140444f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496b3b82f61f9bfc4a698c988a8366bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a496b3b82f61f9bfc4a698c988a8366bb">patch_line2</a> []</td></tr>
+<tr class="memitem:a496b3b82f61f9bfc4a698c988a8366bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a496b3b82f61f9bfc4a698c988a8366bb">patch_line2</a> []</td></tr>
 <tr class="separator:a496b3b82f61f9bfc4a698c988a8366bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15200f80f57155acc46846a2cb59bcec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a15200f80f57155acc46846a2cb59bcec">patch_line3</a> []</td></tr>
+<tr class="memitem:a15200f80f57155acc46846a2cb59bcec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a15200f80f57155acc46846a2cb59bcec">patch_line3</a> []</td></tr>
 <tr class="separator:a15200f80f57155acc46846a2cb59bcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8091356d84ca5d2d204e5a4ed9f75ae3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a8091356d84ca5d2d204e5a4ed9f75ae3">patch_line4</a> []</td></tr>
+<tr class="memitem:a8091356d84ca5d2d204e5a4ed9f75ae3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a8091356d84ca5d2d204e5a4ed9f75ae3">patch_line4</a> []</td></tr>
 <tr class="separator:a8091356d84ca5d2d204e5a4ed9f75ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac286696034c656453faf01721b7e3849"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#ac286696034c656453faf01721b7e3849">patch_line5</a> []</td></tr>
+<tr class="memitem:ac286696034c656453faf01721b7e3849"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#ac286696034c656453faf01721b7e3849">patch_line5</a> []</td></tr>
 <tr class="separator:ac286696034c656453faf01721b7e3849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7049e331963c9d1c15a8c1ac661f4d47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a7049e331963c9d1c15a8c1ac661f4d47">patch_line6</a> []</td></tr>
+<tr class="memitem:a7049e331963c9d1c15a8c1ac661f4d47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a7049e331963c9d1c15a8c1ac661f4d47">patch_line6</a> []</td></tr>
 <tr class="separator:a7049e331963c9d1c15a8c1ac661f4d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9cab53174eec39c81da4aea47085d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a7f9cab53174eec39c81da4aea47085d9">patch_line7</a> []</td></tr>
+<tr class="memitem:a7f9cab53174eec39c81da4aea47085d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a7f9cab53174eec39c81da4aea47085d9">patch_line7</a> []</td></tr>
 <tr class="separator:a7f9cab53174eec39c81da4aea47085d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ecbf1bc1887d2596b46bb985f339d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a34ecbf1bc1887d2596b46bb985f339d8">patch_line8</a> []</td></tr>
+<tr class="memitem:a34ecbf1bc1887d2596b46bb985f339d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a34ecbf1bc1887d2596b46bb985f339d8">patch_line8</a> []</td></tr>
 <tr class="separator:a34ecbf1bc1887d2596b46bb985f339d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be0e97ad177024fdee9edf6ae566119"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a3be0e97ad177024fdee9edf6ae566119">patch_line9</a> []</td></tr>
+<tr class="memitem:a3be0e97ad177024fdee9edf6ae566119"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a3be0e97ad177024fdee9edf6ae566119">patch_line9</a> []</td></tr>
 <tr class="separator:a3be0e97ad177024fdee9edf6ae566119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4851161d3bcb800486f7c605f7f452e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a4851161d3bcb800486f7c605f7f452e3">patch_line10</a> []</td></tr>
+<tr class="memitem:a4851161d3bcb800486f7c605f7f452e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a4851161d3bcb800486f7c605f7f452e3">patch_line10</a> []</td></tr>
 <tr class="separator:a4851161d3bcb800486f7c605f7f452e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ccc3faf1e555d86beb027c936b5ee5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#ac2ccc3faf1e555d86beb027c936b5ee5">patch_line11</a> []</td></tr>
+<tr class="memitem:ac2ccc3faf1e555d86beb027c936b5ee5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#ac2ccc3faf1e555d86beb027c936b5ee5">patch_line11</a> []</td></tr>
 <tr class="separator:ac2ccc3faf1e555d86beb027c936b5ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55520cce0671d7afd7e796be1810133"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a> []</td></tr>
+<tr class="memitem:aa55520cce0671d7afd7e796be1810133"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a> []</td></tr>
 <tr class="separator:aa55520cce0671d7afd7e796be1810133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd8d8d9bb0a3354cbb15866acfd584c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a> []</td></tr>
+<tr class="memitem:a8fd8d8d9bb0a3354cbb15866acfd584c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a> []</td></tr>
 <tr class="separator:a8fd8d8d9bb0a3354cbb15866acfd584c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd506a87954af6cc887054eea5c8b41"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="mt9v117_8c.html#structmt9v117__patch__t">mt9v117_patch_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a3fd506a87954af6cc887054eea5c8b41">mt9v117_patch_lines</a> [<a class="el" href="mt9v117_8c.html#aff12eaae7882c9cc40820ce03704ac37">MT9V117_PATCH_LINE_NUM</a>]</td></tr>
 <tr class="separator:a3fd506a87954af6cc887054eea5c8b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,13 +235,13 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a179d2822ff3fcd71444cd9787f83ffa5"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>
+<a class="anchor" id="a179d2822ff3fcd71444cd9787f83ffa5"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8c83c4a5bc39cdc0640290a6d25702fa"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a8c83c4a5bc39cdc0640290a6d25702fa"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 len</td>
 <td class="fielddoc">
@@ -303,7 +303,7 @@ len</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph.png" border="0" usemap="#mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" alt=""/></div>
 <map name="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" id="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="304,31,384,57"/><area shape="rect" id="node6" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="177,56,256,83"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="432,31,592,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="666,5,757,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="640,56,783,83"/></map>
+</map>
 </div>
 </p>
 
@@ -314,7 +314,7 @@ len</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph.png" border="0" usemap="#mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph" alt=""/></div>
 <map name="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph" id="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="177,5,283,32"/></map>
+</map>
 </div>
 </p>
 
@@ -347,7 +347,7 @@ len</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph.png" border="0" usemap="#mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" alt=""/></div>
 <map name="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" id="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="176,43,300,69"/><area shape="rect" id="node3" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="492,93,572,120"/><area shape="rect" id="node7" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="365,93,444,120"/><area shape="rect" id="node8" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="159,144,317,171"/><area shape="rect" id="node9" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="365,245,444,272"/><area shape="rect" id="node11" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="199,245,277,272"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="626,195,786,221"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="866,195,957,221"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="840,245,983,272"/><area shape="rect" id="node10" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="620,245,792,272"/></map>
+</map>
 </div>
 </p>
 
@@ -388,7 +388,7 @@ len</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph.png" border="0" usemap="#mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph" alt=""/></div>
 <map name="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph" id="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="473,107,633,133"/><area shape="rect" id="node5" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="212,157,291,184"/><area shape="rect" id="node7" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="339,56,419,83"/><area shape="rect" id="node8" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="212,5,291,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="713,107,803,133"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="687,157,829,184"/><area shape="rect" id="node6" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="467,157,639,184"/></map>
+</map>
 </div>
 </p>
 
@@ -399,7 +399,7 @@ len</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph.png" border="0" usemap="#mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph" alt=""/></div>
 <map name="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph" id="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="212,5,317,32"/></map>
+</map>
 </div>
 </p>
 
@@ -413,7 +413,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> read_reg </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> read_reg </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *&#160;</td>
           <td class="paramname"><em>mt</em>, </td>
@@ -421,13 +421,13 @@ len</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -458,7 +458,7 @@ len</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph.png" border="0" usemap="#mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph" alt=""/></div>
 <map name="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph" id="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="132,31,304,57"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="378,5,469,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="352,56,495,83"/></map>
+</map>
 </div>
 </p>
 
@@ -469,7 +469,7 @@ len</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph.png" border="0" usemap="#mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph" alt=""/></div>
 <map name="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph" id="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,25,444,51"/><area shape="rect" id="node3" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,25,291,51"/><area shape="rect" id="node4" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="172,75,251,102"/></map>
+</map>
 </div>
 </p>
 
@@ -483,7 +483,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> read_var </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> read_var </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *&#160;</td>
           <td class="paramname"><em>mt</em>, </td>
@@ -491,19 +491,19 @@ len</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>var</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -532,7 +532,7 @@ len</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph.png" border="0" usemap="#mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph" alt=""/></div>
 <map name="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph" id="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="132,31,211,57"/><area shape="rect" id="node3" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="259,31,431,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="505,5,595,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="479,56,621,83"/></map>
+</map>
 </div>
 </p>
 
@@ -543,7 +543,7 @@ len</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph.png" border="0" usemap="#mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph" alt=""/></div>
 <map name="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph" id="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="132,5,237,32"/></map>
+</map>
 </div>
 </p>
 
@@ -565,19 +565,19 @@ len</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>val</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -608,7 +608,7 @@ len</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph.png" border="0" usemap="#mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph" alt=""/></div>
 <map name="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph" id="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="133,31,293,57"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="367,5,458,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="341,56,484,83"/></map>
+</map>
 </div>
 </p>
 
@@ -619,7 +619,7 @@ len</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph.png" border="0" usemap="#mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph" alt=""/></div>
 <map name="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph" id="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="277,27,401,54"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="467,53,572,79"/><area shape="rect" id="node4" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="260,129,419,155"/><area shape="rect" id="node5" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="133,78,212,105"/></map>
+</map>
 </div>
 </p>
 
@@ -641,25 +641,25 @@ len</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>var</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>val</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -688,7 +688,7 @@ len</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph.png" border="0" usemap="#mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph" alt=""/></div>
 <map name="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph" id="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="132,31,212,57"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="260,31,420,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="494,5,585,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="468,56,611,83"/></map>
+</map>
 </div>
 </p>
 
@@ -699,7 +699,7 @@ len</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph.png" border="0" usemap="#mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph" alt=""/></div>
 <map name="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph" id="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="149,5,273,32"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,56,444,83"/><area shape="rect" id="node4" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,107,291,133"/></map>
+</map>
 </div>
 </p>
 
@@ -795,7 +795,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line1[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line1[]</td>
         </tr>
       </table>
   </td>
@@ -824,7 +824,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line10[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line10[]</td>
         </tr>
       </table>
   </td>
@@ -853,7 +853,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line11[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line11[]</td>
         </tr>
       </table>
   </td>
@@ -882,7 +882,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line12[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line12[]</td>
         </tr>
       </table>
   </td>
@@ -911,7 +911,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line13[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line13[]</td>
         </tr>
       </table>
   </td>
@@ -937,7 +937,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line2[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line2[]</td>
         </tr>
       </table>
   </td>
@@ -966,7 +966,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line3[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line3[]</td>
         </tr>
       </table>
   </td>
@@ -995,7 +995,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line4[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line4[]</td>
         </tr>
       </table>
   </td>
@@ -1024,7 +1024,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line5[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line5[]</td>
         </tr>
       </table>
   </td>
@@ -1053,7 +1053,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line6[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line6[]</td>
         </tr>
       </table>
   </td>
@@ -1082,7 +1082,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line7[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line7[]</td>
         </tr>
       </table>
   </td>
@@ -1111,7 +1111,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line8[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line8[]</td>
         </tr>
       </table>
   </td>
@@ -1140,7 +1140,7 @@ len</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line9[]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> patch_line9[]</td>
         </tr>
       </table>
   </td>
@@ -1167,7 +1167,7 @@ len</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="mt9v117_8c.html">mt9v117.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:37 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

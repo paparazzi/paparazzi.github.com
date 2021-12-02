@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('meteo__stick__calib_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="meteo__stick__calib_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2meteo__stick__calib_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2meteo__stick__calib_8hdep" id="sw_2airborne_2modules_2meteo_2meteo__stick__calib_8hdep">
-<area shape="rect" id="node2" href="meteo__stick__calib_8c.html" title="Parser for calibration data coming from 25AA256 EEPROM of the Meteo Stick. " alt="" coords="6,95,203,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="meteo__stick__calib_8h_source.html">Go to the source code of this file.</a></p>
@@ -164,7 +164,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a690ff8701b3246c2f86ad9eda4a11b7e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo__stick__calib_8h.html#a690ff8701b3246c2f86ad9eda4a11b7e">mtostk_time_t</a></td></tr>
+<tr class="memitem:a690ff8701b3246c2f86ad9eda4a11b7e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo__stick__calib_8h.html#a690ff8701b3246c2f86ad9eda4a11b7e">mtostk_time_t</a></td></tr>
 <tr class="memdesc:a690ff8701b3246c2f86ad9eda4a11b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">time in seconds since 01/01/1970  <a href="#a690ff8701b3246c2f86ad9eda4a11b7e">More...</a><br /></td></tr>
 <tr class="separator:a690ff8701b3246c2f86ad9eda4a11b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -183,7 +183,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac30f26907ec056e5ec96f9a1fa5c6222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo__stick__calib_8h.html#ac30f26907ec056e5ec96f9a1fa5c6222">mtostk_populate_cal_from_buffer</a> (<a class="el" href="meteo__stick__calib_8h.html#structCalibration__params">Calibration_params</a> *cp, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *eeprom_buffer)</td></tr>
+<tr class="memitem:ac30f26907ec056e5ec96f9a1fa5c6222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo__stick__calib_8h.html#ac30f26907ec056e5ec96f9a1fa5c6222">mtostk_populate_cal_from_buffer</a> (<a class="el" href="meteo__stick__calib_8h.html#structCalibration__params">Calibration_params</a> *cp, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *eeprom_buffer)</td></tr>
 <tr class="memdesc:ac30f26907ec056e5ec96f9a1fa5c6222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="meteo__stick__calib_8h.html#structCalibration__params">Calibration_params</a> structure from memory buffer.  <a href="#ac30f26907ec056e5ec96f9a1fa5c6222">More...</a><br /></td></tr>
 <tr class="separator:ac30f26907ec056e5ec96f9a1fa5c6222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16afd09b27900d3cda26d5fa578ee68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo__stick__calib_8h.html#af16afd09b27900d3cda26d5fa578ee68">mtostk_get_calibrated_value</a> (<a class="el" href="meteo__stick__calib_8h.html#structCalibration__params">Calibration_params</a> *cp, <a class="el" href="meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2">Mtostk_sensors</a> type, float uncal, float temp)</td></tr>
@@ -216,13 +216,13 @@ coeffs[<a class="el" href="meteo__stick__calib_8h.html#a5a5b4608f0c18d4779b2dd69
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0fbc0156125550d13d6414ae381a4950"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a0fbc0156125550d13d6414ae381a4950"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 num_coeff</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a981b3e6221e709563ab67730b798b867"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a981b3e6221e709563ab67730b798b867"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 num_temp</td>
 <td class="fielddoc">
@@ -261,7 +261,7 @@ timestamp</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structCalibration__params__coll__graph.png" border="0" usemap="#Calibration__params_coll__map" alt="Collaboration graph"/></div>
 <map name="Calibration__params_coll__map" id="Calibration__params_coll__map">
-<area shape="rect" id="node2" href="meteo__stick__calib_8h.html#structSensors__params" title="Calibration_params structure initialized with calibvration data read from meteostick eeprom..." alt="" coords="13,5,144,32"/></map>
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
@@ -453,7 +453,7 @@ uuid[13]</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_cgraph.png" border="0" usemap="#meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_cgraph" alt=""/></div>
 <map name="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_cgraph" id="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_cgraph">
-<area shape="rect" id="node2" href="meteo__stick__calib_8c.html#a4b62e9f35fe630d5dfcb12122ac69ff4" title="mtostk_apply_polynomial" alt="" coords="492,13,676,39"/><area shape="rect" id="node3" href="meteo__stick__calib_8c.html#a83879efd4ef548b7242771ea2573ebd6" title="mtostk_apply_polynomial_temp" alt="" coords="219,38,444,65"/></map>
+</map>
 </div>
 </p>
 
@@ -464,7 +464,7 @@ uuid[13]</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_icgraph.png" border="0" usemap="#meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_icgraph" alt=""/></div>
 <map name="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_icgraph" id="meteo__stick__calib_8h_af16afd09b27900d3cda26d5fa578ee68_icgraph">
-<area shape="rect" id="node2" href="meteo__stick_8c.html#a691b609a40be0367a7314fa72694726a" title="get_diff" alt="" coords="237,56,306,83"/><area shape="rect" id="node5" href="meteo__stick_8c.html#a62b03a019029bd92128494bea2b7c4d9" title="get_humidity" alt="" coords="219,107,324,133"/><area shape="rect" id="node7" href="meteo__stick_8c.html#abe7e116c170e68316af29970c2acbc2b" title="get_pressure" alt="" coords="397,157,504,184"/><area shape="rect" id="node8" href="meteo__stick_8c.html#a2d4342c4324b71e639c69bd580c0d33c" title="get_temp" alt="" coords="229,208,313,235"/><area shape="rect" id="node3" href="meteo__stick_8c.html#a8201c4f9bdce72201dc5a5084184c72e" title="get_pitot" alt="" coords="411,5,490,32"/><area shape="rect" id="node4" href="meteo__stick_8h.html#acea026af4d67c5da57663b855fdfcd82" title="Event function. " alt="" coords="577,107,720,133"/><area shape="rect" id="node6" href="meteo__stick_8h.html#a44fbda9e381c4ee6cc86d1fb914c7d6b" title="Periodic function. " alt="" coords="372,107,529,133"/></map>
+</map>
 </div>
 </p>
 
@@ -483,7 +483,7 @@ uuid[13]</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>eeprom_buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -517,7 +517,7 @@ uuid[13]</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_cgraph.png" border="0" usemap="#meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_cgraph" alt=""/></div>
 <map name="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_cgraph" id="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_cgraph">
-<area shape="rect" id="node2" href="meteo__stick__calib_8c.html#ae610f0011cfff14d22217e40e9f07f97" title="mtostk_populate_sensor\l_from_buffer" alt="" coords="208,122,388,163"/><area shape="rect" id="node8" href="meteo__stick__calib_8c.html#a04e560e6f749743678197a9da1c782e9" title="mtostk_populate_uuid\l_from_buffer" alt="" coords="216,187,380,229"/><area shape="rect" id="node3" href="meteo__stick__calib_8c.html#ae0a26227bef12f33416f495aaa810c9f" title="fletcher32" alt="" coords="487,5,573,32"/><area shape="rect" id="node4" href="meteo__stick__calib_8c.html#a95fbbe515266ee97c289a0f33cec61d9" title="mtostk_populate_float\l_array_from_buffer" alt="" coords="447,57,613,98"/><area shape="rect" id="node5" href="meteo__stick__calib_8c.html#a708f1c47252cf9d9a0fc5aabde5bfdcd" title="mtostk_populate_uint\l_from_buffer" alt="" coords="449,122,611,163"/><area shape="rect" id="node6" href="meteo__stick__calib_8c.html#a7b209681fe3e805e9f42ccf225a12e24" title="mtostk_seek_array_buffer" alt="" coords="436,188,624,215"/><area shape="rect" id="node7" href="meteo__stick__calib_8c.html#a05177742108133c8da1cb9514a672c0a" title="mtostk_seek_scalar\l_buffer" alt="" coords="455,239,605,281"/></map>
+</map>
 </div>
 </p>
 
@@ -528,7 +528,7 @@ uuid[13]</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_icgraph.png" border="0" usemap="#meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_icgraph" alt=""/></div>
 <map name="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_icgraph" id="meteo__stick__calib_8h_ac30f26907ec056e5ec96f9a1fa5c6222_icgraph">
-<area shape="rect" id="node2" href="meteo__stick_8h.html#a44fbda9e381c4ee6cc86d1fb914c7d6b" title="Periodic function. " alt="" coords="208,13,365,39"/></map>
+</map>
 </div>
 </p>
 
@@ -540,7 +540,7 @@ uuid[13]</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="meteo__stick__calib_8h.html">meteo_stick_calib.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

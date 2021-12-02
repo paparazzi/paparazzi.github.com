@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ahrs/ahrs_gx3.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_gx3.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,32 +116,32 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8c.html','');});
 
 <p>Driver for Microstrain GX3 IMU/AHRS subsystem.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__gx3_8h_source.html">subsystems/ahrs/ahrs_gx3.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__gx3_8h_source.html">modules/ahrs/ahrs_gx3.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs_8h_source.html">modules/ahrs/ahrs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_gx3.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__gx3_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="1137,95,1299,136"/><area shape="rect" id="node31" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="643,102,785,129"/><area shape="rect" id="node32" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1823,102,1957,129"/><area shape="rect" id="node34" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1709,184,1863,225"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="619,281,758,307"/><area shape="rect" id="node16" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="757,191,890,218"/><area shape="rect" id="node19" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="790,281,857,307"/><area shape="rect" id="node21" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1075,281,1214,307"/><area shape="rect" id="node26" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2122,459,2261,486"/><area shape="rect" id="node29" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1233,191,1286,218"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="599,459,778,486"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="181,459,372,486"/><area shape="rect" id="node15" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="487,363,651,404"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="218,541,373,568"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="600,541,751,568"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="828,363,979,404"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="853,459,977,486"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1003,363,1153,404"/><area shape="rect" id="node22" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1247,370,1418,397"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1537,459,1622,486"/><area shape="rect" id="node36" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1904,273,2057,315"/><area shape="rect" id="node39" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1788,363,1941,404"/><area shape="rect" id="node41" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2429,370,2623,397"/></map>
+<div class="center"><img src="ahrs__gx3_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__gx3_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__gx3_8c" id="sw_2airborne_2modules_2ahrs_2ahrs__gx3_8c">
+</map>
 </div>
 </div>
 <p><a href="ahrs__gx3_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:adb123185d17ca930df6514216f4204cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#adb123185d17ca930df6514216f4204cc">GX3_CHKSM</a>(_ubx_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+1))|(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+0))&lt;&lt;8)</td></tr>
+<tr class="memitem:adb123185d17ca930df6514216f4204cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#adb123185d17ca930df6514216f4204cc">GX3_CHKSM</a>(_ubx_payload)&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+1))|(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+0))&lt;&lt;8)</td></tr>
 <tr class="separator:adb123185d17ca930df6514216f4204cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58804ef318ec982234146ca9a94fcc75"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a58804ef318ec982234146ca9a94fcc75">gx3_verify_chk</a> (volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff_add)</td></tr>
+<tr class="memitem:a58804ef318ec982234146ca9a94fcc75"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a58804ef318ec982234146ca9a94fcc75">gx3_verify_chk</a> (volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buff_add)</td></tr>
 <tr class="separator:a58804ef318ec982234146ca9a94fcc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80747e2f120f8cd39504d040eb31b545"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545">bef</a> (volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *c)</td></tr>
+<tr class="memitem:a80747e2f120f8cd39504d040eb31b545"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545">bef</a> (volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *c)</td></tr>
 <tr class="separator:a80747e2f120f8cd39504d040eb31b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9f6d29a049f23bc6b8a02d056a30ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a0d9f6d29a049f23bc6b8a02d056a30ed">ahrs_gx3_align</a> (void)</td></tr>
 <tr class="separator:a0d9f6d29a049f23bc6b8a02d056a30ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3128fa28e1cc09602d29510892ece14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7a83c7954119b08e90b88661889883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#acb7a83c7954119b08e90b88661889883">gx3_packet_read_message</a> (void)</td></tr>
 <tr class="separator:acb7a83c7954119b08e90b88661889883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57d29ec8ef9a33804865bedd9c578555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
+<tr class="memitem:a57d29ec8ef9a33804865bedd9c578555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="separator:a57d29ec8ef9a33804865bedd9c578555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfc031861e1be9e66e7551d2e3eef11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a1bfc031861e1be9e66e7551d2e3eef11">ahrs_gx3_init</a> (void)</td></tr>
 <tr class="separator:a1bfc031861e1be9e66e7551d2e3eef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +194,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_ubx_payload</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+1))|(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+0))&lt;&lt;8)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+1))|(<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_ubx_payload+66+0))&lt;&lt;8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -233,7 +233,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph" id="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="171,5,281,32"/></map>
+</map>
 </div>
 </p>
 
@@ -244,7 +244,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph" id="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#a52f9a66f4c1b5535ed2aa85d711be4a8" title="imu_gx3_init" alt="" coords="171,5,273,32"/></map>
+</map>
 </div>
 </p>
 
@@ -277,7 +277,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph" id="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph">
-<area shape="rect" id="node2" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="160,31,316,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="364,31,524,57"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="576,5,719,32"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="572,56,723,83"/></map>
+</map>
 </div>
 </p>
 
@@ -288,7 +288,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph" id="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5" title="ahrs_gx3_register" alt="" coords="160,5,296,32"/></map>
+</map>
 </div>
 </p>
 
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00354">354</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00327">IMU_GX3_ID</a>, and <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00343">IMU_GX3_ID</a>, and <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00369">imu_gx3_event()</a>.</p>
 
@@ -321,7 +321,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph.png" border="0" usemap="#ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph" id="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="216,5,360,32"/></map>
+</map>
 </div>
 </p>
 
@@ -332,7 +332,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph.png" border="0" usemap="#ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph" id="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="216,5,335,32"/></map>
+</map>
 </div>
 </p>
 
@@ -351,7 +351,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>: provide enable function </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>: provide enable function </dd></dl>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00341">341</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
@@ -364,7 +364,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph.png" border="0" usemap="#ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph" id="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a1bfc031861e1be9e66e7551d2e3eef11" title="ahrs_gx3_init" alt="" coords="206,31,313,57"/><area shape="rect" id="node7" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="189,81,329,108"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="377,31,533,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="581,31,741,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="793,5,936,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="789,56,940,83"/></map>
+</map>
 </div>
 </p>
 
@@ -380,7 +380,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static float bef </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -405,7 +405,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph" id="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="96,5,293,32"/><area shape="rect" id="node3" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="341,5,460,32"/></map>
+</map>
 </div>
 </p>
 
@@ -418,7 +418,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gx3_packet_parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -438,7 +438,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph" id="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a58804ef318ec982234146ca9a94fcc75" title="gx3_verify_chk" alt="" coords="192,5,307,32"/></map>
+</map>
 </div>
 </p>
 
@@ -449,7 +449,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph" id="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="192,5,309,32"/><area shape="rect" id="node3" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="357,5,476,32"/></map>
+</map>
 </div>
 </p>
 
@@ -471,7 +471,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00227">227</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00079">AhrsGX3::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00048">ahrs_gx3</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00054">bef()</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00076">AhrsGX3::chksm</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00628">float_eulers_of_rmat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00078">float_rmat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00150">float_rmat_ratemult()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00075">AhrsGX3::freq</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00040">GX3_CHKSM</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00078">AhrsGX3::ltime</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00078">FloatRMat::m</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00072">AhrsGX3::mag_offset</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00058">GX3Packet::msg_buf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00074">AhrsGX3::packet</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00080">AhrsGX3::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00081">AhrsGX3::rmat</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01099">stateSetNedToBodyRMat_f()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00077">AhrsGX3::time</a>, <a class="el" href="pprz__algebra_8h_source.html#l00189">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00079">AhrsGX3::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00048">ahrs_gx3</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00054">bef()</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00076">AhrsGX3::chksm</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00666">float_eulers_of_rmat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00078">float_rmat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00150">float_rmat_ratemult()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00075">AhrsGX3::freq</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00040">GX3_CHKSM</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00078">AhrsGX3::ltime</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00078">FloatRMat::m</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00072">AhrsGX3::mag_offset</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00058">GX3Packet::msg_buf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00074">AhrsGX3::packet</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00080">AhrsGX3::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00081">AhrsGX3::rmat</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01099">stateSetNedToBodyRMat_f()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00077">AhrsGX3::time</a>, <a class="el" href="pprz__algebra_8h_source.html#l00189">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00369">imu_gx3_event()</a>.</p>
 
@@ -482,7 +482,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph.png" border="0" usemap="#ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph" id="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545" title="bef" alt="" coords="329,5,371,32"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="273,56,427,83"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="285,107,415,133"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="275,157,425,184"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="271,208,429,235"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="272,259,428,285"/><area shape="rect" id="node10" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="251,309,449,336"/><area shape="rect" id="node12" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="255,360,445,387"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="498,208,659,235"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="708,208,851,235"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="497,309,660,336"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="501,360,657,387"/></map>
+</map>
 </div>
 </p>
 
@@ -493,7 +493,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph.png" border="0" usemap="#ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph" id="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="251,5,369,32"/></map>
+</map>
 </div>
 </p>
 
@@ -509,7 +509,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static bool gx3_verify_chk </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buff_add</em></td><td>)</td>
           <td></td>
         </tr>
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a58804ef318ec982234146ca9a94fcc75_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a58804ef318ec982234146ca9a94fcc75_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a58804ef318ec982234146ca9a94fcc75_icgraph" id="ahrs__gx3_8c_a58804ef318ec982234146ca9a94fcc75_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#a57d29ec8ef9a33804865bedd9c578555" title="gx3_packet_parse" alt="" coords="168,5,307,32"/><area shape="rect" id="node3" href="ahrs__gx3_8c.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="355,5,472,32"/><area shape="rect" id="node4" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="520,5,639,32"/></map>
+</map>
 </div>
 </p>
 
@@ -565,7 +565,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_aa9304b3a64697b585311bf38a4dc24ff_cgraph.png" border="0" usemap="#ahrs__gx3_8c_aa9304b3a64697b585311bf38a4dc24ff_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_aa9304b3a64697b585311bf38a4dc24ff_cgraph" id="ahrs__gx3_8c_aa9304b3a64697b585311bf38a4dc24ff_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#afbfe8456fbba20baed2c37ceff265aae" title="ahrs_gx3_publish_imu" alt="" coords="189,107,352,133"/><area shape="rect" id="node4" href="ahrs__gx3_8c.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="172,259,369,285"/><area shape="rect" id="node17" href="ahrs__gx3_8c.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="212,487,329,513"/><area shape="rect" id="node18" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="443,461,590,488"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="445,5,589,32"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545" title="bef" alt="" coords="495,56,538,83"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="440,107,593,133"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="451,157,582,184"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="441,208,592,235"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="438,259,595,285"/><area shape="rect" id="node12" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="439,309,595,336"/><area shape="rect" id="node13" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="417,360,616,387"/><area shape="rect" id="node15" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="421,411,612,437"/><area shape="rect" id="node10" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="665,259,826,285"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="875,259,1017,285"/><area shape="rect" id="node14" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="664,360,827,387"/><area shape="rect" id="node16" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="667,411,823,437"/><area shape="rect" id="node19" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555" title="gx3_packet_parse" alt="" coords="447,512,586,539"/><area shape="rect" id="node21" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="471,563,562,589"/><area shape="rect" id="node20" href="ahrs__gx3_8c.html#a58804ef318ec982234146ca9a94fcc75" title="gx3_verify_chk" alt="" coords="688,512,803,539"/></map>
+</map>
 </div>
 </p>
 
@@ -596,7 +596,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a52f9a66f4c1b5535ed2aa85d711be4a8_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a52f9a66f4c1b5535ed2aa85d711be4a8_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a52f9a66f4c1b5535ed2aa85d711be4a8_cgraph" id="ahrs__gx3_8c_a52f9a66f4c1b5535ed2aa85d711be4a8_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a0d9f6d29a049f23bc6b8a02d056a30ed" title="ahrs_gx3_align" alt="" coords="196,5,313,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="401,31,512,57"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="156,107,353,133"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a2f543012bc2b5087ccf9156f4412c110" title="send_gx3" alt="" coords="213,157,296,184"/></map>
+</map>
 </div>
 </p>
 
@@ -636,6 +636,19 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00351">351</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
+<p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00136">imu_mpu_spi_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, and <a class="el" href="navdata_8c_source.html#l00329">navdata_publish_imu()</a>.</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph" id="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph">
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a8d63b0a61c8ffe88dd15b40843b1ae1d"></a>
@@ -653,6 +666,19 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00350">350</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+
+<p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00136">imu_mpu_spi_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, and <a class="el" href="navdata_8c_source.html#l00329">navdata_publish_imu()</a>.</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" id="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph">
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -672,16 +698,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00352">352</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00085">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00070">mag_pitot_parse_msg()</a>, and <a class="el" href="navdata_8c_source.html#l00326">navdata_publish_imu()</a>.</p>
+<p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00085">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00070">mag_pitot_parse_msg()</a>, <a class="el" href="mag__rm3100_8c_source.html#l00093">mag_rm3100_module_event()</a>, <a class="el" href="navdata_8c_source.html#l00329">navdata_publish_imu()</a>, and <a class="el" href="gps__datalink_8c_source.html#l00070">send_magnetometer()</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" id="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph">
-<area shape="rect" id="node2" href="imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title="handle_ins_msg" alt="" coords="199,5,324,32"/><area shape="rect" id="node4" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="189,56,333,83"/><area shape="rect" id="node5" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="188,107,335,133"/><area shape="rect" id="node6" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="192,157,331,184"/><area shape="rect" id="node7" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="180,208,343,235"/><area shape="rect" id="node8" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="193,259,329,285"/><area shape="rect" id="node9" href="imu__disco_8h.html#af4556078aa1856220d57e9f6d92c6e28" title="Handle all the events of the Disco IMU components. " alt="" coords="197,309,326,336"/><area shape="rect" id="node10" href="imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="189,360,334,387"/><area shape="rect" id="node11" href="imu__gl1_8h.html#accca4f4c7d6f0ecd6cd6f210818c4b1b" title="imu_gl1_event" alt="" coords="204,411,319,437"/><area shape="rect" id="node12" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="192,461,331,488"/><area shape="rect" id="node13" href="imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="196,512,327,539"/><area shape="rect" id="node14" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="183,563,340,589"/><area shape="rect" id="node15" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="181,613,341,640"/><area shape="rect" id="node16" href="imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="194,664,329,691"/><area shape="rect" id="node17" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="191,715,332,741"/><area shape="rect" id="node18" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title="imu_nps_event" alt="" coords="202,765,321,792"/><area shape="rect" id="node19" href="imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="190,816,333,843"/><area shape="rect" id="node20" href="imu__px4fmu__v2_84_8h.html#adc3f36e2267ea507426576f9b338c714" title="imu_px4_event" alt="" coords="202,867,321,893"/><area shape="rect" id="node21" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="189,917,333,944"/><area shape="rect" id="node22" href="mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="176,969,347,1010"/><area shape="rect" id="node23" href="mag__ist8310_8h.html#a9fadf88e2588ae73f42deaea5db87ee8" title="mag_ist8310_module\l_event" alt="" coords="181,1034,341,1075"/><area shape="rect" id="node24" href="mag__lis3mdl_8h.html#a8c19f6525e337de402148b12623deaed" title="mag_lis3mdl_module\l_event" alt="" coords="182,1099,341,1141"/><area shape="rect" id="node25" href="mag__pitot__uart_8c.html#a507efea07b8c1b9e6094e6895f931b87" title="mag_pitot_parse_msg" alt="" coords="179,1165,344,1192"/><area shape="rect" id="node27" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="183,1216,340,1243"/><area shape="rect" id="node3" href="imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title="imu_xsens_event" alt="" coords="395,5,528,32"/><area shape="rect" id="node26" href="mag__pitot__uart_8h.html#aac788d30836b603e187ffb4f8fdcf1c6" title="mag_pitot_event" alt="" coords="396,1165,527,1192"/><area shape="rect" id="node28" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="398,1216,525,1243"/></map>
+</map>
 </div>
 </p>
 
@@ -715,25 +741,25 @@ Variables</h2></td></tr>
 
 <p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00369">imu_gx3_event()</a>.</p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_cgraph" id="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_cgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555" title="gx3_packet_parse" alt="" coords="175,5,313,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="171,56,317,83"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="199,107,289,133"/><area shape="rect" id="node3" href="ahrs__gx3_8c.html#a58804ef318ec982234146ca9a94fcc75" title="gx3_verify_chk" alt="" coords="365,5,480,32"/></map>
+</map>
 </div>
 </p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_icgraph" id="ahrs__gx3_8c_a7d7b981270fa60a248894025e1791de6_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#aa9304b3a64697b585311bf38a4dc24ff" title="imu_gx3_event" alt="" coords="171,5,289,32"/></map>
+</map>
 </div>
 </p>
 
@@ -777,14 +803,14 @@ Variables</h2></td></tr>
 
 <p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00107">imu_gx3_init()</a>.</p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a2f543012bc2b5087ccf9156f4412c110_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a2f543012bc2b5087ccf9156f4412c110_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a2f543012bc2b5087ccf9156f4412c110_icgraph" id="ahrs__gx3_8c_a2f543012bc2b5087ccf9156f4412c110_icgraph">
-<area shape="rect" id="node2" href="ahrs__gx3_8h.html#a52f9a66f4c1b5535ed2aa85d711be4a8" title="imu_gx3_init" alt="" coords="136,5,239,32"/></map>
+</map>
 </div>
 </p>
 
@@ -815,8 +841,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__gx3_8c.html">ahrs_gx3.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__gx3_8c.html">ahrs_gx3.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

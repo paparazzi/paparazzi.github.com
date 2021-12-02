@@ -1,6 +1,7 @@
 var px4flow_8h =
 [
     [ "mavlink_optical_flow", "px4flow_8h.html#structmavlink__optical__flow", [
+      [ "distance", "px4flow_8h.html#a318cdf1fbbdad1f92122f930ada64d02", null ],
       [ "flow_comp_m_x", "px4flow_8h.html#a852d6712215d6177fd30a9d36057491a", null ],
       [ "flow_comp_m_y", "px4flow_8h.html#a96c43be0f2fb564c0a3e31dba33073ef", null ],
       [ "flow_x", "px4flow_8h.html#ac3af873a9d5c3dc6ce0e1863d82d9140", null ],

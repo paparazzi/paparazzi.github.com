@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,9 +161,6 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>__enable_irq()
 : <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">i2c_arch.c</a>
 </li>
-<li>__get_cpsr()
-: <a class="el" href="armVIC_8c.html#a07a90dd2662e1a51c45600eccd2661c4">armVIC.c</a>
-</li>
 <li>__real_gpio_clear()
 : <a class="el" href="gpio__ext__common_8c.html#abfacfb77b7ec97c101b77ca3fb10dbe0">gpio_ext_common.c</a>
 </li>
@@ -181,9 +178,6 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </li>
 <li>__real_gpio_toggle()
 : <a class="el" href="gpio__ext__common_8c.html#ad03603a15c1185abe32e2bf0f278f082">gpio_ext_common.c</a>
-</li>
-<li>__set_cpsr()
-: <a class="el" href="armVIC_8c.html#a2695574f2b9c353bb88ce1239a0ab9ec">armVIC.c</a>
 </li>
 <li>__wrap_gpio_clear()
 : <a class="el" href="gpio__ext__common_8c.html#af08b697f3babbbe6da3dd0e369db962c">gpio_ext_common.c</a>
@@ -240,6 +234,18 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>_kill()
 : <a class="el" href="pprz__syscalls_8c.html#ae47169369e6a23386a0d453c8b728f06">pprz_syscalls.c</a>
 </li>
+<li>_led_off()
+: <a class="el" href="sim_2led__hw_8h.html#a7c1ace06f3ca4d5712b23671a38424bc">led_hw.h</a>
+, <a class="el" href="sim_2led__hw_8c.html#a7c1ace06f3ca4d5712b23671a38424bc">led_hw.c</a>
+</li>
+<li>_led_on()
+: <a class="el" href="sim_2led__hw_8h.html#a72d6c5ad3334b9f845e8a94ad99af511">led_hw.h</a>
+, <a class="el" href="sim_2led__hw_8c.html#a72d6c5ad3334b9f845e8a94ad99af511">led_hw.c</a>
+</li>
+<li>_led_toggle()
+: <a class="el" href="sim_2led__hw_8c.html#ac98d41371c59f9a31460cd5137460f7d">led_hw.c</a>
+, <a class="el" href="sim_2led__hw_8h.html#ac98d41371c59f9a31460cd5137460f7d">led_hw.h</a>
+</li>
 <li>_lseek_r()
 : <a class="el" href="pprz__syscalls_8c.html#a029e46e3fb9ea7ae9c2e1fe82ac81460">pprz_syscalls.c</a>
 </li>
@@ -267,7 +273,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

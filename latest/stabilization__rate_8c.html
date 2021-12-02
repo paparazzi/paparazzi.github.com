@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,10 +120,10 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c.html','');});
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization__rate_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_rate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html">firmwares/rotorcraft/autopilot_rc_helpers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_rate.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c">
-<area shape="rect" id="node3" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="980,213,1128,255"/><area shape="rect" id="node5" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts. " alt="" coords="179,109,361,165"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="562,124,629,151"/><area shape="rect" id="node20" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="822,124,961,151"/><area shape="rect" id="node21" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1304,221,1503,247"/><area shape="rect" id="node27" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="1227,117,1393,158"/><area shape="rect" id="node28" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1575,117,1728,158"/><area shape="rect" id="node6" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="135,310,325,337"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="225,392,342,419"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="605,310,783,337"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="463,213,613,255"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="288,213,439,255"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="689,213,853,255"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="621,392,772,419"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="401,310,525,337"/><area shape="rect" id="node22" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1449,310,1502,337"/><area shape="rect" id="node24" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1577,310,1673,337"/><area shape="rect" id="node25" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1583,392,1669,419"/><area shape="rect" id="node29" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2379,392,2518,419"/><area shape="rect" id="node33" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1748,213,1901,255"/><area shape="rect" id="node36" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1748,303,1901,344"/><area shape="rect" id="node38" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2285,310,2479,337"/></map>
+</map>
 </div>
 </div>
 <p><a href="stabilization__rate_8c_source.html">Go to the source code of this file.</a></p>
@@ -480,7 +480,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph.png" border="0" usemap="#stabilization__rate_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph" id="stabilization__rate_8c_aa7683726c8b977e5b4bf8206ece55102_icgraph">
-<area shape="rect" id="node2" href="stabilization__rate_8h.html#afe4783ecccebfb6cfe611d7f248801c2" title="Initialize rate controller. " alt="" coords="140,5,297,32"/></map>
+</map>
 </div>
 </p>
 
@@ -511,7 +511,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph.png" border="0" usemap="#stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph" id="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="184,13,385,39"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="433,13,624,39"/></map>
+</map>
 </div>
 </p>
 
@@ -560,7 +560,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph.png" border="0" usemap="#stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph" id="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__h_8h.html#a1ad9b20a107ab0ded48adde7adb6fed0" title="guidance_h_read_rc" alt="" coords="184,42,335,69"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="403,5,545,47"/><area shape="rect" id="node4" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading..." alt="" coords="383,71,565,98"/><area shape="rect" id="node5" href="ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="616,46,688,73"/><area shape="rect" id="node7" href="ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="613,97,691,123"/><area shape="rect" id="node6" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title="ins_ekf2_init" alt="" coords="739,71,839,98"/></map>
+</map>
 </div>
 </p>
 
@@ -591,7 +591,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph.png" border="0" usemap="#stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph" id="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__h_8h.html#a1ad9b20a107ab0ded48adde7adb6fed0" title="guidance_h_read_rc" alt="" coords="236,42,387,69"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="455,5,597,47"/><area shape="rect" id="node4" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading..." alt="" coords="435,71,617,98"/><area shape="rect" id="node5" href="ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="668,46,740,73"/><area shape="rect" id="node7" href="ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="665,97,743,123"/><area shape="rect" id="node6" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title="ins_ekf2_init" alt="" coords="791,71,891,98"/></map>
+</map>
 </div>
 </p>
 
@@ -622,7 +622,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_acfa2e0820b52aea2dce670dd9295b540_icgraph.png" border="0" usemap="#stabilization__rate_8c_acfa2e0820b52aea2dce670dd9295b540_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_acfa2e0820b52aea2dce670dd9295b540_icgraph" id="stabilization__rate_8c_acfa2e0820b52aea2dce670dd9295b540_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="212,5,335,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="383,5,560,32"/></map>
+</map>
 </div>
 </p>
 
@@ -715,7 +715,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__rate_8c.html">stabilization_rate.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

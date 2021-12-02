@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ahrs/ahrs_vectornav.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_vectornav.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,19 +112,19 @@ $(document).ready(function(){initNavTree('ahrs__vectornav_8c.html','');});
 <div class="title">ahrs_vectornav.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__vectornav_8h_source.html">subsystems/ahrs/ahrs_vectornav.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs__vectornav__wrapper_8h_source.html">subsystems/ahrs/ahrs_vectornav_wrapper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__vectornav_8h_source.html">modules/ahrs/ahrs_vectornav.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs__vectornav__wrapper_8h_source.html">modules/ahrs/ahrs_vectornav_wrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_vectornav.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__vectornav_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__vectornav_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__vectornav_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__vectornav_8c">
-<area shape="rect" id="node2" href="ahrs__vectornav_8h.html" title="Vectornav VN&#45;200 as AHRS. " alt="" coords="759,184,921,225"/><area shape="rect" id="node26" href="ahrs__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 as AHRS. " alt="" coords="759,95,921,136"/><area shape="rect" id="node27" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="997,102,1131,129"/><area shape="rect" id="node29" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1136,281,1203,307"/><area shape="rect" id="node30" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2146,273,2299,315"/><area shape="rect" id="node3" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="515,281,704,307"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="173,541,328,568"/><area shape="rect" id="node12" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1327,363,1478,404"/><area shape="rect" id="node17" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="369,459,559,486"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="615,363,766,404"/><area shape="rect" id="node21" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="892,370,1063,397"/><area shape="rect" id="node25" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1087,363,1251,404"/><area shape="rect" id="node5" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2484,541,2623,568"/><area shape="rect" id="node20" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="24,541,149,568"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="971,459,1095,486"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1481,459,1621,486"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1470,541,1621,568"/><area shape="rect" id="node22" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1320,459,1405,486"/><area shape="rect" id="node32" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2146,363,2299,404"/><area shape="rect" id="node36" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1797,452,1950,493"/><area shape="rect" id="node38" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2026,459,2219,486"/></map>
+<div class="center"><img src="ahrs__vectornav_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__vectornav_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__vectornav_8c" id="sw_2airborne_2modules_2ahrs_2ahrs__vectornav_8c">
+</map>
 </div>
 </div>
 <p><a href="ahrs__vectornav_8c_source.html">Go to the source code of this file.</a></p>
@@ -167,7 +167,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__vectornav_8c_source.html#l00068">68</a> of file <a class="el" href="ahrs__vectornav_8c_source.html">ahrs_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::accel</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00056">AhrsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00062">ahrs_vectornav_is_enabled()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00125">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="vn200__serial_8h_source.html#l00090">VNData::gyro</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00057">AhrsVectornav::gyro_i</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00343">IMU_VECTORNAV_ID</a>, <a class="el" href="vn200__serial_8h_source.html#l00063">VNPacket::msg_available</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="vn200__serial_8c_source.html#l00110">vn200_event()</a>, <a class="el" href="vn200__serial_8c_source.html#l00180">vn200_read_message()</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00049">AhrsVectornav::vn_packet</a>.</p>
+<p>References <a class="el" href="vn200__serial_8h_source.html#l00089">VNData::accel</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00056">AhrsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00801">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00062">ahrs_vectornav_is_enabled()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00125">ahrs_vectornav_propagate()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00033">ahrs_vn</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="vn200__serial_8h_source.html#l00090">VNData::gyro</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00057">AhrsVectornav::gyro_i</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00359">IMU_VECTORNAV_ID</a>, <a class="el" href="vn200__serial_8h_source.html#l00063">VNPacket::msg_available</a>, <a class="el" href="pprz__algebra_8h_source.html#l00765">RATES_BFP_OF_REAL</a>, <a class="el" href="vn200__serial_8c_source.html#l00110">vn200_event()</a>, <a class="el" href="vn200__serial_8c_source.html#l00180">vn200_read_message()</a>, <a class="el" href="ahrs__vectornav_8h_source.html#l00050">AhrsVectornav::vn_data</a>, and <a class="el" href="ahrs__vectornav_8h_source.html#l00049">AhrsVectornav::vn_packet</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -176,7 +176,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_a36bc2168f7e5f7d7a416978206b62098_cgraph.png" border="0" usemap="#ahrs__vectornav_8c_a36bc2168f7e5f7d7a416978206b62098_cgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_a36bc2168f7e5f7d7a416978206b62098_cgraph" id="ahrs__vectornav_8c_a36bc2168f7e5f7d7a416978206b62098_cgraph">
-<area shape="rect" id="node2" href="ahrs__vectornav__wrapper_8c.html#a32bbfa5ae17900bd2aef1cc4d47ae02f" title="ahrs_vectornav_is_enabled" alt="" coords="216,107,411,133"/><area shape="rect" id="node3" href="ahrs__vectornav_8c.html#a372720f51165cb35510d524d12881555" title="Read received data. " alt="" coords="217,157,410,184"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="241,208,385,235"/><area shape="rect" id="node13" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="261,259,365,285"/><area shape="rect" id="node20" href="vn200__serial_8c.html#a13f1a793a1a690aa4ff89764262c3644" title="Read received message and populate data struct with new measurements. " alt="" coords="232,360,395,387"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="479,5,629,32"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="475,56,633,83"/><area shape="rect" id="node8" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="476,107,632,133"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="479,157,629,184"/><area shape="rect" id="node10" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="459,208,649,235"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="697,56,859,83"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="907,56,1049,83"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="701,208,855,235"/><area shape="rect" id="node14" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="705,259,851,285"/><area shape="rect" id="node15" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="483,309,625,336"/><area shape="rect" id="node16" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="733,309,823,336"/><area shape="rect" id="node17" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="726,360,830,387"/><area shape="rect" id="node18" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="935,360,1021,387"/><area shape="rect" id="node19" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="1097,360,1201,387"/><area shape="rect" id="node21" href="vn200__serial_8c.html#a8691ed20ea97b2e193d9daf4501799bd" title="Check INS status. " alt="" coords="478,360,630,387"/><area shape="rect" id="node22" href="vn200__serial_8c.html#a43111461bc87c4acc7776c1066392596" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="476,411,632,453"/></map>
+</map>
 </div>
 </p>
 
@@ -211,7 +211,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_cgraph.png" border="0" usemap="#ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_cgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_cgraph" id="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="200,5,397,32"/><area shape="rect" id="node3" href="ahrs__vectornav_8c.html#acf9e77d2ea5dca2b0ecbb660edc513c4" title="send_vn_info" alt="" coords="246,56,351,83"/></map>
+</map>
 </div>
 </p>
 
@@ -222,7 +222,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_icgraph.png" border="0" usemap="#ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_icgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_icgraph" id="ahrs__vectornav_8c_a9bb0623445b9bc979f54088663e1defb_icgraph">
-<area shape="rect" id="node2" href="ahrs__vectornav__wrapper_8h.html#a67821e4f24335d5924bdb33a11c661e0" title="ahrs_vectornav_register" alt="" coords="200,5,376,32"/></map>
+</map>
 </div>
 </p>
 
@@ -257,7 +257,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_cgraph.png" border="0" usemap="#ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_cgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_cgraph" id="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_cgraph">
-<area shape="rect" id="node2" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="267,5,417,32"/><area shape="rect" id="node3" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="267,56,417,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="263,107,421,133"/><area shape="rect" id="node7" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="264,157,420,184"/><area shape="rect" id="node8" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="247,208,437,235"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="485,107,647,133"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="695,107,837,133"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="489,208,643,235"/></map>
+</map>
 </div>
 </p>
 
@@ -268,7 +268,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_icgraph.png" border="0" usemap="#ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_icgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_icgraph" id="ahrs__vectornav_8c_a372720f51165cb35510d524d12881555_icgraph">
-<area shape="rect" id="node2" href="ahrs__vectornav_8h.html#a36bc2168f7e5f7d7a416978206b62098" title="Event handling for Vectornav. " alt="" coords="247,5,409,32"/></map>
+</map>
 </div>
 </p>
 
@@ -319,7 +319,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph.png" border="0" usemap="#ahrs__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph" alt=""/></div>
 <map name="ahrs__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph" id="ahrs__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph">
-<area shape="rect" id="node2" href="ahrs__vectornav_8h.html#a9bb0623445b9bc979f54088663e1defb" title="Initialize Vectornav struct. " alt="" coords="159,5,305,32"/><area shape="rect" id="node3" href="ahrs__vectornav__wrapper_8h.html#a67821e4f24335d5924bdb33a11c661e0" title="ahrs_vectornav_register" alt="" coords="353,5,529,32"/></map>
+</map>
 </div>
 </p>
 
@@ -347,8 +347,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__vectornav_8c.html">ahrs_vectornav.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__vectornav_8c.html">ahrs_vectornav.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

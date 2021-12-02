@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('light_8c_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led_8h.html">led.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="light_8h.html#a3f7ea03b21bbece9eb5773417c54e321">   27</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="light_8c.html#a3f7ea03b21bbece9eb5773417c54e321">strobe_light_mode</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="light_8h.html#a962fa9264e0a28d3b4d19b3643c8e94c">   28</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="light_8c.html#a962fa9264e0a28d3b4d19b3643c8e94c">nav_light_mode</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="light_8h.html#a3f7ea03b21bbece9eb5773417c54e321">   27</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="light_8c.html#a3f7ea03b21bbece9eb5773417c54e321">strobe_light_mode</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="light_8h.html#a962fa9264e0a28d3b4d19b3643c8e94c">   28</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="light_8c.html#a962fa9264e0a28d3b4d19b3643c8e94c">nav_light_mode</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef LIGHT_LED_STROBE</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="light_8c.html#a4b7458780574fd74d37dbe62a9bc35b1">   31</a></span>&#160;<span class="preprocessor">#define LIGHT_LED_STROBE 2</span></div>
@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('light_8c_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="light_8h.html#a5267e55a40ef7b674823f8d6c248f58c">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="light_8c.html#a5267e55a40ef7b674823f8d6c248f58c">periodic_light</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a> = 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifdef LIGHT_LED_NAV</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> counter_nav = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> counter_nav = 0;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="light_8c.html#a3f7ea03b21bbece9eb5773417c54e321">strobe_light_mode</a>) {</div>
@@ -252,17 +252,17 @@ $(document).ready(function(){initNavTree('light_8c_source.html','');});
 <div class="ttc" id="light_8c_html_a7b7eb7f40d7931b786762fd4a1fbcb04"><div class="ttname"><a href="light_8c.html#a7b7eb7f40d7931b786762fd4a1fbcb04">STROBE_LIGHT_MODE_DEFAULT</a></div><div class="ttdeci">#define STROBE_LIGHT_MODE_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="light_8c_source.html#l00035">light.c:35</a></div></div>
 <div class="ttc" id="avoid__navigation_8c_html_aaec3cd97712876a5e9ff70559b1fca26"><div class="ttname"><a href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a></div><div class="ttdeci">int32_t counter</div><div class="ttdef"><b>Definition:</b> <a href="avoid__navigation_8c_source.html#l00055">avoid_navigation.c:55</a></div></div>
 <div class="ttc" id="light_8c_html_a819dc9b7f65e708978374f3065c7a6ef"><div class="ttname"><a href="light_8c.html#a819dc9b7f65e708978374f3065c7a6ef">init_light</a></div><div class="ttdeci">void init_light(void)</div><div class="ttdef"><b>Definition:</b> <a href="light_8c_source.html#l00043">light.c:43</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
 <div class="ttc" id="chibios_2led__hw_8h_html_a3ab823c4004d96d154dfb8f69d18c47a"><div class="ttname"><a href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a></div><div class="ttdeci">#define LED_ON(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
 <div class="ttc" id="light_8c_html_a3f7ea03b21bbece9eb5773417c54e321"><div class="ttname"><a href="light_8c.html#a3f7ea03b21bbece9eb5773417c54e321">strobe_light_mode</a></div><div class="ttdeci">uint8_t strobe_light_mode</div><div class="ttdef"><b>Definition:</b> <a href="light_8c_source.html#l00027">light.c:27</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_802df40992caaa23f4b723bcb0bc8bd1.html">light</a></li><li class="navelem"><a class="el" href="light_8c.html">light.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/imu/imu_bebop.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/imu/imu_bebop.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,17 +116,17 @@ $(document).ready(function(){initNavTree('imu__bebop_8c.html','');});
 
 <p>Driver for the Bebop (2) magnetometer, accelerometer and gyroscope.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_bebop.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu__bebop_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__bebop_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2imu_2imu__bebop_8c" id="sw_2airborne_2subsystems_2imu_2imu__bebop_8c">
-<area shape="rect" id="node2" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="368,95,507,121"/><area shape="rect" id="node15" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="653,95,787,121"/><area shape="rect" id="node17" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="71,95,201,121"/><area shape="rect" id="node3" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="168,259,347,285"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="583,259,774,285"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="295,169,459,211"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="421,333,576,360"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="195,333,346,360"/></map>
+<div class="center"><img src="imu__bebop_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__bebop_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2imu_2imu__bebop_8c" id="sw_2airborne_2modules_2imu_2imu__bebop_8c">
+</map>
 </div>
 </div>
 <p><a href="imu__bebop_8c_source.html">Go to the source code of this file.</a></p>
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__bebop_8c_source.html#l00112">112</a> of file <a class="el" href="imu__bebop_8c_source.html">imu_bebop.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="imu__bebop_8h_source.html#l00075">ImuBebop::ak</a>, <a class="el" href="ak8963_8c_source.html#l00095">ak8963_event()</a>, <a class="el" href="ak8963_8h.html#ad8f73a4cf72e953dbfcdff86d2c463a4">Ak8963::data</a>, <a class="el" href="mpu60x0__i2c_8h.html#a2909e7b19788c2593a6865d3b51bc097">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="mpu60x0__i2c_8h.html#a629e665f4f43856f69756edc59364c9c">Mpu60x0_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__bebop_8c_source.html#l00069">imu_bebop</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00275">IMU_BOARD_ID</a>, <a class="el" href="imu__vectornav_8c_source.html#l00044">imu_scale_accel()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00043">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="imu__bebop_8c_source.html#l00066">imu_to_mag_bebop</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="imu__bebop_8h_source.html#l00074">ImuBebop::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="imu__bebop_8h_source.html#l00075">ImuBebop::ak</a>, <a class="el" href="ak8963_8c_source.html#l00095">ak8963_event()</a>, <a class="el" href="ak8963_8h.html#a5c21b9f46beda5078b1a566dc1f02503">Ak8963::data</a>, <a class="el" href="mpu60x0__i2c_8h.html#a333b2641dd51ec2fd49a32d518823501">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="mpu60x0__i2c_8h.html#a74cba6c0bd51534b177488bce3939fe7">Mpu60x0_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__bebop_8c_source.html#l00069">imu_bebop</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00291">IMU_BOARD_ID</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00352">imu_scale_mag()</a>, <a class="el" href="imu__bebop_8c_source.html#l00066">imu_to_mag_bebop</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="imu__bebop_8h_source.html#l00074">ImuBebop::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bebop_8c_abf59a3c40b631f23435da34574ce0197_cgraph.png" border="0" usemap="#imu__bebop_8c_abf59a3c40b631f23435da34574ce0197_cgraph" alt=""/></div>
 <map name="imu__bebop_8c_abf59a3c40b631f23435da34574ce0197_cgraph" id="imu__bebop_8c_abf59a3c40b631f23435da34574ce0197_cgraph">
-<area shape="rect" id="node2" href="ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title="ak8963_event" alt="" coords="211,5,323,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="195,56,339,83"/><area shape="rect" id="node6" href="imu__vectornav_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="204,107,331,133"/><area shape="rect" id="node7" href="imu__vectornav_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="207,157,328,184"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="206,208,329,235"/><area shape="rect" id="node9" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix. " alt="" coords="200,259,335,285"/><area shape="rect" id="node10" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="192,309,343,336"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="189,361,345,388"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="663,100,777,127"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="855,127,945,153"/><area shape="rect" id="node11" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="393,153,585,180"/><area shape="rect" id="node13" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="407,308,572,335"/><area shape="rect" id="node12" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="669,152,771,179"/><area shape="rect" id="node14" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="633,297,807,338"/><area shape="rect" id="node16" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="409,361,569,388"/><area shape="rect" id="node17" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="647,363,793,389"/></map>
+</map>
 </div>
 </p>
 
@@ -258,7 +258,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bebop_8c_aa31cb19c5b495495b851bd6ff07d2c36_cgraph.png" border="0" usemap="#imu__bebop_8c_aa31cb19c5b495495b851bd6ff07d2c36_cgraph" alt=""/></div>
 <map name="imu__bebop_8c_aa31cb19c5b495495b851bd6ff07d2c36_cgraph" id="imu__bebop_8c_aa31cb19c5b495495b851bd6ff07d2c36_cgraph">
-<area shape="rect" id="node2" href="ak8963_8c.html#adb7f10e2449b9ef0f5c1ffc25cbd43a3" title="Initialize AK8963 struct. " alt="" coords="206,5,301,32"/><area shape="rect" id="node3" href="mpu60x0__i2c_8c.html#a18c3145fc5159f824a0bb9c6e327ede0" title="mpu60x0_i2c_init" alt="" coords="187,56,320,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="172,107,335,133"/><area shape="rect" id="node4" href="mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title="mpu60x0_set_default\l_config" alt="" coords="383,49,543,90"/></map>
+</map>
 </div>
 </p>
 
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bebop_8c_aa2e0dd97234c855b85f5cbf27b27f58e_cgraph.png" border="0" usemap="#imu__bebop_8c_aa2e0dd97234c855b85f5cbf27b27f58e_cgraph" alt=""/></div>
 <map name="imu__bebop_8c_aa2e0dd97234c855b85f5cbf27b27f58e_cgraph" id="imu__bebop_8c_aa2e0dd97234c855b85f5cbf27b27f58e_cgraph">
-<area shape="rect" id="node2" href="ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="223,56,349,83"/><area shape="rect" id="node8" href="mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea" title="convenience function: read or start configuration if not already initialized " alt="" coords="204,107,368,133"/><area shape="rect" id="node3" href="ak8963_8h.html#a107fc3165a9b7b31132e929df9098dd7" title="ak8963_configure" alt="" coords="703,5,838,32"/><area shape="rect" id="node6" href="ak8963_8h.html#adfac2f0ad8cc1dd43748e5a850139c0c" title="ak8963_read" alt="" coords="469,56,574,83"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="951,5,1052,32"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="1136,31,1227,57"/><area shape="rect" id="node7" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="714,56,827,83"/><area shape="rect" id="node9" href="mpu60x0__i2c_8h.html#af4a339056cedb3db951f3d042a509866" title="mpu60x0_i2c_read" alt="" coords="450,107,593,133"/><area shape="rect" id="node10" href="mpu60x0__i2c_8h.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="416,157,627,184"/><area shape="rect" id="node11" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="675,107,867,133"/><area shape="rect" id="node12" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="688,157,853,184"/><area shape="rect" id="node13" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="915,150,1088,191"/></map>
+</map>
 </div>
 </p>
 
@@ -340,8 +340,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__bebop_8c.html">imu_bebop.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__bebop_8c.html">imu_bebop.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

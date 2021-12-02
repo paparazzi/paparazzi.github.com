@@ -5,6 +5,7 @@ var rotorcraft_2navigation_8h =
     [ "CloseRadAngles", "rotorcraft_2navigation_8h.html#ab4fd74f9040282b0ffd4ca833a18ccdf", null ],
     [ "GetAltRef", "rotorcraft_2navigation_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "rotorcraft_2navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
+    [ "GetPosHeight", "rotorcraft_2navigation_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96", null ],
     [ "GetPosX", "rotorcraft_2navigation_8h.html#ac500a50330425cb4a3054774289bb205", null ],
     [ "GetPosY", "rotorcraft_2navigation_8h.html#a10961173ac6973d795af2f62eb67edca", null ],
     [ "HORIZONTAL_MODE_ATTITUDE", "rotorcraft_2navigation_8h.html#a30b84135f7785b38ae71f5e29577aa02", null ],

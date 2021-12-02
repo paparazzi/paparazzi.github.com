@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/modules/ins/ahrs_chimu_uart.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_chimu_uart.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,20 +114,20 @@ $(document).ready(function(){initNavTree('ahrs__chimu__uart_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps_8h_source.html">modules/gps/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs_8h_source.html">modules/ahrs/ahrs.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ins__module_8h_source.html">ins_module.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu__chimu_8h_source.html">imu_chimu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ins__module_8h_source.html">modules/ins/ins_module.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu__chimu_8h_source.html">modules/ins/imu_chimu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_chimu_uart.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__uart_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ahrs__chimu__uart_8c" alt=""/></div>
-<map name="sw_2airborne_2modules_2ins_2ahrs__chimu__uart_8c" id="sw_2airborne_2modules_2ins_2ahrs__chimu__uart_8c">
-<area shape="rect" id="node3" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="547,244,614,271"/><area shape="rect" id="node18" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="739,244,878,271"/><area shape="rect" id="node23" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="1583,169,1725,196"/><area shape="rect" id="node25" href="ins__module_8h.html" title="Device independent INS code. " alt="" coords="1145,95,1251,121"/><area shape="rect" id="node32" href="imu__chimu_8h.html" title="imu_chimu.h" alt="" coords="1275,95,1379,121"/><area shape="rect" id="node34" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1699,95,1753,121"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="613,415,791,442"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="269,415,460,442"/><area shape="rect" id="node14" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="736,319,887,360"/><area shape="rect" id="node16" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="911,319,1061,360"/><area shape="rect" id="node17" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="496,319,660,360"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="333,497,487,524"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="664,497,815,524"/><area shape="rect" id="node15" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="867,415,991,442"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1385,326,1555,353"/><area shape="rect" id="node20" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1773,415,1858,442"/><area shape="rect" id="node26" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="627,169,761,196"/><area shape="rect" id="node28" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1129,169,1267,196"/><area shape="rect" id="node30" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1411,244,1542,271"/><area shape="rect" id="node33" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1462,169,1558,196"/></map>
+<div class="center"><img src="ahrs__chimu__uart_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__chimu__uart_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__chimu__uart_8c" id="sw_2airborne_2modules_2ahrs_2ahrs__chimu__uart_8c">
+</map>
 </div>
 </div>
 <p><a href="ahrs__chimu__uart_8c_source.html">Go to the source code of this file.</a></p>
@@ -190,7 +190,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_ad6a0de567de0dd22d4f4e1f8a4dfcb9d_icgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_ad6a0de567de0dd22d4f4e1f8a4dfcb9d_icgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_ad6a0de567de0dd22d4f4e1f8a4dfcb9d_icgraph" id="ahrs__chimu__uart_8c_ad6a0de567de0dd22d4f4e1f8a4dfcb9d_icgraph">
-<area shape="rect" id="node2" href="ahrs__chimu__uart_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="248,5,400,32"/></map>
+</map>
 </div>
 </p>
 
@@ -223,7 +223,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph" id="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph">
-<area shape="rect" id="node2" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="176,5,315,32"/><area shape="rect" id="node4" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="200,56,291,83"/><area shape="rect" id="node3" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="363,5,457,32"/></map>
+</map>
 </div>
 </p>
 
@@ -234,7 +234,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_icgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_icgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_icgraph" id="ahrs__chimu__uart_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_icgraph">
-<area shape="rect" id="node2" href="ahrs__chimu__uart_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="176,5,328,32"/></map>
+</map>
 </div>
 </p>
 
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph" id="ahrs__chimu__uart_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph">
-<area shape="rect" id="node2" href="ahrs__chimu__uart_8c.html#ad6a0de567de0dd22d4f4e1f8a4dfcb9d" title="ahrs_chimu_enable_output" alt="" coords="205,5,400,32"/><area shape="rect" id="node3" href="ahrs__chimu__uart_8c.html#a3a8e7287a633ce9302ef4bcf322f7ed6" title="ahrs_chimu_init" alt="" coords="241,56,364,83"/><area shape="rect" id="node7" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="233,107,373,133"/><area shape="rect" id="node4" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="448,31,587,57"/><area shape="rect" id="node6" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="472,81,563,108"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="635,31,729,57"/></map>
+</map>
 </div>
 </p>
 
@@ -295,7 +295,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__chimu__uart_8c_source.html#l00081">81</a> of file <a class="el" href="ahrs__chimu__uart_8c_source.html">ahrs_chimu_uart.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, <a class="el" href="ahrs_8h_source.html#l00042">AHRS_COMP_ID_CHIMU</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00149">CHIMU_Parse()</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="imu__chimu_8h_source.html#l00135">CHIMU_attitude_data::euler</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00034">AhrsChimu::is_aligned</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="imu__chimu_8h_source.html#l00168">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00162">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00118">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::psi</a>, <a class="el" href="imu__chimu_8h_source.html#l00149">CHIMU_sensor_data::rate</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::theta</a>.</p>
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, <a class="el" href="ahrs_8h_source.html#l00042">AHRS_COMP_ID_CHIMU</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00149">CHIMU_Parse()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="imu__chimu_8h_source.html#l00135">CHIMU_attitude_data::euler</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00034">AhrsChimu::is_aligned</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="imu__chimu_8h_source.html#l00168">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00162">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00118">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::psi</a>, <a class="el" href="imu__chimu_8h_source.html#l00149">CHIMU_sensor_data::rate</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::theta</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__module_8h_source.html#l00089">ins_event_check_and_handle()</a>.</p>
 
@@ -306,7 +306,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph" id="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph">
-<area shape="rect" id="node2" href="imu__chimu_8c.html#a7ac39179eecc107f50d9730a179b1827" title="CHIMU_Parse" alt="" coords="218,31,325,57"/><area shape="rect" id="node7" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="193,81,349,108"/><area shape="rect" id="node8" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="172,132,371,159"/><area shape="rect" id="node3" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="461,5,555,32"/><area shape="rect" id="node4" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d" title="CHIMU_ProcessMessage" alt="" coords="419,56,597,83"/><area shape="rect" id="node5" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f" title="BitTest" alt="" coords="687,31,751,57"/><area shape="rect" id="node6" href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f" title="GetEulersFromQuat" alt="" coords="645,81,792,108"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="427,132,589,159"/></map>
+</map>
 </div>
 </p>
 
@@ -317,7 +317,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_icgraph.png" border="0" usemap="#ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_icgraph" alt=""/></div>
 <map name="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_icgraph" id="ahrs__chimu__uart_8c_a8cb976f9e02352af6815c51a4b18faec_icgraph">
-<area shape="rect" id="node2" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a" title="!SITL " alt="" coords="172,5,331,47"/></map>
+</map>
 </div>
 </p>
 
@@ -391,8 +391,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ahrs__chimu__uart_8c.html">ahrs_chimu_uart.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:01 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__chimu__uart_8c.html">ahrs_chimu_uart.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

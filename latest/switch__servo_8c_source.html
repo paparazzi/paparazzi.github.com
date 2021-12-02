@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('switch__servo_8c_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="switch__servo_8h.html">switching/switch_servo.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="subsystems_2actuators_8h.html">subsystems/actuators.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_2actuators_2actuators_8h.html">modules/actuators/actuators.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="switch__servo_8h.html#a7e66d3ea310815eb2d959fbf58e419d8">   26</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="switch__servo_8c.html#a7e66d3ea310815eb2d959fbf58e419d8">switch_servo_on</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -157,9 +157,9 @@ $(document).ready(function(){initNavTree('switch__servo_8c_source.html','');});
 <div class="ttc" id="switch__servo_8c_html_adb34c21526ffeac0ae5f2bdf92c121cc"><div class="ttname"><a href="switch__servo_8c.html#adb34c21526ffeac0ae5f2bdf92c121cc">SwitchServo</a></div><div class="ttdeci">#define SwitchServo(_n, _v)</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8c_source.html#l00030">switch_servo.c:30</a></div></div>
 <div class="ttc" id="switch__servo_8c_html_a7e66d3ea310815eb2d959fbf58e419d8"><div class="ttname"><a href="switch__servo_8c.html#a7e66d3ea310815eb2d959fbf58e419d8">switch_servo_on</a></div><div class="ttdeci">bool switch_servo_on</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8c_source.html#l00026">switch_servo.c:26</a></div></div>
 <div class="ttc" id="switch__servo_8h_html"><div class="ttname"><a href="switch__servo_8h.html">switch_servo.h</a></div></div>
-<div class="ttc" id="subsystems_2actuators_8h_html"><div class="ttname"><a href="subsystems_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
 <div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="switch__servo_8c_html_a78165adef25ba74a594f9872215e3600"><div class="ttname"><a href="switch__servo_8c.html#a78165adef25ba74a594f9872215e3600">switch_servo_periodic</a></div><div class="ttdeci">void switch_servo_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8c_source.html#l00038">switch_servo.c:38</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators_8h_html"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
 <div class="ttc" id="switch__servo_8c_html_aaef3c0eadfe8f248d99f1f0deb71f5a5"><div class="ttname"><a href="switch__servo_8c.html#aaef3c0eadfe8f248d99f1f0deb71f5a5">switch_servo_init</a></div><div class="ttdeci">void switch_servo_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8c_source.html#l00032">switch_servo.c:32</a></div></div>
 <div class="ttc" id="switch__servo_8h_html_a8aff62eb19074cbd5fddb5a5a5dfa6e8"><div class="ttname"><a href="switch__servo_8h.html#a8aff62eb19074cbd5fddb5a5a5dfa6e8">SWITCH_SERVO_OFF_VALUE</a></div><div class="ttdeci">#define SWITCH_SERVO_OFF_VALUE</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8h_source.html#l00036">switch_servo.h:36</a></div></div>
 <div class="ttc" id="switch__servo_8h_html_ab404372846657113220b2643e86eb119"><div class="ttname"><a href="switch__servo_8h.html#ab404372846657113220b2643e86eb119">SWITCH_SERVO_ON_VALUE</a></div><div class="ttdeci">#define SWITCH_SERVO_ON_VALUE</div><div class="ttdef"><b>Definition:</b> <a href="switch__servo_8h_source.html#l00033">switch_servo.h:33</a></div></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('switch__servo_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_48e2729a7857fbd238afa6214b1fc763.html">switching</a></li><li class="navelem"><a class="el" href="switch__servo_8c.html">switch_servo.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

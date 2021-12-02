@@ -1,5 +1,9 @@
 var dir_984e899df90dd104b2eabcdbb76ec71f =
 [
+    [ "common_flight_plan.c", "common__flight__plan_8c.html", "common__flight__plan_8c" ],
+    [ "common_flight_plan.h", "common__flight__plan_8h.html", "common__flight__plan_8h" ],
+    [ "common_nav.c", "common__nav_8c.html", "common__nav_8c" ],
+    [ "common_nav.h", "common__nav_8h.html", "common__nav_8h" ],
     [ "nav_airspeed.c", "nav__airspeed_8c.html", "nav__airspeed_8c" ],
     [ "nav_airspeed.h", "nav__airspeed_8h.html", "nav__airspeed_8h" ],
     [ "nav_bungee_takeoff.c", "nav__bungee__takeoff_8c.html", "nav__bungee__takeoff_8c" ],
@@ -45,6 +49,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_survey_poly_rotorcraft.h", "nav__survey__poly__rotorcraft_8h.html", "nav__survey__poly__rotorcraft_8h" ],
     [ "nav_survey_polygon.c", "nav__survey__polygon_8c.html", "nav__survey__polygon_8c" ],
     [ "nav_survey_polygon.h", "nav__survey__polygon_8h.html", "nav__survey__polygon_8h" ],
+    [ "nav_survey_rectangle.c", "nav__survey__rectangle_8c.html", "nav__survey__rectangle_8c" ],
+    [ "nav_survey_rectangle.h", "nav__survey__rectangle_8h.html", "nav__survey__rectangle_8h" ],
     [ "nav_survey_rectangle_rotorcraft.c", "nav__survey__rectangle__rotorcraft_8c.html", "nav__survey__rectangle__rotorcraft_8c" ],
     [ "nav_survey_rectangle_rotorcraft.h", "nav__survey__rectangle__rotorcraft_8h.html", "nav__survey__rectangle__rotorcraft_8h" ],
     [ "nav_survey_zamboni.c", "nav__survey__zamboni_8c.html", "nav__survey__zamboni_8c" ],
@@ -52,5 +58,7 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_vertical_raster.c", "nav__vertical__raster_8c.html", "nav__vertical__raster_8c" ],
     [ "nav_vertical_raster.h", "nav__vertical__raster_8h.html", "nav__vertical__raster_8h" ],
     [ "takeoff_detect.c", "takeoff__detect_8c.html", "takeoff__detect_8c" ],
-    [ "takeoff_detect.h", "takeoff__detect_8h.html", "takeoff__detect_8h" ]
+    [ "takeoff_detect.h", "takeoff__detect_8h.html", "takeoff__detect_8h" ],
+    [ "waypoints.c", "nav_2waypoints_8c.html", "nav_2waypoints_8c" ],
+    [ "waypoints.h", "nav_2waypoints_8h.html", "nav_2waypoints_8h" ]
 ];

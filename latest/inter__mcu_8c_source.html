@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/inter_mcu.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/intermcu/inter_mcu.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('inter__mcu_8c_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if defined SINGLE_MCU</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> _fbw_state;</div>
@@ -137,9 +137,9 @@ $(document).ready(function(){initNavTree('inter__mcu_8c_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> *<a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> = &amp;_fbw_state;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> *<a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> = &amp;_ap_state;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#else </span><span class="comment">/* SINGLE_MCU */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="link__mcu_8h.html">link_mcu.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> *<a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> = &amp;<a class="code" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a>.<a class="code" href="link__mcu__usart_8h.html#ac2f87b5cd2b2b959a76c8be565cea846">payload</a>.from_fbw;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>  *<a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> = &amp;<a class="code" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a>.<a class="code" href="link__mcu__usart_8h.html#ac2f87b5cd2b2b959a76c8be565cea846">payload</a>.from_ap;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="link__mcu_8h.html">modules/intermcu/link_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> *<a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> = &amp;<a class="code" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a>.<a class="code" href="link__mcu__usart_8h.html#a43442137cced4c4e37bc346be3d7c9dc">payload</a>.from_fbw;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>  *<a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> = &amp;<a class="code" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a>.<a class="code" href="link__mcu__usart_8h.html#a43442137cced4c4e37bc346be3d7c9dc">payload</a>.from_ap;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ! SINGLE_MCU */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="inter__mcu_8c.html#a98e2645d2aa8d12280b26af8b51320da">   40</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="inter__mcu_8c.html#a98e2645d2aa8d12280b26af8b51320da">inter_mcu_received_fbw</a> = <span class="keyword">false</span>;</div>
@@ -151,26 +151,26 @@ $(document).ready(function(){initNavTree('inter__mcu_8c_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef FBW</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> ap_ok;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> time_since_last_ap;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> time_since_last_ap;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="inter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div><div class="ttdoc">Communication between fbw and ap processes. </div></div>
 <div class="ttc" id="inter__mcu_8c_html_a46b8d52f1b1b4ccef9a2dd10dd857246"><div class="ttname"><a href="inter__mcu_8c.html#a46b8d52f1b1b4ccef9a2dd10dd857246">inter_mcu_received_ap</a></div><div class="ttdeci">volatile bool inter_mcu_received_ap</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00041">inter_mcu.c:41</a></div></div>
 <div class="ttc" id="inter__mcu_8c_html_a1a4da5ac6e76b01f83b00facee8f3dbf"><div class="ttname"><a href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a></div><div class="ttdeci">struct fbw_state * fbw_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00036">inter_mcu.c:36</a></div></div>
 <div class="ttc" id="inter__mcu_8c_html_ac13671906f2663b39fde033f4cb4a410"><div class="ttname"><a href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a></div><div class="ttdeci">struct ap_state * ap_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00037">inter_mcu.c:37</a></div></div>
 <div class="ttc" id="link__mcu__can_8c_html_a4d130fa66a5074c64197b7cd4bf535de"><div class="ttname"><a href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a></div><div class="ttdeci">struct link_mcu_msg link_mcu_from_ap_msg</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00176">link_mcu_can.c:176</a></div></div>
-<div class="ttc" id="link__mcu__usart_8h_html_ac2f87b5cd2b2b959a76c8be565cea846"><div class="ttname"><a href="link__mcu__usart_8h.html#ac2f87b5cd2b2b959a76c8be565cea846">link_mcu_msg::payload</a></div><div class="ttdeci">union link_mcu_msg::@281 payload</div></div>
 <div class="ttc" id="link__mcu__can_8c_html_a86deade5843ab146c47083104cf8f3cd"><div class="ttname"><a href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a></div><div class="ttdeci">struct link_mcu_msg link_mcu_from_fbw_msg</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00177">link_mcu_can.c:177</a></div></div>
 <div class="ttc" id="link__mcu_8h_html"><div class="ttname"><a href="link__mcu_8h.html">link_mcu.h</a></div><div class="ttdoc">Common transport functions for the communication between FBW and AP. </div></div>
 <div class="ttc" id="inter__mcu_8c_html_a98e2645d2aa8d12280b26af8b51320da"><div class="ttname"><a href="inter__mcu_8c.html#a98e2645d2aa8d12280b26af8b51320da">inter_mcu_received_fbw</a></div><div class="ttdeci">volatile bool inter_mcu_received_fbw</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00040">inter_mcu.c:40</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="link__mcu__usart_8h_html_a43442137cced4c4e37bc346be3d7c9dc"><div class="ttname"><a href="link__mcu__usart_8h.html#a43442137cced4c4e37bc346be3d7c9dc">link_mcu_msg::payload</a></div><div class="ttdeci">union link_mcu_msg::@280 payload</div></div>
 <div class="ttc" id="inter__mcu_8c_html_a260c9982f7e705204128d5b9111697f4"><div class="ttname"><a href="inter__mcu_8c.html#a260c9982f7e705204128d5b9111697f4">PPRZ_MUTEX</a></div><div class="ttdeci">PPRZ_MUTEX(ap_state_mtx)</div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="inter__mcu_8c.html">inter_mcu.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:01:58 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b59edde850f8ccf4b394776fda69f2c6.html">intermcu</a></li><li class="navelem"><a class="el" href="inter__mcu_8c.html">inter_mcu.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

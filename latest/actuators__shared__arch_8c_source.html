@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/arch/stm32/subsystems/actuators/actuators_shared_arch.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/arch/stm32/modules/actuators/actuators_shared_arch.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,14 +130,14 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8c_source.html
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actuators__shared__arch_8h.html">arch/stm32/subsystems/actuators/actuators_shared_arch.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actuators__shared__arch_8h.html">arch/stm32/modules/actuators/actuators_shared_arch.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/timer.h&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// for timer_get_frequency</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stm32_2mcu__arch_8h.html">arch/stm32/mcu_arch.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="actuators__shared__arch_8h.html#a5845163f5b2bb32af33d32280b7c40be">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be">actuators_pwm_arch_channel_init</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_peripheral,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="actuators__shared__arch_8h.html#a5845163f5b2bb32af33d32280b7c40be">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be">actuators_pwm_arch_channel_init</a>(<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> timer_peripheral,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                     <span class="keyword">enum</span> tim_oc_id oc_id)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8c_source.html
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="actuators__shared__arch_8h.html#af427e4bd9cbac365246675a3dab8e548">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#ae2ad75fb83b6c7ec929b7b9b8ed92581">set_servo_timer</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> freq, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask)</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="actuators__shared__arch_8h.html#af427e4bd9cbac365246675a3dab8e548">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#ae2ad75fb83b6c7ec929b7b9b8ed92581">set_servo_timer</a>(<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> timer, <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> freq, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// WARNING, this reset is only implemented for TIM1-8 in libopencm3!!</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  timer_reset(timer);</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8c_source.html
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// By default the PWM_BASE_FREQ is set to 1MHz thus the timer tick period is 1uS</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_clk = <a class="code" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">timer_get_frequency</a>(timer);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> timer_clk = <a class="code" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">timer_get_frequency</a>(timer);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  timer_set_prescaler(timer, (timer_clk / <a class="code" href="actuators__shared__arch_8h.html#a6e3b5de2e1ac13872971fbd62b1abf84">PWM_BASE_FREQ</a>) - 1);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  timer_disable_preload(timer);</div>
@@ -228,16 +228,16 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8c_source.html
 <div class="ttc" id="stm32_2mcu__arch_8c_html_ad5d712b19fd6e3df08c60d4db733a22c"><div class="ttname"><a href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">timer_get_frequency</a></div><div class="ttdeci">uint32_t timer_get_frequency(uint32_t timer_peripheral)</div><div class="ttdoc">Get Timer clock frequency (before prescaling) Only valid if using the internal clock for the timer...</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__arch_8c_source.html#l00311">mcu_arch.c:311</a></div></div>
 <div class="ttc" id="actuators__shared__arch_8c_html_a5845163f5b2bb32af33d32280b7c40be"><div class="ttname"><a href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be">actuators_pwm_arch_channel_init</a></div><div class="ttdeci">void actuators_pwm_arch_channel_init(uint32_t timer_peripheral, enum tim_oc_id oc_id)</div><div class="ttdoc">Set PWM channel configuration. </div><div class="ttdef"><b>Definition:</b> <a href="actuators__shared__arch_8c_source.html#l00035">actuators_shared_arch.c:35</a></div></div>
 <div class="ttc" id="actuators__shared__arch_8h_html_a6e3b5de2e1ac13872971fbd62b1abf84"><div class="ttname"><a href="actuators__shared__arch_8h.html#a6e3b5de2e1ac13872971fbd62b1abf84">PWM_BASE_FREQ</a></div><div class="ttdeci">#define PWM_BASE_FREQ</div><div class="ttdef"><b>Definition:</b> <a href="actuators__shared__arch_8h_source.html#l00043">actuators_shared_arch.h:43</a></div></div>
-<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="actuators__shared__arch_8h_html"><div class="ttname"><a href="actuators__shared__arch_8h.html">actuators_shared_arch.h</a></div><div class="ttdoc">STM32 PWM and dualPWM servos shared functions. </div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__shared__arch_8c.html">actuators_shared_arch.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:01:52 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_a10efe5d9248a70e16e6da3221b6ebe3.html">modules</a></li><li class="navelem"><a class="el" href="dir_5d2db0136ac82753e4e4864ad90e9cf2.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__shared__arch_8c.html">actuators_shared_arch.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8c.html','');}
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &lt;CTRL_TYPE_H&gt;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_adaptive.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8c.html','');}
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c" id="sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c">
-<area shape="rect" id="node3" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="142,117,195,143"/><area shape="rect" id="node5" href="fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control. " alt="" coords="188,199,371,255"/><area shape="rect" id="node9" href="stabilization__adaptive_8h.html" title="Fixed wing horizontal adaptive control. " alt="" coords="395,199,577,255"/><area shape="rect" id="node10" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="738,310,805,337"/><area shape="rect" id="node24" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="821,109,967,151"/><area shape="rect" id="node28" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1302,213,1393,240"/><area shape="rect" id="node33" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2073,109,2227,151"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="333,399,418,426"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="434,310,530,337"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="673,481,851,508"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="356,481,547,508"/><area shape="rect" id="node20" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="784,392,935,433"/><area shape="rect" id="node22" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="959,392,1109,433"/><area shape="rect" id="node23" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="544,392,708,433"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="110,556,265,583"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="673,556,824,583"/><area shape="rect" id="node21" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="935,481,1059,508"/><area shape="rect" id="node25" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="805,206,983,247"/><area shape="rect" id="node26" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1041,303,1211,344"/><area shape="rect" id="node27" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1007,206,1176,247"/><area shape="rect" id="node34" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2445,399,2583,426"/><area shape="rect" id="node38" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2073,206,2227,247"/><area shape="rect" id="node41" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1969,303,2123,344"/><area shape="rect" id="node43" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2324,310,2517,337"/></map>
+</map>
 </div>
 </div>
 <p><a href="stabilization__adaptive_8c_source.html">Go to the source code of this file.</a></p>
@@ -873,7 +873,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00413">413</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00285">attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00284">attitude_loop()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -882,7 +882,7 @@ yaw_rate</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph" id="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="196,56,303,83"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="351,56,528,83"/><area shape="rect" id="node5" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="759,5,945,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="784,107,920,133"/><area shape="rect" id="node4" href="autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY. " alt="" coords="576,56,711,83"/><area shape="rect" id="node6" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="797,56,907,83"/><area shape="rect" id="node7" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="993,56,1156,83"/></map>
+</map>
 </div>
 </p>
 
@@ -904,7 +904,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00374">374</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00221">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00220">navigation_task()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -913,7 +913,7 @@ yaw_rate</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph" id="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2guidance_2guidance__h_8h.html#a33f80a675c12489f29ccd436b4e6d25c" title="General guidance logic This will call the proper control loops according to the sub&#45;modes. " alt="" coords="189,5,340,32"/><area shape="rect" id="node3" href="fixedwing_2autopilot__static_8h.html#a79f823520ea0823e20084686978281e6" title="Control loops FIXME should be somewhere else. " alt="" coords="203,56,326,83"/><area shape="rect" id="node4" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="388,31,575,57"/><area shape="rect" id="node5" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="427,81,536,108"/></map>
+</map>
 </div>
 </p>
 
@@ -972,7 +972,7 @@ yaw_rate</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph" id="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph">
-<area shape="rect" id="node2" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="201,245,352,272"/><area shape="rect" id="node3" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87" title="if" alt="" coords="257,296,296,323"/><area shape="rect" id="node29" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="198,411,355,437"/><area shape="rect" id="node31" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="177,461,376,488"/><area shape="rect" id="node4" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title="put_lat" alt="" coords="473,245,539,272"/><area shape="rect" id="node16" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title="put_lon" alt="" coords="471,144,541,171"/><area shape="rect" id="node17" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title="put_alt" alt="" coords="473,195,539,221"/><area shape="rect" id="node18" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title="put_lat_lon_home" alt="" coords="438,93,574,120"/><area shape="rect" id="node22" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title="put_route" alt="" coords="464,296,548,323"/><area shape="rect" id="node25" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title="put_horizontal_speed" alt="" coords="427,397,585,424"/><area shape="rect" id="node28" href="chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation. " alt="" coords="446,347,566,373"/><area shape="rect" id="node5" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="673,220,829,247"/><area shape="rect" id="node6" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="929,220,1089,247"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1171,123,1269,149"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1171,64,1269,91"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1151,275,1289,301"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1368,224,1507,251"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1387,123,1487,149"/><area shape="rect" id="node9" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1385,173,1489,200"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1369,57,1505,98"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1337,5,1537,32"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1585,224,1728,251"/><area shape="rect" id="node19" href="subsystems_2navigation_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint. " alt="" coords="688,115,815,141"/><area shape="rect" id="node20" href="subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title="waypoint_is_global" alt="" coords="939,115,1079,141"/><area shape="rect" id="node21" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="938,165,1079,192"/><area shape="rect" id="node23" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="645,296,858,323"/><area shape="rect" id="node24" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="915,289,1103,330"/><area shape="rect" id="node26" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="636,397,867,424"/><area shape="rect" id="node27" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="915,390,1103,431"/><area shape="rect" id="node30" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="425,448,587,475"/><area shape="rect" id="node32" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="424,499,588,525"/><area shape="rect" id="node33" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="667,499,835,525"/><area shape="rect" id="node34" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="932,477,1085,504"/><area shape="rect" id="node35" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="933,528,1084,555"/></map>
+</map>
 </div>
 </p>
 
@@ -983,7 +983,7 @@ yaw_rate</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph" id="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="177,56,320,83"/><area shape="rect" id="node3" href="fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="368,56,475,83"/><area shape="rect" id="node4" href="rotorcraft_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="523,56,700,83"/><area shape="rect" id="node6" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="931,5,1117,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="956,107,1092,133"/><area shape="rect" id="node5" href="autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY. " alt="" coords="748,56,883,83"/><area shape="rect" id="node7" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="969,56,1079,83"/><area shape="rect" id="node8" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="1165,56,1328,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1024,7 +1024,7 @@ yaw_rate</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph" id="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph">
-<area shape="rect" id="node2" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="189,5,340,32"/><area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="186,56,343,83"/><area shape="rect" id="node5" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="165,107,364,133"/><area shape="rect" id="node4" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="413,56,575,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="412,107,576,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="624,107,792,133"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="840,81,993,108"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="841,132,992,159"/></map>
+</map>
 </div>
 </p>
 
@@ -1035,7 +1035,7 @@ yaw_rate</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph" id="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="165,56,308,83"/><area shape="rect" id="node3" href="fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="356,56,463,83"/><area shape="rect" id="node4" href="rotorcraft_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="511,56,688,83"/><area shape="rect" id="node6" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="919,5,1105,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="944,107,1080,133"/><area shape="rect" id="node5" href="autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY. " alt="" coords="736,56,871,83"/><area shape="rect" id="node7" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="957,56,1067,83"/><area shape="rect" id="node8" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="1153,56,1316,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1086,7 +1086,7 @@ yaw_rate</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a178cc08a2556c8dae1575679f54fb434_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a178cc08a2556c8dae1575679f54fb434_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a178cc08a2556c8dae1575679f54fb434_icgraph" id="stabilization__adaptive_8c_a178cc08a2556c8dae1575679f54fb434_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a83c0e92b972269e326eb6be18adcf715" title="h_ctl_init" alt="" coords="180,5,259,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1137,7 +1137,7 @@ yaw_rate</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_cgraph" id="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="144,31,343,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="391,31,555,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="603,31,771,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="819,5,972,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="820,56,971,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1148,7 +1148,7 @@ yaw_rate</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_icgraph" id="stabilization__adaptive_8c_a3cc410a3b9183b93302a2a71906a6455_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a83c0e92b972269e326eb6be18adcf715" title="h_ctl_init" alt="" coords="144,5,223,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1199,7 +1199,7 @@ yaw_rate</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_cgraph" id="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="189,5,346,32"/><area shape="rect" id="node4" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="168,56,367,83"/><area shape="rect" id="node3" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="416,5,577,32"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="415,56,579,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="627,56,795,83"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="843,31,996,57"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="844,81,995,108"/></map>
+</map>
 </div>
 </p>
 
@@ -1210,7 +1210,7 @@ yaw_rate</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_icgraph" id="stabilization__adaptive_8c_a0c11799df47100d31f44a50bb3e16bce_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a83c0e92b972269e326eb6be18adcf715" title="h_ctl_init" alt="" coords="168,5,247,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1261,7 +1261,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00164">164</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00285">attitude_loop()</a>, and <a class="el" href="file__logger_8c_source.html#l00083">file_logger_write_row()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00284">attitude_loop()</a>, and <a class="el" href="file__logger_8c_source.html#l00083">file_logger_write_row()</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1277,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00091">91</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00221">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00220">navigation_task()</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1403,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00178">178</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00285">attitude_loop()</a>, and <a class="el" href="file__logger_8c_source.html#l00083">file_logger_write_row()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00284">attitude_loop()</a>, and <a class="el" href="file__logger_8c_source.html#l00083">file_logger_write_row()</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1519,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00170">170</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00285">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00284">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00111">autopilot_static_on_rc_frame()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>.</p>
 
 </div>
 </div>
@@ -1667,7 +1667,7 @@ yaw_rate</td>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00157">157</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00154">gvf_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00036">gvf_parametric_low_level_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00055">gvf_parametric_low_level_control_3D()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00080">send_desired()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00111">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00154">gvf_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00036">gvf_parametric_low_level_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00055">gvf_parametric_low_level_control_3D()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00080">send_desired()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
 
 </div>
 </div>
@@ -1747,7 +1747,7 @@ yaw_rate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_517430ae22334069e857fa1922a1fddc.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__adaptive_8c.html">stabilization_adaptive.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:45 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

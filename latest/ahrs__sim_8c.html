@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ahrs/ahrs_sim.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_sim.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('ahrs__sim_8c.html','');});
 
 <p>Dummy plug to set the AHRS from the simple OCaml simulator.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__sim_8h_source.html">subsystems/ahrs/ahrs_sim.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ahrs__sim_8h_source.html">modules/ahrs/ahrs_sim.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('ahrs__sim_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c">
-<area shape="rect" id="node2" href="ahrs__sim_8h.html" title="Interface to set the AHRS from the simple OCaml simulator. " alt="" coords="37,259,199,300"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="896,266,1087,293"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="663,95,730,121"/><area shape="rect" id="node3" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="5,348,148,375"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="746,348,863,375"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="391,266,570,293"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="440,169,591,211"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="803,169,953,211"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="615,169,779,211"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="419,348,569,375"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="696,266,820,293"/></map>
+<div class="center"><img src="ahrs__sim_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__sim_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__sim_8c" id="sw_2airborne_2modules_2ahrs_2ahrs__sim_8c">
+</map>
 </div>
 </div>
 <p><a href="ahrs__sim_8c_source.html">Go to the source code of this file.</a></p>
@@ -234,7 +234,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph.png" border="0" usemap="#ahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph" alt=""/></div>
 <map name="ahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph" id="ahrs__sim_8c_abe985eebaeb618b0da18f4964f52e758_cgraph">
-<area shape="rect" id="node2" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="189,5,329,32"/></map>
+</map>
 </div>
 </p>
 
@@ -258,8 +258,6 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="sim__ahrs_8c_source.html#l00015">sim_p</a>, <a class="el" href="sim__ahrs_8c_source.html#l00012">sim_phi</a>, <a class="el" href="sim__ahrs_8c_source.html#l00014">sim_psi</a>, <a class="el" href="sim__ahrs_8c_source.html#l00016">sim_q</a>, <a class="el" href="sim__ahrs_8c_source.html#l00017">sim_r</a>, <a class="el" href="sim__ahrs_8c_source.html#l00013">sim_theta</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00306">sensors_task()</a>.</p>
-
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -267,18 +265,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph.png" border="0" usemap="#ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" alt=""/></div>
 <map name="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" id="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="244,5,400,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="223,56,421,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="469,56,632,83"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph.png" border="0" usemap="#ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph" alt=""/></div>
-<map name="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph" id="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="223,31,329,57"/><area shape="rect" id="node3" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="377,5,564,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="403,56,539,83"/></map>
+</map>
 </div>
 </p>
 
@@ -426,8 +413,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8c.html">ahrs_sim.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8c.html">ahrs_sim.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

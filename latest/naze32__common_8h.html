@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('naze32__common_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="naze32__common_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2naze32__common_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2naze32__common_8hdep" id="sw_2airborne_2boards_2naze32__common_8hdep">
-<area shape="rect" id="node2" href="naze32__rev4_8h.html" title="sw/airborne/boards\l/naze32_rev4.h" alt="" coords="5,95,148,136"/><area shape="rect" id="node3" href="naze32__rev5_8h.html" title="sw/airborne/boards\l/naze32_rev5.h" alt="" coords="172,95,315,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="naze32__common_8h_source.html">Go to the source code of this file.</a></p>
@@ -235,7 +235,7 @@ Macros</h2></td></tr>
 <tr class="separator:a4cfa16f44aa48e98a2dc81b7034ba1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6794bf37bfcee74c487ca30fc674a229"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a6794bf37bfcee74c487ca30fc674a229">ADC_4_GPIO_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8">GPIO4</a></td></tr>
 <tr class="separator:a6794bf37bfcee74c487ca30fc674a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5a6636ee170fccf62a748fc72374d3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b">ADC_CHANNEL_VSUPPLY</a>&#160;&#160;&#160;<a class="el" href="tiny__2_81_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></td></tr>
+<tr class="memitem:ad5a6636ee170fccf62a748fc72374d3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b">ADC_CHANNEL_VSUPPLY</a>&#160;&#160;&#160;<a class="el" href="px4fmu__4_80_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></td></tr>
 <tr class="separator:ad5a6636ee170fccf62a748fc72374d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94fa241ceca04635f282e09bdd829f5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(adc)&#160;&#160;&#160;(0.008862*adc)</td></tr>
 <tr class="separator:a94fa241ceca04635f282e09bdd829f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,13 +329,13 @@ Macros</h2></td></tr>
 <tr class="separator:acdff8432bd4f84cbc5ed4832ac36eca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ec00f69a8dbb70ce0d31eef0206d5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">PWM_TIM4_CHAN_MASK</a>&#160;&#160;&#160;(<a class="el" href="px4io__2_84_8h.html#a665cb015c3504e5dcfd386c518de25c0">PWM_SERVO_3_OC_BIT</a>|<a class="el" href="px4io__2_84_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">PWM_SERVO_4_OC_BIT</a>|<a class="el" href="px4io__2_84_8h.html#a5d2f3465213306fd37370c884444e5e5">PWM_SERVO_5_OC_BIT</a>|<a class="el" href="px4io__2_84_8h.html#af94fd6d4d1273791ff04578e48f27857">PWM_SERVO_6_OC_BIT</a>)</td></tr>
 <tr class="separator:ad1ec00f69a8dbb70ce0d31eef0206d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td></tr>
+<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;modules/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td></tr>
 <tr class="separator:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td></tr>
+<tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td></tr>
 <tr class="separator:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68f28871d18c17e7e70ae63277d37c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#ab68f28871d18c17e7e70ae63277d37c2">ActuatorsDefaultInit</a>()&#160;&#160;&#160;<a class="el" href="actuators__pwm_8h.html#a695dcfe2d3a05ebc5d7a3fe1d3a78241">ActuatorsPwmInit</a>()</td></tr>
 <tr class="separator:ab68f28871d18c17e7e70ae63277d37c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ceadf6a913477832e04b0cb7cd17210"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a0ceadf6a913477832e04b0cb7cd17210">ActuatorsDefaultCommit</a>()&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td></tr>
+<tr class="memitem:a0ceadf6a913477832e04b0cb7cd17210"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="naze32__common_8h.html#a0ceadf6a913477832e04b0cb7cd17210">ActuatorsDefaultCommit</a>()&#160;&#160;&#160;<a class="el" href="stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td></tr>
 <tr class="separator:a0ceadf6a913477832e04b0cb7cd17210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -358,7 +358,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,7 +389,7 @@ Macros</h2></td></tr>
           <td class="memname">#define ActuatorsDefaultCommit</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td>
+          <td>&#160;&#160;&#160;<a class="el" href="stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -476,7 +476,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_CHANNEL_VSUPPLY&#160;&#160;&#160;<a class="el" href="tiny__2_81_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></td>
+          <td class="memname">#define ADC_CHANNEL_VSUPPLY&#160;&#160;&#160;<a class="el" href="px4fmu__4_80_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -504,7 +504,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td>
+          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;modules/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1857,7 +1857,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="naze32__common_8h.html">naze32_common.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:39 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

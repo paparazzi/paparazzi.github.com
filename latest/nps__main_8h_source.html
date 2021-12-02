@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('nps__main_8h_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">double</span> <a class="code" href="nps__main_8h.html#abde7f979f8df9c8db19de17ab6498ec2">time_to_double</a>(<span class="keyword">struct</span> timeval *t);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">double</span> <a class="code" href="nps__main_8h.html#aeef2ce0bdc2688dd972ae462a9b9a72d">ntime_to_double</a>(<span class="keyword">struct</span> timespec *t);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="nps__main_8h.html#a7b57614ebc6bd40f0f1b7cb2d2aed72f">nps_update_launch_from_dl</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="nps__main_8h.html#a7b57614ebc6bd40f0f1b7cb2d2aed72f">nps_update_launch_from_dl</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="nps__main_8h.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="nps__main_8h.html#structNpsMain">NpsMain</a> {</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="nps__main_8h.html#ad60042b3e42ecef4998ae2c092f2b930">   52</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="nps__main_8h.html#ad60042b3e42ecef4998ae2c092f2b930">real_initial_time</a>;</div>
@@ -210,7 +210,6 @@ $(document).ready(function(){initNavTree('nps__main_8h_source.html','');});
 <div class="ttc" id="nps__main_8h_html_aba7e0d2ae8c72632537ff335da67e19d"><div class="ttname"><a href="nps__main_8h.html#aba7e0d2ae8c72632537ff335da67e19d">nps_set_time_factor</a></div><div class="ttdeci">void nps_set_time_factor(float time_factor)</div><div class="ttdef"><b>Definition:</b> <a href="nps__main__common_8c_source.html#l00119">nps_main_common.c:119</a></div></div>
 <div class="ttc" id="nps__main_8h_html_a84e7af65cf43b1fd0effc9e7344070b3"><div class="ttname"><a href="nps__main_8h.html#a84e7af65cf43b1fd0effc9e7344070b3">NpsMain::sim_time</a></div><div class="ttdeci">double sim_time</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00055">nps_main.h:55</a></div></div>
 <div class="ttc" id="nps__main_8h_html_a6bb2995b72c8441d79ca14c4b5c0617e"><div class="ttname"><a href="nps__main_8h.html#a6bb2995b72c8441d79ca14c4b5c0617e">NpsMain::host_time_factor</a></div><div class="ttdeci">double host_time_factor</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00054">nps_main.h:54</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="nps__main_8h_html_aeef2ce0bdc2688dd972ae462a9b9a72d"><div class="ttname"><a href="nps__main_8h.html#aeef2ce0bdc2688dd972ae462a9b9a72d">ntime_to_double</a></div><div class="ttdeci">double ntime_to_double(struct timespec *t)</div><div class="ttdef"><b>Definition:</b> <a href="nps__main__common_8c_source.html#l00074">nps_main_common.c:74</a></div></div>
 <div class="ttc" id="nps__main_8h_html_a9e2370130aa6e869a0ed56a22117cf3b"><div class="ttname"><a href="nps__main_8h.html#a9e2370130aa6e869a0ed56a22117cf3b">nps_main_parse_options</a></div><div class="ttdeci">bool nps_main_parse_options(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="nps__main__common_8c_source.html#l00147">nps_main_common.c:147</a></div></div>
 <div class="ttc" id="nps__autopilot_8h_html"><div class="ttname"><a href="nps__autopilot_8h.html">nps_autopilot.h</a></div></div>
@@ -224,13 +223,14 @@ $(document).ready(function(){initNavTree('nps__main_8h_source.html','');});
 <div class="ttc" id="nps__main_8h_html_a277e7db21226ea1bec9e09b4c533f683"><div class="ttname"><a href="nps__main_8h.html#a277e7db21226ea1bec9e09b4c533f683">NpsMain::display_time</a></div><div class="ttdeci">double display_time</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00056">nps_main.h:56</a></div></div>
 <div class="ttc" id="nps__main_8h_html_structNpsMain"><div class="ttname"><a href="nps__main_8h.html#structNpsMain">NpsMain</a></div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00051">nps_main.h:51</a></div></div>
 <div class="ttc" id="nps__atmosphere_8h_html"><div class="ttname"><a href="nps__atmosphere_8h.html">nps_atmosphere.h</a></div><div class="ttdoc">Atmosphere model (pressure, wind) for NPS. </div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__main_8h.html">nps_main.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('opa__controller__fbw_8c_source.html','
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="opa__controller__fbw_8h.html">modules/boards/opa_controller_fbw.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu_8h.html">subsystems/intermcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="intermcu_8h.html">modules/intermcu/intermcu.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gpio_8h.html">mcu_periph/gpio.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led_8h.html">led.h</a>&quot;</span></div>
@@ -168,8 +168,8 @@ $(document).ready(function(){initNavTree('opa__controller__fbw_8c_source.html','
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="opa__controller__fbw_8c.html#aba9670bd5ed3cc4bac2fd2e8caeb050b">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="opa__controller__fbw_8c.html#aba9670bd5ed3cc4bac2fd2e8caeb050b">opa_controller_periodic</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> off_cnt = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> arming_cnt = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> off_cnt = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> arming_cnt = 0;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">/* Check E-Stop and power off Main power if pressed */</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a>(<a class="code" href="opa__ftd__1_80_8h.html#af46af50791fc92793de090b4ca1e3780">BTN_ESTOP</a>, <a class="code" href="opa__ftd__1_80_8h.html#a2bda9a0666df45e01af36633064d2df8">BTN_ESTOP_PIN</a>)) {</div>
@@ -230,7 +230,6 @@ $(document).ready(function(){initNavTree('opa__controller__fbw_8c_source.html','
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// autopilot_motors_on;</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_a34b2a5e2e6f8a7d801ef1556d35e8e44"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a34b2a5e2e6f8a7d801ef1556d35e8e44">MCU_PWR_OFF</a></div><div class="ttdeci">#define MCU_PWR_OFF</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00040">opa_ftd_1.0.h:40</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_a053104708220af3e3b7fdc09ac08fd87"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a053104708220af3e3b7fdc09ac08fd87">MAIN_PWR_ON</a></div><div class="ttdeci">#define MAIN_PWR_ON</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00051">opa_ftd_1.0.h:51</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_ac3a85dd998d6a9692605087f79413899"><div class="ttname"><a href="opa__ftd__1_80_8h.html#ac3a85dd998d6a9692605087f79413899">RADIO_CONTROL_POWER_OFF</a></div><div class="ttdeci">#define RADIO_CONTROL_POWER_OFF</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00152">opa_ftd_1.0.h:152</a></div></div>
@@ -271,6 +270,7 @@ $(document).ready(function(){initNavTree('opa__controller__fbw_8c_source.html','
 <div class="ttc" id="chibios_2mcu__periph_2gpio__arch_8c_html_ae7d0172a824f41338c10872b96cc541b"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b">gpio_setup_input</a></div><div class="ttdeci">void gpio_setup_input(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as inputs. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00040">gpio_arch.c:40</a></div></div>
 <div class="ttc" id="intermcu_8h_html_a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3"><div class="ttname"><a href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3">INTERMCU_CMD_DISARM</a></div><div class="ttdoc">Whether or not to dis-arm the FBW. </div><div class="ttdef"><b>Definition:</b> <a href="intermcu_8h_source.html#l00059">intermcu.h:59</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_a4621a9598a17b5c9991140dce7a5508c"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a></div><div class="ttdeci">#define BTN_ON_PIN</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00074">opa_ftd_1.0.h:74</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_af46f8fbd063878f94f9f002f4953fbf7"><div class="ttname"><a href="opa__ftd__1_80_8h.html#af46f8fbd063878f94f9f002f4953fbf7">BAL_PWR_PIN</a></div><div class="ttdeci">#define BAL_PWR_PIN</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00056">opa_ftd_1.0.h:56</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_af46af50791fc92793de090b4ca1e3780"><div class="ttname"><a href="opa__ftd__1_80_8h.html#af46af50791fc92793de090b4ca1e3780">BTN_ESTOP</a></div><div class="ttdeci">#define BTN_ESTOP</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00065">opa_ftd_1.0.h:65</a></div></div>
 <div class="ttc" id="opa__ftd__1_80_8h_html_aa24d219024204e9fd48eb2681b8d5191"><div class="ttname"><a href="opa__ftd__1_80_8h.html#aa24d219024204e9fd48eb2681b8d5191">MAIN_PWR_PIN</a></div><div class="ttdeci">#define MAIN_PWR_PIN</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00050">opa_ftd_1.0.h:50</a></div></div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('opa__controller__fbw_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3f00c278a79ac93d8d383722cb61bd67.html">boards</a></li><li class="navelem"><a class="el" href="opa__controller__fbw_8c.html">opa_controller_fbw.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

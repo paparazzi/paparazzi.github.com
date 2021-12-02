@@ -3,6 +3,7 @@ var stabilization__indi__simple_8h_structIndiVariables =
     [ "adaptive", "stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808", null ],
     [ "angular_accel_ref", "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342", null ],
     [ "attitude_max_yaw_rate", "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b", null ],
+    [ "cutoff_r", "stabilization__indi__simple_8h.html#a03426f866205fb759e38fdeadf4043ef", null ],
     [ "du", "stabilization__indi__simple_8h.html#a58bd02934d2f55aa4c8735e593233376", null ],
     [ "est", "stabilization__indi__simple_8h.html#a25c3237e5e06e294741eca5ee3266173", null ],
     [ "g1", "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df", null ],

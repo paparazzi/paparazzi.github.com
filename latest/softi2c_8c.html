@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('softi2c_8c.html','');});
 <code>#include &quot;mcu_arch.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for softi2c.c:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('softi2c_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2softi2c_8c" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2softi2c_8c" id="sw_2airborne_2mcu__periph_2softi2c_8c">
-<area shape="rect" id="node2" href="softi2c_8h.html" title="Platform&#45;independent software I2C implementation. " alt="" coords="15,102,170,129"/><area shape="rect" id="node7" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="387,102,527,129"/><area shape="rect" id="node9" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="614,191,785,218"/><area shape="rect" id="node14" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="919,95,1072,136"/><area shape="rect" id="node3" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="23,191,154,218"/><area shape="rect" id="node10" href="inttypes_8h.html" title="inttypes.h" alt="" coords="921,281,1006,307"/><area shape="rect" id="node15" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1845,363,1983,389"/><area shape="rect" id="node19" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1120,184,1273,225"/><area shape="rect" id="node23" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1031,273,1184,315"/><area shape="rect" id="node25" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1751,281,1944,307"/></map>
+</map>
 </div>
 </div>
 <p><a href="softi2c_8c_source.html">Go to the source code of this file.</a></p>
@@ -156,13 +156,13 @@ Functions</h2></td></tr>
 <tr class="separator:a81a48dfffe3bd7a34fa89bc093c04487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed568f0595bee56e4e90ef070ba0a5c9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9">softi2c_spin</a> (struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="separator:aed568f0595bee56e4e90ef070ba0a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8743c24425fb5c7d25977071dbad70e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9">softi2c_gpio_highz</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
+<tr class="memitem:a8743c24425fb5c7d25977071dbad70e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9">softi2c_gpio_highz</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
 <tr class="separator:a8743c24425fb5c7d25977071dbad70e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e7492d54676bfe31b964f2430dcbf58"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58">softi2c_gpio_read</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
+<tr class="memitem:a9e7492d54676bfe31b964f2430dcbf58"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58">softi2c_gpio_read</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
 <tr class="separator:a9e7492d54676bfe31b964f2430dcbf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828e709a0e6357d1b1a3184d8272e409"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409">softi2c_gpio_drive_low</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
+<tr class="memitem:a828e709a0e6357d1b1a3184d8272e409"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409">softi2c_gpio_drive_low</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</td></tr>
 <tr class="separator:a828e709a0e6357d1b1a3184d8272e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa853ffab24fb8f7d390aab2cf94136e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aa853ffab24fb8f7d390aab2cf94136e9">softi2c_setup_gpio</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> sda_port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sda_pin, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> scl_port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> scl_pin)</td></tr>
+<tr class="memitem:aa853ffab24fb8f7d390aab2cf94136e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aa853ffab24fb8f7d390aab2cf94136e9">softi2c_setup_gpio</a> (<a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> sda_port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sda_pin, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> scl_port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> scl_pin)</td></tr>
 <tr class="separator:aa853ffab24fb8f7d390aab2cf94136e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f8766f290a4fabfad3d6099b3e98e0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0">softi2c_write_start</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d)</td></tr>
 <tr class="separator:ae6f8766f290a4fabfad3d6099b3e98e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,9 +174,9 @@ Functions</h2></td></tr>
 <tr class="separator:a0a290bb3e426004548796dc35f433b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec892d5f421d666723fb58c9132e7088"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088">softi2c_write_stop</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d)</td></tr>
 <tr class="separator:aec892d5f421d666723fb58c9132e7088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20d39b61646e34b1eacfa85d092524e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e">softi2c_write_byte</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, bool *ack)</td></tr>
+<tr class="memitem:aa20d39b61646e34b1eacfa85d092524e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e">softi2c_write_byte</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, bool *ack)</td></tr>
 <tr class="separator:aa20d39b61646e34b1eacfa85d092524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af53603cab17d074df7f2daea8826e423"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423">softi2c_read_byte</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, bool ack)</td></tr>
+<tr class="memitem:af53603cab17d074df7f2daea8826e423"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423">softi2c_read_byte</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>, bool ack)</td></tr>
 <tr class="separator:af53603cab17d074df7f2daea8826e423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94e633dd55968bdb12b7289d2e85d0f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f">softi2c_process_transaction</a> (struct <a class="el" href="softi2c_8c.html#structsofti2c__device">softi2c_device</a> *d, struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> *t)</td></tr>
 <tr class="separator:ad94e633dd55968bdb12b7289d2e85d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,13 +215,13 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab869dd47e98b55836a1306b35d04c031"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab869dd47e98b55836a1306b35d04c031"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 bit_state</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5cd10bf498ada800946930e00af165ec"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a5cd10bf498ada800946930e00af165ec"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 byte_state</td>
 <td class="fielddoc">
@@ -233,7 +233,7 @@ periph</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab4880f0789022edb0bb763f339d65e59"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="ab4880f0789022edb0bb763f339d65e59"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 scl_pin</td>
 <td class="fielddoc">
@@ -245,7 +245,7 @@ scl_port</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ad79611e343df497c46cf9647fcb0e394"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="ad79611e343df497c46cf9647fcb0e394"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 sda_pin</td>
 <td class="fielddoc">
@@ -329,7 +329,7 @@ sda_port</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_cgraph.png" border="0" usemap="#softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_cgraph" alt=""/></div>
 <map name="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_cgraph" id="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="208,139,408,166"/><area shape="rect" id="node3" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title="softi2c_write_start" alt="" coords="456,89,595,115"/><area shape="rect" id="node7" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="457,190,593,217"/><area shape="rect" id="node16" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="643,139,793,166"/><area shape="rect" id="node17" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="458,241,593,267"/><area shape="rect" id="node18" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="650,38,786,65"/><area shape="rect" id="node4" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="841,89,1004,115"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="1052,114,1193,141"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="1079,63,1166,90"/><area shape="rect" id="node8" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="656,190,780,217"/><area shape="rect" id="node14" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="657,241,779,267"/><area shape="rect" id="node9" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="1053,342,1192,369"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="1084,190,1161,217"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="1241,291,1417,318"/><area shape="rect" id="node11" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="1264,342,1395,369"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="1291,393,1367,419"/><area shape="rect" id="node15" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="855,342,990,369"/></map>
+</map>
 </div>
 </p>
 
@@ -340,7 +340,7 @@ sda_port</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_icgraph.png" border="0" usemap="#softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_icgraph" alt=""/></div>
 <map name="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_icgraph" id="softi2c_8c_a25e9e1f40150fe875f3f75fd2b079618_icgraph">
-<area shape="rect" id="node2" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="208,81,315,108"/><area shape="rect" id="node10" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="213,132,310,159"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="363,81,456,108"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="504,5,635,32"/><area shape="rect" id="node6" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="512,56,627,83"/><area shape="rect" id="node8" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="521,107,618,133"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="509,157,629,184"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="723,5,778,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="683,107,819,133"/></map>
+</map>
 </div>
 </p>
 
@@ -373,7 +373,7 @@ sda_port</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_cgraph.png" border="0" usemap="#softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_cgraph" alt=""/></div>
 <map name="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_cgraph" id="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="160,139,315,166"/><area shape="rect" id="node3" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="363,139,563,166"/><area shape="rect" id="node4" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title="softi2c_write_start" alt="" coords="611,89,749,115"/><area shape="rect" id="node8" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="612,190,748,217"/><area shape="rect" id="node17" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="797,139,948,166"/><area shape="rect" id="node18" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="613,241,747,267"/><area shape="rect" id="node19" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="805,38,941,65"/><area shape="rect" id="node5" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="996,89,1159,115"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="1207,114,1348,141"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="1234,63,1321,90"/><area shape="rect" id="node9" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="811,190,935,217"/><area shape="rect" id="node15" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="811,241,934,267"/><area shape="rect" id="node10" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="1208,342,1347,369"/><area shape="rect" id="node14" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="1239,190,1316,217"/><area shape="rect" id="node11" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="1396,291,1572,318"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="1419,342,1549,369"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="1446,393,1522,419"/><area shape="rect" id="node16" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="1010,342,1145,369"/></map>
+</map>
 </div>
 </p>
 
@@ -384,7 +384,7 @@ sda_port</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_icgraph.png" border="0" usemap="#softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_icgraph" alt=""/></div>
 <map name="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_icgraph" id="softi2c_8c_a00f14c5101231479a8ceab61ae4cad7c_icgraph">
-<area shape="rect" id="node2" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="160,81,253,108"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="301,5,432,32"/><area shape="rect" id="node5" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="309,56,424,83"/><area shape="rect" id="node7" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="318,107,415,133"/><area shape="rect" id="node8" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="307,157,427,184"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="521,5,575,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="480,107,616,133"/></map>
+</map>
 </div>
 </p>
 
@@ -406,7 +406,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pin</em>&#160;</td>
         </tr>
         <tr>
@@ -435,7 +435,7 @@ sda_port</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_cgraph.png" border="0" usemap="#softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_cgraph" alt=""/></div>
 <map name="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_cgraph" id="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="243,5,330,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="216,56,357,83"/></map>
+</map>
 </div>
 </p>
 
@@ -446,7 +446,7 @@ sda_port</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_icgraph.png" border="0" usemap="#softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_icgraph" alt=""/></div>
 <map name="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_icgraph" id="softi2c_8c_a828e709a0e6357d1b1a3184d8272e409_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="223,56,345,83"/><area shape="rect" id="node16" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="222,5,346,32"/><area shape="rect" id="node17" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="400,107,551,133"/><area shape="rect" id="node18" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title="softi2c_write_start" alt="" coords="406,157,545,184"/><area shape="rect" id="node19" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="216,208,352,235"/><area shape="rect" id="node3" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="407,56,543,83"/><area shape="rect" id="node15" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="408,5,543,32"/><area shape="rect" id="node4" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="599,107,799,133"/><area shape="rect" id="node5" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="847,107,1001,133"/><area shape="rect" id="node6" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="1049,81,1156,108"/><area shape="rect" id="node14" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="1054,132,1151,159"/><area shape="rect" id="node7" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="1204,81,1297,108"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1345,5,1476,32"/><area shape="rect" id="node10" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1353,56,1468,83"/><area shape="rect" id="node12" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1362,157,1459,184"/><area shape="rect" id="node13" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1351,107,1471,133"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1565,5,1619,32"/><area shape="rect" id="node11" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1524,81,1660,108"/></map>
+</map>
 </div>
 </p>
 
@@ -468,7 +468,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pin</em>&#160;</td>
         </tr>
         <tr>
@@ -497,7 +497,7 @@ sda_port</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_cgraph.png" border="0" usemap="#softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_cgraph" alt=""/></div>
 <map name="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_cgraph" id="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="242,5,318,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="215,56,345,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="192,107,368,133"/></map>
+</map>
 </div>
 </p>
 
@@ -508,7 +508,7 @@ sda_port</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_icgraph.png" border="0" usemap="#softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_icgraph" alt=""/></div>
 <map name="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_icgraph" id="softi2c_8c_a8743c24425fb5c7d25977071dbad70e9_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="195,32,330,58"/><area shape="rect" id="node3" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="395,32,518,58"/><area shape="rect" id="node17" href="softi2c_8c.html#aa853ffab24fb8f7d390aab2cf94136e9" title="softi2c_setup_gpio" alt="" coords="192,234,333,261"/><area shape="rect" id="node18" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="395,82,519,109"/><area shape="rect" id="node19" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="381,133,532,160"/><area shape="rect" id="node20" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="580,184,716,210"/><area shape="rect" id="node4" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="580,32,716,58"/><area shape="rect" id="node16" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="581,82,715,109"/><area shape="rect" id="node5" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="764,108,964,134"/><area shape="rect" id="node6" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="1012,108,1167,134"/><area shape="rect" id="node7" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="1215,82,1321,109"/><area shape="rect" id="node15" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="1219,133,1317,160"/><area shape="rect" id="node8" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="1369,82,1463,109"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1511,6,1641,33"/><area shape="rect" id="node11" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1519,57,1633,84"/><area shape="rect" id="node13" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1527,158,1625,185"/><area shape="rect" id="node14" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1516,108,1636,134"/><area shape="rect" id="node10" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1730,6,1785,33"/><area shape="rect" id="node12" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1689,82,1825,109"/></map>
+</map>
 </div>
 </p>
 
@@ -530,7 +530,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>pin</em>&#160;</td>
         </tr>
         <tr>
@@ -559,7 +559,7 @@ sda_port</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_cgraph.png" border="0" usemap="#softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_cgraph" alt=""/></div>
 <map name="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_cgraph" id="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="219,5,296,32"/><area shape="rect" id="node3" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="188,56,327,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="425,5,501,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="397,56,528,83"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="375,107,551,133"/></map>
+</map>
 </div>
 </p>
 
@@ -570,7 +570,7 @@ sda_port</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_icgraph.png" border="0" usemap="#softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_icgraph" alt=""/></div>
 <map name="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_icgraph" id="softi2c_8c_a9e7492d54676bfe31b964f2430dcbf58_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="188,107,311,133"/><area shape="rect" id="node3" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="359,81,495,108"/><area shape="rect" id="node15" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="359,132,494,159"/><area shape="rect" id="node4" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="543,107,743,133"/><area shape="rect" id="node5" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="791,107,945,133"/><area shape="rect" id="node6" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="993,81,1100,108"/><area shape="rect" id="node14" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="998,132,1095,159"/><area shape="rect" id="node7" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="1148,81,1241,108"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1289,5,1420,32"/><area shape="rect" id="node10" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1297,56,1412,83"/><area shape="rect" id="node12" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1306,107,1403,133"/><area shape="rect" id="node13" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1295,157,1415,184"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1509,5,1563,32"/><area shape="rect" id="node11" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1468,107,1604,133"/></map>
+</map>
 </div>
 </p>
 
@@ -649,7 +649,7 @@ sda_port</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_cgraph.png" border="0" usemap="#softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_cgraph" alt=""/></div>
 <map name="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_cgraph" id="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="255,234,390,260"/><area shape="rect" id="node14" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="255,183,391,210"/><area shape="rect" id="node15" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="440,284,591,311"/><area shape="rect" id="node16" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title="softi2c_write_start" alt="" coords="253,335,392,362"/><area shape="rect" id="node17" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="447,386,583,412"/><area shape="rect" id="node3" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="454,183,577,210"/><area shape="rect" id="node13" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="453,234,577,260"/><area shape="rect" id="node4" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="639,335,801,362"/><area shape="rect" id="node7" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="851,82,989,108"/><area shape="rect" id="node11" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="881,234,959,260"/><area shape="rect" id="node12" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="653,82,787,108"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="877,310,963,336"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="849,360,991,387"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="1089,31,1165,58"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="1061,82,1192,108"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="1039,132,1215,159"/></map>
+</map>
 </div>
 </p>
 
@@ -660,7 +660,7 @@ sda_port</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_icgraph.png" border="0" usemap="#softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_icgraph" alt=""/></div>
 <map name="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_icgraph" id="softi2c_8c_ad94e633dd55968bdb12b7289d2e85d0f_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="253,107,408,133"/><area shape="rect" id="node3" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="456,81,563,108"/><area shape="rect" id="node11" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="461,132,558,159"/><area shape="rect" id="node4" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="611,81,704,108"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="752,5,883,32"/><area shape="rect" id="node7" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="760,56,875,83"/><area shape="rect" id="node9" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="769,107,866,133"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="757,157,877,184"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="971,5,1026,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="931,107,1067,133"/></map>
+</map>
 </div>
 </p>
 
@@ -711,7 +711,7 @@ sda_port</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a688954bbf22651068611c16ffd44abb1_cgraph.png" border="0" usemap="#softi2c_8c_a688954bbf22651068611c16ffd44abb1_cgraph" alt=""/></div>
 <map name="softi2c_8c_a688954bbf22651068611c16ffd44abb1_cgraph" id="softi2c_8c_a688954bbf22651068611c16ffd44abb1_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="419,132,496,159"/><area shape="rect" id="node3" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="176,43,339,69"/><area shape="rect" id="node6" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="388,183,527,209"/><area shape="rect" id="node10" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="190,144,325,171"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="414,56,501,83"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="387,5,528,32"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="626,132,702,159"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="599,183,729,209"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="576,233,752,260"/></map>
+</map>
 </div>
 </p>
 
@@ -722,7 +722,7 @@ sda_port</td>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a688954bbf22651068611c16ffd44abb1_icgraph.png" border="0" usemap="#softi2c_8c_a688954bbf22651068611c16ffd44abb1_icgraph" alt=""/></div>
 <map name="softi2c_8c_a688954bbf22651068611c16ffd44abb1_icgraph" id="softi2c_8c_a688954bbf22651068611c16ffd44abb1_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="177,81,311,108"/><area shape="rect" id="node14" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="176,132,312,159"/><area shape="rect" id="node3" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="360,107,560,133"/><area shape="rect" id="node4" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="608,107,763,133"/><area shape="rect" id="node5" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="811,81,917,108"/><area shape="rect" id="node13" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="815,132,913,159"/><area shape="rect" id="node6" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="965,81,1059,108"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1107,5,1237,32"/><area shape="rect" id="node9" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1115,56,1229,83"/><area shape="rect" id="node11" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1123,107,1221,133"/><area shape="rect" id="node12" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1112,157,1232,184"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1326,5,1381,32"/><area shape="rect" id="node10" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1285,107,1421,133"/></map>
+</map>
 </div>
 </p>
 
@@ -744,7 +744,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>byte</em>, </td>
         </tr>
         <tr>
@@ -779,7 +779,7 @@ sda_port</td>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_af53603cab17d074df7f2daea8826e423_cgraph.png" border="0" usemap="#softi2c_8c_af53603cab17d074df7f2daea8826e423_cgraph" alt=""/></div>
 <map name="softi2c_8c_af53603cab17d074df7f2daea8826e423_cgraph" id="softi2c_8c_af53603cab17d074df7f2daea8826e423_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="189,137,311,164"/><area shape="rect" id="node12" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="188,188,312,215"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="603,36,680,63"/><area shape="rect" id="node4" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="360,239,523,265"/><area shape="rect" id="node7" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="572,137,711,164"/><area shape="rect" id="node11" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="374,36,509,63"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="598,213,685,240"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="571,264,712,291"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="810,87,886,113"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="783,137,913,164"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="760,188,936,215"/></map>
+</map>
 </div>
 </p>
 
@@ -790,7 +790,7 @@ sda_port</td>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_af53603cab17d074df7f2daea8826e423_icgraph.png" border="0" usemap="#softi2c_8c_af53603cab17d074df7f2daea8826e423_icgraph" alt=""/></div>
 <map name="softi2c_8c_af53603cab17d074df7f2daea8826e423_icgraph" id="softi2c_8c_af53603cab17d074df7f2daea8826e423_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="188,107,388,133"/><area shape="rect" id="node3" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="436,107,591,133"/><area shape="rect" id="node4" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="639,81,745,108"/><area shape="rect" id="node12" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="643,132,741,159"/><area shape="rect" id="node5" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="793,81,887,108"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="935,5,1065,32"/><area shape="rect" id="node8" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="943,56,1057,83"/><area shape="rect" id="node10" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="951,107,1049,133"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="940,157,1060,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1154,5,1209,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1113,107,1249,133"/></map>
+</map>
 </div>
 </p>
 
@@ -848,7 +848,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>sda_pin</em>, </td>
         </tr>
         <tr>
@@ -860,7 +860,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>scl_pin</em>&#160;</td>
         </tr>
         <tr>
@@ -887,7 +887,7 @@ sda_port</td>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aa853ffab24fb8f7d390aab2cf94136e9_cgraph.png" border="0" usemap="#softi2c_8c_aa853ffab24fb8f7d390aab2cf94136e9_cgraph" alt=""/></div>
 <map name="softi2c_8c_aa853ffab24fb8f7d390aab2cf94136e9_cgraph" id="softi2c_8c_aa853ffab24fb8f7d390aab2cf94136e9_cgraph">
-<area shape="rect" id="node2" href="stm32_2mcu__periph_2gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock. " alt="" coords="195,5,333,32"/><area shape="rect" id="node3" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="195,56,333,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="431,5,507,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="404,56,535,83"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="381,107,557,133"/></map>
+</map>
 </div>
 </p>
 
@@ -926,7 +926,7 @@ sda_port</td>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aed568f0595bee56e4e90ef070ba0a5c9_cgraph.png" border="0" usemap="#softi2c_8c_aed568f0595bee56e4e90ef070ba0a5c9_cgraph" alt=""/></div>
 <map name="softi2c_8c_aed568f0595bee56e4e90ef070ba0a5c9_cgraph" id="softi2c_8c_aed568f0595bee56e4e90ef070ba0a5c9_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="151,284,305,311"/><area shape="rect" id="node3" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="353,284,553,311"/><area shape="rect" id="node4" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="603,234,738,260"/><area shape="rect" id="node16" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="603,183,739,210"/><area shape="rect" id="node17" href="softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="788,284,939,311"/><area shape="rect" id="node18" href="softi2c_8c.html#ae6f8766f290a4fabfad3d6099b3e98e0" title="softi2c_write_start" alt="" coords="601,335,740,362"/><area shape="rect" id="node19" href="softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="795,386,931,412"/><area shape="rect" id="node5" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="802,183,925,210"/><area shape="rect" id="node15" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="801,234,925,260"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="1229,82,1307,108"/><area shape="rect" id="node7" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="987,335,1149,362"/><area shape="rect" id="node10" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="1199,234,1337,260"/><area shape="rect" id="node14" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="1001,82,1135,108"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="1225,310,1311,336"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="1197,360,1339,387"/><area shape="rect" id="node11" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="1437,183,1513,210"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="1409,234,1540,260"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="1387,284,1563,311"/></map>
+</map>
 </div>
 </p>
 
@@ -1015,7 +1015,7 @@ sda_port</td>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_cgraph.png" border="0" usemap="#softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_cgraph" alt=""/></div>
 <map name="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_cgraph" id="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="220,5,297,32"/><area shape="rect" id="node3" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="177,56,340,83"/><area shape="rect" id="node6" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="189,132,328,159"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="433,5,519,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="405,56,547,83"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="438,107,514,133"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="411,157,541,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="388,208,564,235"/></map>
+</map>
 </div>
 </p>
 
@@ -1026,7 +1026,7 @@ sda_port</td>
 <div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_icgraph.png" border="0" usemap="#softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_icgraph" alt=""/></div>
 <map name="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_icgraph" id="softi2c_8c_aadbee361430868c06c776b2f2e5ad29f_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="178,81,313,108"/><area shape="rect" id="node14" href="softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="177,132,313,159"/><area shape="rect" id="node3" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="361,107,561,133"/><area shape="rect" id="node4" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="609,107,764,133"/><area shape="rect" id="node5" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="812,81,919,108"/><area shape="rect" id="node13" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="817,132,914,159"/><area shape="rect" id="node6" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="967,81,1060,108"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1108,5,1239,32"/><area shape="rect" id="node9" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1116,56,1231,83"/><area shape="rect" id="node11" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1125,107,1222,133"/><area shape="rect" id="node12" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1113,157,1233,184"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1327,5,1382,32"/><area shape="rect" id="node10" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1287,107,1423,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1048,7 +1048,7 @@ sda_port</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>byte</em>, </td>
         </tr>
         <tr>
@@ -1083,7 +1083,7 @@ sda_port</td>
 <div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_cgraph.png" border="0" usemap="#softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_cgraph" alt=""/></div>
 <map name="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_cgraph" id="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="190,137,313,164"/><area shape="rect" id="node12" href="softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="189,188,313,215"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="604,36,681,63"/><area shape="rect" id="node4" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="361,239,524,265"/><area shape="rect" id="node7" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="573,137,712,164"/><area shape="rect" id="node11" href="softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="375,36,510,63"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="599,213,686,240"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="572,264,713,291"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="811,87,887,113"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="784,137,915,164"/><area shape="rect" id="node10" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="761,188,937,215"/></map>
+</map>
 </div>
 </p>
 
@@ -1094,7 +1094,7 @@ sda_port</td>
 <div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_icgraph.png" border="0" usemap="#softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_icgraph" alt=""/></div>
 <map name="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_icgraph" id="softi2c_8c_aa20d39b61646e34b1eacfa85d092524e_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="189,107,389,133"/><area shape="rect" id="node3" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="437,107,592,133"/><area shape="rect" id="node4" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="640,81,747,108"/><area shape="rect" id="node12" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="645,132,742,159"/><area shape="rect" id="node5" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="795,81,888,108"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="936,5,1067,32"/><area shape="rect" id="node8" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="944,56,1059,83"/><area shape="rect" id="node10" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="953,107,1050,133"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="941,157,1061,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1155,5,1210,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1115,107,1251,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1135,7 +1135,7 @@ sda_port</td>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a0a290bb3e426004548796dc35f433b39_cgraph.png" border="0" usemap="#softi2c_8c_a0a290bb3e426004548796dc35f433b39_cgraph" alt=""/></div>
 <map name="softi2c_8c_a0a290bb3e426004548796dc35f433b39_cgraph" id="softi2c_8c_a0a290bb3e426004548796dc35f433b39_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="247,5,324,32"/><area shape="rect" id="node3" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="204,56,367,83"/><area shape="rect" id="node6" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="216,132,355,159"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="459,5,546,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="432,56,573,83"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="465,107,541,133"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="437,157,568,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="415,208,591,235"/></map>
+</map>
 </div>
 </p>
 
@@ -1146,7 +1146,7 @@ sda_port</td>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_a0a290bb3e426004548796dc35f433b39_icgraph.png" border="0" usemap="#softi2c_8c_a0a290bb3e426004548796dc35f433b39_icgraph" alt=""/></div>
 <map name="softi2c_8c_a0a290bb3e426004548796dc35f433b39_icgraph" id="softi2c_8c_a0a290bb3e426004548796dc35f433b39_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="204,107,404,133"/><area shape="rect" id="node3" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="452,107,607,133"/><area shape="rect" id="node4" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="655,81,761,108"/><area shape="rect" id="node12" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="659,132,757,159"/><area shape="rect" id="node5" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="809,81,903,108"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="951,5,1081,32"/><area shape="rect" id="node8" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="959,56,1073,83"/><area shape="rect" id="node10" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="967,107,1065,133"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="956,157,1076,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1170,5,1225,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1129,107,1265,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1187,7 +1187,7 @@ sda_port</td>
 <div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_cgraph.png" border="0" usemap="#softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_cgraph" alt=""/></div>
 <map name="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_cgraph" id="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_cgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="192,31,355,57"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="430,5,517,32"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="403,56,544,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1198,7 +1198,7 @@ sda_port</td>
 <div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_icgraph.png" border="0" usemap="#softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_icgraph" alt=""/></div>
 <map name="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_icgraph" id="softi2c_8c_ae6f8766f290a4fabfad3d6099b3e98e0_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="192,107,392,133"/><area shape="rect" id="node3" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="440,107,595,133"/><area shape="rect" id="node4" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="643,81,749,108"/><area shape="rect" id="node12" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="647,132,745,159"/><area shape="rect" id="node5" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="797,81,891,108"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="939,5,1069,32"/><area shape="rect" id="node8" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="947,56,1061,83"/><area shape="rect" id="node10" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="955,107,1053,133"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="944,157,1064,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1158,5,1213,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1117,107,1253,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1239,7 +1239,7 @@ sda_port</td>
 <div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aec892d5f421d666723fb58c9132e7088_cgraph.png" border="0" usemap="#softi2c_8c_aec892d5f421d666723fb58c9132e7088_cgraph" alt=""/></div>
 <map name="softi2c_8c_aec892d5f421d666723fb58c9132e7088_cgraph" id="softi2c_8c_aec892d5f421d666723fb58c9132e7088_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="232,5,309,32"/><area shape="rect" id="node3" href="softi2c_8c.html#a828e709a0e6357d1b1a3184d8272e409" title="softi2c_gpio_drive_low" alt="" coords="189,56,352,83"/><area shape="rect" id="node6" href="softi2c_8c.html#a8743c24425fb5c7d25977071dbad70e9" title="softi2c_gpio_highz" alt="" coords="201,132,340,159"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="445,5,531,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="417,56,559,83"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="450,107,526,133"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="423,157,553,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled. " alt="" coords="400,208,576,235"/></map>
+</map>
 </div>
 </p>
 
@@ -1250,7 +1250,7 @@ sda_port</td>
 <div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="softi2c_8c_aec892d5f421d666723fb58c9132e7088_icgraph.png" border="0" usemap="#softi2c_8c_aec892d5f421d666723fb58c9132e7088_icgraph" alt=""/></div>
 <map name="softi2c_8c_aec892d5f421d666723fb58c9132e7088_icgraph" id="softi2c_8c_aec892d5f421d666723fb58c9132e7088_icgraph">
-<area shape="rect" id="node2" href="softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="189,107,389,133"/><area shape="rect" id="node3" href="softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="437,107,592,133"/><area shape="rect" id="node4" href="softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="640,81,747,108"/><area shape="rect" id="node12" href="softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="645,132,742,159"/><area shape="rect" id="node5" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="795,81,888,108"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="936,5,1067,32"/><area shape="rect" id="node8" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="944,56,1059,83"/><area shape="rect" id="node10" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="953,107,1050,133"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="941,157,1061,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1155,5,1210,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1115,107,1251,133"/></map>
+</map>
 </div>
 </p>
 
@@ -1262,7 +1262,7 @@ sda_port</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="softi2c_8c.html">softi2c.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

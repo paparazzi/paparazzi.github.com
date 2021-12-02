@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/gps.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/gps/gps.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('gps_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_8h" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2gps_8h" id="sw_2airborne_2subsystems_2gps_8h">
-<area shape="rect" id="node3" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="89,95,240,136"/><area shape="rect" id="node12" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="304,95,454,136"/><area shape="rect" id="node15" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="835,184,1006,211"/><area shape="rect" id="node4" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="238,184,362,211"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="74,184,214,211"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="580,266,735,293"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="72,266,222,293"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="582,184,734,211"/><area shape="rect" id="node16" href="inttypes_8h.html" title="inttypes.h" alt="" coords="954,266,1039,293"/></map>
+<div class="center"><img src="gps_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps_2gps_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2gps_2gps_8h" id="sw_2airborne_2modules_2gps_2gps_8h">
+</map>
 </div>
 </div>
 <p><a href="gps_8h_source.html">Go to the source code of this file.</a></p>
@@ -210,7 +210,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ab37f7040b9efd19fdd3f92b1df77e771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771">gps_init</a> (void)</td></tr>
 <tr class="memdesc:ab37f7040b9efd19fdd3f92b1df77e771"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the global GPS state  <a href="#ab37f7040b9efd19fdd3f92b1df77e771">More...</a><br /></td></tr>
 <tr class="separator:ab37f7040b9efd19fdd3f92b1df77e771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> packet_id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data)</td></tr>
+<tr class="memitem:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> packet_id, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data)</td></tr>
 <tr class="memdesc:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS packet injection (default empty)  <a href="#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">More...</a><br /></td></tr>
 <tr class="separator:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae41a1e0948be00a7d3fa26ce6b13129a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ae41a1e0948be00a7d3fa26ce6b13129a">gps_has_been_good</a> (void)</td></tr>
@@ -218,25 +218,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ae631bcedc95daefc88cba7e639b38f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
 <tr class="memdesc:ae631bcedc95daefc88cba7e639b38f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic GPS check.  <a href="#ae631bcedc95daefc88cba7e639b38f19">More...</a><br /></td></tr>
 <tr class="separator:ae631bcedc95daefc88cba7e639b38f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad68ada7274989a4c9f08bc06d74ee5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd">gps_tow_from_sys_ticks</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> sys_ticks)</td></tr>
+<tr class="memitem:ad68ada7274989a4c9f08bc06d74ee5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd">gps_tow_from_sys_ticks</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> sys_ticks)</td></tr>
 <tr class="memdesc:ad68ada7274989a4c9f08bc06d74ee5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert time in <a class="el" href="sys__time_8h.html#structsys__time">sys_time</a> ticks to GPS time of week.  <a href="#ad68ada7274989a4c9f08bc06d74ee5bd">More...</a><br /></td></tr>
 <tr class="separator:ad68ada7274989a4c9f08bc06d74ee5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1343b41c94f919a6a593b958b275683f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a1343b41c94f919a6a593b958b275683f">utm_float_from_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> zone)</td></tr>
+<tr class="memitem:a1343b41c94f919a6a593b958b275683f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a1343b41c94f919a6a593b958b275683f">utm_float_from_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> zone)</td></tr>
 <tr class="memdesc:a1343b41c94f919a6a593b958b275683f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to get utm position in float from GPS structure.  <a href="#a1343b41c94f919a6a593b958b275683f">More...</a><br /></td></tr>
 <tr class="separator:a1343b41c94f919a6a593b958b275683f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fff1fd94429e7d036ba27af86a8c5ed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__geodetic__int.html#structUtmCoor__i">UtmCoor_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed">utm_int_from_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> zone)</td></tr>
+<tr class="memitem:a4fff1fd94429e7d036ba27af86a8c5ed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__geodetic__int.html#structUtmCoor__i">UtmCoor_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed">utm_int_from_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> zone)</td></tr>
 <tr class="memdesc:a4fff1fd94429e7d036ba27af86a8c5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to get utm position in int from GPS structure.  <a href="#a4fff1fd94429e7d036ba27af86a8c5ed">More...</a><br /></td></tr>
 <tr class="separator:a4fff1fd94429e7d036ba27af86a8c5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7cc952bdfa486da28aa1ec51a0940e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ad7cc952bdfa486da28aa1ec51a0940e7">gps_day_number</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> year, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> month, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> day)</td></tr>
+<tr class="memitem:ad7cc952bdfa486da28aa1ec51a0940e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ad7cc952bdfa486da28aa1ec51a0940e7">gps_day_number</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> year, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> month, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> day)</td></tr>
 <tr class="memdesc:ad7cc952bdfa486da28aa1ec51a0940e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of days since navigation epoch (6 January 1980)  <a href="#ad7cc952bdfa486da28aa1ec51a0940e7">More...</a><br /></td></tr>
 <tr class="separator:ad7cc952bdfa486da28aa1ec51a0940e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5904be2de6c3e1e04d7789b135bc0f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a5904be2de6c3e1e04d7789b135bc0f6b">gps_week_number</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> year, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> month, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> day)</td></tr>
+<tr class="memitem:a5904be2de6c3e1e04d7789b135bc0f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a5904be2de6c3e1e04d7789b135bc0f6b">gps_week_number</a> (<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> year, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> month, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> day)</td></tr>
 <tr class="memdesc:a5904be2de6c3e1e04d7789b135bc0f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of weeks since navigation epoch (6 January 1980)  <a href="#a5904be2de6c3e1e04d7789b135bc0f6b">More...</a><br /></td></tr>
 <tr class="separator:a5904be2de6c3e1e04d7789b135bc0f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a00bcdc4a49e0e8f7ac48f2d77113f4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd">multi_gps_mode</a></td></tr>
+<tr class="memitem:a00bcdc4a49e0e8f7ac48f2d77113f4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd">multi_gps_mode</a></td></tr>
 <tr class="separator:a00bcdc4a49e0e8f7ac48f2d77113f4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf954024f8e0433b21db7439c5bee9d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></td></tr>
 <tr class="memdesc:a5cf954024f8e0433b21db7439c5bee9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">global GPS state  <a href="#a5cf954024f8e0433b21db7439c5bee9d">More...</a><br /></td></tr>
@@ -264,37 +264,37 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0069a8447d794d029e89b885d6d17d42"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<a class="anchor" id="a0069a8447d794d029e89b885d6d17d42"></a><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></td>
 <td class="fieldname">
 azim</td>
 <td class="fielddoc">
 azimuth in deg </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a45a257f1d4283019da07e927683e70a1"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a45a257f1d4283019da07e927683e70a1"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 cno</td>
 <td class="fielddoc">
 Carrier to Noise Ratio (Signal Strength) in dbHz. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a296d46cd0ebd7609174b75c1ed5e7905"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<a class="anchor" id="a296d46cd0ebd7609174b75c1ed5e7905"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
 <td class="fieldname">
 elev</td>
 <td class="fielddoc">
 elevation in deg </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae6f83b7c4582aa1b72911052783e7338"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ae6f83b7c4582aa1b72911052783e7338"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 flags</td>
 <td class="fielddoc">
 bitfield with GPS receiver specific flags </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0f082bb982115960077c5c4f8cab9653"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a0f082bb982115960077c5c4f8cab9653"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 qi</td>
 <td class="fielddoc">
 quality bitfield (GPS receiver specific) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a941f93d35f7c73bedfc5da4d18088ca4"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a941f93d35f7c73bedfc5da4d18088ca4"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 svid</td>
 <td class="fielddoc">
@@ -327,19 +327,19 @@ Satellite ID. </td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2d6027f58f74a82bd49944931a2a2beb"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a2d6027f58f74a82bd49944931a2a2beb"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 cacc</td>
 <td class="fielddoc">
 course accuracy in rad*1e7 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa4ee5a8dc8e01e885e5b60ec13b4156d"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="aa4ee5a8dc8e01e885e5b60ec13b4156d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 comp_id</td>
 <td class="fielddoc">
 id of current gps </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3665e85487519aef462c0c44cb8e3b40"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a3665e85487519aef462c0c44cb8e3b40"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 course</td>
 <td class="fielddoc">
@@ -357,49 +357,49 @@ ecef_vel</td>
 <td class="fielddoc">
 speed ECEF in cm/s </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="afeffb02bdd18d27a87e96bb77175168f"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="afeffb02bdd18d27a87e96bb77175168f"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 fix</td>
 <td class="fielddoc">
 status of fix </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa2ab49f1a4a8aae71b3929e2c8aad7ba"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="aa2ab49f1a4a8aae71b3929e2c8aad7ba"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 gspeed</td>
 <td class="fielddoc">
 norm of 2d ground speed in cm/s </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a507f711c224173c17a15e645a21befcd"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a507f711c224173c17a15e645a21befcd"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 hacc</td>
 <td class="fielddoc">
 horizontal accuracy in cm </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a10af95f7fdab3171a789866838b0c8c3"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a10af95f7fdab3171a789866838b0c8c3"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 hmsl</td>
 <td class="fielddoc">
 height above mean sea level (MSL) in mm </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5c50b02201b63dc34282b6c353b23589"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a5c50b02201b63dc34282b6c353b23589"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 last_3dfix_ticks</td>
 <td class="fielddoc">
 cpu time ticks at last valid 3D fix </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9eb7e10f8a297f62eceb452a534264f2"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a9eb7e10f8a297f62eceb452a534264f2"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 last_3dfix_time</td>
 <td class="fielddoc">
 cpu time in sec at last valid 3D fix </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aebc3a177501ee0144c68d19cd59c9ce0"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="aebc3a177501ee0144c68d19cd59c9ce0"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 last_msg_ticks</td>
 <td class="fielddoc">
 cpu time ticks at last received GPS message </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8ef2a27a6656576aca1af1bbac6062ce"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a8ef2a27a6656576aca1af1bbac6062ce"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 last_msg_time</td>
 <td class="fielddoc">
@@ -411,7 +411,7 @@ lla_pos</td>
 <td class="fielddoc">
 position in LLA (lat,lon: deg*1e7; alt: mm over ellipsoid) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9d430d7c900b362327e4fd9551a6aae6"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a9d430d7c900b362327e4fd9551a6aae6"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 nb_channels</td>
 <td class="fielddoc">
@@ -423,37 +423,37 @@ ned_vel</td>
 <td class="fielddoc">
 speed NED in cm/s </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af6d2ba472d4430528868fd65b9d0c59c"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="af6d2ba472d4430528868fd65b9d0c59c"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 num_sv</td>
 <td class="fielddoc">
 number of sat in fix </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa0194e37ba0420998970bfe318d74a35"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="aa0194e37ba0420998970bfe318d74a35"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 pacc</td>
 <td class="fielddoc">
 position accuracy in cm </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a796d3d22856c1865abb3256a64e5b6de"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a796d3d22856c1865abb3256a64e5b6de"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 pdop</td>
 <td class="fielddoc">
 position dilution of precision scaled by 100 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae9f9449dccc1b1f9404d44246245ef7b"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="ae9f9449dccc1b1f9404d44246245ef7b"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 reset</td>
 <td class="fielddoc">
 hotstart, warmstart, coldstart </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2cad112343a238676da447e83d46f4be"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a2cad112343a238676da447e83d46f4be"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 sacc</td>
 <td class="fielddoc">
 speed accuracy in cm/s </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="acdba21d6a6cd05006627e7fa78fe2b40"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="acdba21d6a6cd05006627e7fa78fe2b40"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 speed_3d</td>
 <td class="fielddoc">
@@ -465,7 +465,7 @@ svinfos[<a class="el" href="gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">GPS_N
 <td class="fielddoc">
 holds information from the Space Vehicles (Satellites) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0568d6804839a44b26cd61ffd86046ad"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a0568d6804839a44b26cd61ffd86046ad"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 tow</td>
 <td class="fielddoc">
@@ -477,19 +477,19 @@ utm_pos</td>
 <td class="fielddoc">
 position in UTM (north,east: cm; alt: mm over MSL) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aac1ba72a9c275ba426edb075b4b3575e"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="aac1ba72a9c275ba426edb075b4b3575e"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 vacc</td>
 <td class="fielddoc">
 vertical accuracy in cm </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa49d58cc2ab1865f2a3c938a405a392a"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="aa49d58cc2ab1865f2a3c938a405a392a"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 valid_fields</td>
 <td class="fielddoc">
 bitfield indicating valid fields (GPS_VALID_x_BIT) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af6e062931b5db52e395d9f8e9b5d798c"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="af6e062931b5db52e395d9f8e9b5d798c"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 week</td>
 <td class="fielddoc">
@@ -513,19 +513,19 @@ GPS week. </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a62bc223d24475ca9f5ba01a4dbdf59c5"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a62bc223d24475ca9f5ba01a4dbdf59c5"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 t0_ticks</td>
 <td class="fielddoc">
 hw clock ticks when GPS message is received </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8f4002623b4a2a838d6e69181b533bd4"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a8f4002623b4a2a838d6e69181b533bd4"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 t0_tow</td>
 <td class="fielddoc">
 GPS time of week in ms from last message. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a36bdae78da6e3c513f7a5aec65ae6416"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a36bdae78da6e3c513f7a5aec65ae6416"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 t0_tow_frac</td>
 <td class="fielddoc">
@@ -549,91 +549,91 @@ fractional ns remainder of tow [ms], range -500000 .. 500000 </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3bdf813f5cc98e49692bfb72830cbd02"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a3bdf813f5cc98e49692bfb72830cbd02"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 accD</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4789265cbf7c59088d9c7275aeb35f35"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a4789265cbf7c59088d9c7275aeb35f35"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 accE</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="add67b5af8aaa529d18ae9b60b337f27a"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="add67b5af8aaa529d18ae9b60b337f27a"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 accN</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aaabdd36bffe942920e2bfeabfcfa7676"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="aaabdd36bffe942920e2bfeabfcfa7676"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 carrSoln</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a809675aa0ebb803cfb7afe99c314e0a3"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a809675aa0ebb803cfb7afe99c314e0a3"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 diffSoln</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a36f2e6dddae1df1155683822e73c3d4d"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a36f2e6dddae1df1155683822e73c3d4d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 gnssFixOK</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a231fde6bd2e42a9de50253ae4fb94c5a"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a231fde6bd2e42a9de50253ae4fb94c5a"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 iTOW</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a1a37a0ac518858500eb685327a1e8f76"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a1a37a0ac518858500eb685327a1e8f76"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 refStationId</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac0f2667703a0d8f46fc91fa82f6d9589"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="ac0f2667703a0d8f46fc91fa82f6d9589"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 relPosD</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac0a4052ee1274bfd6aaf173d28417979"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="ac0a4052ee1274bfd6aaf173d28417979"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 relPosE</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="acfb05effce10c8aa378dccb3ac820011"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<a class="anchor" id="acfb05effce10c8aa378dccb3ac820011"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
 <td class="fieldname">
 relPosHPD</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aefd22ed8cf7b2f1e0088fb6ce085ec34"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<a class="anchor" id="aefd22ed8cf7b2f1e0088fb6ce085ec34"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
 <td class="fieldname">
 relPosHPE</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a99902b8572da45ec09a010e4e1ffd3c1"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<a class="anchor" id="a99902b8572da45ec09a010e4e1ffd3c1"></a><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
 <td class="fieldname">
 relPosHPN</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a5d5bac94fc2d642aafb9edb97f8da1bf"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a5d5bac94fc2d642aafb9edb97f8da1bf"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 relPosN</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab13c1e193763d6d9eef87e00b1e958cc"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ab13c1e193763d6d9eef87e00b1e958cc"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 relPosValid</td>
 <td class="fielddoc">
@@ -656,49 +656,49 @@ relPosValid</td>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0a09d89147a2c5c5ce32d9ca04160994"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a0a09d89147a2c5c5ce32d9ca04160994"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Cnt105</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a99d3853155238974cf63652c8e5f2403"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a99d3853155238974cf63652c8e5f2403"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Cnt177</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a17e7e754195d574b64362e63f4d0a13c"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a17e7e754195d574b64362e63f4d0a13c"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Cnt187</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a65cd647ec71c018db01d700fb36efe8c"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a65cd647ec71c018db01d700fb36efe8c"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Crc105</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2b65844540910d901510ace881c3bde8"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a2b65844540910d901510ace881c3bde8"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Crc177</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a407f430c7fd01e7f821b3f50b87e21a8"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a407f430c7fd01e7f821b3f50b87e21a8"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 Crc187</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af5e6fdb0c22f54f04d18815f9c3dc046"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="af5e6fdb0c22f54f04d18815f9c3dc046"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 MsgType</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a6a5c8e5b6995940dbf460753aca9d68e"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a6a5c8e5b6995940dbf460753aca9d68e"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 RefStation</td>
 <td class="fielddoc">
@@ -776,7 +776,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00039">39</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00175">ahrs_dcm_update_gps()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00398">ahrs_fc_update_gps()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">ahrs_icq_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00614">error_output()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00463">gps_cb()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps__sirf_8c_source.html#l00130">gps_sirf_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00636">gps_ubx_msg()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__xsens_8c_source.html#l00154">handle_ins_msg()</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00210">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00439">ins_float_invariant_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00207">ins_reset_local_origin()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00095">nmea_gps_msg()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00175">ahrs_dcm_update_gps()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00398">ahrs_fc_update_gps()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">ahrs_icq_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00652">error_output()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00083">gps_cb()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps__sirf_8c_source.html#l00130">gps_sirf_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00098">gps_skytraq_msg()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00636">gps_ubx_msg()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__xsens_8c_source.html#l00154">handle_ins_msg()</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00210">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00445">ins_float_invariant_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00387">ins_int_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00207">ins_reset_local_origin()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00095">nmea_gps_msg()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
 
 </div>
 </div>
@@ -812,7 +812,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00037">37</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00513">dw1000_arduino_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps__datalink_8c_source.html#l00041">gps_datalink_init()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps_8c_source.html#l00264">gps_periodic_check()</a>, <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00039">gps_sim_hitl_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__udp_8c_source.html#l00042">gps_udp_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00112">ins_vectornav_monitor()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00071">intermcu_init()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
+<p>Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00513">dw1000_arduino_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps__datalink_8c_source.html#l00050">gps_datalink_init()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps_8c_source.html#l00264">gps_periodic_check()</a>, <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00039">gps_sim_hitl_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__udp_8c_source.html#l00042">gps_udp_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00112">ins_vectornav_monitor()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00071">intermcu_init()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
 
 </div>
 </div>
@@ -888,7 +888,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00057">57</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx_8c_source.html#l00315">gps_ubx_parse_nav_sat()</a>, <a class="el" href="gps__ubx_8c_source.html#l00299">gps_ubx_parse_nav_svinfo()</a>, <a class="el" href="mavlink_8c_source.html#l00697">mavlink_send_gps_status()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, and <a class="el" href="gps_8c_source.html#l00084">send_svinfo_id()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx_8c_source.html#l00315">gps_ubx_parse_nav_sat()</a>, <a class="el" href="gps__ubx_8c_source.html#l00299">gps_ubx_parse_nav_svinfo()</a>, <a class="el" href="mavlink_8c_source.html#l00699">mavlink_send_gps_status()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, and <a class="el" href="gps_8c_source.html#l00084">send_svinfo_id()</a>.</p>
 
 </div>
 </div>
@@ -922,7 +922,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00054">54</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__ubx_8c_source.html#l00278">gps_ubx_parse_nav_velned()</a>, <a class="el" href="ins__xsens_8c_source.html#l00154">handle_ins_msg()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00330">nmea_parse_RMC()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__ubx_8c_source.html#l00278">gps_ubx_parse_nav_velned()</a>, <a class="el" href="ins__xsens_8c_source.html#l00154">handle_ins_msg()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00330">nmea_parse_RMC()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>.</p>
 
 </div>
 </div>
@@ -938,7 +938,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00053">53</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00228">gps_ubx_parse_nav_posllh()</a>, <a class="el" href="gps__ubx_8c_source.html#l00245">gps_ubx_parse_nav_posutm()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>, <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00415">utm_int_from_gps()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00228">gps_ubx_parse_nav_posllh()</a>, <a class="el" href="gps__ubx_8c_source.html#l00245">gps_ubx_parse_nav_posutm()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>, <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00415">utm_int_from_gps()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +954,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00048">48</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00214">gps_ubx_parse_nav_posecef()</a>, <a class="el" href="gps__ubx_8c_source.html#l00186">gps_ubx_parse_nav_sol()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00214">gps_ubx_parse_nav_posecef()</a>, <a class="el" href="gps__ubx_8c_source.html#l00186">gps_ubx_parse_nav_sol()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>.</p>
 
 </div>
 </div>
@@ -970,7 +970,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00049">49</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00228">gps_ubx_parse_nav_posllh()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>, <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00415">utm_int_from_gps()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00228">gps_ubx_parse_nav_posllh()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="gps__nmea_8c_source.html#l00380">nmea_parse_GGA()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="gps__sirf_8c_source.html#l00197">sirf_parse_41()</a>, <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, and <a class="el" href="gps_8c_source.html#l00415">utm_int_from_gps()</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1002,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00051">51</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00186">gps_ubx_parse_nav_sol()</a>, <a class="el" href="gps__ubx_8c_source.html#l00264">gps_ubx_parse_velecef()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00157">sbp_vel_ecef_callback()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00186">gps_ubx_parse_nav_sol()</a>, <a class="el" href="gps__ubx_8c_source.html#l00264">gps_ubx_parse_velecef()</a>, <a class="el" href="gps__udp_8c_source.html#l00052">gps_udp_parse()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="gps__piksi_8c_source.html#l00157">sbp_vel_ecef_callback()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00232">sirf_parse_2()</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1018,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00052">52</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00544">gps_cb()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00636">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__ubx_8c_source.html#l00278">gps_ubx_parse_nav_velned()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="gps__datalink_8c_source.html#l00128">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00177">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00061">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>, and <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>.</p>
+<p>Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00708">gps_cb()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00127">gps_skytraq_read_message()</a>, <a class="el" href="gps__ubx_8c_source.html#l00636">gps_ubx_msg()</a>, <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>, <a class="el" href="gps__ubx_8c_source.html#l00278">gps_ubx_parse_nav_velned()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="gps__datalink_8c_source.html#l00157">parse_gps_datalink()</a>, <a class="el" href="gps__datalink_8c_source.html#l00212">parse_gps_datalink_local()</a>, <a class="el" href="gps__datalink_8c_source.html#l00090">parse_gps_datalink_small()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>, and <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1037,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00043">43</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00150">ahrs_chimu_update_gps()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="gps_8h_source.html#l00179">gps_has_been_good()</a>, <a class="el" href="ins__int_8c_source.html#l00275">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__int_8c_source.html#l00253">ins_reset_local_origin()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00150">ahrs_chimu_update_gps()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="gps_8h_source.html#l00179">gps_has_been_good()</a>, <a class="el" href="ins__int_8c_source.html#l00266">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__int_8c_source.html#l00244">ins_reset_local_origin()</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1074,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8h_source.html#l00045">45</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00328">autopilot_static_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00294">failsafe_check()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00328">autopilot_static_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00209">failsafe_check()</a>.</p>
 
 </div>
 </div>
@@ -1100,21 +1100,21 @@ RefStation</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_day_number </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_day_number </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>year</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>month</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>day</em>&#160;</td>
         </tr>
         <tr>
@@ -1147,7 +1147,7 @@ RefStation</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph.png" border="0" usemap="#gps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph" alt=""/></div>
 <map name="gps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph" id="gps_8h_ad7cc952bdfa486da28aa1ec51a0940e7_icgraph">
-<area shape="rect" id="node2" href="gps_8h.html#a5904be2de6c3e1e04d7789b135bc0f6b" title="Number of weeks since navigation epoch (6 January 1980) " alt="" coords="185,5,327,32"/><area shape="rect" id="node3" href="gps__ubx_8c.html#a838835e9377fb558daaf03719e21a85c" title="gps_ubx_parse_nav_pvt" alt="" coords="375,5,549,32"/><area shape="rect" id="node4" href="gps__ubx_8h.html#a40f87b11657c4465a6a31c8c80e2aad9" title="gps_ubx_read_message" alt="" coords="597,5,775,32"/><area shape="rect" id="node5" href="gps__ubx_8h.html#ab3be7fdb9eae93ba80f43b848cdb7416" title="gps_ubx_msg" alt="" coords="823,5,933,32"/><area shape="rect" id="node6" href="gps__ubx_8h.html#a8384aab04d3a0e824cf5a71403515730" title="gps_ubx_event" alt="" coords="981,5,1100,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1208,7 +1208,7 @@ RefStation</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph.png" border="0" usemap="#gps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph" alt=""/></div>
 <map name="gps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph" id="gps_8h_ab37f7040b9efd19fdd3f92b1df77e771_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="152,5,293,32"/><area shape="rect" id="node3" href="gps_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="189,56,256,83"/><area shape="rect" id="node5" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="124,107,321,133"/><area shape="rect" id="node6" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title="send_gps" alt="" coords="181,259,264,285"/><area shape="rect" id="node18" href="gps_8c.html#a6d23eecfe781f0c056b6168f2c9d79cd" title="send_gps_int" alt="" coords="169,208,276,235"/><area shape="rect" id="node19" href="gps_8c.html#a759fae606fdb1c49a324d700e29282ff" title="send_gps_lla" alt="" coords="171,309,275,336"/><area shape="rect" id="node20" href="gps_8c.html#af37edd466be7d8387d8fd6ca42a6ac9b" title="send_gps_rtk" alt="" coords="169,360,276,387"/><area shape="rect" id="node21" href="gps_8c.html#ab18ae177901bcfb8e7ac79113ab9b8f3" title="send_gps_rxmrtcm" alt="" coords="150,411,295,437"/><area shape="rect" id="node22" href="gps_8c.html#aff19d069394eabda725637cba722afcd" title="send_gps_sol" alt="" coords="169,461,277,488"/><area shape="rect" id="node23" href="gps_8c.html#adce46b1d3eb549af6f1358bdcb25599d" title="send SVINFO message (regardless of state) " alt="" coords="401,157,498,184"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="377,56,521,83"/><area shape="rect" id="node7" href="gps_8c.html#a7eb08958254a390bf626ecfd6dbf37de" title="send SVINFO message if updated. " alt="" coords="369,208,529,235"/><area shape="rect" id="node9" href="gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed" title="Convenience function to get utm position in int from GPS structure. " alt="" coords="380,259,519,285"/><area shape="rect" id="node8" href="gps_8c.html#a938ba23671abdae703d2b14b930b55b8" title="send_svinfo_id" alt="" coords="590,169,705,196"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="598,245,697,272"/><area shape="rect" id="node17" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="577,297,717,338"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="767,216,866,243"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="765,275,868,301"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="918,157,1065,184"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="923,209,1059,250"/><area shape="rect" id="node15" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="916,275,1067,301"/><area shape="rect" id="node16" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="923,326,1059,367"/></map>
+</map>
 </div>
 </p>
 
@@ -1221,19 +1221,19 @@ RefStation</td>
         <tr>
           <td class="memname">void gps_inject_data </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>packet_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -1247,7 +1247,7 @@ RefStation</td>
 <p>GPS packet injection (default empty) </p>
 <p>GPS packet injection (default empty) </p>
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00408">408</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps_8c_source.html#l00380">380</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p>References <a class="el" href="gps__piksi_8c_source.html#l00396">gps_piksi_write()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00103">sbp_state</a>.</p>
 
@@ -1260,7 +1260,7 @@ RefStation</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph.png" border="0" usemap="#gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph" alt=""/></div>
 <map name="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph" id="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_cgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title="gps_piksi_write" alt="" coords="176,5,293,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="341,5,452,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1271,7 +1271,7 @@ RefStation</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph.png" border="0" usemap="#gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" alt=""/></div>
 <map name="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" id="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph">
-<area shape="rect" id="node2" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer. " alt="" coords="176,183,287,209"/><area shape="rect" id="node3" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse. " alt="" coords="335,183,469,209"/><area shape="rect" id="node4" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event. " alt="" coords="531,5,669,32"/><area shape="rect" id="node5" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event. " alt="" coords="525,56,675,83"/><area shape="rect" id="node6" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event. " alt="" coords="547,107,653,133"/><area shape="rect" id="node7" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event. " alt="" coords="545,157,655,184"/><area shape="rect" id="node10" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="517,208,683,235"/><area shape="rect" id="node11" href="subsystems_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call. " alt="" coords="528,259,672,285"/><area shape="rect" id="node12" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title="w5100_event" alt="" coords="547,309,653,336"/><area shape="rect" id="node13" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event. " alt="" coords="543,360,657,387"/><area shape="rect" id="node8" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="731,157,828,184"/><area shape="rect" id="node9" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="876,157,931,184"/></map>
+</map>
 </div>
 </p>
 
@@ -1296,7 +1296,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8c_source.html#l00264">264</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00176">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00176">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>.</p>
 
 <p>Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>, and <a class="el" href="intermcu__ap_8c_source.html#l00090">intermcu_periodic()</a>.</p>
 
@@ -1307,7 +1307,7 @@ RefStation</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph.png" border="0" usemap="#gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" alt=""/></div>
 <map name="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" id="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph">
-<area shape="rect" id="node2" href="dw1000__arduino_8h.html#a37cdd8b01baa07937d73541c2a0da01e" title="dw1000_arduino_periodic" alt="" coords="200,5,383,32"/><area shape="rect" id="node3" href="intermcu_8h.html#a0bb20e4869889dcee9e118f83957f92a" title="intermcu_periodic" alt="" coords="223,56,359,83"/><area shape="rect" id="node4" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="431,56,541,83"/><area shape="rect" id="node5" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="589,56,752,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1318,9 +1318,9 @@ RefStation</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gps_tow_from_sys_ticks </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> gps_tow_from_sys_ticks </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>sys_ticks</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1332,9 +1332,9 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8c_source.html#l00355">355</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p>References <a class="el" href="gps_8c_source.html#l00070">gps_time_sync</a>, <a class="el" href="sys__time_8h_source.html#l00158">msec_of_sys_time_ticks()</a>, <a class="el" href="gps_8c_source.html#l00066">MSEC_PER_WEEK</a>, <a class="el" href="gps_8h_source.html#l00125">GpsTimeSync::t0_ticks</a>, and <a class="el" href="gps_8h_source.html#l00123">GpsTimeSync::t0_tow</a>.</p>
+<p>References <a class="el" href="gps_8c_source.html#l00070">gps_time_sync</a>, <a class="el" href="sys__time_8h_source.html#l00163">msec_of_sys_time_ticks()</a>, <a class="el" href="gps_8c_source.html#l00066">MSEC_PER_WEEK</a>, <a class="el" href="gps_8h_source.html#l00125">GpsTimeSync::t0_ticks</a>, and <a class="el" href="gps_8h_source.html#l00123">GpsTimeSync::t0_tow</a>.</p>
 
-<p>Referenced by <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00243">acInfoSetPositionLla_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00189">acInfoSetPositionLla_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00225">acInfoSetPositionUtm_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00171">acInfoSetPositionUtm_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="traffic__info_8c_source.html#l00076">parse_acinfo_dl()</a>, <a class="el" href="sensors_2trigger__ext_8c_source.html#l00046">trigger_ext_periodic()</a>, and <a class="el" href="windturbine_8c_source.html#l00041">windturbine_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00243">acInfoSetPositionLla_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00189">acInfoSetPositionLla_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00225">acInfoSetPositionUtm_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00171">acInfoSetPositionUtm_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00108">follow_me_set_wp()</a>, <a class="el" href="traffic__info_8c_source.html#l00076">parse_acinfo_dl()</a>, and <a class="el" href="windturbine_8c_source.html#l00041">windturbine_periodic()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1343,7 +1343,7 @@ RefStation</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph.png" border="0" usemap="#gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" alt=""/></div>
 <map name="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" id="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph">
-<area shape="rect" id="node2" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="228,5,404,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1354,7 +1354,7 @@ RefStation</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph.png" border="0" usemap="#gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" alt=""/></div>
 <map name="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" id="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph">
-<area shape="rect" id="node2" href="group__ac__info.html#ga6e12f427633221b371326c25b3b59c6f" title="Set position from ENU coordinates (float). " alt="" coords="230,5,397,32"/><area shape="rect" id="node3" href="group__ac__info.html#gab89f5850f23c57158ec4a2a3fbdda284" title="Set position from ENU coordinates (int). " alt="" coords="230,56,397,83"/><area shape="rect" id="node4" href="group__ac__info.html#gaae3a5100e3ea09d3da46b4080e33034b" title="Set position from LLA coordinates (float). " alt="" coords="233,107,394,133"/><area shape="rect" id="node5" href="group__ac__info.html#ga274f9df7c231a1995397bad6e86a7c86" title="Set position from LLA coordinates (int). " alt="" coords="233,157,393,184"/><area shape="rect" id="node6" href="group__ac__info.html#ga4b1c68d1f5b107bae3b4d13cf88989cd" title="Set position from UTM coordinates (float). " alt="" coords="228,208,399,235"/><area shape="rect" id="node7" href="group__ac__info.html#ga29e4bb2f49637f576849131db325e377" title="Set position from UTM coordinates (int). " alt="" coords="228,259,399,285"/><area shape="rect" id="node8" href="group__ac__info.html#gab3877b5ead09fcf8509082fbc94864bb" title="Set velocity from ENU coordinates (float). " alt="" coords="230,309,397,336"/><area shape="rect" id="node9" href="group__ac__info.html#gab7bf89b5b659d539f8257e0afd67c5cf" title="Set velocity from ENU coordinates (int). " alt="" coords="231,360,396,387"/><area shape="rect" id="node10" href="group__ac__info.html#ga17b120995d97d500b7eb5aea22214041" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="253,411,374,437"/><area shape="rect" id="node11" href="sensors_2trigger__ext_8h.html#a9966095b9196836a5ee5cb74b5322223" title="trigger_ext_periodic" alt="" coords="239,461,387,488"/><area shape="rect" id="node12" href="windturbine_8h.html#a44b819ec52bc8f9fe212c89113e2b835" title="windturbine_periodic" alt="" coords="237,512,389,539"/></map>
+</map>
 </div>
 </p>
 
@@ -1365,21 +1365,21 @@ RefStation</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_week_number </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_week_number </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>year</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>month</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>day</em>&#160;</td>
         </tr>
         <tr>
@@ -1414,7 +1414,7 @@ RefStation</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph.png" border="0" usemap="#gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" alt=""/></div>
 <map name="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" id="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph">
-<area shape="rect" id="node2" href="gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7" title="Number of days since navigation epoch (6 January 1980) " alt="" coords="195,5,327,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1425,7 +1425,7 @@ RefStation</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph.png" border="0" usemap="#gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" alt=""/></div>
 <map name="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" id="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph">
-<area shape="rect" id="node2" href="gps__ubx_8c.html#a838835e9377fb558daaf03719e21a85c" title="gps_ubx_parse_nav_pvt" alt="" coords="195,5,369,32"/><area shape="rect" id="node3" href="gps__ubx_8h.html#a40f87b11657c4465a6a31c8c80e2aad9" title="gps_ubx_read_message" alt="" coords="417,5,595,32"/><area shape="rect" id="node4" href="gps__ubx_8h.html#ab3be7fdb9eae93ba80f43b848cdb7416" title="gps_ubx_msg" alt="" coords="643,5,753,32"/><area shape="rect" id="node5" href="gps__ubx_8h.html#a8384aab04d3a0e824cf5a71403515730" title="gps_ubx_event" alt="" coords="801,5,920,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1444,7 +1444,7 @@ RefStation</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>zone</em>&#160;</td>
         </tr>
         <tr>
@@ -1470,7 +1470,7 @@ RefStation</td>
 
 <p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00247">UTM_FLOAT_OF_BFP</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00423">utm_of_lla_i()</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00463">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00210">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00439">ins_float_invariant_update_gps()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00633">ins_reset_local_origin()</a>.</p>
+<p>Referenced by <a class="el" href="ins__gps__passthrough__utm_8c_source.html#l00050">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00210">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00445">ins_float_invariant_update_gps()</a>, and <a class="el" href="ins_8c_source.html#l00055">ins_reset_local_origin()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1479,7 +1479,7 @@ RefStation</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph.png" border="0" usemap="#gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph" alt=""/></div>
 <map name="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph" id="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="225,93,323,120"/><area shape="rect" id="node9" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="204,145,344,186"/><area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="394,64,493,91"/><area shape="rect" id="node6" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="392,123,495,149"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="545,5,691,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="550,57,686,98"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="543,123,693,149"/><area shape="rect" id="node8" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="550,174,686,215"/></map>
+</map>
 </div>
 </p>
 
@@ -1490,7 +1490,7 @@ RefStation</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph.png" border="0" usemap="#gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" alt=""/></div>
 <map name="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" id="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph">
-<area shape="rect" id="node2" href="ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="250,5,317,32"/><area shape="rect" id="node4" href="ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title="ins_alt_float_update_gps" alt="" coords="420,56,600,83"/><area shape="rect" id="node7" href="ins__float__invariant_8h.html#a61e3f6c5195a9e0e99428c7cb5981382" title="ins_float_invariant\l_update_gps" alt="" coords="215,206,352,247"/><area shape="rect" id="node10" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="204,107,363,133"/><area shape="rect" id="node3" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="411,5,609,32"/><area shape="rect" id="node5" href="ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="713,56,780,83"/><area shape="rect" id="node6" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title="ins_alt_float_init" alt="" coords="884,56,1008,83"/><area shape="rect" id="node8" href="ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="477,263,543,289"/><area shape="rect" id="node9" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="678,259,815,301"/><area shape="rect" id="node11" href="common__nav_8h.html#a1886ff619a5c03dc6c54729f301fa62e" title="Reset the geographic reference to the current GPS fix. " alt="" coords="433,107,587,133"/><area shape="rect" id="node12" href="ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="477,157,543,184"/><area shape="rect" id="node14" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="437,208,583,235"/><area shape="rect" id="node13" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title="ins_module_wrapper_init" alt="" coords="657,157,836,184"/><area shape="rect" id="node15" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="713,208,780,235"/><area shape="rect" id="node16" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="901,208,991,235"/></map>
+</map>
 </div>
 </p>
 
@@ -1509,7 +1509,7 @@ RefStation</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>zone</em>&#160;</td>
         </tr>
         <tr>
@@ -1543,7 +1543,7 @@ RefStation</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph.png" border="0" usemap="#gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph" alt=""/></div>
 <map name="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph" id="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="213,93,311,120"/><area shape="rect" id="node9" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="192,145,332,186"/><area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="382,64,481,91"/><area shape="rect" id="node6" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="380,123,483,149"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="533,5,679,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="538,57,674,98"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="531,123,681,149"/><area shape="rect" id="node8" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="538,174,674,215"/></map>
+</map>
 </div>
 </p>
 
@@ -1554,7 +1554,7 @@ RefStation</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph.png" border="0" usemap="#gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" alt=""/></div>
 <map name="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" id="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph">
-<area shape="rect" id="node2" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title="send_gps" alt="" coords="192,5,275,32"/><area shape="rect" id="node3" href="gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="323,5,393,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1575,7 +1575,7 @@ RefStation</td>
 
 <p>Definition at line <a class="el" href="gps_8c_source.html#l00069">69</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00158">airspeed_ets_read_event()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="baro__sim_8c_source.html#l00039">baro_sim_periodic()</a>, <a class="el" href="nav__fish_8c_source.html#l00403">calculate_new_heading()</a>, <a class="el" href="dc_8c_source.html#l00104">dc_send_shot_position()</a>, <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00614">error_output()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps_8c_source.html#l00282">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps_8c_source.html#l00264">gps_periodic_check()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00039">gps_sim_hitl_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="ins__vectornav__wrapper_8c_source.html#l00031">gps_vectornav_init()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00227">gx3_packet_read_message()</a>, <a class="el" href="hf__float_8c_source.html#l00541">hff_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00649">ins_reset_altitude_ref()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00633">ins_reset_local_origin()</a>, <a class="el" href="ins_8c_source.html#l00068">ins_reset_utm_zone()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00112">ins_vectornav_monitor()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00226">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00217">ins_vectornav_set_sacc()</a>, <a class="el" href="mavlink_8c_source.html#l00665">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00697">mavlink_send_gps_status()</a>, <a class="el" href="meteo__stick_8c_source.html#l00286">meteo_stick_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00064">put_alt()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00147">send_fp_min()</a>, <a class="el" href="gps_8c_source.html#l00124">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00175">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00203">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00226">send_gps_sol()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>, <a class="el" href="gps_8c_source.html#l00096">send_svinfo()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, <a class="el" href="gps_8c_source.html#l00084">send_svinfo_id()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>, <a class="el" href="tcas_8c_source.html#l00117">tcas_periodic_task_1Hz()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00225">thd_startlog()</a>, and <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00159">airspeed_ets_read_event()</a>, <a class="el" href="alt__filter_8c_source.html#l00061">alt_filter_periodic()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00069">ArduIMU_periodicGPS()</a>, <a class="el" href="baro__sim_8c_source.html#l00039">baro_sim_periodic()</a>, <a class="el" href="nav__fish_8c_source.html#l00403">calculate_new_heading()</a>, <a class="el" href="dc_8c_source.html#l00104">dc_send_shot_position()</a>, <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00652">error_output()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00108">follow_me_set_wp()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="gps_8c_source.html#l00282">gps_cb()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps_8c_source.html#l00264">gps_periodic_check()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00039">gps_sim_hitl_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00025">gps_sim_init()</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="ins__vectornav__wrapper_8c_source.html#l00031">gps_vectornav_init()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00227">gx3_packet_read_message()</a>, <a class="el" href="hf__float_8c_source.html#l00541">hff_update_gps()</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00153">ins_reset_altitude_ref()</a>, <a class="el" href="ins_8c_source.html#l00055">ins_reset_local_origin()</a>, <a class="el" href="ins_8c_source.html#l00068">ins_reset_utm_zone()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00112">ins_vectornav_monitor()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00226">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00217">ins_vectornav_set_sacc()</a>, <a class="el" href="mavlink_8c_source.html#l00667">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00699">mavlink_send_gps_status()</a>, <a class="el" href="meteo__stick_8c_source.html#l00286">meteo_stick_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00064">put_alt()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00147">send_fp_min()</a>, <a class="el" href="gps_8c_source.html#l00124">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00175">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00203">send_gps_lla()</a>, <a class="el" href="gps_8c_source.html#l00226">send_gps_sol()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>, <a class="el" href="gps_8c_source.html#l00096">send_svinfo()</a>, <a class="el" href="gps_8c_source.html#l00108">send_svinfo_available()</a>, <a class="el" href="gps_8c_source.html#l00084">send_svinfo_id()</a>, <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>, <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>, <a class="el" href="tcas_8c_source.html#l00117">tcas_periodic_task_1Hz()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00225">thd_startlog()</a>, and <a class="el" href="traffic__info_8c_source.html#l00066">update_geoid_height()</a>.</p>
 
 </div>
 </div>
@@ -1600,7 +1600,7 @@ RefStation</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> multi_gps_mode</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> multi_gps_mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1614,8 +1614,8 @@ RefStation</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="gps_8h.html">gps.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:19 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps_8h.html">gps.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

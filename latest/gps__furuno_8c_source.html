@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/gps/gps_furuno.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/gps/gps_furuno.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps__nmea_8h.html">gps_nmea.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GST,0&quot;</span>       <span class="comment">// Disable GST</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">   56</a></span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">   56</a></span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a> = 0;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843">nmea_parse_perdcrv</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="gps__nmea_8h.html#afbe97e63de2729cff1ef3ba45148f48f">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#afbe97e63de2729cff1ef3ba45148f48f">nmea_configure</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i, j, len, <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i, j, len, <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">char</span> buf[128];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">for</span> (i = <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a>; i &lt; <a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>; i++) {</div>
@@ -249,7 +249,6 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="ttc" id="link__mcu__spi_8c_html_aa60093a9a5d5d17864cfda66c47733e3"><div class="ttname"><a href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a></div><div class="ttdeci">static uint16_t crc</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__spi_8c_source.html#l00036">link_mcu_spi.c:36</a></div></div>
 <div class="ttc" id="gps__nmea_8h_html"><div class="ttname"><a href="gps__nmea_8h.html">gps_nmea.h</a></div><div class="ttdoc">NMEA protocol specific code. </div></div>
 <div class="ttc" id="gps__furuno_8c_html_ad2d3dbbf0495a9206d80e4a8c15d4fe3"><div class="ttname"><a href="gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">nmea_parse_prop_init</a></div><div class="ttdeci">void nmea_parse_prop_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__furuno_8c_source.html#l00090">gps_furuno.c:90</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="gps__nmea_8c_html_a7d5a551d259e5f21f46eee9db6f3590a"><div class="ttname"><a href="gps__nmea_8c.html#a7d5a551d259e5f21f46eee9db6f3590a">nmea_calc_crc</a></div><div class="ttdeci">uint8_t nmea_calc_crc(const char *buff, int buff_sz)</div><div class="ttdoc">Calculate control sum of binary buffer. </div><div class="ttdef"><b>Definition:</b> <a href="gps__nmea_8c_source.html#l00243">gps_nmea.c:243</a></div></div>
 <div class="ttc" id="serial_8c_html_a6f8059414f0228f0256115e024eeed4b"><div class="ttname"><a href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00026">serial.c:26</a></div></div>
 <div class="ttc" id="gps__nmea_8h_html_ad61e507e331a3413630a4bf2256a1ecd"><div class="ttname"><a href="gps__nmea_8h.html#ad61e507e331a3413630a4bf2256a1ecd">GpsNmea::is_configured</a></div><div class="ttdeci">bool is_configured</div><div class="ttdoc">flag set to TRUE if configuration is finished </div><div class="ttdef"><b>Definition:</b> <a href="gps__nmea_8h_source.html#l00045">gps_nmea.h:45</a></div></div>
@@ -258,6 +257,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="ttc" id="gps_8h_html_a8c0416718a59e50261890cd870f716ea"><div class="ttname"><a href="gps_8h.html#a8c0416718a59e50261890cd870f716ea">GpsState::ned_vel</a></div><div class="ttdeci">struct NedCoor_i ned_vel</div><div class="ttdoc">speed NED in cm/s </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00096">gps.h:96</a></div></div>
 <div class="ttc" id="gps__furuno_8c_html_a472cd42e5e349a6d6f76dc3524d3ebd1"><div class="ttname"><a href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a></div><div class="ttdeci">static uint8_t furuno_cfg_cnt</div><div class="ttdef"><b>Definition:</b> <a href="gps__furuno_8c_source.html#l00056">gps_furuno.c:56</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_ga5afd098a83e572b854e157486ccb569f"><div class="ttname"><a href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">ltp_def_from_ecef_i</a></div><div class="ttdeci">void ltp_def_from_ecef_i(struct LtpDef_i *def, struct EcefCoor_i *ecef)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8c_source.html#l00060">pprz_geodetic_int.c:60</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_gab146002b10face50bd92576ce4882f1d"><div class="ttname"><a href="group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d">ecef_of_ned_vect_i</a></div><div class="ttdeci">void ecef_of_ned_vect_i(struct EcefCoor_i *ecef, struct LtpDef_i *def, struct NedCoor_i *ned)</div><div class="ttdoc">Rotate a vector from NED to ECEF. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8c_source.html#l00225">pprz_geodetic_int.c:225</a></div></div>
 <div class="ttc" id="gps__furuno_8c_html_af1acf1db93b8ed0add6615e60d210c20"><div class="ttname"><a href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a></div><div class="ttdeci">#define GpsLinkDevice</div><div class="ttdef"><b>Definition:</b> <a href="gps__furuno_8c_source.html#l00060">gps_furuno.c:60</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -265,8 +265,8 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__furuno_8c.html">gps_furuno.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__furuno_8c.html">gps_furuno.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

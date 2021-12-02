@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -217,9 +217,6 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GET_FRAME_ERR_LPF_FREQUENCY
 : <a class="el" href="cc2500__settings_8h.html#ab7a39220c2b9f664d599259f1d5a8cb7">cc2500_settings.h</a>
 </li>
-<li>GET_LINE_CODING
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a6698d8d2ca56fafdc943aec2cede1daf">usb_ser_hw.c</a>
-</li>
 <li>GetAltRef
 : <a class="el" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">nav.h</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#a24891072dad1936c21f884d623bda8b4">navigation.h</a>
@@ -266,6 +263,10 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GetPosAlt
 : <a class="el" href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">nav.h</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">navigation.h</a>
+</li>
+<li>GetPosHeight
+: <a class="el" href="nav_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96">nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96">navigation.h</a>
 </li>
 <li>GetPosX
 : <a class="el" href="nav_8h.html#ac500a50330425cb4a3054774289bb205">nav.h</a>
@@ -328,9 +329,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="xsens__parser_8h.html#a50f2d2d7acbe051094fd37b71ce583e2">xsens_parser.h</a>
 </li>
 <li>GOT_CHECKSUM
-: <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
-, <a class="el" href="gps__nmea_8c.html#a174938824d754f469eba1dfc241ec170">gps_nmea.c</a>
+: <a class="el" href="gps__nmea_8c.html#a174938824d754f469eba1dfc241ec170">gps_nmea.c</a>
 , <a class="el" href="gps__skytraq_8c.html#a174938824d754f469eba1dfc241ec170">gps_skytraq.c</a>
+, <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
 </li>
 <li>GOT_CHECKSUM1
 : <a class="el" href="gps__mtk_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f">gps_mtk.c</a>
@@ -389,8 +390,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 , <a class="el" href="rtcm3_8h.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687">rtcm3.h</a>
 </li>
 <li>GOT_START
-: <a class="el" href="xsens__parser_8h.html#af7b9faabc17bf7ec5926e45080b01171">xsens_parser.h</a>
-, <a class="el" href="gps__nmea_8c.html#af7b9faabc17bf7ec5926e45080b01171">gps_nmea.c</a>
+: <a class="el" href="gps__nmea_8c.html#af7b9faabc17bf7ec5926e45080b01171">gps_nmea.c</a>
+, <a class="el" href="xsens__parser_8h.html#af7b9faabc17bf7ec5926e45080b01171">xsens_parser.h</a>
 </li>
 <li>GOT_STX
 : <a class="el" href="protocol_8c.html#a6bac978d2a28741610d8b5b5bd88799c">protocol.c</a>
@@ -438,136 +439,133 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GP2Y_SLAVE_ADDR
 : <a class="el" href="dust__gp2y_8c.html#a699fbbcaef8fc03bb1b2d7a0083261ab">dust_gp2y.c</a>
 </li>
-<li>GPIO
-: <a class="el" href="LPC21xx_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">LPC21xx.h</a>
-</li>
 <li>GPIO0
 : <a class="el" href="gpio__def_8h.html#a20f88dbc839eb32b5fec903474befdd7">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">gpio_arch.h</a>
 </li>
 <li>GPIO1
 : <a class="el" href="gpio__def_8h.html#abe59d3a7ce7a18e9440bd54cae1f3fc8">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#abe59d3a7ce7a18e9440bd54cae1f3fc8">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#abe59d3a7ce7a18e9440bd54cae1f3fc8">gpio_arch.h</a>
 </li>
 <li>GPIO10
-: <a class="el" href="gpio__def_8h.html#ae285b2475841ecb1ac23d8511b360d0e">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ae285b2475841ecb1ac23d8511b360d0e">gpio_arch.h</a>
+: <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ae285b2475841ecb1ac23d8511b360d0e">gpio_arch.h</a>
+, <a class="el" href="gpio__def_8h.html#ae285b2475841ecb1ac23d8511b360d0e">gpio_def.h</a>
 </li>
 <li>GPIO11
 : <a class="el" href="gpio__def_8h.html#ac376b1c124378935df7b3c171b2bef35">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">gpio_arch.h</a>
 </li>
 <li>GPIO12
 : <a class="el" href="gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
 </li>
 <li>GPIO13
 : <a class="el" href="gpio__def_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">gpio_arch.h</a>
 </li>
 <li>GPIO14
 : <a class="el" href="gpio__def_8h.html#ad42a78782c6bb99ad7e7c1ec975b5b96">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ad42a78782c6bb99ad7e7c1ec975b5b96">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ad42a78782c6bb99ad7e7c1ec975b5b96">gpio_arch.h</a>
 </li>
 <li>GPIO15
 : <a class="el" href="gpio__def_8h.html#aabc2f003b1495cd03eef1fae31e6847a">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a">gpio_arch.h</a>
 </li>
 <li>GPIO16
 : <a class="el" href="gpio__def_8h.html#a209f1a013588f481824ff0f57d2fc21e">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a209f1a013588f481824ff0f57d2fc21e">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a209f1a013588f481824ff0f57d2fc21e">gpio_arch.h</a>
 </li>
 <li>GPIO17
 : <a class="el" href="gpio__def_8h.html#abf972cfb05a7f86e9a69db243792cbac">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#abf972cfb05a7f86e9a69db243792cbac">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#abf972cfb05a7f86e9a69db243792cbac">gpio_arch.h</a>
 </li>
 <li>GPIO18
 : <a class="el" href="gpio__def_8h.html#aaa3c86348d99077ec718c2461f0d4a91">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#aaa3c86348d99077ec718c2461f0d4a91">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aaa3c86348d99077ec718c2461f0d4a91">gpio_arch.h</a>
 </li>
 <li>GPIO19
 : <a class="el" href="gpio__def_8h.html#a546be0d3be4335be87bd46b9d6442edd">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a546be0d3be4335be87bd46b9d6442edd">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a546be0d3be4335be87bd46b9d6442edd">gpio_arch.h</a>
 </li>
 <li>GPIO2
 : <a class="el" href="gpio__def_8h.html#a88a95401ea8409c83cbda42f31450cd0">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a88a95401ea8409c83cbda42f31450cd0">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a88a95401ea8409c83cbda42f31450cd0">gpio_arch.h</a>
 </li>
 <li>GPIO20
 : <a class="el" href="gpio__def_8h.html#a414493de8389b7908e5e8b6723a5fdd3">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a414493de8389b7908e5e8b6723a5fdd3">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a414493de8389b7908e5e8b6723a5fdd3">gpio_arch.h</a>
 </li>
 <li>GPIO21
 : <a class="el" href="gpio__def_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe">gpio_arch.h</a>
 </li>
 <li>GPIO22
 : <a class="el" href="gpio__def_8h.html#abdcdabfb67b100b20bd0326d730b69bb">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#abdcdabfb67b100b20bd0326d730b69bb">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#abdcdabfb67b100b20bd0326d730b69bb">gpio_arch.h</a>
 </li>
 <li>GPIO23
 : <a class="el" href="gpio__def_8h.html#abd64ab501b16d9074764973f71adde81">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#abd64ab501b16d9074764973f71adde81">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#abd64ab501b16d9074764973f71adde81">gpio_arch.h</a>
 </li>
 <li>GPIO24
 : <a class="el" href="gpio__def_8h.html#a5d3043fd1db106a844092560243b5ddf">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a5d3043fd1db106a844092560243b5ddf">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a5d3043fd1db106a844092560243b5ddf">gpio_arch.h</a>
 </li>
 <li>GPIO25
 : <a class="el" href="gpio__def_8h.html#a36cff7d300b200f71fcf3341651c4ae1">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a36cff7d300b200f71fcf3341651c4ae1">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a36cff7d300b200f71fcf3341651c4ae1">gpio_arch.h</a>
 </li>
 <li>GPIO26
 : <a class="el" href="gpio__def_8h.html#a1471cf2ee224d707874fa19c68b3d5dc">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1471cf2ee224d707874fa19c68b3d5dc">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1471cf2ee224d707874fa19c68b3d5dc">gpio_arch.h</a>
 </li>
 <li>GPIO27
 : <a class="el" href="gpio__def_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07">gpio_arch.h</a>
 </li>
 <li>GPIO28
 : <a class="el" href="gpio__def_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7">gpio_arch.h</a>
 </li>
 <li>GPIO29
 : <a class="el" href="gpio__def_8h.html#a62fa810782439ccd99ea38f7ed500a94">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a62fa810782439ccd99ea38f7ed500a94">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a62fa810782439ccd99ea38f7ed500a94">gpio_arch.h</a>
 </li>
 <li>GPIO3
 : <a class="el" href="gpio__def_8h.html#af3cc04d651b622d5323d74dc2f0999a0">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">gpio_arch.h</a>
 </li>
 <li>GPIO30
 : <a class="el" href="gpio__def_8h.html#ab2aa0ef0d4e65930b0caa23b1bf65388">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ab2aa0ef0d4e65930b0caa23b1bf65388">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ab2aa0ef0d4e65930b0caa23b1bf65388">gpio_arch.h</a>
 </li>
 <li>GPIO31
 : <a class="el" href="gpio__def_8h.html#ae9d664cb72ad512e573c2827e799216d">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ae9d664cb72ad512e573c2827e799216d">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ae9d664cb72ad512e573c2827e799216d">gpio_arch.h</a>
 </li>
 <li>GPIO4
 : <a class="el" href="gpio__def_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8">gpio_arch.h</a>
 </li>
 <li>GPIO5
 : <a class="el" href="gpio__def_8h.html#a1a96368c99d63b0e715b7e0421f4a209">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209">gpio_arch.h</a>
 </li>
 <li>GPIO6
 : <a class="el" href="gpio__def_8h.html#a46027cd97ff756e5ddadcc10811b5699">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a46027cd97ff756e5ddadcc10811b5699">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a46027cd97ff756e5ddadcc10811b5699">gpio_arch.h</a>
 </li>
 <li>GPIO7
 : <a class="el" href="gpio__def_8h.html#a3820cacb614277004870fc37b33ad084">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a3820cacb614277004870fc37b33ad084">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3820cacb614277004870fc37b33ad084">gpio_arch.h</a>
 </li>
 <li>GPIO8
 : <a class="el" href="gpio__def_8h.html#aa951be0ce26f788049a86e407a70ae20">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">gpio_arch.h</a>
 </li>
 <li>GPIO9
 : <a class="el" href="gpio__def_8h.html#ae2a4c4d28729daf18e1923a1878e7352">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352">gpio_arch.h</a>
+, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352">gpio_arch.h</a>
 </li>
 <li>GPIO__TIO_HV_STATUS
 : <a class="el" href="vl53l1x__api_8h.html#a2806961b4373aaf95b11489324e8f84b">vl53l1x_api.h</a>
@@ -690,13 +688,13 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="gpio__ardrone_8c.html#a504d13ed192a0d97cb4eb9452a8e142c">gpio_ardrone.c</a>
 </li>
 <li>GPIOA
-: <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">gpio_arch.h</a>
+: <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">gpio_arch.h</a>
 </li>
 <li>GPIOA_OTG_FS_VBUS
 : <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a4e308bd7d224ffaf526840b7b74d84cc">board.h</a>
 </li>
 <li>GPIOB
-: <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">gpio_arch.h</a>
+: <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">gpio_arch.h</a>
 </li>
 <li>GPIOC
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">gpio_arch.h</a>
@@ -742,6 +740,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 </li>
 <li>gps_datalink_periodic_check
 : <a class="el" href="gps__datalink_8h.html#ab0b9af870e1279630618bc5e76fc810e">gps_datalink.h</a>
+</li>
+<li>GPS_DATALINK_USE_MAG
+: <a class="el" href="gps__datalink_8c.html#a5e006487ea2773e5f186b0c4233bb332">gps_datalink.c</a>
 </li>
 <li>GPS_DW1000_ID
 : <a class="el" href="abi__sender__ids_8h.html#abedd83b6da15e621b777f93a8893e31b">abi_sender_ids.h</a>
@@ -878,11 +879,6 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GPS_R
 : <a class="el" href="ins__alt__float_8c.html#a64f433aa84bea43c5ef47b59b1cab4d3">ins_alt_float.c</a>
 </li>
-<li>GPS_RESET_GPIO
-: <a class="el" href="logom__2_86_8h.html#a93cac9504742c75814121660d07a0c4d">logom_2.6.h</a>
-, <a class="el" href="sdlog__1_80_8h.html#a93cac9504742c75814121660d07a0c4d">sdlog_1.0.h</a>
-, <a class="el" href="tiny__2_81_8h.html#a93cac9504742c75814121660d07a0c4d">tiny_2.1.h</a>
-</li>
 <li>GPS_SBAS_AUTOSCAN
 : <a class="el" href="gps__ubx__ucenter_8c.html#a92fba9c1446fe57d41be6ecfc7ee4045">gps_ubx_ucenter.c</a>
 </li>
@@ -933,29 +929,29 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 </li>
 <li>GPS_UBX_ENABLE_NMEA_DATA_MASK
 : <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
+, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
 , <a class="el" href="swing_8h.html#a795637c038061d50a428834973f875ef">swing.h</a>
 , <a class="el" href="gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef">gps_ubx_ucenter.c</a>
-, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
 </li>
 <li>GPS_UBX_ERR_CHECKSUM
-: <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_MSG_TOO_LONG
 : <a class="el" href="gps__ubx_8c.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">gps_ubx.c</a>
 , <a class="el" href="rtcm3_8h.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_NONE
-: <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_OUT_OF_SYNC
 : <a class="el" href="gps__ubx_8c.html#af2686e059a3acebbbe398e9bd7fb155c">gps_ubx.c</a>
 , <a class="el" href="rtcm3_8h.html#af2686e059a3acebbbe398e9bd7fb155c">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OVERRUN
-: <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_UNEXPECTED
 : <a class="el" href="gps__ubx_8c.html#a2a445739849feb8372c804feacf01ee5">gps_ubx.c</a>
@@ -965,8 +961,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#acf3cb8ecc014c5b1d2224b6ff412eeff">abi_sender_ids.h</a>
 </li>
 <li>GPS_UBX_MAX_PAYLOAD
-: <a class="el" href="rtcm3_8h.html#ae492c405c3e7a1b93c91507b2aab2538">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">gps_ubx.h</a>
+: <a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">gps_ubx.h</a>
+, <a class="el" href="rtcm3_8h.html#ae492c405c3e7a1b93c91507b2aab2538">rtcm3.h</a>
 </li>
 <li>GPS_UBX_NAV5_DYNAMICS
 : <a class="el" href="gps__ubx__ucenter_8c.html#aebbf8779525abb9e3be454022b86cb8e">gps_ubx_ucenter.c</a>
@@ -1137,11 +1133,11 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#afde85d56c5c5d37ece2c4bfb640e72b5">guidance_h.h</a>
 </li>
 <li>GUIDANCE_H_MODE_MODULE_SETTING
-: <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
-, <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
-, <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
 , <a class="el" href="optical__flow__hover_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
+, <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
+, <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
 </li>
 <li>GUIDANCE_H_MODE_NAV
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a">guidance_h.h</a>
@@ -1290,9 +1286,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 </li>
 <li>GUIDANCE_V_MODE_MODULE_SETTING
 : <a class="el" href="ctrl__module__innerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_innerloop_demo.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
 , <a class="el" href="vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">vertical_ctrl_module_demo.h</a>
 , <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
 , <a class="el" href="ctrl__module__outerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_outerloop_demo.h</a>
 </li>
 <li>GUIDANCE_V_MODE_NAV
@@ -1610,7 +1606,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

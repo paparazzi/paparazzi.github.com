@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,10 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sim_2led__hw_8h_source.html">led_hw.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;caml/mlvalues.h&gt;</code><br />
+<code>#include &lt;caml/memory.h&gt;</code><br />
+<code>#include &lt;caml/callback.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for led_hw.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,7 +124,7 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2led__hw_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2sim_2led__hw_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2sim_2led__hw_8c" id="sw_2airborne_2arch_2sim_2led__hw_8c">
-<area shape="rect" id="node2" href="sim_2led__hw_8h.html" title="led_hw.h" alt="" coords="193,95,269,121"/></map>
+</map>
 </div>
 </div>
 <p><a href="sim_2led__hw_8c_source.html">Go to the source code of this file.</a></p>
@@ -129,15 +133,81 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:aa85b1c7cdad6a8b6035a17361f395886"><td class="memItemLeft" align="right" valign="top">value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">register_leds_cb</a> (value cb_name)</td></tr>
 <tr class="separator:aa85b1c7cdad6a8b6035a17361f395886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d6c5ad3334b9f845e8a94ad99af511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#a72d6c5ad3334b9f845e8a94ad99af511">_led_on</a> (int i)</td></tr>
+<tr class="separator:a72d6c5ad3334b9f845e8a94ad99af511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1ace06f3ca4d5712b23671a38424bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#a7c1ace06f3ca4d5712b23671a38424bc">_led_off</a> (int i)</td></tr>
+<tr class="separator:a7c1ace06f3ca4d5712b23671a38424bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98d41371c59f9a31460cd5137460f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#ac98d41371c59f9a31460cd5137460f7d">_led_toggle</a> (int i)</td></tr>
+<tr class="separator:ac98d41371c59f9a31460cd5137460f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae292f9d2a858553831b8f8934ba4d2fd"><td class="memItemLeft" align="right" valign="top">value *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = 0</td></tr>
 <tr class="separator:ae292f9d2a858553831b8f8934ba4d2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64c76e6560c3cce05e312eb542f1c6cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#a64c76e6560c3cce05e312eb542f1c6cd">led_disable</a> = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
-<tr class="separator:a64c76e6560c3cce05e312eb542f1c6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f024804847d7447b49616f4935e903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2led__hw_8c.html#aa2f024804847d7447b49616f4935e903">led_disabled</a> = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="separator:aa2f024804847d7447b49616f4935e903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7c1ace06f3ca4d5712b23671a38424bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _led_off </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00018">18</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+
+<p>References <a class="el" href="sim_2led__hw_8c_source.html#l00009">led_disabled</a>, and <a class="el" href="sim_2led__hw_8c_source.html#l00008">leds_closure</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72d6c5ad3334b9f845e8a94ad99af511"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _led_on </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00017">17</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+
+<p>References <a class="el" href="sim_2led__hw_8c_source.html#l00009">led_disabled</a>, and <a class="el" href="sim_2led__hw_8c_source.html#l00008">leds_closure</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac98d41371c59f9a31460cd5137460f7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _led_toggle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00019">19</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+
+<p>References <a class="el" href="sim_2led__hw_8c_source.html#l00009">led_disabled</a>, and <a class="el" href="sim_2led__hw_8c_source.html#l00008">leds_closure</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa85b1c7cdad6a8b6035a17361f395886"></a>
 <div class="memitem">
 <div class="memproto">
@@ -152,24 +222,26 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00006">6</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00011">11</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
 
-<p>References <a class="el" href="sim_2led__hw_8c_source.html#l00003">leds_closure</a>.</p>
+<p>References <a class="el" href="sim_2led__hw_8c_source.html#l00008">leds_closure</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a64c76e6560c3cce05e312eb542f1c6cd"></a>
+<a class="anchor" id="aa2f024804847d7447b49616f4935e903"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool led_disable = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+          <td class="memname">bool led_disabled = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00004">4</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00009">9</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sim_2led__hw_8c_source.html#l00018">_led_off()</a>, <a class="el" href="sim_2led__hw_8c_source.html#l00017">_led_on()</a>, and <a class="el" href="sim_2led__hw_8c_source.html#l00019">_led_toggle()</a>.</p>
 
 </div>
 </div>
@@ -183,9 +255,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00003">3</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
+<p>Definition at line <a class="el" href="sim_2led__hw_8c_source.html#l00008">8</a> of file <a class="el" href="sim_2led__hw_8c_source.html">led_hw.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sim_2led__hw_8c_source.html#l00006">register_leds_cb()</a>.</p>
+<p>Referenced by <a class="el" href="sim_2led__hw_8c_source.html#l00018">_led_off()</a>, <a class="el" href="sim_2led__hw_8c_source.html#l00017">_led_on()</a>, <a class="el" href="sim_2led__hw_8c_source.html#l00019">_led_toggle()</a>, and <a class="el" href="sim_2led__hw_8c_source.html#l00011">register_leds_cb()</a>.</p>
 
 </div>
 </div>
@@ -195,7 +267,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim_2led__hw_8c.html">led_hw.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:28 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

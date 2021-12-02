@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -202,9 +202,6 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 <li>last_gps_alt
 : <a class="el" href="alt__filter_8c.html#a29bc3860cd47987f526e6d61e83009f9">alt_filter.c</a>
 </li>
-<li>last_idle_counter
-: <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a98113b92f2bdb40c5e2e1c173ccda466">rtos_mon_arch.c</a>
-</li>
 <li>last_imu_stamp
 : <a class="el" href="ins__mekf__wind__wrapper_8c.html#a7834cee9ef671f12c835b0621d6064fd">ins_mekf_wind_wrapper.c</a>
 </li>
@@ -233,8 +230,8 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="ctrl__windtunnel_8c.html#aa5604a41c0823948eaa1488c4c9b3220">ctrl_windtunnel.c</a>
 </li>
 <li>last_transmision
-: <a class="el" href="dcf_8c.html#a2c808fb51be63b31ff1bd655c5803729">dcf.c</a>
-, <a class="el" href="ctc_8c.html#a2c808fb51be63b31ff1bd655c5803729">ctc.c</a>
+: <a class="el" href="ctc_8c.html#a2c808fb51be63b31ff1bd655c5803729">ctc.c</a>
+, <a class="el" href="dcf_8c.html#a2c808fb51be63b31ff1bd655c5803729">dcf.c</a>
 </li>
 <li>last_ts
 : <a class="el" href="bluegiga_8c.html#a072136fa8b5895314bb8878bf907f3e6">bluegiga.c</a>
@@ -309,9 +306,9 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="textons_8c.html#a934c7714e1c12aa027f5b26430ae6976">textons.c</a>
 , <a class="el" href="textons_8h.html#a934c7714e1c12aa027f5b26430ae6976">textons.h</a>
 </li>
-<li>led_disable
-: <a class="el" href="sim_2led__hw_8c.html#a64c76e6560c3cce05e312eb542f1c6cd">led_hw.c</a>
-, <a class="el" href="sim_2led__hw_8h.html#a64c76e6560c3cce05e312eb542f1c6cd">led_hw.h</a>
+<li>led_disabled
+: <a class="el" href="sim_2led__hw_8h.html#aa2f024804847d7447b49616f4935e903">led_hw.h</a>
+, <a class="el" href="sim_2led__hw_8c.html#aa2f024804847d7447b49616f4935e903">led_hw.c</a>
 </li>
 <li>led_hw_values
 : <a class="el" href="boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators.c</a>
@@ -327,11 +324,10 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 </li>
 <li>leds_closure
 : <a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.c</a>
-, <a class="el" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.h</a>
 </li>
 <li>lidar_lite
-: <a class="el" href="lidar__lite_8c.html#af963b51aa16d3dd51fb442fe423bc3c6">lidar_lite.c</a>
-, <a class="el" href="lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6">lidar_lite.h</a>
+: <a class="el" href="lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6">lidar_lite.h</a>
+, <a class="el" href="lidar__lite_8c.html#af963b51aa16d3dd51fb442fe423bc3c6">lidar_lite.c</a>
 </li>
 <li>lidar_lite_filter
 : <a class="el" href="lidar__lite_8c.html#a3a0e3cf147d2cef2258675d4f724ee1e">lidar_lite.c</a>
@@ -357,9 +353,6 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="nav__line_8c.html#a1e4b07456818b9e3350d99d1931205fd">nav_line.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#a1e4b07456818b9e3350d99d1931205fd">nav_vertical_raster.c</a>
 </li>
-<li>LineCoding
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#abb605b7ad246791a20832a6cfd2beef1">usb_ser_hw.c</a>
-</li>
 <li>link_fbw_fbw_nb_err
 : <a class="el" href="sim__ap_8c.html#a217e6264f30030ff96c6488719497c3e">sim_ap.c</a>
 </li>
@@ -367,39 +360,39 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
 </li>
 <li>link_mcu_from_ap_msg
-: <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
+: <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
 , <a class="el" href="link__mcu__can_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
+, <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
+, <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
 </li>
 <li>link_mcu_from_fbw_msg
-: <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__can_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
-, <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.c</a>
+, <a class="el" href="link__mcu__can_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
 </li>
 <li>link_mcu_received
-: <a class="el" href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__spi_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__can_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_can.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.c</a>
+, <a class="el" href="link__mcu__can_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_usart.h</a>
 </li>
 <li>link_mcu_trans
 : <a class="el" href="link__mcu__spi_8h.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_spi.c</a>
 </li>
 <li>listener
-: <a class="el" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">colorfilter.c</a>
+: <a class="el" href="undistort__image_8c.html#a1cd78b5508e71a82956808eba675122b">undistort_image.c</a>
+, <a class="el" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">colorfilter.c</a>
 , <a class="el" href="undistort__image_8h.html#a1cd78b5508e71a82956808eba675122b">undistort_image.h</a>
-, <a class="el" href="undistort__image_8c.html#a1cd78b5508e71a82956808eba675122b">undistort_image.c</a>
 </li>
 <li>listLength
-: <a class="el" href="cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.h</a>
-, <a class="el" href="cc2500__frsky__shared_8c.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.c</a>
+: <a class="el" href="cc2500__frsky__shared_8c.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.c</a>
+, <a class="el" href="cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.h</a>
 </li>
 <li>lm75_meas_started
 : <a class="el" href="temp__lm75_8c.html#a4327916d5a9c8446727f20306e83d4b7">temp_lm75.c</a>
@@ -473,7 +466,7 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

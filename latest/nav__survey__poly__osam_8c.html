@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('nav__survey__poly__osam_8c.html','');}
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2nav_2nav__survey__poly__osam_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2nav_2nav__survey__poly__osam_8c" id="sw_2airborne_2modules_2nav_2nav__survey__poly__osam_8c">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html" title="modules/nav/nav_survey\l_poly_osam.h" alt="" coords="563,109,743,151"/><area shape="rect" id="node4" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1350,109,1497,151"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="925,295,991,322"/><area shape="rect" id="node24" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1638,206,1729,233"/><area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1529,295,1625,322"/><area shape="rect" id="node21" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1335,199,1512,240"/><area shape="rect" id="node22" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1335,288,1504,329"/><area shape="rect" id="node23" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1089,199,1259,240"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1534,385,1619,411"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="599,467,778,493"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="296,467,487,493"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1057,377,1208,419"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="883,377,1033,419"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="592,377,756,419"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="333,541,487,568"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="613,541,764,568"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1033,467,1157,493"/></map>
+</map>
 </div>
 </div>
 <p><a href="nav__survey__poly__osam_8c_source.html">Go to the source code of this file.</a></p>
@@ -191,7 +191,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2d6be3c1729f46667057f3793ce0590c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a2d6be3c1729f46667057f3793ce0590c">nav_survey_poly_osam_setup_towards</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> FirstWP, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Size, float <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">Sweep</a>, int SecondWP)</td></tr>
+<tr class="memitem:a2d6be3c1729f46667057f3793ce0590c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a2d6be3c1729f46667057f3793ce0590c">nav_survey_poly_osam_setup_towards</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> FirstWP, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Size, float <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">Sweep</a>, int SecondWP)</td></tr>
 <tr class="memdesc:a2d6be3c1729f46667057f3793ce0590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup "dynamic" polygon survey with sweep orientation towards a waypoint.  <a href="#a2d6be3c1729f46667057f3793ce0590c">More...</a><br /></td></tr>
 <tr class="separator:a2d6be3c1729f46667057f3793ce0590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0bd4fedce9feee425bcbd4ee20439bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#af0bd4fedce9feee425bcbd4ee20439bb">TranslateAndRotateFromWorld</a> (struct <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structPoint2D">Point2D</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, float Zrot, float transX, float transY)</td></tr>
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af0892c3c0b2ba9442906368d27b8b48a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#af0892c3c0b2ba9442906368d27b8b48a">nav_survey_poly_osam_ResetSweepNumber</a> (bool rst)</td></tr>
 <tr class="memdesc:af0892c3c0b2ba9442906368d27b8b48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset sweep number.  <a href="#af0892c3c0b2ba9442906368d27b8b48a">More...</a><br /></td></tr>
 <tr class="separator:af0892c3c0b2ba9442906368d27b8b48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b77f8d99e9631da8b611484f22e37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a87b77f8d99e9631da8b611484f22e37f">nav_survey_poly_osam_setup</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> EntryWP, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Size, float sw, float Orientation)</td></tr>
+<tr class="memitem:a87b77f8d99e9631da8b611484f22e37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a87b77f8d99e9631da8b611484f22e37f">nav_survey_poly_osam_setup</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> EntryWP, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Size, float sw, float Orientation)</td></tr>
 <tr class="memdesc:a87b77f8d99e9631da8b611484f22e37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup polygon survey.  <a href="#a87b77f8d99e9631da8b611484f22e37f">More...</a><br /></td></tr>
 <tr class="separator:a87b77f8d99e9631da8b611484f22e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaeaf322fcc29fc8e54cf3b6808f0d65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65">nav_survey_poly_osam_run</a> (void)</td></tr>
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a87e6b6976c96aca909f18ce387100fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a87e6b6976c96aca909f18ce387100fdd">Poly_Size</a> = <a class="el" href="nav__survey__poly__osam_8c.html#a13bc36ad89f178008d7dd9db30b20fcc">POLY_OSAM_DEFAULT_SIZE</a></td></tr>
+<tr class="memitem:a87e6b6976c96aca909f18ce387100fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a87e6b6976c96aca909f18ce387100fdd">Poly_Size</a> = <a class="el" href="nav__survey__poly__osam_8c.html#a13bc36ad89f178008d7dd9db30b20fcc">POLY_OSAM_DEFAULT_SIZE</a></td></tr>
 <tr class="separator:a87e6b6976c96aca909f18ce387100fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad0c355a4ce9bb746e151d78bd9691b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a7ad0c355a4ce9bb746e151d78bd9691b">Poly_Sweep</a> = <a class="el" href="nav__survey__poly__osam_8c.html#a1475465b0c884ad599a2f48e968c840b">POLY_OSAM_DEFAULT_SWEEP</a></td></tr>
 <tr class="separator:a7ad0c355a4ce9bb746e151d78bd9691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,17 +247,17 @@ Variables</h2></td></tr>
 <tr class="separator:af46c21601244f55a3a81a4204d1900c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8b67a3c665959197f9f3db2dd94e80"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structPoint2D">Point2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a2c8b67a3c665959197f9f3db2dd94e80">SurveyCircle</a></td></tr>
 <tr class="separator:a2c8b67a3c665959197f9f3db2dd94e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec4a05518ae825985d73fd771b16c78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#aaec4a05518ae825985d73fd771b16c78">SurveyEntryWP</a></td></tr>
+<tr class="memitem:aaec4a05518ae825985d73fd771b16c78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#aaec4a05518ae825985d73fd771b16c78">SurveyEntryWP</a></td></tr>
 <tr class="separator:aaec4a05518ae825985d73fd771b16c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4e0c5016f80b77ad4f362058ae3959"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">SurveySize</a></td></tr>
+<tr class="memitem:a3b4e0c5016f80b77ad4f362058ae3959"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">SurveySize</a></td></tr>
 <tr class="separator:a3b4e0c5016f80b77ad4f362058ae3959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0330ecb89e5aad4bed15e75f1ab791a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#aa0330ecb89e5aad4bed15e75f1ab791a">SurveyCircleQdr</a></td></tr>
 <tr class="separator:aa0330ecb89e5aad4bed15e75f1ab791a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171ef0945a082a702a8395f5a1b90769"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a171ef0945a082a702a8395f5a1b90769">MaxY</a></td></tr>
 <tr class="separator:a171ef0945a082a702a8395f5a1b90769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438773f6f66a4fe62199819d41698455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a438773f6f66a4fe62199819d41698455">PolySurveySweepNum</a></td></tr>
+<tr class="memitem:a438773f6f66a4fe62199819d41698455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a438773f6f66a4fe62199819d41698455">PolySurveySweepNum</a></td></tr>
 <tr class="separator:a438773f6f66a4fe62199819d41698455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e62926a091b20a976b93647db35644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#ab3e62926a091b20a976b93647db35644">PolySurveySweepBackNum</a></td></tr>
+<tr class="memitem:ab3e62926a091b20a976b93647db35644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#ab3e62926a091b20a976b93647db35644">PolySurveySweepBackNum</a></td></tr>
 <tr class="separator:ab3e62926a091b20a976b93647db35644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0937fb021fae4f70e16e9930ff1a75b8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__survey__poly__osam_8c.html#a0937fb021fae4f70e16e9930ff1a75b8">EntryRadius</a></td></tr>
 <tr class="separator:a0937fb021fae4f70e16e9930ff1a75b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -611,7 +611,7 @@ x</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a369fb753abd22e08ec5990479b0dcbcf_icgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a369fb753abd22e08ec5990479b0dcbcf_icgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a369fb753abd22e08ec5990479b0dcbcf_icgraph" id="nav__survey__poly__osam_8c_a369fb753abd22e08ec5990479b0dcbcf_icgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey. " alt="" coords="184,5,383,32"/><area shape="rect" id="node3" href="nav__survey__poly__osam_8h.html#a3f0a828321d370684ff070c6606c5346" title="Setup polygon survey. " alt="" coords="198,57,369,98"/><area shape="rect" id="node4" href="nav__survey__poly__osam_8h.html#a2d6be3c1729f46667057f3793ce0590c" title="Setup &quot;dynamic&quot; polygon survey with sweep orientation towards a waypoint. " alt="" coords="431,57,601,98"/></map>
+</map>
 </div>
 </p>
 
@@ -674,7 +674,7 @@ x</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a7d7df26d6723c61622ad77133554b6f1_icgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a7d7df26d6723c61622ad77133554b6f1_icgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a7d7df26d6723c61622ad77133554b6f1_icgraph" id="nav__survey__poly__osam_8c_a7d7df26d6723c61622ad77133554b6f1_icgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html#a3f0a828321d370684ff070c6606c5346" title="Setup polygon survey. " alt="" coords="227,5,397,47"/><area shape="rect" id="node3" href="nav__survey__poly__osam_8h.html#a2d6be3c1729f46667057f3793ce0590c" title="Setup &quot;dynamic&quot; polygon survey with sweep orientation towards a waypoint. " alt="" coords="445,5,616,47"/></map>
+</map>
 </div>
 </p>
 
@@ -729,7 +729,7 @@ x</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_afaeaf322fcc29fc8e54cf3b6808f0d65_cgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_afaeaf322fcc29fc8e54cf3b6808f0d65_cgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_afaeaf322fcc29fc8e54cf3b6808f0d65_cgraph" id="nav__survey__poly__osam_8c_afaeaf322fcc29fc8e54cf3b6808f0d65_cgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8c.html#a369fb753abd22e08ec5990479b0dcbcf" title="EvaluateLineForX" alt="" coords="292,56,423,83"/><area shape="rect" id="node3" href="nav_8c.html#a249451b8d1fe0b19866ea68e0d8b86df" title="Decide if the UAV is approaching the current waypoint. " alt="" coords="520,5,672,32"/><area shape="rect" id="node6" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="763,157,926,184"/><area shape="rect" id="node18" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y). " alt="" coords="304,157,411,184"/><area shape="rect" id="node22" href="nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d" title="needs to be implemented by fixedwing and rotorcraft seperately " alt="" coords="300,360,415,387"/><area shape="rect" id="node23" href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment. " alt="" coords="304,208,411,235"/><area shape="rect" id="node24" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169" title="Rotates point round z by &#45;Zrot then translates so (0,0) becomes (transX,transY) " alt="" coords="261,411,453,437"/><area shape="rect" id="node25" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="274,309,441,336"/><area shape="rect" id="node27" href="nav__survey__poly__osam_8c.html#af0bd4fedce9feee425bcbd4ee20439bb" title="TranslateAndRotateFromWorld" alt="" coords="252,461,463,488"/><area shape="rect" id="node4" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="729,56,960,83"/><area shape="rect" id="node5" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="1008,49,1196,90"/><area shape="rect" id="node7" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="1019,157,1185,184"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1431,119,1580,145"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1244,68,1383,95"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1245,169,1381,196"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1264,220,1363,247"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1264,281,1363,308"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1431,68,1579,95"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1455,169,1555,196"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1453,220,1557,247"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1432,277,1579,304"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1437,329,1573,370"/><area shape="rect" id="node19" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course. " alt="" coords="557,157,635,184"/><area shape="rect" id="node20" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="738,212,951,239"/><area shape="rect" id="node21" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="1008,209,1196,250"/><area shape="rect" id="node26" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="511,309,681,336"/></map>
+</map>
 </div>
 </p>
 
@@ -742,13 +742,13 @@ x</td>
         <tr>
           <td class="memname">void nav_survey_poly_osam_setup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>FirstWP</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>Size</em>, </td>
         </tr>
         <tr>
@@ -795,7 +795,7 @@ x</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_cgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_cgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_cgraph" id="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_cgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8c.html#a369fb753abd22e08ec5990479b0dcbcf" title="EvaluateLineForX" alt="" coords="264,5,395,32"/><area shape="rect" id="node3" href="nav__survey__poly__osam_8c.html#a7d7df26d6723c61622ad77133554b6f1" title="FindInterceptOfTwoLines" alt="" coords="243,56,416,83"/><area shape="rect" id="node4" href="nav__survey__poly__osam_8c.html#af0bd4fedce9feee425bcbd4ee20439bb" title="TranslateAndRotateFromWorld" alt="" coords="224,107,435,133"/></map>
+</map>
 </div>
 </p>
 
@@ -806,7 +806,7 @@ x</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_icgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_icgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_icgraph" id="nav__survey__poly__osam_8c_a87b77f8d99e9631da8b611484f22e37f_icgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html#a2d6be3c1729f46667057f3793ce0590c" title="Setup &quot;dynamic&quot; polygon survey with sweep orientation towards a waypoint. " alt="" coords="224,5,395,47"/></map>
+</map>
 </div>
 </p>
 
@@ -819,13 +819,13 @@ x</td>
         <tr>
           <td class="memname">void nav_survey_poly_osam_setup_towards </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>FirstWP</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>Size</em>, </td>
         </tr>
         <tr>
@@ -870,7 +870,7 @@ x</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a2d6be3c1729f46667057f3793ce0590c_cgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a2d6be3c1729f46667057f3793ce0590c_cgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a2d6be3c1729f46667057f3793ce0590c_cgraph" id="nav__survey__poly__osam_8c_a2d6be3c1729f46667057f3793ce0590c_cgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8c.html#a87b77f8d99e9631da8b611484f22e37f" title="Setup polygon survey. " alt="" coords="224,49,395,90"/><area shape="rect" id="node3" href="nav__survey__poly__osam_8c.html#a369fb753abd22e08ec5990479b0dcbcf" title="EvaluateLineForX" alt="" coords="483,5,613,32"/><area shape="rect" id="node4" href="nav__survey__poly__osam_8c.html#a7d7df26d6723c61622ad77133554b6f1" title="FindInterceptOfTwoLines" alt="" coords="461,56,635,83"/><area shape="rect" id="node5" href="nav__survey__poly__osam_8c.html#af0bd4fedce9feee425bcbd4ee20439bb" title="TranslateAndRotateFromWorld" alt="" coords="443,107,653,133"/></map>
+</map>
 </div>
 </p>
 
@@ -935,7 +935,7 @@ x</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_a48c160b16e812b494516ffb30413d169_icgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_a48c160b16e812b494516ffb30413d169_icgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_a48c160b16e812b494516ffb30413d169_icgraph" id="nav__survey__poly__osam_8c_a48c160b16e812b494516ffb30413d169_icgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey. " alt="" coords="245,5,444,32"/></map>
+</map>
 </div>
 </p>
 
@@ -998,7 +998,7 @@ x</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__survey__poly__osam_8c_af0bd4fedce9feee425bcbd4ee20439bb_icgraph.png" border="0" usemap="#nav__survey__poly__osam_8c_af0bd4fedce9feee425bcbd4ee20439bb_icgraph" alt=""/></div>
 <map name="nav__survey__poly__osam_8c_af0bd4fedce9feee425bcbd4ee20439bb_icgraph" id="nav__survey__poly__osam_8c_af0bd4fedce9feee425bcbd4ee20439bb_icgraph">
-<area shape="rect" id="node2" href="nav__survey__poly__osam_8h.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey. " alt="" coords="264,5,463,32"/><area shape="rect" id="node3" href="nav__survey__poly__osam_8h.html#a3f0a828321d370684ff070c6606c5346" title="Setup polygon survey. " alt="" coords="278,57,449,98"/><area shape="rect" id="node4" href="nav__survey__poly__osam_8h.html#a2d6be3c1729f46667057f3793ce0590c" title="Setup &quot;dynamic&quot; polygon survey with sweep orientation towards a waypoint. " alt="" coords="511,57,681,98"/></map>
+</map>
 </div>
 </p>
 
@@ -1186,7 +1186,7 @@ x</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Poly_Size = <a class="el" href="nav__survey__poly__osam_8c.html#a13bc36ad89f178008d7dd9db30b20fcc">POLY_OSAM_DEFAULT_SIZE</a></td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Poly_Size = <a class="el" href="nav__survey__poly__osam_8c.html#a13bc36ad89f178008d7dd9db30b20fcc">POLY_OSAM_DEFAULT_SIZE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1218,7 +1218,7 @@ x</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> PolySurveySweepBackNum</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> PolySurveySweepBackNum</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1234,7 +1234,7 @@ x</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> PolySurveySweepNum</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> PolySurveySweepNum</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1341,7 +1341,7 @@ x</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> SurveyEntryWP</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> SurveyEntryWP</td>
         </tr>
       </table>
   </td>
@@ -1413,7 +1413,7 @@ x</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> SurveySize</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> SurveySize</td>
         </tr>
       </table>
   </td>
@@ -1499,7 +1499,7 @@ x</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__survey__poly__osam_8c.html">nav_survey_poly_osam.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

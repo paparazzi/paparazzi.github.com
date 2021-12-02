@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control/rc_datalink.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/rc_datalink.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,8 +122,8 @@ $(document).ready(function(){initNavTree('rc__datalink_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rc__datalink_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2rc__datalink_8h" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2radio__control_2rc__datalink_8h" id="sw_2airborne_2subsystems_2radio__control_2rc__datalink_8h">
+<div class="center"><img src="rc__datalink_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2radio__control_2rc__datalink_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2radio__control_2rc__datalink_8h" id="sw_2airborne_2modules_2radio__control_2rc__datalink_8h">
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -131,9 +131,9 @@ $(document).ready(function(){initNavTree('rc__datalink_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rc__datalink_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2rc__datalink_8hdep" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2radio__control_2rc__datalink_8hdep" id="sw_2airborne_2subsystems_2radio__control_2rc__datalink_8hdep">
-<area shape="rect" id="node2" href="subsystems_2radio__control_2rc__datalink_8c.html" title="sw/airborne/subsystems\l/radio_control/rc_datalink.c" alt="" coords="6,95,199,136"/></map>
+<div class="center"><img src="rc__datalink_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2radio__control_2rc__datalink_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2radio__control_2rc__datalink_8hdep" id="sw_2airborne_2modules_2radio__control_2rc__datalink_8hdep">
+</map>
 </div>
 </div>
 <p><a href="rc__datalink_8h_source.html">Go to the source code of this file.</a></p>
@@ -161,10 +161,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a22105107236d00fa616659322bd89a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle_mode, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> roll, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch)</td></tr>
+<tr class="memitem:a22105107236d00fa616659322bd89a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle_mode, <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> roll, <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch)</td></tr>
 <tr class="memdesc:a22105107236d00fa616659322bd89a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same byte.  <a href="#a22105107236d00fa616659322bd89a02">More...</a><br /></td></tr>
 <tr class="separator:a22105107236d00fa616659322bd89a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d40235f29aab16121c0073217835a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> roll, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> yaw)</td></tr>
+<tr class="memitem:aa3d40235f29aab16121c0073217835a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle, <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> roll, <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch, <a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> yaw)</td></tr>
 <tr class="memdesc:aa3d40235f29aab16121c0073217835a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode datalink message to get rc values with RC_4CH message.  <a href="#aa3d40235f29aab16121c0073217835a2">More...</a><br /></td></tr>
 <tr class="separator:aa3d40235f29aab16121c0073217835a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a> (void(*_received_frame_handler)(void))</td></tr>
@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8ad016a0fe68026f295a8ffaacdd2c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a> [<a class="el" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a>]</td></tr>
+<tr class="memitem:a8ad016a0fe68026f295a8ffaacdd2c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a> [<a class="el" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a>]</td></tr>
 <tr class="separator:a8ad016a0fe68026f295a8ffaacdd2c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab342fc7d0560212d19265550ed22efaf"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#ab342fc7d0560212d19265550ed22efaf">rc_dl_frame_available</a></td></tr>
 <tr class="separator:ab342fc7d0560212d19265550ed22efaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,19 +311,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void parse_rc_3ch_datalink </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>throttle_mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>roll</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>pitch</em>&#160;</td>
         </tr>
         <tr>
@@ -336,9 +336,9 @@ Variables</h2></td></tr>
 
 <p>Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same byte. </p>
 
-<p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">40</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00040">40</a> of file <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>References <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, <a class="el" href="intermcu__ap_8h_source.html#l00044">RADIO_MODE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
+<p>References <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, <a class="el" href="intermcu__ap_8h_source.html#l00044">RADIO_MODE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
 
 <p>Referenced by <a class="el" href="datalink_8c_source.html#l00056">dl_parse_msg()</a>.</p>
 
@@ -349,7 +349,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph.png" border="0" usemap="#rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph" alt=""/></div>
 <map name="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph" id="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph">
-<area shape="rect" id="node2" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer. " alt="" coords="217,183,328,209"/><area shape="rect" id="node3" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse. " alt="" coords="376,183,511,209"/><area shape="rect" id="node4" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event. " alt="" coords="573,5,710,32"/><area shape="rect" id="node5" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event. " alt="" coords="566,56,717,83"/><area shape="rect" id="node6" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event. " alt="" coords="588,107,695,133"/><area shape="rect" id="node7" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event. " alt="" coords="586,157,697,184"/><area shape="rect" id="node10" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="559,208,724,235"/><area shape="rect" id="node11" href="subsystems_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call. " alt="" coords="569,259,713,285"/><area shape="rect" id="node12" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title="w5100_event" alt="" coords="588,309,695,336"/><area shape="rect" id="node13" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event. " alt="" coords="584,360,699,387"/><area shape="rect" id="node8" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="772,157,869,184"/><area shape="rect" id="node9" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="917,157,972,184"/></map>
+</map>
 </div>
 </p>
 
@@ -362,31 +362,31 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void parse_rc_4ch_datalink </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>throttle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>roll</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>pitch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>yaw</em>&#160;</td>
         </tr>
         <tr>
@@ -399,9 +399,9 @@ Variables</h2></td></tr>
 
 <p>Decode datalink message to get rc values with RC_4CH message. </p>
 
-<p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">56</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00056">56</a> of file <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>References <a class="el" href="intermcu__ap_8h_source.html#l00044">RADIO_MODE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
+<p>References <a class="el" href="intermcu__ap_8h_source.html#l00044">RADIO_MODE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
 
 <p>Referenced by <a class="el" href="datalink_8c_source.html#l00056">dl_parse_msg()</a>, and <a class="el" href="mavlink_8c_source.html#l00222">mavlink_common_message_handler()</a>.</p>
 
@@ -412,7 +412,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph.png" border="0" usemap="#rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph" alt=""/></div>
 <map name="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph" id="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph">
-<area shape="rect" id="node2" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer. " alt="" coords="263,183,373,209"/><area shape="rect" id="node14" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="217,234,419,275"/><area shape="rect" id="node3" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse. " alt="" coords="467,183,601,209"/><area shape="rect" id="node4" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event. " alt="" coords="663,5,801,32"/><area shape="rect" id="node5" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event. " alt="" coords="657,56,807,83"/><area shape="rect" id="node6" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event. " alt="" coords="679,107,785,133"/><area shape="rect" id="node7" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event. " alt="" coords="677,157,787,184"/><area shape="rect" id="node10" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="649,208,815,235"/><area shape="rect" id="node11" href="subsystems_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call. " alt="" coords="660,259,804,285"/><area shape="rect" id="node12" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title="w5100_event" alt="" coords="679,309,785,336"/><area shape="rect" id="node13" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event. " alt="" coords="675,360,789,387"/><area shape="rect" id="node8" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="863,157,960,184"/><area shape="rect" id="node9" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1008,157,1063,184"/><area shape="rect" id="node15" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="477,241,591,268"/></map>
+</map>
 </div>
 </p>
 
@@ -450,9 +450,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">31</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00031">31</a> of file <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00089">radio_control_impl_event()</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00034">radio_control_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00089">radio_control_impl_event()</a>, and <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00034">radio_control_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -461,14 +461,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> rc_dl_values[<a class="el" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a>]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> rc_dl_values[<a class="el" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">30</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
+<p>Definition at line <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00030">30</a> of file <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00089">radio_control_impl_event()</a>.</p>
+<p>Referenced by <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, and <a class="el" href="modules_2radio__control_2rc__datalink_8c_source.html#l00089">radio_control_impl_event()</a>.</p>
 
 </div>
 </div>
@@ -477,8 +477,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="rc__datalink_8h.html">rc_datalink.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:24 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="rc__datalink_8h.html">rc_datalink.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

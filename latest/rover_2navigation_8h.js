@@ -28,6 +28,7 @@ var rover_2navigation_8h =
     [ "FAILSAFE_MODE_DISTANCE", "rover_2navigation_8h.html#ad8f7f47978b86f35f596d86fe6576425", null ],
     [ "GetAltRef", "rover_2navigation_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "rover_2navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
+    [ "GetPosHeight", "rover_2navigation_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96", null ],
     [ "GetPosX", "rover_2navigation_8h.html#ac500a50330425cb4a3054774289bb205", null ],
     [ "GetPosY", "rover_2navigation_8h.html#a10961173ac6973d795af2f62eb67edca", null ],
     [ "NAV_FREQ", "rover_2navigation_8h.html#a97a2f145e0de563497130b15333db788", null ],

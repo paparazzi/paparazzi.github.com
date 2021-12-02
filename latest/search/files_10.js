@@ -4,7 +4,6 @@ var searchData=
   ['object_5ftracking_2eh',['object_tracking.h',['../object__tracking_8h.html',1,'']]],
   ['obstacle_5favoidance_2ec',['obstacle_avoidance.c',['../obstacle__avoidance_8c.html',1,'']]],
   ['obstacle_5favoidance_2eh',['obstacle_avoidance.h',['../obstacle__avoidance_8h.html',1,'']]],
-  ['olimex_5flpc_5fh2148_2eh',['olimex_lpc_h2148.h',['../olimex__lpc__h2148_8h.html',1,'']]],
   ['olimex_5fstm32_2dh103_2eh',['olimex_stm32-h103.h',['../olimex__stm32-h103_8h.html',1,'']]],
   ['onboard_5fmodules_2edox',['onboard_modules.dox',['../onboard__modules_8dox.html',1,'']]],
   ['opa_5fap_5f1_2e0_2eh',['opa_ap_1.0.h',['../opa__ap__1_80_8h.html',1,'']]],

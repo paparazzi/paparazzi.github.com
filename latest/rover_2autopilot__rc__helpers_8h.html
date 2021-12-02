@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('rover_2autopilot__rc__helpers_8h.html'
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_rc_helpers.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('rover_2autopilot__rc__helpers_8h.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2autopilot__rc__helpers_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8h" id="sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8h">
-<area shape="rect" id="node3" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="121,95,320,121"/><area shape="rect" id="node4" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="189,169,242,196"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="266,169,362,196"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="274,244,359,271"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('rover_2autopilot__rc__helpers_8h.html'
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rover_2autopilot__rc__helpers_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8hdep" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8hdep" id="sw_2airborne_2firmwares_2rover_2autopilot__rc__helpers_8hdep">
-<area shape="rect" id="node2" href="led__safety__status_8c.html" title="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..." alt="" coords="17,95,197,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="rover_2autopilot__rc__helpers_8h_source.html">Go to the source code of this file.</a></p>
@@ -156,7 +156,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d1a81b1597fffdf2b87d936b5441f5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#a7d1a81b1597fffdf2b87d936b5441f5c">rc_mode_switch</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> chan, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pos, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max)</td></tr>
+<tr class="memitem:a7d1a81b1597fffdf2b87d936b5441f5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#a7d1a81b1597fffdf2b87d936b5441f5c">rc_mode_switch</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> chan, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pos, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max)</td></tr>
 <tr class="memdesc:a7d1a81b1597fffdf2b87d936b5441f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC mode switch position helper switch positions threshold are evenly spaced.  <a href="#a7d1a81b1597fffdf2b87d936b5441f5c">More...</a><br /></td></tr>
 <tr class="separator:a7d1a81b1597fffdf2b87d936b5441f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2cf19a78374dab9e758348111b20c94"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94">rc_attitude_sticks_centered</a> (void)</td></tr>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac2cf19a78374dab9e758348111b20c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cad24ec4c286be4262417eb5823094"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094">kill_switch_is_on</a> (void)</td></tr>
 <tr class="separator:ac0cad24ec4c286be4262417eb5823094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7769f1bee81960265c7c0bb2980d1edd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#a7769f1bee81960265c7c0bb2980d1edd">percent_from_rc</a> (int <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>)</td></tr>
+<tr class="memitem:a7769f1bee81960265c7c0bb2980d1edd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__rc__helpers_8h.html#a7769f1bee81960265c7c0bb2980d1edd">percent_from_rc</a> (int channel)</td></tr>
 <tr class="separator:a7769f1bee81960265c7c0bb2980d1edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -360,7 +360,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> percent_from_rc </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> percent_from_rc </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>channel</em></td><td>)</td>
@@ -420,19 +420,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static bool rc_mode_switch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>max</em>&#160;</td>
         </tr>
         <tr>
@@ -471,7 +471,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_414bebee49467d45198ced6169b2555f.html">rover</a></li><li class="navelem"><a class="el" href="rover_2autopilot__rc__helpers_8h.html">autopilot_rc_helpers.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:41 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

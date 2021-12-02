@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,9 +114,12 @@ $(document).ready(function(){initNavTree('imu__bmi088__i2c_8h.html','');});
 <div class="title">imu_bmi088_i2c.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>IMU driver for the BMI088 using I2C.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bmi088__i2c_8h_source.html">peripherals/bmi088_i2c.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_bmi088_i2c.h:</div>
@@ -125,7 +128,7 @@ $(document).ready(function(){initNavTree('imu__bmi088__i2c_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bmi088__i2c_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__bmi088__i2c_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__bmi088__i2c_8h" id="sw_2airborne_2modules_2imu_2imu__bmi088__i2c_8h">
-<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="808,95,946,121"/><area shape="rect" id="node15" href="bmi088__i2c_8h.html" title="Driver for the BMI088 using I2C. " alt="" coords="388,169,534,211"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="668,259,846,285"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="979,259,1170,285"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="795,169,959,211"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="930,341,1085,367"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="560,341,711,367"/><area shape="rect" id="node16" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="396,259,526,285"/><area shape="rect" id="node18" href="bmi088_8h.html" title="BMI088 driver common interface (I2C and SPI). " alt="" coords="85,259,242,285"/><area shape="rect" id="node19" href="bmi088__regs_8h.html" title="Register and address definitions for BMI088. " alt="" coords="46,333,191,375"/></map>
+</map>
 </div>
 </div>
 <p><a href="imu__bmi088__i2c_8h_source.html">Go to the source code of this file.</a></p>
@@ -192,7 +195,11 @@ Variables</h2></td></tr>
 <tr class="memitem:aa392dce0f33c559a6dd2a12865db721b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu__bmi088__i2c_8h.html#structImuBmi088">ImuBmi088</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__bmi088__i2c_8h.html#aa392dce0f33c559a6dd2a12865db721b">imu_bmi088</a></td></tr>
 <tr class="separator:aa392dce0f33c559a6dd2a12865db721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>IMU driver for the BMI088 using I2C. </p>
+
+<p>Definition in file <a class="el" href="imu__bmi088__i2c_8h_source.html">imu_bmi088_i2c.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structImuBmi088" id="structImuBmi088"></a>
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +534,7 @@ bmi</td>
 
 <p>Definition at line <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">108</a> of file <a class="el" href="imu__bmi088__i2c_8c_source.html">imu_bmi088_i2c.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="bmi088__i2c_8h_source.html#l00042">Bmi088_I2c::accel_available</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="imu__bmi088__i2c_8h_source.html#l00074">ImuBmi088::bmi</a>, <a class="el" href="bmi088__i2c_8c_source.html#l00093">bmi088_i2c_event()</a>, <a class="el" href="bmi088__i2c_8h.html#a31c19be561c1da7382fc7c584351f61f">Bmi088_I2c::data_accel</a>, <a class="el" href="bmi088__i2c_8h.html#a70a3b0fabed7a621be27653cae045c6b">Bmi088_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="bmi088__i2c_8h_source.html#l00041">Bmi088_I2c::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00089">imu_bmi088</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00063">IMU_BMI088_CHAN_X</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00067">IMU_BMI088_CHAN_Y</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00071">IMU_BMI088_CHAN_Z</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00347">IMU_BMI088_ID</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00076">IMU_BMI088_X_SIGN</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00080">IMU_BMI088_Y_SIGN</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00084">IMU_BMI088_Z_SIGN</a>, <a class="el" href="imu__vectornav_8c_source.html#l00044">imu_scale_accel()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00043">imu_scale_gyro()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="bmi088__i2c_8h_source.html#l00042">Bmi088_I2c::accel_available</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="imu__bmi088__i2c_8h_source.html#l00074">ImuBmi088::bmi</a>, <a class="el" href="bmi088__i2c_8c_source.html#l00093">bmi088_i2c_event()</a>, <a class="el" href="bmi088__i2c_8h.html#a3e915cf9b8b9e4fefcc127baf02f7141">Bmi088_I2c::data_accel</a>, <a class="el" href="bmi088__i2c_8h.html#affd949f05a5ff89eaaf3f2861b00ed65">Bmi088_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="bmi088__i2c_8h_source.html#l00041">Bmi088_I2c::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00089">imu_bmi088</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00063">IMU_BMI088_CHAN_X</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00067">IMU_BMI088_CHAN_Y</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00071">IMU_BMI088_CHAN_Z</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00363">IMU_BMI088_ID</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00076">IMU_BMI088_X_SIGN</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00080">IMU_BMI088_Y_SIGN</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00084">IMU_BMI088_Z_SIGN</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_gyro()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -536,7 +543,7 @@ bmi</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bmi088__i2c_8h_a688a0cac0c423c242b7b08fc7b6de2b4_cgraph.png" border="0" usemap="#imu__bmi088__i2c_8h_a688a0cac0c423c242b7b08fc7b6de2b4_cgraph" alt=""/></div>
 <map name="imu__bmi088__i2c_8h_a688a0cac0c423c242b7b08fc7b6de2b4_cgraph" id="imu__bmi088__i2c_8h_a688a0cac0c423c242b7b08fc7b6de2b4_cgraph">
-<area shape="rect" id="node2" href="bmi088__i2c_8c.html#abfa0649b89202681ccbf3f75f3aa1565" title="bmi088_i2c_event" alt="" coords="200,31,339,57"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="197,81,341,108"/><area shape="rect" id="node8" href="imu__vectornav_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="206,132,333,159"/><area shape="rect" id="node9" href="imu__vectornav_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="209,183,330,209"/><area shape="rect" id="node3" href="bmi088_8c.html#a5625e56ef12de74a87d98eec0eefab9c" title="Configuration sequence called once before normal use. " alt="" coords="403,5,556,32"/><area shape="rect" id="node4" href="bmi088__i2c_8c.html#a44f569c92565900c76e5bec26cb054ae" title="bmi088_i2c_write_to_reg" alt="" coords="389,56,569,83"/><area shape="rect" id="node5" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="617,56,719,83"/><area shape="rect" id="node6" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="767,56,857,83"/></map>
+</map>
 </div>
 </p>
 
@@ -567,7 +574,7 @@ bmi</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bmi088__i2c_8h_a4ec1a0298ee37c4786dc783237880a03_cgraph.png" border="0" usemap="#imu__bmi088__i2c_8h_a4ec1a0298ee37c4786dc783237880a03_cgraph" alt=""/></div>
 <map name="imu__bmi088__i2c_8h_a4ec1a0298ee37c4786dc783237880a03_cgraph" id="imu__bmi088__i2c_8h_a4ec1a0298ee37c4786dc783237880a03_cgraph">
-<area shape="rect" id="node2" href="bmi088__i2c_8c.html#a4e11caa2425e0e7de019c26041f30f22" title="bmi088_i2c_init" alt="" coords="180,13,301,39"/><area shape="rect" id="node3" href="bmi088_8c.html#a1ebc60689c9b9ad5f444a6b275f82eb9" title="bmi088_set_default\l_config" alt="" coords="349,5,497,47"/></map>
+</map>
 </div>
 </p>
 
@@ -598,7 +605,7 @@ bmi</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__bmi088__i2c_8h_adcf26c82c2c1f263d32ea3104b16e3f1_cgraph.png" border="0" usemap="#imu__bmi088__i2c_8h_adcf26c82c2c1f263d32ea3104b16e3f1_cgraph" alt=""/></div>
 <map name="imu__bmi088__i2c_8h_adcf26c82c2c1f263d32ea3104b16e3f1_cgraph" id="imu__bmi088__i2c_8h_adcf26c82c2c1f263d32ea3104b16e3f1_cgraph">
-<area shape="rect" id="node2" href="bmi088__i2c_8h.html#a318cf6522926f01e4f1b01c9eed98db3" title="convenience function: read or start configuration if not already initialized " alt="" coords="212,31,364,57"/><area shape="rect" id="node3" href="bmi088__i2c_8h.html#aa5b51ce0c76da793600e92a784e262cb" title="bmi088_i2c_read" alt="" coords="446,5,577,32"/><area shape="rect" id="node6" href="bmi088__i2c_8h.html#ad90e7d47b72b999e8915527178429943" title="bmi088_i2c_start_configure" alt="" coords="412,56,611,83"/><area shape="rect" id="node4" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="887,19,1000,45"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="1048,51,1139,77"/><area shape="rect" id="node7" href="bmi088_8c.html#a5625e56ef12de74a87d98eec0eefab9c" title="Configuration sequence called once before normal use. " alt="" coords="672,56,825,83"/><area shape="rect" id="node8" href="bmi088__i2c_8c.html#a44f569c92565900c76e5bec26cb054ae" title="bmi088_i2c_write_to_reg" alt="" coords="659,107,839,133"/><area shape="rect" id="node9" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="893,81,994,108"/></map>
+</map>
 </div>
 </p>
 
@@ -627,7 +634,7 @@ bmi</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__bmi088__i2c_8h.html">imu_bmi088_i2c.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

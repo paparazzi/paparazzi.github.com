@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html','');});
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">inter_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">modules/intermcu/inter_mcu.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for nav_drop.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__drop_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2nav_2nav__drop_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2nav_2nav__drop_8c" id="sw_2airborne_2modules_2nav_2nav__drop_8c">
-<area shape="rect" id="node2" href="nav__drop_8h.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed..." alt="" coords="1719,95,1897,121"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="769,355,836,382"/><area shape="rect" id="node30" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="2167,95,2265,121"/><area shape="rect" id="node4" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1203,169,1349,211"/><area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1717,355,1813,382"/><area shape="rect" id="node21" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1187,259,1365,300"/><area shape="rect" id="node22" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="942,348,1111,389"/><area shape="rect" id="node23" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="891,259,1061,300"/><area shape="rect" id="node24" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1463,266,1553,293"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1723,445,1808,471"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="449,527,628,553"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="234,527,425,553"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="634,437,785,479"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="809,437,959,479"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="446,437,610,479"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="217,601,372,628"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="498,601,649,628"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="785,527,909,553"/></map>
+</map>
 </div>
 </div>
 <p><a href="nav__drop_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__drop_8c.html">nav_drop.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

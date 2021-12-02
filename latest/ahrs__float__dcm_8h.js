@@ -14,6 +14,7 @@ var ahrs__float__dcm_8h =
       [ "rate_correction", "ahrs__float__dcm_8h.html#a9256dacf55a9bdec9a1ba4859c613748", null ],
       [ "status", "ahrs__float__dcm_8h.html#af3805644883f041141e5f764ba1007ac", null ]
     ] ],
+    [ "AHRS_FLOAT_MIN_SPEED_GPS_COURSE", "ahrs__float__dcm_8h.html#a5ac67f675705ab2a7d952f804ba6008b", null ],
     [ "GRAVITY", "ahrs__float__dcm_8h.html#a6801baa546c6112d19eb095111d24720", null ],
     [ "Ki_ROLLPITCH", "ahrs__float__dcm_8h.html#a7acbbef42a2b56f585c4dafc151e3806", null ],
     [ "Ki_YAW", "ahrs__float__dcm_8h.html#aea9dd7972c8f6c2381b1541b964b3893", null ],

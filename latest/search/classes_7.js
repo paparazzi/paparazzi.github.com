@@ -19,7 +19,6 @@ var searchData=
   ['gpio_5fext_5fpca95xx_5fimpl_5ft',['gpio_ext_pca95xx_impl_t',['../gpio__ext__pca95xx_8c.html#structgpio__ext__pca95xx__impl__t',1,'']]],
   ['gpio_5fsetup_5ft',['gpio_setup_t',['../tawaki_2chibios_2common_2board_8c.html#structgpio__setup__t',1,'']]],
   ['gpio_5ft',['gpio_t',['../cc2500__compat_8h.html#structgpio__t',1,'']]],
-  ['gpioregs_5ft',['gpioRegs_t',['../lpcGPIO_8h.html#structgpioRegs__t',1,'']]],
   ['gps_5fubx_5fucenter_5fstruct',['gps_ubx_ucenter_struct',['../gps__ubx__ucenter_8h.html#structgps__ubx__ucenter__struct',1,'']]],
   ['gpsmtk',['GpsMtk',['../gps__mtk_8h.html#structGpsMtk',1,'']]],
   ['gpsnmea',['GpsNmea',['../gps__nmea_8h.html#structGpsNmea',1,'']]],

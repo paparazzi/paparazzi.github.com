@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8h_source.html'
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8h.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e">atmega_i2c_cam_ctrl_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5">atmega_i2c_cam_ctrl_periodic</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8h.html#a623f6c883be11330b494fec437a3787b">atmega_i2c_cam_ctrl_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85">atmega_i2c_cam_ctrl_send</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85">atmega_i2c_cam_ctrl_send</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Allow commands to be set by datalink</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="atmega__i2c__cam__ctrl_8h.html#ad9550c6832195e042f97ce9313de9962">   36</a></span>&#160;<span class="preprocessor">#define ParseCameraCommand() {                \</span></div>
@@ -157,16 +157,16 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8h_source.html'
 <div class="ttc" id="atmega__i2c__cam__ctrl_8h_html_a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e"><div class="ttname"><a href="atmega__i2c__cam__ctrl_8h.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e">atmega_i2c_cam_ctrl_init</a></div><div class="ttdeci">void atmega_i2c_cam_ctrl_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="atmega__i2c__cam__ctrl_8c_source.html#l00062">atmega_i2c_cam_ctrl.c:62</a></div></div>
 <div class="ttc" id="dc_8h_html"><div class="ttname"><a href="dc_8h.html">dc.h</a></div><div class="ttdoc">Standard Digital Camera Control Interface. </div></div>
 <div class="ttc" id="atmega__i2c__cam__ctrl_8h_html_aeb25c30f109ccd0c3046715e4f3df6b5"><div class="ttname"><a href="atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5">atmega_i2c_cam_ctrl_periodic</a></div><div class="ttdeci">void atmega_i2c_cam_ctrl_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="atmega__i2c__cam__ctrl_8c_source.html#l00068">atmega_i2c_cam_ctrl.c:68</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="atmega__i2c__cam__ctrl_8h_html_ad7c06f4d1c398ba41252eb2e7ecd1a85"><div class="ttname"><a href="atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85">atmega_i2c_cam_ctrl_send</a></div><div class="ttdeci">void atmega_i2c_cam_ctrl_send(uint8_t cmd)</div><div class="ttdef"><b>Definition:</b> <a href="atmega__i2c__cam__ctrl_8c_source.html#l00081">atmega_i2c_cam_ctrl.c:81</a></div></div>
 <div class="ttc" id="atmega__i2c__cam__ctrl_8h_html_a623f6c883be11330b494fec437a3787b"><div class="ttname"><a href="atmega__i2c__cam__ctrl_8h.html#a623f6c883be11330b494fec437a3787b">atmega_i2c_cam_ctrl_event</a></div><div class="ttdeci">void atmega_i2c_cam_ctrl_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="atmega__i2c__cam__ctrl_8c_source.html#l00094">atmega_i2c_cam_ctrl.c:94</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="atmega__i2c__cam__ctrl_8h.html">atmega_i2c_cam_ctrl.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,10 +125,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab376b08d349863388fb0b17cb14c8caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#ab376b08d349863388fb0b17cb14c8caa">adc_enable</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</td></tr>
+<tr class="memitem:ab376b08d349863388fb0b17cb14c8caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#ab376b08d349863388fb0b17cb14c8caa">adc_enable</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</td></tr>
 <tr class="memdesc:ab376b08d349863388fb0b17cb14c8caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop the ADC readings.  <a href="#ab376b08d349863388fb0b17cb14c8caa">More...</a><br /></td></tr>
 <tr class="separator:ab376b08d349863388fb0b17cb14c8caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#a20ceeab2fc8a81cfb9ec2261a8b57234">adc_read</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *buf, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memitem:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#a20ceeab2fc8a81cfb9ec2261a8b57234">adc_read</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *buf, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the ADC buffer from the driver.  <a href="#a20ceeab2fc8a81cfb9ec2261a8b57234">More...</a><br /></td></tr>
 <tr class="separator:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -151,25 +151,25 @@ Functions</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a31762f683984f14905b2a63161498ac1"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<a class="anchor" id="a31762f683984f14905b2a63161498ac1"></a><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 buf_length</td>
 <td class="fielddoc">
 ADC buffer length. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a599edf2721d48a6f6227d93d2dd75e63"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>
+<a class="anchor" id="a599edf2721d48a6f6227d93d2dd75e63"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *</td>
 <td class="fieldname">
 channels</td>
 <td class="fielddoc">
 Channels used in the iio device. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="afc81c7cf6e7616acafb17490d8ea6beb"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="afc81c7cf6e7616acafb17490d8ea6beb"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 channels_cnt</td>
 <td class="fielddoc">
 Amount of channels. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a6bffbb7524d2d50e565cfe94ee4f07fa"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a6bffbb7524d2d50e565cfe94ee4f07fa"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 dev_id</td>
 <td class="fielddoc">
@@ -192,7 +192,7 @@ The iio device ID. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -225,7 +225,7 @@ The iio device ID. </td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_cgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_cgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_cgraph" id="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="148,5,263,32"/></map>
+</map>
 </div>
 </p>
 
@@ -236,7 +236,7 @@ The iio device ID. </td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_icgraph" id="linux_2mcu__periph_2adc__arch_8h_ab376b08d349863388fb0b17cb14c8caa_icgraph">
-<area shape="rect" id="node2" href="sonar__bebop_8c.html#a523295c3c567273e2db300652a282f1f" title="sonar_bebop_read Read ADC value to update sonar measurement " alt="" coords="148,5,289,32"/><area shape="rect" id="node3" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="337,5,468,32"/></map>
+</map>
 </div>
 </p>
 
@@ -255,13 +255,13 @@ The iio device ID. </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -295,7 +295,7 @@ The iio device ID. </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8h_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8h_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8h_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph" id="linux_2mcu__periph_2adc__arch_8h_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph">
-<area shape="rect" id="node2" href="sonar__bebop_8c.html#a523295c3c567273e2db300652a282f1f" title="sonar_bebop_read Read ADC value to update sonar measurement " alt="" coords="135,5,276,32"/><area shape="rect" id="node3" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="324,5,455,32"/></map>
+</map>
 </div>
 </p>
 
@@ -307,7 +307,7 @@ The iio device ID. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2adc__arch_8h.html">adc_arch.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

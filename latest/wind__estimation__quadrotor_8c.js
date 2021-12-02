@@ -1,0 +1,35 @@
+var wind__estimation__quadrotor_8c =
+[
+    [ "wind_estimation_quadrotor", "wind__estimation__quadrotor_8c.html#structwind__estimation__quadrotor", [
+      [ "filter", "wind__estimation__quadrotor_8c.html#a9975ccfa9603e218b5983fca9691b1a7", null ],
+      [ "status", "wind__estimation__quadrotor_8c.html#a346b41efb1754ac498f4ae751b98607f", null ]
+    ] ],
+    [ "WE_QUAD_CMD_SIZE", "wind__estimation__quadrotor_8c.html#a51e176ab29e9d1dc49e88486a73eca42", null ],
+    [ "WE_QUAD_MEAS_SIZE", "wind__estimation__quadrotor_8c.html#ab3bc2d9a2c668044ba44b76a795a62ae", null ],
+    [ "WE_QUAD_P0_VA", "wind__estimation__quadrotor_8c.html#a9394286440e3702a539f24bfb6f1e0f9", null ],
+    [ "WE_QUAD_P0_W", "wind__estimation__quadrotor_8c.html#aa8f0b3e619cd9f486c0ac35ea6af2991", null ],
+    [ "WE_QUAD_Q_VA", "wind__estimation__quadrotor_8c.html#afdb4078f92a8c82b607a2e685a63183d", null ],
+    [ "WE_QUAD_Q_W", "wind__estimation__quadrotor_8c.html#a6a372dcd8d80a9739703f3396b88265a", null ],
+    [ "WE_QUAD_R", "wind__estimation__quadrotor_8c.html#a82892c192e3c664402c271863f83201f", null ],
+    [ "WE_QUAD_STATE_SIZE", "wind__estimation__quadrotor_8c.html#a0270cea01424fa5061cd483e73fba33b", null ],
+    [ "WE_QUAD_STATUS_IDLE", "wind__estimation__quadrotor_8c.html#a6ac1c0d33257c23e0a16ea914e8625f0", null ],
+    [ "WE_QUAD_STATUS_RUN", "wind__estimation__quadrotor_8c.html#a56838dcbb7ab17640e23bfbcfa6052d6", null ],
+    [ "WE_QUAD_UPDATE_STATE", "wind__estimation__quadrotor_8c.html#a0281d0365f19af9978073f12d48cd049", null ],
+    [ "WE_QUAD_VA_X", "wind__estimation__quadrotor_8c.html#a642bb12e45a1325023b682a35174d639", null ],
+    [ "WE_QUAD_VA_Y", "wind__estimation__quadrotor_8c.html#a69e5354dadf7a28bf66c409348e0dfca", null ],
+    [ "WE_QUAD_W_X", "wind__estimation__quadrotor_8c.html#a2f06977e97694d42bbc2382225214a39", null ],
+    [ "WE_QUAD_W_Y", "wind__estimation__quadrotor_8c.html#aa9118b6591deef47b10f9de265526035", null ],
+    [ "send_wind", "wind__estimation__quadrotor_8c.html#a357545dd91227db6db4548685ef41452", null ],
+    [ "wind_estimation_quadrotor_init", "wind__estimation__quadrotor_8c.html#a677f6eb1e2c4f6f4593a141057831f66", null ],
+    [ "wind_estimation_quadrotor_periodic", "wind__estimation__quadrotor_8c.html#a1a51ee96e2d65f6f7986aba14209781c", null ],
+    [ "wind_estimation_quadrotor_report", "wind__estimation__quadrotor_8c.html#a5f027a6eacf02672bb320c90f1b76afd", null ],
+    [ "wind_estimation_quadrotor_reset", "wind__estimation__quadrotor_8c.html#a48777347d9f748efa492c0f6c2efe58b", null ],
+    [ "wind_estimation_quadrotor_SetQva", "wind__estimation__quadrotor_8c.html#a01ebd8f95f2c668cf39207f26ca97cc3", null ],
+    [ "wind_estimation_quadrotor_SetQw", "wind__estimation__quadrotor_8c.html#a20c68042d8e46c485c52c129ef7543d0", null ],
+    [ "wind_estimation_quadrotor_SetR", "wind__estimation__quadrotor_8c.html#a27a8b2124df6710add8b1451fa004457", null ],
+    [ "wind_estimation_quadrotor_start", "wind__estimation__quadrotor_8c.html#a12628282e6072bb4bae58d9ba1363053", null ],
+    [ "wind_estimation_quadrotor_stop", "wind__estimation__quadrotor_8c.html#a15f51b61543a3bf63e3d33ce21d5cb36", null ],
+    [ "we_dt", "wind__estimation__quadrotor_8c.html#aa2c1330998cc99573cc763e9cf300484", null ],
+    [ "we_quad", "wind__estimation__quadrotor_8c.html#a469befc4aade5bcf7aa3fa6ffe9e19f5", null ],
+    [ "we_quad_params", "wind__estimation__quadrotor_8c.html#ae3004ac4576e61733219698c126d8f1f", null ]
+];

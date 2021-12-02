@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('dust__gp2y_8c.html','');});
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dust_gp2y.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('dust__gp2y_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dust__gp2y_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2dust__gp2y_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2dust__gp2y_8c" id="sw_2airborne_2modules_2meteo_2dust__gp2y_8c">
-<area shape="rect" id="node2" href="dust__gp2y_8h.html" title="modules/meteo/dust\l_gp2y.h" alt="" coords="5,273,160,315"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="196,102,327,129"/><area shape="rect" id="node6" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1311,102,1481,129"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1397,281,1536,307"/><area shape="rect" id="node15" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="662,95,815,136"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1237,191,1323,218"/><area shape="rect" id="node18" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="842,184,995,225"/><area shape="rect" id="node20" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1019,191,1213,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="dust__gp2y_8c_source.html">Go to the source code of this file.</a></p>
@@ -152,9 +152,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a94acdbd9d62b8e8f237b253de78151dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dust__gp2y_8c.html#a94acdbd9d62b8e8f237b253de78151dc">dust_gp2y_status</a></td></tr>
+<tr class="memitem:a94acdbd9d62b8e8f237b253de78151dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dust__gp2y_8c.html#a94acdbd9d62b8e8f237b253de78151dc">dust_gp2y_status</a></td></tr>
 <tr class="separator:a94acdbd9d62b8e8f237b253de78151dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb392a107b3921a036fa19806e50f66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dust__gp2y_8c.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y_density</a></td></tr>
+<tr class="memitem:adb392a107b3921a036fa19806e50f66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dust__gp2y_8c.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y_density</a></td></tr>
 <tr class="separator:adb392a107b3921a036fa19806e50f66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1760922e794a13871c9bfd259c150fc7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dust__gp2y_8c.html#a1760922e794a13871c9bfd259c150fc7">dust_gp2y_density_f</a></td></tr>
 <tr class="separator:a1760922e794a13871c9bfd259c150fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dust__gp2y_8c_source.html#l00065">65</a> of file <a class="el" href="dust__gp2y_8c_source.html">dust_gp2y.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="dust__gp2y_8c_source.html#l00039">dust_gp2y_density</a>, <a class="el" href="dust__gp2y_8c_source.html#l00040">dust_gp2y_density_f</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="dust__gp2y_8c_source.html#l00039">dust_gp2y_density</a>, <a class="el" href="dust__gp2y_8c_source.html#l00040">dust_gp2y_density_f</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dust__gp2y_8c_source.html#l00056">56</a> of file <a class="el" href="dust__gp2y_8c_source.html">dust_gp2y.c</a>.</p>
 
-<p>References <a class="el" href="dust__gp2y_8h_source.html#l00007">DUST_GP2Y_IDLE</a>, <a class="el" href="dust__gp2y_8c_source.html#l00038">dust_gp2y_status</a>, <a class="el" href="dust__gp2y_8h_source.html#l00006">DUST_GP2Y_UNINIT</a>, <a class="el" href="dust__gp2y_8c_source.html#l00046">GP2Y_I2C_DEV</a>, <a class="el" href="dust__gp2y_8c_source.html#l00049">GP2Y_SLAVE_ADDR</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, and <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>.</p>
+<p>References <a class="el" href="dust__gp2y_8h_source.html#l00007">DUST_GP2Y_IDLE</a>, <a class="el" href="dust__gp2y_8c_source.html#l00038">dust_gp2y_status</a>, <a class="el" href="dust__gp2y_8h_source.html#l00006">DUST_GP2Y_UNINIT</a>, <a class="el" href="dust__gp2y_8c_source.html#l00046">GP2Y_I2C_DEV</a>, <a class="el" href="dust__gp2y_8c_source.html#l00049">GP2Y_SLAVE_ADDR</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, and <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph.png" border="0" usemap="#dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph" alt=""/></div>
 <map name="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph" id="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="199,5,292,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="340,5,431,32"/></map>
+</map>
 </div>
 </p>
 
@@ -277,7 +277,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dust_gp2y_density</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dust_gp2y_density</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -309,7 +309,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dust_gp2y_status</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dust_gp2y_status</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -342,7 +342,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dust__gp2y_8c.html">dust_gp2y.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

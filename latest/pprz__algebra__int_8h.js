@@ -97,6 +97,7 @@ var pprz__algebra__int_8h =
     [ "SPEED_FLOAT_OF_BFP", "group__math__algebra__int.html#ga9f07d3d363b34da9e458e342f7453cc4", null ],
     [ "TRIG_BFP_OF_REAL", "group__math__algebra__int.html#gadec7ae4944fea25c0388e37ad983fe22", null ],
     [ "TRIG_FLOAT_OF_BFP", "group__math__algebra__int.html#ga41591c0e9e01055bfdb0ddbc0cd9b1ec", null ],
+    [ "int16_vect_zero", "group__math__algebra__int.html#ga8a8715b96125d266670689d30df5652d", null ],
     [ "int32_eulers_dot_321_of_rates", "group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f", null ],
     [ "int32_eulers_of_quat", "group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e", null ],
     [ "int32_eulers_of_rmat", "group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e", null ],

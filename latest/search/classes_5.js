@@ -11,7 +11,6 @@ var searchData=
   ['ekf2_5ft',['ekf2_t',['../ins__ekf2_8cpp.html#structekf2__t',1,'']]],
   ['ekfrange',['EKFRange',['../ekf__range_8h.html#structEKFRange',1,'']]],
   ['electrical',['Electrical',['../electrical_8h.html#structElectrical',1,'']]],
-  ['emcregs_5ft',['emcRegs_t',['../lpcEMC_8h.html#structemcRegs__t',1,'']]],
   ['enucoor_5fd',['EnuCoor_d',['../group__math__geodetic__double.html#structEnuCoor__d',1,'']]],
   ['enucoor_5ff',['EnuCoor_f',['../pprz__geodetic__float_8h.html#structEnuCoor__f',1,'']]],
   ['enucoor_5fi',['EnuCoor_i',['../group__math__geodetic__int.html#structEnuCoor__i',1,'']]],

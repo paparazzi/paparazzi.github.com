@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,11 +133,11 @@ $(document).ready(function(){initNavTree('airspeed__adc_8h_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef AIRSPEED_ADC_H</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define AIRSPEED_ADC_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inttypes_8h.html">inttypes.h</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="airspeed__adc_8h.html#structAirspeedAdc">AirspeedAdc</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">   32</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">val</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">   33</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">offset</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">   32</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">val</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">   33</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">offset</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#a758403f5daa7da25cab5832858c535c0">   34</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="airspeed__adc_8h.html#a758403f5daa7da25cab5832858c535c0">scale</a>;    </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="airspeed__adc_8h.html#abc9369e89888cef93dd1ab37044beaaf">   35</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="airspeed__adc_8h.html#abc9369e89888cef93dd1ab37044beaaf">airspeed</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
@@ -148,23 +148,22 @@ $(document).ready(function(){initNavTree('airspeed__adc_8h_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="airspeed__adc_8h.html#ab0e44bb7e2be106b0e9bfee8a53d9b09">airspeed_adc_update</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AIRSPEED_ADC_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_a0c50f7780f41aabb9259ba3afd33357e"><div class="ttname"><a href="airspeed__adc_8h.html#a0c50f7780f41aabb9259ba3afd33357e">airspeed_adc</a></div><div class="ttdeci">struct AirspeedAdc airspeed_adc</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00042">airspeed_adc.c:42</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_a5fcd7daa1371a69f1faa029a898999bb"><div class="ttname"><a href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">AirspeedAdc::val</a></div><div class="ttdeci">uint16_t val</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00032">airspeed_adc.h:32</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_afa4a95f4df116ecb7c849a98d941d24d"><div class="ttname"><a href="airspeed__adc_8h.html#afa4a95f4df116ecb7c849a98d941d24d">airspeed_adc_init</a></div><div class="ttdeci">void airspeed_adc_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00058">airspeed_adc.c:58</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_ab0e44bb7e2be106b0e9bfee8a53d9b09"><div class="ttname"><a href="airspeed__adc_8h.html#ab0e44bb7e2be106b0e9bfee8a53d9b09">airspeed_adc_update</a></div><div class="ttdeci">void airspeed_adc_update(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00073">airspeed_adc.c:73</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_structAirspeedAdc"><div class="ttname"><a href="airspeed__adc_8h.html#structAirspeedAdc">AirspeedAdc</a></div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00031">airspeed_adc.h:31</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_abc9369e89888cef93dd1ab37044beaaf"><div class="ttname"><a href="airspeed__adc_8h.html#abc9369e89888cef93dd1ab37044beaaf">AirspeedAdc::airspeed</a></div><div class="ttdeci">float airspeed</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00035">airspeed_adc.h:35</a></div></div>
-<div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_a758403f5daa7da25cab5832858c535c0"><div class="ttname"><a href="airspeed__adc_8h.html#a758403f5daa7da25cab5832858c535c0">AirspeedAdc::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">used as quadratic scale if AIRSPEED_ADC_QUADRATIC_SCALE, otherwise linear </div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00034">airspeed_adc.h:34</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_a9afdfe7bd1d7dd87b862b6980f329681"><div class="ttname"><a href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">AirspeedAdc::offset</a></div><div class="ttdeci">uint16_t offset</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00033">airspeed_adc.h:33</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__adc_8h.html">airspeed_adc.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

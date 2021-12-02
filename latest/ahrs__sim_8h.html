@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ahrs/ahrs_sim.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ahrs/ahrs_sim.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,25 +116,25 @@ $(document).ready(function(){initNavTree('ahrs__sim_8h.html','');});
 
 <p>Interface to set the AHRS from the simple OCaml simulator.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ahrs_8h_source.html">modules/ahrs/ahrs.h</a>&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_sim.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8h" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8h" id="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8h">
-<area shape="rect" id="node2" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="5,95,148,121"/></map>
+<div class="center"><img src="ahrs__sim_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__sim_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__sim_8h" id="sw_2airborne_2modules_2ahrs_2ahrs__sim_8h">
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8hdep" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8hdep" id="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8hdep">
-<area shape="rect" id="node2" href="ahrs__sim_8c.html" title="Dummy plug to set the AHRS from the simple OCaml simulator. " alt="" coords="5,95,181,136"/></map>
+<div class="center"><img src="ahrs__sim_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2ahrs_2ahrs__sim_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2ahrs_2ahrs__sim_8hdep" id="sw_2airborne_2modules_2ahrs_2ahrs__sim_8hdep">
+</map>
 </div>
 </div>
 <p><a href="ahrs__sim_8h_source.html">Go to the source code of this file.</a></p>
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8h_abe985eebaeb618b0da18f4964f52e758_cgraph.png" border="0" usemap="#ahrs__sim_8h_abe985eebaeb618b0da18f4964f52e758_cgraph" alt=""/></div>
 <map name="ahrs__sim_8h_abe985eebaeb618b0da18f4964f52e758_cgraph" id="ahrs__sim_8h_abe985eebaeb618b0da18f4964f52e758_cgraph">
-<area shape="rect" id="node2" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="189,5,329,32"/></map>
+</map>
 </div>
 </p>
 
@@ -227,8 +227,6 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="sim__ahrs_8c_source.html#l00015">sim_p</a>, <a class="el" href="sim__ahrs_8c_source.html#l00012">sim_phi</a>, <a class="el" href="sim__ahrs_8c_source.html#l00014">sim_psi</a>, <a class="el" href="sim__ahrs_8c_source.html#l00016">sim_q</a>, <a class="el" href="sim__ahrs_8c_source.html#l00017">sim_r</a>, <a class="el" href="sim__ahrs_8c_source.html#l00013">sim_theta</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00306">sensors_task()</a>.</p>
-
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -236,18 +234,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_cgraph.png" border="0" usemap="#ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_cgraph" alt=""/></div>
 <map name="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_cgraph" id="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="244,5,400,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="223,56,421,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="469,56,632,83"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_icgraph.png" border="0" usemap="#ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_icgraph" alt=""/></div>
-<map name="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_icgraph" id="ahrs__sim_8h_a631ce4de5e99850af24482335a960acf_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="223,31,329,57"/><area shape="rect" id="node3" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="377,5,564,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="403,56,539,83"/></map>
+</map>
 </div>
 </p>
 
@@ -266,8 +253,6 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00015">15</a> of file <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html">ins_arduimu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00071">ahrs_chimu_init()</a>, <a class="el" href="modules_2ins_2ins__arduimu__basic_8c_source.html#l00165">ArduIMU_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00053">ArduIMU_init()</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00026">ArduIMU_periodic()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00193">IMU_Daten_verarbeiten()</a>, <a class="el" href="ins__xsens_8c_source.html#l00127">update_state_interface()</a>, and <a class="el" href="ins__vn100_8c_source.html#l00160">vn100_event_task()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a70b61a4232cbf0e9acbde8d9b62ce1c5"></a>
@@ -282,8 +267,6 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00014">14</a> of file <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html">ins_arduimu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00071">ahrs_chimu_init()</a>, <a class="el" href="modules_2ins_2ins__arduimu__basic_8c_source.html#l00165">ArduIMU_event()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00053">ArduIMU_init()</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00026">ArduIMU_periodic()</a>, <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00193">IMU_Daten_verarbeiten()</a>, <a class="el" href="ins__xsens_8c_source.html#l00127">update_state_interface()</a>, and <a class="el" href="ins__vn100_8c_source.html#l00160">vn100_event_task()</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -291,8 +274,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8h.html">ahrs_sim.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:18 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8h.html">ahrs_sim.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

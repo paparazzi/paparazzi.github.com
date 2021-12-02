@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('px4flow_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="px4flow_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2optical__flow_2px4flow_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2optical__flow_2px4flow_8hdep" id="sw_2airborne_2modules_2optical__flow_2px4flow_8hdep">
-<area shape="rect" id="node2" href="px4flow_8c.html" title="driver for the optical flow sensor PX4FLOW " alt="" coords="6,95,166,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="px4flow_8h_source.html">Go to the source code of this file.</a></p>
@@ -195,6 +195,12 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
+<a class="anchor" id="a318cdf1fbbdad1f92122f930ada64d02"></a>float</td>
+<td class="fieldname">
+distance</td>
+<td class="fielddoc">
+Distance measured without compensation in meters. </td></tr>
+<tr><td class="fieldtype">
 <a class="anchor" id="a852d6712215d6177fd30a9d36057491a"></a>float</td>
 <td class="fieldname">
 flow_comp_m_x</td>
@@ -207,13 +213,13 @@ flow_comp_m_y</td>
 <td class="fielddoc">
 Flow in meters in y-sensor direction, angular-speed compensated [meters/sec]. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac3af873a9d5c3dc6ce0e1863d82d9140"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="ac3af873a9d5c3dc6ce0e1863d82d9140"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 flow_x</td>
 <td class="fielddoc">
 Flow in pixels in x-sensor direction. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae5a48694baf49c7575cc4e3d012072bd"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="ae5a48694baf49c7575cc4e3d012072bd"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 flow_y</td>
 <td class="fielddoc">
@@ -225,19 +231,19 @@ ground_distance</td>
 <td class="fielddoc">
 Ground distance in meters. Positive value: distance known. Negative value: Unknown distance. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a37141317f9f0b65722368a4dde470570"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a37141317f9f0b65722368a4dde470570"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 quality</td>
 <td class="fielddoc">
 Optical flow quality / confidence. 0: bad, 255: maximum quality. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aeaf16e0380fb3f19b8f86007a4814f72"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="aeaf16e0380fb3f19b8f86007a4814f72"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 sensor_id</td>
 <td class="fielddoc">
 Sensor ID. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ad690805ca727433bbc0d4678e7decb5c"></a><a class="el" href="types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></td>
+<a class="anchor" id="ad690805ca727433bbc0d4678e7decb5c"></a><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></td>
 <td class="fieldname">
 time_usec</td>
 <td class="fielddoc">
@@ -258,7 +264,7 @@ Timestamp (UNIX) </td></tr>
 <div class="textblock"><p>Mavlink optical flow rad structure. </p>
 <p>Using MAVLINK v1.0 generated code: Message ID 106 Fields are ordered to guarantee alignment </p>
 
-<p>Definition at line <a class="el" href="px4flow_8h_source.html#l00061">61</a> of file <a class="el" href="px4flow_8h_source.html">px4flow.h</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8h_source.html#l00062">62</a> of file <a class="el" href="px4flow_8h_source.html">px4flow.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -298,37 +304,37 @@ integrated_zgyro</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a758145203f5baade28c045e5cfbf1324"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a758145203f5baade28c045e5cfbf1324"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 integration_time_us</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a1886dadc1b7f0f18f2746ffee3b54fdf"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a1886dadc1b7f0f18f2746ffee3b54fdf"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 quality</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a03eaf299e39e13ab242bf7ef4e68388a"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a03eaf299e39e13ab242bf7ef4e68388a"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 sensor_id</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aa415aa4e7169e1158778340fe649d9d5"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<a class="anchor" id="aa415aa4e7169e1158778340fe649d9d5"></a><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></td>
 <td class="fieldname">
 temperature</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8e9845133b7ecf55026133da65cf78c7"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a8e9845133b7ecf55026133da65cf78c7"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 time_delta_distance_us</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a625dc093f972f3fcffd02bd1fe448ce5"></a><a class="el" href="types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></td>
+<a class="anchor" id="a625dc093f972f3fcffd02bd1fe448ce5"></a><a class="el" href="vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></td>
 <td class="fieldname">
 time_usec</td>
 <td class="fielddoc">
@@ -347,41 +353,41 @@ time_usec</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="px4flow_8h_source.html#l00095">95</a> of file <a class="el" href="px4flow_8h_source.html">px4flow.h</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8h_source.html#l00096">96</a> of file <a class="el" href="px4flow_8h_source.html">px4flow.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a73119a1d911e7b793682d7e0043ef02e"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a73119a1d911e7b793682d7e0043ef02e"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 autopilot</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af73631b17d4d01c9a0e525d224ec3051"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="af73631b17d4d01c9a0e525d224ec3051"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 base_mode</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a556a3f527755aad6c502bfeb6a9c211d"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a556a3f527755aad6c502bfeb6a9c211d"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 custom_mode</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac3033126ff988e765032033b4a5e705f"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="ac3033126ff988e765032033b4a5e705f"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 mavlink_version</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a777c45ec81527388a3701d3588ef8e52"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a777c45ec81527388a3701d3588ef8e52"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 system_status</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0cc4c2bae594f27ebad6aa56f252818c"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a class="anchor" id="a0cc4c2bae594f27ebad6aa56f252818c"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 type</td>
 <td class="fielddoc">
@@ -407,9 +413,9 @@ type</td>
 
 <p>Downlink message for debug. </p>
 
-<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00162">162</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00163">163</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="px4flow_8h_source.html#l00047">mavlink_optical_flow::flow_comp_m_x</a>, <a class="el" href="px4flow_8h_source.html#l00048">mavlink_optical_flow::flow_comp_m_y</a>, <a class="el" href="px4flow_8h_source.html#l00050">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00051">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00049">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00043">optical_flow</a>, <a class="el" href="px4flow_8h_source.html#l00053">mavlink_optical_flow::quality</a>, <a class="el" href="px4flow_8h_source.html#l00052">mavlink_optical_flow::sensor_id</a>, and <a class="el" href="px4flow_8h_source.html#l00046">mavlink_optical_flow::time_usec</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="px4flow_8h_source.html#l00050">mavlink_optical_flow::distance</a>, <a class="el" href="px4flow_8h_source.html#l00047">mavlink_optical_flow::flow_comp_m_x</a>, <a class="el" href="px4flow_8h_source.html#l00048">mavlink_optical_flow::flow_comp_m_y</a>, <a class="el" href="px4flow_8h_source.html#l00051">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00052">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00049">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00043">optical_flow</a>, <a class="el" href="px4flow_8h_source.html#l00054">mavlink_optical_flow::quality</a>, <a class="el" href="px4flow_8h_source.html#l00053">mavlink_optical_flow::sensor_id</a>, and <a class="el" href="px4flow_8h_source.html#l00046">mavlink_optical_flow::time_usec</a>.</p>
 
 </div>
 </div>
@@ -429,9 +435,9 @@ type</td>
 
 <p>Initialization function. </p>
 
-<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00135">135</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00136">136</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00134">mavlink_msg_req::callback</a>, <a class="el" href="px4flow_8c_source.html#l00127">decode_heartbeat_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00122">decode_optical_flow_rad_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00042">heartbeat</a>, <a class="el" href="px4flow_8c_source.html#l00048">MAVLINK_OPTICAL_FLOW_MSG_ID</a>, <a class="el" href="px4flow_8c_source.html#l00049">MAVLINK_OPTICAL_FLOW_RAD_MSG_ID</a>, <a class="el" href="px4flow_8c_source.html#l00047">MAVLINK_OPTICAL_HEARTBEAT_MSG_ID</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="mavlink__decoder_8c_source.html#l00029">mavlink_tp</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00133">mavlink_msg_req::msg</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00132">mavlink_msg_req::msg_id</a>, <a class="el" href="px4flow_8c_source.html#l00043">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00044">optical_flow_rad</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00053">mavlink_message::payload</a>, <a class="el" href="px4flow_8c_source.html#l00071">px4flow_compensate_rotation</a>, <a class="el" href="px4flow_8c_source.html#l00074">px4flow_stddev</a>, <a class="el" href="px4flow_8c_source.html#l00068">px4flow_update_agl</a>, <a class="el" href="px4flow_8c_source.html#l00063">req_flow</a>, <a class="el" href="px4flow_8c_source.html#l00064">req_flow_rad</a>, and <a class="el" href="px4flow_8c_source.html#l00065">req_heartbeat</a>.</p>
+<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00134">mavlink_msg_req::callback</a>, <a class="el" href="px4flow_8c_source.html#l00128">decode_heartbeat_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00123">decode_optical_flow_rad_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00042">heartbeat</a>, <a class="el" href="px4flow_8c_source.html#l00048">MAVLINK_OPTICAL_FLOW_MSG_ID</a>, <a class="el" href="px4flow_8c_source.html#l00049">MAVLINK_OPTICAL_FLOW_RAD_MSG_ID</a>, <a class="el" href="px4flow_8c_source.html#l00047">MAVLINK_OPTICAL_HEARTBEAT_MSG_ID</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="mavlink__decoder_8c_source.html#l00029">mavlink_tp</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00133">mavlink_msg_req::msg</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00132">mavlink_msg_req::msg_id</a>, <a class="el" href="px4flow_8c_source.html#l00043">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00044">optical_flow_rad</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00053">mavlink_message::payload</a>, <a class="el" href="px4flow_8c_source.html#l00071">px4flow_compensate_rotation</a>, <a class="el" href="px4flow_8c_source.html#l00074">px4flow_stddev</a>, <a class="el" href="px4flow_8c_source.html#l00068">px4flow_update_agl</a>, <a class="el" href="px4flow_8c_source.html#l00063">req_flow</a>, <a class="el" href="px4flow_8c_source.html#l00064">req_flow_rad</a>, and <a class="el" href="px4flow_8c_source.html#l00065">req_heartbeat</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -440,7 +446,7 @@ type</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="px4flow_8h_ac5213e8f7d51bc5a4b9885f77d863f28_cgraph.png" border="0" usemap="#px4flow_8h_ac5213e8f7d51bc5a4b9885f77d863f28_cgraph" alt=""/></div>
 <map name="px4flow_8h_ac5213e8f7d51bc5a4b9885f77d863f28_cgraph" id="px4flow_8h_ac5213e8f7d51bc5a4b9885f77d863f28_cgraph">
-<area shape="rect" id="node2" href="px4flow_8c.html#a262ad3d1424092914f4b0029a61c9ea8" title="decode_heartbeat_msg" alt="" coords="153,5,327,32"/><area shape="rect" id="node3" href="px4flow_8c.html#a9a3bfd0997e1386b7e6657cdddbd1681" title="decode_optical_flow_msg" alt="" coords="148,56,332,83"/><area shape="rect" id="node10" href="px4flow_8c.html#a01ce35bd9354fd881ce9a72d43a51886" title="According to https://pixhawk.org/modules/px4flow the PX4flow module outputs OPTICAL_FLOW_RAD message ..." alt="" coords="165,107,315,149"/><area shape="rect" id="node11" href="mavlink__decoder_8h.html#a25eeab8c2d4bf1615309f5c913d956ab" title="Register a callback for a mavlink message. " alt="" coords="159,173,321,200"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="407,31,551,57"/><area shape="rect" id="node5" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="380,81,579,108"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="627,81,791,108"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="839,81,1007,108"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1055,56,1208,83"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1056,107,1207,133"/></map>
+</map>
 </div>
 </p>
 
@@ -459,7 +465,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00042">42</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00182">jevois_mavlink_event()</a>, and <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="jevois__mavlink_8c_source.html#l00182">jevois_mavlink_event()</a>, and <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -475,7 +481,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00043">43</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00162">px4flow_downlink()</a>, and <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00163">px4flow_downlink()</a>, and <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -491,7 +497,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00044">44</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -507,7 +513,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00071">71</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +529,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00074">74</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -539,7 +545,7 @@ type</td>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00068">68</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00135">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00078">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00136">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +555,7 @@ type</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f52ac0bf93f8ebf53ea13ad6120e8a63.html">optical_flow</a></li><li class="navelem"><a class="el" href="px4flow_8h.html">px4flow.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

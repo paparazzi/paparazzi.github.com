@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('charge__sens_8c.html','');});
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for charge_sens.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('charge__sens_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="charge__sens_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2charge__sens_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2charge__sens_8c" id="sw_2airborne_2modules_2meteo_2charge__sens_8c">
-<area shape="rect" id="node2" href="charge__sens_8h.html" title="modules/meteo/charge\l_sens.h" alt="" coords="5,95,176,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="200,102,331,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1295,273,1433,300"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="691,95,845,136"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="725,191,811,218"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="547,184,701,225"/><area shape="rect" id="node16" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1201,191,1394,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="charge__sens_8c_source.html">Go to the source code of this file.</a></p>
@@ -155,9 +155,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:af1ac917471007803b842eb322a89927d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="charge__sens_8c.html#af1ac917471007803b842eb322a89927d">charge_trans</a></td></tr>
 <tr class="separator:af1ac917471007803b842eb322a89927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18aeb45aca01f11abe1928c6b0d8e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="charge__sens_8c.html#ad18aeb45aca01f11abe1928c6b0d8e9d">charge</a> [<a class="el" href="charge__sens_8c.html#a5cf387e55c3be4c68a8b8f974cfa8822">CHARGE_NB</a>]</td></tr>
+<tr class="memitem:ad18aeb45aca01f11abe1928c6b0d8e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="charge__sens_8c.html#ad18aeb45aca01f11abe1928c6b0d8e9d">charge</a> [<a class="el" href="charge__sens_8c.html#a5cf387e55c3be4c68a8b8f974cfa8822">CHARGE_NB</a>]</td></tr>
 <tr class="separator:ad18aeb45aca01f11abe1928c6b0d8e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8790fb88d5fb6b453ee3859d2eef1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="charge__sens_8c.html#ac8790fb88d5fb6b453ee3859d2eef1f5">charge_cnt</a></td></tr>
+<tr class="memitem:ac8790fb88d5fb6b453ee3859d2eef1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="charge__sens_8c.html#ac8790fb88d5fb6b453ee3859d2eef1f5">charge_cnt</a></td></tr>
 <tr class="separator:ac8790fb88d5fb6b453ee3859d2eef1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -230,7 +230,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="charge__sens_8c_source.html#l00056">56</a> of file <a class="el" href="charge__sens_8c_source.html">charge_sens.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="charge__sens_8c_source.html#l00043">charge</a>, <a class="el" href="charge__sens_8c_source.html#l00044">charge_cnt</a>, <a class="el" href="charge__sens_8c_source.html#l00040">CHARGE_NB</a>, <a class="el" href="charge__sens_8c_source.html#l00042">charge_trans</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="charge__sens_8c_source.html#l00043">charge</a>, <a class="el" href="charge__sens_8c_source.html#l00044">charge_cnt</a>, <a class="el" href="charge__sens_8c_source.html#l00040">CHARGE_NB</a>, <a class="el" href="charge__sens_8c_source.html#l00042">charge_trans</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="charge__sens_8c_a72c38fcb962cb210bf54a76341b58c0d_cgraph.png" border="0" usemap="#charge__sens_8c_a72c38fcb962cb210bf54a76341b58c0d_cgraph" alt=""/></div>
 <map name="charge__sens_8c_a72c38fcb962cb210bf54a76341b58c0d_cgraph" id="charge__sens_8c_a72c38fcb962cb210bf54a76341b58c0d_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="213,5,307,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="355,5,445,32"/></map>
+</map>
 </div>
 </p>
 
@@ -291,7 +291,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> charge[<a class="el" href="charge__sens_8c.html#a5cf387e55c3be4c68a8b8f974cfa8822">CHARGE_NB</a>]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> charge[<a class="el" href="charge__sens_8c.html#a5cf387e55c3be4c68a8b8f974cfa8822">CHARGE_NB</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -307,7 +307,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> charge_cnt</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> charge_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -340,7 +340,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="charge__sens_8c.html">charge_sens.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

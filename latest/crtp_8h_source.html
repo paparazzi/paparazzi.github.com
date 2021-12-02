@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,17 +153,17 @@ $(document).ready(function(){initNavTree('crtp_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="crtp_8h.html#ae9ca8b57d3f8219a3357926d8da3abbc">   50</a></span>&#160;<span class="preprocessor">#define CRTP_MAX_DATA_SIZE 31</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="crtp_8h.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="crtp_8h.html#ad1b25563fc48a6ebb61894695e12db21">   53</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="crtp_8h.html#ad1b25563fc48a6ebb61894695e12db21">size</a>; <span class="comment">// Total size of this message, including the header (placed here to overlap with syslink length field)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="crtp_8h.html#ad1b25563fc48a6ebb61894695e12db21">   53</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="crtp_8h.html#ad1b25563fc48a6ebb61894695e12db21">size</a>; <span class="comment">// Total size of this message, including the header (placed here to overlap with syslink length field)</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="crtp_8h.html">   54</a></span>&#160;  <span class="keyword">union </span>{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> header;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> header;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="crtp_8h.html">   56</a></span>&#160;    <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> : 2;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> link : 2;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port : 4;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channel : 2;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> link : 2;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> port : 4;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  };</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="crtp_8h.html#ac2a3fab5a3fc7d0425b562f3785a56ed">   63</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[<a class="code" href="crtp_8h.html#ae9ca8b57d3f8219a3357926d8da3abbc">CRTP_MAX_DATA_SIZE</a>];</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="crtp_8h.html#ac2a3fab5a3fc7d0425b562f3785a56ed">   63</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data[<a class="code" href="crtp_8h.html#ae9ca8b57d3f8219a3357926d8da3abbc">CRTP_MAX_DATA_SIZE</a>];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} __attribute__((packed)) <a class="code" href="crtp_8h.html#structcrtp__message__t">crtp_message_t</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -171,12 +171,11 @@ $(document).ready(function(){initNavTree('crtp_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">   68</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">roll</a>; <span class="comment">// -20 to 20</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="crtp_8h.html#a9301877ff3dc6db818ebea7d6bb0b6b7">   69</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="crtp_8h.html#a9301877ff3dc6db818ebea7d6bb0b6b7">pitch</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="crtp_8h.html#a7a5772de4d15e4d12f1de6127b20a0ed">   70</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="crtp_8h.html#a7a5772de4d15e4d12f1de6127b20a0ed">yaw</a>; <span class="comment">// -150 to 150</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">   71</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">thrust</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">   71</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">thrust</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <a class="code" href="crtp_8h.html#structcrtp__commander">crtp_commander</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="crtp_8h_html_ae9ca8b57d3f8219a3357926d8da3abbc"><div class="ttname"><a href="crtp_8h.html#ae9ca8b57d3f8219a3357926d8da3abbc">CRTP_MAX_DATA_SIZE</a></div><div class="ttdeci">#define CRTP_MAX_DATA_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00050">crtp.h:50</a></div></div>
 <div class="ttc" id="crtp_8h_html_structcrtp__commander"><div class="ttname"><a href="crtp_8h.html#structcrtp__commander">crtp_commander</a></div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00067">crtp.h:67</a></div></div>
 <div class="ttc" id="crtp_8h_html_a7a5772de4d15e4d12f1de6127b20a0ed"><div class="ttname"><a href="crtp_8h.html#a7a5772de4d15e4d12f1de6127b20a0ed">crtp_commander::yaw</a></div><div class="ttdeci">float yaw</div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00070">crtp.h:70</a></div></div>
@@ -185,16 +184,16 @@ $(document).ready(function(){initNavTree('crtp_8h_source.html','');});
 <div class="ttc" id="crtp_8h_html_a10f598910fe22691187653dbda03bd2c"><div class="ttname"><a href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">crtp_commander::roll</a></div><div class="ttdeci">float roll</div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00068">crtp.h:68</a></div></div>
 <div class="ttc" id="crtp_8h_html_accaf8139c3cd885a8739bc64ff4bbd5a"><div class="ttname"><a href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">crtp_commander::thrust</a></div><div class="ttdeci">uint16_t thrust</div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00071">crtp.h:71</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="crtp_8h_html_structcrtp__message__t"><div class="ttname"><a href="crtp_8h.html#structcrtp__message__t">crtp_message_t</a></div><div class="ttdef"><b>Definition:</b> <a href="crtp_8h_source.html#l00052">crtp.h:52</a></div></div>
-<div class="ttc" id="ADS8344_8c_html_a715f5cb061d11eb75981741eda4dafcd"><div class="ttname"><a href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a></div><div class="ttdeci">static uint8_t channel</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00080">ADS8344.c:80</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="dir_847ced2633402d6448f9e1bf487c2d45.html">bitcraze</a></li><li class="navelem"><a class="el" href="crtp_8h.html">crtp.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

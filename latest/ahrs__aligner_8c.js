@@ -5,6 +5,7 @@ var ahrs__aligner_8c =
     [ "LOW_NOISE_THRESHOLD", "ahrs__aligner_8c.html#ac66a7498c5767a4094f61688897712df", null ],
     [ "LOW_NOISE_TIME", "ahrs__aligner_8c.html#af5aba8cda072a4538c74c12f167ff3ba", null ],
     [ "ahrs_aligner_init", "ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea", null ],
+    [ "ahrs_aligner_restart", "ahrs__aligner_8c.html#aa098ebf986653894df0c6e03bf86354e", null ],
     [ "ahrs_aligner_run", "ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d", null ],
     [ "gyro_cb", "ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
     [ "send_aligner", "ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e", null ],

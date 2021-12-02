@@ -1,6 +1,9 @@
 var stabilization__indi_8c =
 [
     [ "INDI_ALLOWED_G_FACTOR", "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_P", "stabilization__indi_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_Q", "stabilization__indi_8c.html#a51a4671d083da69c010c0985faf4d2f3", null ],
+    [ "STABILIZATION_INDI_FILT_CUTOFF_R", "stabilization__indi_8c.html#abae06312debbf68b936cfb6eb0ad8913", null ],
     [ "bound_g_mat", "stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45", null ],
     [ "calc_g1_element", "stabilization__indi_8c.html#ada3e67cc5198f44de9142dc2b93f7d41", null ],
     [ "calc_g1g2_pseudo_inv", "stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3", null ],
@@ -70,6 +73,7 @@ var stabilization__indi_8c =
     [ "num_thrusters", "stabilization__indi_8c.html#a437607c8c74d6f8e47eab1333468dae5", null ],
     [ "q_filt", "stabilization__indi_8c.html#a5ac8c1bac787aa8dd5ac7cedf7df8c4e", null ],
     [ "r_filt", "stabilization__indi_8c.html#a4ac9ff1a86e6ed214eb20621f830265c", null ],
+    [ "rates_filt_fo", "stabilization__indi_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
     [ "rpm_ev", "stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4", null ],
     [ "stab_att_sp_euler", "stabilization__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],

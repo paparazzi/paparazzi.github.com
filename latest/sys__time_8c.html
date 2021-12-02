@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('sys__time_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2sys__time_8c" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2sys__time_8c" id="sw_2airborne_2mcu__periph_2sys__time_8c">
-<area shape="rect" id="node2" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="205,95,376,121"/><area shape="rect" id="node8" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities. " alt="" coords="545,95,607,121"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,177,91,203"/></map>
+</map>
 </div>
 </div>
 <p><a href="sys__time_8c_source.html">Go to the source code of this file.</a></p>
@@ -135,6 +135,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3ababed8b6819006aaf919a663efe8cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd">sys_time_register_timer</a> (float duration, <a class="el" href="sys__time_8h.html#a7c75e80c3211af63abc57efa18647726">sys_time_cb</a> cb)</td></tr>
 <tr class="memdesc:a3ababed8b6819006aaf919a663efe8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new system timer.  <a href="#a3ababed8b6819006aaf919a663efe8cd">More...</a><br /></td></tr>
 <tr class="separator:a3ababed8b6819006aaf919a663efe8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c219332312321b7b2bc31ed6a23ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__time_8c.html#a47c219332312321b7b2bc31ed6a23ba9">sys_time_register_timer_offset</a> (<a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> timer, float <a class="el" href="nps__fdm__jsbsim_8cpp.html#afcacd0230d91709cb81cf2e1c53b205a">offset</a>, <a class="el" href="sys__time_8h.html#a7c75e80c3211af63abc57efa18647726">sys_time_cb</a> cb)</td></tr>
+<tr class="memdesc:a47c219332312321b7b2bc31ed6a23ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new system timer with an fixed offset from another one.  <a href="#a47c219332312321b7b2bc31ed6a23ba9">More...</a><br /></td></tr>
+<tr class="separator:a47c219332312321b7b2bc31ed6a23ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ade8af0c9fbbf866026d99d60f9769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__time_8c.html#ac2ade8af0c9fbbf866026d99d60f9769">sys_time_cancel_timer</a> (<a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> id)</td></tr>
 <tr class="memdesc:ac2ade8af0c9fbbf866026d99d60f9769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a system timer by id.  <a href="#ac2ade8af0c9fbbf866026d99d60f9769">More...</a><br /></td></tr>
 <tr class="separator:ac2ade8af0c9fbbf866026d99d60f9769"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,11 +179,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00060">60</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00076">76</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00061">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00062">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00063">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00060">sys_time_timer::in_use</a>, and <a class="el" href="sys__time_8h_source.html#l00071">sys_time::timer</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__manager_8c_source.html#l00067">mavlink_mission_cancel_timer()</a>, and <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="mission__manager_8c_source.html#l00069">mavlink_mission_cancel_timer()</a>, and <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -189,7 +192,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_ac2ade8af0c9fbbf866026d99d60f9769_icgraph.png" border="0" usemap="#sys__time_8c_ac2ade8af0c9fbbf866026d99d60f9769_icgraph" alt=""/></div>
 <map name="sys__time_8c_ac2ade8af0c9fbbf866026d99d60f9769_icgraph" id="sys__time_8c_ac2ade8af0c9fbbf866026d99d60f9769_icgraph">
-<area shape="rect" id="node2" href="mission__manager_8h.html#ae84f48d5a61636d61507ccc7f1f9e128" title="mavlink_mission_cancel\l_timer" alt="" coords="221,93,396,135"/><area shape="rect" id="node9" href="px4__flash_8h.html#a5bbeb4ac8fb18641568992822ee3ba00" title="px4flash_event" alt="" coords="249,159,368,186"/><area shape="rect" id="node3" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="447,5,625,47"/><area shape="rect" id="node4" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="676,64,869,105"/><area shape="rect" id="node6" href="mission__manager_8h.html#ad9ae636b1a452c1354e52e9aeeaa481f" title="update current block and send if changed " alt="" coords="444,189,628,215"/><area shape="rect" id="node8" href="modules_2datalink_2missionlib_2waypoints_8h.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="455,123,617,164"/><area shape="rect" id="node5" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="917,71,1032,98"/><area shape="rect" id="node7" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="709,189,837,215"/></map>
+</map>
 </div>
 </p>
 
@@ -209,9 +212,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00078">78</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00092">92</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::resolution</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00049">sys_time_arch_init()</a>, <a class="el" href="sys__time_8h_source.html#l00055">SYS_TIME_FREQUENCY</a>, <a class="el" href="sys__time_8h_source.html#l00040">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00078">sys_time::ticks_per_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00061">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00062">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00063">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00060">sys_time_timer::in_use</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec_rem</a>, <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_tick</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::resolution</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00052">sys_time_arch_init()</a>, <a class="el" href="sys__time_8h_source.html#l00052">SYS_TIME_FREQUENCY</a>, <a class="el" href="sys__time_8h_source.html#l00040">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::ticks_per_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00071">sys_time::timer</a>.</p>
 
 <p>Referenced by <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, and <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
@@ -222,7 +225,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_cgraph.png" border="0" usemap="#sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_cgraph" alt=""/></div>
 <map name="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_cgraph" id="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="159,5,299,32"/></map>
+</map>
 </div>
 </p>
 
@@ -233,7 +236,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_icgraph.png" border="0" usemap="#sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_icgraph" alt=""/></div>
 <map name="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_icgraph" id="sys__time_8c_a1e6b75f4db9128a3326d8a6283b0af43_icgraph">
-<area shape="rect" id="node2" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="169,5,224,32"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="159,56,235,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="295,5,350,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="283,56,363,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="288,107,357,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="451,5,505,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="411,56,545,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="593,56,797,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="443,107,513,133"/></map>
+</map>
 </div>
 </p>
 
@@ -275,9 +278,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sys__time_8c_source.html#l00043">43</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00065">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00066">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::in_use</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::nb_tick</a>, <a class="el" href="gps__sirf_8c_source.html#l00192">start_time</a>, <a class="el" href="sys__time_8h_source.html#l00040">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00138">sys_time_ticks_of_sec()</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00061">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00062">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00063">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00060">sys_time_timer::in_use</a>, <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_tick</a>, <a class="el" href="gps__sirf_8c_source.html#l00192">start_time</a>, <a class="el" href="sys__time_8h_source.html#l00040">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00143">sys_time_ticks_of_sec()</a>, and <a class="el" href="sys__time_8h_source.html#l00071">sys_time::timer</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00362">init_fbw()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00083">intermcu_init()</a>, <a class="el" href="stm32_2uart__tunnel_8c_source.html#l00051">main()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="mission__manager_8c_source.html#l00057">mavlink_mission_set_timer()</a>, <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00070">px4flash_init()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00104">init_ap()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00362">init_fbw()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00083">intermcu_init()</a>, <a class="el" href="uart__tunnel_8c_source.html#l00051">main()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="mission__manager_8c_source.html#l00059">mavlink_mission_set_timer()</a>, <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00070">px4flash_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -286,7 +289,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_cgraph.png" border="0" usemap="#sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_cgraph" alt=""/></div>
 <map name="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_cgraph" id="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_cgraph">
-<area shape="rect" id="node2" href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="229,5,392,32"/></map>
+</map>
 </div>
 </p>
 
@@ -297,7 +300,78 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_icgraph.png" border="0" usemap="#sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_icgraph" alt=""/></div>
 <map name="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_icgraph" id="sys__time_8c_a3ababed8b6819006aaf919a663efe8cd_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="275,5,339,32"/><area shape="rect" id="node4" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="272,56,341,83"/><area shape="rect" id="node5" href="intermcu__fbw_8c.html#af5ff84589199efa9195c642a64024b40" title="intermcu_init" alt="" coords="254,107,359,133"/><area shape="rect" id="node6" href="stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="279,157,334,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="267,208,347,235"/><area shape="rect" id="node11" href="mission__manager_8h.html#ad638b64fc964531fab6a78e1bb8e24d3" title="mavlink_mission_set\l_timer" alt="" coords="229,259,384,301"/><area shape="rect" id="node16" href="px4__flash_8h.html#a5bbeb4ac8fb18641568992822ee3ba00" title="px4flash_event" alt="" coords="247,325,366,352"/><area shape="rect" id="node17" href="px4__flash_8h.html#aa33eada7e40b74bfe0461783b95b52c5" title="px4flash_init" alt="" coords="256,376,357,403"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="485,31,556,57"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="493,157,548,184"/><area shape="rect" id="node9" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="453,208,588,235"/><area shape="rect" id="node10" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="657,208,861,235"/><area shape="rect" id="node12" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="432,259,609,301"/><area shape="rect" id="node15" href="modules_2datalink_2missionlib_2waypoints_8h.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="440,325,601,366"/><area shape="rect" id="node13" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="663,291,856,333"/><area shape="rect" id="node14" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="909,299,1024,325"/></map>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a47c219332312321b7b2bc31ed6a23ba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> sys_time_register_timer_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sys__time_8h.html#a7c75e80c3211af63abc57efa18647726">sys_time_cb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a new system timer with an fixed offset from another one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>timer providing start time and duration </td></tr>
+    <tr><td class="paramname">offset</td><td>offset in seconds beetween the timers (will overlap if longer than duration) </td></tr>
+    <tr><td class="paramname">cb</td><td>Callback function that is called from the ISR when timer elapses, or NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if it failed, the timer id otherwise </dd></dl>
+
+<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00059">59</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
+
+<p>References <a class="el" href="sys__time_8h_source.html#l00061">sys_time_timer::cb</a>, <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00062">sys_time_timer::elapsed</a>, <a class="el" href="sys__time_8h_source.html#l00063">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00060">sys_time_timer::in_use</a>, <a class="el" href="sys__time_8h_source.html#l00040">SYS_TIME_NB_TIMER</a>, <a class="el" href="sys__time_8h_source.html#l00143">sys_time_ticks_of_sec()</a>, and <a class="el" href="sys__time_8h_source.html#l00071">sys_time::timer</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00104">init_ap()</a>, and <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00080">main_init()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_cgraph.png" border="0" usemap="#sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_cgraph" alt=""/></div>
+<map name="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_cgraph" id="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_cgraph">
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_icgraph.png" border="0" usemap="#sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_icgraph" alt=""/></div>
+<map name="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_icgraph" id="sys__time_8c_a47c219332312321b7b2bc31ed6a23ba9_icgraph">
+</map>
 </div>
 </p>
 
@@ -336,31 +410,31 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00070">70</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__time_8c_source.html#l00086">86</a> of file <a class="el" href="sys__time_8c_source.html">sys_time.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00068">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00067">sys_time_timer::end_time</a>, <a class="el" href="chibios_2mcu__arch_8h_source.html#l00037">mcu_int_disable</a>, <a class="el" href="chibios_2mcu__arch_8h_source.html#l00036">mcu_int_enable</a>, <a class="el" href="sys__time_8h_source.html#l00138">sys_time_ticks_of_sec()</a>, and <a class="el" href="sys__time_8h_source.html#l00075">sys_time::timer</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00064">sys_time_timer::duration</a>, <a class="el" href="sys__time_8h_source.html#l00063">sys_time_timer::end_time</a>, <a class="el" href="sys__time_8h_source.html#l00143">sys_time_ticks_of_sec()</a>, and <a class="el" href="sys__time_8h_source.html#l00071">sys_time::timer</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__manager_8c_source.html#l00057">mavlink_mission_set_timer()</a>.</p>
+<p>Referenced by <a class="el" href="mission__manager_8c_source.html#l00059">mavlink_mission_set_timer()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_cgraph.png" border="0" usemap="#sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_cgraph" alt=""/></div>
 <map name="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_cgraph" id="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_cgraph">
-<area shape="rect" id="node2" href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="225,5,388,32"/></map>
+</map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_icgraph.png" border="0" usemap="#sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_icgraph" alt=""/></div>
 <map name="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_icgraph" id="sys__time_8c_a29aeb6ca74ebc684b9a4814383462cbd_icgraph">
-<area shape="rect" id="node2" href="mission__manager_8h.html#ad638b64fc964531fab6a78e1bb8e24d3" title="mavlink_mission_set\l_timer" alt="" coords="225,39,380,80"/><area shape="rect" id="node3" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="428,5,605,47"/><area shape="rect" id="node6" href="modules_2datalink_2missionlib_2waypoints_8h.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="436,71,597,112"/><area shape="rect" id="node4" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="653,39,847,80"/><area shape="rect" id="node5" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="895,46,1009,73"/></map>
+</map>
 </div>
 </p>
 
@@ -387,7 +461,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sys__time_8c.html">sys_time.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/link_mcu_can.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/intermcu/link_mcu_can.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,18 +113,18 @@ $(document).ready(function(){initNavTree('link__mcu__can_8c.html','');});
 <div class="title">link_mcu_can.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="link__mcu__can_8h_source.html">link_mcu_can.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="link__mcu__can_8h_source.html">modules/intermcu/link_mcu_can.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="can_8h_source.html">mcu_periph/can.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="commands_8h_source.html">subsystems/commands.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commands_8h_source.html">modules/core/commands.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for link_mcu_can.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="link__mcu__can_8c__incl.png" border="0" usemap="#sw_2airborne_2link__mcu__can_8c" alt=""/></div>
-<map name="sw_2airborne_2link__mcu__can_8c" id="sw_2airborne_2link__mcu__can_8c">
-<area shape="rect" id="node2" href="link__mcu__can_8h.html" title="Transport for the communication between FBW and AP via CAN. " alt="" coords="5,95,125,121"/><area shape="rect" id="node5" href="can_8h.html" title="mcu_periph/can.h" alt="" coords="149,95,285,121"/><area shape="rect" id="node6" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="309,95,363,121"/><area shape="rect" id="node8" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="387,95,573,121"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="195,244,280,271"/><area shape="rect" id="node4" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="103,169,201,196"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="363,169,459,196"/></map>
+<div class="center"><img src="link__mcu__can_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2intermcu_2link__mcu__can_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2intermcu_2link__mcu__can_8c" id="sw_2airborne_2modules_2intermcu_2link__mcu__can_8c">
+</map>
 </div>
 </div>
 <p><a href="link__mcu__can_8c_source.html">Go to the source code of this file.</a></p>
@@ -143,12 +143,12 @@ Macros</h2></td></tr>
 <tr class="separator:ada7beaa167ba12de28e6dfb407bd1866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3b87b1a50c5ea050534296940844eba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#ae3b87b1a50c5ea050534296940844eba">MSG_INTERMCU_FBW_STATUS_ID</a>&#160;&#160;&#160;0x10</td></tr>
 <tr class="separator:ae3b87b1a50c5ea050534296940844eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0a343eb1189bb602e2d8ac10971bae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a2d0a343eb1189bb602e2d8ac10971bae">INTERMCU_COMMAND</a>(_intermcu_payload, nr)&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>)((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+0+(2*(nr)))|*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+1+(2*(nr)))&lt;&lt;8))</td></tr>
+<tr class="memitem:a2d0a343eb1189bb602e2d8ac10971bae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a2d0a343eb1189bb602e2d8ac10971bae">INTERMCU_COMMAND</a>(_intermcu_payload, nr)&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>)((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+0+(2*(nr)))|*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+1+(2*(nr)))&lt;&lt;8))</td></tr>
 <tr class="separator:a2d0a343eb1189bb602e2d8ac10971bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b98f23c7b3a434d4a626acf53a48172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a9b98f23c7b3a434d4a626acf53a48172">link_mcu_on_can_msg</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, int len)</td></tr>
+<tr class="memitem:a9b98f23c7b3a434d4a626acf53a48172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a9b98f23c7b3a434d4a626acf53a48172">link_mcu_on_can_msg</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> id, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, int len)</td></tr>
 <tr class="separator:a9b98f23c7b3a434d4a626acf53a48172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4811adaa420099181f04d75d5ba24c25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_init</a> (void)</td></tr>
 <tr class="separator:a4811adaa420099181f04d75d5ba24c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,41 +157,41 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a67cc532cf5bcae1bd6927dbb4e9b77e1"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
-<tr class="separator:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f213d5bb326220f41add74354559ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
-<tr class="separator:af1f213d5bb326220f41add74354559ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67cc532cf5bcae1bd6927dbb4e9b77e1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a67cc532cf5bcae1bd6927dbb4e9b77e1">imcu_cmd_mstr</a></td></tr>
-<tr class="separator:a67cc532cf5bcae1bd6927dbb4e9b77e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23ca8b7e929d154158ee58f679b248b"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
-<tr class="separator:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f213d5bb326220f41add74354559ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
-<tr class="separator:af1f213d5bb326220f41add74354559ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23ca8b7e929d154158ee58f679b248b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#ad23ca8b7e929d154158ee58f679b248b">imcu_cmd_ext</a></td></tr>
-<tr class="separator:ad23ca8b7e929d154158ee58f679b248b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd7da33b598699d7a809a92beb70ebe"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
-<tr class="separator:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f213d5bb326220f41add74354559ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
-<tr class="separator:af1f213d5bb326220f41add74354559ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd7da33b598699d7a809a92beb70ebe"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#aebd7da33b598699d7a809a92beb70ebe">imcu_chan1</a></td></tr>
-<tr class="separator:aebd7da33b598699d7a809a92beb70ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20d6f268eae6d2ac9fb97a6b0e3eafe"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
-<tr class="separator:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f213d5bb326220f41add74354559ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
-<tr class="separator:af1f213d5bb326220f41add74354559ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20d6f268eae6d2ac9fb97a6b0e3eafe"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#ad20d6f268eae6d2ac9fb97a6b0e3eafe">imcu_chan2</a></td></tr>
-<tr class="separator:ad20d6f268eae6d2ac9fb97a6b0e3eafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c824a357e5e5372bab3c43323a623fd"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
-<tr class="separator:a3f7a80ad4a95510ff27c4e3add4fc12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f213d5bb326220f41add74354559ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
-<tr class="separator:af1f213d5bb326220f41add74354559ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c824a357e5e5372bab3c43323a623fd"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a8c824a357e5e5372bab3c43323a623fd">imcu_trim</a></td></tr>
-<tr class="separator:a8c824a357e5e5372bab3c43323a623fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3059369f2b7362ce2a97550e071ea0a4"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a746bbcd95ff9dae490204439809aef12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
+<tr class="separator:a746bbcd95ff9dae490204439809aef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf50c23dc30373465234101442b2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
+<tr class="separator:abbf50c23dc30373465234101442b2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3059369f2b7362ce2a97550e071ea0a4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a3059369f2b7362ce2a97550e071ea0a4">imcu_cmd_mstr</a></td></tr>
+<tr class="separator:a3059369f2b7362ce2a97550e071ea0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02094bf23463fa6e0e8a15fb9521e91b"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a746bbcd95ff9dae490204439809aef12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
+<tr class="separator:a746bbcd95ff9dae490204439809aef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf50c23dc30373465234101442b2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
+<tr class="separator:abbf50c23dc30373465234101442b2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02094bf23463fa6e0e8a15fb9521e91b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a02094bf23463fa6e0e8a15fb9521e91b">imcu_cmd_ext</a></td></tr>
+<tr class="separator:a02094bf23463fa6e0e8a15fb9521e91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d34ea90ff7de20b14d31bd5af8405e"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a746bbcd95ff9dae490204439809aef12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
+<tr class="separator:a746bbcd95ff9dae490204439809aef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf50c23dc30373465234101442b2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
+<tr class="separator:abbf50c23dc30373465234101442b2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d34ea90ff7de20b14d31bd5af8405e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#ae7d34ea90ff7de20b14d31bd5af8405e">imcu_chan1</a></td></tr>
+<tr class="separator:ae7d34ea90ff7de20b14d31bd5af8405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1797611d8436c5119233043656a378f3"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a746bbcd95ff9dae490204439809aef12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
+<tr class="separator:a746bbcd95ff9dae490204439809aef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf50c23dc30373465234101442b2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
+<tr class="separator:abbf50c23dc30373465234101442b2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1797611d8436c5119233043656a378f3"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a1797611d8436c5119233043656a378f3">imcu_chan2</a></td></tr>
+<tr class="separator:a1797611d8436c5119233043656a378f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7218e94dc61bb33885987d23df1963da"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a746bbcd95ff9dae490204439809aef12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [8]</td></tr>
+<tr class="separator:a746bbcd95ff9dae490204439809aef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf50c23dc30373465234101442b2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b> [4]</td></tr>
+<tr class="separator:abbf50c23dc30373465234101442b2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7218e94dc61bb33885987d23df1963da"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a7218e94dc61bb33885987d23df1963da">imcu_trim</a></td></tr>
+<tr class="separator:a7218e94dc61bb33885987d23df1963da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d130fa66a5074c64197b7cd4bf535de"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="link__mcu__usart_8h.html#structlink__mcu__msg">link_mcu_msg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a></td></tr>
 <tr class="separator:a4d130fa66a5074c64197b7cd4bf535de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86deade5843ab146c47083104cf8f3cd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="link__mcu__usart_8h.html#structlink__mcu__msg">link_mcu_msg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a></td></tr>
@@ -217,7 +217,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>)((<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+0+(2*(nr)))|*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+1+(2*(nr)))&lt;&lt;8))</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>)((<a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+0+(2*(nr)))|*((<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+1+(2*(nr)))&lt;&lt;8))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -341,7 +341,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__can_8c_source.html#l00229">229</a> of file <a class="el" href="link__mcu__can_8c_source.html">link_mcu_can.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00369">event_task_ap()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00221">event_task_ap()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -350,7 +350,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__can_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph.png" border="0" usemap="#link__mcu__can_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph" alt=""/></div>
 <map name="link__mcu__can_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph" id="link__mcu__can_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="208,5,323,32"/><area shape="rect" id="node3" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="371,5,507,32"/></map>
+</map>
 </div>
 </p>
 
@@ -372,7 +372,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__can_8c_source.html#l00216">216</a> of file <a class="el" href="link__mcu__can_8c_source.html">link_mcu_can.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, and <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00362">init_fbw()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00362">init_fbw()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__can_8c_a4811adaa420099181f04d75d5ba24c25_icgraph.png" border="0" usemap="#link__mcu__can_8c_a4811adaa420099181f04d75d5ba24c25_icgraph" alt=""/></div>
 <map name="link__mcu__can_8c_a4811adaa420099181f04d75d5ba24c25_icgraph" id="link__mcu__can_8c_a4811adaa420099181f04d75d5ba24c25_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="160,5,224,32"/><area shape="rect" id="node4" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="157,56,227,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="275,31,345,57"/></map>
+</map>
 </div>
 </p>
 
@@ -394,13 +394,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void link_mcu_on_can_msg </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -430,14 +430,14 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__can_8c_a9b98f23c7b3a434d4a626acf53a48172_icgraph.png" border="0" usemap="#link__mcu__can_8c_a9b98f23c7b3a434d4a626acf53a48172_icgraph" alt=""/></div>
 <map name="link__mcu__can_8c_a9b98f23c7b3a434d4a626acf53a48172_icgraph" id="link__mcu__can_8c_a9b98f23c7b3a434d4a626acf53a48172_icgraph">
-<area shape="rect" id="node2" href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25" title="link_mcu_init" alt="" coords="220,31,324,57"/><area shape="rect" id="node3" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="375,5,439,32"/><area shape="rect" id="node5" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="372,56,441,83"/><area shape="rect" id="node4" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="489,31,560,57"/></map>
+</map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="aebd7da33b598699d7a809a92beb70ebe"></a>
+<a class="anchor" id="ae7d34ea90ff7de20b14d31bd5af8405e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -449,7 +449,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad20d6f268eae6d2ac9fb97a6b0e3eafe"></a>
+<a class="anchor" id="a1797611d8436c5119233043656a378f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -461,7 +461,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad23ca8b7e929d154158ee58f679b248b"></a>
+<a class="anchor" id="a02094bf23463fa6e0e8a15fb9521e91b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -473,7 +473,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a67cc532cf5bcae1bd6927dbb4e9b77e1"></a>
+<a class="anchor" id="a3059369f2b7362ce2a97550e071ea0a4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -485,7 +485,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8c824a357e5e5372bab3c43323a623fd"></a>
+<a class="anchor" id="a7218e94dc61bb33885987d23df1963da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -530,8 +530,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__can_8c.html">link_mcu_can.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:48 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b59edde850f8ccf4b394776fda69f2c6.html">intermcu</a></li><li class="navelem"><a class="el" href="link__mcu__can_8c.html">link_mcu_can.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

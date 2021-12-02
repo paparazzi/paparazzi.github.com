@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,16 @@ $(document).ready(function(){initNavTree('spi_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi_8h__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2spi_8h" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2spi_8h" id="sw_2airborne_2mcu__periph_2spi_8h">
-<area shape="rect" id="node4" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="213,95,384,121"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="124,177,209,203"/></map>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2spi_8hdep" alt=""/></div>
+<map name="sw_2airborne_2mcu__periph_2spi_8hdep" id="sw_2airborne_2mcu__periph_2spi_8hdep">
+</map>
 </div>
 </div>
 <p><a href="spi_8h_source.html">Go to the source code of this file.</a></p>
@@ -261,16 +270,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">spi_blocking_transceive</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *t)</td></tr>
 <tr class="memdesc:ga66e55e817c63768ac9910dc6f7cc9447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a spi transaction (blocking).  <a href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">More...</a><br /></td></tr>
 <tr class="separator:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad43916477f5d87b42eaa7d2099771568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_slave_select</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
+<tr class="memitem:gad43916477f5d87b42eaa7d2099771568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_slave_select</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:gad43916477f5d87b42eaa7d2099771568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a slave.  <a href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">More...</a><br /></td></tr>
 <tr class="separator:gad43916477f5d87b42eaa7d2099771568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99507da72932c02e5d8daf9a7170ed69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">spi_slave_unselect</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
+<tr class="memitem:ga99507da72932c02e5d8daf9a7170ed69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">spi_slave_unselect</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:ga99507da72932c02e5d8daf9a7170ed69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unselect a slave.  <a href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">More...</a><br /></td></tr>
 <tr class="separator:ga99507da72932c02e5d8daf9a7170ed69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga747ed5cb8c8252f0101fb60a04fa886d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d">spi_lock</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
+<tr class="memitem:ga747ed5cb8c8252f0101fb60a04fa886d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d">spi_lock</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:ga747ed5cb8c8252f0101fb60a04fa886d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the SPI fifo.  <a href="group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d">More...</a><br /></td></tr>
 <tr class="separator:ga747ed5cb8c8252f0101fb60a04fa886d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5ff5a9f93b73caf6532b7e25dd917b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9">spi_resume</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
+<tr class="memitem:gaf5ff5a9f93b73caf6532b7e25dd917b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9">spi_resume</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:gaf5ff5a9f93b73caf6532b7e25dd917b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the SPI fifo.  <a href="group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9">More...</a><br /></td></tr>
 <tr class="separator:gaf5ff5a9f93b73caf6532b7e25dd917b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7321d472bfa9548243ea6f22cf3ff8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4">spi_slave_init</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
@@ -322,7 +331,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="spi_8h.html">spi.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

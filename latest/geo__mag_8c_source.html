@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="geo__mag_8h.html">modules/geo_mag/geo_mag.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__geodetic__wmm2020_8h.html">math/pprz_geodetic_wmm2020.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__double_8h.html">math/pprz_algebra_double.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">subsystems/abi.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">modules/core/abi.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//FIXME: should not be in this spot</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//for kill_throttle check</span></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="geo__mag_8c.html#abf6e468d33d4976598df3dbe1c67b189">geo_mag</a>.<a class="code" href="geo__mag_8h.html#ae67c77ac2666b0315efc4bfa7f72b8da">calc_once</a>) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span> gha[<a class="code" href="group__math__geodetic__wmm.html#ga79bd2810e131df6189e69ed5662911d1">MAXCOEFF</a>]; <span class="comment">// Geomag global variables</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> nmax;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> nmax;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/* Current date in decimal year, for example 2015.68 */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> sdate = <a class="code" href="group__math__geodetic__wmm.html#ga62100c08a958cf03a315d5b72a4a3c4a">GPS_EPOCH_BEGIN</a> +</div>
@@ -217,9 +217,9 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div class="ttc" id="gps_8h_html_a0568d6804839a44b26cd61ffd86046ad"><div class="ttname"><a href="gps_8h.html#a0568d6804839a44b26cd61ffd86046ad">GpsState::tow</a></div><div class="ttdeci">uint32_t tow</div><div class="ttdoc">GPS time of week in ms. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00109">gps.h:109</a></div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="group__math__geodetic__wmm_html_ga73c5974d5caf8bd336ecb273356e2a09"><div class="ttname"><a href="group__math__geodetic__wmm.html#ga73c5974d5caf8bd336ecb273356e2a09">IEXT</a></div><div class="ttdeci">#define IEXT</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wmm2020_8h_source.html#l00051">pprz_geodetic_wmm2020.h:51</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_ad6a02c197a16ad76cf794e6e4935f5c9"><div class="ttname"><a href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i::lon</a></div><div class="ttdeci">int32_t lon</div><div class="ttdoc">in degrees*1e7 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00061">pprz_geodetic_int.h:61</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_aa44c74404cf8ef0b143066e970352adb"><div class="ttname"><a href="group__math__algebra__float.html#aa44c74404cf8ef0b143066e970352adb">FloatVect3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00055">pprz_algebra_float.h:55</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="group__math__geodetic__wmm_html_gac2bdc89e52c860bf7f849b81fe4e5db2"><div class="ttname"><a href="group__math__geodetic__wmm.html#gac2bdc89e52c860bf7f849b81fe4e5db2">WEEKS_IN_YEAR</a></div><div class="ttdeci">#define WEEKS_IN_YEAR</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wmm2020_8h_source.html#l00063">pprz_geodetic_wmm2020.h:63</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="group__math__geodetic__wmm_html_ga048c90b39198c639be47377aa4ab14d8"><div class="ttname"><a href="group__math__geodetic__wmm.html#ga048c90b39198c639be47377aa4ab14d8">EXT_COEFF2</a></div><div class="ttdeci">#define EXT_COEFF2</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wmm2020_8h_source.html#l00053">pprz_geodetic_wmm2020.h:53</a></div></div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_45631f37b0deddad5fac6a40f1cf48fa.html">geo_mag</a></li><li class="navelem"><a class="el" href="geo__mag_8c.html">geo_mag.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

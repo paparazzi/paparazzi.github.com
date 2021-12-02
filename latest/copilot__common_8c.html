@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('copilot__common_8c.html','');});
  for Small UAV-based Personal Remote Sensing Systems" by Cal Coopmans and Chris Coffin.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="copilot_8h_source.html">modules/mission/copilot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for copilot_common.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('copilot__common_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="copilot__common_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2mission_2copilot__common_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2mission_2copilot__common_8c" id="sw_2airborne_2modules_2mission_2copilot__common_8c">
-<area shape="rect" id="node2" href="copilot_8h.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot), based losely on ISaAC: The Intelligent Safety and Airworthiness Co&#45;Pilot module Based on paper &quot;A Payload Verification and Management Framework &#160;for Small UAV&#45;based Personal Remote Sensing Systems&quot; by Cal Coopmans and Chris Coffin. " alt="" coords="155,102,343,129"/><area shape="rect" id="node9" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="515,95,669,136"/><area shape="rect" id="node3" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="123,273,277,315"/><area shape="rect" id="node6" href="extra__pprz__dl_8h.html" title="Extra datalink and telemetry using PPRZ protocol. " alt="" coords="248,184,416,225"/><area shape="rect" id="node8" href="pprz__mutex_8h.html" title="Utility functions and macros to abstract some RTOS functionalities such as mutexes. " alt="" coords="113,191,223,218"/><area shape="rect" id="node10" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="525,363,664,389"/><area shape="rect" id="node14" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="714,184,867,225"/><area shape="rect" id="node15" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1072,281,1157,307"/><area shape="rect" id="node19" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="494,281,687,307"/></map>
+</map>
 </div>
 </div>
 <p><a href="copilot__common_8c_source.html">Go to the source code of this file.</a></p>
@@ -144,16 +144,16 @@ Functions</h2></td></tr>
 <tr class="memitem:aff1f561b25724533f46290e86658c698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#aff1f561b25724533f46290e86658c698">copilot_periodic</a> (void)</td></tr>
 <tr class="memdesc:aff1f561b25724533f46290e86658c698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic function.  <a href="#aff1f561b25724533f46290e86658c698">More...</a><br /></td></tr>
 <tr class="separator:aff1f561b25724533f46290e86658c698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b997dd03ef29008f0c189157238133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a45b997dd03ef29008f0c189157238133">copilot_parse_cam_snapshot_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a45b997dd03ef29008f0c189157238133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a45b997dd03ef29008f0c189157238133">copilot_parse_cam_snapshot_dl</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a45b997dd03ef29008f0c189157238133"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy CAMERA_SNAPSHOT message and mark it to be sent  <a href="#a45b997dd03ef29008f0c189157238133">More...</a><br /></td></tr>
 <tr class="separator:a45b997dd03ef29008f0c189157238133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e05c9fee48850daf7dcf2a8d40f7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a59e05c9fee48850daf7dcf2a8d40f7fc">copilot_parse_cam_payload_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a59e05c9fee48850daf7dcf2a8d40f7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a59e05c9fee48850daf7dcf2a8d40f7fc">copilot_parse_cam_payload_dl</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a59e05c9fee48850daf7dcf2a8d40f7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy CAMERA_PAYLOAD message and mark it to be sent  <a href="#a59e05c9fee48850daf7dcf2a8d40f7fc">More...</a><br /></td></tr>
 <tr class="separator:a59e05c9fee48850daf7dcf2a8d40f7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot_parse_copilot_status_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot_parse_copilot_status_dl</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy COPILOT_STATUS message and mark it to be sent  <a href="#a8b94bc3c335ccfb1b5b7d65df6789dc1">More...</a><br /></td></tr>
 <tr class="separator:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f66771f594519e6d3b8efd400ec4162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162">copilot_parse_payload_command_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a6f66771f594519e6d3b8efd400ec4162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162">copilot_parse_payload_command_dl</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a6f66771f594519e6d3b8efd400ec4162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass through PAYLOAD_COMMAND message and send it as PAYLOAD msg over telemetry.  <a href="#a6f66771f594519e6d3b8efd400ec4162">More...</a><br /></td></tr>
 <tr class="separator:a6f66771f594519e6d3b8efd400ec4162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -212,7 +212,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void copilot_parse_cam_payload_dl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -234,7 +234,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void copilot_parse_cam_snapshot_dl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -258,7 +258,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void copilot_parse_copilot_status_dl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -280,7 +280,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void copilot_parse_payload_command_dl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -291,7 +291,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00184">184</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00055">extra_dl_buffer</a>, and <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00063">dl_buffer</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00055">extra_dl_buffer</a>, and <a class="el" href="extra__pprz__dl_8c_source.html#l00057">extra_pprz_tp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00076">76</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>References <a class="el" href="copilot_8h_source.html#l00069">CameraSnapshot::array_temp</a>, <a class="el" href="copilot_8h_source.html#l00064">CameraSnapshot::cam_id</a>, <a class="el" href="copilot__common_8c_source.html#l00051">cam_payload</a>, <a class="el" href="copilot__common_8c_source.html#l00052">cam_snapshot</a>, <a class="el" href="copilot_8h_source.html#l00065">CameraSnapshot::cam_state</a>, <a class="el" href="copilot__common_8c_source.html#l00053">copilot_status</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="copilot_8h_source.html#l00059">CameraPayload::door_status</a>, <a class="el" href="copilot_8h_source.html#l00060">CameraPayload::error_code</a>, <a class="el" href="copilot_8h_source.html#l00077">CopilotStatus::error_code</a>, <a class="el" href="copilot_8h_source.html#l00068">CameraSnapshot::lens_temp</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="copilot__common_8c_source.html#l00048">send_cam_payload</a>, <a class="el" href="copilot__common_8c_source.html#l00047">send_cam_snapshot</a>, <a class="el" href="copilot__common_8c_source.html#l00049">send_copilot_status</a>, <a class="el" href="copilot_8h_source.html#l00066">CameraSnapshot::snapshot_num</a>, <a class="el" href="copilot_8h_source.html#l00067">CameraSnapshot::snapshot_valid</a>, <a class="el" href="copilot_8h_source.html#l00076">CopilotStatus::status</a>, <a class="el" href="copilot_8h_source.html#l00056">CameraPayload::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00073">CopilotStatus::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00058">CameraPayload::used_disk</a>, <a class="el" href="copilot_8h_source.html#l00075">CopilotStatus::used_disk</a>, <a class="el" href="copilot_8h_source.html#l00057">CameraPayload::used_mem</a>, and <a class="el" href="copilot_8h_source.html#l00074">CopilotStatus::used_mem</a>.</p>
+<p>References <a class="el" href="copilot_8h_source.html#l00069">CameraSnapshot::array_temp</a>, <a class="el" href="copilot_8h_source.html#l00064">CameraSnapshot::cam_id</a>, <a class="el" href="copilot__common_8c_source.html#l00051">cam_payload</a>, <a class="el" href="copilot__common_8c_source.html#l00052">cam_snapshot</a>, <a class="el" href="copilot_8h_source.html#l00065">CameraSnapshot::cam_state</a>, <a class="el" href="copilot__common_8c_source.html#l00053">copilot_status</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="copilot_8h_source.html#l00059">CameraPayload::door_status</a>, <a class="el" href="copilot_8h_source.html#l00060">CameraPayload::error_code</a>, <a class="el" href="copilot_8h_source.html#l00077">CopilotStatus::error_code</a>, <a class="el" href="copilot_8h_source.html#l00068">CameraSnapshot::lens_temp</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="copilot__common_8c_source.html#l00048">send_cam_payload</a>, <a class="el" href="copilot__common_8c_source.html#l00047">send_cam_snapshot</a>, <a class="el" href="copilot__common_8c_source.html#l00049">send_copilot_status</a>, <a class="el" href="copilot_8h_source.html#l00066">CameraSnapshot::snapshot_num</a>, <a class="el" href="copilot_8h_source.html#l00067">CameraSnapshot::snapshot_valid</a>, <a class="el" href="copilot_8h_source.html#l00076">CopilotStatus::status</a>, <a class="el" href="copilot_8h_source.html#l00056">CameraPayload::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00073">CopilotStatus::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00058">CameraPayload::used_disk</a>, <a class="el" href="copilot_8h_source.html#l00075">CopilotStatus::used_disk</a>, <a class="el" href="copilot_8h_source.html#l00057">CameraPayload::used_mem</a>, and <a class="el" href="copilot_8h_source.html#l00074">CopilotStatus::used_mem</a>.</p>
 
 </div>
 </div>
@@ -468,7 +468,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="copilot__common_8c.html">copilot_common.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

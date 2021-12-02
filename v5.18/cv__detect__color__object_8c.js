@@ -1,0 +1,35 @@
+var cv__detect__color__object_8c =
+[
+    [ "color_object_t", "cv__detect__color__object_8c.html#structcolor__object__t", [
+      [ "color_count", "cv__detect__color__object_8c.html#aaea6859f655a16b4ffe19403c6c23591", null ],
+      [ "updated", "cv__detect__color__object_8c.html#a8f314d708f0b5a0f48f162cd760b7d19", null ],
+      [ "x_c", "cv__detect__color__object_8c.html#a9687b9adecbb68c9d1cc80db90b6cfdc", null ],
+      [ "y_c", "cv__detect__color__object_8c.html#a4e9c4f2a03fcd6b323e5fea7764b812e", null ]
+    ] ],
+    [ "COLOR_OBJECT_DETECTOR_FPS1", "cv__detect__color__object_8c.html#a27b6d7558eb2eaec4b41c94953ca5fef", null ],
+    [ "COLOR_OBJECT_DETECTOR_FPS2", "cv__detect__color__object_8c.html#a70307ecabe6c4c372fdf4875a5f2fe3d", null ],
+    [ "PRINT", "cv__detect__color__object_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
+    [ "VERBOSE_PRINT", "cv__detect__color__object_8c.html#a01535af7e50005fd099fe06f94865e54", null ],
+    [ "color_object_detector_init", "cv__detect__color__object_8c.html#aaaa68a4d10f42cf735a96f4ab74ec29a", null ],
+    [ "color_object_detector_periodic", "cv__detect__color__object_8c.html#a9e98bd5e517e04efba87d5fb9df01069", null ],
+    [ "find_object_centroid", "cv__detect__color__object_8c.html#acee4eb52ef122f8716ae34f8e8d0284e", null ],
+    [ "object_detector", "cv__detect__color__object_8c.html#a20bf39f5246d08925a8a0f6bd28936d6", null ],
+    [ "object_detector1", "cv__detect__color__object_8c.html#ade11a2723b6ec09cb5cb68c6216d2cd4", null ],
+    [ "object_detector2", "cv__detect__color__object_8c.html#a86617228f975e5259d055fc8e37f266b", null ],
+    [ "cod_cb_max1", "cv__detect__color__object_8c.html#a829efe2335f030822042cb3db69c3c5f", null ],
+    [ "cod_cb_max2", "cv__detect__color__object_8c.html#abec4c5a42e744c1220d859797d886349", null ],
+    [ "cod_cb_min1", "cv__detect__color__object_8c.html#a24ef937db0a0bf5900a2c42d33da4a3c", null ],
+    [ "cod_cb_min2", "cv__detect__color__object_8c.html#a432584d8f334e1f6f70bb9e037e2e100", null ],
+    [ "cod_cr_max1", "cv__detect__color__object_8c.html#a889142cd1785278607552531fb034492", null ],
+    [ "cod_cr_max2", "cv__detect__color__object_8c.html#ab7bf09eb0254383ea94d5e6849358b86", null ],
+    [ "cod_cr_min1", "cv__detect__color__object_8c.html#a748debe3b80a5d33e620c7ebfb69a757", null ],
+    [ "cod_cr_min2", "cv__detect__color__object_8c.html#a7ea703dd37ed53cba591ffc0e06350ed", null ],
+    [ "cod_draw1", "cv__detect__color__object_8c.html#a3fbf270182c63653507535c49f0d51d2", null ],
+    [ "cod_draw2", "cv__detect__color__object_8c.html#a2f3222b54a59f09a7737aeeffe127bcc", null ],
+    [ "cod_lum_max1", "cv__detect__color__object_8c.html#a4ef6c186d26040b4a7c9106a2d5fb10f", null ],
+    [ "cod_lum_max2", "cv__detect__color__object_8c.html#ad94aee26a080fe8baf6d92791e58fa15", null ],
+    [ "cod_lum_min1", "cv__detect__color__object_8c.html#a690381caad4cafc3314603eca963e93f", null ],
+    [ "cod_lum_min2", "cv__detect__color__object_8c.html#a6ca7e2df67341d27506ca6d5eb87df2f", null ],
+    [ "global_filters", "cv__detect__color__object_8c.html#acc901b55ecd724d0dde4237d9d59caaf", null ],
+    [ "mutex", "cv__detect__color__object_8c.html#a4acff8232e4aec9cd5c6dc200ac55ef3", null ]
+];

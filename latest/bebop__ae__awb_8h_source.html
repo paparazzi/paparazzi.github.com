@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,9 +139,9 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a811d3b1219bd98f990275380e486a342">   34</a></span>&#160;  <span class="keywordtype">float</span>   <a class="code" href="bebop__ae__awb_8h.html#a811d3b1219bd98f990275380e486a342">exposure_gain</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#af2010ea6c85e03dc77767089837640ad">   35</a></span>&#160;  <span class="keywordtype">float</span>   <a class="code" href="bebop__ae__awb_8h.html#af2010ea6c85e03dc77767089837640ad">bright_ignore</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a9bacb8153bff3643cd41afbb0142dc18">   36</a></span>&#160;  <span class="keywordtype">float</span>   <a class="code" href="bebop__ae__awb_8h.html#a9bacb8153bff3643cd41afbb0142dc18">dark_ignore</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">   37</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">middle_index</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a5941b04676c2cb76370e3fcf6b308fc2">   38</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#a5941b04676c2cb76370e3fcf6b308fc2">dark_bins</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">   39</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">bright_bins</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">   37</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">middle_index</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#a5941b04676c2cb76370e3fcf6b308fc2">   38</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#a5941b04676c2cb76370e3fcf6b308fc2">dark_bins</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">   39</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">bright_bins</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="bebop__ae__awb_8h.html#structae__setting__t">ae_setting_t</a> <a class="code" href="bebop__ae__awb_8h.html#a59c5ab043c16221c42ac40f1244e323e">ae_set</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -175,20 +175,20 @@ $(document).ready(function(){initNavTree('bebop__ae__awb_8h_source.html','');});
 <div class="ttc" id="bebop__ae__awb_8h_html_a59c5ab043c16221c42ac40f1244e323e"><div class="ttname"><a href="bebop__ae__awb_8h.html#a59c5ab043c16221c42ac40f1244e323e">ae_set</a></div><div class="ttdeci">struct ae_setting_t ae_set</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8c_source.html#l00146">bebop_ae_awb.c:146</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_a7b00fe3c305b821433d45f16f6a72586"><div class="ttname"><a href="bebop__ae__awb_8h.html#a7b00fe3c305b821433d45f16f6a72586">awb_setting_t::gain_scheduling_target</a></div><div class="ttdeci">float gain_scheduling_target</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00048">bebop_ae_awb.h:48</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_a811d3b1219bd98f990275380e486a342"><div class="ttname"><a href="bebop__ae__awb_8h.html#a811d3b1219bd98f990275380e486a342">ae_setting_t::exposure_gain</a></div><div class="ttdeci">float exposure_gain</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00034">bebop_ae_awb.h:34</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_a87eb3d5f02c3968e48abdf8e750b7d43"><div class="ttname"><a href="bebop__ae__awb_8h.html#a87eb3d5f02c3968e48abdf8e750b7d43">awb_setting_t::gain</a></div><div class="ttdeci">float gain</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00046">bebop_ae_awb.h:46</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_a03472c14f6fbc878e9a0d8f99563ff1b"><div class="ttname"><a href="bebop__ae__awb_8h.html#a03472c14f6fbc878e9a0d8f99563ff1b">awb_setting_t::prev_active</a></div><div class="ttdeci">bool prev_active</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00045">bebop_ae_awb.h:45</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_af2010ea6c85e03dc77767089837640ad"><div class="ttname"><a href="bebop__ae__awb_8h.html#af2010ea6c85e03dc77767089837640ad">ae_setting_t::bright_ignore</a></div><div class="ttdeci">float bright_ignore</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00035">bebop_ae_awb.h:35</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_afbc013e3bb6e54081b19002f20a52e4e"><div class="ttname"><a href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">ae_setting_t::bright_bins</a></div><div class="ttdeci">uint8_t bright_bins</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00039">bebop_ae_awb.h:39</a></div></div>
 <div class="ttc" id="bebop__ae__awb_8h_html_ab2471d6eb4bfde82d8c057fc671e5892"><div class="ttname"><a href="bebop__ae__awb_8h.html#ab2471d6eb4bfde82d8c057fc671e5892">ae_setting_t::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Definition:</b> <a href="bebop__ae__awb_8h_source.html#l00032">bebop_ae_awb.h:32</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="bebop__ae__awb_8h.html">bebop_ae_awb.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

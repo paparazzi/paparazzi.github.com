@@ -57,7 +57,7 @@ var searchData=
   ['lbs_5freading_5fdiff',['LBS_READING_DIFF',['../lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edffabf74610c8eab077114177f6b63f05059',1,'baro_board.c']]],
   ['lbs_5freseted',['LBS_RESETED',['../lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edffa86268b9f49f31bb7d7b2b0bf960bba52',1,'baro_board.c']]],
   ['lbs_5funinitialized',['LBS_UNINITIALIZED',['../lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edffabbf95832e997da17cebbe1ec1f618fd9',1,'baro_board.c']]],
-  ['left',['LEFT',['../actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20adb45120aafd37a973140edee24708065',1,'LEFT():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065',1,'LEFT():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065',1,'LEFT():&#160;actuators_asctec_v2_new.h']]],
+  ['left',['LEFT',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065',1,'actuators_asctec_v2.h']]],
   ['lidar_5flite_5finit_5franging',['LIDAR_LITE_INIT_RANGING',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba588a2b1c78eefbe6bdfbd62915996958',1,'lidar_lite.h']]],
   ['lidar_5flite_5fparse',['LIDAR_LITE_PARSE',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba44ecff3198750be4b660fc8ab6de24e3',1,'lidar_lite.h']]],
   ['lidar_5flite_5fread_5fdistance',['LIDAR_LITE_READ_DISTANCE',['../lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba1f74f9b608cec6ed152f4de279e9c5bf',1,'lidar_lite.h']]],

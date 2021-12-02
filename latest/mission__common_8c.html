@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('mission__common_8c.html','');});
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="datalink_8h_source.html">subsystems/datalink/datalink.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="datalink_8h_source.html">modules/datalink/datalink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mission_common.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('mission__common_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2mission_2mission__common_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2mission_2mission__common_8c" id="sw_2airborne_2modules_2mission_2mission__common_8c">
-<area shape="rect" id="node2" href="mission__common_8h.html" title="mission planner library " alt="" coords="731,95,913,136"/><area shape="rect" id="node18" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="917,184,1071,225"/><area shape="rect" id="node20" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1157,95,1311,136"/><area shape="rect" id="node4" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="423,184,573,225"/><area shape="rect" id="node12" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="637,184,788,225"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="497,273,621,300"/><area shape="rect" id="node6" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="222,273,374,300"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="335,348,453,375"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="697,273,837,300"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="579,348,729,375"/><area shape="rect" id="node21" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1855,191,1941,218"/><area shape="rect" id="node24" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1637,191,1831,218"/><area shape="rect" id="node26" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1665,273,1803,300"/></map>
+</map>
 </div>
 </div>
 <p><a href="mission__common_8c_source.html">Go to the source code of this file.</a></p>
@@ -155,30 +155,30 @@ Functions</h2></td></tr>
 <tr class="memitem:a3539ca9cd9417f5d2bfda2fdaf6973fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa">mission_status_report</a> (void)</td></tr>
 <tr class="memdesc:a3539ca9cd9417f5d2bfda2fdaf6973fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report mission status.  <a href="#a3539ca9cd9417f5d2bfda2fdaf6973fa">More...</a><br /></td></tr>
 <tr class="separator:a3539ca9cd9417f5d2bfda2fdaf6973fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a886a1e7ba0bd3d1b89a15184fee2bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a6a886a1e7ba0bd3d1b89a15184fee2bd">mission_parse_GOTO_WP</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a6a886a1e7ba0bd3d1b89a15184fee2bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a6a886a1e7ba0bd3d1b89a15184fee2bd">mission_parse_GOTO_WP</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a6a886a1e7ba0bd3d1b89a15184fee2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing functions called when a mission message is received.  <a href="#a6a886a1e7ba0bd3d1b89a15184fee2bd">More...</a><br /></td></tr>
 <tr class="separator:a6a886a1e7ba0bd3d1b89a15184fee2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e05b413aea5474b477aac3c43dbec42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a0e05b413aea5474b477aac3c43dbec42">mission_parse_GOTO_WP_LLA</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a0e05b413aea5474b477aac3c43dbec42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a0e05b413aea5474b477aac3c43dbec42">mission_parse_GOTO_WP_LLA</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a0e05b413aea5474b477aac3c43dbec42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc6421e3873d2b4d620bc33e1e90446"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446">mission_parse_CIRCLE</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a6bc6421e3873d2b4d620bc33e1e90446"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446">mission_parse_CIRCLE</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a6bc6421e3873d2b4d620bc33e1e90446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4d5f1fc008b07a4b312472ff956f8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#aff4d5f1fc008b07a4b312472ff956f8f">mission_parse_CIRCLE_LLA</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:aff4d5f1fc008b07a4b312472ff956f8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#aff4d5f1fc008b07a4b312472ff956f8f">mission_parse_CIRCLE_LLA</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:aff4d5f1fc008b07a4b312472ff956f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9006fa3835ff34e0797a733b8423b00d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a9006fa3835ff34e0797a733b8423b00d">mission_parse_SEGMENT</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a9006fa3835ff34e0797a733b8423b00d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a9006fa3835ff34e0797a733b8423b00d">mission_parse_SEGMENT</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a9006fa3835ff34e0797a733b8423b00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6b94a9d68ae0afc1ae4bee904db667"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667">mission_parse_SEGMENT_LLA</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a3f6b94a9d68ae0afc1ae4bee904db667"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667">mission_parse_SEGMENT_LLA</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a3f6b94a9d68ae0afc1ae4bee904db667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae659d1efa52b3d715cbd35b8b4fe8bdf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#ae659d1efa52b3d715cbd35b8b4fe8bdf">mission_parse_PATH</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:ae659d1efa52b3d715cbd35b8b4fe8bdf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#ae659d1efa52b3d715cbd35b8b4fe8bdf">mission_parse_PATH</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:ae659d1efa52b3d715cbd35b8b4fe8bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21836256087c77243583a2e1de8c648b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a21836256087c77243583a2e1de8c648b">mission_parse_PATH_LLA</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a21836256087c77243583a2e1de8c648b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a21836256087c77243583a2e1de8c648b">mission_parse_PATH_LLA</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a21836256087c77243583a2e1de8c648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1184c8f90d762c04f04627ec60c18921"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a1184c8f90d762c04f04627ec60c18921">mission_parse_CUSTOM</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a1184c8f90d762c04f04627ec60c18921"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a1184c8f90d762c04f04627ec60c18921">mission_parse_CUSTOM</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a1184c8f90d762c04f04627ec60c18921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8c4705ccecb8f0cc59fd25216bff17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a9f8c4705ccecb8f0cc59fd25216bff17">mission_parse_GOTO_MISSION</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a9f8c4705ccecb8f0cc59fd25216bff17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a9f8c4705ccecb8f0cc59fd25216bff17">mission_parse_GOTO_MISSION</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a9f8c4705ccecb8f0cc59fd25216bff17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c4fc881f08ea68079de459aa4ef622"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a20c4fc881f08ea68079de459aa4ef622">mission_parse_NEXT_MISSION</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a20c4fc881f08ea68079de459aa4ef622"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a20c4fc881f08ea68079de459aa4ef622">mission_parse_NEXT_MISSION</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a20c4fc881f08ea68079de459aa4ef622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb632118de7a1a6671901e66131e234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a0cb632118de7a1a6671901e66131e234">mission_parse_END_MISSION</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:a0cb632118de7a1a6671901e66131e234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8c.html#a0cb632118de7a1a6671901e66131e234">mission_parse_END_MISSION</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a0cb632118de7a1a6671901e66131e234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a7102be183680d1bf29c5da57ee31f852_icgraph.png" border="0" usemap="#mission__common_8c_a7102be183680d1bf29c5da57ee31f852_icgraph" alt=""/></div>
 <map name="mission__common_8c_a7102be183680d1bf29c5da57ee31f852_icgraph" id="mission__common_8c_a7102be183680d1bf29c5da57ee31f852_icgraph">
-<area shape="rect" id="node2" href="mission__common_8h.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="240,224,355,251"/><area shape="rect" id="node3" href="mission__common_8h.html#a6a886a1e7ba0bd3d1b89a15184fee2bd" title="Parsing functions called when a mission message is received. " alt="" coords="418,5,602,32"/><area shape="rect" id="node4" href="mission__common_8h.html#a0e05b413aea5474b477aac3c43dbec42" title="mission_parse_GOTO\l_WP_LLA" alt="" coords="431,57,589,98"/><area shape="rect" id="node5" href="mission__common_8h.html#a6bc6421e3873d2b4d620bc33e1e90446" title="mission_parse_CIRCLE" alt="" coords="428,123,592,149"/><area shape="rect" id="node6" href="mission__common_8h.html#aff4d5f1fc008b07a4b312472ff956f8f" title="mission_parse_CIRCLE_LLA" alt="" coords="413,173,607,200"/><area shape="rect" id="node7" href="mission__common_8h.html#a9006fa3835ff34e0797a733b8423b00d" title="mission_parse_SEGMENT" alt="" coords="418,224,602,251"/><area shape="rect" id="node8" href="mission__common_8h.html#a3f6b94a9d68ae0afc1ae4bee904db667" title="mission_parse_SEGMENT_LLA" alt="" coords="403,275,617,301"/><area shape="rect" id="node9" href="mission__common_8h.html#ae659d1efa52b3d715cbd35b8b4fe8bdf" title="mission_parse_PATH" alt="" coords="433,325,587,352"/><area shape="rect" id="node10" href="mission__common_8h.html#a21836256087c77243583a2e1de8c648b" title="mission_parse_PATH_LLA" alt="" coords="419,376,601,403"/><area shape="rect" id="node11" href="mission__common_8h.html#a1184c8f90d762c04f04627ec60c18921" title="mission_parse_CUSTOM" alt="" coords="421,427,599,453"/></map>
+</map>
 </div>
 </p>
 
@@ -261,7 +261,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_ad6fd0022684bf2c6fda1f9626c13cfc4_icgraph.png" border="0" usemap="#mission__common_8c_ad6fd0022684bf2c6fda1f9626c13cfc4_icgraph" alt=""/></div>
 <map name="mission__common_8c_ad6fd0022684bf2c6fda1f9626c13cfc4_icgraph" id="mission__common_8c_ad6fd0022684bf2c6fda1f9626c13cfc4_icgraph">
-<area shape="rect" id="node2" href="mission__fw__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission. " alt="" coords="152,5,251,32"/></map>
+</map>
 </div>
 </p>
 
@@ -302,7 +302,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a1323ceffc151a2671a0e6c6753157763_icgraph.png" border="0" usemap="#mission__common_8c_a1323ceffc151a2671a0e6c6753157763_icgraph" alt=""/></div>
 <map name="mission__common_8c_a1323ceffc151a2671a0e6c6753157763_icgraph" id="mission__common_8c_a1323ceffc151a2671a0e6c6753157763_icgraph">
-<area shape="rect" id="node2" href="mission__common_8h.html#a1184c8f90d762c04f04627ec60c18921" title="mission_parse_CUSTOM" alt="" coords="224,5,401,32"/></map>
+</map>
 </div>
 </p>
 
@@ -377,7 +377,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_cgraph.png" border="0" usemap="#mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_cgraph" alt=""/></div>
 <map name="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_cgraph" id="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="168,5,355,32"/></map>
+</map>
 </div>
 </p>
 
@@ -388,7 +388,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_icgraph.png" border="0" usemap="#mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_icgraph" alt=""/></div>
 <map name="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_icgraph" id="mission__common_8c_a31b2a2265d6533f3d4f408b82cf99f95_icgraph">
-<area shape="rect" id="node2" href="mission__common_8h.html#a6bc6421e3873d2b4d620bc33e1e90446" title="mission_parse_CIRCLE" alt="" coords="193,5,357,32"/><area shape="rect" id="node3" href="mission__common_8h.html#aff4d5f1fc008b07a4b312472ff956f8f" title="mission_parse_CIRCLE_LLA" alt="" coords="178,56,373,83"/><area shape="rect" id="node4" href="mission__common_8h.html#a1184c8f90d762c04f04627ec60c18921" title="mission_parse_CUSTOM" alt="" coords="187,107,364,133"/><area shape="rect" id="node5" href="mission__common_8h.html#a6a886a1e7ba0bd3d1b89a15184fee2bd" title="Parsing functions called when a mission message is received. " alt="" coords="183,157,367,184"/><area shape="rect" id="node6" href="mission__common_8h.html#a0e05b413aea5474b477aac3c43dbec42" title="mission_parse_GOTO\l_WP_LLA" alt="" coords="196,209,355,250"/><area shape="rect" id="node7" href="mission__common_8h.html#ae659d1efa52b3d715cbd35b8b4fe8bdf" title="mission_parse_PATH" alt="" coords="199,275,352,301"/><area shape="rect" id="node8" href="mission__common_8h.html#a21836256087c77243583a2e1de8c648b" title="mission_parse_PATH_LLA" alt="" coords="184,325,367,352"/><area shape="rect" id="node9" href="mission__common_8h.html#a9006fa3835ff34e0797a733b8423b00d" title="mission_parse_SEGMENT" alt="" coords="183,376,367,403"/><area shape="rect" id="node10" href="mission__common_8h.html#a3f6b94a9d68ae0afc1ae4bee904db667" title="mission_parse_SEGMENT_LLA" alt="" coords="168,427,383,453"/></map>
+</map>
 </div>
 </p>
 
@@ -401,7 +401,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_CIRCLE </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -410,7 +410,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00203">203</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -419,7 +419,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a6bc6421e3873d2b4d620bc33e1e90446_cgraph.png" border="0" usemap="#mission__common_8c_a6bc6421e3873d2b4d620bc33e1e90446_cgraph" alt=""/></div>
 <map name="mission__common_8c_a6bc6421e3873d2b4d620bc33e1e90446_cgraph" id="mission__common_8c_a6bc6421e3873d2b4d620bc33e1e90446_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="217,5,332,32"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="380,5,567,32"/></map>
+</map>
 </div>
 </p>
 
@@ -432,7 +432,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_CIRCLE_LLA </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -441,7 +441,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00221">221</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -450,7 +450,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_aff4d5f1fc008b07a4b312472ff956f8f_cgraph.png" border="0" usemap="#mission__common_8c_aff4d5f1fc008b07a4b312472ff956f8f_cgraph" alt=""/></div>
 <map name="mission__common_8c_aff4d5f1fc008b07a4b312472ff956f8f_cgraph" id="mission__common_8c_aff4d5f1fc008b07a4b312472ff956f8f_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="266,43,381,69"/><area shape="rect" id="node4" href="mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific. " alt="" coords="248,145,399,172"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="447,15,633,41"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="491,65,589,92"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="473,120,607,147"/><area shape="rect" id="node13" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="480,171,600,197"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="480,221,600,248"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title="float_vect2_norm" alt="" coords="473,272,607,299"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="682,5,829,32"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="687,57,823,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="706,123,805,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="681,173,829,200"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="879,97,979,124"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="877,148,981,175"/><area shape="rect" id="node16" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title="float_vect2_norm2" alt="" coords="685,272,826,299"/></map>
+</map>
 </div>
 </p>
 
@@ -463,7 +463,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_CUSTOM </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -472,7 +472,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00359">359</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00115">mission_get_registered()</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00042">MissionCustom</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00115">mission_get_registered()</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00042">MissionCustom</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -481,7 +481,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a1184c8f90d762c04f04627ec60c18921_cgraph.png" border="0" usemap="#mission__common_8c_a1184c8f90d762c04f04627ec60c18921_cgraph" alt=""/></div>
 <map name="mission__common_8c_a1184c8f90d762c04f04627ec60c18921_cgraph" id="mission__common_8c_a1184c8f90d762c04f04627ec60c18921_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a1323ceffc151a2671a0e6c6753157763" title="mission_get_registered" alt="" coords="231,5,401,32"/><area shape="rect" id="node3" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="259,56,373,83"/><area shape="rect" id="node4" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="449,56,636,83"/></map>
+</map>
 </div>
 </p>
 
@@ -494,7 +494,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_END_MISSION </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -514,7 +514,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_GOTO_MISSION </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_GOTO_WP </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -545,7 +545,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00165">165</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -554,7 +554,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a6a886a1e7ba0bd3d1b89a15184fee2bd_cgraph.png" border="0" usemap="#mission__common_8c_a6a886a1e7ba0bd3d1b89a15184fee2bd_cgraph" alt=""/></div>
 <map name="mission__common_8c_a6a886a1e7ba0bd3d1b89a15184fee2bd_cgraph" id="mission__common_8c_a6a886a1e7ba0bd3d1b89a15184fee2bd_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="237,5,352,32"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="400,5,587,32"/></map>
+</map>
 </div>
 </p>
 
@@ -567,7 +567,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_GOTO_WP_LLA </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -576,7 +576,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00182">182</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -585,7 +585,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a0e05b413aea5474b477aac3c43dbec42_cgraph.png" border="0" usemap="#mission__common_8c_a0e05b413aea5474b477aac3c43dbec42_cgraph" alt=""/></div>
 <map name="mission__common_8c_a0e05b413aea5474b477aac3c43dbec42_cgraph" id="mission__common_8c_a0e05b413aea5474b477aac3c43dbec42_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="230,43,345,69"/><area shape="rect" id="node4" href="mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific. " alt="" coords="212,145,363,172"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="411,15,597,41"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="455,65,553,92"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="437,120,571,147"/><area shape="rect" id="node13" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="444,171,564,197"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="444,221,564,248"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title="float_vect2_norm" alt="" coords="437,272,571,299"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="646,5,793,32"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="651,57,787,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="670,123,769,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="645,173,793,200"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="843,97,943,124"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="841,148,945,175"/><area shape="rect" id="node16" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title="float_vect2_norm2" alt="" coords="649,272,790,299"/></map>
+</map>
 </div>
 </p>
 
@@ -598,7 +598,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_NEXT_MISSION </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -618,7 +618,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_PATH </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -627,7 +627,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00288">288</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00081">MISSION_PATH_NB</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00081">MISSION_PATH_NB</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -636,7 +636,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_ae659d1efa52b3d715cbd35b8b4fe8bdf_cgraph.png" border="0" usemap="#mission__common_8c_ae659d1efa52b3d715cbd35b8b4fe8bdf_cgraph" alt=""/></div>
 <map name="mission__common_8c_ae659d1efa52b3d715cbd35b8b4fe8bdf_cgraph" id="mission__common_8c_ae659d1efa52b3d715cbd35b8b4fe8bdf_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="207,5,321,32"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="369,5,556,32"/></map>
+</map>
 </div>
 </p>
 
@@ -649,7 +649,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_PATH_LLA </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -658,7 +658,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00320">320</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00081">MISSION_PATH_NB</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00081">MISSION_PATH_NB</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -667,7 +667,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a21836256087c77243583a2e1de8c648b_cgraph.png" border="0" usemap="#mission__common_8c_a21836256087c77243583a2e1de8c648b_cgraph" alt=""/></div>
 <map name="mission__common_8c_a21836256087c77243583a2e1de8c648b_cgraph" id="mission__common_8c_a21836256087c77243583a2e1de8c648b_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="254,43,369,69"/><area shape="rect" id="node4" href="mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific. " alt="" coords="236,145,387,172"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="435,15,621,41"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="479,65,577,92"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="461,120,595,147"/><area shape="rect" id="node13" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="468,171,588,197"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="468,221,588,248"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title="float_vect2_norm" alt="" coords="461,272,595,299"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="670,5,817,32"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="675,57,811,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="694,123,793,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="669,173,817,200"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="867,97,967,124"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="865,148,969,175"/><area shape="rect" id="node16" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title="float_vect2_norm2" alt="" coords="673,272,814,299"/></map>
+</map>
 </div>
 </p>
 
@@ -680,7 +680,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_SEGMENT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -689,7 +689,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00243">243</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -698,7 +698,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a9006fa3835ff34e0797a733b8423b00d_cgraph.png" border="0" usemap="#mission__common_8c_a9006fa3835ff34e0797a733b8423b00d_cgraph" alt=""/></div>
 <map name="mission__common_8c_a9006fa3835ff34e0797a733b8423b00d_cgraph" id="mission__common_8c_a9006fa3835ff34e0797a733b8423b00d_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="237,5,352,32"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="400,5,587,32"/></map>
+</map>
 </div>
 </p>
 
@@ -711,7 +711,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int mission_parse_SEGMENT_LLA </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -720,7 +720,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00263">263</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a10543b81858f8bf5e9d5d98eacc6cea8">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00055">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00115">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -729,7 +729,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_a3f6b94a9d68ae0afc1ae4bee904db667_cgraph.png" border="0" usemap="#mission__common_8c_a3f6b94a9d68ae0afc1ae4bee904db667_cgraph" alt=""/></div>
 <map name="mission__common_8c_a3f6b94a9d68ae0afc1ae4bee904db667_cgraph" id="mission__common_8c_a3f6b94a9d68ae0afc1ae4bee904db667_cgraph">
-<area shape="rect" id="node2" href="mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95" title="Insert a mission element according to the insertion mode. " alt="" coords="286,43,401,69"/><area shape="rect" id="node4" href="mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Get the ENU component of LLA mission point This function is firmware specific. " alt="" coords="268,145,419,172"/><area shape="rect" id="node3" href="mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852" title="Convert mission element&#39;s points format if needed. " alt="" coords="467,15,653,41"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="511,65,609,92"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="493,120,627,147"/><area shape="rect" id="node13" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="500,171,620,197"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="500,221,620,248"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gaa582daa9c1806cc8bfe7638a54a198da" title="float_vect2_norm" alt="" coords="493,272,627,299"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="702,5,849,32"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="707,57,843,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="726,123,825,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="701,173,849,200"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="899,97,999,124"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="897,148,1001,175"/><area shape="rect" id="node16" href="group__math__algebra__float.html#ga1625b9e38f01ac161fa80555647c77d8" title="float_vect2_norm2" alt="" coords="705,272,846,299"/></map>
+</map>
 </div>
 </p>
 
@@ -782,7 +782,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__common_8c_ac357198f4e5126c4c698d1ab2c8330c3_icgraph.png" border="0" usemap="#mission__common_8c_ac357198f4e5126c4c698d1ab2c8330c3_icgraph" alt=""/></div>
 <map name="mission__common_8c_ac357198f4e5126c4c698d1ab2c8330c3_icgraph" id="mission__common_8c_ac357198f4e5126c4c698d1ab2c8330c3_icgraph">
-<area shape="rect" id="node2" href="nav__flower_8h.html#ada07e6046b41fa2b2a74a0aa70b39897" title="nav_flower_init" alt="" coords="180,5,295,32"/></map>
+</map>
 </div>
 </p>
 
@@ -807,7 +807,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mission__common_8c_source.html#l00140">140</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00147">_mission::current_idx</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h_source.html#l00145">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00143">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8h_source.html#l00146">_mission::insert_idx</a>, and <a class="el" href="mission__common_8h_source.html#l00132">MISSION_ELEMENT_NB</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00147">_mission::current_idx</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="mission__common_8h_source.html#l00124">_mission_element::duration</a>, <a class="el" href="mission__common_8h_source.html#l00145">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00143">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00125">_mission_element::index</a>, <a class="el" href="mission__common_8h_source.html#l00146">_mission::insert_idx</a>, and <a class="el" href="mission__common_8h_source.html#l00132">MISSION_ELEMENT_NB</a>.</p>
 
 </div>
 </div>
@@ -834,7 +834,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="mission__common_8c.html">mission_common.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

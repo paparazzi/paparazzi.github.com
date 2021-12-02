@@ -47,7 +47,7 @@ var searchData=
   ['jevois_5fvfov',['JEVOIS_VFOV',['../jevois_8h.html#a3c94ffa744d6926deb0a13392cb00804',1,'jevois.h']]],
   ['jevois_5fvision_5fposition',['jevois_vision_position',['../jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467',1,'jevois_mavlink.c']]],
   ['jevois_5fvisual_5ftarget',['jevois_visual_target',['../jevois__mavlink_8c.html#adc996a69f9c16930a86649539e15465d',1,'jevois_mavlink.c']]],
-  ['joystick',['Joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK():&#160;nps_radio_control.h'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c']]],
+  ['joystick',['Joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK():&#160;nps_radio_control.h']]],
   ['joystick_2ec',['joystick.c',['../joystick_8c.html',1,'']]],
   ['joystick_2eh',['joystick.h',['../joystick_8h.html',1,'']]],
   ['joystick_5fid',['JOYSTICK_ID',['../abi__sender__ids_8h.html#a282ea2232aeb43e13a86a84c6cedd975',1,'abi_sender_ids.h']]],
@@ -92,8 +92,5 @@ var searchData=
   ['jv_5fsend_5fmsg',['JV_SEND_MSG',['../jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a3167efd48d09a7a20422a743f0397792',1,'jevois.c']]],
   ['jv_5fsize',['JV_SIZE',['../jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a56342c827f6e0cc57221703e9e20a769',1,'jevois.c']]],
   ['jv_5fsync',['JV_SYNC',['../jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040aef037fd73473038efde52aa52c2d8cd6',1,'jevois.c']]],
-  ['jv_5ftype',['JV_TYPE',['../jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a9ae42df0d9e1d342b9e76b8fba58dee6',1,'jevois.c']]],
-  ['jevois_20module',['jevois module',['../module__jevois.html',1,'onboard_modules']]],
-  ['jevois_5fmavlink_20module',['jevois_mavlink module',['../module__jevois_mavlink.html',1,'onboard_modules']]],
-  ['joystick_20module',['joystick module',['../module__joystick.html',1,'onboard_modules']]]
+  ['jv_5ftype',['JV_TYPE',['../jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a9ae42df0d9e1d342b9e76b8fba58dee6',1,'jevois.c']]]
 ];

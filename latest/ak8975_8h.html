@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('ak8975_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ak8975_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ak8975_8h" id="sw_2airborne_2peripherals_2ak8975_8h">
-<area shape="rect" id="node3" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="25,95,156,121"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="271,95,449,121"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="460,169,615,196"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="285,169,435,196"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('ak8975_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ak8975_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ak8975_8hdep" id="sw_2airborne_2peripherals_2ak8975_8hdep">
-<area shape="rect" id="node2" href="ak8975_8c.html" title="Driver for the AKM AK8975 magnetometer. " alt="" coords="5,95,176,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="ak8975_8h_source.html">Go to the source code of this file.</a></p>
@@ -184,7 +184,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3aa64b9184ae1467cb537db281e97bb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ak8975_8h.html#a3aa64b9184ae1467cb537db281e97bb9">ak8975_init</a> (struct <a class="el" href="ak8975_8h.html#structAk8975">Ak8975</a> *ak, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
+<tr class="memitem:a3aa64b9184ae1467cb537db281e97bb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ak8975_8h.html#a3aa64b9184ae1467cb537db281e97bb9">ak8975_init</a> (struct <a class="el" href="ak8975_8h.html#structAk8975">Ak8975</a> *ak, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
 <tr class="separator:a3aa64b9184ae1467cb537db281e97bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31bd18a2f14691e8def2b34e63ca665d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ak8975_8h.html#a31bd18a2f14691e8def2b34e63ca665d">ak8975_configure</a> (struct <a class="el" href="ak8975_8h.html#structAk8975">Ak8975</a> *ak)</td></tr>
 <tr class="separator:a31bd18a2f14691e8def2b34e63ca665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a75806e2950f14dcbb76d53396e30df79"></a>union <a class="el" href="ak8975_8h.html#unionAk8975_8data">Ak8975</a></td>
+<a class="anchor" id="ad3dedd0b588ea6aef42a1ce8c3d213e4"></a>union <a class="el" href="ak8975_8h.html#unionAk8975_8data">Ak8975</a></td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
@@ -260,7 +260,7 @@ initialized</td>
 <td class="fielddoc">
 config done flag </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a519c6eaefa8dd32fa37ccde15c566e67"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<a class="anchor" id="a519c6eaefa8dd32fa37ccde15c566e67"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
 <td class="fieldname">
 last_meas_time</td>
 <td class="fielddoc">
@@ -289,7 +289,7 @@ main status </td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ab07053fcb6afcb4d09e8f337b615d383"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<a class="anchor" id="ab07053fcb6afcb4d09e8f337b615d383"></a><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></td>
 <td class="fieldname">
 value[3]</td>
 <td class="fielddoc">
@@ -498,7 +498,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_cgraph.png" border="0" usemap="#ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_cgraph" alt=""/></div>
 <map name="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_cgraph" id="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="188,5,301,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="194,56,295,83"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="349,31,440,57"/></map>
+</map>
 </div>
 </p>
 
@@ -509,7 +509,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_icgraph.png" border="0" usemap="#ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_icgraph" alt=""/></div>
 <map name="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_icgraph" id="ak8975_8h_a31bd18a2f14691e8def2b34e63ca665d_icgraph">
-<area shape="rect" id="node2" href="ak8975_8h.html#a7b73b518a35a483897c7b6691fdeb86d" title="convenience function: read or start configuration if not already initialized " alt="" coords="188,5,315,32"/><area shape="rect" id="node3" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844" title="imu_apogee_periodic" alt="" coords="363,5,521,32"/></map>
+</map>
 </div>
 </p>
 
@@ -531,7 +531,7 @@ data vector in mag coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="ak8975_8c_source.html#l00131">131</a> of file <a class="el" href="ak8975_8c_source.html">ak8975.c</a>.</p>
 
-<p>References <a class="el" href="ak8975_8c_source.html#l00031">AK8975_MEAS_TIME_MS</a>, <a class="el" href="ak8975_8h_source.html#l00036">AK8975_REG_ST1_ADDR</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8975_8h_source.html#l00054">AK_STATUS_MEAS</a>, <a class="el" href="ak8963_8h_source.html#l00048">AK_STATUS_READ</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8975_8h.html#a75806e2950f14dcbb76d53396e30df79">Ak8975::data</a>, <a class="el" href="ak8975_8h_source.html#l00068">Ak8975::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="ak8975_8h_source.html#l00060">Ak8975::i2c_p</a>, <a class="el" href="ak8975_8h_source.html#l00061">Ak8975::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="ak8975_8h_source.html#l00062">Ak8975::initialized</a>, <a class="el" href="ak8975_8c_source.html#l00130">Int16FromRaw</a>, <a class="el" href="ak8975_8h_source.html#l00066">Ak8975::last_meas_time</a>, <a class="el" href="ak8975_8c_source.html#l00128">RawFromBuf</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ak8975_8h_source.html#l00064">Ak8975::status</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+<p>References <a class="el" href="ak8975_8c_source.html#l00031">AK8975_MEAS_TIME_MS</a>, <a class="el" href="ak8975_8h_source.html#l00036">AK8975_REG_ST1_ADDR</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8975_8h_source.html#l00054">AK_STATUS_MEAS</a>, <a class="el" href="ak8963_8h_source.html#l00048">AK_STATUS_READ</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8975_8h.html#ad3dedd0b588ea6aef42a1ce8c3d213e4">Ak8975::data</a>, <a class="el" href="ak8975_8h_source.html#l00068">Ak8975::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00082">get_sys_time_msec()</a>, <a class="el" href="ak8975_8h_source.html#l00060">Ak8975::i2c_p</a>, <a class="el" href="ak8975_8h_source.html#l00061">Ak8975::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="ak8975_8h_source.html#l00062">Ak8975::initialized</a>, <a class="el" href="ak8975_8c_source.html#l00130">Int16FromRaw</a>, <a class="el" href="ak8975_8h_source.html#l00066">Ak8975::last_meas_time</a>, <a class="el" href="ak8975_8c_source.html#l00128">RawFromBuf</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ak8975_8h_source.html#l00064">Ak8975::status</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>.</p>
 
@@ -542,7 +542,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_cgraph.png" border="0" usemap="#ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_cgraph" alt=""/></div>
 <map name="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_cgraph" id="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="165,5,315,32"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="183,56,297,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="363,56,453,83"/></map>
+</map>
 </div>
 </p>
 
@@ -553,7 +553,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_icgraph.png" border="0" usemap="#ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_icgraph" alt=""/></div>
 <map name="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_icgraph" id="ak8975_8h_ab0f5eefeb80614ad955e79f5b34819eb_icgraph">
-<area shape="rect" id="node2" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="165,5,309,32"/></map>
+</map>
 </div>
 </p>
 
@@ -578,7 +578,7 @@ data vector in mag coordinate system </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -602,7 +602,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a3aa64b9184ae1467cb537db281e97bb9_icgraph.png" border="0" usemap="#ak8975_8h_a3aa64b9184ae1467cb537db281e97bb9_icgraph" alt=""/></div>
 <map name="ak8975_8h_a3aa64b9184ae1467cb537db281e97bb9_icgraph" id="ak8975_8h_a3aa64b9184ae1467cb537db281e97bb9_icgraph">
-<area shape="rect" id="node2" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title="imu_apogee_init" alt="" coords="148,5,275,32"/></map>
+</map>
 </div>
 </p>
 
@@ -645,7 +645,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_cgraph.png" border="0" usemap="#ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_cgraph" alt=""/></div>
 <map name="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_cgraph" id="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_cgraph">
-<area shape="rect" id="node2" href="ak8975_8h.html#a31bd18a2f14691e8def2b34e63ca665d" title="ak8975_configure" alt="" coords="180,31,315,57"/><area shape="rect" id="node6" href="ak8975_8h.html#a25e38416f60c0c4259422d2a6fc48ebc" title="ak8975_read" alt="" coords="195,81,300,108"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="381,5,494,32"/><area shape="rect" id="node5" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="387,56,488,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="560,31,651,57"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="363,107,512,133"/></map>
+</map>
 </div>
 </p>
 
@@ -656,7 +656,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_icgraph.png" border="0" usemap="#ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_icgraph" alt=""/></div>
 <map name="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_icgraph" id="ak8975_8h_a7b73b518a35a483897c7b6691fdeb86d_icgraph">
-<area shape="rect" id="node2" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844" title="imu_apogee_periodic" alt="" coords="180,5,339,32"/></map>
+</map>
 </div>
 </p>
 
@@ -678,7 +678,7 @@ data vector in mag coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="ak8975_8c_source.html#l00113">113</a> of file <a class="el" href="ak8975_8c_source.html">ak8975.c</a>.</p>
 
-<p>References <a class="el" href="ak8975_8h_source.html#l00041">AK8975_MODE_SINGLE_MEAS</a>, <a class="el" href="ak8975_8h_source.html#l00037">AK8975_REG_CNTL_ADDR</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8975_8h_source.html#l00054">AK_STATUS_MEAS</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="ak8975_8h_source.html#l00060">Ak8975::i2c_p</a>, <a class="el" href="ak8975_8h_source.html#l00061">Ak8975::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="ak8975_8h_source.html#l00066">Ak8975::last_meas_time</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="ak8975_8h_source.html#l00064">Ak8975::status</a>.</p>
+<p>References <a class="el" href="ak8975_8h_source.html#l00041">AK8975_MODE_SINGLE_MEAS</a>, <a class="el" href="ak8975_8h_source.html#l00037">AK8975_REG_CNTL_ADDR</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8975_8h_source.html#l00054">AK_STATUS_MEAS</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00082">get_sys_time_msec()</a>, <a class="el" href="ak8975_8h_source.html#l00060">Ak8975::i2c_p</a>, <a class="el" href="ak8975_8h_source.html#l00061">Ak8975::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="ak8975_8h_source.html#l00066">Ak8975::last_meas_time</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="ak8975_8h_source.html#l00064">Ak8975::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ak8975_8h_source.html#l00083">ak8975_periodic()</a>.</p>
 
@@ -689,7 +689,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_cgraph.png" border="0" usemap="#ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_cgraph" alt=""/></div>
 <map name="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_cgraph" id="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="159,5,308,32"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="183,56,284,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="356,56,447,83"/></map>
+</map>
 </div>
 </p>
 
@@ -700,7 +700,7 @@ data vector in mag coordinate system </td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_icgraph.png" border="0" usemap="#ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_icgraph" alt=""/></div>
 <map name="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_icgraph" id="ak8975_8h_a25e38416f60c0c4259422d2a6fc48ebc_icgraph">
-<area shape="rect" id="node2" href="ak8975_8h.html#a7b73b518a35a483897c7b6691fdeb86d" title="convenience function: read or start configuration if not already initialized " alt="" coords="159,5,285,32"/><area shape="rect" id="node3" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844" title="imu_apogee_periodic" alt="" coords="333,5,492,32"/></map>
+</map>
 </div>
 </p>
 
@@ -712,7 +712,7 @@ data vector in mag coordinate system </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ak8975_8h.html">ak8975.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

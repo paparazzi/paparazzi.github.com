@@ -1,6 +1,7 @@
 var baro__ms5611__i2c_8h =
 [
     [ "BARO_MS5611_DT", "baro__ms5611__i2c_8h.html#ae0019d9183a58363fc28c2e2c6356d1c", null ],
+    [ "baro_ms5611_periodic", "baro__ms5611__i2c_8h.html#a435bdf375c51437bd791094adcfccf41", null ],
     [ "BARO_MS5611_R", "baro__ms5611__i2c_8h.html#a73ab789fe82b033e89be51be8b72b4dd", null ],
     [ "BARO_MS5611_SIGMA2", "baro__ms5611__i2c_8h.html#a9d2d6897b288382c3923d8180e16d6bc", null ],
     [ "baro_ms5611_event", "baro__ms5611__i2c_8h.html#afd15b3c514cb6c7763b0db2788665185", null ],

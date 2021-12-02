@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -213,6 +213,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 , <a class="el" href="mpu9250__i2c_8h.html#ab06e0dd90052f7f21aa311b92524459d">Mpu9250_I2c</a>
 , <a class="el" href="ms5611__i2c_8h.html#ad16b6379be4aa10c6bdc8871e6ed6967">Ms5611_I2c</a>
 , <a class="el" href="pca95xx_8h.html#a1feaa76258a828ec6d3347f38189b1da">pca95xx</a>
+, <a class="el" href="rm3100_8h.html#a8c37630900732cc0f43268ef08d2b965">Rm3100</a>
 , <a class="el" href="vl53l1__platform_8h.html#a8f1a29a38cce70920a55343f4aa79dce">VL53L1_Dev_t</a>
 </li>
 <li>i2c_periph
@@ -226,8 +227,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 : <a class="el" href="sc18i600_8h.html#a585fc94273f6258ad9e642fb6102b712">Sc18Is600</a>
 </li>
 <li>i2c_trans
-: <a class="el" href="actuators__asctec_8h.html#a39d18b8d9cfb72c05db29cd3e8f833f5">ActuatorsAsctec</a>
-, <a class="el" href="actuators__asctec__v2__new_8h.html#a8bc76c73b7be011c6d1d0d677347b7e7">ActuatorsAsctecV2</a>
+: <a class="el" href="actuators__asctec__v2_8h.html#a8bc76c73b7be011c6d1d0d677347b7e7">ActuatorsAsctecV2</a>
 , <a class="el" href="boards_2bebop_2actuators_8h.html#a4b84ef7694773a4749bb3b8aaceea553">ActuatorsBebop</a>
 , <a class="el" href="boards_2disco_2actuators_8h.html#ac6bc0bf17071ea78f753f3488f859c5d">ActuatorsDisco</a>
 , <a class="el" href="adxl345__i2c_8h.html#ad3ab43e6fd2a09d14d8c2b01ffa05154">Adxl345_I2c</a>
@@ -251,6 +251,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 , <a class="el" href="mt9f002_8h.html#aec6b8d833ad0d74510d111dd48dd38ce">mt9f002_t</a>
 , <a class="el" href="mt9v117_8h.html#a3f99c34d6091dadfe023149659bc9588">mt9v117_t</a>
 , <a class="el" href="pca95xx_8h.html#a49c119d9eafc9f27df9d87cc2f5ed306">pca95xx</a>
+, <a class="el" href="rm3100_8h.html#a54dd913086a699ae91ef717c10f6ef2a">Rm3100</a>
 , <a class="el" href="vl53l1__platform_8h.html#a36df313e1ae7a259403a85d4cc90769a">VL53L1_Dev_t</a>
 </li>
 <li>i2mux
@@ -261,9 +262,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>ICqt
 : <a class="el" href="jpeg_8c.html#a0e096711627ab88ac4381fb35fd59715">JPEG_ENCODER_STRUCTURE</a>
-</li>
-<li>icr
-: <a class="el" href="lpcSPI_8h.html#acc448baf11c3f9b271e4a04fdcec47f8">sspRegs_t</a>
 </li>
 <li>id
 : <a class="el" href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">abi_struct</a>
@@ -306,9 +304,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>ILqt
 : <a class="el" href="jpeg_8c.html#a26bd3ddf3fa43d85e1b805bb1b500d27">JPEG_ENCODER_STRUCTURE</a>
 </li>
-<li>ilr
-: <a class="el" href="lpcRTC_8h.html#a21be339d4cbf3fd0f10a7b2f9c26e570">rtcRegs_t</a>
-</li>
 <li>im
 : <a class="el" href="pprz__geodetic__float_8c.html#a7444343ae7b282212ee23c1640c77001">complex</a>
 </li>
@@ -327,9 +322,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>img_processed
 : <a class="el" href="cv_8h.html#a8e0c1970ffc8eeb96d3b37fe2c5a9614">cv_async</a>
 </li>
-<li>imsc
-: <a class="el" href="lpcSPI_8h.html#a9c07b0273e5cd1f06b66f901dfd0b321">sspRegs_t</a>
-</li>
 <li>imu
 : <a class="el" href="vi_8h.html#a7f72ee067479504eedf58fbc154e7f96">Vi_info</a>
 </li>
@@ -339,7 +331,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>imu_rate
 : <a class="el" href="ahrs__float__cmpl_8h.html#a9709ec503b43e0be315a45aaaa98e349">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__float__dcm_8h.html#a98743fe74b825e3e97af666a0910172f">AhrsFloatDCM</a>
-, <a class="el" href="ahrs__int__cmpl__euler_8h.html#a4e65e24910b6c70ea44389a3fded0ab8">AhrsIntCmplEuler</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a815c2de385783daaae766534adda17cb">AhrsIntCmplQuat</a>
 , <a class="el" href="ahrs__float__mlkf_8h.html#a93e062e85a0fd87a4867d63b65bafc53">AhrsMlkf</a>
 </li>
@@ -348,18 +339,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>imu_to_sensor_rmat
 : <a class="el" href="nps__sensor__mag_8h.html#a9b8004d62050453cbe9cdb026ad5c3fb">NpsSensorMag</a>
-</li>
-<li>in0
-: <a class="el" href="lpcGPIO_8h.html#af65f3332e1247c5b408e02b186a856ac">gpioRegs_t</a>
-</li>
-<li>in1
-: <a class="el" href="lpcGPIO_8h.html#a2db4ec53ef6d8eb6709640a18a2c6437">gpioRegs_t</a>
-</li>
-<li>in2
-: <a class="el" href="lpcGPIO_8h.html#af0c69a5417feff6c4a9a169d43b6c6b0">gpioRegs_t</a>
-</li>
-<li>in3
-: <a class="el" href="lpcGPIO_8h.html#a526599cc874869ca547009a5d880c06a">gpioRegs_t</a>
 </li>
 <li>in_cols
 : <a class="el" href="esc32_8c.html#af5edf874efbdc2e35f3679b919b5b236">esc32_private</a>
@@ -421,7 +400,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 , <a class="el" href="lis302dl__spi_8h.html#a39cd6e88b50bffbc7762872b609a2c4e">Lis302dl_Spi</a>
 , <a class="el" href="lps25h__i2c_8h.html#ab6438a61255c880cff5e9c985ada3ac3">Lps25h_I2c</a>
 , <a class="el" href="lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9">Lsm303d_Spi</a>
-, <a class="el" href="lsm303dlhc__i2c_8h.html#a4821177be7c20a184205ede0d3dc6974">Lsm303dlhc_i2c</a>
+, <a class="el" href="lsm303dlhc__i2c_8h.html#af450422406a080d22123a89c47e4159e">Lsm303dlhc_i2c</a>
 , <a class="el" href="lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b">Lsm6_I2c</a>
 , <a class="el" href="mpl3115_8h.html#aae28532e3ba22b317795df493390dae9">Mpl3115</a>
 , <a class="el" href="mpu60x0_8h.html#aaa55e9b7acf9eb2d8ac272480df23cdd">Mpu60x0Config</a>
@@ -442,7 +421,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 : <a class="el" href="nav__catapult_8h.html#a69c357fd90bbc4ceb3c5422273053e18">nav_catapult_struct</a>
 </li>
 <li>initialized
-: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#a880d9cea25602d7f4157e639b872ebff">ActuatorsMD25</a>
+: <a class="el" href="actuators__md25_8h.html#a880d9cea25602d7f4157e639b872ebff">ActuatorsMD25</a>
 , <a class="el" href="adxl345__i2c_8h.html#a37480f4d96b448a49e5f158880a2039a">Adxl345_I2c</a>
 , <a class="el" href="adxl345__spi_8h.html#a859fc044d9d5ade66994d9b8db4d9d05">Adxl345_Spi</a>
 , <a class="el" href="airspeed__sdp3x_8h.html#a4b78e7f7207778f549248d32e2bd224b">AirspeedSdp3x</a>
@@ -471,6 +450,8 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 , <a class="el" href="mpu9250_8h.html#af64ff5b883179c7747e0c5389792d891">Mpu9250Config</a>
 , <a class="el" href="ms5611__i2c_8h.html#afd983ecb3762c55be45097cb634174bd">Ms5611_I2c</a>
 , <a class="el" href="ms5611__spi_8h.html#a84e076e3fd86f94ab6c97493b782c6cf">Ms5611_Spi</a>
+, <a class="el" href="rm3100_8h.html#a44e1e75f4ff007d93c9de89d0c0f4b8c">Rm3100</a>
+, <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#a57a3ce8643ccd03754f21d4e5a17ae3f">uavcan_iface_t</a>
 </li>
 <li>initiated
 : <a class="el" href="wedgebug_8c.html#aed348a7746823760eec4dd63d35bcb55">ES_angles</a>
@@ -546,15 +527,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>integration_timespan
 : <a class="el" href="px4flow__i2c_8h.html#ab61dd8e718cedccd7c541a130715840a">px4flow_i2c_integral_frame</a>
 </li>
-<li>inten
-: <a class="el" href="lpcADC_8h.html#a45ffa3cb7de7e1c49d7f8a71030f1bf1">adcRegs_t</a>
-</li>
-<li>intEnable
-: <a class="el" href="lpcVIC_8h.html#a0f68d0af528705b86785ace147f1c8e7">vicRegs_t</a>
-</li>
-<li>intEnClear
-: <a class="el" href="lpcVIC_8h.html#ad538da3481c6c48e439a405eafc3d97c">vicRegs_t</a>
-</li>
 <li>interface
 : <a class="el" href="mt9f002_8h.html#a17ebb3099a3de005f62a4b4cfe4e58e4">mt9f002_t</a>
 </li>
@@ -564,35 +536,17 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>IntPol
 : <a class="el" href="vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f">VL53L1_Dev_t::NonBlocking</a>
 </li>
-<li>intSelect
-: <a class="el" href="lpcVIC_8h.html#a50587d0bbfc03075164926d8c757a2e8">vicRegs_t</a>
-</li>
 <li>inv_tau
 : <a class="el" href="guidance__h__ref_8h.html#a6dedc0d3786873ae60261004814fb47f">GuidanceHRef</a>
 </li>
 <li>invG
 : <a class="el" href="structIndiController__int.html#abb68fdf339c1b49aacc0459b1b51ea49">IndiController_int</a>
 </li>
-<li>ir
-: <a class="el" href="lpcTMR_8h.html#ab4aa8fa12fbcb938b1849d1b3cf2708f">pwmTmrRegs_t</a>
-</li>
-<li>ir1
-: <a class="el" href="infrared_8h.html#a6fba13edcc29d9bc27f6a6c9034a71b9">Infrared_raw</a>
-</li>
-<li>ir2
-: <a class="el" href="infrared_8h.html#abbe31144a4d6e13ce4baac4a38c7eaeb">Infrared_raw</a>
-</li>
-<li>ir3
-: <a class="el" href="infrared_8h.html#a1d0858999d979a9d0349ed7f18020c8d">Infrared_raw</a>
-</li>
 <li>irq_count
-: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#abf078c3cfc89873b34abff9c0412f33a">SuperbitRF</a>
+: <a class="el" href="modules_2datalink_2superbitrf_8h.html#abf078c3cfc89873b34abff9c0412f33a">SuperbitRF</a>
 </li>
 <li>irq_priority
 : <a class="el" href="hal__stm32__dma_8h.html#a38aa65d9940e7f2e99146b3450a64fe1">DMAConfig</a>
-</li>
-<li>irqStatus
-: <a class="el" href="lpcVIC_8h.html#aeca7ceabe2cddbdc48cf04e285993282">vicRegs_t</a>
 </li>
 <li>is_aligned
 : <a class="el" href="ahrs__chimu_8h.html#a6cf9862cfb54463a8041f927c310430a">AhrsChimu</a>
@@ -600,7 +554,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 , <a class="el" href="ahrs__float__dcm_8h.html#a1f759bdb110191cd919fa1dbc465f84a">AhrsFloatDCM</a>
 , <a class="el" href="ahrs__float__invariant_8h.html#ad4575c2f6291c442c24ba1dd04a5b6d1">AhrsFloatInv</a>
 , <a class="el" href="ahrs__gx3_8h.html#a9037cddbd211a8fc36bb0c5cd8fc1146">AhrsGX3</a>
-, <a class="el" href="ahrs__int__cmpl__euler_8h.html#a267591a3417d7cdb83ad7d107b07b26d">AhrsIntCmplEuler</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a3ad65b90ba554f474f4eaf08a877a8b5">AhrsIntCmplQuat</a>
 , <a class="el" href="ahrs__madgwick_8h.html#a25cb32fbb3347e841bf7b506bbd3a4b3">AhrsMadgwick</a>
 , <a class="el" href="ahrs__float__mlkf_8h.html#a18c0fd51dd202a9d3d7592b46a38f414">AhrsMlkf</a>
@@ -632,10 +585,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>is_streaming
 : <a class="el" href="viewvideo_8h.html#ab05784e8647565db72f3a981ffe21e7a">viewvideo_t</a>
 </li>
-<li>itg
-: <a class="el" href="imu__navgo_8h.html#a757339b64878f92dc34360937bc12e08">ImuNavgo</a>
-, <a class="el" href="imu__umarim_8h.html#a4d1f81daae37430755dd5c84688b2705">ImuUmarim</a>
-</li>
 <li>itow
 : <a class="el" href="group__ac__info.html#a2368bd2d3676aa3dbc9871c52cfe7605">acInfo</a>
 </li>
@@ -651,7 +600,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:57 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,7 +151,12 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 : <a class="el" href="high__pass__filter_8h.html#a3ac3f7d5863d45e1268060dc5af4c4ac">FourthOrderHighPass</a>
 , <a class="el" href="gvf__ellipse_8h.html#a780d4fcdb9bf3ab50d2000b93b0665f0">gvf_ell_par</a>
 , <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a7fccb394f787fbd80f70cbec0e867afc">Line</a>
-, <a class="el" href="low__pass__filter_8h.html#ae09849eee083250605e195dfe8e7b8bc">SecondOrderLowPass</a>
+</li>
+<li>B
+: <a class="el" href="linear__kalman__filter_8h.html#ae896584b9c063802d435f471030edd3b">linear_kalman_filter</a>
+</li>
+<li>b
+: <a class="el" href="low__pass__filter_8h.html#ae09849eee083250605e195dfe8e7b8bc">SecondOrderLowPass</a>
 , <a class="el" href="low__pass__filter_8h.html#aa1579244f28376095ef9ef9b0b2725cd">SecondOrderLowPass_int</a>
 </li>
 <li>b1
@@ -199,7 +204,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 : <a class="el" href="px4flow_8h.html#af73631b17d4d01c9a0e525d224ec3051">mavlink_heartbeat</a>
 </li>
 <li>bat
-: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#a1df42a53e7690c3be1f65ad8bf2e5e1d">ActuatorsMD25</a>
+: <a class="el" href="actuators__md25_8h.html#a1df42a53e7690c3be1f65ad8bf2e5e1d">ActuatorsMD25</a>
 </li>
 <li>bat_cell_mvolts
 : <a class="el" href="battery__monitor_8h.html#afcd6f41a2279f2dffab42c6a87e9fc33">BatMonBal</a>
@@ -266,26 +271,8 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>bbdp
 : <a class="el" href="structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa">USBMassStorageConfig</a>
 </li>
-<li>bcfg0
-: <a class="el" href="lpcEMC_8h.html#a292a34a71c729db101fbba55d2438db8">emcRegs_t</a>
-</li>
-<li>bcfg1
-: <a class="el" href="lpcEMC_8h.html#af748b3af4977c6bb0b9e1fb1d432e390">emcRegs_t</a>
-</li>
-<li>bcfg2
-: <a class="el" href="lpcEMC_8h.html#ab1577c4a1bbd74aae304e59e221c5014">emcRegs_t</a>
-</li>
-<li>bcfg3
-: <a class="el" href="lpcEMC_8h.html#a7457eabd1a7f05152703af390d332808">emcRegs_t</a>
-</li>
-<li>bCharFormat
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#aa0fcfb0c5f6c24305311a9750eaa53aa">TLineCoding</a>
-</li>
 <li>Bd
 : <a class="el" href="alt__filter_8h.html#abb2d0ec4a9d248802fdefc3ec296b67e">TypeKalman</a>
-</li>
-<li>bDataBits
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#ae8071baa61a3b991b509b52cfd2dc64f">TLineCoding</a>
 </li>
 <li>bearing
 : <a class="el" href="cf__deck__multi__ranger_8c.html#a5d1bf2f805f4f55f607450512a4bdbb9">SingleRanger</a>
@@ -325,10 +312,10 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="digital__cam_2catia_2protocol_8h.html#ac5036391d38365deee7bcedbfd5daab4">mora_status_union</a>
 </li>
 <li>bind_mfg_id
-: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#ab3f9d45e18d60723959bf377f6db6975">SuperbitRF</a>
+: <a class="el" href="modules_2datalink_2superbitrf_8h.html#ab3f9d45e18d60723959bf377f6db6975">SuperbitRF</a>
 </li>
 <li>bind_mfg_id32
-: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f">SuperbitRF</a>
+: <a class="el" href="modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f">SuperbitRF</a>
 </li>
 <li>bindHopData
 : <a class="el" href="cc2500__settings_8h.html#a62fddcf0df11b8e0a26349ad92a088fc">cc2500_settings_persistent_s</a>
@@ -348,9 +335,6 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>bit_state
 : <a class="el" href="softi2c_8c.html#ab869dd47e98b55836a1306b35d04c031">softi2c_device</a>
-</li>
-<li>BitConfig
-: <a class="el" href="config__mkk__v2_8h.html#aef8e0755855eea19f213b876ebcec849">config_mkk_v2_eeprom_t</a>
 </li>
 <li>bitindex
 : <a class="el" href="jpeg_8c.html#a5d86406aa48a7082b1a9aac5b82249f1">JPEG_ENCODER_STRUCTURE</a>
@@ -420,7 +404,6 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 : <a class="el" href="ahrs__float__cmpl_8h.html#a3398e1f66e2551d7d1afb23ccaec4dd2">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__float__dcm_8h.html#abcbc8315a0c971ac20ea2ed5c445c6ad">AhrsFloatDCM</a>
 , <a class="el" href="ahrs__float__invariant_8h.html#a5adc5983cfe70dcd5f5f1b14380af0e1">AhrsFloatInv</a>
-, <a class="el" href="ahrs__int__cmpl__euler_8h.html#af8888a1e55dd3830beb771af98eae4a9">AhrsIntCmplEuler</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a7e5c0deb9c37abb3e2a4ee3c29a508a4">AhrsIntCmplQuat</a>
 , <a class="el" href="ahrs__madgwick_8h.html#af9b2be5f0d8b6497f9261cf6336ecd22">AhrsMadgwick</a>
 , <a class="el" href="ahrs__float__mlkf_8h.html#a550642f3011fe9921b65a9017605bf46">AhrsMlkf</a>
@@ -443,9 +426,6 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>boundsmin
 : <a class="el" href="classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a9982a4bdf7739bc223333e1b7daad5d5">mesonh.mesonh_atmosphere.MesoNHAtmosphere</a>
-</li>
-<li>bParityType
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a7e1e2fedd32383b44d0b03868f6d059e">TLineCoding</a>
 </li>
 <li>bqueetc
 : <a class="el" href="usb__msd_8h.html#a2da98645fb3d10efdcba5551990d67ac">PACK_STRUCT_STRUCT</a>
@@ -477,7 +457,6 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>buf
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a6231755c8fa266ace061fa45f8700471">_crrcsim</a>
 , <a class="el" href="aoa__adc_8h.html#aafa95cd077dfe80481bc0f89e88687cb">Aoa_Adc</a>
-, <a class="el" href="lisa__l_2baro__board_8c.html#ae0641a99787ef38d44a1b429e584d6fe">BaroBoard</a>
 , <a class="el" href="dw1000__arduino_8c.html#a42f2e4815d846e5082acc53259294277">DW1000</a>
 , <a class="el" href="frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5">fifo_t</a>
 , <a class="el" href="i2c__smbus_8h.html#a18a0ec0f4f45577ea2b751b984b00762">i2c_msg</a>
@@ -596,7 +575,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

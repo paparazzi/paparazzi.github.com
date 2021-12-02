@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ins/ins_vectornav_wrapper.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ins/ins_vectornav_wrapper.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,15 +114,15 @@ $(document).ready(function(){initNavTree('ins__vectornav__wrapper_8c.html','');}
 
 <p>Vectornav VN-200 INS subsystem.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ins__vectornav__wrapper_8h_source.html">subsystems/ins/ins_vectornav_wrapper.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ins__vectornav__wrapper_8h_source.html">modules/ins/ins_vectornav_wrapper.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_vectornav_wrapper.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__vectornav__wrapper_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2ins__vectornav__wrapper_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ins_2ins__vectornav__wrapper_8c" id="sw_2airborne_2subsystems_2ins_2ins__vectornav__wrapper_8c">
-<area shape="rect" id="node2" href="ins__vectornav__wrapper_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1394,95,1556,136"/><area shape="rect" id="node3" href="ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1404,184,1546,225"/><area shape="rect" id="node4" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="495,348,634,375"/><area shape="rect" id="node6" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="624,423,774,464"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1528,601,1683,628"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1251,519,1403,546"/><area shape="rect" id="node18" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="167,430,338,457"/><area shape="rect" id="node22" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="971,273,1104,300"/><area shape="rect" id="node25" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1467,348,1656,375"/><area shape="rect" id="node29" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="1898,601,2023,628"/><area shape="rect" id="node31" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2322,273,2457,300"/><area shape="rect" id="node15" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="798,423,949,464"/><area shape="rect" id="node7" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="674,519,798,546"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="917,519,1057,546"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="868,601,1018,628"/><area shape="rect" id="node19" href="inttypes_8h.html" title="inttypes.h" alt="" coords="30,519,115,546"/><area shape="rect" id="node23" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1004,348,1071,375"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1076,423,1240,464"/><area shape="rect" id="node26" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1568,430,1707,457"/></map>
+<div class="center"><img src="ins__vectornav__wrapper_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__vectornav__wrapper_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ins_2ins__vectornav__wrapper_8c" id="sw_2airborne_2modules_2ins_2ins__vectornav__wrapper_8c">
+</map>
 </div>
 </div>
 <p><a href="ins__vectornav__wrapper_8c_source.html">Go to the source code of this file.</a></p>
@@ -163,8 +163,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__vectornav__wrapper_8c.html">ins_vectornav_wrapper.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:23 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__vectornav__wrapper_8c.html">ins_vectornav_wrapper.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

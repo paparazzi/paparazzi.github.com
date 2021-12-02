@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__euler__int_8c
 <code>#include &quot;<a class="el" href="paparazzi_8h_source.html">paparazzi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_attitude_euler_int.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__euler__int_8c
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__euler__int_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__euler__int_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__euler__int_8c">
-<area shape="rect" id="node3" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="432,124,615,180"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1035,339,1214,366"/><area shape="rect" id="node14" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC. " alt="" coords="1203,228,1385,284"/><area shape="rect" id="node17" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1451,139,1547,165"/><area shape="rect" id="node19" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="794,139,861,165"/><area shape="rect" id="node24" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1572,131,1725,173"/><area shape="rect" id="node4" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="236,235,384,277"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="214,421,369,448"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1172,421,1323,448"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="460,339,651,366"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1449,339,1534,366"/><area shape="rect" id="node20" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="925,235,1076,277"/><area shape="rect" id="node22" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="511,235,661,277"/><area shape="rect" id="node23" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="685,235,849,277"/><area shape="rect" id="node21" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="777,339,901,366"/><area shape="rect" id="node25" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2337,421,2475,448"/><area shape="rect" id="node29" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1733,235,1887,277"/><area shape="rect" id="node32" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1559,332,1712,373"/><area shape="rect" id="node34" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1913,339,2107,366"/></map>
+</map>
 </div>
 </div>
 <p><a href="stabilization__attitude__euler__int_8c_source.html">Go to the source code of this file.</a></p>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <tr class="separator:a5a2d8d3947ba9cdc571cea5778c93f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac064607f64988793cadfe5ed346b269f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_set_rpy_setpoint_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> *rpy)</td></tr>
 <tr class="separator:ac064607f64988793cadfe5ed346b269f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3ef183c206d08fd0a902adc118f542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_set_earth_cmd_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *cmd, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="memitem:ada3ef183c206d08fd0a902adc118f542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_set_earth_cmd_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *cmd, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="separator:ada3ef183c206d08fd0a902adc118f542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add1138c9aae1adaafdb42ddf2f0c039a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#add1138c9aae1adaafdb42ddf2f0c039a">stabilization_attitude_run</a> (bool in_flight)</td></tr>
 <tr class="separator:add1138c9aae1adaafdb42ddf2f0c039a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +186,9 @@ Variables</h2></td></tr>
 <tr class="separator:a626e955f6f77d5690a9590dfc5ec4d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea29b51b2747d1e0eb86121f3c176b7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a6ea29b51b2747d1e0eb86121f3c176b7">stabilization_att_sum_err</a></td></tr>
 <tr class="separator:a6ea29b51b2747d1e0eb86121f3c176b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8adda5f8d9ba43761ce43e05703fed22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_att_fb_cmd</a> [COMMANDS_NB]</td></tr>
+<tr class="memitem:a8adda5f8d9ba43761ce43e05703fed22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_att_fb_cmd</a> [COMMANDS_NB]</td></tr>
 <tr class="separator:a8adda5f8d9ba43761ce43e05703fed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398bf301d18e16d629f977e75256f157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a398bf301d18e16d629f977e75256f157">stabilization_att_ff_cmd</a> [COMMANDS_NB]</td></tr>
+<tr class="memitem:a398bf301d18e16d629f977e75256f157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a398bf301d18e16d629f977e75256f157">stabilization_att_ff_cmd</a> [COMMANDS_NB]</td></tr>
 <tr class="separator:a398bf301d18e16d629f977e75256f157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b355848d1ce79a73b3fe67c8e86cd42"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stab_att_sp_euler</a></td></tr>
 <tr class="memdesc:a5b355848d1ce79a73b3fe67c8e86cd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">with <a class="el" href="group__math__algebra__int.html#gaa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a>  <a href="#a5b355848d1ce79a73b3fe67c8e86cd42">More...</a><br /></td></tr>
@@ -393,7 +393,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_a60f842edfa8dd98a227f18def04a0b55_icgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_a60f842edfa8dd98a227f18def04a0b55_icgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_a60f842edfa8dd98a227f18def04a0b55_icgraph" id="stabilization__attitude__euler__int_8c_a60f842edfa8dd98a227f18def04a0b55_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__euler__int_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="232,5,387,47"/></map>
+</map>
 </div>
 </p>
 
@@ -444,7 +444,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph" id="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="153,5,309,32"/><area shape="rect" id="node4" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="132,56,331,83"/><area shape="rect" id="node3" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="380,5,540,32"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="379,56,541,83"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="589,56,756,83"/><area shape="rect" id="node7" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="804,31,961,57"/><area shape="rect" id="node8" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="805,81,960,108"/></map>
+</map>
 </div>
 </p>
 
@@ -455,7 +455,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph" id="stabilization__attitude__euler__int_8c_ae9244e1c3c685a32cc7ac97134ea6f6d_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__euler__int_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init" alt="" coords="132,5,313,32"/></map>
+</map>
 </div>
 </p>
 
@@ -506,7 +506,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_a457dc37242ecee10254c28cb14d56ba7_icgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_a457dc37242ecee10254c28cb14d56ba7_icgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_a457dc37242ecee10254c28cb14d56ba7_icgraph" id="stabilization__attitude__euler__int_8c_a457dc37242ecee10254c28cb14d56ba7_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__euler__int_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init" alt="" coords="156,5,337,32"/></map>
+</map>
 </div>
 </p>
 
@@ -537,7 +537,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_a23f862ca823e6fd23fc9c111178be077_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_a23f862ca823e6fd23fc9c111178be077_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_a23f862ca823e6fd23fc9c111178be077_cgraph" id="stabilization__attitude__euler__int_8c_a23f862ca823e6fd23fc9c111178be077_cgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="218,5,397,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="208,56,407,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="455,56,617,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="665,56,832,83"/><area shape="rect" id="node6" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="880,31,1037,57"/><area shape="rect" id="node7" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="881,81,1036,108"/></map>
+</map>
 </div>
 </p>
 
@@ -568,7 +568,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_a03d27593d891182c04fc5337766733d1_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_a03d27593d891182c04fc5337766733d1_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_a03d27593d891182c04fc5337766733d1_cgraph" id="stabilization__attitude__euler__int_8c_a03d27593d891182c04fc5337766733d1_cgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__ref__euler__int_8c.html#aae3bc71c17408186daa1e4675c574edf" title="attitude_ref_euler\l_int_init" alt="" coords="266,5,401,47"/><area shape="rect" id="node3" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="235,71,432,98"/><area shape="rect" id="node4" href="stabilization__attitude__euler__int_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title="send_att" alt="" coords="294,122,373,149"/><area shape="rect" id="node12" href="stabilization__attitude__euler__int_8c.html#a457dc37242ecee10254c28cb14d56ba7" title="send_att_ref" alt="" coords="282,173,385,199"/><area shape="rect" id="node5" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="501,97,657,123"/><area shape="rect" id="node7" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="480,147,679,174"/><area shape="rect" id="node6" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="728,97,888,123"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="727,147,889,174"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="937,147,1104,174"/><area shape="rect" id="node10" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1152,122,1309,149"/><area shape="rect" id="node11" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1153,173,1308,199"/></map>
+</map>
 </div>
 </p>
 
@@ -615,7 +615,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_ad17347abf36f7dfc4abb0218f10b5f09_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_ad17347abf36f7dfc4abb0218f10b5f09_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_ad17347abf36f7dfc4abb0218f10b5f09_cgraph" id="stabilization__attitude__euler__int_8c_ad17347abf36f7dfc4abb0218f10b5f09_cgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles. " alt="" coords="208,125,391,166"/><area shape="rect" id="node3" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="472,5,560,32"/><area shape="rect" id="node4" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="466,56,566,83"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="445,107,587,133"/><area shape="rect" id="node6" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="469,157,563,184"/><area shape="rect" id="node7" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="439,209,593,250"/><area shape="rect" id="node8" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="641,245,840,272"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="888,245,1051,272"/><area shape="rect" id="node10" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1099,245,1265,272"/><area shape="rect" id="node11" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1313,220,1471,247"/><area shape="rect" id="node12" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1315,271,1469,297"/></map>
+</map>
 </div>
 </p>
 
@@ -646,7 +646,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_add1138c9aae1adaafdb42ddf2f0c039a_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_add1138c9aae1adaafdb42ddf2f0c039a_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_add1138c9aae1adaafdb42ddf2f0c039a_cgraph" id="stabilization__attitude__euler__int_8c_add1138c9aae1adaafdb42ddf2f0c039a_cgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model. " alt="" coords="268,5,403,47"/><area shape="rect" id="node3" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="257,71,413,98"/><area shape="rect" id="node5" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="236,122,435,149"/><area shape="rect" id="node4" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="484,71,644,98"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="483,122,645,149"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="693,122,860,149"/><area shape="rect" id="node8" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="908,97,1065,123"/><area shape="rect" id="node9" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="909,147,1064,174"/></map>
+</map>
 </div>
 </p>
 
@@ -665,7 +665,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>heading</em>&#160;</td>
         </tr>
         <tr>
@@ -678,7 +678,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00195">195</a> of file <a class="el" href="stabilization__attitude__euler__int_8c_source.html">stabilization_attitude_euler_int.c</a>.</p>
 
-<p>References <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00110">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00109">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00074">stab_att_sp_euler</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
+<p>References <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00074">stab_att_sp_euler</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -687,7 +687,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_ada3ef183c206d08fd0a902adc118f542_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_ada3ef183c206d08fd0a902adc118f542_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_ada3ef183c206d08fd0a902adc118f542_cgraph" id="stabilization__attitude__euler__int_8c_ada3ef183c206d08fd0a902adc118f542_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="208,31,407,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="455,31,617,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="665,31,832,57"/><area shape="rect" id="node5" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="880,5,1037,32"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="881,56,1036,83"/></map>
+</map>
 </div>
 </p>
 
@@ -718,7 +718,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__euler__int_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph.png" border="0" usemap="#stabilization__attitude__euler__int_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph" alt=""/></div>
 <map name="stabilization__attitude__euler__int_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph" id="stabilization__attitude__euler__int_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="213,31,412,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="460,31,623,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="671,31,837,57"/><area shape="rect" id="node5" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="885,5,1043,32"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="887,56,1041,83"/></map>
+</map>
 </div>
 </p>
 
@@ -784,7 +784,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> stabilization_att_fb_cmd[COMMANDS_NB]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> stabilization_att_fb_cmd[COMMANDS_NB]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -800,7 +800,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> stabilization_att_ff_cmd[COMMANDS_NB]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> stabilization_att_ff_cmd[COMMANDS_NB]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -849,7 +849,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__euler__int_8c.html">stabilization_attitude_euler_int.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:47 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

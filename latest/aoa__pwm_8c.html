@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,10 +119,10 @@ $(document).ready(function(){initNavTree('aoa__pwm_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="aoa__pwm_8h_source.html">modules/sensors/aoa_pwm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pwm__input_8h_source.html">mcu_periph/pwm_input.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for aoa_pwm.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('aoa__pwm_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="aoa__pwm_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2aoa__pwm_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2aoa__pwm_8c" id="sw_2airborne_2modules_2sensors_2aoa__pwm_8c">
-<area shape="rect" id="node2" href="aoa__pwm_8h.html" title="Angle of Attack sensor on PWM. " alt="" coords="5,184,164,225"/><area shape="rect" id="node4" href="pwm__input_8h.html" title="arch independent PWM input capture API " alt="" coords="933,102,1116,129"/><area shape="rect" id="node6" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="653,184,807,225"/><area shape="rect" id="node17" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1140,102,1275,129"/><area shape="rect" id="node19" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="355,95,508,136"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="687,281,773,307"/><area shape="rect" id="node10" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="240,273,393,315"/><area shape="rect" id="node12" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="469,281,663,307"/><area shape="rect" id="node14" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="471,363,610,389"/></map>
+</map>
 </div>
 </div>
 <p><a href="aoa__pwm_8c_source.html">Go to the source code of this file.</a></p>
@@ -435,7 +435,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="aoa__pwm_8c_a5ec02f062e99b4bee477baff537e006d_cgraph.png" border="0" usemap="#aoa__pwm_8c_a5ec02f062e99b4bee477baff537e006d_cgraph" alt=""/></div>
 <map name="aoa__pwm_8c_a5ec02f062e99b4bee477baff537e006d_cgraph" id="aoa__pwm_8c_a5ec02f062e99b4bee477baff537e006d_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="163,5,360,32"/><area shape="rect" id="node3" href="aoa__pwm_8c.html#adbe58feb8d4ba7c9dc74dab061b38f73" title="send_aoa" alt="" coords="219,56,303,83"/></map>
+</map>
 </div>
 </p>
 
@@ -457,7 +457,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="aoa__pwm_8c_source.html#l00167">167</a> of file <a class="el" href="aoa__pwm_8c_source.html">aoa_pwm.c</a>.</p>
 
-<p>References <a class="el" href="aoa__pwm_8h_source.html#l00041">Aoa_Pwm::angle</a>, <a class="el" href="aoa__pwm_8c_source.html#l00063">AOA_ANGLE_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00092">aoa_pwm</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00118">AOA_PWM_ID</a>, <a class="el" href="aoa__pwm_8c_source.html#l00059">AOA_PWM_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00081">AOA_SIGN</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="aoa__pwm_8h_source.html#l00049">Aoa_Pwm::filter</a>, <a class="el" href="pwm__input_8c_source.html#l00039">get_pwm_input_duty_in_usec()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00047">log_started</a>, <a class="el" href="aoa__pwm_8h_source.html#l00042">Aoa_Pwm::offset</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="aoa__pwm_8h_source.html#l00040">Aoa_Pwm::raw</a>, <a class="el" href="aoa__pwm_8c_source.html#l00128">send_aoa()</a>, <a class="el" href="aoa__pwm_8h_source.html#l00043">Aoa_Pwm::sens</a>, <a class="el" href="aoa__pwm_8c_source.html#l00119">ssa_pwm</a>, and <a class="el" href="aoa__pwm_8c_source.html#l00117">SSA_SIGN</a>.</p>
+<p>References <a class="el" href="aoa__pwm_8h_source.html#l00041">Aoa_Pwm::angle</a>, <a class="el" href="aoa__pwm_8c_source.html#l00063">AOA_ANGLE_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00092">aoa_pwm</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00126">AOA_PWM_ID</a>, <a class="el" href="aoa__pwm_8c_source.html#l00059">AOA_PWM_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00081">AOA_SIGN</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="aoa__pwm_8h_source.html#l00049">Aoa_Pwm::filter</a>, <a class="el" href="pwm__input_8c_source.html#l00039">get_pwm_input_duty_in_usec()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00047">log_started</a>, <a class="el" href="aoa__pwm_8h_source.html#l00042">Aoa_Pwm::offset</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="aoa__pwm_8h_source.html#l00040">Aoa_Pwm::raw</a>, <a class="el" href="aoa__pwm_8c_source.html#l00128">send_aoa()</a>, <a class="el" href="aoa__pwm_8h_source.html#l00043">Aoa_Pwm::sens</a>, <a class="el" href="aoa__pwm_8c_source.html#l00119">ssa_pwm</a>, and <a class="el" href="aoa__pwm_8c_source.html#l00117">SSA_SIGN</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -466,7 +466,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="aoa__pwm_8c_ad218f9a74fbec56f87dd18f493fc01e3_cgraph.png" border="0" usemap="#aoa__pwm_8c_ad218f9a74fbec56f87dd18f493fc01e3_cgraph" alt=""/></div>
 <map name="aoa__pwm_8c_ad218f9a74fbec56f87dd18f493fc01e3_cgraph" id="aoa__pwm_8c_ad218f9a74fbec56f87dd18f493fc01e3_cgraph">
-<area shape="rect" id="node2" href="pwm__input_8c.html#a6bb41ee9ef588e2319ab3f59ac58bb2c" title="get_pwm_input_duty\l_in_usec" alt="" coords="188,5,343,47"/><area shape="rect" id="node3" href="aoa__pwm_8c.html#adbe58feb8d4ba7c9dc74dab061b38f73" title="send_aoa" alt="" coords="223,71,307,98"/></map>
+</map>
 </div>
 </p>
 
@@ -517,7 +517,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="aoa__pwm_8c_adbe58feb8d4ba7c9dc74dab061b38f73_icgraph.png" border="0" usemap="#aoa__pwm_8c_adbe58feb8d4ba7c9dc74dab061b38f73_icgraph" alt=""/></div>
 <map name="aoa__pwm_8c_adbe58feb8d4ba7c9dc74dab061b38f73_icgraph" id="aoa__pwm_8c_adbe58feb8d4ba7c9dc74dab061b38f73_icgraph">
-<area shape="rect" id="node2" href="aoa__pwm_8h.html#a5ec02f062e99b4bee477baff537e006d" title="aoa_pwm_init" alt="" coords="150,5,259,32"/><area shape="rect" id="node3" href="aoa__pwm_8h.html#ad218f9a74fbec56f87dd18f493fc01e3" title="aoa_pwm_update" alt="" coords="137,56,272,83"/></map>
+</map>
 </div>
 </p>
 
@@ -578,7 +578,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="aoa__pwm_8c.html">aoa_pwm.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:09 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,11 +133,11 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html">firmwares/fixedwing/nav.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">modules/nav/common_nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">inter_mcu.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">subsystems/datalink/datalink.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">modules/datalink/datalink.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="traffic__info_8h.html">modules/multi/traffic_info.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uav__recovery_8h.html">uav_recovery.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -183,9 +183,9 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff">   79</a></span>&#160;<span class="keywordtype">bool</span>   <a class="code" href="uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff">land_direction</a> = 0;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">subsystems/datalink/telemetry.h</a>&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">modules/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e">   84</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e">send_wind_info</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e">   84</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e">send_wind_info</a>(<span class="keyword">struct</span> transport_tx *trans, <span class="keyword">struct</span> link_device *<a class="code" href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">float</span> foo1 = 0, foo2 = 0, foo3 = 0;</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#ac2dac752a8b7bced533b7f19bdcc893e">  131</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#ac2dac752a8b7bced533b7f19bdcc893e">LockParachute</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#ac2dac752a8b7bced533b7f19bdcc893e">  131</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#ac2dac752a8b7bced533b7f19bdcc893e">LockParachute</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="uav__recovery_8c.html#ae522f8da76f9ca209cc57fed0df3a7b7">deploy_parachute_var</a> = 0;</div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> (0);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#a36e5827383bef4449dd2a6907f698e31">  139</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#a36e5827383bef4449dd2a6907f698e31">DeployParachute</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#a36e5827383bef4449dd2a6907f698e31">  139</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#a36e5827383bef4449dd2a6907f698e31">DeployParachute</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="uav__recovery_8c.html#ae522f8da76f9ca209cc57fed0df3a7b7">deploy_parachute_var</a> = 1;</div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#aeb19d3dd881fdd134582bf54daecf9a6">  148</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6">calculate_wind_no_airspeed</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp, <span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> height)</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#aeb19d3dd881fdd134582bf54daecf9a6">  148</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6">calculate_wind_no_airspeed</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp, <span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> height)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">//struct EnuCoor_f* pos = stateGetPositionEnu_f();</span></div>
@@ -336,7 +336,7 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">// Compute an approximation for the RELEASE waypoint from expected descent and altitude</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#a9c997b8e616fff9243a44110e922490b">  235</a></span>&#160;unit_t <a class="code" href="uav__recovery_8c.html#a9c997b8e616fff9243a44110e922490b">parachute_compute_approach</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> baseleg, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> release, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_target)</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="uav__recovery_8h.html#a9c997b8e616fff9243a44110e922490b">  235</a></span>&#160;unit_t <a class="code" href="uav__recovery_8c.html#a9c997b8e616fff9243a44110e922490b">parachute_compute_approach</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> baseleg, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> release, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_target)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">float</span> x = 0, y = 0;</div>
@@ -391,6 +391,7 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="ttc" id="usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="inter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div><div class="ttdoc">Communication between fbw and ap processes. </div></div>
 <div class="ttc" id="group__state__velocity_html_ga1396b84069296dc0353f25281a472c08"><div class="ttname"><a href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08">stateGetHorizontalSpeedNorm_f</a></div><div class="ttdeci">static float stateGetHorizontalSpeedNorm_f(void)</div><div class="ttdoc">Get norm of horizontal ground speed (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00935">state.h:935</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a8293fd2de3ce739deb6d53691fd21fcf"><div class="ttname"><a href="common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf">point::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00040">common_nav.h:40</a></div></div>
@@ -425,10 +426,8 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="ttc" id="uav__recovery_8c_html_aeb19d3dd881fdd134582bf54daecf9a6"><div class="ttname"><a href="uav__recovery_8c.html#aeb19d3dd881fdd134582bf54daecf9a6">calculate_wind_no_airspeed</a></div><div class="ttdeci">uint8_t calculate_wind_no_airspeed(uint8_t wp, float radius, float height)</div><div class="ttdef"><b>Definition:</b> <a href="uav__recovery_8c_source.html#l00148">uav_recovery.c:148</a></div></div>
 <div class="ttc" id="nav_8h_html_af95d040500e23a05d6b095662fb18b59"><div class="ttname"><a href="nav_8h.html#af95d040500e23a05d6b095662fb18b59">NavVerticalAutoThrottleMode</a></div><div class="ttdeci">#define NavVerticalAutoThrottleMode(_pitch)</div><div class="ttdoc">Set the climb control to auto-throttle with the specified pitch pre-command. </div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00171">nav.h:171</a></div></div>
 <div class="ttc" id="nav__gls_8c_html_a50300ba6e38ec30121edcc07ebac42c6"><div class="ttname"><a href="nav__gls_8c.html#a50300ba6e38ec30121edcc07ebac42c6">init</a></div><div class="ttdeci">bool init</div><div class="ttdef"><b>Definition:</b> <a href="nav__gls_8c_source.html#l00057">nav_gls.c:57</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="group__state__velocity_html_ga6f8b83126a235daea584aa9ce97f7fac"><div class="ttname"><a href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac">stateGetHorizontalSpeedDir_f</a></div><div class="ttdeci">static float stateGetHorizontalSpeedDir_f(void)</div><div class="ttdoc">Get dir of horizontal ground speed (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00944">state.h:944</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
 <div class="ttc" id="uav__recovery_8c_html_a9c3944426205456273cd8c7f1b880f1d"><div class="ttname"><a href="uav__recovery_8c.html#a9c3944426205456273cd8c7f1b880f1d">wind_info_valid</a></div><div class="ttdeci">bool wind_info_valid</div><div class="ttdef"><b>Definition:</b> <a href="uav__recovery_8c_source.html#l00077">uav_recovery.c:77</a></div></div>
 <div class="ttc" id="common__nav_8c_html_a94e2a3864e1c0746e69eb9cda1061c62"><div class="ttname"><a href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a></div><div class="ttdeci">struct point waypoints[NB_WAYPOINT]</div><div class="ttdoc">size == nb_waypoint, waypoint 0 is a dummy waypoint </div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00038">common_nav.c:38</a></div></div>
@@ -446,13 +445,14 @@ $(document).ready(function(){initNavTree('uav__recovery_8c_source.html','');});
 <div class="ttc" id="nav_8h_html_a0bb5f5ae29ba1d5968fe7857a304253e"><div class="ttname"><a href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">GetPosAlt</a></div><div class="ttdeci">#define GetPosAlt()</div><div class="ttdoc">Get current altitude above MSL. </div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00228">nav.h:228</a></div></div>
 <div class="ttc" id="telemetry_8c_html_a8b8cf43739f06c54d16370c141b541a0"><div class="ttname"><a href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a></div><div class="ttdeci">int8_t register_periodic_telemetry(struct periodic_telemetry *_pt, uint8_t _id, telemetry_cb _cb)</div><div class="ttdoc">Register a telemetry callback function. </div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8c_source.html#l00046">telemetry.c:46</a></div></div>
 <div class="ttc" id="traffic__info_8h_html"><div class="ttname"><a href="traffic__info_8h.html">traffic_info.h</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_514e42ddade0df778a696ac907fa7c01.html">uav_recovery</a></li><li class="navelem"><a class="el" href="uav__recovery_8c.html">uav_recovery.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

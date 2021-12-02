@@ -2,6 +2,7 @@ var baro__ms5611__i2c_8c =
 [
     [ "MS5611_I2C_DEV", "baro__ms5611__i2c_8c.html#a35aa45219b866c3fa80653e777f41d90", null ],
     [ "MS5611_SLAVE_ADDR", "baro__ms5611__i2c_8c.html#ad4db9d60ee8d2f86da0b10de667686db", null ],
+    [ "MS5611_TYPE_MS5607", "baro__ms5611__i2c_8c.html#a09e6be02316a271b42e7988e9c9b790c", null ],
     [ "baro_ms5611_event", "baro__ms5611__i2c_8c.html#afd15b3c514cb6c7763b0db2788665185", null ],
     [ "baro_ms5611_init", "baro__ms5611__i2c_8c.html#a3f95f9dea9a4f9246be1cd133ff424a7", null ],
     [ "baro_ms5611_periodic_check", "baro__ms5611__i2c_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2", null ],

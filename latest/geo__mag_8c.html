@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="geo__mag_8h_source.html">modules/geo_mag/geo_mag.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__wmm2020_8h_source.html">math/pprz_geodetic_wmm2020.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__double_8h_source.html">math/pprz_algebra_double.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps_8h_source.html">modules/gps/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for geo_mag.c:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geo__mag_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2geo__mag_2geo__mag_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2geo__mag_2geo__mag_8c" id="sw_2airborne_2modules_2geo__mag_2geo__mag_8c">
-<area shape="rect" id="node2" href="geo__mag_8h.html" title="Calculation of the Geomagnetic field vector from current location. " alt="" coords="1437,184,1606,225"/><area shape="rect" id="node4" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="1448,281,1654,307"/><area shape="rect" id="node11" href="pprz__geodetic__wmm2020_8h.html" title="WMM2020 Geomagnetic field model. " alt="" coords="1682,95,1833,136"/><area shape="rect" id="node12" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="419,191,558,218"/><area shape="rect" id="node23" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1857,102,1992,129"/><area shape="rect" id="node25" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="984,102,1075,129"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1523,452,1640,479"/><area shape="rect" id="node9" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1374,370,1526,397"/><area shape="rect" id="node13" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="512,273,662,315"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="686,273,837,315"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="196,281,367,307"/><area shape="rect" id="node14" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="600,370,724,397"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="913,370,1053,397"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="964,452,1114,479"/><area shape="rect" id="node20" href="inttypes_8h.html" title="inttypes.h" alt="" coords="439,370,524,397"/><area shape="rect" id="node26" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="391,281,487,307"/><area shape="rect" id="node28" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="632,191,699,218"/><area shape="rect" id="node29" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="964,273,1128,315"/></map>
+</map>
 </div>
 </div>
 <p><a href="geo__mag_8c_source.html">Go to the source code of this file.</a></p>
@@ -201,7 +201,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph.png" border="0" usemap="#geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph" alt=""/></div>
 <map name="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph" id="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title="extrapsh" alt="" coords="221,5,299,32"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place " alt="" coords="179,56,341,83"/><area shape="rect" id="node6" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title="mag_calc" alt="" coords="219,107,301,133"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="389,56,523,83"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="571,56,712,83"/></map>
+</map>
 </div>
 </p>
 
@@ -252,7 +252,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geo__mag_8c_a0b31ff993a34eceda1a56f755470c413_cgraph.png" border="0" usemap="#geo__mag_8c_a0b31ff993a34eceda1a56f755470c413_cgraph" alt=""/></div>
 <map name="geo__mag_8c_a0b31ff993a34eceda1a56f755470c413_cgraph" id="geo__mag_8c_a0b31ff993a34eceda1a56f755470c413_cgraph">
-<area shape="rect" id="node2" href="autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status " alt="" coords="192,5,324,47"/></map>
+</map>
 </div>
 </p>
 
@@ -281,7 +281,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_45631f37b0deddad5fac6a40f1cf48fa.html">geo_mag</a></li><li class="navelem"><a class="el" href="geo__mag_8c.html">geo_mag.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

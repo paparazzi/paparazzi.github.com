@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -267,6 +267,15 @@ $(document).ready(function(){initNavTree('globals_defs_k.html','');});
 <li>KEY_VT
 : <a class="el" href="microrl_8h.html#a5a0dbe8222ed77432b358ca7f4141bbd">microrl.h</a>
 </li>
+<li>KF_MAX_CMD_SIZE
+: <a class="el" href="linear__kalman__filter_8h.html#a23a670e262071eafa79ebffb2ddcf130">linear_kalman_filter.h</a>
+</li>
+<li>KF_MAX_MEAS_SIZE
+: <a class="el" href="linear__kalman__filter_8h.html#a5f6f64f6b7879cf6706a30004a626619">linear_kalman_filter.h</a>
+</li>
+<li>KF_MAX_STATE_SIZE
+: <a class="el" href="linear__kalman__filter_8h.html#a069964f22f204ca80ffb962b16c9107e">linear_kalman_filter.h</a>
+</li>
 <li>KFFA_UPDATE
 : <a class="el" href="stabilization__adaptive_8c.html#a9ce1427c8d77d4ba3f15ebc8015c43f5">stabilization_adaptive.c</a>
 </li>
@@ -280,7 +289,7 @@ $(document).ready(function(){initNavTree('globals_defs_k.html','');});
 : <a class="el" href="ahrs__float__dcm_8h.html#aea9dd7972c8f6c2381b1541b964b3893">ahrs_float_dcm.h</a>
 </li>
 <li>KILL_MODE_DISTANCE
-: <a class="el" href="fixedwing_2main__ap_8c.html#a1f8fa85842c4d2ac6c69cf4d960ee0d6">main_ap.c</a>
+: <a class="el" href="fixedwing_2autopilot__firmware_8c.html#a1f8fa85842c4d2ac6c69cf4d960ee0d6">autopilot_firmware.c</a>
 </li>
 <li>KJpegCh1ScanDataLen
 : <a class="el" href="rtp_8c.html#acb5fe6f05cdd47735754c5d7444d241d">rtp.c</a>
@@ -298,20 +307,20 @@ $(document).ready(function(){initNavTree('globals_defs_k.html','');});
 : <a class="el" href="ahrs__float__dcm_8h.html#a3c59c4be08d2d06edcdc0a02369da6b6">ahrs_float_dcm.h</a>
 </li>
 <li>KROOZ_ACCEL_RANGE
-: <a class="el" href="imu__krooz__memsic_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz_memsic.c</a>
-, <a class="el" href="imu__krooz_8h.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz.h</a>
+: <a class="el" href="imu__krooz_8h.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz.h</a>
+, <a class="el" href="imu__krooz__memsic_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz_memsic.c</a>
 </li>
 <li>KROOZ_GYRO_RANGE
-: <a class="el" href="imu__krooz__memsic_8h.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz_memsic.h</a>
-, <a class="el" href="imu__krooz_8h.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz.h</a>
+: <a class="el" href="imu__krooz_8h.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz.h</a>
+, <a class="el" href="imu__krooz__memsic_8h.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz_memsic.h</a>
 </li>
 <li>KROOZ_LOWPASS_FILTER
 : <a class="el" href="imu__krooz__memsic_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz_memsic.c</a>
 , <a class="el" href="imu__krooz_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz.c</a>
 </li>
 <li>KROOZ_SMPLRT_DIV
-: <a class="el" href="imu__krooz_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf">imu_krooz.c</a>
-, <a class="el" href="imu__krooz__memsic_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf">imu_krooz_memsic.c</a>
+: <a class="el" href="imu__krooz__memsic_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf">imu_krooz_memsic.c</a>
+, <a class="el" href="imu__krooz_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf">imu_krooz.c</a>
 </li>
 <li>KRtpHeaderSize
 : <a class="el" href="rtp_8c.html#ab212f5526e3064dfb83c572feab4758c">rtp.c</a>
@@ -322,7 +331,7 @@ $(document).ready(function(){initNavTree('globals_defs_k.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

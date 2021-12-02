@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,10 +117,10 @@ $(document).ready(function(){initNavTree('ins__xsens_8c.html','');});
 <p><a class="el" href="xsens700_8h.html#structXsens">Xsens</a> as a full INS solution.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ins_8h_source.html">subsystems/ins.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ins_8h_source.html">modules/ins/ins.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_xsens.c:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__xsens_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__xsens_8c" id="sw_2airborne_2modules_2ins_2ins__xsens_8c">
-<area shape="rect" id="node2" href="ins__xsens_8h.html" title="Xsens as a full INS solution. " alt="" coords="377,95,473,121"/><area shape="rect" id="node19" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="847,95,980,121"/><area shape="rect" id="node20" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="880,169,947,196"/><area shape="rect" id="node23" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1463,333,1633,360"/><area shape="rect" id="node27" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1697,95,1831,121"/><area shape="rect" id="node4" href="xsens_8h.html" title="Parser for the Xsens protocol. " alt="" coords="390,169,461,196"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="959,333,1150,360"/><area shape="rect" id="node11" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="525,244,675,285"/><area shape="rect" id="node13" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="350,244,501,285"/><area shape="rect" id="node17" href="xsens__parser_8h.html" title="Parser for the XSens protocol. " alt="" coords="150,251,269,278"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1119,415,1236,442"/><area shape="rect" id="node12" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="401,333,525,360"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="779,333,919,360"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="661,415,811,442"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="751,244,915,285"/><area shape="rect" id="node24" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1505,415,1591,442"/></map>
+</map>
 </div>
 </div>
 <p><a href="ins__xsens_8c_source.html">Go to the source code of this file.</a></p>
@@ -146,7 +146,7 @@ Functions</h2></td></tr>
 <tr class="separator:a01a96d75a3da02e6c7046cff96b1f7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8011d2c59733cc2b3ba2110bf3675bde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde">update_state_interface</a> (void)</td></tr>
 <tr class="separator:a8011d2c59733cc2b3ba2110bf3675bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
+<tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
 <tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c9835f49df2ea11e85e95c53d8ab2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c">ins_xsens_init</a> (void)</td></tr>
 <tr class="separator:a20c9835f49df2ea11e85e95c53d8ab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,13 +197,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void gps_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>sender_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>stamp</em>, </td>
         </tr>
         <tr>
@@ -238,7 +238,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph.png" border="0" usemap="#ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph" alt=""/></div>
 <map name="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph" id="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float). " alt="" coords="120,21,287,48"/><area shape="rect" id="node3" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="126,72,281,99"/><area shape="rect" id="node4" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state. " alt="" coords="128,123,279,149"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="355,93,454,120"/><area shape="rect" id="node12" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="335,145,475,186"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="525,64,623,91"/><area shape="rect" id="node9" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="523,123,625,149"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="675,5,822,32"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="681,57,817,98"/><area shape="rect" id="node10" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="673,123,824,149"/><area shape="rect" id="node11" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="681,174,817,215"/></map>
+</map>
 </div>
 </p>
 
@@ -249,7 +249,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph.png" border="0" usemap="#ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" alt=""/></div>
 <map name="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" id="ins__xsens_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph">
-<area shape="rect" id="node2" href="ins__xsens_8h.html#a20c9835f49df2ea11e85e95c53d8ab2c" title="ins_xsens_init" alt="" coords="120,5,231,32"/></map>
+</map>
 </div>
 </p>
 
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph.png" border="0" usemap="#ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph" alt=""/></div>
 <map name="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph" id="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_cgraph">
-<area shape="rect" id="node2" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="197,5,331,32"/><area shape="rect" id="node4" href="ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde" title="update_state_interface" alt="" coords="179,56,349,83"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="426,5,567,32"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="397,56,596,83"/><area shape="rect" id="node7" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="419,107,575,133"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="644,56,807,83"/></map>
+</map>
 </div>
 </p>
 
@@ -301,7 +301,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph.png" border="0" usemap="#ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph" alt=""/></div>
 <map name="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph" id="ins__xsens_8c_a01a96d75a3da02e6c7046cff96b1f7e6_icgraph">
-<area shape="rect" id="node2" href="ins__xsens_8h.html#a8bfad9d883f0f0c3b3f3ae57a0d8e775" title="ins_xsens_event" alt="" coords="179,5,305,32"/></map>
+</map>
 </div>
 </p>
 
@@ -332,7 +332,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a8bfad9d883f0f0c3b3f3ae57a0d8e775_cgraph.png" border="0" usemap="#ins__xsens_8c_a8bfad9d883f0f0c3b3f3ae57a0d8e775_cgraph" alt=""/></div>
 <map name="ins__xsens_8c_a8bfad9d883f0f0c3b3f3ae57a0d8e775_cgraph" id="ins__xsens_8c_a8bfad9d883f0f0c3b3f3ae57a0d8e775_cgraph">
-<area shape="rect" id="node2" href="ins__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title="handle_ins_msg" alt="" coords="193,56,318,83"/><area shape="rect" id="node9" href="xsens_8c.html#a7dcaa5041c2da4d7b3a8af364132770a" title="parse_xsens_msg" alt="" coords="187,115,324,141"/><area shape="rect" id="node11" href="xsens__parser_8c.html#a9d0046af933b2f7d8eb98e697b678c6a" title="xsens_parser_event" alt="" coords="180,169,331,196"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="397,5,531,32"/><area shape="rect" id="node5" href="ins__xsens_8c.html#a8011d2c59733cc2b3ba2110bf3675bde" title="update_state_interface" alt="" coords="379,56,549,83"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="626,5,767,32"/><area shape="rect" id="node6" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="597,56,796,83"/><area shape="rect" id="node8" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="619,107,775,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="844,56,1007,83"/><area shape="rect" id="node10" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="394,107,534,149"/><area shape="rect" id="node12" href="xsens__parser_8c.html#aeb457d2fb42319908f48ab6713852cd4" title="xsens_parser_func" alt="" coords="393,173,535,200"/></map>
+</map>
 </div>
 </p>
 
@@ -363,7 +363,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a20c9835f49df2ea11e85e95c53d8ab2c_cgraph.png" border="0" usemap="#ins__xsens_8c_a20c9835f49df2ea11e85e95c53d8ab2c_cgraph" alt=""/></div>
 <map name="ins__xsens_8c_a20c9835f49df2ea11e85e95c53d8ab2c_cgraph" id="ins__xsens_8c_a20c9835f49df2ea11e85e95c53d8ab2c_cgraph">
-<area shape="rect" id="node2" href="ins__xsens_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="224,72,291,99"/><area shape="rect" id="node3" href="group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float). " alt="" coords="399,21,565,48"/><area shape="rect" id="node14" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="164,123,351,149"/><area shape="rect" id="node15" href="xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19" title="xsens_init" alt="" coords="215,173,300,200"/><area shape="rect" id="node4" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="405,72,559,99"/><area shape="rect" id="node5" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state. " alt="" coords="407,123,557,149"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="634,93,733,120"/><area shape="rect" id="node13" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="613,145,753,186"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="803,64,902,91"/><area shape="rect" id="node10" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title="utm_of_lla_d" alt="" coords="801,123,904,149"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="954,5,1101,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="959,57,1095,98"/><area shape="rect" id="node11" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="952,123,1103,149"/><area shape="rect" id="node12" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="959,174,1095,215"/></map>
+</map>
 </div>
 </p>
 
@@ -404,7 +404,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_cgraph.png" border="0" usemap="#ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_cgraph" alt=""/></div>
 <map name="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_cgraph" id="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_cgraph">
-<area shape="rect" id="node2" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="245,5,401,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="224,56,423,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="471,56,633,83"/></map>
+</map>
 </div>
 </p>
 
@@ -415,7 +415,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_icgraph.png" border="0" usemap="#ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_icgraph" alt=""/></div>
 <map name="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_icgraph" id="ins__xsens_8c_a8011d2c59733cc2b3ba2110bf3675bde_icgraph">
-<area shape="rect" id="node2" href="ins__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title="handle_ins_msg" alt="" coords="224,5,349,32"/><area shape="rect" id="node3" href="ins__xsens_8h.html#a8bfad9d883f0f0c3b3f3ae57a0d8e775" title="ins_xsens_event" alt="" coords="397,5,524,32"/></map>
+</map>
 </div>
 </p>
 
@@ -482,7 +482,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__xsens_8c.html">ins_xsens.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

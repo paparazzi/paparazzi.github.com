@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('dfu__command_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="dfu__command_8h.html#ae2fc0a13f5fdbae95b0c015530c3786c">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="dfu__command_8c.html#ae2fc0a13f5fdbae95b0c015530c3786c">dfu_command_event</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Search fifo for command string</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="lpc21_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>(); ++i) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stm32_2usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a>(i) == <a class="code" href="dfu__command_8c.html#ae599677ab5e039ea5ce9e77f26b052cd">dfu_command_str</a>[<a class="code" href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command_state</a>]) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>(); ++i) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a>(i) == <a class="code" href="dfu__command_8c.html#ae599677ab5e039ea5ce9e77f26b052cd">dfu_command_str</a>[<a class="code" href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command_state</a>]) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command_state</a>++;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="dfu__command_8c.html#ae599677ab5e039ea5ce9e77f26b052cd">dfu_command_str</a>[<a class="code" href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command_state</a>] == <span class="charliteral">&#39;\0&#39;</span>) { <span class="comment">// end of command string</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        reset_to_dfu();</div>
@@ -149,21 +149,21 @@ $(document).ready(function(){initNavTree('dfu__command_8c_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// Prevent fifo blocking if bytes are not consumed by other process</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="lpc21_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a>(1)) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="lpc21_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>()) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="lpc21_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a>(1)) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>()) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="ttc" id="dfu__command_8c_html_ae2fc0a13f5fdbae95b0c015530c3786c"><div class="ttname"><a href="dfu__command_8c.html#ae2fc0a13f5fdbae95b0c015530c3786c">dfu_command_event</a></div><div class="ttdeci">void dfu_command_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="dfu__command_8c_source.html#l00036">dfu_command.c:36</a></div></div>
-<div class="ttc" id="lpc21_2usb__ser__hw_8c_html_ae4318c752d87ae9cc59828f07ec04946"><div class="ttname"><a href="lpc21_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a></div><div class="ttdeci">bool VCOM_check_free_space(uint16_t len)</div><div class="ttdoc">Checks if buffer free in VCOM buffer. </div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2usb__ser__hw_8c_source.html#l00409">usb_ser_hw.c:409</a></div></div>
-<div class="ttc" id="lpc21_2usb__ser__hw_8c_html_a184633f63ad351d8e70857d9e5ba4a3e"><div class="ttname"><a href="lpc21_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a></div><div class="ttdeci">int VCOM_getchar(void)</div><div class="ttdoc">Reads one character from VCOM port. </div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2usb__ser__hw_8c_source.html#l00386">usb_ser_hw.c:386</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_a4cfafe558a6e594ce0638634e7cec7db"><div class="ttname"><a href="usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a></div><div class="ttdeci">int VCOM_check_available(void)</div><div class="ttdoc">Checks if data available in VCOM buffer. </div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00459">usb_ser_hw.c:459</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_a184633f63ad351d8e70857d9e5ba4a3e"><div class="ttname"><a href="usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a></div><div class="ttdeci">int VCOM_getchar(void)</div><div class="ttdoc">Reads one character from VCOM port. </div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00425">usb_ser_hw.c:425</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_ae4318c752d87ae9cc59828f07ec04946"><div class="ttname"><a href="usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a></div><div class="ttdeci">bool VCOM_check_free_space(uint16_t len)</div><div class="ttdoc">Checks if buffer free in VCOM buffer. </div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00450">usb_ser_hw.c:450</a></div></div>
 <div class="ttc" id="dfu__command_8c_html_ae599677ab5e039ea5ce9e77f26b052cd"><div class="ttname"><a href="dfu__command_8c.html#ae599677ab5e039ea5ce9e77f26b052cd">dfu_command_str</a></div><div class="ttdeci">static const char dfu_command_str[]</div><div class="ttdef"><b>Definition:</b> <a href="dfu__command_8c_source.html#l00033">dfu_command.c:33</a></div></div>
+<div class="ttc" id="usb__ser__hw_8c_html_a5908a732fe8698361cd95e37322aba63"><div class="ttname"><a href="usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a></div><div class="ttdeci">int VCOM_peekchar(int ofs)</div><div class="ttdoc">Reads one character from VCOM port without removing it from the queue. </div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00438">usb_ser_hw.c:438</a></div></div>
 <div class="ttc" id="dfu__command_8c_html_a78381f36390b81a4121b85e1da68e4a3"><div class="ttname"><a href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command_state</a></div><div class="ttdeci">static int dfu_command_state</div><div class="ttdef"><b>Definition:</b> <a href="dfu__command_8c_source.html#l00034">dfu_command.c:34</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_a5908a732fe8698361cd95e37322aba63"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a></div><div class="ttdeci">int VCOM_peekchar(int ofs)</div><div class="ttdoc">Reads one character from VCOM port without removing it from the queue. </div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00438">usb_ser_hw.c:438</a></div></div>
-<div class="ttc" id="lpc21_2usb__ser__hw_8c_html_a4cfafe558a6e594ce0638634e7cec7db"><div class="ttname"><a href="lpc21_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a></div><div class="ttdeci">int VCOM_check_available(void)</div><div class="ttdoc">Checks if data available in VCOM buffer. </div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2usb__ser__hw_8c_source.html#l00420">usb_ser_hw.c:420</a></div></div>
 <div class="ttc" id="dfu__command_8h_html"><div class="ttname"><a href="dfu__command_8h.html">dfu_command.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dfu__command_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b6eb9d90dc26da06d07b78a4892a4535.html">dfu_command</a></li><li class="navelem"><a class="el" href="dfu__command_8c.html">dfu_command.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

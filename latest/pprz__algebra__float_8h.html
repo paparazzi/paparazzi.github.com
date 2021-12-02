@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('pprz__algebra__float_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__algebra__float_8h__incl.png" border="0" usemap="#sw_2airborne_2math_2pprz__algebra__float_8h" alt=""/></div>
 <map name="sw_2airborne_2math_2pprz__algebra__float_8h" id="sw_2airborne_2math_2pprz__algebra__float_8h">
-<area shape="rect" id="node2" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="126,95,243,121"/></map>
+</map>
 </div>
 </div>
 <p><a href="pprz__algebra__float_8h_source.html">Go to the source code of this file.</a></p>
@@ -414,6 +414,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga29a7db3c967cea290d25b28b4d17f01f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">float_quat_of_rmat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q, struct <a class="el" href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a> *rm)</td></tr>
 <tr class="memdesc:ga29a7db3c967cea290d25b28b4d17f01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quaternion from rotation matrix.  <a href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">More...</a><br /></td></tr>
 <tr class="separator:ga29a7db3c967cea290d25b28b4d17f01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac82a112d67cbf3ca72e363790b6518f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7">float_quat_tilt_twist</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *tilt, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *twist, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *quat)</td></tr>
+<tr class="memdesc:gac82a112d67cbf3ca72e363790b6518f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tilt twist decomposition of quaternion.  <a href="group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7">More...</a><br /></td></tr>
+<tr class="separator:gac82a112d67cbf3ca72e363790b6518f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7bb7a538c4631bd7c17a57391f1c20ed"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga7bb7a538c4631bd7c17a57391f1c20ed">float_eulers_norm</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e)</td></tr>
 <tr class="separator:ga7bb7a538c4631bd7c17a57391f1c20ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac568e7074d2732d1237f80898c1dfb76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76">float_eulers_of_rmat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e, struct <a class="el" href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a> *rm)</td></tr>
@@ -491,6 +494,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa2086b4cd9a5203452c165ee3c55eaee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gaa2086b4cd9a5203452c165ee3c55eaee">float_mat_mul</a> (float **o, float **a, float **<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, int m, int n, int l)</td></tr>
 <tr class="memdesc:gaa2086b4cd9a5203452c165ee3c55eaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">o = a * b  <a href="group__math__algebra__float.html#gaa2086b4cd9a5203452c165ee3c55eaee">More...</a><br /></td></tr>
 <tr class="separator:gaa2086b4cd9a5203452c165ee3c55eaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a7d59fb7d31456ca480a31fec6deb19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga0a7d59fb7d31456ca480a31fec6deb19">float_mat_mul_transpose</a> (float **o, float **a, float **<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, int m, int n, int l)</td></tr>
+<tr class="memdesc:ga0a7d59fb7d31456ca480a31fec6deb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">o = a * b'  <a href="group__math__algebra__float.html#ga0a7d59fb7d31456ca480a31fec6deb19">More...</a><br /></td></tr>
+<tr class="separator:ga0a7d59fb7d31456ca480a31fec6deb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70969c0bcad48de1efd30559b0ce6de5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga70969c0bcad48de1efd30559b0ce6de5">float_mat_mul_copy</a> (float **o, float **a, float **<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, int m, int n, int l)</td></tr>
 <tr class="memdesc:ga70969c0bcad48de1efd30559b0ce6de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">o = a * b  <a href="group__math__algebra__float.html#ga70969c0bcad48de1efd30559b0ce6de5">More...</a><br /></td></tr>
 <tr class="separator:ga70969c0bcad48de1efd30559b0ce6de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,7 +545,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

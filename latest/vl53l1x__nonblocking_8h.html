@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('vl53l1x__nonblocking_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2vl53l1x__nonblocking_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2vl53l1x__nonblocking_8h" id="sw_2airborne_2peripherals_2vl53l1x__nonblocking_8h">
-<area shape="rect" id="node2" href="vl53l1x__api_8h.html" title="Functions definition. " alt="" coords="359,95,463,121"/><area shape="rect" id="node3" href="vl53l1__platform_8h.html" title="Those platform functions are platform dependent and have to be implemented by the user..." alt="" coords="345,169,477,196"/><area shape="rect" id="node4" href="vl53l1__types_8h.html" title="VL53L1 types definition. " alt="" coords="221,244,335,271"/><area shape="rect" id="node10" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="435,244,566,271"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -132,26 +132,26 @@ $(document).ready(function(){initNavTree('vl53l1x__nonblocking_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2vl53l1x__nonblocking_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2vl53l1x__nonblocking_8hdep" id="sw_2airborne_2peripherals_2vl53l1x__nonblocking_8hdep">
-<area shape="rect" id="node2" href="cf__deck__multi__ranger_8c.html" title="sw/airborne/modules\l/range_finder/cf_deck\l_multi_ranger.c" alt="" coords="5,95,164,151"/><area shape="rect" id="node3" href="sonar__vl53l1x_8c.html" title="sw/airborne/modules\l/sonar/sonar_vl53l1x.c" alt="" coords="188,102,352,143"/><area shape="rect" id="node4" href="vl53l1x__nonblocking_8c.html" title="Non&#45;blocking runtime functions for the VL53L1X. " alt="" coords="377,102,547,143"/></map>
+</map>
 </div>
 </div>
 <p><a href="vl53l1x__nonblocking_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8e8516a4ceb5cc17f33c323bf5f839b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a8e8516a4ceb5cc17f33c323bf5f839b7">VL53L1X_NonBlocking_CheckForDataReady</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *isDataReady)</td></tr>
+<tr class="memitem:a8e8516a4ceb5cc17f33c323bf5f839b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a8e8516a4ceb5cc17f33c323bf5f839b7">VL53L1X_NonBlocking_CheckForDataReady</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *isDataReady)</td></tr>
 <tr class="memdesc:a8e8516a4ceb5cc17f33c323bf5f839b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if the new ranging data is available by polling the dedicated register.  <a href="#a8e8516a4ceb5cc17f33c323bf5f839b7">More...</a><br /></td></tr>
 <tr class="separator:a8e8516a4ceb5cc17f33c323bf5f839b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd73e6df6116cd6707a25177786f82a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a6cd73e6df6116cd6707a25177786f82a">VL53L1X_NonBlocking_GetRangeStatus</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *rangeStatus)</td></tr>
+<tr class="memitem:a6cd73e6df6116cd6707a25177786f82a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a6cd73e6df6116cd6707a25177786f82a">VL53L1X_NonBlocking_GetRangeStatus</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *rangeStatus)</td></tr>
 <tr class="memdesc:a6cd73e6df6116cd6707a25177786f82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the range status to discard wrong measurments.  <a href="#a6cd73e6df6116cd6707a25177786f82a">More...</a><br /></td></tr>
 <tr class="separator:a6cd73e6df6116cd6707a25177786f82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a86352c48d28857538713dba0f210c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a5a86352c48d28857538713dba0f210c5">VL53L1X_NonBlocking_GetDistance</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance)</td></tr>
+<tr class="memitem:a5a86352c48d28857538713dba0f210c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a5a86352c48d28857538713dba0f210c5">VL53L1X_NonBlocking_GetDistance</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance)</td></tr>
 <tr class="memdesc:a5a86352c48d28857538713dba0f210c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the distance measured by the sensor in mm.  <a href="#a5a86352c48d28857538713dba0f210c5">More...</a><br /></td></tr>
 <tr class="separator:a5a86352c48d28857538713dba0f210c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99be979805273ff0a6ab8283a1df0b2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a99be979805273ff0a6ab8283a1df0b2a">VL53L1X_NonBlocking_ClearInterrupt</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:a99be979805273ff0a6ab8283a1df0b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears the interrupt, to be called after a ranging data reading to arm the interrupt for the next data ready event.  <a href="#a99be979805273ff0a6ab8283a1df0b2a">More...</a><br /></td></tr>
 <tr class="separator:a99be979805273ff0a6ab8283a1df0b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae15f0a1990480af4669e18523d1b16b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0">VL53L1X_NonBlocking_ReadDataEvent</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance_mm, bool *new_data)</td></tr>
+<tr class="memitem:ae15f0a1990480af4669e18523d1b16b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0">VL53L1X_NonBlocking_ReadDataEvent</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *distance_mm, bool *new_data)</td></tr>
 <tr class="memdesc:ae15f0a1990480af4669e18523d1b16b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement non-blocking read sequence The data reading actually starts when the read_state is set to VL53L1_READ_DATA_READY using <a class="el" href="vl53l1x__nonblocking_8h.html#a29a2cbcd6ab5183a27c2b76522376b62" title="Request a new reading. ">VL53L1X_NonBlocking_RequestData()</a>  <a href="#ae15f0a1990480af4669e18523d1b16b0">More...</a><br /></td></tr>
 <tr class="separator:ae15f0a1990480af4669e18523d1b16b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed90a9b3707d50af715e4db6ca4e68a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vl53l1x__nonblocking_8h.html#a2ed90a9b3707d50af715e4db6ca4e68a">VL53L1X_NonBlocking_IsIdle</a> (<a class="el" href="vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb">VL53L1_DEV</a> <a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>isDataReady</em>&#160;</td>
         </tr>
         <tr>
@@ -212,7 +212,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_cgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_cgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_cgraph" id="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_cgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title="VL53L1_NonBlocking\l_ReadMulti" alt="" coords="216,5,371,47"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="419,13,532,39"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="580,13,671,39"/></map>
+</map>
 </div>
 </p>
 
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_icgraph" id="vl53l1x__nonblocking_8h_a8e8516a4ceb5cc17f33c323bf5f839b7_icgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="216,23,379,65"/><area shape="rect" id="node3" href="cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373" title="Read data from a device. " alt="" coords="433,5,572,32"/><area shape="rect" id="node5" href="sonar__vl53l1x_8h.html#a9051b587a7753bf7e3043aa92b8b3436" title="sonar_vl53l1x_event" alt="" coords="427,56,579,83"/><area shape="rect" id="node4" href="cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7" title="multi_ranger_event" alt="" coords="627,5,773,32"/></map>
+</map>
 </div>
 </p>
 
@@ -259,7 +259,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_cgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_cgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_cgraph" id="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_cgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8c.html#acccd356803aea344aafa214bba106ac6" title="VL53L1_NonBlocking\l_WriteMulti" alt="" coords="216,5,371,47"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="419,13,520,39"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="568,13,659,39"/></map>
+</map>
 </div>
 </p>
 
@@ -270,7 +270,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_icgraph" id="vl53l1x__nonblocking_8h_a99be979805273ff0a6ab8283a1df0b2a_icgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="216,23,379,65"/><area shape="rect" id="node3" href="cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373" title="Read data from a device. " alt="" coords="433,5,572,32"/><area shape="rect" id="node5" href="sonar__vl53l1x_8h.html#a9051b587a7753bf7e3043aa92b8b3436" title="sonar_vl53l1x_event" alt="" coords="427,56,579,83"/><area shape="rect" id="node4" href="cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7" title="multi_ranger_event" alt="" coords="627,5,773,32"/></map>
+</map>
 </div>
 </p>
 
@@ -289,7 +289,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>distance</em>&#160;</td>
         </tr>
         <tr>
@@ -316,7 +316,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_cgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_cgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_cgraph" id="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_cgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title="VL53L1_NonBlocking\l_ReadMulti" alt="" coords="216,5,371,47"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="419,13,532,39"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="580,13,671,39"/></map>
+</map>
 </div>
 </p>
 
@@ -327,7 +327,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_icgraph" id="vl53l1x__nonblocking_8h_a5a86352c48d28857538713dba0f210c5_icgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="216,23,379,65"/><area shape="rect" id="node3" href="cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373" title="Read data from a device. " alt="" coords="433,5,572,32"/><area shape="rect" id="node5" href="sonar__vl53l1x_8h.html#a9051b587a7753bf7e3043aa92b8b3436" title="sonar_vl53l1x_event" alt="" coords="427,56,579,83"/><area shape="rect" id="node4" href="cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7" title="multi_ranger_event" alt="" coords="627,5,773,32"/></map>
+</map>
 </div>
 </p>
 
@@ -346,7 +346,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>rangeStatus</em>&#160;</td>
         </tr>
         <tr>
@@ -379,7 +379,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_cgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_cgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_cgraph" id="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_cgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title="VL53L1_NonBlocking\l_ReadMulti" alt="" coords="216,5,371,47"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="419,13,532,39"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="580,13,671,39"/></map>
+</map>
 </div>
 </p>
 
@@ -390,7 +390,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_icgraph" id="vl53l1x__nonblocking_8h_a6cd73e6df6116cd6707a25177786f82a_icgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8h.html#ae15f0a1990480af4669e18523d1b16b0" title="Implement non&#45;blocking read sequence The data reading actually starts when the read_state is set to V..." alt="" coords="216,23,379,65"/><area shape="rect" id="node3" href="cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373" title="Read data from a device. " alt="" coords="433,5,572,32"/><area shape="rect" id="node5" href="sonar__vl53l1x_8h.html#a9051b587a7753bf7e3043aa92b8b3436" title="sonar_vl53l1x_event" alt="" coords="427,56,579,83"/><area shape="rect" id="node4" href="cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7" title="multi_ranger_event" alt="" coords="627,5,773,32"/></map>
+</map>
 </div>
 </p>
 
@@ -426,7 +426,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a2ed90a9b3707d50af715e4db6ca4e68a_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a2ed90a9b3707d50af715e4db6ca4e68a_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a2ed90a9b3707d50af715e4db6ca4e68a_icgraph" id="vl53l1x__nonblocking_8h_a2ed90a9b3707d50af715e4db6ca4e68a_icgraph">
-<area shape="rect" id="node2" href="cf__deck__multi__ranger_8h.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function. " alt="" coords="216,5,376,32"/><area shape="rect" id="node3" href="sonar__vl53l1x_8h.html#a94c9fac7dceaa50bccdbc612db4344e9" title="sonar_vl53l1x_read" alt="" coords="223,56,369,83"/></map>
+</map>
 </div>
 </p>
 
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>distance_mm</em>, </td>
         </tr>
         <tr>
@@ -485,7 +485,7 @@ Functions</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_cgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_cgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_cgraph" id="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_cgraph">
-<area shape="rect" id="node2" href="vl53l1x__nonblocking_8c.html#a8e8516a4ceb5cc17f33c323bf5f839b7" title="This function checks if the new ranging data is available by polling the dedicated register..." alt="" coords="216,5,379,47"/><area shape="rect" id="node6" href="vl53l1x__nonblocking_8c.html#a99be979805273ff0a6ab8283a1df0b2a" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="216,201,379,243"/><area shape="rect" id="node9" href="vl53l1x__nonblocking_8c.html#a5a86352c48d28857538713dba0f210c5" title="This function returns the distance measured by the sensor in mm. " alt="" coords="216,71,379,112"/><area shape="rect" id="node10" href="vl53l1x__nonblocking_8c.html#a6cd73e6df6116cd6707a25177786f82a" title="This function returns the range status to discard wrong measurments. " alt="" coords="216,136,379,177"/><area shape="rect" id="node3" href="vl53l1x__nonblocking_8c.html#a40075e3c54c6a8d9ce3b1f2fb2cef1c3" title="VL53L1_NonBlocking\l_ReadMulti" alt="" coords="427,88,581,129"/><area shape="rect" id="node4" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="629,103,743,130"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="791,133,881,159"/><area shape="rect" id="node7" href="vl53l1x__nonblocking_8c.html#acccd356803aea344aafa214bba106ac6" title="VL53L1_NonBlocking\l_WriteMulti" alt="" coords="427,169,581,211"/><area shape="rect" id="node8" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="635,162,737,189"/></map>
+</map>
 </div>
 </p>
 
@@ -496,7 +496,7 @@ Functions</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_icgraph" id="vl53l1x__nonblocking_8h_ae15f0a1990480af4669e18523d1b16b0_icgraph">
-<area shape="rect" id="node2" href="cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373" title="Read data from a device. " alt="" coords="223,5,361,32"/><area shape="rect" id="node4" href="sonar__vl53l1x_8h.html#a9051b587a7753bf7e3043aa92b8b3436" title="sonar_vl53l1x_event" alt="" coords="216,56,368,83"/><area shape="rect" id="node3" href="cf__deck__multi__ranger_8h.html#a9e2d42d9e59cd4622247712fc2f259b7" title="multi_ranger_event" alt="" coords="416,5,563,32"/></map>
+</map>
 </div>
 </p>
 
@@ -532,7 +532,7 @@ Functions</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vl53l1x__nonblocking_8h_a29a2cbcd6ab5183a27c2b76522376b62_icgraph.png" border="0" usemap="#vl53l1x__nonblocking_8h_a29a2cbcd6ab5183a27c2b76522376b62_icgraph" alt=""/></div>
 <map name="vl53l1x__nonblocking_8h_a29a2cbcd6ab5183a27c2b76522376b62_icgraph" id="vl53l1x__nonblocking_8h_a29a2cbcd6ab5183a27c2b76522376b62_icgraph">
-<area shape="rect" id="node2" href="cf__deck__multi__ranger_8h.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function. " alt="" coords="216,5,376,32"/><area shape="rect" id="node3" href="sonar__vl53l1x_8h.html#a94c9fac7dceaa50bccdbc612db4344e9" title="sonar_vl53l1x_read" alt="" coords="223,56,369,83"/></map>
+</map>
 </div>
 </p>
 
@@ -544,7 +544,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="vl53l1x__nonblocking_8h.html">vl53l1x_nonblocking.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

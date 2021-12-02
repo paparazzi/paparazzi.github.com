@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('mavlink_8h_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mavlink_8h.html#ac7325f73108d5d100d6f6b633f90cd40">mavlink_periodic_telemetry</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7">mavlink_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">   83</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">comm_send_ch</a>(mavlink_channel_t chan __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ch)</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">   83</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">comm_send_ch</a>(mavlink_channel_t chan __attribute__((unused)), <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ch)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// Send bytes</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="mavlink_8h.html#a80684ab06ed7644b36e89de8449d55fd">MAVLinkTransmit</a>(ch);</div>
@@ -190,19 +190,19 @@ $(document).ready(function(){initNavTree('mavlink_8h_source.html','');});
 <div class="ttc" id="mavlink_8h_html_aca06c0aea877a0d9c57a5e16cee711d7"><div class="ttname"><a href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7">mavlink_event</a></div><div class="ttdeci">void mavlink_event(void)</div><div class="ttdoc">Event MAVLink calls. </div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8c_source.html#l00205">mavlink.c:205</a></div></div>
 <div class="ttc" id="mavlink_8h_html_ac7325f73108d5d100d6f6b633f90cd40"><div class="ttname"><a href="mavlink_8h.html#ac7325f73108d5d100d6f6b633f90cd40">mavlink_periodic_telemetry</a></div><div class="ttdeci">void mavlink_periodic_telemetry(void)</div><div class="ttdoc">Send periodic mavlink messages as defined in Mavlink process of telemetry xml file. </div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8c_source.html#l00138">mavlink.c:138</a></div></div>
 <div class="ttc" id="mavlink_8h_html_a80684ab06ed7644b36e89de8449d55fd"><div class="ttname"><a href="mavlink_8h.html#a80684ab06ed7644b36e89de8449d55fd">MAVLinkTransmit</a></div><div class="ttdeci">#define MAVLinkTransmit(c)</div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8h_source.html#l00064">mavlink.h:64</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="mavlink_8h_html_a5123629902b8b0dcf1d5cb7336558801"><div class="ttname"><a href="mavlink_8h.html#a5123629902b8b0dcf1d5cb7336558801">mavlink_system</a></div><div class="ttdeci">mavlink_system_t mavlink_system</div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8c_source.html#l00064">mavlink.c:64</a></div></div>
 <div class="ttc" id="mavlink_8h_html_ab753873a1ee10adedd0ce246311468f8"><div class="ttname"><a href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">comm_send_ch</a></div><div class="ttdeci">static void comm_send_ch(mavlink_channel_t chan, uint8_t ch)</div><div class="ttdoc">Send one char (uint8_t) over a comm channel. </div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8h_source.html#l00083">mavlink.h:83</a></div></div>
 <div class="ttc" id="mavlink_8h_html_a45dcaed78c022158e7dcfb92813f191c"><div class="ttname"><a href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c">mavlink_periodic</a></div><div class="ttdeci">void mavlink_periodic(void)</div><div class="ttdoc">Periodic MAVLink calls. </div><div class="ttdef"><b>Definition:</b> <a href="mavlink_8c_source.html#l00151">mavlink.c:151</a></div></div>
 <div class="ttc" id="udp_8h_html"><div class="ttname"><a href="udp_8h.html">udp.h</a></div><div class="ttdoc">arch independent UDP API </div></div>
 <div class="ttc" id="usb__serial_8h_html"><div class="ttname"><a href="usb__serial_8h.html">usb_serial.h</a></div><div class="ttdoc">arch independent USB API </div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="mavlink_8h.html">mavlink.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

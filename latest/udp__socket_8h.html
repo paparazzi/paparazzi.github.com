@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('udp__socket_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2udp__socket_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2linux_2udp__socket_8hdep" id="sw_2airborne_2arch_2linux_2udp__socket_8hdep">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html" title="linux UDP handling " alt="" coords="5,303,180,344"/><area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8h.html" title="linux UDP handling " alt="" coords="403,303,579,344"/><area shape="rect" id="node4" href="udp__socket_8c.html" title="Easily create and use UDP sockets. " alt="" coords="579,102,739,143"/><area shape="rect" id="node5" href="sim_2mcu__periph_2udp__arch_8c.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.c" alt="" coords="604,303,779,344"/><area shape="rect" id="node6" href="sim_2mcu__periph_2udp__arch_8h.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.h" alt="" coords="278,102,454,143"/><area shape="rect" id="node9" href="rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG) " alt="" coords="779,95,934,151"/><area shape="rect" id="node12" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="975,206,1181,247"/><area shape="rect" id="node7" href="udp_8h.html" title="arch independent UDP API " alt="" coords="279,206,453,247"/><area shape="rect" id="node8" href="udp_8c.html" title="arch independent UDP API " alt="" coords="204,303,379,344"/><area shape="rect" id="node10" href="rtp_8c.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="795,199,950,255"/><area shape="rect" id="node11" href="opticflow__module_8c.html" title="Optical&#45;flow estimation module. " alt="" coords="580,199,771,255"/></map>
+</map>
 </div>
 </div>
 <p><a href="udp__socket_8h_source.html">Go to the source code of this file.</a></p>
@@ -148,16 +148,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a8904d535adc73468cfa9e57a71f6de72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a8904d535adc73468cfa9e57a71f6de72">udp_socket_create</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, char *host, int port_out, int port_in, bool broadcast)</td></tr>
 <tr class="memdesc:a8904d535adc73468cfa9e57a71f6de72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create UDP network (in/out sockets).  <a href="#a8904d535adc73468cfa9e57a71f6de72">More...</a><br /></td></tr>
 <tr class="separator:a8904d535adc73468cfa9e57a71f6de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecfcc8613d12918640f626ebe55e169d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#aecfcc8613d12918640f626ebe55e169d">udp_socket_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> len)</td></tr>
+<tr class="memitem:aecfcc8613d12918640f626ebe55e169d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#aecfcc8613d12918640f626ebe55e169d">udp_socket_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
 <tr class="memdesc:aecfcc8613d12918640f626ebe55e169d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a packet from buffer, blocking.  <a href="#aecfcc8613d12918640f626ebe55e169d">More...</a><br /></td></tr>
 <tr class="separator:aecfcc8613d12918640f626ebe55e169d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3da4bd5d683ae6c844649fac79f13d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a2c3da4bd5d683ae6c844649fac79f13d">udp_socket_send_dontwait</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> len)</td></tr>
+<tr class="memitem:a2c3da4bd5d683ae6c844649fac79f13d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a2c3da4bd5d683ae6c844649fac79f13d">udp_socket_send_dontwait</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
 <tr class="memdesc:a2c3da4bd5d683ae6c844649fac79f13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a packet from buffer, non-blocking.  <a href="#a2c3da4bd5d683ae6c844649fac79f13d">More...</a><br /></td></tr>
 <tr class="separator:a2c3da4bd5d683ae6c844649fac79f13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff2184a096095f4e82c587a922678e42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#aff2184a096095f4e82c587a922678e42">udp_socket_recv_dontwait</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> len)</td></tr>
+<tr class="memitem:aff2184a096095f4e82c587a922678e42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#aff2184a096095f4e82c587a922678e42">udp_socket_recv_dontwait</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
 <tr class="memdesc:aff2184a096095f4e82c587a922678e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a UDP packet, dont wait.  <a href="#aff2184a096095f4e82c587a922678e42">More...</a><br /></td></tr>
 <tr class="separator:aff2184a096095f4e82c587a922678e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08738388d09e47f893962d28ccf8dac5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a08738388d09e47f893962d28ccf8dac5">udp_socket_recv</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> len)</td></tr>
+<tr class="memitem:a08738388d09e47f893962d28ccf8dac5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a08738388d09e47f893962d28ccf8dac5">udp_socket_recv</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> len)</td></tr>
 <tr class="memdesc:a08738388d09e47f893962d28ccf8dac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one UDP packet.  <a href="#a08738388d09e47f893962d28ccf8dac5">More...</a><br /></td></tr>
 <tr class="separator:a08738388d09e47f893962d28ccf8dac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1560495c418050e312f4564343a514c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a1560495c418050e312f4564343a514c0">udp_socket_subscribe_multicast</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, const char *multicast_addr)</td></tr>
@@ -298,7 +298,7 @@ sockfd</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph.png" border="0" usemap="#udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph" alt=""/></div>
 <map name="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph" id="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph">
-<area shape="rect" id="node2" href="udp_8h.html#a26342423a340c1420dbb8081d9fdd407" title="Initialize the UDP peripheral. " alt="" coords="196,5,351,32"/><area shape="rect" id="node4" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="219,56,328,83"/><area shape="rect" id="node3" href="udp_8h.html#a1f1d82b302692d0e1c6b01db1b03f6ea" title="Initialize the UDP peripheral. " alt="" coords="399,5,517,32"/></map>
+</map>
 </div>
 </p>
 
@@ -317,13 +317,13 @@ sockfd</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -374,13 +374,13 @@ sockfd</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -430,13 +430,13 @@ sockfd</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -477,13 +477,13 @@ sockfd</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -518,7 +518,7 @@ sockfd</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph.png" border="0" usemap="#udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" alt=""/></div>
 <map name="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" id="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph">
-<area shape="rect" id="node2" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03" title="rtp_packet_send" alt="" coords="248,31,376,57"/><area shape="rect" id="node3" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="427,5,544,32"/><area shape="rect" id="node4" href="rtp_8h.html#a31d0efc8803ccbb83cb0b713e69ff16f" title="Send an RTP frame. " alt="" coords="424,56,547,83"/><area shape="rect" id="node5" href="viewvideo_8c.html#a4796c0ca6ba23a9dd0172784d2e94d59" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="595,56,736,83"/></map>
+</map>
 </div>
 </p>
 
@@ -620,7 +620,7 @@ sockfd</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="udp__socket_8h.html">udp_socket.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:26 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

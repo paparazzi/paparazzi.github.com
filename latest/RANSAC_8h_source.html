@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('RANSAC_8h_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="RANSAC_8h.html#ac3c27768c4b278317c7ce1f29d5b0b2d">RANSAC_linear_model</a>(<span class="keywordtype">int</span> <a class="code" href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a>, <span class="keywordtype">int</span> n_iterations, <span class="keywordtype">float</span> error_threshold, <span class="keywordtype">float</span> *targets, <span class="keywordtype">int</span> <a class="code" href="trilateration_8c.html#aa6702f5ca985a5b97e1534be9d374bba">D</a>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                         <span class="keywordtype">float</span> (*samples)[D], <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> count, <span class="keywordtype">float</span> *params, <span class="keywordtype">float</span> *fit_error);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                         <span class="keywordtype">float</span> (*samples)[D], <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> count, <span class="keywordtype">float</span> *params, <span class="keywordtype">float</span> *fit_error);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="RANSAC_8h.html#ad28fb4ffe594b7b478324d2fa524b685">get_indices_without_replacement</a>(<span class="keywordtype">int</span> *indices_subset, <span class="keywordtype">int</span> n_samples, <span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -150,12 +150,12 @@ $(document).ready(function(){initNavTree('RANSAC_8h_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RANSAC_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="detect__gate_8c_html_a0aa1d80a7fddb8ff76eb4347b72d2b28"><div class="ttname"><a href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a></div><div class="ttdeci">int n_samples</div><div class="ttdef"><b>Definition:</b> <a href="detect__gate_8c_source.html#l00085">detect_gate.c:85</a></div></div>
 <div class="ttc" id="trilateration_8c_html_aa6702f5ca985a5b97e1534be9d374bba"><div class="ttname"><a href="trilateration_8c.html#aa6702f5ca985a5b97e1534be9d374bba">D</a></div><div class="ttdeci">static float D</div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8c_source.html#l00035">trilateration.c:35</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="RANSAC_8h_html_ad28fb4ffe594b7b478324d2fa524b685"><div class="ttname"><a href="RANSAC_8h.html#ad28fb4ffe594b7b478324d2fa524b685">get_indices_without_replacement</a></div><div class="ttdeci">void get_indices_without_replacement(int *indices_subset, int n_samples, int count)</div><div class="ttdoc">Get indices without replacement. </div><div class="ttdef"><b>Definition:</b> <a href="RANSAC_8c_source.html#l00160">RANSAC.c:160</a></div></div>
 <div class="ttc" id="RANSAC_8h_html_ac3c27768c4b278317c7ce1f29d5b0b2d"><div class="ttname"><a href="RANSAC_8h.html#ac3c27768c4b278317c7ce1f29d5b0b2d">RANSAC_linear_model</a></div><div class="ttdeci">void RANSAC_linear_model(int n_samples, int n_iterations, float error_threshold, float *targets, int D, float(*samples)[D], uint16_t count, float *params, float *fit_error)</div><div class="ttdoc">Perform RANSAC to fit a linear model. </div><div class="ttdef"><b>Definition:</b> <a href="RANSAC_8c_source.html#l00057">RANSAC.c:57</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="RANSAC_8h_html_a1c014ecbd1d94149c27837aa15919887"><div class="ttname"><a href="RANSAC_8h.html#a1c014ecbd1d94149c27837aa15919887">predict_value</a></div><div class="ttdeci">float predict_value(float *sample, float *weights, int D, bool use_bias)</div><div class="ttdoc">Predict the value of a sample with linear weights. </div><div class="ttdef"><b>Definition:</b> <a href="RANSAC_8c_source.html#l00136">RANSAC.c:136</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('RANSAC_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="RANSAC_8h.html">RANSAC.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

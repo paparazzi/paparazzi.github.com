@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,12 +120,12 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__v_8c.h
 <code>#include &quot;<a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html">firmwares/rotorcraft/guidance/guidance_v.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="guidance__module_8h_source.html">firmwares/rotorcraft/guidance/guidance_module.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="guidance__hybrid_8h_source.html">firmwares/rotorcraft/guidance/guidance_hybrid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for guidance_v.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__v_8c.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c" id="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c">
-<area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="2393,199,2563,240"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1190,481,1369,508"/><area shape="rect" id="node15" href="guidance__module_8h.html" title="Guidance in a module file. " alt="" coords="2533,109,2746,151"/><area shape="rect" id="node17" href="guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations. " alt="" coords="2253,109,2457,151"/><area shape="rect" id="node18" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="744,206,943,233"/><area shape="rect" id="node23" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="2140,288,2288,329"/><area shape="rect" id="node24" href="rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1033,109,1181,151"/><area shape="rect" id="node33" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="474,295,541,322"/><area shape="rect" id="node38" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2805,199,2959,240"/><area shape="rect" id="node5" href="guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="1870,288,2065,329"/><area shape="rect" id="node14" href="guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="2235,467,2395,523"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1925,385,2010,411"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="207,571,362,597"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1325,571,1476,597"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="205,295,258,322"/><area shape="rect" id="node21" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1219,295,1315,322"/><area shape="rect" id="node25" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="904,377,1055,419"/><area shape="rect" id="node27" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="565,288,735,329"/><area shape="rect" id="node31" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1017,199,1187,240"/><area shape="rect" id="node32" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1285,206,1375,233"/><area shape="rect" id="node26" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="771,481,895,508"/><area shape="rect" id="node28" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="627,377,777,419"/><area shape="rect" id="node29" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="389,481,541,508"/><area shape="rect" id="node34" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="387,377,551,419"/><area shape="rect" id="node39" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3314,481,3453,508"/><area shape="rect" id="node43" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2633,288,2787,329"/><area shape="rect" id="node45" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2928,377,3081,419"/><area shape="rect" id="node47" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="3105,385,3299,411"/></map>
+</map>
 </div>
 </div>
 <p><a href="rotorcraft_2guidance_2guidance__v_8c_source.html">Go to the source code of this file.</a></p>
@@ -173,7 +173,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a88e5859a174ec5bf7fb911a351a15065"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065">get_vertical_thrust_coeff</a> (void)</td></tr>
+<tr class="memitem:a88e5859a174ec5bf7fb911a351a15065"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065">get_vertical_thrust_coeff</a> (void)</td></tr>
 <tr class="memdesc:a88e5859a174ec5bf7fb911a351a15065"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the cosine of the angle between thrust vector and gravity vector  <a href="#a88e5859a174ec5bf7fb911a351a15065">More...</a><br /></td></tr>
 <tr class="separator:a88e5859a174ec5bf7fb911a351a15065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8c6f0d135e50d0eb256cad00bb9dcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a7e8c6f0d135e50d0eb256cad00bb9dcf">send_vert_loop</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
@@ -184,7 +184,7 @@ Functions</h2></td></tr>
 <tr class="separator:ae1e43515cf186f69dfaac9a4543b3cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067f5a51ae66cddf397b8b312ae4c383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383">guidance_v_read_rc</a> (void)</td></tr>
 <tr class="separator:a067f5a51ae66cddf397b8b312ae4c383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24445848e497e9b0da2913cecb0db73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73">guidance_v_mode_changed</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_mode)</td></tr>
+<tr class="memitem:ac24445848e497e9b0da2913cecb0db73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73">guidance_v_mode_changed</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_mode)</td></tr>
 <tr class="separator:ac24445848e497e9b0da2913cecb0db73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331e736eaca82c6f4a2b5a0f6d92e8e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a331e736eaca82c6f4a2b5a0f6d92e8e2">guidance_v_notify_in_flight</a> (bool in_flight)</td></tr>
 <tr class="separator:a331e736eaca82c6f4a2b5a0f6d92e8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="separator:a5c03e8fc9dd9e84925081df8639d4001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2558bccfb6fd14b6be513c5910737f0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a2558bccfb6fd14b6be513c5910737f0d">guidance_v_z_enter</a> (void)</td></tr>
 <tr class="separator:a2558bccfb6fd14b6be513c5910737f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cf07bda38d537147bd9b5f8c90455a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a9cf07bda38d537147bd9b5f8c90455a2">guidance_v_set_ref</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> pos, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> speed, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> accel)</td></tr>
+<tr class="memitem:a9cf07bda38d537147bd9b5f8c90455a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a9cf07bda38d537147bd9b5f8c90455a2">guidance_v_set_ref</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> pos, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> speed, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> accel)</td></tr>
 <tr class="memdesc:a9cf07bda38d537147bd9b5f8c90455a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set guidance ref parameters.  <a href="#a9cf07bda38d537147bd9b5f8c90455a2">More...</a><br /></td></tr>
 <tr class="separator:a9cf07bda38d537147bd9b5f8c90455a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8143296d90990e7c8da2e1c67c6e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62">run_hover_loop</a> (bool in_flight)</td></tr>
@@ -219,15 +219,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a09896d1671aacfd563071566b7562fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a09896d1671aacfd563071566b7562fc1">guidance_v_mode</a></td></tr>
+<tr class="memitem:a09896d1671aacfd563071566b7562fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a09896d1671aacfd563071566b7562fc1">guidance_v_mode</a></td></tr>
 <tr class="separator:a09896d1671aacfd563071566b7562fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cf79417599f38b931139ecdbb6f0584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a4cf79417599f38b931139ecdbb6f0584">guidance_v_ff_cmd</a></td></tr>
+<tr class="memitem:a4cf79417599f38b931139ecdbb6f0584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a4cf79417599f38b931139ecdbb6f0584">guidance_v_ff_cmd</a></td></tr>
 <tr class="memdesc:a4cf79417599f38b931139ecdbb6f0584"><td class="mdescLeft">&#160;</td><td class="mdescRight">feed-forward command  <a href="#a4cf79417599f38b931139ecdbb6f0584">More...</a><br /></td></tr>
 <tr class="separator:a4cf79417599f38b931139ecdbb6f0584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6021149d3e33844f613edb34a5dc9473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a6021149d3e33844f613edb34a5dc9473">guidance_v_fb_cmd</a></td></tr>
+<tr class="memitem:a6021149d3e33844f613edb34a5dc9473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a6021149d3e33844f613edb34a5dc9473">guidance_v_fb_cmd</a></td></tr>
 <tr class="memdesc:a6021149d3e33844f613edb34a5dc9473"><td class="mdescLeft">&#160;</td><td class="mdescRight">feed-back command  <a href="#a6021149d3e33844f613edb34a5dc9473">More...</a><br /></td></tr>
 <tr class="separator:a6021149d3e33844f613edb34a5dc9473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd5822f3f3fa6292763acd5790e011f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#adcd5822f3f3fa6292763acd5790e011f">guidance_v_delta_t</a></td></tr>
+<tr class="memitem:adcd5822f3f3fa6292763acd5790e011f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#adcd5822f3f3fa6292763acd5790e011f">guidance_v_delta_t</a></td></tr>
 <tr class="memdesc:adcd5822f3f3fa6292763acd5790e011f"><td class="mdescLeft">&#160;</td><td class="mdescRight">thrust command.  <a href="#adcd5822f3f3fa6292763acd5790e011f">More...</a><br /></td></tr>
 <tr class="separator:adcd5822f3f3fa6292763acd5790e011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730aebac96eaf548439f844e69456190"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a730aebac96eaf548439f844e69456190">guidance_v_nominal_throttle</a></td></tr>
@@ -240,42 +240,42 @@ Variables</h2></td></tr>
 <tr class="separator:a4b619b01ba28218a4260a89b728a8682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cdf21e181fa5074de1ad75bf3bd967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#af5cdf21e181fa5074de1ad75bf3bd967">guidance_v_guided_mode</a></td></tr>
 <tr class="separator:af5cdf21e181fa5074de1ad75bf3bd967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53779fb4d8ef92130859d3680c988156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a53779fb4d8ef92130859d3680c988156">guidance_v_rc_delta_t</a></td></tr>
+<tr class="memitem:a53779fb4d8ef92130859d3680c988156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a53779fb4d8ef92130859d3680c988156">guidance_v_rc_delta_t</a></td></tr>
 <tr class="memdesc:a53779fb4d8ef92130859d3680c988156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct throttle from radio control.  <a href="#a53779fb4d8ef92130859d3680c988156">More...</a><br /></td></tr>
 <tr class="separator:a53779fb4d8ef92130859d3680c988156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6277e157223b959624eb89a3ab5c0630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a6277e157223b959624eb89a3ab5c0630">guidance_v_rc_zd_sp</a></td></tr>
+<tr class="memitem:a6277e157223b959624eb89a3ab5c0630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a6277e157223b959624eb89a3ab5c0630">guidance_v_rc_zd_sp</a></td></tr>
 <tr class="memdesc:a6277e157223b959624eb89a3ab5c0630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical speed setpoint from radio control.  <a href="#a6277e157223b959624eb89a3ab5c0630">More...</a><br /></td></tr>
 <tr class="separator:a6277e157223b959624eb89a3ab5c0630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bc59ad2410e5768283d22eaeb1dc06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a29bc59ad2410e5768283d22eaeb1dc06">guidance_v_z_sp</a></td></tr>
+<tr class="memitem:a29bc59ad2410e5768283d22eaeb1dc06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a29bc59ad2410e5768283d22eaeb1dc06">guidance_v_z_sp</a></td></tr>
 <tr class="memdesc:a29bc59ad2410e5768283d22eaeb1dc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">altitude setpoint in meters (input).  <a href="#a29bc59ad2410e5768283d22eaeb1dc06">More...</a><br /></td></tr>
 <tr class="separator:a29bc59ad2410e5768283d22eaeb1dc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615ed31ff0e531f529ed3ac21e544269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v_zd_sp</a></td></tr>
+<tr class="memitem:a615ed31ff0e531f529ed3ac21e544269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v_zd_sp</a></td></tr>
 <tr class="memdesc:a615ed31ff0e531f529ed3ac21e544269"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical speed setpoint in meter/s (input).  <a href="#a615ed31ff0e531f529ed3ac21e544269">More...</a><br /></td></tr>
 <tr class="separator:a615ed31ff0e531f529ed3ac21e544269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30320cd406a526ab433102ea25c4fbd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a30320cd406a526ab433102ea25c4fbd7">guidance_v_th_sp</a></td></tr>
+<tr class="memitem:a30320cd406a526ab433102ea25c4fbd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a30320cd406a526ab433102ea25c4fbd7">guidance_v_th_sp</a></td></tr>
 <tr class="separator:a30320cd406a526ab433102ea25c4fbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05574a3cc3b7afff99639758b8389dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v_z_ref</a></td></tr>
+<tr class="memitem:a05574a3cc3b7afff99639758b8389dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v_z_ref</a></td></tr>
 <tr class="memdesc:a05574a3cc3b7afff99639758b8389dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">altitude reference in meters.  <a href="#a05574a3cc3b7afff99639758b8389dd9">More...</a><br /></td></tr>
 <tr class="separator:a05574a3cc3b7afff99639758b8389dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e457c45e984566dc82f03704a6c85d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v_zd_ref</a></td></tr>
+<tr class="memitem:a45e457c45e984566dc82f03704a6c85d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v_zd_ref</a></td></tr>
 <tr class="memdesc:a45e457c45e984566dc82f03704a6c85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical speed reference in meter/s.  <a href="#a45e457c45e984566dc82f03704a6c85d">More...</a><br /></td></tr>
 <tr class="separator:a45e457c45e984566dc82f03704a6c85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bbf57d3e781753c7a290ce6cdce7ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v_zdd_ref</a></td></tr>
+<tr class="memitem:a5bbf57d3e781753c7a290ce6cdce7ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v_zdd_ref</a></td></tr>
 <tr class="memdesc:a5bbf57d3e781753c7a290ce6cdce7ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical acceleration reference in meter/s^2.  <a href="#a5bbf57d3e781753c7a290ce6cdce7ca5">More...</a><br /></td></tr>
 <tr class="separator:a5bbf57d3e781753c7a290ce6cdce7ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3836652cb5a9952023e05ed5046aa1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v_kp</a></td></tr>
+<tr class="memitem:a3836652cb5a9952023e05ed5046aa1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v_kp</a></td></tr>
 <tr class="memdesc:a3836652cb5a9952023e05ed5046aa1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical control P-gain  <a href="#a3836652cb5a9952023e05ed5046aa1e2">More...</a><br /></td></tr>
 <tr class="separator:a3836652cb5a9952023e05ed5046aa1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f119a679ee83c0ac0dd631b6d3c5470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3f119a679ee83c0ac0dd631b6d3c5470">guidance_v_kd</a></td></tr>
+<tr class="memitem:a3f119a679ee83c0ac0dd631b6d3c5470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3f119a679ee83c0ac0dd631b6d3c5470">guidance_v_kd</a></td></tr>
 <tr class="memdesc:a3f119a679ee83c0ac0dd631b6d3c5470"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical control D-gain  <a href="#a3f119a679ee83c0ac0dd631b6d3c5470">More...</a><br /></td></tr>
 <tr class="separator:a3f119a679ee83c0ac0dd631b6d3c5470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbefa1daffcf539c6617f837ea6ec846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#abbefa1daffcf539c6617f837ea6ec846">guidance_v_ki</a></td></tr>
+<tr class="memitem:abbefa1daffcf539c6617f837ea6ec846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#abbefa1daffcf539c6617f837ea6ec846">guidance_v_ki</a></td></tr>
 <tr class="memdesc:abbefa1daffcf539c6617f837ea6ec846"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical control I-gain  <a href="#abbefa1daffcf539c6617f837ea6ec846">More...</a><br /></td></tr>
 <tr class="separator:abbefa1daffcf539c6617f837ea6ec846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab1094ba9e347ad83bdc6cb9197fcb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v_z_sum_err</a></td></tr>
+<tr class="memitem:a1ab1094ba9e347ad83bdc6cb9197fcb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v_z_sum_err</a></td></tr>
 <tr class="memdesc:a1ab1094ba9e347ad83bdc6cb9197fcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">accumulator for I-gain  <a href="#a1ab1094ba9e347ad83bdc6cb9197fcb1">More...</a><br /></td></tr>
 <tr class="separator:a1ab1094ba9e347ad83bdc6cb9197fcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7286efc4d084bd8c776d210310beceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ae7286efc4d084bd8c776d210310beceb">guidance_v_thrust_coeff</a></td></tr>
+<tr class="memitem:ae7286efc4d084bd8c776d210310beceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ae7286efc4d084bd8c776d210310beceb">guidance_v_thrust_coeff</a></td></tr>
 <tr class="separator:ae7286efc4d084bd8c776d210310beceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -532,7 +532,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> get_vertical_thrust_coeff </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> get_vertical_thrust_coeff </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -561,7 +561,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="195,13,385,39"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="433,13,589,39"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="637,13,797,39"/><area shape="rect" id="node5" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="845,13,992,39"/></map>
+</map>
 </div>
 </p>
 
@@ -572,7 +572,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a0f2c0608e9949e1d68952c3491a30a83" title="guidance_v_thrust_adapt" alt="" coords="195,13,377,39"/><area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="425,13,548,39"/><area shape="rect" id="node4" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="596,13,773,39"/></map>
+</map>
 </div>
 </p>
 
@@ -607,7 +607,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_cgraph">
-<area shape="rect" id="node2" href="guidance__hybrid_8c.html#a579d66799a2ebc105bed0060f17216f7" title="Description. " alt="" coords="219,18,397,45"/><area shape="rect" id="node3" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba" title="gv_update_ref_from_z_sp" alt="" coords="215,69,401,95"/><area shape="rect" id="node4" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="233,120,383,161"/><area shape="rect" id="node5" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62" title="run_hover_loop" alt="" coords="248,237,368,263"/><area shape="rect" id="node6" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="449,186,613,213"/><area shape="rect" id="node20" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="454,287,609,314"/><area shape="rect" id="node7" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="661,179,829,206"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1080,173,1219,199"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="877,122,1027,149"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1291,274,1391,301"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="889,223,1015,250"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="903,71,1001,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1272,173,1411,199"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1459,173,1607,199"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1075,122,1224,149"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1100,223,1199,250"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1289,223,1393,250"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1076,71,1223,98"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1081,5,1217,47"/><area shape="rect" id="node21" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="666,299,825,326"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="881,325,1023,351"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1078,325,1221,351"/></map>
+</map>
 </div>
 </p>
 
@@ -618,7 +618,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_adee3e8feda47516b9c7ccbb1b97daaf6_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="215,5,337,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="385,5,563,32"/></map>
+</map>
 </div>
 </p>
 
@@ -653,7 +653,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="239,230,403,257"/><area shape="rect" id="node16" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="243,293,398,319"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="451,198,619,225"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="869,173,1008,199"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="667,122,816,149"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1081,274,1181,301"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="678,223,805,250"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="692,71,791,98"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1061,173,1200,199"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1248,173,1396,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="864,122,1013,149"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="889,223,988,250"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1079,223,1183,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="865,71,1012,98"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="871,5,1007,47"/><area shape="rect" id="node17" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="455,318,614,345"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="670,325,813,351"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="867,325,1010,351"/></map>
+</map>
 </div>
 </p>
 
@@ -664,7 +664,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a726df520277832e62c3f28e00518394b_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="239,5,439,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="487,5,677,32"/></map>
+</map>
 </div>
 </p>
 
@@ -699,7 +699,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_cgraph">
-<area shape="rect" id="node2" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba" title="gv_update_ref_from_z_sp" alt="" coords="225,113,412,139"/><area shape="rect" id="node3" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="243,164,394,205"/><area shape="rect" id="node4" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62" title="run_hover_loop" alt="" coords="259,281,379,307"/><area shape="rect" id="node5" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="460,230,624,257"/><area shape="rect" id="node19" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="465,293,619,319"/><area shape="rect" id="node6" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="672,198,840,225"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1091,173,1229,199"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="888,122,1037,149"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1302,274,1402,301"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="899,223,1026,250"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="913,71,1012,98"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1283,173,1421,199"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1469,173,1617,199"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1085,122,1235,149"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1111,223,1209,250"/><area shape="rect" id="node15" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1300,223,1404,250"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1087,71,1233,98"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1092,5,1228,47"/><area shape="rect" id="node20" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="677,318,835,345"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="891,325,1034,351"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1089,325,1231,351"/></map>
+</map>
 </div>
 </p>
 
@@ -710,7 +710,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_ada32f262fec6c51998c5041daa0d089c_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="225,5,348,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="396,5,573,32"/></map>
+</map>
 </div>
 </p>
 
@@ -741,7 +741,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__innerloop__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e" title="guidance_v_module_init" alt="" coords="185,71,359,98"/><area shape="rect" id="node3" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="219,122,325,149"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="173,173,371,199"/><area shape="rect" id="node5" href="rotorcraft_2guidance_2guidance__v_8c.html#a08d5a5277e51cd1c12e573209f812c90" title="send_tune_vert" alt="" coords="211,223,333,250"/><area shape="rect" id="node20" href="rotorcraft_2guidance_2guidance__v_8c.html#a7e8c6f0d135e50d0eb256cad00bb9dcf" title="send_vert_loop" alt="" coords="213,274,331,301"/><area shape="rect" id="node6" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="419,223,583,250"/><area shape="rect" id="node7" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="631,198,799,225"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1049,173,1188,199"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="847,122,996,149"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1261,274,1361,301"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="858,223,985,250"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="872,71,971,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1241,173,1380,199"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1428,173,1576,199"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1044,122,1193,149"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1069,223,1168,250"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1259,223,1363,250"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1045,71,1192,98"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1051,5,1187,47"/><area shape="rect" id="node21" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="423,274,578,301"/><area shape="rect" id="node25" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="427,325,575,351"/><area shape="rect" id="node22" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="635,274,794,301"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="850,325,993,351"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1047,325,1190,351"/><area shape="rect" id="node26" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="639,325,791,351"/></map>
+</map>
 </div>
 </p>
 
@@ -754,7 +754,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void guidance_v_mode_changed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>new_mode</em></td><td>)</td>
           <td></td>
         </tr>
@@ -774,7 +774,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control. " alt="" coords="256,237,441,263"/><area shape="rect" id="node3" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="492,186,656,213"/><area shape="rect" id="node17" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="497,287,651,314"/><area shape="rect" id="node21" href="ctrl__module__innerloop__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="253,338,444,365"/><area shape="rect" id="node4" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="704,179,872,206"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1123,173,1261,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="920,122,1069,149"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1334,274,1434,301"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="931,223,1058,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="945,71,1044,98"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1315,173,1453,199"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1501,173,1649,199"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1117,122,1267,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1143,223,1241,250"/><area shape="rect" id="node13" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1332,223,1436,250"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1119,71,1265,98"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1124,5,1260,47"/><area shape="rect" id="node18" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="709,299,867,326"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="923,325,1066,351"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1121,325,1263,351"/></map>
+</map>
 </div>
 </p>
 
@@ -785,7 +785,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="253,5,444,32"/></map>
+</map>
 </div>
 </p>
 
@@ -816,7 +816,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph">
-<area shape="rect" id="node2" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="208,13,315,39"/></map>
+</map>
 </div>
 </p>
 
@@ -849,7 +849,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a067f5a51ae66cddf397b8b312ae4c383_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a067f5a51ae66cddf397b8b312ae4c383_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a067f5a51ae66cddf397b8b312ae4c383_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a067f5a51ae66cddf397b8b312ae4c383_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="203,5,345,47"/></map>
+</map>
 </div>
 </p>
 
@@ -882,7 +882,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8c.html#adee3e8feda47516b9c7ccbb1b97daaf6" title="Set guidance setpoint from NAV and run hover loop. " alt="" coords="187,157,348,184"/><area shape="rect" id="node5" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="425,259,575,301"/><area shape="rect" id="node6" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62" title="run_hover_loop" alt="" coords="440,107,560,133"/><area shape="rect" id="node7" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="655,325,819,352"/><area shape="rect" id="node25" href="rotorcraft_2guidance_2guidance__v_8c.html#ada32f262fec6c51998c5041daa0d089c" title="Run GUIDED mode control. " alt="" coords="181,241,353,268"/><area shape="rect" id="node26" href="ctrl__module__innerloop__demo_8c.html#a92d0c10f0d13b0b23000b1b161cfb5e4" title="guidance_v_module_run" alt="" coords="179,507,356,533"/><area shape="rect" id="node27" href="rotorcraft_2guidance_2guidance__v_8c.html#a0f2c0608e9949e1d68952c3491a30a83" title="guidance_v_thrust_adapt" alt="" coords="176,456,359,483"/><area shape="rect" id="node3" href="guidance__hybrid_8c.html#a579d66799a2ebc105bed0060f17216f7" title="Description. " alt="" coords="411,5,589,32"/><area shape="rect" id="node4" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba" title="gv_update_ref_from_z_sp" alt="" coords="407,208,593,235"/><area shape="rect" id="node21" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="659,107,814,133"/><area shape="rect" id="node8" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="880,325,1048,352"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1309,329,1448,356"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1101,189,1251,216"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1521,431,1621,457"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="1113,376,1239,403"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1127,271,1225,297"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1501,329,1640,356"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1688,329,1836,356"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1304,161,1453,188"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1329,380,1428,407"/><area shape="rect" id="node17" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1519,380,1623,407"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1305,212,1452,239"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1311,263,1447,305"/><area shape="rect" id="node22" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="885,108,1043,135"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="1105,109,1247,136"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1307,109,1450,136"/><area shape="rect" id="node28" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector " alt="" coords="429,478,571,519"/><area shape="rect" id="node33" href="guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function. " alt="" coords="445,544,555,571"/><area shape="rect" id="node34" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="663,401,811,428"/><area shape="rect" id="node36" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="447,595,553,621"/><area shape="rect" id="node29" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="641,485,832,512"/><area shape="rect" id="node30" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="886,485,1042,512"/><area shape="rect" id="node31" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="1096,485,1256,512"/><area shape="rect" id="node32" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="1305,485,1452,512"/><area shape="rect" id="node35" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="888,220,1040,247"/></map>
+</map>
 </div>
 </p>
 
@@ -893,7 +893,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="176,5,353,32"/></map>
+</map>
 </div>
 </p>
 
@@ -924,7 +924,7 @@ Variables</h2></td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a5505b1866cb6b0cd1f3bc6b309a2964f_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a5505b1866cb6b0cd1f3bc6b309a2964f_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a5505b1866cb6b0cd1f3bc6b309a2964f_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a5505b1866cb6b0cd1f3bc6b309a2964f_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="244,230,408,257"/><area shape="rect" id="node16" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="249,293,403,319"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="456,198,624,225"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="875,173,1013,199"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="672,122,821,149"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1086,274,1186,301"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="683,223,810,250"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="697,71,796,98"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1067,173,1205,199"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1253,173,1401,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="869,122,1019,149"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="895,223,993,250"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1084,223,1188,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="871,71,1017,98"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="876,5,1012,47"/><area shape="rect" id="node17" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="461,318,619,345"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="675,325,818,351"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="873,325,1015,351"/></map>
+</map>
 </div>
 </p>
 
@@ -966,7 +966,7 @@ Variables</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph">
-<area shape="rect" id="node2" href="autopilot__guided_8h.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode. " alt="" coords="245,17,448,43"/><area shape="rect" id="node5" href="autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="257,71,437,98"/><area shape="rect" id="node3" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="496,5,697,47"/><area shape="rect" id="node4" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="745,13,860,39"/><area shape="rect" id="node6" href="rotorcraft__datalink_8c.html#a6177292a373940f6e01bc4251374cd2c" title="Firmware specfic msg handler. " alt="" coords="519,71,674,98"/><area shape="rect" id="node7" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="518,122,675,149"/></map>
+</map>
 </div>
 </p>
 
@@ -1008,7 +1008,7 @@ Variables</h2></td></tr>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph">
-<area shape="rect" id="node2" href="autopilot__guided_8h.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="239,130,433,157"/><area shape="rect" id="node7" href="wedgebug_8h.html#ae7b75121d704ad8c922be906a906495f" title="wedgebug_periodic" alt="" coords="491,189,635,215"/><area shape="rect" id="node8" href="autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="246,239,426,266"/><area shape="rect" id="node3" href="autopilot__guided_8h.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt. " alt="" coords="481,5,645,47"/><area shape="rect" id="node4" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="693,64,895,105"/><area shape="rect" id="node6" href="autopilot__guided_8h.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt. " alt="" coords="481,123,645,164"/><area shape="rect" id="node5" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="943,71,1057,98"/><area shape="rect" id="node9" href="rotorcraft__datalink_8c.html#a6177292a373940f6e01bc4251374cd2c" title="Firmware specfic msg handler. " alt="" coords="486,239,641,266"/><area shape="rect" id="node10" href="nav__fish_8h.html#ae25f7a8ee455c00944445f6b12b3a49f" title="nav fish velocity run " alt="" coords="485,290,642,317"/></map>
+</map>
 </div>
 </p>
 
@@ -1021,19 +1021,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void guidance_v_set_ref </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>speed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>accel</em>&#160;</td>
         </tr>
         <tr>
@@ -1057,7 +1057,7 @@ Variables</h2></td></tr>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a9cf07bda38d537147bd9b5f8c90455a2_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a9cf07bda38d537147bd9b5f8c90455a2_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a9cf07bda38d537147bd9b5f8c90455a2_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a9cf07bda38d537147bd9b5f8c90455a2_cgraph">
-<area shape="rect" id="node2" href="guidance__v__ref_8c.html#a9438c4ab465cec426023d9fc3fb9cb07" title="gv_set_ref" alt="" coords="199,5,287,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1090,7 +1090,7 @@ Variables</h2></td></tr>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_cgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector " alt="" coords="239,5,381,47"/><area shape="rect" id="node7" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="257,71,363,98"/><area shape="rect" id="node8" href="guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function. " alt="" coords="255,122,365,149"/><area shape="rect" id="node9" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="236,173,384,199"/><area shape="rect" id="node3" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="432,13,623,39"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="671,13,827,39"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="875,13,1035,39"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="1083,13,1229,39"/><area shape="rect" id="node10" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="451,173,603,199"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="677,173,820,199"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="883,173,1026,199"/></map>
+</map>
 </div>
 </p>
 
@@ -1101,7 +1101,7 @@ Variables</h2></td></tr>
 <div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a0f2c0608e9949e1d68952c3491a30a83_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="236,5,359,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="407,5,584,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1132,7 +1132,7 @@ Variables</h2></td></tr>
 <div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a2558bccfb6fd14b6be513c5910737f0d_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a2558bccfb6fd14b6be513c5910737f0d_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a2558bccfb6fd14b6be513c5910737f0d_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a2558bccfb6fd14b6be513c5910737f0d_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="203,107,367,133"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="415,107,583,133"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="833,56,972,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="631,5,780,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1045,157,1145,184"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="642,107,769,133"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="656,208,755,235"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1025,56,1164,83"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1212,56,1360,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="828,5,977,32"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="853,107,952,133"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1043,107,1147,133"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="829,208,976,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="835,259,971,301"/></map>
+</map>
 </div>
 </p>
 
@@ -1165,7 +1165,7 @@ Variables</h2></td></tr>
 <div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="173,230,337,257"/><area shape="rect" id="node16" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="178,293,333,319"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="385,198,553,225"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="804,173,943,199"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="601,122,751,149"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1015,274,1115,301"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="613,223,739,250"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="627,71,725,98"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="996,173,1135,199"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1183,173,1331,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="799,122,948,149"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="824,223,923,250"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1013,223,1117,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="800,71,947,98"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="805,5,941,47"/><area shape="rect" id="node17" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="390,318,549,345"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="605,325,747,351"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="802,325,945,351"/></map>
+</map>
 </div>
 </p>
 
@@ -1176,7 +1176,7 @@ Variables</h2></td></tr>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_add8143296d90990e7c8da2e1c67c6e62_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#adee3e8feda47516b9c7ccbb1b97daaf6" title="Set guidance setpoint from NAV and run hover loop. " alt="" coords="179,5,340,32"/><area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="393,56,516,83"/><area shape="rect" id="node5" href="rotorcraft_2guidance_2guidance__v_8h.html#ada32f262fec6c51998c5041daa0d089c" title="Run GUIDED mode control. " alt="" coords="173,107,345,133"/><area shape="rect" id="node4" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="564,56,741,83"/></map>
+</map>
 </div>
 </p>
 
@@ -1227,7 +1227,7 @@ Variables</h2></td></tr>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="175,107,339,133"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="387,107,555,133"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="805,56,944,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="603,5,752,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1017,157,1117,184"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="614,107,741,133"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="628,208,727,235"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="997,56,1136,83"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1184,56,1332,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="800,5,949,32"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="825,107,924,133"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1015,107,1119,133"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="801,208,948,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="807,259,943,301"/></map>
+</map>
 </div>
 </p>
 
@@ -1238,7 +1238,7 @@ Variables</h2></td></tr>
 <div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#ae1e43515cf186f69dfaac9a4543b3cf0" title="guidance_v_init" alt="" coords="175,5,295,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1289,7 +1289,7 @@ Variables</h2></td></tr>
 <div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph">
-<area shape="rect" id="node2" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="180,89,328,116"/><area shape="rect" id="node6" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="172,161,336,188"/><area shape="rect" id="node20" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="177,39,331,65"/><area shape="rect" id="node3" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="392,89,544,116"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="603,39,746,65"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="801,5,943,32"/><area shape="rect" id="node7" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="384,203,552,229"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="803,224,941,251"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="600,173,749,200"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1014,325,1114,352"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="611,275,738,301"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="625,123,724,149"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="995,224,1133,251"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1181,224,1329,251"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="797,173,947,200"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="823,275,921,301"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1012,275,1116,301"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="799,123,945,149"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="804,57,940,98"/><area shape="rect" id="node21" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="389,39,547,65"/></map>
+</map>
 </div>
 </p>
 
@@ -1300,7 +1300,7 @@ Variables</h2></td></tr>
 <div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#ae1e43515cf186f69dfaac9a4543b3cf0" title="guidance_v_init" alt="" coords="172,5,292,32"/></map>
+</map>
 </div>
 </p>
 
@@ -1350,7 +1350,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_delta_t</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_delta_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1369,7 +1369,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_fb_cmd</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_fb_cmd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1387,7 +1387,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_ff_cmd</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_ff_cmd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1417,7 +1417,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_kd</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_kd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1435,7 +1435,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_ki</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_ki</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1453,7 +1453,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_kp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_kp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1471,14 +1471,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> guidance_v_mode</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> guidance_v_mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00103">103</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="vi__test__signal_8c_source.html#l00043">booz_fms_impl_periodic()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00611">nav_get_speed_sp_from_go()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00525">nav_get_speed_sp_from_line()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>.</p>
+<p>Referenced by <a class="el" href="vi__test__signal_8c_source.html#l00043">booz_fms_impl_periodic()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00672">nav_get_speed_sp_from_go()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">nav_get_speed_sp_from_line()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>.</p>
 
 </div>
 </div>
@@ -1506,7 +1506,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_rc_delta_t</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_rc_delta_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1525,7 +1525,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_rc_zd_sp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_rc_zd_sp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1544,7 +1544,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_th_sp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_th_sp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1560,7 +1560,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_thrust_coeff</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_thrust_coeff</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1576,7 +1576,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_z_ref</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_z_ref</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1595,7 +1595,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_z_sp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_z_sp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1614,7 +1614,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_z_sum_err</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_z_sum_err</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1632,7 +1632,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_zd_ref</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_zd_ref</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1642,7 +1642,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00133">133</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1651,7 +1651,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_zd_sp</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_zd_sp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1661,7 +1661,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00130">130</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00611">nav_get_speed_sp_from_go()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00525">nav_get_speed_sp_from_line()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00672">nav_get_speed_sp_from_go()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00586">nav_get_speed_sp_from_line()</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1670,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> guidance_v_zdd_ref</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> guidance_v_zdd_ref</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1680,7 +1680,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00134">134</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1690,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html">guidance_v.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:44 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

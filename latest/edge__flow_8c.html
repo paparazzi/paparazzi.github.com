@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,32 +122,32 @@ $(document).ready(function(){initNavTree('edge__flow_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2vision_2edge__flow_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2vision_2edge__flow_8c" id="sw_2airborne_2modules_2computer__vision_2lib_2vision_2edge__flow_8c">
-<area shape="rect" id="node2" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="537,109,692,136"/><area shape="rect" id="node4" href="inter__thread__data_8h.html" title="Inter&#45;thread data structures. " alt="" coords="823,273,982,315"/><area shape="rect" id="node14" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="470,363,602,389"/><area shape="rect" id="node21" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="329,281,429,307"/><area shape="rect" id="node24" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="416,184,552,225"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="910,601,1101,628"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="679,601,857,628"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="851,676,968,703"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="675,676,826,703"/><area shape="rect" id="node16" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="660,437,727,464"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="527,512,678,553"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="353,512,503,553"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="702,512,866,553"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="403,601,527,628"/></map>
+</map>
 </div>
 </div>
 <p><a href="edge__flow_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79cdb2523f43871785a1808f5d3dc260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260">calc_previous_frame_nr</a> (struct <a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a> *result, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> current_frame_nr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_offset, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_nr)</td></tr>
+<tr class="memitem:a79cdb2523f43871785a1808f5d3dc260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260">calc_previous_frame_nr</a> (struct <a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a> *result, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> current_frame_nr, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_offset, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_nr)</td></tr>
 <tr class="memdesc:a79cdb2523f43871785a1808f5d3dc260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calc_previous_frame_nr; adaptive Time Horizon.  <a href="#a79cdb2523f43871785a1808f5d3dc260">More...</a><br /></td></tr>
 <tr class="separator:a79cdb2523f43871785a1808f5d3dc260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dacd96582561f6f436df853e4ce0d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63">calculate_edge_histogram</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> edge_histogram[], char <a class="el" href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> edge_threshold)</td></tr>
+<tr class="memitem:a3dacd96582561f6f436df853e4ce0d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63">calculate_edge_histogram</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> edge_histogram[], char <a class="el" href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> edge_threshold)</td></tr>
 <tr class="memdesc:a3dacd96582561f6f436df853e4ce0d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a edge/gradient histogram for each dimension of the image.  <a href="#a3dacd96582561f6f436df853e4ce0d63">More...</a><br /></td></tr>
 <tr class="separator:a3dacd96582561f6f436df853e4ce0d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362f7ce14089a9e1bf93464ef5731714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714">calculate_edge_displacement</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *edge_histogram, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *edge_histogram_prev, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *displacement, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> window, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> disp_range, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> der_shift)</td></tr>
+<tr class="memitem:a362f7ce14089a9e1bf93464ef5731714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714">calculate_edge_displacement</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *edge_histogram, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *edge_histogram_prev, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *displacement, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> window, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> disp_range, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> der_shift)</td></tr>
 <tr class="memdesc:a362f7ce14089a9e1bf93464ef5731714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate_displacement calculates the displacement between two histograms.  <a href="#a362f7ce14089a9e1bf93464ef5731714">More...</a><br /></td></tr>
 <tr class="separator:a362f7ce14089a9e1bf93464ef5731714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24125fbc0c941963c0e3a2ab55a97e6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e">getMinimum</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *a, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n)</td></tr>
+<tr class="memitem:a24125fbc0c941963c0e3a2ab55a97e6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e">getMinimum</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *a, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n)</td></tr>
 <tr class="memdesc:a24125fbc0c941963c0e3a2ab55a97e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate minimum of an array.  <a href="#a24125fbc0c941963c0e3a2ab55a97e6e">More...</a><br /></td></tr>
 <tr class="separator:a24125fbc0c941963c0e3a2ab55a97e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57885c6d0cf61ad61c6e6113b2573c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88">line_fit</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *displacement, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *divergence, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *flow, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> border, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="detect__window_8c.html#a65b26605d90a0bcd0e13e05db54f551f">RES</a>)</td></tr>
+<tr class="memitem:a57885c6d0cf61ad61c6e6113b2573c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88">line_fit</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *displacement, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *divergence, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *flow, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> size, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> border, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="detect__window_8c.html#a65b26605d90a0bcd0e13e05db54f551f">RES</a>)</td></tr>
 <tr class="memdesc:a57885c6d0cf61ad61c6e6113b2573c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fits a linear model to an array with pixel displacements with least squares.  <a href="#a57885c6d0cf61ad61c6e6113b2573c88">More...</a><br /></td></tr>
 <tr class="separator:a57885c6d0cf61ad61c6e6113b2573c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b033920386bfd9bd702b743b16d6339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339">draw_edgeflow_img</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, struct <a class="el" href="edge__flow_8h.html#structedge__flow__t">edge_flow_t</a> edgeflow, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *edge_hist_x_prev, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *edge_hist_x)</td></tr>
+<tr class="memitem:a3b033920386bfd9bd702b743b16d6339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339">draw_edgeflow_img</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, struct <a class="el" href="edge__flow_8h.html#structedge__flow__t">edge_flow_t</a> edgeflow, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *edge_hist_x_prev, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *edge_hist_x)</td></tr>
 <tr class="memdesc:a3b033920386bfd9bd702b743b16d6339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow in horizontal direction!!)  <a href="#a3b033920386bfd9bd702b743b16d6339">More...</a><br /></td></tr>
 <tr class="separator:a3b033920386bfd9bd702b743b16d6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36266096493b2aae14a6aefc01e5c0db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db">getAmountPeaks</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *edgehist, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> thres, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> size)</td></tr>
+<tr class="memitem:a36266096493b2aae14a6aefc01e5c0db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db">getAmountPeaks</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *edgehist, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thres, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> size)</td></tr>
 <tr class="memdesc:a36266096493b2aae14a6aefc01e5c0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">getAmountPeaks, calculates the amount of peaks in a edge histogram  <a href="#a36266096493b2aae14a6aefc01e5c0db">More...</a><br /></td></tr>
 <tr class="separator:a36266096493b2aae14a6aefc01e5c0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -176,19 +176,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>current_frame_nr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>previous_frame_offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>previous_frame_nr</em>&#160;</td>
         </tr>
         <tr>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph.png" border="0" usemap="#edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph" id="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="227,5,361,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="409,5,564,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="612,5,776,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="824,5,983,32"/></map>
+</map>
 </div>
 </p>
 
@@ -237,43 +237,43 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void calculate_edge_displacement </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>edge_histogram</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>edge_histogram_prev</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>displacement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>window</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>disp_range</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>der_shift</em>&#160;</td>
         </tr>
         <tr>
@@ -311,7 +311,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_cgraph.png" border="0" usemap="#edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_cgraph" alt=""/></div>
 <map name="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_cgraph" id="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_cgraph">
-<area shape="rect" id="node2" href="edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array. " alt="" coords="264,5,367,32"/></map>
+</map>
 </div>
 </p>
 
@@ -322,7 +322,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph.png" border="0" usemap="#edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph" id="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="264,5,399,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="447,5,601,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="649,5,813,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="861,5,1020,32"/></map>
+</map>
 </div>
 </p>
 
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>edge_histogram</em>[], </td>
         </tr>
         <tr>
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>edge_threshold</em>&#160;</td>
         </tr>
         <tr>
@@ -388,7 +388,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph.png" border="0" usemap="#edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph" id="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="244,5,379,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="427,5,581,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="629,5,793,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="841,5,1000,32"/></map>
+</map>
 </div>
 </p>
 
@@ -413,13 +413,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>edge_hist_x_prev</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>edge_hist_x</em>&#160;</td>
         </tr>
         <tr>
@@ -454,7 +454,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_cgraph.png" border="0" usemap="#edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_cgraph" alt=""/></div>
 <map name="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_cgraph" id="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_cgraph">
-<area shape="rect" id="node2" href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image. " alt="" coords="200,5,328,32"/><area shape="rect" id="node3" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image. " alt="" coords="376,5,543,32"/></map>
+</map>
 </div>
 </p>
 
@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph.png" border="0" usemap="#edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph" id="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="200,5,335,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="383,5,537,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="585,5,749,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="797,5,956,32"/></map>
+</map>
 </div>
 </p>
 
@@ -476,21 +476,21 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> getAmountPeaks </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> getAmountPeaks </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>edgehist</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>thres</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -523,7 +523,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph.png" border="0" usemap="#edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph" id="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="185,5,320,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="368,5,523,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="571,5,735,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="783,5,941,32"/></map>
+</map>
 </div>
 </p>
 
@@ -534,15 +534,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> getMinimum </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> getMinimum </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -574,7 +574,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph.png" border="0" usemap="#edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph" id="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph">
-<area shape="rect" id="node2" href="edge__flow_8h.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms. " alt="" coords="156,5,367,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="415,5,549,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="597,5,752,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="800,5,964,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1012,5,1171,32"/></map>
+</map>
 </div>
 </p>
 
@@ -587,37 +587,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void line_fit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>displacement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>divergence</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
           <td class="paramname"><em>flow</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
           <td class="paramname"><em>border</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>RES</em>&#160;</td>
         </tr>
         <tr>
@@ -652,7 +652,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph.png" border="0" usemap="#edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph" id="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="116,5,251,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="299,5,453,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="501,5,665,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="713,5,872,32"/></map>
+</map>
 </div>
 </p>
 
@@ -664,7 +664,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_02b33bf6f772461f444923131a9a8dda.html">vision</a></li><li class="navelem"><a class="el" href="edge__flow_8c.html">edge_flow.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:54 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

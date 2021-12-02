@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/modules/settings/rc_settings.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/core/rc_settings.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,13 +113,12 @@ $(document).ready(function(){initNavTree('rc__settings_8c.html','');});
 <div class="title">rc_settings.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &quot;generated/radio.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="rc__settings_8h_source.html">modules/settings/rc_settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rc__settings_8h_source.html">modules/core/rc_settings.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="infrared_8h_source.html">subsystems/sensors/infrared.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">inter_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">modules/intermcu/inter_mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h_source.html">firmwares/fixedwing/stabilization/stabilization_attitude.h</a>&quot;</code><br />
 <code>#include &quot;generated/settings.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,16 +126,16 @@ $(document).ready(function(){initNavTree('rc__settings_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rc__settings_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2settings_2rc__settings_8c" alt=""/></div>
-<map name="sw_2airborne_2modules_2settings_2rc__settings_8c" id="sw_2airborne_2modules_2settings_2rc__settings_8c">
-<area shape="rect" id="node2" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1753,385,1839,411"/><area shape="rect" id="node4" href="rc__settings_8h.html" title="Variable setting though the radio control. " alt="" coords="1049,95,1197,136"/><area shape="rect" id="node5" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="744,199,835,225"/><area shape="rect" id="node26" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1221,95,1368,136"/><area shape="rect" id="node30" href="infrared_8h.html" title="subsystems/sensors\l/infrared.h" alt="" coords="1407,191,1561,233"/><area shape="rect" id="node31" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="1532,102,1631,129"/><area shape="rect" id="node32" href="fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control. " alt="" coords="1637,184,1819,240"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1583,295,1679,322"/><area shape="rect" id="node9" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="792,295,859,322"/><area shape="rect" id="node10" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="743,467,921,493"/><area shape="rect" id="node17" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="167,467,358,493"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="757,377,907,419"/><area shape="rect" id="node21" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="394,377,545,419"/><area shape="rect" id="node22" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="569,377,733,419"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="351,541,505,568"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="877,541,1027,568"/><area shape="rect" id="node20" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="485,467,609,493"/><area shape="rect" id="node27" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1206,191,1383,233"/><area shape="rect" id="node28" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1155,288,1325,329"/><area shape="rect" id="node29" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="910,191,1079,233"/></map>
+<div class="center"><img src="rc__settings_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2core_2rc__settings_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2core_2rc__settings_8c" id="sw_2airborne_2modules_2core_2rc__settings_8c">
+</map>
 </div>
 </div>
 <p><a href="rc__settings_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a340368a8f442ad27fc08588985c16d0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a340368a8f442ad27fc08588985c16d0f">ParamValInt16</a>(param_init_val, param_travel, cur_pulse, init_pulse)&#160;&#160;&#160;(param_init_val + (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((float)(cur_pulse - init_pulse)) * param_travel / (float)<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>))</td></tr>
+<tr class="memitem:a340368a8f442ad27fc08588985c16d0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a340368a8f442ad27fc08588985c16d0f">ParamValInt16</a>(param_init_val, param_travel, cur_pulse, init_pulse)&#160;&#160;&#160;(param_init_val + (<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(((float)(cur_pulse - init_pulse)) * param_travel / (float)<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>))</td></tr>
 <tr class="separator:a340368a8f442ad27fc08588985c16d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eda1c9a9562629c0fb04cd4c7a8ab87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a6eda1c9a9562629c0fb04cd4c7a8ab87">ParamValFloat</a>(param_init_val, param_travel, cur_pulse, init_pulse)&#160;&#160;&#160;(param_init_val + ((float)(cur_pulse - init_pulse)) * param_travel / (float)<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>)</td></tr>
 <tr class="separator:a6eda1c9a9562629c0fb04cd4c7a8ab87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +150,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3349e614a926a99c63c8b9f2935a29f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a3349e614a926a99c63c8b9f2935a29f3">rc_settings_mode</a> = 0</td></tr>
+<tr class="memitem:a3349e614a926a99c63c8b9f2935a29f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a3349e614a926a99c63c8b9f2935a29f3">rc_settings_mode</a> = 0</td></tr>
 <tr class="separator:a3349e614a926a99c63c8b9f2935a29f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44c7519d24a1210b4195b65831c08f23"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__settings_8c.html#a44c7519d24a1210b4195b65831c08f23">slider_1_val</a></td></tr>
 <tr class="separator:a44c7519d24a1210b4195b65831c08f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +194,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00040">40</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00039">39</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -230,12 +229,12 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(param_init_val + (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((float)(cur_pulse - init_pulse)) * param_travel / (float)<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>))</td>
+          <td></td><td>&#160;&#160;&#160;(param_init_val + (<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)(((float)(cur_pulse - init_pulse)) * param_travel / (float)<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00037">37</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00036">36</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -253,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00043">43</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00042">42</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -274,9 +273,9 @@ Variables</h2></td></tr>
 
 <p>Includes generated code from tuning_rc.xml. </p>
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00049">49</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00048">48</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00111">autopilot_static_on_rc_frame()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -285,7 +284,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rc__settings_8c_a70dfba35cc80c7b5f4da8c2f4aa18181_icgraph.png" border="0" usemap="#rc__settings_8c_a70dfba35cc80c7b5f4da8c2f4aa18181_icgraph" alt=""/></div>
 <map name="rc__settings_8c_a70dfba35cc80c7b5f4da8c2f4aa18181_icgraph" id="rc__settings_8c_a70dfba35cc80c7b5f4da8c2f4aa18181_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__static_8h.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="145,23,288,65"/><area shape="rect" id="node3" href="autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Autopilot RC input event hadler. " alt="" coords="336,31,501,57"/><area shape="rect" id="node4" href="fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="549,5,664,32"/><area shape="rect" id="node6" href="rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="558,56,655,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="712,5,848,32"/></map>
+</map>
 </div>
 </p>
 
@@ -297,12 +296,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rc_settings_mode = 0</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rc_settings_mode = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00034">34</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00033">33</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -316,7 +315,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00035">35</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00034">34</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -330,7 +329,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00035">35</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
+<p>Definition at line <a class="el" href="rc__settings_8c_source.html#l00034">34</a> of file <a class="el" href="rc__settings_8c_source.html">rc_settings.c</a>.</p>
 
 </div>
 </div>
@@ -339,8 +338,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0ffb72b393f856c1d135a16a5bad050f.html">settings</a></li><li class="navelem"><a class="el" href="rc__settings_8c.html">rc_settings.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:10 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="rc__settings_8c.html">rc_settings.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

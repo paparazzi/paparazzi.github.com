@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control/cc2500_frsky/cc2500_frsky_shared.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/cc2500_frsky/cc2500_frsky_shared.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,9 +119,9 @@ $(document).ready(function(){initNavTree('cc2500__frsky__shared_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="cc2500__frsky__shared_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep" id="sw_2airborne_2subsystems_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep">
-<area shape="rect" id="node2" href="cc2500__frsky__shared_8c.html" title="sw/airborne/subsystems\l/radio_control/cc2500\l_frsky/cc2500_frsky_shared.c" alt="" coords="5,109,213,165"/><area shape="rect" id="node3" href="cc2500__frsky__x_8c.html" title="sw/airborne/subsystems\l/radio_control/cc2500\l_frsky/cc2500_frsky_x.c" alt="" coords="237,109,413,165"/></map>
+<div class="center"><img src="cc2500__frsky__shared_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep" id="sw_2airborne_2modules_2radio__control_2cc2500__frsky_2cc2500__frsky__shared_8hdep">
+</map>
 </div>
 </div>
 <p><a href="cc2500__frsky__shared_8h_source.html">Go to the source code of this file.</a></p>
@@ -143,36 +143,36 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a3ab071cf265666f49f6e3f6639d69f0a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa98d2a2153b4ae0445fa0b114d65b94d9">STATE_INIT</a> = 0, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aae441f117be5de33af978dc60c57178e0">STATE_BIND</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aae0f5b631e0c9ca2faf55079a6d3d369f">STATE_BIND_TUNING</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa0b46344271a207f1f9392d5570905067">STATE_BIND_BINDING1</a>, 
+<tr class="memitem:aa85e8d66aa325c34334bcaa049300dcd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda98d2a2153b4ae0445fa0b114d65b94d9">STATE_INIT</a> = 0, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdae441f117be5de33af978dc60c57178e0">STATE_BIND</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdae0f5b631e0c9ca2faf55079a6d3d369f">STATE_BIND_TUNING</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda0b46344271a207f1f9392d5570905067">STATE_BIND_BINDING1</a>, 
 <br />
-&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa17c13b7d597e52eca678da518bcf93c4">STATE_BIND_BINDING2</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa4d543f30e133b6f436d971be6322a813">STATE_BIND_COMPLETE</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aaa5f51c4eb8c8eec3b16b058c5e29a037">STATE_STARTING</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aad7ed6145fc50e38bed3750b71718bb01">STATE_UPDATE</a>, 
+&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda17c13b7d597e52eca678da518bcf93c4">STATE_BIND_BINDING2</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda4d543f30e133b6f436d971be6322a813">STATE_BIND_COMPLETE</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdaa5f51c4eb8c8eec3b16b058c5e29a037">STATE_STARTING</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdad7ed6145fc50e38bed3750b71718bb01">STATE_UPDATE</a>, 
 <br />
-&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa3d3ea9fb2db0c6039f1065b6ee452fe9">STATE_DATA</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aa7e18bbe4a80553244f5db2e15c927e50">STATE_TELEMETRY</a>, 
-<a class="el" href="cc2500__frsky__shared_8h.html#a3ab071cf265666f49f6e3f6639d69f0aad55dd5088ed018dba79a5dbcf6429ecc">STATE_RESUME</a>
+&#160;&#160;<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda3d3ea9fb2db0c6039f1065b6ee452fe9">STATE_DATA</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda7e18bbe4a80553244f5db2e15c927e50">STATE_TELEMETRY</a>, 
+<a class="el" href="cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdad55dd5088ed018dba79a5dbcf6429ecc">STATE_RESUME</a>
 <br />
  }</td></tr>
-<tr class="separator:a3ab071cf265666f49f6e3f6639d69f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa85e8d66aa325c34334bcaa049300dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeb0e66b7e7d77f928e122ea1dfab26fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#aeb0e66b7e7d77f928e122ea1dfab26fb">initialiseData</a> (bool inBindState)</td></tr>
 <tr class="separator:aeb0e66b7e7d77f928e122ea1dfab26fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad78fae7846fe4f56409cb30fa52947a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#aad78fae7846fe4f56409cb30fa52947a">nextChannel</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> skip)</td></tr>
+<tr class="memitem:aad78fae7846fe4f56409cb30fa52947a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#aad78fae7846fe4f56409cb30fa52947a">nextChannel</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> skip)</td></tr>
 <tr class="separator:aad78fae7846fe4f56409cb30fa52947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a790301d7eb5a957ad3e0b2125ce25c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18">listLength</a></td></tr>
+<tr class="memitem:a790301d7eb5a957ad3e0b2125ce25c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18">listLength</a></td></tr>
 <tr class="separator:a790301d7eb5a957ad3e0b2125ce25c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54bcae7a22dd669bf121c7c626e399dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#a54bcae7a22dd669bf121c7c626e399dc">missingPackets</a></td></tr>
+<tr class="memitem:a54bcae7a22dd669bf121c7c626e399dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#a54bcae7a22dd669bf121c7c626e399dc">missingPackets</a></td></tr>
 <tr class="separator:a54bcae7a22dd669bf121c7c626e399dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1793c116abf6558778081081eebefbf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cc2500__compat_8h.html#a54d43431e98e7238c826e3cd984410aa">timeDelta_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__frsky__shared_8h.html#a1793c116abf6558778081081eebefbf7">timeoutUs</a></td></tr>
 <tr class="separator:a1793c116abf6558778081081eebefbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +271,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0a"></a>
+<a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -281,27 +281,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa98d2a2153b4ae0445fa0b114d65b94d9"></a>STATE_INIT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda98d2a2153b4ae0445fa0b114d65b94d9"></a>STATE_INIT&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aae441f117be5de33af978dc60c57178e0"></a>STATE_BIND&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcdae441f117be5de33af978dc60c57178e0"></a>STATE_BIND&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aae0f5b631e0c9ca2faf55079a6d3d369f"></a>STATE_BIND_TUNING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcdae0f5b631e0c9ca2faf55079a6d3d369f"></a>STATE_BIND_TUNING&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa0b46344271a207f1f9392d5570905067"></a>STATE_BIND_BINDING1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda0b46344271a207f1f9392d5570905067"></a>STATE_BIND_BINDING1&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa17c13b7d597e52eca678da518bcf93c4"></a>STATE_BIND_BINDING2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda17c13b7d597e52eca678da518bcf93c4"></a>STATE_BIND_BINDING2&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa4d543f30e133b6f436d971be6322a813"></a>STATE_BIND_COMPLETE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda4d543f30e133b6f436d971be6322a813"></a>STATE_BIND_COMPLETE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aaa5f51c4eb8c8eec3b16b058c5e29a037"></a>STATE_STARTING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcdaa5f51c4eb8c8eec3b16b058c5e29a037"></a>STATE_STARTING&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aad7ed6145fc50e38bed3750b71718bb01"></a>STATE_UPDATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcdad7ed6145fc50e38bed3750b71718bb01"></a>STATE_UPDATE&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa3d3ea9fb2db0c6039f1065b6ee452fe9"></a>STATE_DATA&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda3d3ea9fb2db0c6039f1065b6ee452fe9"></a>STATE_DATA&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aa7e18bbe4a80553244f5db2e15c927e50"></a>STATE_TELEMETRY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcda7e18bbe4a80553244f5db2e15c927e50"></a>STATE_TELEMETRY&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3ab071cf265666f49f6e3f6639d69f0aad55dd5088ed018dba79a5dbcf6429ecc"></a>STATE_RESUME&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa85e8d66aa325c34334bcaa049300dcdad55dd5088ed018dba79a5dbcf6429ecc"></a>STATE_RESUME&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -337,7 +337,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_cgraph.png" border="0" usemap="#cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_cgraph" alt=""/></div>
 <map name="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_cgraph" id="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_cgraph">
-<area shape="rect" id="node2" href="cc2500_8c.html#a0aafd8cd88f01d28921f047d4435e169" title="cc2500WriteReg" alt="" coords="167,5,290,32"/><area shape="rect" id="node6" href="cc2500__settings_8c.html#aad1629e38fffa025a33f8054243bd6f0" title="rxCc2500SpiConfig" alt="" coords="157,56,300,83"/><area shape="rect" id="node3" href="cc2500_8c.html#a15e26bcabc37cb935f279ec8eaff8f89" title="rxSpiWriteCommand" alt="" coords="348,5,500,32"/><area shape="rect" id="node4" href="cc2500_8c.html#aa88e934fdd4f5f4f40dfa59c7060c208" title="rxSpiWriteCommandMulti" alt="" coords="548,5,731,32"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="779,5,869,32"/></map>
+</map>
 </div>
 </p>
 
@@ -348,7 +348,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_icgraph.png" border="0" usemap="#cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_icgraph" alt=""/></div>
 <map name="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_icgraph" id="cc2500__frsky__shared_8h_aeb0e66b7e7d77f928e122ea1dfab26fb_icgraph">
-<area shape="rect" id="node2" href="cc2500__frsky__shared_8c.html#a16e7d002b9f1b3db1d847d1e757eb243" title="frSkySpiDataReceived" alt="" coords="355,5,516,32"/><area shape="rect" id="node7" href="cc2500__frsky__x_8h.html#a90776c7143b1e75512e9bf975aca774e" title="frSkyXHandlePacket" alt="" coords="157,56,307,83"/><area shape="rect" id="node3" href="cc2500__rx__spi_8c.html#a3d2e6ea2ec7d87bc2067c0fd06ecc5c0" title="rxSpiSetProtocol" alt="" coords="564,31,692,57"/><area shape="rect" id="node4" href="cc2500__rx__spi_8h.html#a69c86568ea4d5d0b6b27d470946083c5" title="rxSpiInit" alt="" coords="740,31,813,57"/><area shape="rect" id="node5" href="cc2500__rx_8h.html#a2b22f66cf63b1438ff45127b7674d1a9" title="!TODO remove this extern, only needed once for channelCount " alt="" coords="861,31,915,57"/><area shape="rect" id="node6" href="cc2500__paparazzi_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="963,31,1128,57"/><area shape="rect" id="node8" href="cc2500__frsky__shared_8c.html#ae9a644b9be932a275c8b3c77fd33f0f9" title="frSkySpiInit" alt="" coords="389,56,482,83"/></map>
+</map>
 </div>
 </p>
 
@@ -361,7 +361,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void nextChannel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>skip</em></td><td>)</td>
           <td></td>
         </tr>
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_cgraph.png" border="0" usemap="#cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_cgraph" alt=""/></div>
 <map name="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_cgraph" id="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_cgraph">
-<area shape="rect" id="node2" href="cc2500_8c.html#a5f48b0ae3036525c7ddd12b61b2f92cc" title="cc2500Strobe" alt="" coords="172,5,283,32"/><area shape="rect" id="node6" href="cc2500_8c.html#a0aafd8cd88f01d28921f047d4435e169" title="cc2500WriteReg" alt="" coords="166,56,289,83"/><area shape="rect" id="node8" href="cc2500__settings_8c.html#aad1629e38fffa025a33f8054243bd6f0" title="rxCc2500SpiConfig" alt="" coords="156,107,299,133"/><area shape="rect" id="node3" href="cc2500_8c.html#af21ded081906c8c7339acef1caeaa8e3" title="rxSpiWriteByte" alt="" coords="365,5,480,32"/><area shape="rect" id="node4" href="cc2500_8c.html#aa88e934fdd4f5f4f40dfa59c7060c208" title="rxSpiWriteCommandMulti" alt="" coords="547,31,729,57"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="777,31,868,57"/><area shape="rect" id="node7" href="cc2500_8c.html#a15e26bcabc37cb935f279ec8eaff8f89" title="rxSpiWriteCommand" alt="" coords="347,56,499,83"/></map>
+</map>
 </div>
 </p>
 
@@ -392,7 +392,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_icgraph.png" border="0" usemap="#cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_icgraph" alt=""/></div>
 <map name="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_icgraph" id="cc2500__frsky__shared_8h_aad78fae7846fe4f56409cb30fa52947a_icgraph">
-<area shape="rect" id="node2" href="cc2500__frsky__x_8h.html#a90776c7143b1e75512e9bf975aca774e" title="frSkyXHandlePacket" alt="" coords="156,5,305,32"/><area shape="rect" id="node3" href="cc2500__frsky__shared_8c.html#ae9a644b9be932a275c8b3c77fd33f0f9" title="frSkySpiInit" alt="" coords="353,5,447,32"/><area shape="rect" id="node4" href="cc2500__rx__spi_8c.html#a3d2e6ea2ec7d87bc2067c0fd06ecc5c0" title="rxSpiSetProtocol" alt="" coords="495,5,623,32"/><area shape="rect" id="node5" href="cc2500__rx__spi_8h.html#a69c86568ea4d5d0b6b27d470946083c5" title="rxSpiInit" alt="" coords="671,5,744,32"/><area shape="rect" id="node6" href="cc2500__rx_8h.html#a2b22f66cf63b1438ff45127b7674d1a9" title="!TODO remove this extern, only needed once for channelCount " alt="" coords="792,5,845,32"/><area shape="rect" id="node7" href="cc2500__paparazzi_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="893,5,1059,32"/></map>
+</map>
 </div>
 </p>
 
@@ -404,7 +404,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> listLength</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> listLength</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -420,7 +420,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> missingPackets</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> missingPackets</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -452,8 +452,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_69e9f3afec1dbdad02870a66666e16a1.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__frsky__shared_8h.html">cc2500_frsky_shared.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:24 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__frsky__shared_8h.html">cc2500_frsky_shared.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

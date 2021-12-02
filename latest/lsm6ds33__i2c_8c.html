@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,21 +125,21 @@ $(document).ready(function(){initNavTree('lsm6ds33__i2c_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2lsm6ds33__i2c_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2lsm6ds33__i2c_8c" id="sw_2airborne_2peripherals_2lsm6ds33__i2c_8c">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8h.html" title="Driver for the accelerometer and gyrometer LSM6DS33. " alt="" coords="836,95,995,136"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="349,184,527,211"/><area shape="rect" id="node11" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="675,184,806,211"/><area shape="rect" id="node13" href="lsm6ds33_8h.html" title="LSM6DS33 accelerometer and gyrometer driver I2C interface. " alt="" coords="830,184,1001,211"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="50,266,205,293"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="229,266,380,293"/><area shape="rect" id="node14" href="lsm6ds33__regs_8h.html" title="Register defs for ST LSM6DS33 3D accelerometer and gyroscope. " alt="" coords="791,259,949,300"/></map>
+</map>
 </div>
 </div>
 <p><a href="lsm6ds33__i2c_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td></tr>
+<tr class="memitem:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(_buf, _idx)&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td></tr>
 <tr class="separator:ae7e949d1dd6f5a5a814fac0cd6936966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a81ec32aeec5d229837f6d949284d5465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#a81ec32aeec5d229837f6d949284d5465">lsm6_i2c_init</a> (struct <a class="el" href="lsm6ds33__i2c_8h.html#structLsm6__I2c">Lsm6_I2c</a> *lsm, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
+<tr class="memitem:a81ec32aeec5d229837f6d949284d5465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#a81ec32aeec5d229837f6d949284d5465">lsm6_i2c_init</a> (struct <a class="el" href="lsm6ds33__i2c_8h.html#structLsm6__I2c">Lsm6_I2c</a> *lsm, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
 <tr class="separator:a81ec32aeec5d229837f6d949284d5465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87cf567037dbdc26fda85ab1911ca02c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c">lsm6_i2c_tx_reg</a> (struct <a class="el" href="lsm6ds33__i2c_8h.html#structLsm6__I2c">Lsm6_I2c</a> *lsm, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>)</td></tr>
+<tr class="memitem:a87cf567037dbdc26fda85ab1911ca02c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c">lsm6_i2c_tx_reg</a> (struct <a class="el" href="lsm6ds33__i2c_8h.html#structLsm6__I2c">Lsm6_I2c</a> *lsm, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="temp__tcouple__adc_8c.html#a530497e1435a9d2606cd3b9b2336de34">val</a>)</td></tr>
 <tr class="separator:a87cf567037dbdc26fda85ab1911ca02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8eb0a38031bed44b9e6eac21d024b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm6ds33__i2c_8c.html#a6e8eb0a38031bed44b9e6eac21d024b8">lsm6_i2c_send_config</a> (struct <a class="el" href="lsm6ds33__i2c_8h.html#structLsm6__I2c">Lsm6_I2c</a> *lsm)</td></tr>
 <tr class="separator:a6e8eb0a38031bed44b9e6eac21d024b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a>)((_buf[_idx+1]&lt;&lt;8) | _buf[_idx]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lsm6ds33__i2c_8c_source.html#l00114">114</a> of file <a class="el" href="lsm6ds33__i2c_8c_source.html">lsm6ds33_i2c.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00043">Lsm6_I2c::data_available</a>, <a class="el" href="lsm6ds33__i2c_8h.html#ada38b96f98dc561ff28ff216e4573f96">Lsm6_I2c::data_g</a>, <a class="el" href="lsm6ds33__i2c_8h.html#a2e7ad4abdb056f1d8b2be19a57208e70">Lsm6_I2c::data_xl</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00040">Lsm6_I2c::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00041">Lsm6_I2c::init_status</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00042">Lsm6_I2c::initialized</a>, <a class="el" href="lsm6ds33__i2c_8c_source.html#l00112">Int16FromBuf</a>, <a class="el" href="lsm6ds33_8h_source.html#l00103">LSM6_CONF_UNINIT</a>, <a class="el" href="lsm6ds33__i2c_8c_source.html#l00059">lsm6_i2c_send_config()</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00043">Lsm6_I2c::data_available</a>, <a class="el" href="lsm6ds33__i2c_8h.html#adeaa09f6383acbb07753d38ea8b40080">Lsm6_I2c::data_g</a>, <a class="el" href="lsm6ds33__i2c_8h.html#a22191e8ddadb89ce837144bc94338f4c">Lsm6_I2c::data_xl</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00040">Lsm6_I2c::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00041">Lsm6_I2c::init_status</a>, <a class="el" href="lsm6ds33__i2c_8h_source.html#l00042">Lsm6_I2c::initialized</a>, <a class="el" href="lsm6ds33__i2c_8c_source.html#l00112">Int16FromBuf</a>, <a class="el" href="lsm6ds33_8h_source.html#l00103">LSM6_CONF_UNINIT</a>, <a class="el" href="lsm6ds33__i2c_8c_source.html#l00059">lsm6_i2c_send_config()</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_abdb25f3a5c149b15a0ed792d496a6999_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_abdb25f3a5c149b15a0ed792d496a6999_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_abdb25f3a5c149b15a0ed792d496a6999_cgraph" id="lsm6ds33__i2c_8c_abdb25f3a5c149b15a0ed792d496a6999_cgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8c.html#a6e8eb0a38031bed44b9e6eac21d024b8" title="lsm6_i2c_send_config" alt="" coords="175,5,336,32"/><area shape="rect" id="node3" href="lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c" title="lsm6_i2c_tx_reg" alt="" coords="384,5,509,32"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="557,5,648,32"/></map>
+</map>
 </div>
 </p>
 
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>addr</em>&#160;</td>
         </tr>
         <tr>
@@ -258,7 +258,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a81ec32aeec5d229837f6d949284d5465_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a81ec32aeec5d229837f6d949284d5465_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a81ec32aeec5d229837f6d949284d5465_cgraph" id="lsm6ds33__i2c_8c_a81ec32aeec5d229837f6d949284d5465_cgraph">
-<area shape="rect" id="node2" href="lsm6ds33_8h.html#a55743f91bfb867a25ca66228d8582007" title="lsm6_set_default_config" alt="" coords="157,5,333,32"/></map>
+</map>
 </div>
 </p>
 
@@ -291,7 +291,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_cgraph" id="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="168,5,259,32"/></map>
+</map>
 </div>
 </p>
 
@@ -302,7 +302,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_icgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_icgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_icgraph" id="lsm6ds33__i2c_8c_a37af6c55add4c4bce4c3713ef2c160d4_icgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130" title="convenience function: read or start configuration if not already initialized " alt="" coords="168,5,303,32"/></map>
+</map>
 </div>
 </p>
 
@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_cgraph" id="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_cgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c" title="lsm6_i2c_tx_reg" alt="" coords="215,5,340,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="388,5,479,32"/></map>
+</map>
 </div>
 </p>
 
@@ -354,7 +354,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_icgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_icgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_icgraph" id="lsm6ds33__i2c_8c_a6e8eb0a38031bed44b9e6eac21d024b8_icgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999" title="lsm6_i2c_event" alt="" coords="245,5,366,32"/><area shape="rect" id="node3" href="lsm6ds33__i2c_8h.html#a3dc8f9def18511d17aabd2642ea47f1d" title="lsm6_i2c_start_configure" alt="" coords="215,56,396,83"/><area shape="rect" id="node4" href="lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130" title="convenience function: read or start configuration if not already initialized " alt="" coords="444,56,579,83"/></map>
+</map>
 </div>
 </p>
 
@@ -387,7 +387,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_cgraph" id="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_cgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8c.html#a6e8eb0a38031bed44b9e6eac21d024b8" title="lsm6_i2c_send_config" alt="" coords="235,5,396,32"/><area shape="rect" id="node3" href="lsm6ds33__i2c_8c.html#a87cf567037dbdc26fda85ab1911ca02c" title="lsm6_i2c_tx_reg" alt="" coords="444,5,569,32"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="617,5,708,32"/></map>
+</map>
 </div>
 </p>
 
@@ -398,7 +398,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_icgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_icgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_icgraph" id="lsm6ds33__i2c_8c_a3dc8f9def18511d17aabd2642ea47f1d_icgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130" title="convenience function: read or start configuration if not already initialized " alt="" coords="235,5,369,32"/></map>
+</map>
 </div>
 </p>
 
@@ -420,13 +420,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
@@ -455,7 +455,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_cgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_cgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_cgraph" id="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="179,5,269,32"/></map>
+</map>
 </div>
 </p>
 
@@ -466,7 +466,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_icgraph.png" border="0" usemap="#lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_icgraph" alt=""/></div>
 <map name="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_icgraph" id="lsm6ds33__i2c_8c_a87cf567037dbdc26fda85ab1911ca02c_icgraph">
-<area shape="rect" id="node2" href="lsm6ds33__i2c_8c.html#a6e8eb0a38031bed44b9e6eac21d024b8" title="lsm6_i2c_send_config" alt="" coords="179,31,340,57"/><area shape="rect" id="node3" href="lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999" title="lsm6_i2c_event" alt="" coords="418,5,539,32"/><area shape="rect" id="node4" href="lsm6ds33__i2c_8h.html#a3dc8f9def18511d17aabd2642ea47f1d" title="lsm6_i2c_start_configure" alt="" coords="388,56,569,83"/><area shape="rect" id="node5" href="lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130" title="convenience function: read or start configuration if not already initialized " alt="" coords="617,56,752,83"/></map>
+</map>
 </div>
 </p>
 
@@ -478,7 +478,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lsm6ds33__i2c_8c.html">lsm6ds33_i2c.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

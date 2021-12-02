@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  pthread_mutex_t *<a class="code" href="cv__detect__color__object_8c.html#a4acff8232e4aec9cd5c6dc200ac55ef3">mutex</a> = &amp;(((<span class="keyword">struct </span><a class="code" href="linux_2mcu__periph_2i2c__arch_8c.html#structi2c__thread__t">i2c_thread_t</a> *)(p-&gt;<a class="code" href="group__i2c.html#a76d89c1653cd5da167ec5ce1edaf3d7c">init_struct</a>))-&gt;mutex);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  pthread_cond_t *<a class="code" href="linux_2mcu__periph_2i2c__arch_8c.html#a7ad2a5af5c8b17304aa0a560ae2cebe3">condition</a> = &amp;(((<span class="keyword">struct </span><a class="code" href="linux_2mcu__periph_2i2c__arch_8c.html#structi2c__thread__t">i2c_thread_t</a> *)(p-&gt;<a class="code" href="group__i2c.html#a76d89c1653cd5da167ec5ce1edaf3d7c">init_struct</a>))-&gt;condition);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> next_idx;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> next_idx;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  pthread_mutex_lock(mutex);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  next_idx = (p-&gt;<a class="code" href="group__i2c.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> + 1) % <a class="code" href="group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319">I2C_TRANSACTION_QUEUE_LEN</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (next_idx == p-&gt;<a class="code" href="group__i2c.html#a4e572be9f28f1037d7c749a223329aaf">trans_extract_idx</a>) {</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea7bf029a65bd3dbb742ad3e2bb7e10c6d">I2CTransTx</a>:</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// Set the slave address, converted to 7 bit</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        ioctl(fd, <a class="code" href="i2c__smbus_8h.html#ab15137f7c592d05573de99f078516157">I2C_SLAVE</a>, t-&gt;slave_addr &gt;&gt; 1);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span> (write(fd, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;buf, t-&gt;len_w) &lt; 0) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span> (write(fd, (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;buf, t-&gt;len_w) &lt; 0) {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          <span class="comment">/* if write failed, increment error counter ack_fail_cnt */</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          pthread_mutex_lock(mutex);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          p-&gt;<a class="code" href="group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="group__i2c.html#a5e18e74d9bc598907010196a760261fe">ack_fail_cnt</a>++;</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91">I2CTransRx</a>:</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// Set the slave address, converted to 7 bit</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        ioctl(fd, <a class="code" href="i2c__smbus_8h.html#ab15137f7c592d05573de99f078516157">I2C_SLAVE</a>, t-&gt;slave_addr &gt;&gt; 1);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">if</span> (read(fd, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;buf, t-&gt;len_r) &lt; 0) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">if</span> (read(fd, (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;buf, t-&gt;len_r) &lt; 0) {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          <span class="comment">/* if read failed, increment error counter arb_lost_cnt */</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          pthread_mutex_lock(mutex);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          p-&gt;<a class="code" href="group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="group__i2c.html#af759b5450d828fa43aa04b203bab42cd">arb_lost_cnt</a>++;</div>
@@ -442,7 +442,6 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="ttc" id="group__i2c_html_a76d89c1653cd5da167ec5ce1edaf3d7c"><div class="ttname"><a href="group__i2c.html#a76d89c1653cd5da167ec5ce1edaf3d7c">i2c_periph::init_struct</a></div><div class="ttdeci">void * init_struct</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00158">i2c.h:158</a></div></div>
 <div class="ttc" id="i2c__smbus_8h_html_a10d1943df9a527109bf60733baf7b0a4"><div class="ttname"><a href="i2c__smbus_8h.html#a10d1943df9a527109bf60733baf7b0a4">i2c_msg::len</a></div><div class="ttdeci">short len</div><div class="ttdef"><b>Definition:</b> <a href="i2c__smbus_8h_source.html#l00049">i2c_smbus.h:49</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00144">i2c.h:144</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="serial_8c_html_a6f8059414f0228f0256115e024eeed4b"><div class="ttname"><a href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00026">serial.c:26</a></div></div>
 <div class="ttc" id="group__i2c_html_ggae433e858ea905e29d6ac9a70bc79352ea7bf029a65bd3dbb742ad3e2bb7e10c6d"><div class="ttname"><a href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea7bf029a65bd3dbb742ad3e2bb7e10c6d">I2CTransTx</a></div><div class="ttdoc">transmit only transaction </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00047">i2c.h:47</a></div></div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
@@ -453,6 +452,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="ttc" id="group__i2c_html_ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91"><div class="ttname"><a href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91">I2CTransRx</a></div><div class="ttdoc">receive only transaction </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00048">i2c.h:48</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442adfa4e1bf79d0b917c2c6c473b0955cd3"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442adfa4e1bf79d0b917c2c6c473b0955cd3">I2CTransPending</a></div><div class="ttdoc">transaction is pending in queue </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00055">i2c.h:55</a></div></div>
 <div class="ttc" id="group__i2c_html_a5e18e74d9bc598907010196a760261fe"><div class="ttname"><a href="group__i2c.html#a5e18e74d9bc598907010196a760261fe">i2c_errors::ack_fail_cnt</a></div><div class="ttdeci">volatile uint16_t ack_fail_cnt</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00168">i2c.h:168</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2i2c__arch_8c.html">i2c_arch.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:01:48 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

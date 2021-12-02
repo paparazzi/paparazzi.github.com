@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,16 +130,16 @@ $(document).ready(function(){initNavTree('nav__poles_8c_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav__poles_8h.html">modules/nav/nav_poles.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">modules/nav/common_nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#a103739a39ce1e6679cf62244a2123326">   29</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326">nav_poles_count</a> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#a103739a39ce1e6679cf62244a2123326">   29</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326">nav_poles_count</a> = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#ac0c31b976dc6eb42d7b2780f1893fae8">   30</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles_time</a> = 0.;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#a76cdae76184bbc2f74791b7f5827d892">   31</a></span>&#160;<a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="nav__poles_8c.html#a76cdae76184bbc2f74791b7f5827d892">nav_poles_land</a> = 1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#a76cdae76184bbc2f74791b7f5827d892">   31</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="nav__poles_8c.html#a76cdae76184bbc2f74791b7f5827d892">nav_poles_land</a> = 1;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">   33</a></span>&#160;<span class="preprocessor">#define SAFETY_MARGIN 0.7</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#ae1ebfcfefd600a2c2c3252f10122371d">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="nav__poles_8c.html#ae1ebfcfefd600a2c2c3252f10122371d">nav_poles_init</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1c, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2c,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="nav__poles_8h.html#ae1ebfcfefd600a2c2c3252f10122371d">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="nav__poles_8c.html#ae1ebfcfefd600a2c2c3252f10122371d">nav_poles_init</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1c, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2c,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordtype">float</span> radius)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4">x</a> = <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2) - <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1);</div>
@@ -160,6 +160,7 @@ $(document).ready(function(){initNavTree('nav__poles_8c_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="ttc" id="nav__poles_8c_html_ae1ebfcfefd600a2c2c3252f10122371d"><div class="ttname"><a href="nav__poles_8c.html#ae1ebfcfefd600a2c2c3252f10122371d">nav_poles_init</a></div><div class="ttdeci">bool nav_poles_init(uint8_t wp1, uint8_t wp2, uint8_t wp1c, uint8_t wp2c, float radius)</div><div class="ttdoc">computes position of wp1c and wp2c, reference points for an oval around waypoints wp1 and wp2 ...</div><div class="ttdef"><b>Definition:</b> <a href="nav__poles_8c_source.html#l00037">nav_poles.c:37</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdoc">Typedef defining 8 bit char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00103">vl53l1_types.h:103</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a2d51bcd8e90e2dea91009f895a452a22"><div class="ttname"><a href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a></div><div class="ttdeci">#define WaypointX(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00045">common_nav.h:45</a></div></div>
 <div class="ttc" id="common__nav_8h_html"><div class="ttname"><a href="common__nav_8h.html">common_nav.h</a></div></div>
 <div class="ttc" id="nav__poles_8c_html_a103739a39ce1e6679cf62244a2123326"><div class="ttname"><a href="nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326">nav_poles_count</a></div><div class="ttdeci">uint8_t nav_poles_count</div><div class="ttdef"><b>Definition:</b> <a href="nav__poles_8c_source.html#l00029">nav_poles.c:29</a></div></div>
@@ -168,17 +169,16 @@ $(document).ready(function(){initNavTree('nav__poles_8c_source.html','');});
 <div class="ttc" id="common__nav_8h_html_a983349c9ccc3f390fafe929d3c9fdd16"><div class="ttname"><a href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a></div><div class="ttdeci">#define WaypointY(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00046">common_nav.h:46</a></div></div>
 <div class="ttc" id="nav__survey__poly__rotorcraft_8c_html_a2a5ef0ad00bc9e912a9aefcedf004cc4"><div class="ttname"><a href="nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4">Point2D::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="nav__launcher_8c_source.html#l00092">nav_launcher.c:92</a></div></div>
 <div class="ttc" id="nav__poles_8h_html"><div class="ttname"><a href="nav__poles_8h.html">nav_poles.h</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="nav__poles_8c_html_ac0c31b976dc6eb42d7b2780f1893fae8"><div class="ttname"><a href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles_time</a></div><div class="ttdeci">float nav_poles_time</div><div class="ttdef"><b>Definition:</b> <a href="nav__poles_8c_source.html#l00030">nav_poles.c:30</a></div></div>
-<div class="ttc" id="types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00015">types.h:15</a></div></div>
 <div class="ttc" id="nav__survey__poly__rotorcraft_8c_html_a989485fd2d8026ceec5d57e8c7e629ab"><div class="ttname"><a href="nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab">Point2D::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="nav__launcher_8c_source.html#l00093">nav_launcher.c:93</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__poles_8c.html">nav_poles.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

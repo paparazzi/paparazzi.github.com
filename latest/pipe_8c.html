@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('pipe_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2pipe_8c" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2pipe_8c" id="sw_2airborne_2mcu__periph_2pipe_8c">
-<area shape="rect" id="node2" href="pipe_8h.html" title="arch independent PIPE API " alt="" coords="101,95,241,121"/></map>
+</map>
 </div>
 </div>
 <p><a href="pipe_8c_source.html">Go to the source code of this file.</a></p>
@@ -133,13 +133,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a40e90c4a2dde2443236abd52917eec9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a40e90c4a2dde2443236abd52917eec9c">pipe_periph_init</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *read_name, char *write_name)</td></tr>
 <tr class="memdesc:a40e90c4a2dde2443236abd52917eec9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the PIPE peripheral.  <a href="#a40e90c4a2dde2443236abd52917eec9c">More...</a><br /></td></tr>
 <tr class="separator:a40e90c4a2dde2443236abd52917eec9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684edf11ecce1ddc81c2f502d0157fb0"><td class="memItemLeft" align="right" valign="top">int WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a684edf11ecce1ddc81c2f502d0157fb0">pipe_check_free_space</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:a684edf11ecce1ddc81c2f502d0157fb0"><td class="memItemLeft" align="right" valign="top">int WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a684edf11ecce1ddc81c2f502d0157fb0">pipe_check_free_space</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:a684edf11ecce1ddc81c2f502d0157fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is enough free space in the transmit buffer.  <a href="#a684edf11ecce1ddc81c2f502d0157fb0">More...</a><br /></td></tr>
 <tr class="separator:a684edf11ecce1ddc81c2f502d0157fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb">pipe_put_byte</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="memitem:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb">pipe_put_byte</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
 <tr class="memdesc:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one data byte to the tx buffer.  <a href="#a0a1e1d8557ee5800f8902cdc16d6c2cb">More...</a><br /></td></tr>
 <tr class="separator:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a626ccada048c39838bef85aa05447378"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a626ccada048c39838bef85aa05447378">pipe_put_buffer</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memitem:a626ccada048c39838bef85aa05447378"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a626ccada048c39838bef85aa05447378">pipe_put_buffer</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="separator:a626ccada048c39838bef85aa05447378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph.png" border="0" usemap="#pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph" alt=""/></div>
 <map name="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph" id="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph">
-<area shape="rect" id="node2" href="pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4" title="Initialize the PIPE peripheral. " alt="" coords="224,5,347,32"/></map>
+</map>
 </div>
 </p>
 
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph.png" border="0" usemap="#pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph" alt=""/></div>
 <map name="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph" id="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def" title="Initialize the PIPE peripheral. " alt="" coords="183,5,340,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2pipe__arch_8c.html#a9321cb9d258dc7cf5d63c1a826cb4da8" title="Get number of bytes available in receive buffer. " alt="" coords="188,56,335,83"/><area shape="rect" id="node4" href="pipe_8c.html#a684edf11ecce1ddc81c2f502d0157fb0" title="Check if there is enough free space in the transmit buffer. " alt="" coords="176,107,347,133"/><area shape="rect" id="node5" href="linux_2mcu__periph_2pipe__arch_8c.html#a97d6c27da74c8a17a29d7148fa60f0b1" title="Get the last character from the receive buffer. " alt="" coords="215,157,307,184"/><area shape="rect" id="node6" href="pipe_8c.html#a626ccada048c39838bef85aa05447378" title="pipe_put_buffer" alt="" coords="201,208,322,235"/><area shape="rect" id="node7" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb" title="Add one data byte to the tx buffer. " alt="" coords="205,259,317,285"/><area shape="rect" id="node8" href="linux_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631" title="Send a message. " alt="" coords="185,309,338,336"/></map>
+</map>
 </div>
 </p>
 
@@ -274,13 +274,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -304,7 +304,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c_a626ccada048c39838bef85aa05447378_icgraph.png" border="0" usemap="#pipe_8c_a626ccada048c39838bef85aa05447378_icgraph" alt=""/></div>
 <map name="pipe_8c_a626ccada048c39838bef85aa05447378_icgraph" id="pipe_8c_a626ccada048c39838bef85aa05447378_icgraph">
-<area shape="rect" id="node2" href="pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4" title="Initialize the PIPE peripheral. " alt="" coords="175,5,297,32"/></map>
+</map>
 </div>
 </p>
 
@@ -329,7 +329,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -362,7 +362,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c_a0a1e1d8557ee5800f8902cdc16d6c2cb_icgraph.png" border="0" usemap="#pipe_8c_a0a1e1d8557ee5800f8902cdc16d6c2cb_icgraph" alt=""/></div>
 <map name="pipe_8c_a0a1e1d8557ee5800f8902cdc16d6c2cb_icgraph" id="pipe_8c_a0a1e1d8557ee5800f8902cdc16d6c2cb_icgraph">
-<area shape="rect" id="node2" href="pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4" title="Initialize the PIPE peripheral. " alt="" coords="165,5,288,32"/></map>
+</map>
 </div>
 </p>
 
@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="pipe_8c.html">pipe.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:50 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

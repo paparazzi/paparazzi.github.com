@@ -5,6 +5,7 @@ var nav_8h =
     [ "Eight", "nav_8h.html#aefc5a52ca873a9bfb3e1d31a261338a4", null ],
     [ "GetAltRef", "nav_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
+    [ "GetPosHeight", "nav_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96", null ],
     [ "GetPosX", "nav_8h.html#ac500a50330425cb4a3054774289bb205", null ],
     [ "GetPosY", "nav_8h.html#a10961173ac6973d795af2f62eb67edca", null ],
     [ "HORIZONTAL_MODE_CIRCLE", "nav_8h.html#a5bfcd798f85be44cd7766b55ef9c9c08", null ],

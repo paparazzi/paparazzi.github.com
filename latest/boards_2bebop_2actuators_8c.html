@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,13 +115,13 @@ $(document).ready(function(){initNavTree('boards_2bebop_2actuators_8c.html','');
 
 <p>Actuator driver for the bebop and bebop 2.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="subsystems_2actuators_8h_source.html">subsystems/actuators.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="modules_2actuators_2actuators_8h_source.html">modules/actuators/actuators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="electrical_8h_source.html">modules/energy/electrical.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="boards_2bebop_2actuators_8h_source.html">actuators.h</a>&quot;</code><br />
 <code>#include &quot;led_hw.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for actuators.c:</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('boards_2bebop_2actuators_8c.html','');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2bebop_2actuators_8c__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2actuators_8c" alt=""/></div>
 <map name="sw_2airborne_2boards_2bebop_2actuators_8c" id="sw_2airborne_2boards_2bebop_2actuators_8c">
-<area shape="rect" id="node2" href="subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="1534,102,1710,129"/><area shape="rect" id="node7" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="781,191,953,218"/><area shape="rect" id="node8" href="boards_2bebop_2actuators_8h.html" title="Actuator driver for the bebop. " alt="" coords="381,102,476,129"/><area shape="rect" id="node13" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1322,102,1413,129"/><area shape="rect" id="node31" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1763,102,1897,129"/><area shape="rect" id="node33" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1979,95,2132,136"/><area shape="rect" id="node45" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="609,184,757,225"/><area shape="rect" id="node3" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1559,191,1655,218"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1846,281,1931,307"/><area shape="rect" id="node10" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="363,191,494,218"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="518,191,585,218"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="986,363,1165,389"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="469,363,660,389"/><area shape="rect" id="node24" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="760,273,911,315"/><area shape="rect" id="node26" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="585,273,736,315"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1037,273,1201,315"/><area shape="rect" id="node16" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="349,437,503,464"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1079,437,1229,464"/><area shape="rect" id="node25" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="736,363,860,389"/><area shape="rect" id="node34" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2587,363,2726,389"/><area shape="rect" id="node38" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2151,184,2304,225"/><area shape="rect" id="node41" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1956,273,2109,315"/><area shape="rect" id="node43" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2493,281,2687,307"/></map>
+</map>
 </div>
 </div>
 <p><a href="boards_2bebop_2actuators_8c_source.html">Go to the source code of this file.</a></p>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('boards_2bebop_2actuators_8c.html','');
 Functions</h2></td></tr>
 <tr class="memitem:a300d21db62f61c82383034ec1be1fd87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a300d21db62f61c82383034ec1be1fd87">send_bebop_actuators</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="separator:a300d21db62f61c82383034ec1be1fd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e7d18b02ea0d8803a375c6abd8bdb3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c">actuators_bebop_checksum</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *bytes, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
+<tr class="memitem:a9e7d18b02ea0d8803a375c6abd8bdb3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c">actuators_bebop_checksum</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *bytes, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size)</td></tr>
 <tr class="separator:a9e7d18b02ea0d8803a375c6abd8bdb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d22a22014bc845a6ce9246233cf2b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a37d22a22014bc845a6ce9246233cf2b5">actuators_bebop_init</a> (void)</td></tr>
 <tr class="separator:a37d22a22014bc845a6ce9246233cf2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +148,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7628ab56ea2153f536f4f32074053ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">led_hw_values</a></td></tr>
+<tr class="memitem:a7628ab56ea2153f536f4f32074053ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">led_hw_values</a></td></tr>
 <tr class="separator:a7628ab56ea2153f536f4f32074053ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade00d5b28d3900df3af16e192dc323f1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="boards_2bebop_2actuators_8h.html#structActuatorsBebop">ActuatorsBebop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boards_2bebop_2actuators_8c.html#ade00d5b28d3900df3af16e192dc323f1">actuators_bebop</a></td></tr>
 <tr class="separator:ade00d5b28d3900df3af16e192dc323f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,15 +166,15 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> actuators_bebop_checksum </td>
+          <td class="memname">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> actuators_bebop_checksum </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>bytes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2bebop_2actuators_8c_a9e7d18b02ea0d8803a375c6abd8bdb3c_icgraph.png" border="0" usemap="#boards_2bebop_2actuators_8c_a9e7d18b02ea0d8803a375c6abd8bdb3c_icgraph" alt=""/></div>
 <map name="boards_2bebop_2actuators_8c_a9e7d18b02ea0d8803a375c6abd8bdb3c_icgraph" id="boards_2bebop_2actuators_8c_a9e7d18b02ea0d8803a375c6abd8bdb3c_icgraph">
-<area shape="rect" id="node2" href="boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title="actuators_bebop_commit" alt="" coords="256,5,443,32"/></map>
+</map>
 </div>
 </p>
 
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">73</a> of file <a class="el" href="boards_2bebop_2actuators_8c_source.html">actuators.c</a>.</p>
 
-<p>References <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00058">actuators_bebop</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00144">actuators_bebop_checksum()</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00043">ACTUATORS_BEBOP_CLEAR_ERROR</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00039">ACTUATORS_BEBOP_GET_OBS_DATA</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00038">ACTUATORS_BEBOP_SET_REF_SPEED</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00040">ACTUATORS_BEBOP_START_PROP</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00042">ACTUATORS_BEBOP_STOP_PROP</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00041">ACTUATORS_BEBOP_TOGGLE_GPIO</a>, <a class="el" href="autopilot_8c_source.html#l00212">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00200">autopilot_set_motors_on()</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8c_source.html#l00403">i2c_blocking_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00359">i2c_blocking_transmit()</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00049">ActuatorsBebop::i2c_trans</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00052">ActuatorsBebop::led</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00068">led_hw_values</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00051">ActuatorsBebop::rpm_obs</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00050">ActuatorsBebop::rpm_ref</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00420">RPM_SENSOR_ID</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00058">actuators_bebop</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00144">actuators_bebop_checksum()</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00043">ACTUATORS_BEBOP_CLEAR_ERROR</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00039">ACTUATORS_BEBOP_GET_OBS_DATA</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00038">ACTUATORS_BEBOP_SET_REF_SPEED</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00040">ACTUATORS_BEBOP_START_PROP</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00042">ACTUATORS_BEBOP_STOP_PROP</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00041">ACTUATORS_BEBOP_TOGGLE_GPIO</a>, <a class="el" href="autopilot_8c_source.html#l00212">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00200">autopilot_set_motors_on()</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8c_source.html#l00403">i2c_blocking_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00359">i2c_blocking_transmit()</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00049">ActuatorsBebop::i2c_trans</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00052">ActuatorsBebop::led</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00068">led_hw_values</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00051">ActuatorsBebop::rpm_obs</a>, <a class="el" href="boards_2bebop_2actuators_8h_source.html#l00050">ActuatorsBebop::rpm_ref</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00436">RPM_SENSOR_ID</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -234,7 +234,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2bebop_2actuators_8c_ad8f645b7663a54e01ba60403a1e45645_cgraph.png" border="0" usemap="#boards_2bebop_2actuators_8c_ad8f645b7663a54e01ba60403a1e45645_cgraph" alt=""/></div>
 <map name="boards_2bebop_2actuators_8c_ad8f645b7663a54e01ba60403a1e45645_cgraph" id="boards_2bebop_2actuators_8c_ad8f645b7663a54e01ba60403a1e45645_cgraph">
-<area shape="rect" id="node2" href="boards_2bebop_2actuators_8c.html#a9e7d18b02ea0d8803a375c6abd8bdb3c" title="actuators_bebop_checksum" alt="" coords="240,5,443,32"/><area shape="rect" id="node3" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="250,56,433,83"/><area shape="rect" id="node4" href="autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="251,107,432,133"/><area shape="rect" id="node7" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="255,212,427,239"/><area shape="rect" id="node10" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="261,161,421,188"/><area shape="rect" id="node5" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title="autopilot_generated\l_set_motors_on" alt="" coords="491,31,641,73"/><area shape="rect" id="node6" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title="autopilot_static_set\l_motors_on" alt="" coords="493,97,639,138"/><area shape="rect" id="node8" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="521,163,611,189"/><area shape="rect" id="node9" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="495,213,637,240"/></map>
+</map>
 </div>
 </p>
 
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2bebop_2actuators_8c_a37d22a22014bc845a6ce9246233cf2b5_cgraph.png" border="0" usemap="#boards_2bebop_2actuators_8c_a37d22a22014bc845a6ce9246233cf2b5_cgraph" alt=""/></div>
 <map name="boards_2bebop_2actuators_8c_a37d22a22014bc845a6ce9246233cf2b5_cgraph" id="boards_2bebop_2actuators_8c_a37d22a22014bc845a6ce9246233cf2b5_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="209,5,407,32"/><area shape="rect" id="node3" href="boards_2bebop_2actuators_8c.html#a300d21db62f61c82383034ec1be1fd87" title="send_bebop_actuators" alt="" coords="224,56,392,83"/></map>
+</map>
 </div>
 </p>
 
@@ -316,7 +316,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="boards_2bebop_2actuators_8c_a300d21db62f61c82383034ec1be1fd87_icgraph.png" border="0" usemap="#boards_2bebop_2actuators_8c_a300d21db62f61c82383034ec1be1fd87_icgraph" alt=""/></div>
 <map name="boards_2bebop_2actuators_8c_a300d21db62f61c82383034ec1be1fd87_icgraph" id="boards_2bebop_2actuators_8c_a300d21db62f61c82383034ec1be1fd87_icgraph">
-<area shape="rect" id="node2" href="boards_2bebop_2actuators_8h.html#a37d22a22014bc845a6ce9246233cf2b5" title="actuators_bebop_init" alt="" coords="221,5,377,32"/></map>
+</map>
 </div>
 </p>
 
@@ -344,7 +344,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> led_hw_values</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> led_hw_values</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -359,7 +359,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="boards_2bebop_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:36 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

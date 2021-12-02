@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/ins/vf_float.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ins/vf_float.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,18 +116,18 @@ $(document).ready(function(){initNavTree('vf__float_8c.html','');});
 
 <p>Vertical filter (in float) estimating altitude, velocity and accel bias.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="vf__float_8h_source.html">subsystems/ins/vf_float.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="vf__float_8h_source.html">modules/ins/vf_float.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for vf_float.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vf__float_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2vf__float_8c" alt=""/></div>
-<map name="sw_2airborne_2subsystems_2ins_2vf__float_8c" id="sw_2airborne_2subsystems_2ins_2vf__float_8c">
-<area shape="rect" id="node2" href="vf__float_8h.html" title="Vertical filter (in float) estimating altitude, velocity and accel bias. " alt="" coords="5,102,188,129"/><area shape="rect" id="node5" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="696,95,849,136"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="935,363,1074,389"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="696,184,849,225"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1071,281,1157,307"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="499,273,652,315"/><area shape="rect" id="node16" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="676,281,869,307"/></map>
+<div class="center"><img src="vf__float_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2vf__float_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ins_2vf__float_8c" id="sw_2airborne_2modules_2ins_2vf__float_8c">
+</map>
 </div>
 </div>
 <p><a href="vf__float_8c_source.html">Go to the source code of this file.</a></p>
@@ -298,7 +298,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a6b7b25ece5d9e0f117da37b8aa5d69aa_icgraph.png" border="0" usemap="#vf__float_8c_a6b7b25ece5d9e0f117da37b8aa5d69aa_icgraph" alt=""/></div>
 <map name="vf__float_8c_a6b7b25ece5d9e0f117da37b8aa5d69aa_icgraph" id="vf__float_8c_a6b7b25ece5d9e0f117da37b8aa5d69aa_icgraph">
-<area shape="rect" id="node2" href="vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455" title="vff_init" alt="" coords="128,5,191,32"/><area shape="rect" id="node3" href="vf__float_8c.html#a2358072559748851df8c44c975c43ebb" title="vff_init_zero" alt="" coords="239,5,337,32"/></map>
+</map>
 </div>
 </p>
 
@@ -349,7 +349,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a0b39a581ab3b41a47578b26dd98f567f_icgraph.png" border="0" usemap="#vf__float_8c_a0b39a581ab3b41a47578b26dd98f567f_icgraph" alt=""/></div>
 <map name="vf__float_8c_a0b39a581ab3b41a47578b26dd98f567f_icgraph" id="vf__float_8c_a0b39a581ab3b41a47578b26dd98f567f_icgraph">
-<area shape="rect" id="node2" href="vf__float_8c.html#a7d74fd7f8f95cece04e3c147e409f935" title="vff_update_vz_conf" alt="" coords="176,5,320,32"/></map>
+</map>
 </div>
 </p>
 
@@ -403,7 +403,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_aafd7012999c4a5c623b6b6f311ec595a_icgraph.png" border="0" usemap="#vf__float_8c_aafd7012999c4a5c623b6b6f311ec595a_icgraph" alt=""/></div>
 <map name="vf__float_8c_aafd7012999c4a5c623b6b6f311ec595a_icgraph" id="vf__float_8c_aafd7012999c4a5c623b6b6f311ec595a_icgraph">
-<area shape="rect" id="node2" href="vf__float_8h.html#a067f2a1bed73d1940c35450706a56265" title="vff_update" alt="" coords="192,5,281,32"/><area shape="rect" id="node5" href="vf__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67" title="vff_update_z_conf" alt="" coords="168,56,305,83"/><area shape="rect" id="node3" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="353,5,427,32"/><area shape="rect" id="node4" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="475,5,564,32"/></map>
+</map>
 </div>
 </p>
 
@@ -452,7 +452,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_cgraph.png" border="0" usemap="#vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_cgraph" alt=""/></div>
 <map name="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_cgraph" id="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="116,5,313,32"/><area shape="rect" id="node3" href="vf__float_8c.html#a6b7b25ece5d9e0f117da37b8aa5d69aa" title="send_vff" alt="" coords="177,56,252,83"/></map>
+</map>
 </div>
 </p>
 
@@ -463,7 +463,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_icgraph.png" border="0" usemap="#vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_icgraph" alt=""/></div>
 <map name="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_icgraph" id="vf__float_8c_a29db6a6034952b28118ae9ea1ec00ca4_icgraph">
-<area shape="rect" id="node2" href="vf__float_8c.html#a2358072559748851df8c44c975c43ebb" title="vff_init_zero" alt="" coords="116,5,215,32"/></map>
+</map>
 </div>
 </p>
 
@@ -494,7 +494,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a2358072559748851df8c44c975c43ebb_cgraph.png" border="0" usemap="#vf__float_8c_a2358072559748851df8c44c975c43ebb_cgraph" alt=""/></div>
 <map name="vf__float_8c_a2358072559748851df8c44c975c43ebb_cgraph" id="vf__float_8c_a2358072559748851df8c44c975c43ebb_cgraph">
-<area shape="rect" id="node2" href="vf__extended__float_8c.html#a58d1d46b9c74fc909cc7d08e097a35fa" title="vff_init" alt="" coords="152,31,215,57"/><area shape="rect" id="node3" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="263,5,460,32"/><area shape="rect" id="node4" href="vf__extended__float_8c.html#a6f545e95565f004f9cc58933d7bc1ccb" title="send_vffe" alt="" coords="320,56,403,83"/></map>
+</map>
 </div>
 </p>
 
@@ -533,7 +533,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vf__float_8c_source.html#l00108">108</a> of file <a class="el" href="vf__float_8c_source.html">vf_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8h_source.html#l00049">VffExtended::accel_noise</a>, <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00047">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00065">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00083">Qobsobs</a>, <a class="el" href="vf__extended__float_8c_source.html#l00082">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00096">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00089">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00043">VffExtended::zdotdot</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8h_source.html#l00049">VffExtended::accel_noise</a>, <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00047">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00065">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00083">Qobsobs</a>, <a class="el" href="vf__extended__float_8c_source.html#l00082">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00096">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00089">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00043">VffExtended::zdotdot</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -542,7 +542,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_aa41dcb159a3384aadce98d6f89e82eca_cgraph.png" border="0" usemap="#vf__float_8c_aa41dcb159a3384aadce98d6f89e82eca_cgraph" alt=""/></div>
 <map name="vf__float_8c_aa41dcb159a3384aadce98d6f89e82eca_cgraph" id="vf__float_8c_aa41dcb159a3384aadce98d6f89e82eca_cgraph">
-<area shape="rect" id="node2" href="vf__extended__float_8c.html#a6f545e95565f004f9cc58933d7bc1ccb" title="send_vffe" alt="" coords="164,5,247,32"/></map>
+</map>
 </div>
 </p>
 
@@ -586,7 +586,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00047">VFF_MEAS_NOISE</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00337">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00328">baro_cb()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -595,7 +595,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a067f2a1bed73d1940c35450706a56265_cgraph.png" border="0" usemap="#vf__float_8c_a067f2a1bed73d1940c35450706a56265_cgraph" alt=""/></div>
 <map name="vf__float_8c_a067f2a1bed73d1940c35450706a56265_cgraph" id="vf__float_8c_a067f2a1bed73d1940c35450706a56265_cgraph">
-<area shape="rect" id="node2" href="vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="Update altitude. " alt="" coords="143,5,257,32"/></map>
+</map>
 </div>
 </p>
 
@@ -606,7 +606,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a067f2a1bed73d1940c35450706a56265_icgraph.png" border="0" usemap="#vf__float_8c_a067f2a1bed73d1940c35450706a56265_icgraph" alt=""/></div>
 <map name="vf__float_8c_a067f2a1bed73d1940c35450706a56265_icgraph" id="vf__float_8c_a067f2a1bed73d1940c35450706a56265_icgraph">
-<area shape="rect" id="node2" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="143,5,216,32"/><area shape="rect" id="node3" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="264,5,353,32"/></map>
+</map>
 </div>
 </p>
 
@@ -647,7 +647,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a7d74fd7f8f95cece04e3c147e409f935_cgraph.png" border="0" usemap="#vf__float_8c_a7d74fd7f8f95cece04e3c147e409f935_cgraph" alt=""/></div>
 <map name="vf__float_8c_a7d74fd7f8f95cece04e3c147e409f935_cgraph" id="vf__float_8c_a7d74fd7f8f95cece04e3c147e409f935_cgraph">
-<area shape="rect" id="node2" href="vf__extended__float_8c.html#a0b39a581ab3b41a47578b26dd98f567f" title="update_vz_conf" alt="" coords="197,5,320,32"/></map>
+</map>
 </div>
 </p>
 
@@ -688,7 +688,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c_a383a56a1eaa73890c3b6ca0599c3fb67_cgraph.png" border="0" usemap="#vf__float_8c_a383a56a1eaa73890c3b6ca0599c3fb67_cgraph" alt=""/></div>
 <map name="vf__float_8c_a383a56a1eaa73890c3b6ca0599c3fb67_cgraph" id="vf__float_8c_a383a56a1eaa73890c3b6ca0599c3fb67_cgraph">
-<area shape="rect" id="node2" href="vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c" title="Update sensor &quot;without&quot; offset (gps, sonar) H = [1 0 0 0 &#45;1]; // state residual y = rangemeter &#45; H * ..." alt="" coords="191,5,315,32"/><area shape="rect" id="node3" href="vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="Update altitude. " alt="" coords="195,56,310,83"/></map>
+</map>
 </div>
 </p>
 
@@ -716,8 +716,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="vf__float_8c.html">vf_float.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:23 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="vf__float_8c.html">vf_float.c</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

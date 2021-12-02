@@ -15,7 +15,6 @@ var searchData=
   ['tfmini',['TFMini',['../tfmini_8h.html#structTFMini',1,'']]],
   ['tfminii2c',['TFMiniI2C',['../tfmini__i2c_8h.html#structTFMiniI2C',1,'']]],
   ['throttle_5fcurve_5ft',['throttle_curve_t',['../throttle__curve_8h.html#structthrottle__curve__t',1,'']]],
-  ['tlinecoding',['TLineCoding',['../lpc21_2usb__ser__hw_8c.html#structTLineCoding',1,'']]],
   ['tlsf_5fstat_5ft',['tlsf_stat_t',['../tlsf__malloc_8h.html#structtlsf__stat__t',1,'']]],
   ['typekalman',['TypeKalman',['../alt__filter_8h.html#structTypeKalman',1,'']]]
 ];

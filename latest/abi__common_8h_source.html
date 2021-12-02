@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/abi_common.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/core/abi_common.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,12 +137,12 @@ $(document).ready(function(){initNavTree('abi__common_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__int_8h.html">math/pprz_algebra_int.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__float_8h.html">math/pprz_algebra_float.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">subsystems/gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">modules/gps/gps.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Include here headers with structure definition you may want to use with ABI</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * Ex: &#39;#include &quot;subsystems/gps.h&quot;&#39; in order to use the GpsState structure</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * Ex: &#39;#include &quot;modules/gps/gps.h&quot;&#39; in order to use the GpsState structure</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi__sender__ids_8h.html">subsystems/abi_sender_ids.h</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi__sender__ids_8h.html">modules/core/abi_sender_ids.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* Some magic to avoid to compile C code, only headers */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef ABI_C</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('abi__common_8h_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="abi__common_8h.html#a33ca5208b218192431b8ff3d3545ed0c">   62</a></span>&#160;<span class="preprocessor">#define ABI_DISABLE 0</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="abi__common_8h.html">   65</a></span>&#160;<span class="keyword">struct </span><a class="code" href="abi__common_8h.html#structabi__struct">abi_struct</a> {</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">   66</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">id</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">   66</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">id</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="abi__common_8h.html#a23dc086b1bb6e46dd1a64c61898adb8e">   67</a></span>&#160;  <a class="code" href="abi__common_8h.html#a60fc9c2e76086d10f1b1685b36febfb1">abi_callback</a> <a class="code" href="abi__common_8h.html#a23dc086b1bb6e46dd1a64c61898adb8e">cb</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="abi__common_8h.html#a0f12b8ecbd52b669ab15322de34a94be">   68</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="abi__common_8h.html#structabi__struct">abi_struct</a> *<a class="code" href="abi__common_8h.html#a0f12b8ecbd52b669ab15322de34a94be">next</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
@@ -175,18 +175,18 @@ $(document).ready(function(){initNavTree('abi__common_8h_source.html','');});
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="abi__common_8h_html_a3a19b7c2767b85e86b5f1075d2fdb538"><div class="ttname"><a href="abi__common_8h.html#a3a19b7c2767b85e86b5f1075d2fdb538">abi_struct::id</a></div><div class="ttdeci">uint8_t id</div><div class="ttdef"><b>Definition:</b> <a href="abi__common_8h_source.html#l00066">abi_common.h:66</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="abi__sender__ids_8h_html"><div class="ttname"><a href="abi__sender__ids_8h.html">abi_sender_ids.h</a></div><div class="ttdoc">Convenience defines for ABI sender IDs. </div></div>
 <div class="ttc" id="abi__common_8h_html_a0f12b8ecbd52b669ab15322de34a94be"><div class="ttname"><a href="abi__common_8h.html#a0f12b8ecbd52b669ab15322de34a94be">abi_struct::next</a></div><div class="ttdeci">struct abi_struct * next</div><div class="ttdef"><b>Definition:</b> <a href="abi__common_8h_source.html#l00068">abi_common.h:68</a></div></div>
 <div class="ttc" id="abi__common_8h_html_a23dc086b1bb6e46dd1a64c61898adb8e"><div class="ttname"><a href="abi__common_8h.html#a23dc086b1bb6e46dd1a64c61898adb8e">abi_struct::cb</a></div><div class="ttdeci">abi_callback cb</div><div class="ttdef"><b>Definition:</b> <a href="abi__common_8h_source.html#l00067">abi_common.h:67</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="abi__common_8h.html">abi_common.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="abi__common_8h.html">abi_common.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

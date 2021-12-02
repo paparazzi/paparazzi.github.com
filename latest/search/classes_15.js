@@ -15,7 +15,6 @@ var searchData=
   ['vi_5fgps_5finfo',['Vi_gps_info',['../vi_8h.html#structVi__gps__info',1,'']]],
   ['vi_5fimu_5finfo',['Vi_imu_info',['../vi_8h.html#structVi__imu__info',1,'']]],
   ['vi_5finfo',['Vi_info',['../vi_8h.html#structVi__info',1,'']]],
-  ['vicregs_5ft',['vicRegs_t',['../lpcVIC_8h.html#structvicRegs__t',1,'']]],
   ['video_5fconfig_5ft',['video_config_t',['../video__device_8h.html#structvideo__config__t',1,'']]],
   ['video_5flistener',['video_listener',['../cv_8h.html#structvideo__listener',1,'']]],
   ['video_5fthread_5ft',['video_thread_t',['../video__device_8h.html#structvideo__thread__t',1,'']]],

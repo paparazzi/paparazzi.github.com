@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,7 +156,12 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 </li>
 <li>a
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a97e17c94b0bfdfa38a2b0fd313e6c93f">HorizontalGuidanceGains</a>
-, <a class="el" href="common__nav_8h.html#a7bb43530a17e55615fa418ff9f914991">point</a>
+</li>
+<li>A
+: <a class="el" href="linear__kalman__filter_8h.html#ab6171e128f76d0ebdeacae08286f7937">linear_kalman_filter</a>
+</li>
+<li>a
+: <a class="el" href="common__nav_8h.html#a7bb43530a17e55615fa418ff9f914991">point</a>
 , <a class="el" href="low__pass__filter_8h.html#a86634a959db6a792bb43f58d58595155">SecondOrderLowPass</a>
 , <a class="el" href="low__pass__filter_8h.html#aee6b90f737870f757db7e54752fe599a">SecondOrderLowPass_int</a>
 </li>
@@ -171,9 +176,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 </li>
 <li>A_Z_pilot
 : <a class="el" href="flight__gear_8h.html#aa9316abba45e2b58b6eb94b5cfc257a6">FGNetFDM</a>
-</li>
-<li>absolute
-: <a class="el" href="lisa__l_2baro__board_8c.html#a3bfeaebe45a76d071b0d3c0565e57a55">BaroBoard</a>
 </li>
 <li>ac1
 : <a class="el" href="bmp085_8h.html#aaa0836154f063ceb898f536e933aeec7">Bmp085Calib</a>
@@ -324,7 +326,7 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 , <a class="el" href="mpu9250_8h.html#acc1cbb496e5ea43bf9a0794045c7573e">Mpu9250Config</a>
 </li>
 <li>accel_rate
-: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#ab567b3ed142c269b46993e249947a03c">ActuatorsMD25</a>
+: <a class="el" href="actuators__md25_8h.html#ab567b3ed142c269b46993e249947a03c">ActuatorsMD25</a>
 </li>
 <li>accel_stamp
 : <a class="el" href="ins__ekf2_8cpp.html#a20d705c742476c23290d91a4e5f4b7c1">ekf2_t</a>
@@ -416,8 +418,7 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a4db6ada614c6e81fa95c1cd0c9f85b59">_crrcsim</a>
 , <a class="el" href="battery__monitor_8h.html#a9e53abf5e5b1b67ac8d4458839c11e51">BatMonBal</a>
 , <a class="el" href="battery__monitor_8h.html#acb18980381b447eea12be3af6a1da8ef">BatMonBus</a>
-, <a class="el" href="config__mkk__v2_8h.html#a287e3762a80a171b0d1fbc036f1515b4">config_mkk_v2_struct</a>
-, <a class="el" href="stm32_2subsystems_2settings__arch_8c.html#a1aa5b8f990702e097bda602bc2464014">FlashInfo</a>
+, <a class="el" href="stm32_2modules_2core_2settings__arch_8c.html#a1aa5b8f990702e097bda602bc2464014">FlashInfo</a>
 , <a class="el" href="i2c__smbus_8h.html#a9be257e05859e69552791192b68a8654">i2c_msg</a>
 , <a class="el" href="lidar__lite_8h.html#a503dd9353fea934d9ff9d0d89a79b8d3">LidarLite</a>
 , <a class="el" href="lidar__sf11_8h.html#a7c5338bf83409ab65658961de1d2f92a">LidarSF11</a>
@@ -430,13 +431,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>addr_out
 : <a class="el" href="udp__socket_8h.html#abb49855d3808c060eb3f3093309217bf">UdpSocket</a>
 </li>
-<li>adr
-: <a class="el" href="lpcI2C_8h.html#ab8daa70eaa99aa81b4413a68697874f1">i2cRegs_t</a>
-</li>
-<li>adxl
-: <a class="el" href="imu__navgo_8h.html#a5a28d3ca17282628544ddec886b50c8c">ImuNavgo</a>
-, <a class="el" href="imu__umarim_8h.html#ab758ab22dad05ac4039ac30bfd41eb06">ImuUmarim</a>
-</li>
 <li>ae_histogram_y
 : <a class="el" href="avi__isp__statistics__yuv_8h.html#a6304234ef22f0f18a5cf6a74402de289">avi_isp_statistics_yuv_ae_histogram_y_regs</a>
 </li>
@@ -445,9 +439,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 </li>
 <li>ae_nb_valid_y
 : <a class="el" href="avi__isp__statistics__yuv_8h.html#a12898e0ba15925cc42ec27405b6d9d48">avi_isp_statistics_yuv_regs</a>
-</li>
-<li>afmr
-: <a class="el" href="lpcCAN_8h.html#af259dd418e2cb796e748ceb0a3b494c8">can_accept_Regs_t</a>
 </li>
 <li>afrh
 : <a class="el" href="tawaki_2chibios_2common_2board_8c.html#a1d1b43e61f60097e62847a7bc0085c6d">gpio_setup_t</a>
@@ -516,24 +507,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 : <a class="el" href="hott__eam_8h.html#a045fe8a16a9fc1b2f3e67103d2198dfa">HOTT_EAM_MSG</a>
 , <a class="el" href="hott__gam_8h.html#ad61552d7dd008dfbf3da63e46bbb94d4">HOTT_GAM_MSG</a>
 </li>
-<li>aldom
-: <a class="el" href="lpcRTC_8h.html#adade03ff10d714827c68f600710efb6e">rtcRegs_t</a>
-</li>
-<li>aldow
-: <a class="el" href="lpcRTC_8h.html#a3ce2c6f73a671992282ec888401a3119">rtcRegs_t</a>
-</li>
-<li>aldoy
-: <a class="el" href="lpcRTC_8h.html#a4d876106a21fa762754a7ef0869cdea7">rtcRegs_t</a>
-</li>
-<li>alhour
-: <a class="el" href="lpcRTC_8h.html#af6db3379f1c06024dd3e19e9dcb1ed87">rtcRegs_t</a>
-</li>
-<li>almin
-: <a class="el" href="lpcRTC_8h.html#abe5eabb4287fad87034417572b0238cf">rtcRegs_t</a>
-</li>
-<li>almon
-: <a class="el" href="lpcRTC_8h.html#a61826b111c03390ed48967f8be7262ca">rtcRegs_t</a>
-</li>
 <li>alpha
 : <a class="el" href="avi__isp__green__imbalance_8h.html#af90977e8272c0c1259efbe21be3eeb50">avi_isp_green_imbalance_regs</a>
 , <a class="el" href="avi__isp__lens__shading__correction_8h.html#a9762909d20935d5de711dccd55d78597">avi_isp_lens_shading_correction_regs</a>
@@ -554,9 +527,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 </li>
 <li>alpha_rep
 : <a class="el" href="nav__fish_8h.html#a9a579fe213914f768154d09c6e0b50cd">NavFishParams</a>
-</li>
-<li>alsec
-: <a class="el" href="lpcRTC_8h.html#ae740d2ef943531e484818136e56e528f">rtcRegs_t</a>
 </li>
 <li>alt
 : <a class="el" href="potential_8h.html#a827437d885654cccb823a5195b61c904">force_</a>
@@ -602,9 +572,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <li>altitude_L
 : <a class="el" href="hott__gam_8h.html#a7e03a5584c1cb6e38a5b607f935838de">HOTT_GAM_MSG</a>
 </li>
-<li>alyear
-: <a class="el" href="lpcRTC_8h.html#ae36ad71757d28f6ce4bcddb33dcbe26d">rtcRegs_t</a>
-</li>
 <li>Ambient
 : <a class="el" href="vl53l1x__api_8h.html#a25f7a69860763da776f6e4e678f00d8d">VL53L1X_Result_t</a>
 </li>
@@ -613,9 +580,6 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 </li>
 <li>amps
 : <a class="el" href="esc32_8h.html#a4f8bf86dcb28e1ce5e2afc7e1fb8a760">esc32_parameter</a>
-</li>
-<li>amr
-: <a class="el" href="lpcRTC_8h.html#aedc31b93ef12939214ff2924768ff6ab">rtcRegs_t</a>
 </li>
 <li>amsl_baro
 : <a class="el" href="air__data_8h.html#ac6f9112bd914d719c539b5e8a6cac5ff">AirData</a>
@@ -762,7 +726,7 @@ $(document).ready(function(){initNavTree('functions_a.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

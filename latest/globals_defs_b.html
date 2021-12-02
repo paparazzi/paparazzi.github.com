@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
 </li>
 <li>B19200
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">uart_arch.h</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">uart_arch.h</a>
 </li>
 <li>B230400
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#aa0a8a3b09c593c7be5bfbbeb09f14d76">uart_arch.h</a>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ab282ae5b7fb59155ee42d1b6c9a80683">uart_arch.h</a>
 </li>
 <li>B460800
-: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#a644a0912fa1e82fd24c0516b4723ee59">uart_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a644a0912fa1e82fd24c0516b4723ee59">uart_arch.h</a>
 </li>
 <li>B4800
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a3b0ce0abd5ad4af8d485c843c9bab66c">uart_arch.h</a>
@@ -196,25 +196,25 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a4bde6a10c31adfe1959fb9724e13029a">uart_arch.h</a>
 </li>
 <li>B921600
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ae2d3cdb046f933a4a6ccd5497516c2a5">uart_arch.h</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#ae2d3cdb046f933a4a6ccd5497516c2a5">uart_arch.h</a>
 </li>
 <li>B9600
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ad0539916b8412eb7ddfb9ae02aff0853">uart_arch.h</a>
 </li>
 <li>B_PORT
-: <a class="el" href="stm32_2uart__tunnel_8c.html#a04e1bd382a6de1a30d813bb79f30fb02">uart_tunnel.c</a>
+: <a class="el" href="uart__tunnel_8c.html#a04e1bd382a6de1a30d813bb79f30fb02">uart_tunnel.c</a>
 </li>
 <li>B_RX_PIN
-: <a class="el" href="stm32_2uart__tunnel_8c.html#ac1f86edb95bffd5eb238fb8b277a4666">uart_tunnel.c</a>
+: <a class="el" href="uart__tunnel_8c.html#ac1f86edb95bffd5eb238fb8b277a4666">uart_tunnel.c</a>
 </li>
 <li>B_RX_PORT
-: <a class="el" href="stm32_2uart__tunnel_8c.html#a802c2bad362cd1775c32326fd9213a43">uart_tunnel.c</a>
+: <a class="el" href="uart__tunnel_8c.html#a802c2bad362cd1775c32326fd9213a43">uart_tunnel.c</a>
 </li>
 <li>B_TX_PIN
-: <a class="el" href="stm32_2uart__tunnel_8c.html#a6f627851b2b92357f80af1678332fda3">uart_tunnel.c</a>
+: <a class="el" href="uart__tunnel_8c.html#a6f627851b2b92357f80af1678332fda3">uart_tunnel.c</a>
 </li>
 <li>B_TX_PORT
-: <a class="el" href="stm32_2uart__tunnel_8c.html#ad1eb6b3cc7f11c95fd6e0d80a2b94e9e">uart_tunnel.c</a>
+: <a class="el" href="uart__tunnel_8c.html#ad1eb6b3cc7f11c95fd6e0d80a2b94e9e">uart_tunnel.c</a>
 </li>
 <li>BAL_PWR
 : <a class="el" href="opa__ftd__1_80_8h.html#abb8218bb570e01f31b31185080883903">opa_ftd_1.0.h</a>
@@ -230,9 +230,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BARO_ABS_ADDR
 : <a class="el" href="lisa__l_2baro__board_8c.html#ace745bd76b71236fdb1b581eab645ad8">baro_board.c</a>
-</li>
-<li>BARO_ABS_ADS
-: <a class="el" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">baro_board.c</a>
 </li>
 <li>BARO_AMSYS_ADDR
 : <a class="el" href="baro__amsys_8c.html#ae97d5440a6015931a421f899ba1ff7e7">baro_amsys.c</a>
@@ -391,8 +388,11 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#a183eeca5a0828655a16eaac3792b9c01">abi_sender_ids.h</a>
 </li>
 <li>BARO_MS5611_DT
-: <a class="el" href="baro__ms5611__spi_8h.html#ae0019d9183a58363fc28c2e2c6356d1c">baro_ms5611_spi.h</a>
-, <a class="el" href="baro__ms5611__i2c_8h.html#ae0019d9183a58363fc28c2e2c6356d1c">baro_ms5611_i2c.h</a>
+: <a class="el" href="baro__ms5611__i2c_8h.html#ae0019d9183a58363fc28c2e2c6356d1c">baro_ms5611_i2c.h</a>
+, <a class="el" href="baro__ms5611__spi_8h.html#ae0019d9183a58363fc28c2e2c6356d1c">baro_ms5611_spi.h</a>
+</li>
+<li>baro_ms5611_periodic
+: <a class="el" href="baro__ms5611__i2c_8h.html#a435bdf375c51437bd791094adcfccf41">baro_ms5611_i2c.h</a>
 </li>
 <li>BARO_MS5611_R
 : <a class="el" href="baro__ms5611__i2c_8h.html#a73ab789fe82b033e89be51be8b72b4dd">baro_ms5611_i2c.h</a>
@@ -404,9 +404,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BARO_MS5611_SIGMA2
 : <a class="el" href="baro__ms5611__i2c_8h.html#a9d2d6897b288382c3923d8180e16d6bc">baro_ms5611_i2c.h</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#a9d2d6897b288382c3923d8180e16d6bc">baro_ms5611_spi.h</a>
-</li>
-<li>BARO_PERIODIC_FREQUENCY
-: <a class="el" href="rover_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
 <li>BARO_SCP_IDLE
 : <a class="el" href="baro__scp__i2c_8h.html#a4a5962e918a5fc89f6f1092e261095d6">baro_scp_i2c.h</a>
@@ -595,12 +592,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BIT_X_IS_SET_IN_REG
 : <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96">i2c_arch.c</a>
-</li>
-<li>BITCONF_REVERSE_ROTATION
-: <a class="el" href="config__mkk__v2_8h.html#a230599862486926a541bc4f6dcbdd3ba">config_mkk_v2.h</a>
-</li>
-<li>BL_READMODE_CONFIG
-: <a class="el" href="config__mkk__v2_8c.html#a1711b702d11f359be27a1b5ce4e3d155">config_mkk_v2.c</a>
 </li>
 <li>BLINK_MIN
 : <a class="el" href="usb__tunnel_8c.html#ad8468070a9db37b05ec8c5cadfbfc733">usb_tunnel.c</a>
@@ -1434,6 +1425,12 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_ELLE0
 : <a class="el" href="elle0__common_8h.html#a090abba46e4f2f928311741c330230a3">elle0_common.h</a>
 </li>
+<li>BOARD_HOLYBRO_KAKUTE_F7
+: <a class="el" href="holybro__kakute__f7_8h.html#a5acf7e16666ce5c2b540a7d85d273d52">holybro_kakute_f7.h</a>
+</li>
+<li>BOARD_KAKUTE_F7
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a36f651ec32f75a293e9b8ccaf729da45">board.h</a>
+</li>
 <li>BOARD_KROOZ
 : <a class="el" href="krooz__sd_8h.html#aa5441a38066de616a7ce5dc93aa85111">krooz_sd.h</a>
 </li>
@@ -1448,8 +1445,8 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOARD_LISA_M
 : <a class="el" href="lisa__m__2_81_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
 </li>
 <li>BOARD_LISA_MX
 : <a class="el" href="lisa__mx__common_8h.html#ad5ab672ed99e0ed22b94b1b1712024ac">lisa_mx_common.h</a>
@@ -1467,14 +1464,14 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="mateksys_2F765-WING_2board_8h.html#aaa1cbbc0a7574c614aef0f3b8c5400cc">board.h</a>
 </li>
 <li>BOARD_NAME
-: <a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
 </li>
 <li>BOARD_NUCLEO144_F767ZI
-: <a class="el" href="nucleo144__f767zi_8h.html#aa2cba51a641c42207ffeab4679d63cbe">nucleo144_f767zi.h</a>
-, <a class="el" href="nucleo_2144__f767zi_2board_8h.html#aa2cba51a641c42207ffeab4679d63cbe">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#aa2cba51a641c42207ffeab4679d63cbe">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aa2cba51a641c42207ffeab4679d63cbe">nucleo144_f767zi.h</a>
 </li>
 <li>BOARD_OPA_AP
 : <a class="el" href="opa__ap__1_80_8h.html#a79346b769e18041fe740272f7e71f7b9">opa_ap_1.0.h</a>
@@ -1483,10 +1480,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="opa__ftd__1_80_8h.html#a53a97ed7cf029107941f36f5b233edf9">opa_ftd_1.0.h</a>
 </li>
 <li>BOARD_PX4FMU
-: <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
-, <a class="el" href="v4_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
-, <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
 , <a class="el" href="v5_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
 </li>
 <li>BOARD_PX4FMU_v2
@@ -1517,18 +1513,13 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_TAWAKI
 : <a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#af1e83b5f5dd84246b52f12166fc0db83">board.h</a>
 , <a class="el" href="tawaki_8h.html#af1e83b5f5dd84246b52f12166fc0db83">tawaki.h</a>
+, <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#af1e83b5f5dd84246b52f12166fc0db83">board.h</a>
 </li>
 <li>BOOT1
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
 </li>
 <li>BOOT1_PORT
 : <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#acefc565e5e08c7bc9387a49bbfc29715">board.h</a>
-</li>
-<li>BOOZ_ANALOG_BARO_THRESHOLD
-: <a class="el" href="booz_2baro__board_8c.html#a67c9aca109fecabd8d15c3ac9cc8dae7">baro_board.c</a>
-</li>
-<li>BOOZ_BARO_SENS
-: <a class="el" href="booz_2baro__board_8c.html#a42b58dac160e819c13b24569fa41b09b">baro_board.c</a>
 </li>
 <li>booz_fms_test_signal_SetMode
 : <a class="el" href="vi__test__signal_8h.html#a8679ab7e51aefc67f1fb69da905524ad">vi_test_signal.h</a>
@@ -1548,14 +1539,8 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>bottom_camera
 : <a class="el" href="mt9v117__nps_8c.html#a4f6ec70cccb53c205de6b69c246637c3">mt9v117_nps.c</a>
 </li>
-<li>BOUND
-: <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032">settings_arch.c</a>
-</li>
 <li>bswap_16
 : <a class="el" href="hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f">hmc5843.c</a>
-</li>
-<li>BSY
-: <a class="el" href="LPC21xx_8h.html#af9a90580df99520af90316de6949f41f">LPC21xx.h</a>
 </li>
 <li>BTN_ARMING
 : <a class="el" href="opa__ftd__1_80_8h.html#ac28196d4ab51f7421fd9cfa2bba3584f">opa_ftd_1.0.h</a>
@@ -1590,12 +1575,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BUFFER_ZONE_DIST
 : <a class="el" href="mission__rotorcraft__nav_8c.html#a7c8b310a7c7fc4c0a38adfd771de3f98">mission_rotorcraft_nav.c</a>
 </li>
-<li>BULK_IN_EP
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a2b14747c794ad7a348cd918e9df57d36">usb_ser_hw.c</a>
-</li>
-<li>BULK_OUT_EP
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#adc59cdd5baf21c8e5065bdfe7a5a928b">usb_ser_hw.c</a>
-</li>
 <li>BUNGEE_TAKEOFF_DISTANCE
 : <a class="el" href="nav__bungee__takeoff_8c.html#a818fb6e5edd84eb54a43e757b75149d2">nav_bungee_takeoff.c</a>
 </li>
@@ -1623,8 +1602,20 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BUTTON_SAFETY_GPIO_PORT
 : <a class="el" href="px4fmu__4_80_8h.html#ae8060b845988457d08a18c8efb24eb80">px4fmu_4.0.h</a>
 </li>
-<li>BUZZER_GPIO
-: <a class="el" href="hb__1_81_8h.html#a08a0ee9cbc67f32d977b57cfa32dab5a">hb_1.1.h</a>
+<li>BUZZER
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a145103118f6d9d1129aa4509cf214a13">board.h</a>
+</li>
+<li>BUZZER_TIM
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#ae260273dca4dda454add8d188e10244f">board.h</a>
+</li>
+<li>BUZZER_TIM_AF
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#abf751e72eb2e069ade5d26f7caadf39b">board.h</a>
+</li>
+<li>BUZZER_TIM_CH
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a9556bca2906f43b69bd6afcf470eab78">board.h</a>
+</li>
+<li>BUZZER_TIM_FN
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a0e2f3f9186e6e9f4e2fbc19d93b2ed58">board.h</a>
 </li>
 <li>byte
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">nps_fdm_crrcsim.c</a>
@@ -1635,7 +1626,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 29 2021 16:04:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

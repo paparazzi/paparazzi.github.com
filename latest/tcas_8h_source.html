@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define TCAS_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//#include &quot;subsystems/datalink/datalink.h&quot; // dl_buffer</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//#include &quot;modules/datalink/datalink.h&quot; // dl_buffer</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;pprzlink/messages.h&quot;</span>      <span class="comment">// TCAS_RA</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span>     <span class="comment">// AC_INFO</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="traffic__info_8h.html">modules/multi/traffic_info.h</a>&quot;</span></div>
@@ -148,12 +148,12 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="tcas_8h.html#ac534dbcaf8c181eaf295dd0aba94b569">   42</a></span>&#160;<span class="preprocessor">#define TCAS_RA 2</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">   43</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">tcas_resolve</a> { <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1ada2552e74426568eed9c7a08761db008">RA_NONE</a>, <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1a7f35f13f887669591786d5e26fbc6431">RA_LEVEL</a>, <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1af9aa818f0dad99575cc23dcd06c78dde">RA_CLIMB</a>, <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1a2e54857a4a34ea4d0041136523235b2d">RA_DESCEND</a> };</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#adce0d6444aa35c34165668f9a7467200">tcas_status</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#adce0d6444aa35c34165668f9a7467200">tcas_status</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keyword">enum</span> <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">tcas_resolve</a> <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">tcas_resolve</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#a7abd420a44111321cd2666c4bb329794">tcas_ac_RA</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#a7abd420a44111321cd2666c4bb329794">tcas_ac_RA</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="tcas_8h.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="tcas_8h.html#structtcas__ac__status">tcas_ac_status</a> {</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="tcas_8h.html#a84263e97504633f539e41aad6d183d1a">   50</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#a84263e97504633f539e41aad6d183d1a">status</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="tcas_8h.html#a84263e97504633f539e41aad6d183d1a">   50</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="tcas_8h.html#a84263e97504633f539e41aad6d183d1a">status</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="tcas_8h.html#a415f4bed7ba6cfa8c1ee181ba8054a4e">   51</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">tcas_resolve</a> <a class="code" href="tcas_8h.html#a415f4bed7ba6cfa8c1ee181ba8054a4e">resolve</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -165,8 +165,8 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="tcas_8h.html#a8a506736e0d5a76d185e828786c76f78">callTCAS</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="tcas_8h.html#a8afd38814e2cb73ac9d9356a5ed01abf">parseTcasResolve</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="tcas_8h.html#ae185ce235daae4473e5d90bab57684ad">parseTcasRA</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="tcas_8h.html#a8afd38814e2cb73ac9d9356a5ed01abf">parseTcasResolve</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="tcas_8h.html#ae185ce235daae4473e5d90bab57684ad">parseTcasRA</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TCAS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="tcas_8h_html_aa520d855e76e58f77855603fde040497"><div class="ttname"><a href="tcas_8h.html#aa520d855e76e58f77855603fde040497">tcas_periodic_task_4Hz</a></div><div class="ttdeci">void tcas_periodic_task_4Hz(void)</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00236">tcas.c:236</a></div></div>
@@ -185,7 +185,6 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div class="ttc" id="tcas_8h_html_a07deba9c3568731e07896ae2612e46a1af9aa818f0dad99575cc23dcd06c78dde"><div class="ttname"><a href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1af9aa818f0dad99575cc23dcd06c78dde">RA_CLIMB</a></div><div class="ttdef"><b>Definition:</b> <a href="tcas_8h_source.html#l00043">tcas.h:43</a></div></div>
 <div class="ttc" id="tcas_8h_html_a8a506736e0d5a76d185e828786c76f78"><div class="ttname"><a href="tcas_8h.html#a8a506736e0d5a76d185e828786c76f78">callTCAS</a></div><div class="ttdeci">void callTCAS(void)</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00065">tcas.c:65</a></div></div>
 <div class="ttc" id="tcas_8h_html_a396262a03772db7853eee2291f8e0c04"><div class="ttname"><a href="tcas_8h.html#a396262a03772db7853eee2291f8e0c04">tcas_alim</a></div><div class="ttdeci">float tcas_alim</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00036">tcas.c:36</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="tcas_8h_html_adce0d6444aa35c34165668f9a7467200"><div class="ttname"><a href="tcas_8h.html#adce0d6444aa35c34165668f9a7467200">tcas_status</a></div><div class="ttdeci">uint8_t tcas_status</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00038">tcas.c:38</a></div></div>
 <div class="ttc" id="tcas_8h_html_adb2f00821358ed6ad0f366e6a2422558"><div class="ttname"><a href="tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558">tcas_periodic_task_1Hz</a></div><div class="ttdeci">void tcas_periodic_task_1Hz(void)</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00117">tcas.c:117</a></div></div>
 <div class="ttc" id="tcas_8h_html_a2e66a196e4b5eed3d57f3599723aa4ee"><div class="ttname"><a href="tcas_8h.html#a2e66a196e4b5eed3d57f3599723aa4ee">tcas_tau_ra</a></div><div class="ttdeci">float tcas_tau_ra</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00036">tcas.c:36</a></div></div>
@@ -193,6 +192,7 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div class="ttc" id="tcas_8h_html_ae185ce235daae4473e5d90bab57684ad"><div class="ttname"><a href="tcas_8h.html#ae185ce235daae4473e5d90bab57684ad">parseTcasRA</a></div><div class="ttdeci">void parseTcasRA(uint8_t *buf)</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00095">tcas.c:95</a></div></div>
 <div class="ttc" id="tcas_8h_html_a464ab9be93b0bab52d30eb5300c7c008"><div class="ttname"><a href="tcas_8h.html#a464ab9be93b0bab52d30eb5300c7c008">tcas_dmod</a></div><div class="ttdeci">float tcas_dmod</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00036">tcas.c:36</a></div></div>
 <div class="ttc" id="traffic__info_8h_html"><div class="ttname"><a href="traffic__info_8h.html">traffic_info.h</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="tcas_8h_html_a07deba9c3568731e07896ae2612e46a1"><div class="ttname"><a href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1">tcas_resolve</a></div><div class="ttdeci">tcas_resolve</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8h_source.html#l00043">tcas.h:43</a></div></div>
 <div class="ttc" id="tcas_8h_html_a7e660e258c0e3ba4f90b3d7534073aa6"><div class="ttname"><a href="tcas_8h.html#a7e660e258c0e3ba4f90b3d7534073aa6">tcas_alt_setpoint</a></div><div class="ttdeci">float tcas_alt_setpoint</div><div class="ttdef"><b>Definition:</b> <a href="tcas_8c_source.html#l00035">tcas.c:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('tcas_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="tcas_8h.html">tcas.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

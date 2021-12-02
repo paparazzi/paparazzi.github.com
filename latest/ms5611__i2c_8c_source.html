@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ms5611__i2c_8h.html">peripherals/ms5611_i2c.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ms5611__i2c_8h.html#a17e23c3602297d6edbf19ad6d4bc1d8e">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c_init</a>(<span class="keyword">struct</span> <a class="code" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms, <span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ms5611__i2c_8h.html#a17e23c3602297d6edbf19ad6d4bc1d8e">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c_init</a>(<span class="keyword">struct</span> <a class="code" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms, <span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                     <span class="keywordtype">bool</span> is_ms5607)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">/* set i2c_peripheral */</span></div>
@@ -345,7 +345,6 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="ttc" id="ms5611__i2c_8c_html_aa7ea4f69e5b5ff916ac4571219d829e1"><div class="ttname"><a href="ms5611__i2c_8c.html#aa7ea4f69e5b5ff916ac4571219d829e1">ms5611_i2c_start_conversion</a></div><div class="ttdeci">void ms5611_i2c_start_conversion(struct Ms5611_I2c *ms)</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8c_source.html#l00062">ms5611_i2c.c:62</a></div></div>
 <div class="ttc" id="group__i2c_html_af0c94c610e2f7b712f06b87440849ab6"><div class="ttname"><a href="group__i2c.html#af0c94c610e2f7b712f06b87440849ab6">i2c_transaction::slave_addr</a></div><div class="ttdeci">uint8_t slave_addr</div><div class="ttdoc">Slave address. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00104">i2c.h:104</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00144">i2c.h:144</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="ms5611__i2c_8h_html_a4d158b2e88d395a24a4d533d301ff522"><div class="ttname"><a href="ms5611__i2c_8h.html#a4d158b2e88d395a24a4d533d301ff522">Ms5611_I2c::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00038">ms5611_i2c.h:38</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d">MS5611_STATUS_UNINIT</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00038">ms5611.h:38</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855ba23c27d3433584c763939fbe3ff3923a0"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba23c27d3433584c763939fbe3ff3923a0">MS5611_STATUS_ADC_D2</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00048">ms5611.h:48</a></div></div>
@@ -357,13 +356,14 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="ttc" id="ms5611__regs_8h_html_a6520eefa54bdf2cb763d745e3256bd2b"><div class="ttname"><a href="ms5611__regs_8h.html#a6520eefa54bdf2cb763d745e3256bd2b">MS5611_SOFT_RESET</a></div><div class="ttdeci">#define MS5611_SOFT_RESET</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__regs_8h_source.html#l00067">ms5611_regs.h:67</a></div></div>
 <div class="ttc" id="ms5611__regs_8h_html_a94a2476bb62db682aa6512deea1dc72a"><div class="ttname"><a href="ms5611__regs_8h.html#a94a2476bb62db682aa6512deea1dc72a">MS5611_START_CONV_D2</a></div><div class="ttdeci">#define MS5611_START_CONV_D2</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__regs_8h_source.html#l00070">ms5611_regs.h:70</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855ba715209b60f5a4b9e20c3fc46e1fbaf52"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba715209b60f5a4b9e20c3fc46e1fbaf52">MS5611_STATUS_CONV_D1</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00043">ms5611.h:43</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8c.html">ms5611_i2c.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

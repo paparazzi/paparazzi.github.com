@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('baro__ets_8h_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="baro__ets_8h.html#a1cd246b7f290cedbc05e6ad1abdad2e0">   49</a></span>&#160;<span class="preprocessor">#define BARO_ETS_DT BARO_ETS_READ_PERIODIC_PERIOD</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="baro__ets_8h.html#a8dcbf03c82eb75cdda21eacb04a0cc18">baro_ets_adc</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="baro__ets_8h.html#ab555328369f0264c4182eff10220a57c">baro_ets_offset</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="baro__ets_8h.html#a8dcbf03c82eb75cdda21eacb04a0cc18">baro_ets_adc</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="baro__ets_8h.html#ab555328369f0264c4182eff10220a57c">baro_ets_offset</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="baro__ets_8h.html#a1e53a1472f63179c5b73ac9dcc75601c">baro_ets_valid</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="baro__ets_8h.html#a71d4e11bc8c15965a7ed9b919d52d249">baro_ets_enabled</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="baro__ets_8h.html#ac4f69540a5b1417a3717dafb1a983b06">baro_ets_altitude</a>;</div>
@@ -157,7 +157,6 @@ $(document).ready(function(){initNavTree('baro__ets_8h_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // BARO_ETS_H</span></div>
 <div class="ttc" id="baro__ets_8h_html_a71d4e11bc8c15965a7ed9b919d52d249"><div class="ttname"><a href="baro__ets_8h.html#a71d4e11bc8c15965a7ed9b919d52d249">baro_ets_enabled</a></div><div class="ttdeci">bool baro_ets_enabled</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00107">baro_ets.c:107</a></div></div>
-<div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_ab5e7ce908ff9c92597572cb7f84ecdd3"><div class="ttname"><a href="baro__ets_8h.html#ab5e7ce908ff9c92597572cb7f84ecdd3">baro_ets_sigma2</a></div><div class="ttdeci">float baro_ets_sigma2</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00109">baro_ets.c:109</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_a6c106599c657e4412fa12e7e4c7e1b39"><div class="ttname"><a href="baro__ets_8h.html#a6c106599c657e4412fa12e7e4c7e1b39">baro_ets_init</a></div><div class="ttdeci">void baro_ets_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00120">baro_ets.c:120</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_a96839d4b74df9e3c49695989b344bac1"><div class="ttname"><a href="baro__ets_8h.html#a96839d4b74df9e3c49695989b344bac1">baro_ets_read_event</a></div><div class="ttdeci">void baro_ets_read_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00151">baro_ets.c:151</a></div></div>
@@ -169,6 +168,7 @@ $(document).ready(function(){initNavTree('baro__ets_8h_source.html','');});
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_a4ddf405039552176e251f37d10213d4f"><div class="ttname"><a href="baro__ets_8h.html#a4ddf405039552176e251f37d10213d4f">baro_ets_i2c_trans</a></div><div class="ttdeci">struct i2c_transaction baro_ets_i2c_trans</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00111">baro_ets.c:111</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_a08006eac33ce8a0d71f86d8da34d74c9"><div class="ttname"><a href="baro__ets_8h.html#a08006eac33ce8a0d71f86d8da34d74c9">baro_ets_r</a></div><div class="ttdeci">float baro_ets_r</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00108">baro_ets.c:108</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="baro__ets_8h_html_ab555328369f0264c4182eff10220a57c"><div class="ttname"><a href="baro__ets_8h.html#ab555328369f0264c4182eff10220a57c">baro_ets_offset</a></div><div class="ttdeci">uint16_t baro_ets_offset</div><div class="ttdef"><b>Definition:</b> <a href="baro__ets_8c_source.html#l00104">baro_ets.c:104</a></div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('baro__ets_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ets_8h.html">baro_ets.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('bluegiga__dl_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bluegiga__dl_8h.html">modules/datalink/bluegiga_dl.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">subsystems/datalink/datalink.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bluegiga_8h.html">subsystems/datalink/bluegiga.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">modules/datalink/datalink.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bluegiga_8h.html">modules/datalink/bluegiga.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef BLUEGIGA_UPDATE_DL</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="bluegiga__dl_8c.html#a05af5c1eb35d40188f3d1fb440774fd7">   31</a></span>&#160;<span class="preprocessor">#define BLUEGIGA_UPDATE_DL TRUE</span></div>
@@ -157,12 +157,12 @@ $(document).ready(function(){initNavTree('bluegiga__dl_8c_source.html','');});
 <div class="ttc" id="bluegiga__dl_8c_html_a921065e8139e27fbe413ef7459ed51b3"><div class="ttname"><a href="bluegiga__dl_8c.html#a921065e8139e27fbe413ef7459ed51b3">bluegiga_dl_event</a></div><div class="ttdeci">void bluegiga_dl_event(void)</div><div class="ttdoc">Datalink Event. </div><div class="ttdef"><b>Definition:</b> <a href="bluegiga__dl_8c_source.html#l00042">bluegiga_dl.c:42</a></div></div>
 <div class="ttc" id="datalink_8h_html"><div class="ttname"><a href="datalink_8h.html">datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground and other A/Cs. </div></div>
 <div class="ttc" id="bluegiga_8c_html_ac12d1ee016c26361e1e48e9ee7b5dc27"><div class="ttname"><a href="bluegiga_8c.html#ac12d1ee016c26361e1e48e9ee7b5dc27">bluegiga_p</a></div><div class="ttdeci">struct bluegiga_periph bluegiga_p</div><div class="ttdef"><b>Definition:</b> <a href="bluegiga_8c_source.html#l00061">bluegiga.c:61</a></div></div>
-<div class="ttc" id="main__demo5_8c_html_a61d3db27cf64e56c9011bef1de4df9ac"><div class="ttname"><a href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">dl_msg_available</a></div><div class="ttdeci">bool dl_msg_available</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00061">main_demo5.c:61</a></div></div>
+<div class="ttc" id="main__demo5_8c_html_a61d3db27cf64e56c9011bef1de4df9ac"><div class="ttname"><a href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">dl_msg_available</a></div><div class="ttdeci">bool dl_msg_available</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00060">main_demo5.c:60</a></div></div>
 <div class="ttc" id="bluegiga_8c_html_ac8a60ccee96fbe718a27b6194f3f14e0"><div class="ttname"><a href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga_init</a></div><div class="ttdeci">void bluegiga_init(struct bluegiga_periph *p)</div><div class="ttdef"><b>Definition:</b> <a href="bluegiga_8c_source.html#l00148">bluegiga.c:148</a></div></div>
 <div class="ttc" id="bluegiga__dl_8c_html_a05af5c1eb35d40188f3d1fb440774fd7"><div class="ttname"><a href="bluegiga__dl_8c.html#a05af5c1eb35d40188f3d1fb440774fd7">BLUEGIGA_UPDATE_DL</a></div><div class="ttdeci">#define BLUEGIGA_UPDATE_DL</div><div class="ttdef"><b>Definition:</b> <a href="bluegiga__dl_8c_source.html#l00031">bluegiga_dl.c:31</a></div></div>
 <div class="ttc" id="bluegiga__dl_8c_html_aeb085a7388c7ffe56ac4834ff104fb33"><div class="ttname"><a href="bluegiga__dl_8c.html#aeb085a7388c7ffe56ac4834ff104fb33">bluegiga_dl_init</a></div><div class="ttdeci">void bluegiga_dl_init(void)</div><div class="ttdoc">Init function. </div><div class="ttdef"><b>Definition:</b> <a href="bluegiga__dl_8c_source.html#l00036">bluegiga_dl.c:36</a></div></div>
 <div class="ttc" id="datalink_8h_html_aa9106add8d47671f6ebb3d8321813611"><div class="ttname"><a href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611">DlCheckAndParse</a></div><div class="ttdeci">static void DlCheckAndParse(struct link_device *dev, struct transport_tx *trans, uint8_t *buf, bool *msg_available, bool update_dl)</div><div class="ttdoc">Check for new message and parse. </div><div class="ttdef"><b>Definition:</b> <a href="datalink_8h_source.html#l00079">datalink.h:79</a></div></div>
-<div class="ttc" id="main__demo5_8c_html_a41ca1f0c42c768e235066d83071b1ed9"><div class="ttname"><a href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a></div><div class="ttdeci">uint8_t dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00064">main_demo5.c:64</a></div></div>
+<div class="ttc" id="main__demo5_8c_html_a41ca1f0c42c768e235066d83071b1ed9"><div class="ttname"><a href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a></div><div class="ttdeci">uint8_t dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00063">main_demo5.c:63</a></div></div>
 <div class="ttc" id="bluegiga__dl_8h_html"><div class="ttname"><a href="bluegiga__dl_8h.html">bluegiga_dl.h</a></div></div>
 <div class="ttc" id="bluegiga_8h_html"><div class="ttname"><a href="bluegiga_8h.html">bluegiga.h</a></div><div class="ttdoc">Bluegiga Bluetooth chip I/O. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('bluegiga__dl_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="bluegiga__dl_8c.html">bluegiga_dl.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

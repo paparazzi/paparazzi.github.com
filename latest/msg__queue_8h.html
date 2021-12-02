@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('msg__queue_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8h" id="sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8h">
-<area shape="rect" id="node4" href="tlsf__malloc_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="74,109,258,136"/><area shape="rect" id="node5" href="tlsf__malloc__arch_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="80,184,252,225"/><area shape="rect" id="node6" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="79,273,253,300"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('msg__queue_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8hdep" id="sw_2airborne_2modules_2loggers_2sdlog__chibios_2msg__queue_8hdep">
-<area shape="rect" id="node2" href="msg__queue_8c.html" title="sw/airborne/modules\l/loggers/sdlog_chibios\l/msg_queue.c" alt="" coords="5,109,168,165"/></map>
+</map>
 </div>
 </div>
 <p><a href="msg__queue_8h_source.html">Go to the source code of this file.</a></p>
@@ -177,22 +177,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f51e84b25a2e05a3b905dcf826c4446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a0f51e84b25a2e05a3b905dcf826c4446">msgqueue_is_empty</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que)</td></tr>
 <tr class="memdesc:a0f51e84b25a2e05a3b905dcf826c4446"><td class="mdescLeft">&#160;</td><td class="mdescRight">test if queue is empty  <a href="#a0f51e84b25a2e05a3b905dcf826c4446">More...</a><br /></td></tr>
 <tr class="separator:a0f51e84b25a2e05a3b905dcf826c4446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b457b8a24d51625e782035fe54622a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a6b457b8a24d51625e782035fe54622a7">msgqueue_send</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency)</td></tr>
+<tr class="memitem:a6b457b8a24d51625e782035fe54622a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a6b457b8a24d51625e782035fe54622a7">msgqueue_send</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency)</td></tr>
 <tr class="memdesc:a6b457b8a24d51625e782035fe54622a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a buffer previously allocated by msgqueue_malloc_before_send  <a href="#a6b457b8a24d51625e782035fe54622a7">More...</a><br /></td></tr>
 <tr class="separator:a6b457b8a24d51625e782035fe54622a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c85548b02609202975402ff7efcd64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#aa9c85548b02609202975402ff7efcd64">msgqueue_send_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency, const systime_t timout)</td></tr>
+<tr class="memitem:aa9c85548b02609202975402ff7efcd64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#aa9c85548b02609202975402ff7efcd64">msgqueue_send_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency, const systime_t timout)</td></tr>
 <tr class="memdesc:aa9c85548b02609202975402ff7efcd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a buffer previously allocated by msgqueue_malloc_before_send  <a href="#aa9c85548b02609202975402ff7efcd64">More...</a><br /></td></tr>
 <tr class="separator:aa9c85548b02609202975402ff7efcd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e38447d739bbdfab151c413e813070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#ab8e38447d739bbdfab151c413e813070">msgqueue_copy_send</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, const void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency)</td></tr>
+<tr class="memitem:ab8e38447d739bbdfab151c413e813070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#ab8e38447d739bbdfab151c413e813070">msgqueue_copy_send</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, const void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency)</td></tr>
 <tr class="memdesc:ab8e38447d739bbdfab151c413e813070"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a buffer <em>NOT</em> previously allocated  <a href="#ab8e38447d739bbdfab151c413e813070">More...</a><br /></td></tr>
 <tr class="separator:ab8e38447d739bbdfab151c413e813070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac728799fec55bd850be4fbc674628a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#aac728799fec55bd850be4fbc674628a9">msgqueue_copy_send_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, const void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency, const systime_t timout)</td></tr>
+<tr class="memitem:aac728799fec55bd850be4fbc674628a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#aac728799fec55bd850be4fbc674628a9">msgqueue_copy_send_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, const void *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> msgLen, const <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">MsgQueueUrgency</a> urgency, const systime_t timout)</td></tr>
 <tr class="memdesc:aac728799fec55bd850be4fbc674628a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a buffer <em>NOT</em> previously allocated  <a href="#aac728799fec55bd850be4fbc674628a9">More...</a><br /></td></tr>
 <tr class="separator:aac728799fec55bd850be4fbc674628a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ddc872b801355fb65d98f18829419bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a6ddc872b801355fb65d98f18829419bd">msgqueue_pop</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void **msgPtr)</td></tr>
+<tr class="memitem:a6ddc872b801355fb65d98f18829419bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a6ddc872b801355fb65d98f18829419bd">msgqueue_pop</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void **msgPtr)</td></tr>
 <tr class="memdesc:a6ddc872b801355fb65d98f18829419bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">wait then receive message  <a href="#a6ddc872b801355fb65d98f18829419bd">More...</a><br /></td></tr>
 <tr class="separator:a6ddc872b801355fb65d98f18829419bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38dd61b3d9daa051032159c2473eb2cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a38dd61b3d9daa051032159c2473eb2cc">msgqueue_pop_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void **msgPtr, const systime_t timout)</td></tr>
+<tr class="memitem:a38dd61b3d9daa051032159c2473eb2cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a38dd61b3d9daa051032159c2473eb2cc">msgqueue_pop_timeout</a> (<a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *que, void **msgPtr, const systime_t timout)</td></tr>
 <tr class="memdesc:a38dd61b3d9daa051032159c2473eb2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive message specifying timeout  <a href="#a38dd61b3d9daa051032159c2473eb2cc">More...</a><br /></td></tr>
 <tr class="separator:a38dd61b3d9daa051032159c2473eb2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b60cd9d385e0df6f8baad94c6ba0e4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg__queue_8h.html#a02b60cd9d385e0df6f8baad94c6ba0e4">msgqueue_strerror</a> (const <a class="el" href="msg__queue_8h.html#af21955713d9e8a8e5ffcb337a33dfefc">MsgQueueStatus</a> errno)</td></tr>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structMsgQueue__coll__graph.png" border="0" usemap="#MsgQueue_coll__map" alt="Collaboration graph"/></div>
 <map name="MsgQueue_coll__map" id="MsgQueue_coll__map">
-<area shape="rect" id="node2" href="tlsf__malloc__arch_8c.html#struct__tlsf__memory__heap__t" title="_tlsf_memory_heap_t" alt="" coords="5,5,165,32"/></map>
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
@@ -308,7 +308,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_copy_send </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_copy_send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -322,7 +322,7 @@ mb</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>msgLen</em>, </td>
         </tr>
         <tr>
@@ -362,7 +362,7 @@ mb</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_ab8e38447d739bbdfab151c413e813070_cgraph.png" border="0" usemap="#msg__queue_8h_ab8e38447d739bbdfab151c413e813070_cgraph" alt=""/></div>
 <map name="msg__queue_8h_ab8e38447d739bbdfab151c413e813070_cgraph" id="msg__queue_8h_ab8e38447d739bbdfab151c413e813070_cgraph">
-<area shape="rect" id="node2" href="msg__queue_8c.html#aac728799fec55bd850be4fbc674628a9" title="send a buffer NOT previously allocated " alt="" coords="219,49,384,90"/><area shape="rect" id="node3" href="msg__queue_8c.html#aa9c85548b02609202975402ff7efcd64" title="send a buffer previously allocated by msgqueue_malloc_before_send " alt="" coords="432,31,617,57"/><area shape="rect" id="node6" href="tlsf__malloc__arch_8c.html#ad0333be97f2cbeecedde494c53243648" title="tlsf_malloc_r" alt="" coords="473,81,576,108"/><area shape="rect" id="node4" href="tlsf__malloc__arch_8c.html#a17c0510bfc2132940c5d57578d37fe5e" title="tlsf_free_r" alt="" coords="695,5,780,32"/><area shape="rect" id="node5" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="665,56,809,83"/></map>
+</map>
 </div>
 </p>
 
@@ -373,7 +373,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_copy_send_timeout </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_copy_send_timeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -387,7 +387,7 @@ mb</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>msgLen</em>, </td>
         </tr>
         <tr>
@@ -436,7 +436,7 @@ mb</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_cgraph.png" border="0" usemap="#msg__queue_8h_aac728799fec55bd850be4fbc674628a9_cgraph" alt=""/></div>
 <map name="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_cgraph" id="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_cgraph">
-<area shape="rect" id="node2" href="msg__queue_8c.html#aa9c85548b02609202975402ff7efcd64" title="send a buffer previously allocated by msgqueue_malloc_before_send " alt="" coords="219,31,404,57"/><area shape="rect" id="node5" href="tlsf__malloc__arch_8c.html#ad0333be97f2cbeecedde494c53243648" title="tlsf_malloc_r" alt="" coords="260,81,363,108"/><area shape="rect" id="node3" href="tlsf__malloc__arch_8c.html#a17c0510bfc2132940c5d57578d37fe5e" title="tlsf_free_r" alt="" coords="481,5,567,32"/><area shape="rect" id="node4" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="452,56,596,83"/></map>
+</map>
 </div>
 </p>
 
@@ -447,7 +447,7 @@ mb</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_icgraph.png" border="0" usemap="#msg__queue_8h_aac728799fec55bd850be4fbc674628a9_icgraph" alt=""/></div>
 <map name="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_icgraph" id="msg__queue_8h_aac728799fec55bd850be4fbc674628a9_icgraph">
-<area shape="rect" id="node2" href="msg__queue_8h.html#ab8e38447d739bbdfab151c413e813070" title="send a buffer NOT previously allocated " alt="" coords="219,13,384,39"/></map>
+</map>
 </div>
 </p>
 
@@ -513,7 +513,7 @@ mb</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_a8cbe13f6801caa6bd92498e5772eb3df_icgraph.png" border="0" usemap="#msg__queue_8h_a8cbe13f6801caa6bd92498e5772eb3df_icgraph" alt=""/></div>
 <map name="msg__queue_8h_a8cbe13f6801caa6bd92498e5772eb3df_icgraph" id="msg__queue_8h_a8cbe13f6801caa6bd92498e5772eb3df_icgraph">
-<area shape="rect" id="node2" href="sdLog_8h.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog " alt="" coords="169,5,248,32"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="296,5,395,32"/><area shape="rect" id="node4" href="sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a" title="sdlog_chibios_init" alt="" coords="443,5,576,32"/></map>
+</map>
 </div>
 </p>
 
@@ -582,7 +582,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_pop </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_pop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -622,7 +622,7 @@ mb</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_a6ddc872b801355fb65d98f18829419bd_cgraph.png" border="0" usemap="#msg__queue_8h_a6ddc872b801355fb65d98f18829419bd_cgraph" alt=""/></div>
 <map name="msg__queue_8h_a6ddc872b801355fb65d98f18829419bd_cgraph" id="msg__queue_8h_a6ddc872b801355fb65d98f18829419bd_cgraph">
-<area shape="rect" id="node2" href="msg__queue_8c.html#a38dd61b3d9daa051032159c2473eb2cc" title="receive message specifying timeout " alt="" coords="175,5,353,32"/><area shape="rect" id="node3" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="401,5,545,32"/></map>
+</map>
 </div>
 </p>
 
@@ -633,7 +633,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_pop_timeout </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_pop_timeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -682,7 +682,7 @@ mb</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_cgraph.png" border="0" usemap="#msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_cgraph" alt=""/></div>
 <map name="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_cgraph" id="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_cgraph">
-<area shape="rect" id="node2" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="232,5,376,32"/></map>
+</map>
 </div>
 </p>
 
@@ -693,7 +693,7 @@ mb</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_icgraph.png" border="0" usemap="#msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_icgraph" alt=""/></div>
 <map name="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_icgraph" id="msg__queue_8h_a38dd61b3d9daa051032159c2473eb2cc_icgraph">
-<area shape="rect" id="node2" href="msg__queue_8h.html#a6ddc872b801355fb65d98f18829419bd" title="wait then receive message " alt="" coords="232,5,353,32"/></map>
+</map>
 </div>
 </p>
 
@@ -704,7 +704,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_send </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -718,7 +718,7 @@ mb</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>msgLen</em>, </td>
         </tr>
         <tr>
@@ -759,7 +759,7 @@ mb</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_a6b457b8a24d51625e782035fe54622a7_cgraph.png" border="0" usemap="#msg__queue_8h_a6b457b8a24d51625e782035fe54622a7_cgraph" alt=""/></div>
 <map name="msg__queue_8h_a6b457b8a24d51625e782035fe54622a7_cgraph" id="msg__queue_8h_a6b457b8a24d51625e782035fe54622a7_cgraph">
-<area shape="rect" id="node2" href="msg__queue_8c.html#aa9c85548b02609202975402ff7efcd64" title="send a buffer previously allocated by msgqueue_malloc_before_send " alt="" coords="181,31,367,57"/><area shape="rect" id="node3" href="tlsf__malloc__arch_8c.html#a17c0510bfc2132940c5d57578d37fe5e" title="tlsf_free_r" alt="" coords="444,5,529,32"/><area shape="rect" id="node4" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="415,56,559,83"/></map>
+</map>
 </div>
 </p>
 
@@ -770,7 +770,7 @@ mb</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> msgqueue_send_timeout </td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> msgqueue_send_timeout </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="msg__queue_8h.html#structMsgQueue">MsgQueue</a> *&#160;</td>
           <td class="paramname"><em>que</em>, </td>
@@ -784,7 +784,7 @@ mb</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>msgLen</em>, </td>
         </tr>
         <tr>
@@ -834,7 +834,7 @@ mb</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_cgraph.png" border="0" usemap="#msg__queue_8h_aa9c85548b02609202975402ff7efcd64_cgraph" alt=""/></div>
 <map name="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_cgraph" id="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_cgraph">
-<area shape="rect" id="node2" href="tlsf__malloc__arch_8c.html#a17c0510bfc2132940c5d57578d37fe5e" title="tlsf_free_r" alt="" coords="268,5,353,32"/><area shape="rect" id="node3" href="tlsf__malloc__arch_8c.html#a1324770050af7b18bce649d036612cf1" title="tlsf_get_heap_addr" alt="" coords="239,56,383,83"/></map>
+</map>
 </div>
 </p>
 
@@ -845,7 +845,7 @@ mb</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_icgraph.png" border="0" usemap="#msg__queue_8h_aa9c85548b02609202975402ff7efcd64_icgraph" alt=""/></div>
 <map name="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_icgraph" id="msg__queue_8h_aa9c85548b02609202975402ff7efcd64_icgraph">
-<area shape="rect" id="node2" href="msg__queue_8h.html#aac728799fec55bd850be4fbc674628a9" title="send a buffer NOT previously allocated " alt="" coords="239,5,404,47"/><area shape="rect" id="node4" href="msg__queue_8h.html#a6b457b8a24d51625e782035fe54622a7" title="send a buffer previously allocated by msgqueue_malloc_before_send " alt="" coords="257,71,385,98"/><area shape="rect" id="node3" href="msg__queue_8h.html#ab8e38447d739bbdfab151c413e813070" title="send a buffer NOT previously allocated " alt="" coords="452,13,617,39"/></map>
+</map>
 </div>
 </p>
 
@@ -886,7 +886,7 @@ mb</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="msg__queue_8h.html">msg_queue.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

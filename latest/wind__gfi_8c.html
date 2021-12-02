@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('wind__gfi_8c.html','');});
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for wind_gfi.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('wind__gfi_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="wind__gfi_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2wind__gfi_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2wind__gfi_8c" id="sw_2airborne_2modules_2meteo_2wind__gfi_8c">
-<area shape="rect" id="node2" href="wind__gfi_8h.html" title="modules/meteo/wind\l_gfi.h" alt="" coords="5,273,160,315"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="196,102,327,129"/><area shape="rect" id="node6" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="359,102,412,129"/><area shape="rect" id="node8" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1239,281,1377,307"/><area shape="rect" id="node12" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="757,95,910,136"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1337,191,1423,218"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="577,184,730,225"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1119,191,1313,218"/></map>
+</map>
 </div>
 </div>
 <p><a href="wind__gfi_8c_source.html">Go to the source code of this file.</a></p>
@@ -156,9 +156,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a91e6b0f488db47bb148d2f297676b9ab"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wind__gfi_8c.html#a91e6b0f488db47bb148d2f297676b9ab">pcf_trans</a></td></tr>
 <tr class="separator:a91e6b0f488db47bb148d2f297676b9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263c51a71e6f514c746cf0c39776ff0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wind__gfi_8c.html#a263c51a71e6f514c746cf0c39776ff0d">pcf_direction</a></td></tr>
+<tr class="memitem:a263c51a71e6f514c746cf0c39776ff0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wind__gfi_8c.html#a263c51a71e6f514c746cf0c39776ff0d">pcf_direction</a></td></tr>
 <tr class="separator:a263c51a71e6f514c746cf0c39776ff0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6139943b2d6ec87b7c1a756decbd1daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wind__gfi_8c.html#a6139943b2d6ec87b7c1a756decbd1daf">pcf_status</a></td></tr>
+<tr class="memitem:a6139943b2d6ec87b7c1a756decbd1daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wind__gfi_8c.html#a6139943b2d6ec87b7c1a756decbd1daf">pcf_status</a></td></tr>
 <tr class="separator:a6139943b2d6ec87b7c1a756decbd1daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -232,7 +232,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="wind__gfi_8c_source.html#l00072">72</a> of file <a class="el" href="wind__gfi_8c_source.html">wind_gfi.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="wind__gfi_8c_source.html#l00054">pcf_direction</a>, <a class="el" href="wind__gfi_8c_source.html#l00045">PCF_I2C_DEV</a>, <a class="el" href="wind__gfi_8h_source.html#l00007">PCF_IDLE</a>, <a class="el" href="wind__gfi_8h_source.html#l00009">PCF_READ_LSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00011">PCF_READ_MSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00008">PCF_SET_OE_LSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00010">PCF_SET_OE_MSB</a>, <a class="el" href="wind__gfi_8c_source.html#l00051">PCF_SLAVE_ADDR</a>, <a class="el" href="wind__gfi_8c_source.html#l00055">pcf_status</a>, <a class="el" href="wind__gfi_8c_source.html#l00038">pcf_trans</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="wind__gfi_8c_source.html#l00041">ZERO_OFFSET_DEGREES</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00334">i2c_receive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="wind__gfi_8c_source.html#l00054">pcf_direction</a>, <a class="el" href="wind__gfi_8c_source.html#l00045">PCF_I2C_DEV</a>, <a class="el" href="wind__gfi_8h_source.html#l00007">PCF_IDLE</a>, <a class="el" href="wind__gfi_8h_source.html#l00009">PCF_READ_LSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00011">PCF_READ_MSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00008">PCF_SET_OE_LSB</a>, <a class="el" href="wind__gfi_8h_source.html#l00010">PCF_SET_OE_MSB</a>, <a class="el" href="wind__gfi_8c_source.html#l00051">PCF_SLAVE_ADDR</a>, <a class="el" href="wind__gfi_8c_source.html#l00055">pcf_status</a>, <a class="el" href="wind__gfi_8c_source.html#l00038">pcf_trans</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="wind__gfi_8c_source.html#l00041">ZERO_OFFSET_DEGREES</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -241,7 +241,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="wind__gfi_8c_a14f55e8dba7acc117480142381ac2b14_cgraph.png" border="0" usemap="#wind__gfi_8c_a14f55e8dba7acc117480142381ac2b14_cgraph" alt=""/></div>
 <map name="wind__gfi_8c_a14f55e8dba7acc117480142381ac2b14_cgraph" id="wind__gfi_8c_a14f55e8dba7acc117480142381ac2b14_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="172,5,265,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="168,56,269,83"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="317,31,408,57"/></map>
+</map>
 </div>
 </p>
 
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="wind__gfi_8c_a01df5bb8d91c672814726797d2ac05e5_cgraph.png" border="0" usemap="#wind__gfi_8c_a01df5bb8d91c672814726797d2ac05e5_cgraph" alt=""/></div>
 <map name="wind__gfi_8c_a01df5bb8d91c672814726797d2ac05e5_cgraph" id="wind__gfi_8c_a01df5bb8d91c672814726797d2ac05e5_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="183,5,284,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="332,5,423,32"/></map>
+</map>
 </div>
 </p>
 
@@ -304,7 +304,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> pcf_direction</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> pcf_direction</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -320,7 +320,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pcf_status</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pcf_status</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -353,7 +353,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="wind__gfi_8c.html">wind_gfi.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

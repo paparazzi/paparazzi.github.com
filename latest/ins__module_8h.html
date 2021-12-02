@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('ins__module_8h.html','');});
 <p>Device independent INS code.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ins_8h_source.html">subsystems/ins.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ins_8h_source.html">modules/ins/ins.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/pprzlink_device.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('ins__module_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__module_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__module_8h" id="sw_2airborne_2modules_2ins_2ins__module_8h">
-<area shape="rect" id="node3" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="942,95,1075,121"/><area shape="rect" id="node19" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1533,95,1671,121"/><area shape="rect" id="node21" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1298,251,1429,278"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="933,244,1084,285"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="289,333,480,360"/><area shape="rect" id="node15" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="802,169,869,196"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="613,333,737,360"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="825,333,965,360"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="333,415,487,442"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="791,415,941,442"/><area shape="rect" id="node16" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="519,244,669,285"/><area shape="rect" id="node17" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="693,244,857,285"/><area shape="rect" id="node23" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1313,333,1483,360"/><area shape="rect" id="node24" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1547,415,1633,442"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('ins__module_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__module_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__module_8hdep" id="sw_2airborne_2modules_2ins_2ins__module_8hdep">
-<area shape="rect" id="node2" href="ahrs__chimu_8h.html" title="sw/airborne/modules\l/ins/ahrs_chimu.h" alt="" coords="5,95,160,136"/><area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html" title="sw/airborne/modules\l/ins/ahrs_chimu_spi.c" alt="" coords="61,184,219,225"/><area shape="rect" id="node4" href="ahrs__chimu__uart_8c.html" title="sw/airborne/modules\l/ins/ahrs_chimu_uart.c" alt="" coords="235,95,402,136"/></map>
+</map>
 </div>
 </div>
 <p><a href="ins__module_8h_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +152,7 @@ Macros</h2></td></tr>
 <tr class="separator:abc64615da516da14734f05936dfb3f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54de1be72ee30247aa9295a6ff23b30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">InsUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">InsSend1</a>(c)</td></tr>
 <tr class="separator:ab54de1be72ee30247aa9295a6ff23b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27360f089335b4c4d7152078108d6f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#af27360f089335b4c4d7152078108d6f0">InsSend</a>(_dat, _len)&#160;&#160;&#160;{ for (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i&lt; (_len); i++) <a class="el" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">InsSend1</a>(_dat[i]); };</td></tr>
+<tr class="memitem:af27360f089335b4c4d7152078108d6f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#af27360f089335b4c4d7152078108d6f0">InsSend</a>(_dat, _len)&#160;&#160;&#160;{ for (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i&lt; (_len); i++) <a class="el" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">InsSend1</a>(_dat[i]); };</td></tr>
 <tr class="separator:af27360f089335b4c4d7152078108d6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62fdd3a0d689ac9b41d34e8411ed2426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#a62fdd3a0d689ac9b41d34e8411ed2426">InsUartSetBaudrate</a>(_b)&#160;&#160;&#160;<a class="el" href="uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_periph_set_baudrate</a>(INS_LINK, _b)</td></tr>
 <tr class="separator:a62fdd3a0d689ac9b41d34e8411ed2426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac5da428408b44b6b22e510c36f7f2bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb976f9e02352af6815c51a4b18faec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec">parse_ins_msg</a> (void)</td></tr>
 <tr class="separator:a8cb976f9e02352af6815c51a4b18faec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1dc1d537ebd5ad8b28282c1365b884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)</td></tr>
+<tr class="memitem:acb1dc1d537ebd5ad8b28282c1365b884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)</td></tr>
 <tr class="separator:acb1dc1d537ebd5ad8b28282c1365b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34266139fe4658afe3bd0992441431a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a">ins_event_check_and_handle</a> (void(*handler)(void))</td></tr>
 <tr class="memdesc:ac34266139fe4658afe3bd0992441431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">!SITL  <a href="#ac34266139fe4658afe3bd0992441431a">More...</a><br /></td></tr>
@@ -207,9 +207,9 @@ Variables</h2></td></tr>
 <tr class="separator:a2f8843ba5648755270172df9c0687b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf80ff74cc64f18481a14b5448f1645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#addf80ff74cc64f18481a14b5448f1645">ins_mz</a></td></tr>
 <tr class="separator:addf80ff74cc64f18481a14b5448f1645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3989b340d21f6f17c56833594d188c6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a></td></tr>
+<tr class="memitem:af3989b340d21f6f17c56833594d188c6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a></td></tr>
 <tr class="separator:af3989b340d21f6f17c56833594d188c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664a8d539ee7893c78e101c06152fc18"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a></td></tr>
+<tr class="memitem:a664a8d539ee7893c78e101c06152fc18"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a></td></tr>
 <tr class="separator:a664a8d539ee7893c78e101c06152fc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -266,7 +266,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ for (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i&lt; (_len); i++) <a class="el" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">InsSend1</a>(_dat[i]); };</td>
+          <td></td><td>&#160;&#160;&#160;{ for (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i&lt; (_len); i++) <a class="el" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">InsSend1</a>(_dat[i]); };</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -380,7 +380,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__module_8h_source.html#l00089">89</a> of file <a class="el" href="ins__module_8h_source.html">ins_module.h</a>.</p>
 
-<p>References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__vn100_8c_source.html#l00064">ins_msg_received</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer()</a>, and <a class="el" href="ahrs__chimu__spi_8c_source.html#l00107">parse_ins_msg()</a>.</p>
+<p>References <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__vn100_8c_source.html#l00064">ins_msg_received</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer()</a>, and <a class="el" href="ahrs__chimu__spi_8c_source.html#l00107">parse_ins_msg()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -389,7 +389,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h_ac34266139fe4658afe3bd0992441431a_cgraph.png" border="0" usemap="#ins__module_8h_ac34266139fe4658afe3bd0992441431a_cgraph" alt=""/></div>
 <map name="ins__module_8h_ac34266139fe4658afe3bd0992441431a_cgraph" id="ins__module_8h_ac34266139fe4658afe3bd0992441431a_cgraph">
-<area shape="rect" id="node2" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884" title="parse_ins_buffer" alt="" coords="212,81,339,108"/><area shape="rect" id="node3" href="ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec" title="parse_ins_msg" alt="" coords="216,132,335,159"/><area shape="rect" id="node4" href="imu__chimu_8c.html#a7ac39179eecc107f50d9730a179b1827" title="CHIMU_Parse" alt="" coords="433,81,539,108"/><area shape="rect" id="node9" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="387,132,585,159"/><area shape="rect" id="node11" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="408,183,564,209"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d" title="CHIMU_ProcessMessage" alt="" coords="633,31,812,57"/><area shape="rect" id="node8" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="675,81,770,108"/><area shape="rect" id="node6" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f" title="BitTest" alt="" coords="901,5,965,32"/><area shape="rect" id="node7" href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f" title="GetEulersFromQuat" alt="" coords="860,56,1007,83"/><area shape="rect" id="node10" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="641,132,804,159"/></map>
+</map>
 </div>
 </p>
 
@@ -402,7 +402,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void parse_ins_buffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -418,7 +418,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h_acb1dc1d537ebd5ad8b28282c1365b884_icgraph.png" border="0" usemap="#ins__module_8h_acb1dc1d537ebd5ad8b28282c1365b884_icgraph" alt=""/></div>
 <map name="ins__module_8h_acb1dc1d537ebd5ad8b28282c1365b884_icgraph" id="ins__module_8h_acb1dc1d537ebd5ad8b28282c1365b884_icgraph">
-<area shape="rect" id="node2" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a" title="!SITL " alt="" coords="180,5,339,47"/></map>
+</map>
 </div>
 </p>
 
@@ -448,7 +448,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00107">107</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, <a class="el" href="ahrs_8h_source.html#l00042">AHRS_COMP_ID_CHIMU</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00149">CHIMU_Parse()</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="imu__chimu_8h_source.html#l00135">CHIMU_attitude_data::euler</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00034">AhrsChimu::is_aligned</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="imu__chimu_8h_source.html#l00168">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00162">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00118">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::psi</a>, <a class="el" href="imu__chimu_8h_source.html#l00149">CHIMU_sensor_data::rate</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::theta</a>.</p>
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, <a class="el" href="ahrs_8h_source.html#l00042">AHRS_COMP_ID_CHIMU</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00149">CHIMU_Parse()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="imu__chimu_8h_source.html#l00135">CHIMU_attitude_data::euler</a>, <a class="el" href="ins__module_8h_source.html#l00076">InsLinkDevice</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00034">AhrsChimu::is_aligned</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00053">LED_TOGGLE</a>, <a class="el" href="imu__chimu_8h_source.html#l00168">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00162">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00118">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::psi</a>, <a class="el" href="imu__chimu_8h_source.html#l00149">CHIMU_sensor_data::rate</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01105">stateSetNedToBodyEulers_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::theta</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__module_8h_source.html#l00089">ins_event_check_and_handle()</a>.</p>
 
@@ -459,7 +459,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_cgraph.png" border="0" usemap="#ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_cgraph" alt=""/></div>
 <map name="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_cgraph" id="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_cgraph">
-<area shape="rect" id="node2" href="imu__chimu_8c.html#a7ac39179eecc107f50d9730a179b1827" title="CHIMU_Parse" alt="" coords="218,56,325,83"/><area shape="rect" id="node7" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="193,107,349,133"/><area shape="rect" id="node8" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="172,157,371,184"/><area shape="rect" id="node3" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d" title="CHIMU_ProcessMessage" alt="" coords="419,31,597,57"/><area shape="rect" id="node6" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="461,81,555,108"/><area shape="rect" id="node4" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f" title="BitTest" alt="" coords="687,5,751,32"/><area shape="rect" id="node5" href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f" title="GetEulersFromQuat" alt="" coords="645,56,792,83"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="427,157,589,184"/></map>
+</map>
 </div>
 </p>
 
@@ -470,7 +470,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_icgraph.png" border="0" usemap="#ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_icgraph" alt=""/></div>
 <map name="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_icgraph" id="ins__module_8h_a8cb976f9e02352af6815c51a4b18faec_icgraph">
-<area shape="rect" id="node2" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a" title="!SITL " alt="" coords="172,5,331,47"/></map>
+</map>
 </div>
 </p>
 
@@ -518,7 +518,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_msg_received</td>
+          <td class="memname">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ins_msg_received</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -714,7 +714,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_ins_attitude</td>
+          <td class="memname">volatile <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_ins_attitude</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -729,7 +729,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__module_8h.html">ins_module.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

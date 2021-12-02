@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,12 +118,12 @@ $(document).ready(function(){initNavTree('stereocam_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="stereocam_8h_source.html">modules/stereocam/stereocam.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;pprzlink/intermcu_msg.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="follow__me_8h_source.html">stereocam_follow_me/follow_me.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8h_source.html">stereocam_follow_me/follow_me.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="median__filter_8h_source.html">filters/median_filter.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stereocam.c:</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('stereocam_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereocam_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereocam_2stereocam_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2stereocam_2stereocam_8c" id="sw_2airborne_2modules_2stereocam_2stereocam_8c">
-<area shape="rect" id="node2" href="stereocam_8h.html" title="interface to the TU Delft serial stereocam " alt="" coords="261,191,496,218"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1981,363,2120,389"/><area shape="rect" id="node14" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1369,95,1522,136"/><area shape="rect" id="node25" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1859,191,2029,218"/><area shape="rect" id="node29" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2298,102,2433,129"/><area shape="rect" id="node31" href="follow__me_8h.html" title="stereocam_follow_me\l/follow_me.h" alt="" coords="2457,95,2618,136"/><area shape="rect" id="node32" href="median__filter_8h.html" title="filters/median_filter.h" alt="" coords="520,191,675,218"/><area shape="rect" id="node4" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="155,281,346,307"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="288,363,405,389"/><area shape="rect" id="node16" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1197,184,1350,225"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1771,281,1856,307"/><area shape="rect" id="node21" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="781,273,934,315"/><area shape="rect" id="node23" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1323,281,1517,307"/><area shape="rect" id="node33" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="476,281,655,307"/><area shape="rect" id="node34" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="494,363,645,389"/></map>
+</map>
 </div>
 </div>
 <p><a href="stereocam_8c_source.html">Go to the source code of this file.</a></p>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a275d7f7d549e6dc8bb96b669455cc81d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="stereocam_8h.html#structstereocam__t">stereocam_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam_8c.html#a275d7f7d549e6dc8bb96b669455cc81d">stereocam</a></td></tr>
 <tr class="separator:a275d7f7d549e6dc8bb96b669455cc81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40e1cc149e6d853bdeee47104c3433d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam_8c.html#ad40e1cc149e6d853bdeee47104c3433d">stereocam_msg_buf</a> [256]</td></tr>
+<tr class="memitem:ad40e1cc149e6d853bdeee47104c3433d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam_8c.html#ad40e1cc149e6d853bdeee47104c3433d">stereocam_msg_buf</a> [256]</td></tr>
 <tr class="memdesc:ad40e1cc149e6d853bdeee47104c3433d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message buffer for the stereocamera.  <a href="#ad40e1cc149e6d853bdeee47104c3433d">More...</a><br /></td></tr>
 <tr class="separator:ad40e1cc149e6d853bdeee47104c3433d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77170a112e1ef6de97a3388c584a2c1b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="median__filter_8h.html#structMedianFilter3Float">MedianFilter3Float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam_8c.html#a77170a112e1ef6de97a3388c584a2c1b">medianfilter</a></td></tr>
@@ -281,7 +281,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereocam_8c_a8e79296f77859c1cee9e52f993af1fd9_cgraph.png" border="0" usemap="#stereocam_8c_a8e79296f77859c1cee9e52f993af1fd9_cgraph" alt=""/></div>
 <map name="stereocam_8c_a8e79296f77859c1cee9e52f993af1fd9_cgraph" id="stereocam_8c_a8e79296f77859c1cee9e52f993af1fd9_cgraph">
-<area shape="rect" id="node2" href="group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77" title="rotate angle by rotation matrix. " alt="" coords="223,5,347,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="185,56,384,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="432,56,596,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="644,56,812,83"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="860,31,1013,57"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="861,81,1012,108"/></map>
+</map>
 </div>
 </p>
 
@@ -312,7 +312,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereocam_8c_a95bf6b29adccc637ae2d86539a211d28_cgraph.png" border="0" usemap="#stereocam_8c_a95bf6b29adccc637ae2d86539a211d28_cgraph" alt=""/></div>
 <map name="stereocam_8c_a95bf6b29adccc637ae2d86539a211d28_cgraph" id="stereocam_8c_a95bf6b29adccc637ae2d86539a211d28_cgraph">
-<area shape="rect" id="node2" href="stereocam_8c.html#a94fa0136a9ee836602da3816c515ed1f" title="stereocam_parse_msg" alt="" coords="188,81,357,108"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="423,5,567,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="405,56,584,83"/><area shape="rect" id="node5" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="475,107,514,133"/><area shape="rect" id="node6" href="follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title="follow_me" alt="" coords="452,157,537,184"/><area shape="rect" id="node7" href="follow__me_8c.html#a807a6df05b0e6e375ccd7fa2dbc97fff" title="changeRollYawPhase" alt="" coords="639,81,789,108"/><area shape="rect" id="node8" href="follow__me_8c.html#ae1a9c8254b1c7c3d26e1545b937ed3da" title="increase_nav_heading" alt="" coords="632,132,796,159"/><area shape="rect" id="node9" href="rotorcraft_2navigation_8c.html#a46063efd4dae5efe23d6c018af1917d1" title="nav_is_in_flight" alt="" coords="655,183,773,209"/><area shape="rect" id="node10" href="subsystems_2navigation_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="650,233,778,260"/><area shape="rect" id="node11" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="844,233,985,260"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1033,208,1172,235"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1053,259,1152,285"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1220,208,1363,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1241,259,1341,285"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1239,309,1343,336"/></map>
+</map>
 </div>
 </p>
 
@@ -362,7 +362,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stereocam_8c_source.html#l00107">107</a> of file <a class="el" href="stereocam_8c_source.html">stereocam.c</a>.</p>
 
-<p>References <a class="el" href="stereocam_8h_source.html#l00037">stereocam_t::body_to_cam</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="stereocam_8c_source.html#l00093">medianfilter</a>, <a class="el" href="stereocam_8c_source.html#l00086">stereocam_msg_buf</a>, <a class="el" href="stereocam_8c_source.html#l00089">STEREOCAM_USE_MEDIAN_FILTER</a>, <a class="el" href="median__filter_8h_source.html#l00214">UpdateMedianFilterVect3Float</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00402">VEL_STEREOCAM_ID</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="stereocam_8h_source.html#l00037">stereocam_t::body_to_cam</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="stereocam_2stereocam__follow__me_2follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="stereocam_8c_source.html#l00093">medianfilter</a>, <a class="el" href="stereocam_8c_source.html#l00086">stereocam_msg_buf</a>, <a class="el" href="stereocam_8c_source.html#l00089">STEREOCAM_USE_MEDIAN_FILTER</a>, <a class="el" href="median__filter_8h_source.html#l00214">UpdateMedianFilterVect3Float</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00418">VEL_STEREOCAM_ID</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="stereocam_8c_source.html#l00202">stereocam_event()</a>.</p>
 
@@ -373,7 +373,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_cgraph.png" border="0" usemap="#stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_cgraph" alt=""/></div>
 <map name="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_cgraph" id="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_cgraph">
-<area shape="rect" id="node2" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="223,31,401,57"/><area shape="rect" id="node3" href="follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848" title="follow_me" alt="" coords="269,81,355,108"/><area shape="rect" id="node14" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="240,132,384,159"/><area shape="rect" id="node15" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="293,183,331,209"/><area shape="rect" id="node4" href="follow__me_8c.html#a807a6df05b0e6e375ccd7fa2dbc97fff" title="changeRollYawPhase" alt="" coords="456,5,607,32"/><area shape="rect" id="node5" href="follow__me_8c.html#ae1a9c8254b1c7c3d26e1545b937ed3da" title="increase_nav_heading" alt="" coords="449,56,613,83"/><area shape="rect" id="node6" href="rotorcraft_2navigation_8c.html#a46063efd4dae5efe23d6c018af1917d1" title="nav_is_in_flight" alt="" coords="472,107,591,133"/><area shape="rect" id="node7" href="subsystems_2navigation_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="467,157,595,184"/><area shape="rect" id="node8" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="661,157,803,184"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="851,132,989,159"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="871,183,969,209"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1037,132,1180,159"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1059,183,1159,209"/><area shape="rect" id="node13" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1057,233,1161,260"/></map>
+</map>
 </div>
 </p>
 
@@ -384,7 +384,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_icgraph.png" border="0" usemap="#stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_icgraph" alt=""/></div>
 <map name="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_icgraph" id="stereocam_8c_a94fa0136a9ee836602da3816c515ed1f_icgraph">
-<area shape="rect" id="node2" href="stereocam_8h.html#a95bf6b29adccc637ae2d86539a211d28" title="stereocam_event" alt="" coords="223,5,357,32"/></map>
+</map>
 </div>
 </p>
 
@@ -433,7 +433,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> stereocam_msg_buf[256]</td>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> stereocam_msg_buf[256]</td>
         </tr>
       </table>
   </td>
@@ -457,7 +457,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="stereocam_8c.html">stereocam.c</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:03:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 2 2021 03:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

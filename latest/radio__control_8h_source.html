@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/subsystems/radio_control.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/radio_control/radio_control.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-163-ga32fc33-dirty</span>
+   &#160;<span id="projectnumber">v6.0_unstable-135-g1952e6d-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,11 +172,11 @@ $(document).ready(function(){initNavTree('radio__control_8h_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a9e76d89b30ff9e29ad85bd7d83d9e783">   61</a></span>&#160;<span class="preprocessor">#define RCValue(_x) radio_control.values[_x]</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="radio__control_8h.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="radio__control_8h.html#structRadioControl">RadioControl</a> {</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4">   64</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4">status</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">   65</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">time_since_last_frame</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16">   66</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16">radio_ok_cpt</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">   67</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">frame_rate</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">   68</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">frame_cpt</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4">   64</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a8843219fc855f8ca70c1d29cf3d8c7b4">status</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">   65</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">time_since_last_frame</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16">   66</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16">radio_ok_cpt</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">   67</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">frame_rate</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">   68</a></span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">frame_cpt</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">   69</a></span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>  <a class="code" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a>];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
@@ -199,7 +199,6 @@ $(document).ready(function(){initNavTree('radio__control_8h_source.html','');});
 <div class="ttc" id="radio__control_8h_html_a7a57c95d2958828cb2d13bd360622f6f"><div class="ttname"><a href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">RadioControl::values</a></div><div class="ttdeci">pprz_t values[RADIO_CONTROL_NB_CHANNEL]</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00069">radio_control.h:69</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a1beed9c63b07301d72b3516543545652"><div class="ttname"><a href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a></div><div class="ttdeci">#define RADIO_CONTROL_NB_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00049">intermcu_ap.h:49</a></div></div>
 <div class="ttc" id="radio__control_8h_html_a6ba4bebf68f7ff39f4569dfe3b1f2832"><div class="ttname"><a href="radio__control_8h.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">radio_control_impl_init</a></div><div class="ttdeci">void radio_control_impl_init(void)</div><div class="ttdoc">Main Radio initialization. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00043">spektrum_arch.c:43</a></div></div>
-<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
 <div class="ttc" id="radio__control_8h_html_a009f85397fd864a703ce54da8f02daa8"><div class="ttname"><a href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">RadioControl::time_since_last_frame</a></div><div class="ttdeci">uint8_t time_since_last_frame</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00065">radio_control.h:65</a></div></div>
 <div class="ttc" id="radio__control_8h_html_a3673b154cadd0d85e61e2fe36fdda1bd"><div class="ttname"><a href="radio__control_8h.html#a3673b154cadd0d85e61e2fe36fdda1bd">radio_control_periodic_task</a></div><div class="ttdeci">void radio_control_periodic_task(void)</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00046">radio_control.c:46</a></div></div>
@@ -207,13 +206,14 @@ $(document).ready(function(){initNavTree('radio__control_8h_source.html','');});
 <div class="ttc" id="radio__control_8h_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8h.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00030">radio_control.c:30</a></div></div>
 <div class="ttc" id="radio__control_8h_html_ab19a0ca633267915e1e0ca584d31ef88"><div class="ttname"><a href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">RadioControl::frame_cpt</a></div><div class="ttdeci">uint8_t frame_cpt</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00068">radio_control.h:68</a></div></div>
 <div class="ttc" id="radio__control_8h_html_aa6eb017ab6023648e26cedd9de0c6c8c"><div class="ttname"><a href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">RadioControl::frame_rate</a></div><div class="ttdeci">uint8_t frame_rate</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00067">radio_control.h:67</a></div></div>
+<div class="ttc" id="vl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type. </div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="radio__control_8h.html">radio_control.h</a></li>
-    <li class="footer">Generated on Mon Mar 29 2021 16:02:21 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="radio__control_8h.html">radio_control.h</a></li>
+    <li class="footer">Generated on Thu Dec 2 2021 03:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
