@@ -21,5 +21,5 @@ var boards_2disco_2actuators_8c =
     [ "actuators_disco_set", "boards_2disco_2actuators_8c.html#aee9c4499f32c1157c62c8d2a47f600d7", null ],
     [ "actuators_disco", "boards_2disco_2actuators_8c.html#aa93674169d4a6af97c20ae397c55793c", null ],
     [ "disco_channels", "boards_2disco_2actuators_8c.html#ae7f7db15e6ce95dfaee72acf95d2b660", null ],
-    [ "obs_data", "boards_2disco_2actuators_8c.html#a5745d25d53f3624956015ed3e4c0e7c7", null ]
+    [ "obs_data", "boards_2disco_2actuators_8c.html#abfd8b4cc872b6c0e90909c61baa4d9bd", null ]
 ];

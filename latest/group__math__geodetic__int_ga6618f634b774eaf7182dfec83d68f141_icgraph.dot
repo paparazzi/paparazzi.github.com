@@ -1,9 +1,0 @@
-digraph "ned_of_lla_point_i"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="ned_of_lla_point_i",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="follow_me_set_wp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ctrl_2follow__me_8h.html#a7e5c2903825aa9815752b1fd8105dc15",tooltip="run function "];
-}

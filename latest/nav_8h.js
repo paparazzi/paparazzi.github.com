@@ -28,6 +28,7 @@ var nav_8h =
     [ "NavGlide", "nav_8h.html#a27adec238f6c027cf26b91d317040cc5", null ],
     [ "NavGotoWaypoint", "nav_8h.html#a4bf42a1b0d3b1c6c0faebcda4c531b8c", null ],
     [ "NavHeading", "nav_8h.html#ac90e1aa0615ba8f354b17674af4b12c8", null ],
+    [ "NAVIGATION_FREQUENCY", "nav_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f", null ],
     [ "NavKillThrottle", "nav_8h.html#ab4d16c33e2792978452a6b33e26df83c", null ],
     [ "NavQdrCloseTo", "nav_8h.html#a9f9ad9045eda753a7ea58359bd6a0581", null ],
     [ "NavSegment", "nav_8h.html#ace040d4295064ba78ba5c0339fb5fc9d", null ],

@@ -33,7 +33,7 @@ var usb__ser__hw_8c =
     [ "VCOM_peekchar", "usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63", null ],
     [ "VCOM_putchar", "usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3", null ],
     [ "VCOM_send_message", "usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b", null ],
-    [ "cdcacm_functional_descriptors", "usb__ser__hw_8c.html#a91717bfb605046da9dfc19452526b4cb", null ],
+    [ "cdcacm_functional_descriptors", "usb__ser__hw_8c.html#aa0151161b66418768106b15d2fc328fd", null ],
     [ "comm_endp", "usb__ser__hw_8c.html#a8ed29cdc7054ad27afaa5e2cbcb1ee52", null ],
     [ "comm_iface", "usb__ser__hw_8c.html#af5328a6344acb61e9eb9a2797b80d005", null ],
     [ "config", "usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae", null ],

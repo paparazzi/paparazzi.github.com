@@ -1,9 +1,0 @@
-digraph "fast9_detect_pixel"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="fast9_detect_pixel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="fast_make_offsets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250",tooltip="Make offsets for FAST9 calculation. "];
-}

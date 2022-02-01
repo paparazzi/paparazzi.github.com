@@ -1,9 +1,0 @@
-digraph "gpio_enable_clock"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="gpio_enable_clock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="softi2c_setup_gpio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$softi2c_8c.html#aa853ffab24fb8f7d390aab2cf94136e9"];
-}

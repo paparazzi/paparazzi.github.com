@@ -25,6 +25,7 @@ var autopilot_8c =
     [ "send_attitude", "autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02", null ],
     [ "send_autopilot_version", "autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c", null ],
     [ "send_dl_value", "autopilot_8c.html#a16254e24676fbc701ce5657b98cd5e7b", null ],
+    [ "send_minimal_com", "autopilot_8c.html#ab2ea9756339de58fcb8d06e845605597", null ],
     [ "send_rc", "autopilot_8c.html#ac3ccac3c6911516d3a1ec76dfcf0ba97", null ],
     [ "autopilot", "autopilot_8c.html#a5beab8f5f7bc19eb6b5ffccad90df788", null ]
 ];

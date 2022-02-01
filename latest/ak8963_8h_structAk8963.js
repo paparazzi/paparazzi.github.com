@@ -1,6 +1,6 @@
 var ak8963_8h_structAk8963 =
 [
-    [ "data", "ak8963_8h.html#a5c21b9f46beda5078b1a566dc1f02503", null ],
+    [ "data", "ak8963_8h.html#a9471a356d312344acc648db3e74b565c", null ],
     [ "data_available", "ak8963_8h.html#a471aef643dffc975b8d2b488a8e05a49", null ],
     [ "i2c_p", "ak8963_8h.html#aaab67274a120ccb7b484c721c666e39c", null ],
     [ "i2c_trans", "ak8963_8h.html#a1f8b20a55153b41ae8d5f94a4787baf9", null ],

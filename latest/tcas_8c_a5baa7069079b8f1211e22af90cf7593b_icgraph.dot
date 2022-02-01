@@ -1,9 +1,0 @@
-digraph "tcas_test_direction"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="tcas_test_direction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="tcas_periodic_task_1Hz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558"];
-}

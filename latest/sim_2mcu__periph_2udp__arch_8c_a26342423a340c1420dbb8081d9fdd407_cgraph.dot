@@ -1,9 +1,0 @@
-digraph "udp_arch_periph_init"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="udp_arch_periph_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="udp_socket_create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72",tooltip="Create UDP socket and bind it. "];
-}

@@ -1,9 +1,0 @@
-digraph "adc_init_rcc"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="adc_init_rcc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="timer_get_frequency",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c",tooltip="Get Timer clock frequency (before prescaling) Only valid if using the internal clock for the timer..."];
-}

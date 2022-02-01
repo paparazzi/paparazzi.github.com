@@ -1,9 +1,0 @@
-digraph "stereo_avoid_init"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="stereo_avoid_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="init_avoid_navigation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$avoid__navigation_8c.html#a31a8ecd942bd324e1b57e8d2fcb3cc01"];
-}

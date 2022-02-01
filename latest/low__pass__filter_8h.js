@@ -48,6 +48,7 @@ var low__pass__filter_8h =
     [ "update_butterworth_4_low_pass", "low__pass__filter_8h.html#aaec7bc687afb767b2b84ac20da7e4055", null ],
     [ "update_butterworth_4_low_pass_int", "low__pass__filter_8h.html#acce169cb1b8b0169b3a1a8fc94393f5c", null ],
     [ "update_first_order_low_pass", "low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f", null ],
+    [ "update_first_order_low_pass_tau", "low__pass__filter_8h.html#a33e5509c9cfb2b61b0cf7704d18f361a", null ],
     [ "update_second_order_low_pass", "low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531", null ],
     [ "update_second_order_low_pass_int", "low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44", null ]
 ];

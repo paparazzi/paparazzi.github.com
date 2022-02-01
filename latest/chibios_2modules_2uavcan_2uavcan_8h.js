@@ -23,7 +23,7 @@ var chibios_2modules_2uavcan_2uavcan_8h =
       [ "data_type_signature", "chibios_2modules_2uavcan_2uavcan_8h.html#adcf2b7989e1c298f3a20a2e944d8f7ce", null ],
       [ "next", "chibios_2modules_2uavcan_2uavcan_8h.html#aabb90df0b28c6c17daf1f6ed2d8ea3a2", null ]
     ] ],
-    [ "uavcan_callback", "chibios_2modules_2uavcan_2uavcan_8h.html#a7920b07bb20605a88bbe9b54b86ebf53", null ],
+    [ "uavcan_callback", "chibios_2modules_2uavcan_2uavcan_8h.html#a4200d5e9586aba3903116266cde0e6d5", null ],
     [ "uavcan_event", "chibios_2modules_2uavcan_2uavcan_8h.html#ade15683855af69139bbac465f71af6a7", null ],
     [ "uavcan_bind", "chibios_2modules_2uavcan_2uavcan_8h.html#ae5140a66e4d2d1166229eac0ebb40869", null ],
     [ "uavcan_broadcast", "chibios_2modules_2uavcan_2uavcan_8h.html#a712d2f97a70e8a78c0318d3709e317b4", null ],

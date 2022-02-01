@@ -1,9 +1,0 @@
-digraph "obstacle_cb"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="obstacle_cb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="range_forcefield_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$range__forcefield_8h.html#a046052e47f76dd73753a6406d5b8beb0"];
-}

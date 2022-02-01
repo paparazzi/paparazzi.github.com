@@ -43,7 +43,7 @@ var bmi088_8h =
     [ "BMI088_GYRO_SENS_500", "bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e", null ],
     [ "BMI088_GYRO_SENS_500_DEN", "bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01", null ],
     [ "BMI088_GYRO_SENS_500_NUM", "bmi088_8h.html#abf2726bb3bc6514646221047a478fed2", null ],
-    [ "Bmi088ConfigSet", "bmi088_8h.html#a998eec7d463596da39be3a7e0d0961e6", null ],
+    [ "Bmi088ConfigSet", "bmi088_8h.html#a25d4bcd73bbb02ac1ac9e619e6788267", null ],
     [ "Bmi088ConfStatus", "bmi088_8h.html#ac55667ef5c99a595587a9034b35c6929", [
       [ "BMI088_CONF_UNINIT", "bmi088_8h.html#ac55667ef5c99a595587a9034b35c6929af460bc2847f411fd902bfec78bc11391", null ],
       [ "BMI088_CONF_ACCEL_RANGE", "bmi088_8h.html#ac55667ef5c99a595587a9034b35c6929a3a30d76d3afc4d76ec4610fce47d4f15", null ],

@@ -20,7 +20,7 @@ var ctrl__windtunnel_8c =
     [ "guidance_v_module_init", "ctrl__windtunnel_8c.html#a535ad2dedb628ec10707a6c0448c525e", null ],
     [ "guidance_v_module_run", "ctrl__windtunnel_8c.html#a92d0c10f0d13b0b23000b1b161cfb5e4", null ],
     [ "send_windtunnel_meas", "ctrl__windtunnel_8c.html#a1cab972d3006ddc369bf0e770a37418a", null ],
-    [ "ctrl_windtunnel", "ctrl__windtunnel_8c.html#a3a0813abc0d2c9b18aec36b819b87ac2", null ],
+    [ "ctrl_windtunnel", "ctrl__windtunnel_8c.html#afa94848ac35182a9246a96d095241cd2", null ],
     [ "ctrl_windtunnel_flaps", "ctrl__windtunnel_8c.html#a044fb1cd972d514302d5b5b04d3f5ecd", null ],
     [ "ctrl_windtunnel_steptime", "ctrl__windtunnel_8c.html#a5c5cce4d6bd66b4f6f835883477568a3", null ],
     [ "ctrl_windtunnel_throttle", "ctrl__windtunnel_8c.html#a517bf89559b4fa84c14866ec92201b5a", null ],

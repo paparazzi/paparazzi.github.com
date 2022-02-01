@@ -1,9 +1,0 @@
-digraph "spektrum_uart_check"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="spektrum_uart_check",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="spektrum_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$spektrum_8c.html#a42ac6096a0d26a01d8a6951fc0a18d34",tooltip="Checks if there is one valid satellite and sets the radio_control structure. "];
-}

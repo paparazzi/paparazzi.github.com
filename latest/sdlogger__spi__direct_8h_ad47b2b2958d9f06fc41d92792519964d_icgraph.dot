@@ -1,9 +1,0 @@
-digraph "sdlogger_spi_direct_check_free_space"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="sdlogger_spi_direct\l_check_free_space",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="sdlogger_spi_direct_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884",tooltip="sdlogger_spi_direct_init Initialize the logger and SD Card. "];
-}

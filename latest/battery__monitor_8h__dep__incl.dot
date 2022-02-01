@@ -1,8 +1,0 @@
-digraph "sw/airborne/modules/adcs/battery_monitor.h"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="sw/airborne/modules\l/adcs/battery_monitor.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="sw/airborne/modules\l/adcs/battery_monitor.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$battery__monitor_8c.html",tooltip="driver for ADC AD7997 on a custom made power board version 4.0 and 5.0 "];
-}

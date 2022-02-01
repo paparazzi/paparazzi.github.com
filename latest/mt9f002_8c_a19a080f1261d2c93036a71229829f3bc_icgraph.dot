@@ -1,9 +1,0 @@
-digraph "mt9f002_mipi_stage1"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="mt9f002_mipi_stage1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="mt9f002_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0",tooltip="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) "];
-}

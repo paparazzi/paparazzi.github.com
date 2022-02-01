@@ -1,9 +1,0 @@
-digraph "shift_tracking_update_gains"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="shift_tracking_update\l_gains",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="set_gains_pid_f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pid_8h.html#a6114acd2404903d3ac084b9868083a99",tooltip="Set gains of the PID struct. "];
-}

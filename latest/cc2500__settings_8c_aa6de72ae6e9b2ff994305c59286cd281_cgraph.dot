@@ -1,9 +1,0 @@
-digraph "bf_writeEEPROM"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="bf_writeEEPROM",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="cc2500_persistent_write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cc2500__settings_8c.html#a59abce6b6ef166e82d916aa32c0abde8"];
-}

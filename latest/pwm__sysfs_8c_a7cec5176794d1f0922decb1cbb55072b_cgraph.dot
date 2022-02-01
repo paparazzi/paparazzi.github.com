@@ -1,9 +1,0 @@
-digraph "pwm_sysfs_enable"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="pwm_sysfs_enable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="write_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d"];
-}

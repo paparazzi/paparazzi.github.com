@@ -1,9 +1,0 @@
-digraph "lsm6_i2c_start_configure"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="lsm6_i2c_start_configure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="lsm6_i2c_periodic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130",tooltip="convenience function: read or start configuration if not already initialized "];
-}

@@ -27,7 +27,7 @@ var bmp085_8h =
       [ "up", "bmp085_8h.html#a0791e9daa8a0f7e55df65bcd1c900b5e", null ],
       [ "ut", "bmp085_8h.html#a809c67e97a9fb9ab44664560cc211c1a", null ]
     ] ],
-    [ "Bmp085EOC", "bmp085_8h.html#a57e9707a4bae8042a34e2c7de49064a3", null ],
+    [ "Bmp085EOC", "bmp085_8h.html#a06d333fa532b55e945105eb3e50b17a4", null ],
     [ "Bmp085Status", "bmp085_8h.html#ae7b86dc36a1e35afe6f8135a199f559d", [
       [ "BMP085_STATUS_UNINIT", "bmp085_8h.html#ae7b86dc36a1e35afe6f8135a199f559da00807507879f3bb85952fe102727f57d", null ],
       [ "BMP085_STATUS_IDLE", "bmp085_8h.html#ae7b86dc36a1e35afe6f8135a199f559da3da28970c8d880e25aa91a1c70b65858", null ],

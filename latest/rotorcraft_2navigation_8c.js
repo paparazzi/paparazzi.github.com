@@ -53,7 +53,6 @@ var rotorcraft_2navigation_8c =
     [ "nav_set_heading_towards_target", "rotorcraft_2navigation_8c.html#a980612556418b4310bf871b118da9cc4", null ],
     [ "nav_set_heading_towards_waypoint", "rotorcraft_2navigation_8c.html#a3db1ed9a54dba70032a53de5dec69d9b", null ],
     [ "nav_set_manual", "rotorcraft_2navigation_8c.html#a3278a0402583989151b9a64902706f04", null ],
-    [ "navigation_update_wp_from_speed", "rotorcraft_2navigation_8c.html#a91f23f011b868e7f310f57cf1dec4135", null ],
     [ "send_circle", "rotorcraft_2navigation_8c.html#a85eca54f8ec2b08e0bbf90661612ed7c", null ],
     [ "send_nav_status", "rotorcraft_2navigation_8c.html#a2332bd79a09ee7d64b4e82cf14b2eaaa", null ],
     [ "send_segment", "rotorcraft_2navigation_8c.html#aba649a025aa04b4a2ed1a655b1aa8cbc", null ],

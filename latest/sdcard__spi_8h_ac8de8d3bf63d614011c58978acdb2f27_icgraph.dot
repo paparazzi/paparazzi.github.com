@@ -1,9 +1,0 @@
-digraph "sdcard_spi_periodic"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="sdcard_spi_periodic",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="sdlogger_spi_direct\l_periodic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922",tooltip="sdlogger_spi_direct_periodic Periodic function called at module frequency "];
-}

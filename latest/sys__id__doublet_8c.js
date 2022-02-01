@@ -1,0 +1,26 @@
+var sys__id__doublet_8c =
+[
+    [ "DOUBLET_AXES", "sys__id__doublet_8c.html#a411d6138a9e4b1a610169b6855d7ae95", null ],
+    [ "DOUBLET_ENABLED", "sys__id__doublet_8c.html#a859fdfa2a5a57fc1461297b1d703e0ce", null ],
+    [ "DOUBLET_NB_AXES", "sys__id__doublet_8c.html#a0a596b4ab5acf215061736fd4d930d83", null ],
+    [ "send_doublet", "sys__id__doublet_8c.html#a445beb426b27ae83565b2adc824d405d", null ],
+    [ "set_current_doublet_values", "sys__id__doublet_8c.html#a4a9e14fd71c2b72dd34e2b23d0553dd1", null ],
+    [ "start_doublet", "sys__id__doublet_8c.html#ad31d5b642531d6b112fcf42c7a8c4f89", null ],
+    [ "stop_doublet", "sys__id__doublet_8c.html#acc99d65821584a060a3815bca935249a", null ],
+    [ "sys_id_doublet_activate_handler", "sys__id__doublet_8c.html#a32fd4e111dfc382167e43141e67f6d01", null ],
+    [ "sys_id_doublet_add_values", "sys__id__doublet_8c.html#a61bd50c0800204f5121e87e7a262536f", null ],
+    [ "sys_id_doublet_axis_handler", "sys__id__doublet_8c.html#ab5651321ff95dd63f2e0f8fa347fb10a", null ],
+    [ "sys_id_doublet_init", "sys__id__doublet_8c.html#a64c91c320705f98e67529de27f0d3623", null ],
+    [ "sys_id_doublet_mod3211_handler", "sys__id__doublet_8c.html#a8609d2c5cb01daf7253714eb26ac5c08", null ],
+    [ "sys_id_doublet_run", "sys__id__doublet_8c.html#abacc3f17a5adb05747a1b93247674b16", null ],
+    [ "sys_id_doublet_running", "sys__id__doublet_8c.html#ac39d9ce7fd360d3159e4d63d1e35445f", null ],
+    [ "ACTIVE_DOUBLET_AXES", "sys__id__doublet_8c.html#a664c2828bf85333009d7241810acbac9", null ],
+    [ "current_doublet_values", "sys__id__doublet_8c.html#a01678b6f069989c98d0df85e97f24b0c", null ],
+    [ "doublet", "sys__id__doublet_8c.html#a32d09c25fdab48fbd68d0a86beabfb5a", null ],
+    [ "doublet_active", "sys__id__doublet_8c.html#a21a3033bb4934034c178113b86f5854a", null ],
+    [ "doublet_amplitude", "sys__id__doublet_8c.html#aef8eda4708ba3349b6a09cc4690baf3b", null ],
+    [ "doublet_axis", "sys__id__doublet_8c.html#ac04aebebb6c4345429b8af42a2920a15", null ],
+    [ "doublet_extra_waiting_time_s", "sys__id__doublet_8c.html#a4606122df2fc5195e27a869c8d585967", null ],
+    [ "doublet_length_s", "sys__id__doublet_8c.html#a76b8aafaaa7671fcf2e0bdc22ae49c3e", null ],
+    [ "doublet_mode_3211", "sys__id__doublet_8c.html#afcf807e99b2cfaa4487a481656ea952e", null ]
+];

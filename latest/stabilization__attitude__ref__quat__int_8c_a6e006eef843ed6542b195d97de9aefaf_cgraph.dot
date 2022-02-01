@@ -1,9 +1,0 @@
-digraph "attitude_ref_quat_int_set_zeta_r"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="attitude_ref_quat_int\l_set_zeta_r",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="update_ref_model_r",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stabilization__attitude__ref__quat__int_8c.html#a78b0de6ab6fa6b9d6aa208d8365449d6"];
-}

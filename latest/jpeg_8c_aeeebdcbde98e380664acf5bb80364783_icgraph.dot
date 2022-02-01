@@ -1,9 +1,0 @@
-digraph "svs_size_code"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="svs_size_code",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="jpeg_create_svs_header",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285"];
-}

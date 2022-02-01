@@ -8,7 +8,7 @@ var vl53l1__platform_8h =
       ] ],
       [ "i2c_p", "vl53l1__platform_8h.html#a8f1a29a38cce70920a55343f4aa79dce", null ],
       [ "i2c_trans", "vl53l1__platform_8h.html#a36df313e1ae7a259403a85d4cc90769a", null ],
-      [ "nonblocking", "vl53l1__platform_8h.html#a8d66d3cc1448efb22b7d66b5611a921a", null ],
+      [ "nonblocking", "vl53l1__platform_8h.html#a31b33a64de721f9096ef76bb582f5aa7", null ],
       [ "read_status", "vl53l1__platform_8h.html#a391272193ae9fb2bf1bccddfb6d817e5", null ]
     ] ],
     [ "NonBlocking", "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking", [

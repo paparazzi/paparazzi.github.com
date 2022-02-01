@@ -17,7 +17,7 @@ var ctrl__module__innerloop__demo_8c =
     [ "guidance_v_module_enter", "ctrl__module__innerloop__demo_8c.html#a1288433c507106e865034b02ae79b2d6", null ],
     [ "guidance_v_module_init", "ctrl__module__innerloop__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e", null ],
     [ "guidance_v_module_run", "ctrl__module__innerloop__demo_8c.html#a92d0c10f0d13b0b23000b1b161cfb5e4", null ],
-    [ "ctrl_module_demo", "ctrl__module__innerloop__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39", null ],
+    [ "ctrl_module_demo", "ctrl__module__innerloop__demo_8c.html#a6e8003c0ae48a02b2d0032810c69fa88", null ],
     [ "ctrl_module_demo_pr_d_gain", "ctrl__module__innerloop__demo_8c.html#ae541c8a45b0875c67e832ce575348669", null ],
     [ "ctrl_module_demo_pr_ff_gain", "ctrl__module__innerloop__demo_8c.html#ae95f03331cf6424439fb30fcbf8e738a", null ],
     [ "ctrl_module_demo_y_d_gain", "ctrl__module__innerloop__demo_8c.html#a5c7d785dbf189111383030ed66326e01", null ],

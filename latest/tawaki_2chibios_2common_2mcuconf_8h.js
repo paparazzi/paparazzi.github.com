@@ -215,6 +215,7 @@ var tawaki_2chibios_2common_2mcuconf_8h =
     [ "STM32_SDC_SDMMC2_DMA_STREAM", "tawaki_2chibios_2common_2mcuconf_8h.html#ad66dfd61bf3632a76fd5f97e59f451f4", null ],
     [ "STM32_SDC_SDMMC2_IRQ_PRIORITY", "tawaki_2chibios_2common_2mcuconf_8h.html#af81da62faf264fb17ffee32d730d4b9d", null ],
     [ "STM32_SDC_SDMMC_CLOCK_DELAY", "tawaki_2chibios_2common_2mcuconf_8h.html#a39152e644ea1cbe066a9ea6df3be7f73", null ],
+    [ "STM32_SDC_SDMMC_PWRSAV", "tawaki_2chibios_2common_2mcuconf_8h.html#ac7d67c1d167b5c352c509997fb972960", null ],
     [ "STM32_SDC_SDMMC_READ_TIMEOUT", "tawaki_2chibios_2common_2mcuconf_8h.html#a1eeaffb87c5b75bdf0ec6ff5149bebde", null ],
     [ "STM32_SDC_SDMMC_UNALIGNED_SUPPORT", "tawaki_2chibios_2common_2mcuconf_8h.html#a876384340e8cf5cdd01d4292fa89e8c9", null ],
     [ "STM32_SDC_SDMMC_WRITE_TIMEOUT", "tawaki_2chibios_2common_2mcuconf_8h.html#abc31e984ff8585698be0665539a55a79", null ],

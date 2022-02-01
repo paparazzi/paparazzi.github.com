@@ -1,8 +1,8 @@
 var libisp__config_8h =
 [
-    [ "AVI_CONV_CLIPS", "libisp__config_8h.html#a4a9c3de722b6e2ddec469b3938305b12", null ],
-    [ "AVI_CONV_MATRIX", "libisp__config_8h.html#aafbf259c3c364c89a07bc3333967634e", null ],
-    [ "AVI_CONV_OFFSETS", "libisp__config_8h.html#a647ca4ccbd408e21e8ffb61fc53a5530", null ],
+    [ "AVI_CONV_CLIPS", "libisp__config_8h.html#a32f53b5357ffb430d60316f94b30e053", null ],
+    [ "AVI_CONV_MATRIX", "libisp__config_8h.html#a1ba27b7f125e173ee8f6e130c8a84858", null ],
+    [ "AVI_CONV_OFFSETS", "libisp__config_8h.html#ab7b17865ddc7dc46d55fd38039d49d1d", null ],
     [ "COMPLEMENT_2", "libisp__config_8h.html#a48e935859e5b0dac500db27ac0e423fa", null ],
     [ "ISP_CFA", "libisp__config_8h.html#a9255dd8c0972318c0bdabe2720e7fd42", null ],
     [ "MT9F002_BAYERSTATS_STATX", "libisp__config_8h.html#a30e6246962ff771bec27e2154f33c52c", null ],

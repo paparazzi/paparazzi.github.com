@@ -7,7 +7,6 @@ var fixedwing_2autopilot__static_8h =
     [ "AP_MODE_MANUAL", "fixedwing_2autopilot__static_8h.html#a88bb7604ef7a4e00b81fbf760a2ecd01", null ],
     [ "AP_MODE_NB", "fixedwing_2autopilot__static_8h.html#a441d493d96e925f5d95d208b6d88ec12", null ],
     [ "CONTROL_FREQUENCY", "fixedwing_2autopilot__static_8h.html#a992e6194ee1d6c879faa66e51b72840a", null ],
-    [ "NAVIGATION_FREQUENCY", "fixedwing_2autopilot__static_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f", null ],
     [ "attitude_loop", "fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67", null ],
     [ "autopilot_static_init", "fixedwing_2autopilot__static_8h.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24", null ],
     [ "autopilot_static_on_rc_frame", "fixedwing_2autopilot__static_8h.html#af48775939dfa2cf7533658fb85851a35", null ],

@@ -15,7 +15,7 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "logger_control_effectiveness.h", "logger__control__effectiveness_8h.html", "logger__control__effectiveness_8h" ],
     [ "logger_uart.c", "logger__uart_8c.html", "logger__uart_8c" ],
     [ "logger_uart.h", "logger__uart_8h.html", "logger__uart_8h" ],
-    [ "logger_uart_parse.py", "logger__uart__parse_8py.html", null ],
+    [ "logger_uart_parse.py", "logger__uart__parse_8py.html", "logger__uart__parse_8py" ],
     [ "openlog.c", "openlog_8c.html", "openlog_8c" ],
     [ "openlog.h", "openlog_8h.html", "openlog_8h" ],
     [ "pprzlog_tp.c", "pprzlog__tp_8c.html", "pprzlog__tp_8c" ],

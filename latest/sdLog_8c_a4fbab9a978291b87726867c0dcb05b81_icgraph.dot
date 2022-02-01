@@ -1,9 +1,0 @@
-digraph "uiGetIndexOfLogFile"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="uiGetIndexOfLogFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="getFileName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sdLog_8h.html#a510de29d16898e7e402fe7ea2dc7b992",tooltip="get last used name for a pattern, then add offset and return valid filename "];
-}

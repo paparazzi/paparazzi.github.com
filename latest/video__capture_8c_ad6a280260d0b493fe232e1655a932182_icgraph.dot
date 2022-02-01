@@ -1,9 +1,0 @@
-digraph "video_capture_shoot"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="video_capture_shoot",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="dc_send_command",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95",tooltip="Send Command To Camera. "];
-}

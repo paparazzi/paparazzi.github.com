@@ -1,9 +1,0 @@
-digraph "parse_xsens_msg"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="parse_xsens_msg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="wgs84_ellipsoid_to\l_geoid_i",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6",tooltip="Get WGS84 ellipsoid/geoid separation. "];
-}

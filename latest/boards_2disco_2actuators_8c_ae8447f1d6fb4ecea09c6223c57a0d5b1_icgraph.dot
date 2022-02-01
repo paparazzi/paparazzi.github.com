@@ -1,9 +1,0 @@
-digraph "actuators_disco_checksum"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="actuators_disco_checksum",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="actuators_disco_commit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$boards_2disco_2actuators_8h.html#a0181db6b0eea7688d52e6b73b141549b"];
-}

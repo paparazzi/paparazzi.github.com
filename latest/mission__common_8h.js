@@ -1,19 +1,19 @@
 var mission__common_8h =
 [
     [ "_mission_wp", "mission__common_8h.html#struct__mission__wp", [
-      [ "wp", "mission__common_8h.html#ae02b1a5806809c5523c91a03a77c300e", null ]
+      [ "wp", "mission__common_8h.html#a356298c519fdde7c75e04dc50fe401b9", null ]
     ] ],
     [ "_mission_circle", "mission__common_8h.html#struct__mission__circle", [
-      [ "center", "mission__common_8h.html#a356905bc52c53fc5d613325f608b4bbf", null ],
+      [ "center", "mission__common_8h.html#a9814a98bcbbc2912493d1a4671ca4832", null ],
       [ "radius", "mission__common_8h.html#ab7c2c6ef7dd82eef3ed253064455d7d9", null ]
     ] ],
     [ "_mission_segment", "mission__common_8h.html#struct__mission__segment", [
-      [ "from", "mission__common_8h.html#acc9047c3ecfe0b00c111560f5ddffabe", null ],
-      [ "to", "mission__common_8h.html#a3196e51eba04c3992f136e5b9abd7306", null ]
+      [ "from", "mission__common_8h.html#ad2a6ebb7add21aecff1c1523746ee445", null ],
+      [ "to", "mission__common_8h.html#ac1bf163905200f88705f06a1aa20f1bb", null ]
     ] ],
     [ "_mission_path", "mission__common_8h.html#struct__mission__path", [
       [ "nb", "mission__common_8h.html#af6e9e0b2e3c9c08a28fd099a261b2e65", null ],
-      [ "path", "mission__common_8h.html#af683db511859785fa5db8dc2327d393f", null ],
+      [ "path", "mission__common_8h.html#ad4179ba2752c4bf389228a73e012bb05", null ],
       [ "path_idx", "mission__common_8h.html#ad5780cfe4abb38e87b2b78708a04744b", null ]
     ] ],
     [ "_mission_registered", "mission__common_8h.html#struct__mission__registered", [
@@ -27,7 +27,7 @@ var mission__common_8h =
     ] ],
     [ "_mission_element", "mission__common_8h.html#struct__mission__element", [
       [ "duration", "mission__common_8h.html#ae64fdc1f6779b061dc8f99dcaa7b4952", null ],
-      [ "element", "mission__common_8h.html#a2f6fcf16ff70bb85466aebf26611b4ad", null ],
+      [ "element", "mission__common_8h.html#a6ea4dbca82e529dad70fc8002671cc0e", null ],
       [ "index", "mission__common_8h.html#a9b7e63b95f8d64933fb8db3cfa26934a", null ],
       [ "type", "mission__common_8h.html#a9865f3bf50ac1182fbe6998e37799cb8", null ]
     ] ],
@@ -70,13 +70,18 @@ var mission__common_8h =
     [ "MISSION_PATH_NB", "mission__common_8h.html#aab82cfe6539e97d31e0120e16c188465", null ],
     [ "MISSION_REGISTER_NB", "mission__common_8h.html#ab209a799db035090e88a6201c01d9095", null ],
     [ "MISSION_TYPE_SIZE", "mission__common_8h.html#a03c6e0be3d00cafa6c5181342388ab10", null ],
-    [ "mission_custom_cb", "mission__common_8h.html#a5e7203081840e619f3565656a1c25140", null ],
+    [ "mission_custom_cb", "mission__common_8h.html#a13c3d2c000bc063846c910cc7ac51bfd", null ],
     [ "MissionInsertMode", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872e", [
       [ "Append", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13", null ],
       [ "Prepend", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaff00766678e17c5de13a40452c27d802", null ],
       [ "ReplaceCurrent", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea1fd0704fd22b0ea1388f7d19f84f8161", null ],
       [ "ReplaceAll", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ead55a1685be3004600647f9607d70aa70", null ],
       [ "ReplaceNexts", "mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaa7bc3623595171b0c3f13d83b9af532d", null ]
+    ] ],
+    [ "MissionRunFlag", "mission__common_8h.html#a704c1b8acb8d1571d6f23b6efb7977f4", [
+      [ "MissionRun", "mission__common_8h.html#a704c1b8acb8d1571d6f23b6efb7977f4a846867fdd33e5035909150c2c9be9bf0", null ],
+      [ "MissionInit", "mission__common_8h.html#a704c1b8acb8d1571d6f23b6efb7977f4a75ad0f0f4ad1cedcea2f4076537fc9b5", null ],
+      [ "MissionUpdate", "mission__common_8h.html#a704c1b8acb8d1571d6f23b6efb7977f4ad970c0f7486cef69f90e7deb467c8ac0", null ]
     ] ],
     [ "MissionType", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752", [
       [ "MissionWP", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adee6921ec8fea41804938fa1e0a7aa3f", null ],
@@ -87,6 +92,7 @@ var mission__common_8h =
     ] ],
     [ "mission_element_convert", "mission__common_8h.html#a7102be183680d1bf29c5da57ee31f852", null ],
     [ "mission_get", "mission__common_8h.html#ad6fd0022684bf2c6fda1f9626c13cfc4", null ],
+    [ "mission_get_from_index", "mission__common_8h.html#a8cfd722b32d9d6683e562b437e15d8bc", null ],
     [ "mission_init", "mission__common_8h.html#a19c6efe9565f7d4a03291cb165b931ff", null ],
     [ "mission_insert", "mission__common_8h.html#a31b2a2265d6533f3d4f408b82cf99f95", null ],
     [ "mission_parse_CIRCLE", "mission__common_8h.html#a6bc6421e3873d2b4d620bc33e1e90446", null ],
@@ -101,6 +107,7 @@ var mission__common_8h =
     [ "mission_parse_PATH_LLA", "mission__common_8h.html#a21836256087c77243583a2e1de8c648b", null ],
     [ "mission_parse_SEGMENT", "mission__common_8h.html#a9006fa3835ff34e0797a733b8423b00d", null ],
     [ "mission_parse_SEGMENT_LLA", "mission__common_8h.html#a3f6b94a9d68ae0afc1ae4bee904db667", null ],
+    [ "mission_parse_UPDATE", "mission__common_8h.html#a8ae82a35d851ba67a7d044f4950db583", null ],
     [ "mission_point_of_lla", "mission__common_8h.html#a7acc766194f30b5ae4c48a0b2addbb9f", null ],
     [ "mission_register", "mission__common_8h.html#ac357198f4e5126c4c698d1ab2c8330c3", null ],
     [ "mission_run", "mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7", null ],

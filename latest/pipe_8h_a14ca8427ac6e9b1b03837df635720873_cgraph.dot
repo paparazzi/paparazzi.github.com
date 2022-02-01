@@ -1,9 +1,0 @@
-digraph "pipe_receive"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="pipe_receive",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="pipe_char_available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linux_2mcu__periph_2pipe__arch_8c.html#a9321cb9d258dc7cf5d63c1a826cb4da8",tooltip="Get number of bytes available in receive buffer. "];
-}
