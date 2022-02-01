@@ -1,0 +1,47 @@
+<map id="nav_survey_polygon_run" name="nav_survey_polygon_run">
+<area shape="rect" id="node1" title="main navigation routine." alt="" coords="5,444,189,471"/>
+<area shape="rect" id="node2" href="$dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control." alt="" coords="287,267,359,293"/>
+<area shape="rect" id="node20" href="$dc_8c.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode." alt="" coords="279,368,367,395"/>
+<area shape="rect" id="node32" href="$nav__survey__polygon_8c.html#a485ff7a6237bb2fc4cf7e22b2c0a93c8" title="intersects a line with the polygon and gives back the two intersection points" alt="" coords="250,571,395,597"/>
+<area shape="rect" id="node34" href="$nav_8c.html#a249451b8d1fe0b19866ea68e0d8b86df" title="Decide if the UAV is approaching the current waypoint." alt="" coords="677,621,833,648"/>
+<area shape="rect" id="node37" href="$nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y)." alt="" coords="475,469,587,496"/>
+<area shape="rect" id="node41" href="$nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d" title="needs to be implemented by fixedwing and rotorcraft seperately" alt="" coords="264,621,381,648"/>
+<area shape="rect" id="node42" href="$nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title=" " alt="" coords="276,419,369,445"/>
+<area shape="rect" id="node44" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="237,317,408,344"/>
+<area shape="rect" id="node3" href="$dc_8c.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message." alt="" coords="496,267,565,293"/>
+<area shape="rect" id="node4" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="653,267,856,293"/>
+<area shape="rect" id="node9" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="675,161,835,188"/>
+<area shape="rect" id="node5" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="937,267,1105,293"/>
+<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1194,267,1367,293"/>
+<area shape="rect" id="node7" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1450,259,1605,285"/>
+<area shape="rect" id="node8" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1449,309,1605,336"/>
+<area shape="rect" id="node10" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="938,107,1103,133"/>
+<area shape="rect" id="node11" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1456,5,1599,32"/>
+<area shape="rect" id="node13" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1209,5,1352,32"/>
+<area shape="rect" id="node14" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1229,157,1333,184"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1229,107,1332,133"/>
+<area shape="rect" id="node12" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1682,5,1829,32"/>
+<area shape="rect" id="node15" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1473,208,1581,235"/>
+<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1475,157,1580,184"/>
+<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1424,56,1631,83"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1685,197,1825,238"/>
+<area shape="rect" id="node21" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="937,465,1104,492"/>
+<area shape="rect" id="node22" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="1195,461,1366,488"/>
+<area shape="rect" id="node23" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1475,411,1579,437"/>
+<area shape="rect" id="node26" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1679,512,1832,539"/>
+<area shape="rect" id="node27" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1456,563,1599,589"/>
+<area shape="rect" id="node29" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1457,461,1598,488"/>
+<area shape="rect" id="node30" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1476,360,1579,387"/>
+<area shape="rect" id="node24" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1701,411,1809,437"/>
+<area shape="rect" id="node25" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1703,461,1808,488"/>
+<area shape="rect" id="node28" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1679,563,1831,589"/>
+<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1679,360,1831,387"/>
+<area shape="rect" id="node33" href="$nav__survey__polygon_8c.html#a934f329cc92cf420cdc235ce4e33795e" title="intercept two lines and give back the point of intersection" alt="" coords="456,571,605,597"/>
+<area shape="rect" id="node35" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="904,579,1137,605"/>
+<area shape="rect" id="node36" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1185,578,1376,619"/>
+<area shape="rect" id="node38" href="$nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="714,520,795,547"/>
+<area shape="rect" id="node39" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="913,520,1129,547"/>
+<area shape="rect" id="node40" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="1185,513,1376,554"/>
+<area shape="rect" id="node43" href="$nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="475,419,586,445"/>
+<area shape="rect" id="node45" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title=" " alt="" coords="667,317,842,344"/>
+</map>

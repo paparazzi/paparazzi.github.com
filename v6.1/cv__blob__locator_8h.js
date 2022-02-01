@@ -1,0 +1,26 @@
+var cv__blob__locator_8h =
+[
+    [ "cv_blob_locator_GeoReset", "cv__blob__locator_8h.html#acae974e325e0e2e08b37f88ba8a7abd6", null ],
+    [ "StartVision", "cv__blob__locator_8h.html#ac98c24de4398f36279e33589c2f1ed46", null ],
+    [ "StartVisionLand", "cv__blob__locator_8h.html#ad721dd4bd8729c115af325b1ad500de6", null ],
+    [ "StopVision", "cv__blob__locator_8h.html#ac220ea6a6c108d498a7ce49a5cfa20b2", null ],
+    [ "cv_blob_locator_event", "cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b", null ],
+    [ "cv_blob_locator_init", "cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d", null ],
+    [ "cv_blob_locator_periodic", "cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b", null ],
+    [ "cv_blob_locator_start", "cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29", null ],
+    [ "cv_blob_locator_stop", "cv__blob__locator_8h.html#aec5ab0ecb64bee378c339966bcfd7443", null ],
+    [ "start_vision", "cv__blob__locator_8h.html#ab5cade99ec312870fe6fb5bcde39ad05", null ],
+    [ "start_vision_land", "cv__blob__locator_8h.html#a8a4fb6ecf08af9edbb0f368da0225012", null ],
+    [ "stop_vision", "cv__blob__locator_8h.html#aebdb45a65cfc27189556cd6e9d6efc7f", null ],
+    [ "color_cb_max", "cv__blob__locator_8h.html#a028a785eb4e92e36a242baac2c592b6b", null ],
+    [ "color_cb_min", "cv__blob__locator_8h.html#adbcec0bafce0688f1708beaf0b6e792a", null ],
+    [ "color_cr_max", "cv__blob__locator_8h.html#a178c4572aced8af31538a036d2d1c5df", null ],
+    [ "color_cr_min", "cv__blob__locator_8h.html#a39149da1c7d12899680335e4cc339499", null ],
+    [ "color_lum_max", "cv__blob__locator_8h.html#a8546349fa41cd2a0fa906119990c65cf", null ],
+    [ "color_lum_min", "cv__blob__locator_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43", null ],
+    [ "cv_blob_locator_reset", "cv__blob__locator_8h.html#ae97be8987eb112d08c57d0de0d664e82", null ],
+    [ "cv_blob_locator_type", "cv__blob__locator_8h.html#ae3dd4cc91cbed27623ae288efd886bea", null ],
+    [ "geofilter_length", "cv__blob__locator_8h.html#a72a4aa979afe374a531b18124cb16f19", null ],
+    [ "marker_size", "cv__blob__locator_8h.html#a097367403a1933e2662a880988d3d21e", null ],
+    [ "record_video", "cv__blob__locator_8h.html#a83032abdec3a3f45390ff8905fac77e6", null ]
+];

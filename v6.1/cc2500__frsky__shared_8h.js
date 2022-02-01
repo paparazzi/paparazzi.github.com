@@ -1,0 +1,25 @@
+var cc2500__frsky__shared_8h =
+[
+    [ "DEBUG_DATA_BAD_FRAME", "cc2500__frsky__shared_8h.html#af81acf1d2ecfa9e4a1ec2e85bf902c27", null ],
+    [ "DEBUG_DATA_ERROR_COUNT", "cc2500__frsky__shared_8h.html#a08484161bfc8fc25f6587deed5438215", null ],
+    [ "DEBUG_DATA_MISSING_PACKETS", "cc2500__frsky__shared_8h.html#a9edc11533b4625815af2ca31c562061e", null ],
+    [ "MAX_MISSING_PKT", "cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046", null ],
+    [ "MAX_MISSING_PKT", "cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046", null ],
+    [ "SYNC_DELAY_MAX", "cc2500__frsky__shared_8h.html#af36d34afe1a8bde25dfb2a1b52dbba21", null ],
+    [ "STATE_INIT", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda98d2a2153b4ae0445fa0b114d65b94d9", null ],
+    [ "STATE_BIND", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdae441f117be5de33af978dc60c57178e0", null ],
+    [ "STATE_BIND_TUNING", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdae0f5b631e0c9ca2faf55079a6d3d369f", null ],
+    [ "STATE_BIND_BINDING1", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda0b46344271a207f1f9392d5570905067", null ],
+    [ "STATE_BIND_BINDING2", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda17c13b7d597e52eca678da518bcf93c4", null ],
+    [ "STATE_BIND_COMPLETE", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda4d543f30e133b6f436d971be6322a813", null ],
+    [ "STATE_STARTING", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdaa5f51c4eb8c8eec3b16b058c5e29a037", null ],
+    [ "STATE_UPDATE", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdad7ed6145fc50e38bed3750b71718bb01", null ],
+    [ "STATE_DATA", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda3d3ea9fb2db0c6039f1065b6ee452fe9", null ],
+    [ "STATE_TELEMETRY", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcda7e18bbe4a80553244f5db2e15c927e50", null ],
+    [ "STATE_RESUME", "cc2500__frsky__shared_8h.html#aa85e8d66aa325c34334bcaa049300dcdad55dd5088ed018dba79a5dbcf6429ecc", null ],
+    [ "initialiseData", "cc2500__frsky__shared_8h.html#aeb0e66b7e7d77f928e122ea1dfab26fb", null ],
+    [ "nextChannel", "cc2500__frsky__shared_8h.html#aad78fae7846fe4f56409cb30fa52947a", null ],
+    [ "listLength", "cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18", null ],
+    [ "missingPackets", "cc2500__frsky__shared_8h.html#a54bcae7a22dd669bf121c7c626e399dc", null ],
+    [ "timeoutUs", "cc2500__frsky__shared_8h.html#a1793c116abf6558778081081eebefbf7", null ]
+];

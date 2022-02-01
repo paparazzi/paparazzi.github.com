@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['s16_37516',['s16',['../group__common__inttypes.html#gaa980e2c02ba2305e0f489d5650655425',1,'common.h']]],
+  ['s32_37517',['s32',['../group__common__inttypes.html#gae9b1af5c037e57a98884758875d3a7c4',1,'common.h']]],
+  ['s64_37518',['s64',['../group__common__inttypes.html#ga350c6fc928e3bdc6c6486268ac8fb269',1,'common.h']]],
+  ['s8_37519',['s8',['../group__common__inttypes.html#ga9e382f207c65ca13ab4ae98363aeda80',1,'common.h']]],
+  ['sdcardcallback_37520',['SDCardCallback',['../sdcard__spi_8h.html#ae2a7a5bde198bdcfed5e55bbade50435',1,'sdcard_spi.h']]],
+  ['sdlogbuffer_37521',['SdLogBuffer',['../sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a',1,'sdLog.h']]],
+  ['setrcdatafn_37522',['setRcDataFn',['../cc2500__frsky__shared_8c.html#a1ce71bdbc5532b3ef7b69338a692dce3',1,'cc2500_frsky_shared.c']]],
+  ['shell_5fcmd_5ft_37523',['shell_cmd_t',['../shell_8h.html#aaf2a365fb3c908a1f8b5acbaa3e23f25',1,'shell.h']]],
+  ['shell_5fstream_5ft_37524',['shell_stream_t',['../shell__arch_8h.html#a9a514d3f4e3d42cfae8e2192b57a55fc',1,'shell_arch.h']]],
+  ['shellcmd_5ff_37525',['shellcmd_f',['../group__SHELL.html#ga3024ef3f263e5db438b7edaae6fadf3a',1,'microrlShell.h']]],
+  ['smartportcheckqueueemptyfn_37526',['smartPortCheckQueueEmptyFn',['../cc2500__smartport_8h.html#af2634756f2cedecf660182ccb274c5db',1,'cc2500_smartport.h']]],
+  ['smartportdownlinkfn_37527',['smartPortDownlinkFn',['../cc2500__smartport_8h.html#a6b8f2f486b65299c07d7acc726c0fd6f',1,'cc2500_smartport.h']]],
+  ['smartportpayload_5ft_37528',['smartPortPayload_t',['../cc2500__smartport_8h.html#a94b512fef7957e1527fb9018849cd5e4',1,'cc2500_smartport.h']]],
+  ['smartportuplinkfn_37529',['smartPortUplinkFn',['../cc2500__smartport_8h.html#a9cd65f892bd68dc8f8192b73e80617e4',1,'cc2500_smartport.h']]],
+  ['smartportwriteframefn_37530',['smartPortWriteFrameFn',['../cc2500__smartport_8h.html#a05f33530ce629ec71105d7bcf95c27dd',1,'cc2500_smartport.h']]],
+  ['spicallback_37531',['SPICallback',['../group__spi.html#ga8a442d94700c057047ef99e718e68308',1,'spi.h']]],
+  ['sys_5ftime_5fcb_37532',['sys_time_cb',['../sys__time_8h.html#a3b4de12784a71bf48cc87bfb3e38ffbf',1,'sys_time.h']]]
+];

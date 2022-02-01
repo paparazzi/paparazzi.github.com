@@ -1,0 +1,29 @@
+<map id="gec_dl_event" name="gec_dl_event">
+<area shape="rect" id="node1" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="5,360,113,387"/>
+<area shape="rect" id="node2" href="$datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="177,259,313,285"/>
+<area shape="rect" id="node19" href="$gec__dl_8c.html#ac948362603178542b0a8c8b7375279cd" title="Attemp message decryption If a message is unencrypted, pass it through only if the MSG_ID is in the w..." alt="" coords="161,335,328,361"/>
+<area shape="rect" id="node22" href="$gec__dl_8c.html#ad4f92ea52a517934ff6b8eab95cfead5" title="NOTE: for RESPONDER party only Process incoming message (expected MSG1) if the right (KEY_EXCHANGE) m..." alt="" coords="172,385,317,412"/>
+<area shape="rect" id="node26" href="$gec__dl_8c.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="172,461,317,488"/>
+<area shape="rect" id="node3" href="$datalink_8h.html#ad118dedfd61ae7367be31daafcc47f99" title="Should be called when chars are available in dl_buffer." alt="" coords="432,233,544,260"/>
+<area shape="rect" id="node4" href="$datalink_8c.html#aa3b127ff90392c842dc3299876f5e02f" title="Firmware specfic msg handler." alt="" coords="652,157,811,184"/>
+<area shape="rect" id="node16" href="$gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb" title="Default parser for GPS injected data." alt="" coords="669,208,793,235"/>
+<area shape="rect" id="node17" href="$modules_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02" title="Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ..." alt="" coords="648,259,815,285"/>
+<area shape="rect" id="node18" href="$modules_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message." alt="" coords="648,309,815,336"/>
+<area shape="rect" id="node5" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title=" " alt="" coords="914,5,1038,32"/>
+<area shape="rect" id="node7" href="$common__nav_8c.html#af9adf1af7508631a6122c216c6b57602" title="Move a waypoint to given UTM coordinates." alt="" coords="897,56,1055,83"/>
+<area shape="rect" id="node8" href="$group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="903,107,1049,133"/>
+<area shape="rect" id="node10" href="$group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float)." alt="" coords="903,157,1049,184"/>
+<area shape="rect" id="node11" href="$group__state__wind__airspeed.html#ga2ad82d1791a3f1b5e9539ec571fca846" title="Set horizontal windspeed (float)." alt="" coords="863,208,1089,235"/>
+<area shape="rect" id="node12" href="$group__state__wind__airspeed.html#gad1a3cf7bf63a90f1873d3bcfee610d4d" title="Set vertical windspeed (float)." alt="" coords="871,259,1081,285"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="925,309,1027,336"/>
+<area shape="rect" id="node6" href="$common__flight__plan_8c.html#aa3cbfa3c23e459645a8e67b1bb4a1bef" title=" " alt="" coords="1155,5,1271,32"/>
+<area shape="rect" id="node9" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="1137,107,1289,133"/>
+<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1137,280,1289,307"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1143,331,1283,373"/>
+<area shape="rect" id="node20" href="$gec_8c.html#af0f22b92478c79edb3dfb83b0bfe1322" title="Convert from network byte order (big endian) to the machine byte order." alt="" coords="406,284,570,311"/>
+<area shape="rect" id="node21" href="$gec__dl_8c.html#ac21e5df94c5f3003526266d584fc18d3" title=" " alt="" coords="401,335,575,361"/>
+<area shape="rect" id="node23" href="$gec_8c.html#ae873ba7cb08a84eb613be40101d266d2" title="Derive key material for both sender and receiver." alt="" coords="395,385,581,412"/>
+<area shape="rect" id="node24" href="$gec_8c.html#a7dabc3297585157dc9719ba30d72216d" title="Generate private and public key pairs for future use." alt="" coords="376,436,600,463"/>
+<area shape="rect" id="node25" href="$chibios_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea" title=" " alt="" coords="663,436,800,463"/>
+<area shape="rect" id="node27" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function" alt="" coords="463,487,513,513"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="opticflow_module_init" name="opticflow_module_init">
+<area shape="rect" id="node1" title="Initialize the optical flow module for the bottom camera." alt="" coords="5,233,171,260"/>
+<area shape="rect" id="node2" href="$cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title=" " alt="" coords="251,95,389,121"/>
+<area shape="rect" id="node8" href="$opticflow__calculator_8c.html#a7d03c46f201e48777ef9d612fe73fc51" title="Initialize the opticflow calculator." alt="" coords="249,183,391,209"/>
+<area shape="rect" id="node9" href="$opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread." alt="" coords="235,233,405,260"/>
+<area shape="rect" id="node49" href="$opticflow__module_8c.html#a72d1d69e9aee6c7fe948f78b185a944f" title="Send optical flow telemetry information." alt="" coords="238,284,402,311"/>
+<area shape="rect" id="node50" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="219,335,421,361"/>
+<area shape="rect" id="node3" href="$cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules." alt="" coords="499,75,638,101"/>
+<area shape="rect" id="node4" href="$video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title=" " alt="" coords="740,56,875,83"/>
+<area shape="rect" id="node5" href="$v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device." alt="" coords="1015,56,1093,83"/>
+<area shape="rect" id="node7" href="$v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice." alt="" coords="988,5,1120,32"/>
+<area shape="rect" id="node6" href="$virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title=" " alt="" coords="1239,56,1371,83"/>
+<area shape="rect" id="node10" href="$pose__history_8c.html#aad26510aa5a6a4e21e4f1721010c8968" title="Given a pprz timestamp in used (obtained with get_sys_time_usec) we return the pose in FloatEulers cl..." alt="" coords="469,284,668,311"/>
+<area shape="rect" id="node11" href="$opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame." alt="" coords="489,233,649,260"/>
+<area shape="rect" id="node12" href="$opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame." alt="" coords="738,259,877,285"/>
+<area shape="rect" id="node23" href="$opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame." alt="" coords="716,740,899,767"/>
+<area shape="rect" id="node48" href="$group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="716,208,899,235"/>
+<area shape="rect" id="node13" href="$edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260" title="Calc_previous_frame_nr; adaptive Time Horizon." alt="" coords="965,309,1143,336"/>
+<area shape="rect" id="node14" href="$edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms." alt="" coords="947,107,1161,133"/>
+<area shape="rect" id="node16" href="$edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63" title="Calculate a edge/gradient histogram for each dimension of the image." alt="" coords="957,157,1151,184"/>
+<area shape="rect" id="node17" href="$edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339" title="Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow ..." alt="" coords="978,360,1130,387"/>
+<area shape="rect" id="node20" href="$edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db" title="getAmountPeaks, calculates the amount of peaks in a edge histogram" alt="" coords="987,208,1121,235"/>
+<area shape="rect" id="node21" href="$edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88" title="Fits a linear model to an array with pixel displacements with least squares." alt="" coords="1021,259,1087,285"/>
+<area shape="rect" id="node22" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish." alt="" coords="1004,411,1104,437"/>
+<area shape="rect" id="node15" href="$edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array." alt="" coords="1252,107,1357,133"/>
+<area shape="rect" id="node18" href="$image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image." alt="" coords="1465,392,1599,419"/>
+<area shape="rect" id="node19" href="$image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="1664,455,1836,481"/>
+<area shape="rect" id="node24" href="$act__fast_8c.html#ac19c04b1275447322d4739824fa76d42" title="Do an ACT&#45;FAST corner detection." alt="" coords="1017,816,1091,843"/>
+<area shape="rect" id="node28" href="$linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="979,1070,1129,1111"/>
+<area shape="rect" id="node31" href="$opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting." alt="" coords="1012,1019,1096,1045"/>
+<area shape="rect" id="node32" href="$fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection." alt="" coords="1253,968,1356,995"/>
+<area shape="rect" id="node33" href="$size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners." alt="" coords="977,1136,1131,1163"/>
+<area shape="rect" id="node34" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="1003,512,1105,539"/>
+<area shape="rect" id="node35" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="1249,664,1360,691"/>
+<area shape="rect" id="node37" href="$image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="1216,461,1393,488"/>
+<area shape="rect" id="node39" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="979,563,1129,589"/>
+<area shape="rect" id="node41" href="$image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="998,664,1110,691"/>
+<area shape="rect" id="node42" href="$image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale." alt="" coords="977,715,1131,741"/>
+<area shape="rect" id="node43" href="$opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title=" " alt="" coords="969,917,1139,944"/>
+<area shape="rect" id="node45" href="$lucas__kanade_8c.html#a6a8349de0d6e2015151312034c07ed0d" title=" " alt="" coords="1003,765,1105,792"/>
+<area shape="rect" id="node47" href="$opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299" title=" " alt="" coords="976,867,1132,893"/>
+<area shape="rect" id="node25" href="$fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel." alt="" coords="1234,867,1375,893"/>
+<area shape="rect" id="node27" href="$image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location." alt="" coords="1223,816,1386,843"/>
+<area shape="rect" id="node26" href="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation." alt="" coords="1461,917,1603,944"/>
+<area shape="rect" id="node29" href="$linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field." alt="" coords="1229,1099,1380,1141"/>
+<area shape="rect" id="node30" href="$linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness,..." alt="" coords="1231,1048,1379,1075"/>
+<area shape="rect" id="node36" href="$TIM__usage__list_8txt.html#a81309d561a78adb05a4954f9b1599b49" title=" " alt="" coords="1507,664,1557,691"/>
+<area shape="rect" id="node38" href="$image_8c.html#a3855947fea757e63088255cd9e68fcda" title="Draw a cross&#45;hair on the image." alt="" coords="1448,505,1616,532"/>
+<area shape="rect" id="node40" href="$image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="1209,537,1400,564"/>
+<area shape="rect" id="node44" href="$opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column." alt="" coords="1259,917,1350,944"/>
+<area shape="rect" id="node46" href="$image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation." alt="" coords="1233,765,1377,792"/>
+</map>
