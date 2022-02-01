@@ -2,7 +2,7 @@ var ms2100_8h =
 [
     [ "Ms2100", "ms2100_8h.html#structMs2100", [
       [ "cur_axe", "ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647", null ],
-      [ "data", "ms2100_8h.html#a6b32f96e5c74156c281d054419d40828", null ],
+      [ "data", "ms2100_8h.html#a8bb77a552c1a4fea8070fac01a44949a", null ],
       [ "read_buf", "ms2100_8h.html#a7ca306c6e7eb338624be4edd50efa062", null ],
       [ "read_trans", "ms2100_8h.html#a449ba9e4203acdf5a75fc85c8b26e671", null ],
       [ "req_buf", "ms2100_8h.html#a2f1e564599230a1e55da245eb1d5a25e", null ],

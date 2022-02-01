@@ -10,7 +10,7 @@ var cc2500__smartport_8c =
     [ "FSSP_DATAID_DOWNLINK", "cc2500__smartport_8c.html#a84abb42cf7276a9b2d73fa1bde856e61", null ],
     [ "FSSP_DATAID_UPLINK", "cc2500__smartport_8c.html#aaa4f179a657d310cb640c5f04a0b48c6", null ],
     [ "MAX_DATAIDS", "cc2500__smartport_8c.html#ac764c4e40811f21bedbf0e744463362b", null ],
-    [ "frSkyTableInfo_t", "cc2500__smartport_8c.html#ae396f8751139f318e76accd0f38d5d8a", null ],
+    [ "frSkyTableInfo_t", "cc2500__smartport_8c.html#aeea92f1cef8591299308a48f6c54a2da", null ],
     [ "FSSP_DATAID_SPEED", "cc2500__smartport_8c.html#a7c35be1de655e733eaac059ccd76f796aa1c89f3d9b350a954c72dbe113a581a2", null ],
     [ "FSSP_DATAID_VFAS", "cc2500__smartport_8c.html#a7c35be1de655e733eaac059ccd76f796ace0594f8c3d214b3904093183f8db933", null ],
     [ "FSSP_DATAID_VFAS1", "cc2500__smartport_8c.html#a7c35be1de655e733eaac059ccd76f796ad03d6a5086e3d110c1c2b360ef6ec5f1", null ],

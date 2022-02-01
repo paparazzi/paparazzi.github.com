@@ -1,9 +1,0 @@
-digraph "tfmini_send_lidar"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="tfmini_send_lidar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="tfmini_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tfmini_8h.html#ae0b86051c41e1b41b79e0273c952fa07",tooltip="Initialization function. "];
-}

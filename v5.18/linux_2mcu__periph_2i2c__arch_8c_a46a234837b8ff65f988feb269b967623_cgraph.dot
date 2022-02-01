@@ -1,9 +1,0 @@
-digraph "i2c_thread"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="i2c_thread",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="get_rt_prio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1"];
-}

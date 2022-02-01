@@ -54,8 +54,8 @@ var mpu60x0_8h =
     [ "MPU60X0_GYRO_SENS_500_DEN", "mpu60x0_8h.html#a769dffcec31e8a9eaae1aed12b1ceeb7", null ],
     [ "MPU60X0_GYRO_SENS_500_NUM", "mpu60x0_8h.html#aedde6299df08f8a6d53675a312542769", null ],
     [ "MPU60X0_I2C_NB_SLAVES", "mpu60x0_8h.html#a24c074c24854a6ad7c84c9b4ccb2583e", null ],
-    [ "Mpu60x0ConfigSet", "mpu60x0_8h.html#a8cdc9a8a37dfb7224218b0a1b3ee7e9a", null ],
-    [ "Mpu60x0I2cSlaveConfigure", "mpu60x0_8h.html#aa81f67caf046d607299de22a57f797b8", null ],
+    [ "Mpu60x0ConfigSet", "mpu60x0_8h.html#adf601a2d48664acac0e44828da437892", null ],
+    [ "Mpu60x0I2cSlaveConfigure", "mpu60x0_8h.html#a4e535fedf7a4af7976bbe158b90ac762", null ],
     [ "Mpu60x0ConfStatus", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9", [
       [ "MPU60X0_CONF_UNINIT", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a14aa3d6ea66c58f91294589e549b4ef4", null ],
       [ "MPU60X0_CONF_RESET", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9ace1b82f0b0e0598d171258a4f9c31402", null ],

@@ -1,8 +1,0 @@
-digraph "sw/airborne/peripherals/lis302dl.h"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="sw/airborne/peripherals\l/lis302dl.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="peripherals/lis302dl\l_regs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lis302dl__regs_8h.html",tooltip="ST LIS302DL 3-axis accelerometer register definitions. "];
-}

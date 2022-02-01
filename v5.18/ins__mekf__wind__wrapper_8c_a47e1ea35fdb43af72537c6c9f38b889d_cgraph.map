@@ -1,0 +1,33 @@
+<map id="gyro_cb" name="gyro_cb">
+<area shape="rect" id="node1" title="Call ins_mekf_wind_propagate on new gyro measurements." alt="" coords="5,436,79,463"/>
+<area shape="rect" id="node2" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="175,5,330,32"/>
+<area shape="rect" id="node3" href="$group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix." alt="" coords="153,56,353,83"/>
+<area shape="rect" id="node4" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="180,107,325,133"/>
+<area shape="rect" id="node5" href="$ins__mekf__wind_8cpp.html#a97c326d2469d2f8191845f7195340f8b" title=" " alt="" coords="141,157,364,184"/>
+<area shape="rect" id="node6" href="$ins__mekf__wind_8cpp.html#a54b93af569c5a2f17f80cd2087ad45eb" title=" " alt="" coords="429,141,649,168"/>
+<area shape="rect" id="node7" href="$ins__mekf__wind_8cpp.html#a29aee26e8a86eda3fe5b456c9ef21d5d" title=" " alt="" coords="127,512,379,539"/>
+<area shape="rect" id="node8" href="$ins__mekf__wind_8cpp.html#a11d98aae49d3fb42dc2d55ba17b02c79" title=" " alt="" coords="143,563,362,589"/>
+<area shape="rect" id="node9" href="$ins__mekf__wind_8cpp.html#a7f99f03cf34c8949e0cb048ab0e1c640" title=" " alt="" coords="446,193,633,234"/>
+<area shape="rect" id="node10" href="$ins__mekf__wind_8cpp.html#a64ab6d7f656b1e5275a77ccc6330bb93" title="Getter/Setter functions." alt="" coords="435,259,644,285"/>
+<area shape="rect" id="node11" href="$ins__mekf__wind_8cpp.html#aa6187c0d117fa7c8c0d791af3ffd5e86" title=" " alt="" coords="447,563,631,589"/>
+<area shape="rect" id="node12" href="$ins__mekf__wind_8cpp.html#ae36994fcfa9fd90bd0e10529383c8cd9" title=" " alt="" coords="141,613,364,640"/>
+<area shape="rect" id="node13" href="$ins__mekf__wind_8cpp.html#af7842fba65bc5bafcb9b37c6693e2469" title=" " alt="" coords="427,613,652,640"/>
+<area shape="rect" id="node14" href="$ins__mekf__wind_8cpp.html#a13015274cdcd2f4d84a0a86ee8124314" title=" " alt="" coords="144,664,361,691"/>
+<area shape="rect" id="node15" href="$ins__mekf__wind_8cpp.html#aaa16d94e2b75f45e46bb9ea30550ce7a" title="Full INS propagation." alt="" coords="156,715,349,741"/>
+<area shape="rect" id="node20" href="$ins__mekf__wind_8cpp.html#ad2070932e126ed066640e4a6bad6075d" title="AHRS&#45;only propagation + accel correction." alt="" coords="139,765,367,792"/>
+<area shape="rect" id="node21" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="171,816,334,843"/>
+<area shape="rect" id="node24" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="175,867,331,893"/>
+<area shape="rect" id="node25" href="$ins__mekf__wind__wrapper_8c.html#a83584ab974d0141a5807832d8d5f907a" title="update state interface" alt="" coords="179,360,326,387"/>
+<area shape="rect" id="node16" href="$ins__mekf__wind_8cpp.html#a2bf4b5bc0789c828d12dc95c7ed7b98d" title=" " alt="" coords="505,816,573,843"/>
+<area shape="rect" id="node17" href="$ins__mekf__wind_8cpp.html#a331f080db3c962d318b5ee9dada0267f" title=" " alt="" coords="498,664,581,691"/>
+<area shape="rect" id="node18" href="$ins__mekf__wind_8cpp.html#a677b4f5df090d5f92d2799b68d6fe637" title=" " alt="" coords="494,715,585,741"/>
+<area shape="rect" id="node19" href="$ins__mekf__wind_8cpp.html#a848fccd24d6e38f96365250dace72258" title="build skew symetric matrix from vector m = [ 0, &#45;v(2), v(1) ] [ v(2), 0, &#45;v(0) ] [ &#45;v(1),..." alt="" coords="494,765,585,792"/>
+<area shape="rect" id="node22" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="456,867,623,893"/>
+<area shape="rect" id="node23" href="$group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="706,867,851,893"/>
+<area shape="rect" id="node26" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float)." alt="" coords="465,309,614,336"/>
+<area shape="rect" id="node27" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="460,360,619,387"/>
+<area shape="rect" id="node28" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="443,411,635,437"/>
+<area shape="rect" id="node30" href="$group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float)." alt="" coords="456,461,623,488"/>
+<area shape="rect" id="node31" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="462,512,617,539"/>
+<area shape="rect" id="node29" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="700,411,857,437"/>
+</map>

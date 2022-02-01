@@ -18,7 +18,7 @@ var cv_8h =
       [ "next", "cv_8h.html#a89ccb504ba882f7b2c793350f1145be2", null ],
       [ "ts", "cv_8h.html#a646b6205f967282353df6ac3b5d308ad", null ]
     ] ],
-    [ "cv_function", "cv_8h.html#a91f788d8c962e3f30e573b260fa5167a", null ],
+    [ "cv_function", "cv_8h.html#abff341053b4ea2a5d03ebe2e08eeb0f1", null ],
     [ "add_video_device", "cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5", null ],
     [ "cv_add_to_device", "cv_8h.html#a27c5a4c16f124cdc564d637fcc733b97", null ],
     [ "cv_add_to_device_async", "cv_8h.html#af89655c9c578e838cb71808c422d0b15", null ],

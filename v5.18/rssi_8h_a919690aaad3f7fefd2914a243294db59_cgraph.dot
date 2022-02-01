@@ -1,9 +1,0 @@
-digraph "parse_rssi_dl"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="parse_rssi_dl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="set_rssi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rssi_8c.html#a3e69fe3a15e8256b20fed5fb23baf3ab"];
-}

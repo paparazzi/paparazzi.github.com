@@ -1,9 +1,0 @@
-digraph "uart_put_buffer"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="uart_put_buffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="uart_put_byte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5",tooltip="Uart transmit implementation. "];
-}

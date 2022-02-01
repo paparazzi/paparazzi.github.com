@@ -1,9 +1,0 @@
-digraph "mateksys3901l0x_send_optical_flow"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="mateksys3901l0x_send\l_optical_flow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="mateksys3901l0x_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mateksys__3901__l0x_8h.html#a81c49f86f6eab75b45abdae9b15c6cd2",tooltip="Initialization function. "];
-}

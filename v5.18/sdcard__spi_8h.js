@@ -13,7 +13,7 @@ var sdcard__spi_8h =
       [ "timeout_counter", "sdcard__spi_8h.html#ace9fa672e599a4db32c45a21278f3c60", null ]
     ] ],
     [ "SD_BLOCK_SIZE", "sdcard__spi_8h.html#a451aeffb68f3ecfb82eae03c88e9e48c", null ],
-    [ "SDCardCallback", "sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb", null ],
+    [ "SDCardCallback", "sdcard__spi_8h.html#ae2a7a5bde198bdcfed5e55bbade50435", null ],
     [ "SDCardErrorStatus", "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb", [
       [ "SDCardError_None", "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad7f5111f29d23db603dbf300761d10b9", null ],
       [ "SDCardError_InitializationNoResponse", "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0ff153af54f22a94827e75d6aba5958e", null ],

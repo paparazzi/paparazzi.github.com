@@ -1,10 +1,10 @@
 var cc2500__rx__spi_8c =
 [
     [ "UNUSED", "cc2500__rx__spi_8c.html#a86d500a34c624c2cae56bc25a31b12f3", null ],
-    [ "protocolDataReceivedFnPtr", "cc2500__rx__spi_8c.html#ae354cf6ad8c89b7295d78e11cd4d4331", null ],
-    [ "protocolInitFnPtr", "cc2500__rx__spi_8c.html#a4ac86c518dd1b5b5f32ec187abe8501e", null ],
-    [ "protocolProcessFrameFnPtr", "cc2500__rx__spi_8c.html#a1ce40c5d090d04be8d947893307ff4f8", null ],
-    [ "protocolSetRcDataFromPayloadFnPtr", "cc2500__rx__spi_8c.html#a22e18dbd879ddc8cde490c84157c0e4f", null ],
+    [ "protocolDataReceivedFnPtr", "cc2500__rx__spi_8c.html#a02d8b7f5514a77246078c01f06e188e9", null ],
+    [ "protocolInitFnPtr", "cc2500__rx__spi_8c.html#a70e211b5432bb0c85bcf1ecbb66cb94c", null ],
+    [ "protocolProcessFrameFnPtr", "cc2500__rx__spi_8c.html#a508b7480dccbc8d7797a819313d39541", null ],
+    [ "protocolSetRcDataFromPayloadFnPtr", "cc2500__rx__spi_8c.html#ac8f85a509eca65748f0cd6195858b7f2", null ],
     [ "rxSpiFrameStatus", "cc2500__rx__spi_8c.html#af7042d849711c77eddbe29bbb376b559", null ],
     [ "rxSpiInit", "cc2500__rx__spi_8c.html#a69c86568ea4d5d0b6b27d470946083c5", null ],
     [ "rxSpiProcessFrame", "cc2500__rx__spi_8c.html#a194c1961355119b3c16bc44cb59cff59", null ],

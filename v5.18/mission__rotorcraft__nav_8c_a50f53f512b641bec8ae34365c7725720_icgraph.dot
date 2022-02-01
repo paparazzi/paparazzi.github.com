@@ -1,9 +1,0 @@
-digraph "mission_nav_segment"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="mission_nav_segment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="mission_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mission__rotorcraft__nav_8c.html#a77c170761e804706933b8eccce1e93ea",tooltip="Run mission. "];
-}

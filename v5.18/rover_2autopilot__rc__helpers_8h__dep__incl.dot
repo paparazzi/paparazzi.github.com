@@ -1,8 +1,0 @@
-digraph "sw/airborne/firmwares/rover/autopilot_rc_helpers.h"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="sw/airborne/firmwares\l/rover/autopilot_rc_helpers.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="sw/airborne/modules\l/light/led_safety_status.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$led__safety__status_8c.html",tooltip="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..."];
-}

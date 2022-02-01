@@ -1,9 +1,0 @@
-digraph "send_wind_info"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="send_wind_info",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="uav_recovery_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$uav__recovery_8h.html#afb56afa9b03686836acfe9297191647f"];
-}

@@ -1,9 +1,0 @@
-digraph "bmp280_i2c_init"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="bmp280_i2c_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="baro_bmp280_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$baro__bmp280__i2c_8h.html#a56a1810f9a1561f66ef4ea248a1eac87"];
-}

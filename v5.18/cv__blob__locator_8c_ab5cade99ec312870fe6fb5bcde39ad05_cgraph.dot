@@ -1,9 +1,0 @@
-digraph "start_vision"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="start_vision",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="georeference_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e"];
-}

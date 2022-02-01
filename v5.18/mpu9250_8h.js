@@ -53,8 +53,8 @@ var mpu9250_8h =
     [ "MPU9250_GYRO_SENS_500_DEN", "mpu9250_8h.html#afd9c0b0faae06bbb09e301c2da0201ab", null ],
     [ "MPU9250_GYRO_SENS_500_NUM", "mpu9250_8h.html#a4340716705b188fa149d2ecefbbff189", null ],
     [ "MPU9250_I2C_NB_SLAVES", "mpu9250_8h.html#a86533d677bbb1562223508b115f29f86", null ],
-    [ "Mpu9250ConfigSet", "mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee", null ],
-    [ "Mpu9250I2cSlaveConfigure", "mpu9250_8h.html#a6615089619127aa79399b3e49e84a43a", null ],
+    [ "Mpu9250ConfigSet", "mpu9250_8h.html#a472392b459119caa3631b2fc8181284f", null ],
+    [ "Mpu9250I2cSlaveConfigure", "mpu9250_8h.html#a4ac8ce41603e5139a2561c65c5b3bf15", null ],
     [ "Mpu9250ConfStatus", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdf", [
       [ "MPU9250_CONF_UNINIT", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfa6493b0fd1ff7ad572e5d614ea240913e", null ],
       [ "MPU9250_CONF_RESET", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfa38f61fc7949d72b68afe61dbd2443574", null ],

@@ -1,9 +1,0 @@
-digraph "set_cov_flow"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="set_cov_flow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="covariance_f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18",tooltip="Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the ..."];
-}

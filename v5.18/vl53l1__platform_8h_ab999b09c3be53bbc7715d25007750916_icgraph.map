@@ -1,0 +1,42 @@
+<map id="VL53L1_ReadMulti" name="VL53L1_ReadMulti">
+<area shape="rect" id="node1" title="VL53L1_ReadMulti() definition." alt="" coords="1752,740,1895,767"/>
+<area shape="rect" id="node2" href="$vl53l1__platform_8h.html#aa026c23b0a98e581183ff1b7661faac8" title="VL53L1_RdByte() definition." alt="" coords="1568,1019,1691,1045"/>
+<area shape="rect" id="node22" href="$vl53l1__platform_8h.html#adad89adbfd623ab80104043eba3c36db" title="VL53L1_RdDWord() definition." alt="" coords="1561,56,1697,83"/>
+<area shape="rect" id="node25" href="$vl53l1__platform_8h.html#acc21e994d7d6651df18f96648afb37ea" title="VL53L1_RdWord() definition." alt="" coords="1566,436,1693,463"/>
+<area shape="rect" id="node40" href="$vl53l1x__api_8h.html#a71be30985998f0500d22a3d76309f6d3" title="This function returns measurements and the range status in a single read access." alt="" coords="1555,1069,1704,1096"/>
+<area shape="rect" id="node3" href="$vl53l1x__api_8h.html#a2c2712e30ef7022410a78af61ee64770" title="This function returns the boot state of the device (1:booted, 0:not booted)" alt="" coords="1010,927,1159,953"/>
+<area shape="rect" id="node8" href="$vl53l1x__api_8h.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="976,1019,1193,1045"/>
+<area shape="rect" id="node11" href="$vl53l1x__api_8h.html#a0fac06ee1759ea014072d7974ab9273c" title="This function returns the current distance mode (1=short, 2=long)." alt="" coords="1277,816,1478,843"/>
+<area shape="rect" id="node14" href="$vl53l1x__api_8h.html#a3193a952dc2159c8ae3e4092ea6d5eeb" title="This function returns the window detection mode (0=below; 1=above; 2=out; 3=in)" alt="" coords="1263,1121,1492,1162"/>
+<area shape="rect" id="node15" href="$vl53l1x__api_8h.html#a8249b0d608abb9be4beefaf81cb34713" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="1270,1069,1485,1096"/>
+<area shape="rect" id="node16" href="$vl53l1x__api_8h.html#a5b399afb0ef8423ddd5a83897a9974da" title="This function returns the ranging status error &#160;(0:no error, 1:sigma failed, 2:signal failed,..." alt="" coords="1282,1187,1473,1213"/>
+<area shape="rect" id="node17" href="$vl53l1x__api_8h.html#a00b10506941ef2584ee7fad0937a0c36" title="This function returns width X and height Y." alt="" coords="1300,1237,1455,1264"/>
+<area shape="rect" id="node18" href="$vl53l1x__api_8h.html#ad216c17a2c6291f9bb0cd8f903db543d" title="This function returns the current user ROI center." alt="" coords="1290,1288,1465,1315"/>
+<area shape="rect" id="node19" href="$vl53l1x__api_8h.html#aab8c6715dd0a1e694e1e92cbf3dd8d2a" title="This function programs the threshold detection mode Example: VL53L1X_SetDistanceThreshold(dev,..." alt="" coords="1264,1339,1491,1365"/>
+<area shape="rect" id="node20" href="$vl53l1x__api_8h.html#a97c366aa4aa567c752f1d1bb6fc56cd3" title="This function programs the interrupt polarity 1=active high (default), 0=active low." alt="" coords="1271,867,1483,893"/>
+<area shape="rect" id="node21" href="$vl53l1x__api_8h.html#ae65432b46f39bf17ccbf560b19632a45" title="This function programs the ROI (Region of Interest) The ROI position is centered, only the ROI size c..." alt="" coords="1313,917,1442,944"/>
+<area shape="rect" id="node4" href="$vl53l1x__api_8h.html#a4f5f0ac3cdbbcbc565f0babde7db4588" title="Implement boot sequence of VL53L1 device as described in documentation See VL53L1X_SetTimingBudgetInM..." alt="" coords="456,825,616,852"/>
+<area shape="rect" id="node5" href="$cf__deck__multi__ranger_8c.html#a63ef1a1fb2184ea792b37e6982099348" title="Boot a device." alt="" coords="217,800,408,827"/>
+<area shape="rect" id="node7" href="$sonar__vl53l1x_8h.html#af22954043e5570ba94680eec7b483fa0" title=" " alt="" coords="242,851,383,877"/>
+<area shape="rect" id="node6" href="$cf__deck__multi__ranger_8h.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function." alt="" coords="5,800,169,827"/>
+<area shape="rect" id="node9" href="$vl53l1x__api_8h.html#a09f0e0407aa544559216b42f6745d5fa" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="717,1019,868,1045"/>
+<area shape="rect" id="node10" href="$vl53l1x__api_8h.html#afa096166165ff67887c9fd9f9dbdd691" title="This function performs the temperature calibration." alt="" coords="693,953,892,994"/>
+<area shape="rect" id="node12" href="$vl53l1x__api_8h.html#a96416653f93aa7e5b8ed954c8b9cdd9f" title="This function programs the timing budget in ms." alt="" coords="971,816,1199,843"/>
+<area shape="rect" id="node13" href="$vl53l1x__api_8h.html#a1bed9923a29d7a7521d8c8e9a96cf97d" title="This function programs the distance mode (1=short, 2=long(default))." alt="" coords="693,775,892,801"/>
+<area shape="rect" id="node23" href="$vl53l1x__api_8h.html#ab0995d826d85c96e883b415e6df49e8b" title="This function returns the Intermeasurement period in ms." alt="" coords="1248,56,1507,83"/>
+<area shape="rect" id="node24" href="$vl53l1x__api_8h.html#ae298027422905ff20480815b9ed08677" title="This function returns the current programmed xtalk correction value in cps." alt="" coords="1306,5,1449,32"/>
+<area shape="rect" id="node26" href="$vl53l1x__api_8h.html#a8d018e27b9c34db64010ebc174a26907" title="This function returns the ambient per SPAD in kcps/SPAD." alt="" coords="1269,157,1485,184"/>
+<area shape="rect" id="node27" href="$vl53l1x__api_8h.html#a0ffa189d040e33c3cadcf997a6475db1" title="This function returns the ambient rate in kcps." alt="" coords="1281,208,1474,235"/>
+<area shape="rect" id="node28" href="$vl53l1x__api_8h.html#af36478a58eb8f029df317a4b5e6ee74e" title="This function returns the distance measured by the sensor in mm." alt="" coords="1295,259,1460,285"/>
+<area shape="rect" id="node29" href="$vl53l1x__api_8h.html#af07ceb7e716ebd6bcbd6b7e5aab48229" title="This function returns the high threshold in mm." alt="" coords="1248,309,1507,336"/>
+<area shape="rect" id="node30" href="$vl53l1x__api_8h.html#a8102d88dbc2cf3244a8e1f5e05289b1d" title="This function returns the low threshold in mm." alt="" coords="1250,360,1505,387"/>
+<area shape="rect" id="node31" href="$vl53l1x__api_8h.html#ad1bc716d59b9abf899bb5d206a8aa8cf" title="This function returns the programmed offset correction value in mm." alt="" coords="1304,411,1451,437"/>
+<area shape="rect" id="node32" href="$vl53l1x__api_8h.html#a98697d46d1e29662b0145ecd59311d1a" title="This function returns the sensor id, sensor Id must be 0xEEAC." alt="" coords="1295,461,1459,488"/>
+<area shape="rect" id="node33" href="$vl53l1x__api_8h.html#aebf3b9ca3da997343a402dae99e131a3" title="This function returns the current sigma threshold in mm." alt="" coords="1271,512,1484,539"/>
+<area shape="rect" id="node34" href="$vl53l1x__api_8h.html#a41c579ed15ea121d468170f32eb472e0" title="This function returns the returned signal per SPAD in kcps/SPAD." alt="" coords="1277,563,1478,589"/>
+<area shape="rect" id="node35" href="$vl53l1x__api_8h.html#a9f8b0ca80a98f3249bd9e4953a03dceb" title="This function returns the returned signal in kcps." alt="" coords="1288,613,1467,640"/>
+<area shape="rect" id="node36" href="$vl53l1x__api_8h.html#a877342826a5beee1c7370a80b6d2c6f0" title="This function returns the current signal threshold in kcps." alt="" coords="1271,664,1483,691"/>
+<area shape="rect" id="node37" href="$vl53l1x__api_8h.html#ae8c0b2a86192d524f44c8633c3a1a06f" title="This function returns the current number of enabled SPADs." alt="" coords="1298,715,1457,741"/>
+<area shape="rect" id="node38" href="$vl53l1x__api_8h.html#a24042216e0c01b994e52b248aa60f145" title="This function returns the current timing budget in ms." alt="" coords="969,765,1200,792"/>
+<area shape="rect" id="node39" href="$vl53l1x__api_8h.html#a2f9dc21891cedff85ec8465c3c9b9d66" title="This function programs the Intermeasurement period in ms Intermeasurement period must be &gt;/= timing b..." alt="" coords="664,415,921,441"/>
+</map>

@@ -1,5 +1,10 @@
 var NAVTREEINDEX124 =
 {
+"module__baro_hca.html#module_xml__baro_hca":[1,353,2,0],
+"module__baro_mpl3115.html":[1,354],
+"module__baro_mpl3115.html#configuration__baro_mpl3115":[1,354,1],
+"module__baro_mpl3115.html#functions__baro_mpl3115":[1,354,2],
+"module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,354,0],
 "module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,354,2,0],
 "module__baro_ms5534a.html":[1,347],
 "module__baro_ms5534a.html#functions__baro_ms5534a":[1,347,1],
@@ -153,6 +158,7 @@ var NAVTREEINDEX124 =
 "module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,59,2,0],
 "module__cv_colorfilter.html":[1,60],
 "module__cv_colorfilter.html#configuration__cv_colorfilter":[1,60,1],
+"module__cv_colorfilter.html#define":[1,60,1,0],
 "module__cv_colorfilter.html#functions__cv_colorfilter":[1,60,2],
 "module__cv_colorfilter.html#module_load_example__cv_colorfilter":[1,60,0],
 "module__cv_colorfilter.html#module_xml__cv_colorfilter":[1,60,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX124 =
 "module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,118,3,0],
 "module__digital_cam_servo.html":[1,119],
 "module__digital_cam_servo.html#configuration__digital_cam_servo":[1,119,1],
-"module__digital_cam_servo.html#functions__digital_cam_servo":[1,119,2],
-"module__digital_cam_servo.html#module_load_example__digital_cam_servo":[1,119,0],
-"module__digital_cam_servo.html#module_xml__digital_cam_servo":[1,119,2,0],
-"module__digital_cam_shoot_rc.html":[1,120],
-"module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc":[1,120,1],
-"module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc":[1,120,2],
-"module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,120,0]
+"module__digital_cam_servo.html#functions__digital_cam_servo":[1,119,2]
 };

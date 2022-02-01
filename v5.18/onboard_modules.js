@@ -144,10 +144,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "actuators_pwm module", "module__actuators_pwm.html", [
-      [ "Example for airframe file", "module__actuators_pwm.html#module_load_example__actuators_pwm", null ],
-      [ "Files", "module__actuators_pwm.html#files", [
-        [ "Header Files", "module__actuators_pwm.html#headers", null ],
-        [ "Source Files", "module__actuators_pwm.html#sources", null ],
+      [ "Example for airframe file", "module__actuators_pwm.html#module_load_example__actuators_pwm", [
         [ "Raw actuators_pwm.xml file:", "module__actuators_pwm.html#module_xml__actuators_pwm", null ]
       ] ]
     ] ],
@@ -171,6 +168,7 @@ var onboard_modules =
     ] ],
     [ "actuators_swing module", "module__actuators_swing.html", [
       [ "Example for airframe file", "module__actuators_swing.html#module_load_example__actuators_swing", [
+        [ "Header Files", "module__actuators_swing.html#headers", null ],
         [ "Raw actuators_swing.xml file:", "module__actuators_swing.html#module_xml__actuators_swing", null ]
       ] ]
     ] ],
@@ -418,7 +416,9 @@ var onboard_modules =
     ] ],
     [ "cv_colorfilter module", "module__cv_colorfilter.html", [
       [ "Example for airframe file", "module__cv_colorfilter.html#module_load_example__cv_colorfilter", null ],
-      [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", null ],
+      [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", [
+        [ "Define Options", "module__cv_colorfilter.html#define", null ]
+      ] ],
       [ "Module functions", "module__cv_colorfilter.html#functions__cv_colorfilter", [
         [ "Raw cv_colorfilter.xml file:", "module__cv_colorfilter.html#module_xml__cv_colorfilter", null ]
       ] ]
@@ -1125,23 +1125,23 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_2.html#autoloads__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_2.html#autoloads__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_b2_common module", "module__imu_b2_common.html", [
       [ "Example for airframe file", "module__imu_b2_common.html#module_load_example__imu_b2_common", null ],
@@ -1154,9 +1154,7 @@ var onboard_modules =
     [ "imu_b2_v1.0 module", "module__imu_b2_v1_0.html", [
       [ "Example for airframe file", "module__imu_b2_v1_0.html#module_load_example__imu_b2_v1_0", null ],
       [ "Module configuration options", "module__imu_b2_v1_0.html#configuration__imu_b2_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_b2_v1_0.html#autoloads__imu_b2_v1_0", [
-        [ ".0 Raw imu_b2_v1.0.xml file:", "module__imu_b2_v1_0.html#module_xml__imu_b2_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_b2_v1_0.html#autoloads__imu_b2_v1_0", null ]
     ] ],
     [ "imu_b2_v1.1 module", "module__imu_b2_v1_1.html", [
       [ "Example for airframe file", "module__imu_b2_v1_1.html#module_load_example__imu_b2_v1_1", null ],
@@ -1166,13 +1164,16 @@ var onboard_modules =
     [ "imu_b2_v1.2 module", "module__imu_b2_v1_2.html", [
       [ "Example for airframe file", "module__imu_b2_v1_2.html#module_load_example__imu_b2_v1_2", null ],
       [ "Module configuration options", "module__imu_b2_v1_2.html#configuration__imu_b2_v1_2", null ],
-      [ "Auto-loaded modules", "module__imu_b2_v1_2.html#autoloads__imu_b2_v1_2", null ]
+      [ "Auto-loaded modules", "module__imu_b2_v1_2.html#autoloads__imu_b2_v1_2", [
+        [ ".2 Raw imu_b2_v1.2.xml file:", "module__imu_b2_v1_2.html#module_xml__imu_b2_v1", null ]
+      ] ]
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
       [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
+        [ "Event Functions", "module__imu_bebop.html#event_functions", null ],
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
     ] ],
@@ -1395,7 +1396,8 @@ var onboard_modules =
     ] ],
     [ "imu_yai module", "module__imu_yai.html", [
       [ "Example for airframe file", "module__imu_yai.html#module_load_example__imu_yai", null ],
-      [ "Auto-loaded modules", "module__imu_yai.html#autoloads__imu_yai", [
+      [ "Auto-loaded modules", "module__imu_yai.html#autoloads__imu_yai", null ],
+      [ "Files", "module__imu_yai.html#files", [
         [ "Raw imu_yai.xml file:", "module__imu_yai.html#module_xml__imu_yai", null ]
       ] ]
     ] ],
@@ -1695,6 +1697,7 @@ var onboard_modules =
     [ "openlog module", "module__openlog.html", [
       [ "Example for airframe file", "module__openlog.html#module_load_example__openlog", null ],
       [ "Module functions", "module__openlog.html#functions__openlog", [
+        [ "Periodic Functions", "module__openlog.html#periodic_functions", null ],
         [ "Raw openlog.xml file:", "module__openlog.html#module_xml__openlog", null ]
       ] ]
     ] ],
@@ -1820,13 +1823,8 @@ var onboard_modules =
     ] ],
     [ "humid_sht_uart module", "module__humid_sht_uart.html", [
       [ "Example for airframe file", "module__humid_sht_uart.html#module_load_example__humid_sht_uart", null ],
-      [ "Module configuration options", "module__humid_sht_uart.html#configuration__humid_sht_uart", [
-        [ "Configure Options", "module__humid_sht_uart.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__humid_sht_uart.html#configuration__humid_sht_uart", null ],
       [ "Module functions", "module__humid_sht_uart.html#functions__humid_sht_uart", [
-        [ "Init Functions", "module__humid_sht_uart.html#init_functions", null ],
-        [ "Event Functions", "module__humid_sht_uart.html#event_functions", null ],
-        [ "Periodic Functions", "module__humid_sht_uart.html#periodic_functions", null ],
         [ "Raw humid_sht_uart.xml file:", "module__humid_sht_uart.html#module_xml__humid_sht_uart", null ]
       ] ]
     ] ],
@@ -2257,9 +2255,7 @@ var onboard_modules =
     ] ],
     [ "airspeed_adc module", "module__airspeed_adc.html", [
       [ "Example for airframe file", "module__airspeed_adc.html#module_load_example__airspeed_adc", null ],
-      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", [
-        [ "Define Options", "module__airspeed_adc.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", null ],
       [ "Module functions", "module__airspeed_adc.html#functions__airspeed_adc", [
         [ "Raw airspeed_adc.xml file:", "module__airspeed_adc.html#module_xml__airspeed_adc", null ]
       ] ]
@@ -2535,6 +2531,8 @@ var onboard_modules =
     [ "nps module", "module__nps.html", [
       [ "Example for airframe file", "module__nps.html#module_load_example__nps", null ],
       [ "Module configuration options", "module__nps.html#configuration__nps", [
+        [ "Configure Options", "module__nps.html#configure", null ],
+        [ "Source Files", "module__nps.html#sources", null ],
         [ "Raw nps.xml file:", "module__nps.html#module_xml__nps", null ]
       ] ]
     ] ],
@@ -2780,8 +2778,12 @@ var onboard_modules =
     ] ],
     [ "distributed_circular_formation module", "module__distributed_circular_formation.html", [
       [ "Example for airframe file", "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation", null ],
-      [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", null ],
-      [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", null ],
+      [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", [
+        [ "Airframe file section", "module__distributed_circular_formation.html#af_section", null ]
+      ] ],
+      [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", [
+        [ "Init Functions", "module__distributed_circular_formation.html#init_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation", [
         [ "Raw distributed_circular_formation.xml file:", "module__distributed_circular_formation.html#module_xml__distributed_circular_formation", null ]
       ] ]
@@ -2790,6 +2792,9 @@ var onboard_modules =
       [ "Example for airframe file", "module__dragspeed.html#module_load_example__dragspeed", null ],
       [ "Module configuration options", "module__dragspeed.html#configuration__dragspeed", null ],
       [ "Module functions", "module__dragspeed.html#functions__dragspeed", [
+        [ "Usage instructions", "module__dragspeed.html#autotoc_md7", null ],
+        [ "Calibration from flight plan", "module__dragspeed.html#autotoc_md8", null ],
+        [ "Example results", "module__dragspeed.html#autotoc_md9", null ],
         [ "Raw dragspeed.xml file:", "module__dragspeed.html#module_xml__dragspeed", null ]
       ] ]
     ] ],
@@ -2880,9 +2885,7 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_common module", "module__imu_aspirin_i2c_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_common.html#module_load_example__imu_aspirin_i2c_common", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common", [
-        [ "Airframe file section", "module__imu_aspirin_i2c_common.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_aspirin_i2c_common.html#configuration__imu_aspirin_i2c_common", null ],
       [ "Auto-loaded modules", "module__imu_aspirin_i2c_common.html#autoloads__imu_aspirin_i2c_common", null ],
       [ "Module functions", "module__imu_aspirin_i2c_common.html#functions__imu_aspirin_i2c_common", [
         [ "Raw imu_aspirin_i2c_common.xml file:", "module__imu_aspirin_i2c_common.html#module_xml__imu_aspirin_i2c_common", null ]

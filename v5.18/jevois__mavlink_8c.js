@@ -34,7 +34,7 @@ var jevois__mavlink_8c =
     [ "ax_filtered", "jevois__mavlink_8c.html#acc0f3f7c83f3b6a225e596b480c6fba0", null ],
     [ "ay_filtered", "jevois__mavlink_8c.html#ab21b9273567c90fa4b250f4ea721d6a2", null ],
     [ "az_filtered", "jevois__mavlink_8c.html#ae55c0d953870831473b302cf33fcddb7", null ],
-    [ "jevois_vision_position", "jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467", null ],
-    [ "jevois_visual_target", "jevois__mavlink_8c.html#adc996a69f9c16930a86649539e15465d", null ],
+    [ "jevois_vision_position", "jevois__mavlink_8c.html#a7595f5fd5ae0628b4ff7ceaf34ddf393", null ],
+    [ "jevois_visual_target", "jevois__mavlink_8c.html#a86d40e844a3501b3bce67e5875a01fe9", null ],
     [ "mavlink_system", "jevois__mavlink_8c.html#a5123629902b8b0dcf1d5cb7336558801", null ]
 ];

@@ -2,8 +2,8 @@ var structIndiController__int =
 [
     [ "actuator_out", "structIndiController__int.html#a775f73840c3d3ccef1ceabb5fbeb5963", null ],
     [ "apply_actuator_filters", "structIndiController__int.html#a7d8e27ae27167db72b66069c8cfb2b09", null ],
-    [ "apply_actuator_models", "structIndiController__int.html#a35da255d01147367d1a0681370981344", null ],
-    [ "apply_compensator_filters", "structIndiController__int.html#a015e77bdc706cec312a94d32f0c72d71", null ],
+    [ "apply_actuator_models", "structIndiController__int.html#acac52925417ac3775934a0f481672279", null ],
+    [ "apply_compensator_filters", "structIndiController__int.html#a7aed8328970fcb6de3b43ba768c75bf6", null ],
     [ "apply_measurement_filters", "structIndiController__int.html#ae86ce4ebaf7239ec8d12e7e7d499c63f", null ],
     [ "command_out", "structIndiController__int.html#a2059f08f5197199c87dcba2794ecb629", null ],
     [ "du", "structIndiController__int.html#a8d97e7d0eab949a6053efbf0ca4cd950", null ],

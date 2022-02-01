@@ -1,9 +1,0 @@
-digraph "ins_float_invariant_update_baro"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="ins_float_invariant\l_update_baro",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="pprz_isa_height_of\l_pressure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342",tooltip="Get relative altitude from pressure (using simplified equation). "];
-}

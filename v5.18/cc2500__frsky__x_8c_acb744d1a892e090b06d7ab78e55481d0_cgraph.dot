@@ -1,9 +1,0 @@
-digraph "frSkyXTelemetryWriteFrame"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="frSkyXTelemetryWriteFrame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="frSkyXTelemetrySendByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cc2500__frsky__x_8c.html#a3b7e9e8865dd8c98098401d2943237f2"];
-}

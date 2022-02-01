@@ -34,7 +34,7 @@ var detect__gate_8c =
     [ "detect_gate_x", "detect__gate_8c.html#adeb78321ebf540124ab727267af0418b", null ],
     [ "detect_gate_y", "detect__gate_8c.html#a828c33a09d6ccd61a34654e01e3d3490", null ],
     [ "detect_gate_z", "detect__gate_8c.html#a931e13cbfff443298be8395371bf9964", null ],
-    [ "detectgate_vision_position", "detect__gate_8c.html#a34a09dfc6709ca84cece5956482f7e15", null ],
+    [ "detectgate_vision_position", "detect__gate_8c.html#ab8b77f2323d29a3df24184ce664de584", null ],
     [ "drone_position", "detect__gate_8c.html#ab67606ead4a7616a98a444476caaa7cf", null ],
     [ "exclude_bottom", "detect__gate_8c.html#ae53e4d7c46dde5e5f8975c2e7c3cf868", null ],
     [ "exclude_top", "detect__gate_8c.html#ad6498d58fc8ce79a34c4e4f5bc544d90", null ],

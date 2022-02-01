@@ -23,7 +23,7 @@ var sys__time_8h =
     [ "SysTimeTimerStart", "sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a", null ],
     [ "SysTimeTimerStop", "sys__time_8h.html#abb950f6634af7da754fa0c6d99d689cb", null ],
     [ "USEC_OF_SEC", "sys__time_8h.html#a16b92e3e15d99fcf7029503763a63b61", null ],
-    [ "sys_time_cb", "sys__time_8h.html#a7c75e80c3211af63abc57efa18647726", null ],
+    [ "sys_time_cb", "sys__time_8h.html#a3b4de12784a71bf48cc87bfb3e38ffbf", null ],
     [ "tid_t", "sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae", null ],
     [ "cpu_ticks_of_nsec", "sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2", null ],
     [ "cpu_ticks_of_sec", "sys__time_8h.html#ac32566a6fc1f80520e4484ce581f45a5", null ],

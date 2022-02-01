@@ -1,5 +1,12 @@
 var NAVTREEINDEX127 =
 {
+"module__imu_lisa_mx_v2_1.html":[1,185],
+"module__imu_lisa_mx_v2_1.html#autoloads__imu_lisa_mx_v2_1":[1,185,1],
+"module__imu_lisa_mx_v2_1.html#module_load_example__imu_lisa_mx_v2_1":[1,185,0],
+"module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2":[1,185,1,0],
+"module__imu_lisa_s_v1_0.html":[1,186],
+"module__imu_lisa_s_v1_0.html#autoloads__imu_lisa_s_v1_0":[1,186,2],
+"module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,186,1],
 "module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,186,0],
 "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,186,2,0],
 "module__imu_mpu6000.html":[1,187],
@@ -122,8 +129,9 @@ var NAVTREEINDEX127 =
 "module__imu_xsens.html#module_xml__imu_xsens":[1,208,3,0],
 "module__imu_yai.html":[1,203],
 "module__imu_yai.html#autoloads__imu_yai":[1,203,1],
+"module__imu_yai.html#files":[1,203,2],
 "module__imu_yai.html#module_load_example__imu_yai":[1,203,0],
-"module__imu_yai.html#module_xml__imu_yai":[1,203,1,0],
+"module__imu_yai.html#module_xml__imu_yai":[1,203,2,0],
 "module__infrared_adc.html":[1,365],
 "module__infrared_adc.html#configuration__infrared_adc":[1,365,1],
 "module__infrared_adc.html#functions__infrared_adc":[1,365,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX127 =
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,269,0],
 "module__ir_mlx.html#module_xml__ir_mlx":[1,269,1,0],
 "module__jevois.html":[1,377],
-"module__jevois.html#configuration__jevois":[1,377,1],
-"module__jevois.html#functions__jevois":[1,377,2],
-"module__jevois.html#module_load_example__jevois":[1,377,0],
-"module__jevois.html#module_xml__jevois":[1,377,2,0],
-"module__jevois_mavlink.html":[1,378],
-"module__jevois_mavlink.html#functions__jevois_mavlink":[1,378,1],
-"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,378,0],
-"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,378,1,0],
-"module__joystick.html":[1,434]
+"module__jevois.html#configuration__jevois":[1,377,1]
 };

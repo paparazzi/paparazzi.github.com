@@ -7,7 +7,7 @@ var cc2500__smartport_8h =
     ] ],
     [ "smartPortCheckQueueEmptyFn", "cc2500__smartport_8h.html#af2634756f2cedecf660182ccb274c5db", null ],
     [ "smartPortDownlinkFn", "cc2500__smartport_8h.html#a6b8f2f486b65299c07d7acc726c0fd6f", null ],
-    [ "smartPortPayload_t", "cc2500__smartport_8h.html#a30dd4ab7bec2968854692c27cef9a340", null ],
+    [ "smartPortPayload_t", "cc2500__smartport_8h.html#a94b512fef7957e1527fb9018849cd5e4", null ],
     [ "smartPortUplinkFn", "cc2500__smartport_8h.html#a9cd65f892bd68dc8f8192b73e80617e4", null ],
     [ "smartPortWriteFrameFn", "cc2500__smartport_8h.html#a05f33530ce629ec71105d7bcf95c27dd", null ],
     [ "FSSP_START_STOP", "cc2500__smartport_8h.html#ad559b3ed307be626eacea8b56942de61af3681eea7cc33c2c230faf5cc90ec5ca", null ],

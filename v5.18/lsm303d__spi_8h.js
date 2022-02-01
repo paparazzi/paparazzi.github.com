@@ -2,10 +2,10 @@ var lsm303d__spi_8h =
 [
     [ "Lsm303d_Spi", "lsm303d__spi_8h.html#structLsm303d__Spi", [
       [ "conf", "lsm303d__spi_8h.html#a80b8a8cbfb17aea122db89d216810a1e", null ],
-      [ "data_accel", "lsm303d__spi_8h.html#aa88e00a04bda8505a0cf34e25b038c45", null ],
+      [ "data_accel", "lsm303d__spi_8h.html#a0d612c9eea9844b6eba0870a7c0d1cb9", null ],
       [ "data_available_acc", "lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8", null ],
       [ "data_available_mag", "lsm303d__spi_8h.html#aa02c102c0cd7e116f0f83be3d8483bca", null ],
-      [ "data_mag", "lsm303d__spi_8h.html#a7f19022497d8abfbbbb7996ff5d4e291", null ],
+      [ "data_mag", "lsm303d__spi_8h.html#ade5f3b945c89bb428933080af76c9be4", null ],
       [ "init_status", "lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9", null ],
       [ "initialized", "lsm303d__spi_8h.html#a7a9cafa1a16ad91bf0327fc302108030", null ],
       [ "rx_buf", "lsm303d__spi_8h.html#a1964fbd63e0704237a0b49a4bdae158e", null ],

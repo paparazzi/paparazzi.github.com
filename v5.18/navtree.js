@@ -1,622 +1,28 @@
-var NAVTREE =
-[
-  [ "Paparazzi UAS", "index.html", [
-    [ "Style Guides", "styleguide.html", "styleguide" ],
-    [ "Onboard Modules", "onboard_modules.html", "onboard_modules" ],
-    [ "Paparazzi Messages", "paparazzi_messages.html", [
-      [ "Telemetry Messages", "paparazzi_messages.html#TELEMETRY_CLASS", [
-        [ "AUTOPILOT_VERSION (ID 1)", "paparazzi_messages.html#AUTOPILOT_VERSION", null ],
-        [ "ALIVE (ID 2)", "paparazzi_messages.html#ALIVE", null ],
-        [ "PONG (ID 3)", "paparazzi_messages.html#PONG", null ],
-        [ "TAKEOFF (ID 4)", "paparazzi_messages.html#TAKEOFF", null ],
-        [ "ARDRONE_NAVDATA (ID 5)", "paparazzi_messages.html#ARDRONE_NAVDATA", null ],
-        [ "ATTITUDE (ID 6)", "paparazzi_messages.html#ATTITUDE", null ],
-        [ "IR_SENSORS (ID 7)", "paparazzi_messages.html#IR_SENSORS", null ],
-        [ "GPS (ID 8)", "paparazzi_messages.html#GPS", null ],
-        [ "NAVIGATION_REF (ID 9)", "paparazzi_messages.html#NAVIGATION_REF", null ],
-        [ "NAVIGATION (ID 10)", "paparazzi_messages.html#NAVIGATION", null ],
-        [ "PPRZ_MODE (ID 11)", "paparazzi_messages.html#PPRZ_MODE", null ],
-        [ "ENERGY (ID 12)", "paparazzi_messages.html#ENERGY", null ],
-        [ "DEBUG_MCU_LINK (ID 13)", "paparazzi_messages.html#DEBUG_MCU_LINK", null ],
-        [ "CALIBRATION (ID 14)", "paparazzi_messages.html#CALIBRATION", null ],
-        [ "SETTINGS (ID 15)", "paparazzi_messages.html#SETTINGS", null ],
-        [ "DESIRED (ID 16)", "paparazzi_messages.html#DESIRED", null ],
-        [ "GPS_SOL (ID 17)", "paparazzi_messages.html#GPS_SOL", null ],
-        [ "ADC_GENERIC (ID 18)", "paparazzi_messages.html#ADC_GENERIC", null ],
-        [ "ECU (ID 19)", "paparazzi_messages.html#ECU", null ],
-        [ "CAM (ID 20)", "paparazzi_messages.html#CAM", null ],
-        [ "CIRCLE (ID 21)", "paparazzi_messages.html#CIRCLE", null ],
-        [ "SEGMENT (ID 22)", "paparazzi_messages.html#SEGMENT", null ],
-        [ "VECTORNAV_INFO (ID 23)", "paparazzi_messages.html#VECTORNAV_INFO", null ],
-        [ "HYBRID_GUIDANCE (ID 24)", "paparazzi_messages.html#HYBRID_GUIDANCE", null ],
-        [ "SVINFO (ID 25)", "paparazzi_messages.html#SVINFO", null ],
-        [ "DEBUG (ID 26)", "paparazzi_messages.html#DEBUG", null ],
-        [ "SURVEY (ID 27)", "paparazzi_messages.html#SURVEY", null ],
-        [ "RSSI (ID 28)", "paparazzi_messages.html#RSSI", null ],
-        [ "RANGEFINDER (ID 29)", "paparazzi_messages.html#RANGEFINDER", null ],
-        [ "DATALINK_REPORT (ID 30)", "paparazzi_messages.html#DATALINK_REPORT", null ],
-        [ "DL_VALUE (ID 31)", "paparazzi_messages.html#DL_VALUE", null ],
-        [ "MARK (ID 32)", "paparazzi_messages.html#MARK", null ],
-        [ "SYS_MON (ID 33)", "paparazzi_messages.html#SYS_MON", null ],
-        [ "MOTOR (ID 34)", "paparazzi_messages.html#MOTOR", null ],
-        [ "WP_MOVED (ID 35)", "paparazzi_messages.html#WP_MOVED", null ],
-        [ "MKK (ID 36)", "paparazzi_messages.html#MKK", null ],
-        [ "DRAGSPEED (ID 38)", "paparazzi_messages.html#DRAGSPEED", null ],
-        [ "RSSI_COMBINED (ID 39)", "paparazzi_messages.html#RSSI_COMBINED", null ],
-        [ "DCF (ID 40)", "paparazzi_messages.html#DCF", null ],
-        [ "ALT_KALMAN (ID 41)", "paparazzi_messages.html#ALT_KALMAN", null ],
-        [ "ESTIMATOR (ID 42)", "paparazzi_messages.html#ESTIMATOR", null ],
-        [ "TUNE_ROLL (ID 43)", "paparazzi_messages.html#TUNE_ROLL", null ],
-        [ "BARO_MS5534A (ID 44)", "paparazzi_messages.html#BARO_MS5534A", null ],
-        [ "CHIRP (ID 45)", "paparazzi_messages.html#CHIRP", null ],
-        [ "BARO_WORDS (ID 46)", "paparazzi_messages.html#BARO_WORDS", null ],
-        [ "WP_MOVED_LLA (ID 47)", "paparazzi_messages.html#WP_MOVED_LLA", null ],
-        [ "RLFILTER (ID 48)", "paparazzi_messages.html#RLFILTER", null ],
-        [ "WP_MOVED_ENU (ID 49)", "paparazzi_messages.html#WP_MOVED_ENU", null ],
-        [ "WINDTURBINE_STATUS_ (ID 50)", "paparazzi_messages.html#WINDTURBINE_STATUS_", null ],
-        [ "RC_3CH_ (ID 51)", "paparazzi_messages.html#RC_3CH_", null ],
-        [ "MPPT (ID 52)", "paparazzi_messages.html#MPPT", null ],
-        [ "DEBUG_IR_I2C (ID 53)", "paparazzi_messages.html#DEBUG_IR_I2C", null ],
-        [ "AIRSPEED (ID 54)", "paparazzi_messages.html#AIRSPEED", null ],
-        [ "BARO_ETS (ID 56)", "paparazzi_messages.html#BARO_ETS", null ],
-        [ "AIRSPEED_ETS (ID 57)", "paparazzi_messages.html#AIRSPEED_ETS", null ],
-        [ "VISION_OUTBACK (ID 58)", "paparazzi_messages.html#VISION_OUTBACK", null ],
-        [ "GPS_LLA (ID 59)", "paparazzi_messages.html#GPS_LLA", null ],
-        [ "H_CTL_A (ID 60)", "paparazzi_messages.html#H_CTL_A", null ],
-        [ "TURB_PRESSURE_VOLTAGE (ID 62)", "paparazzi_messages.html#TURB_PRESSURE_VOLTAGE", null ],
-        [ "CAM_POINT (ID 63)", "paparazzi_messages.html#CAM_POINT", null ],
-        [ "DC_INFO (ID 64)", "paparazzi_messages.html#DC_INFO", null ],
-        [ "AMSYS_BARO (ID 65)", "paparazzi_messages.html#AMSYS_BARO", null ],
-        [ "AMSYS_AIRSPEED (ID 66)", "paparazzi_messages.html#AMSYS_AIRSPEED", null ],
-        [ "FLIGHT_BENCHMARK (ID 67)", "paparazzi_messages.html#FLIGHT_BENCHMARK", null ],
-        [ "MPL3115_BARO (ID 68)", "paparazzi_messages.html#MPL3115_BARO", null ],
-        [ "AOA (ID 69)", "paparazzi_messages.html#AOA", null ],
-        [ "XTEND_RSSI (ID 70)", "paparazzi_messages.html#XTEND_RSSI", null ],
-        [ "GVF (ID 71)", "paparazzi_messages.html#GVF", null ],
-        [ "SUPERBITRF (ID 72)", "paparazzi_messages.html#SUPERBITRF", null ],
-        [ "GX3_INFO (ID 73)", "paparazzi_messages.html#GX3_INFO", null ],
-        [ "UBLOX_INFO (ID 74)", "paparazzi_messages.html#UBLOX_INFO", null ],
-        [ "GVF_PARAMETRIC (ID 75)", "paparazzi_messages.html#GVF_PARAMETRIC", null ],
-        [ "SWARM_FISH (ID 77)", "paparazzi_messages.html#SWARM_FISH", null ],
-        [ "INV_FILTER (ID 78)", "paparazzi_messages.html#INV_FILTER", null ],
-        [ "MISSION_STATUS (ID 79)", "paparazzi_messages.html#MISSION_STATUS", null ],
-        [ "JEVOIS (ID 80)", "paparazzi_messages.html#JEVOIS", null ],
-        [ "GENERIC_COM (ID 81)", "paparazzi_messages.html#GENERIC_COM", null ],
-        [ "FORMATION_SLOT_TM (ID 82)", "paparazzi_messages.html#FORMATION_SLOT_TM", null ],
-        [ "FORMATION_STATUS_TM (ID 83)", "paparazzi_messages.html#FORMATION_STATUS_TM", null ],
-        [ "BMP_STATUS (ID 84)", "paparazzi_messages.html#BMP_STATUS", null ],
-        [ "MLX_STATUS (ID 85)", "paparazzi_messages.html#MLX_STATUS", null ],
-        [ "TMP_STATUS (ID 86)", "paparazzi_messages.html#TMP_STATUS", null ],
-        [ "WIND_INFO_RET (ID 87)", "paparazzi_messages.html#WIND_INFO_RET", null ],
-        [ "SCP_STATUS (ID 88)", "paparazzi_messages.html#SCP_STATUS", null ],
-        [ "SHT_STATUS (ID 89)", "paparazzi_messages.html#SHT_STATUS", null ],
-        [ "VISION_POSITION_ESTIMATE (ID 90)", "paparazzi_messages.html#VISION_POSITION_ESTIMATE", null ],
-        [ "DPICCO_STATUS (ID 91)", "paparazzi_messages.html#DPICCO_STATUS", null ],
-        [ "LOGGER_STATUS (ID 92)", "paparazzi_messages.html#LOGGER_STATUS", null ],
-        [ "MOTOR_BENCH_STATUS (ID 94)", "paparazzi_messages.html#MOTOR_BENCH_STATUS", null ],
-        [ "HIH_STATUS (ID 96)", "paparazzi_messages.html#HIH_STATUS", null ],
-        [ "TEMT_STATUS (ID 97)", "paparazzi_messages.html#TEMT_STATUS", null ],
-        [ "GP2Y_STATUS (ID 98)", "paparazzi_messages.html#GP2Y_STATUS", null ],
-        [ "SHT_I2C_SERIAL (ID 99)", "paparazzi_messages.html#SHT_I2C_SERIAL", null ],
-        [ "PPM (ID 100)", "paparazzi_messages.html#PPM", null ],
-        [ "RC (ID 101)", "paparazzi_messages.html#RC", null ],
-        [ "COMMANDS (ID 102)", "paparazzi_messages.html#COMMANDS", null ],
-        [ "FBW_STATUS (ID 103)", "paparazzi_messages.html#FBW_STATUS", null ],
-        [ "ADC (ID 104)", "paparazzi_messages.html#ADC", null ],
-        [ "ACTUATORS (ID 105)", "paparazzi_messages.html#ACTUATORS", null ],
-        [ "BLUEGIGA (ID 106)", "paparazzi_messages.html#BLUEGIGA", null ],
-        [ "THROTTLE_CURVE (ID 107)", "paparazzi_messages.html#THROTTLE_CURVE", null ],
-        [ "PIKSI_HEARTBEAT (ID 108)", "paparazzi_messages.html#PIKSI_HEARTBEAT", null ],
-        [ "MULTIGAZE_METERS (ID 109)", "paparazzi_messages.html#MULTIGAZE_METERS", null ],
-        [ "DC_SHOT (ID 110)", "paparazzi_messages.html#DC_SHOT", null ],
-        [ "CAMERA_PAYLOAD (ID 111)", "paparazzi_messages.html#CAMERA_PAYLOAD", null ],
-        [ "MOTOR_MIXING (ID 112)", "paparazzi_messages.html#MOTOR_MIXING", null ],
-        [ "MLX_SERIAL (ID 113)", "paparazzi_messages.html#MLX_SERIAL", null ],
-        [ "PAYLOAD (ID 114)", "paparazzi_messages.html#PAYLOAD", null ],
-        [ "HTM_STATUS (ID 115)", "paparazzi_messages.html#HTM_STATUS", null ],
-        [ "BARO_MS5611 (ID 116)", "paparazzi_messages.html#BARO_MS5611", null ],
-        [ "MS5611_COEFF (ID 117)", "paparazzi_messages.html#MS5611_COEFF", null ],
-        [ "ATMOSPHERE_CHARGE (ID 118)", "paparazzi_messages.html#ATMOSPHERE_CHARGE", null ],
-        [ "SOLAR_RADIATION (ID 119)", "paparazzi_messages.html#SOLAR_RADIATION", null ],
-        [ "TCAS_TA (ID 120)", "paparazzi_messages.html#TCAS_TA", null ],
-        [ "TCAS_RA (ID 121)", "paparazzi_messages.html#TCAS_RA", null ],
-        [ "TCAS_RESOLVED (ID 122)", "paparazzi_messages.html#TCAS_RESOLVED", null ],
-        [ "TCAS_DEBUG (ID 123)", "paparazzi_messages.html#TCAS_DEBUG", null ],
-        [ "POTENTIAL (ID 124)", "paparazzi_messages.html#POTENTIAL", null ],
-        [ "COPILOT_STATUS (ID 125)", "paparazzi_messages.html#COPILOT_STATUS", null ],
-        [ "TEMP_TCOUPLE (ID 126)", "paparazzi_messages.html#TEMP_TCOUPLE", null ],
-        [ "SHT_I2C_STATUS (ID 127)", "paparazzi_messages.html#SHT_I2C_STATUS", null ],
-        [ "CAMERA_SNAPSHOT (ID 128)", "paparazzi_messages.html#CAMERA_SNAPSHOT", null ],
-        [ "TIMESTAMP (ID 129)", "paparazzi_messages.html#TIMESTAMP", null ],
-        [ "STAB_ATTITUDE_FLOAT (ID 130)", "paparazzi_messages.html#STAB_ATTITUDE_FLOAT", null ],
-        [ "IMU_GYRO_SCALED (ID 131)", "paparazzi_messages.html#IMU_GYRO_SCALED", null ],
-        [ "IMU_ACCEL_SCALED (ID 132)", "paparazzi_messages.html#IMU_ACCEL_SCALED", null ],
-        [ "IMU_MAG_SCALED (ID 133)", "paparazzi_messages.html#IMU_MAG_SCALED", null ],
-        [ "FILTER (ID 134)", "paparazzi_messages.html#FILTER", null ],
-        [ "RATE_LOOP (ID 136)", "paparazzi_messages.html#RATE_LOOP", null ],
-        [ "FILTER_ALIGNER (ID 137)", "paparazzi_messages.html#FILTER_ALIGNER", null ],
-        [ "AIRSPEED_MS45XX (ID 138)", "paparazzi_messages.html#AIRSPEED_MS45XX", null ],
-        [ "STAB_ATTITUDE_INT (ID 140)", "paparazzi_messages.html#STAB_ATTITUDE_INT", null ],
-        [ "STAB_ATTITUDE_REF_INT (ID 141)", "paparazzi_messages.html#STAB_ATTITUDE_REF_INT", null ],
-        [ "STAB_ATTITUDE_REF_FLOAT (ID 142)", "paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT", null ],
-        [ "ROTORCRAFT_CMD (ID 143)", "paparazzi_messages.html#ROTORCRAFT_CMD", null ],
-        [ "GUIDANCE_H_INT (ID 144)", "paparazzi_messages.html#GUIDANCE_H_INT", null ],
-        [ "VERT_LOOP (ID 145)", "paparazzi_messages.html#VERT_LOOP", null ],
-        [ "HOVER_LOOP (ID 146)", "paparazzi_messages.html#HOVER_LOOP", null ],
-        [ "ROTORCRAFT_FP (ID 147)", "paparazzi_messages.html#ROTORCRAFT_FP", null ],
-        [ "TEMP_ADC (ID 148)", "paparazzi_messages.html#TEMP_ADC", null ],
-        [ "GUIDANCE_H_REF_INT (ID 149)", "paparazzi_messages.html#GUIDANCE_H_REF_INT", null ],
-        [ "ROTORCRAFT_TUNE_HOVER (ID 150)", "paparazzi_messages.html#ROTORCRAFT_TUNE_HOVER", null ],
-        [ "INS_Z (ID 151)", "paparazzi_messages.html#INS_Z", null ],
-        [ "PCAP01_STATUS (ID 152)", "paparazzi_messages.html#PCAP01_STATUS", null ],
-        [ "GEIGER_COUNTER (ID 153)", "paparazzi_messages.html#GEIGER_COUNTER", null ],
-        [ "INS_REF (ID 154)", "paparazzi_messages.html#INS_REF", null ],
-        [ "GPS_INT (ID 155)", "paparazzi_messages.html#GPS_INT", null ],
-        [ "AHRS_EULER_INT (ID 156)", "paparazzi_messages.html#AHRS_EULER_INT", null ],
-        [ "AHRS_QUAT_INT (ID 157)", "paparazzi_messages.html#AHRS_QUAT_INT", null ],
-        [ "ROTORCRAFT_NAV_STATUS (ID 159)", "paparazzi_messages.html#ROTORCRAFT_NAV_STATUS", null ],
-        [ "ROTORCRAFT_RADIO_CONTROL (ID 160)", "paparazzi_messages.html#ROTORCRAFT_RADIO_CONTROL", null ],
-        [ "VFF_EXTENDED (ID 161)", "paparazzi_messages.html#VFF_EXTENDED", null ],
-        [ "VFF (ID 162)", "paparazzi_messages.html#VFF", null ],
-        [ "GEO_MAG (ID 163)", "paparazzi_messages.html#GEO_MAG", null ],
-        [ "HFF (ID 164)", "paparazzi_messages.html#HFF", null ],
-        [ "HFF_DBG (ID 165)", "paparazzi_messages.html#HFF_DBG", null ],
-        [ "HFF_GPS (ID 166)", "paparazzi_messages.html#HFF_GPS", null ],
-        [ "INS_EKF2 (ID 167)", "paparazzi_messages.html#INS_EKF2", null ],
-        [ "ROTORCRAFT_CAM (ID 168)", "paparazzi_messages.html#ROTORCRAFT_CAM", null ],
-        [ "AHRS_REF_QUAT (ID 169)", "paparazzi_messages.html#AHRS_REF_QUAT", null ],
-        [ "INS_EKF2_EXT (ID 170)", "paparazzi_messages.html#INS_EKF2_EXT", null ],
-        [ "AHRS_BIAS (ID 171)", "paparazzi_messages.html#AHRS_BIAS", null ],
-        [ "AHRS_EULER (ID 173)", "paparazzi_messages.html#AHRS_EULER", null ],
-        [ "AHRS_MEASUREMENT_EULER (ID 174)", "paparazzi_messages.html#AHRS_MEASUREMENT_EULER", null ],
-        [ "WT (ID 175)", "paparazzi_messages.html#WT", null ],
-        [ "CSC_CAN_DEBUG (ID 176)", "paparazzi_messages.html#CSC_CAN_DEBUG", null ],
-        [ "CSC_CAN_MSG (ID 177)", "paparazzi_messages.html#CSC_CAN_MSG", null ],
-        [ "AHRS_GYRO_BIAS_INT (ID 178)", "paparazzi_messages.html#AHRS_GYRO_BIAS_INT", null ],
-        [ "AEROPROBE (ID 179)", "paparazzi_messages.html#AEROPROBE", null ],
-        [ "FMS_TIME (ID 180)", "paparazzi_messages.html#FMS_TIME", null ],
-        [ "AHRS_LKF (ID 193)", "paparazzi_messages.html#AHRS_LKF", null ],
-        [ "NPS_SENSORS_SCALED (ID 197)", "paparazzi_messages.html#NPS_SENSORS_SCALED", null ],
-        [ "INS (ID 198)", "paparazzi_messages.html#INS", null ],
-        [ "IMU_GYRO (ID 200)", "paparazzi_messages.html#IMU_GYRO", null ],
-        [ "IMU_MAG (ID 201)", "paparazzi_messages.html#IMU_MAG", null ],
-        [ "IMU_ACCEL (ID 202)", "paparazzi_messages.html#IMU_ACCEL", null ],
-        [ "IMU_GYRO_RAW (ID 203)", "paparazzi_messages.html#IMU_GYRO_RAW", null ],
-        [ "IMU_ACCEL_RAW (ID 204)", "paparazzi_messages.html#IMU_ACCEL_RAW", null ],
-        [ "IMU_MAG_RAW (ID 205)", "paparazzi_messages.html#IMU_MAG_RAW", null ],
-        [ "IMU_MAG_SETTINGS (ID 206)", "paparazzi_messages.html#IMU_MAG_SETTINGS", null ],
-        [ "IMU_MAG_CURRENT_CALIBRATION (ID 207)", "paparazzi_messages.html#IMU_MAG_CURRENT_CALIBRATION", null ],
-        [ "UART_ERRORS (ID 208)", "paparazzi_messages.html#UART_ERRORS", null ],
-        [ "IMU_GYRO_LP (ID 209)", "paparazzi_messages.html#IMU_GYRO_LP", null ],
-        [ "IMU_PRESSURE (ID 210)", "paparazzi_messages.html#IMU_PRESSURE", null ],
-        [ "WINDTUNNEL_MEAS (ID 211)", "paparazzi_messages.html#WINDTUNNEL_MEAS", null ],
-        [ "TUNE_VERT (ID 213)", "paparazzi_messages.html#TUNE_VERT", null ],
-        [ "MF_DAQ_STATE (ID 214)", "paparazzi_messages.html#MF_DAQ_STATE", null ],
-        [ "INFO_MSG (ID 215)", "paparazzi_messages.html#INFO_MSG", null ],
-        [ "STAB_ATTITUDE_INDI (ID 216)", "paparazzi_messages.html#STAB_ATTITUDE_INDI", null ],
-        [ "ROTORCRAFT_FP_MIN (ID 217)", "paparazzi_messages.html#ROTORCRAFT_FP_MIN", null ],
-        [ "BEBOP_ACTUATORS (ID 218)", "paparazzi_messages.html#BEBOP_ACTUATORS", null ],
-        [ "WEATHER (ID 219)", "paparazzi_messages.html#WEATHER", null ],
-        [ "IMU_TURNTABLE (ID 220)", "paparazzi_messages.html#IMU_TURNTABLE", null ],
-        [ "BARO_RAW (ID 221)", "paparazzi_messages.html#BARO_RAW", null ],
-        [ "AIR_DATA (ID 222)", "paparazzi_messages.html#AIR_DATA", null ],
-        [ "AMSL (ID 223)", "paparazzi_messages.html#AMSL", null ],
-        [ "DIVERGENCE (ID 224)", "paparazzi_messages.html#DIVERGENCE", null ],
-        [ "VIDEO_SYNC (ID 225)", "paparazzi_messages.html#VIDEO_SYNC", null ],
-        [ "PERIODIC_TELEMETRY_ERR (ID 226)", "paparazzi_messages.html#PERIODIC_TELEMETRY_ERR", null ],
-        [ "TIME (ID 227)", "paparazzi_messages.html#TIME", null ],
-        [ "OPTIC_FLOW_EST (ID 228)", "paparazzi_messages.html#OPTIC_FLOW_EST", null ],
-        [ "STEREO_IMG (ID 229)", "paparazzi_messages.html#STEREO_IMG", null ],
-        [ "ROVER_STATUS (ID 230)", "paparazzi_messages.html#ROVER_STATUS", null ],
-        [ "ROTORCRAFT_STATUS (ID 231)", "paparazzi_messages.html#ROTORCRAFT_STATUS", null ],
-        [ "STATE_FILTER_STATUS (ID 232)", "paparazzi_messages.html#STATE_FILTER_STATUS", null ],
-        [ "OPTICAL_FLOW (ID 233)", "paparazzi_messages.html#OPTICAL_FLOW", null ],
-        [ "LIDAR (ID 234)", "paparazzi_messages.html#LIDAR", null ],
-        [ "VISUALTARGET (ID 235)", "paparazzi_messages.html#VISUALTARGET", null ],
-        [ "SONAR (ID 236)", "paparazzi_messages.html#SONAR", null ],
-        [ "PAYLOAD_FLOAT (ID 237)", "paparazzi_messages.html#PAYLOAD_FLOAT", null ],
-        [ "NPS_POS_LLH (ID 238)", "paparazzi_messages.html#NPS_POS_LLH", null ],
-        [ "KEY_EXCHANGE_UAV (ID 239)", "paparazzi_messages.html#KEY_EXCHANGE_UAV", null ],
-        [ "NPS_SPEED_POS (ID 240)", "paparazzi_messages.html#NPS_SPEED_POS", null ],
-        [ "NPS_RATE_ATTITUDE (ID 241)", "paparazzi_messages.html#NPS_RATE_ATTITUDE", null ],
-        [ "NPS_GYRO_BIAS (ID 242)", "paparazzi_messages.html#NPS_GYRO_BIAS", null ],
-        [ "OPTICAL_FLOW_HOVER (ID 243)", "paparazzi_messages.html#OPTICAL_FLOW_HOVER", null ],
-        [ "NPS_WIND (ID 244)", "paparazzi_messages.html#NPS_WIND", null ],
-        [ "ESC (ID 245)", "paparazzi_messages.html#ESC", null ],
-        [ "RTOS_MON (ID 246)", "paparazzi_messages.html#RTOS_MON", null ],
-        [ "PPRZ_DEBUG (ID 247)", "paparazzi_messages.html#PPRZ_DEBUG", null ],
-        [ "BATTERY_MONITOR (ID 248)", "paparazzi_messages.html#BATTERY_MONITOR", null ],
-        [ "GPS_RXMRTCM (ID 249)", "paparazzi_messages.html#GPS_RXMRTCM", null ],
-        [ "INDI_G (ID 250)", "paparazzi_messages.html#INDI_G", null ],
-        [ "GPS_RTK (ID 251)", "paparazzi_messages.html#GPS_RTK", null ],
-        [ "GPS_SMALL (ID 252)", "paparazzi_messages.html#GPS_SMALL", null ],
-        [ "I2C_ERRORS (ID 253)", "paparazzi_messages.html#I2C_ERRORS", null ],
-        [ "DCF_THETA (ID 254)", "paparazzi_messages.html#DCF_THETA", null ],
-        [ "SECURE_LINK_STATUS (ID 255)", "paparazzi_messages.html#SECURE_LINK_STATUS", null ]
-      ] ],
-      [ "Datalink Messages", "paparazzi_messages.html#DATALINK_CLASS", [
-        [ "ACINFO (ID 1)", "paparazzi_messages.html#ACINFO", null ],
-        [ "MOVE_WP (ID 2)", "paparazzi_messages.html#MOVE_WP", null ],
-        [ "WIND_INFO (ID 3)", "paparazzi_messages.html#WIND_INFO", null ],
-        [ "SETTING (ID 4)", "paparazzi_messages.html#SETTING", null ],
-        [ "BLOCK (ID 5)", "paparazzi_messages.html#BLOCK", null ],
-        [ "HITL_UBX (ID 6)", "paparazzi_messages.html#HITL_UBX", null ],
-        [ "HITL_INFRARED (ID 7)", "paparazzi_messages.html#HITL_INFRARED", null ],
-        [ "PING (ID 8)", "paparazzi_messages.html#PING", null ],
-        [ "FORMATION_SLOT (ID 9)", "paparazzi_messages.html#FORMATION_SLOT", null ],
-        [ "FORMATION_STATUS (ID 10)", "paparazzi_messages.html#FORMATION_STATUS", null ],
-        [ "JOYSTICK_RAW (ID 11)", "paparazzi_messages.html#JOYSTICK_RAW", null ],
-        [ "COMMANDS_RAW (ID 12)", "paparazzi_messages.html#COMMANDS_RAW", null ],
-        [ "DGPS_RAW (ID 13)", "paparazzi_messages.html#DGPS_RAW", null ],
-        [ "ACINFO_LLA (ID 14)", "paparazzi_messages.html#ACINFO_LLA", null ],
-        [ "DESIRED_SETPOINT (ID 15)", "paparazzi_messages.html#DESIRED_SETPOINT", null ],
-        [ "GET_SETTING (ID 16)", "paparazzi_messages.html#GET_SETTING", null ],
-        [ "TCAS_RESOLVE (ID 17)", "paparazzi_messages.html#TCAS_RESOLVE", null ],
-        [ "MISSION_GOTO_WP (ID 20)", "paparazzi_messages.html#MISSION_GOTO_WP", null ],
-        [ "MISSION_GOTO_WP_LLA (ID 21)", "paparazzi_messages.html#MISSION_GOTO_WP_LLA", null ],
-        [ "MISSION_CIRCLE (ID 22)", "paparazzi_messages.html#MISSION_CIRCLE", null ],
-        [ "MISSION_CIRCLE_LLA (ID 23)", "paparazzi_messages.html#MISSION_CIRCLE_LLA", null ],
-        [ "MISSION_SEGMENT (ID 24)", "paparazzi_messages.html#MISSION_SEGMENT", null ],
-        [ "MISSION_SEGMENT_LLA (ID 25)", "paparazzi_messages.html#MISSION_SEGMENT_LLA", null ],
-        [ "MISSION_PATH (ID 26)", "paparazzi_messages.html#MISSION_PATH", null ],
-        [ "MISSION_PATH_LLA (ID 27)", "paparazzi_messages.html#MISSION_PATH_LLA", null ],
-        [ "MISSION_CUSTOM (ID 28)", "paparazzi_messages.html#MISSION_CUSTOM", null ],
-        [ "GOTO_MISSION (ID 30)", "paparazzi_messages.html#GOTO_MISSION", null ],
-        [ "NEXT_MISSION (ID 31)", "paparazzi_messages.html#NEXT_MISSION", null ],
-        [ "END_MISSION (ID 32)", "paparazzi_messages.html#END_MISSION", null ],
-        [ "COPILOT_STATUS_DL (ID 33)", "paparazzi_messages.html#COPILOT_STATUS_DL", null ],
-        [ "CAMERA_PAYLOAD_DL (ID 34)", "paparazzi_messages.html#CAMERA_PAYLOAD_DL", null ],
-        [ "CAMERA_SNAPSHOT_DL (ID 35)", "paparazzi_messages.html#CAMERA_SNAPSHOT_DL", null ],
-        [ "GUIDED_SETPOINT_NED (ID 40)", "paparazzi_messages.html#GUIDED_SETPOINT_NED", null ],
-        [ "WINDTURBINE_STATUS (ID 50)", "paparazzi_messages.html#WINDTURBINE_STATUS", null ],
-        [ "RC_3CH (ID 51)", "paparazzi_messages.html#RC_3CH", null ],
-        [ "RC_4CH (ID 52)", "paparazzi_messages.html#RC_4CH", null ],
-        [ "RC_5CH (ID 53)", "paparazzi_messages.html#RC_5CH", null ],
-        [ "REMOTE_GPS_SMALL (ID 54)", "paparazzi_messages.html#REMOTE_GPS_SMALL", null ],
-        [ "REMOTE_GPS (ID 55)", "paparazzi_messages.html#REMOTE_GPS", null ],
-        [ "REMOTE_GPS_LOCAL (ID 56)", "paparazzi_messages.html#REMOTE_GPS_LOCAL", null ],
-        [ "TARGET_POS (ID 57)", "paparazzi_messages.html#TARGET_POS", null ],
-        [ "KITE_COMMAND (ID 96)", "paparazzi_messages.html#KITE_COMMAND", null ],
-        [ "PAYLOAD_COMMAND (ID 97)", "paparazzi_messages.html#PAYLOAD_COMMAND", null ],
-        [ "SET_ACTUATOR (ID 100)", "paparazzi_messages.html#SET_ACTUATOR", null ],
-        [ "CSC_SERVO_CMD (ID 101)", "paparazzi_messages.html#CSC_SERVO_CMD", null ],
-        [ "BOOZ2_FMS_COMMAND (ID 149)", "paparazzi_messages.html#BOOZ2_FMS_COMMAND", null ],
-        [ "BOOZ_NAV_STICK (ID 150)", "paparazzi_messages.html#BOOZ_NAV_STICK", null ],
-        [ "EXTERNAL_FILTER_SOLUTION (ID 151)", "paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION", null ],
-        [ "ROTORCRAFT_CAM_STICK (ID 152)", "paparazzi_messages.html#ROTORCRAFT_CAM_STICK", null ],
-        [ "GPS_INJECT (ID 153)", "paparazzi_messages.html#GPS_INJECT", null ],
-        [ "EXTERNAL_MAG_RAW (ID 154)", "paparazzi_messages.html#EXTERNAL_MAG_RAW", null ],
-        [ "VIDEO_ROI (ID 155)", "paparazzi_messages.html#VIDEO_ROI", null ],
-        [ "EMERGENCY_CMD (ID 156)", "paparazzi_messages.html#EMERGENCY_CMD", null ],
-        [ "RTCM_INJECT (ID 157)", "paparazzi_messages.html#RTCM_INJECT", null ],
-        [ "DCF_REG_TABLE (ID 158)", "paparazzi_messages.html#DCF_REG_TABLE", null ],
-        [ "KEY_EXCHANGE_GCS (ID 159)", "paparazzi_messages.html#KEY_EXCHANGE_GCS", null ]
-      ] ],
-      [ "Ground Messages", "paparazzi_messages.html#GROUND_CLASS", [
-        [ "NEW_AIRCRAFT (ID 1)", "paparazzi_messages.html#NEW_AIRCRAFT", null ],
-        [ "AIRCRAFT_DIE (ID 2)", "paparazzi_messages.html#AIRCRAFT_DIE", null ],
-        [ "AIRCRAFTS (ID 3)", "paparazzi_messages.html#AIRCRAFTS", null ],
-        [ "AIRCRAFTS_REQ (ID 4)", "paparazzi_messages.html#AIRCRAFTS_REQ", null ],
-        [ "SELECTED (ID 5)", "paparazzi_messages.html#SELECTED", null ],
-        [ "SELECTED_REQ (ID 6)", "paparazzi_messages.html#SELECTED_REQ", null ],
-        [ "WIND_CLEAR (ID 7)", "paparazzi_messages.html#WIND_CLEAR", null ],
-        [ "WIND (ID 8)", "paparazzi_messages.html#WIND", null ],
-        [ "CONFIG_REQ (ID 9)", "paparazzi_messages.html#CONFIG_REQ", null ],
-        [ "CONFIG (ID 10)", "paparazzi_messages.html#CONFIG", null ],
-        [ "FLIGHT_PARAM (ID 11)", "paparazzi_messages.html#FLIGHT_PARAM", null ],
-        [ "AP_STATUS (ID 12)", "paparazzi_messages.html#AP_STATUS", null ],
-        [ "NAV_STATUS (ID 13)", "paparazzi_messages.html#NAV_STATUS", null ],
-        [ "CAM_STATUS (ID 14)", "paparazzi_messages.html#CAM_STATUS", null ],
-        [ "ENGINE_STATUS (ID 15)", "paparazzi_messages.html#ENGINE_STATUS", null ],
-        [ "SVSINFO (ID 16)", "paparazzi_messages.html#SVSINFO", null ],
-        [ "FLY_BY_WIRE (ID 17)", "paparazzi_messages.html#FLY_BY_WIRE", null ],
-        [ "INFLIGH_CALIB (ID 19)", "paparazzi_messages.html#INFLIGH_CALIB", null ],
-        [ "WORLD_ENV (ID 20)", "paparazzi_messages.html#WORLD_ENV", null ],
-        [ "WORLD_ENV_REQ (ID 21)", "paparazzi_messages.html#WORLD_ENV_REQ", null ],
-        [ "CIRCLE_STATUS (ID 22)", "paparazzi_messages.html#CIRCLE_STATUS", null ],
-        [ "SEGMENT_STATUS (ID 23)", "paparazzi_messages.html#SEGMENT_STATUS", null ],
-        [ "MOVE_WAYPOINT (ID 24)", "paparazzi_messages.html#MOVE_WAYPOINT", null ],
-        [ "GET_DL_SETTING (ID 25)", "paparazzi_messages.html#GET_DL_SETTING", null ],
-        [ "DL_SETTING (ID 26)", "paparazzi_messages.html#DL_SETTING", null ],
-        [ "JUMP_TO_BLOCK (ID 27)", "paparazzi_messages.html#JUMP_TO_BLOCK", null ],
-        [ "DL_VALUES (ID 28)", "paparazzi_messages.html#DL_VALUES", null ],
-        [ "RAW_DATALINK (ID 29)", "paparazzi_messages.html#RAW_DATALINK", null ],
-        [ "WAYPOINT_MOVED (ID 30)", "paparazzi_messages.html#WAYPOINT_MOVED", null ],
-        [ "SURVEY_STATUS (ID 31)", "paparazzi_messages.html#SURVEY_STATUS", null ],
-        [ "TELEMETRY_STATUS (ID 32)", "paparazzi_messages.html#TELEMETRY_STATUS", null ],
-        [ "TELEMETRY_ERROR (ID 33)", "paparazzi_messages.html#TELEMETRY_ERROR", null ],
-        [ "TELEMETRY_MESSAGE (ID 34)", "paparazzi_messages.html#TELEMETRY_MESSAGE", null ],
-        [ "DATALINK_MESSAGE (ID 35)", "paparazzi_messages.html#DATALINK_MESSAGE", null ],
-        [ "LINK_REPORT (ID 36)", "paparazzi_messages.html#LINK_REPORT", null ],
-        [ "INTRUDER (ID 37)", "paparazzi_messages.html#INTRUDER", null ],
-        [ "SHAPE (ID 38)", "paparazzi_messages.html#SHAPE", null ],
-        [ "DL_EMERGENCY_CMD (ID 39)", "paparazzi_messages.html#DL_EMERGENCY_CMD", null ],
-        [ "GROUND_REF (ID 40)", "paparazzi_messages.html#GROUND_REF", null ],
-        [ "JOYSTICK (ID 41)", "paparazzi_messages.html#JOYSTICK", null ],
-        [ "PLUMES (ID 100)", "paparazzi_messages.html#PLUMES", null ]
-      ] ],
-      [ "Alert Messages", "paparazzi_messages.html#ALERT_CLASS", [
-        [ "BAT_LOW (ID 1)", "paparazzi_messages.html#BAT_LOW", null ],
-        [ "AIR_PROX (ID 2)", "paparazzi_messages.html#AIR_PROX", null ]
-      ] ],
-      [ "Intermcu Messages", "paparazzi_messages.html#INTERMCU_CLASS", [
-        [ "IMCU_COMMANDS (ID 1)", "paparazzi_messages.html#IMCU_COMMANDS", null ],
-        [ "IMCU_RADIO_COMMANDS (ID 2)", "paparazzi_messages.html#IMCU_RADIO_COMMANDS", null ],
-        [ "IMCU_SPEKTRUM_SOFT_BIND (ID 3)", "paparazzi_messages.html#IMCU_SPEKTRUM_SOFT_BIND", null ],
-        [ "IMCU_FBW_STATUS (ID 4)", "paparazzi_messages.html#IMCU_FBW_STATUS", null ],
-        [ "IMCU_REMOTE_MAG (ID 10)", "paparazzi_messages.html#IMCU_REMOTE_MAG", null ],
-        [ "IMCU_REMOTE_BARO (ID 11)", "paparazzi_messages.html#IMCU_REMOTE_BARO", null ],
-        [ "IMCU_REMOTE_AIRSPEED (ID 12)", "paparazzi_messages.html#IMCU_REMOTE_AIRSPEED", null ],
-        [ "IMCU_REMOTE_GROUND (ID 15)", "paparazzi_messages.html#IMCU_REMOTE_GROUND", null ],
-        [ "IMCU_REMOTE_GPS (ID 62)", "paparazzi_messages.html#IMCU_REMOTE_GPS", null ],
-        [ "STEREOCAM_ARRAY (ID 80)", "paparazzi_messages.html#STEREOCAM_ARRAY", null ],
-        [ "STEREOCAM_VELOCITY (ID 81)", "paparazzi_messages.html#STEREOCAM_VELOCITY", null ],
-        [ "STEREOCAM_STATE (ID 82)", "paparazzi_messages.html#STEREOCAM_STATE", null ],
-        [ "STEREOCAM_FOLLOW_ME (ID 83)", "paparazzi_messages.html#STEREOCAM_FOLLOW_ME", null ],
-        [ "IMCU_DATALINK (ID 113)", "paparazzi_messages.html#IMCU_DATALINK", null ],
-        [ "IMCU_TELEMETRY (ID 114)", "paparazzi_messages.html#IMCU_TELEMETRY", null ],
-        [ "IMCU_DEBUG (ID 115)", "paparazzi_messages.html#IMCU_DEBUG", null ],
-        [ "IMCU_PAYLOAD (ID 116)", "paparazzi_messages.html#IMCU_PAYLOAD", null ]
-      ] ]
-    ] ],
-    [ "Paparazzi Technical Primers", "primer.html", null ],
-    [ "Math library", "md_sw_airborne_math_README.html", null ],
-    [ "CATIA", "md_sw_airborne_modules_digital_cam_catia_README.html", null ],
-    [ "E-Identification-FR", "md_sw_airborne_modules_e_identification_fr_README.html", null ],
-    [ "Todo List", "todo.html", null ],
-    [ "Bibliography", "citelist.html", null ],
-    [ "Modules", "modules.html", "modules" ],
-    [ "Namespace Members", "namespacemembers.html", [
-      [ "All", "namespacemembers.html", null ],
-      [ "Functions", "namespacemembers_func.html", null ],
-      [ "Variables", "namespacemembers_vars.html", null ]
-    ] ],
-    [ "Data Structures", null, [
-      [ "Data Structures", "annotated.html", "annotated" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
-      ] ]
-    ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
-      [ "Globals", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", "globals_func" ],
-        [ "Variables", "globals_vars.html", "globals_vars" ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", "globals_enum" ],
-        [ "Enumerator", "globals_eval.html", "globals_eval" ],
-        [ "Macros", "globals_defs.html", "globals_defs" ]
-      ] ]
-    ] ]
-  ] ]
-];
+/*
+ @licstart  The following is the entire license notice for the
+ JavaScript code in this file.
 
-var NAVTREEINDEX =
-[
-"1e__filter_8h.html",
-"LPC21xx_8h.html#a8df6957082139d54e86014261f88a76f",
-"UKF__Wind__Estimator_8h.html#ab98fe7919b1814cbcb1d9ce560fafcae",
-"abi__sender__ids_8h.html#abedd83b6da15e621b777f93a8893e31b",
-"actuators__esc32_8h.html#a5931e7cd2d81c2120155dee7095224e0",
-"actuators__spektrum_8h.html#a166569d0e5d830b35538915040d59425",
-"adxl345__regs_8h.html#a746dd7df1b3e0f992547870f19047133a6a845117a54e58391585e920587fa3b8",
-"ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21",
-"ahrs__float__mlkf__wrapper_8c.html#a8126b2c679aadad6260846dd431f74e8",
-"ahrs__int__cmpl__quat_8h.html#af4f86e2321466fd50aae62120f20eae4",
-"airspeed__amsys_8c.html#a3d8f23b9b0c9cb2a3c4357bcad809041",
-"ak8963__regs_8h.html#a374911befd493487375ef3ddf247d1b4",
-"aoa__pwm_8h.html#a2ba3b9042068f30280fb39813bf2638e",
-"apogee_2chibios_2v1_80_2board_8h.html#a5772a31590fe61e808106e64711d8713",
-"apogee_2chibios_2v1_80_2board_8h.html#ac0d27172637663013a44af02a57c80bf",
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c",
-"apogee__1_80_8h.html#a50dc24ffa7fff76fe5c0bda8cee432d6",
-"armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5",
-"avi__isp__bayer_8h.html#ac67aed80f47698dff6c57cbf4b145c6d",
-"avi__isp__color__correction_8h.html#a55f842792771da3427869983b142acfa",
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a40233279103b13f7f29ffe215926620c",
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__regs",
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__window__pos__y",
-"baro__ets_8c.html#ab555328369f0264c4182eff10220a57c",
-"battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a",
-"bluegiga__dl_8c.html#a921065e8139e27fbe413ef7459ed51b3",
-"bmp085__regs_8h.html#a4f535b5a3b3138b16ab8f04fe6dcb0c4",
-"bmp3__regs_8h.html#aafc4478383ebc7fe6fa457b91959e645",
-"booz__1_80_8h.html#aa099989e8f9e80ade55ce7485d1f262c",
-"cc2500_8h.html#a22968bf1c4fcbadba785fde8b3611c51",
-"cc2500__compat_8h.html#ae97a0bb0f6cab9aca87bfb796b8125cc",
-"cc2500__rx__spi_8c.html#a194c1961355119b3c16bc44cb59cff59",
-"cc2500__smartport_8c.html#a7c35be1de655e733eaac059ccd76f796ab694d303318f699951ed4f0d1a082cc4",
-"chdk__pipe_8c.html#aa10f470e996d0f51210d24f442d25e1e",
-"chibios_2subsystems_2radio__control_2ppm__arch_8c_source.html",
-"chimera_2chibios_2v1_80_2board_8h.html#a767cf35007aad334c8511745782d4f0e",
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a10817b18623c26f1f8893b643bf4a2f4",
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#adfdd029a5a6ccdf27dbb44496687794a",
-"chimera_8h.html#aed15d8f5ffe14a760d9ce36c0df98621",
-"common__nav_8h.html#ace28d2afa409c13ff38275eac017698c",
-"crazybee__f4__1_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f",
-"crazyflie_2chibios_2v2_81_2board_8h.html#a6629cba408fe47aedfca8ded6845c1ff",
-"crazyflie_2chibios_2v2_81_2board_8h.html#ae2132bd691ec50a0f0b9eabf53dc125e",
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#ac53bd5c2b11b39ed0691812bf91b6144",
-"ctc_8h.html#aff5d833bf5cb291522785575013c8b2a",
-"cv__detect__color__object_8c.html#abec4c5a42e744c1220d859797d886349",
-"cyrf6936__regs_8h.html#a9fb32243724177c7c10bf1b9a978131c",
-"decawave__anchorless__communication_8c.html#a4728ae1c2135e4a6086331c87d6f0bf5",
-"digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct",
-"direct__memory__logger_8c.html#a7c2512e416ccbb707faa706532f205d2",
-"dw1000__arduino_8c.html#a07c34d5cab21b804a3d79afbcf8e7acc",
-"elle0__common_8h.html#a1af3b0681135879303164ffd4953257b",
-"energy__ctrl_8h.html#a96b28ed4a6bbadedbf6ebd67c3a88613",
-"esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea25832a17d7aad05219bf2806f1828178",
-"fixedwing_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6",
-"flight__benchmark_8h.html#a9c89ccb67edcffa690db968ae55d0e38",
-"formation_8c.html#acf4b41c93bf9fcca41532eb8a22ec466",
-"gec_8h.html#structgec__privkey",
-"globals_vars.html",
-"gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe",
-"gps__sim_8h.html#a0eb39777eac135c917af2eed39cce7f1",
-"gps__ubx_8c.html#aef0e8729e0aa47e760002c83241a5dc5",
-"group__HAL__CONF.html#ga3dce30ad876a7395110beee8c9a5bcf4",
-"group__ac__info.html#gab89f5850f23c57158ec4a2a3fbdda284",
-"group__i2c.html#ga05763355d0e087ba41feab61dd773fe6",
-"group__math__algebra__float.html#ga205aa96a656e1c7197f0121a127710d1",
-"group__math__algebra__float.html#gaecc209464c099da419e54dceb6bedbbc",
-"group__math__algebra__int.html#a2361ea5d4d3a544faa2c483a3763afed",
-"group__math__algebra__int.html#ga9aa3f6b50e46f3bf39a39ad122f5307e",
-"group__math__geodetic__int.html#ga323e38587003d16eec378abdb625e8e8",
-"group__math__isa.html#gac4f09249f783c161c64374c3ef5e26a6",
-"group__spi.html#gga133152bd9fd803ef729bdfb9dc488baaaef9737139e9d1ed3ef30d2200acc629e",
-"group__state__position.html#gab8f6680d3d8c840e42f2994cadfec6f7",
-"group__state__wind__airspeed.html#gad430fea6159fef9711364d012d0d6862",
-"guidance__h__ref_8c.html#ab43076682d75aa4cf6c47394c2e90c9e",
-"guidance__v__adapt_8h_source.html",
-"gvf__parametric_8h.html#a03440442b6ccf59e11311446f386186e",
-"hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c",
-"high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7",
-"hott__eam_8h.html#a281afcb419b0d2518bc7100c0f480690",
-"humid__sht_8c.html#a50111ba8e53bc3ba3d09838d0f970070",
-"image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9",
-"imu__ardrone2_8h.html#aa59c24839f4a36f23c98da339dea1224",
-"imu__chimu_8c_source.html",
-"imu__krooz_8h.html",
-"imu__mpu9250__i2c_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5",
-"imu__px4__defaults_8h.html",
-"imu__umarim_8h.html#a60e8f1f35a15a535130669093e80e858",
-"ins__ekf2_8cpp.html#a6791bc0db32017d950f877782677a8ba",
-"ins__gps__passthrough_8c_source.html",
-"ins__mekf__wind_8h.html#aa6187c0d117fa7c8c0d791af3ffd5e86",
-"ins__vn100_8h.html#aa086e7049935a63e359ee3886d9a77eb",
-"ist8310_8h.html#ab07053fcb6afcb4d09e8f337b615d383",
-"jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467",
-"krooz__sd_8h.html#a9edea038e84fe10c9a71436253cc8ea1",
-"laser__range__array_8c.html#a06ddedcbdbbe11dcbd5966ac250337b2",
-"lia_2chibios_2v1_81_2board_8h_source.html",
-"libisp_8h.html#ab51f6106e26cfbd99134ff27990d437e",
-"link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3",
-"linux_2mcu__periph_2udp__arch_8c_source.html",
-"lisa__l__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a",
-"lisa__m__2_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642",
-"lisa__mx_2chibios_2v2_81_2board_8h.html#a4cfa16f44aa48e98a2dc81b7034ba1c0",
-"lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6366c26f605ce31e89deee1af686f5e6",
-"lisa__mx__common_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8",
-"lisa__s__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c",
-"lpc21_2mcu__periph_2gpio__arch_8h.html#a62fa810782439ccd99ea38f7ed500a94",
-"lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a2500f92b97c2a4609e36fe26341b3495",
-"lpcCAN_8h.html#structcan__accept__Regs__t",
-"lpcTMR_8h.html#a83a88d5129a701f5153f5cfd89ffe774",
-"lps25h_8h_source.html",
-"lsm303dlhc_8h.html#a2327df9cb8ac5c9421e5824cb61172d2",
-"lsm6ds33__regs_8h.html#a2101f7f59c213c5d9d80aebf8aff0119",
-"mag__micromag__fw__hw_8c.html#aa105625a4ec7ecf95c0802c3edfade05",
-"matekF765-WING_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa",
-"matek__f405__wing__v1_8h.html#a9c90f2615bc6566f45e326285819f6d4",
-"mateksys_2F765-WING_2board_8h.html#a4758e2625de04472ccd95d08b2997ee4",
-"mateksys_2F765-WING_2board_8h.html#ab1ccc7d8e71bee331e03276fcca9d4bc",
-"mateksys_2F765-WING_2mcuconf_8h.html#a2fc47be2589d2a861f2a7e94048d7035",
-"mateksys_2F765-WING_2mcuconf_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15",
-"max11040__hw_8h.html#a2cf263bf3e3b3a803aad79647ad59026",
-"md_sw_airborne_math_README.html",
-"microrl_8c.html#a89b0b337fd6d860193b8f457e0e9b11c",
-"module__actuators_asctec_v2_new.html#configuration__actuators_asctec_v2_new",
-"module__baro_mpl3115.html#module_xml__baro_mpl3115",
-"module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc",
-"module__guidance_indi.html#functions__guidance_indi",
-"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0",
-"module__joystick.html#datalink_functions__joystick",
-"module__nav_spiral.html#configuration__nav_spiral",
-"module__sonar_vl53l1x.html#configuration__sonar_vl53l1x",
-"module__traffic_info.html#module_xml__traffic_info",
-"motor__mixing_8h.html#af3d7567d0ca74f734e5c4e148d5c9b65",
-"mpu60x0__regs_8h.html#a7ae214ad9475200976c1c2dd4031687a",
-"mpu9250__regs_8h.html#a24516fe0f51bb1b137abe2806a92b331a042d68bad0ed6a21b2510b8d2fc55b30",
-"ms5611__regs_8h.html#a82affae4c27528a34fabc2f23603d542",
-"mt9f002__regs_8h.html#a0e2fa296742503fa0c990822ba90fb59",
-"mt9f002__regs_8h.html#a7f73ff82fca0e9fdf49dd77d1073a58b",
-"mt9f002__regs_8h.html#adc6faee264012cbeaf15413589a67ba7",
-"nav_8c.html#a04b783250b1673126fa3f4729cb2078e",
-"nav__bungee__takeoff_8c_source.html",
-"nav__launcher_8c.html#a406b8795fca035fd478f4c88d82ba1a1",
-"nav__spiral_8h.html#aede25bcfa3a0ea79d4f2aeb164c74923",
-"nav__survey__rectangle_8c.html#a0b0579b835970307b17666330dbf4e89",
-"navgo__1_80_8h.html#a4da08b59c725550efa312cf16ecdd77c",
-"naze32__common_8h.html#a72445961e484d65706a9b6d897fd510e",
-"nps__fdm__crrcsim_8c.html#a8b8d0a763ebc53c5e41829d03f00e8de",
-"nps__radio__control_8c.html#a2a652ae30e8858d65f3e811509a795dd",
-"nps__sensor__sonar_8h.html",
-"nucleo144__f767zi_8h.html#accaba79782d8a97b19beaff2110cfa22",
-"nucleo_2144__f767zi_2board_8h.html#a55cfcbe72c94c19396ede44c2035f660",
-"nucleo_2144__f767zi_2board_8h.html#acdf76444facfd421d627de9422f62b37",
-"nucleo_2144__f767zi_2mcuconf_8h.html#a7c6ca71505c504cbd011d772af8cf665",
-"obstacle__avoidance_8c.html#afe030233882d14003e15fba4b0d13719",
-"opa__ftd__1_80_8h.html#a20e24103fcaa69e246c0d87b3a040050",
-"openpilot__revo__1_80_8h.html#a2ab81b59987ffd1973e3c983ea674693",
-"openpilot__revo__nano_8h.html#ac9b1f25ca62d407c091acfb0334dc377",
-"optical__flow__landing_8h.html#a88a86cb49c82bbb64dff876c4ca70257",
-"orange__avoider__guided_8c.html#a8cbd9fcf2b0e56db6f99887026aa8f3d",
-"paparazzi_messages.html#IMCU_REMOTE_BARO",
-"pca9685__i2c_8c.html#a09fbd545b050a478f2d5712dac25a231",
-"pmw3901_8h.html#a4333d500db1d2e8968a2dba664fe0686",
-"pprz__geodetic__float_8h.html#af9886cfc8aa06ca66f993ac42500c4a7",
-"px4__flash_2protocol_8h.html#a2d7e2850edc946fa71559128bd3df3d8",
-"px4flow__i2c_8c.html#ac4badf92d1884f734df5f87a6300ea51",
-"px4fmu_2chibios_2v2_84_2board_8h.html#af405d486ccb51c99a1252dfa4495363b",
-"px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ace43c4d497b0be3dbe8c28836fafd0a5",
-"px4fmu_2chibios_2v4_80_2board_8h.html#a6d59a6831bc8d2b14c4c034db4185e40",
-"px4fmu_2chibios_2v4_80_2ffconf_8h.html#a95aeacb103bd1c4e03b3e154e450c534",
-"px4fmu_2chibios_2v4_80_2mcuconf_8h.html#aea17e07d4f22e7757ac6193ab9d72a15",
-"px4fmu_2chibios_2v5_80_2board_8h.html#a5f9812dc9a552b1e90934ccd1671c2a2",
-"px4fmu_2chibios_2v5_80_2board_8h.html#ad3004d287e8593461908eb271fee4f7c",
-"px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a690972d52bfd04ed8051b61a661f2f53",
-"px4fmu__1_87_8h.html#a8cf8c2a558773727c9673f1cab7ac0a7",
-"px4fmu__4_80_8h.html#a26861f0e94a25ff7f6a8a0b2879cf624",
-"px4io__2_84_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c",
-"relative__localization__filter_8c.html#a4beae14bbc7b1505c9cd922aa925b79c",
-"rotorcraft_2guidance_2guidance__v_8c.html#a3c2c6e4cdeee3d72c1bea4a4eb99cddc",
-"rotorcraft_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014",
-"rover_2main__ap_8c.html#ab79bb049ce85bf2ed3a75c6b12c02bcb",
-"rpm__sensor_8c.html",
-"sbus__common_8h_source.html",
-"sdlog__1_80_8h.html#a31e20330f8ce94e0dd10b005a15c5898",
-"servo__tester_8h.html#aaf6560d1c2849e84d5b3ea55d53263ba",
-"sim_2mcu__periph_2i2c__arch_8c.html#a0a17adac80a82b225a2e0703f947afdb",
-"snake__gate__detection_8c.html#a4b676c1bc0ae93fd3cf0a83e71a485c5",
-"spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851",
-"stabilization__adaptive_8c.html#aa8195cf23a9970e5d0830beb426207f1",
-"stabilization__attitude__passthrough_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42",
-"stabilization__attitude__ref__quat__float_8c.html#af0710fdba982ba2ba559c3346894b5fc",
-"stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6",
-"stm32_2mcu__periph_2pwm__input__arch_8c.html",
-"stm32_2usb__ser__hw_8c.html#a5559799135a9696d72b5d9b3292ef645",
-"subsystems_2datalink_2superbitrf_8h.html#adc8afd83f0e498e8e78f01b7e0794d7f",
-"switch__uart_8h.html",
-"syslink__dl_8h.html#ad86ed246c6e51531f5c1778ec0517d53",
-"tawaki_2chibios_2common_2mcuconf_8h.html#a2c23ca2f86fdf0dee176c1f762d2b2dc",
-"tawaki_2chibios_2common_2mcuconf_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56",
-"tawaki_2chibios_2v1_80_2board_8h.html#a6b55dd36a8f68bea16aa54c3f3f876d3",
-"tawaki_2chibios_2v1_80_2board_8h.html#ae6adf1c7e58b4e5c4df689d0051266e2",
-"tawaki_2chibios_2v1_81_2board_8h.html#a59f19ce5f5b6b25c854064c896453082",
-"tawaki_2chibios_2v1_81_2board_8h.html#ad0736406ab303a76c06fc3aab8ecbbeb",
-"tawaki_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae",
-"temp__tcouple__adc_8c.html#ac165a78e05ef09172afc90dc807796db",
-"throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314",
-"tiny__2_81_8h.html#a5ea98da36d05b171b54c342bcf4a35f7",
-"uav__recovery_8c.html#ad7612c3872441d6da9110cad13f82200",
-"usb__msc__hw_8c.html#aa0d3914e9175b898fb53021bd11c5dc0",
-"usb__msd_8h.html#aa0ce70869b31fb09af307f4d29615d00",
-"v4_80_2px4fmu_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf",
-"vf__float_8h.html#a2358072559748851df8c44c975c43ebb",
-"viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005",
-"vn200__serial_8c.html",
-"wedgebug_8c.html#a6beb3507ace07c2b5fe7b9537971114d",
-"wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccca738254db5cfe4ab5ef5afbf0fe551902"
-];
+ Copyright (C) 1997-2019 by Dimitri van Heesch
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of version 2 of the GNU General Public License as 
+ published by the Free Software Foundation.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+ @licend  The above is the entire license notice
+ for the JavaScript code in this file
+ */
 var navTreeSubIndices = new Array();
+var arrowDown = '&#9660;';
+var arrowRight = '&#9658;';
 
 function getData(varName)
 {
@@ -663,7 +69,6 @@ function localStorageSupported()
   }
 }
 
-
 function storeLink(link)
 {
   if (!$("#nav-sync").hasClass('sync') && localStorageSupported()) {
@@ -689,21 +94,13 @@ function cachedLink()
 
 function getScript(scriptName,func,show)
 {
-  var head = document.getElementsByTagName("head")[0]; 
+  var head = document.getElementsByTagName("head")[0];
   var script = document.createElement('script');
   script.id = scriptName;
   script.type = 'text/javascript';
-  script.onload = func; 
-  script.src = scriptName+'.js'; 
-  if ($.browser.msie && $.browser.version<=8) { 
-    // script.onload does not work with older versions of IE
-    script.onreadystatechange = function() {
-      if (script.readyState=='complete' || script.readyState=='loaded') { 
-        func(); if (show) showRoot(); 
-      }
-    }
-  }
-  head.appendChild(script); 
+  script.onload = func;
+  script.src = scriptName+'.js';
+  head.appendChild(script);
 }
 
 function createIndent(o,domNode,node,level)
@@ -712,18 +109,17 @@ function createIndent(o,domNode,node,level)
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
   if (node.childrenData) {
-    var imgNode = document.createElement("img");
+    var imgNode = document.createElement("span");
+    imgNode.className = 'arrow';
     imgNode.style.paddingLeft=(16*level).toString()+'px';
-    imgNode.width  = 16;
-    imgNode.height = 22;
-    imgNode.border = 0;
+    imgNode.innerHTML=arrowRight;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
     node.expandToggle.onclick = function() {
       if (node.expanded) {
         $(node.getChildrenUL()).slideUp("fast");
-        node.plus_img.src = node.relpath+"ftv2pnode.png";
+        node.plus_img.innerHTML=arrowRight;
         node.expanded = false;
       } else {
         expandNode(o, node, false, false);
@@ -731,15 +127,13 @@ function createIndent(o,domNode,node,level)
     }
     node.expandToggle.appendChild(imgNode);
     domNode.appendChild(node.expandToggle);
-    imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
     var span = document.createElement("span");
-    span.style.display = 'inline-block';
+    span.className = 'arrow';
     span.style.width   = 16*(level+1)+'px';
-    span.style.height  = '22px';
     span.innerHTML = '&#160;';
     domNode.appendChild(span);
-  } 
+  }
 }
 
 var animationInProgress = false;
@@ -749,6 +143,7 @@ function gotoAnchor(anchor,aname,updateLocation)
   var pos, docContent = $('#doc-content');
   var ancParent = $(anchor.parent());
   if (ancParent.hasClass('memItemLeft') ||
+      ancParent.hasClass('memtitle') ||
       ancParent.hasClass('fieldname') ||
       ancParent.hasClass('fieldtype') ||
       ancParent.is(':header'))
@@ -813,7 +208,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
       var aname = '#'+link.split('#')[1];
       var srcPage = stripPath(pathName());
       var targetPage = stripPath(link.split('#')[0]);
-      a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
+      a.href = srcPage!=targetPage ? url : "javascript:void(0)";
       a.onclick = function(){
         storeLink(link);
         if (!$(a).parent().parent().hasClass('selected'))
@@ -831,7 +226,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
       a.onclick = function() { storeLink(link); }
     }
   } else {
-    if (childrenData != null) 
+    if (childrenData != null)
     {
       a.className = "nolink";
       a.href = "javascript:void(0)";
@@ -861,7 +256,7 @@ function showRoot()
   (function (){ // retry until we can scroll to the selected item
     try {
       var navtree=$('#nav-tree');
-      navtree.scrollTo('#selected',0,{offset:-windowHeight/2});
+      navtree.scrollTo('#selected',100,{offset:-windowHeight/2});
     } catch (err) {
       setTimeout(arguments.callee, 0);
     }
@@ -880,17 +275,9 @@ function expandNode(o, node, imm, showRoot)
     } else {
       if (!node.childrenVisited) {
         getNode(o, node);
-      } if (imm || ($.browser.msie && $.browser.version>8)) { 
-        // somehow slideDown jumps to the start of tree for IE9 :-(
-        $(node.getChildrenUL()).show();
-      } else {
-        $(node.getChildrenUL()).slideDown("fast");
       }
-      if (node.isLast) {
-        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
-      } else {
-        node.plus_img.src = node.relpath+"ftv2mnode.png";
-      }
+      $(node.getChildrenUL()).slideDown("fast");
+      node.plus_img.innerHTML = arrowDown;
       node.expanded = true;
     }
   }
@@ -919,7 +306,6 @@ function highlightAnchor()
   } else {
     glowEffect(anchor.next(),1000); // normal member
   }
-  gotoAnchor(anchor,aname,false);
 }
 
 function selectAndHighlight(hash,n)
@@ -959,11 +345,7 @@ function showNode(o, node, index, hash)
         getNode(o, node);
       }
       $(node.getChildrenUL()).css({'display':'block'});
-      if (node.isLast) {
-        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
-      } else {
-        node.plus_img.src = node.relpath+"ftv2mnode.png";
-      }
+      node.plus_img.innerHTML = arrowDown;
       node.expanded = true;
       var n = node.children[o.breadcrumbs[index]];
       if (index+1<o.breadcrumbs.length) {
@@ -1085,6 +467,18 @@ function toggleSyncButton(relpath)
   }
 }
 
+var loadTriggered = false;
+var readyTriggered = false;
+var loadObject,loadToRoot,loadUrl,loadRelPath;
+
+$(window).on('load',function(){
+  if (readyTriggered) { // ready first
+    navTo(loadObject,loadToRoot,loadUrl,loadRelPath);
+    showRoot();
+  }
+  loadTriggered=true;
+});
+
 function initNavTree(toroot,relpath)
 {
   var o = new Object();
@@ -1100,10 +494,9 @@ function initNavTree(toroot,relpath)
   o.node.relpath = relpath;
   o.node.expanded = false;
   o.node.isLast = true;
-  o.node.plus_img = document.createElement("img");
-  o.node.plus_img.src = relpath+"ftv2pnode.png";
-  o.node.plus_img.width = 16;
-  o.node.plus_img.height = 22;
+  o.node.plus_img = document.createElement("span");
+  o.node.plus_img.className = 'arrow';
+  o.node.plus_img.innerHTML = arrowRight;
 
   if (localStorageSupported()) {
     var navSync = $('#nav-sync');
@@ -1116,10 +509,16 @@ function initNavTree(toroot,relpath)
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
-  $(window).load(function(){
+  if (loadTriggered) { // load before ready
     navTo(o,toroot,hashUrl(),relpath);
     showRoot();
-  });
+  } else { // ready before load
+    loadObject  = o;
+    loadToRoot  = toroot;
+    loadUrl     = hashUrl();
+    loadRelPath = relpath;
+    readyTriggered=true;
+  }
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
@@ -1142,4 +541,4 @@ function initNavTree(toroot,relpath)
      }
   })
 }
-
+/* @license-end */

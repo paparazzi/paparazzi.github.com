@@ -46,6 +46,6 @@ var group__state__wind__airspeed =
     [ "vect3", "group__state__wind__airspeed.html#ga8b2ad37c0b959ceaa18469f958f6d0c6", null ],
     [ "vect3", "group__state__wind__airspeed.html#ga66b1d445c3abf9c9ce9ac6b38b873b16", null ],
     [ "wind_air_status", "group__state__wind__airspeed.html#ga4fc58d1ad5b89c1cacf4dd22d2f5864d", null ],
-    [ "windspeed_f", "group__state__wind__airspeed.html#gaf679cd5a89571696f79caf5255305d42", null ],
-    [ "windspeed_i", "group__state__wind__airspeed.html#gaac2b504a75f61e6fa90c536b64281865", null ]
+    [ "windspeed_f", "group__state__wind__airspeed.html#ga264406d2641b095621f812244f39380d", null ],
+    [ "windspeed_i", "group__state__wind__airspeed.html#ga4c97a3dbf5d605d4e124cee5ca079c5c", null ]
 ];

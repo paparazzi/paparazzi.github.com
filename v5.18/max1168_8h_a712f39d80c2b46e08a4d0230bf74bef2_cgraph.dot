@@ -1,9 +1,0 @@
-digraph "max1168_arch_init"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="max1168_arch_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="EXTINT0_ISR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc21_2peripherals_2max1168__arch_8c.html#ab3a8b665f5a12cd2487f4e3aa86046b7"];
-}

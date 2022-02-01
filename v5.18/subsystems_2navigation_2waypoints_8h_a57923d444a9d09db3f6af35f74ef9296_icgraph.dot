@@ -1,9 +1,0 @@
-digraph "waypoint_get_alt"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="waypoint_get_alt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="stereocam_droplet_periodic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stereocam__droplet_8h.html#a304b77dceeec4285bad836b9bbced42d"];
-}

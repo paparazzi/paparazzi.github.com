@@ -1,9 +1,0 @@
-digraph "stabilization_attitude_set_rpy_setpoint_i"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="stabilization_attitude\l_set_rpy_setpoint_i",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="stabilization_indi\l_set_rpy_setpoint_i",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stabilization__indi_8c.html#aac24f92be2dd7af42e3e7906a1324fe9"];
-}

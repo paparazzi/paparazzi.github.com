@@ -1,5 +1,13 @@
 var NAVTREEINDEX128 =
 {
+"module__jevois.html#functions__jevois":[1,377,2],
+"module__jevois.html#module_load_example__jevois":[1,377,0],
+"module__jevois.html#module_xml__jevois":[1,377,2,0],
+"module__jevois_mavlink.html":[1,378],
+"module__jevois_mavlink.html#functions__jevois_mavlink":[1,378,1],
+"module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,378,0],
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,378,1,0],
+"module__joystick.html":[1,434],
 "module__joystick.html#datalink_functions__joystick":[1,434,2],
 "module__joystick.html#functions__joystick":[1,434,1],
 "module__joystick.html#module_load_example__joystick":[1,434,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX128 =
 "module__nav_rover_base.html":[1,307],
 "module__nav_rover_base.html#functions__nav_rover_base":[1,307,1],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,307,0],
-"module__nav_rover_base.html#module_xml__nav_rover_base":[1,307,1,0],
-"module__nav_skid_landing.html":[1,308],
-"module__nav_skid_landing.html#configuration__nav_skid_landing":[1,308,1],
-"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,308,0],
-"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,308,1,0],
-"module__nav_smooth.html":[1,309],
-"module__nav_smooth.html#module_load_example__nav_smooth":[1,309,0],
-"module__nav_smooth.html#module_xml__nav_smooth":[1,309,0,0],
-"module__nav_spiral.html":[1,310]
+"module__nav_rover_base.html#module_xml__nav_rover_base":[1,307,1,0]
 };

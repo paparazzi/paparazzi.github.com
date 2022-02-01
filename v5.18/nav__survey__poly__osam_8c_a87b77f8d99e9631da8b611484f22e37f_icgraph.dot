@@ -1,9 +1,0 @@
-digraph "nav_survey_poly_osam_setup"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="nav_survey_poly_osam\l_setup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="nav_survey_poly_osam\l_setup_towards",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nav__survey__poly__osam_8h.html#a2d6be3c1729f46667057f3793ce0590c",tooltip="Setup \"dynamic\" polygon survey with sweep orientation towards a waypoint. "];
-}

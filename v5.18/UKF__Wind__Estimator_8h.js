@@ -32,8 +32,8 @@ var UKF__Wind__Estimator_8h =
       [ "R", "UKF__Wind__Estimator_8h.html#a06835c35dd5e31fb53ca34fb4cb481fe", null ]
     ] ],
     [ "UKF_Wind_Estimator_COMMON_INCLUDES_", "UKF__Wind__Estimator_8h.html#ac886b3ddb8938068e88cb97be1bc7ca7", null ],
-    [ "ukf_init_type", "UKF__Wind__Estimator_8h.html#a9106bcb499113fb6d4fa92d977ffff27", null ],
-    [ "ukf_params_type", "UKF__Wind__Estimator_8h.html#ae5f767271e7ae4e5277d3e2c94c08ec2", null ],
+    [ "ukf_init_type", "UKF__Wind__Estimator_8h.html#ae409fffc58c790fb7ab2abd0aa89f015", null ],
+    [ "ukf_params_type", "UKF__Wind__Estimator_8h.html#a390d5e7e0eeae4aa3633f86a72a5c5dc", null ],
     [ "UKF_Wind_Estimator_initialize", "UKF__Wind__Estimator_8h.html#a9f980617834e11ccd21d8799b9a54033", null ],
     [ "UKF_Wind_Estimator_step", "UKF__Wind__Estimator_8h.html#ace2249208dcb95cf298d03ea903f34b1", null ],
     [ "ukf_DW", "UKF__Wind__Estimator_8h.html#a94c67ffb8b5d9ed94c8b4931101b6332", null ],

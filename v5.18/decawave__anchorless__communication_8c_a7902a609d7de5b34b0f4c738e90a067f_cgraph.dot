@@ -1,9 +1,0 @@
-digraph "decawave_anchorless_communication_init"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="decawave_anchorless\l_communication_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="setNodeStatesFalse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$decawave__anchorless__communication_8c.html#affd8576bee651268d03c9874f7bb71ac",tooltip="Helper function that sets the boolean that tells whether a remote drone has a new state update to fal..."];
-}

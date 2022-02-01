@@ -7,5 +7,5 @@ var digital__cam_2catia_2protocol_8h_unionmora__status__union =
       [ "threads", "digital__cam_2catia_2protocol_8h.html#a05c0eeac9b6c72e22d1f6006da23abe0", null ]
     ] ],
     [ "bin", "digital__cam_2catia_2protocol_8h.html#ac5036391d38365deee7bcedbfd5daab4", null ],
-    [ "data", "digital__cam_2catia_2protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b", null ]
+    [ "data", "digital__cam_2catia_2protocol_8h.html#aadff016c18983ed761fed557384d6f4c", null ]
 ];

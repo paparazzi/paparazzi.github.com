@@ -1,9 +1,0 @@
-digraph "mavlink_send_set_mode"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="mavlink_send_set_mode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="jevois_mavlink_periodic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$jevois__mavlink_8h.html#a59ceb7f0074d2eceb086a01cac2c5057"];
-}

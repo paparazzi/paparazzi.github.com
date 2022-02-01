@@ -1,9 +1,0 @@
-digraph "uart_periph_set_bits_stop_parity"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="uart_periph_set_bits\l_stop_parity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="serial_port_set_bits\l_stop_parity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$serial__port_8c.html#acf391c48a39bcc64fabe03f73f246655"];
-}

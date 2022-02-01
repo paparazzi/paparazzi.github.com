@@ -1,9 +1,0 @@
-digraph "syslink_parse_char"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="syslink_parse_char",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="syslink_compute_cksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7",tooltip="Compute syslink checksum. "];
-}

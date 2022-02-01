@@ -1,0 +1,52 @@
+<map id="dw1000_arduino_periodic" name="dw1000_arduino_periodic">
+<area shape="rect" id="node1" title=" " alt="" coords="5,120,193,147"/>
+<area shape="rect" id="node2" href="$ekf__range_8c.html#ad8541ea62f847f412b776bc09f925007" title="Get current pos." alt="" coords="697,19,842,45"/>
+<area shape="rect" id="node3" href="$ekf__range_8c.html#a28c4ed56eb77d0de14cfa54c94e1fd6e" title="Get current speed." alt="" coords="689,69,850,96"/>
+<area shape="rect" id="node4" href="$ekf__range_8c.html#aed2dea7eb0fea0297c8b0e6228eca26b" title="propagate dynamic model" alt="" coords="247,120,385,147"/>
+<area shape="rect" id="node5" href="$gps_8c.html#ae631bcedc95daefc88cba7e639b38f19" title="Periodic GPS check." alt="" coords="241,171,391,197"/>
+<area shape="rect" id="node6" href="$dw1000__arduino_8c.html#acac53dcc1b2e1d953c1642b3b15afe4c" title=" " alt="" coords="262,348,370,375"/>
+<area shape="rect" id="node7" href="$dw1000__arduino_8c.html#a61ebb26ab28d54f27878ffeb87febfe9" title="check new data and compute with the proper algorithm" alt="" coords="442,171,633,197"/>
+<area shape="rect" id="node31" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="457,323,617,349"/>
+<area shape="rect" id="node33" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="439,373,636,400"/>
+<area shape="rect" id="node37" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="454,456,621,483"/>
+<area shape="rect" id="node48" href="$group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float)." alt="" coords="460,507,615,533"/>
+<area shape="rect" id="node8" href="$dw1000__arduino_8c.html#ac69c33f1afdbddc93f4606fc40376644" title="check timeout for each anchor" alt="" coords="685,120,854,147"/>
+<area shape="rect" id="node10" href="$ekf__range_8c.html#a05763c5cfa939dd7f360c86169223abf" title="Set initial state vector." alt="" coords="692,171,847,197"/>
+<area shape="rect" id="node11" href="$ekf__range_8c.html#a6778974be3a678696790a30c04315a72" title="correction step" alt="" coords="684,221,855,248"/>
+<area shape="rect" id="node30" href="$trilateration_8c.html#a97f0436650276f98507bed287f66f0c6" title="Compute trilateration based on the latest measurments." alt="" coords="688,272,851,299"/>
+<area shape="rect" id="node9" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="913,120,1059,147"/>
+<area shape="rect" id="node12" href="$e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="967,196,1005,223"/>
+<area shape="rect" id="node13" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="1165,5,1231,32"/>
+<area shape="rect" id="node14" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="1117,56,1279,83"/>
+<area shape="rect" id="node17" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="1165,107,1231,133"/>
+<area shape="rect" id="node23" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="1129,208,1267,235"/>
+<area shape="rect" id="node26" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="1163,157,1233,184"/>
+<area shape="rect" id="node27" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="1156,259,1240,285"/>
+<area shape="rect" id="node29" href="$chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation." alt="" coords="1137,309,1259,336"/>
+<area shape="rect" id="node15" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="1327,56,1560,83"/>
+<area shape="rect" id="node16" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1608,49,1799,90"/>
+<area shape="rect" id="node18" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="1363,136,1523,163"/>
+<area shape="rect" id="node19" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="1621,136,1786,163"/>
+<area shape="rect" id="node20" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1847,187,1949,213"/>
+<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1997,187,2204,213"/>
+<area shape="rect" id="node22" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="2031,411,2171,453"/>
+<area shape="rect" id="node24" href="$subsystems_2navigation_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="1377,237,1510,264"/>
+<area shape="rect" id="node25" href="$subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="1629,237,1777,264"/>
+<area shape="rect" id="node28" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="1335,288,1551,315"/>
+<area shape="rect" id="node32" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="687,323,852,349"/>
+<area shape="rect" id="node34" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="688,373,851,400"/>
+<area shape="rect" id="node35" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="903,360,1069,387"/>
+<area shape="rect" id="node36" href="$group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="1125,360,1271,387"/>
+<area shape="rect" id="node38" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="684,487,855,513"/>
+<area shape="rect" id="node39" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="934,411,1038,437"/>
+<area shape="rect" id="node42" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1121,512,1275,539"/>
+<area shape="rect" id="node43" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="915,563,1057,589"/>
+<area shape="rect" id="node45" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="915,461,1057,488"/>
+<area shape="rect" id="node46" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="935,613,1037,640"/>
+<area shape="rect" id="node40" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1144,411,1252,437"/>
+<area shape="rect" id="node41" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1145,461,1251,488"/>
+<area shape="rect" id="node44" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1122,563,1274,589"/>
+<area shape="rect" id="node47" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1122,664,1274,691"/>
+<area shape="rect" id="node49" href="$group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title=" " alt="" coords="690,588,849,615"/>
+<area shape="rect" id="node50" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="912,664,1060,691"/>
+</map>

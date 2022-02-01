@@ -1,9 +1,0 @@
-digraph "log_image"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="log_image",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="video_usb_logger_start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$video__usb__logger_8h.html#a371634939fbb925daf5f698a8f9fad1f",tooltip="Start the file logger and open a new file. "];
-}

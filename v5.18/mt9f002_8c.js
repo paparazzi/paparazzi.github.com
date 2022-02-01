@@ -36,5 +36,5 @@ var mt9f002_8c =
     [ "write_reg", "mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463", null ],
     [ "front_camera", "mt9f002_8c.html#abe211b229633c3f39cbfb50c5765b4b4", null ],
     [ "mt9f002", "mt9f002_8c.html#a0a67664fafa1d9cbcc7deaa1352d1673", null ],
-    [ "mt9f002_blanking", "mt9f002_8c.html#a7458d76c113f6562a849be01861e8593", null ]
+    [ "mt9f002_blanking", "mt9f002_8c.html#a998ddbc62c54776c1b74d52e36703e0c", null ]
 ];

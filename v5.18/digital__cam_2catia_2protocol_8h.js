@@ -2,7 +2,7 @@ var digital__cam_2catia_2protocol_8h =
 [
     [ "dc_shot_union", "digital__cam_2catia_2protocol_8h.html#uniondc__shot__union", [
       [ "bin", "digital__cam_2catia_2protocol_8h.html#a8080e4edd9fdb0697c540f5a43576218", null ],
-      [ "data", "digital__cam_2catia_2protocol_8h.html#abe394b86f1f32137da8fde49707ab5a8", null ],
+      [ "data", "digital__cam_2catia_2protocol_8h.html#ab83ff9c09b5013e0a159b3a6ead69f6d", null ],
       [ "i", "digital__cam_2catia_2protocol_8h.html#a84fd5a6b454d55a58ca0f5e923c23105", null ]
     ] ],
     [ "mora_status_union", "digital__cam_2catia_2protocol_8h.html#unionmora__status__union", [
@@ -13,7 +13,7 @@ var digital__cam_2catia_2protocol_8h =
         [ "threads", "digital__cam_2catia_2protocol_8h.html#a05c0eeac9b6c72e22d1f6006da23abe0", null ]
       ] ],
       [ "bin", "digital__cam_2catia_2protocol_8h.html#ac5036391d38365deee7bcedbfd5daab4", null ],
-      [ "data", "digital__cam_2catia_2protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b", null ]
+      [ "data", "digital__cam_2catia_2protocol_8h.html#aadff016c18983ed761fed557384d6f4c", null ]
     ] ],
     [ "mora_status_struct", "digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct", [
       [ "cpu", "digital__cam_2catia_2protocol_8h.html#a6713d659f03079a3b7cb56fd94b26a1c", null ],

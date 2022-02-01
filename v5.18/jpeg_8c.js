@@ -31,7 +31,7 @@ var jpeg_8c =
     ] ],
     [ "JPEG_BLOCK_SIZE", "jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b", null ],
     [ "PUTBITS", "jpeg_8c.html#a80f8869084c74ed2427485e95911941f", null ],
-    [ "JPEG_ENCODER_STRUCTURE", "jpeg_8c.html#a54d1e03e9eb6692634ff804fbf781643", null ],
+    [ "JPEG_ENCODER_STRUCTURE", "jpeg_8c.html#aeaa801875a23172197e322bd9ec460ec", null ],
     [ "jpeg_close_bitstream", "jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1", null ],
     [ "jpeg_create_svs_header", "jpeg_8c.html#af000b1ba8ec15e4044a5f68aafd42906", null ],
     [ "jpeg_DCT", "jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9", null ],
@@ -58,6 +58,6 @@ var jpeg_8c =
     [ "luminance_dc_code_table", "jpeg_8c.html#a927990806bccb8cbcdb0879c352e0508", null ],
     [ "luminance_dc_size_table", "jpeg_8c.html#aec6cdbed20d0d71403e2518436762dde", null ],
     [ "markerdata", "jpeg_8c.html#aa199855c7d180e89e04a0de123520101", null ],
-    [ "read_format", "jpeg_8c.html#a202e842bdaddeb7fa6672ada511a148c", null ],
+    [ "read_format", "jpeg_8c.html#a886febdfaaeeb041d1b544b9f6df6f34", null ],
     [ "zigzag_table", "jpeg_8c.html#a46fe732a45d70b70dee231158208905b", null ]
 ];

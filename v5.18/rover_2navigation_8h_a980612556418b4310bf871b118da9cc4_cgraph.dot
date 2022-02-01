@@ -1,9 +1,0 @@
-digraph "nav_set_heading_towards_target"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="nav_set_heading_towards\l_target",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="nav_set_heading_towards",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rotorcraft_2navigation_8c.html#a497df0753fcbcd7b681341695228527c",tooltip="Set heading to point towards x,y position in local coordinates. "];
-}

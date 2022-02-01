@@ -1,9 +1,0 @@
-digraph "infrared_update"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="infrared_update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="infrared_adc_update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$infrared__adc_8c.html#a246a1412611e4887b2bd242f67504af2",tooltip="Update ir_roll and ir_pitch from ADCs or from simulator message in HITL and SITL modes. "];
-}

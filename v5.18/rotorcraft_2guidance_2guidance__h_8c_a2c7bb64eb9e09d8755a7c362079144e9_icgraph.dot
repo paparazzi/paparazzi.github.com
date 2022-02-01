@@ -1,9 +1,0 @@
-digraph "send_gh"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="send_gh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="guidance_h_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rotorcraft_2guidance_2guidance__h_8h.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80"];
-}

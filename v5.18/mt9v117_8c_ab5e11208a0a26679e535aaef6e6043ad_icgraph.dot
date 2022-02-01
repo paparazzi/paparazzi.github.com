@@ -1,9 +1,0 @@
-digraph "mt9v117_config"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="mt9v117_config",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="mt9v117_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7",tooltip="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) "];
-}

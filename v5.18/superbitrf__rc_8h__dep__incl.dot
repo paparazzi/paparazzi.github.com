@@ -1,8 +1,0 @@
-digraph "sw/airborne/subsystems/radio_control/superbitrf_rc.h"
-{
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="sw/airborne/subsystems\l/radio_control/superbitrf_rc.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
-  Node2 [label="sw/airborne/subsystems\l/radio_control/superbitrf_rc.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$superbitrf__rc_8c.html",tooltip="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..."];
-}
