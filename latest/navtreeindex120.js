@@ -1,10 +1,5 @@
 var NAVTREEINDEX120 =
 {
-"module__fdm_crrcsim.html":[1,129],
-"module__fdm_crrcsim.html#module_load_example__fdm_crrcsim":[1,129,0],
-"module__fdm_crrcsim.html#module_xml__fdm_crrcsim":[1,129,0,0],
-"module__fdm_gazebo.html":[1,130],
-"module__fdm_gazebo.html#configuration__fdm_gazebo":[1,130,1],
 "module__fdm_gazebo.html#module_load_example__fdm_gazebo":[1,130,0],
 "module__fdm_gazebo.html#module_xml__fdm_gazebo":[1,130,1,0],
 "module__fdm_jsbsim.html":[1,131],
@@ -116,7 +111,6 @@ var NAVTREEINDEX120 =
 "module__gps_piksi.html":[1,141],
 "module__gps_piksi.html#autoloads__gps_piksi":[1,141,2],
 "module__gps_piksi.html#configuration__gps_piksi":[1,141,1],
-"module__gps_piksi.html#configure":[1,141,1,0],
 "module__gps_piksi.html#functions__gps_piksi":[1,141,3],
 "module__gps_piksi.html#module_load_example__gps_piksi":[1,141,0],
 "module__gps_piksi.html#module_xml__gps_piksi":[1,141,3,0],
@@ -209,9 +203,14 @@ var NAVTREEINDEX120 =
 "module__guidance_rover_holonomic.html#module_load_example__guidance_rover_holonomic":[1,158,0],
 "module__guidance_rover_holonomic.html#module_xml__guidance_rover_holonomic":[1,158,1,0],
 "module__gumstix_qr_code_spi_link.html":[1,428],
+"module__gumstix_qr_code_spi_link.html#files":[1,428,2],
 "module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link":[1,428,1],
+"module__gumstix_qr_code_spi_link.html#headers":[1,428,2,0],
+"module__gumstix_qr_code_spi_link.html#init_functions":[1,428,1,0],
 "module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link":[1,428,0],
-"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link":[1,428,1,0],
+"module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link":[1,428,2,2],
+"module__gumstix_qr_code_spi_link.html#periodic_functions":[1,428,1,1],
+"module__gumstix_qr_code_spi_link.html#sources":[1,428,2,1],
 "module__gvf_module.html":[1,429],
 "module__gvf_module.html#configuration__gvf_module":[1,429,1],
 "module__gvf_module.html#functions__gvf_module":[1,429,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX120 =
 "module__humid_dpicco.html#module_xml__humid_dpicco":[1,261,1,0],
 "module__humid_hih.html":[1,262],
 "module__humid_hih.html#functions__humid_hih":[1,262,1],
-"module__humid_hih.html#module_load_example__humid_hih":[1,262,0]
+"module__humid_hih.html#module_load_example__humid_hih":[1,262,0],
+"module__humid_hih.html#module_xml__humid_hih":[1,262,1,0]
 };

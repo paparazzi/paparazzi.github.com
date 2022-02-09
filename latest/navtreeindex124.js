@@ -1,7 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"module__pca9685.html#module_load_example__pca9685":[1,440,0],
-"module__pca9685.html#module_xml__pca9685":[1,440,1,0],
 "module__photogrammetry_calculator.html":[1,441],
 "module__photogrammetry_calculator.html#functions__photogrammetry_calculator":[1,441,1],
 "module__photogrammetry_calculator.html#module_load_example__photogrammetry_calculator":[1,441,0],
@@ -63,8 +61,9 @@ var NAVTREEINDEX124 =
 "module__radio_control_hott.html#module_xml__radio_control_hott":[1,333,1,0],
 "module__radio_control_ppm.html":[1,334],
 "module__radio_control_ppm.html#configuration__radio_control_ppm":[1,334,1],
+"module__radio_control_ppm.html#configure":[1,334,1,0],
 "module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,334,0],
-"module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,334,1,0],
+"module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,334,1,1],
 "module__radio_control_sbus.html":[1,335],
 "module__radio_control_sbus.html#configuration__radio_control_sbus":[1,335,1],
 "module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,335,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX124 =
 "module__stereocam_follow_me.html":[1,400],
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,400,0],
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,400,0,0],
-"module__stereocam_nav_line_avoid.html":[1,401]
+"module__stereocam_nav_line_avoid.html":[1,401],
+"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,401,1]
 };

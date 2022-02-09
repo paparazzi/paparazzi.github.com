@@ -1,8 +1,5 @@
 var NAVTREEINDEX118 =
 {
-"module__ahrs_common.html#module_load_example__ahrs_common":[1,26,0],
-"module__ahrs_common.html#module_xml__ahrs_common":[1,26,2,0],
-"module__ahrs_float_cmpl_quat.html":[1,27],
 "module__ahrs_float_cmpl_quat.html#autoloads__ahrs_float_cmpl_quat":[1,27,2],
 "module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat":[1,27,1],
 "module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,27,0],
@@ -62,6 +59,7 @@ var NAVTREEINDEX118 =
 "module__airborne_ant_track.html#module_xml__airborne_ant_track":[1,409,1,0],
 "module__airspeed_adc.html":[1,344],
 "module__airspeed_adc.html#configuration__airspeed_adc":[1,344,1],
+"module__airspeed_adc.html#define":[1,344,1,0],
 "module__airspeed_adc.html#functions__airspeed_adc":[1,344,2],
 "module__airspeed_adc.html#module_load_example__airspeed_adc":[1,344,0],
 "module__airspeed_adc.html#module_xml__airspeed_adc":[1,344,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX118 =
 "module__cf_deck_multi_ranger.html":[1,339],
 "module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger":[1,339,1],
 "module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger":[1,339,2],
-"module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger":[1,339,0]
+"module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger":[1,339,0],
+"module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger":[1,339,2,0],
+"module__charge_sens.html":[1,256]
 };

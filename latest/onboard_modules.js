@@ -138,10 +138,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "actuators_swing module", "module__actuators_swing.html", [
-      [ "Example for airframe file", "module__actuators_swing.html#module_load_example__actuators_swing", null ],
-      [ "Files", "module__actuators_swing.html#files", [
-        [ "Header Files", "module__actuators_swing.html#headers", null ],
-        [ "Source Files", "module__actuators_swing.html#sources", null ],
+      [ "Example for airframe file", "module__actuators_swing.html#module_load_example__actuators_swing", [
         [ "Raw actuators_swing.xml file:", "module__actuators_swing.html#module_xml__actuators_swing", null ]
       ] ]
     ] ],
@@ -395,9 +392,7 @@ var onboard_modules =
     ] ],
     [ "cv_colorfilter module", "module__cv_colorfilter.html", [
       [ "Example for airframe file", "module__cv_colorfilter.html#module_load_example__cv_colorfilter", null ],
-      [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", [
-        [ "Define Options", "module__cv_colorfilter.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", null ],
       [ "Module functions", "module__cv_colorfilter.html#functions__cv_colorfilter", [
         [ "Raw cv_colorfilter.xml file:", "module__cv_colorfilter.html#module_xml__cv_colorfilter", null ]
       ] ]
@@ -690,6 +685,7 @@ var onboard_modules =
       [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", null ],
       [ "Auto-loaded modules", "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga", null ],
       [ "Module functions", "module__telemetry_bluegiga.html#functions__telemetry_bluegiga", [
+        [ "Event Functions", "module__telemetry_bluegiga.html#event_functions", null ],
         [ "Raw telemetry_bluegiga.xml file:", "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga", null ]
       ] ]
     ] ],
@@ -962,9 +958,7 @@ var onboard_modules =
     ] ],
     [ "gps_piksi module", "module__gps_piksi.html", [
       [ "Example for airframe file", "module__gps_piksi.html#module_load_example__gps_piksi", null ],
-      [ "Module configuration options", "module__gps_piksi.html#configuration__gps_piksi", [
-        [ "Configure Options", "module__gps_piksi.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__gps_piksi.html#configuration__gps_piksi", null ],
       [ "Auto-loaded modules", "module__gps_piksi.html#autoloads__gps_piksi", null ],
       [ "Module functions", "module__gps_piksi.html#functions__gps_piksi", [
         [ "Raw gps_piksi.xml file:", "module__gps_piksi.html#module_xml__gps_piksi", null ]
@@ -1148,23 +1142,23 @@ var onboard_modules =
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
       [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
@@ -1188,7 +1182,6 @@ var onboard_modules =
       [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
-        [ "Event Functions", "module__imu_bebop.html#event_functions", null ],
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
     ] ],
@@ -1260,7 +1253,9 @@ var onboard_modules =
     ] ],
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
-      [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", null ],
+      [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
+        [ "Airframe file section", "module__imu_lisa_m_v2_1.html#af_section", null ]
+      ] ],
       [ "Auto-loaded modules", "module__imu_lisa_m_v2_1.html#autoloads__imu_lisa_m_v2_1", [
         [ ".1 Raw imu_lisa_m_v2.1.xml file:", "module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2", null ]
       ] ]
@@ -1692,7 +1687,6 @@ var onboard_modules =
     [ "openlog module", "module__openlog.html", [
       [ "Example for airframe file", "module__openlog.html#module_load_example__openlog", null ],
       [ "Module functions", "module__openlog.html#functions__openlog", [
-        [ "Periodic Functions", "module__openlog.html#periodic_functions", null ],
         [ "Raw openlog.xml file:", "module__openlog.html#module_xml__openlog", null ]
       ] ]
     ] ],
@@ -2238,6 +2232,7 @@ var onboard_modules =
     [ "radio_control_ppm module", "module__radio_control_ppm.html", [
       [ "Example for airframe file", "module__radio_control_ppm.html#module_load_example__radio_control_ppm", null ],
       [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", [
+        [ "Configure Options", "module__radio_control_ppm.html#configure", null ],
         [ "Raw radio_control_ppm.xml file:", "module__radio_control_ppm.html#module_xml__radio_control_ppm", null ]
       ] ]
     ] ],
@@ -2302,7 +2297,9 @@ var onboard_modules =
     ] ],
     [ "airspeed_adc module", "module__airspeed_adc.html", [
       [ "Example for airframe file", "module__airspeed_adc.html#module_load_example__airspeed_adc", null ],
-      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", null ],
+      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", [
+        [ "Define Options", "module__airspeed_adc.html#define", null ]
+      ] ],
       [ "Module functions", "module__airspeed_adc.html#functions__airspeed_adc", [
         [ "Raw airspeed_adc.xml file:", "module__airspeed_adc.html#module_xml__airspeed_adc", null ]
       ] ]
@@ -2809,12 +2806,8 @@ var onboard_modules =
     ] ],
     [ "distributed_circular_formation module", "module__distributed_circular_formation.html", [
       [ "Example for airframe file", "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation", null ],
-      [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", [
-        [ "Airframe file section", "module__distributed_circular_formation.html#af_section", null ]
-      ] ],
-      [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", [
-        [ "Init Functions", "module__distributed_circular_formation.html#init_functions", null ]
-      ] ],
+      [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", null ],
+      [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", null ],
       [ "Datalink Functions", "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation", [
         [ "Raw distributed_circular_formation.xml file:", "module__distributed_circular_formation.html#module_xml__distributed_circular_formation", null ]
       ] ]
@@ -2878,6 +2871,12 @@ var onboard_modules =
     [ "gumstix_qr_code_spi_link module", "module__gumstix_qr_code_spi_link.html", [
       [ "Example for airframe file", "module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link", null ],
       [ "Module functions", "module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link", [
+        [ "Init Functions", "module__gumstix_qr_code_spi_link.html#init_functions", null ],
+        [ "Periodic Functions", "module__gumstix_qr_code_spi_link.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__gumstix_qr_code_spi_link.html#files", [
+        [ "Header Files", "module__gumstix_qr_code_spi_link.html#headers", null ],
+        [ "Source Files", "module__gumstix_qr_code_spi_link.html#sources", null ],
         [ "Raw gumstix_qr_code_spi_link.xml file:", "module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link", null ]
       ] ]
     ] ],

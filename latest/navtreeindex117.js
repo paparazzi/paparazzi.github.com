@@ -213,11 +213,8 @@ var NAVTREEINDEX117 =
 "module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,16,0],
 "module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,16,1,0],
 "module__actuators_swing.html":[1,17],
-"module__actuators_swing.html#files":[1,17,1],
-"module__actuators_swing.html#headers":[1,17,1,0],
 "module__actuators_swing.html#module_load_example__actuators_swing":[1,17,0],
-"module__actuators_swing.html#module_xml__actuators_swing":[1,17,1,2],
-"module__actuators_swing.html#sources":[1,17,1,1],
+"module__actuators_swing.html#module_xml__actuators_swing":[1,17,0,0],
 "module__actuators_uavcan.html":[1,18],
 "module__actuators_uavcan.html#autoloads__actuators_uavcan":[1,18,2],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,18,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX117 =
 "module__ahrs_chimu_uart.html#module_xml__ahrs_chimu_uart":[1,25,2,0],
 "module__ahrs_common.html":[1,26],
 "module__ahrs_common.html#configuration__ahrs_common":[1,26,1],
-"module__ahrs_common.html#functions__ahrs_common":[1,26,2]
+"module__ahrs_common.html#functions__ahrs_common":[1,26,2],
+"module__ahrs_common.html#module_load_example__ahrs_common":[1,26,0],
+"module__ahrs_common.html#module_xml__ahrs_common":[1,26,2,0],
+"module__ahrs_float_cmpl_quat.html":[1,27]
 };

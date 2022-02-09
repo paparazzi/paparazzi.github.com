@@ -1,6 +1,5 @@
 var NAVTREEINDEX122 =
 {
-"module__imu_um6.html#configuration__imu_um6":[1,202,1],
 "module__imu_um6.html#functions__imu_um6":[1,202,3],
 "module__imu_um6.html#module_load_example__imu_um6":[1,202,0],
 "module__imu_um6.html#module_xml__imu_um6":[1,202,3,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX122 =
 "module__mag_lis3mdl.html#module_load_example__mag_lis3mdl":[1,372,0],
 "module__mag_lis3mdl.html#module_xml__mag_lis3mdl":[1,372,2,0],
 "module__mag_pitot_uart.html":[1,373],
-"module__mag_pitot_uart.html#configuration__mag_pitot_uart":[1,373,1]
+"module__mag_pitot_uart.html#configuration__mag_pitot_uart":[1,373,1],
+"module__mag_pitot_uart.html#functions__mag_pitot_uart":[1,373,2]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,401,1],
 "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,401,2],
 "module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,401,0],
 "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,401,2,0],
@@ -58,9 +57,10 @@ var NAVTREEINDEX125 =
 "module__telemetry_bluegiga.html":[1,101],
 "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga":[1,101,2],
 "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga":[1,101,1],
+"module__telemetry_bluegiga.html#event_functions":[1,101,3,0],
 "module__telemetry_bluegiga.html#functions__telemetry_bluegiga":[1,101,3],
 "module__telemetry_bluegiga.html#module_load_example__telemetry_bluegiga":[1,101,0],
-"module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga":[1,101,3,0],
+"module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga":[1,101,3,1],
 "module__telemetry_intermcu.html":[1,451],
 "module__telemetry_intermcu.html#configuration__telemetry_intermcu":[1,451,1],
 "module__telemetry_intermcu.html#functions__telemetry_intermcu":[1,451,2],
