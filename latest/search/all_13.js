@@ -912,7 +912,7 @@ var searchData=
   ['rxcc2500spiconfig_5ft_19564',['rxCc2500SpiConfig_t',['../cc2500__settings_8h.html#af256a51cd9cd49eb7dc9e67bda3b82d3',1,'cc2500_settings.h']]],
   ['rxcc2500spiconfigmutable_19565',['rxCc2500SpiConfigMutable',['../cc2500__settings_8c.html#ae1dc74d5df9f5a6c7145d82047cb95bf',1,'rxCc2500SpiConfigMutable(void):&#160;cc2500_settings.c'],['../cc2500__settings_8h.html#ae1dc74d5df9f5a6c7145d82047cb95bf',1,'rxCc2500SpiConfigMutable(void):&#160;cc2500_settings.c']]],
   ['rxchannelcount_19566',['rxChannelCount',['../cc2500__rx_8c.html#a3257da7b0b86faaad412287db96548e1',1,'cc2500_rx.c']]],
-  ['rxconfig_19567',['rxconfig',['../cc2500__settings_8c.html#abcec7bcb442b20891fa9277c18c5d9ea',1,'rxconfig():&#160;cc2500_settings.c'],['../cc2500__settings_8c.html#af06545e739401827aa40484c0ad98353',1,'rxConfig(void):&#160;cc2500_settings.c'],['../cc2500__settings_8h.html#af06545e739401827aa40484c0ad98353',1,'rxConfig(void):&#160;cc2500_settings.c']]],
+  ['rxconfig_19567',['rxConfig',['../cc2500__settings_8c.html#af06545e739401827aa40484c0ad98353',1,'rxConfig(void):&#160;cc2500_settings.c'],['../cc2500__settings_8h.html#af06545e739401827aa40484c0ad98353',1,'rxConfig(void):&#160;cc2500_settings.c'],['../cc2500__settings_8c.html#abcec7bcb442b20891fa9277c18c5d9ea',1,'rxconfig():&#160;cc2500_settings.c']]],
   ['rxconfig_5fs_19568',['rxConfig_s',['../cc2500__settings_8h.html#structrxConfig__s',1,'']]],
   ['rxconfig_5ft_19569',['rxConfig_t',['../cc2500__settings_8h.html#a98f5e83ed6cd438b86edea0a0ad46ba4',1,'cc2500_settings.h']]],
   ['rxdata_19570',['rxdata',['../usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3',1,'usb_ser_hw.c']]],

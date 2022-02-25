@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"module__mag_pitot_uart.html#configuration__mag_pitot_uart":[1,373,1],
+"module__mag_pitot_uart.html#functions__mag_pitot_uart":[1,373,2],
 "module__mag_pitot_uart.html#module_load_example__mag_pitot_uart":[1,373,0],
 "module__mag_pitot_uart.html#module_xml__mag_pitot_uart":[1,373,2,0],
 "module__mag_rm3100.html":[1,374],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "module__pano_unwrap.html#module_load_example__pano_unwrap":[1,439,0],
 "module__pano_unwrap.html#module_xml__pano_unwrap":[1,439,2,0],
 "module__pca9685.html":[1,440],
-"module__pca9685.html#functions__pca9685":[1,440,1],
-"module__pca9685.html#module_load_example__pca9685":[1,440,0],
-"module__pca9685.html#module_xml__pca9685":[1,440,1,0]
+"module__pca9685.html#functions__pca9685":[1,440,1]
 };

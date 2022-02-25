@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"imu__um6_8h.html#structUM6Packet":[12,0,1,0,6,35,50,0],
+"imu__um6_8h_source.html":[12,0,1,0,6,35,50],
 "imu__vectornav_8c.html":[12,0,1,0,6,35,51],
 "imu__vectornav_8c.html#a005b7bf0a6505e1d8f3192520c3048b7":[12,0,1,0,6,35,51,3],
 "imu__vectornav_8c.html#a0bfcb922f5c1a64dde22695f3642cef2":[12,0,1,0,6,35,51,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "ins__float__invariant_8c.html#abe3f87018eecb400b25804bc896c1299":[12,0,1,0,6,36,20,5],
 "ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0":[12,0,1,0,6,36,20,16],
 "ins__float__invariant_8c.html#ad770f4835ea32cfbb8c9ae96100a05e2":[12,0,1,0,6,36,20,19],
-"ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de":[12,0,1,0,6,36,20,15],
-"ins__float__invariant_8c.html#af03c79fa9acf53a5dd97d1e706870229":[12,0,1,0,6,36,20,13],
-"ins__float__invariant_8c.html#af9c75e0faec81d721ce6b0e72a78e74b":[12,0,1,0,6,36,20,12]
+"ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de":[12,0,1,0,6,36,20,15]
 };

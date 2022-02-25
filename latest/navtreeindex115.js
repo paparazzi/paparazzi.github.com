@@ -1,5 +1,7 @@
 var NAVTREEINDEX115 =
 {
+"max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9":[12,0,1,0,6,19,0,38],
+"max7456_8c.html#a945116b36ac06fdbb6f4aef0c5e7f7ca":[12,0,1,0,6,19,0,17],
 "max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5":[12,0,1,0,6,19,0,1,8],
 "max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5":[12,0,1,0,6,8,6,1,8],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6e":[12,0,1,0,6,19,0,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX115 =
 "meteo__france__DAQ_8h.html":[12,0,1,0,6,43,32],
 "meteo__france__DAQ_8h.html#a24d73873e9a46e4d42776e1623b72c31":[12,0,1,0,6,43,32,0,1],
 "meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a":[12,0,1,0,6,43,32,5],
-"meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf":[12,0,1,0,6,43,32,2],
-"meteo__france__DAQ_8h.html#a5eac3ac3a7ca67f41b81350f2d0f7f0d":[12,0,1,0,6,43,32,6],
-"meteo__france__DAQ_8h.html#a625cdc6629844670f65771a33f49fb43":[12,0,1,0,6,43,32,0,2]
+"meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf":[12,0,1,0,6,43,32,2]
 };

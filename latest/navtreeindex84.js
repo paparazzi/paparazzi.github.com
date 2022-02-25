@@ -1,5 +1,7 @@
 var NAVTREEINDEX84 =
 {
+"imu__drotek__10dof__v2_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f":[12,0,1,0,6,35,20,16],
+"imu__drotek__10dof__v2_8h.html#aacdafe50c6db4a6990596931baa40d3f":[12,0,1,0,6,35,20,25],
 "imu__drotek__10dof__v2_8h.html#ab4e104d71e6fd268fac6b2a1b383be26":[12,0,1,0,6,35,20,23],
 "imu__drotek__10dof__v2_8h.html#acb1e3fe77292b3a5b75aab732f13c853":[12,0,1,0,6,35,20,0,1],
 "imu__drotek__10dof__v2_8h.html#ad08f71586fceaa57ea361681bb6543b7":[12,0,1,0,6,35,20,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX84 =
 "imu__mpu6000__hmc5883_8h.html#aaaed0fbf95b6e8df852802a84fd4c7d9":[12,0,1,0,6,35,27,24],
 "imu__mpu6000__hmc5883_8h.html#ab0ea581dde7834254f66b8b22779dda4":[12,0,1,0,6,35,27,23],
 "imu__mpu6000__hmc5883_8h.html#ad08f71586fceaa57ea361681bb6543b7":[12,0,1,0,6,35,27,10],
-"imu__mpu6000__hmc5883_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa":[12,0,1,0,6,35,27,7],
-"imu__mpu6000__hmc5883_8h.html#ada91099469f16df2d8aeafa82d365c4b":[12,0,1,0,6,35,27,3],
-"imu__mpu6000__hmc5883_8h.html#ae62fbd99f815974f80f911bfa1b1d514":[12,0,1,0,6,35,27,8]
+"imu__mpu6000__hmc5883_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa":[12,0,1,0,6,35,27,7]
 };

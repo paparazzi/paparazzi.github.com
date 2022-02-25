@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc":[12,0,1,0,6,35,3,31],
+"imu_8h.html#a7ac65ce9270568f68550482ef718678c":[12,0,1,0,6,35,3,0,8],
 "imu_8h.html#a7c36ae4fa7593bdd81a2eac2a763452e":[12,0,1,0,6,35,3,10],
 "imu_8h.html#a82a39ecc102f002a754e0c97e096cf46":[12,0,1,0,6,35,3,8],
 "imu_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5":[12,0,1,0,6,35,3,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "imu__aspirin__i2c_8h_source.html":[12,0,1,0,6,35,12],
 "imu__bebop_8c.html":[12,0,1,0,6,35,13],
 "imu__bebop_8c.html#a00741040c64264f12c2ba2e8bbb3e78d":[12,0,1,0,6,35,13,1],
-"imu__bebop_8c.html#a565995deb417f4592913f9647af3dc4a":[12,0,1,0,6,35,13,0],
-"imu__bebop_8c.html#a6e2e821c983714cc0f23313ee1d38b5b":[12,0,1,0,6,35,13,6],
-"imu__bebop_8c.html#aa2e0dd97234c855b85f5cbf27b27f58e":[12,0,1,0,6,35,13,4]
+"imu__bebop_8c.html#a565995deb417f4592913f9647af3dc4a":[12,0,1,0,6,35,13,0]
 };

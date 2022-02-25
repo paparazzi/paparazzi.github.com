@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('guidance__indi_8c.html',''); initResiz
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="low__pass__filter_8h_source.html">filters/low_pass_filter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for guidance_indi.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -115,56 +116,56 @@ $(document).ready(function(){initNavTree('guidance__indi_8c.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi_8c" id="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__indi_8c">
-<area shape="rect" title=" " alt="" coords="1856,5,2023,61"/>
-<area shape="rect" title=" " alt="" coords="1007,474,1167,501"/>
-<area shape="rect" href="guidance__indi_8h.html" title=" " alt="" coords="3537,377,3728,419"/>
-<area shape="rect" href="ins__int_8h.html" title=" " alt="" coords="2034,109,2194,136"/>
-<area shape="rect" href="state_8h.html" title=" " alt="" coords="3061,288,3127,315"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1555,385,1729,411"/>
-<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="117,281,284,322"/>
-<area shape="rect" href="imu_8h.html" title=" " alt="" coords="2488,288,2636,315"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title=" " alt="" coords="1759,281,1933,322"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8h.html" title=" " alt="" coords="308,281,483,322"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title=" " alt="" coords="741,273,932,329"/>
-<area shape="rect" href="stabilization_8h.html" title=" " alt="" coords="515,377,665,419"/>
-<area shape="rect" href="rotorcraft_2autopilot__rc__helpers_8h.html" title=" " alt="" coords="435,184,606,225"/>
-<area shape="rect" href="autopilot_8h.html" title=" " alt="" coords="3012,191,3104,218"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title=" " alt="" coords="3695,281,3882,322"/>
-<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="2026,385,2197,411"/>
-<area shape="rect" href="abi_8h.html" title=" " alt="" coords="4007,109,4154,136"/>
-<area shape="rect" title=" " alt="" coords="2253,660,2308,687"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="2373,474,2553,501"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="3565,474,3757,501"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="3199,571,3355,597"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="2395,571,2548,597"/>
-<area shape="rect" title=" " alt="" coords="2027,571,2097,597"/>
-<area shape="rect" title=" " alt="" coords="3472,660,3535,687"/>
-<area shape="rect" title=" " alt="" coords="3268,660,3339,687"/>
-<area shape="rect" title=" " alt="" coords="3613,660,3681,687"/>
-<area shape="rect" title=" " alt="" coords="3430,571,3587,597"/>
-<area shape="rect" href="ins_8h.html" title=" " alt="" coords="2381,191,2517,218"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="2373,377,2524,419"/>
-<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="2009,288,2153,315"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="2617,474,2742,501"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="2835,377,2985,419"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="3061,377,3228,419"/>
-<area shape="rect" title=" " alt="" coords="1400,474,1487,501"/>
-<area shape="rect" title=" " alt="" coords="1581,474,1708,501"/>
-<area shape="rect" title=" " alt="" coords="1732,467,1893,508"/>
-<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="17,385,72,411"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1059,385,1156,411"/>
-<area shape="rect" title=" " alt="" coords="96,385,287,411"/>
-<area shape="rect" title=" " alt="" coords="5,474,84,501"/>
-<area shape="rect" href="guidance__h__ref_8h.html" title=" " alt="" coords="1753,377,1952,419"/>
-<area shape="rect" href="guidance__v__ref_8h.html" title=" " alt="" coords="1332,377,1531,419"/>
-<area shape="rect" href="guidance__v__adapt_8h.html" title=" " alt="" coords="566,556,729,612"/>
-<area shape="rect" title=" " alt="" coords="741,377,932,419"/>
-<area shape="rect" title=" " alt="" coords="3203,288,3329,315"/>
-<area shape="rect" title=" " alt="" coords="3354,288,3511,315"/>
-<area shape="rect" title=" " alt="" coords="3536,288,3671,315"/>
-<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title=" " alt="" coords="2650,377,2810,419"/>
-<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title=" " alt="" coords="3355,377,3513,419"/>
-<area shape="rect" title=" " alt="" coords="4017,191,4144,218"/>
+<area shape="rect" title=" " alt="" coords="2550,5,2716,61"/>
+<area shape="rect" title=" " alt="" coords="3508,474,3668,501"/>
+<area shape="rect" href="guidance__indi_8h.html" title=" " alt="" coords="1830,377,2020,419"/>
+<area shape="rect" href="ins__int_8h.html" title=" " alt="" coords="574,109,734,136"/>
+<area shape="rect" href="state_8h.html" title=" " alt="" coords="921,288,988,315"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="164,385,337,411"/>
+<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="3712,281,3879,322"/>
+<area shape="rect" href="imu_8h.html" title=" " alt="" coords="1718,288,1866,315"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title=" " alt="" coords="2347,281,2522,322"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8h.html" title=" " alt="" coords="2546,281,2720,322"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title=" " alt="" coords="2744,273,2935,329"/>
+<area shape="rect" href="stabilization_8h.html" title=" " alt="" coords="3428,377,3579,419"/>
+<area shape="rect" href="rotorcraft_2autopilot__rc__helpers_8h.html" title=" " alt="" coords="3598,184,3769,225"/>
+<area shape="rect" href="autopilot_8h.html" title=" " alt="" coords="3031,191,3123,218"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title=" " alt="" coords="1401,281,1588,322"/>
+<area shape="rect" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="2146,385,2317,411"/>
+<area shape="rect" href="abi_8h.html" title=" " alt="" coords="4332,109,4478,136"/>
+<area shape="rect" href="telemetry_8h.html" title=" " alt="" coords="4409,288,4622,315"/>
+<area shape="rect" title=" " alt="" coords="1772,660,1827,687"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1652,474,1832,501"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="985,474,1177,501"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1780,571,1936,597"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="1551,571,1704,597"/>
+<area shape="rect" title=" " alt="" coords="1418,571,1488,597"/>
+<area shape="rect" title=" " alt="" coords="912,660,983,687"/>
+<area shape="rect" title=" " alt="" coords="1002,571,1160,597"/>
+<area shape="rect" href="ins_8h.html" title=" " alt="" coords="638,191,774,218"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="740,377,891,419"/>
+<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="420,288,564,315"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="463,377,614,419"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="1119,377,1286,419"/>
+<area shape="rect" title=" " alt="" coords="2620,474,2707,501"/>
+<area shape="rect" title=" " alt="" coords="92,474,219,501"/>
+<area shape="rect" title=" " alt="" coords="243,467,404,508"/>
+<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="3971,385,4026,411"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="3255,385,3352,411"/>
+<area shape="rect" title=" " alt="" coords="3756,385,3947,411"/>
+<area shape="rect" href="guidance__h__ref_8h.html" title=" " alt="" coords="2342,377,2540,419"/>
+<area shape="rect" href="guidance__v__ref_8h.html" title=" " alt="" coords="2564,377,2763,419"/>
+<area shape="rect" href="guidance__v__adapt_8h.html" title=" " alt="" coords="2938,556,3101,612"/>
+<area shape="rect" title=" " alt="" coords="3040,377,3231,419"/>
+<area shape="rect" title=" " alt="" coords="3220,288,3347,315"/>
+<area shape="rect" title=" " alt="" coords="3372,288,3529,315"/>
+<area shape="rect" title=" " alt="" coords="3062,288,3196,315"/>
+<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title=" " alt="" coords="1594,377,1754,419"/>
+<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title=" " alt="" coords="1310,377,1468,419"/>
+<area shape="rect" title=" " alt="" coords="4342,191,4468,218"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="4554,571,4694,597"/>
+<area shape="rect" title=" " alt="" coords="4334,377,4478,419"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="4049,385,4260,411"/>
 </map>
 </div>
 </div>
@@ -189,6 +190,8 @@ Functions</h2></td></tr>
 <tr class="separator:a600398d034a7f118b5f97390c6c0c333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6189eb03d08b40eda5bc671013ffea90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#a6189eb03d08b40eda5bc671013ffea90">guidance_indi_calcG_yxz</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatMat33">FloatMat33</a> *Gmat, struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *euler_yxz)</td></tr>
 <tr class="separator:a6189eb03d08b40eda5bc671013ffea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0973163d037300cb8ea5f26a18046f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#afe0973163d037300cb8ea5f26a18046f">send_indi_guidance</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
+<tr class="separator:afe0973163d037300cb8ea5f26a18046f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f448d3b1322b6c0bd3d84dbb5cf603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603">guidance_indi_init</a> (void)</td></tr>
 <tr class="memdesc:aa1f448d3b1322b6c0bd3d84dbb5cf603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603">More...</a><br /></td></tr>
 <tr class="separator:aa1f448d3b1322b6c0bd3d84dbb5cf603"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +215,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab07fe4b2b272129562100213e3d45ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397e4386fe0eb24345c12c4f5f3ff1a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#a397e4386fe0eb24345c12c4f5f3ff1a2">indi_accel_sp_set_3d</a> = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:a397e4386fe0eb24345c12c4f5f3ff1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ff4d7566b9d5b7e9ca4485f6c56d71"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#a60ff4d7566b9d5b7e9ca4485f6c56d71">speed_sp</a> = {0.0, 0.0, 0.0}</td></tr>
+<tr class="separator:a60ff4d7566b9d5b7e9ca4485f6c56d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596a1bce76f2a37bf46aa5149ad745d7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#a596a1bce76f2a37bf46aa5149ad745d7">sp_accel</a> = {0.0, 0.0, 0.0}</td></tr>
 <tr class="separator:a596a1bce76f2a37bf46aa5149ad745d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62834fedbe3a96736f5743f6ede8ccbd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi_8c.html#a62834fedbe3a96736f5743f6ede8ccbd">thrust_act</a> = 0</td></tr>
@@ -278,7 +283,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00095">95</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00096">96</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 </div>
 </div>
@@ -325,11 +330,11 @@ Variables</h2></td></tr>
 
 <p>ABI callback that obtains the acceleration setpoint from telemetry flag: 0 -&gt; 2D, 1 -&gt; 3D. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00363">363</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00388">388</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00134">get_sys_time_float()</a>, <a class="el" href="guidance__indi_8c_source.html#l00072">indi_accel_sp</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">indi_accel_sp_set_2d</a>, <a class="el" href="guidance__indi_8c_source.html#l00074">indi_accel_sp_set_3d</a>, <a class="el" href="guidance__indi_8c_source.html#l00112">time_of_accel_sp_2d</a>, <a class="el" href="guidance__indi_8c_source.html#l00113">time_of_accel_sp_3d</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="sys__time_8h_source.html#l00134">get_sys_time_float()</a>, <a class="el" href="guidance__indi_8c_source.html#l00072">indi_accel_sp</a>, <a class="el" href="guidance__indi_8c_source.html#l00073">indi_accel_sp_set_2d</a>, <a class="el" href="guidance__indi_8c_source.html#l00074">indi_accel_sp_set_3d</a>, <a class="el" href="guidance__indi_8c_source.html#l00113">time_of_accel_sp_2d</a>, <a class="el" href="guidance__indi_8c_source.html#l00114">time_of_accel_sp_3d</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00125">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00146">guidance_indi_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -386,7 +391,7 @@ Variables</h2></td></tr>
 </dl>
 <p>Calculate the matrix of partial derivatives of the roll, pitch and thrust. w.r.t. the NED accelerations for ZYX eulers ddx = G*[dtheta,dphi,dT] </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00334">334</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00359">359</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="mesonh__atmosphere_8py_source.html#l00046">mesonh.mesonh_atmosphere::T</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -448,11 +453,11 @@ Variables</h2></td></tr>
 </dl>
 <p>Calculate the matrix of partial derivatives of the pitch, roll and thrust. w.r.t. the NED accelerations for YXZ eulers ddx = G*[dtheta,dphi,dT] </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00306">306</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00331">331</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="mesonh__atmosphere_8py_source.html#l00046">mesonh.mesonh_atmosphere::T</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -489,7 +494,7 @@ Variables</h2></td></tr>
 
 <p>Call upon entering indi guidance. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00134">134</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00159">159</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00222">guidance_h_mode_changed()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -525,7 +530,7 @@ Variables</h2></td></tr>
 
 <p>Init function. </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00125">125</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00146">146</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 </div>
 </div>
@@ -556,11 +561,11 @@ Variables</h2></td></tr>
 <p>Low pass the accelerometer measurements to remove noise from vibrations. </p>
 <p>The roll and pitch also need to be filtered to synchronize them with the acceleration </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00288">288</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00313">313</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00100">filt_accel_ned</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi_8c_source.html#l00102">pitch_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00101">roll_filt</a>, <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00101">filt_accel_ned</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="guidance__indi_8c_source.html#l00103">pitch_filt</a>, <a class="el" href="guidance__indi_8c_source.html#l00102">roll_filt</a>, <a class="el" href="state_8h_source.html#l01038">stateGetAccelNed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -618,7 +623,7 @@ Variables</h2></td></tr>
 </dl>
 <p>main indi guidance function </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00154">154</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00179">179</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00579">guidance_h_from_nav()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00688">guidance_h_guided_run()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -633,6 +638,59 @@ Variables</h2></td></tr>
 <area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control." alt="" coords="408,56,583,83"/>
 <area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,31,360,57"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,31,188,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe0973163d037300cb8ea5f26a18046f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe0973163d037300cb8ea5f26a18046f">&#9670;&nbsp;</a></span>send_indi_guidance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_indi_guidance </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00125">125</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+
+<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00108">control_increment</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="guidance__indi_8c_source.html#l00101">filt_accel_ned</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="guidance__indi_8c_source.html#l00077">sp_accel</a>, <a class="el" href="guidance__indi_8c_source.html#l00076">speed_sp</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00146">guidance_indi_init()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="guidance__indi_8c_afe0973163d037300cb8ea5f26a18046f_icgraph.png" border="0" usemap="#guidance__indi_8c_afe0973163d037300cb8ea5f26a18046f_icgraph" alt=""/></div>
+<map name="guidance__indi_8c_afe0973163d037300cb8ea5f26a18046f_icgraph" id="guidance__indi_8c_afe0973163d037300cb8ea5f26a18046f_icgraph">
+<area shape="rect" title=" " alt="" coords="193,5,344,32"/>
+<area shape="rect" href="guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603" title="Init function." alt="" coords="5,5,145,32"/>
 </map>
 </div>
 
@@ -653,7 +711,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00070">70</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00125">guidance_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00146">guidance_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -669,9 +727,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00107">107</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00108">108</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00125">send_indi_guidance()</a>.</p>
 
 </div>
 </div>
@@ -687,9 +745,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00100">100</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00101">101</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00288">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00313">guidance_indi_propagate_filters()</a>, <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00125">send_indi_guidance()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +763,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00109">109</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00110">110</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>.</p>
 
 </div>
 </div>
@@ -723,9 +781,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00105">105</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00106">106</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -741,9 +799,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00106">106</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00107">107</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -759,9 +817,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00115">115</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00116">116</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -777,9 +835,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00110">110</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00111">111</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -797,7 +855,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00058">58</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -815,7 +873,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00064">64</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -833,7 +891,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00072">72</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00363">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00388">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -851,7 +909,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00073">73</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00363">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00388">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -869,7 +927,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00074">74</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00363">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00388">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -885,9 +943,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00102">102</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00103">103</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00288">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00313">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -903,9 +961,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00101">101</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00102">102</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00288">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00313">guidance_indi_propagate_filters()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -921,9 +979,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00077">77</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00125">send_indi_guidance()</a>.</p>
+
+</div>
+</div>
+<a id="a60ff4d7566b9d5b7e9ca4485f6c56d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ff4d7566b9d5b7e9ca4485f6c56d71">&#9670;&nbsp;</a></span>speed_sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> speed_sp = {0.0, 0.0, 0.0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00076">76</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>, <a class="el" href="orange__avoider__guided_8c_source.html#l00116">orange_avoider_guided_periodic()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00651">read_rc_setpoint_speed_i()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00125">send_indi_guidance()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +1015,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00099">99</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00100">100</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>.</p>
 
 </div>
 </div>
@@ -957,9 +1033,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00103">103</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00104">104</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +1051,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00116">116</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00117">117</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00134">guidance_indi_enter()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -993,9 +1069,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00112">112</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00113">113</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00363">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00388">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1087,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00113">113</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00114">114</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00363">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi_8c_source.html#l00388">accel_sp_cb()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1099,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi_8c.html">guidance_indi.c</a></li>
-    <li class="footer">Generated on Sat Feb 19 2022 20:55:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Feb 25 2022 14:42:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX121 =
 {
+"module__humid_hih.html#module_load_example__humid_hih":[1,262,0],
+"module__humid_hih.html#module_xml__humid_hih":[1,262,1,0],
 "module__humid_htm_b71.html":[1,263],
 "module__humid_htm_b71.html#configuration__humid_htm_b71":[1,263,1],
 "module__humid_htm_b71.html#functions__humid_htm_b71":[1,263,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "module__imu_temp_ctrl.html#functions__imu_temp_ctrl":[1,205,2],
 "module__imu_temp_ctrl.html#module_load_example__imu_temp_ctrl":[1,205,0],
 "module__imu_temp_ctrl.html#module_xml__imu_temp_ctrl":[1,205,2,0],
-"module__imu_um6.html":[1,202],
-"module__imu_um6.html#autoloads__imu_um6":[1,202,2],
-"module__imu_um6.html#configuration__imu_um6":[1,202,1]
+"module__imu_um6.html":[1,202]
 };
