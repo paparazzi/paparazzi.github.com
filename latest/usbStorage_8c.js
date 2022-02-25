@@ -1,5 +1,6 @@
 var usbStorage_8c =
 [
+    [ "SDLOG_USB_VBUS_BOOT", "usbStorage_8c.html#a5b3b8bb0c047783b16eb61832ebb76d3", null ],
     [ "THD_WORKING_AREA", "usbStorage_8c.html#a371ec4479045904115b76edead655c0e", null ],
     [ "thdUsbStorage", "usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45", null ],
     [ "usbActivity", "usbStorage_8c.html#a61324eacdf529369618ac16356918c47", null ],

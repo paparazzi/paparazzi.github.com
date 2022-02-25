@@ -1,5 +1,6 @@
 var NAVTREEINDEX203 =
 {
+"video__cam__ctrl_8h.html#a310b6b4208930b49883ed0abccce0e87":[12,0,1,0,6,18,19,1],
 "video__cam__ctrl_8h.html#ad98a8a746444240334dd83a35c6cde80":[12,0,1,0,6,18,19,0],
 "video__cam__ctrl_8h_source.html":[12,0,1,0,6,18,19],
 "video__capture_8c.html":[12,0,1,0,6,11,40],
@@ -185,12 +186,12 @@ var NAVTREEINDEX203 =
 "vl53l1__platform_8h.html#adad89adbfd623ab80104043eba3c36db":[12,0,1,0,7,121,6],
 "vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,121,0,0,1],
 "vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,121,1,1],
-"vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,121,0,0,0],
 "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,121,1,0],
+"vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,121,0,0,0],
 "vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb":[12,0,1,0,7,121,3],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t":[12,0,1,0,7,121,0],
-"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,121,1],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,121,0,0],
+"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,121,1],
 "vl53l1__platform_8h_source.html":[12,0,1,0,7,121],
 "vl53l1__types_8h.html":[12,0,1,0,7,122],
 "vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30":[12,0,1,0,7,122,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX203 =
 "vl53l1x__api_8c.html#ae8c0b2a86192d524f44c8633c3a1a06f":[12,0,1,0,7,123,26],
 "vl53l1x__api_8c.html#aea03678f2d93224975c90e79ab210bb2":[12,0,1,0,7,123,6],
 "vl53l1x__api_8c.html#aed0cf6b93415357bbbdded54c5d13a00":[12,0,1,0,7,123,29],
-"vl53l1x__api_8c.html#af07ceb7e716ebd6bcbd6b7e5aab48229":[12,0,1,0,7,123,11],
-"vl53l1x__api_8c.html#af36478a58eb8f029df317a4b5e6ee74e":[12,0,1,0,7,123,9]
+"vl53l1x__api_8c.html#af07ceb7e716ebd6bcbd6b7e5aab48229":[12,0,1,0,7,123,11]
 };
