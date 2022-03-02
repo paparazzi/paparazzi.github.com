@@ -1,7 +1,5 @@
 var NAVTREEINDEX184 =
 {
-"stabilization__attitude__ref__euler__float_8c.html#ae7e67a9910eea60b9d31f028b339f23b":[12,0,1,0,3,2,1,24,1],
-"stabilization__attitude__ref__euler__float_8c_source.html":[12,0,1,0,3,2,1,24],
 "stabilization__attitude__ref__euler__float_8h.html":[12,0,1,0,3,2,1,25],
 "stabilization__attitude__ref__euler__float_8h.html#a1d8a3693f4b52e1b13953951b893c4e8":[12,0,1,0,3,2,1,25,1,3],
 "stabilization__attitude__ref__euler__float_8h.html#a32c95c4607ede69821b52fb4f1fb77c1":[12,0,1,0,3,2,1,25,1,0],
@@ -91,8 +89,8 @@ var NAVTREEINDEX184 =
 "stabilization__attitude__ref__quat__float_8h.html#a57167f229895fc447e48745902813cde":[12,0,1,0,3,2,1,30,2],
 "stabilization__attitude__ref__quat__float_8h.html#a6246617981d4269af34291dafdd9f1e3":[12,0,1,0,3,2,1,30,12],
 "stabilization__attitude__ref__quat__float_8h.html#a62d305e55fd4d335266cf18cb5af6525":[12,0,1,0,3,2,1,30,4],
-"stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,25,0,1],
 "stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,30,0,1],
+"stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,25,0,1],
 "stabilization__attitude__ref__quat__float_8h.html#a773a37e03a3c43043d6b051b8d17cd08":[12,0,1,0,3,2,1,30,1,4],
 "stabilization__attitude__ref__quat__float_8h.html#a7db3c49e65e9d2d4d273b1eaf4a7243b":[12,0,1,0,3,2,1,30,3],
 "stabilization__attitude__ref__quat__float_8h.html#a8ecae63302893cfddabac6f3ac1d3aeb":[12,0,1,0,3,2,1,30,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX184 =
 "stabilization__indi_8c.html#afce24724cf3afefacb13f024ffeabb1e":[12,0,1,0,3,2,1,33,59],
 "stabilization__indi_8c_source.html":[12,0,1,0,3,2,1,33],
 "stabilization__indi_8h.html":[12,0,1,0,3,2,1,34],
-"stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5":[12,0,1,0,3,2,1,34,6]
+"stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5":[12,0,1,0,3,2,1,34,6],
+"stabilization__indi_8h.html#a121fd732c65156adade05ffb27fbaf52":[12,0,1,0,3,2,1,34,3],
+"stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a":[12,0,1,0,3,2,1,34,11]
 };

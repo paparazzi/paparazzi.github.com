@@ -1,7 +1,5 @@
 var NAVTREEINDEX45 =
 {
-"digital__cam_2catia_2protocol_8h.html#a6f888213f495a3883b3638d9b4038c94":[12,0,1,0,6,18,0,4,9],
-"digital__cam_2catia_2protocol_8h.html#a6fd8c7c2c92e8dd110bf60fed5305eaf":[12,0,1,0,6,18,0,4,20],
 "digital__cam_2catia_2protocol_8h.html#a750a3276f0cf15f2bf74ef59b8969f94":[12,0,1,0,6,18,0,4,3,3],
 "digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,18,0,4,1,0,1],
 "digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,18,0,4,2,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX45 =
 "dir_fc0ab19c3a6e052df412b06c0603facb.html":[12,0,1,0,6,26],
 "dir_fc6475eb39ea0144fb6697b809fd11a9.html":[12,0,1,0,0],
 "dir_fcd55c2d9795129c53a601ffc56fe50e.html":[12,0,1,0,6,35],
-"direct__memory__logger_8c.html":[12,0,1,0,6,41,1]
+"direct__memory__logger_8c.html":[12,0,1,0,6,41,1],
+"direct__memory__logger_8c.html#a0850bb638c9b22f96ceb0120c2341794":[12,0,1,0,6,41,1,5],
+"direct__memory__logger_8c.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f":[12,0,1,0,6,41,1,2]
 };

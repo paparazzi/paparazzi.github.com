@@ -1,7 +1,5 @@
 var NAVTREEINDEX160 =
 {
-"px4flow_8h.html#afe7febf729c1c7ac8e239876a830a3fc":[12,0,1,0,6,48,3,1,0],
-"px4flow_8h.html#structmavlink__heartbeat":[12,0,1,0,6,48,3,2],
 "px4flow_8h.html#structmavlink__optical__flow":[12,0,1,0,6,48,3,0],
 "px4flow_8h.html#structmavlink__optical__flow__rad":[12,0,1,0,6,48,3,1],
 "px4flow_8h_source.html":[12,0,1,0,6,48,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX160 =
 "px4fmu_2chibios_2v2_84_2board_8h.html#ad27dd2006e045ab78fc41052ec582d43":[12,0,1,0,1,21,0,0,1,95],
 "px4fmu_2chibios_2v2_84_2board_8h.html#ad2aa2755e250074295573801fe54cf9a":[12,0,1,0,1,21,0,0,1,26],
 "px4fmu_2chibios_2v2_84_2board_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,21,0,0,1,7],
-"px4fmu_2chibios_2v2_84_2board_8h.html#ad66f72305397b24d3732a5f47a89ed55":[12,0,1,0,1,21,0,0,1,160]
+"px4fmu_2chibios_2v2_84_2board_8h.html#ad66f72305397b24d3732a5f47a89ed55":[12,0,1,0,1,21,0,0,1,160],
+"px4fmu_2chibios_2v2_84_2board_8h.html#adbfad33fc072d86908d2fe56b90b4af7":[12,0,1,0,1,21,0,0,1,134],
+"px4fmu_2chibios_2v2_84_2board_8h.html#adca9740b51ca9f7681d3c3f585a57836":[12,0,1,0,1,21,0,0,1,83]
 };

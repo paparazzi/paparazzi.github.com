@@ -1,7 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"bmp280__regs_8h.html#af93a8a4abb4bb1039e7106fac7ef3130":[12,0,1,0,7,27,54],
-"bmp280__regs_8h.html#afa20056399b1c28caed0fdbda33a7803":[12,0,1,0,7,27,0,5],
 "bmp280__regs_8h.html#afb4f2547685f44c7c4847bf7b9e63f2e":[12,0,1,0,7,27,49],
 "bmp280__regs_8h.html#afcc7ce11f38e10e85066c8ac1447cb2c":[12,0,1,0,7,27,65],
 "bmp280__regs_8h.html#aff9b083a6822be0ef330fbf345212e92":[12,0,1,0,7,27,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX24 =
 "boards_2disco_2actuators_8h.html#afaa9f697f15948e9f99da2e8a1e4840a":[12,0,1,0,1,5,1,16],
 "boards_2disco_2actuators_8h.html#structActuatorsDisco":[12,0,1,0,1,5,1,0],
 "boards_2disco_2actuators_8h_source.html":[12,0,1,0,1,5,1],
-"boards_2swing_2actuators_8c.html":[12,0,1,0,1,22,0]
+"boards_2swing_2actuators_8c.html":[12,0,1,0,1,22,0],
+"boards_2swing_2actuators_8c.html#a0ba1014f38129f84a04e818b6a2e3091":[12,0,1,0,1,22,0,7],
+"boards_2swing_2actuators_8c.html#a11abeb49ede9acf91643dacc131579cd":[12,0,1,0,1,22,0,16]
 };

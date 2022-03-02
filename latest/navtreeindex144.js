@@ -1,7 +1,5 @@
 var NAVTREEINDEX144 =
 {
-"nps__sensor__temperature_8h.html#a9ce30fd2c828197a6c272aa00f2855a9":[12,0,1,1,1,48,0,0],
-"nps__sensor__temperature_8h.html#aee4d4e7e3ba9ca4fbebd71604870ec4d":[12,0,1,1,1,48,0,3],
 "nps__sensor__temperature_8h.html#structNpsSensorTemperature":[12,0,1,1,1,48,0],
 "nps__sensor__temperature_8h_source.html":[12,0,1,1,1,48],
 "nps__sensors_8c.html":[12,0,1,1,1,49],
@@ -249,5 +247,7 @@ var NAVTREEINDEX144 =
 "nucleo144__f767zi_8h.html#ada253c26021992bf094cc1ca313e5039":[12,0,1,0,1,18,0,3,154],
 "nucleo144__f767zi_8h.html#adca9740b51ca9f7681d3c3f585a57836":[12,0,1,0,1,18,0,3,99],
 "nucleo144__f767zi_8h.html#add2d323f8eb544f1ab84762f94e44bd4":[12,0,1,0,1,18,0,3,56],
-"nucleo144__f767zi_8h.html#add4f03b6c5c9bcabeba314491a310346":[12,0,1,0,1,18,0,3,10]
+"nucleo144__f767zi_8h.html#add4f03b6c5c9bcabeba314491a310346":[12,0,1,0,1,18,0,3,10],
+"nucleo144__f767zi_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b":[12,0,1,0,1,18,0,3,32],
+"nucleo144__f767zi_8h.html#adfaeefbfc9ae1699e43972664d02c72c":[12,0,1,0,1,18,0,3,194]
 };

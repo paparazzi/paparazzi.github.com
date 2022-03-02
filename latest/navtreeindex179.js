@@ -1,7 +1,5 @@
 var NAVTREEINDEX179 =
 {
-"shell__arch_8c.html#a478c47dc57833d570ee21412e97c11c0":[12,0,1,0,0,0,1,1,3,5],
-"shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491":[12,0,1,0,0,0,1,1,3,2],
 "shell__arch_8c.html#ae96cb88b7db05439ce2524ce5c571002":[12,0,1,0,0,0,1,1,3,0],
 "shell__arch_8c_source.html":[12,0,1,0,0,0,1,1,3],
 "shell__arch_8h.html":[12,0,1,0,0,0,1,1,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX179 =
 "sim_2modules_2radio__control_2ppm__arch_8c.html":[12,0,1,0,0,2,1,4,0],
 "sim_2modules_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851":[12,0,1,0,0,2,1,4,0,2],
 "sim_2modules_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129":[12,0,1,0,0,2,1,4,0,0],
-"sim_2modules_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce":[12,0,1,0,0,2,1,4,0,1]
+"sim_2modules_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce":[12,0,1,0,0,2,1,4,0,1],
+"sim_2modules_2radio__control_2ppm__arch_8c_source.html":[12,0,1,0,0,2,1,4,0],
+"sim_2modules_2radio__control_2ppm__arch_8h.html":[12,0,1,0,0,2,1,4,1]
 };

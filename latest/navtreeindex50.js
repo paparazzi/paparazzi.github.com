@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea132c9c02a39a3374880df9c97213e32d":[12,0,1,0,0,0,1,0,5,18,12],
-"esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea15e87ef34d6d2a5982daf4109dd48a64":[12,0,1,0,0,0,1,0,5,18,23],
 "esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea194496df21ad800df83241e87c9167df":[12,0,1,0,0,0,1,0,5,18,17],
 "esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea1f5ad80d7388d466629ba6ce885d2c8c":[12,0,1,0,0,0,1,0,5,18,18],
 "esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdea20b43b803dca25c31df35a92e9d6d4b5":[12,0,1,0,0,0,1,0,5,18,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "fixedwing_2autopilot__firmware_8h.html":[12,0,1,0,3,1,4],
 "fixedwing_2autopilot__firmware_8h.html#a02c48fb8a64a9976f9e9fb9436ec2ad9":[12,0,1,0,3,1,4,1],
 "fixedwing_2autopilot__firmware_8h.html#a17ef68647a4f71cd1d0b379388cf440f":[12,0,1,0,3,1,4,4],
-"fixedwing_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57":[12,0,1,0,3,1,4,5]
+"fixedwing_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57":[12,0,1,0,3,1,4,5],
+"fixedwing_2autopilot__firmware_8h.html#a464bd918cf7f5953d3bd2800b2156eff":[12,0,1,0,3,1,4,2],
+"fixedwing_2autopilot__firmware_8h.html#a4b46ee9ade673c44f54f4ad3497c16b9":[12,0,1,0,3,1,4,9]
 };

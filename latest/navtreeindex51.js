@@ -1,7 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"fixedwing_2autopilot__firmware_8h.html#a464bd918cf7f5953d3bd2800b2156eff":[12,0,1,0,3,1,4,2],
-"fixedwing_2autopilot__firmware_8h.html#a4b46ee9ade673c44f54f4ad3497c16b9":[12,0,1,0,3,1,4,9],
 "fixedwing_2autopilot__firmware_8h.html#a63d6feb22864c4c3fcc59893e2671609":[12,0,1,0,3,1,4,0],
 "fixedwing_2autopilot__firmware_8h.html#a7ea379002f6ec803be3f49e0993dd63a":[12,0,1,0,3,1,4,3],
 "fixedwing_2autopilot__firmware_8h.html#a7eac6acc6dec1056989fbbc5d65b85b9":[12,0,1,0,3,1,4,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX51 =
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a02ae04f0f1bbe7588572e87e3dadb381":[12,0,1,0,3,1,1,3,1],
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a134ad933d69b7de8c8142a698d231864":[12,0,1,0,3,1,1,3,17],
 "fixedwing_2stabilization_2stabilization__attitude_8h.html#a17a99d4b8497a414130bab98ce903361":[12,0,1,0,3,1,1,3,13],
-"fixedwing_2stabilization_2stabilization__attitude_8h.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,3,6]
+"fixedwing_2stabilization_2stabilization__attitude_8h.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,3,6],
+"fixedwing_2stabilization_2stabilization__attitude_8h.html#a32ff0f8ef82c3d882051a3b504cb2f51":[12,0,1,0,3,1,1,3,20],
+"fixedwing_2stabilization_2stabilization__attitude_8h.html#a36b4caa0eb30ecfb44d54f83ad1ada2a":[12,0,1,0,3,1,1,3,19]
 };

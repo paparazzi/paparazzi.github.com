@@ -1,7 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__stereocam_nav_line_avoid.html":[1,401],
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,401,1],
 "module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,401,2],
 "module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,401,0],
 "module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,401,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX125 =
 "module__wind_estimator.html#functions__wind_estimator":[1,279,1],
 "module__wind_estimator.html#module_load_example__wind_estimator":[1,279,0],
 "module__wind_estimator.html#module_xml__wind_estimator":[1,279,1,0],
-"module__wind_gfi.html":[1,280]
+"module__wind_gfi.html":[1,280],
+"module__wind_gfi.html#functions__wind_gfi":[1,280,1],
+"module__wind_gfi.html#module_load_example__wind_gfi":[1,280,0]
 };

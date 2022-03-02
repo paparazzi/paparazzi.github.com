@@ -1,7 +1,5 @@
 var NAVTREEINDEX143 =
 {
-"nps__radio__control_8h.html#a82def3d691173a9c586ef6aab8b7e45d":[12,0,1,1,1,22,1],
-"nps__radio__control_8h.html#a83a4d33ef19726aa050c1e3698a6e4a9":[12,0,1,1,1,22,0,1],
 "nps__radio__control_8h.html#a950afc2360be53f778a66595f4682206":[12,0,1,1,1,22,2],
 "nps__radio__control_8h.html#a9f81ef6c0e50462c093df6631fc0a3ce":[12,0,1,1,1,22,0,7],
 "nps__radio__control_8h.html#ab5a5474c2a7f030e4da8c4e93e7c5cc4":[12,0,1,1,1,22,0,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX143 =
 "nps__sensor__temperature_8h.html#a025fded3d8708f13a3a8eb19e300a0bd":[12,0,1,1,1,48,1],
 "nps__sensor__temperature_8h.html#a2cc7545fa0e982b2d55d0ff98a1db081":[12,0,1,1,1,48,0,2],
 "nps__sensor__temperature_8h.html#a606b03894e27a6ad81bdd3394ea33843":[12,0,1,1,1,48,0,1],
-"nps__sensor__temperature_8h.html#a9b3050705f61f467495ad96d989afd0c":[12,0,1,1,1,48,2]
+"nps__sensor__temperature_8h.html#a9b3050705f61f467495ad96d989afd0c":[12,0,1,1,1,48,2],
+"nps__sensor__temperature_8h.html#a9ce30fd2c828197a6c272aa00f2855a9":[12,0,1,1,1,48,0,0],
+"nps__sensor__temperature_8h.html#aee4d4e7e3ba9ca4fbebd71604870ec4d":[12,0,1,1,1,48,0,3]
 };

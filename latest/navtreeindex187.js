@@ -1,7 +1,5 @@
 var NAVTREEINDEX187 =
 {
-"stm32_2modules_2core_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9":[12,0,1,0,0,3,1,1,0,3],
-"stm32_2modules_2core_2settings__arch_8c.html#ab007814607ae9319798cb0ee4462d5c4":[12,0,1,0,0,3,1,1,0,9],
 "stm32_2modules_2core_2settings__arch_8c.html#aed1e92d83a4afdda1a3e9cc7a7a779f0":[12,0,1,0,0,3,1,1,0,0,2],
 "stm32_2modules_2core_2settings__arch_8c.html#af33c1f2139e72266f8cf1e4ebca3925f":[12,0,1,0,0,3,1,1,0,0,1],
 "stm32_2modules_2core_2settings__arch_8c.html#structFlashInfo":[12,0,1,0,0,3,1,1,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX187 =
 "sys__id__chirp_8c.html#a55a00756598af234fef88aa923bf2ddc":[12,0,1,0,6,66,6,11],
 "sys__id__chirp_8c.html#a65ffb4f327349e758106f76d0dd19d46":[12,0,1,0,6,66,6,2],
 "sys__id__chirp_8c.html#a6c0f4cf3749aaaca9b54f3c6f98766f4":[12,0,1,0,6,66,6,30],
-"sys__id__chirp_8c.html#a6ebafc065526c16bc690eecab1bd7283":[12,0,1,0,6,66,6,20]
+"sys__id__chirp_8c.html#a6ebafc065526c16bc690eecab1bd7283":[12,0,1,0,6,66,6,20],
+"sys__id__chirp_8c.html#a7a6c12c89f553927efebc882475406ac":[12,0,1,0,6,66,6,16],
+"sys__id__chirp_8c.html#a7c8f3a129f866d16f5bad8a592331fd8":[12,0,1,0,6,66,6,18]
 };

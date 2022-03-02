@@ -1,7 +1,5 @@
 var NAVTREEINDEX185 =
 {
-"stabilization__indi_8h.html#a121fd732c65156adade05ffb27fbaf52":[12,0,1,0,3,2,1,34,3],
-"stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a":[12,0,1,0,3,2,1,34,11],
 "stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f":[12,0,1,0,3,2,1,34,13],
 "stabilization__indi_8h.html#a2d7051eac973a8507897f6753deaf818":[12,0,1,0,3,2,1,34,8],
 "stabilization__indi_8h.html#a32497fd2d2c56c87a83bddb1f7b62fa8":[12,0,1,0,3,2,1,34,2],
@@ -68,12 +66,12 @@ var NAVTREEINDEX185 =
 "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20":[12,0,1,0,3,2,1,36,2,13],
 "stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1":[12,0,1,0,3,2,1,36,1,5],
 "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4":[12,0,1,0,3,2,1,36,2,14],
-"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,1,36,0,1],
 "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,1,34,0,1],
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,1,36,0,1],
 "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,1,36,2,1],
 "stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,1,36,1,4],
-"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,1,36,0,0],
 "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,1,34,0,0],
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,1,36,0,0],
 "stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b":[12,0,1,0,3,2,1,36,5],
 "stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e":[12,0,1,0,3,2,1,36,1,2],
 "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df":[12,0,1,0,3,2,1,36,2,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX185 =
 "stereocam__droplet_8h.html#a2f6691e10b1cee8d874cecc9d358f11d":[12,0,1,0,6,64,0,1,0],
 "stereocam__droplet_8h.html#a304b77dceeec4285bad836b9bbced42d":[12,0,1,0,6,64,0,1,1],
 "stereocam__droplet_8h_source.html":[12,0,1,0,6,64,0,1],
-"stm32_2led__hw_8c.html":[12,0,1,0,0,3,3]
+"stm32_2led__hw_8c.html":[12,0,1,0,0,3,3],
+"stm32_2led__hw_8c_source.html":[12,0,1,0,0,3,3],
+"stm32_2led__hw_8h.html":[12,0,1,0,0,3,4]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX154 =
 {
-"pano__unwrap_8c.html#a0a6298fb82bef927b8088951c386f833":[12,0,1,0,6,50,0,24],
-"pano__unwrap_8c.html#a1aaf0c100b08b53483cf0a82696da815":[12,0,1,0,6,50,0,0,3],
 "pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6":[12,0,1,0,6,50,0,27],
 "pano__unwrap_8c.html#a208ed943fd98c679def4a5048c15669e":[12,0,1,0,6,50,0,3],
 "pano__unwrap_8c.html#a2f6e062ec6e43faedeef9174f29eb518":[12,0,1,0,6,50,0,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#IR_SENSORS":[2,0,6],
 "paparazzi_messages.html#JEVOIS":[2,0,78],
 "paparazzi_messages.html#JOYSTICK":[2,2,39],
-"paparazzi_messages.html#JOYSTICK_RAW":[2,1,10]
+"paparazzi_messages.html#JOYSTICK_RAW":[2,1,10],
+"paparazzi_messages.html#JUMP_TO_BLOCK":[2,2,25],
+"paparazzi_messages.html#KEY_EXCHANGE_GCS":[2,1,57]
 };
