@@ -2,9 +2,9 @@ var NAVTREEINDEX68 =
 {
 "group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff":[12,0,1,0,5,16,3],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,0,0,14,14],
+"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,2,0,9,2],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,1,0,11,12],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[9,0,1,29],
-"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,2,0,9,2],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,3,0,11,19],
 "group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,5,16,28],
 "group__spi.html#gafc9125c5764a6749703ae4f1303a16f3":[12,0,1,0,0,0,0,14,8],

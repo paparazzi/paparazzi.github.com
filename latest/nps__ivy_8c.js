@@ -8,6 +8,7 @@ var nps__ivy_8c =
     [ "on_DL_SETTING", "nps__ivy_8c.html#a2bc82ff9c2b6dbda0c4553d05f471632", null ],
     [ "on_WORLD_ENV", "nps__ivy_8c.html#a69dbbcc3e5bb4ed999b59191bc1a348f", null ],
     [ "ap_launch_index", "nps__ivy_8c.html#ab79359b14e25526ea61042f8cb2232c7", null ],
+    [ "ivy_mutex", "nps__ivy_8c.html#a1968774050ccbc364373e5b76b02530f", null ],
     [ "ivyPtr", "nps__ivy_8c.html#a77070846c45266eff23ca490d831c560", null ],
     [ "seq", "nps__ivy_8c.html#a96ef966cdecc2e582959632b5c35eaef", null ],
     [ "th_ivy_main", "nps__ivy_8c.html#a25f104c419aff23ce920ae6a467e9436", null ]

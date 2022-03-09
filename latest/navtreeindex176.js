@@ -1,5 +1,6 @@
 var NAVTREEINDEX176 =
 {
+"rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634":[12,0,1,0,6,60,69,6],
 "rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c":[12,0,1,0,6,60,69,4],
 "rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2":[12,0,1,0,6,60,69,3],
 "rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47":[12,0,1,0,6,60,69,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX176 =
 "sbus__common_8h.html#aed20f5edacb96e4a94728d8e9b1adbb5":[12,0,1,0,6,55,16,0,1],
 "sbus__common_8h.html#afb790236a604cd21678b157b429e16fa":[12,0,1,0,6,55,16,6],
 "sbus__common_8h.html#structSbus":[12,0,1,0,6,55,16,0],
-"sbus__common_8h_source.html":[12,0,1,0,6,55,16],
-"sbus__dual_8c.html":[12,0,1,0,6,55,17]
+"sbus__common_8h_source.html":[12,0,1,0,6,55,16]
 };
