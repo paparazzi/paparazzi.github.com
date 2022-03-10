@@ -89,11 +89,10 @@ $(document).ready(function(){initNavTree('module__intermcu_uart.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Inter-MCU communication over UART</b></p>
-<p>To enable this, please set the "SEPARATE_FBW" configure option to TRUE in your airframe file for both AP and FBW targets</p>
+<p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__intermcu_uart"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_uart&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SEPARATE_FBW&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;INTERMCU_PORT&quot; value=&quot;UARTx&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;INTERMCU_BAUD&quot; value=&quot;B57600&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;FBW_MODE_LED&quot; value=&quot;none|num&quot; /&gt;\n  &#39;</span></div>
@@ -103,8 +102,6 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
-<li><b>name:</b> <code>SEPARATE_FBW</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
- Description: Enable separation between AP and FBW on separated MCU</li>
 <li><b>name:</b> <code>INTERMCU_PORT</code> <b>value:</b> <em>UARTx</em> <br  />
  Description: UART used for inter mcu communication (default: UART2 for FBW, UART5 for AP)</li>
 <li><b>name:</b> <code>INTERMCU_BAUD</code> <b>value:</b> <em>B57600</em> <br  />
@@ -120,6 +117,12 @@ Init Functions</h2>
 <ul>
 <li><a class="el" href="intermcu_8h.html#af5ff84589199efa9195c642a64024b40">intermcu_init()</a></li>
 </ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="intermcu_8h.html#a0013b9991532fad84ca4e2c582c03b34">intermcu_event()</a></li>
+</ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
@@ -130,6 +133,21 @@ Periodic Functions</h2>
  Periodic function automatically starts after init and can't be stopped.</li>
 </ul>
 </li>
+<li><a class="el" href="intermcu__fbw_8c.html#a3310d390d84ed323b5bb1ca7ad0cc7db" title="send fbw status message">intermcu_send_status()</a><ul>
+<li>Frequency in Hz: <em>10</em>.</li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="datalink_functions__intermcu_uart"></a>
+Datalink Functions</h1>
+<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
+<ul>
+<li>on message <b>IMCU_FBW_STATUS</b> call intermcu_parse_IMCU_FBW_STATUS(buf)</li>
+<li>on message <b>IMCU_COMMANDS</b> call intermcu_parse_IMCU_COMMANDS(buf)</li>
+<li>on message <b>IMCU_SPEKTRUM_SOFT_BIND</b> call intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND(buf)</li>
+<li>on message <b>*</b> call intermcu_forward_uplink(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -138,16 +156,15 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="intermcu_8h.html">intermcu.h</a></li>
-<li><a class="el" href="inter__mcu_8h.html">inter_mcu.h</a></li>
+<li><a class="el" href="intermcu__ap_8h.html">intermcu_ap.h</a></li>
+<li><a class="el" href="intermcu__fbw_8h.html">intermcu_fbw.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="link__mcu__usart_8c.html">modules/intermcu/link_mcu_usart.c</a></li>
+<li>pprzlink/src/pprz_transport.c</li>
 <li><a class="el" href="intermcu__fbw_8c.html">modules/intermcu/intermcu_fbw.c</a></li>
 <li><a class="el" href="intermcu__ap_8c.html">modules/intermcu/intermcu_ap.c</a></li>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
-<li>pprzlink/src/pprz_transport.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__intermcu_uart"></a>
 Raw intermcu_uart.xml file:</h2>
@@ -157,78 +174,55 @@ Raw intermcu_uart.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Inter-MCU</span> <span class="keyword">communication</span> <span class="keyword">over</span> <span class="keyword">UART</span></div>
-<div class="line"> </div>
-<div class="line">      <span class="keyword">To</span> <span class="keyword">enable</span> <span class="keyword">this</span>, <span class="keyword">please</span> <span class="keyword">set</span> <span class="keyword">the</span> <span class="stringliteral">&quot;SEPARATE_FBW&quot;</span> <span class="keyword">configure</span> <span class="keyword">option</span> <span class="keyword">to</span> <span class="keyword">TRUE</span></div>
-<div class="line">      <span class="keyword">in</span> <span class="keyword">your</span> <span class="keyword">airframe</span> <span class="keyword">file</span> <span class="keyword">for</span> <span class="keyword">both</span> <span class="keyword">AP</span> <span class="keyword">and</span> <span class="keyword">FBW</span> <span class="keyword">targets</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SEPARATE_FBW&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable separation between AP and FBW on separated MCU&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART used for inter mcu communication (default: UART2 for FBW, UART5 for AP)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B57600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART baud rate&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none|num&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number or &#39;none&#39;&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">intermcu</span>,<span class="keyword">commands</span>,<span class="keyword">radio_control</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>,<span class="keyword">radio_control_intermcu</span>,<span class="keyword">datalink_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">intermcu</span>,<span class="keyword">commands</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu.h&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ROTORCRAFT_FIRMWARE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;inter_mcu.h&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;FIXEDWING_FIRMWARE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_ap.h&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_AP&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_fbw.h&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_periodic()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART2&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(FBW_MODE_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(FBW_MODE_LED),none)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTER_MCU_FBW&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART5&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTER_MCU_AP&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
-<div class="line">      <span class="keyword">ifeq</span> (,$(<span class="keyword">findstring</span> $(<span class="keyword">SEPARATE_FBW</span>),1 <span class="keyword">TRUE</span>))</div>
-<div class="line">      $(<span class="keyword">error</span> <span class="keyword">Using</span> <span class="keyword">intermcu</span> <span class="keyword">via</span> <span class="keyword">UART</span>, <span class="keyword">so</span> <span class="keyword">dual</span> <span class="keyword">mcu</span> <span class="keyword">with</span> <span class="keyword">separate</span> <span class="keyword">fbw.</span> <span class="keyword">Please</span> <span class="keyword">set</span> <span class="keyword">option</span> <span class="stringliteral">&quot;SEPARATE_FBW&quot;</span> <span class="keyword">to</span> <span class="keyword">TRUE.</span></div>
-<div class="line">      <span class="keyword">endif</span></div>
-<div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B57600&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MCU_UART_LINK&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(INTERMCU_PORT_LOWER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(INTERMCU_PORT_UPPER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(INTERMCU_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(INTERMCU_BAUD)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;link_mcu_usart.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line"> </div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_send_status()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;10.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_event()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;IMCU_FBW_STATUS&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_parse_IMCU_FBW_STATUS(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;intermcu&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_AP&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;IMCU_COMMANDS&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_parse_IMCU_COMMANDS(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;intermcu&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;IMCU_SPEKTRUM_SOFT_BIND&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND(buf)&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;intermcu&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;*&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;intermcu_forward_uplink(buf)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(FBW_MODE_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(FBW_MODE_LED),none)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTER_MCU_FBW&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_fbw.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_PORT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;UART3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTER_MCU_AP&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/intermcu/intermcu_ap.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(RADIO_CONTROL_LED),none)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_SECONDARY_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/intermcu/intermcu_ap.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (,$(findstring $(SECONDARY_GPS), imcu))&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SECONDARY_GPS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPS_IMCU&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (,$(findstring $(SECONDARY_GPS), imcu))&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMCU_GPS&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (,$(findstring $(SECONDARY_GPS), imcu))&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_ap.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/radio_control&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B230400&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(INTERMCU_PORT_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(INTERMCU_PORT_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(INTERMCU_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(INTERMCU_BAUD)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(INTERMCU_LINK)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifndef MODEM_PORT&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;intermcu.transport&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifndef MODEM_PORT&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;pprz_transport.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;pprzlink/src&quot;</span>/&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FBW_MODE_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(FBW_MODE_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(FBW_MODE_LED),none)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_FBW&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_fbw.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART1&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_AP&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;intermcu_ap.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART1&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -239,7 +233,7 @@ Raw intermcu_uart.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

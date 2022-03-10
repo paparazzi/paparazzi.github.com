@@ -89,21 +89,46 @@ $(document).ready(function(){initNavTree('module__system_core.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Core system components meta module</b></p>
-<p>Includes: <a class="el" href="sys__time_8h.html#structsys__time">sys_time</a>, commands interfaces</p>
+<p>Includes: <a class="el" href="sys__time_8h.html#structsys__time">sys_time</a>, commands, LED interfaces</p>
 <h1><a class="anchor" id="module_load_example__system_core"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;system_core&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__system_core"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="commands_8c.html#a3e9ed14716fd984977306110fbf28de0">commands_init()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="chibios_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b">LED_PERIODIC()</a><ul>
+<li>Frequency in Hz: <em>50</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="files"></a>
 Files</h1>
+<h2><a class="anchor" id="headers"></a>
+Header Files</h2>
+<p>The following headers are automatically included in modules.h</p>
+<ul>
+<li><a class="el" href="commands_8h.html">commands.h</a></li>
+<li><a class="el" href="led_8h.html">led.h</a></li>
+</ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
 <li><a class="el" href="sys__time_8c.html">mcu_periph/sys_time.c</a></li>
 <li><a class="el" href="commands_8c.html">modules/core/commands.c</a></li>
-<li><a class="el" href="commands_8c.html">modules/core/commands.c</a></li>
-<li><a class="el" href="commands_8c.html">modules/core/commands.c</a></li>
-<li><a class="el" href="commands_8c.html">modules/core/commands.c</a></li>
 <li>arch dependent: mcu_periph/sys_time_arch.c</li>
+<li>arch dependent: ./led_hw.c</li>
+<li>arch dependent: ./led_hw.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__system_core"></a>
 Raw system_core.xml file:</h2>
@@ -114,13 +139,19 @@ Raw system_core.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Core</span> <span class="keyword">system</span> <span class="keyword">components</span> <span class="keyword">meta</span> <span class="keyword">module</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keyword">Includes:</span> <span class="keyword">sys_time</span>, <span class="keyword">commands</span> <span class="keyword">interfaces</span></div>
+<div class="line">      <span class="keyword">Includes:</span> <span class="keyword">sys_time</span>, <span class="keyword">commands</span>, <span class="keyword">LED</span> <span class="keyword">interfaces</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">mcu</span>,<span class="keyword">math</span>,<span class="keyword">state_interface</span>,@<span class="keyword">actuators</span>|@<span class="keyword">intermcu</span>,<span class="keyword">settings</span>|@<span class="keyword">no_settings</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">core</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span>/&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;commands_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;LED_PERIODIC()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;50&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SRC_BOARD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;boards/$(BOARD)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SRC_MODULES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules&quot;</span>/&gt;</div>
@@ -130,7 +161,10 @@ Raw system_core.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(SRC_BOARD)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(SRC_MODULES)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sys_time.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sys_time_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), stm32)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(TARGET), sim)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">flag</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LDFLAGS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;lrt&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), linux)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
 <div class="line"><span class="keyword">VPATH</span> += $(<span class="keyword">PAPARAZZI_HOME</span>)/<span class="keyword">var</span>/<span class="keyword">share</span></div>
@@ -139,17 +173,8 @@ Raw system_core.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|sim|nps|hitl&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(SEPARATE_FBW),0 FALSE))&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;commands.c&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!nps|sim&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_LED&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -160,7 +185,7 @@ Raw system_core.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

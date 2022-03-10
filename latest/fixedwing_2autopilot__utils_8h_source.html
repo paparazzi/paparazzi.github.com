@@ -113,85 +113,83 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__utils_8h_source.
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define AUTOPILOT_UTILS_H</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ad569c2b393bdcd1f9ff531905830c467">   38</a></span>&#160;<span class="preprocessor">#define AP_MODE_OF_PULSE(pprz) \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">  (pprz &gt; THRESHOLD2 ? AP_MODE_AUTO2 : \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">   (pprz &gt; THRESHOLD1 ? AP_MODE_AUTO1 : AP_MODE_MANUAL))</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a7d56ec91e72fa7e7a0ec17604a598791">   44</a></span>&#160;<span class="preprocessor">#define STICK_PUSHED(pprz) (pprz &lt; THRESHOLD1 || pprz &gt; THRESHOLD2)</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">   48</a></span>&#160;<span class="preprocessor">#define FLOAT_OF_PPRZ(pprz, center, travel) ((float)pprz / (float)MAX_PPRZ * travel + center)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a1c2e8ec07daf2aa0b8e54a832ea70139">   52</a></span>&#160;<span class="preprocessor">#define THROTTLE_THRESHOLD_TAKEOFF (pprz_t)(MAX_PPRZ * 0.9)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ac68ed9030b448307d20a265af6f102cf">   56</a></span>&#160;<span class="preprocessor">#define THRESHOLD_MANUAL_PPRZ (MIN_PPRZ / 2)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ac20e76441d7ca028ceda37a41ce688e1">   57</a></span>&#160;<span class="preprocessor">#define THRESHOLD1 THRESHOLD_MANUAL_PPRZ</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">   58</a></span>&#160;<span class="preprocessor">#define THRESHOLD2 (MAX_PPRZ/2)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// COMMAND_ROLL</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">   64</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_ROLL(_roll) { ap_state-&gt;commands[COMMAND_ROLL] = _roll; }</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// COMMAND_PITCH</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">   67</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_PITCH(_pitch) { ap_state-&gt;commands[COMMAND_PITCH] = _pitch; }</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// COMMAND_YAW</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#if H_CTL_YAW_LOOP &amp;&amp; defined COMMAND_YAW</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_YAW(_yaw) { ap_state-&gt;commands[COMMAND_YAW] = _yaw; }</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ad3119f844b56965691d7aec8d79455a5">   73</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_YAW(_yaw) {}</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// COMMAND_THROTTLE</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a0305cc4a85ef535fcea335948d873098">   77</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_THROTTLE(_throttle) { \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  ap_state-&gt;commands[COMMAND_THROTTLE] = _throttle; \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  autopilot.throttle = _throttle; \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// COMMAND_CL</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#if H_CTL_CL_LOOP &amp;&amp; defined COMMAND_CL</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_CL(_cl) { ap_state-&gt;commands[COMMAND_CL] = cl; }</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a158d2581dbc3bac92dcd8c8c924f6fef">   86</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_CL(_cl) {}</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// ROLL setpoint from RADIO</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#adaae9624cb2bc20413ab3689e5c0d2d8">   90</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_ROLL(_roll, _max) { \</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">  _roll = FLOAT_OF_PPRZ(fbw_state-&gt;channels[RADIO_ROLL], 0., _max); \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">// PITCH setpoint from RADIO</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#aad8467ec3ff91883740e6cbeb50a1107">   95</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_PITCH(_pitch, _max) { \</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">  _pitch = FLOAT_OF_PPRZ(fbw_state-&gt;channels[RADIO_PITCH], 0., _max); \</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// PITCH setpoint from RADIO</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if H_CTL_YAW_LOOP &amp;&amp; defined RADIO_YAW</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define AP_SETPOINT_YAW_RATE(_yaw, _max) { \</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">  _yaw = FLOAT_OF_PPRZ(fbw_state-&gt;channels[RADIO_YAW], 0., _max); \</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a906afae9b500e1c1c76e7af775a8f809">  105</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_YAW_RATE(_yaw, _max) {}</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">// THROTTLE setpoint from RADIO</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a45f375d76e6c0adae829e1e848346fa6">  109</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_THROTTLE(_throttle) { \</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">  _throttle = fbw_state-&gt;channels[RADIO_THROTTLE]; \</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ad569c2b393bdcd1f9ff531905830c467">   37</a></span>&#160;<span class="preprocessor">#define AP_MODE_OF_PULSE(pprz) \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">  (pprz &gt; THRESHOLD2 ? AP_MODE_AUTO2 : \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">   (pprz &gt; THRESHOLD1 ? AP_MODE_AUTO1 : AP_MODE_MANUAL))</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a7d56ec91e72fa7e7a0ec17604a598791">   43</a></span>&#160;<span class="preprocessor">#define STICK_PUSHED(pprz) (pprz &lt; THRESHOLD1 || pprz &gt; THRESHOLD2)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">   47</a></span>&#160;<span class="preprocessor">#define FLOAT_OF_PPRZ(pprz, center, travel) ((float)pprz / (float)MAX_PPRZ * travel + center)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a1c2e8ec07daf2aa0b8e54a832ea70139">   51</a></span>&#160;<span class="preprocessor">#define THROTTLE_THRESHOLD_TAKEOFF (pprz_t)(MAX_PPRZ * 0.9)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ac68ed9030b448307d20a265af6f102cf">   55</a></span>&#160;<span class="preprocessor">#define THRESHOLD_MANUAL_PPRZ (MIN_PPRZ / 2)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ac20e76441d7ca028ceda37a41ce688e1">   56</a></span>&#160;<span class="preprocessor">#define THRESHOLD1 THRESHOLD_MANUAL_PPRZ</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">   57</a></span>&#160;<span class="preprocessor">#define THRESHOLD2 (MAX_PPRZ/2)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// COMMAND_ROLL</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">   63</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_ROLL(_roll) { command_set(COMMAND_ROLL, _roll); }</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// COMMAND_PITCH</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">   66</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_PITCH(_pitch) { command_set(COMMAND_PITCH, _pitch); }</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// COMMAND_YAW</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if H_CTL_YAW_LOOP &amp;&amp; defined COMMAND_YAW</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_YAW(_yaw) { command_set(COMMAND_YAW, _yaw); }</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#ad3119f844b56965691d7aec8d79455a5">   72</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_YAW(_yaw) {}</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// COMMAND_THROTTLE</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a0305cc4a85ef535fcea335948d873098">   76</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_THROTTLE(_throttle) { \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">  command_set(COMMAND_THROTTLE, _throttle); \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  autopilot.throttle = _throttle; \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// COMMAND_CL</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if H_CTL_CL_LOOP &amp;&amp; defined COMMAND_CL</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_CL(_cl) { command_set(COMMAND_CL, _cl); }</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a158d2581dbc3bac92dcd8c8c924f6fef">   85</a></span>&#160;<span class="preprocessor">#define AP_COMMAND_SET_CL(_cl) {}</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// ROLL setpoint from RADIO</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#adaae9624cb2bc20413ab3689e5c0d2d8">   89</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_ROLL(_roll, _max) { \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  _roll = FLOAT_OF_PPRZ(radio_control_get(RADIO_ROLL), 0., _max); \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// PITCH setpoint from RADIO</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#aad8467ec3ff91883740e6cbeb50a1107">   94</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_PITCH(_pitch, _max) { \</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">  _pitch = FLOAT_OF_PPRZ(radio_control_get(RADIO_PITCH), 0., _max); \</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// PITCH setpoint from RADIO</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if H_CTL_YAW_LOOP &amp;&amp; defined RADIO_YAW</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define AP_SETPOINT_YAW_RATE(_yaw, _max) { \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  _yaw = FLOAT_OF_PPRZ(radio_control_get(RADIO_YAW), 0., _max); \</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a906afae9b500e1c1c76e7af775a8f809">  104</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_YAW_RATE(_yaw, _max) {}</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">// THROTTLE setpoint from RADIO</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="fixedwing_2autopilot__utils_8h.html#a45f375d76e6c0adae829e1e848346fa6">  108</a></span>&#160;<span class="preprocessor">#define AP_SETPOINT_THROTTLE(_throttle) { \</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">  _throttle = radio_control_get(RADIO_THROTTLE); \</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // AUTOPILOT_UTILS_H</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // AUTOPILOT_UTILS_H</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ainter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot__utils_8h.html">autopilot_utils.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:52 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

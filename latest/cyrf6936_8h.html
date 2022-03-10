@@ -386,7 +386,7 @@ The last send interrupt status. </td></tr>
 
 <p class="reference">References <a class="el" href="cyrf6936_8h_source.html#l00055">Cyrf6936::buffer</a>, <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00056">Cyrf6936::buffer_length</a>, <a class="el" href="cyrf6936_8h_source.html#l00042">CYRF6936_CHAN_SOP_DATA_CRC</a>, <a class="el" href="cyrf6936_8h_source.html#l00041">CYRF6936_DATA_CODE</a>, <a class="el" href="cyrf6936_8h_source.html#l00039">CYRF6936_GET_MFG_ID</a>, <a class="el" href="cyrf6936_8h_source.html#l00038">CYRF6936_IDLE</a>, <a class="el" href="cyrf6936_8h_source.html#l00040">CYRF6936_MULTIWRITE</a>, <a class="el" href="cyrf6936_8c_source.html#l00312">cyrf6936_read_block()</a>, <a class="el" href="cyrf6936_8c_source.html#l00304">cyrf6936_read_register()</a>, <a class="el" href="cyrf6936_8h_source.html#l00043">CYRF6936_RX_IRQ_STATUS_PACKET</a>, <a class="el" href="cyrf6936_8h_source.html#l00044">CYRF6936_SEND</a>, <a class="el" href="cyrf6936_8h_source.html#l00037">CYRF6936_UNINIT</a>, <a class="el" href="cyrf6936_8c_source.html#l00278">cyrf6936_write_block()</a>, <a class="el" href="cyrf6936_8c_source.html#l00270">cyrf6936_write_register()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00032">CYRF_CHANNEL</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00053">CYRF_CRC_SEED_LSB</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00054">CYRF_CRC_SEED_MSB</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00067">CYRF_DATA_CODE</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00069">CYRF_MFG_ID</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00065">CYRF_RX_BUFFER</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00041">CYRF_RX_COUNT</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00039">CYRF_RX_IRQ_STATUS</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00040">CYRF_RX_STATUS</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00066">CYRF_SOP_CODE</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00064">CYRF_TX_BUFFER</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00153">CYRF_TX_CLR</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00034">CYRF_TX_CTRL</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00154">CYRF_TX_GO</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00036">CYRF_TX_IRQ_STATUS</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00033">CYRF_TX_LENGTH</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00148">CYRF_TXC_IRQEN</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00147">CYRF_TXE_IRQEN</a>, <a class="el" href="cyrf6936_8h_source.html#l00059">Cyrf6936::has_irq</a>, <a class="el" href="cyrf6936_8h_source.html#l00052">Cyrf6936::input_buf</a>, <a class="el" href="cyrf6936_8h_source.html#l00060">Cyrf6936::mfg_id</a>, <a class="el" href="cyrf6936_8h_source.html#l00064">Cyrf6936::rx_count</a>, <a class="el" href="cyrf6936_8h_source.html#l00062">Cyrf6936::rx_irq_status</a>, <a class="el" href="cyrf6936_8h_source.html#l00065">Cyrf6936::rx_packet</a>, <a class="el" href="cyrf6936_8h_source.html#l00063">Cyrf6936::rx_status</a>, <a class="el" href="cyrf6936_8h_source.html#l00050">Cyrf6936::spi_t</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00098">SPITransRunning</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, and <a class="el" href="cyrf6936_8h_source.html#l00061">Cyrf6936::tx_irq_status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="superbitrf__rc_8c_source.html#l00052">radio_control_impl_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="superbitrf__rc_8c_source.html#l00058">superbitrf_rc_event()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -409,8 +409,8 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a0b25c82679dcd151cb4eb29986f796c9_icgraph.png" border="0" usemap="#cyrf6936_8h_a0b25c82679dcd151cb4eb29986f796c9_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a0b25c82679dcd151cb4eb29986f796c9_icgraph" id="cyrf6936_8h_a0b25c82679dcd151cb4eb29986f796c9_icgraph">
-<area shape="rect" title="The on event call for the CYRF6936 chip." alt="" coords="196,13,319,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="The on event call for the CYRF6936 chip." alt="" coords="201,5,324,32"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,5,153,32"/>
 </map>
 </div>
 
@@ -491,9 +491,9 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph.png" border="0" usemap="#cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph" id="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph">
-<area shape="rect" title="Initializing the cyrf chip." alt="" coords="385,5,492,32"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="224,5,337,32"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Initialization." alt="" coords="5,5,176,32"/>
+<area shape="rect" title="Initializing the cyrf chip." alt="" coords="347,5,453,32"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="185,5,299,32"/>
+<area shape="rect" href="superbitrf__rc_8h.html#aae510ce05f3f3c15485616154918bad9" title="RC init function." alt="" coords="5,5,137,32"/>
 </map>
 </div>
 
@@ -558,11 +558,11 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a3b40b6f25aa27591a77e570e7bd0de49_icgraph.png" border="0" usemap="#cyrf6936_8h_a3b40b6f25aa27591a77e570e7bd0de49_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a3b40b6f25aa27591a77e570e7bd0de49_icgraph" id="cyrf6936_8h_a3b40b6f25aa27591a77e570e7bd0de49_icgraph">
-<area shape="rect" title="Write to multiple registers one byte." alt="" coords="561,56,721,83"/>
-<area shape="rect" href="cyrf6936_8h.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="384,5,503,32"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="196,56,325,83"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="373,107,513,149"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,49,148,90"/>
+<area shape="rect" title="Write to multiple registers one byte." alt="" coords="567,56,727,83"/>
+<area shape="rect" href="cyrf6936_8h.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="389,5,508,32"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="201,56,331,83"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="379,107,519,149"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,56,153,83"/>
 </map>
 </div>
 
@@ -611,9 +611,9 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a9476a030cd1c1812dd9415f8913c35f6_icgraph.png" border="0" usemap="#cyrf6936_8h_a9476a030cd1c1812dd9415f8913c35f6_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a9476a030cd1c1812dd9415f8913c35f6_icgraph" id="cyrf6936_8h_a9476a030cd1c1812dd9415f8913c35f6_icgraph">
-<area shape="rect" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="373,5,532,47"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="196,13,325,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="379,5,537,47"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="201,13,331,39"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,13,153,39"/>
 </map>
 </div>
 
@@ -678,9 +678,9 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_ab2e2ab2d19b97905d2c9825f65cddfda_icgraph.png" border="0" usemap="#cyrf6936_8h_ab2e2ab2d19b97905d2c9825f65cddfda_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_ab2e2ab2d19b97905d2c9825f65cddfda_icgraph" id="cyrf6936_8h_ab2e2ab2d19b97905d2c9825f65cddfda_icgraph">
-<area shape="rect" title="Send a packet with a certain length." alt="" coords="373,13,491,39"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="196,13,325,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="Send a packet with a certain length." alt="" coords="379,5,496,32"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="201,5,331,32"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,5,153,32"/>
 </map>
 </div>
 
@@ -746,9 +746,9 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a5bd95c0f89a44a38d8fc8b71a8d1b2b3_icgraph.png" border="0" usemap="#cyrf6936_8h_a5bd95c0f89a44a38d8fc8b71a8d1b2b3_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a5bd95c0f89a44a38d8fc8b71a8d1b2b3_icgraph" id="cyrf6936_8h_a5bd95c0f89a44a38d8fc8b71a8d1b2b3_icgraph">
-<area shape="rect" title="Write to one register." alt="" coords="373,13,492,39"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="196,13,325,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="Write to one register." alt="" coords="379,5,497,32"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="201,5,331,32"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,5,153,32"/>
 </map>
 </div>
 
@@ -825,9 +825,9 @@ The last send interrupt status. </td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a5185bf5f551b606637aaba99a2de5934_icgraph.png" border="0" usemap="#cyrf6936_8h_a5185bf5f551b606637aaba99a2de5934_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a5185bf5f551b606637aaba99a2de5934_icgraph" id="cyrf6936_8h_a5185bf5f551b606637aaba99a2de5934_icgraph">
-<area shape="rect" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="373,5,531,47"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="196,13,325,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="379,5,536,47"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="201,13,331,39"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,13,153,39"/>
 </map>
 </div>
 
@@ -839,7 +839,7 @@ The last send interrupt status. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="cyrf6936_8h.html">cyrf6936.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

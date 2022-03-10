@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('dc__shoot__rc_8c_source.html',''); ini
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dc__shoot__rc_8h.html">dc_shoot_rc.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dc_8h.html">dc.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef DC_RADIO_SHOOT</span></div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('dc__shoot__rc_8c_source.html',''); ini
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rd_shoot = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rd_num = 0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> ((rd_shoot == 0) &amp;&amp; (imcu_get_radio(DC_RADIO_SHOOT) &gt; <a class="code" href="dc__shoot__rc_8c.html#a18f246d4a4f22ae6b3ab020ee9312b42">DC_RADIO_SHOOT_THRESHOLD</a>)) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> ((rd_shoot == 0) &amp;&amp; (<a class="code" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a>(DC_RADIO_SHOOT) &gt; <a class="code" href="dc__shoot__rc_8c.html#a18f246d4a4f22ae6b3ab020ee9312b42">DC_RADIO_SHOOT_THRESHOLD</a>)) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a>(<a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    rd_shoot = 1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
@@ -137,11 +137,12 @@ $(document).ready(function(){initNavTree('dc__shoot__rc_8c_source.html',''); ini
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aradio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div></div>
 <div class="ttc" id="adc__shoot__rc_8h_html"><div class="ttname"><a href="dc__shoot__rc_8h.html">dc_shoot_rc.h</a></div></div>
+<div class="ttc" id="aradio__control_8h_html_a912ad5540c93dd124d032ca87dbe1adb"><div class="ttname"><a href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a></div><div class="ttdeci">static pprz_t radio_control_get(uint8_t idx)</div><div class="ttdoc">Get a radio control channel value.</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00094">radio_control.h:94</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="adc__shoot__rc_8c_html_a18f246d4a4f22ae6b3ab020ee9312b42"><div class="ttname"><a href="dc__shoot__rc_8c.html#a18f246d4a4f22ae6b3ab020ee9312b42">DC_RADIO_SHOOT_THRESHOLD</a></div><div class="ttdeci">#define DC_RADIO_SHOOT_THRESHOLD</div><div class="ttdef"><b>Definition:</b> <a href="dc__shoot__rc_8c_source.html#l00037">dc_shoot_rc.c:37</a></div></div>
 <div class="ttc" id="adc__shoot__rc_8c_html_a07c50c1495b2a608715da52b87501ff2"><div class="ttname"><a href="dc__shoot__rc_8c.html#a07c50c1495b2a608715da52b87501ff2">dc_shoot_rc_periodic</a></div><div class="ttdeci">void dc_shoot_rc_periodic(void)</div><div class="ttdoc">periodic 4Hz function</div><div class="ttdef"><b>Definition:</b> <a href="dc__shoot__rc_8c_source.html#l00039">dc_shoot_rc.c:39</a></div></div>
-<div class="ttc" id="ainter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div></div>
 <div class="ttc" id="adc_8h_html"><div class="ttname"><a href="dc_8h.html">dc.h</a></div></div>
 <div class="ttc" id="aatmega__i2c__cam__ctrl_8c_html_a833f16388be36136f5d7d173200d5e95"><div class="ttname"><a href="atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a></div><div class="ttdeci">void dc_send_command(uint8_t cmd)</div><div class="ttdoc">Send Command To Camera.</div><div class="ttdef"><b>Definition:</b> <a href="atmega__i2c__cam__ctrl_8c_source.html#l00041">atmega_i2c_cam_ctrl.c:41</a></div></div>
 <div class="ttc" id="adc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a></div><div class="ttdeci">@ DC_SHOOT</div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00100">dc.h:100</a></div></div>
@@ -149,7 +150,7 @@ $(document).ready(function(){initNavTree('dc__shoot__rc_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dc__shoot__rc_8c.html">dc_shoot_rc.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:53 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

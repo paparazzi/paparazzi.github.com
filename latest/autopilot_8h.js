@@ -24,6 +24,7 @@ var autopilot_8h =
     [ "autopilot_check_in_flight", "autopilot_8h.html#a8a5717e6ffce00d9926abc6c56336852", null ],
     [ "autopilot_clear_settings", "autopilot_8h.html#addcec3e042ad2a7a6a17e6ffa506b7ba", null ],
     [ "autopilot_event", "autopilot_8h.html#a0af571252a9b9c534b5fe24a4ef4d20d", null ],
+    [ "autopilot_failsafe_checks", "autopilot_8h.html#ade282c0ec62910f4a190c8146d9d34c7", null ],
     [ "autopilot_get_mode", "autopilot_8h.html#a23af2ac2d4bcb9b71c869a409de61cc4", null ],
     [ "autopilot_get_motors_on", "autopilot_8h.html#a6b52f0f9cd2cbf420a77029513ea6f35", null ],
     [ "autopilot_in_flight", "autopilot_8h.html#aa0968d46fbee148348a7e062afac69a6", null ],

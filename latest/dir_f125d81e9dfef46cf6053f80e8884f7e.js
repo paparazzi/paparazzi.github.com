@@ -1,8 +1,6 @@
 var dir_f125d81e9dfef46cf6053f80e8884f7e =
 [
     [ "cc2500_frsky", "dir_9b12c12a31fa858d41318e52745a88a3.html", "dir_9b12c12a31fa858d41318e52745a88a3" ],
-    [ "dummy.c", "dummy_8c.html", "dummy_8c" ],
-    [ "dummy.h", "dummy_8h.html", "dummy_8h" ],
     [ "hott.c", "radio__control_2hott_8c.html", "radio__control_2hott_8c" ],
     [ "hott.h", "radio__control_2hott_8h.html", "radio__control_2hott_8h" ],
     [ "hott_common.c", "hott__common_8c.html", "hott__common_8c" ],
@@ -13,6 +11,8 @@ var dir_f125d81e9dfef46cf6053f80e8884f7e =
     [ "radio_control.h", "radio__control_8h.html", "radio__control_8h" ],
     [ "rc_datalink.c", "modules_2radio__control_2rc__datalink_8c.html", "modules_2radio__control_2rc__datalink_8c" ],
     [ "rc_datalink.h", "rc__datalink_8h.html", "rc__datalink_8h" ],
+    [ "rc_intermcu.c", "rc__intermcu_8c.html", "rc__intermcu_8c" ],
+    [ "rc_intermcu.h", "rc__intermcu_8h.html", "rc__intermcu_8h" ],
     [ "sbus.c", "sbus_8c.html", "sbus_8c" ],
     [ "sbus.h", "sbus_8h.html", "sbus_8h" ],
     [ "sbus_common.c", "sbus__common_8c.html", "sbus__common_8c" ],

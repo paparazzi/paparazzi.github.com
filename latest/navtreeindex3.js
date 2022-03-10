@@ -1,5 +1,14 @@
 var NAVTREEINDEX3 =
 {
+"actuators__shared__arch_8h.html#a8abad7360c351e9e146dbc677ec6ddd9":[12,0,1,0,0,3,1,0,5,5],
+"actuators__shared__arch_8h.html#af427e4bd9cbac365246675a3dab8e548":[12,0,1,0,0,3,1,0,5,12],
+"actuators__shared__arch_8h_source.html":[12,0,1,0,0,3,1,0,5],
+"actuators__spektrum_8c.html":[12,0,1,0,6,0,18],
+"actuators__spektrum_8c.html#a166569d0e5d830b35538915040d59425":[12,0,1,0,6,0,18,2],
+"actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340":[12,0,1,0,6,0,18,1],
+"actuators__spektrum_8c.html#a6984ce4cd7ccb105043c1f3422a249ca":[12,0,1,0,6,0,18,3],
+"actuators__spektrum_8c.html#abb2976a5407c78fb22f74d2c631dc2c8":[12,0,1,0,6,0,18,0],
+"actuators__spektrum_8c_source.html":[12,0,1,0,6,0,18],
 "actuators__spektrum_8h.html":[12,0,1,0,6,0,19],
 "actuators__spektrum_8h.html#a166569d0e5d830b35538915040d59425":[12,0,1,0,6,0,19,6],
 "actuators__spektrum_8h.html#a27a0f196bed7d9b7349d0c8a40226bb1":[12,0,1,0,6,0,19,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX3 =
 "adxl345_8h.html#a24b2fe9e27c927a87adb78ecec770e32":[12,0,1,0,7,4,0,0],
 "adxl345_8h.html#a32aad23cabee7aab79da8aa48baebdb7":[12,0,1,0,7,4,0,1],
 "adxl345_8h.html#a3ddf6d2e394d53c1d7e329fcf9565f80":[12,0,1,0,7,4,0,5],
-"adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc":[12,0,1,0,7,4,3],
-"adxl345_8h.html#a6ee5db11ac7e24698803d3f5b1ec54fb":[12,0,1,0,7,4,0,4],
-"adxl345_8h.html#a9bf981c311c734a8941840f3481e8614":[12,0,1,0,7,4,0,2],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177":[12,0,1,0,7,4,1],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177a6a9a83b7903ab2aae85a5ae83aeda936":[12,0,1,0,7,4,1,3],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177a999e954e9d6680cc9a96810a73b059a8":[12,0,1,0,7,4,1,5],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177a9cc54611609e5e75f9d5ddb13f7a397d":[12,0,1,0,7,4,1,1],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177aaa99fc542908dac52f3a47a43c56609b":[12,0,1,0,7,4,1,2],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177aaf9f842e044536f6754c41fb4421c6a9":[12,0,1,0,7,4,1,4],
-"adxl345_8h.html#aa006d32535082f7872bc58cd529c9177ae80bfd865b45a8a8708ec7ed2a1af76e":[12,0,1,0,7,4,1,0]
+"adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc":[12,0,1,0,7,4,3]
 };

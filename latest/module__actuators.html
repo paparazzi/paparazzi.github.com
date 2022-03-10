@@ -99,7 +99,18 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li>actuators_init()</li>
+<li><a class="el" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic()</a><ul>
+<li>Running at maximum module frequency.</li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -130,6 +141,7 @@ Raw actuators.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;actuators_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;actuators_periodic()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators.c&quot;</span>/&gt;</div>
@@ -146,7 +158,7 @@ Raw actuators.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

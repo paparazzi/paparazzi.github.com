@@ -1,7 +1,5 @@
 var nps__autopilot__fixedwing_8c =
 [
-    [ "Ap", "nps__autopilot__fixedwing_8c.html#a4cae595c1fcc67909b510e541e48f0ad", null ],
-    [ "Fbw", "nps__autopilot__fixedwing_8c.html#abd9cfa920ef8d0e0d39bf1192665f66b", null ],
     [ "NPS_BYPASS_AHRS", "nps__autopilot__fixedwing_8c.html#ac43e9310c9c7cafa544b09a8090c3d17", null ],
     [ "NPS_BYPASS_INS", "nps__autopilot__fixedwing_8c.html#a2aa730dceb2044d13e49f3bd5df966e4", null ],
     [ "nps_autopilot_init", "nps__autopilot__fixedwing_8c.html#a3348493e992edd2442581c1d09446b4b", null ],

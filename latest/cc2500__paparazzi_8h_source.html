@@ -123,19 +123,20 @@ $(document).ready(function(){initNavTree('cc2500__paparazzi_8h_source.html','');
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8h.html#a1beed9c63b07301d72b3516543545652">   33</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_NB_CHANNEL RADIO_CTL_NB</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__paparazzi_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a>(<span class="keywordtype">void</span> (* _received_frame_handler)(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="cc2500__paparazzi_8h.html#a48c5aff514f8ac1ab891bb12b748922b">   37</a></span>&#160;<span class="preprocessor">#define RadioControlEvent(_received_frame_handler) radio_control_impl_event(_received_frame_handler)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__paparazzi_8h.html#af881361839e82bd60fee6bc4fde9decd">radio_control_cc2500_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="cc2500__paparazzi_8h.html#a7629e5ecbc284fae1bb6d1b5bfe57100">radio_control_cc2500_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // RADIO_CONTROL_CC2500_PAPARAZZI_H</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // RADIO_CONTROL_CC2500_PAPARAZZI_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acc2500__paparazzi_8h_html_a760dbd4fa3f62cc43524fc420c2a9e5f"><div class="ttname"><a href="cc2500__paparazzi_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a></div><div class="ttdeci">void radio_control_impl_event(void(*_received_frame_handler)(void))</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__paparazzi_8c_source.html#l00061">cc2500_paparazzi.c:61</a></div></div>
+<div class="ttc" id="acc2500__paparazzi_8h_html_a7629e5ecbc284fae1bb6d1b5bfe57100"><div class="ttname"><a href="cc2500__paparazzi_8h.html#a7629e5ecbc284fae1bb6d1b5bfe57100">radio_control_cc2500_event</a></div><div class="ttdeci">void radio_control_cc2500_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__paparazzi_8c_source.html#l00063">cc2500_paparazzi.c:63</a></div></div>
+<div class="ttc" id="acc2500__paparazzi_8h_html_af881361839e82bd60fee6bc4fde9decd"><div class="ttname"><a href="cc2500__paparazzi_8h.html#af881361839e82bd60fee6bc4fde9decd">radio_control_cc2500_init</a></div><div class="ttdeci">void radio_control_cc2500_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__paparazzi_8c_source.html#l00051">cc2500_paparazzi.c:51</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__paparazzi_8h.html">cc2500_paparazzi.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:55 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

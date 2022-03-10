@@ -1,5 +1,5 @@
 var mission__common_8h_struct__mission__segment =
 [
-    [ "from", "mission__common_8h.html#ad2a6ebb7add21aecff1c1523746ee445", null ],
-    [ "to", "mission__common_8h.html#ac1bf163905200f88705f06a1aa20f1bb", null ]
+    [ "from", "mission__common_8h.html#a9633d7f231b6a3c0718ee52f1cb2cc97", null ],
+    [ "to", "mission__common_8h.html#a269815bd539fda14c920d259abe8ab66", null ]
 ];

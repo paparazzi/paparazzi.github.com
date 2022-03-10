@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="separator:abb7066e4bd3b68322d72d78d8c142c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50c8775d5f23ed2632d9e400885f731"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#aa50c8775d5f23ed2632d9e400885f731">buildDshotDmaBuffer</a> (<a class="el" href="esc__dshot_8h.html#structDshotPackets">DshotPackets</a> *const dsp, <a class="el" href="esc__dshot_8h.html#unionDshotDmaBuffer">DshotDmaBuffer</a> *const dma, const size_t timerWidth)</td></tr>
 <tr class="separator:aa50c8775d5f23ed2632d9e400885f731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea595f27e51665e32b06116f9965c856"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856">updateCrc8</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_seed)</td></tr>
+<tr class="memitem:aea595f27e51665e32b06116f9965c856"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856">updateCrc8</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> crc_seed)</td></tr>
 <tr class="separator:aea595f27e51665e32b06116f9965c856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e417dbd1839a8efbf515ea7315b80d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4">calculateCrc8</a> (const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *Buf, const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> BufLen)</td></tr>
 <tr class="separator:a2e417dbd1839a8efbf515ea7315b80d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -573,7 +573,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="esc__dshot_8c_source.html#l00427">427</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>, and <a class="el" href="esc__dshot_8c_source.html#l00415">updateCrc8()</a>.</p>
+<p class="reference">References <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::crc</a>, and <a class="el" href="esc__dshot_8c_source.html#l00415">updateCrc8()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00462">dshotTlmRec()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1159,7 +1159,7 @@ see also dshotSendThrottles @api </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="esc__dshot_8c_source.html#l00357">357</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>.</p>
+<p class="reference">References <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::crc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1321,7 +1321,7 @@ see also dshotSendThrottles @api </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="esc__dshot_8c_source.html#l00415">415</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>.</p>
+<p class="reference">References <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::crc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00427">calculateCrc8()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1347,7 +1347,7 @@ see also dshotSendThrottles @api </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_417c512ab95a5e7f032e969652234298.html">actuators</a></li><li class="navelem"><a class="el" href="esc__dshot_8c.html">esc_dshot.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

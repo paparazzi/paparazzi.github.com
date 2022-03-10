@@ -24,7 +24,6 @@ var onboard_modules =
       [ "Helicopter modules", "onboard_modules.html#modules_category_helicopter", null ],
       [ "Imu modules", "onboard_modules.html#modules_category_imu", null ],
       [ "Ins modules", "onboard_modules.html#modules_category_ins", null ],
-      [ "Intermcu modules", "onboard_modules.html#modules_category_intermcu", null ],
       [ "Lidar modules", "onboard_modules.html#modules_category_lidar", null ],
       [ "Light modules", "onboard_modules.html#modules_category_light", null ],
       [ "Loggers modules", "onboard_modules.html#modules_category_loggers", null ],
@@ -563,7 +562,8 @@ var onboard_modules =
       ] ]
     ] ],
     [ "system_core module", "module__system_core.html", [
-      [ "Example for airframe file", "module__system_core.html#module_load_example__system_core", [
+      [ "Example for airframe file", "module__system_core.html#module_load_example__system_core", null ],
+      [ "Module functions", "module__system_core.html#functions__system_core", [
         [ "Raw system_core.xml file:", "module__system_core.html#module_xml__system_core", null ]
       ] ]
     ] ],
@@ -685,8 +685,14 @@ var onboard_modules =
       [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", null ],
       [ "Auto-loaded modules", "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga", null ],
       [ "Module functions", "module__telemetry_bluegiga.html#functions__telemetry_bluegiga", [
-        [ "Event Functions", "module__telemetry_bluegiga.html#event_functions", null ],
         [ "Raw telemetry_bluegiga.xml file:", "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga", null ]
+      ] ]
+    ] ],
+    [ "telemetry_intermcu module", "module__telemetry_intermcu.html", [
+      [ "Example for airframe file", "module__telemetry_intermcu.html#module_load_example__telemetry_intermcu", null ],
+      [ "Module configuration options", "module__telemetry_intermcu.html#configuration__telemetry_intermcu", null ],
+      [ "Module functions", "module__telemetry_intermcu.html#functions__telemetry_intermcu", [
+        [ "Raw telemetry_intermcu.xml file:", "module__telemetry_intermcu.html#module_xml__telemetry_intermcu", null ]
       ] ]
     ] ],
     [ "telemetry_ivy module", "module__telemetry_ivy.html", [
@@ -926,6 +932,14 @@ var onboard_modules =
       [ "Auto-loaded modules", "module__gps_furuno.html#autoloads__gps_furuno", null ],
       [ "Module functions", "module__gps_furuno.html#functions__gps_furuno", [
         [ "Raw gps_furuno.xml file:", "module__gps_furuno.html#module_xml__gps_furuno", null ]
+      ] ]
+    ] ],
+    [ "gps_intermcu module", "module__gps_intermcu.html", [
+      [ "Example for airframe file", "module__gps_intermcu.html#module_load_example__gps_intermcu", null ],
+      [ "Auto-loaded modules", "module__gps_intermcu.html#autoloads__gps_intermcu", null ],
+      [ "Module functions", "module__gps_intermcu.html#functions__gps_intermcu", null ],
+      [ "Datalink Functions", "module__gps_intermcu.html#datalink_functions__gps_intermcu", [
+        [ "Raw gps_intermcu.xml file:", "module__gps_intermcu.html#module_xml__gps_intermcu", null ]
       ] ]
     ] ],
     [ "gps_mediatek_diy module", "module__gps_mediatek_diy.html", [
@@ -1550,26 +1564,6 @@ var onboard_modules =
       [ "Auto-loaded modules", "module__ins_xsens700.html#autoloads__ins_xsens700", null ],
       [ "Module functions", "module__ins_xsens700.html#functions__ins_xsens700", [
         [ "Raw ins_xsens700.xml file:", "module__ins_xsens700.html#module_xml__ins_xsens700", null ]
-      ] ]
-    ] ],
-    [ "intermcu_can module", "module__intermcu_can.html", [
-      [ "Example for airframe file", "module__intermcu_can.html#module_load_example__intermcu_can", null ],
-      [ "Module configuration options", "module__intermcu_can.html#configuration__intermcu_can", [
-        [ "Raw intermcu_can.xml file:", "module__intermcu_can.html#module_xml__intermcu_can", null ]
-      ] ]
-    ] ],
-    [ "intermcu_spi module", "module__intermcu_spi.html", [
-      [ "Example for airframe file", "module__intermcu_spi.html#module_load_example__intermcu_spi", null ],
-      [ "Module configuration options", "module__intermcu_spi.html#configuration__intermcu_spi", null ],
-      [ "Module functions", "module__intermcu_spi.html#functions__intermcu_spi", [
-        [ "Raw intermcu_spi.xml file:", "module__intermcu_spi.html#module_xml__intermcu_spi", null ]
-      ] ]
-    ] ],
-    [ "intermcu_uart module", "module__intermcu_uart.html", [
-      [ "Example for airframe file", "module__intermcu_uart.html#module_load_example__intermcu_uart", null ],
-      [ "Module configuration options", "module__intermcu_uart.html#configuration__intermcu_uart", null ],
-      [ "Module functions", "module__intermcu_uart.html#functions__intermcu_uart", [
-        [ "Raw intermcu_uart.xml file:", "module__intermcu_uart.html#module_xml__intermcu_uart", null ]
       ] ]
     ] ],
     [ "lidar_lite module", "module__lidar_lite.html", [
@@ -2217,46 +2211,69 @@ var onboard_modules =
         [ "Raw radio_control_cc2500_frsky.xml file:", "module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky", null ]
       ] ]
     ] ],
+    [ "radio_control_common module", "module__radio_control_common.html", [
+      [ "Example for airframe file", "module__radio_control_common.html#module_load_example__radio_control_common", null ],
+      [ "Module configuration options", "module__radio_control_common.html#configuration__radio_control_common", null ],
+      [ "Module functions", "module__radio_control_common.html#functions__radio_control_common", [
+        [ "Raw radio_control_common.xml file:", "module__radio_control_common.html#module_xml__radio_control_common", null ]
+      ] ]
+    ] ],
     [ "radio_control_datalink module", "module__radio_control_datalink.html", [
       [ "Example for airframe file", "module__radio_control_datalink.html#module_load_example__radio_control_datalink", null ],
-      [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", [
+      [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", null ],
+      [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", [
         [ "Raw radio_control_datalink.xml file:", "module__radio_control_datalink.html#module_xml__radio_control_datalink", null ]
       ] ]
     ] ],
     [ "radio_control_hott module", "module__radio_control_hott.html", [
       [ "Example for airframe file", "module__radio_control_hott.html#module_load_example__radio_control_hott", null ],
-      [ "Module configuration options", "module__radio_control_hott.html#configuration__radio_control_hott", [
+      [ "Module configuration options", "module__radio_control_hott.html#configuration__radio_control_hott", null ],
+      [ "Module functions", "module__radio_control_hott.html#functions__radio_control_hott", [
         [ "Raw radio_control_hott.xml file:", "module__radio_control_hott.html#module_xml__radio_control_hott", null ]
+      ] ]
+    ] ],
+    [ "radio_control_intermcu module", "module__radio_control_intermcu.html", [
+      [ "Example for airframe file", "module__radio_control_intermcu.html#module_load_example__radio_control_intermcu", null ],
+      [ "Module functions", "module__radio_control_intermcu.html#functions__radio_control_intermcu", null ],
+      [ "Datalink Functions", "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu", [
+        [ "Raw radio_control_intermcu.xml file:", "module__radio_control_intermcu.html#module_xml__radio_control_intermcu", null ]
       ] ]
     ] ],
     [ "radio_control_ppm module", "module__radio_control_ppm.html", [
       [ "Example for airframe file", "module__radio_control_ppm.html#module_load_example__radio_control_ppm", null ],
       [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", [
-        [ "Configure Options", "module__radio_control_ppm.html#configure", null ],
+        [ "Configure Options", "module__radio_control_ppm.html#configure", null ]
+      ] ],
+      [ "Module functions", "module__radio_control_ppm.html#functions__radio_control_ppm", [
+        [ "Event Functions", "module__radio_control_ppm.html#event_functions", null ],
         [ "Raw radio_control_ppm.xml file:", "module__radio_control_ppm.html#module_xml__radio_control_ppm", null ]
       ] ]
     ] ],
     [ "radio_control_sbus module", "module__radio_control_sbus.html", [
       [ "Example for airframe file", "module__radio_control_sbus.html#module_load_example__radio_control_sbus", null ],
-      [ "Module configuration options", "module__radio_control_sbus.html#configuration__radio_control_sbus", [
+      [ "Module configuration options", "module__radio_control_sbus.html#configuration__radio_control_sbus", null ],
+      [ "Module functions", "module__radio_control_sbus.html#functions__radio_control_sbus", [
         [ "Raw radio_control_sbus.xml file:", "module__radio_control_sbus.html#module_xml__radio_control_sbus", null ]
       ] ]
     ] ],
     [ "radio_control_sbus_dual module", "module__radio_control_sbus_dual.html", [
       [ "Example for airframe file", "module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual", null ],
-      [ "Module configuration options", "module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual", [
+      [ "Module configuration options", "module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual", null ],
+      [ "Module functions", "module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual", [
         [ "Raw radio_control_sbus_dual.xml file:", "module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual", null ]
       ] ]
     ] ],
     [ "radio_control_spektrum module", "module__radio_control_spektrum.html", [
       [ "Example for airframe file", "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum", null ],
-      [ "Module configuration options", "module__radio_control_spektrum.html#configuration__radio_control_spektrum", [
+      [ "Module configuration options", "module__radio_control_spektrum.html#configuration__radio_control_spektrum", null ],
+      [ "Module functions", "module__radio_control_spektrum.html#functions__radio_control_spektrum", [
         [ "Raw radio_control_spektrum.xml file:", "module__radio_control_spektrum.html#module_xml__radio_control_spektrum", null ]
       ] ]
     ] ],
     [ "radio_control_superbitrf_rc module", "module__radio_control_superbitrf_rc.html", [
       [ "Example for airframe file", "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc", null ],
-      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", [
+      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", null ],
+      [ "Module functions", "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc", [
         [ "Raw radio_control_superbitrf_rc.xml file:", "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc", null ]
       ] ]
     ] ],
@@ -2898,11 +2915,25 @@ var onboard_modules =
         [ "Raw haclc.xml file:", "module__haclc.html#module_xml__haclc", null ]
       ] ]
     ] ],
+    [ "hard_fault_recovery module", "module__hard_fault_recovery.html", [
+      [ "Example for airframe file", "module__hard_fault_recovery.html#module_load_example__hard_fault_recovery", null ],
+      [ "Module configuration options", "module__hard_fault_recovery.html#configuration__hard_fault_recovery", [
+        [ "Raw hard_fault_recovery.xml file:", "module__hard_fault_recovery.html#module_xml__hard_fault_recovery", null ]
+      ] ]
+    ] ],
     [ "hott_telemetry module", "module__hott_telemetry.html", [
       [ "Example for airframe file", "module__hott_telemetry.html#module_load_example__hott_telemetry", null ],
       [ "Module configuration options", "module__hott_telemetry.html#configuration__hott_telemetry", null ],
       [ "Module functions", "module__hott_telemetry.html#functions__hott_telemetry", [
         [ "Raw hott_telemetry.xml file:", "module__hott_telemetry.html#module_xml__hott_telemetry", null ]
+      ] ]
+    ] ],
+    [ "intermcu_uart module", "module__intermcu_uart.html", [
+      [ "Example for airframe file", "module__intermcu_uart.html#module_load_example__intermcu_uart", null ],
+      [ "Module configuration options", "module__intermcu_uart.html#configuration__intermcu_uart", null ],
+      [ "Module functions", "module__intermcu_uart.html#functions__intermcu_uart", null ],
+      [ "Datalink Functions", "module__intermcu_uart.html#datalink_functions__intermcu_uart", [
+        [ "Raw intermcu_uart.xml file:", "module__intermcu_uart.html#module_xml__intermcu_uart", null ]
       ] ]
     ] ],
     [ "joystick module", "module__joystick.html", [
@@ -3021,13 +3052,6 @@ var onboard_modules =
       [ "Auto-loaded modules", "module__syslink_dl.html#autoloads__syslink_dl", null ],
       [ "Module functions", "module__syslink_dl.html#functions__syslink_dl", [
         [ "Raw syslink_dl.xml file:", "module__syslink_dl.html#module_xml__syslink_dl", null ]
-      ] ]
-    ] ],
-    [ "telemetry_intermcu module", "module__telemetry_intermcu.html", [
-      [ "Example for airframe file", "module__telemetry_intermcu.html#module_load_example__telemetry_intermcu", null ],
-      [ "Module configuration options", "module__telemetry_intermcu.html#configuration__telemetry_intermcu", null ],
-      [ "Module functions", "module__telemetry_intermcu.html#functions__telemetry_intermcu", [
-        [ "Raw telemetry_intermcu.xml file:", "module__telemetry_intermcu.html#module_xml__telemetry_intermcu", null ]
       ] ]
     ] ],
     [ "time_countdown module", "module__time_countdown.html", [

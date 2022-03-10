@@ -95,7 +95,6 @@ Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control_spektrum&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_DSMX&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;SPEKTRUM_SYS_TYPE&quot; value=&quot;0&quot; /&gt;\n  &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;RADIO_CONTROL_LED&quot; value=&quot;none|num&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;uartX&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;uartX&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; value=&quot;0|1&quot; /&gt;\n    &#39;</span></div>
@@ -105,8 +104,6 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
-<li><b>name:</b> <code>RADIO_CONTROL_LED</code> <b>value:</b> <em>none|num</em> <br  />
- Description: LED number or 'none' to disable</li>
 <li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT</code> <b>value:</b> <em>uartX</em> <br  />
  Description: UART for primary spektrum receiver</li>
 <li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT</code> <b>value:</b> <em>uartX</em> <br  />
@@ -122,6 +119,20 @@ Define Options</h2>
 <li><b>name:</b> <code>SPEKTRUM_SYS_TYPE</code> <b>value:</b> <em>0</em> <br  />
  Description: force system type (default: 0 for auto detect)</li>
 </ul>
+<h1><a class="anchor" id="functions__radio_control_spektrum"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="spektrum__arch_8c.html#af991dac26ce4e2a25ad25045fe86e782">spektrum_init()</a></li>
+</ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="spektrum__arch_8c.html#a58c16366fa7fc51e87cf7c7bbdf54c4a">spektrum_event()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -133,11 +144,7 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
 <li><a class="el" href="spektrum_8c.html">modules/radio_control/spektrum.c</a></li>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
-<li><a class="el" href="spektrum_8c.html">modules/radio_control/spektrum.c</a></li>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
 <li>arch dependent: <a class="el" href="spektrum__arch_8c.html">modules/radio_control/spektrum_arch.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__radio_control_spektrum"></a>
@@ -151,7 +158,6 @@ Raw radio_control_spektrum.xml file:</h2>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Define</span> <span class="keyword">USE_DSMX</span> <span class="keyword">on</span> <span class="keyword">STM32</span> <span class="keyword">microcontrollers</span> <span class="keyword">to</span> <span class="keyword">bind</span> <span class="keyword">in</span> <span class="keyword">DSMX</span> <span class="keyword">instead</span> <span class="keyword">of</span> <span class="keyword">DSM2</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none|num&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number or &#39;none&#39; to disable&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uartX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART for primary spektrum receiver&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uartX&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART for optional secondary spektrum receiver&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0|1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;enable secondary receiver (default: disabled)&quot;</span>/&gt;</div>
@@ -159,19 +165,15 @@ Raw radio_control_spektrum.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_SYS_TYPE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;force system type (default: 0 for auto detect)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>,<span class="keyword">radio_control_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">radio_control</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;spektrum.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw|sim|nps|test_radio_control&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(RADIO_CONTROL_LED),none)&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw|test_radio_control&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/spektrum.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;spektrum_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;spektrum_event()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw|test_radio_control&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spektrum_try_bind&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_PRIMARY_UART&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
@@ -189,36 +191,9 @@ Raw radio_control_spektrum.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B115200&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)_TX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;spektrum.c&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/spektrum.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(SEPARATE_FBW),1 TRUE))&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spektrum_try_bind&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_PRIMARY_UART&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_PRIMARY_UART&quot;</span>  <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SPEKTRUM_PRIMARY_UART_LOWER)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_PRIMARY_UART_UPPER&quot;</span>  <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_GPIO&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B115200&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)_TX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_SECONDARY_UART&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT)&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_SECONDARY_UART&quot;</span>  <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SPEKTRUM_SECONDARY_UART_LOWER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_SECONDARY_UART_UPPER&quot;</span>  <span class="keyword">value</span>=<span class="stringliteral">&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_GPIO&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B115200&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)_TX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;</span>/&gt;</div>
-<div class="line">    </div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;spektrum.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/spektrum.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_PRIMARY_UART&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart2&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPEKTRUM_SECONDARY_UART&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart3&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART2&quot;</span>/&gt;</div>
@@ -230,13 +205,9 @@ Raw radio_control_spektrum.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;sim|nps|hitl&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/spektrum_arch.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;spektrum_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/radio_control&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/spektrum.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -248,7 +219,7 @@ Raw radio_control_spektrum.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

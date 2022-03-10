@@ -127,49 +127,51 @@ $(document).ready(function(){initNavTree('rotorcraft__datalink_8c_source.html','
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">/* parse telemetry messages coming from ground station */</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">switch</span> (msg_id) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef USE_NAVIGATION</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> DL_BLOCK : {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">if</span> (DL_BLOCK_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2">nav_goto_block</a>(DL_BLOCK_block_id(buf));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">case</span> DL_MOVE_WP : {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = DL_MOVE_WP_ac_id(buf);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> != AC_ID) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f">stateIsLocalCoordinateValid</a>()) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_id = DL_MOVE_WP_wp_id(buf);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">struct </span><a class="code" href="group__math__geodetic__int.html#structLlaCoor__i">LlaCoor_i</a> lla;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#a083f5d7acd142e12865d9f4a918fee07">lat</a> = DL_MOVE_WP_lat(buf);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">lon</a> = DL_MOVE_WP_lon(buf);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">/* WP_alt from message is alt above MSL in mm</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">         * lla.alt is above ellipsoid in mm</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#a36aa60e58a828880951718db39c227f9">alt</a> = DL_MOVE_WP_alt(buf) - <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>.<a class="code" href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">ned_origin_i</a>.<a class="code" href="group__math__geodetic__int.html#a32bcfa1049778e1703fa09aa9b810a5b">hmsl</a> +</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>.<a class="code" href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">ned_origin_i</a>.<a class="code" href="group__math__geodetic__int.html#a6fa81363139469c813164c4804f9103d">lla</a>.<a class="code" href="group__math__geodetic__int.html#a36aa60e58a828880951718db39c227f9">alt</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="nav_2waypoints_8c.html#af898f624e88c626a1d47300e872ac444">waypoint_move_lla</a>(wp_id, &amp;lla);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_NAVIGATION */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef AP_MODE_GUIDED</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">case</span> DL_GUIDED_SETPOINT_NED:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">if</span> (DL_GUIDED_SETPOINT_NED_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d">autopilot_guided_update</a>(DL_GUIDED_SETPOINT_NED_flags(buf),</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                              DL_GUIDED_SETPOINT_NED_x(buf),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              DL_GUIDED_SETPOINT_NED_y(buf),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                              DL_GUIDED_SETPOINT_NED_z(buf),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                              DL_GUIDED_SETPOINT_NED_yaw(buf));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifndef INTERMCU_FBW</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef USE_NAVIGATION</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">case</span> DL_BLOCK : {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span> (DL_BLOCK_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2">nav_goto_block</a>(DL_BLOCK_block_id(buf));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">case</span> DL_MOVE_WP : {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = DL_MOVE_WP_ac_id(buf);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> != AC_ID) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f">stateIsLocalCoordinateValid</a>()) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_id = DL_MOVE_WP_wp_id(buf);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">struct </span><a class="code" href="group__math__geodetic__int.html#structLlaCoor__i">LlaCoor_i</a> lla;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#a083f5d7acd142e12865d9f4a918fee07">lat</a> = DL_MOVE_WP_lat(buf);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">lon</a> = DL_MOVE_WP_lon(buf);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">/* WP_alt from message is alt above MSL in mm</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">         * lla.alt is above ellipsoid in mm</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        lla.<a class="code" href="group__math__geodetic__int.html#a36aa60e58a828880951718db39c227f9">alt</a> = DL_MOVE_WP_alt(buf) - <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>.<a class="code" href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">ned_origin_i</a>.<a class="code" href="group__math__geodetic__int.html#a32bcfa1049778e1703fa09aa9b810a5b">hmsl</a> +</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                  <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>.<a class="code" href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">ned_origin_i</a>.<a class="code" href="group__math__geodetic__int.html#a6fa81363139469c813164c4804f9103d">lla</a>.<a class="code" href="group__math__geodetic__int.html#a36aa60e58a828880951718db39c227f9">alt</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="nav_2waypoints_8c.html#af898f624e88c626a1d47300e872ac444">waypoint_move_lla</a>(wp_id, &amp;lla);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_NAVIGATION */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef AP_MODE_GUIDED</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> DL_GUIDED_SETPOINT_NED:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">if</span> (DL_GUIDED_SETPOINT_NED_ac_id(buf) != AC_ID) { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d">autopilot_guided_update</a>(DL_GUIDED_SETPOINT_NED_flags(buf),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                              DL_GUIDED_SETPOINT_NED_x(buf),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                              DL_GUIDED_SETPOINT_NED_y(buf),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                              DL_GUIDED_SETPOINT_NED_z(buf),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                              DL_GUIDED_SETPOINT_NED_yaw(buf));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // INTERMCU_FBW</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__math__geodetic__int_html_ad6a02c197a16ad76cf794e6e4935f5c9"><div class="ttname"><a href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i::lon</a></div><div class="ttdeci">int32_t lon</div><div class="ttdoc">in degrees*1e7</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00061">pprz_geodetic_int.h:61</a></div></div>
@@ -189,7 +191,7 @@ $(document).ready(function(){initNavTree('rotorcraft__datalink_8c_source.html','
 <div class="ttc" id="arotorcraft_2navigation_8h_html"><div class="ttname"><a href="rotorcraft_2navigation_8h.html">navigation.h</a></div></div>
 <div class="ttc" id="adatalink_8h_html"><div class="ttname"><a href="datalink_8h.html">datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground and other A/Cs.</div></div>
 <div class="ttc" id="aautopilot__guided_8c_html_a07ce763874e77faf62f5c9506bdad43d"><div class="ttname"><a href="autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d">autopilot_guided_update</a></div><div class="ttdeci">void autopilot_guided_update(uint8_t flags, float x, float y, float z, float yaw)</div><div class="ttdoc">Set guided setpoints using flag mask in GUIDED mode.</div><div class="ttdef"><b>Definition:</b> <a href="autopilot__guided_8c_source.html#l00095">autopilot_guided.c:95</a></div></div>
-<div class="ttc" id="asim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00048">sim_ap.c:48</a></div></div>
+<div class="ttc" id="asim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00047">sim_ap.c:47</a></div></div>
 <div class="ttc" id="agroup__state__interface_html_gad04519a48b59cfe96f361afe9eb151ba"><div class="ttname"><a href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a></div><div class="ttdeci">struct State state</div><div class="ttdef"><b>Definition:</b> <a href="state_8c_source.html#l00036">state.c:36</a></div></div>
 <div class="ttc" id="agroup__math__geodetic__int_html_a6fa81363139469c813164c4804f9103d"><div class="ttname"><a href="group__math__geodetic__int.html#a6fa81363139469c813164c4804f9103d">LtpDef_i::lla</a></div><div class="ttdeci">struct LlaCoor_i lla</div><div class="ttdoc">Reference point in lla.</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00100">pprz_geodetic_int.h:100</a></div></div>
 <div class="ttc" id="acommon__flight__plan_8c_html_ad5b3972efdfb4b34574a534615be3db2"><div class="ttname"><a href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2">nav_goto_block</a></div><div class="ttdeci">void nav_goto_block(uint8_t b)</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00051">common_flight_plan.c:51</a></div></div>
@@ -197,7 +199,7 @@ $(document).ready(function(){initNavTree('rotorcraft__datalink_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft__datalink_8c.html">rotorcraft_datalink.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:52 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

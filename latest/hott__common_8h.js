@@ -11,12 +11,9 @@ var hott__common_8h =
     ] ],
     [ "HOTT_BUF_LENGTH", "hott__common_8h.html#a03e2e9437e1b6554aa84855cfd67a983", null ],
     [ "HOTT_NB_CHANNEL", "hott__common_8h.html#ad3173bb3b6237e59d6d548118fe87466", null ],
-    [ "RADIO_CONTROL_NB_CHANNEL", "hott__common_8h.html#a1beed9c63b07301d72b3516543545652", null ],
-    [ "RadioControlEvent", "hott__common_8h.html#a48c5aff514f8ac1ab891bb12b748922b", null ],
     [ "RC_PPM_SIGNED_TICKS_OF_USEC", "hott__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db", null ],
     [ "RC_PPM_TICKS_OF_USEC", "hott__common_8h.html#aad33b862bb6166593e16a30779799b51", null ],
     [ "USEC_OF_RC_PPM_TICKS", "hott__common_8h.html#a962b9942b2dfacf94028a3c538341b4e", null ],
     [ "hott_common_decode_event", "hott__common_8h.html#a382f1ea90f6ebab2742041d2b2e55c3a", null ],
-    [ "hott_common_init", "hott__common_8h.html#a7207cca927f50170171b4957ece09706", null ],
-    [ "radio_control_impl_event", "hott__common_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f", null ]
+    [ "hott_common_init", "hott__common_8h.html#a7207cca927f50170171b4957ece09706", null ]
 ];

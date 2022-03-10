@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands_8h.html">modules/core/commands.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">modules/nav/common_nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  airborne_ant_pan_servo = <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(airborne_ant_pan_servo);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#ifdef COMMAND_ANT_PAN</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  imcu_set_command(COMMAND_ANT_PAN, airborne_ant_pan_servo);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_ANT_PAN, airborne_ant_pan_servo);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
@@ -278,7 +278,6 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="ttc" id="amax7456_8c_html_structVECTOR"><div class="ttname"><a href="max7456_8c.html#structVECTOR">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00084">point.c:84</a></div></div>
 <div class="ttc" id="acommon__nav_8h_html_a983349c9ccc3f390fafe929d3c9fdd16"><div class="ttname"><a href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a></div><div class="ttdeci">#define WaypointY(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00046">common_nav.h:46</a></div></div>
 <div class="ttc" id="agroup__state__position_html_ga545d479db45e1a9711e59736b6d1309b"><div class="ttname"><a href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetPositionEnu_f(void)</div><div class="ttdoc">Get position in local ENU coordinates (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00719">state.h:719</a></div></div>
-<div class="ttc" id="ainter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div></div>
 <div class="ttc" id="acommon__nav_8h_html_a2d51bcd8e90e2dea91009f895a452a22"><div class="ttname"><a href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a></div><div class="ttdeci">#define WaypointX(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00045">common_nav.h:45</a></div></div>
 <div class="ttc" id="acommon__nav_8h_html"><div class="ttname"><a href="common__nav_8h.html">common_nav.h</a></div></div>
 <div class="ttc" id="amax7456_8c_html_a48b502d58a61ced8e9a7c150da79d788"><div class="ttname"><a href="max7456_8c.html#a48b502d58a61ced8e9a7c150da79d788">MATRIX::fz2</a></div><div class="ttdeci">float fz2</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00093">point.c:93</a></div></div>
@@ -302,6 +301,8 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div class="ttc" id="apoint_8c_html_a31893a86d66bebf3f735a51b2bcdb80c"><div class="ttname"><a href="point_8c.html#a31893a86d66bebf3f735a51b2bcdb80c">vSubtractVectors</a></div><div class="ttdeci">void vSubtractVectors(VECTOR *svA, VECTOR svB, VECTOR svC)</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00116">point.c:116</a></div></div>
 <div class="ttc" id="amax7456_8c_html_af2cd1aafbb7c19268a9715b5aa72dddb"><div class="ttname"><a href="max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb">VECTOR::fz</a></div><div class="ttdeci">float fz</div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00087">point.c:87</a></div></div>
 <div class="ttc" id="aguidance__OA_8h_html_a4dac0a956aca3da3fa670abc875414d2a1a85ef13eaa80e8561743892f9dba958"><div class="ttname"><a href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a1a85ef13eaa80e8561743892f9dba958">VECTOR</a></div><div class="ttdeci">@ VECTOR</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8h_source.html#l00052">guidance_OA.h:52</a></div></div>
+<div class="ttc" id="acommands_8h_html_abad4f73b929ef6db562aaa170c3c735d"><div class="ttname"><a href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a></div><div class="ttdeci">static void command_set(uint8_t idx, pprz_t value)</div><div class="ttdoc">Set a command value.</div><div class="ttdef"><b>Definition:</b> <a href="commands_8h_source.html#l00057">commands.h:57</a></div></div>
+<div class="ttc" id="acommands_8h_html"><div class="ttname"><a href="commands_8h.html">commands.h</a></div><div class="ttdoc">Hardware independent code for commands handling.</div></div>
 <div class="ttc" id="apprz__geodetic__float_8h_html_a1477647029e175947a6bd860322c98ff"><div class="ttname"><a href="pprz__geodetic__float_8h.html#a1477647029e175947a6bd860322c98ff">EnuCoor_f::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">in meters</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00073">pprz_geodetic_float.h:73</a></div></div>
 <div class="ttc" id="apaparazzi_8h_html_a6fff2a38e48dea3e7e91896c6ab60cf7"><div class="ttname"><a href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a></div><div class="ttdeci">#define TRIM_PPRZ(pprz)</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00011">paparazzi.h:11</a></div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
@@ -309,7 +310,7 @@ $(document).ready(function(){initNavTree('airborne__ant__track_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b38d3b7daf8f5f4aa9cdde7d2cfcefba.html">airborne_ant_track</a></li><li class="navelem"><a class="el" href="airborne__ant__track_8c.html">airborne_ant_track.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:53 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

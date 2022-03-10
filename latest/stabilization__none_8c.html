@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('stabilization__none_8c.html',''); init
 <code>#include &quot;<a class="el" href="stabilization__none_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_none.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
+<code>#include &quot;generated/modules.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_none.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -102,24 +103,22 @@ $(document).ready(function(){initNavTree('stabilization__none_8c.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__none_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__none_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__none_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__none_8c">
-<area shape="rect" title=" " alt="" coords="549,5,719,61"/>
-<area shape="rect" href="stabilization_8h.html" title=" " alt="" coords="503,117,653,158"/>
-<area shape="rect" title=" " alt="" coords="611,213,771,240"/>
-<area shape="rect" href="stabilization__none_8h.html" title=" " alt="" coords="259,109,449,165"/>
-<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="740,117,907,158"/>
-<area shape="rect" title=" " alt="" coords="355,363,409,389"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="233,213,413,240"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="56,288,212,315"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="383,288,536,315"/>
-<area shape="rect" title=" " alt="" coords="288,288,359,315"/>
-<area shape="rect" title=" " alt="" coords="192,363,255,389"/>
-<area shape="rect" title=" " alt="" coords="5,363,76,389"/>
-<area shape="rect" title=" " alt="" coords="100,363,168,389"/>
-<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="796,213,851,240"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="875,213,972,240"/>
-<area shape="rect" title=" " alt="" coords="996,213,1187,240"/>
-<area shape="rect" title=" " alt="" coords="781,288,860,315"/>
-<area shape="rect" title=" " alt="" coords="884,288,971,315"/>
+<area shape="rect" title=" " alt="" coords="598,5,769,61"/>
+<area shape="rect" href="stabilization_8h.html" title=" " alt="" coords="495,117,645,158"/>
+<area shape="rect" title=" " alt="" coords="605,213,765,240"/>
+<area shape="rect" href="stabilization__none_8h.html" title=" " alt="" coords="261,109,452,165"/>
+<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="721,117,888,158"/>
+<area shape="rect" title=" " alt="" coords="913,124,1073,151"/>
+<area shape="rect" title=" " alt="" coords="368,363,423,389"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="248,213,428,240"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="49,288,205,315"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="376,288,529,315"/>
+<area shape="rect" title=" " alt="" coords="229,288,300,315"/>
+<area shape="rect" title=" " alt="" coords="5,363,68,389"/>
+<area shape="rect" title=" " alt="" coords="92,363,163,389"/>
+<area shape="rect" title=" " alt="" coords="187,363,255,389"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="789,213,887,240"/>
+<area shape="rect" title=" " alt="" coords="795,288,881,315"/>
 </map>
 </div>
 </div>
@@ -163,9 +162,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00050">50</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00051">51</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00575">INT_RATES_ZERO</a>, and <a class="el" href="stabilization__none_8c_source.html#l00035">stabilization_none_rc_cmd</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00575">INT_RATES_ZERO</a>, and <a class="el" href="stabilization__none_8c_source.html#l00036">stabilization_none_rc_cmd</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00222">guidance_h_mode_changed()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -199,9 +198,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00037">37</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00038">38</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00575">INT_RATES_ZERO</a>, and <a class="el" href="stabilization__none_8c_source.html#l00035">stabilization_none_rc_cmd</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00575">INT_RATES_ZERO</a>, and <a class="el" href="stabilization__none_8c_source.html#l00036">stabilization_none_rc_cmd</a>.</p>
 
 </div>
 </div>
@@ -221,9 +220,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00042">42</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00043">43</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="stabilization__none_8c_source.html#l00035">stabilization_none_rc_cmd</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="stabilization__none_8c_source.html#l00036">stabilization_none_rc_cmd</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00302">guidance_h_read_rc()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -261,9 +260,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00055">55</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00056">56</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, and <a class="el" href="stabilization__none_8c_source.html#l00035">stabilization_none_rc_cmd</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, and <a class="el" href="stabilization__none_8c_source.html#l00036">stabilization_none_rc_cmd</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00361">guidance_h_run()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -294,9 +293,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00035">35</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__none_8c_source.html#l00036">36</a> of file <a class="el" href="stabilization__none_8c_source.html">stabilization_none.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__none_8c_source.html#l00050">stabilization_none_enter()</a>, <a class="el" href="stabilization__none_8c_source.html#l00037">stabilization_none_init()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, and <a class="el" href="stabilization__none_8c_source.html#l00055">stabilization_none_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__none_8c_source.html#l00051">stabilization_none_enter()</a>, <a class="el" href="stabilization__none_8c_source.html#l00038">stabilization_none_init()</a>, <a class="el" href="stabilization__none_8c_source.html#l00043">stabilization_none_read_rc()</a>, and <a class="el" href="stabilization__none_8c_source.html#l00056">stabilization_none_run()</a>.</p>
 
 </div>
 </div>
@@ -306,7 +305,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__none_8c.html">stabilization_none.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

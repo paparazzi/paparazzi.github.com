@@ -137,7 +137,13 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="cc2500_8c.html#a789c41a330de75ba23528bbdc7060592">cc2500_init()</a></li>
+<li><a class="el" href="cc2500__paparazzi_8c.html#af881361839e82bd60fee6bc4fde9decd">radio_control_cc2500_init()</a></li>
+</ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="cc2500__paparazzi_8c.html#a7629e5ecbc284fae1bb6d1b5bfe57100">radio_control_cc2500_event()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -152,7 +158,6 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
 <li><a class="el" href="cc2500_8c.html">peripherals/cc2500.c</a></li>
 <li><a class="el" href="cc2500__paparazzi_8c.html">modules/radio_control/cc2500_frsky/cc2500_paparazzi.c</a></li>
 <li><a class="el" href="cc2500__settings_8c.html">modules/radio_control/cc2500_frsky/cc2500_settings.c</a></li>
@@ -205,7 +210,7 @@ Raw radio_control_cc2500_frsky.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">radio_control_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">radio_control</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
@@ -213,19 +218,17 @@ Raw radio_control_cc2500_frsky.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500_frsky/cc2500_paparazzi.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500_frsky/cc2500_settings.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;cc2500_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;radio_control_cc2500_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;radio_control_cc2500_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw|sim|nps&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/cc2500_frsky/cc2500_paparazzi.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI3&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(CC2500_SPI_DEV)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE$(CC2500_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CC2500_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CC2500_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500_frsky/cc2500_paparazzi.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500_frsky/cc2500_settings.c&quot;</span>/&gt;</div>
@@ -239,7 +242,6 @@ Raw radio_control_cc2500_frsky.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cc2500_frsky/cc2500_smartport.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/cc2500_frsky/cc2500_paparazzi.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CC2500_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI1&quot;</span>/&gt;</div>
@@ -257,7 +259,7 @@ Raw radio_control_cc2500_frsky.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

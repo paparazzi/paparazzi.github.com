@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__mcu.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Automatic initialization module for all MCU peripherals</b></p>
-<p>Also includes GPIO and LED drivers</p>
+<p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__mcu"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mcu&quot;</span>/&gt;</div>
@@ -122,8 +122,6 @@ Source Files</h2>
 <li><a class="el" href="mcu_8c.html">./mcu.c</a></li>
 <li>arch dependent: ./mcu_arch.c</li>
 <li>arch dependent: mcu_periph/gpio_arch.c</li>
-<li>arch dependent: ./led_hw.c</li>
-<li>arch dependent: ./led_hw.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__mcu"></a>
 Raw mcu.xml file:</h2>
@@ -133,7 +131,6 @@ Raw mcu.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Automatic</span> <span class="keyword">initialization</span> <span class="keyword">module</span> <span class="keyword">for</span> <span class="keyword">all</span> <span class="keyword">MCU</span> <span class="keyword">peripherals</span></div>
-<div class="line">      <span class="keyword">Also</span> <span class="keyword">includes</span> <span class="keyword">GPIO</span> <span class="keyword">and</span> <span class="keyword">LED</span> <span class="keyword">drivers</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
@@ -150,14 +147,9 @@ Raw mcu.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mcu.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mcu_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gpio_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(BOARD), ardrone)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), stm32)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;led_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(TARGET), sim)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PERIPHERALS_AUTO_INIT&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!nps|sim&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_LED&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -168,7 +160,7 @@ Raw mcu.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

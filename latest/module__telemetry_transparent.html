@@ -93,8 +93,9 @@ $(document).ready(function(){initNavTree('module__telemetry_transparent.html',''
 <h1><a class="anchor" id="module_load_example__telemetry_transparent"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;telemetry_transparent&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;TELEMETRY_DISABLE_RX&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MODEM_PORT&quot; value=&quot;UARTx&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MODEM_BAUD&quot; value=&quot;B57600&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MODEM_BAUD&quot; value=&quot;B57600&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__telemetry_transparent"></a>
 Module configuration options</h1>
@@ -105,6 +106,12 @@ Configure Options</h2>
  Description: UART where the modem is connected to (UART1, UART2, etc)</li>
 <li><b>name:</b> <code>MODEM_BAUD</code> <b>value:</b> <em>B57600</em> <br  />
  Description: UART baud rate</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>TELEMETRY_DISABLE_RX</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: disable incoming message parsing</li>
 </ul>
 <h1><a class="anchor" id="autoloads__telemetry_transparent"></a>
 Auto-loaded modules</h1>
@@ -153,6 +160,7 @@ Raw telemetry_transparent.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART where the modem is connected to (UART1, UART2, etc)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B57600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART baud rate&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TELEMETRY_DISABLE_RX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;disable incoming message parsing&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>,<span class="keyword">datalink_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -164,8 +172,8 @@ Raw telemetry_transparent.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;pprz_dl.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;pprz_dl_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;pprz_dl_event()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!fbw|sim|nps|hitl&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;pprz_dl_event()&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;!TELEMETRY_DISABLE_RX&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|hitl&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_PORT&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(MODEM_PORT_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(MODEM_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(MODEM_BAUD)&quot;</span>/&gt;</div>
@@ -189,7 +197,7 @@ Raw telemetry_transparent.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html',''); initResiza
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> i, j;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> res = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a> = prom[7] &amp; 0xF;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="namespacelogger__uart__parse.html#a33b9198fc7e28940b6c44fb67c700651">crc</a> = prom[7] &amp; 0xF;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  prom[7] &amp;= 0xFF00;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> allzero = <span class="keyword">true</span>;</div>
@@ -145,9 +145,9 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html',''); initResiza
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      res &lt;&lt;= 1;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  prom[7] |= <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  prom[7] |= <a class="code" href="namespacelogger__uart__parse.html#a33b9198fc7e28940b6c44fb67c700651">crc</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a> == ((res &gt;&gt; 12) &amp; 0xF)) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelogger__uart__parse.html#a33b9198fc7e28940b6c44fb67c700651">crc</a> == ((res &gt;&gt; 12) &amp; 0xF)) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -236,11 +236,11 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html',''); initResiza
 <div class="ttc" id="ams5611_8h_html_a6edaef5b2c048a146b1fff16619b8028"><div class="ttname"><a href="ms5611_8h.html#a6edaef5b2c048a146b1fff16619b8028">Ms5611Data::temperature</a></div><div class="ttdeci">int32_t temperature</div><div class="ttdoc">temperature with 0.01 degrees Celsius resolution</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00053">ms5611.h:53</a></div></div>
 <div class="ttc" id="ams5611_8c_html_aadeaf57da29112210a74857311975e0a"><div class="ttname"><a href="ms5611_8c.html#aadeaf57da29112210a74857311975e0a">ms5611_prom_crc_ok</a></div><div class="ttdeci">bool ms5611_prom_crc_ok(uint16_t *prom)</div><div class="ttdoc">Check if CRC of PROM data is OK.</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00036">ms5611.c:36</a></div></div>
 <div class="ttc" id="ams5611_8h_html"><div class="ttname"><a href="ms5611_8h.html">ms5611.h</a></div></div>
+<div class="ttc" id="anamespacelogger__uart__parse_html_a33b9198fc7e28940b6c44fb67c700651"><div class="ttname"><a href="namespacelogger__uart__parse.html#a33b9198fc7e28940b6c44fb67c700651">logger_uart_parse.crc</a></div><div class="ttdeci">crc</div><div class="ttdef"><b>Definition:</b> <a href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse.py:9</a></div></div>
 <div class="ttc" id="ams5611_8h_html_a2a2e153d853743adf8caad1d03284559"><div class="ttname"><a href="ms5611_8h.html#a2a2e153d853743adf8caad1d03284559">Ms5611Data::d2</a></div><div class="ttdeci">uint32_t d2</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00056">ms5611.h:56</a></div></div>
 <div class="ttc" id="ams5611_8c_html_ae3efc8f29a1b06b12e734be3ab9b5eb4"><div class="ttname"><a href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4">ms5611_calc</a></div><div class="ttdeci">bool ms5611_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5611.</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00081">ms5611.c:81</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="ams5611_8h_html_structMs5611Data"><div class="ttname"><a href="ms5611_8h.html#structMs5611Data">Ms5611Data</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00051">ms5611.h:51</a></div></div>
-<div class="ttc" id="alink__mcu__spi_8c_html_aa60093a9a5d5d17864cfda66c47733e3"><div class="ttname"><a href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a></div><div class="ttdeci">static uint16_t crc</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__spi_8c_source.html#l00036">link_mcu_spi.c:36</a></div></div>
 <div class="ttc" id="ams5611_8c_html_a6dea78d3cbdf03549f9d15b920089ff1"><div class="ttname"><a href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5607_calc</a></div><div class="ttdeci">bool ms5607_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5607.</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00124">ms5611.c:124</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a32f2e37ee053cf2ce8ca28d1f74630e5"><div class="ttname"><a href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></div><div class="ttdeci">int int32_t</div><div class="ttdoc">Typedef defining 32 bit int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00083">vl53l1_types.h:83</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611_8c.html">ms5611.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:55 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

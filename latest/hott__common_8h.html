@@ -151,12 +151,6 @@ Macros</h2></td></tr>
 <tr class="separator:ad3173bb3b6237e59d6d548118fe87466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e2e9437e1b6554aa84855cfd67a983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8h.html#a03e2e9437e1b6554aa84855cfd67a983">HOTT_BUF_LENGTH</a>&#160;&#160;&#160;(<a class="el" href="hott__common_8h.html#ad3173bb3b6237e59d6d548118fe87466">HOTT_NB_CHANNEL</a>*2+3+2)</td></tr>
 <tr class="separator:a03e2e9437e1b6554aa84855cfd67a983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1beed9c63b07301d72b3516543545652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a>&#160;&#160;&#160;<a class="el" href="hott__common_8h.html#ad3173bb3b6237e59d6d548118fe87466">HOTT_NB_CHANNEL</a></td></tr>
-<tr class="memdesc:a1beed9c63b07301d72b3516543545652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default number of channels to actually use.  <a href="hott__common_8h.html#a1beed9c63b07301d72b3516543545652">More...</a><br /></td></tr>
-<tr class="separator:a1beed9c63b07301d72b3516543545652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c5aff514f8ac1ab891bb12b748922b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8h.html#a48c5aff514f8ac1ab891bb12b748922b">RadioControlEvent</a>(_received_frame_handler)&#160;&#160;&#160;<a class="el" href="superbitrf__rc_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a>(_received_frame_handler)</td></tr>
-<tr class="memdesc:a48c5aff514f8ac1ab891bb12b748922b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event macro with handler callback.  <a href="hott__common_8h.html#a48c5aff514f8ac1ab891bb12b748922b">More...</a><br /></td></tr>
-<tr class="separator:a48c5aff514f8ac1ab891bb12b748922b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -166,9 +160,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a382f1ea90f6ebab2742041d2b2e55c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8h.html#a382f1ea90f6ebab2742041d2b2e55c3a">hott_common_decode_event</a> (struct <a class="el" href="hott__common_8h.html#structSHott">SHott</a> *<a class="el" href="radio__control_2hott_8h.html#a2cf66d3953ef0ced047f0c9c3f2acfb2">hott</a>, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:a382f1ea90f6ebab2742041d2b2e55c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoding event function.  <a href="hott__common_8h.html#a382f1ea90f6ebab2742041d2b2e55c3a">More...</a><br /></td></tr>
 <tr class="separator:a382f1ea90f6ebab2742041d2b2e55c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a> (void(*_received_frame_handler)(void))</td></tr>
-<tr class="memdesc:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC event function with handler callback.  <a href="hott__common_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">More...</a><br /></td></tr>
-<tr class="separator:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSHott" id="structSHott"></a>
@@ -184,7 +175,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>HOTT structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="hott__common_8h_source.html#l00077">77</a> of file <a class="el" href="hott__common_8h_source.html">hott_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hott__common_8h_source.html#l00070">70</a> of file <a class="el" href="hott__common_8h_source.html">hott_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -267,46 +258,6 @@ decoder state machine status </td></tr>
 <p>HOTT SUMD frame has between 2 and 32 channels The radio XML file is used to assign the input values to RC channels. </p>
 
 <p class="definition">Definition at line <a class="el" href="hott__common_8h_source.html#l00060">60</a> of file <a class="el" href="hott__common_8h_source.html">hott_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a1beed9c63b07301d72b3516543545652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1beed9c63b07301d72b3516543545652">&#9670;&nbsp;</a></span>RADIO_CONTROL_NB_CHANNEL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RADIO_CONTROL_NB_CHANNEL&#160;&#160;&#160;<a class="el" href="hott__common_8h.html#ad3173bb3b6237e59d6d548118fe87466">HOTT_NB_CHANNEL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default number of channels to actually use. </p>
-
-<p class="definition">Definition at line <a class="el" href="hott__common_8h_source.html#l00067">67</a> of file <a class="el" href="hott__common_8h_source.html">hott_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a48c5aff514f8ac1ab891bb12b748922b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48c5aff514f8ac1ab891bb12b748922b">&#9670;&nbsp;</a></span>RadioControlEvent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RadioControlEvent</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_received_frame_handler</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="superbitrf__rc_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a>(_received_frame_handler)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event macro with handler callback. </p>
-
-<p class="definition">Definition at line <a class="el" href="hott__common_8h_source.html#l00106">106</a> of file <a class="el" href="hott__common_8h_source.html">hott_common.h</a>.</p>
 
 </div>
 </div>
@@ -402,11 +353,11 @@ decoder state machine status </td></tr>
 
 <p>Decoding event function. </p>
 
-<p class="definition">Definition at line <a class="el" href="hott__common_8c_source.html#l00098">98</a> of file <a class="el" href="hott__common_8c_source.html">hott_common.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hott__common_8c_source.html#l00097">97</a> of file <a class="el" href="hott__common_8c_source.html">hott_common.c</a>.</p>
 
-<p class="reference">References <a class="el" href="hott__common_8h_source.html#l00081">SHott::buffer</a>, <a class="el" href="hott__common_8c_source.html#l00071">decode_hott_buffer()</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="hott__common_8h_source.html#l00082">SHott::expected_channels</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8h_source.html#l00060">HOTT_NB_CHANNEL</a>, <a class="el" href="hott__common_8c_source.html#l00034">HOTT_START_BYTE</a>, <a class="el" href="hott__common_8c_source.html#l00039">HOTT_STATUS_DATA</a>, <a class="el" href="hott__common_8c_source.html#l00038">HOTT_STATUS_GOT_HEADER1</a>, <a class="el" href="hott__common_8c_source.html#l00037">HOTT_STATUS_GOT_START</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00083">SHott::idx</a>, <a class="el" href="hott__common_8h_source.html#l00079">SHott::ppm</a>, <a class="el" href="hott__common_8h_source.html#l00078">SHott::pulses</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00968">uart_getch()</a>.</p>
+<p class="reference">References <a class="el" href="hott__common_8h_source.html#l00074">SHott::buffer</a>, <a class="el" href="hott__common_8c_source.html#l00070">decode_hott_buffer()</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="hott__common_8h_source.html#l00075">SHott::expected_channels</a>, <a class="el" href="hott__common_8h_source.html#l00073">SHott::frame_available</a>, <a class="el" href="hott__common_8h_source.html#l00060">HOTT_NB_CHANNEL</a>, <a class="el" href="hott__common_8c_source.html#l00034">HOTT_START_BYTE</a>, <a class="el" href="hott__common_8c_source.html#l00039">HOTT_STATUS_DATA</a>, <a class="el" href="hott__common_8c_source.html#l00038">HOTT_STATUS_GOT_HEADER1</a>, <a class="el" href="hott__common_8c_source.html#l00037">HOTT_STATUS_GOT_START</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00076">SHott::idx</a>, <a class="el" href="hott__common_8h_source.html#l00072">SHott::ppm</a>, <a class="el" href="hott__common_8h_source.html#l00071">SHott::pulses</a>, <a class="el" href="hott__common_8h_source.html#l00077">SHott::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00968">uart_getch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="radio__control_2hott_8c_source.html#l00061">hott_decode_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="radio__control_2hott_8c_source.html#l00062">hott_event()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -428,9 +379,8 @@ decoder state machine status </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hott__common_8h_a382f1ea90f6ebab2742041d2b2e55c3a_icgraph.png" border="0" usemap="#hott__common_8h_a382f1ea90f6ebab2742041d2b2e55c3a_icgraph" alt=""/></div>
 <map name="hott__common_8h_a382f1ea90f6ebab2742041d2b2e55c3a_icgraph" id="hott__common_8h_a382f1ea90f6ebab2742041d2b2e55c3a_icgraph">
-<area shape="rect" title="Decoding event function." alt="" coords="391,5,557,47"/>
-<area shape="rect" href="radio__control_2hott_8c.html#ac7cf5bcb2b395ebd6cb19b23810595fa" title=" " alt="" coords="196,13,343,39"/>
-<area shape="rect" href="radio__control_2hott_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="Decoding event function." alt="" coords="145,5,312,47"/>
+<area shape="rect" href="radio__control_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="5,13,97,39"/>
 </map>
 </div>
 
@@ -466,9 +416,9 @@ decoder state machine status </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="hott__common_8c_source.html#l00042">42</a> of file <a class="el" href="hott__common_8c_source.html">hott_common.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00984">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l01013">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00055">UPARITY_NO</a>, and <a class="el" href="serial__port_8c_source.html#l00052">USTOP_1</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="hott__common_8h_source.html#l00073">SHott::frame_available</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00077">SHott::status</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00984">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l01013">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00055">UPARITY_NO</a>, and <a class="el" href="serial__port_8c_source.html#l00052">USTOP_1</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="radio__control_2hott_8c_source.html#l00048">radio_control_impl_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="radio__control_2hott_8c_source.html#l00048">hott_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -488,32 +438,10 @@ decoder state machine status </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hott__common_8h_a7207cca927f50170171b4957ece09706_icgraph.png" border="0" usemap="#hott__common_8h_a7207cca927f50170171b4957ece09706_icgraph" alt=""/></div>
 <map name="hott__common_8h_a7207cca927f50170171b4957ece09706_icgraph" id="hott__common_8h_a7207cca927f50170171b4957ece09706_icgraph">
-<area shape="rect" title="Init function." alt="" coords="224,5,364,32"/>
-<area shape="rect" href="radio__control_2hott_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" title="Init function." alt="" coords="129,5,269,32"/>
+<area shape="rect" href="radio__control_2hott_8c.html#aa23359b9d4e0090865e441c10a3b2ed7" title="RC init function." alt="" coords="5,5,81,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a760dbd4fa3f62cc43524fc420c2a9e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a760dbd4fa3f62cc43524fc420c2a9e5f">&#9670;&nbsp;</a></span>radio_control_impl_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void radio_control_impl_event </td>
-          <td>(</td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>_received_frame_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>RC event function with handler callback. </p>
-
-<p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8c_source.html#l00061">61</a> of file <a class="el" href="cc2500__paparazzi_8c_source.html">cc2500_paparazzi.c</a>.</p>
 
 </div>
 </div>
@@ -523,7 +451,7 @@ decoder state machine status </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="hott__common_8h.html">hott_common.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

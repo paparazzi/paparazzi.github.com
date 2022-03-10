@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html',''); initResizable(
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">modules/intermcu/inter_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commands_8h_source.html">modules/core/commands.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for nav_drop.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,36 +100,36 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__drop_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2nav_2nav__drop_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2nav_2nav__drop_8c" id="sw_2airborne_2modules_2nav_2nav__drop_8c">
-<area shape="rect" title=" " alt="" coords="1874,5,2033,47"/>
-<area shape="rect" href="nav__drop_8h.html" title=" " alt="" coords="1733,102,1915,129"/>
-<area shape="rect" href="state_8h.html" title=" " alt="" coords="776,370,843,397"/>
-<area shape="rect" title=" " alt="" coords="1907,370,2067,397"/>
-<area shape="rect" title=" " alt="" coords="1991,102,2163,129"/>
-<area shape="rect" href="inter__mcu_8h.html" title=" " alt="" coords="2187,95,2362,136"/>
-<area shape="rect" title=" " alt="" coords="949,691,1003,717"/>
-<area shape="rect" href="nav_8h.html" title=" " alt="" coords="1207,184,1361,225"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1734,370,1831,397"/>
-<area shape="rect" href="nav__survey__rectangle_8h.html" title=" " alt="" coords="1191,273,1377,315"/>
-<area shape="rect" href="common__flight__plan_8h.html" title=" " alt="" coords="949,363,1115,404"/>
-<area shape="rect" href="common__nav_8h.html" title=" " alt="" coords="898,273,1065,315"/>
-<area shape="rect" href="autopilot_8h.html" title=" " alt="" coords="1475,281,1567,307"/>
-<area shape="rect" title=" " alt="" coords="1739,459,1826,486"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="451,541,631,568"/>
-<area shape="rect" title=" " alt="" coords="13,691,83,717"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="235,541,427,568"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="638,452,789,493"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="813,452,963,493"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="447,452,614,493"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="218,616,374,643"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="501,616,654,643"/>
-<area shape="rect" title=" " alt="" coords="678,616,749,643"/>
-<area shape="rect" title=" " alt="" coords="191,691,254,717"/>
-<area shape="rect" title=" " alt="" coords="319,691,387,717"/>
-<area shape="rect" title=" " alt="" coords="36,616,193,643"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="788,541,913,568"/>
-<area shape="rect" title=" " alt="" coords="1531,370,1658,397"/>
-<area shape="rect" title=" " alt="" coords="1191,370,1348,397"/>
-<area shape="rect" title=" " alt="" coords="1373,370,1507,397"/>
+<area shape="rect" title=" " alt="" coords="1835,5,1993,47"/>
+<area shape="rect" href="nav__drop_8h.html" title=" " alt="" coords="1693,95,1876,121"/>
+<area shape="rect" href="state_8h.html" title=" " alt="" coords="861,355,927,382"/>
+<area shape="rect" title=" " alt="" coords="1919,355,2079,382"/>
+<area shape="rect" title=" " alt="" coords="1952,95,2124,121"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="1900,266,2099,293"/>
+<area shape="rect" title=" " alt="" coords="856,676,911,703"/>
+<area shape="rect" href="nav_8h.html" title=" " alt="" coords="1232,169,1385,211"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1737,355,1835,382"/>
+<area shape="rect" href="nav__survey__rectangle_8h.html" title=" " alt="" coords="1379,259,1564,300"/>
+<area shape="rect" href="common__flight__plan_8h.html" title=" " alt="" coords="1003,348,1169,389"/>
+<area shape="rect" href="common__nav_8h.html" title=" " alt="" coords="1000,259,1167,300"/>
+<area shape="rect" href="autopilot_8h.html" title=" " alt="" coords="1263,266,1355,293"/>
+<area shape="rect" title=" " alt="" coords="1743,445,1829,471"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="721,527,901,553"/>
+<area shape="rect" title=" " alt="" coords="5,676,76,703"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="149,527,341,553"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="736,437,887,479"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="371,437,521,479"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="545,437,712,479"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="333,601,489,628"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="864,601,1017,628"/>
+<area shape="rect" title=" " alt="" coords="717,601,788,628"/>
+<area shape="rect" title=" " alt="" coords="209,676,272,703"/>
+<area shape="rect" title=" " alt="" coords="351,676,419,703"/>
+<area shape="rect" title=" " alt="" coords="151,601,309,628"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="466,527,591,553"/>
+<area shape="rect" title=" " alt="" coords="1245,355,1372,382"/>
+<area shape="rect" title=" " alt="" coords="1397,355,1554,382"/>
+<area shape="rect" title=" " alt="" coords="1579,355,1713,382"/>
 </map>
 </div>
 </div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__drop_8c.html">nav_drop.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

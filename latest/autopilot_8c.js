@@ -1,8 +1,10 @@
 var autopilot_8c =
 [
+    [ "AUTOPILOT_RC_ID", "autopilot_8c.html#a57fe5a6aa6eafa6e57b9b59e3929beb9", null ],
     [ "autopilot_check_in_flight", "autopilot_8c.html#af7ef1c5f60743ac47ec0ecfd5a262b8a", null ],
     [ "autopilot_clear_settings", "autopilot_8c.html#addcec3e042ad2a7a6a17e6ffa506b7ba", null ],
     [ "autopilot_event", "autopilot_8c.html#a0f3b1b95b1022b741ae2f876ae831e80", null ],
+    [ "autopilot_failsafe_checks", "autopilot_8c.html#aba1dada707679f59947a724aaf02597d", null ],
     [ "autopilot_get_mode", "autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4", null ],
     [ "autopilot_get_motors_on", "autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35", null ],
     [ "autopilot_in_flight", "autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6", null ],
@@ -21,11 +23,12 @@ var autopilot_8c =
     [ "autopilot_SetModeHandler", "autopilot_8c.html#a9cea92496fd699a395a86b92ce948e89", null ],
     [ "autopilot_store_settings", "autopilot_8c.html#ad7f33b4013b136243b2e908436b911b9", null ],
     [ "autopilot_throttle_killed", "autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8", null ],
+    [ "rc_cb", "autopilot_8c.html#a3200567e5b9d942f5998e9c30550cea2", null ],
     [ "send_alive", "autopilot_8c.html#a65644c7fe2e327f01296b259bc106f85", null ],
     [ "send_attitude", "autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02", null ],
     [ "send_autopilot_version", "autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c", null ],
     [ "send_dl_value", "autopilot_8c.html#a16254e24676fbc701ce5657b98cd5e7b", null ],
     [ "send_minimal_com", "autopilot_8c.html#ab2ea9756339de58fcb8d06e845605597", null ],
-    [ "send_rc", "autopilot_8c.html#ac3ccac3c6911516d3a1ec76dfcf0ba97", null ],
-    [ "autopilot", "autopilot_8c.html#a5beab8f5f7bc19eb6b5ffccad90df788", null ]
+    [ "autopilot", "autopilot_8c.html#a5beab8f5f7bc19eb6b5ffccad90df788", null ],
+    [ "rc_ev", "autopilot_8c.html#ad60be3b55721e6ed2db813c544401981", null ]
 ];

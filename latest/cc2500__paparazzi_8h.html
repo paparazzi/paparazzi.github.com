@@ -129,13 +129,13 @@ Macros</h2></td></tr>
 <tr class="separator:a90e43efe00cc84370f7aaad28816e8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1beed9c63b07301d72b3516543545652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__paparazzi_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a>&#160;&#160;&#160;RADIO_CTL_NB</td></tr>
 <tr class="separator:a1beed9c63b07301d72b3516543545652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c5aff514f8ac1ab891bb12b748922b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__paparazzi_8h.html#a48c5aff514f8ac1ab891bb12b748922b">RadioControlEvent</a>(_received_frame_handler)&#160;&#160;&#160;<a class="el" href="superbitrf__rc_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a>(_received_frame_handler)</td></tr>
-<tr class="separator:a48c5aff514f8ac1ab891bb12b748922b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__paparazzi_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a> (void(*_received_frame_handler)(void))</td></tr>
-<tr class="separator:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af881361839e82bd60fee6bc4fde9decd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__paparazzi_8h.html#af881361839e82bd60fee6bc4fde9decd">radio_control_cc2500_init</a> (void)</td></tr>
+<tr class="separator:af881361839e82bd60fee6bc4fde9decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7629e5ecbc284fae1bb6d1b5bfe57100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cc2500__paparazzi_8h.html#a7629e5ecbc284fae1bb6d1b5bfe57100">radio_control_cc2500_event</a> (void)</td></tr>
+<tr class="separator:a7629e5ecbc284fae1bb6d1b5bfe57100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a1beed9c63b07301d72b3516543545652"></a>
@@ -151,26 +151,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8h_source.html#l00033">33</a> of file <a class="el" href="cc2500__paparazzi_8h_source.html">cc2500_paparazzi.h</a>.</p>
-
-</div>
-</div>
-<a id="a48c5aff514f8ac1ab891bb12b748922b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48c5aff514f8ac1ab891bb12b748922b">&#9670;&nbsp;</a></span>RadioControlEvent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RadioControlEvent</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_received_frame_handler</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="superbitrf__rc_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a>(_received_frame_handler)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8h_source.html#l00037">37</a> of file <a class="el" href="cc2500__paparazzi_8h_source.html">cc2500_paparazzi.h</a>.</p>
 
 </div>
 </div>
@@ -235,23 +215,106 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a760dbd4fa3f62cc43524fc420c2a9e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a760dbd4fa3f62cc43524fc420c2a9e5f">&#9670;&nbsp;</a></span>radio_control_impl_event()</h2>
+<a id="a7629e5ecbc284fae1bb6d1b5bfe57100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7629e5ecbc284fae1bb6d1b5bfe57100">&#9670;&nbsp;</a></span>radio_control_cc2500_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void radio_control_impl_event </td>
+          <td class="memname">void radio_control_cc2500_event </td>
           <td>(</td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>_received_frame_handler</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8c_source.html#l00061">61</a> of file <a class="el" href="cc2500__paparazzi_8c_source.html">cc2500_paparazzi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8c_source.html#l00063">63</a> of file <a class="el" href="cc2500__paparazzi_8c_source.html">cc2500_paparazzi.c</a>.</p>
+
+<p class="reference">References <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::frame_cpt</a>, <a class="el" href="cc2500__paparazzi_8c_source.html#l00035">frsky_raw</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00573">RADIO_CONTROL_FRSKY_ID</a>, <a class="el" href="radio__control_8h_source.html#l00063">RadioControl::radio_ok_cpt</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="cc2500__rx_8h_source.html#l00148">rxRuntimeConfig_s::rcFrameStatusFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00149">rxRuntimeConfig_s::rcProcessFrameFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00147">rxRuntimeConfig_s::rcReadRawFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00053">RX_FRAME_COMPLETE</a>, <a class="el" href="cc2500__rx_8c_source.html#l00131">rxRuntimeConfig</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00062">RadioControl::time_since_last_frame</a>.</p>
+
+</div>
+</div>
+<a id="af881361839e82bd60fee6bc4fde9decd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af881361839e82bd60fee6bc4fde9decd">&#9670;&nbsp;</a></span>radio_control_cc2500_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void radio_control_cc2500_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cc2500__paparazzi_8c_source.html#l00051">51</a> of file <a class="el" href="cc2500__paparazzi_8c_source.html">cc2500_paparazzi.c</a>.</p>
+
+<p class="reference">References <a class="el" href="cc2500_8c_source.html#l00043">cc2500_init()</a>, <a class="el" href="cc2500__settings_8c_source.html#l00159">cc2500_settings_init()</a>, <a class="el" href="cc2500_8c_source.html#l00228">cc2500Reset()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="radio__control_8h_source.html#l00066">RadioControl::nb_channel</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="telemetry_8c_source.html#l00049">register_periodic_telemetry()</a>, <a class="el" href="cc2500__rx_8c_source.html#l00263">rxInit()</a>, and <a class="el" href="cc2500__paparazzi_8c_source.html#l00041">send_cc2500_ppm()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="cc2500__paparazzi_8h_af881361839e82bd60fee6bc4fde9decd_cgraph.png" border="0" usemap="#cc2500__paparazzi_8h_af881361839e82bd60fee6bc4fde9decd_cgraph" alt=""/></div>
+<map name="cc2500__paparazzi_8h_af881361839e82bd60fee6bc4fde9decd_cgraph" id="cc2500__paparazzi_8h_af881361839e82bd60fee6bc4fde9decd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,236,193,262"/>
+<area shape="rect" href="cc2500_8c.html#a789c41a330de75ba23528bbdc7060592" title=" " alt="" coords="295,8,391,34"/>
+<area shape="rect" href="cc2500__settings_8c.html#a05d761a2c53707eb1216a322cd8a0141" title=" " alt="" coords="265,58,420,85"/>
+<area shape="rect" href="cc2500_8c.html#a82d8aae1191b403189abfbd500efaaae" title=" " alt="" coords="1601,210,1706,237"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="241,438,444,465"/>
+<area shape="rect" href="cc2500__rx_8c.html#a2b22f66cf63b1438ff45127b7674d1a9" title="!TODO remove this extern, only needed once for channelCount" alt="" coords="315,388,371,414"/>
+<area shape="rect" href="cc2500__paparazzi_8c.html#aec5542fe88c901a966eb6f7a721df6ad" title=" " alt="" coords="271,489,414,516"/>
+<area shape="rect" href="cc2500__settings_8c.html#ad9416de80534b9fcf9e9fe243e94458e" title=" " alt="" coords="492,58,668,85"/>
+<area shape="rect" href="settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title=" " alt="" coords="529,8,631,34"/>
+<area shape="rect" href="chibios_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title=" " alt="" coords="728,8,851,34"/>
+<area shape="rect" href="cc2500_8c.html#a16824ba518eea5c5e67b3daeeb599269" title=" " alt="" coords="1773,312,1900,338"/>
+<area shape="rect" href="cc2500_8c.html#a5f48b0ae3036525c7ddd12b61b2f92cc" title=" " alt="" coords="1781,160,1892,186"/>
+<area shape="rect" href="cc2500_8c.html#a144a5804c6f5e30744e48c7c93d7db5a" title=" " alt="" coords="1948,305,2103,332"/>
+<area shape="rect" href="cc2500_8c.html#aa9910adea9b66f2a6e49176819f19b0c" title=" " alt="" coords="2152,254,2340,281"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="2389,229,2483,256"/>
+<area shape="rect" href="cc2500_8c.html#af21ded081906c8c7339acef1caeaa8e3" title=" " alt="" coords="1965,166,2085,193"/>
+<area shape="rect" href="cc2500_8c.html#aa88e934fdd4f5f4f40dfa59c7060c208" title=" " alt="" coords="2151,178,2341,205"/>
+<area shape="rect" href="cc2500__rx_8c.html#a93c3050d3a97bd524440b3a670fda546" title=" " alt="" coords="516,337,644,364"/>
+<area shape="rect" href="cc2500__rx_8c.html#a84f01aa00332cb0cebc0516356902362" title=" " alt="" coords="511,388,649,414"/>
+<area shape="rect" href="cc2500__rx_8c.html#ac5d1940eb2bc691c3131c96f05b53d8b" title=" " alt="" coords="517,438,643,465"/>
+<area shape="rect" href="cc2500__compat_8c.html#aba941619bd16a3071dea1dc4611b8b55" title=" " alt="" coords="527,489,633,516"/>
+<area shape="rect" href="cc2500__compat_8c.html#a0acb1005b01d0a3eb384631377d81bc8" title=" " alt="" coords="531,540,629,566"/>
+<area shape="rect" href="cc2500__settings_8c.html#af06545e739401827aa40484c0ad98353" title=" " alt="" coords="542,590,618,617"/>
+<area shape="rect" href="cc2500__settings_8c.html#a56bfe7bd9539b3618207bc6ee9688636" title=" " alt="" coords="1389,832,1485,858"/>
+<area shape="rect" href="cc2500__rx__spi_8c.html#a69c86568ea4d5d0b6b27d470946083c5" title=" " alt="" coords="542,286,618,313"/>
+<area shape="rect" href="cc2500__rx__spi_8c.html#af7042d849711c77eddbe29bbb376b559" title=" " alt="" coords="721,337,858,364"/>
+<area shape="rect" href="cc2500__rx__spi_8c.html#a194c1961355119b3c16bc44cb59cff59" title=" " alt="" coords="716,388,863,414"/>
+<area shape="rect" href="cc2500__rx__spi_8c.html#af73ceb2662c274b493a06c67fc3ab7ae" title=" " alt="" coords="722,236,857,262"/>
+<area shape="rect" href="cc2500__rx__spi_8c.html#a3d2e6ea2ec7d87bc2067c0fd06ecc5c0" title=" " alt="" coords="725,286,854,313"/>
+<area shape="rect" href="cc2500__frsky__common_8h.html#a16e7d002b9f1b3db1d847d1e757eb243" title=" " alt="" coords="1125,337,1292,364"/>
+<area shape="rect" href="cc2500__frsky__common_8h.html#ae9a644b9be932a275c8b3c77fd33f0f9" title=" " alt="" coords="946,616,1042,642"/>
+<area shape="rect" href="cc2500__frsky__common_8h.html#aa4effb30e9de8b5244368623d5265e72" title=" " alt="" coords="911,236,1077,262"/>
+<area shape="rect" href="cc2500__frsky__common_8h.html#a892b2fa126f26f23d001726c99375e95" title=" " alt="" coords="923,286,1065,313"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#a628daf8eab28fce0cf869ec4af2f052c" title=" " alt="" coords="1613,362,1693,389"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#a6f9162189b8e5ec937d4027ae289d928" title=" " alt="" coords="1397,362,1477,389"/>
+<area shape="rect" href="cc2500__settings_8c.html#aad1629e38fffa025a33f8054243bd6f0" title=" " alt="" coords="1581,514,1725,541"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#a528b38863b0d5694139f9c97b03b3de2" title=" " alt="" coords="1606,109,1701,136"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#a803f76032aeda59a1a0e707ee9256894" title=" " alt="" coords="1397,210,1476,237"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#aeb0e66b7e7d77f928e122ea1dfab26fb" title=" " alt="" coords="1382,565,1491,592"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#acd78ab0f584bb8800c35994a51aa78a9" title=" " alt="" coords="1608,8,1699,34"/>
+<area shape="rect" href="cc2500__rx__spi__common_8c.html#af3ce512f5a32f9e6142ab1b659ae7524" title=" " alt="" coords="1340,464,1533,490"/>
+<area shape="rect" href="cc2500__rx__spi__common_8c.html#a3434f37dd6ed687e9913b595df6c48b5" title=" " alt="" coords="1389,514,1485,541"/>
+<area shape="rect" href="cc2500__rx__spi__common_8c.html#abc6581907d99874fdae12641781254a4" title=" " alt="" coords="1377,616,1497,642"/>
+<area shape="rect" href="cc2500__frsky__shared_8c.html#a099e460119ab86d377735771811ad6da" title=" " alt="" coords="1619,312,1687,338"/>
+<area shape="rect" href="cc2500__common_8c.html#a384a659dc20e7a7df306027141c8d0ef" title=" " alt="" coords="1154,590,1263,617"/>
+<area shape="rect" href="cc2500__frsky__d_8h.html#a1fabcc6286af8150d908f18c6cc66821" title=" " alt="" coords="1132,742,1285,769"/>
+<area shape="rect" href="cc2500__frsky__d_8h.html#affefe39779ed1cef49b38cd6da7bb8f9" title=" " alt="" coords="1165,489,1252,516"/>
+<area shape="rect" href="cc2500__frsky__d_8h.html#a0e8b3f46bfa560c14661c76e64d2583f" title=" " alt="" coords="1142,641,1275,668"/>
+<area shape="rect" href="cc2500__frsky__x_8c.html#a90776c7143b1e75512e9bf975aca774e" title=" " alt="" coords="1133,540,1285,566"/>
+<area shape="rect" href="cc2500__frsky__x_8c.html#a09aedfa0332a58b4e89a15471892e08d" title=" " alt="" coords="1166,692,1251,718"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -261,7 +324,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="dir_9b12c12a31fa858d41318e52745a88a3.html">cc2500_frsky</a></li><li class="navelem"><a class="el" href="cc2500__paparazzi_8h.html">cc2500_paparazzi.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

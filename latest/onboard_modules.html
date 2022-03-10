@@ -112,7 +112,6 @@ $(document).ready(function(){initNavTree('onboard_modules.html',''); initResizab
 <li class="level2"><a href="#modules_category_helicopter">Helicopter modules</a></li>
 <li class="level2"><a href="#modules_category_imu">Imu modules</a></li>
 <li class="level2"><a href="#modules_category_ins">Ins modules</a></li>
-<li class="level2"><a href="#modules_category_intermcu">Intermcu modules</a></li>
 <li class="level2"><a href="#modules_category_lidar">Lidar modules</a></li>
 <li class="level2"><a href="#modules_category_light">Light modules</a></li>
 <li class="level2"><a href="#modules_category_loggers">Loggers modules</a></li>
@@ -291,6 +290,7 @@ Datalink modules</h2>
 <li><a class="el" href="module__mavlink.html">mavlink module</a> : Basic MAVLink implementation</li>
 <li><a class="el" href="module__mavlink_decoder.html">mavlink_decoder module</a> : A simple MAVLINK decoder</li>
 <li><a class="el" href="module__telemetry_bluegiga.html">telemetry_bluegiga module</a> : Telemetry using PPRZ protocol over Bluegiga modules</li>
+<li><a class="el" href="module__telemetry_intermcu.html">telemetry_intermcu module</a> : Telemetry bridge over InterMCU for FBW</li>
 <li><a class="el" href="module__telemetry_ivy.html">telemetry_ivy module</a> : Telemetry using IVY</li>
 <li><a class="el" href="module__telemetry_nps.html">telemetry_nps module</a> : Telemetry module for NPS simalation</li>
 <li><a class="el" href="module__telemetry_nps_secure.html">telemetry_nps_secure module</a> : Telemetry module for NPS simulation</li>
@@ -350,6 +350,7 @@ Gps modules</h2>
 <li><a class="el" href="module__gps.html">gps module</a> : Generic GPS functions.</li>
 <li><a class="el" href="module__gps_datalink.html">gps_datalink module</a> : Remote GPS via datalink.</li>
 <li><a class="el" href="module__gps_furuno.html">gps_furuno module</a> : Furuno GPS (UART)</li>
+<li><a class="el" href="module__gps_intermcu.html">gps_intermcu module</a> : Remote GPS via intermcu.</li>
 <li><a class="el" href="module__gps_mediatek_diy.html">gps_mediatek_diy module</a> : Mediatek MT3329 GPS (UART)</li>
 <li><a class="el" href="module__gps_nmea.html">gps_nmea module</a> : NMEA GPS (UART)</li>
 <li><a class="el" href="module__gps_nps.html">gps_nps module</a> : Simulated GPS for NPS.</li>
@@ -454,13 +455,6 @@ Ins modules</h2>
 <li><a class="el" href="module__ins_vn100.html">ins_vn100 module</a> : VectorNav VN100 (SPI)</li>
 <li><a class="el" href="module__ins_xsens.html">ins_xsens module</a> : XSens Mti-G INS</li>
 <li><a class="el" href="module__ins_xsens700.html">ins_xsens700 module</a> : XSens Mti-G 700 INS</li>
-</ul>
-<h2><a class="anchor" id="modules_category_intermcu"></a>
-Intermcu modules</h2>
-<ul>
-<li><a class="el" href="module__intermcu_can.html">intermcu_can module</a> : Inter-MCU communication over CAN</li>
-<li><a class="el" href="module__intermcu_spi.html">intermcu_spi module</a> : Inter-MCU communication over SPI</li>
-<li><a class="el" href="module__intermcu_uart.html">intermcu_uart module</a> : Inter-MCU communication over UART</li>
 </ul>
 <h2><a class="anchor" id="modules_category_lidar"></a>
 Lidar modules</h2>
@@ -609,8 +603,10 @@ Orange_Avoider modules</h2>
 Radio_Control modules</h2>
 <ul>
 <li><a class="el" href="module__radio_control_cc2500_frsky.html">radio_control_cc2500_frsky module</a> : Software implementation of Frsky radio control protocol for onboard CC2500 receiver.</li>
+<li><a class="el" href="module__radio_control_common.html">radio_control_common module</a> : Radio control common</li>
 <li><a class="el" href="module__radio_control_datalink.html">radio_control_datalink module</a> : Radio control over datalink</li>
 <li><a class="el" href="module__radio_control_hott.html">radio_control_hott module</a> : Radio control based on Graupner HOTT SUMD</li>
+<li><a class="el" href="module__radio_control_intermcu.html">radio_control_intermcu module</a> : Radio control over intermcu</li>
 <li><a class="el" href="module__radio_control_ppm.html">radio_control_ppm module</a> : Radio control based on PPM input</li>
 <li><a class="el" href="module__radio_control_sbus.html">radio_control_sbus module</a> : Radio control based on Futaba SBUS</li>
 <li><a class="el" href="module__radio_control_sbus_dual.html">radio_control_sbus_dual module</a> : Radio control using two Futaba SBUS receivers</li>
@@ -745,7 +741,9 @@ Misc modules</h2>
 <li><a class="el" href="module__gvf_module.html">gvf_module module</a> : Guidance algorithm for tracking smooth trajectories</li>
 <li><a class="el" href="module__gvf_parametric.html">gvf_parametric module</a> : Guidance algorithm for tracking 2D and 3D smooth trajectories that are defined by a parametric equation.</li>
 <li><a class="el" href="module__haclc.html">haclc module</a> : HACL* verified cryptographic library</li>
+<li><a class="el" href="module__hard_fault_recovery.html">hard_fault_recovery module</a> : Minimal autopilot for recovery</li>
 <li><a class="el" href="module__hott_telemetry.html">hott_telemetry module</a> : Graupner HOTT telemetry control module.</li>
+<li><a class="el" href="module__intermcu_uart.html">intermcu_uart module</a> : Inter-MCU communication over UART</li>
 <li><a class="el" href="module__joystick.html">joystick module</a> : Handle JOYSTICK_RAW messages</li>
 <li><a class="el" href="module__math.html">math module</a> : Math library.</li>
 <li><a class="el" href="module__mav_course_exercise.html">mav_course_exercise module</a> : Exercise module for Autonomous Flight of MAV Course</li>
@@ -764,7 +762,6 @@ Misc modules</h2>
 <li><a class="el" href="module__servo_tester.html">servo_tester module</a> : Servo tester</li>
 <li><a class="el" href="module__spektrum_soft_bind.html">spektrum_soft_bind module</a> : Puts Spektrum in binding mode through software</li>
 <li><a class="el" href="module__syslink_dl.html">syslink_dl module</a> : Bitcraze syslink module</li>
-<li><a class="el" href="module__telemetry_intermcu.html">telemetry_intermcu module</a> : Telemetry over InterMCU</li>
 <li><a class="el" href="module__time_countdown.html">time_countdown module</a> : Count down time.</li>
 <li><a class="el" href="module__tlsf.html">tlsf module</a> : Dynamic memory allocator</li>
 <li><a class="el" href="module__uav_recovery.html">uav_recovery module</a> : Parachute</li>
@@ -777,7 +774,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

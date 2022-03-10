@@ -6,6 +6,5 @@ var fixedwing_2autopilot__generated_8c =
     [ "autopilot_generated_periodic", "fixedwing_2autopilot__generated_8c.html#a275c90ef6580ab8a9c8a36f7ee3b9644", null ],
     [ "autopilot_generated_set_mode", "fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc", null ],
     [ "autopilot_generated_set_motors_on", "fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab", null ],
-    [ "autopilot_generated_SetModeHandler", "fixedwing_2autopilot__generated_8c.html#a26a81960b68e8c0641758deb70e79d2d", null ],
-    [ "copy_from_to_fbw", "fixedwing_2autopilot__generated_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921", null ]
+    [ "autopilot_generated_SetModeHandler", "fixedwing_2autopilot__generated_8c.html#a26a81960b68e8c0641758deb70e79d2d", null ]
 ];

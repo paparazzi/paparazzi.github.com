@@ -6,6 +6,8 @@ var dir_5e5c455c6cc9b4955752fc2ddd0b9fff =
     [ "gps_datalink.c", "gps__datalink_8c.html", "gps__datalink_8c" ],
     [ "gps_datalink.h", "gps__datalink_8h.html", "gps__datalink_8h" ],
     [ "gps_furuno.c", "gps__furuno_8c.html", "gps__furuno_8c" ],
+    [ "gps_intermcu.c", "gps__intermcu_8c.html", "gps__intermcu_8c" ],
+    [ "gps_intermcu.h", "gps__intermcu_8h.html", "gps__intermcu_8h" ],
     [ "gps_mtk.c", "gps__mtk_8c.html", "gps__mtk_8c" ],
     [ "gps_mtk.h", "gps__mtk_8h.html", "gps__mtk_8h" ],
     [ "gps_nmea.c", "gps__nmea_8c.html", "gps__nmea_8c" ],

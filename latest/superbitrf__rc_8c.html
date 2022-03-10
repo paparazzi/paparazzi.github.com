@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('superbitrf__rc_8c.html',''); initResiz
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="superbitrf__rc_8h_source.html">superbitrf_rc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">modules/radio_control/radio_control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for superbitrf_rc.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -99,16 +100,15 @@ $(document).ready(function(){initNavTree('superbitrf__rc_8c.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="superbitrf__rc_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2radio__control_2superbitrf__rc_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2radio__control_2superbitrf__rc_8c" id="sw_2airborne_2modules_2radio__control_2superbitrf__rc_8c">
-<area shape="rect" title=" " alt="" coords="153,5,361,47"/>
-<area shape="rect" href="superbitrf__rc_8h.html" title=" " alt="" coords="117,102,233,129"/>
-<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="319,95,486,136"/>
+<area shape="rect" title=" " alt="" coords="245,5,453,47"/>
+<area shape="rect" href="superbitrf__rc_8h.html" title=" " alt="" coords="103,102,219,129"/>
+<area shape="rect" href="radio__control_8h.html" title=" " alt="" coords="266,95,433,136"/>
+<area shape="rect" href="abi_8h.html" title=" " alt="" coords="511,102,657,129"/>
 <area shape="rect" title=" " alt="" coords="5,184,219,211"/>
-<area shape="rect" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="243,184,298,211"/>
-<area shape="rect" title=" " alt="" coords="323,184,483,211"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="507,184,605,211"/>
-<area shape="rect" title=" " alt="" coords="629,184,819,211"/>
-<area shape="rect" title=" " alt="" coords="231,259,310,285"/>
-<area shape="rect" title=" " alt="" coords="513,259,599,285"/>
+<area shape="rect" title=" " alt="" coords="243,184,403,211"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="427,184,525,211"/>
+<area shape="rect" title=" " alt="" coords="433,259,519,285"/>
+<area shape="rect" title=" " alt="" coords="549,184,675,211"/>
 </map>
 </div>
 </div>
@@ -116,85 +116,84 @@ $(document).ready(function(){initNavTree('superbitrf__rc_8c.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6ba4bebf68f7ff39f4569dfe3b1f2832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">radio_control_impl_init</a> (void)</td></tr>
-<tr class="memdesc:a6ba4bebf68f7ff39f4569dfe3b1f2832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization.  <a href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">More...</a><br /></td></tr>
-<tr class="separator:a6ba4bebf68f7ff39f4569dfe3b1f2832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae510ce05f3f3c15485616154918bad9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9">superbitrf_rc_init</a> (void)</td></tr>
+<tr class="memdesc:aae510ce05f3f3c15485616154918bad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization.  <a href="superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9">More...</a><br /></td></tr>
+<tr class="separator:aae510ce05f3f3c15485616154918bad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8abad32cff4826f8b0b9ac2d88520c4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a">superbitrf_rc_normalize</a> (<a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *in, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *out, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> count)</td></tr>
 <tr class="memdesc:a8abad32cff4826f8b0b9ac2d88520c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">normalize superbitrf rc_values to radio values  <a href="superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a">More...</a><br /></td></tr>
 <tr class="separator:a8abad32cff4826f8b0b9ac2d88520c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a> (void(*_received_frame_handler)(void))</td></tr>
-<tr class="memdesc:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC event function with handler callback.  <a href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f">More...</a><br /></td></tr>
-<tr class="separator:a760dbd4fa3f62cc43524fc420c2a9e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc61e3ef036fe29a6dc2d34dd6919f10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superbitrf__rc_8c.html#afc61e3ef036fe29a6dc2d34dd6919f10">superbitrf_rc_event</a> (void)</td></tr>
+<tr class="memdesc:afc61e3ef036fe29a6dc2d34dd6919f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC event function.  <a href="superbitrf__rc_8c.html#afc61e3ef036fe29a6dc2d34dd6919f10">More...</a><br /></td></tr>
+<tr class="separator:afc61e3ef036fe29a6dc2d34dd6919f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI </p>
 
 <p class="definition">Definition in file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a760dbd4fa3f62cc43524fc420c2a9e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a760dbd4fa3f62cc43524fc420c2a9e5f">&#9670;&nbsp;</a></span>radio_control_impl_event()</h2>
+<a id="afc61e3ef036fe29a6dc2d34dd6919f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc61e3ef036fe29a6dc2d34dd6919f10">&#9670;&nbsp;</a></span>superbitrf_rc_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void radio_control_impl_event </td>
+          <td class="memname">void superbitrf_rc_event </td>
           <td>(</td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>_received_frame_handler</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>RC event function with handler callback. </p>
-<p>PPM frames are normalized using the IIR filter. </p>
+<p>RC event function. </p>
 
-<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00052">52</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00058">58</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
 
-<p class="reference">References <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00077">SuperbitRF::cyrf6936</a>, <a class="el" href="cyrf6936_8c_source.html#l00086">cyrf6936_event()</a>, <a class="el" href="radio__control_8h_source.html#l00068">RadioControl::frame_cpt</a>, <a class="el" href="cc2500__paparazzi_8c_source.html#l00034">frsky_raw</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00046">SuperbitRF::num_channels</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="intermcu__ap_8h_source.html#l00049">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="radio__control_8h_source.html#l00066">RadioControl::radio_ok_cpt</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00106">SuperbitRF::rc_frame_available</a>, <a class="el" href="radio__control_8h_source.html#l00056">RC_OK</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00109">SuperbitRF::rc_values</a>, <a class="el" href="cc2500__rx_8h_source.html#l00148">rxRuntimeConfig_s::rcFrameStatusFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00149">rxRuntimeConfig_s::rcProcessFrameFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00147">rxRuntimeConfig_s::rcReadRawFn</a>, <a class="el" href="cc2500__rx_8h_source.html#l00053">RX_FRAME_COMPLETE</a>, <a class="el" href="cc2500__rx_8c_source.html#l00131">rxRuntimeConfig</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::status</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00032">superbitrf</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00322">superbitrf_event()</a>, <a class="el" href="superbitrf__rc_8c_source.html#l00038">superbitrf_rc_normalize()</a>, <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::time_since_last_frame</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
+<p class="reference">References <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00077">SuperbitRF::cyrf6936</a>, <a class="el" href="cyrf6936_8c_source.html#l00086">cyrf6936_event()</a>, <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::frame_cpt</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8h_source.html#l00046">SuperbitRF::num_channels</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00561">RADIO_CONTROL_SUPERBITRF_RC_ID</a>, <a class="el" href="radio__control_8h_source.html#l00063">RadioControl::radio_ok_cpt</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00106">SuperbitRF::rc_frame_available</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="modules_2datalink_2superbitrf_8h_source.html#l00109">SuperbitRF::rc_values</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, <a class="el" href="arch_2sim_2modules_2datalink_2superbitrf_8c_source.html#l00032">superbitrf</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00322">superbitrf_event()</a>, <a class="el" href="superbitrf__rc_8c_source.html#l00044">superbitrf_rc_normalize()</a>, <a class="el" href="radio__control_8h_source.html#l00062">RadioControl::time_since_last_frame</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="superbitrf__rc_8c_a760dbd4fa3f62cc43524fc420c2a9e5f_cgraph.png" border="0" usemap="#superbitrf__rc_8c_a760dbd4fa3f62cc43524fc420c2a9e5f_cgraph" alt=""/></div>
-<map name="superbitrf__rc_8c_a760dbd4fa3f62cc43524fc420c2a9e5f_cgraph" id="superbitrf__rc_8c_a760dbd4fa3f62cc43524fc420c2a9e5f_cgraph">
-<area shape="rect" title="RC event function with handler callback." alt="" coords="5,333,148,375"/>
-<area shape="rect" href="cyrf6936_8c.html#a0b25c82679dcd151cb4eb29986f796c9" title="The on event call for the CYRF6936 chip." alt="" coords="687,75,810,102"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="219,341,349,367"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a" title="normalize superbitrf rc_values to radio values" alt="" coords="196,391,372,418"/>
-<area shape="rect" href="cyrf6936_8c.html#aff65efb88dd0ce64192c1afe791f3630" title="Read multiple bytes from a register." alt="" coords="1109,75,1266,102"/>
-<area shape="rect" href="cyrf6936_8c.html#aca1d3266e0b4cb4c4b4a65ad2085cefb" title="Read a byte from a register." alt="" coords="885,25,1057,51"/>
-<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="1107,126,1268,153"/>
-<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="883,181,1059,207"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1316,101,1409,127"/>
-<area shape="rect" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49" title="Write to multiple registers one byte." alt="" coords="669,315,829,342"/>
-<area shape="rect" href="cyrf6936_8c.html#a9476a030cd1c1812dd9415f8913c35f6" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="438,5,597,47"/>
-<area shape="rect" href="cyrf6936_8c.html#ab2e2ab2d19b97905d2c9825f65cddfda" title="Send a packet with a certain length." alt="" coords="459,239,576,266"/>
-<area shape="rect" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="458,341,577,367"/>
-<area shape="rect" href="cyrf6936_8c.html#a5185bf5f551b606637aaba99a2de5934" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="439,173,596,215"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="675,423,822,450"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="478,442,557,469"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8" title="Generate the channels." alt="" coords="438,493,597,535"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="447,559,587,600"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="667,625,831,651"/>
-<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="663,675,835,702"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd" title=" " alt="" coords="420,122,615,149"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="676,559,821,600"/>
+<div class="center"><img src="superbitrf__rc_8c_afc61e3ef036fe29a6dc2d34dd6919f10_cgraph.png" border="0" usemap="#superbitrf__rc_8c_afc61e3ef036fe29a6dc2d34dd6919f10_cgraph" alt=""/></div>
+<map name="superbitrf__rc_8c_afc61e3ef036fe29a6dc2d34dd6919f10_cgraph" id="superbitrf__rc_8c_afc61e3ef036fe29a6dc2d34dd6919f10_cgraph">
+<area shape="rect" title="RC event function." alt="" coords="5,341,153,367"/>
+<area shape="rect" href="cyrf6936_8c.html#a0b25c82679dcd151cb4eb29986f796c9" title="The on event call for the CYRF6936 chip." alt="" coords="693,75,815,102"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="225,341,354,367"/>
+<area shape="rect" href="superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a" title="normalize superbitrf rc_values to radio values" alt="" coords="201,391,377,418"/>
+<area shape="rect" href="cyrf6936_8c.html#aff65efb88dd0ce64192c1afe791f3630" title="Read multiple bytes from a register." alt="" coords="1114,75,1271,102"/>
+<area shape="rect" href="cyrf6936_8c.html#aca1d3266e0b4cb4c4b4a65ad2085cefb" title="Read a byte from a register." alt="" coords="890,25,1062,51"/>
+<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="1112,126,1273,153"/>
+<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="888,181,1064,207"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1321,101,1415,127"/>
+<area shape="rect" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49" title="Write to multiple registers one byte." alt="" coords="674,315,834,342"/>
+<area shape="rect" href="cyrf6936_8c.html#a9476a030cd1c1812dd9415f8913c35f6" title="Read the RX IRQ status register, the rx status register and the rx packet." alt="" coords="443,5,602,47"/>
+<area shape="rect" href="cyrf6936_8c.html#ab2e2ab2d19b97905d2c9825f65cddfda" title="Send a packet with a certain length." alt="" coords="464,239,581,266"/>
+<area shape="rect" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3" title="Write to one register." alt="" coords="463,341,582,367"/>
+<area shape="rect" href="cyrf6936_8c.html#a5185bf5f551b606637aaba99a2de5934" title="Set the channel, SOP code, DATA code and the CRC seed." alt="" coords="444,173,601,215"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="681,423,827,450"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio." alt="" coords="483,442,562,469"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8" title="Generate the channels." alt="" coords="443,493,602,535"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e" title="When we receive a packet this callback is called." alt="" coords="453,559,593,600"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6" title=" " alt="" coords="672,625,836,651"/>
+<area shape="rect" href="arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec" title=" " alt="" coords="668,675,840,702"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd" title=" " alt="" coords="425,122,620,149"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a18383fa296d8cde700375e8eeff7b618" title="Parse a radio channel packet." alt="" coords="681,559,827,600"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6ba4bebf68f7ff39f4569dfe3b1f2832"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba4bebf68f7ff39f4569dfe3b1f2832">&#9670;&nbsp;</a></span>radio_control_impl_init()</h2>
+<a id="aae510ce05f3f3c15485616154918bad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae510ce05f3f3c15485616154918bad9">&#9670;&nbsp;</a></span>superbitrf_rc_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void radio_control_impl_init </td>
+          <td class="memname">void superbitrf_rc_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -204,37 +203,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialization. </p>
-<p>Main Radio initialization. </p>
+<p>RC init function. </p>
 
-<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00032">32</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00037">37</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
 
-<p class="reference">References <a class="el" href="spektrum__arch_8c_source.html#l00041">spektrum_available</a>, and <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00242">superbitrf_init()</a>.</p>
+<p class="reference">References <a class="el" href="radio__control_8h_source.html#l00066">RadioControl::nb_channel</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00242">superbitrf_init()</a>, and <a class="el" href="superbitrf__rc_8h_source.html#l00032">SUPERBITRF_RC_NB_CHANNEL</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="superbitrf__rc_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph.png" border="0" usemap="#superbitrf__rc_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph" alt=""/></div>
-<map name="superbitrf__rc_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph" id="superbitrf__rc_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph">
-<area shape="rect" title="Initialization." alt="" coords="5,335,176,361"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="224,335,337,361"/>
-<area shape="rect" href="cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="433,107,540,133"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="420,157,553,184"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a85466bd720c4b4526b51ee2a42501e49" title=" " alt="" coords="415,208,558,235"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a8f4467bfe6fde05aa3f86bc87c6aa13f" title=" " alt="" coords="433,259,540,285"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="385,309,588,336"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7" title=" " alt="" coords="430,360,543,387"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21" title=" " alt="" coords="405,411,568,453"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a55bb749aa2af532e0b87f7a01d9a6888" title=" " alt="" coords="425,477,548,504"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623" title=" " alt="" coords="651,557,797,584"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a00d1177de3911f3af7caa59f1b50298f" title=" " alt="" coords="413,579,560,621"/>
-<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="636,5,812,32"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="679,56,769,83"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="685,107,763,133"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="653,157,795,184"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="659,208,789,235"/>
-<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="860,5,1021,32"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1069,5,1163,32"/>
+<div class="center"><img src="superbitrf__rc_8c_aae510ce05f3f3c15485616154918bad9_cgraph.png" border="0" usemap="#superbitrf__rc_8c_aae510ce05f3f3c15485616154918bad9_cgraph" alt=""/></div>
+<map name="superbitrf__rc_8c_aae510ce05f3f3c15485616154918bad9_cgraph" id="superbitrf__rc_8c_aae510ce05f3f3c15485616154918bad9_cgraph">
+<area shape="rect" title="Initialization." alt="" coords="5,335,137,361"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="185,335,299,361"/>
+<area shape="rect" href="cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="395,107,501,133"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="381,157,515,184"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a85466bd720c4b4526b51ee2a42501e49" title=" " alt="" coords="377,208,519,235"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a8f4467bfe6fde05aa3f86bc87c6aa13f" title=" " alt="" coords="395,259,501,285"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="347,309,549,336"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7" title=" " alt="" coords="391,360,505,387"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21" title=" " alt="" coords="367,411,529,453"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a55bb749aa2af532e0b87f7a01d9a6888" title=" " alt="" coords="387,477,509,504"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623" title=" " alt="" coords="612,557,759,584"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a00d1177de3911f3af7caa59f1b50298f" title=" " alt="" coords="375,579,521,621"/>
+<area shape="rect" href="cyrf6936_8c.html#a7dbf6c94dc4d29bc1c8a46b797e745e8" title="Write a byte to a register." alt="" coords="597,5,773,32"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level." alt="" coords="641,56,730,83"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="647,107,724,133"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="614,157,757,184"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="620,208,751,235"/>
+<area shape="rect" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b" title="Write multiple bytes to a register." alt="" coords="821,5,983,32"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="1031,5,1124,32"/>
 </map>
 </div>
 
@@ -282,11 +281,11 @@ Functions</h2></td></tr>
 
 <p>normalize superbitrf rc_values to radio values </p>
 
-<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00038">38</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="superbitrf__rc_8c_source.html#l00044">44</a> of file <a class="el" href="superbitrf__rc_8c_source.html">superbitrf_rc.c</a>.</p>
 
-<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, and <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>.</p>
+<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, and <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="superbitrf__rc_8c_source.html#l00052">radio_control_impl_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="superbitrf__rc_8c_source.html#l00058">superbitrf_rc_event()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -294,8 +293,8 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="superbitrf__rc_8c_a8abad32cff4826f8b0b9ac2d88520c4a_icgraph.png" border="0" usemap="#superbitrf__rc_8c_a8abad32cff4826f8b0b9ac2d88520c4a_icgraph" alt=""/></div>
 <map name="superbitrf__rc_8c_a8abad32cff4826f8b0b9ac2d88520c4a_icgraph" id="superbitrf__rc_8c_a8abad32cff4826f8b0b9ac2d88520c4a_icgraph">
-<area shape="rect" title="normalize superbitrf rc_values to radio values" alt="" coords="196,13,372,39"/>
-<area shape="rect" href="superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback." alt="" coords="5,5,148,47"/>
+<area shape="rect" title="normalize superbitrf rc_values to radio values" alt="" coords="201,5,377,32"/>
+<area shape="rect" href="superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function." alt="" coords="5,5,153,32"/>
 </map>
 </div>
 
@@ -307,7 +306,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="superbitrf__rc_8c.html">superbitrf_rc.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -123,35 +123,38 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8h_sourc
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if ACTUATORS_NB</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> actuators_init(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> actuators_delay_time;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span>   actuators_delay_done;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators[ACTUATORS_NB];</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators_pprz[ACTUATORS_NB];</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define _ActuatorSet(_n, _v) Set_ ## _n ## _Servo(_v)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define ActuatorSet(_n, _v) _ActuatorSet(_n, _v)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_NB */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="modules_2actuators_2actuators_8h.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if ACTUATORS_NB</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> actuators_delay_time;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span>   actuators_delay_done;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators[ACTUATORS_NB];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">extern</span> <a class="code" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> actuators_pprz[ACTUATORS_NB];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define _ActuatorSet(_n, _v) Set_ ## _n ## _Servo(_v)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define ActuatorSet(_n, _v) _ActuatorSet(_n, _v)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_NB */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
+<div class="ttc" id="amodules_2actuators_2actuators_8h_html_a1c91d56a3813a303fa5f0d80197e3b8b"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a></div><div class="ttdeci">void actuators_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00121">actuators.c:121</a></div></div>
 <div class="ttc" id="apaparazzi_8h_html"><div class="ttname"><a href="paparazzi_8h.html">paparazzi.h</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aa343fa3b3d06292b959ffdd4c4703b06"><div class="ttname"><a href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a></div><div class="ttdeci">short int16_t</div><div class="ttdoc">Typedef defining 16 bit short type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00093">vl53l1_types.h:93</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
+<div class="ttc" id="amodules_2actuators_2actuators_8h_html_a7ba1bde30e3a87694e878b244de10c47"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a></div><div class="ttdeci">void actuators_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators_8c_source.html#l00120">actuators.c:120</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8h.html">actuators.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

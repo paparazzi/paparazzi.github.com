@@ -93,9 +93,10 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8h.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>Rotorcraft Inter-MCU on FlyByWire.  
+<p>Inter-MCU on FlyByWire side.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="intermcu_8h_source.html">modules/intermcu/intermcu.h</a>&quot;</code><br />
+<code>#include &quot;pprzlink/intermcu_msg.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for intermcu_fbw.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,8 +104,9 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8h.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__fbw_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2intermcu_2intermcu__fbw_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2intermcu_2intermcu__fbw_8h" id="sw_2airborne_2modules_2intermcu_2intermcu__fbw_8h">
-<area shape="rect" title="Rotorcraft Inter&#45;MCU on FlyByWire." alt="" coords="197,5,385,47"/>
-<area shape="rect" href="intermcu_8h.html" title="Rotorcraft Inter&#45;MCU interface." alt="" coords="184,95,399,121"/>
+<area shape="rect" title="Inter&#45;MCU on FlyByWire side." alt="" coords="308,5,496,47"/>
+<area shape="rect" href="intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="184,95,399,121"/>
+<area shape="rect" title=" " alt="" coords="423,95,605,121"/>
 <area shape="rect" title=" " alt="" coords="5,169,60,196"/>
 <area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="84,169,283,196"/>
 <area shape="rect" title=" " alt="" coords="307,169,491,196"/>
@@ -121,10 +123,9 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8h.html',''); initResiza
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__fbw_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2intermcu_2intermcu__fbw_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2intermcu_2intermcu__fbw_8hdep" id="sw_2airborne_2modules_2intermcu_2intermcu__fbw_8hdep">
-<area shape="rect" title="Rotorcraft Inter&#45;MCU on FlyByWire." alt="" coords="196,5,384,47"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html" title=" " alt="" coords="5,102,172,143"/>
-<area shape="rect" href="intermcu__fbw_8c.html" title="Rotorcraft Inter&#45;MCU on FlyByWire." alt="" coords="197,102,383,143"/>
-<area shape="rect" href="spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="407,95,602,151"/>
+<area shape="rect" title="Inter&#45;MCU on FlyByWire side." alt="" coords="111,5,299,47"/>
+<area shape="rect" href="intermcu__fbw_8c.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="5,102,192,143"/>
+<area shape="rect" href="spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="216,95,411,151"/>
 </map>
 </div>
 </div>
@@ -155,22 +156,26 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa60e278348807df613abfa9ba8663503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#aa60e278348807df613abfa9ba8663503">intermcu_on_rc_frame</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="telemetry__intermcu__fbw_8c.html#a2165b8ffefef56193179893400522499">fbw_mode</a>)</td></tr>
-<tr class="separator:aa60e278348807df613abfa9ba8663503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbadcd4c86e9907fc3f28610b0ef6de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#abbadcd4c86e9907fc3f28610b0ef6de1">intermcu_send_status</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>)</td></tr>
-<tr class="separator:abbadcd4c86e9907fc3f28610b0ef6de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33141c0ab91bcac2e0d5862739d728aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a33141c0ab91bcac2e0d5862739d728aa">InterMcuEvent</a> (void(*frame_handler)(void))</td></tr>
-<tr class="separator:a33141c0ab91bcac2e0d5862739d728aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3310d390d84ed323b5bb1ca7ad0cc7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a3310d390d84ed323b5bb1ca7ad0cc7db">intermcu_send_status</a> (void)</td></tr>
+<tr class="memdesc:a3310d390d84ed323b5bb1ca7ad0cc7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">send fbw status message  <a href="intermcu__fbw_8h.html#a3310d390d84ed323b5bb1ca7ad0cc7db">More...</a><br /></td></tr>
+<tr class="separator:a3310d390d84ed323b5bb1ca7ad0cc7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e51fa32b115a3aa8bd63474c1ae5560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a7e51fa32b115a3aa8bd63474c1ae5560">intermcu_parse_IMCU_COMMANDS</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memdesc:a7e51fa32b115a3aa8bd63474c1ae5560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datalink event functions.  <a href="intermcu__fbw_8h.html#a7e51fa32b115a3aa8bd63474c1ae5560">More...</a><br /></td></tr>
+<tr class="separator:a7e51fa32b115a3aa8bd63474c1ae5560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f01901c6cc79349e1fda18cf5f7878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a90f01901c6cc79349e1fda18cf5f7878">intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a90f01901c6cc79349e1fda18cf5f7878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bde14da313b2242a4be2765e6caa82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a94bde14da313b2242a4be2765e6caa82">intermcu_forward_uplink</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a94bde14da313b2242a4be2765e6caa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a54cc031e8ec2149a161a3b14b0bd346c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a54cc031e8ec2149a161a3b14b0bd346c">autopilot_motors_on</a></td></tr>
-<tr class="separator:a54cc031e8ec2149a161a3b14b0bd346c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7fd5a147022b41f68bec53e4ea8275"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#afd7fd5a147022b41f68bec53e4ea8275">intermcu_ap_motors_on</a></td></tr>
+<tr class="separator:afd7fd5a147022b41f68bec53e4ea8275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c64530afb6fb7ea386b9e57bfc0275d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu__fbw_8h.html#a9c64530afb6fb7ea386b9e57bfc0275d">intermcu_commands</a> [COMMANDS_NB]</td></tr>
 <tr class="separator:a9c64530afb6fb7ea386b9e57bfc0275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rotorcraft Inter-MCU on FlyByWire. </p>
+<div class="textblock"><p>Inter-MCU on FlyByWire side. </p>
 
 <p class="definition">Definition in file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -186,7 +191,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00046">46</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00055">55</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +207,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00047">47</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00056">56</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +223,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00048">48</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00057">57</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +239,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00049">49</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00059">59</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +255,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00045">45</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00054">54</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +271,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00044">44</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00053">53</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +287,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00042">42</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00051">51</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +303,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00041">41</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00050">50</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +319,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00040">40</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00049">49</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
@@ -330,49 +335,104 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00043">43</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8h_source.html#l00052">52</a> of file <a class="el" href="intermcu__fbw_8h_source.html">intermcu_fbw.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa60e278348807df613abfa9ba8663503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa60e278348807df613abfa9ba8663503">&#9670;&nbsp;</a></span>intermcu_on_rc_frame()</h2>
+<a id="a94bde14da313b2242a4be2765e6caa82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bde14da313b2242a4be2765e6caa82">&#9670;&nbsp;</a></span>intermcu_forward_uplink()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void intermcu_on_rc_frame </td>
+          <td class="memname">void intermcu_forward_uplink </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>fbw_mode</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00106">106</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00197">197</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
 
-<p class="reference">References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00063">fbw_mode</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00056">intermcu</a>, <a class="el" href="intermcu_8h_source.html#l00035">INTERMCU_FBW</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00046">INTERMCU_RADIO_AUX1</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00047">INTERMCU_RADIO_AUX2</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00048">INTERMCU_RADIO_AUX3</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00045">INTERMCU_RADIO_KILL_SWITCH</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00044">INTERMCU_RADIO_MODE</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00042">INTERMCU_RADIO_PITCH</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00041">INTERMCU_RADIO_ROLL</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00040">INTERMCU_RADIO_THROTTLE</a>, <a class="el" href="intermcu__fbw_8h_source.html#l00043">INTERMCU_RADIO_YAW</a>, <a class="el" href="intermcu__ap_8h_source.html#l00046">RADIO_AUX1</a>, <a class="el" href="intermcu__ap_8h_source.html#l00047">RADIO_AUX2</a>, <a class="el" href="intermcu__ap_8h_source.html#l00048">RADIO_AUX3</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="intermcu__ap_8h_source.html#l00049">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00045">RADIO_KILL_SWITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00044">RADIO_MODE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00042">RADIO_PITCH</a>, <a class="el" href="intermcu__ap_8h_source.html#l00041">RADIO_ROLL</a>, <a class="el" href="intermcu__ap_8h_source.html#l00040">RADIO_THROTTLE</a>, <a class="el" href="intermcu__ap_8h_source.html#l00043">RADIO_YAW</a>, <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00230">fbw_on_rc_frame()</a>.</p>
+<p class="reference">References <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::device</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00059">intermcu</a>, <a class="el" href="intermcu__dl_8c_source.html#l00057">intermcu_dl_repack()</a>, and <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::transport</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="intermcu__fbw_8h_aa60e278348807df613abfa9ba8663503_icgraph.png" border="0" usemap="#intermcu__fbw_8h_aa60e278348807df613abfa9ba8663503_icgraph" alt=""/></div>
-<map name="intermcu__fbw_8h_aa60e278348807df613abfa9ba8663503_icgraph" id="intermcu__fbw_8h_aa60e278348807df613abfa9ba8663503_icgraph">
-<area shape="rect" title=" " alt="" coords="335,5,503,32"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html#a9315fe63b323bff7e8b6a46ceb10138f" title="Callback when we received an RC frame." alt="" coords="152,5,287,32"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title=" " alt="" coords="5,5,104,32"/>
+<div class="center"><img src="intermcu__fbw_8h_a94bde14da313b2242a4be2765e6caa82_cgraph.png" border="0" usemap="#intermcu__fbw_8h_a94bde14da313b2242a4be2765e6caa82_cgraph" alt=""/></div>
+<map name="intermcu__fbw_8h_a94bde14da313b2242a4be2765e6caa82_cgraph" id="intermcu__fbw_8h_a94bde14da313b2242a4be2765e6caa82_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,189,32"/>
+<area shape="rect" href="intermcu__dl_8c.html#a1c1dcd938c8994f397cab17772b15d3f" title="Repack message with same header and send on selected link if possible." alt="" coords="237,5,388,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="abbadcd4c86e9907fc3f28610b0ef6de1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbadcd4c86e9907fc3f28610b0ef6de1">&#9670;&nbsp;</a></span>intermcu_send_status()</h2>
+<a id="a7e51fa32b115a3aa8bd63474c1ae5560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e51fa32b115a3aa8bd63474c1ae5560">&#9670;&nbsp;</a></span>intermcu_parse_IMCU_COMMANDS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void intermcu_parse_IMCU_COMMANDS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Datalink event functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00172">172</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+
+<p class="reference">References <a class="el" href="intermcu_8h_source.html#l00076">intermcu_t::cmd_status</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00059">intermcu</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00067">intermcu_ap_motors_on</a>, <a class="el" href="intermcu_8h_source.html#l00065">INTERMCU_CLR_CMD_STATUS</a>, <a class="el" href="intermcu_8h_source.html#l00057">INTERMCU_CMD_MOTORS_ON</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00066">intermcu_commands</a>, <a class="el" href="intermcu_8h_source.html#l00066">INTERMCU_GET_CMD_STATUS</a>, <a class="el" href="intermcu_8h_source.html#l00042">INTERMCU_OK</a>, <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::status</a>, and <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::time_since_last_frame</a>.</p>
+
+</div>
+</div>
+<a id="a90f01901c6cc79349e1fda18cf5f7878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f01901c6cc79349e1fda18cf5f7878">&#9670;&nbsp;</a></span>intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00190">190</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+
+<p class="reference">References <a class="el" href="spektrum__soft__bind__fbw_8c_source.html#l00039">received_spektrum_soft_bind()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="intermcu__fbw_8h_a90f01901c6cc79349e1fda18cf5f7878_cgraph.png" border="0" usemap="#intermcu__fbw_8h_a90f01901c6cc79349e1fda18cf5f7878_cgraph" alt=""/></div>
+<map name="intermcu__fbw_8h_a90f01901c6cc79349e1fda18cf5f7878_cgraph" id="intermcu__fbw_8h_a90f01901c6cc79349e1fda18cf5f7878_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,47"/>
+<area shape="rect" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f" title=" " alt="" coords="233,13,447,39"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="495,13,625,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3310d390d84ed323b5bb1ca7ad0cc7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3310d390d84ed323b5bb1ca7ad0cc7db">&#9670;&nbsp;</a></span>intermcu_send_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,100 +440,37 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void intermcu_send_status </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00139">139</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+<p>send fbw status message </p>
 
-<p class="reference">References <a class="el" href="electrical_8h_source.html#l00046">Electrical::current</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::frame_rate</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00056">intermcu</a>, <a class="el" href="intermcu_8h_source.html#l00035">INTERMCU_FBW</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::status</a>, <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00157">157</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00128">telemetry_periodic()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="intermcu__fbw_8h_abbadcd4c86e9907fc3f28610b0ef6de1_icgraph.png" border="0" usemap="#intermcu__fbw_8h_abbadcd4c86e9907fc3f28610b0ef6de1_icgraph" alt=""/></div>
-<map name="intermcu__fbw_8h_abbadcd4c86e9907fc3f28610b0ef6de1_icgraph" id="intermcu__fbw_8h_abbadcd4c86e9907fc3f28610b0ef6de1_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,579,32"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html#aa185a98f019b1142ec48cf954cabe858" title=" " alt="" coords="220,5,365,32"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title=" " alt="" coords="5,5,172,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a33141c0ab91bcac2e0d5862739d728aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33141c0ab91bcac2e0d5862739d728aa">&#9670;&nbsp;</a></span>InterMcuEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void InterMcuEvent </td>
-          <td>(</td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>frame_handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00199">199</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
-
-<p class="reference">References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00061">imcu_msg_buf</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00056">intermcu</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00148">intermcu_parse_msg()</a>, <a class="el" href="intermcu_8h_source.html#l00076">intermcu_t::msg_available</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00284">main_event()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_cgraph.png" border="0" usemap="#intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_cgraph" alt=""/></div>
-<map name="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_cgraph" id="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,121,61"/>
-<area shape="rect" href="intermcu__fbw_8c.html#a335ac55e41c48ae94a03a8a17c0af5d8" title=" " alt="" coords="169,35,328,61"/>
-<area shape="rect" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f" title=" " alt="" coords="376,5,589,32"/>
-<area shape="rect" href="telemetry__intermcu_8h.html#a06d6fba8d0891b94f3b150c7e31bbf82" title=" " alt="" coords="407,57,558,98"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us)" alt="" coords="647,5,778,32"/>
-<area shape="rect" href="setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer." alt="" coords="657,60,769,87"/>
-<area shape="rect" href="telemetry__intermcu__fbw_8c.html#ad57afcdf06b03a2859cf3d965e1a9e74" title=" " alt="" coords="637,111,788,153"/>
-</map>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_icgraph.png" border="0" usemap="#intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_icgraph" alt=""/></div>
-<map name="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_icgraph" id="intermcu__fbw_8h_a33141c0ab91bcac2e0d5862739d728aa_icgraph">
-<area shape="rect" title=" " alt="" coords="152,5,268,32"/>
-<area shape="rect" href="rotorcraft_2main__fbw_8c.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title=" " alt="" coords="5,5,104,32"/>
-</map>
-</div>
+<p class="reference">References <a class="el" href="electrical_8h_source.html#l00046">Electrical::current</a>, <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::device</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="main__fbw_8c_source.html#l00050">fbw_mode</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::frame_rate</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00059">intermcu</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::transport</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a54cc031e8ec2149a161a3b14b0bd346c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54cc031e8ec2149a161a3b14b0bd346c">&#9670;&nbsp;</a></span>autopilot_motors_on</h2>
+<a id="afd7fd5a147022b41f68bec53e4ea8275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7fd5a147022b41f68bec53e4ea8275">&#9670;&nbsp;</a></span>intermcu_ap_motors_on</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool autopilot_motors_on</td>
+          <td class="memname">bool intermcu_ap_motors_on</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00064">64</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00067">67</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00148">intermcu_parse_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00172">intermcu_parse_IMCU_COMMANDS()</a>, and <a class="el" href="main__fbw_8c_source.html#l00151">main_task_periodic()</a>.</p>
 
 </div>
 </div>
@@ -489,9 +486,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00063">63</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="intermcu__fbw_8c_source.html#l00066">66</a> of file <a class="el" href="intermcu__fbw_8c_source.html">intermcu_fbw.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00276">fbw_on_ap_command()</a>, and <a class="el" href="intermcu__fbw_8c_source.html#l00148">intermcu_parse_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00172">intermcu_parse_IMCU_COMMANDS()</a>, and <a class="el" href="main__fbw_8c_source.html#l00151">main_task_periodic()</a>.</p>
 
 </div>
 </div>
@@ -501,7 +498,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_b59edde850f8ccf4b394776fda69f2c6.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__fbw_8h.html">intermcu_fbw.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:02 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

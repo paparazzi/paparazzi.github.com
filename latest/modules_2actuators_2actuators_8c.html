@@ -84,11 +84,14 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8c.html'
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">actuators.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="modules_2actuators_2actuators_8h_source.html">modules/actuators/actuators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commands_8h_source.html">modules/core/commands.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for actuators.c:</div>
@@ -97,31 +100,96 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8c.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2actuators_2actuators_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2actuators_2actuators_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2actuators_2actuators_8c" id="sw_2airborne_2modules_2actuators_2actuators_8c">
-<area shape="rect" title=" " alt="" coords="261,5,423,47"/>
-<area shape="rect" href="modules_2actuators_2actuators_8h.html" title=" " alt="" coords="121,95,341,121"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="378,95,551,121"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="5,177,103,203"/>
-<area shape="rect" title=" " alt="" coords="312,177,367,203"/>
-<area shape="rect" title=" " alt="" coords="127,177,287,203"/>
-<area shape="rect" title=" " alt="" coords="185,259,272,285"/>
-<area shape="rect" title=" " alt="" coords="443,177,513,203"/>
-<area shape="rect" title=" " alt="" coords="537,177,664,203"/>
-<area shape="rect" title=" " alt="" coords="688,169,849,211"/>
+<area shape="rect" title=" " alt="" coords="257,5,419,47"/>
+<area shape="rect" href="modules_2actuators_2actuators_8h.html" title=" " alt="" coords="228,95,448,121"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="5,95,204,121"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="473,95,646,121"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="256,177,353,203"/>
+<area shape="rect" title=" " alt="" coords="377,177,432,203"/>
+<area shape="rect" title=" " alt="" coords="55,177,215,203"/>
+<area shape="rect" title=" " alt="" coords="344,259,431,285"/>
+<area shape="rect" title=" " alt="" coords="508,177,579,203"/>
+<area shape="rect" title=" " alt="" coords="603,177,729,203"/>
+<area shape="rect" title=" " alt="" coords="753,169,915,211"/>
 </map>
 </div>
 </div>
 <p><a href="modules_2actuators_2actuators_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7ba1bde30e3a87694e878b244de10c47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47">actuators_init</a> (void)</td></tr>
+<tr class="separator:a7ba1bde30e3a87694e878b244de10c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c91d56a3813a303fa5f0d80197e3b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b">actuators_periodic</a> (void)</td></tr>
+<tr class="separator:a1c91d56a3813a303fa5f0d80197e3b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Hardware independent actuators code. </p>
 
 <p class="definition">Definition in file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7ba1bde30e3a87694e878b244de10c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba1bde30e3a87694e878b244de10c47">&#9670;&nbsp;</a></span>actuators_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actuators_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00120">120</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, and <a class="el" href="px4__gimbal_8c_source.html#l00035">px4_gimbal_init()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="modules_2actuators_2actuators_8c_a7ba1bde30e3a87694e878b244de10c47_icgraph.png" border="0" usemap="#modules_2actuators_2actuators_8c_a7ba1bde30e3a87694e878b244de10c47_icgraph" alt=""/></div>
+<map name="modules_2actuators_2actuators_8c_a7ba1bde30e3a87694e878b244de10c47_icgraph" id="modules_2actuators_2actuators_8c_a7ba1bde30e3a87694e878b244de10c47_icgraph">
+<area shape="rect" title=" " alt="" coords="283,31,393,57"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="130,5,213,32"/>
+<area shape="rect" href="px4__gimbal_8h.html#ad8a7d8f290331e370f2f3c9c8659d2ae" title=" " alt="" coords="108,56,235,83"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c91d56a3813a303fa5f0d80197e3b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c91d56a3813a303fa5f0d80197e3b8b">&#9670;&nbsp;</a></span>actuators_periodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actuators_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00121">121</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:57 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

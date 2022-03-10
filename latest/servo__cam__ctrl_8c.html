@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('servo__cam__ctrl_8c.html',''); initRes
 <div class="textblock"><code>#include &quot;<a class="el" href="servo__cam__ctrl_8h_source.html">servo_cam_ctrl.h</a>&quot;</code><br />
 <code>#include &quot;generated/modules.h&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">modules/intermcu/inter_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commands_8h_source.html">modules/core/commands.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for servo_cam_ctrl.c:</div>
@@ -107,32 +107,33 @@ $(document).ready(function(){initNavTree('servo__cam__ctrl_8c.html',''); initRes
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="servo__cam__ctrl_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2digital__cam_2servo__cam__ctrl_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2digital__cam_2servo__cam__ctrl_8c" id="sw_2airborne_2modules_2digital__cam_2servo__cam__ctrl_8c">
-<area shape="rect" title="Digital Camera Control." alt="" coords="1031,5,1209,61"/>
-<area shape="rect" href="servo__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="949,117,1083,143"/>
-<area shape="rect" title=" " alt="" coords="679,601,734,628"/>
-<area shape="rect" title=" " alt="" coords="1635,273,1795,300"/>
-<area shape="rect" title=" " alt="" coords="1157,117,1317,143"/>
-<area shape="rect" href="inter__mcu_8h.html" title=" " alt="" coords="1342,109,1517,151"/>
-<area shape="rect" href="dc_8h.html" title=" " alt="" coords="991,199,1041,225"/>
-<area shape="rect" title=" " alt="" coords="1334,601,1397,628"/>
-<area shape="rect" href="state_8h.html" title=" " alt="" coords="983,273,1049,300"/>
-<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="605,273,749,300"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="915,437,1095,464"/>
-<area shape="rect" title=" " alt="" coords="1625,601,1695,628"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1171,437,1363,464"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="602,348,753,389"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="777,348,927,389"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="1054,348,1221,389"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1171,519,1327,546"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="891,519,1045,546"/>
-<area shape="rect" title=" " alt="" coords="745,519,815,546"/>
-<area shape="rect" title=" " alt="" coords="1495,601,1563,628"/>
-<area shape="rect" title=" " alt="" coords="1403,519,1560,546"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="664,437,789,464"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="323,437,496,464"/>
-<area shape="rect" title=" " alt="" coords="481,519,567,546"/>
-<area shape="rect" title=" " alt="" coords="145,519,271,546"/>
-<area shape="rect" title=" " alt="" coords="295,512,457,553"/>
+<area shape="rect" title="Digital Camera Control." alt="" coords="1455,5,1633,61"/>
+<area shape="rect" href="servo__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="1312,109,1445,136"/>
+<area shape="rect" title=" " alt="" coords="970,587,1025,613"/>
+<area shape="rect" title=" " alt="" coords="1464,259,1624,285"/>
+<area shape="rect" title=" " alt="" coords="1581,109,1741,136"/>
+<area shape="rect" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="1445,184,1643,211"/>
+<area shape="rect" href="dc_8h.html" title=" " alt="" coords="1333,184,1382,211"/>
+<area shape="rect" title=" " alt="" coords="25,587,87,613"/>
+<area shape="rect" href="state_8h.html" title=" " alt="" coords="755,259,821,285"/>
+<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="1245,259,1389,285"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="609,430,789,457"/>
+<area shape="rect" title=" " alt="" coords="426,587,497,613"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="291,430,483,457"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1026,333,1177,375"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="851,333,1002,375"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="558,333,725,375"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="326,512,482,539"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="609,512,762,539"/>
+<area shape="rect" title=" " alt="" coords="838,512,909,539"/>
+<area shape="rect" title=" " alt="" coords="251,587,319,613"/>
+<area shape="rect" title=" " alt="" coords="144,512,301,539"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="915,430,1040,457"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1280,341,1453,367"/>
+<area shape="rect" title=" " alt="" coords="1605,430,1691,457"/>
+<area shape="rect" title=" " alt="" coords="1351,430,1478,457"/>
+<area shape="rect" title=" " alt="" coords="1166,423,1327,464"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1649,259,1746,285"/>
 </map>
 </div>
 </div>
@@ -140,9 +141,9 @@ $(document).ready(function(){initNavTree('servo__cam__ctrl_8c.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a087c9c37b004f50871e9421268573eb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servo__cam__ctrl_8c.html#a087c9c37b004f50871e9421268573eb4">DC_PUSH</a>(X)&#160;&#160;&#160;imcu_set_command(X, -<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td></tr>
+<tr class="memitem:a087c9c37b004f50871e9421268573eb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servo__cam__ctrl_8c.html#a087c9c37b004f50871e9421268573eb4">DC_PUSH</a>(X)&#160;&#160;&#160;<a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(X, -<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td></tr>
 <tr class="separator:a087c9c37b004f50871e9421268573eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e1df6290c51c3baa0bcb21e482d8e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servo__cam__ctrl_8c.html#a39e1df6290c51c3baa0bcb21e482d8e2">DC_RELEASE</a>(X)&#160;&#160;&#160;imcu_set_command(X,  <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td></tr>
+<tr class="memitem:a39e1df6290c51c3baa0bcb21e482d8e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servo__cam__ctrl_8c.html#a39e1df6290c51c3baa0bcb21e482d8e2">DC_RELEASE</a>(X)&#160;&#160;&#160;<a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(X,  <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td></tr>
 <tr class="separator:a39e1df6290c51c3baa0bcb21e482d8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9642f48627a6517582c38e3593939e28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">DC_SHUTTER_DELAY</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="memdesc:a9642f48627a6517582c38e3593939e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">how long to push shutter in seconds  <a href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">More...</a><br /></td></tr>
@@ -180,7 +181,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">X</td><td>)</td>
-          <td>&#160;&#160;&#160;imcu_set_command(X, -<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td>
+          <td>&#160;&#160;&#160;<a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(X, -<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +201,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">X</td><td>)</td>
-          <td>&#160;&#160;&#160;imcu_set_command(X,  <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td>
+          <td>&#160;&#160;&#160;<a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(X,  <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -420,7 +421,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="servo__cam__ctrl_8c.html">servo_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

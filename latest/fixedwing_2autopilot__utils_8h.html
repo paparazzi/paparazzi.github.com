@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__utils_8h.html','
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">modules/intermcu/inter_mcu.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_utils.h:</div>
@@ -100,10 +99,9 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__utils_8h.html','
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot__utils_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8h" id="sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8h">
-<area shape="rect" title=" " alt="" coords="88,5,255,61"/>
-<area shape="rect" title=" " alt="" coords="5,117,60,143"/>
-<area shape="rect" href="inter__mcu_8h.html" title=" " alt="" coords="84,109,259,151"/>
-<area shape="rect" title=" " alt="" coords="283,117,443,143"/>
+<area shape="rect" title=" " alt="" coords="15,5,181,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,60,136"/>
+<area shape="rect" title=" " alt="" coords="85,109,245,136"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -113,8 +111,9 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__utils_8h.html','
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot__utils_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8hdep" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8hdep" id="sw_2airborne_2firmwares_2fixedwing_2autopilot__utils_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,172,61"/>
+<area shape="rect" title=" " alt="" coords="108,5,275,61"/>
 <area shape="rect" href="fixedwing_2autopilot__utils_8c.html" title=" " alt="" coords="5,109,172,165"/>
+<area shape="rect" href="main__recovery_8c.html" title=" " alt="" coords="196,117,395,158"/>
 </map>
 </div>
 </div>
@@ -141,10 +140,10 @@ Macros</h2></td></tr>
 <tr class="separator:ac20e76441d7ca028ceda37a41ce688e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ff5dfa8cfe1cbe08d1289b3e8da55c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">THRESHOLD2</a>&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>/2)</td></tr>
 <tr class="separator:a12ff5dfa8cfe1cbe08d1289b3e8da55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">AP_COMMAND_SET_ROLL</a>(_roll)&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_ROLL] = _roll; }</td></tr>
+<tr class="memitem:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">AP_COMMAND_SET_ROLL</a>(_roll)&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_ROLL, _roll); }</td></tr>
 <tr class="memdesc:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AP command setter macros for usual commands.  <a href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">More...</a><br /></td></tr>
 <tr class="separator:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e4af60109ca66c778c2d85e4fe397f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">AP_COMMAND_SET_PITCH</a>(_pitch)&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_PITCH] = _pitch; }</td></tr>
+<tr class="memitem:a16e4af60109ca66c778c2d85e4fe397f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">AP_COMMAND_SET_PITCH</a>(_pitch)&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_PITCH, _pitch); }</td></tr>
 <tr class="separator:a16e4af60109ca66c778c2d85e4fe397f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3119f844b56965691d7aec8d79455a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#ad3119f844b56965691d7aec8d79455a5">AP_COMMAND_SET_YAW</a>(_yaw)&#160;&#160;&#160;{}</td></tr>
 <tr class="separator:ad3119f844b56965691d7aec8d79455a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,7 +181,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00086">86</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00085">85</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -197,12 +196,12 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_pitch</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_PITCH] = _pitch; }</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_PITCH, _pitch); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00067">67</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00066">66</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -217,14 +216,14 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_roll</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_ROLL] = _roll; }</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_ROLL, _roll); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AP command setter macros for usual commands. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00064">64</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00063">63</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -244,11 +243,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  ap_state-&gt;commands[COMMAND_THROTTLE] = _throttle; \</div>
+<div class="line">  command_set(COMMAND_THROTTLE, _throttle); \</div>
 <div class="line">  autopilot.throttle = _throttle; \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00077">77</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00076">76</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +267,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00073">73</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00072">72</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +291,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>Get mode from pulse. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00038">38</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00037">37</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -322,10 +321,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  _pitch = <a class="code" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a>(<a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[<a class="code" href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a>], 0., _max); \</div>
+<div class="line">  _pitch = <a class="code" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a>(<a class="code" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a>(<a class="code" href="rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a>), 0., _max); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00095">95</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00094">94</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -355,10 +354,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  _roll = <a class="code" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a>(<a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[<a class="code" href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a>], 0., _max); \</div>
+<div class="line">  _roll = <a class="code" href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a>(<a class="code" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a>(<a class="code" href="rc__datalink_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a>), 0., _max); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00090">90</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00089">89</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -378,10 +377,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  _throttle = <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[<a class="code" href="intermcu__ap_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a>]; \</div>
+<div class="line">  _throttle = <a class="code" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a>(<a class="code" href="rc__datalink_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a>); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00109">109</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00108">108</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +410,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00105">105</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00104">104</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +448,7 @@ Macros</h2></td></tr>
 
 <p>pprz_t to float with saturation </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00048">48</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00047">47</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +470,7 @@ Macros</h2></td></tr>
 
 <p>Stick pushed. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00044">44</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00043">43</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +486,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00057">57</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00056">56</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +502,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00058">58</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00057">57</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +520,7 @@ Macros</h2></td></tr>
 
 <p>Threshold for RC mode detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00056">56</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00055">55</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
@@ -539,27 +538,27 @@ Macros</h2></td></tr>
 
 <p>Takeoff detection threshold from throttle. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00052">52</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00051">51</a> of file <a class="el" href="fixedwing_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_ac20e76441d7ca028ceda37a41ce688e1"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#ac20e76441d7ca028ceda37a41ce688e1">THRESHOLD1</a></div><div class="ttdeci">#define THRESHOLD1</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00057">autopilot_utils.h:57</a></div></div>
-<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_aa08d012f2139a6ef9e5b92e5efcf555b"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a></div><div class="ttdeci">#define FLOAT_OF_PPRZ(pprz, center, travel)</div><div class="ttdoc">pprz_t to float with saturation</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00048">autopilot_utils.h:48</a></div></div>
-<div class="ttc" id="aintermcu__ap_8h_html_ae59b042496b1debe96e1d98fbc3e4b1f"><div class="ttname"><a href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a></div><div class="ttdeci">#define RADIO_ROLL</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00041">intermcu_ap.h:41</a></div></div>
+<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_ac20e76441d7ca028ceda37a41ce688e1"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#ac20e76441d7ca028ceda37a41ce688e1">THRESHOLD1</a></div><div class="ttdeci">#define THRESHOLD1</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00056">autopilot_utils.h:56</a></div></div>
+<div class="ttc" id="aradio__control_8h_html_a912ad5540c93dd124d032ca87dbe1adb"><div class="ttname"><a href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb">radio_control_get</a></div><div class="ttdeci">static pprz_t radio_control_get(uint8_t idx)</div><div class="ttdoc">Get a radio control channel value.</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00094">radio_control.h:94</a></div></div>
+<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_aa08d012f2139a6ef9e5b92e5efcf555b"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">FLOAT_OF_PPRZ</a></div><div class="ttdeci">#define FLOAT_OF_PPRZ(pprz, center, travel)</div><div class="ttdoc">pprz_t to float with saturation</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00047">autopilot_utils.h:47</a></div></div>
 <div class="ttc" id="afixedwing_2autopilot__static_8h_html_ac95b12ffadcc8be562cde6f7f035079e"><div class="ttname"><a href="fixedwing_2autopilot__static_8h.html#ac95b12ffadcc8be562cde6f7f035079e">AP_MODE_AUTO2</a></div><div class="ttdeci">#define AP_MODE_AUTO2</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__static_8h_source.html#l00038">autopilot_static.h:38</a></div></div>
-<div class="ttc" id="ainter__mcu_8c_html_a1a4da5ac6e76b01f83b00facee8f3dbf"><div class="ttname"><a href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a></div><div class="ttdeci">struct fbw_state * fbw_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00036">inter_mcu.c:36</a></div></div>
-<div class="ttc" id="aintermcu__ap_8h_html_a393c67e7c336f4e58413e3cb07378511"><div class="ttname"><a href="intermcu__ap_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a></div><div class="ttdeci">#define RADIO_THROTTLE</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00040">intermcu_ap.h:40</a></div></div>
-<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_a12ff5dfa8cfe1cbe08d1289b3e8da55c"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">THRESHOLD2</a></div><div class="ttdeci">#define THRESHOLD2</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00058">autopilot_utils.h:58</a></div></div>
+<div class="ttc" id="arc__datalink_8h_html_a393c67e7c336f4e58413e3cb07378511"><div class="ttname"><a href="rc__datalink_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a></div><div class="ttdeci">#define RADIO_THROTTLE</div><div class="ttdef"><b>Definition:</b> <a href="rc__datalink_8h_source.html#l00041">rc_datalink.h:41</a></div></div>
+<div class="ttc" id="arc__datalink_8h_html_ae59b042496b1debe96e1d98fbc3e4b1f"><div class="ttname"><a href="rc__datalink_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a></div><div class="ttdeci">#define RADIO_ROLL</div><div class="ttdoc">Redefining RADIO_* Do not use with radio.h (ppm rc)</div><div class="ttdef"><b>Definition:</b> <a href="rc__datalink_8h_source.html#l00038">rc_datalink.h:38</a></div></div>
+<div class="ttc" id="afixedwing_2autopilot__utils_8h_html_a12ff5dfa8cfe1cbe08d1289b3e8da55c"><div class="ttname"><a href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">THRESHOLD2</a></div><div class="ttdeci">#define THRESHOLD2</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__utils_8h_source.html#l00057">autopilot_utils.h:57</a></div></div>
 <div class="ttc" id="afixedwing_2autopilot__static_8h_html_a88bb7604ef7a4e00b81fbf760a2ecd01"><div class="ttname"><a href="fixedwing_2autopilot__static_8h.html#a88bb7604ef7a4e00b81fbf760a2ecd01">AP_MODE_MANUAL</a></div><div class="ttdeci">#define AP_MODE_MANUAL</div><div class="ttdoc">AP modes.</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__static_8h_source.html#l00036">autopilot_static.h:36</a></div></div>
-<div class="ttc" id="aintermcu__ap_8h_html_a8e61ffe584bf24170117b9fcb2da4023"><div class="ttname"><a href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a></div><div class="ttdeci">#define RADIO_PITCH</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00042">intermcu_ap.h:42</a></div></div>
+<div class="ttc" id="arc__datalink_8h_html_a8e61ffe584bf24170117b9fcb2da4023"><div class="ttname"><a href="rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a></div><div class="ttdeci">#define RADIO_PITCH</div><div class="ttdef"><b>Definition:</b> <a href="rc__datalink_8h_source.html#l00039">rc_datalink.h:39</a></div></div>
 <div class="ttc" id="afixedwing_2autopilot__static_8h_html_ae6bdfc542cbb7982393ee982b2ed67d5"><div class="ttname"><a href="fixedwing_2autopilot__static_8h.html#ae6bdfc542cbb7982393ee982b2ed67d5">AP_MODE_AUTO1</a></div><div class="ttdeci">#define AP_MODE_AUTO1</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__static_8h_source.html#l00037">autopilot_static.h:37</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot__utils_8h.html">autopilot_utils.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:58 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

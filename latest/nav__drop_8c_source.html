@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c_source.html',''); initRes
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">modules/intermcu/inter_mcu.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commands_8h.html">modules/core/commands.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if defined WP_RELEASE</span></div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('nav__drop_8c_source.html',''); initRes
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;unit_t <a class="code" href="nav__drop_8h.html#a0e9ac240f39dc33492426056b1299227">nav_drop_shoot</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  imcu_set_command(COMMAND_HATCH, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_HATCH, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
@@ -292,7 +292,6 @@ $(document).ready(function(){initNavTree('nav__drop_8c_source.html',''); initRes
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 <div class="ttc" id="agroup__state__velocity_html_ga6f8b83126a235daea584aa9ce97f7fac"><div class="ttname"><a href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac">stateGetHorizontalSpeedDir_f</a></div><div class="ttdeci">static float stateGetHorizontalSpeedDir_f(void)</div><div class="ttdoc">Get dir of horizontal ground speed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00944">state.h:944</a></div></div>
 <div class="ttc" id="anav__drop_8h_html_ab242b1072e38faf0e67e1da07e00f9ab"><div class="ttname"><a href="nav__drop_8h.html#ab242b1072e38faf0e67e1da07e00f9ab">compute_alignment</a></div><div class="ttdeci">bool compute_alignment(uint8_t w1, uint8_t w2, uint8_t start, uint8_t end, float d_before, float d_after)</div></div>
-<div class="ttc" id="ainter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div></div>
 <div class="ttc" id="anav__drop_8h_html_a833c2bc4de81c7daf803571457ac1d30"><div class="ttname"><a href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop_start_qdr</a></div><div class="ttdeci">float nav_drop_start_qdr</div><div class="ttdef"><b>Definition:</b> <a href="nav__drop_8h_source.html#l00039">nav_drop.h:39</a></div></div>
 <div class="ttc" id="agroup__state__position_html_ga7488f3b1e3afa9515541c0130278bdac"><div class="ttname"><a href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac">stateGetPositionUtm_f</a></div><div class="ttdeci">static struct UtmCoor_f * stateGetPositionUtm_f(void)</div><div class="ttdoc">Get position in UTM coordinates (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00692">state.h:692</a></div></div>
 <div class="ttc" id="acommon__nav_8c_html_a94e2a3864e1c0746e69eb9cda1061c62"><div class="ttname"><a href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a></div><div class="ttdeci">struct point waypoints[NB_WAYPOINT]</div><div class="ttdoc">size == nb_waypoint, waypoint 0 is a dummy waypoint</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00039">common_nav.c:39</a></div></div>
@@ -309,15 +308,17 @@ $(document).ready(function(){initNavTree('nav__drop_8c_source.html',''); initRes
 <div class="ttc" id="anav__drop_8h_html_a30c0e5e0fbaf12b1315a61a2ac7583e8"><div class="ttname"><a href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop_trigger_delay</a></div><div class="ttdeci">float nav_drop_trigger_delay</div></div>
 <div class="ttc" id="agroup__state__velocity_html_ga1396b84069296dc0353f25281a472c08"><div class="ttname"><a href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08">stateGetHorizontalSpeedNorm_f</a></div><div class="ttdeci">static float stateGetHorizontalSpeedNorm_f(void)</div><div class="ttdoc">Get norm of horizontal ground speed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00935">state.h:935</a></div></div>
 <div class="ttc" id="anav__drop_8h_html"><div class="ttname"><a href="nav__drop_8h.html">nav_drop.h</a></div></div>
+<div class="ttc" id="acommands_8h_html_abad4f73b929ef6db562aaa170c3c735d"><div class="ttname"><a href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a></div><div class="ttdeci">static void command_set(uint8_t idx, pprz_t value)</div><div class="ttdoc">Set a command value.</div><div class="ttdef"><b>Definition:</b> <a href="commands_8h_source.html#l00057">commands.h:57</a></div></div>
 <div class="ttc" id="acommon__nav_8h_html_a616ad85a2096d1566f5971666bbc3b3f"><div class="ttname"><a href="common__nav_8h.html#a616ad85a2096d1566f5971666bbc3b3f">point::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00041">common_nav.h:41</a></div></div>
 <div class="ttc" id="agroup__math__algebra__float_html_a965d6b4f04fcc6d2aa179c4016d7ee44"><div class="ttname"><a href="group__math__algebra__float.html#a965d6b4f04fcc6d2aa179c4016d7ee44">FloatVect2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00050">pprz_algebra_float.h:50</a></div></div>
+<div class="ttc" id="acommands_8h_html"><div class="ttname"><a href="commands_8h.html">commands.h</a></div><div class="ttdoc">Hardware independent code for commands handling.</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
 <div class="ttc" id="anav__drop_8h_html_ab65dbfc40970aaba82469b775a829995"><div class="ttname"><a href="nav__drop_8h.html#ab65dbfc40970aaba82469b775a829995">nav_drop_update_release</a></div><div class="ttdeci">unit_t nav_drop_update_release(uint8_t wp_target)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__drop_8c.html">nav_drop.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:54 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

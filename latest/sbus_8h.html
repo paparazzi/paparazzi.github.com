@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('sbus_8h.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">sbus.h File Reference</div>  </div>
@@ -124,6 +125,15 @@ $(document).ready(function(){initNavTree('sbus_8h.html',''); initResizable(); })
 </div>
 <p><a href="sbus_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa1c35cd2ca28efdd7a5688b1ff714c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#aa1c35cd2ca28efdd7a5688b1ff714c36">sbus_init</a> (void)</td></tr>
+<tr class="memdesc:aa1c35cd2ca28efdd7a5688b1ff714c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC init function.  <a href="sbus_8h.html#aa1c35cd2ca28efdd7a5688b1ff714c36">More...</a><br /></td></tr>
+<tr class="separator:aa1c35cd2ca28efdd7a5688b1ff714c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898d18ff03481d7491a0089a36eb850a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#a898d18ff03481d7491a0089a36eb850a">sbus_event</a> (void)</td></tr>
+<tr class="memdesc:a898d18ff03481d7491a0089a36eb850a"><td class="mdescLeft">&#160;</td><td class="mdescRight">RC event function.  <a href="sbus_8h.html#a898d18ff03481d7491a0089a36eb850a">More...</a><br /></td></tr>
+<tr class="separator:a898d18ff03481d7491a0089a36eb850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aec5d5362a0f74ccb0b47dbc708920822"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="sbus__common_8h.html#structSbus">Sbus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#aec5d5362a0f74ccb0b47dbc708920822">sbus</a></td></tr>
@@ -134,7 +144,89 @@ Variables</h2></td></tr>
 <div class="textblock"><p>Radio control via single SBUS receiver. </p>
 
 <p class="definition">Definition in file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a898d18ff03481d7491a0089a36eb850a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898d18ff03481d7491a0089a36eb850a">&#9670;&nbsp;</a></span>sbus_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sbus_event </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RC event function. </p>
+
+<p class="definition">Definition at line <a class="el" href="sbus_8c_source.html#l00074">74</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sbus__common_8h_source.html#l00071">Sbus::frame_available</a>, <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::frame_cpt</a>, <a class="el" href="sbus__common_8h_source.html#l00069">Sbus::pulses</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00549">RADIO_CONTROL_SBUS_ID</a>, <a class="el" href="radio__control_8h_source.html#l00063">RadioControl::radio_ok_cpt</a>, <a class="el" href="sbus__common_8h_source.html#l00072">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00073">Sbus::rc_lost</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="radio__control_8h_source.html#l00051">RC_REALLY_LOST</a>, <a class="el" href="sbus_8c_source.html#l00040">sbus</a>, <a class="el" href="sbus_8c_source.html#l00069">sbus_decode_event()</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00062">RadioControl::time_since_last_frame</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sbus_8h_a898d18ff03481d7491a0089a36eb850a_cgraph.png" border="0" usemap="#sbus_8h_a898d18ff03481d7491a0089a36eb850a_cgraph" alt=""/></div>
+<map name="sbus_8h_a898d18ff03481d7491a0089a36eb850a_cgraph" id="sbus_8h_a898d18ff03481d7491a0089a36eb850a_cgraph">
+<area shape="rect" title="RC event function." alt="" coords="5,81,101,108"/>
+<area shape="rect" href="sbus_8c.html#ab9abde1e7eda9299d04ff75e87910114" title=" " alt="" coords="149,81,300,108"/>
+<area shape="rect" href="sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740" title="Decoding event function." alt="" coords="348,74,519,115"/>
+<area shape="rect" href="sbus__common_8c.html#ae438287533911004cc6f3ff98b065df7" title="Decode the raw buffer." alt="" coords="567,5,717,32"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup." alt="" coords="567,56,717,83"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="567,107,717,133"/>
+<area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="597,157,687,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa1c35cd2ca28efdd7a5688b1ff714c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c35cd2ca28efdd7a5688b1ff714c36">&#9670;&nbsp;</a></span>sbus_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sbus_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RC init function. </p>
+
+<p class="definition">Definition at line <a class="el" href="sbus_8c_source.html#l00055">55</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
+
+<p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="radio__control_8h_source.html#l00066">RadioControl::nb_channel</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="sbus_8c_source.html#l00036">RC_POLARITY_GPIO_PIN</a>, <a class="el" href="sbus_8c_source.html#l00033">RC_POLARITY_GPIO_PORT</a>, <a class="el" href="telemetry_8c_source.html#l00049">register_periodic_telemetry()</a>, <a class="el" href="sbus_8c_source.html#l00040">sbus</a>, <a class="el" href="sbus__common_8c_source.html#l00074">sbus_common_init()</a>, <a class="el" href="sbus__common_8h_source.html#l00063">SBUS_NB_CHANNEL</a>, and <a class="el" href="sbus_8c_source.html#l00046">send_sbus()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sbus_8h_aa1c35cd2ca28efdd7a5688b1ff714c36_cgraph.png" border="0" usemap="#sbus_8h_aa1c35cd2ca28efdd7a5688b1ff714c36_cgraph" alt=""/></div>
+<map name="sbus_8h_aa1c35cd2ca28efdd7a5688b1ff714c36_cgraph" id="sbus_8h_aa1c35cd2ca28efdd7a5688b1ff714c36_cgraph">
+<area shape="rect" title="RC init function." alt="" coords="5,93,85,120"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="133,43,336,69"/>
+<area shape="rect" href="sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a" title="Init function." alt="" coords="163,93,307,120"/>
+<area shape="rect" href="sbus_8c.html#a06629ac6d37929437d99cce1c4631330" title=" " alt="" coords="189,144,280,171"/>
+<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="407,5,549,32"/>
+<area shape="rect" href="uart_8c.html#ad6430a7fdc6553a4696a873cc5ff3507" title=" " alt="" coords="407,57,549,98"/>
+<area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b" title="Set baudrate." alt="" coords="384,123,572,149"/>
+<area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6" title="Set parity and stop bits." alt="" coords="401,174,555,215"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="aec5d5362a0f74ccb0b47dbc708920822"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec5d5362a0f74ccb0b47dbc708920822">&#9670;&nbsp;</a></span>sbus</h2>
 
@@ -149,9 +241,9 @@ Variables</h2></td></tr>
 
 <p>SBUS struct. </p>
 
-<p class="definition">Definition at line <a class="el" href="sbus_8c_source.html#l00039">39</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sbus_8c_source.html#l00040">40</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sbus_8c_source.html#l00072">radio_control_impl_event()</a>, <a class="el" href="sbus_8c_source.html#l00054">radio_control_impl_init()</a>, <a class="el" href="sbus_8c_source.html#l00067">sbus_decode_event()</a>, and <a class="el" href="sbus_8c_source.html#l00045">send_sbus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sbus_8c_source.html#l00069">sbus_decode_event()</a>, <a class="el" href="sbus_8c_source.html#l00074">sbus_event()</a>, <a class="el" href="sbus_8c_source.html#l00055">sbus_init()</a>, and <a class="el" href="sbus_8c_source.html#l00046">send_sbus()</a>.</p>
 
 </div>
 </div>
@@ -161,7 +253,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f125d81e9dfef46cf6053f80e8884f7e.html">radio_control</a></li><li class="navelem"><a class="el" href="sbus_8h.html">sbus.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:03 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

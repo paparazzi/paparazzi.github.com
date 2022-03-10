@@ -92,7 +92,9 @@ $(document).ready(function(){initNavTree('telemetry_8c.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="telemetry__common_8h_source.html">modules/datalink/telemetry_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;generated/periodic_telemetry.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for telemetry.c:</div>
@@ -101,23 +103,43 @@ $(document).ready(function(){initNavTree('telemetry_8c.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="telemetry_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2datalink_2telemetry_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2datalink_2telemetry_8c" id="sw_2airborne_2modules_2datalink_2telemetry_8c">
-<area shape="rect" title=" " alt="" coords="1009,5,1167,47"/>
-<area shape="rect" href="telemetry__common_8h.html" title=" " alt="" coords="987,95,1189,136"/>
-<area shape="rect" title=" " alt="" coords="1213,95,1357,136"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="596,102,807,129"/>
-<area shape="rect" title=" " alt="" coords="1005,184,1091,211"/>
-<area shape="rect" title=" " alt="" coords="938,333,993,360"/>
-<area shape="rect" title=" " alt="" coords="1216,333,1408,360"/>
-<area shape="rect" title=" " alt="" coords="1300,184,1508,211"/>
-<area shape="rect" title=" " alt="" coords="825,184,981,211"/>
-<area shape="rect" title=" " alt="" coords="189,184,349,211"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="374,184,578,211"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="602,184,801,211"/>
-<area shape="rect" title=" " alt="" coords="5,184,165,211"/>
-<area shape="rect" title=" " alt="" coords="384,259,547,285"/>
-<area shape="rect" title=" " alt="" coords="621,259,805,285"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1085,259,1225,285"/>
-<area shape="rect" title=" " alt="" coords="1017,333,1191,360"/>
+<area shape="rect" title=" " alt="" coords="442,5,601,47"/>
+<area shape="rect" href="telemetry__common_8h.html" title=" " alt="" coords="96,169,299,211"/>
+<area shape="rect" href="telemetry_8h.html" title=" " alt="" coords="415,95,628,121"/>
+<area shape="rect" title=" " alt="" coords="323,169,467,211"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="687,177,897,203"/>
+<area shape="rect" href="autopilot_8h.html" title=" " alt="" coords="1369,95,1461,121"/>
+<area shape="rect" title=" " alt="" coords="427,266,514,293"/>
+<area shape="rect" title=" " alt="" coords="1601,497,1655,524"/>
+<area shape="rect" title=" " alt="" coords="377,423,569,449"/>
+<area shape="rect" title=" " alt="" coords="93,266,301,293"/>
+<area shape="rect" title=" " alt="" coords="538,266,694,293"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="678,348,818,375"/>
+<area shape="rect" title=" " alt="" coords="661,423,835,449"/>
+<area shape="rect" title=" " alt="" coords="1355,266,1515,293"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1126,266,1330,293"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="903,266,1102,293"/>
+<area shape="rect" title=" " alt="" coords="719,266,879,293"/>
+<area shape="rect" title=" " alt="" coords="1265,348,1428,375"/>
+<area shape="rect" title=" " alt="" coords="911,348,1095,375"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="550,177,647,203"/>
+<area shape="rect" href="state_8h.html" title=" " alt="" coords="1780,177,1847,203"/>
+<area shape="rect" title=" " alt="" coords="1871,177,1998,203"/>
+<area shape="rect" title=" " alt="" coords="1113,177,1271,203"/>
+<area shape="rect" title=" " alt="" coords="1295,177,1430,203"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1761,348,1941,375"/>
+<area shape="rect" title=" " alt="" coords="2531,497,2602,524"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="2216,348,2408,375"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1738,259,1889,300"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="2103,259,2254,300"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="1913,259,2079,300"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="2118,423,2274,449"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="1691,423,1845,449"/>
+<area shape="rect" title=" " alt="" coords="1921,423,1991,449"/>
+<area shape="rect" title=" " alt="" coords="2390,497,2453,524"/>
+<area shape="rect" title=" " alt="" coords="2189,497,2257,524"/>
+<area shape="rect" title=" " alt="" coords="2349,423,2507,449"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="2016,348,2141,375"/>
 </map>
 </div>
 </div>
@@ -128,6 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b8cf43739f06c54d16370c141b541a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">register_periodic_telemetry</a> (struct <a class="el" href="telemetry__common_8h.html#structperiodic__telemetry">periodic_telemetry</a> *_pt, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _id, <a class="el" href="telemetry__common_8h.html#a864a2b97784a3cecc0b2b80a57220ae3">telemetry_cb</a> _cb)</td></tr>
 <tr class="memdesc:a8b8cf43739f06c54d16370c141b541a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a telemetry callback function.  <a href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">More...</a><br /></td></tr>
 <tr class="separator:a8b8cf43739f06c54d16370c141b541a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8569c3f73297d33f638ce40e348dd61a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry_8c.html#a8569c3f73297d33f638ce40e348dd61a">telemetry_reporting_task</a> (void)</td></tr>
+<tr class="memdesc:a8569c3f73297d33f638ce40e348dd61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peridioc task Send a series of initialisation messages followed by a stream of periodic ones.  <a href="telemetry_8c.html#a8569c3f73297d33f638ce40e348dd61a">More...</a><br /></td></tr>
+<tr class="separator:a8569c3f73297d33f638ce40e348dd61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7b402e73b2c27992c64528b9d064a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry_8c.html#ae7b402e73b2c27992c64528b9d064a8c">periodic_telemetry_err_report</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _process, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _mode, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _id)</td></tr>
 <tr class="memdesc:ae7b402e73b2c27992c64528b9d064a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error report when trying to send message that as not been register.  <a href="telemetry_8c.html#ae7b402e73b2c27992c64528b9d064a8c">More...</a><br /></td></tr>
 <tr class="separator:ae7b402e73b2c27992c64528b9d064a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +212,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00078">78</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00111">111</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 <p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
 
@@ -236,11 +261,48 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-1 on failure to register, index of callback otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00046">46</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00049">49</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 <p class="reference">References <a class="el" href="telemetry__common_8h_source.html#l00064">periodic_telemetry::cbs</a>, <a class="el" href="telemetry__common_8h_source.html#l00054">telemetry_cb_slots::id</a>, <a class="el" href="telemetry__common_8h_source.html#l00063">periodic_telemetry::nb</a>, <a class="el" href="telemetry__common_8h_source.html#l00055">telemetry_cb_slots::slots</a>, and <a class="el" href="telemetry__common_8h_source.html#l00051">TELEMETRY_NB_CBS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00061">actuators_bebop_init()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00174">actuators_uavcan_init()</a>, <a class="el" href="adc__generic_8c_source.html#l00077">adc_generic_init()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00081">ahrs_aligner_init()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00198">ahrs_dcm_register()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00283">ahrs_fc_register()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00237">ahrs_float_invariant_register()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00271">ahrs_icq_register()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00203">ahrs_madgwick_register()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00222">ahrs_mlkf_register()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00096">ahrs_vectornav_init()</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00066">ahrs_vectornav_register()</a>, <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00145">aoa_pwm_init()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00114">autopilot_firmware_init()</a>, <a class="el" href="autopilot_8c_source.html#l00110">autopilot_init()</a>, <a class="el" href="baro__bmp280__i2c_8c_source.html#l00068">baro_bmp280_init()</a>, <a class="el" href="battery__monitor_8c_source.html#l00140">battery_monitor_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00148">bluegiga_init()</a>, <a class="el" href="cam_8c_source.html#l00119">cam_init()</a>, <a class="el" href="ctc_8c_source.html#l00097">ctc_init()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00079">ctrl_module_init()</a>, <a class="el" href="dcf_8c_source.html#l00063">dcf_init()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="uart__cam__ctrl_8c_source.html#l00116">digital_cam_uart_init()</a>, <a class="el" href="downlink_8c_source.html#l00067">downlink_init()</a>, <a class="el" href="dragspeed_8c_source.html#l00082">dragspeed_init()</a>, <a class="el" href="esc32_8c_source.html#l00235">esc32_init()</a>, <a class="el" href="gec__dl_8c_source.html#l00345">gec_dl_init()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00176">guidance_h_init()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00099">guidance_hybrid_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00146">guidance_indi_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00178">guidance_v_init()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_init()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00107">gvf_parametric_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00298">h_ctl_init()</a>, <a class="el" href="hf__float_8c_source.html#l00274">hff_init()</a>, <a class="el" href="i2c_8c_source.html#l00310">i2c_init()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00107">imu_gx3_init()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00080">imu_vectornav_init()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00362">init_fbw()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00374">ins_ekf2_init()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00219">ins_float_invariant_init()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00221">ins_float_invariant_wrapper_init()</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00140">ins_gps_passthrough_init()</a>, <a class="el" href="ins__int_8c_source.html#l00198">ins_int_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00163">ins_vectornav_init()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00071">intermcu_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00154">jevois_mavlink_init()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00216">link_mcu_init()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00055">mag_pitot_init()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="mateksys__3901__l0x_8c_source.html#l00110">mateksys3901l0x_init()</a>, <a class="el" href="mavlink_8c_source.html#l00107">mavlink_init()</a>, <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, <a class="el" href="airspeed__ms45xx__i2c_8c_source.html#l00184">ms45xx_i2c_init()</a>, <a class="el" href="nav_8c_source.html#l00531">nav_init()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00287">nav_rover_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00100">nav_survey_rectangle_rotorcraft_init()</a>, <a class="el" href="navdata_8c_source.html#l00174">navdata_init()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00259">optical_flow_hover_init()</a>, <a class="el" href="opticflow__module_8c_source.html#l00106">opticflow_module_init()</a>, <a class="el" href="pca9685__i2c_8c_source.html#l00279">pca9685_i2c_init()</a>, <a class="el" href="radio__control_2hott_8c_source.html#l00048">radio_control_impl_init()</a>, <a class="el" href="relative__localization__filter_8c_source.html#l00128">relative_localization_filter_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00109">rotorcraft_cam_init()</a>, <a class="el" href="rpm__sensor_8c_source.html#l00050">rpm_sensor_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00180">sdlog_chibios_init()</a>, <a class="el" href="airspeed__sdp3x_8c_source.html#l00153">sdp3x_init()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00098">stabilization_attitude_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">stabilization_indi_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00115">stabilization_rate_init()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00242">superbitrf_init()</a>, <a class="el" href="sys__id__chirp_8c_source.html#l00180">sys_id_chirp_init()</a>, <a class="el" href="sys__id__doublet_8c_source.html#l00129">sys_id_doublet_init()</a>, <a class="el" href="sys__id__wave_8c_source.html#l00136">sys_id_wave_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00129">temp_adc_init()</a>, <a class="el" href="tfmini__i2c_8c_source.html#l00142">tfmini_i2c_init()</a>, <a class="el" href="tfmini_8c_source.html#l00064">tfmini_init()</a>, <a class="el" href="throttle__curve_8c_source.html#l00079">throttle_curve_init()</a>, <a class="el" href="uart_8c_source.html#l00231">uart_periph_init()</a>, <a class="el" href="uav__recovery_8c_source.html#l00094">uav_recovery_init()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00195">vertical_ctrl_module_init()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00127">vff_init()</a>, <a class="el" href="wind__estimation__quadrotor_8c_source.html#l00098">wind_estimation_quadrotor_init()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00465">wind_estimator_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00061">actuators_bebop_init()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00174">actuators_uavcan_init()</a>, <a class="el" href="adc__generic_8c_source.html#l00077">adc_generic_init()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00081">ahrs_aligner_init()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00198">ahrs_dcm_register()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00283">ahrs_fc_register()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00237">ahrs_float_invariant_register()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00271">ahrs_icq_register()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00203">ahrs_madgwick_register()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00222">ahrs_mlkf_register()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00096">ahrs_vectornav_init()</a>, <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00066">ahrs_vectornav_register()</a>, <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00145">aoa_pwm_init()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00152">autopilot_firmware_init()</a>, <a class="el" href="autopilot_8c_source.html#l00106">autopilot_init()</a>, <a class="el" href="baro__bmp280__i2c_8c_source.html#l00068">baro_bmp280_init()</a>, <a class="el" href="battery__monitor_8c_source.html#l00140">battery_monitor_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00148">bluegiga_init()</a>, <a class="el" href="cam_8c_source.html#l00119">cam_init()</a>, <a class="el" href="commands_8c_source.html#l00046">commands_init()</a>, <a class="el" href="ctc_8c_source.html#l00097">ctc_init()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00079">ctrl_module_init()</a>, <a class="el" href="dcf_8c_source.html#l00063">dcf_init()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="uart__cam__ctrl_8c_source.html#l00116">digital_cam_uart_init()</a>, <a class="el" href="downlink_8c_source.html#l00067">downlink_init()</a>, <a class="el" href="dragspeed_8c_source.html#l00082">dragspeed_init()</a>, <a class="el" href="esc32_8c_source.html#l00235">esc32_init()</a>, <a class="el" href="gec__dl_8c_source.html#l00345">gec_dl_init()</a>, <a class="el" href="gps_8c_source.html#l00308">gps_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00176">guidance_h_init()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00099">guidance_hybrid_init()</a>, <a class="el" href="guidance__indi_8c_source.html#l00146">guidance_indi_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00178">guidance_v_init()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_init()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00107">gvf_parametric_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00298">h_ctl_init()</a>, <a class="el" href="hf__float_8c_source.html#l00274">hff_init()</a>, <a class="el" href="radio__control_2hott_8c_source.html#l00048">hott_init()</a>, <a class="el" href="i2c_8c_source.html#l00310">i2c_init()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00107">imu_gx3_init()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00080">imu_vectornav_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00374">ins_ekf2_init()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00219">ins_float_invariant_init()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00221">ins_float_invariant_wrapper_init()</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00140">ins_gps_passthrough_init()</a>, <a class="el" href="ins__int_8c_source.html#l00198">ins_int_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00163">ins_vectornav_init()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00069">intermcu_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00154">jevois_mavlink_init()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00055">mag_pitot_init()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="main__recovery_8c_source.html#l00089">main_recovery_init()</a>, <a class="el" href="mateksys__3901__l0x_8c_source.html#l00110">mateksys3901l0x_init()</a>, <a class="el" href="mavlink_8c_source.html#l00107">mavlink_init()</a>, <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, <a class="el" href="airspeed__ms45xx__i2c_8c_source.html#l00184">ms45xx_i2c_init()</a>, <a class="el" href="nav_8c_source.html#l00533">nav_init()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00287">nav_rover_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00100">nav_survey_rectangle_rotorcraft_init()</a>, <a class="el" href="navdata_8c_source.html#l00174">navdata_init()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00259">optical_flow_hover_init()</a>, <a class="el" href="opticflow__module_8c_source.html#l00106">opticflow_module_init()</a>, <a class="el" href="pca9685__i2c_8c_source.html#l00279">pca9685_i2c_init()</a>, <a class="el" href="ppm_8c_source.html#l00071">ppm_init()</a>, <a class="el" href="cc2500__paparazzi_8c_source.html#l00051">radio_control_cc2500_init()</a>, <a class="el" href="radio__control_8c_source.html#l00044">radio_control_init()</a>, <a class="el" href="relative__localization__filter_8c_source.html#l00128">relative_localization_filter_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00109">rotorcraft_cam_init()</a>, <a class="el" href="rpm__sensor_8c_source.html#l00050">rpm_sensor_init()</a>, <a class="el" href="sbus__dual_8c_source.html#l00064">sbus_dual_init()</a>, <a class="el" href="sbus_8c_source.html#l00055">sbus_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00180">sdlog_chibios_init()</a>, <a class="el" href="airspeed__sdp3x_8c_source.html#l00153">sdp3x_init()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00098">stabilization_attitude_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">stabilization_indi_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00115">stabilization_rate_init()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00242">superbitrf_init()</a>, <a class="el" href="sys__id__chirp_8c_source.html#l00180">sys_id_chirp_init()</a>, <a class="el" href="sys__id__doublet_8c_source.html#l00129">sys_id_doublet_init()</a>, <a class="el" href="sys__id__wave_8c_source.html#l00136">sys_id_wave_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00129">temp_adc_init()</a>, <a class="el" href="tfmini__i2c_8c_source.html#l00142">tfmini_i2c_init()</a>, <a class="el" href="tfmini_8c_source.html#l00064">tfmini_init()</a>, <a class="el" href="throttle__curve_8c_source.html#l00079">throttle_curve_init()</a>, <a class="el" href="uart_8c_source.html#l00231">uart_periph_init()</a>, <a class="el" href="uav__recovery_8c_source.html#l00094">uav_recovery_init()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00195">vertical_ctrl_module_init()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00127">vff_init()</a>, <a class="el" href="wind__estimation__quadrotor_8c_source.html#l00098">wind_estimation_quadrotor_init()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00465">wind_estimator_init()</a>.</p>
+
+</div>
+</div>
+<a id="a8569c3f73297d33f638ce40e348dd61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8569c3f73297d33f638ce40e348dd61a">&#9670;&nbsp;</a></span>telemetry_reporting_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void telemetry_reporting_task </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peridioc task Send a series of initialisation messages followed by a stream of periodic ones. </p>
+<p>Periodic task. </p>
+
+<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00075">75</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00339">autopilot_send_version()</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="telemetry_8c_a8569c3f73297d33f638ce40e348dd61a_cgraph.png" border="0" usemap="#telemetry_8c_a8569c3f73297d33f638ce40e348dd61a_cgraph" alt=""/></div>
+<map name="telemetry_8c_a8569c3f73297d33f638ce40e348dd61a_cgraph" id="telemetry_8c_a8569c3f73297d33f638ce40e348dd61a_cgraph">
+<area shape="rect" title="Peridioc task Send a series of initialisation messages followed by a stream of periodic ones." alt="" coords="5,5,192,32"/>
+<area shape="rect" href="autopilot_8c.html#ac26e7b23b69d3d3dc0fd390fb96efdbb" title="send autopilot version" alt="" coords="240,5,413,32"/>
+<area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="461,5,635,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -260,7 +322,7 @@ Variables</h2></td></tr>
 <p>Global telemetry structure. </p>
 <p>Contains the list of message names and registered callbacks. Filled with generated structure from periodic_telemetry.h </p>
 
-<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00037">37</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00040">40</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -276,7 +338,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00036">36</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="telemetry_8c_source.html#l00039">39</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 </div>
 </div>
@@ -286,7 +348,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="telemetry_8c.html">telemetry.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:00 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

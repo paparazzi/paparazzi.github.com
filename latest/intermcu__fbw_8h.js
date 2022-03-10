@@ -10,9 +10,10 @@ var intermcu__fbw_8h =
     [ "INTERMCU_RADIO_ROLL", "intermcu__fbw_8h.html#a5d93b2c0419e0f14e7a58b1c41d0ec60", null ],
     [ "INTERMCU_RADIO_THROTTLE", "intermcu__fbw_8h.html#af28f842ae4cddd658b5b6194a83ee14f", null ],
     [ "INTERMCU_RADIO_YAW", "intermcu__fbw_8h.html#a7374b0fab01813d2f44151fb66f65a02", null ],
-    [ "intermcu_on_rc_frame", "intermcu__fbw_8h.html#aa60e278348807df613abfa9ba8663503", null ],
-    [ "intermcu_send_status", "intermcu__fbw_8h.html#abbadcd4c86e9907fc3f28610b0ef6de1", null ],
-    [ "InterMcuEvent", "intermcu__fbw_8h.html#a33141c0ab91bcac2e0d5862739d728aa", null ],
-    [ "autopilot_motors_on", "intermcu__fbw_8h.html#a54cc031e8ec2149a161a3b14b0bd346c", null ],
+    [ "intermcu_forward_uplink", "intermcu__fbw_8h.html#a94bde14da313b2242a4be2765e6caa82", null ],
+    [ "intermcu_parse_IMCU_COMMANDS", "intermcu__fbw_8h.html#a7e51fa32b115a3aa8bd63474c1ae5560", null ],
+    [ "intermcu_parse_IMCU_SPEKTRUM_SOFT_BIND", "intermcu__fbw_8h.html#a90f01901c6cc79349e1fda18cf5f7878", null ],
+    [ "intermcu_send_status", "intermcu__fbw_8h.html#a3310d390d84ed323b5bb1ca7ad0cc7db", null ],
+    [ "intermcu_ap_motors_on", "intermcu__fbw_8h.html#afd7fd5a147022b41f68bec53e4ea8275", null ],
     [ "intermcu_commands", "intermcu__fbw_8h.html#a9c64530afb6fb7ea386b9e57bfc0275d", null ]
 ];

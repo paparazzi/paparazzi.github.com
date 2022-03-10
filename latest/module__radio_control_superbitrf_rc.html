@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('module__radio_control_superbitrf_rc.ht
 <h1><a class="anchor" id="module_load_example__radio_control_superbitrf_rc"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control_superbitrf_rc&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;RADIO_CONTROL_LED&quot; value=&quot;none|num&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SUPERBITRF_SPI_DEV&quot; value=&quot;SPI2&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;SUPERBITRF_SPI_SLAVE_IDX&quot; value=&quot;2&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -102,12 +101,24 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
-<li><b>name:</b> <code>RADIO_CONTROL_LED</code> <b>value:</b> <em>none|num</em> <br  />
- Description: LED number or 'none' to disable</li>
 <li><b>name:</b> <code>SUPERBITRF_SPI_DEV</code> <b>value:</b> <em>SPI2</em> <br  />
  Description: SPI used for <a class="el" href="modules_2datalink_2superbitrf_8h.html#structSuperbitRF">SuperbitRF</a></li>
 <li><b>name:</b> <code>SUPERBITRF_SPI_SLAVE_IDX</code> <b>value:</b> <em>2</em> <br  />
  Description: SPI slave number for <a class="el" href="modules_2datalink_2superbitrf_8h.html#structSuperbitRF">SuperbitRF</a></li>
+</ul>
+<h1><a class="anchor" id="functions__radio_control_superbitrf_rc"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9" title="Initialization.">superbitrf_rc_init()</a></li>
+</ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="superbitrf__rc_8c.html#afc61e3ef036fe29a6dc2d34dd6919f10" title="RC event function.">superbitrf_rc_event()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -120,11 +131,6 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
-<li><a class="el" href="superbitrf__rc_8c.html">modules/radio_control/superbitrf_rc.c</a></li>
-<li><a class="el" href="modules_2datalink_2superbitrf_8c.html">modules/datalink/superbitrf.c</a></li>
-<li><a class="el" href="cyrf6936_8c.html">peripherals/cyrf6936.c</a></li>
-<li><a class="el" href="radio__control_8c.html">modules/radio_control/radio_control.c</a></li>
 <li><a class="el" href="superbitrf__rc_8c.html">modules/radio_control/superbitrf_rc.c</a></li>
 <li><a class="el" href="modules_2datalink_2superbitrf_8c.html">modules/datalink/superbitrf.c</a></li>
 <li><a class="el" href="cyrf6936_8c.html">peripherals/cyrf6936.c</a></li>
@@ -138,7 +144,6 @@ Raw radio_control_superbitrf_rc.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Radio</span> <span class="keyword">control</span> <span class="keyword">based</span> <span class="keyword">on</span> <span class="keyword">the</span> <span class="keyword">SuperbitRF</span> <span class="keyword">chip</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;none|num&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number or &#39;none&#39; to disable&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SUPERBITRF_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SPI2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;SPI used for SuperbitRF&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SUPERBITRF_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;SPI slave number for SuperbitRF&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
@@ -153,37 +158,24 @@ Raw radio_control_superbitrf_rc.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">radio_control_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">radio_control</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;superbitrf_rc.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;superbitrf_rc_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;superbitrf_rc_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw|sim|nps&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SUPERBITRF_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI2&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SUPERBITRF_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(RADIO_CONTROL_LED),none)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/superbitrf_rc.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;fbw&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_SUPERBITRF&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SUPERBITRF&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SUPERBITRF_SPI_DEV)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE$(SUPERBITRF_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;superbitrf_rc.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;superbitrf.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/datalink&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cyrf6936.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq (,$(findstring $(SEPARATE_FBW),1 TRUE))&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_SUPERBITRF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SUPERBITRF&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(SUPERBITRF_SPI_DEV)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE$(SUPERBITRF_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;radio_control.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;superbitrf_rc.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;superbitrf.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/datalink&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;cyrf6936.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
@@ -191,7 +183,6 @@ Raw radio_control_superbitrf_rc.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_SUPERBITRF&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SUPERBITRF&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;modules/radio_control/superbitrf_rc.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SUPERBITRF_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi2&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI2&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPI_MASTER&quot;</span>/&gt;</div>
@@ -213,7 +204,7 @@ Raw radio_control_superbitrf_rc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:32:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

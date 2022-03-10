@@ -67,7 +67,6 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "stereocam", "dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html", "dir_3df9ff4d3eb13d31d58a513ba3c4e4bb" ],
     [ "switching", "dir_48e2729a7857fbd238afa6214b1fc763.html", "dir_48e2729a7857fbd238afa6214b1fc763" ],
     [ "system_identification", "dir_c284a1faf6d5815afd7007ca54e80be9.html", "dir_c284a1faf6d5815afd7007ca54e80be9" ],
-    [ "telemetry", "dir_dab7dfbaf243a3c567626a250692cdbb.html", "dir_dab7dfbaf243a3c567626a250692cdbb" ],
     [ "time", "dir_63011ef7b1135673f06d06b59c577dfa.html", "dir_63011ef7b1135673f06d06b59c577dfa" ],
     [ "tlsf", "dir_2dab0067fc5855d238895e34a3d18072.html", "dir_2dab0067fc5855d238895e34a3d18072" ],
     [ "uav_recovery", "dir_514e42ddade0df778a696ac907fa7c01.html", "dir_514e42ddade0df778a696ac907fa7c01" ],

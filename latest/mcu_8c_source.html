@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led_8h.html">led.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL_BIND_IMPL_FUNC &amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="radio__control_8h.html">modules/radio_control/radio_control.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL_BIND_IMPL_FUNC &amp;&amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spektrum_8h.html">modules/radio_control/spektrum.h</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if USE_UART0 || USE_UART1 || USE_UART2 || USE_UART3 || USE_UART4 || USE_UART5 || USE_UART6 || USE_UART7 || USE_UART8</span></div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="v4_80_2px4fmu_8h.html#a25001fd394216ea752e12aace64b4302">PERIPHERAL3V3_ENABLE_ON</a>(<a class="code" href="v4_80_2px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="code" href="v4_80_2px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">PERIPHERAL3V3_ENABLE_PIN</a>);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">/* for now this means using spektrum */</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL &amp; defined RADIO_CONTROL_BIND_IMPL_FUNC &amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL &amp;&amp; defined RADIO_CONTROL_BIND_IMPL_FUNC &amp;&amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  RADIO_CONTROL_BIND_IMPL_FUNC();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
@@ -356,7 +356,6 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void WEAK board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init().</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00077">mcu.c:77</a></div></div>
-<div class="ttc" id="aradio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div></div>
 <div class="ttc" id="aopa__ftd__1_80_8h_html_a4621a9598a17b5c9991140dce7a5508c"><div class="ttname"><a href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a></div><div class="ttdeci">#define BTN_ON_PIN</div><div class="ttdef"><b>Definition:</b> <a href="opa__ftd__1_80_8h_source.html#l00074">opa_ftd_1.0.h:74</a></div></div>
 <div class="ttc" id="av4_80_2px4fmu_8h_html_a8e7b3c5d82b12be80fac1830d161e43d"><div class="ttname"><a href="v4_80_2px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a></div><div class="ttdeci">#define PERIPHERAL3V3_ENABLE_PORT</div><div class="ttdef"><b>Definition:</b> <a href="v4_80_2px4fmu_8h_source.html#l00282">px4fmu.h:282</a></div></div>
 <div class="ttc" id="ausb__ser__hw_8c_html_a96a54f28bfc8bc28963cd2fac74609cd"><div class="ttname"><a href="usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a></div><div class="ttdeci">void VCOM_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="usb__ser__hw_8c_source.html#l00565">usb_ser_hw.c:565</a></div></div>
@@ -376,6 +375,7 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div class="ttc" id="adac_8h_html_a6e622fafee8436bf9cf9f6b120352e3c"><div class="ttname"><a href="dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c">dac_init</a></div><div class="ttdeci">void dac_init(void)</div></div>
 <div class="ttc" id="achibios_2mcu__periph_2rng__arch_8c_html_ad5a3df3d0092f55f6ea54ccaa7daf3dc"><div class="ttname"><a href="chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_init</a></div><div class="ttdeci">void rng_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2rng__arch_8c_source.html#l00077">rng_arch.c:77</a></div></div>
 <div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div><div class="ttdoc">arch independent ADC (Analog to Digital Converter) API</div></div>
+<div class="ttc" id="aspektrum_8h_html"><div class="ttname"><a href="spektrum_8h.html">spektrum.h</a></div></div>
 <div class="ttc" id="alinux_2mcu__periph_2udp__arch_8c_html_a665732768aad2a0f4b0a396d96485cc2"><div class="ttname"><a href="linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a></div><div class="ttdeci">void udp_arch_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2udp__arch_8c_source.html#l00043">udp_arch.c:43</a></div></div>
 <div class="ttc" id="arng_8h_html"><div class="ttname"><a href="rng_8h.html">rng.h</a></div><div class="ttdoc">arch independent Random Number Generator API</div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
@@ -410,7 +410,7 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="mcu_8c.html">mcu.c</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 10:31:52 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 10 2022 13:26:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
