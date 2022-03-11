@@ -93,6 +93,8 @@ $(document).ready(function(){initNavTree('settings_8h.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;pprzlink/pprzlink_device.h&quot;</code><br />
+<code>#include &quot;pprzlink/pprzlink_transport.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for settings.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,8 +102,10 @@ $(document).ready(function(){initNavTree('settings_8h.html',''); initResizable()
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="settings_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2core_2settings_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2core_2settings_8h" id="sw_2airborne_2modules_2core_2settings_8h">
-<area shape="rect" title=" " alt="" coords="5,5,164,47"/>
-<area shape="rect" title=" " alt="" coords="57,95,112,121"/>
+<area shape="rect" title=" " alt="" coords="101,5,260,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,60,121"/>
+<area shape="rect" title=" " alt="" coords="85,95,277,121"/>
+<area shape="rect" title=" " alt="" coords="301,95,509,121"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -148,6 +152,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a76ba58642034832f6b3c5781b693f13e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a76ba58642034832f6b3c5781b693f13e">settings_clear</a> (void)</td></tr>
 <tr class="memdesc:a76ba58642034832f6b3c5781b693f13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear all persistent settings from flash  <a href="settings_8h.html#a76ba58642034832f6b3c5781b693f13e">More...</a><br /></td></tr>
 <tr class="separator:a76ba58642034832f6b3c5781b693f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaafb969ffa6ec451b6bb2facd5736ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#aaaafb969ffa6ec451b6bb2facd5736ee">settings_parse_msg_SETTING</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:aaaafb969ffa6ec451b6bb2facd5736ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3554f41536872c4a90af91d527f6593f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a3554f41536872c4a90af91d527f6593f">settings_parse_msg_GET_SETTING</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a3554f41536872c4a90af91d527f6593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069b2bcf8fcf2d115466efa163c7583e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a069b2bcf8fcf2d115466efa163c7583e">persistent_write</a> (void *ptr, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> size)</td></tr>
 <tr class="separator:a069b2bcf8fcf2d115466efa163c7583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d60026540670a5fc2ac03dee06c791e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8h.html#a6d60026540670a5fc2ac03dee06c791e">persistent_read</a> (void *ptr, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> size)</td></tr>
@@ -184,7 +192,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00041">41</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00045">45</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +212,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00040">40</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00044">44</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +237,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00110">flash_detect()</a>, <a class="el" href="linux_2modules_2core_2settings__arch_8c_source.html#l00034">PERSISTENT_SETTINGS_FILE</a>, and <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00213">pflash_erase()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00077">settings_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00080">settings_clear()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -287,7 +295,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00042">FlashInfo::addr</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00064">FCHK</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00110">flash_detect()</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00063">FSIZ</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00045">FlashInfo::page_size</a>, <a class="el" href="linux_2modules_2core_2settings__arch_8c_source.html#l00034">PERSISTENT_SETTINGS_FILE</a>, and <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00067">pflash_checksum()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00043">settings_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00046">settings_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -348,7 +356,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00110">flash_detect()</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00063">FSIZ</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00045">FlashInfo::page_size</a>, <a class="el" href="linux_2modules_2core_2settings__arch_8c_source.html#l00034">PERSISTENT_SETTINGS_FILE</a>, <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00067">pflash_checksum()</a>, and <a class="el" href="stm32_2modules_2core_2settings__arch_8c_source.html#l00236">pflash_program_bytes()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00057">settings_store()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="settings_8c_source.html#l00060">settings_store()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -397,9 +405,9 @@ Variables</h2></td></tr>
 <p>clear all persistent settings from flash </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00077">77</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00080">80</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p class="reference">References <a class="el" href="linux_2modules_2core_2settings__arch_8c_source.html#l00074">persistent_clear()</a>, and <a class="el" href="settings_8c_source.html#l00040">settings_clear_flag</a>.</p>
+<p class="reference">References <a class="el" href="linux_2modules_2core_2settings__arch_8c_source.html#l00074">persistent_clear()</a>, and <a class="el" href="settings_8c_source.html#l00043">settings_clear_flag</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00329">autopilot_clear_settings()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -443,9 +451,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00043">43</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00046">46</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p class="reference">References <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, and <a class="el" href="chibios_2modules_2core_2settings__arch_8c_source.html#l00038">persistent_read()</a>.</p>
+<p class="reference">References <a class="el" href="settings_8c_source.html#l00034">pers_settings</a>, and <a class="el" href="chibios_2modules_2core_2settings__arch_8c_source.html#l00038">persistent_read()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="cc2500__settings_8c_source.html#l00159">cc2500_settings_init()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -476,6 +484,82 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a3554f41536872c4a90af91d527f6593f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3554f41536872c4a90af91d527f6593f">&#9670;&nbsp;</a></span>settings_parse_msg_GET_SETTING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void settings_parse_msg_GET_SETTING </td>
+          <td>(</td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00118">118</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+
+<p class="reference">References <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+
+</div>
+</div>
+<a id="aaaafb969ffa6ec451b6bb2facd5736ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaafb969ffa6ec451b6bb2facd5736ee">&#9670;&nbsp;</a></span>settings_parse_msg_SETTING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void settings_parse_msg_SETTING </td>
+          <td>(</td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00095">95</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+
+<p class="reference">References <a class="el" href="usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>.</p>
+
+</div>
+</div>
 <a id="ada97d7166aa02d3c945ef0333770f640"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada97d7166aa02d3c945ef0333770f640">&#9670;&nbsp;</a></span>settings_store()</h2>
 
@@ -495,9 +579,9 @@ Variables</h2></td></tr>
 <p>store settings marked as persistent to flash </p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00057">57</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00060">60</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p class="reference">References <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, <a class="el" href="chibios_2modules_2core_2settings__arch_8c_source.html#l00033">persistent_write()</a>, and <a class="el" href="settings_8c_source.html#l00038">settings_store_flag</a>.</p>
+<p class="reference">References <a class="el" href="settings_8c_source.html#l00034">pers_settings</a>, <a class="el" href="chibios_2modules_2core_2settings__arch_8c_source.html#l00033">persistent_write()</a>, and <a class="el" href="settings_8c_source.html#l00041">settings_store_flag</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00319">autopilot_store_settings()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -538,9 +622,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00040">40</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00043">43</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00329">autopilot_clear_settings()</a>, and <a class="el" href="settings_8c_source.html#l00077">settings_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00329">autopilot_clear_settings()</a>, and <a class="el" href="settings_8c_source.html#l00080">settings_clear()</a>.</p>
 
 </div>
 </div>
@@ -559,9 +643,9 @@ Variables</h2></td></tr>
 <p>flag for setting feedback. </p>
 <p>if TRUE, was stored sucessfully. Also settings still need a variable, pure function call not possible yet. </p>
 
-<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00038">38</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8c_source.html#l00041">41</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00319">autopilot_store_settings()</a>, and <a class="el" href="settings_8c_source.html#l00057">settings_store()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00319">autopilot_store_settings()</a>, and <a class="el" href="settings_8c_source.html#l00060">settings_store()</a>.</p>
 
 </div>
 </div>
@@ -571,7 +655,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="settings_8h.html">settings.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 13:26:26 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 14:54:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

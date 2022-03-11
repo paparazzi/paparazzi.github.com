@@ -533,7 +533,8 @@ var onboard_modules =
     ] ],
     [ "settings module", "module__settings.html", [
       [ "Example for airframe file", "module__settings.html#module_load_example__settings", null ],
-      [ "Module functions", "module__settings.html#functions__settings", [
+      [ "Module functions", "module__settings.html#functions__settings", null ],
+      [ "Datalink Functions", "module__settings.html#datalink_functions__settings", [
         [ "Raw settings.xml file:", "module__settings.html#module_xml__settings", null ]
       ] ]
     ] ],
@@ -649,7 +650,8 @@ var onboard_modules =
     ] ],
     [ "datalink_common module", "module__datalink_common.html", [
       [ "Example for airframe file", "module__datalink_common.html#module_load_example__datalink_common", null ],
-      [ "Module functions", "module__datalink_common.html#functions__datalink_common", [
+      [ "Module functions", "module__datalink_common.html#functions__datalink_common", null ],
+      [ "Datalink Functions", "module__datalink_common.html#datalink_functions__datalink_common", [
         [ "Raw datalink_common.xml file:", "module__datalink_common.html#module_xml__datalink_common", null ]
       ] ]
     ] ],
@@ -913,7 +915,8 @@ var onboard_modules =
     [ "gps module", "module__gps.html", [
       [ "Example for airframe file", "module__gps.html#module_load_example__gps", null ],
       [ "Module configuration options", "module__gps.html#configuration__gps", null ],
-      [ "Module functions", "module__gps.html#functions__gps", [
+      [ "Module functions", "module__gps.html#functions__gps", null ],
+      [ "Datalink Functions", "module__gps.html#datalink_functions__gps", [
         [ "Raw gps.xml file:", "module__gps.html#module_xml__gps", null ]
       ] ]
     ] ],
@@ -1011,7 +1014,8 @@ var onboard_modules =
       [ "Example for airframe file", "module__gps_ublox.html#module_load_example__gps_ublox", null ],
       [ "Module configuration options", "module__gps_ublox.html#configuration__gps_ublox", null ],
       [ "Auto-loaded modules", "module__gps_ublox.html#autoloads__gps_ublox", null ],
-      [ "Module functions", "module__gps_ublox.html#functions__gps_ublox", [
+      [ "Module functions", "module__gps_ublox.html#functions__gps_ublox", null ],
+      [ "Datalink Functions", "module__gps_ublox.html#datalink_functions__gps_ublox", [
         [ "Raw gps_ublox.xml file:", "module__gps_ublox.html#module_xml__gps_ublox", null ]
       ] ]
     ] ],
@@ -1982,13 +1986,15 @@ var onboard_modules =
     [ "nav_basic_fw module", "module__nav_basic_fw.html", [
       [ "Example for airframe file", "module__nav_basic_fw.html#module_load_example__nav_basic_fw", null ],
       [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", null ],
-      [ "Module functions", "module__nav_basic_fw.html#functions__nav_basic_fw", [
+      [ "Module functions", "module__nav_basic_fw.html#functions__nav_basic_fw", null ],
+      [ "Datalink Functions", "module__nav_basic_fw.html#datalink_functions__nav_basic_fw", [
         [ "Raw nav_basic_fw.xml file:", "module__nav_basic_fw.html#module_xml__nav_basic_fw", null ]
       ] ]
     ] ],
     [ "nav_basic_rotorcraft module", "module__nav_basic_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft", null ],
-      [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", [
+      [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", null ],
+      [ "Datalink Functions", "module__nav_basic_rotorcraft.html#datalink_functions__nav_basic_rotorcraft", [
         [ "Raw nav_basic_rotorcraft.xml file:", "module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft", null ]
       ] ]
     ] ],
@@ -2078,7 +2084,8 @@ var onboard_modules =
     ] ],
     [ "nav_rover_base module", "module__nav_rover_base.html", [
       [ "Example for airframe file", "module__nav_rover_base.html#module_load_example__nav_rover_base", null ],
-      [ "Module functions", "module__nav_rover_base.html#functions__nav_rover_base", [
+      [ "Module functions", "module__nav_rover_base.html#functions__nav_rover_base", null ],
+      [ "Datalink Functions", "module__nav_rover_base.html#datalink_functions__nav_rover_base", [
         [ "Raw nav_rover_base.xml file:", "module__nav_rover_base.html#module_xml__nav_rover_base", null ]
       ] ]
     ] ],
@@ -2221,7 +2228,8 @@ var onboard_modules =
     [ "radio_control_datalink module", "module__radio_control_datalink.html", [
       [ "Example for airframe file", "module__radio_control_datalink.html#module_load_example__radio_control_datalink", null ],
       [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", null ],
-      [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", [
+      [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", null ],
+      [ "Datalink Functions", "module__radio_control_datalink.html#datalink_functions__radio_control_datalink", [
         [ "Raw radio_control_datalink.xml file:", "module__radio_control_datalink.html#module_xml__radio_control_datalink", null ]
       ] ]
     ] ],
@@ -2751,7 +2759,8 @@ var onboard_modules =
     [ "air_data module", "module__air_data.html", [
       [ "Example for airframe file", "module__air_data.html#module_load_example__air_data", null ],
       [ "Module configuration options", "module__air_data.html#configuration__air_data", null ],
-      [ "Module functions", "module__air_data.html#functions__air_data", [
+      [ "Module functions", "module__air_data.html#functions__air_data", null ],
+      [ "Datalink Functions", "module__air_data.html#datalink_functions__air_data", [
         [ "Raw air_data.xml file:", "module__air_data.html#module_xml__air_data", null ]
       ] ]
     ] ],
@@ -2763,7 +2772,8 @@ var onboard_modules =
     ] ],
     [ "autopilot_gnc module", "module__autopilot_gnc.html", [
       [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
-      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", [
+      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
+      [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
         [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
       ] ]
     ] ],
@@ -2771,6 +2781,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__autopilot_gnc_fw.html#module_load_example__autopilot_gnc_fw", null ],
       [ "Module functions", "module__autopilot_gnc_fw.html#functions__autopilot_gnc_fw", [
         [ "Raw autopilot_gnc_fw.xml file:", "module__autopilot_gnc_fw.html#module_xml__autopilot_gnc_fw", null ]
+      ] ]
+    ] ],
+    [ "autopilot_guided module", "module__autopilot_guided.html", [
+      [ "Example for airframe file", "module__autopilot_guided.html#module_load_example__autopilot_guided", null ],
+      [ "Datalink Functions", "module__autopilot_guided.html#datalink_functions__autopilot_guided", [
+        [ "Raw autopilot_guided.xml file:", "module__autopilot_guided.html#module_xml__autopilot_guided", null ]
       ] ]
     ] ],
     [ "bebop_cam module", "module__bebop_cam.html", [

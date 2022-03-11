@@ -158,7 +158,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing__datalink_8c_source.html#l00050">firmware_parse_msg()</a>, <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, and <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>, and <a class="el" href="nav_8c_source.html#l00587">nav_parse_BLOCK()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -177,26 +177,14 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph.png" border="0" usemap="#common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph" alt=""/></div>
 <map name="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph" id="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph">
-<area shape="rect" title=" " alt="" coords="1132,233,1256,260"/>
-<area shape="rect" href="datalink_8h.html#a3a59fd1cd4249ea5caeac113cde2d7a8" title="Firmware specfic msg handler." alt="" coords="913,183,1072,209"/>
-<area shape="rect" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="912,233,1073,260"/>
-<area shape="rect" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="901,285,1084,326"/>
-<area shape="rect" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer." alt="" coords="698,183,810,209"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="471,183,607,209"/>
-<area shape="rect" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event." alt="" coords="268,5,409,32"/>
-<area shape="rect" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="261,56,416,83"/>
-<area shape="rect" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event." alt="" coords="285,107,393,133"/>
-<area shape="rect" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="282,157,395,184"/>
-<area shape="rect" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title=" " alt="" coords="255,208,423,235"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="265,259,413,285"/>
-<area shape="rect" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title=" " alt="" coords="284,309,393,336"/>
-<area shape="rect" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="280,360,397,387"/>
-<area shape="rect" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,157,207,184"/>
-<area shape="rect" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,60,184"/>
-<area shape="rect" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title=" " alt="" coords="699,233,809,260"/>
-<area shape="rect" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title=" " alt="" coords="491,233,586,260"/>
-<area shape="rect" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="655,285,853,326"/>
-<area shape="rect" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="479,292,598,319"/>
+<area shape="rect" title=" " alt="" coords="649,64,773,91"/>
+<area shape="rect" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="429,5,591,32"/>
+<area shape="rect" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="419,57,601,98"/>
+<area shape="rect" href="nav_8h.html#afc5ef925b0de76cbd601058312a70763" title=" " alt="" coords="440,123,580,149"/>
+<area shape="rect" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title=" " alt="" coords="217,5,326,32"/>
+<area shape="rect" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title=" " alt="" coords="17,5,112,32"/>
+<area shape="rect" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="172,57,371,98"/>
+<area shape="rect" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="5,64,124,91"/>
 </map>
 </div>
 
@@ -230,27 +218,15 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="common__flight__plan_8c_aa3cbfa3c23e459645a8e67b1bb4a1bef_icgraph.png" border="0" usemap="#common__flight__plan_8c_aa3cbfa3c23e459645a8e67b1bb4a1bef_icgraph" alt=""/></div>
 <map name="common__flight__plan_8c_aa3cbfa3c23e459645a8e67b1bb4a1bef_icgraph" id="common__flight__plan_8c_aa3cbfa3c23e459645a8e67b1bb4a1bef_icgraph">
-<area shape="rect" title=" " alt="" coords="1304,233,1420,260"/>
-<area shape="rect" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d" title=" " alt="" coords="1132,233,1256,260"/>
-<area shape="rect" href="datalink_8h.html#a3a59fd1cd4249ea5caeac113cde2d7a8" title="Firmware specfic msg handler." alt="" coords="913,183,1072,209"/>
-<area shape="rect" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="912,233,1073,260"/>
-<area shape="rect" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="901,285,1084,326"/>
-<area shape="rect" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer." alt="" coords="698,183,810,209"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="471,183,607,209"/>
-<area shape="rect" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event." alt="" coords="268,5,409,32"/>
-<area shape="rect" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="261,56,416,83"/>
-<area shape="rect" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event." alt="" coords="285,107,393,133"/>
-<area shape="rect" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="282,157,395,184"/>
-<area shape="rect" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title=" " alt="" coords="255,208,423,235"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="265,259,413,285"/>
-<area shape="rect" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title=" " alt="" coords="284,309,393,336"/>
-<area shape="rect" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="280,360,397,387"/>
-<area shape="rect" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,157,207,184"/>
-<area shape="rect" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,60,184"/>
-<area shape="rect" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title=" " alt="" coords="699,233,809,260"/>
-<area shape="rect" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title=" " alt="" coords="491,233,586,260"/>
-<area shape="rect" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="655,285,853,326"/>
-<area shape="rect" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="479,292,598,319"/>
+<area shape="rect" title=" " alt="" coords="821,64,937,91"/>
+<area shape="rect" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d" title=" " alt="" coords="649,64,773,91"/>
+<area shape="rect" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="429,5,591,32"/>
+<area shape="rect" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title=" " alt="" coords="419,57,601,98"/>
+<area shape="rect" href="nav_8h.html#afc5ef925b0de76cbd601058312a70763" title=" " alt="" coords="440,123,580,149"/>
+<area shape="rect" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title=" " alt="" coords="217,5,326,32"/>
+<area shape="rect" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title=" " alt="" coords="17,5,112,32"/>
+<area shape="rect" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title=" " alt="" coords="172,57,371,98"/>
+<area shape="rect" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="5,64,124,91"/>
 </map>
 </div>
 
@@ -271,7 +247,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00153">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00399">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00153">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -365,7 +341,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00095">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00375">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00153">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00095">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00399">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00153">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -375,7 +351,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="common__flight__plan_8c.html">common_flight_plan.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 13:26:28 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 14:54:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

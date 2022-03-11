@@ -11,6 +11,7 @@ var air__data_8c =
     [ "AIR_DATA_TEMPERATURE_ID", "air__data_8c.html#a755331f8063080dcfcd82a0ffab77b6d", null ],
     [ "air_data_get_amsl", "air__data_8c.html#a4691b05fed5487ddf708464110926d4d", null ],
     [ "air_data_init", "air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad", null ],
+    [ "air_data_parse_WIND_INFO", "air__data_8c.html#abdd14cec10b066ee747da35cbab63334", null ],
     [ "air_data_periodic", "air__data_8c.html#a0f963507663e87b42f2e0329ab7df864", null ],
     [ "airspeed_cb", "air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5", null ],
     [ "compute_tas_factor", "air__data_8c.html#a4035dda781bc016f24033b67116330b5", null ],

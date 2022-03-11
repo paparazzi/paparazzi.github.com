@@ -9,6 +9,8 @@ var rover_2navigation_8c =
     [ "nav_init", "rover_2navigation_8c.html#a64a3814d1672e69989f80701a0ff5749", null ],
     [ "nav_init_stage", "rover_2navigation_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d", null ],
     [ "nav_is_in_flight", "rover_2navigation_8c.html#a46063efd4dae5efe23d6c018af1917d1", null ],
+    [ "nav_parse_BLOCK", "rover_2navigation_8c.html#a83611f5ef79754968abca36d8dbaf599", null ],
+    [ "nav_parse_MOVE_WP", "rover_2navigation_8c.html#a66999fe9753ffaa9c972ca15d9fc3333", null ],
     [ "nav_periodic_task", "rover_2navigation_8c.html#ad40d34bcd8520f64bb073fae4a08878e", null ],
     [ "nav_register_circle", "rover_2navigation_8c.html#aceb147e5f4a4f8502edfc3f1d59d925d", null ],
     [ "nav_register_goto_wp", "rover_2navigation_8c.html#a7254173fb2381632e0554d801cc59897", null ],

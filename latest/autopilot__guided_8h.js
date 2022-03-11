@@ -11,5 +11,6 @@ var autopilot__guided_8h =
     [ "autopilot_guided_goto_ned", "autopilot__guided_8h.html#ae4f59fae723f5116a979c7c5b923c180", null ],
     [ "autopilot_guided_goto_ned_relative", "autopilot__guided_8h.html#a32b83e461c091c64ffa38e4f08f6a312", null ],
     [ "autopilot_guided_move_ned", "autopilot__guided_8h.html#a113a26863eee267edc78f72876ec8f69", null ],
+    [ "autopilot_guided_parse_GUIDED", "autopilot__guided_8h.html#a2e1c3e1b1fd34632e5de912da830ba26", null ],
     [ "autopilot_guided_update", "autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d", null ]
 ];

@@ -35,6 +35,7 @@ var gps__ubx_8h =
     [ "gps_ubx_init", "gps__ubx_8h.html#ab186501d688a68a9911c601caf4d853c", null ],
     [ "gps_ubx_msg", "gps__ubx_8h.html#ab3be7fdb9eae93ba80f43b848cdb7416", null ],
     [ "gps_ubx_parse", "gps__ubx_8h.html#a3ad5afe6d36ae248fec7ab657c283e48", null ],
+    [ "gps_ubx_parse_HITL_UBX", "gps__ubx_8h.html#a20f97ade1e390cc76bdf23b5683ba18e", null ],
     [ "gps_ubx_read_message", "gps__ubx_8h.html#a40f87b11657c4465a6a31c8c80e2aad9", null ],
     [ "ubx_header", "gps__ubx_8h.html#a2318a808b3f3f117741ab7d86e4eaf78", null ],
     [ "ubx_send_bytes", "gps__ubx_8h.html#adf889ecccbe48a25bc9ddce61221193c", null ],

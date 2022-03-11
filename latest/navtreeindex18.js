@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__green__imbalance_8h.html#a355a351263aac95164a9833e3da975aa":[12,0,1,0,1,2,0,0,11,9,6],
+"avi__isp__green__imbalance_8h.html#a35a573d35347f1a0f541a594befadaf0":[12,0,1,0,1,2,0,0,11,3,0],
+"avi__isp__green__imbalance_8h.html#a39393e1da3e59a1d87d496754124f516":[12,0,1,0,1,2,0,0,11,31],
+"avi__isp__green__imbalance_8h.html#a41c0c79933713cf884d2310f43da1bda":[12,0,1,0,1,2,0,0,11,15,2],
 "avi__isp__green__imbalance_8h.html#a43a69f3f53f51f4e8b19b428ab9c0f63":[12,0,1,0,1,2,0,0,11,6,0],
 "avi__isp__green__imbalance_8h.html#a4693368805b9831d1dc07f6eada9c53a":[12,0,1,0,1,2,0,0,11,19,0],
 "avi__isp__green__imbalance_8h.html#a4cf943309273cbef3a5a776811749ec2":[12,0,1,0,1,2,0,0,11,32],
@@ -60,8 +64,8 @@ var NAVTREEINDEX18 =
 "avi__isp__i3d__lut_8h.html#a6977b067709700f698281760dcaeb704":[12,0,1,0,1,2,0,0,12,5,0],
 "avi__isp__i3d__lut_8h.html#a6c5735a8ef9a724e2f733b6d5a1bbd01":[12,0,1,0,1,2,0,0,12,4,0],
 "avi__isp__i3d__lut_8h.html#a8a315f8dffdb1626560852f8184d0c07":[12,0,1,0,1,2,0,0,12,1,0],
-"avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,6,2],
 "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,7,2],
+"avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,6,2],
 "avi__isp__i3d__lut_8h.html#ab9e09ac5854bc02e596efc986bcce6d9":[12,0,1,0,1,2,0,0,12,0,0],
 "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,6,1],
 "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,7,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__statistics__bayer_8h.html#a80997876f6afba983eaec918e58ecc0d":[12,0,1,0,1,2,0,0,15,14,1],
 "avi__isp__statistics__bayer_8h.html#a8c71ccc2d52e990449a0604169988162":[12,0,1,0,1,2,0,0,15,3,0],
 "avi__isp__statistics__bayer_8h.html#a8d13a96ca07b76b28546a5c9c55cd3a1":[12,0,1,0,1,2,0,0,15,12,0],
-"avi__isp__statistics__bayer_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b":[12,0,1,0,1,2,0,0,15,21,2],
-"avi__isp__statistics__bayer_8h.html#a9756870e16a73e29048ca33db11547c2":[12,0,1,0,1,2,0,0,15,32],
-"avi__isp__statistics__bayer_8h.html#a98037f2b763228de850f17d5c60cff47":[12,0,1,0,1,2,0,0,15,11,0],
-"avi__isp__statistics__bayer_8h.html#a992521e7e701515b4a96c538f2aa5824":[12,0,1,0,1,2,0,0,15,35],
-"avi__isp__statistics__bayer_8h.html#aa02486bcc75f6b89571b5dc6cae5efb6":[12,0,1,0,1,2,0,0,15,29]
+"avi__isp__statistics__bayer_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b":[12,0,1,0,1,2,0,0,15,21,2]
 };

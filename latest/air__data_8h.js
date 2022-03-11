@@ -21,6 +21,7 @@ var air__data_8h =
     ] ],
     [ "air_data_get_amsl", "air__data_8h.html#a4691b05fed5487ddf708464110926d4d", null ],
     [ "air_data_init", "air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad", null ],
+    [ "air_data_parse_WIND_INFO", "air__data_8h.html#abdd14cec10b066ee747da35cbab63334", null ],
     [ "air_data_periodic", "air__data_8h.html#a0f963507663e87b42f2e0329ab7df864", null ],
     [ "eas_from_dynamic_pressure", "air__data_8h.html#a0767fbd26611c68f1d1259567a6dfe50", null ],
     [ "eas_from_tas", "air__data_8h.html#a63b7d4cb201d930ccf74c1ee6ec6c877", null ],

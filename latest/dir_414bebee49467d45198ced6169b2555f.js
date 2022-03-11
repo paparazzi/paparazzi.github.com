@@ -10,6 +10,5 @@ var dir_414bebee49467d45198ced6169b2555f =
     [ "autopilot_utils.h", "rover_2autopilot__utils_8h.html", "rover_2autopilot__utils_8h" ],
     [ "navigation.c", "rover_2navigation_8c.html", "rover_2navigation_8c" ],
     [ "navigation.h", "rover_2navigation_8h.html", "rover_2navigation_8h" ],
-    [ "rover_datalink.c", "rover__datalink_8c.html", "rover__datalink_8c" ],
     [ "rover_telemetry.c", "rover__telemetry_8c.html", "rover__telemetry_8c" ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"airspeed__amsys_8h.html#a57d3c4a41d2ff24a9ed4557e492572b8":[12,0,1,0,6,60,6,0],
+"airspeed__amsys_8h.html#a5ab512571f05d2d4155b7dcdd014ee04":[12,0,1,0,6,60,6,2],
 "airspeed__amsys_8h.html#aca26a3f68b1ae04d73408bcb37d62869":[12,0,1,0,6,60,6,3],
 "airspeed__amsys_8h_source.html":[12,0,1,0,6,60,6],
 "airspeed__ets_8c.html":[12,0,1,0,6,60,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "ak8975_8c.html#ab0f5eefeb80614ad955e79f5b34819eb":[12,0,1,0,7,13,4],
 "ak8975_8c.html#abed279ceebffd64a3676bdf066add394":[12,0,1,0,7,13,0],
 "ak8975_8c.html#ad842b20c3c062d59f150af668b350ad6":[12,0,1,0,7,13,8],
-"ak8975_8c.html#af77ef841b189d6a1b8b7a15df10827d0":[12,0,1,0,7,13,7],
-"ak8975_8c_source.html":[12,0,1,0,7,13],
-"ak8975_8h.html":[12,0,1,0,7,14]
+"ak8975_8c.html#af77ef841b189d6a1b8b7a15df10827d0":[12,0,1,0,7,13,7]
 };

@@ -27,6 +27,7 @@ var gps__ubx_8c =
     [ "gps_ubx_init", "gps__ubx_8c.html#ab186501d688a68a9911c601caf4d853c", null ],
     [ "gps_ubx_msg", "gps__ubx_8c.html#ab3be7fdb9eae93ba80f43b848cdb7416", null ],
     [ "gps_ubx_parse", "gps__ubx_8c.html#a3ad5afe6d36ae248fec7ab657c283e48", null ],
+    [ "gps_ubx_parse_HITL_UBX", "gps__ubx_8c.html#a20f97ade1e390cc76bdf23b5683ba18e", null ],
     [ "gps_ubx_parse_nav_posecef", "gps__ubx_8c.html#a65cdc1e3acc9dda00297512194bc9364", null ],
     [ "gps_ubx_parse_nav_posllh", "gps__ubx_8c.html#ae7f801d3639c8cddbee84662832bf83d", null ],
     [ "gps_ubx_parse_nav_posutm", "gps__ubx_8c.html#adf546f30792a21b8fe285f2f35c58d94", null ],

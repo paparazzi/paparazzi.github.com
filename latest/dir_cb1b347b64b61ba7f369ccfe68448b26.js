@@ -15,7 +15,6 @@ var dir_cb1b347b64b61ba7f369ccfe68448b26 =
     [ "fbw_datalink.c", "fbw__datalink_8c.html", "fbw__datalink_8c" ],
     [ "fbw_datalink.h", "fbw__datalink_8h.html", "fbw__datalink_8h" ],
     [ "fbw_downlink.c", "fbw__downlink_8c.html", "fbw__downlink_8c" ],
-    [ "fixedwing_datalink.c", "fixedwing__datalink_8c.html", "fixedwing__datalink_8c" ],
     [ "main_recovery.c", "main__recovery_8c.html", "main__recovery_8c" ],
     [ "main_recovery.h", "main__recovery_8h.html", "main__recovery_8h" ],
     [ "nav.c", "nav_8c.html", "nav_8c" ],

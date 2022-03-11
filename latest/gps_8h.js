@@ -97,6 +97,8 @@ var gps_8h =
     [ "gps_has_been_good", "gps_8h.html#ae41a1e0948be00a7d3fa26ce6b13129a", null ],
     [ "gps_init", "gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771", null ],
     [ "gps_inject_data", "gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f", null ],
+    [ "gps_parse_GPS_INJECT", "gps_8h.html#a5b1e34c27ba1044a445e23c93f7212ab", null ],
+    [ "gps_parse_RTCM_INJECT", "gps_8h.html#a6d3041cd1924b179b8c3940d7840476f", null ],
     [ "gps_periodic_check", "gps_8h.html#ae631bcedc95daefc88cba7e639b38f19", null ],
     [ "gps_tow_from_sys_ticks", "gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
     [ "gps_week_number", "gps_8h.html#a5904be2de6c3e1e04d7789b135bc0f6b", null ],

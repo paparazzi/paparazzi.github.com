@@ -118,6 +118,12 @@ Periodic Functions</h2>
 </ul>
 </li>
 </ul>
+<h1><a class="anchor" id="datalink_functions__datalink_common"></a>
+Datalink Functions</h1>
+<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
+<ul>
+<li>on message <b>PING</b> call datalink_parse_PING(dev, trans, buf) </li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -134,12 +140,9 @@ Source Files</h2>
 <li><a class="el" href="downlink_8c.html">modules/datalink/downlink.c</a></li>
 <li><a class="el" href="datalink_8c.html">modules/datalink/datalink.c</a></li>
 <li><a class="el" href="telemetry_8c.html">modules/datalink/telemetry.c</a></li>
-<li>/fixedwing_datalink.c</li>
 <li>/ap_downlink.c</li>
 <li>/fbw_downlink.c</li>
-<li>/rotorcraft_datalink.c</li>
 <li>/rotorcraft_telemetry.c</li>
-<li>/rover_datalink.c</li>
 <li>/rover_telemetry.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__datalink_common"></a>
@@ -160,6 +163,7 @@ Raw datalink_common.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;downlink_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;telemetry_reporting_task()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;datalink_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;PING&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;datalink_parse_PING(dev, trans, buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PERIODIC_TELEMETRY&quot;</span>/&gt;</div>
@@ -173,7 +177,6 @@ Raw datalink_common.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!fbw&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fixedwing_datalink.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ap_downlink.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
@@ -185,7 +188,6 @@ Raw datalink_common.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;fbw_downlink.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotorcraft_datalink.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotorcraft_telemetry.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
@@ -194,7 +196,6 @@ Raw datalink_common.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rover_datalink.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rover_telemetry.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
@@ -212,7 +213,7 @@ Raw datalink_common.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 14:54:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

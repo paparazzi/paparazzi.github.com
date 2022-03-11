@@ -21,7 +21,6 @@ var dir_e37d355c72eb7c8e5b43c34bdea5a24b =
     [ "guidance.h", "guidance_8h.html", null ],
     [ "navigation.c", "rotorcraft_2navigation_8c.html", "rotorcraft_2navigation_8c" ],
     [ "navigation.h", "rotorcraft_2navigation_8h.html", "rotorcraft_2navigation_8h" ],
-    [ "rotorcraft_datalink.c", "rotorcraft__datalink_8c.html", "rotorcraft__datalink_8c" ],
     [ "rotorcraft_telemetry.c", "rotorcraft__telemetry_8c.html", "rotorcraft__telemetry_8c" ],
     [ "stabilization.c", "stabilization_8c.html", "stabilization_8c" ],
     [ "stabilization.h", "stabilization_8h.html", "stabilization_8h" ]

@@ -117,6 +117,13 @@ Event Functions</h2>
 <ul>
 <li><a class="el" href="modules_2radio__control_2rc__datalink_8c.html#abb25a239c520dce1f6e1bdbdc989ba6d" title="RC event function.">rc_datalink_event()</a></li>
 </ul>
+<h1><a class="anchor" id="datalink_functions__radio_control_datalink"></a>
+Datalink Functions</h1>
+<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
+<ul>
+<li>on message <b>RC_3CH</b> call rc_datalink_parse_RC_3CH(buf)</li>
+<li>on message <b>RC_4CH</b> call rc_datalink_parse_RC_4CH(buf) </li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -150,6 +157,8 @@ Raw radio_control_datalink.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rc_datalink_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rc_datalink_event()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;RC_3CH&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rc_datalink_parse_RC_3CH(buf)&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;RC_4CH&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rc_datalink_parse_RC_4CH(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw|sim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_DATALINK_LED&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;none&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_CONTROL_DATALINK_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(RADIO_CONTROL_DATALINK_LED)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(RADIO_CONTROL_DATALINK_LED),none)&quot;</span>/&gt;</div>
@@ -169,7 +178,7 @@ Raw radio_control_datalink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 13:26:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 14:54:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

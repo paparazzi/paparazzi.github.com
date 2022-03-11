@@ -73,6 +73,8 @@ var nav_8h =
     [ "nav_init", "nav_8h.html#a64a3814d1672e69989f80701a0ff5749", null ],
     [ "nav_oval", "nav_8h.html#a5a4a7ec5d3cf1734dca01d87b3d1eef5", null ],
     [ "nav_oval_init", "nav_8h.html#aa602ef7f7d2e485655a7cc97a35b80c3", null ],
+    [ "nav_parse_BLOCK", "nav_8h.html#afc5ef925b0de76cbd601058312a70763", null ],
+    [ "nav_parse_MOVE_WP", "nav_8h.html#ab487d4c90dc1665f5839ef84bb58a37a", null ],
     [ "nav_periodic_task", "nav_8h.html#ad40d34bcd8520f64bb073fae4a08878e", null ],
     [ "nav_route_xy", "nav_8h.html#ab4247c9f3dc0417690e1404add032cbe", null ],
     [ "nav_without_gps", "nav_8h.html#ab746572e63956a2ad40674328a85b029", null ],

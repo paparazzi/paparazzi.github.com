@@ -210,6 +210,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> packet_id, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data)</td></tr>
 <tr class="memdesc:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS packet injection (default empty)  <a href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">More...</a><br /></td></tr>
 <tr class="separator:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1e34c27ba1044a445e23c93f7212ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a5b1e34c27ba1044a445e23c93f7212ab">gps_parse_GPS_INJECT</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a5b1e34c27ba1044a445e23c93f7212ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3041cd1924b179b8c3940d7840476f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#a6d3041cd1924b179b8c3940d7840476f">gps_parse_RTCM_INJECT</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a6d3041cd1924b179b8c3940d7840476f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae41a1e0948be00a7d3fa26ce6b13129a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ae41a1e0948be00a7d3fa26ce6b13129a">gps_has_been_good</a> (void)</td></tr>
 <tr class="separator:ae41a1e0948be00a7d3fa26ce6b13129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae631bcedc95daefc88cba7e639b38f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps_8h.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
@@ -925,7 +929,7 @@ RefStation</td>
 
 <p>GPS timeout in seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00176">176</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00179">179</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 </div>
 </div>
@@ -1159,11 +1163,11 @@ RefStation</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of days since navigation epoch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00452">452</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00473">473</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00444">month_days</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00465">month_days</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00462">gps_week_number()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00483">gps_week_number()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -1206,7 +1210,7 @@ RefStation</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00179">179</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8h_source.html#l00182">182</a> of file <a class="el" href="gps_8h_source.html">gps.h</a>.</p>
 
 <p class="reference">References <a class="el" href="gps_8h_source.html#l00043">GpsFixValid</a>.</p>
 
@@ -1307,7 +1311,7 @@ RefStation</td>
 
 <p class="reference">References <a class="el" href="gps__piksi_8c_source.html#l00396">gps_piksi_write()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00103">sbp_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="datalink_8c_source.html#l00060">dl_parse_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00386">gps_parse_GPS_INJECT()</a>, and <a class="el" href="gps_8c_source.html#l00399">gps_parse_RTCM_INJECT()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1327,19 +1331,75 @@ RefStation</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph.png" border="0" usemap="#gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" alt=""/></div>
 <map name="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" id="gps_8h_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph">
-<area shape="rect" title="GPS packet injection (default empty)" alt="" coords="815,183,939,209"/>
-<area shape="rect" href="datalink_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer." alt="" coords="655,183,767,209"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="471,183,607,209"/>
-<area shape="rect" href="bluegiga__dl_8h.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event." alt="" coords="268,5,409,32"/>
-<area shape="rect" href="extra__pprz__dl_8h.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="261,56,416,83"/>
-<area shape="rect" href="gec__dl_8h.html#a7645c559a6c4a5f611acab677af4a579" title="Datalink Event." alt="" coords="285,107,393,133"/>
-<area shape="rect" href="pprz__dl_8h.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="282,157,395,184"/>
-<area shape="rect" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title=" " alt="" coords="255,208,423,235"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="265,259,413,285"/>
-<area shape="rect" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29" title=" " alt="" coords="284,309,393,336"/>
-<area shape="rect" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="280,360,397,387"/>
-<area shape="rect" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,157,207,184"/>
-<area shape="rect" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,60,184"/>
+<area shape="rect" title="GPS packet injection (default empty)" alt="" coords="235,31,359,57"/>
+<area shape="rect" href="gps_8h.html#a5b1e34c27ba1044a445e23c93f7212ab" title=" " alt="" coords="11,5,181,32"/>
+<area shape="rect" href="gps_8h.html#a6d3041cd1924b179b8c3940d7840476f" title=" " alt="" coords="5,56,187,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b1e34c27ba1044a445e23c93f7212ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1e34c27ba1044a445e23c93f7212ab">&#9670;&nbsp;</a></span>gps_parse_GPS_INJECT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gps_parse_GPS_INJECT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00386">386</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00380">gps_inject_data()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph.png" border="0" usemap="#gps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph" alt=""/></div>
+<map name="gps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph" id="gps_8h_a5b1e34c27ba1044a445e23c93f7212ab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect" href="gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb" title="Default parser for GPS injected data." alt="" coords="224,5,348,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6d3041cd1924b179b8c3940d7840476f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3041cd1924b179b8c3940d7840476f">&#9670;&nbsp;</a></span>gps_parse_RTCM_INJECT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gps_parse_RTCM_INJECT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00399">399</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00380">gps_inject_data()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps_8h_a6d3041cd1924b179b8c3940d7840476f_cgraph.png" border="0" usemap="#gps_8h_a6d3041cd1924b179b8c3940d7840476f_cgraph" alt=""/></div>
+<map name="gps_8h_a6d3041cd1924b179b8c3940d7840476f_cgraph" id="gps_8h_a6d3041cd1924b179b8c3940d7840476f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,187,32"/>
+<area shape="rect" href="gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb" title="Default parser for GPS injected data." alt="" coords="235,5,359,32"/>
 </map>
 </div>
 
@@ -1366,14 +1426,14 @@ RefStation</td>
 
 <p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00264">264</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00176">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>.</p>
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00089">GpsState::comp_id</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00179">GPS_TIMEOUT</a>, <a class="el" href="gps_8h_source.html#l00117">GpsState::last_msg_time</a>, and <a class="el" href="sys__time_8h_source.html#l00068">sys_time::nb_sec</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph.png" border="0" usemap="#gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" alt=""/></div>
 <map name="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph" id="gps_8h_ae631bcedc95daefc88cba7e639b38f19_icgraph">
 <area shape="rect" title="Periodic GPS check." alt="" coords="241,5,391,32"/>
@@ -1407,22 +1467,22 @@ RefStation</td>
 <p class="reference">References <a class="el" href="gps_8c_source.html#l00070">gps_time_sync</a>, <a class="el" href="sys__time_8h_source.html#l00163">msec_of_sys_time_ticks()</a>, <a class="el" href="gps_8c_source.html#l00066">MSEC_PER_WEEK</a>, <a class="el" href="gps_8h_source.html#l00125">GpsTimeSync::t0_ticks</a>, and <a class="el" href="gps_8h_source.html#l00123">GpsTimeSync::t0_tow</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00243">acInfoSetPositionLla_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00189">acInfoSetPositionLla_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00225">acInfoSetPositionUtm_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00171">acInfoSetPositionUtm_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="ctrl_2follow__me_8c_source.html#l00108">follow_me_set_wp()</a>, <a class="el" href="traffic__info_8c_source.html#l00076">parse_acinfo_dl()</a>, and <a class="el" href="windturbine_8c_source.html#l00041">windturbine_periodic()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph.png" border="0" usemap="#gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" alt=""/></div>
 <map name="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph" id="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_cgraph">
 <area shape="rect" title="Convert time in sys_time ticks to GPS time of week." alt="" coords="5,5,187,32"/>
 <area shape="rect" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title=" " alt="" coords="235,5,416,32"/>
 </map>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph.png" border="0" usemap="#gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" alt=""/></div>
 <map name="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph" id="gps_8h_ad68ada7274989a4c9f08bc06d74ee5bd_icgraph">
 <area shape="rect" title="Convert time in sys_time ticks to GPS time of week." alt="" coords="228,259,409,285"/>
@@ -1485,27 +1545,27 @@ RefStation</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of weeks since navigation epoch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00462">462</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00483">483</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00452">gps_day_number()</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00473">gps_day_number()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00120">gps_ubx_parse_nav_pvt()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="gps__ubx_8c_source.html#l00137">gps_ubx_parse_nav_pvt()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph.png" border="0" usemap="#gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" alt=""/></div>
 <map name="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph" id="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_cgraph">
 <area shape="rect" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="5,5,149,32"/>
 <area shape="rect" href="gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7" title="Number of days since navigation epoch (6 January 1980)" alt="" coords="197,5,331,32"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph.png" border="0" usemap="#gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" alt=""/></div>
 <map name="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph" id="gps_8h_a5904be2de6c3e1e04d7789b135bc0f6b_icgraph">
 <area shape="rect" title="Number of weeks since navigation epoch (6 January 1980)" alt="" coords="785,5,929,32"/>
@@ -1555,16 +1615,16 @@ RefStation</td>
 <dl class="section return"><dt>Returns</dt><dd>utm position in float, altitude hmsl.</dd></dl>
 <p>Convenience function to get utm position in float from GPS structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00390">390</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00411">411</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00247">UTM_FLOAT_OF_BFP</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00423">utm_of_lla_i()</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ins__gps__passthrough__utm_8c_source.html#l00050">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00210">ins_alt_float_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00445">ins_float_invariant_update_gps()</a>, and <a class="el" href="ins_8c_source.html#l00055">ins_reset_local_origin()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph.png" border="0" usemap="#gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph" alt=""/></div>
 <map name="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph" id="gps_8h_a1343b41c94f919a6a593b958b275683f_cgraph">
 <area shape="rect" title="Convenience function to get utm position in float from GPS structure." alt="" coords="5,123,157,149"/>
@@ -1578,11 +1638,11 @@ RefStation</td>
 <area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="562,174,702,215"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph.png" border="0" usemap="#gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" alt=""/></div>
 <map name="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph" id="gps_8h_a1343b41c94f919a6a593b958b275683f_icgraph">
 <area shape="rect" title="Convenience function to get utm position in float from GPS structure." alt="" coords="863,81,1015,108"/>
@@ -1642,16 +1702,16 @@ RefStation</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>utm position in fixed point (cm), altitude hmsl (mm). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00415">415</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps_8c_source.html#l00436">436</a> of file <a class="el" href="gps_8c_source.html">gps.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00089">UtmCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic_8h_source.html#l00071">UTM_COPY</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00423">utm_of_lla_i()</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gps_8c_source.html#l00124">send_gps()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph.png" border="0" usemap="#gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph" alt=""/></div>
 <map name="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph" id="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_cgraph">
 <area shape="rect" title="Convenience function to get utm position in int from GPS structure." alt="" coords="5,123,145,149"/>
@@ -1665,11 +1725,11 @@ RefStation</td>
 <area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="550,174,690,215"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph.png" border="0" usemap="#gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" alt=""/></div>
 <map name="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph" id="gps_8h_a4fff1fd94429e7d036ba27af86a8c5ed_icgraph">
 <area shape="rect" title="Convenience function to get utm position in int from GPS structure." alt="" coords="257,5,397,32"/>
@@ -1743,7 +1803,7 @@ RefStation</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps_8h.html">gps.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2022 13:26:26 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 14:54:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__statistics__bayer_8h.html#a9756870e16a73e29048ca33db11547c2":[12,0,1,0,1,2,0,0,15,32],
+"avi__isp__statistics__bayer_8h.html#a98037f2b763228de850f17d5c60cff47":[12,0,1,0,1,2,0,0,15,11,0],
+"avi__isp__statistics__bayer_8h.html#a992521e7e701515b4a96c538f2aa5824":[12,0,1,0,1,2,0,0,15,35],
+"avi__isp__statistics__bayer_8h.html#aa02486bcc75f6b89571b5dc6cae5efb6":[12,0,1,0,1,2,0,0,15,29],
 "avi__isp__statistics__bayer_8h.html#aa5262df88e24b719c04722d803bb7a1a":[12,0,1,0,1,2,0,0,15,1,0],
 "avi__isp__statistics__bayer_8h.html#aa7210e2bbeb62695fecd3de6867dacec":[12,0,1,0,1,2,0,0,15,7,0],
 "avi__isp__statistics__bayer_8h.html#aabef732b97e2a4e60a662295689ce78e":[12,0,1,0,1,2,0,0,15,19,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "baro__MS5534A_8c.html#aacaca0988244bd3a888ca5befa89f44b":[12,0,1,0,6,60,40,12],
 "baro__MS5534A_8c.html#aad498a0dd26cb82ae23c7ec07f90448a":[12,0,1,0,6,60,40,40],
 "baro__MS5534A_8c.html#ab30c346cfd9bc2364001128c169e7898":[12,0,1,0,6,60,40,26],
-"baro__MS5534A_8c.html#abd673f086e9224eabd5896d3b94c208e":[12,0,1,0,6,60,40,15],
-"baro__MS5534A_8c.html#ac2bfd08f5b5cd4544077b0f8c31e62cf":[12,0,1,0,6,60,40,6],
-"baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19":[12,0,1,0,6,60,40,39],
-"baro__MS5534A_8c.html#ac7efbfaa201594c750753ed4d1b42f65":[12,0,1,0,6,60,40,4],
-"baro__MS5534A_8c.html#ac8e30dba93144a9eb2e1705e414e5417":[12,0,1,0,6,60,40,19]
+"baro__MS5534A_8c.html#abd673f086e9224eabd5896d3b94c208e":[12,0,1,0,6,60,40,15]
 };

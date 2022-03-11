@@ -62,6 +62,8 @@ var rotorcraft_2navigation_8h =
     [ "nav_is_in_flight", "rotorcraft_2navigation_8h.html#a46063efd4dae5efe23d6c018af1917d1", null ],
     [ "nav_oval", "rotorcraft_2navigation_8h.html#a5a4a7ec5d3cf1734dca01d87b3d1eef5", null ],
     [ "nav_oval_init", "rotorcraft_2navigation_8h.html#aa602ef7f7d2e485655a7cc97a35b80c3", null ],
+    [ "nav_parse_BLOCK", "rotorcraft_2navigation_8h.html#a83611f5ef79754968abca36d8dbaf599", null ],
+    [ "nav_parse_MOVE_WP", "rotorcraft_2navigation_8h.html#a66999fe9753ffaa9c972ca15d9fc3333", null ],
     [ "nav_periodic_task", "rotorcraft_2navigation_8h.html#ad40d34bcd8520f64bb073fae4a08878e", null ],
     [ "nav_reset_alt", "rotorcraft_2navigation_8h.html#a3288149314aa748ce8aa507335f50bfd", null ],
     [ "nav_reset_reference", "rotorcraft_2navigation_8h.html#a1886ff619a5c03dc6c54729f301fa62e", null ],
