@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('nav_8h_source.html',''); initResizable
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nav_8h.html#a54e1740cc695bea40f3a9c8a13dbf579">nav_compute_baseleg</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_af, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_td, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_baseleg, <span class="keywordtype">float</span> radius);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nav_8h.html#add46eb2361e092abebd64eb871429774">nav_compute_final_from_glide</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_af, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_td, <span class="keywordtype">float</span> glide);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="nav_8h.html#ac3892fe123b99e805c0c5d5b1b4cd144">  139</a></span>&#160;<span class="preprocessor">#define RCLost() bit_is_set(imcu_get_status(), STATUS_RADIO_REALLY_LOST)</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="nav_8h.html#ac3892fe123b99e805c0c5d5b1b4cd144">  139</a></span>&#160;<span class="preprocessor">#define RCLost() RadioControlIsLost()</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nav_8h.html#a6c7a398bcc252c6cbfc1273915aeecaa">nav_follow</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _ac_id, <span class="keywordtype">float</span> _distance, <span class="keywordtype">float</span> _height);</div>
 <div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="nav_8h.html#a8691e5b760e30c9091d5a981d3663441">  142</a></span>&#160;<span class="preprocessor">#define NavFollow(_ac_id, _distance, _height) nav_follow(_ac_id, _distance, _height)</span></div>
@@ -409,7 +409,7 @@ $(document).ready(function(){initNavTree('nav_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="nav_8h.html">nav.h</a></li>
-    <li class="footer">Generated on Fri Mar 11 2022 14:54:09 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 15:44:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

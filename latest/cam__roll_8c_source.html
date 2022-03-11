@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('cam__roll_8c_source.html',''); initRes
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = 0;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_CAM_ROLL, <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(<a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> * <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / <a class="code" href="cam__roll_8c.html#a5a663e9e6f606007f3b693bc808b1014">CAM_PHI_MAX</a>));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  command_set(COMMAND_CAM_ROLL, <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(<a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> * <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / <a class="code" href="cam__roll_8c.html#a5a663e9e6f606007f3b693bc808b1014">CAM_PHI_MAX</a>));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // MOBILE_CAM</span></div>
@@ -179,7 +179,6 @@ $(document).ready(function(){initNavTree('cam__roll_8c_source.html',''); initRes
 <div class="ttc" id="acam_8h_html"><div class="ttname"><a href="cam_8h.html">cam.h</a></div><div class="ttdoc">Pan/Tilt camera API.</div></div>
 <div class="ttc" id="acam__roll_8c_html_abaeaf62e5dc05d5dff6664e5b7f12649"><div class="ttname"><a href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a></div><div class="ttdeci">float phi_c</div><div class="ttdef"><b>Definition:</b> <a href="cam__roll_8c_source.html#l00041">cam_roll.c:41</a></div></div>
 <div class="ttc" id="acam__roll_8c_html_a65965c691346cf996ec91c2cd057ae31"><div class="ttname"><a href="cam__roll_8c.html#a65965c691346cf996ec91c2cd057ae31">target_y</a></div><div class="ttdeci">float target_y</div><div class="ttdef"><b>Definition:</b> <a href="cam__roll_8c_source.html#l00044">cam_roll.c:44</a></div></div>
-<div class="ttc" id="acommands_8h_html_abad4f73b929ef6db562aaa170c3c735d"><div class="ttname"><a href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a></div><div class="ttdeci">static void command_set(uint8_t idx, pprz_t value)</div><div class="ttdoc">Set a command value.</div><div class="ttdef"><b>Definition:</b> <a href="commands_8h_source.html#l00057">commands.h:57</a></div></div>
 <div class="ttc" id="apaparazzi_8h_html_a6fff2a38e48dea3e7e91896c6ab60cf7"><div class="ttname"><a href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a></div><div class="ttdeci">#define TRIM_PPRZ(pprz)</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00011">paparazzi.h:11</a></div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
 <div class="ttc" id="arotorcraft_2autopilot__static_8h_html_ab3d62edb632309d9a423661747cdb73b"><div class="ttname"><a href="rotorcraft_2autopilot__static_8h.html#ab3d62edb632309d9a423661747cdb73b">MODE_MANUAL</a></div><div class="ttdeci">#define MODE_MANUAL</div><div class="ttdoc">Default RC mode.</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2autopilot__static_8h_source.html#l00060">autopilot_static.h:60</a></div></div>
@@ -187,7 +186,7 @@ $(document).ready(function(){initNavTree('cam__roll_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="cam__roll_8c.html">cam_roll.c</a></li>
-    <li class="footer">Generated on Fri Mar 11 2022 14:54:09 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 15:44:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

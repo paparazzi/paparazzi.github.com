@@ -1,14 +1,8 @@
 var main__fbw_8c =
 [
     [ "ABI_C", "main__fbw_8c.html#a1d9ee6657ac8c3da096a12fec464d803", null ],
-    [ "And", "main__fbw_8c.html#af7d017fbba81f09f955d27d59df57acc", null ],
-    [ "LessThan", "main__fbw_8c.html#aabaca523977f789b8a3af9a2f43fc5f6", null ],
     [ "MAIN_FBW_RC_ID", "main__fbw_8c.html#a9cf2f0a827baf726b7dd61a19f9e265d", null ],
-    [ "Max", "main__fbw_8c.html#a56957c78144b268fbcdbf7d9fb5acafe", null ],
-    [ "Min", "main__fbw_8c.html#a202767af7f06cef8e1c69d9771f157c3", null ],
     [ "MODULES_C", "main__fbw_8c.html#ac3c586d9cc5d614d34061b3844a1e45b", null ],
-    [ "MoreThan", "main__fbw_8c.html#a9f52cbc05d5f9352c2b5313ceeaa78d6", null ],
-    [ "Or", "main__fbw_8c.html#a930c4658c4c62e1d04058018e9732a26", null ],
     [ "fbw_safety_check", "main__fbw_8c.html#ab0de669200305a3b042953455e0ec067", null ],
     [ "main_fbw_event", "main__fbw_8c.html#ab41a8489aa6630cc3e0027720d3a3a82", null ],
     [ "main_fbw_init", "main__fbw_8c.html#a30c5d498de7f753358be28b0b4a74d41", null ],

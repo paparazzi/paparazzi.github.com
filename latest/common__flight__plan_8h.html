@@ -190,18 +190,6 @@ Macros</h2></td></tr>
 <tr class="separator:a010478bef118b0b6d9271708bb7797f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c727164f85d4aacc4c83e1cb0152e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a10c727164f85d4aacc4c83e1cb0152e2">Return</a>(x)&#160;&#160;&#160;{ <a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>=<a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>; <a class="el" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c">if</a> (x==1) {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=0;} else {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;} <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>=0;}</td></tr>
 <tr class="separator:a10c727164f85d4aacc4c83e1cb0152e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d017fbba81f09f955d27d59df57acc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#af7d017fbba81f09f955d27d59df57acc">And</a>(x,  y)&#160;&#160;&#160;((x) &amp;&amp; (y))</td></tr>
-<tr class="separator:af7d017fbba81f09f955d27d59df57acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930c4658c4c62e1d04058018e9732a26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26">Or</a>(x,  y)&#160;&#160;&#160;((x) || (y))</td></tr>
-<tr class="separator:a930c4658c4c62e1d04058018e9732a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202767af7f06cef8e1c69d9771f157c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a202767af7f06cef8e1c69d9771f157c3">Min</a>(x,  y)&#160;&#160;&#160;(x &lt; y ? x : y)</td></tr>
-<tr class="separator:a202767af7f06cef8e1c69d9771f157c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56957c78144b268fbcdbf7d9fb5acafe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a56957c78144b268fbcdbf7d9fb5acafe">Max</a>(x,  y)&#160;&#160;&#160;(x &gt; y ? x : y)</td></tr>
-<tr class="separator:a56957c78144b268fbcdbf7d9fb5acafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabaca523977f789b8a3af9a2f43fc5f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#aabaca523977f789b8a3af9a2f43fc5f6">LessThan</a>(_x,  _y)&#160;&#160;&#160;((_x) &lt; (_y))</td></tr>
-<tr class="separator:aabaca523977f789b8a3af9a2f43fc5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f52cbc05d5f9352c2b5313ceeaa78d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a9f52cbc05d5f9352c2b5313ceeaa78d6">MoreThan</a>(_x,  _y)&#160;&#160;&#160;((_x) &gt; (_y))</td></tr>
-<tr class="separator:a9f52cbc05d5f9352c2b5313ceeaa78d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c88d2e597858eb217b5b573a428257c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a5c88d2e597858eb217b5b573a428257c">NavBlockTime</a>()&#160;&#160;&#160;(<a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>)</td></tr>
 <tr class="memdesc:a5c88d2e597858eb217b5b573a428257c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in s since the entrance in the current block.  <a href="common__flight__plan_8h.html#a5c88d2e597858eb217b5b573a428257c">More...</a><br /></td></tr>
 <tr class="separator:a5c88d2e597858eb217b5b573a428257c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,36 +226,6 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="af7d017fbba81f09f955d27d59df57acc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7d017fbba81f09f955d27d59df57acc">&#9670;&nbsp;</a></span>And</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define And</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((x) &amp;&amp; (y))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00059">59</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
 <a id="a3e749f8fe41a97ef62de0dd622dbe3e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e749f8fe41a97ef62de0dd622dbe3e9">&#9670;&nbsp;</a></span>Block</h2>
 
@@ -367,126 +325,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aabaca523977f789b8a3af9a2f43fc5f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabaca523977f789b8a3af9a2f43fc5f6">&#9670;&nbsp;</a></span>LessThan</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LessThan</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((_x) &lt; (_y))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00063">63</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
-<a id="a56957c78144b268fbcdbf7d9fb5acafe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56957c78144b268fbcdbf7d9fb5acafe">&#9670;&nbsp;</a></span>Max</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define Max</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(x &gt; y ? x : y)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00062">62</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
-<a id="a202767af7f06cef8e1c69d9771f157c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a202767af7f06cef8e1c69d9771f157c3">&#9670;&nbsp;</a></span>Min</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define Min</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(x &lt; y ? x : y)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00061">61</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
-<a id="a9f52cbc05d5f9352c2b5313ceeaa78d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f52cbc05d5f9352c2b5313ceeaa78d6">&#9670;&nbsp;</a></span>MoreThan</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MoreThan</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((_x) &gt; (_y))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00064">64</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
 <a id="a5c88d2e597858eb217b5b573a428257c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c88d2e597858eb217b5b573a428257c">&#9670;&nbsp;</a></span>NavBlockTime</h2>
 
@@ -504,7 +342,7 @@ Variables</h2></td></tr>
 
 <p>Time in s since the entrance in the current block. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00067">67</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00060">60</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
 
 </div>
 </div>
@@ -582,36 +420,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00053">53</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
-
-</div>
-</div>
-<a id="a930c4658c4c62e1d04058018e9732a26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a930c4658c4c62e1d04058018e9732a26">&#9670;&nbsp;</a></span>Or</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define Or</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((x) || (y))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8h_source.html#l00060">60</a> of file <a class="el" href="common__flight__plan_8h_source.html">common_flight_plan.h</a>.</p>
 
 </div>
 </div>
@@ -941,7 +749,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="common__flight__plan_8h.html">common_flight_plan.h</a></li>
-    <li class="footer">Generated on Fri Mar 11 2022 14:54:17 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 15:45:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

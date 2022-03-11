@@ -140,10 +140,10 @@ Macros</h2></td></tr>
 <tr class="separator:ac20e76441d7ca028ceda37a41ce688e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ff5dfa8cfe1cbe08d1289b3e8da55c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c">THRESHOLD2</a>&#160;&#160;&#160;(<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>/2)</td></tr>
 <tr class="separator:a12ff5dfa8cfe1cbe08d1289b3e8da55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">AP_COMMAND_SET_ROLL</a>(_roll)&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_ROLL, _roll); }</td></tr>
+<tr class="memitem:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">AP_COMMAND_SET_ROLL</a>(_roll)&#160;&#160;&#160;{ command_set(COMMAND_ROLL, _roll); }</td></tr>
 <tr class="memdesc:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AP command setter macros for usual commands.  <a href="fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a">More...</a><br /></td></tr>
 <tr class="separator:a4eacd8f8f25b3b9d1c9bc6aa4720c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e4af60109ca66c778c2d85e4fe397f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">AP_COMMAND_SET_PITCH</a>(_pitch)&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_PITCH, _pitch); }</td></tr>
+<tr class="memitem:a16e4af60109ca66c778c2d85e4fe397f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#a16e4af60109ca66c778c2d85e4fe397f">AP_COMMAND_SET_PITCH</a>(_pitch)&#160;&#160;&#160;{ command_set(COMMAND_PITCH, _pitch); }</td></tr>
 <tr class="separator:a16e4af60109ca66c778c2d85e4fe397f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3119f844b56965691d7aec8d79455a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__utils_8h.html#ad3119f844b56965691d7aec8d79455a5">AP_COMMAND_SET_YAW</a>(_yaw)&#160;&#160;&#160;{}</td></tr>
 <tr class="separator:ad3119f844b56965691d7aec8d79455a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_pitch</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_PITCH, _pitch); }</td>
+          <td>&#160;&#160;&#160;{ command_set(COMMAND_PITCH, _pitch); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,7 +216,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_roll</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="commands_8h.html#abad4f73b929ef6db562aaa170c3c735d">command_set</a>(COMMAND_ROLL, _roll); }</td>
+          <td>&#160;&#160;&#160;{ command_set(COMMAND_ROLL, _roll); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -558,7 +558,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot__utils_8h.html">autopilot_utils.h</a></li>
-    <li class="footer">Generated on Fri Mar 11 2022 14:54:14 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Mar 11 2022 15:44:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
