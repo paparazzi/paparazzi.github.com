@@ -101,8 +101,9 @@ $(document).ready(function(){initNavTree('pid_8h.html',''); initResizable(); });
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pid_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2filters_2pid_8hdep" alt=""/></div>
 <map name="sw_2airborne_2filters_2pid_8hdep" id="sw_2airborne_2filters_2pid_8hdep">
-<area shape="rect" title="Several forms of PID controllers." alt="" coords="15,5,154,47"/>
-<area shape="rect" href="shift__tracking_8c.html" title=" " alt="" coords="5,95,164,136"/>
+<area shape="rect" title="Several forms of PID controllers." alt="" coords="113,5,251,47"/>
+<area shape="rect" href="rover__guidance__steering_8c.html" title=" " alt="" coords="5,95,172,151"/>
+<area shape="rect" href="shift__tracking_8c.html" title=" " alt="" coords="196,102,355,143"/>
 </map>
 </div>
 </div>
@@ -425,6 +426,19 @@ output </td></tr>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00043">PID_f::u</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pid_8h_a4b0791113aade2443940408af05fdf4d_icgraph.png" border="0" usemap="#pid_8h_a4b0791113aade2443940408af05fdf4d_icgraph" alt=""/></div>
+<map name="pid_8h_a4b0791113aade2443940408af05fdf4d_icgraph" id="pid_8h_a4b0791113aade2443940408af05fdf4d_icgraph">
+<area shape="rect" title="Get current value of the PID command." alt="" coords="236,13,319,39"/>
+<area shape="rect" href="rover__guidance__steering_8h.html#a30e256c0e45b668703a7574894873f11" title=" " alt="" coords="5,5,188,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a0ded46710487dac33f34194178e755ae"></a>
@@ -619,16 +633,17 @@ output </td></tr>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00047">PID_f::max_sum</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shift__tracking_8c_source.html#l00108">shift_tracking_init()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="shift__tracking_8c_source.html#l00108">shift_tracking_init()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pid_8h_adb3596254d64d6ac10f4690607e97c15_icgraph.png" border="0" usemap="#pid_8h_adb3596254d64d6ac10f4690607e97c15_icgraph" alt=""/></div>
 <map name="pid_8h_adb3596254d64d6ac10f4690607e97c15_icgraph" id="pid_8h_adb3596254d64d6ac10f4690607e97c15_icgraph">
-<area shape="rect" title=" " alt="" coords="192,5,275,32"/>
-<area shape="rect" href="shift__tracking_8h.html#a33f0ce00bb406bb93dcf6431a10a5370" title="init function" alt="" coords="5,5,144,32"/>
+<area shape="rect" title=" " alt="" coords="264,31,347,57"/>
+<area shape="rect" href="rover__guidance__steering_8h.html#a81c86a467dc91f38fefae20de37feba3" title="Steering rover guidance EXT FUNCTIONS." alt="" coords="5,5,216,32"/>
+<area shape="rect" href="shift__tracking_8h.html#a33f0ce00bb406bb93dcf6431a10a5370" title="init function" alt="" coords="41,56,180,83"/>
 </map>
 </div>
 
@@ -746,16 +761,17 @@ output </td></tr>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00044">PID_f::e</a>, <a class="el" href="pid_8h_source.html#l00045">PID_f::sum</a>, and <a class="el" href="pid_8h_source.html#l00043">PID_f::u</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shift__tracking_8c_source.html#l00127">shift_tracking_reset()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00107">rover_guidance_steering_pid_reset()</a>, and <a class="el" href="shift__tracking_8c_source.html#l00127">shift_tracking_reset()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pid_8h_a6b94f2f2a26a4553ef5d55690b84cc0e_icgraph.png" border="0" usemap="#pid_8h_a6b94f2f2a26a4553ef5d55690b84cc0e_icgraph" alt=""/></div>
 <map name="pid_8h_a6b94f2f2a26a4553ef5d55690b84cc0e_icgraph" id="pid_8h_a6b94f2f2a26a4553ef5d55690b84cc0e_icgraph">
-<area shape="rect" title="Reset PID struture, gains left unchanged." alt="" coords="204,5,299,32"/>
-<area shape="rect" href="shift__tracking_8h.html#afb9dd7379c32321b353d58dc8a60d970" title="reset function" alt="" coords="5,5,156,32"/>
+<area shape="rect" title="Reset PID struture, gains left unchanged." alt="" coords="236,42,331,69"/>
+<area shape="rect" href="rover__guidance__steering_8h.html#ac69bcf60f43fa5aaa6dd39af1a68e529" title="PID RESET function." alt="" coords="5,5,188,47"/>
+<area shape="rect" href="shift__tracking_8h.html#afb9dd7379c32321b353d58dc8a60d970" title="reset function" alt="" coords="21,71,172,98"/>
 </map>
 </div>
 
@@ -962,16 +978,17 @@ output </td></tr>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00046">PID_f::g</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shift__tracking_8c_source.html#l00163">shift_tracking_update_gains()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>, and <a class="el" href="shift__tracking_8c_source.html#l00163">shift_tracking_update_gains()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pid_8h_a6114acd2404903d3ac084b9868083a99_icgraph.png" border="0" usemap="#pid_8h_a6114acd2404903d3ac084b9868083a99_icgraph" alt=""/></div>
 <map name="pid_8h_a6114acd2404903d3ac084b9868083a99_icgraph" id="pid_8h_a6114acd2404903d3ac084b9868083a99_icgraph">
-<area shape="rect" title="Set gains of the PID struct." alt="" coords="216,13,339,39"/>
-<area shape="rect" href="shift__tracking_8h.html#a1155f9a7043bccf01b87bfced7aaf073" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" title="Set gains of the PID struct." alt="" coords="236,46,359,73"/>
+<area shape="rect" href="rover__guidance__steering_8h.html#a30e256c0e45b668703a7574894873f11" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="shift__tracking_8h.html#a1155f9a7043bccf01b87bfced7aaf073" title=" " alt="" coords="15,71,178,112"/>
 </map>
 </div>
 
@@ -1189,16 +1206,17 @@ output </td></tr>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00044">PID_f::e</a>, <a class="el" href="pid_8h_source.html#l00046">PID_f::g</a>, <a class="el" href="pid_8h_source.html#l00047">PID_f::max_sum</a>, <a class="el" href="pid_8h_source.html#l00045">PID_f::sum</a>, and <a class="el" href="pid_8h_source.html#l00043">PID_f::u</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shift__tracking_8c_source.html#l00136">shift_tracking_run()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>, and <a class="el" href="shift__tracking_8c_source.html#l00136">shift_tracking_run()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pid_8h_a8539e216d350ea0802391edce976a0cf_icgraph.png" border="0" usemap="#pid_8h_a8539e216d350ea0802391edce976a0cf_icgraph" alt=""/></div>
 <map name="pid_8h_a8539e216d350ea0802391edce976a0cf_icgraph" id="pid_8h_a8539e216d350ea0802391edce976a0cf_icgraph">
-<area shape="rect" title="Update PID with a new value and return new command." alt="" coords="192,5,299,32"/>
-<area shape="rect" href="shift__tracking_8h.html#a234e875bd78fc2f9f707b71031c7b569" title="run function" alt="" coords="5,5,144,32"/>
+<area shape="rect" title="Update PID with a new value and return new command." alt="" coords="236,42,343,69"/>
+<area shape="rect" href="rover__guidance__steering_8h.html#a30e256c0e45b668703a7574894873f11" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="shift__tracking_8h.html#a234e875bd78fc2f9f707b71031c7b569" title="run function" alt="" coords="27,71,166,98"/>
 </map>
 </div>
 
@@ -1210,7 +1228,7 @@ output </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="pid_8h.html">pid.h</a></li>
-    <li class="footer">Generated on Thu Mar 24 2022 09:22:19 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Mar 24 2022 14:36:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

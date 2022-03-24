@@ -1,7 +1,5 @@
 var NAVTREEINDEX140 =
 {
-"navstik__1_80_8h.html#a8c9287b1806544ba7228844060270007":[12,0,1,0,1,50,129],
-"navstik__1_80_8h.html#a8cf8c2a558773727c9673f1cab7ac0a7":[12,0,1,0,1,50,21],
 "navstik__1_80_8h.html#a8d77db0e10464907b23412abccbf7c63":[12,0,1,0,1,50,49],
 "navstik__1_80_8h.html#a91379312db5447f1d9c4343ab6abba3c":[12,0,1,0,1,50,87],
 "navstik__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2":[12,0,1,0,1,50,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX140 =
 "nps__autopilot__fixedwing_8c.html":[12,0,1,1,1,3],
 "nps__autopilot__fixedwing_8c.html#a039b5dba7bbcbe943b5cb40ff681651e":[12,0,1,1,1,3,7],
 "nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a":[12,0,1,1,1,3,3],
-"nps__autopilot__fixedwing_8c.html#a2aa730dceb2044d13e49f3bd5df966e4":[12,0,1,1,1,3,1]
+"nps__autopilot__fixedwing_8c.html#a2aa730dceb2044d13e49f3bd5df966e4":[12,0,1,1,1,3,1],
+"nps__autopilot__fixedwing_8c.html#a3348493e992edd2442581c1d09446b4b":[12,0,1,1,1,3,2],
+"nps__autopilot__fixedwing_8c.html#a40f1af5c10f2fba9ce6e966c915ef449":[12,0,1,1,1,3,8]
 };

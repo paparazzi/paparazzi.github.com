@@ -249,5 +249,5 @@ var NAVTREEINDEX67 =
 "group__state__acceleration.html":[9,4,2],
 "group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe":[12,0,1,0,28,71],
 "group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe":[9,4,2,10],
-"group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[9,4,2,1]
+"group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[12,0,1,0,28,1]
 };

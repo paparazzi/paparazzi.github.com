@@ -297,6 +297,13 @@ var onboard_modules =
         [ "Raw board_matek_f405_wing.xml file:", "module__board_matek_f405_wing.html#module_xml__board_matek_f405_wing", null ]
       ] ]
     ] ],
+    [ "board_matek_f765_car module", "module__board_matek_f765_car.html", [
+      [ "Example for airframe file", "module__board_matek_f765_car.html#module_load_example__board_matek_f765_car", null ],
+      [ "Module configuration options", "module__board_matek_f765_car.html#configuration__board_matek_f765_car", null ],
+      [ "Auto-loaded modules", "module__board_matek_f765_car.html#autoloads__board_matek_f765_car", [
+        [ "Raw board_matek_f765_car.xml file:", "module__board_matek_f765_car.html#module_xml__board_matek_f765_car", null ]
+      ] ]
+    ] ],
     [ "board_matek_f765_wing module", "module__board_matek_f765_wing.html", [
       [ "Example for airframe file", "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing", null ],
       [ "Module configuration options", "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing", null ],
@@ -901,6 +908,11 @@ var onboard_modules =
         [ "Raw fdm_jsbsim.xml file:", "module__fdm_jsbsim.html#module_xml__fdm_jsbsim", null ]
       ] ]
     ] ],
+    [ "fdm_rover module", "module__fdm_rover.html", [
+      [ "Example for airframe file", "module__fdm_rover.html#module_load_example__fdm_rover", [
+        [ "Raw fdm_rover.xml file:", "module__fdm_rover.html#module_xml__fdm_rover", null ]
+      ] ]
+    ] ],
     [ "gpio_ext_common module", "module__gpio_ext_common.html", [
       [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", [
         [ "Raw gpio_ext_common.xml file:", "module__gpio_ext_common.html#module_xml__gpio_ext_common", null ]
@@ -1098,6 +1110,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__guidance_rover_holonomic.html#module_load_example__guidance_rover_holonomic", null ],
       [ "Module functions", "module__guidance_rover_holonomic.html#functions__guidance_rover_holonomic", [
         [ "Raw guidance_rover_holonomic.xml file:", "module__guidance_rover_holonomic.html#module_xml__guidance_rover_holonomic", null ]
+      ] ]
+    ] ],
+    [ "guidance_rover_steering module", "module__guidance_rover_steering.html", [
+      [ "Example for airframe file", "module__guidance_rover_steering.html#module_load_example__guidance_rover_steering", null ],
+      [ "Module functions", "module__guidance_rover_steering.html#functions__guidance_rover_steering", [
+        [ "Raw guidance_rover_steering.xml file:", "module__guidance_rover_steering.html#module_xml__guidance_rover_steering", null ]
       ] ]
     ] ],
     [ "heli_swashplate_mixing module", "module__heli_swashplate_mixing.html", [
