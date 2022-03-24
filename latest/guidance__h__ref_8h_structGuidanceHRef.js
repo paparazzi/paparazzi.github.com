@@ -1,19 +1,14 @@
 var guidance__h__ref_8h_structGuidanceHRef =
 [
-    [ "accel", "guidance__h__ref_8h.html#af159fdcd68ae2d0977ea708df1f3d106", null ],
-    [ "c_route_ref", "guidance__h__ref_8h.html#a6b77504f0fdc68cbcece1a104b5618a0", null ],
-    [ "inv_tau", "guidance__h__ref_8h.html#a6dedc0d3786873ae60261004814fb47f", null ],
-    [ "max_accel", "guidance__h__ref_8h.html#aaa99c6c22c0cdef42cea1399ade9191b", null ],
+    [ "accel", "guidance__h__ref_8h.html#a4ca86bd39d5c52f0a2c21eac66b11cba", null ],
+    [ "dt", "guidance__h__ref_8h.html#ae50e2e3728090ab9da4876b88ed1f1f7", null ],
+    [ "inv_tau", "guidance__h__ref_8h.html#ae6694c0a437aa6a3d15b61e88062ce20", null ],
     [ "max_speed", "guidance__h__ref_8h.html#afa33b0b0d89b6a8e4c72a6ebfd3e11cd", null ],
-    [ "max_speed_int", "guidance__h__ref_8h.html#aa9bf3f4252b78f63604f7c58e8262fde", null ],
-    [ "max_vel", "guidance__h__ref_8h.html#a6d2d1893856e1559f89ce2f447c7488a", null ],
     [ "omega", "guidance__h__ref_8h.html#a9ff1584e71e8d18aa5e930f0e2cab1e6", null ],
-    [ "omega_2", "guidance__h__ref_8h.html#a37abc585a9915aba24c7172198ca56ec", null ],
+    [ "omega_2", "guidance__h__ref_8h.html#a48bf84285792cdb0ca43de9d8f7a7ca0", null ],
     [ "pos", "guidance__h__ref_8h.html#aad090426eeba4fd88b473c65056cadb7", null ],
-    [ "route_ref", "guidance__h__ref_8h.html#a3bf413150a2fcf3f4bdd2f82185eea88", null ],
-    [ "s_route_ref", "guidance__h__ref_8h.html#a43b3a485e3f7446777fe4fe9a8cc2a6c", null ],
-    [ "speed", "guidance__h__ref_8h.html#abd483555f8404d0e399942ffcf41771d", null ],
+    [ "speed", "guidance__h__ref_8h.html#acf914a2c85d4a4f7a9803b5154ed2466", null ],
     [ "tau", "guidance__h__ref_8h.html#a6b0c624f459b8477e262f9e7f09755f1", null ],
     [ "zeta", "guidance__h__ref_8h.html#a2c7dc7278bff765759d909ca7d6862fd", null ],
-    [ "zeta_omega", "guidance__h__ref_8h.html#a2892b365a88cbe7781e4e2c746fa993c", null ]
+    [ "zeta_omega", "guidance__h__ref_8h.html#add2dc5f7cc7ecebf76c9aa7550f6a9b9", null ]
 ];

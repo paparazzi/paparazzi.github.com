@@ -1,6 +1,6 @@
 var NAVTREEINDEX60 =
 {
-"group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,41,0,2,5],
+"group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[12,0,1,0,6,41,0,3,3],
 "group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285":[9,10,8],
 "group__chprintf.html#gad8b1843bc1a848126a7633f4aa1add5c":[12,0,1,0,6,41,0,2,11],
 "group__chprintf.html#gad8b1843bc1a848126a7633f4aa1add5c":[9,10,14],

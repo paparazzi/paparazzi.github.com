@@ -8,6 +8,7 @@ var rotorcraft_2navigation_8c =
     [ "LINE_START_FUNCTION", "rotorcraft_2navigation_8c.html#a86a682e52e440368e6ca96062ef7563f", null ],
     [ "LINE_STOP_FUNCTION", "rotorcraft_2navigation_8c.html#a2788d8683c98c074cb18680dc2eea0af", null ],
     [ "NAV_C", "rotorcraft_2navigation_8c.html#a291c0fda2fd988bf5f602f56157ab2b7", null ],
+    [ "NAV_CARROT_DIST", "rotorcraft_2navigation_8c.html#a91ab8a3a642ec67b2c8c50bca3685263", null ],
     [ "NAV_CLIMB_VSPEED", "rotorcraft_2navigation_8c.html#af0d4c69f92dfa6008449dba2db0ea145", null ],
     [ "NAV_DESCEND_VSPEED", "rotorcraft_2navigation_8c.html#a55819df6719b51511913f4a8e6f54ad6", null ],
     [ "oval_status", "rotorcraft_2navigation_8c.html#a6b504fc3b9e256669f3d93dff3372bcf", [

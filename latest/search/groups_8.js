@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['math_49732',['Math',['../group__math.html',1,'']]],
-  ['mcu_20peripherals_49733',['MCU Peripherals',['../group__mcu__periph.html',1,'']]]
+  ['math_49702',['Math',['../group__math.html',1,'']]],
+  ['mcu_20peripherals_49703',['MCU Peripherals',['../group__mcu__periph.html',1,'']]]
 ];
