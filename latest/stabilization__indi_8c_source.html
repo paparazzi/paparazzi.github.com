@@ -688,173 +688,181 @@ $(document).ready(function(){initNavTree('stabilization__indi_8c_source.html',''
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  <span class="keywordtype">float</span> indi_accel_d = (<a class="code" href="stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943">acceleration_lowpass_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[0]</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                        - <a class="code" href="stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943">acceleration_lowpass_filter</a>.<a class="code" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">o</a>[1]) * PERIODIC_FREQUENCY;</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  <span class="comment">// scale the inputs to avoid numerical errors</span></div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(<a class="code" href="stabilization__indi_8c.html#a727c4bb07e4c320d44a9e2b83bb40cb2">du_estimation</a>, <a class="code" href="stabilization__indi_8c.html#a48db6499bc35836ab208c0d5b989f60c">actuator_state_filt_vectd</a>, 0.001, INDI_NUM_ACT);</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(<a class="code" href="stabilization__indi_8c.html#a87672ad40cb5dd1e778479efb84cf742">ddu_estimation</a>, <a class="code" href="stabilization__indi_8c.html#a768b45138acc7d4ac36a1aef5737f260">actuator_state_filt_vectdd</a>, 0.001 / PERIODIC_FREQUENCY, INDI_NUM_ACT);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  <span class="keywordtype">float</span> ddx_estimation[INDI_OUTPUTS] = {<a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[0], <a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[1], <a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[2], indi_accel_d};</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160; </div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  <span class="comment">//Estimation of G</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="comment">// TODO: only estimate when du_norm2 is large enough (enough input)</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  <span class="comment">/*float du_norm2 = du_estimation[0]*du_estimation[0] + du_estimation[1]*du_estimation[1] +du_estimation[2]*du_estimation[2] + du_estimation[3]*du_estimation[3];*/</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="comment">// Calculate the error between prediction and measurement</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keywordtype">float</span> ddx_error = - ddx_estimation[i];</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;      ddx_error += <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#a727c4bb07e4c320d44a9e2b83bb40cb2">du_estimation</a>[j];</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;      <span class="keywordflow">if</span> (i == 2) {</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="comment">// Changing the momentum of the rotors gives a counter torque</span></div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        ddx_error += <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] * <a class="code" href="stabilization__indi_8c.html#a87672ad40cb5dd1e778479efb84cf742">ddu_estimation</a>[j];</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;      }</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    }</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160; </div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="comment">// when doing the yaw axis, also use G2</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <span class="keywordflow">if</span> (i == 2) {</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326">calc_g2_element</a>(ddx_error, j, <a class="code" href="stabilization__indi_8c.html#a8d40a3641e3c554e472f17e19dbf965d">mu2</a>);</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;      }</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == 3) {</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      <span class="comment">// If the acceleration change is very large (rough landing), don&#39;t adapt</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      <span class="keywordflow">if</span> (fabs(indi_accel_d) &gt; 60.0) {</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        ddx_error = 0.0;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;      }</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    }</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160; </div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="comment">// Calculate the row of the G1 matrix corresponding to this axis</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca">calc_g1_element</a>(ddx_error, i, j, <a class="code" href="stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c">mu1</a>[i]);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    }</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  }</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a>();</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  <span class="comment">// Use xml setting for adaptive mu for lms</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <span class="comment">// Set default value if not defined</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="preprocessor">  #ifndef STABILIZATION_INDI_ADAPTIVE_MU</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordtype">float</span> adaptive_mu_lr = 0.001;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="preprocessor">  #else</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordtype">float</span> adaptive_mu_lr = STABILIZATION_INDI_ADAPTIVE_MU;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160; </div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  <span class="comment">// scale the inputs to avoid numerical errors</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(<a class="code" href="stabilization__indi_8c.html#a727c4bb07e4c320d44a9e2b83bb40cb2">du_estimation</a>, <a class="code" href="stabilization__indi_8c.html#a48db6499bc35836ab208c0d5b989f60c">actuator_state_filt_vectd</a>, adaptive_mu_lr, INDI_NUM_ACT);</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(<a class="code" href="stabilization__indi_8c.html#a87672ad40cb5dd1e778479efb84cf742">ddu_estimation</a>, <a class="code" href="stabilization__indi_8c.html#a768b45138acc7d4ac36a1aef5737f260">actuator_state_filt_vectdd</a>, adaptive_mu_lr / PERIODIC_FREQUENCY, INDI_NUM_ACT);</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keywordtype">float</span> ddx_estimation[INDI_OUTPUTS] = {<a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[0], <a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[1], <a class="code" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a>[2], indi_accel_d};</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="comment">//Estimation of G</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="comment">// TODO: only estimate when du_norm2 is large enough (enough input)</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="comment">/*float du_norm2 = du_estimation[0]*du_estimation[0] + du_estimation[1]*du_estimation[1] +du_estimation[2]*du_estimation[2] + du_estimation[3]*du_estimation[3];*/</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="comment">// Calculate the error between prediction and measurement</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordtype">float</span> ddx_error = - ddx_estimation[i];</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;      ddx_error += <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#a727c4bb07e4c320d44a9e2b83bb40cb2">du_estimation</a>[j];</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      <span class="keywordflow">if</span> (i == 2) {</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <span class="comment">// Changing the momentum of the rotors gives a counter torque</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        ddx_error += <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] * <a class="code" href="stabilization__indi_8c.html#a87672ad40cb5dd1e778479efb84cf742">ddu_estimation</a>[j];</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      }</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="comment">// when doing the yaw axis, also use G2</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordflow">if</span> (i == 2) {</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326">calc_g2_element</a>(ddx_error, j, <a class="code" href="stabilization__indi_8c.html#a8d40a3641e3c554e472f17e19dbf965d">mu2</a>);</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      }</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == 3) {</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      <span class="comment">// If the acceleration change is very large (rough landing), don&#39;t adapt</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      <span class="keywordflow">if</span> (fabs(indi_accel_d) &gt; 60.0) {</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        ddx_error = 0.0;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;      }</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    }</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="comment">// Save the calculated matrix to G1 and G2</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="comment">// until thrust is included, first part of the array</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823">float_vect_copy</a>(<a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[0], <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[0], INDI_OUTPUTS * INDI_NUM_ACT);</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823">float_vect_copy</a>(<a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>, <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>, INDI_NUM_ACT);</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160; </div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="preprocessor">#if STABILIZATION_INDI_ALLOCATION_PSEUDO_INVERSE</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;  <span class="comment">// Calculate the inverse of (G1+G2)</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a>();</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;}</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
-<div class="line"><a name="l00738"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">  738</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;{</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="comment">//sum of G1 and G2</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;      <span class="keywordflow">if</span> (i != 2) {</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][j] = <a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[i][j] / <a class="code" href="stabilization__indi_8h.html#aa33bbb5b41564ce1c95d73f2888a611d">INDI_G_SCALING</a>;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][j] = (<a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[i][j] + <a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>[j]) / <a class="code" href="stabilization__indi_8h.html#aa33bbb5b41564ce1c95d73f2888a611d">INDI_G_SCALING</a>;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;      }</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    }</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  }</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  <span class="comment">//G1G2*transpose(G1G2)</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;  <span class="comment">//calculate matrix multiplication of its transpose INDI_OUTPUTSxnum_act x num_actxINDI_OUTPUTS</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  <span class="keywordtype">float</span> element = 0;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> row;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> col;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="keywordflow">for</span> (row = 0; row &lt; INDI_OUTPUTS; row++) {</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">for</span> (col = 0; col &lt; INDI_OUTPUTS; col++) {</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      element = 0;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        element = element + <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[row][i] * <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[col][i];</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      }</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;      <a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[row][col] = element;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    }</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  }</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160; </div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="comment">//there are numerical errors if the scaling is not right.</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4">float_vect_scale</a>(<a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[0], 100.0, INDI_OUTPUTS * INDI_OUTPUTS);</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="comment">//inverse of 4x4 matrix</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">float_mat_inv_4d</a>(<a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[0], <a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[0]);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;  <span class="comment">//scale back</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4">float_vect_scale</a>(<a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[0], 100.0, INDI_OUTPUTS * INDI_OUTPUTS);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <span class="comment">//G1G2&#39;*G1G2inv</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <span class="comment">//calculate matrix multiplication INDI_NUM_ACTxINDI_OUTPUTS x INDI_OUTPUTSxINDI_OUTPUTS</span></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="keywordflow">for</span> (row = 0; row &lt; INDI_NUM_ACT; row++) {</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordflow">for</span> (col = 0; col &lt; INDI_OUTPUTS; col++) {</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      element = 0;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        element = element + <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][row] * <a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[col][i];</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;      }</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acb918f017fe4a5c20ae09b87cd9ce6b9">g1g2_pseudo_inv</a>[row][col] = element;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    }</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  }</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;}</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160; </div>
-<div class="line"><a name="l00791"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a82a03c76c1dda03f5762afc40bfb0517">  791</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">rpm_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> __attribute__((unused)) sender_id, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> *<a class="code" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> num_act)</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;{</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="preprocessor">#if INDI_RPM_FEEDBACK</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; num_act; i++) {</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i] = (<a class="code" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>[i] - get_servo_min(i));</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i] *= (<a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / (float)(get_servo_max(i) - get_servo_min(i)));</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    Bound(<a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i], 0, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  }</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;}</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160; </div>
-<div class="line"><a name="l00806"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a9f7e90f9f9064f5ff2559807df9ab7e1">  806</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#ad3a3b777ab87b1529cc7a9c00019671d">thrust_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> sender_id, <span class="keywordtype">float</span> thrust_increment)</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;{</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a6af6fd90968a20c01b339ea9ba58c9fe">indi_thrust_increment</a> = thrust_increment;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a8275d6756caa0e1d8c4beb94384a51c3">indi_thrust_increment_set</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;}</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
-<div class="line"><a name="l00812"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">  812</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;{</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordtype">float</span> max_limit;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordtype">float</span> min_limit;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="comment">// Calculate the row of the G1 matrix corresponding to this axis</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca">calc_g1_element</a>(ddx_error, i, j, <a class="code" href="stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c">mu1</a>[i]);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  }</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a>();</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;  <span class="comment">// Save the calculated matrix to G1 and G2</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  <span class="comment">// until thrust is included, first part of the array</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823">float_vect_copy</a>(<a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[0], <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[0], INDI_OUTPUTS * INDI_NUM_ACT);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823">float_vect_copy</a>(<a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>, <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>, INDI_NUM_ACT);</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="preprocessor">#if STABILIZATION_INDI_ALLOCATION_PSEUDO_INVERSE</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="comment">// Calculate the inverse of (G1+G2)</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a>();</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;}</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160; </div>
+<div class="line"><a name="l00746"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">  746</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;{</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160; </div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <span class="comment">//sum of G1 and G2</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      <span class="keywordflow">if</span> (i != 2) {</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][j] = <a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[i][j] / <a class="code" href="stabilization__indi_8h.html#aa33bbb5b41564ce1c95d73f2888a611d">INDI_G_SCALING</a>;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][j] = (<a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>[i][j] + <a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>[j]) / <a class="code" href="stabilization__indi_8h.html#aa33bbb5b41564ce1c95d73f2888a611d">INDI_G_SCALING</a>;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      }</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    }</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  }</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160; </div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  <span class="comment">//G1G2*transpose(G1G2)</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  <span class="comment">//calculate matrix multiplication of its transpose INDI_OUTPUTSxnum_act x num_actxINDI_OUTPUTS</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <span class="keywordtype">float</span> element = 0;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> row;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> col;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <span class="keywordflow">for</span> (row = 0; row &lt; INDI_OUTPUTS; row++) {</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">for</span> (col = 0; col &lt; INDI_OUTPUTS; col++) {</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;      element = 0;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        element = element + <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[row][i] * <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[col][i];</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;      }</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;      <a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[row][col] = element;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    }</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;  }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160; </div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  <span class="comment">//there are numerical errors if the scaling is not right.</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4">float_vect_scale</a>(<a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[0], 100.0, INDI_OUTPUTS * INDI_OUTPUTS);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="comment">//inverse of 4x4 matrix</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">float_mat_inv_4d</a>(<a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[0], <a class="code" href="stabilization__indi_8c.html#ab316bf15392220f4a81a347a848cae57">g1g2_trans_mult</a>[0]);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="comment">//scale back</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4">float_vect_scale</a>(<a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[0], 100.0, INDI_OUTPUTS * INDI_OUTPUTS);</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="comment">//G1G2&#39;*G1G2inv</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="comment">//calculate matrix multiplication INDI_NUM_ACTxINDI_OUTPUTS x INDI_OUTPUTSxINDI_OUTPUTS</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">for</span> (row = 0; row &lt; INDI_NUM_ACT; row++) {</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordflow">for</span> (col = 0; col &lt; INDI_OUTPUTS; col++) {</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      element = 0;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        element = element + <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[i][row] * <a class="code" href="stabilization__indi_8c.html#aac1e4de3979807c2a5fa0652397d793f">g1g2inv</a>[col][i];</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;      }</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acb918f017fe4a5c20ae09b87cd9ce6b9">g1g2_pseudo_inv</a>[row][col] = element;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    }</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  }</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;}</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
+<div class="line"><a name="l00799"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a82a03c76c1dda03f5762afc40bfb0517">  799</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">rpm_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> __attribute__((unused)) sender_id, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> *<a class="code" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> num_act)</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;{</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="preprocessor">#if INDI_RPM_FEEDBACK</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; num_act; i++) {</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i] = (<a class="code" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>[i] - get_servo_min(i));</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i] *= (<a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / (float)(get_servo_max(i) - get_servo_min(i)));</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    Bound(<a class="code" href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a>[i], 0, <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  }</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;}</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160; </div>
+<div class="line"><a name="l00814"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a9f7e90f9f9064f5ff2559807df9ab7e1">  814</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#ad3a3b777ab87b1529cc7a9c00019671d">thrust_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a> sender_id, <span class="keywordtype">float</span> thrust_increment)</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;{</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a6af6fd90968a20c01b339ea9ba58c9fe">indi_thrust_increment</a> = thrust_increment;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  <a class="code" href="stabilization__indi_8c.html#a8275d6756caa0e1d8c4beb94384a51c3">indi_thrust_increment_set</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;}</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="comment">// Limit the values of the estimated G1 matrix</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] &gt; 0.0) {</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        max_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        min_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        max_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        min_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;      }</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] &gt; max_limit) {</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] = max_limit;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      }</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] &lt; min_limit) {</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] = min_limit;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;      }</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    }</div>
+<div class="line"><a name="l00820"></a><span class="lineno"><a class="line" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">  820</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;{</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <a class="code" href="vl53l1__types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="keywordflow">for</span> (j = 0; j &lt; INDI_NUM_ACT; j++) {</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keywordtype">float</span> max_limit;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="keywordtype">float</span> min_limit;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="comment">// Limit the values of the estimated G1 matrix</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; INDI_OUTPUTS; i++) {</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] &gt; 0.0) {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        max_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        min_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        max_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        min_limit = <a class="code" href="stabilization__indi_8c.html#acd17420308b21e796d89c07c80a18272">g1_init</a>[i][j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;      }</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160; </div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="comment">// Do the same for the G2 matrix</span></div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] &gt; 0.0) {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      max_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;      min_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;      max_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      min_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    }</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160; </div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] &gt; max_limit) {</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] = max_limit;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    }</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] &lt; min_limit) {</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] = min_limit;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    }</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  }</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;}</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] &gt; max_limit) {</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] = max_limit;</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      }</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] &lt; min_limit) {</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <a class="code" href="stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec">g1_est</a>[i][j] = min_limit;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;      }</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    }</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160; </div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <span class="comment">// Do the same for the G2 matrix</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] &gt; 0.0) {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      max_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;      min_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;      max_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] / <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;      min_limit = <a class="code" href="stabilization__indi_8c.html#abfada18491007f3a759325c15b56dae4">g2_init</a>[j] * <a class="code" href="stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b">INDI_ALLOWED_G_FACTOR</a>;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    }</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160; </div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] &gt; max_limit) {</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] = max_limit;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    }</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] &lt; min_limit) {</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;      <a class="code" href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a>[j] = min_limit;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    }</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  }</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__math__algebra__int_html_gab3d8478211bf7da23d2345e8eae43fc8"><div class="ttname"><a href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">int32_quat_of_eulers</a></div><div class="ttdeci">void int32_quat_of_eulers(struct Int32Quat *q, struct Int32Eulers *e)</div><div class="ttdoc">Quaternion from Euler angles.</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8c_source.html#l00375">pprz_algebra_int.c:375</a></div></div>
@@ -881,7 +889,7 @@ $(document).ready(function(){initNavTree('stabilization__indi_8c_source.html',''
 <div class="ttc" id="aabi__sender__ids_8h_html_aef2527d3e072d8a462222ec89d75727c"><div class="ttname"><a href="abi__sender__ids_8h.html#aef2527d3e072d8a462222ec89d75727c">THRUST_INCREMENT_ID</a></div><div class="ttdeci">#define THRUST_INCREMENT_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00443">abi_sender_ids.h:443</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a91303701bcea4829efbe57687746fb3d"><div class="ttname"><a href="stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d">act_obs</a></div><div class="ttdeci">float act_obs[INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00158">stabilization_indi.c:158</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a0389a2b16a008beb79bb79b0ec6a1943"><div class="ttname"><a href="stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943">acceleration_lowpass_filter</a></div><div class="ttdeci">Butterworth2LowPass acceleration_lowpass_filter</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00189">stabilization_indi.c:189</a></div></div>
-<div class="ttc" id="astabilization__indi_8c_html_a4e43de9dea0dc088a1a920bd7470fe45"><div class="ttname"><a href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a></div><div class="ttdeci">static void bound_g_mat(void)</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00812">stabilization_indi.c:812</a></div></div>
+<div class="ttc" id="astabilization__indi_8c_html_a4e43de9dea0dc088a1a920bd7470fe45"><div class="ttname"><a href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45">bound_g_mat</a></div><div class="ttdeci">static void bound_g_mat(void)</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00820">stabilization_indi.c:820</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a8ac3f45076fdd827f9abf74c955c1a51"><div class="ttname"><a href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">estimation_rate_dd</a></div><div class="ttdeci">float estimation_rate_dd[INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00148">stabilization_indi.c:148</a></div></div>
 <div class="ttc" id="aabi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a1953a1d7093d5fe41c2a4361577a837a"><div class="ttname"><a href="stabilization__indi_8c.html#a1953a1d7093d5fe41c2a4361577a837a">Bwls</a></div><div class="ttdeci">float * Bwls[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00073">stabilization_indi.c:73</a></div></div>
@@ -909,7 +917,7 @@ $(document).ready(function(){initNavTree('stabilization__indi_8c_source.html',''
 <div class="ttc" id="astabilization__indi_8c_html_acc9a2534a2fc814be3ca0ecf0a486880"><div class="ttname"><a href="stabilization__indi_8c.html#acc9a2534a2fc814be3ca0ecf0a486880">g2_est</a></div><div class="ttdeci">float g2_est[INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00181">stabilization_indi.c:181</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a768b45138acc7d4ac36a1aef5737f260"><div class="ttname"><a href="stabilization__indi_8c.html#a768b45138acc7d4ac36a1aef5737f260">actuator_state_filt_vectdd</a></div><div class="ttdeci">float actuator_state_filt_vectdd[INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00146">stabilization_indi.c:146</a></div></div>
 <div class="ttc" id="apprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra.</div></div>
-<div class="ttc" id="astabilization__indi_8c_html_a002d649f1f8bff9493c6756cdbbe8fe3"><div class="ttname"><a href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a></div><div class="ttdeci">static void calc_g1g2_pseudo_inv(void)</div><div class="ttdoc">Function that calculates the pseudo-inverse of (G1+G2).</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00738">stabilization_indi.c:738</a></div></div>
+<div class="ttc" id="astabilization__indi_8c_html_a002d649f1f8bff9493c6756cdbbe8fe3"><div class="ttname"><a href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3">calc_g1g2_pseudo_inv</a></div><div class="ttdeci">static void calc_g1g2_pseudo_inv(void)</div><div class="ttdoc">Function that calculates the pseudo-inverse of (G1+G2).</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00746">stabilization_indi.c:746</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_acec5709f25760d7094e4f0c9bb5be2ec"><div class="ttname"><a href="stabilization__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec">stab_att_sp_quat</a></div><div class="ttdeci">struct Int32Quat stab_att_sp_quat</div><div class="ttdoc">with INT32_QUAT_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00164">stabilization_indi.c:164</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_ae44b57fc0adf11ab14e901f470cf5c1e"><div class="ttname"><a href="stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e">indi_v</a></div><div class="ttdeci">float indi_v[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00072">stabilization_indi.c:72</a></div></div>
 <div class="ttc" id="astabilization__attitude__rc__setpoint_8c_html_a1270210b635f040b5bdd7d974f29c71f"><div class="ttname"><a href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f">stabilization_attitude_get_heading_i</a></div><div class="ttdeci">int32_t stabilization_attitude_get_heading_i(void)</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__attitude__rc__setpoint_8c_source.html#l00130">stabilization_attitude_rc_setpoint.c:130</a></div></div>
@@ -1038,7 +1046,7 @@ $(document).ready(function(){initNavTree('stabilization__indi_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8c.html">stabilization_indi.c</a></li>
-    <li class="footer">Generated on Thu Mar 24 2022 16:52:30 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Mar 26 2022 09:18:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
