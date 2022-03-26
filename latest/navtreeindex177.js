@@ -1,17 +1,5 @@
 var NAVTREEINDEX177 =
 {
-"sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1":[12,0,1,0,7,115,1],
-"sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6":[12,0,1,0,7,115,8],
-"sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c":[12,0,1,0,7,115,10],
-"sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f":[12,0,1,0,7,115,9],
-"sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e":[12,0,1,0,7,115,2],
-"sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e":[12,0,1,0,7,115,5],
-"sdcard__spi_8c.html#ac8de8d3bf63d614011c58978acdb2f27":[12,0,1,0,7,115,4],
-"sdcard__spi_8c.html#ad74eeebda29a6102d9efda412bdba151":[12,0,1,0,7,115,11],
-"sdcard__spi_8c.html#adbdeea6ec6829f8e1fd6afbf5a31af38":[12,0,1,0,7,115,0],
-"sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d":[12,0,1,0,7,115,6],
-"sdcard__spi_8c.html#af40ce9cdaf7435d94db52d8ec687c26e":[12,0,1,0,7,115,3],
-"sdcard__spi_8c_source.html":[12,0,1,0,7,115],
 "sdcard__spi_8h.html":[12,0,1,0,7,116],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7":[12,0,1,0,7,116,4],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a07739a16a859fe0c65f8d034284fb839":[12,0,1,0,7,116,4,17],
@@ -249,5 +237,17 @@ var NAVTREEINDEX177 =
 "serial__port_8c.html#a9e425ef705476c0a778712761281a232":[12,0,1,0,0,1,6,10],
 "serial__port_8c.html#ab7728b553a2579a9bd70e11fec0bbbc4":[12,0,1,0,0,1,6,7],
 "serial__port_8c.html#ab7b85461a451e02f63cf1383068cf0ca":[12,0,1,0,0,1,6,13],
-"serial__port_8c.html#acd4dcaba3d4608ddde2fc364a1cf8f79":[12,0,1,0,0,1,6,9]
+"serial__port_8c.html#acd4dcaba3d4608ddde2fc364a1cf8f79":[12,0,1,0,0,1,6,9],
+"serial__port_8c.html#acf391c48a39bcc64fabe03f73f246655":[12,0,1,0,0,1,6,19],
+"serial__port_8c.html#ad0860772c1bd006fb61f934b8a9c8e3e":[12,0,1,0,0,1,6,16],
+"serial__port_8c.html#adfeb7b8d8b2acf82e2f0fbf1d9323aad":[12,0,1,0,0,1,6,6],
+"serial__port_8c.html#aee75c3cee5e5beaef3f9b1a692d3633c":[12,0,1,0,0,1,6,15],
+"serial__port_8c.html#af25145952d87a0f805da05e7ceb3e5a8":[12,0,1,0,0,1,6,18],
+"serial__port_8c.html#afafe7988057b4462cafea02de41b6488":[12,0,1,0,0,1,6,12],
+"serial__port_8c_source.html":[12,0,1,0,0,1,6],
+"serial__port_8h.html":[12,0,1,0,0,1,7],
+"serial__port_8h.html#a0e36fda01b225b3e4877d639da9f7478":[12,0,1,0,0,1,7,0,0],
+"serial__port_8h.html#a2c010011ea7396568f40b0137dcbf646":[12,0,1,0,0,1,7,4],
+"serial__port_8h.html#a436c287d25989f374ec728048a371b93":[12,0,1,0,0,1,7,1],
+"serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd":[12,0,1,0,0,1,7,7]
 };

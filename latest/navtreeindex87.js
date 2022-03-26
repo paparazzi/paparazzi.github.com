@@ -1,17 +1,5 @@
 var NAVTREEINDEX87 =
 {
-"ins__arduimu__basic_8h.html#a6f80e69d733254b945f208647409073f":[12,0,1,0,6,36,17,0],
-"ins__arduimu__basic_8h.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[12,0,1,0,6,36,17,9],
-"ins__arduimu__basic_8h.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,17,3],
-"ins__arduimu__basic_8h.html#a731e758a70e0e275bc3894bfd4278b55":[12,0,1,0,6,36,17,4],
-"ins__arduimu__basic_8h.html#a89b374a0724b893c9ca3aef4ce34fee3":[12,0,1,0,6,36,17,6],
-"ins__arduimu__basic_8h.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,17,2],
-"ins__arduimu__basic_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,17,1],
-"ins__arduimu__basic_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,17,8],
-"ins__arduimu__basic_8h.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,36,17,5],
-"ins__arduimu__basic_8h_source.html":[12,0,1,0,6,36,17],
-"ins__ekf2_8cpp.html":[12,0,1,0,6,36,18],
-"ins__ekf2_8cpp.html#a0d038455d0c1fd764ec6ce5e5b44077e":[12,0,1,0,6,36,18,44],
 "ins__ekf2_8cpp.html#a0d582817f822aaebda6535147b9f3bd4":[12,0,1,0,6,36,18,0,4],
 "ins__ekf2_8cpp.html#a124a9ad382120bc46dc511e3b73acae7":[12,0,1,0,6,36,18,0,3],
 "ins__ekf2_8cpp.html#a141009974fbc44658bdd3334ff2e1d62":[12,0,1,0,6,36,18,56],
@@ -249,5 +237,17 @@ var NAVTREEINDEX87 =
 "ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a":[12,0,1,0,6,2,17,4,9],
 "ins__float__invariant_8h.html#structInsFloatInv":[12,0,1,0,6,36,21,5],
 "ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,36,21,2],
-"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,2,17,2]
+"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,2,17,2],
+"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,36,21,3],
+"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,2,17,3],
+"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,36,21,4],
+"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,2,17,4],
+"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,36,21,1],
+"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,2,17,1],
+"ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,36,21,0],
+"ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,2,17,0],
+"ins__float__invariant_8h_source.html":[12,0,1,0,6,36,21],
+"ins__float__invariant__wrapper_8c.html":[12,0,1,0,6,36,22],
+"ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8":[12,0,1,0,6,36,22,10],
+"ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d":[12,0,1,0,6,36,22,19]
 };

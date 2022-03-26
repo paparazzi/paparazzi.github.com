@@ -1,17 +1,5 @@
 var NAVTREEINDEX154 =
 {
-"paparazzi_messages.html#BARO_WORDS":[2,0,45],
-"paparazzi_messages.html#BATTERY_MONITOR":[2,0,224],
-"paparazzi_messages.html#BAT_LOW":[2,3,0],
-"paparazzi_messages.html#BEBOP_ACTUATORS":[2,0,194],
-"paparazzi_messages.html#BLOCK":[2,1,4],
-"paparazzi_messages.html#BLUEGIGA":[2,0,103],
-"paparazzi_messages.html#BMP_STATUS":[2,0,82],
-"paparazzi_messages.html#BOOZ2_FMS_COMMAND":[2,1,47],
-"paparazzi_messages.html#BOOZ_NAV_STICK":[2,1,48],
-"paparazzi_messages.html#CALIBRATION":[2,0,13],
-"paparazzi_messages.html#CAM":[2,0,19],
-"paparazzi_messages.html#CAMERA_PAYLOAD":[2,0,108],
 "paparazzi_messages.html#CAMERA_PAYLOAD_DL":[2,1,31],
 "paparazzi_messages.html#CAMERA_SNAPSHOT":[2,0,125],
 "paparazzi_messages.html#CAMERA_SNAPSHOT_DL":[2,1,32],
@@ -249,5 +237,17 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#SHT_I2C_STATUS":[2,0,124],
 "paparazzi_messages.html#SHT_STATUS":[2,0,87],
 "paparazzi_messages.html#SMARTPROBE":[2,1,42],
-"paparazzi_messages.html#SOLAR_RADIATION":[2,0,116]
+"paparazzi_messages.html#SOLAR_RADIATION":[2,0,116],
+"paparazzi_messages.html#SONAR":[2,0,212],
+"paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,127],
+"paparazzi_messages.html#STAB_ATTITUDE_INDI":[2,0,192],
+"paparazzi_messages.html#STAB_ATTITUDE_INT":[2,0,135],
+"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137],
+"paparazzi_messages.html#STAB_ATTITUDE_REF_INT":[2,0,136],
+"paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,208],
+"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9],
+"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
+"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11],
+"paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10],
+"paparazzi_messages.html#STEREO_IMG":[2,0,205]
 };

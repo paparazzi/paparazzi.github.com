@@ -1,11 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"chimera_2chibios_2v1_80_2board_8h.html":[12,0,1,0,1,3,0,0,1],
-"chimera_2chibios_2v1_80_2board_8h.html#a003e73742eded3ff686411f93421b9eb":[12,0,1,0,1,3,0,0,1,135],
-"chimera_2chibios_2v1_80_2board_8h.html#a01022059372bbc63e52063c4c4e8fe8c":[12,0,1,0,1,3,0,0,1,143],
-"chimera_2chibios_2v1_80_2board_8h.html#a0139218717a95536472479043a599f65":[12,0,1,0,1,3,0,0,1,21],
-"chimera_2chibios_2v1_80_2board_8h.html#a0239d18727f3730c81561fb68cbe0bdc":[12,0,1,0,1,3,0,0,1,125],
-"chimera_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b":[12,0,1,0,1,3,0,0,1,68],
 "chimera_2chibios_2v1_80_2board_8h.html#a02a98a8fddb433405aaa5b52c80c8541":[12,0,1,0,1,3,0,0,1,395],
 "chimera_2chibios_2v1_80_2board_8h.html#a02d7c4ac8c24b652d77cec2b37201325":[12,0,1,0,1,3,0,0,1,104],
 "chimera_2chibios_2v1_80_2board_8h.html#a036afca03f7df3a43eb1e964be532db2":[12,0,1,0,1,3,0,0,1,162],
@@ -249,5 +243,11 @@ var NAVTREEINDEX31 =
 "chimera_2chibios_2v1_80_2board_8h.html#a88e90fe8e8e671220793712eda23c4ab":[12,0,1,0,1,3,0,0,1,325],
 "chimera_2chibios_2v1_80_2board_8h.html#a897cb5f17f4e3ab19b3d5d1df77c31fd":[12,0,1,0,1,3,0,0,1,361],
 "chimera_2chibios_2v1_80_2board_8h.html#a89fa4656e988e929608905e5de142558":[12,0,1,0,1,3,0,0,1,80],
-"chimera_2chibios_2v1_80_2board_8h.html#a8aa85ae9867fabf70ec72cd3bf6fb6b9":[12,0,1,0,1,3,0,0,1,85]
+"chimera_2chibios_2v1_80_2board_8h.html#a8aa85ae9867fabf70ec72cd3bf6fb6b9":[12,0,1,0,1,3,0,0,1,85],
+"chimera_2chibios_2v1_80_2board_8h.html#a8ac977a5042e9153c2b148730fc201ae":[12,0,1,0,1,3,0,0,1,252],
+"chimera_2chibios_2v1_80_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9":[12,0,1,0,1,3,0,0,1,328],
+"chimera_2chibios_2v1_80_2board_8h.html#a8b52ebdc3fc8a0538a849106bce5c2d1":[12,0,1,0,1,3,0,0,1,279],
+"chimera_2chibios_2v1_80_2board_8h.html#a8c14c96a28bfd69b06f50f857f20d12b":[12,0,1,0,1,3,0,0,1,203],
+"chimera_2chibios_2v1_80_2board_8h.html#a8c91f3240413d91d202e16fdcb47614e":[12,0,1,0,1,3,0,0,1,81],
+"chimera_2chibios_2v1_80_2board_8h.html#a8cbcf9b646f7934aa48e6dfce9d4cf23":[12,0,1,0,1,3,0,0,1,169]
 };

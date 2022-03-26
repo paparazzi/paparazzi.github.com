@@ -1,17 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949":[12,0,1,0,6,36,5,4,4],
-"imu__chimu_8h.html#a2ee87eb796fea5389cb6b48c3b43307b":[12,0,1,0,6,36,5,14],
-"imu__chimu_8h.html#a33ed9c32c88ed20e755d09a94bda5e08":[12,0,1,0,6,36,5,3,1],
-"imu__chimu_8h.html#a378979aaa8b40d23822d346d3d2ba956":[12,0,1,0,6,36,5,5,11],
-"imu__chimu_8h.html#a43d43d17193b761d1d28f038a647f0b1":[12,0,1,0,6,36,5,5,14],
-"imu__chimu_8h.html#a45ea797c080d2caaba920bca40661f3d":[12,0,1,0,6,36,5,5,8],
-"imu__chimu_8h.html#a4b9cedec11ae88e5d30faf9b32bb1003":[12,0,1,0,6,36,5,19],
-"imu__chimu_8h.html#a52e80849b8ab097fee0f45fe7bafb1a4":[12,0,1,0,6,36,5,1,0],
-"imu__chimu_8h.html#a540bbc5a40973634a607d66075662134":[12,0,1,0,6,36,5,7],
-"imu__chimu_8h.html#a5690daa586c0c9551527d1ae24068a70":[12,0,1,0,6,36,5,4,1],
-"imu__chimu_8h.html#a57e331d44c44c34b20d06a7e0ea2b8d9":[12,0,1,0,6,36,5,21],
-"imu__chimu_8h.html#a5ac5cadefc3732464acb03f14c79149c":[12,0,1,0,6,36,5,40],
 "imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31":[12,0,1,0,6,36,5,26],
 "imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3":[12,0,1,0,6,36,5,5,18],
 "imu__chimu_8h.html#a686cb500bf5125fae7470317861f592c":[12,0,1,0,6,36,5,34],
@@ -249,5 +237,17 @@ var NAVTREEINDEX83 =
 "imu__krooz__memsic_8h.html#a1aaa9960565f8e3a4101d19b3be1f4d0":[12,0,1,0,1,8,4,26],
 "imu__krooz__memsic_8h.html#a2644576e539bd38bf5d323809e3fd737":[12,0,1,0,1,8,4,14],
 "imu__krooz__memsic_8h.html#a2b487e2376edc35048f5d78cd4968221":[12,0,1,0,1,8,4,9],
-"imu__krooz__memsic_8h.html#a3bb03278fbd9117e876b24e1b78a61c5":[12,0,1,0,1,8,4,6]
+"imu__krooz__memsic_8h.html#a3bb03278fbd9117e876b24e1b78a61c5":[12,0,1,0,1,8,4,6],
+"imu__krooz__memsic_8h.html#a3c4d85605fa8be77fbc356b66c19f509":[12,0,1,0,1,8,4,18],
+"imu__krooz__memsic_8h.html#a4afc2b22683312436f746d69fc451bb1":[12,0,1,0,1,8,4,8],
+"imu__krooz__memsic_8h.html#a4d1dffda46521abab982d7a875301548":[12,0,1,0,1,8,4,22],
+"imu__krooz__memsic_8h.html#a5e5df3276ebbf19cb1d3ef3697b12da4":[12,0,1,0,1,8,2,0,8],
+"imu__krooz__memsic_8h.html#a5e5df3276ebbf19cb1d3ef3697b12da4":[12,0,1,0,1,8,4,0,8],
+"imu__krooz__memsic_8h.html#a5e948c7205e36cd1be3651cefe4415fc":[12,0,1,0,1,8,4,23],
+"imu__krooz__memsic_8h.html#a5ed19364e701726bf4eb06eea5da9acf":[12,0,1,0,1,8,4,16],
+"imu__krooz__memsic_8h.html#a60e8f1f35a15a535130669093e80e858":[12,0,1,0,1,8,4,7],
+"imu__krooz__memsic_8h.html#a6a629c74c8a0f7a32146dd1bd5c3e244":[12,0,1,0,1,8,2,0,3],
+"imu__krooz__memsic_8h.html#a6a629c74c8a0f7a32146dd1bd5c3e244":[12,0,1,0,1,8,4,0,3],
+"imu__krooz__memsic_8h.html#a6f808c71190e714287442af3bb7008b3":[12,0,1,0,1,8,4,21],
+"imu__krooz__memsic_8h.html#a7d216292243e16d97aa6e312c37d0ad7":[12,0,1,0,1,8,2,0,2]
 };

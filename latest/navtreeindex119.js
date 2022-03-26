@@ -1,17 +1,5 @@
 var NAVTREEINDEX119 =
 {
-"module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,124,0],
-"module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,124,2,0],
-"module__digital_cam_uart.html":[1,125],
-"module__digital_cam_uart.html#configuration__digital_cam_uart":[1,125,1],
-"module__digital_cam_uart.html#functions__digital_cam_uart":[1,125,2],
-"module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,125,0],
-"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,125,2,0],
-"module__digital_cam_video.html":[1,126],
-"module__digital_cam_video.html#configuration__digital_cam_video":[1,126,1],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,126,2],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,126,0],
-"module__digital_cam_video.html#module_xml__digital_cam_video":[1,126,2,0],
 "module__direct_memory_logger.html":[1,237],
 "module__direct_memory_logger.html#configuration__direct_memory_logger":[1,237,1],
 "module__direct_memory_logger.html#functions__direct_memory_logger":[1,237,2],
@@ -249,5 +237,17 @@ var NAVTREEINDEX119 =
 "module__gps_udp.html#configuration__gps_udp":[1,153,1],
 "module__gps_udp.html#functions__gps_udp":[1,153,3],
 "module__gps_udp.html#module_load_example__gps_udp":[1,153,0],
-"module__gps_udp.html#module_xml__gps_udp":[1,153,3,0]
+"module__gps_udp.html#module_xml__gps_udp":[1,153,3,0],
+"module__gsm.html":[1,432],
+"module__gsm.html#functions__gsm":[1,432,1],
+"module__gsm.html#module_load_example__gsm":[1,432,0],
+"module__gsm.html#module_xml__gsm":[1,432,1,0],
+"module__guidance_basic_fw.html":[1,154],
+"module__guidance_basic_fw.html#configuration__guidance_basic_fw":[1,154,1],
+"module__guidance_basic_fw.html#functions__guidance_basic_fw":[1,154,2],
+"module__guidance_basic_fw.html#module_load_example__guidance_basic_fw":[1,154,0],
+"module__guidance_basic_fw.html#module_xml__guidance_basic_fw":[1,154,2,0],
+"module__guidance_energy.html":[1,155],
+"module__guidance_energy.html#configuration__guidance_energy":[1,155,1],
+"module__guidance_energy.html#functions__guidance_energy":[1,155,2]
 };

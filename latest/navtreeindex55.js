@@ -1,17 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"gpio__def_8h.html#a20f88dbc839eb32b5fec903474befdd7":[12,0,1,0,0,0,0,4,0],
-"gpio__def_8h.html#a36cff7d300b200f71fcf3341651c4ae1":[12,0,1,0,0,0,0,4,18],
-"gpio__def_8h.html#a3820cacb614277004870fc37b33ad084":[12,0,1,0,0,0,0,4,29],
-"gpio__def_8h.html#a3b9ee0b882294530e8d2f343af3ba0fe":[12,0,1,0,0,0,0,4,14],
-"gpio__def_8h.html#a414493de8389b7908e5e8b6723a5fdd3":[12,0,1,0,0,0,0,4,13],
-"gpio__def_8h.html#a46027cd97ff756e5ddadcc10811b5699":[12,0,1,0,0,0,0,4,28],
-"gpio__def_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d":[12,0,1,0,0,0,0,4,5],
-"gpio__def_8h.html#a546be0d3be4335be87bd46b9d6442edd":[12,0,1,0,0,0,0,4,11],
-"gpio__def_8h.html#a5976a97cba5848fba316456534fbd555":[12,0,1,0,0,0,0,4,47],
-"gpio__def_8h.html#a5d3043fd1db106a844092560243b5ddf":[12,0,1,0,0,0,0,4,17],
-"gpio__def_8h.html#a5e574af903fe01c85ec2ece496c280a4":[12,0,1,0,0,0,0,4,42],
-"gpio__def_8h.html#a604ed146ad823719c981f855fb363047":[12,0,1,0,0,0,0,4,43],
 "gpio__def_8h.html#a62fa810782439ccd99ea38f7ed500a94":[12,0,1,0,0,0,0,4,22],
 "gpio__def_8h.html#a6d376657d66d0a5939629b1722b27279":[12,0,1,0,0,0,0,4,39],
 "gpio__def_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7":[12,0,1,0,0,0,0,4,21],
@@ -249,5 +237,17 @@ var NAVTREEINDEX55 =
 "gps__datalink_8c.html#ae45b690c21285f18321b1a319823e7a6":[12,0,1,0,6,28,3,10],
 "gps__datalink_8c_source.html":[12,0,1,0,6,28,3],
 "gps__datalink_8h.html":[12,0,1,0,6,28,4],
-"gps__datalink_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,28,4,1]
+"gps__datalink_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,28,4,1],
+"gps__datalink_8h.html#a217a35f230e3154843b789ea864ac86c":[12,0,1,0,6,28,4,3],
+"gps__datalink_8h.html#a22e6a1eebb70356993012b6353da9cc2":[12,0,1,0,6,28,4,4],
+"gps__datalink_8h.html#a2454f9173636f105da3b60752f958ec3":[12,0,1,0,6,28,4,2],
+"gps__datalink_8h.html#a8298a7540884fbcc0cea89224dd2cc25":[12,0,1,0,6,28,4,6],
+"gps__datalink_8h.html#ab0b9af870e1279630618bc5e76fc810e":[12,0,1,0,6,28,4,0],
+"gps__datalink_8h.html#ac7bc5db77d4658562ccbc897069a1251":[12,0,1,0,6,28,4,5],
+"gps__datalink_8h_source.html":[12,0,1,0,6,28,4],
+"gps__furuno_8c.html":[12,0,1,0,6,28,5],
+"gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1":[12,0,1,0,6,28,5,6],
+"gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9":[12,0,1,0,6,28,5,0],
+"gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843":[12,0,1,0,6,28,5,3],
+"gps__furuno_8c.html#abad503c594db519e60515d9ac597f742":[12,0,1,0,6,28,5,5]
 };

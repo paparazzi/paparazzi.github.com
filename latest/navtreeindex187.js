@@ -1,17 +1,5 @@
 var NAVTREEINDEX187 =
 {
-"superbitrf__rc_8h.html#ac5d768a757f013a44c96ecf92287888e":[12,0,1,0,6,55,23,8],
-"superbitrf__rc_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8":[12,0,1,0,6,55,23,4],
-"superbitrf__rc_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[12,0,1,0,6,55,23,13],
-"superbitrf__rc_8h.html#afc61e3ef036fe29a6dc2d34dd6919f10":[12,0,1,0,6,55,23,17],
-"superbitrf__rc_8h_source.html":[12,0,1,0,6,55,23],
-"swashplate__mixing_8c.html":[12,0,1,0,6,33,0],
-"swashplate__mixing_8c.html#a3b16bf330efb81b1474079c35f903311":[12,0,1,0,6,33,0,1],
-"swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,33,0,6],
-"swashplate__mixing_8c.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,33,0,4],
-"swashplate__mixing_8c.html#ab1597832131a1e2787aecb06cce073c6":[12,0,1,0,6,33,0,8],
-"swashplate__mixing_8c.html#ae18d22764360ad8d3fefe3f7b91ab781":[12,0,1,0,6,33,0,3],
-"swashplate__mixing_8c.html#ae26788086ee44f01196fccdf1ea094fa":[12,0,1,0,6,33,0,2],
 "swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c":[12,0,1,0,6,33,0,7],
 "swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b":[12,0,1,0,6,33,0,0],
 "swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,33,0,5],
@@ -249,5 +237,17 @@ var NAVTREEINDEX187 =
 "sys__mon_8c.html#abaa925469e5ec124a8333c7bce1c5c12":[12,0,1,0,6,12,14,3],
 "sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856":[12,0,1,0,6,12,14,14],
 "sys__mon_8c.html#ac92d4ce59d619452e70fd3a3a53fb7a0":[12,0,1,0,6,12,14,2],
-"sys__mon_8c.html#acb5edde6b801b04f23b2c89bd0117cde":[12,0,1,0,6,12,14,1]
+"sys__mon_8c.html#acb5edde6b801b04f23b2c89bd0117cde":[12,0,1,0,6,12,14,1],
+"sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d":[12,0,1,0,6,12,14,9],
+"sys__mon_8c_source.html":[12,0,1,0,6,12,14],
+"sys__mon_8h.html":[12,0,1,0,6,12,15],
+"sys__mon_8h.html#a5b750b36817e9e5d6717863bc4e61194":[12,0,1,0,6,12,15,0],
+"sys__mon_8h.html#abaa925469e5ec124a8333c7bce1c5c12":[12,0,1,0,6,12,15,3],
+"sys__mon_8h.html#ac92d4ce59d619452e70fd3a3a53fb7a0":[12,0,1,0,6,12,15,2],
+"sys__mon_8h.html#acb5edde6b801b04f23b2c89bd0117cde":[12,0,1,0,6,12,15,1],
+"sys__mon_8h_source.html":[12,0,1,0,6,12,15],
+"sys__mon__bare__metal_8h.html":[12,0,1,0,6,12,16],
+"sys__mon__bare__metal_8h.html#a2ad135a8060d1f64cfab07279db4fb5f":[12,0,1,0,6,12,16,0,0],
+"sys__mon__bare__metal_8h.html#a31e2ae350aa2fcddac19a9278b58556c":[12,0,1,0,6,12,16,0,1],
+"sys__mon__bare__metal_8h.html#a7fafb8bed11469e717a148d4e10715f1":[12,0,1,0,6,12,16,0,7]
 };

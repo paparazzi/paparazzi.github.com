@@ -1,17 +1,5 @@
 var NAVTREEINDEX117 =
 {
-"module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
-"module__actuators_esc32.html":[1,9],
-"module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
-"module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
-"module__actuators_md25.html":[1,10],
-"module__actuators_md25.html#configuration__actuators_md25":[1,10,1],
-"module__actuators_md25.html#functions__actuators_md25":[1,10,2],
-"module__actuators_md25.html#module_load_example__actuators_md25":[1,10,0],
-"module__actuators_md25.html#module_xml__actuators_md25":[1,10,2,0],
-"module__actuators_nps.html":[1,11],
-"module__actuators_nps.html#module_load_example__actuators_nps":[1,11,0],
-"module__actuators_nps.html#module_xml__actuators_nps":[1,11,0,0],
 "module__actuators_ostrich.html":[1,12],
 "module__actuators_ostrich.html#configuration__actuators_ostrich":[1,12,1],
 "module__actuators_ostrich.html#functions__actuators_ostrich":[1,12,2],
@@ -249,5 +237,17 @@ var NAVTREEINDEX117 =
 "module__baro_ms5534a.html":[1,357],
 "module__baro_ms5534a.html#functions__baro_ms5534a":[1,357,1],
 "module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,357,0],
-"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,357,1,0]
+"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,357,1,0],
+"module__baro_ms5611_i2c.html":[1,367],
+"module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,367,1],
+"module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,367,2],
+"module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,367,0],
+"module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,367,2,0],
+"module__baro_ms5611_spi.html":[1,368],
+"module__baro_ms5611_spi.html#configuration__baro_ms5611_spi":[1,368,1],
+"module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,368,2],
+"module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,368,0],
+"module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,368,2,0],
+"module__baro_scp_i2c.html":[1,369],
+"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,369,1]
 };

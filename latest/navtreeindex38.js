@@ -1,11 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"crazyflie_2chibios_2v2_81_2board_8h.html#a684c1b31b93f347a226b7f4e80cb3f2d":[12,0,1,0,1,4,0,0,1,255],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a68ce385a7f718e0201250c192791473d":[12,0,1,0,1,4,0,0,1,285],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a6a3ba2e1b8b5a5b5b0bb042c176c77e6":[12,0,1,0,1,4,0,0,1,324],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a6a6cd142a0c0cde9125352343a8e6005":[12,0,1,0,1,4,0,0,1,485],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a6a8f26ac753d5994952b6e4d5c4e8656":[12,0,1,0,1,4,0,0,1,373],
-"crazyflie_2chibios_2v2_81_2board_8h.html#a6aa1810521655aff39e0c7874721d99a":[12,0,1,0,1,4,0,0,1,466],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a6b3501fea244a7506da453d643f51df2":[12,0,1,0,1,4,0,0,1,16],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a6b55dd36a8f68bea16aa54c3f3f876d3":[12,0,1,0,1,4,0,0,1,262],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a6b854c2f1520264d0572b6980bea6a2c":[12,0,1,0,1,4,0,0,1,480],
@@ -249,5 +243,11 @@ var NAVTREEINDEX38 =
 "crazyflie_2chibios_2v2_81_2board_8h.html#ae378653fa5f4dfd04cd653f6595d598a":[12,0,1,0,1,4,0,0,1,218],
 "crazyflie_2chibios_2v2_81_2board_8h.html#ae3f6aa2739b25ea02c02c01e2e9dbff5":[12,0,1,0,1,4,0,0,1,82],
 "crazyflie_2chibios_2v2_81_2board_8h.html#ae471867bc2e29adb4a11a0508b4b7cc4":[12,0,1,0,1,4,0,0,1,390],
-"crazyflie_2chibios_2v2_81_2board_8h.html#ae60ba5dd692bfed149e3210112fbdb1a":[12,0,1,0,1,4,0,0,1,433]
+"crazyflie_2chibios_2v2_81_2board_8h.html#ae60ba5dd692bfed149e3210112fbdb1a":[12,0,1,0,1,4,0,0,1,433],
+"crazyflie_2chibios_2v2_81_2board_8h.html#ae79ecdd408577b910a3f355ff2a2a74d":[12,0,1,0,1,4,0,0,1,443],
+"crazyflie_2chibios_2v2_81_2board_8h.html#aea1091db8ee95f62c903c47b86ef7f1b":[12,0,1,0,1,4,0,0,1,343],
+"crazyflie_2chibios_2v2_81_2board_8h.html#aea6ba923a312ce4717fc09ce36d5f260":[12,0,1,0,1,4,0,0,1,428],
+"crazyflie_2chibios_2v2_81_2board_8h.html#aeac3e6ba6e5cf8ec9d2a3deea7851bd2":[12,0,1,0,1,4,0,0,1,292],
+"crazyflie_2chibios_2v2_81_2board_8h.html#aeb88b67abe9bad184b663ee538518d19":[12,0,1,0,1,4,0,0,1,73],
+"crazyflie_2chibios_2v2_81_2board_8h.html#aebd40b824541b0602fa643d68ed5e818":[12,0,1,0,1,4,0,0,1,166]
 };

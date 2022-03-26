@@ -1,17 +1,5 @@
 var NAVTREEINDEX92 =
 {
-"jevois_8h.html#a6601d0ef0873c3c2cbab6c974df2546e":[12,0,1,0,6,60,0,1,6],
-"jevois_8h.html#a7b77c0dd8184c19ee7e172c613084d0c":[12,0,1,0,6,60,0,1,1],
-"jevois_8h.html#a90112f40bc6c57694b0fd50a36836a38":[12,0,1,0,6,60,0,1,12],
-"jevois_8h.html#a9378e20192ac2978f4103b4a14c99350":[12,0,1,0,6,60,0,1,8],
-"jevois_8h.html#aa4b38bf843c270c3ef77b789bc08f30c":[12,0,1,0,6,60,0,1,18],
-"jevois_8h.html#aaabffd8949fd232243751b5dbf121d60":[12,0,1,0,6,60,0,1,17],
-"jevois_8h.html#aaf4f731bc6ca5fe67ffd8cd9f5fb8655":[12,0,1,0,6,60,0,1,7],
-"jevois_8h.html#ad662363164c7084ea1797b1a3215e6ba":[12,0,1,0,6,60,0,1,3],
-"jevois_8h.html#ad87974b816897c8fabe443f88b281add":[12,0,1,0,6,60,0,1,9],
-"jevois_8h.html#ae7c0a60712036dc7f1583b9954230c89":[12,0,1,0,6,60,0,1,15],
-"jevois_8h.html#af5ea4742233d5aa3ead308873ee16795":[12,0,1,0,6,60,0,1,10],
-"jevois_8h_source.html":[12,0,1,0,6,60,0,1],
 "jevois__mavlink_8c.html":[12,0,1,0,6,60,0,2],
 "jevois__mavlink_8c.html#a0e94e9c0e1d0ca2d01b60d0b56b8f3a1":[12,0,1,0,6,60,0,2,1,0],
 "jevois__mavlink_8c.html#a0e94e9c0e1d0ca2d01b60d0b56b8f3a1":[12,0,1,0,6,11,22,0,0],
@@ -249,5 +237,17 @@ var NAVTREEINDEX92 =
 "krooz__sd_8h.html#a697b8e633c428bd167844542c8c1453f":[12,0,1,0,1,37,165],
 "krooz__sd_8h.html#a6e88e081589d574ae0857021a855266f":[12,0,1,0,1,37,200],
 "krooz__sd_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289":[12,0,1,0,1,37,180],
-"krooz__sd_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,37,82]
+"krooz__sd_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,37,82],
+"krooz__sd_8h.html#a7177258266354e8bfdaa446881db27e1":[12,0,1,0,1,37,158],
+"krooz__sd_8h.html#a74a73d71b5a66c3cfea6788e42674c94":[12,0,1,0,1,37,53],
+"krooz__sd_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,37,44],
+"krooz__sd_8h.html#a77fe6bd05ab6caa4fc9137f076ed0e14":[12,0,1,0,1,37,12],
+"krooz__sd_8h.html#a78669ea0a0e6af54d5b0981f48156dd1":[12,0,1,0,1,37,186],
+"krooz__sd_8h.html#a787b5d0dff7658e5e923331317635545":[12,0,1,0,1,37,142],
+"krooz__sd_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,37,106],
+"krooz__sd_8h.html#a78b91cae357eed2023271f3a889047dd":[12,0,1,0,1,37,110],
+"krooz__sd_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55":[12,0,1,0,1,37,138],
+"krooz__sd_8h.html#a7ae5162492c27a9f944435eb96e1cdec":[12,0,1,0,1,37,51],
+"krooz__sd_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,37,150],
+"krooz__sd_8h.html#a7ca4d622269db724a3af09d3625280ee":[12,0,1,0,1,37,105]
 };
