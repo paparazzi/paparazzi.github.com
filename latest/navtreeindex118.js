@@ -1,5 +1,9 @@
 var NAVTREEINDEX118 =
 {
+"module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,368,0],
+"module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,368,2,0],
+"module__baro_scp_i2c.html":[1,369],
+"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,369,1],
 "module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,369,2],
 "module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,369,0],
 "module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,369,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX118 =
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,125,2],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,125,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,125,2,0],
-"module__digital_cam_video.html":[1,126],
-"module__digital_cam_video.html#configuration__digital_cam_video":[1,126,1],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,126,2],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,126,0],
-"module__digital_cam_video.html#module_xml__digital_cam_video":[1,126,2,0]
+"module__digital_cam_video.html":[1,126]
 };

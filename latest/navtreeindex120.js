@@ -1,5 +1,9 @@
 var NAVTREEINDEX120 =
 {
+"module__guidance_basic_fw.html#module_xml__guidance_basic_fw":[1,154,2,0],
+"module__guidance_energy.html":[1,155],
+"module__guidance_energy.html#configuration__guidance_energy":[1,155,1],
+"module__guidance_energy.html#functions__guidance_energy":[1,155,2],
 "module__guidance_energy.html#module_load_example__guidance_energy":[1,155,0],
 "module__guidance_energy.html#module_xml__guidance_energy":[1,155,2,0],
 "module__guidance_full_pid_fw.html":[1,156],
@@ -245,9 +249,5 @@ var NAVTREEINDEX120 =
 "module__imu_mpu6000.html":[1,192],
 "module__imu_mpu6000.html#autoloads__imu_mpu6000":[1,192,2],
 "module__imu_mpu6000.html#configuration__imu_mpu6000":[1,192,1],
-"module__imu_mpu6000.html#functions__imu_mpu6000":[1,192,3],
-"module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,192,0],
-"module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,192,3,0],
-"module__imu_mpu6000_hmc5883.html":[1,193],
-"module__imu_mpu6000_hmc5883.html#autoloads__imu_mpu6000_hmc5883":[1,193,2]
+"module__imu_mpu6000.html#functions__imu_mpu6000":[1,192,3]
 };

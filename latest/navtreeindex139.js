@@ -1,5 +1,9 @@
 var NAVTREEINDEX139 =
 {
+"nav__trinity_8c.html#aeccd8fa90bf134b39020e9157ef50c5b":[12,0,1,0,6,46,61,8],
+"nav__trinity_8c.html#af42a8a84246ee9a6b2abe456b11c5d77":[12,0,1,0,6,46,61,0,6],
+"nav__trinity_8c.html#afeafd7a3b63c5783ca31e380bf86cb6a":[12,0,1,0,6,46,61,0,2],
+"nav__trinity_8c.html#structNavTrinity":[12,0,1,0,6,46,61,0],
 "nav__trinity_8c_source.html":[12,0,1,0,6,46,61],
 "nav__trinity_8h.html":[12,0,1,0,6,46,62],
 "nav__trinity_8h.html#a551dbd0cc58417eec4881ca73ad02daa":[12,0,1,0,6,46,62,2],
@@ -10,8 +14,8 @@ var NAVTREEINDEX139 =
 "nav__vertical__raster_8c.html#a1e4b07456818b9e3350d99d1931205fd":[12,0,1,0,6,46,63,3],
 "nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f":[12,0,1,0,6,46,63,1],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4":[12,0,1,0,6,46,63,0],
-"nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c":[12,0,1,0,6,46,27,0,9],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c":[12,0,1,0,6,46,63,0,9],
+"nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c":[12,0,1,0,6,46,27,0,9],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68":[12,0,1,0,6,46,27,0,11],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68":[12,0,1,0,6,46,63,0,11],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b":[12,0,1,0,6,46,63,0,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX139 =
 "navstik__1_80_8h.html#aa8cec6176c74ddb15142542d304aa6a7":[12,0,1,0,1,50,138],
 "navstik__1_80_8h.html#aab670f5e43a2f39e063fe8280dad4c5d":[12,0,1,0,1,50,130],
 "navstik__1_80_8h.html#aab83c950c69c702e02d7ff473e0c25a3":[12,0,1,0,1,50,137],
-"navstik__1_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf":[12,0,1,0,1,50,141],
-"navstik__1_80_8h.html#aaf986945a2a0714bfcf464fd344d8708":[12,0,1,0,1,50,35],
-"navstik__1_80_8h.html#ab68f28871d18c17e7e70ae63277d37c2":[12,0,1,0,1,50,2],
-"navstik__1_80_8h.html#ab8668b847469a8d3041eb77d7f1e5a78":[12,0,1,0,1,50,94],
-"navstik__1_80_8h.html#abb1d7a26f33f3c611234e22199d24209":[12,0,1,0,1,50,32]
+"navstik__1_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf":[12,0,1,0,1,50,141]
 };

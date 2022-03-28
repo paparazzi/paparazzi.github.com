@@ -1,5 +1,7 @@
 var NAVTREEINDEX85 =
 {
+"imu__mpu9250__spi_8h.html":[12,0,1,0,6,35,35],
+"imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380":[12,0,1,0,6,35,33,0,4],
 "imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380":[12,0,1,0,6,35,35,0,4],
 "imu__mpu9250__spi_8h.html#a2644576e539bd38bf5d323809e3fd737":[12,0,1,0,6,35,35,11],
 "imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,35,35,23],
@@ -23,8 +25,8 @@ var NAVTREEINDEX85 =
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,35,35,22],
 "imu__mpu9250__spi_8h.html#aa59c24839f4a36f23c98da339dea1224":[12,0,1,0,6,35,35,12],
 "imu__mpu9250__spi_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f":[12,0,1,0,6,35,35,14],
-"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,33,0,2],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,35,0,2],
+"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,33,0,2],
 "imu__mpu9250__spi_8h.html#ad08f71586fceaa57ea361681bb6543b7":[12,0,1,0,6,35,35,10],
 "imu__mpu9250__spi_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa":[12,0,1,0,6,35,35,7],
 "imu__mpu9250__spi_8h.html#ada91099469f16df2d8aeafa82d365c4b":[12,0,1,0,6,35,35,3],
@@ -35,8 +37,8 @@ var NAVTREEINDEX85 =
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,35,21],
 "imu__mpu9250__spi_8h.html#af57decce9e96b0726832a410273223f3":[12,0,1,0,6,35,35,16],
 "imu__mpu9250__spi_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e":[12,0,1,0,6,35,35,9],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,35,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,33,0],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,35,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,35,35],
 "imu__navstik_8c.html":[12,0,1,0,6,35,36],
 "imu__navstik_8c.html#a19ff9d9f362cbf94e37d4b360f13fd90":[12,0,1,0,6,35,36,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX85 =
 "imu__quality__assessment_8h.html#structimu__quality__assessment__data__struct":[12,0,1,0,6,5,5,0],
 "imu__quality__assessment_8h_source.html":[12,0,1,0,6,5,5],
 "imu__swing_8c.html":[12,0,1,0,6,35,47],
-"imu__swing_8c.html#a24fd514747c6288c8f3e7b3dc94dea12":[12,0,1,0,6,35,47,0],
-"imu__swing_8c.html#a5aac35a83517e6e9f0929e9a2a404bd3":[12,0,1,0,6,35,47,1],
-"imu__swing_8c.html#a8340b0a2ebbc971fa7f6267213505a67":[12,0,1,0,6,35,47,3]
+"imu__swing_8c.html#a24fd514747c6288c8f3e7b3dc94dea12":[12,0,1,0,6,35,47,0]
 };

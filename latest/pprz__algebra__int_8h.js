@@ -85,6 +85,7 @@ var pprz__algebra__int_8h =
     [ "INT_RATES_ZERO", "group__math__algebra__int.html#ga058767cf91a8a4624fe10a4d56ef4561", null ],
     [ "INT_VECT2_ZERO", "group__math__algebra__int.html#gab575093abc245f05ff77ce557a7760d6", null ],
     [ "INT_VECT3_ZERO", "group__math__algebra__int.html#ga90bb29d3030f1bba0535b9369ee0e462", null ],
+    [ "LBFP_OF_REAL", "group__math__algebra__int.html#gadbfc0b131c9491fa6b97162ed79657f1", null ],
     [ "MAG_BFP_OF_REAL", "group__math__algebra__int.html#ga7a246ed59b41685b79922379c91f5f08", null ],
     [ "MAG_FLOAT_OF_BFP", "group__math__algebra__int.html#gaeee9cfe0a5a7a8bdc1103e32b472e3c8", null ],
     [ "POS_BFP_OF_REAL", "group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522", null ],

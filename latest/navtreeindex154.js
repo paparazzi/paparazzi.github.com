@@ -1,5 +1,9 @@
 var NAVTREEINDEX154 =
 {
+"paparazzi_messages.html#BOOZ_NAV_STICK":[2,1,48],
+"paparazzi_messages.html#CALIBRATION":[2,0,13],
+"paparazzi_messages.html#CAM":[2,0,19],
+"paparazzi_messages.html#CAMERA_PAYLOAD":[2,0,108],
 "paparazzi_messages.html#CAMERA_PAYLOAD_DL":[2,1,31],
 "paparazzi_messages.html#CAMERA_SNAPSHOT":[2,0,125],
 "paparazzi_messages.html#CAMERA_SNAPSHOT_DL":[2,1,32],
@@ -245,9 +249,5 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137],
 "paparazzi_messages.html#STAB_ATTITUDE_REF_INT":[2,0,136],
 "paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,208],
-"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9],
-"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
-"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11],
-"paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10],
-"paparazzi_messages.html#STEREO_IMG":[2,0,205]
+"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9]
 };

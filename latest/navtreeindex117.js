@@ -1,5 +1,9 @@
 var NAVTREEINDEX117 =
 {
+"module__actuators_md25.html#module_xml__actuators_md25":[1,10,2,0],
+"module__actuators_nps.html":[1,11],
+"module__actuators_nps.html#module_load_example__actuators_nps":[1,11,0],
+"module__actuators_nps.html#module_xml__actuators_nps":[1,11,0,0],
 "module__actuators_ostrich.html":[1,12],
 "module__actuators_ostrich.html#configuration__actuators_ostrich":[1,12,1],
 "module__actuators_ostrich.html#functions__actuators_ostrich":[1,12,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX117 =
 "module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,367,2,0],
 "module__baro_ms5611_spi.html":[1,368],
 "module__baro_ms5611_spi.html#configuration__baro_ms5611_spi":[1,368,1],
-"module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,368,2],
-"module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,368,0],
-"module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,368,2,0],
-"module__baro_scp_i2c.html":[1,369],
-"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,369,1]
+"module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,368,2]
 };

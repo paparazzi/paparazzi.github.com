@@ -1,5 +1,9 @@
 var NAVTREEINDEX155 =
 {
+"paparazzi_messages.html#STEREOCAM_FOLLOW_ME":[2,4,12],
+"paparazzi_messages.html#STEREOCAM_STATE":[2,4,11],
+"paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10],
+"paparazzi_messages.html#STEREO_IMG":[2,0,205],
 "paparazzi_messages.html#SUPERBITRF":[2,0,71],
 "paparazzi_messages.html#SURVEY":[2,0,26],
 "paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
@@ -245,9 +249,5 @@ var NAVTREEINDEX155 =
 "photogrammetry__calculator_8c.html#abe157c044730cb245a92dc027923d61b":[12,0,1,0,6,9,0,16],
 "photogrammetry__calculator_8c.html#abe91731e2c0ee18a0c1a8d915283b249":[12,0,1,0,6,9,0,2],
 "photogrammetry__calculator_8c.html#ac2994a385abc1ac526b1d8e015e9bb96":[12,0,1,0,6,9,0,13],
-"photogrammetry__calculator_8c.html#acb860b8d55c0af9b2536f35bace9ecf4":[12,0,1,0,6,9,0,10],
-"photogrammetry__calculator_8c_source.html":[12,0,1,0,6,9,0],
-"photogrammetry__calculator_8h.html":[12,0,1,0,6,9,1],
-"photogrammetry__calculator_8h.html#a03d0582dacb6e6dc77f266530c9c3682":[12,0,1,0,6,9,1,12],
-"photogrammetry__calculator_8h.html#a1563ec1607658035e6d7f20329025854":[12,0,1,0,6,9,1,4]
+"photogrammetry__calculator_8c.html#acb860b8d55c0af9b2536f35bace9ecf4":[12,0,1,0,6,9,0,10]
 };
