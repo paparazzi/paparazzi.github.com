@@ -64,7 +64,9 @@ var onboard_modules =
     ] ],
     [ "actuators_bebop module", "module__actuators_bebop.html", [
       [ "Example for airframe file", "module__actuators_bebop.html#module_load_example__actuators_bebop", null ],
-      [ "Module configuration options", "module__actuators_bebop.html#configuration__actuators_bebop", null ],
+      [ "Module configuration options", "module__actuators_bebop.html#configuration__actuators_bebop", [
+        [ "Configure Options", "module__actuators_bebop.html#configure", null ]
+      ] ],
       [ "Auto-loaded modules", "module__actuators_bebop.html#autoloads__actuators_bebop", [
         [ "Raw actuators_bebop.xml file:", "module__actuators_bebop.html#module_xml__actuators_bebop", null ]
       ] ]
@@ -384,7 +386,9 @@ var onboard_modules =
     ] ],
     [ "bebop_ae_awb module", "module__bebop_ae_awb.html", [
       [ "Example for airframe file", "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb", null ],
-      [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", null ],
+      [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", [
+        [ "Airframe file section", "module__bebop_ae_awb.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__bebop_ae_awb.html#functions__bebop_ae_awb", [
         [ "Raw bebop_ae_awb.xml file:", "module__bebop_ae_awb.html#module_xml__bebop_ae_awb", null ]
       ] ]
@@ -1188,13 +1192,13 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
@@ -1289,9 +1293,7 @@ var onboard_modules =
     ] ],
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
-      [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
-        [ "Airframe file section", "module__imu_lisa_m_v2_1.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", null ],
       [ "Auto-loaded modules", "module__imu_lisa_m_v2_1.html#autoloads__imu_lisa_m_v2_1", [
         [ ".1 Raw imu_lisa_m_v2.1.xml file:", "module__imu_lisa_m_v2_1.html#module_xml__imu_lisa_m_v2", null ]
       ] ]
@@ -1368,6 +1370,7 @@ var onboard_modules =
     [ "imu_nps module", "module__imu_nps.html", [
       [ "Example for airframe file", "module__imu_nps.html#module_load_example__imu_nps", null ],
       [ "Module functions", "module__imu_nps.html#functions__imu_nps", [
+        [ "Event Functions", "module__imu_nps.html#event_functions", null ],
         [ "Raw imu_nps.xml file:", "module__imu_nps.html#module_xml__imu_nps", null ]
       ] ]
     ] ],
@@ -1469,8 +1472,15 @@ var onboard_modules =
     ] ],
     [ "ins_alt_float module", "module__ins_alt_float.html", [
       [ "Example for airframe file", "module__ins_alt_float.html#module_load_example__ins_alt_float", null ],
-      [ "Module configuration options", "module__ins_alt_float.html#configuration__ins_alt_float", null ],
+      [ "Module configuration options", "module__ins_alt_float.html#configuration__ins_alt_float", [
+        [ "Define Options", "module__ins_alt_float.html#define", null ]
+      ] ],
       [ "Module functions", "module__ins_alt_float.html#functions__ins_alt_float", [
+        [ "Init Functions", "module__ins_alt_float.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__ins_alt_float.html#files", [
+        [ "Header Files", "module__ins_alt_float.html#headers", null ],
+        [ "Source Files", "module__ins_alt_float.html#sources", null ],
         [ "Raw ins_alt_float.xml file:", "module__ins_alt_float.html#module_xml__ins_alt_float", null ]
       ] ]
     ] ],
@@ -2267,11 +2277,8 @@ var onboard_modules =
     ] ],
     [ "radio_control_ppm module", "module__radio_control_ppm.html", [
       [ "Example for airframe file", "module__radio_control_ppm.html#module_load_example__radio_control_ppm", null ],
-      [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", [
-        [ "Configure Options", "module__radio_control_ppm.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", null ],
       [ "Module functions", "module__radio_control_ppm.html#functions__radio_control_ppm", [
-        [ "Event Functions", "module__radio_control_ppm.html#event_functions", null ],
         [ "Raw radio_control_ppm.xml file:", "module__radio_control_ppm.html#module_xml__radio_control_ppm", null ]
       ] ]
     ] ],
@@ -2340,9 +2347,7 @@ var onboard_modules =
     ] ],
     [ "airspeed_adc module", "module__airspeed_adc.html", [
       [ "Example for airframe file", "module__airspeed_adc.html#module_load_example__airspeed_adc", null ],
-      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", [
-        [ "Define Options", "module__airspeed_adc.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__airspeed_adc.html#configuration__airspeed_adc", null ],
       [ "Module functions", "module__airspeed_adc.html#functions__airspeed_adc", [
         [ "Raw airspeed_adc.xml file:", "module__airspeed_adc.html#module_xml__airspeed_adc", null ]
       ] ]
@@ -2922,12 +2927,6 @@ var onboard_modules =
     [ "gumstix_qr_code_spi_link module", "module__gumstix_qr_code_spi_link.html", [
       [ "Example for airframe file", "module__gumstix_qr_code_spi_link.html#module_load_example__gumstix_qr_code_spi_link", null ],
       [ "Module functions", "module__gumstix_qr_code_spi_link.html#functions__gumstix_qr_code_spi_link", [
-        [ "Init Functions", "module__gumstix_qr_code_spi_link.html#init_functions", null ],
-        [ "Periodic Functions", "module__gumstix_qr_code_spi_link.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__gumstix_qr_code_spi_link.html#files", [
-        [ "Header Files", "module__gumstix_qr_code_spi_link.html#headers", null ],
-        [ "Source Files", "module__gumstix_qr_code_spi_link.html#sources", null ],
         [ "Raw gumstix_qr_code_spi_link.xml file:", "module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link", null ]
       ] ]
     ] ],
@@ -3045,6 +3044,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__px4_gimbal.html#module_load_example__px4_gimbal", null ],
       [ "Module configuration options", "module__px4_gimbal.html#configuration__px4_gimbal", null ],
       [ "Module functions", "module__px4_gimbal.html#functions__px4_gimbal", [
+        [ "Periodic Functions", "module__px4_gimbal.html#periodic_functions", null ],
         [ "Raw px4_gimbal.xml file:", "module__px4_gimbal.html#module_xml__px4_gimbal", null ]
       ] ]
     ] ],

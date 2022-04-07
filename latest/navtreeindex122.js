@@ -1,5 +1,6 @@
 var NAVTREEINDEX122 =
 {
+"module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c":[1,233,2],
 "module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,233,0],
 "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c":[1,233,2,0],
 "module__light.html":[1,235],
@@ -248,6 +249,5 @@ var NAVTREEINDEX122 =
 "module__nav_survey_poly_osam.html":[1,318],
 "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,318,1],
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,318,0],
-"module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,318,1,0],
-"module__nav_survey_poly_rotorcraft.html":[1,319]
+"module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,318,1,0]
 };
