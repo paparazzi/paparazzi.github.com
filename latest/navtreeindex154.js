@@ -1,5 +1,8 @@
 var NAVTREEINDEX154 =
 {
+"paparazzi_messages.html#BLUEGIGA":[2,0,103],
+"paparazzi_messages.html#BMP_STATUS":[2,0,82],
+"paparazzi_messages.html#BOOZ2_FMS_COMMAND":[2,1,47],
 "paparazzi_messages.html#BOOZ_NAV_STICK":[2,1,48],
 "paparazzi_messages.html#CALIBRATION":[2,0,13],
 "paparazzi_messages.html#CAM":[2,0,19],
@@ -52,6 +55,8 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#ESTIMATOR":[2,0,41],
 "paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,49],
 "paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,52],
+"paparazzi_messages.html#EXTERNAL_POSE":[2,1,38],
+"paparazzi_messages.html#EXTERNAL_POSE_SMALL":[2,1,39],
 "paparazzi_messages.html#FBW_STATUS":[2,0,100],
 "paparazzi_messages.html#FILTER":[2,0,131],
 "paparazzi_messages.html#FILTER_ALIGNER":[2,0,133],
@@ -209,9 +214,7 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#RC_3CH_":[2,0,50],
 "paparazzi_messages.html#RC_4CH":[2,1,36],
 "paparazzi_messages.html#RC_5CH":[2,1,37],
-"paparazzi_messages.html#REMOTE_GPS":[2,1,39],
 "paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,40],
-"paparazzi_messages.html#REMOTE_GPS_SMALL":[2,1,38],
 "paparazzi_messages.html#RLFILTER":[2,0,47],
 "paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,162],
 "paparazzi_messages.html#ROTORCRAFT_CAM_STICK":[2,1,50],
@@ -246,8 +249,5 @@ var NAVTREEINDEX154 =
 "paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,127],
 "paparazzi_messages.html#STAB_ATTITUDE_INDI":[2,0,192],
 "paparazzi_messages.html#STAB_ATTITUDE_INT":[2,0,135],
-"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137],
-"paparazzi_messages.html#STAB_ATTITUDE_REF_INT":[2,0,136],
-"paparazzi_messages.html#STATE_FILTER_STATUS":[2,0,208],
-"paparazzi_messages.html#STEREOCAM_ARRAY":[2,4,9]
+"paparazzi_messages.html#STAB_ATTITUDE_REF_FLOAT":[2,0,137]
 };

@@ -2146,7 +2146,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="state_8h_source.html#l00457">457</a> of file <a class="el" href="state_8h_source.html">state.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00495">ins_ekf2_update()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00219">ins_float_invariant_init()</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00140">ins_gps_passthrough_init()</a>, <a class="el" href="ins_8c_source.html#l00039">ins_init_origin_i_from_flightplan()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00299">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00282">ins_reset_local_origin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00577">ins_ekf2_update()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00219">ins_float_invariant_init()</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00140">ins_gps_passthrough_init()</a>, <a class="el" href="ins_8c_source.html#l00039">ins_init_origin_i_from_flightplan()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00299">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00282">ins_reset_local_origin()</a>.</p>
 <div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-38-summary" class="dynsummary" style="display:block;">
@@ -2154,18 +2154,19 @@ Variables</h2></td></tr>
 <div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__state__position_gacc086fcd500269371c8c6eabbf3d557e_icgraph.png" border="0" usemap="#group__state__position_gacc086fcd500269371c8c6eabbf3d557e_icgraph" alt=""/></div>
 <map name="group__state__position_gacc086fcd500269371c8c6eabbf3d557e_icgraph" id="group__state__position_gacc086fcd500269371c8c6eabbf3d557e_icgraph">
-<area shape="rect" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="495,165,655,192"/>
-<area shape="rect" href="ins__ekf2_8h.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="278,5,407,32"/>
-<area shape="rect" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title=" " alt="" coords="257,56,428,83"/>
-<area shape="rect" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="249,107,436,133"/>
-<area shape="rect" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="261,158,424,199"/>
-<area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,224,447,251"/>
-<area shape="rect" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86" title="INS altitude reference reset." alt="" coords="261,275,424,301"/>
-<area shape="rect" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset." alt="" coords="261,325,424,352"/>
-<area shape="rect" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="27,49,169,90"/>
-<area shape="rect" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="51,115,145,141"/>
-<area shape="rect" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="5,165,191,192"/>
-<area shape="rect" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct." alt="" coords="27,216,169,243"/>
+<area shape="rect" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="495,187,655,213"/>
+<area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="290,5,395,32"/>
+<area shape="rect" href="ins__ekf2_8h.html#a21a6903ad1b06c310ac73f7598d4306b" title=" " alt="" coords="278,56,407,83"/>
+<area shape="rect" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title=" " alt="" coords="257,107,428,133"/>
+<area shape="rect" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title=" " alt="" coords="249,157,436,184"/>
+<area shape="rect" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76" title="initialize the local origin (ltp_def in fixed point) from flight plan position" alt="" coords="261,209,424,250"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,275,447,301"/>
+<area shape="rect" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86" title="INS altitude reference reset." alt="" coords="261,325,424,352"/>
+<area shape="rect" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset." alt="" coords="261,376,424,403"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="27,99,169,141"/>
+<area shape="rect" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="51,165,145,192"/>
+<area shape="rect" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="5,216,191,243"/>
+<area shape="rect" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct." alt="" coords="27,267,169,293"/>
 </map>
 </div>
 
@@ -2584,7 +2585,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="state_8h_source.html#l00243">State::ned_pos_f</a>, <a class="el" href="state_8h_source.html#l00073">POS_NED_F</a>, <a class="el" href="state_8h_source.html#l00144">State::pos_status</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00495">ins_ekf2_update()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00343">ins_float_invariant_propagate()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00526">set_state_from_ins()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00247">sim_overwrite_ins()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00577">ins_ekf2_update()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00343">ins_float_invariant_propagate()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00526">set_state_from_ins()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00247">sim_overwrite_ins()</a>.</p>
 <div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-41-summary" class="dynsummary" style="display:block;">
@@ -3080,7 +3081,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 7 2022 17:03:21 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Apr 12 2022 09:13:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

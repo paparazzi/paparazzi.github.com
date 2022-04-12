@@ -1,5 +1,8 @@
 var NAVTREEINDEX143 =
 {
+"nps__sensor__airspeed_8h.html#a7207f935316d9db8a10a26697a701ecf":[12,0,1,1,1,34,1],
+"nps__sensor__airspeed_8h.html#a7ea8fb956ea4cec723729964031915d5":[12,0,1,1,1,34,2],
+"nps__sensor__airspeed_8h.html#structNpsSensorAirspeed":[12,0,1,1,1,34,0],
 "nps__sensor__airspeed_8h_source.html":[12,0,1,1,1,34],
 "nps__sensor__aoa_8c.html":[12,0,1,1,1,35],
 "nps__sensor__aoa_8c.html#a2faff1ee09f26cd702c72210b4141ea5":[12,0,1,1,1,35,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX143 =
 "nucleo144__f767zi_8h.html#a3527010cfbb35e98ab1bba9ded57da14":[12,0,1,0,1,18,0,3,106],
 "nucleo144__f767zi_8h.html#a362880424997bf76d4e742c8c8504014":[12,0,1,0,1,18,0,3,167],
 "nucleo144__f767zi_8h.html#a37154c806d85fb9f9158f86bb55e9ee0":[12,0,1,0,1,18,0,3,48],
-"nucleo144__f767zi_8h.html#a37b90735817fa4a1171bc23bb538eb67":[12,0,1,0,1,18,0,3,186],
-"nucleo144__f767zi_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737":[12,0,1,0,1,18,0,3,207],
-"nucleo144__f767zi_8h.html#a3eca81ff4917508b17002a96844e0904":[12,0,1,0,1,18,0,3,136],
-"nucleo144__f767zi_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,18,0,3,195]
+"nucleo144__f767zi_8h.html#a37b90735817fa4a1171bc23bb538eb67":[12,0,1,0,1,18,0,3,186]
 };

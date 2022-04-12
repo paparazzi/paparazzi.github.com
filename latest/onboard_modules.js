@@ -938,7 +938,6 @@ var onboard_modules =
     ] ],
     [ "gps_datalink module", "module__gps_datalink.html", [
       [ "Example for airframe file", "module__gps_datalink.html#module_load_example__gps_datalink", null ],
-      [ "Module configuration options", "module__gps_datalink.html#configuration__gps_datalink", null ],
       [ "Auto-loaded modules", "module__gps_datalink.html#autoloads__gps_datalink", null ],
       [ "Module functions", "module__gps_datalink.html#functions__gps_datalink", null ],
       [ "Datalink Functions", "module__gps_datalink.html#datalink_functions__gps_datalink", [
@@ -1500,7 +1499,8 @@ var onboard_modules =
     [ "ins_ekf2 module", "module__ins_ekf2.html", [
       [ "Example for airframe file", "module__ins_ekf2.html#module_load_example__ins_ekf2", null ],
       [ "Module configuration options", "module__ins_ekf2.html#configuration__ins_ekf2", null ],
-      [ "Module functions", "module__ins_ekf2.html#functions__ins_ekf2", [
+      [ "Module functions", "module__ins_ekf2.html#functions__ins_ekf2", null ],
+      [ "Datalink Functions", "module__ins_ekf2.html#datalink_functions__ins_ekf2", [
         [ "Raw ins_ekf2.xml file:", "module__ins_ekf2.html#module_xml__ins_ekf2", null ]
       ] ]
     ] ],

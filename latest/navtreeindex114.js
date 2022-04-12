@@ -1,5 +1,8 @@
 var NAVTREEINDEX114 =
 {
+"max1168_8c.html#a957376acfc8fbd7b917f20a18e6c5a6c":[12,0,1,0,7,78,0],
+"max1168_8c.html#ad4a95f70191d98f708ccddec03c79abd":[12,0,1,0,7,78,5],
+"max1168_8c.html#adad993f2bbd2ca52aea0b0f97931863a":[12,0,1,0,7,78,3],
 "max1168_8c.html#aff870d25144f1b71cb4d7f558c21bd9d":[12,0,1,0,7,78,8],
 "max1168_8c_source.html":[12,0,1,0,7,78],
 "max1168_8h.html":[12,0,1,0,7,79],
@@ -104,8 +107,8 @@ var NAVTREEINDEX114 =
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,19,0,0,2],
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
 "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,19,0,15],
-"max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,19,0,1],
+"max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,19,0,0],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,8,6,0],
 "max7456_8c_source.html":[12,0,1,0,6,19,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX114 =
 "median__filter_8h.html#ac2d1df417cffe3a92ae5ab588c09e9cf":[12,0,1,0,2,6,25],
 "median__filter_8h.html#ac56f32eac42c0b05ac22862377de1b0a":[12,0,1,0,2,6,0,0],
 "median__filter_8h.html#acd05707df38c78d3a0c0a8b8d4e0058f":[12,0,1,0,2,6,21],
-"median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[12,0,1,0,2,6,20],
-"median__filter_8h.html#structMedianFilter3Float":[12,0,1,0,2,6,3],
-"median__filter_8h.html#structMedianFilter3Int":[12,0,1,0,2,6,1],
-"median__filter_8h.html#structMedianFilterFloat":[12,0,1,0,2,6,2]
+"median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[12,0,1,0,2,6,20]
 };

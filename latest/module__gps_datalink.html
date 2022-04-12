@@ -89,21 +89,11 @@ $(document).ready(function(){initNavTree('module__gps_datalink.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Remote GPS via datalink.</b></p>
-<p>Parses the REMOTE_GPS and REMOTE_GPS_SMALL datalink messages and publishes it onboard via ABI.</p>
+<p>Parses the EXTERNAL_POSE, EXTERNAL_POSE_SMALL and REMOTE_GPS_LOCAL datalink messages and publishes it as GPS onboard via ABI.</p>
 <h1><a class="anchor" id="module_load_example__gps_datalink"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_datalink&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;GPS_DATALINK_USE_MAG&quot; value=&quot;1&quot; /&gt;\n  &#39;</span></div>
-<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="configuration__gps_datalink"></a>
-Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>GPS_DATALINK_USE_MAG</code> <b>value:</b> <em>1</em> <br  />
- Description: Choose to receive also GPS extracted magnetometer messages</li>
-</ul>
-<h1><a class="anchor" id="autoloads__gps_datalink"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_datalink&quot;</span>/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="autoloads__gps_datalink"></a>
 Auto-loaded modules</h1>
 <p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
 <li><a class="el" href="module__gps_nps.html">gps_nps module</a></li>
@@ -132,8 +122,8 @@ Periodic Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>REMOTE_GPS</b> call gps_datalink_parse_REMOTE_GPS(buf)</li>
-<li>on message <b>REMOTE_GPS_SMALL</b> call gps_datalink_parse_REMOTE_GPS_SMALL(buf)</li>
+<li>on message <b>EXTERNAL_POSE</b> call gps_datalink_parse_EXTERNAL_POSE(buf)</li>
+<li>on message <b>EXTERNAL_POSE_SMALL</b> call gps_datalink_parse_EXTERNAL_POSE_SMALL(buf)</li>
 <li>on message <b>REMOTE_GPS_LOCAL</b> call gps_datalink_parse_REMOTE_GPS_LOCAL(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
@@ -157,9 +147,8 @@ Raw gps_datalink.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Remote</span> <span class="keyword">GPS</span> <span class="keyword">via</span> <span class="keyword">datalink.</span></div>
-<div class="line">      <span class="keyword">Parses</span> <span class="keyword">the</span> <span class="keyword">REMOTE_GPS</span> <span class="keyword">and</span> <span class="keyword">REMOTE_GPS_SMALL</span> <span class="keyword">datalink</span> <span class="keyword">messages</span> <span class="keyword">and</span> <span class="keyword">publishes</span> <span class="keyword">it</span> <span class="keyword">onboard</span> <span class="keyword">via</span> <span class="keyword">ABI.</span></div>
+<div class="line">      <span class="keyword">Parses</span> <span class="keyword">the</span> <span class="keyword">EXTERNAL_POSE</span>, <span class="keyword">EXTERNAL_POSE_SMALL</span> <span class="keyword">and</span> <span class="keyword">REMOTE_GPS_LOCAL</span> <span class="keyword">datalink</span> <span class="keyword">messages</span> <span class="keyword">and</span> <span class="keyword">publishes</span> <span class="keyword">it</span> <span class="keyword">as</span> <span class="keyword">GPS</span> <span class="keyword">onboard</span> <span class="keyword">via</span> <span class="keyword">ABI.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_DATALINK_USE_MAG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Choose to receive also GPS extracted magnetometer messages&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">gps</span>,@<span class="keyword">datalink</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -172,8 +161,8 @@ Raw gps_datalink.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_periodic_check()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;REMOTE_GPS&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_parse_REMOTE_GPS(buf)&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;REMOTE_GPS_SMALL&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_parse_REMOTE_GPS_SMALL(buf)&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;EXTERNAL_POSE&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_parse_EXTERNAL_POSE(buf)&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;EXTERNAL_POSE_SMALL&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_parse_EXTERNAL_POSE_SMALL(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;REMOTE_GPS_LOCAL&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;gps_datalink_parse_REMOTE_GPS_LOCAL(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_datalink.c&quot;</span>/&gt;</div>
@@ -208,7 +197,7 @@ Raw gps_datalink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Apr 7 2022 17:03:20 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Apr 12 2022 09:13:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

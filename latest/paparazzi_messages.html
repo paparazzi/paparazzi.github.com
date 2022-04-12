@@ -361,8 +361,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#RC_3CH">RC_3CH (ID 51)</a></li>
 <li class="level2"><a href="#RC_4CH">RC_4CH (ID 52)</a></li>
 <li class="level2"><a href="#RC_5CH">RC_5CH (ID 53)</a></li>
-<li class="level2"><a href="#REMOTE_GPS_SMALL">REMOTE_GPS_SMALL (ID 54)</a></li>
-<li class="level2"><a href="#REMOTE_GPS">REMOTE_GPS (ID 55)</a></li>
+<li class="level2"><a href="#EXTERNAL_POSE">EXTERNAL_POSE (ID 54)</a></li>
+<li class="level2"><a href="#EXTERNAL_POSE_SMALL">EXTERNAL_POSE_SMALL (ID 55)</a></li>
 <li class="level2"><a href="#REMOTE_GPS_LOCAL">REMOTE_GPS_LOCAL (ID 56)</a></li>
 <li class="level2"><a href="#TARGET_POS">TARGET_POS (ID 57)</a></li>
 <li class="level2"><a href="#SMARTPROBE">SMARTPROBE (ID 60)</a></li>
@@ -5299,55 +5299,53 @@ RC_5CH (ID 53)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">kill </td><td class="markdownTableBodyNone">int8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="REMOTE_GPS_SMALL"></a>
-REMOTE_GPS_SMALL (ID 54)</h2>
+<h2><a class="anchor" id="EXTERNAL_POSE"></a>
+EXTERNAL_POSE (ID 54)</h2>
+<p>Position, speed and orientation in local frame from a remote vision system</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name </th><th class="markdownTableHeadNone">Type </th><th class="markdownTableHeadNone">Unit/Values </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">heading </td><td class="markdownTableBodyNone">int16 </td><td class="markdownTableBodyNone">1e4rad </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">ac_id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">AC id for which the data is meant  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pos_xyz </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bits 31-21 east position [cm] : bits 20-10 north position [cm] : bits 9-0 up position [cm]  </td></tr>
+<td class="markdownTableBodyNone">timestamp </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone">ms </td><td class="markdownTableBodyNone">Timestamp from the measurement  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">speed_xyz </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bits 31-21 east speed [cm/s] : bits 20-10 north speed [cm/s] : bits 9-0 climb speed [cm/s]  </td></tr>
+<td class="markdownTableBodyNone">enu_x </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m </td><td class="markdownTableBodyNone">ENU x position in vision frame  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">tow </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone">ms </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">enu_y </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m </td><td class="markdownTableBodyNone">ENU y position in vision frame  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">enu_z </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m </td><td class="markdownTableBodyNone">ENU z position in vision frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">enu_xd </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m/s </td><td class="markdownTableBodyNone">ENU x speed in vision frame  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enu_yd </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m/s </td><td class="markdownTableBodyNone">ENU y speed in vision frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">enu_zd </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">m/s </td><td class="markdownTableBodyNone">ENU z speed in vision frame  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">body_qi </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion i in vision frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">body_qx </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion x in vision frame  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">body_qy </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion y in vision frame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">body_qz </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion z in vision frame  </td></tr>
 </table>
-<h2><a class="anchor" id="REMOTE_GPS"></a>
-REMOTE_GPS (ID 55)</h2>
+<h2><a class="anchor" id="EXTERNAL_POSE_SMALL"></a>
+EXTERNAL_POSE_SMALL (ID 55)</h2>
+<p>Position, speed and orientation in local frame from a remote vision system Smaller message where position, speed is in cm multiplied by a resolution</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name </th><th class="markdownTableHeadNone">Type </th><th class="markdownTableHeadNone">Unit/Values </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">ac_id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">AC id for which the data is meant  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">numsv </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">timestamp </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone">ms </td><td class="markdownTableBodyNone">Timestamp from the measurement  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ecef_x </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">enu_pos </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ENU position in vision frame(bits 31-21 east position [cm*pos_res] : bits 20-10 north position [cm*pos_res] : bits 9-0 up position [cm*pos_res])  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ecef_y </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">enu_speed </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">ENU speed in vision frame(bits 31-21 east position [cm*pos_res] : bits 20-10 north position [cm*pos_res] : bits 9-0 up position [cm*pos_res])  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ecef_z </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">lat </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">1e7deg </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">lon </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">1e7deg </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">alt </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">mm </td><td class="markdownTableBodyNone">Height above WGS84 reference ellipsoid  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">hmsl </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">mm </td><td class="markdownTableBodyNone">Height above Mean Sea Level (geoid)  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ecef_xd </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm/s </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ecef_yd </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm/s </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ecef_zd </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">cm/s </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">tow </td><td class="markdownTableBodyNone">uint32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">course </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">heading </td><td class="markdownTableBodyNone">int16 </td><td class="markdownTableBodyNone">1e4rad </td><td class="markdownTableBodyNone">Heading in ENU vision frame  </td></tr>
 </table>
 <h2><a class="anchor" id="REMOTE_GPS_LOCAL"></a>
 REMOTE_GPS_LOCAL (ID 56)</h2>
@@ -6558,7 +6556,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 7 2022 17:03:20 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Apr 12 2022 09:13:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"imu__krooz__memsic_8h.html#a6f808c71190e714287442af3bb7008b3":[12,0,1,0,1,8,4,21],
-"imu__krooz__memsic_8h.html#a7d216292243e16d97aa6e312c37d0ad7":[12,0,1,0,1,8,2,0,2],
 "imu__krooz__memsic_8h.html#a7d216292243e16d97aa6e312c37d0ad7":[12,0,1,0,1,8,4,0,2],
 "imu__krooz__memsic_8h.html#a840d348ffacf8d58da9c0fe83d3ceaa7":[12,0,1,0,1,8,2,0,10],
 "imu__krooz__memsic_8h.html#a840d348ffacf8d58da9c0fe83d3ceaa7":[12,0,1,0,1,8,4,0,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX84 =
 "imu__mpu9250__spi_8c.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,34,19],
 "imu__mpu9250__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,6,35,34,11],
 "imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,34,13],
-"imu__mpu9250__spi_8c_source.html":[12,0,1,0,6,35,34]
+"imu__mpu9250__spi_8c_source.html":[12,0,1,0,6,35,34],
+"imu__mpu9250__spi_8h.html":[12,0,1,0,6,35,35],
+"imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380":[12,0,1,0,6,35,33,0,4]
 };
