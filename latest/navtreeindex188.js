@@ -247,7 +247,7 @@ var NAVTREEINDEX188 =
 "tawaki_2chibios_2common_2board_8c.html#a42fcbc96f89a43f6d85f684478277f94":[12,0,1,0,1,18,0,0,0,3],
 "tawaki_2chibios_2common_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae":[12,0,1,0,1,23,0,0,0,3],
 "tawaki_2chibios_2common_2board_8c.html#a551c9306f64635b52d9827b1065a11c1":[12,0,1,0,1,23,0,0,0,5],
-"tawaki_2chibios_2common_2board_8c.html#a55a945fac971487c65b9ff9456d49076":[12,0,1,0,1,21,0,2,0,0,1],
 "tawaki_2chibios_2common_2board_8c.html#a55a945fac971487c65b9ff9456d49076":[12,0,1,0,1,12,0,0,0,0,1],
-"tawaki_2chibios_2common_2board_8c.html#a55a945fac971487c65b9ff9456d49076":[12,0,1,0,1,3,0,0,0,0,1]
+"tawaki_2chibios_2common_2board_8c.html#a55a945fac971487c65b9ff9456d49076":[12,0,1,0,1,3,0,0,0,0,1],
+"tawaki_2chibios_2common_2board_8c.html#a55a945fac971487c65b9ff9456d49076":[12,0,1,0,1,7,0,0,0,1]
 };
