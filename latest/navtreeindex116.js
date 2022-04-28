@@ -231,7 +231,6 @@ var NAVTREEINDEX116 =
 "module__actuators_bebop.html":[1,4],
 "module__actuators_bebop.html#autoloads__actuators_bebop":[1,4,2],
 "module__actuators_bebop.html#configuration__actuators_bebop":[1,4,1],
-"module__actuators_bebop.html#configure":[1,4,1,0],
 "module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
 "module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,2,0],
 "module__actuators_disco.html":[1,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX116 =
 "module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
 "module__actuators_esc32.html":[1,9],
 "module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
-"module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0]
+"module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
+"module__actuators_md25.html":[1,10]
 };

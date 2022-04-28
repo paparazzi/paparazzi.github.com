@@ -1,5 +1,6 @@
 var NAVTREEINDEX123 =
 {
+"module__nav_survey_poly_osam.html":[1,318],
 "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,318,1],
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,318,0],
 "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,318,1,0],
@@ -126,8 +127,7 @@ var NAVTREEINDEX123 =
 "module__px4_gimbal.html#configuration__px4_gimbal":[1,451,1],
 "module__px4_gimbal.html#functions__px4_gimbal":[1,451,2],
 "module__px4_gimbal.html#module_load_example__px4_gimbal":[1,451,0],
-"module__px4_gimbal.html#module_xml__px4_gimbal":[1,451,2,1],
-"module__px4_gimbal.html#periodic_functions":[1,451,2,0],
+"module__px4_gimbal.html#module_xml__px4_gimbal":[1,451,2,0],
 "module__px4flow.html":[1,329],
 "module__px4flow.html#configuration__px4flow":[1,329,1],
 "module__px4flow.html#functions__px4flow":[1,329,2],

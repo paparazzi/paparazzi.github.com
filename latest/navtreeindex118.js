@@ -1,6 +1,5 @@
 var NAVTREEINDEX118 =
 {
-"module__baro_ms5611_spi.html":[1,368],
 "module__baro_ms5611_spi.html#configuration__baro_ms5611_spi":[1,368,1],
 "module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,368,2],
 "module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,368,0],
@@ -29,7 +28,6 @@ var NAVTREEINDEX118 =
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,21,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,21,2,0],
 "module__bebop_ae_awb.html":[1,54],
-"module__bebop_ae_awb.html#af_section":[1,54,1,0],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,54,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,54,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,54,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX118 =
 "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc":[1,124,0],
 "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc":[1,124,2,0],
 "module__digital_cam_uart.html":[1,125],
-"module__digital_cam_uart.html#configuration__digital_cam_uart":[1,125,1]
+"module__digital_cam_uart.html#configuration__digital_cam_uart":[1,125,1],
+"module__digital_cam_uart.html#functions__digital_cam_uart":[1,125,2],
+"module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,125,0]
 };

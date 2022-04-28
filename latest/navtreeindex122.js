@@ -1,5 +1,6 @@
 var NAVTREEINDEX122 =
 {
+"module__lidar_tfmini.html#module_load_example__lidar_tfmini":[1,232,0],
 "module__lidar_tfmini.html#module_xml__lidar_tfmini":[1,232,2,0],
 "module__lidar_tfmini_i2c.html":[1,233],
 "module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c":[1,233,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX122 =
 "module__nav_spiral_3d.html#module_xml__nav_spiral_3d":[1,316,2,0],
 "module__nav_survey_disc.html":[1,317],
 "module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,317,0],
-"module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,317,0,0],
-"module__nav_survey_poly_osam.html":[1,318]
+"module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,317,0,0]
 };
