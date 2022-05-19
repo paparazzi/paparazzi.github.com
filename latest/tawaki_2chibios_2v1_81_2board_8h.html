@@ -98,8 +98,9 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v1_81_2board_8h.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tawaki_2chibios_2v1_81_2board_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2tawaki_2chibios_2v1_81_2board_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2tawaki_2chibios_2v1_81_2board_8hdep" id="sw_2airborne_2boards_2tawaki_2chibios_2v1_81_2board_8hdep">
-<area shape="rect" title=" " alt="" coords="20,5,172,61"/>
-<area shape="rect" href="tawaki_8h.html" title=" " alt="" coords="5,109,187,165"/>
+<area shape="rect" title=" " alt="" coords="122,5,274,61"/>
+<area shape="rect" href="common__board_8h.html" title="Generic board file." alt="" coords="5,117,185,158"/>
+<area shape="rect" href="tawaki_8h.html" title=" " alt="" coords="210,109,391,165"/>
 </map>
 </div>
 </div>
@@ -1173,6 +1174,18 @@ Macros</h2></td></tr>
 <tr class="separator:a19b050efdd652139f885cd6e8d4f8307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af68affc97f50aec5d61affa81f9a138f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#af68affc97f50aec5d61affa81f9a138f">SRVA4_TIM_AF</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:af68affc97f50aec5d61affa81f9a138f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddc843efed03effa9394c3892a74eec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#aaddc843efed03effa9394c3892a74eec">BOARD_GROUP_DECLFOREACH</a>(line,  group)</td></tr>
+<tr class="separator:aaddc843efed03effa9394c3892a74eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b">BOARD_GROUP_FOREACH</a>(line,  group)&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td></tr>
+<tr class="separator:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a275ff975b3c7f07a2009a32629e33e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e">BOARD_GROUP_DECLFOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)</td></tr>
+<tr class="separator:a8a275ff975b3c7f07a2009a32629e33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13">BOARD_GROUP_FOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td></tr>
+<tr class="separator:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b9cbda86163e55e01772d767403b8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a33b9cbda86163e55e01772d767403b8c">ENERGY_SAVE_INPUT</a></td></tr>
+<tr class="separator:a33b9cbda86163e55e01772d767403b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d">ENERGY_SAVE_INPUT_SIZE</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -3757,6 +3770,142 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a275ff975b3c7f07a2009a32629e33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a275ff975b3c7f07a2009a32629e33e">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group};    \</div>
+<div class="line">  for (ioline_t index=0, *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01672">1672</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaddc843efed03effa9394c3892a74eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddc843efed03effa9394c3892a74eec">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group}; \</div>
+<div class="line">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01664">1664</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="af7e7af7d45a9305435eac0c7cbebcf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e7af7d45a9305435eac0c7cbebcf13">&#9670;&nbsp;</a></span>BOARD_GROUP_FOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01676">1676</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a29f57021ab9e2b17f34ea5a58947a83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f57021ab9e2b17f34ea5a58947a83b">&#9670;&nbsp;</a></span>BOARD_GROUP_FOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01668">1668</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
 <a id="a02581754b212d533d96cde56c8145c9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02581754b212d533d96cde56c8145c9b">&#9670;&nbsp;</a></span>BOARD_NAME</h2>
 
@@ -3834,6 +3983,52 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00074">74</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a33b9cbda86163e55e01772d767403b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b9cbda86163e55e01772d767403b8c">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="tawaki_2chibios_2v1_81_2board_8h.html#aa89c7c29c81a950ebaf3c06572707fb7">LINE_AUX_A1</a>, \</div>
+<div class="line">  LINE_AUX_A2, \</div>
+<div class="line">  LINE_AUX_A3, \</div>
+<div class="line">  LINE_AUX_A4, \</div>
+<div class="line">  LINE_AUX_B1, \</div>
+<div class="line">  LINE_AUX_B2, \</div>
+<div class="line">  LINE_LED2, \</div>
+<div class="line">  LINE_AUX_B3, \</div>
+<div class="line">  LINE_AUX_B4, \</div>
+<div class="line">  LINE_SPI2_EXTERNAL_CS, \</div>
+<div class="line">  LINE_LED3, \</div>
+<div class="line">  LINE_LED4, \</div>
+<div class="line">  LINE_LED1, \</div>
+<div class="line">  LINE_SPI4_INTERNAL_CS</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01679">1679</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf91e689e472afc97bbb7bff17ee7c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf91e689e472afc97bbb7bff17ee7c9d">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT_SIZE&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html#l01694">1694</a> of file <a class="el" href="tawaki_2chibios_2v1_81_2board_8h_source.html">board.h</a>.</p>
 
 </div>
 </div>
@@ -10857,20 +11052,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Board-specific initialization code. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00261">261</a> of file <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html">board.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="arch_2chibios_2board_8c_source.html#l00312">312</a> of file <a class="el" href="arch_2chibios_2board_8c_source.html">board.c</a>.</p>
+
+<p class="reference">References <a class="el" href="lia_2chibios_2v1_81_2board_8h_source.html#l00185">AFIO_MAPR_VAL</a>.</p>
 
 </div>
 </div>
@@ -10917,6 +11103,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a51b9ee6e8e178952dd5054b5c731ccab"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a51b9ee6e8e178952dd5054b5c731ccab">PH09</a></div><div class="ttdeci">#define PH09</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00180">board.h:180</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_aef78bef9a4bf5706fd80120e36944f04"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#aef78bef9a4bf5706fd80120e36944f04">UART3_TX</a></div><div class="ttdeci">#define UART3_TX</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00111">board.h:111</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a3949a39746b8a761c2364065321eedc9"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a3949a39746b8a761c2364065321eedc9">APSW</a></div><div class="ttdeci">#define APSW</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00099">board.h:99</a></div></div>
+<div class="ttc" id="asnake__gate__detection_8c_html_a0483d856b36b358ff3b62e6a3c6f95f1"><div class="ttname"><a href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a></div><div class="ttdeci">int * array</div><div class="ttdef"><b>Definition:</b> <a href="snake__gate__detection_8c_source.html#l00094">snake_gate_detection.c:94</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a67086b86df1a18094ed9c4fe1b0badb8"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a67086b86df1a18094ed9c4fe1b0badb8">PG12</a></div><div class="ttdeci">#define PG12</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00166">board.h:166</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a5ba816c835afee3f27654c5ea3c5b48b"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a5ba816c835afee3f27654c5ea3c5b48b">PH02</a></div><div class="ttdeci">#define PH02</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00173">board.h:173</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a5409679e74f8ba436cc4e1f5cef8cd34"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a5409679e74f8ba436cc4e1f5cef8cd34">OTG_FS_DP</a></div><div class="ttdeci">#define OTG_FS_DP</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00064">board.h:64</a></div></div>
@@ -11031,6 +11218,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a6b55dd36a8f68bea16aa54c3f3f876d3"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a6b55dd36a8f68bea16aa54c3f3f876d3">PF10</a></div><div class="ttdeci">#define PF10</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00147">board.h:147</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a4fe0517acea8c2d1d7f1ffb97e660d7c"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a4fe0517acea8c2d1d7f1ffb97e660d7c">PF00</a></div><div class="ttdeci">#define PF00</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00137">board.h:137</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_af263c759702e327cc88473817ba0292e"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#af263c759702e327cc88473817ba0292e">PA08</a></div><div class="ttdeci">#define PA08</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00060">board.h:60</a></div></div>
+<div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_aa89c7c29c81a950ebaf3c06572707fb7"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#aa89c7c29c81a950ebaf3c06572707fb7">LINE_AUX_A1</a></div><div class="ttdeci">#define LINE_AUX_A1</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00242">board.h:242</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a3faa165e8da3ec2799a8f56605df3bd2"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a3faa165e8da3ec2799a8f56605df3bd2">PH14</a></div><div class="ttdeci">#define PH14</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00185">board.h:185</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_a5855815b2de675a7ca8592cafe824bfb"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#a5855815b2de675a7ca8592cafe824bfb">PH13</a></div><div class="ttdeci">#define PH13</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00184">board.h:184</a></div></div>
 <div class="ttc" id="atawaki_2chibios_2v1_81_2board_8h_html_aff6627310c687a3db62dfde6a80e6ee6"><div class="ttname"><a href="tawaki_2chibios_2v1_81_2board_8h.html#aff6627310c687a3db62dfde6a80e6ee6">SDMMC1_D1</a></div><div class="ttdeci">#define SDMMC1_D1</div><div class="ttdef"><b>Definition:</b> <a href="tawaki_2chibios_2v1_81_2board_8h_source.html#l00095">board.h:95</a></div></div>
@@ -11068,7 +11256,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a602d89a86e137af83bdeb12fdb83ab8.html">tawaki</a></li><li class="navelem"><a class="el" href="dir_dde4e65440e7233a57508cfa01e8df78.html">chibios</a></li><li class="navelem"><a class="el" href="dir_cb069dd442b0f62adcd9af327389dde6.html">v1.1</a></li><li class="navelem"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:27 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

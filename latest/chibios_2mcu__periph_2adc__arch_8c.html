@@ -122,17 +122,19 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2adc__arch_8c.htm
 Macros</h2></td></tr>
 <tr class="memitem:a2934d6c02a6319444fb3e892c72cb8f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a2934d6c02a6319444fb3e892c72cb8f6">USE_AD1</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a2934d6c02a6319444fb3e892c72cb8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795571e675fa978442745d27f0ba2b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a795571e675fa978442745d27f0ba2b2a">ADC_SAMPLE_RATE</a>&#160;&#160;&#160;ADC_SAMPLE_480</td></tr>
+<tr class="memdesc:a795571e675fa978442745d27f0ba2b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">#endif  <a href="chibios_2mcu__periph_2adc__arch_8c.html#a795571e675fa978442745d27f0ba2b2a">More...</a><br /></td></tr>
+<tr class="separator:a795571e675fa978442745d27f0ba2b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e829897b1929e18c1413dd484408d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a">ADC_BUF_DEPTH</a>&#160;&#160;&#160;(<a class="el" href="adc_8h.html#a66ebc63de71cc36b02ef080d9e990bac">MAX_AV_NB_SAMPLE</a>/2)</td></tr>
 <tr class="separator:a6e829897b1929e18c1413dd484408d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9ca94b04798d83640f0b79ea81fe46a9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a9ca94b04798d83640f0b79ea81fe46a9">IN_DMA_SECTION</a> (adcsample_t adc_samples[<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a> *<a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a">ADC_BUF_DEPTH</a>])</td></tr>
-<tr class="separator:a9ca94b04798d83640f0b79ea81fe46a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab20565c2f3d25af97a62849647c4cd71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#ab20565c2f3d25af97a62849647c4cd71">adc_regular_sequence</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *sqr1, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *sqr2, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *sqr3, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channel[])</td></tr>
-<tr class="separator:ab20565c2f3d25af97a62849647c4cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fef74b6c7509b76877e940657b2603"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#aa4fef74b6c7509b76877e940657b2603">adc_sample_time_on_all_channels</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *smpr1, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *smpr2, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> time)</td></tr>
-<tr class="separator:aa4fef74b6c7509b76877e940657b2603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297953e2cc58d9c8fef10e6587f47d24"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a297953e2cc58d9c8fef10e6587f47d24">IN_DMA_SECTION</a> (adcsample_t adc_samples[<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a> *<a class="el" href="adc_8h.html#a66ebc63de71cc36b02ef080d9e990bac">MAX_AV_NB_SAMPLE</a>])</td></tr>
+<tr class="separator:a297953e2cc58d9c8fef10e6587f47d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba229c19557de0c492527630ad132f6d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d">adc_configure</a> (ADCConversionGroup *cfg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_channels, const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels[], <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> sample_rate, adccallback_t end_cb, adcerrorcallback_t <a class="el" href="tlsf__malloc__arch_8c.html#a3213f8d0f2a0abc2a6fb5cf54139be33">error_cb</a>)</td></tr>
+<tr class="memdesc:aba229c19557de0c492527630ad132f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the ADC conversion group depending on the architecture.  <a href="chibios_2mcu__periph_2adc__arch_8c.html#aba229c19557de0c492527630ad132f6d">More...</a><br /></td></tr>
+<tr class="separator:aba229c19557de0c492527630ad132f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26596acde147dd47078caaeefd0b502d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d">adc1callback</a> (ADCDriver *adcp)</td></tr>
 <tr class="memdesc:a26596acde147dd47078caaeefd0b502d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adc1 callback.  <a href="chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d">More...</a><br /></td></tr>
 <tr class="separator:a26596acde147dd47078caaeefd0b502d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,21 +151,19 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:acee546d2b3b7908820ea25216782402b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#acee546d2b3b7908820ea25216782402b">adc_channel_map</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
-<tr class="memdesc:acee546d2b3b7908820ea25216782402b"><td class="mdescLeft">&#160;</td><td class="mdescRight">#endif  <a href="chibios_2mcu__periph_2adc__arch_8c.html#acee546d2b3b7908820ea25216782402b">More...</a><br /></td></tr>
 <tr class="separator:acee546d2b3b7908820ea25216782402b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd39363b0bc5b73c6cb4b0d0cc484d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#afd39363b0bc5b73c6cb4b0d0cc484d90">adc_error_flag</a> = 0</td></tr>
 <tr class="separator:afd39363b0bc5b73c6cb4b0d0cc484d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae518ea232632d8202116d5981e6c7be8"><td class="memItemLeft" align="right" valign="top">ADCDriver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#ae518ea232632d8202116d5981e6c7be8">adcp_err</a> = NULL</td></tr>
 <tr class="separator:ae518ea232632d8202116d5981e6c7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4c780c10c34ab0f6a309123cc0bcff"><td class="memItemLeft" align="right" valign="top">static ADCConversionGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#abd4c780c10c34ab0f6a309123cc0bcff">adc1_group</a></td></tr>
+<tr class="separator:abd4c780c10c34ab0f6a309123cc0bcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235d7be89fd1bddc533d5cb64bf0a839"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a235d7be89fd1bddc533d5cb64bf0a839">adc1_buffers</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
 <tr class="separator:a235d7be89fd1bddc533d5cb64bf0a839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48348066f5ca0fe6ddf05e233559e513"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a48348066f5ca0fe6ddf05e233559e513">adc1_sum_tmp</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
 <tr class="separator:a48348066f5ca0fe6ddf05e233559e513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a4c90a514730666d9bdd5c36832756"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a99a4c90a514730666d9bdd5c36832756">adc1_samples_tmp</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
 <tr class="separator:a99a4c90a514730666d9bdd5c36832756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a781bb82a68e5872fbd38fda51f0edb"><td class="memItemLeft" align="right" valign="top">static ADCConversionGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a2a781bb82a68e5872fbd38fda51f0edb">adcgrpcfg</a></td></tr>
-<tr class="memdesc:a2a781bb82a68e5872fbd38fda51f0edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration structure must be global.  <a href="chibios_2mcu__periph_2adc__arch_8c.html#a2a781bb82a68e5872fbd38fda51f0edb">More...</a><br /></td></tr>
-<tr class="separator:a2a781bb82a68e5872fbd38fda51f0edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ADC driver</p>
@@ -171,7 +171,7 @@ Variables</h2></td></tr>
 <p>Default buffer depth is equal to MAX_AV_NB_SAMPLE This allows us to always have more or equal samples than the user requires</p>
 <dl class="section note"><dt>Note</dt><dd>: With ChibiOS/RT 2.6.2 and STM32F105 chip the channels have to be interleaved, otherwise the current measurement is affected by the previous channel measured. Most likely bug on ChibiOS ADC driver for this particular chip.</dd></dl>
 <p>For 5 actual channels we have to define (DUMMY stants for 1 dummy channel): CH1 + DUMMY + CH2 + DUMMY + CH3 + DUMMY + CH4 + DUMMY + CH_TEMP = 9 channels Then only every second channel is really read. Might be fixed in next version of ChibiOS</p>
-<p>V_ref is 3.3V, ADC has 12bit resolution. </p>
+<p>V_ref is 3.3V, ADC has 12bit or 16bit resolution. </p>
 
 <p class="definition">Definition in file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -187,7 +187,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00144">144</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">138</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+
+</div>
+</div>
+<a id="a795571e675fa978442745d27f0ba2b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795571e675fa978442745d27f0ba2b2a">&#9670;&nbsp;</a></span>ADC_SAMPLE_RATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_SAMPLE_RATE&#160;&#160;&#160;ADC_SAMPLE_480</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>#endif </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00076">76</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
 </div>
 </div>
@@ -236,11 +254,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">224</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00243">243</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00149">adc1_buffers</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00151">adc1_samples_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00150">adc1_sum_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00144">ADC_BUF_DEPTH</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8h_source.html#l00093">ADC_NUM_CHANNELS</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, and <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00144">adc1_buffers</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00146">adc1_samples_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00145">adc1_sum_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">ADC_BUF_DEPTH</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8h_source.html#l00093">ADC_NUM_CHANNELS</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, and <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -298,7 +316,7 @@ Usage:
 <div class="line"><a class="code" href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a>(1, &amp;channel_buf, 12);</div>
 </div><!-- fragment --><p> Registers channel_buf as buffer for ADC channel 1, with max index 12 (12 samples). </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00292">292</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">312</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="adc__generic_8c_source.html#l00077">adc_generic_init()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00058">airspeed_adc_init()</a>, <a class="el" href="aoa__adc_8c_source.html#l00067">aoa_adc_init()</a>, <a class="el" href="electrical_8c_source.html#l00100">electrical_init()</a>, <a class="el" href="glide__wing__lock_8c_source.html#l00058">glide_wing_lock_init()</a>, <a class="el" href="humid__hih_8c_source.html#l00053">humid_hih_init()</a>, <a class="el" href="light__solar_8c_source.html#l00054">light_solar_init()</a>, <a class="el" href="light__temt_8c_source.html#l00049">light_temt_init()</a>, <a class="el" href="mf__ptu_8c_source.html#l00076">mf_ptu_init()</a>, <a class="el" href="sonar__adc_8c_source.html#l00056">sonar_adc_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00129">temp_adc_init()</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00056">temp_tcouple_adc_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -328,6 +346,100 @@ Usage:
 
 </div>
 </div>
+<a id="aba229c19557de0c492527630ad132f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba229c19557de0c492527630ad132f6d">&#9670;&nbsp;</a></span>adc_configure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void adc_configure </td>
+          <td>(</td>
+          <td class="paramtype">ADCConversionGroup *&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>num_channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>channels</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>sample_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">adccallback_t&#160;</td>
+          <td class="paramname"><em>end_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">adcerrorcallback_t&#160;</td>
+          <td class="paramname"><em>error_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configure the ADC conversion group depending on the architecture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfg</td><td>The configuration to be set </td></tr>
+    <tr><td class="paramname">num_channels</td><td>The number of channels in the ADC </td></tr>
+    <tr><td class="paramname">channels</td><td>The channel mapping to real channels </td></tr>
+    <tr><td class="paramname">sample_rate</td><td>The sample rate for all channels </td></tr>
+    <tr><td class="paramname">end_cb</td><td>The callback function at the end of conversion </td></tr>
+    <tr><td class="paramname">error_cb</td><td>The callback function whenever an error occurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00175">175</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="tlsf__malloc__arch_8c_source.html#l00071">error_cb</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_aba229c19557de0c492527630ad132f6d_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_aba229c19557de0c492527630ad132f6d_icgraph" alt=""/></div>
+<map name="chibios_2mcu__periph_2adc__arch_8c_aba229c19557de0c492527630ad132f6d_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_aba229c19557de0c492527630ad132f6d_icgraph">
+<area shape="rect" title="Configure the ADC conversion group depending on the architecture." alt="" coords="487,31,599,57"/>
+<area shape="rect" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions." alt="" coords="365,31,439,57"/>
+<area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,31,317,57"/>
+<area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,32"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,56,191,83"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,60,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a2b815e6730e8723a6d1d06d9ef8f31c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b815e6730e8723a6d1d06d9ef8f31c0">&#9670;&nbsp;</a></span>adc_init()</h2>
 
@@ -348,151 +460,17 @@ Usage:
 <p>Starts conversions.</p>
 <p>Initialize ADC drivers, buffers and start conversion in the background </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">318</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">332</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" alt=""/></div>
-<map name="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph">
-<area shape="rect" title="Adc init." alt="" coords="365,31,439,57"/>
-<area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,31,317,57"/>
-<area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,32"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,56,191,83"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,60,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab20565c2f3d25af97a62849647c4cd71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab20565c2f3d25af97a62849647c4cd71">&#9670;&nbsp;</a></span>adc_regular_sequence()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void adc_regular_sequence </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>sqr1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>sqr2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>sqr3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>channel</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00171">171</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mcu_8c_source.html#l00097">mcu_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph" alt=""/></div>
-<map name="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph">
-<area shape="rect" title=" " alt="" coords="487,31,653,57"/>
-<area shape="rect" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions." alt="" coords="365,31,439,57"/>
-<area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,31,317,57"/>
-<area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,32"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,56,191,83"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,60,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa4fef74b6c7509b76877e940657b2603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4fef74b6c7509b76877e940657b2603">&#9670;&nbsp;</a></span>adc_sample_time_on_all_channels()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void adc_sample_time_on_all_channels </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>smpr1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> *&#160;</td>
-          <td class="paramname"><em>smpr2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00195">195</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph" alt=""/></div>
-<map name="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph">
-<area shape="rect" title=" " alt="" coords="487,23,647,65"/>
-<area shape="rect" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions." alt="" coords="365,31,439,57"/>
+<div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" alt=""/></div>
+<map name="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph">
+<area shape="rect" title="Adc init." alt="" coords="365,31,439,57"/>
 <area shape="rect" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization." alt="" coords="239,31,317,57"/>
 <area shape="rect" href="uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="122,5,177,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,56,191,83"/>
@@ -539,16 +517,16 @@ Usage:
 <p>Adc error callback. </p>
 <p>Fired if DMA error happens or ADC overflows </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">281</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00301">301</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">adc_error_flag</a>, and <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00139">adcp_err</a>.</p>
+<p class="reference">References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00132">adc_error_flag</a>, and <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00133">adcp_err</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph">
 <area shape="rect" title="Adc error callback." alt="" coords="487,31,617,57"/>
@@ -562,8 +540,8 @@ Usage:
 
 </div>
 </div>
-<a id="a9ca94b04798d83640f0b79ea81fe46a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca94b04798d83640f0b79ea81fe46a9">&#9670;&nbsp;</a></span>IN_DMA_SECTION()</h2>
+<a id="a297953e2cc58d9c8fef10e6587f47d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297953e2cc58d9c8fef10e6587f47d24">&#9670;&nbsp;</a></span>IN_DMA_SECTION()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -575,7 +553,7 @@ Usage:
           <td class="memname">static IN_DMA_SECTION </td>
           <td>(</td>
           <td class="paramtype">adcsample_t&#160;</td>
-          <td class="paramname"><em>adc_samples</em>[ADC_NUM_CHANNELS *ADC_BUF_DEPTH]</td><td>)</td>
+          <td class="paramname"><em>adc_samples</em>[ADC_NUM_CHANNELS *MAX_AV_NB_SAMPLE]</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -609,9 +587,35 @@ Usage:
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00149">149</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00144">144</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">adc1callback()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00292">adc_buf_channel()</a>, and <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00227">adc_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00243">adc1callback()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">adc_buf_channel()</a>, and <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00227">adc_init()</a>.</p>
+
+</div>
+</div>
+<a id="abd4c780c10c34ab0f6a309123cc0bcff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c780c10c34ab0f6a309123cc0bcff">&#9670;&nbsp;</a></span>adc1_group</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADCConversionGroup adc1_group</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00143">143</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -635,9 +639,9 @@ Usage:
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00151">151</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00146">146</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">adc1callback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00243">adc1callback()</a>.</p>
 
 </div>
 </div>
@@ -661,9 +665,9 @@ Usage:
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00150">150</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00145">145</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">adc1callback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00243">adc1callback()</a>.</p>
 
 </div>
 </div>
@@ -687,11 +691,9 @@ Usage:
 </table>
 </div><div class="memdoc">
 
-<p>#endif </p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00081">81</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00087">87</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -707,37 +709,9 @@ Usage:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">138</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00132">132</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adcerrorcallback()</a>.</p>
-
-</div>
-</div>
-<a id="a2a781bb82a68e5872fbd38fda51f0edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a781bb82a68e5872fbd38fda51f0edb">&#9670;&nbsp;</a></span>adcgrpcfg</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ADCConversionGroup adcgrpcfg</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Configuration structure must be global. </p>
-
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00311">311</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00318">adc_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00301">adcerrorcallback()</a>.</p>
 
 </div>
 </div>
@@ -753,21 +727,21 @@ Usage:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00139">139</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00133">133</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adcerrorcallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00301">adcerrorcallback()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="achibios_2mcu__periph_2adc__arch_8c_html_a289883844d6749adab1cee5aabe41824"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(uint8_t adc_channel, struct adc_buf *s, uint8_t av_nb_sample)</div><div class="ttdoc">Link between ChibiOS ADC drivers and Paparazzi adc_buffers.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00292">adc_arch.c:292</a></div></div>
+<div class="ttc" id="achibios_2mcu__periph_2adc__arch_8c_html_a289883844d6749adab1cee5aabe41824"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(uint8_t adc_channel, struct adc_buf *s, uint8_t av_nb_sample)</div><div class="ttdoc">Link between ChibiOS ADC drivers and Paparazzi adc_buffers.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00312">adc_arch.c:312</a></div></div>
 <div class="ttc" id="aadc_8h_html_structadc__buf"><div class="ttname"><a href="adc_8h.html#structadc__buf">adc_buf</a></div><div class="ttdoc">Generic interface for all ADC hardware drivers, independent from microcontroller architecture.</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00053">adc.h:53</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:26 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

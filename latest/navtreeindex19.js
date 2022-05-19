@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__statistics__bayer_8h.html#a8c71ccc2d52e990449a0604169988162":[12,0,1,0,1,2,0,0,15,3,0],
+"avi__isp__statistics__bayer_8h.html#a8d13a96ca07b76b28546a5c9c55cd3a1":[12,0,1,0,1,2,0,0,15,12,0],
+"avi__isp__statistics__bayer_8h.html#a9160ec0a4b4b978a44b0a631f5163d8b":[12,0,1,0,1,2,0,0,15,21,2],
 "avi__isp__statistics__bayer_8h.html#a9756870e16a73e29048ca33db11547c2":[12,0,1,0,1,2,0,0,15,32],
 "avi__isp__statistics__bayer_8h.html#a98037f2b763228de850f17d5c60cff47":[12,0,1,0,1,2,0,0,15,11,0],
 "avi__isp__statistics__bayer_8h.html#a992521e7e701515b4a96c538f2aa5824":[12,0,1,0,1,2,0,0,15,35],
@@ -85,8 +88,8 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__yuv_8h.html#a6c60a7c08f65ef509f17b761be514bd3":[12,0,1,0,1,2,0,0,16,17,0],
 "avi__isp__statistics__yuv_8h.html#a714111278d004f11e6d421b8cd796e54":[12,0,1,0,1,2,0,0,16,11,0],
 "avi__isp__statistics__yuv_8h.html#a72588b7a1e849b11b29d86072680fa49":[12,0,1,0,1,2,0,0,16,32,0],
-"avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,22,0],
 "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,21,0],
+"avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,22,0],
 "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,28,0],
 "avi__isp__statistics__yuv_8h.html#a74e7eb1b5a2c78158509d50529293df9":[12,0,1,0,1,2,0,0,16,22,1],
 "avi__isp__statistics__yuv_8h.html#a763448fd736df73f6de365d457ed58a7":[12,0,1,0,1,2,0,0,16,29,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "baro__MS5534A_8c.html#a94be586d7f0494ea9f520c1e46679829":[12,0,1,0,6,60,40,32],
 "baro__MS5534A_8c.html#aa7f86854b075f311643a2668c0a4898b":[12,0,1,0,6,60,40,50],
 "baro__MS5534A_8c.html#aa98ec4b685a95b7694bbf7539ec096db":[12,0,1,0,6,60,40,7],
-"baro__MS5534A_8c.html#aacaca0988244bd3a888ca5befa89f44b":[12,0,1,0,6,60,40,12],
-"baro__MS5534A_8c.html#aad498a0dd26cb82ae23c7ec07f90448a":[12,0,1,0,6,60,40,40],
-"baro__MS5534A_8c.html#ab30c346cfd9bc2364001128c169e7898":[12,0,1,0,6,60,40,26],
-"baro__MS5534A_8c.html#abd673f086e9224eabd5896d3b94c208e":[12,0,1,0,6,60,40,15]
+"baro__MS5534A_8c.html#aacaca0988244bd3a888ca5befa89f44b":[12,0,1,0,6,60,40,12]
 };

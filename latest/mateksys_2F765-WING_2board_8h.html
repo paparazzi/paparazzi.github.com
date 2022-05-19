@@ -1213,6 +1213,18 @@ Macros</h2></td></tr>
 <tr class="separator:a0c5f512df7c6f6a9728d83d9b1670ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73239ad8f9e08e6ed79399db847b03c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#ae73239ad8f9e08e6ed79399db847b03c">S12_TIM_AF</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:ae73239ad8f9e08e6ed79399db847b03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddc843efed03effa9394c3892a74eec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#aaddc843efed03effa9394c3892a74eec">BOARD_GROUP_DECLFOREACH</a>(line,  group)</td></tr>
+<tr class="separator:aaddc843efed03effa9394c3892a74eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b">BOARD_GROUP_FOREACH</a>(line,  group)&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td></tr>
+<tr class="separator:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a275ff975b3c7f07a2009a32629e33e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e">BOARD_GROUP_DECLFOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)</td></tr>
+<tr class="separator:a8a275ff975b3c7f07a2009a32629e33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13">BOARD_GROUP_FOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td></tr>
+<tr class="separator:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b9cbda86163e55e01772d767403b8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#a33b9cbda86163e55e01772d767403b8c">ENERGY_SAVE_INPUT</a></td></tr>
+<tr class="separator:a33b9cbda86163e55e01772d767403b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mateksys_2F765-WING_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d">ENERGY_SAVE_INPUT_SIZE</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -3253,6 +3265,142 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a275ff975b3c7f07a2009a32629e33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a275ff975b3c7f07a2009a32629e33e">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group};    \</div>
+<div class="line">  for (ioline_t index=0, *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01692">1692</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaddc843efed03effa9394c3892a74eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddc843efed03effa9394c3892a74eec">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group}; \</div>
+<div class="line">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01684">1684</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="af7e7af7d45a9305435eac0c7cbebcf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e7af7d45a9305435eac0c7cbebcf13">&#9670;&nbsp;</a></span>BOARD_GROUP_FOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01696">1696</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a29f57021ab9e2b17f34ea5a58947a83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f57021ab9e2b17f34ea5a58947a83b">&#9670;&nbsp;</a></span>BOARD_GROUP_FOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01688">1688</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
 <a id="aaa1cbbc0a7574c614aef0f3b8c5400cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa1cbbc0a7574c614aef0f3b8c5400cc">&#9670;&nbsp;</a></span>BOARD_MATEKF765_WING</h2>
 
@@ -3346,6 +3494,56 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01638">1638</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a33b9cbda86163e55e01772d767403b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b9cbda86163e55e01772d767403b8c">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="mateksys_2F765-WING_2board_8h.html#aa46b28df7543194c34dc2f13733dcd2b">LINE_S1</a>, \</div>
+<div class="line">  LINE_S2, \</div>
+<div class="line">  LINE_S3, \</div>
+<div class="line">  LINE_S4, \</div>
+<div class="line">  LINE_S5, \</div>
+<div class="line">  LINE_S6, \</div>
+<div class="line">  LINE_OSD_CS, \</div>
+<div class="line">  LINE_IMU1_CS, \</div>
+<div class="line">  LINE_IMU2_CS, \</div>
+<div class="line">  LINE_LED1, \</div>
+<div class="line">  LINE_LED2, \</div>
+<div class="line">  LINE_S7, \</div>
+<div class="line">  LINE_S8, \</div>
+<div class="line">  LINE_S9, \</div>
+<div class="line">  LINE_S10, \</div>
+<div class="line">  LINE_S11, \</div>
+<div class="line">  LINE_S12, \</div>
+<div class="line">  LINE_SPI4_CS</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01699">1699</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf91e689e472afc97bbb7bff17ee7c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf91e689e472afc97bbb7bff17ee7c9d">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT_SIZE&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mateksys_2F765-WING_2board_8h_source.html#l01718">1718</a> of file <a class="el" href="mateksys_2F765-WING_2board_8h_source.html">board.h</a>.</p>
 
 </div>
 </div>
@@ -11217,20 +11415,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Board-specific initialization code. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00261">261</a> of file <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html">board.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="arch_2chibios_2board_8c_source.html#l00312">312</a> of file <a class="el" href="arch_2chibios_2board_8c_source.html">board.c</a>.</p>
 
 </div>
 </div>
@@ -11276,6 +11463,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_acba153abf52bbb69086918d48b677c2b"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#acba153abf52bbb69086918d48b677c2b">PI11</a></div><div class="ttdeci">#define PI11</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00199">board.h:199</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a3375cce5eb38770027d1f875b567b6f9"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a3375cce5eb38770027d1f875b567b6f9">PF13</a></div><div class="ttdeci">#define PF13</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00150">board.h:150</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_af5ffae81dff784d84362522eb84f8cd9"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#af5ffae81dff784d84362522eb84f8cd9">PH12</a></div><div class="ttdeci">#define PH12</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00183">board.h:183</a></div></div>
+<div class="ttc" id="asnake__gate__detection_8c_html_a0483d856b36b358ff3b62e6a3c6f95f1"><div class="ttname"><a href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a></div><div class="ttdeci">int * array</div><div class="ttdef"><b>Definition:</b> <a href="snake__gate__detection_8c_source.html#l00094">snake_gate_detection.c:94</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a3ec0d2e84a765584a587d765302cefd4"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a3ec0d2e84a765584a587d765302cefd4">PA04</a></div><div class="ttdeci">#define PA04</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00056">board.h:56</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_ab11a0f6a29beeede9d74045d2b5ebe96"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#ab11a0f6a29beeede9d74045d2b5ebe96">OSC_OUT</a></div><div class="ttdeci">#define OSC_OUT</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00172">board.h:172</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a70039eeea0d223a5fe582c078233e138"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a70039eeea0d223a5fe582c078233e138">PB02</a></div><div class="ttdeci">#define PB02</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00071">board.h:71</a></div></div>
@@ -11370,6 +11558,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_acc600baafd7aae8929ec488c933da6bb"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#acc600baafd7aae8929ec488c933da6bb">UART5_RX</a></div><div class="ttdeci">#define UART5_RX</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00077">board.h:77</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_af60ecf5956706e7a1d1b784b84a3a2d3"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#af60ecf5956706e7a1d1b784b84a3a2d3">SPI4_CLK</a></div><div class="ttdeci">#define SPI4_CLK</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00132">board.h:132</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a63a22ad4d1da59a49907180547f345ec"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a63a22ad4d1da59a49907180547f345ec">PG00</a></div><div class="ttdeci">#define PG00</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00154">board.h:154</a></div></div>
+<div class="ttc" id="amateksys_2F765-WING_2board_8h_html_aa46b28df7543194c34dc2f13733dcd2b"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#aa46b28df7543194c34dc2f13733dcd2b">LINE_S1</a></div><div class="ttdeci">#define LINE_S1</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00242">board.h:242</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a52bf8fc15c233bee1bae6532d5e55f8d"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a52bf8fc15c233bee1bae6532d5e55f8d">IMU1_CS</a></div><div class="ttdeci">#define IMU1_CS</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00090">board.h:90</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_ae9dbdd1c135a1428009938fd7875ab56"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#ae9dbdd1c135a1428009938fd7875ab56">UART1_TX</a></div><div class="ttdeci">#define UART1_TX</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00061">board.h:61</a></div></div>
 <div class="ttc" id="amateksys_2F765-WING_2board_8h_html_a0693cadf9e6293a59fd0f40bb700a31f"><div class="ttname"><a href="mateksys_2F765-WING_2board_8h.html#a0693cadf9e6293a59fd0f40bb700a31f">VBAT_MEAS</a></div><div class="ttdeci">#define VBAT_MEAS</div><div class="ttdef"><b>Definition:</b> <a href="mateksys_2F765-WING_2board_8h_source.html#l00088">board.h:88</a></div></div>
@@ -11427,7 +11616,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_8ac24fb6e8483987b2ade80e823ec3a9.html">mateksys</a></li><li class="navelem"><a class="el" href="dir_9bf16d6f8308d1db54e8ee95a0944c6d.html">F765-WING</a></li><li class="navelem"><a class="el" href="mateksys_2F765-WING_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:27 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -438,6 +438,9 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 <li>CH_CFG_FACTORY_SEMAPHORES
 : <a class="el" href="group__config.html#gafc999784304892d5ef32584c73cdbc71">chconf.h</a>
 </li>
+<li>CH_CFG_HARDENING_LEVEL
+: <a class="el" href="group__config.html#gae1bbf6e05c57f36c082c604fd1636139">chconf.h</a>
+</li>
 <li>CH_CFG_IDLE_ENTER_HOOK
 : <a class="el" href="group__config.html#ga5193dc6602d532b5eb171c6459d80707">chconf.h</a>
 </li>
@@ -464,6 +467,18 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 </li>
 <li>CH_CFG_OPTIMIZE_SPEED
 : <a class="el" href="group__config.html#gac7a7942b6c4ef2f79416971688a49c40">chconf.h</a>
+</li>
+<li>CH_CFG_OS_INSTANCE_EXTRA_FIELDS
+: <a class="el" href="group__config.html#ga8cd5fd451915ed261d00ccc010e4676e">chconf.h</a>
+</li>
+<li>CH_CFG_OS_INSTANCE_INIT_HOOK
+: <a class="el" href="group__config.html#ga138a27e9fafaf106a20515dfb7a8b436">chconf.h</a>
+</li>
+<li>CH_CFG_RUNTIME_FAULTS_HOOK
+: <a class="el" href="group__config.html#ga8d0f3737ba69f5b591c874e381fa3b74">chconf.h</a>
+</li>
+<li>CH_CFG_SMP_MODE
+: <a class="el" href="group__config.html#gaea1d3c71c3dae5b1675f326bba425ee1">chconf.h</a>
 </li>
 <li>CH_CFG_ST_FREQUENCY
 : <a class="el" href="group__config.html#ga174ac107e620ac81bb1487c1ad7ad839">chconf.h</a>
@@ -534,6 +549,9 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 <li>CH_CFG_USE_MAILBOXES
 : <a class="el" href="group__config.html#gae7b225553e9e069eda0dc0a251e0882c">chconf.h</a>
 </li>
+<li>CH_CFG_USE_MEMCHECKS
+: <a class="el" href="group__config.html#gad54d32365f5c593cff704acb33a2032a">chconf.h</a>
+</li>
 <li>CH_CFG_USE_MEMCORE
 : <a class="el" href="group__config.html#gaad95228d05e4107b33836d30d21645a7">chconf.h</a>
 </li>
@@ -569,6 +587,9 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 </li>
 <li>CH_CFG_USE_SEMAPHORES_PRIORITY
 : <a class="el" href="group__config.html#ga04e4e037498950df8bdef88bdd199494">chconf.h</a>
+</li>
+<li>CH_CFG_USE_TIMESTAMP
+: <a class="el" href="group__config.html#ga81961dce5cd970b4b345ca076bafa71b">chconf.h</a>
 </li>
 <li>CH_CFG_USE_TM
 : <a class="el" href="group__config.html#ga1bd0fe5d119a7de890025214ae249c1d">chconf.h</a>
@@ -724,8 +745,8 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 : <a class="el" href="sys__id__chirp_8c.html#a45fc20a194afcb177c1057eca1d7924c">sys_id_chirp.c</a>
 </li>
 <li>CHPRINTF_USE_FLOAT
-: <a class="el" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">printf.h</a>
-, <a class="el" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">chconf.h</a>
+: <a class="el" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">chconf.h</a>
+, <a class="el" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">printf.h</a>
 </li>
 <li>CI
 : <a class="el" href="pprz__geodetic__double_8c.html#a2e20b961702519f39a39c93d21591131">pprz_geodetic_double.c</a>
@@ -744,9 +765,9 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 : <a class="el" href="rotorcraft_2navigation_8c.html#a886b61a67281687fc4c33ce0fcbe85a7">navigation.c</a>
 </li>
 <li>CloseDegAngles
-: <a class="el" href="rotorcraft_2navigation_8h.html#ac7337f6adcdaff21acccd2f32070b666">navigation.h</a>
+: <a class="el" href="nav__rover__base_8h.html#ac7337f6adcdaff21acccd2f32070b666">nav_rover_base.h</a>
 , <a class="el" href="nav_8h.html#ac7337f6adcdaff21acccd2f32070b666">nav.h</a>
-, <a class="el" href="nav__rover__base_8h.html#ac7337f6adcdaff21acccd2f32070b666">nav_rover_base.h</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#ac7337f6adcdaff21acccd2f32070b666">navigation.h</a>
 </li>
 <li>CloseRadAngles
 : <a class="el" href="rotorcraft_2navigation_8h.html#ab4fd74f9040282b0ffd4ca833a18ccdf">navigation.h</a>
@@ -919,9 +940,14 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 : <a class="el" href="xbee__dl_8c.html#a88fa737059e67b4b17ec980e5877361e">xbee_dl.c</a>
 </li>
 <li>CONCAT_BOARD_PARAM
-: <a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">tawaki.h</a>
+: <a class="el" href="holybro__kakute__f7_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">holybro_kakute_f7.h</a>
+, <a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">tawaki.h</a>
+, <a class="el" href="common__board_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">common_board.h</a>
+, <a class="el" href="chimera_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">chimera.h</a>
+, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">board.h</a>
+, <a class="el" href="px4fmu_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">px4fmu.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">board.h</a>
 , <a class="el" href="matekF765-WING_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">matekF765-WING.h</a>
-, <a class="el" href="holybro__kakute__f7_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">holybro_kakute_f7.h</a>
 , <a class="el" href="nucleo144__f767zi_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">nucleo144_f767zi.h</a>
 </li>
 <li>CONTROL_FREQUENCY
@@ -1001,8 +1027,8 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 : <a class="el" href="ctc_8c.html#acc00fd54fe71619dc757f6b5d400fe5b">ctc.c</a>
 </li>
 <li>CTC_MAX_AC
-: <a class="el" href="ctc_8c.html#acca029f9ebaa03c02163147f8622ace3">ctc.c</a>
-, <a class="el" href="ctc__target_8c.html#acca029f9ebaa03c02163147f8622ace3">ctc_target.c</a>
+: <a class="el" href="ctc__target_8c.html#acca029f9ebaa03c02163147f8622ace3">ctc_target.c</a>
+, <a class="el" href="ctc_8c.html#acca029f9ebaa03c02163147f8622ace3">ctc.c</a>
 </li>
 <li>CTC_OMEGA
 : <a class="el" href="ctc_8c.html#a70bc00c5c42cd7d3deefa8193a833bde">ctc.c</a>
@@ -1032,7 +1058,7 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 : <a class="el" href="holybro_2kakute__f7_2board_8h.html#a6762e8173a7792a8a2a573dc3b55b504">board.h</a>
 </li>
 <li>CURRENT_MEAS_ADC_FN
-: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a0745a1d58a3643f3eee497a435296b39">board.h</a>
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a0745a1d58a3643f3eee497a435296b39">board.h</a>
 </li>
 <li>CURRENT_MEAS_ADC_IN
 : <a class="el" href="holybro_2kakute__f7_2board_8h.html#ac1ad66f902286af9fff5561fe8a1f7a1">board.h</a>
@@ -1277,7 +1303,7 @@ $(document).ready(function(){initNavTree('globals_defs_c.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:44 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

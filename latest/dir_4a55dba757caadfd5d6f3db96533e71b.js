@@ -25,8 +25,6 @@ var dir_4a55dba757caadfd5d6f3db96533e71b =
     [ "ahrs_float_mlkf_wrapper.c", "ahrs__float__mlkf__wrapper_8c.html", "ahrs__float__mlkf__wrapper_8c" ],
     [ "ahrs_float_mlkf_wrapper.h", "ahrs__float__mlkf__wrapper_8h.html", "ahrs__float__mlkf__wrapper_8h" ],
     [ "ahrs_float_utils.h", "ahrs__float__utils_8h.html", "ahrs__float__utils_8h" ],
-    [ "ahrs_gx3.c", "ahrs__gx3_8c.html", "ahrs__gx3_8c" ],
-    [ "ahrs_gx3.h", "ahrs__gx3_8h.html", "ahrs__gx3_8h" ],
     [ "ahrs_int_cmpl_quat.c", "ahrs__int__cmpl__quat_8c.html", "ahrs__int__cmpl__quat_8c" ],
     [ "ahrs_int_cmpl_quat.h", "ahrs__int__cmpl__quat_8h.html", "ahrs__int__cmpl__quat_8h" ],
     [ "ahrs_int_cmpl_quat_wrapper.c", "ahrs__int__cmpl__quat__wrapper_8c.html", "ahrs__int__cmpl__quat__wrapper_8c" ],

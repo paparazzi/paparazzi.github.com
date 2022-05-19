@@ -1751,24 +1751,56 @@ $(document).ready(function(){initNavTree('tawaki_2chibios_2v1_81_2board_8h_sourc
 <div class="line"><a name="l01661"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#a19b050efdd652139f885cd6e8d4f8307"> 1661</a></span>&#160;<span class="preprocessor">#define SRVA4_TIM_CH   4</span></div>
 <div class="line"><a name="l01662"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#af68affc97f50aec5d61affa81f9a138f"> 1662</a></span>&#160;<span class="preprocessor">#define SRVA4_TIM_AF   1</span></div>
 <div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160; </div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;}</div>
-<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160; </div>
+<div class="line"><a name="l01664"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1664</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160; </div>
+<div class="line"><a name="l01668"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1668</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160; </div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160; </div>
+<div class="line"><a name="l01672"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1672</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160; </div>
+<div class="line"><a name="l01676"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1676</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160; </div>
+<div class="line"><a name="l01679"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#a33b9cbda86163e55e01772d767403b8c"> 1679</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUT \</span></div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;<span class="preprocessor">  LINE_AUX_A1, \</span></div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;<span class="preprocessor">  LINE_AUX_A2, \</span></div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;<span class="preprocessor">  LINE_AUX_A3, \</span></div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;<span class="preprocessor">  LINE_AUX_A4, \</span></div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;<span class="preprocessor">  LINE_AUX_B1, \</span></div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;<span class="preprocessor">  LINE_AUX_B2, \</span></div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;<span class="preprocessor">  LINE_LED2, \</span></div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;<span class="preprocessor">  LINE_AUX_B3, \</span></div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;<span class="preprocessor">  LINE_AUX_B4, \</span></div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;<span class="preprocessor">  LINE_SPI2_EXTERNAL_CS, \</span></div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;<span class="preprocessor">  LINE_LED3, \</span></div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;<span class="preprocessor">  LINE_LED4, \</span></div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;<span class="preprocessor">  LINE_LED1, \</span></div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;<span class="preprocessor">  LINE_SPI4_INTERNAL_CS</span></div>
+<div class="line"><a name="l01694"></a><span class="lineno"><a class="line" href="tawaki_2chibios_2v1_81_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d"> 1694</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUT_SIZE   14</span></div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160; </div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;}</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8c_source.html#l00261">board.c:261</a></div></div>
+<div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="arch_2chibios_2board_8c_source.html#l00312">board.c:312</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a602d89a86e137af83bdeb12fdb83ab8.html">tawaki</a></li><li class="navelem"><a class="el" href="dir_dde4e65440e7233a57508cfa01e8df78.html">chibios</a></li><li class="navelem"><a class="el" href="dir_cb069dd442b0f62adcd9af327389dde6.html">v1.1</a></li><li class="navelem"><a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

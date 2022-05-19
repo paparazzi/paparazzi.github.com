@@ -1,6 +1,7 @@
 var chibios_2modules_2uavcan_2uavcan_8h =
 [
     [ "uavcan_iface_t", "sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t", [
+      [ "can_baudrate", "sim_2modules_2uavcan_2uavcan_8h.html#a4ac83347bccea5b6e4fc5053b7535e2a", null ],
       [ "can_cfg", "sim_2modules_2uavcan_2uavcan_8h.html#a16a80753b7093f4f4b7906e605220784", null ],
       [ "can_driver", "sim_2modules_2uavcan_2uavcan_8h.html#a5c9ca2e231219806f43c0453cf022f9e", null ],
       [ "canard", "sim_2modules_2uavcan_2uavcan_8h.html#ae9ea9ac2532325c25e97eeeb207a40a1", null ],

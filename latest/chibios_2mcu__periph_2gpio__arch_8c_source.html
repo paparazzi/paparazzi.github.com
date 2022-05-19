@@ -148,14 +148,14 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2gpio__arch_8c_so
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  chSysLock();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// architecture dependent settings</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if defined(STM32F1XX)</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// FIXME: STM32F1xx doesn&#39;t support several alternate modes, is it needed for drivers?</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  (void)port;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  (void)pin;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  (void)af;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  (void)is_output;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#elif defined(STM32F4) || defined(STM32F3) || defined(STM32F7)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// STM32F4xx, STM32F3xx and STM32F7xx</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// STM32F4xx, STM32F3xx, STM32F7xx and STM32H7xx</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (af) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    palSetPadMode(port, pin, PAL_MODE_ALTERNATE(af));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  } <span class="keywordflow">else</span> {</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2gpio__arch_8c_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html">gpio_arch.c</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

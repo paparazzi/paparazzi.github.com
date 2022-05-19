@@ -1,5 +1,6 @@
 var ffconf_8h =
 [
+    [ "FATFS_CHIBIOS_EXTENSIONS", "ffconf_8h.html#a7c5d656b0d54cf8d20ca7fc28164bfa6", null ],
     [ "FF_CODE_PAGE", "ffconf_8h.html#a56bf522419025961acdfaf6388f40402", null ],
     [ "FF_FS_EXFAT", "ffconf_8h.html#a4374b721b8019acc9761fdd8b829ccd0", null ],
     [ "FF_FS_LOCK", "ffconf_8h.html#ab76cc3251ebd18a5c33f9f18656317f3", null ],
@@ -22,6 +23,8 @@ var ffconf_8h =
     [ "FF_NORTC_MDAY", "ffconf_8h.html#a1726418a7d765c3ae4da9c43d2349151", null ],
     [ "FF_NORTC_MON", "ffconf_8h.html#acc2167f3af4dd4f6ec84a57a82f923dd", null ],
     [ "FF_NORTC_YEAR", "ffconf_8h.html#aa23a9857382e458421fb87ef11ff9c63", null ],
+    [ "FF_PRINT_FLOAT", "ffconf_8h.html#a81c59406fe9df657bfb6d75e409da207", null ],
+    [ "FF_PRINT_LLI", "ffconf_8h.html#a7d8e68a5699cf1ceb7ed4fdfba8e2ca0", null ],
     [ "FF_SFN_BUF", "ffconf_8h.html#ac19c6abcf1fc6e2bbf204003462cfedb", null ],
     [ "FF_STR_VOLUME_ID", "ffconf_8h.html#a056575130662da5bc7ac26a5b1d25838", null ],
     [ "FF_STRF_ENCODE", "ffconf_8h.html#a6ecc215308b4ead043b2e4e513ea203e", null ],

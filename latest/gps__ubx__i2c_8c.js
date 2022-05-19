@@ -4,7 +4,7 @@ var gps__ubx__i2c_8c =
     [ "GPS_I2C_ADDR_NB_AVAIL_BYTES", "gps__ubx__i2c_8c.html#a4f9fe9c5d784562d78946ec77ca97d5b", null ],
     [ "GPS_I2C_SLAVE_ADDR", "gps__ubx__i2c_8c.html#a7d765c07aa171aca913bd5e9832d53b6", null ],
     [ "gps_i2c_begin", "gps__ubx__i2c_8c.html#a0eba8e874698ad3731835fe274aa7702", null ],
-    [ "gps_i2c_char_available", "gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd", null ],
+    [ "gps_i2c_char_available", "gps__ubx__i2c_8c.html#af0826e5ab8f70ced9c2a3fedd5f32907", null ],
     [ "gps_i2c_check_free_space", "gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9", null ],
     [ "gps_i2c_getch", "gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4", null ],
     [ "gps_i2c_msg_ready", "gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b", null ],

@@ -157,7 +157,6 @@ Actuators modules</h2>
 <li><a class="el" href="module__actuators_pwm.html">actuators_pwm module</a> : Actuators Driver using direct PWM output</li>
 <li><a class="el" href="module__actuators_sbus.html">actuators_sbus module</a> : Actuators Driver using Futaba SBUS</li>
 <li><a class="el" href="module__actuators_spektrum.html">actuators_spektrum module</a> : Actuators Driver with Spektrum output</li>
-<li><a class="el" href="module__actuators_swing.html">actuators_swing module</a> : Actuators Driver for Swing</li>
 <li><a class="el" href="module__actuators_uavcan.html">actuators_uavcan module</a> : UAVCan actuators</li>
 <li><a class="el" href="module__motor_mixing.html">motor_mixing module</a> : Motor mixing for multi-rotor systems</li>
 </ul>
@@ -180,7 +179,6 @@ Ahrs modules</h2>
 <li><a class="el" href="module__ahrs_float_dcm.html">ahrs_float_dcm module</a> : AHRS using DCM filter.</li>
 <li><a class="el" href="module__ahrs_float_invariant.html">ahrs_float_invariant module</a> : AHRS using invariant filter.</li>
 <li><a class="el" href="module__ahrs_float_mlkf.html">ahrs_float_mlkf module</a> : AHRS using MLKF filter.</li>
-<li><a class="el" href="module__ahrs_gx3.html">ahrs_gx3 module</a> : AHRS driver for GX3.</li>
 <li><a class="el" href="module__ahrs_int_cmpl_quat.html">ahrs_int_cmpl_quat module</a> : AHRS using complementary filter in fixed point.</li>
 <li><a class="el" href="module__ahrs_madgwick.html">ahrs_madgwick module</a> : AHRS using IMU (accel, gyro) only with Madwick implementation.</li>
 <li><a class="el" href="module__ahrs_sim.html">ahrs_sim module</a> : Simple simulation of the AHRS result.</li>
@@ -201,6 +199,7 @@ Boards modules</h2>
 <li><a class="el" href="module__board_matek_f765_wing.html">board_matek_f765_wing module</a> : Autoload several onboard sensors and modules</li>
 <li><a class="el" href="module__board_tawaki.html">board_tawaki module</a> : Autoload several onboard sensors for the Tawaki board with proper configuration</li>
 <li><a class="el" href="module__opa_controller.html">opa_controller module</a> : Controller for OPA board functionalities</li>
+<li><a class="el" href="module__power_switch.html">power_switch module</a> : Simple power switch module to set a specific GPIO pin</li>
 </ul>
 <h2><a class="anchor" id="modules_category_calibration"></a>
 Calibration modules</h2>
@@ -408,11 +407,7 @@ Imu modules</h2>
 <li><a class="el" href="module__imu_chimera.html">imu_chimera module</a> : MPU9250 IMU via SPI.</li>
 <li><a class="el" href="module__imu_common.html">imu_common module</a> : Common part for all IMUs.</li>
 <li><a class="el" href="module__imu_disco.html">imu_disco module</a> : Driver for IMU on the Parrot Disco drone.</li>
-<li><a class="el" href="module__imu_drotek_10dof_v2.html">imu_drotek_10dof_v2 module</a> : Drotek 10DOF V2 IMU via I2C.</li>
 <li><a class="el" href="module__imu_elle0.html">imu_elle0 module</a> : MPU9250 IMU via SPI.</li>
-<li><a class="el" href="module__imu_gl1.html">imu_gl1 module</a> : IMU from Goodluckbuy.</li>
-<li><a class="el" href="module__imu_krooz_sd.html">imu_krooz_sd module</a> : IMU on KroozSD board.</li>
-<li><a class="el" href="module__imu_krooz_sd_memsic.html">imu_krooz_sd_memsic module</a> : IMU on KroozSD board.</li>
 <li><a class="el" href="module__imu_lisa_m_v2_1.html">imu_lisa_m_v2.1 module</a> : IMU on Lisa/M and MX v2.1 boards.</li>
 <li><a class="el" href="module__imu_lisa_mx_v2_1.html">imu_lisa_mx_v2.1 module</a> : IMU on Lisa/MX v2.1 boards.</li>
 <li><a class="el" href="module__imu_lisa_s_v1_0.html">imu_lisa_s_v1.0 module</a> : IMU on LisaS board.</li>
@@ -422,16 +417,12 @@ Imu modules</h2>
 <li><a class="el" href="module__imu_mpu9250.html">imu_mpu9250 module</a> : Test module for the mpu9250 with I2C</li>
 <li><a class="el" href="module__imu_mpu9250_i2c.html">imu_mpu9250_i2c module</a> : IMU with MPU9250 via I2C.</li>
 <li><a class="el" href="module__imu_mpu9250_spi.html">imu_mpu9250_spi module</a> : IMU with MPU9250 via SPI.</li>
-<li><a class="el" href="module__imu_navstik.html">imu_navstik module</a> : Navstik IMU: MPU60x0 and HMC5883 via I2C.</li>
 <li><a class="el" href="module__imu_nps.html">imu_nps module</a> : Simulated IMU for NPS.</li>
 <li><a class="el" href="module__imu_openpilot_revo.html">imu_openpilot_revo module</a> : Driver for IMU on OpenPilot Revo board.</li>
 <li><a class="el" href="module__imu_openpilot_revo_nano.html">imu_openpilot_revo_nano module</a> : IMU driver for OpenPilot Revo Nano.</li>
-<li><a class="el" href="module__imu_pprzuav.html">imu_pprzuav module</a> : PPZUAV IMU.</li>
 <li><a class="el" href="module__imu_px4fmu_v1_7.html">imu_px4fmu_v1.7 module</a> : MPU6000 via SPI and HMC5883 via I2C on the PX4FMU v1.7 board</li>
 <li><a class="el" href="module__imu_px4fmu_v2_4.html">imu_px4fmu_v2.4 module</a> : PX4 Pixhawk IMU via SPI.</li>
 <li><a class="el" href="module__imu_sim.html">imu_sim module</a> : Dummy IMU for SIM.</li>
-<li><a class="el" href="module__imu_swing.html">imu_swing module</a> : Driver for IMU on the Parrot Swing drone.</li>
-<li><a class="el" href="module__imu_um6.html">imu_um6 module</a> : CHR-UM6 IMU.</li>
 <li><a class="el" href="module__imu_vectornav.html">imu_vectornav module</a> : Vectornav VN-200 over uart used as IMU.</li>
 </ul>
 <h2><a class="anchor" id="modules_category_ins"></a>
@@ -778,7 +769,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:33 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

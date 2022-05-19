@@ -210,7 +210,6 @@ var menudata={children:[
 {text:"r",url:"globals_enum_r.html#index_r"},
 {text:"s",url:"globals_enum_s.html#index_s"},
 {text:"t",url:"globals_enum_t.html#index_t"},
-{text:"u",url:"globals_enum_u.html#index_u"},
 {text:"v",url:"globals_enum_v.html#index_v"},
 {text:"w",url:"globals_enum_w.html#index_w"},
 {text:"z",url:"globals_enum_z.html#index_z"}]},

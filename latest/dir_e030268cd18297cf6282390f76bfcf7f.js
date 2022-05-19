@@ -5,10 +5,10 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "bebop", "dir_1e1e24cfb731b3b06114ecddfd068653.html", "dir_1e1e24cfb731b3b06114ecddfd068653" ],
     [ "chimera", "dir_130c85d5eb72b973f996af41d7a72ae6.html", "dir_130c85d5eb72b973f996af41d7a72ae6" ],
     [ "crazyflie", "dir_ccb8e4b2d77705d6c10feb227c7a02be.html", "dir_ccb8e4b2d77705d6c10feb227c7a02be" ],
+    [ "cube", "dir_df63d61584b05e9accdb3c5a4f342baf.html", "dir_df63d61584b05e9accdb3c5a4f342baf" ],
     [ "disco", "dir_cbcb990d5f2f1cb4eb127eac39be5277.html", "dir_cbcb990d5f2f1cb4eb127eac39be5277" ],
     [ "elle0", "dir_205729c7aa42a57645cebf4e1f89f92d.html", "dir_205729c7aa42a57645cebf4e1f89f92d" ],
     [ "holybro", "dir_625f21b8b478b3f07f7b994d90f21459.html", "dir_625f21b8b478b3f07f7b994d90f21459" ],
-    [ "krooz", "dir_322085cfe7bd48fa6c9bcf3bf3c8af11.html", "dir_322085cfe7bd48fa6c9bcf3bf3c8af11" ],
     [ "lia", "dir_61f9b35e17072e817ba1b199e0e0fa7c.html", "dir_61f9b35e17072e817ba1b199e0e0fa7c" ],
     [ "lisa_l", "dir_58f803b20293fcf9accb3156b13a6ed5.html", "dir_58f803b20293fcf9accb3156b13a6ed5" ],
     [ "lisa_m", "dir_145fb4f8ee0a9eed1c6459cedb494b89.html", "dir_145fb4f8ee0a9eed1c6459cedb494b89" ],
@@ -16,13 +16,11 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "lisa_mxs", "dir_90ae65582e264cb543676e812d131a6a.html", "dir_90ae65582e264cb543676e812d131a6a" ],
     [ "lisa_s", "dir_bcb78b89155ca066c5a0666240dabcfd.html", "dir_bcb78b89155ca066c5a0666240dabcfd" ],
     [ "mateksys", "dir_8ac24fb6e8483987b2ade80e823ec3a9.html", "dir_8ac24fb6e8483987b2ade80e823ec3a9" ],
-    [ "navstik", "dir_95231c0abeec1f69ab56c761789996b0.html", "dir_95231c0abeec1f69ab56c761789996b0" ],
     [ "naze32", "dir_795a4c131357d0186c095fcb6f3e6215.html", "dir_795a4c131357d0186c095fcb6f3e6215" ],
     [ "nucleo", "dir_3a7735853c2e0da45622dafdded2b7a3.html", "dir_3a7735853c2e0da45622dafdded2b7a3" ],
     [ "opa_ap", "dir_9749bdb0f197d170789914bb8b6d9688.html", "dir_9749bdb0f197d170789914bb8b6d9688" ],
     [ "openpilot_revo", "dir_6a8e3fbfa518964989e870325a9bf632.html", "dir_6a8e3fbfa518964989e870325a9bf632" ],
     [ "px4fmu", "dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html", "dir_a047bcdfdfeeaf1b1eee45d5b84ca8be" ],
-    [ "swing", "dir_ac03d41c96f56bce96151277973f6cb5.html", "dir_ac03d41c96f56bce96151277973f6cb5" ],
     [ "tawaki", "dir_a602d89a86e137af83bdeb12fdb83ab8.html", "dir_a602d89a86e137af83bdeb12fdb83ab8" ],
     [ "apogee_1.0.h", "apogee__1_80_8h.html", "apogee__1_80_8h" ],
     [ "ardrone2.h", "ardrone2_8h.html", "ardrone2_8h" ],
@@ -63,6 +61,5 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "px4fmu_1.7.h", "px4fmu__1_87_8h.html", "px4fmu__1_87_8h" ],
     [ "px4fmu_2.4.h", "px4fmu__2_84_8h.html", "px4fmu__2_84_8h" ],
     [ "px4fmu_4.0.h", "px4fmu__4_80_8h.html", "px4fmu__4_80_8h" ],
-    [ "px4io_2.4.h", "px4io__2_84_8h.html", "px4io__2_84_8h" ],
-    [ "swing.h", "swing_8h.html", "swing_8h" ]
+    [ "px4io_2.4.h", "px4io__2_84_8h.html", "px4io__2_84_8h" ]
 ];

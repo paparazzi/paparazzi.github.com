@@ -1,6 +1,6 @@
 var lis3mdl_8h_structLis3mdl =
 [
-    [ "data", "lis3mdl_8h.html#a4068249eb354bb6462e73201cc98343b", null ],
+    [ "data", "lis3mdl_8h.html#a51f96c574bd35674ce2d5b412db35252", null ],
     [ "data_available", "lis3mdl_8h.html#a4d1112c9c72730961df618e5d64f3c5c", null ],
     [ "i2c_p", "lis3mdl_8h.html#a6e253d291c25222e60d7bc2257b90016", null ],
     [ "i2c_trans", "lis3mdl_8h.html#a13e797a23e20bd20cb536beb8f4d1c2f", null ],

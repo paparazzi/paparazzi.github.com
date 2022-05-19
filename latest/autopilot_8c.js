@@ -19,7 +19,6 @@ var autopilot_8c =
     [ "autopilot_set_kill_throttle", "autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e", null ],
     [ "autopilot_set_mode", "autopilot_8c.html#a1b657630df5b70390e96f4964390210a", null ],
     [ "autopilot_set_motors_on", "autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5", null ],
-    [ "autopilot_set_power_switch", "autopilot_8c.html#ab4bfc1bc0aad4445c9c7fea0b3cd0895", null ],
     [ "autopilot_SetModeHandler", "autopilot_8c.html#a9cea92496fd699a395a86b92ce948e89", null ],
     [ "autopilot_store_settings", "autopilot_8c.html#ad7f33b4013b136243b2e908436b911b9", null ],
     [ "autopilot_throttle_killed", "autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8", null ],

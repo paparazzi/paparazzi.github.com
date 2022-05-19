@@ -10,5 +10,5 @@ var dir_ebfa5059daba0d85a68f1520147b1a51 =
     [ "my_debug_servo.h", "my__debug__servo_8h.html", "my__debug__servo_8h" ],
     [ "test_bswap.c", "test__bswap_8c.html", "test__bswap_8c" ],
     [ "uart_tunnel.c", "uart__tunnel_8c.html", "uart__tunnel_8c" ],
-    [ "usb_ser_hw.c", "usb__ser__hw_8c.html", "usb__ser__hw_8c" ]
+    [ "usb_ser_hw.c", "stm32_2usb__ser__hw_8c.html", "stm32_2usb__ser__hw_8c" ]
 ];

@@ -1,7 +1,7 @@
 var ist8310_8h =
 [
     [ "IST8310", "ist8310_8h.html#structIST8310", [
-      [ "data", "ist8310_8h.html#a226a3c76d19c564457ccb2dadb52761a", null ],
+      [ "data", "ist8310_8h.html#a153a653e060ec026bc38163d020d62cd", null ],
       [ "data_available", "ist8310_8h.html#ac6bf21cdccc141e0316a8a74670f804e", null ],
       [ "i2c_p", "ist8310_8h.html#ab7421af53afad01067d840280c887abd", null ],
       [ "i2c_trans", "ist8310_8h.html#a1f50050071055cc7acc7940fdc314688", null ],

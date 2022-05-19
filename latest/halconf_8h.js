@@ -1,7 +1,7 @@
 var halconf_8h =
 [
     [ "_CHIBIOS_HAL_CONF_", "group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84", null ],
-    [ "_CHIBIOS_HAL_CONF_VER_7_1_", "group__HAL__CONF.html#gafcb5987e4a7612507d74d78d044b955d", null ],
+    [ "_CHIBIOS_HAL_CONF_VER_8_0_", "group__HAL__CONF.html#gae4d2ee57d42f6bf6ab17cf6ea78fbf4e", null ],
     [ "ADC_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#gac0893cb47e338c2dabad34b974a0a88d", null ],
     [ "ADC_USE_WAIT", "group__HAL__CONF.html#ga39e892a4090185fbdda9bb105bc03b4f", null ],
     [ "CAN_ENFORCE_USE_CALLBACKS", "group__HAL__CONF.html#gad4933b8609e6e61d34785dfc4ea4718f", null ],
@@ -49,8 +49,10 @@ var halconf_8h =
     [ "SERIAL_DEFAULT_BITRATE", "group__HAL__CONF.html#gacb4c08ac23f83ac9d58c50ff840de516", null ],
     [ "SERIAL_USB_BUFFERS_NUMBER", "group__HAL__CONF.html#ga0c332b2493fd2106beb13425549120fe", null ],
     [ "SERIAL_USB_BUFFERS_SIZE", "group__HAL__CONF.html#ga24727a5407c6a41af53b59588592da80", null ],
+    [ "SIO_DEFAULT_BITRATE", "group__HAL__CONF.html#gadf56cd41fe3c1b782319254f498f0840", null ],
+    [ "SIO_USE_SYNCHRONIZATION", "group__HAL__CONF.html#ga1af79383aebbf10e586d0b601cc07a6c", null ],
     [ "SPI_SELECT_MODE", "group__HAL__CONF.html#gabc1c76adbcd61b596f7af3c5448534a7", null ],
-    [ "SPI_USE_CIRCULAR", "group__HAL__CONF.html#gaff2fe83c1e61031eb8e1d65e450f323c", null ],
+    [ "SPI_USE_ASSERT_ON_ERROR", "group__HAL__CONF.html#ga24f1e6c4916a04f70e268c594faaa227", null ],
     [ "SPI_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga36d1818f9631f955f7cc94629b1d5498", null ],
     [ "SPI_USE_WAIT", "group__HAL__CONF.html#ga0c9ab1488423fa10a22f506c6e74b563", null ],
     [ "UART_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#gae689e57cf792af401c324de566038687", null ],

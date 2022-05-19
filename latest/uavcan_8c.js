@@ -9,6 +9,7 @@ var uavcan_8c =
     [ "uavcan_bind", "uavcan_8c.html#ae5140a66e4d2d1166229eac0ebb40869", null ],
     [ "uavcan_broadcast", "uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4", null ],
     [ "uavcan_init", "uavcan_8c.html#a4d583c42b105e62f758c5645a45fe9e7", null ],
+    [ "uavcanConfigureIface", "uavcan_8c.html#a6da616476026ef52eb6ce3ac0a0b9006", null ],
     [ "uavcanInitIface", "uavcan_8c.html#a61afe9956a4daba2b640dad2c3f4cc9e", null ],
     [ "uavcan_event_hd", "uavcan_8c.html#a974a05628c3d66a957498d8148b6f0d8", null ]
 ];

@@ -995,6 +995,18 @@ Macros</h2></td></tr>
 <tr class="separator:a072e61dabdc9b575fdeff3885a96b7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c2823c7fc8b90d45c63a7af28aa6a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#ae1c2823c7fc8b90d45c63a7af28aa6a5">S3_TIM_AF</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ae1c2823c7fc8b90d45c63a7af28aa6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddc843efed03effa9394c3892a74eec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#aaddc843efed03effa9394c3892a74eec">BOARD_GROUP_DECLFOREACH</a>(line,  group)</td></tr>
+<tr class="separator:aaddc843efed03effa9394c3892a74eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b">BOARD_GROUP_FOREACH</a>(line,  group)&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td></tr>
+<tr class="separator:a29f57021ab9e2b17f34ea5a58947a83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a275ff975b3c7f07a2009a32629e33e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e">BOARD_GROUP_DECLFOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)</td></tr>
+<tr class="separator:a8a275ff975b3c7f07a2009a32629e33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13">BOARD_GROUP_FOR</a>(<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>,  index,  group)&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td></tr>
+<tr class="separator:af7e7af7d45a9305435eac0c7cbebcf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b9cbda86163e55e01772d767403b8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#a33b9cbda86163e55e01772d767403b8c">ENERGY_SAVE_INPUT</a></td></tr>
+<tr class="separator:a33b9cbda86163e55e01772d767403b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="holybro_2kakute__f7_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d">ENERGY_SAVE_INPUT_SIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:aaf91e689e472afc97bbb7bff17ee7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2155,6 +2167,142 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a275ff975b3c7f07a2009a32629e33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a275ff975b3c7f07a2009a32629e33e">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group};    \</div>
+<div class="line">  for (ioline_t index=0, *<a class="code" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01583">1583</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaddc843efed03effa9394c3892a74eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddc843efed03effa9394c3892a74eec">&#9670;&nbsp;</a></span>BOARD_GROUP_DECLFOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_DECLFOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> ioline_t group ## _ARRAY[] = {group}; \</div>
+<div class="line">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01575">1575</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="af7e7af7d45a9305435eac0c7cbebcf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e7af7d45a9305435eac0c7cbebcf13">&#9670;&nbsp;</a></span>BOARD_GROUP_FOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t index=0, *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a> =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01587">1587</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a29f57021ab9e2b17f34ea5a58947a83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f57021ab9e2b17f34ea5a58947a83b">&#9670;&nbsp;</a></span>BOARD_GROUP_FOREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_GROUP_FOREACH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">line, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">group&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01579">1579</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
 <a id="a36f651ec32f75a293e9b8ccaf729da45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36f651ec32f75a293e9b8ccaf729da45">&#9670;&nbsp;</a></span>BOARD_KAKUTE_F7</h2>
 
@@ -2328,6 +2476,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01537">1537</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="a33b9cbda86163e55e01772d767403b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b9cbda86163e55e01772d767403b8c">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="holybro_2kakute__f7_2board_8h.html#aba47e7720e3ef1b1917f4cd8d3285402">LINE_LED1</a>, \</div>
+<div class="line">  LINE_S6, \</div>
+<div class="line">  LINE_SDCARD_CS, \</div>
+<div class="line">  LINE_S4, \</div>
+<div class="line">  LINE_S1, \</div>
+<div class="line">  LINE_OSD_CS, \</div>
+<div class="line">  LINE_S5, \</div>
+<div class="line">  LINE_IMU_CS, \</div>
+<div class="line">  LINE_S2, \</div>
+<div class="line">  LINE_S3</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01590">1590</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf91e689e472afc97bbb7bff17ee7c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf91e689e472afc97bbb7bff17ee7c9d">&#9670;&nbsp;</a></span>ENERGY_SAVE_INPUT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENERGY_SAVE_INPUT_SIZE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="holybro_2kakute__f7_2board_8h_source.html#l01601">1601</a> of file <a class="el" href="holybro_2kakute__f7_2board_8h_source.html">board.h</a>.</p>
 
 </div>
 </div>
@@ -9255,20 +9445,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Board-specific initialization code. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add your board-specific code, if any. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00261">261</a> of file <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html">board.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="arch_2chibios_2board_8c_source.html#l00312">312</a> of file <a class="el" href="arch_2chibios_2board_8c_source.html">board.c</a>.</p>
 
 </div>
 </div>
@@ -9294,6 +9473,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a3a4548c78267812a699f713ead3eb228"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a3a4548c78267812a699f713ead3eb228">PC08</a></div><div class="ttdeci">#define PC08</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00094">board.h:94</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a8b9f52e9ec0dc6e84685b56f36df69b1"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a8b9f52e9ec0dc6e84685b56f36df69b1">PC10</a></div><div class="ttdeci">#define PC10</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00096">board.h:96</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a40209933b84b34d0eb77e2997229667f"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a40209933b84b34d0eb77e2997229667f">OSC_IN</a></div><div class="ttdeci">#define OSC_IN</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00171">board.h:171</a></div></div>
+<div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_aba47e7720e3ef1b1917f4cd8d3285402"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#aba47e7720e3ef1b1917f4cd8d3285402">LINE_LED1</a></div><div class="ttdeci">#define LINE_LED1</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00244">board.h:244</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_ac503f3fa1dcadd16135e8a4b26de86c3"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#ac503f3fa1dcadd16135e8a4b26de86c3">PD08</a></div><div class="ttdeci">#define PD08</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00111">board.h:111</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_abc6d10b7c5eafeea2ea0af12df20a56f"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#abc6d10b7c5eafeea2ea0af12df20a56f">PK05</a></div><div class="ttdeci">#define PK05</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00227">board.h:227</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_acef6bc296abd4e588d71449034e36fa0"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#acef6bc296abd4e588d71449034e36fa0">PJ09</a></div><div class="ttdeci">#define PJ09</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00214">board.h:214</a></div></div>
@@ -9329,6 +9509,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a4fe0517acea8c2d1d7f1ffb97e660d7c"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a4fe0517acea8c2d1d7f1ffb97e660d7c">PF00</a></div><div class="ttdeci">#define PF00</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00137">board.h:137</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a241b59557c3e3c91418162ed4d682aaa"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a241b59557c3e3c91418162ed4d682aaa">SPI1_SCK</a></div><div class="ttdeci">#define SPI1_SCK</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00057">board.h:57</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_abb0a9fca732e9a1eed752b10b4ae51f0"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#abb0a9fca732e9a1eed752b10b4ae51f0">PD00</a></div><div class="ttdeci">#define PD00</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00103">board.h:103</a></div></div>
+<div class="ttc" id="asnake__gate__detection_8c_html_a0483d856b36b358ff3b62e6a3c6f95f1"><div class="ttname"><a href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a></div><div class="ttdeci">int * array</div><div class="ttdef"><b>Definition:</b> <a href="snake__gate__detection_8c_source.html#l00094">snake_gate_detection.c:94</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a54b1b8b62ad4d56d1e2b192c04381f2f"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a54b1b8b62ad4d56d1e2b192c04381f2f">PI03</a></div><div class="ttdeci">#define PI03</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00191">board.h:191</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a1f95578e4c946a06f20d8a14462a60ce"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a1f95578e4c946a06f20d8a14462a60ce">UART2_RX</a></div><div class="ttdeci">#define UART2_RX</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00109">board.h:109</a></div></div>
 <div class="ttc" id="aholybro_2kakute__f7_2board_8h_html_a4be390c8416751cbc4c3b3864f266839"><div class="ttname"><a href="holybro_2kakute__f7_2board_8h.html#a4be390c8416751cbc4c3b3864f266839">PH07</a></div><div class="ttdeci">#define PH07</div><div class="ttdef"><b>Definition:</b> <a href="holybro_2kakute__f7_2board_8h_source.html#l00178">board.h:178</a></div></div>
@@ -9464,7 +9645,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_625f21b8b478b3f07f7b994d90f21459.html">holybro</a></li><li class="navelem"><a class="el" href="dir_1bc6d69307112de088974f0344604332.html">kakute_f7</a></li><li class="navelem"><a class="el" href="holybro_2kakute__f7_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:27 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

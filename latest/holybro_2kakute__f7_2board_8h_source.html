@@ -1662,24 +1662,52 @@ $(document).ready(function(){initNavTree('holybro_2kakute__f7_2board_8h_source.h
 <div class="line"><a name="l01572"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#a072e61dabdc9b575fdeff3885a96b7f1"> 1572</a></span>&#160;<span class="preprocessor">#define S3_TIM_CH  2</span></div>
 <div class="line"><a name="l01573"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#ae1c2823c7fc8b90d45c63a7af28aa6a5"> 1573</a></span>&#160;<span class="preprocessor">#define S3_TIM_AF  1</span></div>
 <div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160; </div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;}</div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160; </div>
+<div class="line"><a name="l01575"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1575</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160; </div>
+<div class="line"><a name="l01579"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1579</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
+<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160; </div>
+<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160; </div>
+<div class="line"><a name="l01583"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1583</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160; </div>
+<div class="line"><a name="l01587"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1587</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160; </div>
+<div class="line"><a name="l01590"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#a33b9cbda86163e55e01772d767403b8c"> 1590</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUT \</span></div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;<span class="preprocessor">  LINE_LED1, \</span></div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;<span class="preprocessor">  LINE_S6, \</span></div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;<span class="preprocessor">  LINE_SDCARD_CS, \</span></div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;<span class="preprocessor">  LINE_S4, \</span></div>
+<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;<span class="preprocessor">  LINE_S1, \</span></div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;<span class="preprocessor">  LINE_OSD_CS, \</span></div>
+<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;<span class="preprocessor">  LINE_S5, \</span></div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;<span class="preprocessor">  LINE_IMU_CS, \</span></div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;<span class="preprocessor">  LINE_S2, \</span></div>
+<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;<span class="preprocessor">  LINE_S3</span></div>
+<div class="line"><a name="l01601"></a><span class="lineno"><a class="line" href="holybro_2kakute__f7_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d"> 1601</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUT_SIZE   10</span></div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160; </div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;}</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8c_source.html#l00261">board.c:261</a></div></div>
+<div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="arch_2chibios_2board_8c_source.html#l00312">board.c:312</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_625f21b8b478b3f07f7b994d90f21459.html">holybro</a></li><li class="navelem"><a class="el" href="dir_1bc6d69307112de088974f0344604332.html">kakute_f7</a></li><li class="navelem"><a class="el" href="holybro_2kakute__f7_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

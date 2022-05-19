@@ -108,6 +108,7 @@ Source Files</h2>
 <li><a class="el" href="serial__port_8c.html">arch/linux/serial_port.c</a></li>
 <li><a class="el" href="serial__port_8c.html">arch/linux/serial_port.c</a></li>
 <li>arch dependent: mcu_periph/uart_arch.c</li>
+<li>arch dependent: ./usb_ser_hw.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__uart"></a>
 Raw uart.xml file:</h2>
@@ -130,6 +131,7 @@ Raw uart.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uart.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uart_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;serial_port.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;arch/linux&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(ARCH), linux)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_ser_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq ($(filter $(ARCH),chibios stm32),)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;sim|nps|hitl&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;arch/linux&quot;</span>/&gt;</div>
@@ -144,7 +146,7 @@ Raw uart.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:33 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

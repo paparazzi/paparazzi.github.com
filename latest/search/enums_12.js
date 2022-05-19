@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['um6packetstatus_37716',['UM6PacketStatus',['../imu__um6_8h.html#a00d20b85c3a66188ef4e04a29754fddd',1,'imu_um6.h']]],
-  ['um6status_37717',['UM6Status',['../imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fc',1,'imu_um6.h']]]
+  ['vl53l1_5freadstatus_37668',['VL53L1_ReadStatus',['../vl53l1__platform_8h.html#a9e5b843dc7b6c98bdfeb0da9b6c4e69d',1,'vl53l1_platform.h']]],
+  ['vnmsgstatus_37669',['VNMsgStatus',['../vn200__serial_8h.html#a6f13abe7fa81c2a64e5d245d56f3f796',1,'vn200_serial.h']]],
+  ['vnstatus_37670',['VNStatus',['../vn200__serial_8h.html#a21fb50db739a912f41acbccf6bb4281d',1,'vn200_serial.h']]]
 ];

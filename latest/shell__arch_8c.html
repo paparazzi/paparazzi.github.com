@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('shell__arch_8c.html',''); initResizabl
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="printf_8h_source.html">printf.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usb__serial_8h_source.html">mcu_periph/usb_serial.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for shell_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,20 +104,22 @@ $(document).ready(function(){initNavTree('shell__arch_8c.html',''); initResizabl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="shell__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2modules_2core_2shell__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2modules_2core_2shell__arch_8c" id="sw_2airborne_2arch_2chibios_2modules_2core_2shell__arch_8c">
-<area shape="rect" title=" " alt="" coords="589,5,783,47"/>
-<area shape="rect" href="shell_8h.html" title=" " alt="" coords="113,102,270,129"/>
-<area shape="rect" href="microrlShell_8h.html" title="Simple CLI shell header." alt="" coords="606,95,766,136"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="423,102,563,129"/>
-<area shape="rect" href="printf_8h.html" title="Mini printf&#45;like functionality." alt="" coords="796,102,864,129"/>
-<area shape="rect" href="abi_8h.html" title=" " alt="" coords="913,102,1059,129"/>
-<area shape="rect" href="shell__arch_8h.html" title=" " alt="" coords="5,184,151,225"/>
-<area shape="rect" title=" " alt="" coords="656,273,711,300"/>
-<area shape="rect" title=" " alt="" coords="721,191,771,218"/>
-<area shape="rect" title=" " alt="" coords="175,191,349,218"/>
-<area shape="rect" title=" " alt="" coords="374,191,566,218"/>
-<area shape="rect" title=" " alt="" coords="591,191,645,218"/>
-<area shape="rect" title=" " alt="" coords="795,191,870,218"/>
-<area shape="rect" title=" " alt="" coords="945,191,1072,218"/>
+<area shape="rect" title=" " alt="" coords="337,5,532,47"/>
+<area shape="rect" href="shell_8h.html" title=" " alt="" coords="299,102,456,129"/>
+<area shape="rect" href="microrlShell_8h.html" title="Simple CLI shell header." alt="" coords="5,95,165,136"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="454,191,594,218"/>
+<area shape="rect" href="printf_8h.html" title="Mini printf&#45;like functionality." alt="" coords="202,102,270,129"/>
+<area shape="rect" href="abi_8h.html" title=" " alt="" coords="784,102,931,129"/>
+<area shape="rect" href="usb__serial_8h.html" title="arch independent USB API" alt="" coords="542,102,722,129"/>
+<area shape="rect" href="shell__arch_8h.html" title=" " alt="" coords="285,184,430,225"/>
+<area shape="rect" title=" " alt="" coords="190,273,245,300"/>
+<area shape="rect" title=" " alt="" coords="61,191,110,218"/>
+<area shape="rect" title=" " alt="" coords="269,273,443,300"/>
+<area shape="rect" title=" " alt="" coords="468,273,660,300"/>
+<area shape="rect" title=" " alt="" coords="685,273,739,300"/>
+<area shape="rect" title=" " alt="" coords="135,191,209,218"/>
+<area shape="rect" title=" " alt="" coords="831,191,958,218"/>
+<area shape="rect" title=" " alt="" coords="721,191,807,218"/>
 </map>
 </div>
 </div>
@@ -187,7 +190,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00048">48</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00055">55</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="abi__common_8h_source.html#l00074">ABI_FOREACH</a>, <a class="el" href="abi__common_8h_source.html#l00068">abi_struct::cb</a>, <a class="el" href="printf_8c_source.html#l00395">chprintf()</a>, and <a class="el" href="abi__common_8h_source.html#l00067">abi_struct::id</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -250,7 +253,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00036">36</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00037">37</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="printf_8c_source.html#l00395">chprintf()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -302,9 +305,9 @@ Variables</h2></td></tr>
 <p>Add dynamic entry. </p>
 <p>Add new shell entry. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00085">85</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00092">92</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00157">rtos_mon_init_arch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00160">rtos_mon_init_arch()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -338,9 +341,9 @@ Variables</h2></td></tr>
 
 <p>Arch init. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00093">93</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00100">100</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="microrlShell_8h_source.html#l00039">ShellConfig::sc_channel</a>, <a class="el" href="shell__arch_8c_source.html#l00077">shell_cfg</a>, and <a class="el" href="microrlShell_8c_source.html#l00382">shellInit()</a>.</p>
+<p class="reference">References <a class="el" href="microrlShell_8h_source.html#l00039">ShellConfig::sc_channel</a>, <a class="el" href="shell__arch_8c_source.html#l00084">shell_cfg</a>, and <a class="el" href="microrlShell_8c_source.html#l00378">shellInit()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shell_8c_source.html#l00029">shell_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -410,7 +413,7 @@ Variables</h2></td></tr>
 <div class="line">  {NULL, NULL}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00071">71</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00078">78</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
 </div>
 </div>
@@ -438,22 +441,22 @@ Variables</h2></td></tr>
 <div class="line">  <a class="code" href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a></div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00077">77</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__arch_8c_source.html#l00084">84</a> of file <a class="el" href="shell__arch_8c_source.html">shell_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__arch_8c_source.html#l00093">shell_init_arch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__arch_8c_source.html#l00100">shell_init_arch()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ashell__arch_8c_html_ae96cb88b7db05439ce2524ce5c571002"><div class="ttname"><a href="shell__arch_8c.html#ae96cb88b7db05439ce2524ce5c571002">cmd_abi</a></div><div class="ttdeci">static void cmd_abi(BaseSequentialStream *lchp, int argc, const char *const argv[])</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00048">shell_arch.c:48</a></div></div>
-<div class="ttc" id="ashell__arch_8c_html_a2f63715d4417957054da76e9d83340cf"><div class="ttname"><a href="shell__arch_8c.html#a2f63715d4417957054da76e9d83340cf">cmd_mem</a></div><div class="ttdeci">static void cmd_mem(BaseSequentialStream *lchp, int argc, const char *const argv[])</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00036">shell_arch.c:36</a></div></div>
-<div class="ttc" id="ashell__arch_8c_html_a33466362cf73cff51e1c6a7b8b3a1b12"><div class="ttname"><a href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a></div><div class="ttdeci">static const ShellCommand commands[]</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00071">shell_arch.c:71</a></div></div>
+<div class="ttc" id="ashell__arch_8c_html_ae96cb88b7db05439ce2524ce5c571002"><div class="ttname"><a href="shell__arch_8c.html#ae96cb88b7db05439ce2524ce5c571002">cmd_abi</a></div><div class="ttdeci">static void cmd_abi(BaseSequentialStream *lchp, int argc, const char *const argv[])</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00055">shell_arch.c:55</a></div></div>
+<div class="ttc" id="ashell__arch_8c_html_a2f63715d4417957054da76e9d83340cf"><div class="ttname"><a href="shell__arch_8c.html#a2f63715d4417957054da76e9d83340cf">cmd_mem</a></div><div class="ttdeci">static void cmd_mem(BaseSequentialStream *lchp, int argc, const char *const argv[])</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00037">shell_arch.c:37</a></div></div>
+<div class="ttc" id="ashell__arch_8c_html_a33466362cf73cff51e1c6a7b8b3a1b12"><div class="ttname"><a href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a></div><div class="ttdeci">static const ShellCommand commands[]</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00078">shell_arch.c:78</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_51637bc44748ed5b809b240786ff8f0c.html">core</a></li><li class="navelem"><a class="el" href="shell__arch_8c.html">shell_arch.c</a></li>
-    <li class="footer">Generated on Fri Apr 29 2022 11:58:27 for Paparazzi UAS by
+    <li class="footer">Generated on Thu May 19 2022 23:03:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
