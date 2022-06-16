@@ -155,6 +155,7 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="gvf_8h.html">gvf.h</a></li>
+<li><a class="el" href="gvf__low__level__control_8h.html">gvf_low_level_control.h</a></li>
 <li><a class="el" href="gvf__line_8h.html">trajectories/gvf_line.h</a></li>
 <li><a class="el" href="gvf__sin_8h.html">trajectories/gvf_sin.h</a></li>
 <li><a class="el" href="gvf__ellipse_8h.html">trajectories/gvf_ellipse.h</a></li>
@@ -164,11 +165,13 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="gvf_8c.html">modules/guidance/gvf/gvf.c</a></li>
+<li><a class="el" href="gvf__low__level__control_8c.html">modules/guidance/gvf/gvf_low_level_control.c</a></li>
 <li><a class="el" href="gvf__line_8c.html">modules/guidance/gvf/trajectories/gvf_line.c</a></li>
 <li><a class="el" href="gvf__sin_8c.html">modules/guidance/gvf/trajectories/gvf_sin.c</a></li>
 <li><a class="el" href="gvf__ellipse_8c.html">modules/guidance/gvf/trajectories/gvf_ellipse.c</a></li>
 <li><a class="el" href="nav__survey__polygon__gvf_8c.html">modules/guidance/gvf/nav/nav_survey_polygon_gvf.c</a></li>
 <li><a class="el" href="gvf_8c.html">modules/guidance/gvf/gvf.c</a></li>
+<li><a class="el" href="gvf__low__level__control_8c.html">modules/guidance/gvf/gvf_low_level_control.c</a></li>
 <li><a class="el" href="gvf__line_8c.html">modules/guidance/gvf/trajectories/gvf_line.c</a></li>
 <li><a class="el" href="gvf__sin_8c.html">modules/guidance/gvf/trajectories/gvf_sin.c</a></li>
 <li><a class="el" href="gvf__ellipse_8c.html">modules/guidance/gvf/trajectories/gvf_ellipse.c</a></li>
@@ -239,6 +242,7 @@ Raw gvf_module.xml file:</h2>
 <div class="line"> </div>
 <div class="line">   &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf.h&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_low_level_control.h&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_line.h&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_sin.h&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_ellipse.h&quot;</span>/&gt;</div>
@@ -249,6 +253,7 @@ Raw gvf_module.xml file:</h2>
 <div class="line"> </div>
 <div class="line">   &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;fixedwing&quot;</span>&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_low_level_control.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_line.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_sin.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_ellipse.c&quot;</span>/&gt;</div>
@@ -257,6 +262,7 @@ Raw gvf_module.xml file:</h2>
 <div class="line"> </div>
 <div class="line">   &lt;<span class="keywordtype">makefile</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rover&quot;</span>&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf.c&quot;</span>/&gt;</div>
+<div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gvf_low_level_control.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_line.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_sin.c&quot;</span>/&gt;</div>
 <div class="line">     &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;trajectories/gvf_ellipse.c&quot;</span>/&gt;</div>
@@ -272,7 +278,7 @@ Raw gvf_module.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue May 24 2022 21:40:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Jun 16 2022 12:28:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

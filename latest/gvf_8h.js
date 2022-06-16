@@ -4,7 +4,13 @@ var gvf_8h =
       [ "error", "gvf_8h.html#a0e63f9cdee0f1822f27fd383d1ad1af8", null ],
       [ "ke", "gvf_8h.html#a01c8f9b9e753f291c05e4ce3cda5f9c2", null ],
       [ "kn", "gvf_8h.html#ac9b60793a20f866e4877a9a92e3b8e0f", null ],
+      [ "omega", "gvf_8h.html#aeff4aeb0554025e3633548201ee291d7", null ],
       [ "s", "gvf_8h.html#a3ec80a36f1f7ecfd1924f0bcba7a349b", null ]
+    ] ],
+    [ "gvf_st", "gvf_8h.html#structgvf__st", [
+      [ "course", "gvf_8h.html#ab760c6ce880beb9bf71f153dd415ae0e", null ],
+      [ "px_dot", "gvf_8h.html#aba150373aae175094a7fb3dbe2bf2e95", null ],
+      [ "py_dot", "gvf_8h.html#a0f9d463e0584f5216571e0074eda8d60", null ]
     ] ],
     [ "gvf_tra", "gvf_8h.html#structgvf__tra", [
       [ "p", "gvf_8h.html#a3114f8536f3f94e52b4fce682938e9a2", null ],
@@ -57,5 +63,6 @@ var gvf_8h =
     [ "gvf_sin_wp_alpha", "gvf_8h.html#a685f52908809609c5eb79676d03cd69e", null ],
     [ "gvf_sin_XY_alpha", "gvf_8h.html#a9af1a61d98cb2c59282573ecadeb364d", null ],
     [ "gvf_control", "gvf_8h.html#a5f5e9220214385223a75b05a35bcc012", null ],
+    [ "gvf_state", "gvf_8h.html#a8627db83a7e07235b19db8742f0aaa64", null ],
     [ "gvf_trajectory", "gvf_8h.html#aae566ae882cd2fac5d8335b0a7ea5297", null ]
 ];

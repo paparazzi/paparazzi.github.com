@@ -480,7 +480,9 @@ var onboard_modules =
     ] ],
     [ "video_rtp_stream module", "module__video_rtp_stream.html", [
       [ "Example for airframe file", "module__video_rtp_stream.html#module_load_example__video_rtp_stream", null ],
-      [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", null ],
+      [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", [
+        [ "Define Options", "module__video_rtp_stream.html#define", null ]
+      ] ],
       [ "Module functions", "module__video_rtp_stream.html#functions__video_rtp_stream", [
         [ "Raw video_rtp_stream.xml file:", "module__video_rtp_stream.html#module_xml__video_rtp_stream", null ]
       ] ]
@@ -657,8 +659,17 @@ var onboard_modules =
     ] ],
     [ "extra_dl module", "module__extra_dl.html", [
       [ "Example for airframe file", "module__extra_dl.html#module_load_example__extra_dl", null ],
-      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", null ],
+      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", [
+        [ "Configure Options", "module__extra_dl.html#configure", null ]
+      ] ],
       [ "Module functions", "module__extra_dl.html#functions__extra_dl", [
+        [ "Init Functions", "module__extra_dl.html#init_functions", null ],
+        [ "Event Functions", "module__extra_dl.html#event_functions", null ],
+        [ "Periodic Functions", "module__extra_dl.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__extra_dl.html#files", [
+        [ "Header Files", "module__extra_dl.html#headers", null ],
+        [ "Source Files", "module__extra_dl.html#sources", null ],
         [ "Raw extra_dl.xml file:", "module__extra_dl.html#module_xml__extra_dl", null ]
       ] ]
     ] ],
@@ -1125,7 +1136,9 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
+        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
@@ -1190,12 +1203,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1235,13 +1248,9 @@ var onboard_modules =
     ] ],
     [ "imu_disco module", "module__imu_disco.html", [
       [ "Example for airframe file", "module__imu_disco.html#module_load_example__imu_disco", null ],
-      [ "Module configuration options", "module__imu_disco.html#configuration__imu_disco", [
-        [ "Airframe file section", "module__imu_disco.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_disco.html#configuration__imu_disco", null ],
       [ "Auto-loaded modules", "module__imu_disco.html#autoloads__imu_disco", null ],
       [ "Module functions", "module__imu_disco.html#functions__imu_disco", [
-        [ "Init Functions", "module__imu_disco.html#init_functions", null ],
-        [ "Event Functions", "module__imu_disco.html#event_functions", null ],
         [ "Raw imu_disco.xml file:", "module__imu_disco.html#module_xml__imu_disco", null ]
       ] ]
     ] ],
@@ -1635,11 +1644,6 @@ var onboard_modules =
     [ "openlog module", "module__openlog.html", [
       [ "Example for airframe file", "module__openlog.html#module_load_example__openlog", null ],
       [ "Module functions", "module__openlog.html#functions__openlog", [
-        [ "Periodic Functions", "module__openlog.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__openlog.html#files", [
-        [ "Header Files", "module__openlog.html#headers", null ],
-        [ "Source Files", "module__openlog.html#sources", null ],
         [ "Raw openlog.xml file:", "module__openlog.html#module_xml__openlog", null ]
       ] ]
     ] ],
@@ -1689,7 +1693,6 @@ var onboard_modules =
     [ "sys_time module", "module__sys_time.html", [
       [ "Example for airframe file", "module__sys_time.html#module_load_example__sys_time", null ],
       [ "Module configuration options", "module__sys_time.html#configuration__sys_time", [
-        [ "Configure Options", "module__sys_time.html#configure", null ],
         [ "Raw sys_time.xml file:", "module__sys_time.html#module_xml__sys_time", null ]
       ] ]
     ] ],
@@ -2226,9 +2229,7 @@ var onboard_modules =
     ] ],
     [ "radio_control_spektrum module", "module__radio_control_spektrum.html", [
       [ "Example for airframe file", "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum", null ],
-      [ "Module configuration options", "module__radio_control_spektrum.html#configuration__radio_control_spektrum", [
-        [ "Define Options", "module__radio_control_spektrum.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__radio_control_spektrum.html#configuration__radio_control_spektrum", null ],
       [ "Module functions", "module__radio_control_spektrum.html#functions__radio_control_spektrum", [
         [ "Raw radio_control_spektrum.xml file:", "module__radio_control_spektrum.html#module_xml__radio_control_spektrum", null ]
       ] ]

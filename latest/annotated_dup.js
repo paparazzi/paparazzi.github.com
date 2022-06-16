@@ -546,6 +546,7 @@ var annotated_dup =
     [ "gvf_s_par", "gvf__sin_8h.html#structgvf__s__par", "gvf__sin_8h_structgvf__s__par" ],
     [ "gvf_seg", "gvf_8h.html#structgvf__seg", "gvf_8h_structgvf__seg" ],
     [ "gvf_seg_par", "gvf__line_8h.html#structgvf__seg__par", "gvf__line_8h_structgvf__seg__par" ],
+    [ "gvf_st", "gvf_8h.html#structgvf__st", "gvf_8h_structgvf__st" ],
     [ "gvf_SurveyPolyAdv", "nav__survey__polygon__gvf_8h.html#structgvf__SurveyPolyAdv", "nav__survey__polygon__gvf_8h_structgvf__SurveyPolyAdv" ],
     [ "gvf_tra", "gvf_8h.html#structgvf__tra", "gvf_8h_structgvf__tra" ],
     [ "HackHD", "hackhd_8h.html#structHackHD", "hackhd_8h_structHackHD" ],
