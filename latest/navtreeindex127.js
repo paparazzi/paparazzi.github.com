@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"module__traffic_info.html#functions__traffic_info":[1,285,1],
 "module__traffic_info.html#module_load_example__traffic_info":[1,285,0],
 "module__traffic_info.html#module_xml__traffic_info":[1,285,2,0],
 "module__trig_test.html":[1,83],
@@ -49,7 +50,6 @@ var NAVTREEINDEX127 =
 "module__video_exif.html#module_xml__video_exif":[1,67,1,0],
 "module__video_rtp_stream.html":[1,68],
 "module__video_rtp_stream.html#configuration__video_rtp_stream":[1,68,1],
-"module__video_rtp_stream.html#define":[1,68,1,0],
 "module__video_rtp_stream.html#functions__video_rtp_stream":[1,68,2],
 "module__video_rtp_stream.html#module_load_example__video_rtp_stream":[1,68,0],
 "module__video_rtp_stream.html#module_xml__video_rtp_stream":[1,68,2,0],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"module__obstacle_avoidance.html":[1,434],
 "module__obstacle_avoidance.html#functions__obstacle_avoidance":[1,434,1],
 "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance":[1,434,0],
 "module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,434,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "module__spi_master.html":[1,245],
 "module__spi_master.html#module_load_example__spi_master":[1,245,0],
 "module__spi_master.html#module_xml__spi_master":[1,245,0,0],
-"module__stabilization_adaptive_fw.html":[1,380],
-"module__stabilization_adaptive_fw.html#configuration__stabilization_adaptive_fw":[1,380,1]
+"module__stabilization_adaptive_fw.html":[1,380]
 };

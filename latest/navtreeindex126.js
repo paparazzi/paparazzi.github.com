@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__stabilization_adaptive_fw.html#configuration__stabilization_adaptive_fw":[1,380,1],
 "module__stabilization_adaptive_fw.html#functions__stabilization_adaptive_fw":[1,380,2],
 "module__stabilization_adaptive_fw.html#module_load_example__stabilization_adaptive_fw":[1,380,0],
 "module__stabilization_adaptive_fw.html#module_xml__stabilization_adaptive_fw":[1,380,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX126 =
 "module__tlsf.html#module_load_example__tlsf":[1,450,0],
 "module__tlsf.html#module_xml__tlsf":[1,450,2,0],
 "module__traffic_info.html":[1,285],
-"module__traffic_info.html#datalink_functions__traffic_info":[1,285,2],
-"module__traffic_info.html#functions__traffic_info":[1,285,1]
+"module__traffic_info.html#datalink_functions__traffic_info":[1,285,2]
 };

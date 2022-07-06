@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"module__logger_dataflash.html#module_xml__logger_dataflash":[1,231,2,0],
 "module__logger_file.html":[1,232],
 "module__logger_file.html#configuration__logger_file":[1,232,1],
 "module__logger_file.html#functions__logger_file":[1,232,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "module__object_tracking.html#configuration__object_tracking":[1,90,1],
 "module__object_tracking.html#functions__object_tracking":[1,90,2],
 "module__object_tracking.html#module_load_example__object_tracking":[1,90,0],
-"module__object_tracking.html#module_xml__object_tracking":[1,90,2,0],
-"module__obstacle_avoidance.html":[1,434]
+"module__object_tracking.html#module_xml__object_tracking":[1,90,2,0]
 };

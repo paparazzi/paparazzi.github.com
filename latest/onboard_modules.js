@@ -358,7 +358,9 @@ var onboard_modules =
     ] ],
     [ "generic_com module", "module__generic_com.html", [
       [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
-      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
+      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", [
+        [ "Configure Options", "module__generic_com.html#configure", null ]
+      ] ],
       [ "Module functions", "module__generic_com.html#functions__generic_com", [
         [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
       ] ]
@@ -480,9 +482,7 @@ var onboard_modules =
     ] ],
     [ "video_rtp_stream module", "module__video_rtp_stream.html", [
       [ "Example for airframe file", "module__video_rtp_stream.html#module_load_example__video_rtp_stream", null ],
-      [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", [
-        [ "Define Options", "module__video_rtp_stream.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", null ],
       [ "Module functions", "module__video_rtp_stream.html#functions__video_rtp_stream", [
         [ "Raw video_rtp_stream.xml file:", "module__video_rtp_stream.html#module_xml__video_rtp_stream", null ]
       ] ]
@@ -659,17 +659,8 @@ var onboard_modules =
     ] ],
     [ "extra_dl module", "module__extra_dl.html", [
       [ "Example for airframe file", "module__extra_dl.html#module_load_example__extra_dl", null ],
-      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", [
-        [ "Configure Options", "module__extra_dl.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", null ],
       [ "Module functions", "module__extra_dl.html#functions__extra_dl", [
-        [ "Init Functions", "module__extra_dl.html#init_functions", null ],
-        [ "Event Functions", "module__extra_dl.html#event_functions", null ],
-        [ "Periodic Functions", "module__extra_dl.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__extra_dl.html#files", [
-        [ "Header Files", "module__extra_dl.html#headers", null ],
-        [ "Source Files", "module__extra_dl.html#sources", null ],
         [ "Raw extra_dl.xml file:", "module__extra_dl.html#module_xml__extra_dl", null ]
       ] ]
     ] ],
@@ -850,7 +841,9 @@ var onboard_modules =
     ] ],
     [ "digital_cam_shoot_rc module", "module__digital_cam_shoot_rc.html", [
       [ "Example for airframe file", "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc", null ],
-      [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", null ],
+      [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", [
+        [ "Define Options", "module__digital_cam_shoot_rc.html#define", null ]
+      ] ],
       [ "Module functions", "module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc", [
         [ "Raw digital_cam_shoot_rc.xml file:", "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc", null ]
       ] ]
@@ -1136,9 +1129,7 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
-        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
@@ -1203,12 +1194,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1220,9 +1211,18 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
+        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
+      ] ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
+        [ "Init Functions", "module__imu_bebop.html#init_functions", null ],
+        [ "Event Functions", "module__imu_bebop.html#event_functions", null ],
+        [ "Periodic Functions", "module__imu_bebop.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__imu_bebop.html#files", [
+        [ "Header Files", "module__imu_bebop.html#headers", null ],
+        [ "Source Files", "module__imu_bebop.html#sources", null ],
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
     ] ],
