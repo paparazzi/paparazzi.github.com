@@ -186,8 +186,12 @@ var onboard_modules =
     ] ],
     [ "ahrs_chimu_uart module", "module__ahrs_chimu_uart.html", [
       [ "Example for airframe file", "module__ahrs_chimu_uart.html#module_load_example__ahrs_chimu_uart", null ],
-      [ "Module configuration options", "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart", null ],
+      [ "Module configuration options", "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart", [
+        [ "Configure Options", "module__ahrs_chimu_uart.html#configure", null ],
+        [ "Define Options", "module__ahrs_chimu_uart.html#define", null ]
+      ] ],
       [ "Module functions", "module__ahrs_chimu_uart.html#functions__ahrs_chimu_uart", [
+        [ "Event Functions", "module__ahrs_chimu_uart.html#event_functions", null ],
         [ "Raw ahrs_chimu_uart.xml file:", "module__ahrs_chimu_uart.html#module_xml__ahrs_chimu_uart", null ]
       ] ]
     ] ],
@@ -358,9 +362,7 @@ var onboard_modules =
     ] ],
     [ "generic_com module", "module__generic_com.html", [
       [ "Example for airframe file", "module__generic_com.html#module_load_example__generic_com", null ],
-      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", [
-        [ "Configure Options", "module__generic_com.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__generic_com.html#configuration__generic_com", null ],
       [ "Module functions", "module__generic_com.html#functions__generic_com", [
         [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
       ] ]
@@ -841,9 +843,7 @@ var onboard_modules =
     ] ],
     [ "digital_cam_shoot_rc module", "module__digital_cam_shoot_rc.html", [
       [ "Example for airframe file", "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc", null ],
-      [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", [
-        [ "Define Options", "module__digital_cam_shoot_rc.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", null ],
       [ "Module functions", "module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc", [
         [ "Raw digital_cam_shoot_rc.xml file:", "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc", null ]
       ] ]
@@ -1129,8 +1129,15 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
+        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
+        [ "Init Functions", "module__filter_1euro_imu.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__filter_1euro_imu.html#files", [
+        [ "Header Files", "module__filter_1euro_imu.html#headers", null ],
+        [ "Source Files", "module__filter_1euro_imu.html#sources", null ],
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
     ] ],
@@ -1194,12 +1201,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1211,18 +1218,9 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
-        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
-        [ "Init Functions", "module__imu_bebop.html#init_functions", null ],
-        [ "Event Functions", "module__imu_bebop.html#event_functions", null ],
-        [ "Periodic Functions", "module__imu_bebop.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__imu_bebop.html#files", [
-        [ "Header Files", "module__imu_bebop.html#headers", null ],
-        [ "Source Files", "module__imu_bebop.html#sources", null ],
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
       ] ]
     ] ],
@@ -2449,6 +2447,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__mag_hmc5843.html#module_load_example__mag_hmc5843", null ],
       [ "Module configuration options", "module__mag_hmc5843.html#configuration__mag_hmc5843", null ],
       [ "Module functions", "module__mag_hmc5843.html#functions__mag_hmc5843", [
+        [ "Periodic Functions", "module__mag_hmc5843.html#periodic_functions", null ],
         [ "Raw mag_hmc5843.xml file:", "module__mag_hmc5843.html#module_xml__mag_hmc5843", null ]
       ] ]
     ] ],

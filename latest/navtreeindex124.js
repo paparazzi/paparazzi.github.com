@@ -1,6 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"module__logger_dataflash.html#module_xml__logger_dataflash":[1,231,2,0],
 "module__logger_file.html":[1,232],
 "module__logger_file.html#configuration__logger_file":[1,232,1],
 "module__logger_file.html#functions__logger_file":[1,232,2],
@@ -36,7 +35,8 @@ var NAVTREEINDEX124 =
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,364,1],
 "module__mag_hmc5843.html#functions__mag_hmc5843":[1,364,2],
 "module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,364,0],
-"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,364,2,0],
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,364,2,1],
+"module__mag_hmc5843.html#periodic_functions":[1,364,2,0],
 "module__mag_hmc58xx.html":[1,365],
 "module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,365,1],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,365,2],
