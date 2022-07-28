@@ -1,11 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"module__logger_file.html":[1,232],
-"module__logger_file.html#configuration__logger_file":[1,232,1],
-"module__logger_file.html#functions__logger_file":[1,232,2],
-"module__logger_file.html#module_load_example__logger_file":[1,232,0],
-"module__logger_file.html#module_xml__logger_file":[1,232,2,0],
-"module__logger_sd_chibios.html":[1,233],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,233,1],
 "module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,233,2],
 "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,233,0],
@@ -35,8 +29,7 @@ var NAVTREEINDEX124 =
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,364,1],
 "module__mag_hmc5843.html#functions__mag_hmc5843":[1,364,2],
 "module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,364,0],
-"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,364,2,1],
-"module__mag_hmc5843.html#periodic_functions":[1,364,2,0],
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,364,2,0],
 "module__mag_hmc58xx.html":[1,365],
 "module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,365,1],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,365,2],
@@ -249,5 +242,12 @@ var NAVTREEINDEX124 =
 "module__object_tracking.html#configuration__object_tracking":[1,90,1],
 "module__object_tracking.html#functions__object_tracking":[1,90,2],
 "module__object_tracking.html#module_load_example__object_tracking":[1,90,0],
-"module__object_tracking.html#module_xml__object_tracking":[1,90,2,0]
+"module__object_tracking.html#module_xml__object_tracking":[1,90,2,0],
+"module__obstacle_avoidance.html":[1,434],
+"module__obstacle_avoidance.html#functions__obstacle_avoidance":[1,434,1],
+"module__obstacle_avoidance.html#module_load_example__obstacle_avoidance":[1,434,0],
+"module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,434,1,0],
+"module__opa_controller.html":[1,42],
+"module__opa_controller.html#functions__opa_controller":[1,42,1],
+"module__opa_controller.html#module_load_example__opa_controller":[1,42,0]
 };

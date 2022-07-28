@@ -186,12 +186,8 @@ var onboard_modules =
     ] ],
     [ "ahrs_chimu_uart module", "module__ahrs_chimu_uart.html", [
       [ "Example for airframe file", "module__ahrs_chimu_uart.html#module_load_example__ahrs_chimu_uart", null ],
-      [ "Module configuration options", "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart", [
-        [ "Configure Options", "module__ahrs_chimu_uart.html#configure", null ],
-        [ "Define Options", "module__ahrs_chimu_uart.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart", null ],
       [ "Module functions", "module__ahrs_chimu_uart.html#functions__ahrs_chimu_uart", [
-        [ "Event Functions", "module__ahrs_chimu_uart.html#event_functions", null ],
         [ "Raw ahrs_chimu_uart.xml file:", "module__ahrs_chimu_uart.html#module_xml__ahrs_chimu_uart", null ]
       ] ]
     ] ],
@@ -1066,7 +1062,9 @@ var onboard_modules =
     ] ],
     [ "guidance_full_pid_fw module", "module__guidance_full_pid_fw.html", [
       [ "Example for airframe file", "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw", null ],
-      [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", null ],
+      [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", [
+        [ "Airframe file section", "module__guidance_full_pid_fw.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw", [
         [ "Raw guidance_full_pid_fw.xml file:", "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw", null ]
       ] ]
@@ -1129,15 +1127,8 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
-        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
-        [ "Init Functions", "module__filter_1euro_imu.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__filter_1euro_imu.html#files", [
-        [ "Header Files", "module__filter_1euro_imu.html#headers", null ],
-        [ "Source Files", "module__filter_1euro_imu.html#sources", null ],
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
     ] ],
@@ -1191,13 +1182,13 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
@@ -2352,6 +2343,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__baro_bmp.html#module_load_example__baro_bmp", null ],
       [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", null ],
       [ "Module functions", "module__baro_bmp.html#functions__baro_bmp", [
+        [ "Event Functions", "module__baro_bmp.html#event_functions", null ],
         [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
       ] ]
     ] ],
@@ -2447,7 +2439,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__mag_hmc5843.html#module_load_example__mag_hmc5843", null ],
       [ "Module configuration options", "module__mag_hmc5843.html#configuration__mag_hmc5843", null ],
       [ "Module functions", "module__mag_hmc5843.html#functions__mag_hmc5843", [
-        [ "Periodic Functions", "module__mag_hmc5843.html#periodic_functions", null ],
         [ "Raw mag_hmc5843.xml file:", "module__mag_hmc5843.html#module_xml__mag_hmc5843", null ]
       ] ]
     ] ],
@@ -2543,8 +2534,17 @@ var onboard_modules =
     ] ],
     [ "sonar_pwm module", "module__sonar_pwm.html", [
       [ "Example for airframe file", "module__sonar_pwm.html#module_load_example__sonar_pwm", null ],
-      [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", null ],
+      [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", [
+        [ "Configure Options", "module__sonar_pwm.html#configure", null ],
+        [ "Define Options", "module__sonar_pwm.html#define", null ]
+      ] ],
       [ "Module functions", "module__sonar_pwm.html#functions__sonar_pwm", [
+        [ "Init Functions", "module__sonar_pwm.html#init_functions", null ],
+        [ "Periodic Functions", "module__sonar_pwm.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__sonar_pwm.html#files", [
+        [ "Header Files", "module__sonar_pwm.html#headers", null ],
+        [ "Source Files", "module__sonar_pwm.html#sources", null ],
         [ "Raw sonar_pwm.xml file:", "module__sonar_pwm.html#module_xml__sonar_pwm", null ]
       ] ]
     ] ],

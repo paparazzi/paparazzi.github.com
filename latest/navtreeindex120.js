@@ -1,7 +1,5 @@
 var NAVTREEINDEX120 =
 {
-"module__baro_hca.html#module_xml__baro_hca":[1,356,2,0],
-"module__baro_mpl3115.html":[1,357],
 "module__baro_mpl3115.html#configuration__baro_mpl3115":[1,357,1],
 "module__baro_mpl3115.html#functions__baro_mpl3115":[1,357,2],
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,357,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX120 =
 "module__digital_cam_i2c.html":[1,121],
 "module__digital_cam_i2c.html#configuration__digital_cam_i2c":[1,121,1],
 "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c":[1,121,3],
-"module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,121,2]
+"module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,121,2],
+"module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,121,0],
+"module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,121,3,0]
 };

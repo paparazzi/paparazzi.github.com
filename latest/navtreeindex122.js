@@ -1,12 +1,5 @@
 var NAVTREEINDEX122 =
 {
-"module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,150,3],
-"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,150,0],
-"module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,150,3,0],
-"module__gps_ubx_ucenter.html":[1,151],
-"module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,151,1],
-"module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter":[1,151,2],
-"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,151,0],
 "module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter":[1,151,2,0],
 "module__gps_udp.html":[1,152],
 "module__gps_udp.html#autoloads__gps_udp":[1,152,2],
@@ -29,6 +22,7 @@ var NAVTREEINDEX122 =
 "module__guidance_energy.html#module_load_example__guidance_energy":[1,154,0],
 "module__guidance_energy.html#module_xml__guidance_energy":[1,154,2,0],
 "module__guidance_full_pid_fw.html":[1,155],
+"module__guidance_full_pid_fw.html#af_section":[1,155,1,0],
 "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw":[1,155,1],
 "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw":[1,155,2],
 "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,155,0],
@@ -178,10 +172,10 @@ var NAVTREEINDEX122 =
 "module__imu_aspirin_v1_0.html":[1,173],
 "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0":[1,173,1],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,173,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,173,1,0],
 "module__imu_aspirin_v1_5.html":[1,174],
 "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5":[1,174,1],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,174,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,174,1,0],
 "module__imu_aspirin_v2_1.html":[1,175],
 "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1":[1,175,1],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,175,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX122 =
 "module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,188,1],
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,188,3],
 "module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,188,0],
-"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,188,3,0]
+"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,188,3,0],
+"module__imu_mpu60x0_i2c.html":[1,189],
+"module__imu_mpu60x0_i2c.html#autoloads__imu_mpu60x0_i2c":[1,189,2],
+"module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,189,1],
+"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,189,3],
+"module__imu_mpu60x0_i2c.html#module_load_example__imu_mpu60x0_i2c":[1,189,0],
+"module__imu_mpu60x0_i2c.html#module_xml__imu_mpu60x0_i2c":[1,189,3,0]
 };
