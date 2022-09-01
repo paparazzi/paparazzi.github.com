@@ -1,5 +1,14 @@
 var NAVTREEINDEX123 =
 {
+"module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,188,3],
+"module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,188,0],
+"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,188,3,0],
+"module__imu_mpu60x0_i2c.html":[1,189],
+"module__imu_mpu60x0_i2c.html#autoloads__imu_mpu60x0_i2c":[1,189,2],
+"module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,189,1],
+"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,189,3],
+"module__imu_mpu60x0_i2c.html#module_load_example__imu_mpu60x0_i2c":[1,189,0],
+"module__imu_mpu60x0_i2c.html#module_xml__imu_mpu60x0_i2c":[1,189,3,0],
 "module__imu_mpu9250.html":[1,190],
 "module__imu_mpu9250.html#autoloads__imu_mpu9250":[1,190,2],
 "module__imu_mpu9250.html#configuration__imu_mpu9250":[1,190,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX123 =
 "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,230,0],
 "module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,230,2,0],
 "module__logger_dataflash.html":[1,231],
-"module__logger_dataflash.html#configuration__logger_dataflash":[1,231,1],
-"module__logger_dataflash.html#functions__logger_dataflash":[1,231,2],
-"module__logger_dataflash.html#module_load_example__logger_dataflash":[1,231,0],
-"module__logger_dataflash.html#module_xml__logger_dataflash":[1,231,2,0],
-"module__logger_file.html":[1,232],
-"module__logger_file.html#configuration__logger_file":[1,232,1],
-"module__logger_file.html#functions__logger_file":[1,232,2],
-"module__logger_file.html#module_load_example__logger_file":[1,232,0],
-"module__logger_file.html#module_xml__logger_file":[1,232,2,0],
-"module__logger_sd_chibios.html":[1,233]
+"module__logger_dataflash.html#configuration__logger_dataflash":[1,231,1]
 };

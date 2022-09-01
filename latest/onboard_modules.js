@@ -1062,9 +1062,7 @@ var onboard_modules =
     ] ],
     [ "guidance_full_pid_fw module", "module__guidance_full_pid_fw.html", [
       [ "Example for airframe file", "module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw", null ],
-      [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", [
-        [ "Airframe file section", "module__guidance_full_pid_fw.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw", null ],
       [ "Module functions", "module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw", [
         [ "Raw guidance_full_pid_fw.xml file:", "module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw", null ]
       ] ]
@@ -1182,22 +1180,22 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1209,7 +1207,9 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
+        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
+      ] ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
@@ -1666,6 +1666,7 @@ var onboard_modules =
     [ "pipe module", "module__pipe.html", [
       [ "Example for airframe file", "module__pipe.html#module_load_example__pipe", null ],
       [ "Module configuration options", "module__pipe.html#configuration__pipe", [
+        [ "Define Options", "module__pipe.html#define", null ],
         [ "Raw pipe.xml file:", "module__pipe.html#module_xml__pipe", null ]
       ] ]
     ] ],
@@ -1717,6 +1718,13 @@ var onboard_modules =
     [ "dust_gp2y module", "module__dust_gp2y.html", [
       [ "Example for airframe file", "module__dust_gp2y.html#module_load_example__dust_gp2y", null ],
       [ "Module functions", "module__dust_gp2y.html#functions__dust_gp2y", [
+        [ "Init Functions", "module__dust_gp2y.html#init_functions", null ],
+        [ "Event Functions", "module__dust_gp2y.html#event_functions", null ],
+        [ "Periodic Functions", "module__dust_gp2y.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__dust_gp2y.html#files", [
+        [ "Header Files", "module__dust_gp2y.html#headers", null ],
+        [ "Source Files", "module__dust_gp2y.html#sources", null ],
         [ "Raw dust_gp2y.xml file:", "module__dust_gp2y.html#module_xml__dust_gp2y", null ]
       ] ]
     ] ],
@@ -2343,7 +2351,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__baro_bmp.html#module_load_example__baro_bmp", null ],
       [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", null ],
       [ "Module functions", "module__baro_bmp.html#functions__baro_bmp", [
-        [ "Event Functions", "module__baro_bmp.html#event_functions", null ],
         [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
       ] ]
     ] ],
@@ -2486,7 +2493,9 @@ var onboard_modules =
     ] ],
     [ "rpm_sensor module", "module__rpm_sensor.html", [
       [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
-      [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
+      [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", [
+        [ "Configure Options", "module__rpm_sensor.html#configure", null ]
+      ] ],
       [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
         [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
       ] ]
@@ -2534,17 +2543,8 @@ var onboard_modules =
     ] ],
     [ "sonar_pwm module", "module__sonar_pwm.html", [
       [ "Example for airframe file", "module__sonar_pwm.html#module_load_example__sonar_pwm", null ],
-      [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", [
-        [ "Configure Options", "module__sonar_pwm.html#configure", null ],
-        [ "Define Options", "module__sonar_pwm.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", null ],
       [ "Module functions", "module__sonar_pwm.html#functions__sonar_pwm", [
-        [ "Init Functions", "module__sonar_pwm.html#init_functions", null ],
-        [ "Periodic Functions", "module__sonar_pwm.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__sonar_pwm.html#files", [
-        [ "Header Files", "module__sonar_pwm.html#headers", null ],
-        [ "Source Files", "module__sonar_pwm.html#sources", null ],
         [ "Raw sonar_pwm.xml file:", "module__sonar_pwm.html#module_xml__sonar_pwm", null ]
       ] ]
     ] ],

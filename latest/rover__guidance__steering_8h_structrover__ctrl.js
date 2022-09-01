@@ -1,7 +1,6 @@
 var rover__guidance__steering_8h_structrover__ctrl =
 [
     [ "cmd", "rover__guidance__steering_8h.html#a1f6ca0aa3d0c6154bccd6b3c4dc94188", null ],
-    [ "gvf_omega", "rover__guidance__steering_8h.html#aa696546bf8066d49940845b2f0743eb9", null ],
     [ "kf", "rover__guidance__steering_8h.html#ad62ff79ebc8d14815b48b025c2244eb9", null ],
     [ "ki", "rover__guidance__steering_8h.html#a3c4b826163ee79a27d448d6238d92b2b", null ],
     [ "kp", "rover__guidance__steering_8h.html#aab21c9a701f5195d75992cd8106a19a9", null ],

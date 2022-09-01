@@ -28,6 +28,7 @@ var nav__rover__base_8h =
     [ "NavCircleQdr", "nav__rover__base_8h.html#a0809ecd41f0b888de7f9754e75caf82d", null ],
     [ "NavCourseCloseTo", "nav__rover__base_8h.html#a68ab3f04c3fcd85380c950db512fd97e", null ],
     [ "NavQdrCloseTo", "nav__rover__base_8h.html#a9f9ad9045eda753a7ea58359bd6a0581", null ],
+    [ "ROVER_BASE_SEND_TRAJECTORY", "nav__rover__base_8h.html#af731dd1c897290b1df9f758f70071e28", null ],
     [ "oval_status", "nav__rover__base_8h.html#a6b504fc3b9e256669f3d93dff3372bcf", [
       [ "OR12", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25", null ],
       [ "OC2", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437", null ],

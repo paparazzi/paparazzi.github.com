@@ -6,7 +6,6 @@ var rover__guidance__steering_8h =
     ] ],
     [ "rover_ctrl", "rover__guidance__steering_8h.html#structrover__ctrl", [
       [ "cmd", "rover__guidance__steering_8h.html#a1f6ca0aa3d0c6154bccd6b3c4dc94188", null ],
-      [ "gvf_omega", "rover__guidance__steering_8h.html#aa696546bf8066d49940845b2f0743eb9", null ],
       [ "kf", "rover__guidance__steering_8h.html#ad62ff79ebc8d14815b48b025c2244eb9", null ],
       [ "ki", "rover__guidance__steering_8h.html#a3c4b826163ee79a27d448d6238d92b2b", null ],
       [ "kp", "rover__guidance__steering_8h.html#aab21c9a701f5195d75992cd8106a19a9", null ],
@@ -27,7 +26,7 @@ var rover__guidance__steering_8h =
     [ "MIN_SPEED", "rover__guidance__steering_8h.html#ad5f5efaa5cb771bd06da4bfe6046809e", null ],
     [ "SetAPThrottleFromCommands", "rover__guidance__steering_8h.html#a922ae86b8a7be73c9c593aa554014b8f", null ],
     [ "SR_MEASURED_KF", "rover__guidance__steering_8h.html#a7101c08477da045a45739605723b960c", null ],
-    [ "rover_guidance_steering_heading_ctrl", "rover__guidance__steering_8h.html#a554f136fa0e0cae50c2f2d281bc6d9a9", null ],
+    [ "rover_guidance_steering_heading_ctrl", "rover__guidance__steering_8h.html#af0d1fdfe153cb3f80f189f59168e84f5", null ],
     [ "rover_guidance_steering_init", "rover__guidance__steering_8h.html#a81c86a467dc91f38fefae20de37feba3", null ],
     [ "rover_guidance_steering_kill", "rover__guidance__steering_8h.html#a0185a8119f285985444db413c3b51863", null ],
     [ "rover_guidance_steering_pid_reset", "rover__guidance__steering_8h.html#ac69bcf60f43fa5aaa6dd39af1a68e529", null ],

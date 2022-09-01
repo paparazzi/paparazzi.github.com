@@ -1,5 +1,9 @@
 var NAVTREEINDEX99 =
 {
+"link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43":[12,0,1,0,0,3,1,3,0,3],
+"link__mcu__hw_8h.html#a653d2ce62628ed8a24b986b1c9107833":[12,0,1,0,0,3,1,3,0,1],
+"link__mcu__hw_8h.html#a67f2b73e9152930dccf1e6d6d48c49f2":[12,0,1,0,0,3,1,3,0,0],
+"link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6":[12,0,1,0,0,3,1,3,0,2],
 "link__mcu__hw_8h_source.html":[12,0,1,0,0,3,1,3,0],
 "linux_2led__hw_8h.html":[12,0,1,0,0,1,2],
 "linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a":[12,0,1,0,0,1,2,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX99 =
 "lis3mdl_8c.html#ade1d75c22cd066e89f221420d918a43a":[12,0,1,0,7,60,8],
 "lis3mdl_8c.html#adef267980368bb88f5fa029f0480b697":[12,0,1,0,7,60,10],
 "lis3mdl_8c.html#ae5b263b603a14cd5493bfba49b1c192a":[12,0,1,0,7,60,5],
-"lis3mdl_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,60,0],
-"lis3mdl_8c.html#af00752ab8b60a2dc96c19c54901412b1":[12,0,1,0,7,60,28],
-"lis3mdl_8c.html#af653de6ff8c2ca71878ecbf4c1d7cf3e":[12,0,1,0,7,60,27],
-"lis3mdl_8c_source.html":[12,0,1,0,7,60],
-"lis3mdl_8h.html":[12,0,1,0,7,61]
+"lis3mdl_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,60,0]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX121 =
 {
+"module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,121,2],
+"module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,121,0],
+"module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,121,3,0],
 "module__digital_cam_servo.html":[1,122],
 "module__digital_cam_servo.html#configuration__digital_cam_servo":[1,122,1],
 "module__digital_cam_servo.html#functions__digital_cam_servo":[1,122,2],
@@ -43,9 +46,15 @@ var NAVTREEINDEX121 =
 "module__drop_zone.html#module_load_example__drop_zone":[1,279,0],
 "module__drop_zone.html#module_xml__drop_zone":[1,279,0,0],
 "module__dust_gp2y.html":[1,252],
+"module__dust_gp2y.html#event_functions":[1,252,1,1],
+"module__dust_gp2y.html#files":[1,252,2],
 "module__dust_gp2y.html#functions__dust_gp2y":[1,252,1],
+"module__dust_gp2y.html#headers":[1,252,2,0],
+"module__dust_gp2y.html#init_functions":[1,252,1,0],
 "module__dust_gp2y.html#module_load_example__dust_gp2y":[1,252,0],
-"module__dust_gp2y.html#module_xml__dust_gp2y":[1,252,1,0],
+"module__dust_gp2y.html#module_xml__dust_gp2y":[1,252,2,2],
+"module__dust_gp2y.html#periodic_functions":[1,252,1,2],
+"module__dust_gp2y.html#sources":[1,252,2,1],
 "module__dw1000_arduino.html":[1,118],
 "module__dw1000_arduino.html#configuration__dw1000_arduino":[1,118,1],
 "module__dw1000_arduino.html#functions__dw1000_arduino":[1,118,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX121 =
 "module__gps_ublox.html#functions__gps_ublox":[1,149,3],
 "module__gps_ublox.html#module_load_example__gps_ublox":[1,149,0],
 "module__gps_ublox.html#module_xml__gps_ublox":[1,149,4,0],
-"module__gps_ubx_i2c.html":[1,150],
-"module__gps_ubx_i2c.html#autoloads__gps_ubx_i2c":[1,150,2],
-"module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,150,1],
-"module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,150,3],
-"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,150,0],
-"module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,150,3,0],
-"module__gps_ubx_ucenter.html":[1,151],
-"module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,151,1],
-"module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter":[1,151,2],
-"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,151,0]
+"module__gps_ubx_i2c.html":[1,150]
 };

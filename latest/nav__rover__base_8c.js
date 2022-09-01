@@ -9,8 +9,6 @@ var nav__rover__base_8c =
     [ "nav_oval", "nav__rover__base_8c.html#afd0e05357829985f3000d7456e66ef61", null ],
     [ "nav_route", "nav__rover__base_8c.html#a9401bed0efdc4ee691c51e6399a0742d", null ],
     [ "nav_rover_init", "nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4", null ],
-    [ "send_circle", "nav__rover__base_8c.html#a85eca54f8ec2b08e0bbf90661612ed7c", null ],
     [ "send_nav_status", "nav__rover__base_8c.html#a2332bd79a09ee7d64b4e82cf14b2eaaa", null ],
-    [ "send_segment", "nav__rover__base_8c.html#aba649a025aa04b4a2ed1a655b1aa8cbc", null ],
     [ "nav_rover_base", "nav__rover__base_8c.html#aaa728ae3af312c7e738539fb50db7f0b", null ]
 ];

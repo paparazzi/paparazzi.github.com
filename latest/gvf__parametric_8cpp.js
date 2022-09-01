@@ -11,9 +11,11 @@ var gvf__parametric_8cpp =
     [ "gvf_parametric_control_3D", "gvf__parametric_8cpp.html#a49d1223a5f9fb26e697e3757d188bdd8", null ],
     [ "gvf_parametric_init", "gvf__parametric_8cpp.html#aa80145a553b0036341ea775c765d2496", null ],
     [ "gvf_parametric_set_direction", "gvf__parametric_8cpp.html#af24a622f0e72aab64554811a0952811c", null ],
-    [ "send_circle_parametric", "gvf__parametric_8cpp.html#ad0e2c86a9c62da247455753eef1bbb16", null ],
     [ "send_gvf_parametric", "gvf__parametric_8cpp.html#a86e19a8931ddd3bff1444785e073677d", null ],
     [ "gvf_parametric_control", "gvf__parametric_8cpp.html#a025bede321e4e1dd30401bd4ef541161", null ],
+    [ "gvf_parametric_elen", "gvf__parametric_8cpp.html#a02d086e55281b96ec97321b942205f47", null ],
+    [ "gvf_parametric_plen", "gvf__parametric_8cpp.html#ad99ada321d362dc026471d554452b4a6", null ],
+    [ "gvf_parametric_plen_wps", "gvf__parametric_8cpp.html#a866fbb2150a37beca89290528d3c7d84", null ],
     [ "gvf_parametric_t0", "gvf__parametric_8cpp.html#a90bb4fa6b299ffc7a6942d22b9305c9d", null ],
     [ "gvf_parametric_trajectory", "gvf__parametric_8cpp.html#aa9aa4d9309789f867ce5d6347aba2e7b", null ]
 ];

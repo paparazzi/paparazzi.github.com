@@ -1,5 +1,7 @@
 var NAVTREEINDEX203 =
 {
+"v4l2_8h.html#a1f683e79a4639d4e189f059f6c4ae268":[12,0,1,0,6,11,1,2,1,7],
+"v4l2_8h.html#a264f5d6955fb5f56d0693b5dacc4e7c9":[12,0,1,0,6,11,1,2,1,1,8],
 "v4l2_8h.html#a270f535b36219c98d07194542fa34edb":[12,0,1,0,6,11,1,2,1,1,0],
 "v4l2_8h.html#a28c87539b5eb24b4e9c162ac5703bf49":[12,0,1,0,6,11,1,2,1,1,3],
 "v4l2_8h.html#a3798643b3e99cd32ef724fc928d92e51":[12,0,1,0,6,11,1,2,1,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX203 =
 "video__usb__logger_8c.html#a48037f75df7ef6c2c81838e65dc73258":[12,0,1,0,6,11,46,8],
 "video__usb__logger_8c.html#a513b43b4ffa70d39abed0047e7cc0e26":[12,0,1,0,6,11,46,0],
 "video__usb__logger_8c.html#a76d53a434966f8690a315375c50b8a81":[12,0,1,0,6,11,46,6],
-"video__usb__logger_8c.html#a8dfbc751f11f51fb2020f0b6c3409510":[12,0,1,0,6,11,46,2],
-"video__usb__logger_8c.html#abc8ecf0e87a6e3a49488238acc2ceee8":[12,0,1,0,6,11,46,3],
-"video__usb__logger_8c.html#adf751b222ea73aa710b7529a7bd9f8de":[12,0,1,0,6,11,46,7]
+"video__usb__logger_8c.html#a8dfbc751f11f51fb2020f0b6c3409510":[12,0,1,0,6,11,46,2]
 };

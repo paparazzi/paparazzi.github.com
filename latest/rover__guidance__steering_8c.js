@@ -1,7 +1,7 @@
 var rover__guidance__steering_8c =
 [
     [ "AUTOPILOT_CORE_GUIDANCE_C", "rover__guidance__steering_8c.html#a20c52f51bc92edd57a7ebbfe56c27e1a", null ],
-    [ "rover_guidance_steering_heading_ctrl", "rover__guidance__steering_8c.html#a554f136fa0e0cae50c2f2d281bc6d9a9", null ],
+    [ "rover_guidance_steering_heading_ctrl", "rover__guidance__steering_8c.html#af0d1fdfe153cb3f80f189f59168e84f5", null ],
     [ "rover_guidance_steering_init", "rover__guidance__steering_8c.html#a81c86a467dc91f38fefae20de37feba3", null ],
     [ "rover_guidance_steering_kill", "rover__guidance__steering_8c.html#a0185a8119f285985444db413c3b51863", null ],
     [ "rover_guidance_steering_pid_reset", "rover__guidance__steering_8c.html#ac69bcf60f43fa5aaa6dd39af1a68e529", null ],

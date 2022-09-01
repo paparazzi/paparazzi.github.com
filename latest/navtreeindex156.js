@@ -1,5 +1,8 @@
 var NAVTREEINDEX156 =
 {
+"paparazzi_messages.html#FORMATION_SLOT":[2,1,8],
+"paparazzi_messages.html#FORMATION_SLOT_TM":[2,0,80],
+"paparazzi_messages.html#FORMATION_STATUS":[2,1,9],
 "paparazzi_messages.html#FORMATION_STATUS_TM":[2,0,81],
 "paparazzi_messages.html#GEIGER_COUNTER":[2,0,148],
 "paparazzi_messages.html#GENERIC_COM":[2,0,79],
@@ -246,8 +249,5 @@ var NAVTREEINDEX156 =
 "paparazzi_messages.html#WT":[2,0,168],
 "paparazzi_messages.html#XTEND_RSSI":[2,0,69],
 "pc__sim_8h.html":[12,0,1,0,1,57],
-"pc__sim_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,57,1],
-"pc__sim_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,57,5],
-"pc__sim_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,57,0],
-"pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,57,4]
+"pc__sim_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,57,1]
 };

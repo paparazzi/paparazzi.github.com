@@ -155,9 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a81c86a467dc91f38fefae20de37feba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a81c86a467dc91f38fefae20de37feba3">rover_guidance_steering_init</a> (void)</td></tr>
 <tr class="memdesc:a81c86a467dc91f38fefae20de37feba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">INIT function.  <a href="rover__guidance__steering_8c.html#a81c86a467dc91f38fefae20de37feba3">More...</a><br /></td></tr>
 <tr class="separator:a81c86a467dc91f38fefae20de37feba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554f136fa0e0cae50c2f2d281bc6d9a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a554f136fa0e0cae50c2f2d281bc6d9a9">rover_guidance_steering_heading_ctrl</a> (void)</td></tr>
-<tr class="memdesc:a554f136fa0e0cae50c2f2d281bc6d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTRL functions.  <a href="rover__guidance__steering_8c.html#a554f136fa0e0cae50c2f2d281bc6d9a9">More...</a><br /></td></tr>
-<tr class="separator:a554f136fa0e0cae50c2f2d281bc6d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d1fdfe153cb3f80f189f59168e84f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#af0d1fdfe153cb3f80f189f59168e84f5">rover_guidance_steering_heading_ctrl</a> (float omega)</td></tr>
+<tr class="memdesc:af0d1fdfe153cb3f80f189f59168e84f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTRL functions.  <a href="rover__guidance__steering_8c.html#af0d1fdfe153cb3f80f189f59168e84f5">More...</a><br /></td></tr>
+<tr class="separator:af0d1fdfe153cb3f80f189f59168e84f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e256c0e45b668703a7574894873f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#a30e256c0e45b668703a7574894873f11">rover_guidance_steering_speed_ctrl</a> (void)</td></tr>
 <tr class="separator:a30e256c0e45b668703a7574894873f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac69bcf60f43fa5aaa6dd39af1a68e529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover__guidance__steering_8c.html#ac69bcf60f43fa5aaa6dd39af1a68e529">rover_guidance_steering_pid_reset</a> (void)</td></tr>
@@ -198,8 +198,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a554f136fa0e0cae50c2f2d281bc6d9a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a554f136fa0e0cae50c2f2d281bc6d9a9">&#9670;&nbsp;</a></span>rover_guidance_steering_heading_ctrl()</h2>
+<a id="af0d1fdfe153cb3f80f189f59168e84f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d1fdfe153cb3f80f189f59168e84f5">&#9670;&nbsp;</a></span>rover_guidance_steering_heading_ctrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,8 +207,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void rover_guidance_steering_heading_ctrl </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>omega</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -218,14 +218,14 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00071">71</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00129">BoundDelta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00134">BoundSpeed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00087">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00108">rover_ctrl::gvf_omega</a>, and <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>.</p>
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00128">BoundDelta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00133">BoundSpeed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00087">DRIVE_SHAFT_DISTANCE</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, and <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rover__guidance__steering_8c_a554f136fa0e0cae50c2f2d281bc6d9a9_cgraph.png" border="0" usemap="#rover__guidance__steering_8c_a554f136fa0e0cae50c2f2d281bc6d9a9_cgraph" alt=""/></div>
-<map name="rover__guidance__steering_8c_a554f136fa0e0cae50c2f2d281bc6d9a9_cgraph" id="rover__guidance__steering_8c_a554f136fa0e0cae50c2f2d281bc6d9a9_cgraph">
+<div class="center"><img src="rover__guidance__steering_8c_af0d1fdfe153cb3f80f189f59168e84f5_cgraph.png" border="0" usemap="#rover__guidance__steering_8c_af0d1fdfe153cb3f80f189f59168e84f5_cgraph" alt=""/></div>
+<map name="rover__guidance__steering_8c_af0d1fdfe153cb3f80f189f59168e84f5_cgraph" id="rover__guidance__steering_8c_af0d1fdfe153cb3f80f189f59168e84f5_cgraph">
 <area shape="rect" title="CTRL functions." alt="" coords="5,5,188,47"/>
 <area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="236,13,469,39"/>
 <area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="517,5,708,47"/>
@@ -255,7 +255,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00049">49</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="pid_8h_source.html#l00050">init_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00114">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00046">last_ap_mode</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::speed_error</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00093">SR_MEASURED_KF</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::throttle</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="pid_8h_source.html#l00050">init_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00046">last_ap_mode</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::speed_error</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00093">SR_MEASURED_KF</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00108">rover_ctrl::throttle</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -286,7 +286,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00115">115</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00114">114</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00102">sr_cmd_t::delta</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, and <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>.</p>
 
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 
 <p>PID RESET function. </p>
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00107">107</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00106">106</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pid_8h_source.html#l00098">reset_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, and <a class="el" href="pid_8h_source.html#l00045">PID_f::sum</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -343,9 +343,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00087">87</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00086">86</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00139">BoundThrottle</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="pid_8h_source.html#l00046">PID_f::g</a>, <a class="el" href="pid_8h_source.html#l00089">get_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00114">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="pid_8h_source.html#l00113">set_gains_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::speed_error</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00109">rover_ctrl::throttle</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>, and <a class="el" href="pid_8h_source.html#l00068">update_pid_f()</a>.</p>
+<p class="reference">References <a class="el" href="rover__guidance__steering_8h_source.html#l00138">BoundThrottle</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00107">rover_ctrl::cmd</a>, <a class="el" href="pid_8h_source.html#l00046">PID_f::g</a>, <a class="el" href="pid_8h_source.html#l00089">get_pid_f()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00041">guidance_control</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00111">rover_ctrl::kf</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00113">rover_ctrl::ki</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00112">rover_ctrl::kp</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00045">last_speed_cmd</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00043">rover_pid</a>, <a class="el" href="pid_8h_source.html#l00113">set_gains_pid_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00101">sr_cmd_t::speed</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00110">rover_ctrl::speed_error</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="rover__guidance__steering_8h_source.html#l00108">rover_ctrl::throttle</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00044">time_step</a>, and <a class="el" href="pid_8h_source.html#l00068">update_pid_f()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00041">41</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_heading_ctrl()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00115">rover_guidance_steering_kill()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00071">rover_guidance_steering_heading_ctrl()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00114">rover_guidance_steering_kill()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00045">45</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00043">43</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00107">rover_guidance_steering_pid_reset()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, <a class="el" href="rover__guidance__steering_8c_source.html#l00106">rover_guidance_steering_pid_reset()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rover__guidance__steering_8c_source.html#l00044">44</a> of file <a class="el" href="rover__guidance__steering_8c_source.html">rover_guidance_steering.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00087">rover_guidance_steering_speed_ctrl()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rover__guidance__steering_8c_source.html#l00049">rover_guidance_steering_init()</a>, and <a class="el" href="rover__guidance__steering_8c_source.html#l00086">rover_guidance_steering_speed_ctrl()</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_414bebee49467d45198ced6169b2555f.html">rover</a></li><li class="navelem"><a class="el" href="dir_c6a9400053a2920f0ad963162d758f3f.html">guidance</a></li><li class="navelem"><a class="el" href="rover__guidance__steering_8c.html">rover_guidance_steering.c</a></li>
-    <li class="footer">Generated on Fri Jul 29 2022 14:10:29 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Sep 1 2022 15:44:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

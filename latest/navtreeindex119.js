@@ -1,5 +1,9 @@
 var NAVTREEINDEX119 =
 {
+"module__actuators_asctec_v2.html":[1,3],
+"module__actuators_asctec_v2.html#configuration__actuators_asctec_v2":[1,3,1],
+"module__actuators_asctec_v2.html#module_load_example__actuators_asctec_v2":[1,3,0],
+"module__actuators_asctec_v2.html#module_xml__actuators_asctec_v2":[1,3,1,0],
 "module__actuators_bebop.html":[1,4],
 "module__actuators_bebop.html#autoloads__actuators_bebop":[1,4,2],
 "module__actuators_bebop.html#configuration__actuators_bebop":[1,4,1],
@@ -216,10 +220,9 @@ var NAVTREEINDEX119 =
 "module__baro_amsys.html#module_xml__baro_amsys":[1,349,2,0],
 "module__baro_bmp.html":[1,350],
 "module__baro_bmp.html#configuration__baro_bmp":[1,350,1],
-"module__baro_bmp.html#event_functions":[1,350,2,0],
 "module__baro_bmp.html#functions__baro_bmp":[1,350,2],
 "module__baro_bmp.html#module_load_example__baro_bmp":[1,350,0],
-"module__baro_bmp.html#module_xml__baro_bmp":[1,350,2,1],
+"module__baro_bmp.html#module_xml__baro_bmp":[1,350,2,0],
 "module__baro_bmp280_i2c.html":[1,351],
 "module__baro_bmp280_i2c.html#configuration__baro_bmp280_i2c":[1,351,1],
 "module__baro_bmp280_i2c.html#functions__baro_bmp280_i2c":[1,351,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX119 =
 "module__baro_ets.html#module_xml__baro_ets":[1,355,2,0],
 "module__baro_hca.html":[1,356],
 "module__baro_hca.html#configuration__baro_hca":[1,356,1],
-"module__baro_hca.html#functions__baro_hca":[1,356,2],
-"module__baro_hca.html#module_load_example__baro_hca":[1,356,0],
-"module__baro_hca.html#module_xml__baro_hca":[1,356,2,0],
-"module__baro_mpl3115.html":[1,357]
+"module__baro_hca.html#functions__baro_hca":[1,356,2]
 };
