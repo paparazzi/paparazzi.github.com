@@ -1,5 +1,7 @@
 var NAVTREEINDEX188 =
 {
+"stereo__avoid_8h_source.html":[12,0,1,0,6,64,1,3],
+"stereo__avoid__sim_8c.html":[12,0,1,0,6,64,1,4],
 "stereo__avoid__sim_8c.html#a32002f88a598eedf006da5c0e50aee2b":[12,0,1,0,6,64,1,4,1],
 "stereo__avoid__sim_8c.html#a81acc927c75d3362ae3aea50358180c8":[12,0,1,0,6,64,1,4,4],
 "stereo__avoid__sim_8c.html#aa8a30b33178414e6d1c8d872781cb7b5":[12,0,1,0,6,64,1,4,0],
@@ -175,8 +177,8 @@ var NAVTREEINDEX188 =
 "stm32_2mcu__periph_2pwm__input__arch_8c_source.html":[12,0,1,0,0,3,0,8],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html":[12,0,1,0,0,3,0,9],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89":[12,0,1,0,0,3,0,9,2],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,0,0,10,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,3,0,9,2,3],
+"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,0,0,10,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,0,0,10,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,3,0,9,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,10,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX188 =
 "stm32_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa":[12,0,1,0,0,3,0,14,2],
 "stm32_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf":[12,0,1,0,0,3,0,14,1],
 "stm32_2mcu__periph_2sys__time__arch_8h_source.html":[12,0,1,0,0,3,0,14],
-"stm32_2mcu__periph_2uart__arch_8c.html":[12,0,1,0,0,3,0,15],
-"stm32_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6":[12,0,1,0,0,3,0,15,1],
-"stm32_2mcu__periph_2uart__arch_8c.html#a12913f1f383441182dfc9427872ab27c":[12,0,1,0,0,3,0,15,4]
+"stm32_2mcu__periph_2uart__arch_8c.html":[12,0,1,0,0,3,0,15]
 };

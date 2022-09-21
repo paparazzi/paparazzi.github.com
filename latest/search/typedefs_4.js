@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ed25519_5fsignature_37358',['ed25519_signature',['../gec_8h.html#a61073cb0390b7b9d9ef5ff37bec33712',1,'gec.h']]]
+  ['ed25519_5fsignature_37360',['ed25519_signature',['../gec_8h.html#a61073cb0390b7b9d9ef5ff37bec33712',1,'gec.h']]]
 ];

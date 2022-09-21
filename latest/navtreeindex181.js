@@ -1,5 +1,7 @@
 var NAVTREEINDEX181 =
 {
+"servo__tester_8c.html#aa73e75e8eefca17f1064964724292f9e":[12,0,1,0,6,61,0,7],
+"servo__tester_8c.html#aa823c97e5bf82757054171ffe497f8cf":[12,0,1,0,6,61,0,4],
 "servo__tester_8c.html#aac2f1f41dc3b96ab54a0fa7c879e5336":[12,0,1,0,6,61,0,9],
 "servo__tester_8c.html#aaf19f05517deab95ef558f7665688af4":[12,0,1,0,6,61,0,1],
 "servo__tester_8c.html#ae4674117ad3f0e19bc9be64a05722138":[12,0,1,0,6,61,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX181 =
 "sim_2mcu__periph_2sys__time__arch_8h.html#afdd94f850b193691f1bfc60c724b542a":[12,0,1,0,0,2,0,12,2],
 "sim_2mcu__periph_2sys__time__arch_8h_source.html":[12,0,1,0,0,2,0,12],
 "sim_2mcu__periph_2uart__arch_8c.html":[12,0,1,0,0,2,0,13],
-"sim_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0":[12,0,1,0,0,2,0,13,8],
-"sim_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c":[12,0,1,0,0,2,0,13,0],
-"sim_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847":[12,0,1,0,0,2,0,13,9]
+"sim_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0":[12,0,1,0,0,2,0,13,8]
 };

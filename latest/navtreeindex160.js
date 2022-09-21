@@ -1,5 +1,6 @@
 var NAVTREEINDEX160 =
 {
+"pprz__wave_8h.html#ae6796540fe74fa7f6c1b713eac123c8d":[12,0,1,0,6,66,5,2],
 "pprz__wave_8h.html#af57836491edc35674cfe78c46358a3b4":[12,0,1,0,6,66,5,1],
 "pprz__wave_8h.html#structwave__t":[12,0,1,0,6,66,5,0],
 "pprz__wave_8h_source.html":[12,0,1,0,6,66,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX160 =
 "px4__flash_2protocol_8h.html#structIOPacket":[12,0,1,0,6,53,0,1],
 "px4__flash_2protocol_8h.html#structpx4io__mixdata":[12,0,1,0,6,53,0,0],
 "px4__flash_2protocol_8h_source.html":[12,0,1,0,6,53,0],
-"px4__flash_8c.html":[12,0,1,0,6,53,1],
-"px4__flash_8c.html#a15e65e9f7a79599101e851c3b5aedaa6":[12,0,1,0,6,53,1,2]
+"px4__flash_8c.html":[12,0,1,0,6,53,1]
 };

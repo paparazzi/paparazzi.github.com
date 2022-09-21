@@ -164,6 +164,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#GX3_INFO">GX3_INFO (ID 73)</a></li>
 <li class="level2"><a href="#UBLOX_INFO">UBLOX_INFO (ID 74)</a></li>
 <li class="level2"><a href="#GVF_PARAMETRIC">GVF_PARAMETRIC (ID 75)</a></li>
+<li class="level2"><a href="#BODY_RATES_ACCEL">BODY_RATES_ACCEL (ID 76)</a></li>
 <li class="level2"><a href="#SWARM_FISH">SWARM_FISH (ID 77)</a></li>
 <li class="level2"><a href="#INV_FILTER">INV_FILTER (ID 78)</a></li>
 <li class="level2"><a href="#MISSION_STATUS">MISSION_STATUS (ID 79)</a></li>
@@ -1755,6 +1756,25 @@ GVF_PARAMETRIC (ID 75)</h2>
 <td class="markdownTableBodyNone">p </td><td class="markdownTableBodyNone">float[] </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Parameters describing the trajectory  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">phi </td><td class="markdownTableBodyNone">float[] </td><td class="markdownTableBodyNone">m </td><td class="markdownTableBodyNone">Error signals  </td></tr>
+</table>
+<h2><a class="anchor" id="BODY_RATES_ACCEL"></a>
+BODY_RATES_ACCEL (ID 76)</h2>
+<p>Rates and Acceleration in the body frame</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name </th><th class="markdownTableHeadNone">Type </th><th class="markdownTableHeadNone">Unit/Values </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">p </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">rad/s </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">q </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">rad/s </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">r </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">rad/s </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ax </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ay </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">az </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="SWARM_FISH"></a>
 SWARM_FISH (ID 77)</h2>
@@ -6556,7 +6576,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 20 2022 09:39:45 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 21 2022 08:12:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
