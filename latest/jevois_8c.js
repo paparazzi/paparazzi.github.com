@@ -32,7 +32,7 @@ var jevois_8c =
       [ "JV_SEND_MSG", "jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a3167efd48d09a7a20422a743f0397792", null ]
     ] ],
     [ "jevois_event", "jevois_8c.html#a5a4dfc5cbbd1116c8e19483b683db8eb", null ],
-    [ "jevois_extract_nb", "jevois_8c.html#a983869b0dac4c1aab278bb24700aa564", null ],
+    [ "jevois_extract_nb", "jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805", null ],
     [ "jevois_init", "jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89", null ],
     [ "jevois_parse", "jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db", null ],
     [ "jevois_report", "jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583", null ],

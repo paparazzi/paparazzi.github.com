@@ -8,5 +8,7 @@ var dir_1444106569909aede49a887d28257b90 =
     [ "low_pass_filter.h", "low__pass__filter_8h.html", "low__pass__filter_8h" ],
     [ "median_filter.h", "median__filter_8h.html", "median__filter_8h" ],
     [ "notch_filter.h", "notch__filter_8h.html", "notch__filter_8h" ],
-    [ "pid.h", "pid_8h.html", "pid_8h" ]
+    [ "pid.h", "pid_8h.html", "pid_8h" ],
+    [ "simple_kinematic_kalman.c", "simple__kinematic__kalman_8c.html", "simple__kinematic__kalman_8c" ],
+    [ "simple_kinematic_kalman.h", "simple__kinematic__kalman_8h.html", "simple__kinematic__kalman_8h" ]
 ];

@@ -36,6 +36,8 @@ var dir_304e79c9f5d09ea65a2f55aafb6a6b9d =
     [ "opticflow_module.h", "opticflow__module_8h.html", "opticflow__module_8h" ],
     [ "snake_gate_detection.c", "snake__gate__detection_8c.html", "snake__gate__detection_8c" ],
     [ "snake_gate_detection.h", "snake__gate__detection_8h.html", "snake__gate__detection_8h" ],
+    [ "tag_tracking.c", "tag__tracking_8c.html", "tag__tracking_8c" ],
+    [ "tag_tracking.h", "tag__tracking_8h.html", "tag__tracking_8h" ],
     [ "textons.c", "textons_8c.html", "textons_8c" ],
     [ "textons.h", "textons_8h.html", "textons_8h" ],
     [ "undistort_image.c", "undistort__image_8c.html", "undistort__image_8c" ],

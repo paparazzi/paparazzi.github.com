@@ -111,8 +111,9 @@ $(document).ready(function(){initNavTree('jevois_8h.html',''); initResizable(); 
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2cameras_2jevois_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2cameras_2jevois_8hdep" id="sw_2airborne_2modules_2sensors_2cameras_2jevois_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,196,47"/>
-<area shape="rect" href="jevois_8c.html" title=" " alt="" coords="5,95,196,136"/>
+<area shape="rect" title=" " alt="" coords="88,5,279,47"/>
+<area shape="rect" href="tag__tracking_8c.html" title=" " alt="" coords="5,95,164,151"/>
+<area shape="rect" href="jevois_8c.html" title=" " alt="" coords="188,102,379,143"/>
 </map>
 </div>
 </div>
@@ -173,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaabffd8949fd232243751b5dbf121d60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8h.html#aaabffd8949fd232243751b5dbf121d60">jevois_send_state</a> (void)</td></tr>
 <tr class="memdesc:aaabffd8949fd232243751b5dbf121d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send state to camera.  <a href="jevois_8h.html#aaabffd8949fd232243751b5dbf121d60">More...</a><br /></td></tr>
 <tr class="separator:aaabffd8949fd232243751b5dbf121d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d9c10c54c4746b89a487ed7a245805"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8h.html#a88d9c10c54c4746b89a487ed7a245805">jevois_extract_nb</a> (char *in)</td></tr>
+<tr class="memdesc:a88d9c10c54c4746b89a487ed7a245805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a number from jevoid ID field.  <a href="jevois_8h.html#a88d9c10c54c4746b89a487ed7a245805">More...</a><br /></td></tr>
+<tr class="separator:a88d9c10c54c4746b89a487ed7a245805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -450,8 +454,49 @@ Variables</h2></td></tr>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="159,81,309,108"/>
 <area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="189,132,279,159"/>
 <area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="357,31,523,57"/>
-<area shape="rect" href="jevois_8c.html#a983869b0dac4c1aab278bb24700aa564" title=" " alt="" coords="571,5,708,32"/>
+<area shape="rect" href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805" title="Extract a number from jevoid ID field." alt="" coords="571,5,708,32"/>
 <area shape="rect" href="jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583" title=" " alt="" coords="586,56,693,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a88d9c10c54c4746b89a487ed7a245805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d9c10c54c4746b89a487ed7a245805">&#9670;&nbsp;</a></span>jevois_extract_nb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jevois_extract_nb </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract a number from jevoid ID field. </p>
+
+<p class="definition">Definition at line <a class="el" href="jevois_8c_source.html#l00131">131</a> of file <a class="el" href="jevois_8c_source.html">jevois.c</a>.</p>
+
+<p class="reference">References <a class="el" href="jevois_8c_source.html#l00040">JEVOIS_MAX_LEN</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00148">jevois_send_message()</a>, and <a class="el" href="tag__tracking_8c_source.html#l00200">tag_track_cb()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="jevois_8h_a88d9c10c54c4746b89a487ed7a245805_icgraph.png" border="0" usemap="#jevois_8h_a88d9c10c54c4746b89a487ed7a245805_icgraph" alt=""/></div>
+<map name="jevois_8h_a88d9c10c54c4746b89a487ed7a245805_icgraph" id="jevois_8h_a88d9c10c54c4746b89a487ed7a245805_icgraph">
+<area shape="rect" title="Extract a number from jevoid ID field." alt="" coords="551,31,688,57"/>
+<area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="337,5,503,32"/>
+<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="367,56,473,83"/>
+<area shape="rect" href="jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db" title=" " alt="" coords="172,5,276,32"/>
+<area shape="rect" href="jevois_8h.html#a5a4dfc5cbbd1116c8e19483b683db8eb" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="tag__tracking_8h.html#ae8ad8786977532faf623e55ca22aaa24" title=" " alt="" coords="159,56,289,83"/>
 </map>
 </div>
 
@@ -500,11 +545,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="jevois_8c_source.html#l00051">jevois_msg_t::coord</a>, <a class="el" href="jevois_8c_source.html#l00077">jevois_t::data_available</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="jevois_8c_source.html#l00052">jevois_msg_t::dim</a>, <a class="el" href="jevois_8c_source.html#l00049">jevois_msg_t::id</a>, <a class="el" href="jevois_8c_source.html#l00080">jevois</a>, <a class="el" href="jevois_8c_source.html#l00076">jevois_t::msg</a>, <a class="el" href="jevois_8c_source.html#l00050">jevois_msg_t::nb</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="jevois_8c_source.html#l00053">jevois_msg_t::quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, and <a class="el" href="jevois_8c_source.html#l00048">jevois_msg_t::type</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00148">jevois_send_message()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_a4bb01532b86635c1f0989cae4d70e583_icgraph.png" border="0" usemap="#jevois_8h_a4bb01532b86635c1f0989cae4d70e583_icgraph" alt=""/></div>
 <map name="jevois_8h_a4bb01532b86635c1f0989cae4d70e583_icgraph" id="jevois_8h_a4bb01532b86635c1f0989cae4d70e583_icgraph">
 <area shape="rect" title=" " alt="" coords="524,5,631,32"/>
@@ -537,11 +582,11 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="jevois_8c_source.html#l00436">436</a> of file <a class="el" href="jevois_8c_source.html">jevois.c</a>.</p>
 
 <p class="reference">References <a class="el" href="exif__module_8c_source.html#l00033">alt_mm</a>, <a class="el" href="jevois_8c_source.html#l00403">jevois_send_string()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_aaabffd8949fd232243751b5dbf121d60_cgraph.png" border="0" usemap="#jevois_8h_aaabffd8949fd232243751b5dbf121d60_cgraph" alt=""/></div>
 <map name="jevois_8h_aaabffd8949fd232243751b5dbf121d60_cgraph" id="jevois_8h_aaabffd8949fd232243751b5dbf121d60_cgraph">
 <area shape="rect" title="Send state to camera." alt="" coords="5,95,144,121"/>
@@ -598,22 +643,22 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="jevois__mavlink_8h_source.html#l00039">JEVOIS_DEV</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l01096">uart_put_byte()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00436">jevois_send_state()</a>, <a class="el" href="jevois_8c_source.html#l00422">jevois_setmapping()</a>, and <a class="el" href="jevois_8c_source.html#l00412">jevois_stream()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_cgraph.png" border="0" usemap="#jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_cgraph" alt=""/></div>
 <map name="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_cgraph" id="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_cgraph">
 <area shape="rect" title="Generic function to send a string command to Jevois." alt="" coords="5,5,148,32"/>
 <area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation." alt="" coords="196,5,308,32"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_icgraph.png" border="0" usemap="#jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_icgraph" alt=""/></div>
 <map name="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_icgraph" id="jevois_8h_aa4b38bf843c270c3ef77b789bc08f30c_icgraph">
 <area shape="rect" title="Generic function to send a string command to Jevois." alt="" coords="385,56,528,83"/>
@@ -652,11 +697,11 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="jevois_8c_source.html#l00422">422</a> of file <a class="el" href="jevois_8c_source.html">jevois.c</a>.</p>
 
 <p class="reference">References <a class="el" href="jevois_8c_source.html#l00036">jevois_mapping_setting</a>, <a class="el" href="jevois_8c_source.html#l00403">jevois_send_string()</a>, <a class="el" href="jevois_8c_source.html#l00412">jevois_stream()</a>, and <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_a0e47409eccd5ab805c0b20e07f80ab1d_cgraph.png" border="0" usemap="#jevois_8h_a0e47409eccd5ab805c0b20e07f80ab1d_cgraph" alt=""/></div>
 <map name="jevois_8h_a0e47409eccd5ab805c0b20e07f80ab1d_cgraph" id="jevois_8h_a0e47409eccd5ab805c0b20e07f80ab1d_cgraph">
 <area shape="rect" title="Set video mapping." alt="" coords="5,5,151,32"/>
@@ -697,11 +742,11 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="jevois_8c_source.html#l00403">jevois_send_string()</a>, and <a class="el" href="jevois_8c_source.html#l00037">jevois_stream_setting</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00422">jevois_setmapping()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_cgraph.png" border="0" usemap="#jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_cgraph" alt=""/></div>
 <map name="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_cgraph" id="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_cgraph">
 <area shape="rect" title="Start and stop streaming." alt="" coords="5,5,120,32"/>
@@ -709,11 +754,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation." alt="" coords="359,5,471,32"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_icgraph.png" border="0" usemap="#jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_icgraph" alt=""/></div>
 <map name="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_icgraph" id="jevois_8h_a2e99fd57571cdb6cd8cbd0dc001a0d95_icgraph">
 <area shape="rect" title="Start and stop streaming." alt="" coords="199,5,313,32"/>
@@ -766,7 +811,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="dir_a975c919dcb72580e31cb51fbd2aacf9.html">cameras</a></li><li class="navelem"><a class="el" href="jevois_8h.html">jevois.h</a></li>
-    <li class="footer">Generated on Thu Sep 22 2022 09:30:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 11:57:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX107 =
 {
+"lsm303d__regs_8h.html#af9ad015fff9d3809f3727a437859501e":[12,0,1,0,7,67,82],
 "lsm303d__regs_8h.html#afbae5ce485844695a053059db06ddbb6":[12,0,1,0,7,67,30],
 "lsm303d__regs_8h_source.html":[12,0,1,0,7,67],
 "lsm303d__spi_8c.html":[12,0,1,0,7,68],
@@ -18,8 +19,8 @@ var NAVTREEINDEX107 =
 "lsm303d__spi_8h.html#a1964fbd63e0704237a0b49a4bdae158e":[12,0,1,0,7,69,0,7],
 "lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9":[12,0,1,0,7,69,0,5],
 "lsm303d__spi_8h.html#a3824b4672d8de7faa56540d289a4db46":[12,0,1,0,7,69,0,4],
-"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,69,1,1],
 "lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,69,2,1],
+"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,69,1,1],
 "lsm303d__spi_8h.html#a46caf9f0043d121b803f30e9f8627f8d":[12,0,1,0,7,69,5],
 "lsm303d__spi_8h.html#a59de795e77f96d73a03d679aeb4cf94e":[12,0,1,0,7,69,0,8],
 "lsm303d__spi_8h.html#a7a9cafa1a16ad91bf0327fc302108030":[12,0,1,0,7,69,0,6],
@@ -77,8 +78,8 @@ var NAVTREEINDEX107 =
 "lsm303dlhc__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,71,0],
 "lsm303dlhc__i2c_8c_source.html":[12,0,1,0,7,71],
 "lsm303dlhc__i2c_8h.html":[12,0,1,0,7,72],
-"lsm303dlhc__i2c_8h.html#a1673448ee7064c989d02579c534f6b66":[12,0,1,0,7,72,1,0],
 "lsm303dlhc__i2c_8h.html#a1673448ee7064c989d02579c534f6b66":[12,0,1,0,7,72,3,0],
+"lsm303dlhc__i2c_8h.html#a1673448ee7064c989d02579c534f6b66":[12,0,1,0,7,72,1,0],
 "lsm303dlhc__i2c_8h.html#a1860e64a60d63a98969f293cf20f8c83":[12,0,1,0,7,72,0,2],
 "lsm303dlhc__i2c_8h.html#a2b4ad59cad2d1657c4adbcf815eb78e6":[12,0,1,0,7,72,7],
 "lsm303dlhc__i2c_8h.html#a2f600ac276e7ed6eb74c55228e96ce11":[12,0,1,0,7,72,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX107 =
 "lsm6ds33__i2c_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,76,1,1],
 "lsm6ds33__i2c_8h.html#a566972c6662d36b718786d5cc8138c8d":[12,0,1,0,7,76,0,2],
 "lsm6ds33__i2c_8h.html#a5ee1aaf09889205b87a09afc46e5c397":[12,0,1,0,7,76,0,0],
-"lsm6ds33__i2c_8h.html#a6bcba24140eec6b09ecaf927b69a9448":[12,0,1,0,7,76,0,1],
-"lsm6ds33__i2c_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2":[12,0,1,0,7,76,2,0]
+"lsm6ds33__i2c_8h.html#a6bcba24140eec6b09ecaf927b69a9448":[12,0,1,0,7,76,0,1]
 };

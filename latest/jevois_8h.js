@@ -15,6 +15,7 @@ var jevois_8h =
     [ "JEVOIS_NORM", "jevois_8h.html#a90112f40bc6c57694b0fd50a36836a38", null ],
     [ "JEVOIS_VFOV", "jevois_8h.html#a3c94ffa744d6926deb0a13392cb00804", null ],
     [ "jevois_event", "jevois_8h.html#a5a4dfc5cbbd1116c8e19483b683db8eb", null ],
+    [ "jevois_extract_nb", "jevois_8h.html#a88d9c10c54c4746b89a487ed7a245805", null ],
     [ "jevois_init", "jevois_8h.html#ae7c0a60712036dc7f1583b9954230c89", null ],
     [ "jevois_report", "jevois_8h.html#a4bb01532b86635c1f0989cae4d70e583", null ],
     [ "jevois_send_state", "jevois_8h.html#aaabffd8949fd232243751b5dbf121d60", null ],

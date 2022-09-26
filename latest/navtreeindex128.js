@@ -1,5 +1,12 @@
 var NAVTREEINDEX128 =
 {
+"modules_2datalink_2superbitrf_8h.html#af8aa7f7c28b40a25c912b5a020525957":[12,0,1,0,6,14,28,0,16],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3":[12,0,1,0,6,14,28,12],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a03dd76ead406b560e33f37f743573b30":[12,0,1,0,6,14,28,12,3],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a068131421d6144fa25f25e2841f69764":[12,0,1,0,6,14,28,12,4],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a118efba928d6599a1475093903a9a1d4":[12,0,1,0,6,14,28,12,6],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a6b6ab5263704d96de6ad4e5612205020":[12,0,1,0,6,14,28,12,0],
+"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3aac5f33584234a0d65990816c597ebb61":[12,0,1,0,6,14,28,12,1],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3ad6382b69b46b58635e82e72e364a83fd":[12,0,1,0,6,14,28,12,2],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3af949af650a3a03cc323054fe6f9baaad":[12,0,1,0,6,14,28,12,5],
 "modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,6,14,28,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX128 =
 "mpu60x0_8h.html#ac82c22100c7f2e9d81ff6fe1d479c5ee":[12,0,1,0,7,85,7],
 "mpu60x0_8h.html#acd7f455580bc4961b94d15d8713f95a9":[12,0,1,0,7,85,1,1],
 "mpu60x0_8h.html#ad155a9790c8d380954558466e9008c51":[12,0,1,0,7,85,8],
-"mpu60x0_8h.html#ad3135d14791c55a2cca8de1f7c7cd8e3":[12,0,1,0,7,85,1,3],
-"mpu60x0_8h.html#adf601a2d48664acac0e44828da437892":[12,0,1,0,7,85,34],
-"mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b":[12,0,1,0,7,85,38],
-"mpu60x0_8h.html#aedde6299df08f8a6d53675a312542769":[12,0,1,0,7,85,32],
-"mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce":[12,0,1,0,7,85,1,5],
-"mpu60x0_8h.html#af8324d9ab43e97c55d032714aa6531eb":[12,0,1,0,7,85,42],
-"mpu60x0_8h.html#structMpu60x0Config":[12,0,1,0,7,85,1],
-"mpu60x0_8h.html#structMpu60x0I2cSlave":[12,0,1,0,7,85,0]
+"mpu60x0_8h.html#ad3135d14791c55a2cca8de1f7c7cd8e3":[12,0,1,0,7,85,1,3]
 };

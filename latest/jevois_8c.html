@@ -178,8 +178,9 @@ Functions</h2></td></tr>
 <tr class="separator:a4bb01532b86635c1f0989cae4d70e583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c0a60712036dc7f1583b9954230c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89">jevois_init</a> (void)</td></tr>
 <tr class="separator:ae7c0a60712036dc7f1583b9954230c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983869b0dac4c1aab278bb24700aa564"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8c.html#a983869b0dac4c1aab278bb24700aa564">jevois_extract_nb</a> (char *in)</td></tr>
-<tr class="separator:a983869b0dac4c1aab278bb24700aa564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d9c10c54c4746b89a487ed7a245805"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805">jevois_extract_nb</a> (char *in)</td></tr>
+<tr class="memdesc:a88d9c10c54c4746b89a487ed7a245805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a number from jevoid ID field.  <a href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805">More...</a><br /></td></tr>
+<tr class="separator:a88d9c10c54c4746b89a487ed7a245805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316cc2f8606b1f3af8422e9f002b9fa9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9">jevois_send_message</a> (void)</td></tr>
 <tr class="separator:a316cc2f8606b1f3af8422e9f002b9fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079a19f87529f4431d4aaba54a3f75db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db">jevois_parse</a> (struct <a class="el" href="jevois_8c.html#structjevois__t">jevois_t</a> *jv, char c)</td></tr>
@@ -464,53 +465,49 @@ state</td>
 <area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer." alt="" coords="159,81,309,108"/>
 <area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title=" " alt="" coords="189,132,279,159"/>
 <area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="357,31,523,57"/>
-<area shape="rect" href="jevois_8c.html#a983869b0dac4c1aab278bb24700aa564" title=" " alt="" coords="571,5,708,32"/>
+<area shape="rect" href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805" title="Extract a number from jevoid ID field." alt="" coords="571,5,708,32"/>
 <area shape="rect" href="jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583" title=" " alt="" coords="586,56,693,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a983869b0dac4c1aab278bb24700aa564"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a983869b0dac4c1aab278bb24700aa564">&#9670;&nbsp;</a></span>jevois_extract_nb()</h2>
+<a id="a88d9c10c54c4746b89a487ed7a245805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d9c10c54c4746b89a487ed7a245805">&#9670;&nbsp;</a></span>jevois_extract_nb()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int jevois_extract_nb </td>
+          <td class="memname">int jevois_extract_nb </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Extract a number from jevoid ID field. </p>
 
 <p class="definition">Definition at line <a class="el" href="jevois_8c_source.html#l00131">131</a> of file <a class="el" href="jevois_8c_source.html">jevois.c</a>.</p>
 
 <p class="reference">References <a class="el" href="jevois_8c_source.html#l00040">JEVOIS_MAX_LEN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00148">jevois_send_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="jevois_8c_source.html#l00148">jevois_send_message()</a>, and <a class="el" href="tag__tracking_8c_source.html#l00200">tag_track_cb()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jevois_8c_a983869b0dac4c1aab278bb24700aa564_icgraph.png" border="0" usemap="#jevois_8c_a983869b0dac4c1aab278bb24700aa564_icgraph" alt=""/></div>
-<map name="jevois_8c_a983869b0dac4c1aab278bb24700aa564_icgraph" id="jevois_8c_a983869b0dac4c1aab278bb24700aa564_icgraph">
-<area shape="rect" title=" " alt="" coords="524,5,661,32"/>
-<area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="311,5,476,32"/>
-<area shape="rect" href="jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db" title=" " alt="" coords="159,5,263,32"/>
+<div class="center"><img src="jevois_8c_a88d9c10c54c4746b89a487ed7a245805_icgraph.png" border="0" usemap="#jevois_8c_a88d9c10c54c4746b89a487ed7a245805_icgraph" alt=""/></div>
+<map name="jevois_8c_a88d9c10c54c4746b89a487ed7a245805_icgraph" id="jevois_8c_a88d9c10c54c4746b89a487ed7a245805_icgraph">
+<area shape="rect" title="Extract a number from jevoid ID field." alt="" coords="551,31,688,57"/>
+<area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="337,5,503,32"/>
+<area shape="rect" href="tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="367,56,473,83"/>
+<area shape="rect" href="jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db" title=" " alt="" coords="172,5,276,32"/>
 <area shape="rect" href="jevois_8h.html#a5a4dfc5cbbd1116c8e19483b683db8eb" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="tag__tracking_8h.html#ae8ad8786977532faf623e55ca22aaa24" title=" " alt="" coords="159,56,289,83"/>
 </map>
 </div>
 
@@ -586,7 +583,7 @@ state</td>
 <map name="jevois_8c_a079a19f87529f4431d4aaba54a3f75db_cgraph" id="jevois_8c_a079a19f87529f4431d4aaba54a3f75db_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,109,57"/>
 <area shape="rect" href="jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9" title=" " alt="" coords="157,31,323,57"/>
-<area shape="rect" href="jevois_8c.html#a983869b0dac4c1aab278bb24700aa564" title=" " alt="" coords="371,5,508,32"/>
+<area shape="rect" href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805" title="Extract a number from jevoid ID field." alt="" coords="371,5,508,32"/>
 <area shape="rect" href="jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583" title=" " alt="" coords="386,56,493,83"/>
 </map>
 </div>
@@ -678,7 +675,7 @@ state</td>
 <div class="center"><img src="jevois_8c_a316cc2f8606b1f3af8422e9f002b9fa9_cgraph.png" border="0" usemap="#jevois_8c_a316cc2f8606b1f3af8422e9f002b9fa9_cgraph" alt=""/></div>
 <map name="jevois_8c_a316cc2f8606b1f3af8422e9f002b9fa9_cgraph" id="jevois_8c_a316cc2f8606b1f3af8422e9f002b9fa9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,171,57"/>
-<area shape="rect" href="jevois_8c.html#a983869b0dac4c1aab278bb24700aa564" title=" " alt="" coords="219,5,356,32"/>
+<area shape="rect" href="jevois_8c.html#a88d9c10c54c4746b89a487ed7a245805" title="Extract a number from jevoid ID field." alt="" coords="219,5,356,32"/>
 <area shape="rect" href="jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583" title=" " alt="" coords="234,56,341,83"/>
 </map>
 </div>
@@ -965,7 +962,7 @@ state</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="dir_a975c919dcb72580e31cb51fbd2aacf9.html">cameras</a></li><li class="navelem"><a class="el" href="jevois_8c.html">jevois.c</a></li>
-    <li class="footer">Generated on Thu Sep 22 2022 09:30:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 11:57:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
