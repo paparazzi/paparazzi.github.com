@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('lsm303d_8h.html',''); initResizable();
 <area shape="rect" href="lsm303d__spi_8h.html" title=" " alt="" coords="111,95,286,136"/>
 <area shape="rect" href="imu__px4fmu__v2_84_8h.html" title=" " alt="" coords="5,184,189,225"/>
 <area shape="rect" href="lsm303d__spi_8c.html" title=" " alt="" coords="214,184,389,225"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8c.html" title=" " alt="" coords="6,273,189,315"/>
 </map>
 </div>
 </div>
@@ -140,6 +141,11 @@ Macros</h2></td></tr>
 <tr class="separator:a2e00beed3cee1033a628b5f570701f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e7c115a13c95dbb1b26dff906018ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303d_8h.html#aa1e7c115a13c95dbb1b26dff906018ad">LSM303D_DEFAULT_MD</a>&#160;&#160;&#160;(<a class="el" href="lsm303d__regs_8h.html#af12cbc153cee03b573aa2276c643893fa2d6e445d883bffbaaad80004a34b719d">LSM303D_MAG_MODE_CONTINOUS_CONVERSION</a> &lt;&lt; 0)</td></tr>
 <tr class="separator:aa1e7c115a13c95dbb1b26dff906018ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf0919904bc654715437a024b617f91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303d_8h.html#a2cf0919904bc654715437a024b617f91">LSM303D_ACCEL_SENS_16G_NUM</a>&#160;&#160;&#160;13723</td></tr>
+<tr class="memdesc:a2cf0919904bc654715437a024b617f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">default accel sensitivy from the datasheet LSM303DLHC has 732 LSB/g fixed point sens: 9.81 [m/s^2] / 732 [LSB/g] * 2^INT32_ACCEL_FRAC sens = 9.81 / 732 * 1024 = 13.72  <a href="lsm303d_8h.html#a2cf0919904bc654715437a024b617f91">More...</a><br /></td></tr>
+<tr class="separator:a2cf0919904bc654715437a024b617f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e6837234bb10ee0f6b0609e4746723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303d_8h.html#ad1e6837234bb10ee0f6b0609e4746723">LSM303D_ACCEL_SENS_16G_DEN</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:ad1e6837234bb10ee0f6b0609e4746723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -187,7 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00056">56</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00064">64</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -225,6 +231,40 @@ Full scale gain configuration (Gauss) </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad1e6837234bb10ee0f6b0609e4746723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e6837234bb10ee0f6b0609e4746723">&#9670;&nbsp;</a></span>LSM303D_ACCEL_SENS_16G_DEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LSM303D_ACCEL_SENS_16G_DEN&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00062">62</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+
+</div>
+</div>
+<a id="a2cf0919904bc654715437a024b617f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf0919904bc654715437a024b617f91">&#9670;&nbsp;</a></span>LSM303D_ACCEL_SENS_16G_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LSM303D_ACCEL_SENS_16G_NUM&#160;&#160;&#160;13723</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default accel sensitivy from the datasheet LSM303DLHC has 732 LSB/g fixed point sens: 9.81 [m/s^2] / 732 [LSB/g] * 2^INT32_ACCEL_FRAC sens = 9.81 / 732 * 1024 = 13.72 </p>
+
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00061">61</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+
+</div>
+</div>
 <a id="a585e38f3400cdec36132855bafec4719"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a585e38f3400cdec36132855bafec4719">&#9670;&nbsp;</a></span>LSM303D_DEFAULT_AFS</h2>
 
@@ -332,7 +372,7 @@ Full scale gain configuration (Gauss) </td></tr>
 <tr><td class="fieldname"><a id="a510964c99863639a3c0b8143822a9e5ca064f751c84b6e1b57e5f1cbf67641788"></a>LSM303D_CONF_DONE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00067">67</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00075">75</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +392,7 @@ Full scale gain configuration (Gauss) </td></tr>
 <tr><td class="fieldname"><a id="a00aff1671a1ffd0d8786a6fabfe03b51aa40afaf841e6b73aa14df9b512c5a094"></a>LSM303D_TARGET_MAG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00080">80</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00088">88</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
 
 </div>
 </div>
@@ -381,9 +421,9 @@ Full scale gain configuration (Gauss) </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00085">85</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lsm303d_8h_source.html#l00093">93</a> of file <a class="el" href="lsm303d_8h_source.html">lsm303d.h</a>.</p>
 
-<p class="reference">References <a class="el" href="lsm303d_8h_source.html#l00057">Lsm303dConfig::acc_rate</a>, <a class="el" href="lsm303d_8h_source.html#l00058">Lsm303dConfig::acc_scale</a>, <a class="el" href="lsm303d_8h_source.html#l00041">LSM303D_DEFAULT_AFS</a>, <a class="el" href="lsm303d_8h_source.html#l00037">LSM303D_DEFAULT_AODR</a>, <a class="el" href="lsm303d_8h_source.html#l00053">LSM303D_DEFAULT_MD</a>, <a class="el" href="lsm303d_8h_source.html#l00049">LSM303D_DEFAULT_MFS</a>, <a class="el" href="lsm303d_8h_source.html#l00045">LSM303D_DEFAULT_MODR</a>, <a class="el" href="lsm303d_8h_source.html#l00062">Lsm303dConfig::mag_mode</a>, <a class="el" href="lsm303d_8h_source.html#l00060">Lsm303dConfig::mag_rate</a>, and <a class="el" href="lsm303d_8h_source.html#l00061">Lsm303dConfig::mag_scale</a>.</p>
+<p class="reference">References <a class="el" href="lsm303d_8h_source.html#l00065">Lsm303dConfig::acc_rate</a>, <a class="el" href="lsm303d_8h_source.html#l00066">Lsm303dConfig::acc_scale</a>, <a class="el" href="lsm303d_8h_source.html#l00041">LSM303D_DEFAULT_AFS</a>, <a class="el" href="lsm303d_8h_source.html#l00037">LSM303D_DEFAULT_AODR</a>, <a class="el" href="lsm303d_8h_source.html#l00053">LSM303D_DEFAULT_MD</a>, <a class="el" href="lsm303d_8h_source.html#l00049">LSM303D_DEFAULT_MFS</a>, <a class="el" href="lsm303d_8h_source.html#l00045">LSM303D_DEFAULT_MODR</a>, <a class="el" href="lsm303d_8h_source.html#l00070">Lsm303dConfig::mag_mode</a>, <a class="el" href="lsm303d_8h_source.html#l00068">Lsm303dConfig::mag_rate</a>, and <a class="el" href="lsm303d_8h_source.html#l00069">Lsm303dConfig::mag_scale</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lsm303d__spi_8c_source.html#l00032">lsm303d_spi_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -407,7 +447,7 @@ Full scale gain configuration (Gauss) </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lsm303d_8h.html">lsm303d.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -143,8 +143,6 @@ Data Structures</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:af307f45bc538474d935eff416bdf24e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__madgwick_8h.html#af307f45bc538474d935eff416bdf24e3">ahrs_madgwick_init</a> (void)</td></tr>
 <tr class="separator:af307f45bc538474d935eff416bdf24e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367be3a673bb3ae125af4de7aaf356e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__madgwick_8h.html#a367be3a673bb3ae125af4de7aaf356e8">ahrs_madgwick_set_body_to_imu_quat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i)</td></tr>
-<tr class="separator:a367be3a673bb3ae125af4de7aaf356e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad35ef1d8e209a830a0c77d488e56dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__madgwick_8h.html#aad35ef1d8e209a830a0c77d488e56dcc">ahrs_madgwick_align</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *lp_gyro, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *lp_accel)</td></tr>
 <tr class="separator:aad35ef1d8e209a830a0c77d488e56dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1983ce3f538a01c2cb88609d5bcc33e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__madgwick_8h.html#a1983ce3f538a01c2cb88609d5bcc33e2">ahrs_madgwick_propagate</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *gyro, float dt)</td></tr>
@@ -184,7 +182,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structAhrsMadgwick__coll__graph.png" border="0" usemap="#AhrsMadgwick_coll__map" alt="Collaboration graph"/></div>
 <map name="AhrsMadgwick_coll__map" id="AhrsMadgwick_coll__map">
-<area shape="rect" title="Madgwick filter structure." alt="" coords="5,153,123,180"/>
+<area shape="rect" title="Madgwick filter structure." alt="" coords="5,139,123,165"/>
 <area shape="rect" title=" " alt="" coords="35,5,93,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -202,12 +200,6 @@ Measured accelerometers. </td></tr>
 bias</td>
 <td class="fielddoc">
 Gyro bias (from alignment) </td></tr>
-<tr><td class="fieldtype">
-<a id="af9b2be5f0d8b6497f9261cf6336ecd22"></a>struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a></td>
-<td class="fieldname">
-body_to_imu</td>
-<td class="fielddoc">
-body_to_imu rotation </td></tr>
 <tr><td class="fieldtype">
 <a id="a25cb32fbb3347e841bf7b506bbd3a4b3"></a>bool</td>
 <td class="fieldname">
@@ -265,9 +257,9 @@ flag to request reset/reinit the filter </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00059">59</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00041">AhrsMadgwick::bias</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00045">AhrsMadgwick::is_aligned</a>, and <a class="el" href="ahrs__madgwick_8h_source.html#l00039">AhrsMadgwick::quat</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00041">AhrsMadgwick::bias</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00044">AhrsMadgwick::is_aligned</a>, and <a class="el" href="ahrs__madgwick_8h_source.html#l00039">AhrsMadgwick::quat</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00156">aligner_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00152">aligner_cb()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -317,9 +309,9 @@ flag to request reset/reinit the filter </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00050">50</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00045">AhrsMadgwick::is_aligned</a>, and <a class="el" href="ahrs__madgwick_8h_source.html#l00044">AhrsMadgwick::reset</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00044">AhrsMadgwick::is_aligned</a>, and <a class="el" href="ahrs__madgwick_8h_source.html#l00043">AhrsMadgwick::reset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00203">ahrs_madgwick_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00189">ahrs_madgwick_register()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -374,9 +366,9 @@ flag to request reset/reinit the filter </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00069">69</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__madgwick_8h_source.html#l00042">AhrsMadgwick::accel</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00035">AHRS_MADGWICK_BETA</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00041">AhrsMadgwick::bias</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00043">AhrsMadgwick::body_to_imu</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00450">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00171">float_vect3_norm()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00045">AhrsMadgwick::is_aligned</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00039">AhrsMadgwick::quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00040">AhrsMadgwick::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00044">AhrsMadgwick::reset</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s1</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s2</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s3</a>, <a class="el" href="pprz__algebra_8h_source.html#l00196">VECT3_SDIV</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__madgwick_8h_source.html#l00042">AhrsMadgwick::accel</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00035">AHRS_MADGWICK_BETA</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00041">AhrsMadgwick::bias</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00450">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00171">float_vect3_norm()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00044">AhrsMadgwick::is_aligned</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00039">AhrsMadgwick::quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00040">AhrsMadgwick::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00043">AhrsMadgwick::reset</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s1</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s2</a>, <a class="el" href="logger__uart__parse_8py_source.html#l00009">logger_uart_parse::s3</a>, <a class="el" href="pprz__algebra_8h_source.html#l00196">VECT3_SDIV</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00115">gyro_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00111">gyro_cb()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -384,18 +376,14 @@ flag to request reset/reinit the filter </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__madgwick_8h_a1983ce3f538a01c2cb88609d5bcc33e2_cgraph.png" border="0" usemap="#ahrs__madgwick_8h_a1983ce3f538a01c2cb88609d5bcc33e2_cgraph" alt=""/></div>
 <map name="ahrs__madgwick_8h_a1983ce3f538a01c2cb88609d5bcc33e2_cgraph" id="ahrs__madgwick_8h_a1983ce3f538a01c2cb88609d5bcc33e2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,203,159"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="271,5,431,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="271,56,430,83"/>
-<area shape="rect" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix." alt="" coords="251,107,451,133"/>
-<area shape="rect" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="283,157,418,184"/>
-<area shape="rect" href="ahrs__madgwick_8c.html#ad83a81c0586755098baa52a61599a2b8" title=" " alt="" coords="309,208,392,235"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="269,259,432,285"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="518,56,646,83"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title=" " alt="" coords="511,157,653,184"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="510,208,654,235"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="499,259,665,285"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="713,259,859,285"/>
+<area shape="rect" title=" " alt="" coords="5,81,203,108"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="251,5,411,32"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="251,56,410,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title=" " alt="" coords="263,107,398,133"/>
+<area shape="rect" href="ahrs__madgwick_8c.html#ad83a81c0586755098baa52a61599a2b8" title=" " alt="" coords="289,157,372,184"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="467,56,595,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title=" " alt="" coords="459,107,602,133"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="459,157,603,184"/>
 </map>
 </div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -408,53 +396,6 @@ flag to request reset/reinit the filter </td></tr>
 <area shape="rect" title=" " alt="" coords="356,5,553,32"/>
 <area shape="rect" href="ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_madgwick_propagate on new gyro measurements." alt="" coords="235,5,308,32"/>
 <area shape="rect" href="ahrs__madgwick__wrapper_8h.html#aba61b0738249ab4a910d0b8b9c56a897" title=" " alt="" coords="5,5,187,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a367be3a673bb3ae125af4de7aaf356e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367be3a673bb3ae125af4de7aaf356e8">&#9670;&nbsp;</a></span>ahrs_madgwick_set_body_to_imu_quat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_madgwick_set_body_to_imu_quat </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
-          <td class="paramname"><em>q_b2i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00147">147</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00043">AhrsMadgwick::body_to_imu</a>, <a class="el" href="ahrs__madgwick_8h_source.html#l00045">AhrsMadgwick::is_aligned</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>, and <a class="el" href="ahrs__madgwick_8h_source.html#l00039">AhrsMadgwick::quat</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00172">body_to_imu_cb()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_cgraph.png" border="0" usemap="#ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_cgraph" alt=""/></div>
-<map name="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_cgraph" id="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,196,47"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="244,13,401,39"/>
-</map>
-</div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_icgraph.png" border="0" usemap="#ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_icgraph" alt=""/></div>
-<map name="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_icgraph" id="ahrs__madgwick_8h_a367be3a673bb3ae125af4de7aaf356e8_icgraph">
-<area shape="rect" title=" " alt="" coords="411,5,601,47"/>
-<area shape="rect" href="ahrs__madgwick__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title=" " alt="" coords="235,13,363,39"/>
-<area shape="rect" href="ahrs__madgwick__wrapper_8h.html#aba61b0738249ab4a910d0b8b9c56a897" title=" " alt="" coords="5,13,187,39"/>
 </map>
 </div>
 
@@ -476,16 +417,16 @@ flag to request reset/reinit the filter </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00142">142</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00139">139</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__madgwick_8h_source.html#l00042">AhrsMadgwick::accel</a>, and <a class="el" href="ahrs__madgwick_8c_source.html#l00039">ahrs_madgwick</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00145">accel_cb()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00141">accel_cb()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__madgwick_8h_a6cffc31c9a5475cd6724c3a6039a78b0_icgraph.png" border="0" usemap="#ahrs__madgwick_8h_a6cffc31c9a5475cd6724c3a6039a78b0_icgraph" alt=""/></div>
 <map name="ahrs__madgwick_8h_a6cffc31c9a5475cd6724c3a6039a78b0_icgraph" id="ahrs__madgwick_8h_a6cffc31c9a5475cd6724c3a6039a78b0_icgraph">
 <area shape="rect" title=" " alt="" coords="361,5,537,47"/>
@@ -511,7 +452,7 @@ flag to request reset/reinit the filter </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__madgwick_8c_source.html#l00039">39</a> of file <a class="el" href="ahrs__madgwick_8c_source.html">ahrs_madgwick.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00145">accel_cb()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00059">ahrs_madgwick_align()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00050">ahrs_madgwick_init()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00069">ahrs_madgwick_propagate()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00147">ahrs_madgwick_set_body_to_imu_quat()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00142">ahrs_madgwick_update_accel()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00156">aligner_cb()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00187">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00115">gyro_cb()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00050">send_att()</a>, and <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00077">send_filter_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00141">accel_cb()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00059">ahrs_madgwick_align()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00050">ahrs_madgwick_init()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00069">ahrs_madgwick_propagate()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00139">ahrs_madgwick_update_accel()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00152">aligner_cb()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00177">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00111">gyro_cb()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00043">init_state()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00050">send_att()</a>, and <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00074">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -521,7 +462,7 @@ flag to request reset/reinit the filter </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__madgwick_8h.html">ahrs_madgwick.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:06 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -155,10 +155,6 @@ Functions</h2></td></tr>
 <tr class="separator:a9fbef29f6a0a976770a3055c37a35d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507028d1107469dfa4a27642ddc7a2c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__mlkf_8c.html#a507028d1107469dfa4a27642ddc7a2c0">ahrs_mlkf_init</a> (void)</td></tr>
 <tr class="separator:a507028d1107469dfa4a27642ddc7a2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ca1fddae202f8c91628a150ec45191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__mlkf_8c.html#a91ca1fddae202f8c91628a150ec45191">ahrs_mlkf_set_body_to_imu</a> (struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *<a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">body_to_imu</a>)</td></tr>
-<tr class="separator:a91ca1fddae202f8c91628a150ec45191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7141f7d6d16d040b38e15c0f3f3fbe47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__mlkf_8c.html#a7141f7d6d16d040b38e15c0f3f3fbe47">ahrs_mlkf_set_body_to_imu_quat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i)</td></tr>
-<tr class="separator:a7141f7d6d16d040b38e15c0f3f3fbe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65cd8d47048c1cdc4aced2e5a4ce79e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__mlkf_8c.html#a65cd8d47048c1cdc4aced2e5a4ce79e2">ahrs_mlkf_align</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *lp_gyro, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *lp_accel, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *lp_mag)</td></tr>
 <tr class="separator:a65cd8d47048c1cdc4aced2e5a4ce79e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad9bedf36772800071affa5049921882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__mlkf_8c.html#aad9bedf36772800071affa5049921882">ahrs_mlkf_propagate</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *gyro, float dt)</td></tr>
@@ -264,11 +260,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00107">107</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00091">91</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00047">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00061">AhrsMlkf::is_aligned</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00055">AhrsMlkf::lp_accel</a>, and <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00057">AhrsMlkf::is_aligned</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::lp_accel</a>, and <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00162">aligner_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00161">aligner_cb()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -324,9 +320,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00062">62</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00044">AHRS_MAG_NOISE_X</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00045">AHRS_MAG_NOISE_Y</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00046">AHRS_MAG_NOISE_Z</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00047">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::imu_rate</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00061">AhrsMlkf::is_aligned</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00049">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00051">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::P</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00044">AHRS_MAG_NOISE_X</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00045">AHRS_MAG_NOISE_Y</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00046">AHRS_MAG_NOISE_Z</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00045">AhrsMlkf::body_rate</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00057">AhrsMlkf::is_aligned</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00048">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00050">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::P</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00222">ahrs_mlkf_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00204">ahrs_mlkf_register()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -378,11 +374,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00122">122</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00106">106</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">propagate_ref()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00188">propagate_state()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00147">propagate_ref()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00172">propagate_state()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00109">gyro_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00108">gyro_cb()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -411,96 +407,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a91ca1fddae202f8c91628a150ec45191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91ca1fddae202f8c91628a150ec45191">&#9670;&nbsp;</a></span>ahrs_mlkf_set_body_to_imu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_mlkf_set_body_to_imu </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *&#160;</td>
-          <td class="paramname"><em>body_to_imu</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00091">91</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00096">ahrs_mlkf_set_body_to_imu_quat()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00093">body_to_imu</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__mlkf_8c_a91ca1fddae202f8c91628a150ec45191_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a91ca1fddae202f8c91628a150ec45191_cgraph" alt=""/></div>
-<map name="ahrs__float__mlkf_8c_a91ca1fddae202f8c91628a150ec45191_cgraph" id="ahrs__float__mlkf_8c_a91ca1fddae202f8c91628a150ec45191_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,159,90"/>
-<area shape="rect" href="ahrs__float__mlkf_8c.html#a7141f7d6d16d040b38e15c0f3f3fbe47" title=" " alt="" coords="207,78,360,119"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="408,31,567,57"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="409,85,566,112"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="615,31,779,57"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="827,5,981,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="831,56,977,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a7141f7d6d16d040b38e15c0f3f3fbe47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7141f7d6d16d040b38e15c0f3f3fbe47">&#9670;&nbsp;</a></span>ahrs_mlkf_set_body_to_imu_quat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_mlkf_set_body_to_imu_quat </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
-          <td class="paramname"><em>q_b2i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00096">96</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00058">AhrsMlkf::body_to_imu</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00061">AhrsMlkf::is_aligned</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00091">ahrs_mlkf_set_body_to_imu()</a>, and <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00182">body_to_imu_cb()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_cgraph" alt=""/></div>
-<map name="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_cgraph" id="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,159,90"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="207,31,365,57"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="207,81,365,108"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="413,31,577,57"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="625,5,780,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="630,56,775,83"/>
-</map>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_icgraph" alt=""/></div>
-<map name="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_icgraph" id="ahrs__float__mlkf_8c_a7141f7d6d16d040b38e15c0f3f3fbe47_icgraph">
-<area shape="rect" title=" " alt="" coords="399,35,552,76"/>
-<area shape="rect" href="ahrs__float__mlkf_8h.html#a91ca1fddae202f8c91628a150ec45191" title=" " alt="" coords="197,5,351,47"/>
-<area shape="rect" href="ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title=" " alt="" coords="210,71,338,98"/>
-<area shape="rect" href="ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title=" " alt="" coords="5,71,149,98"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a49d6b43615e971ee5f098c86c2cf0edb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49d6b43615e971ee5f098c86c2cf0edb">&#9670;&nbsp;</a></span>ahrs_mlkf_update_accel()</h2>
 
@@ -517,16 +423,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00128">128</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">112</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="light__solar_8c_source.html#l00048">dn</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00171">float_vect3_norm()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00055">AhrsMlkf::lp_accel</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00357">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="light__solar_8c_source.html#l00048">dn</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00171">float_vect3_norm()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::lp_accel</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00341">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00138">accel_cb()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00137">accel_cb()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_cgraph" id="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,185,133"/>
@@ -541,11 +447,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="429,208,561,235"/>
 </map>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_icgraph" id="ahrs__float__mlkf_8c_a49d6b43615e971ee5f098c86c2cf0edb_icgraph">
 <area shape="rect" title=" " alt="" coords="324,5,504,32"/>
@@ -572,16 +478,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00141">141</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00125">125</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">ahrs_mlkf_update_mag_2d()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00156">ahrs_mlkf_update_mag_full()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00134">ahrs_mlkf_update_mag_2d()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00140">ahrs_mlkf_update_mag_full()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00150">mag_cb()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00149">mag_cb()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_cgraph" id="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,180,133"/>
@@ -597,11 +503,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="ahrs__float__mlkf_8c.html#a8a783da31e60cecc70580ab4840da0c7" title="Incorporate one 3D vector measurement." alt="" coords="509,107,615,133"/>
 </map>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_icgraph" id="ahrs__float__mlkf_8c_a00e729bc2030aaee57ec7be58f58f569_icgraph">
 <area shape="rect" title=" " alt="" coords="319,5,493,32"/>
@@ -628,16 +534,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">150</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00134">134</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00049">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00051">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00357">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00048">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00050">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00341">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00274">update_state_heading()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00141">ahrs_mlkf_update_mag()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00125">ahrs_mlkf_update_mag()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_cgraph" id="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,204,133"/>
@@ -650,11 +556,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="480,157,612,184"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_icgraph" id="ahrs__float__mlkf_8c_ab8a1a207877996d1ef506ad18510795e_icgraph">
 <area shape="rect" title=" " alt="" coords="541,5,740,32"/>
@@ -682,16 +588,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00156">156</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00140">140</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00049">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00051">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00357">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00048">AhrsMlkf::mag_h</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00050">AhrsMlkf::mag_noise</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00341">reset_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00141">ahrs_mlkf_update_mag()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00125">ahrs_mlkf_update_mag()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_cgraph" id="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,208,133"/>
@@ -704,11 +610,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="424,157,556,184"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_icgraph" id="ahrs__float__mlkf_8c_a7bb2235206c421516cfa4884d287fc65_icgraph">
 <area shape="rect" title=" " alt="" coords="541,5,744,32"/>
@@ -754,27 +660,27 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">163</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00147">147</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00400">float_quat_integrate()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00197">FLOAT_RATES_LIN_CMB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00047">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::imu_rate</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00351">RATES_SUB</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00045">AhrsMlkf::body_rate</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00400">float_quat_integrate()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00197">FLOAT_RATES_LIN_CMB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::gyro_bias</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00351">RATES_SUB</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00122">ahrs_mlkf_propagate()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00106">ahrs_mlkf_propagate()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_cgraph" id="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,119,32"/>
 <area shape="rect" href="group__math__algebra__float.html#ga617f13c7ecb041b375c76d14a2f8221e" title="in place quaternion integration with constant rotational velocity" alt="" coords="167,5,320,32"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_icgraph" id="ahrs__float__mlkf_8c_a7da516492565fea9fe725c92d3c7e447_icgraph">
 <area shape="rect" title=" " alt="" coords="527,5,640,32"/>
@@ -812,16 +718,16 @@ Variables</h2></td></tr>
 
 <p>Progagate filter's covariance We don't propagate state as we assume to have reseted. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00188">188</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00172">172</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::imu_rate</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00045">AhrsMlkf::body_rate</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00122">ahrs_mlkf_propagate()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00106">ahrs_mlkf_propagate()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a08b5ba2b24ee28f080b00eb5cb08384a_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a08b5ba2b24ee28f080b00eb5cb08384a_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a08b5ba2b24ee28f080b00eb5cb08384a_icgraph" id="ahrs__float__mlkf_8c_a08b5ba2b24ee28f080b00eb5cb08384a_icgraph">
 <area shape="rect" title="Progagate filter&#39;s covariance We don&#39;t propagate state as we assume to have reseted." alt="" coords="527,5,655,32"/>
@@ -859,16 +765,16 @@ Variables</h2></td></tr>
 
 <p>Incorporate errors to reference and zeros state. </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00357">357</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00341">341</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00320">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00320">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00052">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00128">ahrs_mlkf_update_accel()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">ahrs_mlkf_update_mag_2d()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00156">ahrs_mlkf_update_mag_full()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">ahrs_mlkf_update_accel()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00134">ahrs_mlkf_update_mag_2d()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00140">ahrs_mlkf_update_mag_full()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_cgraph" id="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_cgraph">
 <area shape="rect" title="Incorporate errors to reference and zeros state." alt="" coords="5,56,100,83"/>
@@ -878,11 +784,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="355,107,483,133"/>
 </map>
 </div>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_icgraph" id="ahrs__float__mlkf_8c_a9fbef29f6a0a976770a3055c37a35d95_icgraph">
 <area shape="rect" title="Incorporate errors to reference and zeros state." alt="" coords="797,56,892,83"/>
@@ -948,27 +854,27 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">222</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">206</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00421">float_quat_vmult()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00047">AhrsMlkf::gyro_bias</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">MAT_INV33</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00421">float_quat_vmult()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00052">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::gyro_bias</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">MAT_INV33</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00128">ahrs_mlkf_update_accel()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00156">ahrs_mlkf_update_mag_full()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">ahrs_mlkf_update_accel()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00140">ahrs_mlkf_update_mag_full()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_cgraph" id="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_cgraph">
 <area shape="rect" title="Incorporate one 3D vector measurement." alt="" coords="5,5,112,32"/>
 <area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="160,5,292,32"/>
 </map>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_icgraph" id="ahrs__float__mlkf_8c_a8a783da31e60cecc70580ab4840da0c7_icgraph">
 <area shape="rect" title="Incorporate one 3D vector measurement." alt="" coords="797,31,904,57"/>
@@ -1033,27 +939,27 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">290</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00274">274</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00421">float_quat_vmult()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00047">AhrsMlkf::gyro_bias</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_imu_quat</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">MAT_INV33</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00054">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">ahrs_mlkf</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00421">float_quat_vmult()</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00052">AhrsMlkf::gibbs_cor</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00046">AhrsMlkf::gyro_bias</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00044">AhrsMlkf::ltp_to_body_quat</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">MAT_INV33</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">MAT_MUL_T</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="ahrs__float__mlkf_8h_source.html#l00053">AhrsMlkf::P</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">ahrs_mlkf_update_mag_2d()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00134">ahrs_mlkf_update_mag_2d()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_cgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_cgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_cgraph" id="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_cgraph">
 <area shape="rect" title="Incorporate one 3D vector measurement, only correcting heading." alt="" coords="5,5,172,32"/>
 <area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="220,5,352,32"/>
 </map>
 </div>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_icgraph.png" border="0" usemap="#ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_icgraph" alt=""/></div>
 <map name="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_icgraph" id="ahrs__float__mlkf_8c_a728279f726c100f831375b815a025ab6_icgraph">
 <area shape="rect" title="Incorporate one 3D vector measurement, only correcting heading." alt="" coords="788,5,955,32"/>
@@ -1081,7 +987,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__float__mlkf_8c_source.html#l00059">59</a> of file <a class="el" href="ahrs__float__mlkf_8c_source.html">ahrs_float_mlkf.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00138">accel_cb()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00107">ahrs_mlkf_align()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00062">ahrs_mlkf_init()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00096">ahrs_mlkf_set_body_to_imu_quat()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00128">ahrs_mlkf_update_accel()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">ahrs_mlkf_update_mag_2d()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00156">ahrs_mlkf_update_mag_full()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00162">aligner_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00188">geo_mag_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00109">gyro_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00150">mag_cb()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">propagate_ref()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00188">propagate_state()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00357">reset_state()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00060">send_bias()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00049">send_euler()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00074">send_filter_status()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00068">send_geo_mag()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00202">set_body_state_from_quat()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00137">accel_cb()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00091">ahrs_mlkf_align()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00062">ahrs_mlkf_init()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">ahrs_mlkf_update_accel()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00134">ahrs_mlkf_update_mag_2d()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00140">ahrs_mlkf_update_mag_full()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00161">aligner_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00181">geo_mag_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00108">gyro_cb()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00149">mag_cb()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00147">propagate_ref()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00172">propagate_state()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00341">reset_state()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00060">send_bias()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00049">send_euler()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00074">send_filter_status()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00068">send_geo_mag()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00195">set_body_state_from_quat()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00274">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +997,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__mlkf_8c.html">ahrs_float_mlkf.c</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:06 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -346,7 +346,7 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">include</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(PAPARAZZI_SRC)/sw/ext/matrix/&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;__PAPARAZZI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ECL_STANDALONE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_MAGNETOMETER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt; <span class="comment">&lt;!-- Needed for IMU to get scaled version --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_INTEGRATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt; <span class="comment">&lt;!-- Needed to enable IMU integration --&gt;</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">&lt;!-- Compile needed ecl files --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/geo&quot;</span>/&gt;</div>
@@ -380,7 +380,7 @@ Raw ins_ekf2.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -7,7 +7,6 @@ var ahrs__float__mlkf__wrapper_8c =
     [ "ahrs_mlkf_enable_output", "ahrs__float__mlkf__wrapper_8c.html#ac3528f035410d7f49cec576fd9f86776", null ],
     [ "ahrs_mlkf_register", "ahrs__float__mlkf__wrapper_8c.html#adf9165ad7440f11e3dae35391f5844d6", null ],
     [ "aligner_cb", "ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],
-    [ "body_to_imu_cb", "ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736", null ],
     [ "geo_mag_cb", "ahrs__float__mlkf__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3", null ],
     [ "gyro_cb", "ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
     [ "mag_cb", "ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02", null ],
@@ -21,7 +20,6 @@ var ahrs__float__mlkf__wrapper_8c =
     [ "ahrs_mlkf_last_stamp", "ahrs__float__mlkf__wrapper_8c.html#ad2c8295a8bc8132cea1a1e3089387070", null ],
     [ "ahrs_mlkf_output_enabled", "ahrs__float__mlkf__wrapper_8c.html#a74477ca894b316dc1241674b8230866f", null ],
     [ "aligner_ev", "ahrs__float__mlkf__wrapper_8c.html#a77f52633ab63c8dbae84f2752938576f", null ],
-    [ "body_to_imu_ev", "ahrs__float__mlkf__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d", null ],
     [ "geo_mag_ev", "ahrs__float__mlkf__wrapper_8c.html#a8126b2c679aadad6260846dd431f74e8", null ],
     [ "gyro_ev", "ahrs__float__mlkf__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546", null ],
     [ "mag_ev", "ahrs__float__mlkf__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d", null ]

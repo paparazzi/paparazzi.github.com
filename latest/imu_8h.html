@@ -124,6 +124,14 @@ $(document).ready(function(){initNavTree('imu_8h.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structimu__calib__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#structimu__calib__t">imu_calib_t</a></td></tr>
+<tr class="separator:structimu__calib__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structimu__gyro__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#structimu__gyro__t">imu_gyro_t</a></td></tr>
+<tr class="separator:structimu__gyro__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structimu__accel__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#structimu__accel__t">imu_accel_t</a></td></tr>
+<tr class="separator:structimu__accel__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structimu__mag__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#structimu__mag__t">imu_mag_t</a></td></tr>
+<tr class="separator:structimu__mag__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structImu"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#structImu">Imu</a></td></tr>
 <tr class="memdesc:structImu"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract IMU interface providing fixed point interface <br  />
   <a href="imu_8h.html#structImu">More...</a><br /></td></tr>
@@ -131,53 +139,32 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a46eb7490c440a6456865b91fd7ece823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a46eb7490c440a6456865b91fd7ece823">IMU_BODY_TO_IMU_PHI</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a46eb7490c440a6456865b91fd7ece823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a145707cbd3cb3e88e6536ae94f901567"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a145707cbd3cb3e88e6536ae94f901567">IMU_BODY_TO_IMU_THETA</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a145707cbd3cb3e88e6536ae94f901567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a39ecc102f002a754e0c97e096cf46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a82a39ecc102f002a754e0c97e096cf46">IMU_BODY_TO_IMU_PSI</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a82a39ecc102f002a754e0c97e096cf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c36ae4fa7593bdd81a2eac2a763452e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a7c36ae4fa7593bdd81a2eac2a763452e">IMU_GYRO_P_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a7c36ae4fa7593bdd81a2eac2a763452e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3381e8cf000efbb86c6a4667449faf9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#af3381e8cf000efbb86c6a4667449faf9">IMU_GYRO_Q_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:af3381e8cf000efbb86c6a4667449faf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9273d5a997fde171fc41b58191f597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#adb9273d5a997fde171fc41b58191f597">IMU_GYRO_R_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:adb9273d5a997fde171fc41b58191f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01dac8935d4166bc144b115219cddbc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a01dac8935d4166bc144b115219cddbc4">IMU_ACCEL_X_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a01dac8935d4166bc144b115219cddbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199acc0383b0e1d7e3841bc3297cc0fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a199acc0383b0e1d7e3841bc3297cc0fb">IMU_ACCEL_Y_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a199acc0383b0e1d7e3841bc3297cc0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b487e2376edc35048f5d78cd4968221"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a2b487e2376edc35048f5d78cd4968221">IMU_ACCEL_Z_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a2b487e2376edc35048f5d78cd4968221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1d5879d834516237992ca0655fbd75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a5a1d5879d834516237992ca0655fbd75">IMU_MAG_X_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a5a1d5879d834516237992ca0655fbd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a883be296d939f15b4832b11a2a7126f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a883be296d939f15b4832b11a2a7126f7">IMU_MAG_Y_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a883be296d939f15b4832b11a2a7126f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaad8a2da6287091682c33d93f33d9b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#aaaad8a2da6287091682c33d93f33d9b2">IMU_MAG_Z_NEUTRAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:aaaad8a2da6287091682c33d93f33d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1c79353b8a69a2d7faecd6721efbb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a1b1c79353b8a69a2d7faecd6721efbb8">IMU_GYRO_P_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a1b1c79353b8a69a2d7faecd6721efbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd63ad52249c74117b86454fe73d5b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#affd63ad52249c74117b86454fe73d5b0">IMU_GYRO_Q_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:affd63ad52249c74117b86454fe73d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fa3d93fbfb5edbdf7f3b34436b53da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da">IMU_GYRO_R_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a91fa3d93fbfb5edbdf7f3b34436b53da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4198979ecdab243efc790d5b739a4645"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a4198979ecdab243efc790d5b739a4645">IMU_ACCEL_X_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a4198979ecdab243efc790d5b739a4645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20144cb4fd6b12baf8d74063f8dc87e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a20144cb4fd6b12baf8d74063f8dc87e3">IMU_ACCEL_Y_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a20144cb4fd6b12baf8d74063f8dc87e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8bdd9e68ab45b4ec5950f2e718d8f6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#ad8bdd9e68ab45b4ec5950f2e718d8f6c">IMU_ACCEL_Z_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ad8bdd9e68ab45b4ec5950f2e718d8f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ef05992d74a9dc07c6a20feffd6eef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a34ef05992d74a9dc07c6a20feffd6eef">IMU_MAG_X_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a34ef05992d74a9dc07c6a20feffd6eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127929c4b5a458043f7ef2e0fa2a4e54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54">IMU_MAG_Y_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a127929c4b5a458043f7ef2e0fa2a4e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8612bd2fe2f927e8f283a9a8e60010f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5">IMU_MAG_Z_SIGN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a8612bd2fe2f927e8f283a9a8e60010f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac541b6850c6b0318e71f450feb15cd52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#ac541b6850c6b0318e71f450feb15cd52">IMU_MAX_SENSORS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ac541b6850c6b0318e71f450feb15cd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a86a06fe7a9831292bd92867da2d12f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80">imu_init</a> (void)</td></tr>
+<tr class="memdesc:a86a06fe7a9831292bd92867da2d12f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">External functions.  <a href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80">More...</a><br /></td></tr>
 <tr class="separator:a86a06fe7a9831292bd92867da2d12f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eff9ff635dfd37cbc9f88746da18cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf">imu_set_defaults_gyro</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> abi_id, const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *imu_to_sensor, const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *neutral, const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *<a class="el" href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a>)</td></tr>
+<tr class="memdesc:a78eff9ff635dfd37cbc9f88746da18cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ensure correct values.  <a href="imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf">More...</a><br /></td></tr>
+<tr class="separator:a78eff9ff635dfd37cbc9f88746da18cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5403a88d05fb1440580b67ee3f41f2ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba">imu_set_defaults_accel</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> abi_id, const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *imu_to_sensor, const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *neutral, const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *<a class="el" href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a>)</td></tr>
+<tr class="memdesc:a5403a88d05fb1440580b67ee3f41f2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to ensure correct values.  <a href="imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba">More...</a><br /></td></tr>
+<tr class="separator:a5403a88d05fb1440580b67ee3f41f2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c314a5bfe113caf010bad75b3de86c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4">imu_set_defaults_mag</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> abi_id, const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *imu_to_sensor, const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *neutral, const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *<a class="el" href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a>)</td></tr>
+<tr class="memdesc:a3c314a5bfe113caf010bad75b3de86c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to ensure correct values.  <a href="imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4">More...</a><br /></td></tr>
+<tr class="separator:a3c314a5bfe113caf010bad75b3de86c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304a000b998533803b0d079c86e8f915"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu_8h.html#structimu__gyro__t">imu_gyro_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a304a000b998533803b0d079c86e8f915">imu_get_gyro</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, bool create)</td></tr>
+<tr class="memdesc:a304a000b998533803b0d079c86e8f915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find or create the gyro in the imu structure.  <a href="imu_8h.html#a304a000b998533803b0d079c86e8f915">More...</a><br /></td></tr>
+<tr class="separator:a304a000b998533803b0d079c86e8f915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8ac241eeb395920f1d8edf8f0c7cf0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu_8h.html#structimu__accel__t">imu_accel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a0f8ac241eeb395920f1d8edf8f0c7cf0">imu_get_accel</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, bool create)</td></tr>
+<tr class="memdesc:a0f8ac241eeb395920f1d8edf8f0c7cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find or create the accel in the imu structure.  <a href="imu_8h.html#a0f8ac241eeb395920f1d8edf8f0c7cf0">More...</a><br /></td></tr>
+<tr class="separator:a0f8ac241eeb395920f1d8edf8f0c7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb392db1b0ad7340d0d32a78acea9e1e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu_8h.html#structimu__mag__t">imu_mag_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#aeb392db1b0ad7340d0d32a78acea9e1e">imu_get_mag</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, bool create)</td></tr>
+<tr class="memdesc:aeb392db1b0ad7340d0d32a78acea9e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find or create the mag in the imu structure.  <a href="imu_8h.html#aeb392db1b0ad7340d0d32a78acea9e1e">More...</a><br /></td></tr>
+<tr class="separator:aeb392db1b0ad7340d0d32a78acea9e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50fba336ca2c337f240bab0db44f64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#ac50fba336ca2c337f240bab0db44f64e">imu_SetBodyToImuPhi</a> (float phi)</td></tr>
 <tr class="separator:ac50fba336ca2c337f240bab0db44f64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e25b56c5719a23e494568696083459e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a3e25b56c5719a23e494568696083459e">imu_SetBodyToImuTheta</a> (float theta)</td></tr>
@@ -188,12 +175,6 @@ Functions</h2></td></tr>
 <tr class="separator:a931916ce562dfa28e02e0a6001dddc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f5713ed33725e176e0501ecbe715a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9">imu_ResetBodyToImu</a> (float <a class="el" href="baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23">reset</a>)</td></tr>
 <tr class="separator:ac9f5713ed33725e176e0501ecbe715a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d63b0a61c8ffe88dd15b40843b1ae1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a8d63b0a61c8ffe88dd15b40843b1ae1d">imu_scale_gyro</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
-<tr class="separator:a8d63b0a61c8ffe88dd15b40843b1ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a2e1e2b450191b8ab1e849239810b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a34a2e1e2b450191b8ab1e849239810b2">imu_scale_accel</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
-<tr class="separator:a34a2e1e2b450191b8ab1e849239810b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca6c7f78fab9df37eb980d2b4d1b3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu_8h.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9">imu_scale_mag</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
-<tr class="separator:a6ca6c7f78fab9df37eb980d2b4d1b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -206,6 +187,283 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structimu__calib__t" id="structimu__calib__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structimu__calib__t">&#9670;&nbsp;</a></span>imu_calib_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct imu_calib_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00040">40</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a4743f502dc4b207e85b5ac656ccab96e"></a>bool</td>
+<td class="fieldname">
+current: 1</td>
+<td class="fielddoc">
+Current calibrated. </td></tr>
+<tr><td class="fieldtype">
+<a id="aa89853a532ad4adf771289eea8832bd6"></a>bool</td>
+<td class="fieldname">
+neutral: 1</td>
+<td class="fielddoc">
+Neutral values calibrated. </td></tr>
+<tr><td class="fieldtype">
+<a id="ae401e507fd893576e3767b10a714a199"></a>bool</td>
+<td class="fieldname">
+rotation: 1</td>
+<td class="fielddoc">
+Rotation calibrated. </td></tr>
+<tr><td class="fieldtype">
+<a id="a1f3ebaad8dc8df7c8f2e56571996e514"></a>bool</td>
+<td class="fieldname">
+scale: 1</td>
+<td class="fielddoc">
+Scale calibrated. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structimu__gyro__t" id="structimu__gyro__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structimu__gyro__t">&#9670;&nbsp;</a></span>imu_gyro_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct imu_gyro_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00047">47</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for imu_gyro_t:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structimu__gyro__t__coll__graph.png" border="0" usemap="#imu__gyro__t_coll__map" alt="Collaboration graph"/></div>
+<map name="imu__gyro__t_coll__map" id="imu__gyro__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,168,100,195"/>
+<area shape="rect" title=" " alt="" coords="23,5,82,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a1b1d1ca0df754ef787eab7af507e96aa"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+abi_id</td>
+<td class="fielddoc">
+ABI sensor ID. </td></tr>
+<tr><td class="fieldtype">
+<a id="a86c26b2e762731fa6c0a5dccb2773710"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a></td>
+<td class="fieldname">
+body_to_sensor</td>
+<td class="fielddoc">
+Rotation from body to sensor frame (body to imu combined with imu to sensor) </td></tr>
+<tr><td class="fieldtype">
+<a id="aca02598e78983f91cb7658fca6dcec0d"></a>struct <a class="el" href="imu_8h.html#structimu__calib__t">imu_calib_t</a></td>
+<td class="fieldname">
+calibrated</td>
+<td class="fielddoc">
+Calibration bitmask. </td></tr>
+<tr><td class="fieldtype">
+<a id="a009f4bed304da8f96ca2b3bd2396d2eb"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+last_stamp</td>
+<td class="fielddoc">
+Last measurement timestamp for integration. </td></tr>
+<tr><td class="fieldtype">
+<a id="a4477c72a6c4437b60dda817ebcc5ff2e"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<td class="fieldname">
+neutral</td>
+<td class="fielddoc">
+Neutral values, compensation on unscaled-&gt;scaled. </td></tr>
+<tr><td class="fieldtype">
+<a id="a6f6fa9e950ab651e2f75051dd1203ad4"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<td class="fieldname">
+scale[2]</td>
+<td class="fielddoc">
+Scaling, first is numerator and second denominator. </td></tr>
+<tr><td class="fieldtype">
+<a id="a02fb96f81fe7cfec364a307b5dfc2868"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<td class="fieldname">
+scaled</td>
+<td class="fielddoc">
+Last scaled values in body frame. </td></tr>
+<tr><td class="fieldtype">
+<a id="a8d5aee0e93b6d1d9b78b1d73722e998a"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<td class="fieldname">
+unscaled</td>
+<td class="fielddoc">
+Last unscaled values in sensor frame. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structimu__accel__t" id="structimu__accel__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structimu__accel__t">&#9670;&nbsp;</a></span>imu_accel_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct imu_accel_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00058">58</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for imu_accel_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structimu__accel__t__coll__graph.png" border="0" usemap="#imu__accel__t_coll__map" alt="Collaboration graph"/></div>
+<map name="imu__accel__t_coll__map" id="imu__accel__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,168,105,195"/>
+<area shape="rect" title=" " alt="" coords="26,5,85,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="af6a4afca0574bbf6ee348aec2ae7b858"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+abi_id</td>
+<td class="fielddoc">
+ABI sensor ID. </td></tr>
+<tr><td class="fieldtype">
+<a id="a0abd346b9314d9569fd000f773ce740d"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a></td>
+<td class="fieldname">
+body_to_sensor</td>
+<td class="fielddoc">
+Rotation from body to sensor frame (body to imu combined with imu to sensor) </td></tr>
+<tr><td class="fieldtype">
+<a id="a574e4bce16579490161479d0d2f44458"></a>struct <a class="el" href="imu_8h.html#structimu__calib__t">imu_calib_t</a></td>
+<td class="fieldname">
+calibrated</td>
+<td class="fielddoc">
+Calibration bitmask. </td></tr>
+<tr><td class="fieldtype">
+<a id="a30bce24a5723d6d6f09bb1c8b71ff5a8"></a><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+<td class="fieldname">
+last_stamp</td>
+<td class="fielddoc">
+Last measurement timestamp for integration. </td></tr>
+<tr><td class="fieldtype">
+<a id="ab4ee3eecaa0a9ae198eeb78900668bd4"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+neutral</td>
+<td class="fielddoc">
+Neutral values, compensation on unscaled-&gt;scaled. </td></tr>
+<tr><td class="fieldtype">
+<a id="aa87b0288f7f2adbad06b207bcf3b1a07"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+scale[2]</td>
+<td class="fielddoc">
+Scaling, first is numerator and second denominator. </td></tr>
+<tr><td class="fieldtype">
+<a id="a82581093bb29a49ac87f8287c68e574e"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+scaled</td>
+<td class="fielddoc">
+Last scaled values in body frame. </td></tr>
+<tr><td class="fieldtype">
+<a id="a3d98f79755c87e226545df348625c232"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+unscaled</td>
+<td class="fielddoc">
+Last unscaled values in sensor frame. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structimu__mag__t" id="structimu__mag__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structimu__mag__t">&#9670;&nbsp;</a></span>imu_mag_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct imu_mag_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00069">69</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for imu_mag_t:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structimu__mag__t__coll__graph.png" border="0" usemap="#imu__mag__t_coll__map" alt="Collaboration graph"/></div>
+<map name="imu__mag__t_coll__map" id="imu__mag__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,183,100,209"/>
+<area shape="rect" title=" " alt="" coords="23,5,82,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a8e3750c802931e5b2ce7b088acfb7f0c"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+abi_id</td>
+<td class="fielddoc">
+ABI sensor ID. </td></tr>
+<tr><td class="fieldtype">
+<a id="a48148bd32bf50719c07fd148fad7a809"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a></td>
+<td class="fieldname">
+body_to_sensor</td>
+<td class="fielddoc">
+Rotation from body to sensor frame (body to imu combined with imu to sensor) </td></tr>
+<tr><td class="fieldtype">
+<a id="a0b0df04048e552a2193a356c42cb2afb"></a>struct <a class="el" href="imu_8h.html#structimu__calib__t">imu_calib_t</a></td>
+<td class="fieldname">
+calibrated</td>
+<td class="fielddoc">
+Calibration bitmask. </td></tr>
+<tr><td class="fieldtype">
+<a id="a17e36f1f2f2e9c03de668e0429f0d517"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
+<td class="fieldname">
+current_scale</td>
+<td class="fielddoc">
+Current scaling multiplying. </td></tr>
+<tr><td class="fieldtype">
+<a id="a3ba2bb42284dd57602b47c6eb25efb37"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+neutral</td>
+<td class="fielddoc">
+Neutral values, compensation on unscaled-&gt;scaled. </td></tr>
+<tr><td class="fieldtype">
+<a id="a5e0bd3e83e489c7cd9289c38b1dd58ae"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+scale[2]</td>
+<td class="fielddoc">
+Scaling, first is numerator and second denominator. </td></tr>
+<tr><td class="fieldtype">
+<a id="ae29b5a398e1bd42788385a602935d83d"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+scaled</td>
+<td class="fielddoc">
+Last scaled values in body frame. </td></tr>
+<tr><td class="fieldtype">
+<a id="ab6809ba54fdfac5e02ec9d2c0ac2337d"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+unscaled</td>
+<td class="fielddoc">
+Last unscaled values in sensor frame. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structImu" id="structImu"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structImu">&#9670;&nbsp;</a></span>Imu</h2>
 
@@ -220,44 +478,26 @@ Variables</h2></td></tr>
 <div class="textblock"><p>abstract IMU interface providing fixed point interface <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00037">37</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-</div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for Imu:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00082">82</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+</div><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Collaboration diagram for Imu:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structImu__coll__graph.png" border="0" usemap="#Imu_coll__map" alt="Collaboration graph"/></div>
 <map name="Imu_coll__map" id="Imu_coll__map">
-<area shape="rect" title="abstract IMU interface providing fixed point interface" alt="" coords="11,241,58,268"/>
+<area shape="rect" title="abstract IMU interface providing fixed point interface" alt="" coords="11,139,58,165"/>
 <area shape="rect" title=" " alt="" coords="5,5,64,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="aecac1be12d8d9c9c31be2ad9d5b90627"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<a id="a18b15716ffc3b544a1b66695ce40ebb7"></a>struct <a class="el" href="imu_8h.html#structimu__accel__t">imu_accel_t</a></td>
 <td class="fieldname">
-accel</td>
+accels[<a class="el" href="imu_8h.html#ac541b6850c6b0318e71f450feb15cd52">IMU_MAX_SENSORS</a>]</td>
 <td class="fielddoc">
-accelerometer measurements in m/s^2 in BFP with <a class="el" href="group__math__algebra__int.html#ga871a3a4fc9d79e94f0f648483542f7fa">INT32_ACCEL_FRAC</a> </td></tr>
-<tr><td class="fieldtype">
-<a id="ab126bba936ccd50bad68d42e83b81a28"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-accel_neutral</td>
-<td class="fielddoc">
-static accelerometer bias from calibration in raw/unscaled units </td></tr>
-<tr><td class="fieldtype">
-<a id="ab29bc6fde030f41e3e990323a4fa2fd5"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-accel_prev</td>
-<td class="fielddoc">
-previous accelerometer measurements </td></tr>
-<tr><td class="fieldtype">
-<a id="abf7c6149da2d7b989713f6fc919ccb10"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-accel_unscaled</td>
-<td class="fielddoc">
-unscaled accelerometer measurements </td></tr>
+The accelerometer sensors. </td></tr>
 <tr><td class="fieldtype">
 <a id="aaf2a612473668b4e83f84504f6fcedea"></a>bool</td>
 <td class="fieldname">
@@ -270,391 +510,290 @@ flag for adjusting body_to_imu via settings. <p>if FALSE, reset to airframe valu
 <td class="fieldname">
 body_to_imu</td>
 <td class="fielddoc">
-rotation from body to imu frame </td></tr>
+Rotation from body to imu (all sensors) frame. </td></tr>
 <tr><td class="fieldtype">
-<a id="a556257d57db669a3e42ccc6c77fff286"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<a id="a861e1ec9ebaa8764962dbe9b6d7da01f"></a>struct <a class="el" href="imu_8h.html#structimu__gyro__t">imu_gyro_t</a></td>
 <td class="fieldname">
-gyro</td>
+gyros[<a class="el" href="imu_8h.html#ac541b6850c6b0318e71f450feb15cd52">IMU_MAX_SENSORS</a>]</td>
 <td class="fielddoc">
-gyroscope measurements in rad/s in BFP with <a class="el" href="group__math__algebra__int.html#gacd293568d358a48f21774753cf9f095b">INT32_RATE_FRAC</a> </td></tr>
+The gyro sensors. </td></tr>
 <tr><td class="fieldtype">
-<a id="aa15ae274818b1d781a10f3c3de482900"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<a id="a49743a658a6c43cb1cb2c5e4d7dd35c4"></a>bool</td>
 <td class="fieldname">
-gyro_neutral</td>
+initialized</td>
 <td class="fielddoc">
-static gyroscope bias from calibration in raw/unscaled units </td></tr>
+Check if the IMU is initialized. </td></tr>
 <tr><td class="fieldtype">
-<a id="a7ac65ce9270568f68550482ef718678c"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<a id="aa6f435142522bcca80d62d93547f1e49"></a>struct <a class="el" href="imu_8h.html#structimu__mag__t">imu_mag_t</a></td>
 <td class="fieldname">
-gyro_prev</td>
+mags[<a class="el" href="imu_8h.html#ac541b6850c6b0318e71f450feb15cd52">IMU_MAX_SENSORS</a>]</td>
 <td class="fielddoc">
-previous gyroscope measurements </td></tr>
-<tr><td class="fieldtype">
-<a id="a65a1e2b593c19ba1254060fd9a2f5b75"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
-<td class="fieldname">
-gyro_unscaled</td>
-<td class="fielddoc">
-unscaled gyroscope measurements </td></tr>
-<tr><td class="fieldtype">
-<a id="a6c4356739a6b97db247831e0be58849e"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-mag</td>
-<td class="fielddoc">
-magnetometer measurements scaled to 1 in BFP with <a class="el" href="group__math__algebra__int.html#ga3a65fe5805f1eb9ead5b3d2d6628a081">INT32_MAG_FRAC</a> </td></tr>
-<tr><td class="fieldtype">
-<a id="aba6da90715844d686389574fbef30b4b"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-mag_neutral</td>
-<td class="fielddoc">
-magnetometer neutral readings (bias) in raw/unscaled units </td></tr>
-<tr><td class="fieldtype">
-<a id="a01e131dee0a92335d91dabf61c33f627"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-mag_unscaled</td>
-<td class="fielddoc">
-unscaled magnetometer measurements </td></tr>
+The magnetometer sensors. </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a01dac8935d4166bc144b115219cddbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01dac8935d4166bc144b115219cddbc4">&#9670;&nbsp;</a></span>IMU_ACCEL_X_NEUTRAL</h2>
+<a id="ac541b6850c6b0318e71f450feb15cd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac541b6850c6b0318e71f450feb15cd52">&#9670;&nbsp;</a></span>IMU_MAX_SENSORS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_X_NEUTRAL&#160;&#160;&#160;0</td>
+          <td class="memname">#define IMU_MAX_SENSORS&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00090">90</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a4198979ecdab243efc790d5b739a4645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4198979ecdab243efc790d5b739a4645">&#9670;&nbsp;</a></span>IMU_ACCEL_X_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00107">107</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a199acc0383b0e1d7e3841bc3297cc0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199acc0383b0e1d7e3841bc3297cc0fb">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00091">91</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a20144cb4fd6b12baf8d74063f8dc87e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20144cb4fd6b12baf8d74063f8dc87e3">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00108">108</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a2b487e2376edc35048f5d78cd4968221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b487e2376edc35048f5d78cd4968221">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00092">92</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="ad8bdd9e68ab45b4ec5950f2e718d8f6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8bdd9e68ab45b4ec5950f2e718d8f6c">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00109">109</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a46eb7490c440a6456865b91fd7ece823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46eb7490c440a6456865b91fd7ece823">&#9670;&nbsp;</a></span>IMU_BODY_TO_IMU_PHI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_BODY_TO_IMU_PHI&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00078">78</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a82a39ecc102f002a754e0c97e096cf46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82a39ecc102f002a754e0c97e096cf46">&#9670;&nbsp;</a></span>IMU_BODY_TO_IMU_PSI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_BODY_TO_IMU_PSI&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00080">80</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a145707cbd3cb3e88e6536ae94f901567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a145707cbd3cb3e88e6536ae94f901567">&#9670;&nbsp;</a></span>IMU_BODY_TO_IMU_THETA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_BODY_TO_IMU_THETA&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00079">79</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a7c36ae4fa7593bdd81a2eac2a763452e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c36ae4fa7593bdd81a2eac2a763452e">&#9670;&nbsp;</a></span>IMU_GYRO_P_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00084">84</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a1b1c79353b8a69a2d7faecd6721efbb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1c79353b8a69a2d7faecd6721efbb8">&#9670;&nbsp;</a></span>IMU_GYRO_P_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00102">102</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="af3381e8cf000efbb86c6a4667449faf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3381e8cf000efbb86c6a4667449faf9">&#9670;&nbsp;</a></span>IMU_GYRO_Q_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00085">85</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="affd63ad52249c74117b86454fe73d5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd63ad52249c74117b86454fe73d5b0">&#9670;&nbsp;</a></span>IMU_GYRO_Q_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00103">103</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="adb9273d5a997fde171fc41b58191f597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9273d5a997fde171fc41b58191f597">&#9670;&nbsp;</a></span>IMU_GYRO_R_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_R_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00086">86</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a91fa3d93fbfb5edbdf7f3b34436b53da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fa3d93fbfb5edbdf7f3b34436b53da">&#9670;&nbsp;</a></span>IMU_GYRO_R_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_R_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00104">104</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a5a1d5879d834516237992ca0655fbd75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a1d5879d834516237992ca0655fbd75">&#9670;&nbsp;</a></span>IMU_MAG_X_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_X_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00096">96</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a34ef05992d74a9dc07c6a20feffd6eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ef05992d74a9dc07c6a20feffd6eef">&#9670;&nbsp;</a></span>IMU_MAG_X_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_X_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00112">112</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a883be296d939f15b4832b11a2a7126f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a883be296d939f15b4832b11a2a7126f7">&#9670;&nbsp;</a></span>IMU_MAG_Y_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Y_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00097">97</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a127929c4b5a458043f7ef2e0fa2a4e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a127929c4b5a458043f7ef2e0fa2a4e54">&#9670;&nbsp;</a></span>IMU_MAG_Y_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Y_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00113">113</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="aaaad8a2da6287091682c33d93f33d9b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaad8a2da6287091682c33d93f33d9b2">&#9670;&nbsp;</a></span>IMU_MAG_Z_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Z_NEUTRAL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00098">98</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
-
-</div>
-</div>
-<a id="a8612bd2fe2f927e8f283a9a8e60010f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8612bd2fe2f927e8f283a9a8e60010f5">&#9670;&nbsp;</a></span>IMU_MAG_Z_SIGN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Z_SIGN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00114">114</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8h_source.html#l00037">37</a> of file <a class="el" href="imu_8h_source.html">imu.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0f8ac241eeb395920f1d8edf8f0c7cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8ac241eeb395920f1d8edf8f0c7cf0">&#9670;&nbsp;</a></span>imu_get_accel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="imu_8h.html#structimu__accel__t">imu_accel_t</a>* imu_get_accel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find or create the accel in the imu structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender_id</td><td>The ABI sender id to search for </td></tr>
+    <tr><td class="paramname">create</td><td>Create a new index if not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>struct imu_accel_t* The accel structure if found/created else NULL </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00637">637</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00059">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00085">Imu::accels</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, and <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00515">imu_accel_raw_cb()</a>, and <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph.png" border="0" usemap="#imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph" alt=""/></div>
+<map name="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph" id="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph">
+<area shape="rect" title="Find or create the accel in the imu structure." alt="" coords="1135,115,1251,141"/>
+<area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="934,64,1065,91"/>
+<area shape="rect" href="imu_8c.html#a0b0dc32bfbf49e0830242cec59f8fe8f" title=" " alt="" coords="929,115,1070,141"/>
+<area shape="rect" href="imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="912,545,1087,572"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,64,814,91"/>
+<area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="503,64,634,91"/>
+<area shape="rect" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,57,414,98"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,115,815,141"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,165,843,192"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,216,845,243"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,267,853,293"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,317,841,344"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,368,839,395"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,419,843,445"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,469,834,496"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,520,835,547"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,571,849,597"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,621,851,648"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,672,846,699"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,723,846,749"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,773,830,800"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,824,831,851"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,875,843,901"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,925,864,952"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,976,829,1003"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,925,643,952"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,925,407,952"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,976,639,1003"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1027,632,1053"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a304a000b998533803b0d079c86e8f915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304a000b998533803b0d079c86e8f915">&#9670;&nbsp;</a></span>imu_get_gyro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="imu_8h.html#structimu__gyro__t">imu_gyro_t</a>* imu_get_gyro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find or create the gyro in the imu structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender_id</td><td>The ABI sender id to search for </td></tr>
+    <tr><td class="paramname">create</td><td>Create a new index if not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>struct imu_gyro_t* The gyro structure if found/created else NULL </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00614">614</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00048">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00084">Imu::gyros</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, and <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00450">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph.png" border="0" usemap="#imu_8h_a304a000b998533803b0d079c86e8f915_icgraph" alt=""/></div>
+<map name="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph" id="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph">
+<area shape="rect" title="Find or create the gyro in the imu structure." alt="" coords="1131,115,1241,141"/>
+<area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="932,39,1063,65"/>
+<area shape="rect" href="imu_8c.html#a734b27fb1fccee20bce188d2ee43b4d1" title=" " alt="" coords="929,140,1065,167"/>
+<area shape="rect" href="imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="912,571,1083,597"/>
+<area shape="rect" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="945,89,1050,116"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,39,814,65"/>
+<area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="503,64,634,91"/>
+<area shape="rect" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,57,414,98"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,140,815,167"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,191,843,217"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,241,845,268"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,292,853,319"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,343,841,369"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,393,839,420"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,444,843,471"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,495,834,521"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,545,835,572"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,596,849,623"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,647,851,673"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,697,846,724"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,748,846,775"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,799,830,825"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,849,831,876"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,900,843,927"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,951,864,977"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,1001,829,1028"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,951,643,977"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,951,407,977"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,1001,639,1028"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1052,632,1079"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeb392db1b0ad7340d0d32a78acea9e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb392db1b0ad7340d0d32a78acea9e1e">&#9670;&nbsp;</a></span>imu_get_mag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="imu_8h.html#structimu__mag__t">imu_mag_t</a>* imu_get_mag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find or create the mag in the imu structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender_id</td><td>The ABI sender id to search for </td></tr>
+    <tr><td class="paramname">create</td><td>Create a new index if not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>struct imu_mag_t* The mag structure if found/created else NULL </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00661">661</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00070">imu_mag_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>, and <a class="el" href="imu_8h_source.html#l00086">Imu::mags</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00580">imu_mag_raw_cb()</a>, and <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph.png" border="0" usemap="#imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph" alt=""/></div>
+<map name="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph" id="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph">
+<area shape="rect" title="Find or create the mag in the imu structure." alt="" coords="1140,115,1251,141"/>
+<area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="941,64,1072,91"/>
+<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="939,115,1075,141"/>
+<area shape="rect" href="imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="921,191,1092,217"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,64,815,91"/>
+<area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="499,64,630,91"/>
+<area shape="rect" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,57,414,98"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="741,115,815,141"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,165,831,192"/>
+<area shape="rect" href="mag__ist8310_8h.html#af1ab1d4f6c31f66cf8343af4e33702a6" title=" " alt="" coords="683,216,873,243"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="727,267,829,293"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="495,241,635,268"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="501,292,628,319"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a86a06fe7a9831292bd92867da2d12f80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86a06fe7a9831292bd92867da2d12f80">&#9670;&nbsp;</a></span>imu_init()</h2>
 
@@ -671,29 +810,48 @@ unscaled magnetometer measurements </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00110">110</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p>External functions. </p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00044">Imu::accel_neutral</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="imu_8h_source.html#l00043">Imu::gyro_neutral</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__apogee_8h_source.html#l00093">IMU_ACCEL_X_NEUTRAL</a>, <a class="el" href="imu__apogee_8h_source.html#l00094">IMU_ACCEL_Y_NEUTRAL</a>, <a class="el" href="imu__apogee_8h_source.html#l00095">IMU_ACCEL_Z_NEUTRAL</a>, <a class="el" href="imu_8h_source.html#l00078">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8h_source.html#l00080">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8h_source.html#l00079">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu__apogee_8h_source.html#l00074">IMU_GYRO_P_NEUTRAL</a>, <a class="el" href="imu__apogee_8h_source.html#l00075">IMU_GYRO_Q_NEUTRAL</a>, <a class="el" href="imu__apogee_8h_source.html#l00076">IMU_GYRO_R_NEUTRAL</a>, <a class="el" href="imu_8h_source.html#l00096">IMU_MAG_X_NEUTRAL</a>, <a class="el" href="imu_8h_source.html#l00097">IMU_MAG_Y_NEUTRAL</a>, <a class="el" href="imu_8h_source.html#l00098">IMU_MAG_Z_NEUTRAL</a>, <a class="el" href="navstik__1_80_8h_source.html#l00059">IMU_POWER_GPIO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="imu_8h_source.html#l00045">Imu::mag_neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="imu_8c_source.html#l00058">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00046">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00052">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00078">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00066">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00072">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00098">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00086">send_mag_raw()</a>, <a class="el" href="imu_8c_source.html#l00092">send_mag_scaled()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00239">239</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+
+<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00048">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00059">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00070">imu_mag_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00085">Imu::accels</a>, <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8h_source.html#l00055">imu_gyro_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00066">imu_accel_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00077">imu_mag_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00050">imu_gyro_t::calibrated</a>, <a class="el" href="imu_8h_source.html#l00061">imu_accel_t::calibrated</a>, <a class="el" href="imu_8h_source.html#l00071">imu_mag_t::calibrated</a>, <a class="el" href="imu_8h_source.html#l00044">imu_calib_t::current</a>, <a class="el" href="imu_8h_source.html#l00076">imu_mag_t::current_scale</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="imu_8h_source.html#l00084">Imu::gyros</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00081">IMU_ACCEL_CALIB</a>, <a class="el" href="imu_8c_source.html#l00515">imu_accel_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00233">imu_accel_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00108">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00110">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00109">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l00060">IMU_GYRO_CALIB</a>, <a class="el" href="imu_8c_source.html#l00450">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00233">imu_gyro_raw_ev</a>, <a class="el" href="imu_8c_source.html#l00102">IMU_MAG_CALIB</a>, <a class="el" href="imu_8c_source.html#l00580">imu_mag_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00233">imu_mag_raw_ev</a>, <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>, <a class="el" href="imu_8h_source.html#l00083">Imu::initialized</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00347">int32_rmat_identity()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT_VECT3_ZERO</a>, <a class="el" href="imu_8h_source.html#l00049">imu_gyro_t::last_stamp</a>, <a class="el" href="imu_8h_source.html#l00060">imu_accel_t::last_stamp</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00123">mag_calib</a>, <a class="el" href="imu_8h_source.html#l00086">Imu::mags</a>, <a class="el" href="imu_8h_source.html#l00041">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00053">imu_gyro_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00064">imu_accel_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00074">imu_mag_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00043">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00042">imu_calib_t::scale</a>, <a class="el" href="imu_8h_source.html#l00054">imu_gyro_t::scale</a>, <a class="el" href="imu_8h_source.html#l00065">imu_accel_t::scale</a>, <a class="el" href="imu_8h_source.html#l00075">imu_mag_t::scale</a>, <a class="el" href="imu_8c_source.html#l00140">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00120">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00130">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00172">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00152">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00162">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00204">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00216">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00184">send_mag_raw()</a>, <a class="el" href="imu_8c_source.html#l00194">send_mag_scaled()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph.png" border="0" usemap="#imu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph" alt=""/></div>
 <map name="imu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph" id="imu_8h_a86a06fe7a9831292bd92867da2d12f80_cgraph">
-<area shape="rect" title=" " alt="" coords="5,284,80,311"/>
-<area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="158,5,301,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,56,313,83"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="128,107,331,133"/>
-<area shape="rect" href="imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,157,277,184"/>
-<area shape="rect" href="imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="167,208,292,235"/>
-<area shape="rect" href="imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="158,259,301,285"/>
-<area shape="rect" href="imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="185,309,274,336"/>
-<area shape="rect" href="imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,360,289,387"/>
-<area shape="rect" href="imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,411,299,437"/>
-<area shape="rect" href="imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="185,461,274,488"/>
-<area shape="rect" href="imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,512,289,539"/>
-<area shape="rect" href="imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,563,299,589"/>
+<area shape="rect" title="External functions." alt="" coords="5,639,80,665"/>
+<area shape="rect" href="imu_8c.html#a0b0dc32bfbf49e0830242cec59f8fe8f" title=" " alt="" coords="159,107,300,133"/>
+<area shape="rect" href="imu_8c.html#a734b27fb1fccee20bce188d2ee43b4d1" title=" " alt="" coords="161,309,297,336"/>
+<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="161,208,297,235"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="161,360,297,387"/>
+<area shape="rect" href="group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba" title="initialises a rotation matrix to identity" alt="" coords="154,411,305,437"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="149,461,310,488"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="146,512,313,539"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="128,563,331,589"/>
+<area shape="rect" href="imu_8c.html#ad22c09e97d332fdf55989e3881b55322" title=" " alt="" coords="182,613,277,640"/>
+<area shape="rect" href="imu_8c.html#a8bf5ba349fd3a82667acb22b90b3e53c" title=" " alt="" coords="167,664,292,691"/>
+<area shape="rect" href="imu_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title=" " alt="" coords="158,715,301,741"/>
+<area shape="rect" href="imu_8c.html#aa41528f38e1f342b35ae31c21b51d803" title=" " alt="" coords="185,765,274,792"/>
+<area shape="rect" href="imu_8c.html#aef1f95c9b1237a23530852c5ed12863a" title=" " alt="" coords="169,816,289,843"/>
+<area shape="rect" href="imu_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title=" " alt="" coords="160,867,299,893"/>
+<area shape="rect" href="imu_8c.html#ae7d9de96df316a3e4d1bf9306bf8eb0d" title=" " alt="" coords="185,917,274,944"/>
+<area shape="rect" href="imu_8c.html#a73e1fbeb78986b684f07a6555ddae97d" title=" " alt="" coords="158,968,301,995"/>
+<area shape="rect" href="imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815" title=" " alt="" coords="169,1019,289,1045"/>
+<area shape="rect" href="imu_8c.html#a63448db29d3d3265d23bb3c75c2ea671" title=" " alt="" coords="160,1069,299,1096"/>
+<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="389,56,572,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e" title="rotate 3D vector by rotation matrix." alt="" coords="413,107,548,133"/>
+<area shape="rect" href="imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="423,5,539,32"/>
+<area shape="rect" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix." alt="" coords="387,157,574,184"/>
+<area shape="rect" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix." alt="" coords="405,259,557,285"/>
+<area shape="rect" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix." alt="" coords="381,309,581,336"/>
+<area shape="rect" href="imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="425,360,536,387"/>
+<area shape="rect" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="379,411,583,437"/>
+<area shape="rect" href="imu_8c.html#aeb392db1b0ad7340d0d32a78acea9e1e" title="Find or create the mag in the imu structure." alt="" coords="425,208,536,235"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="397,461,564,488"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="631,461,780,488"/>
 </map>
 </div>
 
@@ -717,160 +875,294 @@ unscaled magnetometer measurements </td></tr>
 
 </div>
 </div>
-<a id="a34a2e1e2b450191b8ab1e849239810b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34a2e1e2b450191b8ab1e849239810b2">&#9670;&nbsp;</a></span>imu_scale_accel()</h2>
+<a id="a5403a88d05fb1440580b67ee3f41f2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5403a88d05fb1440580b67ee3f41f2ba">&#9670;&nbsp;</a></span>imu_set_defaults_accel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void imu_scale_accel </td>
+          <td class="memname">void imu_set_defaults_accel </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
-          <td class="paramname"><em>_imu</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>abi_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *&#160;</td>
+          <td class="paramname"><em>imu_to_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>neutral</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00219">219</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p>Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to ensure correct values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abi_id</td><td>The ABI sender id to set the defaults for </td></tr>
+    <tr><td class="paramname">imu_to_sensor</td><td><a class="el" href="imu_8h.html#structImu" title="abstract IMU interface providing fixed point interface">Imu</a> to sensor rotation matrix </td></tr>
+    <tr><td class="paramname">neutral</td><td>Neutral values </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale values, 0 index is multiply and 1 index is divide </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::accel_neutral</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::accel_prev</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="imu__apogee_8h_source.html#l00084">IMU_ACCEL_X_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00083">IMU_ACCEL_X_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00049">IMU_ACCEL_X_SIGN</a>, <a class="el" href="imu__apogee_8h_source.html#l00087">IMU_ACCEL_Y_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00086">IMU_ACCEL_Y_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00050">IMU_ACCEL_Y_SIGN</a>, <a class="el" href="imu__apogee_8h_source.html#l00090">IMU_ACCEL_Z_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00089">IMU_ACCEL_Z_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00051">IMU_ACCEL_Z_SIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00398">398</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00136">imu_mpu_spi_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, and <a class="el" href="navdata_8c_source.html#l00330">navdata_publish_imu()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00059">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8h_source.html#l00066">imu_accel_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00061">imu_accel_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00637">imu_get_accel()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00041">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00064">imu_accel_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00043">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00042">imu_calib_t::scale</a>, <a class="el" href="imu_8h_source.html#l00065">imu_accel_t::scale</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="imu__apogee_8c_source.html#l00094">imu_apogee_init()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00100">imu_aspirin2_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00084">imu_aspirin_i2c_init()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00069">imu_aspirin_init()</a>, <a class="el" href="imu__bebop_8c_source.html#l00075">imu_bebop_init()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>, <a class="el" href="imu__cube_8c_source.html#l00038">imu_cube_init()</a>, <a class="el" href="imu__disco_8c_source.html#l00073">imu_disco_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00103">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00123">imu_mpu_hmc_init()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00066">imu_mpu_i2c_init()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00115">imu_mpu_spi_init()</a>, <a class="el" href="imu__nps_8c_source.html#l00031">imu_nps_init()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4_init()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00062">imu_px4fmu_init()</a>, <a class="el" href="invensense2_8c_source.html#l00327">invensense2_fix_config()</a>, and <a class="el" href="navdata_8c_source.html#l00202">navdata_init()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu_8h_a34a2e1e2b450191b8ab1e849239810b2_icgraph.png" border="0" usemap="#imu_8h_a34a2e1e2b450191b8ab1e849239810b2_icgraph" alt=""/></div>
-<map name="imu_8h_a34a2e1e2b450191b8ab1e849239810b2_icgraph" id="imu_8h_a34a2e1e2b450191b8ab1e849239810b2_icgraph">
-<area shape="rect" title=" " alt="" coords="405,385,535,412"/>
-<area shape="rect" href="imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title=" " alt="" coords="210,5,337,32"/>
-<area shape="rect" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title=" " alt="" coords="200,56,347,83"/>
-<area shape="rect" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title=" " alt="" coords="198,107,349,133"/>
-<area shape="rect" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title=" " alt="" coords="202,157,345,184"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title=" " alt="" coords="189,208,357,235"/>
-<area shape="rect" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components." alt="" coords="204,259,343,285"/>
-<area shape="rect" href="imu__bmi088__i2c_8h.html#a688a0cac0c423c242b7b08fc7b6de2b4" title=" " alt="" coords="200,309,347,336"/>
-<area shape="rect" href="imu__disco_8h.html#af4556078aa1856220d57e9f6d92c6e28" title="Handle all the events of the Disco IMU components." alt="" coords="207,360,339,387"/>
-<area shape="rect" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="194,411,353,437"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title=" " alt="" coords="192,461,355,488"/>
-<area shape="rect" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31" title=" " alt="" coords="197,512,350,539"/>
-<area shape="rect" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0" title=" " alt="" coords="197,563,350,589"/>
-<area shape="rect" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title=" " alt="" coords="213,613,334,640"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8h.html#adc3f36e2267ea507426576f9b338c714" title=" " alt="" coords="212,664,335,691"/>
-<area shape="rect" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title=" " alt="" coords="199,715,347,741"/>
-<area shape="rect" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title=" " alt="" coords="193,765,354,792"/>
-<area shape="rect" href="imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title=" " alt="" coords="5,5,141,32"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="10,765,137,792"/>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_cgraph.png" border="0" usemap="#imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_cgraph" alt=""/></div>
+<map name="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_cgraph" id="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_cgraph">
+<area shape="rect" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="5,56,180,83"/>
+<area shape="rect" href="imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="251,5,367,32"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="241,56,377,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="228,107,389,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="437,107,604,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="652,107,801,133"/>
+</map>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_icgraph.png" border="0" usemap="#imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_icgraph" alt=""/></div>
+<map name="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_icgraph" id="imu_8h_a5403a88d05fb1440580b67ee3f41f2ba_icgraph">
+<area shape="rect" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="600,411,775,437"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="400,5,531,32"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="398,56,533,83"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="389,107,541,133"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="402,157,529,184"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="404,208,527,235"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="400,259,531,285"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="409,309,522,336"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="407,360,523,387"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="394,411,537,437"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="392,461,539,488"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="397,512,534,539"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="397,563,534,589"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="413,613,518,640"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="412,664,519,691"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="399,715,531,741"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="379,765,552,792"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="414,816,517,843"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="183,765,331,792"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="5,765,135,792"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="187,816,327,843"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="193,867,320,893"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8d63b0a61c8ffe88dd15b40843b1ae1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d63b0a61c8ffe88dd15b40843b1ae1d">&#9670;&nbsp;</a></span>imu_scale_gyro()</h2>
+<a id="a78eff9ff635dfd37cbc9f88746da18cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78eff9ff635dfd37cbc9f88746da18cf">&#9670;&nbsp;</a></span>imu_set_defaults_gyro()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void imu_scale_gyro </td>
+          <td class="memname">void imu_set_defaults_gyro </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
-          <td class="paramname"><em>_imu</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>abi_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *&#160;</td>
+          <td class="paramname"><em>imu_to_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
+          <td class="paramname"><em>neutral</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00208">208</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p>Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ensure correct values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abi_id</td><td>The ABI sender id to set the defaults for </td></tr>
+    <tr><td class="paramname">imu_to_sensor</td><td><a class="el" href="imu_8h.html#structImu" title="abstract IMU interface providing fixed point interface">Imu</a> to sensor rotation matrix </td></tr>
+    <tr><td class="paramname">neutral</td><td>Neutral values </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale values, 0 index is multiply and 1 index is divide </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00043">Imu::gyro_neutral</a>, <a class="el" href="imu_8h_source.html#l00041">Imu::gyro_prev</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu__apogee_8h_source.html#l00065">IMU_GYRO_P_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00064">IMU_GYRO_P_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00044">IMU_GYRO_P_SIGN</a>, <a class="el" href="imu__apogee_8h_source.html#l00068">IMU_GYRO_Q_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00067">IMU_GYRO_Q_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00045">IMU_GYRO_Q_SIGN</a>, <a class="el" href="imu__apogee_8h_source.html#l00071">IMU_GYRO_R_SENS_DEN</a>, <a class="el" href="imu__apogee_8h_source.html#l00070">IMU_GYRO_R_SENS_NUM</a>, <a class="el" href="imu__apogee_8h_source.html#l00046">IMU_GYRO_R_SIGN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00368">368</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00136">imu_mpu_spi_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, and <a class="el" href="navdata_8c_source.html#l00330">navdata_publish_imu()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00048">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8h_source.html#l00055">imu_gyro_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00050">imu_gyro_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00614">imu_get_gyro()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00041">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00053">imu_gyro_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00043">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00042">imu_calib_t::scale</a>, <a class="el" href="imu_8h_source.html#l00054">imu_gyro_t::scale</a>, and <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="imu__apogee_8c_source.html#l00094">imu_apogee_init()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00100">imu_aspirin2_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00084">imu_aspirin_i2c_init()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00069">imu_aspirin_init()</a>, <a class="el" href="imu__bebop_8c_source.html#l00075">imu_bebop_init()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>, <a class="el" href="imu__cube_8c_source.html#l00038">imu_cube_init()</a>, <a class="el" href="imu__disco_8c_source.html#l00073">imu_disco_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00103">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00123">imu_mpu_hmc_init()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00066">imu_mpu_i2c_init()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00115">imu_mpu_spi_init()</a>, <a class="el" href="imu__nps_8c_source.html#l00031">imu_nps_init()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4_init()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00062">imu_px4fmu_init()</a>, <a class="el" href="invensense2_8c_source.html#l00327">invensense2_fix_config()</a>, and <a class="el" href="navdata_8c_source.html#l00202">navdata_init()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu_8h_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph.png" border="0" usemap="#imu_8h_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" alt=""/></div>
-<map name="imu_8h_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" id="imu_8h_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph">
-<area shape="rect" title=" " alt="" coords="405,385,529,412"/>
-<area shape="rect" href="imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title=" " alt="" coords="210,5,337,32"/>
-<area shape="rect" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title=" " alt="" coords="200,56,347,83"/>
-<area shape="rect" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title=" " alt="" coords="198,107,349,133"/>
-<area shape="rect" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title=" " alt="" coords="202,157,345,184"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title=" " alt="" coords="189,208,357,235"/>
-<area shape="rect" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components." alt="" coords="204,259,343,285"/>
-<area shape="rect" href="imu__bmi088__i2c_8h.html#a688a0cac0c423c242b7b08fc7b6de2b4" title=" " alt="" coords="200,309,347,336"/>
-<area shape="rect" href="imu__disco_8h.html#af4556078aa1856220d57e9f6d92c6e28" title="Handle all the events of the Disco IMU components." alt="" coords="207,360,339,387"/>
-<area shape="rect" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="194,411,353,437"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title=" " alt="" coords="192,461,355,488"/>
-<area shape="rect" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31" title=" " alt="" coords="197,512,350,539"/>
-<area shape="rect" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0" title=" " alt="" coords="197,563,350,589"/>
-<area shape="rect" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title=" " alt="" coords="213,613,334,640"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8h.html#adc3f36e2267ea507426576f9b338c714" title=" " alt="" coords="212,664,335,691"/>
-<area shape="rect" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title=" " alt="" coords="199,715,347,741"/>
-<area shape="rect" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title=" " alt="" coords="193,765,354,792"/>
-<area shape="rect" href="imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title=" " alt="" coords="5,5,141,32"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="10,765,137,792"/>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_cgraph.png" border="0" usemap="#imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_cgraph" alt=""/></div>
+<map name="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_cgraph" id="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_cgraph">
+<area shape="rect" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="5,56,176,83"/>
+<area shape="rect" href="imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="249,5,360,32"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="237,56,373,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="224,107,385,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="433,107,600,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="648,107,797,133"/>
+</map>
+</div>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_icgraph.png" border="0" usemap="#imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_icgraph" alt=""/></div>
+<map name="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_icgraph" id="imu_8h_a78eff9ff635dfd37cbc9f88746da18cf_icgraph">
+<area shape="rect" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="600,411,771,437"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="400,5,531,32"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="398,56,533,83"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="389,107,541,133"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="402,157,529,184"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="404,208,527,235"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="400,259,531,285"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="409,309,522,336"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="407,360,523,387"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="394,411,537,437"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="392,461,539,488"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="397,512,534,539"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="397,563,534,589"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="413,613,518,640"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="412,664,519,691"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="399,715,531,741"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="379,765,552,792"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="414,816,517,843"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="183,765,331,792"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="5,765,135,792"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="187,816,327,843"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="193,867,320,893"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6ca6c7f78fab9df37eb980d2b4d1b3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ca6c7f78fab9df37eb980d2b4d1b3a9">&#9670;&nbsp;</a></span>imu_scale_mag()</h2>
+<a id="a3c314a5bfe113caf010bad75b3de86c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c314a5bfe113caf010bad75b3de86c4">&#9670;&nbsp;</a></span>imu_set_defaults_mag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void imu_scale_mag </td>
+          <td class="memname">void imu_set_defaults_mag </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
-          <td class="paramname"><em>_imu</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>abi_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32RMat">Int32RMat</a> *&#160;</td>
+          <td class="paramname"><em>imu_to_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>neutral</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00246">246</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p>Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to ensure correct values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abi_id</td><td>The ABI sender id to set the defaults for </td></tr>
+    <tr><td class="paramname">imu_to_sensor</td><td><a class="el" href="imu_8h.html#structImu" title="abstract IMU interface providing fixed point interface">Imu</a> to sensor rotation matrix </td></tr>
+    <tr><td class="paramname">neutral</td><td>Neutral values </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale values, 0 index is multiply and 1 index is divide </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="imu__ardrone2_8h_source.html#l00073">IMU_MAG_X_SENS_DEN</a>, <a class="el" href="imu__ardrone2_8h_source.html#l00072">IMU_MAG_X_SENS_NUM</a>, <a class="el" href="max7456_8c_source.html#l00099">IMU_MAG_X_SIGN</a>, <a class="el" href="imu__ardrone2_8h_source.html#l00076">IMU_MAG_Y_SENS_DEN</a>, <a class="el" href="imu__ardrone2_8h_source.html#l00075">IMU_MAG_Y_SENS_NUM</a>, <a class="el" href="imu_8h_source.html#l00113">IMU_MAG_Y_SIGN</a>, <a class="el" href="imu__ardrone2_8h_source.html#l00079">IMU_MAG_Z_SENS_DEN</a>, <a class="el" href="imu__ardrone2_8h_source.html#l00078">IMU_MAG_Z_SENS_NUM</a>, <a class="el" href="imu_8h_source.html#l00114">IMU_MAG_Z_SIGN</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00045">Imu::mag_neutral</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00428">428</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00085">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00070">mag_pitot_parse_msg()</a>, <a class="el" href="mag__rm3100_8c_source.html#l00093">mag_rm3100_module_event()</a>, and <a class="el" href="navdata_8c_source.html#l00330">navdata_publish_imu()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00070">imu_mag_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8h_source.html#l00077">imu_mag_t::body_to_sensor</a>, <a class="el" href="imu_8h_source.html#l00071">imu_mag_t::calibrated</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00661">imu_get_mag()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00075">int32_rmat_comp()</a>, <a class="el" href="imu_8h_source.html#l00041">imu_calib_t::neutral</a>, <a class="el" href="imu_8h_source.html#l00074">imu_mag_t::neutral</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00704">RMAT_COPY</a>, <a class="el" href="imu_8h_source.html#l00043">imu_calib_t::rotation</a>, <a class="el" href="imu_8h_source.html#l00042">imu_calib_t::scale</a>, <a class="el" href="imu_8h_source.html#l00075">imu_mag_t::scale</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="imu__nps_8c_source.html#l00031">imu_nps_init()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00055">mag_ist8310_module_init()</a>, and <a class="el" href="navdata_8c_source.html#l00202">navdata_init()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu_8h_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph.png" border="0" usemap="#imu_8h_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" alt=""/></div>
-<map name="imu_8h_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" id="imu_8h_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph">
-<area shape="rect" title=" " alt="" coords="445,436,569,463"/>
-<area shape="rect" href="imu__xsens_8c.html#a01a96d75a3da02e6c7046cff96b1f7e6" title=" " alt="" coords="230,5,357,32"/>
-<area shape="rect" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title=" " alt="" coords="220,56,367,83"/>
-<area shape="rect" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title=" " alt="" coords="218,107,369,133"/>
-<area shape="rect" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title=" " alt="" coords="222,157,365,184"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title=" " alt="" coords="209,208,377,235"/>
-<area shape="rect" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components." alt="" coords="224,259,363,285"/>
-<area shape="rect" href="imu__disco_8h.html#af4556078aa1856220d57e9f6d92c6e28" title="Handle all the events of the Disco IMU components." alt="" coords="227,309,359,336"/>
-<area shape="rect" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title=" " alt="" coords="214,360,373,387"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title=" " alt="" coords="212,411,375,437"/>
-<area shape="rect" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title=" " alt="" coords="233,461,354,488"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8h.html#adc3f36e2267ea507426576f9b338c714" title=" " alt="" coords="232,512,355,539"/>
-<area shape="rect" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title=" " alt="" coords="219,563,367,589"/>
-<area shape="rect" href="mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title=" " alt="" coords="206,614,381,655"/>
-<area shape="rect" href="mag__ist8310_8h.html#a9fadf88e2588ae73f42deaea5db87ee8" title=" " alt="" coords="212,679,375,721"/>
-<area shape="rect" href="mag__lis3mdl_8h.html#a8c19f6525e337de402148b12623deaed" title=" " alt="" coords="212,745,375,786"/>
-<area shape="rect" href="mag__pitot__uart_8c.html#a507efea07b8c1b9e6094e6895f931b87" title=" " alt="" coords="210,811,377,837"/>
-<area shape="rect" href="mag__rm3100_8h.html#ae7e2acfe7a6a6c13d9ba58bce4dfb57d" title=" " alt="" coords="189,861,397,888"/>
-<area shape="rect" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title=" " alt="" coords="213,912,374,939"/>
-<area shape="rect" href="imu__xsens_8h.html#a881da7d1492e95d09c81c6f3c5a1e4cd" title=" " alt="" coords="5,5,141,32"/>
-<area shape="rect" href="mag__pitot__uart_8h.html#aac788d30836b603e187ffb4f8fdcf1c6" title=" " alt="" coords="7,811,139,837"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="10,912,137,939"/>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_cgraph.png" border="0" usemap="#imu_8h_a3c314a5bfe113caf010bad75b3de86c4_cgraph" alt=""/></div>
+<map name="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_cgraph" id="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_cgraph">
+<area shape="rect" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="5,56,176,83"/>
+<area shape="rect" href="imu_8c.html#aeb392db1b0ad7340d0d32a78acea9e1e" title="Find or create the mag in the imu structure." alt="" coords="249,5,360,32"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="237,56,373,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="224,107,385,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="433,107,600,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="648,107,797,133"/>
+</map>
+</div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_icgraph.png" border="0" usemap="#imu_8h_a3c314a5bfe113caf010bad75b3de86c4_icgraph" alt=""/></div>
+<map name="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_icgraph" id="imu_8h_a3c314a5bfe113caf010bad75b3de86c4_icgraph">
+<area shape="rect" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="432,56,603,83"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="236,5,341,32"/>
+<area shape="rect" href="mag__ist8310_8h.html#af1ab1d4f6c31f66cf8343af4e33702a6" title=" " alt="" coords="193,56,384,83"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="237,107,340,133"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="5,81,145,108"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="12,132,139,159"/>
 </map>
 </div>
 
@@ -892,29 +1184,31 @@ unscaled magnetometer measurements </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00178">178</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00736">736</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00054">Imu::b2i_set_current</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu_8h_source.html#l00078">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8h_source.html#l00080">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8h_source.html#l00079">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01067">stateIsAttitudeValid()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00092">Imu::b2i_set_current</a>, <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00108">IMU_BODY_TO_IMU_PHI</a>, <a class="el" href="imu_8c_source.html#l00110">IMU_BODY_TO_IMU_PSI</a>, <a class="el" href="imu_8c_source.html#l00109">IMU_BODY_TO_IMU_THETA</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01067">stateIsAttitudeValid()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph.png" border="0" usemap="#imu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph" alt=""/></div>
 <map name="imu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph" id="imu_8h_a931916ce562dfa28e02e0a6001dddc43_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,200,159"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="499,144,667,171"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="270,31,429,57"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="266,132,433,159"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="248,183,451,209"/>
-<area shape="rect" href="group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid." alt="" coords="274,233,425,260"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="715,144,888,171"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="937,119,1091,145"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="936,169,1092,196"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="501,31,665,57"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="724,56,879,83"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="729,5,874,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid." alt="" coords="503,233,663,260"/>
+<area shape="rect" title=" " alt="" coords="5,188,200,215"/>
+<area shape="rect" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="267,97,432,138"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="499,209,667,236"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="248,213,451,240"/>
+<area shape="rect" href="group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid." alt="" coords="274,264,425,291"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="515,5,651,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="501,56,664,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="502,107,663,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="499,157,666,184"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="718,107,885,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="939,107,1089,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="715,209,888,236"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="937,159,1091,185"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="936,209,1092,236"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid." alt="" coords="503,264,663,291"/>
 </map>
 </div>
 
@@ -936,26 +1230,28 @@ unscaled magnetometer measurements </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00151">151</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00712">712</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_ac50fba336ca2c337f240bab0db44f64e_cgraph.png" border="0" usemap="#imu_8h_ac50fba336ca2c337f240bab0db44f64e_cgraph" alt=""/></div>
 <map name="imu_8h_ac50fba336ca2c337f240bab0db44f64e_cgraph" id="imu_8h_ac50fba336ca2c337f240bab0db44f64e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,172,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,56,388,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="225,107,383,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="221,157,387,184"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="436,56,609,83"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="658,5,813,32"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="657,56,813,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="441,107,605,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="658,107,813,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="663,157,808,184"/>
+<area shape="rect" title=" " alt="" coords="5,157,172,184"/>
+<area shape="rect" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="221,99,387,141"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,187,388,213"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="455,5,591,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="441,56,604,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="442,107,603,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="439,157,606,184"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="657,107,824,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="872,107,1021,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="436,208,609,235"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="663,183,818,209"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="663,233,819,260"/>
 </map>
 </div>
 
@@ -977,26 +1273,28 @@ unscaled magnetometer measurements </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00169">169</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00728">728</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a88ec31da12a499ee7b47fe11b4ccfa4e_cgraph.png" border="0" usemap="#imu_8h_a88ec31da12a499ee7b47fe11b4ccfa4e_cgraph" alt=""/></div>
 <map name="imu_8h_a88ec31da12a499ee7b47fe11b4ccfa4e_cgraph" id="imu_8h_a88ec31da12a499ee7b47fe11b4ccfa4e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,172,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,56,388,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="225,107,383,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="221,157,387,184"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="436,56,609,83"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="658,5,813,32"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="657,56,813,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="441,107,605,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="658,107,813,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="663,157,808,184"/>
+<area shape="rect" title=" " alt="" coords="5,157,172,184"/>
+<area shape="rect" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="221,99,387,141"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,187,388,213"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="455,5,591,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="441,56,604,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="442,107,603,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="439,157,606,184"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="657,107,824,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="872,107,1021,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="436,208,609,235"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="663,183,818,209"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="663,233,819,260"/>
 </map>
 </div>
 
@@ -1018,26 +1316,28 @@ unscaled magnetometer measurements </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00160">160</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00720">720</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00049">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu_8h_source.html#l00087">Imu::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a3e25b56c5719a23e494568696083459e_cgraph.png" border="0" usemap="#imu_8h_a3e25b56c5719a23e494568696083459e_cgraph" alt=""/></div>
 <map name="imu_8h_a3e25b56c5719a23e494568696083459e_cgraph" id="imu_8h_a3e25b56c5719a23e494568696083459e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,189,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="237,56,405,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="242,107,401,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="238,157,405,184"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="453,56,627,83"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="675,5,830,32"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="675,56,831,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="458,107,622,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="675,107,830,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="680,157,825,184"/>
+<area shape="rect" title=" " alt="" coords="5,157,189,184"/>
+<area shape="rect" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="239,99,404,141"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="237,187,405,213"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="472,5,608,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb" title="Composition (multiplication) of two rotation matrices." alt="" coords="459,56,621,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="459,107,621,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="457,157,623,184"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="675,107,841,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="889,107,1039,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="453,208,627,235"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="681,183,835,209"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="680,233,836,260"/>
 </map>
 </div>
 
@@ -1058,9 +1358,9 @@ unscaled magnetometer measurements </td></tr>
 
 <p>global IMU state </p>
 
-<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00108">108</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00232">232</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00112">ahrs_aligner_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu__apogee_8c_source.html#l00129">imu_apogee_downlink_raw()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00040">imu_feed_gyro_accel()</a>, <a class="el" href="imu__nps_8c_source.html#l00053">imu_feed_mag()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00136">imu_mpu_spi_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00061">imu_nps_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00046">imu_quality_assessment_periodic()</a>, <a class="el" href="imu_8c_source.html#l00178">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l00151">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l00169">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l00160">imu_SetBodyToImuTheta()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00149">imu_vectornav_propagate()</a>, <a class="el" href="ins__int_8c_source.html#l00283">ins_int_propagate()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00085">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00070">mag_pitot_parse_msg()</a>, <a class="el" href="mag__pitot__uart_8c_source.html#l00047">mag_pitot_raw_downlink()</a>, <a class="el" href="mag__rm3100_8c_source.html#l00093">mag_rm3100_module_event()</a>, <a class="el" href="main__ap_8c_source.html#l00076">main_ap_init()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, <a class="el" href="navdata_8c_source.html#l00330">navdata_publish_imu()</a>, <a class="el" href="imu_8c_source.html#l00058">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00046">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00052">send_accel_scaled()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>, <a class="el" href="imu_8c_source.html#l00078">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00066">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00072">send_gyro_scaled()</a>, <a class="el" href="send__imu__mag__current_8c_source.html#l00034">send_imu_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00098">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00086">send_mag_raw()</a>, <a class="el" href="imu_8c_source.html#l00092">send_mag_scaled()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00637">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l00614">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l00661">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00239">imu_init()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00046">imu_quality_assessment_periodic()</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>, <a class="el" href="imu_8c_source.html#l00736">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l00712">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l00728">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l00720">imu_SetBodyToImuTheta()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="imu_8c_source.html#l00140">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00120">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00130">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00172">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00152">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00162">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00204">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00216">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00184">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00194">send_mag_scaled()</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1370,7 @@ unscaled magnetometer measurements </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu_8h.html">imu.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

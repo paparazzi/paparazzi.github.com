@@ -192,10 +192,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a954df43f45ac2f8c6e59319c25ce607a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a">ahrs_icq_realign_heading</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:a954df43f45ac2f8c6e59319c25ce607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hard reset yaw to a heading.  <a href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a">More...</a><br /></td></tr>
 <tr class="separator:a954df43f45ac2f8c6e59319c25ce607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3ef1cad28d70b692c4fce45d291ae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a8e3ef1cad28d70b692c4fce45d291ae8">ahrs_icq_set_body_to_imu</a> (struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *<a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">body_to_imu</a>)</td></tr>
-<tr class="separator:a8e3ef1cad28d70b692c4fce45d291ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f86e2321466fd50aae62120f20eae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#af4f86e2321466fd50aae62120f20eae4">ahrs_icq_set_body_to_imu_quat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i)</td></tr>
-<tr class="separator:af4f86e2321466fd50aae62120f20eae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -403,11 +399,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00158">158</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00157">157</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00042">AHRS_ICQ_RUNNING</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00080">ahrs_int_get_quat_from_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00584">INT_RATES_LSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00104">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00103">AhrsIntCmplQuat::status</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00042">AHRS_ICQ_RUNNING</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00080">ahrs_int_get_quat_from_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00584">INT_RATES_LSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00214">aligner_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00213">aligner_cb()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -465,9 +461,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">115</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00079">AhrsIntCmplQuat::accel_omega</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00085">AhrsIntCmplQuat::accel_zeta</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00062">AHRS_ACCEL_OMEGA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00065">AHRS_ACCEL_ZETA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00084">AHRS_GRAVITY_HEURISTIC_FACTOR</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00220">ahrs_icq_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00401">ahrs_icq_set_mag_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00041">AHRS_ICQ_UNINIT</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00072">AHRS_MAG_OMEGA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00075">AHRS_MAG_ZETA</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00068">AhrsIntCmplQuat::correct_gravity</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00073">AhrsIntCmplQuat::gravity_heuristic_factor</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::imu_rate</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00432">int32_quat_identity()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00104">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00223">MAG_BFP_OF_REAL</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00090">AhrsIntCmplQuat::mag_omega</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00095">AhrsIntCmplQuat::mag_zeta</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00103">AhrsIntCmplQuat::status</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00079">AhrsIntCmplQuat::accel_omega</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00085">AhrsIntCmplQuat::accel_zeta</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00062">AHRS_ACCEL_OMEGA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00065">AHRS_ACCEL_ZETA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00084">AHRS_GRAVITY_HEURISTIC_FACTOR</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00219">ahrs_icq_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00393">ahrs_icq_set_mag_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00041">AHRS_ICQ_UNINIT</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00072">AHRS_MAG_OMEGA</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00075">AHRS_MAG_ZETA</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::body_rate</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00068">AhrsIntCmplQuat::correct_gravity</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00073">AhrsIntCmplQuat::gravity_heuristic_factor</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00432">int32_quat_identity()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00223">MAG_BFP_OF_REAL</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00090">AhrsIntCmplQuat::mag_omega</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00095">AhrsIntCmplQuat::mag_zeta</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::status</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00271">ahrs_icq_register()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00254">ahrs_icq_register()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -521,11 +517,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">187</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00186">186</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00052">AhrsIntCmplQuat::high_rez_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::imu_rate</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00329">int32_quat_integrate_fi()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00456">int32_quat_normalize()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00379">RATES_SMUL</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::body_rate</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00052">AhrsIntCmplQuat::high_rez_quat</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00329">int32_quat_integrate_fi()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00456">int32_quat_normalize()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00576">INT_RATES_ZERO</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00386">RATES_SDIV</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00379">RATES_SMUL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00140">gyro_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00139">gyro_cb()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -579,11 +575,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">627</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00614">614</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::body_to_imu</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00269">int32_quat_comp()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00277">int32_quat_comp_inv()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00293">int32_quat_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00307">int32_quat_inv_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00456">int32_quat_normalize()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00198">orientationGetQuat_i()</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00293">int32_quat_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00307">int32_quat_inv_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00456">int32_quat_normalize()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">ahrs_icq_update_gps()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00521">ahrs_icq_update_gps()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -591,20 +587,15 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a954df43f45ac2f8c6e59319c25ce607a_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a954df43f45ac2f8c6e59319c25ce607a_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a954df43f45ac2f8c6e59319c25ce607a_cgraph" id="ahrs__int__cmpl__quat_8c_a954df43f45ac2f8c6e59319c25ce607a_cgraph">
-<area shape="rect" title="Hard reset yaw to a heading." alt="" coords="5,151,192,177"/>
+<area shape="rect" title="Hard reset yaw to a heading." alt="" coords="5,107,192,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="240,34,415,75"/>
+<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="477,157,639,184"/>
+<area shape="rect" href="group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="247,99,408,141"/>
 <area shape="rect" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739" title="Composition (multiplication) of two quaternions." alt="" coords="491,5,625,32"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="247,281,408,308"/>
-<area shape="rect" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="240,49,415,90"/>
-<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="477,121,639,148"/>
-<area shape="rect" href="group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="247,114,408,155"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="248,231,407,257"/>
-<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="463,64,653,91"/>
-<area shape="rect" href="group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="715,123,847,149"/>
-<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="908,149,995,176"/>
-<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="477,172,639,199"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title=" " alt="" coords="477,229,639,256"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="701,229,860,256"/>
-<area shape="rect" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix." alt="" coords="706,175,855,201"/>
+<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="463,56,653,83"/>
+<area shape="rect" href="group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="701,157,833,184"/>
+<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="881,157,968,184"/>
+<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="477,107,639,133"/>
 </map>
 </div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -641,11 +632,11 @@ Variables</h2></td></tr>
 
 <p>update pre-computed inv_kp and inv_ki gains from acc_omega and acc_zeta </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00220">220</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00219">219</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00062">AhrsIntCmplQuat::accel_inv_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00061">AhrsIntCmplQuat::accel_inv_kp</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00079">AhrsIntCmplQuat::accel_omega</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00085">AhrsIntCmplQuat::accel_zeta</a>, and <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00136">ahrs_int_cmpl_quat_SetAccelOmega()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00142">ahrs_int_cmpl_quat_SetAccelZeta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00132">ahrs_int_cmpl_quat_SetAccelOmega()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00138">ahrs_int_cmpl_quat_SetAccelZeta()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -658,102 +649,6 @@ Variables</h2></td></tr>
 <area shape="rect" href="ahrs__int__cmpl__quat_8h.html#a6aaf24e0febf791b03a381927c6eee8a" title=" " alt="" coords="187,57,336,98"/>
 <area shape="rect" href="ahrs__int__cmpl__quat_8h.html#a9b440578e5c893f5a20aeca797097281" title=" " alt="" coords="187,122,336,163"/>
 <area shape="rect" href="ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title=" " alt="" coords="5,5,139,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8e3ef1cad28d70b692c4fce45d291ae8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e3ef1cad28d70b692c4fce45d291ae8">&#9670;&nbsp;</a></span>ahrs_icq_set_body_to_imu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_icq_set_body_to_imu </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *&#160;</td>
-          <td class="paramname"><em>body_to_imu</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00662">662</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00667">ahrs_icq_set_body_to_imu_quat()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00093">body_to_imu</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__int__cmpl__quat_8c_a8e3ef1cad28d70b692c4fce45d291ae8_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a8e3ef1cad28d70b692c4fce45d291ae8_cgraph" alt=""/></div>
-<map name="ahrs__int__cmpl__quat_8c_a8e3ef1cad28d70b692c4fce45d291ae8_cgraph" id="ahrs__int__cmpl__quat_8c_a8e3ef1cad28d70b692c4fce45d291ae8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,103,200,129"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#af4f86e2321466fd50aae62120f20eae4" title=" " alt="" coords="248,66,411,107"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="250,132,409,159"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="461,31,620,57"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="462,81,619,108"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title=" " alt="" coords="671,31,833,57"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="881,5,1040,32"/>
-<area shape="rect" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix." alt="" coords="886,56,1035,83"/>
-<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="1088,56,1175,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="459,132,623,159"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="675,107,829,133"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="679,157,825,184"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="af4f86e2321466fd50aae62120f20eae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f86e2321466fd50aae62120f20eae4">&#9670;&nbsp;</a></span>ahrs_icq_set_body_to_imu_quat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_icq_set_body_to_imu_quat </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
-          <td class="paramname"><em>q_b2i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00667">667</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::body_to_imu</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00104">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00198">orientationGetQuat_i()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00662">ahrs_icq_set_body_to_imu()</a>, and <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00226">body_to_imu_cb()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_cgraph" alt=""/></div>
-<map name="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_cgraph" id="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,168,90"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="216,31,375,57"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="217,81,374,108"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title=" " alt="" coords="423,31,585,57"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="633,5,792,32"/>
-<area shape="rect" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix." alt="" coords="638,56,787,83"/>
-<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="840,56,927,83"/>
-</map>
-</div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_icgraph" alt=""/></div>
-<map name="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_icgraph" id="ahrs__int__cmpl__quat_8c_af4f86e2321466fd50aae62120f20eae4_icgraph">
-<area shape="rect" title=" " alt="" coords="429,23,592,65"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8h.html#a8e3ef1cad28d70b692c4fce45d291ae8" title=" " alt="" coords="187,5,381,32"/>
-<area shape="rect" href="ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title=" " alt="" coords="220,56,348,83"/>
-<area shape="rect" href="ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title=" " alt="" coords="5,56,139,83"/>
 </map>
 </div>
 
@@ -777,16 +672,16 @@ Variables</h2></td></tr>
 
 <p>update pre-computed kp and ki gains from mag_omega and mag_zeta </p>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00401">401</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00393">393</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00064">AhrsIntCmplQuat::mag_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00063">AhrsIntCmplQuat::mag_kp</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00090">AhrsIntCmplQuat::mag_omega</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00095">AhrsIntCmplQuat::mag_zeta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00151">ahrs_int_cmpl_quat_SetMagOmega()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00157">ahrs_int_cmpl_quat_SetMagZeta()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00147">ahrs_int_cmpl_quat_SetMagOmega()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00153">ahrs_int_cmpl_quat_SetMagZeta()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_ac7ceba3dd76d68435d752209115992d3_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_ac7ceba3dd76d68435d752209115992d3_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_ac7ceba3dd76d68435d752209115992d3_icgraph" id="ahrs__int__cmpl__quat_8c_ac7ceba3dd76d68435d752209115992d3_icgraph">
 <area shape="rect" title="update pre&#45;computed kp and ki gains from mag_omega and mag_zeta" alt="" coords="384,64,565,91"/>
@@ -825,31 +720,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">241</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00240">240</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c.html#a52b67f5110bee81ff2144904247edf64">ACC_FROM_CROSS_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00062">AhrsIntCmplQuat::accel_inv_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00061">AhrsIntCmplQuat::accel_inv_kp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::body_to_imu</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>, <a class="el" href="ahrs__int__cmpl__quat_8c.html#af8ed6034aba17fe334cfe8d8204d83f9">COMPUTATION_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00068">AhrsIntCmplQuat::correct_gravity</a>, <a class="el" href="ahrs__int__cmpl__quat_8c.html#ab2760fb4c51ee3b054a3462efd915e7c">FIR_FILTER_SIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00164">FLOAT_VECT3_NORM</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00073">AhrsIntCmplQuat::gravity_heuristic_factor</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::imu_rate</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00137">int32_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00299">INT32_VECT3_RSHIFT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00147">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00244">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00254">VECT3_RATES_CROSS_VECT3</a>, <a class="el" href="pprz__algebra_8h_source.html#l00196">VECT3_SDIV</a>, <a class="el" href="pprz__algebra_8h_source.html#l00189">VECT3_SMUL</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00060">AhrsIntCmplQuat::weight</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c.html#a52b67f5110bee81ff2144904247edf64">ACC_FROM_CROSS_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00098">AhrsIntCmplQuat::accel_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00062">AhrsIntCmplQuat::accel_inv_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00061">AhrsIntCmplQuat::accel_inv_kp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::body_rate</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>, <a class="el" href="ahrs__int__cmpl__quat_8c.html#af8ed6034aba17fe334cfe8d8204d83f9">COMPUTATION_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00068">AhrsIntCmplQuat::correct_gravity</a>, <a class="el" href="ahrs__int__cmpl__quat_8c.html#ab2760fb4c51ee3b054a3462efd915e7c">FIR_FILTER_SIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00164">FLOAT_VECT3_NORM</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00073">AhrsIntCmplQuat::gravity_heuristic_factor</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00299">INT32_VECT3_RSHIFT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00147">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00244">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00254">VECT3_RATES_CROSS_VECT3</a>, <a class="el" href="pprz__algebra_8h_source.html#l00196">VECT3_SDIV</a>, <a class="el" href="pprz__algebra_8h_source.html#l00189">VECT3_SMUL</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00060">AhrsIntCmplQuat::weight</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00166">accel_cb()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00165">accel_cb()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_cgraph" id="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,54,175,81"/>
-<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="689,54,839,81"/>
-<area shape="rect" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix." alt="" coords="223,29,427,56"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="255,80,394,106"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="244,130,405,157"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="475,80,641,106"/>
+<area shape="rect" title=" " alt="" coords="5,5,175,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="223,5,372,32"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_icgraph" id="ahrs__int__cmpl__quat_8c_a217936945482b6839441d4616eab56b7_icgraph">
 <area shape="rect" title=" " alt="" coords="313,5,483,32"/>
@@ -876,43 +767,38 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">529</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00521">521</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00096">AHRS_HEADING_UPDATE_GPS_MIN_SPEED</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">ahrs_icq_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00096">AHRS_HEADING_UPDATE_GPS_MIN_SPEED</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00614">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00557">ahrs_icq_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00238">gps_cb()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00231">gps_cb()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_cgraph" id="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_cgraph">
-<area shape="rect" title=" " alt="" coords="5,226,164,253"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading." alt="" coords="212,171,399,198"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a7fb1fae4a1f5b6b1a12173486312b73d" title="Update yaw based on a heading measurement." alt="" coords="212,281,399,307"/>
-<area shape="rect" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739" title="Composition (multiplication) of two quaternions." alt="" coords="697,11,832,38"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="453,281,615,307"/>
-<area shape="rect" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="447,47,621,88"/>
-<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="683,78,846,105"/>
-<area shape="rect" href="group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="453,164,615,205"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="455,230,613,257"/>
-<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="669,129,860,155"/>
-<area shape="rect" href="group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="921,91,1053,118"/>
-<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="1115,123,1201,150"/>
-<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="684,179,845,206"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title=" " alt="" coords="683,230,846,257"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="908,230,1067,257"/>
-<area shape="rect" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix." alt="" coords="913,154,1062,181"/>
-<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="459,331,609,358"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="465,382,603,409"/>
+<area shape="rect" title=" " alt="" coords="5,191,164,217"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading." alt="" coords="212,132,399,159"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a7fb1fae4a1f5b6b1a12173486312b73d" title="Update yaw based on a heading measurement." alt="" coords="212,220,399,247"/>
+<area shape="rect" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="447,154,621,195"/>
+<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="683,107,846,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="453,37,615,78"/>
+<area shape="rect" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739" title="Composition (multiplication) of two quaternions." alt="" coords="697,161,832,188"/>
+<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="669,56,860,83"/>
+<area shape="rect" href="group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="908,107,1040,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="1088,107,1175,133"/>
+<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="684,5,845,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="459,271,609,297"/>
+<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="465,220,603,247"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_icgraph" id="ahrs__int__cmpl__quat_8c_a75015adf5b7c98bd9eb6b588850d8449_icgraph">
 <area shape="rect" title=" " alt="" coords="301,5,460,32"/>
@@ -947,34 +833,28 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">565</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00557">557</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00089">AHRS_BIAS_UPDATE_HEADING_THRESHOLD</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::body_to_imu</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00277">int32_quat_comp_inv()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00198">orientationGetQuat_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00215">TRIG_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00089">AHRS_BIAS_UPDATE_HEADING_THRESHOLD</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00215">TRIG_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">ahrs_icq_update_gps()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00521">ahrs_icq_update_gps()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_cgraph" id="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_cgraph">
-<area shape="rect" title="Update yaw based on a heading measurement." alt="" coords="5,81,192,108"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="240,5,401,32"/>
-<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="246,56,395,83"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="251,107,390,133"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="241,157,400,184"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title=" " alt="" coords="449,157,612,184"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="660,132,819,159"/>
-<area shape="rect" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix." alt="" coords="665,183,814,209"/>
-<area shape="rect" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title=" " alt="" coords="867,183,953,209"/>
+<area shape="rect" title="Update yaw based on a heading measurement." alt="" coords="5,31,192,57"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="240,5,389,32"/>
+<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="245,56,384,83"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_icgraph" id="ahrs__int__cmpl__quat_8c_a7fb1fae4a1f5b6b1a12173486312b73d_icgraph">
 <area shape="rect" title="Update yaw based on a heading measurement." alt="" coords="508,5,695,32"/>
@@ -1012,16 +892,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00384">384</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00376">376</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00463">ahrs_icq_update_mag_2d()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00410">ahrs_icq_update_mag_full()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00455">ahrs_icq_update_mag_2d()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00402">ahrs_icq_update_mag_full()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00190">mag_cb()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00189">mag_cb()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_cgraph" id="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,169,83"/>
@@ -1036,11 +916,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__int.html#ga8c365d83c52740090161df2f73cee472" title="return squared norm of 2D vector" alt="" coords="879,183,1025,209"/>
 </map>
 </div>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_icgraph" id="ahrs__int__cmpl__quat_8c_a9a5a63ca2cedb2139641e3d883af197a_icgraph">
 <area shape="rect" title=" " alt="" coords="308,5,472,32"/>
@@ -1085,16 +965,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00463">463</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00455">455</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00079">INT32_MAG_FRAC</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00117">int32_rmat_transp_vmult()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00256">int32_vect2_normalize()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00064">AhrsIntCmplQuat::mag_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00063">AhrsIntCmplQuat::mag_kp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00079">INT32_MAG_FRAC</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00117">int32_rmat_transp_vmult()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00256">int32_vect2_normalize()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00064">AhrsIntCmplQuat::mag_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00063">AhrsIntCmplQuat::mag_kp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00384">ahrs_icq_update_mag()</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00376">ahrs_icq_update_mag()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_cgraph" id="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,192,108"/>
@@ -1107,11 +987,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__int.html#ga8c365d83c52740090161df2f73cee472" title="return squared norm of 2D vector" alt="" coords="661,183,808,209"/>
 </map>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_icgraph" id="ahrs__int__cmpl__quat_8c_a7fca7541f65b60590761465cd920e4f2_icgraph">
 <area shape="rect" title=" " alt="" coords="520,5,707,32"/>
@@ -1157,16 +1037,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00410">410</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00402">402</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_imu_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00064">AhrsIntCmplQuat::mag_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00063">AhrsIntCmplQuat::mag_kp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00244">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00053">AhrsIntCmplQuat::high_rez_bias</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00148">int32_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00578">INT_RATES_RSHIFT</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00099">AhrsIntCmplQuat::mag_cnt</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00064">AhrsIntCmplQuat::mag_ki</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00063">AhrsIntCmplQuat::mag_kp</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00186">Int64Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00187">Int64Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00188">Int64Rates::r</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00051">AhrsIntCmplQuat::rate_correction</a>, <a class="el" href="pprz__algebra_8h_source.html#l00244">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00384">ahrs_icq_update_mag()</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00376">ahrs_icq_update_mag()</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_cgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_cgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_cgraph" id="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,197,57"/>
@@ -1174,11 +1054,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="251,56,389,83"/>
 </map>
 </div>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_icgraph.png" border="0" usemap="#ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_icgraph" alt=""/></div>
 <map name="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_icgraph" id="ahrs__int__cmpl__quat_8c_acb33a3672f437b83c11614b20bc5a96a_icgraph">
 <area shape="rect" title=" " alt="" coords="520,5,712,32"/>
@@ -1207,7 +1087,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">110</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00166">accel_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00158">ahrs_icq_align()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00220">ahrs_icq_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00667">ahrs_icq_set_body_to_imu_quat()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00401">ahrs_icq_set_mag_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">ahrs_icq_update_gps()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">ahrs_icq_update_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00384">ahrs_icq_update_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00463">ahrs_icq_update_mag_2d()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00410">ahrs_icq_update_mag_full()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00136">ahrs_int_cmpl_quat_SetAccelOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00142">ahrs_int_cmpl_quat_SetAccelZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00151">ahrs_int_cmpl_quat_SetMagOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00157">ahrs_int_cmpl_quat_SetMagZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00214">aligner_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00232">geo_mag_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00140">gyro_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00190">mag_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00080">send_bias()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00065">send_euler()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00097">send_filter_status()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00087">send_geo_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00049">send_quat()</a>, and <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00252">set_body_state_from_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00165">accel_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00157">ahrs_icq_align()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00186">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00614">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00219">ahrs_icq_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00393">ahrs_icq_set_mag_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00240">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00521">ahrs_icq_update_gps()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00557">ahrs_icq_update_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00376">ahrs_icq_update_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00455">ahrs_icq_update_mag_2d()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00402">ahrs_icq_update_mag_full()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00132">ahrs_int_cmpl_quat_SetAccelOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00138">ahrs_int_cmpl_quat_SetAccelZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00147">ahrs_int_cmpl_quat_SetMagOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00153">ahrs_int_cmpl_quat_SetMagZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00213">aligner_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00225">geo_mag_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00139">gyro_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00189">mag_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00080">send_bias()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00065">send_euler()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00097">send_filter_status()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00087">send_geo_mag()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00049">send_quat()</a>, and <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00245">set_body_state_from_quat()</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1097,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__int__cmpl__quat_8c.html">ahrs_int_cmpl_quat.c</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:06 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

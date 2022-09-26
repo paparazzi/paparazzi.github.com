@@ -1,16 +1,15 @@
 var ahrs__float__dcm_8h =
 [
     [ "AhrsFloatDCM", "ahrs__float__dcm_8h.html#structAhrsFloatDCM", [
-      [ "body_to_imu", "ahrs__float__dcm_8h.html#abcbc8315a0c971ac20ea2ed5c445c6ad", null ],
+      [ "body_rate", "ahrs__float__dcm_8h.html#a95814565166b0444b21950dc33e1e1a5", null ],
       [ "gps_acceleration", "ahrs__float__dcm_8h.html#a6d23bce9b87f444bc7f041f7f725f06e", null ],
       [ "gps_age", "ahrs__float__dcm_8h.html#a94c1487ea9aa41719be5b9804e561e5f", null ],
       [ "gps_course", "ahrs__float__dcm_8h.html#ae08a572174030d02c09ad3f30cf63e1d", null ],
       [ "gps_course_valid", "ahrs__float__dcm_8h.html#a0e92ccb86ece01180a52a4cd7da0860a", null ],
       [ "gps_speed", "ahrs__float__dcm_8h.html#a28bef6d72c3eeb78beaa36afb5202716", null ],
       [ "gyro_bias", "ahrs__float__dcm_8h.html#aae8cc61944a9c33bfbc8067f39060ad8", null ],
-      [ "imu_rate", "ahrs__float__dcm_8h.html#a98743fe74b825e3e97af666a0910172f", null ],
       [ "is_aligned", "ahrs__float__dcm_8h.html#a1f759bdb110191cd919fa1dbc465f84a", null ],
-      [ "ltp_to_imu_euler", "ahrs__float__dcm_8h.html#a0cf913a01c65293bddadb5a26d4480e7", null ],
+      [ "ltp_to_body_euler", "ahrs__float__dcm_8h.html#a9e675ac200130d5d78546711dcb887a3", null ],
       [ "rate_correction", "ahrs__float__dcm_8h.html#a9256dacf55a9bdec9a1ba4859c613748", null ],
       [ "status", "ahrs__float__dcm_8h.html#af3805644883f041141e5f764ba1007ac", null ]
     ] ],
@@ -29,8 +28,6 @@ var ahrs__float__dcm_8h =
     [ "ahrs_dcm_align", "ahrs__float__dcm_8h.html#ac19ef4cf9dfcc61561addd93a8c41a5e", null ],
     [ "ahrs_dcm_init", "ahrs__float__dcm_8h.html#a72e0ab470bdd713dbf05bbb7d2aaac0c", null ],
     [ "ahrs_dcm_propagate", "ahrs__float__dcm_8h.html#a085ad70d62a69cf92b8e08b27b9e60d1", null ],
-    [ "ahrs_dcm_set_body_to_imu", "ahrs__float__dcm_8h.html#a7f3247a388db0709627a935f09a7b406", null ],
-    [ "ahrs_dcm_set_body_to_imu_quat", "ahrs__float__dcm_8h.html#afe8393fd937ef9065e871dc5623510f2", null ],
     [ "ahrs_dcm_update_accel", "ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533", null ],
     [ "ahrs_dcm_update_gps", "ahrs__float__dcm_8h.html#af6ae5229becb1414fbef533329174466", null ],
     [ "ahrs_dcm_update_mag", "ahrs__float__dcm_8h.html#a28f19eadfba62ddde0404977ec9b808a", null ],

@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c.html',''); initRe
 <div class="title">imu_mpu9250_spi.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="imu__mpu9250__spi_8h_source.html">modules/imu/imu_mpu9250_spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
@@ -104,29 +105,33 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c.html',''); initRe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__spi_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__mpu9250__spi_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__mpu9250__spi_8c" id="sw_2airborne_2modules_2imu_2imu__mpu9250__spi_8c">
-<area shape="rect" title=" " alt="" coords="921,5,1107,47"/>
-<area shape="rect" href="imu_8h.html" title=" " alt="" coords="512,102,660,129"/>
-<area shape="rect" href="abi_8h.html" title=" " alt="" coords="830,102,977,129"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="927,273,1101,300"/>
-<area shape="rect" href="spi_8h.html" title=" " alt="" coords="1159,191,1293,218"/>
-<area shape="rect" href="ak8963__regs_8h.html" title=" " alt="" coords="1102,95,1249,136"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="499,273,679,300"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="150,273,342,300"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="379,184,545,225"/>
-<area shape="rect" title=" " alt="" coords="623,191,783,218"/>
-<area shape="rect" title=" " alt="" coords="541,437,596,464"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,355,423,382"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="549,355,703,382"/>
-<area shape="rect" title=" " alt="" coords="727,355,797,382"/>
-<area shape="rect" title=" " alt="" coords="181,437,244,464"/>
-<area shape="rect" title=" " alt="" coords="309,437,380,464"/>
-<area shape="rect" title=" " alt="" coords="5,437,73,464"/>
-<area shape="rect" title=" " alt="" coords="85,355,242,382"/>
-<area shape="rect" title=" " alt="" coords="840,191,967,218"/>
-<area shape="rect" title=" " alt="" coords="873,355,960,382"/>
-<area shape="rect" title=" " alt="" coords="984,355,1111,382"/>
-<area shape="rect" title=" " alt="" coords="1135,348,1296,389"/>
-<area shape="rect" title=" " alt="" coords="1371,273,1539,300"/>
+<area shape="rect" title=" " alt="" coords="1201,5,1386,47"/>
+<area shape="rect" href="imu__mpu9250__spi_8h.html" title=" " alt="" coords="818,95,1022,136"/>
+<area shape="rect" href="imu_8h.html" title=" " alt="" coords="526,191,674,218"/>
+<area shape="rect" href="spi_8h.html" title=" " alt="" coords="1149,281,1283,307"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1392,370,1565,397"/>
+<area shape="rect" href="abi_8h.html" title=" " alt="" coords="1357,102,1504,129"/>
+<area shape="rect" href="ak8963__regs_8h.html" title=" " alt="" coords="1528,95,1675,136"/>
+<area shape="rect" title=" " alt="" coords="799,541,854,568"/>
+<area shape="rect" title=" " alt="" coords="579,281,739,307"/>
+<area shape="rect" href="mpu9250__spi_8h.html" title=" " alt="" coords="840,184,1000,225"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="539,370,719,397"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="163,370,355,397"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="337,273,503,315"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="257,459,413,486"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="489,459,642,486"/>
+<area shape="rect" title=" " alt="" coords="718,459,789,486"/>
+<area shape="rect" title=" " alt="" coords="199,541,262,568"/>
+<area shape="rect" title=" " alt="" coords="299,541,370,568"/>
+<area shape="rect" title=" " alt="" coords="37,541,105,568"/>
+<area shape="rect" title=" " alt="" coords="24,459,181,486"/>
+<area shape="rect" href="mpu9250_8h.html" title=" " alt="" coords="865,281,1037,307"/>
+<area shape="rect" title=" " alt="" coords="1200,370,1368,397"/>
+<area shape="rect" title=" " alt="" coords="1305,459,1391,486"/>
+<area shape="rect" title=" " alt="" coords="1415,459,1542,486"/>
+<area shape="rect" title=" " alt="" coords="1566,452,1727,493"/>
+<area shape="rect" href="mpu9250__regs_8h.html" title=" " alt="" coords="915,363,1075,404"/>
+<area shape="rect" title=" " alt="" coords="1367,191,1494,218"/>
 </map>
 </div>
 </div>
@@ -199,7 +204,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00062">62</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00063">63</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -215,7 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00075">75</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00076">76</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -231,7 +236,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00079">79</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00080">80</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -247,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00083">83</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00084">84</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -263,7 +268,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00061">61</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00062">62</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -279,7 +284,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00105">105</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00106">106</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -295,7 +300,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00101">101</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00102">102</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -311,7 +316,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00060">60</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00061">61</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -327,7 +332,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00088">88</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00089">89</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -343,7 +348,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00092">92</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00093">93</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -359,7 +364,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00096">96</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00097">97</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -389,7 +394,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00166">166</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00170">170</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
 </div>
 </div>
@@ -424,11 +429,11 @@ Variables</h2></td></tr>
 <p>callback function to configure ak8963 mag</p>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if mag configuration finished </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00223">223</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00219">219</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ak8963__regs_8h_source.html#l00037">AK8963_CNTL1_CM_2</a>, <a class="el" href="ak8963__regs_8h_source.html#l00053">AK8963_REG_CNTL1</a>, <a class="el" href="ak8963__regs_8h_source.html#l00054">AK8963_REG_CNTL2</a>, <a class="el" href="ak8963__regs_8h_source.html#l00046">AK8963_REG_HXL</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00105">IMU_MPU9250_MAG_STARTUP_DELAY</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00035">MPU9250_MAG_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00064">MPU9250_REG_I2C_SLV0_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00066">MPU9250_REG_I2C_SLV0_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00065">MPU9250_REG_I2C_SLV0_REG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00084">MPU9250_REG_I2C_SLV4_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00087">MPU9250_REG_I2C_SLV4_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00086">MPU9250_REG_I2C_SLV4_DO</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00085">MPU9250_REG_I2C_SLV4_REG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00214">mpu_set_and_wait()</a>, and <a class="el" href="imu__mpu9250__spi_8c_source.html#l00258">mpu_wait_slave4_ready()</a>.</p>
+<p class="reference">References <a class="el" href="ak8963__regs_8h_source.html#l00037">AK8963_CNTL1_CM_2</a>, <a class="el" href="ak8963__regs_8h_source.html#l00053">AK8963_REG_CNTL1</a>, <a class="el" href="ak8963__regs_8h_source.html#l00054">AK8963_REG_CNTL2</a>, <a class="el" href="ak8963__regs_8h_source.html#l00046">AK8963_REG_HXL</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00106">IMU_MPU9250_MAG_STARTUP_DELAY</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00035">MPU9250_MAG_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00064">MPU9250_REG_I2C_SLV0_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00066">MPU9250_REG_I2C_SLV0_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00065">MPU9250_REG_I2C_SLV0_REG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00084">MPU9250_REG_I2C_SLV4_ADDR</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00087">MPU9250_REG_I2C_SLV4_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00086">MPU9250_REG_I2C_SLV4_DO</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00085">MPU9250_REG_I2C_SLV4_REG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00210">mpu_set_and_wait()</a>, and <a class="el" href="imu__mpu9250__spi_8c_source.html#l00254">mpu_wait_slave4_ready()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00114">imu_mpu9250_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00115">imu_mpu9250_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -473,9 +478,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00167">167</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00171">171</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="mpu9250__i2c_8h.html#a6c543da951435cf9de43994cf752ef45">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00062">Mpu9250_I2c::data_available</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00071">Mpu9250_I2c::data_ext</a>, <a class="el" href="mpu9250__i2c_8h.html#a11284df3c0be4489d4ca84ed2977b62e">Mpu9250_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00075">IMU_MPU9250_CHAN_X</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00079">IMU_MPU9250_CHAN_Y</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00083">IMU_MPU9250_CHAN_Z</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00331">IMU_MPU9250_ID</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00088">IMU_MPU9250_X_SIGN</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00092">IMU_MPU9250_Y_SIGN</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00096">IMU_MPU9250_Z_SIGN</a>, <a class="el" href="imu_8c_source.html#l00219">imu_scale_accel()</a>, <a class="el" href="imu_8c_source.html#l00208">imu_scale_gyro()</a>, <a class="el" href="imu_8c_source.html#l00246">imu_scale_mag()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00166">Int16FromBuf</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00106">mpu9250_i2c_event()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00109">mpu9250_spi_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="mpu9250__i2c_8h.html#a7c956c53ecaab068072f672c2013a92c">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00062">Mpu9250_I2c::data_available</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00071">Mpu9250_I2c::data_ext</a>, <a class="el" href="mpu9250__i2c_8h.html#aaf091e390e814a18b7a100bf305d441f">Mpu9250_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00076">IMU_MPU9250_CHAN_X</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00080">IMU_MPU9250_CHAN_Y</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00084">IMU_MPU9250_CHAN_Z</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00331">IMU_MPU9250_ID</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00089">IMU_MPU9250_X_SIGN</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00093">IMU_MPU9250_Y_SIGN</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00097">IMU_MPU9250_Z_SIGN</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00170">Int16FromBuf</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00106">mpu9250_i2c_event()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00109">mpu9250_spi_event()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -483,22 +488,19 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__spi_8c_af140d4e8a775be026073e67fd3080aa2_cgraph.png" border="0" usemap="#imu__mpu9250__spi_8c_af140d4e8a775be026073e67fd3080aa2_cgraph" alt=""/></div>
 <map name="imu__mpu9250__spi_8c_af140d4e8a775be026073e67fd3080aa2_cgraph" id="imu__mpu9250__spi_8c_af140d4e8a775be026073e67fd3080aa2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,164,159"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="215,5,362,32"/>
-<area shape="rect" href="imu_8c.html#ac04fb6e1932325de756023b3e2914634" title=" " alt="" coords="224,56,353,83"/>
-<area shape="rect" href="imu_8c.html#ade0a0991f40f4e5dbed7c33b94262a59" title=" " alt="" coords="227,107,351,133"/>
-<area shape="rect" href="imu_8c.html#a8675c611ca0a329d7de7c883ad35d645" title=" " alt="" coords="227,157,351,184"/>
-<area shape="rect" href="mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="212,208,365,235"/>
-<area shape="rect" href="mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="212,260,365,287"/>
-<area shape="rect" href="ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="455,152,569,179"/>
-<area shape="rect" href="mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title=" " alt="" coords="413,204,611,231"/>
-<area shape="rect" href="mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="429,260,595,287"/>
-<area shape="rect" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="689,151,805,177"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="883,176,976,203"/>
-<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="695,201,798,228"/>
-<area shape="rect" href="mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b" title="Configure I2C slaves of the MPU." alt="" coords="659,253,835,294"/>
-<area shape="rect" href="mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32" title=" " alt="" coords="413,315,611,341"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="700,319,793,345"/>
+<area shape="rect" title=" " alt="" coords="5,63,164,89"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="215,12,362,39"/>
+<area shape="rect" href="mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title=" " alt="" coords="212,63,365,89"/>
+<area shape="rect" href="mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050" title=" " alt="" coords="212,115,365,141"/>
+<area shape="rect" href="ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title=" " alt="" coords="455,7,569,33"/>
+<area shape="rect" href="mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title=" " alt="" coords="413,59,611,85"/>
+<area shape="rect" href="mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use." alt="" coords="429,115,595,141"/>
+<area shape="rect" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction." alt="" coords="689,5,805,32"/>
+<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="883,31,976,57"/>
+<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="695,56,798,83"/>
+<area shape="rect" href="mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b" title="Configure I2C slaves of the MPU." alt="" coords="659,107,835,149"/>
+<area shape="rect" href="mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32" title=" " alt="" coords="413,169,611,196"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="700,173,793,200"/>
 </map>
 </div>
 
@@ -520,9 +522,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00114">114</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00115">115</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mpu9250_8h_source.html#l00131">Mpu9250Config::accel_range</a>, <a class="el" href="spi_8h_source.html#l00161">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00160">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00159">spi_transaction::cdiv</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00072">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00123">Mpu9250I2cSlave::configure</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cpol</a>, <a class="el" href="mpu9250_8h_source.html#l00128">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00129">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="mpu9250_8h_source.html#l00130">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00146">Mpu9250Config::i2c_mst_clk</a>, <a class="el" href="mpu9250_8h_source.html#l00147">Mpu9250Config::i2c_mst_delay</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00062">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00043">IMU_MPU9250_ACCEL_RANGE</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00032">IMU_MPU9250_ADDR</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00223">imu_mpu9250_configure_mag_slave()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00061">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00039">IMU_MPU9250_GYRO_RANGE</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00060">IMU_MPU9250_SMPLRT_DIV</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00187">MPU9250_MST_CLK_400KHZ</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00031">mpu9250_spi_init()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00268">mpu_wait_slave4_ready_cb()</a>, <a class="el" href="mpu9250_8h_source.html#l00134">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00143">Mpu9250Config::nb_slaves</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00079">ImuMpu9250::slave4_ready</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::slave_idx</a>, <a class="el" href="mpu9250_8h_source.html#l00145">Mpu9250Config::slaves</a>, <a class="el" href="mpu9250_8h_source.html#l00127">Mpu9250Config::smplrt_div</a>, <a class="el" href="spi_8h_source.html#l00075">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00084">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00125">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00090">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00112">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00078">ImuMpu9250::wait_slave4_rx_buf</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00076">ImuMpu9250::wait_slave4_trans</a>, and <a class="el" href="imu__mpu9250__spi_8h_source.html#l00077">ImuMpu9250::wait_slave4_tx_buf</a>.</p>
+<p class="reference">References <a class="el" href="mpu9250_8h_source.html#l00132">Mpu9250Config::accel_range</a>, <a class="el" href="spi_8h_source.html#l00161">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00160">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00159">spi_transaction::cdiv</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00072">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00124">Mpu9250I2cSlave::configure</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cpol</a>, <a class="el" href="mpu9250_8h_source.html#l00129">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00130">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="mpu9250_8h_source.html#l00131">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00147">Mpu9250Config::i2c_mst_clk</a>, <a class="el" href="mpu9250_8h_source.html#l00148">Mpu9250Config::i2c_mst_delay</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00063">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00043">IMU_MPU9250_ACCEL_RANGE</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00032">IMU_MPU9250_ADDR</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00219">imu_mpu9250_configure_mag_slave()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00062">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00039">IMU_MPU9250_GYRO_RANGE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00331">IMU_MPU9250_ID</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00061">IMU_MPU9250_SMPLRT_DIV</a>, <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250_8c_source.html#l00057">MPU9250_ACCEL_SENS_FRAC</a>, <a class="el" href="mpu9250_8c_source.html#l00039">MPU9250_GYRO_SENS_FRAC</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00187">MPU9250_MST_CLK_400KHZ</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00031">mpu9250_spi_init()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00264">mpu_wait_slave4_ready_cb()</a>, <a class="el" href="mpu9250_8h_source.html#l00135">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00144">Mpu9250Config::nb_slaves</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00052">ImuMpu9250::slave4_ready</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::slave_idx</a>, <a class="el" href="mpu9250_8h_source.html#l00146">Mpu9250Config::slaves</a>, <a class="el" href="mpu9250_8h_source.html#l00128">Mpu9250Config::smplrt_div</a>, <a class="el" href="spi_8h_source.html#l00075">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00084">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00125">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00090">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00112">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00051">ImuMpu9250::wait_slave4_rx_buf</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00049">ImuMpu9250::wait_slave4_trans</a>, and <a class="el" href="imu__mpu9250__spi_8h_source.html#l00050">ImuMpu9250::wait_slave4_tx_buf</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -530,21 +532,29 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__spi_8c_a9a9bb6c468d388d1688b2b35e94633d3_cgraph.png" border="0" usemap="#imu__mpu9250__spi_8c_a9a9bb6c468d388d1688b2b35e94633d3_cgraph" alt=""/></div>
 <map name="imu__mpu9250__spi_8c_a9a9bb6c468d388d1688b2b35e94633d3_cgraph" id="imu__mpu9250__spi_8c_a9a9bb6c468d388d1688b2b35e94633d3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,241,148,268"/>
+<area shape="rect" title=" " alt="" coords="5,335,148,361"/>
 <area shape="rect" href="imu__mpu9250__spi_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="function to configure akm8963 mag" alt="" coords="206,74,389,115"/>
-<area shape="rect" href="mpu9250__i2c_8c.html#a967fa8a6c8aa8f969b3e7fb17221658c" title=" " alt="" coords="229,216,366,243"/>
-<area shape="rect" href="mpu9250__spi_8c.html#a25639b20570605066b6657b09fde96bc" title=" " alt="" coords="229,267,366,293"/>
-<area shape="rect" href="imu__mpu9250__spi_8c.html#a7223761de0cabf70ad3961ac1764d621" title=" " alt="" coords="196,317,399,344"/>
+<area shape="rect" href="imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="210,233,385,260"/>
+<area shape="rect" href="imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="212,297,383,324"/>
+<area shape="rect" href="mpu9250__i2c_8c.html#a967fa8a6c8aa8f969b3e7fb17221658c" title=" " alt="" coords="229,360,366,387"/>
+<area shape="rect" href="mpu9250__spi_8c.html#a25639b20570605066b6657b09fde96bc" title=" " alt="" coords="229,411,366,437"/>
+<area shape="rect" href="imu__mpu9250__spi_8c.html#a7223761de0cabf70ad3961ac1764d621" title=" " alt="" coords="196,461,399,488"/>
 <area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="465,5,611,32"/>
 <area shape="rect" href="imu__mpu9250__spi_8c.html#ad1a6777c4c01ff1231ea7a95fe476304" title=" " alt="" coords="466,56,610,83"/>
 <area shape="rect" href="imu__mpu9250__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title=" " alt="" coords="448,107,628,133"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="699,107,793,133"/>
-<area shape="rect" href="ak8963_8c.html#adb7f10e2449b9ef0f5c1ffc25cbd43a3" title="Initialize AK8963 struct." alt="" coords="489,157,587,184"/>
-<area shape="rect" href="mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="callback function to configure ak8963 mag" alt="" coords="447,209,629,250"/>
-<area shape="rect" href="mpu9250_8c.html#aae5fa60698653c8ac15e41796c53c66e" title=" " alt="" coords="457,274,619,315"/>
-<area shape="rect" href="ak8963_8c.html#a107fc3165a9b7b31132e929df9098dd7" title=" " alt="" coords="677,216,815,243"/>
-<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="863,216,965,243"/>
-<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1013,216,1107,243"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="714,107,807,133"/>
+<area shape="rect" href="imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="480,157,596,184"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="470,208,606,235"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="457,259,619,285"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="677,259,844,285"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="892,259,1041,285"/>
+<area shape="rect" href="imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="483,309,593,336"/>
+<area shape="rect" href="ak8963_8c.html#adb7f10e2449b9ef0f5c1ffc25cbd43a3" title="Initialize AK8963 struct." alt="" coords="489,360,587,387"/>
+<area shape="rect" href="mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="callback function to configure ak8963 mag" alt="" coords="447,411,629,453"/>
+<area shape="rect" href="mpu9250_8c.html#aae5fa60698653c8ac15e41796c53c66e" title=" " alt="" coords="457,477,619,518"/>
+<area shape="rect" href="ak8963_8c.html#a107fc3165a9b7b31132e929df9098dd7" title=" " alt="" coords="692,419,829,445"/>
+<area shape="rect" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="915,419,1018,445"/>
+<area shape="rect" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="1089,419,1183,445"/>
 </map>
 </div>
 
@@ -566,9 +576,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00161">161</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00165">165</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00086">mpu9250_i2c_periodic()</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00077">mpu9250_spi_periodic()</a>.</p>
+<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00086">mpu9250_i2c_periodic()</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00077">mpu9250_spi_periodic()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -643,11 +653,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00214">214</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00210">210</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">ImuMpu9250::mpu</a>, and <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>.</p>
+<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">ImuMpu9250::mpu</a>, and <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00223">imu_mpu9250_configure_mag_slave()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00219">imu_mpu9250_configure_mag_slave()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -679,11 +689,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00258">258</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00254">254</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">ImuMpu9250::mpu</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00061">MPU9250_REG_I2C_MST_STATUS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00079">ImuMpu9250::slave4_ready</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00508">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00076">ImuMpu9250::wait_slave4_trans</a>, and <a class="el" href="imu__mpu9250__spi_8h_source.html#l00077">ImuMpu9250::wait_slave4_tx_buf</a>.</p>
+<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">ImuMpu9250::mpu</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00061">MPU9250_REG_I2C_MST_STATUS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00052">ImuMpu9250::slave4_ready</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00508">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00049">ImuMpu9250::wait_slave4_trans</a>, and <a class="el" href="imu__mpu9250__spi_8h_source.html#l00050">ImuMpu9250::wait_slave4_tx_buf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00223">imu_mpu9250_configure_mag_slave()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00219">imu_mpu9250_configure_mag_slave()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -726,11 +736,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00268">268</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00264">264</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">imu_mpu9250</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00135">MPU9250_I2C_SLV4_DONE</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00079">ImuMpu9250::slave4_ready</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
+<p class="reference">References <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">imu_mpu9250</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00135">MPU9250_I2C_SLV4_DONE</a>, <a class="el" href="imu__mpu9250__spi_8h_source.html#l00052">ImuMpu9250::slave4_ready</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00114">imu_mpu9250_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00115">imu_mpu9250_init()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -758,9 +768,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00108">108</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250__spi_8c_source.html#l00109">109</a> of file <a class="el" href="imu__mpu9250__spi_8c_source.html">imu_mpu9250_spi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00167">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00114">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00161">imu_mpu9250_periodic()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00214">mpu_set_and_wait()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00258">mpu_wait_slave4_ready()</a>, and <a class="el" href="imu__mpu9250__spi_8c_source.html#l00268">mpu_wait_slave4_ready_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00171">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00115">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00165">imu_mpu9250_periodic()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00210">mpu_set_and_wait()</a>, <a class="el" href="imu__mpu9250__spi_8c_source.html#l00254">mpu_wait_slave4_ready()</a>, and <a class="el" href="imu__mpu9250__spi_8c_source.html#l00264">mpu_wait_slave4_ready_cb()</a>.</p>
 
 </div>
 </div>
@@ -770,7 +780,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__spi_8c.html">imu_mpu9250_spi.c</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

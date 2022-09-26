@@ -85,15 +85,13 @@ $(document).ready(function(){initNavTree('imu__ardrone2_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">imu_ardrone2.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="navdata_8h_source.html">boards/ardrone/navdata.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_ardrone2.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -101,22 +99,10 @@ $(document).ready(function(){initNavTree('imu__ardrone2_8h.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__ardrone2_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__ardrone2_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__ardrone2_8h" id="sw_2airborne_2modules_2imu_2imu__ardrone2_8h">
-<area shape="rect" title=" " alt="" coords="432,5,591,47"/>
-<area shape="rect" title=" " alt="" coords="289,177,449,203"/>
-<area shape="rect" href="navdata_8h.html" title=" " alt="" coords="738,95,927,121"/>
-<area shape="rect" href="imu_8h.html" title=" " alt="" coords="437,95,585,121"/>
-<area shape="rect" title=" " alt="" coords="704,408,759,435"/>
-<area shape="rect" title=" " alt="" coords="870,177,945,203"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="513,259,693,285"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="157,259,349,285"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="575,169,741,211"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="265,333,421,360"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="540,333,693,360"/>
-<area shape="rect" title=" " alt="" coords="445,333,516,360"/>
-<area shape="rect" title=" " alt="" coords="5,408,68,435"/>
-<area shape="rect" title=" " alt="" coords="308,408,379,435"/>
-<area shape="rect" title=" " alt="" coords="175,408,243,435"/>
-<area shape="rect" title=" " alt="" coords="83,333,241,360"/>
+<area shape="rect" title=" " alt="" coords="5,5,164,47"/>
+<area shape="rect" title=" " alt="" coords="13,169,68,196"/>
+<area shape="rect" href="navdata_8h.html" title=" " alt="" coords="57,95,246,121"/>
+<area shape="rect" title=" " alt="" coords="114,169,189,196"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -133,71 +119,6 @@ $(document).ready(function(){initNavTree('imu__ardrone2_8h.html',''); initResiza
 </div>
 <p><a href="imu__ardrone2_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ad08f71586fceaa57ea361681bb6543b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#ad08f71586fceaa57ea361681bb6543b7">IMU_GYRO_P_SENS</a>&#160;&#160;&#160;4.359</td></tr>
-<tr class="memdesc:ad08f71586fceaa57ea361681bb6543b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">default gyro sensitivy and neutral from the datasheet MPU with 2000 deg/s  <a href="imu__ardrone2_8h.html#ad08f71586fceaa57ea361681bb6543b7">More...</a><br /></td></tr>
-<tr class="separator:ad08f71586fceaa57ea361681bb6543b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa59c24839f4a36f23c98da339dea1224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#aa59c24839f4a36f23c98da339dea1224">IMU_GYRO_P_SENS_NUM</a>&#160;&#160;&#160;4359</td></tr>
-<tr class="separator:aa59c24839f4a36f23c98da339dea1224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2644576e539bd38bf5d323809e3fd737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a2644576e539bd38bf5d323809e3fd737">IMU_GYRO_P_SENS_DEN</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:a2644576e539bd38bf5d323809e3fd737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed19364e701726bf4eb06eea5da9acf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a5ed19364e701726bf4eb06eea5da9acf">IMU_GYRO_Q_SENS</a>&#160;&#160;&#160;4.359</td></tr>
-<tr class="separator:a5ed19364e701726bf4eb06eea5da9acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4d85605fa8be77fbc356b66c19f509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a3c4d85605fa8be77fbc356b66c19f509">IMU_GYRO_Q_SENS_NUM</a>&#160;&#160;&#160;4359</td></tr>
-<tr class="separator:a3c4d85605fa8be77fbc356b66c19f509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4f4a11cc02f0d8aef1e8d97a15746f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">IMU_GYRO_Q_SENS_DEN</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:aaa4f4a11cc02f0d8aef1e8d97a15746f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57decce9e96b0726832a410273223f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#af57decce9e96b0726832a410273223f3">IMU_GYRO_R_SENS</a>&#160;&#160;&#160;4.359</td></tr>
-<tr class="separator:af57decce9e96b0726832a410273223f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f808c71190e714287442af3bb7008b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a6f808c71190e714287442af3bb7008b3">IMU_GYRO_R_SENS_NUM</a>&#160;&#160;&#160;4359</td></tr>
-<tr class="separator:a6f808c71190e714287442af3bb7008b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb2f43265d239ba7661dfcc8523123e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#aecb2f43265d239ba7661dfcc8523123e">IMU_GYRO_R_SENS_DEN</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:aecb2f43265d239ba7661dfcc8523123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac88fc00cde506229b92c6a1e2c3122"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">IMU_ACCEL_X_SENS</a>&#160;&#160;&#160;19.5</td></tr>
-<tr class="memdesc:a8ac88fc00cde506229b92c6a1e2c3122"><td class="mdescLeft">&#160;</td><td class="mdescRight">default accel sensitivy from the datasheet 512 LSB/g  <a href="imu__ardrone2_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">More...</a><br /></td></tr>
-<tr class="separator:a8ac88fc00cde506229b92c6a1e2c3122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada91099469f16df2d8aeafa82d365c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#ada91099469f16df2d8aeafa82d365c4b">IMU_ACCEL_X_SENS_NUM</a>&#160;&#160;&#160;195</td></tr>
-<tr class="separator:ada91099469f16df2d8aeafa82d365c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acf299c1bfb2daa92b1894556ca50ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">IMU_ACCEL_X_SENS_DEN</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:a8acf299c1bfb2daa92b1894556ca50ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb03278fbd9117e876b24e1b78a61c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">IMU_ACCEL_Y_SENS</a>&#160;&#160;&#160;19.5</td></tr>
-<tr class="separator:a3bb03278fbd9117e876b24e1b78a61c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4afc2b22683312436f746d69fc451bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a4afc2b22683312436f746d69fc451bb1">IMU_ACCEL_Y_SENS_NUM</a>&#160;&#160;&#160;195</td></tr>
-<tr class="separator:a4afc2b22683312436f746d69fc451bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e8f1f35a15a535130669093e80e858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a60e8f1f35a15a535130669093e80e858">IMU_ACCEL_Y_SENS_DEN</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:a60e8f1f35a15a535130669093e80e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48a5b859139ea2355c40f5abf5aa8aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">IMU_ACCEL_Z_SENS</a>&#160;&#160;&#160;19.5</td></tr>
-<tr class="separator:ad48a5b859139ea2355c40f5abf5aa8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">IMU_ACCEL_Z_SENS_NUM</a>&#160;&#160;&#160;195</td></tr>
-<tr class="separator:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae62fbd99f815974f80f911bfa1b1d514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#ae62fbd99f815974f80f911bfa1b1d514">IMU_ACCEL_Z_SENS_DEN</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:ae62fbd99f815974f80f911bfa1b1d514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01dac8935d4166bc144b115219cddbc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a01dac8935d4166bc144b115219cddbc4">IMU_ACCEL_X_NEUTRAL</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="separator:a01dac8935d4166bc144b115219cddbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199acc0383b0e1d7e3841bc3297cc0fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a199acc0383b0e1d7e3841bc3297cc0fb">IMU_ACCEL_Y_NEUTRAL</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="separator:a199acc0383b0e1d7e3841bc3297cc0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b487e2376edc35048f5d78cd4968221"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a2b487e2376edc35048f5d78cd4968221">IMU_ACCEL_Z_NEUTRAL</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="separator:a2b487e2376edc35048f5d78cd4968221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43edef925b4d138dd12f0f5196b545cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a43edef925b4d138dd12f0f5196b545cf">IMU_MAG_X_SENS</a>&#160;&#160;&#160;16.0</td></tr>
-<tr class="separator:a43edef925b4d138dd12f0f5196b545cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8da384f6dc35f9dcd8360b5ca0f9a11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#ae8da384f6dc35f9dcd8360b5ca0f9a11">IMU_MAG_X_SENS_NUM</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:ae8da384f6dc35f9dcd8360b5ca0f9a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2c399ba585c026e1687b5a38558096"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a0a2c399ba585c026e1687b5a38558096">IMU_MAG_X_SENS_DEN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a0a2c399ba585c026e1687b5a38558096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dde2b4a89e0e13525d49b6b4465810d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a4dde2b4a89e0e13525d49b6b4465810d">IMU_MAG_Y_SENS</a>&#160;&#160;&#160;16.0</td></tr>
-<tr class="separator:a4dde2b4a89e0e13525d49b6b4465810d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850902e8ee7f2f370abf5827eb3716b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a850902e8ee7f2f370abf5827eb3716b0">IMU_MAG_Y_SENS_NUM</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:a850902e8ee7f2f370abf5827eb3716b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79c853752a048b078cae60d01bd46787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a79c853752a048b078cae60d01bd46787">IMU_MAG_Y_SENS_DEN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a79c853752a048b078cae60d01bd46787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4adf0ec19c7be873b877295e46eac2f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a4adf0ec19c7be873b877295e46eac2f7">IMU_MAG_Z_SENS</a>&#160;&#160;&#160;16.0</td></tr>
-<tr class="separator:a4adf0ec19c7be873b877295e46eac2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e261fd1968aa63c116a5cbdbc322b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#af3e261fd1968aa63c116a5cbdbc322b5">IMU_MAG_Z_SENS_NUM</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:af3e261fd1968aa63c116a5cbdbc322b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0226a9d2f4d9d8dc774efcdf5a1051"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#aed0226a9d2f4d9d8dc774efcdf5a1051">IMU_MAG_Z_SENS_DEN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:aed0226a9d2f4d9d8dc774efcdf5a1051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a64ed917b58febc5528b575b56549c9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4">imu_ardrone2_init</a> (void)</td></tr>
@@ -207,492 +128,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>IMU implementation for ardrone2. </p>
 
 <p class="definition">Definition in file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a01dac8935d4166bc144b115219cddbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01dac8935d4166bc144b115219cddbc4">&#9670;&nbsp;</a></span>IMU_ACCEL_X_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_NEUTRAL&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00065">65</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a8ac88fc00cde506229b92c6a1e2c3122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ac88fc00cde506229b92c6a1e2c3122">&#9670;&nbsp;</a></span>IMU_ACCEL_X_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS&#160;&#160;&#160;19.5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>default accel sensitivy from the datasheet 512 LSB/g </p>
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00053">53</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a8acf299c1bfb2daa92b1894556ca50ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8acf299c1bfb2daa92b1894556ca50ad">&#9670;&nbsp;</a></span>IMU_ACCEL_X_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS_DEN&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00055">55</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="ada91099469f16df2d8aeafa82d365c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada91099469f16df2d8aeafa82d365c4b">&#9670;&nbsp;</a></span>IMU_ACCEL_X_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS_NUM&#160;&#160;&#160;195</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00054">54</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a199acc0383b0e1d7e3841bc3297cc0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199acc0383b0e1d7e3841bc3297cc0fb">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_NEUTRAL&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00066">66</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a3bb03278fbd9117e876b24e1b78a61c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bb03278fbd9117e876b24e1b78a61c5">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS&#160;&#160;&#160;19.5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00056">56</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a60e8f1f35a15a535130669093e80e858"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60e8f1f35a15a535130669093e80e858">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS_DEN&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00058">58</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a4afc2b22683312436f746d69fc451bb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4afc2b22683312436f746d69fc451bb1">&#9670;&nbsp;</a></span>IMU_ACCEL_Y_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS_NUM&#160;&#160;&#160;195</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00057">57</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a2b487e2376edc35048f5d78cd4968221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b487e2376edc35048f5d78cd4968221">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_NEUTRAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_NEUTRAL&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00067">67</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="ad48a5b859139ea2355c40f5abf5aa8aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad48a5b859139ea2355c40f5abf5aa8aa">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS&#160;&#160;&#160;19.5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00059">59</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="ae62fbd99f815974f80f911bfa1b1d514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae62fbd99f815974f80f911bfa1b1d514">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS_DEN&#160;&#160;&#160;10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00061">61</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="afd17b3bbedb8e03a9a4f27d21b8d507e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd17b3bbedb8e03a9a4f27d21b8d507e">&#9670;&nbsp;</a></span>IMU_ACCEL_Z_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS_NUM&#160;&#160;&#160;195</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00060">60</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="ad08f71586fceaa57ea361681bb6543b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad08f71586fceaa57ea361681bb6543b7">&#9670;&nbsp;</a></span>IMU_GYRO_P_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS&#160;&#160;&#160;4.359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>default gyro sensitivy and neutral from the datasheet MPU with 2000 deg/s </p>
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00038">38</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a2644576e539bd38bf5d323809e3fd737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2644576e539bd38bf5d323809e3fd737">&#9670;&nbsp;</a></span>IMU_GYRO_P_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS_DEN&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00040">40</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="aa59c24839f4a36f23c98da339dea1224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa59c24839f4a36f23c98da339dea1224">&#9670;&nbsp;</a></span>IMU_GYRO_P_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS_NUM&#160;&#160;&#160;4359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00039">39</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a5ed19364e701726bf4eb06eea5da9acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed19364e701726bf4eb06eea5da9acf">&#9670;&nbsp;</a></span>IMU_GYRO_Q_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS&#160;&#160;&#160;4.359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00041">41</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="aaa4f4a11cc02f0d8aef1e8d97a15746f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa4f4a11cc02f0d8aef1e8d97a15746f">&#9670;&nbsp;</a></span>IMU_GYRO_Q_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS_DEN&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00043">43</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a3c4d85605fa8be77fbc356b66c19f509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c4d85605fa8be77fbc356b66c19f509">&#9670;&nbsp;</a></span>IMU_GYRO_Q_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS_NUM&#160;&#160;&#160;4359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00042">42</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="af57decce9e96b0726832a410273223f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57decce9e96b0726832a410273223f3">&#9670;&nbsp;</a></span>IMU_GYRO_R_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS&#160;&#160;&#160;4.359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00044">44</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="aecb2f43265d239ba7661dfcc8523123e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecb2f43265d239ba7661dfcc8523123e">&#9670;&nbsp;</a></span>IMU_GYRO_R_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS_DEN&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00046">46</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a6f808c71190e714287442af3bb7008b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f808c71190e714287442af3bb7008b3">&#9670;&nbsp;</a></span>IMU_GYRO_R_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS_NUM&#160;&#160;&#160;4359</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00045">45</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a43edef925b4d138dd12f0f5196b545cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43edef925b4d138dd12f0f5196b545cf">&#9670;&nbsp;</a></span>IMU_MAG_X_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_X_SENS&#160;&#160;&#160;16.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00071">71</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a0a2c399ba585c026e1687b5a38558096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2c399ba585c026e1687b5a38558096">&#9670;&nbsp;</a></span>IMU_MAG_X_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_X_SENS_DEN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00073">73</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="ae8da384f6dc35f9dcd8360b5ca0f9a11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8da384f6dc35f9dcd8360b5ca0f9a11">&#9670;&nbsp;</a></span>IMU_MAG_X_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_X_SENS_NUM&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00072">72</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a4dde2b4a89e0e13525d49b6b4465810d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dde2b4a89e0e13525d49b6b4465810d">&#9670;&nbsp;</a></span>IMU_MAG_Y_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Y_SENS&#160;&#160;&#160;16.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00074">74</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a79c853752a048b078cae60d01bd46787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79c853752a048b078cae60d01bd46787">&#9670;&nbsp;</a></span>IMU_MAG_Y_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Y_SENS_DEN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00076">76</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a850902e8ee7f2f370abf5827eb3716b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a850902e8ee7f2f370abf5827eb3716b0">&#9670;&nbsp;</a></span>IMU_MAG_Y_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Y_SENS_NUM&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00075">75</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="a4adf0ec19c7be873b877295e46eac2f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4adf0ec19c7be873b877295e46eac2f7">&#9670;&nbsp;</a></span>IMU_MAG_Z_SENS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Z_SENS&#160;&#160;&#160;16.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00077">77</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="aed0226a9d2f4d9d8dc774efcdf5a1051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed0226a9d2f4d9d8dc774efcdf5a1051">&#9670;&nbsp;</a></span>IMU_MAG_Z_SENS_DEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Z_SENS_DEN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00079">79</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<a id="af3e261fd1968aa63c116a5cbdbc322b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3e261fd1968aa63c116a5cbdbc322b5">&#9670;&nbsp;</a></span>IMU_MAG_Z_SENS_NUM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MAG_Z_SENS_NUM&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8h_source.html#l00078">78</a> of file <a class="el" href="imu__ardrone2_8h_source.html">imu_ardrone2.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a64ed917b58febc5528b575b56549c9a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64ed917b58febc5528b575b56549c9a4">&#9670;&nbsp;</a></span>imu_ardrone2_init()</h2>
 
@@ -709,9 +145,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8c_source.html#l00032">32</a> of file <a class="el" href="imu__ardrone2_8c_source.html">imu_ardrone2.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__ardrone2_8c_source.html#l00030">30</a> of file <a class="el" href="imu__ardrone2_8c_source.html">imu_ardrone2.c</a>.</p>
 
-<p class="reference">References <a class="el" href="navdata_8c_source.html#l00175">navdata_init()</a>.</p>
+<p class="reference">References <a class="el" href="navdata_8c_source.html#l00202">navdata_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -719,17 +155,27 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__ardrone2_8h_a64ed917b58febc5528b575b56549c9a4_cgraph.png" border="0" usemap="#imu__ardrone2_8h_a64ed917b58febc5528b575b56549c9a4_cgraph" alt=""/></div>
 <map name="imu__ardrone2_8h_a64ed917b58febc5528b575b56549c9a4_cgraph" id="imu__ardrone2_8h_a64ed917b58febc5528b575b56549c9a4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,157,145,184"/>
-<area shape="rect" href="navdata_8c.html#a97f551437edc88593c5ea3af73d72efe" title="Initialize the navdata board." alt="" coords="193,157,296,184"/>
+<area shape="rect" title=" " alt="" coords="5,233,145,260"/>
+<area shape="rect" href="navdata_8c.html#a97f551437edc88593c5ea3af73d72efe" title="Initialize the navdata board." alt="" coords="193,233,296,260"/>
 <area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level." alt="" coords="407,5,484,32"/>
 <area shape="rect" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="374,56,517,83"/>
-<area shape="rect" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board." alt="" coords="371,107,520,133"/>
-<area shape="rect" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command." alt="" coords="595,157,743,184"/>
-<area shape="rect" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING." alt="" coords="390,208,501,235"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="344,259,547,285"/>
-<area shape="rect" href="navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title=" " alt="" coords="389,309,502,336"/>
-<area shape="rect" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted." alt="" coords="629,107,708,133"/>
-<area shape="rect" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="791,157,873,184"/>
+<area shape="rect" href="imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="358,107,533,133"/>
+<area shape="rect" href="imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="360,208,531,235"/>
+<area shape="rect" href="imu_8c.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="360,157,531,184"/>
+<area shape="rect" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board." alt="" coords="371,259,520,285"/>
+<area shape="rect" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command." alt="" coords="601,335,749,361"/>
+<area shape="rect" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING." alt="" coords="390,360,501,387"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="344,411,547,437"/>
+<area shape="rect" href="navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title=" " alt="" coords="389,461,502,488"/>
+<area shape="rect" href="imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="617,31,733,57"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="607,81,743,108"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="595,132,756,159"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="804,132,971,159"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="1019,132,1168,159"/>
+<area shape="rect" href="imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="620,233,731,260"/>
+<area shape="rect" href="imu_8c.html#aeb392db1b0ad7340d0d32a78acea9e1e" title="Find or create the mag in the imu structure." alt="" coords="620,183,731,209"/>
+<area shape="rect" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted." alt="" coords="636,284,715,311"/>
+<area shape="rect" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted." alt="" coords="846,335,929,361"/>
 </map>
 </div>
 
@@ -741,7 +187,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__ardrone2_8h.html">imu_ardrone2.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

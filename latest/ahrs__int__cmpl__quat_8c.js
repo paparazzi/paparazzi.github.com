@@ -15,8 +15,6 @@ var ahrs__int__cmpl__quat_8c =
     [ "ahrs_icq_propagate", "ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c", null ],
     [ "ahrs_icq_realign_heading", "ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a", null ],
     [ "ahrs_icq_set_accel_gains", "ahrs__int__cmpl__quat_8c.html#ab86bb2cef3f3250caa731bf7444b82aa", null ],
-    [ "ahrs_icq_set_body_to_imu", "ahrs__int__cmpl__quat_8c.html#a8e3ef1cad28d70b692c4fce45d291ae8", null ],
-    [ "ahrs_icq_set_body_to_imu_quat", "ahrs__int__cmpl__quat_8c.html#af4f86e2321466fd50aae62120f20eae4", null ],
     [ "ahrs_icq_set_mag_gains", "ahrs__int__cmpl__quat_8c.html#ac7ceba3dd76d68435d752209115992d3", null ],
     [ "ahrs_icq_update_accel", "ahrs__int__cmpl__quat_8c.html#a217936945482b6839441d4616eab56b7", null ],
     [ "ahrs_icq_update_gps", "ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449", null ],

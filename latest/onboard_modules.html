@@ -94,7 +94,6 @@ $(document).ready(function(){initNavTree('onboard_modules.html',''); initResizab
 <li class="level2"><a href="#modules_category_ahrs">Ahrs modules</a></li>
 <li class="level2"><a href="#modules_category_benchmark">Benchmark modules</a></li>
 <li class="level2"><a href="#modules_category_boards">Boards modules</a></li>
-<li class="level2"><a href="#modules_category_calibration">Calibration modules</a></li>
 <li class="level2"><a href="#modules_category_cam_control">Cam_Control modules</a></li>
 <li class="level2"><a href="#modules_category_com">Com modules</a></li>
 <li class="level2"><a href="#modules_category_computer_vision">Computer_Vision modules</a></li>
@@ -200,12 +199,6 @@ Boards modules</h2>
 <li><a class="el" href="module__board_tawaki.html">board_tawaki module</a> : Autoload several onboard sensors for the Tawaki board with proper configuration</li>
 <li><a class="el" href="module__opa_controller.html">opa_controller module</a> : Controller for OPA board functionalities</li>
 <li><a class="el" href="module__power_switch.html">power_switch module</a> : Simple power switch module to set a specific GPIO pin</li>
-</ul>
-<h2><a class="anchor" id="modules_category_calibration"></a>
-Calibration modules</h2>
-<ul>
-<li><a class="el" href="module__mag_calib_ukf.html">mag_calib_ukf module</a> : Calibrate magnetometer using UKF</li>
-<li><a class="el" href="module__send_imu_mag_current.html">send_imu_mag_current module</a> : Enables sending of IMU_MAG_CURRENT_CALIBRATION message.</li>
 </ul>
 <h2><a class="anchor" id="modules_category_cam_control"></a>
 Cam_Control modules</h2>
@@ -407,6 +400,7 @@ Imu modules</h2>
 <li><a class="el" href="module__imu_bmi088_i2c.html">imu_bmi088_i2c module</a> : IMU with BMI088 via I2C.</li>
 <li><a class="el" href="module__imu_chimera.html">imu_chimera module</a> : MPU9250 IMU via SPI.</li>
 <li><a class="el" href="module__imu_common.html">imu_common module</a> : Common part for all IMUs.</li>
+<li><a class="el" href="module__imu_cube.html">imu_cube module</a> : IMU driver for the sensors inside the cube autopilots</li>
 <li><a class="el" href="module__imu_disco.html">imu_disco module</a> : Driver for IMU on the Parrot Disco drone.</li>
 <li><a class="el" href="module__imu_elle0.html">imu_elle0 module</a> : MPU9250 IMU via SPI.</li>
 <li><a class="el" href="module__imu_lisa_m_v2_1.html">imu_lisa_m_v2.1 module</a> : IMU on Lisa/M and MX v2.1 boards.</li>
@@ -741,6 +735,7 @@ Misc modules</h2>
 <li><a class="el" href="module__hott_telemetry.html">hott_telemetry module</a> : Graupner HOTT telemetry control module.</li>
 <li><a class="el" href="module__intermcu_uart.html">intermcu_uart module</a> : Inter-MCU communication over UART</li>
 <li><a class="el" href="module__joystick.html">joystick module</a> : Handle JOYSTICK_RAW messages</li>
+<li><a class="el" href="module__mag_calib_ukf.html">mag_calib_ukf module</a> : Calibrate magnetometer using UKF</li>
 <li><a class="el" href="module__math.html">math module</a> : Math library.</li>
 <li><a class="el" href="module__mav_course_exercise.html">mav_course_exercise module</a> : Exercise module for Autonomous Flight of MAV Course</li>
 <li><a class="el" href="module__obstacle_avoidance.html">obstacle_avoidance module</a> : Obstacle avoidance module</li>
@@ -770,7 +765,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

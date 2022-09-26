@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('imu__px4fmu__v2_84_8h.html',''); initR
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu__px4__defaults_8h_source.html">modules/imu/imu_px4_defaults.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="l3gd20__spi_8h_source.html">peripherals/l3gd20_spi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="lsm303d__spi_8h_source.html">peripherals/lsm303d_spi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -106,33 +105,43 @@ $(document).ready(function(){initNavTree('imu__px4fmu__v2_84_8h.html',''); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__px4fmu__v2_84_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8h" id="sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8h">
-<area shape="rect" title=" " alt="" coords="331,5,515,47"/>
-<area shape="rect" title=" " alt="" coords="661,445,716,471"/>
-<area shape="rect" title=" " alt="" coords="19,191,179,218"/>
-<area shape="rect" href="imu_8h.html" title=" " alt="" coords="264,102,412,129"/>
-<area shape="rect" href="imu__px4__defaults_8h.html" title=" " alt="" coords="17,95,184,136"/>
-<area shape="rect" href="l3gd20__spi_8h.html" title=" " alt="" coords="1136,184,1279,225"/>
-<area shape="rect" href="lsm303d__spi_8h.html" title=" " alt="" coords="781,184,935,225"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="568,273,748,300"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="94,273,286,300"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="255,184,421,225"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="265,355,421,382"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="599,355,752,382"/>
-<area shape="rect" title=" " alt="" coords="987,445,1057,471"/>
-<area shape="rect" title=" " alt="" coords="5,445,68,471"/>
-<area shape="rect" title=" " alt="" coords="308,445,379,471"/>
-<area shape="rect" title=" " alt="" coords="175,445,243,471"/>
-<area shape="rect" title=" " alt="" coords="83,355,241,382"/>
-<area shape="rect" href="spi_8h.html" title=" " alt="" coords="1141,273,1274,300"/>
-<area shape="rect" href="l3gd20_8h.html" title=" " alt="" coords="1497,273,1651,300"/>
-<area shape="rect" title=" " alt="" coords="1158,355,1326,382"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1401,355,1574,382"/>
-<area shape="rect" title=" " alt="" coords="1313,445,1400,471"/>
-<area shape="rect" title=" " alt="" coords="1424,445,1551,471"/>
-<area shape="rect" title=" " alt="" coords="1575,437,1736,479"/>
-<area shape="rect" href="l3gd20__regs_8h.html" title=" " alt="" coords="1599,348,1741,389"/>
-<area shape="rect" href="lsm303d_8h.html" title=" " alt="" coords="775,273,941,300"/>
-<area shape="rect" href="lsm303d__regs_8h.html" title=" " alt="" coords="878,348,1033,389"/>
+<area shape="rect" title=" " alt="" coords="745,5,929,47"/>
+<area shape="rect" title=" " alt="" coords="663,430,717,457"/>
+<area shape="rect" title=" " alt="" coords="757,177,917,203"/>
+<area shape="rect" href="imu_8h.html" title=" " alt="" coords="645,95,793,121"/>
+<area shape="rect" href="l3gd20__spi_8h.html" title=" " alt="" coords="1141,169,1284,211"/>
+<area shape="rect" href="lsm303d__spi_8h.html" title=" " alt="" coords="941,169,1095,211"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="613,259,793,285"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="127,259,319,285"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title=" " alt="" coords="515,169,681,211"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,341,423,367"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="600,341,753,367"/>
+<area shape="rect" title=" " alt="" coords="988,430,1059,457"/>
+<area shape="rect" title=" " alt="" coords="181,430,244,457"/>
+<area shape="rect" title=" " alt="" coords="309,430,380,457"/>
+<area shape="rect" title=" " alt="" coords="5,430,73,457"/>
+<area shape="rect" title=" " alt="" coords="85,341,242,367"/>
+<area shape="rect" href="spi_8h.html" title=" " alt="" coords="1146,259,1279,285"/>
+<area shape="rect" href="l3gd20_8h.html" title=" " alt="" coords="1498,259,1653,285"/>
+<area shape="rect" title=" " alt="" coords="1159,341,1327,367"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1402,341,1575,367"/>
+<area shape="rect" title=" " alt="" coords="1315,430,1401,457"/>
+<area shape="rect" title=" " alt="" coords="1425,430,1552,457"/>
+<area shape="rect" title=" " alt="" coords="1576,423,1737,464"/>
+<area shape="rect" href="l3gd20__regs_8h.html" title=" " alt="" coords="1600,333,1743,375"/>
+<area shape="rect" href="lsm303d_8h.html" title=" " alt="" coords="924,259,1091,285"/>
+<area shape="rect" href="lsm303d__regs_8h.html" title=" " alt="" coords="930,333,1085,375"/>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__px4fmu__v2_84_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8hdep" id="sw_2airborne_2modules_2imu_2imu__px4fmu__v2_84_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,189,47"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8c.html" title=" " alt="" coords="6,95,189,136"/>
 </map>
 </div>
 </div>
@@ -179,12 +188,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00047">47</a> of file <a class="el" href="imu__px4fmu__v2_84_8h_source.html">imu_px4fmu_v2.4.h</a>.</p>
-</div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ImuPX4:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00046">46</a> of file <a class="el" href="imu__px4fmu__v2_84_8h_source.html">imu_px4fmu_v2.4.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for ImuPX4:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structImuPX4__coll__graph.png" border="0" usemap="#ImuPX4_coll__map" alt="Collaboration graph"/></div>
 <map name="ImuPX4_coll__map" id="ImuPX4_coll__map">
 <area shape="rect" title=" " alt="" coords="5,124,77,151"/>
@@ -228,7 +237,7 @@ lsm_mag</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00043">43</a> of file <a class="el" href="imu__px4fmu__v2_84_8h_source.html">imu_px4fmu_v2.4.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00042">42</a> of file <a class="el" href="imu__px4fmu__v2_84_8h_source.html">imu_px4fmu_v2.4.h</a>.</p>
 
 </div>
 </div>
@@ -249,28 +258,25 @@ lsm_mag</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">67</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00079">79</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="lsm303d__spi_8h.html#af45fc224561a9acf664c196b77a72097">Lsm303d_Spi::data_accel</a>, <a class="el" href="l3gd20__spi_8h_source.html#l00045">L3gd20_Spi::data_available</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00045">Lsm303d_Spi::data_available_acc</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00046">Lsm303d_Spi::data_available_mag</a>, <a class="el" href="lsm303d__spi_8h.html#a3824b4672d8de7faa56540d289a4db46">Lsm303d_Spi::data_mag</a>, <a class="el" href="l3gd20__spi_8h.html#aebe3896765f4e7c2ac2e96bc94c1cba8">L3gd20_Spi::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00355">IMU_PX4_ID</a>, <a class="el" href="imu_8c_source.html#l00219">imu_scale_accel()</a>, <a class="el" href="imu_8c_source.html#l00208">imu_scale_gyro()</a>, <a class="el" href="imu_8c_source.html#l00246">imu_scale_mag()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::l3g</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00135">l3gd20_spi_event()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00176">lsm303d_spi_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_acc</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00050">ImuPX4::lsm_mag</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="lsm303d__spi_8h.html#ab7972893e81f7b59d2d91dadc9802773">Lsm303d_Spi::data_accel</a>, <a class="el" href="l3gd20__spi_8h_source.html#l00045">L3gd20_Spi::data_available</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00045">Lsm303d_Spi::data_available_acc</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00046">Lsm303d_Spi::data_available_mag</a>, <a class="el" href="lsm303d__spi_8h.html#a3a8dc3063e857533f93cb1df5eb53d8d">Lsm303d_Spi::data_mag</a>, <a class="el" href="l3gd20__spi_8h.html#a584a5b86bd6a43006b803006f4988315">L3gd20_Spi::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00038">imu_px4</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00355">IMU_PX4_ID</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00047">ImuPX4::l3g</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00135">l3gd20_spi_event()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00176">lsm303d_spi_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::lsm_acc</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_mag</a>, <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__px4fmu__v2_84_8h_adc3f36e2267ea507426576f9b338c714_cgraph.png" border="0" usemap="#imu__px4fmu__v2_84_8h_adc3f36e2267ea507426576f9b338c714_cgraph" alt=""/></div>
 <map name="imu__px4fmu__v2_84_8h_adc3f36e2267ea507426576f9b338c714_cgraph" id="imu__px4fmu__v2_84_8h_adc3f36e2267ea507426576f9b338c714_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,128,159"/>
+<area shape="rect" title=" " alt="" coords="5,56,128,83"/>
 <area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="177,5,323,32"/>
-<area shape="rect" href="imu_8c.html#ac04fb6e1932325de756023b3e2914634" title=" " alt="" coords="185,56,315,83"/>
-<area shape="rect" href="imu_8c.html#ade0a0991f40f4e5dbed7c33b94262a59" title=" " alt="" coords="188,107,312,133"/>
-<area shape="rect" href="imu_8c.html#a8675c611ca0a329d7de7c883ad35d645" title=" " alt="" coords="188,157,312,184"/>
-<area shape="rect" href="l3gd20__spi_8c.html#a50685decd3b79232d66b5ac4867d3214" title=" " alt="" coords="182,208,318,235"/>
-<area shape="rect" href="lsm303d__spi_8c.html#a0d41ccb49235645e81eeec35393565aa" title=" " alt="" coords="176,259,324,285"/>
-<area shape="rect" href="l3gd20__spi_8c.html#a4a0ec290b0c95368ffc813212f7be9c9" title=" " alt="" coords="378,208,554,235"/>
-<area shape="rect" href="l3gd20__spi_8c.html#ad7095e98c10bc5285b717b2d05b0566d" title=" " alt="" coords="608,157,788,184"/>
-<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="836,233,929,260"/>
-<area shape="rect" href="lsm303d__spi_8c.html#a1be93459ab2d53ede186ce03f04c571a" title="Configuration function called once before normal use." alt="" coords="372,259,560,285"/>
-<area shape="rect" href="lsm303d__spi_8c.html#a991dd99127cbae7c5800944f5167d5a4" title=" " alt="" coords="622,309,774,336"/>
+<area shape="rect" href="l3gd20__spi_8c.html#a50685decd3b79232d66b5ac4867d3214" title=" " alt="" coords="182,56,318,83"/>
+<area shape="rect" href="lsm303d__spi_8c.html#a0d41ccb49235645e81eeec35393565aa" title=" " alt="" coords="176,107,324,133"/>
+<area shape="rect" href="l3gd20__spi_8c.html#a4a0ec290b0c95368ffc813212f7be9c9" title=" " alt="" coords="378,56,554,83"/>
+<area shape="rect" href="l3gd20__spi_8c.html#ad7095e98c10bc5285b717b2d05b0566d" title=" " alt="" coords="608,5,788,32"/>
+<area shape="rect" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction." alt="" coords="836,81,929,108"/>
+<area shape="rect" href="lsm303d__spi_8c.html#a1be93459ab2d53ede186ce03f04c571a" title="Configuration function called once before normal use." alt="" coords="372,107,560,133"/>
+<area shape="rect" href="lsm303d__spi_8c.html#a991dd99127cbae7c5800944f5167d5a4" title=" " alt="" coords="622,157,774,184"/>
 </map>
 </div>
 
@@ -292,21 +298,29 @@ lsm_mag</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00042">42</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">40</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::l3g</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00030">l3gd20_spi_init()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00032">lsm303d_spi_init()</a>, <a class="el" href="lsm303d_8h_source.html#l00081">LSM303D_TARGET_ACC</a>, <a class="el" href="lsm303d_8h_source.html#l00082">LSM303D_TARGET_MAG</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_acc</a>, and <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00050">ImuPX4::lsm_mag</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="navdata_8c_source.html#l00100">accel_scale</a>, <a class="el" href="navdata_8c_source.html#l00092">gyro_scale</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00038">imu_px4</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00355">IMU_PX4_ID</a>, <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00047">ImuPX4::l3g</a>, <a class="el" href="l3gd20_8h_source.html#l00041">L3GD20_SENS_2000_DEN</a>, <a class="el" href="l3gd20_8h_source.html#l00040">L3GD20_SENS_2000_NUM</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00030">l3gd20_spi_init()</a>, <a class="el" href="lsm303d_8h_source.html#l00062">LSM303D_ACCEL_SENS_16G_DEN</a>, <a class="el" href="lsm303d_8h_source.html#l00061">LSM303D_ACCEL_SENS_16G_NUM</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00032">lsm303d_spi_init()</a>, <a class="el" href="lsm303d_8h_source.html#l00089">LSM303D_TARGET_ACC</a>, <a class="el" href="lsm303d_8h_source.html#l00090">LSM303D_TARGET_MAG</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::lsm_acc</a>, and <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_mag</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__px4fmu__v2_84_8h_a36182babc18a11d31f8f99b358727db0_cgraph.png" border="0" usemap="#imu__px4fmu__v2_84_8h_a36182babc18a11d31f8f99b358727db0_cgraph" alt=""/></div>
 <map name="imu__px4fmu__v2_84_8h_a36182babc18a11d31f8f99b358727db0_cgraph" id="imu__px4fmu__v2_84_8h_a36182babc18a11d31f8f99b358727db0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,46,112,73"/>
-<area shape="rect" href="l3gd20__spi_8c.html#a7ce0152bebd25be7add3b16f7d660f2e" title=" " alt="" coords="166,17,286,43"/>
-<area shape="rect" href="lsm303d__spi_8c.html#a156507f0889e5fdab594d71e7c485027" title=" " alt="" coords="160,71,292,98"/>
-<area shape="rect" href="l3gd20_8h.html#aed24773c49063d6fefaf957af7b99ee7" title=" " alt="" coords="346,5,493,47"/>
-<area shape="rect" href="lsm303d_8h.html#a53bcfd82d24cf15194a9afc3adb34675" title=" " alt="" coords="340,71,499,112"/>
+<area shape="rect" title=" " alt="" coords="5,183,112,209"/>
+<area shape="rect" href="imu_8c.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="160,69,335,96"/>
+<area shape="rect" href="imu_8c.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="162,145,333,172"/>
+<area shape="rect" href="l3gd20__spi_8c.html#a7ce0152bebd25be7add3b16f7d660f2e" title=" " alt="" coords="187,212,307,239"/>
+<area shape="rect" href="lsm303d__spi_8c.html#a156507f0889e5fdab594d71e7c485027" title=" " alt="" coords="181,269,313,296"/>
+<area shape="rect" href="imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0" title="Find or create the accel in the imu structure." alt="" coords="405,5,521,32"/>
+<area shape="rect" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab" title="Composition (multiplication) of two rotation matrices." alt="" coords="395,56,531,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="383,107,544,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title=" " alt="" coords="592,107,759,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix." alt="" coords="807,107,956,133"/>
+<area shape="rect" href="imu_8c.html#a304a000b998533803b0d079c86e8f915" title="Find or create the gyro in the imu structure." alt="" coords="408,157,519,184"/>
+<area shape="rect" href="l3gd20_8h.html#aed24773c49063d6fefaf957af7b99ee7" title=" " alt="" coords="390,209,537,250"/>
+<area shape="rect" href="lsm303d_8h.html#a53bcfd82d24cf15194a9afc3adb34675" title=" " alt="" coords="384,274,543,315"/>
 </map>
 </div>
 
@@ -328,14 +342,14 @@ lsm_mag</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00055">55</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">67</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::l3g</a>, <a class="el" href="l3gd20__spi_8h_source.html#l00060">l3gd20_spi_periodic()</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00068">lsm303d_spi_periodic()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_acc</a>, and <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00050">ImuPX4::lsm_mag</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00038">imu_px4</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00047">ImuPX4::l3g</a>, <a class="el" href="l3gd20__spi_8h_source.html#l00060">l3gd20_spi_periodic()</a>, <a class="el" href="lsm303d__spi_8h_source.html#l00068">lsm303d_spi_periodic()</a>, <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00048">ImuPX4::lsm_acc</a>, and <a class="el" href="imu__px4fmu__v2_84_8h_source.html#l00049">ImuPX4::lsm_mag</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__px4fmu__v2_84_8h_a89ba24ff1ce9be73bca621cda73b46f5_cgraph.png" border="0" usemap="#imu__px4fmu__v2_84_8h_a89ba24ff1ce9be73bca621cda73b46f5_cgraph" alt=""/></div>
 <map name="imu__px4fmu__v2_84_8h_a89ba24ff1ce9be73bca621cda73b46f5_cgraph" id="imu__px4fmu__v2_84_8h_a89ba24ff1ce9be73bca621cda73b46f5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,125,143,152"/>
@@ -368,9 +382,9 @@ lsm_mag</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">40</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00038">38</a> of file <a class="el" href="imu__px4fmu__v2_84_8c_source.html">imu_px4fmu_v2.4.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00042">imu_px4_init()</a>, and <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00055">imu_px4_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00079">imu_px4_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00040">imu_px4_init()</a>, and <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_periodic()</a>.</p>
 
 </div>
 </div>
@@ -380,7 +394,7 @@ lsm_mag</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__px4fmu__v2_84_8h.html">imu_px4fmu_v2.4.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

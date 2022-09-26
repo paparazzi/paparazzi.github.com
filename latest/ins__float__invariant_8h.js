@@ -54,7 +54,6 @@ var ins__float__invariant_8h =
       [ "sh", "ins__float__invariant_8h.html#aebf8b94da13ca25bf9f269516020922f", null ]
     ] ],
     [ "InsFloatInv", "ins__float__invariant_8h.html#structInsFloatInv", [
-      [ "body_to_imu", "ins__float__invariant_8h.html#a946847c4b6563308ed9b8bf2c1732919", null ],
       [ "cmd", "ins__float__invariant_8h.html#a848b40a3fbd82793869951ac361caf9b", null ],
       [ "corr", "ins__float__invariant_8h.html#ae446351d97f4432e54c07422b8349e44", null ],
       [ "gains", "ins__float__invariant_8h.html#a4d4ffb3237722e8857fa3ef83fc81816", null ],
@@ -67,7 +66,6 @@ var ins__float__invariant_8h =
     [ "INV_COMMAND_DIM", "ins__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4", null ],
     [ "INV_MEASURE_DIM", "ins__float__invariant_8h.html#a31154c830fe4c8729366f9c9606fe775", null ],
     [ "INV_STATE_DIM", "ins__float__invariant_8h.html#a1381bfad9d32941968667b05c9f0e620", null ],
-    [ "ins_float_inv_set_body_to_imu_quat", "ins__float__invariant_8h.html#ad770f4835ea32cfbb8c9ae96100a05e2", null ],
     [ "ins_float_invariant_align", "ins__float__invariant_8h.html#a20f38b74cafe0e2f82412fe7a66dc806", null ],
     [ "ins_float_invariant_init", "ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02", null ],
     [ "ins_float_invariant_propagate", "ins__float__invariant_8h.html#a3295f5f304de90dd15c0465967c3b89f", null ],

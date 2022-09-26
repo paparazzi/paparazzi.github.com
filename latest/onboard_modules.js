@@ -6,7 +6,6 @@ var onboard_modules =
       [ "Ahrs modules", "onboard_modules.html#modules_category_ahrs", null ],
       [ "Benchmark modules", "onboard_modules.html#modules_category_benchmark", null ],
       [ "Boards modules", "onboard_modules.html#modules_category_boards", null ],
-      [ "Calibration modules", "onboard_modules.html#modules_category_calibration", null ],
       [ "Cam_Control modules", "onboard_modules.html#modules_category_cam_control", null ],
       [ "Com modules", "onboard_modules.html#modules_category_com", null ],
       [ "Computer_Vision modules", "onboard_modules.html#modules_category_computer_vision", null ],
@@ -315,19 +314,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__power_switch.html#module_load_example__power_switch", null ],
       [ "Module functions", "module__power_switch.html#functions__power_switch", [
         [ "Raw power_switch.xml file:", "module__power_switch.html#module_xml__power_switch", null ]
-      ] ]
-    ] ],
-    [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
-      [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
-      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
-      [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
-        [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
-      ] ]
-    ] ],
-    [ "send_imu_mag_current module", "module__send_imu_mag_current.html", [
-      [ "Example for airframe file", "module__send_imu_mag_current.html#module_load_example__send_imu_mag_current", null ],
-      [ "Module functions", "module__send_imu_mag_current.html#functions__send_imu_mag_current", [
-        [ "Raw send_imu_mag_current.xml file:", "module__send_imu_mag_current.html#module_xml__send_imu_mag_current", null ]
       ] ]
     ] ],
     [ "cam_point module", "module__cam_point.html", [
@@ -1244,6 +1230,13 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_common.html#module_load_example__imu_common", null ],
       [ "Module functions", "module__imu_common.html#functions__imu_common", [
         [ "Raw imu_common.xml file:", "module__imu_common.html#module_xml__imu_common", null ]
+      ] ]
+    ] ],
+    [ "imu_cube module", "module__imu_cube.html", [
+      [ "Example for airframe file", "module__imu_cube.html#module_load_example__imu_cube", null ],
+      [ "Auto-loaded modules", "module__imu_cube.html#autoloads__imu_cube", null ],
+      [ "Module functions", "module__imu_cube.html#functions__imu_cube", [
+        [ "Raw imu_cube.xml file:", "module__imu_cube.html#module_xml__imu_cube", null ]
       ] ]
     ] ],
     [ "imu_disco module", "module__imu_disco.html", [
@@ -2913,6 +2906,13 @@ var onboard_modules =
       [ "Module functions", "module__joystick.html#functions__joystick", null ],
       [ "Datalink Functions", "module__joystick.html#datalink_functions__joystick", [
         [ "Raw joystick.xml file:", "module__joystick.html#module_xml__joystick", null ]
+      ] ]
+    ] ],
+    [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
+      [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
+      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
+      [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
+        [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
       ] ]
     ] ],
     [ "math module", "module__math.html", [

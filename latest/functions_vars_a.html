@@ -117,6 +117,12 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <li>A_Z_pilot
 : <a class="el" href="flight__gear_8h.html#aa9316abba45e2b58b6eb94b5cfc257a6">FGNetFDM</a>
 </li>
+<li>abi_id
+: <a class="el" href="imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858">imu_accel_t</a>
+, <a class="el" href="imu_8h.html#a1b1d1ca0df754ef787eab7af507e96aa">imu_gyro_t</a>
+, <a class="el" href="imu_8h.html#a8e3750c802931e5b2ce7b088acfb7f0c">imu_mag_t</a>
+, <a class="el" href="invensense2_8h.html#ae9a71ac09de206c4d99065b54254eba0">invensense2_t</a>
+</li>
 <li>ac1
 : <a class="el" href="bmp085_8h.html#aaa0836154f063ceb898f536e933aeec7">Bmp085Calib</a>
 , <a class="el" href="navdata_8h.html#a400b75b498e2d6f2e5bbbca850b04316">bmp180_calib_t</a>
@@ -182,11 +188,10 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 , <a class="el" href="stabilization__attitude__ref__euler__int_8h.html#a4f4ca56ad5fc254379ccec2566a61980">AttRefEulerInt</a>
 , <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#abe0fb192d629876c9507666e46fb90d0">AttRefQuatFloat</a>
 , <a class="el" href="stabilization__attitude__ref__quat__int_8h.html#ab0ff5e1705df902003ddb2f11a028845">AttRefQuatInt</a>
-, <a class="el" href="ins__ekf2_8h.html#a88ca9093142ba39a654d3b3a7aae1a91">ekf2_t</a>
 , <a class="el" href="UKF__Wind__Estimator_8h.html#a18bd156474a7addc97775d22c6e56dc4">ExtU</a>
 , <a class="el" href="guidance__h__ref_8h.html#a4ca86bd39d5c52f0a2c21eac66b11cba">GuidanceHRef</a>
 , <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a2765280c9b7c5fb58c0e14cb6f3e10bf">HorizontalGuidanceReference</a>
-, <a class="el" href="imu_8h.html#aecac1be12d8d9c9c31be2ad9d5b90627">Imu</a>
+, <a class="el" href="imu__nps_8h.html#acad68ad36bbca4b35ab3a6c35af0cb27">ImuNps</a>
 , <a class="el" href="ins__float__invariant_8h.html#a1401609b4a97c260eb60c68fdb8508c2">inv_command</a>
 , <a class="el" href="ins__float__invariant_8h.html#aecfac5c328ea030e06067337bce6910b">inv_measures</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#ac5d2c780351def9945be95fd1c102556">MekfWindInputs</a>
@@ -221,6 +226,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <li>accel_dcutoff
 : <a class="el" href="filter__1euro__imu_8h.html#a37f8b57caab3df1880407feb7625ba68">Filter1eImu</a>
 </li>
+<li>accel_dlpf
+: <a class="el" href="invensense2_8h.html#adc8c508219a2928c41a7184573d3bcb5">invensense2_t</a>
+</li>
 <li>accel_dt
 : <a class="el" href="ins__ekf2_8h.html#a48359f777bb2bb92a4f4c7154e8ce026">ekf2_t</a>
 </li>
@@ -237,9 +245,6 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <li>accel_mincutoff
 : <a class="el" href="filter__1euro__imu_8h.html#ac824b47d8008d5c943e834c2297b5cd5">Filter1eImu</a>
 </li>
-<li>accel_neutral
-: <a class="el" href="imu_8h.html#ab126bba936ccd50bad68d42e83b81a28">Imu</a>
-</li>
 <li>accel_noise
 : <a class="el" href="vf__extended__float_8h.html#a47b0aaba2b99605733ceeafe668d4eac">VffExtended</a>
 </li>
@@ -250,19 +255,14 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 : <a class="el" href="ahrs__float__cmpl_8h.html#ad4be2fa311faa952bfad08a9a9411a8e">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a87f597484a79a22893c1582964231c76">AhrsIntCmplQuat</a>
 </li>
-<li>accel_prev
-: <a class="el" href="imu_8h.html#ab29bc6fde030f41e3e990323a4fa2fd5">Imu</a>
-</li>
 <li>accel_range
 : <a class="el" href="bmi088_8h.html#a4bcde092abddd2dae76e9c43c1a94a28">Bmi088Config</a>
+, <a class="el" href="invensense2_8h.html#a019f658d37370eace2563e47222c8048">invensense2_t</a>
 , <a class="el" href="mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5">Mpu60x0Config</a>
 , <a class="el" href="mpu9250_8h.html#acc1cbb496e5ea43bf9a0794045c7573e">Mpu9250Config</a>
 </li>
 <li>accel_rate
 : <a class="el" href="actuators__md25_8h.html#ab567b3ed142c269b46993e249947a03c">ActuatorsMD25</a>
-</li>
-<li>accel_stamp
-: <a class="el" href="ins__ekf2_8h.html#a20d705c742476c23290d91a4e5f4b7c1">ekf2_t</a>
 </li>
 <li>accel_status
 : <a class="el" href="group__state__acceleration.html#ga42a40deda3336374ca2d3322c9e176d9">State</a>
@@ -273,12 +273,8 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <li>accel_trans
 : <a class="el" href="bmi088__i2c_8h.html#a5a44729eb3cd284348844f0025928277">Bmi088_I2c</a>
 </li>
-<li>accel_unscaled
-: <a class="el" href="imu_8h.html#abf7c6149da2d7b989713f6fc919ccb10">Imu</a>
-</li>
 <li>accel_valid
 : <a class="el" href="ins__ekf2_8h.html#a124a9ad382120bc46dc511e3b73acae7">ekf2_t</a>
-, <a class="el" href="imu__aspirin_8h.html#ac54ce01cd13cd7c29cc9ed621eae5168">ImuAspirin</a>
 </li>
 <li>accel_z
 : <a class="el" href="direct__memory__logger_8c.html#ac62edba038f672c24ed90baaae7de78f">LogStruct</a>
@@ -286,6 +282,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <li>accel_zeta
 : <a class="el" href="ahrs__float__cmpl_8h.html#aac224ab63600459d70ca419f455030bc">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#af3768c1f00b145b806effacd65202653">AhrsIntCmplQuat</a>
+</li>
+<li>accels
+: <a class="el" href="imu_8h.html#a18b15716ffc3b544a1b66695ce40ebb7">Imu</a>
 </li>
 <li>accN
 : <a class="el" href="gps_8h.html#add67b5af8aaa529d18ae9b60b337f27a">GpsRelposNED</a>
@@ -649,7 +648,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:24 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

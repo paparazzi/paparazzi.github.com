@@ -10,7 +10,6 @@ var ahrs__float__invariant_8c =
     [ "AHRS_INV_O", "ahrs__float__invariant_8c.html#a602fa611cc69bdf35efc8082b0b49ed8", null ],
     [ "B", "ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10", null ],
     [ "MAG_FROZEN_COUNT", "ahrs__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de", null ],
-    [ "ahrs_float_inv_set_body_to_imu_quat", "ahrs__float__invariant_8c.html#a5d42aa512bbdfec115ec173eec6de40d", null ],
     [ "ahrs_float_invariant_align", "ahrs__float__invariant_8c.html#a4111f176cb3e28593c2ff388169a86f9", null ],
     [ "ahrs_float_invariant_init", "ahrs__float__invariant_8c.html#ab5d132b80575171fde6e0cbcfbba025a", null ],
     [ "ahrs_float_invariant_propagate", "ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff", null ],

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250_8c.html',''); initResizab
 <div class="textblock"><code>#include &quot;<a class="el" href="imu__mpu9250_8h_source.html">modules/imu/imu_mpu9250.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">modules/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_mpu9250.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -102,35 +103,37 @@ $(document).ready(function(){initNavTree('imu__mpu9250_8c.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2imu_2imu__mpu9250_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2imu_2imu__mpu9250_8c" id="sw_2airborne_2modules_2imu_2imu__mpu9250_8c">
-<area shape="rect" title=" " alt="" coords="569,5,727,47"/>
-<area shape="rect" href="imu__mpu9250_8h.html" title=" " alt="" coords="395,95,611,121"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="466,341,646,367"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1271,259,1481,285"/>
-<area shape="rect" href="mpu9250__i2c_8h.html" title=" " alt="" coords="436,169,596,211"/>
-<area shape="rect" title=" " alt="" coords="703,497,758,524"/>
-<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="87,341,220,367"/>
-<area shape="rect" href="mpu9250_8h.html" title=" " alt="" coords="686,259,858,285"/>
-<area shape="rect" href="ak8963_8h.html" title=" " alt="" coords="349,259,507,285"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="198,423,354,449"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="654,423,807,449"/>
-<area shape="rect" title=" " alt="" coords="507,423,578,449"/>
-<area shape="rect" title=" " alt="" coords="245,497,307,524"/>
-<area shape="rect" title=" " alt="" coords="331,497,402,524"/>
-<area shape="rect" title=" " alt="" coords="153,497,221,524"/>
-<area shape="rect" title=" " alt="" coords="5,423,173,449"/>
-<area shape="rect" href="mpu9250__regs_8h.html" title=" " alt="" coords="671,333,831,375"/>
-<area shape="rect" href="ak8963__regs_8h.html" title=" " alt="" coords="244,333,391,375"/>
-<area shape="rect" title=" " alt="" coords="1185,341,1271,367"/>
-<area shape="rect" title=" " alt="" coords="1296,341,1456,367"/>
-<area shape="rect" title=" " alt="" coords="1481,341,1637,367"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="957,341,1161,367"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1846,341,2045,367"/>
-<area shape="rect" title=" " alt="" coords="1661,341,1821,367"/>
-<area shape="rect" title=" " alt="" coords="1007,423,1169,449"/>
-<area shape="rect" title=" " alt="" coords="1667,423,1851,449"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1875,423,2015,449"/>
-<area shape="rect" title=" " alt="" coords="1754,497,1929,524"/>
-<area shape="rect" title=" " alt="" coords="1953,497,2145,524"/>
+<area shape="rect" title=" " alt="" coords="572,5,731,47"/>
+<area shape="rect" href="imu__mpu9250_8h.html" title=" " alt="" coords="471,95,687,121"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="309,341,489,367"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1266,259,1477,285"/>
+<area shape="rect" href="abi_8h.html" title=" " alt="" coords="762,95,909,121"/>
+<area shape="rect" href="mpu9250__i2c_8h.html" title=" " alt="" coords="499,169,659,211"/>
+<area shape="rect" title=" " alt="" coords="785,497,840,524"/>
+<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="522,341,655,367"/>
+<area shape="rect" href="mpu9250_8h.html" title=" " alt="" coords="188,259,360,285"/>
+<area shape="rect" href="ak8963_8h.html" title=" " alt="" coords="617,259,776,285"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="51,423,207,449"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="429,423,583,449"/>
+<area shape="rect" title=" " alt="" coords="283,423,353,449"/>
+<area shape="rect" title=" " alt="" coords="97,497,160,524"/>
+<area shape="rect" title=" " alt="" coords="184,497,255,524"/>
+<area shape="rect" title=" " alt="" coords="5,497,73,524"/>
+<area shape="rect" title=" " alt="" coords="607,423,775,449"/>
+<area shape="rect" href="mpu9250__regs_8h.html" title=" " alt="" coords="47,333,207,375"/>
+<area shape="rect" href="ak8963__regs_8h.html" title=" " alt="" coords="679,333,826,375"/>
+<area shape="rect" title=" " alt="" coords="1180,341,1267,367"/>
+<area shape="rect" title=" " alt="" coords="1291,341,1451,367"/>
+<area shape="rect" title=" " alt="" coords="1476,341,1632,367"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="952,341,1156,367"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="1841,341,2040,367"/>
+<area shape="rect" title=" " alt="" coords="1657,341,1817,367"/>
+<area shape="rect" title=" " alt="" coords="1002,423,1165,449"/>
+<area shape="rect" title=" " alt="" coords="1662,423,1846,449"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1871,423,2011,449"/>
+<area shape="rect" title=" " alt="" coords="1749,497,1924,524"/>
+<area shape="rect" title=" " alt="" coords="1949,497,2141,524"/>
+<area shape="rect" title=" " alt="" coords="772,177,899,203"/>
 </map>
 </div>
 </div>
@@ -256,9 +259,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00055">55</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00056">56</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mpu9250__i2c_8h_source.html#l00075">Mpu9250_I2c::akm</a>, <a class="el" href="ak8963_8h.html#aa1b3aa3ed668303f8ed02f10acf2286c">Ak8963::data</a>, <a class="el" href="mpu9250__i2c_8h.html#a6c543da951435cf9de43994cf752ef45">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h.html#a11284df3c0be4489d4ca84ed2977b62e">Mpu9250_I2c::data_rates</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="mpu9250__i2c_8h_source.html#l00075">Mpu9250_I2c::akm</a>, <a class="el" href="ak8963_8h.html#aa1b3aa3ed668303f8ed02f10acf2286c">Ak8963::data</a>, <a class="el" href="mpu9250__i2c_8h.html#a7c956c53ecaab068072f672c2013a92c">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h.html#aaf091e390e814a18b7a100bf305d441f">Mpu9250_I2c::data_rates</a>, <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00331">IMU_MPU9250_ID</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 </div>
 </div>
@@ -277,7 +280,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00035">35</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__mpu9250_8c_source.html#l00047">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00037">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00042">imu_mpu9250_periodic()</a>, and <a class="el" href="imu__mpu9250_8c_source.html#l00055">imu_mpu9250_report()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__mpu9250_8c_source.html#l00047">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00037">imu_mpu9250_init()</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00042">imu_mpu9250_periodic()</a>, and <a class="el" href="imu__mpu9250_8c_source.html#l00056">imu_mpu9250_report()</a>.</p>
 
 </div>
 </div>
@@ -287,7 +290,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250_8c.html">imu_mpu9250.c</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

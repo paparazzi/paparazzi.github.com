@@ -99,10 +99,17 @@ $(document).ready(function(){initNavTree('bmi088_8c.html',''); initResizable(); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bmi088_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2bmi088_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2bmi088_8c" id="sw_2airborne_2peripherals_2bmi088_8c">
-<area shape="rect" title=" " alt="" coords="8,5,183,47"/>
-<area shape="rect" href="bmi088_8h.html" title=" " alt="" coords="15,95,175,121"/>
-<area shape="rect" title=" " alt="" coords="5,177,60,203"/>
-<area shape="rect" href="bmi088__regs_8h.html" title=" " alt="" coords="84,169,232,211"/>
+<area shape="rect" title=" " alt="" coords="24,5,199,47"/>
+<area shape="rect" href="bmi088_8h.html" title=" " alt="" coords="32,95,192,121"/>
+<area shape="rect" title=" " alt="" coords="27,333,82,360"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="22,177,202,203"/>
+<area shape="rect" href="bmi088__regs_8h.html" title=" " alt="" coords="226,169,374,211"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="212,259,368,285"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="35,259,188,285"/>
+<area shape="rect" title=" " alt="" coords="392,259,463,285"/>
+<area shape="rect" title=" " alt="" coords="168,333,231,360"/>
+<area shape="rect" title=" " alt="" coords="255,333,326,360"/>
+<area shape="rect" title=" " alt="" coords="350,333,418,360"/>
 </map>
 </div>
 </div>
@@ -120,12 +127,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:addcce42ce13cf7b00585ee7ef9cc1936"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#addcce42ce13cf7b00585ee7ef9cc1936">BMI088_GYRO_SENS</a> [5]</td></tr>
 <tr class="separator:addcce42ce13cf7b00585ee7ef9cc1936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea5f457b020296ad97446e22aefce6f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#a8ea5f457b020296ad97446e22aefce6f">BMI088_GYRO_SENS_FRAC</a> [5][2]</td></tr>
-<tr class="separator:a8ea5f457b020296ad97446e22aefce6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d41db65aea9c5021c6ae7b35e307fea"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#a8d41db65aea9c5021c6ae7b35e307fea">BMI088_GYRO_SENS_FRAC</a> [5][2]</td></tr>
+<tr class="separator:a8d41db65aea9c5021c6ae7b35e307fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204cd9d13497f8b2ecefa26ee3a934f8"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#a204cd9d13497f8b2ecefa26ee3a934f8">BMI088_ACCEL_SENS</a> [4]</td></tr>
 <tr class="separator:a204cd9d13497f8b2ecefa26ee3a934f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae39f86176d11b3a960028c2d5b1ed8ee"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#ae39f86176d11b3a960028c2d5b1ed8ee">BMI088_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
-<tr class="separator:ae39f86176d11b3a960028c2d5b1ed8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9c09f013fce4f0a70fe73a56cd4dbc"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bmi088_8c.html#a4d9c09f013fce4f0a70fe73a56cd4dbc">BMI088_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
+<tr class="separator:a4d9c09f013fce4f0a70fe73a56cd4dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BMI088 driver common functions (I2C and SPI).</p>
@@ -167,9 +174,9 @@ Variables</h2></td></tr>
 
 <p>Configuration sequence called once before normal use. </p>
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00070">70</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00079">79</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmi088__regs_8h_source.html#l00132">BMI088_ACCEL_ACTIVE</a>, <a class="el" href="bmi088__regs_8h_source.html#l00054">BMI088_ACCEL_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00141">BMI088_ACCEL_POWER_ON</a>, <a class="el" href="bmi088__regs_8h_source.html#l00063">BMI088_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00064">BMI088_ACCEL_PWR_CTRl</a>, <a class="el" href="bmi088__regs_8h_source.html#l00055">BMI088_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00099">BMI088_CONF_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00100">BMI088_CONF_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088_8h_source.html#l00101">BMI088_CONF_ACCEL_PWR_CTRL</a>, <a class="el" href="bmi088_8h_source.html#l00098">BMI088_CONF_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00105">BMI088_CONF_DONE</a>, <a class="el" href="bmi088_8h_source.html#l00103">BMI088_CONF_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00104">BMI088_CONF_GYRO_PWR</a>, <a class="el" href="bmi088_8h_source.html#l00102">BMI088_CONF_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00108">BMI088_CONFIG_ACCEL</a>, <a class="el" href="bmi088_8h_source.html#l00109">BMI088_CONFIG_GYRO</a>, <a class="el" href="bmi088__regs_8h_source.html#l00083">BMI088_GYRO_BAND_WIDTH</a>, <a class="el" href="bmi088__regs_8h_source.html#l00085">BMI088_GYRO_LPM_1</a>, <a class="el" href="bmi088__regs_8h_source.html#l00173">BMI088_GYRO_NORMAL</a>, <a class="el" href="bmi088__regs_8h_source.html#l00082">BMI088_GYRO_RANGE</a>, and <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>.</p>
+<p class="reference">References <a class="el" href="bmi088__regs_8h_source.html#l00132">BMI088_ACCEL_ACTIVE</a>, <a class="el" href="bmi088__regs_8h_source.html#l00054">BMI088_ACCEL_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00141">BMI088_ACCEL_POWER_ON</a>, <a class="el" href="bmi088__regs_8h_source.html#l00063">BMI088_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088__regs_8h_source.html#l00064">BMI088_ACCEL_PWR_CTRl</a>, <a class="el" href="bmi088__regs_8h_source.html#l00055">BMI088_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00100">BMI088_CONF_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00101">BMI088_CONF_ACCEL_PWR_CONF</a>, <a class="el" href="bmi088_8h_source.html#l00102">BMI088_CONF_ACCEL_PWR_CTRL</a>, <a class="el" href="bmi088_8h_source.html#l00099">BMI088_CONF_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00106">BMI088_CONF_DONE</a>, <a class="el" href="bmi088_8h_source.html#l00104">BMI088_CONF_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00105">BMI088_CONF_GYRO_PWR</a>, <a class="el" href="bmi088_8h_source.html#l00103">BMI088_CONF_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00109">BMI088_CONFIG_ACCEL</a>, <a class="el" href="bmi088_8h_source.html#l00110">BMI088_CONFIG_GYRO</a>, <a class="el" href="bmi088__regs_8h_source.html#l00083">BMI088_GYRO_BAND_WIDTH</a>, <a class="el" href="bmi088__regs_8h_source.html#l00085">BMI088_GYRO_LPM_1</a>, <a class="el" href="bmi088__regs_8h_source.html#l00173">BMI088_GYRO_NORMAL</a>, <a class="el" href="bmi088__regs_8h_source.html#l00082">BMI088_GYRO_RANGE</a>, and <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bmi088__i2c_8c_source.html#l00093">bmi088_i2c_event()</a>, and <a class="el" href="bmi088__i2c_8c_source.html#l00067">bmi088_i2c_start_configure()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -206,9 +213,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00061">61</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00070">70</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
-<p class="reference">References <a class="el" href="bmi088_8h_source.html#l00118">Bmi088Config::accel_bw</a>, <a class="el" href="bmi088_8h_source.html#l00117">Bmi088Config::accel_odr</a>, <a class="el" href="bmi088_8h_source.html#l00116">Bmi088Config::accel_range</a>, <a class="el" href="bmi088_8h_source.html#l00044">BMI088_DEFAULT_ACCEL_BW</a>, <a class="el" href="bmi088_8h_source.html#l00042">BMI088_DEFAULT_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00040">BMI088_DEFAULT_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00038">BMI088_DEFAULT_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00036">BMI088_DEFAULT_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00115">Bmi088Config::gyro_odr</a>, and <a class="el" href="bmi088_8h_source.html#l00114">Bmi088Config::gyro_range</a>.</p>
+<p class="reference">References <a class="el" href="bmi088_8h_source.html#l00119">Bmi088Config::accel_bw</a>, <a class="el" href="bmi088_8h_source.html#l00118">Bmi088Config::accel_odr</a>, <a class="el" href="bmi088_8h_source.html#l00117">Bmi088Config::accel_range</a>, <a class="el" href="bmi088_8h_source.html#l00045">BMI088_DEFAULT_ACCEL_BW</a>, <a class="el" href="bmi088_8h_source.html#l00043">BMI088_DEFAULT_ACCEL_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00041">BMI088_DEFAULT_ACCEL_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00039">BMI088_DEFAULT_GYRO_ODR</a>, <a class="el" href="bmi088_8h_source.html#l00037">BMI088_DEFAULT_GYRO_RANGE</a>, <a class="el" href="bmi088_8h_source.html#l00116">Bmi088Config::gyro_odr</a>, and <a class="el" href="bmi088_8h_source.html#l00115">Bmi088Config::gyro_range</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bmi088__i2c_8c_source.html#l00030">bmi088_i2c_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -245,29 +252,35 @@ Variables</h2></td></tr>
 <div class="line">  <a class="code" href="bmi088_8h.html#a3b758e956ec0d8e9658aa50633f5e31b">BMI088_ACCEL_SENS_24G</a></div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00047">47</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00052">52</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
 
 </div>
 </div>
-<a id="ae39f86176d11b3a960028c2d5b1ed8ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae39f86176d11b3a960028c2d5b1ed8ee">&#9670;&nbsp;</a></span>BMI088_ACCEL_SENS_FRAC</h2>
+<a id="a4d9c09f013fce4f0a70fe73a56cd4dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9c09f013fce4f0a70fe73a56cd4dbc">&#9670;&nbsp;</a></span>BMI088_ACCEL_SENS_FRAC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> BMI088_ACCEL_SENS_FRAC[4][2]</td>
+          <td class="memname">const struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> BMI088_ACCEL_SENS_FRAC[4][2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a>, <a class="code" href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a>, <a class="code" href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a>, <a class="code" href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a>, <a class="code" href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a> }</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a>, <a class="code" href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a>, <a class="code" href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a>, <a class="code" href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a>, <a class="code" href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a>, <a class="code" href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a>, <a class="code" href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a>, <a class="code" href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a>, <a class="code" href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a>, <a class="code" href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a>, <a class="code" href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a>, <a class="code" href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a>, <a class="code" href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a>, <a class="code" href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a>, <a class="code" href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a>, <a class="code" href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a>, <a class="code" href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a>} }</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00054">54</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00059">59</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>.</p>
 
 </div>
 </div>
@@ -294,63 +307,70 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ea5f457b020296ad97446e22aefce6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ea5f457b020296ad97446e22aefce6f">&#9670;&nbsp;</a></span>BMI088_GYRO_SENS_FRAC</h2>
+<a id="a8d41db65aea9c5021c6ae7b35e307fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d41db65aea9c5021c6ae7b35e307fea">&#9670;&nbsp;</a></span>BMI088_GYRO_SENS_FRAC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> BMI088_GYRO_SENS_FRAC[5][2]</td>
+          <td class="memname">const struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> BMI088_GYRO_SENS_FRAC[5][2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a>, <a class="code" href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a>, <a class="code" href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a>, <a class="code" href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a>, <a class="code" href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a> },</div>
-<div class="line">  { <a class="code" href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a>, <a class="code" href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a> },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a>, <a class="code" href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a>, <a class="code" href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a>, <a class="code" href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a>, <a class="code" href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a>, <a class="code" href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a>, <a class="code" href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a>, <a class="code" href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a>, <a class="code" href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a>, <a class="code" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a>, <a class="code" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a>, <a class="code" href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a>, <a class="code" href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a>, <a class="code" href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a>, <a class="code" href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a>, <a class="code" href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a>, <a class="code" href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a>} },</div>
+<div class="line">  { {<a class="code" href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a>, <a class="code" href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a>, <a class="code" href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a>},</div>
+<div class="line">    {<a class="code" href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a>, <a class="code" href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a>, <a class="code" href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a>} }</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="bmi088_8c_source.html#l00039">39</a> of file <a class="el" href="bmi088_8c_source.html">bmi088.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="imu__bmi088__i2c_8c_source.html#l00092">imu_bmi088_init()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="abmi088_8h_html_af86de9930395d8c4c3620c62035cd13b"><div class="ttname"><a href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00062">bmi088.h:62</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a0f2c05a102caf870f6d6fe0a98d70765"><div class="ttname"><a href="bmi088_8h.html#a0f2c05a102caf870f6d6fe0a98d70765">BMI088_ACCEL_SENS_6G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00081">bmi088.h:81</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a3b758e956ec0d8e9658aa50633f5e31b"><div class="ttname"><a href="bmi088_8h.html#a3b758e956ec0d8e9658aa50633f5e31b">BMI088_ACCEL_SENS_24G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00087">bmi088.h:87</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a7a00f2a24ac63a965da8ac2e86497a01"><div class="ttname"><a href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00059">bmi088.h:59</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a141f18820ce1d4e9b4b347ec7342d389"><div class="ttname"><a href="bmi088_8h.html#a141f18820ce1d4e9b4b347ec7342d389">BMI088_ACCEL_SENS_12G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00084">bmi088.h:84</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a8f7ec8290ef20dcf3740f6c5a4ac2f18"><div class="ttname"><a href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00052">bmi088.h:52</a></div></div>
-<div class="ttc" id="abmi088_8h_html_afee6d28f6228f0691836460f26736bba"><div class="ttname"><a href="bmi088_8h.html#afee6d28f6228f0691836460f26736bba">BMI088_ACCEL_SENS_3G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G</div><div class="ttdoc">default accel sensitivy from the datasheet sens = 9.81 [m/s^2] / [LSB/g] * 2^INT32_ACCEL_FRAC ex: BMI...</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00078">bmi088.h:78</a></div></div>
-<div class="ttc" id="abmi088_8h_html_abf2726bb3bc6514646221047a478fed2"><div class="ttname"><a href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00058">bmi088.h:58</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a8247eb2087a65603255bad95a12a8d12"><div class="ttname"><a href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00056">bmi088.h:56</a></div></div>
-<div class="ttc" id="abmi088_8h_html_af92e4d481b646b478c2dd3a9204936c4"><div class="ttname"><a href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00065">bmi088.h:65</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a949997efd505f8b884f49487b4618795"><div class="ttname"><a href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00086">bmi088.h:86</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a2826d0ef009e0fb933f887a0c4eae722"><div class="ttname"><a href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00079">bmi088.h:79</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a46b76e576ab953d8e4b8092fb38ee3de"><div class="ttname"><a href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00083">bmi088.h:83</a></div></div>
-<div class="ttc" id="abmi088_8h_html_acbd72b4782499ae7d0e7f00164bf031c"><div class="ttname"><a href="bmi088_8h.html#acbd72b4782499ae7d0e7f00164bf031c">BMI088_GYRO_SENS_1000</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00060">bmi088.h:60</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a664f650c0d07dafb083d7e1b4ce79c57"><div class="ttname"><a href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00088">bmi088.h:88</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a7c6175f146d9e5cafce67e5cf7fd0af4"><div class="ttname"><a href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00085">bmi088.h:85</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a5cf843ff2f0edf5e2e9ef408ea805328"><div class="ttname"><a href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00061">bmi088.h:61</a></div></div>
-<div class="ttc" id="abmi088_8h_html_aff6364490333f04c67652e9269bfa164"><div class="ttname"><a href="bmi088_8h.html#aff6364490333f04c67652e9269bfa164">BMI088_GYRO_SENS_125</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125</div><div class="ttdoc">default gyro sensitivy from the datasheet sens = 1/ [LSB/(deg/s)] * pi/180 * 2^INT32_RATE_FRAC ex: BM...</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00051">bmi088.h:51</a></div></div>
-<div class="ttc" id="abmi088_8h_html_ad4ffc192a52eb7b2acc8e2ce0916de3a"><div class="ttname"><a href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00053">bmi088.h:53</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a8f452a334ca3e568e1f60d944b7f1b07"><div class="ttname"><a href="bmi088_8h.html#a8f452a334ca3e568e1f60d944b7f1b07">BMI088_GYRO_SENS_2000</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00063">bmi088.h:63</a></div></div>
-<div class="ttc" id="abmi088_8h_html_ad065ff95813dad89c121b668984ec770"><div class="ttname"><a href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00089">bmi088.h:89</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a0646cdc3b43c4709b811e09db4e5d76e"><div class="ttname"><a href="bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e">BMI088_GYRO_SENS_500</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00057">bmi088.h:57</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a889eef41c9fdab5ecf702e4cb3618949"><div class="ttname"><a href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00055">bmi088.h:55</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a80bc60413ab84018f9efa27ce683f52a"><div class="ttname"><a href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00064">bmi088.h:64</a></div></div>
-<div class="ttc" id="abmi088_8h_html_afca30bcd7105b0d5ac07d94e58694daf"><div class="ttname"><a href="bmi088_8h.html#afca30bcd7105b0d5ac07d94e58694daf">BMI088_GYRO_SENS_250</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00054">bmi088.h:54</a></div></div>
-<div class="ttc" id="abmi088_8h_html_a6fcccbb88da5b406797c1477854ea7b8"><div class="ttname"><a href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00082">bmi088.h:82</a></div></div>
-<div class="ttc" id="abmi088_8h_html_ace2070a28288e3cc39a05f2aedd115af"><div class="ttname"><a href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00080">bmi088.h:80</a></div></div>
+<div class="ttc" id="abmi088_8h_html_af86de9930395d8c4c3620c62035cd13b"><div class="ttname"><a href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">BMI088_GYRO_SENS_1000_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00063">bmi088.h:63</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a0f2c05a102caf870f6d6fe0a98d70765"><div class="ttname"><a href="bmi088_8h.html#a0f2c05a102caf870f6d6fe0a98d70765">BMI088_ACCEL_SENS_6G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00082">bmi088.h:82</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a3b758e956ec0d8e9658aa50633f5e31b"><div class="ttname"><a href="bmi088_8h.html#a3b758e956ec0d8e9658aa50633f5e31b">BMI088_ACCEL_SENS_24G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00088">bmi088.h:88</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a7a00f2a24ac63a965da8ac2e86497a01"><div class="ttname"><a href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">BMI088_GYRO_SENS_500_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00060">bmi088.h:60</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a141f18820ce1d4e9b4b347ec7342d389"><div class="ttname"><a href="bmi088_8h.html#a141f18820ce1d4e9b4b347ec7342d389">BMI088_ACCEL_SENS_12G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00085">bmi088.h:85</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a8f7ec8290ef20dcf3740f6c5a4ac2f18"><div class="ttname"><a href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">BMI088_GYRO_SENS_125_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00053">bmi088.h:53</a></div></div>
+<div class="ttc" id="abmi088_8h_html_afee6d28f6228f0691836460f26736bba"><div class="ttname"><a href="bmi088_8h.html#afee6d28f6228f0691836460f26736bba">BMI088_ACCEL_SENS_3G</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G</div><div class="ttdoc">default accel sensitivy from the datasheet sens = 9.81 [m/s^2] / [LSB/g] * 2^INT32_ACCEL_FRAC ex: BMI...</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00079">bmi088.h:79</a></div></div>
+<div class="ttc" id="abmi088_8h_html_abf2726bb3bc6514646221047a478fed2"><div class="ttname"><a href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">BMI088_GYRO_SENS_500_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00059">bmi088.h:59</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a8247eb2087a65603255bad95a12a8d12"><div class="ttname"><a href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">BMI088_GYRO_SENS_250_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00057">bmi088.h:57</a></div></div>
+<div class="ttc" id="abmi088_8h_html_af92e4d481b646b478c2dd3a9204936c4"><div class="ttname"><a href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">BMI088_GYRO_SENS_2000_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00066">bmi088.h:66</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a949997efd505f8b884f49487b4618795"><div class="ttname"><a href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">BMI088_ACCEL_SENS_12G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00087">bmi088.h:87</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a2826d0ef009e0fb933f887a0c4eae722"><div class="ttname"><a href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">BMI088_ACCEL_SENS_3G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00080">bmi088.h:80</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a46b76e576ab953d8e4b8092fb38ee3de"><div class="ttname"><a href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">BMI088_ACCEL_SENS_6G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00084">bmi088.h:84</a></div></div>
+<div class="ttc" id="abmi088_8h_html_acbd72b4782499ae7d0e7f00164bf031c"><div class="ttname"><a href="bmi088_8h.html#acbd72b4782499ae7d0e7f00164bf031c">BMI088_GYRO_SENS_1000</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00061">bmi088.h:61</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a664f650c0d07dafb083d7e1b4ce79c57"><div class="ttname"><a href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">BMI088_ACCEL_SENS_24G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00089">bmi088.h:89</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a7c6175f146d9e5cafce67e5cf7fd0af4"><div class="ttname"><a href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">BMI088_ACCEL_SENS_12G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_12G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00086">bmi088.h:86</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a5cf843ff2f0edf5e2e9ef408ea805328"><div class="ttname"><a href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">BMI088_GYRO_SENS_1000_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_1000_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00062">bmi088.h:62</a></div></div>
+<div class="ttc" id="abmi088_8h_html_aff6364490333f04c67652e9269bfa164"><div class="ttname"><a href="bmi088_8h.html#aff6364490333f04c67652e9269bfa164">BMI088_GYRO_SENS_125</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125</div><div class="ttdoc">default gyro sensitivy from the datasheet sens = 1/ [LSB/(deg/s)] * pi/180 * 2^INT32_RATE_FRAC ex: BM...</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00052">bmi088.h:52</a></div></div>
+<div class="ttc" id="abmi088_8h_html_ad4ffc192a52eb7b2acc8e2ce0916de3a"><div class="ttname"><a href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">BMI088_GYRO_SENS_125_DEN</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_125_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00054">bmi088.h:54</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a8f452a334ca3e568e1f60d944b7f1b07"><div class="ttname"><a href="bmi088_8h.html#a8f452a334ca3e568e1f60d944b7f1b07">BMI088_GYRO_SENS_2000</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00064">bmi088.h:64</a></div></div>
+<div class="ttc" id="abmi088_8h_html_ad065ff95813dad89c121b668984ec770"><div class="ttname"><a href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">BMI088_ACCEL_SENS_24G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_24G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00090">bmi088.h:90</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a0646cdc3b43c4709b811e09db4e5d76e"><div class="ttname"><a href="bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e">BMI088_GYRO_SENS_500</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_500</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00058">bmi088.h:58</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a889eef41c9fdab5ecf702e4cb3618949"><div class="ttname"><a href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">BMI088_GYRO_SENS_250_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00056">bmi088.h:56</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a80bc60413ab84018f9efa27ce683f52a"><div class="ttname"><a href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">BMI088_GYRO_SENS_2000_NUM</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_2000_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00065">bmi088.h:65</a></div></div>
+<div class="ttc" id="abmi088_8h_html_afca30bcd7105b0d5ac07d94e58694daf"><div class="ttname"><a href="bmi088_8h.html#afca30bcd7105b0d5ac07d94e58694daf">BMI088_GYRO_SENS_250</a></div><div class="ttdeci">#define BMI088_GYRO_SENS_250</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00055">bmi088.h:55</a></div></div>
+<div class="ttc" id="abmi088_8h_html_a6fcccbb88da5b406797c1477854ea7b8"><div class="ttname"><a href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">BMI088_ACCEL_SENS_6G_NUM</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_6G_NUM</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00083">bmi088.h:83</a></div></div>
+<div class="ttc" id="abmi088_8h_html_ace2070a28288e3cc39a05f2aedd115af"><div class="ttname"><a href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">BMI088_ACCEL_SENS_3G_DEN</a></div><div class="ttdeci">#define BMI088_ACCEL_SENS_3G_DEN</div><div class="ttdef"><b>Definition:</b> <a href="bmi088_8h_source.html#l00081">bmi088.h:81</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="bmi088_8c.html">bmi088.c</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

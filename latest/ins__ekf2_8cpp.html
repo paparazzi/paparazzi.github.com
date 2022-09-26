@@ -255,16 +255,14 @@ Functions</h2></td></tr>
 <tr class="separator:a704d8592956cc0ab315cbe37f9967cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7266d71f926f1ff406cde1f6067177ac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac">agl_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, float distance)</td></tr>
 <tr class="separator:a7266d71f926f1ff406cde1f6067177ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e1ea35fdb43af72537c6c9f38b889d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d">gyro_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *gyro)</td></tr>
-<tr class="separator:a47e1ea35fdb43af72537c6c9f38b889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd6b1869f263f90a6f1fbe777a87793"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793">accel_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *accel)</td></tr>
-<tr class="separator:aacd6b1869f263f90a6f1fbe777a87793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad132ffbe3cfdff1815722346bfca610b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b">gyro_int_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *delta_gyro, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dt)</td></tr>
+<tr class="separator:ad132ffbe3cfdff1815722346bfca610b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f29de55a1400c23355664fd24c7910b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b">accel_int_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *delta_accel, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> dt)</td></tr>
+<tr class="separator:a4f29de55a1400c23355664fd24c7910b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cc1e545848b85016af530049991c02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02">mag_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *mag)</td></tr>
 <tr class="separator:a49cc1e545848b85016af530049991c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
 <tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f6300c213088a4ea0598baafb5e736"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#ab5f6300c213088a4ea0598baafb5e736">body_to_imu_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i_f)</td></tr>
-<tr class="separator:ab5f6300c213088a4ea0598baafb5e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee22d5c97c601731a135c1104958a4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f">optical_flow_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_x, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_y, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_x, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_y, float quality, float size_divergence)</td></tr>
 <tr class="separator:a3ee22d5c97c601731a135c1104958a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d967646b2cb048323e8545662428ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed">ins_ekf2_publish_attitude</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp)</td></tr>
@@ -307,16 +305,14 @@ Variables</h2></td></tr>
 <tr class="separator:a38cb06612986df226f29ce29c93450e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa50262a1e494235831469694c69b177"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#afa50262a1e494235831469694c69b177">agl_ev</a></td></tr>
 <tr class="separator:afa50262a1e494235831469694c69b177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa911576e04d8ae0519d83ae6722546"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a6aa911576e04d8ae0519d83ae6722546">gyro_ev</a></td></tr>
-<tr class="separator:a6aa911576e04d8ae0519d83ae6722546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469c2ebc0df160a3ae46ebbbb2aff826"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a469c2ebc0df160a3ae46ebbbb2aff826">accel_ev</a></td></tr>
-<tr class="separator:a469c2ebc0df160a3ae46ebbbb2aff826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596ba14822e0851b21aff8465a9c32f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a596ba14822e0851b21aff8465a9c32f6">gyro_int_ev</a></td></tr>
+<tr class="separator:a596ba14822e0851b21aff8465a9c32f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84c4e5df160b1e170812a80cb61e9f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#ad84c4e5df160b1e170812a80cb61e9f9">accel_int_ev</a></td></tr>
+<tr class="separator:ad84c4e5df160b1e170812a80cb61e9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d506760598e8c18e5da6e52dfc6b0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a44d506760598e8c18e5da6e52dfc6b0d">mag_ev</a></td></tr>
 <tr class="separator:a44d506760598e8c18e5da6e52dfc6b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8c616627ecbb4860e359944c97dc718"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#af8c616627ecbb4860e359944c97dc718">gps_ev</a></td></tr>
 <tr class="separator:af8c616627ecbb4860e359944c97dc718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f7208107f1a5edfea2b32e570ad602d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a1f7208107f1a5edfea2b32e570ad602d">body_to_imu_ev</a></td></tr>
-<tr class="separator:a1f7208107f1a5edfea2b32e570ad602d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141009974fbc44658bdd3334ff2e1d62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#a141009974fbc44658bdd3334ff2e1d62">optical_flow_ev</a></td></tr>
 <tr class="separator:a141009974fbc44658bdd3334ff2e1d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4bc42dbc6ffe854fffc661819ecc95f"><td class="memItemLeft" align="right" valign="top">static Ekf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a></td></tr>
@@ -914,8 +910,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aacd6b1869f263f90a6f1fbe777a87793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacd6b1869f263f90a6f1fbe777a87793">&#9670;&nbsp;</a></span>accel_cb()</h2>
+<a id="a4f29de55a1400c23355664fd24c7910b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f29de55a1400c23355664fd24c7910b">&#9670;&nbsp;</a></span>accel_int_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -924,7 +920,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void accel_cb </td>
+          <td class="memname">static void accel_int_cb </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>sender_id</em>, </td>
@@ -938,8 +934,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
-          <td class="paramname"><em>accel</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *&#160;</td>
+          <td class="paramname"><em>delta_accel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -954,68 +956,68 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00828">828</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00812">812</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00048">ekf2_t::accel</a>, <a class="el" href="ins__ekf2_8h_source.html#l00044">ekf2_t::accel_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00043">ekf2_t::accel_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::accel_valid</a>, <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ins__ekf2_8h_source.html#l00057">ekf2_t::body_to_imu</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::gyro_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00698">ins_ekf2_publish_attitude()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00044">ekf2_t::accel_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00046">ekf2_t::accel_valid</a>, <a class="el" href="ins__ekf2_8h_source.html#l00042">ekf2_t::delta_accel</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::gyro_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00693">ins_ekf2_publish_attitude()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_cgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_cgraph" id="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_cgraph">
-<area shape="rect" title=" " alt="" coords="5,905,84,932"/>
-<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="135,855,318,881"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="132,905,321,932"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="145,1007,308,1033"/>
-<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="396,687,535,713"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="390,905,541,932"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="1117,342,1277,383"/>
-<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="388,956,543,983"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="386,1007,545,1033"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="369,636,561,663"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="609,855,816,881"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="864,803,1051,829"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="633,1022,793,1063"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1099,1106,1295,1147"/>
-<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="642,1249,783,1290"/>
-<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="645,789,780,830"/>
-<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="619,957,806,998"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1585,604,1788,631"/>
-<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1836,604,2003,631"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="1105,875,1289,917"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47" title=" " alt="" coords="871,1000,1044,1056"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes." alt="" coords="865,934,1050,975"/>
-<area shape="rect" href="stabilization__indi_8c.html#a12143cafcad8c2db6f07b2cc072851d5" title=" " alt="" coords="891,1081,1024,1122"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="1389,809,1491,836"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="1395,860,1485,887"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="1392,911,1488,937"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1367,1012,1513,1039"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="1360,626,1520,667"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title=" " alt="" coords="1383,1215,1497,1241"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title=" " alt="" coords="1389,1113,1491,1140"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title=" " alt="" coords="1386,1164,1494,1191"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title=" " alt="" coords="1360,743,1520,785"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1585,1012,1788,1039"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1131,1004,1262,1031"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1117,1055,1276,1081"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="1371,225,1509,266"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="1355,342,1525,383"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="1361,407,1519,449"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="1368,473,1512,500"/>
-<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="1366,524,1514,551"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="1349,5,1531,32"/>
-<area shape="rect" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="1373,57,1507,98"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="1343,123,1537,149"/>
-<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="1343,173,1537,200"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="1633,232,1740,259"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="1607,123,1766,149"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="1607,173,1766,200"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="634,636,791,663"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="382,1164,549,1191"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="640,1315,785,1341"/>
+<div class="center"><img src="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_cgraph" alt=""/></div>
+<map name="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_cgraph" id="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,860,108,887"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="156,860,345,887"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="420,587,559,614"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="414,638,565,664"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="1141,1064,1301,1105"/>
+<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="412,886,567,912"/>
+<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="410,936,569,963"/>
+<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="393,987,585,1014"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="633,528,840,555"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="888,94,1075,120"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="657,630,817,672"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1123,712,1319,753"/>
+<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="666,769,807,810"/>
+<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="669,397,804,438"/>
+<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="643,462,830,504"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1609,486,1812,512"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1860,486,2027,512"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="1129,477,1313,518"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47" title=" " alt="" coords="895,470,1068,526"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes." alt="" coords="889,250,1074,292"/>
+<area shape="rect" href="stabilization__indi_8c.html#a12143cafcad8c2db6f07b2cc072851d5" title=" " alt="" coords="915,550,1048,592"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="1413,330,1515,356"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="1419,380,1509,407"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="1416,279,1512,306"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1391,482,1537,508"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="1384,533,1544,574"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title=" " alt="" coords="1407,599,1521,626"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title=" " alt="" coords="1413,650,1515,676"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title=" " alt="" coords="1410,802,1518,828"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title=" " alt="" coords="1384,853,1544,894"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1609,726,1812,752"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1399,156,1529,183"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1385,98,1543,124"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257" title="Quaternion from unit vector and angle." alt="" coords="1150,309,1291,350"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7" title="Read roll/pitch command from RC as quaternion." alt="" coords="1128,580,1313,636"/>
+<area shape="rect" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a" title="Composition (multiplication) of two quaternions." alt="" coords="1142,207,1299,234"/>
+<area shape="rect" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="1135,90,1306,132"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="1395,1290,1533,1332"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="1379,1356,1549,1397"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="1385,1421,1543,1462"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="1392,970,1536,996"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="1390,1020,1538,1047"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="1373,1071,1555,1098"/>
+<area shape="rect" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="1397,1122,1531,1164"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="1367,1188,1561,1215"/>
+<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="1367,1239,1561,1266"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="1657,1298,1764,1324"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="1631,1188,1790,1215"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="1631,1239,1790,1266"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="658,987,815,1014"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1023,9 +1025,9 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_icgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_icgraph" id="ins__ekf2_8cpp_aacd6b1869f263f90a6f1fbe777a87793_icgraph">
-<area shape="rect" title=" " alt="" coords="159,5,237,32"/>
+<div class="center"><img src="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_icgraph" alt=""/></div>
+<map name="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_icgraph" id="ins__ekf2_8cpp_a4f29de55a1400c23355664fd24c7910b_icgraph">
+<area shape="rect" title=" " alt="" coords="159,5,261,32"/>
 <area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,5,111,32"/>
 </map>
 </div>
@@ -1072,11 +1074,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00791">791</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00786">786</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -1131,11 +1133,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00770">770</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00765">765</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="pprz__isa_8h_source.html#l00193">pprz_isa_density_of_pressure()</a>, <a class="el" href="pprz__isa_8h_source.html#l00146">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::qnh</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::temp</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="pprz__isa_8h_source.html#l00193">pprz_isa_density_of_pressure()</a>, <a class="el" href="pprz__isa_8h_source.html#l00146">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::qnh</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::temp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1156,70 +1158,6 @@ Variables</h2></td></tr>
 <div class="center"><img src="ins__ekf2_8cpp_a92209191a3ecc53fc4adaafd0fe82933_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a92209191a3ecc53fc4adaafd0fe82933_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a92209191a3ecc53fc4adaafd0fe82933_icgraph" id="ins__ekf2_8cpp_a92209191a3ecc53fc4adaafd0fe82933_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,232,32"/>
-<area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,5,111,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab5f6300c213088a4ea0598baafb5e736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f6300c213088a4ea0598baafb5e736">&#9670;&nbsp;</a></span>body_to_imu_cb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void body_to_imu_cb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>sender_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
-          <td class="paramname"><em>q_b2i_f</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00914">914</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00057">ekf2_t::body_to_imu</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_cgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_cgraph" id="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,133,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="181,5,339,32"/>
-</map>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_icgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_icgraph" id="ins__ekf2_8cpp_ab5f6300c213088a4ea0598baafb5e736_icgraph">
-<area shape="rect" title=" " alt="" coords="159,5,287,32"/>
 <area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,5,111,32"/>
 </map>
 </div>
@@ -1266,16 +1204,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00882">882</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00851">851</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::hacc</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::pdop</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::vacc</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::hacc</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::pdop</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::vacc</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" id="ins__ekf2_8cpp_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,225,32"/>
@@ -1285,8 +1223,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a47e1ea35fdb43af72537c6c9f38b889d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e1ea35fdb43af72537c6c9f38b889d">&#9670;&nbsp;</a></span>gyro_cb()</h2>
+<a id="ad132ffbe3cfdff1815722346bfca610b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad132ffbe3cfdff1815722346bfca610b">&#9670;&nbsp;</a></span>gyro_int_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1295,7 +1233,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void gyro_cb </td>
+          <td class="memname">static void gyro_int_cb </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>sender_id</em>, </td>
@@ -1309,8 +1247,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
-          <td class="paramname"><em>gyro</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *&#160;</td>
+          <td class="paramname"><em>delta_gyro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1325,78 +1269,78 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00802">802</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00797">797</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::accel_valid</a>, <a class="el" href="ins__ekf2_8h_source.html#l00057">ekf2_t::body_to_imu</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00047">ekf2_t::gyro</a>, <a class="el" href="ins__ekf2_8h_source.html#l00042">ekf2_t::gyro_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00041">ekf2_t::gyro_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::gyro_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00698">ins_ekf2_publish_attitude()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00046">ekf2_t::accel_valid</a>, <a class="el" href="ins__ekf2_8h_source.html#l00041">ekf2_t::delta_gyro</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8h_source.html#l00043">ekf2_t::gyro_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::gyro_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00693">ins_ekf2_publish_attitude()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00337">RATES_COPY</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" id="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,905,79,932"/>
-<area shape="rect" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix." alt="" coords="127,855,327,881"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="132,905,321,932"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="145,1007,308,1033"/>
-<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="401,687,540,713"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="395,905,546,932"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="1122,342,1282,383"/>
-<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="393,956,548,983"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="391,1007,550,1033"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="375,636,567,663"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="615,855,821,881"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="869,803,1056,829"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="638,1022,798,1063"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1104,1106,1300,1147"/>
-<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="647,1249,789,1290"/>
-<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="651,789,785,830"/>
-<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="625,957,811,998"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1591,604,1793,631"/>
-<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1841,604,2008,631"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="1110,875,1294,917"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47" title=" " alt="" coords="876,1000,1049,1056"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes." alt="" coords="870,934,1055,975"/>
-<area shape="rect" href="stabilization__indi_8c.html#a12143cafcad8c2db6f07b2cc072851d5" title=" " alt="" coords="896,1081,1029,1122"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="1395,809,1496,836"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="1400,860,1491,887"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="1397,911,1493,937"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1373,1012,1518,1039"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="1365,626,1525,667"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title=" " alt="" coords="1389,1215,1502,1241"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title=" " alt="" coords="1394,1113,1497,1140"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title=" " alt="" coords="1391,1164,1499,1191"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title=" " alt="" coords="1365,743,1525,785"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1591,1012,1793,1039"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1137,1004,1267,1031"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1123,1055,1281,1081"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="1376,225,1515,266"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="1360,342,1531,383"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="1366,407,1525,449"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="1373,473,1517,500"/>
-<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="1371,524,1519,551"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="1354,5,1537,32"/>
-<area shape="rect" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="1379,57,1512,98"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="1348,123,1543,149"/>
-<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="1349,173,1542,200"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="1639,232,1745,259"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="1613,123,1771,149"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="1613,173,1771,200"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="639,636,797,663"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="387,1164,554,1191"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="645,1315,791,1341"/>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_cgraph" alt=""/></div>
+<map name="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_cgraph" id="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,860,103,887"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="151,860,340,887"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="415,587,553,614"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="409,638,559,664"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="1135,1064,1295,1105"/>
+<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="407,886,561,912"/>
+<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="405,936,563,963"/>
+<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="388,987,580,1014"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="628,528,835,555"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="883,94,1069,120"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="651,630,811,672"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1117,712,1313,753"/>
+<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="661,769,802,810"/>
+<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="664,397,799,438"/>
+<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="638,462,825,504"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1604,486,1807,512"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1855,486,2021,512"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="1123,477,1307,518"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47" title=" " alt="" coords="889,470,1063,526"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes." alt="" coords="883,250,1069,292"/>
+<area shape="rect" href="stabilization__indi_8c.html#a12143cafcad8c2db6f07b2cc072851d5" title=" " alt="" coords="909,550,1043,592"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="1408,330,1509,356"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="1413,380,1504,407"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="1411,279,1507,306"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="1386,482,1531,508"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="1379,533,1539,574"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title=" " alt="" coords="1402,599,1515,626"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title=" " alt="" coords="1407,650,1510,676"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title=" " alt="" coords="1405,802,1513,828"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title=" " alt="" coords="1379,853,1539,894"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1604,726,1807,752"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="1393,156,1524,183"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="1379,98,1538,124"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257" title="Quaternion from unit vector and angle." alt="" coords="1145,309,1286,350"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7" title="Read roll/pitch command from RC as quaternion." alt="" coords="1123,580,1308,636"/>
+<area shape="rect" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a" title="Composition (multiplication) of two quaternions." alt="" coords="1137,207,1294,234"/>
+<area shape="rect" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="1130,90,1301,132"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="1389,1290,1528,1332"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="1373,1356,1544,1397"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="1379,1421,1538,1462"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="1387,970,1531,996"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="1385,1020,1533,1047"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="1367,1071,1550,1098"/>
+<area shape="rect" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="1392,1122,1525,1164"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="1361,1188,1556,1215"/>
+<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="1362,1239,1555,1266"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="1652,1298,1759,1324"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="1626,1188,1785,1215"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="1626,1239,1785,1266"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="653,987,810,1014"/>
 </map>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" id="ins__ekf2_8cpp_a47e1ea35fdb43af72537c6c9f38b889d_icgraph">
-<area shape="rect" title=" " alt="" coords="159,5,232,32"/>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_icgraph" alt=""/></div>
+<map name="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_icgraph" id="ins__ekf2_8cpp_ad132ffbe3cfdff1815722346bfca610b_icgraph">
+<area shape="rect" title=" " alt="" coords="159,5,256,32"/>
 <area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,5,111,32"/>
 </map>
 </div>
@@ -1419,9 +1363,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00654">654</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00649">649</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00307">ekf_params</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00060">ekf2_t::mag_fusion_type</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00305">ekf_params</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00056">ekf2_t::mag_fusion_type</a>.</p>
 
 </div>
 </div>
@@ -1441,66 +1385,66 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00466">466</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00464">464</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00828">accel_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00284">accel_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00043">ekf2_t::accel_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::accel_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00791">agl_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00282">agl_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00770">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00280">baro_ev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00914">body_to_imu_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00287">body_to_imu_ev</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00307">ekf_params</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::flow_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00058">ekf2_t::got_imu_data</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00882">gps_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00286">gps_ev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00802">gyro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00283">gyro_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00041">ekf2_t::gyro_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::gyro_valid</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00131">INS_EKF2_ACCEL_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00119">INS_EKF2_AGL_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00106">INS_EKF2_BARO_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00275">INS_EKF2_BARO_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00239">INS_EKF2_FLOW_INNOV_GATE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00227">INS_EKF2_FLOW_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00233">INS_EKF2_FLOW_NOISE_QMIN</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00209">INS_EKF2_FLOW_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00215">INS_EKF2_FLOW_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00221">INS_EKF2_FLOW_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00191">INS_EKF2_FLOW_SENSOR_DELAY</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00067">INS_EKF2_FUSION_MODE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00079">INS_EKF2_GPS_CHECK_MASK</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00143">INS_EKF2_GPS_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00269">INS_EKF2_GPS_P_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00173">INS_EKF2_GPS_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00179">INS_EKF2_GPS_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00185">INS_EKF2_GPS_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00263">INS_EKF2_GPS_V_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00125">INS_EKF2_GYRO_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00155">INS_EKF2_IMU_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00161">INS_EKF2_IMU_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00167">INS_EKF2_IMU_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00137">INS_EKF2_MAG_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00203">INS_EKF2_MAX_FLOW_RATE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00197">INS_EKF2_MIN_FLOW_QUALITY</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00149">INS_EKF2_OF_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00097">INS_EKF2_RANGE_MAIN_AGL</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00091">INS_EKF2_SONAR_MAX_RANGE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00085">INS_EKF2_SONAR_MIN_RANGE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00113">INS_EKF2_TEMPERATURE_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00073">INS_EKF2_VDIST_SENSOR_TYPE</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00056">ekf2_t::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00055">ekf2_t::ltp_stamp</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00854">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00285">mag_ev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00921">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00288">optical_flow_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::qnh</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::quat_reset_counter</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00454">send_ahrs_bias()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00417">send_filter_status()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00313">send_ins()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00370">send_ins_ekf2()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00403">send_ins_ekf2_ext()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00360">send_ins_ref()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00340">send_ins_z()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00442">send_wind_info_ret()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::temp</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00785">temperature_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00281">temperature_ev</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00293">waypoints_localize_all()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00812">accel_int_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00284">accel_int_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00046">ekf2_t::accel_valid</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00786">agl_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00282">agl_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00765">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00280">baro_ev</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00305">ekf_params</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ins__ekf2_8h_source.html#l00047">ekf2_t::flow_stamp</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::got_imu_data</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00851">gps_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00286">gps_ev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00797">gyro_int_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00283">gyro_int_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::gyro_valid</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00131">INS_EKF2_ACCEL_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00119">INS_EKF2_AGL_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00106">INS_EKF2_BARO_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00275">INS_EKF2_BARO_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00239">INS_EKF2_FLOW_INNOV_GATE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00227">INS_EKF2_FLOW_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00233">INS_EKF2_FLOW_NOISE_QMIN</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00209">INS_EKF2_FLOW_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00215">INS_EKF2_FLOW_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00221">INS_EKF2_FLOW_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00191">INS_EKF2_FLOW_SENSOR_DELAY</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00067">INS_EKF2_FUSION_MODE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00079">INS_EKF2_GPS_CHECK_MASK</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00143">INS_EKF2_GPS_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00269">INS_EKF2_GPS_P_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00173">INS_EKF2_GPS_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00179">INS_EKF2_GPS_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00185">INS_EKF2_GPS_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00263">INS_EKF2_GPS_V_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00125">INS_EKF2_GYRO_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00155">INS_EKF2_IMU_POS_X</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00161">INS_EKF2_IMU_POS_Y</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00167">INS_EKF2_IMU_POS_Z</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00137">INS_EKF2_MAG_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00203">INS_EKF2_MAX_FLOW_RATE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00197">INS_EKF2_MIN_FLOW_QUALITY</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00149">INS_EKF2_OF_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00097">INS_EKF2_RANGE_MAIN_AGL</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00091">INS_EKF2_SONAR_MAX_RANGE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00085">INS_EKF2_SONAR_MIN_RANGE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00113">INS_EKF2_TEMPERATURE_ID</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00073">INS_EKF2_VDIST_SENSOR_TYPE</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::ltp_stamp</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00827">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00285">mag_ev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00883">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00287">optical_flow_ev</a>, <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::qnh</a>, <a class="el" href="ins__ekf2_8h_source.html#l00051">ekf2_t::quat_reset_counter</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00452">send_ahrs_bias()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00415">send_filter_status()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00311">send_ins()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00368">send_ins_ekf2()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00401">send_ins_ekf2_ext()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00358">send_ins_ref()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00338">send_ins_z()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00440">send_wind_info_ret()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::temp</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00780">temperature_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00281">temperature_ev</a>, and <a class="el" href="nav_2waypoints_8c_source.html#l00293">waypoints_localize_all()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a81ce9235d9748d33355fc0018197f4c4_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_a81ce9235d9748d33355fc0018197f4c4_cgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a81ce9235d9748d33355fc0018197f4c4_cgraph" id="ins__ekf2_8cpp_a81ce9235d9748d33355fc0018197f4c4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,709,111,736"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="221,253,299,280"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title=" " alt="" coords="228,405,292,432"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="223,456,297,483"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ab5f6300c213088a4ea0598baafb5e736" title=" " alt="" coords="689,435,817,461"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="227,507,293,533"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="223,304,297,331"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="191,557,329,584"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="223,203,297,229"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f" title=" " alt="" coords="199,659,321,685"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="159,709,361,736"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769" title=" " alt="" coords="199,760,321,787"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="191,811,329,837"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="221,861,299,888"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a30d9ada33d7b018cc4b2447c4d7ba155" title=" " alt="" coords="203,912,317,939"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8" title=" " alt="" coords="189,963,331,989"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="208,1013,312,1040"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a779c8daa5c837af54a2a999a8e3cae24" title=" " alt="" coords="213,1064,307,1091"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a9c47b470f3d0e28b4119708b5b106306" title=" " alt="" coords="186,1115,334,1141"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="180,1165,340,1192"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a704d8592956cc0ab315cbe37f9967cf6" title=" " alt="" coords="197,1216,323,1243"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of global waypoints" alt="" coords="175,608,345,635"/>
-<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="418,152,601,179"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="415,253,604,280"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="428,203,591,229"/>
-<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="684,115,823,141"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="678,165,829,192"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="673,217,833,258"/>
-<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="676,283,831,309"/>
-<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="674,333,833,360"/>
-<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="657,384,849,411"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="897,5,1104,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="907,56,1094,83"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="921,158,1081,199"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1152,129,1348,170"/>
-<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="930,223,1071,265"/>
-<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="933,289,1068,330"/>
-<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="907,354,1094,395"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="922,428,1079,455"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="670,64,837,91"/>
-<area shape="rect" href="group__math__isa.html#ga32d12d97de86914bf958b090da30f6e5" title="Get the air density (rho) from a given pressure and temperature." alt="" coords="434,406,585,447"/>
-<area shape="rect" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation)." alt="" coords="437,471,581,513"/>
-<area shape="rect" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix." alt="" coords="409,304,609,331"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="949,579,1053,605"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="424,589,595,630"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1196,553,1304,580"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1197,604,1303,631"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="436,705,583,732"/>
-<area shape="rect" href="nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="440,655,579,681"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="683,621,823,648"/>
+<area shape="rect" title=" " alt="" coords="5,569,111,596"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="209,291,311,317"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title=" " alt="" coords="228,139,292,165"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="223,88,297,115"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="227,240,293,267"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="211,189,309,216"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="191,341,329,368"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="223,392,297,419"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f" title=" " alt="" coords="199,443,321,469"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="159,493,361,520"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769" title=" " alt="" coords="199,544,321,571"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="191,595,329,621"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="221,645,299,672"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a30d9ada33d7b018cc4b2447c4d7ba155" title=" " alt="" coords="203,696,317,723"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8" title=" " alt="" coords="189,747,331,773"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="208,797,312,824"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a779c8daa5c837af54a2a999a8e3cae24" title=" " alt="" coords="213,848,307,875"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a9c47b470f3d0e28b4119708b5b106306" title=" " alt="" coords="186,899,334,925"/>
+<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="180,949,340,976"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a704d8592956cc0ab315cbe37f9967cf6" title=" " alt="" coords="197,1000,323,1027"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of global waypoints" alt="" coords="175,1051,345,1077"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="409,219,599,245"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="673,181,812,208"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="667,232,818,259"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title=" " alt="" coords="663,494,823,535"/>
+<area shape="rect" href="group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int)." alt="" coords="665,560,820,587"/>
+<area shape="rect" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="663,80,822,107"/>
+<area shape="rect" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="647,131,839,157"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title=" " alt="" coords="887,5,1093,32"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC" alt="" coords="897,56,1083,83"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title=" " alt="" coords="910,107,1070,149"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title=" " alt="" coords="1141,137,1337,178"/>
+<area shape="rect" href="stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title=" " alt="" coords="919,225,1061,266"/>
+<area shape="rect" href="stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title=" " alt="" coords="923,290,1057,331"/>
+<area shape="rect" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title=" " alt="" coords="897,355,1083,397"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="921,523,1059,565"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="905,589,1075,630"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="911,654,1069,695"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="918,720,1062,747"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="916,421,1064,448"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="899,472,1081,499"/>
+<area shape="rect" href="group__math__isa.html#ga32d12d97de86914bf958b090da30f6e5" title="Get the air density (rho) from a given pressure and temperature." alt="" coords="429,118,579,159"/>
+<area shape="rect" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation)." alt="" coords="432,53,576,94"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="938,797,1042,824"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="419,334,589,375"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1185,823,1293,849"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1187,772,1292,799"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="431,1051,577,1077"/>
+<area shape="rect" href="nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="435,957,573,984"/>
+<area shape="rect" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="673,851,813,877"/>
 </map>
 </div>
 
@@ -1522,14 +1466,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00668">668</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00663">663</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00257">INS_EKF2_EVA_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00245">INS_EKF2_EVP_NOISE</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00251">INS_EKF2_EVV_NOISE</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00075">get_sys_time_usec()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00257">INS_EKF2_EVA_NOISE</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00245">INS_EKF2_EVP_NOISE</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00251">INS_EKF2_EVV_NOISE</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_ab6f0b94516904e1cd8457f4e8a6b2a5e_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_ab6f0b94516904e1cd8457f4e8a6b2a5e_cgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_ab6f0b94516904e1cd8457f4e8a6b2a5e_cgraph" id="ins__ekf2_8cpp_ab6f0b94516904e1cd8457f4e8a6b2a5e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,241,32"/>
@@ -1555,7 +1499,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00691">691</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00686">686</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
 </div>
 </div>
@@ -1585,16 +1529,16 @@ Variables</h2></td></tr>
 
 <p>Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00698">698</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00693">693</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00048">ekf2_t::accel</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="ins__ekf2_8h_source.html#l00044">ekf2_t::accel_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00050">ekf2_t::accel_valid</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ins__ekf2_8h_source.html#l00058">ekf2_t::got_imu_data</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00090">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00308">guidance_h_read_rc()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00047">ekf2_t::gyro</a>, <a class="el" href="ins__ekf2_8h_source.html#l00042">ekf2_t::gyro_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::gyro_valid</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00076">HorizontalGuidanceSetpoint::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00113">nav_heading</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::quat_reset_counter</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00106">HorizontalGuidance::rc_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00103">HorizontalGuidance::sp</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00045">stab_att_sp_euler</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00136">stabilization_attitude_enter()</a>, <a class="el" href="state_8h_source.html#l00855">stateSetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01093">stateSetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="ins__ekf2_8h_source.html#l00044">ekf2_t::accel_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00046">ekf2_t::accel_valid</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00042">ekf2_t::delta_accel</a>, <a class="el" href="ins__ekf2_8h_source.html#l00041">ekf2_t::delta_gyro</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::got_imu_data</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00090">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00308">guidance_h_read_rc()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00043">ekf2_t::gyro_dt</a>, <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::gyro_valid</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00076">HorizontalGuidanceSetpoint::heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00113">nav_heading</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="ins__ekf2_8h_source.html#l00051">ekf2_t::quat_reset_counter</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00106">HorizontalGuidance::rc_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00103">HorizontalGuidance::sp</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00045">stab_att_sp_euler</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00136">stabilization_attitude_enter()</a>, <a class="el" href="state_8h_source.html#l00855">stateSetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01093">stateSetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00828">accel_cb()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00802">gyro_cb()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00812">accel_int_cb()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00797">gyro_int_cb()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_cgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_cgraph" id="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_cgraph">
 <area shape="rect" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="5,851,195,878"/>
@@ -1649,16 +1593,16 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="507,1097,665,1123"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_icgraph" id="ins__ekf2_8cpp_ad0d967646b2cb048323e8545662428ed_icgraph">
-<area shape="rect" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="285,31,475,57"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="159,5,237,32"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="161,56,235,83"/>
+<area shape="rect" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="309,31,499,57"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="159,5,261,32"/>
+<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="161,56,259,83"/>
 <area shape="rect" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,31,111,57"/>
 </map>
 </div>
@@ -1681,9 +1625,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00659">659</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00654">654</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00307">ekf_params</a>, <a class="el" href="ins__ekf2_8h_source.html#l00061">ekf2_t::fusion_mode</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00067">INS_EKF2_FUSION_MODE</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00305">ekf_params</a>, <a class="el" href="ins__ekf2_8h_source.html#l00057">ekf2_t::fusion_mode</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00067">INS_EKF2_FUSION_MODE</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
 
 </div>
 </div>
@@ -1703,14 +1647,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00577">577</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00572">572</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="ins__ekf2_8h_source.html#l00058">ekf2_t::got_imu_data</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00056">ekf2_t::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00055">ekf2_t::ltp_stamp</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00054">nps_bypass_ins</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00247">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l01002">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00598">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00809">stateSetSpeedNed_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00293">waypoints_localize_all()</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::got_imu_data</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::ltp_stamp</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00054">nps_bypass_ins</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00247">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l01002">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00598">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00809">stateSetSpeedNed_f()</a>, <a class="el" href="nav_2waypoints_8c_source.html#l00293">waypoints_localize_all()</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00081">wgs84_ellipsoid_to_geoid_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a21a6903ad1b06c310ac73f7598d4306b_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_a21a6903ad1b06c310ac73f7598d4306b_cgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a21a6903ad1b06c310ac73f7598d4306b_cgraph" id="ins__ekf2_8cpp_a21a6903ad1b06c310ac73f7598d4306b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,294,135,320"/>
@@ -1784,30 +1728,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00854">854</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00827">827</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8h_source.html#l00057">ekf2_t::body_to_imu</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__ekf2_8h_source.html#l00058">ekf2_t::got_imu_data</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="ins__ekf2_8h_source.html#l00054">ekf2_t::got_imu_data</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_cgraph.png" border="0" usemap="#ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_cgraph" alt=""/></div>
-<map name="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_cgraph" id="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,79,57"/>
-<area shape="rect" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix." alt="" coords="127,5,309,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="137,56,299,83"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title=" " alt="" coords="357,56,524,83"/>
-<area shape="rect" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title=" " alt="" coords="572,56,717,83"/>
-</map>
-</div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_icgraph" id="ins__ekf2_8cpp_a49cc1e545848b85016af530049991c02_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,232,32"/>
@@ -1887,16 +1817,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00921">921</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00883">883</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00045">ekf2_t::flow_stamp</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00047">ekf2_t::flow_stamp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a3ee22d5c97c601731a135c1104958a4f_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a3ee22d5c97c601731a135c1104958a4f_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a3ee22d5c97c601731a135c1104958a4f_icgraph" id="ins__ekf2_8cpp_a3ee22d5c97c601731a135c1104958a4f_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,281,32"/>
@@ -1940,16 +1870,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00454">454</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00452">452</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_afcaf83e494c099d08de45255037c3769_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_afcaf83e494c099d08de45255037c3769_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_afcaf83e494c099d08de45255037c3769_icgraph" id="ins__ekf2_8cpp_afcaf83e494c099d08de45255037c3769_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,281,32"/>
@@ -1993,16 +1923,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00417">417</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00415">415</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs_8h_source.html#l00044">AHRS_COMP_ID_EKF2</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="ahrs_8h_source.html#l00044">AHRS_COMP_ID_EKF2</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a85585514fc863f0407a3f5e85ad9d398_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a85585514fc863f0407a3f5e85ad9d398_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a85585514fc863f0407a3f5e85ad9d398_icgraph" id="ins__ekf2_8cpp_a85585514fc863f0407a3f5e85ad9d398_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,296,32"/>
@@ -2046,16 +1976,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00313">313</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00311">311</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a2ba079af519dd03472aa3e6019b3a91f_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a2ba079af519dd03472aa3e6019b3a91f_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a2ba079af519dd03472aa3e6019b3a91f_icgraph" id="ins__ekf2_8cpp_a2ba079af519dd03472aa3e6019b3a91f_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,237,32"/>
@@ -2099,16 +2029,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00370">370</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00368">368</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a30d9ada33d7b018cc4b2447c4d7ba155_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a30d9ada33d7b018cc4b2447c4d7ba155_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a30d9ada33d7b018cc4b2447c4d7ba155_icgraph" id="ins__ekf2_8cpp_a30d9ada33d7b018cc4b2447c4d7ba155_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,273,32"/>
@@ -2152,16 +2082,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00403">403</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00401">401</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a35fe77bf44c50dfd7f7d4e332fc525a8_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a35fe77bf44c50dfd7f7d4e332fc525a8_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a35fe77bf44c50dfd7f7d4e332fc525a8_icgraph" id="ins__ekf2_8cpp_a35fe77bf44c50dfd7f7d4e332fc525a8_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,301,32"/>
@@ -2205,16 +2135,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00360">360</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00358">358</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::ecef</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00056">ekf2_t::ltp_def</a>, <a class="el" href="ins__ekf2_8h_source.html#l00055">ekf2_t::ltp_stamp</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::ecef</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__ekf2_8h_source.html#l00053">ekf2_t::ltp_def</a>, <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::ltp_stamp</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a6f4ee4900038e15bf441a679acfa913a_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a6f4ee4900038e15bf441a679acfa913a_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a6f4ee4900038e15bf441a679acfa913a_icgraph" id="ins__ekf2_8cpp_a6f4ee4900038e15bf441a679acfa913a_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,263,32"/>
@@ -2258,16 +2188,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00340">340</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00338">338</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00198">pos_z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__int_8h_source.html#l00221">ACCEL_BFP_OF_REAL</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_BFP_OF_REAL</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00198">pos_z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00219">SPEED_BFP_OF_REAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a779c8daa5c837af54a2a999a8e3cae24_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a779c8daa5c837af54a2a999a8e3cae24_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a779c8daa5c837af54a2a999a8e3cae24_icgraph" id="ins__ekf2_8cpp_a779c8daa5c837af54a2a999a8e3cae24_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,252,32"/>
@@ -2311,16 +2241,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00442">442</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00440">440</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00304">ekf</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a9c47b470f3d0e28b4119708b5b106306_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a9c47b470f3d0e28b4119708b5b106306_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a9c47b470f3d0e28b4119708b5b106306_icgraph" id="ins__ekf2_8cpp_a9c47b470f3d0e28b4119708b5b106306_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,307,32"/>
@@ -2364,16 +2294,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00785">785</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00780">780</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00308">ekf2</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00052">ekf2_t::temp</a>.</p>
+<p class="reference">References <a class="el" href="ins__ekf2_8cpp_source.html#l00306">ekf2</a>, and <a class="el" href="ins__ekf2_8h_source.html#l00049">ekf2_t::temp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__ekf2_8cpp_a704d8592956cc0ab315cbe37f9967cf6_icgraph.png" border="0" usemap="#ins__ekf2_8cpp_a704d8592956cc0ab315cbe37f9967cf6_icgraph" alt=""/></div>
 <map name="ins__ekf2_8cpp_a704d8592956cc0ab315cbe37f9967cf6_icgraph" id="ins__ekf2_8cpp_a704d8592956cc0ab315cbe37f9967cf6_icgraph">
 <area shape="rect" title=" " alt="" coords="159,5,284,32"/>
@@ -2384,8 +2314,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a469c2ebc0df160a3ae46ebbbb2aff826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469c2ebc0df160a3ae46ebbbb2aff826">&#9670;&nbsp;</a></span>accel_ev</h2>
+<a id="ad84c4e5df160b1e170812a80cb61e9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84c4e5df160b1e170812a80cb61e9f9">&#9670;&nbsp;</a></span>accel_int_ev</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2394,7 +2324,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> accel_ev</td>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> accel_int_ev</td>
         </tr>
       </table>
   </td>
@@ -2406,7 +2336,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00284">284</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2432,7 +2362,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00282">282</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2458,33 +2388,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00280">280</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
-
-</div>
-</div>
-<a id="a1f7208107f1a5edfea2b32e570ad602d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f7208107f1a5edfea2b32e570ad602d">&#9670;&nbsp;</a></span>body_to_imu_ev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> body_to_imu_ev</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00287">287</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2510,9 +2414,9 @@ Variables</h2></td></tr>
 
 <p>EKF class itself. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00306">306</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00304">304</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00791">agl_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00770">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00882">gps_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00668">ins_ekf2_parse_EXTERNAL_POSE()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00698">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00577">ins_ekf2_update()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00854">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00921">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00454">send_ahrs_bias()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00417">send_filter_status()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00313">send_ins()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00370">send_ins_ekf2()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00403">send_ins_ekf2_ext()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00340">send_ins_z()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00442">send_wind_info_ret()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00786">agl_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00765">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00851">gps_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00663">ins_ekf2_parse_EXTERNAL_POSE()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00693">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00572">ins_ekf2_update()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00827">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00883">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00452">send_ahrs_bias()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00415">send_filter_status()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00311">send_ins()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00368">send_ins_ekf2()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00401">send_ins_ekf2_ext()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00338">send_ins_z()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00440">send_wind_info_ret()</a>.</p>
 
 </div>
 </div>
@@ -2530,9 +2434,9 @@ Variables</h2></td></tr>
 
 <p>Local EKF2 status structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00308">308</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00306">306</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00828">accel_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00770">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00914">body_to_imu_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00802">gyro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00654">ins_ekf2_change_param()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00698">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00659">ins_ekf2_remove_gps()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00577">ins_ekf2_update()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00854">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00921">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00360">send_ins_ref()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00785">temperature_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00812">accel_int_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00765">baro_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00797">gyro_int_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00649">ins_ekf2_change_param()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00693">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00654">ins_ekf2_remove_gps()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00572">ins_ekf2_update()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00827">mag_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00883">optical_flow_cb()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00358">send_ins_ref()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00780">temperature_cb()</a>.</p>
 
 </div>
 </div>
@@ -2558,9 +2462,9 @@ Variables</h2></td></tr>
 
 <p>The EKF parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00307">307</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00305">305</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00654">ins_ekf2_change_param()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00659">ins_ekf2_remove_gps()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00649">ins_ekf2_change_param()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>, and <a class="el" href="ins__ekf2_8cpp_source.html#l00654">ins_ekf2_remove_gps()</a>.</p>
 
 </div>
 </div>
@@ -2586,12 +2490,12 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00286">286</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
-<a id="a6aa911576e04d8ae0519d83ae6722546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aa911576e04d8ae0519d83ae6722546">&#9670;&nbsp;</a></span>gyro_ev</h2>
+<a id="a596ba14822e0851b21aff8465a9c32f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596ba14822e0851b21aff8465a9c32f6">&#9670;&nbsp;</a></span>gyro_int_ev</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2600,7 +2504,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> gyro_ev</td>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> gyro_int_ev</td>
         </tr>
       </table>
   </td>
@@ -2612,7 +2516,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00283">283</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2638,7 +2542,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00285">285</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2662,9 +2566,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00288">288</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00287">287</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2690,7 +2594,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins__ekf2_8cpp_source.html#l00281">281</a> of file <a class="el" href="ins__ekf2_8cpp_source.html">ins_ekf2.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00466">ins_ekf2_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ekf2_8cpp_source.html#l00464">ins_ekf2_init()</a>.</p>
 
 </div>
 </div>
@@ -2700,7 +2604,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__ekf2_8cpp.html">ins_ekf2.cpp</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

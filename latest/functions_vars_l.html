@@ -161,6 +161,10 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 : <a class="el" href="dc__ctrl__parrot__mykonos_8h.html#ab895a1c71cbc7cf0ed80f4f2d943df9a">Dc_Ctrl_Parrot_Mykonos</a>
 , <a class="el" href="hackhd_8h.html#aff5cce8be12d8aa805220b6c744887da">HackHD</a>
 </li>
+<li>last_stamp
+: <a class="el" href="imu_8h.html#a30bce24a5723d6d6f09bb1c8b71ff5a8">imu_accel_t</a>
+, <a class="el" href="imu_8h.html#a009f4bed304da8f96ca2b3bd2396d2eb">imu_gyro_t</a>
+</li>
 <li>last_theta
 : <a class="el" href="dcf_8h.html#a0397322d90e4e0358b7fd81c0726363c">dcf_tab</a>
 </li>
@@ -462,26 +466,20 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <li>ltp_stamp
 : <a class="el" href="ins__ekf2_8h.html#adbb33bb35b550a6564495cba05eb26cb">ekf2_t</a>
 </li>
-<li>ltp_to_body
-: <a class="el" href="ahrs__float__cmpl_8h.html#ad341c07168298b0a8a5370d901415bf6">AhrsFloatCmpl</a>
+<li>ltp_to_body_euler
+: <a class="el" href="ahrs__float__dcm_8h.html#a9e675ac200130d5d78546711dcb887a3">AhrsFloatDCM</a>
 </li>
 <li>ltp_to_body_eulers
 : <a class="el" href="nps__fdm_8h.html#a90f212703cedcc12128be11f079ea75f">NpsFdm</a>
 </li>
 <li>ltp_to_body_quat
-: <a class="el" href="ahrs__float__mlkf_8h.html#acd8a59685835f428a506aa3c0510eb34">AhrsMlkf</a>
+: <a class="el" href="ahrs__float__cmpl_8h.html#ae8c07baff1f7c9c9310272023edb61d5">AhrsFloatCmpl</a>
+, <a class="el" href="ahrs__int__cmpl__quat_8h.html#aa00fb4c5a735c83fdfbef5288a9f7f6f">AhrsIntCmplQuat</a>
+, <a class="el" href="ahrs__float__mlkf_8h.html#acd8a59685835f428a506aa3c0510eb34">AhrsMlkf</a>
 , <a class="el" href="nps__fdm_8h.html#a9fe9755d7776441eb093cf9e53acf61e">NpsFdm</a>
 </li>
-<li>ltp_to_imu_euler
-: <a class="el" href="ahrs__float__dcm_8h.html#a0cf913a01c65293bddadb5a26d4480e7">AhrsFloatDCM</a>
-</li>
-<li>ltp_to_imu_quat
-: <a class="el" href="ahrs__float__cmpl_8h.html#aa55b72aff2e4f10587e7bbd90da4b418">AhrsFloatCmpl</a>
-, <a class="el" href="ahrs__int__cmpl__quat_8h.html#aab69fef64028a7a3f3ae3249f644b46f">AhrsIntCmplQuat</a>
-, <a class="el" href="ahrs__float__mlkf_8h.html#adcf3012d83dd9bb018d8c9ac307c77a5">AhrsMlkf</a>
-</li>
-<li>ltp_to_imu_rmat
-: <a class="el" href="ahrs__float__cmpl_8h.html#a1c60d5daaefd2376ad97c5fe072ce878">AhrsFloatCmpl</a>
+<li>ltp_to_body_rmat
+: <a class="el" href="ahrs__float__cmpl_8h.html#a9fe5e6602373cf15277b998f08526e76">AhrsFloatCmpl</a>
 </li>
 <li>ltp_vel_norm
 : <a class="el" href="ahrs__float__cmpl_8h.html#aa634b9c59a692e01a3b2b5d3d98c26ac">AhrsFloatCmpl</a>
@@ -569,7 +567,7 @@ $(document).ready(function(){initNavTree('functions_vars_l.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:24 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

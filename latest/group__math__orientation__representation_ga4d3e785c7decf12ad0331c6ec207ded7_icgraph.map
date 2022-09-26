@@ -1,31 +1,52 @@
 <map id="orientationGetRMat_i" name="orientationGetRMat_i">
-<area shape="rect" id="node1" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="1183,408,1344,435"/>
-<area shape="rect" id="node2" href="$ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="757,12,836,39"/>
-<area shape="rect" id="node4" href="$ahrs__int__cmpl__quat_8h.html#a217936945482b6839441d4616eab56b7" title=" " alt="" coords="952,434,1121,460"/>
-<area shape="rect" id="node7" href="$imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components." alt="" coords="967,535,1106,562"/>
-<area shape="rect" id="node8" href="$ins__int_8h.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="493,114,631,140"/>
-<area shape="rect" id="node11" href="$ins__skeleton_8h.html#af8f4d5bc7fb727602a67c65891f0cdd3" title=" " alt="" coords="711,383,882,410"/>
-<area shape="rect" id="node14" href="$mag__pitot__uart_8c.html#a507efea07b8c1b9e6094e6895f931b87" title=" " alt="" coords="953,611,1120,638"/>
-<area shape="rect" id="node16" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="939,484,1134,511"/>
-<area shape="rect" id="node20" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="939,240,1135,267"/>
-<area shape="rect" id="node3" href="$ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="497,12,627,39"/>
-<area shape="rect" id="node5" href="$ahrs__int__cmpl__quat__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="757,434,836,460"/>
-<area shape="rect" id="node6" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title=" " alt="" coords="495,510,629,536"/>
-<area shape="rect" id="node9" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="289,114,368,140"/>
-<area shape="rect" id="node10" href="$ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="50,114,143,140"/>
-<area shape="rect" id="node12" href="$ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="523,383,601,410"/>
-<area shape="rect" id="node13" href="$ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title=" " alt="" coords="236,383,421,410"/>
-<area shape="rect" id="node15" href="$mag__pitot__uart_8h.html#aac788d30836b603e187ffb4f8fdcf1c6" title=" " alt="" coords="731,636,863,663"/>
-<area shape="rect" id="node17" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="752,484,841,511"/>
-<area shape="rect" id="node18" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="760,535,833,562"/>
-<area shape="rect" id="node19" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="760,586,833,612"/>
-<area shape="rect" id="node21" href="$cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title=" " alt="" coords="717,215,877,242"/>
-<area shape="rect" id="node24" href="$rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="725,317,869,358"/>
-<area shape="rect" id="node28" href="$hf__float_8h.html#a9bdbdd8c70af4499734f76ebffbebd69" title=" " alt="" coords="741,164,853,191"/>
-<area shape="rect" id="node29" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="703,266,891,292"/>
-<area shape="rect" id="node22" href="$cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b" title=" " alt="" coords="478,190,646,216"/>
-<area shape="rect" id="node23" href="$cv__georeference_8h.html#a913d1504b4e33a803c6f5ab06721fd6b" title=" " alt="" coords="494,240,630,267"/>
-<area shape="rect" id="node25" href="$rotorcraft_2guidance_2guidance__v_8h.html#a0f2c0608e9949e1d68952c3491a30a83" title=" " alt="" coords="469,324,655,351"/>
-<area shape="rect" id="node26" href="$rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title=" " alt="" coords="267,324,391,351"/>
-<area shape="rect" id="node27" href="$rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,324,188,351"/>
+<area shape="rect" id="node1" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="903,613,1064,640"/>
+<area shape="rect" id="node2" href="$imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components." alt="" coords="687,48,826,75"/>
+<area shape="rect" id="node3" href="$imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="719,99,794,125"/>
+<area shape="rect" id="node4" href="$imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e" title="Set the body to IMU rotation in eulers This will update all the sensor values." alt="" coords="674,150,839,191"/>
+<area shape="rect" id="node9" href="$imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="669,588,844,615"/>
+<area shape="rect" id="node31" href="$imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="671,639,842,665"/>
+<area shape="rect" id="node32" href="$imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="671,993,842,1020"/>
+<area shape="rect" id="node34" href="$mag__pitot__uart_8c.html#a507efea07b8c1b9e6094e6895f931b87" title=" " alt="" coords="673,1083,840,1109"/>
+<area shape="rect" id="node36" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="659,1313,855,1340"/>
+<area shape="rect" id="node5" href="$imu_8h.html#a931916ce562dfa28e02e0a6001dddc43" title=" " alt="" coords="416,107,611,133"/>
+<area shape="rect" id="node6" href="$imu_8h.html#ac50fba336ca2c337f240bab0db44f64e" title=" " alt="" coords="430,157,597,184"/>
+<area shape="rect" id="node7" href="$imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e" title=" " alt="" coords="430,5,597,32"/>
+<area shape="rect" id="node8" href="$imu_8h.html#a3e25b56c5719a23e494568696083459e" title=" " alt="" coords="421,56,605,83"/>
+<area shape="rect" id="node10" href="$imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="448,512,579,539"/>
+<area shape="rect" id="node11" href="$imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="446,563,581,589"/>
+<area shape="rect" id="node12" href="$imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="437,613,589,640"/>
+<area shape="rect" id="node13" href="$imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="450,664,577,691"/>
+<area shape="rect" id="node14" href="$imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="452,715,575,741"/>
+<area shape="rect" id="node15" href="$imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="448,765,579,792"/>
+<area shape="rect" id="node16" href="$imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="457,816,570,843"/>
+<area shape="rect" id="node17" href="$imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="455,867,571,893"/>
+<area shape="rect" id="node18" href="$imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="442,917,585,944"/>
+<area shape="rect" id="node19" href="$imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="440,208,587,235"/>
+<area shape="rect" id="node20" href="$imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="445,259,582,285"/>
+<area shape="rect" id="node21" href="$imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="445,309,582,336"/>
+<area shape="rect" id="node22" href="$imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="461,1019,566,1045"/>
+<area shape="rect" id="node23" href="$imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="460,360,567,387"/>
+<area shape="rect" id="node24" href="$imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="447,411,579,437"/>
+<area shape="rect" id="node25" href="$invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="427,461,600,488"/>
+<area shape="rect" id="node28" href="$navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="462,968,565,995"/>
+<area shape="rect" id="node26" href="$invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="201,461,349,488"/>
+<area shape="rect" id="node27" href="$imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="5,461,135,488"/>
+<area shape="rect" id="node29" href="$imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="205,943,345,969"/>
+<area shape="rect" id="node30" href="$navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="212,993,339,1020"/>
+<area shape="rect" id="node33" href="$mag__ist8310_8h.html#af1ab1d4f6c31f66cf8343af4e33702a6" title=" " alt="" coords="418,1069,609,1096"/>
+<area shape="rect" id="node35" href="$mag__pitot__uart_8h.html#aac788d30836b603e187ffb4f8fdcf1c6" title=" " alt="" coords="447,1120,579,1147"/>
+<area shape="rect" id="node37" href="$ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="474,1491,553,1517"/>
+<area shape="rect" id="node39" href="$cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title=" " alt="" coords="433,1171,593,1197"/>
+<area shape="rect" id="node42" href="$rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="441,1222,585,1263"/>
+<area shape="rect" id="node45" href="$hf__float_8h.html#a9bdbdd8c70af4499734f76ebffbebd69" title=" " alt="" coords="457,1339,569,1365"/>
+<area shape="rect" id="node46" href="$ins__int_8h.html#a51c0c3198d953f37ad8340875e9f0c29" title=" " alt="" coords="206,1313,345,1340"/>
+<area shape="rect" id="node48" href="$ins__skeleton_8h.html#af8f4d5bc7fb727602a67c65891f0cdd3" title=" " alt="" coords="428,1389,599,1416"/>
+<area shape="rect" id="node50" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="419,1440,607,1467"/>
+<area shape="rect" id="node38" href="$ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title=" " alt="" coords="211,1491,340,1517"/>
+<area shape="rect" id="node40" href="$cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b" title=" " alt="" coords="191,1175,359,1201"/>
+<area shape="rect" id="node41" href="$cv__georeference_8h.html#a913d1504b4e33a803c6f5ab06721fd6b" title=" " alt="" coords="207,1124,343,1151"/>
+<area shape="rect" id="node43" href="$rotorcraft_2guidance_2guidance__v_8h.html#a0f2c0608e9949e1d68952c3491a30a83" title=" " alt="" coords="183,1229,368,1256"/>
+<area shape="rect" id="node44" href="$rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title=" " alt="" coords="8,1229,132,1256"/>
+<area shape="rect" id="node47" href="$ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="31,1313,109,1340"/>
+<area shape="rect" id="node49" href="$ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="236,1389,315,1416"/>
 </map>

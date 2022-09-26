@@ -139,6 +139,11 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>calibrate_zero
 : <a class="el" href="dragspeed_8h.html#a9782a41943698bdf02e39ed88ac47483">dragspeed_t</a>
 </li>
+<li>calibrated
+: <a class="el" href="imu_8h.html#a574e4bce16579490161479d0d2f44458">imu_accel_t</a>
+, <a class="el" href="imu_8h.html#aca02598e78983f91cb7658fca6dcec0d">imu_gyro_t</a>
+, <a class="el" href="imu_8h.html#a0b0df04048e552a2193a356c42cb2afb">imu_mag_t</a>
+</li>
 <li>callback
 : <a class="el" href="structmavlink__msg__req.html#a3c6c47d6984e480bcc081421aafcadbf">mavlink_msg_req</a>
 </li>
@@ -692,7 +697,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="l3gd20__spi_8h.html#aa50b7c629972b0971d6b4096fdac442c">L3gd20_Spi</a>
 , <a class="el" href="lis302dl__spi_8h.html#aa81037d166efd26a319348f8f41f669c">Lis302dl_Spi</a>
 , <a class="el" href="lps25h__i2c_8h.html#ae2454aba91551b505e34f870253eaa25">Lps25h_I2c</a>
-, <a class="el" href="lsm303dlhc__i2c_8h.html#ac296918c888b9dda30c107f91b252e24">Lsm303dlhc_i2c</a>
+, <a class="el" href="lsm303dlhc__i2c_8h.html#a55ab20b6cbd7837c341076ea14183e53">Lsm303dlhc_i2c</a>
 , <a class="el" href="lsm6ds33__i2c_8h.html#a5ee1aaf09889205b87a09afc46e5c397">Lsm6_I2c</a>
 , <a class="el" href="mpu60x0__i2c_8h.html#ac45f59044e30e1a4ee17083ba692fba0">Mpu60x0_I2c</a>
 , <a class="el" href="mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a">Mpu60x0_Spi</a>
@@ -709,6 +714,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 </li>
 <li>config_idx
 : <a class="el" href="actuators__esc32_8h.html#a0179feb46f2cb87ece5ab4e7a6f6a6ec">ESC32</a>
+, <a class="el" href="invensense2_8h.html#a444e4f85367d78e823c900e7fd337e8f">invensense2_t</a>
 </li>
 <li>config_reg
 : <a class="el" href="gpio__ext__pca95xx_8c.html#a65886c4a3328f20592ec63fdb5891b35">gpio_ext_pca95xx_impl_t</a>
@@ -928,6 +934,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 , <a class="el" href="actuators__md25_8h.html#a6ab684f2d9652da209fd04e46bede551">ActuatorsMD25</a>
 , <a class="el" href="electrical_8h.html#a66c55cf656b8005e05d38b78e8a88065">Electrical</a>
 , <a class="el" href="hott__eam_8h.html#a7e3515754ef9f0d8277d6e0d1d6a7fb0">HOTT_EAM_MSG</a>
+, <a class="el" href="imu_8h.html#a4743f502dc4b207e85b5ac656ccab96e">imu_calib_t</a>
 , <a class="el" href="cloud__sensor_8c.html#a2dea5bb127fa1047530079aebd249a31">MedianFilter</a>
 , <a class="el" href="ctrl__windtunnel_8h.html#ad88051419f969ddeb9b3a9dfb010128e">min_max_ctrl_t</a>
 </li>
@@ -957,6 +964,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 </li>
 <li>current_pressure
 : <a class="el" href="meteo__stick_8h.html#a414f5a2e36ce1e9a52ba3ae913926852">MeteoStick</a>
+</li>
+<li>current_scale
+: <a class="el" href="imu_8h.html#a17e36f1f2f2e9c03de668e0429f0d517">imu_mag_t</a>
 </li>
 <li>current_temperature
 : <a class="el" href="meteo__stick_8h.html#a84b90fb9f263e982669a1320d7777b87">MeteoStick</a>
@@ -1007,7 +1017,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:24 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

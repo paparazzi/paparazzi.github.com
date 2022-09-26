@@ -6,8 +6,6 @@ var ahrs__float__mlkf_8c =
     [ "ahrs_mlkf_align", "ahrs__float__mlkf_8c.html#a65cd8d47048c1cdc4aced2e5a4ce79e2", null ],
     [ "ahrs_mlkf_init", "ahrs__float__mlkf_8c.html#a507028d1107469dfa4a27642ddc7a2c0", null ],
     [ "ahrs_mlkf_propagate", "ahrs__float__mlkf_8c.html#aad9bedf36772800071affa5049921882", null ],
-    [ "ahrs_mlkf_set_body_to_imu", "ahrs__float__mlkf_8c.html#a91ca1fddae202f8c91628a150ec45191", null ],
-    [ "ahrs_mlkf_set_body_to_imu_quat", "ahrs__float__mlkf_8c.html#a7141f7d6d16d040b38e15c0f3f3fbe47", null ],
     [ "ahrs_mlkf_update_accel", "ahrs__float__mlkf_8c.html#a49d6b43615e971ee5f098c86c2cf0edb", null ],
     [ "ahrs_mlkf_update_mag", "ahrs__float__mlkf_8c.html#a00e729bc2030aaee57ec7be58f58f569", null ],
     [ "ahrs_mlkf_update_mag_2d", "ahrs__float__mlkf_8c.html#ab8a1a207877996d1ef506ad18510795e", null ],

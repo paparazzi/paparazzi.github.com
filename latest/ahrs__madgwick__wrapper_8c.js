@@ -7,7 +7,6 @@ var ahrs__madgwick__wrapper_8c =
     [ "ahrs_madgwick_enable_output", "ahrs__madgwick__wrapper_8c.html#aa04b7bbfc185c404c83818e2933d386c", null ],
     [ "ahrs_madgwick_register", "ahrs__madgwick__wrapper_8c.html#aba61b0738249ab4a910d0b8b9c56a897", null ],
     [ "aligner_cb", "ahrs__madgwick__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],
-    [ "body_to_imu_cb", "ahrs__madgwick__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736", null ],
     [ "compute_body_orientation_and_rates", "ahrs__madgwick__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d", null ],
     [ "gyro_cb", "ahrs__madgwick__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
     [ "send_att", "ahrs__madgwick__wrapper_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d", null ],
@@ -17,6 +16,5 @@ var ahrs__madgwick__wrapper_8c =
     [ "ahrs_madgwick_last_stamp", "ahrs__madgwick__wrapper_8c.html#a608a8c69ce6efca7b15740d2731bb49c", null ],
     [ "ahrs_madgwick_output_enabled", "ahrs__madgwick__wrapper_8c.html#aeb7807d44f4cb065647c7208ea2fa5f0", null ],
     [ "aligner_ev", "ahrs__madgwick__wrapper_8c.html#a77f52633ab63c8dbae84f2752938576f", null ],
-    [ "body_to_imu_ev", "ahrs__madgwick__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d", null ],
     [ "gyro_ev", "ahrs__madgwick__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546", null ]
 ];

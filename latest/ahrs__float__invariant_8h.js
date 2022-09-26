@@ -54,7 +54,6 @@ var ahrs__float__invariant_8h =
       [ "sh", "ins__float__invariant_8h.html#aebf8b94da13ca25bf9f269516020922f", null ]
     ] ],
     [ "AhrsFloatInv", "ahrs__float__invariant_8h.html#structAhrsFloatInv", [
-      [ "body_to_imu", "ahrs__float__invariant_8h.html#a5adc5983cfe70dcd5f5f1b14380af0e1", null ],
       [ "cmd", "ahrs__float__invariant_8h.html#a4898001db3e42ffbb0e854950b0a0b1d", null ],
       [ "corr", "ahrs__float__invariant_8h.html#aae2845e0894d884cf6e7042143f04de6", null ],
       [ "gains", "ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07", null ],
@@ -67,7 +66,6 @@ var ahrs__float__invariant_8h =
     [ "INV_COMMAND_DIM", "ahrs__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4", null ],
     [ "INV_MEASURE_DIM", "ahrs__float__invariant_8h.html#a31154c830fe4c8729366f9c9606fe775", null ],
     [ "INV_STATE_DIM", "ahrs__float__invariant_8h.html#a1381bfad9d32941968667b05c9f0e620", null ],
-    [ "ahrs_float_inv_set_body_to_imu_quat", "ahrs__float__invariant_8h.html#a5d42aa512bbdfec115ec173eec6de40d", null ],
     [ "ahrs_float_invariant_align", "ahrs__float__invariant_8h.html#a4111f176cb3e28593c2ff388169a86f9", null ],
     [ "ahrs_float_invariant_init", "ahrs__float__invariant_8h.html#ab5d132b80575171fde6e0cbcfbba025a", null ],
     [ "ahrs_float_invariant_propagate", "ahrs__float__invariant_8h.html#ace7071aaa0f0096495824e48e2e240ff", null ],

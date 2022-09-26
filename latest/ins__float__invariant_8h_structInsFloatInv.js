@@ -1,6 +1,5 @@
 var ins__float__invariant_8h_structInsFloatInv =
 [
-    [ "body_to_imu", "ins__float__invariant_8h.html#a946847c4b6563308ed9b8bf2c1732919", null ],
     [ "cmd", "ins__float__invariant_8h.html#a848b40a3fbd82793869951ac361caf9b", null ],
     [ "corr", "ins__float__invariant_8h.html#ae446351d97f4432e54c07422b8349e44", null ],
     [ "gains", "ins__float__invariant_8h.html#a4d4ffb3237722e8857fa3ef83fc81816", null ],

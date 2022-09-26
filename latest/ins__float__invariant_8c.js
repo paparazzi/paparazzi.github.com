@@ -19,7 +19,6 @@ var ins__float__invariant_8c =
     [ "error_output", "ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0", null ],
     [ "float_quat_vmul_right", "ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf", null ],
     [ "init_invariant_state", "ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5", null ],
-    [ "ins_float_inv_set_body_to_imu_quat", "ins__float__invariant_8c.html#ad770f4835ea32cfbb8c9ae96100a05e2", null ],
     [ "ins_float_invariant_align", "ins__float__invariant_8c.html#a20f38b74cafe0e2f82412fe7a66dc806", null ],
     [ "ins_float_invariant_init", "ins__float__invariant_8c.html#a337aa9b464c923af97d19ec0bfdb6f02", null ],
     [ "ins_float_invariant_propagate", "ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f", null ],

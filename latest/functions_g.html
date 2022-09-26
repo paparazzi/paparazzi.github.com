@@ -313,8 +313,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="avi__isp__gamma__corrector_8h.html#a812b2ee9ce336cdcae89698a2a242c45">avi_isp_gamma_corrector_gu_lut_regs</a>
 </li>
 <li>gyro
-: <a class="el" href="ins__ekf2_8h.html#a8c8033493c788fb30c4c0944d6fa2327">ekf2_t</a>
-, <a class="el" href="imu_8h.html#a556257d57db669a3e42ccc6c77fff286">Imu</a>
+: <a class="el" href="imu__nps_8h.html#aa6911037be0f5b5944823c30aa676784">ImuNps</a>
 , <a class="el" href="nps__sensors_8h.html#a929f8abd6a1e3687face120f264446b0">NpsSensors</a>
 , <a class="el" href="vn200__serial_8h.html#a26d59543531b155dda794d0ccb5acb62">VNData</a>
 , <a class="el" href="xsens700_8h.html#ad419068bd3332868a11887b7890ecf98">Xsens</a>
@@ -336,6 +335,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gyro_dcutoff
 : <a class="el" href="filter__1euro__imu_8h.html#a0dce6b8fbb294468232f897383b95c5b">Filter1eImu</a>
 </li>
+<li>gyro_dlpf
+: <a class="el" href="invensense2_8h.html#a4b40929fff187a69640274cbc952876d">invensense2_t</a>
+</li>
 <li>gyro_dt
 : <a class="el" href="ins__ekf2_8h.html#a73cbc54c8dfa664f06a3c9ba7cdfd2c1">ekf2_t</a>
 </li>
@@ -350,9 +352,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gyro_mincutoff
 : <a class="el" href="filter__1euro__imu_8h.html#a9e931deb6def85d44bef3d68dff586d8">Filter1eImu</a>
 </li>
-<li>gyro_neutral
-: <a class="el" href="imu_8h.html#aa15ae274818b1d781a10f3c3de482900">Imu</a>
-</li>
 <li>gyro_odr
 : <a class="el" href="bmi088_8h.html#a4e9e0ccf42edbeb4479e5797b0b0b5cd">Bmi088Config</a>
 </li>
@@ -360,9 +359,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="high__speed__logger__spi__link_8h.html#ab3eb8c5c216273a432919dab1ced5013">high_speed_logger_spi_link_data</a>
 , <a class="el" href="logger__uart_8h.html#a59e93ba3eba882855736b9d81af7749e">logger_uart_data_struct</a>
 , <a class="el" href="direct__memory__logger_8c.html#ace66778c8e567838ac2bb45c95e30020">LogStruct</a>
-</li>
-<li>gyro_prev
-: <a class="el" href="imu_8h.html#a7ac65ce9270568f68550482ef718678c">Imu</a>
 </li>
 <li>gyro_q
 : <a class="el" href="high__speed__logger__spi__link_8h.html#a6692a22871d6c0a007c9505bacc6fe93">high_speed_logger_spi_link_data</a>
@@ -376,12 +372,10 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>gyro_range
 : <a class="el" href="bmi088_8h.html#adc096abd2a7bc8e2c9d1c2cd2716effd">Bmi088Config</a>
+, <a class="el" href="invensense2_8h.html#afc8e0743f3665e89e796ac06ad641507">invensense2_t</a>
 , <a class="el" href="mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce">Mpu60x0Config</a>
 , <a class="el" href="mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d">Mpu9250Config</a>
 , <a class="el" href="px4flow__i2c_8h.html#ae0634b64c909c20edb3e3991f749eaea">px4flow_i2c_frame</a>
-</li>
-<li>gyro_stamp
-: <a class="el" href="ins__ekf2_8h.html#ac601869259cfdb22e9698f8d5a5291eb">ekf2_t</a>
 </li>
 <li>gyro_temperature
 : <a class="el" href="px4flow__i2c_8h.html#a11332857ea1e6affef42b7f128198452">px4flow_i2c_integral_frame</a>
@@ -389,12 +383,8 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gyro_trans
 : <a class="el" href="bmi088__i2c_8h.html#a4f79bddcfa9ee2359ce5eadfe7594e66">Bmi088_I2c</a>
 </li>
-<li>gyro_unscaled
-: <a class="el" href="imu_8h.html#a65a1e2b593c19ba1254060fd9a2f5b75">Imu</a>
-</li>
 <li>gyro_valid
 : <a class="el" href="ins__ekf2_8h.html#a471a691dac4d300bd626761e058f09d0">ekf2_t</a>
-, <a class="el" href="imu__aspirin_8h.html#a72b1ee3d51c788c6ef8e78118040e343">ImuAspirin</a>
 </li>
 <li>gyro_x_rate
 : <a class="el" href="px4flow__i2c_8h.html#a36264b4d7fb1cd43390c55670fb99b21">px4flow_i2c_frame</a>
@@ -414,13 +404,16 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gyro_z_rate_integral
 : <a class="el" href="px4flow__i2c_8h.html#ab3850b285a0979024510ebc5582ba146">px4flow_i2c_integral_frame</a>
 </li>
+<li>gyros
+: <a class="el" href="imu_8h.html#a861e1ec9ebaa8764962dbe9b6d7da01f">Imu</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 11:57:24 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Sep 26 2022 14:36:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
