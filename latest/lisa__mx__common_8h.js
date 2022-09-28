@@ -114,13 +114,7 @@ var lisa__mx__common_8h =
     [ "PWM_SERVO_5_OC_BIT", "lisa__mx__common_8h.html#a5d2f3465213306fd37370c884444e5e5", null ],
     [ "PWM_SERVO_5_PIN", "lisa__mx__common_8h.html#a7ca4d622269db724a3af09d3625280ee", null ],
     [ "PWM_SERVO_5_TIMER", "lisa__mx__common_8h.html#a788deb07b7c76a809557fa2ee0c416e5", null ],
-    [ "PWM_SERVO_6", "lisa__mx__common_8h.html#a20e24103fcaa69e246c0d87b3a040050", null ],
-    [ "PWM_SERVO_6_AF", "lisa__mx__common_8h.html#a4790fb09d46bc4fec1b725d476ae813d", null ],
-    [ "PWM_SERVO_6_GPIO", "lisa__mx__common_8h.html#a9c90f2615bc6566f45e326285819f6d4", null ],
-    [ "PWM_SERVO_6_OC", "lisa__mx__common_8h.html#a78b91cae357eed2023271f3a889047dd", null ],
     [ "PWM_SERVO_6_OC_BIT", "lisa__mx__common_8h.html#af94fd6d4d1273791ff04578e48f27857", null ],
-    [ "PWM_SERVO_6_PIN", "lisa__mx__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377", null ],
-    [ "PWM_SERVO_6_TIMER", "lisa__mx__common_8h.html#a91379312db5447f1d9c4343ab6abba3c", null ],
     [ "PWM_SERVO_7_OC_BIT", "lisa__mx__common_8h.html#a345f7e7ea14339c4e1fab93846675d5e", null ],
     [ "PWM_SERVO_8_OC_BIT", "lisa__mx__common_8h.html#a22f6b63dd659b030c48992b45bbc2353", null ],
     [ "PWM_TIM3_CHAN_MASK", "lisa__mx__common_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5", null ],
@@ -212,6 +206,5 @@ var lisa__mx__common_8h =
     [ "USE_PWM2", "lisa__mx__common_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737", null ],
     [ "USE_PWM3", "lisa__mx__common_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a", null ],
     [ "USE_PWM4", "lisa__mx__common_8h.html#a8899afdbd830cb0b81968fc660291934", null ],
-    [ "USE_PWM5", "lisa__mx__common_8h.html#a402c216e512bc4a39616400af32b7c7f", null ],
-    [ "USE_PWM6", "lisa__mx__common_8h.html#a460087c9ad1cc47d89c51536be5d9a72", null ]
+    [ "USE_PWM5", "lisa__mx__common_8h.html#a402c216e512bc4a39616400af32b7c7f", null ]
 ];

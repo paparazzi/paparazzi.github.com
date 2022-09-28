@@ -340,8 +340,8 @@ $(document).ready(function(){initNavTree('lisa__m__common_8h_source.html',''); i
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#define USE_DUAL_PWM6 1</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a402c216e512bc4a39616400af32b7c7f">  252</a></span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#ifndef USE_PWM6 // this allows to disable servo 6 on Lisa M</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a460087c9ad1cc47d89c51536be5d9a72">  254</a></span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#if (!defined USE_PWM6) &amp;&amp; (PPM_CONFIG != 2) // PWM6 only activated by default if PPM_CONFIG is not 2</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
@@ -438,13 +438,13 @@ $(document).ready(function(){initNavTree('lisa__m__common_8h_source.html',''); i
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a20e24103fcaa69e246c0d87b3a040050">  351</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a91379312db5447f1d9c4343ab6abba3c">  352</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a9c90f2615bc6566f45e326285819f6d4">  353</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377">  354</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a4790fb09d46bc4fec1b725d476ae813d">  355</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF 0</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#a78b91cae357eed2023271f3a889047dd">  356</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#af94fd6d4d1273791ff04578e48f27857">  357</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF 0</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#elif USE_DUAL_PWM6</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_6 5</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
@@ -458,7 +458,7 @@ $(document).ready(function(){initNavTree('lisa__m__common_8h_source.html',''); i
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_6_OC TIM_OC2</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="lisa__m__common_8h.html#af94fd6d4d1273791ff04578e48f27857">  371</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
@@ -506,7 +506,7 @@ $(document).ready(function(){initNavTree('lisa__m__common_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lisa__m__common_8h.html">lisa_m_common.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2022 06:59:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 28 2022 12:49:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
