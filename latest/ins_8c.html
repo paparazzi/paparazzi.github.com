@@ -140,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae5812d701519ce3ab06eb1a7315cf4c3"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8c.html#ae5812d701519ce3ab06eb1a7315cf4c3">ins_reset_altitude_ref</a> (void)</td></tr>
 <tr class="memdesc:ae5812d701519ce3ab06eb1a7315cf4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS altitude reference reset.  <a href="ins_8c.html#ae5812d701519ce3ab06eb1a7315cf4c3">More...</a><br /></td></tr>
 <tr class="separator:ae5812d701519ce3ab06eb1a7315cf4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411137a7e479e805af842cc3215748e3"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8c.html#a411137a7e479e805af842cc3215748e3">ins_reset_vertical_pos</a> (void)</td></tr>
+<tr class="memdesc:a411137a7e479e805af842cc3215748e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS vertical position reset.  <a href="ins_8c.html#a411137a7e479e805af842cc3215748e3">More...</a><br /></td></tr>
+<tr class="separator:a411137a7e479e805af842cc3215748e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af108226ec7957a145cb2c57ab14e6da7"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7">ins_reset_utm_zone</a> (struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> *utm)</td></tr>
 <tr class="memdesc:af108226ec7957a145cb2c57ab14e6da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS utm zone reset.  <a href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7">More...</a><br /></td></tr>
 <tr class="separator:af108226ec7957a145cb2c57ab14e6da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,9 +303,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00068">68</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00070">70</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00344">lla_of_utm_f()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00344">lla_of_utm_f()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00102">nav_reset_utm_zone()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -335,13 +338,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a411137a7e479e805af842cc3215748e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411137a7e479e805af842cc3215748e3">&#9670;&nbsp;</a></span>ins_reset_vertical_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WEAK ins_reset_vertical_pos </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INS vertical position reset. </p>
+<p>Reset only vertical position to zero. Does nothing if not implemented by specific INS algorithm. </p>
+
+<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00067">67</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins_8c.html">ins.c</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 12:49:21 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 28 2022 13:32:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

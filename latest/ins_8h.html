@@ -175,6 +175,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa389e650ab7aa5a7f4650afde6358d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">ins_reset_altitude_ref</a> (void)</td></tr>
 <tr class="memdesc:aa389e650ab7aa5a7f4650afde6358d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS altitude reference reset.  <a href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">More...</a><br /></td></tr>
 <tr class="separator:aa389e650ab7aa5a7f4650afde6358d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209f27fb545f1034247e2cfbc0dd2214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#a209f27fb545f1034247e2cfbc0dd2214">ins_reset_vertical_pos</a> (void)</td></tr>
+<tr class="memdesc:a209f27fb545f1034247e2cfbc0dd2214"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS vertical position reset.  <a href="ins_8h.html#a209f27fb545f1034247e2cfbc0dd2214">More...</a><br /></td></tr>
+<tr class="separator:a209f27fb545f1034247e2cfbc0dd2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef690805a610864d3aa76b10d138298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins_8h.html#acef690805a610864d3aa76b10d138298">ins_reset_utm_zone</a> (struct <a class="el" href="pprz__geodetic__float_8h.html#structUtmCoor__f">UtmCoor_f</a> *utm)</td></tr>
 <tr class="memdesc:acef690805a610864d3aa76b10d138298"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS utm zone reset.  <a href="ins_8h.html#acef690805a610864d3aa76b10d138298">More...</a><br /></td></tr>
 <tr class="separator:acef690805a610864d3aa76b10d138298"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +266,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00065">65</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GpsFixValid</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00233">State::utm_origin_f</a>, <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00046">GpsFixValid</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8c_source.html#l00426">lla_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00233">State::utm_origin_f</a>, <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00389">nav_reset_alt()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -273,14 +276,18 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph.png" border="0" usemap="#ins_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph" alt=""/></div>
 <map name="ins_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph" id="ins_8h_aa389e650ab7aa5a7f4650afde6358d86_cgraph">
-<area shape="rect" title="INS altitude reference reset." alt="" coords="5,111,168,137"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="241,60,380,87"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,111,391,137"/>
-<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,161,405,188"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="487,31,591,57"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,82,624,123"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="672,5,780,32"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="673,56,779,83"/>
+<area shape="rect" title="INS altitude reference reset." alt="" coords="5,132,168,159"/>
+<area shape="rect" href="gps_8c.html#a5d388b9aaf3cf2b7eee50ab6581fb0fe" title="Get GPS lla (integer) Converted on the fly if not available." alt="" coords="245,56,376,83"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title=" " alt="" coords="241,107,380,133"/>
+<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,157,391,184"/>
+<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,208,405,235"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="487,56,591,83"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="672,5,780,32"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="673,56,779,83"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="487,107,591,133"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,158,624,199"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="672,107,780,133"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="673,157,779,184"/>
 </map>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -319,9 +326,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00055">55</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00043">GpsFixValid</a>, <a class="el" href="ins__int_8h_source.html#l00048">InsInt::hf_realign</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00046">ins_mekf_wind_wrapper_Reset</a>, <a class="el" href="ins__skeleton_8c_source.html#l00070">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00189">ins_module_reset_local_origin()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__int_8h_source.html#l00041">InsInt::ltp_initialized</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00051">InsGpsPassthrough::ltp_initialized</a>, <a class="el" href="ins__alt__float_8h_source.html#l00042">InsAltFloat::origin_initialized</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="gps_8c_source.html#l00411">utm_float_from_gps()</a>, and <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8c_source.html#l00455">ecef_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00110">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00046">GpsFixValid</a>, <a class="el" href="ins__int_8h_source.html#l00048">InsInt::hf_realign</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__alt__float_8c_source.html#l00053">ins_altf</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00137">ins_float_inv</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00059">ins_gp</a>, <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00046">ins_mekf_wind_wrapper_Reset</a>, <a class="el" href="ins__skeleton_8c_source.html#l00070">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00189">ins_module_reset_local_origin()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8c_source.html#l00426">lla_int_from_gps()</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::lla_pos</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="ins__int_8h_source.html#l00040">InsInt::ltp_def</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00050">InsGpsPassthrough::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__int_8h_source.html#l00041">InsInt::ltp_initialized</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, <a class="el" href="ins__gps__passthrough_8c_source.html#l00051">InsGpsPassthrough::ltp_initialized</a>, <a class="el" href="ins__alt__float_8h_source.html#l00042">InsAltFloat::origin_initialized</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__alt__float_8h_source.html#l00041">InsAltFloat::reset_alt_ref</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="gps_8c_source.html#l00539">utm_float_from_gps()</a>, and <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00079">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00201">ins_alt_float_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00388">ins_int_update_gps()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00382">nav_reset_reference()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00079">gps_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00201">ins_alt_float_update_gps()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00382">nav_reset_reference()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -329,24 +336,29 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph.png" border="0" usemap="#ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" alt=""/></div>
 <map name="ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" id="ins_8h_a14cb66a86c67d8b9216a8c12f58c311b_cgraph">
-<area shape="rect" title="INS local origin reset." alt="" coords="5,122,168,149"/>
-<area shape="rect" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697" title=" " alt="" coords="223,5,398,47"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="235,71,386,98"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,122,391,149"/>
-<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,173,405,199"/>
-<area shape="rect" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="235,223,387,250"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="487,37,591,63"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,88,624,129"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="672,11,780,38"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="673,62,779,89"/>
-<area shape="rect" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM." alt="" coords="487,177,590,203"/>
-<area shape="rect" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="465,228,612,269"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title=" " alt="" coords="673,158,779,185"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="675,217,777,243"/>
-<area shape="rect" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title=" " alt="" coords="828,99,983,126"/>
-<area shape="rect" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title=" " alt="" coords="835,151,975,192"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="829,217,981,243"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="835,268,975,309"/>
+<area shape="rect" title="INS local origin reset." alt="" coords="5,199,168,225"/>
+<area shape="rect" href="gps_8c.html#aa1cf7efa927fe3fe8a07e97f8e58b746" title="Get GPS ecef pos (integer) Converted on the fly if not available." alt="" coords="239,31,382,57"/>
+<area shape="rect" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697" title=" " alt="" coords="223,82,398,123"/>
+<area shape="rect" href="gps_8c.html#a5d388b9aaf3cf2b7eee50ab6581fb0fe" title="Get GPS lla (integer) Converted on the fly if not available." alt="" coords="245,148,376,175"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="235,199,386,225"/>
+<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="231,249,391,276"/>
+<area shape="rect" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="216,300,405,327"/>
+<area shape="rect" href="gps_8c.html#a1343b41c94f919a6a593b958b275683f" title="Convenience functions to get utm position from GPS state." alt="" coords="235,351,387,377"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="487,31,591,57"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="672,5,780,32"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="673,56,779,83"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="487,148,591,175"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="672,128,780,155"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="673,179,779,205"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="453,199,624,241"/>
+<area shape="rect" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM." alt="" coords="487,321,590,348"/>
+<area shape="rect" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6" title="Get WGS84 ellipsoid/geoid separation." alt="" coords="465,373,612,414"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250" title=" " alt="" coords="673,292,779,319"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="675,351,777,377"/>
+<area shape="rect" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title=" " alt="" coords="828,233,983,260"/>
+<area shape="rect" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title=" " alt="" coords="835,285,975,326"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="829,351,981,377"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="835,402,975,443"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -395,9 +407,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00068">68</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00070">70</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00344">lla_of_utm_f()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
+<p class="reference">References <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00344">lla_of_utm_f()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00102">nav_reset_utm_zone()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -430,13 +442,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a209f27fb545f1034247e2cfbc0dd2214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209f27fb545f1034247e2cfbc0dd2214">&#9670;&nbsp;</a></span>ins_reset_vertical_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_reset_vertical_pos </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INS vertical position reset. </p>
+<p>Reset only vertical position to zero. Does nothing if not implemented by specific INS algorithm. </p>
+
+<p class="definition">Definition at line <a class="el" href="ins_8c_source.html#l00067">67</a> of file <a class="el" href="ins_8c_source.html">ins.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ins__int_8c_source.html#l00166">ins_int</a>, and <a class="el" href="ins__int_8h_source.html#l00053">InsInt::vf_reset</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins_8h.html">ins.h</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 12:49:21 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 28 2022 13:32:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

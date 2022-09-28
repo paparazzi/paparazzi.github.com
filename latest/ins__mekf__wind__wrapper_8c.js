@@ -7,7 +7,6 @@ var ins__mekf__wind__wrapper_8c =
     [ "INS_MEKF_WIND_IMU_ID", "ins__mekf__wind__wrapper_8c.html#a254d7d289e11748b1f81ec839ef6cc2e", null ],
     [ "INS_MEKF_WIND_INCIDENCE_ID", "ins__mekf__wind__wrapper_8c.html#a4ab97d82bf595b2a90bfbc10c3e9b0d4", null ],
     [ "INS_MEKF_WIND_MAG_ID", "ins__mekf__wind__wrapper_8c.html#af1628a3a3162d07ad3e87f7426aa8944", null ],
-    [ "MEKF_WIND_USE_UTM", "ins__mekf__wind__wrapper_8c.html#a6a22d316178bff51b9b5efdd647413ab", null ],
     [ "accel_cb", "ins__mekf__wind__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "airspeed_cb", "ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970", null ],
     [ "aligner_cb", "ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],

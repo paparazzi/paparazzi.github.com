@@ -23,6 +23,7 @@ var ins__int_8c =
     [ "ins_ned_to_state", "ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e", null ],
     [ "ins_reset_altitude_ref", "ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
     [ "ins_reset_local_origin", "ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
+    [ "ins_reset_vertical_pos", "ins__int_8c.html#a209f27fb545f1034247e2cfbc0dd2214", null ],
     [ "ins_update_from_vff", "ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c", null ],
     [ "pos_est_cb", "ins__int_8c.html#ad26e136ef8d38004d7479a6e3528623e", null ],
     [ "send_ins", "ins__int_8c.html#a2ba079af519dd03472aa3e6019b3a91f", null ],
