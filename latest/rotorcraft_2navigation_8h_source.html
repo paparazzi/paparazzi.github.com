@@ -365,7 +365,7 @@ $(document).ready(function(){initNavTree('rotorcraft_2navigation_8h_source.html'
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> start_alt = <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[start_wp].enu_i.z;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> diff_alt = <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[wp].enu_i.z - start_alt;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> alt = start_alt + ((diff_alt * <a class="code" href="rotorcraft_2navigation_8h.html#a42b0e2bd8bd15dbe64c4591a1f2e1f05">nav_leg_progress</a>) / <a class="code" href="rotorcraft_2navigation_8h.html#a6be9ffc11dbc15e70354d551684067a8">nav_leg_length</a>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> alt = start_alt + ((diff_alt * <a class="code" href="rotorcraft_2navigation_8h.html#a42b0e2bd8bd15dbe64c4591a1f2e1f05">nav_leg_progress</a>) / (<a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>)<a class="code" href="rotorcraft_2navigation_8h.html#a6be9ffc11dbc15e70354d551684067a8">nav_leg_length</a>);</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <a class="code" href="rotorcraft_2navigation_8h.html#ad8b75deb4546e944bed16b5b19455ff5">NavVerticalAltitudeMode</a>(<a class="code" href="group__math__algebra__int.html#ga930576f090a11e3c53c8269ee2e26834">POS_FLOAT_OF_BFP</a>(alt), 0);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
@@ -498,7 +498,7 @@ $(document).ready(function(){initNavTree('rotorcraft_2navigation_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2navigation_8h.html">navigation.h</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 13:32:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 28 2022 13:57:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
