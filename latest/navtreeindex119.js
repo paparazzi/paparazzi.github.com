@@ -1,5 +1,8 @@
 var NAVTREEINDEX119 =
 {
+"module__actuators_nps.html":[1,11],
+"module__actuators_nps.html#module_load_example__actuators_nps":[1,11,0],
+"module__actuators_nps.html#module_xml__actuators_nps":[1,11,0,0],
 "module__actuators_ostrich.html":[1,12],
 "module__actuators_ostrich.html#configuration__actuators_ostrich":[1,12,1],
 "module__actuators_ostrich.html#functions__actuators_ostrich":[1,12,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX119 =
 "module__baro_sim.html":[1,361],
 "module__baro_sim.html#functions__baro_sim":[1,361,1],
 "module__baro_sim.html#module_load_example__baro_sim":[1,361,0],
-"module__baro_sim.html#module_xml__baro_sim":[1,361,1,0],
-"module__bat_checker.html":[1,127],
-"module__bat_checker.html#configuration__bat_checker":[1,127,1],
-"module__bat_checker.html#functions__bat_checker":[1,127,2]
+"module__baro_sim.html#module_xml__baro_sim":[1,361,1,0]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX121 =
 {
+"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,415,1],
+"module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,415,3],
+"module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,415,2],
 "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,415,0],
 "module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,415,3,0],
 "module__dragspeed.html":[1,416],
@@ -246,8 +249,5 @@ var NAVTREEINDEX121 =
 "module__guidance_energy.html#module_load_example__guidance_energy":[1,153,0],
 "module__guidance_energy.html#module_xml__guidance_energy":[1,153,2,0],
 "module__guidance_full_pid_fw.html":[1,154],
-"module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw":[1,154,1],
-"module__guidance_full_pid_fw.html#functions__guidance_full_pid_fw":[1,154,2],
-"module__guidance_full_pid_fw.html#module_load_example__guidance_full_pid_fw":[1,154,0],
-"module__guidance_full_pid_fw.html#module_xml__guidance_full_pid_fw":[1,154,2,0]
+"module__guidance_full_pid_fw.html#configuration__guidance_full_pid_fw":[1,154,1]
 };

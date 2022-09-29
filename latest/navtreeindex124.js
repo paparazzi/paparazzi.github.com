@@ -1,5 +1,8 @@
 var NAVTREEINDEX124 =
 {
+"module__logger_uart.html#module_xml__logger_uart":[1,236,2,0],
+"module__mag_calib_ukf.html":[1,432],
+"module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,432,1],
 "module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,432,2],
 "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,432,0],
 "module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,432,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX124 =
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,319,2],
 "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,319,0],
 "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,319,2,0],
-"module__opticflow_hover.html":[1,436],
-"module__opticflow_hover.html#configuration__opticflow_hover":[1,436,1],
-"module__opticflow_hover.html#module_load_example__opticflow_hover":[1,436,0],
-"module__opticflow_hover.html#module_xml__opticflow_hover":[1,436,1,0]
+"module__opticflow_hover.html":[1,436]
 };

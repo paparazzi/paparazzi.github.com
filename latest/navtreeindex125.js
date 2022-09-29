@@ -1,5 +1,8 @@
 var NAVTREEINDEX125 =
 {
+"module__opticflow_hover.html#configuration__opticflow_hover":[1,436,1],
+"module__opticflow_hover.html#module_load_example__opticflow_hover":[1,436,0],
+"module__opticflow_hover.html#module_xml__opticflow_hover":[1,436,1,0],
 "module__opticflow_pmw3901.html":[1,370],
 "module__opticflow_pmw3901.html#configuration__opticflow_pmw3901":[1,370,1],
 "module__opticflow_pmw3901.html#functions__opticflow_pmw3901":[1,370,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX125 =
 "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,384,2,0],
 "module__stabilization_indi.html":[1,385],
 "module__stabilization_indi.html#configuration__stabilization_indi":[1,385,1],
-"module__stabilization_indi.html#functions__stabilization_indi":[1,385,2],
-"module__stabilization_indi.html#module_load_example__stabilization_indi":[1,385,0],
-"module__stabilization_indi.html#module_xml__stabilization_indi":[1,385,2,0],
-"module__stabilization_indi_simple.html":[1,386]
+"module__stabilization_indi.html#functions__stabilization_indi":[1,385,2]
 };

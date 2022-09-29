@@ -56,11 +56,14 @@ var NAVTREEINDEX78 =
 "high__speed__logger__direct__memory_8h_source.html":[12,0,1,0,6,41,8],
 "high__speed__logger__spi__link_8c.html":[12,0,1,0,6,41,9],
 "high__speed__logger__spi__link_8c.html#a1232a16b20ea060f98ae86078b64d444":[12,0,1,0,6,41,9,5],
+"high__speed__logger__spi__link_8c.html#a1561070e8f10501a2c9eeaebc7dbd7a1":[12,0,1,0,6,41,9,6],
 "high__speed__logger__spi__link_8c.html#a2b4341a957c0c01b6b056ad76db74219":[12,0,1,0,6,41,9,4],
 "high__speed__logger__spi__link_8c.html#a38bd10864e67fa36fe67d772bdec2c9e":[12,0,1,0,6,41,9,2],
 "high__speed__logger__spi__link_8c.html#a5415a1e7a1b569b44b00d72321bbb165":[12,0,1,0,6,41,9,1],
 "high__speed__logger__spi__link_8c.html#a5f71f68924d08e716c4a4ad4c5f79b5d":[12,0,1,0,6,41,9,3],
+"high__speed__logger__spi__link_8c.html#a6d864b0871704b93acb09da317ecee9f":[12,0,1,0,6,41,9,7],
 "high__speed__logger__spi__link_8c.html#ab1ebc903cd5df96b984a7016f84e705f":[12,0,1,0,6,41,9,0],
+"high__speed__logger__spi__link_8c.html#ad1b0d1b2e9768d9374bf9f02b3ae3724":[12,0,1,0,6,41,9,8],
 "high__speed__logger__spi__link_8c_source.html":[12,0,1,0,6,41,9],
 "high__speed__logger__spi__link_8h.html":[12,0,1,0,6,41,10],
 "high__speed__logger__spi__link_8h.html#a080057cb37ed72696b4ce26738850f47":[12,0,1,0,6,41,10,0,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX78 =
 "holybro_2kakute__f7_2board_8h.html#a18ed3413c67926690153a697d399db7c":[12,0,1,0,1,8,0,0,289],
 "holybro_2kakute__f7_2board_8h.html#a196f459528962e6fa3c6e010f283f9a0":[12,0,1,0,1,8,0,0,267],
 "holybro_2kakute__f7_2board_8h.html#a1abc2f956619ad2f42522587aaf95630":[12,0,1,0,1,8,0,0,432],
-"holybro_2kakute__f7_2board_8h.html#a1b01e5d3b2b875c7067a66bbbd38d98f":[12,0,1,0,1,8,0,0,38],
-"holybro_2kakute__f7_2board_8h.html#a1b0e57fe80e92cd68d5671a97268ce99":[12,0,1,0,1,8,0,0,2],
-"holybro_2kakute__f7_2board_8h.html#a1ba6491880b9a9473cfc5d83179c811f":[12,0,1,0,1,8,0,0,164],
-"holybro_2kakute__f7_2board_8h.html#a1c02378c14f69d9ca2a7bda7c00154bb":[12,0,1,0,1,8,0,0,101]
+"holybro_2kakute__f7_2board_8h.html#a1b01e5d3b2b875c7067a66bbbd38d98f":[12,0,1,0,1,8,0,0,38]
 };

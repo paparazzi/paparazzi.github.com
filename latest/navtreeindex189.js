@@ -1,5 +1,8 @@
 var NAVTREEINDEX189 =
 {
+"stm32_2mcu__periph_2sys__time__arch_8c.html#a838a9b2f4b781fbdbc8e7de535ffed07":[12,0,1,0,0,3,0,13,0],
+"stm32_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4":[12,0,1,0,0,3,0,13,2],
+"stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a":[12,0,1,0,0,3,0,13,1],
 "stm32_2mcu__periph_2sys__time__arch_8c_source.html":[12,0,1,0,0,3,0,13],
 "stm32_2mcu__periph_2sys__time__arch_8h.html":[12,0,1,0,0,3,0,14],
 "stm32_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262":[12,0,1,0,0,3,0,14,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX189 =
 "stylepython.html#stylecompat":[0,1,2,0],
 "superbitrf__rc_8c.html":[12,0,1,0,6,55,22],
 "superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[12,0,1,0,6,55,22,2],
-"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1],
-"superbitrf__rc_8c.html#afc61e3ef036fe29a6dc2d34dd6919f10":[12,0,1,0,6,55,22,0],
-"superbitrf__rc_8c_source.html":[12,0,1,0,6,55,22],
-"superbitrf__rc_8h.html":[12,0,1,0,6,55,23]
+"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1]
 };

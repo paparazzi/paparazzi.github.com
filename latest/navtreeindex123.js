@@ -1,5 +1,8 @@
 var NAVTREEINDEX123 =
 {
+"module__imu_nps.html#functions__imu_nps":[1,193,1],
+"module__imu_nps.html#module_load_example__imu_nps":[1,193,0],
+"module__imu_nps.html#module_xml__imu_nps":[1,193,1,0],
 "module__imu_openpilot_revo.html":[1,194],
 "module__imu_openpilot_revo.html#autoloads__imu_openpilot_revo":[1,194,2],
 "module__imu_openpilot_revo.html#configuration__imu_openpilot_revo":[1,194,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX123 =
 "module__logger_uart.html":[1,236],
 "module__logger_uart.html#configuration__logger_uart":[1,236,1],
 "module__logger_uart.html#functions__logger_uart":[1,236,2],
-"module__logger_uart.html#module_load_example__logger_uart":[1,236,0],
-"module__logger_uart.html#module_xml__logger_uart":[1,236,2,0],
-"module__mag_calib_ukf.html":[1,432],
-"module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,432,1]
+"module__logger_uart.html#module_load_example__logger_uart":[1,236,0]
 };

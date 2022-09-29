@@ -591,7 +591,7 @@ The magnetometer sensors. </td></tr>
 
 <p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00059">imu_accel_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00085">Imu::accels</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, and <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00515">imu_accel_raw_cb()</a>, and <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00515">imu_accel_raw_cb()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00047">imu_quality_assessment_periodic()</a>, and <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -599,10 +599,12 @@ The magnetometer sensors. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph.png" border="0" usemap="#imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph" alt=""/></div>
 <map name="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph" id="imu_8h_a0f8ac241eeb395920f1d8edf8f0c7cf0_icgraph">
-<area shape="rect" title="Find or create the accel in the imu structure." alt="" coords="1135,115,1251,141"/>
-<area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="934,64,1065,91"/>
-<area shape="rect" href="imu_8c.html#a0b0dc32bfbf49e0830242cec59f8fe8f" title=" " alt="" coords="929,115,1070,141"/>
-<area shape="rect" href="imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="912,545,1087,572"/>
+<area shape="rect" title="Find or create the accel in the imu structure." alt="" coords="1144,181,1260,208"/>
+<area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="939,64,1069,91"/>
+<area shape="rect" href="high__speed__logger__spi__link_8h.html#a5415a1e7a1b569b44b00d72321bbb165" title=" " alt="" coords="919,115,1089,157"/>
+<area shape="rect" href="imu_8c.html#a0b0dc32bfbf49e0830242cec59f8fe8f" title=" " alt="" coords="933,181,1075,208"/>
+<area shape="rect" href="imu__quality__assessment_8h.html#ab28aa669695c89e7f5a92d20dea4a31a" title=" " alt="" coords="912,233,1096,274"/>
+<area shape="rect" href="imu_8h.html#a5403a88d05fb1440580b67ee3f41f2ba" title="Set the defaults for a accel sensor WARNING: Should be called before sensor is publishing messages to..." alt="" coords="917,579,1091,605"/>
 <area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,64,814,91"/>
 <area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="503,64,634,91"/>
 <area shape="rect" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
@@ -610,28 +612,28 @@ The magnetometer sensors. </td></tr>
 <area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
-<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,115,815,141"/>
-<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,165,843,192"/>
-<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,216,845,243"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,267,853,293"/>
-<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,317,841,344"/>
-<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,368,839,395"/>
-<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,419,843,445"/>
-<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,469,834,496"/>
-<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,520,835,547"/>
-<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,571,849,597"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,621,851,648"/>
-<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,672,846,699"/>
-<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,723,846,749"/>
-<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,773,830,800"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,824,831,851"/>
-<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,875,843,901"/>
-<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,925,864,952"/>
-<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,976,829,1003"/>
-<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,925,643,952"/>
-<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,925,407,952"/>
-<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,976,639,1003"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1027,632,1053"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,148,815,175"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,199,843,225"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,249,845,276"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,300,853,327"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,351,841,377"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,401,839,428"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,452,843,479"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,503,834,529"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,553,835,580"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,604,849,631"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,655,851,681"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,705,846,732"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,756,846,783"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,807,830,833"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,857,831,884"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,908,843,935"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,959,864,985"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,1009,829,1036"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,959,643,985"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,959,407,985"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,1009,639,1036"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1060,632,1087"/>
 </map>
 </div>
 
@@ -677,7 +679,7 @@ The magnetometer sensors. </td></tr>
 
 <p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00048">imu_gyro_t::abi_id</a>, <a class="el" href="imu_8h_source.html#l00084">Imu::gyros</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, and <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00450">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00450">imu_gyro_raw_cb()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -685,10 +687,11 @@ The magnetometer sensors. </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph.png" border="0" usemap="#imu_8h_a304a000b998533803b0d079c86e8f915_icgraph" alt=""/></div>
 <map name="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph" id="imu_8h_a304a000b998533803b0d079c86e8f915_icgraph">
-<area shape="rect" title="Find or create the gyro in the imu structure." alt="" coords="1131,115,1241,141"/>
+<area shape="rect" title="Find or create the gyro in the imu structure." alt="" coords="1131,148,1241,175"/>
 <area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="932,39,1063,65"/>
-<area shape="rect" href="imu_8c.html#a734b27fb1fccee20bce188d2ee43b4d1" title=" " alt="" coords="929,140,1065,167"/>
-<area shape="rect" href="imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="912,571,1083,597"/>
+<area shape="rect" href="high__speed__logger__spi__link_8h.html#a5415a1e7a1b569b44b00d72321bbb165" title=" " alt="" coords="912,141,1083,182"/>
+<area shape="rect" href="imu_8c.html#a734b27fb1fccee20bce188d2ee43b4d1" title=" " alt="" coords="929,207,1065,233"/>
+<area shape="rect" href="imu_8h.html#a78eff9ff635dfd37cbc9f88746da18cf" title="Set the defaults for a gyro sensor WARNING: Should be called before sensor is publishing messages to ..." alt="" coords="912,604,1083,631"/>
 <area shape="rect" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="945,89,1050,116"/>
 <area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,39,814,65"/>
 <area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="503,64,634,91"/>
@@ -697,28 +700,28 @@ The magnetometer sensors. </td></tr>
 <area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
-<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,140,815,167"/>
-<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,191,843,217"/>
-<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,241,845,268"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,292,853,319"/>
-<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,343,841,369"/>
-<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,393,839,420"/>
-<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,444,843,471"/>
-<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,495,834,521"/>
-<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,545,835,572"/>
-<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,596,849,623"/>
-<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,647,851,673"/>
-<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,697,846,724"/>
-<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,748,846,775"/>
-<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,799,830,825"/>
-<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,849,831,876"/>
-<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,900,843,927"/>
-<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,951,864,977"/>
-<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,1001,829,1028"/>
-<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,951,643,977"/>
-<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,951,407,977"/>
-<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,1001,639,1028"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1052,632,1079"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="740,173,815,200"/>
+<area shape="rect" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837" title=" " alt="" coords="712,224,843,251"/>
+<area shape="rect" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title=" " alt="" coords="710,275,845,301"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html#a3ab9581a70280ff7ce2776b7780f2e28" title=" " alt="" coords="701,325,853,352"/>
+<area shape="rect" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title=" " alt="" coords="714,376,841,403"/>
+<area shape="rect" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="716,427,839,453"/>
+<area shape="rect" href="imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03" title=" " alt="" coords="712,477,843,504"/>
+<area shape="rect" href="imu__cube_8h.html#a37e9c548e37b490a9dc431458eb2a651" title=" " alt="" coords="721,528,834,555"/>
+<area shape="rect" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx." alt="" coords="719,579,835,605"/>
+<area shape="rect" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3" title=" " alt="" coords="706,629,849,656"/>
+<area shape="rect" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title=" " alt="" coords="704,680,851,707"/>
+<area shape="rect" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f" title=" " alt="" coords="709,731,846,757"/>
+<area shape="rect" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title=" " alt="" coords="709,781,846,808"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,832,830,859"/>
+<area shape="rect" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title=" " alt="" coords="724,883,831,909"/>
+<area shape="rect" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title=" " alt="" coords="711,933,843,960"/>
+<area shape="rect" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9" title="This fixes the configuration errors and sets the correct scalings." alt="" coords="691,984,864,1011"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="726,1035,829,1061"/>
+<area shape="rect" href="invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de" title="Should be called in the event thread." alt="" coords="495,984,643,1011"/>
+<area shape="rect" href="imu__cube_8h.html#acded57d4eee4a623a070e8bccf92ada6" title=" " alt="" coords="278,984,407,1011"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="499,1035,639,1061"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="505,1085,632,1112"/>
 </map>
 </div>
 
@@ -764,7 +767,7 @@ The magnetometer sensors. </td></tr>
 
 <p class="reference">References <a class="el" href="abi__common_8h_source.html#l00057">ABI_BROADCAST</a>, <a class="el" href="abi__common_8h_source.html#l00063">ABI_DISABLE</a>, <a class="el" href="imu_8h_source.html#l00070">imu_mag_t::abi_id</a>, <a class="el" href="imu_8c_source.html#l00232">imu</a>, <a class="el" href="imu_8h_source.html#l00037">IMU_MAX_SENSORS</a>, and <a class="el" href="imu_8h_source.html#l00086">Imu::mags</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="imu_8c_source.html#l00580">imu_mag_raw_cb()</a>, and <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00115">ahrs_aligner_run()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00580">imu_mag_raw_cb()</a>, and <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -772,10 +775,11 @@ The magnetometer sensors. </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph.png" border="0" usemap="#imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph" alt=""/></div>
 <map name="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph" id="imu_8h_aeb392db1b0ad7340d0d32a78acea9e1e_icgraph">
-<area shape="rect" title="Find or create the mag in the imu structure." alt="" coords="1140,115,1251,141"/>
+<area shape="rect" title="Find or create the mag in the imu structure." alt="" coords="1140,152,1251,179"/>
 <area shape="rect" href="ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title=" " alt="" coords="941,64,1072,91"/>
-<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="939,115,1075,141"/>
-<area shape="rect" href="imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="921,191,1092,217"/>
+<area shape="rect" href="high__speed__logger__spi__link_8h.html#a5415a1e7a1b569b44b00d72321bbb165" title=" " alt="" coords="921,115,1092,157"/>
+<area shape="rect" href="imu_8c.html#ad3ffbd8793dfa38fe11c2fbd852dbfe2" title=" " alt="" coords="939,181,1075,208"/>
+<area shape="rect" href="imu_8h.html#a3c314a5bfe113caf010bad75b3de86c4" title="Set the defaults for a mag sensor WARNING: Should be called before sensor is publishing messages to e..." alt="" coords="921,244,1092,271"/>
 <area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="741,64,815,91"/>
 <area shape="rect" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="499,64,630,91"/>
 <area shape="rect" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
@@ -783,12 +787,12 @@ The magnetometer sensors. </td></tr>
 <area shape="rect" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
-<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="741,115,815,141"/>
-<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,165,831,192"/>
-<area shape="rect" href="mag__ist8310_8h.html#af1ab1d4f6c31f66cf8343af4e33702a6" title=" " alt="" coords="683,216,873,243"/>
-<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="727,267,829,293"/>
-<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="495,241,635,268"/>
-<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="501,292,628,319"/>
+<area shape="rect" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="External functions." alt="" coords="741,168,815,195"/>
+<area shape="rect" href="imu__nps_8h.html#af25f098236ec92998a69e688afcfebed" title=" " alt="" coords="725,219,831,245"/>
+<area shape="rect" href="mag__ist8310_8h.html#af1ab1d4f6c31f66cf8343af4e33702a6" title=" " alt="" coords="683,269,873,296"/>
+<area shape="rect" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board." alt="" coords="727,320,829,347"/>
+<area shape="rect" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title=" " alt="" coords="495,295,635,321"/>
+<area shape="rect" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop)" alt="" coords="501,345,628,372"/>
 </map>
 </div>
 
@@ -1360,7 +1364,7 @@ The magnetometer sensors. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="imu_8c_source.html#l00232">232</a> of file <a class="el" href="imu_8c_source.html">imu.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu_8c_source.html#l00637">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l00614">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l00661">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00239">imu_init()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00046">imu_quality_assessment_periodic()</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>, <a class="el" href="imu_8c_source.html#l00736">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l00712">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l00728">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l00720">imu_SetBodyToImuTheta()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="imu_8c_source.html#l00140">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00120">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00130">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00172">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00152">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00162">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00204">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00216">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00184">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00194">send_mag_scaled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="imu_8c_source.html#l00637">imu_get_accel()</a>, <a class="el" href="imu_8c_source.html#l00614">imu_get_gyro()</a>, <a class="el" href="imu_8c_source.html#l00661">imu_get_mag()</a>, <a class="el" href="imu_8c_source.html#l00239">imu_init()</a>, <a class="el" href="imu_8c_source.html#l00683">imu_set_body_to_imu_eulers()</a>, <a class="el" href="imu_8c_source.html#l00398">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00368">imu_set_defaults_gyro()</a>, <a class="el" href="imu_8c_source.html#l00428">imu_set_defaults_mag()</a>, <a class="el" href="imu_8c_source.html#l00736">imu_SetBodyToImuCurrent()</a>, <a class="el" href="imu_8c_source.html#l00712">imu_SetBodyToImuPhi()</a>, <a class="el" href="imu_8c_source.html#l00728">imu_SetBodyToImuPsi()</a>, <a class="el" href="imu_8c_source.html#l00720">imu_SetBodyToImuTheta()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00107">jevois_mavlink_filter_init()</a>, <a class="el" href="jevois__mavlink_8c_source.html#l00099">jevois_mavlink_filter_periodic()</a>, <a class="el" href="logger__uart_8c_source.html#l00037">logger_uart_periodic()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00150">mag_calib_ukf_run()</a>, <a class="el" href="imu_8c_source.html#l00140">send_accel()</a>, <a class="el" href="imu_8c_source.html#l00120">send_accel_raw()</a>, <a class="el" href="imu_8c_source.html#l00130">send_accel_scaled()</a>, <a class="el" href="imu_8c_source.html#l00172">send_gyro()</a>, <a class="el" href="imu_8c_source.html#l00152">send_gyro_raw()</a>, <a class="el" href="imu_8c_source.html#l00162">send_gyro_scaled()</a>, <a class="el" href="imu_8c_source.html#l00204">send_mag()</a>, <a class="el" href="imu_8c_source.html#l00216">send_mag_current()</a>, <a class="el" href="imu_8c_source.html#l00184">send_mag_raw()</a>, and <a class="el" href="imu_8c_source.html#l00194">send_mag_scaled()</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1374,7 @@ The magnetometer sensors. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu_8h.html">imu.h</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 13:58:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Sep 29 2022 12:12:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
