@@ -1,5 +1,14 @@
 var NAVTREEINDEX189 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f":[12,0,1,0,0,3,0,11,9],
+"stm32_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0":[12,0,1,0,0,3,0,11,27],
+"stm32_2mcu__periph_2spi__arch_8c.html#afff4df9fc6fd8f73287979945d18b9a0":[12,0,1,0,0,3,0,11,1,7],
+"stm32_2mcu__periph_2spi__arch_8c.html#structlocm3__spi__comm":[12,0,1,0,0,3,0,11,0],
+"stm32_2mcu__periph_2spi__arch_8c.html#structspi__periph__dma":[12,0,1,0,0,3,0,11,1],
+"stm32_2mcu__periph_2spi__arch_8c_source.html":[12,0,1,0,0,3,0,11],
+"stm32_2mcu__periph_2spi__arch_8h.html":[12,0,1,0,0,3,0,12],
+"stm32_2mcu__periph_2spi__arch_8h_source.html":[12,0,1,0,0,3,0,12],
+"stm32_2mcu__periph_2sys__time__arch_8c.html":[12,0,1,0,0,3,0,13],
 "stm32_2mcu__periph_2sys__time__arch_8c.html#a838a9b2f4b781fbdbc8e7de535ffed07":[12,0,1,0,0,3,0,13,0],
 "stm32_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4":[12,0,1,0,0,3,0,13,2],
 "stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a":[12,0,1,0,0,3,0,13,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX189 =
 "stylec.html#stylenames":[0,1,0,1],
 "stylec.html#styleswitch":[0,1,0,4],
 "stylec.html#styletypes":[0,1,0,2],
-"styledoxygen.html":[0,1,1],
-"styledoxygen.html#styledoxyall":[0,1,1,1],
-"styledoxygen.html#styledoxyblocks":[0,1,1,0],
-"styledoxygen.html#styledoxytext":[0,1,1,2],
-"styleguide.html":[0,1],
-"stylepython.html":[0,1,2],
-"stylepython.html#stylecompat":[0,1,2,0],
-"superbitrf__rc_8c.html":[12,0,1,0,6,55,22],
-"superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[12,0,1,0,6,55,22,2],
-"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1]
+"styledoxygen.html":[0,1,1]
 };

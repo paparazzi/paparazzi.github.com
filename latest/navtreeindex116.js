@@ -1,5 +1,14 @@
 var NAVTREEINDEX116 =
 {
+"max1168_8c.html#a2380db06cc4ae1a7b0e167a246862ea0":[12,0,1,0,7,81,7],
+"max1168_8c.html#a6130e20b7ea3c56aa94a9e449b773b4a":[12,0,1,0,7,81,1],
+"max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3":[12,0,1,0,7,81,2],
+"max1168_8c.html#a72f141ce849dee5cb2a50f96654bbddc":[12,0,1,0,7,81,6],
+"max1168_8c.html#a8719aca72a1240b97d1f4b48b2533fdb":[12,0,1,0,7,81,4],
+"max1168_8c.html#a957376acfc8fbd7b917f20a18e6c5a6c":[12,0,1,0,7,81,0],
+"max1168_8c.html#ad4a95f70191d98f708ccddec03c79abd":[12,0,1,0,7,81,5],
+"max1168_8c.html#adad993f2bbd2ca52aea0b0f97931863a":[12,0,1,0,7,81,3],
+"max1168_8c.html#aff870d25144f1b71cb4d7f558c21bd9d":[12,0,1,0,7,81,8],
 "max1168_8c_source.html":[12,0,1,0,7,81],
 "max1168_8h.html":[12,0,1,0,7,82],
 "max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0":[12,0,1,0,7,82,18],
@@ -240,14 +249,5 @@ var NAVTREEINDEX116 =
 "median__filter_8h.html#ab20cb9f63d64a489895bea9f083b4aef":[12,0,1,0,2,6,17],
 "median__filter_8h.html#ab362efdeea2c938603f6571bd9918bf6":[12,0,1,0,2,6,8],
 "median__filter_8h.html#ab745cc8ad5a1121e7b2ba50aa1bd9be8":[12,0,1,0,2,6,18],
-"median__filter_8h.html#ac1af922cc9964252a19a531f43201da8":[12,0,1,0,2,6,2,2],
-"median__filter_8h.html#ac22bc67043369c2e3322fbcbbe6b7b3f":[12,0,1,0,2,6,24],
-"median__filter_8h.html#ac2d1df417cffe3a92ae5ab588c09e9cf":[12,0,1,0,2,6,25],
-"median__filter_8h.html#ac56f32eac42c0b05ac22862377de1b0a":[12,0,1,0,2,6,0,0],
-"median__filter_8h.html#acd05707df38c78d3a0c0a8b8d4e0058f":[12,0,1,0,2,6,21],
-"median__filter_8h.html#ad61bfbd8d8c78596232bc97571732570":[12,0,1,0,2,6,20],
-"median__filter_8h.html#structMedianFilter3Float":[12,0,1,0,2,6,3],
-"median__filter_8h.html#structMedianFilter3Int":[12,0,1,0,2,6,1],
-"median__filter_8h.html#structMedianFilterFloat":[12,0,1,0,2,6,2],
-"median__filter_8h.html#structMedianFilterInt":[12,0,1,0,2,6,0]
+"median__filter_8h.html#ac1af922cc9964252a19a531f43201da8":[12,0,1,0,2,6,2,2]
 };

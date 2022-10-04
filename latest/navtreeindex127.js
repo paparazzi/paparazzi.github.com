@@ -1,5 +1,14 @@
 var NAVTREEINDEX127 =
 {
+"module__tune_airspeed.html#module_xml__tune_airspeed":[1,318,1,0],
+"module__uart.html":[1,247],
+"module__uart.html#module_load_example__uart":[1,247,0],
+"module__uart.html#module_xml__uart":[1,247,0,0],
+"module__uav_recovery.html":[1,452],
+"module__uav_recovery.html#configuration__uav_recovery":[1,452,1],
+"module__uav_recovery.html#functions__uav_recovery":[1,452,2],
+"module__uav_recovery.html#module_load_example__uav_recovery":[1,452,0],
+"module__uav_recovery.html#module_xml__uav_recovery":[1,452,2,0],
 "module__uavcan.html":[1,453],
 "module__uavcan.html#configuration__uavcan":[1,453,1],
 "module__uavcan.html#functions__uavcan":[1,453,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX127 =
 "modules_2ins_2ins__arduimu_8c.html#a462d01510456abb57e3bbf5e5079d12b":[12,0,1,0,6,36,14,13],
 "modules_2ins_2ins__arduimu_8c.html#a5a51d08f24d0844a38d7226509de72f6":[12,0,1,0,6,36,14,0],
 "modules_2ins_2ins__arduimu_8c.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[12,0,1,0,6,36,14,15],
-"modules_2ins_2ins__arduimu_8c.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,14,4],
-"modules_2ins_2ins__arduimu_8c.html#a78c0ed4113166dc7fa861569f0899d07":[12,0,1,0,6,36,14,5],
-"modules_2ins_2ins__arduimu_8c.html#a7ad0b6baa7c668497b49a342fbddc246":[12,0,1,0,6,36,14,17],
-"modules_2ins_2ins__arduimu_8c.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,14,3],
-"modules_2ins_2ins__arduimu_8c.html#aac18cc3d324b605dd90d56321d413455":[12,0,1,0,6,36,14,18],
-"modules_2ins_2ins__arduimu_8c.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,14,2],
-"modules_2ins_2ins__arduimu_8c.html#abe0462b4909223132122a278dc640329":[12,0,1,0,6,36,14,9],
-"modules_2ins_2ins__arduimu_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,14,14],
-"modules_2ins_2ins__arduimu_8c.html#acf3d10cd62cbe0aa339544370506c7f4":[12,0,1,0,6,36,14,8],
-"modules_2ins_2ins__arduimu_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12":[12,0,1,0,6,36,14,1]
+"modules_2ins_2ins__arduimu_8c.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,14,4]
 };

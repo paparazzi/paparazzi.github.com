@@ -1,5 +1,14 @@
 var NAVTREEINDEX93 =
 {
+"invensense2__regs_8h.html#aeec09643ca49966e35a31f3c7e263016":[12,0,1,0,7,45,9],
+"invensense2__regs_8h.html#af04298f252eb44bfbddae4f7aa84db44":[12,0,1,0,7,45,139],
+"invensense2__regs_8h.html#af27c45ce1674e1a80d675a28c5330094":[12,0,1,0,7,45,53],
+"invensense2__regs_8h.html#af47c9d26d473893eabcd0575f705f0fa":[12,0,1,0,7,45,106],
+"invensense2__regs_8h.html#af5a1355ba7606871edf77f1bc9d5b08e":[12,0,1,0,7,45,43],
+"invensense2__regs_8h.html#af70706302d17955aa9a4517d08f658d7":[12,0,1,0,7,45,36],
+"invensense2__regs_8h.html#af7ca9f5c15193f8376b0eac156f73cc4":[12,0,1,0,7,45,159],
+"invensense2__regs_8h.html#af9209c067f334871f75ca14144d0940e":[12,0,1,0,7,45,114],
+"invensense2__regs_8h.html#af92bde3b41eed415eac60656272c82ec":[12,0,1,0,7,45,76],
 "invensense2__regs_8h.html#afea8fe37f73ebe1143dea3cdfca94cd0":[12,0,1,0,7,45,78],
 "invensense2__regs_8h_source.html":[12,0,1,0,7,45],
 "ir__mlx_8c.html":[12,0,1,0,6,43,25],
@@ -240,14 +249,5 @@ var NAVTREEINDEX93 =
 "jevois_8c.html#aaabffd8949fd232243751b5dbf121d60":[12,0,1,0,6,60,0,0,12],
 "jevois_8c.html#ab4ae66ea4e5d98d27fa2e11b36c2f4b4":[12,0,1,0,6,60,0,0,0,5],
 "jevois_8c.html#ac7e840f52d134433e359f8b400809943":[12,0,1,0,6,60,0,0,1,4],
-"jevois_8c.html#aca189a8d3e70150d074f138283a64365":[12,0,1,0,6,60,0,0,3],
-"jevois_8c.html#ad29a2f3a311c4adb39f30e6598517114":[12,0,1,0,6,60,0,0,4],
-"jevois_8c.html#adfd0559dc6ad82fac1d6c635f0a84682":[12,0,1,0,6,60,0,0,1,1],
-"jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89":[12,0,1,0,6,60,0,0,8],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040":[12,0,1,0,6,60,0,0,5],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a3167efd48d09a7a20422a743f0397792":[12,0,1,0,6,60,0,0,5,8],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a34c8cf6e689d79ab181643a6c198275a":[12,0,1,0,6,60,0,0,5,6],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a491014ba5c6464f63ddf0e9b5af367cd":[12,0,1,0,6,60,0,0,5,5],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a56342c827f6e0cc57221703e9e20a769":[12,0,1,0,6,60,0,0,5,3],
-"jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a7ef89966de3da835ff475d0bb0ae2e37":[12,0,1,0,6,60,0,0,5,7]
+"jevois_8c.html#aca189a8d3e70150d074f138283a64365":[12,0,1,0,6,60,0,0,3]
 };

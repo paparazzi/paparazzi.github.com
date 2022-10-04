@@ -1,5 +1,14 @@
 var NAVTREEINDEX192 =
 {
+"takeoff__detect_8c.html#ae398a6008f13ebecb65a2f4abb54d3e8aed099911820079317902ee9d8242cb7a":[12,0,1,0,6,46,65,5,1],
+"takeoff__detect_8c.html#ae4ecd72a6a1aa21c820285960fab79c4":[12,0,1,0,6,46,65,6],
+"takeoff__detect_8c.html#structtakeoff__detect__struct":[12,0,1,0,6,46,65,0],
+"takeoff__detect_8c_source.html":[12,0,1,0,6,46,65],
+"takeoff__detect_8h.html":[12,0,1,0,6,46,66],
+"takeoff__detect_8h.html#a06e2c8e9dfe36613c4773f5c01303b0a":[12,0,1,0,6,46,66,1],
+"takeoff__detect_8h.html#ac84acb06ac4c5fe795c9673523a1efbf":[12,0,1,0,6,46,66,2],
+"takeoff__detect_8h.html#ae4ecd72a6a1aa21c820285960fab79c4":[12,0,1,0,6,46,66,0],
+"takeoff__detect_8h_source.html":[12,0,1,0,6,46,66],
 "tawaki_2baro__board_8h.html":[12,0,1,0,1,21,1],
 "tawaki_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,21,1,2],
 "tawaki_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781":[12,0,1,0,1,21,1,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX192 =
 "tawaki_2chibios_2common_2mcuconf_8h.html#aacacec5795cca34be3ff692ffb8f1a13":[12,0,1,0,1,21,0,0,0,164],
 "tawaki_2chibios_2common_2mcuconf_8h.html#aacb71b8fee4d07ab0317ac8cc6ee9856":[12,0,1,0,1,21,0,0,0,290],
 "tawaki_2chibios_2common_2mcuconf_8h.html#aae32ee41e66ceec86838a5d976148ee5":[12,0,1,0,1,21,0,0,0,77],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab047313b94213e723aa9457d40fc5dc3":[12,0,1,0,1,21,0,0,0,201],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab1d2f69ae62ae312a9014125f2734000":[12,0,1,0,1,21,0,0,0,284],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab34182c029cd8f6e924f1b449e3bae0e":[12,0,1,0,1,21,0,0,0,12],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab3a661d68e3adb7d22e441c7550f5f66":[12,0,1,0,1,21,0,0,0,186],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab45a03dcc02472a1396215ff9ebacb05":[12,0,1,0,1,21,0,0,0,176],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab48cd436c239c8daf697d582184e0f11":[12,0,1,0,1,21,0,0,0,90],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab61440cd331858b31458b3ce72abf906":[12,0,1,0,1,21,0,0,0,27],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab70d9b5c3764aac6282d594d8f6a88ec":[12,0,1,0,1,21,0,0,0,171],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab773feef7e8e53c9239138d7c8ca6345":[12,0,1,0,1,21,0,0,0,3],
-"tawaki_2chibios_2common_2mcuconf_8h.html#ab99e09e5d7cf617d243ad4e19bacf778":[12,0,1,0,1,21,0,0,0,299]
+"tawaki_2chibios_2common_2mcuconf_8h.html#ab047313b94213e723aa9457d40fc5dc3":[12,0,1,0,1,21,0,0,0,201]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX124 =
 {
+"module__logger_spi_link.html":[1,235],
+"module__logger_spi_link.html#configuration__logger_spi_link":[1,235,1],
+"module__logger_spi_link.html#functions__logger_spi_link":[1,235,2],
+"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,235,0],
+"module__logger_spi_link.html#module_xml__logger_spi_link":[1,235,2,0],
+"module__logger_uart.html":[1,236],
+"module__logger_uart.html#configuration__logger_uart":[1,236,1],
+"module__logger_uart.html#functions__logger_uart":[1,236,2],
+"module__logger_uart.html#module_load_example__logger_uart":[1,236,0],
 "module__logger_uart.html#module_xml__logger_uart":[1,236,2,0],
 "module__mag_calib_ukf.html":[1,432],
 "module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,432,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX124 =
 "module__optical_flow_hover.html#functions__optical_flow_hover":[1,90,1],
 "module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,90,0],
 "module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,90,1,0],
-"module__optical_flow_landing.html":[1,91],
-"module__optical_flow_landing.html#configuration__optical_flow_landing":[1,91,1],
-"module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,91,0],
-"module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,91,1,0],
-"module__optical_flow_mateksys_3901_l0x.html":[1,319],
-"module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,319,1],
-"module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,319,2],
-"module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x":[1,319,0],
-"module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x":[1,319,2,0],
-"module__opticflow_hover.html":[1,436]
+"module__optical_flow_landing.html":[1,91]
 };

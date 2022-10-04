@@ -1,5 +1,14 @@
 var NAVTREEINDEX91 =
 {
+"ins__vectornav_8h.html#structInsVectornav":[12,0,1,0,6,36,37,0],
+"ins__vectornav_8h_source.html":[12,0,1,0,6,36,37],
+"ins__vectornav__wrapper_8c.html":[12,0,1,0,6,36,38],
+"ins__vectornav__wrapper_8c.html#a8cb4d40c4d33f492077ddd23fbf8cde5":[12,0,1,0,6,36,38,0],
+"ins__vectornav__wrapper_8c_source.html":[12,0,1,0,6,36,38],
+"ins__vectornav__wrapper_8h.html":[12,0,1,0,6,36,39],
+"ins__vectornav__wrapper_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,36,39,0],
+"ins__vectornav__wrapper_8h.html#a8cb4d40c4d33f492077ddd23fbf8cde5":[12,0,1,0,6,36,39,1],
+"ins__vectornav__wrapper_8h_source.html":[12,0,1,0,6,36,39],
 "ins__vn100_8c.html":[12,0,1,0,6,36,40],
 "ins__vn100_8c.html#a02db2d48724fb0b925d49bcd774eb9be":[12,0,1,0,6,36,40,22],
 "ins__vn100_8c.html#a09072ddf7ce5e6ca445567a6cdce6019":[12,0,1,0,6,36,40,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX91 =
 "invensense2_8h.html#a12fd4e536645b7d7c0f61b4d283e4fb7aead716ff01a22c810d0aa9a1f24a2aae":[12,0,1,0,7,44,11,0],
 "invensense2_8h.html#a12fd4e536645b7d7c0f61b4d283e4fb7af662ed82634c8e597477512c9c665c28":[12,0,1,0,7,44,11,7],
 "invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6e":[12,0,1,0,7,44,13],
-"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6ea6197d09fc2a32b193ce2652b546a11fb":[12,0,1,0,7,44,13,2],
-"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6ea786ec98ceed26312e9db93ce535e76e3":[12,0,1,0,7,44,13,0],
-"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6eae07adff5abe73c3246896b1b87b333d9":[12,0,1,0,7,44,13,1],
-"invensense2_8h.html#a26a2f5d965afc4c4b07a8ff52c03ed90":[12,0,1,0,7,44,2,5],
-"invensense2_8h.html#a2f34e258e462ea1f78fca78e1db297d0":[12,0,1,0,7,44,0,0],
-"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6f":[12,0,1,0,7,44,12],
-"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa41536a5104392fef0b8c309ad37dc195":[12,0,1,0,7,44,12,4],
-"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa43f91495d24cda3787790d1d1a129166":[12,0,1,0,7,44,12,1],
-"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa4fad447c3c2e22d1cb16ed7a0b6513c0":[12,0,1,0,7,44,12,3],
-"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa632124b73d2aa25eb506a65e0deb7a0f":[12,0,1,0,7,44,12,2]
+"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6ea6197d09fc2a32b193ce2652b546a11fb":[12,0,1,0,7,44,13,2]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX92 =
 {
+"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6ea786ec98ceed26312e9db93ce535e76e3":[12,0,1,0,7,44,13,0],
+"invensense2_8h.html#a17728747768f7ce87d34445a2f2e8e6eae07adff5abe73c3246896b1b87b333d9":[12,0,1,0,7,44,13,1],
+"invensense2_8h.html#a26a2f5d965afc4c4b07a8ff52c03ed90":[12,0,1,0,7,44,2,5],
+"invensense2_8h.html#a2f34e258e462ea1f78fca78e1db297d0":[12,0,1,0,7,44,0,0],
+"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6f":[12,0,1,0,7,44,12],
+"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa41536a5104392fef0b8c309ad37dc195":[12,0,1,0,7,44,12,4],
+"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa43f91495d24cda3787790d1d1a129166":[12,0,1,0,7,44,12,1],
+"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa4fad447c3c2e22d1cb16ed7a0b6513c0":[12,0,1,0,7,44,12,3],
+"invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa632124b73d2aa25eb506a65e0deb7a0f":[12,0,1,0,7,44,12,2],
 "invensense2_8h.html#a2f573c32f8813a3cc9dc72f48ba68b6fa870cbb972e5388181fe02b963af32a66":[12,0,1,0,7,44,12,0],
 "invensense2_8h.html#a3b5eeb9ca21dff551218b71437fc38de":[12,0,1,0,7,44,14],
 "invensense2_8h.html#a3c1305ee16dbee841c1c8d1a43272679":[12,0,1,0,7,44,1,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX92 =
 "invensense2__regs_8h.html#aecb1ea773ec6b826bfb2180658af3584":[12,0,1,0,7,45,94],
 "invensense2__regs_8h.html#aecf8fcfd3069fc0a98fc368966896b72":[12,0,1,0,7,45,35],
 "invensense2__regs_8h.html#aed3d11a8de1ce5e1b6957a6cd71a7bb2":[12,0,1,0,7,45,74],
-"invensense2__regs_8h.html#aed6495b506b472ce4341f32a403ea4a2":[12,0,1,0,7,45,31],
-"invensense2__regs_8h.html#aeec09643ca49966e35a31f3c7e263016":[12,0,1,0,7,45,9],
-"invensense2__regs_8h.html#af04298f252eb44bfbddae4f7aa84db44":[12,0,1,0,7,45,139],
-"invensense2__regs_8h.html#af27c45ce1674e1a80d675a28c5330094":[12,0,1,0,7,45,53],
-"invensense2__regs_8h.html#af47c9d26d473893eabcd0575f705f0fa":[12,0,1,0,7,45,106],
-"invensense2__regs_8h.html#af5a1355ba7606871edf77f1bc9d5b08e":[12,0,1,0,7,45,43],
-"invensense2__regs_8h.html#af70706302d17955aa9a4517d08f658d7":[12,0,1,0,7,45,36],
-"invensense2__regs_8h.html#af7ca9f5c15193f8376b0eac156f73cc4":[12,0,1,0,7,45,159],
-"invensense2__regs_8h.html#af9209c067f334871f75ca14144d0940e":[12,0,1,0,7,45,114],
-"invensense2__regs_8h.html#af92bde3b41eed415eac60656272c82ec":[12,0,1,0,7,45,76]
+"invensense2__regs_8h.html#aed6495b506b472ce4341f32a403ea4a2":[12,0,1,0,7,45,31]
 };

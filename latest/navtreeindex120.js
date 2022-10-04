@@ -1,5 +1,14 @@
 var NAVTREEINDEX120 =
 {
+"module__baro_scp_i2c.html":[1,360],
+"module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,360,1],
+"module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,360,2],
+"module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,360,0],
+"module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,360,2,0],
+"module__baro_sim.html":[1,361],
+"module__baro_sim.html#functions__baro_sim":[1,361,1],
+"module__baro_sim.html#module_load_example__baro_sim":[1,361,0],
+"module__baro_sim.html#module_xml__baro_sim":[1,361,1,0],
 "module__bat_checker.html":[1,127],
 "module__bat_checker.html#configuration__bat_checker":[1,127,1],
 "module__bat_checker.html#functions__bat_checker":[1,127,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX120 =
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,123,0],
 "module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,123,2,0],
 "module__digital_cam_video.html":[1,124],
-"module__digital_cam_video.html#configuration__digital_cam_video":[1,124,1],
-"module__digital_cam_video.html#functions__digital_cam_video":[1,124,2],
-"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,124,0],
-"module__digital_cam_video.html#module_xml__digital_cam_video":[1,124,2,0],
-"module__direct_memory_logger.html":[1,228],
-"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,228,1],
-"module__direct_memory_logger.html#functions__direct_memory_logger":[1,228,2],
-"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,228,0],
-"module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,228,2,0],
-"module__distributed_circular_formation.html":[1,415]
+"module__digital_cam_video.html#configuration__digital_cam_video":[1,124,1]
 };

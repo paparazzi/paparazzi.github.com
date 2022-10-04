@@ -1,5 +1,14 @@
 var NAVTREEINDEX123 =
 {
+"module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,191,0],
+"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,191,3,0],
+"module__imu_mpu9250_spi.html":[1,192],
+"module__imu_mpu9250_spi.html#autoloads__imu_mpu9250_spi":[1,192,2],
+"module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi":[1,192,1],
+"module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi":[1,192,3],
+"module__imu_mpu9250_spi.html#module_load_example__imu_mpu9250_spi":[1,192,0],
+"module__imu_mpu9250_spi.html#module_xml__imu_mpu9250_spi":[1,192,3,0],
+"module__imu_nps.html":[1,193],
 "module__imu_nps.html#functions__imu_nps":[1,193,1],
 "module__imu_nps.html#module_load_example__imu_nps":[1,193,0],
 "module__imu_nps.html#module_xml__imu_nps":[1,193,1,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX123 =
 "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,234,3],
 "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,234,2],
 "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,234,0],
-"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,234,3,0],
-"module__logger_spi_link.html":[1,235],
-"module__logger_spi_link.html#configuration__logger_spi_link":[1,235,1],
-"module__logger_spi_link.html#functions__logger_spi_link":[1,235,2],
-"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,235,0],
-"module__logger_spi_link.html#module_xml__logger_spi_link":[1,235,2,0],
-"module__logger_uart.html":[1,236],
-"module__logger_uart.html#configuration__logger_uart":[1,236,1],
-"module__logger_uart.html#functions__logger_uart":[1,236,2],
-"module__logger_uart.html#module_load_example__logger_uart":[1,236,0]
+"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,234,3,0]
 };

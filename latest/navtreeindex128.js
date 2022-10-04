@@ -1,5 +1,14 @@
 var NAVTREEINDEX128 =
 {
+"modules_2ins_2ins__arduimu_8c.html#a78c0ed4113166dc7fa861569f0899d07":[12,0,1,0,6,36,14,5],
+"modules_2ins_2ins__arduimu_8c.html#a7ad0b6baa7c668497b49a342fbddc246":[12,0,1,0,6,36,14,17],
+"modules_2ins_2ins__arduimu_8c.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,14,3],
+"modules_2ins_2ins__arduimu_8c.html#aac18cc3d324b605dd90d56321d413455":[12,0,1,0,6,36,14,18],
+"modules_2ins_2ins__arduimu_8c.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,14,2],
+"modules_2ins_2ins__arduimu_8c.html#abe0462b4909223132122a278dc640329":[12,0,1,0,6,36,14,9],
+"modules_2ins_2ins__arduimu_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,14,14],
+"modules_2ins_2ins__arduimu_8c.html#acf3d10cd62cbe0aa339544370506c7f4":[12,0,1,0,6,36,14,8],
+"modules_2ins_2ins__arduimu_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12":[12,0,1,0,6,36,14,1],
 "modules_2ins_2ins__arduimu_8c.html#ae31b9398d0a602349add7dff0b46e32e":[12,0,1,0,6,36,14,6],
 "modules_2ins_2ins__arduimu_8c.html#af200b22d545ef773ef3e8a8f1c1f0f4f":[12,0,1,0,6,36,14,7],
 "modules_2ins_2ins__arduimu_8c_source.html":[12,0,1,0,6,36,14],
@@ -240,14 +249,5 @@ var NAVTREEINDEX128 =
 "mpu60x0__i2c_8h.html":[12,0,1,0,7,90],
 "mpu60x0__i2c_8h.html#a0436de01984b618448ea9313b92e1a1f":[12,0,1,0,7,90,0,6],
 "mpu60x0__i2c_8h.html#a0eed8f3d64568296f08ef85ef4a4e1db":[12,0,1,0,7,90,0,2],
-"mpu60x0__i2c_8h.html#a18c3145fc5159f824a0bb9c6e327ede0":[12,0,1,0,7,90,6],
-"mpu60x0__i2c_8h.html#a1b62653862375e462d147451eb41df6e":[12,0,1,0,7,90,9],
-"mpu60x0__i2c_8h.html#a3a6d42f76a6324241321ebe8619c5ae6":[12,0,1,0,7,90,0,3],
-"mpu60x0__i2c_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,90,1,1],
-"mpu60x0__i2c_8h.html#a44298282c9899d72ba6b72a43326446c":[12,0,1,0,7,90,0,4],
-"mpu60x0__i2c_8h.html#a4929a8161b6ff6301f48f6dbcc0b449c":[12,0,1,0,7,90,5],
-"mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea":[12,0,1,0,7,90,7],
-"mpu60x0__i2c_8h.html#a58eda1f21396bdad02e09e0af2e6f341":[12,0,1,0,7,90,0,1],
-"mpu60x0__i2c_8h.html#a6b700f6c51b798ceb4ba491922f6531e":[12,0,1,0,7,90,3],
-"mpu60x0__i2c_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2":[12,0,1,0,7,90,2,0]
+"mpu60x0__i2c_8h.html#a18c3145fc5159f824a0bb9c6e327ede0":[12,0,1,0,7,90,6]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX88 =
 {
+"ins__arduimu__basic_8h.html":[12,0,1,0,6,36,17],
+"ins__arduimu__basic_8h.html#a3f8fc29cfe14b10518e7275613148bc9":[12,0,1,0,6,36,17,7],
+"ins__arduimu__basic_8h.html#a6f80e69d733254b945f208647409073f":[12,0,1,0,6,36,17,0],
+"ins__arduimu__basic_8h.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[12,0,1,0,6,36,17,9],
+"ins__arduimu__basic_8h.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,17,3],
+"ins__arduimu__basic_8h.html#a731e758a70e0e275bc3894bfd4278b55":[12,0,1,0,6,36,17,4],
+"ins__arduimu__basic_8h.html#a89b374a0724b893c9ca3aef4ce34fee3":[12,0,1,0,6,36,17,6],
+"ins__arduimu__basic_8h.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,17,2],
+"ins__arduimu__basic_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,17,1],
 "ins__arduimu__basic_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,17,8],
 "ins__arduimu__basic_8h.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,36,17,5],
 "ins__arduimu__basic_8h_source.html":[12,0,1,0,6,36,17],
@@ -240,14 +249,5 @@ var NAVTREEINDEX88 =
 "ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a":[12,0,1,0,6,36,21,4,9],
 "ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a":[12,0,1,0,6,2,17,4,9],
 "ins__float__invariant_8h.html#structInsFloatInv":[12,0,1,0,6,36,21,5],
-"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,36,21,2],
-"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,2,17,2],
-"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,36,21,3],
-"ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,2,17,3],
-"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,36,21,4],
-"ins__float__invariant_8h.html#structinv__gains":[12,0,1,0,6,2,17,4],
-"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,36,21,1],
-"ins__float__invariant_8h.html#structinv__measures":[12,0,1,0,6,2,17,1],
-"ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,36,21,0],
-"ins__float__invariant_8h.html#structinv__state":[12,0,1,0,6,2,17,0]
+"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,36,21,2]
 };

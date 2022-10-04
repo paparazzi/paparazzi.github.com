@@ -1,5 +1,14 @@
 var NAVTREEINDEX184 =
 {
+"spektrum__radio_8h.html#a9c35e47a5484f5e81d96ccb10ece2211":[12,0,1,0,6,55,21,6],
+"spektrum__radio_8h.html#a9fd86154b023cbc8a9981059db36497b":[12,0,1,0,6,55,21,1],
+"spektrum__radio_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c":[12,0,1,0,6,55,21,3],
+"spektrum__radio_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29":[12,0,1,0,6,55,21,11],
+"spektrum__radio_8h.html#ac5d768a757f013a44c96ecf92287888e":[12,0,1,0,6,55,21,8],
+"spektrum__radio_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8":[12,0,1,0,6,55,21,4],
+"spektrum__radio_8h.html#ad1edc5e4829c731875a561a35a12830f":[12,0,1,0,6,55,21,17],
+"spektrum__radio_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[12,0,1,0,6,55,21,14],
+"spektrum__radio_8h_source.html":[12,0,1,0,6,55,21],
 "spektrum__soft__bind_8c.html":[12,0,1,0,6,63,0],
 "spektrum__soft__bind_8c.html#a1b90f570d944abdf86eb8ab3481a7a0f":[12,0,1,0,6,63,0,0],
 "spektrum__soft__bind_8c_source.html":[12,0,1,0,6,63,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX184 =
 "stabilization__attitude__common__float_8h.html#a5b95468db62686e296194a497bacc25b":[12,0,1,0,3,2,1,3,2],
 "stabilization__attitude__common__float_8h.html#a7a8b8b9921f4fff14a7c029d43448fc3":[12,0,1,0,3,2,1,3,0,5],
 "stabilization__attitude__common__float_8h.html#a88d80ddc98a9740ff65cc1e146840254":[12,0,1,0,3,2,1,3,0,6],
-"stabilization__attitude__common__float_8h.html#a8ce7bbebd00044be34b96bf126cd672d":[12,0,1,0,3,2,1,3,0,1],
-"stabilization__attitude__common__float_8h.html#a9ab9c0022f5120a4aab45e1e21433b75":[12,0,1,0,3,2,1,3,0,3],
-"stabilization__attitude__common__float_8h.html#acbe3ffdf9c35e128e46f03091342e2cb":[12,0,1,0,3,2,1,3,1],
-"stabilization__attitude__common__float_8h.html#ae6861f4b294fb48e83d5796c5a26147d":[12,0,1,0,3,2,1,3,0,8],
-"stabilization__attitude__common__float_8h.html#af92656755f70798294413b0e009aac53":[12,0,1,0,3,2,1,3,0,2],
-"stabilization__attitude__common__float_8h.html#structFloatAttitudeGains":[12,0,1,0,3,2,1,3,0],
-"stabilization__attitude__common__float_8h_source.html":[12,0,1,0,3,2,1,3],
-"stabilization__attitude__common__int_8h.html":[12,0,1,0,3,2,1,4],
-"stabilization__attitude__common__int_8h.html#a1f2a582f86594155e1586c6d75a15d8b":[12,0,1,0,3,2,1,4,0,0],
-"stabilization__attitude__common__int_8h.html#a2c47a9d01aee2d7c2dd277cf6bdccc93":[12,0,1,0,3,2,1,4,0,2]
+"stabilization__attitude__common__float_8h.html#a8ce7bbebd00044be34b96bf126cd672d":[12,0,1,0,3,2,1,3,0,1]
 };

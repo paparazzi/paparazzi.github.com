@@ -1,5 +1,14 @@
 var NAVTREEINDEX126 =
 {
+"module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,383,2,0],
+"module__stabilization_heli_indi.html":[1,384],
+"module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,384,1],
+"module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,384,2],
+"module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,384,0],
+"module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,384,2,0],
+"module__stabilization_indi.html":[1,385],
+"module__stabilization_indi.html#configuration__stabilization_indi":[1,385,1],
+"module__stabilization_indi.html#functions__stabilization_indi":[1,385,2],
 "module__stabilization_indi.html#module_load_example__stabilization_indi":[1,385,0],
 "module__stabilization_indi.html#module_xml__stabilization_indi":[1,385,2,0],
 "module__stabilization_indi_simple.html":[1,386],
@@ -240,14 +249,5 @@ var NAVTREEINDEX126 =
 "module__trig_test.html#module_xml__trig_test":[1,82,1,0],
 "module__tune_airspeed.html":[1,318],
 "module__tune_airspeed.html#configuration__tune_airspeed":[1,318,1],
-"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,318,0],
-"module__tune_airspeed.html#module_xml__tune_airspeed":[1,318,1,0],
-"module__uart.html":[1,247],
-"module__uart.html#module_load_example__uart":[1,247,0],
-"module__uart.html#module_xml__uart":[1,247,0,0],
-"module__uav_recovery.html":[1,452],
-"module__uav_recovery.html#configuration__uav_recovery":[1,452,1],
-"module__uav_recovery.html#functions__uav_recovery":[1,452,2],
-"module__uav_recovery.html#module_load_example__uav_recovery":[1,452,0],
-"module__uav_recovery.html#module_xml__uav_recovery":[1,452,2,0]
+"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,318,0]
 };
