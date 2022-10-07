@@ -1,5 +1,6 @@
 var NAVTREEINDEX119 =
 {
+"module__actuators_dummy.html#module_load_example__actuators_dummy":[1,8,0],
 "module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
 "module__actuators_esc32.html":[1,9],
 "module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX119 =
 "module__baro_ms5611_spi.html":[1,359],
 "module__baro_ms5611_spi.html#configuration__baro_ms5611_spi":[1,359,1],
 "module__baro_ms5611_spi.html#functions__baro_ms5611_spi":[1,359,2],
-"module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,359,0],
-"module__baro_ms5611_spi.html#module_xml__baro_ms5611_spi":[1,359,2,0]
+"module__baro_ms5611_spi.html#module_load_example__baro_ms5611_spi":[1,359,0]
 };

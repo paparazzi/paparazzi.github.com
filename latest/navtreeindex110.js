@@ -1,5 +1,6 @@
 var NAVTREEINDEX110 =
 {
+"matekF765-WING_8h.html#a71adfcd60fc6d58fff4ef3053944cd9a":[12,0,1,0,1,15,0,1,96],
 "matekF765-WING_8h.html#a7306050aa843659659499bde3429b417":[12,0,1,0,1,15,0,1,137],
 "matekF765-WING_8h.html#a73180441e4e94e67eac7d518dc8958a6":[12,0,1,0,1,15,0,1,195],
 "matekF765-WING_8h.html#a745f443c330c61471cba9ced96957efb":[12,0,1,0,1,15,0,1,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX110 =
 "matek__f405__wing__v1_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,47,37],
 "matek__f405__wing__v1_8h.html#a77c3af075354416adaba09eac2e953c2":[12,0,1,0,1,47,146],
 "matek__f405__wing__v1_8h.html#a787b5d0dff7658e5e923331317635545":[12,0,1,0,1,47,129],
-"matek__f405__wing__v1_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,47,96],
-"matek__f405__wing__v1_8h.html#a78b91cae357eed2023271f3a889047dd":[12,0,1,0,1,47,100]
+"matek__f405__wing__v1_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,47,96]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"file__logger_8h.html#acee92eb5d6ecc42e2da631d10303330a":[12,0,1,0,6,41,4,2],
 "file__logger_8h_source.html":[12,0,1,0,6,41,4],
 "files.html":[12,0],
 "filter__1euro__imu_8c.html":[12,0,1,0,6,35,0],
@@ -12,9 +13,9 @@ var NAVTREEINDEX54 =
 "filter__1euro__imu_8c.html#a2c4d364276eac43ce3917129d941f2e8":[12,0,1,0,6,35,0,3],
 "filter__1euro__imu_8c.html#a316a606bce31979bcc4c5bbd79b4afe2":[12,0,1,0,6,35,0,16],
 "filter__1euro__imu_8c.html#a32794a4b9b572535ab81c25e77fe0812":[12,0,1,0,6,35,0,6],
-"filter__1euro__imu_8c.html#a3391ef8d77cbd54cf3fc752ba8cfbbd7":[12,0,1,0,6,35,0,9],
 "filter__1euro__imu_8c.html#a44d506760598e8c18e5da6e52dfc6b0d":[12,0,1,0,6,35,0,25],
 "filter__1euro__imu_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826":[12,0,1,0,6,35,0,21],
+"filter__1euro__imu_8c.html#a47e1ea35fdb43af72537c6c9f38b889d":[12,0,1,0,6,35,0,18],
 "filter__1euro__imu_8c.html#a49cc1e545848b85016af530049991c02":[12,0,1,0,6,35,0,19],
 "filter__1euro__imu_8c.html#a4ff05d39f8621fe30fa320ebfbd54491":[12,0,1,0,6,35,0,7],
 "filter__1euro__imu_8c.html#a51f5f59b347ecf8d7c8fbbac098b85d1":[12,0,1,0,6,35,0,23],
@@ -24,11 +25,11 @@ var NAVTREEINDEX54 =
 "filter__1euro__imu_8c.html#a72762cec53feca77b4093d13c547b654":[12,0,1,0,6,35,0,12],
 "filter__1euro__imu_8c.html#a7346d94d46fd872583eff79f9b74db6f":[12,0,1,0,6,35,0,14],
 "filter__1euro__imu_8c.html#a891cf332e0c51a8cb0ad84ba2aa7f927":[12,0,1,0,6,35,0,5],
+"filter__1euro__imu_8c.html#aacd6b1869f263f90a6f1fbe777a87793":[12,0,1,0,6,35,0,9],
 "filter__1euro__imu_8c.html#ab72d358ee01f116cfb8bcbe66dcb59e0":[12,0,1,0,6,35,0,8],
 "filter__1euro__imu_8c.html#ab91db52140ee483950fad900efcd3ca2":[12,0,1,0,6,35,0,1],
 "filter__1euro__imu_8c.html#ac5440f07272979ecc4ceb8b288758320":[12,0,1,0,6,35,0,10],
 "filter__1euro__imu_8c.html#ade4345b837c93a28269d599297a5d03b":[12,0,1,0,6,35,0,20],
-"filter__1euro__imu_8c.html#ae9c5b8b1459ca820fa1e65d101742a71":[12,0,1,0,6,35,0,18],
 "filter__1euro__imu_8c_source.html":[12,0,1,0,6,35,0],
 "filter__1euro__imu_8h.html":[12,0,1,0,6,35,1],
 "filter__1euro__imu_8h.html#a01a8fd78ce88a190812dba19c023c803":[12,0,1,0,6,35,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "flight__benchmark_8c.html#a5f69b98a1398d874503d8b86e47e19b1":[12,0,1,0,6,5,0,7],
 "flight__benchmark_8c.html#a6076ee1cc054c9364df8c7539742c35c":[12,0,1,0,6,5,0,3],
 "flight__benchmark_8c.html#a7cba1520680a1e1397eec3f8605b3cee":[12,0,1,0,6,5,0,5],
-"flight__benchmark_8c.html#a8d6b7ceef28725b3dea8c46b2433dc16":[12,0,1,0,6,5,0,8],
-"flight__benchmark_8c.html#a9c89ccb67edcffa690db968ae55d0e38":[12,0,1,0,6,5,0,9]
+"flight__benchmark_8c.html#a8d6b7ceef28725b3dea8c46b2433dc16":[12,0,1,0,6,5,0,8]
 };

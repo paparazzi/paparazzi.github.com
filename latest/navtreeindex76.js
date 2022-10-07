@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"gvf_8h.html#afe2cdb2aba862c8f4435d377afdbd59f":[12,0,1,0,6,30,0,3,7],
 "gvf_8h.html#structgvf__Hess":[12,0,1,0,6,30,0,3,5],
 "gvf_8h.html#structgvf__con":[12,0,1,0,6,30,0,3,0],
 "gvf_8h.html#structgvf__grad":[12,0,1,0,6,30,0,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "hackhd_8h.html#a547a4c3830f83d2e5fc804317fcf67b3":[12,0,1,0,6,18,12,0,4],
 "hackhd_8h.html#a6018ba71219478bbe72ca662e80c0aee":[12,0,1,0,6,18,12,0,5],
 "hackhd_8h.html#a6ff0090c5d817fe5384d164ec0c63561":[12,0,1,0,6,18,12,4],
-"hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83":[12,0,1,0,6,18,12,0,0],
-"hackhd_8h.html#a810a7d5a2238159f421cb8c74718422e":[12,0,1,0,6,18,12,1]
+"hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83":[12,0,1,0,6,18,12,0,0]
 };

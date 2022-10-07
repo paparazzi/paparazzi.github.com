@@ -1,5 +1,6 @@
 var NAVTREEINDEX85 =
 {
+"imavmarker_8h_source.html":[12,0,1,0,6,11,0,3],
 "imu_8c.html":[12,0,1,0,6,35,2],
 "imu_8c.html#a0b0dc32bfbf49e0830242cec59f8fe8f":[12,0,1,0,6,35,2,16],
 "imu_8c.html#a0c1c31015cb92b423f7e35994456d9e5":[12,0,1,0,6,35,2,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX85 =
 "imu__bmi088__i2c_8c.html#a688a0cac0c423c242b7b08fc7b6de2b4":[12,0,1,0,6,35,14,11],
 "imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92":[12,0,1,0,6,35,14,8],
 "imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f":[12,0,1,0,6,35,14,4],
-"imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04":[12,0,1,0,6,35,14,2],
-"imu__bmi088__i2c_8c.html#aa392dce0f33c559a6dd2a12865db721b":[12,0,1,0,6,35,14,14]
+"imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04":[12,0,1,0,6,35,14,2]
 };

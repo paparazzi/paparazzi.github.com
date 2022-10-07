@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,383,0],
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,383,2,0],
 "module__stabilization_heli_indi.html":[1,384],
 "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,384,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX126 =
 "module__trig_test.html#module_load_example__trig_test":[1,82,0],
 "module__trig_test.html#module_xml__trig_test":[1,82,1,0],
 "module__tune_airspeed.html":[1,318],
-"module__tune_airspeed.html#configuration__tune_airspeed":[1,318,1],
-"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,318,0]
+"module__tune_airspeed.html#configuration__tune_airspeed":[1,318,1]
 };

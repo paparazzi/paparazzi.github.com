@@ -1,5 +1,6 @@
 var NAVTREEINDEX83 =
 {
+"hott__gam_8h.html#ae3e90761c8956daff735f64534ddf3ad":[12,0,1,0,6,34,3,0,37],
 "hott__gam_8h.html#ae891c6bd75786927d016c11ea6952d81":[12,0,1,0,6,34,3,0,12],
 "hott__gam_8h.html#ae9ccfa76e27a105f88ef2b4468d80826":[12,0,1,0,6,34,3,0,25],
 "hott__gam_8h.html#aeb2df380c1435ea584027ef3423f2bdf":[12,0,1,0,6,34,3,0,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX83 =
 "humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa6e3d448b229697a765e456eecac64522":[12,0,1,0,6,43,22,5,8],
 "humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5":[12,0,1,0,6,43,22,5,0],
 "humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa79c645290c77eb3e3af3a48f8ffecd48":[12,0,1,0,6,43,22,5,7],
-"humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aaa6641f6e9f33ba140d87a75a0f98ac21":[12,0,1,0,6,43,22,5,13],
-"humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aabb0f16bd99f18df6c989314ad448a04c":[12,0,1,0,6,43,22,5,12]
+"humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aaa6641f6e9f33ba140d87a75a0f98ac21":[12,0,1,0,6,43,22,5,13]
 };

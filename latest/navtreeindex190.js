@@ -1,5 +1,6 @@
 var NAVTREEINDEX190 =
 {
+"styledoxygen.html":[0,1,1],
 "styledoxygen.html#styledoxyall":[0,1,1,1],
 "styledoxygen.html#styledoxyblocks":[0,1,1,0],
 "styledoxygen.html#styledoxytext":[0,1,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX190 =
 "sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d":[12,0,1,0,6,12,14,9],
 "sys__mon_8c_source.html":[12,0,1,0,6,12,14],
 "sys__mon_8h.html":[12,0,1,0,6,12,15],
-"sys__mon_8h.html#a5b750b36817e9e5d6717863bc4e61194":[12,0,1,0,6,12,15,0],
-"sys__mon_8h.html#abaa925469e5ec124a8333c7bce1c5c12":[12,0,1,0,6,12,15,3]
+"sys__mon_8h.html#a5b750b36817e9e5d6717863bc4e61194":[12,0,1,0,6,12,15,0]
 };

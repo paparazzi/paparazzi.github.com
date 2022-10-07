@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"detect__gate_8c.html#aff1d41ad113c286ef76af4bc924a3bc0":[12,0,1,0,6,11,22,1],
 "detect__gate_8c_source.html":[12,0,1,0,6,11,22],
 "detect__gate_8h.html":[12,0,1,0,6,11,23],
 "detect__gate_8h.html#a0aa1d80a7fddb8ff76eb4347b72d2b28":[12,0,1,0,6,11,23,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "dir_92fbf38b8c893a0928a3445a75d0ac01.html":[12,0,1,0,0,1],
 "dir_93997fa94db05292d114fcb1dd488916.html":[12,0,1,0,1,1],
 "dir_94757629c544be2d6d24b01569be56e6.html":[12,0,1,0,6,13],
-"dir_96eaec2f1e522125fb961595a8f98941.html":[12,0,1,0,6,28,0],
-"dir_9749bdb0f197d170789914bb8b6d9688.html":[12,0,1,0,1,18]
+"dir_96eaec2f1e522125fb961595a8f98941.html":[12,0,1,0,6,28,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"nav__cube_8h.html#structNavCube":[12,0,1,0,6,46,11,0],
 "nav__cube_8h_source.html":[12,0,1,0,6,46,11],
 "nav__drop_8c.html":[12,0,1,0,6,46,12],
 "nav__drop_8c_source.html":[12,0,1,0,6,46,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "nav__launcher_8c.html#ac6ede131c2e7af4bd64a4291b097b483":[12,0,1,0,6,46,25,17],
 "nav__launcher_8c.html#ad17d9dabf20ec9d72bd2f54e9a328b0a":[12,0,1,0,6,46,25,6],
 "nav__launcher_8c.html#ae0aa9f5ac06f76d2eb9c95d56d39b009":[12,0,1,0,6,46,25,14],
-"nav__launcher_8c.html#af0d8169e9b07becfcc54ffad1d483576":[12,0,1,0,6,46,25,8],
-"nav__launcher_8c_source.html":[12,0,1,0,6,46,25]
+"nav__launcher_8c.html#af0d8169e9b07becfcc54ffad1d483576":[12,0,1,0,6,46,25,8]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX89 =
 {
+"ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,36,21,2],
 "ins__float__invariant_8h.html#structinv__command":[12,0,1,0,6,2,17,2],
 "ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,36,21,3],
 "ins__float__invariant_8h.html#structinv__correction__gains":[12,0,1,0,6,2,17,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX89 =
 "ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1a9d31addce40d451ee9bb6c9ff4a53c3f":[12,0,1,0,6,36,29,33,6],
 "ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1ab406fd51f7a8e47a4482369f15752870":[12,0,1,0,6,36,29,33,13],
 "ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1abb814c000453b503c26c387597bfdadd":[12,0,1,0,6,36,29,33,10],
-"ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1acdabe674f66f4d6d5c5dfad29468c294":[12,0,1,0,6,36,29,33,12],
-"ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1ad543eeb61ffc14325b352e0628f1b3ac":[12,0,1,0,6,36,29,33,0]
+"ins__mekf__wind_8cpp.html#ac866700bc4b692d0796977d6345f01e1acdabe674f66f4d6d5c5dfad29468c294":[12,0,1,0,6,36,29,33,12]
 };

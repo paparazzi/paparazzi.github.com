@@ -1,5 +1,6 @@
 var NAVTREEINDEX184 =
 {
+"spektrum__radio_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465":[12,0,1,0,6,55,21,5],
 "spektrum__radio_8h.html#a9c35e47a5484f5e81d96ccb10ece2211":[12,0,1,0,6,55,21,6],
 "spektrum__radio_8h.html#a9fd86154b023cbc8a9981059db36497b":[12,0,1,0,6,55,21,1],
 "spektrum__radio_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c":[12,0,1,0,6,55,21,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX184 =
 "stabilization__attitude__common__float_8h.html#a4805f33ea4c321bd760fabeafd5483ad":[12,0,1,0,3,2,1,3,0,7],
 "stabilization__attitude__common__float_8h.html#a5b95468db62686e296194a497bacc25b":[12,0,1,0,3,2,1,3,2],
 "stabilization__attitude__common__float_8h.html#a7a8b8b9921f4fff14a7c029d43448fc3":[12,0,1,0,3,2,1,3,0,5],
-"stabilization__attitude__common__float_8h.html#a88d80ddc98a9740ff65cc1e146840254":[12,0,1,0,3,2,1,3,0,6],
-"stabilization__attitude__common__float_8h.html#a8ce7bbebd00044be34b96bf126cd672d":[12,0,1,0,3,2,1,3,0,1]
+"stabilization__attitude__common__float_8h.html#a88d80ddc98a9740ff65cc1e146840254":[12,0,1,0,3,2,1,3,0,6]
 };

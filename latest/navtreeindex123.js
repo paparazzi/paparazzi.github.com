@@ -1,5 +1,6 @@
 var NAVTREEINDEX123 =
 {
+"module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,191,3],
 "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,191,0],
 "module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,191,3,0],
 "module__imu_mpu9250_spi.html":[1,192],
@@ -248,6 +249,5 @@ var NAVTREEINDEX123 =
 "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,234,1],
 "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,234,3],
 "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,234,2],
-"module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,234,0],
-"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,234,3,0]
+"module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,234,0]
 };

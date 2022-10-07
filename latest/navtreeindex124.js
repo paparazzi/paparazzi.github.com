@@ -1,5 +1,6 @@
 var NAVTREEINDEX124 =
 {
+"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,234,3,0],
 "module__logger_spi_link.html":[1,235],
 "module__logger_spi_link.html#configuration__logger_spi_link":[1,235,1],
 "module__logger_spi_link.html#functions__logger_spi_link":[1,235,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX124 =
 "module__optical_flow_hover.html":[1,90],
 "module__optical_flow_hover.html#functions__optical_flow_hover":[1,90,1],
 "module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,90,0],
-"module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,90,1,0],
-"module__optical_flow_landing.html":[1,91]
+"module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,90,1,0]
 };

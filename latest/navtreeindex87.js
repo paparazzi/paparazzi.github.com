@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"imu__mpu9250__i2c_8c.html#aba20ea126e07ee2e23c1bea054869cae":[12,0,1,0,6,35,28,9],
 "imu__mpu9250__i2c_8c.html#abfcf6b8a46dd1240e88121fc8d206449":[12,0,1,0,6,35,28,6],
 "imu__mpu9250__i2c_8c.html#ac05033e05a8b4d17b50ba594dddf0db1":[12,0,1,0,6,35,28,5],
 "imu__mpu9250__i2c_8c.html#ac8db3e78c1698a004ce4034d32de70c4":[12,0,1,0,6,35,28,3],
@@ -51,13 +52,13 @@ var NAVTREEINDEX87 =
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,35,31,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,35,31,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,35,31,4],
-"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,29,0,2],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,31,0,2],
+"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,29,0,2],
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,31,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,35,31,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,31,3],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,31,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,29,0],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,31,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,35,31],
 "imu__nps_8c.html":[12,0,1,0,6,35,32],
 "imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,35,32,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "ins__arduimu_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,15,1],
 "ins__arduimu_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,15,6],
 "ins__arduimu_8h.html#acf3d10cd62cbe0aa339544370506c7f4":[12,0,1,0,6,36,15,5],
-"ins__arduimu_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a":[12,0,1,0,6,36,15,0],
-"ins__arduimu_8h_source.html":[12,0,1,0,6,36,15]
+"ins__arduimu_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a":[12,0,1,0,6,36,15,0]
 };

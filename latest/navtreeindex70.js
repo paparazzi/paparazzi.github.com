@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606":[12,0,1,0,4,17,2],
 "group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606":[12,0,1,0,4,18,21],
 "group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606":[9,9,2,5,21],
 "group__math__geodetic__wmm.html#ga73c5974d5caf8bd336ecb273356e2a09":[12,0,1,0,4,18,8],
@@ -151,13 +152,13 @@ var NAVTREEINDEX70 =
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,20,2],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,21,3],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[9,0,6],
-"group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[12,0,1,0,21,4],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[12,0,1,0,20,3],
+"group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[12,0,1,0,21,4],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,1,2,3,1],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[9,0,4],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,1,6,2,1],
-"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,20,1],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,21,2],
+"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,20,1],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[12,0,1,0,21,0,3],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[9,0,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6":[9,0,1,11],
 "group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6":[12,0,1,0,5,16,10],
 "group__spi.html#ga96cc97e73af8ec7cffa9e1d4526692fc":[9,0,1,3],
-"group__spi.html#ga96cc97e73af8ec7cffa9e1d4526692fc":[12,0,1,0,5,16,2],
-"group__spi.html#ga96e7e9bbfca8b326307e8b20ba4706e1":[9,0,1,18]
+"group__spi.html#ga96cc97e73af8ec7cffa9e1d4526692fc":[12,0,1,0,5,16,2]
 };

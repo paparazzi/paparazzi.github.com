@@ -1,5 +1,6 @@
 var NAVTREEINDEX121 =
 {
+"module__digital_cam_video.html#configuration__digital_cam_video":[1,124,1],
 "module__digital_cam_video.html#functions__digital_cam_video":[1,124,2],
 "module__digital_cam_video.html#module_load_example__digital_cam_video":[1,124,0],
 "module__digital_cam_video.html#module_xml__digital_cam_video":[1,124,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX121 =
 "module__gsm.html#module_load_example__gsm":[1,423,0],
 "module__gsm.html#module_xml__gsm":[1,423,1,0],
 "module__guidance_basic_fw.html":[1,152],
-"module__guidance_basic_fw.html#configuration__guidance_basic_fw":[1,152,1],
-"module__guidance_basic_fw.html#functions__guidance_basic_fw":[1,152,2]
+"module__guidance_basic_fw.html#configuration__guidance_basic_fw":[1,152,1]
 };

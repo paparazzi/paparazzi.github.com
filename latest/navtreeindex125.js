@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"module__optical_flow_landing.html":[1,91],
 "module__optical_flow_landing.html#configuration__optical_flow_landing":[1,91,1],
 "module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,91,0],
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,91,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,382,2,0],
 "module__stabilization_float_quat.html":[1,383],
 "module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,383,1],
-"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,383,2],
-"module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,383,0]
+"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,383,2]
 };
