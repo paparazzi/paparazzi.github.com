@@ -74,6 +74,7 @@ var px4fmu_2chibios_2v2_84_2mcuconf_8h =
     [ "STM32_I2C_I2C3_IRQ_PRIORITY", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a978ffaebe063c8a9f64525ed2f13bd09", null ],
     [ "STM32_I2C_I2C3_RX_DMA_STREAM", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a39873d5a932294ccab14f1bdd766fffb", null ],
     [ "STM32_I2C_I2C3_TX_DMA_STREAM", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9ac12a927168fe9a90122b0a54110e24", null ],
+    [ "STM32_I2C_ISR_LIMIT", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a89d7461cb369d4e15e59937bb9481366", null ],
     [ "STM32_I2C_USE_I2C1", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ad73fb3ae5b2aca05e0f5155cff7a8b2d", null ],
     [ "STM32_I2C_USE_I2C2", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c", null ],
     [ "STM32_I2C_USE_I2C3", "px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a086d8965c7249503bdce6f9b4a7352cb", null ],

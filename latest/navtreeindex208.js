@@ -1,6 +1,7 @@
 var NAVTREEINDEX208 =
 {
 "xsens700_8h.html#structXsens":[12,0,1,0,6,36,54,1],
+"xsens700_8h.html#structXsens":[12,0,1,0,6,36,52,1],
 "xsens700_8h.html#structXsensTime":[12,0,1,0,6,36,54,0],
 "xsens700_8h.html#structXsensTime":[12,0,1,0,6,36,52,0],
 "xsens700_8h_source.html":[12,0,1,0,6,36,54],

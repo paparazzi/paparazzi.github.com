@@ -113,11 +113,6 @@ var onboard_modules =
         [ "Raw actuators_ostrich.xml file:", "module__actuators_ostrich.html#module_xml__actuators_ostrich", null ]
       ] ]
     ] ],
-    [ "actuators_ppm module", "module__actuators_ppm.html", [
-      [ "Example for airframe file", "module__actuators_ppm.html#module_load_example__actuators_ppm", [
-        [ "Raw actuators_ppm.xml file:", "module__actuators_ppm.html#module_xml__actuators_ppm", null ]
-      ] ]
-    ] ],
     [ "actuators_pwm module", "module__actuators_pwm.html", [
       [ "Example for airframe file", "module__actuators_pwm.html#module_load_example__actuators_pwm", [
         [ "Raw actuators_pwm.xml file:", "module__actuators_pwm.html#module_xml__actuators_pwm", null ]

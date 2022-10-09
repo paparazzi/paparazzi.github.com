@@ -14,7 +14,6 @@ var dir_70fcbe4bfac1daf70a9a1cc8a4943db9 =
     [ "actuators_md25.h", "actuators__md25_8h.html", "actuators__md25_8h" ],
     [ "actuators_ostrich.c", "actuators__ostrich_8c.html", "actuators__ostrich_8c" ],
     [ "actuators_ostrich.h", "actuators__ostrich_8h.html", "actuators__ostrich_8h" ],
-    [ "actuators_ppm.h", "actuators__ppm_8h.html", null ],
     [ "actuators_pwm.h", "actuators__pwm_8h.html", "actuators__pwm_8h" ],
     [ "actuators_sbus.c", "actuators__sbus_8c.html", "actuators__sbus_8c" ],
     [ "actuators_sbus.h", "actuators__sbus_8h.html", "actuators__sbus_8h" ],

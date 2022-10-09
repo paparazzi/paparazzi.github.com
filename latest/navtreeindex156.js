@@ -1,6 +1,5 @@
 var NAVTREEINDEX156 =
 {
-"paparazzi_messages.html#GOTO_MISSION":[2,1,27],
 "paparazzi_messages.html#GP2Y_STATUS":[2,0,96],
 "paparazzi_messages.html#GPS":[2,0,7],
 "paparazzi_messages.html#GPS_INJECT":[2,1,51],
@@ -249,5 +248,6 @@ var NAVTREEINDEX156 =
 "pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288":[12,0,1,0,1,57,8],
 "pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4":[12,0,1,0,1,57,7],
 "pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82":[12,0,1,0,1,57,6],
-"pc__sim_8h_source.html":[12,0,1,0,1,57]
+"pc__sim_8h_source.html":[12,0,1,0,1,57],
+"pca95xx_8c.html":[12,0,1,0,7,110]
 };

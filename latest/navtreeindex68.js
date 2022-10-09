@@ -1,5 +1,10 @@
 var NAVTREEINDEX68 =
 {
+"group__math__algebra__int.html#ga7e0cea5a49210d843282259d0a40d8e0":[9,9,1,3,149],
+"group__math__algebra__int.html#ga8196df28de9df908603851124170e2f0":[12,0,1,0,4,6,20],
+"group__math__algebra__int.html#ga8196df28de9df908603851124170e2f0":[12,0,1,0,4,7,124],
+"group__math__algebra__int.html#ga8196df28de9df908603851124170e2f0":[9,9,1,3,141],
+"group__math__algebra__int.html#ga848db4ffefdcaad9fe4d6fe50df6e983":[12,0,1,0,4,7,144],
 "group__math__algebra__int.html#ga848db4ffefdcaad9fe4d6fe50df6e983":[9,9,1,3,161],
 "group__math__algebra__int.html#ga870272b71562d3d586e02fb38ab8826c":[12,0,1,0,4,7,55],
 "group__math__algebra__int.html#ga870272b71562d3d586e02fb38ab8826c":[9,9,1,3,72],
@@ -244,10 +249,5 @@ var NAVTREEINDEX68 =
 "group__math__geodetic__double.html#structLlaCoor__d":[9,9,2,1,1],
 "group__math__geodetic__double.html#structLtpDef__d":[9,9,2,1,5],
 "group__math__geodetic__double.html#structNedCoor__d":[9,9,2,1,2],
-"group__math__geodetic__double.html#structUtmCoor__d":[9,9,2,1,4],
-"group__math__geodetic__generic.html":[9,9,2,0],
-"group__math__geodetic__generic.html#ga1afb90ecc1c675e070b299d85a27b7f9":[12,0,1,0,4,8,8],
-"group__math__geodetic__generic.html#ga1afb90ecc1c675e070b299d85a27b7f9":[9,9,2,0,8],
-"group__math__geodetic__generic.html#ga2d3fd05b5a2cec4efa0a0f78c281a37a":[12,0,1,0,4,8,3],
-"group__math__geodetic__generic.html#ga2d3fd05b5a2cec4efa0a0f78c281a37a":[9,9,2,0,3]
+"group__math__geodetic__double.html#structUtmCoor__d":[9,9,2,1,4]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__cfa":[12,0,1,0,1,2,0,0,15,10],
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__x__center":[12,0,1,0,1,2,0,0,15,3],
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__x__squared":[12,0,1,0,1,2,0,0,15,4],
 "avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__circle__pos__y__center":[12,0,1,0,1,2,0,0,15,5],
@@ -51,9 +50,9 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__yuv_8h.html#a6c60a7c08f65ef509f17b761be514bd3":[12,0,1,0,1,2,0,0,16,17,0],
 "avi__isp__statistics__yuv_8h.html#a714111278d004f11e6d421b8cd796e54":[12,0,1,0,1,2,0,0,16,11,0],
 "avi__isp__statistics__yuv_8h.html#a72588b7a1e849b11b29d86072680fa49":[12,0,1,0,1,2,0,0,16,32,0],
+"avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,28,0],
 "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,22,0],
 "avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,21,0],
-"avi__isp__statistics__yuv_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,16,28,0],
 "avi__isp__statistics__yuv_8h.html#a74e7eb1b5a2c78158509d50529293df9":[12,0,1,0,1,2,0,0,16,22,1],
 "avi__isp__statistics__yuv_8h.html#a763448fd736df73f6de365d457ed58a7":[12,0,1,0,1,2,0,0,16,29,0],
 "avi__isp__statistics__yuv_8h.html#a7688486706f73bf6fa4bea7bbad38a87":[12,0,1,0,1,2,0,0,16,43],
@@ -249,5 +248,6 @@ var NAVTREEINDEX19 =
 "baro__amsys_8c.html#a61d93b1a8d329d9696a9d5fdbe903202":[12,0,1,0,6,60,24,21],
 "baro__amsys_8c.html#a6c29bfcdac10758f34aae3af65f6a6b4":[12,0,1,0,6,60,24,7],
 "baro__amsys_8c.html#a6ec5d74bdc67c8cd52f7041f3f0eeeba":[12,0,1,0,6,60,24,24],
-"baro__amsys_8c.html#a6f2c97501dcc2d6fc525bbc7bca83646":[12,0,1,0,6,60,24,9]
+"baro__amsys_8c.html#a6f2c97501dcc2d6fc525bbc7bca83646":[12,0,1,0,6,60,24,9],
+"baro__amsys_8c.html#a727e1b60971a67b66633de94a92b0c48":[12,0,1,0,6,60,24,26]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX54 =
 {
+"file__logger_8c.html#aedf964b4eac186cec0fa29db265ad5d1":[12,0,1,0,6,41,3,6],
+"file__logger_8c_source.html":[12,0,1,0,6,41,3],
+"file__logger_8h.html":[12,0,1,0,6,41,4],
+"file__logger_8h.html#a0a108be83e6a060666234d7b46a36907":[12,0,1,0,6,41,4,0],
+"file__logger_8h.html#a8b966ef778bb5d676021e1c925540e5f":[12,0,1,0,6,41,4,1],
 "file__logger_8h.html#acee92eb5d6ecc42e2da631d10303330a":[12,0,1,0,6,41,4,2],
 "file__logger_8h_source.html":[12,0,1,0,6,41,4],
 "files.html":[12,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX54 =
 "fixedwing_2stabilization_2stabilization__attitude_8h_source.html":[12,0,1,0,3,1,1,3],
 "flight__benchmark_8c.html":[12,0,1,0,6,5,0],
 "flight__benchmark_8c.html#a32990d5437f07167a684a9dc97602022":[12,0,1,0,6,5,0,10],
-"flight__benchmark_8c.html#a42ae975c1caf0cfcf6d713897773a16a":[12,0,1,0,6,5,0,1],
-"flight__benchmark_8c.html#a4dcacc8a9bc906ab084299c2614669ec":[12,0,1,0,6,5,0,0],
-"flight__benchmark_8c.html#a5f69b98a1398d874503d8b86e47e19b1":[12,0,1,0,6,5,0,7],
-"flight__benchmark_8c.html#a6076ee1cc054c9364df8c7539742c35c":[12,0,1,0,6,5,0,3],
-"flight__benchmark_8c.html#a7cba1520680a1e1397eec3f8605b3cee":[12,0,1,0,6,5,0,5],
-"flight__benchmark_8c.html#a8d6b7ceef28725b3dea8c46b2433dc16":[12,0,1,0,6,5,0,8]
+"flight__benchmark_8c.html#a42ae975c1caf0cfcf6d713897773a16a":[12,0,1,0,6,5,0,1]
 };

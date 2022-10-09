@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('common__board_8h.html',''); initResiza
 <p>Generic board file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;board.h&quot;</code><br />
+<code>#include &lt;hal.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for common_board.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -102,7 +103,8 @@ $(document).ready(function(){initNavTree('common__board_8h.html',''); initResiza
 <div class="center"><img src="common__board_8h__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2common__board_8h" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2common__board_8h" id="sw_2airborne_2arch_2chibios_2common__board_8h">
 <area shape="rect" title="Generic board file." alt="" coords="5,5,185,47"/>
-<area shape="rect" title=" " alt="" coords="60,95,131,121"/>
+<area shape="rect" title=" " alt="" coords="17,95,88,121"/>
+<area shape="rect" title=" " alt="" coords="112,95,167,121"/>
 </map>
 </div>
 </div>
@@ -115,6 +117,16 @@ Macros</h2></td></tr>
 <tr class="separator:a00cbc08b2249df24b1d43d5ca62df28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b3763b028a22f31e74b55b8aa11dde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">CONCAT_BOARD_PARAM</a>(_s1,  _s2)&#160;&#160;&#160;<a class="el" href="tawaki_8h.html#a00cbc08b2249df24b1d43d5ca62df28e">_CONCAT_BOARD_PARAM</a>(_s1, _s2)</td></tr>
 <tr class="separator:ad9b3763b028a22f31e74b55b8aa11dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afe2958e694b8dbafb9ba80c136e703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a7afe2958e694b8dbafb9ba80c136e703">PWM_INPUT1_ICU</a>&#160;&#160;&#160;<a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">CONCAT_BOARD_PARAM</a>(ICUD, <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7e349ccd350d97790a88ef088f8e2a93">PWM_INPUT1_TIM</a>)</td></tr>
+<tr class="separator:a7afe2958e694b8dbafb9ba80c136e703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc3cd328196fc7e67c431c1d700aa76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a5dc3cd328196fc7e67c431c1d700aa76">PWM_INPUT1_CHANNEL</a>&#160;&#160;&#160;<a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">CONCAT_BOARD_PARAM</a>(ICU_CHANNEL_, <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad97bf4d44e504fbf9080f5860dffd46a">PWM_INPUT1_TIM_CH</a>)</td></tr>
+<tr class="separator:a5dc3cd328196fc7e67c431c1d700aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57082fbd09cf4ffb36ede12de84055f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a57082fbd09cf4ffb36ede12de84055f5">PWM_INPUT1_GPIO_PORT</a>&#160;&#160;&#160;PAL_PORT(<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad5bd0b0eee56b52f4f99b49053755edf">LINE_PWM_INPUT1</a>)</td></tr>
+<tr class="separator:a57082fbd09cf4ffb36ede12de84055f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd91072dca14f3f3733e4dda439b11e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#abbd91072dca14f3f3733e4dda439b11e">PWM_INPUT1_GPIO_PIN</a>&#160;&#160;&#160;PAL_PAD(<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad5bd0b0eee56b52f4f99b49053755edf">LINE_PWM_INPUT1</a>)</td></tr>
+<tr class="separator:abbd91072dca14f3f3733e4dda439b11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781fe04b3bde53d0b15b6eefbc1a8794"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a781fe04b3bde53d0b15b6eefbc1a8794">PWM_INPUT1_GPIO_AF</a>&#160;&#160;&#160;<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a22639861afc5b54b56aca8cb3cce0ad9">AF_LINE_PWM_INPUT1</a></td></tr>
+<tr class="separator:a781fe04b3bde53d0b15b6eefbc1a8794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f15522bec0f69dad61de7b7dbb9e18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a93f15522bec0f69dad61de7b7dbb9e18">UART1_GPIO_AF</a>&#160;&#160;&#160;((void)0)</td></tr>
 <tr class="memdesc:a93f15522bec0f69dad61de7b7dbb9e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART defines.  <a href="common__board_8h.html#a93f15522bec0f69dad61de7b7dbb9e18">More...</a><br /></td></tr>
 <tr class="separator:a93f15522bec0f69dad61de7b7dbb9e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,10 +147,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a73180441e4e94e67eac7d518dc8958a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a>(n)&#160;&#160;&#160;((n &amp; 0x0f) &lt;&lt; 8)</td></tr>
 <tr class="memdesc:a73180441e4e94e67eac7d518dc8958a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C defines.  <a href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">More...</a><br /></td></tr>
 <tr class="separator:a73180441e4e94e67eac7d518dc8958a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230d2286ce6ac184baf766ab01b0f001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a></td></tr>
-<tr class="separator:a230d2286ce6ac184baf766ab01b0f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6665dd800b13af54d4e6853e144c1602"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a6665dd800b13af54d4e6853e144c1602">I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a></td></tr>
-<tr class="separator:a6665dd800b13af54d4e6853e144c1602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c39ad944259723eb9fbe773e294139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a22c39ad944259723eb9fbe773e294139">I2C1_CLOCK_SPEED</a>&#160;&#160;&#160;400000</td></tr>
 <tr class="separator:a22c39ad944259723eb9fbe773e294139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9914c116b1e93a66882b48999c8efcd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__board_8h.html#a9914c116b1e93a66882b48999c8efcd9">I2C1_CFG_DEF</a></td></tr>
@@ -198,7 +206,7 @@ Macros</h2></td></tr>
 
 <p>ChibiOS board file generated by the cfg file. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00037">37</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00038">38</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +236,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00692">692</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00703">703</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +255,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00694">694</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00705">705</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +274,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00693">693</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00704">704</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +304,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00038">38</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00039">39</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +323,7 @@ Macros</h2></td></tr>
 <p>SPI Config. </p>
 <p>SPI Slaves SDIO </p>
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00691">691</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00702">702</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -331,12 +339,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  .timingr = <a class="code" href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a>, \</div>
+<div class="line">  .timingr = I2C_CFG_400KHZ_TIMINGR, \</div>
 <div class="line">  .cr1 = <a class="code" href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a>(0), \</div>
 <div class="line">  .cr2 = 0 \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00452">452</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00464">464</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +360,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00448">448</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00460">460</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -368,12 +376,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  .timingr = <a class="code" href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a>, \</div>
+<div class="line">  .timingr = I2C_CFG_400KHZ_TIMINGR, \</div>
 <div class="line">  .cr1 = <a class="code" href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a>(0), \</div>
 <div class="line">  .cr2 = 0 \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00473">473</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00484">484</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +397,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00469">469</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00480">480</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -405,12 +413,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  .timingr = <a class="code" href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a>, \</div>
+<div class="line">  .timingr = I2C_CFG_400KHZ_TIMINGR, \</div>
 <div class="line">  .cr1 = <a class="code" href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a>(0), \</div>
 <div class="line">  .cr2 = 0 \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00493">493</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00504">504</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +434,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00489">489</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00500">500</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -442,12 +450,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  { \</div>
-<div class="line">  .timingr = <a class="code" href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a>, \</div>
+<div class="line">  .timingr = I2C_CFG_400KHZ_TIMINGR, \</div>
 <div class="line">  .cr1 = <a class="code" href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a>(0), \</div>
 <div class="line">  .cr2 = 0 \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00513">513</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00524">524</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -463,45 +471,87 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00509">509</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00520">520</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
-<a id="a230d2286ce6ac184baf766ab01b0f001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a230d2286ce6ac184baf766ab01b0f001">&#9670;&nbsp;</a></span>I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (STM32_TIMINGR_PRESC(0U) | \</div>
-<div class="line">    STM32_TIMINGR_SCLDEL(10U) | STM32_TIMINGR_SDADEL(0U) | \</div>
-<div class="line">    STM32_TIMINGR_SCLH(34U)  | STM32_TIMINGR_SCLL(86U))</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00439">439</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
-
-</div>
-</div>
-<a id="a6665dd800b13af54d4e6853e144c1602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6665dd800b13af54d4e6853e144c1602">&#9670;&nbsp;</a></span>I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</h2>
+<a id="a5dc3cd328196fc7e67c431c1d700aa76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc3cd328196fc7e67c431c1d700aa76">&#9670;&nbsp;</a></span>PWM_INPUT1_CHANNEL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</td>
+          <td class="memname">#define PWM_INPUT1_CHANNEL&#160;&#160;&#160;<a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">CONCAT_BOARD_PARAM</a>(ICU_CHANNEL_, <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad97bf4d44e504fbf9080f5860dffd46a">PWM_INPUT1_TIM_CH</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (STM32_TIMINGR_PRESC(1U) | \</div>
-<div class="line">    STM32_TIMINGR_SCLDEL(9U) | STM32_TIMINGR_SDADEL(0U) | \</div>
-<div class="line">    STM32_TIMINGR_SCLH(105U)  | STM32_TIMINGR_SCLL(153U))</div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00442">442</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00307">307</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+
+</div>
+</div>
+<a id="a781fe04b3bde53d0b15b6eefbc1a8794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781fe04b3bde53d0b15b6eefbc1a8794">&#9670;&nbsp;</a></span>PWM_INPUT1_GPIO_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_AF&#160;&#160;&#160;<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a22639861afc5b54b56aca8cb3cce0ad9">AF_LINE_PWM_INPUT1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00310">310</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+
+</div>
+</div>
+<a id="abbd91072dca14f3f3733e4dda439b11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd91072dca14f3f3733e4dda439b11e">&#9670;&nbsp;</a></span>PWM_INPUT1_GPIO_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_PIN&#160;&#160;&#160;PAL_PAD(<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad5bd0b0eee56b52f4f99b49053755edf">LINE_PWM_INPUT1</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00309">309</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+
+</div>
+</div>
+<a id="a57082fbd09cf4ffb36ede12de84055f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57082fbd09cf4ffb36ede12de84055f5">&#9670;&nbsp;</a></span>PWM_INPUT1_GPIO_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_PORT&#160;&#160;&#160;PAL_PORT(<a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad5bd0b0eee56b52f4f99b49053755edf">LINE_PWM_INPUT1</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00308">308</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+
+</div>
+</div>
+<a id="a7afe2958e694b8dbafb9ba80c136e703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7afe2958e694b8dbafb9ba80c136e703">&#9670;&nbsp;</a></span>PWM_INPUT1_ICU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_ICU&#160;&#160;&#160;<a class="el" href="tawaki_8h.html#ad9b3763b028a22f31e74b55b8aa11dde">CONCAT_BOARD_PARAM</a>(ICUD, <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7e349ccd350d97790a88ef088f8e2a93">PWM_INPUT1_TIM</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00306">306</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +573,7 @@ Macros</h2></td></tr>
 
 <p>I2C defines. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00437">437</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00447">447</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +591,7 @@ Macros</h2></td></tr>
 
 <p>UART defines. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00318">318</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00328">328</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +607,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00334">334</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00344">344</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +623,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00350">350</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00360">360</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +639,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00366">366</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00376">376</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +655,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00382">382</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00392">392</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +671,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00398">398</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00408">408</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +687,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00414">414</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00424">424</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
@@ -653,19 +703,18 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00430">430</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__board_8h_source.html#l00440">440</a> of file <a class="el" href="common__board_8h_source.html">common_board.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acommon__board_8h_html_a73180441e4e94e67eac7d518dc8958a6"><div class="ttname"><a href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a></div><div class="ttdeci">#define STM32_CR1_DNF(n)</div><div class="ttdoc">I2C defines.</div><div class="ttdef"><b>Definition:</b> <a href="common__board_8h_source.html#l00437">common_board.h:437</a></div></div>
-<div class="ttc" id="acommon__board_8h_html_a230d2286ce6ac184baf766ab01b0f001"><div class="ttname"><a href="common__board_8h.html#a230d2286ce6ac184baf766ab01b0f001">I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</a></div><div class="ttdeci">#define I2C_FAST_400KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR</div><div class="ttdef"><b>Definition:</b> <a href="common__board_8h_source.html#l00439">common_board.h:439</a></div></div>
+<div class="ttc" id="acommon__board_8h_html_a73180441e4e94e67eac7d518dc8958a6"><div class="ttname"><a href="common__board_8h.html#a73180441e4e94e67eac7d518dc8958a6">STM32_CR1_DNF</a></div><div class="ttdeci">#define STM32_CR1_DNF(n)</div><div class="ttdoc">I2C defines.</div><div class="ttdef"><b>Definition:</b> <a href="common__board_8h_source.html#l00447">common_board.h:447</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="common__board_8h.html">common_board.h</a></li>
-    <li class="footer">Generated on Fri Oct 7 2022 13:31:21 for Paparazzi UAS by
+    <li class="footer">Generated on Sun Oct 9 2022 05:22:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

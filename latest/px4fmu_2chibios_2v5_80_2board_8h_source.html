@@ -299,7 +299,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a1cbb290810c64f819f61ffb6bd09993b">  209</a></span>&#160;<span class="preprocessor">#define PI02_SPI2_MISO                 2U</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a89c0dc4e91c1c017921174dee326624e">  210</a></span>&#160;<span class="preprocessor">#define PI03_SPI2_MOSI                 3U</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7f2bda0e0b1a72cbb2f28ab7e7b7e5c7">  211</a></span>&#160;<span class="preprocessor">#define PI04_SPI_SLAVE8                4U</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aa00826c058f7ba8bbc63e5df13b91027">  212</a></span>&#160;<span class="preprocessor">#define PI05_RC_INPUT                  5U</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a372ea4c8c3f41c3554b2af976bf1b8d6">  212</a></span>&#160;<span class="preprocessor">#define PI05_PWM_INPUT1                5U</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aa6462c4ef9f451da10e04a60a5c3c071">  213</a></span>&#160;<span class="preprocessor">#define PI06_SPI_SLAVE9                6U</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad721741bc09a401e6b1f244959712b60">  214</a></span>&#160;<span class="preprocessor">#define PI07_SPI_SLAVE10               7U</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a5031e9f369e8d180f631b78cb7771f3b">  215</a></span>&#160;<span class="preprocessor">#define PI08_SPI_SLAVE11               8U</span></div>
@@ -488,7 +488,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a673abfe82b092bc20fb3ca8ad800bd2c">  398</a></span>&#160;<span class="preprocessor">#define LINE_SPI2_MISO                 PAL_LINE(GPIOI, 2U)</span></div>
 <div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a83a6995ebbccd7c9e9643a7f183b23bf">  399</a></span>&#160;<span class="preprocessor">#define LINE_SPI2_MOSI                 PAL_LINE(GPIOI, 3U)</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#abc9922cc451df8f6a94c48d2834c0fa0">  400</a></span>&#160;<span class="preprocessor">#define LINE_SPI_SLAVE8                PAL_LINE(GPIOI, 4U)</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aa6cab9cd86db8f1e0988bca6266bb4e0">  401</a></span>&#160;<span class="preprocessor">#define LINE_RC_INPUT                  PAL_LINE(GPIOI, 5U)</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad5bd0b0eee56b52f4f99b49053755edf">  401</a></span>&#160;<span class="preprocessor">#define LINE_PWM_INPUT1                PAL_LINE(GPIOI, 5U)</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a30aa942d13bbc873027466d7da6d2398">  402</a></span>&#160;<span class="preprocessor">#define LINE_SPI_SLAVE9                PAL_LINE(GPIOI, 6U)</span></div>
 <div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a3e6f56c960ac90a2285d1b1bc4196c80">  403</a></span>&#160;<span class="preprocessor">#define LINE_SPI_SLAVE10               PAL_LINE(GPIOI, 7U)</span></div>
 <div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a02c9bcb800a836e2aa92e63b022a7fce">  404</a></span>&#160;<span class="preprocessor">#define LINE_SPI_SLAVE11               PAL_LINE(GPIOI, 8U)</span></div>
@@ -1348,7 +1348,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;<span class="preprocessor">           PIN_MODE_ALTERNATE(PI02_SPI2_MISO) | \</span></div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="preprocessor">           PIN_MODE_ALTERNATE(PI03_SPI2_MOSI) | \</span></div>
 <div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;<span class="preprocessor">           PIN_MODE_OUTPUT(PI04_SPI_SLAVE8) | \</span></div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;<span class="preprocessor">           PIN_MODE_ALTERNATE(PI05_RC_INPUT) | \</span></div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;<span class="preprocessor">           PIN_MODE_ALTERNATE(PI05_PWM_INPUT1) | \</span></div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="preprocessor">           PIN_MODE_OUTPUT(PI06_SPI_SLAVE9) | \</span></div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;<span class="preprocessor">           PIN_MODE_OUTPUT(PI07_SPI_SLAVE10) | \</span></div>
 <div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;<span class="preprocessor">           PIN_MODE_OUTPUT(PI08_SPI_SLAVE11) | \</span></div>
@@ -1365,7 +1365,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI02_SPI2_MISO) | \</span></div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI03_SPI2_MOSI) | \</span></div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI04_SPI_SLAVE8) | \</span></div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI05_RC_INPUT) | \</span></div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI05_PWM_INPUT1) | \</span></div>
 <div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI06_SPI_SLAVE9) | \</span></div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI07_SPI_SLAVE10) | \</span></div>
 <div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="preprocessor">           PIN_OTYPE_PUSHPULL(PI08_SPI_SLAVE11) | \</span></div>
@@ -1382,7 +1382,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI02_SPI2_MISO) | \</span></div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI03_SPI2_MOSI) | \</span></div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI04_SPI_SLAVE8) | \</span></div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI05_RC_INPUT) | \</span></div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI05_PWM_INPUT1) | \</span></div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI06_SPI_SLAVE9) | \</span></div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI07_SPI_SLAVE10) | \</span></div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;<span class="preprocessor">           PIN_OSPEED_SPEED_HIGH(PI08_SPI_SLAVE11) | \</span></div>
@@ -1399,7 +1399,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI02_SPI2_MISO) | \</span></div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI03_SPI2_MOSI) | \</span></div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI04_SPI_SLAVE8) | \</span></div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI05_RC_INPUT) | \</span></div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI05_PWM_INPUT1) | \</span></div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI06_SPI_SLAVE9) | \</span></div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI07_SPI_SLAVE10) | \</span></div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="preprocessor">           PIN_PUPDR_FLOATING(PI08_SPI_SLAVE11) | \</span></div>
@@ -1416,7 +1416,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI02_SPI2_MISO) | \</span></div>
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI03_SPI2_MOSI) | \</span></div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI04_SPI_SLAVE8) | \</span></div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI05_RC_INPUT) | \</span></div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI05_PWM_INPUT1) | \</span></div>
 <div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI06_SPI_SLAVE9) | \</span></div>
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI07_SPI_SLAVE10) | \</span></div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;<span class="preprocessor">           PIN_ODR_LEVEL_HIGH(PI08_SPI_SLAVE11) | \</span></div>
@@ -1433,7 +1433,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI02_SPI2_MISO, 5) | \</span></div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI03_SPI2_MOSI, 5) | \</span></div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI04_SPI_SLAVE8, 0) | \</span></div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI05_RC_INPUT, 3) | \</span></div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI05_PWM_INPUT1, 3) | \</span></div>
 <div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI06_SPI_SLAVE9, 0) | \</span></div>
 <div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="preprocessor">           PIN_AFIO_AF(PI07_SPI_SLAVE10, 0))</span></div>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160; </div>
@@ -1780,8 +1780,8 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01690"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ab1ccc7d8e71bee331e03276fcca9d4bc"> 1690</a></span>&#160;<span class="preprocessor">#define AF_LINE_SPI2_MISO                5U</span></div>
 <div class="line"><a name="l01691"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aa3493a1c585887df9bc88382b079788d"> 1691</a></span>&#160;<span class="preprocessor">#define AF_PI03_SPI2_MOSI                5U</span></div>
 <div class="line"><a name="l01692"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a5211ea3808f3e5f4273cbe61713039e0"> 1692</a></span>&#160;<span class="preprocessor">#define AF_LINE_SPI2_MOSI                5U</span></div>
-<div class="line"><a name="l01693"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a0fd117cb7f053ae6c72f2e6934c4982d"> 1693</a></span>&#160;<span class="preprocessor">#define AF_PI05_RC_INPUT                 3U</span></div>
-<div class="line"><a name="l01694"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a41c455076b9cbce1ef6f8e76c576f660"> 1694</a></span>&#160;<span class="preprocessor">#define AF_LINE_RC_INPUT                 3U</span></div>
+<div class="line"><a name="l01693"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a168109a951f3872a010a60bb635a9a8b"> 1693</a></span>&#160;<span class="preprocessor">#define AF_PI05_PWM_INPUT1               3U</span></div>
+<div class="line"><a name="l01694"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a22639861afc5b54b56aca8cb3cce0ad9"> 1694</a></span>&#160;<span class="preprocessor">#define AF_LINE_PWM_INPUT1               3U</span></div>
 <div class="line"><a name="l01695"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a2b40280d8227351e122770e65a2314ef"> 1695</a></span>&#160;<span class="preprocessor">#define AF_PI09_CAN1_RX                  9U</span></div>
 <div class="line"><a name="l01696"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a43c2d9d441f9d0cc37069c885fad5ba7"> 1696</a></span>&#160;<span class="preprocessor">#define AF_LINE_CAN1_RX                  9U</span></div>
 <div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160; </div>
@@ -1851,73 +1851,77 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div class="line"><a name="l01761"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a631a5ef0d622c5b0a77943045b3cff0e"> 1761</a></span>&#160;<span class="preprocessor">#define SERVO8_TIM_FN  CH</span></div>
 <div class="line"><a name="l01762"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#af918a11e0f8c5bdf63c08c619df55337"> 1762</a></span>&#160;<span class="preprocessor">#define SERVO8_TIM_CH  2</span></div>
 <div class="line"><a name="l01763"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a30bfc6ada6d4dcb712fd9c2f0346b38c"> 1763</a></span>&#160;<span class="preprocessor">#define SERVO8_TIM_AF  9</span></div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160; </div>
-<div class="line"><a name="l01765"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1765</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01764"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7e349ccd350d97790a88ef088f8e2a93"> 1764</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_TIM   8</span></div>
+<div class="line"><a name="l01765"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a4abcaa3cb28cec3629ac6a02a07235fb"> 1765</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_TIM_FN  CH</span></div>
+<div class="line"><a name="l01766"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad97bf4d44e504fbf9080f5860dffd46a"> 1766</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_TIM_CH  1</span></div>
+<div class="line"><a name="l01767"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a3b2063a8a2417dc00ee6498026655e7b"> 1767</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_TIM_AF  3</span></div>
 <div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160; </div>
-<div class="line"><a name="l01769"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1769</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160; </div>
+<div class="line"><a name="l01769"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#aaddc843efed03effa9394c3892a74eec"> 1769</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOREACH(line, group) \</span></div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group}; \</span></div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
 <div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160; </div>
-<div class="line"><a name="l01773"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1773</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01773"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a29f57021ab9e2b17f34ea5a58947a83b"> 1773</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOREACH(line, group) \</span></div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;<span class="preprocessor">  for (ioline_t i=0, line =  group ## _ARRAY[i]; (i &lt; group ## _SIZE) &amp;&amp; (line = group ## _ARRAY[i]); i++)</span></div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160; </div>
 <div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160; </div>
-<div class="line"><a name="l01777"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1777</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160; </div>
-<div class="line"><a name="l01780"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7225d35f6ce3ca00c4ee49aa78011ca6"> 1780</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_LOWS \</span></div>
-<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;<span class="preprocessor">  LINE_V3V3_SENSORS_EN, \</span></div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;<span class="preprocessor">  LINE_V3V3_SPEKTRUM_EN, \</span></div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;<span class="preprocessor">  LINE_V5V_HIPOWER_EN, \</span></div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;<span class="preprocessor">  LINE_V5V_PERIPH_EN, \</span></div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;<span class="preprocessor">  LINE_V5V_RC_EN, \</span></div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;<span class="preprocessor">  LINE_V5V_WIFI_EN</span></div>
-<div class="line"><a name="l01787"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a2efa402374e9a41a4610c12340fac6da"> 1787</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_LOWS_SIZE    6</span></div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160; </div>
-<div class="line"><a name="l01789"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a6c611bd6ef7b4218d8a8d53a958e0a97"> 1789</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUTS \</span></div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;<span class="preprocessor">  LINE_SERVO2, \</span></div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="preprocessor">  LINE_LED1, \</span></div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="preprocessor">  LINE_LED2, \</span></div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="preprocessor">  LINE_LED3, \</span></div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="preprocessor">  LINE_SERVO5, \</span></div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="preprocessor">  LINE_SERVO6, \</span></div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="preprocessor">  LINE_SERVO4, \</span></div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;<span class="preprocessor">  LINE_SERVO3, \</span></div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;<span class="preprocessor">  LINE_LED4, \</span></div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;<span class="preprocessor">  LINE_SERVO1, \</span></div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE0, \</span></div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE1, \</span></div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE2, \</span></div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE3, \</span></div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE4, \</span></div>
-<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE5, \</span></div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE6, \</span></div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE7, \</span></div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;<span class="preprocessor">  LINE_SERVO7, \</span></div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;<span class="preprocessor">  LINE_SERVO8, \</span></div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="preprocessor">  LINE_LED5, \</span></div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;<span class="preprocessor">  LINE_LED6, \</span></div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;<span class="preprocessor">  LINE_LED7, \</span></div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE8, \</span></div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE9, \</span></div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE10, \</span></div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE11, \</span></div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE12, \</span></div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE13</span></div>
-<div class="line"><a name="l01819"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad20a0f56de0d7124dd77defff219421a"> 1819</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUTS_SIZE    29</span></div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160; </div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01777"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e"> 1777</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_DECLFOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;<span class="preprocessor">  static const ioline_t group ## _ARRAY[] = {group};    \</span></div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160; </div>
+<div class="line"><a name="l01781"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#af7e7af7d45a9305435eac0c7cbebcf13"> 1781</a></span>&#160;<span class="preprocessor">#define BOARD_GROUP_FOR(array, index, group)  \</span></div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;<span class="preprocessor">  for (ioline_t index=0, *array =  (ioline_t *) group ## _ARRAY; index &lt; group ## _SIZE; index++)</span></div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160; </div>
+<div class="line"><a name="l01784"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a6c611bd6ef7b4218d8a8d53a958e0a97"> 1784</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUTS \</span></div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;<span class="preprocessor">  LINE_SERVO2, \</span></div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;<span class="preprocessor">  LINE_LED1, \</span></div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;<span class="preprocessor">  LINE_LED2, \</span></div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;<span class="preprocessor">  LINE_LED3, \</span></div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;<span class="preprocessor">  LINE_SERVO5, \</span></div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;<span class="preprocessor">  LINE_SERVO6, \</span></div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="preprocessor">  LINE_SERVO4, \</span></div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="preprocessor">  LINE_SERVO3, \</span></div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="preprocessor">  LINE_LED4, \</span></div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="preprocessor">  LINE_SERVO1, \</span></div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE0, \</span></div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE1, \</span></div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE2, \</span></div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE3, \</span></div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE4, \</span></div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE5, \</span></div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE6, \</span></div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE7, \</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;<span class="preprocessor">  LINE_SERVO7, \</span></div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="preprocessor">  LINE_SERVO8, \</span></div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;<span class="preprocessor">  LINE_LED5, \</span></div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="preprocessor">  LINE_LED6, \</span></div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;<span class="preprocessor">  LINE_LED7, \</span></div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE8, \</span></div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE9, \</span></div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE10, \</span></div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE11, \</span></div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE12, \</span></div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="preprocessor">  LINE_SPI_SLAVE13</span></div>
+<div class="line"><a name="l01814"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#ad20a0f56de0d7124dd77defff219421a"> 1814</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_INPUTS_SIZE    29</span></div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160; </div>
+<div class="line"><a name="l01816"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a7225d35f6ce3ca00c4ee49aa78011ca6"> 1816</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_LOWS \</span></div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<span class="preprocessor">  LINE_V3V3_SENSORS_EN, \</span></div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;<span class="preprocessor">  LINE_V3V3_SPEKTRUM_EN, \</span></div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;<span class="preprocessor">  LINE_V5V_HIPOWER_EN, \</span></div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;<span class="preprocessor">  LINE_V5V_PERIPH_EN, \</span></div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="preprocessor">  LINE_V5V_RC_EN, \</span></div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="preprocessor">  LINE_V5V_WIFI_EN</span></div>
+<div class="line"><a name="l01823"></a><span class="lineno"><a class="line" href="px4fmu_2chibios_2v5_80_2board_8h.html#a2efa402374e9a41a4610c12340fac6da"> 1823</a></span>&#160;<span class="preprocessor">#define ENERGY_SAVE_LOWS_SIZE    6</span></div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160; </div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
 <div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;}</div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160; </div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;}</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="arch_2chibios_2board_8c_source.html#l00312">board.c:312</a></div></div>
@@ -1925,7 +1929,7 @@ $(document).ready(function(){initNavTree('px4fmu_2chibios_2v5_80_2board_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html">px4fmu</a></li><li class="navelem"><a class="el" href="dir_8f7644de6504f8dfc06338574588c3b1.html">chibios</a></li><li class="navelem"><a class="el" href="dir_2de08c0ea4a97629dd31f0c7e4813c98.html">v5.0</a></li><li class="navelem"><a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Fri Oct 7 2022 13:31:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sun Oct 9 2022 05:22:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

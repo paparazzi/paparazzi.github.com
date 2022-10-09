@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed____":[12,0,1,0,1,2,0,0,11,20],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed____":[12,0,1,0,1,2,0,0,11,16],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w_8____unnamed____":[12,0,1,0,1,2,0,0,11,17],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w__inv_8____unnamed____":[12,0,1,0,1,2,0,0,11,19],
@@ -30,8 +29,8 @@ var NAVTREEINDEX18 =
 "avi__isp__i3d__lut_8h.html#a6977b067709700f698281760dcaeb704":[12,0,1,0,1,2,0,0,12,5,0],
 "avi__isp__i3d__lut_8h.html#a6c5735a8ef9a724e2f733b6d5a1bbd01":[12,0,1,0,1,2,0,0,12,4,0],
 "avi__isp__i3d__lut_8h.html#a8a315f8dffdb1626560852f8184d0c07":[12,0,1,0,1,2,0,0,12,1,0],
-"avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,7,2],
 "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,6,2],
+"avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,7,2],
 "avi__isp__i3d__lut_8h.html#ab9e09ac5854bc02e596efc986bcce6d9":[12,0,1,0,1,2,0,0,12,0,0],
 "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,6,1],
 "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX18 =
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__regs":[12,0,1,0,1,2,0,0,15,12],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed____":[12,0,1,0,1,2,0,0,15,22],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed____":[12,0,1,0,1,2,0,0,15,14],
-"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__y_8____unnamed____":[12,0,1,0,1,2,0,0,15,15]
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__y_8____unnamed____":[12,0,1,0,1,2,0,0,15,15],
+"avi__isp__statistics__bayer_8h.html#unionavi__isp__statistics__bayer__cfa":[12,0,1,0,1,2,0,0,15,10]
 };

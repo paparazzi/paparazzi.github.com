@@ -83,6 +83,7 @@ var cube_2orange_2mcuconf_8h =
     [ "STM32_I2C_I2C4_RX_DMA_STREAM", "cube_2orange_2mcuconf_8h.html#aae32ee41e66ceec86838a5d976148ee5", null ],
     [ "STM32_I2C_I2C4_TX_BDMA_STREAM", "cube_2orange_2mcuconf_8h.html#a581133ac5866c05db7d1ac3cbcbde832", null ],
     [ "STM32_I2C_I2C4_TX_DMA_STREAM", "cube_2orange_2mcuconf_8h.html#a6ae4ea20f26b15bc7ed3b122cc5edd73", null ],
+    [ "STM32_I2C_ISR_LIMIT", "cube_2orange_2mcuconf_8h.html#a89d7461cb369d4e15e59937bb9481366", null ],
     [ "STM32_I2C_USE_I2C1", "cube_2orange_2mcuconf_8h.html#ad73fb3ae5b2aca05e0f5155cff7a8b2d", null ],
     [ "STM32_I2C_USE_I2C2", "cube_2orange_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c", null ],
     [ "STM32_I2C_USE_I2C3", "cube_2orange_2mcuconf_8h.html#a086d8965c7249503bdce6f9b4a7352cb", null ],

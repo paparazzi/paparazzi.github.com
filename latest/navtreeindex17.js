@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"avi__isp__denoising_8h.html#a1757617d389d2d681e5b672f6eef7e5c":[12,0,1,0,1,2,0,0,7,24,0],
 "avi__isp__denoising_8h.html#a1c38f3e1f6e2f79a9706c61909efbe45":[12,0,1,0,1,2,0,0,7,13,4],
 "avi__isp__denoising_8h.html#a1ebdeea2077bab5773797cee7012a42e":[12,0,1,0,1,2,0,0,7,27],
 "avi__isp__denoising_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,7,14,0],
@@ -229,8 +228,8 @@ var NAVTREEINDEX17 =
 "avi__isp__green__imbalance_8h.html#a5a20ff7e4db6e4fcce8fcfb9210594fd":[12,0,1,0,1,2,0,0,11,10,0],
 "avi__isp__green__imbalance_8h.html#a6280fab309c9db7777263dd5cafdf673":[12,0,1,0,1,2,0,0,11,9,2],
 "avi__isp__green__imbalance_8h.html#a68c807027f85802bbdb2ed476b944c7a":[12,0,1,0,1,2,0,0,11,12,0],
-"avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,16,0],
 "avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,15,0],
+"avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,16,0],
 "avi__isp__green__imbalance_8h.html#a8471b95191ea7bb72123cbd94c673303":[12,0,1,0,1,2,0,0,11,9,8],
 "avi__isp__green__imbalance_8h.html#a859ac666dc773a9e7507b28994943d2e":[12,0,1,0,1,2,0,0,11,9,5],
 "avi__isp__green__imbalance_8h.html#a987bcab01b929eb2c07877b224215c92":[12,0,1,0,1,2,0,0,11,22,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__alpha_8____unnamed____":[12,0,1,0,1,2,0,0,11,21],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__bayer__cfa_8____unnamed____":[12,0,1,0,1,2,0,0,11,14],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__beta_8____unnamed____":[12,0,1,0,1,2,0,0,11,22],
-"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed____":[12,0,1,0,1,2,0,0,11,18]
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed____":[12,0,1,0,1,2,0,0,11,18],
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed____":[12,0,1,0,1,2,0,0,11,20]
 };

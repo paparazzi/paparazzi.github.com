@@ -1,5 +1,11 @@
 var NAVTREEINDEX88 =
 {
+"ins__arduimu_8h.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,15,2],
+"ins__arduimu_8h.html#aac18cc3d324b605dd90d56321d413455":[12,0,1,0,6,36,15,9],
+"ins__arduimu_8h.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,15,1],
+"ins__arduimu_8h.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,15,6],
+"ins__arduimu_8h.html#acf3d10cd62cbe0aa339544370506c7f4":[12,0,1,0,6,36,15,5],
+"ins__arduimu_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a":[12,0,1,0,6,36,15,0],
 "ins__arduimu_8h_source.html":[12,0,1,0,6,36,15],
 "ins__arduimu__basic_8h.html":[12,0,1,0,6,36,17],
 "ins__arduimu__basic_8h.html#a3f8fc29cfe14b10518e7275613148bc9":[12,0,1,0,6,36,17,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX88 =
 "ins__float__invariant_8h.html#ae446351d97f4432e54c07422b8349e44":[12,0,1,0,6,36,21,5,1],
 "ins__float__invariant_8h.html#ae89571fca0a7156fa1ce22b23464d13f":[12,0,1,0,6,36,21,4,12],
 "ins__float__invariant_8h.html#ae89571fca0a7156fa1ce22b23464d13f":[12,0,1,0,6,2,17,4,12],
-"ins__float__invariant_8h.html#aebf8b94da13ca25bf9f269516020922f":[12,0,1,0,6,36,21,4,20],
-"ins__float__invariant_8h.html#aebf8b94da13ca25bf9f269516020922f":[12,0,1,0,6,2,17,4,20],
-"ins__float__invariant_8h.html#aecfac5c328ea030e06067337bce6910b":[12,0,1,0,6,36,21,1,0],
-"ins__float__invariant_8h.html#aecfac5c328ea030e06067337bce6910b":[12,0,1,0,6,2,17,1,0],
-"ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a":[12,0,1,0,6,36,21,4,9],
-"ins__float__invariant_8h.html#af54f77151bd96f0a6473bd63d5401a7a":[12,0,1,0,6,2,17,4,9],
-"ins__float__invariant_8h.html#structInsFloatInv":[12,0,1,0,6,36,21,5]
+"ins__float__invariant_8h.html#aebf8b94da13ca25bf9f269516020922f":[12,0,1,0,6,36,21,4,20]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"autopilot_8h.html#ad7f33b4013b136243b2e908436b911b9":[12,0,1,0,9,25],
 "autopilot_8h.html#addcec3e042ad2a7a6a17e6ffa506b7ba":[12,0,1,0,9,7],
 "autopilot_8h.html#ade282c0ec62910f4a190c8146d9d34c7":[12,0,1,0,9,9],
 "autopilot_8h.html#af07a7f0abf8699eb6b006f1b7a53daea":[12,0,1,0,9,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "avi__isp__chroma_8h.html#unionavi__isp__chroma__clip__gu":[12,0,1,0,1,2,0,0,3,8],
 "avi__isp__chroma_8h.html#unionavi__isp__chroma__clip__ry":[12,0,1,0,1,2,0,0,3,6],
 "avi__isp__chroma_8h.html#unionavi__isp__chroma__coeff__01__00":[12,0,1,0,1,2,0,0,3,0],
-"avi__isp__chroma_8h.html#unionavi__isp__chroma__coeff__10__02":[12,0,1,0,1,2,0,0,3,1]
+"avi__isp__chroma_8h.html#unionavi__isp__chroma__coeff__10__02":[12,0,1,0,1,2,0,0,3,1],
+"avi__isp__chroma_8h.html#unionavi__isp__chroma__coeff__12__11":[12,0,1,0,1,2,0,0,3,2]
 };

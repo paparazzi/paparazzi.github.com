@@ -1,5 +1,11 @@
 var NAVTREEINDEX86 =
 {
+"imu__bmi088__i2c_8c.html#a5141393ad8ef1bab37a0cf52066816df":[12,0,1,0,6,35,14,9],
+"imu__bmi088__i2c_8c.html#a58e021f954acbc368ab61b10187b73a9":[12,0,1,0,6,35,14,0],
+"imu__bmi088__i2c_8c.html#a688a0cac0c423c242b7b08fc7b6de2b4":[12,0,1,0,6,35,14,11],
+"imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92":[12,0,1,0,6,35,14,8],
+"imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f":[12,0,1,0,6,35,14,4],
+"imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04":[12,0,1,0,6,35,14,2],
 "imu__bmi088__i2c_8c.html#aa392dce0f33c559a6dd2a12865db721b":[12,0,1,0,6,35,14,14],
 "imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2":[12,0,1,0,6,35,14,6],
 "imu__bmi088__i2c_8c.html#adcf26c82c2c1f263d32ea3104b16e3f1":[12,0,1,0,6,35,14,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX86 =
 "imu__mpu9250_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,27,0],
 "imu__mpu9250_8h_source.html":[12,0,1,0,6,35,27],
 "imu__mpu9250__i2c_8c.html":[12,0,1,0,6,35,28],
-"imu__mpu9250__i2c_8c.html#a0c0ada82bd9bfa782cc3a9691240b025":[12,0,1,0,6,35,28,4],
-"imu__mpu9250__i2c_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237":[12,0,1,0,6,35,28,7],
-"imu__mpu9250__i2c_8c.html#a17a732f1b13f3b91998a31687935d4ec":[12,0,1,0,6,35,28,1],
-"imu__mpu9250__i2c_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5":[12,0,1,0,6,35,28,12],
-"imu__mpu9250__i2c_8c.html#a52a80f596bb94890641d5eb3194d9d4c":[12,0,1,0,6,35,28,8],
-"imu__mpu9250__i2c_8c.html#a5bebb3b96b3829735bd1f0ebea0d278a":[12,0,1,0,6,35,28,0],
-"imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,35,28,11]
+"imu__mpu9250__i2c_8c.html#a0c0ada82bd9bfa782cc3a9691240b025":[12,0,1,0,6,35,28,4]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX82 =
 {
+"holybro__kakute__f7_8h.html#a27260a99d1076f9d0d1cb786860066fd":[12,0,1,0,1,8,0,1,28],
+"holybro__kakute__f7_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14":[12,0,1,0,1,8,0,1,57],
+"holybro__kakute__f7_8h.html#a2a8241c19fc58341f2cac4db9d699c3a":[12,0,1,0,1,8,0,1,106],
+"holybro__kakute__f7_8h.html#a2f55c30ea2b2bb8a0c85f87c9274d84f":[12,0,1,0,1,8,0,1,94],
+"holybro__kakute__f7_8h.html#a304df494998391b2e2797b31aeaa32bc":[12,0,1,0,1,8,0,1,118],
+"holybro__kakute__f7_8h.html#a332bb8fee0a9dce80f6f7151dde33121":[12,0,1,0,1,8,0,1,30],
 "holybro__kakute__f7_8h.html#a342eee19f66562516414e255f3db4cc4":[12,0,1,0,1,8,0,1,42],
 "holybro__kakute__f7_8h.html#a3527010cfbb35e98ab1bba9ded57da14":[12,0,1,0,1,8,0,1,47],
 "holybro__kakute__f7_8h.html#a362880424997bf76d4e742c8c8504014":[12,0,1,0,1,8,0,1,107],
@@ -243,11 +249,5 @@ var NAVTREEINDEX82 =
 "hott__gam_8h.html#aae69b718e6a943b30de3a32d5ec5033d":[12,0,1,0,6,34,3,0,8],
 "hott__gam_8h.html#ab03245dbecf7485c41c11280d432f0f9":[12,0,1,0,6,34,3,0,24],
 "hott__gam_8h.html#ac14007f36a1aa731606054e52dc3e783":[12,0,1,0,6,34,3,3],
-"hott__gam_8h.html#ac90cf6a69d534e224381c8b1f02daeaf":[12,0,1,0,6,34,3,0,38],
-"hott__gam_8h.html#aca4ce1e715ece71fd2972af2483a355d":[12,0,1,0,6,34,3,0,17],
-"hott__gam_8h.html#ad3e5dac35c2dd832eef43377906a3ee1":[12,0,1,0,6,34,3,0,35],
-"hott__gam_8h.html#ad61552d7dd008dfbf3da63e46bbb94d4":[12,0,1,0,6,34,3,0,1],
-"hott__gam_8h.html#ad68af74f4b583ea5bfea6b5e6ce75c43":[12,0,1,0,6,34,3,0,5],
-"hott__gam_8h.html#ad7997fbd1e748064f22eda9c0287ccea":[12,0,1,0,6,34,3,0,15],
-"hott__gam_8h.html#ad79dbb1ff20b2de1250124ceddee7ff0":[12,0,1,0,6,34,3,0,34]
+"hott__gam_8h.html#ac90cf6a69d534e224381c8b1f02daeaf":[12,0,1,0,6,34,3,0,38]
 };
