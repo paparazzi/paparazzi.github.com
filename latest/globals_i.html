@@ -218,7 +218,9 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 , <a class="el" href="px4fmu__2_84_8h.html#ac0c0f49372826a78db46d0cca8d76d25">px4fmu_2.4.h</a>
 </li>
 <li>I2C2_GPIO_SCL
-: <a class="el" href="px4fmu__1_87_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_1.7.h</a>
+: <a class="el" href="matek__f405__wing__v1_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">matek_f405_wing_v1.h</a>
+, <a class="el" href="naze32__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">naze32_common.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_2.4.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">cc3d.h</a>
@@ -229,8 +231,6 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 , <a class="el" href="lisa__m__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">lisa_s_1.0.h</a>
-, <a class="el" href="matek__f405__wing__v1_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">matek_f405_wing_v1.h</a>
-, <a class="el" href="naze32__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">naze32_common.h</a>
 </li>
 <li>I2C2_GPIO_SDA
 : <a class="el" href="apogee__1_80_8h.html#a39794b2e20b2fa0d893184f67a399fe8">apogee_1.0.h</a>
@@ -297,6 +297,12 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>I2C3_GPIO_SDA_AF
 : <a class="el" href="openpilot__revo__nano_8h.html#a17d6df4b2cf21ee578747f0b9fcaddd9">openpilot_revo_nano.h</a>
 </li>
+<li>I2C3_SCL
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a7341a64e9eafc2cd67ee638800b7c627">board.h</a>
+</li>
+<li>I2C3_SDA
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a35e70a0983ccd6a7df9b63bdf9bb83e1">board.h</a>
+</li>
 <li>I2C4_CFG_DEF
 : <a class="el" href="common__board_8h.html#a832801937f27faf14c000b9743f0ecb9">common_board.h</a>
 , <a class="el" href="nucleo144__f767zi_8h.html#a832801937f27faf14c000b9743f0ecb9">nucleo144_f767zi.h</a>
@@ -308,16 +314,10 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 , <a class="el" href="tawaki_8h.html#ad60be859c48259ad7cd58ebd0adf4aa6">tawaki.h</a>
 </li>
 <li>I2C4_SCL
-: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a1d43b629119a794b03f4f36641ed800e">board.h</a>
-</li>
-<li>I2C4_SCL_EXTERNAL
-: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#aac43f70d2adbce0e9bdc2b353e1ffd61">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a1d43b629119a794b03f4f36641ed800e">board.h</a>
 </li>
 <li>I2C4_SDA
-: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a551109671347a69fe75f94d664305bb4">board.h</a>
-</li>
-<li>I2C4_SDA_EXTERNAL
-: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a324a146b242b850b3bac9c46386a2e3b">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a551109671347a69fe75f94d664305bb4">board.h</a>
 </li>
 <li>I2C_1V8
 : <a class="el" href="vl53l1x__api_8c.html#a641026e19652245f6079572919acf488">vl53l1x_api.c</a>
@@ -1697,18 +1697,6 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 </li>
 <li>imu_ResetBodyToImu()
 : <a class="el" href="imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9">imu.h</a>
-</li>
-<li>IMU_SCL
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a9625b87456d850c5816b93d8f4177527">board.h</a>
-</li>
-<li>IMU_SCL_PORT
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#adb9b1595c7b6ea0bf77f844437c9291e">board.h</a>
-</li>
-<li>IMU_SDA
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ade9e8d91a9ae6c553dd1f4c641282a0c">board.h</a>
-</li>
-<li>IMU_SDA_PORT
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ae3f6aa2739b25ea02c02c01e2e9dbff5">board.h</a>
 </li>
 <li>imu_set_body_to_imu_eulers()
 : <a class="el" href="imu_8c.html#a5f99bdb8a397ce15eef085f83677ee7e">imu.c</a>
@@ -3204,11 +3192,11 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>int32_eulers_dot_321_of_rates()
 : <a class="el" href="group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f">pprz_algebra_int.c</a>
 </li>
-<li>INT32_EULERS_DOT_OF_RATES
-: <a class="el" href="group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d">pprz_algebra_int.h</a>
-</li>
 <li>int32_eulers_dot_of_rates
 : <a class="el" href="group__math__algebra__int.html#gab40f6c5026831fe7afb9bd0236713df2">pprz_algebra_int.h</a>
+</li>
+<li>INT32_EULERS_DOT_OF_RATES
+: <a class="el" href="group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d">pprz_algebra_int.h</a>
 </li>
 <li>INT32_EULERS_LSHIFT
 : <a class="el" href="group__math__algebra__int.html#gab95c15b48f7f46eab39d4482df9f7c62">pprz_algebra_int.h</a>
@@ -3294,13 +3282,11 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 , <a class="el" href="group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b">pprz_algebra_int.c</a>
 </li>
 <li>int32_quat_comp_norm_shortest()
-: <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.h</a>
 </li>
 <li>INT32_QUAT_COMP_NORM_SHORTEST
 : <a class="el" href="group__math__algebra__int.html#ga69285481ce81c939ca63cf8fddbc3790">pprz_algebra_int.h</a>
-</li>
-<li>int32_quat_comp_norm_shortest()
-: <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.c</a>
 </li>
 <li>int32_quat_derivative()
 : <a class="el" href="group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e">pprz_algebra_int.h</a>
@@ -3359,12 +3345,12 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>int32_quat_of_axis_angle()
 : <a class="el" href="group__math__algebra__int.html#ga06f4bef8def41e152f6f7bacaf3b99c7">pprz_algebra_int.h</a>
 </li>
+<li>INT32_QUAT_OF_EULERS
+: <a class="el" href="group__math__algebra__int.html#ga3003feb20a532f67e77832669398bc73">pprz_algebra_int.h</a>
+</li>
 <li>int32_quat_of_eulers()
 : <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.h</a>
 , <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.c</a>
-</li>
-<li>INT32_QUAT_OF_EULERS
-: <a class="el" href="group__math__algebra__int.html#ga3003feb20a532f67e77832669398bc73">pprz_algebra_int.h</a>
 </li>
 <li>INT32_QUAT_OF_RMAT
 : <a class="el" href="group__math__algebra__int.html#ga97a013036d6fb63391408d5f5305467c">pprz_algebra_int.h</a>
@@ -3380,11 +3366,11 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>INT32_QUAT_VMULT
 : <a class="el" href="group__math__algebra__int.html#ga1a98ff60d086efb2c8084bcd9ecada44">pprz_algebra_int.h</a>
 </li>
-<li>INT32_QUAT_WRAP_SHORTEST
-: <a class="el" href="group__math__algebra__int.html#ga4813c4e32db266393ef644e0d5228b9c">pprz_algebra_int.h</a>
-</li>
 <li>int32_quat_wrap_shortest()
 : <a class="el" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84">pprz_algebra_int.h</a>
+</li>
+<li>INT32_QUAT_WRAP_SHORTEST
+: <a class="el" href="group__math__algebra__int.html#ga4813c4e32db266393ef644e0d5228b9c">pprz_algebra_int.h</a>
 </li>
 <li>INT32_QUAT_ZERO
 : <a class="el" href="group__math__algebra__int.html#ga90a76ea9c292e6d8336e1b2250141528">pprz_algebra_int.h</a>
@@ -3415,12 +3401,12 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab">pprz_algebra_int.h</a>
 , <a class="el" href="group__math__algebra__int.html#gaca9368509801c80deca6e5d3c8f927ab">pprz_algebra_int.c</a>
 </li>
-<li>INT32_RMAT_COMP_INV
-: <a class="el" href="group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570">pprz_algebra_int.h</a>
-</li>
 <li>int32_rmat_comp_inv()
 : <a class="el" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb">pprz_algebra_int.h</a>
 , <a class="el" href="group__math__algebra__int.html#ga72abd59dafce403141f8de5711a28efb">pprz_algebra_int.c</a>
+</li>
+<li>INT32_RMAT_COMP_INV
+: <a class="el" href="group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_identity()
 : <a class="el" href="group__math__algebra__int.html#gae3596ca433cdfa635eca7998911907ba">pprz_algebra_int.h</a>
@@ -3438,21 +3424,19 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <li>INT32_RMAT_OF_EULERS_312
 : <a class="el" href="group__math__algebra__int.html#ga870272b71562d3d586e02fb38ab8826c">pprz_algebra_int.h</a>
 </li>
-<li>int32_rmat_of_eulers_321()
-: <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.h</a>
-</li>
 <li>INT32_RMAT_OF_EULERS_321
 : <a class="el" href="group__math__algebra__int.html#gac107a4b1aee8e4f56e88d4ef1a2faec5">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_of_eulers_321()
 : <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.h</a>
+</li>
+<li>INT32_RMAT_OF_QUAT
+: <a class="el" href="group__math__algebra__int.html#ga37c640a556fc72d7e2d150ec59e7986d">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_of_quat()
 : <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.c</a>
 , <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.h</a>
-</li>
-<li>INT32_RMAT_OF_QUAT
-: <a class="el" href="group__math__algebra__int.html#ga37c640a556fc72d7e2d150ec59e7986d">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_ratemult()
 : <a class="el" href="group__math__algebra__int.html#ga096a77a63bed82d66dbf3aa73b947dd5">pprz_algebra_int.c</a>
@@ -3464,29 +3448,27 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__int.html#ga096a77a63bed82d66dbf3aa73b947dd5">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_transp_ratemult()
-: <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.h</a>
 </li>
 <li>INT32_RMAT_TRANSP_RATEMULT
 : <a class="el" href="group__math__algebra__int.html#gaa3a156e2f9a965e4b7e953b9ce5f404b">pprz_algebra_int.h</a>
 </li>
-<li>int32_rmat_transp_ratemult()
-: <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.c</a>
-</li>
 <li>int32_rmat_transp_vmult()
-: <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.h</a>
 </li>
 <li>INT32_RMAT_TRANSP_VMULT
 : <a class="el" href="group__math__algebra__int.html#gaa42fafb988683966c81298ec9339b373">pprz_algebra_int.h</a>
 </li>
-<li>int32_rmat_vmult()
-: <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.h</a>
-</li>
-<li>INT32_RMAT_VMULT
-: <a class="el" href="group__math__algebra__int.html#gaa02cccdd52ca15605ac2216e2da5bf40">pprz_algebra_int.h</a>
+<li>int32_rmat_transp_vmult()
+: <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_vmult()
 : <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.h</a>
+</li>
+<li>INT32_RMAT_VMULT
+: <a class="el" href="group__math__algebra__int.html#gaa02cccdd52ca15605ac2216e2da5bf40">pprz_algebra_int.h</a>
 </li>
 <li>INT32_SPEED_FRAC
 : <a class="el" href="group__math__algebra__int.html#ga78c97bb51a4486cff673bf9995b8fdb0">pprz_algebra_int.h</a>
@@ -4931,8 +4913,8 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="itg3200__regs_8h.html#ac72d80a8255d15cb5794228f862e26baa2b94466db23d47addab5bd8c2888357b">itg3200_regs.h</a>
 </li>
 <li>itg3200_event()
-: <a class="el" href="itg3200_8c.html#aaa9c768fbf93b62e8c6f74ebcc07cf45">itg3200.c</a>
-, <a class="el" href="itg3200_8h.html#aaa9c768fbf93b62e8c6f74ebcc07cf45">itg3200.h</a>
+: <a class="el" href="itg3200_8h.html#aaa9c768fbf93b62e8c6f74ebcc07cf45">itg3200.h</a>
+, <a class="el" href="itg3200_8c.html#aaa9c768fbf93b62e8c6f74ebcc07cf45">itg3200.c</a>
 </li>
 <li>itg3200_i2c_tx_reg()
 : <a class="el" href="itg3200_8c.html#a7b349504704c56277b218842850b117c">itg3200.c</a>
@@ -4994,12 +4976,12 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="itg3200_8c.html#afe8ddf75a27aa350a6270539e5fabd0c">itg3200.c</a>
 </li>
 <li>itg3200_set_default_config()
-: <a class="el" href="itg3200_8c.html#afb54551377578d676facc80c71379182">itg3200.c</a>
-, <a class="el" href="itg3200_8h.html#aa09b37def29f4a21a1aa1f1ebeec3170">itg3200.h</a>
+: <a class="el" href="itg3200_8h.html#aa09b37def29f4a21a1aa1f1ebeec3170">itg3200.h</a>
+, <a class="el" href="itg3200_8c.html#afb54551377578d676facc80c71379182">itg3200.c</a>
 </li>
 <li>itg3200_start_configure()
-: <a class="el" href="itg3200_8c.html#a37fd9870e73caee0513811101150ae87">itg3200.c</a>
-, <a class="el" href="itg3200_8h.html#a37fd9870e73caee0513811101150ae87">itg3200.h</a>
+: <a class="el" href="itg3200_8h.html#a37fd9870e73caee0513811101150ae87">itg3200.h</a>
+, <a class="el" href="itg3200_8c.html#a37fd9870e73caee0513811101150ae87">itg3200.c</a>
 </li>
 <li>Itg3200ConfStatus
 : <a class="el" href="itg3200_8h.html#af4ecc3fa080959344238782150fee737">itg3200.h</a>
@@ -5026,8 +5008,8 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="itg3200_8h.html#af4ecc3fa080959344238782150fee737abd709f0e9c131a84aebaab7d42d838da">itg3200.h</a>
 </li>
 <li>IUCLC
-: <a class="el" href="nps__radio__control__spektrum_8c.html#a60397fb1a881cadaa5e210dd5d347989">nps_radio_control_spektrum.c</a>
-, <a class="el" href="serial__port_8c.html#a60397fb1a881cadaa5e210dd5d347989">serial_port.c</a>
+: <a class="el" href="serial__port_8c.html#a60397fb1a881cadaa5e210dd5d347989">serial_port.c</a>
+, <a class="el" href="nps__radio__control__spektrum_8c.html#a60397fb1a881cadaa5e210dd5d347989">nps_radio_control_spektrum.c</a>
 </li>
 <li>ivy_dl_init()
 : <a class="el" href="ivy__dl_8h.html#afb119705d59367dc440aa9bda842795e">ivy_dl.h</a>
@@ -5040,8 +5022,8 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 : <a class="el" href="nps__ivy_8c.html#a1968774050ccbc364373e5b76b02530f">nps_ivy.c</a>
 </li>
 <li>ivy_tp
-: <a class="el" href="ivy__dl_8h.html#a1f85674103d97e5e86374583269e4e41">ivy_dl.h</a>
-, <a class="el" href="ivy__dl_8c.html#a1f85674103d97e5e86374583269e4e41">ivy_dl.c</a>
+: <a class="el" href="ivy__dl_8c.html#a1f85674103d97e5e86374583269e4e41">ivy_dl.c</a>
+, <a class="el" href="ivy__dl_8h.html#a1f85674103d97e5e86374583269e4e41">ivy_dl.h</a>
 </li>
 <li>ivyPtr
 : <a class="el" href="nps__ivy_8c.html#a77070846c45266eff23ca490d831c560">nps_ivy.c</a>
@@ -5052,7 +5034,7 @@ $(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 9 2022 05:23:02 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Oct 11 2022 14:37:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

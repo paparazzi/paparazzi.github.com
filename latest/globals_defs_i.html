@@ -214,7 +214,9 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 , <a class="el" href="px4fmu__2_84_8h.html#ac0c0f49372826a78db46d0cca8d76d25">px4fmu_2.4.h</a>
 </li>
 <li>I2C2_GPIO_SCL
-: <a class="el" href="px4fmu__2_84_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_2.4.h</a>
+: <a class="el" href="naze32__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">naze32_common.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_1.7.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_2.4.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">cc3d.h</a>
 , <a class="el" href="cjmcu_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">cjmcu.h</a>
@@ -225,8 +227,6 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 , <a class="el" href="lisa__mx__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">lisa_s_1.0.h</a>
 , <a class="el" href="matek__f405__wing__v1_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">matek_f405_wing_v1.h</a>
-, <a class="el" href="naze32__common_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">naze32_common.h</a>
-, <a class="el" href="px4fmu__1_87_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">px4fmu_1.7.h</a>
 </li>
 <li>I2C2_GPIO_SDA
 : <a class="el" href="apogee__1_80_8h.html#a39794b2e20b2fa0d893184f67a399fe8">apogee_1.0.h</a>
@@ -293,6 +293,12 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <li>I2C3_GPIO_SDA_AF
 : <a class="el" href="openpilot__revo__nano_8h.html#a17d6df4b2cf21ee578747f0b9fcaddd9">openpilot_revo_nano.h</a>
 </li>
+<li>I2C3_SCL
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a7341a64e9eafc2cd67ee638800b7c627">board.h</a>
+</li>
+<li>I2C3_SDA
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a35e70a0983ccd6a7df9b63bdf9bb83e1">board.h</a>
+</li>
 <li>I2C4_CFG_DEF
 : <a class="el" href="common__board_8h.html#a832801937f27faf14c000b9743f0ecb9">common_board.h</a>
 , <a class="el" href="nucleo144__f767zi_8h.html#a832801937f27faf14c000b9743f0ecb9">nucleo144_f767zi.h</a>
@@ -304,16 +310,10 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 , <a class="el" href="tawaki_8h.html#ad60be859c48259ad7cd58ebd0adf4aa6">tawaki.h</a>
 </li>
 <li>I2C4_SCL
-: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a1d43b629119a794b03f4f36641ed800e">board.h</a>
-</li>
-<li>I2C4_SCL_EXTERNAL
-: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#aac43f70d2adbce0e9bdc2b353e1ffd61">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a1d43b629119a794b03f4f36641ed800e">board.h</a>
 </li>
 <li>I2C4_SDA
-: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a551109671347a69fe75f94d664305bb4">board.h</a>
-</li>
-<li>I2C4_SDA_EXTERNAL
-: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a324a146b242b850b3bac9c46386a2e3b">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a551109671347a69fe75f94d664305bb4">board.h</a>
 </li>
 <li>I2C_1V8
 : <a class="el" href="vl53l1x__api_8c.html#a641026e19652245f6079572919acf488">vl53l1x_api.c</a>
@@ -492,12 +492,12 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 : <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html#a39ca8cd22c06ced2a49fa8ca9d77fd9f">i2c_arch.c</a>
 </li>
 <li>I2C_STD_100KHZ_DNF0_100NS_PCLK54MHZ_TIMINGR
-: <a class="el" href="chimera_8h.html#a6665dd800b13af54d4e6853e144c1602">chimera.h</a>
-, <a class="el" href="crazyflie_8h.html#a6665dd800b13af54d4e6853e144c1602">crazyflie.h</a>
-, <a class="el" href="holybro__kakute__f7_8h.html#a6665dd800b13af54d4e6853e144c1602">holybro_kakute_f7.h</a>
+: <a class="el" href="holybro__kakute__f7_8h.html#a6665dd800b13af54d4e6853e144c1602">holybro_kakute_f7.h</a>
 , <a class="el" href="matekF765-WING_8h.html#a6665dd800b13af54d4e6853e144c1602">matekF765-WING.h</a>
 , <a class="el" href="nucleo144__f767zi_8h.html#a6665dd800b13af54d4e6853e144c1602">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#a6665dd800b13af54d4e6853e144c1602">tawaki.h</a>
+, <a class="el" href="chimera_8h.html#a6665dd800b13af54d4e6853e144c1602">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a6665dd800b13af54d4e6853e144c1602">crazyflie.h</a>
 </li>
 <li>I2C_TENBIT
 : <a class="el" href="i2c__smbus_8h.html#a2a0b1f3843e98977be7476579c851305">i2c_smbus.h</a>
@@ -885,18 +885,6 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 </li>
 <li>imu_quality_assessment_Reset
 : <a class="el" href="imu__quality__assessment_8h.html#a59b0ecc42c543005cafb6a96cc26cb3e">imu_quality_assessment.h</a>
-</li>
-<li>IMU_SCL
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a9625b87456d850c5816b93d8f4177527">board.h</a>
-</li>
-<li>IMU_SCL_PORT
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#adb9b1595c7b6ea0bf77f844437c9291e">board.h</a>
-</li>
-<li>IMU_SDA
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ade9e8d91a9ae6c553dd1f4c641282a0c">board.h</a>
-</li>
-<li>IMU_SDA_PORT
-: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ae3f6aa2739b25ea02c02c01e2e9dbff5">board.h</a>
 </li>
 <li>IMU_TEMP_CTRL_DUTY_MAX
 : <a class="el" href="imu__temp__ctrl_8h.html#ac3d84cce7e714a2fa80a287848d83287">imu_temp_ctrl.h</a>
@@ -1510,11 +1498,11 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <li>INT32_EULERS_DOT_321_OF_RATES
 : <a class="el" href="group__math__algebra__int.html#ga359628ce78b4c873eb6e648fd82a4acd">pprz_algebra_int.h</a>
 </li>
-<li>int32_eulers_dot_of_rates
-: <a class="el" href="group__math__algebra__int.html#gab40f6c5026831fe7afb9bd0236713df2">pprz_algebra_int.h</a>
-</li>
 <li>INT32_EULERS_DOT_OF_RATES
 : <a class="el" href="group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d">pprz_algebra_int.h</a>
+</li>
+<li>int32_eulers_dot_of_rates
+: <a class="el" href="group__math__algebra__int.html#gab40f6c5026831fe7afb9bd0236713df2">pprz_algebra_int.h</a>
 </li>
 <li>INT32_EULERS_LSHIFT
 : <a class="el" href="group__math__algebra__int.html#gab95c15b48f7f46eab39d4482df9f7c62">pprz_algebra_int.h</a>
@@ -2194,8 +2182,8 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 : <a class="el" href="invensense2__regs_8h.html#a7993899674bc829f358fd968eda0bcf8">invensense2_regs.h</a>
 </li>
 <li>INV_COMMAND_DIM
-: <a class="el" href="ins__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4">ins_float_invariant.h</a>
-, <a class="el" href="ahrs__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4">ahrs_float_invariant.h</a>
+: <a class="el" href="ahrs__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4">ahrs_float_invariant.h</a>
+, <a class="el" href="ins__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4">ins_float_invariant.h</a>
 </li>
 <li>INV_MEASURE_DIM
 : <a class="el" href="ahrs__float__invariant_8h.html#a31154c830fe4c8729366f9c9606fe775">ahrs_float_invariant.h</a>
@@ -2530,7 +2518,7 @@ $(document).ready(function(){initNavTree('globals_defs_i.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 9 2022 05:23:02 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Oct 11 2022 14:37:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
