@@ -1,5 +1,7 @@
 var NAVTREEINDEX179 =
 {
+"sdLog_8c.html#ae82bd97eb545159246a84ebf2233421f":[12,0,1,0,6,41,0,4,7],
+"sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77":[12,0,1,0,6,41,0,4,4],
 "sdLog_8c_source.html":[12,0,1,0,6,41,0,4],
 "sdLog_8h.html":[12,0,1,0,6,41,0,5],
 "sdLog_8h.html#a03326adcb90b1cc07d684a6abaff2051":[12,0,1,0,6,41,0,5,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX179 =
 "sdlogger__spi__direct_8h.html#ad15740b25e247b1005602395c3566e2c":[12,0,1,0,6,41,23,0,9],
 "sdlogger__spi__direct_8h.html#ad47b2b2958d9f06fc41d92792519964d":[12,0,1,0,6,41,23,4],
 "sdlogger__spi__direct_8h.html#af24019c9a3de0374a1f3d5ea33bc5bf9":[12,0,1,0,6,41,23,14],
-"sdlogger__spi__direct_8h.html#structsdlogger__spi__periph":[12,0,1,0,6,41,23,0],
-"sdlogger__spi__direct_8h_source.html":[12,0,1,0,6,41,23],
-"serial_8c.html":[12,0,1,0,6,18,0,5]
+"sdlogger__spi__direct_8h.html#structsdlogger__spi__periph":[12,0,1,0,6,41,23,0]
 };

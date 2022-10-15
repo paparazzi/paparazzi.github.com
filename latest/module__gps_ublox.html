@@ -90,11 +90,17 @@ $(document).ready(function(){initNavTree('module__gps_ublox.html',''); initResiz
 <div class="contents">
 <div class="textblock"><p><b>U-blox GPS (UART)</b></p>
 <p>Driver for u-blox GPS modules parsing the binary UBX protocol.</p>
+<p>The reset variable allows us to manually restart the u-blox GPS. There are three modes:</p><ul>
+<li>Hotstart (GPS_UBX_BOOTRESET = 1)</li>
+<li>Warmstart (GPS_UBX_BOOTRESET = 2)</li>
+<li>Coldstart (GPS_UBX_BOOTRESET = 3)</li>
+</ul>
 <h1><a class="anchor" id="module_load_example__gps_ublox"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_ublox&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;UBX_GPS_PORT&quot; value=&quot;UARTx&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;UBX_GPS_BAUD&quot; value=&quot;B38400&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;UBX_GPS_BAUD&quot; value=&quot;B38400&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;GPS_UBX_BOOTRESET&quot; value=&quot;0&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps_ublox"></a>
 Module configuration options</h1>
@@ -105,6 +111,8 @@ Configure Options</h2>
  Description: UART where the GPS is connected to (UART1, UART2, etc</li>
 <li><b>name:</b> <code>UBX_GPS_BAUD</code> <b>value:</b> <em>B38400</em> <br  />
  Description: UART baud rate</li>
+<li><b>name:</b> <code>GPS_UBX_BOOTRESET</code> <b>value:</b> <em>0</em> <br  />
+ Description: Force a hot, warm or cold reset when the system boot up</li>
 </ul>
 <h1><a class="anchor" id="autoloads__gps_ublox"></a>
 Auto-loaded modules</h1>
@@ -165,10 +173,25 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">U-blox</span> <span class="keyword">GPS</span> (<span class="keyword">UART</span>)</div>
 <div class="line">      <span class="keyword">Driver</span> <span class="keyword">for</span> <span class="keyword">u-blox</span> <span class="keyword">GPS</span> <span class="keyword">modules</span> <span class="keyword">parsing</span> <span class="keyword">the</span> <span class="keyword">binary</span> <span class="keyword">UBX</span> <span class="keyword">protocol.</span></div>
+<div class="line">      </div>
+<div class="line">      <span class="keyword">The</span> <span class="keyword">reset</span> <span class="keyword">variable</span> <span class="keyword">allows</span> <span class="keyword">us</span> <span class="keyword">to</span> <span class="keyword">manually</span> <span class="keyword">restart</span> <span class="keyword">the</span> <span class="keyword">u-blox</span> <span class="keyword">GPS.</span> <span class="keyword">There</span> <span class="keyword">are</span> <span class="keyword">three</span> <span class="keyword">modes:</span></div>
+<div class="line">        - <span class="keyword">Hotstart</span>  (<span class="keyword">GPS_UBX_BOOTRESET</span> = 1)</div>
+<div class="line">        - <span class="keyword">Warmstart</span> (<span class="keyword">GPS_UBX_BOOTRESET</span> = 2)</div>
+<div class="line">        - <span class="keyword">Coldstart</span> (<span class="keyword">GPS_UBX_BOOTRESET</span> = 3) </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART where the GPS is connected to (UART1, UART2, etc&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UBX_GPS_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B38400&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART baud rate&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_UBX_BOOTRESET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Force a hot, warm or cold reset when the system boot up&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
+<div class="line"> </div>
+<div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;gps_ublox&quot;</span>&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;Hotstart|Warmstart|Coldstart&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;gps/gps_ubx&quot;</span> <span class="keyword">VAR</span>=<span class="stringliteral">&quot;gps_ubx.reset&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;reset&quot;</span>/&gt;</div>
+<div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
+<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>,<span class="keyword">gps</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">gps</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
@@ -221,7 +244,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 12 2022 09:21:54 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 15 2022 21:28:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

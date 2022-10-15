@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,373,1,0],
+"module__joystick.html":[1,430],
 "module__joystick.html#datalink_functions__joystick":[1,430,2],
 "module__joystick.html#functions__joystick":[1,430,1],
 "module__joystick.html#module_load_example__joystick":[1,430,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "module__nav_line_osam.html#module_xml__nav_line_osam":[1,299,0,0],
 "module__nav_poles.html":[1,300],
 "module__nav_poles.html#module_load_example__nav_poles":[1,300,0],
-"module__nav_poles.html#module_xml__nav_poles":[1,300,0,0],
-"module__nav_rosette.html":[1,301],
-"module__nav_rosette.html#functions__nav_rosette":[1,301,1]
+"module__nav_poles.html#module_xml__nav_poles":[1,300,0,0]
 };

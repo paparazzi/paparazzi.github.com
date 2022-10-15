@@ -1,5 +1,7 @@
 var NAVTREEINDEX182 =
 {
+"sim__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85":[12,0,1,0,6,18,15,3],
+"sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5":[12,0,1,0,6,18,15,2],
 "sim__i2c__cam__ctrl_8c_source.html":[12,0,1,0,6,18,15],
 "sim__uart__hw_8c.html":[12,0,1,0,0,2,16],
 "sim__uart__hw_8c.html#a89272ef75ed0d6cb19ba8e4aa0afa32e":[12,0,1,0,0,2,16,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX182 =
 "sonar__vl53l1x_8c.html#a9dd7932ee8a123c5e77e09bf70f530d0":[12,0,1,0,6,62,8,1],
 "sonar__vl53l1x_8c.html#ae665ecf28ffce54d39a79fb01e7878ab":[12,0,1,0,6,62,8,4],
 "sonar__vl53l1x_8c.html#af22954043e5570ba94680eec7b483fa0":[12,0,1,0,6,62,8,6],
-"sonar__vl53l1x_8c_source.html":[12,0,1,0,6,62,8],
-"sonar__vl53l1x_8h.html":[12,0,1,0,6,62,9],
-"sonar__vl53l1x_8h.html#a263b607c57dbc3b8dab382c0db2fb5e2":[12,0,1,0,6,62,9,4]
+"sonar__vl53l1x_8c_source.html":[12,0,1,0,6,62,8]
 };

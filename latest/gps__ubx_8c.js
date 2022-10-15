@@ -9,6 +9,7 @@ var gps__ubx_8c =
     [ "GOT_PAYLOAD", "gps__ubx_8c.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687", null ],
     [ "GOT_SYNC1", "gps__ubx_8c.html#a707902cbcb19d72f61023120a772dcc1", null ],
     [ "GOT_SYNC2", "gps__ubx_8c.html#a43c36b18edb9111a465a8a9eceb01147", null ],
+    [ "GPS_UBX_BOOTRESET", "gps__ubx_8c.html#a35ca2a7a61d33ad148da82464549e769", null ],
     [ "GPS_UBX_ERR_CHECKSUM", "gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc", null ],
     [ "GPS_UBX_ERR_MSG_TOO_LONG", "gps__ubx_8c.html#a6c7dd4d0942f7ec06c99e4f5b0c85982", null ],
     [ "GPS_UBX_ERR_NONE", "gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e", null ],

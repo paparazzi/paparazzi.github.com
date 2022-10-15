@@ -1,5 +1,7 @@
 var NAVTREEINDEX124 =
 {
+"module__nav_rosette.html":[1,301],
+"module__nav_rosette.html#functions__nav_rosette":[1,301,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,301,0],
 "module__nav_rosette.html#module_xml__nav_rosette":[1,301,1,0],
 "module__nav_rover_base.html":[1,302],
@@ -247,7 +249,5 @@ var NAVTREEINDEX124 =
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,370,2,0],
 "module__rssi.html":[1,282],
 "module__rssi.html#datalink_functions__rssi":[1,282,2],
-"module__rssi.html#functions__rssi":[1,282,1],
-"module__rssi.html#module_load_example__rssi":[1,282,0],
-"module__rssi.html#module_xml__rssi":[1,282,2,0]
+"module__rssi.html#functions__rssi":[1,282,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX158 =
 {
+"pprz__algebra__float_8h.html":[12,0,1,0,4,5],
+"pprz__algebra__float_8h_source.html":[12,0,1,0,4,5],
 "pprz__algebra__int_8c.html":[12,0,1,0,4,6],
 "pprz__algebra__int_8c.html#abbd29be7de3005d58f24a3d4b5eb8907":[12,0,1,0,4,6,0],
 "pprz__algebra__int_8c_source.html":[12,0,1,0,4,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX158 =
 "pprz__stat_8c_source.html":[12,0,1,0,4,30],
 "pprz__stat_8h.html":[12,0,1,0,4,31],
 "pprz__stat_8h.html#a234aff5aa9b0f7e40ac863e2b60d6365":[12,0,1,0,4,31,4],
-"pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56":[12,0,1,0,4,31,6],
-"pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f":[12,0,1,0,4,31,2],
-"pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117":[12,0,1,0,4,31,1]
+"pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56":[12,0,1,0,4,31,6]
 };

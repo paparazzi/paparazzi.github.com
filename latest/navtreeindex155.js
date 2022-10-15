@@ -1,5 +1,7 @@
 var NAVTREEINDEX155 =
 {
+"paparazzi_messages.html#BARO_WORDS":[2,0,45],
+"paparazzi_messages.html#BATTERY_MONITOR":[2,0,225],
 "paparazzi_messages.html#BAT_LOW":[2,3,0],
 "paparazzi_messages.html#BEBOP_ACTUATORS":[2,0,195],
 "paparazzi_messages.html#BLOCK":[2,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX155 =
 "paparazzi_messages.html#SHT_I2C_SERIAL":[2,0,97],
 "paparazzi_messages.html#SHT_I2C_STATUS":[2,0,125],
 "paparazzi_messages.html#SHT_STATUS":[2,0,88],
-"paparazzi_messages.html#SMARTPROBE":[2,1,42],
-"paparazzi_messages.html#SOLAR_RADIATION":[2,0,117],
-"paparazzi_messages.html#SONAR":[2,0,213]
+"paparazzi_messages.html#SMARTPROBE":[2,1,42]
 };

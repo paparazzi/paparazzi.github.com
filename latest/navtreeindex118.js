@@ -1,5 +1,7 @@
 var NAVTREEINDEX118 =
 {
+"mission__fw__nav_8c.html#ace2e9ed0bbdd8359ab176ae004a2d957":[12,0,1,0,6,44,6,10],
+"mission__fw__nav_8c.html#ae62485be2a8775e1ebad21f86f68bd6a":[12,0,1,0,6,44,6,11],
 "mission__fw__nav_8c.html#af52e94b6fc7933932b718c6489d4a549":[12,0,1,0,6,44,6,12],
 "mission__fw__nav_8c_source.html":[12,0,1,0,6,44,6],
 "mission__manager_8c.html":[12,0,1,0,6,14,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX118 =
 "module__aoa_adc.html#functions__aoa_adc":[1,336,2],
 "module__aoa_adc.html#module_load_example__aoa_adc":[1,336,0],
 "module__aoa_adc.html#module_xml__aoa_adc":[1,336,2,0],
-"module__aoa_pwm.html":[1,337],
-"module__aoa_pwm.html#configuration__aoa_pwm":[1,337,1],
-"module__aoa_pwm.html#functions__aoa_pwm":[1,337,2]
+"module__aoa_pwm.html":[1,337]
 };

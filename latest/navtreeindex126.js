@@ -1,5 +1,7 @@
 var NAVTREEINDEX126 =
 {
+"module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,108,2],
+"module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,108,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,108,2,0],
 "module__telemetry_transparent_gec.html":[1,109],
 "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,109,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX126 =
 "modules_2datalink_2superbitrf_8h.html#a62eaf6e8c7db5b72ad5f4f6c43654c8d":[12,0,1,0,0,2,1,2,1,0,31],
 "modules_2datalink_2superbitrf_8h.html#a6714bbf604e39f172a0686abe3d6f6c2":[12,0,1,0,6,14,28,14],
 "modules_2datalink_2superbitrf_8h.html#a694f702b729360c1afc0c5aaa1b6339a":[12,0,1,0,6,14,28,0,13],
-"modules_2datalink_2superbitrf_8h.html#a694f702b729360c1afc0c5aaa1b6339a":[12,0,1,0,0,2,1,2,1,0,13],
-"modules_2datalink_2superbitrf_8h.html#a6a734326af21f38fbff5140c515712be":[12,0,1,0,6,14,28,5],
-"modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[12,0,1,0,6,14,28,0,18]
+"modules_2datalink_2superbitrf_8h.html#a694f702b729360c1afc0c5aaa1b6339a":[12,0,1,0,0,2,1,2,1,0,13]
 };
