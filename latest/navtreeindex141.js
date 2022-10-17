@@ -1,5 +1,6 @@
 var NAVTREEINDEX141 =
 {
+"navstik__1_80_8h.html#a8498429e77239ef33e38cf77eeafdb02":[12,0,1,0,1,48,110],
 "navstik__1_80_8h.html#a85ec476fd51af473dba49e30e47b9129":[12,0,1,0,1,48,99],
 "navstik__1_80_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,48,48],
 "navstik__1_80_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,48,146],
@@ -248,6 +249,5 @@ var NAVTREEINDEX141 =
 "nps__autopilot_8h.html#a4869125aa1851fb944d57893f0674c20":[12,0,1,1,1,2,9],
 "nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310":[12,0,1,1,1,2,6],
 "nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487":[12,0,1,1,1,2,4],
-"nps__autopilot_8h.html#a95a0837a97b6695923a8edde170e2aba":[12,0,1,1,1,2,0,1],
-"nps__autopilot_8h.html#aa10f50205109ca60f93290db2d7ac71c":[12,0,1,1,1,2,2]
+"nps__autopilot_8h.html#a95a0837a97b6695923a8edde170e2aba":[12,0,1,1,1,2,0,1]
 };

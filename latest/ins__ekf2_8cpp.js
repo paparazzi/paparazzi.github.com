@@ -35,6 +35,7 @@ var ins__ekf2_8cpp =
     [ "INS_EKF2_SONAR_MIN_RANGE", "ins__ekf2_8cpp.html#ad1e1cf5f7cc25dde0b6ab099f7bc2dd2", null ],
     [ "INS_EKF2_TEMPERATURE_ID", "ins__ekf2_8cpp.html#a4092df9bf43189e1c89451043b71ae13", null ],
     [ "INS_EKF2_VDIST_SENSOR_TYPE", "ins__ekf2_8cpp.html#a427c912f7a529096c80572478647c5cf", null ],
+    [ "USE_INS_NAV_INIT", "ins__ekf2_8cpp.html#a54f7a3292fefa355dd014ce5bc2df65a", null ],
     [ "accel_int_cb", "ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b", null ],
     [ "agl_cb", "ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac", null ],
     [ "baro_cb", "ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933", null ],

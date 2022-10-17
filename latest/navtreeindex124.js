@@ -1,5 +1,7 @@
 var NAVTREEINDEX124 =
 {
+"module__nav_poles.html#module_load_example__nav_poles":[1,300,0],
+"module__nav_poles.html#module_xml__nav_poles":[1,300,0,0],
 "module__nav_rosette.html":[1,301],
 "module__nav_rosette.html#functions__nav_rosette":[1,301,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,301,0],
@@ -218,12 +220,9 @@ var NAVTREEINDEX124 =
 "module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,331,2,0],
 "module__radio_control_superbitrf_rc.html":[1,332],
 "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,332,1],
-"module__radio_control_superbitrf_rc.html#configure":[1,332,1,0],
-"module__radio_control_superbitrf_rc.html#event_functions":[1,332,2,1],
 "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,332,2],
-"module__radio_control_superbitrf_rc.html#init_functions":[1,332,2,0],
 "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,332,0],
-"module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,332,2,2],
+"module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,332,2,0],
 "module__range_forcefield.html":[1,443],
 "module__range_forcefield.html#configuration__range_forcefield":[1,443,1],
 "module__range_forcefield.html#functions__range_forcefield":[1,443,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX124 =
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,370,2,0],
 "module__rssi.html":[1,282],
 "module__rssi.html#datalink_functions__rssi":[1,282,2],
-"module__rssi.html#functions__rssi":[1,282,1]
+"module__rssi.html#functions__rssi":[1,282,1],
+"module__rssi.html#module_load_example__rssi":[1,282,0]
 };

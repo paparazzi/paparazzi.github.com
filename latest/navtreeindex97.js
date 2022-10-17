@@ -1,5 +1,6 @@
 var NAVTREEINDEX97 =
 {
+"lia__1_81_8h.html#aa8b07cb021b87d0c5868a3cb2851510e":[12,0,1,0,1,36,63],
 "lia__1_81_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb":[12,0,1,0,1,36,9],
 "lia__1_81_8h.html#aace877e382bb988e286679d3283814ff":[12,0,1,0,1,36,37],
 "lia__1_81_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf":[12,0,1,0,1,36,60],
@@ -248,6 +249,5 @@ var NAVTREEINDEX97 =
 "light__ws2812__arch_8c.html#a190b6be6a702540df9606c31b01b7b13":[12,0,1,0,0,0,1,2,0,5],
 "light__ws2812__arch_8c.html#a2f0b7ce13123d692896c2e56aa6c7c58":[12,0,1,0,0,0,1,2,0,0,2],
 "light__ws2812__arch_8c.html#a3f0d53c16bf1c7c63e0fb393a8944940":[12,0,1,0,0,0,1,2,0,1,4],
-"light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d":[12,0,1,0,0,0,1,2,0,2],
-"light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54":[12,0,1,0,0,0,1,2,0,16]
+"light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d":[12,0,1,0,0,0,1,2,0,2]
 };

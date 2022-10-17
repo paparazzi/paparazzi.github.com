@@ -1,6 +1,7 @@
 var NAVTREEINDEX204 =
 {
 "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,124,1],
+"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,124,0,0],
 "vl53l1__platform_8h_source.html":[12,0,1,0,7,124],
 "vl53l1__types_8h.html":[12,0,1,0,7,125],
 "vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30":[12,0,1,0,7,125,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "vn200__serial_8h.html#af182316df79207b1a740b28e13be4f61":[12,0,1,0,7,131,0,8],
 "vn200__serial_8h.html#afd049fc2c1ab013285769fff08d4948d":[12,0,1,0,7,131,0,12],
 "vn200__serial_8h.html#structVNData":[12,0,1,0,7,131,1],
-"vn200__serial_8h.html#structVNPacket":[12,0,1,0,7,131,0],
-"vn200__serial_8h_source.html":[12,0,1,0,7,131]
+"vn200__serial_8h.html#structVNPacket":[12,0,1,0,7,131,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX118 =
 {
+"mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b":[12,0,1,0,6,44,6,4],
 "mission__fw__nav_8c.html#ace2e9ed0bbdd8359ab176ae004a2d957":[12,0,1,0,6,44,6,10],
 "mission__fw__nav_8c.html#ae62485be2a8775e1ebad21f86f68bd6a":[12,0,1,0,6,44,6,11],
 "mission__fw__nav_8c.html#af52e94b6fc7933932b718c6489d4a549":[12,0,1,0,6,44,6,12],
@@ -233,9 +234,13 @@ var NAVTREEINDEX118 =
 "module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,344,2,0],
 "module__airspeed_uadc.html":[1,345],
 "module__airspeed_uadc.html#configuration__airspeed_uadc":[1,345,1],
+"module__airspeed_uadc.html#configure":[1,345,1,0],
+"module__airspeed_uadc.html#event_functions":[1,345,2,1],
 "module__airspeed_uadc.html#functions__airspeed_uadc":[1,345,2],
+"module__airspeed_uadc.html#init_functions":[1,345,2,0],
 "module__airspeed_uadc.html#module_load_example__airspeed_uadc":[1,345,0],
-"module__airspeed_uadc.html#module_xml__airspeed_uadc":[1,345,2,0],
+"module__airspeed_uadc.html#module_xml__airspeed_uadc":[1,345,2,3],
+"module__airspeed_uadc.html#periodic_functions":[1,345,2,2],
 "module__alt_filter.html":[1,199],
 "module__alt_filter.html#functions__alt_filter":[1,199,1],
 "module__alt_filter.html#module_load_example__alt_filter":[1,199,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX118 =
 "module__alt_srf08.html#functions__alt_srf08":[1,346,1],
 "module__alt_srf08.html#module_load_example__alt_srf08":[1,346,0],
 "module__alt_srf08.html#module_xml__alt_srf08":[1,346,1,0],
-"module__aoa_adc.html":[1,336],
-"module__aoa_adc.html#configuration__aoa_adc":[1,336,1],
-"module__aoa_adc.html#functions__aoa_adc":[1,336,2],
-"module__aoa_adc.html#module_load_example__aoa_adc":[1,336,0],
-"module__aoa_adc.html#module_xml__aoa_adc":[1,336,2,0],
-"module__aoa_pwm.html":[1,337]
+"module__aoa_adc.html":[1,336]
 };

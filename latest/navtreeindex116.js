@@ -1,5 +1,6 @@
 var NAVTREEINDEX116 =
 {
+"max7456__regs_8h.html#a8c9d1a9a2066eef358ab3f946e51ce90":[12,0,1,0,6,19,2,52],
 "max7456__regs_8h.html#a92aa37588242b15e02f0301e210b1ccf":[12,0,1,0,6,19,2,46],
 "max7456__regs_8h.html#a939e2e0e76336b4c578df5d4437bfc27":[12,0,1,0,6,19,2,44],
 "max7456__regs_8h.html#a9a63b4e4b70b715bb2140bba9de7c6bc":[12,0,1,0,6,19,2,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX116 =
 "meteo__stick__calib_8h.html#structSensors__params":[12,0,1,0,6,43,36,0],
 "meteo__stick__calib_8h_source.html":[12,0,1,0,6,43,36],
 "mf__ptu_8c.html":[12,0,1,0,6,43,37],
-"mf__ptu_8c.html#a0857026f9aee90905625dd42d2f0ad01":[12,0,1,0,6,43,37,3],
-"mf__ptu_8c.html#a0ca8f7b87de9bf822fecd5f571b4f294":[12,0,1,0,6,43,37,9]
+"mf__ptu_8c.html#a0857026f9aee90905625dd42d2f0ad01":[12,0,1,0,6,43,37,3]
 };

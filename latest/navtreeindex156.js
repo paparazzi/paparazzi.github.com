@@ -1,5 +1,6 @@
 var NAVTREEINDEX156 =
 {
+"paparazzi_messages.html#SMARTPROBE":[2,1,42],
 "paparazzi_messages.html#SOLAR_RADIATION":[2,0,117],
 "paparazzi_messages.html#SONAR":[2,0,213],
 "paparazzi_messages.html#STAB_ATTITUDE_FLOAT":[2,0,128],
@@ -248,6 +249,5 @@ var NAVTREEINDEX156 =
 "photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037":[12,0,1,0,6,9,0,15],
 "photogrammetry__calculator_8c.html#a4417b4836a8a82e7a8f11b640602e648":[12,0,1,0,6,9,0,11],
 "photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410":[12,0,1,0,6,9,0,7],
-"photogrammetry__calculator_8c.html#a46c42018ddb4b3cf3810f1918345493f":[12,0,1,0,6,9,0,1],
-"photogrammetry__calculator_8c.html#a4bd1fab8b9b0a126bbeec060873df996":[12,0,1,0,6,9,0,9]
+"photogrammetry__calculator_8c.html#a46c42018ddb4b3cf3810f1918345493f":[12,0,1,0,6,9,0,1]
 };

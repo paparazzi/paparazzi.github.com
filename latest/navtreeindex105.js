@@ -1,5 +1,6 @@
 var NAVTREEINDEX105 =
 {
+"logger__control__effectiveness_8c_source.html":[12,0,1,0,6,41,11],
 "logger__control__effectiveness_8h.html":[12,0,1,0,6,41,12],
 "logger__control__effectiveness_8h.html#a34e7856739170b664a5dffcef7f4e5f1":[12,0,1,0,6,41,12,0],
 "logger__control__effectiveness_8h.html#a754cd5c0228235ddee07e88c047271a4":[12,0,1,0,6,41,12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX105 =
 "lsm303d__regs_8h.html#a820ce99681ea06e0c8a4afe44d4bdc91":[12,0,1,0,7,70,34],
 "lsm303d__regs_8h.html#a8269b2571342acd1050ef8a581d9b676":[12,0,1,0,7,70,97],
 "lsm303d__regs_8h.html#a84b163392d938c426d6ff373b2499d8b":[12,0,1,0,7,70,2],
-"lsm303d__regs_8h.html#a84cee564bf5bb645dcfaeaa729b9bc48":[12,0,1,0,7,70,28],
-"lsm303d__regs_8h.html#a867c34aa9c28e423af029179bc3ed924":[12,0,1,0,7,70,5]
+"lsm303d__regs_8h.html#a84cee564bf5bb645dcfaeaa729b9bc48":[12,0,1,0,7,70,28]
 };

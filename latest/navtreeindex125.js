@@ -1,6 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__rssi.html#module_load_example__rssi":[1,282,0],
 "module__rssi.html#module_xml__rssi":[1,282,2,0],
 "module__rust_demo_module.html":[1,445],
 "module__rust_demo_module.html#functions__rust_demo_module":[1,445,1],
@@ -202,11 +201,9 @@ var NAVTREEINDEX125 =
 "module__tcas.html#functions__tcas":[1,283,1],
 "module__tcas.html#module_load_example__tcas":[1,283,0],
 "module__tcas.html#module_xml__tcas":[1,283,2,0],
-"module__tcas.html#periodic_functions":[1,283,1,0],
 "module__telemetry_bluegiga.html":[1,99],
 "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga":[1,99,2],
 "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga":[1,99,1],
-"module__telemetry_bluegiga.html#define":[1,99,1,0],
 "module__telemetry_bluegiga.html#functions__telemetry_bluegiga":[1,99,3],
 "module__telemetry_bluegiga.html#module_load_example__telemetry_bluegiga":[1,99,0],
 "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga":[1,99,3,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX125 =
 "module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,107,0],
 "module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,107,3,0],
 "module__telemetry_transparent_frsky_x.html":[1,108],
-"module__telemetry_transparent_frsky_x.html#autoloads__telemetry_transparent_frsky_x":[1,108,1]
+"module__telemetry_transparent_frsky_x.html#autoloads__telemetry_transparent_frsky_x":[1,108,1],
+"module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,108,2],
+"module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,108,0],
+"module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,108,2,0]
 };
