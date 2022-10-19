@@ -1,10 +1,10 @@
 var NAVTREEINDEX122 =
 {
+"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,175,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,175,3],
 "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common":[1,175,0],
 "module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common":[1,175,3,0],
 "module__imu_bebop.html":[1,176],
-"module__imu_bebop.html#af_section":[1,176,1,0],
 "module__imu_bebop.html#autoloads__imu_bebop":[1,176,2],
 "module__imu_bebop.html#configuration__imu_bebop":[1,176,1],
 "module__imu_bebop.html#functions__imu_bebop":[1,176,3],

@@ -7,6 +7,7 @@ var autopilot__guided_8h =
     [ "GUIDED_FLAG_YAW_RATE", "autopilot__guided_8h.html#a5743d4149e73787002e4c32bedf14740", null ],
     [ "GUIDED_FLAG_Z_OFFSET", "autopilot__guided_8h.html#af73a17c6cdef56fa62d3489a6e2eb87f", null ],
     [ "GUIDED_FLAG_Z_VEL", "autopilot__guided_8h.html#a8c554f04ac2f4d6e8734a626c3f0a74d", null ],
+    [ "NavGuided", "autopilot__guided_8h.html#adf3c5cb62058b663de03a2c2f25b0293", null ],
     [ "autopilot_guided_goto_body_relative", "autopilot__guided_8h.html#acb5ff8d624f7583075e58303f46b9890", null ],
     [ "autopilot_guided_goto_ned", "autopilot__guided_8h.html#ae4f59fae723f5116a979c7c5b923c180", null ],
     [ "autopilot_guided_goto_ned_relative", "autopilot__guided_8h.html#a32b83e461c091c64ffa38e4f08f6a312", null ],

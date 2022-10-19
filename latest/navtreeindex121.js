@@ -1,5 +1,6 @@
 var NAVTREEINDEX121 =
 {
+"module__gps_intermcu.html#functions__gps_intermcu":[1,137,2],
 "module__gps_intermcu.html#module_load_example__gps_intermcu":[1,137,0],
 "module__gps_intermcu.html#module_xml__gps_intermcu":[1,137,3,0],
 "module__gps_mediatek_diy.html":[1,138],
@@ -230,10 +231,10 @@ var NAVTREEINDEX121 =
 "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0":[1,169,2],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,169,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,169,0],
+"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,169,2,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,170],
 "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5":[1,170,1],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,170,0],
-"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,170,1,0],
 "module__imu_aspirin_v1_0.html":[1,171],
 "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0":[1,171,1],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,171,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX121 =
 "module__imu_aspirin_v2_2.html":[1,174],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,174,0],
 "module__imu_aspirin_v2_common.html":[1,175],
-"module__imu_aspirin_v2_common.html#autoloads__imu_aspirin_v2_common":[1,175,2],
-"module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,175,1]
+"module__imu_aspirin_v2_common.html#autoloads__imu_aspirin_v2_common":[1,175,2]
 };

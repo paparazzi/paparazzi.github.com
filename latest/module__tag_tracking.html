@@ -131,6 +131,14 @@ Airframe file section</h2>
  Description: position prediction time when moving waypoint</li>
 <li><b>name</b> <code>MAX_OFFSET</code> <b>value:</b> <em>2.</em> <br  />
  Description: maximum position offset for predicted positin compared to estimated position</li>
+<li><b>name</b> <code>MAX_SPEED</code> <b>value:</b> <em>4.</em> <br  />
+ Description: maximum horiontal speed for the tracking control</li>
+<li><b>name</b> <code>MAX_VZ</code> <b>value:</b> <em>2.</em> <br  />
+ Description: maximum vertical speed for the tracking control</li>
+<li><b>name</b> <code>KP</code> <b>value:</b> <em>0.5</em> <br  />
+ Description: horizontal gain on position error</li>
+<li><b>name</b> <code>KPZ</code> <b>value:</b> <em>0.2</em> <br  />
+ Description: vertical gain on position error</li>
 </ul>
 </li>
 </ul>
@@ -207,6 +215,10 @@ Raw tag_tracking.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TIMEOUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;timeout for lost tracking in seconds&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PREDICT_TIME&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;position prediction time when moving waypoint&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum position offset for predicted positin compared to estimated position&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_SPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum horiontal speed for the tracking control&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_VZ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum vertical speed for the tracking control&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;KP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;horizontal gain on position error&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;KPZ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.2&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;vertical gain on position error&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
@@ -214,6 +226,8 @@ Raw tag_tracking.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Tag Tracking&quot;</span>&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;tag_tracking.motion_type&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;motion&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;FIXED|MOVING&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;modules/computer_vision/tag_tracking&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;tag_tracking.predict_time&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;5.&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;pred_time&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;tag_tracking.kp&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.01&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;5.&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;kp&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;tag_tracking.kpz&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.01&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;5.&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;kpz&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -239,7 +253,7 @@ Raw tag_tracking.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Oct 17 2022 09:00:03 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Oct 19 2022 07:31:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

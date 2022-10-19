@@ -673,7 +673,9 @@ var onboard_modules =
     ] ],
     [ "telemetry_bluegiga module", "module__telemetry_bluegiga.html", [
       [ "Example for airframe file", "module__telemetry_bluegiga.html#module_load_example__telemetry_bluegiga", null ],
-      [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", null ],
+      [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", [
+        [ "Define Options", "module__telemetry_bluegiga.html#define", null ]
+      ] ],
       [ "Auto-loaded modules", "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga", null ],
       [ "Module functions", "module__telemetry_bluegiga.html#functions__telemetry_bluegiga", [
         [ "Raw telemetry_bluegiga.xml file:", "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga", null ]
@@ -896,7 +898,10 @@ var onboard_modules =
       ] ]
     ] ],
     [ "gpio_ext_common module", "module__gpio_ext_common.html", [
-      [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", [
+      [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", null ],
+      [ "Files", "module__gpio_ext_common.html#files", [
+        [ "Header Files", "module__gpio_ext_common.html#headers", null ],
+        [ "Source Files", "module__gpio_ext_common.html#sources", null ],
         [ "Raw gpio_ext_common.xml file:", "module__gpio_ext_common.html#module_xml__gpio_ext_common", null ]
       ] ]
     ] ],
@@ -1159,13 +1164,13 @@ var onboard_modules =
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
       [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
@@ -1196,9 +1201,7 @@ var onboard_modules =
     ] ],
     [ "imu_bebop module", "module__imu_bebop.html", [
       [ "Example for airframe file", "module__imu_bebop.html#module_load_example__imu_bebop", null ],
-      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", [
-        [ "Airframe file section", "module__imu_bebop.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_bebop.html#configuration__imu_bebop", null ],
       [ "Auto-loaded modules", "module__imu_bebop.html#autoloads__imu_bebop", null ],
       [ "Module functions", "module__imu_bebop.html#functions__imu_bebop", [
         [ "Raw imu_bebop.xml file:", "module__imu_bebop.html#module_xml__imu_bebop", null ]
@@ -1915,7 +1918,9 @@ var onboard_modules =
     ] ],
     [ "tcas module", "module__tcas.html", [
       [ "Example for airframe file", "module__tcas.html#module_load_example__tcas", null ],
-      [ "Module functions", "module__tcas.html#functions__tcas", null ],
+      [ "Module functions", "module__tcas.html#functions__tcas", [
+        [ "Periodic Functions", "module__tcas.html#periodic_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__tcas.html#datalink_functions__tcas", [
         [ "Raw tcas.xml file:", "module__tcas.html#module_xml__tcas", null ]
       ] ]
@@ -2117,11 +2122,6 @@ var onboard_modules =
     [ "tune_airspeed module", "module__tune_airspeed.html", [
       [ "Example for airframe file", "module__tune_airspeed.html#module_load_example__tune_airspeed", null ],
       [ "Module configuration options", "module__tune_airspeed.html#configuration__tune_airspeed", [
-        [ "Define Options", "module__tune_airspeed.html#define", null ]
-      ] ],
-      [ "Files", "module__tune_airspeed.html#files", [
-        [ "Header Files", "module__tune_airspeed.html#headers", null ],
-        [ "Source Files", "module__tune_airspeed.html#sources", null ],
         [ "Raw tune_airspeed.xml file:", "module__tune_airspeed.html#module_xml__tune_airspeed", null ]
       ] ]
     ] ],
@@ -2226,8 +2226,12 @@ var onboard_modules =
     ] ],
     [ "radio_control_superbitrf_rc module", "module__radio_control_superbitrf_rc.html", [
       [ "Example for airframe file", "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc", null ],
-      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", null ],
+      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", [
+        [ "Configure Options", "module__radio_control_superbitrf_rc.html#configure", null ]
+      ] ],
       [ "Module functions", "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc", [
+        [ "Init Functions", "module__radio_control_superbitrf_rc.html#init_functions", null ],
+        [ "Event Functions", "module__radio_control_superbitrf_rc.html#event_functions", null ],
         [ "Raw radio_control_superbitrf_rc.xml file:", "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc", null ]
       ] ]
     ] ],
@@ -2316,13 +2320,8 @@ var onboard_modules =
     ] ],
     [ "airspeed_uadc module", "module__airspeed_uadc.html", [
       [ "Example for airframe file", "module__airspeed_uadc.html#module_load_example__airspeed_uadc", null ],
-      [ "Module configuration options", "module__airspeed_uadc.html#configuration__airspeed_uadc", [
-        [ "Configure Options", "module__airspeed_uadc.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__airspeed_uadc.html#configuration__airspeed_uadc", null ],
       [ "Module functions", "module__airspeed_uadc.html#functions__airspeed_uadc", [
-        [ "Init Functions", "module__airspeed_uadc.html#init_functions", null ],
-        [ "Event Functions", "module__airspeed_uadc.html#event_functions", null ],
-        [ "Periodic Functions", "module__airspeed_uadc.html#periodic_functions", null ],
         [ "Raw airspeed_uADC.xml file:", "module__airspeed_uadc.html#module_xml__airspeed_uadc", null ]
       ] ]
     ] ],
@@ -2755,7 +2754,9 @@ var onboard_modules =
     ] ],
     [ "collective_tracking_control_target module", "module__collective_tracking_control_target.html", [
       [ "Example for airframe file", "module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target", null ],
-      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", null ],
+      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", [
+        [ "Airframe file section", "module__collective_tracking_control_target.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__collective_tracking_control_target.html#functions__collective_tracking_control_target", null ],
       [ "Datalink Functions", "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target", [
         [ "Raw collective_tracking_control_target.xml file:", "module__collective_tracking_control_target.html#module_xml__collective_tracking_control_target", null ]
