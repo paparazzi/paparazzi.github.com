@@ -609,6 +609,11 @@ var onboard_modules =
     [ "optical_flow_hover module", "module__optical_flow_hover.html", [
       [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
       [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
+        [ "Init Functions", "module__optical_flow_hover.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__optical_flow_hover.html#files", [
+        [ "Header Files", "module__optical_flow_hover.html#headers", null ],
+        [ "Source Files", "module__optical_flow_hover.html#sources", null ],
         [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
       ] ]
     ] ],
@@ -654,6 +659,7 @@ var onboard_modules =
     [ "fbw_datalink module", "module__fbw_datalink.html", [
       [ "Example for airframe file", "module__fbw_datalink.html#module_load_example__fbw_datalink", null ],
       [ "Module configuration options", "module__fbw_datalink.html#configuration__fbw_datalink", [
+        [ "Configure Options", "module__fbw_datalink.html#configure", null ],
         [ "Raw fbw_datalink.xml file:", "module__fbw_datalink.html#module_xml__fbw_datalink", null ]
       ] ]
     ] ],
@@ -673,9 +679,7 @@ var onboard_modules =
     ] ],
     [ "telemetry_bluegiga module", "module__telemetry_bluegiga.html", [
       [ "Example for airframe file", "module__telemetry_bluegiga.html#module_load_example__telemetry_bluegiga", null ],
-      [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", [
-        [ "Define Options", "module__telemetry_bluegiga.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__telemetry_bluegiga.html#configuration__telemetry_bluegiga", null ],
       [ "Auto-loaded modules", "module__telemetry_bluegiga.html#autoloads__telemetry_bluegiga", null ],
       [ "Module functions", "module__telemetry_bluegiga.html#functions__telemetry_bluegiga", [
         [ "Raw telemetry_bluegiga.xml file:", "module__telemetry_bluegiga.html#module_xml__telemetry_bluegiga", null ]
@@ -765,7 +769,9 @@ var onboard_modules =
     ] ],
     [ "telemetry_w5100 module", "module__telemetry_w5100.html", [
       [ "Example for airframe file", "module__telemetry_w5100.html#module_load_example__telemetry_w5100", null ],
-      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", null ],
+      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", [
+        [ "Define Options", "module__telemetry_w5100.html#define", null ]
+      ] ],
       [ "Auto-loaded modules", "module__telemetry_w5100.html#autoloads__telemetry_w5100", null ],
       [ "Module functions", "module__telemetry_w5100.html#functions__telemetry_w5100", [
         [ "Raw telemetry_w5100.xml file:", "module__telemetry_w5100.html#module_xml__telemetry_w5100", null ]
@@ -898,10 +904,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "gpio_ext_common module", "module__gpio_ext_common.html", [
-      [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", null ],
-      [ "Files", "module__gpio_ext_common.html#files", [
-        [ "Header Files", "module__gpio_ext_common.html#headers", null ],
-        [ "Source Files", "module__gpio_ext_common.html#sources", null ],
+      [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", [
         [ "Raw gpio_ext_common.xml file:", "module__gpio_ext_common.html#module_xml__gpio_ext_common", null ]
       ] ]
     ] ],
@@ -1042,7 +1045,9 @@ var onboard_modules =
     ] ],
     [ "guidance_basic_fw module", "module__guidance_basic_fw.html", [
       [ "Example for airframe file", "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw", null ],
-      [ "Module configuration options", "module__guidance_basic_fw.html#configuration__guidance_basic_fw", null ],
+      [ "Module configuration options", "module__guidance_basic_fw.html#configuration__guidance_basic_fw", [
+        [ "Airframe file section", "module__guidance_basic_fw.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__guidance_basic_fw.html#functions__guidance_basic_fw", [
         [ "Raw guidance_basic_fw.xml file:", "module__guidance_basic_fw.html#module_xml__guidance_basic_fw", null ]
       ] ]
@@ -1164,32 +1169,32 @@ var onboard_modules =
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
       [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1918,9 +1923,7 @@ var onboard_modules =
     ] ],
     [ "tcas module", "module__tcas.html", [
       [ "Example for airframe file", "module__tcas.html#module_load_example__tcas", null ],
-      [ "Module functions", "module__tcas.html#functions__tcas", [
-        [ "Periodic Functions", "module__tcas.html#periodic_functions", null ]
-      ] ],
+      [ "Module functions", "module__tcas.html#functions__tcas", null ],
       [ "Datalink Functions", "module__tcas.html#datalink_functions__tcas", [
         [ "Raw tcas.xml file:", "module__tcas.html#module_xml__tcas", null ]
       ] ]
@@ -2226,12 +2229,8 @@ var onboard_modules =
     ] ],
     [ "radio_control_superbitrf_rc module", "module__radio_control_superbitrf_rc.html", [
       [ "Example for airframe file", "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc", null ],
-      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", [
-        [ "Configure Options", "module__radio_control_superbitrf_rc.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", null ],
       [ "Module functions", "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc", [
-        [ "Init Functions", "module__radio_control_superbitrf_rc.html#init_functions", null ],
-        [ "Event Functions", "module__radio_control_superbitrf_rc.html#event_functions", null ],
         [ "Raw radio_control_superbitrf_rc.xml file:", "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc", null ]
       ] ]
     ] ],
@@ -2720,7 +2719,10 @@ var onboard_modules =
     ] ],
     [ "autopilot_gnc module", "module__autopilot_gnc.html", [
       [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
-      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
+      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", [
+        [ "Event Functions", "module__autopilot_gnc.html#event_functions", null ],
+        [ "Periodic Functions", "module__autopilot_gnc.html#periodic_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
         [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
       ] ]
@@ -2754,9 +2756,7 @@ var onboard_modules =
     ] ],
     [ "collective_tracking_control_target module", "module__collective_tracking_control_target.html", [
       [ "Example for airframe file", "module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target", null ],
-      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", [
-        [ "Airframe file section", "module__collective_tracking_control_target.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", null ],
       [ "Module functions", "module__collective_tracking_control_target.html#functions__collective_tracking_control_target", null ],
       [ "Datalink Functions", "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target", [
         [ "Raw collective_tracking_control_target.xml file:", "module__collective_tracking_control_target.html#module_xml__collective_tracking_control_target", null ]

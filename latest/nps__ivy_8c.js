@@ -10,6 +10,7 @@ var nps__ivy_8c =
     [ "ap_launch_index", "nps__ivy_8c.html#ab79359b14e25526ea61042f8cb2232c7", null ],
     [ "ivy_mutex", "nps__ivy_8c.html#a1968774050ccbc364373e5b76b02530f", null ],
     [ "ivyPtr", "nps__ivy_8c.html#a77070846c45266eff23ca490d831c560", null ],
+    [ "nps_ivy_send_world_env", "nps__ivy_8c.html#a76c7b63817b647678ad403614af013fd", null ],
     [ "seq", "nps__ivy_8c.html#a96ef966cdecc2e582959632b5c35eaef", null ],
     [ "th_ivy_main", "nps__ivy_8c.html#a25f104c419aff23ce920ae6a467e9436", null ]
 ];

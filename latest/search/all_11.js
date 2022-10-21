@@ -184,7 +184,7 @@ var searchData=
   ['patch_5fsize_16945',['patch_size',['../textons_8c.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7',1,'patch_size():&#160;textons.c'],['../textons_8h.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7',1,'patch_size():&#160;textons.c']]],
   ['path_16946',['path',['../mission__common_8h.html#a77044825280339aa9b199a3e89353a01',1,'_mission_path']]],
   ['path_5fidx_16947',['path_idx',['../mission__common_8h.html#ad5780cfe4abb38e87b2b78708a04744b',1,'_mission_path']]],
-  ['pausesignal_16948',['pauseSignal',['../nps__main_8h.html#aa6c6cc2a080030733ecf2314d8887462',1,'nps_main.h']]],
+  ['pausesignal_16948',['pauseSignal',['../nps__main_8h.html#aa6c6cc2a080030733ecf2314d8887462',1,'pauseSignal():&#160;nps_main_common.c'],['../nps__main__common_8c.html#aa6c6cc2a080030733ecf2314d8887462',1,'pauseSignal():&#160;nps_main_common.c']]],
   ['payload_16949',['payload',['../mavlink__decoder_8h.html#addbff6421496b285f74af0d64b720f6f',1,'mavlink_message::payload()'],['../digital__cam_2catia_2protocol_8h.html#a5669d3aeab1d3b6bd105d4c481e57b06',1,'mora_transport::payload()']]],
   ['payload_5fidx_16950',['payload_idx',['../mavlink__decoder_8h.html#afbdbf62886c2364326115aad3a0bd062',1,'mavlink_transport::payload_idx()'],['../digital__cam_2catia_2protocol_8h.html#ae97b79ca48e80b9206b9188606d89455',1,'mora_transport::payload_idx()']]],
   ['payload_5flen_16951',['payload_len',['../digital__cam_2catia_2protocol_8h.html#a063f9c58d0a8a864c8da74fe98b251c8',1,'mora_transport']]],

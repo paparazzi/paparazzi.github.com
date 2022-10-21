@@ -256,7 +256,7 @@ var searchData=
   ['uint_23735',['UInt',['../VN100_8h.html#adbe313d9cb7774810f07231de6da2a90',1,'VN100_Param']]],
   ['uint16_23736',['Uint16',['../baro__MS5534A_8c.html#a74d47f787409c697774310e45ab7995b',1,'baro_MS5534A.c']]],
   ['uint16_5ffrom_5fbuf_23737',['uint16_from_buf',['../dw1000__arduino_8c.html#a995aff8e1dbbbd71e80e723e67aaa725',1,'dw1000_arduino.c']]],
-  ['uint16_5ft_23738',['uint16_t',['../vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t():&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a10de142b55c8bcd07329b4e92f612528',1,'uint16_T():&#160;rtwtypes.h']]],
+  ['uint16_5ft_23738',['uint16_T',['../rtwtypes_8h.html#a10de142b55c8bcd07329b4e92f612528',1,'uint16_T():&#160;rtwtypes.h'],['../vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t():&#160;vl53l1_types.h']]],
   ['uint16frombuf_23739',['Uint16FromBuf',['../ezcurrent_8c.html#a7da58e837c66e66d6705f3d602dfe62c',1,'ezcurrent.c']]],
   ['uint16vect3_23740',['Uint16Vect3',['../group__math__algebra__int.html#structUint16Vect3',1,'']]],
   ['uint32_5ft_23741',['uint32_t',['../vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62',1,'uint32_t():&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a03761f68219fb1602eeda97bd628da43',1,'uint32_T():&#160;rtwtypes.h']]],

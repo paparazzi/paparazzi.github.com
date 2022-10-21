@@ -1,5 +1,12 @@
 var NAVTREEINDEX155 =
 {
+"paparazzi_messages.html#AP_STATUS":[2,2,11],
+"paparazzi_messages.html#ARDRONE_NAVDATA":[2,0,4],
+"paparazzi_messages.html#ATMOSPHERE_CHARGE":[2,0,116],
+"paparazzi_messages.html#ATTITUDE":[2,0,5],
+"paparazzi_messages.html#AUTOPILOT_VERSION":[2,0,0],
+"paparazzi_messages.html#BARO_ETS":[2,0,55],
+"paparazzi_messages.html#BARO_MS5534A":[2,0,43],
 "paparazzi_messages.html#BARO_MS5611":[2,0,114],
 "paparazzi_messages.html#BARO_RAW":[2,0,198],
 "paparazzi_messages.html#BARO_WORDS":[2,0,45],
@@ -242,12 +249,5 @@ var NAVTREEINDEX155 =
 "paparazzi_messages.html#SECURE_LINK_STATUS":[2,0,232],
 "paparazzi_messages.html#SEGMENT":[2,0,21],
 "paparazzi_messages.html#SEGMENT_STATUS":[2,2,21],
-"paparazzi_messages.html#SELECTED":[2,2,4],
-"paparazzi_messages.html#SELECTED_REQ":[2,2,5],
-"paparazzi_messages.html#SETTING":[2,1,3],
-"paparazzi_messages.html#SETTINGS":[2,0,14],
-"paparazzi_messages.html#SET_ACTUATOR":[2,1,45],
-"paparazzi_messages.html#SHAPE":[2,2,36],
-"paparazzi_messages.html#SHT_I2C_SERIAL":[2,0,97],
-"paparazzi_messages.html#SHT_I2C_STATUS":[2,0,125]
+"paparazzi_messages.html#SELECTED":[2,2,4]
 };

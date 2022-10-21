@@ -1,5 +1,12 @@
 var NAVTREEINDEX187 =
 {
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,1,34,0,1],
+"stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,1,36,0,1],
+"stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,1,36,2,1],
+"stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,1,36,1,4],
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,1,36,0,0],
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,1,34,0,0],
+"stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b":[12,0,1,0,3,2,1,36,5],
 "stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e":[12,0,1,0,3,2,1,36,1,2],
 "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df":[12,0,1,0,3,2,1,36,2,6],
 "stabilization__indi__simple_8h.html#aa69c49fd27efda8cdffa87087f0f0dd4":[12,0,1,0,3,2,1,36,2,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX187 =
 "stm32_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a":[12,0,1,0,0,3,0,5,2],
 "stm32_2mcu__periph_2gpio__arch_8h_source.html":[12,0,1,0,0,3,0,5],
 "stm32_2mcu__periph_2i2c__arch_8c.html":[12,0,1,0,0,3,0,6],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96":[12,0,1,0,0,3,0,6,2],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a01bedc7e3a9512132b68b6808fbf54bf":[12,0,1,0,0,3,0,6,5],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a11ecde7c6886706edcb76c6190fc2218":[12,0,1,0,0,3,0,6,21],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a24b4322c949865119cad583ec9e390af":[12,0,1,0,0,3,0,6,18],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a326070999b86b4e79164a2a31031469e":[12,0,1,0,0,3,0,6,24],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a33e9f35552e7f38ecce63213ae59221e":[12,0,1,0,0,3,0,6,12],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a388523ab234700b11b04fe8b810d0642":[12,0,1,0,0,3,0,6,19],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a39ca8cd22c06ced2a49fa8ca9d77fd9f":[12,0,1,0,0,3,0,6,3]
+"stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96":[12,0,1,0,0,3,0,6,2]
 };

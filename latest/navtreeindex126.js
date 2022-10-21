@@ -1,6 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"module__telemetry_transparent_frsky_x.html":[1,108],
 "module__telemetry_transparent_frsky_x.html#autoloads__telemetry_transparent_frsky_x":[1,108,1],
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,108,2],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,108,0],
@@ -23,6 +22,7 @@ var NAVTREEINDEX126 =
 "module__telemetry_w5100.html":[1,112],
 "module__telemetry_w5100.html#autoloads__telemetry_w5100":[1,112,2],
 "module__telemetry_w5100.html#configuration__telemetry_w5100":[1,112,1],
+"module__telemetry_w5100.html#define":[1,112,1,0],
 "module__telemetry_w5100.html#functions__telemetry_w5100":[1,112,3],
 "module__telemetry_w5100.html#module_load_example__telemetry_w5100":[1,112,0],
 "module__telemetry_w5100.html#module_xml__telemetry_w5100":[1,112,3,0],
