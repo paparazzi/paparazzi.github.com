@@ -205,8 +205,8 @@ $(document).ready(function(){initNavTree('imu__disco_8c_source.html',''); initRe
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="imu__disco_8c.html#a5282fff2620a875c9817c5c8d4480ef7">imu_disco</a>.<a class="code" href="imu__disco_8h.html#afb92d6ea8c85c5982a480899183a4470">mpu</a>.<a class="code" href="mpu60x0__i2c_8h.html#a58eda1f21396bdad02e09e0af2e6f341">data_accel</a>.vect.z);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="imu__disco_8c.html#a5282fff2620a875c9817c5c8d4480ef7">imu_disco</a>.<a class="code" href="imu__disco_8h.html#afb92d6ea8c85c5982a480899183a4470">mpu</a>.<a class="code" href="mpu60x0__i2c_8h.html#a0eed8f3d64568296f08ef85ef4a4e1db">data_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#ae3875221943445c39f80b463eb282233">IMU_BOARD_ID</a>, now_ts, &amp;gyro, 1);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#ae3875221943445c39f80b463eb282233">IMU_BOARD_ID</a>, now_ts, &amp;accel, 1);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#ae3875221943445c39f80b463eb282233">IMU_BOARD_ID</a>, now_ts, &amp;gyro, 1, <a class="code" href="imu__disco_8c.html#a5282fff2620a875c9817c5c8d4480ef7">imu_disco</a>.<a class="code" href="imu__disco_8h.html#afb92d6ea8c85c5982a480899183a4470">mpu</a>.<a class="code" href="mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303">temp</a>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#ae3875221943445c39f80b463eb282233">IMU_BOARD_ID</a>, now_ts, &amp;accel, 1, <a class="code" href="imu__disco_8c.html#a5282fff2620a875c9817c5c8d4480ef7">imu_disco</a>.<a class="code" href="imu__disco_8h.html#afb92d6ea8c85c5982a480899183a4470">mpu</a>.<a class="code" href="mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303">temp</a>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">/* AKM8963 event task */</span></div>
@@ -225,6 +225,7 @@ $(document).ready(function(){initNavTree('imu__disco_8c_source.html',''); initRe
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="ampu60x0__i2c_8h_html_ac0e18c343d06b35e70eedcf0ec178303"><div class="ttname"><a href="mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303">Mpu60x0_I2c::temp</a></div><div class="ttdeci">float temp</div><div class="ttdoc">temperature in degrees Celcius</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00066">mpu60x0_i2c.h:66</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdoc">Typedef defining 32 bit unsigned int type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00078">vl53l1_types.h:78</a></div></div>
 <div class="ttc" id="ampu60x0_8h_html_a5b22d78bb0c75cc5d47c7c7945975081"><div class="ttname"><a href="mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081">Mpu60x0Config::smplrt_div</a></div><div class="ttdeci">uint8_t smplrt_div</div><div class="ttdoc">Sample rate divider.</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0_8h_source.html#l00140">mpu60x0.h:140</a></div></div>
 <div class="ttc" id="aimu__disco_8c_html_a8a970805b3bac79408ecb7ac41bb75a8"><div class="ttname"><a href="imu__disco_8c.html#a8a970805b3bac79408ecb7ac41bb75a8">DISCO_MPU_I2C_DEV</a></div><div class="ttdeci">#define DISCO_MPU_I2C_DEV</div><div class="ttdef"><b>Definition:</b> <a href="imu__disco_8c_source.html#l00036">imu_disco.c:36</a></div></div>
@@ -275,7 +276,7 @@ $(document).ready(function(){initNavTree('imu__disco_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__disco_8c.html">imu_disco.c</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

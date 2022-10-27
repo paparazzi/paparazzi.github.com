@@ -226,6 +226,7 @@ $(document).ready(function(){initNavTree('functions_vars_e.html',''); initResiza
 <li>enabled
 : <a class="el" href="filter__1euro__imu_8h.html#a7fa26df9921df3959572cd21645a0c52">Filter1eImu</a>
 , <a class="el" href="intermcu_8h.html#a46a87289b06022bacac95ec752bd4894">intermcu_t</a>
+, <a class="el" href="iomcu_8c.html#ad395d258572391e2a8e40b7971133e63">page_mixing</a>
 , <a class="el" href="pwm__sysfs_8h.html#aff4ec58bc6f5a424dd7cefccd9417d60">PWM_Sysfs</a>
 </li>
 <li>encoders
@@ -300,11 +301,26 @@ $(document).ready(function(){initNavTree('functions_vars_e.html',''); initResiza
 , <a class="el" href="rover__guidance__holonomic_8h.html#a0fd000389964352ac58d2d83928f12fe">RoverHoloGuidancePID</a>
 , <a class="el" href="vn200__serial_8h.html#a196b28e68e247eda38280e6f8cd1d27d">VNData</a>
 </li>
+<li>err_bad_opcode
+: <a class="el" href="iomcu_8c.html#a9e031aa30a33ff8a2c9832270375ffeb">page_reg_status</a>
+</li>
+<li>err_crc
+: <a class="el" href="iomcu_8c.html#a5c12ceb4a8207e291c9260d86451390f">page_reg_status</a>
+</li>
+<li>err_read
+: <a class="el" href="iomcu_8c.html#add4c7ea747bf661c11c1e29b65ea0bb5">page_reg_status</a>
+</li>
+<li>err_uart
+: <a class="el" href="iomcu_8c.html#a2d8d52b8440e318e100513ef6ca0e856">page_reg_status</a>
+</li>
 <li>err_vx_int
 : <a class="el" href="guidance__OA_8h.html#a0d7976f41569ae2a67cfe8d1f350a9e9">opticflow_stab_t</a>
 </li>
 <li>err_vy_int
 : <a class="el" href="guidance__OA_8h.html#a3987ff540594ccdf71b6e3a597b9e616">opticflow_stab_t</a>
+</li>
+<li>err_write
+: <a class="el" href="iomcu_8c.html#a15d1816ed1764006b01dc8f22d310b78">page_reg_status</a>
 </li>
 <li>ErrID
 : <a class="el" href="VN100_8h.html#a42be581f2cfc78b3e93e0f0a7f2df767">VN100_Res_Packet</a>
@@ -435,7 +451,7 @@ $(document).ready(function(){initNavTree('functions_vars_e.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -111,6 +111,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html',''); initResizab
 <li class="level2"><a href="#modules_category_helicopter">Helicopter modules</a></li>
 <li class="level2"><a href="#modules_category_imu">Imu modules</a></li>
 <li class="level2"><a href="#modules_category_ins">Ins modules</a></li>
+<li class="level2"><a href="#modules_category_intermcu">Intermcu modules</a></li>
 <li class="level2"><a href="#modules_category_lidar">Lidar modules</a></li>
 <li class="level2"><a href="#modules_category_light">Light modules</a></li>
 <li class="level2"><a href="#modules_category_loggers">Loggers modules</a></li>
@@ -402,6 +403,7 @@ Imu modules</h2>
 <li><a class="el" href="module__imu_cube.html">imu_cube module</a> : IMU driver for the sensors inside the cube autopilots</li>
 <li><a class="el" href="module__imu_disco.html">imu_disco module</a> : Driver for IMU on the Parrot Disco drone.</li>
 <li><a class="el" href="module__imu_elle0.html">imu_elle0 module</a> : MPU9250 IMU via SPI.</li>
+<li><a class="el" href="module__imu_heater.html">imu_heater module</a> : IMU Heater through a resistor or IO co-processor</li>
 <li><a class="el" href="module__imu_lisa_m_v2_1.html">imu_lisa_m_v2.1 module</a> : IMU on Lisa/M and MX v2.1 boards.</li>
 <li><a class="el" href="module__imu_lisa_mx_v2_1.html">imu_lisa_mx_v2.1 module</a> : IMU on Lisa/MX v2.1 boards.</li>
 <li><a class="el" href="module__imu_lisa_s_v1_0.html">imu_lisa_s_v1.0 module</a> : IMU on LisaS board.</li>
@@ -443,6 +445,12 @@ Ins modules</h2>
 <li><a class="el" href="module__ins_vn100.html">ins_vn100 module</a> : VectorNav VN100 (SPI)</li>
 <li><a class="el" href="module__ins_xsens.html">ins_xsens module</a> : XSens Mti-G INS</li>
 <li><a class="el" href="module__ins_xsens700.html">ins_xsens700 module</a> : XSens Mti-G 700 INS</li>
+</ul>
+<h2><a class="anchor" id="modules_category_intermcu"></a>
+Intermcu modules</h2>
+<ul>
+<li><a class="el" href="module__intermcu_iomcu.html">intermcu_iomcu module</a> : InterMCU communication with the ardupilot IO co-processor</li>
+<li><a class="el" href="module__intermcu_uart.html">intermcu_uart module</a> : Inter-MCU communication over UART</li>
 </ul>
 <h2><a class="anchor" id="modules_category_lidar"></a>
 Lidar modules</h2>
@@ -732,7 +740,6 @@ Misc modules</h2>
 <li><a class="el" href="module__haclc.html">haclc module</a> : HACL* verified cryptographic library</li>
 <li><a class="el" href="module__hard_fault_recovery.html">hard_fault_recovery module</a> : Minimal autopilot for recovery</li>
 <li><a class="el" href="module__hott_telemetry.html">hott_telemetry module</a> : Graupner HOTT telemetry control module.</li>
-<li><a class="el" href="module__intermcu_uart.html">intermcu_uart module</a> : Inter-MCU communication over UART</li>
 <li><a class="el" href="module__joystick.html">joystick module</a> : Handle JOYSTICK_RAW messages</li>
 <li><a class="el" href="module__mag_calib_ukf.html">mag_calib_ukf module</a> : Calibrate magnetometer using UKF</li>
 <li><a class="el" href="module__math.html">math module</a> : Math library.</li>
@@ -764,7 +771,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -222,6 +222,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#IMU_ACCEL_SCALED">IMU_ACCEL_SCALED (ID 132)</a></li>
 <li class="level2"><a href="#IMU_MAG_SCALED">IMU_MAG_SCALED (ID 133)</a></li>
 <li class="level2"><a href="#FILTER">FILTER (ID 134)</a></li>
+<li class="level2"><a href="#IMU_HEATER">IMU_HEATER (ID 135)</a></li>
 <li class="level2"><a href="#RATE_LOOP">RATE_LOOP (ID 136)</a></li>
 <li class="level2"><a href="#FILTER_ALIGNER">FILTER_ALIGNER (ID 137)</a></li>
 <li class="level2"><a href="#AIRSPEED_MS45XX">AIRSPEED_MS45XX (ID 138)</a></li>
@@ -2715,6 +2716,18 @@ FILTER (ID 134)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">comp_id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone">NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="IMU_HEATER"></a>
+IMU_HEATER (ID 135)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name </th><th class="markdownTableHeadNone">Type </th><th class="markdownTableHeadNone">Unit/Values </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">meas_temp </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">Celcius </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">target_temp </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">Celcius </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">heat_cmd </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone">% </td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="RATE_LOOP"></a>
 RATE_LOOP (ID 136)</h2>
 <p>Rotorcraft rate control loop.</p>
@@ -3760,10 +3773,12 @@ IMU_GYRO_RAW (ID 203)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">gp </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">temp </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">Celcius </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">gq </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">gp </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gq </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">gr </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="IMU_ACCEL_RAW"></a>
@@ -3774,10 +3789,12 @@ IMU_ACCEL_RAW (ID 204)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">id </td><td class="markdownTableBodyNone">uint8 </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ax </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">temp </td><td class="markdownTableBodyNone">float </td><td class="markdownTableBodyNone">Celcius </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ay </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">ax </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ay </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">az </td><td class="markdownTableBodyNone">int32 </td><td class="markdownTableBodyNone">adc </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="IMU_MAG_RAW"></a>
@@ -6598,7 +6615,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

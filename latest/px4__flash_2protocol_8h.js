@@ -6,11 +6,13 @@ var px4__flash_2protocol_8h =
       [ "text", "px4__flash_2protocol_8h.html#a349f9cb19b7a0ea266bb944786584e19", null ]
     ] ],
     [ "IOPacket", "px4__flash_2protocol_8h.html#structIOPacket", [
+      [ "code", "px4__flash_2protocol_8h.html#a5964448096d22dc869d0139b256262bd", null ],
+      [ "count", "px4__flash_2protocol_8h.html#a97469a4b02be0a9556d78af389fa6956", null ],
       [ "count_code", "px4__flash_2protocol_8h.html#ab300ebecfbec9f6a18239faf9b196765", null ],
       [ "crc", "px4__flash_2protocol_8h.html#af856646ceb9df0f094d8a26287189fcf", null ],
       [ "offset", "px4__flash_2protocol_8h.html#a338a71aff88023b64b73cfde6d4ca2ef", null ],
       [ "page", "px4__flash_2protocol_8h.html#a93abdcba6eb1657fcb6760babb7c0d00", null ],
-      [ "regs", "px4__flash_2protocol_8h.html#a4154a2062c02bf69b9f0d6ed316dede3", null ]
+      [ "regs", "px4__flash_2protocol_8h.html#af93bcc4da79998ee51b20acb2b117233", null ]
     ] ],
     [ "__STDC_FORMAT_MACROS", "px4__flash_2protocol_8h.html#aacbb9e1f38be71e22df1584a37c56693", null ],
     [ "F2I_MIXER_ACTION_APPEND", "px4__flash_2protocol_8h.html#a1bd33dbb4516db7a557d2438c98a8a7e", null ],

@@ -14,6 +14,7 @@ var imu_8h =
       [ "neutral", "imu_8h.html#a4477c72a6c4437b60dda817ebcc5ff2e", null ],
       [ "scale", "imu_8h.html#a6f6fa9e950ab651e2f75051dd1203ad4", null ],
       [ "scaled", "imu_8h.html#a02fb96f81fe7cfec364a307b5dfc2868", null ],
+      [ "temperature", "imu_8h.html#a21b1fec39e9761fdc297b9861a0098b4", null ],
       [ "unscaled", "imu_8h.html#a8d5aee0e93b6d1d9b78b1d73722e998a", null ]
     ] ],
     [ "imu_accel_t", "imu_8h.html#structimu__accel__t", [
@@ -24,6 +25,7 @@ var imu_8h =
       [ "neutral", "imu_8h.html#ab4ee3eecaa0a9ae198eeb78900668bd4", null ],
       [ "scale", "imu_8h.html#aa87b0288f7f2adbad06b207bcf3b1a07", null ],
       [ "scaled", "imu_8h.html#a82581093bb29a49ac87f8287c68e574e", null ],
+      [ "temperature", "imu_8h.html#a41526b13502f723afc3d6b3d79e8b2dd", null ],
       [ "unscaled", "imu_8h.html#a3d98f79755c87e226545df348625c232", null ]
     ] ],
     [ "imu_mag_t", "imu_8h.html#structimu__mag__t", [

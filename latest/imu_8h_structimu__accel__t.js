@@ -7,5 +7,6 @@ var imu_8h_structimu__accel__t =
     [ "neutral", "imu_8h.html#ab4ee3eecaa0a9ae198eeb78900668bd4", null ],
     [ "scale", "imu_8h.html#aa87b0288f7f2adbad06b207bcf3b1a07", null ],
     [ "scaled", "imu_8h.html#a82581093bb29a49ac87f8287c68e574e", null ],
+    [ "temperature", "imu_8h.html#a41526b13502f723afc3d6b3d79e8b2dd", null ],
     [ "unscaled", "imu_8h.html#a3d98f79755c87e226545df348625c232", null ]
 ];

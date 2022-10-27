@@ -282,8 +282,8 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="imu__mpu9250__spi_8c.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a>.<a class="code" href="imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5">mpu</a>.<a class="code" href="mpu9250__i2c_8h.html#af3800437fede0b62d65f56b7cb1d129d">data_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#abe60822c4ae41699b977df1b2c1b0613">IMU_MPU9250_ID</a>, now_ts, &amp;rates, 1);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#abe60822c4ae41699b977df1b2c1b0613">IMU_MPU9250_ID</a>, now_ts, &amp;accel, 1);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#abe60822c4ae41699b977df1b2c1b0613">IMU_MPU9250_ID</a>, now_ts, &amp;rates, 1, NAN);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#abe60822c4ae41699b977df1b2c1b0613">IMU_MPU9250_ID</a>, now_ts, &amp;accel, 1, NAN);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
@@ -464,7 +464,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__spi_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__spi_8c.html">imu_mpu9250_spi.c</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

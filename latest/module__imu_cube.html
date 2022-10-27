@@ -158,7 +158,7 @@ Raw imu_cube.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">imu_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">imu_common</span>,<span class="keyword">intermcu_iomcu</span>,<span class="keyword">imu_heater</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">imu</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">autoload</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_nps&quot;</span>/&gt;</div>
@@ -194,6 +194,12 @@ Raw imu_cube.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU3_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CUBE_IMU3_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(CUBE_IMU3_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line"> </div>
+<div class="line">     <span class="comment">&lt;!-- Configure the heater (ICM20602) --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;IMU_CUBE2_ID&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_TARGET_TEMP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;55.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_P_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_I_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.07&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense2.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0_spi.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
@@ -207,7 +213,7 @@ Raw imu_cube.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

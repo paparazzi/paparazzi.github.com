@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('imu__px4fmu__v2_84_8c_source.html','')
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="imu__px4fmu__v2_84_8c.html#a35b3b2ea1b5c182fdda81a07b363786c">imu_px4</a>.<a class="code" href="imu__px4fmu__v2_84_8h.html#a6bcef7a6d3c136bbf13dbbe75fa702a2">l3g</a>.<a class="code" href="l3gd20__spi_8h.html#a584a5b86bd6a43006b803006f4988315">data_rates</a>.rates.r</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    };</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="imu__px4fmu__v2_84_8c.html#a35b3b2ea1b5c182fdda81a07b363786c">imu_px4</a>.<a class="code" href="imu__px4fmu__v2_84_8h.html#a6bcef7a6d3c136bbf13dbbe75fa702a2">l3g</a>.<a class="code" href="l3gd20__spi_8h.html#a64ced2a11edd69f609ae1792e96693a5">data_available</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#ad33d8a4fb998069ae4b9752f1b2cf0f4">IMU_PX4_ID</a>, now_ts, &amp;gyro, 1);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    AbiSendMsgIMU_GYRO_RAW(<a class="code" href="abi__sender__ids_8h.html#ad33d8a4fb998069ae4b9752f1b2cf0f4">IMU_PX4_ID</a>, now_ts, &amp;gyro, 1, NAN);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">/* LSM303d event task */</span></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('imu__px4fmu__v2_84_8c_source.html','')
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__px4fmu__v2_84_8c.html#a35b3b2ea1b5c182fdda81a07b363786c">imu_px4</a>.<a class="code" href="imu__px4fmu__v2_84_8h.html#a68cd2f71307468fe65a1dc76e381fad8">lsm_acc</a>.<a class="code" href="lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8">data_available_acc</a>) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> accel;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="group__math__algebra__generic.html#gabb19966b2d7b370023a4a16bd7bbb228">VECT3_COPY</a>(accel, <a class="code" href="imu__px4fmu__v2_84_8c.html#a35b3b2ea1b5c182fdda81a07b363786c">imu_px4</a>.<a class="code" href="imu__px4fmu__v2_84_8h.html#a68cd2f71307468fe65a1dc76e381fad8">lsm_acc</a>.<a class="code" href="lsm303d__spi_8h.html#ab7972893e81f7b59d2d91dadc9802773">data_accel</a>.vect);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#ad33d8a4fb998069ae4b9752f1b2cf0f4">IMU_PX4_ID</a>, now_ts, &amp;accel, 1);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    AbiSendMsgIMU_ACCEL_RAW(<a class="code" href="abi__sender__ids_8h.html#ad33d8a4fb998069ae4b9752f1b2cf0f4">IMU_PX4_ID</a>, now_ts, &amp;accel, 1, NAN);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="imu__px4fmu__v2_84_8c.html#a35b3b2ea1b5c182fdda81a07b363786c">imu_px4</a>.<a class="code" href="imu__px4fmu__v2_84_8h.html#a68cd2f71307468fe65a1dc76e381fad8">lsm_acc</a>.<a class="code" href="lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8">data_available_acc</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if !IMU_PX4_DISABLE_MAG</span></div>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('imu__px4fmu__v2_84_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__px4fmu__v2_84_8c.html">imu_px4fmu_v2.4.c</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

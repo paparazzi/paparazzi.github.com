@@ -20,6 +20,8 @@ var dir_fcd55c2d9795129c53a601ffc56fe50e =
     [ "imu_cube.h", "imu__cube_8h.html", "imu__cube_8h" ],
     [ "imu_disco.c", "imu__disco_8c.html", "imu__disco_8c" ],
     [ "imu_disco.h", "imu__disco_8h.html", "imu__disco_8h" ],
+    [ "imu_heater.c", "imu__heater_8c.html", "imu__heater_8c" ],
+    [ "imu_heater.h", "imu__heater_8h.html", "imu__heater_8h" ],
     [ "imu_mpu6000.c", "imu__mpu6000_8c.html", "imu__mpu6000_8c" ],
     [ "imu_mpu6000.h", "imu__mpu6000_8h.html", "imu__mpu6000_8h" ],
     [ "imu_mpu6000_hmc5883.c", "imu__mpu6000__hmc5883_8c.html", "imu__mpu6000__hmc5883_8c" ],

@@ -325,6 +325,12 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <li>rawValue
 : <a class="el" href="meteo__stick__calib_8c.html#a99ff5dab554d4145430b07c26ca16050">CalibrationPoint</a>
 </li>
+<li>rc_chan_override
+: <a class="el" href="iomcu_8c.html#a1862808bc91583d403e33a1877f3641b">page_mixing</a>
+</li>
+<li>rc_channel
+: <a class="el" href="iomcu_8c.html#a2d50018c6a49a272d3fcc159e41d61ff">page_mixing</a>
+</li>
 <li>rc_count
 : <a class="el" href="modules_2datalink_2superbitrf_8h.html#a2b81404765e0fa5adb99074dc577655a">SuperbitRF</a>
 </li>
@@ -337,8 +343,20 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <li>rc_lost
 : <a class="el" href="sbus__common_8h.html#a69739eacc3b10dd9881e82bacf2770ba">Sbus</a>
 </li>
+<li>rc_max
+: <a class="el" href="iomcu_8c.html#aec7dad48464b80bf42356c15c4523fed">page_mixing</a>
+</li>
+<li>rc_min
+: <a class="el" href="iomcu_8c.html#af75c8bc7d29ba4f83c4b7f355c19a28e">page_mixing</a>
+</li>
 <li>rc_pitch
 : <a class="el" href="ctrl__windtunnel_8c.html#a65036d24b101d0adebe8b55e84a2863c">ctrl_windtunnel_struct</a>
+</li>
+<li>rc_protocol
+: <a class="el" href="iomcu_8c.html#a8f09eb9cd84d88e5a4299894a87311c1">page_rc_input</a>
+</li>
+<li>rc_reversed
+: <a class="el" href="iomcu_8c.html#a670bbd288df05a881db98318d5821e8a">page_mixing</a>
 </li>
 <li>rc_roll
 : <a class="el" href="ctrl__windtunnel_8c.html#a66d59d34d1455dd607190ca60ffe21e4">ctrl_windtunnel_struct</a>
@@ -358,6 +376,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 </li>
 <li>rc_throttle
 : <a class="el" href="ctrl__windtunnel_8c.html#aa61c1cb6efae778dd08b68198ff876c6">ctrl_windtunnel_struct</a>
+</li>
+<li>rc_trim
+: <a class="el" href="iomcu_8c.html#a91a7b94082cd5afe1f4d1dd0c9cf827c">page_mixing</a>
 </li>
 <li>rc_values
 : <a class="el" href="modules_2datalink_2superbitrf_8h.html#af8aa7f7c28b40a25c912b5a020525957">SuperbitRF</a>
@@ -501,7 +522,7 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 : <a class="el" href="mission__common_8h.html#a693ef605edb09a0259bc2009ddbaef65">_mission</a>
 </li>
 <li>regs
-: <a class="el" href="px4__flash_2protocol_8h.html#a4154a2062c02bf69b9f0d6ed316dede3">IOPacket</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#af93bcc4da79998ee51b20acb2b117233">IOPacket</a>
 </li>
 <li>relative_velocity_x
 : <a class="el" href="linear__flow__fit_8h.html#a7a97514080b98ba55cabc0a9e401250c">linear_flow_fit_info</a>
@@ -763,7 +784,8 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 : <a class="el" href="boards_2disco_2actuators_8h.html#a362dede7a998a87af1b76d94f11beeeb">ActuatorsDisco</a>
 </li>
 <li>rssi
-: <a class="el" href="rssi_8h.html#a3350b1b148515a8749e174ba50a7123d">rssi_info_</a>
+: <a class="el" href="iomcu_8c.html#a7175616c3641828e00b54e9d267fc347">page_rc_input</a>
+, <a class="el" href="rssi_8h.html#a3350b1b148515a8749e174ba50a7123d">rssi_info_</a>
 , <a class="el" href="syslink__dl_8h.html#a166e1226c31bb09d5d0da8240e767c63">syslink_dl</a>
 </li>
 <li>rssi_channel
@@ -912,7 +934,7 @@ $(document).ready(function(){initNavTree('functions_vars_r.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 26 2022 21:31:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Oct 27 2022 12:06:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

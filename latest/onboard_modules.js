@@ -23,6 +23,7 @@ var onboard_modules =
       [ "Helicopter modules", "onboard_modules.html#modules_category_helicopter", null ],
       [ "Imu modules", "onboard_modules.html#modules_category_imu", null ],
       [ "Ins modules", "onboard_modules.html#modules_category_ins", null ],
+      [ "Intermcu modules", "onboard_modules.html#modules_category_intermcu", null ],
       [ "Lidar modules", "onboard_modules.html#modules_category_lidar", null ],
       [ "Light modules", "onboard_modules.html#modules_category_light", null ],
       [ "Loggers modules", "onboard_modules.html#modules_category_loggers", null ],
@@ -1253,6 +1254,13 @@ var onboard_modules =
         [ "Raw imu_elle0.xml file:", "module__imu_elle0.html#module_xml__imu_elle0", null ]
       ] ]
     ] ],
+    [ "imu_heater module", "module__imu_heater.html", [
+      [ "Example for airframe file", "module__imu_heater.html#module_load_example__imu_heater", null ],
+      [ "Module configuration options", "module__imu_heater.html#configuration__imu_heater", null ],
+      [ "Module functions", "module__imu_heater.html#functions__imu_heater", [
+        [ "Raw imu_heater.xml file:", "module__imu_heater.html#module_xml__imu_heater", null ]
+      ] ]
+    ] ],
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
       [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", null ],
@@ -1520,6 +1528,20 @@ var onboard_modules =
       [ "Auto-loaded modules", "module__ins_xsens700.html#autoloads__ins_xsens700", null ],
       [ "Module functions", "module__ins_xsens700.html#functions__ins_xsens700", [
         [ "Raw ins_xsens700.xml file:", "module__ins_xsens700.html#module_xml__ins_xsens700", null ]
+      ] ]
+    ] ],
+    [ "intermcu_iomcu module", "module__intermcu_iomcu.html", [
+      [ "Example for airframe file", "module__intermcu_iomcu.html#module_load_example__intermcu_iomcu", null ],
+      [ "Module configuration options", "module__intermcu_iomcu.html#configuration__intermcu_iomcu", [
+        [ "Raw intermcu_iomcu.xml file:", "module__intermcu_iomcu.html#module_xml__intermcu_iomcu", null ]
+      ] ]
+    ] ],
+    [ "intermcu_uart module", "module__intermcu_uart.html", [
+      [ "Example for airframe file", "module__intermcu_uart.html#module_load_example__intermcu_uart", null ],
+      [ "Module configuration options", "module__intermcu_uart.html#configuration__intermcu_uart", null ],
+      [ "Module functions", "module__intermcu_uart.html#functions__intermcu_uart", null ],
+      [ "Datalink Functions", "module__intermcu_uart.html#datalink_functions__intermcu_uart", [
+        [ "Raw intermcu_uart.xml file:", "module__intermcu_uart.html#module_xml__intermcu_uart", null ]
       ] ]
     ] ],
     [ "lidar_lite module", "module__lidar_lite.html", [
@@ -2886,14 +2908,6 @@ var onboard_modules =
       [ "Module configuration options", "module__hott_telemetry.html#configuration__hott_telemetry", null ],
       [ "Module functions", "module__hott_telemetry.html#functions__hott_telemetry", [
         [ "Raw hott_telemetry.xml file:", "module__hott_telemetry.html#module_xml__hott_telemetry", null ]
-      ] ]
-    ] ],
-    [ "intermcu_uart module", "module__intermcu_uart.html", [
-      [ "Example for airframe file", "module__intermcu_uart.html#module_load_example__intermcu_uart", null ],
-      [ "Module configuration options", "module__intermcu_uart.html#configuration__intermcu_uart", null ],
-      [ "Module functions", "module__intermcu_uart.html#functions__intermcu_uart", null ],
-      [ "Datalink Functions", "module__intermcu_uart.html#datalink_functions__intermcu_uart", [
-        [ "Raw intermcu_uart.xml file:", "module__intermcu_uart.html#module_xml__intermcu_uart", null ]
       ] ]
     ] ],
     [ "joystick module", "module__joystick.html", [
