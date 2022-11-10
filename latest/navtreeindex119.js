@@ -1,5 +1,9 @@
 var NAVTREEINDEX119 =
 {
+"module__actuators_spektrum.html":[1,15],
+"module__actuators_spektrum.html#configuration__actuators_spektrum":[1,15,1],
+"module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,15,0],
+"module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,15,1,0],
 "module__actuators_uavcan.html":[1,16],
 "module__actuators_uavcan.html#autoloads__actuators_uavcan":[1,16,2],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,16,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX119 =
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,19,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,19,2,0],
 "module__bebop_ae_awb.html":[1,50],
-"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,50,1],
-"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,50,2],
-"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,50,0],
-"module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,50,2,0],
-"module__bebop_cam.html":[1,410]
+"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,50,1]
 };

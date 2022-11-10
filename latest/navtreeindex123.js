@@ -1,5 +1,9 @@
 var NAVTREEINDEX123 =
 {
+"module__imu_openpilot_revo_nano.html#module_load_example__imu_openpilot_revo_nano":[1,195,0],
+"module__imu_openpilot_revo_nano.html#module_xml__imu_openpilot_revo_nano":[1,195,3,0],
+"module__imu_px4fmu_v1_7.html":[1,196],
+"module__imu_px4fmu_v1_7.html#autoloads__imu_px4fmu_v1_7":[1,196,2],
 "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,196,1],
 "module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,196,3],
 "module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7":[1,196,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX123 =
 "module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,433,2,0],
 "module__mag_hmc5843.html":[1,366],
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,366,1],
-"module__mag_hmc5843.html#functions__mag_hmc5843":[1,366,2],
-"module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,366,0],
-"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,366,2,0],
-"module__mag_hmc58xx.html":[1,367],
-"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,367,1]
+"module__mag_hmc5843.html#functions__mag_hmc5843":[1,366,2]
 };

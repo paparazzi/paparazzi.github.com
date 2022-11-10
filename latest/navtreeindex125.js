@@ -1,5 +1,9 @@
 var NAVTREEINDEX125 =
 {
+"module__opticflow_pmw3901.html#functions__opticflow_pmw3901":[1,372,2],
+"module__opticflow_pmw3901.html#module_load_example__opticflow_pmw3901":[1,372,0],
+"module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901":[1,372,2,0],
+"module__orange_avoider.html":[1,324],
 "module__orange_avoider.html#configuration__orange_avoider":[1,324,1],
 "module__orange_avoider.html#functions__orange_avoider":[1,324,2],
 "module__orange_avoider.html#module_load_example__orange_avoider":[1,324,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX125 =
 "module__stabilization_indi_simple.html#functions__stabilization_indi_simple":[1,388,2],
 "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple":[1,388,0],
 "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple":[1,388,2,0],
-"module__stabilization_int_euler.html":[1,389],
-"module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,389,1],
-"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,389,2],
-"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,389,0],
-"module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,389,2,0]
+"module__stabilization_int_euler.html":[1,389]
 };

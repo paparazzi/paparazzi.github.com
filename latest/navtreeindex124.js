@@ -1,5 +1,9 @@
 var NAVTREEINDEX124 =
 {
+"module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,366,0],
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,366,2,0],
+"module__mag_hmc58xx.html":[1,367],
+"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,367,1],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,367,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,367,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,367,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX124 =
 "module__opticflow_hover.html#module_load_example__opticflow_hover":[1,437,0],
 "module__opticflow_hover.html#module_xml__opticflow_hover":[1,437,1,0],
 "module__opticflow_pmw3901.html":[1,372],
-"module__opticflow_pmw3901.html#configuration__opticflow_pmw3901":[1,372,1],
-"module__opticflow_pmw3901.html#functions__opticflow_pmw3901":[1,372,2],
-"module__opticflow_pmw3901.html#module_load_example__opticflow_pmw3901":[1,372,0],
-"module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901":[1,372,2,0],
-"module__orange_avoider.html":[1,324]
+"module__opticflow_pmw3901.html#configuration__opticflow_pmw3901":[1,372,1]
 };

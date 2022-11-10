@@ -1,5 +1,9 @@
 var NAVTREEINDEX204 =
 {
+"video__capture_8c.html#a3c4152bdd4c5b12cdde44336d0a7517e":[12,0,1,0,6,11,42,2],
+"video__capture_8c.html#a3e437d208a036f18893d795ea51bad16":[12,0,1,0,6,11,42,3],
+"video__capture_8c.html#a72d04169c84ddb910df6b21096ea479a":[12,0,1,0,6,11,42,0],
+"video__capture_8c.html#a827eff900b2ec2115c0098701f7a2706":[12,0,1,0,6,11,42,5],
 "video__capture_8c.html#a92d5bb1d45cf2d62c0ff27d821ca6eb3":[12,0,1,0,6,11,42,7],
 "video__capture_8c.html#a95ae7579c1e30c31e247d651c0ae7c8b":[12,0,1,0,6,11,42,10],
 "video__capture_8c.html#a9ebbaf9c67b83210bb47c6d61bd067e3":[12,0,1,0,6,11,42,8],
@@ -178,8 +182,8 @@ var NAVTREEINDEX204 =
 "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,124,0,0,0],
 "vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb":[12,0,1,0,7,124,3],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t":[12,0,1,0,7,124,0],
-"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,124,1],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,124,0,0],
+"vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,124,1],
 "vl53l1__platform_8h_source.html":[12,0,1,0,7,124],
 "vl53l1__types_8h.html":[12,0,1,0,7,125],
 "vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30":[12,0,1,0,7,125,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX204 =
 "vl53l1x__api_8h.html#a00b10506941ef2584ee7fad0937a0c36":[12,0,1,0,7,127,64],
 "vl53l1x__api_8h.html#a0151356cafc31665554f71d408c248a0":[12,0,1,0,7,127,25],
 "vl53l1x__api_8h.html#a01651ee9d6f60f7829478d87cf82b3da":[12,0,1,0,7,127,40],
-"vl53l1x__api_8h.html#a02495d4260afeb98fc3ad68be4fe3c42":[12,0,1,0,7,127,13],
-"vl53l1x__api_8h.html#a03c80c16cb2de79265289251f14a1643":[12,0,1,0,7,127,0,0],
-"vl53l1x__api_8h.html#a095d61baf5e40ecde589a5dbf17b391a":[12,0,1,0,7,127,31],
-"vl53l1x__api_8h.html#a09f0e0407aa544559216b42f6745d5fa":[12,0,1,0,7,127,75],
-"vl53l1x__api_8h.html#a0b554c56b9617df6b957f26e407ce54d":[12,0,1,0,7,127,42]
+"vl53l1x__api_8h.html#a02495d4260afeb98fc3ad68be4fe3c42":[12,0,1,0,7,127,13]
 };

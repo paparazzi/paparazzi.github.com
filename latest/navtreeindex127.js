@@ -1,5 +1,9 @@
 var NAVTREEINDEX127 =
 {
+"module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,48,1],
+"module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,48,0],
+"module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,48,1,0],
+"module__usb_serial_stm32_example2.html":[1,49],
 "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2":[1,49,1],
 "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2":[1,49,0],
 "module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2":[1,49,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX127 =
 "modules_2ins_2ins__arduimu__basic_8c.html#a3f8fc29cfe14b10518e7275613148bc9":[12,0,1,0,6,36,16,18],
 "modules_2ins_2ins__arduimu__basic_8c.html#a539730afad5660e5a0f9785ef8c2107d":[12,0,1,0,6,36,16,2],
 "modules_2ins_2ins__arduimu__basic_8c.html#a5a51d08f24d0844a38d7226509de72f6":[12,0,1,0,6,36,16,0],
-"modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f":[12,0,1,0,6,36,16,9],
-"modules_2ins_2ins__arduimu__basic_8c.html#a70b61a4232cbf0e9acbde8d9b62ce1c5":[12,0,1,0,6,36,16,22],
-"modules_2ins_2ins__arduimu__basic_8c.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,16,12],
-"modules_2ins_2ins__arduimu__basic_8c.html#a731e758a70e0e275bc3894bfd4278b55":[12,0,1,0,6,36,16,15],
-"modules_2ins_2ins__arduimu__basic_8c.html#a73a6a37d601d3935f0c2807bb56e57af":[12,0,1,0,6,36,16,5]
+"modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f":[12,0,1,0,6,36,16,9]
 };

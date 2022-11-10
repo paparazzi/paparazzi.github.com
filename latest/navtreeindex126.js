@@ -1,5 +1,9 @@
 var NAVTREEINDEX126 =
 {
+"module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,389,1],
+"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,389,2],
+"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,389,0],
+"module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,389,2,0],
 "module__stabilization_int_quat.html":[1,390],
 "module__stabilization_int_quat.html#configuration__stabilization_int_quat":[1,390,1],
 "module__stabilization_int_quat.html#functions__stabilization_int_quat":[1,390,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX126 =
 "module__udp.html":[1,250],
 "module__udp.html#module_load_example__udp":[1,250,0],
 "module__udp.html#module_xml__udp":[1,250,0,0],
-"module__usb_serial_stm32_example1.html":[1,48],
-"module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,48,1],
-"module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1":[1,48,0],
-"module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1":[1,48,1,0],
-"module__usb_serial_stm32_example2.html":[1,49]
+"module__usb_serial_stm32_example1.html":[1,48]
 };

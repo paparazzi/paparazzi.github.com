@@ -1,5 +1,9 @@
 var NAVTREEINDEX189 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#ad50cd4c985c5381eb5a94f9b92ee90ea":[12,0,1,0,0,3,0,11,1,10],
+"stm32_2mcu__periph_2spi__arch_8c.html#ad55db59fe845c613959d0fe874905e5d":[12,0,1,0,0,3,0,11,5],
+"stm32_2mcu__periph_2spi__arch_8c.html#ad7877aeecf644dd6df89402775775e54":[12,0,1,0,0,3,0,11,1,12],
+"stm32_2mcu__periph_2spi__arch_8c.html#ade736a9c1803485b22b5b004d08dfb6c":[12,0,1,0,0,3,0,11,1,3],
 "stm32_2mcu__periph_2spi__arch_8c.html#adfa45a844b28a87b280ea0c58295f7fb":[12,0,1,0,0,3,0,11,0,1],
 "stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f":[12,0,1,0,0,3,0,11,9],
 "stm32_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0":[12,0,1,0,0,3,0,11,27],
@@ -245,9 +249,5 @@ var NAVTREEINDEX189 =
 "stylec.html":[0,1,0],
 "stylec.html#stylecpp":[0,1,0,6],
 "stylec.html#styleformat":[0,1,0,0],
-"stylec.html#stylefunc":[0,1,0,3],
-"stylec.html#styleif":[0,1,0,5],
-"stylec.html#stylenames":[0,1,0,1],
-"stylec.html#styleswitch":[0,1,0,4],
-"stylec.html#styletypes":[0,1,0,2]
+"stylec.html#stylefunc":[0,1,0,3]
 };
