@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e":[12,0,1,0,4,7,2],
+"group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e":[9,9,1,3,19],
 "group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542":[12,0,1,0,4,6,15],
 "group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542":[12,0,1,0,4,7,117],
 "group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542":[9,9,1,3,134],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "group__math__algebra__int.html#structInt32Vect3":[9,9,1,3,5],
 "group__math__algebra__int.html#structInt64Quat":[9,9,1,3,7],
 "group__math__algebra__int.html#structInt64Rates":[9,9,1,3,14],
-"group__math__algebra__int.html#structInt64Vect2":[9,9,1,3,15],
-"group__math__algebra__int.html#structInt64Vect3":[9,9,1,3,16],
-"group__math__algebra__int.html#structInt8Vect3":[9,9,1,3,1]
+"group__math__algebra__int.html#structInt64Vect2":[9,9,1,3,15]
 };
