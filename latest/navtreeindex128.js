@@ -1,5 +1,9 @@
 var NAVTREEINDEX128 =
 {
+"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,393,1,0],
+"module__stabilization_rotorcraft.html":[1,394],
+"module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft":[1,394,1],
+"module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft":[1,394,2],
 "module__stabilization_rotorcraft.html#module_load_example__stabilization_rotorcraft":[1,394,0],
 "module__stabilization_rotorcraft.html#module_xml__stabilization_rotorcraft":[1,394,2,0],
 "module__state_interface.html":[1,78],
@@ -245,9 +249,5 @@ var NAVTREEINDEX128 =
 "module__video_exif.html#functions__video_exif":[1,65,1],
 "module__video_exif.html#module_load_example__video_exif":[1,65,0],
 "module__video_exif.html#module_xml__video_exif":[1,65,1,0],
-"module__video_rtp_stream.html":[1,66],
-"module__video_rtp_stream.html#configuration__video_rtp_stream":[1,66,1],
-"module__video_rtp_stream.html#functions__video_rtp_stream":[1,66,2],
-"module__video_rtp_stream.html#module_load_example__video_rtp_stream":[1,66,0],
-"module__video_rtp_stream.html#module_xml__video_rtp_stream":[1,66,2,0]
+"module__video_rtp_stream.html":[1,66]
 };

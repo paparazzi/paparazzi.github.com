@@ -1,6 +1,5 @@
 var setup__actuators_8c =
 [
-    [ "DATALINK_C", "setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745", null ],
     [ "IdOfMsg", "setup__actuators_8c.html#af9bfeb49b8ea12c64a72e4a4fb5a6002", null ],
     [ "MODULES_C", "setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b", null ],
     [ "PERIODIC_C_MAIN", "setup__actuators_8c.html#a528ae321c363421027b0480ac206a32a", null ],

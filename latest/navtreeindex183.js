@@ -1,5 +1,9 @@
 var NAVTREEINDEX183 =
 {
+"settings_8c.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,10,4],
+"settings_8c_source.html":[12,0,1,0,6,12,10],
+"settings_8h.html":[12,0,1,0,6,12,11],
+"settings_8h.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,6,12,11,4],
 "settings_8h.html#a154b4e2fefccf2a235cf571d56b0efc2":[12,0,1,0,6,12,11,1],
 "settings_8h.html#a24f54a1ad3dfaec14beb18e5ca68835a":[12,0,1,0,6,12,11,0],
 "settings_8h.html#a2d417ad7e2c3eeb9e2fd5375f50bf370":[12,0,1,0,6,12,11,10],
@@ -13,15 +17,14 @@ var NAVTREEINDEX183 =
 "settings_8h.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,11,9],
 "settings_8h_source.html":[12,0,1,0,6,12,11],
 "setup__actuators_8c.html":[12,0,1,0,3,4,0],
-"setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10":[12,0,1,0,3,4,0,6],
-"setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f":[12,0,1,0,3,4,0,8],
-"setup__actuators_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,4,0,3],
-"setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,4,0,5],
-"setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe":[12,0,1,0,3,4,0,4],
-"setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b":[12,0,1,0,3,4,0,2],
-"setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745":[12,0,1,0,3,4,0,0],
-"setup__actuators_8c.html#af9bfeb49b8ea12c64a72e4a4fb5a6002":[12,0,1,0,3,4,0,1],
-"setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1":[12,0,1,0,3,4,0,7],
+"setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10":[12,0,1,0,3,4,0,5],
+"setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f":[12,0,1,0,3,4,0,7],
+"setup__actuators_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,4,0,2],
+"setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,4,0,4],
+"setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe":[12,0,1,0,3,4,0,3],
+"setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b":[12,0,1,0,3,4,0,1],
+"setup__actuators_8c.html#af9bfeb49b8ea12c64a72e4a4fb5a6002":[12,0,1,0,3,4,0,0],
+"setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1":[12,0,1,0,3,4,0,6],
 "setup__actuators_8c_source.html":[12,0,1,0,3,4,0],
 "shell_8c.html":[12,0,1,0,6,12,12],
 "shell_8c.html#a69b075ef7e4d7bcf5a903d3d75baac02":[12,0,1,0,6,12,12,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX183 =
 "sim_2mcu__periph_2udp__arch_8c_source.html":[12,0,1,0,0,2,0,15],
 "sim_2mcu__periph_2udp__arch_8h.html":[12,0,1,0,0,2,0,16],
 "sim_2mcu__periph_2udp__arch_8h.html#a665732768aad2a0f4b0a396d96485cc2":[12,0,1,0,0,2,0,16,0],
-"sim_2mcu__periph_2udp__arch_8h_source.html":[12,0,1,0,0,2,0,16],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html":[12,0,1,0,0,2,1,0,0],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,0,2,1,0,0,1],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2":[12,0,1,0,0,2,1,0,0,2]
+"sim_2mcu__periph_2udp__arch_8h_source.html":[12,0,1,0,0,2,0,16]
 };

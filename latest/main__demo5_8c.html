@@ -160,6 +160,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ad690ee00a2cf77bbaaf89c3f1ef110d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a></td></tr>
 <tr class="separator:ad690ee00a2cf77bbaaf89c3f1ef110d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d3db27cf64e56c9011bef1de4df9ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">dl_msg_available</a></td></tr>
+<tr class="memdesc:a61d3db27cf64e56c9011bef1de4df9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag provided to control calls to <a class="el" href="datalink_8h.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer.">dl_parse_msg</a>.  <a href="main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac">More...</a><br /></td></tr>
 <tr class="separator:a61d3db27cf64e56c9011bef1de4df9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ca1f0c42c768e235066d83071b1ed9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a> [<a class="el" href="datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d">MSG_SIZE</a>]</td></tr>
 <tr class="separator:a41ca1f0c42c768e235066d83071b1ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,7 +541,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="main__demo5_8c_source.html#l00063">63</a> of file <a class="el" href="main__demo5_8c_source.html">main_demo5.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bluegiga__dl_8c_source.html#l00042">bluegiga_dl_event()</a>, <a class="el" href="copilot__fixedwing_8c_source.html#l00067">copilot_parse_move_wp_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00184">copilot_parse_payload_command_dl()</a>, <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00532">LWC_callback()</a>, <a class="el" href="main__demo5_8c_source.html#l00069">main_dl_parse_msg()</a>, <a class="el" href="ctc__target_8c_source.html#l00083">parse_ctc_target_CleanTable()</a>, <a class="el" href="ctc__target_8c_source.html#l00070">parse_ctc_target_RegTable()</a>, <a class="el" href="tcas_8c_source.html#l00095">parseTcasRA()</a>, <a class="el" href="pprz__dl_8c_source.html#l00040">pprz_dl_event()</a>, <a class="el" href="sim__ap_8c_source.html#l00111">set_datalink_message()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00294">superbitrf_dl_event()</a>, <a class="el" href="w5100_8h_source.html#l00108">w5100_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00069">xbee_dl_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bluegiga__dl_8c_source.html#l00042">bluegiga_dl_event()</a>, <a class="el" href="copilot__fixedwing_8c_source.html#l00067">copilot_parse_move_wp_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00184">copilot_parse_payload_command_dl()</a>, <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>, <a class="el" href="cloud__sensor_8c_source.html#l00532">LWC_callback()</a>, <a class="el" href="main__demo5_8c_source.html#l00069">main_dl_parse_msg()</a>, <a class="el" href="ctc__target_8c_source.html#l00083">parse_ctc_target_CleanTable()</a>, <a class="el" href="ctc__target_8c_source.html#l00070">parse_ctc_target_RegTable()</a>, <a class="el" href="tcas_8c_source.html#l00095">parseTcasRA()</a>, <a class="el" href="pprz__dl_8c_source.html#l00040">pprz_dl_event()</a>, <a class="el" href="sim__ap_8c_source.html#l00107">set_datalink_message()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00294">superbitrf_dl_event()</a>, <a class="el" href="w5100_8h_source.html#l00108">w5100_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00069">xbee_dl_event()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +557,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Flag provided to control calls to <a class="el" href="datalink_8h.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer.">dl_parse_msg</a>. </p>
+<p>NOT used in this module </p>
+
 <p class="definition">Definition at line <a class="el" href="main__demo5_8c_source.html#l00060">60</a> of file <a class="el" href="main__demo5_8c_source.html">main_demo5.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bluegiga__dl_8c_source.html#l00042">bluegiga_dl_event()</a>, <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>, <a class="el" href="main__demo5_8c_source.html#l00042">main_event_task()</a>, <a class="el" href="pprz__dl_8c_source.html#l00040">pprz_dl_event()</a>, <a class="el" href="sim__ap_8c_source.html#l00111">set_datalink_message()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00294">superbitrf_dl_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00787">superbitrf_receive_packet_cb()</a>, <a class="el" href="w5100_8h_source.html#l00108">w5100_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00069">xbee_dl_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bluegiga__dl_8c_source.html#l00042">bluegiga_dl_event()</a>, <a class="el" href="gec__dl_8c_source.html#l00533">gec_dl_event()</a>, <a class="el" href="main__demo5_8c_source.html#l00042">main_event_task()</a>, <a class="el" href="pprz__dl_8c_source.html#l00040">pprz_dl_event()</a>, <a class="el" href="sim__ap_8c_source.html#l00107">set_datalink_message()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00294">superbitrf_dl_event()</a>, <a class="el" href="modules_2datalink_2superbitrf_8c_source.html#l00787">superbitrf_receive_packet_cb()</a>, <a class="el" href="w5100_8h_source.html#l00108">w5100_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00069">xbee_dl_event()</a>.</p>
 
 </div>
 </div>
@@ -586,7 +590,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_10b4664421e252b3805dc0b09ca0a8ce.html">tutorial</a></li><li class="navelem"><a class="el" href="main__demo5_8c.html">main_demo5.c</a></li>
-    <li class="footer">Generated on Fri Nov 11 2022 21:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 16 2022 15:12:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

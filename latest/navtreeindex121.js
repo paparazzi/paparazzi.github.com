@@ -1,5 +1,9 @@
 var NAVTREEINDEX121 =
 {
+"module__agl_dist.html#module_xml__agl_dist":[1,377,2,0],
+"module__ahrs_chimu_spi.html":[1,22],
+"module__ahrs_chimu_spi.html#autoloads__ahrs_chimu_spi":[1,22,2],
+"module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi":[1,22,1],
 "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,22,3],
 "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi":[1,22,0],
 "module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,22,3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX121 =
 "module__board_matek_f765_wing.html":[1,39],
 "module__board_matek_f765_wing.html#autoloads__board_matek_f765_wing":[1,39,2],
 "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing":[1,39,1],
-"module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,39,0],
-"module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,39,2,0],
-"module__board_tawaki.html":[1,40],
-"module__board_tawaki.html#autoloads__board_tawaki":[1,40,2],
-"module__board_tawaki.html#configuration__board_tawaki":[1,40,1]
+"module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing":[1,39,0]
 };

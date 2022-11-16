@@ -1,5 +1,9 @@
 var NAVTREEINDEX158 =
 {
+"paparazzi_messages.html#IMCU_DATALINK":[2,4,13],
+"paparazzi_messages.html#IMCU_DEBUG":[2,4,15],
+"paparazzi_messages.html#IMCU_FBW_STATUS":[2,4,3],
+"paparazzi_messages.html#IMCU_PAYLOAD":[2,4,16],
 "paparazzi_messages.html#IMCU_RADIO_COMMANDS":[2,4,1],
 "paparazzi_messages.html#IMCU_REMOTE_AIRSPEED":[2,4,6],
 "paparazzi_messages.html#IMCU_REMOTE_BARO":[2,4,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX158 =
 "pca95xx_8h.html#aeaf8ba1b5bf5312a5213264371c5400f":[12,0,1,0,7,111,18],
 "pca95xx_8h.html#structpca95xx":[12,0,1,0,7,111,0],
 "pca95xx_8h_source.html":[12,0,1,0,7,111],
-"pca9685__i2c_8c.html":[12,0,1,0,6,51,0],
-"pca9685__i2c_8c.html#a01679ef97d81e1bb3f20be12b8ff4ad2":[12,0,1,0,6,51,0,97],
-"pca9685__i2c_8c.html#a0304a52532d06fba688bbc43779a859d":[12,0,1,0,6,51,0,75],
-"pca9685__i2c_8c.html#a05a6650af60e867c9a9ed01a3481e4f0":[12,0,1,0,6,51,0,76],
-"pca9685__i2c_8c.html#a0687ada8d7315792f50681df996d3dcf":[12,0,1,0,6,51,0,53]
+"pca9685__i2c_8c.html":[12,0,1,0,6,51,0]
 };

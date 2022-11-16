@@ -1,5 +1,9 @@
 var NAVTREEINDEX127 =
 {
+"module__pano_unwrap.html#module_load_example__pano_unwrap":[1,439,0],
+"module__pano_unwrap.html#module_xml__pano_unwrap":[1,439,2,0],
+"module__pca9685.html":[1,440],
+"module__pca9685.html#functions__pca9685":[1,440,1],
 "module__pca9685.html#module_load_example__pca9685":[1,440,0],
 "module__pca9685.html#module_xml__pca9685":[1,440,1,0],
 "module__photogrammetry_calculator.html":[1,441],
@@ -245,9 +249,5 @@ var NAVTREEINDEX127 =
 "module__stabilization_rate.html#module_xml__stabilization_rate":[1,392,2,0],
 "module__stabilization_rate_indi.html":[1,393],
 "module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,393,1],
-"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,393,0],
-"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,393,1,0],
-"module__stabilization_rotorcraft.html":[1,394],
-"module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft":[1,394,1],
-"module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft":[1,394,2]
+"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,393,0]
 };

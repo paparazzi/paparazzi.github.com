@@ -1,5 +1,9 @@
 var NAVTREEINDEX146 =
 {
+"nps__main__common_8c.html":[12,0,1,1,1,20],
+"nps__main__common_8c.html#a09501c15e6e1dd4d027eb3fc37787a4c":[12,0,1,1,1,20,1],
+"nps__main__common_8c.html#a1180f7a36c8de6d96df1f18aab2fa62b":[12,0,1,1,1,20,8],
+"nps__main__common_8c.html#a53a4227070987f8e42631467a54643c2":[12,0,1,1,1,20,12],
 "nps__main__common_8c.html#a61cf140bea933e01e341e54d1dbaa058":[12,0,1,1,1,20,0],
 "nps__main__common_8c.html#a6e14a89c4cddf8dccc6355a220d0257d":[12,0,1,1,1,20,10],
 "nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a":[12,0,1,1,1,20,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX146 =
 "nps__sensor__gyro_8h.html#abc8ed8074236f9b5d5014d1ae29463fb":[12,0,1,1,1,42,0,6],
 "nps__sensor__gyro_8h.html#abd0dd56cb514f1ee32b7b20532e03f5f":[12,0,1,1,1,42,0,1],
 "nps__sensor__gyro_8h.html#acb96f1a5e06e44dc4e86057de43a9381":[12,0,1,1,1,42,0,10],
-"nps__sensor__gyro_8h.html#structNpsSensorGyro":[12,0,1,1,1,42,0],
-"nps__sensor__gyro_8h_source.html":[12,0,1,1,1,42],
-"nps__sensor__mag_8c.html":[12,0,1,1,1,43],
-"nps__sensor__mag_8c.html#a43dcedd3c66527ec2635d4081bcaa7d5":[12,0,1,1,1,43,0],
-"nps__sensor__mag_8c.html#afd402828074c485d02f9ceb00e384b03":[12,0,1,1,1,43,1]
+"nps__sensor__gyro_8h.html#structNpsSensorGyro":[12,0,1,1,1,42,0]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX122 =
 {
+"module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing":[1,39,2,0],
+"module__board_tawaki.html":[1,40],
+"module__board_tawaki.html#autoloads__board_tawaki":[1,40,2],
+"module__board_tawaki.html#configuration__board_tawaki":[1,40,1],
 "module__board_tawaki.html#module_load_example__board_tawaki":[1,40,0],
 "module__board_tawaki.html#module_xml__board_tawaki":[1,40,2,0],
 "module__cam_point.html":[1,43],
@@ -245,9 +249,5 @@ var NAVTREEINDEX122 =
 "module__esc32.html":[1,420],
 "module__esc32.html#configuration__esc32":[1,420,1],
 "module__esc32.html#functions__esc32":[1,420,2],
-"module__esc32.html#module_load_example__esc32":[1,420,0],
-"module__esc32.html#module_xml__esc32":[1,420,2,0],
-"module__extra_dl.html":[1,95],
-"module__extra_dl.html#configuration__extra_dl":[1,95,1],
-"module__extra_dl.html#functions__extra_dl":[1,95,2]
+"module__esc32.html#module_load_example__esc32":[1,420,0]
 };
