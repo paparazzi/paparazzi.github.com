@@ -1,5 +1,12 @@
 var NAVTREEINDEX79 =
 {
+"holybro_2kakute__f7_2board_8h.html#a67eac2b1434cea46ec00fdaad117cd6d":[12,0,1,0,1,8,0,0,393],
+"holybro_2kakute__f7_2board_8h.html#a690d30e9ad3647835c243368b36d4c41":[12,0,1,0,1,8,0,0,312],
+"holybro_2kakute__f7_2board_8h.html#a69843b5bb6929b4e0680e1bc748dbdca":[12,0,1,0,1,8,0,0,14],
+"holybro_2kakute__f7_2board_8h.html#a6a3ba2e1b8b5a5b5b0bb042c176c77e6":[12,0,1,0,1,8,0,0,223],
+"holybro_2kakute__f7_2board_8h.html#a6a6cd142a0c0cde9125352343a8e6005":[12,0,1,0,1,8,0,0,394],
+"holybro_2kakute__f7_2board_8h.html#a6a8f26ac753d5994952b6e4d5c4e8656":[12,0,1,0,1,8,0,0,251],
+"holybro_2kakute__f7_2board_8h.html#a6aa1810521655aff39e0c7874721d99a":[12,0,1,0,1,8,0,0,375],
 "holybro_2kakute__f7_2board_8h.html#a6b55dd36a8f68bea16aa54c3f3f876d3":[12,0,1,0,1,8,0,0,192],
 "holybro_2kakute__f7_2board_8h.html#a6b854c2f1520264d0572b6980bea6a2c":[12,0,1,0,1,8,0,0,389],
 "holybro_2kakute__f7_2board_8h.html#a6ca53a3c51d764a6b0e749d8d1b6bf24":[12,0,1,0,1,8,0,0,258],
@@ -242,12 +249,5 @@ var NAVTREEINDEX79 =
 "holybro_2kakute__f7_2board_8h.html#afdf41f24b977cd20eea029148b4fcca8":[12,0,1,0,1,8,0,0,339],
 "holybro_2kakute__f7_2board_8h.html#afe8915e89b120708f690ae697f0edb7f":[12,0,1,0,1,8,0,0,277],
 "holybro_2kakute__f7_2board_8h.html#aff4a90550a935c732573defc139face0":[12,0,1,0,1,8,0,0,173],
-"holybro_2kakute__f7_2board_8h.html#aff64a76676594ca4796b8eabe26cf4e2":[12,0,1,0,1,8,0,0,41],
-"holybro_2kakute__f7_2board_8h.html#aff75485cf888840b92ecd4609fe2128c":[12,0,1,0,1,8,0,0,136],
-"holybro_2kakute__f7_2board_8h.html#aff810ff6d92abc10eefaed76a3e62376":[12,0,1,0,1,8,0,0,36],
-"holybro_2kakute__f7_2board_8h_source.html":[12,0,1,0,1,8,0,0],
-"holybro_2kakute__f7_2mcuconf_8h.html":[12,0,1,0,1,8,0,2],
-"holybro_2kakute__f7_2mcuconf_8h.html#a0086a7a701003e795861e93bd2c7a7fd":[12,0,1,0,1,8,0,2,259],
-"holybro_2kakute__f7_2mcuconf_8h.html#a00ad81d320aaeb3ca4899228c4155848":[12,0,1,0,1,8,0,2,147],
-"holybro_2kakute__f7_2mcuconf_8h.html#a00b873df699111f00e6093ed5759e08e":[12,0,1,0,1,8,0,2,23]
+"holybro_2kakute__f7_2board_8h.html#aff64a76676594ca4796b8eabe26cf4e2":[12,0,1,0,1,8,0,0,41]
 };

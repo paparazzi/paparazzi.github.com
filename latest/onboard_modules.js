@@ -70,7 +70,8 @@ var onboard_modules =
       ] ]
     ] ],
     [ "actuators_disco module", "module__actuators_disco.html", [
-      [ "Example for airframe file", "module__actuators_disco.html#module_load_example__actuators_disco", [
+      [ "Example for airframe file", "module__actuators_disco.html#module_load_example__actuators_disco", null ],
+      [ "Auto-loaded modules", "module__actuators_disco.html#autoloads__actuators_disco", [
         [ "Raw actuators_disco.xml file:", "module__actuators_disco.html#module_xml__actuators_disco", null ]
       ] ]
     ] ],

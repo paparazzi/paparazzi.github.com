@@ -1,5 +1,13 @@
 var NAVTREEINDEX158 =
 {
+"paparazzi_messages.html#HITL_INFRARED":[2,1,6],
+"paparazzi_messages.html#HITL_UBX":[2,1,5],
+"paparazzi_messages.html#HOVER_LOOP":[2,0,143],
+"paparazzi_messages.html#HTM_STATUS":[2,0,113],
+"paparazzi_messages.html#HYBRID_GUIDANCE":[2,0,23],
+"paparazzi_messages.html#H_CTL_A":[2,0,59],
+"paparazzi_messages.html#I2C_ERRORS":[2,0,231],
+"paparazzi_messages.html#IMCU_COMMANDS":[2,4,0],
 "paparazzi_messages.html#IMCU_DATALINK":[2,4,13],
 "paparazzi_messages.html#IMCU_DEBUG":[2,4,15],
 "paparazzi_messages.html#IMCU_FBW_STATUS":[2,4,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX158 =
 "pca95xx_8h.html#a92c847911574049131e5440b4af6a0a4":[12,0,1,0,7,111,11],
 "pca95xx_8h.html#ad0017b15c6ab6542f4e5f370b4cb0840":[12,0,1,0,7,111,2],
 "pca95xx_8h.html#add959b9146a80455023313ffde649f28":[12,0,1,0,7,111,3],
-"pca95xx_8h.html#addd99f24185ce2bcc2bf8b85f348ac4d":[12,0,1,0,7,111,14],
-"pca95xx_8h.html#adf3ceba27602744321a2f5c4613d320c":[12,0,1,0,7,111,4],
-"pca95xx_8h.html#ae6714943caaa6993288adcc441135bd7":[12,0,1,0,7,111,8],
-"pca95xx_8h.html#ae693ccc9f8550f3b32f30918d3f0ab85":[12,0,1,0,7,111,15],
-"pca95xx_8h.html#aea5d9d7b816dc7061ff4e4321cbbf317":[12,0,1,0,7,111,12],
-"pca95xx_8h.html#aeaf8ba1b5bf5312a5213264371c5400f":[12,0,1,0,7,111,18],
-"pca95xx_8h.html#structpca95xx":[12,0,1,0,7,111,0],
-"pca95xx_8h_source.html":[12,0,1,0,7,111],
-"pca9685__i2c_8c.html":[12,0,1,0,6,51,0]
+"pca95xx_8h.html#addd99f24185ce2bcc2bf8b85f348ac4d":[12,0,1,0,7,111,14]
 };

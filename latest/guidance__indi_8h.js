@@ -7,5 +7,6 @@ var guidance__indi_8h =
     [ "guidance_indi_max_bank", "guidance__indi_8h.html#a313939905cd50d33f06f8fb9d6960d10", null ],
     [ "guidance_indi_pos_gain", "guidance__indi_8h.html#a3c97aa70af2039983db4aac2db0f3081", null ],
     [ "guidance_indi_specific_force_gain", "guidance__indi_8h.html#ab8b7c1a3381bbab7edc1c3685cb0f7dc", null ],
-    [ "guidance_indi_speed_gain", "guidance__indi_8h.html#ad229e7cd29ac11d986028d46a03ef338", null ]
+    [ "guidance_indi_speed_gain", "guidance__indi_8h.html#ad229e7cd29ac11d986028d46a03ef338", null ],
+    [ "sp_accel", "guidance__indi_8h.html#a596a1bce76f2a37bf46aa5149ad745d7", null ]
 ];

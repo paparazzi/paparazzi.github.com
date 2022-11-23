@@ -1,5 +1,12 @@
 var NAVTREEINDEX120 =
 {
+"mission__common_8c.html#a1323ceffc151a2671a0e6c6753157763":[12,0,1,0,6,44,4,4],
+"mission__common_8c.html#a19c6efe9565f7d4a03291cb165b931ff":[12,0,1,0,6,44,4,5],
+"mission__common_8c.html#a20c4fc881f08ea68079de459aa4ef622":[12,0,1,0,6,44,4,14],
+"mission__common_8c.html#a21836256087c77243583a2e1de8c648b":[12,0,1,0,6,44,4,16],
+"mission__common_8c.html#a31b2a2265d6533f3d4f408b82cf99f95":[12,0,1,0,6,44,4,6],
+"mission__common_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa":[12,0,1,0,6,44,4,21],
+"mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667":[12,0,1,0,6,44,4,18],
 "mission__common_8c.html#a6a886a1e7ba0bd3d1b89a15184fee2bd":[12,0,1,0,6,44,4,12],
 "mission__common_8c.html#a6bc6421e3873d2b4d620bc33e1e90446":[12,0,1,0,6,44,4,7],
 "mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852":[12,0,1,0,6,44,4,1],
@@ -194,8 +201,9 @@ var NAVTREEINDEX120 =
 "module__actuators_bebop.html#module_load_example__actuators_bebop":[1,4,0],
 "module__actuators_bebop.html#module_xml__actuators_bebop":[1,4,2,0],
 "module__actuators_disco.html":[1,5],
+"module__actuators_disco.html#autoloads__actuators_disco":[1,5,1],
 "module__actuators_disco.html#module_load_example__actuators_disco":[1,5,0],
-"module__actuators_disco.html#module_xml__actuators_disco":[1,5,0,0],
+"module__actuators_disco.html#module_xml__actuators_disco":[1,5,1,0],
 "module__actuators_dshot.html":[1,6],
 "module__actuators_dshot.html#configuration__actuators_dshot":[1,6,1],
 "module__actuators_dshot.html#module_load_example__actuators_dshot":[1,6,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX120 =
 "module__adc.html":[1,241],
 "module__adc.html#module_load_example__adc":[1,241,0],
 "module__adc.html#module_xml__adc":[1,241,0,0],
-"module__adc_generic.html":[1,18],
-"module__adc_generic.html#configuration__adc_generic":[1,18,1],
-"module__adc_generic.html#functions__adc_generic":[1,18,2],
-"module__adc_generic.html#module_load_example__adc_generic":[1,18,0],
-"module__adc_generic.html#module_xml__adc_generic":[1,18,2,0],
-"module__agl_dist.html":[1,377],
-"module__agl_dist.html#configuration__agl_dist":[1,377,1],
-"module__agl_dist.html#functions__agl_dist":[1,377,2],
-"module__agl_dist.html#module_load_example__agl_dist":[1,377,0]
+"module__adc_generic.html":[1,18]
 };

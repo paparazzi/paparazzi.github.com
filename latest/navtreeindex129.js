@@ -1,5 +1,13 @@
 var NAVTREEINDEX129 =
 {
+"module__video_capture.html#functions__video_capture":[1,64,2],
+"module__video_capture.html#module_load_example__video_capture":[1,64,0],
+"module__video_capture.html#module_xml__video_capture":[1,64,2,0],
+"module__video_exif.html":[1,65],
+"module__video_exif.html#functions__video_exif":[1,65,1],
+"module__video_exif.html#module_load_example__video_exif":[1,65,0],
+"module__video_exif.html#module_xml__video_exif":[1,65,1,0],
+"module__video_rtp_stream.html":[1,66],
 "module__video_rtp_stream.html#configuration__video_rtp_stream":[1,66,1],
 "module__video_rtp_stream.html#functions__video_rtp_stream":[1,66,2],
 "module__video_rtp_stream.html#module_load_example__video_rtp_stream":[1,66,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX129 =
 "modules_2ins_2ins__arduimu__basic_8c.html#aa328003d32e700d9b20df1ac47aab9ba":[12,0,1,0,6,36,16,19],
 "modules_2ins_2ins__arduimu__basic_8c.html#aaec37a1182f43239f68f85ef09e5d9b0":[12,0,1,0,6,36,16,3],
 "modules_2ins_2ins__arduimu__basic_8c.html#aaee9ddbcf2cef114764f3b37cda3cf38":[12,0,1,0,6,36,16,10],
-"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,16,21],
-"modules_2ins_2ins__arduimu__basic_8c.html#ad14a8d61af1149c06d36d19a4d6a9c12":[12,0,1,0,6,36,16,1],
-"modules_2ins_2ins__arduimu__basic_8c.html#ae31b9398d0a602349add7dff0b46e32e":[12,0,1,0,6,36,16,13],
-"modules_2ins_2ins__arduimu__basic_8c.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,6,36,16,16],
-"modules_2ins_2ins__arduimu__basic_8c.html#af200b22d545ef773ef3e8a8f1c1f0f4f":[12,0,1,0,6,36,16,14],
-"modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a":[12,0,1,0,6,36,16,7],
-"modules_2ins_2ins__arduimu__basic_8c.html#afe7eeee2e1b44f3d4533e7ab52d75a90":[12,0,1,0,6,36,16,6],
-"modules_2ins_2ins__arduimu__basic_8c_source.html":[12,0,1,0,6,36,16],
-"modules_2radio__control_2rc__datalink_8c.html":[12,0,1,0,6,55,9]
+"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,16,21]
 };

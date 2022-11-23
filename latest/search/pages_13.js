@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['vertical_5fctrl_5fmodule_5fdemo_20module_50872',['vertical_ctrl_module_demo module',['../module__vertical_ctrl_module_demo.html',1,'onboard_modules']]],
-  ['video_5fcapture_20module_50873',['video_capture module',['../module__video_capture.html',1,'onboard_modules']]],
-  ['video_5fexif_20module_50874',['video_exif module',['../module__video_exif.html',1,'onboard_modules']]],
-  ['video_5frtp_5fstream_20module_50875',['video_rtp_stream module',['../module__video_rtp_stream.html',1,'onboard_modules']]],
-  ['video_5fthread_20module_50876',['video_thread module',['../module__video_thread.html',1,'onboard_modules']]],
-  ['video_5fusb_5flogger_20module_50877',['video_usb_logger module',['../module__video_usb_logger.html',1,'onboard_modules']]]
+  ['vertical_5fctrl_5fmodule_5fdemo_20module_50884',['vertical_ctrl_module_demo module',['../module__vertical_ctrl_module_demo.html',1,'onboard_modules']]],
+  ['video_5fcapture_20module_50885',['video_capture module',['../module__video_capture.html',1,'onboard_modules']]],
+  ['video_5fexif_20module_50886',['video_exif module',['../module__video_exif.html',1,'onboard_modules']]],
+  ['video_5frtp_5fstream_20module_50887',['video_rtp_stream module',['../module__video_rtp_stream.html',1,'onboard_modules']]],
+  ['video_5fthread_20module_50888',['video_thread module',['../module__video_thread.html',1,'onboard_modules']]],
+  ['video_5fusb_5flogger_20module_50889',['video_usb_logger module',['../module__video_usb_logger.html',1,'onboard_modules']]]
 ];

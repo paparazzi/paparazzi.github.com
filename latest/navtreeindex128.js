@@ -1,5 +1,13 @@
 var NAVTREEINDEX128 =
 {
+"module__stabilization_rate.html":[1,392],
+"module__stabilization_rate.html#configuration__stabilization_rate":[1,392,1],
+"module__stabilization_rate.html#functions__stabilization_rate":[1,392,2],
+"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,392,0],
+"module__stabilization_rate.html#module_xml__stabilization_rate":[1,392,2,0],
+"module__stabilization_rate_indi.html":[1,393],
+"module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,393,1],
+"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,393,0],
 "module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,393,1,0],
 "module__stabilization_rotorcraft.html":[1,394],
 "module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft":[1,394,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX128 =
 "module__vertical_ctrl_module_demo.html#module_load_example__vertical_ctrl_module_demo":[1,93,0],
 "module__vertical_ctrl_module_demo.html#module_xml__vertical_ctrl_module_demo":[1,93,1,0],
 "module__video_capture.html":[1,64],
-"module__video_capture.html#configuration__video_capture":[1,64,1],
-"module__video_capture.html#functions__video_capture":[1,64,2],
-"module__video_capture.html#module_load_example__video_capture":[1,64,0],
-"module__video_capture.html#module_xml__video_capture":[1,64,2,0],
-"module__video_exif.html":[1,65],
-"module__video_exif.html#functions__video_exif":[1,65,1],
-"module__video_exif.html#module_load_example__video_exif":[1,65,0],
-"module__video_exif.html#module_xml__video_exif":[1,65,1,0],
-"module__video_rtp_stream.html":[1,66]
+"module__video_capture.html#configuration__video_capture":[1,64,1]
 };
