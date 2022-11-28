@@ -829,6 +829,8 @@ var annotated_dup =
     [ "px4flow_i2c_frame", "px4flow__i2c_8h.html#structpx4flow__i2c__frame", "px4flow__i2c_8h_structpx4flow__i2c__frame" ],
     [ "px4flow_i2c_integral_frame", "px4flow__i2c_8h.html#structpx4flow__i2c__integral__frame", "px4flow__i2c_8h_structpx4flow__i2c__integral__frame" ],
     [ "px4io_mixdata", "px4__flash_2protocol_8h.html#structpx4io__mixdata", "px4__flash_2protocol_8h_structpx4io__mixdata" ],
+    [ "Qmc5883l", "qmc5883l_8h.html#structQmc5883l", "qmc5883l_8h_structQmc5883l" ],
+    [ "Qmc5883l.data", "qmc5883l_8h.html#unionQmc5883l_8data", "qmc5883l_8h_unionQmc5883l_8data" ],
     [ "RadioControl", "radio__control_8h.html#structRadioControl", "radio__control_8h_structRadioControl" ],
     [ "range_forcefield_param_t", "range__forcefield_8h.html#structrange__forcefield__param__t", "range__forcefield_8h_structrange__forcefield__param__t" ],
     [ "rawData", "actuators__ostrich_8c.html#unionrawData", "actuators__ostrich_8c_unionrawData" ],

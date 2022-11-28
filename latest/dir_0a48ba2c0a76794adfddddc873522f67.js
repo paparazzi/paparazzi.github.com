@@ -114,6 +114,8 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "pca95xx.h", "pca95xx_8h.html", "pca95xx_8h" ],
     [ "pmw3901.c", "pmw3901_8c.html", "pmw3901_8c" ],
     [ "pmw3901.h", "pmw3901_8h.html", "pmw3901_8h" ],
+    [ "qmc5883l.c", "qmc5883l_8c.html", "qmc5883l_8c" ],
+    [ "qmc5883l.h", "qmc5883l_8h.html", "qmc5883l_8h" ],
     [ "rm3100.c", "rm3100_8c.html", "rm3100_8c" ],
     [ "rm3100.h", "rm3100_8h.html", "rm3100_8h" ],
     [ "sc18i600.c", "sc18i600_8c.html", "sc18i600_8c" ],

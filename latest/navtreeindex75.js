@@ -1,5 +1,8 @@
 var NAVTREEINDEX75 =
 {
+"guidance__v__ref_8c.html#ac7dd22d1cc130e1af9dd0929c30de595":[12,0,1,0,3,2,0,17,13],
+"guidance__v__ref_8c.html#ad09adfdb78c500e2224d26a46e758107":[12,0,1,0,3,2,0,17,14],
+"guidance__v__ref_8c.html#ad18cdf31c66bcda9b84f2d14dcd4d5d6":[12,0,1,0,3,2,0,17,8],
 "guidance__v__ref_8c.html#ade30d0d306bc65506c54c5f9d41a8952":[12,0,1,0,3,2,0,17,16],
 "guidance__v__ref_8c.html#af5b4bf2932d63454e537de13ae5f58f3":[12,0,1,0,3,2,0,17,21],
 "guidance__v__ref_8c_source.html":[12,0,1,0,3,2,0,17],
@@ -246,8 +249,5 @@ var NAVTREEINDEX75 =
 "gvf__parametric__3d__ellipse_8c.html#a8eb239b143e2c861f83c48d3ffa669c1":[12,0,1,0,6,30,1,0,2,0],
 "gvf__parametric__3d__ellipse_8c.html#aa40b372ddd62570f03e03e574cabacba":[12,0,1,0,6,30,1,0,2,3],
 "gvf__parametric__3d__ellipse_8c.html#abf69a9b9c78517b4f6b9bb212e27a962":[12,0,1,0,6,30,1,0,2,7],
-"gvf__parametric__3d__ellipse_8c.html#ac5c13c30df8acbe43c456bec3878b5a7":[12,0,1,0,6,30,1,0,2,6],
-"gvf__parametric__3d__ellipse_8c.html#ade814613b8be6838793cc40b6df01daf":[12,0,1,0,6,30,1,0,2,4],
-"gvf__parametric__3d__ellipse_8c.html#af4bb5870aa7d46052d0f8e4a34b3d2cc":[12,0,1,0,6,30,1,0,2,8],
-"gvf__parametric__3d__ellipse_8c_source.html":[12,0,1,0,6,30,1,0,2]
+"gvf__parametric__3d__ellipse_8c.html#ac5c13c30df8acbe43c456bec3878b5a7":[12,0,1,0,6,30,1,0,2,6]
 };

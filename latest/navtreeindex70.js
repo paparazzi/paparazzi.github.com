@@ -1,5 +1,8 @@
 var NAVTREEINDEX70 =
 {
+"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[9,0,4],
+"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,1,6,2,1],
+"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,20,1],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,21,2],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[12,0,1,0,21,0,3],
@@ -225,8 +228,8 @@ var NAVTREEINDEX70 =
 "group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f":[9,4,6,5],
 "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967":[9,4,2,15],
 "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967":[12,0,1,0,28,124],
-"group__state__acceleration.html#ga2903594bd0aa1978f4b53166eecc37bf":[9,4,2,22],
 "group__state__acceleration.html#ga2903594bd0aa1978f4b53166eecc37bf":[9,4,6,25],
+"group__state__acceleration.html#ga2903594bd0aa1978f4b53166eecc37bf":[9,4,2,22],
 "group__state__acceleration.html#ga2dee1fa8ad515c618138f1646ddc484f":[9,4,2,2],
 "group__state__acceleration.html#ga2dee1fa8ad515c618138f1646ddc484f":[12,0,1,0,28,2],
 "group__state__acceleration.html#ga4195f5fca4133a0cd1bdd098e11dc94a":[9,4,2,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX70 =
 "group__state__acceleration.html#ga6000e95cc586155550808c07fef89725":[9,4,2,12],
 "group__state__acceleration.html#ga6000e95cc586155550808c07fef89725":[12,0,1,0,28,111],
 "group__state__acceleration.html#ga6facec929f628aeed9c9173f68283f00":[9,4,2,0],
-"group__state__acceleration.html#ga6facec929f628aeed9c9173f68283f00":[12,0,1,0,28,0],
-"group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[9,4,2,4],
-"group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[12,0,1,0,27,0],
-"group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[12,0,1,0,28,37]
+"group__state__acceleration.html#ga6facec929f628aeed9c9173f68283f00":[12,0,1,0,28,0]
 };

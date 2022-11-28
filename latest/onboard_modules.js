@@ -333,9 +333,17 @@ var onboard_modules =
     ] ],
     [ "rotorcraft_cam module", "module__rotorcraft_cam.html", [
       [ "Example for airframe file", "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam", null ],
-      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", null ],
-      [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
-      [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
+      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", [
+        [ "Airframe file section", "module__rotorcraft_cam.html#af_section", null ]
+      ] ],
+      [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", [
+        [ "Init Functions", "module__rotorcraft_cam.html#init_functions", null ],
+        [ "Periodic Functions", "module__rotorcraft_cam.html#periodic_functions", null ]
+      ] ],
+      [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", null ],
+      [ "Files", "module__rotorcraft_cam.html#files", [
+        [ "Header Files", "module__rotorcraft_cam.html#headers", null ],
+        [ "Source Files", "module__rotorcraft_cam.html#sources", null ],
         [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
       ] ]
     ] ],
@@ -611,11 +619,6 @@ var onboard_modules =
     [ "optical_flow_hover module", "module__optical_flow_hover.html", [
       [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
       [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
-        [ "Init Functions", "module__optical_flow_hover.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__optical_flow_hover.html#files", [
-        [ "Header Files", "module__optical_flow_hover.html#headers", null ],
-        [ "Source Files", "module__optical_flow_hover.html#sources", null ],
         [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
       ] ]
     ] ],
@@ -661,7 +664,6 @@ var onboard_modules =
     [ "fbw_datalink module", "module__fbw_datalink.html", [
       [ "Example for airframe file", "module__fbw_datalink.html#module_load_example__fbw_datalink", null ],
       [ "Module configuration options", "module__fbw_datalink.html#configuration__fbw_datalink", [
-        [ "Configure Options", "module__fbw_datalink.html#configure", null ],
         [ "Raw fbw_datalink.xml file:", "module__fbw_datalink.html#module_xml__fbw_datalink", null ]
       ] ]
     ] ],
@@ -771,9 +773,7 @@ var onboard_modules =
     ] ],
     [ "telemetry_w5100 module", "module__telemetry_w5100.html", [
       [ "Example for airframe file", "module__telemetry_w5100.html#module_load_example__telemetry_w5100", null ],
-      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", [
-        [ "Define Options", "module__telemetry_w5100.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__telemetry_w5100.html#configuration__telemetry_w5100", null ],
       [ "Auto-loaded modules", "module__telemetry_w5100.html#autoloads__telemetry_w5100", null ],
       [ "Module functions", "module__telemetry_w5100.html#functions__telemetry_w5100", [
         [ "Raw telemetry_w5100.xml file:", "module__telemetry_w5100.html#module_xml__telemetry_w5100", null ]
@@ -1047,9 +1047,7 @@ var onboard_modules =
     ] ],
     [ "guidance_basic_fw module", "module__guidance_basic_fw.html", [
       [ "Example for airframe file", "module__guidance_basic_fw.html#module_load_example__guidance_basic_fw", null ],
-      [ "Module configuration options", "module__guidance_basic_fw.html#configuration__guidance_basic_fw", [
-        [ "Airframe file section", "module__guidance_basic_fw.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__guidance_basic_fw.html#configuration__guidance_basic_fw", null ],
       [ "Module functions", "module__guidance_basic_fw.html#functions__guidance_basic_fw", [
         [ "Raw guidance_basic_fw.xml file:", "module__guidance_basic_fw.html#module_xml__guidance_basic_fw", null ]
       ] ]
@@ -1170,14 +1168,16 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ "Configure Options", "module__imu_aspirin_i2c_v1_0.html#configure", null ]
+      ] ],
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
@@ -1257,7 +1257,9 @@ var onboard_modules =
     ] ],
     [ "imu_heater module", "module__imu_heater.html", [
       [ "Example for airframe file", "module__imu_heater.html#module_load_example__imu_heater", null ],
-      [ "Module configuration options", "module__imu_heater.html#configuration__imu_heater", null ],
+      [ "Module configuration options", "module__imu_heater.html#configuration__imu_heater", [
+        [ "Define Options", "module__imu_heater.html#define", null ]
+      ] ],
       [ "Module functions", "module__imu_heater.html#functions__imu_heater", [
         [ "Raw imu_heater.xml file:", "module__imu_heater.html#module_xml__imu_heater", null ]
       ] ]
@@ -2226,6 +2228,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__radio_control_ppm.html#module_load_example__radio_control_ppm", null ],
       [ "Module configuration options", "module__radio_control_ppm.html#configuration__radio_control_ppm", null ],
       [ "Module functions", "module__radio_control_ppm.html#functions__radio_control_ppm", [
+        [ "Event Functions", "module__radio_control_ppm.html#event_functions", null ],
         [ "Raw radio_control_ppm.xml file:", "module__radio_control_ppm.html#module_xml__radio_control_ppm", null ]
       ] ]
     ] ],
@@ -2496,6 +2499,13 @@ var onboard_modules =
         [ "Raw mag_pitot_uart.xml file:", "module__mag_pitot_uart.html#module_xml__mag_pitot_uart", null ]
       ] ]
     ] ],
+    [ "mag_qmc5883l module", "module__mag_qmc5883l.html", [
+      [ "Example for airframe file", "module__mag_qmc5883l.html#module_load_example__mag_qmc5883l", null ],
+      [ "Module configuration options", "module__mag_qmc5883l.html#configuration__mag_qmc5883l", null ],
+      [ "Module functions", "module__mag_qmc5883l.html#functions__mag_qmc5883l", [
+        [ "Raw mag_qmc5883l.xml file:", "module__mag_qmc5883l.html#module_xml__mag_qmc5883l", null ]
+      ] ]
+    ] ],
     [ "mag_rm3100 module", "module__mag_rm3100.html", [
       [ "Example for airframe file", "module__mag_rm3100.html#module_load_example__mag_rm3100", null ],
       [ "Module configuration options", "module__mag_rm3100.html#configuration__mag_rm3100", null ],
@@ -2742,10 +2752,7 @@ var onboard_modules =
     ] ],
     [ "autopilot_gnc module", "module__autopilot_gnc.html", [
       [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
-      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", [
-        [ "Event Functions", "module__autopilot_gnc.html#event_functions", null ],
-        [ "Periodic Functions", "module__autopilot_gnc.html#periodic_functions", null ]
-      ] ],
+      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
       [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
         [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
       ] ]

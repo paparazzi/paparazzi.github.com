@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed____":[12,0,1,0,1,2,0,0,11,18],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed____":[12,0,1,0,1,2,0,0,11,20],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed____":[12,0,1,0,1,2,0,0,11,16],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__w_8____unnamed____":[12,0,1,0,1,2,0,0,11,17],
@@ -206,8 +207,8 @@ var NAVTREEINDEX18 =
 "avi__isp__statistics__bayer_8h.html#a6197cbc141faca4bd1d30884b2a241a9":[12,0,1,0,1,2,0,0,15,28],
 "avi__isp__statistics__bayer_8h.html#a65ec61a811d060ffbd7f3aec11f4cf8e":[12,0,1,0,1,2,0,0,15,36],
 "avi__isp__statistics__bayer_8h.html#a72852829612fe240aa20686146c38545":[12,0,1,0,1,2,0,0,15,15,2],
-"avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,14,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,15,0],
+"avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,14,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,21,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,24,0],
 "avi__isp__statistics__bayer_8h.html#a7a09e25c85aecd7479a633e3cc628e1a":[12,0,1,0,1,2,0,0,15,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__measure__req_8____unnamed____":[12,0,1,0,1,2,0,0,15,13],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__regs":[12,0,1,0,1,2,0,0,15,12],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed____":[12,0,1,0,1,2,0,0,15,22],
-"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed____":[12,0,1,0,1,2,0,0,15,14],
-"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__y_8____unnamed____":[12,0,1,0,1,2,0,0,15,15]
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed____":[12,0,1,0,1,2,0,0,15,14]
 };

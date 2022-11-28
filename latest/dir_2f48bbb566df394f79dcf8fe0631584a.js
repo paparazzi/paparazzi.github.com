@@ -64,6 +64,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "mag_lis3mdl.h", "mag__lis3mdl_8h.html", "mag__lis3mdl_8h" ],
     [ "mag_pitot_uart.c", "mag__pitot__uart_8c.html", "mag__pitot__uart_8c" ],
     [ "mag_pitot_uart.h", "mag__pitot__uart_8h.html", "mag__pitot__uart_8h" ],
+    [ "mag_qmc5883l.c", "mag__qmc5883l_8c.html", "mag__qmc5883l_8c" ],
+    [ "mag_qmc5883l.h", "mag__qmc5883l_8h.html", "mag__qmc5883l_8h" ],
     [ "mag_rm3100.c", "mag__rm3100_8c.html", "mag__rm3100_8c" ],
     [ "mag_rm3100.h", "mag__rm3100_8h.html", "mag__rm3100_8h" ],
     [ "met_module.h", "met__module_8h.html", "met__module_8h" ],
