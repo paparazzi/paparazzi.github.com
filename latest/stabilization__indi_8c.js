@@ -23,6 +23,7 @@ var stabilization__indi_8c =
     [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi_8c.html#a487bd4ac66f844d9d1adfb696f950604", null ],
     [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi_8c.html#a2d7051eac973a8507897f6753deaf818", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi_8c.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
+    [ "sum_g1_g2", "stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2", null ],
     [ "thrust_cb", "stabilization__indi_8c.html#ad3a3b777ab87b1529cc7a9c00019671d", null ],
     [ "thrust_cb", "stabilization__indi_8c.html#a9f7e90f9f9064f5ff2559807df9ab7e1", null ],
     [ "acceleration_lowpass_filter", "stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX190 =
 {
+"stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b":[12,0,1,0,3,2,1,36,1,0],
 "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b":[12,0,1,0,3,2,1,36,2,2],
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,1,36,2,10],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,1,36,1],
@@ -214,8 +215,8 @@ var NAVTREEINDEX190 =
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baa5aea661a147e9fe25d5c2a2d48a51e7":[12,0,1,0,0,3,0,1,3,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baf9b37238aba13fc136c5f0cce2db1838":[12,0,1,0,0,3,0,1,3,0],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9":[12,0,1,0,0,3,0,1,1],
-"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,3,0,1,1,1],
+"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,3,0,1],
 "stm32_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,3,0,4],
 "stm32_2mcu__periph_2gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2":[12,0,1,0,0,3,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX190 =
 "stm32_2mcu__periph_2i2c__arch_8c.html#a51ee0aafd3ec8a5ab3458cfb1e327f42":[12,0,1,0,0,3,0,6,4],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a57b9ce58e89f994cb2209448bfd65de1":[12,0,1,0,0,3,0,6,1],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76":[12,0,1,0,0,3,0,6,11],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012":[12,0,1,0,0,3,0,6,10],
-"stm32_2mcu__periph_2i2c__arch_8c.html#a9cdca4a1beda37ad7a9a7087252b6bbf":[12,0,1,0,0,3,0,6,14]
+"stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012":[12,0,1,0,0,3,0,6,10]
 };

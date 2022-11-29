@@ -1,5 +1,6 @@
 var NAVTREEINDEX191 =
 {
+"stm32_2mcu__periph_2i2c__arch_8c.html#a9cdca4a1beda37ad7a9a7087252b6bbf":[12,0,1,0,0,3,0,6,14],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a9f8ae01465e43501aabd230ba1900fa8":[12,0,1,0,0,3,0,6,6],
 "stm32_2mcu__periph_2i2c__arch_8c.html#ab4c3f12bf6f1e40e249217899a79447f":[12,0,1,0,0,3,0,6,7],
 "stm32_2mcu__periph_2i2c__arch_8c.html#ab9e5bad12034eb78fc98e86032eb938c":[12,0,1,0,0,3,0,6,15],
@@ -24,8 +25,8 @@ var NAVTREEINDEX191 =
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,3,0,9,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,3,0,9,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,0,0,10,2,5],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,10,2,4],
+"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[12,0,1,0,0,3,0,9,1],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[12,0,1,0,0,3,0,9,0],
 "stm32_2mcu__periph_2pwm__input__arch_8h_source.html":[12,0,1,0,0,3,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX191 =
 "structDSHOTDriver.html#a2d919233183b582c8e5b0159a7a72f88":[11,0,444,3],
 "structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a":[11,0,444,6],
 "structDSHOTDriver.html#a3b35fde29418ecbf8e38120484c2b058":[11,0,444,7],
-"structDSHOTDriver.html#a46537453cfb72dbafb999399c52dfbb1":[11,0,444,5],
-"structDSHOTDriver.html#a7daea2f55abfadd7969e78a714bbed61":[11,0,444,8]
+"structDSHOTDriver.html#a46537453cfb72dbafb999399c52dfbb1":[11,0,444,5]
 };

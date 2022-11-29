@@ -1,5 +1,6 @@
 var NAVTREEINDEX192 =
 {
+"structDSHOTDriver.html#a7daea2f55abfadd7969e78a714bbed61":[11,0,444,8],
 "structDSHOTDriver.html#a8af9e29758141560572c026b7c7d2a40":[11,0,444,2],
 "structDSHOTDriver.html#a983bf8da93e0b5fed96fdb194fbb91f3":[11,0,444,1],
 "structDSHOTDriver.html#aae0d2fcfcd2b66f865ae6c955ac6d60a":[11,0,444,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX192 =
 "sys__id__doublet_8c.html#ad31d5b642531d6b112fcf42c7a8c4f89":[12,0,1,0,6,66,8,5],
 "sys__id__doublet_8c.html#aef8eda4708ba3349b6a09cc4690baf3b":[12,0,1,0,6,66,8,18],
 "sys__id__doublet_8c.html#afcf807e99b2cfaa4487a481656ea952e":[12,0,1,0,6,66,8,22],
-"sys__id__doublet_8c_source.html":[12,0,1,0,6,66,8],
-"sys__id__doublet_8h.html":[12,0,1,0,6,66,9]
+"sys__id__doublet_8c_source.html":[12,0,1,0,6,66,8]
 };
