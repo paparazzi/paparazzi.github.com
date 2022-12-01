@@ -138,7 +138,7 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="px4__flash_8c.html">modules/px4_flash/px4_flash.c</a></li>
-<li><a class="el" href="stm32_2usb__ser__hw_8c.html">arch/stm32/usb_ser_hw.c</a></li>
+<li>arch dependent: ./usb_ser_hw.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__px4_flash"></a>
 Raw px4_flash.xml file:</h2>
@@ -161,7 +161,7 @@ Raw px4_flash.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;px4flash_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;px4_flash.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_ser_hw.c&quot;</span>  <span class="keyword">dir</span>=<span class="stringliteral">&quot;arch/stm32&quot;</span>/&gt;        </div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_ser_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;.&quot;</span>/&gt;      </div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PX4IO_UART&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;uart6&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PX4IO_BAUD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;B1500000&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(PX4IO_UART_UPPER)&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifdef INTERMCU_PORT&quot;</span>/&gt;</div>
@@ -183,7 +183,7 @@ Raw px4_flash.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 20:55:47 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 1 2022 08:30:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

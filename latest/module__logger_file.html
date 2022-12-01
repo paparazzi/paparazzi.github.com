@@ -93,21 +93,21 @@ $(document).ready(function(){initNavTree('module__logger_file.html',''); initRes
 <h1><a class="anchor" id="module_load_example__logger_file"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_file&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;FILE_LOGGER_PATH&quot; value=&quot;/data/video/usb&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;FILE_LOGGER_FREQUENCY&quot; value=&quot;PERIODIC_FREQUENCY&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;LOGGER_FILE_PATH&quot; value=&quot;/data/video/usb&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;LOGGER_FILE_FREQUENCY&quot; value=&quot;PERIODIC_FREQUENCY&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__logger_file"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
-<li><b>name:</b> <code>FILE_LOGGER_FREQUENCY</code> <b>value:</b> <em>PERIODIC_FREQUENCY</em> <br  />
+<li><b>name:</b> <code>LOGGER_FILE_FREQUENCY</code> <b>value:</b> <em>PERIODIC_FREQUENCY</em> <br  />
  Description: frequency of logging, defaults to PERIODIC_FREQUENCY.</li>
 </ul>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>FILE_LOGGER_PATH</code> <b>value:</b> <em>/data/video/usb</em> <br  />
+<li><b>name:</b> <code>LOGGER_FILE_PATH</code> <b>value:</b> <em>/data/video/usb</em> <br  />
  Description: path where csv file is saved.</li>
 </ul>
 <h1><a class="anchor" id="functions__logger_file"></a>
@@ -116,13 +116,13 @@ Module functions</h1>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="file__logger_8c.html#a0a108be83e6a060666234d7b46a36907" title="Log the values to a csv file">file_logger_periodic()</a><ul>
-<li>Frequency in Hz: <em>FILE_LOGGER_FREQUENCY</em> </li>
+<li><a class="el" href="logger__file_8c.html#a61d6da065f21ff3b0317135f1f4d5367" title="Log the values to a csv file">logger_file_periodic()</a><ul>
+<li>Frequency in Hz: <em>LOGGER_FILE_FREQUENCY</em> </li>
 <li>Autorun: <em>FALSE</em> <br  />
  Periodic function is started by user command.</li>
-<li>Start function: <a class="el" href="file__logger_8c.html#a8b966ef778bb5d676021e1c925540e5f" title="Start the file logger and open a new file.">file_logger_start()</a><br  />
+<li>Start function: <a class="el" href="logger__file_8c.html#ac15c2262d562fe07b457e6b7cc00d6ca" title="Start the file logger and open a new file.">logger_file_start()</a><br  />
  Executed before the periodic function starts.</li>
-<li>Stop function: <a class="el" href="file__logger_8c.html#acee92eb5d6ecc42e2da631d10303330a" title="Stop the logger an nicely close the file.">file_logger_stop()</a><br  />
+<li>Stop function: <a class="el" href="logger__file_8c.html#a43fc7cc11653aeca3ffbc6a22a383eb0" title="Stop the logger an nicely close the file.">logger_file_stop()</a><br  />
  Executed after the periodic function stops.</li>
 </ul>
 </li>
@@ -133,12 +133,12 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="file__logger_8h.html">file_logger.h</a></li>
+<li><a class="el" href="logger__file_8h.html">logger_file.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="file__logger_8c.html">modules/loggers/file_logger.c</a></li>
+<li><a class="el" href="logger__file_8c.html">modules/loggers/logger_file.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__logger_file"></a>
 Raw logger_file.xml file:</h2>
@@ -150,18 +150,18 @@ Raw logger_file.xml file:</h2>
 <div class="line">      <span class="keyword">Logs</span> <span class="keyword">to</span> <span class="keyword">a</span> <span class="keyword">csv</span> <span class="keyword">file.</span></div>
 <div class="line">      (<span class="keyword">only</span> <span class="keyword">for</span> <span class="keyword">linux</span>)</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILE_LOGGER_PATH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;/data/video/usb&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;path where csv file is saved.&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILE_LOGGER_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;frequency of logging, defaults to PERIODIC_FREQUENCY.&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOGGER_FILE_PATH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;/data/video/usb&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;path where csv file is saved.&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOGGER_FILE_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;frequency of logging, defaults to PERIODIC_FREQUENCY.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file_logger.h&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_file.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;file_logger_periodic()&quot;</span> <span class="keyword">start</span>=<span class="stringliteral">&quot;file_logger_start()&quot;</span></div>
-<div class="line">        <span class="keyword">stop</span>=<span class="stringliteral">&quot;file_logger_stop()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;FILE_LOGGER_FREQUENCY&quot;</span> /&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;logger_file_periodic()&quot;</span> <span class="keyword">start</span>=<span class="stringliteral">&quot;logger_file_start()&quot;</span></div>
+<div class="line">        <span class="keyword">stop</span>=<span class="stringliteral">&quot;logger_file_stop()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;LOGGER_FILE_FREQUENCY&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file_logger.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILE_LOGGER_FREQUENCY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILE_LOGGER_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(FILE_LOGGER_FREQUENCY)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;logger_file.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOGGER_FILE_FREQUENCY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOGGER_FILE_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(LOGGER_FILE_FREQUENCY)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -171,7 +171,7 @@ Raw logger_file.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 20:55:46 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 1 2022 08:30:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

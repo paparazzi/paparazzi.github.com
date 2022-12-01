@@ -268,359 +268,356 @@ $(document).ready(function(){initNavTree('chibios_2usb__ser__hw_8c_source.html',
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> * Vendor string.</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vcom_string1[] = {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  USB_DESC_BYTE(38),                    <span class="comment">/* bLength.                         */</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  USB_DESC_BYTE(28),                    <span class="comment">/* bLength.                         */</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  USB_DESC_BYTE(USB_DESCRIPTOR_STRING), <span class="comment">/* bDescriptorType.                 */</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="charliteral">&#39;S&#39;</span>, 0, <span class="charliteral">&#39;T&#39;</span>, 0, <span class="charliteral">&#39;M&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0, <span class="charliteral">&#39;c&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;o&#39;</span>, 0, <span class="charliteral">&#39;e&#39;</span>, 0,</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="charliteral">&#39;l&#39;</span>, 0, <span class="charliteral">&#39;e&#39;</span>, 0, <span class="charliteral">&#39;c&#39;</span>, 0, <span class="charliteral">&#39;t&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;o&#39;</span>, 0, <span class="charliteral">&#39;n&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0,</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="charliteral">&#39;c&#39;</span>, 0, <span class="charliteral">&#39;s&#39;</span>, 0</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> * Device Description string.</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vcom_string2[] = {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  USB_DESC_BYTE(56),                    <span class="comment">/* bLength.                         */</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  USB_DESC_BYTE(USB_DESCRIPTOR_STRING), <span class="comment">/* bDescriptorType.                 */</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="charliteral">&#39;C&#39;</span>, 0, <span class="charliteral">&#39;h&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0, <span class="charliteral">&#39;b&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0, <span class="charliteral">&#39;O&#39;</span>, 0, <span class="charliteral">&#39;S&#39;</span>, 0, <span class="charliteral">&#39;/&#39;</span>, 0,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="charliteral">&#39;R&#39;</span>, 0, <span class="charliteral">&#39;T&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;V&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;t&#39;</span>, 0, <span class="charliteral">&#39;u&#39;</span>, 0,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="charliteral">&#39;a&#39;</span>, 0, <span class="charliteral">&#39;l&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;C&#39;</span>, 0, <span class="charliteral">&#39;O&#39;</span>, 0, <span class="charliteral">&#39;M&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;P&#39;</span>, 0,</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="charliteral">&#39;o&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;t&#39;</span>, 0</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> * Serial Number string.</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vcom_string3[] = {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  USB_DESC_BYTE(8),                     <span class="comment">/* bLength.                         */</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  USB_DESC_BYTE(USB_DESCRIPTOR_STRING), <span class="comment">/* bDescriptorType.                 */</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_MAJOR, 0,</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_MINOR, 0,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_PATCH, 0</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;};</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> * Strings wrappers array.</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBDescriptor vcom_strings[] = {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {<span class="keyword">sizeof</span> vcom_string0, vcom_string0},</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  {<span class="keyword">sizeof</span> vcom_string1, vcom_string1},</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  {<span class="keyword">sizeof</span> vcom_string2, vcom_string2},</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  {<span class="keyword">sizeof</span> vcom_string3, vcom_string3}</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="charliteral">&#39;P&#39;</span>, 0, <span class="charliteral">&#39;a&#39;</span>, 0, <span class="charliteral">&#39;p&#39;</span>, 0, <span class="charliteral">&#39;a&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;a&#39;</span>, 0, <span class="charliteral">&#39;z&#39;</span>, 0, <span class="charliteral">&#39;z&#39;</span>, 0,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="charliteral">&#39;i&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;U&#39;</span>, 0, <span class="charliteral">&#39;A&#39;</span>, 0, <span class="charliteral">&#39;V&#39;</span>, 0</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> * Device Description string.</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vcom_string2[] = {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  USB_DESC_BYTE(34),                    <span class="comment">/* bLength.                         */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  USB_DESC_BYTE(USB_DESCRIPTOR_STRING), <span class="comment">/* bDescriptorType.                 */</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="charliteral">&#39;C&#39;</span>, 0, <span class="charliteral">&#39;D&#39;</span>, 0, <span class="charliteral">&#39;C&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;S&#39;</span>, 0, <span class="charliteral">&#39;e&#39;</span>, 0, <span class="charliteral">&#39;r&#39;</span>, 0, <span class="charliteral">&#39;i&#39;</span>, 0,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="charliteral">&#39;a&#39;</span>, 0, <span class="charliteral">&#39;l&#39;</span>, 0, <span class="charliteral">&#39; &#39;</span>, 0, <span class="charliteral">&#39;S&#39;</span>, 0, <span class="charliteral">&#39;T&#39;</span>, 0, <span class="charliteral">&#39;M&#39;</span>, 0, <span class="charliteral">&#39;3&#39;</span>, 0, <span class="charliteral">&#39;2&#39;</span>, 0</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> * Serial Number string.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> vcom_string3[] = {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  USB_DESC_BYTE(8),                     <span class="comment">/* bLength.                         */</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  USB_DESC_BYTE(USB_DESCRIPTOR_STRING), <span class="comment">/* bDescriptorType.                 */</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_MAJOR, 0,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_MINOR, 0,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="charliteral">&#39;0&#39;</span> + CH_KERNEL_PATCH, 0</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> * Strings wrappers array.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBDescriptor vcom_strings[] = {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  {<span class="keyword">sizeof</span> vcom_string0, vcom_string0},</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  {<span class="keyword">sizeof</span> vcom_string1, vcom_string1},</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  {<span class="keyword">sizeof</span> vcom_string2, vcom_string2},</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {<span class="keyword">sizeof</span> vcom_string3, vcom_string3}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;};</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword">static</span> SerialUSBDriver SDU;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">static</span> SerialUSBDriver SDU;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"> * Handles the GET_DESCRIPTOR callback. All required descriptors must be</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"> * handled here.</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBDescriptor *get_descriptor(USBDriver *usbp,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dtype,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dindex,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> lang) {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  (void)usbp;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  (void)lang;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">switch</span> (dtype) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_DEVICE:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">return</span> &amp;vcom_device_descriptor;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_CONFIGURATION:</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> &amp;vcom_configuration_descriptor;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_STRING:</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (dindex &lt; 4)</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordflow">return</span> &amp;vcom_strings[dindex];</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">static</span> USBInEndpointState ep1instate;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">static</span> USBOutEndpointState ep1outstate;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBEndpointConfig ep1config = {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  USB_EP_MODE_TYPE_BULK,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  NULL,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  sduDataTransmitted,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  sduDataReceived,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  0x0040,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  0x0040,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  &amp;ep1instate,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  &amp;ep1outstate,</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  2,</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  NULL</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;};</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">static</span> USBInEndpointState ep2instate;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBEndpointConfig ep2config = {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  USB_EP_MODE_TYPE_INTR,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  NULL,</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  sduInterruptTransmitted,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  NULL,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  0x0010,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  0x0000,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  &amp;ep2instate,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  NULL,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  1,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  NULL</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;};</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"> * Handles the USB driver global events.</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> usb_event(USBDriver *usbp, usbevent_t event) {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">switch</span> (event) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_RESET:</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_ADDRESS:</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_CONFIGURED:</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    chSysLockFromISR();</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">/* Enables the endpoints specified into the configuration.</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">       Note, this callback is invoked from an ISR so I-Class functions</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">       must be used.*/</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    usbInitEndpointI(usbp, USBD1_DATA_REQUEST_EP, &amp;ep1config);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    usbInitEndpointI(usbp, USBD1_INTERRUPT_REQUEST_EP, &amp;ep2config);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"> * Handles the GET_DESCRIPTOR callback. All required descriptors must be</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"> * handled here.</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBDescriptor *get_descriptor(USBDriver *usbp,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dtype,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dindex,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                           <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> lang) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  (void)usbp;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  (void)lang;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">switch</span> (dtype) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_DEVICE:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">return</span> &amp;vcom_device_descriptor;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_CONFIGURATION:</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> &amp;vcom_configuration_descriptor;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">case</span> USB_DESCRIPTOR_STRING:</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (dindex &lt; 4)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordflow">return</span> &amp;vcom_strings[dindex];</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">static</span> USBInEndpointState ep1instate;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">static</span> USBOutEndpointState ep1outstate;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBEndpointConfig ep1config = {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  USB_EP_MODE_TYPE_BULK,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  NULL,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  sduDataTransmitted,</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  sduDataReceived,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  0x0040,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  0x0040,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  &amp;ep1instate,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  &amp;ep1outstate,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  2,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  NULL</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">static</span> USBInEndpointState ep2instate;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBEndpointConfig ep2config = {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  USB_EP_MODE_TYPE_INTR,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  NULL,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  sduInterruptTransmitted,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  NULL,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  0x0010,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  0x0000,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  &amp;ep2instate,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  NULL,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  1,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  NULL</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;};</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment"> * Handles the USB driver global events.</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> usb_event(USBDriver *usbp, usbevent_t event) {</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordflow">switch</span> (event) {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_RESET:</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_ADDRESS:</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_CONFIGURED:</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    chSysLockFromISR();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">/* Enables the endpoints specified into the configuration.</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">       Note, this callback is invoked from an ISR so I-Class functions</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">       must be used.*/</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    usbInitEndpointI(usbp, USBD1_DATA_REQUEST_EP, &amp;ep1config);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    usbInitEndpointI(usbp, USBD1_INTERRUPT_REQUEST_EP, &amp;ep2config);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">/* Resetting the state of the CDC subsystem.*/</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    sduConfigureHookI(&amp;SDU);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">/* Resetting the state of the CDC subsystem.*/</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    sduConfigureHookI(&amp;SDU);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    chSysUnlockFromISR();</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_UNCONFIGURED:</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_SUSPEND:</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    chSysLockFromISR();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    chSysUnlockFromISR();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_UNCONFIGURED:</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_SUSPEND:</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    chSysLockFromISR();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">/* Disconnection event on suspend.*/</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    sduSuspendHookI(&amp;SDU);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">/* Disconnection event on suspend.*/</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    sduSuspendHookI(&amp;SDU);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    chSysUnlockFromISR();</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; <span class="keywordflow">case</span> USB_EVENT_WAKEUP:</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_STALLED:</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"> * Handles the USB driver global events.</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> sof_handler(USBDriver *usbp)</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  (void)usbp;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  chSysLockFromISR();</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  sduSOFHookI(&amp;SDU);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  chSysUnlockFromISR();</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment"> * Serial over USB driver configuration.</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBConfig usbcfg = {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  usb_event,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  get_descriptor,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  sduRequestsHook,</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  sof_handler</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;};</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">static</span> SerialUSBConfig serusbcfg ;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;USBDriver *usbGetDriver (<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">return</span> serusbcfg.usbp;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keywordtype">bool</span> isUsbConnected(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;{</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasEverReceive = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#if (CH_KERNEL_MAJOR &lt;= 3)</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordflow">if</span> (inputAvailEL.el_listener == NULL)</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordflow">if</span> (inputAvailEL.listener == NULL)</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>; </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">if</span> (hasEverReceive) </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> ((hasEverReceive = chEvtGetAndClearFlags(&amp;inputAvailEL)) != 0);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    chSysUnlockFromISR();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; <span class="keywordflow">case</span> USB_EVENT_WAKEUP:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">case</span> USB_EVENT_STALLED:</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment"> * Handles the USB driver global events.</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> sof_handler(USBDriver *usbp)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  (void)usbp;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  chSysLockFromISR();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  sduSOFHookI(&amp;SDU);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  chSysUnlockFromISR();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"> * Serial over USB driver configuration.</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> USBConfig usbcfg = {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  usb_event,</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  get_descriptor,</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  sduRequestsHook,</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  sof_handler</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;};</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">static</span> SerialUSBConfig serusbcfg ;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;USBDriver *usbGetDriver (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordflow">return</span> serusbcfg.usbp;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keywordtype">bool</span> isUsbConnected(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasEverReceive = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#if (CH_KERNEL_MAJOR &lt;= 3)</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordflow">if</span> (inputAvailEL.el_listener == NULL)</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordflow">if</span> (inputAvailEL.listener == NULL)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordflow">if</span> (hasEverReceive) </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> ((hasEverReceive = chEvtGetAndClearFlags(&amp;inputAvailEL)) != 0);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keywordtype">void</span> usbSerialReset(SerialUSBDriver *sdu) </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;{</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  usbStop(serusbcfg.usbp);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  sduStop (sdu);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  chThdSleepMilliseconds(10);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  sduStart(sdu, &amp;serusbcfg);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  chThdSleepMilliseconds(900);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  usbStart(serusbcfg.usbp, &amp;usbcfg);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  usbConnectBus(serusbcfg.usbp);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment"> * For USB telemetry &amp; generic device API</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">// Periph with generic device API</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keyword">struct </span><a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">// Functions for the generic device API</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_serial_check_free_space</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                       <span class="keywordtype">long</span> *<a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                       <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordflow">return</span> len;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_serial_transmit</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                                <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="keywordtype">byte</span>)</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;{</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  streamPut(&amp;SDU, <span class="keywordtype">byte</span>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_serial_transmit_buffer</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;                                       <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                       <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  streamWrite(&amp;SDU, data, len);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;}</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_serial_send</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)), <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)))</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  <span class="comment">// TODO</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;}</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;{</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="comment">// some bytes in the buffer</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes &gt; 0) {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  }</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> write_idx = (<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx + <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes) % <a class="code" href="usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e">USB_RX_BUFFER_SIZE</a>;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="comment">// no bytes in the buffer, try to get one</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  msg_t res = ibqGetTimeout(&amp;SDU.ibqueue, TIME_IMMEDIATE);</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="keywordflow">if</span>(res &gt;= 0) {</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="comment">// got a byte. put it in the buffer.</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_buf[write_idx] = (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) res;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes++;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="comment">// timeout or queue suspended. No data available.</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  }</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;}</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;{</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes &gt; 0) {</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ret = <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_buf[<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx];</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx = (<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx + 1) % <a class="code" href="usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e">USB_RX_BUFFER_SIZE</a>;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes--;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="comment">// blocking get</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">return</span> streamGet(&amp;SDU);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  }</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keywordtype">void</span> usbSerialReset(SerialUSBDriver *sdu) </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;{</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  usbStop(serusbcfg.usbp);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  sduStop (sdu);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  chThdSleepMilliseconds(10);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  sduStart(sdu, &amp;serusbcfg);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  chThdSleepMilliseconds(900);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  usbStart(serusbcfg.usbp, &amp;usbcfg);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  usbConnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"> * For USB telemetry &amp; generic device API</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">// Periph with generic device API</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keyword">struct </span><a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">// Functions for the generic device API</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_serial_check_free_space</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                       <span class="keywordtype">long</span> *<a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                       <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keywordflow">return</span> len;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_serial_transmit</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                                <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;                                <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="keywordtype">byte</span>)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  streamPut(&amp;SDU, <span class="keywordtype">byte</span>);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_serial_transmit_buffer</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                       <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)),</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                       <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;{</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  streamWrite(&amp;SDU, data, len);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_serial_send</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)), <span class="keywordtype">long</span> <a class="code" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a> __attribute__((unused)))</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">// TODO</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="comment">// some bytes in the buffer</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes &gt; 0) {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  }</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> write_idx = (<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx + <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes) % <a class="code" href="usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e">USB_RX_BUFFER_SIZE</a>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="comment">// no bytes in the buffer, try to get one</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  msg_t res = ibqGetTimeout(&amp;SDU.ibqueue, TIME_IMMEDIATE);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">if</span>(res &gt;= 0) {</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="comment">// got a byte. put it in the buffer.</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_buf[write_idx] = (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) res;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes++;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="comment">// timeout or queue suspended. No data available.</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  }</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;}</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keyword">static</span> <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>(<span class="keyword">struct</span> <a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;{</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes &gt; 0) {</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ret = <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_buf[<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx];</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx = (<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;rx_read_idx + 1) % <a class="code" href="usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e">USB_RX_BUFFER_SIZE</a>;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>-&gt;nb_bytes--;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// blocking get</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">return</span> streamGet(&amp;SDU);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  }</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment"> * usb init</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a>() </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;{</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  serusbcfg.usbp = &amp;SERIAL_USB;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  serusbcfg.bulk_in = USBD1_DATA_REQUEST_EP;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  serusbcfg.bulk_out = USBD1_DATA_AVAILABLE_EP;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  serusbcfg.int_in = USBD1_INTERRUPT_REQUEST_EP;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment"> * usb init</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a>() </div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;{</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  serusbcfg.usbp = &amp;SERIAL_USB;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  serusbcfg.bulk_in = USBD1_DATA_REQUEST_EP;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  serusbcfg.bulk_out = USBD1_DATA_AVAILABLE_EP;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  serusbcfg.int_in = USBD1_INTERRUPT_REQUEST_EP;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  sduObjectInit(&amp;SDU);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  sduStart(&amp;SDU, &amp;serusbcfg);</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  sduObjectInit(&amp;SDU);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  sduStart(&amp;SDU, &amp;serusbcfg);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  chThdSleepMilliseconds(1000);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  usbStart(serusbcfg.usbp, &amp;usbcfg);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  usbConnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  usbDisconnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  chThdSleepMilliseconds(1000);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  usbStart(serusbcfg.usbp, &amp;usbcfg);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  usbConnectBus(serusbcfg.usbp);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  chEvtRegisterMask(chnGetEventSource(&amp;SDU), &amp;inputAvailEL, CHN_INPUT_AVAILABLE);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  chEvtRegisterMask(chnGetEventSource(&amp;SDU), &amp;inputAvailEL, CHN_INPUT_AVAILABLE);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#ac892b8a5e844e5ada0baee4f63325b06">nb_bytes</a> = 0;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a232e0a48a72bd60ce99340a53e6649ca">rx_read_idx</a> = 0;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#abc4b3966cd1b8b89dd3ca75c431ec850">reg_addr</a> = &amp;SDU;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">// Configure generic device</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.periph = (<span class="keywordtype">void</span> *)(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.check_free_space = (check_free_space_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_serial_check_free_space</a>;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.put_byte = (put_byte_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_serial_transmit</a>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.put_buffer = (put_buffer_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_serial_transmit_buffer</a>;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.send_message = (send_message_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_serial_send</a>;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.char_available = (char_available_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.get_byte = (get_byte_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#ac892b8a5e844e5ada0baee4f63325b06">nb_bytes</a> = 0;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a232e0a48a72bd60ce99340a53e6649ca">rx_read_idx</a> = 0;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#abc4b3966cd1b8b89dd3ca75c431ec850">reg_addr</a> = &amp;SDU;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="comment">// Configure generic device</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.periph = (<span class="keywordtype">void</span> *)(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.check_free_space = (check_free_space_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4">usb_serial_check_free_space</a>;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.put_byte = (put_byte_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360">usb_serial_transmit</a>;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.put_buffer = (put_buffer_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f">usb_serial_transmit_buffer</a>;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.send_message = (send_message_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36">usb_serial_send</a>;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.char_available = (char_available_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>.<a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">device</a>.get_byte = (get_byte_t) <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;}</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="stm32_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>(<span class="keywordtype">int</span> c) {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="keywordflow">if</span>(!isUsbConnected()) {</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  }</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  streamPut(&amp;SDU, c);</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">return</span> c;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  </div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="stm32_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a>(<span class="keywordtype">int</span> ofs __attribute__((unused))) {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="comment">// Dummy implementation</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a>(<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len __attribute__((unused))) {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;}</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="keywordtype">void</span> <a class="code" href="usb__serial_8h.html#a284d5c98bc74fad4e34a70b16963f811">VCOM_set_linecoding</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> __attribute__((unused))) {}</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="keywordtype">void</span> <a class="code" href="usb__serial_8h.html#abaca416be34281b2bfb22ac501e673d9">VCOM_allow_linecoding</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> __attribute__((unused))) {}</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b">VCOM_send_message</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="stm32_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>(<span class="keywordtype">int</span> c) {</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <span class="keywordflow">if</span>(!isUsbConnected()) {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  }</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  streamPut(&amp;SDU, c);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  </div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;}</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="stm32_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b">usb_serial_getch</a>(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;}</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63">VCOM_peekchar</a>(<span class="keywordtype">int</span> ofs __attribute__((unused))) {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="comment">// Dummy implementation</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946">VCOM_check_free_space</a>(<a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len __attribute__((unused))) {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;}</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="keywordtype">int</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db">VCOM_check_available</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1">usb_serial_char_available</a>(&amp;<a class="code" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;}</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keywordtype">void</span> <a class="code" href="usb__serial_8h.html#a284d5c98bc74fad4e34a70b16963f811">VCOM_set_linecoding</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> __attribute__((unused))) {}</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160; </div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="keywordtype">void</span> <a class="code" href="usb__serial_8h.html#abaca416be34281b2bfb22ac501e673d9">VCOM_allow_linecoding</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> __attribute__((unused))) {}</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b">VCOM_send_message</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="keywordtype">void</span> <a class="code" href="stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="preprocessor">#endif // HAL_USE_SERIAL_USB</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="preprocessor">#endif // HAL_USE_SERIAL_USB</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
@@ -658,7 +655,7 @@ $(document).ready(function(){initNavTree('chibios_2usb__ser__hw_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="chibios_2usb__ser__hw_8c.html">usb_ser_hw.c</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 20:55:32 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Dec 1 2022 08:29:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
