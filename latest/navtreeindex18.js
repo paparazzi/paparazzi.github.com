@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__beta_8____unnamed____":[12,0,1,0,1,2,0,0,11,22],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h_8____unnamed____":[12,0,1,0,1,2,0,0,11,18],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__h__inv_8____unnamed____":[12,0,1,0,1,2,0,0,11,20],
 "avi__isp__green__imbalance_8h.html#structavi__isp__green__imbalance__cell__id__x__y_8____unnamed____":[12,0,1,0,1,2,0,0,11,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__max__nb__windows_8____unnamed____":[12,0,1,0,1,2,0,0,15,24],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__measure__req_8____unnamed____":[12,0,1,0,1,2,0,0,15,13],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__regs":[12,0,1,0,1,2,0,0,15,12],
-"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed____":[12,0,1,0,1,2,0,0,15,22],
-"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__window__x_8____unnamed____":[12,0,1,0,1,2,0,0,15,14]
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__sat__threshold_8____unnamed____":[12,0,1,0,1,2,0,0,15,22]
 };

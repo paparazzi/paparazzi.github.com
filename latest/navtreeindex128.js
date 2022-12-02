@@ -1,5 +1,16 @@
 var NAVTREEINDEX128 =
 {
+"module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw":[1,384,2],
+"module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,384,0],
+"module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,384,2,0],
+"module__stabilization_float_euler.html":[1,385],
+"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,385,1],
+"module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,385,2],
+"module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,385,0],
+"module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,385,2,0],
+"module__stabilization_float_quat.html":[1,386],
+"module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,386,1],
+"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,386,2],
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,386,0],
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,386,2,0],
 "module__stabilization_heli_indi.html":[1,387],
@@ -238,16 +249,5 @@ var NAVTREEINDEX128 =
 "module__tlsf.html#module_load_example__tlsf":[1,453,0],
 "module__tlsf.html#module_xml__tlsf":[1,453,2,0],
 "module__traffic_info.html":[1,287],
-"module__traffic_info.html#datalink_functions__traffic_info":[1,287,2],
-"module__traffic_info.html#functions__traffic_info":[1,287,1],
-"module__traffic_info.html#module_load_example__traffic_info":[1,287,0],
-"module__traffic_info.html#module_xml__traffic_info":[1,287,2,0],
-"module__trig_test.html":[1,81],
-"module__trig_test.html#functions__trig_test":[1,81,1],
-"module__trig_test.html#module_load_example__trig_test":[1,81,0],
-"module__trig_test.html#module_xml__trig_test":[1,81,1,0],
-"module__tune_airspeed.html":[1,320],
-"module__tune_airspeed.html#configuration__tune_airspeed":[1,320,1],
-"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,320,0],
-"module__tune_airspeed.html#module_xml__tune_airspeed":[1,320,1,0]
+"module__traffic_info.html#datalink_functions__traffic_info":[1,287,2]
 };

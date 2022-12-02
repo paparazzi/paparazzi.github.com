@@ -1,5 +1,16 @@
 var NAVTREEINDEX122 =
 {
+"module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,362,2,0],
+"module__baro_sim.html":[1,363],
+"module__baro_sim.html#functions__baro_sim":[1,363,1],
+"module__baro_sim.html#module_load_example__baro_sim":[1,363,0],
+"module__baro_sim.html#module_xml__baro_sim":[1,363,1,0],
+"module__bat_checker.html":[1,126],
+"module__bat_checker.html#configuration__bat_checker":[1,126,1],
+"module__bat_checker.html#functions__bat_checker":[1,126,2],
+"module__bat_checker.html#module_load_example__bat_checker":[1,126,0],
+"module__bat_checker.html#module_xml__bat_checker":[1,126,2,0],
+"module__bat_voltage_ardrone2.html":[1,364],
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,364,1],
 "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,364,0],
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,364,1,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX122 =
 "module__digital_cam_video.html#module_load_example__digital_cam_video":[1,123,0],
 "module__digital_cam_video.html#module_xml__digital_cam_video":[1,123,2,0],
 "module__direct_memory_logger.html":[1,230],
-"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,230,1],
-"module__direct_memory_logger.html#functions__direct_memory_logger":[1,230,2],
-"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,230,0],
-"module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,230,2,0],
-"module__distributed_circular_formation.html":[1,418],
-"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,418,1],
-"module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,418,3],
-"module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,418,2],
-"module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,418,0],
-"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,418,3,0],
-"module__dragspeed.html":[1,419],
-"module__dragspeed.html#autotoc_md7":[0]
+"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,230,1]
 };

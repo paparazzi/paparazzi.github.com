@@ -1,6 +1,9 @@
 var guidance__indi__hybrid_8c =
 [
     [ "GUIDANCE_INDI_FILTER_CUTOFF", "guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b", null ],
+    [ "GUIDANCE_INDI_LIFTD_ASQ", "guidance__indi__hybrid_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8", null ],
+    [ "GUIDANCE_INDI_LIFTD_P50", "guidance__indi__hybrid_8c.html#a945db3508eec97c51c7260e0c55da1ef", null ],
+    [ "GUIDANCE_INDI_LIFTD_P80", "guidance__indi__hybrid_8c.html#af4ea2de4c5c630e5de071877aeff1e07", null ],
     [ "GUIDANCE_INDI_MAX_PITCH", "guidance__indi__hybrid_8c.html#a59489af898bc65644abb6ed6dd33a757", null ],
     [ "GUIDANCE_INDI_MIN_PITCH", "guidance__indi__hybrid_8c.html#a64e3decdab99fca06278c4d76ac8111b", null ],
     [ "GUIDANCE_INDI_NAV_SPEED_MARGIN", "guidance__indi__hybrid_8c.html#a2a6d3f7b2b3fc5097b83847cb9500027", null ],
@@ -9,6 +12,7 @@ var guidance__indi__hybrid_8c =
     [ "GUIDANCE_INDI_POS_GAINZ", "guidance__indi__hybrid_8c.html#ad6f52208c55c4a6966691272b84887c0", null ],
     [ "GUIDANCE_INDI_SPEED_GAIN", "guidance__indi__hybrid_8c.html#af97bf00bfb251541ea611bac98d9f92f", null ],
     [ "GUIDANCE_INDI_SPEED_GAINZ", "guidance__indi__hybrid_8c.html#a1dd904caf75df70108fbf333279f5ee6", null ],
+    [ "GUIDANCE_INDI_VEL_SP_ID", "guidance__indi__hybrid_8c.html#aeaa349592d6471628d81841525be1844", null ],
     [ "GUIDANCE_INDI_ZERO_AIRSPEED", "guidance__indi__hybrid_8c.html#a5368b856c0b7a334eaed1d9ba0d0a2f1", null ],
     [ "MAX_DECELERATION", "guidance__indi__hybrid_8c.html#a02fa83ca0d6013b25e7f577f5e13d4d8", null ],
     [ "NAV_MAX_SPEED", "guidance__indi__hybrid_8c.html#ae6686e7bfe6768f1d68ef806d4305ecb", null ],
@@ -23,6 +27,7 @@ var guidance__indi__hybrid_8c =
     [ "nav_get_speed_sp_from_go", "guidance__indi__hybrid_8c.html#acc610b7246ea6f3650c33f5af6e26936", null ],
     [ "nav_get_speed_sp_from_line", "guidance__indi__hybrid_8c.html#a6117d661bfabf4f6d7bf38ac50e95953", null ],
     [ "send_guidance_indi_hybrid", "guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70", null ],
+    [ "vel_sp_cb", "guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8", null ],
     [ "accely_filt", "guidance__indi__hybrid_8c.html#a104f167cc747937fb6f4d23e445148f2", null ],
     [ "desired_airspeed", "guidance__indi__hybrid_8c.html#afe53f56d0e04394c4cbe6046ea0f9769", null ],
     [ "euler_cmd", "guidance__indi__hybrid_8c.html#abbf0d721f775293cc953c71dc69be5b7", null ],
@@ -37,8 +42,8 @@ var guidance__indi__hybrid_8c =
     [ "guidance_indi_line_gain", "guidance__indi__hybrid_8c.html#a12f135490542b03ea2df01144fa426e4", null ],
     [ "guidance_indi_max_airspeed", "guidance__indi__hybrid_8c.html#ada2fc126082d216494a972d8ecff1e30", null ],
     [ "guidance_indi_max_bank", "guidance__indi__hybrid_8c.html#a313939905cd50d33f06f8fb9d6960d10", null ],
+    [ "indi_vel_sp", "guidance__indi__hybrid_8c.html#a074cabc08d481fdda5912c12aab161ea", null ],
     [ "inv_eff", "guidance__indi__hybrid_8c.html#a42197290f1118a038fd793ff538a8dbb", null ],
-    [ "lift_pitch_eff", "guidance__indi__hybrid_8c.html#a85e490052ea8af5799268c5884159bab", null ],
     [ "nav_max_speed", "guidance__indi__hybrid_8c.html#a4b690e8c1727436ef525302049b1e823", null ],
     [ "pitch_filt", "guidance__indi__hybrid_8c.html#a6987b53838cf70902ed70ca11492c6a7", null ],
     [ "roll_filt", "guidance__indi__hybrid_8c.html#a19dc03ef4234ea423340bcc0c249e1cf", null ],
@@ -46,5 +51,7 @@ var guidance__indi__hybrid_8c =
     [ "take_heading_control", "guidance__indi__hybrid_8c.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ],
     [ "thrust_act", "guidance__indi__hybrid_8c.html#a62834fedbe3a96736f5743f6ede8ccbd", null ],
     [ "thrust_filt", "guidance__indi__hybrid_8c.html#af67f625ea892ab734e4e0bfd00abac23", null ],
-    [ "thrust_in", "guidance__indi__hybrid_8c.html#a229063a3d344169961f5d0803de574c0", null ]
+    [ "thrust_in", "guidance__indi__hybrid_8c.html#a229063a3d344169961f5d0803de574c0", null ],
+    [ "time_of_vel_sp", "guidance__indi__hybrid_8c.html#a17cb66c22ecad94f6da8c34538ecb5c7", null ],
+    [ "vel_sp_ev", "guidance__indi__hybrid_8c.html#af56dc6445dd449650ea8d54bc7a1ecc7", null ]
 ];

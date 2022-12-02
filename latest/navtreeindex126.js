@@ -1,5 +1,16 @@
 var NAVTREEINDEX126 =
 {
+"module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct":[1,236,2],
+"module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct":[1,236,0],
+"module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct":[1,236,3,0],
+"module__logger_spi_link.html":[1,237],
+"module__logger_spi_link.html#configuration__logger_spi_link":[1,237,1],
+"module__logger_spi_link.html#functions__logger_spi_link":[1,237,2],
+"module__logger_spi_link.html#module_load_example__logger_spi_link":[1,237,0],
+"module__logger_spi_link.html#module_xml__logger_spi_link":[1,237,2,0],
+"module__logger_uart.html":[1,238],
+"module__logger_uart.html#configuration__logger_uart":[1,238,1],
+"module__logger_uart.html#functions__logger_uart":[1,238,2],
 "module__logger_uart.html#module_load_example__logger_uart":[1,238,0],
 "module__logger_uart.html#module_xml__logger_uart":[1,238,2,0],
 "module__mag_calib_ukf.html":[1,434],
@@ -238,16 +249,5 @@ var NAVTREEINDEX126 =
 "module__opa_controller.html#functions__opa_controller":[1,41,1],
 "module__opa_controller.html#module_load_example__opa_controller":[1,41,0],
 "module__opa_controller.html#module_xml__opa_controller":[1,41,1,0],
-"module__openlog.html":[1,239],
-"module__openlog.html#functions__openlog":[1,239,1],
-"module__openlog.html#module_load_example__openlog":[1,239,0],
-"module__openlog.html#module_xml__openlog":[1,239,1,0],
-"module__optical_flow_hover.html":[1,89],
-"module__optical_flow_hover.html#functions__optical_flow_hover":[1,89,1],
-"module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,89,0],
-"module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,89,1,0],
-"module__optical_flow_landing.html":[1,90],
-"module__optical_flow_landing.html#configuration__optical_flow_landing":[1,90,1],
-"module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,90,0],
-"module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,90,1,0]
+"module__openlog.html":[1,239]
 };

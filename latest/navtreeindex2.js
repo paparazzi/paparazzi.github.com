@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"actuators__esc32_8c.html#ae951efe4ff751720b166f1240380b5da":[12,0,1,0,6,0,8,14],
 "actuators__esc32_8c.html#afd6425e413c12e0db8fb154c960951f7":[12,0,1,0,6,0,8,12],
 "actuators__esc32_8c_source.html":[12,0,1,0,6,0,8],
 "actuators__esc32_8h.html":[12,0,1,0,6,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "actuators__shared__arch_8h.html#a4e9a5ee2811aab2cc7274715310d640d":[12,0,1,0,0,3,1,0,5,7],
 "actuators__shared__arch_8h.html#a53d6198818143ce640add7be0555424f":[12,0,1,0,0,3,1,0,5,2],
 "actuators__shared__arch_8h.html#a5845163f5b2bb32af33d32280b7c40be":[12,0,1,0,0,3,1,0,5,11],
-"actuators__shared__arch_8h.html#a5b20ddacea940b057ec223295fe9b552":[12,0,1,0,0,3,1,0,5,9],
-"actuators__shared__arch_8h.html#a5cca030e9242d74bda94022625298cec":[12,0,1,0,0,3,1,0,5,10]
+"actuators__shared__arch_8h.html#a5b20ddacea940b057ec223295fe9b552":[12,0,1,0,0,3,1,0,5,9]
 };

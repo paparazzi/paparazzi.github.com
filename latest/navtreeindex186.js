@@ -1,5 +1,16 @@
 var NAVTREEINDEX186 =
 {
+"spektrum_8h.html#adb896892bc656665ab82bbb7b8086e2f":[12,0,1,0,6,55,20,0,0],
+"spektrum_8h.html#aeb104958549da0e42a3edcb56790949b":[12,0,1,0,6,55,20,0,5],
+"spektrum_8h.html#aeba71735c6fa0a3d00c6c36d8036fc76":[12,0,1,0,6,55,20,6],
+"spektrum_8h.html#aed1fd2ce0c30684f8bf64f914f390538":[12,0,1,0,6,55,20,0,3],
+"spektrum_8h.html#af991dac26ce4e2a25ad25045fe86e782":[12,0,1,0,6,55,20,9],
+"spektrum_8h.html#afe0095f891267e9e13e4265606e4b200":[12,0,1,0,6,55,20,1,2],
+"spektrum_8h.html#aff8033ce4ec3eca45caafb45d2ba6760":[12,0,1,0,6,55,20,10],
+"spektrum_8h.html#structspektrum__sat__t":[12,0,1,0,6,55,20,0],
+"spektrum_8h.html#structspektrum__t":[12,0,1,0,6,55,20,1],
+"spektrum_8h_source.html":[12,0,1,0,6,55,20],
+"spektrum__arch_8c.html":[12,0,1,0,0,2,1,4,3],
 "spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851":[12,0,1,0,0,2,1,4,3,4],
 "spektrum__arch_8c.html#a58c16366fa7fc51e87cf7c7bbdf54c4a":[12,0,1,0,0,2,1,4,3,1],
 "spektrum__arch_8c.html#a810cf91cfd60192ced1dd83f38bc4abc":[12,0,1,0,0,2,1,4,3,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX186 =
 "stabilization__attitude_8c.html#a2e320928cc3b0072acf2f55d23061c1b":[12,0,1,0,3,1,1,2,12],
 "stabilization__attitude_8c.html#a32ff0f8ef82c3d882051a3b504cb2f51":[12,0,1,0,3,1,1,2,26],
 "stabilization__attitude_8c.html#a36b4caa0eb30ecfb44d54f83ad1ada2a":[12,0,1,0,3,1,1,2,25],
-"stabilization__attitude_8c.html#a370a6d329fd87989f3d112785cd57aad":[12,0,1,0,3,1,1,2,17],
-"stabilization__attitude_8c.html#a39bfec9de0a58ce45667a691fbd44eee":[12,0,1,0,3,1,1,2,18],
-"stabilization__attitude_8c.html#a3a1314c56cb0890cfff183968904f0ce":[12,0,1,0,3,1,1,2,28],
-"stabilization__attitude_8c.html#a56e08c7c847634b91bec39dc929ade80":[12,0,1,0,3,1,1,2,7],
-"stabilization__attitude_8c.html#a5f967bedde5f5b6e5558a25b399dac39":[12,0,1,0,3,1,1,2,20],
-"stabilization__attitude_8c.html#a6221c03ea36102def261884c24cacb69":[12,0,1,0,3,1,1,2,10],
-"stabilization__attitude_8c.html#a660a8c54dd920cc1723ab83d6d5a59e2":[12,0,1,0,3,1,1,2,22],
-"stabilization__attitude_8c.html#a67e08a64f9666dc058d26701cb1c0319":[12,0,1,0,3,1,1,2,11],
-"stabilization__attitude_8c.html#a770980c94665fbd4d6970bff6cb9dff5":[12,0,1,0,3,1,1,2,27],
-"stabilization__attitude_8c.html#a83c0e92b972269e326eb6be18adcf715":[12,0,1,0,3,1,1,2,5],
-"stabilization__attitude_8c.html#a86f0d47644538be1345aab19c7dc3de4":[12,0,1,0,3,1,1,2,3],
-"stabilization__attitude_8c.html#a92f6452c3b367e9ff2bc6180caee2ca3":[12,0,1,0,3,1,1,2,24]
+"stabilization__attitude_8c.html#a370a6d329fd87989f3d112785cd57aad":[12,0,1,0,3,1,1,2,17]
 };

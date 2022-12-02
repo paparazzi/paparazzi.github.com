@@ -123,5 +123,6 @@ var abi__sender__ids_8h =
     [ "VEL_OPTICFLOW_ID", "abi__sender__ids_8h.html#a188ba3cb3d1c77a4c98410bc1dc69c8b", null ],
     [ "VEL_OPTICFLOW_PMW3901_ID", "abi__sender__ids_8h.html#a6cc629fab76dcefa9ddfa398eea0d2d7", null ],
     [ "VEL_PX4FLOW_ID", "abi__sender__ids_8h.html#ae0e23da0e84c6db6de96556368dacae2", null ],
+    [ "VEL_SP_FCR_ID", "abi__sender__ids_8h.html#a488f7380df6b5f08bd6344607f66ddf9", null ],
     [ "VEL_STEREOCAM_ID", "abi__sender__ids_8h.html#aff6fe44212fb356543cca4463819483f", null ]
 ];

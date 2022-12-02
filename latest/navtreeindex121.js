@@ -1,5 +1,16 @@
 var NAVTREEINDEX121 =
 {
+"module__actuators_esc32.html":[1,9],
+"module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
+"module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
+"module__actuators_md25.html":[1,10],
+"module__actuators_md25.html#configuration__actuators_md25":[1,10,1],
+"module__actuators_md25.html#functions__actuators_md25":[1,10,2],
+"module__actuators_md25.html#module_load_example__actuators_md25":[1,10,0],
+"module__actuators_md25.html#module_xml__actuators_md25":[1,10,2,0],
+"module__actuators_nps.html":[1,11],
+"module__actuators_nps.html#module_load_example__actuators_nps":[1,11,0],
+"module__actuators_nps.html#module_xml__actuators_nps":[1,11,0,0],
 "module__actuators_ostrich.html":[1,12],
 "module__actuators_ostrich.html#configuration__actuators_ostrich":[1,12,1],
 "module__actuators_ostrich.html#functions__actuators_ostrich":[1,12,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX121 =
 "module__baro_scp_i2c.html":[1,362],
 "module__baro_scp_i2c.html#configuration__baro_scp_i2c":[1,362,1],
 "module__baro_scp_i2c.html#functions__baro_scp_i2c":[1,362,2],
-"module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,362,0],
-"module__baro_scp_i2c.html#module_xml__baro_scp_i2c":[1,362,2,0],
-"module__baro_sim.html":[1,363],
-"module__baro_sim.html#functions__baro_sim":[1,363,1],
-"module__baro_sim.html#module_load_example__baro_sim":[1,363,0],
-"module__baro_sim.html#module_xml__baro_sim":[1,363,1,0],
-"module__bat_checker.html":[1,126],
-"module__bat_checker.html#configuration__bat_checker":[1,126,1],
-"module__bat_checker.html#functions__bat_checker":[1,126,2],
-"module__bat_checker.html#module_load_example__bat_checker":[1,126,0],
-"module__bat_checker.html#module_xml__bat_checker":[1,126,2,0],
-"module__bat_voltage_ardrone2.html":[1,364]
+"module__baro_scp_i2c.html#module_load_example__baro_scp_i2c":[1,362,0]
 };

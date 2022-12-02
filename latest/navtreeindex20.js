@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"baro__amsys_8c.html#a6ec5d74bdc67c8cd52f7041f3f0eeeba":[12,0,1,0,6,60,24,24],
 "baro__amsys_8c.html#a6f2c97501dcc2d6fc525bbc7bca83646":[12,0,1,0,6,60,24,9],
 "baro__amsys_8c.html#a727e1b60971a67b66633de94a92b0c48":[12,0,1,0,6,60,24,26],
 "baro__amsys_8c.html#a77a4cf249eea45442f8e271df82051ec":[12,0,1,0,6,60,24,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "baro__ms5611__spi_8c.html#a4cd87df09b5c003ea87e593e7be5d80f":[12,0,1,0,6,60,44,13],
 "baro__ms5611__spi_8c.html#aaafe0f52402c0f9545035f4908d7259f":[12,0,1,0,6,60,44,10],
 "baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd":[12,0,1,0,6,60,44,5],
-"baro__ms5611__spi_8c.html#acf4648ad0258e412fdf2241bc4f84a2c":[12,0,1,0,6,60,44,6],
-"baro__ms5611__spi_8c.html#ae2486f554e75685d70b6f119ed483267":[12,0,1,0,6,60,44,11]
+"baro__ms5611__spi_8c.html#acf4648ad0258e412fdf2241bc4f84a2c":[12,0,1,0,6,60,44,6]
 };

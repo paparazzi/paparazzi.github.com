@@ -1,5 +1,16 @@
 var NAVTREEINDEX127 =
 {
+"module__openlog.html#functions__openlog":[1,239,1],
+"module__openlog.html#module_load_example__openlog":[1,239,0],
+"module__openlog.html#module_xml__openlog":[1,239,1,0],
+"module__optical_flow_hover.html":[1,89],
+"module__optical_flow_hover.html#functions__optical_flow_hover":[1,89,1],
+"module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,89,0],
+"module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,89,1,0],
+"module__optical_flow_landing.html":[1,90],
+"module__optical_flow_landing.html#configuration__optical_flow_landing":[1,90,1],
+"module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,90,0],
+"module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,90,1,0],
 "module__optical_flow_mateksys_3901_l0x.html":[1,321],
 "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x":[1,321,1],
 "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x":[1,321,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX127 =
 "module__stabilization_adaptive_fw.html#module_load_example__stabilization_adaptive_fw":[1,383,0],
 "module__stabilization_adaptive_fw.html#module_xml__stabilization_adaptive_fw":[1,383,2,0],
 "module__stabilization_attitude_fw.html":[1,384],
-"module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw":[1,384,1],
-"module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw":[1,384,2],
-"module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,384,0],
-"module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,384,2,0],
-"module__stabilization_float_euler.html":[1,385],
-"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,385,1],
-"module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,385,2],
-"module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,385,0],
-"module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,385,2,0],
-"module__stabilization_float_quat.html":[1,386],
-"module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,386,1],
-"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,386,2]
+"module__stabilization_attitude_fw.html#configuration__stabilization_attitude_fw":[1,384,1]
 };

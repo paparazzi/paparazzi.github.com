@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"chibios_2mcu__periph_2i2c__arch_8h_source.html":[12,0,1,0,0,0,0,8],
 "chibios_2mcu__periph_2pwm__input__arch_8c.html":[12,0,1,0,0,0,0,9],
 "chibios_2mcu__periph_2pwm__input__arch_8c.html#a45920a6a88c45cb2cb798b01306707a2":[12,0,1,0,0,0,0,9,1],
 "chibios_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[12,0,1,0,0,0,0,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "chimera_2chibios_2v1_80_2board_8h.html#a1e5a96e55f7346d0f8e17d32817fe4c7":[12,0,1,0,1,3,0,0,0,37],
 "chimera_2chibios_2v1_80_2board_8h.html#a1ed30438f4fb7a84e66b0de2ad448126":[12,0,1,0,1,3,0,0,0,14],
 "chimera_2chibios_2v1_80_2board_8h.html#a2060c847d23457ccbcb5cd86b0485944":[12,0,1,0,1,3,0,0,0,164],
-"chimera_2chibios_2v1_80_2board_8h.html#a20ec54edfe70b610cb272ff768e34404":[12,0,1,0,1,3,0,0,0,178],
-"chimera_2chibios_2v1_80_2board_8h.html#a21a809de2e843e9836dd251850e6be46":[12,0,1,0,1,3,0,0,0,0]
+"chimera_2chibios_2v1_80_2board_8h.html#a20ec54edfe70b610cb272ff768e34404":[12,0,1,0,1,3,0,0,0,178]
 };
