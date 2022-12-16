@@ -1,26 +1,26 @@
 <map id="autopilot_get_motors_on" name="autopilot_get_motors_on">
 <area shape="rect" id="node1" title="get motors status" alt="" coords="740,391,924,418"/>
 <area shape="rect" id="node2" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="496,5,683,47"/>
-<area shape="rect" id="node4" href="$boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="496,71,683,98"/>
-<area shape="rect" id="node5" href="$actuators__esc32_8h.html#a699563136f20e59e607791d62ac81660" title="Commits the commands and sends them to the ESCs." alt="" coords="497,122,682,149"/>
+<area shape="rect" id="node4" href="$boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="496,71,683,98"/>
+<area shape="rect" id="node5" href="$actuators__esc32_8c.html#a699563136f20e59e607791d62ac81660" title="Commits the commands and sends them to the ESCs." alt="" coords="497,122,682,149"/>
 <area shape="rect" id="node6" href="$rotorcraft_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Autopilot periodic failsafe checks." alt="" coords="521,173,657,215"/>
-<area shape="rect" id="node7" href="$autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY." alt="" coords="520,239,659,266"/>
+<area shape="rect" id="node7" href="$autopilot_8c.html#a1914661233fbbed6c2ee653b99757652" title="AP periodic call." alt="" coords="520,239,659,266"/>
 <area shape="rect" id="node8" href="$hott_2hott_8c.html#ad9ba717e808b0a9d9eabf747ba7abddb" title=" " alt="" coords="503,290,675,317"/>
 <area shape="rect" id="node11" href="$hott__eam_8h.html#a35e5d6a8530dfc81c2402694e03ea334" title=" " alt="" coords="504,341,675,367"/>
 <area shape="rect" id="node13" href="$hott__gam_8h.html#ac14007f36a1aa731606054e52dc3e783" title=" " alt="" coords="504,391,675,418"/>
-<area shape="rect" id="node14" href="$intermcu__ap_8h.html#ae453063ef52eca0ba54eb284d6dfdd17" title="send command vector over intermcu link instead of actuators" alt="" coords="491,442,688,469"/>
+<area shape="rect" id="node14" href="$intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17" title="send command vector over intermcu link instead of actuators" alt="" coords="491,442,688,469"/>
 <area shape="rect" id="node15" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="487,493,692,535"/>
 <area shape="rect" id="node17" href="$nps__autopilot__rotorcraft_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="503,559,676,586"/>
-<area shape="rect" id="node18" href="$sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="515,611,663,652"/>
+<area shape="rect" id="node18" href="$sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="515,611,663,652"/>
 <area shape="rect" id="node19" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="495,677,683,703"/>
-<area shape="rect" id="node20" href="$stabilization__indi__simple_8h.html#abb616d415224721c6dbb6cc648b696c2" title="Does the INDI calculations." alt="" coords="523,728,656,769"/>
-<area shape="rect" id="node24" href="$throttle__curve_8h.html#a543adeeedcc71be82aa23201232c2d66" title="Run the throttle curve and generate the output throttle and pitch This depends on the FMODE(flight mo..." alt="" coords="519,794,660,821"/>
-<area shape="rect" id="node3" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="241,13,439,39"/>
+<area shape="rect" id="node20" href="$stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="523,728,656,769"/>
+<area shape="rect" id="node24" href="$throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314" title="Run the throttle curve and generate the output throttle and pitch This depends on the FMODE(flight mo..." alt="" coords="519,794,660,821"/>
+<area shape="rect" id="node3" href="$boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="241,13,439,39"/>
 <area shape="rect" id="node9" href="$hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="265,290,415,317"/>
-<area shape="rect" id="node10" href="$radio__control_2hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="53,290,145,317"/>
-<area shape="rect" id="node12" href="$hott_2hott_8h.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title=" " alt="" coords="287,366,393,393"/>
-<area shape="rect" id="node16" href="$mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="281,501,399,527"/>
-<area shape="rect" id="node21" href="$stabilization__indi__simple_8h.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title="runs stabilization indi" alt="" coords="273,699,407,740"/>
+<area shape="rect" id="node10" href="$hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="53,290,145,317"/>
+<area shape="rect" id="node12" href="$hott_2hott_8c.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title=" " alt="" coords="287,366,393,393"/>
+<area shape="rect" id="node16" href="$mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="281,501,399,527"/>
+<area shape="rect" id="node21" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="273,699,407,740"/>
 <area shape="rect" id="node23" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="259,765,421,791"/>
 <area shape="rect" id="node22" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="5,706,193,733"/>
 </map>

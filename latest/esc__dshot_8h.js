@@ -23,17 +23,17 @@ var esc__dshot_8h =
       [ "onGoingQry", "esc__dshot_8h.html#a30d0d5d59890cd401ff4ba9aa141d7d7", null ]
     ] ],
     [ "DSHOTDriver", "structDSHOTDriver.html", "structDSHOTDriver" ],
-    [ "DshotTelemetry.__unnamed__", "esc__dshot_8h.html#unionDshotTelemetry_8____unnamed____", [
+    [ "DshotTelemetry.__unnamed2__", "esc__dshot_8h.html#unionDshotTelemetry_8____unnamed2____", [
       [ "rawData", "esc__dshot_8h.html#a64512fd5f5373f5136d41d23a92c10e3", null ]
     ] ],
-    [ "DshotTelemetry.__unnamed__.__unnamed__", "esc__dshot_8h.html#structDshotTelemetry_8____unnamed_____8____unnamed____", [
+    [ "DshotTelemetry.__unnamed2__.__unnamed4__", "esc__dshot_8h.html#structDshotTelemetry_8____unnamed2_____8____unnamed4____", [
       [ "consumption", "esc__dshot_8h.html#ae2d58d16fcceed18505a94c7c864b5eb", null ],
       [ "current", "esc__dshot_8h.html#a43b5c9175984c071f30b873fdce0a000", null ],
       [ "rpm", "esc__dshot_8h.html#a455385f5d8493917cb83541909b7cfa9", null ],
       [ "temp", "esc__dshot_8h.html#a3d801aa532c1cec3ee82d87a99fdf63f", null ],
       [ "voltage", "esc__dshot_8h.html#ae437ba437f4106903e619bb380574954", null ]
     ] ],
-    [ "DshotPacket.__unnamed__", "esc__dshot_8h.html#structDshotPacket_8____unnamed____", [
+    [ "DshotPacket.__unnamed6__", "esc__dshot_8h.html#structDshotPacket_8____unnamed6____", [
       [ "crc", "esc__dshot_8h.html#af5ad59c5401fea3f2df0703d958fdc97", null ],
       [ "telemetryRequest", "esc__dshot_8h.html#a3b15082364031f3525dde2567c8fa5a1", null ],
       [ "throttle", "esc__dshot_8h.html#a1cb60fd54ebe03bbb2d9029f6192641b", null ]

@@ -43,7 +43,6 @@ var libisp_8h =
     [ "AVI_DEFINE_NODE", "libisp_8h.html#a60774f434c3ee76e4e69b1e1c0e5ead3", null ],
     [ "EXPAND_AS_ENUM", "libisp_8h.html#ad337cbf142f664987d730085a31700fe", null ],
     [ "EXPAND_AS_PROTOTYPE", "libisp_8h.html#ade6570385aa26bc1af4ae27bbe05237f", null ],
-    [ "ISP_NODE_NR", "libisp_8h.html#abed82baf7f470b522273a3e37c24c600aefaae75e055095d672aaa23495c16b3f", null ],
     [ "configure_isp", "libisp_8h.html#a1b23f6d5fe4f4e5c8e38944439156f19", null ],
     [ "isp_get_statistics_yuv", "libisp_8h.html#a5421e059846fd80e5f6bf1bd3ae1bb45", null ],
     [ "isp_request_statistics_yuv_window", "libisp_8h.html#aac3aeb2b663a02fd97e27007bbfbb95e", null ]

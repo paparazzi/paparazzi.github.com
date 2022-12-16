@@ -1,18 +1,18 @@
 <map id="sw/airborne/modules/imu/imu_aspirin.c" name="sw/airborne/modules/imu/imu_aspirin.c">
-<area shape="rect" id="node1" title=" " alt="" coords="972,5,1131,47"/>
-<area shape="rect" id="node2" href="$imu__aspirin_8h.html" title=" " alt="" coords="749,95,948,121"/>
-<area shape="rect" id="node4" href="$imu_8h.html" title=" " alt="" coords="401,259,549,285"/>
-<area shape="rect" id="node17" href="$i2c_8h.html" title=" " alt="" coords="818,430,951,457"/>
-<area shape="rect" id="node23" href="$spi_8h.html" title=" " alt="" coords="1447,430,1581,457"/>
-<area shape="rect" id="node33" href="$abi_8h.html" title=" " alt="" coords="1366,95,1513,121"/>
+<area shape="rect" id="node1" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="972,5,1131,47"/>
+<area shape="rect" id="node2" href="$imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="749,95,948,121"/>
+<area shape="rect" id="node4" href="$imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="401,259,549,285"/>
+<area shape="rect" id="node17" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="818,430,951,457"/>
+<area shape="rect" id="node23" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="1447,430,1581,457"/>
+<area shape="rect" id="node33" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1366,95,1513,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="517,341,677,367"/>
-<area shape="rect" id="node16" href="$itg3200_8h.html" title=" " alt="" coords="701,341,861,367"/>
+<area shape="rect" id="node16" href="$itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense." alt="" coords="701,341,861,367"/>
 <area shape="rect" id="node20" href="$hmc58xx_8h.html" title=" " alt="" coords="937,341,1107,367"/>
-<area shape="rect" id="node22" href="$adxl345__spi_8h.html" title=" " alt="" coords="1140,333,1291,375"/>
+<area shape="rect" id="node22" href="$adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="1140,333,1291,375"/>
 <area shape="rect" id="node31" href="$imu__aspirin__arch_8h.html" title=" " alt="" coords="574,169,761,211"/>
 <area shape="rect" id="node5" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="391,430,571,457"/>
 <area shape="rect" id="node13" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="123,430,315,457"/>
-<area shape="rect" id="node15" href="$pprz__orientation__conversion_8h.html" title=" " alt="" coords="271,333,437,375"/>
+<area shape="rect" id="node15" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="271,333,437,375"/>
 <area shape="rect" id="node6" title=" " alt="" coords="828,609,883,635"/>
 <area shape="rect" id="node7" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="257,519,413,546"/>
 <area shape="rect" id="node11" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="577,519,731,546"/>
@@ -21,16 +21,16 @@
 <area shape="rect" id="node9" title=" " alt="" coords="300,609,371,635"/>
 <area shape="rect" id="node10" title=" " alt="" coords="197,609,265,635"/>
 <area shape="rect" id="node14" title=" " alt="" coords="25,519,182,546"/>
-<area shape="rect" id="node19" href="$itg3200__regs_8h.html" title=" " alt="" coords="595,423,743,464"/>
+<area shape="rect" id="node19" href="$itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros." alt="" coords="595,423,743,464"/>
 <area shape="rect" id="node18" title=" " alt="" coords="893,519,1061,546"/>
-<area shape="rect" id="node21" href="$hmc58xx__regs_8h.html" title=" " alt="" coords="976,423,1135,464"/>
-<area shape="rect" id="node29" href="$adxl345_8h.html" title=" " alt="" coords="1261,430,1423,457"/>
+<area shape="rect" id="node21" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers." alt="" coords="976,423,1135,464"/>
+<area shape="rect" id="node29" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="1261,430,1423,457"/>
 <area shape="rect" id="node24" title=" " alt="" coords="1538,519,1706,546"/>
 <area shape="rect" id="node25" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1730,519,1903,546"/>
 <area shape="rect" id="node26" title=" " alt="" coords="1773,609,1860,635"/>
 <area shape="rect" id="node27" title=" " alt="" coords="1884,609,2011,635"/>
 <area shape="rect" id="node28" title=" " alt="" coords="1588,601,1749,643"/>
-<area shape="rect" id="node30" href="$adxl345__regs_8h.html" title=" " alt="" coords="1312,512,1463,553"/>
+<area shape="rect" id="node30" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="1312,512,1463,553"/>
 <area shape="rect" id="node32" title=" " alt="" coords="574,259,761,285"/>
 <area shape="rect" id="node34" title=" " alt="" coords="1376,177,1503,203"/>
 </map>

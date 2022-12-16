@@ -46,55 +46,55 @@ var avi__isp__chroma_8h =
       [ "offset_gu", "avi__isp__chroma_8h.html#ae8907f68abe0804f154ce1eba2d7cee6", null ],
       [ "offset_ry", "avi__isp__chroma_8h.html#a90292ebb1d271aea1dd5e287c8e74459", null ]
     ] ],
-    [ "avi_isp_chroma_coeff_01_00.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__01__00_8____unnamed____", [
+    [ "avi_isp_chroma_coeff_01_00.__unnamed20__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__01__00_8____unnamed20____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "coeff_00", "avi__isp__chroma_8h.html#ab79b8ade7e272b837aea6b28c722c61e", null ],
       [ "coeff_01", "avi__isp__chroma_8h.html#a15eddccf2f75e5c115e8ee4a8c2560a8", null ]
     ] ],
-    [ "avi_isp_chroma_coeff_10_02.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__10__02_8____unnamed____", [
+    [ "avi_isp_chroma_coeff_10_02.__unnamed22__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__10__02_8____unnamed22____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "coeff_02", "avi__isp__chroma_8h.html#a61b84171726f3982e93491e9e64cc7d7", null ],
       [ "coeff_10", "avi__isp__chroma_8h.html#ad8edbd1e74908c4a230716cf25c593a9", null ]
     ] ],
-    [ "avi_isp_chroma_coeff_12_11.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__12__11_8____unnamed____", [
+    [ "avi_isp_chroma_coeff_12_11.__unnamed24__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__12__11_8____unnamed24____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "coeff_11", "avi__isp__chroma_8h.html#a1f2e4d5b8b9de6d5b41f9ee0d6ebe235", null ],
       [ "coeff_12", "avi__isp__chroma_8h.html#a2b32cf24638d2f9ea9ae1b86fb740895", null ]
     ] ],
-    [ "avi_isp_chroma_coeff_21_20.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__21__20_8____unnamed____", [
+    [ "avi_isp_chroma_coeff_21_20.__unnamed26__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__21__20_8____unnamed26____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "coeff_20", "avi__isp__chroma_8h.html#a78a8111fd68952b3634bc9ca6f647e79", null ],
       [ "coeff_21", "avi__isp__chroma_8h.html#a4b9766227553d579c6d83f3bf63b89c8", null ]
     ] ],
-    [ "avi_isp_chroma_coeff_22.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__22_8____unnamed____", [
+    [ "avi_isp_chroma_coeff_22.__unnamed28__", "avi__isp__chroma_8h.html#structavi__isp__chroma__coeff__22_8____unnamed28____", [
       [ "coeff_22", "avi__isp__chroma_8h.html#ae22fe681849413d271f028d8b1893f7e", null ]
     ] ],
-    [ "avi_isp_chroma_offset_ry.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__ry_8____unnamed____", [
+    [ "avi_isp_chroma_offset_ry.__unnamed30__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__ry_8____unnamed30____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "offset_in", "avi__isp__chroma_8h.html#a55f842792771da3427869983b142acfa", null ],
       [ "offset_out", "avi__isp__chroma_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3", null ]
     ] ],
-    [ "avi_isp_chroma_clip_ry.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__ry_8____unnamed____", [
+    [ "avi_isp_chroma_clip_ry.__unnamed32__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__ry_8____unnamed32____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "clip_max", "avi__isp__chroma_8h.html#a68c5ca0bc6c6e3f1fe416065446215c7", null ],
       [ "clip_min", "avi__isp__chroma_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2", null ]
     ] ],
-    [ "avi_isp_chroma_offset_gu.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__gu_8____unnamed____", [
+    [ "avi_isp_chroma_offset_gu.__unnamed34__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__gu_8____unnamed34____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "offset_in", "avi__isp__chroma_8h.html#a55f842792771da3427869983b142acfa", null ],
       [ "offset_out", "avi__isp__chroma_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3", null ]
     ] ],
-    [ "avi_isp_chroma_clip_gu.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__gu_8____unnamed____", [
+    [ "avi_isp_chroma_clip_gu.__unnamed36__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__gu_8____unnamed36____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "clip_max", "avi__isp__chroma_8h.html#a68c5ca0bc6c6e3f1fe416065446215c7", null ],
       [ "clip_min", "avi__isp__chroma_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2", null ]
     ] ],
-    [ "avi_isp_chroma_offset_bv.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__bv_8____unnamed____", [
+    [ "avi_isp_chroma_offset_bv.__unnamed38__", "avi__isp__chroma_8h.html#structavi__isp__chroma__offset__bv_8____unnamed38____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "offset_in", "avi__isp__chroma_8h.html#a55f842792771da3427869983b142acfa", null ],
       [ "offset_out", "avi__isp__chroma_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3", null ]
     ] ],
-    [ "avi_isp_chroma_clip_bv.__unnamed__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__bv_8____unnamed____", [
+    [ "avi_isp_chroma_clip_bv.__unnamed40__", "avi__isp__chroma_8h.html#structavi__isp__chroma__clip__bv_8____unnamed40____", [
       [ "__pad0__", "avi__isp__chroma_8h.html#a74a47a7eac047138ff811ede153943e6", null ],
       [ "clip_max", "avi__isp__chroma_8h.html#a68c5ca0bc6c6e3f1fe416065446215c7", null ],
       [ "clip_min", "avi__isp__chroma_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2", null ]

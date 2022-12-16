@@ -25,7 +25,7 @@ var invensense2_8h =
       [ "status", "invensense2_8h.html#a5fb84f30a65fc4f4aa21114473a2521a", null ],
       [ "timer", "invensense2_8h.html#ad14d6f1919238bb474ab1711c80e467d", null ]
     ] ],
-    [ "invensense2_t.__unnamed__", "invensense2_8h.html#unioninvensense2__t_8____unnamed____", [
+    [ "invensense2_t.__unnamed310__", "invensense2_8h.html#unioninvensense2__t_8____unnamed310____", [
       [ "i2c", "invensense2_8h.html#aab36abef0cdebd2f84424ad4d17e286b", null ],
       [ "spi", "invensense2_8h.html#a0b0760e072413088ea8460c3b4f43dbe", null ]
     ] ],

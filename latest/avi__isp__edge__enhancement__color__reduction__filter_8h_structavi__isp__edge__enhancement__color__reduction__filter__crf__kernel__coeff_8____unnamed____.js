@@ -1,4 +1,0 @@
-var avi__isp__edge__enhancement__color__reduction__filter_8h_structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed____ =
-[
-    [ "crf_kernel_coeff", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8e0a98aa13fef205b1eb2732463fa8af", null ]
-];

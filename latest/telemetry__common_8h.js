@@ -10,8 +10,8 @@ var telemetry__common_8h =
     ] ],
     [ "TELEMETRY_NB_CBS", "telemetry__common_8h.html#a32d9883689091cb5c2b2748e5e2806aa", null ],
     [ "telemetry_cb", "telemetry__common_8h.html#a864a2b97784a3cecc0b2b80a57220ae3", null ],
+    [ "telemetry_msg", "telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4", null ],
     [ "periodic_telemetry_err_report", "telemetry__common_8h.html#ae7b402e73b2c27992c64528b9d064a8c", null ],
     [ "register_periodic_telemetry", "telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0", null ],
-    [ "telemetry_reporting_task", "telemetry__common_8h.html#a8569c3f73297d33f638ce40e348dd61a", null ],
-    [ "telemetry_msg", "telemetry__common_8h.html#a7d61ceaa0cbfbb05b13c551c153d9f47", null ]
+    [ "telemetry_reporting_task", "telemetry__common_8h.html#a8569c3f73297d33f638ce40e348dd61a", null ]
 ];

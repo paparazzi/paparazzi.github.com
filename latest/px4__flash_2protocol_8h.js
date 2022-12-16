@@ -115,11 +115,6 @@ var px4__flash_2protocol_8h =
     [ "REG_TO_BOOL", "px4__flash_2protocol_8h.html#a3e3b16294cf52806b29f1af49cb304a4", null ],
     [ "REG_TO_SIGNED", "px4__flash_2protocol_8h.html#a0ba798484529a2285ff5ea680e418142", null ],
     [ "SIGNED_TO_REG", "px4__flash_2protocol_8h.html#ad8eead349d624480d8868043a3d2c2ea", null ],
-    [ "dsm_bind_power_down", "px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eacd0be2ab890f11bd03ef8820861b54af", null ],
-    [ "dsm_bind_power_up", "px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea47721f970fade779b2775fbcee17e833", null ],
-    [ "dsm_bind_set_rx_out", "px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea8639e825e90551222744b3f4f645a721", null ],
-    [ "dsm_bind_send_pulses", "px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea0c614985bee2ec5b6f6b7dd58dc70dd5", null ],
-    [ "dsm_bind_reinit_uart", "px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eafd99415839ad8ab6ece72a524c8f7b93", null ],
     [ "crc_packet", "px4__flash_2protocol_8h.html#ad790e31d705934f4ac34e7ddf3761b0e", null ],
     [ "crc8_tab", "px4__flash_2protocol_8h.html#acb838d15dc4bc40adc8c47fffc4989c1", null ]
 ];

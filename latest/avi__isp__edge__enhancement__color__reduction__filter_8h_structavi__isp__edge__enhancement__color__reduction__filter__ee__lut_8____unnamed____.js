@@ -1,4 +1,0 @@
-var avi__isp__edge__enhancement__color__reduction__filter_8h_structavi__isp__edge__enhancement__color__reduction__filter__ee__lut_8____unnamed____ =
-[
-    [ "ee_lut", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aefaaeed2a812053e0cb093a582e1d9b9", null ]
-];
