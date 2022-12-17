@@ -177,6 +177,12 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <li>TAKEOFF_PITCH_ANGLE
 : <a class="el" href="nav__airspeed_8c.html#ad615db6aea7f1aacb5916c211b31c858">nav_airspeed.c</a>
 </li>
+<li>TARGET_INTEGRATE_XY
+: <a class="el" href="target__pos_8c.html#a9e669accce9ce9fbc7b3dbc8c1ac3c1e">target_pos.c</a>
+</li>
+<li>TARGET_INTEGRATE_Z
+: <a class="el" href="target__pos_8c.html#a659e9d073d76b11ee889c31a2e98fd3c">target_pos.c</a>
+</li>
 <li>TARGET_LOC_BODY_TO_CAM_PHI
 : <a class="el" href="cv__target__localization_8c.html#a70c90945f1120e243b70f54d5211ed2d">cv_target_localization.c</a>
 </li>
@@ -212,6 +218,21 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 </li>
 <li>TARGET_LOC_WP_T3_ID
 : <a class="el" href="cv__target__localization_8c.html#a35892be8a224cf2514c545d8a8114abd">cv_target_localization.c</a>
+</li>
+<li>TARGET_OFFSET_DISTANCE
+: <a class="el" href="target__pos_8c.html#a74aac8e7b9cde106ff1f74ed82d67f51">target_pos.c</a>
+</li>
+<li>TARGET_OFFSET_HEADING
+: <a class="el" href="target__pos_8c.html#a612f322450b5439f997a464bea22b690">target_pos.c</a>
+</li>
+<li>TARGET_OFFSET_HEIGHT
+: <a class="el" href="target__pos_8c.html#a376659ea50a9c5dd043941b52bcd8676">target_pos.c</a>
+</li>
+<li>TARGET_POS_TIMEOUT
+: <a class="el" href="target__pos_8c.html#a648c8f13bc9dae954aa8ae9678fb0a19">target_pos.c</a>
+</li>
+<li>TARGET_RTK_TIMEOUT
+: <a class="el" href="target__pos_8c.html#acb1c0b6e5e5c687fe3711138a6838e37">target_pos.c</a>
 </li>
 <li>TCAS_ALIM
 : <a class="el" href="tcas_8c.html#a9b85ff9921f76bd3131d6eecec1a54f3">tcas.c</a>
@@ -490,8 +511,8 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 , <a class="el" href="actuators__shared__arch_8h.html#a2f849835e0306ec0290feac475d2cfb0">actuators_shared_arch.h</a>
 </li>
 <li>TIM8_SERVO_HZ
-: <a class="el" href="actuators__shared__arch_8h.html#a5b20ddacea940b057ec223295fe9b552">actuators_shared_arch.h</a>
-, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a5b20ddacea940b057ec223295fe9b552">actuators_pwm_arch.c</a>
+: <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c.html#a5b20ddacea940b057ec223295fe9b552">actuators_pwm_arch.c</a>
+, <a class="el" href="actuators__shared__arch_8h.html#a5b20ddacea940b057ec223295fe9b552">actuators_shared_arch.h</a>
 </li>
 <li>TIM9_CC_IF_DUTY
 : <a class="el" href="apogee__1_80_8h.html#a4b686c1d8e5f86059d4fbd7ab9f44908">apogee_1.0.h</a>
@@ -555,10 +576,10 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a1ec9bed1a229be7be1c30b971ac19148">high_speed_logger_direct_memory.c</a>
 </li>
 <li>TRACE
-: <a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">uart_arch.c</a>
-, <a class="el" href="serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709">serial_port.c</a>
-, <a class="el" href="udp__socket_8c.html#a114bd0b279c986fe4425fbcce8206709">udp_socket.c</a>
+: <a class="el" href="udp__socket_8c.html#a114bd0b279c986fe4425fbcce8206709">udp_socket.c</a>
 , <a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">uart_arch.c</a>
+, <a class="el" href="serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709">serial_port.c</a>
+, <a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">uart_arch.c</a>
 </li>
 <li>TRACE_ERROR
 : <a class="el" href="serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42">serial_port.c</a>
@@ -622,8 +643,8 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 : <a class="el" href="paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6">paparazzi.h</a>
 </li>
 <li>TRUE
-: <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">imu_chimu.h</a>
-, <a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">std.h</a>
+: <a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">std.h</a>
+, <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">imu_chimu.h</a>
 </li>
 <li>true
 : <a class="el" href="rtwtypes_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">rtwtypes.h</a>
@@ -668,7 +689,7 @@ $(document).ready(function(){initNavTree('globals_defs_t.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 16 2022 15:06:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Dec 17 2022 21:21:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

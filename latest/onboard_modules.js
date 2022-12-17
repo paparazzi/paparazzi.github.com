@@ -565,6 +565,12 @@ var onboard_modules =
         [ "Raw trig_test.xml file:", "module__trig_test.html#module_xml__trig_test", null ]
       ] ]
     ] ],
+    [ "approach_moving_target module", "module__approach_moving_target.html", [
+      [ "Example for airframe file", "module__approach_moving_target.html#module_load_example__approach_moving_target", null ],
+      [ "Module functions", "module__approach_moving_target.html#functions__approach_moving_target", [
+        [ "Raw approach_moving_target.xml file:", "module__approach_moving_target.html#module_xml__approach_moving_target", null ]
+      ] ]
+    ] ],
     [ "ctrl_effectiveness_scheduling module", "module__ctrl_effectiveness_scheduling.html", [
       [ "Example for airframe file", "module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling", null ],
       [ "Module functions", "module__ctrl_effectiveness_scheduling.html#functions__ctrl_effectiveness_scheduling", [
@@ -585,6 +591,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
       [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", [
         [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
+      ] ]
+    ] ],
+    [ "eff_scheduling_nederdrone module", "module__eff_scheduling_nederdrone.html", [
+      [ "Example for airframe file", "module__eff_scheduling_nederdrone.html#module_load_example__eff_scheduling_nederdrone", null ],
+      [ "Module functions", "module__eff_scheduling_nederdrone.html#functions__eff_scheduling_nederdrone", [
+        [ "Raw eff_scheduling_nederdrone.xml file:", "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone", null ]
       ] ]
     ] ],
     [ "follow_me module", "module__follow_me.html", [
@@ -631,6 +643,14 @@ var onboard_modules =
       [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", null ],
       [ "Module functions", "module__shift_tracking.html#functions__shift_tracking", [
         [ "Raw shift_tracking.xml file:", "module__shift_tracking.html#module_xml__shift_tracking", null ]
+      ] ]
+    ] ],
+    [ "target_pos module", "module__target_pos.html", [
+      [ "Example for airframe file", "module__target_pos.html#module_load_example__target_pos", null ],
+      [ "Module configuration options", "module__target_pos.html#configuration__target_pos", null ],
+      [ "Module functions", "module__target_pos.html#functions__target_pos", null ],
+      [ "Datalink Functions", "module__target_pos.html#datalink_functions__target_pos", [
+        [ "Raw target_pos.xml file:", "module__target_pos.html#module_xml__target_pos", null ]
       ] ]
     ] ],
     [ "vertical_ctrl_module_demo module", "module__vertical_ctrl_module_demo.html", [

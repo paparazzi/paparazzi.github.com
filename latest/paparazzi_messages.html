@@ -183,6 +183,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#LOGGER_STATUS">LOGGER_STATUS (ID 92)</a></li>
 <li class="level2"><a href="#MINIMAL_COM">MINIMAL_COM (ID 93)</a></li>
 <li class="level2"><a href="#MOTOR_BENCH_STATUS">MOTOR_BENCH_STATUS (ID 94)</a></li>
+<li class="level2"><a href="#TARGET_POS_INFO">TARGET_POS_INFO (ID 95)</a></li>
 <li class="level2"><a href="#HIH_STATUS">HIH_STATUS (ID 96)</a></li>
 <li class="level2"><a href="#TEMT_STATUS">TEMT_STATUS (ID 97)</a></li>
 <li class="level2"><a href="#GP2Y_STATUS">GP2Y_STATUS (ID 98)</a></li>
@@ -226,6 +227,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#RATE_LOOP">RATE_LOOP (ID 136)</a></li>
 <li class="level2"><a href="#FILTER_ALIGNER">FILTER_ALIGNER (ID 137)</a></li>
 <li class="level2"><a href="#AIRSPEED_MS45XX">AIRSPEED_MS45XX (ID 138)</a></li>
+<li class="level2"><a href="#APPROACH_MOVING_TARGET">APPROACH_MOVING_TARGET (ID 139)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_INT">STAB_ATTITUDE_INT (ID 140)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_REF_INT">STAB_ATTITUDE_REF_INT (ID 141)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_REF_FLOAT">STAB_ATTITUDE_REF_FLOAT (ID 142)</a></li>
@@ -2099,6 +2101,33 @@ MOTOR_BENCH_STATUS (ID 94)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mode   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="TARGET_POS_INFO"></a>
+TARGET_POS_INFO (ID 95)</h2>
+<p>Global position, speed and ID of a target for functions like 'Follow Me'</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lat   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">1e7deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lon   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">1e7deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">alt   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">mm   </td><td class="markdownTableBodyNone">Height above Mean Sea Level (geoid)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">speed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Ground speed    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">climb   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Climb speed    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">course   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">heading   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">off_heading   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone">Offset heading    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">off_distance   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Offset distance    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">off_height   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">Offset height   </td></tr>
+</table>
 <h2><a class="anchor" id="HIH_STATUS"></a>
 HIH_STATUS (ID 96)</h2>
 <table class="markdownTable">
@@ -2791,6 +2820,26 @@ AIRSPEED_MS45XX (ID 138)</h2>
 <td class="markdownTableBodyNone">temperature   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">0.1 deg_celcius   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="APPROACH_MOVING_TARGET"></a>
+APPROACH_MOVING_TARGET (ID 139)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ref_pos_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ref_pos_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ref_pos_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ref_vel_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ref_vel_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ref_vel_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">distance   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="STAB_ATTITUDE_INT"></a>
 STAB_ATTITUDE_INT (ID 140)</h2>
@@ -6616,7 +6665,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Dec 16 2022 15:06:11 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Dec 17 2022 21:21:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

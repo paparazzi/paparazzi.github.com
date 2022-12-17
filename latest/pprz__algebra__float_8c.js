@@ -53,5 +53,6 @@ var pprz__algebra__float_8c =
     [ "float_vect3_integrate_fi", "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850", null ],
     [ "renorm_factor", "pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3", null ],
     [ "vect_bound_in_2d", "group__math__algebra__float.html#gaee1f02031703a4aca27bc7b9df996a55", null ],
+    [ "vect_bound_in_3d", "group__math__algebra__float.html#gadd9d9470d143dce8bd844889cbc62ad9", null ],
     [ "vect_scale", "group__math__algebra__float.html#ga205aa96a656e1c7197f0121a127710d1", null ]
 ];
