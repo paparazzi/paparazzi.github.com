@@ -1,6 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__rotorcraft_cam.html#configuration__rotorcraft_cam":[1,46,1],
 "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam":[1,46,3],
 "module__rotorcraft_cam.html#functions__rotorcraft_cam":[1,46,2],
 "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam":[1,46,0],
@@ -84,6 +83,7 @@ var NAVTREEINDEX127 =
 "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,387,0],
 "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,387,2,0],
 "module__stabilization_float_euler.html":[1,388],
+"module__stabilization_float_euler.html#af_section":[1,388,1,0],
 "module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,388,1],
 "module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,388,2],
 "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,388,0],

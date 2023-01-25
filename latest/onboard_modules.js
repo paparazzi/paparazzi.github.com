@@ -316,6 +316,12 @@ var onboard_modules =
     [ "cam_point module", "module__cam_point.html", [
       [ "Example for airframe file", "module__cam_point.html#module_load_example__cam_point", null ],
       [ "Module functions", "module__cam_point.html#functions__cam_point", [
+        [ "Init Functions", "module__cam_point.html#init_functions", null ],
+        [ "Periodic Functions", "module__cam_point.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__cam_point.html#files", [
+        [ "Header Files", "module__cam_point.html#headers", null ],
+        [ "Source Files", "module__cam_point.html#sources", null ],
         [ "Raw cam_point.xml file:", "module__cam_point.html#module_xml__cam_point", null ]
       ] ]
     ] ],
@@ -1191,22 +1197,22 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v1_5.html#autoloads__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_v2_1.html#autoloads__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1626,16 +1632,8 @@ var onboard_modules =
     ] ],
     [ "logger_dataflash module", "module__logger_dataflash.html", [
       [ "Example for airframe file", "module__logger_dataflash.html#module_load_example__logger_dataflash", null ],
-      [ "Module configuration options", "module__logger_dataflash.html#configuration__logger_dataflash", [
-        [ "Configure Options", "module__logger_dataflash.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__logger_dataflash.html#configuration__logger_dataflash", null ],
       [ "Module functions", "module__logger_dataflash.html#functions__logger_dataflash", [
-        [ "Init Functions", "module__logger_dataflash.html#init_functions", null ],
-        [ "Periodic Functions", "module__logger_dataflash.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__logger_dataflash.html#files", [
-        [ "Header Files", "module__logger_dataflash.html#headers", null ],
-        [ "Source Files", "module__logger_dataflash.html#sources", null ],
         [ "Raw logger_dataflash.xml file:", "module__logger_dataflash.html#module_xml__logger_dataflash", null ]
       ] ]
     ] ],
@@ -2206,11 +2204,8 @@ var onboard_modules =
     ] ],
     [ "radio_control_cc2500_frsky module", "module__radio_control_cc2500_frsky.html", [
       [ "Example for airframe file", "module__radio_control_cc2500_frsky.html#module_load_example__radio_control_cc2500_frsky", null ],
-      [ "Module configuration options", "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky", [
-        [ "Define Options", "module__radio_control_cc2500_frsky.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky", null ],
       [ "Module functions", "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky", [
-        [ "Event Functions", "module__radio_control_cc2500_frsky.html#event_functions", null ],
         [ "Raw radio_control_cc2500_frsky.xml file:", "module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky", null ]
       ] ]
     ] ],
@@ -2287,8 +2282,12 @@ var onboard_modules =
     ] ],
     [ "laser_range_array module", "module__laser_range_array.html", [
       [ "Example for airframe file", "module__laser_range_array.html#module_load_example__laser_range_array", null ],
-      [ "Module configuration options", "module__laser_range_array.html#configuration__laser_range_array", null ],
+      [ "Module configuration options", "module__laser_range_array.html#configuration__laser_range_array", [
+        [ "Configure Options", "module__laser_range_array.html#configure", null ],
+        [ "Define Options", "module__laser_range_array.html#define", null ]
+      ] ],
       [ "Module functions", "module__laser_range_array.html#functions__laser_range_array", [
+        [ "Event Functions", "module__laser_range_array.html#event_functions", null ],
         [ "Raw laser_range_array.xml file:", "module__laser_range_array.html#module_xml__laser_range_array", null ]
       ] ]
     ] ],
@@ -2616,7 +2615,9 @@ var onboard_modules =
     ] ],
     [ "stabilization_float_euler module", "module__stabilization_float_euler.html", [
       [ "Example for airframe file", "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler", null ],
-      [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", null ],
+      [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", [
+        [ "Airframe file section", "module__stabilization_float_euler.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__stabilization_float_euler.html#functions__stabilization_float_euler", [
         [ "Raw stabilization_float_euler.xml file:", "module__stabilization_float_euler.html#module_xml__stabilization_float_euler", null ]
       ] ]
@@ -2945,9 +2946,7 @@ var onboard_modules =
     ] ],
     [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
       [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
-      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", [
-        [ "Airframe file section", "module__mag_calib_ukf.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
       [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
         [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
       ] ]

@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__nav_launcher.html#module_load_example__nav_launcher":[1,302,0],
 "module__nav_launcher.html#module_xml__nav_launcher":[1,302,0,0],
 "module__nav_line.html":[1,303],
 "module__nav_line.html#functions__nav_line":[1,303,1],
@@ -186,11 +187,9 @@ var NAVTREEINDEX126 =
 "module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,326,2,0],
 "module__radio_control_cc2500_frsky.html":[1,329],
 "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky":[1,329,1],
-"module__radio_control_cc2500_frsky.html#define":[1,329,1,0],
-"module__radio_control_cc2500_frsky.html#event_functions":[1,329,2,0],
 "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky":[1,329,2],
 "module__radio_control_cc2500_frsky.html#module_load_example__radio_control_cc2500_frsky":[1,329,0],
-"module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky":[1,329,2,1],
+"module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky":[1,329,2,0],
 "module__radio_control_common.html":[1,330],
 "module__radio_control_common.html#configuration__radio_control_common":[1,330,1],
 "module__radio_control_common.html#functions__radio_control_common":[1,330,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX126 =
 "module__rng.html":[1,249],
 "module__rng.html#module_load_example__rng":[1,249,0],
 "module__rng.html#module_xml__rng":[1,249,0,0],
-"module__rotorcraft_cam.html":[1,46]
+"module__rotorcraft_cam.html":[1,46],
+"module__rotorcraft_cam.html#configuration__rotorcraft_cam":[1,46,1]
 };

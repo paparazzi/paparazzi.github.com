@@ -1,5 +1,10 @@
 var NAVTREEINDEX124 =
 {
+"module__imu_bebop.html":[1,179],
+"module__imu_bebop.html#autoloads__imu_bebop":[1,179,2],
+"module__imu_bebop.html#configuration__imu_bebop":[1,179,1],
+"module__imu_bebop.html#functions__imu_bebop":[1,179,3],
+"module__imu_bebop.html#module_load_example__imu_bebop":[1,179,0],
 "module__imu_bebop.html#module_xml__imu_bebop":[1,179,3,0],
 "module__imu_bmi088_i2c.html":[1,180],
 "module__imu_bmi088_i2c.html#autoloads__imu_bmi088_i2c":[1,180,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX124 =
 "module__ir_mlx.html#functions__ir_mlx":[1,266,1],
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,266,0],
 "module__ir_mlx.html#module_xml__ir_mlx":[1,266,1,0],
-"module__jevois.html":[1,379],
-"module__jevois.html#configuration__jevois":[1,379,1],
-"module__jevois.html#functions__jevois":[1,379,2],
-"module__jevois.html#module_load_example__jevois":[1,379,0],
-"module__jevois.html#module_xml__jevois":[1,379,2,0],
-"module__jevois_mavlink.html":[1,380]
+"module__jevois.html":[1,379]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX122 =
 {
+"module__cv_opticflow.html#functions__cv_opticflow":[1,59,2],
+"module__cv_opticflow.html#module_load_example__cv_opticflow":[1,59,0],
+"module__cv_opticflow.html#module_xml__cv_opticflow":[1,59,2,0],
+"module__cv_qrcode.html":[1,418],
+"module__cv_qrcode.html#configuration__cv_qrcode":[1,418,1],
 "module__cv_qrcode.html#functions__cv_qrcode":[1,418,2],
 "module__cv_qrcode.html#module_load_example__cv_qrcode":[1,418,0],
 "module__cv_qrcode.html#module_xml__cv_qrcode":[1,418,2,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX122 =
 "module__gps_intermcu.html#functions__gps_intermcu":[1,140,2],
 "module__gps_intermcu.html#module_load_example__gps_intermcu":[1,140,0],
 "module__gps_intermcu.html#module_xml__gps_intermcu":[1,140,3,0],
-"module__gps_mediatek_diy.html":[1,141],
-"module__gps_mediatek_diy.html#autoloads__gps_mediatek_diy":[1,141,2],
-"module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,141,1],
-"module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,141,3],
-"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,141,0],
-"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,141,3,0]
+"module__gps_mediatek_diy.html":[1,141]
 };
