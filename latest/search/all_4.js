@@ -338,7 +338,7 @@ var searchData=
   ['cc2500writereg_4346',['cc2500WriteReg',['../cc2500_8c.html#a0aafd8cd88f01d28921f047d4435e169',1,'cc2500WriteReg(uint8_t address, uint8_t data):&#160;cc2500.c'],['../cc2500_8h.html#a0aafd8cd88f01d28921f047d4435e169',1,'cc2500WriteReg(uint8_t address, uint8_t data):&#160;cc2500.c']]],
   ['cc2500writeregistermulti_4347',['cc2500WriteRegisterMulti',['../cc2500_8c.html#a325414f9a40a950bad819622c900d135',1,'cc2500WriteRegisterMulti(uint8_t address, uint8_t *data, uint8_t length):&#160;cc2500.c'],['../cc2500_8h.html#a325414f9a40a950bad819622c900d135',1,'cc2500WriteRegisterMulti(uint8_t address, uint8_t *data, uint8_t length):&#160;cc2500.c']]],
   ['cc3d_2eh_4348',['cc3d.h',['../cc3d_8h.html',1,'']]],
-  ['cdcacm_5fcontrol_5frequest_4349',['cdcacm_control_request',['../stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72',1,'usb_ser_hw.c']]],
+  ['cdcacm_5fcontrol_5frequest_4349',['cdcacm_control_request',['../stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095',1,'usb_ser_hw.c']]],
   ['cdcacm_5fdata_5frx_5fcb_4350',['cdcacm_data_rx_cb',['../stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0',1,'usb_ser_hw.c']]],
   ['cdcacm_5ffunctional_5fdescriptors_4351',['cdcacm_functional_descriptors',['../stm32_2usb__ser__hw_8c.html#aa0151161b66418768106b15d2fc328fd',1,'usb_ser_hw.c']]],
   ['cdcacm_5fset_5fconfig_4352',['cdcacm_set_config',['../stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f',1,'usb_ser_hw.c']]],

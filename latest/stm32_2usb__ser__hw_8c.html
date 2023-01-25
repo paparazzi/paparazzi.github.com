@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('stm32_2usb__ser__hw_8c.html',''); init
 <code>#include &lt;libopencm3/usb/cdc.h&gt;</code><br />
 <code>#include &lt;libopencm3/cm3/scb.h&gt;</code><br />
 <code>#include &lt;libopencm3/stm32/desig.h&gt;</code><br />
-<code>#include &lt;libopencm3/stm32/otg_fs.h&gt;</code><br />
+<code>#include &lt;libopencm3/usb/dwc/otg_fs.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="usb__serial_8h_source.html">mcu_periph/usb_serial.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stm32_2mcu__periph_2sys__time__arch_8h_source.html">mcu_periph/sys_time_arch.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -115,27 +115,27 @@ $(document).ready(function(){initNavTree('stm32_2usb__ser__hw_8c.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2usb__ser__hw_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2stm32_2usb__ser__hw_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2stm32_2usb__ser__hw_8c" id="asw_2airborne_2arch_2stm32_2usb__ser__hw_8c">
-<area shape="rect" title="CDC USB device driver for STM32 architecture (STM32F1, STM32F4)" alt="" coords="414,5,589,47"/>
-<area shape="rect" title=" " alt="" coords="409,266,480,293"/>
+<area shape="rect" title="CDC USB device driver for STM32 architecture (STM32F1, STM32F4)" alt="" coords="420,5,594,47"/>
+<area shape="rect" title=" " alt="" coords="392,266,462,293"/>
 <area shape="rect" title=" " alt="" coords="22,184,200,211"/>
-<area shape="rect" title=" " alt="" coords="528,184,715,211"/>
-<area shape="rect" title=" " alt="" coords="71,102,244,129"/>
-<area shape="rect" title=" " alt="" coords="891,184,1083,211"/>
-<area shape="rect" title=" " alt="" coords="320,102,492,129"/>
-<area shape="rect" title=" " alt="" coords="516,102,679,129"/>
-<area shape="rect" title=" " alt="" coords="703,102,871,129"/>
-<area shape="rect" title=" " alt="" coords="895,102,1090,129"/>
-<area shape="rect" title=" " alt="" coords="1114,102,1313,129"/>
-<area shape="rect" href="usb__serial_8h.html" title="arch independent USB API" alt="" coords="1522,102,1702,129"/>
-<area shape="rect" href="stm32_2mcu__periph_2sys__time__arch_8h.html" title="STM32 timing functions." alt="" coords="1337,95,1498,136"/>
-<area shape="rect" title=" " alt="" coords="1350,266,1437,293"/>
-<area shape="rect" title=" " alt="" coords="1461,266,1516,293"/>
-<area shape="rect" title=" " alt="" coords="1739,266,1931,293"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1557,184,1697,211"/>
-<area shape="rect" title=" " alt="" coords="1540,266,1714,293"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1183,184,1356,211"/>
-<area shape="rect" title=" " alt="" coords="1014,266,1141,293"/>
-<area shape="rect" title=" " alt="" coords="1165,259,1326,300"/>
+<area shape="rect" title=" " alt="" coords="506,184,692,211"/>
+<area shape="rect" title=" " alt="" coords="76,102,250,129"/>
+<area shape="rect" title=" " alt="" coords="858,184,1050,211"/>
+<area shape="rect" title=" " alt="" coords="325,102,497,129"/>
+<area shape="rect" title=" " alt="" coords="522,102,684,129"/>
+<area shape="rect" title=" " alt="" coords="708,102,876,129"/>
+<area shape="rect" title=" " alt="" coords="900,102,1095,129"/>
+<area shape="rect" title=" " alt="" coords="1119,95,1274,136"/>
+<area shape="rect" href="usb__serial_8h.html" title="arch independent USB API" alt="" coords="1484,102,1664,129"/>
+<area shape="rect" href="stm32_2mcu__periph_2sys__time__arch_8h.html" title="STM32 timing functions." alt="" coords="1298,95,1460,136"/>
+<area shape="rect" title=" " alt="" coords="1312,266,1398,293"/>
+<area shape="rect" title=" " alt="" coords="1422,266,1477,293"/>
+<area shape="rect" title=" " alt="" coords="1700,266,1892,293"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1518,184,1658,211"/>
+<area shape="rect" title=" " alt="" coords="1501,266,1676,293"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1144,184,1318,211"/>
+<area shape="rect" title=" " alt="" coords="976,266,1102,293"/>
+<area shape="rect" title=" " alt="" coords="1126,259,1288,300"/>
 </map>
 </div>
 </div>
@@ -169,9 +169,9 @@ Functions</h2></td></tr>
 <tr class="separator:a84f023b865546e5a8433a00db4f06972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1907098db4b59dda72fd85bfbef50248"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#a1907098db4b59dda72fd85bfbef50248">fifo_free</a> (<a class="el" href="frsky__x_8h.html#structfifo__t">fifo_t</a> *fifo)</td></tr>
 <tr class="separator:a1907098db4b59dda72fd85bfbef50248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57b1e209da0ee69459b28fbd55cda72"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72">cdcacm_control_request</a> (usbd_device *usbd_dev, struct usb_setup_data *req, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> **buf, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *len, void(**complete)(usbd_device *usbd_dev, struct usb_setup_data *req))</td></tr>
-<tr class="memdesc:ab57b1e209da0ee69459b28fbd55cda72"><td class="mdescLeft">&#160;</td><td class="mdescRight">CDC device control request (from libopencm3 examples)  <a href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72">More...</a><br /></td></tr>
-<tr class="separator:ab57b1e209da0ee69459b28fbd55cda72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f37d055e8f280e3c9a577f56920095"><td class="memItemLeft" align="right" valign="top">static enum usbd_request_return_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095">cdcacm_control_request</a> (usbd_device *usbd_dev, struct usb_setup_data *req, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> **buf, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *len, void(**complete)(usbd_device *usbd_dev, struct usb_setup_data *req))</td></tr>
+<tr class="memdesc:a50f37d055e8f280e3c9a577f56920095"><td class="mdescLeft">&#160;</td><td class="mdescRight">CDC device control request (from libopencm3 examples)  <a href="stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095">More...</a><br /></td></tr>
+<tr class="separator:a50f37d055e8f280e3c9a577f56920095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b52c04437daf50f42cc4463688e8e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0">cdcacm_data_rx_cb</a> (usbd_device *usbd_dev, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep)</td></tr>
 <tr class="memdesc:a92b52c04437daf50f42cc4463688e8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">RX callback for CDC device (from libopencm3 examples)  <a href="stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0">More...</a><br /></td></tr>
 <tr class="separator:a92b52c04437daf50f42cc4463688e8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,8 +364,8 @@ tail</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab57b1e209da0ee69459b28fbd55cda72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab57b1e209da0ee69459b28fbd55cda72">&#9670;&nbsp;</a></span>cdcacm_control_request()</h2>
+<a id="a50f37d055e8f280e3c9a577f56920095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f37d055e8f280e3c9a577f56920095">&#9670;&nbsp;</a></span>cdcacm_control_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +374,7 @@ tail</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int cdcacm_control_request </td>
+          <td class="memname">static enum usbd_request_return_codes cdcacm_control_request </td>
           <td>(</td>
           <td class="paramtype">usbd_device *&#160;</td>
           <td class="paramname"><em>usbd_dev</em>, </td>
@@ -418,7 +418,7 @@ tail</td>
 
 <p>CDC device control request (from libopencm3 examples) </p>
 
-<p class="definition">Definition at line <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00233">233</a> of file <a class="el" href="stm32_2usb__ser__hw_8c_source.html">usb_ser_hw.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00227">227</a> of file <a class="el" href="stm32_2usb__ser__hw_8c_source.html">usb_ser_hw.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00303">cdcacm_set_config()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -426,8 +426,8 @@ tail</td>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2usb__ser__hw_8c_ab57b1e209da0ee69459b28fbd55cda72_icgraph.png" border="0" usemap="#astm32_2usb__ser__hw_8c_ab57b1e209da0ee69459b28fbd55cda72_icgraph" alt=""/></div>
-<map name="astm32_2usb__ser__hw_8c_ab57b1e209da0ee69459b28fbd55cda72_icgraph" id="astm32_2usb__ser__hw_8c_ab57b1e209da0ee69459b28fbd55cda72_icgraph">
+<div class="center"><img src="stm32_2usb__ser__hw_8c_a50f37d055e8f280e3c9a577f56920095_icgraph.png" border="0" usemap="#astm32_2usb__ser__hw_8c_a50f37d055e8f280e3c9a577f56920095_icgraph" alt=""/></div>
+<map name="astm32_2usb__ser__hw_8c_a50f37d055e8f280e3c9a577f56920095_icgraph" id="astm32_2usb__ser__hw_8c_a50f37d055e8f280e3c9a577f56920095_icgraph">
 <area shape="rect" title="CDC device control request (from libopencm3 examples)" alt="" coords="735,56,915,83"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f" title="Set configuration and control callbacks for CDC device (from libopencm3 examples)" alt="" coords="541,56,687,83"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title=" " alt="" coords="403,56,493,83"/>
@@ -564,7 +564,7 @@ tail</td>
 <div class="center"><img src="stm32_2usb__ser__hw_8c_a6059acbec27d178fd89f46eac5538e7f_cgraph.png" border="0" usemap="#astm32_2usb__ser__hw_8c_a6059acbec27d178fd89f46eac5538e7f_cgraph" alt=""/></div>
 <map name="astm32_2usb__ser__hw_8c_a6059acbec27d178fd89f46eac5538e7f_cgraph" id="astm32_2usb__ser__hw_8c_a6059acbec27d178fd89f46eac5538e7f_cgraph">
 <area shape="rect" title="Set configuration and control callbacks for CDC device (from libopencm3 examples)" alt="" coords="5,56,151,83"/>
-<area shape="rect" href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72" title="CDC device control request (from libopencm3 examples)" alt="" coords="199,5,379,32"/>
+<area shape="rect" href="stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095" title="CDC device control request (from libopencm3 examples)" alt="" coords="199,5,379,32"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0" title="RX callback for CDC device (from libopencm3 examples)" alt="" coords="213,56,364,83"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63" title=" " alt="" coords="239,107,338,133"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#ae3001fd8504f8ad30ee40a958da7bf0c" title=" " alt="" coords="427,56,497,83"/>
@@ -1736,7 +1736,7 @@ tail</td>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36" title=" " alt="" coords="176,376,303,403"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a2293412c574bdf4550e8d8b71724e360" title=" " alt="" coords="164,259,315,285"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a1e02387a38bab125b67b7dc78970d48f" title=" " alt="" coords="164,310,315,351"/>
-<area shape="rect" href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72" title="CDC device control request (from libopencm3 examples)" alt="" coords="383,157,563,184"/>
+<area shape="rect" href="stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095" title="CDC device control request (from libopencm3 examples)" alt="" coords="383,157,563,184"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0" title="RX callback for CDC device (from libopencm3 examples)" alt="" coords="397,107,548,133"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63" title=" " alt="" coords="423,208,522,235"/>
 <area shape="rect" href="stm32_2usb__ser__hw_8c.html#ae3001fd8504f8ad30ee40a958da7bf0c" title=" " alt="" coords="668,161,739,188"/>
@@ -2545,7 +2545,7 @@ tail</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="stm32_2usb__ser__hw_8c.html">usb_ser_hw.c</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 11:12:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 25 2023 13:16:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

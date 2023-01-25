@@ -625,7 +625,7 @@ var NAVTREEINDEX =
 "stabilization__attitude__ref__quat__float_8c.html#a3e438891f3a5595f308067609dd5c4e2",
 "stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604",
 "stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2",
-"stm32_2usb__ser__hw_8c.html#a8ed29cdc7054ad27afaa5e2cbcb1ee52",
+"stm32_2usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd",
 "sys__id__doublet_8c.html",
 "syslink__dl_8c.html#a665fd9a99b5fbbbff1c98a97f1742665",
 "tawaki_2chibios_2common_2mcuconf_8h.html#a3bef70abed53b8df90c5edb807077e37",

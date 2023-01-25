@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__arch_8c_source.html',''); 
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    .hpre = RCC_CFGR_HPRE_DIV_NONE,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    .ppre1 = RCC_CFGR_PPRE_DIV_4,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    .ppre2 = RCC_CFGR_PPRE_DIV_2,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    .power_save = 1,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    .voltage_scale = PWR_SCALE1,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    .flash_config = FLASH_ACR_ICEN | FLASH_ACR_DCEN | FLASH_ACR_LATENCY_3WS,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    .ahb_frequency  = 48000000,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    .apb1_frequency = 12000000,</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__arch_8c_source.html',''); 
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    .hpre = RCC_CFGR_HPRE_DIV_NONE,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    .ppre1 = RCC_CFGR_PPRE_DIV_2,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    .ppre2 = RCC_CFGR_PPRE_DIV_NONE,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    .power_save = 1,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    .voltage_scale = PWR_SCALE1,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    .flash_config = FLASH_ACR_ICEN | FLASH_ACR_DCEN | FLASH_ACR_LATENCY_2WS,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    .ahb_frequency  = 84000000,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    .apb1_frequency = 42000000,</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__arch_8c_source.html',''); 
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    .hpre = RCC_CFGR_HPRE_DIV_NONE,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    .ppre1 = RCC_CFGR_PPRE_DIV_4,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    .ppre2 = RCC_CFGR_PPRE_DIV_2,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    .power_save = 1,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    .voltage_scale = PWR_SCALE1,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    .flash_config = FLASH_ACR_ICEN | FLASH_ACR_DCEN | FLASH_ACR_LATENCY_3WS,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    .ahb_frequency  = 120000000,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    .apb1_frequency = 30000000,</div>
@@ -308,40 +308,40 @@ $(document).ready(function(){initNavTree('stm32_2mcu__arch_8c_source.html',''); 
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#if EXT_CLK == 8000000</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 8MHz external clock to PLL it to 72MHz.&quot;</span>)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  rcc_clock_setup_in_hse_8mhz_out_72mhz();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_configs[RCC_CLOCK_HSE8_72MHZ])</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#elif defined(STM32F4)</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#if AHB_CLK == 84000000</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 8MHz external clock to PLL it to 84MHz.&quot;</span>)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_8mhz_3v3[RCC_CLOCK_3V3_84MHZ]);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_8mhz_3v3[RCC_CLOCK_3V3_84MHZ]);</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 8MHz external clock to PLL it to 168MHz.&quot;</span>)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_8mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_8mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#elif EXT_CLK == 12000000</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 12MHz external clock to PLL it to 72MHz.&quot;</span>)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  rcc_clock_setup_in_hse_12mhz_out_72mhz();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_configs[RCC_CLOCK_HSE12_72MHZ]);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#elif defined(STM32F4)</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 12MHz external clock to PLL it to 168MHz.&quot;</span>)</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_12mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_12mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#elif EXT_CLK == 16000000</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#if defined(STM32F4)</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 16MHz external clock to PLL it to 168MHz.&quot;</span>)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_16mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_16mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#elif EXT_CLK == 24000000</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#if defined(STM32F4)</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 24MHz external clock to PLL it to 168MHz.&quot;</span>)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_24mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_24mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#elif defined(STM32F1)</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  rcc_clock_setup_in_hse_24mhz_out_24mhz_pprz();</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#elif EXT_CLK == 25000000</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#if defined(STM32F4)</span></div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;Using 25MHz external clock to PLL it to 168MHz.&quot;</span>)</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  rcc_clock_setup_hse_3v3(&amp;rcc_hse_25mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  rcc_clock_setup_pll(&amp;rcc_hse_25mhz_3v3[RCC_CLOCK_3V3_168MHZ]);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#error EXT_CLK is either set to an unsupported frequency or not defined at all. Please check!</span></div>
@@ -447,7 +447,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__arch_8c_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="stm32_2mcu__arch_8c.html">mcu_arch.c</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 11:12:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 25 2023 13:16:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

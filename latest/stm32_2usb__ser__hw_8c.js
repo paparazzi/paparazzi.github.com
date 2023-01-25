@@ -9,7 +9,7 @@ var stm32_2usb__ser__hw_8c =
     [ "MAX_PACKET_SIZE", "stm32_2usb__ser__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4", null ],
     [ "TX_TIMEOUT_CNT", "stm32_2usb__ser__hw_8c.html#ae608f21143f9de6b9d8ffec85681e81f", null ],
     [ "VCOM_FIFO_SIZE", "stm32_2usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd", null ],
-    [ "cdcacm_control_request", "stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72", null ],
+    [ "cdcacm_control_request", "stm32_2usb__ser__hw_8c.html#a50f37d055e8f280e3c9a577f56920095", null ],
     [ "cdcacm_data_rx_cb", "stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0", null ],
     [ "cdcacm_set_config", "stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f", null ],
     [ "fifo_avail", "stm32_2usb__ser__hw_8c.html#a84f023b865546e5a8433a00db4f06972", null ],

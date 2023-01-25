@@ -1202,9 +1202,9 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160; </div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    <span class="comment">// 1)</span></div>
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="preprocessor">#ifdef STM32F1</span></div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    i2c_set_clock_frequency(i2c, I2C_CR2_FREQ_36MHZ);</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    i2c_set_clock_frequency(i2c, 36);</div>
 <div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="preprocessor">#else </span><span class="comment">// STM32F4</span></div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    i2c_set_clock_frequency(i2c, I2C_CR2_FREQ_42MHZ);</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    i2c_set_clock_frequency(i2c, 42);</div>
 <div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;    <span class="comment">// 2)</span></div>
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    <span class="comment">//i2c_set_fast_mode(i2c);</span></div>
@@ -1558,7 +1558,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html">i2c_arch.c</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 11:12:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 25 2023 13:16:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
