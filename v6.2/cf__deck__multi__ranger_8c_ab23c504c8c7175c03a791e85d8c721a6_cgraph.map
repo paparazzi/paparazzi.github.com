@@ -1,0 +1,34 @@
+<map id="multi_ranger_periodic" name="multi_ranger_periodic">
+<area shape="rect" id="node1" title="Module periodic function." alt="" coords="5,651,169,677"/>
+<area shape="rect" id="node2" href="$cf__deck__multi__ranger_8c.html#a63ef1a1fb2184ea792b37e6982099348" title="Boot a device." alt="" coords="217,473,408,500"/>
+<area shape="rect" id="node28" href="$pca95xx_8c.html#ae693ccc9f8550f3b32f30918d3f0ab85" title="Configure PCA95XX." alt="" coords="1483,600,1627,627"/>
+<area shape="rect" id="node30" href="$pca95xx_8c.html#aeaf8ba1b5bf5312a5213264371c5400f" title="Set output value." alt="" coords="1479,651,1632,677"/>
+<area shape="rect" id="node31" href="$vl53l1x__nonblocking_8c.html#a2ed90a9b3707d50af715e4db6ca4e68a" title="Test is read status is on idle." alt="" coords="229,702,396,743"/>
+<area shape="rect" id="node32" href="$vl53l1x__nonblocking_8c.html#a29a2cbcd6ab5183a27c2b76522376b62" title="Request a new reading." alt="" coords="229,767,396,809"/>
+<area shape="rect" id="node3" href="$vl53l1x__api_8c.html#a4f5f0ac3cdbbcbc565f0babde7db4588" title="Implement boot sequence of VL53L1 device as described in documentation See VL53L1X_SetTimingBudgetInM..." alt="" coords="456,397,616,424"/>
+<area shape="rect" id="node4" href="$vl53l1x__api_8c.html#a2c2712e30ef7022410a78af61ee64770" title="This function returns the boot state of the device (1:booted, 0:not booted)" alt="" coords="689,68,838,95"/>
+<area shape="rect" id="node10" href="$vl53l1x__api_8c.html#a09f0e0407aa544559216b42f6745d5fa" title="This function loads the 135 bytes default values to initialize the sensor." alt="" coords="688,195,839,221"/>
+<area shape="rect" id="node18" href="$vl53l1x__api_8c.html#a5e8ca5c9b01cf3166f58495a93cd8358" title="This function starts the ranging distance operation The ranging operation is continuous." alt="" coords="955,296,1124,323"/>
+<area shape="rect" id="node20" href="$vl53l1x__api_8c.html#a3c707945ff8df23c2d0cc96f556abced" title="This function programs the distance mode (1=short, 2=long(default))." alt="" coords="664,397,863,424"/>
+<area shape="rect" id="node24" href="$vl53l1x__api_8c.html#a96416653f93aa7e5b8ed954c8b9cdd9f" title="This function programs the timing budget in ms." alt="" coords="925,448,1153,475"/>
+<area shape="rect" id="node26" href="$vl53l1x__api_8c.html#a2683994745dae072f34e56e31d991dc8" title="This function programs the Intermeasurement period in ms Intermeasurement period must be &gt;/= timing b..." alt="" coords="911,549,1168,576"/>
+<area shape="rect" id="node5" href="$vl53l1__platform_8c.html#af25857bed3c014217254b84ff781e2aa" title="VL53L1_RdByte() definition." alt="" coords="1494,93,1617,120"/>
+<area shape="rect" id="node6" href="$vl53l1__platform_8c.html#ab999b09c3be53bbc7715d25007750916" title="VL53L1_ReadMulti() definition." alt="" coords="1691,499,1834,525"/>
+<area shape="rect" id="node7" href="$group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete." alt="" coords="1893,499,2072,525"/>
+<area shape="rect" id="node8" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="2120,524,2265,551"/>
+<area shape="rect" id="node9" href="$group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction." alt="" coords="2146,600,2239,627"/>
+<area shape="rect" id="node11" href="$vl53l1__platform_8c.html#a6294ff6202e132dbf802617ba71ec5f8" title="VL53L1_WrByte() definition." alt="" coords="1261,245,1385,272"/>
+<area shape="rect" id="node14" href="$vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206" title="This function checks if the new ranging data is available by polling the dedicated register." alt="" coords="931,43,1148,69"/>
+<area shape="rect" id="node16" href="$vl53l1x__api_8c.html#aea03678f2d93224975c90e79ab210bb2" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="952,144,1127,171"/>
+<area shape="rect" id="node17" href="$vl53l1x__api_8c.html#a50ba47246df0f85b46ec6d79f2f266d7" title="This function sets the sensor I2C address used in case multiple devices application,..." alt="" coords="950,195,1129,221"/>
+<area shape="rect" id="node19" href="$vl53l1x__api_8c.html#ac8080784997cc9a1c754998d1106715e" title="This function stops the ranging." alt="" coords="956,245,1123,272"/>
+<area shape="rect" id="node12" href="$vl53l1__platform_8c.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e" title="VL53L1_WriteMulti() definition." alt="" coords="1483,423,1627,449"/>
+<area shape="rect" id="node13" href="$group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete." alt="" coords="1680,600,1845,627"/>
+<area shape="rect" id="node15" href="$vl53l1x__api_8c.html#a573b4132a58022c2af2c341180457a09" title="This function returns the current interrupt polarity 1=active high (default), 0=active low." alt="" coords="1216,93,1431,120"/>
+<area shape="rect" id="node21" href="$vl53l1__platform_8c.html#a1a8884f5596d0c5874f3ce00a49d997d" title="VL53L1_WrWord() definition." alt="" coords="1260,397,1387,424"/>
+<area shape="rect" id="node22" href="$vl53l1x__api_8c.html#a1c24d87c18a5e167eb2d22a6ef1664f5" title="This function returns the current timing budget in ms." alt="" coords="924,499,1155,525"/>
+<area shape="rect" id="node23" href="$vl53l1__platform_8c.html#a9b2c1fcb13887dc91678a65b22aad3cd" title="VL53L1_RdWord() definition." alt="" coords="1260,499,1387,525"/>
+<area shape="rect" id="node25" href="$vl53l1x__api_8c.html#ae4b6e97e9d453074d77a32a718c5ddbf" title="This function returns the current distance mode (1=short, 2=long)." alt="" coords="1223,448,1424,475"/>
+<area shape="rect" id="node27" href="$vl53l1__platform_8c.html#aaf8f98b385ff1ea02ec04e27f0aaf9ed" title="VL53L1_WrDWord() definition." alt="" coords="1255,549,1392,576"/>
+<area shape="rect" id="node29" href="$group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction." alt="" coords="1711,651,1814,677"/>
+</map>

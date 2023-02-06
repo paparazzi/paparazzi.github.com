@@ -1,0 +1,28 @@
+var stabilization__attitude__ref__quat__int_8c =
+[
+    [ "F_UPDATE_RES", "stabilization__attitude__ref__quat__int_8c.html#a3f8d6b617f4443c111163584c48c9794", null ],
+    [ "OFFSET_AND_ROUND", "stabilization__attitude__ref__quat__int_8c.html#a4ece5643f8a37a6718b4918214b44fd2", null ],
+    [ "TWO_OMEGA_2_RES", "stabilization__attitude__ref__quat__int_8c.html#ac3271118ba1c7174b53b4e1431168d11", null ],
+    [ "TWO_ZETA_OMEGA_RES", "stabilization__attitude__ref__quat__int_8c.html#a49456a984e7be973086f7847d21690ba", null ],
+    [ "attitude_ref_quat_int_enter", "stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc", null ],
+    [ "attitude_ref_quat_int_init", "stabilization__attitude__ref__quat__int_8c.html#a7944325a332759a00c54a72a263d9a92", null ],
+    [ "attitude_ref_quat_int_set_max_p", "stabilization__attitude__ref__quat__int_8c.html#af9101a0dcd8fd3223114ad1734939c29", null ],
+    [ "attitude_ref_quat_int_set_max_pdot", "stabilization__attitude__ref__quat__int_8c.html#ac63087e767f20e8f8e12bbb43a5dcd63", null ],
+    [ "attitude_ref_quat_int_set_max_q", "stabilization__attitude__ref__quat__int_8c.html#ae9d70636dd5c6db89383089a6bfbc62f", null ],
+    [ "attitude_ref_quat_int_set_max_qdot", "stabilization__attitude__ref__quat__int_8c.html#aa526e82e1dd12e25592d4a1dabf3df0e", null ],
+    [ "attitude_ref_quat_int_set_max_r", "stabilization__attitude__ref__quat__int_8c.html#a795660682006f1de4578ab9f1ecd2c98", null ],
+    [ "attitude_ref_quat_int_set_max_rdot", "stabilization__attitude__ref__quat__int_8c.html#a677908c0facae1f128acfa7debc28a92", null ],
+    [ "attitude_ref_quat_int_set_omega", "stabilization__attitude__ref__quat__int_8c.html#a9ffbc82d672291b5778307b01010d1f0", null ],
+    [ "attitude_ref_quat_int_set_omega_p", "stabilization__attitude__ref__quat__int_8c.html#aad3ceb824cfaf2e86ca52268af9d4774", null ],
+    [ "attitude_ref_quat_int_set_omega_q", "stabilization__attitude__ref__quat__int_8c.html#aa8aeb3d2f2dc12fd1297dda5b7ca83d9", null ],
+    [ "attitude_ref_quat_int_set_omega_r", "stabilization__attitude__ref__quat__int_8c.html#a8df584dca8e9daf9eabf8d462105e064", null ],
+    [ "attitude_ref_quat_int_set_zeta", "stabilization__attitude__ref__quat__int_8c.html#a956440bfffc58d489aee036160a1d40e", null ],
+    [ "attitude_ref_quat_int_set_zeta_p", "stabilization__attitude__ref__quat__int_8c.html#ac83375d5a340cc057ac1676ab343072f", null ],
+    [ "attitude_ref_quat_int_set_zeta_q", "stabilization__attitude__ref__quat__int_8c.html#a9b60788f9066e912599fb2459289dfe4", null ],
+    [ "attitude_ref_quat_int_set_zeta_r", "stabilization__attitude__ref__quat__int_8c.html#a6e006eef843ed6542b195d97de9aefaf", null ],
+    [ "attitude_ref_quat_int_update", "stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c", null ],
+    [ "update_ref_model", "stabilization__attitude__ref__quat__int_8c.html#a6bedc159cb8a8c40bc1ea0b3a5c7af06", null ],
+    [ "update_ref_model_p", "stabilization__attitude__ref__quat__int_8c.html#a096c00deb25b569b3f9959e3c5fb27ae", null ],
+    [ "update_ref_model_q", "stabilization__attitude__ref__quat__int_8c.html#af97dcdb2c66f8d1d6f92473ff835fa9d", null ],
+    [ "update_ref_model_r", "stabilization__attitude__ref__quat__int_8c.html#a78b0de6ab6fa6b9d6aa208d8365449d6", null ]
+];
