@@ -36,5 +36,8 @@ var mt9f002_8c =
     [ "write_reg", "mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463", null ],
     [ "front_camera", "mt9f002_8c.html#abe211b229633c3f39cbfb50c5765b4b4", null ],
     [ "mt9f002", "mt9f002_8c.html#a0a67664fafa1d9cbcc7deaa1352d1673", null ],
-    [ "mt9f002_blanking", "mt9f002_8c.html#a998ddbc62c54776c1b74d52e36703e0c", null ]
+    [ "mt9f002_blanking", "mt9f002_8c.html#a998ddbc62c54776c1b74d52e36703e0c", null ],
+    [ "mt9f002_send_color", "mt9f002_8c.html#a935c1300a2cc1c81907eb532a850061d", null ],
+    [ "mt9f002_send_exposure", "mt9f002_8c.html#acc69c5f8a155e6cfafbd704582811f97", null ],
+    [ "mt9f002_send_resolution", "mt9f002_8c.html#a9ac1d3e3a7f2ab0d12227da19352c3be", null ]
 ];

@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('video__capture_8c_source.html',''); in
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// Create output folder if necessary</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (access(<a class="code" href="video__capture_8c.html#a094eec051d3289b666bd62222c0158c4">save_dir</a>, F_OK)) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">char</span> save_dir_cmd[256];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">char</span> save_dir_cmd[266]; <span class="comment">// write 10b + [0:256]</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    sprintf(save_dir_cmd, <span class="stringliteral">&quot;mkdir -p %s&quot;</span>, <a class="code" href="video__capture_8c.html#a094eec051d3289b666bd62222c0158c4">save_dir</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (system(save_dir_cmd) != 0) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      printf(<span class="stringliteral">&quot;[video_capture] Could not create images directory %s.\n&quot;</span>, <a class="code" href="video__capture_8c.html#a094eec051d3289b666bd62222c0158c4">save_dir</a>);</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('video__capture_8c_source.html',''); in
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">// Declare storage for image location</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">char</span> save_name[256];</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">char</span> save_name[266]; <span class="comment">// write 10b + [0-256]</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">// Generate image filename from image timestamp</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  sprintf(save_name, <span class="stringliteral">&quot;%s/%u.jpg&quot;</span>, <a class="code" href="video__capture_8c.html#a094eec051d3289b666bd62222c0158c4">save_dir</a>, img-&gt;<a class="code" href="image_8h.html#a59340de20e4637957464e787b2c885ba">pprz_ts</a>);</div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('video__capture_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="video__capture_8c.html">video_capture.c</a></li>
-    <li class="footer">Generated on Thu Feb 9 2023 09:56:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 11 2023 16:57:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

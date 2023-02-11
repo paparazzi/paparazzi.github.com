@@ -1,5 +1,8 @@
 var NAVTREEINDEX208 =
 {
+"wedgebug_8c.html#afe7da9fb33003dc308f731711a389b14":[12,0,1,0,6,70,0,143],
+"wedgebug_8c.html#afed017fce10e45fc5232150b7ece545d":[12,0,1,0,6,70,0,125],
+"wedgebug_8c.html#structES__angles":[12,0,1,0,6,70,0,0],
 "wedgebug_8c_source.html":[12,0,1,0,6,70,0],
 "wedgebug_8h.html":[12,0,1,0,6,70,1],
 "wedgebug_8h.html#a01de3d542993aa453c3a290f9c5e507b":[12,0,1,0,6,70,1,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX208 =
 "xsens700_8c.html#adb52dd34dbd27ec4fd1d3386935aa42d":[12,0,1,0,6,36,53,4],
 "xsens700_8c.html#aec2a68072412ee418da6d630451db729":[12,0,1,0,6,36,53,7],
 "xsens700_8c_source.html":[12,0,1,0,6,36,53],
-"xsens700_8h.html":[12,0,1,0,6,36,54],
-"xsens700_8h.html#a2028d92e3535919b8a4a5c9c2502431a":[12,0,1,0,6,36,54,3],
-"xsens700_8h.html#a32edd33560d64589ba49ccf6e1242591":[12,0,1,0,6,36,54,1,0],
-"xsens700_8h.html#a32edd33560d64589ba49ccf6e1242591":[12,0,1,0,6,36,52,1,0]
+"xsens700_8h.html":[12,0,1,0,6,36,54]
 };
