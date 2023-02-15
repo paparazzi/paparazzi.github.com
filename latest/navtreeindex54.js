@@ -246,8 +246,8 @@ var NAVTREEINDEX54 =
 "functions_t.html":[11,2,0,20],
 "functions_u.html":[11,2,0,21],
 "functions_v.html":[11,2,0,22],
-"functions_vars.html":[11,2,2,0],
 "functions_vars.html":[11,2,2],
+"functions_vars.html":[11,2,2,0],
 "functions_vars_a.html":[11,2,2,1],
 "functions_vars_b.html":[11,2,2,2]
 };

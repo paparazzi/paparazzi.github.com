@@ -611,6 +611,7 @@ var annotated_dup =
     [ "inputbuf", "nps__fdm__crrcsim_8c.html#structinputbuf", "nps__fdm__crrcsim_8c_structinputbuf" ],
     [ "ins_mekf_wind_parameters", "ins__mekf__wind_8h.html#structins__mekf__wind__parameters", "ins__mekf__wind_8h_structins__mekf__wind__parameters" ],
     [ "InsAltFloat", "ins__alt__float_8h.html#structInsAltFloat", "ins__alt__float_8h_structInsAltFloat" ],
+    [ "InsExtPose", "ins__ext__pose_8c.html#structInsExtPose", "ins__ext__pose_8c_structInsExtPose" ],
     [ "InsFloatInv", "ins__float__invariant_8h.html#structInsFloatInv", "ins__float__invariant_8h_structInsFloatInv" ],
     [ "InsGpsPassthrough", "ins__gps__passthrough_8c.html#structInsGpsPassthrough", "ins__gps__passthrough_8c_structInsGpsPassthrough" ],
     [ "InsInt", "ins__int_8h.html#structInsInt", "ins__int_8h_structInsInt" ],

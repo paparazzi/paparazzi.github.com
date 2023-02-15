@@ -1453,6 +1453,14 @@ var onboard_modules =
         [ "Raw ins_ekf2.xml file:", "module__ins_ekf2.html#module_xml__ins_ekf2", null ]
       ] ]
     ] ],
+    [ "ins_ext_pose module", "module__ins_ext_pose.html", [
+      [ "Example for airframe file", "module__ins_ext_pose.html#module_load_example__ins_ext_pose", null ],
+      [ "Auto-loaded modules", "module__ins_ext_pose.html#autoloads__ins_ext_pose", null ],
+      [ "Module functions", "module__ins_ext_pose.html#functions__ins_ext_pose", null ],
+      [ "Datalink Functions", "module__ins_ext_pose.html#datalink_functions__ins_ext_pose", [
+        [ "Raw ins_ext_pose.xml file:", "module__ins_ext_pose.html#module_xml__ins_ext_pose", null ]
+      ] ]
+    ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
       [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],

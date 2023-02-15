@@ -20,6 +20,8 @@ var dir_12fb52dac4e3837dec02c6544f4d82f8 =
     [ "ins_arduimu_basic.h", "ins__arduimu__basic_8h.html", "ins__arduimu__basic_8h" ],
     [ "ins_ekf2.cpp", "ins__ekf2_8cpp.html", "ins__ekf2_8cpp" ],
     [ "ins_ekf2.h", "ins__ekf2_8h.html", "ins__ekf2_8h" ],
+    [ "ins_ext_pose.c", "ins__ext__pose_8c.html", "ins__ext__pose_8c" ],
+    [ "ins_ext_pose.h", "ins__ext__pose_8h.html", "ins__ext__pose_8h" ],
     [ "ins_float_invariant.c", "ins__float__invariant_8c.html", "ins__float__invariant_8c" ],
     [ "ins_float_invariant.h", "ins__float__invariant_8h.html", "ins__float__invariant_8h" ],
     [ "ins_float_invariant_wrapper.c", "ins__float__invariant__wrapper_8c.html", "ins__float__invariant__wrapper_8c" ],
