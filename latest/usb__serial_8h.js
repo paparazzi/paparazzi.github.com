@@ -8,6 +8,7 @@ var usb__serial_8h =
       [ "rx_read_idx", "usb__serial_8h.html#a232e0a48a72bd60ce99340a53e6649ca", null ]
     ] ],
     [ "USB_RX_BUFFER_SIZE", "usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e", null ],
+    [ "USBD_NUMBER", "usb__serial_8h.html#a63226f128f255048cdc4449fc2629d8e", null ],
     [ "VCOM_allow_linecoding", "usb__serial_8h.html#abaca416be34281b2bfb22ac501e673d9", null ],
     [ "VCOM_check_available", "usb__serial_8h.html#a4cfafe558a6e594ce0638634e7cec7db", null ],
     [ "VCOM_check_free_space", "usb__serial_8h.html#ae4318c752d87ae9cc59828f07ec04946", null ],

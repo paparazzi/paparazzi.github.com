@@ -1,7 +1,5 @@
 var NAVTREEINDEX190 =
 {
-"stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534":[12,0,1,0,6,64,0,0,2],
-"stereocam__droplet_8c.html#ac6c769a4ae2673751203d93939c60e41":[12,0,1,0,6,64,0,0,5],
 "stereocam__droplet_8c.html#accc9df079cb6cc4f7679e6c0d576d465":[12,0,1,0,6,64,0,0,12],
 "stereocam__droplet_8c.html#acd050a5b4d66e57d883cd9a2c401b44e":[12,0,1,0,6,64,0,0,7],
 "stereocam__droplet_8c.html#aff0e289c810eefcb77f52a2dcdfb16bb":[12,0,1,0,6,64,0,0,8],
@@ -61,8 +59,8 @@ var NAVTREEINDEX190 =
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baa5aea661a147e9fe25d5c2a2d48a51e7":[12,0,1,0,0,3,0,1,3,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baf9b37238aba13fc136c5f0cce2db1838":[12,0,1,0,0,3,0,1,3,0],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9":[12,0,1,0,0,3,0,1,1],
-"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,3,0,1,1,1],
+"stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc":[12,0,1,0,0,0,0,1,1,1],
 "stm32_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,3,0,1],
 "stm32_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,3,0,4],
 "stm32_2mcu__periph_2gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2":[12,0,1,0,0,3,0,4,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX190 =
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,3,3],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,0,3,1,0,3,1],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab":[12,0,1,0,0,3,1,0,3,4],
-"stm32_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,3,1,0,3]
+"stm32_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,3,1,0,3],
+"stm32_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,3,1,1,0],
+"stm32_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,3,1,1,0,7]
 };

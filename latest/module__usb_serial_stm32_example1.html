@@ -120,7 +120,6 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="usb__serial__stm32__example1_8c.html">modules/com/usb_serial_stm32_example1.c</a></li>
-<li>arch dependent: usb_ser_hw.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__usb_serial_stm32_example1"></a>
 Raw usb_serial_stm32_example1.xml file:</h2>
@@ -135,7 +134,9 @@ Raw usb_serial_stm32_example1.xml file:</h2>
 <div class="line">      <span class="keyword">To</span> <span class="keyword">be</span> <span class="keyword">used</span> <span class="keyword">with</span> <span class="keyword">Lisa</span> <span class="keyword">M</span>/<span class="keyword">MX</span> 2.1</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line"> </div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uart</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_serial_stm32.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
@@ -144,7 +145,6 @@ Raw usb_serial_stm32_example1.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;event_usb_serial()&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!nps|sim&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_ser_hw.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_USB_SERIAL&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;usb_serial_stm32_example1.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -156,7 +156,7 @@ Raw usb_serial_stm32_example1.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 13:37:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 15 2023 21:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

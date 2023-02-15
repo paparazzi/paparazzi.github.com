@@ -1,7 +1,5 @@
 var NAVTREEINDEX186 =
 {
-"sst25vfxxxx_8h.html#aa0d6cff7067fa7aad9825a9fc1627576":[12,0,1,0,7,123,11],
-"sst25vfxxxx_8h.html#aa73d90a8ae890cb1edd0992c85fcc33a":[12,0,1,0,7,123,0,1],
 "sst25vfxxxx_8h.html#ab01da2273373a741c15184b171f134b9":[12,0,1,0,7,123,9],
 "sst25vfxxxx_8h.html#ab410202c3d64d14b6515b3161c1fd4fd":[12,0,1,0,7,123,16],
 "sst25vfxxxx_8h.html#ab8da35f3d37bc22a785e273bd80aabe7":[12,0,1,0,7,123,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX186 =
 "stabilization__attitude__heli__indi_8c.html#a05bb204a4d2a9154f5a62904bb921278":[12,0,1,0,3,2,1,9,34],
 "stabilization__attitude__heli__indi_8c.html#a0c50afa4090a66625d9f93a3e8e62447":[12,0,1,0,3,2,1,9,47],
 "stabilization__attitude__heli__indi_8c.html#a0df8c84373b4d4b4057299f1db272d3c":[12,0,1,0,3,2,1,9,17],
-"stabilization__attitude__heli__indi_8c.html#a0fb039e9875d656e9beb3480e3ae37f7":[12,0,1,0,3,2,1,9,23]
+"stabilization__attitude__heli__indi_8c.html#a0fb039e9875d656e9beb3480e3ae37f7":[12,0,1,0,3,2,1,9,23],
+"stabilization__attitude__heli__indi_8c.html#a1d42d4a015d3d6fbd25f90d22dcc4c26":[12,0,1,0,3,2,1,9,33],
+"stabilization__attitude__heli__indi_8c.html#a233b33e7242fb862ab436131bb53d517":[12,0,1,0,3,2,1,9,39]
 };

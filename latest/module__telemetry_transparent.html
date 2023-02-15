@@ -88,7 +88,9 @@ $(document).ready(function(){initNavTree('module__telemetry_transparent.html',''
 <div class="title">telemetry_transparent module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Telemetry using PPRZ protocol over UART</b></p>
+<div class="textblock"><p><b>Telemetry using PPRZ protocol over UART or USB serial.</b></p>
+<p><b></b></p>
+<p>Can be used with a UART (uart1, uart2 ...), or a serial over USB: usb_serial, usb_serial_debug. usb_serial_debug is available only for some MCUs (STM32F7, STM32H7)</p>
 <p>Currently used as a makefile wrapper over the telemetry_transparent modules</p>
 <h1><a class="anchor" id="module_load_example__telemetry_transparent"></a>
 Example for airframe file</h1>
@@ -103,7 +105,7 @@ Module configuration options</h1>
 Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>MODEM_PORT</code> <b>value:</b> <em>UARTx</em> <br  />
- Description: UART where the modem is connected to (UART1, UART2, etc)</li>
+ Description: UART where the modem is connected to (UART1, UART2, usb_serial, etc)</li>
 <li><b>name:</b> <code>MODEM_BAUD</code> <b>value:</b> <em>B57600</em> <br  />
  Description: UART baud rate</li>
 </ul>
@@ -154,11 +156,13 @@ Raw telemetry_transparent.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;telemetry_transparent&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;datalink&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;datalink&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Telemetry</span> <span class="keyword">using</span> <span class="keyword">PPRZ</span> <span class="keyword">protocol</span> <span class="keyword">over</span> <span class="keyword">UART</span></div>
+<div class="line">      <span class="keyword">Telemetry</span> <span class="keyword">using</span> <span class="keyword">PPRZ</span> <span class="keyword">protocol</span> <span class="keyword">over</span> <span class="keyword">UART</span> <span class="keyword">or</span> <span class="keyword">USB</span> <span class="keyword">serial.</span></div>
+<div class="line">      <span class="keyword">Can</span> <span class="keyword">be</span> <span class="keyword">used</span> <span class="keyword">with</span> <span class="keyword">a</span> <span class="keyword">UART</span> (<span class="keyword">uart1</span>, <span class="keyword">uart2</span> ...), <span class="keyword">or</span> <span class="keyword">a</span> <span class="keyword">serial</span> <span class="keyword">over</span> <span class="keyword">USB:</span> <span class="keyword">usb_serial</span>, <span class="keyword">usb_serial_debug.</span></div>
+<div class="line">      <span class="keyword">usb_serial_debug</span> <span class="keyword">is</span> <span class="keyword">available</span> <span class="keyword">only</span> <span class="keyword">for</span> <span class="keyword">some</span> <span class="keyword">MCUs</span> (<span class="keyword">STM32F7</span>, <span class="keyword">STM32H7</span>)</div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">Currently</span> <span class="keyword">used</span> <span class="keyword">as</span> <span class="keyword">a</span> <span class="keyword">makefile</span> <span class="keyword">wrapper</span> <span class="keyword">over</span> <span class="keyword">the</span> <span class="keyword">telemetry_transparent</span> <span class="keyword">modules</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART where the modem is connected to (UART1, UART2, etc)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART where the modem is connected to (UART1, UART2, usb_serial, etc)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MODEM_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B57600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;UART baud rate&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TELEMETRY_DISABLE_RX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;disable incoming message parsing&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
@@ -197,7 +201,7 @@ Raw telemetry_transparent.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 13:37:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 15 2023 21:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

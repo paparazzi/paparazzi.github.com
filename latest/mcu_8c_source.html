@@ -139,228 +139,229 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if USE_ADC</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adc_8h.html">mcu_periph/adc.h</a>&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if USE_USB_SERIAL</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="usb__serial_8h.html">mcu_periph/usb_serial.h</a>&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef USE_UDP</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="udp_8h.html">mcu_periph/udp.h</a>&quot;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if USE_SPI</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html">mcu_periph/spi.h</a>&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifdef USE_DAC</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dac_8h.html">mcu_periph/dac.h</a>&quot;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef USE_RNG</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rng_8h.html">mcu_periph/rng.h</a>&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef USE_PIPE</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pipe_8h.html">mcu_periph/pipe.h</a>&quot;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PERIPHERALS_AUTO_INIT */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">   77</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">/* default board init function does nothing... */</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">   82</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">/* default board init function does nothing... */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">   87</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">mcu_reboot</a>(<span class="keyword">enum</span> <a class="code" href="group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0">reboot_state_t</a> reboot_state __attribute__((unused)))</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">/* default reboot function does nothing... */</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">   92</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">/* default power saving function does nothing... */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">/* If we have a board specific init function, call it.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   * Otherwise it will simply call the empty weak function.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   * For example the ARDrone2 has this implemented to prevent stray data of IMU</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">   * from OEM program still running and also accessing AC sensors</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">/* First enable the power of the MCU if needed */</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if defined MCU_PWR</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="opa__ftd__1_80_8h.html#a432345201376a775fd916e7b58208c25">MCU_PWR_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if defined BTN_ON</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b">gpio_setup_input</a>(<a class="code" href="opa__ftd__1_80_8h.html#add532b97f503429f7bd807c5731cfe53">BTN_ON</a>, <a class="code" href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a>(<a class="code" href="opa__ftd__1_80_8h.html#add532b97f503429f7bd807c5731cfe53">BTN_ON</a>, <a class="code" href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a>)) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="opa__ftd__1_80_8h.html#a432345201376a775fd916e7b58208c25">MCU_PWR_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Turn off and stop: wait until all power is off</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="opa__ftd__1_80_8h.html#a34b2a5e2e6f8a7d801ef1556d35e8e44">MCU_PWR_OFF</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//BTN_ON</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//MCU_PWR</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef PERIPHERALS_AUTO_INIT</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time_init</a>();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifdef USE_LED</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="led_8h.html#a9d9d9b1f30592189c3aa7358c626218f">led_init</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">/* First enable power of RC */</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL_POWER_PORT</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="opa__ftd__1_80_8h.html#ab042e0008db1bdf057e4914a1a5810a6">RADIO_CONTROL_POWER_PORT</a>, <a class="code" href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">RADIO_CONTROL_POWER_PIN</a>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="opa__ftd__1_80_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">RADIO_CONTROL_POWER_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#ab042e0008db1bdf057e4914a1a5810a6">RADIO_CONTROL_POWER_PORT</a>, <a class="code" href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">RADIO_CONTROL_POWER_PIN</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#ifdef PERIPHERAL3V3_ENABLE_PORT</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="code" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">PERIPHERAL3V3_ENABLE_PIN</a>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="px4fmu_8h.html#a25001fd394216ea752e12aace64b4302">PERIPHERAL3V3_ENABLE_ON</a>(<a class="code" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="code" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">PERIPHERAL3V3_ENABLE_PIN</a>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">/* for now this means using spektrum */</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL &amp;&amp; defined RADIO_CONTROL_BIND_IMPL_FUNC &amp;&amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  RADIO_CONTROL_BIND_IMPL_FUNC();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  uart0_init();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#if USE_UART1</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  uart1_init();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#if USE_UART2</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  uart2_init();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#if USE_UART3</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  uart3_init();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#if USE_UART4</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  uart4_init();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#if USE_UART5</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  uart5_init();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#if USE_UART6</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  uart6_init();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#if USE_UART7</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  uart7_init();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#if USE_UART8</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  uart8_init();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#if USING_UART</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587">uart_arch_init</a>();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#ifdef USE_I2C0</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  i2c0_init();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#ifdef USE_I2C1</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  i2c1_init();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#ifdef USE_I2C2</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  i2c2_init();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#ifdef USE_I2C3</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  i2c3_init();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#ifdef USE_I2C4</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  i2c4_init();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#ifdef USE_SOFTI2C0</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  softi2c0_init();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#ifdef USE_SOFTI2C1</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  softi2c1_init();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#if USE_ADC</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a>();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#if USE_USB_SERIAL</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a>();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#if USE_SPI</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#if SPI_MASTER</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#if USE_SPI0</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <a class="code" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731">spi0_init</a>();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#if USE_SPI1</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <a class="code" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi1_init</a>();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#if USE_SPI2</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86">spi2_init</a>();</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#if USE_SPI3</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  spi3_init();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#if USE_SPI4</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  spi4_init();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <a class="code" href="group__spi.html#gafc9125c5764a6749703ae4f1303a16f3">spi_init_slaves</a>();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPI_MASTER</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if SPI_SLAVE</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if USE_SPI0_SLAVE</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  spi0_slave_init();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#if USE_SPI1_SLAVE</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  spi1_slave_init();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#if USE_SPI2_SLAVE</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  spi2_slave_init();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#if USE_SPI3_SLAVE</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  spi3_slave_init();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPI_SLAVE</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#if SPI_SLAVE_HS</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  spi_slave_hs_init();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// USE_SPI</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#ifdef USE_DAC</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c">dac_init</a>();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#if USE_UDP0 || USE_UDP1 || USE_UDP2</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a>();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#ifdef USE_RNG</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_init</a>();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  INFO(<span class="stringliteral">&quot;PERIPHERALS_AUTO_INIT not enabled! Peripherals (including sys_time) need explicit initialization.&quot;</span>)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PERIPHERALS_AUTO_INIT */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a>();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if USE_USB_SERIAL || USE_USB_SERIAL_DEBUG</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define USING_USB_SERIAL 1</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="usb__serial_8h.html">mcu_periph/usb_serial.h</a>&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef USE_UDP</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="udp_8h.html">mcu_periph/udp.h</a>&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if USE_SPI</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html">mcu_periph/spi.h</a>&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef USE_DAC</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dac_8h.html">mcu_periph/dac.h</a>&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef USE_RNG</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rng_8h.html">mcu_periph/rng.h</a>&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef USE_PIPE</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pipe_8h.html">mcu_periph/pipe.h</a>&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PERIPHERALS_AUTO_INIT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">   78</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">/* default board init function does nothing... */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">   83</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">/* default board init function does nothing... */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">   88</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">mcu_reboot</a>(<span class="keyword">enum</span> <a class="code" href="group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0">reboot_state_t</a> reboot_state __attribute__((unused)))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">/* default reboot function does nothing... */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">   93</a></span>&#160;<span class="keywordtype">void</span> WEAK <a class="code" href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">/* default power saving function does nothing... */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">/* If we have a board specific init function, call it.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   * Otherwise it will simply call the empty weak function.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">   * For example the ARDrone2 has this implemented to prevent stray data of IMU</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">   * from OEM program still running and also accessing AC sensors</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">/* First enable the power of the MCU if needed */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#if defined MCU_PWR</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="opa__ftd__1_80_8h.html#a432345201376a775fd916e7b58208c25">MCU_PWR_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if defined BTN_ON</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b">gpio_setup_input</a>(<a class="code" href="opa__ftd__1_80_8h.html#add532b97f503429f7bd807c5731cfe53">BTN_ON</a>, <a class="code" href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a>(<a class="code" href="opa__ftd__1_80_8h.html#add532b97f503429f7bd807c5731cfe53">BTN_ON</a>, <a class="code" href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">BTN_ON_PIN</a>)) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="opa__ftd__1_80_8h.html#a432345201376a775fd916e7b58208c25">MCU_PWR_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Turn off and stop: wait until all power is off</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <a class="code" href="opa__ftd__1_80_8h.html#a34b2a5e2e6f8a7d801ef1556d35e8e44">MCU_PWR_OFF</a>(<a class="code" href="opa__ftd__1_80_8h.html#a16ea1d273c424e591b19bda2f009f993">MCU_PWR</a>, <a class="code" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">MCU_PWR_PIN</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//BTN_ON</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//MCU_PWR</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifdef PERIPHERALS_AUTO_INIT</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time_init</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef USE_LED</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="led_8h.html#a9d9d9b1f30592189c3aa7358c626218f">led_init</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">/* First enable power of RC */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL_POWER_PORT</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="opa__ftd__1_80_8h.html#ab042e0008db1bdf057e4914a1a5810a6">RADIO_CONTROL_POWER_PORT</a>, <a class="code" href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">RADIO_CONTROL_POWER_PIN</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="opa__ftd__1_80_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">RADIO_CONTROL_POWER_ON</a>(<a class="code" href="opa__ftd__1_80_8h.html#ab042e0008db1bdf057e4914a1a5810a6">RADIO_CONTROL_POWER_PORT</a>, <a class="code" href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">RADIO_CONTROL_POWER_PIN</a>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#ifdef PERIPHERAL3V3_ENABLE_PORT</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="code" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">PERIPHERAL3V3_ENABLE_PIN</a>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="px4fmu_8h.html#a25001fd394216ea752e12aace64b4302">PERIPHERAL3V3_ENABLE_ON</a>(<a class="code" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">PERIPHERAL3V3_ENABLE_PORT</a>, <a class="code" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">PERIPHERAL3V3_ENABLE_PIN</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="comment">/* for now this means using spektrum */</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#if defined RADIO_CONTROL &amp;&amp; defined RADIO_CONTROL_BIND_IMPL_FUNC &amp;&amp; defined SPEKTRUM_BIND_PIN_PORT</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  RADIO_CONTROL_BIND_IMPL_FUNC();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  uart0_init();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#if USE_UART1</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  uart1_init();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if USE_UART2</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  uart2_init();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#if USE_UART3</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  uart3_init();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#if USE_UART4</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  uart4_init();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#if USE_UART5</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  uart5_init();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#if USE_UART6</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  uart6_init();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#if USE_UART7</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  uart7_init();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#if USE_UART8</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  uart8_init();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#if USING_UART</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587">uart_arch_init</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#ifdef USE_I2C0</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  i2c0_init();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#ifdef USE_I2C1</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  i2c1_init();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#ifdef USE_I2C2</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  i2c2_init();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#ifdef USE_I2C3</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  i2c3_init();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#ifdef USE_I2C4</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  i2c4_init();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#ifdef USE_SOFTI2C0</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  softi2c0_init();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#ifdef USE_SOFTI2C1</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  softi2c1_init();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#if USE_ADC</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a>();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#if USING_USB_SERIAL</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#if USE_SPI</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#if SPI_MASTER</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#if USE_SPI0</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <a class="code" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731">spi0_init</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#if USE_SPI1</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <a class="code" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi1_init</a>();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#if USE_SPI2</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86">spi2_init</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#if USE_SPI3</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  spi3_init();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#if USE_SPI4</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  spi4_init();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="group__spi.html#gafc9125c5764a6749703ae4f1303a16f3">spi_init_slaves</a>();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPI_MASTER</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if SPI_SLAVE</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#if USE_SPI0_SLAVE</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  spi0_slave_init();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#if USE_SPI1_SLAVE</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  spi1_slave_init();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#if USE_SPI2_SLAVE</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  spi2_slave_init();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#if USE_SPI3_SLAVE</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  spi3_slave_init();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPI_SLAVE</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#if SPI_SLAVE_HS</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  spi_slave_hs_init();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// USE_SPI</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifdef USE_DAC</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c">dac_init</a>();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#if USE_UDP0 || USE_UDP1 || USE_UDP2</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#ifdef USE_RNG</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="chibios_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_init</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  INFO(<span class="stringliteral">&quot;PERIPHERALS_AUTO_INIT not enabled! Peripherals (including sys_time) need explicit initialization.&quot;</span>)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PERIPHERALS_AUTO_INIT */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">  266</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#if USING_I2C</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6">i2c_event</a>();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#if USING_SOFTI2C</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <a class="code" href="softi2c_8c.html#a00f14c5101231479a8ceab61ae4cad7c">softi2c_event</a>();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#if USE_USB_SERIAL</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a>();</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">  267</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#if USING_I2C</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6">i2c_event</a>();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#if USING_SOFTI2C</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <a class="code" href="softi2c_8c.html#a00f14c5101231479a8ceab61ae4cad7c">softi2c_event</a>();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#if USING_USB_SERIAL</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a>();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
 <div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div><div class="ttdoc">arch independent ADC (Analog to Digital Converter) API</div></div>
 <div class="ttc" id="achibios_2mcu__arch_8c_html_a87671303c7d4a9264b1ffbb07e87f454"><div class="ttname"><a href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a></div><div class="ttdeci">void mcu_arch_init(void)</div><div class="ttdoc">Initialize the specific archittecture functions.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__arch_8c_source.html#l00124">mcu_arch.c:124</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2adc__arch_8c_html_a2b815e6730e8723a6d1d06d9ef8f31c0"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a></div><div class="ttdeci">void adc_init(void)</div><div class="ttdoc">Adc init.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_arch.c:332</a></div></div>
@@ -372,13 +373,13 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div class="ttc" id="adac_8h_html_a6e622fafee8436bf9cf9f6b120352e3c"><div class="ttname"><a href="dac_8h.html#a6e622fafee8436bf9cf9f6b120352e3c">dac_init</a></div><div class="ttdeci">void dac_init(void)</div></div>
 <div class="ttc" id="agpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Some architecture independent helper functions for GPIOs.</div></div>
 <div class="ttc" id="agroup__i2c_html_ga05763355d0e087ba41feab61dd773fe6"><div class="ttname"><a href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6">i2c_event</a></div><div class="ttdeci">void i2c_event(void)</div><div class="ttdoc">i2c_event() function</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2i2c__arch_8c_source.html#l00383">i2c_arch.c:383</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_ga4c4b3d4809e69cc0f0ee9b2882081caa"><div class="ttname"><a href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">mcu_reboot</a></div><div class="ttdeci">void WEAK mcu_reboot(enum reboot_state_t reboot_state)</div><div class="ttdoc">Reboot the MCU Should not be called during flight or ciritcal operations.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00087">mcu.c:87</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_ga4c4b3d4809e69cc0f0ee9b2882081caa"><div class="ttname"><a href="group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa">mcu_reboot</a></div><div class="ttdeci">void WEAK mcu_reboot(enum reboot_state_t reboot_state)</div><div class="ttdoc">Reboot the MCU Should not be called during flight or ciritcal operations.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00088">mcu.c:88</a></div></div>
 <div class="ttc" id="agroup__mcu__periph_html_ga6b6870a4cf318dde4658a59ceca4f4a0"><div class="ttname"><a href="group__mcu__periph.html#ga6b6870a4cf318dde4658a59ceca4f4a0">reboot_state_t</a></div><div class="ttdeci">reboot_state_t</div><div class="ttdoc">The requested reboot states.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8h_source.html#l00042">mcu.h:42</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void WEAK board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init().</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00077">mcu.c:77</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_ga9af744358ff4b1e3e33d7dd170862f9b"><div class="ttname"><a href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a></div><div class="ttdeci">void mcu_init(void)</div><div class="ttdoc">Microcontroller peripherals initialization.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00097">mcu.c:97</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_gabd519c6c1966a7d45032bebf0040824d"><div class="ttname"><a href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a></div><div class="ttdeci">void WEAK mcu_energy_save(void)</div><div class="ttdoc">Puts the MCU in energy save mode This disables features of the MCU to save energy.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00092">mcu.c:92</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_gaf44fd3e4d3d56943e4d0e89100974b07"><div class="ttname"><a href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a></div><div class="ttdeci">void mcu_event(void)</div><div class="ttdoc">MCU event functions.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00266">mcu.c:266</a></div></div>
-<div class="ttc" id="agroup__mcu__periph_html_gaf8669c6ba2d12460cf1172edd1a5e4a3"><div class="ttname"><a href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a></div><div class="ttdeci">void WEAK board_init2(void)</div><div class="ttdoc">Optional board init function called at the end of mcu_init().</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00082">mcu.c:82</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void WEAK board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init().</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00078">mcu.c:78</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_ga9af744358ff4b1e3e33d7dd170862f9b"><div class="ttname"><a href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a></div><div class="ttdeci">void mcu_init(void)</div><div class="ttdoc">Microcontroller peripherals initialization.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00098">mcu.c:98</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_gabd519c6c1966a7d45032bebf0040824d"><div class="ttname"><a href="group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d">mcu_energy_save</a></div><div class="ttdeci">void WEAK mcu_energy_save(void)</div><div class="ttdoc">Puts the MCU in energy save mode This disables features of the MCU to save energy.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00093">mcu.c:93</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_gaf44fd3e4d3d56943e4d0e89100974b07"><div class="ttname"><a href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a></div><div class="ttdeci">void mcu_event(void)</div><div class="ttdoc">MCU event functions.</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00267">mcu.c:267</a></div></div>
+<div class="ttc" id="agroup__mcu__periph_html_gaf8669c6ba2d12460cf1172edd1a5e4a3"><div class="ttname"><a href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a></div><div class="ttdeci">void WEAK board_init2(void)</div><div class="ttdoc">Optional board init function called at the end of mcu_init().</div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00083">mcu.c:83</a></div></div>
 <div class="ttc" id="agroup__spi_html_ga1c8c4e89459606c70f6749714abd4a86"><div class="ttname"><a href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86">spi2_init</a></div><div class="ttdeci">void spi2_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="spi_8c_source.html#l00059">spi.c:59</a></div></div>
 <div class="ttc" id="agroup__spi_html_ga2437939c4fca0a4a5a4f79460ed3f731"><div class="ttname"><a href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731">spi0_init</a></div><div class="ttdeci">void spi0_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="spi_8c_source.html#l00037">spi.c:37</a></div></div>
 <div class="ttc" id="agroup__spi_html_ga7da3469436debceb731ecb76c920efda"><div class="ttname"><a href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi1_init</a></div><div class="ttdeci">void spi1_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="spi_8c_source.html#l00048">spi.c:48</a></div></div>
@@ -421,7 +422,7 @@ $(document).ready(function(){initNavTree('mcu_8c_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="mcu_8c.html">mcu.c</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 13:37:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 15 2023 21:10:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

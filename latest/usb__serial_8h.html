@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('usb__serial_8h.html',''); initResizabl
 <code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;pprzlink/pprzlink_device.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
+<code>#include &quot;mcu_arch.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for usb_serial.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,11 +108,12 @@ $(document).ready(function(){initNavTree('usb__serial_8h.html',''); initResizabl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="usb__serial_8h__incl.png" border="0" usemap="#asw_2airborne_2mcu__periph_2usb__serial_8h" alt=""/></div>
 <map name="asw_2airborne_2mcu__periph_2usb__serial_8h" id="asw_2airborne_2mcu__periph_2usb__serial_8h">
-<area shape="rect" title="arch independent USB API" alt="" coords="94,5,273,47"/>
+<area shape="rect" title="arch independent USB API" alt="" coords="149,5,327,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,92,121"/>
 <area shape="rect" title=" " alt="" coords="72,169,127,196"/>
 <area shape="rect" title=" " alt="" coords="350,169,542,196"/>
 <area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="168,95,308,121"/>
+<area shape="rect" title=" " alt="" coords="384,95,481,121"/>
 <area shape="rect" title=" " alt="" coords="151,169,325,196"/>
 </map>
 </div>
@@ -150,6 +152,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ac4a5ba4265da3e73b6d4247abe10bc4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e">USB_RX_BUFFER_SIZE</a>&#160;&#160;&#160;<a class="el" href="uart_8h.html#a5bdd6772c246436bb14377095de79b31">UART_RX_BUFFER_SIZE</a></td></tr>
 <tr class="separator:ac4a5ba4265da3e73b6d4247abe10bc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63226f128f255048cdc4449fc2629d8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="usb__serial_8h.html#a63226f128f255048cdc4449fc2629d8e">USBD_NUMBER</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a63226f128f255048cdc4449fc2629d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -203,7 +207,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="usb__serial_8h_source.html#l00040">40</a> of file <a class="el" href="usb__serial_8h_source.html">usb_serial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="usb__serial_8h_source.html#l00051">51</a> of file <a class="el" href="usb__serial_8h_source.html">usb_serial.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for usb_serial_periph:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -264,7 +268,23 @@ rx_read_idx</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="usb__serial_8h_source.html#l00037">37</a> of file <a class="el" href="usb__serial_8h_source.html">usb_serial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="usb__serial_8h_source.html#l00038">38</a> of file <a class="el" href="usb__serial_8h_source.html">usb_serial.h</a>.</p>
+
+</div>
+</div>
+<a id="a63226f128f255048cdc4449fc2629d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63226f128f255048cdc4449fc2629d8e">&#9670;&nbsp;</a></span>USBD_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USBD_NUMBER&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="usb__serial_8h_source.html#l00048">48</a> of file <a class="el" href="usb__serial_8h_source.html">usb_serial.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +473,7 @@ rx_read_idx</td>
 
 <p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00367">fifo_avail()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00072">my_usbd_dev</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00070">tx_timeout</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00061">txfifo</a>, and <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00487">VCOM_send_message()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="usb__serial__stm32__example1_8c_source.html#l00126">event_usb_serial()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, and <a class="el" href="mcu_8c_source.html#l00266">mcu_event()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="usb__serial__stm32__example1_8c_source.html#l00126">event_usb_serial()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, and <a class="el" href="mcu_8c_source.html#l00267">mcu_event()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -565,9 +585,9 @@ rx_read_idx</td>
 
 <p class="definition">Definition at line <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00565">565</a> of file <a class="el" href="stm32_2usb__ser__hw_8c_source.html">usb_ser_hw.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00303">cdcacm_set_config()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="usb__serial_8h_source.html#l00048">usb_serial_periph::device</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00322">fifo_init()</a>, <a class="el" href="gpio__def_8h_source.html#l00042">GPIO11</a>, <a class="el" href="gpio__def_8h_source.html#l00043">GPIO12</a>, <a class="el" href="gpio__def_8h_source.html#l00074">GPIO_AF10</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOA</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00072">my_usbd_dev</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00059">rxdata</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00062">rxfifo</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00213">serial_no</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00070">tx_timeout</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00058">txdata</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00061">txfifo</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00291">usb_connected</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00523">usb_serial</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00555">usb_serial_char_available()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00526">usb_serial_check_free_space()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00560">usb_serial_getch()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00550">usb_serial_send()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00533">usb_serial_transmit()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00540">usb_serial_transmit_buffer()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00216">usb_strings</a>, and <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00227">usbd_control_buffer</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00303">cdcacm_set_config()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="usb__serial_8h_source.html#l00059">usb_serial_periph::device</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00322">fifo_init()</a>, <a class="el" href="gpio__def_8h_source.html#l00042">GPIO11</a>, <a class="el" href="gpio__def_8h_source.html#l00043">GPIO12</a>, <a class="el" href="gpio__def_8h_source.html#l00074">GPIO_AF10</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOA</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00072">my_usbd_dev</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00059">rxdata</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00062">rxfifo</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00213">serial_no</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00070">tx_timeout</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00058">txdata</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00061">txfifo</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00291">usb_connected</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00523">usb_serial</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00555">usb_serial_char_available()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00526">usb_serial_check_free_space()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00560">usb_serial_getch()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00550">usb_serial_send()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00533">usb_serial_transmit()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00540">usb_serial_transmit_buffer()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00216">usb_strings</a>, and <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00227">usbd_control_buffer</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="usb__serial__stm32__example1_8c_source.html#l00044">init_usb_serial()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, and <a class="el" href="mcu_8c_source.html#l00097">mcu_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="usb__serial__stm32__example1_8c_source.html#l00044">init_usb_serial()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00088">main()</a>, and <a class="el" href="mcu_8c_source.html#l00098">mcu_init()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -863,7 +883,7 @@ rx_read_idx</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="usb__serial_8h.html">usb_serial.h</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 13:37:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 15 2023 21:10:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

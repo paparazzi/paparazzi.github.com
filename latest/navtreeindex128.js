@@ -99,10 +99,8 @@ var NAVTREEINDEX128 =
 "module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp":[1,113,0],
 "module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp":[1,113,3,0],
 "module__telemetry_transparent_usb.html":[1,114],
-"module__telemetry_transparent_usb.html#autoloads__telemetry_transparent_usb":[1,114,1],
-"module__telemetry_transparent_usb.html#functions__telemetry_transparent_usb":[1,114,2],
 "module__telemetry_transparent_usb.html#module_load_example__telemetry_transparent_usb":[1,114,0],
-"module__telemetry_transparent_usb.html#module_xml__telemetry_transparent_usb":[1,114,2,0],
+"module__telemetry_transparent_usb.html#module_xml__telemetry_transparent_usb":[1,114,0,0],
 "module__telemetry_w5100.html":[1,115],
 "module__telemetry_w5100.html#autoloads__telemetry_w5100":[1,115,2],
 "module__telemetry_w5100.html#configuration__telemetry_w5100":[1,115,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX128 =
 "modules_2actuators_2actuators_8c.html#a1c91d56a3813a303fa5f0d80197e3b8b":[12,0,1,0,6,0,0,1],
 "modules_2actuators_2actuators_8c.html#a7ba1bde30e3a87694e878b244de10c47":[12,0,1,0,6,0,0,0],
 "modules_2actuators_2actuators_8c_source.html":[12,0,1,0,6,0,0],
-"modules_2actuators_2actuators_8h.html":[12,0,1,0,6,0,1]
+"modules_2actuators_2actuators_8h.html":[12,0,1,0,6,0,1],
+"modules_2actuators_2actuators_8h.html#a1c91d56a3813a303fa5f0d80197e3b8b":[12,0,1,0,6,0,1,1],
+"modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47":[12,0,1,0,6,0,1,0]
 };

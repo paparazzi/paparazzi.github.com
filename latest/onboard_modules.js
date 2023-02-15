@@ -783,9 +783,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "telemetry_transparent_usb module", "module__telemetry_transparent_usb.html", [
-      [ "Example for airframe file", "module__telemetry_transparent_usb.html#module_load_example__telemetry_transparent_usb", null ],
-      [ "Auto-loaded modules", "module__telemetry_transparent_usb.html#autoloads__telemetry_transparent_usb", null ],
-      [ "Module functions", "module__telemetry_transparent_usb.html#functions__telemetry_transparent_usb", [
+      [ "Example for airframe file", "module__telemetry_transparent_usb.html#module_load_example__telemetry_transparent_usb", [
         [ "Raw telemetry_transparent_usb.xml file:", "module__telemetry_transparent_usb.html#module_xml__telemetry_transparent_usb", null ]
       ] ]
     ] ],

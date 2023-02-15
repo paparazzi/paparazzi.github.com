@@ -1,7 +1,5 @@
 var NAVTREEINDEX202 =
 {
-"throttle__curve_8c.html#a9b8081822a5db1c695b3675a97e59f2b":[12,0,1,0,6,33,2,3],
-"throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314":[12,0,1,0,6,33,2,9],
 "throttle__curve_8c.html#aa5a470d0242ebaeb8f238a036386aeca":[12,0,1,0,6,33,2,4],
 "throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243":[12,0,1,0,6,33,2,7],
 "throttle__curve_8c.html#ace063d8946e46ee57829acb1c90cc5e7":[12,0,1,0,6,33,2,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX202 =
 "uav__recovery_8c.html#a4522492e3e1f40a73ba5fa47e1e07590":[12,0,1,0,6,69,0,10],
 "uav__recovery_8c.html#a7a17497915d08cb7f6611e2db8514ae8":[12,0,1,0,6,69,0,0],
 "uav__recovery_8c.html#a7f215cba9c27ab4910585729899ae4fc":[12,0,1,0,6,69,0,11],
-"uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e":[12,0,1,0,6,69,0,8]
+"uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e":[12,0,1,0,6,69,0,8],
+"uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff":[12,0,1,0,6,69,0,15],
+"uav__recovery_8c.html#a9c3944426205456273cd8c7f1b880f1d":[12,0,1,0,6,69,0,18]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX188 =
 {
-"stabilization__attitude__ref__defaults_8h.html#a2d8869da9ca51d8a998d2c8fef5390fd":[12,0,1,0,3,2,1,23,1],
-"stabilization__attitude__ref__defaults_8h.html#a34edb0d630dcaa2a9b73a8049f9bc323":[12,0,1,0,3,2,1,23,3],
 "stabilization__attitude__ref__defaults_8h.html#a60831d1ca9c20039547265c7b8927d9d":[12,0,1,0,3,2,1,23,2],
 "stabilization__attitude__ref__defaults_8h.html#a6624598661dcb539004e9f6584008da7":[12,0,1,0,3,2,1,23,5],
 "stabilization__attitude__ref__defaults_8h.html#adfcf88c71fdd399b8447f4ff8f4c314b":[12,0,1,0,3,2,1,23,4],
@@ -90,8 +88,8 @@ var NAVTREEINDEX188 =
 "stabilization__attitude__ref__quat__float_8c.html#af0710fdba982ba2ba559c3346894b5fc":[12,0,1,0,3,2,1,29,6],
 "stabilization__attitude__ref__quat__float_8c_source.html":[12,0,1,0,3,2,1,29],
 "stabilization__attitude__ref__quat__float_8h.html":[12,0,1,0,3,2,1,30],
-"stabilization__attitude__ref__quat__float_8h.html#a0c13bd2a725529bbe9f0d1f0b3f318ce":[12,0,1,0,3,2,1,30,0,2],
 "stabilization__attitude__ref__quat__float_8h.html#a0c13bd2a725529bbe9f0d1f0b3f318ce":[12,0,1,0,3,2,1,25,0,2],
+"stabilization__attitude__ref__quat__float_8h.html#a0c13bd2a725529bbe9f0d1f0b3f318ce":[12,0,1,0,3,2,1,30,0,2],
 "stabilization__attitude__ref__quat__float_8h.html#a1b8c9c1d343788025150fb25ab3caa65":[12,0,1,0,3,2,1,30,0,0],
 "stabilization__attitude__ref__quat__float_8h.html#a1b8c9c1d343788025150fb25ab3caa65":[12,0,1,0,3,2,1,25,0,0],
 "stabilization__attitude__ref__quat__float_8h.html#a25926efebe6573a3bbbdff7f32e38bfa":[12,0,1,0,3,2,1,30,1,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX188 =
 "stabilization__indi_8c.html#ad3a3b777ab87b1529cc7a9c00019671d":[12,0,1,0,3,2,1,33,24],
 "stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e":[12,0,1,0,3,2,1,33,10],
 "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b":[12,0,1,0,3,2,1,33,0],
-"stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec":[12,0,1,0,3,2,1,33,50]
+"stabilization__indi_8c.html#addb26d0808eb093b6ec6d5f0f0af0eec":[12,0,1,0,3,2,1,33,50],
+"stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e":[12,0,1,0,3,2,1,33,66],
+"stabilization__indi_8c.html#aec2269ddcef2faf5f35a7257ba3b8f0b":[12,0,1,0,3,2,1,33,70]
 };
