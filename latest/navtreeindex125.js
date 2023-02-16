@@ -1,5 +1,8 @@
 var NAVTREEINDEX125 =
 {
+"module__ins_gps_passthrough.html#functions__ins_gps_passthrough":[1,214,2],
+"module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,214,0],
+"module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,214,2,0],
 "module__ins_hff.html":[1,215],
 "module__ins_hff.html#configuration__ins_hff":[1,215,1],
 "module__ins_hff.html#functions__ins_hff":[1,215,2],
@@ -148,9 +151,10 @@ var NAVTREEINDEX125 =
 "module__logger_file.html#module_xml__logger_file":[1,238,2,0],
 "module__logger_sd_chibios.html":[1,239],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,239,1],
+"module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,239,3],
 "module__logger_sd_chibios.html#functions__logger_sd_chibios":[1,239,2],
 "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios":[1,239,0],
-"module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,239,2,0],
+"module__logger_sd_chibios.html#module_xml__logger_sd_chibios":[1,239,3,0],
 "module__logger_sd_spi_direct.html":[1,240],
 "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct":[1,240,1],
 "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct":[1,240,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX125 =
 "module__meteo_stick.html":[1,271],
 "module__meteo_stick.html#configuration__meteo_stick":[1,271,1],
 "module__meteo_stick.html#functions__meteo_stick":[1,271,2],
-"module__meteo_stick.html#module_load_example__meteo_stick":[1,271,0],
-"module__meteo_stick.html#module_xml__meteo_stick":[1,271,2,0],
-"module__mf_ptu.html":[1,272],
-"module__mf_ptu.html#configuration__mf_ptu":[1,272,1],
-"module__mf_ptu.html#functions__mf_ptu":[1,272,2]
+"module__meteo_stick.html#module_load_example__meteo_stick":[1,271,0]
 };

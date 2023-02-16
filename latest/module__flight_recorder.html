@@ -130,6 +130,12 @@ Periodic Functions</h2>
 </ul>
 </li>
 </ul>
+<h1><a class="anchor" id="datalink_functions__flight_recorder"></a>
+Datalink Functions</h1>
+<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
+<ul>
+<li>on message <b>INFO_MSG_UP</b> call flight_recorder_log_msg_up(buf) </li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -167,6 +173,7 @@ Raw flight_recorder.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_periodic()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;INFO_MSG_UP&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;flight_recorder_log_msg_up(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FLIGHTRECORDER_SDLOG&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (FALSE,$(findstring $(FLIGHTRECORDER_SDLOG),FALSE))&quot;</span>/&gt;</div>
@@ -180,7 +187,7 @@ Raw flight_recorder.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 21:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 13:46:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX127 =
 {
+"module__px4flow.html#module_load_example__px4flow":[1,326,0],
+"module__px4flow.html#module_xml__px4flow":[1,326,2,0],
+"module__px4flow_i2c.html":[1,327],
+"module__px4flow_i2c.html#configuration__px4flow_i2c":[1,327,1],
 "module__px4flow_i2c.html#functions__px4flow_i2c":[1,327,2],
 "module__px4flow_i2c.html#module_load_example__px4flow_i2c":[1,327,0],
 "module__px4flow_i2c.html#module_xml__px4flow_i2c":[1,327,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX127 =
 "module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,408,0],
 "module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,408,2,0],
 "module__sys_id_wave.html":[1,409],
-"module__sys_id_wave.html#configuration__sys_id_wave":[1,409,1],
-"module__sys_id_wave.html#functions__sys_id_wave":[1,409,2],
-"module__sys_id_wave.html#module_load_example__sys_id_wave":[1,409,0],
-"module__sys_id_wave.html#module_xml__sys_id_wave":[1,409,2,0],
-"module__sys_mon.html":[1,79]
+"module__sys_id_wave.html#configuration__sys_id_wave":[1,409,1]
 };

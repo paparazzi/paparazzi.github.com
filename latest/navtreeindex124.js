@@ -1,5 +1,8 @@
 var NAVTREEINDEX124 =
 {
+"module__humid_sht_uart.html#configuration__humid_sht_uart":[1,266,1],
+"module__humid_sht_uart.html#functions__humid_sht_uart":[1,266,2],
+"module__humid_sht_uart.html#module_load_example__humid_sht_uart":[1,266,0],
 "module__humid_sht_uart.html#module_xml__humid_sht_uart":[1,266,2,0],
 "module__i2c.html":[1,247],
 "module__i2c.html#module_load_example__i2c":[1,247,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX124 =
 "module__ins_float_invariant.html#module_load_example__ins_float_invariant":[1,213,0],
 "module__ins_float_invariant.html#module_xml__ins_float_invariant":[1,213,2,0],
 "module__ins_gps_passthrough.html":[1,214],
-"module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,214,1],
-"module__ins_gps_passthrough.html#functions__ins_gps_passthrough":[1,214,2],
-"module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,214,0],
-"module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,214,2,0]
+"module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,214,1]
 };

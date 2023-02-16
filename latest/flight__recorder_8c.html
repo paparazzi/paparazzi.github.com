@@ -139,6 +139,8 @@ Functions</h2></td></tr>
 <tr class="memitem:aae850ede9ad9c2129b5902969280c7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__recorder_8c.html#aae850ede9ad9c2129b5902969280c7b5">flight_recorder_periodic</a> ()</td></tr>
 <tr class="memdesc:aae850ede9ad9c2129b5902969280c7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic function.  <a href="flight__recorder_8c.html#aae850ede9ad9c2129b5902969280c7b5">More...</a><br /></td></tr>
 <tr class="separator:aae850ede9ad9c2129b5902969280c7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae2be5a66e3a0bef0362731325967aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__recorder_8c.html#afae2be5a66e3a0bef0362731325967aa">flight_recorder_log_msg_up</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:afae2be5a66e3a0bef0362731325967aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Gautier Hattenberger <a href="#" onclick="location.href='mai'+'lto:'+'gau'+'ti'+'er.'+'ha'+'tte'+'nb'+'erg'+'er'+'@en'+'ac'+'.fr'; return false;">gauti<span style="display: none;">.nosp@m.</span>er.h<span style="display: none;">.nosp@m.</span>atten<span style="display: none;">.nosp@m.</span>berg<span style="display: none;">.nosp@m.</span>er@en<span style="display: none;">.nosp@m.</span>ac.f<span style="display: none;">.nosp@m.</span>r</a> Record flight data according to your telemetry file </dd></dl>
@@ -203,6 +205,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afae2be5a66e3a0bef0362731325967aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae2be5a66e3a0bef0362731325967aa">&#9670;&nbsp;</a></span>flight_recorder_log_msg_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flight_recorder_log_msg_up </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="flight__recorder_8c_source.html#l00071">71</a> of file <a class="el" href="flight__recorder_8c_source.html">flight_recorder.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sim__ap_8c_source.html#l00043">ac_id</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00042">DEST_INFO_MSG_ALL</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00043">DEST_INFO_MSG_FLIGHT_RECORDER</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="pprzlog__tp_8c_source.html#l00029">pprzlog_tp</a>.</p>
+
+</div>
+</div>
 <a id="aae850ede9ad9c2129b5902969280c7b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae850ede9ad9c2129b5902969280c7b5">&#9670;&nbsp;</a></span>flight_recorder_periodic()</h2>
 
@@ -234,7 +258,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="flight__recorder_8c.html">flight_recorder.c</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 21:10:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 13:46:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

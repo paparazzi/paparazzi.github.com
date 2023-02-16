@@ -1625,7 +1625,8 @@ var onboard_modules =
     [ "flight_recorder module", "module__flight_recorder.html", [
       [ "Example for airframe file", "module__flight_recorder.html#module_load_example__flight_recorder", null ],
       [ "Module configuration options", "module__flight_recorder.html#configuration__flight_recorder", null ],
-      [ "Module functions", "module__flight_recorder.html#functions__flight_recorder", [
+      [ "Module functions", "module__flight_recorder.html#functions__flight_recorder", null ],
+      [ "Datalink Functions", "module__flight_recorder.html#datalink_functions__flight_recorder", [
         [ "Raw flight_recorder.xml file:", "module__flight_recorder.html#module_xml__flight_recorder", null ]
       ] ]
     ] ],
@@ -1653,7 +1654,8 @@ var onboard_modules =
     [ "logger_sd_chibios module", "module__logger_sd_chibios.html", [
       [ "Example for airframe file", "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios", null ],
       [ "Module configuration options", "module__logger_sd_chibios.html#configuration__logger_sd_chibios", null ],
-      [ "Module functions", "module__logger_sd_chibios.html#functions__logger_sd_chibios", [
+      [ "Module functions", "module__logger_sd_chibios.html#functions__logger_sd_chibios", null ],
+      [ "Datalink Functions", "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios", [
         [ "Raw logger_sd_chibios.xml file:", "module__logger_sd_chibios.html#module_xml__logger_sd_chibios", null ]
       ] ]
     ] ],

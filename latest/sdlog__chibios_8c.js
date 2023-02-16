@@ -6,6 +6,7 @@ var sdlog__chibios_8c =
     [ "SDLOG_START_DELAY", "sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb", null ],
     [ "chibios_sdlog_init", "sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6", null ],
     [ "IN_DMA_SECTION", "sdlog__chibios_8c.html#a7443f49b66b998087c9e0446778e0ca7", null ],
+    [ "logger_log_msg_up", "sdlog__chibios_8c.html#a6f2735648e3811dabee7dc1e995fb175", null ],
     [ "null_byte_function", "sdlog__chibios_8c.html#ae827fbce2eaf501bd7097593c7036690", null ],
     [ "null_function", "sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca", null ],
     [ "powerOutageIsr", "sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74", null ],

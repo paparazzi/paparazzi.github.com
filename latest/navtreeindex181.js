@@ -1,5 +1,11 @@
 var NAVTREEINDEX181 =
 {
+"sbus__dual_8c.html#a16fc1909cb36167ee2c561e1c591c017":[12,0,1,0,6,55,17,8],
+"sbus__dual_8c.html#a2c10b51827e5f39514845fc9e878a2b6":[12,0,1,0,6,55,17,5],
+"sbus__dual_8c.html#a462afa775c7f9b0844c9c1933976efe0":[12,0,1,0,6,55,17,2],
+"sbus__dual_8c.html#a644ff95fa518be1d525f8f1b40e23282":[12,0,1,0,6,55,17,0],
+"sbus__dual_8c.html#a7200c46b9e757d8be2409902d3c292cb":[12,0,1,0,6,55,17,4],
+"sbus__dual_8c.html#aaa01bd454b74583dd08f4a33b8b35506":[12,0,1,0,6,55,17,1],
 "sbus__dual_8c.html#aed87c6cc1dea1c07bf450996279c1533":[12,0,1,0,6,55,17,6],
 "sbus__dual_8c_source.html":[12,0,1,0,6,55,17],
 "sbus__dual_8h.html":[12,0,1,0,6,55,18],
@@ -239,15 +245,9 @@ var NAVTREEINDEX181 =
 "sdio__arch_8c_source.html":[12,0,1,0,0,0,0,13],
 "sdlog__chibios_8c.html":[12,0,1,0,6,41,20],
 "sdlog__chibios_8c.html#a03d90924160b7c7b2c069eb0b22764f2":[12,0,1,0,6,41,20,0],
-"sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119":[12,0,1,0,6,41,20,12],
-"sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca":[12,0,1,0,6,41,20,7],
-"sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102":[12,0,1,0,6,41,20,15],
-"sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63":[12,0,1,0,6,41,20,19],
-"sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9":[12,0,1,0,6,41,20,9],
-"sdlog__chibios_8c.html#a7443f49b66b998087c9e0446778e0ca7":[12,0,1,0,6,41,20,5],
-"sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109":[12,0,1,0,6,41,20,17],
-"sdlog__chibios_8c.html#a7d247e5ccfb8b9a4bb1eb4fe13c8fd53":[12,0,1,0,6,41,20,24],
-"sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74":[12,0,1,0,6,41,20,8],
-"sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4":[12,0,1,0,6,41,20,1],
-"sdlog__chibios_8c.html#a93ed7af6c2763727abe70e57dbf2ca77":[12,0,1,0,6,41,20,29]
+"sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119":[12,0,1,0,6,41,20,13],
+"sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca":[12,0,1,0,6,41,20,8],
+"sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102":[12,0,1,0,6,41,20,16],
+"sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63":[12,0,1,0,6,41,20,20],
+"sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9":[12,0,1,0,6,41,20,10]
 };

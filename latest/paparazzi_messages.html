@@ -385,6 +385,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#RTCM_INJECT">RTCM_INJECT (ID 157)</a></li>
 <li class="level2"><a href="#DCF_REG_TABLE">DCF_REG_TABLE (ID 158)</a></li>
 <li class="level2"><a href="#KEY_EXCHANGE_GCS">KEY_EXCHANGE_GCS (ID 159)</a></li>
+<li class="level2"><a href="#INFO_MSG_UP">INFO_MSG_UP (ID 160)</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#GROUND_CLASS">Ground Messages</a><ul><li class="level2"><a href="#NEW_AIRCRAFT">NEW_AIRCRAFT (ID 1)</a></li>
@@ -428,6 +429,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#GROUND_REF">GROUND_REF (ID 40)</a></li>
 <li class="level2"><a href="#JOYSTICK">JOYSTICK (ID 41)</a></li>
 <li class="level2"><a href="#PLUMES">PLUMES (ID 100)</a></li>
+<li class="level2"><a href="#INFO_MSG_GROUND">INFO_MSG_GROUND (ID 101)</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#ALERT_CLASS">Alert Messages</a><ul><li class="level2"><a href="#BAT_LOW">BAT_LOW (ID 1)</a></li>
@@ -5746,6 +5748,19 @@ KEY_EXCHANGE_GCS (ID 159)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">msg_data   </td><td class="markdownTableBodyNone">uint8[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="INFO_MSG_UP"></a>
+INFO_MSG_UP (ID 160)</h2>
+<p>Message from ground to be logged on the drone</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fd   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">ALL, FLIGHT_RECORDER, PPRZLOG   </td><td class="markdownTableBodyNone">where the message will be logged    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">msg   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h1><a class="anchor" id="GROUND_CLASS"></a>
 Ground Messages</h1>
 <h2><a class="anchor" id="NEW_AIRCRAFT"></a>
@@ -6409,6 +6424,10 @@ PLUMES (ID 100)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">values   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="INFO_MSG_GROUND"></a>
+INFO_MSG_GROUND (ID 101)</h2>
+<p>Message from ground to be logged on the drone or send to other ground agents</p>
+<p>Field name | Type | Unit/Values | Description | --------&mdash;|---&mdash;|----------&mdash;|----------&mdash;| dest | string | | ac_id:file_descriptor | ground_name | 0 (ground broadcast) | 0xFF (broadcast) | source | string | | ground_name of the agent sending the message | msg | string | | |</p>
 <h1><a class="anchor" id="ALERT_CLASS"></a>
 Alert Messages</h1>
 <h2><a class="anchor" id="BAT_LOW"></a>
@@ -6665,7 +6684,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 15 2023 21:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 13:46:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

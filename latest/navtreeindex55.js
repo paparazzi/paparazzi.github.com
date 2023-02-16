@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"functions_vars_a.html":[11,2,2,1],
+"functions_vars_b.html":[11,2,2,2],
 "functions_vars_c.html":[11,2,2,3],
 "functions_vars_d.html":[11,2,2,4],
 "functions_vars_e.html":[11,2,2,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "glide__wing__lock_8c.html#acb27f86ae3e5cb7cad3669b0b3cc7501":[12,0,1,0,6,26,0,1],
 "glide__wing__lock_8c.html#ad0c80e08ef16620ed837d87c451f8201":[12,0,1,0,6,26,0,5],
 "glide__wing__lock_8c.html#ad35711a0d70379899d223cc341c59ca3":[12,0,1,0,6,26,0,3],
-"glide__wing__lock_8c.html#ad41dd95e2db5e9365b43307341f8e507":[12,0,1,0,6,26,0,7],
-"glide__wing__lock_8c_source.html":[12,0,1,0,6,26,0],
-"glide__wing__lock_8h.html":[12,0,1,0,6,26,1]
+"glide__wing__lock_8c.html#ad41dd95e2db5e9365b43307341f8e507":[12,0,1,0,6,26,0,7]
 };

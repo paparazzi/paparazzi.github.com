@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xtend_5frssi_20module_51796',['xtend_rssi module',['../module__xtend_rssi.html',1,'onboard_modules']]]
+  ['xtend_5frssi_20module_51810',['xtend_rssi module',['../module__xtend_rssi.html',1,'onboard_modules']]]
 ];

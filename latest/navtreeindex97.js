@@ -1,5 +1,7 @@
 var NAVTREEINDEX97 =
 {
+"lia_2chibios_2v1_81_2mcuconf_8h.html#afb8ec40127fee7c2c398e9e2ec096a71":[12,0,1,0,1,9,0,0,1,16],
+"lia_2chibios_2v1_81_2mcuconf_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56":[12,0,1,0,1,9,0,0,1,51],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#afd104f0cde2014ea9788f9e3f71de00a":[12,0,1,0,1,9,0,0,1,34],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#afda450bd11b4c1408739367b23c9f852":[12,0,1,0,1,9,0,0,1,93],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#afe588bf112fc8f8a22c767aa3d3bcbb7":[12,0,1,0,1,9,0,0,1,102],
@@ -247,7 +249,5 @@ var NAVTREEINDEX97 =
 "light__solar_8c.html":[12,0,1,0,6,43,27],
 "light__solar_8c.html#a3d6da179efb385d03ff265c3ad4f74f6":[12,0,1,0,6,43,27,4],
 "light__solar_8c.html#a5d427462d5459fa08a65ad9a78c2e259":[12,0,1,0,6,43,27,6],
-"light__solar_8c.html#a661e1b4ad75b88ab19e0d16c232d9f6d":[12,0,1,0,6,43,27,0],
-"light__solar_8c.html#a831ddfb4155fdd57df9ff70f0df6033b":[12,0,1,0,6,43,27,8],
-"light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d":[12,0,1,0,6,43,27,9]
+"light__solar_8c.html#a661e1b4ad75b88ab19e0d16c232d9f6d":[12,0,1,0,6,43,27,0]
 };

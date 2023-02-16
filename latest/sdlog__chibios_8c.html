@@ -202,6 +202,8 @@ Functions</h2></td></tr>
 <tr class="separator:aeeba7682db35a9becddc07935f5d256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9b049b6368d8306e16bad97dd30b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91">sdlog_chibios_finish</a> (const bool flush)</td></tr>
 <tr class="separator:a9f9b049b6368d8306e16bad97dd30b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2735648e3811dabee7dc1e995fb175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a6f2735648e3811dabee7dc1e995fb175">logger_log_msg_up</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a6f2735648e3811dabee7dc1e995fb175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -354,7 +356,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00165">165</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00057">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00055">chibios_sdlog::file</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00163">null_byte_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00162">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00129">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00156">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00141">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00149">sdlog_transmit_buffer()</a>.</p>
+<p class="reference">References <a class="el" href="sdlog__chibios_8h_source.html#l00061">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00059">chibios_sdlog::file</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00163">null_byte_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00162">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00129">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00156">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00141">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00149">sdlog_transmit_buffer()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00225">thd_startlog()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -412,6 +414,28 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f2735648e3811dabee7dc1e995fb175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f2735648e3811dabee7dc1e995fb175">&#9670;&nbsp;</a></span>logger_log_msg_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void logger_log_msg_up </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00345">345</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p class="reference">References <a class="el" href="sim__ap_8c_source.html#l00043">ac_id</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00042">DEST_INFO_MSG_ALL</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00044">DEST_INFO_MSG_PPRZLOG</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1373,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00086">86</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00268">airspeed_cb()</a>, <a class="el" href="airspeed__ets_8c_source.html#l00159">airspeed_ets_read_event()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00167">aoa_pwm_update()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00212">baro_cb()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00437">gps_cb()</a>, <a class="el" href="gps__ubx_8c_source.html#l00550">gps_ubx_parse()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00299">gyro_cb()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00281">incidence_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00346">ins_float_invariant_propagate()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00069">logger_control_effectiveness_start()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00384">mag_cb()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00254">pressure_diff_cb()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00417">process_data()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00196">sdlog_chibios_finish()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00225">thd_startlog()</a>, <a class="el" href="wind__estimator_8c_source.html#l00464">wind_estimator_init()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00206">wind_estimator_step()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00268">airspeed_cb()</a>, <a class="el" href="airspeed__ets_8c_source.html#l00159">airspeed_ets_read_event()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00167">aoa_pwm_update()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00212">baro_cb()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00568">dw1000_arduino_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00437">gps_cb()</a>, <a class="el" href="gps__ubx_8c_source.html#l00550">gps_ubx_parse()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00299">gyro_cb()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00281">incidence_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00346">ins_float_invariant_propagate()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00069">logger_control_effectiveness_start()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00345">logger_log_msg_up()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00384">mag_cb()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00254">pressure_diff_cb()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00417">process_data()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00196">sdlog_chibios_finish()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00225">thd_startlog()</a>, <a class="el" href="wind__estimator_8c_source.html#l00464">wind_estimator_init()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00206">wind_estimator_step()</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1427,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="sdlog__chibios_8c.html">sdlog_chibios.c</a></li>
-    <li class="footer">Generated on Wed Feb 15 2023 21:10:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 13:46:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

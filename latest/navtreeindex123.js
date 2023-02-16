@@ -1,5 +1,8 @@
 var NAVTREEINDEX123 =
 {
+"module__follow_me.html#module_load_example__follow_me":[1,88,0],
+"module__follow_me.html#module_xml__follow_me":[1,88,3,0],
+"module__formation_flight.html":[1,287],
 "module__formation_flight.html#datalink_functions__formation_flight":[1,287,2],
 "module__formation_flight.html#functions__formation_flight":[1,287,1],
 "module__formation_flight.html#module_load_example__formation_flight":[1,287,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX123 =
 "module__humid_sht_i2c.html#functions__humid_sht_i2c":[1,265,2],
 "module__humid_sht_i2c.html#module_load_example__humid_sht_i2c":[1,265,0],
 "module__humid_sht_i2c.html#module_xml__humid_sht_i2c":[1,265,2,0],
-"module__humid_sht_uart.html":[1,266],
-"module__humid_sht_uart.html#configuration__humid_sht_uart":[1,266,1],
-"module__humid_sht_uart.html#functions__humid_sht_uart":[1,266,2],
-"module__humid_sht_uart.html#module_load_example__humid_sht_uart":[1,266,0]
+"module__humid_sht_uart.html":[1,266]
 };
