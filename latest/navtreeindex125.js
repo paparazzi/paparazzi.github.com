@@ -1,8 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__ins_gps_passthrough.html#functions__ins_gps_passthrough":[1,214,2],
-"module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,214,0],
-"module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,214,2,0],
 "module__ins_hff.html":[1,215],
 "module__ins_hff.html#configuration__ins_hff":[1,215,1],
 "module__ins_hff.html#functions__ins_hff":[1,215,2],
@@ -86,12 +83,9 @@ var NAVTREEINDEX125 =
 "module__joystick.html#module_xml__joystick":[1,437,2,0],
 "module__laser_range_array.html":[1,341],
 "module__laser_range_array.html#configuration__laser_range_array":[1,341,1],
-"module__laser_range_array.html#configure":[1,341,1,0],
-"module__laser_range_array.html#define":[1,341,1,1],
-"module__laser_range_array.html#event_functions":[1,341,2,0],
 "module__laser_range_array.html#functions__laser_range_array":[1,341,2],
 "module__laser_range_array.html#module_load_example__laser_range_array":[1,341,0],
-"module__laser_range_array.html#module_xml__laser_range_array":[1,341,2,1],
+"module__laser_range_array.html#module_xml__laser_range_array":[1,341,2,0],
 "module__led_safety_status.html":[1,231],
 "module__led_safety_status.html#functions__led_safety_status":[1,231,1],
 "module__led_safety_status.html#module_load_example__led_safety_status":[1,231,0],
@@ -238,9 +232,14 @@ var NAVTREEINDEX125 =
 "module__mcp355x.html#module_load_example__mcp355x":[1,21,0],
 "module__mcp355x.html#module_xml__mcp355x":[1,21,1,0],
 "module__mcu.html":[1,248],
+"module__mcu.html#event_functions":[1,248,1,1],
+"module__mcu.html#files":[1,248,2],
 "module__mcu.html#functions__mcu":[1,248,1],
+"module__mcu.html#headers":[1,248,2,0],
+"module__mcu.html#init_functions":[1,248,1,0],
 "module__mcu.html#module_load_example__mcu":[1,248,0],
-"module__mcu.html#module_xml__mcu":[1,248,1,0],
+"module__mcu.html#module_xml__mcu":[1,248,2,2],
+"module__mcu.html#sources":[1,248,2,1],
 "module__meteo_france_daq.html":[1,270],
 "module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,270,2],
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,270,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "module__meteo_stick.html":[1,271],
 "module__meteo_stick.html#configuration__meteo_stick":[1,271,1],
 "module__meteo_stick.html#functions__meteo_stick":[1,271,2],
-"module__meteo_stick.html#module_load_example__meteo_stick":[1,271,0]
+"module__meteo_stick.html#module_load_example__meteo_stick":[1,271,0],
+"module__meteo_stick.html#module_xml__meteo_stick":[1,271,2,0]
 };

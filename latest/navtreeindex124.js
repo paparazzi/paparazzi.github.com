@@ -1,10 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"module__humid_sht_uart.html#configuration__humid_sht_uart":[1,266,1],
-"module__humid_sht_uart.html#functions__humid_sht_uart":[1,266,2],
-"module__humid_sht_uart.html#module_load_example__humid_sht_uart":[1,266,0],
-"module__humid_sht_uart.html#module_xml__humid_sht_uart":[1,266,2,0],
-"module__i2c.html":[1,247],
 "module__i2c.html#module_load_example__i2c":[1,247,0],
 "module__i2c.html#module_xml__i2c":[1,247,0,0],
 "module__i2c_abuse_test.html":[1,35],
@@ -42,10 +37,10 @@ var NAVTREEINDEX124 =
 "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0":[1,172,2],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,172,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,172,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,172,2,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,173],
 "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5":[1,173,1],
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,173,0],
+"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,173,1,0],
 "module__imu_aspirin_v1_0.html":[1,174],
 "module__imu_aspirin_v1_0.html#autoloads__imu_aspirin_v1_0":[1,174,1],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,174,0],
@@ -74,6 +69,8 @@ var NAVTREEINDEX124 =
 "module__imu_bmi088_i2c.html":[1,180],
 "module__imu_bmi088_i2c.html#autoloads__imu_bmi088_i2c":[1,180,2],
 "module__imu_bmi088_i2c.html#configuration__imu_bmi088_i2c":[1,180,1],
+"module__imu_bmi088_i2c.html#configure":[1,180,1,0],
+"module__imu_bmi088_i2c.html#define":[1,180,1,1],
 "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c":[1,180,3],
 "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c":[1,180,0],
 "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c":[1,180,3,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX124 =
 "module__ins_float_invariant.html#module_load_example__ins_float_invariant":[1,213,0],
 "module__ins_float_invariant.html#module_xml__ins_float_invariant":[1,213,2,0],
 "module__ins_gps_passthrough.html":[1,214],
-"module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,214,1]
+"module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,214,1],
+"module__ins_gps_passthrough.html#functions__ins_gps_passthrough":[1,214,2],
+"module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,214,0],
+"module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,214,2,0]
 };

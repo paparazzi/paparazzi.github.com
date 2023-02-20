@@ -316,12 +316,6 @@ var onboard_modules =
     [ "cam_point module", "module__cam_point.html", [
       [ "Example for airframe file", "module__cam_point.html#module_load_example__cam_point", null ],
       [ "Module functions", "module__cam_point.html#functions__cam_point", [
-        [ "Init Functions", "module__cam_point.html#init_functions", null ],
-        [ "Periodic Functions", "module__cam_point.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__cam_point.html#files", [
-        [ "Header Files", "module__cam_point.html#headers", null ],
-        [ "Source Files", "module__cam_point.html#sources", null ],
         [ "Raw cam_point.xml file:", "module__cam_point.html#module_xml__cam_point", null ]
       ] ]
     ] ],
@@ -646,7 +640,9 @@ var onboard_modules =
     ] ],
     [ "shift_tracking module", "module__shift_tracking.html", [
       [ "Example for airframe file", "module__shift_tracking.html#module_load_example__shift_tracking", null ],
-      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", null ],
+      [ "Module configuration options", "module__shift_tracking.html#configuration__shift_tracking", [
+        [ "Airframe file section", "module__shift_tracking.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__shift_tracking.html#functions__shift_tracking", [
         [ "Raw shift_tracking.xml file:", "module__shift_tracking.html#module_xml__shift_tracking", null ]
       ] ]
@@ -1185,13 +1181,13 @@ var onboard_modules =
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
       [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_0.html#autoloads__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ],
-      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", null ]
+      [ "Auto-loaded modules", "module__imu_aspirin_i2c_v1_5.html#autoloads__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ],
@@ -1230,7 +1226,10 @@ var onboard_modules =
     ] ],
     [ "imu_bmi088_i2c module", "module__imu_bmi088_i2c.html", [
       [ "Example for airframe file", "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c", null ],
-      [ "Module configuration options", "module__imu_bmi088_i2c.html#configuration__imu_bmi088_i2c", null ],
+      [ "Module configuration options", "module__imu_bmi088_i2c.html#configuration__imu_bmi088_i2c", [
+        [ "Configure Options", "module__imu_bmi088_i2c.html#configure", null ],
+        [ "Define Options", "module__imu_bmi088_i2c.html#define", null ]
+      ] ],
       [ "Auto-loaded modules", "module__imu_bmi088_i2c.html#autoloads__imu_bmi088_i2c", null ],
       [ "Module functions", "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c", [
         [ "Raw imu_bmi088_i2c.xml file:", "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c", null ]
@@ -1711,6 +1710,12 @@ var onboard_modules =
     [ "mcu module", "module__mcu.html", [
       [ "Example for airframe file", "module__mcu.html#module_load_example__mcu", null ],
       [ "Module functions", "module__mcu.html#functions__mcu", [
+        [ "Init Functions", "module__mcu.html#init_functions", null ],
+        [ "Event Functions", "module__mcu.html#event_functions", null ]
+      ] ],
+      [ "Files", "module__mcu.html#files", [
+        [ "Header Files", "module__mcu.html#headers", null ],
+        [ "Source Files", "module__mcu.html#sources", null ],
         [ "Raw mcu.xml file:", "module__mcu.html#module_xml__mcu", null ]
       ] ]
     ] ],
@@ -2290,12 +2295,8 @@ var onboard_modules =
     ] ],
     [ "laser_range_array module", "module__laser_range_array.html", [
       [ "Example for airframe file", "module__laser_range_array.html#module_load_example__laser_range_array", null ],
-      [ "Module configuration options", "module__laser_range_array.html#configuration__laser_range_array", [
-        [ "Configure Options", "module__laser_range_array.html#configure", null ],
-        [ "Define Options", "module__laser_range_array.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__laser_range_array.html#configuration__laser_range_array", null ],
       [ "Module functions", "module__laser_range_array.html#functions__laser_range_array", [
-        [ "Event Functions", "module__laser_range_array.html#event_functions", null ],
         [ "Raw laser_range_array.xml file:", "module__laser_range_array.html#module_xml__laser_range_array", null ]
       ] ]
     ] ],
@@ -2623,9 +2624,7 @@ var onboard_modules =
     ] ],
     [ "stabilization_float_euler module", "module__stabilization_float_euler.html", [
       [ "Example for airframe file", "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler", null ],
-      [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", [
-        [ "Airframe file section", "module__stabilization_float_euler.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", null ],
       [ "Module functions", "module__stabilization_float_euler.html#functions__stabilization_float_euler", [
         [ "Raw stabilization_float_euler.xml file:", "module__stabilization_float_euler.html#module_xml__stabilization_float_euler", null ]
       ] ]
@@ -2708,6 +2707,7 @@ var onboard_modules =
     [ "stereocam_droplet module", "module__stereocam_droplet.html", [
       [ "Example for airframe file", "module__stereocam_droplet.html#module_load_example__stereocam_droplet", null ],
       [ "Module functions", "module__stereocam_droplet.html#functions__stereocam_droplet", [
+        [ "Periodic Functions", "module__stereocam_droplet.html#periodic_functions", null ],
         [ "Raw stereocam_droplet.xml file:", "module__stereocam_droplet.html#module_xml__stereocam_droplet", null ]
       ] ]
     ] ],

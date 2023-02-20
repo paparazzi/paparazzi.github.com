@@ -1,6 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__px4flow.html#module_load_example__px4flow":[1,326,0],
 "module__px4flow.html#module_xml__px4flow":[1,326,2,0],
 "module__px4flow_i2c.html":[1,327],
 "module__px4flow_i2c.html#configuration__px4flow_i2c":[1,327,1],
@@ -113,6 +112,7 @@ var NAVTREEINDEX127 =
 "module__shell.html#module_load_example__shell":[1,77,0],
 "module__shell.html#module_xml__shell":[1,77,2,0],
 "module__shift_tracking.html":[1,94],
+"module__shift_tracking.html#af_section":[1,94,1,0],
 "module__shift_tracking.html#configuration__shift_tracking":[1,94,1],
 "module__shift_tracking.html#functions__shift_tracking":[1,94,2],
 "module__shift_tracking.html#module_load_example__shift_tracking":[1,94,0],
@@ -155,7 +155,6 @@ var NAVTREEINDEX127 =
 "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,388,0],
 "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,388,2,0],
 "module__stabilization_float_euler.html":[1,389],
-"module__stabilization_float_euler.html#af_section":[1,389,1,0],
 "module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,389,1],
 "module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,389,2],
 "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,389,0],
@@ -220,7 +219,8 @@ var NAVTREEINDEX127 =
 "module__stereocam_droplet.html":[1,401],
 "module__stereocam_droplet.html#functions__stereocam_droplet":[1,401,1],
 "module__stereocam_droplet.html#module_load_example__stereocam_droplet":[1,401,0],
-"module__stereocam_droplet.html#module_xml__stereocam_droplet":[1,401,1,0],
+"module__stereocam_droplet.html#module_xml__stereocam_droplet":[1,401,1,1],
+"module__stereocam_droplet.html#periodic_functions":[1,401,1,0],
 "module__stereocam_follow_me.html":[1,402],
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,402,0],
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,402,0,0],

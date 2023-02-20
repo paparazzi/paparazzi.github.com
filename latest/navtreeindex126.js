@@ -1,6 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"module__meteo_stick.html#module_xml__meteo_stick":[1,271,2,0],
 "module__mf_ptu.html":[1,272],
 "module__mf_ptu.html#configuration__mf_ptu":[1,272,1],
 "module__mf_ptu.html#functions__mf_ptu":[1,272,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX126 =
 "module__px4_gimbal.html#module_xml__px4_gimbal":[1,449,2,0],
 "module__px4flow.html":[1,326],
 "module__px4flow.html#configuration__px4flow":[1,326,1],
-"module__px4flow.html#functions__px4flow":[1,326,2]
+"module__px4flow.html#functions__px4flow":[1,326,2],
+"module__px4flow.html#module_load_example__px4flow":[1,326,0]
 };

@@ -1,10 +1,5 @@
 var NAVTREEINDEX122 =
 {
-"module__copilot.html":[1,281],
-"module__copilot.html#datalink_functions__copilot":[1,281,2],
-"module__copilot.html#functions__copilot":[1,281,1],
-"module__copilot.html#module_load_example__copilot":[1,281,0],
-"module__copilot.html#module_xml__copilot":[1,281,2,0],
 "module__ctrl_effectiveness_scheduling.html":[1,83],
 "module__ctrl_effectiveness_scheduling.html#functions__ctrl_effectiveness_scheduling":[1,83,1],
 "module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling":[1,83,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX122 =
 "module__follow_me.html":[1,88],
 "module__follow_me.html#configuration__follow_me":[1,88,1],
 "module__follow_me.html#datalink_functions__follow_me":[1,88,3],
-"module__follow_me.html#functions__follow_me":[1,88,2]
+"module__follow_me.html#functions__follow_me":[1,88,2],
+"module__follow_me.html#module_load_example__follow_me":[1,88,0],
+"module__follow_me.html#module_xml__follow_me":[1,88,3,0],
+"module__formation_flight.html":[1,287],
+"module__formation_flight.html#datalink_functions__formation_flight":[1,287,2],
+"module__formation_flight.html#functions__formation_flight":[1,287,1]
 };
