@@ -265,8 +265,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">                                     PIN_ODR_HIGH(13) | \</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">                                     PIN_ODR_HIGH(14) | \</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">                                     PIN_ODR_HIGH(15))</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9">  178</a></span>&#160;<span class="preprocessor">#define VAL_GPIOA_AFRL              (PIN_AFIO_AF(0, 2) | \</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(1, 2)  | \</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9">  178</a></span>&#160;<span class="preprocessor">#define VAL_GPIOA_AFRL              (PIN_AFIO_AF(0, 0) | \</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(1, 1)  | \</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(2, 7)  | \</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(3, 7)  | \</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(4, 5)  | \</span></div>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(7, 5))</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b">  186</a></span>&#160;<span class="preprocessor">#define VAL_GPIOA_AFRH              (PIN_AFIO_AF(8, 0)  | \</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(9, 7)   | \</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 1) | \</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 7) | \</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(11, 10) | \</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(12, 10) | \</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(13, 0)  | \</span></div>
@@ -290,8 +290,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> * PB3  - Digital input                    (JTAG_TDO/SWD)</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> * PB4  - Open Drain output 50MHz          (LED2)</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> * PB5  - Digital input                    (IMU_MAG_DRDY)</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * PB6  - Alternate Open Drain output 2MHz (SERVO7-Timer4Ch1)/USART1_TX</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * PB7  - Alternate Open Drain output 2MHz (SERVO8-Timer4Ch2)/USART1_RX</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * PB6  - Alternate Push Pull output 50MHz (SERVO7-Timer4Ch1)/USART1_TX/I2C1_SCL</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * PB7  - Alternate Push Pull output 50MHz (SERVO8-Timer4Ch2)/USART1_RX/I2C1_SDA</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> * PB8  - Digital input.                   (CAN_RX)</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> * PB9  - Open Drain output 50MHz.         (CAN_TX)</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * PB10 - Alternate Open Drain output 2MHz.(I2C2_SCL)</span></div>
@@ -327,8 +327,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(7) |       \</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(8) |       \</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(9) |       \</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(10) |     \</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(11) |      \</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(10) |     \</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(11) |      \</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(12) |      \</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(13) |      \</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(14) |      \</span></div>
@@ -343,8 +343,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(7) |          \</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(8) |          \</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(9) |           \</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_2M(10) |        \</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_2M(11) |         \</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(10) |        \</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(11) |         \</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(12) |         \</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(13) |         \</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">                                     PIN_OSPEED_50M(14) |         \</span></div>
@@ -355,8 +355,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(3) |        \</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(4) |         \</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(5) |         \</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(6) |        \</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(7) |         \</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_PULLUP(6) |        \</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_PULLUP(7) |         \</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(8) |         \</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(9) |        \</span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">                                     PIN_PUPDR_FLOATING(10) |       \</span></div>
@@ -391,8 +391,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(7, 4))</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#adbfad33fc072d86908d2fe56b90b4af7">  302</a></span>&#160;<span class="preprocessor">#define VAL_GPIOB_AFRH              (PIN_AFIO_AF(8, 9) |           \</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(9, 9) |            \</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 4) |         \</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(11, 4) |          \</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 7) |         \</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(11, 7) |          \</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(12, 0) |          \</span></div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(13, 5) |          \</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(14, 5) |          \</span></div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"> * Port C setup:</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"> * PC0  - Analog input                     (ADC2)</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment"> * PC1  - Analog input                     (ADC3)</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"> * PC2  - Open Drain output 50MHz           (LED3)</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"> * PC2  - Open Drain output 50MHz          (LED3)</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment"> * PC3  - Analog input                     (ADC1)</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment"> * PC4  - Analog input                     (VBAT_MEAS)</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment"> * PC5  - Open Drain output 50MHz           (LED4)</span></div>
@@ -507,8 +507,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(7, 2))</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a66a89dd26c96c9808c4610caa08ba2e4">  418</a></span>&#160;<span class="preprocessor">#define VAL_GPIOC_AFRH              (PIN_AFIO_AF(8, 2) |           \</span></div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(9, 2) |           \</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 7) |           \</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(11, 7) |          \</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(10, 8) |           \</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(11, 8) |          \</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(12, 8) |           \</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(13, 0) |          \</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">                                     PIN_AFIO_AF(14, 0) |          \</span></div>
@@ -1364,8 +1364,8 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160; </div>
 <div class="line"><a name="l01278"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05"> 1278</a></span>&#160;<span class="preprocessor">#define RC_PPM_TICKS_PER_USEC 6</span></div>
 <div class="line"><a name="l01279"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a1365ea029b2ef8463ee8c0865b81749b"> 1279</a></span>&#160;<span class="preprocessor">#define PPM_TIMER_FREQUENCY 6000000</span></div>
-<div class="line"><a name="l01280"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a"> 1280</a></span>&#160;<span class="preprocessor">#define PPM_CHANNEL ICU_CHANNEL_1</span></div>
-<div class="line"><a name="l01281"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a87537e4413a12b7b177ea61d489c2621"> 1281</a></span>&#160;<span class="preprocessor">#define PPM_TIMER ICUD1</span></div>
+<div class="line"><a name="l01280"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a"> 1280</a></span>&#160;<span class="preprocessor">#define PPM_CHANNEL ICU_CHANNEL_2</span></div>
+<div class="line"><a name="l01281"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a87537e4413a12b7b177ea61d489c2621"> 1281</a></span>&#160;<span class="preprocessor">#define PPM_TIMER ICUD2</span></div>
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160; </div>
 <div class="line"><a name="l01286"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#ac15ff38aa7a906c0cb5dc9a2f8803804"> 1286</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SCL                  PAL_LINE(GPIOB, 6U)</span></div>
 <div class="line"><a name="l01287"></a><span class="lineno"><a class="line" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a0dc451bda5062cde685b36075f3954d6"> 1287</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SDA                  PAL_LINE(GPIOB, 7U)</span></div>
@@ -1442,7 +1442,7 @@ $(document).ready(function(){initNavTree('lisa__mxs_2chibios_2v1_80_2board_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_90ae65582e264cb543676e812d131a6a.html">lisa_mxs</a></li><li class="navelem"><a class="el" href="dir_f0cfff140ba0c317c58d7dd1e620469d.html">chibios</a></li><li class="navelem"><a class="el" href="dir_dd01c972e7576ea803a62b362663a93b.html">v1.0</a></li><li class="navelem"><a class="el" href="lisa__mxs_2chibios_2v1_80_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Sat Feb 25 2023 13:08:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 28 2023 17:43:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
