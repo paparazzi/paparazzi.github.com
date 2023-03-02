@@ -59,7 +59,6 @@ var nav_8c =
     [ "fp_pitch", "nav_8c.html#a737a463b508f62286a0e62c5ed5648b4", null ],
     [ "fp_throttle", "nav_8c.html#a2be28bd06add4db649c8a0e9f773281a", null ],
     [ "horizontal_mode", "nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21", null ],
-    [ "last_wp", "nav_8c.html#a280519e0d643e2e7ec41137b887d0b31", null ],
     [ "last_x", "nav_8c.html#ab2e97613bcf8e5721e639812c7a3469a", null ],
     [ "last_y", "nav_8c.html#a38c13a13ef3e5a3b6480f71bf244e668", null ],
     [ "nav_altitude", "nav_8c.html#a67342fe7d0a993249d4b4cd0e20821ce", null ],

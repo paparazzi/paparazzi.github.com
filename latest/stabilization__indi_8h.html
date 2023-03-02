@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('stabilization__indi_8h.html',''); init
 <div class="title">stabilization_indi.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stabilization__attitude__common__int_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_common_int.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization__attitude__common__int_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_common_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization__attitude__ref__quat__int_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_ref_quat_int.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_indi.h:</div>
@@ -102,22 +103,23 @@ $(document).ready(function(){initNavTree('stabilization__indi_8h.html',''); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__indi_8h__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__indi_8h" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__indi_8h" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__indi_8h">
-<area shape="rect" title=" " alt="" coords="224,5,395,61"/>
-<area shape="rect" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="107,109,298,165"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="365,109,555,165"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="230,303,410,329"/>
-<area shape="rect" title=" " alt="" coords="5,221,165,247"/>
-<area shape="rect" title=" " alt="" coords="243,452,298,479"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="403,377,559,404"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="79,377,233,404"/>
-<area shape="rect" title=" " alt="" coords="309,377,379,404"/>
-<area shape="rect" title=" " alt="" coords="527,452,590,479"/>
-<area shape="rect" title=" " alt="" coords="433,452,503,479"/>
-<area shape="rect" title=" " alt="" coords="614,452,682,479"/>
-<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title="Rotorcraft attitude reference generation API." alt="" coords="240,213,400,255"/>
-<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="425,213,583,255"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="513,303,705,329"/>
-<area shape="rect" title=" " alt="" coords="685,377,843,404"/>
+<area shape="rect" title=" " alt="" coords="210,5,381,61"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="220,221,371,262"/>
+<area shape="rect" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="5,213,196,269"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="472,109,663,165"/>
+<area shape="rect" title=" " alt="" coords="349,467,404,493"/>
+<area shape="rect" title=" " alt="" coords="22,317,182,344"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="323,317,503,344"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="679,317,871,344"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="581,392,737,419"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="404,392,557,419"/>
+<area shape="rect" title=" " alt="" coords="309,392,380,419"/>
+<area shape="rect" title=" " alt="" coords="705,467,768,493"/>
+<area shape="rect" title=" " alt="" coords="611,467,681,493"/>
+<area shape="rect" title=" " alt="" coords="792,467,860,493"/>
+<area shape="rect" title=" " alt="" coords="863,392,1021,419"/>
+<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title="Rotorcraft attitude reference generation API." alt="" coords="395,221,555,262"/>
+<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="580,221,739,262"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -166,6 +168,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a487bd4ac66f844d9d1adfb696f950604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604">stabilization_indi_set_earth_cmd_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *cmd, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:a487bd4ac66f844d9d1adfb696f950604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attitude setpoint from command in earth axes.  <a href="stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604">More...</a><br /></td></tr>
 <tr class="separator:a487bd4ac66f844d9d1adfb696f950604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20c753face711591a2a4eba30a7a635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#aa20c753face711591a2a4eba30a7a635">stabilization_indi_set_stab_sp</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="memdesc:aa20c753face711591a2a4eba30a7a635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attitude setpoint from stabilization setpoint struct.  <a href="stabilization__indi_8h.html#aa20c753face711591a2a4eba30a7a635">More...</a><br /></td></tr>
+<tr class="separator:aa20c753face711591a2a4eba30a7a635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d2e6f79486bfa4541eb13281a31040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#ac3d2e6f79486bfa4541eb13281a31040">stabilization_indi_rate_run</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> rate_ref, bool in_flight)</td></tr>
 <tr class="memdesc:ac3d2e6f79486bfa4541eb13281a31040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the INDI calculations.  <a href="stabilization__indi_8h.html#ac3d2e6f79486bfa4541eb13281a31040">More...</a><br /></td></tr>
 <tr class="separator:ac3d2e6f79486bfa4541eb13281a31040"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +213,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00041">41</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00042">42</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Indi_gains:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -251,7 +256,7 @@ rate</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00030">30</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00031">31</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +304,7 @@ rate</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00548">548</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00559">559</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -392,7 +397,7 @@ rate</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00375">375</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00386">386</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -436,7 +441,7 @@ rate</td>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00592">592</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00603">603</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -544,6 +549,34 @@ rate</td>
 
 </div>
 </div>
+<a id="aa20c753face711591a2a4eba30a7a635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20c753face711591a2a4eba30a7a635">&#9670;&nbsp;</a></span>stabilization_indi_set_stab_sp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_indi_set_stab_sp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attitude setpoint from stabilization setpoint struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sp</td><td>Stabilization setpoint structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00373">373</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aadec734a354c9ca37ceea556f59bcf8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadec734a354c9ca37ceea556f59bcf8c">&#9670;&nbsp;</a></span>actuator_state_filt_vect</h2>
@@ -567,7 +600,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00131">131</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00070">ctrl_eff_scheduling_periodic()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00375">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00070">ctrl_eff_scheduling_periodic()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00386">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -593,7 +626,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00073">73</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00070">ctrl_eff_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00375">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00070">ctrl_eff_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00386">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +652,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00179">179</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00771">calc_g1g2_pseudo_inv()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00094">ctrl_eff_scheduling_periodic_a()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00094">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00753">sum_g1_g2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00782">calc_g1g2_pseudo_inv()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00094">ctrl_eff_scheduling_periodic_a()</a>, <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00094">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00764">sum_g1_g2()</a>.</p>
 
 </div>
 </div>
@@ -645,7 +678,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00083">83</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00548">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00375">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00108">ctrl_eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00559">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00386">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -671,7 +704,7 @@ rate</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00100">100</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00375">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00386">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -733,7 +766,7 @@ rate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8h.html">stabilization_indi.h</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

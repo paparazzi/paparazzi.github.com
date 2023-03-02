@@ -28,7 +28,6 @@ var rover_2navigation_8c =
     [ "send_wp_moved", "rover_2navigation_8c.html#af6a9f2948665f049b94ca46998f2bc0d", null ],
     [ "set_exception_flag", "rover_2navigation_8c.html#afda5d6ecdad02e85658a6f1c94194141", null ],
     [ "failsafe_mode_dist2", "rover_2navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e", null ],
-    [ "last_wp", "rover_2navigation_8c.html#a280519e0d643e2e7ec41137b887d0b31", null ],
     [ "max_dist2_from_home", "rover_2navigation_8c.html#ab0ed2ee7b3192c24e5386a15a2b28d86", null ],
     [ "max_dist_from_home", "rover_2navigation_8c.html#a39e68d4d623ea9227c80c01203ce97b5", null ],
     [ "nav", "rover_2navigation_8c.html#a400a223b9129dcdbc22f45f26edda1d3", null ]

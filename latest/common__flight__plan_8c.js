@@ -7,5 +7,6 @@ var common__flight__plan_8c =
     [ "last_stage", "common__flight__plan_8c.html#a731227193d590af31f6ab76fcd4f6543", null ],
     [ "nav_block", "common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be", null ],
     [ "nav_stage", "common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49", null ],
-    [ "stage_time", "common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0", null ]
+    [ "stage_time", "common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0", null ],
+    [ "UNUSED", "common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f", null ]
 ];

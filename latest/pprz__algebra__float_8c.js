@@ -50,9 +50,11 @@ var pprz__algebra__float_8c =
     [ "float_rmat_transp_ratemult", "group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532", null ],
     [ "float_rmat_transp_vmult", "group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6", null ],
     [ "float_rmat_vmult", "group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e", null ],
+    [ "float_vect2_bound_in_2d", "group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d", null ],
+    [ "float_vect2_scale_in_2d", "group__math__algebra__float.html#ga27a4a6df7011e31d98fe4ea0fec074fc", null ],
+    [ "float_vect3_bound_in_2d", "group__math__algebra__float.html#ga269eb3a24a8a2df8e6bbeee1e2212af6", null ],
+    [ "float_vect3_bound_in_3d", "group__math__algebra__float.html#ga6a51eb1a08c6eaf6d844ed970e73db07", null ],
     [ "float_vect3_integrate_fi", "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850", null ],
-    [ "renorm_factor", "pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3", null ],
-    [ "vect_bound_in_2d", "group__math__algebra__float.html#gaee1f02031703a4aca27bc7b9df996a55", null ],
-    [ "vect_bound_in_3d", "group__math__algebra__float.html#gadd9d9470d143dce8bd844889cbc62ad9", null ],
-    [ "vect_scale", "group__math__algebra__float.html#ga205aa96a656e1c7197f0121a127710d1", null ]
+    [ "float_vect3_scale_in_2d", "group__math__algebra__float.html#ga229426ae611f821094bb8c9daf3f0a1b", null ],
+    [ "renorm_factor", "pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3", null ]
 ];

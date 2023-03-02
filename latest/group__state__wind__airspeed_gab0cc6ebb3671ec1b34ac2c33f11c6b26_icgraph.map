@@ -1,5 +1,5 @@
 <map id="stateGetAirspeed_f" name="stateGetAirspeed_f">
-<area shape="rect" id="node1" title="Get airspeed (float)." alt="" coords="729,449,876,476"/>
+<area shape="rect" id="node1" title="Get airspeed (float)." alt="" coords="729,428,876,455"/>
 <area shape="rect" id="node2" href="$air__data_8c.html#abdd14cec10b066ee747da35cbab63334" title="Parse datalink wind info message." alt="" coords="471,5,673,32"/>
 <area shape="rect" id="node3" href="$scheduling__indi__simple_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="500,57,644,98"/>
 <area shape="rect" id="node4" href="$ctrl__effectiveness__scheduling_8c.html#a5eaf014aef60dc4f95aa363e248a46ac" title=" " alt="" coords="500,122,644,163"/>
@@ -7,24 +7,23 @@
 <area shape="rect" id="node7" href="$generic__com_8c.html#aa0f6db51f359937bdb56324a3b647175" title=" " alt="" coords="490,239,654,265"/>
 <area shape="rect" id="node8" href="$common__nav_8c.html#a0bb529b33392eba09b44a6b34be03cc0" title="Compute time to home use wind and airspeed when available." alt="" coords="500,289,644,316"/>
 <area shape="rect" id="node9" href="$guidance__indi__hybrid_8c.html#a63a53af0f115f0ba3f95d80d0a9ae6c2" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="477,340,667,367"/>
-<area shape="rect" id="node10" href="$guidance__indi__hybrid_8c.html#afa3b5095f6b5beadbb8662d3b3519bc9" title=" " alt="" coords="258,365,398,392"/>
-<area shape="rect" id="node11" href="$logger__control__effectiveness_8c.html#a34e7856739170b664a5dffcef7f4e5f1" title="Log the values to file." alt="" coords="467,442,677,483"/>
-<area shape="rect" id="node12" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="487,508,657,535"/>
-<area shape="rect" id="node15" href="$nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="481,559,663,585"/>
-<area shape="rect" id="node16" href="$eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="463,609,681,636"/>
-<area shape="rect" id="node18" href="$fixedwing_2autopilot__firmware_8c.html#a66607b1cbf8f7535ab395e10f531e989" title=" " alt="" coords="514,660,630,687"/>
-<area shape="rect" id="node21" href="$nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="515,711,629,737"/>
-<area shape="rect" id="node22" href="$stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="505,762,639,803"/>
-<area shape="rect" id="node26" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="507,828,637,855"/>
-<area shape="rect" id="node28" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="481,879,663,905"/>
+<area shape="rect" id="node10" href="$logger__control__effectiveness_8c.html#a34e7856739170b664a5dffcef7f4e5f1" title="Log the values to file." alt="" coords="467,391,677,433"/>
+<area shape="rect" id="node11" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft." alt="" coords="487,457,657,484"/>
+<area shape="rect" id="node14" href="$nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="481,508,663,535"/>
+<area shape="rect" id="node15" href="$eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7" title="Function that calculates control effectiveness values for the Nederdrone inner loop." alt="" coords="463,559,681,585"/>
+<area shape="rect" id="node17" href="$fixedwing_2autopilot__firmware_8c.html#a66607b1cbf8f7535ab395e10f531e989" title=" " alt="" coords="514,609,630,636"/>
+<area shape="rect" id="node20" href="$nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="515,660,629,687"/>
+<area shape="rect" id="node21" href="$stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="505,711,639,753"/>
+<area shape="rect" id="node25" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop." alt="" coords="507,777,637,804"/>
+<area shape="rect" id="node27" href="$wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751" title=" " alt="" coords="481,828,663,855"/>
 <area shape="rect" id="node5" href="$ctrl__effectiveness__scheduling_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="256,122,400,163"/>
-<area shape="rect" id="node13" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="277,475,379,501"/>
-<area shape="rect" id="node14" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="261,525,395,552"/>
-<area shape="rect" id="node17" href="$eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="256,594,400,635"/>
-<area shape="rect" id="node19" href="$fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="241,660,415,687"/>
-<area shape="rect" id="node20" href="$autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="45,660,153,687"/>
-<area shape="rect" id="node23" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="261,711,395,753"/>
-<area shape="rect" id="node25" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="247,777,409,804"/>
-<area shape="rect" id="node24" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="5,719,193,745"/>
-<area shape="rect" id="node27" href="$fixedwing_2autopilot__static_8c.html#a315546d9034361bbc6970b3792dc8b67" title=" " alt="" coords="274,828,382,855"/>
+<area shape="rect" id="node12" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="277,424,379,451"/>
+<area shape="rect" id="node13" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="261,475,395,501"/>
+<area shape="rect" id="node16" href="$eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10" title="Periodic function that interpolates between gain sets depending on the scheduling variable." alt="" coords="256,543,400,585"/>
+<area shape="rect" id="node18" href="$fixedwing_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function." alt="" coords="241,609,415,636"/>
+<area shape="rect" id="node19" href="$autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function." alt="" coords="45,609,153,636"/>
+<area shape="rect" id="node22" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="261,661,395,702"/>
+<area shape="rect" id="node24" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="247,727,409,753"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="5,668,193,695"/>
+<area shape="rect" id="node26" href="$fixedwing_2autopilot__static_8c.html#a315546d9034361bbc6970b3792dc8b67" title=" " alt="" coords="274,777,382,804"/>
 </map>

@@ -135,6 +135,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5d3ddba0962294e6c33573f86c4b1eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731227193d590af31f6ab76fcd4f6543"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8c.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a></td></tr>
 <tr class="separator:a731227193d590af31f6ab76fcd4f6543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9314d7061c454ecf2111d3965db8f23f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="common__flight__plan_8h.html#a280519e0d643e2e7ec41137b887d0b31">last_wp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></td></tr>
+<tr class="separator:a9314d7061c454ecf2111d3965db8f23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common flight_plan functions shared between fixedwing and rotorcraft. </p>
@@ -159,9 +161,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00051">51</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="common__flight__plan_8c_source.html#l00037">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00037">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_stage</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>, and <a class="el" href="nav_8c_source.html#l00587">nav_parse_BLOCK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>, and <a class="el" href="nav_8c_source.html#l00584">nav_parse_BLOCK()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -211,7 +213,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00041">41</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="common__flight__plan_8c_source.html#l00033">block_time</a>, <a class="el" href="common__flight__plan_8h_source.html#l00044">InitStage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
+<p class="reference">References <a class="el" href="common__flight__plan_8c_source.html#l00032">block_time</a>, <a class="el" href="common__flight__plan_8h_source.html#l00045">InitStage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_block</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00034">nav_stage</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -248,9 +250,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00032">32</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00403">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00157">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00250">nav_periodic_task()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00277">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +270,7 @@ Variables</h2></td></tr>
 
 <p>To save the current block/stage to enable return. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00038">38</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00037">37</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>.</p>
 
@@ -286,7 +288,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00038">38</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00037">37</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>.</p>
 
@@ -304,9 +306,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00034">34</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00092">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00533">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="autopilot_8c_source.html#l00086">send_minimal_com()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00157">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00092">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="autopilot_8c_source.html#l00086">send_minimal_com()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00277">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -322,9 +324,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00034">34</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00533">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00157">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00277">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -342,9 +344,27 @@ Variables</h2></td></tr>
 
 <p>In s. </p>
 
-<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00032">32</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00095">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00403">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00157">send_nav_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="common__nav_8c_source.html#l00153">common_nav_periodic_task()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00250">nav_periodic_task()</a>, and <a class="el" href="nav__rotorcraft__base_8c_source.html#l00277">send_nav_status()</a>.</p>
+
+</div>
+</div>
+<a id="a9314d7061c454ecf2111d3965db8f23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9314d7061c454ecf2111d3965db8f23f">&#9670;&nbsp;</a></span>UNUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="common__flight__plan_8h.html#a280519e0d643e2e7ec41137b887d0b31">last_wp</a> UNUSED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00038">38</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="qr__solve_8c_source.html#l00867">dqrlss()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00621">get_actuator_state()</a>, <a class="el" href="cc2500__smartport_8c_source.html#l00533">processSmartPortTelemetry()</a>, <a class="el" href="qr__solve_8c_source.html#l01548">qr_solve()</a>, and <a class="el" href="wls__alloc_8c_source.html#l00112">wls_alloc()</a>.</p>
 
 </div>
 </div>
@@ -354,7 +374,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="common__flight__plan_8c.html">common_flight_plan.c</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

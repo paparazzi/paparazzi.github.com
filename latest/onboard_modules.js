@@ -1096,9 +1096,15 @@ var onboard_modules =
         [ "Raw guidance_indi_hybrid.xml file:", "module__guidance_indi_hybrid.html#module_xml__guidance_indi_hybrid", null ]
       ] ]
     ] ],
+    [ "guidance_pid_rotorcraft module", "module__guidance_pid_rotorcraft.html", [
+      [ "Example for airframe file", "module__guidance_pid_rotorcraft.html#module_load_example__guidance_pid_rotorcraft", null ],
+      [ "Module configuration options", "module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft", null ],
+      [ "Module functions", "module__guidance_pid_rotorcraft.html#functions__guidance_pid_rotorcraft", [
+        [ "Raw guidance_pid_rotorcraft.xml file:", "module__guidance_pid_rotorcraft.html#module_xml__guidance_pid_rotorcraft", null ]
+      ] ]
+    ] ],
     [ "guidance_rotorcraft module", "module__guidance_rotorcraft.html", [
       [ "Example for airframe file", "module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft", null ],
-      [ "Module configuration options", "module__guidance_rotorcraft.html#configuration__guidance_rotorcraft", null ],
       [ "Module functions", "module__guidance_rotorcraft.html#functions__guidance_rotorcraft", [
         [ "Raw guidance_rotorcraft.xml file:", "module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft", null ]
       ] ]
@@ -1997,8 +2003,7 @@ var onboard_modules =
     ] ],
     [ "nav_basic_rotorcraft module", "module__nav_basic_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft", null ],
-      [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", null ],
-      [ "Datalink Functions", "module__nav_basic_rotorcraft.html#datalink_functions__nav_basic_rotorcraft", [
+      [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", [
         [ "Raw nav_basic_rotorcraft.xml file:", "module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft", null ]
       ] ]
     ] ],
@@ -2048,6 +2053,12 @@ var onboard_modules =
         [ "Raw nav_heli_spinup.xml file:", "module__nav_heli_spinup.html#module_xml__nav_heli_spinup", null ]
       ] ]
     ] ],
+    [ "nav_hybrid module", "module__nav_hybrid.html", [
+      [ "Example for airframe file", "module__nav_hybrid.html#module_load_example__nav_hybrid", null ],
+      [ "Module functions", "module__nav_hybrid.html#functions__nav_hybrid", [
+        [ "Raw nav_hybrid.xml file:", "module__nav_hybrid.html#module_xml__nav_hybrid", null ]
+      ] ]
+    ] ],
     [ "nav_lace module", "module__nav_lace.html", [
       [ "Example for airframe file", "module__nav_lace.html#module_load_example__nav_lace", null ],
       [ "Module functions", "module__nav_lace.html#functions__nav_lace", [
@@ -2084,6 +2095,13 @@ var onboard_modules =
       [ "Example for airframe file", "module__nav_rosette.html#module_load_example__nav_rosette", null ],
       [ "Module functions", "module__nav_rosette.html#functions__nav_rosette", [
         [ "Raw nav_rosette.xml file:", "module__nav_rosette.html#module_xml__nav_rosette", null ]
+      ] ]
+    ] ],
+    [ "nav_rotorcraft module", "module__nav_rotorcraft.html", [
+      [ "Example for airframe file", "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft", null ],
+      [ "Module functions", "module__nav_rotorcraft.html#functions__nav_rotorcraft", null ],
+      [ "Datalink Functions", "module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft", [
+        [ "Raw nav_rotorcraft.xml file:", "module__nav_rotorcraft.html#module_xml__nav_rotorcraft", null ]
       ] ]
     ] ],
     [ "nav_rover_base module", "module__nav_rover_base.html", [

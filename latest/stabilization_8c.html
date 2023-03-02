@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('stabilization_8c.html',''); initResiza
 <p>General stabilization interface for rotorcrafts.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization__attitude__quat__transformations_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_quat_transformations.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -102,10 +104,25 @@ $(document).ready(function(){initNavTree('stabilization_8c.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_8c" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8c" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8c">
-<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="7,5,189,47"/>
-<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="23,95,173,136"/>
-<area shape="rect" title=" " alt="" coords="5,184,60,211"/>
-<area shape="rect" title=" " alt="" coords="85,184,245,211"/>
+<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="713,5,895,47"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="947,177,1098,218"/>
+<area shape="rect" href="stabilization__attitude__quat__transformations_8h.html" title="Quaternion transformation functions." alt="" coords="685,169,923,225"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="503,95,569,121"/>
+<area shape="rect" title=" " alt="" coords="341,423,395,449"/>
+<area shape="rect" title=" " alt="" coords="948,273,1108,300"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="477,273,657,300"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="681,273,873,300"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="937,348,1093,375"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="526,348,679,375"/>
+<area shape="rect" title=" " alt="" coords="431,348,502,375"/>
+<area shape="rect" title=" " alt="" coords="987,423,1050,449"/>
+<area shape="rect" title=" " alt="" coords="1191,423,1262,449"/>
+<area shape="rect" title=" " alt="" coords="1091,423,1159,449"/>
+<area shape="rect" title=" " alt="" coords="704,348,861,375"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="217,177,367,218"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="42,177,193,218"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="391,177,558,218"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="129,273,255,300"/>
 </map>
 </div>
 </div>
@@ -115,8 +132,40 @@ $(document).ready(function(){initNavTree('stabilization_8c.html',''); initResiza
 Functions</h2></td></tr>
 <tr class="memitem:adfc80da254aa5bbac3fc038eaaa3d9ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad">stabilization_init</a> (void)</td></tr>
 <tr class="separator:adfc80da254aa5bbac3fc038eaaa3d9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e6024d01a653e903200b89c72795b4"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a13e6024d01a653e903200b89c72795b4">stab_sp_rotate_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *vect, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="separator:a13e6024d01a653e903200b89c72795b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c4fbd3740da152c0742c639489c3be"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a75c4fbd3740da152c0742c639489c3be">stab_sp_rotate_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *vect, float <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="separator:a75c4fbd3740da152c0742c639489c3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7ccfe18fa4b4c7d686ddb7f9b3a731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a2e7ccfe18fa4b4c7d686ddb7f9b3a731">stabilization_filter_commands</a> (void)</td></tr>
 <tr class="separator:a2e7ccfe18fa4b4c7d686ddb7f9b3a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933a2abf3187537a85e675731038606c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a933a2abf3187537a85e675731038606c">stab_sp_to_quat_i</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:a933a2abf3187537a85e675731038606c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af997ac8db0c8ededc57d411e8caa47b2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#af997ac8db0c8ededc57d411e8caa47b2">stab_sp_to_quat_f</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:af997ac8db0c8ededc57d411e8caa47b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41f248e6265fdcd678691661a7f3c10"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10">stab_sp_to_eulers_i</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:ac41f248e6265fdcd678691661a7f3c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149e8580cd750bf54e879e86bc85bcd5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a149e8580cd750bf54e879e86bc85bcd5">stab_sp_to_eulers_f</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:a149e8580cd750bf54e879e86bc85bcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45fd7e0c331ad443dfc4bd6b2e5e0aa0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a45fd7e0c331ad443dfc4bd6b2e5e0aa0">stab_sp_to_rates_i</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:a45fd7e0c331ad443dfc4bd6b2e5e0aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838406e69a08c86fb7f1427aaac5629f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a838406e69a08c86fb7f1427aaac5629f">stab_sp_to_rates_f</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
+<tr class="separator:a838406e69a08c86fb7f1427aaac5629f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cca581158ca616cb1ffda9a5da0c77a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a6cca581158ca616cb1ffda9a5da0c77a">stab_sp_from_quat_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> *quat)</td></tr>
+<tr class="separator:a6cca581158ca616cb1ffda9a5da0c77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f4de42924ea662ae4f03e04c78d4bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a66f4de42924ea662ae4f03e04c78d4bf">stab_sp_from_quat_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *quat)</td></tr>
+<tr class="separator:a66f4de42924ea662ae4f03e04c78d4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4450b06845c4fe82ea4d45c2e2d4b20"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#ab4450b06845c4fe82ea4d45c2e2d4b20">stab_sp_from_eulers_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> *eulers)</td></tr>
+<tr class="separator:ab4450b06845c4fe82ea4d45c2e2d4b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844eeee3541745feb4361f870023c0d7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a844eeee3541745feb4361f870023c0d7">stab_sp_from_eulers_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *eulers)</td></tr>
+<tr class="separator:a844eeee3541745feb4361f870023c0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122d87b92a54ae599a5616214e62e189"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a122d87b92a54ae599a5616214e62e189">stab_sp_from_ltp_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *vect, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="separator:a122d87b92a54ae599a5616214e62e189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19495e791318d545a4d7444820651a71"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a19495e791318d545a4d7444820651a71">stab_sp_from_ltp_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *vect, float <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="separator:a19495e791318d545a4d7444820651a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3043efd8d0c23638ed6424088e2e7bf3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#a3043efd8d0c23638ed6424088e2e7bf3">stab_sp_from_rates_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *rates)</td></tr>
+<tr class="separator:a3043efd8d0c23638ed6424088e2e7bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d2dc9d742cd2ce9038f6ea0ef4b96a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8c.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a">stab_sp_from_rates_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *rates)</td></tr>
+<tr class="separator:ae2d2dc9d742cd2ce9038f6ea0ef4b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -129,6 +178,468 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a844eeee3541745feb4361f870023c0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844eeee3541745feb4361f870023c0d7">&#9670;&nbsp;</a></span>stab_sp_from_eulers_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_eulers_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *&#160;</td>
+          <td class="paramname"><em>eulers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, and <a class="el" href="low__pass__filter_8h_source.html#l00239">update_second_order_low_pass_int()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_a844eeee3541745feb4361f870023c0d7_cgraph.png" border="0" usemap="#astabilization_8c_a844eeee3541745feb4361f870023c0d7_cgraph" alt=""/></div>
+<map name="astabilization_8c_a844eeee3541745feb4361f870023c0d7_cgraph" id="astabilization_8c_a844eeee3541745feb4361f870023c0d7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,175,39"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="223,5,384,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4450b06845c4fe82ea4d45c2e2d4b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4450b06845c4fe82ea4d45c2e2d4b20">&#9670;&nbsp;</a></span>stab_sp_from_eulers_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_eulers_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> *&#160;</td>
+          <td class="paramname"><em>eulers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a19495e791318d545a4d7444820651a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19495e791318d545a4d7444820651a71">&#9670;&nbsp;</a></span>stab_sp_from_ltp_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_ltp_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a122d87b92a54ae599a5616214e62e189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122d87b92a54ae599a5616214e62e189">&#9670;&nbsp;</a></span>stab_sp_from_ltp_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_ltp_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a66f4de42924ea662ae4f03e04c78d4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f4de42924ea662ae4f03e04c78d4bf">&#9670;&nbsp;</a></span>stab_sp_from_quat_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_quat_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
+          <td class="paramname"><em>quat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a6cca581158ca616cb1ffda9a5da0c77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cca581158ca616cb1ffda9a5da0c77a">&#9670;&nbsp;</a></span>stab_sp_from_quat_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_quat_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> *&#160;</td>
+          <td class="paramname"><em>quat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="ae2d2dc9d742cd2ce9038f6ea0ef4b96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d2dc9d742cd2ce9038f6ea0ef4b96a">&#9670;&nbsp;</a></span>stab_sp_from_rates_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_rates_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *&#160;</td>
+          <td class="paramname"><em>rates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a3043efd8d0c23638ed6424088e2e7bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3043efd8d0c23638ed6424088e2e7bf3">&#9670;&nbsp;</a></span>stab_sp_from_rates_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stab_sp_from_rates_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
+          <td class="paramname"><em>rates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a75c4fbd3740da152c0742c639489c3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c4fbd3740da152c0742c639489c3be">&#9670;&nbsp;</a></span>stab_sp_rotate_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> stab_sp_rotate_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="low__pass__filter_8h_source.html#l00197">SecondOrderLowPass_int::i</a>, <a class="el" href="low__pass__filter_8h_source.html#l00210">init_second_order_low_pass_int()</a>, and <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_a75c4fbd3740da152c0742c639489c3be_cgraph.png" border="0" usemap="#astabilization_8c_a75c4fbd3740da152c0742c639489c3be_cgraph" alt=""/></div>
+<map name="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_cgraph" id="astabilization_8c_a75c4fbd3740da152c0742c639489c3be_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,136,39"/>
+<area shape="rect" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="184,5,351,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13e6024d01a653e903200b89c72795b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e6024d01a653e903200b89c72795b4">&#9670;&nbsp;</a></span>stab_sp_rotate_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> stab_sp_rotate_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect2">Int32Vect2</a> *&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a149e8580cd750bf54e879e86bc85bcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149e8580cd750bf54e879e86bc85bcd5">&#9670;&nbsp;</a></span>stab_sp_to_eulers_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> stab_sp_to_eulers_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00174">stabilization_attitude_set_stab_sp()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph.png" border="0" usemap="#astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" alt=""/></div>
+<map name="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph" id="astabilization_8c_a149e8580cd750bf54e879e86bc85bcd5_icgraph">
+<area shape="rect" title=" " alt="" coords="1052,31,1203,57"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="844,23,1004,65"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,5,573,32"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control." alt="" coords="621,56,796,83"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,31,360,57"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,31,188,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac41f248e6265fdcd678691661a7f3c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f248e6265fdcd678691661a7f3c10">&#9670;&nbsp;</a></span>stab_sp_to_eulers_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> stab_sp_to_eulers_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00207">stabilization_attitude_set_stab_sp()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00373">stabilization_indi_set_stab_sp()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_ac41f248e6265fdcd678691661a7f3c10_icgraph.png" border="0" usemap="#astabilization_8c_ac41f248e6265fdcd678691661a7f3c10_icgraph" alt=""/></div>
+<map name="astabilization_8c_ac41f248e6265fdcd678691661a7f3c10_icgraph" id="astabilization_8c_ac41f248e6265fdcd678691661a7f3c10_icgraph">
+<area shape="rect" title=" " alt="" coords="421,46,572,73"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="213,5,373,47"/>
+<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="227,71,360,112"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,71,165,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af997ac8db0c8ededc57d411e8caa47b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af997ac8db0c8ededc57d411e8caa47b2">&#9670;&nbsp;</a></span>stab_sp_to_quat_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> stab_sp_to_quat_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00248">stabilization_attitude_set_stab_sp()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_af997ac8db0c8ededc57d411e8caa47b2_icgraph.png" border="0" usemap="#astabilization_8c_af997ac8db0c8ededc57d411e8caa47b2_icgraph" alt=""/></div>
+<map name="astabilization_8c_af997ac8db0c8ededc57d411e8caa47b2_icgraph" id="astabilization_8c_af997ac8db0c8ededc57d411e8caa47b2_icgraph">
+<area shape="rect" title=" " alt="" coords="213,13,353,39"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,5,165,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a933a2abf3187537a85e675731038606c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933a2abf3187537a85e675731038606c">&#9670;&nbsp;</a></span>stab_sp_to_quat_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> stab_sp_to_quat_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00606">stabilization_attitude_set_stab_sp()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00373">stabilization_indi_set_stab_sp()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8c_a933a2abf3187537a85e675731038606c_icgraph.png" border="0" usemap="#astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph" alt=""/></div>
+<map name="astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph" id="astabilization_8c_a933a2abf3187537a85e675731038606c_icgraph">
+<area shape="rect" title=" " alt="" coords="421,46,560,73"/>
+<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="213,5,373,47"/>
+<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="227,71,360,112"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,71,165,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a838406e69a08c86fb7f1427aaac5629f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838406e69a08c86fb7f1427aaac5629f">&#9670;&nbsp;</a></span>stab_sp_to_rates_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> stab_sp_to_rates_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a45fd7e0c331ad443dfc4bd6b2e5e0aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45fd7e0c331ad443dfc4bd6b2e5e0aa0">&#9670;&nbsp;</a></span>stab_sp_to_rates_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> stab_sp_to_rates_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
 <a id="a2e7ccfe18fa4b4c7d686ddb7f9b3a731"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e7ccfe18fa4b4c7d686ddb7f9b3a731">&#9670;&nbsp;</a></span>stabilization_filter_commands()</h2>
 
@@ -145,27 +656,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00075">75</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, and <a class="el" href="low__pass__filter_8h_source.html#l00239">update_second_order_low_pass_int()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00370">guidance_h_run()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00282">guidance_h_run()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_cgraph.png" border="0" usemap="#astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_cgraph" alt=""/></div>
-<map name="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_cgraph" id="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,144,47"/>
-<area shape="rect" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="192,5,353,47"/>
-</map>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph.png" border="0" usemap="#astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" alt=""/></div>
 <map name="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" id="astabilization_8c_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph">
 <area shape="rect" title=" " alt="" coords="408,5,547,47"/>
@@ -192,20 +690,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00055">55</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
-
-<p class="reference">References <a class="el" href="low__pass__filter_8h_source.html#l00197">SecondOrderLowPass_int::i</a>, <a class="el" href="low__pass__filter_8h_source.html#l00210">init_second_order_low_pass_int()</a>, and <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization_8c_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph.png" border="0" usemap="#astabilization_8c_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph" alt=""/></div>
-<map name="astabilization_8c_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph" id="astabilization_8c_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,136,39"/>
-<area shape="rect" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="184,5,351,47"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -225,9 +710,9 @@ Variables</h2></td></tr>
 <p>Stabilization commands. </p>
 <p>Contains the resulting stabilization commands, regardless of whether rate or attitude is currently used. Range -MAX_PPRZ:MAX_PPRZ </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00032">32</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00034">34</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00249">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00057">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00586">guidance_h_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00486">guidance_h_traj_run()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00378">guidance_hybrid_vertical()</a>, <a class="el" href="guidance__indi_8c_source.html#l00159">guidance_indi_enter()</a>, <a class="el" href="guidance__indi_8c_source.html#l00179">guidance_indi_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00473">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00517">guidance_v_guided_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00633">guidance_v_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00299">guidance_v_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00278">guidance_v_thrust_adapt()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00099">send_rate()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00193">send_rotorcraft_cmd()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00159">send_tune_hover()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00063">send_windtunnel_meas()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, <a class="el" href="stabilization_8c_source.html#l00075">stabilization_filter_commands()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00375">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization_8c_source.html#l00055">stabilization_init()</a>, <a class="el" href="stabilization__none_8c_source.html#l00056">stabilization_none_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00250">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00399">compute_accel_from_speed_sp()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00057">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00419">guidance_h_from_nav()</a>, <a class="el" href="guidance__indi_8c_source.html#l00160">guidance_indi_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00316">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00358">guidance_v_guided_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00633">guidance_v_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00223">guidance_v_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00202">guidance_v_thrust_adapt()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00099">send_rate()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00194">send_rotorcraft_cmd()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00091">send_tune_hover()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00063">send_windtunnel_meas()</a>, <a class="el" href="stabilization_8c_source.html#l00349">stab_sp_from_eulers_f()</a>, <a class="el" href="stabilization_8c_source.html#l00093">stab_sp_rotate_f()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00181">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00386">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__none_8c_source.html#l00056">stabilization_none_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
 
 </div>
 </div>
@@ -237,7 +722,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="stabilization_8c.html">stabilization.c</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html',''); initRes
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (flag == 0) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="comment">// with 2D control, set flight altitude in integer ENU LTP frame</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="rotorcraft_2navigation_8c.html#a67ec89768eb885ae27ba8002e2fa386a">nav_flight_altitude</a> = <a class="code" href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a>(u.<a class="code" href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      nav_flight_altitude = <a class="code" href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a>(u.<a class="code" href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
@@ -154,7 +154,6 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html',''); initRes
 <div class="ttc" id="agroup__math__algebra__float_html_structFloatVect3"><div class="ttname"><a href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00054">pprz_algebra_float.h:54</a></div></div>
 <div class="ttc" id="agroup__math__algebra__int_html_gadf322ab1574f7999563eaaedce920522"><div class="ttname"><a href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a></div><div class="ttdeci">#define POS_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00217">pprz_algebra_int.h:217</a></div></div>
 <div class="ttc" id="apprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra.</div></div>
-<div class="ttc" id="arotorcraft_2navigation_8c_html_a67ec89768eb885ae27ba8002e2fa386a"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a67ec89768eb885ae27ba8002e2fa386a">nav_flight_altitude</a></div><div class="ttdeci">int32_t nav_flight_altitude</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00120">navigation.c:120</a></div></div>
 <div class="ttc" id="arotorcraft_2navigation_8h_html"><div class="ttname"><a href="rotorcraft_2navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions.</div></div>
 <div class="ttc" id="asim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00043">sim_ap.c:43</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
@@ -164,7 +163,7 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="dir_1ebbe115f258296c1edf748937894bd6.html">fc_rotor</a></li><li class="navelem"><a class="el" href="fc__rotor_8c.html">fc_rotor.c</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

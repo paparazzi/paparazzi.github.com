@@ -98,6 +98,5 @@ var rover_2navigation_8h =
     [ "NavSegment", "rover_2navigation_8h.html#a843b85f784aa3a5535ea21a6cfee4117", null ],
     [ "Oval", "rover_2navigation_8h.html#a4119553265f6ca797389fe69ee58ae68", null ],
     [ "set_exception_flag", "rover_2navigation_8h.html#afda5d6ecdad02e85658a6f1c94194141", null ],
-    [ "last_wp", "rover_2navigation_8h.html#a280519e0d643e2e7ec41137b887d0b31", null ],
     [ "nav", "rover_2navigation_8h.html#a400a223b9129dcdbc22f45f26edda1d3", null ]
 ];

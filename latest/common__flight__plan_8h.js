@@ -18,6 +18,7 @@ var common__flight__plan_8h =
     [ "block_time", "common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d", null ],
     [ "last_block", "common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec", null ],
     [ "last_stage", "common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543", null ],
+    [ "last_wp", "common__flight__plan_8h.html#a280519e0d643e2e7ec41137b887d0b31", null ],
     [ "nav_block", "common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be", null ],
     [ "nav_stage", "common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49", null ],
     [ "stage_time", "common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0", null ]

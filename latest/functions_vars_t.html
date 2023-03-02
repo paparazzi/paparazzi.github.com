@@ -147,6 +147,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 , <a class="el" href="nav__lace_8c.html#a18699227071af4404336a8103c79d555">NavLace</a>
 , <a class="el" href="nav__rosette_8c.html#aae9600e98708cda1d3acbdd7532f9363">NavRosette</a>
 , <a class="el" href="nav__trinity_8c.html#a5308bf924e2800d916e57b6c1eb951b2">NavTrinity</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#af048f3d72f317fb2c40dcbe9e6c93312">RotorcraftNavigation</a>
 , <a class="el" href="rover_2navigation_8h.html#a5f0676fde61c3816cd0f5eb817aa87cb">RoverNavigation</a>
 , <a class="el" href="cv__target__localization_8c.html#ac62a510949be7378f4324644f8479fb3">target_loc_t</a>
 </li>
@@ -251,6 +252,9 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 <li>tf
 : <a class="el" href="pprz__doublet_8h.html#a464cf287cd85bbbcb9065f631dd195a6">doublet_t</a>
 </li>
+<li>th_sp
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#aa440d722029b89d1a28f821e7da4491b">VerticalGuidance</a>
+</li>
 <li>their_public_ephemeral
 : <a class="el" href="gec_8h.html#a8005eeb1d6e393b4d5ede8350f74520c">gec_sts_ctx</a>
 </li>
@@ -354,6 +358,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 , <a class="el" href="nps__radio__control__joystick_8h.html#a766bab8a634d5f3f99303784fbf4707e">NpsJoystick</a>
 , <a class="el" href="nps__radio__control_8h.html#a5bee104a9702d79d225201e807ebad49">NpsRadioControl</a>
 , <a class="el" href="autopilot_8h.html#a25be5f8be236fe71dea54af49af03da2">pprz_autopilot</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#a31c07a7d1ad3673efd6120c205d2c8b9">RotorcraftNavigation</a>
 , <a class="el" href="rover__guidance__steering_8h.html#ab1521e6666810e9c354713d5ad4f1d01">rover_ctrl</a>
 , <a class="el" href="throttle__curve_8h.html#a872e44c3e0589415992c9a067184e1de">throttle_curve_t</a>
 </li>
@@ -367,6 +372,9 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 : <a class="el" href="crtp_8h.html#accaf8139c3cd885a8739bc64ff4bbd5a">crtp_commander</a>
 , <a class="el" href="optical__flow__functions_8h.html#abe6cde90c8ee62cf1b53a89d589b2ef8">DesiredInputs</a>
 , <a class="el" href="direct__memory__logger_8c.html#a7c2512e416ccbb707faa706532f205d2">LogStruct</a>
+</li>
+<li>thrust_coeff
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#ae7664ea2f5d37db4e6b6d2433be6a6f9">VerticalGuidance</a>
 </li>
 <li>thrusts
 : <a class="el" href="nps__fdm__gazebo_8cpp.html#a93e9445eac3352ff841c5d96451bf1d4">gazebo_actuators_t</a>
@@ -486,14 +494,16 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 : <a class="el" href="discrete__ekf__no__north_8h.html#a84109625b89f2ae6c74f935e23edaa32">discrete_ekf_no_north</a>
 </li>
 <li>to
-: <a class="el" href="mission__common_8h.html#a3b3e07395e74afca00d807f865229ed5">_mission_segment</a>
+: <a class="el" href="mission__common_8h.html#a510760f3d21dc907aadb9ea842773e6a">_mission_segment</a>
+, <a class="el" href="nav__base_8h.html#a7442d9f32aa6481c7fcd7e850cd9b142">NavGoto_t</a>
 , <a class="el" href="nav__rover__base_8h.html#aedb0ed11dec637733350c6643a8724af">RoverNavGoto</a>
 </li>
 <li>toggle
 : <a class="el" href="structgpio__ext__functions.html#ac07a94024ff754b7cef9138754b47fec">gpio_ext_functions</a>
 </li>
 <li>too_far_from_home
-: <a class="el" href="rover_2navigation_8h.html#a63de7e0384fc8c10946614cc5a6a5ccc">RoverNavigation</a>
+: <a class="el" href="rotorcraft_2navigation_8h.html#af1c1cdc0c80ffd264b511d7db46ec910">RotorcraftNavigation</a>
+, <a class="el" href="rover_2navigation_8h.html#a63de7e0384fc8c10946614cc5a6a5ccc">RoverNavigation</a>
 </li>
 <li>torques
 : <a class="el" href="nps__fdm__gazebo_8cpp.html#a7d6855faceba536a5c22fdeb10654990">gazebo_actuators_t</a>
@@ -767,6 +777,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 , <a class="el" href="px4flow_8h.html#a0cc4c2bae594f27ebad6aa56f252818c">mavlink_heartbeat</a>
 , <a class="el" href="mpu60x0_8h.html#a78539a4ae7f515457239d0a8ef918378">Mpu60x0Config</a>
 , <a class="el" href="nps__radio__control_8h.html#a9f81ef6c0e50462c093df6631fc0a3ce">NpsRadioControl</a>
+, <a class="el" href="structStabilizationSetpoint.html#af8ccfe3b97dae95a655b219d1f9f7f77">StabilizationSetpoint</a>
 , <a class="el" href="syslink_8h.html#a83dd0c8709b64b5f9daa7dcfc6f94701">syslink_message_t</a>
 , <a class="el" href="cv__target__localization_8c.html#ab50456bda06fc8c27da4e81b9555b24d">target_loc_t</a>
 </li>
@@ -776,7 +787,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:14 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

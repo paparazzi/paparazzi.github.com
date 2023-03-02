@@ -13,6 +13,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_indi_hybrid.c", "guidance__indi__hybrid_8c.html", "guidance__indi__hybrid_8c" ],
     [ "guidance_indi_hybrid.h", "guidance__indi__hybrid_8h.html", "guidance__indi__hybrid_8h" ],
     [ "guidance_module.h", "guidance__module_8h.html", null ],
+    [ "guidance_pid.c", "guidance__pid_8c.html", "guidance__pid_8c" ],
+    [ "guidance_pid.h", "guidance__pid_8h.html", "guidance__pid_8h" ],
     [ "guidance_v.c", "rotorcraft_2guidance_2guidance__v_8c.html", "rotorcraft_2guidance_2guidance__v_8c" ],
     [ "guidance_v.h", "rotorcraft_2guidance_2guidance__v_8h.html", "rotorcraft_2guidance_2guidance__v_8h" ],
     [ "guidance_v_adapt.c", "guidance__v__adapt_8c.html", "guidance__v__adapt_8c" ],

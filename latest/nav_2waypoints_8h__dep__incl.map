@@ -1,13 +1,13 @@
 <map id="sw/airborne/modules/nav/waypoints.h" name="sw/airborne/modules/nav/waypoints.h">
-<area shape="rect" id="node1" title=" " alt="" coords="4007,5,4165,47"/>
-<area shape="rect" id="node2" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="1911,102,2082,143"/>
-<area shape="rect" id="node16" href="$nav__fish_8c.html" title=" " alt="" coords="3557,206,3716,247"/>
-<area shape="rect" id="node22" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="3723,102,3889,143"/>
-<area shape="rect" id="node26" href="$cv__target__localization_8c.html" title=" " alt="" coords="3913,95,4075,151"/>
-<area shape="rect" id="node27" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="4099,95,4257,151"/>
-<area shape="rect" id="node28" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="4281,102,4440,143"/>
-<area shape="rect" id="node29" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="4464,102,4623,143"/>
-<area shape="rect" id="node30" href="$nav_2waypoints_8c.html" title=" " alt="" coords="4647,102,4805,143"/>
+<area shape="rect" id="node1" title=" " alt="" coords="4372,5,4531,47"/>
+<area shape="rect" id="node2" href="$rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="2147,102,2318,143"/>
+<area shape="rect" id="node16" href="$nav__fish_8c.html" title=" " alt="" coords="3923,206,4081,247"/>
+<area shape="rect" id="node24" href="$rover_2navigation_8h.html" title="Rover navigation functions." alt="" coords="4088,102,4255,143"/>
+<area shape="rect" id="node28" href="$cv__target__localization_8c.html" title=" " alt="" coords="4279,95,4440,151"/>
+<area shape="rect" id="node29" href="$datalink_2missionlib_2waypoints_8c.html" title="Improvement of the missionlib implementation of the waypoint protocol, truly global waypoints are use..." alt="" coords="4464,95,4623,151"/>
+<area shape="rect" id="node30" href="$ins__ekf2_8cpp.html" title="INS based in the EKF2 of PX4." alt="" coords="4647,102,4805,143"/>
+<area shape="rect" id="node31" href="$follow_8c.html" title="Follow a certain AC ID." alt="" coords="4829,102,4988,143"/>
+<area shape="rect" id="node32" href="$nav_2waypoints_8c.html" title=" " alt="" coords="5012,102,5171,143"/>
 <area shape="rect" id="node3" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="5,199,172,255"/>
 <area shape="rect" id="node4" href="$rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="196,199,363,255"/>
 <area shape="rect" id="node5" href="$guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="387,199,561,255"/>
@@ -21,12 +21,14 @@
 <area shape="rect" id="node13" href="$mission__rotorcraft__nav_8c.html" title="mission navigation for rotorcrafts" alt="" coords="1999,206,2239,247"/>
 <area shape="rect" id="node14" href="$ctc__target_8c.html" title=" " alt="" coords="2263,206,2426,247"/>
 <area shape="rect" id="node15" href="$fc__rotor_8c.html" title=" " alt="" coords="2450,206,2629,247"/>
-<area shape="rect" id="node17" href="$nav__survey__poly__rotorcraft_8c.html" title=" " alt="" coords="2653,199,2817,255"/>
-<area shape="rect" id="node18" href="$nav__survey__rectangle__rotorcraft_8c.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="2825,303,3022,359"/>
-<area shape="rect" id="node19" href="$nav__survey__rectangle__rotorcraft_8h.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="2893,199,3090,255"/>
-<area shape="rect" id="node20" href="$orange__avoider_8c.html" title=" " alt="" coords="3114,199,3290,255"/>
-<area shape="rect" id="node21" href="$stereocam__droplet_8c.html" title=" " alt="" coords="3314,199,3533,255"/>
-<area shape="rect" id="node23" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="3740,206,3907,247"/>
-<area shape="rect" id="node24" href="$nav__rover__base_8h.html" title=" " alt="" coords="3931,206,4100,247"/>
-<area shape="rect" id="node25" href="$nav__rover__base_8c.html" title=" " alt="" coords="3931,310,4099,351"/>
+<area shape="rect" id="node17" href="$nav__rotorcraft__base_8c.html" title=" " alt="" coords="2653,199,2812,255"/>
+<area shape="rect" id="node18" href="$nav__rotorcraft__hybrid_8c.html" title="Specific navigation functions for hybrid aircraft." alt="" coords="2836,199,2995,255"/>
+<area shape="rect" id="node19" href="$nav__survey__poly__rotorcraft_8c.html" title=" " alt="" coords="3019,199,3183,255"/>
+<area shape="rect" id="node20" href="$nav__survey__rectangle__rotorcraft_8c.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="3190,303,3387,359"/>
+<area shape="rect" id="node21" href="$nav__survey__rectangle__rotorcraft_8h.html" title="Automatic survey of a rectangle for rotorcraft." alt="" coords="3258,199,3455,255"/>
+<area shape="rect" id="node22" href="$orange__avoider_8c.html" title=" " alt="" coords="3479,199,3655,255"/>
+<area shape="rect" id="node23" href="$stereocam__droplet_8c.html" title=" " alt="" coords="3679,199,3898,255"/>
+<area shape="rect" id="node25" href="$rover_2navigation_8c.html" title="Rover navigation functions." alt="" coords="4105,206,4272,247"/>
+<area shape="rect" id="node26" href="$nav__rover__base_8h.html" title=" " alt="" coords="4296,206,4465,247"/>
+<area shape="rect" id="node27" href="$nav__rover__base_8c.html" title=" " alt="" coords="4297,310,4465,351"/>
 </map>

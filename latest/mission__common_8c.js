@@ -1,7 +1,6 @@
 var mission__common_8c =
 [
     [ "MISSION_CHECK_UNIQUE_ID", "mission__common_8c.html#ab28e6577b24ee45e61cf48d255a55005", null ],
-    [ "mission_element_convert", "mission__common_8c.html#a7102be183680d1bf29c5da57ee31f852", null ],
     [ "mission_get", "mission__common_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4", null ],
     [ "mission_get_from_index", "mission__common_8c.html#a8cfd722b32d9d6683e562b437e15d8bc", null ],
     [ "mission_get_registered", "mission__common_8c.html#a1323ceffc151a2671a0e6c6753157763", null ],

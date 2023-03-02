@@ -20,13 +20,13 @@ var nav__survey__rectangle__rotorcraft_8c =
     [ "nav_survey_east", "nav__survey__rectangle__rotorcraft_8c.html#a1709471dbc0af61015c59e136100e118", null ],
     [ "nav_survey_north", "nav__survey__rectangle__rotorcraft_8c.html#a4bd5ccc05012fbe9ba362b941aea7294", null ],
     [ "nav_survey_rectangle_active", "nav__survey__rectangle__rotorcraft_8c.html#a798c795f4e7c8da4f66e23ddd78ff4b2", null ],
+    [ "nav_survey_send", "nav__survey__rectangle__rotorcraft_8c.html#abdaf8d1e7b0762fd985216a95938a99c", null ],
     [ "nav_survey_shift", "nav__survey__rectangle__rotorcraft_8c.html#ad07af37c66417d0eac97740c696ace0d", null ],
     [ "nav_survey_south", "nav__survey__rectangle__rotorcraft_8c.html#a5bd732618e35c5a855ef4e0549f733f0", null ],
     [ "nav_survey_west", "nav__survey__rectangle__rotorcraft_8c.html#aeb19008e34a80086cfcb00ae5ae32fdd", null ],
     [ "rectangle_survey_sweep_num", "nav__survey__rectangle__rotorcraft_8c.html#a25ca15e256a339687900d5c06c15535f", null ],
     [ "survey_orientation", "nav__survey__rectangle__rotorcraft_8c.html#a30834a107650d84fca6f47cbf45cf937", null ],
     [ "survey_to", "nav__survey__rectangle__rotorcraft_8c.html#a65ed667b6f0e20aa678e97ddefc3c3e8", null ],
-    [ "survey_to_i", "nav__survey__rectangle__rotorcraft_8c.html#ace5aca63f68d84ab21ef2ea8abcfed72", null ],
     [ "survey_uturn", "nav__survey__rectangle__rotorcraft_8c.html#a0b0579b835970307b17666330dbf4e89", null ],
     [ "sweep", "nav__survey__rectangle__rotorcraft_8c.html#a0a765156054c952e91a42acfa922bd55", null ]
 ];

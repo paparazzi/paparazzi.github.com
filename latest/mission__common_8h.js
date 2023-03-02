@@ -1,19 +1,19 @@
 var mission__common_8h =
 [
     [ "_mission_wp", "mission__common_8h.html#struct__mission__wp", [
-      [ "wp", "mission__common_8h.html#a944e41fcfc95caff73a7ca1fc5de0a9b", null ]
+      [ "wp", "mission__common_8h.html#a1df0ee5352d97f507537b0340db3a8a5", null ]
     ] ],
     [ "_mission_circle", "mission__common_8h.html#struct__mission__circle", [
-      [ "center", "mission__common_8h.html#aca01d37f7ae0fc725f54d648b38011af", null ],
+      [ "center", "mission__common_8h.html#ac5f56d1551eb67ea89b0e53409c7a626", null ],
       [ "radius", "mission__common_8h.html#ab7c2c6ef7dd82eef3ed253064455d7d9", null ]
     ] ],
     [ "_mission_segment", "mission__common_8h.html#struct__mission__segment", [
-      [ "from", "mission__common_8h.html#aaab06d4b3c15916036dd2092c776f911", null ],
-      [ "to", "mission__common_8h.html#a3b3e07395e74afca00d807f865229ed5", null ]
+      [ "from", "mission__common_8h.html#a806b628e72237ab59985323404f3d369", null ],
+      [ "to", "mission__common_8h.html#a510760f3d21dc907aadb9ea842773e6a", null ]
     ] ],
     [ "_mission_path", "mission__common_8h.html#struct__mission__path", [
       [ "nb", "mission__common_8h.html#af6e9e0b2e3c9c08a28fd099a261b2e65", null ],
-      [ "path", "mission__common_8h.html#a77044825280339aa9b199a3e89353a01", null ],
+      [ "path", "mission__common_8h.html#ad5f52550e4cea6a9c76ce33128703b12", null ],
       [ "path_idx", "mission__common_8h.html#ad5780cfe4abb38e87b2b78708a04744b", null ]
     ] ],
     [ "_mission_registered", "mission__common_8h.html#struct__mission__registered", [
@@ -37,26 +37,6 @@ var mission__common_8h =
       [ "elements", "mission__common_8h.html#a7529739f5dc027a2ccdbd1542f25b230", null ],
       [ "insert_idx", "mission__common_8h.html#acb133196b6ba998ee1545cb615b38968", null ],
       [ "registered", "mission__common_8h.html#a693ef605edb09a0259bc2009ddbaef65", null ]
-    ] ],
-    [ "_mission_wp.wp", "mission__common_8h.html#union__mission__wp_8wp", [
-      [ "wp_f", "mission__common_8h.html#ace7ee9d7abd90684fbe6fab428de7246", null ],
-      [ "wp_i", "mission__common_8h.html#a4162c7987d4ee4d340ca796aa6557a07", null ]
-    ] ],
-    [ "_mission_circle.center", "mission__common_8h.html#union__mission__circle_8center", [
-      [ "center_f", "mission__common_8h.html#a7ae950c0ebf9f2d5b679ad2d08397722", null ],
-      [ "center_i", "mission__common_8h.html#a9b6f4035d7707931961ef0efffc67a53", null ]
-    ] ],
-    [ "_mission_segment.from", "mission__common_8h.html#union__mission__segment_8from", [
-      [ "from_f", "mission__common_8h.html#a1401e57e22306ce02a453c92c845689c", null ],
-      [ "from_i", "mission__common_8h.html#aac5f97848244f955c0f263997717990b", null ]
-    ] ],
-    [ "_mission_segment.to", "mission__common_8h.html#union__mission__segment_8to", [
-      [ "to_f", "mission__common_8h.html#a08a521fbb600fa3e01451e99cfb12200", null ],
-      [ "to_i", "mission__common_8h.html#aa7498a5480317b90f030bcbe7c66301d", null ]
-    ] ],
-    [ "_mission_path.path", "mission__common_8h.html#union__mission__path_8path", [
-      [ "path_f", "mission__common_8h.html#ad6294210703acae98a62220afff108a8", null ],
-      [ "path_i", "mission__common_8h.html#a29eb2ba5b38fde1e647593a3fd2d8a34", null ]
     ] ],
     [ "_mission_element.element", "mission__common_8h.html#union__mission__element_8element", [
       [ "mission_circle", "mission__common_8h.html#a6d45cd216e3c2f03b649363a933ecbd2", null ],
@@ -90,7 +70,6 @@ var mission__common_8h =
       [ "MissionPath", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752aeb45aac28e0ac2391c20d5105433edd3", null ],
       [ "MissionCustom", "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752a2cd3753f9cd84674fcd6e205618dcce9", null ]
     ] ],
-    [ "mission_element_convert", "mission__common_8h.html#a7102be183680d1bf29c5da57ee31f852", null ],
     [ "mission_get", "mission__common_8h.html#ad6fd0022684bf2c6fda1f9626c13cfc4", null ],
     [ "mission_get_from_index", "mission__common_8h.html#a8cfd722b32d9d6683e562b437e15d8bc", null ],
     [ "mission_init", "mission__common_8h.html#a19c6efe9565f7d4a03291cb165b931ff", null ],

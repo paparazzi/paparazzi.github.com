@@ -99,14 +99,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="nav_8c.html#a64a3814d1672e69989f80701a0ff5749" title="Navigation Initialisation.">nav_init()</a></li>
-</ul>
-<h1><a class="anchor" id="datalink_functions__nav_basic_rotorcraft"></a>
-Datalink Functions</h1>
-<p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
-<ul>
-<li>on message <b>BLOCK</b> call nav_parse_BLOCK(buf)</li>
-<li>on message <b>MOVE_WP</b> call nav_parse_MOVE_WP(buf) </li>
+<li><a class="el" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions.">nav_rotorcraft_init()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -114,14 +107,12 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="rover_2navigation_8h.html">navigation.h</a></li>
+<li><a class="el" href="nav__rotorcraft__base_8h.html">nav_rotorcraft_base.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li>/navigation.c</li>
-<li><a class="el" href="common__flight__plan_8c.html">modules/nav/common_flight_plan.c</a></li>
-<li><a class="el" href="nav_2waypoints_8c.html">modules/nav/waypoints.c</a></li>
+<li><a class="el" href="nav__rotorcraft__base_8c.html">modules/nav/nav_rotorcraft_base.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__nav_basic_rotorcraft"></a>
 Raw nav_basic_rotorcraft.xml file:</h2>
@@ -133,31 +124,16 @@ Raw nav_basic_rotorcraft.xml file:</h2>
 <div class="line">      <span class="keyword">Standard</span> <span class="keyword">navigation</span> <span class="keyword">patterns</span> <span class="keyword">and</span> <span class="keyword">flight</span> <span class="keyword">plan</span> <span class="keyword">handling</span> <span class="keyword">for</span> <span class="keyword">rotorcraft</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;NAV&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;flight_altitude&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;400&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;navigation&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;SetFlightAltitude&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_heading&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;360&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;1/2^12r&quot;</span> <span class="keyword">alt_unit</span>=<span class="stringliteral">&quot;deg&quot;</span> <span class="keyword">alt_unit_coef</span>=<span class="stringliteral">&quot;0.0139882&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_radius&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;-50&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_climb_vspeed&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;10.0&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m/s&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;NAV_CLIMB_VSPEED&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_descend_vspeed&quot;</span> <span class="keyword">MIN</span>=<span class="stringliteral">&quot;-10.0&quot;</span> <span class="keyword">STEP</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">MAX</span>=<span class="stringliteral">&quot;0.0&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m/s&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;NAV_DESCEND_VSPEED&quot;</span>/&gt;</div>
-<div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">nav_rotorcraft</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">navigation</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;navigation.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;firmwares/rotorcraft&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_rotorcraft_base.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;nav_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;BLOCK&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;nav_parse_BLOCK(buf)&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;MOVE_WP&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;nav_parse_MOVE_WP(buf)&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;nav_rotorcraft_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps|hitl&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;navigation.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;common_flight_plan.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;waypoints.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_NAVIGATION&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_rotorcraft_base.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SRC_FIRMWARE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;firmwares/rotorcraft&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
@@ -173,7 +149,7 @@ Raw nav_basic_rotorcraft.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Feb 28 2023 17:56:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 2 2023 21:20:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

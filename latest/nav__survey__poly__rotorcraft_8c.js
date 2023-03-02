@@ -49,7 +49,7 @@ var nav__survey__poly__rotorcraft_8c =
     [ "PolySurveySweepBackNum", "nav__survey__poly__rotorcraft_8c.html#ab3e62926a091b20a976b93647db35644", null ],
     [ "PolySurveySweepNum", "nav__survey__poly__rotorcraft_8c.html#a438773f6f66a4fe62199819d41698455", null ],
     [ "SmallestCorner", "nav__survey__poly__rotorcraft_8c.html#a5a6904dba2d8a4c35b19da1a0b765ad9", null ],
-    [ "survey_to_i", "nav__survey__poly__rotorcraft_8c.html#ace5aca63f68d84ab21ef2ea8abcfed72", null ],
+    [ "survey_to", "nav__survey__poly__rotorcraft_8c.html#a65ed667b6f0e20aa678e97ddefc3c3e8", null ],
     [ "SurveyEntry", "nav__survey__poly__rotorcraft_8c.html#acf564808ecd89f328d887f2e12d46032", null ],
     [ "SurveyEntryWP", "nav__survey__poly__rotorcraft_8c.html#aaec4a05518ae825985d73fd771b16c78", null ],
     [ "SurveyFromWP", "nav__survey__poly__rotorcraft_8c.html#a9bd73a6120743e9d0fb7ebe99f9880f6", null ],

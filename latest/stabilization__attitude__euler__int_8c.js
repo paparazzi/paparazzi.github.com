@@ -18,6 +18,7 @@ var stabilization__attitude__euler__int_8c =
     [ "stabilization_attitude_set_earth_cmd_i", "stabilization__attitude__euler__int_8c.html#ada3ef183c206d08fd0a902adc118f542", null ],
     [ "stabilization_attitude_set_failsafe_setpoint", "stabilization__attitude__euler__int_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a", null ],
     [ "stabilization_attitude_set_rpy_setpoint_i", "stabilization__attitude__euler__int_8c.html#ac064607f64988793cadfe5ed346b269f", null ],
+    [ "stabilization_attitude_set_stab_sp", "stabilization__attitude__euler__int_8c.html#a9262eaf623b6b1eba2f9904bd2717148", null ],
     [ "att_ref_euler_i", "stabilization__attitude__euler__int_8c.html#ada15ed9b39045f381924a841237d1820", null ],
     [ "stab_att_sp_euler", "stabilization__attitude__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stabilization_att_fb_cmd", "stabilization__attitude__euler__int_8c.html#a8adda5f8d9ba43761ce43e05703fed22", null ],

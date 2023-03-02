@@ -1,5 +1,6 @@
 var nav_2waypoints_8c =
 [
+    [ "send_wp_moved", "nav_2waypoints_8c.html#af6a9f2948665f049b94ca46998f2bc0d", null ],
     [ "waypoint_clear_global_flag", "nav_2waypoints_8c.html#acb13bbc118a57cc3695da6f832515e55", null ],
     [ "waypoint_copy", "nav_2waypoints_8c.html#a06e472d86d2a78197e9094b3329077fb", null ],
     [ "waypoint_get_alt", "nav_2waypoints_8c.html#a57923d444a9d09db3f6af35f74ef9296", null ],

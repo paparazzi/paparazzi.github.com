@@ -19,6 +19,7 @@ var stabilization__attitude__quat__float_8c =
     [ "stabilization_attitude_set_earth_cmd_i", "stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542", null ],
     [ "stabilization_attitude_set_failsafe_setpoint", "stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a", null ],
     [ "stabilization_attitude_set_rpy_setpoint_i", "stabilization__attitude__quat__float_8c.html#ac064607f64988793cadfe5ed346b269f", null ],
+    [ "stabilization_attitude_set_stab_sp", "stabilization__attitude__quat__float_8c.html#a9262eaf623b6b1eba2f9904bd2717148", null ],
     [ "att_ref_quat_f", "stabilization__attitude__quat__float_8c.html#a1fc38399d31b6cb8cd51b9c90b6bfc48", null ],
     [ "body_rate_d", "stabilization__attitude__quat__float_8c.html#ac090c83a4f182c5061606cfbe13ff623", null ],
     [ "gain_idx", "stabilization__attitude__quat__float_8c.html#a88471162c0f269059f892bf96fbc7260", null ],

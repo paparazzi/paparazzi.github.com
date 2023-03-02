@@ -24,6 +24,7 @@ var stabilization__indi__simple_8c =
     [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi__simple_8c.html#a487bd4ac66f844d9d1adfb696f950604", null ],
     [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi__simple_8c.html#a2d7051eac973a8507897f6753deaf818", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi__simple_8c.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
+    [ "stabilization_indi_set_stab_sp", "stabilization__indi__simple_8c.html#aa20c753face711591a2a4eba30a7a635", null ],
     [ "stabilization_indi_simple_reset_r_filter_cutoff", "stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38", null ],
     [ "indi", "stabilization__indi__simple_8c.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ],
     [ "rates_filt_fo", "stabilization__indi__simple_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
