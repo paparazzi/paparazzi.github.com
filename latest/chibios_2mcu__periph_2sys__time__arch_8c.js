@@ -1,6 +1,5 @@
 var chibios_2mcu__periph_2sys__time__arch_8c =
 [
-    [ "STM32_SYSCLK", "chibios_2mcu__periph_2sys__time__arch_8c.html#a81594f71c9bc1c1fde4e5207e5133777", null ],
     [ "get_sys_time_msec", "chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960", null ],
     [ "get_sys_time_usec", "chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb", null ],
     [ "MUTEX_DECL", "chibios_2mcu__periph_2sys__time__arch_8c.html#ae4645504922c7d36a7f2171691ba26eb", null ],

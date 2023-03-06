@@ -1301,6 +1301,12 @@ var onboard_modules =
         [ ".0 Raw imu_lisa_s_v1.0.xml file:", "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1", null ]
       ] ]
     ] ],
+    [ "imu_matek_h743_slim module", "module__imu_matek_h743_slim.html", [
+      [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", null ],
+      [ "Auto-loaded modules", "module__imu_matek_h743_slim.html#autoloads__imu_matek_h743_slim", [
+        [ "Raw imu_matek_h743_slim.xml file:", "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim", null ]
+      ] ]
+    ] ],
     [ "imu_mpu6000 module", "module__imu_mpu6000.html", [
       [ "Example for airframe file", "module__imu_mpu6000.html#module_load_example__imu_mpu6000", null ],
       [ "Module configuration options", "module__imu_mpu6000.html#configuration__imu_mpu6000", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,18,0,4,1,0],
 "digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,18,0,4,2],
 "digital__cam_2catia_2protocol_8h.html#structmora__transport":[12,0,1,0,6,18,0,4,3],
 "digital__cam_2catia_2protocol_8h.html#uniondc__shot__union":[12,0,1,0,6,18,0,4,0],
@@ -76,6 +75,7 @@ var NAVTREEINDEX47 =
 "dir_4ee91589357a83ed771c51844e853db2.html":[12,0,1,0,6,30],
 "dir_4efd94622433e3c11231b567c9b59a8f.html":[12,0,1,0,0,2,1,3],
 "dir_4fce34fdfa3ee0c77fb7c89ba1db056f.html":[12,0,1,0,6,63],
+"dir_514a278c2e211f75cc80308d233f2db7.html":[12,0,1,0,1,15,1],
 "dir_514e42ddade0df778a696ac907fa7c01.html":[12,0,1,0,6,69],
 "dir_51637bc44748ed5b809b240786ff8f0c.html":[12,0,1,0,0,0,1,1],
 "dir_517430ae22334069e857fa1922a1fddc.html":[12,0,1,0,3,1,1],

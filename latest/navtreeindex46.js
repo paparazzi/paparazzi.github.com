@@ -1,6 +1,5 @@
 var NAVTREEINDEX46 =
 {
-"decawave__anchorless__communication_8c.html#a37c40789e9d1c232944de584f44b3b2b":[12,0,1,0,6,15,0,11],
 "decawave__anchorless__communication_8c.html#a4728ae1c2135e4a6086331c87d6f0bf5":[12,0,1,0,6,15,0,15],
 "decawave__anchorless__communication_8c.html#a4c8b864722cbb1595e04c537fa91b2a1":[12,0,1,0,6,15,0,2],
 "decawave__anchorless__communication_8c.html#a617e5fc09f1ac5290c594f2ca21ca959":[12,0,1,0,6,15,0,5],
@@ -227,8 +226,8 @@ var NAVTREEINDEX46 =
 "digital__cam_2catia_2protocol_8h.html#a6f888213f495a3883b3638d9b4038c94":[12,0,1,0,6,18,0,4,9],
 "digital__cam_2catia_2protocol_8h.html#a6fd8c7c2c92e8dd110bf60fed5305eaf":[12,0,1,0,6,18,0,4,20],
 "digital__cam_2catia_2protocol_8h.html#a750a3276f0cf15f2bf74ef59b8969f94":[12,0,1,0,6,18,0,4,3,3],
-"digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,18,0,4,1,0,1],
 "digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,18,0,4,2,1],
+"digital__cam_2catia_2protocol_8h.html#a79eb2b18c7aba84dcc49d817bc61e9ca":[12,0,1,0,6,18,0,4,1,0,1],
 "digital__cam_2catia_2protocol_8h.html#a7e4f868712584a4eaeb33931b6141d72":[12,0,1,0,6,18,0,4,1,0,2],
 "digital__cam_2catia_2protocol_8h.html#a7e4f868712584a4eaeb33931b6141d72":[12,0,1,0,6,18,0,4,2,2],
 "digital__cam_2catia_2protocol_8h.html#a8080e4edd9fdb0697c540f5a43576218":[12,0,1,0,6,18,0,4,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX46 =
 "digital__cam_2catia_2protocol_8h.html#ada82ef6a4a2c03ec067f037fa7b0043c":[12,0,1,0,6,18,0,4,4,9],
 "digital__cam_2catia_2protocol_8h.html#ae97b79ca48e80b9206b9188606d89455":[12,0,1,0,6,18,0,4,3,6],
 "digital__cam_2catia_2protocol_8h.html#afae876a13a6380155c01d2e0877f02c9":[12,0,1,0,6,18,0,4,3,8],
-"digital__cam_2catia_2protocol_8h.html#structdc__shot__union_8data":[12,0,1,0,6,18,0,4,4]
+"digital__cam_2catia_2protocol_8h.html#structdc__shot__union_8data":[12,0,1,0,6,18,0,4,4],
+"digital__cam_2catia_2protocol_8h.html#structmora__status__union_1_1mora__status__struct":[12,0,1,0,6,18,0,4,1,0]
 };
