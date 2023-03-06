@@ -1,5 +1,6 @@
 var NAVTREEINDEX186 =
 {
+"spektrum__arch_8c_source.html":[12,0,1,0,0,2,1,4,3],
 "spektrum__radio_8h.html":[12,0,1,0,6,55,21],
 "spektrum__radio_8h.html#a0a504ca751f60fabf7900b13916561a6":[12,0,1,0,6,55,21,16],
 "spektrum__radio_8h.html#a2fab1464ab1748edb2a45a08cf7c422a":[12,0,1,0,6,55,21,12],
@@ -135,8 +136,8 @@ var NAVTREEINDEX186 =
 "stabilization_8h.html#a2e7ccfe18fa4b4c7d686ddb7f9b3a731":[12,0,1,0,3,2,23,18],
 "stabilization_8h.html#a3043efd8d0c23638ed6424088e2e7bf3":[12,0,1,0,3,2,23,11],
 "stabilization_8h.html#a308ad4bc5a8ea5ca067b26939fe1bd4e":[12,0,1,0,3,2,23,1,6],
-"stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,2,1],
 "stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,3,1],
+"stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,2,1],
 "stabilization_8h.html#a45fd7e0c331ad443dfc4bd6b2e5e0aa0":[12,0,1,0,3,2,23,17],
 "stabilization_8h.html#a491ae3e10312e0b77ba279ea959fc95e":[12,0,1,0,3,2,23,1,0],
 "stabilization_8h.html#a4cfdfb33f8cf0e68b703f73cf9b9a060":[12,0,1,0,3,2,23,1,2],
@@ -154,8 +155,8 @@ var NAVTREEINDEX186 =
 "stabilization_8h.html#ac41f248e6265fdcd678691661a7f3c10":[12,0,1,0,3,2,23,13],
 "stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad":[12,0,1,0,3,2,23,19],
 "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a":[12,0,1,0,3,2,23,10],
-"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
 "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
+"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
 "stabilization_8h.html#af997ac8db0c8ededc57d411e8caa47b2":[12,0,1,0,3,2,23,14],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f":[12,0,1,0,3,2,23,3],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i":[12,0,1,0,3,2,23,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX186 =
 "stabilization__adaptive_8c.html#aecca0045300130468b5e3b6873a45abb":[12,0,1,0,3,1,1,0,45],
 "stabilization__adaptive_8c.html#af41b727a1b999a2a3f2a62fef1e32ca2":[12,0,1,0,3,1,1,0,51],
 "stabilization__adaptive_8c.html#af5250c24f99881c090561341e9c554e1":[12,0,1,0,3,1,1,0,23],
-"stabilization__adaptive_8c.html#structHCtlAdaptRef":[12,0,1,0,3,1,1,0,0],
-"stabilization__adaptive_8c_source.html":[12,0,1,0,3,1,1,0]
+"stabilization__adaptive_8c.html#structHCtlAdaptRef":[12,0,1,0,3,1,1,0,0]
 };

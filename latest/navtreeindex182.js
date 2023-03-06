@@ -1,5 +1,6 @@
 var NAVTREEINDEX182 =
 {
+"sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a94a35d6a5fa3f14fdbcb84e247c8b0b8":[12,0,1,0,7,121,4,6],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7aa3777df29ebf86047c500e0679eadcfe":[12,0,1,0,7,121,4,2],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7aa86962b1f4de1ee9b8717f647bfa0370":[12,0,1,0,7,121,4,30],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7aa88e70c7f4931a9c564c911e89ebbefc":[12,0,1,0,7,121,4,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX182 =
 "servo__cam__ctrl_8h.html#aabfb61ec228b22380dfa49f35a689da7":[12,0,1,0,6,18,14,0],
 "servo__cam__ctrl_8h_source.html":[12,0,1,0,6,18,14],
 "servo__tester_8c.html":[12,0,1,0,6,61,0],
-"servo__tester_8c.html#a1beaaf27cd6fe0d4967a358d0d8f4737":[12,0,1,0,6,61,0,10],
-"servo__tester_8c.html#a4f82ddc8af7d1a977e978edace6636ad":[12,0,1,0,6,61,0,8]
+"servo__tester_8c.html#a1beaaf27cd6fe0d4967a358d0d8f4737":[12,0,1,0,6,61,0,10]
 };

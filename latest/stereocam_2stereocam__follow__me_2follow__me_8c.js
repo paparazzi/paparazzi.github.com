@@ -7,7 +7,7 @@ var stereocam_2stereocam__follow__me_2follow__me_8c =
     [ "STEREOCAM_FOLLOW_ME_USE_OPTITRACK", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a3b9e56ef8f8d7566fb831387a9957c3c", null ],
     [ "changeRollYawPhase", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a807a6df05b0e6e375ccd7fa2dbc97fff", null ],
     [ "follow_me", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a86b645981e64487edee42fa1bf3bc848", null ],
-    [ "increase_nav_heading", "stereocam_2stereocam__follow__me_2follow__me_8c.html#ae1a9c8254b1c7c3d26e1545b937ed3da", null ],
+    [ "increase_nav_heading", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a6593fd6372e53f7ce3ede6fd44872d1e", null ],
     [ "ref_pitch", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a87bacea2b0bab9265ed2f255198d38c0", null ],
     [ "ref_roll", "stereocam_2stereocam__follow__me_2follow__me_8c.html#afd52552e7dc0c1f6f124bdd4343f978c", null ],
     [ "selfie_alt", "stereocam_2stereocam__follow__me_2follow__me_8c.html#a9a9a128aa9067d7277b9e2a5341e41a8", null ]
