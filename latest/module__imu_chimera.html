@@ -88,18 +88,13 @@ $(document).ready(function(){initNavTree('module__imu_chimera.html',''); initRes
 <div class="title">imu_chimera module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>MPU9250 IMU via SPI.</b></p>
+<div class="textblock"><p><b>MPU9250 IMU via I2C.</b></p>
 <p><b></b></p>
-<p>Basically the same as imu_mpu9250_spi, only changed axes assignment for Chimera.</p>
+<p>Basically the same as imu_mpu9250_i2c, only changed axes assignment for Chimera.</p>
 <h1><a class="anchor" id="module_load_example__imu_chimera"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_chimera&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__imu_chimera"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__imu_mpu9250_i2c.html">imu_mpu9250_i2c module</a> </li>
-</ul>
-<h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="module_xml__imu_chimera"></a>
 Raw imu_chimera.xml file:</h2>
@@ -108,11 +103,14 @@ Raw imu_chimera.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_chimera&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;imu&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;sensors&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">MPU9250</span> <span class="keyword">IMU</span> <span class="keyword">via</span> <span class="keyword">SPI.</span></div>
-<div class="line">      <span class="keyword">Basically</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">as</span> <span class="keyword">imu_mpu9250_spi</span>, <span class="keyword">only</span> <span class="keyword">changed</span> <span class="keyword">axes</span> <span class="keyword">assignment</span> <span class="keyword">for</span> <span class="keyword">Chimera.</span></div>
+<div class="line">      <span class="keyword">MPU9250</span> <span class="keyword">IMU</span> <span class="keyword">via</span> <span class="keyword">I2C.</span></div>
+<div class="line">      <span class="keyword">Basically</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">as</span> <span class="keyword">imu_mpu9250_i2c</span>, <span class="keyword">only</span> <span class="keyword">changed</span> <span class="keyword">axes</span> <span class="keyword">assignment</span> <span class="keyword">for</span> <span class="keyword">Chimera.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">autoload</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_mpu9250_i2c&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">imu_mpu9250_i2c</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">imu</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_MPU9250_I2C_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;i2c1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_MPU9250_CHAN_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
@@ -130,7 +128,7 @@ Raw imu_chimera.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Mar 7 2023 13:18:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 16:21:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

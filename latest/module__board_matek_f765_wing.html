@@ -103,11 +103,6 @@ Configure Options</h2>
 <li><b>name:</b> <code>BOARD_MATEK_ROTATED</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: if TRUE, the board is not using is default orientation and axis can be redefined by hand</li>
 </ul>
-<h1><a class="anchor" id="autoloads__board_matek_f765_wing"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li>module__imumpu6000 </li>
-</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="module_xml__board_matek_f765_wing"></a>
@@ -128,9 +123,8 @@ Raw board_matek_f765_wing.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BOARD_MATEK_ROTATED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;if TRUE, the board is not using is default orientation and axis can be redefined by hand&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">osd_max7456</span>,<span class="keyword">baro_bmp280_i2c</span>,<span class="keyword">current_sensor</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">spi_master</span>,<span class="keyword">osd_max7456</span>,<span class="keyword">baro_bmp280_i2c</span>,<span class="keyword">current_sensor</span>,<span class="keyword">imu_mpu6000</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">autoload</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;mpu6000&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|fbw&quot;</span>&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- IMU CONFIGURATION --&gt;</span></div>
@@ -160,7 +154,7 @@ Raw board_matek_f765_wing.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Mar 7 2023 13:18:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 16:21:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

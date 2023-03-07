@@ -98,12 +98,7 @@ $(document).ready(function(){initNavTree('module__imu_aspirin_v1_5.html',''); in
 <h1><a class="anchor" id="module_load_example__imu_aspirin_v1_5"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_aspirin_v1.5&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__imu_aspirin_v1_5"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__imu_aspirin_common.html">imu_aspirin_common module</a> </li>
-</ul>
-<h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id=""></a>
 </h2>
@@ -119,7 +114,10 @@ Files</h1>
 <div class="line">      <span class="keyword">For</span> <span class="keyword">configuration</span> <span class="keyword">see</span> <span class="keyword">the</span> <span class="keyword">imu_aspirin_common</span> <span class="keyword">module</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">autoload</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_aspirin_common&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">imu_aspirin_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">imu</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_ASPIRIN_VERSION_1_5&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -131,7 +129,7 @@ Files</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Mar 7 2023 13:18:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 16:21:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
