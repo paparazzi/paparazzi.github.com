@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__euler__float_
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a3dfdefa89d767c6a1872b18da76beddc">  159</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="stabilization__attitude__euler__float_8c.html#a3dfdefa89d767c6a1872b18da76beddc">stabilization_attitude_set_quat_setpoint_i</a>(<span class="keyword">struct</span> <a class="code" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> *quat)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> quat_f,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> quat_f;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="group__math__algebra__generic.html#gacabf07308219485006f3fc3921f0e088">QUAT_FLOAT_OF_BFP</a>(quat_f, *quat);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8">float_eulers_of_quat</a>(&amp;<a class="code" href="stabilization__attitude__euler__float_8c.html#a015228f30f34102b8d41c6c08c752cc0">stab_att_sp_euler</a>, &amp;quat_f);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__euler__float_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__euler__float_8c.html">stabilization_attitude_euler_float.c</a></li>
-    <li class="footer">Generated on Mon Mar 6 2023 17:08:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 13:18:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
