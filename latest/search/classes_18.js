@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['xsens_27339',['Xsens',['../xsens700_8h.html#structXsens',1,'']]],
-  ['xsensparser_27340',['XsensParser',['../xsens__parser_8h.html#structXsensParser',1,'']]],
-  ['xsenstime_27341',['XsensTime',['../xsens700_8h.html#structXsensTime',1,'']]]
+  ['xsens_27342',['Xsens',['../xsens700_8h.html#structXsens',1,'']]],
+  ['xsensparser_27343',['XsensParser',['../xsens__parser_8h.html#structXsensParser',1,'']]],
+  ['xsenstime_27344',['XsensTime',['../xsens700_8h.html#structXsensTime',1,'']]]
 ];
