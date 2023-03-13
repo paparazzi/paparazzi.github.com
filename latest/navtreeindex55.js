@@ -1,5 +1,11 @@
 var NAVTREEINDEX55 =
 {
+"functions_p.html":[11,2,0,16],
+"functions_q.html":[11,2,0,17],
+"functions_r.html":[11,2,0,18],
+"functions_s.html":[11,2,0,19],
+"functions_t.html":[11,2,0,20],
+"functions_u.html":[11,2,0,21],
 "functions_v.html":[11,2,0,22],
 "functions_vars.html":[11,2,2],
 "functions_vars.html":[11,2,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX55 =
 "geo__mag_8h_source.html":[12,0,1,0,6,25,1],
 "glide__wing__lock_8c.html":[12,0,1,0,6,26,0],
 "glide__wing__lock_8c.html#a14bf7a1cf2995c9a0c27fbff4fa628e2":[12,0,1,0,6,26,0,2],
-"glide__wing__lock_8c.html#a1b02dd995c5c8907cb4278fea658974a":[12,0,1,0,6,26,0,10],
-"glide__wing__lock_8c.html#a4bc143fe844932b1a873e9d6b9ed5009":[12,0,1,0,6,26,0,6],
-"glide__wing__lock_8c.html#a8f9d799b811e5bbe4e4a411cb6786bd9":[12,0,1,0,6,26,0,9],
-"glide__wing__lock_8c.html#aa415e804d1abe388b9cb19ce79189828":[12,0,1,0,6,26,0,8],
-"glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f":[12,0,1,0,6,26,0,4],
-"glide__wing__lock_8c.html#ac8aeb305f0c7abfa9b418edb2448db24":[12,0,1,0,6,26,0,0],
-"glide__wing__lock_8c.html#acb27f86ae3e5cb7cad3669b0b3cc7501":[12,0,1,0,6,26,0,1]
+"glide__wing__lock_8c.html#a1b02dd995c5c8907cb4278fea658974a":[12,0,1,0,6,26,0,10]
 };

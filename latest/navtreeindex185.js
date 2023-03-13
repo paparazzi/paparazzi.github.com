@@ -1,5 +1,11 @@
 var NAVTREEINDEX185 =
 {
+"sc18is600__arch_8c.html#ac5ecb5a910974edea9d29ee862d08852":[12,0,1,0,0,3,2,6,5],
+"sc18is600__arch_8c.html#afb9957e8974e9e98d1d6059f3f830dc6":[12,0,1,0,0,3,2,6,8],
+"sc18is600__arch_8c_source.html":[12,0,1,0,0,3,2,6],
+"sc18is600__arch_8h.html":[12,0,1,0,0,3,2,7],
+"sc18is600__arch_8h.html#a1a0f9eee100b57f918621696eae2d4d5":[12,0,1,0,0,3,2,7,1],
+"sc18is600__arch_8h.html#aa449597dad28b89eefb498938f9efe9b":[12,0,1,0,0,3,2,7,0],
 "sc18is600__arch_8h_source.html":[12,0,1,0,0,3,2,7],
 "scheduling__indi__simple_8c.html":[12,0,1,0,6,13,24],
 "scheduling__indi__simple_8c.html#a3596b0a1acf5772a8692e4d9b9683906":[12,0,1,0,6,13,24,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX185 =
 "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea01d0758908fdadf2715ae9812d79f05a":[12,0,1,0,6,41,23,2,2],
 "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea10771513c3baf20eadd77f0bac8b138a":[12,0,1,0,6,41,23,2,7],
 "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea3de1dcb36ca036f0e578dce287a9348b":[12,0,1,0,6,41,23,2,3],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea44aa44a41e9c4e5fa55fdd13f3cb7414":[12,0,1,0,6,41,23,2,10],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea4eb028a007f2f0f71384cf3962aa2325":[12,0,1,0,6,41,23,2,9],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea51f3f5fe0ad980c1f16bf8e1e9cd8833":[12,0,1,0,6,41,23,2,4],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea74bb0669dc4e3796e798b4a2e9101abd":[12,0,1,0,6,41,23,2,0],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea750dee6209001691e689f7ae44f90e5c":[12,0,1,0,6,41,23,2,1],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea8a6f12c5f06b8f10e6407766c972e7c5":[12,0,1,0,6,41,23,2,8],
-"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eaa5f30fe93b6c182c6f297c748e0790dd":[12,0,1,0,6,41,23,2,5]
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea44aa44a41e9c4e5fa55fdd13f3cb7414":[12,0,1,0,6,41,23,2,10]
 };

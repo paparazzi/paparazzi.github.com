@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56":[12,0,1,0,6,28,27,8],
+"gps__ubx__i2c_8h.html#a0b6ed85dd74c41584e1447411ef288cc":[12,0,1,0,6,28,27,0,6],
+"gps__ubx__i2c_8h.html#a0eba8e874698ad3731835fe274aa7702":[12,0,1,0,6,28,27,6],
+"gps__ubx__i2c_8h.html#a1a8c784869086f5a0ca3bdc897bebba3":[12,0,1,0,6,28,27,0,4],
+"gps__ubx__i2c_8h.html#a212bed22d170a4685e0b9d6a29f56b4e":[12,0,1,0,6,28,27,0,8],
+"gps__ubx__i2c_8h.html#a214decac77b72edf81a8b057d476adc0":[12,0,1,0,6,28,27,0,5],
 "gps__ubx__i2c_8h.html#a21becdf9b159f01c6cbaa3819d02c083":[12,0,1,0,6,28,27,3],
 "gps__ubx__i2c_8h.html#a244494fa2638985741690a1b42428b32":[12,0,1,0,6,28,27,12],
 "gps__ubx__i2c_8h.html#a28524f5571f237044d705d691ccc01ec":[12,0,1,0,6,28,27,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "group__HAL__CONF.html#gadf56cd41fe3c1b782319254f498f0840":[12,0,1,0,0,0,6,49],
 "group__HAL__CONF.html#gadf56cd41fe3c1b782319254f498f0840":[9,6,49],
 "group__HAL__CONF.html#gadf61573774e030f18f903fce854f7b1a":[12,0,1,0,0,0,6,58],
-"group__HAL__CONF.html#gadf61573774e030f18f903fce854f7b1a":[9,6,58],
-"group__HAL__CONF.html#gae4d2ee57d42f6bf6ab17cf6ea78fbf4e":[12,0,1,0,0,0,6,1],
-"group__HAL__CONF.html#gae4d2ee57d42f6bf6ab17cf6ea78fbf4e":[9,6,1],
-"group__HAL__CONF.html#gae5eb94efa72e401dc17a356b27f4e7e5":[12,0,1,0,0,0,6,16],
-"group__HAL__CONF.html#gae5eb94efa72e401dc17a356b27f4e7e5":[9,6,16],
-"group__HAL__CONF.html#gae689e57cf792af401c324de566038687":[12,0,1,0,0,0,6,55],
-"group__HAL__CONF.html#gae689e57cf792af401c324de566038687":[9,6,55]
+"group__HAL__CONF.html#gadf61573774e030f18f903fce854f7b1a":[9,6,58]
 };

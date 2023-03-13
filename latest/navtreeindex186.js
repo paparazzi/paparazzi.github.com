@@ -1,5 +1,11 @@
 var NAVTREEINDEX186 =
 {
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea4eb028a007f2f0f71384cf3962aa2325":[12,0,1,0,6,41,23,2,9],
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea51f3f5fe0ad980c1f16bf8e1e9cd8833":[12,0,1,0,6,41,23,2,4],
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea74bb0669dc4e3796e798b4a2e9101abd":[12,0,1,0,6,41,23,2,0],
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea750dee6209001691e689f7ae44f90e5c":[12,0,1,0,6,41,23,2,1],
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea8a6f12c5f06b8f10e6407766c972e7c5":[12,0,1,0,6,41,23,2,8],
+"sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eaa5f30fe93b6c182c6f297c748e0790dd":[12,0,1,0,6,41,23,2,5],
 "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ead22befe2f6efdc7eaa56d241a6de3abc":[12,0,1,0,6,41,23,2,6],
 "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eada0e86f7cac1607283af6f5929c0eff3":[12,0,1,0,6,41,23,2,11],
 "sdlogger__spi__direct_8h.html#a3af215165428120de038149f0b0cda6f":[12,0,1,0,6,41,23,0,11],
@@ -243,11 +249,5 @@ var NAVTREEINDEX186 =
 "sim_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,2,0,1],
 "sim_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,2,0,2],
 "sim_2mcu__periph_2gpio__arch_8c_source.html":[12,0,1,0,0,2,0,2],
-"sim_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,2,0,3],
-"sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414":[12,0,1,0,0,2,0,3,38],
-"sim_2mcu__periph_2gpio__arch_8h.html#a0a715cbedcbaadfd991b28b3ce1caa07":[12,0,1,0,0,2,0,3,20],
-"sim_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de":[12,0,1,0,0,2,0,3,40],
-"sim_2mcu__periph_2gpio__arch_8h.html#a1471cf2ee224d707874fa19c68b3d5dc":[12,0,1,0,0,2,0,3,19],
-"sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209":[12,0,1,0,0,2,0,3,27],
-"sim_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce":[12,0,1,0,0,2,0,3,4]
+"sim_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,2,0,3]
 };

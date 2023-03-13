@@ -1,6 +1,7 @@
 var stabilization__indi_8c =
 [
     [ "INDI_ALLOWED_G_FACTOR", "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b", null ],
+    [ "INDI_HROTTLE_LIMIT_AIRSPEED_FWD", "stabilization__indi_8c.html#a7bf5459db51ee8cf15b92aa18907488e", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_P", "stabilization__indi_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_Q", "stabilization__indi_8c.html#a51a4671d083da69c010c0985faf4d2f3", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_R", "stabilization__indi_8c.html#abae06312debbf68b936cfb6eb0ad8913", null ],
@@ -69,6 +70,7 @@ var stabilization__indi_8c =
     [ "indi_u", "stabilization__indi_8c.html#aed042e627d7cf7c6e7c6cdfe931ba077", null ],
     [ "indi_use_adaptive", "stabilization__indi_8c.html#abf1ef333c752f3f24a26a3efaede5fea", null ],
     [ "indi_v", "stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e", null ],
+    [ "indi_Wu", "stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047", null ],
     [ "measurement_lowpass_filters", "stabilization__indi_8c.html#a7e036da0df750a9e226b1b76460e816a", null ],
     [ "mu1", "stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c", null ],
     [ "mu2", "stabilization__indi_8c.html#a8d40a3641e3c554e472f17e19dbf965d", null ],

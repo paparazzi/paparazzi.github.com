@@ -1,5 +1,11 @@
 var NAVTREEINDEX126 =
 {
+"module__copilot.html#functions__copilot":[1,283,1],
+"module__copilot.html#module_load_example__copilot":[1,283,0],
+"module__copilot.html#module_xml__copilot":[1,283,2,0],
+"module__ctrl_effectiveness_scheduling.html":[1,83],
+"module__ctrl_effectiveness_scheduling.html#functions__ctrl_effectiveness_scheduling":[1,83,1],
+"module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling":[1,83,0],
 "module__ctrl_effectiveness_scheduling.html#module_xml__ctrl_effectiveness_scheduling":[1,83,1,0],
 "module__ctrl_module_innerloop_demo.html":[1,84],
 "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,84,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX126 =
 "module__follow.html#configuration__follow":[1,288,1],
 "module__follow.html#functions__follow":[1,288,2],
 "module__follow.html#module_load_example__follow":[1,288,0],
-"module__follow.html#module_xml__follow":[1,288,2,0],
-"module__follow_me.html":[1,88],
-"module__follow_me.html#configuration__follow_me":[1,88,1],
-"module__follow_me.html#datalink_functions__follow_me":[1,88,3],
-"module__follow_me.html#functions__follow_me":[1,88,2],
-"module__follow_me.html#module_load_example__follow_me":[1,88,0],
-"module__follow_me.html#module_xml__follow_me":[1,88,3,0]
+"module__follow.html#module_xml__follow":[1,288,2,0]
 };

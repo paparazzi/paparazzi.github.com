@@ -1,5 +1,14 @@
 var NAVTREEINDEX212 =
 {
+"wedgebug_8c.html#a94ee40c89cb54968c8c4424eb38e9c27":[12,0,1,0,6,70,0,37],
+"wedgebug_8c.html#a956a5df8f56939f84229bbb029f6c253":[12,0,1,0,6,70,0,128],
+"wedgebug_8c.html#a96d5d9a75f28f5dc01832132640889ee":[12,0,1,0,6,70,0,120],
+"wedgebug_8c.html#a9860807ed4d11bbb3834f085a890fdde":[12,0,1,0,6,70,0,47],
+"wedgebug_8c.html#a98b5e5f85dec590b06ca8c923cc8ce22":[12,0,1,0,6,70,0,98],
+"wedgebug_8c.html#a9a5954363d7056e77bafd4e67866c47c":[12,0,1,0,6,70,0,7],
+"wedgebug_8c.html#a9bcefccd0d7c555eac052989016cdfce":[12,0,1,0,6,70,0,67],
+"wedgebug_8c.html#a9d311947176aef213adcd384d2e74fb2":[12,0,1,0,6,70,0,10],
+"wedgebug_8c.html#a9dc343d4860a716932cd47c333255dcf":[12,0,1,0,6,70,0,105],
 "wedgebug_8c.html#a9e494f5c5a4db416dd5760c0d2d8ffe3":[12,0,1,0,6,70,0,44],
 "wedgebug_8c.html#aa19716e7e89cc5b0487b4154b6c4f4f6":[12,0,1,0,6,70,0,84],
 "wedgebug_8c.html#aa441a6dde537dc01a53d08bcbdb5e564":[12,0,1,0,6,70,0,69],
@@ -240,14 +249,5 @@ var NAVTREEINDEX212 =
 "wind__estimator_8h.html#a8b69059e5bd1fc492b8d55d03a1dc16d":[12,0,1,0,6,43,50,0,7],
 "wind__estimator_8h.html#a8c3df323de545f49dcd05dacdcb34f49":[12,0,1,0,6,43,50,0,3],
 "wind__estimator_8h.html#aa4b8b32a971ea93e3ab37d896ded45af":[12,0,1,0,6,43,50,0,0],
-"wind__estimator_8h.html#aac1ea98dc22f8393cbf47f52b93ee575":[12,0,1,0,6,43,50,4],
-"wind__estimator_8h.html#aaed8a383171cc0d9cd357c48fd73177c":[12,0,1,0,6,43,50,11],
-"wind__estimator_8h.html#aeba75f12b0ae0a57b4269345a348e779":[12,0,1,0,6,43,50,2],
-"wind__estimator_8h.html#af175c7aace58699751294cb06ccfa87b":[12,0,1,0,6,43,50,1],
-"wind__estimator_8h.html#af6999f1a80539747eab60fcf5fc74c89":[12,0,1,0,6,43,50,0,6],
-"wind__estimator_8h.html#afbf5efe904a027fadf4929a3b5dae9d4":[12,0,1,0,6,43,50,0,5],
-"wind__estimator_8h.html#structWindEstimator":[12,0,1,0,6,43,50,0],
-"wind__estimator_8h_source.html":[12,0,1,0,6,43,50],
-"wind__gfi_8c.html":[12,0,1,0,6,43,51],
-"wind__gfi_8c.html#a01df5bb8d91c672814726797d2ac05e5":[12,0,1,0,6,43,51,5]
+"wind__estimator_8h.html#aac1ea98dc22f8393cbf47f52b93ee575":[12,0,1,0,6,43,50,4]
 };

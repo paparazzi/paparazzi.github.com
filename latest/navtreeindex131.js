@@ -1,5 +1,11 @@
 var NAVTREEINDEX131 =
 {
+"module__radio_control_ppm.html":[1,339],
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,339,1],
+"module__radio_control_ppm.html#functions__radio_control_ppm":[1,339,2],
+"module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,339,0],
+"module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,339,2,0],
+"module__radio_control_sbus.html":[1,340],
 "module__radio_control_sbus.html#configuration__radio_control_sbus":[1,340,1],
 "module__radio_control_sbus.html#functions__radio_control_sbus":[1,340,2],
 "module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,340,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX131 =
 "module__takeoff_detect.html#functions__takeoff_detect":[1,327,2],
 "module__takeoff_detect.html#module_load_example__takeoff_detect":[1,327,0],
 "module__takeoff_detect.html#module_xml__takeoff_detect":[1,327,2,0],
-"module__target_pos.html":[1,95],
-"module__target_pos.html#configuration__target_pos":[1,95,1],
-"module__target_pos.html#datalink_functions__target_pos":[1,95,3],
-"module__target_pos.html#functions__target_pos":[1,95,2],
-"module__target_pos.html#module_load_example__target_pos":[1,95,0],
-"module__target_pos.html#module_xml__target_pos":[1,95,3,0],
-"module__tcas.html":[1,292]
+"module__target_pos.html":[1,95]
 };

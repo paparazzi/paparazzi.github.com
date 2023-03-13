@@ -1,5 +1,11 @@
 var NAVTREEINDEX127 =
 {
+"module__follow_me.html":[1,88],
+"module__follow_me.html#configuration__follow_me":[1,88,1],
+"module__follow_me.html#datalink_functions__follow_me":[1,88,3],
+"module__follow_me.html#functions__follow_me":[1,88,2],
+"module__follow_me.html#module_load_example__follow_me":[1,88,0],
+"module__follow_me.html#module_xml__follow_me":[1,88,3,0],
 "module__formation_flight.html":[1,289],
 "module__formation_flight.html#datalink_functions__formation_flight":[1,289,2],
 "module__formation_flight.html#functions__formation_flight":[1,289,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX127 =
 "module__humid_sht_uart.html#functions__humid_sht_uart":[1,268,2],
 "module__humid_sht_uart.html#module_load_example__humid_sht_uart":[1,268,0],
 "module__humid_sht_uart.html#module_xml__humid_sht_uart":[1,268,2,0],
-"module__i2c.html":[1,249],
-"module__i2c.html#module_load_example__i2c":[1,249,0],
-"module__i2c.html#module_xml__i2c":[1,249,0,0],
-"module__i2c_abuse_test.html":[1,35],
-"module__i2c_abuse_test.html#functions__i2c_abuse_test":[1,35,1],
-"module__i2c_abuse_test.html#module_load_example__i2c_abuse_test":[1,35,0],
-"module__i2c_abuse_test.html#module_xml__i2c_abuse_test":[1,35,1,0]
+"module__i2c.html":[1,249]
 };

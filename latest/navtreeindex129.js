@@ -1,5 +1,11 @@
 var NAVTREEINDEX129 =
 {
+"module__ins_vectornav.html#functions__ins_vectornav":[1,223,2],
+"module__ins_vectornav.html#module_load_example__ins_vectornav":[1,223,0],
+"module__ins_vectornav.html#module_xml__ins_vectornav":[1,223,2,0],
+"module__ins_vn100.html":[1,224],
+"module__ins_vn100.html#configuration__ins_vn100":[1,224,1],
+"module__ins_vn100.html#functions__ins_vn100":[1,224,2],
 "module__ins_vn100.html#module_load_example__ins_vn100":[1,224,0],
 "module__ins_vn100.html#module_xml__ins_vn100":[1,224,2,0],
 "module__ins_xsens.html":[1,225],
@@ -243,11 +249,5 @@ var NAVTREEINDEX129 =
 "module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff":[1,296,1],
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,296,0],
 "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,296,1,0],
-"module__nav_catapult.html":[1,297],
-"module__nav_catapult.html#configuration__nav_catapult":[1,297,1],
-"module__nav_catapult.html#functions__nav_catapult":[1,297,2],
-"module__nav_catapult.html#module_load_example__nav_catapult":[1,297,0],
-"module__nav_catapult.html#module_xml__nav_catapult":[1,297,2,0],
-"module__nav_cube.html":[1,298],
-"module__nav_cube.html#module_load_example__nav_cube":[1,298,0]
+"module__nav_catapult.html":[1,297]
 };

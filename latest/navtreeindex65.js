@@ -1,5 +1,11 @@
 var NAVTREEINDEX65 =
 {
+"group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa":[12,0,1,0,4,4,17],
+"group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa":[12,0,1,0,4,5,91],
+"group__math__algebra__float.html#structFloatEulers":[9,9,1,0,5],
+"group__math__algebra__float.html#structFloatMat33":[9,9,1,0,3],
+"group__math__algebra__float.html#structFloatQuat":[9,9,1,0,2],
+"group__math__algebra__float.html#structFloatRMat":[9,9,1,0,4],
 "group__math__algebra__float.html#structFloatRates":[9,9,1,0,6],
 "group__math__algebra__float.html#structFloatVect2":[9,9,1,0,0],
 "group__math__algebra__float.html#structFloatVect3":[9,9,1,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX65 =
 "group__math__algebra__int.html#ad80765081fab6e9bd85a7e923b7cb729":[9,9,1,3,16,2],
 "group__math__algebra__int.html#ad85d95d9ead4cd27dbfe6e7895633432":[9,9,1,3,11,0],
 "group__math__algebra__int.html#ae0ab7d03358e5ef140313eecffe69610":[9,9,1,3,16,0],
-"group__math__algebra__int.html#ae31b1e70738087a52a34b477d7956b7c":[9,9,1,3,7,2],
-"group__math__algebra__int.html#aea3adc5098c7d73f1d16c02790df54cd":[9,9,1,3,0,1],
-"group__math__algebra__int.html#af99b1f105232c9c619d62040fb3c9d4c":[9,9,1,3,14,1],
-"group__math__algebra__int.html#afc8759194676f25a3897aeff23eb5c36":[9,9,1,3,1,1],
-"group__math__algebra__int.html#afefde00ee3026b3734e2c81b79af7855":[9,9,1,3,6,1],
-"group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa":[12,0,1,0,4,7,114],
-"group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa":[9,9,1,3,131]
+"group__math__algebra__int.html#ae31b1e70738087a52a34b477d7956b7c":[9,9,1,3,7,2]
 };

@@ -2,6 +2,8 @@ var eff__scheduling__nederdrone_8c =
 [
     [ "INDI_SCHEDULING_LOW_AIRSPEED", "eff__scheduling__nederdrone_8c.html#a00ec67e62acc58db22558ea6702985d3", null ],
     [ "INDI_SCHEDULING_LOWER_BOUND_G1", "eff__scheduling__nederdrone_8c.html#a81b7b71f58114d5bda479fadbd5ef3d9", null ],
+    [ "INDI_SCHEDULING_TRIM_ELEVATOR", "eff__scheduling__nederdrone_8c.html#a5515b6f024ce455b796f2d0ee6c508af", null ],
+    [ "INDI_SCHEDULING_TRIM_FLAPS", "eff__scheduling__nederdrone_8c.html#a795f37f85952049056a49dc48a0a18ce", null ],
     [ "ctrl_eff_scheduling_init", "eff__scheduling__nederdrone_8c.html#afa83ea9955eb8fb36341a2169a823af1", null ],
     [ "ctrl_eff_scheduling_periodic", "eff__scheduling__nederdrone_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10", null ],
     [ "schdule_control_effectiveness", "eff__scheduling__nederdrone_8c.html#a81837e865c453bcceb4256126927bbd7", null ],
@@ -13,5 +15,7 @@ var eff__scheduling__nederdrone_8c =
     [ "sched_tip_prop_upper_pitch_limit_deg", "eff__scheduling__nederdrone_8c.html#a3ff47eb659628a1aaec104af4d1ddf76", null ],
     [ "sched_tip_props_always_on", "eff__scheduling__nederdrone_8c.html#ab3dd792283925fd31982b944ebc39413", null ],
     [ "thrust_eff_scaling", "eff__scheduling__nederdrone_8c.html#ac59ae4483fb410e96c5e4131f05c0ec4", null ],
+    [ "trim_elevator", "eff__scheduling__nederdrone_8c.html#a589d7cc043343cbec34147b7098e9c68", null ],
+    [ "trim_flaps", "eff__scheduling__nederdrone_8c.html#ad16f59101a986321518a5818306a02dc", null ],
     [ "use_scheduling", "eff__scheduling__nederdrone_8c.html#a3596b0a1acf5772a8692e4d9b9683906", null ]
 ];

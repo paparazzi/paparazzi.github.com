@@ -7,5 +7,7 @@ var eff__scheduling__nederdrone_8h =
     [ "sched_tip_prop_lower_pitch_limit_deg", "eff__scheduling__nederdrone_8h.html#ae33faed49115dc0b7e347da73637a4f9", null ],
     [ "sched_tip_prop_upper_pitch_limit_deg", "eff__scheduling__nederdrone_8h.html#a3ff47eb659628a1aaec104af4d1ddf76", null ],
     [ "sched_tip_props_always_on", "eff__scheduling__nederdrone_8h.html#ab3dd792283925fd31982b944ebc39413", null ],
-    [ "thrust_eff_scaling", "eff__scheduling__nederdrone_8h.html#ac59ae4483fb410e96c5e4131f05c0ec4", null ]
+    [ "thrust_eff_scaling", "eff__scheduling__nederdrone_8h.html#ac59ae4483fb410e96c5e4131f05c0ec4", null ],
+    [ "trim_elevator", "eff__scheduling__nederdrone_8h.html#a589d7cc043343cbec34147b7098e9c68", null ],
+    [ "trim_flaps", "eff__scheduling__nederdrone_8h.html#ad16f59101a986321518a5818306a02dc", null ]
 ];
