@@ -137,7 +137,9 @@ var onboard_modules =
     ] ],
     [ "motor_mixing module", "module__motor_mixing.html", [
       [ "Example for airframe file", "module__motor_mixing.html#module_load_example__motor_mixing", null ],
-      [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", null ],
+      [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", [
+        [ "Airframe file section", "module__motor_mixing.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__motor_mixing.html#functions__motor_mixing", [
         [ "Raw motor_mixing.xml file:", "module__motor_mixing.html#module_xml__motor_mixing", null ]
       ] ]
@@ -409,7 +411,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__cv_opticflow.html#module_load_example__cv_opticflow", null ],
       [ "Module configuration options", "module__cv_opticflow.html#configuration__cv_opticflow", null ],
       [ "Module functions", "module__cv_opticflow.html#functions__cv_opticflow", [
-        [ "Periodic Functions", "module__cv_opticflow.html#periodic_functions", null ],
         [ "Raw cv_opticflow.xml file:", "module__cv_opticflow.html#module_xml__cv_opticflow", null ]
       ] ]
     ] ],
@@ -422,15 +423,8 @@ var onboard_modules =
     ] ],
     [ "cv_textons module", "module__cv_textons.html", [
       [ "Example for airframe file", "module__cv_textons.html#module_load_example__cv_textons", null ],
-      [ "Module configuration options", "module__cv_textons.html#configuration__cv_textons", [
-        [ "Airframe file section", "module__cv_textons.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__cv_textons.html#configuration__cv_textons", null ],
       [ "Module functions", "module__cv_textons.html#functions__cv_textons", [
-        [ "Init Functions", "module__cv_textons.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__cv_textons.html#files", [
-        [ "Header Files", "module__cv_textons.html#headers", null ],
-        [ "Source Files", "module__cv_textons.html#sources", null ],
         [ "Raw cv_textons.xml file:", "module__cv_textons.html#module_xml__cv_textons", null ]
       ] ]
     ] ],
@@ -1151,12 +1145,12 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
@@ -1167,12 +1161,12 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1406,8 +1400,15 @@ var onboard_modules =
     ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
-      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],
+      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
+        [ "Define Options", "module__ins_extended.html#define", null ]
+      ] ],
       [ "Module functions", "module__ins_extended.html#functions__ins_extended", [
+        [ "Init Functions", "module__ins_extended.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__ins_extended.html#files", [
+        [ "Header Files", "module__ins_extended.html#headers", null ],
+        [ "Source Files", "module__ins_extended.html#sources", null ],
         [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
       ] ]
     ] ],
@@ -1427,9 +1428,7 @@ var onboard_modules =
     ] ],
     [ "ins_hff module", "module__ins_hff.html", [
       [ "Example for airframe file", "module__ins_hff.html#module_load_example__ins_hff", null ],
-      [ "Module configuration options", "module__ins_hff.html#configuration__ins_hff", [
-        [ "Define Options", "module__ins_hff.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__ins_hff.html#configuration__ins_hff", null ],
       [ "Module functions", "module__ins_hff.html#functions__ins_hff", [
         [ "Raw ins_hff.xml file:", "module__ins_hff.html#module_xml__ins_hff", null ]
       ] ]
@@ -1511,8 +1510,12 @@ var onboard_modules =
     ] ],
     [ "lidar_lite module", "module__lidar_lite.html", [
       [ "Example for airframe file", "module__lidar_lite.html#module_load_example__lidar_lite", null ],
-      [ "Module configuration options", "module__lidar_lite.html#configuration__lidar_lite", null ],
+      [ "Module configuration options", "module__lidar_lite.html#configuration__lidar_lite", [
+        [ "Configure Options", "module__lidar_lite.html#configure", null ]
+      ] ],
       [ "Module functions", "module__lidar_lite.html#functions__lidar_lite", [
+        [ "Event Functions", "module__lidar_lite.html#event_functions", null ],
+        [ "Periodic Functions", "module__lidar_lite.html#periodic_functions", null ],
         [ "Raw lidar_lite.xml file:", "module__lidar_lite.html#module_xml__lidar_lite", null ]
       ] ]
     ] ],
@@ -2100,6 +2103,13 @@ var onboard_modules =
         [ "Raw nav_survey_zamboni.xml file:", "module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni", null ]
       ] ]
     ] ],
+    [ "nav_takeoff_and_landing module", "module__nav_takeoff_and_landing.html", [
+      [ "Example for airframe file", "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing", null ],
+      [ "Module configuration options", "module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing", null ],
+      [ "Module functions", "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing", [
+        [ "Raw nav_takeoff_and_landing.xml file:", "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing", null ]
+      ] ]
+    ] ],
     [ "nav_trinity module", "module__nav_trinity.html", [
       [ "Example for airframe file", "module__nav_trinity.html#module_load_example__nav_trinity", null ],
       [ "Module functions", "module__nav_trinity.html#functions__nav_trinity", [
@@ -2230,11 +2240,8 @@ var onboard_modules =
     ] ],
     [ "radio_control_superbitrf_rc module", "module__radio_control_superbitrf_rc.html", [
       [ "Example for airframe file", "module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc", null ],
-      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", [
-        [ "Configure Options", "module__radio_control_superbitrf_rc.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc", null ],
       [ "Module functions", "module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc", [
-        [ "Event Functions", "module__radio_control_superbitrf_rc.html#event_functions", null ],
         [ "Raw radio_control_superbitrf_rc.xml file:", "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc", null ]
       ] ]
     ] ],

@@ -88,11 +88,13 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>B
-: <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ins_float_invariant.c</a>
-, <a class="el" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ahrs_float_invariant.c</a>
+: <a class="el" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ahrs_float_invariant.c</a>
 </li>
 <li>b
 : <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">wedgebug.c</a>
+</li>
+<li>B
+: <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ins_float_invariant.c</a>
 </li>
 <li>B100000
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
@@ -290,13 +292,11 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 : <a class="el" href="abi__sender__ids_8h.html#a8294e1886eb0de4db937a9cdf5361389">abi_sender_ids.h</a>
 </li>
 <li>baro_amsys_sigma2
-: <a class="el" href="baro__amsys_8h.html#a9e0ac2360a53b9e6f6f941bd6274edc2">baro_amsys.h</a>
+: <a class="el" href="baro__amsys_8c.html#a9e0ac2360a53b9e6f6f941bd6274edc2">baro_amsys.c</a>
+, <a class="el" href="baro__amsys_8h.html#a9e0ac2360a53b9e6f6f941bd6274edc2">baro_amsys.h</a>
 </li>
 <li>BARO_AMSYS_SIGMA2
 : <a class="el" href="baro__amsys_8c.html#a1ec0f1811c56699e9d71849d9db6c552">baro_amsys.c</a>
-</li>
-<li>baro_amsys_sigma2
-: <a class="el" href="baro__amsys_8c.html#a9e0ac2360a53b9e6f6f941bd6274edc2">baro_amsys.c</a>
 </li>
 <li>baro_amsys_temp
 : <a class="el" href="baro__amsys_8c.html#a411ede91f2c3a6cf22d709d173e22f3a">baro_amsys.c</a>
@@ -376,12 +376,12 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 : <a class="el" href="baro__bmp_8c.html#a2c8ab237cbb8ec936485236b89562181">baro_bmp.c</a>
 , <a class="el" href="baro__bmp_8h.html#a2c8ab237cbb8ec936485236b89562181">baro_bmp.h</a>
 </li>
+<li>BARO_BMP_R
+: <a class="el" href="baro__bmp_8c.html#ae0cc4ae973472e626fe06f314cbfa3ef">baro_bmp.c</a>
+</li>
 <li>baro_bmp_r
 : <a class="el" href="baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9">baro_bmp.c</a>
 , <a class="el" href="baro__bmp_8h.html#a715ab4e2838f0af7be8d7d55b82a1ac9">baro_bmp.h</a>
-</li>
-<li>BARO_BMP_R
-: <a class="el" href="baro__bmp_8c.html#ae0cc4ae973472e626fe06f314cbfa3ef">baro_bmp.c</a>
 </li>
 <li>BARO_BMP_SENDER_ID
 : <a class="el" href="abi__sender__ids_8h.html#a2cc5270109122aa48f77ffe9af858ed3">abi_sender_ids.h</a>
@@ -395,14 +395,11 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 <li>baro_bmp_sigma2
 : <a class="el" href="baro__bmp_8c.html#acb0831c824befa3750689297f62d4024">baro_bmp.c</a>
 </li>
-<li>BARO_BOARD
-: <a class="el" href="tawaki_2baro__board_8h.html#a8546c5da434e5120bc0c247c556dc11d">baro_board.h</a>
-</li>
 <li>baro_board
 : <a class="el" href="lisa__l_2baro__board_8c.html#acd0de6dfb119f91de310ea848fd7434d">baro_board.c</a>
 </li>
 <li>BARO_BOARD
-: <a class="el" href="lisa__mx_2baro__board_8h.html#a8546c5da434e5120bc0c247c556dc11d">baro_board.h</a>
+: <a class="el" href="tawaki_2baro__board_8h.html#a8546c5da434e5120bc0c247c556dc11d">baro_board.h</a>
 </li>
 <li>BARO_BOARD_APOGEE_FREQ
 : <a class="el" href="apogee_2baro__board_8c.html#a1b6e035d95ae3027712c2b37f15d2cba">baro_board.c</a>
@@ -765,15 +762,15 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 , <a class="el" href="baro__ms5611__i2c_8h.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_i2c.h</a>
 , <a class="el" href="baro__ms5611__spi_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_spi.c</a>
 </li>
+<li>BARO_MS5611_R
+: <a class="el" href="baro__ms5611__i2c_8h.html#a73ab789fe82b033e89be51be8b72b4dd">baro_ms5611_i2c.h</a>
+, <a class="el" href="baro__ms5611__spi_8h.html#a73ab789fe82b033e89be51be8b72b4dd">baro_ms5611_spi.h</a>
+</li>
 <li>baro_ms5611_r
 : <a class="el" href="baro__ms5611__i2c_8c.html#ae2486f554e75685d70b6f119ed483267">baro_ms5611_i2c.c</a>
 , <a class="el" href="baro__ms5611__i2c_8h.html#ae2486f554e75685d70b6f119ed483267">baro_ms5611_i2c.h</a>
 , <a class="el" href="baro__ms5611__spi_8c.html#ae2486f554e75685d70b6f119ed483267">baro_ms5611_spi.c</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#ae2486f554e75685d70b6f119ed483267">baro_ms5611_spi.h</a>
-</li>
-<li>BARO_MS5611_R
-: <a class="el" href="baro__ms5611__i2c_8h.html#a73ab789fe82b033e89be51be8b72b4dd">baro_ms5611_i2c.h</a>
-, <a class="el" href="baro__ms5611__spi_8h.html#a73ab789fe82b033e89be51be8b72b4dd">baro_ms5611_spi.h</a>
 </li>
 <li>baro_ms5611_read()
 : <a class="el" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_spi.c</a>
@@ -3139,7 +3136,7 @@ $(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 13 2023 21:24:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 16 2023 20:50:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

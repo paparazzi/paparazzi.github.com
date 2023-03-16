@@ -759,6 +759,8 @@ var annotated_dup =
     [ "mt9v117_t", "mt9v117_8h.html#structmt9v117__t", "mt9v117_8h_structmt9v117__t" ],
     [ "nav_catapult_struct", "nav__catapult_8h.html#structnav__catapult__struct", "nav__catapult_8h_structnav__catapult__struct" ],
     [ "nav_heli_spinup_t", "nav__heli__spinup_8h.html#structnav__heli__spinup__t", "nav__heli__spinup_8h_structnav__heli__spinup__t" ],
+    [ "nav_landing", "nav__takeoff__and__landing_8h.html#structnav__landing", "nav__takeoff__and__landing_8h_structnav__landing" ],
+    [ "nav_takeoff", "nav__takeoff__and__landing_8h.html#structnav__takeoff", "nav__takeoff__and__landing_8h_structnav__takeoff" ],
     [ "NavBase_t", "nav__base_8h.html#structNavBase__t", "nav__base_8h_structNavBase__t" ],
     [ "NavCircle_t", "nav__base_8h.html#structNavCircle__t", "nav__base_8h_structNavCircle__t" ],
     [ "NavCube", "nav__cube_8h.html#structNavCube", "nav__cube_8h_structNavCube" ],

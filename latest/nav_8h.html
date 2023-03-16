@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('nav_8h.html',''); initResizable(); });
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2fixedwing_2nav_8hdep" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2fixedwing_2nav_8hdep" id="asw_2airborne_2firmwares_2fixedwing_2nav_8hdep">
-<area shape="rect" title="Fixedwing Navigation library." alt="" coords="5017,5,5184,47"/>
+<area shape="rect" title="Fixedwing Navigation library." alt="" coords="5108,5,5275,47"/>
 <area shape="rect" href="sim__ap_8c.html" title=" " alt="" coords="5,102,164,143"/>
 <area shape="rect" href="fixedwing_2autopilot__firmware_8c.html" title="Fixedwing specific autopilot interface and initialization." alt="" coords="188,95,355,151"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html" title=" " alt="" coords="379,95,545,151"/>
@@ -193,12 +193,12 @@ $(document).ready(function(){initNavTree('nav_8h.html',''); initResizable(); });
 <area shape="rect" href="nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart." alt="" coords="8001,102,8200,143"/>
 <area shape="rect" href="nav__survey__rectangle_8h.html" title=" " alt="" coords="8224,102,8433,143"/>
 <area shape="rect" href="nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings." alt="" coords="8458,102,8661,143"/>
-<area shape="rect" href="nav__trinity_8c.html" title=" " alt="" coords="8685,102,8844,143"/>
-<area shape="rect" href="nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines" alt="" coords="8869,102,9058,143"/>
-<area shape="rect" href="baro__ets_8c.html" title="Driver for the EagleTree Systems Altitude Sensor." alt="" coords="9083,102,9241,143"/>
-<area shape="rect" href="baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor." alt="" coords="9265,102,9453,143"/>
-<area shape="rect" href="uav__recovery_8c.html" title=" " alt="" coords="9477,102,9692,143"/>
-<area shape="rect" href="potential_8c.html" title=" " alt="" coords="4253,199,4412,240"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html" title=" " alt="" coords="8685,95,8847,151"/>
+<area shape="rect" href="nav__trinity_8c.html" title=" " alt="" coords="8871,102,9029,143"/>
+<area shape="rect" href="nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines" alt="" coords="9054,102,9243,143"/>
+<area shape="rect" href="baro__ets_8c.html" title="Driver for the EagleTree Systems Altitude Sensor." alt="" coords="9268,102,9427,143"/>
+<area shape="rect" href="baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor." alt="" coords="9451,102,9639,143"/>
+<area shape="rect" href="uav__recovery_8c.html" title=" " alt="" coords="9663,102,9877,143"/>
 </map>
 </div>
 </div>
@@ -231,6 +231,8 @@ Macros</h2></td></tr>
 <tr class="separator:a5bfcd798f85be44cd7766b55ef9c9c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf42a1b0d3b1c6c0faebcda4c531b8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#a4bf42a1b0d3b1c6c0faebcda4c531b8c">NavGotoWaypoint</a>(_wp)</td></tr>
 <tr class="separator:a4bf42a1b0d3b1c6c0faebcda4c531b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1c31e5d572fca75f5c0d2d96cd15eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#a1e1c31e5d572fca75f5c0d2d96cd15eb">NavGotoPoint</a>(_point)</td></tr>
+<tr class="separator:a1e1c31e5d572fca75f5c0d2d96cd15eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefc5a52ca873a9bfb3e1d31a261338a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#aefc5a52ca873a9bfb3e1d31a261338a4">Eight</a>(a,  <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>,  c)&#160;&#160;&#160;<a class="el" href="nav_8h.html#a083964068940390afc5e6621f015c19f">nav_eight</a>((a), (<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>), (c))</td></tr>
 <tr class="separator:aefc5a52ca873a9bfb3e1d31a261338a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1c9983a7508c42235e2fead19db8b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#a3e1c9983a7508c42235e2fead19db8b1">Oval</a>(a,  <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>,  c)&#160;&#160;&#160;<a class="el" href="nav__rover__base_8c.html#afd0e05357829985f3000d7456e66ef61">nav_oval</a>((<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>), (a), (c))</td></tr>
@@ -369,6 +371,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6c7a398bcc252c6cbfc1273915aeecaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af953408dd60fe367bed94bdb00ebff73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#af953408dd60fe367bed94bdb00ebff73">nav_glide</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> start_wp, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp)</td></tr>
 <tr class="separator:af953408dd60fe367bed94bdb00ebff73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a7fb417c0733dbba1cd09147fbbe19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#aa1a7fb417c0733dbba1cd09147fbbe19">nav_glide_alt</a> (float start_alt, float final_alt)</td></tr>
+<tr class="separator:aa1a7fb417c0733dbba1cd09147fbbe19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4247c9f3dc0417690e1404add032cbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav_8h.html#ab4247c9f3dc0417690e1404add032cbe">nav_route_xy</a> (float last_wp_x, float last_wp_y, float wp_x, float wp_y)</td></tr>
 <tr class="memdesc:ab4247c9f3dc0417690e1404add032cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the carrot position along the desired segment.  <a href="nav_8h.html#ab4247c9f3dc0417690e1404add032cbe">More...</a><br /></td></tr>
 <tr class="separator:ab4247c9f3dc0417690e1404add032cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,7 +512,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00152">152</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00158">158</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -586,7 +590,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00104">104</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00109">109</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +612,7 @@ Variables</h2></td></tr>
 <p>Get current altitude reference for local coordinates. </p>
 <p>This is the ground_alt from the flight plan at first, but might be updated later through a call to <a class="el" href="rotorcraft_2navigation_8h.html#a1b58af4e8c7d8f13f39c63a25570ccd6">NavSetGroundReferenceHere()</a> or <a class="el" href="rotorcraft_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b">NavSetAltitudeReferenceHere()</a>, e.g. in the GeoInit flight plan block. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00237">237</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00243">243</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +633,7 @@ Variables</h2></td></tr>
 
 <p>Get current altitude above MSL. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00228">228</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00234">234</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +654,7 @@ Variables</h2></td></tr>
 
 <p>Get current height above reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00230">230</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00236">236</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +675,7 @@ Variables</h2></td></tr>
 
 <p>Get current x (east) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00224">224</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00230">230</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +696,7 @@ Variables</h2></td></tr>
 
 <p>Get current y (north) position in local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00226">226</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00232">232</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +780,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00217">217</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00223">223</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +832,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00219">219</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00225">225</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +862,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00165">165</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00171">171</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +898,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00166">166</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00172">172</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +927,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="afixedwing_2autopilot__static_8h_html_ae6bdfc542cbb7982393ee982b2ed67d5"><div class="ttname"><a href="fixedwing_2autopilot__static_8h.html#ae6bdfc542cbb7982393ee982b2ed67d5">AP_MODE_AUTO1</a></div><div class="ttdeci">#define AP_MODE_AUTO1</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__static_8h_source.html#l00037">autopilot_static.h:37</a></div></div>
 <div class="ttc" id="astabilization__adaptive_8c_html_a3a1314c56cb0890cfff183968904f0ce"><div class="ttname"><a href="stabilization__adaptive_8c.html#a3a1314c56cb0890cfff183968904f0ce">h_ctl_roll_setpoint</a></div><div class="ttdeci">float h_ctl_roll_setpoint</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00157">stabilization_adaptive.c:157</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00208">208</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00214">214</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -942,7 +946,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00149">149</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00155">155</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +965,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00148">148</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00154">154</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +984,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00150">150</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00156">156</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1014,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00145">145</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00151">151</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1034,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00157">157</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00163">163</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1070,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00140">140</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00145">145</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1096,7 +1100,32 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00143">143</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00149">149</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e1c31e5d572fca75f5c0d2d96cd15eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1c31e5d572fca75f5c0d2d96cd15eb">&#9670;&nbsp;</a></span>NavGotoPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NavGotoPoint</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_point</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    horizontal_mode = <a class="code" href="nav_8h.html#a303d1b36f192af5f774d7a660ea83fff">HORIZONTAL_MODE_WAYPOINT</a>; \</div>
+<div class="line">    fly_to_xy(_point.x, _point.y); \</div>
+<div class="line">  }</div>
+<div class="ttc" id="anav_8h_html_a303d1b36f192af5f774d7a660ea83fff"><div class="ttname"><a href="nav_8h.html#a303d1b36f192af5f774d7a660ea83fff">HORIZONTAL_MODE_WAYPOINT</a></div><div class="ttdeci">#define HORIZONTAL_MODE_WAYPOINT</div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00090">nav.h:90</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00101">101</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1149,6 @@ Variables</h2></td></tr>
 <div class="line">    fly_to_xy(<a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[_wp].x, <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[_wp].y); \</div>
 <div class="line">  }</div>
 <div class="ttc" id="acommon__nav_8c_html_a94e2a3864e1c0746e69eb9cda1061c62"><div class="ttname"><a href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a></div><div class="ttdeci">struct point waypoints[NB_WAYPOINT]</div><div class="ttdoc">size == nb_waypoint, waypoint 0 is a dummy waypoint</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00038">common_nav.c:39</a></div></div>
-<div class="ttc" id="anav_8h_html_a303d1b36f192af5f774d7a660ea83fff"><div class="ttname"><a href="nav_8h.html#a303d1b36f192af5f774d7a660ea83fff">HORIZONTAL_MODE_WAYPOINT</a></div><div class="ttdeci">#define HORIZONTAL_MODE_WAYPOINT</div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00090">nav.h:90</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00096">96</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
@@ -1147,7 +1175,7 @@ Variables</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="afixedwing_2autopilot__firmware_8h_html_a63d6feb22864c4c3fcc59893e2671609"><div class="ttname"><a href="fixedwing_2autopilot__firmware_8h.html#a63d6feb22864c4c3fcc59893e2671609">LATERAL_MODE_COURSE</a></div><div class="ttdeci">#define LATERAL_MODE_COURSE</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot__firmware_8h_source.html#l00039">autopilot_firmware.h:39</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00203">203</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00209">209</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1213,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00221">221</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00227">227</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1235,7 @@ Variables</h2></td></tr>
 
 <p>True if x (in degrees) is close to the current QDR (less than 10 degrees) </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00155">155</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00161">161</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00161">161</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00167">167</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1301,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00214">214</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00220">220</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1339,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Set the vertical mode to altitude control with the specified altitude setpoint and climb pre-command. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00185">185</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00191">191</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1366,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Set the climb control to auto-pitch with the specified throttle pre-command. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00178">178</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00184">184</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1365,7 +1393,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Set the climb control to auto-throttle with the specified pitch pre-command. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00171">171</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00177">177</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1420,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Set the vertical mode to climb control with the specified climb setpoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00192">192</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00198">198</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1447,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Set the vertical mode to fixed throttle with the specified setpoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00198">198</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00204">204</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1483,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00109">109</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00114">114</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1493,7 +1521,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00137">137</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00142">142</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1560,12 +1588,12 @@ Variables</h2></td></tr>
 <div class="ttc" id="acommon__nav_8c_html_a1ea7c4cd1046a57c3444b89a1dce6250"><div class="ttname"><a href="common__nav_8c.html#a1ea7c4cd1046a57c3444b89a1dce6250">dist2_to_wp</a></div><div class="ttdeci">float dist2_to_wp</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00034">common_nav.c:34</a></div></div>
 <div class="ttc" id="acommon__nav_8c_html_aaa0755e7078e30953f14178d3dcd90ee"><div class="ttname"><a href="common__nav_8c.html#aaa0755e7078e30953f14178d3dcd90ee">dist2_to_home</a></div><div class="ttdeci">float dist2_to_home</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00033">common_nav.c:33</a></div></div>
 <div class="ttc" id="agroup__state__position_html_ga545d479db45e1a9711e59736b6d1309b"><div class="ttname"><a href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetPositionEnu_f(void)</div><div class="ttdoc">Get position in local ENU coordinates (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00719">state.h:719</a></div></div>
-<div class="ttc" id="anav_8h_html_a3f8eab6736191ca3d1cb16738cbcf97f"><div class="ttname"><a href="nav_8h.html#a3f8eab6736191ca3d1cb16738cbcf97f">nav_oval_count</a></div><div class="ttdeci">uint8_t nav_oval_count</div><div class="ttdoc">Navigation along a figure O.</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00753">nav.c:753</a></div></div>
-<div class="ttc" id="anav_8h_html_aa9aacd23ad02eee9d32481775bf9dd31"><div class="ttname"><a href="nav_8h.html#aa9aacd23ad02eee9d32481775bf9dd31">NavCircleCount</a></div><div class="ttdeci">#define NavCircleCount()</div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00149">nav.h:149</a></div></div>
+<div class="ttc" id="anav_8h_html_a3f8eab6736191ca3d1cb16738cbcf97f"><div class="ttname"><a href="nav_8h.html#a3f8eab6736191ca3d1cb16738cbcf97f">nav_oval_count</a></div><div class="ttdeci">uint8_t nav_oval_count</div><div class="ttdoc">Navigation along a figure O.</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00755">nav.c:755</a></div></div>
+<div class="ttc" id="anav_8h_html_aa9aacd23ad02eee9d32481775bf9dd31"><div class="ttname"><a href="nav_8h.html#aa9aacd23ad02eee9d32481775bf9dd31">NavCircleCount</a></div><div class="ttdeci">#define NavCircleCount()</div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00155">nav.h:155</a></div></div>
 <div class="ttc" id="apprz__geodetic__float_8h_html_structEnuCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a></div><div class="ttdoc">vector in East North Up coordinates Units: meters</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00072">pprz_geodetic_float.h:72</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00240">240</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00246">246</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -1637,9 +1665,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00495">495</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00497">497</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_8c_source.html#l00480">DownlinkSendWp()</a>, and <a class="el" href="common__nav_8c_source.html#l00038">nb_waypoint</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, <a class="el" href="nav_8c_source.html#l00482">DownlinkSendWp()</a>, and <a class="el" href="common__nav_8c_source.html#l00038">nb_waypoint</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="nav__catapult_8c_source.html#l00159">nav_catapult_run()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1695,11 +1723,11 @@ Variables</h2></td></tr>
 
 <p>Computes <em>desired_x</em>, <em>desired_y</em> and <em>desired_course</em>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00354">354</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00356">356</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00306">desired_x</a>, <a class="el" href="nav_8c_source.html#l00306">desired_y</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00083">h_ctl_course_pgain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00080">h_ctl_course_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00085">h_ctl_roll_max_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00157">h_ctl_roll_setpoint</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00038">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00039">LATERAL_MODE_COURSE</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">LATERAL_MODE_ROLL</a>, <a class="el" href="nav_8c_source.html#l00090">nav_mode</a>, <a class="el" href="nav_8h_source.html#l00086">NAV_MODE_COURSE</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="state_8h_source.html#l00944">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00308">desired_x</a>, <a class="el" href="nav_8c_source.html#l00308">desired_y</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00083">h_ctl_course_pgain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00080">h_ctl_course_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00085">h_ctl_roll_max_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00157">h_ctl_roll_setpoint</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00038">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00039">LATERAL_MODE_COURSE</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">LATERAL_MODE_ROLL</a>, <a class="el" href="nav_8c_source.html#l00090">nav_mode</a>, <a class="el" href="nav_8h_source.html#l00086">NAV_MODE_COURSE</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="state_8h_source.html#l00944">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, and <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, and <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1733,41 +1761,45 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_ae9d11d2e378b23ecbee86419cbf341f0_icgraph.png" border="0" usemap="#anav_8h_ae9d11d2e378b23ecbee86419cbf341f0_icgraph" alt=""/></div>
 <map name="anav_8h_ae9d11d2e378b23ecbee86419cbf341f0_icgraph" id="anav_8h_ae9d11d2e378b23ecbee86419cbf341f0_icgraph">
-<area shape="rect" title="Computes desired_x, desired_y and desired_course." alt="" coords="863,400,944,427"/>
-<area shape="rect" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="686,147,813,173"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a5b713af884d7efa78b467f7f7976943a" title="Navigation function to a single waypoint." alt="" coords="684,197,815,224"/>
-<area shape="rect" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y)." alt="" coords="693,704,805,731"/>
-<area shape="rect" href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="694,400,805,427"/>
-<area shape="rect" href="potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="692,755,807,781"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a9374b1336f206b0728d9d85f11d47ec5" title="Navigation function along a path." alt="" coords="465,45,605,72"/>
-<area shape="rect" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7" title="Run mission." alt="" coords="25,248,127,275"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a90ebe3cf9de0e38023ac1fb7f3b06f0c" title="Navigation function on a circle." alt="" coords="461,957,608,984"/>
-<area shape="rect" href="nav_8c.html#a289c72677bdc1d6a83aa2cd266335601" title="Navigation along a figure 8." alt="" coords="491,349,578,376"/>
-<area shape="rect" href="nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463" title=" " alt="" coords="474,400,595,427"/>
-<area shape="rect" href="nav__launcher_8c.html#ab48c9dc5c6e69f766e06e1c07e230a60" title=" " alt="" coords="466,451,603,477"/>
-<area shape="rect" href="nav__line__border_8c.html#ad8aeda9d8b50c4c799e02f30fd7fdd2c" title=" " alt="" coords="457,1008,612,1035"/>
-<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="461,501,609,528"/>
-<area shape="rect" href="nav__line_8c.html#aea23f333a62e87e18f4c30016a945325" title=" " alt="" coords="482,1059,587,1085"/>
-<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="494,552,575,579"/>
-<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,755,616,781"/>
-<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="476,603,593,629"/>
-<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="433,653,636,680"/>
-<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="198,349,382,376"/>
-<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="441,704,629,731"/>
-<area shape="rect" href="nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f" title=" " alt="" coords="447,1109,622,1136"/>
-<area shape="rect" href="nav__smooth_8c.html#a9b0866de21fac3f41e0d41284d0beece" title=" " alt="" coords="483,1160,586,1187"/>
-<area shape="rect" href="nav__smooth_8c.html#a03822cfb75944d9b4951d6172e17c6c6" title=" " alt="" coords="483,805,586,832"/>
-<area shape="rect" href="nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="478,856,591,883"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f" title=" " alt="" coords="209,501,371,528"/>
-<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="195,451,385,477"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="221,603,359,629"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,577,147,604"/>
-<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,628,133,655"/>
-<area shape="rect" href="mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b" title="Navigation function along a segment." alt="" coords="206,248,374,275"/>
-<area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,299,625,325"/>
-<area shape="rect" href="nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title=" " alt="" coords="488,96,581,123"/>
-<area shape="rect" href="nav__survey__rectangle_8c.html#a385a092826884a58b3b6fb909fe61c6f" title=" " alt="" coords="452,147,617,173"/>
-<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="487,197,582,224"/>
+<area shape="rect" title="Computes desired_x, desired_y and desired_course." alt="" coords="863,404,944,431"/>
+<area shape="rect" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd" title=" " alt="" coords="686,139,813,166"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a5b713af884d7efa78b467f7f7976943a" title="Navigation function to a single waypoint." alt="" coords="684,190,815,216"/>
+<area shape="rect" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y)." alt="" coords="693,734,805,760"/>
+<area shape="rect" href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="694,404,805,431"/>
+<area shape="rect" href="potential_8c.html#a2ecae8ed4b80ccfece655453a56db7cd" title=" " alt="" coords="692,784,807,811"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a9374b1336f206b0728d9d85f11d47ec5" title="Navigation function along a path." alt="" coords="465,24,605,51"/>
+<area shape="rect" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7" title="Run mission." alt="" coords="25,227,127,254"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a90ebe3cf9de0e38023ac1fb7f3b06f0c" title="Navigation function on a circle." alt="" coords="461,835,608,862"/>
+<area shape="rect" href="nav_8c.html#a289c72677bdc1d6a83aa2cd266335601" title="Navigation along a figure 8." alt="" coords="491,582,578,608"/>
+<area shape="rect" href="nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463" title=" " alt="" coords="474,632,595,659"/>
+<area shape="rect" href="nav__launcher_8c.html#ab48c9dc5c6e69f766e06e1c07e230a60" title=" " alt="" coords="466,734,603,760"/>
+<area shape="rect" href="nav__line__border_8c.html#ad8aeda9d8b50c4c799e02f30fd7fdd2c" title=" " alt="" coords="457,1088,612,1115"/>
+<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="461,480,609,507"/>
+<area shape="rect" href="nav__line_8c.html#aea23f333a62e87e18f4c30016a945325" title=" " alt="" coords="482,1139,587,1166"/>
+<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="494,886,575,912"/>
+<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,379,616,406"/>
+<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="476,430,593,456"/>
+<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="433,531,636,558"/>
+<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="198,556,382,583"/>
+<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="441,683,629,710"/>
+<area shape="rect" href="nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f" title=" " alt="" coords="447,1190,622,1216"/>
+<area shape="rect" href="nav__smooth_8c.html#a9b0866de21fac3f41e0d41284d0beece" title=" " alt="" coords="483,936,586,963"/>
+<area shape="rect" href="nav__smooth_8c.html#a03822cfb75944d9b4951d6172e17c6c6" title=" " alt="" coords="483,987,586,1014"/>
+<area shape="rect" href="nav__smooth_8c.html#a659c7f0a0b4b273c6ef464afa8d07e6d" title=" " alt="" coords="478,1038,591,1064"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a10c09d53a7656ca864dbde4d2d90ac5f" title=" " alt="" coords="209,708,371,735"/>
+<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="195,480,385,507"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="221,886,359,912"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,911,147,938"/>
+<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,860,133,887"/>
+<area shape="rect" href="mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b" title="Navigation function along a segment." alt="" coords="206,227,374,254"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,176,625,203"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a52e3ed7da14c84aa93bb0cc3619f7fdf" title=" " alt="" coords="480,75,589,102"/>
+<area shape="rect" href="nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title=" " alt="" coords="488,328,581,355"/>
+<area shape="rect" href="nav__survey__rectangle_8c.html#a385a092826884a58b3b6fb909fe61c6f" title=" " alt="" coords="452,278,617,304"/>
+<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="487,126,582,152"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a3232277a617cadc2025a13832f90dc97" title="Land at lat long location." alt="" coords="227,126,353,152"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a61619fde12f2e1409255ddba3d77b13f" title="Land at waypoint location." alt="" coords="227,176,353,203"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#ad975e43beff38069205c0a5cd3ca2ba4" title="Land at current location." alt="" coords="231,75,349,102"/>
 </map>
 </div>
 
@@ -1823,11 +1855,11 @@ Variables</h2></td></tr>
 <p>distance to waypoint in x</p>
 <p>distance to waypoint in y</p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00323">323</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00325">325</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 <p class="reference">References <a class="el" href="common__nav_8c_source.html#l00034">dist2_to_wp</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00113">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="nav__catapult_8c_source.html#l00159">nav_catapult_run()</a>, <a class="el" href="nav_8c_source.html#l00632">nav_eight()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav_8c_source.html#l00761">nav_oval()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00130">snav_route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00113">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="nav__catapult_8c_source.html#l00159">nav_catapult_run()</a>, <a class="el" href="nav_8c_source.html#l00634">nav_eight()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00230">nav_land_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav_8c_source.html#l00763">nav_oval()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00130">snav_route()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -1859,25 +1891,33 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_a249451b8d1fe0b19866ea68e0d8b86df_icgraph.png" border="0" usemap="#anav_8h_a249451b8d1fe0b19866ea68e0d8b86df_icgraph" alt=""/></div>
 <map name="anav_8h_a249451b8d1fe0b19866ea68e0d8b86df_icgraph" id="anav_8h_a249451b8d1fe0b19866ea68e0d8b86df_icgraph">
-<area shape="rect" title="Decide if the UAV is approaching the current waypoint." alt="" coords="693,309,849,336"/>
-<area shape="rect" href="nav__survey__polygon__gvf_8c.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" title=" " alt="" coords="433,5,645,32"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a9374b1336f206b0728d9d85f11d47ec5" title="Navigation function along a path." alt="" coords="220,107,360,133"/>
-<area shape="rect" href="mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b" title="Navigation function along a segment." alt="" coords="206,56,374,83"/>
-<area shape="rect" href="mission__fw__nav_8c.html#a5b713af884d7efa78b467f7f7976943a" title="Navigation function to a single waypoint." alt="" coords="474,157,605,184"/>
-<area shape="rect" href="nav__catapult_8c.html#a6ceeaae643feab7cd0f96d7f6a538138" title=" " alt="" coords="472,208,607,235"/>
-<area shape="rect" href="nav_8c.html#a289c72677bdc1d6a83aa2cd266335601" title="Navigation along a figure 8." alt="" coords="496,259,583,285"/>
-<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="465,309,613,336"/>
-<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="499,360,580,387"/>
-<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="481,411,598,437"/>
-<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="438,461,641,488"/>
-<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="447,512,631,539"/>
-<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="445,563,633,589"/>
-<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="492,613,587,640"/>
-<area shape="rect" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7" title="Run mission." alt="" coords="25,107,127,133"/>
-<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="195,309,385,336"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="221,360,359,387"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,385,147,412"/>
-<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,335,133,361"/>
+<area shape="rect" title="Decide if the UAV is approaching the current waypoint." alt="" coords="715,360,871,387"/>
+<area shape="rect" href="nav__survey__polygon__gvf_8c.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8" title=" " alt="" coords="455,5,667,32"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a9374b1336f206b0728d9d85f11d47ec5" title="Navigation function along a path." alt="" coords="241,107,381,133"/>
+<area shape="rect" href="mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b" title="Navigation function along a segment." alt="" coords="227,157,395,184"/>
+<area shape="rect" href="mission__fw__nav_8c.html#a5b713af884d7efa78b467f7f7976943a" title="Navigation function to a single waypoint." alt="" coords="495,56,626,83"/>
+<area shape="rect" href="nav__catapult_8c.html#a6ceeaae643feab7cd0f96d7f6a538138" title=" " alt="" coords="493,208,628,235"/>
+<area shape="rect" href="nav_8c.html#a289c72677bdc1d6a83aa2cd266335601" title="Navigation along a figure 8." alt="" coords="517,259,604,285"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a52e3ed7da14c84aa93bb0cc3619f7fdf" title=" " alt="" coords="506,309,615,336"/>
+<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="487,360,635,387"/>
+<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="520,411,601,437"/>
+<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="502,461,619,488"/>
+<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="459,512,662,539"/>
+<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="469,563,653,589"/>
+<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="467,613,655,640"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="497,664,624,691"/>
+<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="513,715,608,741"/>
+<area shape="rect" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7" title="Run mission." alt="" coords="36,107,137,133"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a3232277a617cadc2025a13832f90dc97" title="Land at lat long location." alt="" coords="248,259,375,285"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a61619fde12f2e1409255ddba3d77b13f" title="Land at waypoint location." alt="" coords="248,309,375,336"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#ad975e43beff38069205c0a5cd3ca2ba4" title="Land at current location." alt="" coords="253,208,370,235"/>
+<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="216,360,407,387"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="242,411,381,437"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="16,385,157,412"/>
+<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="29,436,144,463"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="225,639,397,665"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="230,689,393,716"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="5,639,168,665"/>
 </map>
 </div>
 
@@ -1922,9 +1962,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00108">108</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00071">circle_bank</a>, <a class="el" href="nav_8h_source.html#l00054">DistanceSquare</a>, <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00070">horizontal_mode</a>, <a class="el" href="nav_8h_source.html#l00092">HORIZONTAL_MODE_CIRCLE</a>, <a class="el" href="esc__dshot_8c_source.html#l00085">Min</a>, <a class="el" href="nav_8c_source.html#l00053">nav_circle_radians</a>, <a class="el" href="nav_8c_source.html#l00054">nav_circle_radians_no_rewind</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_radius</a>, <a class="el" href="nav_8c_source.html#l00055">nav_circle_trigo_qdr</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_x</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_y</a>, <a class="el" href="nav_8h_source.html#l00052">NAV_GRAVITY</a>, <a class="el" href="nav_8c_source.html#l00066">nav_in_circle</a>, <a class="el" href="nav_8c_source.html#l00067">nav_in_segment</a>, <a class="el" href="nav_8c_source.html#l00090">nav_mode</a>, <a class="el" href="nav_8h_source.html#l00086">NAV_MODE_COURSE</a>, <a class="el" href="nav_8c_source.html#l00056">nav_shift</a>, <a class="el" href="nav_8h_source.html#l00053">Square</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00071">circle_bank</a>, <a class="el" href="nav_8h_source.html#l00054">DistanceSquare</a>, <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00070">horizontal_mode</a>, <a class="el" href="nav_8h_source.html#l00092">HORIZONTAL_MODE_CIRCLE</a>, <a class="el" href="esc__dshot_8c_source.html#l00085">Min</a>, <a class="el" href="nav_8c_source.html#l00053">nav_circle_radians</a>, <a class="el" href="nav_8c_source.html#l00054">nav_circle_radians_no_rewind</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_radius</a>, <a class="el" href="nav_8c_source.html#l00055">nav_circle_trigo_qdr</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_x</a>, <a class="el" href="nav_8c_source.html#l00068">nav_circle_y</a>, <a class="el" href="nav_8h_source.html#l00052">NAV_GRAVITY</a>, <a class="el" href="nav_8c_source.html#l00066">nav_in_circle</a>, <a class="el" href="nav_8c_source.html#l00067">nav_in_segment</a>, <a class="el" href="nav_8c_source.html#l00090">nav_mode</a>, <a class="el" href="nav_8h_source.html#l00086">NAV_MODE_COURSE</a>, <a class="el" href="nav_8c_source.html#l00056">nav_shift</a>, <a class="el" href="nav_8h_source.html#l00053">Square</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00089">mission_nav_circle()</a>, <a class="el" href="nav_8c_source.html#l00632">nav_eight()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__launcher_8c_source.html#l00125">nav_launcher_run()</a>, <a class="el" href="nav__line__border_8c_source.html#l00045">nav_line_border_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav__line_8c_source.html#l00068">nav_line_run()</a>, <a class="el" href="nav_8c_source.html#l00761">nav_oval()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, <a class="el" href="nav__vertical__raster_8c_source.html#l00048">nav_vertical_raster_run()</a>, <a class="el" href="nav__smooth_8c_source.html#l00121">snav_circle1()</a>, <a class="el" href="nav__smooth_8c_source.html#l00140">snav_circle2()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00089">mission_nav_circle()</a>, <a class="el" href="nav_8c_source.html#l00634">nav_eight()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__launcher_8c_source.html#l00125">nav_launcher_run()</a>, <a class="el" href="nav__line__border_8c_source.html#l00045">nav_line_border_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav__line_8c_source.html#l00068">nav_line_run()</a>, <a class="el" href="nav_8c_source.html#l00763">nav_oval()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, <a class="el" href="nav__vertical__raster_8c_source.html#l00048">nav_vertical_raster_run()</a>, <a class="el" href="nav__smooth_8c_source.html#l00121">snav_circle1()</a>, <a class="el" href="nav__smooth_8c_source.html#l00140">snav_circle2()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00183">snav_on_time()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -2026,9 +2066,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00218">218</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00220">220</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav_8c_source.html#l00217">baseleg_out_qdr</a>, <a class="el" href="nav_8c_source.html#l00056">nav_radius</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav_8c_source.html#l00219">baseleg_out_qdr</a>, <a class="el" href="nav_8c_source.html#l00056">nav_radius</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 
 </div>
 </div>
@@ -2064,7 +2104,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00239">239</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00241">241</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 <p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 
@@ -2105,9 +2145,9 @@ Variables</h2></td></tr>
 <p>Navigation along a figure 8. </p>
 <p>The cross center is defined by the waypoint [target], the center of one of the circles is defined by [c1]. Altitude is given by [target]. The navigation goes through 6 states: C1 (circle around [c1]), R1T, RT2 (route from circle 1 to circle 2 over [target]), C2 and R2T, RT1. If necessary, the [c1] waypoint is moved in the direction of [target] to be not far than [2*radius]. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00632">632</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00634">634</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="nav_8c_source.html#l00616">C1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, <a class="el" href="nav_8c_source.html#l00616">C2</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="common__flight__plan_8h_source.html#l00045">InitStage</a>, <a class="el" href="nav_8c_source.html#l00323">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00145">NavCircleWaypoint</a>, <a class="el" href="nav_8h_source.html#l00155">NavQdrCloseTo</a>, <a class="el" href="nav_8c_source.html#l00616">R1T</a>, <a class="el" href="nav_8c_source.html#l00616">R2T</a>, <a class="el" href="nav_8c_source.html#l00616">RT1</a>, <a class="el" href="nav_8c_source.html#l00616">RT2</a>, <a class="el" href="target__pos_8c_source.html#l00064">target</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="nav_8c_source.html#l00618">C1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, <a class="el" href="nav_8c_source.html#l00618">C2</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="common__flight__plan_8h_source.html#l00045">InitStage</a>, <a class="el" href="nav_8c_source.html#l00325">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00151">NavCircleWaypoint</a>, <a class="el" href="nav_8h_source.html#l00161">NavQdrCloseTo</a>, <a class="el" href="nav_8c_source.html#l00618">R1T</a>, <a class="el" href="nav_8c_source.html#l00618">R2T</a>, <a class="el" href="nav_8c_source.html#l00618">RT1</a>, <a class="el" href="nav_8c_source.html#l00618">RT2</a>, <a class="el" href="target__pos_8c_source.html#l00064">target</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -2157,9 +2197,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00619">619</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00621">621</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_8c_source.html#l00616">C1</a>.</p>
+<p class="reference">References <a class="el" href="nav_8c_source.html#l00618">C1</a>.</p>
 
 </div>
 </div>
@@ -2195,7 +2235,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00300">300</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00302">302</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 </div>
 </div>
@@ -2227,7 +2267,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00158">158</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav_8c_source.html#l00064">nav_leg_length</a>, <a class="el" href="nav_8c_source.html#l00060">nav_leg_progress</a>, <a class="el" href="nav_8h_source.html#l00185">NavVerticalAltitudeMode</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, and <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>.</p>
+<p class="reference">References <a class="el" href="nav_8c_source.html#l00163">nav_glide_alt()</a>, and <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -2236,8 +2276,70 @@ Variables</h2></td></tr>
 <div class="center"><img src="nav_8h_af953408dd60fe367bed94bdb00ebff73_cgraph.png" border="0" usemap="#anav_8h_af953408dd60fe367bed94bdb00ebff73_cgraph" alt=""/></div>
 <map name="anav_8h_af953408dd60fe367bed94bdb00ebff73_cgraph" id="anav_8h_af953408dd60fe367bed94bdb00ebff73_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,91,39"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="139,13,372,39"/>
-<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="420,5,611,47"/>
+<area shape="rect" href="nav_8c.html#aa1a7fb417c0733dbba1cd09147fbbe19" title=" " alt="" coords="139,13,248,39"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="296,13,529,39"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="577,5,768,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa1a7fb417c0733dbba1cd09147fbbe19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a7fb417c0733dbba1cd09147fbbe19">&#9670;&nbsp;</a></span>nav_glide_alt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nav_glide_alt </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>start_alt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>final_alt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00163">163</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+
+<p class="reference">References <a class="el" href="nav_8c_source.html#l00064">nav_leg_length</a>, <a class="el" href="nav_8c_source.html#l00060">nav_leg_progress</a>, <a class="el" href="nav_8h_source.html#l00191">NavVerticalAltitudeMode</a>, and <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00158">nav_glide()</a>, and <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00230">nav_land_run()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_cgraph.png" border="0" usemap="#anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_cgraph" alt=""/></div>
+<map name="anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_cgraph" id="anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,115,39"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="163,13,396,39"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="444,5,635,47"/>
+</map>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="nav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_icgraph.png" border="0" usemap="#anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_icgraph" alt=""/></div>
+<map name="anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_icgraph" id="anav_8h_aa1a7fb417c0733dbba1cd09147fbbe19_icgraph">
+<area shape="rect" title=" " alt="" coords="337,31,447,57"/>
+<area shape="rect" href="nav_8c.html#af953408dd60fe367bed94bdb00ebff73" title=" " alt="" coords="192,5,277,32"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a52e3ed7da14c84aa93bb0cc3619f7fdf" title=" " alt="" coords="180,56,289,83"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a3232277a617cadc2025a13832f90dc97" title="Land at lat long location." alt="" coords="5,5,132,32"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a61619fde12f2e1409255ddba3d77b13f" title="Land at waypoint location." alt="" coords="5,56,132,83"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#ad975e43beff38069205c0a5cd3ca2ba4" title="Land at current location." alt="" coords="10,107,127,133"/>
 </map>
 </div>
 
@@ -2263,7 +2365,7 @@ Variables</h2></td></tr>
 <p>Home mode navigation (circle around HOME) </p>
 <p>Nominal speed</p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00422">422</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00424">424</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2387,7 @@ Variables</h2></td></tr>
 
 <p>Navigation Initialisation. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00530">530</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00532">532</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 </div>
 </div>
@@ -2321,16 +2423,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00761">761</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00763">763</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="common__flight__plan_8h_source.html#l00045">InitStage</a>, <a class="el" href="nav_8c_source.html#l00274">LINE_START_FUNCTION</a>, <a class="el" href="nav_8c_source.html#l00277">LINE_STOP_FUNCTION</a>, <a class="el" href="nav_8c_source.html#l00323">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00753">nav_oval_count</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00155">NavQdrCloseTo</a>, <a class="el" href="nav_8h_source.html#l00060">OC1</a>, <a class="el" href="nav_8h_source.html#l00060">OC2</a>, <a class="el" href="nav_8h_source.html#l00060">OR12</a>, <a class="el" href="nav_8h_source.html#l00060">OR21</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<p class="reference">References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="common__flight__plan_8h_source.html#l00045">InitStage</a>, <a class="el" href="nav_8c_source.html#l00276">LINE_START_FUNCTION</a>, <a class="el" href="nav_8c_source.html#l00279">LINE_STOP_FUNCTION</a>, <a class="el" href="nav_8c_source.html#l00325">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00755">nav_oval_count</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00161">NavQdrCloseTo</a>, <a class="el" href="nav_8h_source.html#l00060">OC1</a>, <a class="el" href="nav_8h_source.html#l00060">OC2</a>, <a class="el" href="nav_8h_source.html#l00060">OR12</a>, <a class="el" href="nav_8h_source.html#l00060">OR21</a>, <a class="el" href="common__nav_8c_source.html#l00039">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00403">nav_register_oval()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00424">nav_register_oval()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_cgraph.png" border="0" usemap="#anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_cgraph" alt=""/></div>
 <map name="anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_cgraph" id="anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,87,133"/>
@@ -2356,11 +2458,11 @@ Variables</h2></td></tr>
 <area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="780,41,971,82"/>
 </map>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_icgraph.png" border="0" usemap="#anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_icgraph" alt=""/></div>
 <map name="anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_icgraph" id="anav_8h_a5a4a7ec5d3cf1734dca01d87b3d1eef5_icgraph">
 <area shape="rect" title=" " alt="" coords="381,31,463,57"/>
@@ -2388,16 +2490,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00755">755</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00757">757</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav_8c_source.html#l00753">nav_oval_count</a>, and <a class="el" href="nav_8h_source.html#l00060">OC2</a>.</p>
+<p class="reference">References <a class="el" href="nav_8c_source.html#l00755">nav_oval_count</a>, and <a class="el" href="nav_8h_source.html#l00060">OC2</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rover_2navigation_8c_source.html#l00324">nav_register_oval()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_aa602ef7f7d2e485655a7cc97a35b80c3_icgraph.png" border="0" usemap="#anav_8h_aa602ef7f7d2e485655a7cc97a35b80c3_icgraph" alt=""/></div>
 <map name="anav_8h_aa602ef7f7d2e485655a7cc97a35b80c3_icgraph" id="anav_8h_aa602ef7f7d2e485655a7cc97a35b80c3_icgraph">
 <area shape="rect" title=" " alt="" coords="192,5,301,32"/>
@@ -2439,14 +2541,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00584">584</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00586">586</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, and <a class="el" href="nav_8h_source.html#l00240">SEND_NAVIGATION</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, and <a class="el" href="nav_8h_source.html#l00246">SEND_NAVIGATION</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_afc5ef925b0de76cbd601058312a70763_cgraph.png" border="0" usemap="#anav_8h_afc5ef925b0de76cbd601058312a70763_cgraph" alt=""/></div>
 <map name="anav_8h_afc5ef925b0de76cbd601058312a70763_cgraph" id="anav_8h_afc5ef925b0de76cbd601058312a70763_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,145,32"/>
@@ -2489,7 +2591,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00591">591</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00593">593</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 </div>
 </div>
@@ -2511,7 +2613,7 @@ Variables</h2></td></tr>
 
 <p>Navigation main: call to the code generated from the XML flight plan. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00443">443</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00445">445</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
 </div>
 </div>
@@ -2556,16 +2658,16 @@ Variables</h2></td></tr>
 <p>Computes the carrot position along the desired segment. </p>
 <p>distance of carrot (in meter)</p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00380">380</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00382">382</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00070">horizontal_mode</a>, <a class="el" href="nav_8h_source.html#l00091">HORIZONTAL_MODE_ROUTE</a>, <a class="el" href="nav_8c_source.html#l00061">nav_carrot_leg_progress</a>, <a class="el" href="nav_8c_source.html#l00066">nav_in_circle</a>, <a class="el" href="nav_8c_source.html#l00067">nav_in_segment</a>, <a class="el" href="nav_8c_source.html#l00064">nav_leg_length</a>, <a class="el" href="nav_8c_source.html#l00060">nav_leg_progress</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_x_1</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_x_2</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_y_1</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_y_2</a>, <a class="el" href="nav_8c_source.html#l00056">nav_shift</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2navigation_8h_source.html#l00070">CARROT</a>, <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00070">horizontal_mode</a>, <a class="el" href="nav_8h_source.html#l00091">HORIZONTAL_MODE_ROUTE</a>, <a class="el" href="nav_8c_source.html#l00061">nav_carrot_leg_progress</a>, <a class="el" href="nav_8c_source.html#l00066">nav_in_circle</a>, <a class="el" href="nav_8c_source.html#l00067">nav_in_segment</a>, <a class="el" href="nav_8c_source.html#l00064">nav_leg_length</a>, <a class="el" href="nav_8c_source.html#l00060">nav_leg_progress</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_x_1</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_x_2</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_y_1</a>, <a class="el" href="nav_8c_source.html#l00069">nav_segment_y_2</a>, <a class="el" href="nav_8c_source.html#l00056">nav_shift</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00113">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav_8c_source.html#l00632">nav_eight()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__launcher_8c_source.html#l00125">nav_launcher_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav_8c_source.html#l00761">nav_oval()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00042">nav_points()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00130">snav_route()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00113">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav_8c_source.html#l00634">nav_eight()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00230">nav_land_run()</a>, <a class="el" href="nav__launcher_8c_source.html#l00125">nav_launcher_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav_8c_source.html#l00763">nav_oval()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00042">nav_points()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="nav__smooth_8c_source.html#l00130">snav_route()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_ab4247c9f3dc0417690e1404add032cbe_cgraph.png" border="0" usemap="#anav_8h_ab4247c9f3dc0417690e1404add032cbe_cgraph" alt=""/></div>
 <map name="anav_8h_ab4247c9f3dc0417690e1404add032cbe_cgraph" id="anav_8h_ab4247c9f3dc0417690e1404add032cbe_cgraph">
 <area shape="rect" title="Computes the carrot position along the desired segment." alt="" coords="5,103,116,130"/>
@@ -2588,35 +2690,39 @@ Variables</h2></td></tr>
 <area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1011,289,1151,331"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_ab4247c9f3dc0417690e1404add032cbe_icgraph.png" border="0" usemap="#anav_8h_ab4247c9f3dc0417690e1404add032cbe_icgraph" alt=""/></div>
 <map name="anav_8h_ab4247c9f3dc0417690e1404add032cbe_icgraph" id="anav_8h_ab4247c9f3dc0417690e1404add032cbe_icgraph">
-<area shape="rect" title="Computes the carrot position along the desired segment." alt="" coords="684,360,795,387"/>
+<area shape="rect" title="Computes the carrot position along the desired segment." alt="" coords="684,385,795,412"/>
 <area shape="rect" href="mission__fw__nav_8c.html#a9374b1336f206b0728d9d85f11d47ec5" title="Navigation function along a path." alt="" coords="465,5,605,32"/>
 <area shape="rect" href="mission__fw__nav_8c.html#ab478e070ef87bc2afe3d87a09ba6724b" title="Navigation function along a segment." alt="" coords="451,56,619,83"/>
 <area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,107,625,133"/>
 <area shape="rect" href="nav_8c.html#a289c72677bdc1d6a83aa2cd266335601" title="Navigation along a figure 8." alt="" coords="491,157,578,184"/>
 <area shape="rect" href="nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463" title=" " alt="" coords="474,208,595,235"/>
-<area shape="rect" href="nav__launcher_8c.html#ab48c9dc5c6e69f766e06e1c07e230a60" title=" " alt="" coords="466,259,603,285"/>
-<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="461,309,609,336"/>
-<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="494,360,575,387"/>
-<area shape="rect" href="nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title=" " alt="" coords="488,411,581,437"/>
-<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,461,616,488"/>
-<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="476,512,593,539"/>
-<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="433,563,636,589"/>
-<area shape="rect" href="nav__survey__rectangle_8c.html#a385a092826884a58b3b6fb909fe61c6f" title=" " alt="" coords="452,613,617,640"/>
-<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="441,664,629,691"/>
-<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="487,715,582,741"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a52e3ed7da14c84aa93bb0cc3619f7fdf" title=" " alt="" coords="480,259,589,285"/>
+<area shape="rect" href="nav__launcher_8c.html#ab48c9dc5c6e69f766e06e1c07e230a60" title=" " alt="" coords="466,309,603,336"/>
+<area shape="rect" href="nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf" title=" " alt="" coords="461,360,609,387"/>
+<area shape="rect" href="nav_8c.html#ae660519c2f89e1c5f9aac7877f1e46e6" title=" " alt="" coords="494,411,575,437"/>
+<area shape="rect" href="nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title=" " alt="" coords="488,461,581,488"/>
+<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,512,616,539"/>
+<area shape="rect" href="nav__spiral_8c.html#a816049b35ed5cc3424ab34f7e5ddf18a" title=" " alt="" coords="476,563,593,589"/>
+<area shape="rect" href="nav__survey__poly__osam_8c.html#afaeaf322fcc29fc8e54cf3b6808f0d65" title="Run polygon survey." alt="" coords="433,613,636,640"/>
+<area shape="rect" href="nav__survey__rectangle_8c.html#a385a092826884a58b3b6fb909fe61c6f" title=" " alt="" coords="452,664,617,691"/>
+<area shape="rect" href="nav__survey__zamboni_8c.html#a19f80130e80d72be86859190c8246b73" title="main navigation routine." alt="" coords="441,715,629,741"/>
+<area shape="rect" href="nav__smooth_8c.html#acfdab58b94103a609e9da58ea9e1b82d" title=" " alt="" coords="487,765,582,792"/>
 <area shape="rect" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7" title="Run mission." alt="" coords="239,31,341,57"/>
-<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="195,309,385,336"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="221,360,359,387"/>
-<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,335,147,361"/>
-<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,385,133,412"/>
-<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="198,411,382,437"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a3232277a617cadc2025a13832f90dc97" title="Land at lat long location." alt="" coords="227,208,353,235"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a61619fde12f2e1409255ddba3d77b13f" title="Land at waypoint location." alt="" coords="227,259,353,285"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#ad975e43beff38069205c0a5cd3ca2ba4" title="Land at current location." alt="" coords="231,309,349,336"/>
+<area shape="rect" href="nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2" title=" " alt="" coords="195,360,385,387"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html#a18caecce5b2e553ae943492383483f80" title=" " alt="" coords="221,411,359,437"/>
+<area shape="rect" href="nav__rotorcraft__base_8c.html#aabec21757401b8f7b3fb00bec69f0afa" title="Init and register nav functions." alt="" coords="5,385,147,412"/>
+<area shape="rect" href="nav__rover__base_8c.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions." alt="" coords="19,436,133,463"/>
+<area shape="rect" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine." alt="" coords="198,461,382,488"/>
 </map>
 </div>
 
@@ -2641,16 +2747,16 @@ Variables</h2></td></tr>
 <p>Failsafe navigation without position estimation. </p>
 <p>Just set attitude and throttle to FAILSAFE values to prevent the plane from crashing. </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00568">568</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00570">570</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__adaptive_8c_source.html#l00157">h_ctl_roll_setpoint</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00038">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">LATERAL_MODE_ROLL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nav_8c_source.html#l00308">nav_pitch</a>, <a class="el" href="nav_8c_source.html#l00307">nav_throttle_setpoint</a>, <a class="el" href="paparazzi_8h_source.html#l00014">TRIM_UPPRZ</a>, <a class="el" href="energy__ctrl_8c_source.html#l00074">v_ctl_mode</a>, and <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__adaptive_8c_source.html#l00157">h_ctl_roll_setpoint</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00038">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">LATERAL_MODE_ROLL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nav_8c_source.html#l00310">nav_pitch</a>, <a class="el" href="nav_8c_source.html#l00309">nav_throttle_setpoint</a>, <a class="el" href="paparazzi_8h_source.html#l00014">TRIM_UPPRZ</a>, <a class="el" href="energy__ctrl_8c_source.html#l00074">v_ctl_mode</a>, and <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav_8h_ab746572e63956a2ad40674328a85b029_icgraph.png" border="0" usemap="#anav_8h_ab746572e63956a2ad40674328a85b029_icgraph" alt=""/></div>
 <map name="anav_8h_ab746572e63956a2ad40674328a85b029_icgraph" id="anav_8h_ab746572e63956a2ad40674328a85b029_icgraph">
 <area shape="rect" title="Failsafe navigation without position estimation." alt="" coords="180,5,312,32"/>
@@ -2681,9 +2787,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00217">217</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00219">219</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00218">nav_compute_baseleg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00220">nav_compute_baseleg()</a>, and <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00230">nav_land_run()</a>.</p>
 
 </div>
 </div>
@@ -2791,9 +2897,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00306">306</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00308">308</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00118">gvf_parametric_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00212">gvf_parametric_control_3D()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00096">send_desired()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="formation_8c_source.html#l00124">formation_flight()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00118">gvf_parametric_control_2D()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00212">gvf_parametric_control_3D()</a>, <a class="el" href="potential_8c_source.html#l00058">potential_task()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00096">send_desired()</a>.</p>
 
 </div>
 </div>
@@ -2851,9 +2957,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00311">311</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00313">313</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>.</p>
 
 </div>
 </div>
@@ -2877,9 +2983,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00309">309</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00311">311</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>.</p>
 
 </div>
 </div>
@@ -2903,9 +3009,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00310">310</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00312">312</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>.</p>
 
 </div>
 </div>
@@ -2931,7 +3037,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00070">70</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00356">gvf_parametric_3D_ellipse_XYZ()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvf__parametric_8cpp_source.html#l00356">gvf_parametric_3D_ellipse_XYZ()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>.</p>
 
 </div>
 </div>
@@ -3085,7 +3191,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00055">55</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, and <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00230">nav_land_run()</a>.</p>
 
 </div>
 </div>
@@ -3111,7 +3217,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00068">68</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00044">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, and <a class="el" href="nav_8c_source.html#l00502">send_circle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00044">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, and <a class="el" href="nav_8c_source.html#l00504">send_circle()</a>.</p>
 
 </div>
 </div>
@@ -3217,7 +3323,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00083">83</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>.</p>
 
 </div>
 </div>
@@ -3233,7 +3339,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00116">116</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00121">121</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -3259,7 +3365,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00066">66</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uav__recovery_8c_source.html#l00148">calculate_wind_no_airspeed()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8c_source.html#l00443">nav_periodic_task()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav_8c_source.html#l00502">send_circle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="uav__recovery_8c_source.html#l00148">calculate_wind_no_airspeed()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8c_source.html#l00445">nav_periodic_task()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav_8c_source.html#l00504">send_circle()</a>.</p>
 
 </div>
 </div>
@@ -3285,7 +3391,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00067">67</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav_8c_source.html#l00510">send_segment()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav_8c_source.html#l00512">send_segment()</a>.</p>
 
 </div>
 </div>
@@ -3311,7 +3417,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00090">90</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, and <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00356">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, and <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>.</p>
 
 </div>
 </div>
@@ -3339,9 +3445,9 @@ Variables</h2></td></tr>
 <p>One side leg is defined by waypoints [p1] and [p2]. The navigation goes through 4 states: OC1 (half circle next to [p1]), OR21 (route [p2] to [p1], OC2 (half circle next to [p2]) and OR12 (opposite leg).</p>
 <p>Initial state is the route along the desired segment (OC2). </p>
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00753">753</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00755">755</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00761">nav_oval()</a>, and <a class="el" href="nav_8c_source.html#l00755">nav_oval_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00763">nav_oval()</a>, and <a class="el" href="nav_8c_source.html#l00757">nav_oval_init()</a>.</p>
 
 </div>
 </div>
@@ -3365,9 +3471,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00308">308</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00310">310</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00422">nav_home()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00409">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00424">nav_home()</a>, <a class="el" href="nav_8c_source.html#l00570">nav_without_gps()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00409">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>.</p>
 
 </div>
 </div>
@@ -3393,7 +3499,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00056">56</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00218">nav_compute_baseleg()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, and <a class="el" href="uav__recovery_8c_source.html#l00235">parachute_compute_approach()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00220">nav_compute_baseleg()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>, and <a class="el" href="uav__recovery_8c_source.html#l00235">parachute_compute_approach()</a>.</p>
 
 </div>
 </div>
@@ -3419,7 +3525,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00069">69</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00044">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>, and <a class="el" href="nav_8c_source.html#l00510">send_segment()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00044">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>, and <a class="el" href="nav_8c_source.html#l00512">send_segment()</a>.</p>
 
 </div>
 </div>
@@ -3493,7 +3599,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00056">56</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, and <a class="el" href="nav_8c_source.html#l00380">nav_route_xy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00108">nav_circle_XY()</a>, <a class="el" href="nav_8c_source.html#l00092">nav_init_stage()</a>, and <a class="el" href="nav_8c_source.html#l00382">nav_route_xy()</a>.</p>
 
 </div>
 </div>
@@ -3519,7 +3625,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00088">88</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00443">nav_periodic_task()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, and <a class="el" href="nav_8c_source.html#l00518">send_survey()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00445">nav_periodic_task()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, and <a class="el" href="nav_8c_source.html#l00520">send_survey()</a>.</p>
 
 </div>
 </div>
@@ -3535,7 +3641,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00120">120</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00125">125</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -3551,7 +3657,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00120">120</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00125">125</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -3577,7 +3683,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00086">86</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00049">nav_survey_disc_setup()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav_8c_source.html#l00532">nav_init()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00049">nav_survey_disc_setup()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, and <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>.</p>
 
 </div>
 </div>
@@ -3593,7 +3699,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00120">120</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8h_source.html#l00125">125</a> of file <a class="el" href="nav_8h_source.html">nav.h</a>.</p>
 
 </div>
 </div>
@@ -3619,7 +3725,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00087">87</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>, and <a class="el" href="nav_8c_source.html#l00518">send_survey()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00108">nav_survey_rectangle_rotorcraft_setup()</a>, and <a class="el" href="nav_8c_source.html#l00520">send_survey()</a>.</p>
 
 </div>
 </div>
@@ -3643,9 +3749,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00307">307</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav_8c_source.html#l00309">309</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00570">nav_without_gps()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>.</p>
 
 </div>
 </div>
@@ -3703,7 +3809,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="nav_8h.html">nav.h</a></li>
-    <li class="footer">Generated on Mon Mar 13 2023 21:24:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 16 2023 20:50:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

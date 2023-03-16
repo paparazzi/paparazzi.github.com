@@ -190,11 +190,11 @@ var NAVTREEINDEX124 =
 "module__adc_generic.html#functions__adc_generic":[1,18,2],
 "module__adc_generic.html#module_load_example__adc_generic":[1,18,0],
 "module__adc_generic.html#module_xml__adc_generic":[1,18,2,0],
-"module__agl_dist.html":[1,386],
-"module__agl_dist.html#configuration__agl_dist":[1,386,1],
-"module__agl_dist.html#functions__agl_dist":[1,386,2],
-"module__agl_dist.html#module_load_example__agl_dist":[1,386,0],
-"module__agl_dist.html#module_xml__agl_dist":[1,386,2,0],
+"module__agl_dist.html":[1,387],
+"module__agl_dist.html#configuration__agl_dist":[1,387,1],
+"module__agl_dist.html#functions__agl_dist":[1,387,2],
+"module__agl_dist.html#module_load_example__agl_dist":[1,387,0],
+"module__agl_dist.html#module_xml__agl_dist":[1,387,2,0],
 "module__ahrs_chimu_spi.html":[1,22],
 "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi":[1,22,1],
 "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,22,2],
@@ -247,7 +247,7 @@ var NAVTREEINDEX124 =
 "module__ahrs_vectornav.html#functions__ahrs_vectornav":[1,33,2],
 "module__ahrs_vectornav.html#module_load_example__ahrs_vectornav":[1,33,0],
 "module__ahrs_vectornav.html#module_xml__ahrs_vectornav":[1,33,2,0],
-"module__air_data.html":[1,414],
-"module__air_data.html#configuration__air_data":[1,414,1],
-"module__air_data.html#datalink_functions__air_data":[1,414,3]
+"module__air_data.html":[1,415],
+"module__air_data.html#configuration__air_data":[1,415,1],
+"module__air_data.html#datalink_functions__air_data":[1,415,3]
 };

@@ -1,7 +1,7 @@
 <map id="enu_of_ecef_point_i" name="enu_of_ecef_point_i">
 <area shape="rect" id="node1" title="Convert a point from ECEF to local ENU." alt="" coords="1175,343,1327,369"/>
 <area shape="rect" id="node2" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="984,157,1127,184"/>
-<area shape="rect" id="node26" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="985,680,1125,707"/>
+<area shape="rect" id="node24" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU." alt="" coords="985,641,1125,668"/>
 <area shape="rect" id="node40" href="$group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="524,343,676,369"/>
 <area shape="rect" id="node3" href="$group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e" title="Convert a point from LLA to local ENU." alt="" coords="781,107,912,133"/>
 <area shape="rect" id="node4" href="$group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title=" " alt="" coords="515,56,685,83"/>
@@ -16,7 +16,7 @@
 <area shape="rect" id="node12" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="257,183,425,209"/>
 <area shape="rect" id="node13" href="$ctrl_2follow__me_8c.html#a7e5c2903825aa9815752b1fd8105dc15" title="run function" alt="" coords="27,128,170,155"/>
 <area shape="rect" id="node14" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="13,179,184,221"/>
-<area shape="rect" id="node16" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="517,629,683,656"/>
+<area shape="rect" id="node16" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="517,591,683,617"/>
 <area shape="rect" id="node17" href="$ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title=" " alt="" coords="305,553,378,580"/>
 <area shape="rect" id="node18" href="$cc2500__compat_8c.html#a1fe351263605d7f4869b80c5e60abe3e" title=" " alt="" coords="240,604,443,631"/>
 <area shape="rect" id="node19" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="254,503,429,529"/>
@@ -24,21 +24,21 @@
 <area shape="rect" id="node21" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="53,731,144,757"/>
 <area shape="rect" id="node22" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="293,756,389,783"/>
 <area shape="rect" id="node23" href="$cloud__sim_8c.html#a4270af0dedba2e2e2c94f5c42b77eae8" title="periodic call for border detection" alt="" coords="273,807,409,833"/>
-<area shape="rect" id="node24" href="$ctc_8c.html#a4321ca0e4116e9d0debfdb98f8e62924" title=" " alt="" coords="269,858,414,899"/>
-<area shape="rect" id="node25" href="$rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home." alt="" coords="250,924,433,951"/>
-<area shape="rect" id="node27" href="$group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="757,591,936,617"/>
-<area shape="rect" id="node29" href="$group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="758,680,935,707"/>
-<area shape="rect" id="node31" href="$mission__rotorcraft__nav_8c.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Utility function: converts lla (int) to local point (float)" alt="" coords="769,789,925,816"/>
-<area shape="rect" id="node36" href="$nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="777,975,916,1001"/>
-<area shape="rect" id="node28" href="$group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float)." alt="" coords="513,540,687,567"/>
-<area shape="rect" id="node30" href="$group__ac__info.html#ga375088f288d8540b8f3404c6a58f4646" title="Get position in local ENU coordinates (int)." alt="" coords="514,680,686,707"/>
-<area shape="rect" id="node32" href="$mission__common_8c.html#aff4d5f1fc008b07a4b312472ff956f8f" title=" " alt="" coords="500,731,700,757"/>
-<area shape="rect" id="node33" href="$mission__common_8c.html#a0e05b413aea5474b477aac3c43dbec42" title=" " alt="" coords="519,782,681,823"/>
-<area shape="rect" id="node34" href="$mission__common_8c.html#a21836256087c77243583a2e1de8c648b" title=" " alt="" coords="507,848,693,875"/>
-<area shape="rect" id="node35" href="$mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667" title=" " alt="" coords="491,899,709,925"/>
-<area shape="rect" id="node37" href="$nav_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude" alt="" coords="523,949,677,976"/>
-<area shape="rect" id="node38" href="$nav_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title=" " alt="" coords="534,1000,666,1027"/>
-<area shape="rect" id="node39" href="$nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of global waypoints" alt="" coords="515,1051,685,1077"/>
+<area shape="rect" id="node25" href="$group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title=" " alt="" coords="757,552,936,579"/>
+<area shape="rect" id="node27" href="$group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title=" " alt="" coords="758,641,935,668"/>
+<area shape="rect" id="node29" href="$mission__rotorcraft__nav_8c.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Utility function: converts lla (int) to local point (float)" alt="" coords="769,751,925,777"/>
+<area shape="rect" id="node34" href="$nav_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates" alt="" coords="777,987,916,1013"/>
+<area shape="rect" id="node26" href="$group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float)." alt="" coords="513,515,687,541"/>
+<area shape="rect" id="node28" href="$group__ac__info.html#ga375088f288d8540b8f3404c6a58f4646" title="Get position in local ENU coordinates (int)." alt="" coords="514,641,686,668"/>
+<area shape="rect" id="node30" href="$mission__common_8c.html#aff4d5f1fc008b07a4b312472ff956f8f" title=" " alt="" coords="500,692,700,719"/>
+<area shape="rect" id="node31" href="$mission__common_8c.html#a0e05b413aea5474b477aac3c43dbec42" title=" " alt="" coords="519,743,681,785"/>
+<area shape="rect" id="node32" href="$mission__common_8c.html#a21836256087c77243583a2e1de8c648b" title=" " alt="" coords="507,809,693,836"/>
+<area shape="rect" id="node33" href="$mission__common_8c.html#a3f6b94a9d68ae0afc1ae4bee904db667" title=" " alt="" coords="491,860,709,887"/>
+<area shape="rect" id="node35" href="$nav_2waypoints_8c.html#af6eabe0976e2fd9a092cf2d7edd456c1" title="Get ENU coordinates (float)" alt="" coords="523,911,677,937"/>
+<area shape="rect" id="node36" href="$nav_2waypoints_8c.html#aad53edfd37210aeecda87f76a3bc0f2e" title="Get ENU coordinates (integer)" alt="" coords="524,961,676,988"/>
+<area shape="rect" id="node37" href="$nav_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude" alt="" coords="523,1012,677,1039"/>
+<area shape="rect" id="node38" href="$nav_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title=" " alt="" coords="534,1063,666,1089"/>
+<area shape="rect" id="node39" href="$nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of global waypoints" alt="" coords="515,1113,685,1140"/>
 <area shape="rect" id="node41" href="$ins__gps__passthrough_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="308,284,375,311"/>
 <area shape="rect" id="node43" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="270,335,413,377"/>
 <area shape="rect" id="node45" href="$ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title=" " alt="" coords="268,401,415,428"/>

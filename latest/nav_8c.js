@@ -30,6 +30,7 @@ var nav_8c =
     [ "nav_eight_init", "nav_8c.html#ae9a835aee8c0898c8c5c65190d0b30bc", null ],
     [ "nav_follow", "nav_8c.html#ae2b26364c71722ee3069804284b08c12", null ],
     [ "nav_glide", "nav_8c.html#af953408dd60fe367bed94bdb00ebff73", null ],
+    [ "nav_glide_alt", "nav_8c.html#aa1a7fb417c0733dbba1cd09147fbbe19", null ],
     [ "nav_home", "nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3", null ],
     [ "nav_init", "nav_8c.html#a64a3814d1672e69989f80701a0ff5749", null ],
     [ "nav_init_stage", "nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d", null ],
