@@ -1,5 +1,7 @@
 var NAVTREEINDEX184 =
 {
+"rover__guidance__steering_8c_source.html":[12,0,1,0,3,3,0,4],
+"rover__guidance__steering_8h.html":[12,0,1,0,3,3,0,5],
 "rover__guidance__steering_8h.html#a0185a8119f285985444db413c3b51863":[12,0,1,0,3,3,0,5,18],
 "rover__guidance__steering_8h.html#a04931eb781a9e662b7d2d6fe7a9ab4ba":[12,0,1,0,3,3,0,5,9],
 "rover__guidance__steering_8h.html#a15a69478ab5601d734a89532e22c419b":[12,0,1,0,3,3,0,5,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX184 =
 "sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a":[12,0,1,0,6,55,15,19],
 "sbus__common_8c.html#a20366ad7a6b48e4b2128333c030b7820":[12,0,1,0,6,55,15,12],
 "sbus__common_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f":[12,0,1,0,6,55,15,13],
-"sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740":[12,0,1,0,6,55,15,18],
-"sbus__common_8c.html#a43a248160d2320e1cfb504870ff9482c":[12,0,1,0,6,55,15,7],
-"sbus__common_8c.html#a45ca7cbe604f6745fe1bebf324c246ee":[12,0,1,0,6,55,15,5]
+"sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740":[12,0,1,0,6,55,15,18]
 };

@@ -40,6 +40,8 @@ var rotorcraft_2guidance_2guidance__v_8h =
     [ "guidance_v_set_th", "rotorcraft_2guidance_2guidance__v_8h.html#ab35adf811b8455ea44837bb3be44776c", null ],
     [ "guidance_v_set_vz", "rotorcraft_2guidance_2guidance__v_8h.html#a11bc5a0aad4e7ceef172ba43e9547a5d", null ],
     [ "guidance_v_set_z", "rotorcraft_2guidance_2guidance__v_8h.html#a723f12dd716d47e391d6370214c7001c", null ],
+    [ "guidance_v_thrust_adapt", "rotorcraft_2guidance_2guidance__v_8h.html#a0f2c0608e9949e1d68952c3491a30a83", null ],
+    [ "guidance_v_update_ref", "rotorcraft_2guidance_2guidance__v_8h.html#ae0b443f735389563a2afd185178173e3", null ],
     [ "guidance_v_z_enter", "rotorcraft_2guidance_2guidance__v_8h.html#a2558bccfb6fd14b6be513c5910737f0d", null ],
     [ "guidance_v", "rotorcraft_2guidance_2guidance__v_8h.html#add113dec2fd0378ab6a32dc2088a2795", null ]
 ];

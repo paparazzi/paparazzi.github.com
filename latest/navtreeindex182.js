@@ -1,5 +1,7 @@
 var NAVTREEINDEX182 =
 {
+"rotorcraft_2navigation_8c.html#a4722a6d624ce0bb547c43724e2bb9f71":[12,0,1,0,3,2,19,29],
+"rotorcraft_2navigation_8c.html#a497df0753fcbcd7b681341695228527c":[12,0,1,0,3,2,19,35],
 "rotorcraft_2navigation_8c.html#a4c7a077d8caffd6b82413a798bbaf71e":[12,0,1,0,3,2,19,42],
 "rotorcraft_2navigation_8c.html#a64a3814d1672e69989f80701a0ff5749":[12,0,1,0,3,2,19,17],
 "rotorcraft_2navigation_8c.html#a66999fe9753ffaa9c972ca15d9fc3333":[12,0,1,0,3,2,19,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX182 =
 "rover_2autopilot__rc__helpers_8h.html#a7d1a81b1597fffdf2b87d936b5441f5c":[12,0,1,0,3,3,5,11],
 "rover_2autopilot__rc__helpers_8h.html#a7f4862b02da72ab20a01b363df541947":[12,0,1,0,3,3,5,0],
 "rover_2autopilot__rc__helpers_8h.html#aa893fedb4c84c86bcbc8f7ec075ced57":[12,0,1,0,3,3,5,6],
-"rover_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094":[12,0,1,0,3,3,5,8],
-"rover_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94":[12,0,1,0,3,3,5,10],
-"rover_2autopilot__rc__helpers_8h.html#acd1ef4f5d7952bb8e3088e8800fa1ce5":[12,0,1,0,3,3,5,7]
+"rover_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094":[12,0,1,0,3,3,5,8]
 };

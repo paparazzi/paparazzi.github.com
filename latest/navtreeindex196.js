@@ -1,5 +1,7 @@
 var NAVTREEINDEX196 =
 {
+"structUSBMassStorageConfig.html#a9e0e4670c831a9487ea64d1aa093eb26":[11,0,953,6],
+"structUSBMassStorageConfig.html#ae3623b5fc5cbe67c108362db4b909330":[11,0,953,5],
 "structgec__transport.html":[11,0,507],
 "structgec__transport.html#a030bac4970b62ec023612987ccf5657d":[11,0,507,6],
 "structgec__transport.html#a5a0ff65ba8f65d3dd4df47b492f7f966":[11,0,507,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX196 =
 "sys__id__wave_8c.html#aa6d9d132d5087b42befa6c0ee28e2372":[12,0,1,0,6,66,10,2],
 "sys__id__wave_8c.html#ab0dd9ce602b4436219c73a074beee0f9":[12,0,1,0,6,66,10,19],
 "sys__id__wave_8c.html#abc439ba08f5598552ccb4a0ba213a64c":[12,0,1,0,6,66,10,21],
-"sys__id__wave_8c.html#ad05ce90ea367a95bac0daa71612c5796":[12,0,1,0,6,66,10,20],
-"sys__id__wave_8c.html#ad169cb0b883f6af25488216710c89f09":[12,0,1,0,6,66,10,1],
-"sys__id__wave_8c.html#ad4091e33fe060304ec84e86d3ffbe991":[12,0,1,0,6,66,10,10]
+"sys__id__wave_8c.html#ad05ce90ea367a95bac0daa71612c5796":[12,0,1,0,6,66,10,20]
 };
