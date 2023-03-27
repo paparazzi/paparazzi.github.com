@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('guidance__indi__hybrid_8h.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -152,6 +153,19 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structguidance__indi__hybrid__params"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#structguidance__indi__hybrid__params">guidance_indi_hybrid_params</a></td></tr>
 <tr class="separator:structguidance__indi__hybrid__params"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aaa5e5cc47f88ebb19b02d133fe1458cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf">GuidanceIndiHybrid_HMode</a> { <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa8d4d191381626dd97830deb98dc1dece">GUIDANCE_INDI_HYBRID_H_POS</a>
+, <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa7196d094d420b88aa7517e1facf8520e">GUIDANCE_INDI_HYBRID_H_SPEED</a>
+, <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa7aae3fbb391ba627e5a7c2480e152c45">GUIDANCE_INDI_HYBRID_H_ACCEL</a>
+ }</td></tr>
+<tr class="separator:aaa5e5cc47f88ebb19b02d133fe1458cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370fb4a08b3c9c93112023e930952007"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007">GuidanceIndiHybrid_VMode</a> { <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007a0b940cb50837365bd36644c3a3c7075a">GUIDANCE_INDI_HYBRID_V_POS</a>
+, <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007adc774fb6d59dd2fc2e83b93f4613d688">GUIDANCE_INDI_HYBRID_V_SPEED</a>
+, <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d">GUIDANCE_INDI_HYBRID_V_ACCEL</a>
+ }</td></tr>
+<tr class="separator:a370fb4a08b3c9c93112023e930952007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa1f448d3b1322b6c0bd3d84dbb5cf603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603">guidance_indi_init</a> (void)</td></tr>
@@ -162,12 +176,8 @@ Functions</h2></td></tr>
 <tr class="separator:a638dd6a545987ce3e0a8c8cef1e3481c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d00187ad311670f06d0dbbd8acb278"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#af4d00187ad311670f06d0dbbd8acb278">guidance_indi_run</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *accep_sp, float heading_sp)</td></tr>
 <tr class="separator:af4d00187ad311670f06d0dbbd8acb278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877175439a095f59acadc2a2f5343863"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a877175439a095f59acadc2a2f5343863">guidance_indi_run_pos</a> (bool in_flight, struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *gh, struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *gv)</td></tr>
-<tr class="separator:a877175439a095f59acadc2a2f5343863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae998d32a1f0472f25ab20771ba754762"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#ae998d32a1f0472f25ab20771ba754762">guidance_indi_run_speed</a> (bool in_flight, struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *gh, struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *gv)</td></tr>
-<tr class="separator:ae998d32a1f0472f25ab20771ba754762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3acab5c1451f2c227074c8bb378d0f43"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a3acab5c1451f2c227074c8bb378d0f43">guidance_indi_run_accel</a> (bool in_flight, struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *gh, struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *gv)</td></tr>
-<tr class="separator:a3acab5c1451f2c227074c8bb378d0f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505237cd381745af8b20a0d896b81e87"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87">guidance_indi_run_mode</a> (bool in_flight, struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *gh, struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *gv, enum <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf">GuidanceIndiHybrid_HMode</a> h_mode, enum <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007">GuidanceIndiHybrid_VMode</a> v_mode)</td></tr>
+<tr class="separator:a505237cd381745af8b20a0d896b81e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -206,7 +216,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00050">50</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00060">60</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -258,6 +268,49 @@ speed_gainz</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aaa5e5cc47f88ebb19b02d133fe1458cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5e5cc47f88ebb19b02d133fe1458cf">&#9670;&nbsp;</a></span>GuidanceIndiHybrid_HMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf">GuidanceIndiHybrid_HMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaa5e5cc47f88ebb19b02d133fe1458cfa8d4d191381626dd97830deb98dc1dece"></a>GUIDANCE_INDI_HYBRID_H_POS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaa5e5cc47f88ebb19b02d133fe1458cfa7196d094d420b88aa7517e1facf8520e"></a>GUIDANCE_INDI_HYBRID_H_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaa5e5cc47f88ebb19b02d133fe1458cfa7aae3fbb391ba627e5a7c2480e152c45"></a>GUIDANCE_INDI_HYBRID_H_ACCEL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00045">45</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
+
+</div>
+</div>
+<a id="a370fb4a08b3c9c93112023e930952007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370fb4a08b3c9c93112023e930952007">&#9670;&nbsp;</a></span>GuidanceIndiHybrid_VMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007">GuidanceIndiHybrid_VMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a370fb4a08b3c9c93112023e930952007a0b940cb50837365bd36644c3a3c7075a"></a>GUIDANCE_INDI_HYBRID_V_POS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a370fb4a08b3c9c93112023e930952007adc774fb6d59dd2fc2e83b93f4613d688"></a>GUIDANCE_INDI_HYBRID_V_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d"></a>GUIDANCE_INDI_HYBRID_V_ACCEL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8h_source.html#l00051">51</a> of file <a class="el" href="guidance__indi__hybrid_8h_source.html">guidance_indi_hybrid.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +376,7 @@ speed_gainz</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00147">147</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00437">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00070">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00146">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00142">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00154">filter_cutoff</a>, <a class="el" href="guidance__indi_8c_source.html#l00068">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00163">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00144">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00143">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00176">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00126">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00145">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00703">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00165">vel_sp_ev</a>.</p>
+<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00420">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00070">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00146">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00142">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00154">filter_cutoff</a>, <a class="el" href="guidance__indi_8c_source.html#l00068">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00163">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00144">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00143">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00176">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00126">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00145">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00710">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00165">vel_sp_ev</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -384,14 +437,14 @@ speed_gainz</td>
 
 </div>
 </div>
-<a id="a3acab5c1451f2c227074c8bb378d0f43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3acab5c1451f2c227074c8bb378d0f43">&#9670;&nbsp;</a></span>guidance_indi_run_accel()</h2>
+<a id="a505237cd381745af8b20a0d896b81e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505237cd381745af8b20a0d896b81e87">&#9670;&nbsp;</a></span>guidance_indi_run_mode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> guidance_indi_run_accel </td>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> guidance_indi_run_mode </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em>, </td>
@@ -406,7 +459,19 @@ speed_gainz</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *&#160;</td>
-          <td class="paramname"><em>gv</em>&#160;</td>
+          <td class="paramname"><em>gv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf">GuidanceIndiHybrid_HMode</a>&#160;</td>
+          <td class="paramname"><em>h_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007">GuidanceIndiHybrid_VMode</a>&#160;</td>
+          <td class="paramname"><em>v_mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -416,79 +481,7 @@ speed_gainz</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00160">160</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
-
-</div>
-</div>
-<a id="a877175439a095f59acadc2a2f5343863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a877175439a095f59acadc2a2f5343863">&#9670;&nbsp;</a></span>guidance_indi_run_pos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> guidance_indi_run_pos </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>in_flight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *&#160;</td>
-          <td class="paramname"><em>gh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *&#160;</td>
-          <td class="paramname"><em>gv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00160">160</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
-
-</div>
-</div>
-<a id="ae998d32a1f0472f25ab20771ba754762"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae998d32a1f0472f25ab20771ba754762">&#9670;&nbsp;</a></span>guidance_indi_run_speed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> guidance_indi_run_speed </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>in_flight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance">HorizontalGuidance</a> *&#160;</td>
-          <td class="paramname"><em>gh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#structVerticalGuidance">VerticalGuidance</a> *&#160;</td>
-          <td class="paramname"><em>gv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00160">160</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00509">509</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -569,7 +562,7 @@ speed_gainz</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00001">1</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00671">guidance_indi_get_liftd()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00054">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00086">nav_hybrid_route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00678">guidance_indi_get_liftd()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00054">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00086">nav_hybrid_route()</a>.</p>
 
 </div>
 </div>
@@ -699,7 +692,7 @@ speed_gainz</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8h.html">guidance_indi_hybrid.h</a></li>
-    <li class="footer">Generated on Thu Mar 23 2023 20:23:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 27 2023 21:49:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

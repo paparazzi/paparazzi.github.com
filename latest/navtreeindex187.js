@@ -1,5 +1,14 @@
 var NAVTREEINDEX187 =
 {
+"settings_8h.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,6,12,11,4],
+"settings_8h.html#a154b4e2fefccf2a235cf571d56b0efc2":[12,0,1,0,6,12,11,1],
+"settings_8h.html#a24f54a1ad3dfaec14beb18e5ca68835a":[12,0,1,0,6,12,11,0],
+"settings_8h.html#a2d417ad7e2c3eeb9e2fd5375f50bf370":[12,0,1,0,6,12,11,10],
+"settings_8h.html#a3554f41536872c4a90af91d527f6593f":[12,0,1,0,6,12,11,7],
+"settings_8h.html#a5f9a5a2e826aec11c77548f2a541fb9e":[12,0,1,0,6,12,11,6],
+"settings_8h.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,6,12,11,3],
+"settings_8h.html#a76ba58642034832f6b3c5781b693f13e":[12,0,1,0,6,12,11,5],
+"settings_8h.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,6,12,11,2],
 "settings_8h.html#aaaafb969ffa6ec451b6bb2facd5736ee":[12,0,1,0,6,12,11,8],
 "settings_8h.html#abe2013fefe36cd9b1f7e800aa65ee9ea":[12,0,1,0,6,12,11,11],
 "settings_8h.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,11,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX187 =
 "sim_2mcu__periph_2udp__arch_8h_source.html":[12,0,1,0,0,2,0,16],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html":[12,0,1,0,0,2,1,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,0,2,1,0,0,1],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2":[12,0,1,0,0,2,1,0,0,2],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3":[12,0,1,0,0,2,1,0,0,0],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c_source.html":[12,0,1,0,0,2,1,0,0],
-"sim_2modules_2actuators_2actuators__dshot__arch_8h.html":[12,0,1,0,0,2,1,0,1],
-"sim_2modules_2actuators_2actuators__dshot__arch_8h_source.html":[12,0,1,0,0,2,1,0,1],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8c.html":[12,0,1,0,0,2,1,0,2],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a40854a0e0bb6575b76e4bb7d02d24c42":[12,0,1,0,0,2,1,0,2,0],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8c_source.html":[12,0,1,0,0,2,1,0,2],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html":[12,0,1,0,0,2,1,0,3],
-"sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a40854a0e0bb6575b76e4bb7d02d24c42":[12,0,1,0,0,2,1,0,3,3]
+"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2":[12,0,1,0,0,2,1,0,0,2]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX131 =
 {
+"module__radio_control_datalink.html":[1,337],
+"module__radio_control_datalink.html#configuration__radio_control_datalink":[1,337,1],
+"module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,337,3],
+"module__radio_control_datalink.html#functions__radio_control_datalink":[1,337,2],
+"module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,337,0],
+"module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,337,3,0],
+"module__radio_control_hott.html":[1,338],
+"module__radio_control_hott.html#configuration__radio_control_hott":[1,338,1],
+"module__radio_control_hott.html#functions__radio_control_hott":[1,338,2],
 "module__radio_control_hott.html#module_load_example__radio_control_hott":[1,338,0],
 "module__radio_control_hott.html#module_xml__radio_control_hott":[1,338,2,0],
 "module__radio_control_intermcu.html":[1,339],
@@ -240,14 +249,5 @@ var NAVTREEINDEX131 =
 "module__syslink_dl.html#module_load_example__syslink_dl":[1,460,0],
 "module__syslink_dl.html#module_xml__syslink_dl":[1,460,2,0],
 "module__system_core.html":[1,80],
-"module__system_core.html#functions__system_core":[1,80,1],
-"module__system_core.html#module_load_example__system_core":[1,80,0],
-"module__system_core.html#module_xml__system_core":[1,80,1,0],
-"module__tag_tracking.html":[1,63],
-"module__tag_tracking.html#configuration__tag_tracking":[1,63,1],
-"module__tag_tracking.html#datalink_functions__tag_tracking":[1,63,3],
-"module__tag_tracking.html#functions__tag_tracking":[1,63,2],
-"module__tag_tracking.html#module_load_example__tag_tracking":[1,63,0],
-"module__tag_tracking.html#module_xml__tag_tracking":[1,63,3,0],
-"module__takeoff_detect.html":[1,328]
+"module__system_core.html#functions__system_core":[1,80,1]
 };

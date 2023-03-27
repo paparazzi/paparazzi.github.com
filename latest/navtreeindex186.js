@@ -1,5 +1,14 @@
 var NAVTREEINDEX186 =
 {
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba8ba30fefc5200f2bfebc2badd932d81c":[12,0,1,0,7,121,3,6],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbab4ecb494dde59e24537475f7e5520da1":[12,0,1,0,7,121,3,3],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad28401d3257102fb667300ae3991f3fb":[12,0,1,0,7,121,3,7],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad7f5111f29d23db603dbf300761d10b9":[12,0,1,0,7,121,3,0],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbade5cc7a85121192693fe9ca10b429964":[12,0,1,0,7,121,3,12],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbafdd282038afaad74b752c3872e136579":[12,0,1,0,7,121,3,15],
+"sdcard__spi_8h.html#a8b59f6433086866c7e5ac3062250f72c":[12,0,1,0,7,121,0,3],
+"sdcard__spi_8h.html#a9795c23eb690c9662ab46bfa88b1f29d":[12,0,1,0,7,121,0,1],
+"sdcard__spi_8h.html#aa23e8fca8f9b0d91dccc9544f90e6dc7":[12,0,1,0,7,121,0,7],
 "sdcard__spi_8h.html#ac0cacb24e7480f3ea6463131436c7d0e":[12,0,1,0,7,121,12],
 "sdcard__spi_8h.html#ac8de8d3bf63d614011c58978acdb2f27":[12,0,1,0,7,121,11],
 "sdcard__spi_8h.html#ace9fa672e599a4db32c45a21278f3c60":[12,0,1,0,7,121,0,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX186 =
 "settings_8c.html#ac61513879fdb7add6de0457920c8e59e":[12,0,1,0,6,12,10,5],
 "settings_8c.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,10,4],
 "settings_8c_source.html":[12,0,1,0,6,12,10],
-"settings_8h.html":[12,0,1,0,6,12,11],
-"settings_8h.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,6,12,11,4],
-"settings_8h.html#a154b4e2fefccf2a235cf571d56b0efc2":[12,0,1,0,6,12,11,1],
-"settings_8h.html#a24f54a1ad3dfaec14beb18e5ca68835a":[12,0,1,0,6,12,11,0],
-"settings_8h.html#a2d417ad7e2c3eeb9e2fd5375f50bf370":[12,0,1,0,6,12,11,10],
-"settings_8h.html#a3554f41536872c4a90af91d527f6593f":[12,0,1,0,6,12,11,7],
-"settings_8h.html#a5f9a5a2e826aec11c77548f2a541fb9e":[12,0,1,0,6,12,11,6],
-"settings_8h.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,6,12,11,3],
-"settings_8h.html#a76ba58642034832f6b3c5781b693f13e":[12,0,1,0,6,12,11,5],
-"settings_8h.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,6,12,11,2]
+"settings_8h.html":[12,0,1,0,6,12,11]
 };

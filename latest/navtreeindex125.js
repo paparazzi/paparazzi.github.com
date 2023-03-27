@@ -1,5 +1,14 @@
 var NAVTREEINDEX125 =
 {
+"module__ahrs_sim.html#module_xml__ahrs_sim":[1,32,1,0],
+"module__ahrs_vectornav.html":[1,33],
+"module__ahrs_vectornav.html#configuration__ahrs_vectornav":[1,33,1],
+"module__ahrs_vectornav.html#functions__ahrs_vectornav":[1,33,2],
+"module__ahrs_vectornav.html#module_load_example__ahrs_vectornav":[1,33,0],
+"module__ahrs_vectornav.html#module_xml__ahrs_vectornav":[1,33,2,0],
+"module__air_data.html":[1,415],
+"module__air_data.html#configuration__air_data":[1,415,1],
+"module__air_data.html#datalink_functions__air_data":[1,415,3],
 "module__air_data.html#functions__air_data":[1,415,2],
 "module__air_data.html#module_load_example__air_data":[1,415,0],
 "module__air_data.html#module_xml__air_data":[1,415,3,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX125 =
 "module__control_adaptive.html#module_load_example__control_adaptive":[1,70,0],
 "module__control_adaptive.html#module_xml__control_adaptive":[1,70,0,0],
 "module__control_energy.html":[1,71],
-"module__control_energy.html#module_load_example__control_energy":[1,71,0],
-"module__control_energy.html#module_xml__control_energy":[1,71,0,0],
-"module__control_energyadaptive.html":[1,72],
-"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,72,0],
-"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,72,0,0],
-"module__control_new.html":[1,73],
-"module__control_new.html#module_load_example__control_new":[1,73,0],
-"module__control_new.html#module_xml__control_new":[1,73,0,0],
-"module__copilot.html":[1,283],
-"module__copilot.html#datalink_functions__copilot":[1,283,2]
+"module__control_energy.html#module_load_example__control_energy":[1,71,0]
 };

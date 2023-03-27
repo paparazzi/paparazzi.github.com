@@ -1,5 +1,14 @@
 var NAVTREEINDEX180 =
 {
+"radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c":[12,0,1,0,6,55,8,0,1],
+"radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88":[12,0,1,0,6,55,8,0,0],
+"radio__control_8h.html#ab1debb075d0e280a92155d1715f894cc":[12,0,1,0,6,55,8,10],
+"radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415":[12,0,1,0,6,55,8,7],
+"radio__control_8h.html#ad3f5743e53ecadf66df592daf06c904c":[12,0,1,0,6,55,8,0,2],
+"radio__control_8h.html#adb1604ef051d981df6de90b770a9ef19":[12,0,1,0,6,55,8,4],
+"radio__control_8h.html#ae260ed6c98624fcd1d70c232038204d2":[12,0,1,0,6,55,8,5],
+"radio__control_8h.html#afb55b39c9ce65c9074c0472838fe551d":[12,0,1,0,6,55,8,12],
+"radio__control_8h.html#structRadioControl":[12,0,1,0,6,55,8,0],
 "radio__control_8h_source.html":[12,0,1,0,6,55,8],
 "ram__arch_8h.html":[12,0,1,0,0,0,0,11],
 "ram__arch_8h.html#a1fb6d337679a1a195b83adabc1e10f0e":[12,0,1,0,0,0,0,11,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX180 =
 "rotorcraft_2autopilot__firmware_8h.html#a3e41cabeeeed6f149349c977139aac36":[12,0,1,0,3,2,8,1],
 "rotorcraft_2autopilot__firmware_8h_source.html":[12,0,1,0,3,2,8],
 "rotorcraft_2autopilot__generated_8c.html":[12,0,1,0,3,2,9],
-"rotorcraft_2autopilot__generated_8c.html#a26a81960b68e8c0641758deb70e79d2d":[12,0,1,0,3,2,9,6],
-"rotorcraft_2autopilot__generated_8c.html#a275c90ef6580ab8a9c8a36f7ee3b9644":[12,0,1,0,3,2,9,3],
-"rotorcraft_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc":[12,0,1,0,3,2,9,4],
-"rotorcraft_2autopilot__generated_8c.html#a4d7684d734d8ef37641fce453b75b701":[12,0,1,0,3,2,9,0],
-"rotorcraft_2autopilot__generated_8c.html#a6a545a575906e265b766ad17989a81bc":[12,0,1,0,3,2,9,1],
-"rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997":[12,0,1,0,3,2,9,2],
-"rotorcraft_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab":[12,0,1,0,3,2,9,5],
-"rotorcraft_2autopilot__generated_8c_source.html":[12,0,1,0,3,2,9],
-"rotorcraft_2autopilot__generated_8h.html":[12,0,1,0,3,2,10],
-"rotorcraft_2autopilot__generated_8h.html#a275c90ef6580ab8a9c8a36f7ee3b9644":[12,0,1,0,3,2,10,2]
+"rotorcraft_2autopilot__generated_8c.html#a26a81960b68e8c0641758deb70e79d2d":[12,0,1,0,3,2,9,6]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX196 =
 {
+"structStabilizationSetpoint.html#a1905da1dd188d7544eab103e901168e3":[11,0,902,0],
+"structStabilizationSetpoint.html#a7db7bdaadda5f616b7722c325a0cc710":[11,0,902,1],
+"structStabilizationSetpoint.html#af8ccfe3b97dae95a655b219d1f9f7f77":[11,0,902,2],
+"structUSBMassStorageConfig.html":[11,0,953],
+"structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,953,3],
+"structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,953,0],
+"structUSBMassStorageConfig.html#a4a36198660a33ab658a397f5512d0117":[11,0,953,4],
+"structUSBMassStorageConfig.html#a4ed2afe90449fca523bf5894dc3087ec":[11,0,953,1],
+"structUSBMassStorageConfig.html#a914c2c144276e24914e9855d2cb0fe45":[11,0,953,2],
 "structUSBMassStorageConfig.html#a9e0e4670c831a9487ea64d1aa093eb26":[11,0,953,6],
 "structUSBMassStorageConfig.html#ae3623b5fc5cbe67c108362db4b909330":[11,0,953,5],
 "structgec__transport.html":[11,0,507],
@@ -240,14 +249,5 @@ var NAVTREEINDEX196 =
 "sys__id__wave_8c.html#a274a42f78d7772bcaf57b02a6fd9c12a":[12,0,1,0,6,66,10,4],
 "sys__id__wave_8c.html#a593103ff7a1f5c472691e6e88580b18b":[12,0,1,0,6,66,10,3],
 "sys__id__wave_8c.html#a5b6405e8a3b5b15055e18fcdd958f10c":[12,0,1,0,6,66,10,17],
-"sys__id__wave_8c.html#a6507b3e4518ccc688963363f97a49886":[12,0,1,0,6,66,10,22],
-"sys__id__wave_8c.html#a96e61eeb83b9d42787125d5d59dd5a63":[12,0,1,0,6,66,10,11],
-"sys__id__wave_8c.html#a98d50fd729700690aaceba76cf5e8990":[12,0,1,0,6,66,10,13],
-"sys__id__wave_8c.html#a9cebd29ccecca5dcdb731e18b5ddebff":[12,0,1,0,6,66,10,0],
-"sys__id__wave_8c.html#a9f776791ac405f13db5799e8177a9e88":[12,0,1,0,6,66,10,8],
-"sys__id__wave_8c.html#aa3814c04dbc95a60e9e95f0efca296d6":[12,0,1,0,6,66,10,12],
-"sys__id__wave_8c.html#aa6d9d132d5087b42befa6c0ee28e2372":[12,0,1,0,6,66,10,2],
-"sys__id__wave_8c.html#ab0dd9ce602b4436219c73a074beee0f9":[12,0,1,0,6,66,10,19],
-"sys__id__wave_8c.html#abc439ba08f5598552ccb4a0ba213a64c":[12,0,1,0,6,66,10,21],
-"sys__id__wave_8c.html#ad05ce90ea367a95bac0daa71612c5796":[12,0,1,0,6,66,10,20]
+"sys__id__wave_8c.html#a6507b3e4518ccc688963363f97a49886":[12,0,1,0,6,66,10,22]
 };

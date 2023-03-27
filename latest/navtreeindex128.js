@@ -1,5 +1,14 @@
 var NAVTREEINDEX128 =
 {
+"module__humid_sht_uart.html#module_load_example__humid_sht_uart":[1,268,0],
+"module__humid_sht_uart.html#module_xml__humid_sht_uart":[1,268,2,0],
+"module__i2c.html":[1,249],
+"module__i2c.html#module_load_example__i2c":[1,249,0],
+"module__i2c.html#module_xml__i2c":[1,249,0,0],
+"module__i2c_abuse_test.html":[1,35],
+"module__i2c_abuse_test.html#functions__i2c_abuse_test":[1,35,1],
+"module__i2c_abuse_test.html#module_load_example__i2c_abuse_test":[1,35,0],
+"module__i2c_abuse_test.html#module_xml__i2c_abuse_test":[1,35,1,0],
 "module__imu_apogee.html":[1,168],
 "module__imu_apogee.html#functions__imu_apogee":[1,168,1],
 "module__imu_apogee.html#module_load_example__imu_apogee":[1,168,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX128 =
 "module__ins_sim.html":[1,221],
 "module__ins_sim.html#functions__ins_sim":[1,221,1],
 "module__ins_sim.html#module_load_example__ins_sim":[1,221,0],
-"module__ins_sim.html#module_xml__ins_sim":[1,221,1,0],
-"module__ins_skeleton.html":[1,222],
-"module__ins_skeleton.html#configuration__ins_skeleton":[1,222,1],
-"module__ins_skeleton.html#functions__ins_skeleton":[1,222,2],
-"module__ins_skeleton.html#module_load_example__ins_skeleton":[1,222,0],
-"module__ins_skeleton.html#module_xml__ins_skeleton":[1,222,2,0],
-"module__ins_vectornav.html":[1,223],
-"module__ins_vectornav.html#configuration__ins_vectornav":[1,223,1],
-"module__ins_vectornav.html#functions__ins_vectornav":[1,223,2],
-"module__ins_vectornav.html#module_load_example__ins_vectornav":[1,223,0]
+"module__ins_sim.html#module_xml__ins_sim":[1,221,1,0]
 };

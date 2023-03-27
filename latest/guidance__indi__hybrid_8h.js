@@ -10,12 +10,20 @@ var guidance__indi__hybrid_8h =
       [ "speed_gain", "guidance__indi__hybrid_8h.html#a6ece91f994e2efe0830c3d23f74003cf", null ],
       [ "speed_gainz", "guidance__indi__hybrid_8h.html#afaa6cd5aa4f3ba90c662f22609d3dcb3", null ]
     ] ],
+    [ "GuidanceIndiHybrid_HMode", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cf", [
+      [ "GUIDANCE_INDI_HYBRID_H_POS", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa8d4d191381626dd97830deb98dc1dece", null ],
+      [ "GUIDANCE_INDI_HYBRID_H_SPEED", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa7196d094d420b88aa7517e1facf8520e", null ],
+      [ "GUIDANCE_INDI_HYBRID_H_ACCEL", "guidance__indi__hybrid_8h.html#aaa5e5cc47f88ebb19b02d133fe1458cfa7aae3fbb391ba627e5a7c2480e152c45", null ]
+    ] ],
+    [ "GuidanceIndiHybrid_VMode", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007", [
+      [ "GUIDANCE_INDI_HYBRID_V_POS", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007a0b940cb50837365bd36644c3a3c7075a", null ],
+      [ "GUIDANCE_INDI_HYBRID_V_SPEED", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007adc774fb6d59dd2fc2e83b93f4613d688", null ],
+      [ "GUIDANCE_INDI_HYBRID_V_ACCEL", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d", null ]
+    ] ],
     [ "guidance_indi_enter", "guidance__indi__hybrid_8h.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_init", "guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8h.html#af4d00187ad311670f06d0dbbd8acb278", null ],
-    [ "guidance_indi_run_accel", "guidance__indi__hybrid_8h.html#a3acab5c1451f2c227074c8bb378d0f43", null ],
-    [ "guidance_indi_run_pos", "guidance__indi__hybrid_8h.html#a877175439a095f59acadc2a2f5343863", null ],
-    [ "guidance_indi_run_speed", "guidance__indi__hybrid_8h.html#ae998d32a1f0472f25ab20771ba754762", null ],
+    [ "guidance_indi_run_mode", "guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87", null ],
     [ "force_forward", "guidance__indi__hybrid_8h.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "gi_speed_sp", "guidance__indi__hybrid_8h.html#a27af36ef93fea1d415ff80db057b47e9", null ],
     [ "gih_params", "guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a", null ],

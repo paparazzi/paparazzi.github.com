@@ -1,5 +1,14 @@
 var NAVTREEINDEX179 =
 {
+"px4io__2_84_8h.html#a67ca3992a81b2ce8b95bf16396a5d08e":[12,0,1,0,1,61,80],
+"px4io__2_84_8h.html#a689995b3ffce4727831c630e0c144b5e":[12,0,1,0,1,61,53],
+"px4io__2_84_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289":[12,0,1,0,1,61,93],
+"px4io__2_84_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,61,41],
+"px4io__2_84_8h.html#a74a73d71b5a66c3cfea6788e42674c94":[12,0,1,0,1,61,19],
+"px4io__2_84_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,61,10],
+"px4io__2_84_8h.html#a7ae5162492c27a9f944435eb96e1cdec":[12,0,1,0,1,61,17],
+"px4io__2_84_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,61,78],
+"px4io__2_84_8h.html#a81a706c185f561248908b837ec5fd9d2":[12,0,1,0,1,61,91],
 "px4io__2_84_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,61,33],
 "px4io__2_84_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,61,102],
 "px4io__2_84_8h.html#a8d77db0e10464907b23412abccbf7c63":[12,0,1,0,1,61,34],
@@ -240,14 +249,5 @@ var NAVTREEINDEX179 =
 "radio__control_8h.html#a8a646c0d264de984fd5aeb22525bbf16":[12,0,1,0,6,55,8,0,3],
 "radio__control_8h.html#a8fe61a8aa3f1859efec4bb06bc1134dc":[12,0,1,0,6,55,8,15],
 "radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb":[12,0,1,0,6,55,8,11],
-"radio__control_8h.html#a9dc497538fe7bfb6408a2177a28de99b":[12,0,1,0,6,55,8,14],
-"radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c":[12,0,1,0,6,55,8,0,1],
-"radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88":[12,0,1,0,6,55,8,0,0],
-"radio__control_8h.html#ab1debb075d0e280a92155d1715f894cc":[12,0,1,0,6,55,8,10],
-"radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415":[12,0,1,0,6,55,8,7],
-"radio__control_8h.html#ad3f5743e53ecadf66df592daf06c904c":[12,0,1,0,6,55,8,0,2],
-"radio__control_8h.html#adb1604ef051d981df6de90b770a9ef19":[12,0,1,0,6,55,8,4],
-"radio__control_8h.html#ae260ed6c98624fcd1d70c232038204d2":[12,0,1,0,6,55,8,5],
-"radio__control_8h.html#afb55b39c9ce65c9074c0472838fe551d":[12,0,1,0,6,55,8,12],
-"radio__control_8h.html#structRadioControl":[12,0,1,0,6,55,8,0]
+"radio__control_8h.html#a9dc497538fe7bfb6408a2177a28de99b":[12,0,1,0,6,55,8,14]
 };

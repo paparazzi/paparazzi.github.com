@@ -1,5 +1,14 @@
 var NAVTREEINDEX129 =
 {
+"module__ins_skeleton.html":[1,222],
+"module__ins_skeleton.html#configuration__ins_skeleton":[1,222,1],
+"module__ins_skeleton.html#functions__ins_skeleton":[1,222,2],
+"module__ins_skeleton.html#module_load_example__ins_skeleton":[1,222,0],
+"module__ins_skeleton.html#module_xml__ins_skeleton":[1,222,2,0],
+"module__ins_vectornav.html":[1,223],
+"module__ins_vectornav.html#configuration__ins_vectornav":[1,223,1],
+"module__ins_vectornav.html#functions__ins_vectornav":[1,223,2],
+"module__ins_vectornav.html#module_load_example__ins_vectornav":[1,223,0],
 "module__ins_vectornav.html#module_xml__ins_vectornav":[1,223,2,0],
 "module__ins_vn100.html":[1,224],
 "module__ins_vn100.html#configuration__ins_vn100":[1,224,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX129 =
 "module__nav_basic_fw.html":[1,294],
 "module__nav_basic_fw.html#configuration__nav_basic_fw":[1,294,1],
 "module__nav_basic_fw.html#datalink_functions__nav_basic_fw":[1,294,3],
-"module__nav_basic_fw.html#functions__nav_basic_fw":[1,294,2],
-"module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,294,0],
-"module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,294,3,0],
-"module__nav_basic_rotorcraft.html":[1,295],
-"module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,295,1],
-"module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,295,0],
-"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,295,1,0],
-"module__nav_bungee_takeoff.html":[1,296],
-"module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff":[1,296,1],
-"module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,296,0]
+"module__nav_basic_fw.html#functions__nav_basic_fw":[1,294,2]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX126 =
 {
+"module__control_energy.html#module_xml__control_energy":[1,71,0,0],
+"module__control_energyadaptive.html":[1,72],
+"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,72,0],
+"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,72,0,0],
+"module__control_new.html":[1,73],
+"module__control_new.html#module_load_example__control_new":[1,73,0],
+"module__control_new.html#module_xml__control_new":[1,73,0,0],
+"module__copilot.html":[1,283],
+"module__copilot.html#datalink_functions__copilot":[1,283,2],
 "module__copilot.html#functions__copilot":[1,283,1],
 "module__copilot.html#module_load_example__copilot":[1,283,0],
 "module__copilot.html#module_xml__copilot":[1,283,2,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX126 =
 "module__flight_recorder.html#module_load_example__flight_recorder":[1,237,0],
 "module__flight_recorder.html#module_xml__flight_recorder":[1,237,3,0],
 "module__follow.html":[1,288],
-"module__follow.html#configuration__follow":[1,288,1],
-"module__follow.html#functions__follow":[1,288,2],
-"module__follow.html#module_load_example__follow":[1,288,0],
-"module__follow.html#module_xml__follow":[1,288,2,0],
-"module__follow_me.html":[1,88],
-"module__follow_me.html#configuration__follow_me":[1,88,1],
-"module__follow_me.html#datalink_functions__follow_me":[1,88,3],
-"module__follow_me.html#functions__follow_me":[1,88,2],
-"module__follow_me.html#module_load_example__follow_me":[1,88,0],
-"module__follow_me.html#module_xml__follow_me":[1,88,3,0]
+"module__follow.html#configuration__follow":[1,288,1]
 };
