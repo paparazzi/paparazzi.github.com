@@ -111,10 +111,12 @@ $(document).ready(function(){initNavTree('actuators__uavcan_8h.html',''); initRe
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2actuators_2actuators__uavcan_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2actuators_2actuators__uavcan_8hdep" id="asw_2airborne_2modules_2actuators_2actuators__uavcan_8hdep">
-<area shape="rect" title=" " alt="" coords="188,5,347,61"/>
+<area shape="rect" title=" " alt="" coords="371,5,529,61"/>
 <area shape="rect" href="actuators__uavcan_8c.html" title="UAVCan actuators using RAWCOMMAND message and ESC_STATUS telemetry." alt="" coords="5,109,164,165"/>
 <area shape="rect" href="actuators__uavcan1_8h.html" title=" " alt="" coords="188,109,347,165"/>
-<area shape="rect" href="actuators__uavcan2_8h.html" title=" " alt="" coords="371,109,529,165"/>
+<area shape="rect" href="actuators__uavcan1cmd_8h.html" title=" " alt="" coords="371,109,529,165"/>
+<area shape="rect" href="actuators__uavcan2_8h.html" title=" " alt="" coords="553,109,712,165"/>
+<area shape="rect" href="actuators__uavcan2cmd_8h.html" title=" " alt="" coords="736,109,895,165"/>
 </map>
 </div>
 </div>
@@ -126,10 +128,64 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1aa57a9995b693dd72264a2eaf8d0bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an uavcan interface.  <a href="actuators__uavcan_8h.html#a1aa57a9995b693dd72264a2eaf8d0bda">More...</a><br /></td></tr>
 <tr class="separator:a1aa57a9995b693dd72264a2eaf8d0bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f2b07629c6392c8019dfc9123fb4684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">actuators_uavcan_commit</a> (struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *iface, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *values, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nb)</td></tr>
-<tr class="memdesc:a4f2b07629c6392c8019dfc9123fb4684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit actuator values to the uavcan interface.  <a href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">More...</a><br /></td></tr>
+<tr class="memdesc:a4f2b07629c6392c8019dfc9123fb4684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)  <a href="actuators__uavcan_8h.html#a4f2b07629c6392c8019dfc9123fb4684">More...</a><br /></td></tr>
 <tr class="separator:a4f2b07629c6392c8019dfc9123fb4684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26539dced9674f526a4a4978305b35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">actuators_uavcan_cmd_commit</a> (struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *iface, <a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *values, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nb)</td></tr>
+<tr class="memdesc:ab26539dced9674f526a4a4978305b35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)  <a href="actuators__uavcan_8h.html#ab26539dced9674f526a4a4978305b35a">More...</a><br /></td></tr>
+<tr class="separator:ab26539dced9674f526a4a4978305b35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab26539dced9674f526a4a4978305b35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26539dced9674f526a4a4978305b35a">&#9670;&nbsp;</a></span>actuators_uavcan_cmd_commit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actuators_uavcan_cmd_commit </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="sim_2modules_2uavcan_2uavcan_8h.html#structuavcan__iface__t">uavcan_iface_t</a> *&#160;</td>
+          <td class="paramname"><em>iface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aa343fa3b3d06292b959ffdd4c4703b06">int16_t</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND) </p>
+
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00246">246</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+
+<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00199">offset</a>, <a class="el" href="uavcan_8c_source.html#l00427">uavcan_broadcast()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00061">UAVCAN_CMD_UNUSED</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00079">UAVCAN_EQUIPMENT_ACTUATOR_ARRAYCOMMAND_ID</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00081">UAVCAN_EQUIPMENT_ACTUATOR_ARRAYCOMMAND_MAX_SIZE</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00080">UAVCAN_EQUIPMENT_ACTUATOR_ARRAYCOMMAND_SIGNATURE</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="actuators__uavcan_8h_ab26539dced9674f526a4a4978305b35a_cgraph.png" border="0" usemap="#aactuators__uavcan_8h_ab26539dced9674f526a4a4978305b35a_cgraph" alt=""/></div>
+<map name="aactuators__uavcan_8h_ab26539dced9674f526a4a4978305b35a_cgraph" id="aactuators__uavcan_8h_ab26539dced9674f526a4a4978305b35a_cgraph">
+<area shape="rect" title="Commit actuator values to the uavcan interface (EQUIPMENT_ACTUATOR_ARRAYCOMMAND)" alt="" coords="5,5,177,47"/>
+<area shape="rect" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="225,13,365,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4f2b07629c6392c8019dfc9123fb4684"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f2b07629c6392c8019dfc9123fb4684">&#9670;&nbsp;</a></span>actuators_uavcan_commit()</h2>
 
@@ -162,19 +218,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Commit actuator values to the uavcan interface. </p>
+<p>Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND) </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00198">198</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00227">227</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="dw1000__arduino_8c_source.html#l00199">offset</a>, <a class="el" href="uavcan_8c_source.html#l00427">uavcan_broadcast()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00060">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_ID</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00062">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_MAX_SIZE</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00061">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_SIGNATURE</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="dw1000__arduino_8c_source.html#l00199">offset</a>, <a class="el" href="uavcan_8c_source.html#l00427">uavcan_broadcast()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00069">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_ID</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00071">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_MAX_SIZE</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00070">UAVCAN_EQUIPMENT_ESC_RAWCOMMAND_SIGNATURE</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8h_a4f2b07629c6392c8019dfc9123fb4684_cgraph.png" border="0" usemap="#aactuators__uavcan_8h_a4f2b07629c6392c8019dfc9123fb4684_cgraph" alt=""/></div>
 <map name="aactuators__uavcan_8h_a4f2b07629c6392c8019dfc9123fb4684_cgraph" id="aactuators__uavcan_8h_a4f2b07629c6392c8019dfc9123fb4684_cgraph">
-<area shape="rect" title="Commit actuator values to the uavcan interface." alt="" coords="5,5,200,32"/>
+<area shape="rect" title="Commit actuator values to the uavcan interface (EQUIPMENT_ESC_RAWCOMMAND)" alt="" coords="5,5,200,32"/>
 <area shape="rect" href="uavcan_8c.html#a712d2f97a70e8a78c0318d3709e317b4" title="Broadcast an uavcan message to a specific interface." alt="" coords="248,5,388,32"/>
 </map>
 </div>
@@ -199,14 +255,14 @@ Functions</h2></td></tr>
 
 <p>Initialize an uavcan interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00174">174</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="actuators__uavcan_8c_source.html#l00193">193</a> of file <a class="el" href="actuators__uavcan_8c_source.html">actuators_uavcan.c</a>.</p>
 
-<p class="reference">References <a class="el" href="actuators__uavcan_8c_source.html#l00121">actuators_uavcan_esc_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00065">actuators_uavcan_initialized</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00071">actuators_uavcan_send_esc()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00066">esc_status_ev</a>, <a class="el" href="pprz__random_8c_source.html#l00035">init_random()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="uavcan_8c_source.html#l00412">uavcan_bind()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00055">UAVCAN_EQUIPMENT_ESC_STATUS_ID</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00056">UAVCAN_EQUIPMENT_ESC_STATUS_SIGNATURE</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="actuators__uavcan1cmd_8h.html#aa0df3af4de2ba9c3f524fd748043b491">actuators_uavcan1cmd_values</a>, <a class="el" href="actuators__uavcan2cmd_8h.html#a45056367699c928b9d651fde73791208">actuators_uavcan2cmd_values</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00140">actuators_uavcan_esc_status_cb()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00084">actuators_uavcan_initialized</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00090">actuators_uavcan_send_esc()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00085">esc_status_ev</a>, <a class="el" href="pprz__random_8c_source.html#l00035">init_random()</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="uavcan_8c_source.html#l00412">uavcan_bind()</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00061">UAVCAN_CMD_UNUSED</a>, <a class="el" href="actuators__uavcan_8c_source.html#l00064">UAVCAN_EQUIPMENT_ESC_STATUS_ID</a>, and <a class="el" href="actuators__uavcan_8c_source.html#l00065">UAVCAN_EQUIPMENT_ESC_STATUS_SIGNATURE</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__uavcan_8h_a1aa57a9995b693dd72264a2eaf8d0bda_cgraph.png" border="0" usemap="#aactuators__uavcan_8h_a1aa57a9995b693dd72264a2eaf8d0bda_cgraph" alt=""/></div>
 <map name="aactuators__uavcan_8h_a1aa57a9995b693dd72264a2eaf8d0bda_cgraph" id="aactuators__uavcan_8h_a1aa57a9995b693dd72264a2eaf8d0bda_cgraph">
 <area shape="rect" title="Initialize an uavcan interface." alt="" coords="5,122,171,149"/>
@@ -229,7 +285,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__uavcan_8h.html">actuators_uavcan.h</a></li>
-    <li class="footer">Generated on Wed Mar 29 2023 12:48:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 29 2023 21:03:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

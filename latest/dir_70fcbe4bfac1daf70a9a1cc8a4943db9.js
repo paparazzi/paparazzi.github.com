@@ -22,7 +22,9 @@ var dir_70fcbe4bfac1daf70a9a1cc8a4943db9 =
     [ "actuators_uavcan.c", "actuators__uavcan_8c.html", "actuators__uavcan_8c" ],
     [ "actuators_uavcan.h", "actuators__uavcan_8h.html", "actuators__uavcan_8h" ],
     [ "actuators_uavcan1.h", "actuators__uavcan1_8h.html", "actuators__uavcan1_8h" ],
+    [ "actuators_uavcan1cmd.h", "actuators__uavcan1cmd_8h.html", "actuators__uavcan1cmd_8h" ],
     [ "actuators_uavcan2.h", "actuators__uavcan2_8h.html", "actuators__uavcan2_8h" ],
+    [ "actuators_uavcan2cmd.h", "actuators__uavcan2cmd_8h.html", "actuators__uavcan2cmd_8h" ],
     [ "motor_mixing.c", "motor__mixing_8c.html", "motor__mixing_8c" ],
     [ "motor_mixing.h", "motor__mixing_8h.html", "motor__mixing_8h" ],
     [ "motor_mixing_types.h", "motor__mixing__types_8h.html", "motor__mixing__types_8h" ]
