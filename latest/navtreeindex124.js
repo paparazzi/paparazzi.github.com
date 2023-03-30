@@ -1,6 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"mission__common_8c.html#a9f8c4705ccecb8f0cc59fd25216bff17":[12,0,1,0,6,44,4,10],
 "mission__common_8c.html#ab28e6577b24ee45e61cf48d255a55005":[12,0,1,0,6,44,4,0],
 "mission__common_8c.html#ac357198f4e5126c4c698d1ab2c8330c3":[12,0,1,0,6,44,4,19],
 "mission__common_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4":[12,0,1,0,6,44,4,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX124 =
 "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat":[1,26,0],
 "module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,26,1,0],
 "module__ahrs_float_dcm.html":[1,27],
-"module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,27,1]
+"module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,27,1],
+"module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm":[1,27,0]
 };

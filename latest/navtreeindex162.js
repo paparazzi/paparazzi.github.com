@@ -1,5 +1,6 @@
 var NAVTREEINDEX162 =
 {
+"paparazzi_messages.html#AP_STATUS":[2,2,11],
 "paparazzi_messages.html#ARDRONE_NAVDATA":[2,0,4],
 "paparazzi_messages.html#ATMOSPHERE_CHARGE":[2,0,117],
 "paparazzi_messages.html#ATTITUDE":[2,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX162 =
 "paparazzi_messages.html#RTCM_INJECT":[2,1,55],
 "paparazzi_messages.html#RTOS_MON":[2,0,226],
 "paparazzi_messages.html#SCP_STATUS":[2,0,87],
-"paparazzi_messages.html#SECURE_LINK_STATUS":[2,0,235],
-"paparazzi_messages.html#SEGMENT":[2,0,21]
+"paparazzi_messages.html#SECURE_LINK_STATUS":[2,0,235]
 };

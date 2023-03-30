@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,413,2,0],
 "module__sys_id_wave.html":[1,414],
 "module__sys_id_wave.html#configuration__sys_id_wave":[1,414,1],
 "module__sys_id_wave.html#functions__sys_id_wave":[1,414,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "modules_2actuators_2actuators_8h.html#a1c91d56a3813a303fa5f0d80197e3b8b":[12,0,1,0,6,0,1,1],
 "modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47":[12,0,1,0,6,0,1,0],
 "modules_2actuators_2actuators_8h_source.html":[12,0,1,0,6,0,1],
-"modules_2adcs_2mcp355x_8h.html":[12,0,1,0,6,1,6]
+"modules_2adcs_2mcp355x_8h.html":[12,0,1,0,6,1,6],
+"modules_2adcs_2mcp355x_8h_source.html":[12,0,1,0,6,1,6]
 };

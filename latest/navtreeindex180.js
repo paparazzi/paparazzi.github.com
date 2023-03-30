@@ -1,5 +1,6 @@
 var NAVTREEINDEX180 =
 {
+"radio__control_2hott_8h_source.html":[12,0,1,0,6,55,2],
 "radio__control_8c.html":[12,0,1,0,6,55,7],
 "radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd":[12,0,1,0,6,55,7,1],
 "radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc":[12,0,1,0,6,55,7,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX180 =
 "rotorcraft_2autopilot__firmware_8c.html":[12,0,1,0,3,2,7],
 "rotorcraft_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d":[12,0,1,0,3,2,7,6],
 "rotorcraft_2autopilot__firmware_8c.html#a2217e77f0aae5f0775ac2aab4ee3477e":[12,0,1,0,3,2,7,1],
-"rotorcraft_2autopilot__firmware_8c.html#a261bd78437dcd415525d72019aac4a89":[12,0,1,0,3,2,7,15],
-"rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57":[12,0,1,0,3,2,7,7]
+"rotorcraft_2autopilot__firmware_8c.html#a261bd78437dcd415525d72019aac4a89":[12,0,1,0,3,2,7,15]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"module__humid_htm_b71.html#configuration__humid_htm_b71":[1,264,1],
 "module__humid_htm_b71.html#functions__humid_htm_b71":[1,264,2],
 "module__humid_htm_b71.html#module_load_example__humid_htm_b71":[1,264,0],
 "module__humid_htm_b71.html#module_xml__humid_htm_b71":[1,264,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX128 =
 "module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough":[1,216,0],
 "module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,216,2,0],
 "module__ins_hff.html":[1,217],
-"module__ins_hff.html#configuration__ins_hff":[1,217,1]
+"module__ins_hff.html#configuration__ins_hff":[1,217,1],
+"module__ins_hff.html#functions__ins_hff":[1,217,2]
 };

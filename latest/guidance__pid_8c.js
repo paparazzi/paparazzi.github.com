@@ -4,7 +4,6 @@ var guidance__pid_8c =
     [ "GH_GAIN_SCALE", "guidance__pid_8c.html#aa3ea72a4226a4ef662a4fc356c552278", null ],
     [ "GUIDANCE_H_AGAIN", "guidance__pid_8c.html#a722bbcc0f532796d2697f90fa80e4924", null ],
     [ "GUIDANCE_H_APPROX_FORCE_BY_THRUST", "guidance__pid_8c.html#ad6343cd24b8b5fa2ee099cda71a6d202", null ],
-    [ "GUIDANCE_H_MAX_BANK", "guidance__pid_8c.html#ae7c6988762e27257d928face4ee75d5a", null ],
     [ "GUIDANCE_H_THRUST_CMD_FILTER", "guidance__pid_8c.html#aacd82fdd4a98544cd99efc91397be7c3", null ],
     [ "GUIDANCE_H_VGAIN", "guidance__pid_8c.html#a155cf8631cb4b34c36378228b5eebd7e", null ],
     [ "GUIDANCE_PID_USE_AS_DEFAULT", "guidance__pid_8c.html#a785d8cdd393a23e0d6945bf9224f1ed1", null ],

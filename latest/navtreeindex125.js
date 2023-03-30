@@ -1,6 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm":[1,27,0],
 "module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm":[1,27,1,0],
 "module__ahrs_float_invariant.html":[1,28],
 "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant":[1,28,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "module__cloud_sensor.html#module_xml__cloud_sensor":[1,258,2,0],
 "module__cloud_sim.html":[1,259],
 "module__cloud_sim.html#functions__cloud_sim":[1,259,1],
-"module__cloud_sim.html#module_load_example__cloud_sim":[1,259,0]
+"module__cloud_sim.html#module_load_example__cloud_sim":[1,259,0],
+"module__cloud_sim.html#module_xml__cloud_sim":[1,259,1,0]
 };

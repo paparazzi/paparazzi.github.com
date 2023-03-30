@@ -1,6 +1,5 @@
 var NAVTREEINDEX91 =
 {
-"ins__xsens700_8c.html#ac5803b6353ae28ae52ab9284d222d8d5":[12,0,1,0,6,36,46,7],
 "ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262":[12,0,1,0,6,36,46,3],
 "ins__xsens700_8c.html#af8c616627ecbb4860e359944c97dc718":[12,0,1,0,6,36,46,6],
 "ins__xsens700_8c_source.html":[12,0,1,0,6,36,46],
@@ -249,5 +248,6 @@ var NAVTREEINDEX91 =
 "invensense2__regs_8h.html#a087ea9c54d6a79aed24502e2e2595d7c":[12,0,1,0,7,45,3],
 "invensense2__regs_8h.html#a0ad725e4128a9930946a28b4ceef450f":[12,0,1,0,7,45,69],
 "invensense2__regs_8h.html#a0feecde60e0ce11933341c7f363c5594":[12,0,1,0,7,45,144],
-"invensense2__regs_8h.html#a14fe83101ee3dfa6fd271e878dda9300":[12,0,1,0,7,45,107]
+"invensense2__regs_8h.html#a14fe83101ee3dfa6fd271e878dda9300":[12,0,1,0,7,45,107],
+"invensense2__regs_8h.html#a150c0aafb9f92b381cb0b4431ea5851c":[12,0,1,0,7,45,163]
 };

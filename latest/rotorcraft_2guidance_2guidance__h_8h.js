@@ -19,6 +19,7 @@ var rotorcraft_2guidance_2guidance__h_8h =
       [ "sp", "rotorcraft_2guidance_2guidance__h_8h.html#af29476ba6c51442bad1a9bb589796c98", null ],
       [ "use_ref", "rotorcraft_2guidance_2guidance__h_8h.html#acd8a11ea4e2311bcda3b321480fa4f2f", null ]
     ] ],
+    [ "GUIDANCE_H_MAX_BANK", "rotorcraft_2guidance_2guidance__h_8h.html#ae7c6988762e27257d928face4ee75d5a", null ],
     [ "GUIDANCE_H_MODE_ATTITUDE", "rotorcraft_2guidance_2guidance__h_8h.html#a68ef1d14541e83675e37b38a6f57cd29", null ],
     [ "GUIDANCE_H_MODE_CARE_FREE", "rotorcraft_2guidance_2guidance__h_8h.html#ab5186150bd081e971a07f229c81be028", null ],
     [ "GUIDANCE_H_MODE_FLIP", "rotorcraft_2guidance_2guidance__h_8h.html#af3407bfad90bc6286498c58f1cbc7b3b", null ],

@@ -1,6 +1,7 @@
 var NAVTREEINDEX194 =
 {
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,34,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,36,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,1,36],
 "stabilization__none_8c.html":[12,0,1,0,3,2,1,37],
 "stabilization__none_8c.html#a03faaedbd0839f6e8b94c5788feb4ff4":[12,0,1,0,3,2,1,37,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX194 =
 "stm32_2mcu__periph_2i2c__arch_8c.html#a9f8ae01465e43501aabd230ba1900fa8":[12,0,1,0,0,3,0,6,6],
 "stm32_2mcu__periph_2i2c__arch_8c.html#ab4c3f12bf6f1e40e249217899a79447f":[12,0,1,0,0,3,0,6,7],
 "stm32_2mcu__periph_2i2c__arch_8c.html#ab9e5bad12034eb78fc98e86032eb938c":[12,0,1,0,0,3,0,6,15],
-"stm32_2mcu__periph_2i2c__arch_8c.html#ac2377954c7646851c205a117c65686b2":[12,0,1,0,0,3,0,6,20],
-"stm32_2mcu__periph_2i2c__arch_8c.html#acd2a78f0920821b186bfc72bcc979592":[12,0,1,0,0,3,0,6,0]
+"stm32_2mcu__periph_2i2c__arch_8c.html#ac2377954c7646851c205a117c65686b2":[12,0,1,0,0,3,0,6,20]
 };

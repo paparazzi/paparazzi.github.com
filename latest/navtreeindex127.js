@@ -1,6 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"module__fdm_rover.html":[1,134],
 "module__fdm_rover.html#module_load_example__fdm_rover":[1,134,0],
 "module__fdm_rover.html#module_xml__fdm_rover":[1,134,0,0],
 "module__filter_1euro_imu.html":[1,167],
@@ -249,5 +248,6 @@ var NAVTREEINDEX127 =
 "module__humid_hih.html#functions__humid_hih":[1,263,1],
 "module__humid_hih.html#module_load_example__humid_hih":[1,263,0],
 "module__humid_hih.html#module_xml__humid_hih":[1,263,1,0],
-"module__humid_htm_b71.html":[1,264]
+"module__humid_htm_b71.html":[1,264],
+"module__humid_htm_b71.html#configuration__humid_htm_b71":[1,264,1]
 };

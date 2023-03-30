@@ -1,5 +1,6 @@
 var NAVTREEINDEX195 =
 {
+"stm32_2mcu__periph_2i2c__arch_8c.html#acd2a78f0920821b186bfc72bcc979592":[12,0,1,0,0,3,0,6,0],
 "stm32_2mcu__periph_2i2c__arch_8c.html#adae4775f2b00a92a80db113d15ecefe9":[12,0,1,0,0,3,0,6,23],
 "stm32_2mcu__periph_2i2c__arch_8c.html#adbf5d19069cf17b5f0821eab05e31540":[12,0,1,0,0,3,0,6,17],
 "stm32_2mcu__periph_2i2c__arch_8c.html#aeb7a802ff0a0f20d4799074071714846":[12,0,1,0,0,3,0,6,22],
@@ -19,8 +20,8 @@ var NAVTREEINDEX195 =
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[12,0,1,0,0,3,0,9,2,3],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,0,0,10,2,5],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502":[12,0,1,0,0,3,0,9,2,5],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,0,0,10,2,4],
+"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a":[12,0,1,0,0,3,0,9,2,4],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820":[12,0,1,0,0,3,0,9,1],
 "stm32_2mcu__periph_2pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f":[12,0,1,0,0,3,0,9,0],
 "stm32_2mcu__periph_2pwm__input__arch_8h_source.html":[12,0,1,0,0,3,0,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX195 =
 "structDSHOTDriver.html#a8af9e29758141560572c026b7c7d2a40":[11,0,442,2],
 "structDSHOTDriver.html#a983bf8da93e0b5fed96fdb194fbb91f3":[11,0,442,1],
 "structDSHOTDriver.html#aae0d2fcfcd2b66f865ae6c955ac6d60a":[11,0,442,0],
-"structDSHOTDriver.html#ac1147bd28c2d0290b8528a55b7a4bacb":[11,0,442,4],
-"structIndiController__int.html":[11,0,596]
+"structDSHOTDriver.html#ac1147bd28c2d0290b8528a55b7a4bacb":[11,0,442,4]
 };

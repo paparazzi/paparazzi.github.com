@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__px4_gimbal.html#module_xml__px4_gimbal":[1,454,2,0],
 "module__px4flow.html":[1,331],
 "module__px4flow.html#configuration__px4flow":[1,331,1],
 "module__px4flow.html#functions__px4flow":[1,331,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX131 =
 "module__sys_id_doublet.html":[1,413],
 "module__sys_id_doublet.html#configuration__sys_id_doublet":[1,413,1],
 "module__sys_id_doublet.html#functions__sys_id_doublet":[1,413,2],
-"module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,413,0]
+"module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,413,0],
+"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,413,2,0]
 };

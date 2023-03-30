@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__mission_common.html#module_xml__mission_common":[1,284,2,0],
 "module__mission_fw.html":[1,285],
 "module__mission_fw.html#module_load_example__mission_fw":[1,285,0],
 "module__mission_fw.html#module_xml__mission_fw":[1,285,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__px4_gimbal.html":[1,454],
 "module__px4_gimbal.html#configuration__px4_gimbal":[1,454,1],
 "module__px4_gimbal.html#functions__px4_gimbal":[1,454,2],
-"module__px4_gimbal.html#module_load_example__px4_gimbal":[1,454,0]
+"module__px4_gimbal.html#module_load_example__px4_gimbal":[1,454,0],
+"module__px4_gimbal.html#module_xml__px4_gimbal":[1,454,2,0]
 };

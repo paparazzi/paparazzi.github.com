@@ -1,6 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"imu__aspirin__2__spi_8c.html#abdd9fac859465eab74ba860b95a7b424":[12,0,1,0,6,35,8,12],
 "imu__aspirin__2__spi_8c.html#abf6960cc99c2b02c7e430f5793ba5e58":[12,0,1,0,6,35,8,10],
 "imu__aspirin__2__spi_8c.html#ae775bcff083f907cad7f2d3caa188f46":[12,0,1,0,6,35,8,6],
 "imu__aspirin__2__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,6,35,8,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX85 =
 "imu__heater_8c.html#aaef5dd5118bd3afb16554d29d2145bcd":[12,0,1,0,6,35,20,4],
 "imu__heater_8c.html#ab10194c4ee7e23fcdee565959b5b50fe":[12,0,1,0,6,35,20,7],
 "imu__heater_8c.html#ab26ee97f1a4e4f761a490c5a75d45150":[12,0,1,0,6,35,20,6],
-"imu__heater_8c.html#af02c035d5f3f3acb8434a2d43aabfd8a":[12,0,1,0,6,35,20,1]
+"imu__heater_8c.html#af02c035d5f3f3acb8434a2d43aabfd8a":[12,0,1,0,6,35,20,1],
+"imu__heater_8c.html#afd0668e6a0c4d7b996f0d365abb9bb70":[12,0,1,0,6,35,20,5]
 };

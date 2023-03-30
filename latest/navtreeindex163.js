@@ -1,5 +1,6 @@
 var NAVTREEINDEX163 =
 {
+"paparazzi_messages.html#SEGMENT":[2,0,21],
 "paparazzi_messages.html#SEGMENT_STATUS":[2,2,21],
 "paparazzi_messages.html#SELECTED":[2,2,4],
 "paparazzi_messages.html#SELECTED_REQ":[2,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX163 =
 "peripherals_2mcp355x_8h.html#a5b584e55031878ca6be005e63162cc3c":[12,0,1,0,7,84,4],
 "peripherals_2mcp355x_8h_source.html":[12,0,1,0,7,84],
 "photogrammetry__calculator_8c.html":[12,0,1,0,6,9,0],
-"photogrammetry__calculator_8c.html#a03a06704ec5b13c223bf3c083ee43eca":[12,0,1,0,6,9,0,3],
-"photogrammetry__calculator_8c.html#a03d0582dacb6e6dc77f266530c9c3682":[12,0,1,0,6,9,0,8]
+"photogrammetry__calculator_8c.html#a03a06704ec5b13c223bf3c083ee43eca":[12,0,1,0,6,9,0,3]
 };
