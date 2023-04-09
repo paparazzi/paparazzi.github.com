@@ -1,10 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"module__ins_hff.html#module_load_example__ins_hff":[1,217,0],
-"module__ins_hff.html#module_xml__ins_hff":[1,217,2,0],
-"module__ins_hff_extended.html":[1,218],
-"module__ins_hff_extended.html#configuration__ins_hff_extended":[1,218,1],
-"module__ins_hff_extended.html#functions__ins_hff_extended":[1,218,2],
 "module__ins_hff_extended.html#module_load_example__ins_hff_extended":[1,218,0],
 "module__ins_hff_extended.html#module_xml__ins_hff_extended":[1,218,2,0],
 "module__ins_mekf_wind.html":[1,219],
@@ -84,12 +79,9 @@ var NAVTREEINDEX129 =
 "module__led_safety_status.html#module_xml__led_safety_status":[1,233,1,0],
 "module__lidar_lite.html":[1,229],
 "module__lidar_lite.html#configuration__lidar_lite":[1,229,1],
-"module__lidar_lite.html#configure":[1,229,1,0],
-"module__lidar_lite.html#event_functions":[1,229,2,0],
 "module__lidar_lite.html#functions__lidar_lite":[1,229,2],
 "module__lidar_lite.html#module_load_example__lidar_lite":[1,229,0],
-"module__lidar_lite.html#module_xml__lidar_lite":[1,229,2,2],
-"module__lidar_lite.html#periodic_functions":[1,229,2,1],
+"module__lidar_lite.html#module_xml__lidar_lite":[1,229,2,0],
 "module__lidar_sf11.html":[1,230],
 "module__lidar_sf11.html#configuration__lidar_sf11":[1,230,1],
 "module__lidar_sf11.html#functions__lidar_sf11":[1,230,2],
@@ -249,5 +241,13 @@ var NAVTREEINDEX129 =
 "module__mission_common.html#datalink_functions__mission_common":[1,284,2],
 "module__mission_common.html#functions__mission_common":[1,284,1],
 "module__mission_common.html#module_load_example__mission_common":[1,284,0],
-"module__mission_common.html#module_xml__mission_common":[1,284,2,0]
+"module__mission_common.html#module_xml__mission_common":[1,284,2,0],
+"module__mission_fw.html":[1,285],
+"module__mission_fw.html#module_load_example__mission_fw":[1,285,0],
+"module__mission_fw.html#module_xml__mission_fw":[1,285,0,0],
+"module__mission_rotorcraft.html":[1,286],
+"module__mission_rotorcraft.html#module_load_example__mission_rotorcraft":[1,286,0],
+"module__mission_rotorcraft.html#module_xml__mission_rotorcraft":[1,286,0,0],
+"module__motor_mixing.html":[1,17],
+"module__motor_mixing.html#configuration__motor_mixing":[1,17,1]
 };

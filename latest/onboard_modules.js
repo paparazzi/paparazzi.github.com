@@ -137,9 +137,7 @@ var onboard_modules =
     ] ],
     [ "motor_mixing module", "module__motor_mixing.html", [
       [ "Example for airframe file", "module__motor_mixing.html#module_load_example__motor_mixing", null ],
-      [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", [
-        [ "Airframe file section", "module__motor_mixing.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", null ],
       [ "Module functions", "module__motor_mixing.html#functions__motor_mixing", [
         [ "Raw motor_mixing.xml file:", "module__motor_mixing.html#module_xml__motor_mixing", null ]
       ] ]
@@ -1400,15 +1398,8 @@ var onboard_modules =
     ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
-      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
-        [ "Define Options", "module__ins_extended.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],
       [ "Module functions", "module__ins_extended.html#functions__ins_extended", [
-        [ "Init Functions", "module__ins_extended.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__ins_extended.html#files", [
-        [ "Header Files", "module__ins_extended.html#headers", null ],
-        [ "Source Files", "module__ins_extended.html#sources", null ],
         [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
       ] ]
     ] ],
@@ -1510,12 +1501,8 @@ var onboard_modules =
     ] ],
     [ "lidar_lite module", "module__lidar_lite.html", [
       [ "Example for airframe file", "module__lidar_lite.html#module_load_example__lidar_lite", null ],
-      [ "Module configuration options", "module__lidar_lite.html#configuration__lidar_lite", [
-        [ "Configure Options", "module__lidar_lite.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__lidar_lite.html#configuration__lidar_lite", null ],
       [ "Module functions", "module__lidar_lite.html#functions__lidar_lite", [
-        [ "Event Functions", "module__lidar_lite.html#event_functions", null ],
-        [ "Periodic Functions", "module__lidar_lite.html#periodic_functions", null ],
         [ "Raw lidar_lite.xml file:", "module__lidar_lite.html#module_xml__lidar_lite", null ]
       ] ]
     ] ],
@@ -2105,7 +2092,9 @@ var onboard_modules =
     ] ],
     [ "nav_takeoff_and_landing module", "module__nav_takeoff_and_landing.html", [
       [ "Example for airframe file", "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing", null ],
-      [ "Module configuration options", "module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing", null ],
+      [ "Module configuration options", "module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing", [
+        [ "Airframe file section", "module__nav_takeoff_and_landing.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing", [
         [ "Raw nav_takeoff_and_landing.xml file:", "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing", null ]
       ] ]
@@ -2658,8 +2647,18 @@ var onboard_modules =
     ] ],
     [ "stereocam module", "module__stereocam.html", [
       [ "Example for airframe file", "module__stereocam.html#module_load_example__stereocam", null ],
-      [ "Module configuration options", "module__stereocam.html#configuration__stereocam", null ],
+      [ "Module configuration options", "module__stereocam.html#configuration__stereocam", [
+        [ "Configure Options", "module__stereocam.html#configure", null ],
+        [ "Define Options", "module__stereocam.html#define", null ]
+      ] ],
       [ "Module functions", "module__stereocam.html#functions__stereocam", [
+        [ "Init Functions", "module__stereocam.html#init_functions", null ],
+        [ "Event Functions", "module__stereocam.html#event_functions", null ],
+        [ "Periodic Functions", "module__stereocam.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__stereocam.html#files", [
+        [ "Header Files", "module__stereocam.html#headers", null ],
+        [ "Source Files", "module__stereocam.html#sources", null ],
         [ "Raw stereocam.xml file:", "module__stereocam.html#module_xml__stereocam", null ]
       ] ]
     ] ],

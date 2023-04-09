@@ -229,14 +229,9 @@ var NAVTREEINDEX128 =
 "module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,213,2,0],
 "module__ins_extended.html":[1,214],
 "module__ins_extended.html#configuration__ins_extended":[1,214,1],
-"module__ins_extended.html#define":[1,214,1,0],
-"module__ins_extended.html#files":[1,214,3],
 "module__ins_extended.html#functions__ins_extended":[1,214,2],
-"module__ins_extended.html#headers":[1,214,3,0],
-"module__ins_extended.html#init_functions":[1,214,2,0],
 "module__ins_extended.html#module_load_example__ins_extended":[1,214,0],
-"module__ins_extended.html#module_xml__ins_extended":[1,214,3,2],
-"module__ins_extended.html#sources":[1,214,3,1],
+"module__ins_extended.html#module_xml__ins_extended":[1,214,2,0],
 "module__ins_float_invariant.html":[1,215],
 "module__ins_float_invariant.html#configuration__ins_float_invariant":[1,215,1],
 "module__ins_float_invariant.html#functions__ins_float_invariant":[1,215,2],
@@ -249,5 +244,10 @@ var NAVTREEINDEX128 =
 "module__ins_gps_passthrough.html#module_xml__ins_gps_passthrough":[1,216,2,0],
 "module__ins_hff.html":[1,217],
 "module__ins_hff.html#configuration__ins_hff":[1,217,1],
-"module__ins_hff.html#functions__ins_hff":[1,217,2]
+"module__ins_hff.html#functions__ins_hff":[1,217,2],
+"module__ins_hff.html#module_load_example__ins_hff":[1,217,0],
+"module__ins_hff.html#module_xml__ins_hff":[1,217,2,0],
+"module__ins_hff_extended.html":[1,218],
+"module__ins_hff_extended.html#configuration__ins_hff_extended":[1,218,1],
+"module__ins_hff_extended.html#functions__ins_hff_extended":[1,218,2]
 };
