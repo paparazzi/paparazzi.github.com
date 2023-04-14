@@ -54,6 +54,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_spiral_3D.h", "nav__spiral__3D_8h.html", "nav__spiral__3D_8h" ],
     [ "nav_survey_disc.c", "nav__survey__disc_8c.html", "nav__survey__disc_8c" ],
     [ "nav_survey_disc.h", "nav__survey__disc_8h.html", "nav__survey__disc_8h" ],
+    [ "nav_survey_hybrid.c", "nav__survey__hybrid_8c.html", "nav__survey__hybrid_8c" ],
+    [ "nav_survey_hybrid.h", "nav__survey__hybrid_8h.html", "nav__survey__hybrid_8h" ],
     [ "nav_survey_poly_osam.c", "nav__survey__poly__osam_8c.html", "nav__survey__poly__osam_8c" ],
     [ "nav_survey_poly_osam.h", "nav__survey__poly__osam_8h.html", "nav__survey__poly__osam_8h" ],
     [ "nav_survey_poly_rotorcraft.c", "nav__survey__poly__rotorcraft_8c.html", "nav__survey__poly__rotorcraft_8c" ],

@@ -23,6 +23,10 @@ var nav__survey__poly__osam_8c =
     [ "POLY_OSAM_USE_FULL_CIRCLE", "nav__survey__poly__osam_8c.html#a33ec9d1fe6d2fd3d66e8a5cb785e1871", null ],
     [ "PolygonSize", "nav__survey__poly__osam_8c.html#ae51783bbeba64f5dc4e0671bc34998f8", null ],
     [ "SurveyStatus", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5", [
+      [ "Init", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
+      [ "Entry", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
+      [ "Sweep", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
+      [ "Turn", "nav__survey__hybrid_8c.html#a8c59693bfb0c154698979de6e77bb0c5a0c1b9bb2e704447170944d00fcca57a3", null ],
       [ "Init", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
       [ "Entry", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
       [ "Sweep", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],

@@ -915,6 +915,8 @@ var annotated_dup =
     [ "State.windspeed_i", "group__state__interface.html#unionState_8windspeed__i", "group__state__interface_unionState_8windspeed__i" ],
     [ "stereocam_t", "stereocam_8h.html#structstereocam__t", "stereocam_8h_structstereocam__t" ],
     [ "SuperbitRF", "modules_2datalink_2superbitrf_8h.html#structSuperbitRF", "modules_2datalink_2superbitrf_8h_structSuperbitRF" ],
+    [ "SurveyHybrid", "nav__survey__hybrid_8h.html#structSurveyHybrid", "nav__survey__hybrid_8h_structSurveyHybrid" ],
+    [ "SurveyHybridPrivate", "nav__survey__hybrid_8c.html#structSurveyHybridPrivate", "nav__survey__hybrid_8c_structSurveyHybridPrivate" ],
     [ "SurveyPolyAdv", "nav__survey__polygon_8h.html#structSurveyPolyAdv", "nav__survey__polygon_8h_structSurveyPolyAdv" ],
     [ "SVinfo", "gps_8h.html#structSVinfo", "gps_8h_structSVinfo" ],
     [ "swashplate_mixing_t", "swashplate__mixing_8h.html#structswashplate__mixing__t", "swashplate__mixing_8h_structswashplate__mixing__t" ],

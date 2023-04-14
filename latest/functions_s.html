@@ -218,6 +218,12 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 : <a class="el" href="nav__survey__polygon__gvf_8h.html#a5677efaeb3dcd1d481f1c0a5ccb2663f">gvf_SurveyPolyAdv</a>
 , <a class="el" href="nav__survey__polygon_8h.html#a5a927158af0ad8bdeaff816e925a801e">SurveyPolyAdv</a>
 </li>
+<li>segment_from
+: <a class="el" href="nav__survey__hybrid_8c.html#ae3cd542276663a885f195defc0205442">SurveyHybridPrivate</a>
+</li>
+<li>segment_to
+: <a class="el" href="nav__survey__hybrid_8c.html#ab7dbb4c05da42ebc834603f47d39a86b">SurveyHybridPrivate</a>
+</li>
 <li>segments
 : <a class="el" href="nav__spiral_8h.html#ae2703ffd8946398535c92eebab6403d1">NavSpiral</a>
 </li>
@@ -399,6 +405,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="median__filter_8h.html#a448c1109821dc77b8ae172b1055c57a4">MedianFilterInt</a>
 , <a class="el" href="nav__cube_8h.html#a4d6853885209d6c862f016899a7bb8e2">NavCube</a>
 , <a class="el" href="virt2phys_8h.html#a81ffff32ee356664f73811b6e45fa4f6">physmem</a>
+, <a class="el" href="nav__survey__hybrid_8c.html#a096df1f663ff746ded4702563a1c39df">SurveyHybridPrivate</a>
 </li>
 <li>slave4_ready
 : <a class="el" href="imu__aspirin__2__spi_8h.html#a02f0157858ff8f032e311aa0177ce531">ImuAspirin2Spi</a>
@@ -436,6 +443,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 </li>
 <li>slots
 : <a class="el" href="telemetry__common_8h.html#a0c4b91509d63b97615d641bead57636f">telemetry_cb_slots</a>
+</li>
+<li>smallest_corner
+: <a class="el" href="nav__survey__hybrid_8c.html#af7c001edd0acdfe3ea0b675e8d7874fd">SurveyHybridPrivate</a>
 </li>
 <li>smbus_alert_cnt
 : <a class="el" href="group__i2c.html#a2d907f3b03aa19fa2300a5f92ece5317">i2c_errors</a>
@@ -787,6 +797,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 , <a class="el" href="group__spi.html#afcc49de6913e59398111a070be5aeda2">spi_transaction</a>
 , <a class="el" href="sst25vfxxxx_8h.html#aebe078a16867b2fd2fdf99b2fa6512f3">SST25VFxxxx</a>
 , <a class="el" href="modules_2datalink_2superbitrf_8h.html#a8b6b15f8d689da5631f6930bea93c004">SuperbitRF</a>
+, <a class="el" href="nav__survey__hybrid_8c.html#ad1a3136493e4f9d03c66d0e1adee80e2">SurveyHybridPrivate</a>
 , <a class="el" href="tag__tracking_8h.html#a68cc840f504639c4382c67baf0a3199d">tag_tracking_public</a>
 , <a class="el" href="tcas_8h.html#a84263e97504633f539e41aad6d183d1a">tcas_ac_status</a>
 , <a class="el" href="tfmini__i2c_8h.html#ac920c393a6f08d8421d1bf457f5e5bf8">TFMiniI2C</a>
@@ -915,6 +926,24 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>sw_ver_l
 : <a class="el" href="gps__ubx__ucenter_8h.html#a5886daa026a16e0b0e5ed6b2907bab94">gps_ubx_ucenter_struct</a>
 </li>
+<li>sweep
+: <a class="el" href="nav__survey__hybrid_8c.html#a326c3749537f8a08da10c514cce5f218">SurveyHybridPrivate</a>
+</li>
+<li>sweep_back_nb
+: <a class="el" href="nav__survey__hybrid_8h.html#a1d1acecb4f182448bb113607ba554952">SurveyHybrid</a>
+</li>
+<li>sweep_back_nb_max
+: <a class="el" href="nav__survey__hybrid_8h.html#a0716d78a325b27638bd9e5a783604489">SurveyHybrid</a>
+</li>
+<li>sweep_distance
+: <a class="el" href="nav__survey__hybrid_8c.html#ab4b721d4eb8c7633bcfe863820e38812">SurveyHybridPrivate</a>
+</li>
+<li>sweep_nb
+: <a class="el" href="nav__survey__hybrid_8h.html#a2489a91c046f5af8e88cd459dbade43d">SurveyHybrid</a>
+</li>
+<li>sweep_nb_max
+: <a class="el" href="nav__survey__hybrid_8h.html#acc5fa9b5bb8746c4fe1c8f064f5b1482">SurveyHybrid</a>
+</li>
 <li>sweep_vec
 : <a class="el" href="nav__survey__polygon__gvf_8h.html#ab9ad60946aefbe085594f58b18d89a5e">gvf_SurveyPolyAdv</a>
 , <a class="el" href="nav__survey__polygon_8h.html#a73c8efd6c876dec2a786bbefe3cdebf5">SurveyPolyAdv</a>
@@ -947,7 +976,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 9 2023 15:42:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Apr 14 2023 20:19:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

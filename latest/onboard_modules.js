@@ -2061,6 +2061,12 @@ var onboard_modules =
         [ "Raw nav_survey_disc.xml file:", "module__nav_survey_disc.html#module_xml__nav_survey_disc", null ]
       ] ]
     ] ],
+    [ "nav_survey_hybrid module", "module__nav_survey_hybrid.html", [
+      [ "Example for airframe file", "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid", null ],
+      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", [
+        [ "Raw nav_survey_hybrid.xml file:", "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid", null ]
+      ] ]
+    ] ],
     [ "nav_survey_poly_osam module", "module__nav_survey_poly_osam.html", [
       [ "Example for airframe file", "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam", null ],
       [ "Module configuration options", "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam", [

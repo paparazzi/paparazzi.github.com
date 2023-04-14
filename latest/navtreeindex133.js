@@ -1,5 +1,9 @@
 var NAVTREEINDEX133 =
 {
+"modules_2actuators_2actuators_8h.html#a7ba1bde30e3a87694e878b244de10c47":[12,0,1,0,6,0,1,0],
+"modules_2actuators_2actuators_8h_source.html":[12,0,1,0,6,0,1],
+"modules_2adcs_2mcp355x_8h.html":[12,0,1,0,6,1,6],
+"modules_2adcs_2mcp355x_8h_source.html":[12,0,1,0,6,1,6],
 "modules_2datalink_2superbitrf_8c.html":[12,0,1,0,6,14,27],
 "modules_2datalink_2superbitrf_8c.html#a00d1177de3911f3af7caa59f1b50298f":[12,0,1,0,6,14,27,23],
 "modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad":[12,0,1,0,6,14,27,11],
@@ -84,8 +88,8 @@ var NAVTREEINDEX133 =
 "modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[12,0,1,0,6,14,28,0,18],
 "modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[12,0,1,0,0,2,1,2,1,0,18],
 "modules_2datalink_2superbitrf_8h.html#a6dbe38536b336883c08758542ec47552":[12,0,1,0,6,14,28,1],
-"modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[12,0,1,0,0,2,1,2,1,0,25],
 "modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[12,0,1,0,6,14,28,0,25],
+"modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[12,0,1,0,0,2,1,2,1,0,25],
 "modules_2datalink_2superbitrf_8h.html#a71362563ffb67c1942ab5f4e5530ae4e":[12,0,1,0,6,14,28,0,7],
 "modules_2datalink_2superbitrf_8h.html#a71362563ffb67c1942ab5f4e5530ae4e":[12,0,1,0,0,2,1,2,1,0,7],
 "modules_2datalink_2superbitrf_8h.html#a7abb008fd1de6ab912aa9892c2133d55":[12,0,1,0,6,14,28,0,29],
@@ -116,8 +120,8 @@ var NAVTREEINDEX133 =
 "modules_2datalink_2superbitrf_8h.html#abf078c3cfc89873b34abff9c0412f33a":[12,0,1,0,0,2,1,2,1,0,9],
 "modules_2datalink_2superbitrf_8h.html#abf5441e62ef825a3a1e22b7fe7ef9cc5":[12,0,1,0,6,14,28,0,2],
 "modules_2datalink_2superbitrf_8h.html#abf5441e62ef825a3a1e22b7fe7ef9cc5":[12,0,1,0,0,2,1,2,1,0,2],
-"modules_2datalink_2superbitrf_8h.html#ac274d2efb6e377601fe92f2616b1c42e":[12,0,1,0,0,2,1,2,1,0,28],
 "modules_2datalink_2superbitrf_8h.html#ac274d2efb6e377601fe92f2616b1c42e":[12,0,1,0,6,14,28,0,28],
+"modules_2datalink_2superbitrf_8h.html#ac274d2efb6e377601fe92f2616b1c42e":[12,0,1,0,0,2,1,2,1,0,28],
 "modules_2datalink_2superbitrf_8h.html#ac348be41079c0ecc80b77f5a63aad72c":[12,0,1,0,6,14,28,0,10],
 "modules_2datalink_2superbitrf_8h.html#ac348be41079c0ecc80b77f5a63aad72c":[12,0,1,0,0,2,1,2,1,0,10],
 "modules_2datalink_2superbitrf_8h.html#ace60bbd629d0e78d11b266fb95cc1627":[12,0,1,0,6,14,28,0,19],
@@ -125,10 +129,10 @@ var NAVTREEINDEX133 =
 "modules_2datalink_2superbitrf_8h.html#ad381d21a499dac11cb3949a51605a8d5":[12,0,1,0,6,14,28,0,20],
 "modules_2datalink_2superbitrf_8h.html#ad381d21a499dac11cb3949a51605a8d5":[12,0,1,0,0,2,1,2,1,0,20],
 "modules_2datalink_2superbitrf_8h.html#adae71e40c6c992afa4d5053d7abdb4c1":[12,0,1,0,6,14,28,4],
-"modules_2datalink_2superbitrf_8h.html#adc8afd83f0e498e8e78f01b7e0794d7f":[12,0,1,0,0,2,1,2,1,0,27],
 "modules_2datalink_2superbitrf_8h.html#adc8afd83f0e498e8e78f01b7e0794d7f":[12,0,1,0,6,14,28,0,27],
-"modules_2datalink_2superbitrf_8h.html#ae0d1712fabd20fdd61590d308b995914":[12,0,1,0,0,2,1,2,1,0,21],
+"modules_2datalink_2superbitrf_8h.html#adc8afd83f0e498e8e78f01b7e0794d7f":[12,0,1,0,0,2,1,2,1,0,27],
 "modules_2datalink_2superbitrf_8h.html#ae0d1712fabd20fdd61590d308b995914":[12,0,1,0,6,14,28,0,21],
+"modules_2datalink_2superbitrf_8h.html#ae0d1712fabd20fdd61590d308b995914":[12,0,1,0,0,2,1,2,1,0,21],
 "modules_2datalink_2superbitrf_8h.html#ae345f2ad961222da07a6be6d68a04ea6":[12,0,1,0,6,14,28,17],
 "modules_2datalink_2superbitrf_8h.html#ae6fdf2460ffaf5330e8a9fffd465d4f1":[12,0,1,0,6,14,28,8],
 "modules_2datalink_2superbitrf_8h.html#ae88e211597eecd75e728e6f586c5439a":[12,0,1,0,6,14,28,0,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX133 =
 "motor__mixing_8h.html#aae518a012ba145408429c815e2be10e0":[12,0,1,0,6,0,26,0,2],
 "motor__mixing_8h.html#aae6551feb36ac5137aaeb8246516e54c":[12,0,1,0,6,0,26,0,0],
 "motor__mixing_8h.html#af3d7567d0ca74f734e5c4e148d5c9b65":[12,0,1,0,6,0,26,0,3],
-"motor__mixing_8h.html#structMotorMixing":[12,0,1,0,6,0,26,0],
-"motor__mixing_8h_source.html":[12,0,1,0,6,0,26],
-"motor__mixing__types_8h.html":[12,0,1,0,6,0,27],
-"motor__mixing__types_8h.html#a0f457ffe911da5a4abb95e3f104a4c77":[12,0,1,0,6,0,27,1],
-"motor__mixing__types_8h.html#a1bcdf9c434edcde55c46839f4adc6811":[12,0,1,0,6,0,27,4]
+"motor__mixing_8h.html#structMotorMixing":[12,0,1,0,6,0,26,0]
 };
