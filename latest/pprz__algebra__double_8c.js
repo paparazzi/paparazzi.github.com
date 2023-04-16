@@ -1,6 +1,7 @@
 var pprz__algebra__double_8c =
 [
     [ "double_eulers_of_quat", "group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d", null ],
+    [ "double_quat_comp", "group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632", null ],
     [ "double_quat_of_eulers", "group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47", null ],
     [ "double_quat_vmult", "group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9", null ],
     [ "double_rmat_comp", "group__math__algebra__double.html#gadbb22b0185b31be6717553cfbae3ec14", null ],

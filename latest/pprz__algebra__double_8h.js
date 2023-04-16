@@ -8,6 +8,7 @@ var pprz__algebra__double_8h =
     [ "DOUBLE_VECT3_RINT", "group__math__algebra__double.html#gaea462d460840d11dc543283860d883c3", null ],
     [ "DOUBLE_VECT3_ROUND", "group__math__algebra__double.html#ga57f944678cda3405c13b3c2623e8cffe", null ],
     [ "double_eulers_of_quat", "group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d", null ],
+    [ "double_quat_comp", "group__math__algebra__double.html#ga6bc53366d527b5d83f9f02bf69187632", null ],
     [ "double_quat_identity", "group__math__algebra__double.html#gacb86a27031e54d286102875e0ffc21e9", null ],
     [ "double_quat_norm", "group__math__algebra__double.html#ga18b4577f917cfab6aaff00c176e2f83d", null ],
     [ "double_quat_normalize", "group__math__algebra__double.html#gaa150b70f2f007033bcf29a5e03e06758", null ],

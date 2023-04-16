@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> ix;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> iy;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">int</span> m;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> ( n &lt;= 0 )</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
@@ -212,14 +212,14 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    m = n % 4;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a> = n % 4;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; m; i++ )</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i++ )</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      dy[i] = dy[i] + da * dx[i];</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span> ( i = m; i &lt; n; i = i + 4 )</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span> ( i = <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i &lt; n; i = i + 4 )</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      dy[i  ] = dy[i  ] + da * dx[i  ];</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      dy[i+1] = dy[i+1] + da * dx[i+1];</div>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">int</span> ix;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">int</span> iy;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">int</span> m;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  dtemp = 0.0;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
@@ -331,14 +331,14 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    m = n % 5;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a> = n % 5;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; m; i++ )</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i++ )</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      dtemp = dtemp + dx[i] * dy[i];</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">for</span> ( i = m; i &lt; n; i = i + 5 )</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">for</span> ( i = <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i &lt; n; i = i + 5 )</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      dtemp = dtemp + dx[i  ] * dy[i  ]</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                    + dx[i+1] * dy[i+1]</div>
@@ -444,7 +444,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">  357</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">dqrank</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> tol, <span class="keywordtype">int</span> *kr,</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">  357</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">dqrank</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> tol, <span class="keywordtype">int</span> *kr,</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordtype">int</span> jpvt[], <span class="keywordtype">float</span> qraux[] )</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">/******************************************************************************/</span></div>
@@ -534,10 +534,10 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="comment">/*work = ( float * ) malloc ( n * sizeof ( float ) );*/</span></div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  job = 1;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <a class="code" href="qr__solve_8c.html#afaa40152476be17052f2c425914e744e">dqrdc</a> ( a, lda, m, n, qraux, jpvt, work, job );</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <a class="code" href="qr__solve_8c.html#afaa40152476be17052f2c425914e744e">dqrdc</a> ( a, lda, <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, qraux, jpvt, work, job );</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  *kr = 0;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  k = <a class="code" href="r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca">i4_min</a> ( m, n );</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  k = <a class="code" href="r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca">i4_min</a> ( <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n );</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  <span class="keywordflow">for</span> ( j = 0; j &lt; k; j++ )</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  {</div>
@@ -801,7 +801,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;}</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160; </div>
-<div class="line"><a name="l00714"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">  714</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">dqrls</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> tol, <span class="keywordtype">int</span> *kr, <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[],</div>
+<div class="line"><a name="l00714"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">  714</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">dqrls</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> tol, <span class="keywordtype">int</span> *kr, <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[],</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="keywordtype">float</span> x[], <span class="keywordtype">float</span> rsd[], <span class="keywordtype">int</span> jpvt[], <span class="keywordtype">float</span> qraux[], <span class="keywordtype">int</span> itask )</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="comment">/******************************************************************************/</span></div>
@@ -911,7 +911,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;{</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <span class="keywordtype">int</span> ind;</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="keywordflow">if</span> ( lda &lt; m )</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="keywordflow">if</span> ( lda &lt; <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a> )</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  {</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <a class="code" href="qr__solve_8c.html#a43d89b9590aa2c74c1fc7bbcb2e739af">DEBUG_FPRINTF</a> ( stderr, <span class="stringliteral">&quot;\n&quot;</span> );</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <a class="code" href="qr__solve_8c.html#a43d89b9590aa2c74c1fc7bbcb2e739af">DEBUG_FPRINTF</a> ( stderr, <span class="stringliteral">&quot;DQRLS - Fatal error!\n&quot;</span> );</div>
@@ -944,17 +944,17 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <span class="keywordflow">if</span> ( itask == 1 )</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  {</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <a class="code" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">dqrank</a> ( a, lda, m, n, tol, kr, jpvt, qraux );</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <a class="code" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">dqrank</a> ( a, lda, <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, tol, kr, jpvt, qraux );</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  }</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;<span class="comment">  Solve the least-squares problem.</span></div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <a class="code" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">dqrlss</a> ( a, lda, m, n, *kr, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, x, rsd, jpvt, qraux );</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <a class="code" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">dqrlss</a> ( a, lda, <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, *kr, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, x, rsd, jpvt, qraux );</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160; </div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="keywordflow">return</span> ind;</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;}</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00867"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">  867</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">dqrlss</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> kr, <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[], <span class="keywordtype">float</span> x[],</div>
+<div class="line"><a name="l00867"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">  867</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">dqrlss</a> ( <span class="keywordtype">float</span> a[], <span class="keywordtype">int</span> lda, <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> kr, <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[], <span class="keywordtype">float</span> x[],</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keywordtype">float</span> rsd[], <span class="keywordtype">int</span> jpvt[], <span class="keywordtype">float</span> qraux[] )</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160; </div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="comment">/******************************************************************************/</span></div>
@@ -1038,7 +1038,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;  <span class="keywordflow">if</span> ( kr != 0 )</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  {</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    job = 110;</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    info = <a class="code" href="qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902">dqrsl</a> ( a, lda, m, kr, qraux, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, rsd, rsd, x, rsd, rsd, job );</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    info = <a class="code" href="qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902">dqrsl</a> ( a, lda, <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, kr, qraux, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, rsd, rsd, x, rsd, rsd, job );</div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  }</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160; </div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; n; i++ )</div>
@@ -1476,21 +1476,21 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;{</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;  <span class="keywordtype">int</span> ix;</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  <span class="keywordtype">int</span> m;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>;</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;  <span class="keywordflow">if</span> ( n &lt;= 0 )</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;  {</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;  }</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( incx == 1 )</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;  {</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    m = n % 5;</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a> = n % 5;</div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160; </div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; m; i++ )</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i++ )</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;    {</div>
 <div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;      x[i] = sa * x[i];</div>
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    }</div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160; </div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    <span class="keywordflow">for</span> ( i = m; i &lt; n; i = i + 5 )</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    <span class="keywordflow">for</span> ( i = <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i &lt; n; i = i + 5 )</div>
 <div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    {</div>
 <div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;      x[i]   = sa * x[i];</div>
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;      x[i+1] = sa * x[i+1];</div>
@@ -1568,7 +1568,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;  <span class="keywordtype">int</span> ix;</div>
 <div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;  <span class="keywordtype">int</span> iy;</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;  <span class="keywordtype">int</span> m;</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>;</div>
 <div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;  <span class="keywordtype">float</span> temp;</div>
 <div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160; </div>
 <div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;  <span class="keywordflow">if</span> ( n &lt;= 0 )</div>
@@ -1576,16 +1576,16 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;  }</div>
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( incx == 1 &amp;&amp; incy == 1 )</div>
 <div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;  {</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;    m = n % 3;</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a> = n % 3;</div>
 <div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160; </div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; m; i++ )</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i++ )</div>
 <div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;    {</div>
 <div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;      temp = x[i];</div>
 <div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;      x[i] = y[i];</div>
 <div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;      y[i] = temp;</div>
 <div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    }</div>
 <div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160; </div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;    <span class="keywordflow">for</span> ( i = m; i &lt; n; i = i + 3 )</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;    <span class="keywordflow">for</span> ( i = <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>; i &lt; n; i = i + 3 )</div>
 <div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;    {</div>
 <div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;      temp = x[i];</div>
 <div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;      x[i] = y[i];</div>
@@ -1635,7 +1635,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;}</div>
 <div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160; </div>
-<div class="line"><a name="l01548"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340"> 1548</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340">qr_solve</a> ( <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> a[], <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[], <span class="keywordtype">float</span> x[]  )</div>
+<div class="line"><a name="l01548"></a><span class="lineno"><a class="line" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340"> 1548</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340">qr_solve</a> ( <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span> a[], <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[], <span class="keywordtype">float</span> x[]  )</div>
 <div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160; </div>
 <div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;<span class="comment">/*</span></div>
@@ -1691,22 +1691,23 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;  <span class="keywordtype">int</span> lda;</div>
 <div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;  <span class="keywordtype">float</span> tol;</div>
 <div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160; </div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  <span class="keywordtype">float</span> a_qr[m*n];</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;  <a class="code" href="r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6">r8mat_copy_new</a> ( m, n, a, a_qr );</div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;  lda = m;</div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  tol = <a class="code" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2">r8_epsilon</a> ( ) / <a class="code" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af">r8mat_amax</a> ( m, n, a_qr );</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  <span class="keywordtype">float</span> a_qr[<a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>*n];</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;  <a class="code" href="r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6">r8mat_copy_new</a> ( <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, a, a_qr );</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;  lda = <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>;</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  tol = <a class="code" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2">r8_epsilon</a> ( ) / <a class="code" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af">r8mat_amax</a> ( <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, a_qr );</div>
 <div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;  <span class="keywordtype">int</span> jpvt[n];</div>
 <div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;  <span class="keywordtype">float</span> qraux[n];</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;  <span class="keywordtype">float</span> r[m];</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;  <span class="keywordtype">float</span> r[<a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>];</div>
 <div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  itask = 1;</div>
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160; </div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  ind = <a class="code" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">dqrls</a> ( a_qr, lda, m, n, tol, &amp;kr, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, x, r, jpvt, qraux, itask );</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  ind = <a class="code" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">dqrls</a> ( a_qr, lda, <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, n, tol, &amp;kr, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, x, r, jpvt, qraux, itask );</div>
 <div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;}</div>
 <div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160; </div>
 <div class="ttc" id="acommon__flight__plan_8c_html_a9314d7061c454ecf2111d3965db8f23f"><div class="ttname"><a href="common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></div><div class="ttdeci">uint8_t last_wp UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00038">common_flight_plan.c:38</a></div></div>
 <div class="ttc" id="adw1000__arduino_8c_html_aa0f1e783d32a3f42823c7fedb8f5b206"><div class="ttname"><a href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a></div><div class="ttdeci">static const float scale[]</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__arduino_8c_source.html#l00200">dw1000_arduino.c:200</a></div></div>
 <div class="ttc" id="ains__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00257">ins_alt_float.c:257</a></div></div>
+<div class="ttc" id="anamespacesimple__quad__sim_html_aa74291aa67f0cfeebac5b8133966d9bf"><div class="ttname"><a href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">simple_quad_sim.m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim.py:173</a></div></div>
 <div class="ttc" id="aqr__solve_8c_html_a26a23027f69ea2fa426952985c7734c1"><div class="ttname"><a href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1">dqrlss</a></div><div class="ttdeci">void dqrlss(float a[], int lda, int m, int n, int kr, float b[], float x[], float rsd[], int jpvt[], float qraux[])</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00867">qr_solve.c:867</a></div></div>
 <div class="ttc" id="aqr__solve_8c_html_a32d5754b3d1e62e762af43ee5f2e2135"><div class="ttname"><a href="qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135">ddot</a></div><div class="ttdeci">float ddot(int n, float dx[], int incx, float dy[], int incy)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00144">qr_solve.c:144</a></div></div>
 <div class="ttc" id="aqr__solve_8c_html_a43d89b9590aa2c74c1fc7bbcb2e739af"><div class="ttname"><a href="qr__solve_8c.html#a43d89b9590aa2c74c1fc7bbcb2e739af">DEBUG_FPRINTF</a></div><div class="ttdeci">#define DEBUG_FPRINTF(...)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00018">qr_solve.c:18</a></div></div>
@@ -1735,7 +1736,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="dir_879cab577fd2f9083eff958fc2dd0263.html">qr_solve</a></li><li class="navelem"><a class="el" href="qr__solve_8c.html">qr_solve.c</a></li>
-    <li class="footer">Generated on Fri Apr 14 2023 20:19:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Apr 16 2023 20:15:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

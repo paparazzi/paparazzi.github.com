@@ -887,6 +887,12 @@ var onboard_modules =
         [ "Raw fdm_jsbsim.xml file:", "module__fdm_jsbsim.html#module_xml__fdm_jsbsim", null ]
       ] ]
     ] ],
+    [ "fdm_pybullet module", "module__fdm_pybullet.html", [
+      [ "Example for airframe file", "module__fdm_pybullet.html#module_load_example__fdm_pybullet", null ],
+      [ "Module configuration options", "module__fdm_pybullet.html#configuration__fdm_pybullet", [
+        [ "Raw fdm_pybullet.xml file:", "module__fdm_pybullet.html#module_xml__fdm_pybullet", null ]
+      ] ]
+    ] ],
     [ "fdm_rover module", "module__fdm_rover.html", [
       [ "Example for airframe file", "module__fdm_rover.html#module_load_example__fdm_rover", [
         [ "Raw fdm_rover.xml file:", "module__fdm_rover.html#module_xml__fdm_rover", null ]
