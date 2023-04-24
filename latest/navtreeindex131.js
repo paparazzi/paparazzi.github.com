@@ -1,5 +1,6 @@
 var NAVTREEINDEX131 =
 {
+"module__pose_history.html#module_load_example__pose_history":[1,454,0],
 "module__pose_history.html#module_xml__pose_history":[1,454,2,0],
 "module__potential.html":[1,291],
 "module__potential.html#functions__potential":[1,291,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__stereocam.html#define":[1,407,1,1],
 "module__stereocam.html#event_functions":[1,407,2,1],
 "module__stereocam.html#files":[1,407,3],
-"module__stereocam.html#functions__stereocam":[1,407,2],
-"module__stereocam.html#headers":[1,407,3,0]
+"module__stereocam.html#functions__stereocam":[1,407,2]
 };

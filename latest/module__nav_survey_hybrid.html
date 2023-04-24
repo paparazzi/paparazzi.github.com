@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('module__nav_survey_hybrid.html',''); i
 <p>Support mission mode with custom elements:</p><ul>
 <li>points in local NED: SRVHL orientation sweep_distance radius height p1x p1y p2x p2y p3x p3y [p4x p4y]</li>
 <li>points in global LLA: SRVHG orientation sweep_distance radius height p1lat p1lon p2lat p2lon p3lat p3lon [p4lat p4lon]</li>
-<li>orientation is in degrees</li>
+<li>orientation is in degrees, 0 pointing at east, positive counter clockwise</li>
 <li>sweep_distance in meters</li>
 <li>radius can be: negative, automatically set to sweep/2; zero, not turning on circles; positive, fixed radius</li>
 <li>height in meters above reference point</li>
-<li>the polygon in mission mode can have either 3 or 4 points.</li>
+<li>the polygon in mission mode can have either 3 or 4 points, with positions in meters (local) or degrees (global).</li>
 </ul>
 <h1><a class="anchor" id="module_load_example__nav_survey_hybrid"></a>
 Example for airframe file</h1>
@@ -123,6 +123,14 @@ Airframe file section</h2>
  Description: distance from entry point (default: half sweep distance)</li>
 </ul>
 </li>
+</ul>
+<h1><a class="anchor" id="functions__nav_survey_hybrid"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="nav__survey__hybrid_8c.html#a53df0159c400ec7c56b38209a0897a29" title="Init function.">nav_survey_hybrid_init()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -152,11 +160,11 @@ Raw nav_survey_hybrid.xml file:</h2>
 <div class="line">      <span class="keyword">Support</span> <span class="keyword">mission</span> <span class="keyword">mode</span> <span class="keyword">with</span> <span class="keyword">custom</span> <span class="keyword">elements:</span></div>
 <div class="line">      - <span class="keyword">points</span> <span class="keyword">in</span> <span class="keyword">local</span> <span class="keyword">NED:</span> <span class="keyword">SRVHL</span> <span class="keyword">orientation</span> <span class="keyword">sweep_distance</span> <span class="keyword">radius</span> <span class="keyword">height</span> <span class="keyword">p1x</span> <span class="keyword">p1y</span> <span class="keyword">p2x</span> <span class="keyword">p2y</span> <span class="keyword">p3x</span> <span class="keyword">p3y</span> [<span class="keyword">p4x</span> <span class="keyword">p4y</span>]</div>
 <div class="line">      - <span class="keyword">points</span> <span class="keyword">in</span> <span class="keyword">global</span> <span class="keyword">LLA:</span> <span class="keyword">SRVHG</span> <span class="keyword">orientation</span> <span class="keyword">sweep_distance</span> <span class="keyword">radius</span> <span class="keyword">height</span> <span class="keyword">p1lat</span> <span class="keyword">p1lon</span> <span class="keyword">p2lat</span> <span class="keyword">p2lon</span> <span class="keyword">p3lat</span> <span class="keyword">p3lon</span> [<span class="keyword">p4lat</span> <span class="keyword">p4lon</span>]</div>
-<div class="line">      - <span class="keyword">orientation</span> <span class="keyword">is</span> <span class="keyword">in</span> <span class="keyword">degrees</span></div>
+<div class="line">      - <span class="keyword">orientation</span> <span class="keyword">is</span> <span class="keyword">in</span> <span class="keyword">degrees</span>, 0 <span class="keyword">pointing</span> <span class="keyword">at</span> <span class="keyword">east</span>, <span class="keyword">positive</span> <span class="keyword">counter</span> <span class="keyword">clockwise</span></div>
 <div class="line">      - <span class="keyword">sweep_distance</span> <span class="keyword">in</span> <span class="keyword">meters</span></div>
 <div class="line">      - <span class="keyword">radius</span> <span class="keyword">can</span> <span class="keyword">be:</span> <span class="keyword">negative</span>, <span class="keyword">automatically</span> <span class="keyword">set</span> <span class="keyword">to</span> <span class="keyword">sweep</span>/2; <span class="keyword">zero</span>, <span class="keyword">not</span> <span class="keyword">turning</span> <span class="keyword">on</span> <span class="keyword">circles</span>; <span class="keyword">positive</span>, <span class="keyword">fixed</span> <span class="keyword">radius</span></div>
 <div class="line">      - <span class="keyword">height</span> <span class="keyword">in</span> <span class="keyword">meters</span> <span class="keyword">above</span> <span class="keyword">reference</span> <span class="keyword">point</span></div>
-<div class="line">      - <span class="keyword">the</span> <span class="keyword">polygon</span> <span class="keyword">in</span> <span class="keyword">mission</span> <span class="keyword">mode</span> <span class="keyword">can</span> <span class="keyword">have</span> <span class="keyword">either</span> 3 <span class="keyword">or</span> 4 <span class="keyword">points.</span></div>
+<div class="line">      - <span class="keyword">the</span> <span class="keyword">polygon</span> <span class="keyword">in</span> <span class="keyword">mission</span> <span class="keyword">mode</span> <span class="keyword">can</span> <span class="keyword">have</span> <span class="keyword">either</span> 3 <span class="keyword">or</span> 4 <span class="keyword">points</span>, <span class="keyword">with</span> <span class="keyword">positions</span> <span class="keyword">in</span> <span class="keyword">meters</span> (<span class="keyword">local</span>) <span class="keyword">or</span> <span class="keyword">degrees</span> (<span class="keyword">global</span>).</div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SURVEY_HYBRID&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;SURVEY_HYBRID_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_POLYGON_SIZE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max waypoints usable in polygon survey&quot;</span>/&gt;</div>
@@ -183,6 +191,7 @@ Raw nav_survey_hybrid.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_survey_hybrid.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;nav_survey_hybrid_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_survey_hybrid.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
@@ -197,7 +206,7 @@ Raw nav_survey_hybrid.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sun Apr 16 2023 20:15:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Apr 24 2023 13:03:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

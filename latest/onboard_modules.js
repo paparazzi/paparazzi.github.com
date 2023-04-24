@@ -2069,7 +2069,8 @@ var onboard_modules =
     ] ],
     [ "nav_survey_hybrid module", "module__nav_survey_hybrid.html", [
       [ "Example for airframe file", "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid", null ],
-      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", [
+      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", null ],
+      [ "Module functions", "module__nav_survey_hybrid.html#functions__nav_survey_hybrid", [
         [ "Raw nav_survey_hybrid.xml file:", "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid", null ]
       ] ]
     ] ],

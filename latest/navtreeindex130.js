@@ -138,8 +138,9 @@ var NAVTREEINDEX130 =
 "module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,319,0,0],
 "module__nav_survey_hybrid.html":[1,320],
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,320,1],
+"module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,320,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,320,0],
-"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,320,1,0],
+"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,320,2,0],
 "module__nav_survey_poly_osam.html":[1,321],
 "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,321,1],
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,321,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__pipe.html#module_xml__pipe":[1,252,1,0],
 "module__pose_history.html":[1,454],
 "module__pose_history.html#configuration__pose_history":[1,454,1],
-"module__pose_history.html#functions__pose_history":[1,454,2],
-"module__pose_history.html#module_load_example__pose_history":[1,454,0]
+"module__pose_history.html#functions__pose_history":[1,454,2]
 };

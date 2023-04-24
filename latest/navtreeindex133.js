@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__wedgebug.html#configuration__wedgebug":[1,467,1],
 "module__wedgebug.html#functions__wedgebug":[1,467,2],
 "module__wedgebug.html#module_load_example__wedgebug":[1,467,0],
 "module__wedgebug.html#module_xml__wedgebug":[1,467,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "modules_2sensors_2baro__MS5534A_8h_source.html":[12,0,1,0,6,60,41],
 "motor__mixing_8c.html":[12,0,1,0,6,0,25],
 "motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a":[12,0,1,0,6,0,25,15],
-"motor__mixing_8c.html#a181807730d4a375f848ba139813ce04f":[12,0,1,0,6,0,25,0],
-"motor__mixing_8c.html#a283724cdd12c661eabd1bbdb1af0a853":[12,0,1,0,6,0,25,18]
+"motor__mixing_8c.html#a181807730d4a375f848ba139813ce04f":[12,0,1,0,6,0,25,0]
 };

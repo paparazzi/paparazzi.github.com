@@ -1,5 +1,6 @@
 var NAVTREEINDEX165 =
 {
+"pmw3901_8c.html#a00ba06d3e6407dfaf867e6097462d617":[12,0,1,0,7,112,17],
 "pmw3901_8c.html#a0c7042496bce692012cec57112037a71":[12,0,1,0,7,112,0],
 "pmw3901_8c.html#a445ec24fa0c80ade145d6fd11117e40f":[12,0,1,0,7,112,5],
 "pmw3901_8c.html#a4839a2b4a985855937ca778d0e87391b":[12,0,1,0,7,112,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX165 =
 "pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24":[12,0,1,0,4,11,17],
 "pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea":[12,0,1,0,4,11,16],
 "pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6":[12,0,1,0,4,11,15],
-"pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0":[12,0,1,0,4,11,12],
-"pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d":[12,0,1,0,4,11,22]
+"pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0":[12,0,1,0,4,11,12]
 };

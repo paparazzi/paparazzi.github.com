@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__stereocam.html#headers":[1,407,3,0],
 "module__stereocam.html#init_functions":[1,407,2,0],
 "module__stereocam.html#module_load_example__stereocam":[1,407,0],
 "module__stereocam.html#module_xml__stereocam":[1,407,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__video_usb_logger.html#functions__video_usb_logger":[1,68,2],
 "module__video_usb_logger.html#module_load_example__video_usb_logger":[1,68,0],
 "module__video_usb_logger.html#module_xml__video_usb_logger":[1,68,2,0],
-"module__wedgebug.html":[1,467],
-"module__wedgebug.html#configuration__wedgebug":[1,467,1]
+"module__wedgebug.html":[1,467]
 };

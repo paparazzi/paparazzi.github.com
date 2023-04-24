@@ -1,5 +1,6 @@
 var NAVTREEINDEX207 =
 {
+"tfmini__i2c_8c.html#a4bbe8dd7623fb05fdec9ed503992a668":[12,0,1,0,6,39,6,25],
 "tfmini__i2c_8c.html#a4c55f9bf14885f061b06c6199d546148":[12,0,1,0,6,39,6,10],
 "tfmini__i2c_8c.html#a59364500246a111cb4a85e530ef7a336":[12,0,1,0,6,39,6,20],
 "tfmini__i2c_8c.html#a5a4f7ec68600481ed0883acef7a4f070":[12,0,1,0,6,39,6,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX207 =
 "uart__cam__ctrl_8c.html":[12,0,1,0,6,18,16],
 "uart__cam__ctrl_8c.html#a1c243cee59714576fc25654b97bd2aa3":[12,0,1,0,6,18,16,16],
 "uart__cam__ctrl_8c.html#a1f56cfc8d05c16a38620999658f1af05":[12,0,1,0,6,18,16,3],
-"uart__cam__ctrl_8c.html#a3e9e10f2b19bfc49e7e073ecd7f03e7f":[12,0,1,0,6,18,16,10],
-"uart__cam__ctrl_8c.html#a4c1c1854001ea830ddbf3ab253fe6756":[12,0,1,0,6,18,16,5]
+"uart__cam__ctrl_8c.html#a3e9e10f2b19bfc49e7e073ecd7f03e7f":[12,0,1,0,6,18,16,10]
 };

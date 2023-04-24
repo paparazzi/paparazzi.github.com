@@ -1,5 +1,6 @@
 var NAVTREEINDEX205 =
 {
+"tawaki_8h.html#a304df494998391b2e2797b31aeaa32bc":[12,0,1,0,1,21,0,0,1,166],
 "tawaki_8h.html#a322ad8c0a1668f81828cdeb6f6ebdbf7":[12,0,1,0,1,21,0,0,1,177],
 "tawaki_8h.html#a328d996e4247f8d93183a9d01c8d7137":[12,0,1,0,1,21,0,0,1,73],
 "tawaki_8h.html#a332bb8fee0a9dce80f6f7151dde33121":[12,0,1,0,1,21,0,0,1,79],
@@ -248,6 +249,5 @@ var NAVTREEINDEX205 =
 "telemetry__common_8h.html#a0c4b91509d63b97615d641bead57636f":[12,0,1,0,6,14,31,0,1],
 "telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4":[12,0,1,0,6,14,31,4],
 "telemetry__common_8h.html#a32d9883689091cb5c2b2748e5e2806aa":[12,0,1,0,6,14,31,2],
-"telemetry__common_8h.html#a8569c3f73297d33f638ce40e348dd61a":[12,0,1,0,6,14,31,7],
-"telemetry__common_8h.html#a864a2b97784a3cecc0b2b80a57220ae3":[12,0,1,0,6,14,31,3]
+"telemetry__common_8h.html#a8569c3f73297d33f638ce40e348dd61a":[12,0,1,0,6,14,31,7]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d":[12,0,1,0,7,104,1,0],
 "ms5611_8h.html#structMs5611Data":[12,0,1,0,7,104,0],
 "ms5611_8h_source.html":[12,0,1,0,7,104],
 "ms5611__i2c_8c.html":[12,0,1,0,7,105],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "mt9f002_8h.html#ae9f2aa10fb8cd9c1e0db620720fe2cbb":[12,0,1,0,1,2,5,17],
 "mt9f002_8h.html#aec6b8d833ad0d74510d111dd48dd38ce":[12,0,1,0,1,2,5,0,6],
 "mt9f002_8h.html#af4f307c3a502c7aadb224c7ff9f85a00":[12,0,1,0,1,2,5,20],
-"mt9f002_8h.html#af60fc4b6d4696ce7977a3d7b03e0f5ea":[12,0,1,0,1,2,5,14],
-"mt9f002_8h.html#af63a6fbefe3f1f4b959f6b1610b0c9f1":[12,0,1,0,1,2,5,35]
+"mt9f002_8h.html#af60fc4b6d4696ce7977a3d7b03e0f5ea":[12,0,1,0,1,2,5,14]
 };
