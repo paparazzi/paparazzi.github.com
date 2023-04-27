@@ -1,11 +1,11 @@
 var NAVTREEINDEX132 =
 {
-"module__stereocam.html#headers":[1,407,3,0],
-"module__stereocam.html#init_functions":[1,407,2,0],
+"module__state_interface.html#module_xml__state_interface":[1,78,1,0],
+"module__stereocam.html":[1,407],
+"module__stereocam.html#configuration__stereocam":[1,407,1],
+"module__stereocam.html#functions__stereocam":[1,407,2],
 "module__stereocam.html#module_load_example__stereocam":[1,407,0],
-"module__stereocam.html#module_xml__stereocam":[1,407,3,2],
-"module__stereocam.html#periodic_functions":[1,407,2,2],
-"module__stereocam.html#sources":[1,407,3,1],
+"module__stereocam.html#module_xml__stereocam":[1,407,2,0],
 "module__stereocam_droplet.html":[1,408],
 "module__stereocam_droplet.html#functions__stereocam_droplet":[1,408,1],
 "module__stereocam_droplet.html#module_load_example__stereocam_droplet":[1,408,0],

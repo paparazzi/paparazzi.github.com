@@ -80,9 +80,10 @@ var NAVTREEINDEX126 =
 "module__current_sensor.html#module_xml__current_sensor":[1,425,1,0],
 "module__cv_blob_locator.html":[1,51],
 "module__cv_blob_locator.html#configuration__cv_blob_locator":[1,51,1],
+"module__cv_blob_locator.html#event_functions":[1,51,2,0],
 "module__cv_blob_locator.html#functions__cv_blob_locator":[1,51,2],
 "module__cv_blob_locator.html#module_load_example__cv_blob_locator":[1,51,0],
-"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,51,2,0],
+"module__cv_blob_locator.html#module_xml__cv_blob_locator":[1,51,2,1],
 "module__cv_colorfilter.html":[1,52],
 "module__cv_colorfilter.html#configuration__cv_colorfilter":[1,52,1],
 "module__cv_colorfilter.html#functions__cv_colorfilter":[1,52,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX126 =
 "module__esc32.html#module_load_example__esc32":[1,432,0],
 "module__esc32.html#module_xml__esc32":[1,432,2,0],
 "module__extra_dl.html":[1,98],
-"module__extra_dl.html#configuration__extra_dl":[1,98,1],
-"module__extra_dl.html#functions__extra_dl":[1,98,2]
+"module__extra_dl.html#configuration__extra_dl":[1,98,1]
 };
