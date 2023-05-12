@@ -354,7 +354,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__cv_blob_locator.html#module_load_example__cv_blob_locator", null ],
       [ "Module configuration options", "module__cv_blob_locator.html#configuration__cv_blob_locator", null ],
       [ "Module functions", "module__cv_blob_locator.html#functions__cv_blob_locator", [
-        [ "Event Functions", "module__cv_blob_locator.html#event_functions", null ],
         [ "Raw cv_blob_locator.xml file:", "module__cv_blob_locator.html#module_xml__cv_blob_locator", null ]
       ] ]
     ] ],
@@ -576,6 +575,7 @@ var onboard_modules =
     [ "ctrl_windtunnel module", "module__ctrl_windtunnel.html", [
       [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
       [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", [
+        [ "Airframe file section", "module__ctrl_windtunnel.html#af_section", null ],
         [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
       ] ]
     ] ],
@@ -609,6 +609,11 @@ var onboard_modules =
     [ "optical_flow_hover module", "module__optical_flow_hover.html", [
       [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
       [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
+        [ "Init Functions", "module__optical_flow_hover.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__optical_flow_hover.html#files", [
+        [ "Header Files", "module__optical_flow_hover.html#headers", null ],
+        [ "Source Files", "module__optical_flow_hover.html#sources", null ],
         [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
       ] ]
     ] ],
@@ -1158,20 +1163,20 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1495,11 +1500,6 @@ var onboard_modules =
     [ "intermcu_iomcu module", "module__intermcu_iomcu.html", [
       [ "Example for airframe file", "module__intermcu_iomcu.html#module_load_example__intermcu_iomcu", null ],
       [ "Module configuration options", "module__intermcu_iomcu.html#configuration__intermcu_iomcu", [
-        [ "Configure Options", "module__intermcu_iomcu.html#configure", null ]
-      ] ],
-      [ "Files", "module__intermcu_iomcu.html#files", [
-        [ "Header Files", "module__intermcu_iomcu.html#headers", null ],
-        [ "Source Files", "module__intermcu_iomcu.html#sources", null ],
         [ "Raw intermcu_iomcu.xml file:", "module__intermcu_iomcu.html#module_xml__intermcu_iomcu", null ]
       ] ]
     ] ],
@@ -2099,11 +2099,8 @@ var onboard_modules =
     ] ],
     [ "nav_survey_rectangle_rotorcraft module", "module__nav_survey_rectangle_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft", null ],
-      [ "Module configuration options", "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft", [
-        [ "Define Options", "module__nav_survey_rectangle_rotorcraft.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft", null ],
       [ "Module functions", "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft", [
-        [ "Init Functions", "module__nav_survey_rectangle_rotorcraft.html#init_functions", null ],
         [ "Raw nav_survey_rectangle_rotorcraft.xml file:", "module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft", null ]
       ] ]
     ] ],
@@ -2171,8 +2168,11 @@ var onboard_modules =
     ] ],
     [ "orange_avoider module", "module__orange_avoider.html", [
       [ "Example for airframe file", "module__orange_avoider.html#module_load_example__orange_avoider", null ],
-      [ "Module configuration options", "module__orange_avoider.html#configuration__orange_avoider", null ],
+      [ "Module configuration options", "module__orange_avoider.html#configuration__orange_avoider", [
+        [ "Define Options", "module__orange_avoider.html#define", null ]
+      ] ],
       [ "Module functions", "module__orange_avoider.html#functions__orange_avoider", [
+        [ "Periodic Functions", "module__orange_avoider.html#periodic_functions", null ],
         [ "Raw orange_avoider.xml file:", "module__orange_avoider.html#module_xml__orange_avoider", null ]
       ] ]
     ] ],
@@ -2199,8 +2199,12 @@ var onboard_modules =
     ] ],
     [ "radio_control_datalink module", "module__radio_control_datalink.html", [
       [ "Example for airframe file", "module__radio_control_datalink.html#module_load_example__radio_control_datalink", null ],
-      [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", null ],
-      [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", null ],
+      [ "Module configuration options", "module__radio_control_datalink.html#configuration__radio_control_datalink", [
+        [ "Configure Options", "module__radio_control_datalink.html#configure", null ]
+      ] ],
+      [ "Module functions", "module__radio_control_datalink.html#functions__radio_control_datalink", [
+        [ "Event Functions", "module__radio_control_datalink.html#event_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__radio_control_datalink.html#datalink_functions__radio_control_datalink", [
         [ "Raw radio_control_datalink.xml file:", "module__radio_control_datalink.html#module_xml__radio_control_datalink", null ]
       ] ]
@@ -2921,11 +2925,8 @@ var onboard_modules =
     ] ],
     [ "mag_calib_ukf module", "module__mag_calib_ukf.html", [
       [ "Example for airframe file", "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf", null ],
-      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", [
-        [ "Airframe file section", "module__mag_calib_ukf.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__mag_calib_ukf.html#configuration__mag_calib_ukf", null ],
       [ "Module functions", "module__mag_calib_ukf.html#functions__mag_calib_ukf", [
-        [ "Periodic Functions", "module__mag_calib_ukf.html#periodic_functions", null ],
         [ "Raw mag_calib_ukf.xml file:", "module__mag_calib_ukf.html#module_xml__mag_calib_ukf", null ]
       ] ]
     ] ],

@@ -499,9 +499,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae412eb428563fdc69dd7ee229e027331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331">float_mat2_mult</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *vect_out, float mat[4], struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> vect_in)</td></tr>
 <tr class="memdesc:gae412eb428563fdc69dd7ee229e027331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply 2D matrix with vector.  <a href="group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331">More...</a><br /></td></tr>
 <tr class="separator:gae412eb428563fdc69dd7ee229e027331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8fc6504d00671bdbbf033500cab3dcba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">float_mat_inv_4d</a> (float invOut[16], float mat_in[16])</td></tr>
-<tr class="memdesc:ga8fc6504d00671bdbbf033500cab3dcba"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 Matrix inverse  <a href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">More...</a><br /></td></tr>
-<tr class="separator:ga8fc6504d00671bdbbf033500cab3dcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad23d56df41b1965dd4c58317dd8d9a7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f">float_mat_inv_4d</a> (float invOut[4][4], float mat_in[4][4])</td></tr>
+<tr class="memdesc:gad23d56df41b1965dd4c58317dd8d9a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 Matrix inverse  <a href="group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f">More...</a><br /></td></tr>
+<tr class="separator:gad23d56df41b1965dd4c58317dd8d9a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga269eb3a24a8a2df8e6bbeee1e2212af6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga269eb3a24a8a2df8e6bbeee1e2212af6">float_vect3_bound_in_2d</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *vect3, float bound)</td></tr>
 <tr class="separator:ga269eb3a24a8a2df8e6bbeee1e2212af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6a51eb1a08c6eaf6d844ed970e73db07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga6a51eb1a08c6eaf6d844ed970e73db07">float_vect3_bound_in_3d</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *vect3, float bound)</td></tr>
@@ -2903,7 +2903,7 @@ in rad/s </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8h_source.html#l00107">107</a> of file <a class="el" href="pprz__algebra__float_8h_source.html">pprz_algebra_float.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -3089,7 +3089,7 @@ in rad/s </td></tr>
 
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, and <a class="el" href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim::m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00761">float_mat_mul_copy()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00050">pprz_cholesky_float()</a>, and <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00089">pprz_qr_float()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00761">float_mat_mul_copy()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00050">pprz_cholesky_float()</a>, and <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00089">pprz_qr_float()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -3162,7 +3162,7 @@ in rad/s </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8h_source.html#l00870">870</a> of file <a class="el" href="pprz__algebra__float_8h_source.html">pprz_algebra_float.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00032">discrete_ekf_new()</a>, <a class="el" href="discrete__ekf__no__north_8c_source.html#l00192">discrete_ekf_no_north_new()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>, and <a class="el" href="discrete__ekf_8c_source.html#l00148">linear_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00032">discrete_ekf_new()</a>, <a class="el" href="discrete__ekf__no__north_8c_source.html#l00192">discrete_ekf_no_north_new()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>, and <a class="el" href="discrete__ekf_8c_source.html#l00148">linear_filter()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -3299,9 +3299,9 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00938">938</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00941">941</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00107">float_log_n()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00659">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00870">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00883">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00761">float_mat_mul_copy()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00998">float_mat_norm_li()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00801">float_mat_scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00817">float_mat_sum_scaled()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00638">MAKE_MATRIX_PTR</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00107">float_log_n()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00659">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00870">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00886">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00761">float_mat_mul_copy()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l01001">float_mat_norm_li()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00801">float_mat_scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00817">float_mat_sum_scaled()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00638">MAKE_MATRIX_PTR</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="discrete__ekf__no__north_8c_source.html#l00074">c2d()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -3379,8 +3379,8 @@ in rad/s </td></tr>
 
 </div>
 </div>
-<a id="ga8fc6504d00671bdbbf033500cab3dcba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8fc6504d00671bdbbf033500cab3dcba">&#9670;&nbsp;</a></span>float_mat_inv_4d()</h2>
+<a id="gad23d56df41b1965dd4c58317dd8d9a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23d56df41b1965dd4c58317dd8d9a7f">&#9670;&nbsp;</a></span>float_mat_inv_4d()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3389,13 +3389,13 @@ in rad/s </td></tr>
           <td class="memname">bool float_mat_inv_4d </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>invOut</em>[16], </td>
+          <td class="paramname"><em>invOut</em>[4][4], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>mat_in</em>[16]&#160;</td>
+          <td class="paramname"><em>mat_in</em>[4][4]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3424,12 +3424,12 @@ in rad/s </td></tr>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_cgraph.png" border="0" usemap="#agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_cgraph" alt=""/></div>
-<map name="agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_cgraph" id="agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_cgraph">
+<div class="center"><img src="group__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_cgraph.png" border="0" usemap="#agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_cgraph" alt=""/></div>
+<map name="agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_cgraph" id="agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_cgraph">
 <area shape="rect" title="4x4 Matrix inverse" alt="" coords="5,31,140,57"/>
-<area shape="rect" href="pprz__algebra__float_8c.html#a4a0f9e4adc09ae94e619fc321e4c507a" title=" " alt="" coords="188,5,347,32"/>
-<area shape="rect" href="pprz__algebra__float_8c.html#afe251607fd1c74899ec4bc3b07e99740" title=" " alt="" coords="200,56,335,83"/>
-<area shape="rect" href="pprz__algebra__float_8c.html#a9548a6e86b1b1a10e62a2ec6ec6dc6bb" title=" " alt="" coords="395,31,547,57"/>
+<area shape="rect" href="pprz__algebra__float_8c.html#a42bead54a4acebad34ad8cbac75fc4f5" title=" " alt="" coords="188,5,347,32"/>
+<area shape="rect" href="pprz__algebra__float_8c.html#a5a027e3c4aeb9c3e49b485feb34555fb" title=" " alt="" coords="200,56,335,83"/>
+<area shape="rect" href="pprz__algebra__float_8c.html#ae18b076268aef9c54212669a3f3e9754" title=" " alt="" coords="395,31,547,57"/>
 </map>
 </div>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -3437,8 +3437,8 @@ in rad/s </td></tr>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_icgraph.png" border="0" usemap="#agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_icgraph" alt=""/></div>
-<map name="agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_icgraph" id="agroup__math__algebra__float_ga8fc6504d00671bdbbf033500cab3dcba_icgraph">
+<div class="center"><img src="group__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_icgraph.png" border="0" usemap="#agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_icgraph" alt=""/></div>
+<map name="agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_icgraph" id="agroup__math__algebra__float_gad23d56df41b1965dd4c58317dd8d9a7f_icgraph">
 <area shape="rect" title="4x4 Matrix inverse" alt="" coords="1113,75,1248,102"/>
 <area shape="rect" href="stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3" title="Function that calculates the pseudo&#45;inverse of (G1+G2)." alt="" coords="897,75,1065,102"/>
 <area shape="rect" href="stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="707,46,830,73"/>
@@ -3489,9 +3489,9 @@ in rad/s </td></tr>
 <p>Calculate inverse of any n x n matrix (passed as C array) o = mat^-1 Algorithm verified with Matlab. </p>
 <p>Thanks to: <a href="https://www.quora.com/How-do-I-make-a-C++-program-to-get-the-inverse-of-a-matrix-100-X-100">https://www.quora.com/How-do-I-make-a-C++-program-to-get-the-inverse-of-a-matrix-100-X-100</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00883">883</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00886">886</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discrete__ekf__no__north_8c_source.html#l00270">discrete_ekf_no_north_update()</a>, <a class="el" href="discrete__ekf_8c_source.html#l00113">discrete_ekf_update()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00617">fit_linear_model_prior()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>, <a class="el" href="linear__kalman__filter_8c_source.html#l00111">linear_kalman_filter_update()</a>, and <a class="el" href="simple__kinematic__kalman_8c_source.html#l00186">simple_kinematic_kalman_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discrete__ekf__no__north_8c_source.html#l00270">discrete_ekf_no_north_update()</a>, <a class="el" href="discrete__ekf_8c_source.html#l00113">discrete_ekf_update()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00617">fit_linear_model_prior()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>, <a class="el" href="linear__kalman__filter_8c_source.html#l00111">linear_kalman_filter_update()</a>, and <a class="el" href="simple__kinematic__kalman_8c_source.html#l00186">simple_kinematic_kalman_update()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -3783,7 +3783,7 @@ in rad/s </td></tr>
 
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00659">float_mat_copy()</a>, <a class="el" href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim::m</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00638">MAKE_MATRIX_PTR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>, and <a class="el" href="linear__kalman__filter_8c_source.html#l00111">linear_kalman_filter_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>, and <a class="el" href="linear__kalman__filter_8c_source.html#l00111">linear_kalman_filter_update()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -3933,11 +3933,11 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00998">998</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01001">1001</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim::m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -4009,7 +4009,7 @@ in rad/s </td></tr>
 
 <p class="reference">References <a class="el" href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim::m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discrete__ekf__no__north_8c_source.html#l00074">c2d()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discrete__ekf__no__north_8c_source.html#l00074">c2d()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -4175,7 +4175,7 @@ in rad/s </td></tr>
 
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, and <a class="el" href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim::m</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00938">float_mat_exp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__ext__pose_8c_source.html#l01033">ekf_measurement_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00952">ekf_prediction_step()</a>, <a class="el" href="ins__ext__pose_8c_source.html#l00800">ekf_step()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00941">float_mat_exp()</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -7266,7 +7266,7 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01046">1046</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01049">1049</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
@@ -7572,7 +7572,7 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01056">1056</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01059">1059</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
@@ -7618,7 +7618,7 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01015">1015</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01018">1018</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>.</p>
 
@@ -7650,7 +7650,7 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01025">1025</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01028">1028</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00164">FLOAT_VECT3_NORM</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
@@ -7987,7 +7987,7 @@ in rad/s </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01036">1036</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l01039">1039</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00200">scale</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>.</p>
 
@@ -8854,7 +8854,7 @@ in rad/s </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 9 2023 07:18:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 12 2023 11:42:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -72,7 +72,7 @@ var pprz__algebra__float_8h =
     [ "float_mat_diff", "group__math__algebra__float.html#ga1745d42e98bc12c54451a2798b8804a8", null ],
     [ "float_mat_exp", "group__math__algebra__float.html#gaeb5940ad15aabefb645cb12408ddde64", null ],
     [ "float_mat_inv_2d", "group__math__algebra__float.html#ga564257f7c3e564bae7bb9dbe593cebef", null ],
-    [ "float_mat_inv_4d", "group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba", null ],
+    [ "float_mat_inv_4d", "group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f", null ],
     [ "float_mat_invert", "group__math__algebra__float.html#gac709319b9359bbc53bf3f6a5a57e66b0", null ],
     [ "float_mat_minor", "group__math__algebra__float.html#ga9f40c21573aebc959cca3b87a8329fee", null ],
     [ "float_mat_mul", "group__math__algebra__float.html#gaa2086b4cd9a5203452c165ee3c55eaee", null ],

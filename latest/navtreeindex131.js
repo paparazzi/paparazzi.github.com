@@ -1,7 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__photogrammetry_calculator.html#module_xml__photogrammetry_calculator":[1,453,1,0],
-"module__pipe.html":[1,252],
 "module__pipe.html#configuration__pipe":[1,252,1],
 "module__pipe.html#module_load_example__pipe":[1,252,0],
 "module__pipe.html#module_xml__pipe":[1,252,1,0],
@@ -59,7 +57,9 @@ var NAVTREEINDEX131 =
 "module__radio_control_common.html#module_xml__radio_control_common":[1,338,2,0],
 "module__radio_control_datalink.html":[1,339],
 "module__radio_control_datalink.html#configuration__radio_control_datalink":[1,339,1],
+"module__radio_control_datalink.html#configure":[1,339,1,0],
 "module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,339,3],
+"module__radio_control_datalink.html#event_functions":[1,339,2,0],
 "module__radio_control_datalink.html#functions__radio_control_datalink":[1,339,2],
 "module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,339,0],
 "module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,339,3,0],

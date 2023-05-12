@@ -126,13 +126,13 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>FALLTHROUGH
 : <a class="el" href="cc2500__compat_8h.html#a0cf2d82c57a09723ab59e6f4dcc45b84">cc2500_compat.h</a>
 </li>
-<li>FALSE
-: <a class="el" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">std.h</a>
-, <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">imu_chimu.h</a>
-</li>
 <li>false
 : <a class="el" href="microrl_8h.html#a65e9886d74aaee76545e83dd09011727">microrl.h</a>
 , <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">rtwtypes.h</a>
+</li>
+<li>FALSE
+: <a class="el" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">std.h</a>
+, <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">imu_chimu.h</a>
 </li>
 <li>fast9_detect()
 : <a class="el" href="fast__rosten_8h.html#a188523b38a244aa925088dfa115ed12e">fast_rosten.h</a>
@@ -785,12 +785,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>FLOAT_EULERS_NORM
 : <a class="el" href="group__math__algebra__float.html#gabe8ac26f75cf7ed1d1abaac2057904c7">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_EULERS_OF_QUAT
+: <a class="el" href="group__math__algebra__float.html#gabb9c6838cd4e08e827697d46129aa65d">pprz_algebra_float.h</a>
+</li>
 <li>float_eulers_of_quat()
 : <a class="el" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_EULERS_OF_QUAT
-: <a class="el" href="group__math__algebra__float.html#gabb9c6838cd4e08e827697d46129aa65d">pprz_algebra_float.h</a>
 </li>
 <li>float_eulers_of_quat_yxz()
 : <a class="el" href="group__math__algebra__float.html#ga2209f7781fa014668eae2909541acb43">pprz_algebra_float.c</a>
@@ -800,12 +800,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1">pprz_algebra_float.h</a>
 , <a class="el" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1">pprz_algebra_float.c</a>
 </li>
+<li>FLOAT_EULERS_OF_RMAT
+: <a class="el" href="group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559">pprz_algebra_float.h</a>
+</li>
 <li>float_eulers_of_rmat()
 : <a class="el" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_EULERS_OF_RMAT
-: <a class="el" href="group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_EULERS_ZERO
 : <a class="el" href="group__math__algebra__float.html#ga354c541625b0e7c12342e72589f67a80">pprz_algebra_float.h</a>
@@ -827,7 +827,7 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#gaf7d71c6424c5d2fa1e77992fc214d7c0">pprz_algebra_float.h</a>
 </li>
 <li>float_mat_adjoint_4d()
-: <a class="el" href="pprz__algebra__float_8c.html#a4a0f9e4adc09ae94e619fc321e4c507a">pprz_algebra_float.c</a>
+: <a class="el" href="pprz__algebra__float_8c.html#a42bead54a4acebad34ad8cbac75fc4f5">pprz_algebra_float.c</a>
 </li>
 <li>float_mat_col()
 : <a class="el" href="group__math__algebra__float.html#ga364136a53a6725df4bebcf3f553dce20">pprz_algebra_float.h</a>
@@ -840,7 +840,7 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga754c66fe568df91ead5586882a23a11c">pprz_algebra_float.h</a>
 </li>
 <li>float_mat_det_4d()
-: <a class="el" href="pprz__algebra__float_8c.html#afe251607fd1c74899ec4bc3b07e99740">pprz_algebra_float.c</a>
+: <a class="el" href="pprz__algebra__float_8c.html#a5a027e3c4aeb9c3e49b485feb34555fb">pprz_algebra_float.c</a>
 </li>
 <li>float_mat_diagonal_scal()
 : <a class="el" href="group__math__algebra__float.html#gaf1c0978a245e92964885adc84914875a">pprz_algebra_float.h</a>
@@ -857,8 +857,8 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 , <a class="el" href="group__math__algebra__float.html#ga564257f7c3e564bae7bb9dbe593cebef">pprz_algebra_float.h</a>
 </li>
 <li>float_mat_inv_4d()
-: <a class="el" href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga8fc6504d00671bdbbf033500cab3dcba">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#gad23d56df41b1965dd4c58317dd8d9a7f">pprz_algebra_float.c</a>
 </li>
 <li>float_mat_invert()
 : <a class="el" href="group__math__algebra__float.html#gac709319b9359bbc53bf3f6a5a57e66b0">pprz_algebra_float.c</a>
@@ -868,7 +868,7 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga9f40c21573aebc959cca3b87a8329fee">pprz_algebra_float.h</a>
 </li>
 <li>float_mat_minor_4d()
-: <a class="el" href="pprz__algebra__float_8c.html#a9548a6e86b1b1a10e62a2ec6ec6dc6bb">pprz_algebra_float.c</a>
+: <a class="el" href="pprz__algebra__float_8c.html#ae18b076268aef9c54212669a3f3e9754">pprz_algebra_float.c</a>
 </li>
 <li>float_mat_mul()
 : <a class="el" href="group__math__algebra__float.html#gaa2086b4cd9a5203452c165ee3c55eaee">pprz_algebra_float.h</a>
@@ -927,11 +927,13 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 , <a class="el" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_comp_inv()
-: <a class="el" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a">pprz_algebra_float.c</a>
-, <a class="el" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_COMP_INV
 : <a class="el" href="group__math__algebra__float.html#ga2002d50ff30d8c76d3525ceb83f59fc6">pprz_algebra_float.h</a>
+</li>
+<li>float_quat_comp_inv()
+: <a class="el" href="group__math__algebra__float.html#ga30fe06f92cef3aa377a52b95d641ed5a">pprz_algebra_float.c</a>
 </li>
 <li>FLOAT_QUAT_COMP_INV_NORM_SHORTEST
 : <a class="el" href="group__math__algebra__float.html#gaeaedda13a80ba0bda4fc891b10645b7e">pprz_algebra_float.h</a>
@@ -947,12 +949,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_QUAT_DERIVATIVE
+: <a class="el" href="group__math__algebra__float.html#ga88be8cb8a694207b87aac851cb6f0323">pprz_algebra_float.h</a>
+</li>
 <li>float_quat_derivative()
 : <a class="el" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_QUAT_DERIVATIVE
-: <a class="el" href="group__math__algebra__float.html#ga88be8cb8a694207b87aac851cb6f0323">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_DERIVATIVE_LAGRANGE
 : <a class="el" href="group__math__algebra__float.html#ga821317963ac9ab74e59fd554ddaacf3e">pprz_algebra_float.h</a>
@@ -994,38 +996,36 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>float_quat_inv_comp()
 : <a class="el" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349">pprz_algebra_float.h</a>
 </li>
-<li>float_quat_inv_comp_norm_shortest()
-: <a class="el" href="group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7">pprz_algebra_float.c</a>
-</li>
 <li>FLOAT_QUAT_INV_COMP_NORM_SHORTEST
 : <a class="el" href="group__math__algebra__float.html#gaecc209464c099da419e54dceb6bedbbc">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_inv_comp_norm_shortest()
 : <a class="el" href="group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7">pprz_algebra_float.h</a>
-</li>
-<li>float_quat_invert()
-: <a class="el" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7">pprz_algebra_float.c</a>
 </li>
 <li>FLOAT_QUAT_INVERT
 : <a class="el" href="group__math__algebra__float.html#ga18846a42efecdeae5dab64fbd8645eb9">pprz_algebra_float.h</a>
 </li>
+<li>float_quat_invert()
+: <a class="el" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_QUAT_MULT
 : <a class="el" href="group__math__algebra__float.html#ga793a9d1a80fb5ddcf2cc51510a1e7954">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_QUAT_NORM
-: <a class="el" href="group__math__algebra__float.html#gac1a892148a1ebb32fafde838319f6346">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_norm()
 : <a class="el" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_QUAT_NORM
+: <a class="el" href="group__math__algebra__float.html#gac1a892148a1ebb32fafde838319f6346">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_QUAT_NORM2
 : <a class="el" href="group__math__algebra__float.html#gac7c8b1e7bed927ab6257ff84d195ce33">pprz_algebra_float.h</a>
 </li>
-<li>FLOAT_QUAT_NORMALIZE
-: <a class="el" href="group__math__algebra__float.html#ga9cd81f9e9b5e04260cb4cc54fec267ce">pprz_algebra_float.h</a>
-</li>
 <li>float_quat_normalize()
 : <a class="el" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_NORMALIZE
+: <a class="el" href="group__math__algebra__float.html#ga9cd81f9e9b5e04260cb4cc54fec267ce">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_of_axis_angle()
 : <a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">pprz_algebra_float.h</a>
@@ -1058,12 +1058,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_QUAT_OF_RMAT
+: <a class="el" href="group__math__algebra__float.html#ga0ea8bd3c4096f5a5544672e3f043abf6">pprz_algebra_float.h</a>
+</li>
 <li>float_quat_of_rmat()
 : <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_QUAT_OF_RMAT
-: <a class="el" href="group__math__algebra__float.html#ga0ea8bd3c4096f5a5544672e3f043abf6">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_tilt_twist()
 : <a class="el" href="group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7">pprz_algebra_float.c</a>
@@ -1106,29 +1106,33 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>FLOAT_RATES_NORM
 : <a class="el" href="group__math__algebra__float.html#ga35a457f5e4c2e6e4f3fc2f0b82c3409f">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_RATES_OF_EULER_DOT
+: <a class="el" href="group__math__algebra__float.html#ga246dd673d453b2571ec3e3325850e71e">pprz_algebra_float.h</a>
+</li>
 <li>float_rates_of_euler_dot()
 : <a class="el" href="group__math__algebra__float.html#ga83f3d83e8b8917ca4e81e8aae59796e2">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga83f3d83e8b8917ca4e81e8aae59796e2">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_RATES_OF_EULER_DOT
-: <a class="el" href="group__math__algebra__float.html#ga246dd673d453b2571ec3e3325850e71e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_ZERO
 : <a class="el" href="group__math__algebra__float.html#gada94cef1274ff8daf6c8e91fae707b66">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_comp()
-: <a class="el" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda">pprz_algebra_float.c</a>
 </li>
 <li>FLOAT_RMAT_COMP
 : <a class="el" href="group__math__algebra__float.html#ga52cfb535525f92ea9535275cc3000edf">pprz_algebra_float.h</a>
+</li>
+<li>float_rmat_comp()
+: <a class="el" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda">pprz_algebra_float.h</a>
+</li>
+<li>float_rmat_comp_inv()
+: <a class="el" href="group__math__algebra__float.html#ga333309a85225bdd3fe7b6960550acbc7">pprz_algebra_float.c</a>
 </li>
 <li>FLOAT_RMAT_COMP_INV
 : <a class="el" href="group__math__algebra__float.html#gaf3b5f72a71e66d9cf789ee68f493039e">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_comp_inv()
 : <a class="el" href="group__math__algebra__float.html#ga333309a85225bdd3fe7b6960550acbc7">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga333309a85225bdd3fe7b6960550acbc7">pprz_algebra_float.c</a>
 </li>
 <li>float_rmat_identity()
 : <a class="el" href="group__math__algebra__float.html#ga408631821b91c964156cbcc610b90bed">pprz_algebra_float.h</a>
@@ -1142,12 +1146,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>float_rmat_integrate_fi()
 : <a class="el" href="group__math__algebra__float.html#ga836d45e7554cef1d99bcac5fb8822951">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_RMAT_INV
+: <a class="el" href="group__math__algebra__float.html#ga6c560f142efcae02a87327372e550707">pprz_algebra_float.h</a>
+</li>
 <li>float_rmat_inv()
 : <a class="el" href="group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_RMAT_INV
-: <a class="el" href="group__math__algebra__float.html#ga6c560f142efcae02a87327372e550707">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_mult()
 : <a class="el" href="group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77">pprz_algebra_float.c</a>
@@ -1160,18 +1164,18 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.h</a>
 </li>
-<li>FLOAT_RMAT_OF_AXIS_ANGLE
-: <a class="el" href="group__math__algebra__float.html#ga9b0967c9cfd182eb125551c7d8906dbb">pprz_algebra_float.h</a>
-</li>
 <li>float_rmat_of_axis_angle()
 : <a class="el" href="group__math__algebra__float.html#gaedee1cab0928ceb6b0aa5d92d33edb6b">pprz_algebra_float.h</a>
 , <a class="el" href="group__math__algebra__float.html#gaedee1cab0928ceb6b0aa5d92d33edb6b">pprz_algebra_float.c</a>
 </li>
-<li>float_rmat_of_eulers
-: <a class="el" href="group__math__algebra__float.html#ga44e060d34ee847c6180ce2fc6e6a0229">pprz_algebra_float.h</a>
+<li>FLOAT_RMAT_OF_AXIS_ANGLE
+: <a class="el" href="group__math__algebra__float.html#ga9b0967c9cfd182eb125551c7d8906dbb">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_EULERS
 : <a class="el" href="group__math__algebra__float.html#ga0107b3f3597abb290d29fb836e33260f">pprz_algebra_float.h</a>
+</li>
+<li>float_rmat_of_eulers
+: <a class="el" href="group__math__algebra__float.html#ga44e060d34ee847c6180ce2fc6e6a0229">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_EULERS_312
 : <a class="el" href="group__math__algebra__float.html#ga0d231b31a776d56e612d48a34359b646">pprz_algebra_float.h</a>
@@ -1187,12 +1191,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_RMAT_OF_QUAT
+: <a class="el" href="group__math__algebra__float.html#ga2c4c4123145328dee01faa7b5488355c">pprz_algebra_float.h</a>
+</li>
 <li>float_rmat_of_quat()
 : <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.h</a>
 , <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.c</a>
-</li>
-<li>FLOAT_RMAT_OF_QUAT
-: <a class="el" href="group__math__algebra__float.html#ga2c4c4123145328dee01faa7b5488355c">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_RATEMULT
 : <a class="el" href="group__math__algebra__float.html#gac03548c07ba623863921c48c663d3b5f">pprz_algebra_float.h</a>
@@ -1223,12 +1227,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6">pprz_algebra_float.h</a>
 , <a class="el" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6">pprz_algebra_float.c</a>
 </li>
+<li>FLOAT_RMAT_VMULT
+: <a class="el" href="group__math__algebra__float.html#gad49c4557747be651fe828aa747c25d58">pprz_algebra_float.h</a>
+</li>
 <li>float_rmat_vmult()
 : <a class="el" href="group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_RMAT_VMULT
-: <a class="el" href="group__math__algebra__float.html#gad49c4557747be651fe828aa747c25d58">pprz_algebra_float.h</a>
 </li>
 <li>float_vect2_bound_in_2d()
 : <a class="el" href="group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d">pprz_algebra_float.c</a>
@@ -1275,11 +1279,11 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>FLOAT_VECT3_INTEGRATE_FI
 : <a class="el" href="group__math__algebra__float.html#ga6f3c0c35ebda0016f6647ea4d5554eaf">pprz_algebra_float.h</a>
 </li>
-<li>float_vect3_norm()
-: <a class="el" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666">pprz_algebra_float.h</a>
-</li>
 <li>FLOAT_VECT3_NORM
 : <a class="el" href="group__math__algebra__float.html#ga94d348775d7a0beafa3f15967ea4a9e2">pprz_algebra_float.h</a>
+</li>
+<li>float_vect3_norm()
+: <a class="el" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666">pprz_algebra_float.h</a>
 </li>
 <li>float_vect3_norm2()
 : <a class="el" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2">pprz_algebra_float.h</a>
@@ -1287,11 +1291,11 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>float_vect3_norm_two_points()
 : <a class="el" href="wedgebug_8c.html#aac1bde6c5c9971c74f63b94c884de408">wedgebug.c</a>
 </li>
-<li>FLOAT_VECT3_NORMALIZE
-: <a class="el" href="group__math__algebra__float.html#gaac913329f9a0d5e1db77c6fc2480fff7">pprz_algebra_float.h</a>
-</li>
 <li>float_vect3_normalize()
 : <a class="el" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_VECT3_NORMALIZE
+: <a class="el" href="group__math__algebra__float.html#gaac913329f9a0d5e1db77c6fc2480fff7">pprz_algebra_float.h</a>
 </li>
 <li>float_vect3_scale_in_2d()
 : <a class="el" href="group__math__algebra__float.html#ga229426ae611f821094bb8c9daf3f0a1b">pprz_algebra_float.c</a>
@@ -1509,12 +1513,14 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="ctrl_2follow__me_8c.html#a7a5570a7da89bfc9a9ff14f0beff7c1a">follow_me.c</a>
 , <a class="el" href="ctrl_2follow__me_8h.html#a7a5570a7da89bfc9a9ff14f0beff7c1a">follow_me.h</a>
 </li>
+<li>follow_me_height
+: <a class="el" href="ctrl_2follow__me_8c.html#a60804f459f50c5d80da04f81f9798523">follow_me.c</a>
+</li>
 <li>FOLLOW_ME_HEIGHT
 : <a class="el" href="ctrl_2follow__me_8c.html#a771483e02dac8146b6c3a62187254684">follow_me.c</a>
 </li>
 <li>follow_me_height
 : <a class="el" href="ctrl_2follow__me_8h.html#a60804f459f50c5d80da04f81f9798523">follow_me.h</a>
-, <a class="el" href="ctrl_2follow__me_8c.html#a60804f459f50c5d80da04f81f9798523">follow_me.c</a>
 </li>
 <li>follow_me_init()
 : <a class="el" href="ctrl_2follow__me_8c.html#aaebeffb2f699c27b054373b128908c32">follow_me.c</a>
@@ -1528,12 +1534,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="ctrl_2follow__me_8c.html#a30faadd93c0e41f2f90c21453e15ce4a">follow_me.c</a>
 , <a class="el" href="ctrl_2follow__me_8h.html#a30faadd93c0e41f2f90c21453e15ce4a">follow_me.h</a>
 </li>
+<li>FOLLOW_ME_MIN_SPEED
+: <a class="el" href="ctrl_2follow__me_8c.html#ac0b2537dfab7d9efbdfb567b9c49bef4">follow_me.c</a>
+</li>
 <li>follow_me_min_speed
 : <a class="el" href="ctrl_2follow__me_8c.html#a184b840a1d78fbebf9d18c722b31d81f">follow_me.c</a>
 , <a class="el" href="ctrl_2follow__me_8h.html#a184b840a1d78fbebf9d18c722b31d81f">follow_me.h</a>
-</li>
-<li>FOLLOW_ME_MIN_SPEED
-: <a class="el" href="ctrl_2follow__me_8c.html#ac0b2537dfab7d9efbdfb567b9c49bef4">follow_me.c</a>
 </li>
 <li>follow_me_parse_target_pos()
 : <a class="el" href="ctrl_2follow__me_8c.html#a3017592cd808196919adfe1f54065626">follow_me.c</a>
@@ -1559,12 +1565,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>foo
 : <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">main_demo5.c</a>
 </li>
+<li>FORCE_CLIMB_GAIN
+: <a class="el" href="potential_8c.html#ad0b5aeaf048b2d7b5836418d13eb93e5">potential.c</a>
+</li>
 <li>force_climb_gain
 : <a class="el" href="potential_8c.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.c</a>
 , <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
-</li>
-<li>FORCE_CLIMB_GAIN
-: <a class="el" href="potential_8c.html#ad0b5aeaf048b2d7b5836418d13eb93e5">potential.c</a>
 </li>
 <li>force_forward
 : <a class="el" href="guidance__indi__hybrid_8h.html#a0975dd5198f47a9c645f2716ae848235">guidance_indi_hybrid.h</a>
@@ -1600,11 +1606,11 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>FORM_ALTITUDE_PGAIN
 : <a class="el" href="formation_8c.html#a7ea90ec5e5ae7d026ca82b7e981cae6d">formation.c</a>
 </li>
-<li>form_carrot
-: <a class="el" href="formation_8c.html#ae5e808d1ef611d64f787c99dc226f89a">formation.c</a>
-</li>
 <li>FORM_CARROT
 : <a class="el" href="formation_8c.html#ac3decb443267d52829eb58d4fd469053">formation.c</a>
+</li>
+<li>form_carrot
+: <a class="el" href="formation_8c.html#ae5e808d1ef611d64f787c99dc226f89a">formation.c</a>
 </li>
 <li>FORM_COURSE_PGAIN
 : <a class="el" href="formation_8c.html#a404896ee12f3327c5a3ff948320effad">formation.c</a>
@@ -1612,12 +1618,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>form_e
 : <a class="el" href="formation_8c.html#a05bf835a5f8bf8a92febf3e315c6e3f6">formation.c</a>
 </li>
+<li>FORM_MODE
+: <a class="el" href="formation_8c.html#a0a7c68ae131645cdbecdf1741a2b2e04">formation.c</a>
+</li>
 <li>form_mode
 : <a class="el" href="formation_8c.html#a8e178fe2764678e0d6ec092050a8f561">formation.c</a>
 , <a class="el" href="formation_8h.html#a8e178fe2764678e0d6ec092050a8f561">formation.h</a>
-</li>
-<li>FORM_MODE
-: <a class="el" href="formation_8c.html#a0a7c68ae131645cdbecdf1741a2b2e04">formation.c</a>
 </li>
 <li>FORM_MODE_COURSE
 : <a class="el" href="formation_8h.html#ab669f7ba64f662a9811c2a7b6c3521e5">formation.h</a>
@@ -1632,11 +1638,13 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="formation_8c.html#a9aaed6b0ee648cb21fa0cdd8e9633d9e">formation.c</a>
 </li>
 <li>form_prox
-: <a class="el" href="formation_8h.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.h</a>
-, <a class="el" href="formation_8c.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.c</a>
+: <a class="el" href="formation_8c.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.c</a>
 </li>
 <li>FORM_PROX
 : <a class="el" href="formation_8c.html#ad0496c9f7e8ef158773e24c6c763a20e">formation.c</a>
+</li>
+<li>form_prox
+: <a class="el" href="formation_8h.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.h</a>
 </li>
 <li>form_speed
 : <a class="el" href="formation_8c.html#a6402fc21e97e1b740b6973dc6a3e7000">formation.c</a>
@@ -2122,12 +2130,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <li>fval
 : <a class="el" href="temp__tcouple__adc_8c.html#a03463534edf054f5e6bbdcdfd33685b2">temp_tcouple_adc.c</a>
 </li>
-<li>FWD_ALT_THRUST_GAIN
-: <a class="el" href="guidance__hybrid_8c.html#a6c77b359c0b45b1caf915c1017391edd">guidance_hybrid.c</a>
-</li>
 <li>fwd_alt_thrust_gain
 : <a class="el" href="guidance__hybrid_8h.html#a1120642cae2b67bc549bd6c8138c2fc5">guidance_hybrid.h</a>
 , <a class="el" href="guidance__hybrid_8c.html#a1120642cae2b67bc549bd6c8138c2fc5">guidance_hybrid.c</a>
+</li>
+<li>FWD_ALT_THRUST_GAIN
+: <a class="el" href="guidance__hybrid_8c.html#a6c77b359c0b45b1caf915c1017391edd">guidance_hybrid.c</a>
 </li>
 <li>FWD_NOMINAL_PITCH
 : <a class="el" href="guidance__hybrid_8c.html#a0fde9d1eb2f567f32d3f2c859cdd4968">guidance_hybrid.c</a>
@@ -2136,12 +2144,12 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 : <a class="el" href="guidance__hybrid_8c.html#a9dbc0183ae9a5ee67395fd3491c18808">guidance_hybrid.c</a>
 , <a class="el" href="guidance__hybrid_8h.html#a9dbc0183ae9a5ee67395fd3491c18808">guidance_hybrid.h</a>
 </li>
-<li>FWD_PID_DIV
-: <a class="el" href="guidance__hybrid_8c.html#a185725c037f6d107891069768f39546f">guidance_hybrid.c</a>
-</li>
 <li>fwd_pid_div
 : <a class="el" href="guidance__hybrid_8c.html#a424c243ed838faa3734f2e3817c289f9">guidance_hybrid.c</a>
 , <a class="el" href="guidance__hybrid_8h.html#a424c243ed838faa3734f2e3817c289f9">guidance_hybrid.h</a>
+</li>
+<li>FWD_PID_DIV
+: <a class="el" href="guidance__hybrid_8c.html#a185725c037f6d107891069768f39546f">guidance_hybrid.c</a>
 </li>
 <li>fwd_pitch_gain
 : <a class="el" href="guidance__hybrid_8c.html#a08d5adc091b6ecdb9d5158a4f0fb4ac3">guidance_hybrid.c</a>
@@ -2163,7 +2171,7 @@ $(document).ready(function(){initNavTree('globals_f.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 9 2023 07:18:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 12 2023 11:42:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
