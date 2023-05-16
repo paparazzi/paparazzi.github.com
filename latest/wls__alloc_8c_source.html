@@ -267,7 +267,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">// check limits</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    n_infeasible = 0;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_u; i++) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keywordflow">if</span> (u_opt[i] &gt;= (umax[i] + 1.0) || u_opt[i] &lt;= (umin[i] - 1.0)) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keywordflow">if</span> (u_opt[i] &gt;= (umax[i] + 0.01) || u_opt[i] &lt;= (umin[i] - 0.01)) {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        infeasible_index[n_infeasible++] = i;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">if</span> (break_flag) {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#if WLS_VERBOSE</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values</a>(1, n_u, n_v, u, <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, v, umin, umax);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values</a>(n_u, n_v, u, <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, v, umin, umax);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">// if solution is found, return number of iterations</span></div>
@@ -352,7 +352,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="comment">// solution failed, return negative one to indicate failure</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordflow">return</span> iter;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#if WLS_VERBOSE</span></div>
@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8c.html">wls_alloc.c</a></li>
-    <li class="footer">Generated on Fri May 12 2023 11:42:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 16 2023 12:50:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

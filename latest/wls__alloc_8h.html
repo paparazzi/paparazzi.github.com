@@ -326,7 +326,28 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of iterations, -1 upon failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of iterations, -1 upon failure</dd></dl>
+<p>Takes the control objective and max and min inputs from pprz and calculates the inputs that will satisfy most of the control objective, subject to the weighting matrices Wv and Wu</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>The control output vector </td></tr>
+    <tr><td class="paramname">v</td><td>The control objective </td></tr>
+    <tr><td class="paramname">umin</td><td>The minimum u vector </td></tr>
+    <tr><td class="paramname">umax</td><td>The maximum u vector </td></tr>
+    <tr><td class="paramname">B</td><td>The control effectiveness matrix </td></tr>
+    <tr><td class="paramname">n_u</td><td>Length of u </td></tr>
+    <tr><td class="paramname">n_v</td><td>Lenght of v </td></tr>
+    <tr><td class="paramname">u_guess</td><td>Initial value for u </td></tr>
+    <tr><td class="paramname">W_init</td><td>Initial working set, if known </td></tr>
+    <tr><td class="paramname">Wv</td><td>Weighting on different control objectives </td></tr>
+    <tr><td class="paramname">Wu</td><td>Weighting on different controls </td></tr>
+    <tr><td class="paramname">up</td><td>Preferred control vector </td></tr>
+    <tr><td class="paramname">gamma_sq</td><td>Preference of satisfying control objective over desired control vector (sqare root of gamma) </td></tr>
+    <tr><td class="paramname">imax</td><td>Max number of iterations</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of iterations </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="wls__alloc_8c_source.html#l00112">112</a> of file <a class="el" href="wls__alloc_8c_source.html">wls_alloc.c</a>.</p>
 
@@ -386,7 +407,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8h.html">wls_alloc.h</a></li>
-    <li class="footer">Generated on Fri May 12 2023 11:42:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 16 2023 12:50:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
