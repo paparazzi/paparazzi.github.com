@@ -186,9 +186,9 @@ $(document).ready(function(){initNavTree('esc__dshot_8c_source.html',''); initRe
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> SerialConfig  tlmcfg =  {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    .speed = <a class="code" href="esc__dshot_8c.html#ac02af40326a26f8a2cf2be12a60afd89">DSHOT_TELEMETRY_BAUD</a>,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    .cr1 = 0,                                      <span class="comment">// pas de parité</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    .cr1 = 0,                          <span class="comment">// pas de parité</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    .cr2 = USART_CR2_STOP1_BITS,       <span class="comment">// 1 bit de stop</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    .cr3 = 0                                       <span class="comment">// pas de controle de flux hardware (CTS, RTS)</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    .cr3 = 0                           <span class="comment">// pas de controle de flux hardware (CTS, RTS)</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  };</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  driver-&gt;<a class="code" href="structDSHOTDriver.html#a8af9e29758141560572c026b7c7d2a40">config</a> = <a class="code" href="stm32_2usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae">config</a>;</div>
@@ -352,7 +352,7 @@ $(document).ready(function(){initNavTree('esc__dshot_8c_source.html',''); initRe
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
 <div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="esc__dshot_8c.html#af384fec5c9a50938393fdb6c285aac3b">  342</a></span>&#160;<span class="keyword">const</span> <a class="code" href="esc__dshot_8h.html#structDshotTelemetry">DshotTelemetry</a> *<a class="code" href="esc__dshot_8c.html#af384fec5c9a50938393fdb6c285aac3b">dshotGetTelemetry</a>(<span class="keyword">const</span> <a class="code" href="structDSHOTDriver.html">DSHOTDriver</a> *driver, <span class="keyword">const</span> <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> index)</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordflow">return</span> &amp;driver-&gt;<a class="code" href="structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a">dshotMotors</a>.<a class="code" href="esc__dshot_8h.html#a6a8a20cc4424983f8d476924e3a5d424">dt</a>[index];</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordflow">return</span> &amp;driver-&gt;<a class="code" href="structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a">dshotMotors</a>.<a class="code" href="esc__dshot_8h.html#a6a8a20cc4424983f8d476924e3a5d424">dt</a>[index - <a class="code" href="esc__dshot_8h.html#a675c4be910953a77c3462714e3a7a6b4">DSHOT_CHANNEL_FIRST_INDEX</a>];</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
@@ -585,7 +585,7 @@ $(document).ready(function(){initNavTree('esc__dshot_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_417c512ab95a5e7f032e969652234298.html">actuators</a></li><li class="navelem"><a class="el" href="esc__dshot_8c.html">esc_dshot.c</a></li>
-    <li class="footer">Generated on Tue May 16 2023 12:50:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 17 2023 08:18:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

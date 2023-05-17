@@ -1,5 +1,12 @@
 var NAVTREEINDEX28 =
 {
+"cc2500__settings_8h.html#a10e677159c55765cec6a006a8d551b7b":[12,0,1,0,6,55,0,19,1,3],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288c":[12,0,1,0,6,55,0,19,14],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca00c9b737ce0594fb8d876fb44cee9f00":[12,0,1,0,6,55,0,19,14,21],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca060a6c5fa416d18ec2d09b8a16d48b19":[12,0,1,0,6,55,0,19,14,1],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca1187fe3b84abe0e1ed8e81beac4f8971":[12,0,1,0,6,55,0,19,14,0],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca21ab4738266ffc5847e73f304418faa6":[12,0,1,0,6,55,0,19,14,14],
+"cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca24f9411e657b3a72115f43dd04fab7eb":[12,0,1,0,6,55,0,19,14,16],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca296be2281d72e8fcaa5442a3d658469e":[12,0,1,0,6,55,0,19,14,7],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca348363c0cc3821cbd268209d283141e9":[12,0,1,0,6,55,0,19,14,8],
 "cc2500__settings_8h.html#a241bbfb8b20d2f411c4c10bb9703288ca4a272eadfe403b831ec0dd71189c34b5":[12,0,1,0,6,55,0,19,14,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX28 =
 "cf__deck__multi__ranger_8c.html#a7c8289169140b4a13b172f600954697b":[12,0,1,0,6,56,0,0,2],
 "cf__deck__multi__ranger_8c.html#a86cfa4122eb5f6b5a37aab2cc1307b96":[12,0,1,0,6,56,0,10],
 "cf__deck__multi__ranger_8c.html#a87ee4d74c4c67ff0f9c4db1e93cbe373":[12,0,1,0,6,56,0,19],
-"cf__deck__multi__ranger_8c.html#a8a5ae2a84e308ef61afc732ce48e8c3c":[12,0,1,0,6,56,0,1,1],
-"cf__deck__multi__ranger_8c.html#a9e2d42d9e59cd4622247712fc2f259b7":[12,0,1,0,6,56,0,16],
-"cf__deck__multi__ranger_8c.html#aa96e9c03dafab21e59a853bd48e5df2a":[12,0,1,0,6,56,0,2],
-"cf__deck__multi__ranger_8c.html#ab03d36d72ccf77c2a8750055fca756b5":[12,0,1,0,6,56,0,12],
-"cf__deck__multi__ranger_8c.html#ab23c504c8c7175c03a791e85d8c721a6":[12,0,1,0,6,56,0,18],
-"cf__deck__multi__ranger_8c.html#ac9fbee3a01af421fc23cc2281d015dc1":[12,0,1,0,6,56,0,7],
-"cf__deck__multi__ranger_8c.html#ace5bfaa01148bb78be35f7f28a3fd8d0":[12,0,1,0,6,56,0,6],
-"cf__deck__multi__ranger_8c.html#acf1f4a8ca3411ad944953cf723fbf860":[12,0,1,0,6,56,0,21]
+"cf__deck__multi__ranger_8c.html#a8a5ae2a84e308ef61afc732ce48e8c3c":[12,0,1,0,6,56,0,1,1]
 };

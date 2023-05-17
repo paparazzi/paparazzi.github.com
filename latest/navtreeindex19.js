@@ -1,5 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__statistics__bayer_8h.html#af669fc297b7f5b3ea28b44205a345a34":[12,0,1,0,1,2,0,0,15,14,2],
+"avi__isp__statistics__bayer_8h.html#afc83b08c59fd039ed8d793a4ef432cdb":[12,0,1,0,1,2,0,0,15,5,0],
+"avi__isp__statistics__bayer_8h.html#afe1c7b54e46c99cc9cbbfa59f99c2613":[12,0,1,0,1,2,0,0,15,34],
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__cfa_8____unnamed228____":[12,0,1,0,1,2,0,0,15,23],
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__center_8____unnamed214____":[12,0,1,0,1,2,0,0,15,16],
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__x__squared_8____unnamed216____":[12,0,1,0,1,2,0,0,15,17],
+"avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__center_8____unnamed218____":[12,0,1,0,1,2,0,0,15,18],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__pos__y__squared_8____unnamed220____":[12,0,1,0,1,2,0,0,15,19],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__circle__radius__squared_8____unnamed222____":[12,0,1,0,1,2,0,0,15,20],
 "avi__isp__statistics__bayer_8h.html#structavi__isp__statistics__bayer__increments__log2_8____unnamed224____":[12,0,1,0,1,2,0,0,15,21],
@@ -242,12 +249,5 @@ var NAVTREEINDEX19 =
 "baro__MS5534A_8c.html#af9536546116a9251e04cdd4f2c494bba":[12,0,1,0,6,60,40,11],
 "baro__MS5534A_8c_source.html":[12,0,1,0,6,60,40],
 "baro__amsys_8c.html":[12,0,1,0,6,60,24],
-"baro__amsys_8c.html#a009ba18be34113ede7a70edec121ae9e":[12,0,1,0,6,60,24,32],
-"baro__amsys_8c.html#a00e20ebd6b78b77ed709bffa5219c051":[12,0,1,0,6,60,24,34],
-"baro__amsys_8c.html#a05d3d5e20e470f83587a6cc27542f581":[12,0,1,0,6,60,24,23],
-"baro__amsys_8c.html#a07585aae8d32bfecf7f20e969c0cb86e":[12,0,1,0,6,60,24,18],
-"baro__amsys_8c.html#a195eb95b7cb2408b42ebfa4ea0a4f2ba":[12,0,1,0,6,60,24,13],
-"baro__amsys_8c.html#a1ec0f1811c56699e9d71849d9db6c552":[12,0,1,0,6,60,24,11],
-"baro__amsys_8c.html#a2e4daccbd261d22be279dda4e282ef7e":[12,0,1,0,6,60,24,4],
-"baro__amsys_8c.html#a3c8fb06efe7126c0dc3fb51ac6da02e6":[12,0,1,0,6,60,24,10]
+"baro__amsys_8c.html#a009ba18be34113ede7a70edec121ae9e":[12,0,1,0,6,60,24,32]
 };

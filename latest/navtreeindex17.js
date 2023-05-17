@@ -1,5 +1,12 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__bypass":[12,0,1,0,1,2,0,0,6,3],
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__cfa":[12,0,1,0,1,2,0,0,6,2],
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__list__mem":[12,0,1,0,1,2,0,0,6,0],
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__rgrim__conf":[12,0,1,0,1,2,0,0,6,5],
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__rgrim__gain":[12,0,1,0,1,2,0,0,6,6],
+"avi__isp__dead__pixel__correction_8h.html#unionavi__isp__dead__pixel__correction__threshold":[12,0,1,0,1,2,0,0,6,4],
+"avi__isp__dead__pixel__correction_8h_source.html":[12,0,1,0,1,2,0,0,6],
 "avi__isp__denoising_8h.html":[12,0,1,0,1,2,0,0,7],
 "avi__isp__denoising_8h.html#a02b2ecc26a48b86771fb60e54728157d":[12,0,1,0,1,2,0,0,7,20,3],
 "avi__isp__denoising_8h.html#a04e2b2400fe1d7cb782d90bcaccd58e0":[12,0,1,0,1,2,0,0,7,21,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__green__imbalance_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,11,16,0],
 "avi__isp__green__imbalance_8h.html#a8471b95191ea7bb72123cbd94c673303":[12,0,1,0,1,2,0,0,11,9,8],
 "avi__isp__green__imbalance_8h.html#a859ac666dc773a9e7507b28994943d2e":[12,0,1,0,1,2,0,0,11,9,5],
-"avi__isp__green__imbalance_8h.html#a987bcab01b929eb2c07877b224215c92":[12,0,1,0,1,2,0,0,11,22,0],
-"avi__isp__green__imbalance_8h.html#a9f3254972c9a04447aa42bae76eaf61e":[12,0,1,0,1,2,0,0,11,26],
-"avi__isp__green__imbalance_8h.html#aa65299b8052c542508c1f3d36743476b":[12,0,1,0,1,2,0,0,11,23,0],
-"avi__isp__green__imbalance_8h.html#aace99a2d6c8b05724a49d1a7a1c86458":[12,0,1,0,1,2,0,0,11,27],
-"avi__isp__green__imbalance_8h.html#aadb9e66b2265c1a1c750021d82ad8989":[12,0,1,0,1,2,0,0,11,29],
-"avi__isp__green__imbalance_8h.html#ab9df2df985854549d7474a3442133c97":[12,0,1,0,1,2,0,0,11,18,0],
-"avi__isp__green__imbalance_8h.html#ac1eacc535d9c87e2e6edc6b3ce033e45":[12,0,1,0,1,2,0,0,11,13,0],
-"avi__isp__green__imbalance_8h.html#ad417a279f7d3cab11ed9bf734d50a4f8":[12,0,1,0,1,2,0,0,11,7,0]
+"avi__isp__green__imbalance_8h.html#a987bcab01b929eb2c07877b224215c92":[12,0,1,0,1,2,0,0,11,22,0]
 };

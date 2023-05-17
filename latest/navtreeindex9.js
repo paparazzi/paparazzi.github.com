@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"alt__srf08_8h.html#a9f6fc479efe15ea4fa76715078149385":[12,0,1,0,6,60,18,30],
+"alt__srf08_8h.html#a9f7107faa44124b41f3434c4e16f439d":[12,0,1,0,6,60,18,58],
+"alt__srf08_8h.html#aa3e1c86b451c23bbba7e4a6baec8170c":[12,0,1,0,6,60,18,19],
+"alt__srf08_8h.html#aa7251bdfa2f857e0677c7c6166d5dd1f":[12,0,1,0,6,60,18,22],
+"alt__srf08_8h.html#abb50c062baa1e34d2550a90aefbef292":[12,0,1,0,6,60,18,9],
+"alt__srf08_8h.html#abb528043366febb655d81142c96eb6f3":[12,0,1,0,6,60,18,36],
+"alt__srf08_8h.html#abf2211f995ae5528090b9a12b64b4d03":[12,0,1,0,6,60,18,8],
 "alt__srf08_8h.html#ac1715b7d680fd73880e22caa21e24454":[12,0,1,0,6,60,18,44],
 "alt__srf08_8h.html#ac7b22506f42221d771d2ed90771132a3":[12,0,1,0,6,60,18,15],
 "alt__srf08_8h.html#ac85f2a7aec4041faefda37dd6ef6a026":[12,0,1,0,6,60,18,12],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "apogee_2chibios_2v1_80_2board_8h.html#a2cc99a35f0572f8c1ce15d293501c798":[12,0,1,0,1,0,0,0,0,68],
 "apogee_2chibios_2v1_80_2board_8h.html#a2d206087231c8de44ffb548503b9ac4a":[12,0,1,0,1,0,0,0,0,32],
 "apogee_2chibios_2v1_80_2board_8h.html#a2d65a99880f371e8c24fb45f061b49ea":[12,0,1,0,1,0,0,0,0,198],
-"apogee_2chibios_2v1_80_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95":[12,0,1,0,1,0,0,0,0,556],
-"apogee_2chibios_2v1_80_2board_8h.html#a2e3fa4af7871deb1df13c30239b7b160":[12,0,1,0,1,0,0,0,0,352],
-"apogee_2chibios_2v1_80_2board_8h.html#a2e620d487db2d7240e759f66c3a68efa":[12,0,1,0,1,0,0,0,0,588],
-"apogee_2chibios_2v1_80_2board_8h.html#a2ef47c72ed141be7037a5e61fccd1d8f":[12,0,1,0,1,0,0,0,0,147],
-"apogee_2chibios_2v1_80_2board_8h.html#a2f973750f9134ee2fa55e004db3c6edc":[12,0,1,0,1,0,0,0,0,451],
-"apogee_2chibios_2v1_80_2board_8h.html#a30059d90eb19b3af333f29f0a44f39f8":[12,0,1,0,1,0,0,0,0,82],
-"apogee_2chibios_2v1_80_2board_8h.html#a31201e07a58057bcee3af4121b84a95a":[12,0,1,0,1,0,0,0,0,96],
-"apogee_2chibios_2v1_80_2board_8h.html#a31c60a45057bad2923129e5510790c9b":[12,0,1,0,1,0,0,0,0,345]
+"apogee_2chibios_2v1_80_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95":[12,0,1,0,1,0,0,0,0,556]
 };

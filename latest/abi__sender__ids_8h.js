@@ -112,6 +112,7 @@ var abi__sender__ids_8h =
     [ "RADIO_CONTROL_SUPERBITRF_RC_ID", "abi__sender__ids_8h.html#a85acebd1b5837d538446e13d4eb1b28e", null ],
     [ "RANGE_FORCEFIELD_ID", "abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748", null ],
     [ "RELATIVE_LOCALIZATION_ID", "abi__sender__ids_8h.html#ad83f845fc9d1a98388403ea342aa331a", null ],
+    [ "RPM_DSHOT_ID", "abi__sender__ids_8h.html#afcc382a0981932c560d15e27d7c6c0f3", null ],
     [ "RPM_SENSOR_ID", "abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57", null ],
     [ "RSSI_BLUEGIGA_ID", "abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db", null ],
     [ "SDP3X_SENDER_ID", "abi__sender__ids_8h.html#aaa3985b6f3b689ca90203cb1f3a7e627", null ],
