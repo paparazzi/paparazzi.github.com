@@ -1,5 +1,9 @@
 var NAVTREEINDEX129 =
 {
+"module__ins.html":[1,209],
+"module__ins.html#configuration__ins":[1,209,1],
+"module__ins.html#functions__ins":[1,209,2],
+"module__ins.html#module_load_example__ins":[1,209,0],
 "module__ins.html#module_xml__ins":[1,209,2,0],
 "module__ins_alt_float.html":[1,210],
 "module__ins_alt_float.html#configuration__ins_alt_float":[1,210,1],
@@ -71,9 +75,12 @@ var NAVTREEINDEX129 =
 "module__ins_skeleton.html#module_xml__ins_skeleton":[1,223,2,0],
 "module__ins_vectornav.html":[1,224],
 "module__ins_vectornav.html#configuration__ins_vectornav":[1,224,1],
+"module__ins_vectornav.html#configure":[1,224,1,0],
+"module__ins_vectornav.html#event_functions":[1,224,2,0],
 "module__ins_vectornav.html#functions__ins_vectornav":[1,224,2],
 "module__ins_vectornav.html#module_load_example__ins_vectornav":[1,224,0],
-"module__ins_vectornav.html#module_xml__ins_vectornav":[1,224,2,0],
+"module__ins_vectornav.html#module_xml__ins_vectornav":[1,224,2,2],
+"module__ins_vectornav.html#periodic_functions":[1,224,2,1],
 "module__ins_vn100.html":[1,225],
 "module__ins_vn100.html#configuration__ins_vn100":[1,225,1],
 "module__ins_vn100.html#functions__ins_vn100":[1,225,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX129 =
 "module__mag_rm3100.html#module_load_example__mag_rm3100":[1,383,0],
 "module__mag_rm3100.html#module_xml__mag_rm3100":[1,383,2,0],
 "module__math.html":[1,446],
-"module__math.html#functions__math":[1,446,1],
-"module__math.html#module_load_example__math":[1,446,0],
-"module__math.html#module_xml__math":[1,446,1,0],
-"module__mav_course_exercise.html":[1,447],
-"module__mav_course_exercise.html#dependencies__mav_course_exercise":[1,447,1],
-"module__mav_course_exercise.html#module_load_example__mav_course_exercise":[1,447,0],
-"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,447,1,0],
-"module__mavlink.html":[1,100]
+"module__math.html#functions__math":[1,446,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX126 =
 {
+"module__board_matek_f405_wing.html":[1,37],
 "module__board_matek_f405_wing.html#module_load_example__board_matek_f405_wing":[1,37,0],
 "module__board_matek_f405_wing.html#module_xml__board_matek_f405_wing":[1,37,0,0],
 "module__board_matek_f765_car.html":[1,38],
@@ -87,10 +88,9 @@ var NAVTREEINDEX126 =
 "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,85,0],
 "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,85,0,0],
 "module__ctrl_windtunnel.html":[1,86],
-"module__ctrl_windtunnel.html#af_section":[1,86,1,0],
 "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,86,1],
 "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel":[1,86,0],
-"module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel":[1,86,1,1],
+"module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel":[1,86,1,0],
 "module__current_sensor.html":[1,425],
 "module__current_sensor.html#configuration__current_sensor":[1,425,1],
 "module__current_sensor.html#module_load_example__current_sensor":[1,425,0],

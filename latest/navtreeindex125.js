@@ -240,6 +240,7 @@ var NAVTREEINDEX125 =
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,19,0],
 "module__battery_monitor.html#module_xml__battery_monitor":[1,19,2,0],
 "module__bebop_ae_awb.html":[1,50],
+"module__bebop_ae_awb.html#af_section":[1,50,1,0],
 "module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,50,1],
 "module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,50,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,50,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "module__bebop_cam.html#configuration__bebop_cam":[1,422,1],
 "module__bebop_cam.html#functions__bebop_cam":[1,422,2],
 "module__bebop_cam.html#module_load_example__bebop_cam":[1,422,0],
-"module__bebop_cam.html#module_xml__bebop_cam":[1,422,2,0],
-"module__board_matek_f405_wing.html":[1,37]
+"module__bebop_cam.html#module_xml__bebop_cam":[1,422,2,0]
 };
