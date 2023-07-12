@@ -8,6 +8,7 @@ var dir_5e9153041680afc3c016fd52fa730b56 =
     [ "mcu_periph", "dir_1ca43f6a116d741d80fb1d0555a2b198.html", "dir_1ca43f6a116d741d80fb1d0555a2b198" ],
     [ "modules", "dir_c2abcdd6ccb39c3582929c0e3f5651c2.html", "dir_c2abcdd6ccb39c3582929c0e3f5651c2" ],
     [ "peripherals", "dir_0a48ba2c0a76794adfddddc873522f67.html", "dir_0a48ba2c0a76794adfddddc873522f67" ],
+    [ "utils", "dir_644c3112dbb29d6147750c842d63ff9c.html", "dir_644c3112dbb29d6147750c842d63ff9c" ],
     [ "autopilot.c", "autopilot_8c.html", "autopilot_8c" ],
     [ "autopilot.h", "autopilot_8h.html", "autopilot_8h" ],
     [ "c++.cpp", "c_09_09_8cpp.html", "c_09_09_8cpp" ],

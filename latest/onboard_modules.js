@@ -159,6 +159,8 @@ var onboard_modules =
     [ "max11040 module", "module__max11040.html", [
       [ "Example for airframe file", "module__max11040.html#module_load_example__max11040", null ],
       [ "Module functions", "module__max11040.html#functions__max11040", [
+        [ "Init Functions", "module__max11040.html#init_functions", null ],
+        [ "Periodic Functions", "module__max11040.html#periodic_functions", null ],
         [ "Raw max11040.xml file:", "module__max11040.html#module_xml__max11040", null ]
       ] ]
     ] ],
@@ -210,6 +212,7 @@ var onboard_modules =
     [ "ahrs_float_invariant module", "module__ahrs_float_invariant.html", [
       [ "Example for airframe file", "module__ahrs_float_invariant.html#module_load_example__ahrs_float_invariant", null ],
       [ "Module configuration options", "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant", [
+        [ "Configure Options", "module__ahrs_float_invariant.html#configure", null ],
         [ "Raw ahrs_float_invariant.xml file:", "module__ahrs_float_invariant.html#module_xml__ahrs_float_invariant", null ]
       ] ]
     ] ],
@@ -334,6 +337,7 @@ var onboard_modules =
     [ "usb_serial_stm32_example1 module", "module__usb_serial_stm32_example1.html", [
       [ "Example for airframe file", "module__usb_serial_stm32_example1.html#module_load_example__usb_serial_stm32_example1", null ],
       [ "Module functions", "module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1", [
+        [ "Event Functions", "module__usb_serial_stm32_example1.html#event_functions", null ],
         [ "Raw usb_serial_stm32_example1.xml file:", "module__usb_serial_stm32_example1.html#module_xml__usb_serial_stm32_example1", null ]
       ] ]
     ] ],
@@ -345,9 +349,7 @@ var onboard_modules =
     ] ],
     [ "bebop_ae_awb module", "module__bebop_ae_awb.html", [
       [ "Example for airframe file", "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb", null ],
-      [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", [
-        [ "Airframe file section", "module__bebop_ae_awb.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__bebop_ae_awb.html#configuration__bebop_ae_awb", null ],
       [ "Module functions", "module__bebop_ae_awb.html#functions__bebop_ae_awb", [
         [ "Raw bebop_ae_awb.xml file:", "module__bebop_ae_awb.html#module_xml__bebop_ae_awb", null ]
       ] ]
@@ -1159,20 +1161,20 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1467,12 +1469,8 @@ var onboard_modules =
     ] ],
     [ "ins_vectornav module", "module__ins_vectornav.html", [
       [ "Example for airframe file", "module__ins_vectornav.html#module_load_example__ins_vectornav", null ],
-      [ "Module configuration options", "module__ins_vectornav.html#configuration__ins_vectornav", [
-        [ "Configure Options", "module__ins_vectornav.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__ins_vectornav.html#configuration__ins_vectornav", null ],
       [ "Module functions", "module__ins_vectornav.html#functions__ins_vectornav", [
-        [ "Event Functions", "module__ins_vectornav.html#event_functions", null ],
-        [ "Periodic Functions", "module__ins_vectornav.html#periodic_functions", null ],
         [ "Raw ins_vectornav.xml file:", "module__ins_vectornav.html#module_xml__ins_vectornav", null ]
       ] ]
     ] ],
@@ -1638,7 +1636,10 @@ var onboard_modules =
       ] ]
     ] ],
     [ "adc module", "module__adc.html", [
-      [ "Example for airframe file", "module__adc.html#module_load_example__adc", [
+      [ "Example for airframe file", "module__adc.html#module_load_example__adc", null ],
+      [ "Files", "module__adc.html#files", [
+        [ "Header Files", "module__adc.html#headers", null ],
+        [ "Source Files", "module__adc.html#sources", null ],
         [ "Raw adc.xml file:", "module__adc.html#module_xml__adc", null ]
       ] ]
     ] ],
@@ -2047,6 +2048,7 @@ var onboard_modules =
     [ "nav_skid_landing module", "module__nav_skid_landing.html", [
       [ "Example for airframe file", "module__nav_skid_landing.html#module_load_example__nav_skid_landing", null ],
       [ "Module configuration options", "module__nav_skid_landing.html#configuration__nav_skid_landing", [
+        [ "Airframe file section", "module__nav_skid_landing.html#af_section", null ],
         [ "Raw nav_skid_landing.xml file:", "module__nav_skid_landing.html#module_xml__nav_skid_landing", null ]
       ] ]
     ] ],
@@ -2099,9 +2101,7 @@ var onboard_modules =
     ] ],
     [ "nav_survey_rectangle_rotorcraft module", "module__nav_survey_rectangle_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft", null ],
-      [ "Module configuration options", "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft", [
-        [ "Define Options", "module__nav_survey_rectangle_rotorcraft.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft", null ],
       [ "Module functions", "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft", [
         [ "Raw nav_survey_rectangle_rotorcraft.xml file:", "module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft", null ]
       ] ]
@@ -2890,11 +2890,6 @@ var onboard_modules =
     [ "gvf_parametric module", "module__gvf_parametric.html", [
       [ "Example for airframe file", "module__gvf_parametric.html#module_load_example__gvf_parametric", null ],
       [ "Module functions", "module__gvf_parametric.html#functions__gvf_parametric", [
-        [ "Init Functions", "module__gvf_parametric.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__gvf_parametric.html#files", [
-        [ "Header Files", "module__gvf_parametric.html#headers", null ],
-        [ "Source Files", "module__gvf_parametric.html#sources", null ],
         [ "Raw gvf_parametric.xml file:", "module__gvf_parametric.html#module_xml__gvf_parametric", null ]
       ] ]
     ] ],
@@ -3070,7 +3065,9 @@ var onboard_modules =
     ] ],
     [ "wedgebug module", "module__wedgebug.html", [
       [ "Example for airframe file", "module__wedgebug.html#module_load_example__wedgebug", null ],
-      [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", null ],
+      [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", [
+        [ "Define Options", "module__wedgebug.html#define", null ]
+      ] ],
       [ "Module functions", "module__wedgebug.html#functions__wedgebug", [
         [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
       ] ]
