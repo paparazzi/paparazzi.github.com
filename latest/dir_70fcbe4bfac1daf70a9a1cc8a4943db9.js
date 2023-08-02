@@ -19,6 +19,8 @@ var dir_70fcbe4bfac1daf70a9a1cc8a4943db9 =
     [ "actuators_sbus.h", "actuators__sbus_8h.html", "actuators__sbus_8h" ],
     [ "actuators_spektrum.c", "actuators__spektrum_8c.html", "actuators__spektrum_8c" ],
     [ "actuators_spektrum.h", "actuators__spektrum_8h.html", "actuators__spektrum_8h" ],
+    [ "actuators_sts3032.c", "actuators__sts3032_8c.html", "actuators__sts3032_8c" ],
+    [ "actuators_sts3032.h", "actuators__sts3032_8h.html", "actuators__sts3032_8h" ],
     [ "actuators_uavcan.c", "actuators__uavcan_8c.html", "actuators__uavcan_8c" ],
     [ "actuators_uavcan.h", "actuators__uavcan_8h.html", "actuators__uavcan_8h" ],
     [ "actuators_uavcan1.h", "actuators__uavcan1_8h.html", "actuators__uavcan1_8h" ],

@@ -124,6 +124,7 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "sdcard_spi.h", "sdcard__spi_8h.html", "sdcard__spi_8h" ],
     [ "sst25vfxxxx.c", "sst25vfxxxx_8c.html", "sst25vfxxxx_8c" ],
     [ "sst25vfxxxx.h", "sst25vfxxxx_8h.html", "sst25vfxxxx_8h" ],
+    [ "sts3032_regs.h", "sts3032__regs_8h.html", "sts3032__regs_8h" ],
     [ "video_device.h", "video__device_8h.html", "video__device_8h" ],
     [ "vl53l1_platform.c", "vl53l1__platform_8c.html", "vl53l1__platform_8c" ],
     [ "vl53l1_platform.h", "vl53l1__platform_8h.html", "vl53l1__platform_8h" ],

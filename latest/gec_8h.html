@@ -231,14 +231,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a783c995c432b56912728d12f05f84db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a783c995c432b56912728d12f05f84db0">gec_sts_init</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *sts)</td></tr>
+<tr class="memitem:a783c995c432b56912728d12f05f84db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a783c995c432b56912728d12f05f84db0">gec_sts_init</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *<a class="el" href="actuators__sts3032_8h.html#a2a8acd77e028f048487b51da72b9fb70">sts</a>)</td></tr>
 <tr class="separator:a783c995c432b56912728d12f05f84db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fd31d506c2d039aab78f96a56338102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a5fd31d506c2d039aab78f96a56338102">gec_clear_sts</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *sts)</td></tr>
+<tr class="memitem:a5fd31d506c2d039aab78f96a56338102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a5fd31d506c2d039aab78f96a56338102">gec_clear_sts</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *<a class="el" href="actuators__sts3032_8h.html#a2a8acd77e028f048487b51da72b9fb70">sts</a>)</td></tr>
 <tr class="separator:a5fd31d506c2d039aab78f96a56338102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dabc3297585157dc9719ba30d72216d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a7dabc3297585157dc9719ba30d72216d">gec_generate_ephemeral_keys</a> (struct <a class="el" href="gec_8h.html#structgec__privkey">gec_privkey</a> *sk)</td></tr>
 <tr class="memdesc:a7dabc3297585157dc9719ba30d72216d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate private and public key pairs for future use.  <a href="gec_8h.html#a7dabc3297585157dc9719ba30d72216d">More...</a><br /></td></tr>
 <tr class="separator:a7dabc3297585157dc9719ba30d72216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a243dd093981aa63e46ea4161db0cc4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a243dd093981aa63e46ea4161db0cc4f4">gec_derive_key_material</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *sts, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *z)</td></tr>
+<tr class="memitem:a243dd093981aa63e46ea4161db0cc4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a243dd093981aa63e46ea4161db0cc4f4">gec_derive_key_material</a> (struct <a class="el" href="gec_8h.html#structgec__sts__ctx">gec_sts_ctx</a> *<a class="el" href="actuators__sts3032_8h.html#a2a8acd77e028f048487b51da72b9fb70">sts</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *z)</td></tr>
 <tr class="memdesc:a243dd093981aa63e46ea4161db0cc4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derive key material for both sender and receiver.  <a href="gec_8h.html#a243dd093981aa63e46ea4161db0cc4f4">More...</a><br /></td></tr>
 <tr class="separator:a243dd093981aa63e46ea4161db0cc4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47cb1fdb91e28f8c78d374c2bd3cf323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gec_8h.html#a47cb1fdb91e28f8c78d374c2bd3cf323">gec_counter_to_bytes</a> (<a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> n, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *bytes)</td></tr>
@@ -845,7 +845,7 @@ tx_sym_key</td>
 
 <p class="definition">Definition at line <a class="el" href="gec_8c_source.html#l00054">54</a> of file <a class="el" href="gec_8c_source.html">gec.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gec_8h_source.html#l00095">ERROR_NONE</a>, <a class="el" href="gec_8h_source.html#l00124">gec_sts_ctx::last_error</a>, <a class="el" href="gec_8h_source.html#l00119">gec_sts_ctx::my_private_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00123">gec_sts_ctx::party</a>, <a class="el" href="gec_8h_source.html#l00122">gec_sts_ctx::protocol_stage</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::ready</a>, <a class="el" href="gec_8h_source.html#l00073">gec_pubkey::ready</a>, <a class="el" href="gec_8h_source.html#l00079">gec_sym_key::ready</a>, <a class="el" href="gec_8h_source.html#l00087">RESPONDER</a>, <a class="el" href="gec_8h_source.html#l00120">gec_sts_ctx::rx_sym_key</a>, <a class="el" href="gec_8h_source.html#l00118">gec_sts_ctx::their_public_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00121">gec_sts_ctx::tx_sym_key</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG1</a>.</p>
+<p class="reference">References <a class="el" href="gec_8h_source.html#l00095">ERROR_NONE</a>, <a class="el" href="gec_8h_source.html#l00087">RESPONDER</a>, <a class="el" href="actuators__sts3032_8c_source.html#l00047">sts</a>, and <a class="el" href="gec_8h_source.html#l00083">WAIT_MSG1</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec_8c_source.html#l00033">gec_sts_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1028,7 +1028,7 @@ tx_sym_key</td>
 
 <p class="definition">Definition at line <a class="el" href="gec_8c_source.html#l00033">33</a> of file <a class="el" href="gec_8c_source.html">gec.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gec_8c_source.html#l00054">gec_clear_sts()</a>, <a class="el" href="gec_8c_source.html#l00073">gec_generate_ephemeral_keys()</a>, <a class="el" href="gec_8h_source.html#l00119">gec_sts_ctx::my_private_ephemeral</a>, <a class="el" href="gec_8h_source.html#l00117">gec_sts_ctx::my_private_key</a>, <a class="el" href="gec_8h_source.html#l00053">PPRZ_KEY_LEN</a>, <a class="el" href="gec_8h_source.html#l00068">gec_privkey::priv</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::pub</a>, <a class="el" href="gec_8h_source.html#l00069">gec_privkey::ready</a>, <a class="el" href="gec_8h_source.html#l00073">gec_pubkey::ready</a>, and <a class="el" href="gec_8h_source.html#l00116">gec_sts_ctx::their_public_key</a>.</p>
+<p class="reference">References <a class="el" href="gec_8c_source.html#l00054">gec_clear_sts()</a>, <a class="el" href="gec_8c_source.html#l00073">gec_generate_ephemeral_keys()</a>, <a class="el" href="gec_8h_source.html#l00053">PPRZ_KEY_LEN</a>, and <a class="el" href="actuators__sts3032_8c_source.html#l00047">sts</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gec__dl_8c_source.html#l00345">gec_dl_init()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1067,7 +1067,7 @@ tx_sym_key</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="dir_a4141aa9aabfd994603c58524628479f.html">gec</a></li><li class="navelem"><a class="el" href="gec_8h.html">gec.h</a></li>
-    <li class="footer">Generated on Fri Jul 21 2023 17:36:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 2 2023 13:00:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

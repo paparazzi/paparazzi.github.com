@@ -920,6 +920,7 @@ var annotated_dup =
     [ "State.windspeed_f", "group__state__interface.html#unionState_8windspeed__f", "group__state__interface_unionState_8windspeed__f" ],
     [ "State.windspeed_i", "group__state__interface.html#unionState_8windspeed__i", "group__state__interface_unionState_8windspeed__i" ],
     [ "stereocam_t", "stereocam_8h.html#structstereocam__t", "stereocam_8h_structstereocam__t" ],
+    [ "sts3032", "actuators__sts3032_8h.html#structsts3032", "actuators__sts3032_8h_structsts3032" ],
     [ "SuperbitRF", "modules_2datalink_2superbitrf_8h.html#structSuperbitRF", "modules_2datalink_2superbitrf_8h_structSuperbitRF" ],
     [ "SurveyHybrid", "nav__survey__hybrid_8h.html#structSurveyHybrid", "nav__survey__hybrid_8h_structSurveyHybrid" ],
     [ "SurveyHybridPrivate", "nav__survey__hybrid_8c.html#structSurveyHybridPrivate", "nav__survey__hybrid_8c_structSurveyHybridPrivate" ],

@@ -129,6 +129,13 @@ var onboard_modules =
         [ "Raw actuators_spektrum.xml file:", "module__actuators_spektrum.html#module_xml__actuators_spektrum", null ]
       ] ]
     ] ],
+    [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
+      [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
+      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
+      [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
+        [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
+      ] ]
+    ] ],
     [ "actuators_uavcan module", "module__actuators_uavcan.html", [
       [ "Example for airframe file", "module__actuators_uavcan.html#module_load_example__actuators_uavcan", null ],
       [ "Module configuration options", "module__actuators_uavcan.html#configuration__actuators_uavcan", [
