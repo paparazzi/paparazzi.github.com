@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__servo_tester.html":[1,461],
 "module__servo_tester.html#configuration__servo_tester":[1,461,1],
 "module__servo_tester.html#functions__servo_tester":[1,461,2],
 "module__servo_tester.html#module_load_example__servo_tester":[1,461,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,114,1],
 "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp":[1,114,2],
 "module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp":[1,114,0],
-"module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp":[1,114,2,0],
-"module__telemetry_transparent_usb.html":[1,115]
+"module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp":[1,114,2,0]
 };

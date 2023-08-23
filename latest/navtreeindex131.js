@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__nav_spiral.html#module_load_example__nav_spiral":[1,318,0],
 "module__nav_spiral.html#module_xml__nav_spiral":[1,318,1,0],
 "module__nav_spiral_3d.html":[1,319],
 "module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,319,1],
@@ -50,6 +49,7 @@ var NAVTREEINDEX131 =
 "module__navigation.html#module_load_example__navigation":[1,330,0],
 "module__navigation.html#module_xml__navigation":[1,330,0,0],
 "module__object_tracking.html":[1,91],
+"module__object_tracking.html#af_section":[1,91,1,0],
 "module__object_tracking.html#configuration__object_tracking":[1,91,1],
 "module__object_tracking.html#functions__object_tracking":[1,91,2],
 "module__object_tracking.html#module_load_example__object_tracking":[1,91,0],
@@ -61,7 +61,8 @@ var NAVTREEINDEX131 =
 "module__opa_controller.html":[1,42],
 "module__opa_controller.html#functions__opa_controller":[1,42,1],
 "module__opa_controller.html#module_load_example__opa_controller":[1,42,0],
-"module__opa_controller.html#module_xml__opa_controller":[1,42,1,0],
+"module__opa_controller.html#module_xml__opa_controller":[1,42,1,1],
+"module__opa_controller.html#periodic_functions":[1,42,1,0],
 "module__openlog.html":[1,247],
 "module__openlog.html#functions__openlog":[1,247,1],
 "module__openlog.html#module_load_example__openlog":[1,247,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__scheduling_indi_simple.html":[1,94],
 "module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,94,1],
 "module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,94,0],
-"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,94,1,0],
-"module__servo_tester.html":[1,461]
+"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,94,1,0]
 };

@@ -212,7 +212,6 @@ var NAVTREEINDEX125 =
 "module__airspeed_otf.html#module_xml__airspeed_otf":[1,358,2,0],
 "module__airspeed_sdp3x.html":[1,359],
 "module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,359,1],
-"module__airspeed_sdp3x.html#define":[1,359,1,0],
 "module__airspeed_sdp3x.html#functions__airspeed_sdp3x":[1,359,2],
 "module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x":[1,359,0],
 "module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,359,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "module__auto1_commands.html#module_xml__auto1_commands":[1,412,1,0],
 "module__autopilot_gnc.html":[1,420],
 "module__autopilot_gnc.html#datalink_functions__autopilot_gnc":[1,420,2],
-"module__autopilot_gnc.html#functions__autopilot_gnc":[1,420,1]
+"module__autopilot_gnc.html#functions__autopilot_gnc":[1,420,1],
+"module__autopilot_gnc.html#module_load_example__autopilot_gnc":[1,420,0]
 };

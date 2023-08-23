@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__light.html#functions__light":[1,236,2],
 "module__light.html#module_load_example__light":[1,236,0],
 "module__light.html#module_xml__light":[1,236,2,0],
 "module__light_scheduler.html":[1,237],
@@ -54,7 +53,6 @@ var NAVTREEINDEX130 =
 "module__logger_uart.html#module_load_example__logger_uart":[1,246,0],
 "module__logger_uart.html#module_xml__logger_uart":[1,246,2,0],
 "module__mag_calib_ukf.html":[1,446],
-"module__mag_calib_ukf.html#af_section":[1,446,1,0],
 "module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,446,1],
 "module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,446,2],
 "module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,446,0],
@@ -162,9 +160,14 @@ var NAVTREEINDEX130 =
 "module__nav_basic_fw.html":[1,296],
 "module__nav_basic_fw.html#configuration__nav_basic_fw":[1,296,1],
 "module__nav_basic_fw.html#datalink_functions__nav_basic_fw":[1,296,3],
+"module__nav_basic_fw.html#define":[1,296,1,0],
+"module__nav_basic_fw.html#files":[1,296,4],
 "module__nav_basic_fw.html#functions__nav_basic_fw":[1,296,2],
+"module__nav_basic_fw.html#headers":[1,296,4,0],
+"module__nav_basic_fw.html#init_functions":[1,296,2,0],
 "module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,296,0],
-"module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,296,3,0],
+"module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,296,4,2],
+"module__nav_basic_fw.html#sources":[1,296,4,1],
 "module__nav_basic_rotorcraft.html":[1,297],
 "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,297,1],
 "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,297,0],
@@ -234,13 +237,9 @@ var NAVTREEINDEX130 =
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,314,2,0],
 "module__nav_rover_base.html":[1,315],
 "module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,315,2],
-"module__nav_rover_base.html#files":[1,315,3],
 "module__nav_rover_base.html#functions__nav_rover_base":[1,315,1],
-"module__nav_rover_base.html#headers":[1,315,3,0],
-"module__nav_rover_base.html#init_functions":[1,315,1,0],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,315,0],
-"module__nav_rover_base.html#module_xml__nav_rover_base":[1,315,3,2],
-"module__nav_rover_base.html#sources":[1,315,3,1],
+"module__nav_rover_base.html#module_xml__nav_rover_base":[1,315,2,0],
 "module__nav_skid_landing.html":[1,316],
 "module__nav_skid_landing.html#configuration__nav_skid_landing":[1,316,1],
 "module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,316,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__nav_smooth.html#module_load_example__nav_smooth":[1,317,0],
 "module__nav_smooth.html#module_xml__nav_smooth":[1,317,0,0],
 "module__nav_spiral.html":[1,318],
-"module__nav_spiral.html#configuration__nav_spiral":[1,318,1]
+"module__nav_spiral.html#configuration__nav_spiral":[1,318,1],
+"module__nav_spiral.html#module_load_example__nav_spiral":[1,318,0]
 };
