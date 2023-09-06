@@ -1,5 +1,12 @@
 var NAVTREEINDEX79 =
 {
+"holybro_2kakute__f7_2board_8h.html#a24beff62231ef97276e94d1b9a3fa7e3":[12,0,1,0,1,8,0,0,397],
+"holybro_2kakute__f7_2board_8h.html#a250183d1d4d77492364a6e6f40adfede":[12,0,1,0,1,8,0,0,318],
+"holybro_2kakute__f7_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b":[12,0,1,0,1,8,0,0,369],
+"holybro_2kakute__f7_2board_8h.html#a25d8465a84588c9687b839ce6512e831":[12,0,1,0,1,8,0,0,335],
+"holybro_2kakute__f7_2board_8h.html#a26d0c0455b0fc14d1ad148f6a029561f":[12,0,1,0,1,8,0,0,70],
+"holybro_2kakute__f7_2board_8h.html#a27509d84ec428c3ec26142905c3f011f":[12,0,1,0,1,8,0,0,410],
+"holybro_2kakute__f7_2board_8h.html#a27568f669f03069b9ee810d56cc4673c":[12,0,1,0,1,8,0,0,42],
 "holybro_2kakute__f7_2board_8h.html#a2781f04e2f6682d822e9fca6a8aa4ed3":[12,0,1,0,1,8,0,0,406],
 "holybro_2kakute__f7_2board_8h.html#a279cebf9d8443da1279450d4f396894d":[12,0,1,0,1,8,0,0,212],
 "holybro_2kakute__f7_2board_8h.html#a28a05bd3041c1e2a0575f8d31a0d1719":[12,0,1,0,1,8,0,0,326],
@@ -242,12 +249,5 @@ var NAVTREEINDEX79 =
 "holybro_2kakute__f7_2board_8h.html#aad7ccbfca9d4bd146d0d48ad6473912e":[12,0,1,0,1,8,0,0,352],
 "holybro_2kakute__f7_2board_8h.html#aad98b9168836e3221989de95ffe90040":[12,0,1,0,1,8,0,0,235],
 "holybro_2kakute__f7_2board_8h.html#aaddc843efed03effa9394c3892a74eec":[12,0,1,0,1,8,0,0,73],
-"holybro_2kakute__f7_2board_8h.html#aae029e46b3e218fa6899c5e97163476c":[12,0,1,0,1,8,0,0,110],
-"holybro_2kakute__f7_2board_8h.html#aae324ff2b79440f155d20e510f2cc7ee":[12,0,1,0,1,8,0,0,127],
-"holybro_2kakute__f7_2board_8h.html#aae5f458b9f230693fafe40f0b3c916ea":[12,0,1,0,1,8,0,0,254],
-"holybro_2kakute__f7_2board_8h.html#aaeb464e173ece9eb2883405d3183af2e":[12,0,1,0,1,8,0,0,108],
-"holybro_2kakute__f7_2board_8h.html#aaee07353c466b812a6f89b3647b0c0f8":[12,0,1,0,1,8,0,0,83],
-"holybro_2kakute__f7_2board_8h.html#aaf91e689e472afc97bbb7bff17ee7c9d":[12,0,1,0,1,8,0,0,88],
-"holybro_2kakute__f7_2board_8h.html#ab11a0f6a29beeede9d74045d2b5ebe96":[12,0,1,0,1,8,0,0,141],
-"holybro_2kakute__f7_2board_8h.html#ab13e64e7060a044a064e40b22f97bc33":[12,0,1,0,1,8,0,0,162]
+"holybro_2kakute__f7_2board_8h.html#aae029e46b3e218fa6899c5e97163476c":[12,0,1,0,1,8,0,0,110]
 };

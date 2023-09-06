@@ -1,5 +1,12 @@
 var NAVTREEINDEX77 =
 {
+"hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3":[12,0,1,0,0,0,0,5,15],
+"hal__stm32__dma_8c.html#a704b8cd98d0823960e5e3048ee5dfbba":[12,0,1,0,0,0,0,5,3],
+"hal__stm32__dma_8c.html#a9219d807ef245446ffc9a430d742d976":[12,0,1,0,0,0,0,5,12],
+"hal__stm32__dma_8c.html#a991ade7a6254eabbe74489fa7c8f366a":[12,0,1,0,0,0,0,5,1],
+"hal__stm32__dma_8c.html#aa559dd826c4b296b5f01f6e2dd2fb730":[12,0,1,0,0,0,0,5,5],
+"hal__stm32__dma_8c.html#aa6857c2342fc30ddd643f028d25b908c":[12,0,1,0,0,0,0,5,7],
+"hal__stm32__dma_8c.html#ab2d180e5adb10579b0b032987f338d33":[12,0,1,0,0,0,0,5,4],
 "hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81":[12,0,1,0,0,0,0,5,13],
 "hal__stm32__dma_8c.html#aca730123d24b378683330626bd0f7603":[12,0,1,0,0,0,0,5,2],
 "hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783":[12,0,1,0,0,0,0,5,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#af6678d0a2636057a3984e67ba0b655c5":[12,0,1,0,6,41,5,44],
 "high__speed__logger__direct__memory_8c.html#afd0f786af2e70f2a97493b2b674a4124":[12,0,1,0,6,41,5,12],
 "high__speed__logger__direct__memory_8c.html#afdd9fd13586250efcd63cb728a19e7cc":[12,0,1,0,6,41,5,43],
-"high__speed__logger__direct__memory_8c_source.html":[12,0,1,0,6,41,5],
-"high__speed__logger__direct__memory_8h.html":[12,0,1,0,6,41,6],
-"high__speed__logger__direct__memory_8h.html#a0293c5b5614338d2045193c5e38fc9e6":[12,0,1,0,6,41,6,17],
-"high__speed__logger__direct__memory_8h.html#a04adb430229e9cb602498ef5f26e3d3e":[12,0,1,0,6,41,6,26],
-"high__speed__logger__direct__memory_8h.html#a07a82e5e15d83faae43c17f52a999754":[12,0,1,0,6,41,6,20],
-"high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7":[12,0,1,0,6,41,6,23],
-"high__speed__logger__direct__memory_8h.html#a12bdb7bbc1db80d13434e986b45f0128":[12,0,1,0,6,41,6,7],
-"high__speed__logger__direct__memory_8h.html#a157243381c2a2354913aa53afcdcde02":[12,0,1,0,6,41,6,5]
+"high__speed__logger__direct__memory_8c_source.html":[12,0,1,0,6,41,5]
 };

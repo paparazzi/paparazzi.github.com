@@ -1,5 +1,12 @@
 var NAVTREEINDEX152 =
 {
+"nps__radio__control__spektrum_8c.html#a5ef81d6ecf86b47643a0c2f0eae06c6c":[12,0,1,1,1,29,9],
+"nps__radio__control__spektrum_8c.html#a60397fb1a881cadaa5e210dd5d347989":[12,0,1,1,1,29,2],
+"nps__radio__control__spektrum_8c.html#a779a1f26510641b7e94cbb047d35ef3b":[12,0,1,1,1,29,6],
+"nps__radio__control__spektrum_8c.html#a7d356b7d5a77c1e2fb7e8154f65ebfcf":[12,0,1,1,1,29,1],
+"nps__radio__control__spektrum_8c.html#a807676de90285c69207ad8143fffd390":[12,0,1,1,1,29,12],
+"nps__radio__control__spektrum_8c.html#a96e61646754bf2df198da01db1a0349f":[12,0,1,1,1,29,10],
+"nps__radio__control__spektrum_8c.html#a9aeeac4b6b91056b261f35840481cede":[12,0,1,1,1,29,5],
 "nps__radio__control__spektrum_8c.html#aa1a478ee9c3837d8cb5aa3a856f81463":[12,0,1,1,1,29,11],
 "nps__radio__control__spektrum_8c.html#ada2e4edc3a3860806f68c21694db35a5":[12,0,1,1,1,29,4],
 "nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d":[12,0,1,1,1,29,15],
@@ -242,12 +249,5 @@ var NAVTREEINDEX152 =
 "nps__sensors_8h.html#aec1ba505f30beb6e6756c1001a059639":[12,0,1,1,1,54,2],
 "nps__sensors_8h.html#structNpsSensors":[12,0,1,1,1,54,0],
 "nps__sensors_8h_source.html":[12,0,1,1,1,54],
-"nps__sensors__utils_8c.html":[12,0,1,1,1,55],
-"nps__sensors__utils_8c.html#a3161ab2cb241afbcb27234e69fd1528f":[12,0,1,1,1,55,1],
-"nps__sensors__utils_8c.html#acd68048435948dcef7a919d625c8cc0e":[12,0,1,1,1,55,0],
-"nps__sensors__utils_8c.html#ae79b4a67a1de0346dab12bba1bf3b6bb":[12,0,1,1,1,55,2],
-"nps__sensors__utils_8c_source.html":[12,0,1,1,1,55],
-"nps__sensors__utils_8h.html":[12,0,1,1,1,56],
-"nps__sensors__utils_8h.html#a3161ab2cb241afbcb27234e69fd1528f":[12,0,1,1,1,56,2],
-"nps__sensors__utils_8h.html#a42312234036cd4ae4ecd089e63b58926":[12,0,1,1,1,56,1,1]
+"nps__sensors__utils_8c.html":[12,0,1,1,1,55]
 };

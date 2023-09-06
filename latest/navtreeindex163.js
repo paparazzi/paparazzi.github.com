@@ -1,5 +1,12 @@
 var NAVTREEINDEX163 =
 {
+"paparazzi_messages.html#AHRS_BIAS":[2,0,169],
+"paparazzi_messages.html#AHRS_EULER":[2,0,170],
+"paparazzi_messages.html#AHRS_EULER_INT":[2,0,155],
+"paparazzi_messages.html#AHRS_GYRO_BIAS_INT":[2,0,175],
+"paparazzi_messages.html#AHRS_LKF":[2,0,178],
+"paparazzi_messages.html#AHRS_MEASUREMENT_EULER":[2,0,171],
+"paparazzi_messages.html#AHRS_QUAT_INT":[2,0,156],
 "paparazzi_messages.html#AHRS_REF_QUAT":[2,0,167],
 "paparazzi_messages.html#AIRCRAFTS":[2,2,2],
 "paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX163 =
 "paparazzi_messages.html#PPRZ_DEBUG":[2,0,227],
 "paparazzi_messages.html#PPRZ_MODE":[2,0,10],
 "paparazzi_messages.html#RANGEFINDER":[2,0,28],
-"paparazzi_messages.html#RATE_LOOP":[2,0,135],
-"paparazzi_messages.html#RAW_DATALINK":[2,2,27],
-"paparazzi_messages.html#RC":[2,0,100],
-"paparazzi_messages.html#RC_3CH":[2,1,35],
-"paparazzi_messages.html#RC_3CH_":[2,0,50],
-"paparazzi_messages.html#RC_4CH":[2,1,36],
-"paparazzi_messages.html#RC_5CH":[2,1,37],
-"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,40]
+"paparazzi_messages.html#RATE_LOOP":[2,0,135]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX96 =
 {
+"krooz__sd_8h.html#aa47f9c9324344581ee684b4bf0834693":[12,0,1,0,1,35,61],
+"krooz__sd_8h.html#aa5441a38066de616a7ce5dc93aa85111":[12,0,1,0,1,35,15],
+"krooz__sd_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,35,55],
+"krooz__sd_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,35,28],
+"krooz__sd_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae":[12,0,1,0,1,35,77],
+"krooz__sd_8h.html#aab670f5e43a2f39e063fe8280dad4c5d":[12,0,1,0,1,35,184],
+"krooz__sd_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf":[12,0,1,0,1,35,190],
 "krooz__sd_8h.html#aad81217bdd26988972c83915ab388d41":[12,0,1,0,1,35,140],
 "krooz__sd_8h.html#aaf986945a2a0714bfcf464fd344d8708":[12,0,1,0,1,35,49],
 "krooz__sd_8h.html#ab2213149a9ab7de0aefe5d46391a0f72":[12,0,1,0,1,35,124],
@@ -242,12 +249,5 @@ var NAVTREEINDEX96 =
 "l3gd20__spi_8h.html#structL3gd20__Spi":[12,0,1,0,7,58,0],
 "l3gd20__spi_8h.html#unionL3gd20__Spi_8data__rates":[12,0,1,0,7,58,1],
 "l3gd20__spi_8h_source.html":[12,0,1,0,7,58],
-"laser__range__array_8c.html":[12,0,1,0,6,56,2],
-"laser__range__array_8c.html#a06ddedcbdbbe11dcbd5966ac250337b2":[12,0,1,0,6,56,2,4],
-"laser__range__array_8c.html#a2ddd27d910d26f1e73f1bb877dff9086":[12,0,1,0,6,56,2,0,0],
-"laser__range__array_8c.html#a4a21741aaaaae8280054c448b5dd51a7":[12,0,1,0,6,56,2,5],
-"laser__range__array_8c.html#a4b79ac8119f536a62cd91ec77ce26fb1":[12,0,1,0,6,56,2,7],
-"laser__range__array_8c.html#a4fbfff4e2d3b1c051f170f655114fd9d":[12,0,1,0,6,56,2,0,2],
-"laser__range__array_8c.html#a5ef3772ef17789014146c0ebf539e560":[12,0,1,0,6,56,2,1],
-"laser__range__array_8c.html#a5f7e93e4a4fbb5e4fd0bb61c4900e7f8":[12,0,1,0,6,56,2,3]
+"laser__range__array_8c.html":[12,0,1,0,6,56,2]
 };

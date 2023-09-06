@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('module__follow_me.html',''); initResiz
 <div class="contents">
 <div class="textblock"><p><b>Follow a ground based object which is transmitting the TARGET_POS datalink message or using RTK GPS.</b></p>
 <p><b></b></p>
-<p>This can be done using gpsd2ivy.</p>
+<p>This can be done using gpsd2ivy or ublox2ivy.</p>
 <h1><a class="anchor" id="module_load_example__follow_me"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;follow_me&quot;</span>/&gt;</div>
@@ -104,6 +104,16 @@ Airframe file section</h2>
  Description: timeout of the ground GPS</li>
 <li><b>name</b> <code>DISTANCE</code> <b>value:</b> <em>5.</em> <br  />
  Description: distance to hover from the ground GPS</li>
+<li><b>name</b> <code>HEIGHT</code> <b>value:</b> <em>60</em> <br  />
+ Description: height to hover above the ground GPS</li>
+<li><b>name</b> <code>GPS_TIMEOUT</code> <b>value:</b> <em>5000</em> <br  />
+ Description: RTK relative position timeout in ms</li>
+<li><b>name</b> <code>GROUND_TIMEOUT</code> <b>value:</b> <em>5000</em> <br  />
+ Description: ground position timeout in ms</li>
+<li><b>name</b> <code>FILT</code> <b>value:</b> <em>0.9</em> <br  />
+ Description: filtering of the heading cos/sin (higher is harder)</li>
+<li><b>name</b> <code>MOVING_WPS</code> <b>value:</b> <em></em> <br  />
+ Description: list of waypoints comma seperated which should move</li>
 </ul>
 </li>
 </ul>
@@ -114,6 +124,17 @@ Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
 <li><a class="el" href="ctrl_2follow__me_8c.html#aaebeffb2f699c27b054373b128908c32" title="init function">follow_me_init()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="ctrl_2follow__me_8c.html#a5c3112293f2a4d98f2ddb0d937011a36" title="periodic function">follow_me_periodic()</a><ul>
+<li>Frequency in Hz: <em>1</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="datalink_functions__follow_me"></a>
 Datalink Functions</h1>
@@ -142,17 +163,22 @@ Raw follow_me.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Follow</span> <span class="keyword">a</span> <span class="keyword">ground</span> <span class="keyword">based</span> <span class="keyword">object</span> <span class="keyword">which</span> <span class="keyword">is</span> <span class="keyword">transmitting</span> <span class="keyword">the</span> <span class="keyword">TARGET_POS</span> <span class="keyword">datalink</span> <span class="keyword">message</span> <span class="keyword">or</span> <span class="keyword">using</span> <span class="keyword">RTK</span> <span class="keyword">GPS.</span></div>
-<div class="line">      <span class="keyword">This</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">done</span> <span class="keyword">using</span> <span class="keyword">gpsd2ivy.</span></div>
+<div class="line">      <span class="keyword">This</span> <span class="keyword">can</span> <span class="keyword">be</span> <span class="keyword">done</span> <span class="keyword">using</span> <span class="keyword">gpsd2ivy</span> <span class="keyword">or</span> <span class="keyword">ublox2ivy.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FOLLOW_ME&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;FOLLOW_ME_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TIMEOUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;timeout of the ground GPS&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DISTANCE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;distance to hover from the ground GPS&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HEIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;height to hover above the ground GPS&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPS_TIMEOUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5000&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;RTK relative position timeout in ms&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GROUND_TIMEOUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5000&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;ground position timeout in ms&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.9&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;filtering of the heading cos/sin (higher is harder)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MOVING_WPS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;list of waypoints comma seperated which should move&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;FollowMe&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;follow_me_distance&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;distance&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;follow_me_distance&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;400&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;distance&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;follow_me_height&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;100.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;height&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;follow_me_heading&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;360.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;heading&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;follow_me_min_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;100.&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;min_speed&quot;</span>/&gt;</div>
@@ -170,12 +196,12 @@ Raw follow_me.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;follow_me.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;follow_me_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;follow_me_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">datalink</span> <span class="keyword">message</span>=<span class="stringliteral">&quot;TARGET_POS&quot;</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;follow_me_parse_target_pos(buf)&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;follow_me.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -183,7 +209,7 @@ Raw follow_me.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Aug 30 2023 11:51:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 6 2023 19:57:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

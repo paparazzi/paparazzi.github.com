@@ -1,5 +1,12 @@
 var NAVTREEINDEX130 =
 {
+"module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c":[1,234,1],
+"module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c":[1,234,2],
+"module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,234,0],
+"module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c":[1,234,2,0],
+"module__light.html":[1,236],
+"module__light.html#configuration__light":[1,236,1],
+"module__light.html#functions__light":[1,236,2],
 "module__light.html#module_load_example__light":[1,236,0],
 "module__light.html#module_xml__light":[1,236,2,0],
 "module__light_scheduler.html":[1,237],
@@ -242,12 +249,5 @@ var NAVTREEINDEX130 =
 "module__nav_rover_base.html#module_xml__nav_rover_base":[1,315,2,0],
 "module__nav_skid_landing.html":[1,316],
 "module__nav_skid_landing.html#configuration__nav_skid_landing":[1,316,1],
-"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,316,0],
-"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,316,1,0],
-"module__nav_smooth.html":[1,317],
-"module__nav_smooth.html#module_load_example__nav_smooth":[1,317,0],
-"module__nav_smooth.html#module_xml__nav_smooth":[1,317,0,0],
-"module__nav_spiral.html":[1,318],
-"module__nav_spiral.html#configuration__nav_spiral":[1,318,1],
-"module__nav_spiral.html#module_load_example__nav_spiral":[1,318,0]
+"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,316,0]
 };

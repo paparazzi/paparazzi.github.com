@@ -1,5 +1,12 @@
 var NAVTREEINDEX128 =
 {
+"module__gps_nmea.html#configuration__gps_nmea":[1,144,1],
+"module__gps_nmea.html#functions__gps_nmea":[1,144,2],
+"module__gps_nmea.html#module_load_example__gps_nmea":[1,144,0],
+"module__gps_nmea.html#module_xml__gps_nmea":[1,144,2,0],
+"module__gps_nps.html":[1,145],
+"module__gps_nps.html#functions__gps_nps":[1,145,1],
+"module__gps_nps.html#module_load_example__gps_nps":[1,145,0],
 "module__gps_nps.html#module_xml__gps_nps":[1,145,1,0],
 "module__gps_optitrack.html":[1,146],
 "module__gps_optitrack.html#module_load_example__gps_optitrack":[1,146,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX128 =
 "module__imu_cube.html#functions__imu_cube":[1,186,1],
 "module__imu_cube.html#module_load_example__imu_cube":[1,186,0],
 "module__imu_cube.html#module_xml__imu_cube":[1,186,1,0],
-"module__imu_disco.html":[1,187],
-"module__imu_disco.html#configuration__imu_disco":[1,187,1],
-"module__imu_disco.html#functions__imu_disco":[1,187,2],
-"module__imu_disco.html#module_load_example__imu_disco":[1,187,0],
-"module__imu_disco.html#module_xml__imu_disco":[1,187,2,0],
-"module__imu_elle0.html":[1,188],
-"module__imu_elle0.html#module_load_example__imu_elle0":[1,188,0],
-"module__imu_elle0.html#module_xml__imu_elle0":[1,188,0,0]
+"module__imu_disco.html":[1,187]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX132 =
 {
+"module__rust_demo_module.html#functions__rust_demo_module":[1,460,1],
+"module__rust_demo_module.html#module_load_example__rust_demo_module":[1,460,0],
+"module__rust_demo_module.html#module_xml__rust_demo_module":[1,460,1,0],
+"module__scheduling_indi_simple.html":[1,94],
+"module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,94,1],
+"module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,94,0],
+"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,94,1,0],
 "module__servo_tester.html":[1,461],
 "module__servo_tester.html#configuration__servo_tester":[1,461,1],
 "module__servo_tester.html#functions__servo_tester":[1,461,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX132 =
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,112,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,112,1,0],
 "module__telemetry_transparent_gec.html":[1,113],
-"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,113,1],
-"module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec":[1,113,0],
-"module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,113,1,0],
-"module__telemetry_transparent_udp.html":[1,114],
-"module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,114,1],
-"module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp":[1,114,2],
-"module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp":[1,114,0],
-"module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp":[1,114,2,0]
+"module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,113,1]
 };

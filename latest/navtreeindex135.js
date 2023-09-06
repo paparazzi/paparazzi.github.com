@@ -1,5 +1,12 @@
 var NAVTREEINDEX135 =
 {
+"mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a566e7cbd612d6eb4004c3864c2bca8a1":[12,0,1,0,7,88,37,1],
+"mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a9b414a740e7f495d11628f0d3c2016df":[12,0,1,0,7,88,37,0],
+"mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5ab5f71f1b3baf4233b5d6319d66b158b8":[12,0,1,0,7,88,37,2],
+"mpu60x0_8h.html#a564470aa2f16b3f6665b99d9141f9ae7":[12,0,1,0,7,88,39],
+"mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081":[12,0,1,0,7,88,1,15],
+"mpu60x0_8h.html#a5faf20d4d4647a961a86c83736c6ea87":[12,0,1,0,7,88,41],
+"mpu60x0_8h.html#a686f9c24017b15cc1cf15866def7fbc7":[12,0,1,0,7,88,1,13],
 "mpu60x0_8h.html#a6bb010e0d2d01f7ca70c520365cd3dbf":[12,0,1,0,7,88,9],
 "mpu60x0_8h.html#a6c3aefe4ceb245ae9342b5935322d401":[12,0,1,0,7,88,25],
 "mpu60x0_8h.html#a6ec9f5324d5501ed8bdc1a1bcf0a5584":[12,0,1,0,7,88,1,12],
@@ -242,12 +249,5 @@ var NAVTREEINDEX135 =
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8ed":[12,0,1,0,7,93,5],
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda3f6de144d3abf15ec69997b8f8b8445d":[12,0,1,0,7,93,5,4],
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda6fd6e45784e95c8bf03789a045c42a17":[12,0,1,0,7,93,5,0],
-"mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda7dfcb13e518cebdb63c2e13fbeea2227":[12,0,1,0,7,93,5,1],
-"mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda82fcc785fe8b006f0096a0ea26b34e80":[12,0,1,0,7,93,5,5],
-"mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edab22cde199f9df04496553671eb708e3a":[12,0,1,0,7,93,5,2],
-"mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62":[12,0,1,0,7,93,5,3],
-"mpu60x0__spi_8h.html#aac2c5a39f64f336ccb130c06b247bebf":[12,0,1,0,7,93,0,5],
-"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,93,2,1],
-"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,93,1,0],
-"mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f":[12,0,1,0,7,93,8]
+"mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda7dfcb13e518cebdb63c2e13fbeea2227":[12,0,1,0,7,93,5,1]
 };

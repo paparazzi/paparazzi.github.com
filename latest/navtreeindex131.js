@@ -1,5 +1,12 @@
 var NAVTREEINDEX131 =
 {
+"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,316,1,0],
+"module__nav_smooth.html":[1,317],
+"module__nav_smooth.html#module_load_example__nav_smooth":[1,317,0],
+"module__nav_smooth.html#module_xml__nav_smooth":[1,317,0,0],
+"module__nav_spiral.html":[1,318],
+"module__nav_spiral.html#configuration__nav_spiral":[1,318,1],
+"module__nav_spiral.html#module_load_example__nav_spiral":[1,318,0],
 "module__nav_spiral.html#module_xml__nav_spiral":[1,318,1,0],
 "module__nav_spiral_3d.html":[1,319],
 "module__nav_spiral_3d.html#configuration__nav_spiral_3d":[1,319,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX131 =
 "module__rssi.html#functions__rssi":[1,293,1],
 "module__rssi.html#module_load_example__rssi":[1,293,0],
 "module__rssi.html#module_xml__rssi":[1,293,2,0],
-"module__rust_demo_module.html":[1,460],
-"module__rust_demo_module.html#functions__rust_demo_module":[1,460,1],
-"module__rust_demo_module.html#module_load_example__rust_demo_module":[1,460,0],
-"module__rust_demo_module.html#module_xml__rust_demo_module":[1,460,1,0],
-"module__scheduling_indi_simple.html":[1,94],
-"module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,94,1],
-"module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,94,0],
-"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,94,1,0]
+"module__rust_demo_module.html":[1,460]
 };

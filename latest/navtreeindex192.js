@@ -1,5 +1,12 @@
 var NAVTREEINDEX192 =
 {
+"stabilization__adaptive_8c.html#ac16772ff39b493dc04a031f46a8b75df":[12,0,1,0,3,1,1,0,62],
+"stabilization__adaptive_8c.html#ac9aee6f0d04f722f3daaf9e4430658f6":[12,0,1,0,3,1,1,0,15],
+"stabilization__adaptive_8c.html#acbe1f39859914b67956b65671e29281c":[12,0,1,0,3,1,1,0,53],
+"stabilization__adaptive_8c.html#acc779a581eb5434bf38a16e010d77951":[12,0,1,0,3,1,1,0,14],
+"stabilization__adaptive_8c.html#ad49fa9c747672ea5d242990aa38631e0":[12,0,1,0,3,1,1,0,19],
+"stabilization__adaptive_8c.html#ad55f35902c8ec008f2269e8b92e2b58b":[12,0,1,0,3,1,1,0,3],
+"stabilization__adaptive_8c.html#ad56776da1f02d6bae65e546e5e2cdef6":[12,0,1,0,3,1,1,0,54],
 "stabilization__adaptive_8c.html#ad57dea257e01925d323ffc0b03d8076d":[12,0,1,0,3,1,1,0,67],
 "stabilization__adaptive_8c.html#adc46a5095f728cd7248e2a771f8e4080":[12,0,1,0,3,1,1,0,44],
 "stabilization__adaptive_8c.html#adca87cd9c217e6a154e37785dd9c73e0":[12,0,1,0,3,1,1,0,50],
@@ -242,12 +249,5 @@ var NAVTREEINDEX192 =
 "stabilization__attitude__passthrough_8c.html#ada3ef183c206d08fd0a902adc118f542":[12,0,1,0,3,2,1,11,5],
 "stabilization__attitude__passthrough_8c.html#add1138c9aae1adaafdb42ddf2f0c039a":[12,0,1,0,3,2,1,11,4],
 "stabilization__attitude__passthrough_8c_source.html":[12,0,1,0,3,2,1,11],
-"stabilization__attitude__passthrough_8h.html":[12,0,1,0,3,2,1,12],
-"stabilization__attitude__passthrough_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42":[12,0,1,0,3,2,1,12,0],
-"stabilization__attitude__passthrough_8h_source.html":[12,0,1,0,3,2,1,12],
-"stabilization__attitude__quat__float_8c.html":[12,0,1,0,3,2,1,13],
-"stabilization__attitude__quat__float_8c.html#a015228f30f34102b8d41c6c08c752cc0":[12,0,1,0,3,2,1,13,35],
-"stabilization__attitude__quat__float_8c.html#a03d27593d891182c04fc5337766733d1":[12,0,1,0,3,2,1,13,13],
-"stabilization__attitude__quat__float_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474":[12,0,1,0,3,2,1,13,8],
-"stabilization__attitude__quat__float_8c.html#a111cd924cba0489c665371401b826134":[12,0,1,0,3,2,1,13,40]
+"stabilization__attitude__passthrough_8h.html":[12,0,1,0,3,2,1,12]
 };

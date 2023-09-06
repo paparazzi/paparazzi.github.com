@@ -1,5 +1,12 @@
 var NAVTREEINDEX69 =
 {
+"group__math__geodetic__int.html#gae03309a9c97235668e30054f5bb03c05":[12,0,1,0,4,14,6],
+"group__math__geodetic__int.html#gae03309a9c97235668e30054f5bb03c05":[9,9,2,2,12],
+"group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e":[12,0,1,0,4,13,11],
+"group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e":[12,0,1,0,4,14,47],
+"group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e":[9,9,2,2,53],
+"group__math__geodetic__int.html#gae9f3682f00d7754900a2f737dde98164":[12,0,1,0,4,13,4],
+"group__math__geodetic__int.html#gae9f3682f00d7754900a2f737dde98164":[12,0,1,0,4,14,40],
 "group__math__geodetic__int.html#gae9f3682f00d7754900a2f737dde98164":[9,9,2,2,46],
 "group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23":[12,0,1,0,4,13,13],
 "group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23":[12,0,1,0,4,14,49],
@@ -242,12 +249,5 @@ var NAVTREEINDEX69 =
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,1,6,2,1],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,21,1],
 "group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,22,2],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[12,0,1,0,22,0,3],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[9,0,2,1],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[12,0,1,0,22,0,1],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1b57ca360731dcf84a126acc2ae1f09d":[9,0,2,0],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1b57ca360731dcf84a126acc2ae1f09d":[12,0,1,0,22,0,0],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a29b5ba8134933aaa04dfea911b735314":[9,0,2,2],
-"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a29b5ba8134933aaa04dfea911b735314":[12,0,1,0,22,0,2]
+"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3]
 };
