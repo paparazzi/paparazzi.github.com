@@ -1,5 +1,7 @@
 var NAVTREEINDEX98 =
 {
+"lia_2chibios_2v1_81_2mcuconf_8h.html#a7256aa7c13b88f877cfb8d4913dcec0a":[12,0,1,0,1,9,0,0,1,2],
+"lia_2chibios_2v1_81_2mcuconf_8h.html#a742ec02fd96ff66ed1de33aef54f0707":[12,0,1,0,1,9,0,0,1,27],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a7509c7a01a83276aa7768474357ec61d":[12,0,1,0,1,9,0,0,1,85],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a7b366b1eb660467c7ef9667705ad8308":[12,0,1,0,1,9,0,0,1,113],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a7dd2cd16d440c306ca4078c26c6b32a1":[12,0,1,0,1,9,0,0,1,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX98 =
 "lidar__lite_8h.html#af963b51aa16d3dd51fb442fe423bc3c6":[12,0,1,0,6,39,1,6],
 "lidar__lite_8h.html#structLidarLite":[12,0,1,0,6,39,1,0],
 "lidar__lite_8h_source.html":[12,0,1,0,6,39,1],
-"lidar__sf11_8c.html":[12,0,1,0,6,39,2],
-"lidar__sf11_8c.html#a33e7a34971e620ee9d1acab000cef8dd":[12,0,1,0,6,39,2,2],
-"lidar__sf11_8c.html#a445c98445fd275bd7ef2d9cc33aa71a3":[12,0,1,0,6,39,2,4]
+"lidar__sf11_8c.html":[12,0,1,0,6,39,2]
 };

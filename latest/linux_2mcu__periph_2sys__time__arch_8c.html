@@ -143,6 +143,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7ddfef1f78a56c6b4c4c536b5d670bfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a> (void)</td></tr>
 <tr class="memdesc:a7ddfef1f78a56c6b4c4c536b5d670bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in microseconds since startup.  <a href="linux_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">More...</a><br /></td></tr>
 <tr class="separator:a7ddfef1f78a56c6b4c4c536b5d670bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a57414cd6105553b6e385798824ac39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a7a57414cd6105553b6e385798824ac39">get_sys_time_usec100</a> (void)</td></tr>
+<tr class="memdesc:a7a57414cd6105553b6e385798824ac39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in 100microseconds since startup.  <a href="linux_2mcu__periph_2sys__time__arch_8c.html#a7a57414cd6105553b6e385798824ac39">More...</a><br /></td></tr>
+<tr class="separator:a7a57414cd6105553b6e385798824ac39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cb294b0d1d74dfb511534b36a17960"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a> (void)</td></tr>
 <tr class="memdesc:ad3cb294b0d1d74dfb511534b36a17960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in milliseconds since startup.  <a href="linux_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">More...</a><br /></td></tr>
 <tr class="separator:ad3cb294b0d1d74dfb511534b36a17960"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,7 +212,7 @@ Variables</h2></td></tr>
 <p>Get the time in milliseconds since startup. </p>
 <dl class="section return"><dt>Returns</dt><dd>milliseconds since startup as uint32_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00178">178</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00201">201</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
 
@@ -235,6 +238,33 @@ Variables</h2></td></tr>
 <p>WARNING: overflows after 71min34seconds! </p><dl class="section return"><dt>Returns</dt><dd>current system time as uint32_t </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00156">156</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+<p class="reference">References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
+
+</div>
+</div>
+<a id="a7a57414cd6105553b6e385798824ac39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a57414cd6105553b6e385798824ac39">&#9670;&nbsp;</a></span>get_sys_time_usec100()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> get_sys_time_usec100 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the time in 100microseconds since startup. </p>
+<p>Get the time in microseconds since startup.</p>
+<p>Get the time in microseconds divided by 100 since startup.</p>
+<p>WARNING: overflows after 7000 minutes! </p><dl class="section return"><dt>Returns</dt><dd>current system time as uint32_t </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00179">179</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00042">startup_time</a>.</p>
 
@@ -408,7 +438,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00001">1</a> of file <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00178">get_sys_time_msec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00156">get_sys_time_usec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00111">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00093">sys_time_arch_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00201">get_sys_time_msec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00156">get_sys_time_usec()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00179">get_sys_time_usec100()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00111">sys_tick_handler()</a>, and <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00093">sys_time_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -418,7 +448,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 6 2023 19:57:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 7 2023 22:56:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

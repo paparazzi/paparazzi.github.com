@@ -1,5 +1,9 @@
 var NAVTREEINDEX128 =
 {
+"module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,143,2],
+"module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,143,0],
+"module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,143,2,0],
+"module__gps_nmea.html":[1,144],
 "module__gps_nmea.html#configuration__gps_nmea":[1,144,1],
 "module__gps_nmea.html#functions__gps_nmea":[1,144,2],
 "module__gps_nmea.html#module_load_example__gps_nmea":[1,144,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX128 =
 "module__imu_common.html#functions__imu_common":[1,185,1],
 "module__imu_common.html#module_load_example__imu_common":[1,185,0],
 "module__imu_common.html#module_xml__imu_common":[1,185,1,0],
-"module__imu_cube.html":[1,186],
-"module__imu_cube.html#functions__imu_cube":[1,186,1],
-"module__imu_cube.html#module_load_example__imu_cube":[1,186,0],
-"module__imu_cube.html#module_xml__imu_cube":[1,186,1,0],
-"module__imu_disco.html":[1,187]
+"module__imu_cube.html":[1,186]
 };

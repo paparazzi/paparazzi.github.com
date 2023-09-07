@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3":[12,0,1,0,22,2],
+"group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[9,0,2,3],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a05db88614a99fd39009b4e87e30a62b4":[12,0,1,0,22,0,3],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[9,0,2,1],
 "group__mcu__periph.html#gga6b6870a4cf318dde4658a59ceca4f4a0a1812ea427005091a47af570a2b1abf01":[12,0,1,0,22,0,1],
@@ -217,10 +219,10 @@ var NAVTREEINDEX70 =
 "group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe":[12,0,1,0,29,71],
 "group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[9,4,2,1],
 "group__state__acceleration.html#ga0a85ee9e95009a2b8254012520a9f963":[12,0,1,0,29,1],
-"group__state__acceleration.html#ga142268eef832ae8363e8e1cab5a5fbdb":[9,4,6,8],
 "group__state__acceleration.html#ga142268eef832ae8363e8e1cab5a5fbdb":[9,4,2,19],
-"group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f":[9,4,2,18],
+"group__state__acceleration.html#ga142268eef832ae8363e8e1cab5a5fbdb":[9,4,6,8],
 "group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f":[9,4,6,5],
+"group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f":[9,4,2,18],
 "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967":[9,4,2,15],
 "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967":[12,0,1,0,29,124],
 "group__state__acceleration.html#ga2903594bd0aa1978f4b53166eecc37bf":[9,4,2,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "group__state__acceleration.html#ga6facec929f628aeed9c9173f68283f00":[12,0,1,0,29,0],
 "group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[9,4,2,4],
 "group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[12,0,1,0,28,0],
-"group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[12,0,1,0,29,37],
-"group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4":[9,4,2,11],
-"group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4":[12,0,1,0,29,72]
+"group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3":[12,0,1,0,29,37]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"gvf__ellipse_8h.html#a79aee526ebb50d0edc37282948987757":[12,0,1,0,6,30,0,1,1,0,3],
+"gvf__ellipse_8h.html#a907f43d1a94e3d3037d51c05366171db":[12,0,1,0,6,30,0,1,1,0,4],
 "gvf__ellipse_8h.html#structgvf__ell__par":[12,0,1,0,6,30,0,1,1,0],
 "gvf__ellipse_8h_source.html":[12,0,1,0,6,30,0,1,1],
 "gvf__line_8c.html":[12,0,1,0,6,30,0,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "hal__stm32__dma_8c.html":[12,0,1,0,0,0,0,5],
 "hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c":[12,0,1,0,0,0,0,5,6],
 "hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30":[12,0,1,0,0,0,0,5,9],
-"hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb":[12,0,1,0,0,0,0,5,11],
-"hal__stm32__dma_8c.html#a3de6f4d870466df970d6c01201b6fdd7":[12,0,1,0,0,0,0,5,14],
-"hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8":[12,0,1,0,0,0,0,5,10]
+"hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb":[12,0,1,0,0,0,0,5,11]
 };

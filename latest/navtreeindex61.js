@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"gps__ubx__ucenter_8c.html#ab9aa18b1e00f53f983be44115151c92a":[12,0,1,0,6,28,28,52],
+"gps__ubx__ucenter_8c.html#abee6910fe72461d911c3a8edbe1ab568":[12,0,1,0,6,28,28,50],
 "gps__ubx__ucenter_8c.html#ac0ff9d6eae1164d129297e1ed38482bb":[12,0,1,0,6,28,28,38],
 "gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664":[12,0,1,0,6,28,28,61],
 "gps__ubx__ucenter_8c.html#ac492d120179a5e76c52be729672dc1d7":[12,0,1,0,6,28,28,43],
@@ -61,8 +63,8 @@ var NAVTREEINDEX61 =
 "gps__udp_8h.html#a9622fb16f467bced6c6c077e8e941f23":[12,0,1,0,6,28,31,3],
 "gps__udp_8h_source.html":[12,0,1,0,6,28,31],
 "group__HAL__CONF.html":[9,6],
-"group__HAL__CONF.html#ga06f315a18b911f426da736c42ab20325":[12,0,1,0,0,0,6,24],
 "group__HAL__CONF.html#ga06f315a18b911f426da736c42ab20325":[9,6,24],
+"group__HAL__CONF.html#ga06f315a18b911f426da736c42ab20325":[12,0,1,0,0,0,6,24],
 "group__HAL__CONF.html#ga0c332b2493fd2106beb13425549120fe":[12,0,1,0,0,0,6,47],
 "group__HAL__CONF.html#ga0c332b2493fd2106beb13425549120fe":[9,6,47],
 "group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84":[12,0,1,0,0,0,6,0],
@@ -197,8 +199,8 @@ var NAVTREEINDEX61 =
 "group__SHELL.html#ga0d620fe22a1c8601e0df339c67e3a8b1":[9,7,25],
 "group__SHELL.html#ga120a34c890f696a8bf28c721086328d8":[12,0,1,0,0,0,1,1,0,3,18],
 "group__SHELL.html#ga120a34c890f696a8bf28c721086328d8":[12,0,1,0,0,0,1,1,0,4,8],
-"group__SHELL.html#ga120a34c890f696a8bf28c721086328d8":[9,7,28],
 "group__SHELL.html#ga120a34c890f696a8bf28c721086328d8":[9,7,27],
+"group__SHELL.html#ga120a34c890f696a8bf28c721086328d8":[9,7,28],
 "group__SHELL.html#ga1211643c6541c99d9dc7ffcbc72bb47f":[12,0,1,0,0,0,1,1,0,3,17],
 "group__SHELL.html#ga1211643c6541c99d9dc7ffcbc72bb47f":[9,7,26],
 "group__SHELL.html#ga1251a50680cc73bf72e5f9f428113773":[12,0,1,0,0,0,1,1,0,3,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "group__SHELL.html#structAltCbParam":[9,7,0],
 "group__SHELL.html#structShellCommand":[9,7,1],
 "group__SHELL.html#structShellConfig":[9,7,2],
-"group__ac__info.html":[9,2],
-"group__ac__info.html#a0412b79bc3827c5cbf69fa5ae0f31f67":[9,2,0,9],
-"group__ac__info.html#a0dcdd4b302b3a27bba8c65b10567aa92":[9,2,0,5]
+"group__ac__info.html":[9,2]
 };

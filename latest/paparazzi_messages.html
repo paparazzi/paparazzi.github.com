@@ -246,6 +246,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#GPS_INT">GPS_INT (ID 155)</a></li>
 <li class="level2"><a href="#AHRS_EULER_INT">AHRS_EULER_INT (ID 156)</a></li>
 <li class="level2"><a href="#AHRS_QUAT_INT">AHRS_QUAT_INT (ID 157)</a></li>
+<li class="level2"><a href="#INS_FLOW_INFO">INS_FLOW_INFO (ID 158)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_NAV_STATUS">ROTORCRAFT_NAV_STATUS (ID 159)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_RADIO_CONTROL">ROTORCRAFT_RADIO_CONTROL (ID 160)</a></li>
 <li class="level2"><a href="#VFF_EXTENDED">VFF_EXTENDED (ID 161)</a></li>
@@ -3306,6 +3307,48 @@ AHRS_QUAT_INT (ID 157)</h2>
 <td class="markdownTableBodyNone">body_qz   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">comp_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="INS_FLOW_INFO"></a>
+INS_FLOW_INFO (ID 158)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vy   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">phi   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vx   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">theta   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vy_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">phi_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">p_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vx_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">theta_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">q_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">z_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vz_GT   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">thrust_bias   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">N   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">use_filter   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_NAV_STATUS"></a>
 ROTORCRAFT_NAV_STATUS (ID 159)</h2>
@@ -6684,7 +6727,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 6 2023 19:57:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 7 2023 22:56:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

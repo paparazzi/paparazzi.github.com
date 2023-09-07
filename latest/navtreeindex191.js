@@ -1,5 +1,11 @@
 var NAVTREEINDEX191 =
 {
+"spektrum_8h.html#a58c16366fa7fc51e87cf7c7bbdf54c4a":[12,0,1,0,6,55,20,8],
+"spektrum_8h.html#a6985e4f13e0b837ab788bd20daacb693":[12,0,1,0,6,55,20,0,1],
+"spektrum_8h.html#a92fabbff81b1872cd3cbb0ae8e75940f":[12,0,1,0,6,55,20,5],
+"spektrum_8h.html#aa6d7b4d84d53fbfd5c2d9f2abb292f04":[12,0,1,0,6,55,20,1,0],
+"spektrum_8h.html#ab9bf022e044a90934da22d4f817e546c":[12,0,1,0,6,55,20,3],
+"spektrum_8h.html#ace6cf51a5f170c61c5c5598f93329478":[12,0,1,0,6,55,20,2],
 "spektrum_8h.html#ad71bdb402076ab07a67a93d18bda37b4":[12,0,1,0,6,55,20,0,4],
 "spektrum_8h.html#adb896892bc656665ab82bbb7b8086e2f":[12,0,1,0,6,55,20,0,0],
 "spektrum_8h.html#aeb104958549da0e42a3edcb56790949b":[12,0,1,0,6,55,20,0,5],
@@ -154,8 +160,8 @@ var NAVTREEINDEX191 =
 "stabilization_8h.html#a2e7ccfe18fa4b4c7d686ddb7f9b3a731":[12,0,1,0,3,2,23,18],
 "stabilization_8h.html#a3043efd8d0c23638ed6424088e2e7bf3":[12,0,1,0,3,2,23,11],
 "stabilization_8h.html#a308ad4bc5a8ea5ca067b26939fe1bd4e":[12,0,1,0,3,2,23,1,6],
-"stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,2,1],
 "stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,3,1],
+"stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,3,2,23,2,1],
 "stabilization_8h.html#a45fd7e0c331ad443dfc4bd6b2e5e0aa0":[12,0,1,0,3,2,23,17],
 "stabilization_8h.html#a491ae3e10312e0b77ba279ea959fc95e":[12,0,1,0,3,2,23,1,0],
 "stabilization_8h.html#a4cfdfb33f8cf0e68b703f73cf9b9a060":[12,0,1,0,3,2,23,1,2],
@@ -173,8 +179,8 @@ var NAVTREEINDEX191 =
 "stabilization_8h.html#ac41f248e6265fdcd678691661a7f3c10":[12,0,1,0,3,2,23,13],
 "stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad":[12,0,1,0,3,2,23,19],
 "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a":[12,0,1,0,3,2,23,10],
-"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
 "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
+"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
 "stabilization_8h.html#af997ac8db0c8ededc57d411e8caa47b2":[12,0,1,0,3,2,23,14],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f":[12,0,1,0,3,2,23,3],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i":[12,0,1,0,3,2,23,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX191 =
 "stabilization__adaptive_8c.html#a9ce1427c8d77d4ba3f15ebc8015c43f5":[12,0,1,0,3,1,1,0,25],
 "stabilization__adaptive_8c.html#aa3fa9d7cd60cb95044911fe763d3ffde":[12,0,1,0,3,1,1,0,38],
 "stabilization__adaptive_8c.html#aa8195cf23a9970e5d0830beb426207f1":[12,0,1,0,3,1,1,0,0,3],
-"stabilization__adaptive_8c.html#aaca95839ffbc7b9a845e487b320b69a0":[12,0,1,0,3,1,1,0,18],
-"stabilization__adaptive_8c.html#aaec90f1f260626dfaa524247431f578f":[12,0,1,0,3,1,1,0,20],
-"stabilization__adaptive_8c.html#ab0b189c493ad0e6e6a12afd77b4dce7b":[12,0,1,0,3,1,1,0,10],
-"stabilization__adaptive_8c.html#ab681b564296b8683b4110508f528cdfa":[12,0,1,0,3,1,1,0,0,2],
-"stabilization__adaptive_8c.html#ab9948dbdbf52b4bbd03255f6ab5bb976":[12,0,1,0,3,1,1,0,42],
-"stabilization__adaptive_8c.html#abae73f3accc69eb2eb1b267a31036e2b":[12,0,1,0,3,1,1,0,0,4],
-"stabilization__adaptive_8c.html#abb6407ecea8c8ef1378d8c9e3d338721":[12,0,1,0,3,1,1,0,21]
+"stabilization__adaptive_8c.html#aaca95839ffbc7b9a845e487b320b69a0":[12,0,1,0,3,1,1,0,18]
 };

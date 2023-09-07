@@ -1,5 +1,12 @@
 var NAVTREEINDEX208 =
 {
+"throttle__curve_8c.html#aa5a470d0242ebaeb8f238a036386aeca":[12,0,1,0,6,33,2,4],
+"throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243":[12,0,1,0,6,33,2,7],
+"throttle__curve_8c.html#ace063d8946e46ee57829acb1c90cc5e7":[12,0,1,0,6,33,2,6],
+"throttle__curve_8c.html#ad3908eda77cbc31284f81840c3efe78a":[12,0,1,0,6,33,2,1],
+"throttle__curve_8c.html#aeaa9f82b8ccadd612969f4ace31805b3":[12,0,1,0,6,33,2,0],
+"throttle__curve_8c_source.html":[12,0,1,0,6,33,2],
+"throttle__curve_8h.html":[12,0,1,0,6,33,3],
 "throttle__curve_8h.html#a08dcd9676185f0295551960ad66eec27":[12,0,1,0,6,33,3,1,0],
 "throttle__curve_8h.html#a118b529a7735b60fb4b5383d44878bef":[12,0,1,0,6,33,3,1,3],
 "throttle__curve_8h.html#a221e1cf040a3e43d119178667fd76aad":[12,0,1,0,6,33,3,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX208 =
 "uav__recovery_8c.html#a7f215cba9c27ab4910585729899ae4fc":[12,0,1,0,6,69,0,11],
 "uav__recovery_8c.html#a84079432df015be99b1c4c09d539d82e":[12,0,1,0,6,69,0,8],
 "uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff":[12,0,1,0,6,69,0,15],
-"uav__recovery_8c.html#a9c3944426205456273cd8c7f1b880f1d":[12,0,1,0,6,69,0,18],
-"uav__recovery_8c.html#a9c997b8e616fff9243a44110e922490b":[12,0,1,0,6,69,0,7],
-"uav__recovery_8c.html#abd78d8457c4b7bd26530905f80f3a318":[12,0,1,0,6,69,0,3],
-"uav__recovery_8c.html#ac2dac752a8b7bced533b7f19bdcc893e":[12,0,1,0,6,69,0,6],
-"uav__recovery_8c.html#ad258fff54e26cfc7c096274a72469411":[12,0,1,0,6,69,0,13],
-"uav__recovery_8c.html#ad7612c3872441d6da9110cad13f82200":[12,0,1,0,6,69,0,2],
-"uav__recovery_8c.html#ae522f8da76f9ca209cc57fed0df3a7b7":[12,0,1,0,6,69,0,14],
-"uav__recovery_8c.html#ae6def550b051adfea6d1b76720fe9959":[12,0,1,0,6,69,0,17]
+"uav__recovery_8c.html#a9c3944426205456273cd8c7f1b880f1d":[12,0,1,0,6,69,0,18]
 };

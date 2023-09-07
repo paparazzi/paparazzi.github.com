@@ -1,5 +1,9 @@
 var NAVTREEINDEX110 =
 {
+"lsm303dlhc__regs_8h.html#a0765435ffe5ab3f0df7787bf4b33a50b":[12,0,1,0,7,76,31],
+"lsm303dlhc__regs_8h.html#a0c55617ebc9fb45ada46ac1656150283":[12,0,1,0,7,76,72],
+"lsm303dlhc__regs_8h.html#a0cdb003ffcc1d3964a00c867f7b38891":[12,0,1,0,7,76,12],
+"lsm303dlhc__regs_8h.html#a0ea365486bf9b20640a140cd188fea29":[12,0,1,0,7,76,76],
 "lsm303dlhc__regs_8h.html#a135b02b45dd594122a163da3c7cd5b91":[12,0,1,0,7,76,45],
 "lsm303dlhc__regs_8h.html#a13728ec3408787897b6e278fc7e140d5":[12,0,1,0,7,76,2],
 "lsm303dlhc__regs_8h.html#a1680371acef655e0091506da7364cafc":[12,0,1,0,7,76,35],
@@ -145,8 +149,8 @@ var NAVTREEINDEX110 =
 "lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b":[12,0,1,0,7,79,0,6],
 "lsm6ds33__i2c_8h.html#a9106acb39d21133d8910d11995882632":[12,0,1,0,7,79,0,5],
 "lsm6ds33__i2c_8h.html#a91c61d5d29e57e8dea02647c54dbfd86":[12,0,1,0,7,79,0,3],
-"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,79,2,1],
 "lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,79,1,0],
+"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,79,2,1],
 "lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130":[12,0,1,0,7,79,5],
 "lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999":[12,0,1,0,7,79,3],
 "lsm6ds33__i2c_8h.html#aca01e794d44828f26da9a7fd01efc4fe":[12,0,1,0,7,79,0,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX110 =
 "lsm6ds33__regs_8h.html#ac28de09270f6d9acd9ce914c8376b796":[12,0,1,0,7,80,18],
 "lsm6ds33__regs_8h.html#ac54b123f89c4e06882082ea817b79ee4":[12,0,1,0,7,80,34],
 "lsm6ds33__regs_8h.html#aca9cf8ad61557af5151a383f6bba9131":[12,0,1,0,7,80,25],
-"lsm6ds33__regs_8h.html#acb6887220d01778a9e334cab0609a1c8":[12,0,1,0,7,80,53],
-"lsm6ds33__regs_8h.html#ad03acdd4404890464729247608b1c488":[12,0,1,0,7,80,22],
-"lsm6ds33__regs_8h.html#ad8124789871bd114e20b556376da78c9":[12,0,1,0,7,80,55],
-"lsm6ds33__regs_8h.html#add0cc1e64a7fcab62c139bbbc7496a63":[12,0,1,0,7,80,28],
-"lsm6ds33__regs_8h.html#adfbfc76be414a60bb65a8e4213d9c77b":[12,0,1,0,7,80,14]
+"lsm6ds33__regs_8h.html#acb6887220d01778a9e334cab0609a1c8":[12,0,1,0,7,80,53]
 };
