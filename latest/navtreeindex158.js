@@ -1,5 +1,12 @@
 var NAVTREEINDEX158 =
 {
+"onboard_modules.html#modules_category_radio_control":[1,0,33],
+"onboard_modules.html#modules_category_range_finder":[1,0,34],
+"onboard_modules.html#modules_category_sensors":[1,0,35],
+"onboard_modules.html#modules_category_sonar":[1,0,36],
+"onboard_modules.html#modules_category_stabilization":[1,0,37],
+"onboard_modules.html#modules_category_stereocam":[1,0,38],
+"onboard_modules.html#modules_category_switching":[1,0,39],
 "onboard_modules.html#modules_category_system_identification":[1,0,40],
 "onboard_modules.html#modules_list":[1,0],
 "opa__ap_2baro__board_8h.html":[12,0,1,0,1,18,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX158 =
 "opa__ftd__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,54,26],
 "opa__ftd__1_80_8h.html#a97486067a300c88b1f88f6ab8727c6cf":[12,0,1,0,1,54,176],
 "opa__ftd__1_80_8h.html#a97add9c1b3a9abb9d7c1066d26b2ef2a":[12,0,1,0,1,54,120],
-"opa__ftd__1_80_8h.html#a99df90574479e3cd4cf0ea51c63e1595":[12,0,1,0,1,54,150],
-"opa__ftd__1_80_8h.html#a9c90f2615bc6566f45e326285819f6d4":[12,0,1,0,1,54,95],
-"opa__ftd__1_80_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,54,183],
-"opa__ftd__1_80_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d":[12,0,1,0,1,54,83],
-"opa__ftd__1_80_8h.html#a9e5d073e545986232b0f4a999f179e0e":[12,0,1,0,1,54,43],
-"opa__ftd__1_80_8h.html#a9edea038e84fe10c9a71436253cc8ea1":[12,0,1,0,1,54,126],
-"opa__ftd__1_80_8h.html#aa13f350e5a2b3f2384f7115bdcc43dc9":[12,0,1,0,1,54,114],
-"opa__ftd__1_80_8h.html#aa24d219024204e9fd48eb2681b8d5191":[12,0,1,0,1,54,46]
+"opa__ftd__1_80_8h.html#a99df90574479e3cd4cf0ea51c63e1595":[12,0,1,0,1,54,150]
 };

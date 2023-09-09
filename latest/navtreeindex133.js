@@ -1,5 +1,12 @@
 var NAVTREEINDEX133 =
 {
+"module__telemetry_transparent.html":[1,111],
+"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,111,1],
+"module__telemetry_transparent.html#functions__telemetry_transparent":[1,111,2],
+"module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,111,0],
+"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,111,2,0],
+"module__telemetry_transparent_frsky_x.html":[1,112],
+"module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,112,1],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,112,0],
 "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x":[1,112,1,0],
 "module__telemetry_transparent_gec.html":[1,113],
@@ -242,12 +249,5 @@ var NAVTREEINDEX133 =
 "modules_2datalink_2superbitrf_8h.html#a60752b418cec96550bc0dc27a2644f57":[12,0,1,0,6,14,28,6],
 "modules_2datalink_2superbitrf_8h.html#a62eaf6e8c7db5b72ad5f4f6c43654c8d":[12,0,1,0,6,14,28,0,31],
 "modules_2datalink_2superbitrf_8h.html#a62eaf6e8c7db5b72ad5f4f6c43654c8d":[12,0,1,0,0,2,1,2,1,0,31],
-"modules_2datalink_2superbitrf_8h.html#a6714bbf604e39f172a0686abe3d6f6c2":[12,0,1,0,6,14,28,14],
-"modules_2datalink_2superbitrf_8h.html#a694f702b729360c1afc0c5aaa1b6339a":[12,0,1,0,6,14,28,0,13],
-"modules_2datalink_2superbitrf_8h.html#a694f702b729360c1afc0c5aaa1b6339a":[12,0,1,0,0,2,1,2,1,0,13],
-"modules_2datalink_2superbitrf_8h.html#a6a734326af21f38fbff5140c515712be":[12,0,1,0,6,14,28,5],
-"modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[12,0,1,0,6,14,28,0,18],
-"modules_2datalink_2superbitrf_8h.html#a6c88b17874a1317b5e85eda96587cbaa":[12,0,1,0,0,2,1,2,1,0,18],
-"modules_2datalink_2superbitrf_8h.html#a6dbe38536b336883c08758542ec47552":[12,0,1,0,6,14,28,1],
-"modules_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11":[12,0,1,0,6,14,28,0,25]
+"modules_2datalink_2superbitrf_8h.html#a6714bbf604e39f172a0686abe3d6f6c2":[12,0,1,0,6,14,28,14]
 };

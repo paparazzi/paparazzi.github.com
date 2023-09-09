@@ -1,5 +1,12 @@
 var NAVTREEINDEX76 =
 {
+"gvf__ellipse_8c_source.html":[12,0,1,0,6,30,0,1,0],
+"gvf__ellipse_8h.html":[12,0,1,0,6,30,0,1,1],
+"gvf__ellipse_8h.html#a1886d730c9fd15026b0c9b4a4ed901a5":[12,0,1,0,6,30,0,1,1,0,0],
+"gvf__ellipse_8h.html#a3f4c268b0755ec92adee7e8b38a1bab9":[12,0,1,0,6,30,0,1,1,0,1],
+"gvf__ellipse_8h.html#a706f8b1069124ea65d6fed5f0c433cd8":[12,0,1,0,6,30,0,1,1,1],
+"gvf__ellipse_8h.html#a7728b83a07d7bafb46d02595465e8bf8":[12,0,1,0,6,30,0,1,1,2],
+"gvf__ellipse_8h.html#a780d4fcdb9bf3ab50d2000b93b0665f0":[12,0,1,0,6,30,0,1,1,0,2],
 "gvf__ellipse_8h.html#a79aee526ebb50d0edc37282948987757":[12,0,1,0,6,30,0,1,1,0,3],
 "gvf__ellipse_8h.html#a907f43d1a94e3d3037d51c05366171db":[12,0,1,0,6,30,0,1,1,0,4],
 "gvf__ellipse_8h.html#structgvf__ell__par":[12,0,1,0,6,30,0,1,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX76 =
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a893ad04ceb032935dc9efcec43f2a628":[12,0,1,0,6,18,12,2,0],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97adc48911cdb060bd1756d1620ab4956f0":[12,0,1,0,6,18,12,2,6],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97af3af51501c9895a71f3fc24a3e68fce8":[12,0,1,0,6,18,12,2,2],
-"hackhd_8h.html#af32d92b29b1c7179834f3877c59069d1":[12,0,1,0,6,18,12,5],
-"hackhd_8h.html#aff5cce8be12d8aa805220b6c744887da":[12,0,1,0,6,18,12,0,1],
-"hackhd_8h.html#structHackHD":[12,0,1,0,6,18,12,0],
-"hackhd_8h_source.html":[12,0,1,0,6,18,12],
-"hal__stm32__dma_8c.html":[12,0,1,0,0,0,0,5],
-"hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c":[12,0,1,0,0,0,0,5,6],
-"hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30":[12,0,1,0,0,0,0,5,9],
-"hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb":[12,0,1,0,0,0,0,5,11]
+"hackhd_8h.html#af32d92b29b1c7179834f3877c59069d1":[12,0,1,0,6,18,12,5]
 };

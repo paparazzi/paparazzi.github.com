@@ -1,5 +1,12 @@
 var NAVTREEINDEX129 =
 {
+"module__imu_chimera.html#module_load_example__imu_chimera":[1,184,0],
+"module__imu_chimera.html#module_xml__imu_chimera":[1,184,0,0],
+"module__imu_common.html":[1,185],
+"module__imu_common.html#functions__imu_common":[1,185,1],
+"module__imu_common.html#module_load_example__imu_common":[1,185,0],
+"module__imu_common.html#module_xml__imu_common":[1,185,1,0],
+"module__imu_cube.html":[1,186],
 "module__imu_cube.html#functions__imu_cube":[1,186,1],
 "module__imu_cube.html#module_load_example__imu_cube":[1,186,0],
 "module__imu_cube.html#module_xml__imu_cube":[1,186,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX129 =
 "module__lidar_lite.html#configuration__lidar_lite":[1,231,1],
 "module__lidar_lite.html#functions__lidar_lite":[1,231,2],
 "module__lidar_lite.html#module_load_example__lidar_lite":[1,231,0],
-"module__lidar_lite.html#module_xml__lidar_lite":[1,231,2,0],
-"module__lidar_sf11.html":[1,232],
-"module__lidar_sf11.html#configuration__lidar_sf11":[1,232,1],
-"module__lidar_sf11.html#functions__lidar_sf11":[1,232,2],
-"module__lidar_sf11.html#module_load_example__lidar_sf11":[1,232,0],
-"module__lidar_sf11.html#module_xml__lidar_sf11":[1,232,2,0],
-"module__lidar_tfmini.html":[1,233],
-"module__lidar_tfmini.html#configuration__lidar_tfmini":[1,233,1]
+"module__lidar_lite.html#module_xml__lidar_lite":[1,231,2,0]
 };

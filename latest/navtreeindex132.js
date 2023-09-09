@@ -1,5 +1,12 @@
 var NAVTREEINDEX132 =
 {
+"module__rpm_sensor.html":[1,386],
+"module__rpm_sensor.html#configuration__rpm_sensor":[1,386,1],
+"module__rpm_sensor.html#functions__rpm_sensor":[1,386,2],
+"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,386,0],
+"module__rpm_sensor.html#module_xml__rpm_sensor":[1,386,2,0],
+"module__rssi.html":[1,293],
+"module__rssi.html#datalink_functions__rssi":[1,293,2],
 "module__rssi.html#functions__rssi":[1,293,1],
 "module__rssi.html#module_load_example__rssi":[1,293,0],
 "module__rssi.html#module_xml__rssi":[1,293,2,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX132 =
 "module__telemetry_superbitrf.html":[1,110],
 "module__telemetry_superbitrf.html#functions__telemetry_superbitrf":[1,110,1],
 "module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf":[1,110,0],
-"module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,110,1,0],
-"module__telemetry_transparent.html":[1,111],
-"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,111,1],
-"module__telemetry_transparent.html#functions__telemetry_transparent":[1,111,2],
-"module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,111,0],
-"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,111,2,0],
-"module__telemetry_transparent_frsky_x.html":[1,112],
-"module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,112,1]
+"module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,110,1,0]
 };

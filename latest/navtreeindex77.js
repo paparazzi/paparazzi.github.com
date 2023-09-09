@@ -1,5 +1,12 @@
 var NAVTREEINDEX77 =
 {
+"hackhd_8h.html#aff5cce8be12d8aa805220b6c744887da":[12,0,1,0,6,18,12,0,1],
+"hackhd_8h.html#structHackHD":[12,0,1,0,6,18,12,0],
+"hackhd_8h_source.html":[12,0,1,0,6,18,12],
+"hal__stm32__dma_8c.html":[12,0,1,0,0,0,0,5],
+"hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c":[12,0,1,0,0,0,0,5,6],
+"hal__stm32__dma_8c.html#a2841bb25b0b954e8896a6b36174b3c30":[12,0,1,0,0,0,0,5,9],
+"hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb":[12,0,1,0,0,0,0,5,11],
 "hal__stm32__dma_8c.html#a3de6f4d870466df970d6c01201b6fdd7":[12,0,1,0,0,0,0,5,14],
 "hal__stm32__dma_8c.html#a572bb7d0ec656fb7a86d18f319b43db8":[12,0,1,0,0,0,0,5,10],
 "hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3":[12,0,1,0,0,0,0,5,15],
@@ -242,12 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#add5ffd903addbd7fe517aa4b6400a3f1":[12,0,1,0,6,41,5,56],
 "high__speed__logger__direct__memory_8c.html#add8bd2568acb80e49522a141ff812689":[12,0,1,0,6,41,5,67],
 "high__speed__logger__direct__memory_8c.html#ae5d37d82f6d54b83cd109477388f2af6":[12,0,1,0,6,41,5,41],
-"high__speed__logger__direct__memory_8c.html#ae84d4863b33c415f2423842cff89b961":[12,0,1,0,6,41,5,40],
-"high__speed__logger__direct__memory_8c.html#ae9a315c76ea79e68061e44ead96445c2":[12,0,1,0,6,41,5,63],
-"high__speed__logger__direct__memory_8c.html#aec11780c443a9a6fe5d78d70fb3087ea":[12,0,1,0,6,41,5,50],
-"high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db":[12,0,1,0,6,41,5,34],
-"high__speed__logger__direct__memory_8c.html#aef14cb0b7724c47ddd230c64a57a7004":[12,0,1,0,6,41,5,15],
-"high__speed__logger__direct__memory_8c.html#aefaf4b09a745736700f62d961c79c5ec":[12,0,1,0,6,41,5,10],
-"high__speed__logger__direct__memory_8c.html#af6678d0a2636057a3984e67ba0b655c5":[12,0,1,0,6,41,5,44],
-"high__speed__logger__direct__memory_8c.html#afd0f786af2e70f2a97493b2b674a4124":[12,0,1,0,6,41,5,12]
+"high__speed__logger__direct__memory_8c.html#ae84d4863b33c415f2423842cff89b961":[12,0,1,0,6,41,5,40]
 };

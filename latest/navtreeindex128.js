@@ -1,5 +1,12 @@
 var NAVTREEINDEX128 =
 {
+"module__gps_intermcu.html":[1,142],
+"module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,142,2],
+"module__gps_intermcu.html#functions__gps_intermcu":[1,142,1],
+"module__gps_intermcu.html#module_load_example__gps_intermcu":[1,142,0],
+"module__gps_intermcu.html#module_xml__gps_intermcu":[1,142,2,0],
+"module__gps_mediatek_diy.html":[1,143],
+"module__gps_mediatek_diy.html#configuration__gps_mediatek_diy":[1,143,1],
 "module__gps_mediatek_diy.html#functions__gps_mediatek_diy":[1,143,2],
 "module__gps_mediatek_diy.html#module_load_example__gps_mediatek_diy":[1,143,0],
 "module__gps_mediatek_diy.html#module_xml__gps_mediatek_diy":[1,143,2,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX128 =
 "module__imu_bmi088_i2c.html#functions__imu_bmi088_i2c":[1,183,2],
 "module__imu_bmi088_i2c.html#module_load_example__imu_bmi088_i2c":[1,183,0],
 "module__imu_bmi088_i2c.html#module_xml__imu_bmi088_i2c":[1,183,2,0],
-"module__imu_chimera.html":[1,184],
-"module__imu_chimera.html#module_load_example__imu_chimera":[1,184,0],
-"module__imu_chimera.html#module_xml__imu_chimera":[1,184,0,0],
-"module__imu_common.html":[1,185],
-"module__imu_common.html#functions__imu_common":[1,185,1],
-"module__imu_common.html#module_load_example__imu_common":[1,185,0],
-"module__imu_common.html#module_xml__imu_common":[1,185,1,0],
-"module__imu_cube.html":[1,186]
+"module__imu_chimera.html":[1,184]
 };

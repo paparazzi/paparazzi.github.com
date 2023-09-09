@@ -1,5 +1,12 @@
 var NAVTREEINDEX126 =
 {
+"module__aoa_adc.html#module_xml__aoa_adc":[1,351,2,0],
+"module__aoa_pwm.html":[1,352],
+"module__aoa_pwm.html#configuration__aoa_pwm":[1,352,1],
+"module__aoa_pwm.html#functions__aoa_pwm":[1,352,2],
+"module__aoa_pwm.html#module_load_example__aoa_pwm":[1,352,0],
+"module__aoa_pwm.html#module_xml__aoa_pwm":[1,352,2,0],
+"module__approach_moving_target.html":[1,83],
 "module__approach_moving_target.html#functions__approach_moving_target":[1,83,1],
 "module__approach_moving_target.html#module_load_example__approach_moving_target":[1,83,0],
 "module__approach_moving_target.html#module_xml__approach_moving_target":[1,83,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX126 =
 "module__cv_georeference.html#module_xml__cv_georeference":[1,58,1,0],
 "module__cv_opencvdemo.html":[1,59],
 "module__cv_opencvdemo.html#configuration__cv_opencvdemo":[1,59,1],
-"module__cv_opencvdemo.html#functions__cv_opencvdemo":[1,59,2],
-"module__cv_opencvdemo.html#module_load_example__cv_opencvdemo":[1,59,0],
-"module__cv_opencvdemo.html#module_xml__cv_opencvdemo":[1,59,2,0],
-"module__cv_opticflow.html":[1,60],
-"module__cv_opticflow.html#configuration__cv_opticflow":[1,60,1],
-"module__cv_opticflow.html#functions__cv_opticflow":[1,60,2],
-"module__cv_opticflow.html#module_load_example__cv_opticflow":[1,60,0],
-"module__cv_opticflow.html#module_xml__cv_opticflow":[1,60,2,0]
+"module__cv_opencvdemo.html#functions__cv_opencvdemo":[1,59,2]
 };
