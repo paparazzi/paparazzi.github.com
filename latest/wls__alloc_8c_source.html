@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">float</span> u_opt[CA_N_U];</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">int</span> infeasible_index[CA_N_U] <a class="code" href="common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">int</span> n_infeasible = 0;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">float</span> lambda[CA_N_U];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>[CA_N_U];</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">float</span> W[CA_N_U];</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">// Initialize u and the working set, if provided from input</span></div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (n_infeasible == 0) {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="comment">// all variables are within limits</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      memcpy(u, u_opt, n_u * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      memset(lambda, 0, n_u * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      memset(<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>, 0, n_u * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="comment">// d = d + A_free*p_free; lambda = A*d;</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_c; i++) {</div>
@@ -284,16 +284,16 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;          d[i] -= A_free[i][k] * p_free[k];</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; n_u; k++) {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;          lambda[k] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[i][k] * d[i];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>[k] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[i][k] * d[i];</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      }</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordtype">bool</span> break_flag = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="comment">// lambda = lambda x W;</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_u; i++) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        lambda[i] *= W[i];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>[i] *= W[i];</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">// if any lambdas are negative, keep looking for solution</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (lambda[i] &lt; -FLT_EPSILON) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>[i] &lt; -FLT_EPSILON) {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;          break_flag = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          W[i] = 0;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          <span class="comment">// add a free index</span></div>
@@ -422,12 +422,13 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div class="ttc" id="ains__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00257">ins_alt_float.c:257</a></div></div>
 <div class="ttc" id="alight__solar_8c_html_a865f598ce218c5496c018323caf1fb4d"><div class="ttname"><a href="light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d">up</a></div><div class="ttdeci">uint16_t up[LIGHT_NB]</div><div class="ttdef"><b>Definition:</b> <a href="light__solar_8c_source.html#l00048">light_solar.c:48</a></div></div>
 <div class="ttc" id="anamespacesimple__quad__sim_html_aa74291aa67f0cfeebac5b8133966d9bf"><div class="ttname"><a href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">simple_quad_sim.m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="simple__quad__sim_8py_source.html#l00173">simple_quad_sim.py:173</a></div></div>
+<div class="ttc" id="aoptical__flow__landing_8c_html_acac4a565486bad0b88b62387d8a5d891"><div class="ttname"><a href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a></div><div class="ttdeci">float lambda</div><div class="ttdef"><b>Definition:</b> <a href="optical__flow__landing_8c_source.html#l00257">optical_flow_landing.c:257</a></div></div>
 <div class="ttc" id="aqr__solve_8c_html_a90d5a7f0475008f757334c945452b340"><div class="ttname"><a href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340">qr_solve</a></div><div class="ttdeci">void qr_solve(int m, int n, float a[], float b[], float x[])</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l01548">qr_solve.c:1548</a></div></div>
 <div class="ttc" id="aqr__solve_8h_html"><div class="ttname"><a href="qr__solve_8h.html">qr_solve.h</a></div></div>
 <div class="ttc" id="ar8lib__min_8h_html"><div class="ttname"><a href="r8lib__min_8h.html">r8lib_min.h</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a135981fcec0a59310c170cfdb95e491d"><div class="ttname"><a href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a></div><div class="ttdeci">static float Wv[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00133">stabilization_indi.c:133</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="atextons_8c_html_ab1551d8043c2aa4410fb7dbb1fe3be7b"><div class="ttname"><a href="textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">alpha</a></div><div class="ttdeci">float alpha</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00107">textons.c:107</a></div></div>
+<div class="ttc" id="atextons_8c_html_ab1551d8043c2aa4410fb7dbb1fe3be7b"><div class="ttname"><a href="textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">alpha</a></div><div class="ttdeci">float alpha</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00132">textons.c:132</a></div></div>
 <div class="ttc" id="awedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="awls__alloc_8c_html_a4aee565c4388fda3d9e4d12c6b6f22fb"><div class="ttname"><a href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values</a></div><div class="ttdeci">void print_final_values(int n_u, int n_v, float *u, float **B, float *v, float *umin, float *umax)</div></div>
 <div class="ttc" id="awls__alloc_8c_html_a90c6e2dcdb59035738d92ab5a763981e"><div class="ttname"><a href="wls__alloc_8c.html#a90c6e2dcdb59035738d92ab5a763981e">print_in_and_outputs</a></div><div class="ttdeci">void print_in_and_outputs(int n_c, int n_free, float **A_free_ptr, float *d, float *p_free)</div></div>
@@ -441,7 +442,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8c.html">wls_alloc.c</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -19,6 +19,7 @@ var opticflow__calculator_8h =
       [ "fast9_rsize", "opticflow__calculator_8h.html#aee4ccb24fc4030263d5a6d4af13e6952", null ],
       [ "fast9_threshold", "opticflow__calculator_8h.html#ab85fa885515cb68118e90cc57d846708", null ],
       [ "feature_management", "opticflow__calculator_8h.html#ad458a766df7f0952e880fdfdadad0a3b", null ],
+      [ "fps", "opticflow__calculator_8h.html#ab3bab8f3e362de9c3ab1d7843ad81062", null ],
       [ "got_first_img", "opticflow__calculator_8h.html#a50177a5e749edc0bdc8ea6a33fee44ac", null ],
       [ "id", "opticflow__calculator_8h.html#af2e32767b08ec68164d72904d3ff50ea", null ],
       [ "img_gray", "opticflow__calculator_8h.html#a48090cfda015ecd52f82d6b72c8052fd", null ],

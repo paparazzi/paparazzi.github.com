@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('textons_8c.html',''); initResizable();
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="cv_8h_source.html">modules/computer_vision/cv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="textons_8h_source.html">modules/computer_vision/textons.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for textons.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,33 +107,35 @@ $(document).ready(function(){initNavTree('textons_8c.html',''); initResizable();
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="textons_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2computer__vision_2textons_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2computer__vision_2textons_8c" id="asw_2airborne_2modules_2computer__vision_2textons_8c">
-<area shape="rect" title="Takes an image and represents the texture and colors in the image with a texton histogram." alt="" coords="859,5,1058,47"/>
-<area shape="rect" title=" " alt="" coords="216,587,287,613"/>
-<area shape="rect" title=" " alt="" coords="1009,102,1076,129"/>
-<area shape="rect" href="cv_8h.html" title="Computer vision framework for onboard processing." alt="" coords="764,102,984,129"/>
-<area shape="rect" href="textons_8h.html" title="Takes an image and represents the texture and colors in the image with a texton histogram." alt="" coords="1163,95,1354,136"/>
-<area shape="rect" title=" " alt="" coords="684,184,768,211"/>
-<area shape="rect" title=" " alt="" coords="808,661,863,688"/>
-<area shape="rect" href="video__device_8h.html" title=" " alt="" coords="944,184,1141,211"/>
-<area shape="rect" title=" " alt="" coords="792,184,919,211"/>
-<area shape="rect" title=" " alt="" coords="1085,266,1168,293"/>
-<area shape="rect" title=" " alt="" coords="974,266,1060,293"/>
-<area shape="rect" href="image_8h.html" title="Image helper functions like resizing, color filter, converters..." alt="" coords="759,259,950,300"/>
-<area shape="rect" title=" " alt="" coords="809,348,900,375"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="658,348,725,375"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="543,512,723,539"/>
-<area shape="rect" title=" " alt="" coords="411,661,482,688"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="276,512,468,539"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="915,423,1066,464"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="740,423,891,464"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="550,423,716,464"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="311,587,467,613"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="594,587,747,613"/>
-<area shape="rect" title=" " alt="" coords="38,661,100,688"/>
-<area shape="rect" title=" " alt="" coords="254,661,322,688"/>
-<area shape="rect" title=" " alt="" coords="34,587,192,613"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="873,512,998,539"/>
-<area shape="rect" title=" " alt="" coords="1243,184,1314,211"/>
+<area shape="rect" title="Takes an image and represents the texture and colors in the image with a texton histogram." alt="" coords="1581,5,1780,47"/>
+<area shape="rect" title=" " alt="" coords="1431,587,1501,613"/>
+<area shape="rect" title=" " alt="" coords="1718,102,1785,129"/>
+<area shape="rect" href="cv_8h.html" title="Computer vision framework for onboard processing." alt="" coords="1040,102,1260,129"/>
+<area shape="rect" href="textons_8h.html" title="Takes an image and represents the texture and colors in the image with a texton histogram." alt="" coords="1809,95,2000,136"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1337,184,1510,211"/>
+<area shape="rect" title=" " alt="" coords="1188,184,1272,211"/>
+<area shape="rect" title=" " alt="" coords="779,661,833,688"/>
+<area shape="rect" href="video__device_8h.html" title=" " alt="" coords="845,184,1042,211"/>
+<area shape="rect" title=" " alt="" coords="1228,266,1355,293"/>
+<area shape="rect" title=" " alt="" coords="930,266,1013,293"/>
+<area shape="rect" title=" " alt="" coords="1117,266,1204,293"/>
+<area shape="rect" href="image_8h.html" title="Image helper functions like resizing, color filter, converters..." alt="" coords="715,259,905,300"/>
+<area shape="rect" title=" " alt="" coords="765,348,855,375"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="546,348,613,375"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="811,512,991,539"/>
+<area shape="rect" title=" " alt="" coords="5,661,76,688"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="209,512,401,539"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="735,423,885,464"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="560,423,711,464"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="317,423,484,464"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="227,587,383,613"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="787,587,940,613"/>
+<area shape="rect" title=" " alt="" coords="200,661,263,688"/>
+<area shape="rect" title=" " alt="" coords="328,661,396,688"/>
+<area shape="rect" title=" " alt="" coords="45,587,202,613"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="610,512,735,539"/>
+<area shape="rect" title=" " alt="" coords="1869,184,1940,211"/>
+<area shape="rect" title=" " alt="" coords="1481,259,1643,300"/>
 </map>
 </div>
 </div>
@@ -140,17 +143,25 @@ $(document).ready(function(){initNavTree('textons_8c.html',''); initResizable();
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:aab5708ecaefdb2b44290d283334067d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#aab5708ecaefdb2b44290d283334067d1">MAX_N_TEXTONS</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:aab5708ecaefdb2b44290d283334067d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3106a866f9e54bad0ea09d8f0cffb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#adb3106a866f9e54bad0ea09d8f0cffb9">TEXTONS_RUN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:adb3106a866f9e54bad0ea09d8f0cffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379cc0a460d34f8fa4eacf860569380d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a379cc0a460d34f8fa4eacf860569380d">TEXTONS_FPS</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a379cc0a460d34f8fa4eacf860569380d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade8ca2f40873c1573352ad1bc511868"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#aade8ca2f40873c1573352ad1bc511868">TEXTONS_LOAD_DICTIONARY</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:aade8ca2f40873c1573352ad1bc511868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c42458d6c8409b91d27227f297229d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a38c42458d6c8409b91d27227f297229d">TEXTONS_ALPHA</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:ae5fa41260790f0154d679f33bdd7d559"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#ae5fa41260790f0154d679f33bdd7d559">TEXTONS_REINITIALIZE_DICTIONARY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae5fa41260790f0154d679f33bdd7d559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c42458d6c8409b91d27227f297229d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a38c42458d6c8409b91d27227f297229d">TEXTONS_ALPHA</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a38c42458d6c8409b91d27227f297229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808afb1f7ef3d3d06e7bb967399e0ddd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a808afb1f7ef3d3d06e7bb967399e0ddd">TEXTONS_N_TEXTONS</a>&#160;&#160;&#160;20</td></tr>
 <tr class="separator:a808afb1f7ef3d3d06e7bb967399e0ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e8254a6dd58765e5484dbab02b46d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#ae1e8254a6dd58765e5484dbab02b46d2">TEXTONS_N_SAMPLES</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memitem:ae1e8254a6dd58765e5484dbab02b46d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#ae1e8254a6dd58765e5484dbab02b46d2">TEXTONS_N_SAMPLES</a>&#160;&#160;&#160;250</td></tr>
 <tr class="separator:ae1e8254a6dd58765e5484dbab02b46d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f00de43dd5ab23d5aaea3333937ce48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a5f00de43dd5ab23d5aaea3333937ce48">TEXTONS_PATCH_SIZE</a>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:a5f00de43dd5ab23d5aaea3333937ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3496f352df7302ad18c9e49f1fa7d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#ad3496f352df7302ad18c9e49f1fa7d93">TEXTONS_N_LEARNING_SAMPLES</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="memitem:ad3496f352df7302ad18c9e49f1fa7d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#ad3496f352df7302ad18c9e49f1fa7d93">TEXTONS_N_LEARNING_SAMPLES</a>&#160;&#160;&#160;5000</td></tr>
 <tr class="separator:ad3496f352df7302ad18c9e49f1fa7d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb157a0820f04fbd4536ca42509ac14b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#afb157a0820f04fbd4536ca42509ac14b">TEXTONS_FULL_SAMPLING</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:afb157a0820f04fbd4536ca42509ac14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,14 +171,14 @@ Macros</h2></td></tr>
 <tr class="separator:ab3df4851fc0a5f0ba9965086f9aca4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec615e06f4e31eb5260754933d2e661"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a6ec615e06f4e31eb5260754933d2e661">TEXTONS_DICTIONARY_NUMBER</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a6ec615e06f4e31eb5260754933d2e661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a056e00a57f2fab0c13915e86baa18823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a056e00a57f2fab0c13915e86baa18823">DICTIONARY_PATH</a>&#160;&#160;&#160;/data/video/</td></tr>
-<tr class="separator:a056e00a57f2fab0c13915e86baa18823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aac17744a22b5c17774f5e2b35aa5b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a9aac17744a22b5c17774f5e2b35aa5b3">TEXTONS_DICTIONARY_PATH</a>&#160;&#160;&#160;/data/ftp/internal_000</td></tr>
+<tr class="separator:a9aac17744a22b5c17774f5e2b35aa5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5a28ef29bd02e895d11d195fc565526f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f">texton_func</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
-<tr class="memdesc:a5a28ef29bd02e895d11d195fc565526f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main texton processing function that first either loads or learns a dictionary and then extracts the texton histogram.  <a href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f">More...</a><br /></td></tr>
-<tr class="separator:a5a28ef29bd02e895d11d195fc565526f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e1ef8dc03056fdd2375a3207a62bfd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd">texton_func</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memdesc:af1e1ef8dc03056fdd2375a3207a62bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main texton processing function that first either loads or learns a dictionary and then extracts the texton histogram.  <a href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd">More...</a><br /></td></tr>
+<tr class="separator:af1e1ef8dc03056fdd2375a3207a62bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ba1b117446ed4075635e5d26107819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a89ba1b117446ed4075635e5d26107819">DictionaryTrainingYUV</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a>, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> width, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> height)</td></tr>
 <tr class="memdesc:a89ba1b117446ed4075635e5d26107819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that performs one pass for dictionary training.  <a href="textons_8c.html#a89ba1b117446ed4075635e5d26107819">More...</a><br /></td></tr>
 <tr class="separator:a89ba1b117446ed4075635e5d26107819"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +196,9 @@ Functions</h2></td></tr>
 <tr class="separator:ac363e3fda520a9cc84e35d929f01d62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba987c616eb0f83d63d1689238f4f7b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#aba987c616eb0f83d63d1689238f4f7b6">textons_stop</a> (void)</td></tr>
 <tr class="separator:aba987c616eb0f83d63d1689238f4f7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b36a3cb5143fc6eacbfa6049842535"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a99b36a3cb5143fc6eacbfa6049842535">get_entropy</a> (float *p_dist, int <a class="el" href="trilateration_8c.html#aa6702f5ca985a5b97e1534be9d374bba">D</a>)</td></tr>
+<tr class="memdesc:a99b36a3cb5143fc6eacbfa6049842535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that calculates a base-2 Shannon entropy for a probability distribution.  <a href="textons_8c.html#a99b36a3cb5143fc6eacbfa6049842535">More...</a><br /></td></tr>
+<tr class="separator:a99b36a3cb5143fc6eacbfa6049842535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -196,8 +210,14 @@ Variables</h2></td></tr>
 <tr class="separator:a9ebc1bb4a6672dda6bd59f6ddf59b879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c1f9ffc95bdb92779d73f088750028"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a37c1f9ffc95bdb92779d73f088750028">texton_distribution</a></td></tr>
 <tr class="separator:a37c1f9ffc95bdb92779d73f088750028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd78b5508e71a82956808eba675122b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a1cd78b5508e71a82956808eba675122b">listener</a> = NULL</td></tr>
+<tr class="separator:a1cd78b5508e71a82956808eba675122b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77f8244799e85284b8b438289f5f689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#af77f8244799e85284b8b438289f5f689">running</a> = <a class="el" href="textons_8c.html#adb3106a866f9e54bad0ea09d8f0cffb9">TEXTONS_RUN</a></td></tr>
+<tr class="separator:af77f8244799e85284b8b438289f5f689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2b99999b3e2213453a8050abaedb18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a6d2b99999b3e2213453a8050abaedb18">load_dictionary</a> = <a class="el" href="textons_8c.html#aade8ca2f40873c1573352ad1bc511868">TEXTONS_LOAD_DICTIONARY</a></td></tr>
 <tr class="separator:a6d2b99999b3e2213453a8050abaedb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe8d7e6a68a6f6fb90c5d8c159666df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#aafe8d7e6a68a6f6fb90c5d8c159666df">reinitialize_dictionary</a> = <a class="el" href="textons_8c.html#ae5fa41260790f0154d679f33bdd7d559">TEXTONS_REINITIALIZE_DICTIONARY</a></td></tr>
+<tr class="separator:aafe8d7e6a68a6f6fb90c5d8c159666df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7caf54cafbee8dab97e2c6a5ddf1c2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#aa7caf54cafbee8dab97e2c6a5ddf1c2e">alpha_uint</a> = <a class="el" href="textons_8c.html#a38c42458d6c8409b91d27227f297229d">TEXTONS_ALPHA</a></td></tr>
 <tr class="separator:aa7caf54cafbee8dab97e2c6a5ddf1c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6da202ca26862bd404352c44f08b19b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textons_8c.html#a6da202ca26862bd404352c44f08b19b9">n_textons</a> = <a class="el" href="textons_8c.html#a808afb1f7ef3d3d06e7bb967399e0ddd">TEXTONS_N_TEXTONS</a></td></tr>
@@ -229,19 +249,19 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a056e00a57f2fab0c13915e86baa18823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a056e00a57f2fab0c13915e86baa18823">&#9670;&nbsp;</a></span>DICTIONARY_PATH</h2>
+<a id="aab5708ecaefdb2b44290d283334067d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5708ecaefdb2b44290d283334067d1">&#9670;&nbsp;</a></span>MAX_N_TEXTONS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DICTIONARY_PATH&#160;&#160;&#160;/data/video/</td>
+          <td class="memname">#define MAX_N_TEXTONS&#160;&#160;&#160;255</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00112">112</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00043">43</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -252,12 +272,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTONS_ALPHA&#160;&#160;&#160;10</td>
+          <td class="memname">#define TEXTONS_ALPHA&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00049">49</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00067">67</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -273,7 +293,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00084">84</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00102">102</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -289,7 +309,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00079">79</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00097">97</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -305,7 +325,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00089">89</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00107">107</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+</div>
+</div>
+<a id="a9aac17744a22b5c17774f5e2b35aa5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aac17744a22b5c17774f5e2b35aa5b3">&#9670;&nbsp;</a></span>TEXTONS_DICTIONARY_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTONS_DICTIONARY_PATH&#160;&#160;&#160;/data/ftp/internal_000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00112">112</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+</div>
+</div>
+<a id="a379cc0a460d34f8fa4eacf860569380d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379cc0a460d34f8fa4eacf860569380d">&#9670;&nbsp;</a></span>TEXTONS_FPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTONS_FPS&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00052">52</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -321,7 +373,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00074">74</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00092">92</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -337,7 +389,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00044">44</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00057">57</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -348,12 +400,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTONS_N_LEARNING_SAMPLES&#160;&#160;&#160;10000</td>
+          <td class="memname">#define TEXTONS_N_LEARNING_SAMPLES&#160;&#160;&#160;5000</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00069">69</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00087">87</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -364,12 +416,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTONS_N_SAMPLES&#160;&#160;&#160;100</td>
+          <td class="memname">#define TEXTONS_N_SAMPLES&#160;&#160;&#160;250</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00059">59</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00077">77</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -385,7 +437,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00054">54</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00072">72</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -401,7 +453,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00064">64</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00082">82</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+</div>
+</div>
+<a id="ae5fa41260790f0154d679f33bdd7d559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fa41260790f0154d679f33bdd7d559">&#9670;&nbsp;</a></span>TEXTONS_REINITIALIZE_DICTIONARY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTONS_REINITIALIZE_DICTIONARY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00062">62</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+</div>
+</div>
+<a id="adb3106a866f9e54bad0ea09d8f0cffb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3106a866f9e54bad0ea09d8f0cffb9">&#9670;&nbsp;</a></span>TEXTONS_RUN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEXTONS_RUN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00047">47</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
 </div>
 </div>
@@ -448,11 +532,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00166">166</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00226">226</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="textons_8c_source.html#l00095">alpha_uint</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, <a class="el" href="textons_8c_source.html#l00039">dictionary_initialized</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="textons_8c_source.html#l00038">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00099">n_samples_image</a>, <a class="el" href="textons_8c_source.html#l00096">n_textons</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00132">alpha</a>, <a class="el" href="textons_8c_source.html#l00120">alpha_uint</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, <a class="el" href="textons_8c_source.html#l00040">dictionary_initialized</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="textons_8c_source.html#l00039">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00124">n_samples_image</a>, <a class="el" href="textons_8c_source.html#l00121">n_textons</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -461,7 +545,7 @@ Variables</h2></td></tr>
 <div class="center"><img src="textons_8c_a89ba1b117446ed4075635e5d26107819_icgraph.png" border="0" usemap="#atextons_8c_a89ba1b117446ed4075635e5d26107819_icgraph" alt=""/></div>
 <map name="atextons_8c_a89ba1b117446ed4075635e5d26107819_icgraph" id="atextons_8c_a89ba1b117446ed4075635e5d26107819_icgraph">
 <area shape="rect" title="Function that performs one pass for dictionary training." alt="" coords="299,5,465,32"/>
-<area shape="rect" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
+<area shape="rect" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
 <area shape="rect" href="textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d" title="Initialize." alt="" coords="5,5,104,32"/>
 </map>
 </div>
@@ -510,11 +594,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00311">311</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00371">371</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00102">border_height</a>, <a class="el" href="textons_8c_source.html#l00101">border_width</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="textons_8c_source.html#l00100">FULL_SAMPLING</a>, <a class="el" href="textons_8c_source.html#l00099">n_samples_image</a>, <a class="el" href="textons_8c_source.html#l00096">n_textons</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, and <a class="el" href="textons_8c_source.html#l00040">texton_distribution</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00127">border_height</a>, <a class="el" href="textons_8c_source.html#l00126">border_width</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="textons_8c_source.html#l00125">FULL_SAMPLING</a>, <a class="el" href="textons_8c_source.html#l00124">n_samples_image</a>, <a class="el" href="textons_8c_source.html#l00121">n_textons</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, and <a class="el" href="textons_8c_source.html#l00041">texton_distribution</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -523,10 +607,51 @@ Variables</h2></td></tr>
 <div class="center"><img src="textons_8c_acb1474caf9ec86b1856a974728be4a60_icgraph.png" border="0" usemap="#atextons_8c_acb1474caf9ec86b1856a974728be4a60_icgraph" alt=""/></div>
 <map name="atextons_8c_acb1474caf9ec86b1856a974728be4a60_icgraph" id="atextons_8c_acb1474caf9ec86b1856a974728be4a60_icgraph">
 <area shape="rect" title="Function that extracts a texton histogram from an image." alt="" coords="299,5,463,32"/>
-<area shape="rect" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
+<area shape="rect" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
 <area shape="rect" href="textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d" title="Initialize." alt="" coords="5,5,104,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a99b36a3cb5143fc6eacbfa6049842535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b36a3cb5143fc6eacbfa6049842535">&#9670;&nbsp;</a></span>get_entropy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float get_entropy </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>p_dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that calculates a base-2 Shannon entropy for a probability distribution. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_dist</td><td>The probability distribution array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">D</td><td>Size of the array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00593">593</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+<p class="reference">References <a class="el" href="trilateration_8c_source.html#l00035">D</a>.</p>
 
 </div>
 </div>
@@ -548,11 +673,11 @@ Variables</h2></td></tr>
 
 <p>Load a texton dictionary. </p>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00471">471</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00531">531</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, <a class="el" href="textons_8c_source.html#l00039">dictionary_initialized</a>, <a class="el" href="textons_8c_source.html#l00110">dictionary_logger</a>, <a class="el" href="textons_8c_source.html#l00103">dictionary_number</a>, <a class="el" href="textons_8c_source.html#l00112">DICTIONARY_PATH</a>, <a class="el" href="textons_8c_source.html#l00106">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00038">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00094">load_dictionary</a>, <a class="el" href="textons_8c_source.html#l00096">n_textons</a>, and <a class="el" href="textons_8c_source.html#l00097">patch_size</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, <a class="el" href="textons_8c_source.html#l00040">dictionary_initialized</a>, <a class="el" href="textons_8c_source.html#l00135">dictionary_logger</a>, <a class="el" href="textons_8c_source.html#l00128">dictionary_number</a>, <a class="el" href="textons_8c_source.html#l00131">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00039">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00118">load_dictionary</a>, <a class="el" href="textons_8c_source.html#l00121">n_textons</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, and <a class="el" href="textons_8c_source.html#l00112">TEXTONS_DICTIONARY_PATH</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -561,7 +686,7 @@ Variables</h2></td></tr>
 <div class="center"><img src="textons_8c_a21c316a603e6af19c1b7c42f5eabb16c_icgraph.png" border="0" usemap="#atextons_8c_a21c316a603e6af19c1b7c42f5eabb16c_icgraph" alt=""/></div>
 <map name="atextons_8c_a21c316a603e6af19c1b7c42f5eabb16c_icgraph" id="atextons_8c_a21c316a603e6af19c1b7c42f5eabb16c_icgraph">
 <area shape="rect" title="Load a texton dictionary." alt="" coords="299,5,469,32"/>
-<area shape="rect" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
+<area shape="rect" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
 <area shape="rect" href="textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d" title="Initialize." alt="" coords="5,5,104,32"/>
 </map>
 </div>
@@ -586,11 +711,11 @@ Variables</h2></td></tr>
 
 <p>Save the texton dictionary. </p>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00441">441</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00500">500</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, <a class="el" href="textons_8c_source.html#l00110">dictionary_logger</a>, <a class="el" href="textons_8c_source.html#l00103">dictionary_number</a>, <a class="el" href="textons_8c_source.html#l00112">DICTIONARY_PATH</a>, <a class="el" href="textons_8c_source.html#l00096">n_textons</a>, and <a class="el" href="textons_8c_source.html#l00097">patch_size</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, <a class="el" href="textons_8c_source.html#l00135">dictionary_logger</a>, <a class="el" href="textons_8c_source.html#l00128">dictionary_number</a>, <a class="el" href="textons_8c_source.html#l00121">n_textons</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, and <a class="el" href="textons_8c_source.html#l00112">TEXTONS_DICTIONARY_PATH</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -599,15 +724,15 @@ Variables</h2></td></tr>
 <div class="center"><img src="textons_8c_a078d928dcb614af8cba4d1eefe4aa12d_icgraph.png" border="0" usemap="#atextons_8c_a078d928dcb614af8cba4d1eefe4aa12d_icgraph" alt=""/></div>
 <map name="atextons_8c_a078d928dcb614af8cba4d1eefe4aa12d_icgraph" id="atextons_8c_a078d928dcb614af8cba4d1eefe4aa12d_icgraph">
 <area shape="rect" title="Save the texton dictionary." alt="" coords="299,5,473,32"/>
-<area shape="rect" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
+<area shape="rect" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
 <area shape="rect" href="textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d" title="Initialize." alt="" coords="5,5,104,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5a28ef29bd02e895d11d195fc565526f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a28ef29bd02e895d11d195fc565526f">&#9670;&nbsp;</a></span>texton_func()</h2>
+<a id="af1e1ef8dc03056fdd2375a3207a62bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e1ef8dc03056fdd2375a3207a62bfd">&#9670;&nbsp;</a></span>texton_func()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,8 +741,18 @@ Variables</h2></td></tr>
           <td class="memname">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> * texton_func </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -631,18 +766,18 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00121">121</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00143">143</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00053">image_t::buf_size</a>, <a class="el" href="textons_8c_source.html#l00106">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="textons_8c_source.html#l00038">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00094">load_dictionary</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00098">n_learning_samples</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00132">alpha</a>, <a class="el" href="textons_8c_source.html#l00120">alpha_uint</a>, <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00053">image_t::buf_size</a>, <a class="el" href="textons_8c_source.html#l00040">dictionary_initialized</a>, <a class="el" href="textons_8c_source.html#l00131">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>, <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="textons_8c_source.html#l00039">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00118">load_dictionary</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00123">n_learning_samples</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, <a class="el" href="textons_8c_source.html#l00119">reinitialize_dictionary</a>, <a class="el" href="textons_8c_source.html#l00117">running</a>, <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="textons_8c_a5a28ef29bd02e895d11d195fc565526f_cgraph.png" border="0" usemap="#atextons_8c_a5a28ef29bd02e895d11d195fc565526f_cgraph" alt=""/></div>
-<map name="atextons_8c_a5a28ef29bd02e895d11d195fc565526f_cgraph" id="atextons_8c_a5a28ef29bd02e895d11d195fc565526f_cgraph">
+<div class="center"><img src="textons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_cgraph.png" border="0" usemap="#atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_cgraph" alt=""/></div>
+<map name="atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_cgraph" id="atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_cgraph">
 <area shape="rect" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="5,157,104,184"/>
 <area shape="rect" href="textons_8c.html#a89ba1b117446ed4075635e5d26107819" title="Function that performs one pass for dictionary training." alt="" coords="156,56,323,83"/>
 <area shape="rect" href="textons_8c.html#acb1474caf9ec86b1856a974728be4a60" title="Function that extracts a texton histogram from an image." alt="" coords="157,107,321,133"/>
@@ -681,8 +816,8 @@ Variables</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="textons_8c_a5a28ef29bd02e895d11d195fc565526f_icgraph.png" border="0" usemap="#atextons_8c_a5a28ef29bd02e895d11d195fc565526f_icgraph" alt=""/></div>
-<map name="atextons_8c_a5a28ef29bd02e895d11d195fc565526f_icgraph" id="atextons_8c_a5a28ef29bd02e895d11d195fc565526f_icgraph">
+<div class="center"><img src="textons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_icgraph.png" border="0" usemap="#atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_icgraph" alt=""/></div>
+<map name="atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_icgraph" id="atextons_8c_af1e1ef8dc03056fdd2375a3207a62bfd_icgraph">
 <area shape="rect" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,5,251,32"/>
 <area shape="rect" href="textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d" title="Initialize." alt="" coords="5,5,104,32"/>
 </map>
@@ -708,9 +843,9 @@ Variables</h2></td></tr>
 
 <p>Initialize. </p>
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00501">501</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00561">561</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, <a class="el" href="textons_8c_source.html#l00039">dictionary_initialized</a>, <a class="el" href="textons_8c_source.html#l00106">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00038">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00096">n_textons</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="textons_8c_source.html#l00040">texton_distribution</a>, <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
+<p class="reference">References <a class="el" href="cv_8c_source.html#l00046">cv_add_to_device()</a>, <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, <a class="el" href="textons_8c_source.html#l00040">dictionary_initialized</a>, <a class="el" href="textons_8c_source.html#l00131">dictionary_ready</a>, <a class="el" href="textons_8c_source.html#l00039">learned_samples</a>, <a class="el" href="textons_8c_source.html#l00115">listener</a>, <a class="el" href="textons_8c_source.html#l00043">MAX_N_TEXTONS</a>, <a class="el" href="textons_8c_source.html#l00122">patch_size</a>, <a class="el" href="textons_8c_source.html#l00041">texton_distribution</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, <a class="el" href="textons_8c_source.html#l00052">TEXTONS_FPS</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -719,37 +854,45 @@ Variables</h2></td></tr>
 <div class="center"><img src="textons_8c_ac363e3fda520a9cc84e35d929f01d62d_cgraph.png" border="0" usemap="#atextons_8c_ac363e3fda520a9cc84e35d929f01d62d_cgraph" alt=""/></div>
 <map name="atextons_8c_ac363e3fda520a9cc84e35d929f01d62d_cgraph" id="atextons_8c_ac363e3fda520a9cc84e35d929f01d62d_cgraph">
 <area shape="rect" title="Initialize." alt="" coords="5,157,104,184"/>
-<area shape="rect" href="textons_8c.html#a5a28ef29bd02e895d11d195fc565526f" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="152,157,251,184"/>
-<area shape="rect" href="textons_8c.html#a89ba1b117446ed4075635e5d26107819" title="Function that performs one pass for dictionary training." alt="" coords="303,56,469,83"/>
-<area shape="rect" href="textons_8c.html#acb1474caf9ec86b1856a974728be4a60" title="Function that extracts a texton histogram from an image." alt="" coords="304,107,468,133"/>
-<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="367,157,405,184"/>
-<area shape="rect" href="textons_8c.html#a21c316a603e6af19c1b7c42f5eabb16c" title="Load a texton dictionary." alt="" coords="301,208,471,235"/>
-<area shape="rect" href="textons_8c.html#a078d928dcb614af8cba4d1eefe4aa12d" title="Save the texton dictionary." alt="" coords="299,259,473,285"/>
-<area shape="rect" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="569,5,635,32"/>
-<area shape="rect" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="521,56,683,83"/>
-<area shape="rect" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="569,208,635,235"/>
-<area shape="rect" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="533,107,671,133"/>
-<area shape="rect" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="567,157,637,184"/>
-<area shape="rect" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="560,259,644,285"/>
-<area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation." alt="" coords="541,309,663,336"/>
-<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="731,37,964,64"/>
-<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1012,26,1203,67"/>
-<area shape="rect" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="767,193,927,220"/>
-<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="1025,193,1190,220"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1473,193,1616,220"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1251,143,1393,169"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1270,295,1374,321"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1271,92,1373,119"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1696,193,1843,220"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1491,269,1599,296"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1492,320,1597,347"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1441,55,1648,81"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1475,106,1615,147"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="781,143,914,169"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="1033,244,1181,271"/>
-<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="1034,143,1181,169"/>
-<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="739,273,955,300"/>
-<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="1012,295,1203,337"/>
+<area shape="rect" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title=" " alt="" coords="152,95,291,121"/>
+<area shape="rect" href="textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd" title="Main texton processing function that first either loads or learns a dictionary and then extracts the ..." alt="" coords="172,183,271,209"/>
+<area shape="rect" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules." alt="" coords="357,56,495,83"/>
+<area shape="rect" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title=" " alt="" coords="575,56,709,83"/>
+<area shape="rect" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device." alt="" coords="848,31,927,57"/>
+<area shape="rect" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice." alt="" coords="821,81,953,108"/>
+<area shape="rect" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title=" " alt="" coords="1081,31,1213,57"/>
+<area shape="rect" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title=" " alt="" coords="1301,5,1423,32"/>
+<area shape="rect" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title=" " alt="" coords="1321,56,1403,83"/>
+<area shape="rect" href="textons_8c.html#a89ba1b117446ed4075635e5d26107819" title="Function that performs one pass for dictionary training." alt="" coords="343,208,509,235"/>
+<area shape="rect" href="textons_8c.html#acb1474caf9ec86b1856a974728be4a60" title="Function that extracts a texton histogram from an image." alt="" coords="344,259,508,285"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="407,309,445,336"/>
+<area shape="rect" href="textons_8c.html#a21c316a603e6af19c1b7c42f5eabb16c" title="Load a texton dictionary." alt="" coords="341,107,511,133"/>
+<area shape="rect" href="textons_8c.html#a078d928dcb614af8cba4d1eefe4aa12d" title="Save the texton dictionary." alt="" coords="339,157,513,184"/>
+<area shape="rect" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="609,259,675,285"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="561,309,723,336"/>
+<area shape="rect" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="609,360,675,387"/>
+<area shape="rect" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="573,461,711,488"/>
+<area shape="rect" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="607,411,677,437"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="600,157,684,184"/>
+<area shape="rect" href="chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation." alt="" coords="581,208,703,235"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="771,305,1004,332"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="1052,294,1243,335"/>
+<area shape="rect" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="807,411,967,437"/>
+<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="1065,411,1230,437"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF." alt="" coords="1513,411,1656,437"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF." alt="" coords="1291,461,1433,488"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="1310,309,1414,336"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1311,512,1413,539"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF." alt="" coords="1736,411,1883,437"/>
+<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="1531,335,1639,361"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="1532,284,1637,311"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1481,487,1688,513"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1515,538,1655,579"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="821,461,954,488"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="1073,360,1221,387"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="1074,461,1221,488"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="779,157,995,184"/>
+<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="1052,150,1243,191"/>
 </map>
 </div>
 
@@ -771,9 +914,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00522">522</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00582">582</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">References <a class="el" href="textons_8c_source.html#l00037">dictionary</a>, and <a class="el" href="textons_8c_source.html#l00040">texton_distribution</a>.</p>
+<p class="reference">References <a class="el" href="textons_8c_source.html#l00038">dictionary</a>, and <a class="el" href="textons_8c_source.html#l00041">texton_distribution</a>.</p>
 
 </div>
 </div>
@@ -790,9 +933,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00107">107</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00132">132</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00142">ahrs_fc_propagate()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">ahrs_mlkf_update_accel()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00212">baro_cb()</a>, <a class="el" href="1e__filter_8h_source.html#l00099">compute_1e_filter_lp()</a>, <a class="el" href="nav__smooth_8c_source.html#l00163">compute_ground_speed()</a>, <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf_8c_source.html#l00395">gvf_ellipse_wp()</a>, <a class="el" href="gvf_8c_source.html#l00356">gvf_ellipse_XY()</a>, <a class="el" href="gvf__line_8c_source.html#l00062">gvf_line_info()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00344">gvf_parametric_2D_trefoil_wp()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00322">gvf_parametric_2D_trefoil_XY()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00391">gvf_parametric_3D_ellipse_wp()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00400">gvf_parametric_3D_ellipse_wp_delta()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00356">gvf_parametric_3D_ellipse_XYZ()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00446">gvf_parametric_3D_lissajous_wp_center()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00411">gvf_parametric_3D_lissajous_XYZ()</a>, <a class="el" href="gvf_8c_source.html#l00265">gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf_8c_source.html#l00431">gvf_sin_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00454">gvf_sin_wp_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00406">gvf_sin_XY_alpha()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00206">indi_apply_compensator_filters()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00531">ins_float_invariant_update_baro()</a>, <a class="el" href="meteo__stick__calib_8c_source.html#l00265">mtostk_apply_polynomial_temp()</a>, <a class="el" href="nav__cube_8c_source.html#l00039">nav_cube_setup()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00179">nav_hybrid_circle()</a>, <a class="el" href="gvf_8c_source.html#l00083">out_of_segment_area()</a>, <a class="el" href="nav__rosette_8c_source.html#l00105">process_new_point_rosette()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00147">propagate_ref()</a>, <a class="el" href="nav__smooth_8c_source.html#l00049">snav_init()</a>, <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>, <a class="el" href="nav__lace_8c_source.html#l00108">update_target_point()</a>, and <a class="el" href="wls__alloc_8c_source.html#l00112">wls_alloc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00142">ahrs_fc_propagate()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00112">ahrs_mlkf_update_accel()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00212">baro_cb()</a>, <a class="el" href="1e__filter_8h_source.html#l00099">compute_1e_filter_lp()</a>, <a class="el" href="nav__smooth_8c_source.html#l00163">compute_ground_speed()</a>, <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="gvf__ellipse_8c_source.html#l00063">gvf_ellipse_info()</a>, <a class="el" href="gvf_8c_source.html#l00395">gvf_ellipse_wp()</a>, <a class="el" href="gvf_8c_source.html#l00356">gvf_ellipse_XY()</a>, <a class="el" href="gvf__line_8c_source.html#l00062">gvf_line_info()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00344">gvf_parametric_2D_trefoil_wp()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00322">gvf_parametric_2D_trefoil_XY()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00391">gvf_parametric_3D_ellipse_wp()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00400">gvf_parametric_3D_ellipse_wp_delta()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00356">gvf_parametric_3D_ellipse_XYZ()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00446">gvf_parametric_3D_lissajous_wp_center()</a>, <a class="el" href="gvf__parametric_8cpp_source.html#l00411">gvf_parametric_3D_lissajous_XYZ()</a>, <a class="el" href="gvf_8c_source.html#l00265">gvf_segment_loop_XY1_XY2()</a>, <a class="el" href="gvf__sin_8c_source.html#l00069">gvf_sin_info()</a>, <a class="el" href="gvf_8c_source.html#l00431">gvf_sin_wp1_wp2()</a>, <a class="el" href="gvf_8c_source.html#l00454">gvf_sin_wp_alpha()</a>, <a class="el" href="gvf_8c_source.html#l00406">gvf_sin_XY_alpha()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00206">indi_apply_compensator_filters()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00531">ins_float_invariant_update_baro()</a>, <a class="el" href="meteo__stick__calib_8c_source.html#l00265">mtostk_apply_polynomial_temp()</a>, <a class="el" href="nav__cube_8c_source.html#l00039">nav_cube_setup()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00179">nav_hybrid_circle()</a>, <a class="el" href="gvf_8c_source.html#l00083">out_of_segment_area()</a>, <a class="el" href="nav__rosette_8c_source.html#l00105">process_new_point_rosette()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00147">propagate_ref()</a>, <a class="el" href="nav__smooth_8c_source.html#l00049">snav_init()</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, <a class="el" href="nav__lace_8c_source.html#l00108">update_target_point()</a>, and <a class="el" href="wls__alloc_8c_source.html#l00112">wls_alloc()</a>.</p>
 
 </div>
 </div>
@@ -808,9 +951,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00095">95</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00120">120</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, and <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 
 </div>
 </div>
@@ -826,9 +969,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00102">102</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00127">127</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>.</p>
 
 </div>
 </div>
@@ -844,9 +987,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00101">101</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00126">126</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>.</p>
 
 </div>
 </div>
@@ -862,9 +1005,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00037">37</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00038">38</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>, and <a class="el" href="textons_8c_source.html#l00522">textons_stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>, and <a class="el" href="textons_8c_source.html#l00582">textons_stop()</a>.</p>
 
 </div>
 </div>
@@ -880,9 +1023,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00039">39</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00040">40</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
 
 </div>
 </div>
@@ -906,9 +1049,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00110">110</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00135">135</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>.</p>
 
 </div>
 </div>
@@ -924,9 +1067,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00103">103</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00128">128</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>.</p>
 
 </div>
 </div>
@@ -942,9 +1085,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00106">106</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00131">131</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
 
 </div>
 </div>
@@ -960,9 +1103,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00100">100</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00125">125</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>.</p>
 
 </div>
 </div>
@@ -978,9 +1121,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00038">38</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00039">39</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
+
+</div>
+</div>
+<a id="a1cd78b5508e71a82956808eba675122b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd78b5508e71a82956808eba675122b">&#9670;&nbsp;</a></span>listener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a>* listener = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00115">115</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
 
 </div>
 </div>
@@ -996,9 +1157,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00094">94</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00118">118</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 
 </div>
 </div>
@@ -1014,9 +1175,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00098">98</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00123">123</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 
 </div>
 </div>
@@ -1032,9 +1193,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00099">99</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00124">124</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, and <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, and <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1211,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00096">96</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00121">121</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>, and <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01226">learn_from_file()</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01188">load_texton_distribution()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01496">load_weights()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01461">predict_gain()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01265">recursive_least_squares_batch()</a>, <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01161">save_texton_distribution()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01478">save_weights()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00324">vertical_ctrl_module_init()</a>.</p>
 
 </div>
 </div>
@@ -1068,9 +1229,45 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00097">97</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00122">122</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00166">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00471">load_texton_dictionary()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>, <a class="el" href="textons_8c_source.html#l00441">save_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00121">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00226">DictionaryTrainingYUV()</a>, <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00531">load_texton_dictionary()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>, <a class="el" href="textons_8c_source.html#l00500">save_texton_dictionary()</a>, <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>, and <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>.</p>
+
+</div>
+</div>
+<a id="aafe8d7e6a68a6f6fb90c5d8c159666df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe8d7e6a68a6f6fb90c5d8c159666df">&#9670;&nbsp;</a></span>reinitialize_dictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reinitialize_dictionary = <a class="el" href="textons_8c.html#ae5fa41260790f0154d679f33bdd7d559">TEXTONS_REINITIALIZE_DICTIONARY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00119">119</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
+
+</div>
+</div>
+<a id="af77f8244799e85284b8b438289f5f689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77f8244799e85284b8b438289f5f689">&#9670;&nbsp;</a></span>running</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> running = <a class="el" href="textons_8c.html#adb3106a866f9e54bad0ea09d8f0cffb9">TEXTONS_RUN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00117">117</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00143">texton_func()</a>.</p>
 
 </div>
 </div>
@@ -1086,9 +1283,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00040">40</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="textons_8c_source.html#l00041">41</a> of file <a class="el" href="textons_8c_source.html">textons.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00311">DistributionExtraction()</a>, <a class="el" href="textons_8c_source.html#l00501">textons_init()</a>, and <a class="el" href="textons_8c_source.html#l00522">textons_stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="textons_8c_source.html#l00371">DistributionExtraction()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01161">save_texton_distribution()</a>, <a class="el" href="textons_8c_source.html#l00561">textons_init()</a>, <a class="el" href="textons_8c_source.html#l00582">textons_stop()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00492">vertical_ctrl_module_run()</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1295,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="textons_8c.html">textons.c</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

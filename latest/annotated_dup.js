@@ -614,6 +614,7 @@ var annotated_dup =
     [ "InsAltFloat", "ins__alt__float_8h.html#structInsAltFloat", "ins__alt__float_8h_structInsAltFloat" ],
     [ "InsExtPose", "ins__ext__pose_8c.html#structInsExtPose", "ins__ext__pose_8c_structInsExtPose" ],
     [ "InsFloatInv", "ins__float__invariant_8h.html#structInsFloatInv", "ins__float__invariant_8h_structInsFloatInv" ],
+    [ "InsFlow", "ins__flow_8c.html#structInsFlow", "ins__flow_8c_structInsFlow" ],
     [ "InsGpsPassthrough", "ins__gps__passthrough_8c.html#structInsGpsPassthrough", "ins__gps__passthrough_8c_structInsGpsPassthrough" ],
     [ "InsInt", "ins__int_8h.html#structInsInt", "ins__int_8h_structInsInt" ],
     [ "InsMekfWind", "ins__mekf__wind__wrapper_8h.html#structInsMekfWind", "ins__mekf__wind__wrapper_8h_structInsMekfWind" ],

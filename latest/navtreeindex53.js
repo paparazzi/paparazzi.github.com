@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"ezcurrent_8h.html#ad4bee3c589fed6c866015ae65bde6d72":[12,0,1,0,6,60,53,1],
 "ezcurrent_8h_source.html":[12,0,1,0,6,60,53],
 "fast__rosten_8c.html":[12,0,1,0,6,11,1,3,5],
 "fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e":[12,0,1,0,6,11,1,3,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "fixedwing_2guidance_2guidance__v_8c.html#a56244df6f6f2b1e99747e854a6357d92":[12,0,1,0,3,1,0,5,35],
 "fixedwing_2guidance_2guidance__v_8c.html#a5a18835d4b08fd56ecb24ce5ed987bbd":[12,0,1,0,3,1,0,5,22],
 "fixedwing_2guidance_2guidance__v_8c.html#a5bd299dd0de5503b8d89214c741fcfc3":[12,0,1,0,3,1,0,5,33],
-"fixedwing_2guidance_2guidance__v_8c.html#a6c8243747ad58308b43230eeac99771a":[12,0,1,0,3,1,0,5,1],
-"fixedwing_2guidance_2guidance__v_8c.html#a70a371d9e90dc33439fd1553de50567e":[12,0,1,0,3,1,0,5,27]
+"fixedwing_2guidance_2guidance__v_8c.html#a6c8243747ad58308b43230eeac99771a":[12,0,1,0,3,1,0,5,1]
 };

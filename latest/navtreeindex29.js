@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"cc3d_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32":[12,0,1,0,1,28,24],
 "cc3d_8h.html#a9bc80e11e3a131466e4a223108b55b6c":[12,0,1,0,1,28,20],
 "cc3d_8h.html#a9c7d5f5a7c4315ad26c8c0b03ad5fc60":[12,0,1,0,1,28,77],
 "cc3d_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,28,97],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "chibios_2mcu__periph_2spi__arch_8c.html#a3179a115990aaea6cef03ea592ad05d2":[12,0,1,0,0,0,0,14,0,0],
 "chibios_2mcu__periph_2spi__arch_8c.html#a365dbba94676b37ad550f337626425f7":[12,0,1,0,0,0,0,14,9],
 "chibios_2mcu__periph_2spi__arch_8c.html#a3b31c9dcdd9d40b30a43ef7f6f58e5f2":[12,0,1,0,0,0,0,14,3],
-"chibios_2mcu__periph_2spi__arch_8c.html#a4f06fb8dc08823fc33049d42efeb735d":[12,0,1,0,0,0,0,14,18],
-"chibios_2mcu__periph_2spi__arch_8c.html#a60353627415384b3800fd15b42115231":[12,0,1,0,0,0,0,14,10]
+"chibios_2mcu__periph_2spi__arch_8c.html#a4f06fb8dc08823fc33049d42efeb735d":[12,0,1,0,0,0,0,14,18]
 };

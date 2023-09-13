@@ -5,6 +5,7 @@ var ahrs_8h =
     [ "AHRS_COMP_ID_EKF2", "ahrs_8h.html#a6c0ffb77ca98604b9b7618e28cd12b8f", null ],
     [ "AHRS_COMP_ID_FC", "ahrs_8h.html#a6d60812743024c0df43b533fb8d382d8", null ],
     [ "AHRS_COMP_ID_FINV", "ahrs_8h.html#a65cb5f57e9a3629a670ebdbb55a801d6", null ],
+    [ "AHRS_COMP_ID_FLOW", "ahrs_8h.html#a0540aedcbf1000d0a610d4b626d85d93", null ],
     [ "AHRS_COMP_ID_GENERIC", "ahrs_8h.html#a63da16e6f8b1dcbf32463f65e4e65b3c", null ],
     [ "AHRS_COMP_ID_GX3", "ahrs_8h.html#adcc79066b47a71e8115512261368fb5d", null ],
     [ "AHRS_COMP_ID_ICE", "ahrs_8h.html#a4de79af62464f5857950ce8304023c66", null ],

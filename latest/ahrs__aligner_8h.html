@@ -123,11 +123,13 @@ $(document).ready(function(){initNavTree('ahrs__aligner_8h.html',''); initResiza
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2modules_2ahrs_2ahrs__aligner_8hdep" alt=""/></div>
 <map name="asw_2airborne_2modules_2ahrs_2ahrs__aligner_8hdep" id="asw_2airborne_2modules_2ahrs_2ahrs__aligner_8hdep">
-<area shape="rect" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="281,5,440,47"/>
+<area shape="rect" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="376,5,535,47"/>
 <area shape="rect" href="ahrs_8c.html" title="Dispatcher to register actual AHRS implementations." alt="" coords="5,102,164,143"/>
 <area shape="rect" href="ahrs__aligner_8c.html" title="Low&#45;pass IMU measurements at startup to align the AHRS." alt="" coords="188,102,347,143"/>
 <area shape="rect" href="ins__float__invariant__wrapper_8c.html" title="Paparazzi specific wrapper to run INVARIANT filter." alt="" coords="371,95,540,151"/>
-<area shape="rect" href="ins__mekf__wind__wrapper_8c.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="564,102,781,143"/>
+<area shape="rect" href="ins__flow_8h.html" title=" " alt="" coords="564,102,723,143"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter." alt="" coords="747,102,964,143"/>
+<area shape="rect" href="ins__flow_8c.html" title=" " alt="" coords="564,199,723,240"/>
 </map>
 </div>
 </div>
@@ -302,7 +304,7 @@ status</td>
 
 <p class="reference">References <a class="el" href="ahrs__aligner_8c_source.html#l00050">AHRS_ALIGNER_IMU_ID</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00096">ahrs_aligner_restart()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00054">gyro_cb()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00066">send_aligner()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00214">ins_float_invariant_wrapper_init()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00214">ins_float_invariant_wrapper_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -329,10 +331,11 @@ status</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8h_a321c9a82fcb75074c3041cbf6906e5ea_icgraph.png" border="0" usemap="#aahrs__aligner_8h_a321c9a82fcb75074c3041cbf6906e5ea_icgraph" alt=""/></div>
 <map name="aahrs__aligner_8h_a321c9a82fcb75074c3041cbf6906e5ea_icgraph" id="aahrs__aligner_8h_a321c9a82fcb75074c3041cbf6906e5ea_icgraph">
-<area shape="rect" title=" " alt="" coords="495,64,625,91"/>
+<area shape="rect" title=" " alt="" coords="495,93,625,120"/>
 <area shape="rect" href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
 <area shape="rect" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,57,414,98"/>
-<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
+<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="291,123,394,149"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,173,447,200"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -368,14 +371,15 @@ status</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8h_aa098ebf986653894df0c6e03bf86354e_icgraph.png" border="0" usemap="#aahrs__aligner_8h_aa098ebf986653894df0c6e03bf86354e_icgraph" alt=""/></div>
 <map name="aahrs__aligner_8h_aa098ebf986653894df0c6e03bf86354e_icgraph" id="aahrs__aligner_8h_aa098ebf986653894df0c6e03bf86354e_icgraph">
-<area shape="rect" title=" " alt="" coords="673,85,825,112"/>
-<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="495,59,625,85"/>
-<area shape="rect" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="523,111,597,137"/>
-<area shape="rect" href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
-<area shape="rect" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,107,414,149"/>
-<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,56,447,83"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
-<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" title=" " alt="" coords="673,46,825,73"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="495,71,625,98"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="523,17,597,43"/>
+<area shape="rect" href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,71,382,98"/>
+<area shape="rect" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,5,414,47"/>
+<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="291,122,394,149"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,173,447,199"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,71,191,98"/>
+<area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,71,60,98"/>
 </map>
 </div>
 
@@ -423,12 +427,13 @@ status</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8h_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph.png" border="0" usemap="#aahrs__aligner_8h_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph" alt=""/></div>
 <map name="aahrs__aligner_8h_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph" id="aahrs__aligner_8h_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph">
-<area shape="rect" title=" " alt="" coords="795,64,925,91"/>
-<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="673,64,747,91"/>
-<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="495,64,625,91"/>
+<area shape="rect" title=" " alt="" coords="795,93,925,120"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="673,93,747,120"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="495,93,625,120"/>
 <area shape="rect" href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="303,5,382,32"/>
 <area shape="rect" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="271,57,414,98"/>
-<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,123,447,149"/>
+<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="291,123,394,149"/>
+<area shape="rect" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="239,173,447,200"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title=" " alt="" coords="108,5,191,32"/>
 <area shape="rect" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -469,7 +474,7 @@ status</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4a55dba757caadfd5d6f3db96533e71b.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__aligner_8h.html">ahrs_aligner.h</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

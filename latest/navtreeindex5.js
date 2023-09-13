@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f":[12,0,1,0,6,2,4,1],
 "ahrs__chimu_8h.html#a276d0fbae93455ee8df03b838757a6e7":[12,0,1,0,6,2,4,3],
 "ahrs__chimu_8h.html#a3a8e7287a633ce9302ef4bcf322f7ed6":[12,0,1,0,6,2,4,2],
 "ahrs__chimu_8h.html#a5917a7280cd1615212cb7b95c18f04cf":[12,0,1,0,6,2,4,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "ahrs__float__invariant_8h.html#a4898001db3e42ffbb0e854950b0a0b1d":[12,0,1,0,6,2,17,5,0],
 "ahrs__float__invariant_8h.html#a89a463404ab94fd2d2aaa3e231843484":[12,0,1,0,6,2,17,5,6],
 "ahrs__float__invariant_8h.html#aae2845e0894d884cf6e7042143f04de6":[12,0,1,0,6,2,17,5,1],
-"ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07":[12,0,1,0,6,2,17,5,2],
-"ahrs__float__invariant_8h.html#ab5d132b80575171fde6e0cbcfbba025a":[12,0,1,0,6,2,17,10]
+"ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07":[12,0,1,0,6,2,17,5,2]
 };

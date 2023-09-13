@@ -2,6 +2,7 @@ var textons_8h =
 [
     [ "DictionaryTrainingYUV", "textons_8h.html#a89ba1b117446ed4075635e5d26107819", null ],
     [ "DistributionExtraction", "textons_8h.html#acb1474caf9ec86b1856a974728be4a60", null ],
+    [ "get_entropy", "textons_8h.html#a99b36a3cb5143fc6eacbfa6049842535", null ],
     [ "load_texton_dictionary", "textons_8h.html#a21c316a603e6af19c1b7c42f5eabb16c", null ],
     [ "save_texton_dictionary", "textons_8h.html#a078d928dcb614af8cba4d1eefe4aa12d", null ],
     [ "textons_init", "textons_8h.html#ac363e3fda520a9cc84e35d929f01d62d", null ],
@@ -21,5 +22,7 @@ var textons_8h =
     [ "n_samples_image", "textons_8h.html#a91386c15d9ad570b03fc0f33a10de703", null ],
     [ "n_textons", "textons_8h.html#a6da202ca26862bd404352c44f08b19b9", null ],
     [ "patch_size", "textons_8h.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7", null ],
+    [ "reinitialize_dictionary", "textons_8h.html#aafe8d7e6a68a6f6fb90c5d8c159666df", null ],
+    [ "running", "textons_8h.html#af77f8244799e85284b8b438289f5f689", null ],
     [ "texton_distribution", "textons_8h.html#a37c1f9ffc95bdb92779d73f088750028", null ]
 ];

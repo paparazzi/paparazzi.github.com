@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"battery__monitor_8h.html#adee0aebd61dd74ed266c93ad31f15b24":[12,0,1,0,6,1,3,34],
 "battery__monitor_8h.html#ae4b2d598b462b5684b65a7104c0c5ee3":[12,0,1,0,6,1,3,14],
 "battery__monitor_8h.html#ae55e69e22d0c8f86663666b5da86f39c":[12,0,1,0,6,1,3,0,5],
 "battery__monitor_8h.html#ae810d588e012287af45be83a7fe73ad3":[12,0,1,0,6,1,3,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "bmi088_8h.html#adc096abd2a7bc8e2c9d1c2cd2716effd":[12,0,1,0,7,18,0,4],
 "bmi088_8h.html#addcce42ce13cf7b00585ee7ef9cc1936":[12,0,1,0,7,18,41],
 "bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b":[12,0,1,0,7,18,21],
-"bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4":[12,0,1,0,7,18,27],
-"bmi088_8h.html#afca30bcd7105b0d5ac07d94e58694daf":[12,0,1,0,7,18,29]
+"bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4":[12,0,1,0,7,18,27]
 };

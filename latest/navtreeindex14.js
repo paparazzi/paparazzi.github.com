@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"apogee__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,22,154],
 "apogee__1_80_8h.html#a880bc48c4436c16e8f402ff84b2073e9":[12,0,1,0,1,22,168],
 "apogee__1_80_8h.html#a8838c57ad3a67b5371963cb31183f0d3":[12,0,1,0,1,22,78],
 "apogee__1_80_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,22,212],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "atmega__i2c__cam__ctrl_8c.html#a9517bc579c68c98134db7068982b765a":[12,0,1,0,6,18,1,1],
 "atmega__i2c__cam__ctrl_8c.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e":[12,0,1,0,6,18,1,3],
 "atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749":[12,0,1,0,6,18,1,8],
-"atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85":[12,0,1,0,6,18,1,5],
-"atmega__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5":[12,0,1,0,6,18,1,4]
+"atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85":[12,0,1,0,6,18,1,5]
 };

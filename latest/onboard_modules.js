@@ -1427,6 +1427,12 @@ var onboard_modules =
         [ "Raw ins_float_invariant.xml file:", "module__ins_float_invariant.html#module_xml__ins_float_invariant", null ]
       ] ]
     ] ],
+    [ "ins_flow module", "module__ins_flow.html", [
+      [ "Example for airframe file", "module__ins_flow.html#module_load_example__ins_flow", null ],
+      [ "Module functions", "module__ins_flow.html#functions__ins_flow", [
+        [ "Raw ins_flow.xml file:", "module__ins_flow.html#module_xml__ins_flow", null ]
+      ] ]
+    ] ],
     [ "ins_gps_passthrough module", "module__ins_gps_passthrough.html", [
       [ "Example for airframe file", "module__ins_gps_passthrough.html#module_load_example__ins_gps_passthrough", null ],
       [ "Module configuration options", "module__ins_gps_passthrough.html#configuration__ins_gps_passthrough", null ],

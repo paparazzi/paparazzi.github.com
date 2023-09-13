@@ -577,14 +577,14 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  <span class="comment">// decompose A in u, w, v with singular value decomposition A = u * w * vT.</span></div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  <span class="comment">// u replaces A as output:</span></div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keywordtype">float</span> _parameters[D_1][1];</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(parameters, _parameters, D_1);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(<a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>, _parameters, D_1);</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  <span class="keywordtype">float</span> w[<a class="code" href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a>], _v[D_1][D_1];</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(v, _v, D_1);</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="comment">// solve the system:</span></div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160; </div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a">pprz_svd_float</a>(AA, w, v, count, D_1);</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67">pprz_svd_solve_float</a>(parameters, AA, w, v, targets_all, count, D_1, 1);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67">pprz_svd_solve_float</a>(<a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>, AA, w, v, targets_all, count, D_1, 1);</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="comment">// used to determine the error of a set of parameters on the whole set:</span></div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">float</span> _bb[count][1];</div>
@@ -595,7 +595,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="comment">// error is determined on the entire set</span></div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="comment">// bb = AA * parameters:</span></div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="comment">// TODO: error: AA has been replaced in the pprz_svd_float procedure by U!!!</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(count, D_1, 1, bb, AA, parameters);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(count, D_1, 1, bb, AA, <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>);</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <span class="comment">// subtract bu_all: C = 0 in case of perfect fit:</span></div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(count, 1, C, bb, targets_all);</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  *fit_error = 0;</div>
@@ -607,7 +607,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  }</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">for</span> (d = 0; d &lt; D_1; d++) {</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    params[d] = parameters[d][0];</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    params[d] = <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>[d][0];</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  }</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;}</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160; </div>
@@ -734,11 +734,11 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#aebe40b764fa744a7cc62c9a504f226b3">DEBUG_MAT_PRINT</a>(D_1, count, PINV);</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160; </div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="keywordtype">float</span> _parameters[D_1][1];</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(parameters, _parameters, D_1);</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(D_1, count, 1, parameters, PINV, targets_all);</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(<a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>, _parameters, D_1);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(D_1, count, 1, <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>, PINV, targets_all);</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a88edd2aa4feabff4af21a997d5d8aa23">DEBUG_PRINT</a>(<span class="stringliteral">&quot;parameters:\n&quot;</span>);</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#aebe40b764fa744a7cc62c9a504f226b3">DEBUG_MAT_PRINT</a>(D_1, 1, parameters);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#aebe40b764fa744a7cc62c9a504f226b3">DEBUG_MAT_PRINT</a>(D_1, 1, <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>);</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160; </div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  <span class="comment">// used to determine the error of a set of parameters on the whole set:</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="keywordtype">float</span> _bb[count][1];</div>
@@ -752,7 +752,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160; </div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;  <span class="comment">// error is determined on the entire set</span></div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  <span class="comment">// bb = AA * parameters:</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(count, D_1, 1, bb, AA, parameters);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(count, D_1, 1, bb, AA, <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>);</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160; </div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="comment">// subtract bu_all: C = 0 in case of perfect fit:</span></div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(count, 1, C, bb, targets_all);</div>
@@ -766,7 +766,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a88edd2aa4feabff4af21a997d5d8aa23">DEBUG_PRINT</a>(<span class="stringliteral">&quot;Fit error = %f\n&quot;</span>, *fit_error);</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <span class="keywordflow">for</span> (d = 0; d &lt; D_1; d++) {</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    params[d] = parameters[d][0];</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    params[d] = <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a>[d][0];</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  }</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a88edd2aa4feabff4af21a997d5d8aa23">DEBUG_PRINT</a>(<span class="stringliteral">&quot;End of the function\n&quot;</span>);</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;}</div>
@@ -786,6 +786,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="ttc" id="agroup__math__algebra__float_html_gac709319b9359bbc53bf3f6a5a57e66b0"><div class="ttname"><a href="group__math__algebra__float.html#gac709319b9359bbc53bf3f6a5a57e66b0">float_mat_invert</a></div><div class="ttdeci">void float_mat_invert(float **o, float **mat, int n)</div><div class="ttdoc">Calculate inverse of any n x n matrix (passed as C array) o = mat^-1 Algorithm verified with Matlab.</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8c_source.html#l00886">pprz_algebra_float.c:886</a></div></div>
 <div class="ttc" id="agroup__math__algebra__float_html_gad3e4fbe2ede8f068d46f7c617227e3f1"><div class="ttname"><a href="group__math__algebra__float.html#gad3e4fbe2ede8f068d46f7c617227e3f1">float_vect_norm</a></div><div class="ttdeci">static float float_vect_norm(const float *a, const int n)</div><div class="ttdoc">||a||</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00607">pprz_algebra_float.h:607</a></div></div>
 <div class="ttc" id="agroup__math__algebra__float_html_gad97a0203820a902c0702bcad314a7bc4"><div class="ttname"><a href="group__math__algebra__float.html#gad97a0203820a902c0702bcad314a7bc4">float_mat_transpose_square</a></div><div class="ttdeci">static void float_mat_transpose_square(float **a, int n)</div><div class="ttdoc">transpose square matrix</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00688">pprz_algebra_float.h:688</a></div></div>
+<div class="ttc" id="ains__flow_8c_html_a2a8de86fce95d31cd9cadfbbe7f06792"><div class="ttname"><a href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a></div><div class="ttdeci">float parameters[20]</div><div class="ttdef"><b>Definition:</b> <a href="ins__flow_8c_source.html#l00239">ins_flow.c:239</a></div></div>
 <div class="ttc" id="alight__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="amag__calib__ukf_8c_html_a6a6823a0d1f6a9d33e408b51e6b43b47"><div class="ttname"><a href="mag__calib__ukf_8c.html#a6a6823a0d1f6a9d33e408b51e6b43b47">H</a></div><div class="ttdeci">static struct FloatVect3 H</div><div class="ttdef"><b>Definition:</b> <a href="mag__calib__ukf_8c_source.html#l00125">mag_calib_ukf.c:127</a></div></div>
 <div class="ttc" id="anamespacemesonh_1_1mesonh__atmosphere_html_a4c4a2af3a5e6039297df89cf28c51b25"><div class="ttname"><a href="namespacemesonh_1_1mesonh__atmosphere.html#a4c4a2af3a5e6039297df89cf28c51b25">mesonh.mesonh_atmosphere.Z</a></div><div class="ttdeci">int Z</div><div class="ttdef"><b>Definition:</b> <a href="mesonh__atmosphere_8py_source.html#l00045">mesonh_atmosphere.py:45</a></div></div>
@@ -817,7 +818,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__matrix__decomp__float_8c.html">pprz_matrix_decomp_float.c</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

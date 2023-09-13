@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__m__coeff_8____unnamed130____":[12,0,1,0,1,2,0,0,9,10],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__regs":[12,0,1,0,1,2,0,0,9,6],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#unionavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff":[12,0,1,0,1,2,0,0,9,3],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#unionavi__isp__edge__enhancement__color__reduction__filter__d__coeff":[12,0,1,0,1,2,0,0,9,5],
@@ -125,8 +126,8 @@ var NAVTREEINDEX18 =
 "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,6,2],
 "avi__isp__i3d__lut_8h.html#ab0c093bbc4ed63212c25305920a11318":[12,0,1,0,1,2,0,0,12,7,2],
 "avi__isp__i3d__lut_8h.html#ab9e09ac5854bc02e596efc986bcce6d9":[12,0,1,0,1,2,0,0,12,0,0],
-"avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,7,1],
 "avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,6,1],
+"avi__isp__i3d__lut_8h.html#abf487a0c4905b53b6d91972e03359d4a":[12,0,1,0,1,2,0,0,12,7,1],
 "avi__isp__i3d__lut_8h.html#af20a20673b7449687166004d9fc40e43":[12,0,1,0,1,2,0,0,12,2,0],
 "avi__isp__i3d__lut_8h.html#af8b61118330e804a9c28726eed26d2b3":[12,0,1,0,1,2,0,0,12,6,0],
 "avi__isp__i3d__lut_8h.html#af8b61118330e804a9c28726eed26d2b3":[12,0,1,0,1,2,0,0,12,7,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__pedestal_8h.html#a60e5d06eb23a85dc8e98e6c71a012c34":[12,0,1,0,1,2,0,0,14,2,0],
 "avi__isp__pedestal_8h.html#a6f8fad7c685e19f1fd82a16d3e5c88de":[12,0,1,0,1,2,0,0,14,13],
 "avi__isp__pedestal_8h.html#a793f0eb0a84535eb094b0d19346c807f":[12,0,1,0,1,2,0,0,14,5,2],
-"avi__isp__pedestal_8h.html#a8665f22cf51c5b3ad53f11bea860c118":[12,0,1,0,1,2,0,0,14,5,1],
-"avi__isp__pedestal_8h.html#a9e3cf2fd10bc1c19922756d6a75eab7e":[12,0,1,0,1,2,0,0,14,5,3]
+"avi__isp__pedestal_8h.html#a8665f22cf51c5b3ad53f11bea860c118":[12,0,1,0,1,2,0,0,14,5,1]
 };

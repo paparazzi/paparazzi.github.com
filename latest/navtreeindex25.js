@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"boards_2ardrone_2board_8c.html":[12,0,1,0,1,1,4],
 "boards_2ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f":[12,0,1,0,1,1,4,1],
 "boards_2ardrone_2board_8c.html#abe211b229633c3f39cbfb50c5765b4b4":[12,0,1,0,1,1,4,3],
 "boards_2ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82":[12,0,1,0,1,1,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "cc2500_8c.html#aa88e934fdd4f5f4f40dfa59c7060c208":[12,0,1,0,7,31,18],
 "cc2500_8c.html#aa9910adea9b66f2a6e49176819f19b0c":[12,0,1,0,7,31,15],
 "cc2500_8c.html#ad011a3b71565fa9ffb5345928297e3c1":[12,0,1,0,7,31,20],
-"cc2500_8c.html#ad0220d0183505b11c18e677fcfd1bc30":[12,0,1,0,7,31,2],
-"cc2500_8c.html#ad2b7c8f0f3b97bdee0f644a2402e5116":[12,0,1,0,7,31,3]
+"cc2500_8c.html#ad0220d0183505b11c18e677fcfd1bc30":[12,0,1,0,7,31,2]
 };

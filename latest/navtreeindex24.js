@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"bmp280__regs_8h.html#a5c0bf19206c3fac48ca0dc28dd58ad16":[12,0,1,0,7,27,69],
 "bmp280__regs_8h.html#a5c479e19a8f2392f84b0e9cadfb9726d":[12,0,1,0,7,27,57],
 "bmp280__regs_8h.html#a5f00e9f4e0207cdfd33f41382b2d3332":[12,0,1,0,7,27,43],
 "bmp280__regs_8h.html#a60467e80efcedeb2a8108c7dad6c0771":[12,0,1,0,7,27,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "boards_2ardrone_2actuators_8h.html#a9d80944a5cb1a8c05b75514679377b9b":[12,0,1,0,1,1,1,2],
 "boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab":[12,0,1,0,1,1,1,10],
 "boards_2ardrone_2actuators_8h.html#afbdec8a79aa471d3f13f7dfcf2e4ea28":[12,0,1,0,1,1,1,7],
-"boards_2ardrone_2actuators_8h_source.html":[12,0,1,0,1,1,1],
-"boards_2ardrone_2board_8c.html":[12,0,1,0,1,1,4]
+"boards_2ardrone_2actuators_8h_source.html":[12,0,1,0,1,1,1]
 };

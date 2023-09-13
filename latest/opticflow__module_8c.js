@@ -8,6 +8,7 @@ var opticflow__module_8c =
     [ "opticflow_module_init", "opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9", null ],
     [ "opticflow_module_run", "opticflow__module_8c.html#abf53d072984591ae6710a65682d6bedb", null ],
     [ "opticflow_telem_send", "opticflow__module_8c.html#a72d1d69e9aee6c7fe948f78b185a944f", null ],
+    [ "fps_OF", "opticflow__module_8c.html#a980e4ad5726c99600839cb15d5f1ab71", null ],
     [ "opticflow", "opticflow__module_8c.html#a82a571b4f979b955128f710d3525a5b6", null ],
     [ "opticflow_got_result", "opticflow__module_8c.html#ad57aa4b9c052359f9679ccb6d84422a0", null ],
     [ "opticflow_mutex", "opticflow__module_8c.html#a23808153add26099f13bbecfa1f293ae", null ],

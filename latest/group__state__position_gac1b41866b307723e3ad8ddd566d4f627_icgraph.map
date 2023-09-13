@@ -1,17 +1,19 @@
 <map id="stateGetPositionNed_f" name="stateGetPositionNed_f">
-<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="1140,314,1308,341"/>
+<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="1140,403,1308,430"/>
 <area shape="rect" id="node2" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="915,5,1081,47"/>
 <area shape="rect" id="node5" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="915,71,1081,112"/>
 <area shape="rect" id="node6" href="$autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="907,137,1089,163"/>
-<area shape="rect" id="node9" href="$obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title=" " alt="" coords="921,187,1075,214"/>
-<area shape="rect" id="node11" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="945,238,1051,265"/>
-<area shape="rect" id="node13" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="907,289,1089,315"/>
-<area shape="rect" id="node20" href="$rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control." alt="" coords="904,339,1092,366"/>
-<area shape="rect" id="node22" href="$logger__file_8c.html#aabde24b05774e16f4347f675ca00704f" title="Write CSV row Write values at this timestamp to log file." alt="" coords="917,390,1079,417"/>
-<area shape="rect" id="node24" href="$mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title=" " alt="" coords="923,441,1073,483"/>
-<area shape="rect" id="node27" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="905,507,1091,534"/>
-<area shape="rect" id="node28" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="913,559,1083,600"/>
-<area shape="rect" id="node29" href="$tag__tracking_8c.html#aaee13ce9f831f3f3773208241db1a0c9" title=" " alt="" coords="921,625,1075,651"/>
+<area shape="rect" id="node9" href="$obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title=" " alt="" coords="921,195,1075,222"/>
+<area shape="rect" id="node11" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="945,263,1051,290"/>
+<area shape="rect" id="node13" href="$rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="907,327,1089,354"/>
+<area shape="rect" id="node20" href="$rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control." alt="" coords="904,378,1092,405"/>
+<area shape="rect" id="node22" href="$logger__file_8c.html#aabde24b05774e16f4347f675ca00704f" title="Write CSV row Write values at this timestamp to log file." alt="" coords="917,429,1079,455"/>
+<area shape="rect" id="node24" href="$mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title=" " alt="" coords="923,480,1073,521"/>
+<area shape="rect" id="node27" href="$ins__flow_8c.html#a55c722921bb81fa0d3a9767dd6d787bf" title=" " alt="" coords="935,546,1061,573"/>
+<area shape="rect" id="node29" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="905,597,1091,623"/>
+<area shape="rect" id="node30" href="$ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="941,647,1055,674"/>
+<area shape="rect" id="node32" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="913,699,1083,740"/>
+<area shape="rect" id="node33" href="$tag__tracking_8c.html#aaee13ce9f831f3f3773208241db1a0c9" title=" " alt="" coords="921,765,1075,791"/>
 <area shape="rect" id="node3" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="651,5,856,47"/>
 <area shape="rect" id="node4" href="$mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="446,13,565,39"/>
 <area shape="rect" id="node7" href="$autopilot__guided_8c.html#a2e1c3e1b1fd34632e5de912da830ba26" title="Parse GUIDED_SETPOINT_NED messages from datalink." alt="" coords="666,71,841,112"/>
@@ -28,7 +30,9 @@
 <area shape="rect" id="node23" href="$logger__file_8c.html#a61d6da065f21ff3b0317135f1f4d5367" title="Log the values to a csv file" alt="" coords="679,441,828,467"/>
 <area shape="rect" id="node25" href="$mavlink_8c.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions." alt="" coords="702,491,805,518"/>
 <area shape="rect" id="node26" href="$mavlink_8c.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls." alt="" coords="686,542,821,569"/>
-<area shape="rect" id="node30" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="701,609,806,635"/>
-<area shape="rect" id="node32" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="680,660,827,701"/>
-<area shape="rect" id="node31" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="440,609,571,635"/>
+<area shape="rect" id="node28" href="$ins__flow_8c.html#aaec1213e138f25bd822716c107ecde5e" title=" " alt="" coords="690,593,817,619"/>
+<area shape="rect" id="node31" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="702,647,805,674"/>
+<area shape="rect" id="node34" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="701,735,806,762"/>
+<area shape="rect" id="node36" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="680,787,827,828"/>
+<area shape="rect" id="node35" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="440,735,571,762"/>
 </map>

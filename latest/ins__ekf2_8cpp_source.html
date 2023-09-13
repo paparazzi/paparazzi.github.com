@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">/* Static local variables */</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">  301</a></span>&#160;static Ekf <a class="code" href="ins__ekf2_8cpp.html#aa4bc42dbc6ffe854fffc661819ecc95f">ekf</a>;                                   </div>
-<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">  302</a></span>&#160;static parameters *<a class="code" href="ins__ekf2_8cpp.html#a7ebb306ae134f14fcd8316014eac8b5e">ekf_params</a>;                    </div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">  302</a></span>&#160;static <a class="code" href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a> *<a class="code" href="ins__ekf2_8cpp.html#a7ebb306ae134f14fcd8316014eac8b5e">ekf_params</a>;                    </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;struct <a class="code" href="ins__ekf2_8h.html#structekf2__t">ekf2_t</a> <a class="code" href="ins__ekf2_8cpp.html#ab08cd9ab7b494f7fb29acb294bd18d5a">ekf2</a>;                               </div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
@@ -1151,6 +1151,7 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div class="ttc" id="ains__ekf2_8h_html_ae372cc2d584068cad7143e5b555812c9"><div class="ttname"><a href="ins__ekf2_8h.html#ae372cc2d584068cad7143e5b555812c9">ekf2_t::quat_reset_counter</a></div><div class="ttdeci">uint8_t quat_reset_counter</div><div class="ttdoc">Amount of quaternion resets from the EKF2.</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8h_source.html#l00051">ins_ekf2.h:51</a></div></div>
 <div class="ttc" id="ains__ekf2_8h_html_ae4e2f439ebf083c315bf22b29565d225"><div class="ttname"><a href="ins__ekf2_8h.html#ae4e2f439ebf083c315bf22b29565d225">ekf2_t::delta_gyro</a></div><div class="ttdeci">struct FloatRates delta_gyro</div><div class="ttdoc">Last gyroscope measurements.</div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8h_source.html#l00065">ins_ekf2.h:41</a></div></div>
 <div class="ttc" id="ains__ekf2_8h_html_structekf2__t"><div class="ttname"><a href="ins__ekf2_8h.html#structekf2__t">ekf2_t</a></div><div class="ttdef"><b>Definition:</b> <a href="ins__ekf2_8h_source.html#l00040">ins_ekf2.h:40</a></div></div>
+<div class="ttc" id="ains__flow_8c_html_a2a8de86fce95d31cd9cadfbbe7f06792"><div class="ttname"><a href="ins__flow_8c.html#a2a8de86fce95d31cd9cadfbbe7f06792">parameters</a></div><div class="ttdeci">float parameters[20]</div><div class="ttdef"><b>Definition:</b> <a href="ins__flow_8c_source.html#l00239">ins_flow.c:239</a></div></div>
 <div class="ttc" id="anav_2waypoints_8c_html_a2c2d759f6328c40f66c4cc162da266bb"><div class="ttname"><a href="nav_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints_localize_all</a></div><div class="ttdeci">void waypoints_localize_all(void)</div><div class="ttdoc">update local ENU coordinates of global waypoints</div><div class="ttdef"><b>Definition:</b> <a href="nav_2waypoints_8c_source.html#l00349">waypoints.c:349</a></div></div>
 <div class="ttc" id="anav_2waypoints_8h_html"><div class="ttname"><a href="nav_2waypoints_8h.html">waypoints.h</a></div></div>
 <div class="ttc" id="anps__autopilot_8h_html"><div class="ttname"><a href="nps__autopilot_8h.html">nps_autopilot.h</a></div></div>
@@ -1188,7 +1189,7 @@ $(document).ready(function(){initNavTree('ins__ekf2_8cpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__ekf2_8cpp.html">ins_ekf2.cpp</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

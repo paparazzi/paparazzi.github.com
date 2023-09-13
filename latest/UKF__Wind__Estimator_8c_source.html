@@ -1177,7 +1177,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="comment">/* Model step function */</span></div>
 <div class="line"><a name="l01088"></a><span class="lineno"><a class="line" href="UKF__Wind__Estimator_8c.html#ace2249208dcb95cf298d03ea903f34b1"> 1088</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="UKF__Wind__Estimator_8c.html#ace2249208dcb95cf298d03ea903f34b1">UKF_Wind_Estimator_step</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;{</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> lambda;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> jmax;</div>
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> colj;</div>
 <div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_j;</div>
@@ -1242,18 +1242,18 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (b_j &lt; 8)) {</div>
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;      jj = (colj + b_j) - 1;</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;      <span class="keywordflow">if</span> (!(b_j - 1 &lt; 1)) {</div>
 <div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;        ix = colj;</div>
 <div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;        iy = colj;</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        <span class="keywordflow">for</span> (i = 1; i &lt; b_j; i++) {</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;          lambda += SQ[ix] * SQ[iy];</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SQ[ix] * SQ[iy];</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;          ix++;</div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;          iy++;</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        }</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;      }</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160; </div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;      ajj = SQ[jj] - lambda;</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;      ajj = SQ[jj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;      <span class="keywordflow">if</span> (ajj &gt; 0.0F) {</div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;        ajj = sqrtf(ajj);</div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        SQ[jj] = ajj;</div>
@@ -1263,22 +1263,22 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;            ix = ((6 - b_j) * 7 + colj) + 8;</div>
 <div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;            <span class="keywordflow">for</span> (iy = colj + 8; iy &lt;= ix; iy += 7) {</div>
 <div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;              b_ix = colj;</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;              lambda = 0.0F;</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;              <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;              e = (iy + b_j) - 2;</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;              <span class="keywordflow">for</span> (ia = iy; ia &lt;= e; ia++) {</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                lambda += SQ[ia - 1] * SQ[b_ix];</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;                <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SQ[ia - 1] * SQ[b_ix];</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;              }</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160; </div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;              SQ[b_iy] += -lambda;</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;              SQ[b_iy] += -<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;              b_iy += 7;</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;            }</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;          }</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160; </div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;          lambda = 1.0F / ajj;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / ajj;</div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;          ix = ((6 - b_j) * 7 + jj) + 8;</div>
 <div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;          <span class="keywordflow">for</span> (b_iy = jj + 7; b_iy + 1 &lt;= ix; b_iy += 7) {</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;            SQ[b_iy] *= lambda;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;            SQ[b_iy] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;          }</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160; </div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;          colj += 7;</div>
@@ -1343,13 +1343,13 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:40&#39; */</span></div>
 <div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;  <span class="comment">/* dimension de l&#39;etat */</span></div>
 <div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:42&#39; */</span></div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;  lambda = <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#acc525c96d58b1674c9091c5b28e7cd43">alpha</a> * <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#acc525c96d58b1674c9091c5b28e7cd43">alpha</a> * (7.0F + <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#a980dc39b528aa0ffeebfaea9979e077b">ki</a>) - 7.0F;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;  <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#acc525c96d58b1674c9091c5b28e7cd43">alpha</a> * <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#acc525c96d58b1674c9091c5b28e7cd43">alpha</a> * (7.0F + <a class="code" href="UKF__Wind__Estimator_8c.html#a223262464a28b74c70ce990658c47d49">ukf_init</a>.<a class="code" href="UKF__Wind__Estimator_8h.html#a980dc39b528aa0ffeebfaea9979e077b">ki</a>) - 7.0F;</div>
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160; </div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:43&#39; */</span></div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;  <span class="comment">/* ----------------Calcul des ponderations Wm et Wc-------------------- */</span></div>
 <div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:47&#39; */</span></div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;  ajj = 0.5F / (7.0F + lambda);</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  rtb_Wm[0] = lambda / (7.0F + lambda);</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;  ajj = 0.5F / (7.0F + <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>);</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  rtb_Wm[0] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> / (7.0F + <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>);</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; 14; i++) {</div>
 <div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    rtb_Wm[i + 1] = ajj;</div>
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;  }</div>
@@ -1366,7 +1366,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:50&#39; */</span></div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:51&#39; */</span></div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;  <span class="comment">/* &#39;&lt;S3&gt;:1:52&#39; */</span></div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;  lambda = sqrtf(7.0F + lambda);</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;  <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = sqrtf(7.0F + <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>);</div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160; </div>
 <div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;  <span class="comment">/* MATLAB Function: &#39;&lt;Root&gt;/sigmas&#39; */</span></div>
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;  <span class="comment">/* MATLAB Function &#39;sigmas&#39;: &#39;&lt;S5&gt;:1&#39; */</span></div>
@@ -1383,7 +1383,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;  <span class="comment">/* Covariance with ponderation: A = c * P  */</span></div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;  <span class="comment">/* &#39;&lt;S5&gt;:1:15&#39; */</span></div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;  <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 49; jmax++) {</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    SQ[jmax] = lambda * rtb_P1[jmax];</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    SQ[jmax] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> * rtb_P1[jmax];</div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;  }</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160; </div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;  <span class="comment">/* dimension modification on state  */</span></div>
@@ -1476,7 +1476,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160; </div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;  <span class="comment">/* square-root of R */</span></div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;  <span class="comment">/* &#39;&lt;S2&gt;:1:38&#39; */</span></div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  lambda = sqrtf(rtb_Wm[1]);</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = sqrtf(rtb_Wm[1]);</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;  <span class="comment">/* &#39;&lt;S2&gt;:1:40&#39; */</span></div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;  <span class="comment">/* 33*11=&gt;[11*22 11*11] */</span></div>
@@ -1484,7 +1484,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;  <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 7; jmax++) {</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;    <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 14; b_j++) {</div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;      lambda_1[b_j + 21 * jmax] = (rtb_Y[(1 + b_j) * 7 + jmax] - rtb_x1[jmax]) *</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        lambda;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    }</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;  }</div>
 <div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160; </div>
@@ -1504,7 +1504,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="keywordflow">if</span> (rtb_Wc[0] &lt; 0.0F) {</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="comment">/* &#39;&lt;S2&gt;:1:46&#39; */</span></div>
 <div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    <span class="comment">/* &#39;&lt;S2&gt;:1:47&#39; */</span></div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    lambda = powf(-rtb_Wc[0], 0.25F);</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = powf(-rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    ajj = powf(-rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 7; jmax++) {</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;      <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 7; b_j++) {</div>
@@ -1513,7 +1513,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;          <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">Y</a>[jmax + 7 * b_j] += SQ[7 * jmax + colj] * SQ[7 * b_j + colj];</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        }</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160; </div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        lambda_2[jmax + 7 * b_j] = lambda * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[jmax] * (ajj * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[b_j]);</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        lambda_2[jmax + 7 * b_j] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[jmax] * (ajj * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[b_j]);</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;      }</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    }</div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160; </div>
@@ -1529,21 +1529,21 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (jmax &lt; 8)) {</div>
 <div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;      colj = (i + jmax) - 1;</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;      <span class="keywordflow">if</span> (!(jmax - 1 &lt; 1)) {</div>
 <div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        jj = i;</div>
 <div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        b_iy = i;</div>
 <div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <span class="keywordflow">for</span> (ix = 1; ix &lt; jmax; ix++) {</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;          lambda += rtb_P1[jj] * rtb_P1[b_iy];</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += rtb_P1[jj] * rtb_P1[b_iy];</div>
 <div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;          jj++;</div>
 <div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;          b_iy++;</div>
 <div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        }</div>
 <div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;      }</div>
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160; </div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;      lambda = rtb_P1[colj] - lambda;</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;      <span class="keywordflow">if</span> (lambda &gt; 0.0F) {</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;        lambda = sqrtf(lambda);</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        rtb_P1[colj] = lambda;</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = rtb_P1[colj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> &gt; 0.0F) {</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;        <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = sqrtf(<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>);</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        rtb_P1[colj] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <span class="keywordflow">if</span> (jmax &lt; 7) {</div>
 <div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;          <span class="keywordflow">if</span> (jmax - 1 != 0) {</div>
 <div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;            jj = colj + 7;</div>
@@ -1562,10 +1562,10 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;            }</div>
 <div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;          }</div>
 <div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160; </div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;          lambda = 1.0F / lambda;</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;          jj = ((6 - jmax) * 7 + colj) + 8;</div>
 <div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;          <span class="keywordflow">for</span> (colj += 7; colj + 1 &lt;= jj; colj += 7) {</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;            rtb_P1[colj] *= lambda;</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;            rtb_P1[colj] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;          }</div>
 <div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160; </div>
 <div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;          i += 7;</div>
@@ -1573,7 +1573,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160; </div>
 <div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        jmax++;</div>
 <div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        rtb_P1[colj] = lambda;</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        rtb_P1[colj] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;        b_j = jmax;</div>
 <div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;        exitg1 = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;      }</div>
@@ -1592,7 +1592,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;    }</div>
 <div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    <span class="comment">/* &#39;&lt;S2&gt;:1:49&#39; */</span></div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    lambda = powf(rtb_Wc[0], 0.25F);</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = powf(rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;    ajj = powf(rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 7; jmax++) {</div>
 <div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;      <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 7; b_j++) {</div>
@@ -1601,7 +1601,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;          <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">Y</a>[jmax + 7 * b_j] += SQ[7 * jmax + colj] * SQ[7 * b_j + colj];</div>
 <div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;        }</div>
 <div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160; </div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;        lambda_2[jmax + 7 * b_j] = lambda * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[jmax] * (ajj * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[b_j]);</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;        lambda_2[jmax + 7 * b_j] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[jmax] * (ajj * <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[b_j]);</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;      }</div>
 <div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    }</div>
 <div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160; </div>
@@ -1617,18 +1617,18 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (b_j &lt; 8)) {</div>
 <div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;      jj = (colj + b_j) - 1;</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;      <span class="keywordflow">if</span> (!(b_j - 1 &lt; 1)) {</div>
 <div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        ix = colj;</div>
 <div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        iy = colj;</div>
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        <span class="keywordflow">for</span> (b_iy = 1; b_iy &lt; b_j; b_iy++) {</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;          lambda += rtb_P1[ix] * rtb_P1[iy];</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += rtb_P1[ix] * rtb_P1[iy];</div>
 <div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;          ix++;</div>
 <div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;          iy++;</div>
 <div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        }</div>
 <div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;      }</div>
 <div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160; </div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;      ajj = rtb_P1[jj] - lambda;</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;      ajj = rtb_P1[jj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;      <span class="keywordflow">if</span> (ajj &gt; 0.0F) {</div>
 <div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;        ajj = sqrtf(ajj);</div>
 <div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;        rtb_P1[jj] = ajj;</div>
@@ -1638,22 +1638,22 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;            ix = ((6 - b_j) * 7 + colj) + 8;</div>
 <div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;            <span class="keywordflow">for</span> (iy = colj + 8; iy &lt;= ix; iy += 7) {</div>
 <div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;              b_ix = colj;</div>
-<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;              lambda = 0.0F;</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;              <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;              e = (iy + b_j) - 2;</div>
 <div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;              <span class="keywordflow">for</span> (ia = iy; ia &lt;= e; ia++) {</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;                lambda += rtb_P1[ia - 1] * rtb_P1[b_ix];</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;                <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += rtb_P1[ia - 1] * rtb_P1[b_ix];</div>
 <div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;              }</div>
 <div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160; </div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;              rtb_P1[b_iy] += -lambda;</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;              rtb_P1[b_iy] += -<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;              b_iy += 7;</div>
 <div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;            }</div>
 <div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;          }</div>
 <div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160; </div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;          lambda = 1.0F / ajj;</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / ajj;</div>
 <div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;          ix = ((6 - b_j) * 7 + jj) + 8;</div>
 <div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;          <span class="keywordflow">for</span> (i = jj + 7; i + 1 &lt;= ix; i += 7) {</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;            rtb_P1[i] *= lambda;</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;            rtb_P1[i] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;          }</div>
 <div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160; </div>
 <div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;          colj += 7;</div>
@@ -1749,7 +1749,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160; </div>
 <div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;  <span class="comment">/* Subtracting of &quot;predicted Sigma measures&quot; et &quot;predicted measurement&quot; with ponderation &quot;Wc&quot; */</span></div>
 <div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;  <span class="comment">/* &#39;&lt;S1&gt;:1:49&#39; */</span></div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  lambda = sqrtf(rtb_Wm[1]);</div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = sqrtf(rtb_Wm[1]);</div>
 <div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160; </div>
 <div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;  <span class="comment">/* Concatenation with the square root of the matrix &quot;R&quot; */</span></div>
 <div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;  <span class="comment">/* &#39;&lt;S1&gt;:1:52&#39; */</span></div>
@@ -1759,7 +1759,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;  <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 6; jmax++) {</div>
 <div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;    <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 14; b_j++) {</div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;      lambda_0[b_j + 20 * jmax] = (rtb_Z[(1 + b_j) * 6 + jmax] - rtb_z[jmax]) *</div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;        lambda;</div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;        <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;    }</div>
 <div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;  }</div>
 <div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160; </div>
@@ -1781,7 +1781,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;  <span class="keywordflow">if</span> (rtb_Wc[0] &lt; 0.0F) {</div>
 <div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;    <span class="comment">/* &#39;&lt;S1&gt;:1:62&#39; */</span></div>
 <div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;    <span class="comment">/* &#39;&lt;S1&gt;:1:63&#39; */</span></div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;    lambda = powf(-rtb_Wc[0], 0.25F);</div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;    <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = powf(-rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;    ajj = powf(-rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 6; jmax++) {</div>
 <div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;      <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 6; b_j++) {</div>
@@ -1790,7 +1790,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;          SR_0[jmax + 6 * b_j] += SR[6 * jmax + colj] * SR[6 * b_j + colj];</div>
 <div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;        }</div>
 <div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160; </div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;        lambda_3[jmax + 6 * b_j] = lambda * u[jmax] * (ajj * u[b_j]);</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;        lambda_3[jmax + 6 * b_j] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> * u[jmax] * (ajj * u[b_j]);</div>
 <div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;      }</div>
 <div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    }</div>
 <div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160; </div>
@@ -1806,21 +1806,21 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (jmax &lt; 7)) {</div>
 <div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;      colj = (i + jmax) - 1;</div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;      <span class="keywordflow">if</span> (!(jmax - 1 &lt; 1)) {</div>
 <div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;        jj = i;</div>
 <div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;        b_iy = i;</div>
 <div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;        <span class="keywordflow">for</span> (ix = 1; ix &lt; jmax; ix++) {</div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;          lambda += SR[jj] * SR[b_iy];</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SR[jj] * SR[b_iy];</div>
 <div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;          jj++;</div>
 <div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;          b_iy++;</div>
 <div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;        }</div>
 <div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;      }</div>
 <div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160; </div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;      lambda = SR[colj] - lambda;</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;      <span class="keywordflow">if</span> (lambda &gt; 0.0F) {</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        lambda = sqrtf(lambda);</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;        SR[colj] = lambda;</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = SR[colj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> &gt; 0.0F) {</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = sqrtf(<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>);</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;        SR[colj] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;        <span class="keywordflow">if</span> (jmax &lt; 6) {</div>
 <div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;          <span class="keywordflow">if</span> (jmax - 1 != 0) {</div>
 <div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;            jj = colj + 6;</div>
@@ -1839,10 +1839,10 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;            }</div>
 <div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;          }</div>
 <div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160; </div>
-<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;          lambda = 1.0F / lambda;</div>
+<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;          jj = ((5 - jmax) * 6 + colj) + 7;</div>
 <div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;          <span class="keywordflow">for</span> (colj += 6; colj + 1 &lt;= jj; colj += 6) {</div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;            SR[colj] *= lambda;</div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;            SR[colj] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;          }</div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160; </div>
 <div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;          i += 6;</div>
@@ -1850,7 +1850,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160; </div>
 <div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;        jmax++;</div>
 <div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;        SR[colj] = lambda;</div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;        SR[colj] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;        b_j = jmax;</div>
 <div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;        exitg1 = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;      }</div>
@@ -1869,7 +1869,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    }</div>
 <div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;    <span class="comment">/* &#39;&lt;S1&gt;:1:65&#39; */</span></div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    lambda = powf(rtb_Wc[0], 0.25F);</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = powf(rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    ajj = powf(rtb_Wc[0], 0.25F);</div>
 <div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 6; jmax++) {</div>
 <div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;      <span class="keywordflow">for</span> (b_j = 0; b_j &lt; 6; b_j++) {</div>
@@ -1878,7 +1878,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;          SR_0[jmax + 6 * b_j] += SR[6 * jmax + colj] * SR[6 * b_j + colj];</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;        }</div>
 <div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160; </div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;        lambda_3[jmax + 6 * b_j] = lambda * u[jmax] * (ajj * u[b_j]);</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;        lambda_3[jmax + 6 * b_j] = <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> * u[jmax] * (ajj * u[b_j]);</div>
 <div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;      }</div>
 <div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    }</div>
 <div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160; </div>
@@ -1894,18 +1894,18 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (b_j &lt; 7)) {</div>
 <div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;      jj = (colj + b_j) - 1;</div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;      <span class="keywordflow">if</span> (!(b_j - 1 &lt; 1)) {</div>
 <div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;        ix = colj;</div>
 <div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;        iy = colj;</div>
 <div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;        <span class="keywordflow">for</span> (b_iy = 1; b_iy &lt; b_j; b_iy++) {</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;          lambda += SR[ix] * SR[iy];</div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SR[ix] * SR[iy];</div>
 <div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;          ix++;</div>
 <div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;          iy++;</div>
 <div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;        }</div>
 <div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;      }</div>
 <div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160; </div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;      ajj = SR[jj] - lambda;</div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;      ajj = SR[jj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;      <span class="keywordflow">if</span> (ajj &gt; 0.0F) {</div>
 <div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;        ajj = sqrtf(ajj);</div>
 <div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;        SR[jj] = ajj;</div>
@@ -1915,22 +1915,22 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;            ix = ((5 - b_j) * 6 + colj) + 7;</div>
 <div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;            <span class="keywordflow">for</span> (iy = colj + 7; iy &lt;= ix; iy += 6) {</div>
 <div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;              b_ix = colj;</div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;              lambda = 0.0F;</div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;              <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;              e = (iy + b_j) - 2;</div>
 <div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;              <span class="keywordflow">for</span> (ia = iy; ia &lt;= e; ia++) {</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;                lambda += SR[ia - 1] * SR[b_ix];</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;                <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SR[ia - 1] * SR[b_ix];</div>
 <div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;              }</div>
 <div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160; </div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;              SR[b_iy] += -lambda;</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;              SR[b_iy] += -<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;              b_iy += 6;</div>
 <div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;            }</div>
 <div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;          }</div>
 <div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160; </div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;          lambda = 1.0F / ajj;</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / ajj;</div>
 <div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;          ix = ((5 - b_j) * 6 + jj) + 7;</div>
 <div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;          <span class="keywordflow">for</span> (i = jj + 6; i + 1 &lt;= ix; i += 6) {</div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;            SR[i] *= lambda;</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;            SR[i] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;          }</div>
 <div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160; </div>
 <div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;          colj += 6;</div>
@@ -2085,18 +2085,18 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;    exitg1 = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;    <span class="keywordflow">while</span> ((!exitg1) &amp;&amp; (b_j &lt; 8)) {</div>
 <div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;      jj = (colj + b_j) - 1;</div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;      lambda = 0.0F;</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;      <span class="keywordflow">if</span> (!(b_j - 1 &lt; 1)) {</div>
 <div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;        ix = colj;</div>
 <div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;        iy = colj;</div>
 <div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;        <span class="keywordflow">for</span> (b_iy = 1; b_iy &lt; b_j; b_iy++) {</div>
-<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;          lambda += SQ[ix] * SQ[iy];</div>
+<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SQ[ix] * SQ[iy];</div>
 <div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;          ix++;</div>
 <div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;          iy++;</div>
 <div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;        }</div>
 <div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;      }</div>
 <div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160; </div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;      ajj = SQ[jj] - lambda;</div>
+<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;      ajj = SQ[jj] - <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;      <span class="keywordflow">if</span> (ajj &gt; 0.0F) {</div>
 <div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;        ajj = sqrtf(ajj);</div>
 <div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;        SQ[jj] = ajj;</div>
@@ -2106,22 +2106,22 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;            ix = ((6 - b_j) * 7 + colj) + 8;</div>
 <div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;            <span class="keywordflow">for</span> (iy = colj + 8; iy &lt;= ix; iy += 7) {</div>
 <div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;              b_ix = colj;</div>
-<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;              lambda = 0.0F;</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;              <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;              e = (iy + b_j) - 2;</div>
 <div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;              <span class="keywordflow">for</span> (ia = iy; ia &lt;= e; ia++) {</div>
-<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;                lambda += SQ[ia - 1] * SQ[b_ix];</div>
+<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;                <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += SQ[ia - 1] * SQ[b_ix];</div>
 <div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;              }</div>
 <div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160; </div>
-<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;              SQ[b_iy] += -lambda;</div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;              SQ[b_iy] += -<a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;              b_iy += 7;</div>
 <div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;            }</div>
 <div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;          }</div>
 <div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160; </div>
-<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;          lambda = 1.0F / ajj;</div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;          <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 1.0F / ajj;</div>
 <div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;          ix = ((6 - b_j) * 7 + jj) + 8;</div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;          <span class="keywordflow">for</span> (b_iy = jj + 7; b_iy + 1 &lt;= ix; b_iy += 7) {</div>
-<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;            SQ[b_iy] *= lambda;</div>
+<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;            SQ[b_iy] *= <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;          }</div>
 <div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160; </div>
 <div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;          colj += 7;</div>
@@ -2154,12 +2154,12 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;  }</div>
 <div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160; </div>
 <div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; 7; i++) {</div>
-<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;    lambda = 0.0F;</div>
+<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;    <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> = 0.0F;</div>
 <div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 6; jmax++) {</div>
-<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;      lambda += <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a>[7 * jmax + i] * u[jmax];</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;      <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a> += <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a>[7 * jmax + i] * u[jmax];</div>
 <div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;    }</div>
 <div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160; </div>
-<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[i] = rtb_x1[i] + lambda;</div>
+<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[i] = rtb_x1[i] + <a class="code" href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a>;</div>
 <div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;    <span class="keywordflow">for</span> (jmax = 0; jmax &lt; 7; jmax++) {</div>
 <div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;      rtb_P1[jmax + 7 * i] = <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">Y</a>[7 * jmax + i];</div>
 <div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;    }</div>
@@ -2243,6 +2243,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="ttc" id="ains__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00257">ins_alt_float.c:257</a></div></div>
 <div class="ttc" id="alight__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="anamespacemesonh_1_1mesonh__atmosphere_html_a5689687c9a17e62dee1f9631987ed82e"><div class="ttname"><a href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">mesonh.mesonh_atmosphere.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>Definition:</b> <a href="mesonh__atmosphere_8py_source.html#l00044">mesonh_atmosphere.py:44</a></div></div>
+<div class="ttc" id="aoptical__flow__landing_8c_html_acac4a565486bad0b88b62387d8a5d891"><div class="ttname"><a href="optical__flow__landing_8c.html#acac4a565486bad0b88b62387d8a5d891">lambda</a></div><div class="ttdeci">float lambda</div><div class="ttdef"><b>Definition:</b> <a href="optical__flow__landing_8c_source.html#l00257">optical_flow_landing.c:257</a></div></div>
 <div class="ttc" id="artwtypes_8h_html_a3f14692b9a04d8211058e2bfc777a9fc"><div class="ttname"><a href="rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc">boolean_T</a></div><div class="ttdeci">unsigned char boolean_T</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00064">rtwtypes.h:64</a></div></div>
 <div class="ttc" id="artwtypes_8h_html_a4681caa479b0bdadb029f609112eaa71"><div class="ttname"><a href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a></div><div class="ttdeci">float real32_T</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00055">rtwtypes.h:55</a></div></div>
 <div class="ttc" id="artwtypes_8h_html_a9609106d9819cc5902186f03b8c49508"><div class="ttname"><a href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a></div><div class="ttdeci">int int32_T</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00053">rtwtypes.h:53</a></div></div>
@@ -2255,7 +2256,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dir_52cf33ca6ff4e1b7a3968aed8ced90c8.html">lib_ukf_wind_estimator</a></li><li class="navelem"><a class="el" href="UKF__Wind__Estimator_8c.html">UKF_Wind_Estimator.c</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 09:08:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 13 2023 13:51:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
