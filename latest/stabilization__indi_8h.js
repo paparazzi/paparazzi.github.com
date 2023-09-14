@@ -21,6 +21,7 @@ var stabilization__indi_8h =
     [ "g1g2", "stabilization__indi_8h.html#a58b9d284732ce9ce4df89c8cb5027fb2", null ],
     [ "indi_gains", "stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f", null ],
     [ "indi_use_adaptive", "stabilization__indi_8h.html#abf1ef333c752f3f24a26a3efaede5fea", null ],
+    [ "indi_Wu", "stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047", null ],
     [ "stab_att_sp_euler", "stabilization__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
 ];

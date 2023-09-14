@@ -201,6 +201,9 @@ Variables</h2></td></tr>
 <tr class="separator:a1953a1d7093d5fe41c2a4361577a837a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147581e222fb8f9b1cb2d3479a05aa01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a147581e222fb8f9b1cb2d3479a05aa01">act_pref</a> [INDI_NUM_ACT]</td></tr>
 <tr class="separator:a147581e222fb8f9b1cb2d3479a05aa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab8eb217dc373419dff7079543da047"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a> [INDI_NUM_ACT]</td></tr>
+<tr class="memdesc:a4ab8eb217dc373419dff7079543da047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighting of different actuators in the cost function.  <a href="stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047">More...</a><br /></td></tr>
+<tr class="separator:a4ab8eb217dc373419dff7079543da047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26af36c957621d1c4301561740eea35f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="stabilization__indi__simple_8h.html#structIndi__gains">Indi_gains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f">indi_gains</a></td></tr>
 <tr class="separator:a26af36c957621d1c4301561740eea35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -217,7 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00044">44</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8h_source.html#l00046">46</a> of file <a class="el" href="stabilization__indi_8h_source.html">stabilization_indi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Indi_gains:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -764,6 +767,34 @@ rate</td>
 
 </div>
 </div>
+<a id="a4ab8eb217dc373419dff7079543da047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab8eb217dc373419dff7079543da047">&#9670;&nbsp;</a></span>indi_Wu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float indi_Wu[INDI_NUM_ACT]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Weighting of different actuators in the cost function. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00142">142</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00410">stabilization_indi_rate_run()</a>.</p>
+
+</div>
+</div>
 <a id="a5b355848d1ce79a73b3fe67c8e86cd42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b355848d1ce79a73b3fe67c8e86cd42">&#9670;&nbsp;</a></span>stab_att_sp_euler</h2>
 
@@ -822,7 +853,7 @@ rate</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8h.html">stabilization_indi.h</a></li>
-    <li class="footer">Generated on Thu Sep 14 2023 15:26:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 14 2023 15:44:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
