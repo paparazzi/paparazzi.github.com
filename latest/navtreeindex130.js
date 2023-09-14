@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__imu_openpilot_revo.html#module_xml__imu_openpilot_revo":[1,201,2,0],
 "module__imu_openpilot_revo_nano.html":[1,202],
 "module__imu_openpilot_revo_nano.html#configuration__imu_openpilot_revo_nano":[1,202,1],
 "module__imu_openpilot_revo_nano.html#functions__imu_openpilot_revo_nano":[1,202,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__logger_uart.html#module_xml__logger_uart":[1,247,2,0],
 "module__mag_calib_ukf.html":[1,447],
 "module__mag_calib_ukf.html#configuration__mag_calib_ukf":[1,447,1],
-"module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,447,2]
+"module__mag_calib_ukf.html#functions__mag_calib_ukf":[1,447,2],
+"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,447,0]
 };

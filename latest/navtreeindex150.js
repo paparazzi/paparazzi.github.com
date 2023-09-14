@@ -1,6 +1,5 @@
 var NAVTREEINDEX150 =
 {
-"naze32_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781":[12,0,1,0,1,16,0,1],
 "naze32_2baro__board_8h.html#a8546c5da434e5120bc0c247c556dc11d":[12,0,1,0,1,16,0,0],
 "naze32_2baro__board_8h_source.html":[12,0,1,0,1,16,0],
 "naze32__common_8h.html":[12,0,1,0,1,49],
@@ -249,5 +248,6 @@ var NAVTREEINDEX150 =
 "nps__fdm_8h.html#a52845281968b3eb8c4415f912299e507":[12,0,1,1,1,9,0,10],
 "nps__fdm_8h.html#a53ecaa8442cbd8d50152cde7883e3cfa":[12,0,1,1,1,9,0,1],
 "nps__fdm_8h.html#a56449d79c428e69a52cdbcb11a4daa48":[12,0,1,1,1,9,0,28],
-"nps__fdm_8h.html#a5c147f815d1e881d55f45360f9eeafee":[12,0,1,1,1,9,0,33]
+"nps__fdm_8h.html#a5c147f815d1e881d55f45360f9eeafee":[12,0,1,1,1,9,0,33],
+"nps__fdm_8h.html#a675472ed6237e3523c788ba097bfef41":[12,0,1,1,1,9,0,7]
 };

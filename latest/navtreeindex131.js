@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__mag_calib_ukf.html#module_load_example__mag_calib_ukf":[1,447,0],
 "module__mag_calib_ukf.html#module_xml__mag_calib_ukf":[1,447,2,0],
 "module__mag_hmc5843.html":[1,379],
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,379,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX131 =
 "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance":[1,450,0],
 "module__obstacle_avoidance.html#module_xml__obstacle_avoidance":[1,450,1,0],
 "module__opa_controller.html":[1,42],
-"module__opa_controller.html#functions__opa_controller":[1,42,1]
+"module__opa_controller.html#functions__opa_controller":[1,42,1],
+"module__opa_controller.html#module_load_example__opa_controller":[1,42,0]
 };

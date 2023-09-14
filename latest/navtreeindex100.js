@@ -1,6 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"light__ws2812__arch_8c.html#a0196d9b5b8adb9854da6c3212c84763c":[12,0,1,0,0,0,1,2,0,12],
 "light__ws2812__arch_8c.html#a080cff9ec3c8306e7c5e09fe4079b4df":[12,0,1,0,0,0,1,2,0,8],
 "light__ws2812__arch_8c.html#a141373abd609f893771480126821baa4":[12,0,1,0,0,0,1,2,0,0,0],
 "light__ws2812__arch_8c.html#a1592178bd1150d30d1f9572eccd39615":[12,0,1,0,0,0,1,2,0,21],
@@ -249,5 +248,6 @@ var NAVTREEINDEX100 =
 "linux_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,1,1,0,1,2],
 "linux_2modules_2actuators_2actuators__pwm__arch_8h.html#ad35eb8ed0c548021d922168b3b58d1a4":[12,0,1,0,0,1,1,0,1,1],
 "linux_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,1,1,0,1],
-"linux_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,1,1,1,0]
+"linux_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,1,1,1,0],
+"linux_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,1,1,1,0,3]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__opa_controller.html#module_load_example__opa_controller":[1,42,0],
 "module__opa_controller.html#module_xml__opa_controller":[1,42,1,0],
 "module__openlog.html":[1,248],
 "module__openlog.html#functions__openlog":[1,248,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw":[1,397,2],
 "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,397,0],
 "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,397,2,0],
-"module__stabilization_float_euler.html":[1,398]
+"module__stabilization_float_euler.html":[1,398],
+"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,398,1]
 };

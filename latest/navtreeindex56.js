@@ -1,6 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"gas__engine__idle__trim_8h.html#ae5ab7dc2cc335c93fb0c85347b18b5ee":[12,0,1,0,6,24,1,0],
 "gas__engine__idle__trim_8h_source.html":[12,0,1,0,6,24,1],
 "gec_8c.html":[12,0,1,0,6,14,1,0],
 "gec_8c.html#a47cb1fdb91e28f8c78d374c2bd3cf323":[12,0,1,0,6,14,1,0,2],
@@ -202,8 +201,8 @@ var NAVTREEINDEX56 =
 "glide__wing__lock_8h.html#a500763dbb0f4ced17a8946d9335e260b":[12,0,1,0,6,26,1,1],
 "glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98":[12,0,1,0,6,26,1,0],
 "glide__wing__lock_8h_source.html":[12,0,1,0,6,26,1],
-"globals.html":[12,1,0],
 "globals.html":[12,1,0,0],
+"globals.html":[12,1,0],
 "globals_a.html":[12,1,0,1],
 "globals_b.html":[12,1,0,2],
 "globals_c.html":[12,1,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX56 =
 "globals_enum_i.html":[12,1,4,8],
 "globals_enum_j.html":[12,1,4,9],
 "globals_enum_l.html":[12,1,4,10],
-"globals_enum_m.html":[12,1,4,11]
+"globals_enum_m.html":[12,1,4,11],
+"globals_enum_n.html":[12,1,4,12]
 };

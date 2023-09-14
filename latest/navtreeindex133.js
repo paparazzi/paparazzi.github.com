@@ -1,6 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,398,1],
 "module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,398,2],
 "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,398,0],
 "module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,398,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX133 =
 "module__trig_test.html#module_load_example__trig_test":[1,82,0],
 "module__trig_test.html#module_xml__trig_test":[1,82,1,0],
 "module__tune_airspeed.html":[1,333],
-"module__tune_airspeed.html#configuration__tune_airspeed":[1,333,1]
+"module__tune_airspeed.html#configuration__tune_airspeed":[1,333,1],
+"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,333,0]
 };

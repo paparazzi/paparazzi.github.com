@@ -1,6 +1,5 @@
 var NAVTREEINDEX167 =
 {
-"power__switch_8c.html":[12,0,1,0,6,6,4],
 "power__switch_8c.html#a15d2e23b4bffbfeabc7942de6c5d9c33":[12,0,1,0,6,6,4,2],
 "power__switch_8c.html#a61d9e7223196f3b57ec5d7f1624fc9d9":[12,0,1,0,6,6,4,1],
 "power__switch_8c.html#aa1890f26c3d69efce64fb193430e8a87":[12,0,1,0,6,6,4,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX167 =
 "pprz__mutex_8h_source.html":[12,0,1,0,26],
 "pprz__orientation__conversion_8c.html":[12,0,1,0,4,22],
 "pprz__orientation__conversion_8c_source.html":[12,0,1,0,4,22],
-"pprz__orientation__conversion_8h.html":[12,0,1,0,4,23]
+"pprz__orientation__conversion_8h.html":[12,0,1,0,4,23],
+"pprz__orientation__conversion_8h_source.html":[12,0,1,0,4,23]
 };

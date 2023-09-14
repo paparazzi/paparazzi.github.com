@@ -1,6 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"module__actuators_dualpwm.html#module_xml__actuators_dualpwm":[1,7,0,0],
 "module__actuators_dummy.html":[1,8],
 "module__actuators_dummy.html#module_load_example__actuators_dummy":[1,8,0],
 "module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX126 =
 "module__baro_ms5534a.html#functions__baro_ms5534a":[1,363,1],
 "module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,363,0],
 "module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,363,1,0],
-"module__baro_ms5611_i2c.html":[1,373]
+"module__baro_ms5611_i2c.html":[1,373],
+"module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,373,1]
 };

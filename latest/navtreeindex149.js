@@ -1,6 +1,5 @@
 var NAVTREEINDEX149 =
 {
-"nav__vertical__raster_8h.html#ae619117944f2726786ef67a9691d537a":[12,0,1,0,6,46,74,1],
 "nav__vertical__raster_8h_source.html":[12,0,1,0,6,46,74],
 "navdata_8c.html":[12,0,1,0,1,1,6],
 "navdata_8c.html#a097d40838c4d36b21635cc59b768568a":[12,0,1,0,1,1,6,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX149 =
 "navstik__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857":[12,0,1,0,1,48,85],
 "navstik__1_80_8h_source.html":[12,0,1,0,1,48],
 "naze32_2baro__board_8h.html":[12,0,1,0,1,16,0],
-"naze32_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,16,0,2]
+"naze32_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,16,0,2],
+"naze32_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781":[12,0,1,0,1,16,0,1]
 };

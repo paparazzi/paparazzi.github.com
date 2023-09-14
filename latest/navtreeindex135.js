@@ -1,6 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"modules_2ins_2ins__arduimu_8c.html#a71ab195043b0eef3d99d90fe9d227f1c":[12,0,1,0,6,36,14,4],
 "modules_2ins_2ins__arduimu_8c.html#a78c0ed4113166dc7fa861569f0899d07":[12,0,1,0,6,36,14,5],
 "modules_2ins_2ins__arduimu_8c.html#a7ad0b6baa7c668497b49a342fbddc246":[12,0,1,0,6,36,14,17],
 "modules_2ins_2ins__arduimu_8c.html#a9084095772fef629b46485b78cb1fd7a":[12,0,1,0,6,36,14,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX135 =
 "mpu60x0__i2c_8c_source.html":[12,0,1,0,7,89],
 "mpu60x0__i2c_8h.html":[12,0,1,0,7,90],
 "mpu60x0__i2c_8h.html#a0436de01984b618448ea9313b92e1a1f":[12,0,1,0,7,90,0,6],
-"mpu60x0__i2c_8h.html#a0eed8f3d64568296f08ef85ef4a4e1db":[12,0,1,0,7,90,0,2]
+"mpu60x0__i2c_8h.html#a0eed8f3d64568296f08ef85ef4a4e1db":[12,0,1,0,7,90,0,2],
+"mpu60x0__i2c_8h.html#a18c3145fc5159f824a0bb9c6e327ede0":[12,0,1,0,7,90,6]
 };

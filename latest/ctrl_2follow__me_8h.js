@@ -13,6 +13,5 @@ var ctrl_2follow__me_8h =
     [ "follow_me_heading", "ctrl_2follow__me_8h.html#a7a5570a7da89bfc9a9ff14f0beff7c1a", null ],
     [ "follow_me_height", "ctrl_2follow__me_8h.html#a60804f459f50c5d80da04f81f9798523", null ],
     [ "follow_me_min_dist", "ctrl_2follow__me_8h.html#a541cb0adf085706d5ad8db5472190a50", null ],
-    [ "follow_me_min_height", "ctrl_2follow__me_8h.html#a30faadd93c0e41f2f90c21453e15ce4a", null ],
-    [ "follow_me_min_speed", "ctrl_2follow__me_8h.html#a184b840a1d78fbebf9d18c722b31d81f", null ]
+    [ "follow_me_min_height", "ctrl_2follow__me_8h.html#a30faadd93c0e41f2f90c21453e15ce4a", null ]
 ];

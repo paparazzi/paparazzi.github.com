@@ -1,6 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"linux_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,1,1,1,0,3],
 "linux_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,1,1,1,0,2],
 "linux_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,0,1,1,1,0,1],
 "linux_2modules_2core_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46":[12,0,1,0,0,1,1,1,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX101 =
 "lisa__l__1_80_8h.html#a787b5d0dff7658e5e923331317635545":[12,0,1,0,1,37,75],
 "lisa__l__1_80_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,37,63],
 "lisa__l__1_80_8h.html#a78b91cae357eed2023271f3a889047dd":[12,0,1,0,1,37,67],
-"lisa__l__1_80_8h.html#a79875406470f39efa3bac72bf8eba9dc":[12,0,1,0,1,37,89]
+"lisa__l__1_80_8h.html#a79875406470f39efa3bac72bf8eba9dc":[12,0,1,0,1,37,89],
+"lisa__l__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,37,83]
 };

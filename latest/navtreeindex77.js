@@ -1,6 +1,5 @@
 var NAVTREEINDEX77 =
 {
-"hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,18,12,8],
 "hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,18,12,3],
 "hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,18,12,6],
 "hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,18,12,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#a9464826fae91544e9fc803865f5e3107":[12,0,1,0,6,41,5,17],
 "high__speed__logger__direct__memory_8c.html#a94bf902b935af9c00b2d9ed517c5c42f":[12,0,1,0,6,41,5,27],
 "high__speed__logger__direct__memory_8c.html#a9990f90c7793297d37d005b063f8ff98":[12,0,1,0,6,41,5,42],
-"high__speed__logger__direct__memory_8c.html#a9bb9556634a30631566d56635357a786":[12,0,1,0,6,41,5,66]
+"high__speed__logger__direct__memory_8c.html#a9bb9556634a30631566d56635357a786":[12,0,1,0,6,41,5,66],
+"high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02":[12,0,1,0,6,41,5,37]
 };

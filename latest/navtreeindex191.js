@@ -1,6 +1,5 @@
 var NAVTREEINDEX191 =
 {
-"simple__kinematic__kalman_8h.html#structSimpleKinematicKalman":[12,0,1,0,2,10,0],
 "simple__kinematic__kalman_8h_source.html":[12,0,1,0,2,10],
 "simple__quad__sim_8py.html":[12,0,1,1,1,0,0],
 "simple__quad__sim_8py.html#a3513a321b42c153fcea5d77f2187a101":[12,0,1,1,1,0,0,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX191 =
 "spektrum_8c.html#ad36800f2dd3d9a6f599cd99421269344":[12,0,1,0,6,55,19,12],
 "spektrum_8c.html#ad9c6fda612b8ff7f3ea808c9ee297b29":[12,0,1,0,6,55,19,3],
 "spektrum_8c.html#aeb799752761fa63643164030662f8ca6":[12,0,1,0,6,55,19,16],
-"spektrum_8c.html#af991dac26ce4e2a25ad25045fe86e782":[12,0,1,0,6,55,19,19]
+"spektrum_8c.html#af991dac26ce4e2a25ad25045fe86e782":[12,0,1,0,6,55,19,19],
+"spektrum_8c.html#afe87961ad559223aa08667212779bf34":[12,0,1,0,6,55,19,20]
 };
