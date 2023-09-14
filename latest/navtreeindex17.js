@@ -1,5 +1,11 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__color__correction_8h.html#a8e369d3821b7157c4651b2c8a9f73aa0":[12,0,1,0,1,2,0,0,5,7,0],
+"avi__isp__color__correction_8h.html#a98140f765533b14b3825ceefc0935d78":[12,0,1,0,1,2,0,0,5,31],
+"avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,18,2],
+"avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,20,2],
+"avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,22,2],
+"avi__isp__color__correction_8h.html#aa553fd2cbf4bfb387b87d8bf26fc503a":[12,0,1,0,1,2,0,0,5,11,5],
 "avi__isp__color__correction_8h.html#aa7e83147cc3d71c898aaa6144d4ef217":[12,0,1,0,1,2,0,0,5,11,9],
 "avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,17,2],
 "avi__isp__color__correction_8h.html#ab5227a108d27d07c07d0f364eb6aa9c3":[12,0,1,0,1,2,0,0,5,19,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#ae462bcb7442c1154607d0de57c9de6a4":[12,0,1,0,1,2,0,0,9,6,8],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aec32af15d6c4647e925e2396445c34c2":[12,0,1,0,1,2,0,0,9,6,5],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aeef2c48ab75694ad409067df9ba665df":[12,0,1,0,1,2,0,0,9,16],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aefaaeed2a812053e0cb093a582e1d9b9":[12,0,1,0,1,2,0,0,9,7,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed128____":[12,0,1,0,1,2,0,0,9,9],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__d__coeff_8____unnamed132____":[12,0,1,0,1,2,0,0,9,11],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__kernel__coeff_8____unnamed126____":[12,0,1,0,1,2,0,0,9,8],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut_8____unnamed124____":[12,0,1,0,1,2,0,0,9,7],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut__regs":[12,0,1,0,1,2,0,0,9,1]
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aeef2c48ab75694ad409067df9ba665df":[12,0,1,0,1,2,0,0,9,16]
 };

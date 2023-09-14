@@ -1,5 +1,15 @@
 var NAVTREEINDEX99 =
 {
+"lia__1_81_8h.html#a7ae5162492c27a9f944435eb96e1cdec":[12,0,1,0,1,36,23],
+"lia__1_81_8h.html#a844db1e680f18109b59149b9e33dbb51":[12,0,1,0,1,36,54],
+"lia__1_81_8h.html#a8475ccb2e744f79592d55d43fa073641":[12,0,1,0,1,36,46],
+"lia__1_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2":[12,0,1,0,1,36,7],
+"lia__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,36,6],
+"lia__1_81_8h.html#aa5ea83d926a661df064db0e68bc60690":[12,0,1,0,1,36,31],
+"lia__1_81_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,36,27],
+"lia__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,36,5],
+"lia__1_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642":[12,0,1,0,1,36,8],
+"lia__1_81_8h.html#aa8b07cb021b87d0c5868a3cb2851510e":[12,0,1,0,1,36,63],
 "lia__1_81_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb":[12,0,1,0,1,36,9],
 "lia__1_81_8h.html#aace877e382bb988e286679d3283814ff":[12,0,1,0,1,36,37],
 "lia__1_81_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf":[12,0,1,0,1,36,60],
@@ -239,15 +249,5 @@ var NAVTREEINDEX99 =
 "light__temt_8h.html#ab0d3b9bd2992f4ac120013dec2cf9a5f":[12,0,1,0,6,43,30,2],
 "light__temt_8h.html#ad79f291e455827d94f9b08e7a23716f3":[12,0,1,0,6,43,30,1],
 "light__temt_8h_source.html":[12,0,1,0,6,43,30],
-"light__ws2812__arch_8c.html":[12,0,1,0,0,0,1,2,0],
-"light__ws2812__arch_8c.html#a0196d9b5b8adb9854da6c3212c84763c":[12,0,1,0,0,0,1,2,0,12],
-"light__ws2812__arch_8c.html#a080cff9ec3c8306e7c5e09fe4079b4df":[12,0,1,0,0,0,1,2,0,8],
-"light__ws2812__arch_8c.html#a141373abd609f893771480126821baa4":[12,0,1,0,0,0,1,2,0,0,0],
-"light__ws2812__arch_8c.html#a1592178bd1150d30d1f9572eccd39615":[12,0,1,0,0,0,1,2,0,21],
-"light__ws2812__arch_8c.html#a190b6be6a702540df9606c31b01b7b13":[12,0,1,0,0,0,1,2,0,5],
-"light__ws2812__arch_8c.html#a2f0b7ce13123d692896c2e56aa6c7c58":[12,0,1,0,0,0,1,2,0,0,2],
-"light__ws2812__arch_8c.html#a3f0d53c16bf1c7c63e0fb393a8944940":[12,0,1,0,0,0,1,2,0,1,4],
-"light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d":[12,0,1,0,0,0,1,2,0,2],
-"light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54":[12,0,1,0,0,0,1,2,0,16],
-"light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf":[12,0,1,0,0,0,1,2,0,17]
+"light__ws2812__arch_8c.html":[12,0,1,0,0,0,1,2,0]
 };

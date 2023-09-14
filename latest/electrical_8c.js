@@ -6,6 +6,7 @@ var electrical_8c =
     [ "MilliAmpereOfAdc", "electrical_8c.html#a4d130fa14265d4aefded214285df4915", null ],
     [ "MIN_BAT_LEVEL", "electrical_8c.html#ae718155e6e9f20accaa19604a341f982", null ],
     [ "VoltageOfAdc", "electrical_8c.html#a3a244669d0d9c86f4339f5d6fe83fdb9", null ],
+    [ "electrical_avg_reset", "electrical_8c.html#a0196bc119a6b247e969ed35a121f76a1", null ],
     [ "electrical_init", "electrical_8c.html#ac5e9a56281268bdf6ddec2143b25f16a", null ],
     [ "electrical_periodic", "electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1", null ],
     [ "electrical", "electrical_8c.html#a935f74638cd658e7dac75915bcb63bde", null ],

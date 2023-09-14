@@ -689,8 +689,10 @@ ENERGY (ID 12)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">power   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone"><a class="el" href="electrical_8h.html#structElectrical">Electrical</a> power    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">charge   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Ah   </td><td class="markdownTableBodyNone">Accumulated consumed charge    </td></tr>
+<td class="markdownTableBodyNone">avg_power   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone">Average electrical power    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">charge   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Ah   </td><td class="markdownTableBodyNone">Accumulated consumed charge    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">energy   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Wh   </td><td class="markdownTableBodyNone">Accumulated consumed energy   </td></tr>
 </table>
 <h2><a class="anchor" id="DEBUG_MCU_LINK"></a>
@@ -4584,6 +4586,10 @@ ESC (ID 245)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">energy   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Wh   </td><td class="markdownTableBodyNone">Accumulated consumed energy    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">temperature   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">K   </td><td class="markdownTableBodyNone">Temperature of the ESC    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">node_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Node ID    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">motor_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Motor ID   </td></tr>
 </table>
 <h2><a class="anchor" id="RTOS_MON"></a>
@@ -6727,7 +6733,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 14 2023 10:06:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 14 2023 11:52:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

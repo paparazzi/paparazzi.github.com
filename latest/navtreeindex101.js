@@ -1,5 +1,15 @@
 var NAVTREEINDEX101 =
 {
+"linux_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,1,1,1,0,3],
+"linux_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,1,1,1,0,2],
+"linux_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,0,1,1,1,0,1],
+"linux_2modules_2core_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46":[12,0,1,0,0,1,1,1,0,0],
+"linux_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,1,1,1,0],
+"lis302dl_8h.html":[12,0,1,0,7,59],
+"lis302dl_8h.html#a13ce2c47bf9a6b9dd5c20fdbfbd0cbd1":[12,0,1,0,7,59,2],
+"lis302dl_8h.html#a1ab5aabe3d4b190c295dafe3a71bf512":[12,0,1,0,7,59,0,2],
+"lis302dl_8h.html#a93e37ac2c058099170f9fb09ab10388b":[12,0,1,0,7,59,0,3],
+"lis302dl_8h.html#ab370a9eb99f86a0cfb0a8baa058b28bc":[12,0,1,0,7,59,0,0],
 "lis302dl_8h.html#abbd3ded46e68822b6cf7ab0a064c3d41":[12,0,1,0,7,59,0,4],
 "lis302dl_8h.html#accc539a9f804785d32381508eb4b1c2b":[12,0,1,0,7,59,0,1],
 "lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367a":[12,0,1,0,7,59,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX101 =
 "lisa__l__1_80_8h.html#a787b5d0dff7658e5e923331317635545":[12,0,1,0,1,37,75],
 "lisa__l__1_80_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,37,63],
 "lisa__l__1_80_8h.html#a78b91cae357eed2023271f3a889047dd":[12,0,1,0,1,37,67],
-"lisa__l__1_80_8h.html#a79875406470f39efa3bac72bf8eba9dc":[12,0,1,0,1,37,89],
-"lisa__l__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,37,83],
-"lisa__l__1_80_8h.html#a7ca4d622269db724a3af09d3625280ee":[12,0,1,0,1,37,62],
-"lisa__l__1_80_8h.html#a81a706c185f561248908b837ec5fd9d2":[12,0,1,0,1,37,120],
-"lisa__l__1_80_8h.html#a836be7fc2de2fff63c960adf64a0d797":[12,0,1,0,1,37,84],
-"lisa__l__1_80_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,37,31],
-"lisa__l__1_80_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,37,136],
-"lisa__l__1_80_8h.html#a89f30c0943f8bf0e6d00899729551f9e":[12,0,1,0,1,37,127],
-"lisa__l__1_80_8h.html#a8c9287b1806544ba7228844060270007":[12,0,1,0,1,37,125],
-"lisa__l__1_80_8h.html#a8cf8c2a558773727c9673f1cab7ac0a7":[12,0,1,0,1,37,16],
-"lisa__l__1_80_8h.html#a8d77db0e10464907b23412abccbf7c63":[12,0,1,0,1,37,32]
+"lisa__l__1_80_8h.html#a79875406470f39efa3bac72bf8eba9dc":[12,0,1,0,1,37,89]
 };

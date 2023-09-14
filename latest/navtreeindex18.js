@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aefaaeed2a812053e0cb093a582e1d9b9":[12,0,1,0,1,2,0,0,9,7,0],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed128____":[12,0,1,0,1,2,0,0,9,9],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__d__coeff_8____unnamed132____":[12,0,1,0,1,2,0,0,9,11],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__kernel__coeff_8____unnamed126____":[12,0,1,0,1,2,0,0,9,8],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut_8____unnamed124____":[12,0,1,0,1,2,0,0,9,7],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__ee__lut__regs":[12,0,1,0,1,2,0,0,9,1],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__m__coeff_8____unnamed130____":[12,0,1,0,1,2,0,0,9,10],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__regs":[12,0,1,0,1,2,0,0,9,6],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#unionavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff":[12,0,1,0,1,2,0,0,9,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__pedestal_8h.html":[12,0,1,0,1,2,0,0,14],
 "avi__isp__pedestal_8h.html#a14096cc4b70cd95bd824469ba2bd80fd":[12,0,1,0,1,2,0,0,14,5,4],
 "avi__isp__pedestal_8h.html#a146d51fd59d46e90ac5db73da08309ad":[12,0,1,0,1,2,0,0,14,8,0],
-"avi__isp__pedestal_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,14,6,0],
-"avi__isp__pedestal_8h.html#a2c5f4c9e6e1bad2942bb32940ebfd9bd":[12,0,1,0,1,2,0,0,14,9,0],
-"avi__isp__pedestal_8h.html#a528c7dada3a2e8d253f1d9a78e022af6":[12,0,1,0,1,2,0,0,14,1,0],
-"avi__isp__pedestal_8h.html#a60e5d06eb23a85dc8e98e6c71a012c34":[12,0,1,0,1,2,0,0,14,2,0],
-"avi__isp__pedestal_8h.html#a6f8fad7c685e19f1fd82a16d3e5c88de":[12,0,1,0,1,2,0,0,14,13],
-"avi__isp__pedestal_8h.html#a793f0eb0a84535eb094b0d19346c807f":[12,0,1,0,1,2,0,0,14,5,2],
-"avi__isp__pedestal_8h.html#a8665f22cf51c5b3ad53f11bea860c118":[12,0,1,0,1,2,0,0,14,5,1]
+"avi__isp__pedestal_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,14,6,0]
 };

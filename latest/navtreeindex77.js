@@ -1,5 +1,15 @@
 var NAVTREEINDEX77 =
 {
+"hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,18,12,8],
+"hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,18,12,3],
+"hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,18,12,6],
+"hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,18,12,0,2],
+"hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,18,12,7],
+"hackhd_8h.html#ad08e6184f2a54ea823ef3ba228490a70":[12,0,1,0,6,18,12,0,3],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97":[12,0,1,0,6,18,12,2],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a0dcbb231baf113de449197b970ad2df9":[12,0,1,0,6,18,12,2,4],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a339efd0dba6f95bccea25242e316e6c9":[12,0,1,0,6,18,12,2,3],
+"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a4d802d731539075d8d843dc6323704a1":[12,0,1,0,6,18,12,2,1],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a5fb9fff7be05dd194660636efa4145a0":[12,0,1,0,6,18,12,2,5],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a893ad04ceb032935dc9efcec43f2a628":[12,0,1,0,6,18,12,2,0],
 "hackhd_8h.html#ae56c491538082ee384af19aa812a2a97adc48911cdb060bd1756d1620ab4956f0":[12,0,1,0,6,18,12,2,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#a9464826fae91544e9fc803865f5e3107":[12,0,1,0,6,41,5,17],
 "high__speed__logger__direct__memory_8c.html#a94bf902b935af9c00b2d9ed517c5c42f":[12,0,1,0,6,41,5,27],
 "high__speed__logger__direct__memory_8c.html#a9990f90c7793297d37d005b063f8ff98":[12,0,1,0,6,41,5,42],
-"high__speed__logger__direct__memory_8c.html#a9bb9556634a30631566d56635357a786":[12,0,1,0,6,41,5,66],
-"high__speed__logger__direct__memory_8c.html#a9bddde970a97af490613f8c8c3afbd02":[12,0,1,0,6,41,5,37],
-"high__speed__logger__direct__memory_8c.html#a9c9c2ddcfab751a75ed6d26156db2836":[12,0,1,0,6,41,5,30],
-"high__speed__logger__direct__memory_8c.html#aac27c26e637cbfeab795369f0263f911":[12,0,1,0,6,41,5,59],
-"high__speed__logger__direct__memory_8c.html#aacc3264ce2d5a73667a5118af0c3b7b5":[12,0,1,0,6,41,5,36],
-"high__speed__logger__direct__memory_8c.html#aae203a8165f66fc3887fa9cfbb8ba904":[12,0,1,0,6,41,5,1],
-"high__speed__logger__direct__memory_8c.html#ab998d0a08b382adc864f654d3f576195":[12,0,1,0,6,41,5,57],
-"high__speed__logger__direct__memory_8c.html#ac38f9e76b0e5666c694524b724f932ec":[12,0,1,0,6,41,5,0],
-"high__speed__logger__direct__memory_8c.html#ac5bc00c8ec919ceaacf654065026a276":[12,0,1,0,6,41,5,26],
-"high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6":[12,0,1,0,6,41,5,18],
-"high__speed__logger__direct__memory_8c.html#acb00ebfb7e74b5f34b9ea06ae4f071a4":[12,0,1,0,6,41,5,45]
+"high__speed__logger__direct__memory_8c.html#a9bb9556634a30631566d56635357a786":[12,0,1,0,6,41,5,66]
 };

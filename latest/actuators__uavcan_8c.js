@@ -3,8 +3,11 @@ var actuators__uavcan_8c =
     [ "actuators_uavcan_telem_t", "actuators__uavcan_8c.html#structactuators__uavcan__telem__t", [
       [ "current", "actuators__uavcan_8c.html#acf4c7af5519e4a5e493b04a5b994a89c", null ],
       [ "energy", "actuators__uavcan_8c.html#a5c5af5079f71b1bf5a46fee84c01812c", null ],
+      [ "node_id", "actuators__uavcan_8c.html#ab50df0e5b2926087e177ffddd6d7e69b", null ],
       [ "rpm", "actuators__uavcan_8c.html#a0426475dec646cdb64cde952a6922ab5", null ],
+      [ "set", "actuators__uavcan_8c.html#a802b1b230991b6026be93cd1df7816d2", null ],
       [ "temperature", "actuators__uavcan_8c.html#afecf1982596a6fbd024bb53685980a54", null ],
+      [ "timestamp", "actuators__uavcan_8c.html#a5258ced5a9a3c26bf7abc6c06c144fff", null ],
       [ "voltage", "actuators__uavcan_8c.html#a93e39cb253b2c7f71bdd8f1ff5e63d29", null ]
     ] ],
     [ "UAVCAN_ACTUATORS_USE_CURRENT", "actuators__uavcan_8c.html#a95d5d112abcc0f1031cc08731e37bda7", null ],
@@ -25,7 +28,10 @@ var actuators__uavcan_8c =
     [ "actuators_uavcan_commit", "actuators__uavcan_8c.html#a4f2b07629c6392c8019dfc9123fb4684", null ],
     [ "actuators_uavcan_esc_status_cb", "actuators__uavcan_8c.html#a79343cdcbcc91d03b96dfc795647defa", null ],
     [ "actuators_uavcan_init", "actuators__uavcan_8c.html#a1aa57a9995b693dd72264a2eaf8d0bda", null ],
+    [ "actuators_uavcan_next_telem", "actuators__uavcan_8c.html#a6368e277fcc4c5b563051fe1961c6832", null ],
     [ "actuators_uavcan_send_esc", "actuators__uavcan_8c.html#a15a349fbc68fcd9525ddf5b0188a8689", null ],
     [ "actuators_uavcan_initialized", "actuators__uavcan_8c.html#a9b8261ba771fe293429b871094fc2f3d", null ],
-    [ "esc_status_ev", "actuators__uavcan_8c.html#aeb829098b5ac01dda6bdfa56ab3ab775", null ]
+    [ "esc_idx", "actuators__uavcan_8c.html#a9d8a5ac9a7b22dcf133689625694a89e", null ],
+    [ "esc_status_ev", "actuators__uavcan_8c.html#aeb829098b5ac01dda6bdfa56ab3ab775", null ],
+    [ "old_idx", "actuators__uavcan_8c.html#a9c5d1f9ea198a040b78e0fd0741dafc7", null ]
 ];

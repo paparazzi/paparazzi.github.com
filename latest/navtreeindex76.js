@@ -1,5 +1,15 @@
 var NAVTREEINDEX76 =
 {
+"gvf_8h.html#structgvf__Hess":[12,0,1,0,6,30,0,3,5],
+"gvf_8h.html#structgvf__con":[12,0,1,0,6,30,0,3,0],
+"gvf_8h.html#structgvf__grad":[12,0,1,0,6,30,0,3,4],
+"gvf_8h.html#structgvf__seg":[12,0,1,0,6,30,0,3,3],
+"gvf_8h.html#structgvf__st":[12,0,1,0,6,30,0,3,1],
+"gvf_8h.html#structgvf__tra":[12,0,1,0,6,30,0,3,2],
+"gvf_8h_source.html":[12,0,1,0,6,30,0,3],
+"gvf__ellipse_8c.html":[12,0,1,0,6,30,0,1,0],
+"gvf__ellipse_8c.html#a04ff9f4734fb35fd43974bd0b3e60315":[12,0,1,0,6,30,0,1,0,0],
+"gvf__ellipse_8c.html#a3ad754d3a684137b4afb60e35b204548":[12,0,1,0,6,30,0,1,0,3],
 "gvf__ellipse_8c.html#a54a144011fc0310e40d5190b005ae052":[12,0,1,0,6,30,0,1,0,5],
 "gvf__ellipse_8c.html#a7728b83a07d7bafb46d02595465e8bf8":[12,0,1,0,6,30,0,1,0,6],
 "gvf__ellipse_8c.html#a7a68c5245bf2607bedd7b279919fd40c":[12,0,1,0,6,30,0,1,0,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX76 =
 "hackhd_8h.html#a6018ba71219478bbe72ca662e80c0aee":[12,0,1,0,6,18,12,0,5],
 "hackhd_8h.html#a6ff0090c5d817fe5384d164ec0c63561":[12,0,1,0,6,18,12,4],
 "hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83":[12,0,1,0,6,18,12,0,0],
-"hackhd_8h.html#a810a7d5a2238159f421cb8c74718422e":[12,0,1,0,6,18,12,1],
-"hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,18,12,8],
-"hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,18,12,3],
-"hackhd_8h.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,18,12,6],
-"hackhd_8h.html#ab215d449c80aadbfe2e1f444dfa81494":[12,0,1,0,6,18,12,0,2],
-"hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,18,12,7],
-"hackhd_8h.html#ad08e6184f2a54ea823ef3ba228490a70":[12,0,1,0,6,18,12,0,3],
-"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97":[12,0,1,0,6,18,12,2],
-"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a0dcbb231baf113de449197b970ad2df9":[12,0,1,0,6,18,12,2,4],
-"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a339efd0dba6f95bccea25242e316e6c9":[12,0,1,0,6,18,12,2,3],
-"hackhd_8h.html#ae56c491538082ee384af19aa812a2a97a4d802d731539075d8d843dc6323704a1":[12,0,1,0,6,18,12,2,1]
+"hackhd_8h.html#a810a7d5a2238159f421cb8c74718422e":[12,0,1,0,6,18,12,1]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX85 =
 {
+"imavmarker_8h_source.html":[12,0,1,0,6,11,0,3],
+"imu_8c.html":[12,0,1,0,6,35,2],
+"imu_8c.html#a0c1c31015cb92b423f7e35994456d9e5":[12,0,1,0,6,35,2,12],
+"imu_8c.html#a0f8ac241eeb395920f1d8edf8f0c7cf0":[12,0,1,0,6,35,2,17],
+"imu_8c.html#a127929c4b5a458043f7ef2e0fa2a4e54":[12,0,1,0,6,35,2,14],
+"imu_8c.html#a145707cbd3cb3e88e6536ae94f901567":[12,0,1,0,6,35,2,6],
+"imu_8c.html#a1899ba1b8e84b85be17e217efcf1e815":[12,0,1,0,6,35,2,39],
+"imu_8c.html#a1b1c79353b8a69a2d7faecd6721efbb8":[12,0,1,0,6,35,2,8],
+"imu_8c.html#a20144cb4fd6b12baf8d74063f8dc87e3":[12,0,1,0,6,35,2,2],
+"imu_8c.html#a29b829f4d4c4720256fda5fcf061cd4e":[12,0,1,0,6,35,2,42],
 "imu_8c.html#a2d2e018d15970f20303c432329fb96cf":[12,0,1,0,6,35,2,44],
 "imu_8c.html#a304a000b998533803b0d079c86e8f915":[12,0,1,0,6,35,2,18],
 "imu_8c.html#a34ef05992d74a9dc07c6a20feffd6eef":[12,0,1,0,6,35,2,13],
@@ -239,15 +249,5 @@ var NAVTREEINDEX85 =
 "imu__bmi088__i2c_8c.html#a5141393ad8ef1bab37a0cf52066816df":[12,0,1,0,6,35,14,9],
 "imu__bmi088__i2c_8c.html#a58e021f954acbc368ab61b10187b73a9":[12,0,1,0,6,35,14,0],
 "imu__bmi088__i2c_8c.html#a688a0cac0c423c242b7b08fc7b6de2b4":[12,0,1,0,6,35,14,11],
-"imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92":[12,0,1,0,6,35,14,8],
-"imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f":[12,0,1,0,6,35,14,4],
-"imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04":[12,0,1,0,6,35,14,2],
-"imu__bmi088__i2c_8c.html#aa392dce0f33c559a6dd2a12865db721b":[12,0,1,0,6,35,14,14],
-"imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2":[12,0,1,0,6,35,14,6],
-"imu__bmi088__i2c_8c.html#adcf26c82c2c1f263d32ea3104b16e3f1":[12,0,1,0,6,35,14,13],
-"imu__bmi088__i2c_8c.html#ae0ab324487209dea4c4c7cc51de85cc7":[12,0,1,0,6,35,14,5],
-"imu__bmi088__i2c_8c.html#ae31dad292071b6bc59cd603995b678db":[12,0,1,0,6,35,14,3],
-"imu__bmi088__i2c_8c.html#aea59dc83e8198fd3f64e006e2b40927f":[12,0,1,0,6,35,14,7],
-"imu__bmi088__i2c_8c_source.html":[12,0,1,0,6,35,14],
-"imu__bmi088__i2c_8h.html":[12,0,1,0,6,35,15]
+"imu__bmi088__i2c_8c.html#a87fe2d06c17ad078a6ced581e34d9d92":[12,0,1,0,6,35,14,8]
 };

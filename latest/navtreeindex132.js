@@ -1,5 +1,16 @@
 var NAVTREEINDEX132 =
 {
+"module__opa_controller.html#module_load_example__opa_controller":[1,42,0],
+"module__opa_controller.html#module_xml__opa_controller":[1,42,1,0],
+"module__openlog.html":[1,248],
+"module__openlog.html#functions__openlog":[1,248,1],
+"module__openlog.html#module_load_example__openlog":[1,248,0],
+"module__openlog.html#module_xml__openlog":[1,248,1,0],
+"module__optical_flow_hover.html":[1,92],
+"module__optical_flow_hover.html#functions__optical_flow_hover":[1,92,1],
+"module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,92,0],
+"module__optical_flow_hover.html#module_xml__optical_flow_hover":[1,92,1,0],
+"module__optical_flow_landing.html":[1,93],
 "module__optical_flow_landing.html#configuration__optical_flow_landing":[1,93,1],
 "module__optical_flow_landing.html#module_load_example__optical_flow_landing":[1,93,0],
 "module__optical_flow_landing.html#module_xml__optical_flow_landing":[1,93,1,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX132 =
 "module__stabilization_attitude_fw.html#functions__stabilization_attitude_fw":[1,397,2],
 "module__stabilization_attitude_fw.html#module_load_example__stabilization_attitude_fw":[1,397,0],
 "module__stabilization_attitude_fw.html#module_xml__stabilization_attitude_fw":[1,397,2,0],
-"module__stabilization_float_euler.html":[1,398],
-"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,398,1],
-"module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,398,2],
-"module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,398,0],
-"module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,398,2,0],
-"module__stabilization_float_quat.html":[1,399],
-"module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,399,1],
-"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,399,2],
-"module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,399,0],
-"module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,399,2,0],
-"module__stabilization_heli_indi.html":[1,400],
-"module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,400,1]
+"module__stabilization_float_euler.html":[1,398]
 };

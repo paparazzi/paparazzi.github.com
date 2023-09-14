@@ -1,5 +1,15 @@
 var NAVTREEINDEX153 =
 {
+"nps__sensor__aoa_8c.html#aedbc86f78b2521ef1984d221d55275c9":[12,0,1,1,1,37,1],
+"nps__sensor__aoa_8c.html#aff4573dfb3981359e087728798b18c23":[12,0,1,1,1,37,4],
+"nps__sensor__aoa_8c_source.html":[12,0,1,1,1,37],
+"nps__sensor__aoa_8h.html":[12,0,1,1,1,38],
+"nps__sensor__aoa_8h.html#a2faff1ee09f26cd702c72210b4141ea5":[12,0,1,1,1,38,1],
+"nps__sensor__aoa_8h.html#a3880b2401ced3f332b3060287a035c60":[12,0,1,1,1,38,0,0],
+"nps__sensor__aoa_8h.html#a5b3e1ff67eea7f7d54de8b23edeadfef":[12,0,1,1,1,38,0,4],
+"nps__sensor__aoa_8h.html#a6d75cb54d04c9450fae8674b674de0d0":[12,0,1,1,1,38,0,3],
+"nps__sensor__aoa_8h.html#a87145eebf2e27eb2685e92d8eb19cd11":[12,0,1,1,1,38,0,2],
+"nps__sensor__aoa_8h.html#ab056d374750deb68e36476dfc1cc3280":[12,0,1,1,1,38,0,1],
 "nps__sensor__aoa_8h.html#aff4573dfb3981359e087728798b18c23":[12,0,1,1,1,38,2],
 "nps__sensor__aoa_8h.html#structNpsSensorAngleOfAttack":[12,0,1,1,1,38,0],
 "nps__sensor__aoa_8h_source.html":[12,0,1,1,1,38],
@@ -239,15 +249,5 @@ var NAVTREEINDEX153 =
 "nucleo144__f767zi_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,17,0,2,176],
 "nucleo144__f767zi_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,17,0,2,1],
 "nucleo144__f767zi_8h.html#a402c216e512bc4a39616400af32b7c7f":[12,0,1,0,1,17,0,2,191],
-"nucleo144__f767zi_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,17,0,2,52],
-"nucleo144__f767zi_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a":[12,0,1,0,1,17,0,2,60],
-"nucleo144__f767zi_8h.html#a460087c9ad1cc47d89c51536be5d9a72":[12,0,1,0,1,17,0,2,192],
-"nucleo144__f767zi_8h.html#a4d767633a35c612f195676cc9389f6d8":[12,0,1,0,1,17,0,2,171],
-"nucleo144__f767zi_8h.html#a4da08b59c725550efa312cf16ecdd77c":[12,0,1,0,1,17,0,2,180],
-"nucleo144__f767zi_8h.html#a4f939402a3adf6008ed5ca06dbd030b9":[12,0,1,0,1,17,0,2,107],
-"nucleo144__f767zi_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,17,0,2,49],
-"nucleo144__f767zi_8h.html#a549d4d49d1b0093e0e56bb63cb6f9729":[12,0,1,0,1,17,0,2,162],
-"nucleo144__f767zi_8h.html#a563096bba11519983f91f64d70b14e47":[12,0,1,0,1,17,0,2,201],
-"nucleo144__f767zi_8h.html#a57082fbd09cf4ffb36ede12de84055f5":[12,0,1,0,1,17,0,2,66],
-"nucleo144__f767zi_8h.html#a571b5273cd7bb21a63e68f5dab15be05":[12,0,1,0,1,17,0,2,20]
+"nucleo144__f767zi_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,17,0,2,52]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX32 =
 {
+"chimera_2chibios_2v1_80_2board_8h.html#aa4df6db1217b17ebe3c10746763ab676":[12,0,1,0,1,3,0,0,0,1],
+"chimera_2chibios_2v1_80_2board_8h.html#aa5434e860c1bd3e411f0d9d5a3c47cbb":[12,0,1,0,1,3,0,0,0,352],
+"chimera_2chibios_2v1_80_2board_8h.html#aa5d9339b53bf69bc80df08edfbbc96c5":[12,0,1,0,1,3,0,0,0,338],
+"chimera_2chibios_2v1_80_2board_8h.html#aa640977f1ba8d4427806278f9b935c35":[12,0,1,0,1,3,0,0,0,10],
+"chimera_2chibios_2v1_80_2board_8h.html#aa650ae0207ecc6a3c1ee879d780b5463":[12,0,1,0,1,3,0,0,0,447],
+"chimera_2chibios_2v1_80_2board_8h.html#aa69b10272c71ced5e2444129ed9d6c8e":[12,0,1,0,1,3,0,0,0,374],
 "chimera_2chibios_2v1_80_2board_8h.html#aa844e5d0bf71100db46516b14c6b36bf":[12,0,1,0,1,3,0,0,0,30],
 "chimera_2chibios_2v1_80_2board_8h.html#aa8899ee1b1a2909ed7b63cc7f83dc928":[12,0,1,0,1,3,0,0,0,47],
 "chimera_2chibios_2v1_80_2board_8h.html#aaa2f63a7b86ec4ddab36e9aecaad2cc4":[12,0,1,0,1,3,0,0,0,340],
@@ -243,11 +249,5 @@ var NAVTREEINDEX32 =
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a58c9741fced167f2693ce50699d8e170":[12,0,1,0,1,3,0,0,2,258],
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a58e21948e78c6cf50c04e64363637dd4":[12,0,1,0,1,3,0,0,2,14],
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a59976b6c28b2561d2b6bd7e3940ea377":[12,0,1,0,1,3,0,0,2,217],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5a1f7bc818507d43f4d6592bff2ad486":[12,0,1,0,1,3,0,0,2,6],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5dc72655b1e7f66b9e8e4b830724f935":[12,0,1,0,1,3,0,0,2,257],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5f27dd3fc497bc38fc695c705ed1bb6a":[12,0,1,0,1,3,0,0,2,199],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5f5e9b802c24ad1637cd2aaee14606ed":[12,0,1,0,1,3,0,0,2,85],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5f9c3734d5d06c9ccd5214af5c78c4f8":[12,0,1,0,1,3,0,0,2,170],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5fa35e1fea5f5813af76c2d2b9c03215":[12,0,1,0,1,3,0,0,2,218],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a605afb3e9eeac151150a9ebcab9400e6":[12,0,1,0,1,3,0,0,2,129]
+"chimera_2chibios_2v1_80_2mcuconf_8h.html#a5a1f7bc818507d43f4d6592bff2ad486":[12,0,1,0,1,3,0,0,2,6]
 };

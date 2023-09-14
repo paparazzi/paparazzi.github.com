@@ -1,5 +1,11 @@
 var NAVTREEINDEX15 =
 {
+"atmega__i2c__cam__ctrl_8c.html#a78a9cddd181967e5412f27b15ee55770":[12,0,1,0,6,18,1,0],
+"atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95":[12,0,1,0,6,18,1,6],
+"atmega__i2c__cam__ctrl_8c.html#a9517bc579c68c98134db7068982b765a":[12,0,1,0,6,18,1,1],
+"atmega__i2c__cam__ctrl_8c.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e":[12,0,1,0,6,18,1,3],
+"atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749":[12,0,1,0,6,18,1,8],
+"atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85":[12,0,1,0,6,18,1,5],
 "atmega__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5":[12,0,1,0,6,18,1,4],
 "atmega__i2c__cam__ctrl_8c_source.html":[12,0,1,0,6,18,1],
 "atmega__i2c__cam__ctrl_8h.html":[12,0,1,0,6,18,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX15 =
 "avi__isp__chain__bayer__inter_8h.html#ab871324953a604dc8557a2f33482d75d":[12,0,1,0,1,2,0,0,1,2,3],
 "avi__isp__chain__bayer__inter_8h.html#ac756f6254ece692020ceb482256c8eb4":[12,0,1,0,1,2,0,0,1,2,0],
 "avi__isp__chain__bayer__inter_8h.html#ad82d8d87fdde1cb93cb56e5b845b98e4":[12,0,1,0,1,2,0,0,1,3],
-"avi__isp__chain__bayer__inter_8h.html#adff356e880523a1211f467b2832ae427":[12,0,1,0,1,2,0,0,1,2,1],
-"avi__isp__chain__bayer__inter_8h.html#aecdac0db8b07fcc2bee29e65df07942a":[12,0,1,0,1,2,0,0,1,2,4],
-"avi__isp__chain__bayer__inter_8h.html#affd20067f5adc139500f038669832de6":[12,0,1,0,1,2,0,0,1,1,0],
-"avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__module__bypass_8____unnamed16____":[12,0,1,0,1,2,0,0,1,2],
-"avi__isp__chain__bayer__inter_8h.html#structavi__isp__chain__bayer__inter__regs":[12,0,1,0,1,2,0,0,1,1],
-"avi__isp__chain__bayer__inter_8h.html#unionavi__isp__chain__bayer__inter__module__bypass":[12,0,1,0,1,2,0,0,1,0],
-"avi__isp__chain__bayer__inter_8h_source.html":[12,0,1,0,1,2,0,0,1]
+"avi__isp__chain__bayer__inter_8h.html#adff356e880523a1211f467b2832ae427":[12,0,1,0,1,2,0,0,1,2,1]
 };

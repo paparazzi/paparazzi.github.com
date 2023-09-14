@@ -1,5 +1,15 @@
 var NAVTREEINDEX109 =
 {
+"logger__file_8c.html#a43fc7cc11653aeca3ffbc6a22a383eb0":[12,0,1,0,6,41,11,3],
+"logger__file_8c.html#a61d6da065f21ff3b0317135f1f4d5367":[12,0,1,0,6,41,11,1],
+"logger__file_8c.html#a69b8f18dd60fed0706bb4184f9af614c":[12,0,1,0,6,41,11,4],
+"logger__file_8c.html#aabde24b05774e16f4347f675ca00704f":[12,0,1,0,6,41,11,5],
+"logger__file_8c.html#ac15c2262d562fe07b457e6b7cc00d6ca":[12,0,1,0,6,41,11,2],
+"logger__file_8c.html#ac2d72ead42e52d8d3ae7927239f3e1c8":[12,0,1,0,6,41,11,0],
+"logger__file_8c_source.html":[12,0,1,0,6,41,11],
+"logger__file_8h.html":[12,0,1,0,6,41,12],
+"logger__file_8h.html#a43fc7cc11653aeca3ffbc6a22a383eb0":[12,0,1,0,6,41,12,2],
+"logger__file_8h.html#a61d6da065f21ff3b0317135f1f4d5367":[12,0,1,0,6,41,12,0],
 "logger__file_8h.html#ac15c2262d562fe07b457e6b7cc00d6ca":[12,0,1,0,6,41,12,1],
 "logger__file_8h_source.html":[12,0,1,0,6,41,12],
 "logger__uart_8c.html":[12,0,1,0,6,41,13],
@@ -239,15 +249,5 @@ var NAVTREEINDEX109 =
 "lsm303d__regs_8h.html#a796f939c37313e2bfb5be528b8a95b94":[12,0,1,0,7,70,98],
 "lsm303d__regs_8h.html#a7a31467ced615f816719e873b45df235":[12,0,1,0,7,70,94],
 "lsm303d__regs_8h.html#a7ba7fdca9f52c900aff2f8a150b25d59":[12,0,1,0,7,70,72],
-"lsm303d__regs_8h.html#a7f6f35ac58d4787c98597e6542b442f9":[12,0,1,0,7,70,103],
-"lsm303d__regs_8h.html#a80ca1a2fc33197b095d6e547038346fc":[12,0,1,0,7,70,68],
-"lsm303d__regs_8h.html#a8172689d20ee53cf5876c0a0ee55ffda":[12,0,1,0,7,70,16],
-"lsm303d__regs_8h.html#a819473a6532d8f72e98939b092b37d21":[12,0,1,0,7,70,67],
-"lsm303d__regs_8h.html#a820ce99681ea06e0c8a4afe44d4bdc91":[12,0,1,0,7,70,34],
-"lsm303d__regs_8h.html#a8269b2571342acd1050ef8a581d9b676":[12,0,1,0,7,70,97],
-"lsm303d__regs_8h.html#a84b163392d938c426d6ff373b2499d8b":[12,0,1,0,7,70,2],
-"lsm303d__regs_8h.html#a84cee564bf5bb645dcfaeaa729b9bc48":[12,0,1,0,7,70,28],
-"lsm303d__regs_8h.html#a867c34aa9c28e423af029179bc3ed924":[12,0,1,0,7,70,5],
-"lsm303d__regs_8h.html#a8719064906ce0d0645994984dee9f56f":[12,0,1,0,7,70,64],
-"lsm303d__regs_8h.html#a8c687e1f177f479c99c6dae407af7450":[12,0,1,0,7,70,85]
+"lsm303d__regs_8h.html#a7f6f35ac58d4787c98597e6542b442f9":[12,0,1,0,7,70,103]
 };

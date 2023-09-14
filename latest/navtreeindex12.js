@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"apogee_2chibios_2v1_80_2board_8h.html#acef6bc296abd4e588d71449034e36fa0":[12,0,1,0,1,0,0,0,0,361],
+"apogee_2chibios_2v1_80_2board_8h.html#acf0f4fd8ccd323e59ba8556f10bb9fb8":[12,0,1,0,1,0,0,0,0,394],
+"apogee_2chibios_2v1_80_2board_8h.html#acfa985b6aac57ad232a12ba5eda530f3":[12,0,1,0,1,0,0,0,0,401],
+"apogee_2chibios_2v1_80_2board_8h.html#ad02e6f9d4586466657d74cdb53068bc0":[12,0,1,0,1,0,0,0,0,74],
+"apogee_2chibios_2v1_80_2board_8h.html#ad0736406ab303a76c06fc3aab8ecbbeb":[12,0,1,0,1,0,0,0,0,383],
+"apogee_2chibios_2v1_80_2board_8h.html#ad0891e602fd141f976c498332c9de9d2":[12,0,1,0,1,0,0,0,0,260],
 "apogee_2chibios_2v1_80_2board_8h.html#ad09fe5bf321b9a2de26bd5e5b9af6424":[12,0,1,0,1,0,0,0,0,150],
 "apogee_2chibios_2v1_80_2board_8h.html#ad134fa49bd04fd03f21f81835122cf72":[12,0,1,0,1,0,0,0,0,259],
 "apogee_2chibios_2v1_80_2board_8h.html#ad14e8f334a0daf4a5dae2f73ab24b329":[12,0,1,0,1,0,0,0,0,204],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "apogee_2chibios_2v1_80_2mcuconf_8h.html#a7274407f8027e27d348b078dc9b7c256":[12,0,1,0,1,0,0,0,1,81],
 "apogee_2chibios_2v1_80_2mcuconf_8h.html#a7275e212adb489098bfcb05dc20afd16":[12,0,1,0,1,0,0,0,1,276],
 "apogee_2chibios_2v1_80_2mcuconf_8h.html#a730e1cfbd99b7f3a0e6cdf03b224c9f4":[12,0,1,0,1,0,0,0,1,28],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a73a198b443047d1c7f0c8a63814f10b4":[12,0,1,0,1,0,0,0,1,122],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a742ec02fd96ff66ed1de33aef54f0707":[12,0,1,0,1,0,0,0,1,52],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a7509c7a01a83276aa7768474357ec61d":[12,0,1,0,1,0,0,0,1,205],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a75b831d797ee0373adbd64ecb8fea802":[12,0,1,0,1,0,0,0,1,118],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a7607417f985da8e638c7871afc61003a":[12,0,1,0,1,0,0,0,1,144],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a7625378f7bf7e1a50a58739742839619":[12,0,1,0,1,0,0,0,1,149],
-"apogee_2chibios_2v1_80_2mcuconf_8h.html#a76aeddaeff614e55e90337ca86e33e70":[12,0,1,0,1,0,0,0,1,196]
+"apogee_2chibios_2v1_80_2mcuconf_8h.html#a73a198b443047d1c7f0c8a63814f10b4":[12,0,1,0,1,0,0,0,1,122]
 };

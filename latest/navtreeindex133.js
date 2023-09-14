@@ -1,5 +1,16 @@
 var NAVTREEINDEX133 =
 {
+"module__stabilization_float_euler.html#configuration__stabilization_float_euler":[1,398,1],
+"module__stabilization_float_euler.html#functions__stabilization_float_euler":[1,398,2],
+"module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,398,0],
+"module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,398,2,0],
+"module__stabilization_float_quat.html":[1,399],
+"module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,399,1],
+"module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,399,2],
+"module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,399,0],
+"module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,399,2,0],
+"module__stabilization_heli_indi.html":[1,400],
+"module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,400,1],
 "module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,400,2],
 "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,400,0],
 "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,400,2,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX133 =
 "module__trig_test.html#module_load_example__trig_test":[1,82,0],
 "module__trig_test.html#module_xml__trig_test":[1,82,1,0],
 "module__tune_airspeed.html":[1,333],
-"module__tune_airspeed.html#configuration__tune_airspeed":[1,333,1],
-"module__tune_airspeed.html#module_load_example__tune_airspeed":[1,333,0],
-"module__tune_airspeed.html#module_xml__tune_airspeed":[1,333,1,0],
-"module__uart.html":[1,258],
-"module__uart.html#module_load_example__uart":[1,258,0],
-"module__uart.html#module_xml__uart":[1,258,0,0],
-"module__uav_recovery.html":[1,467],
-"module__uav_recovery.html#configuration__uav_recovery":[1,467,1],
-"module__uav_recovery.html#functions__uav_recovery":[1,467,2],
-"module__uav_recovery.html#module_load_example__uav_recovery":[1,467,0],
-"module__uav_recovery.html#module_xml__uav_recovery":[1,467,2,0],
-"module__uavcan.html":[1,468]
+"module__tune_airspeed.html#configuration__tune_airspeed":[1,333,1]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX100 =
 {
+"light__ws2812__arch_8c.html#a0196d9b5b8adb9854da6c3212c84763c":[12,0,1,0,0,0,1,2,0,12],
+"light__ws2812__arch_8c.html#a080cff9ec3c8306e7c5e09fe4079b4df":[12,0,1,0,0,0,1,2,0,8],
+"light__ws2812__arch_8c.html#a141373abd609f893771480126821baa4":[12,0,1,0,0,0,1,2,0,0,0],
+"light__ws2812__arch_8c.html#a1592178bd1150d30d1f9572eccd39615":[12,0,1,0,0,0,1,2,0,21],
+"light__ws2812__arch_8c.html#a190b6be6a702540df9606c31b01b7b13":[12,0,1,0,0,0,1,2,0,5],
+"light__ws2812__arch_8c.html#a2f0b7ce13123d692896c2e56aa6c7c58":[12,0,1,0,0,0,1,2,0,0,2],
+"light__ws2812__arch_8c.html#a3f0d53c16bf1c7c63e0fb393a8944940":[12,0,1,0,0,0,1,2,0,1,4],
+"light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d":[12,0,1,0,0,0,1,2,0,2],
+"light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54":[12,0,1,0,0,0,1,2,0,16],
+"light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf":[12,0,1,0,0,0,1,2,0,17],
 "light__ws2812__arch_8c.html#a4b6fbf364f9a7e049559d80cc523c7b5":[12,0,1,0,0,0,1,2,0,20],
 "light__ws2812__arch_8c.html#a4c13f533146b4d972f0608e5bad30663":[12,0,1,0,0,0,1,2,0,14],
 "light__ws2812__arch_8c.html#a4dd3d05de03511658b255a5b86792138":[12,0,1,0,0,0,1,2,0,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX100 =
 "linux_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,1,1,0,1,2],
 "linux_2modules_2actuators_2actuators__pwm__arch_8h.html#ad35eb8ed0c548021d922168b3b58d1a4":[12,0,1,0,0,1,1,0,1,1],
 "linux_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,1,1,0,1],
-"linux_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,1,1,1,0],
-"linux_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,1,1,1,0,3],
-"linux_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,1,1,1,0,2],
-"linux_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,0,1,1,1,0,1],
-"linux_2modules_2core_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46":[12,0,1,0,0,1,1,1,0,0],
-"linux_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,1,1,1,0],
-"lis302dl_8h.html":[12,0,1,0,7,59],
-"lis302dl_8h.html#a13ce2c47bf9a6b9dd5c20fdbfbd0cbd1":[12,0,1,0,7,59,2],
-"lis302dl_8h.html#a1ab5aabe3d4b190c295dafe3a71bf512":[12,0,1,0,7,59,0,2],
-"lis302dl_8h.html#a93e37ac2c058099170f9fb09ab10388b":[12,0,1,0,7,59,0,3],
-"lis302dl_8h.html#ab370a9eb99f86a0cfb0a8baa058b28bc":[12,0,1,0,7,59,0,0]
+"linux_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,1,1,1,0]
 };

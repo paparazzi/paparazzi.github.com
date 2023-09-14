@@ -296,7 +296,6 @@ var onboard_modules =
     [ "opa_controller module", "module__opa_controller.html", [
       [ "Example for airframe file", "module__opa_controller.html#module_load_example__opa_controller", null ],
       [ "Module functions", "module__opa_controller.html#functions__opa_controller", [
-        [ "Periodic Functions", "module__opa_controller.html#periodic_functions", null ],
         [ "Raw opa_controller.xml file:", "module__opa_controller.html#module_xml__opa_controller", null ]
       ] ]
     ] ],
@@ -348,7 +347,6 @@ var onboard_modules =
     [ "usb_serial_stm32_example2 module", "module__usb_serial_stm32_example2.html", [
       [ "Example for airframe file", "module__usb_serial_stm32_example2.html#module_load_example__usb_serial_stm32_example2", null ],
       [ "Module functions", "module__usb_serial_stm32_example2.html#functions__usb_serial_stm32_example2", [
-        [ "Event Functions", "module__usb_serial_stm32_example2.html#event_functions", null ],
         [ "Raw usb_serial_stm32_example2.xml file:", "module__usb_serial_stm32_example2.html#module_xml__usb_serial_stm32_example2", null ]
       ] ]
     ] ],
@@ -609,9 +607,7 @@ var onboard_modules =
     ] ],
     [ "object_tracking module", "module__object_tracking.html", [
       [ "Example for airframe file", "module__object_tracking.html#module_load_example__object_tracking", null ],
-      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", [
-        [ "Airframe file section", "module__object_tracking.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__object_tracking.html#configuration__object_tracking", null ],
       [ "Module functions", "module__object_tracking.html#functions__object_tracking", [
         [ "Raw object_tracking.xml file:", "module__object_tracking.html#module_xml__object_tracking", null ]
       ] ]
@@ -1168,20 +1164,20 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1511,7 +1507,6 @@ var onboard_modules =
     [ "intermcu_iomcu module", "module__intermcu_iomcu.html", [
       [ "Example for airframe file", "module__intermcu_iomcu.html#module_load_example__intermcu_iomcu", null ],
       [ "Module configuration options", "module__intermcu_iomcu.html#configuration__intermcu_iomcu", [
-        [ "Configure Options", "module__intermcu_iomcu.html#configure", null ],
         [ "Raw intermcu_iomcu.xml file:", "module__intermcu_iomcu.html#module_xml__intermcu_iomcu", null ]
       ] ]
     ] ],
@@ -1940,16 +1935,9 @@ var onboard_modules =
     ] ],
     [ "nav_basic_fw module", "module__nav_basic_fw.html", [
       [ "Example for airframe file", "module__nav_basic_fw.html#module_load_example__nav_basic_fw", null ],
-      [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", [
-        [ "Define Options", "module__nav_basic_fw.html#define", null ]
-      ] ],
-      [ "Module functions", "module__nav_basic_fw.html#functions__nav_basic_fw", [
-        [ "Init Functions", "module__nav_basic_fw.html#init_functions", null ]
-      ] ],
-      [ "Datalink Functions", "module__nav_basic_fw.html#datalink_functions__nav_basic_fw", null ],
-      [ "Files", "module__nav_basic_fw.html#files", [
-        [ "Header Files", "module__nav_basic_fw.html#headers", null ],
-        [ "Source Files", "module__nav_basic_fw.html#sources", null ],
+      [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", null ],
+      [ "Module functions", "module__nav_basic_fw.html#functions__nav_basic_fw", null ],
+      [ "Datalink Functions", "module__nav_basic_fw.html#datalink_functions__nav_basic_fw", [
         [ "Raw nav_basic_fw.xml file:", "module__nav_basic_fw.html#module_xml__nav_basic_fw", null ]
       ] ]
     ] ],
@@ -2094,7 +2082,9 @@ var onboard_modules =
     ] ],
     [ "nav_survey_hybrid module", "module__nav_survey_hybrid.html", [
       [ "Example for airframe file", "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid", null ],
-      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", null ],
+      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", [
+        [ "Airframe file section", "module__nav_survey_hybrid.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__nav_survey_hybrid.html#functions__nav_survey_hybrid", [
         [ "Raw nav_survey_hybrid.xml file:", "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid", null ]
       ] ]
@@ -2395,7 +2385,9 @@ var onboard_modules =
     ] ],
     [ "baro_bmp3 module", "module__baro_bmp3.html", [
       [ "Example for airframe file", "module__baro_bmp3.html#module_load_example__baro_bmp3", null ],
-      [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", null ],
+      [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", [
+        [ "Define Options", "module__baro_bmp3.html#define", null ]
+      ] ],
       [ "Module functions", "module__baro_bmp3.html#functions__baro_bmp3", [
         [ "Raw baro_bmp3.xml file:", "module__baro_bmp3.html#module_xml__baro_bmp3", null ]
       ] ]
@@ -2408,8 +2400,17 @@ var onboard_modules =
     ] ],
     [ "baro_board_common module", "module__baro_board_common.html", [
       [ "Example for airframe file", "module__baro_board_common.html#module_load_example__baro_board_common", null ],
-      [ "Module configuration options", "module__baro_board_common.html#configuration__baro_board_common", null ],
+      [ "Module configuration options", "module__baro_board_common.html#configuration__baro_board_common", [
+        [ "Configure Options", "module__baro_board_common.html#configure", null ]
+      ] ],
       [ "Module functions", "module__baro_board_common.html#functions__baro_board_common", [
+        [ "Init Functions", "module__baro_board_common.html#init_functions", null ],
+        [ "Event Functions", "module__baro_board_common.html#event_functions", null ],
+        [ "Periodic Functions", "module__baro_board_common.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__baro_board_common.html#files", [
+        [ "Header Files", "module__baro_board_common.html#headers", null ],
+        [ "Source Files", "module__baro_board_common.html#sources", null ],
         [ "Raw baro_board_common.xml file:", "module__baro_board_common.html#module_xml__baro_board_common", null ]
       ] ]
     ] ],

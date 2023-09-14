@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"apogee_2chibios_2v1_80_2board_8h.html#a689995b3ffce4727831c630e0c144b5e":[12,0,1,0,1,0,0,0,0,428],
+"apogee_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1":[12,0,1,0,1,0,0,0,0,530],
+"apogee_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f":[12,0,1,0,1,0,0,0,0,521],
+"apogee_2chibios_2v1_80_2board_8h.html#a6a3ba2e1b8b5a5b5b0bb042c176c77e6":[12,0,1,0,1,0,0,0,0,315],
+"apogee_2chibios_2v1_80_2board_8h.html#a6a6cd142a0c0cde9125352343a8e6005":[12,0,1,0,1,0,0,0,0,587],
+"apogee_2chibios_2v1_80_2board_8h.html#a6a8f26ac753d5994952b6e4d5c4e8656":[12,0,1,0,1,0,0,0,0,343],
 "apogee_2chibios_2v1_80_2board_8h.html#a6aa1810521655aff39e0c7874721d99a":[12,0,1,0,1,0,0,0,0,568],
 "apogee_2chibios_2v1_80_2board_8h.html#a6aba486a472846ed9ad7015860cd8ca3":[12,0,1,0,1,0,0,0,0,444],
 "apogee_2chibios_2v1_80_2board_8h.html#a6b55dd36a8f68bea16aa54c3f3f876d3":[12,0,1,0,1,0,0,0,0,284],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "apogee_2chibios_2v1_80_2board_8h.html#accbd2751a90d07fc5e715ad1adca71b5":[12,0,1,0,1,0,0,0,0,190],
 "apogee_2chibios_2v1_80_2board_8h.html#ace492ddaf56941a0d04f1dfbe70918c0":[12,0,1,0,1,0,0,0,0,104],
 "apogee_2chibios_2v1_80_2board_8h.html#ace82df5df9f7b400c390a4ac5ea9b255":[12,0,1,0,1,0,0,0,0,248],
-"apogee_2chibios_2v1_80_2board_8h.html#acebebfde1311e8241d762cf846e354f8":[12,0,1,0,1,0,0,0,0,610],
-"apogee_2chibios_2v1_80_2board_8h.html#acef6bc296abd4e588d71449034e36fa0":[12,0,1,0,1,0,0,0,0,361],
-"apogee_2chibios_2v1_80_2board_8h.html#acf0f4fd8ccd323e59ba8556f10bb9fb8":[12,0,1,0,1,0,0,0,0,394],
-"apogee_2chibios_2v1_80_2board_8h.html#acfa985b6aac57ad232a12ba5eda530f3":[12,0,1,0,1,0,0,0,0,401],
-"apogee_2chibios_2v1_80_2board_8h.html#ad02e6f9d4586466657d74cdb53068bc0":[12,0,1,0,1,0,0,0,0,74],
-"apogee_2chibios_2v1_80_2board_8h.html#ad0736406ab303a76c06fc3aab8ecbbeb":[12,0,1,0,1,0,0,0,0,383],
-"apogee_2chibios_2v1_80_2board_8h.html#ad0891e602fd141f976c498332c9de9d2":[12,0,1,0,1,0,0,0,0,260]
+"apogee_2chibios_2v1_80_2board_8h.html#acebebfde1311e8241d762cf846e354f8":[12,0,1,0,1,0,0,0,0,610]
 };

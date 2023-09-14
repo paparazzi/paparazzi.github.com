@@ -1,5 +1,15 @@
 var NAVTREEINDEX86 =
 {
+"imu__bmi088__i2c_8c.html#a91745f04a2697c4d290315723060bc3f":[12,0,1,0,6,35,14,4],
+"imu__bmi088__i2c_8c.html#aa275f5774156463453944dc8e6ce6f04":[12,0,1,0,6,35,14,2],
+"imu__bmi088__i2c_8c.html#aa392dce0f33c559a6dd2a12865db721b":[12,0,1,0,6,35,14,14],
+"imu__bmi088__i2c_8c.html#aad369f7f45201febc1cb87362f849be2":[12,0,1,0,6,35,14,6],
+"imu__bmi088__i2c_8c.html#adcf26c82c2c1f263d32ea3104b16e3f1":[12,0,1,0,6,35,14,13],
+"imu__bmi088__i2c_8c.html#ae0ab324487209dea4c4c7cc51de85cc7":[12,0,1,0,6,35,14,5],
+"imu__bmi088__i2c_8c.html#ae31dad292071b6bc59cd603995b678db":[12,0,1,0,6,35,14,3],
+"imu__bmi088__i2c_8c.html#aea59dc83e8198fd3f64e006e2b40927f":[12,0,1,0,6,35,14,7],
+"imu__bmi088__i2c_8c_source.html":[12,0,1,0,6,35,14],
+"imu__bmi088__i2c_8h.html":[12,0,1,0,6,35,15],
 "imu__bmi088__i2c_8h.html#a4ec1a0298ee37c4786dc783237880a03":[12,0,1,0,6,35,15,4],
 "imu__bmi088__i2c_8h.html#a52e93055516f3ab18bf0adf0af58c529":[12,0,1,0,6,35,15,0,0],
 "imu__bmi088__i2c_8h.html#a688a0cac0c423c242b7b08fc7b6de2b4":[12,0,1,0,6,35,15,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX86 =
 "imu__mpu60x0__i2c_8c.html#ad17d2b5d68bee1716b36c12a01cb1b31":[12,0,1,0,6,35,26,1],
 "imu__mpu60x0__i2c_8c.html#adc64a57ef94d3c388f4960b8e3ac952c":[12,0,1,0,6,35,26,4],
 "imu__mpu60x0__i2c_8c_source.html":[12,0,1,0,6,35,26],
-"imu__mpu60x0__i2c_8h.html":[12,0,1,0,6,35,27],
-"imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f":[12,0,1,0,6,35,27,4],
-"imu__mpu60x0__i2c_8h.html#a4b597e78018eec2ee4c53ba739b298c6":[12,0,1,0,6,35,27,5],
-"imu__mpu60x0__i2c_8h.html#a780de73decca5f6396ad4d57b34ead78":[12,0,1,0,6,35,27,1],
-"imu__mpu60x0__i2c_8h.html#aa740baedc08188687c2bc4bdd1e6e1a0":[12,0,1,0,6,35,27,0,0],
-"imu__mpu60x0__i2c_8h.html#ab420cb957cbc75c8b66d4010d20fa054":[12,0,1,0,6,35,27,2],
-"imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31":[12,0,1,0,6,35,27,3],
-"imu__mpu60x0__i2c_8h.html#adc64a57ef94d3c388f4960b8e3ac952c":[12,0,1,0,6,35,27,6],
-"imu__mpu60x0__i2c_8h.html#structImuMpu60x0":[12,0,1,0,6,35,27,0],
-"imu__mpu60x0__i2c_8h_source.html":[12,0,1,0,6,35,27],
-"imu__mpu9250_8c.html":[12,0,1,0,6,35,28]
+"imu__mpu60x0__i2c_8h.html":[12,0,1,0,6,35,27]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX27 =
 {
+"cc2500__frsky__shared_8c.html#a790301d7eb5a957ad3e0b2125ce25c18":[12,0,1,0,6,55,0,6,19],
+"cc2500__frsky__shared_8c.html#a803f76032aeda59a1a0e707ee9256894":[12,0,1,0,6,55,0,6,10],
+"cc2500__frsky__shared_8c.html#a892b2fa126f26f23d001726c99375e95":[12,0,1,0,6,55,0,6,6],
+"cc2500__frsky__shared_8c.html#aa2f6c12fbec98cc07ddae549b8f25593":[12,0,1,0,6,55,0,6,25],
+"cc2500__frsky__shared_8c.html#aa4d90a156e8ffd9597a7352f5e15e8df":[12,0,1,0,6,55,0,6,21],
+"cc2500__frsky__shared_8c.html#aa4effb30e9de8b5244368623d5265e72":[12,0,1,0,6,55,0,6,5],
 "cc2500__frsky__shared_8c.html#aad78fae7846fe4f56409cb30fa52947a":[12,0,1,0,6,55,0,6,13],
 "cc2500__frsky__shared_8c.html#aba5aa2ff374035ebaba02aa2e7cbac27":[12,0,1,0,6,55,0,6,23],
 "cc2500__frsky__shared_8c.html#abcc0d08f3851db024882050ea8fb0d5c":[12,0,1,0,6,55,0,6,17],
@@ -243,11 +249,5 @@ var NAVTREEINDEX27 =
 "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a53874e9762cd3385b7b6cb7a39879c4b":[12,0,1,0,6,55,0,15,6,17],
 "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a5e98fe50438b78a0d1ec6e74abd8cf63":[12,0,1,0,6,55,0,15,6,5],
 "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a6f49e391a1bd7e17812f077931e91438":[12,0,1,0,6,55,0,15,6,16],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a700c3bd63d372080fa2eb5e5257095f4":[12,0,1,0,6,55,0,15,6,0],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a91291395e2745c3d083ed52a65ef7389":[12,0,1,0,6,55,0,15,6,11],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a97ce96fbb80fa1a3197200005e278218":[12,0,1,0,6,55,0,15,6,12],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae1909d73990cc8de643d0de97da6dc92":[12,0,1,0,6,55,0,15,6,8],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae22074d60bb17435f72c1be60977c05f":[12,0,1,0,6,55,0,15,6,13],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae47397881c6fd7fe46ebf565f1e3e5e3":[12,0,1,0,6,55,0,15,6,4],
-"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae5fad853ae29f0a404b8dcaf5dfd5daa":[12,0,1,0,6,55,0,15,6,1]
+"cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a700c3bd63d372080fa2eb5e5257095f4":[12,0,1,0,6,55,0,15,6,0]
 };
