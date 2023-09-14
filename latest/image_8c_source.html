@@ -517,7 +517,7 @@ $(document).ready(function(){initNavTree('image_8c_source.html',''); initResizab
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  }</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;}</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160; </div>
-<div class="line"><a name="l00573"></a><span class="lineno"><a class="line" href="image_8c.html#ae0f7d6068a0813bd149153b409474672">  573</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="image_8c.html#ae0f7d6068a0813bd149153b409474672">image_calculate_g</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *dx, <span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *dy, <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *g)</div>
+<div class="line"><a name="l00573"></a><span class="lineno"><a class="line" href="image_8c.html#ae0f7d6068a0813bd149153b409474672">  573</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="image_8c.html#ae0f7d6068a0813bd149153b409474672">image_calculate_g</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *dx, <span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *dy, <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *<a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>)</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;{</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> sum_dxx = 0, sum_dxy = 0, sum_dyy = 0;</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
@@ -535,10 +535,10 @@ $(document).ready(function(){initNavTree('image_8c_source.html',''); initResizab
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  }</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="comment">// output the G vector</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  g[0] = sum_dxx / 255;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  g[1] = sum_dxy / 255;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  g[2] = g[1];</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  g[3] = sum_dyy / 255;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>[0] = sum_dxx / 255;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>[1] = sum_dxy / 255;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>[2] = <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>[1];</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>[3] = sum_dyy / 255;</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
 <div class="line"><a name="l00605"></a><span class="lineno"><a class="line" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80">  605</a></span>&#160;<a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80">image_difference</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img_a, <span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img_b, <span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *diff)</div>
@@ -863,6 +863,7 @@ $(document).ready(function(){initNavTree('image_8c_source.html',''); initResizab
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    }</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;  }</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;}</div>
+<div class="ttc" id="aballistic__touchdown_8c_html_a8cf17d727651616de6f2b79ef32170cd"><div class="ttname"><a href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> <a href="ballistic__touchdown_8c_source.html#l00025">ballistic_touchdown.c:25</a></div></div>
 <div class="ttc" id="aimage_8c_html_a02932625f9aeb66da70c89a2f2d3a052"><div class="ttname"><a href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052">image_copy</a></div><div class="ttdeci">void image_copy(struct image_t *input, struct image_t *output)</div><div class="ttdoc">Copy an image from inut to output This will only work if the formats are the same.</div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00089">image.c:89</a></div></div>
 <div class="ttc" id="aimage_8c_html_a038faec3786d8baa2e38c7672129e276"><div class="ttname"><a href="image_8c.html#a038faec3786d8baa2e38c7672129e276">pyramid_next_level</a></div><div class="ttdeci">void pyramid_next_level(struct image_t *input, struct image_t *output, uint8_t border_size)</div><div class="ttdoc">This function takes previous padded pyramid level and outputs next level of pyramid without padding.</div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00414">image.c:414</a></div></div>
 <div class="ttc" id="aimage_8c_html_a170da2d6e19d1b99084a4fb18bc1a2ee"><div class="ttname"><a href="image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee">image_switch</a></div><div class="ttdeci">void image_switch(struct image_t *a, struct image_t *b)</div><div class="ttdoc">This will switch image *a and *b This is faster as image_copy because it doesn't copy the whole image...</div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00112">image.c:112</a></div></div>
@@ -930,7 +931,7 @@ $(document).ready(function(){initNavTree('image_8c_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_02b33bf6f772461f444923131a9a8dda.html">vision</a></li><li class="navelem"><a class="el" href="image_8c.html">image.c</a></li>
-    <li class="footer">Generated on Thu Sep 14 2023 14:57:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 14 2023 15:11:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

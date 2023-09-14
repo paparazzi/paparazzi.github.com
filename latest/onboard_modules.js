@@ -1933,6 +1933,12 @@ var onboard_modules =
         [ "Raw traffic_info.xml file:", "module__traffic_info.html#module_xml__traffic_info", null ]
       ] ]
     ] ],
+    [ "ballistic_touchdown module", "module__ballistic_touchdown.html", [
+      [ "Example for airframe file", "module__ballistic_touchdown.html#module_load_example__ballistic_touchdown", null ],
+      [ "Module functions", "module__ballistic_touchdown.html#functions__ballistic_touchdown", [
+        [ "Raw ballistic_touchdown.xml file:", "module__ballistic_touchdown.html#module_xml__ballistic_touchdown", null ]
+      ] ]
+    ] ],
     [ "nav_basic_fw module", "module__nav_basic_fw.html", [
       [ "Example for airframe file", "module__nav_basic_fw.html#module_load_example__nav_basic_fw", null ],
       [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", null ],

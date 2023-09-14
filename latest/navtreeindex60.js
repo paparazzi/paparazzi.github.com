@@ -1,5 +1,16 @@
 var NAVTREEINDEX60 =
 {
+"gps__sirf_8h.html#a7b033fada0e0d1676157f0ab90437967":[12,0,1,0,6,28,21,10],
+"gps__sirf_8h.html#a81bacb9b475cedabbfb667346ea1b0ab":[12,0,1,0,6,28,21,0,5],
+"gps__sirf_8h.html#a88bf4b10b6d850577042f3d4ff4d5e1c":[12,0,1,0,6,28,21,4],
+"gps__sirf_8h.html#a90cca7dc344f0c55fd23f9c924f49bee":[12,0,1,0,6,28,21,9],
+"gps__sirf_8h.html#a98e23126a53e10bb403948c11f4ded64":[12,0,1,0,6,28,21,2],
+"gps__sirf_8h.html#ac9cc83ba93557f3c8adf491059ccfd1f":[12,0,1,0,6,28,21,1],
+"gps__sirf_8h.html#ad5599c2175d7d34aeb595266aba4d01f":[12,0,1,0,6,28,21,7],
+"gps__sirf_8h.html#add1fe9f06d4094bd6e54df2185fb7fb7":[12,0,1,0,6,28,21,11],
+"gps__sirf_8h.html#ae3d01e20e4ac3b3430068a83841a1b47":[12,0,1,0,6,28,21,6],
+"gps__sirf_8h.html#structGpsSirf":[12,0,1,0,6,28,21,0],
+"gps__sirf_8h_source.html":[12,0,1,0,6,28,21],
 "gps__skytraq_8c.html":[12,0,1,0,6,28,22],
 "gps__skytraq_8c.html#a08e4da5f3d0c7936fa52467f40e4b6aa":[12,0,1,0,6,28,22,8],
 "gps__skytraq_8c.html#a14cfd4ce9ed75482f496e0452f72497d":[12,0,1,0,6,28,22,18],
@@ -238,16 +249,5 @@ var NAVTREEINDEX60 =
 "gps__ubx__ucenter_8c.html#a2122042e2188440dd576442a2f0780be":[12,0,1,0,6,28,28,62],
 "gps__ubx__ucenter_8c.html#a23b7aaac08e610f2f4ed125496882b70":[12,0,1,0,6,28,28,33],
 "gps__ubx__ucenter_8c.html#a359ba41adf558016cb042a8f013b0080":[12,0,1,0,6,28,28,9],
-"gps__ubx__ucenter_8c.html#a3a154417a0097b7eb296e7166d232795":[12,0,1,0,6,28,28,6],
-"gps__ubx__ucenter_8c.html#a42a9ad7f6ee461f5e79766959dac2777":[12,0,1,0,6,28,28,8],
-"gps__ubx__ucenter_8c.html#a4681c16e99b7e0536877058cb7f016c3":[12,0,1,0,6,28,28,18],
-"gps__ubx__ucenter_8c.html#a483da5be54cf6eca071cd6c1ee0e3675":[12,0,1,0,6,28,28,69],
-"gps__ubx__ucenter_8c.html#a48a7c8b56ee5eb14dafb00e290855eb7":[12,0,1,0,6,28,28,56],
-"gps__ubx__ucenter_8c.html#a50857b061398038688f450c0da52583e":[12,0,1,0,6,28,28,25],
-"gps__ubx__ucenter_8c.html#a54a4fdda8f83295995219af42ed0b715":[12,0,1,0,6,28,28,1],
-"gps__ubx__ucenter_8c.html#a55e4a26dfdb97bf102948ba9e4afd5bf":[12,0,1,0,6,28,28,23],
-"gps__ubx__ucenter_8c.html#a56701f18aaad537f7fc0e9be309503c3":[12,0,1,0,6,28,28,53],
-"gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb":[12,0,1,0,6,28,28,65],
-"gps__ubx__ucenter_8c.html#a5f64b650a79b8c6bf7659a95d763ffc5":[12,0,1,0,6,28,28,16],
-"gps__ubx__ucenter_8c.html#a60aeaa85caf0b737d92232109ea198b8":[12,0,1,0,6,28,28,21]
+"gps__ubx__ucenter_8c.html#a3a154417a0097b7eb296e7166d232795":[12,0,1,0,6,28,28,6]
 };

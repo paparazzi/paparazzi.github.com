@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> b_c;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> iy;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> g;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ia;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ix;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc">boolean_T</a> exitg2;</div>
@@ -298,8 +298,8 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>; b_ix += 21) {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            ix = i_i;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            b_c = 0.0F;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            g = (b_ix + lastv) - 1;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">for</span> (b_ia = b_ix; b_ia &lt;= g; b_ia++) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> = (b_ix + lastv) - 1;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">for</span> (b_ia = b_ix; b_ia &lt;= <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>; b_ia++) {</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;              b_c += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ia - 1] * <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[ix];</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;              ix++;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            }</div>
@@ -316,8 +316,8 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              b_c = work[iy] * -tau[i];</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              b_ix = i_i;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              ix = lastv + knt;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;              <span class="keywordflow">for</span> (g = knt; g + 1 &lt;= ix; g++) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[g] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ix] * b_c;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;              <span class="keywordflow">for</span> (<a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> = knt; <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> + 1 &lt;= ix; <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>++) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[<a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ix] * b_c;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;              }</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
@@ -512,7 +512,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> b_c;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> iy;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> g;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ia;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ix;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <a class="code" href="rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc">boolean_T</a> exitg2;</div>
@@ -627,8 +627,8 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>; b_ix += 20) {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            ix = i_i;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            b_c = 0.0F;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            g = (b_ix + lastv) - 1;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <span class="keywordflow">for</span> (b_ia = b_ix; b_ia &lt;= g; b_ia++) {</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> = (b_ix + lastv) - 1;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <span class="keywordflow">for</span> (b_ia = b_ix; b_ia &lt;= <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>; b_ia++) {</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;              b_c += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ia - 1] * <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[ix];</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;              ix++;</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            }</div>
@@ -645,8 +645,8 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;              b_c = work[iy] * -tau[i];</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;              b_ix = i_i;</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;              ix = lastv + knt;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;              <span class="keywordflow">for</span> (g = knt; g + 1 &lt;= ix; g++) {</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[g] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ix] * b_c;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;              <span class="keywordflow">for</span> (<a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> = knt; <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a> + 1 &lt;= ix; <a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>++) {</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[<a class="code" href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a>] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[b_ix] * b_c;</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                b_ix++;</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;              }</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            }</div>
@@ -2238,6 +2238,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="ttc" id="aUKF__Wind__Estimator_8h_html_structExtY"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#structExtY">ExtY</a></div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00049">UKF_Wind_Estimator.h:49</a></div></div>
 <div class="ttc" id="aUKF__Wind__Estimator_8h_html_structukf__init__tag"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#structukf__init__tag">ukf_init_tag</a></div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00055">UKF_Wind_Estimator.h:55</a></div></div>
 <div class="ttc" id="aUKF__Wind__Estimator_8h_html_structukf__params__tag"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#structukf__params__tag">ukf_params_tag</a></div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00063">UKF_Wind_Estimator.h:63</a></div></div>
+<div class="ttc" id="aballistic__touchdown_8c_html_a8cf17d727651616de6f2b79ef32170cd"><div class="ttname"><a href="ballistic__touchdown_8c.html#a8cf17d727651616de6f2b79ef32170cd">g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> <a href="ballistic__touchdown_8c_source.html#l00025">ballistic_touchdown.c:25</a></div></div>
 <div class="ttc" id="adw1000__arduino_8c_html_aa0f1e783d32a3f42823c7fedb8f5b206"><div class="ttname"><a href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a></div><div class="ttdeci">static const float scale[]</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__arduino_8c_source.html#l00200">dw1000_arduino.c:200</a></div></div>
 <div class="ttc" id="agroup__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 <div class="ttc" id="ains__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00257">ins_alt_float.c:257</a></div></div>
@@ -2256,7 +2257,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dir_52cf33ca6ff4e1b7a3968aed8ced90c8.html">lib_ukf_wind_estimator</a></li><li class="navelem"><a class="el" href="UKF__Wind__Estimator_8c.html">UKF_Wind_Estimator.c</a></li>
-    <li class="footer">Generated on Thu Sep 14 2023 14:57:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 14 2023 15:11:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

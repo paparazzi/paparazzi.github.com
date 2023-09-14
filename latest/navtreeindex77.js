@@ -1,5 +1,16 @@
 var NAVTREEINDEX77 =
 {
+"hackhd_8c.html#a8b172a9503956a3fbceafb8bcdae1091":[12,0,1,0,6,18,11,4],
+"hackhd_8c.html#a8e7fc00c07a56d7d59bc85281d9e01bc":[12,0,1,0,6,18,11,15],
+"hackhd_8c.html#a91f9f6ee79244d1a804e0a7abfb8812a":[12,0,1,0,6,18,11,8],
+"hackhd_8c.html#a95a59ffc199c6da328887175ce0bca24":[12,0,1,0,6,18,11,13],
+"hackhd_8c.html#aa6c7997c9fedab7c43ddf5d52c1b7f36":[12,0,1,0,6,18,11,11],
+"hackhd_8c.html#aa899439cb47376f1f57233e9a6a48cc9":[12,0,1,0,6,18,11,2],
+"hackhd_8c.html#ac07236a110fadf7ca828e1c2969b4c06":[12,0,1,0,6,18,11,12],
+"hackhd_8c.html#ad396cf4aef2c46583f640db4321c92cc":[12,0,1,0,6,18,11,3],
+"hackhd_8c.html#ae7432921efa36725fef2f363d3671c91":[12,0,1,0,6,18,11,5],
+"hackhd_8c.html#af31f6b41a7221c6e1a4881879a07d161":[12,0,1,0,6,18,11,1],
+"hackhd_8c.html#af32d92b29b1c7179834f3877c59069d1":[12,0,1,0,6,18,11,10],
 "hackhd_8c_source.html":[12,0,1,0,6,18,11],
 "hackhd_8h.html":[12,0,1,0,6,18,12],
 "hackhd_8h.html#a547a4c3830f83d2e5fc804317fcf67b3":[12,0,1,0,6,18,12,0,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#a4c2406e1801a3e53a6395948be08b57e":[12,0,1,0,6,41,5,60],
 "high__speed__logger__direct__memory_8c.html#a505acbcfa5f466fea3d39fa956a06074":[12,0,1,0,6,41,5,7],
 "high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559":[12,0,1,0,6,41,5,48],
-"high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,41,5,22],
-"high__speed__logger__direct__memory_8c.html#a5c0fb4e1f5b4d9f5f529c8dd6e25be44":[12,0,1,0,6,41,5,55],
-"high__speed__logger__direct__memory_8c.html#a5e514c564c6a39539f93bd87b4776fd7":[12,0,1,0,6,41,5,19],
-"high__speed__logger__direct__memory_8c.html#a5ec0810a4f30a23bcc12d3f9d29fdc6d":[12,0,1,0,6,41,5,2],
-"high__speed__logger__direct__memory_8c.html#a6bc6a35c58f24903133a97a18a5b01bd":[12,0,1,0,6,41,5,31],
-"high__speed__logger__direct__memory_8c.html#a6ecd717f7552174fb831d7a4ac8bbfcb":[12,0,1,0,6,41,5,11],
-"high__speed__logger__direct__memory_8c.html#a6f5174eb7613f1835ca2b4075030cf7e":[12,0,1,0,6,41,5,21],
-"high__speed__logger__direct__memory_8c.html#a77508b5bad1b92f44aa98c8f6b31d3fd":[12,0,1,0,6,41,5,3],
-"high__speed__logger__direct__memory_8c.html#a7bd7d01975a2598880383967c1f7ab91":[12,0,1,0,6,41,5,61],
-"high__speed__logger__direct__memory_8c.html#a7db48790edc16e5799db302a57462b48":[12,0,1,0,6,41,5,33],
-"high__speed__logger__direct__memory_8c.html#a845f6540d2f948bdb96931058496b14c":[12,0,1,0,6,41,5,5],
-"high__speed__logger__direct__memory_8c.html#a84afd2348780c5f53d632f91ce2e5524":[12,0,1,0,6,41,5,28]
+"high__speed__logger__direct__memory_8c.html#a53a3a375b8059891239dd28d01945d44":[12,0,1,0,6,41,5,22]
 };

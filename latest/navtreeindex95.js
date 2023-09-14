@@ -1,5 +1,16 @@
 var NAVTREEINDEX95 =
 {
+"ist8310__regs_8h.html#adf7317067f229d4441f7af7fdfc8b805":[12,0,1,0,7,48,27],
+"ist8310__regs_8h.html#ae0720e3e7d7e42672664bf4d7af6c60f":[12,0,1,0,7,48,15],
+"ist8310__regs_8h.html#ae19fe159838dbc1e4146a0ccd35c5eef":[12,0,1,0,7,48,34],
+"ist8310__regs_8h.html#ae1e51fe0018773dea9424d04c9d80ec4":[12,0,1,0,7,48,19],
+"ist8310__regs_8h.html#af47b1139be1cf8d21c75e475e81194b0":[12,0,1,0,7,48,14],
+"ist8310__regs_8h.html#afa3fb46f3b8e12e6eea2ecb2e47db3e8":[12,0,1,0,7,48,42],
+"ist8310__regs_8h.html#afc61af84f3e78d64c67edbf13ce66a58":[12,0,1,0,7,48,22],
+"ist8310__regs_8h_source.html":[12,0,1,0,7,48],
+"itg3200_8c.html":[12,0,1,0,7,49],
+"itg3200_8c.html#a240c1ab04d15bb3f556189887939765f":[12,0,1,0,7,49,3],
+"itg3200_8c.html#a37fd9870e73caee0513811101150ae87":[12,0,1,0,7,49,7],
 "itg3200_8c.html#a7b349504704c56277b218842850b117c":[12,0,1,0,7,49,2],
 "itg3200_8c.html#aaa9c768fbf93b62e8c6f74ebcc07cf45":[12,0,1,0,7,49,1],
 "itg3200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,49,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX95 =
 "jpeg_8c.html#a3c76e73c2ef42caea8eb720ca6cffb64":[12,0,1,0,6,11,1,0,0,26],
 "jpeg_8c.html#a3d078479dd49a0e509a4c2fabdfecbe2":[12,0,1,0,6,11,1,0,0,22],
 "jpeg_8c.html#a4399178c88d5fedeaf7b8639f1e64c03":[12,0,1,0,6,11,1,0,0,19],
-"jpeg_8c.html#a46fe732a45d70b70dee231158208905b":[12,0,1,0,6,11,1,0,0,31],
-"jpeg_8c.html#a496e270428d382bcbda831334590eaf6":[12,0,1,0,6,11,1,0,0,13],
-"jpeg_8c.html#a4bc20fd5bce35a0ee506c75e5cb00a33":[12,0,1,0,6,11,1,0,0,25],
-"jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9":[12,0,1,0,6,11,1,0,0,6],
-"jpeg_8c.html#a5d86406aa48a7082b1a9aac5b82249f1":[12,0,1,0,6,11,1,0,0,0,0],
-"jpeg_8c.html#a5f0f2d1b956b433186b81b5f64d92670":[12,0,1,0,6,11,1,0,0,0,13],
-"jpeg_8c.html#a5fc32d4db7d3a4eab595483fb91dbe16":[12,0,1,0,6,11,1,0,0,0,22],
-"jpeg_8c.html#a61033f3c04cee01871f11893f47c84c0":[12,0,1,0,6,11,1,0,0,0,5],
-"jpeg_8c.html#a66aa70d246f7f2f3b3b74d133b505b84":[12,0,1,0,6,11,1,0,0,24],
-"jpeg_8c.html#a688433e5f55000ae893f2d5c29097691":[12,0,1,0,6,11,1,0,0,10],
-"jpeg_8c.html#a6b49aa1c0932d4b7c23c9aa4468e2688":[12,0,1,0,6,11,1,0,0,0,2],
-"jpeg_8c.html#a6c1fbbc83313128bc544c223885e5c71":[12,0,1,0,6,11,1,0,0,0,9]
+"jpeg_8c.html#a46fe732a45d70b70dee231158208905b":[12,0,1,0,6,11,1,0,0,31]
 };

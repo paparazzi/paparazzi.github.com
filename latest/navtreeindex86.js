@@ -1,5 +1,16 @@
 var NAVTREEINDEX86 =
 {
+"imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1":[12,0,1,0,6,35,13,1],
+"imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e":[12,0,1,0,6,35,13,5],
+"imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36":[12,0,1,0,6,35,13,4],
+"imu__bebop_8h.html#aa841c1a66da7ff3edb957875907ddc07":[12,0,1,0,6,35,13,2],
+"imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197":[12,0,1,0,6,35,13,3],
+"imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b":[12,0,1,0,6,35,13,6],
+"imu__bebop_8h.html#ae2c1b9ecb71e9207e031dcf67278278e":[12,0,1,0,6,35,13,0,0],
+"imu__bebop_8h.html#af6183a8c87b33c445406c3d18f6e30ed":[12,0,1,0,6,35,13,0,1],
+"imu__bebop_8h.html#structImuBebop":[12,0,1,0,6,35,13,0],
+"imu__bebop_8h_source.html":[12,0,1,0,6,35,13],
+"imu__bmi088__i2c_8c.html":[12,0,1,0,6,35,14],
 "imu__bmi088__i2c_8c.html#a0ff684e86ac2b546c3e200b93e3b152f":[12,0,1,0,6,35,14,1],
 "imu__bmi088__i2c_8c.html#a14fa1a3ea4056e70eae64237e0d1f49b":[12,0,1,0,6,35,14,10],
 "imu__bmi088__i2c_8c.html#a4ec1a0298ee37c4786dc783237880a03":[12,0,1,0,6,35,14,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX86 =
 "imu__mpu6000__hmc5883_8c.html#aed1044a8809f460ff983d231cb8a9849":[12,0,1,0,6,35,24,3],
 "imu__mpu6000__hmc5883_8c.html#aefbdd3e7a29096d80e1c3d72e624e947":[12,0,1,0,6,35,24,5],
 "imu__mpu6000__hmc5883_8c_source.html":[12,0,1,0,6,35,24],
-"imu__mpu6000__hmc5883_8h.html":[12,0,1,0,6,35,25],
-"imu__mpu6000__hmc5883_8h.html#a26e4ccd24281fa404cf1959858ca10bf":[12,0,1,0,6,35,25,2],
-"imu__mpu6000__hmc5883_8h.html#a26ef5044ab94e204555c20b9b32f750f":[12,0,1,0,6,35,25,0,0],
-"imu__mpu6000__hmc5883_8h.html#a478e1aee874d3ededf2781c9cbf14ab5":[12,0,1,0,6,35,25,0,1],
-"imu__mpu6000__hmc5883_8h.html#a7c0229d06494ef4074857d8ed4f277e1":[12,0,1,0,6,35,25,1],
-"imu__mpu6000__hmc5883_8h.html#aaaed0fbf95b6e8df852802a84fd4c7d9":[12,0,1,0,6,35,25,6],
-"imu__mpu6000__hmc5883_8h.html#ab0ea581dde7834254f66b8b22779dda4":[12,0,1,0,6,35,25,5],
-"imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e":[12,0,1,0,6,35,25,3],
-"imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375":[12,0,1,0,6,35,25,4],
-"imu__mpu6000__hmc5883_8h.html#structImuMpu6000Hmc5883":[12,0,1,0,6,35,25,0],
-"imu__mpu6000__hmc5883_8h_source.html":[12,0,1,0,6,35,25],
-"imu__mpu60x0__i2c_8c.html":[12,0,1,0,6,35,26]
+"imu__mpu6000__hmc5883_8h.html":[12,0,1,0,6,35,25]
 };
