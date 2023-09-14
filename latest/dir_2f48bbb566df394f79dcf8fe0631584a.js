@@ -54,6 +54,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "bat_voltage_ardrone2.h", "bat__voltage__ardrone2_8h.html", "bat__voltage__ardrone2_8h" ],
     [ "ezcurrent.c", "ezcurrent_8c.html", "ezcurrent_8c" ],
     [ "ezcurrent.h", "ezcurrent_8h.html", "ezcurrent_8h" ],
+    [ "generic_uart.c", "generic__uart_8c.html", "generic__uart_8c" ],
+    [ "generic_uart.h", "generic__uart_8h.html", "generic__uart_8h" ],
     [ "mag_hmc5843.c", "mag__hmc5843_8c.html", "mag__hmc5843_8c" ],
     [ "mag_hmc5843.h", "mag__hmc5843_8h.html", "mag__hmc5843_8h" ],
     [ "mag_hmc58xx.c", "mag__hmc58xx_8c.html", "mag__hmc58xx_8c" ],

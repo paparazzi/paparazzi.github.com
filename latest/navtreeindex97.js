@@ -1,5 +1,13 @@
 var NAVTREEINDEX97 =
 {
+"l3g4200_8c.html#a98a6955be50d60c5afde8a6e87dd8373":[12,0,1,0,7,52,4],
+"l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f":[12,0,1,0,7,52,3],
+"l3g4200_8c.html#ae602f4d8dcd9c775da7e8233f1f193e5":[12,0,1,0,7,52,5],
+"l3g4200_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,52,0],
+"l3g4200_8c.html#affef29745f5a82cfc679e157c57b9c40":[12,0,1,0,7,52,1],
+"l3g4200_8c_source.html":[12,0,1,0,7,52],
+"l3g4200_8h.html":[12,0,1,0,7,53],
+"l3g4200_8h.html#a002792d42e94ad74ed4e7f35e2232a9d":[12,0,1,0,7,53,8],
 "l3g4200_8h.html#a04567c5211452c8a7be46d598b33aa84":[12,0,1,0,7,53,15],
 "l3g4200_8h.html#a04a525a63675fe3546eee43532e1c885":[12,0,1,0,7,53,4],
 "l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572":[12,0,1,0,7,53,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX97 =
 "lia_2chibios_2v1_81_2board_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737":[12,0,1,0,1,9,0,0,0,120],
 "lia_2chibios_2v1_81_2board_8h.html#a3c7828080fe4221adb89ff72d286254d":[12,0,1,0,1,9,0,0,0,109],
 "lia_2chibios_2v1_81_2board_8h.html#a3e0a0319f7d0ccb9078d58d798d5b8ca":[12,0,1,0,1,9,0,0,0,56],
-"lia_2chibios_2v1_81_2board_8h.html#a3e85874ffaac1fc23b9fd76eb06fd79e":[12,0,1,0,1,9,0,0,0,82],
-"lia_2chibios_2v1_81_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,9,0,0,0,112],
-"lia_2chibios_2v1_81_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,9,0,0,0,0],
-"lia_2chibios_2v1_81_2board_8h.html#a402c216e512bc4a39616400af32b7c7f":[12,0,1,0,1,9,0,0,0,123],
-"lia_2chibios_2v1_81_2board_8h.html#a426aaabe7101889f595f9e66c52c1baf":[12,0,1,0,1,9,0,0,0,125],
-"lia_2chibios_2v1_81_2board_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,9,0,0,0,26],
-"lia_2chibios_2v1_81_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f":[12,0,1,0,1,9,0,0,0,99],
-"lia_2chibios_2v1_81_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a":[12,0,1,0,1,9,0,0,0,42],
-"lia_2chibios_2v1_81_2board_8h.html#a482794539449d37c65de123d0d629acb":[12,0,1,0,1,9,0,0,0,8]
+"lia_2chibios_2v1_81_2board_8h.html#a3e85874ffaac1fc23b9fd76eb06fd79e":[12,0,1,0,1,9,0,0,0,82]
 };

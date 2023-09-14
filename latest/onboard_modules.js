@@ -2475,6 +2475,13 @@ var onboard_modules =
         [ "Raw ezcurrent.xml file:", "module__ezcurrent.html#module_xml__ezcurrent", null ]
       ] ]
     ] ],
+    [ "generic_uart_sensor module", "module__generic_uart_sensor.html", [
+      [ "Example for airframe file", "module__generic_uart_sensor.html#module_load_example__generic_uart_sensor", null ],
+      [ "Module configuration options", "module__generic_uart_sensor.html#configuration__generic_uart_sensor", null ],
+      [ "Module functions", "module__generic_uart_sensor.html#functions__generic_uart_sensor", [
+        [ "Raw generic_uart_sensor.xml file:", "module__generic_uart_sensor.html#module_xml__generic_uart_sensor", null ]
+      ] ]
+    ] ],
     [ "mag_hmc5843 module", "module__mag_hmc5843.html", [
       [ "Example for airframe file", "module__mag_hmc5843.html#module_load_example__mag_hmc5843", null ],
       [ "Module configuration options", "module__mag_hmc5843.html#configuration__mag_hmc5843", null ],

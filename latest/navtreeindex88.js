@@ -1,5 +1,13 @@
 var NAVTREEINDEX88 =
 {
+"ins__alt__float_8c.html#a64f433aa84bea43c5ef47b59b1cab4d3":[12,0,1,0,6,36,12,0],
+"ins__alt__float_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702":[12,0,1,0,6,36,12,18],
+"ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75":[12,0,1,0,6,36,12,7],
+"ins__alt__float_8c.html#a92209191a3ecc53fc4adaafd0fe82933":[12,0,1,0,6,36,12,10],
+"ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905":[12,0,1,0,6,36,12,21],
+"ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86":[12,0,1,0,6,36,12,15],
+"ins__alt__float_8c.html#aa856711c8028cde137345c4d9ebd83fa":[12,0,1,0,6,36,12,20],
+"ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793":[12,0,1,0,6,36,12,6],
 "ins__alt__float_8c.html#abef0912d3cb175b8c58b1969dd5c23f4":[12,0,1,0,6,36,12,2],
 "ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e":[12,0,1,0,6,36,12,14],
 "ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274":[12,0,1,0,6,36,12,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX88 =
 "ins__float__invariant_8h.html":[12,0,1,0,6,36,23],
 "ins__float__invariant_8h.html#a029a49cf4d1d624be38f51c4cd2de322":[12,0,1,0,6,36,23,4,2],
 "ins__float__invariant_8h.html#a029a49cf4d1d624be38f51c4cd2de322":[12,0,1,0,6,2,17,4,2],
-"ins__float__invariant_8h.html#a043700f433201a42b90f2d8b4d8d72eb":[12,0,1,0,6,36,23,4,19],
-"ins__float__invariant_8h.html#a043700f433201a42b90f2d8b4d8d72eb":[12,0,1,0,6,2,17,4,19],
-"ins__float__invariant_8h.html#a1280312e1aac6b9f6980243eca08e7cf":[12,0,1,0,6,36,23,4,7],
-"ins__float__invariant_8h.html#a1280312e1aac6b9f6980243eca08e7cf":[12,0,1,0,6,2,17,4,7],
-"ins__float__invariant_8h.html#a1381bfad9d32941968667b05c9f0e620":[12,0,1,0,6,36,23,8],
-"ins__float__invariant_8h.html#a1401609b4a97c260eb60c68fdb8508c2":[12,0,1,0,6,36,23,2,0],
-"ins__float__invariant_8h.html#a1401609b4a97c260eb60c68fdb8508c2":[12,0,1,0,6,2,17,2,0],
-"ins__float__invariant_8h.html#a1517d66ccaf0940267f9fd85b1220b2c":[12,0,1,0,6,36,23,4,14],
-"ins__float__invariant_8h.html#a1517d66ccaf0940267f9fd85b1220b2c":[12,0,1,0,6,2,17,4,14]
+"ins__float__invariant_8h.html#a043700f433201a42b90f2d8b4d8d72eb":[12,0,1,0,6,36,23,4,19]
 };

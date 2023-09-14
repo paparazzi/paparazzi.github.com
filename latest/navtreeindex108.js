@@ -1,5 +1,13 @@
 var NAVTREEINDEX108 =
 {
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa2b58d4e2c9e019ecd077794231a0a17":[12,0,1,0,1,13,0,0,1,42],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa2f70df5cf087cd6960d96a88fa9a8dc":[12,0,1,0,1,13,0,0,1,25],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa499e5a7c6352b58178e0651483d88ee":[12,0,1,0,1,13,0,0,1,206],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa4b3131ca12f2d5a12047abb987961a4":[12,0,1,0,1,13,0,0,1,29],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa4ecf8f03432b8aabf2f96ca370310d6":[12,0,1,0,1,13,0,0,1,170],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa6385bafac509e5ef0926a722fc54adb":[12,0,1,0,1,13,0,0,1,149],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa6f3292830116ce88ed2268f15f45448":[12,0,1,0,1,13,0,0,1,250],
+"lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa8147974425e64e44807e01638739cd6":[12,0,1,0,1,13,0,0,1,177],
 "lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aa9429cc1d79dd9990e7eef350d6c6852":[12,0,1,0,1,13,0,0,1,174],
 "lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aaad3d45e3630b5efb746260aedba2bd2":[12,0,1,0,1,13,0,0,1,61],
 "lisa__mxs_2chibios_2v1_80_2mcuconf_8h.html#aaae4f606c65a38ec13692b57895e2399":[12,0,1,0,1,13,0,0,1,183],
@@ -241,13 +249,5 @@ var NAVTREEINDEX108 =
 "logger__control__effectiveness_8c.html#a63c04f002aff637789e01d149d8da5f9":[12,0,1,0,6,41,9,0],
 "logger__control__effectiveness_8c.html#a754cd5c0228235ddee07e88c047271a4":[12,0,1,0,6,41,9,6],
 "logger__control__effectiveness_8c.html#ab135a2d3c3352b33030efa0ffc60d604":[12,0,1,0,6,41,9,2],
-"logger__control__effectiveness_8c.html#ad9d72f2e2b0ba0c7f66394f32d90be86":[12,0,1,0,6,41,9,1],
-"logger__control__effectiveness_8c_source.html":[12,0,1,0,6,41,9],
-"logger__control__effectiveness_8h.html":[12,0,1,0,6,41,10],
-"logger__control__effectiveness_8h.html#a34e7856739170b664a5dffcef7f4e5f1":[12,0,1,0,6,41,10,0],
-"logger__control__effectiveness_8h.html#a754cd5c0228235ddee07e88c047271a4":[12,0,1,0,6,41,10,1],
-"logger__control__effectiveness_8h_source.html":[12,0,1,0,6,41,10],
-"logger__file_8c.html":[12,0,1,0,6,41,11],
-"logger__file_8c.html#a3a03579f3e58f68dce1fead8c6b1b981":[12,0,1,0,6,41,11,6],
-"logger__file_8c.html#a43fc7cc11653aeca3ffbc6a22a383eb0":[12,0,1,0,6,41,11,3]
+"logger__control__effectiveness_8c.html#ad9d72f2e2b0ba0c7f66394f32d90be86":[12,0,1,0,6,41,9,1]
 };

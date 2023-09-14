@@ -1,5 +1,13 @@
 var NAVTREEINDEX101 =
 {
+"linux_2modules_2actuators_2actuators__pwm__arch_8c_source.html":[12,0,1,0,0,1,1,0,0],
+"linux_2modules_2actuators_2actuators__pwm__arch_8h.html":[12,0,1,0,0,1,1,0,1],
+"linux_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f":[12,0,1,0,0,1,1,0,1,0],
+"linux_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,1,1,0,1,2],
+"linux_2modules_2actuators_2actuators__pwm__arch_8h.html#ad35eb8ed0c548021d922168b3b58d1a4":[12,0,1,0,0,1,1,0,1,1],
+"linux_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,1,1,0,1],
+"linux_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,1,1,1,0],
+"linux_2modules_2core_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e":[12,0,1,0,0,1,1,1,0,3],
 "linux_2modules_2core_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e":[12,0,1,0,0,1,1,1,0,2],
 "linux_2modules_2core_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,0,1,1,1,0,1],
 "linux_2modules_2core_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46":[12,0,1,0,0,1,1,1,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX101 =
 "lisa__l__1_80_8h.html#a697b8e633c428bd167844542c8c1453f":[12,0,1,0,1,37,98],
 "lisa__l__1_80_8h.html#a6a02b498a8d63c777dd56b6ae45ca259":[12,0,1,0,1,37,20],
 "lisa__l__1_80_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289":[12,0,1,0,1,37,122],
-"lisa__l__1_80_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,37,39],
-"lisa__l__1_80_8h.html#a745f443c330c61471cba9ced96957efb":[12,0,1,0,1,37,6],
-"lisa__l__1_80_8h.html#a77c3af075354416adaba09eac2e953c2":[12,0,1,0,1,37,92],
-"lisa__l__1_80_8h.html#a78669ea0a0e6af54d5b0981f48156dd1":[12,0,1,0,1,37,128],
-"lisa__l__1_80_8h.html#a787b5d0dff7658e5e923331317635545":[12,0,1,0,1,37,75],
-"lisa__l__1_80_8h.html#a788deb07b7c76a809557fa2ee0c416e5":[12,0,1,0,1,37,63],
-"lisa__l__1_80_8h.html#a78b91cae357eed2023271f3a889047dd":[12,0,1,0,1,37,67],
-"lisa__l__1_80_8h.html#a79875406470f39efa3bac72bf8eba9dc":[12,0,1,0,1,37,89],
-"lisa__l__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0":[12,0,1,0,1,37,83]
+"lisa__l__1_80_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,37,39]
 };
