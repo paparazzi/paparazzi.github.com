@@ -1,5 +1,14 @@
 var NAVTREEINDEX86 =
 {
+"imu__aspirin__i2c_8h_source.html":[12,0,1,0,6,35,11],
+"imu__bebop_8c.html":[12,0,1,0,6,35,12],
+"imu__bebop_8c.html#a00741040c64264f12c2ba2e8bbb3e78d":[12,0,1,0,6,35,12,1],
+"imu__bebop_8c.html#a565995deb417f4592913f9647af3dc4a":[12,0,1,0,6,35,12,0],
+"imu__bebop_8c.html#a6e2e821c983714cc0f23313ee1d38b5b":[12,0,1,0,6,35,12,6],
+"imu__bebop_8c.html#aa2e0dd97234c855b85f5cbf27b27f58e":[12,0,1,0,6,35,12,4],
+"imu__bebop_8c.html#aa31cb19c5b495495b851bd6ff07d2c36":[12,0,1,0,6,35,12,3],
+"imu__bebop_8c.html#abf59a3c40b631f23435da34574ce0197":[12,0,1,0,6,35,12,2],
+"imu__bebop_8c.html#ac0f795229e38fdc451ef93a40921e93b":[12,0,1,0,6,35,12,5],
 "imu__bebop_8c_source.html":[12,0,1,0,6,35,12],
 "imu__bebop_8h.html":[12,0,1,0,6,35,13],
 "imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1":[12,0,1,0,6,35,13,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX86 =
 "imu__mpu6000__hmc5883_8c.html#a5e1306dffd68a877b676de9d785a279a":[12,0,1,0,6,35,24,9],
 "imu__mpu6000__hmc5883_8c.html#a802939ddfdf31199a1e9c2d821b2a513":[12,0,1,0,6,35,24,0],
 "imu__mpu6000__hmc5883_8c.html#aa0c68fe97ff5dc4caca839d96e849569":[12,0,1,0,6,35,24,2],
-"imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9":[12,0,1,0,6,35,24,15],
-"imu__mpu6000__hmc5883_8c.html#ab0ea581dde7834254f66b8b22779dda4":[12,0,1,0,6,35,24,14],
-"imu__mpu6000__hmc5883_8c.html#abd2159bb1b3c82cedfd894e7812574e5":[12,0,1,0,6,35,24,7],
-"imu__mpu6000__hmc5883_8c.html#ad6966952ce0485e5bffbc0d8132fa5df":[12,0,1,0,6,35,24,6],
-"imu__mpu6000__hmc5883_8c.html#ae2a24b4ddc832d0f2111b384e0ff722e":[12,0,1,0,6,35,24,10],
-"imu__mpu6000__hmc5883_8c.html#ae2feb7343d2916d4ac7950010ef0018f":[12,0,1,0,6,35,24,8],
-"imu__mpu6000__hmc5883_8c.html#ae9d618a59cee7e4c02666223bc3bf07e":[12,0,1,0,6,35,24,12],
-"imu__mpu6000__hmc5883_8c.html#aec6b1b45934cd999aad8f5c46d25c375":[12,0,1,0,6,35,24,13],
-"imu__mpu6000__hmc5883_8c.html#aed1044a8809f460ff983d231cb8a9849":[12,0,1,0,6,35,24,3],
-"imu__mpu6000__hmc5883_8c.html#aefbdd3e7a29096d80e1c3d72e624e947":[12,0,1,0,6,35,24,5]
+"imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9":[12,0,1,0,6,35,24,15]
 };

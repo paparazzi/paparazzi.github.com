@@ -1,5 +1,15 @@
 var NAVTREEINDEX188 =
 {
+"sdLog_8c.html#ae82bd97eb545159246a84ebf2233421f":[12,0,1,0,6,41,0,4,7],
+"sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77":[12,0,1,0,6,41,0,4,4],
+"sdLog_8c_source.html":[12,0,1,0,6,41,0,4],
+"sdLog_8h.html":[12,0,1,0,6,41,0,5],
+"sdLog_8h.html#a03326adcb90b1cc07d684a6abaff2051":[12,0,1,0,6,41,0,5,12],
+"sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a":[12,0,1,0,6,41,0,5,8],
+"sdLog_8h.html#a0feebb43817c3a4d97e34f991012932c":[12,0,1,0,6,41,0,5,11],
+"sdLog_8h.html#a152a0485677d297d1dc2a4e72bfd7b2b":[12,0,1,0,6,41,0,5,4],
+"sdLog_8h.html#a34cec0cb8902d0f343cd6ad965db356d":[12,0,1,0,6,41,0,5,1],
+"sdLog_8h.html#a385c043754d4928ba25d514c2220039c":[12,0,1,0,6,41,0,5,6],
 "sdLog_8h.html#a510de29d16898e7e402fe7ea2dc7b992":[12,0,1,0,6,41,0,5,10],
 "sdLog_8h.html#a598888320386c21f975d32d68f29bcf3":[12,0,1,0,6,41,0,5,13],
 "sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d":[12,0,1,0,6,41,0,5,7],
@@ -239,15 +249,5 @@ var NAVTREEINDEX188 =
 "sdlogger__spi__direct_8h.html#ad15740b25e247b1005602395c3566e2c":[12,0,1,0,6,41,23,0,9],
 "sdlogger__spi__direct_8h.html#ad47b2b2958d9f06fc41d92792519964d":[12,0,1,0,6,41,23,4],
 "sdlogger__spi__direct_8h.html#af24019c9a3de0374a1f3d5ea33bc5bf9":[12,0,1,0,6,41,23,14],
-"sdlogger__spi__direct_8h.html#structsdlogger__spi__periph":[12,0,1,0,6,41,23,0],
-"sdlogger__spi__direct_8h_source.html":[12,0,1,0,6,41,23],
-"serial_8c.html":[12,0,1,0,6,18,0,5],
-"serial_8c.html#a6f8059414f0228f0256115e024eeed4b":[12,0,1,0,6,18,0,5,1],
-"serial_8c.html#a8721c1e544f70f5bf4b1a1410d973241":[12,0,1,0,6,18,0,5,0],
-"serial_8c_source.html":[12,0,1,0,6,18,0,5],
-"serial_8h.html":[12,0,1,0,6,18,0,6],
-"serial_8h.html#a4de5afa43fa6f29a348b3b7f754f9a00":[12,0,1,0,6,18,0,6,0],
-"serial_8h.html#a5e6f1c66fb098ba0571d1ce553e7a7f7":[12,0,1,0,6,18,0,6,3],
-"serial_8h.html#a64a2601b456adb51d40aa02ef99370b4":[12,0,1,0,6,18,0,6,1],
-"serial_8h.html#a6f8059414f0228f0256115e024eeed4b":[12,0,1,0,6,18,0,6,4]
+"sdlogger__spi__direct_8h.html#structsdlogger__spi__periph":[12,0,1,0,6,41,23,0]
 };

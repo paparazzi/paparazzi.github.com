@@ -1,5 +1,14 @@
 var NAVTREEINDEX60 =
 {
+"gps__sirf_8c.html#structsirf__msg__41":[12,0,1,0,6,28,20,1],
+"gps__sirf_8c_source.html":[12,0,1,0,6,28,20],
+"gps__sirf_8h.html":[12,0,1,0,6,28,21],
+"gps__sirf_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,28,21,5],
+"gps__sirf_8h.html#a212d0d48af03650bdfc9f37c756e3a57":[12,0,1,0,6,28,21,0,4],
+"gps__sirf_8h.html#a230fee0826a402e8d862cb2f1edd456a":[12,0,1,0,6,28,21,0,3],
+"gps__sirf_8h.html#a2cf5bf021c652f25c098470641cced16":[12,0,1,0,6,28,21,0,0],
+"gps__sirf_8h.html#a5908743d6fc0c2beb28d384386d8c094":[12,0,1,0,6,28,21,0,2],
+"gps__sirf_8h.html#a60327af7dcf70c2d9d6ce3122ee6d4ae":[12,0,1,0,6,28,21,0,1],
 "gps__sirf_8h.html#a623d00b13f1a527f1829c213bf4690d7":[12,0,1,0,6,28,21,3],
 "gps__sirf_8h.html#a7668dedbc74a47bde384b2b911379073":[12,0,1,0,6,28,21,8],
 "gps__sirf_8h.html#a7b033fada0e0d1676157f0ab90437967":[12,0,1,0,6,28,21,10],
@@ -240,14 +249,5 @@ var NAVTREEINDEX60 =
 "gps__ubx__ucenter_8c.html#a01bf4bdeba300fb0862f1694ee8f9c8a":[12,0,1,0,6,28,28,37],
 "gps__ubx__ucenter_8c.html#a060413ec48c481b0eb8584d2ae90f0b5":[12,0,1,0,6,28,28,46],
 "gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d":[12,0,1,0,6,28,28,70],
-"gps__ubx__ucenter_8c.html#a090cbfbd4fa82440a381aa2a5d0bd9af":[12,0,1,0,6,28,28,41],
-"gps__ubx__ucenter_8c.html#a09dfa2e97e29e6e13d19b924250844f9":[12,0,1,0,6,28,28,55],
-"gps__ubx__ucenter_8c.html#a12b19f5d61d604e670f2aab8808f8091":[12,0,1,0,6,28,28,31],
-"gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8":[12,0,1,0,6,28,28,60],
-"gps__ubx__ucenter_8c.html#a160ab6bb8aade8f3e23693bdca032c11":[12,0,1,0,6,28,28,49],
-"gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b":[12,0,1,0,6,28,28,15],
-"gps__ubx__ucenter_8c.html#a1bb4e3a75fea929d9fa82afcc050be4e":[12,0,1,0,6,28,28,26],
-"gps__ubx__ucenter_8c.html#a1d28107542772a43fc57731dc6d7c5ba":[12,0,1,0,6,28,28,28],
-"gps__ubx__ucenter_8c.html#a2122042e2188440dd576442a2f0780be":[12,0,1,0,6,28,28,62],
-"gps__ubx__ucenter_8c.html#a23b7aaac08e610f2f4ed125496882b70":[12,0,1,0,6,28,28,33]
+"gps__ubx__ucenter_8c.html#a090cbfbd4fa82440a381aa2a5d0bd9af":[12,0,1,0,6,28,28,41]
 };

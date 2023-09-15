@@ -1,5 +1,14 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,15,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,17,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,18,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,19,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,20,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,21,0],
+"avi__isp__color__correction_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,5,22,0],
+"avi__isp__color__correction_8h.html#a767d7895896ca198c4fd406913da98dd":[12,0,1,0,1,2,0,0,5,24],
+"avi__isp__color__correction_8h.html#a78a8111fd68952b3634bc9ca6f647e79":[12,0,1,0,1,2,0,0,5,15,1],
 "avi__isp__color__correction_8h.html#a8e369d3821b7157c4651b2c8a9f73aa0":[12,0,1,0,1,2,0,0,5,7,0],
 "avi__isp__color__correction_8h.html#a98140f765533b14b3825ceefc0935d78":[12,0,1,0,1,2,0,0,5,31],
 "avi__isp__color__correction_8h.html#a9a4cca1909d1adf4b7889b994b3aebd2":[12,0,1,0,1,2,0,0,5,18,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a75accada21a06e4da061813ce1c9cac9":[12,0,1,0,1,2,0,0,9,6,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a789d2b51ad2f9c8f06969fd435d61a64":[12,0,1,0,1,2,0,0,9,13],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a7d1ff10cb813533e2b1f048d4f1cc7da":[12,0,1,0,1,2,0,0,9,6,1],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8287e8f3fbf5947fb27174b8d9f03524":[12,0,1,0,1,2,0,0,9,6,10],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8654fa942da2df70392b4ff0e63c0a5b":[12,0,1,0,1,2,0,0,9,2,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8e0a98aa13fef205b1eb2732463fa8af":[12,0,1,0,1,2,0,0,9,9,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a9640481e02bf663c4d5d7ae47c3815ed":[12,0,1,0,1,2,0,0,9,6,6],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aa09e9984faa81355e608c599e3d78e54":[12,0,1,0,1,2,0,0,9,6,3],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aadf6fc2db439bd83bdaa55e8ef159927":[12,0,1,0,1,2,0,0,9,10,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ae462bcb7442c1154607d0de57c9de6a4":[12,0,1,0,1,2,0,0,9,6,8],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aec32af15d6c4647e925e2396445c34c2":[12,0,1,0,1,2,0,0,9,6,5],
-"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aeef2c48ab75694ad409067df9ba665df":[12,0,1,0,1,2,0,0,9,16]
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8287e8f3fbf5947fb27174b8d9f03524":[12,0,1,0,1,2,0,0,9,6,10]
 };

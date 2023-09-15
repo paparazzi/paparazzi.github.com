@@ -1,5 +1,15 @@
 var NAVTREEINDEX198 =
 {
+"stm32_2modules_2core_2settings__arch_8c.html#aed1e92d83a4afdda1a3e9cc7a7a779f0":[12,0,1,0,0,3,1,1,0,0,2],
+"stm32_2modules_2core_2settings__arch_8c.html#af33c1f2139e72266f8cf1e4ebca3925f":[12,0,1,0,0,3,1,1,0,0,1],
+"stm32_2modules_2core_2settings__arch_8c.html#structFlashInfo":[12,0,1,0,0,3,1,1,0,0],
+"stm32_2modules_2core_2settings__arch_8c_source.html":[12,0,1,0,0,3,1,1,0],
+"stm32_2modules_2radio__control_2ppm__arch_8c.html":[12,0,1,0,0,3,1,4,0],
+"stm32_2modules_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[12,0,1,0,0,3,1,4,0,0],
+"stm32_2modules_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38":[12,0,1,0,0,3,1,4,0,3],
+"stm32_2modules_2radio__control_2ppm__arch_8c.html#a8c678c36f403d01c4348ff3d624fbf47":[12,0,1,0,0,3,1,4,0,1],
+"stm32_2modules_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129":[12,0,1,0,0,3,1,4,0,2],
+"stm32_2modules_2radio__control_2ppm__arch_8c_source.html":[12,0,1,0,0,3,1,4,0],
 "stm32_2modules_2radio__control_2ppm__arch_8h.html":[12,0,1,0,0,3,1,4,1],
 "stm32_2modules_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05":[12,0,1,0,0,3,1,4,1,2],
 "stm32_2modules_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db":[12,0,1,0,0,3,1,4,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX198 =
 "swashplate__mixing_8c.html#a3b16bf330efb81b1474079c35f903311":[12,0,1,0,6,33,0,1],
 "swashplate__mixing_8c.html#a745e49f27dd4720daa68d4774be479ef":[12,0,1,0,6,33,0,6],
 "swashplate__mixing_8c.html#a7d4326255042772a1931e6c1eed9ea92":[12,0,1,0,6,33,0,4],
-"swashplate__mixing_8c.html#ab1597832131a1e2787aecb06cce073c6":[12,0,1,0,6,33,0,8],
-"swashplate__mixing_8c.html#ae18d22764360ad8d3fefe3f7b91ab781":[12,0,1,0,6,33,0,3],
-"swashplate__mixing_8c.html#ae26788086ee44f01196fccdf1ea094fa":[12,0,1,0,6,33,0,2],
-"swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c":[12,0,1,0,6,33,0,7],
-"swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b":[12,0,1,0,6,33,0,0],
-"swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623":[12,0,1,0,6,33,0,5],
-"swashplate__mixing_8c_source.html":[12,0,1,0,6,33,0],
-"swashplate__mixing_8h.html":[12,0,1,0,6,33,1],
-"swashplate__mixing_8h.html#a010f808a2b4605a5a092aa2a4ac6eeae":[12,0,1,0,6,33,1,7],
-"swashplate__mixing_8h.html#a1ddba624f4cfc23b3fdcdad624763d50":[12,0,1,0,6,33,1,8],
-"swashplate__mixing_8h.html#a2cc8559702e048c339f68d72a94a5fa8":[12,0,1,0,6,33,1,10]
+"swashplate__mixing_8c.html#ab1597832131a1e2787aecb06cce073c6":[12,0,1,0,6,33,0,8]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX94 =
 {
+"invensense2__regs_8h.html#add12a8d89e1a4c4e008b12a96dd4c75d":[12,0,1,0,7,45,16],
+"invensense2__regs_8h.html#adde3d4ef5fdfb5cd20aad97aec8b526d":[12,0,1,0,7,45,88],
+"invensense2__regs_8h.html#adfe4461e4eb45bb7d6a5e6927d84de6f":[12,0,1,0,7,45,90],
+"invensense2__regs_8h.html#ae098bbb36c3b1593dae27ac9d8e24961":[12,0,1,0,7,45,129],
+"invensense2__regs_8h.html#ae0d177b0115e55de1612e3e74afd1038":[12,0,1,0,7,45,197],
+"invensense2__regs_8h.html#ae0dfab8413af50af4012baf2e0391171":[12,0,1,0,7,45,38],
+"invensense2__regs_8h.html#ae183ca4b85f271e643829e00a0183ff4":[12,0,1,0,7,45,157],
+"invensense2__regs_8h.html#ae215a1a426d29febd020594fc2ac2e26":[12,0,1,0,7,45,192],
+"invensense2__regs_8h.html#ae432bde15fd81c10e0187e9b831cf554":[12,0,1,0,7,45,103],
 "invensense2__regs_8h.html#ae57afdb6b9f96250c8c56a17046d87a3":[12,0,1,0,7,45,57],
 "invensense2__regs_8h.html#ae668cee61f8239378799d6be6fa98e7f":[12,0,1,0,7,45,125],
 "invensense2__regs_8h.html#ae6c6dfe89ec51a7230fd0ad5c19085c8":[12,0,1,0,7,45,136],
@@ -240,14 +249,5 @@ var NAVTREEINDEX94 =
 "ist8310__regs_8h.html#a9015fa05f74a7e56f9a037dddf1ac2de":[12,0,1,0,7,48,39],
 "ist8310__regs_8h.html#a92210a17f0c4d7faa4f8653a289e5fcb":[12,0,1,0,7,48,35],
 "ist8310__regs_8h.html#a9587928a363b8224948f0e381d305f9c":[12,0,1,0,7,48,30],
-"ist8310__regs_8h.html#a995d8f8e8d952c76fadb21e11ad8f41e":[12,0,1,0,7,48,33],
-"ist8310__regs_8h.html#a9a4479f58b7f53f73d85a95b77ac9fd3":[12,0,1,0,7,48,8],
-"ist8310__regs_8h.html#aa275e59f2cd87766c878c03a9d60dda4":[12,0,1,0,7,48,18],
-"ist8310__regs_8h.html#aa84605300efb2320917ab7f5e32e628f":[12,0,1,0,7,48,50],
-"ist8310__regs_8h.html#ab3e1e171534711c99c64d160b49560a1":[12,0,1,0,7,48,5],
-"ist8310__regs_8h.html#abc3535d3b06c95073bda3a3939c64e88":[12,0,1,0,7,48,7],
-"ist8310__regs_8h.html#abd85ed78a317851d35a4039a869515f7":[12,0,1,0,7,48,24],
-"ist8310__regs_8h.html#ac76dd5e687b2a0a702cf35f672ea3e30":[12,0,1,0,7,48,20],
-"ist8310__regs_8h.html#ac83d8af4bf9be1e74664d83063ff6004":[12,0,1,0,7,48,10],
-"ist8310__regs_8h.html#aca13a422d6c42c67d94c8b1a711d8234":[12,0,1,0,7,48,52]
+"ist8310__regs_8h.html#a995d8f8e8d952c76fadb21e11ad8f41e":[12,0,1,0,7,48,33]
 };

@@ -139,6 +139,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1f8643bb0cf39eb19efba54eef8148a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa1659698da60b2551e264a083bf6f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8h.html#afa1659698da60b2551e264a083bf6f3c">approach_moving_target_enable</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_id)</td></tr>
 <tr class="separator:afa1659698da60b2551e264a083bf6f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be835abf9bc8452ef98739265c23463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8h.html#a7be835abf9bc8452ef98739265c23463">approach_moving_target_set_low_pass_freq</a> (float filter_freq)</td></tr>
+<tr class="separator:a7be835abf9bc8452ef98739265c23463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -148,6 +150,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6f9a6a0b3939c92602fc8d0e9bcbc9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951e42f39214ec0b6c1fd9a0d001fb6c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8h.html#a951e42f39214ec0b6c1fd9a0d001fb6c">amt_err_slowdown_gain</a></td></tr>
 <tr class="separator:a951e42f39214ec0b6c1fd9a0d001fb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7f7d312db00ee93346c380c6c12856"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="approach__moving__target_8h.html#a2f7f7d312db00ee93346c380c6c12856">cutoff_freq_filters_hz</a></td></tr>
+<tr class="separator:a2f7f7d312db00ee93346c380c6c12856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Ewoud Smeur <a href="#" onclick="location.href='mai'+'lto:'+'e.j'+'.j'+'.sm'+'eu'+'r@t'+'ud'+'elf'+'t.'+'nl'; return false;">e.j.j<span style="display: none;">.nosp@m.</span>.sme<span style="display: none;">.nosp@m.</span>ur@tu<span style="display: none;">.nosp@m.</span>delf<span style="display: none;">.nosp@m.</span>t.nl</a> Approach a moving target (e.g. ship) </dd></dl>
@@ -261,9 +265,9 @@ wp_id</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00102">102</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00134">134</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
-<p class="reference">References <a class="el" href="approach__moving__target_8c_source.html#l00038">amt</a>, <a class="el" href="approach__moving__target_8h_source.html#l00044">Amt::enabled_time</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, and <a class="el" href="approach__moving__target_8h_source.html#l00045">Amt::wp_id</a>.</p>
+<p class="reference">References <a class="el" href="approach__moving__target_8c_source.html#l00056">amt</a>, <a class="el" href="approach__moving__target_8h_source.html#l00044">Amt::enabled_time</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00098">get_sys_time_msec()</a>, and <a class="el" href="approach__moving__target_8h_source.html#l00045">Amt::wp_id</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -294,9 +298,9 @@ wp_id</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00076">76</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00094">94</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
-<p class="reference">References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00063">send_approach_moving_target()</a>.</p>
+<p class="reference">References <a class="el" href="approach__moving__target_8c_source.html#l00102">approach_moving_target_set_low_pass_freq()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00047">cutoff_freq_filters_hz</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00081">send_approach_moving_target()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -304,9 +308,59 @@ wp_id</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="approach__moving__target_8h_af218c6b9f65d50c4c93ab5979bbd70b4_cgraph.png" border="0" usemap="#aapproach__moving__target_8h_af218c6b9f65d50c4c93ab5979bbd70b4_cgraph" alt=""/></div>
 <map name="aapproach__moving__target_8h_af218c6b9f65d50c4c93ab5979bbd70b4_cgraph" id="aapproach__moving__target_8h_af218c6b9f65d50c4c93ab5979bbd70b4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,217,61"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="265,5,468,32"/>
-<area shape="rect" href="approach__moving__target_8c.html#ac9e78a75d86c82c47b6499480bbcbfbb" title=" " alt="" coords="279,57,455,98"/>
+<area shape="rect" title=" " alt="" coords="5,71,217,98"/>
+<area shape="rect" href="approach__moving__target_8c.html#a7be835abf9bc8452ef98739265c23463" title=" " alt="" coords="275,5,459,47"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="265,71,468,98"/>
+<area shape="rect" href="approach__moving__target_8c.html#ac9e78a75d86c82c47b6499480bbcbfbb" title=" " alt="" coords="279,123,455,164"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="516,5,657,47"/>
+<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="705,13,909,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7be835abf9bc8452ef98739265c23463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be835abf9bc8452ef98739265c23463">&#9670;&nbsp;</a></span>approach_moving_target_set_low_pass_freq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void approach_moving_target_set_low_pass_freq </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>filter_freq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00102">102</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+
+<p class="reference">References <a class="el" href="approach__moving__target_8c_source.html#l00047">cutoff_freq_filters_hz</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="approach__moving__target_8c_source.html#l00051">target_heading_filt</a>, <a class="el" href="approach__moving__target_8c_source.html#l00049">target_pos_filt</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00050">target_vel_filt</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="approach__moving__target_8c_source.html#l00094">approach_moving_target_init()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="approach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_cgraph.png" border="0" usemap="#aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_cgraph" alt=""/></div>
+<map name="aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_cgraph" id="aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,189,47"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="237,5,379,47"/>
+<area shape="rect" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37" title="Init second order low pass filter." alt="" coords="427,13,631,39"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="approach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_icgraph.png" border="0" usemap="#aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_icgraph" alt=""/></div>
+<map name="aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_icgraph" id="aapproach__moving__target_8h_a7be835abf9bc8452ef98739265c23463_icgraph">
+<area shape="rect" title=" " alt="" coords="265,5,449,47"/>
+<area shape="rect" href="approach__moving__target_8c.html#af218c6b9f65d50c4c93ab5979bbd70b4" title=" " alt="" coords="5,13,217,39"/>
 </map>
 </div>
 
@@ -330,7 +384,7 @@ wp_id</td>
 
 <p>Generates a velocity reference from a diagonal approach path. </p>
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00111">111</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00143">143</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
 </div>
 </div>
@@ -355,9 +409,9 @@ wp_id</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00033">33</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00051">51</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="approach__moving__target_8c_source.html#l00102">approach_moving_target_enable()</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00063">send_approach_moving_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="approach__moving__target_8c_source.html#l00134">approach_moving_target_enable()</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00081">send_approach_moving_target()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +435,7 @@ wp_id</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00031">31</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00043">43</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
 
 </div>
 </div>
@@ -405,7 +459,33 @@ wp_id</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00033">33</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00045">45</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+
+</div>
+</div>
+<a id="a2f7f7d312db00ee93346c380c6c12856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7f7d312db00ee93346c380c6c12856">&#9670;&nbsp;</a></span>cutoff_freq_filters_hz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cutoff_freq_filters_hz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="approach__moving__target_8c_source.html#l00047">47</a> of file <a class="el" href="approach__moving__target_8c_source.html">approach_moving_target.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="approach__moving__target_8c_source.html#l00094">approach_moving_target_init()</a>, and <a class="el" href="approach__moving__target_8c_source.html#l00102">approach_moving_target_set_low_pass_freq()</a>.</p>
 
 </div>
 </div>
@@ -415,7 +495,7 @@ wp_id</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="approach__moving__target_8h.html">approach_moving_target.h</a></li>
-    <li class="footer">Generated on Fri Sep 15 2023 07:07:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 19:55:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,15 @@
 var NAVTREEINDEX182 =
 {
+"qr__code__spi__link_8c_source.html":[12,0,1,0,6,32,0],
+"qr__code__spi__link_8h.html":[12,0,1,0,6,32,1],
+"qr__code__spi__link_8h.html#ae9d12bd06ade748707f69958324c82f3":[12,0,1,0,6,32,1,1],
+"qr__code__spi__link_8h.html#afe718e5de23ff690fa62b35bb69553f0":[12,0,1,0,6,32,1,0],
+"qr__code__spi__link_8h_source.html":[12,0,1,0,6,32,1],
+"qr__solve_8c.html":[12,0,1,0,4,0,0],
+"qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1":[12,0,1,0,4,0,0,8],
+"qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135":[12,0,1,0,4,0,0,3],
+"qr__solve_8c.html#a43d89b9590aa2c74c1fc7bbcb2e739af":[12,0,1,0,4,0,0,1],
+"qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902":[12,0,1,0,4,0,0,9],
 "qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149":[12,0,1,0,4,0,0,5],
 "qr__solve_8c.html#a7883ddd0091da126f0e986854130c0c1":[12,0,1,0,4,0,0,0],
 "qr__solve_8c.html#a90d5a7f0475008f757334c945452b340":[12,0,1,0,4,0,0,12],
@@ -239,15 +249,5 @@ var NAVTREEINDEX182 =
 "rm3100_8c.html#a2b272830b8661b9057bf37a6df954f1c":[12,0,1,0,7,116,24],
 "rm3100_8c.html#a3208f021a9c5c397678ff7a0462cdb29":[12,0,1,0,7,116,18],
 "rm3100_8c.html#a3bbe4d68cea912c2b1cd37e930084e9b":[12,0,1,0,7,116,5],
-"rm3100_8c.html#a3e1afb13b0f743a855d04baec8d9a95b":[12,0,1,0,7,116,4],
-"rm3100_8c.html#a51e8ec155429683f2e1eae62b58668d9":[12,0,1,0,7,116,15],
-"rm3100_8c.html#a55b2459eb3b872af09a9de839af30714":[12,0,1,0,7,116,27],
-"rm3100_8c.html#a5712732baed67947dbecd1afe369399c":[12,0,1,0,7,116,26],
-"rm3100_8c.html#a5e00a1f8cc767ae7e5235cb1b2b055d6":[12,0,1,0,7,116,8],
-"rm3100_8c.html#a5ffb9dca07949e59b126da9a5bba0f17":[12,0,1,0,7,116,14],
-"rm3100_8c.html#a67e5806686dc90530572ddc7f0dc27b6":[12,0,1,0,7,116,6],
-"rm3100_8c.html#a6be432141b8d5b22bb4ae1936248db2e":[12,0,1,0,7,116,11],
-"rm3100_8c.html#a775954f8c858cd38fedd8abc541cda49":[12,0,1,0,7,116,23],
-"rm3100_8c.html#a7a2865fd6db030afc69fc705c8548abe":[12,0,1,0,7,116,22],
-"rm3100_8c.html#a9fa665669c6cca7c473adca1ef8e7b57":[12,0,1,0,7,116,17]
+"rm3100_8c.html#a3e1afb13b0f743a855d04baec8d9a95b":[12,0,1,0,7,116,4]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX127 =
 {
+"module__baro_board.html#module_load_example__baro_board":[1,369,0],
+"module__baro_board.html#module_xml__baro_board":[1,369,1,0],
+"module__baro_board_common.html":[1,370],
+"module__baro_board_common.html#configuration__baro_board_common":[1,370,1],
+"module__baro_board_common.html#configure":[1,370,1,0],
+"module__baro_board_common.html#event_functions":[1,370,2,1],
+"module__baro_board_common.html#files":[1,370,3],
+"module__baro_board_common.html#functions__baro_board_common":[1,370,2],
+"module__baro_board_common.html#headers":[1,370,3,0],
+"module__baro_board_common.html#init_functions":[1,370,2,0],
 "module__baro_board_common.html#module_load_example__baro_board_common":[1,370,0],
 "module__baro_board_common.html#module_xml__baro_board_common":[1,370,3,2],
 "module__baro_board_common.html#periodic_functions":[1,370,2,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX127 =
 "module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos":[1,121,0],
 "module__dc_ctrl_parrot_mykonos.html#module_xml__dc_ctrl_parrot_mykonos":[1,121,2,0],
 "module__decawave_anchorless_communication.html":[1,119],
-"module__decawave_anchorless_communication.html#functions__decawave_anchorless_communication":[1,119,1],
-"module__decawave_anchorless_communication.html#module_load_example__decawave_anchorless_communication":[1,119,0],
-"module__decawave_anchorless_communication.html#module_xml__decawave_anchorless_communication":[1,119,1,0],
-"module__demo_module.html":[1,431],
-"module__demo_module.html#functions__demo_module":[1,431,1],
-"module__demo_module.html#module_load_example__demo_module":[1,431,0],
-"module__demo_module.html#module_xml__demo_module":[1,431,1,0],
-"module__dfu_command.html":[1,432],
-"module__dfu_command.html#functions__dfu_command":[1,432,1],
-"module__dfu_command.html#module_load_example__dfu_command":[1,432,0],
-"module__dfu_command.html#module_xml__dfu_command":[1,432,1,0]
+"module__decawave_anchorless_communication.html#functions__decawave_anchorless_communication":[1,119,1]
 };

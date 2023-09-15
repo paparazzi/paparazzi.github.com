@@ -1,5 +1,14 @@
 var NAVTREEINDEX96 =
 {
+"jpeg_8c.html#a185e0318b222708896d55e8d98c0576b":[12,0,1,0,6,11,1,0,0,12],
+"jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c":[12,0,1,0,6,11,1,0,0,11],
+"jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9":[12,0,1,0,6,11,1,0,0,14],
+"jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480":[12,0,1,0,6,11,1,0,0,9],
+"jpeg_8c.html#a26bc0e378bebf3950278fefe97db219b":[12,0,1,0,6,11,1,0,0,0,4],
+"jpeg_8c.html#a26bd3ddf3fa43d85e1b805bb1b500d27":[12,0,1,0,6,11,1,0,0,0,8],
+"jpeg_8c.html#a3c740b24df7fc6a74b0dcb3aa35bbbaa":[12,0,1,0,6,11,1,0,0,0,3],
+"jpeg_8c.html#a3c76e73c2ef42caea8eb720ca6cffb64":[12,0,1,0,6,11,1,0,0,26],
+"jpeg_8c.html#a3d078479dd49a0e509a4c2fabdfecbe2":[12,0,1,0,6,11,1,0,0,22],
 "jpeg_8c.html#a4399178c88d5fedeaf7b8639f1e64c03":[12,0,1,0,6,11,1,0,0,19],
 "jpeg_8c.html#a46fe732a45d70b70dee231158208905b":[12,0,1,0,6,11,1,0,0,31],
 "jpeg_8c.html#a496e270428d382bcbda831334590eaf6":[12,0,1,0,6,11,1,0,0,13],
@@ -240,14 +249,5 @@ var NAVTREEINDEX96 =
 "krooz__sd_8h.html#adea36357b1c0c2ae4214bd55056e9f9f":[12,0,1,0,1,35,145],
 "krooz__sd_8h.html#ae006e4c20f82ac5d2104debcd8615f06":[12,0,1,0,1,35,169],
 "krooz__sd_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012":[12,0,1,0,1,35,174],
-"krooz__sd_8h.html#ae10dee273909cfd97fce818474ddf186":[12,0,1,0,1,35,4],
-"krooz__sd_8h.html#ae18b52f89a903e4a5cf683cf288d98a9":[12,0,1,0,1,35,117],
-"krooz__sd_8h.html#ae2fd7d9fbe28f2e0fd5c6b3582dcd883":[12,0,1,0,1,35,177],
-"krooz__sd_8h.html#ae40a4e27a94283e513359632ceea8de0":[12,0,1,0,1,35,76],
-"krooz__sd_8h.html#ae66df1ca4e5dccad8515ef7bae718f48":[12,0,1,0,1,35,182],
-"krooz__sd_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,35,196],
-"krooz__sd_8h.html#ae718fb13d2500192855c74e78e6c9c5e":[12,0,1,0,1,35,100],
-"krooz__sd_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,35,189],
-"krooz__sd_8h.html#aebc9a85815b66d8bbe8c1c11903e4047":[12,0,1,0,1,35,23],
-"krooz__sd_8h.html#aecb49453f7f4084db5099a7a07003f03":[12,0,1,0,1,35,126]
+"krooz__sd_8h.html#ae10dee273909cfd97fce818474ddf186":[12,0,1,0,1,35,4]
 };

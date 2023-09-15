@@ -1,5 +1,14 @@
 var NAVTREEINDEX109 =
 {
+"lisa__s__1_80_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39":[12,0,1,0,1,46,115],
+"lisa__s__1_80_8h.html#ae40a4e27a94283e513359632ceea8de0":[12,0,1,0,1,46,54],
+"lisa__s__1_80_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,46,147],
+"lisa__s__1_80_8h.html#ae718fb13d2500192855c74e78e6c9c5e":[12,0,1,0,1,46,70],
+"lisa__s__1_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,46,143],
+"lisa__s__1_80_8h.html#ae926e4829833fe67cd614cd513096808":[12,0,1,0,1,46,101],
+"lisa__s__1_80_8h.html#aea7ea8b9ec1ac799365284824757d827":[12,0,1,0,1,46,124],
+"lisa__s__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a":[12,0,1,0,1,46,32],
+"lisa__s__1_80_8h.html#af107a457e0d8e5e7c9910ef5e6f45317":[12,0,1,0,1,46,93],
 "lisa__s__1_80_8h.html#af2e121d4d9900180af09be67e9b044ae":[12,0,1,0,1,46,114],
 "lisa__s__1_80_8h.html#af31fda99a2cc43d62229ac1c47bbe56d":[12,0,1,0,1,46,29],
 "lisa__s__1_80_8h.html#af754c909b4a07f3a9bfd585238432b00":[12,0,1,0,1,46,38],
@@ -240,14 +249,5 @@ var NAVTREEINDEX109 =
 "lsm303d__regs_8h.html#a350008431e7ec13e27b0ef8b8ffee628":[12,0,1,0,7,70,101],
 "lsm303d__regs_8h.html#a35ebaae2643ff22c3b5bd09465879318":[12,0,1,0,7,70,29],
 "lsm303d__regs_8h.html#a36939cf50203d6bed257c7fe3668ebe0":[12,0,1,0,7,70,74],
-"lsm303d__regs_8h.html#a3ca3175cbb747e65aad0d60b4187a97e":[12,0,1,0,7,70,6],
-"lsm303d__regs_8h.html#a3db06c9102a90e4337adb76972bce682":[12,0,1,0,7,70,43],
-"lsm303d__regs_8h.html#a3e74d7953b88103f293fa2c3143b2ba6":[12,0,1,0,7,70,86],
-"lsm303d__regs_8h.html#a3ef39ec1a9111b4374cf072c094a31a2":[12,0,1,0,7,70,75],
-"lsm303d__regs_8h.html#a461733a4e727c11a78dd51941388f432":[12,0,1,0,7,70,48],
-"lsm303d__regs_8h.html#a47b61a4180ea58d69c30876ab44570e8":[12,0,1,0,7,70,62],
-"lsm303d__regs_8h.html#a4a8ab784d392dd835ba05ef450fd4b99":[12,0,1,0,7,70,61],
-"lsm303d__regs_8h.html#a4ab51f1cb3718310b33e0126d9d6939a":[12,0,1,0,7,70,108],
-"lsm303d__regs_8h.html#a4e0e8d668dc8767c0127b41142472533":[12,0,1,0,7,70,20],
-"lsm303d__regs_8h.html#a4f77e177ec78cc4af221960b41c79bb5":[12,0,1,0,7,70,17]
+"lsm303d__regs_8h.html#a3ca3175cbb747e65aad0d60b4187a97e":[12,0,1,0,7,70,6]
 };

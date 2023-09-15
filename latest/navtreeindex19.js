@@ -1,5 +1,14 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__green__coeff__mem":[12,0,1,0,1,2,0,0,13,14],
+"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__offset__x__y":[12,0,1,0,1,2,0,0,13,1],
+"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__red__coeff__mem":[12,0,1,0,1,2,0,0,13,12],
+"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__threshold":[12,0,1,0,1,2,0,0,13,9],
+"avi__isp__lens__shading__correction_8h_source.html":[12,0,1,0,1,2,0,0,13],
+"avi__isp__pedestal_8h.html":[12,0,1,0,1,2,0,0,14],
+"avi__isp__pedestal_8h.html#a14096cc4b70cd95bd824469ba2bd80fd":[12,0,1,0,1,2,0,0,14,5,4],
+"avi__isp__pedestal_8h.html#a146d51fd59d46e90ac5db73da08309ad":[12,0,1,0,1,2,0,0,14,8,0],
+"avi__isp__pedestal_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,14,6,0],
 "avi__isp__pedestal_8h.html#a2c5f4c9e6e1bad2942bb32940ebfd9bd":[12,0,1,0,1,2,0,0,14,9,0],
 "avi__isp__pedestal_8h.html#a528c7dada3a2e8d253f1d9a78e022af6":[12,0,1,0,1,2,0,0,14,1,0],
 "avi__isp__pedestal_8h.html#a60e5d06eb23a85dc8e98e6c71a012c34":[12,0,1,0,1,2,0,0,14,2,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX19 =
 "avi__isp__vlformat__32to40_8h.html#structavi__isp__vlformat__32to40__regs":[12,0,1,0,1,2,0,0,17,1],
 "avi__isp__vlformat__32to40_8h.html#unionavi__isp__vlformat__32to40__format":[12,0,1,0,1,2,0,0,17,0],
 "avi__isp__vlformat__32to40_8h_source.html":[12,0,1,0,1,2,0,0,17],
-"avi__isp__vlformat__40to32_8h.html":[12,0,1,0,1,2,0,0,18],
-"avi__isp__vlformat__40to32_8h.html#a1ddcb92ade31c8fbd370001f9b29a7d9":[12,0,1,0,1,2,0,0,18,2,0],
-"avi__isp__vlformat__40to32_8h.html#a33673cb02be65c997deafeadb923d394":[12,0,1,0,1,2,0,0,18,3],
-"avi__isp__vlformat__40to32_8h.html#ac1bdcf7ae3d54adb52c7d98e0df9d513":[12,0,1,0,1,2,0,0,18,1,0],
-"avi__isp__vlformat__40to32_8h.html#af069a3ad6d28eff0caf5b565ee7d344a":[12,0,1,0,1,2,0,0,18,0,0],
-"avi__isp__vlformat__40to32_8h.html#structavi__isp__vlformat__40to32__format_8____unnamed268____":[12,0,1,0,1,2,0,0,18,2],
-"avi__isp__vlformat__40to32_8h.html#structavi__isp__vlformat__40to32__regs":[12,0,1,0,1,2,0,0,18,1],
-"avi__isp__vlformat__40to32_8h.html#unionavi__isp__vlformat__40to32__format":[12,0,1,0,1,2,0,0,18,0],
-"avi__isp__vlformat__40to32_8h_source.html":[12,0,1,0,1,2,0,0,18],
-"avoid__navigation_8c.html":[12,0,1,0,6,64,1,0]
+"avi__isp__vlformat__40to32_8h.html":[12,0,1,0,1,2,0,0,18]
 };

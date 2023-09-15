@@ -14,8 +14,10 @@ var approach__moving__target_8h =
     ] ],
     [ "approach_moving_target_enable", "approach__moving__target_8h.html#afa1659698da60b2551e264a083bf6f3c", null ],
     [ "approach_moving_target_init", "approach__moving__target_8h.html#af218c6b9f65d50c4c93ab5979bbd70b4", null ],
+    [ "approach_moving_target_set_low_pass_freq", "approach__moving__target_8h.html#a7be835abf9bc8452ef98739265c23463", null ],
     [ "follow_diagonal_approach", "approach__moving__target_8h.html#a1f8643bb0cf39eb19efba54eef8148a7", null ],
     [ "amt", "approach__moving__target_8h.html#a6f9a6a0b3939c92602fc8d0e9bcbc9e3", null ],
     [ "amt_err_slowdown_gain", "approach__moving__target_8h.html#a951e42f39214ec0b6c1fd9a0d001fb6c", null ],
-    [ "approach_moving_target_angle_deg", "approach__moving__target_8h.html#a177edd5c14136c448d4c45b1c1b6ec96", null ]
+    [ "approach_moving_target_angle_deg", "approach__moving__target_8h.html#a177edd5c14136c448d4c45b1c1b6ec96", null ],
+    [ "cutoff_freq_filters_hz", "approach__moving__target_8h.html#a2f7f7d312db00ee93346c380c6c12856", null ]
 ];

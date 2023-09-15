@@ -1,5 +1,15 @@
 var NAVTREEINDEX131 =
 {
+"module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,241,1],
+"module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,241,2],
+"module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,241,0],
+"module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,241,2,0],
+"module__logger_dataflash.html":[1,242],
+"module__logger_dataflash.html#configuration__logger_dataflash":[1,242,1],
+"module__logger_dataflash.html#functions__logger_dataflash":[1,242,2],
+"module__logger_dataflash.html#module_load_example__logger_dataflash":[1,242,0],
+"module__logger_dataflash.html#module_xml__logger_dataflash":[1,242,2,0],
+"module__logger_file.html":[1,243],
 "module__logger_file.html#configuration__logger_file":[1,243,1],
 "module__logger_file.html#functions__logger_file":[1,243,2],
 "module__logger_file.html#module_load_example__logger_file":[1,243,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX131 =
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,324,0],
 "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,324,1,0],
 "module__nav_survey_poly_rotorcraft.html":[1,325],
-"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,325,1],
-"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,325,0],
-"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,325,1,0],
-"module__nav_survey_polygon.html":[1,326],
-"module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,326,0],
-"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,326,0,0],
-"module__nav_survey_rectangle_rotorcraft.html":[1,327],
-"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,327,1],
-"module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,327,2],
-"module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,327,0],
-"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,327,2,0]
+"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,325,1]
 };

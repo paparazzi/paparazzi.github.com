@@ -1,5 +1,14 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8654fa942da2df70392b4ff0e63c0a5b":[12,0,1,0,1,2,0,0,9,2,0],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8e0a98aa13fef205b1eb2732463fa8af":[12,0,1,0,1,2,0,0,9,9,0],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#a9640481e02bf663c4d5d7ae47c3815ed":[12,0,1,0,1,2,0,0,9,6,6],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aa09e9984faa81355e608c599e3d78e54":[12,0,1,0,1,2,0,0,9,6,3],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aadf6fc2db439bd83bdaa55e8ef159927":[12,0,1,0,1,2,0,0,9,10,0],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ac34d1c3186d3eb402bab61b497328672":[12,0,1,0,1,2,0,0,9,11,0],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#ae462bcb7442c1154607d0de57c9de6a4":[12,0,1,0,1,2,0,0,9,6,8],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aec32af15d6c4647e925e2396445c34c2":[12,0,1,0,1,2,0,0,9,6,5],
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html#aeef2c48ab75694ad409067df9ba665df":[12,0,1,0,1,2,0,0,9,16],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#aefaaeed2a812053e0cb093a582e1d9b9":[12,0,1,0,1,2,0,0,9,7,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__crf__kernel__coeff_8____unnamed128____":[12,0,1,0,1,2,0,0,9,9],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#structavi__isp__edge__enhancement__color__reduction__filter__d__coeff_8____unnamed132____":[12,0,1,0,1,2,0,0,9,11],
@@ -240,14 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__cell__id__x__y":[12,0,1,0,1,2,0,0,13,2],
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__cell__w":[12,0,1,0,1,2,0,0,13,3],
 "avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__cell__w__inv":[12,0,1,0,1,2,0,0,13,5],
-"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__gain":[12,0,1,0,1,2,0,0,13,10],
-"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__green__coeff__mem":[12,0,1,0,1,2,0,0,13,14],
-"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__offset__x__y":[12,0,1,0,1,2,0,0,13,1],
-"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__red__coeff__mem":[12,0,1,0,1,2,0,0,13,12],
-"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__threshold":[12,0,1,0,1,2,0,0,13,9],
-"avi__isp__lens__shading__correction_8h_source.html":[12,0,1,0,1,2,0,0,13],
-"avi__isp__pedestal_8h.html":[12,0,1,0,1,2,0,0,14],
-"avi__isp__pedestal_8h.html#a14096cc4b70cd95bd824469ba2bd80fd":[12,0,1,0,1,2,0,0,14,5,4],
-"avi__isp__pedestal_8h.html#a146d51fd59d46e90ac5db73da08309ad":[12,0,1,0,1,2,0,0,14,8,0],
-"avi__isp__pedestal_8h.html#a1fdf93b56e93b40523acc5dd3c7e3b18":[12,0,1,0,1,2,0,0,14,6,0]
+"avi__isp__lens__shading__correction_8h.html#unionavi__isp__lens__shading__correction__gain":[12,0,1,0,1,2,0,0,13,10]
 };

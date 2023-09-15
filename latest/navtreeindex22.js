@@ -1,5 +1,14 @@
 var NAVTREEINDEX22 =
 {
+"battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84aa429c9f072e669c7d6064a0649f0485a":[12,0,1,0,6,1,3,19,1],
+"battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84adbb436907c2f6b9df0142636fa17a798":[12,0,1,0,6,1,3,19,4],
+"battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4":[12,0,1,0,6,1,3,31],
+"battery__monitor_8h.html#a664f11aa5d4ec0536d311f10268cc691":[12,0,1,0,6,1,3,13],
+"battery__monitor_8h.html#a67669d7d9fa98b05cf7f238612d26836":[12,0,1,0,6,1,3,17],
+"battery__monitor_8h.html#a6a7c4a65e54f9929aaacdea3f50a9901":[12,0,1,0,6,1,3,33],
+"battery__monitor_8h.html#a6aa20a577a61328b6ea02f796b0c115b":[12,0,1,0,6,1,3,8],
+"battery__monitor_8h.html#a7593bb18bd0269e596a6f3ede1127feb":[12,0,1,0,6,1,3,20],
+"battery__monitor_8h.html#a811b9e4f42228b2a8c42ab6aa84e7485":[12,0,1,0,6,1,3,35],
 "battery__monitor_8h.html#a84ddda7590ea2607583efe32611dfae5":[12,0,1,0,6,1,3,16],
 "battery__monitor_8h.html#a84e49ac68e876e206bbbc3251c790868":[12,0,1,0,6,1,3,9],
 "battery__monitor_8h.html#a88dd63c85f94e70b669e2759dad8260c":[12,0,1,0,6,1,3,40],
@@ -240,14 +249,5 @@ var NAVTREEINDEX22 =
 "bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4":[12,0,1,0,7,18,3],
 "bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a":[12,0,1,0,7,18,28],
 "bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12":[12,0,1,0,7,18,30],
-"bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949":[12,0,1,0,7,18,31],
-"bmi088_8h.html#a8d41db65aea9c5021c6ae7b35e307fea":[12,0,1,0,7,18,42],
-"bmi088_8h.html#a8f452a334ca3e568e1f60d944b7f1b07":[12,0,1,0,7,18,26],
-"bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18":[12,0,1,0,7,18,25],
-"bmi088_8h.html#a949997efd505f8b884f49487b4618795":[12,0,1,0,7,18,2],
-"bmi088_8h.html#ab2204898557abad9fd042b6613b58a28":[12,0,1,0,7,18,17],
-"bmi088_8h.html#ab924655908c849b81b0b6b2228432130":[12,0,1,0,7,18,0,5],
-"bmi088_8h.html#abf2726bb3bc6514646221047a478fed2":[12,0,1,0,7,18,34],
-"bmi088_8h.html#ac55667ef5c99a595587a9034b35c6929":[12,0,1,0,7,18,36],
-"bmi088_8h.html#ac55667ef5c99a595587a9034b35c6929a3a30d76d3afc4d76ec4610fce47d4f15":[12,0,1,0,7,18,36,1]
+"bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949":[12,0,1,0,7,18,31]
 };

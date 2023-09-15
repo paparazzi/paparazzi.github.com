@@ -559,6 +559,7 @@ var onboard_modules =
     ] ],
     [ "approach_moving_target module", "module__approach_moving_target.html", [
       [ "Example for airframe file", "module__approach_moving_target.html#module_load_example__approach_moving_target", null ],
+      [ "Module configuration options", "module__approach_moving_target.html#configuration__approach_moving_target", null ],
       [ "Module functions", "module__approach_moving_target.html#functions__approach_moving_target", [
         [ "Raw approach_moving_target.xml file:", "module__approach_moving_target.html#module_xml__approach_moving_target", null ]
       ] ]

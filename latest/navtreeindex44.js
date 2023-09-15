@@ -1,5 +1,14 @@
 var NAVTREEINDEX44 =
 {
+"cube_2orange_2mcuconf_8h.html#a9945bfeb81c6b7c9a87e8e204ea57f35":[12,0,1,0,1,5,0,1,234],
+"cube_2orange_2mcuconf_8h.html#a9a4cb321d74c57b544a1628faaae1569":[12,0,1,0,1,5,0,1,291],
+"cube_2orange_2mcuconf_8h.html#a9ac12a927168fe9a90122b0a54110e24":[12,0,1,0,1,5,0,1,76],
+"cube_2orange_2mcuconf_8h.html#a9aefcd7246075d08426d5bc833e86b97":[12,0,1,0,1,5,0,1,259],
+"cube_2orange_2mcuconf_8h.html#a9b92c8345705d855f58f3cc0a3610175":[12,0,1,0,1,5,0,1,297],
+"cube_2orange_2mcuconf_8h.html#a9cbc1fc95626919dd2c3ed0fa095e76e":[12,0,1,0,1,5,0,1,93],
+"cube_2orange_2mcuconf_8h.html#a9d125141e8f301e2b6d590067fd7890e":[12,0,1,0,1,5,0,1,95],
+"cube_2orange_2mcuconf_8h.html#a9d2286ff5fc5fdf03b469795a704619e":[12,0,1,0,1,5,0,1,103],
+"cube_2orange_2mcuconf_8h.html#a9e6d677685a457580ffcac5d4dc402e9":[12,0,1,0,1,5,0,1,41],
 "cube_2orange_2mcuconf_8h.html#a9f72e7206a6300a9d86bccf73f85279a":[12,0,1,0,1,5,0,1,255],
 "cube_2orange_2mcuconf_8h.html#aa16cf87c3dfc59ef20bfeb5c7cd7ab6e":[12,0,1,0,1,5,0,1,214],
 "cube_2orange_2mcuconf_8h.html#aa2f70df5cf087cd6960d96a88fa9a8dc":[12,0,1,0,1,5,0,1,34],
@@ -240,14 +249,5 @@ var NAVTREEINDEX44 =
 "cv__detect__color__object_8c.html#a9e98bd5e517e04efba87d5fb9df01069":[12,0,1,0,6,11,12,6],
 "cv__detect__color__object_8c.html#aaaa68a4d10f42cf735a96f4ab74ec29a":[12,0,1,0,6,11,12,5],
 "cv__detect__color__object_8c.html#aaea6859f655a16b4ffe19403c6c23591":[12,0,1,0,6,11,12,0,0],
-"cv__detect__color__object_8c.html#ab7bf09eb0254383ea94d5e6849358b86":[12,0,1,0,6,11,12,16],
-"cv__detect__color__object_8c.html#abec4c5a42e744c1220d859797d886349":[12,0,1,0,6,11,12,12],
-"cv__detect__color__object_8c.html#acc901b55ecd724d0dde4237d9d59caaf":[12,0,1,0,6,11,12,25],
-"cv__detect__color__object_8c.html#acee4eb52ef122f8716ae34f8e8d0284e":[12,0,1,0,6,11,12,7],
-"cv__detect__color__object_8c.html#ad94aee26a080fe8baf6d92791e58fa15":[12,0,1,0,6,11,12,22],
-"cv__detect__color__object_8c.html#ade11a2723b6ec09cb5cb68c6216d2cd4":[12,0,1,0,6,11,12,9],
-"cv__detect__color__object_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,11,12,3],
-"cv__detect__color__object_8c.html#structcolor__object__t":[12,0,1,0,6,11,12,0],
-"cv__detect__color__object_8c_source.html":[12,0,1,0,6,11,12],
-"cv__detect__color__object_8h.html":[12,0,1,0,6,11,13]
+"cv__detect__color__object_8c.html#ab7bf09eb0254383ea94d5e6849358b86":[12,0,1,0,6,11,12,16]
 };

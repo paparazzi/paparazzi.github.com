@@ -1,5 +1,14 @@
 var NAVTREEINDEX77 =
 {
+"gvf__sin_8h.html#a909f97702d11912af46059c06a2b850c":[12,0,1,0,6,30,0,1,5,0,1],
+"gvf__sin_8h.html#ace5deeaf93e4442d1adaa47aea4bdc87":[12,0,1,0,6,30,0,1,5,1],
+"gvf__sin_8h.html#afd6f9f8d09830516604b3c0f30b57d8e":[12,0,1,0,6,30,0,1,5,0,5],
+"gvf__sin_8h.html#structgvf__s__par":[12,0,1,0,6,30,0,1,5,0],
+"gvf__sin_8h_source.html":[12,0,1,0,6,30,0,1,5],
+"hackhd_8c.html":[12,0,1,0,6,18,11],
+"hackhd_8c.html#a103ff9d9939cd7c866e9bd507f3a7f83":[12,0,1,0,6,18,11,6],
+"hackhd_8c.html#a3148e6ea5394c8f8f5dd669c72d27f8e":[12,0,1,0,6,18,11,7],
+"hackhd_8c.html#a5a6166423c52009d2210b4538c89a18a":[12,0,1,0,6,18,11,0],
 "hackhd_8c.html#a6101742bc09e02c2ccf6414fae3f70f1":[12,0,1,0,6,18,11,14],
 "hackhd_8c.html#a6ff0090c5d817fe5384d164ec0c63561":[12,0,1,0,6,18,11,9],
 "hackhd_8c.html#a8b172a9503956a3fbceafb8bcdae1091":[12,0,1,0,6,18,11,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX77 =
 "high__speed__logger__direct__memory_8c.html#a1deed263bc981c9b543bd1e10f2e6ceb":[12,0,1,0,6,41,5,58],
 "high__speed__logger__direct__memory_8c.html#a1e06decc6f0910512368a830d768ff26":[12,0,1,0,6,41,5,9],
 "high__speed__logger__direct__memory_8c.html#a1ec9bed1a229be7be1c30b971ac19148":[12,0,1,0,6,41,5,8],
-"high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3":[12,0,1,0,6,41,5,24],
-"high__speed__logger__direct__memory_8c.html#a2034ae0d8b7e2561e4d3298485dbd663":[12,0,1,0,6,41,5,64],
-"high__speed__logger__direct__memory_8c.html#a2305feff659b35bd3c839234846d8a6b":[12,0,1,0,6,41,5,49],
-"high__speed__logger__direct__memory_8c.html#a263a3ca74d86aa43af1e8f509dee5210":[12,0,1,0,6,41,5,13],
-"high__speed__logger__direct__memory_8c.html#a2f15d32f0c99e5973bd69d075ff03507":[12,0,1,0,6,41,5,6],
-"high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488":[12,0,1,0,6,41,5,52],
-"high__speed__logger__direct__memory_8c.html#a35eff149a50c56971231854af0d5582b":[12,0,1,0,6,41,5,51],
-"high__speed__logger__direct__memory_8c.html#a3d16f1884eb221df576779b4432750c8":[12,0,1,0,6,41,5,54],
-"high__speed__logger__direct__memory_8c.html#a4c2406e1801a3e53a6395948be08b57e":[12,0,1,0,6,41,5,60],
-"high__speed__logger__direct__memory_8c.html#a505acbcfa5f466fea3d39fa956a06074":[12,0,1,0,6,41,5,7]
+"high__speed__logger__direct__memory_8c.html#a1fb39680405c75bd37906ab8291785a3":[12,0,1,0,6,41,5,24]
 };

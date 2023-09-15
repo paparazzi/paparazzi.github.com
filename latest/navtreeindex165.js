@@ -1,5 +1,15 @@
 var NAVTREEINDEX165 =
 {
+"paparazzi_messages.html#MF_DAQ_STATE":[2,0,195],
+"paparazzi_messages.html#MINIMAL_COM":[2,0,92],
+"paparazzi_messages.html#MISSION_CIRCLE":[2,1,19],
+"paparazzi_messages.html#MISSION_CIRCLE_LLA":[2,1,20],
+"paparazzi_messages.html#MISSION_CUSTOM":[2,1,25],
+"paparazzi_messages.html#MISSION_GOTO_WP":[2,1,17],
+"paparazzi_messages.html#MISSION_GOTO_WP_LLA":[2,1,18],
+"paparazzi_messages.html#MISSION_PATH":[2,1,23],
+"paparazzi_messages.html#MISSION_PATH_LLA":[2,1,24],
+"paparazzi_messages.html#MISSION_SEGMENT":[2,1,21],
 "paparazzi_messages.html#MISSION_SEGMENT_LLA":[2,1,22],
 "paparazzi_messages.html#MISSION_STATUS":[2,0,78],
 "paparazzi_messages.html#MISSION_UPDATE":[2,1,26],
@@ -239,15 +249,5 @@ var NAVTREEINDEX165 =
 "pca9685__i2c_8c.html#a811dbfb0bec32ddec06de3a2e3d3f420":[12,0,1,0,6,51,0,12],
 "pca9685__i2c_8c.html#a84818b8486e16de58d8cec2883945307":[12,0,1,0,6,51,0,16],
 "pca9685__i2c_8c.html#a871ea711723fe79915833e5d22d202fd":[12,0,1,0,6,51,0,15],
-"pca9685__i2c_8c.html#a8e114d9f5b999be7aadca0aea483139e":[12,0,1,0,6,51,0,45],
-"pca9685__i2c_8c.html#a92f3bd2db7bfff2c2a5c6590160e3382":[12,0,1,0,6,51,0,37],
-"pca9685__i2c_8c.html#a95a0a34f616e2e204b0e984318cdfa26":[12,0,1,0,6,51,0,82],
-"pca9685__i2c_8c.html#a96ea1611ac11acba1cd795584ce05b2d":[12,0,1,0,6,51,0,39],
-"pca9685__i2c_8c.html#a97cc3faa5870d4497c2aab14134904c8":[12,0,1,0,6,51,0,3],
-"pca9685__i2c_8c.html#a9bb5c7ba3e64044c70e15e49368f3883":[12,0,1,0,6,51,0,57],
-"pca9685__i2c_8c.html#a9c65e2545d30740a6b0d3fddafe3dce4":[12,0,1,0,6,51,0,9],
-"pca9685__i2c_8c.html#a9e42ab1e55d3d069b2a8458ea2240581":[12,0,1,0,6,51,0,94],
-"pca9685__i2c_8c.html#a9ec8e93499937495b2cae7e05c4e11ac":[12,0,1,0,6,51,0,92],
-"pca9685__i2c_8c.html#aa384ae0e3cf189668bee79a300b409c5":[12,0,1,0,6,51,0,40],
-"pca9685__i2c_8c.html#aa39634542fdb7a94ef89952077354b85":[12,0,1,0,6,51,0,42]
+"pca9685__i2c_8c.html#a8e114d9f5b999be7aadca0aea483139e":[12,0,1,0,6,51,0,45]
 };
