@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"paparazzi_messages.html#MISSION_SEGMENT_LLA":[2,1,22],
+"paparazzi_messages.html#MISSION_STATUS":[2,0,78],
 "paparazzi_messages.html#MISSION_UPDATE":[2,1,26],
 "paparazzi_messages.html#MKK":[2,0,35],
 "paparazzi_messages.html#MLX_SERIAL":[2,0,112],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "pca9685__i2c_8c.html#a9e42ab1e55d3d069b2a8458ea2240581":[12,0,1,0,6,51,0,94],
 "pca9685__i2c_8c.html#a9ec8e93499937495b2cae7e05c4e11ac":[12,0,1,0,6,51,0,92],
 "pca9685__i2c_8c.html#aa384ae0e3cf189668bee79a300b409c5":[12,0,1,0,6,51,0,40],
-"pca9685__i2c_8c.html#aa39634542fdb7a94ef89952077354b85":[12,0,1,0,6,51,0,42],
-"pca9685__i2c_8c.html#aab27ded5419ce4015deb059e486de70e":[12,0,1,0,6,51,0,10],
-"pca9685__i2c_8c.html#aacd5c7bb94631758c46edd69cfa0039a":[12,0,1,0,6,51,0,1]
+"pca9685__i2c_8c.html#aa39634542fdb7a94ef89952077354b85":[12,0,1,0,6,51,0,42]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX151 =
 {
+"nps__electrical_8h.html#a9a38e15f4c115662205d7acfb92db20c":[12,0,1,1,1,8,1],
+"nps__electrical_8h.html#ad1dfbb9e16a1748d8e78fc7ba6e6d50a":[12,0,1,1,1,8,0,0],
 "nps__electrical_8h.html#aec79a7c89cea748d7a4696ad97548796":[12,0,1,1,1,8,2],
 "nps__electrical_8h.html#structNpsElectrical":[12,0,1,1,1,8,0],
 "nps__electrical_8h_source.html":[12,0,1,1,1,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX151 =
 "nps__ins_8h.html#a044e6373c2e63733a079336f584e0846":[12,0,1,1,1,17,4],
 "nps__ins_8h.html#a0a2a344d08ba5b950808e5b48eb15a2f":[12,0,1,1,1,17,0],
 "nps__ins_8h.html#a37df16d56213486a430d45f925225c71":[12,0,1,1,1,17,2],
-"nps__ins_8h.html#a89c3c505d205dced5e7dc45d0e629cb8":[12,0,1,1,1,17,3],
-"nps__ins_8h_source.html":[12,0,1,1,1,17],
-"nps__ins__vectornav_8c.html":[12,0,1,1,1,18]
+"nps__ins_8h.html#a89c3c505d205dced5e7dc45d0e629cb8":[12,0,1,1,1,17,3]
 };

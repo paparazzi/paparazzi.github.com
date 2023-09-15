@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"module__gps_ublox.html#datalink_functions__gps_ublox":[1,152,3],
+"module__gps_ublox.html#functions__gps_ublox":[1,152,2],
 "module__gps_ublox.html#module_load_example__gps_ublox":[1,152,0],
 "module__gps_ublox.html#module_xml__gps_ublox":[1,152,3,0],
 "module__gps_ubx_i2c.html":[1,153],
@@ -247,7 +249,5 @@ var NAVTREEINDEX129 =
 "module__imu_mpu6000_hmc5883.html":[1,195],
 "module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,195,1],
 "module__imu_mpu6000_hmc5883.html#functions__imu_mpu6000_hmc5883":[1,195,2],
-"module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,195,0],
-"module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,195,2,0],
-"module__imu_mpu60x0_i2c.html":[1,196]
+"module__imu_mpu6000_hmc5883.html#module_load_example__imu_mpu6000_hmc5883":[1,195,0]
 };

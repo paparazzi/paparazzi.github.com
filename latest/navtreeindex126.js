@@ -1,5 +1,7 @@
 var NAVTREEINDEX126 =
 {
+"module__actuators_ardrone2.html":[1,2],
+"module__actuators_ardrone2.html#module_load_example__actuators_ardrone2":[1,2,0],
 "module__actuators_ardrone2.html#module_xml__actuators_ardrone2":[1,2,0,0],
 "module__actuators_asctec_v2.html":[1,3],
 "module__actuators_asctec_v2.html#configuration__actuators_asctec_v2":[1,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX126 =
 "module__baro_board_common.html#files":[1,370,3],
 "module__baro_board_common.html#functions__baro_board_common":[1,370,2],
 "module__baro_board_common.html#headers":[1,370,3,0],
-"module__baro_board_common.html#init_functions":[1,370,2,0],
-"module__baro_board_common.html#module_load_example__baro_board_common":[1,370,0],
-"module__baro_board_common.html#module_xml__baro_board_common":[1,370,3,2]
+"module__baro_board_common.html#init_functions":[1,370,2,0]
 };

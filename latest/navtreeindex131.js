@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__logger_file.html#configuration__logger_file":[1,243,1],
+"module__logger_file.html#functions__logger_file":[1,243,2],
 "module__logger_file.html#module_load_example__logger_file":[1,243,0],
 "module__logger_file.html#module_xml__logger_file":[1,243,2,0],
 "module__logger_sd_chibios.html":[1,244],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,327,1],
 "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,327,2],
 "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,327,0],
-"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,327,2,0],
-"module__nav_survey_zamboni.html":[1,328],
-"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,328,0]
+"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,327,2,0]
 };
