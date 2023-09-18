@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a">  167</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a">pprz_svd_float</a>(<span class="keywordtype">float</span> **a, <span class="keywordtype">float</span> *w, <span class="keywordtype">float</span> **v, <span class="keywordtype">int</span> <a class="code" href="namespacesimple__quad__sim.html#aa74291aa67f0cfeebac5b8133966d9bf">m</a>, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">/* Householder reduction to bidiagonal form. */</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">int</span> flag, i, its, j, jj, k, l, NM;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">int</span> flag, i, its, j, jj, k, l, NM = 0;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">float</span> C, F, <a class="code" href="mag__calib__ukf_8c.html#a6a6823a0d1f6a9d33e408b51e6b43b47">H</a>, S, <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a7d962e80b5e299c449b5dca8bcca9f64">X</a>, <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">Y</a>, <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a4c4a2af3a5e6039297df89cf28c51b25">Z</a>, tmp;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">float</span> G = 0.0;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">float</span> Scale = 0.0;</div>
@@ -818,7 +818,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__matrix__decomp__float_8c.html">pprz_matrix_decomp_float.c</a></li>
-    <li class="footer">Generated on Fri Sep 15 2023 19:55:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 18 2023 10:14:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
