@@ -17,6 +17,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "airspeed_sdp3x.h", "airspeed__sdp3x_8h.html", "airspeed__sdp3x_8h" ],
     [ "airspeed_uADC.c", "airspeed__uADC_8c.html", "airspeed__uADC_8c" ],
     [ "airspeed_uADC.h", "airspeed__uADC_8h.html", "airspeed__uADC_8h" ],
+    [ "airspeed_uavcan.c", "airspeed__uavcan_8c.html", "airspeed__uavcan_8c" ],
+    [ "airspeed_uavcan.h", "airspeed__uavcan_8h.html", "airspeed__uavcan_8h" ],
     [ "alt_srf08.c", "alt__srf08_8c.html", "alt__srf08_8c" ],
     [ "alt_srf08.h", "alt__srf08_8h.html", "alt__srf08_8h" ],
     [ "aoa_adc.c", "aoa__adc_8c.html", "aoa__adc_8c" ],

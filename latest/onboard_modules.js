@@ -2357,6 +2357,15 @@ var onboard_modules =
         [ "Raw airspeed_uADC.xml file:", "module__airspeed_uadc.html#module_xml__airspeed_uadc", null ]
       ] ]
     ] ],
+    [ "airspeed_uavcan module", "module__airspeed_uavcan.html", [
+      [ "Example for airframe file", "module__airspeed_uavcan.html#module_load_example__airspeed_uavcan", null ],
+      [ "Module configuration options", "module__airspeed_uavcan.html#configuration__airspeed_uavcan", [
+        [ "Define Options", "module__airspeed_uavcan.html#define", null ]
+      ] ],
+      [ "Module functions", "module__airspeed_uavcan.html#functions__airspeed_uavcan", [
+        [ "Raw airspeed_uavcan.xml file:", "module__airspeed_uavcan.html#module_xml__airspeed_uavcan", null ]
+      ] ]
+    ] ],
     [ "alt_srf08 module", "module__alt_srf08.html", [
       [ "Example for airframe file", "module__alt_srf08.html#module_load_example__alt_srf08", null ],
       [ "Module functions", "module__alt_srf08.html#functions__alt_srf08", [
@@ -2392,9 +2401,7 @@ var onboard_modules =
     ] ],
     [ "baro_bmp3 module", "module__baro_bmp3.html", [
       [ "Example for airframe file", "module__baro_bmp3.html#module_load_example__baro_bmp3", null ],
-      [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", [
-        [ "Define Options", "module__baro_bmp3.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__baro_bmp3.html#configuration__baro_bmp3", null ],
       [ "Module functions", "module__baro_bmp3.html#functions__baro_bmp3", [
         [ "Raw baro_bmp3.xml file:", "module__baro_bmp3.html#module_xml__baro_bmp3", null ]
       ] ]

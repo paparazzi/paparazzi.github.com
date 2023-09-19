@@ -117,6 +117,7 @@ var abi__sender__ids_8h =
     [ "RSSI_BLUEGIGA_ID", "abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db", null ],
     [ "SDP3X_SENDER_ID", "abi__sender__ids_8h.html#aaa3985b6f3b689ca90203cb1f3a7e627", null ],
     [ "THRUST_INCREMENT_ID", "abi__sender__ids_8h.html#aef2527d3e072d8a462222ec89d75727c", null ],
+    [ "UAVCAN_SENDER_ID", "abi__sender__ids_8h.html#acc9bb0980e48749dbff9b5fb1b99a1a5", null ],
     [ "UWB_COMM_ID", "abi__sender__ids_8h.html#a0767ff0c7d6c1b310804a717b39b0ed3", null ],
     [ "VEL_DRAGSPEED_ID", "abi__sender__ids_8h.html#afb7e35c059cecd94e6c59c0169ee1ebc", null ],
     [ "VEL_OPTICFLOW_CAM1_ID", "abi__sender__ids_8h.html#aadabae8d5d1128fa313de37fece20267", null ],
