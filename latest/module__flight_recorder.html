@@ -153,7 +153,7 @@ Source Files</h2>
 Raw flight_recorder.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">module</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;module.dtd&quot;</span>&gt;</div>
 <div class="line"> </div>
-<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;loggers&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;core&quot;</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;loggers&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;datalink&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Record</span> <span class="keyword">flight</span> <span class="keyword">data</span> <span class="keyword">according</span> <span class="keyword">to</span> <span class="keyword">your</span> <span class="keyword">telemetry</span> <span class="keyword">file.</span></div>
@@ -177,6 +177,8 @@ Raw flight_recorder.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;flight_recorder.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FLIGHTRECORDER_SDLOG&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifneq (FALSE,$(findstring $(FLIGHTRECORDER_SDLOG),FALSE))&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TELEMETRY_FREQUENCY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;$(PERIODIC_FREQUENCY)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TELEMETRY_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(TELEMETRY_FREQUENCY)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -187,7 +189,7 @@ Raw flight_recorder.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 11:35:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 16:15:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

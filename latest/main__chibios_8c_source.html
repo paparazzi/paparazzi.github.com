@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('main__chibios_8c_source.html',''); ini
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef  SYS_TIME_FREQUENCY</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#error SYS_TIME_FREQUENCY should be defined in Makefile.chibios or airframe.xml and be equal to CH_CFG_ST_FREQUENCY</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#elif  CH_CFG_ST_FREQUENCY &lt; (2 * PERIODIC_FREQUENCY) &amp;&amp; SYS_TIME_FREQUENCY &lt; (2 * PERIODIC_FREQUENCY)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#elif  CH_CFG_ST_FREQUENCY &lt; (2 * PERIODIC_FREQUENCY) || SYS_TIME_FREQUENCY &lt; (2 * PERIODIC_FREQUENCY)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#error CH_CFG_ST_FREQUENCY and SYS_TIME_FREQUENCY should be &gt;= 2 x PERIODIC_FREQUENCY</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('main__chibios_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="main__chibios_8c.html">main_chibios.c</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 11:35:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 16:15:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

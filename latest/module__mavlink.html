@@ -131,7 +131,7 @@ Periodic Functions</h2>
 </ul>
 </li>
 <li><a class="el" href="mavlink_8c.html#ac7325f73108d5d100d6f6b633f90cd40" title="Send periodic mavlink messages as defined in Mavlink process of telemetry xml file.">mavlink_periodic_telemetry()</a><ul>
-<li>Frequency in Hz: <em>TELEMETRY_FREQUENCY</em> </li>
+<li>Running at maximum module frequency.</li>
 <li>Autorun: <em>TRUE</em> <br  />
  Periodic function automatically starts after init.</li>
 </ul>
@@ -157,7 +157,7 @@ Source Files</h2>
 Raw mavlink.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">module</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;module.dtd&quot;</span>&gt;</div>
 <div class="line"> </div>
-<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mavlink&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;datalink&quot;</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mavlink&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;datalink&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;datalink&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Basic</span> <span class="keyword">MAVLink</span> <span class="keyword">implementation</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAVLINK_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx|UDPx|UsbS&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The port device to use for mavlink (default: UART1)&quot;</span>/&gt;</div>
@@ -169,7 +169,7 @@ Raw mavlink.xml file:</h2>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mavlink_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mavlink_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mavlink_periodic_telemetry()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;TELEMETRY_FREQUENCY&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mavlink_periodic_telemetry()&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;mavlink_event()&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
@@ -207,7 +207,7 @@ Raw mavlink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 11:35:53 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 16:15:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
