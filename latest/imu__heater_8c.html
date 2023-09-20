@@ -171,8 +171,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a3a803d686aec37ea84736067667ec881"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__heater_8c.html#a3a803d686aec37ea84736067667ec881">send_imu_heater</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:a3a803d686aec37ea84736067667ec881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the IMU heater message.  <a href="imu__heater_8c.html#a3a803d686aec37ea84736067667ec881">More...</a><br /></td></tr>
 <tr class="separator:a3a803d686aec37ea84736067667ec881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef5dd5118bd3afb16554d29d2145bcd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__heater_8c.html#aaef5dd5118bd3afb16554d29d2145bcd">imu_heater_gyro_raw_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *data, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> samples, float temp)</td></tr>
-<tr class="separator:aaef5dd5118bd3afb16554d29d2145bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c68bad01766f1f2815a69d96261f1a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__heater_8c.html#a1c68bad01766f1f2815a69d96261f1a0">imu_heater_gyro_raw_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *data, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> samples, float rate, float temp)</td></tr>
+<tr class="separator:a1c68bad01766f1f2815a69d96261f1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd0668e6a0c4d7b996f0d365abb9bb70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__heater_8c.html#afd0668e6a0c4d7b996f0d365abb9bb70">imu_heater_init</a> (void)</td></tr>
 <tr class="memdesc:afd0668e6a0c4d7b996f0d365abb9bb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the heater Sets the default gains and resets the initial values.  <a href="imu__heater_8c.html#afd0668e6a0c4d7b996f0d365abb9bb70">More...</a><br /></td></tr>
 <tr class="separator:afd0668e6a0c4d7b996f0d365abb9bb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,8 +269,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaef5dd5118bd3afb16554d29d2145bcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef5dd5118bd3afb16554d29d2145bcd">&#9670;&nbsp;</a></span>imu_heater_gyro_raw_cb()</h2>
+<a id="a1c68bad01766f1f2815a69d96261f1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c68bad01766f1f2815a69d96261f1a0">&#9670;&nbsp;</a></span>imu_heater_gyro_raw_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,6 +306,12 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>temp</em>&#160;</td>
         </tr>
         <tr>
@@ -331,8 +337,8 @@ Variables</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu__heater_8c_aaef5dd5118bd3afb16554d29d2145bcd_icgraph.png" border="0" usemap="#aimu__heater_8c_aaef5dd5118bd3afb16554d29d2145bcd_icgraph" alt=""/></div>
-<map name="aimu__heater_8c_aaef5dd5118bd3afb16554d29d2145bcd_icgraph" id="aimu__heater_8c_aaef5dd5118bd3afb16554d29d2145bcd_icgraph">
+<div class="center"><img src="imu__heater_8c_a1c68bad01766f1f2815a69d96261f1a0_icgraph.png" border="0" usemap="#aimu__heater_8c_a1c68bad01766f1f2815a69d96261f1a0_icgraph" alt=""/></div>
+<map name="aimu__heater_8c_a1c68bad01766f1f2815a69d96261f1a0_icgraph" id="aimu__heater_8c_a1c68bad01766f1f2815a69d96261f1a0_icgraph">
 <area shape="rect" title=" " alt="" coords="177,5,363,32"/>
 <area shape="rect" href="imu__heater_8c.html#afd0668e6a0c4d7b996f0d365abb9bb70" title="Initialize the heater Sets the default gains and resets the initial values." alt="" coords="5,5,129,32"/>
 </map>
@@ -370,7 +376,7 @@ Variables</h2></td></tr>
 <div class="center"><img src="imu__heater_8c_afd0668e6a0c4d7b996f0d365abb9bb70_cgraph.png" border="0" usemap="#aimu__heater_8c_afd0668e6a0c4d7b996f0d365abb9bb70_cgraph" alt=""/></div>
 <map name="aimu__heater_8c_afd0668e6a0c4d7b996f0d365abb9bb70_cgraph" id="aimu__heater_8c_afd0668e6a0c4d7b996f0d365abb9bb70_cgraph">
 <area shape="rect" title="Initialize the heater Sets the default gains and resets the initial values." alt="" coords="5,56,129,83"/>
-<area shape="rect" href="imu__heater_8c.html#aaef5dd5118bd3afb16554d29d2145bcd" title=" " alt="" coords="186,5,371,32"/>
+<area shape="rect" href="imu__heater_8c.html#a1c68bad01766f1f2815a69d96261f1a0" title=" " alt="" coords="186,5,371,32"/>
 <area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="177,56,380,83"/>
 <area shape="rect" href="imu__heater_8c.html#a3a803d686aec37ea84736067667ec881" title="Send the IMU heater message." alt="" coords="211,107,346,133"/>
 </map>
@@ -645,7 +651,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__heater_8c.html">imu_heater.c</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 13:44:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 09:21:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

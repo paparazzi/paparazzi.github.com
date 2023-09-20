@@ -93,12 +93,7 @@ $(document).ready(function(){initNavTree('module__imu_matek_h743_slim.html','');
 <h1><a class="anchor" id="module_load_example__imu_matek_h743_slim"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_matek_h743_slim&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__imu_matek_h743_slim"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__imu_mpu6000.html">imu_mpu6000 module</a> </li>
-</ul>
-<h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="module_xml__imu_matek_h743_slim"></a>
 Raw imu_matek_h743_slim.xml file:</h2>
@@ -111,7 +106,9 @@ Raw imu_matek_h743_slim.xml file:</h2>
 <div class="line">      <span class="keyword">MPU6000</span> <span class="keyword">IMU</span> <span class="keyword">via</span> <span class="keyword">SPI.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">autoload</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_mpu6000&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">imu_mpu6000</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!sim|nps|fbw&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_MPU_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi1&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_MPU_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;SPI_SLAVE5&quot;</span>/&gt;</div>
@@ -130,7 +127,7 @@ Raw imu_matek_h743_slim.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 13:44:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 09:21:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

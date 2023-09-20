@@ -134,6 +134,7 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="invensense2_8c.html">peripherals/invensense2.c</a></li>
+<li><a class="el" href="invensense3_8c.html">peripherals/invensense3.c</a></li>
 <li><a class="el" href="mpu60x0_8c.html">peripherals/mpu60x0.c</a></li>
 <li><a class="el" href="mpu60x0__spi_8c.html">peripherals/mpu60x0_spi.c</a></li>
 <li><a class="el" href="imu__cube_8c.html">modules/imu/imu_cube.c</a></li>
@@ -170,9 +171,9 @@ Raw imu_cube.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU1_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CUBE_IMU1_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(CUBE_IMU1_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">&lt;!-- ICM20602 (isolated) --&gt;</span></div>
+<div class="line">    <span class="comment">&lt;!-- ICM20602 or ICM45686 (isolated) --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_DEV&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;spi4&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;lower|upper&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE3&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;SPI_SLAVE3&quot;</span>/&gt; <span class="comment">&lt;!-- Overwritten to SPI_SLAVE5 for cube+ --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CUBE_IMU2_SPI_DEV_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(CUBE_IMU2_SPI_DEV_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CUBE_IMU2_SPI_SLAVE_IDX)&quot;</span>/&gt;</div>
@@ -192,10 +193,31 @@ Raw imu_cube.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_P_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50.0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_I_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.07&quot;</span>/&gt;</div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">&lt;!-- Different IMU for the cube+ --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_CUBE_ORANGEPLUS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(BOARD_VERSION), orange_plus)&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense2.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0_spi.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;invensense3.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(BOARD_VERSION), orange_plus)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(BOARD_VERSION), orange)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mpu60x0_spi.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;peripherals&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(BOARD_VERSION), orange)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_cube.c&quot;</span>/&gt;</div>
+<div class="line"> </div>
+<div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SPI_MASTER&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU1_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU1_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi4&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU2_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU3_SPI_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;spi4&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CUBE_IMU3_SPI_SLAVE_IDX&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI4&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_SPI_SLAVE2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;512&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_CUBE_PERIODIC_FREQ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;512&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -205,7 +227,7 @@ Raw imu_cube.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 13:44:59 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 09:21:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

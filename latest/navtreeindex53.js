@@ -1,5 +1,8 @@
 var NAVTREEINDEX53 =
 {
+"esc__dshot_8h.html#unionDshotPacket":[12,0,1,0,0,0,1,0,5,3],
+"esc__dshot_8h.html#unionDshotTelemetry_8____unnamed2____":[12,0,1,0,0,0,1,0,5,6],
+"esc__dshot_8h_source.html":[12,0,1,0,0,0,1,0,5],
 "exif__module_8c.html":[12,0,1,0,6,11,1,1,0],
 "exif__module_8c.html#a33f666eb1ed715055dc63e475f2e754e":[12,0,1,0,6,11,1,1,0,8],
 "exif__module_8c.html#a4f8a19ec0c9a1af5b68b3d4daba768db":[12,0,1,0,6,11,1,1,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX53 =
 "fixedwing_2autopilot__static_8h.html#a441d493d96e925f5d95d208b6d88ec12":[12,0,1,0,3,1,9,5],
 "fixedwing_2autopilot__static_8h.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24":[12,0,1,0,3,1,9,8],
 "fixedwing_2autopilot__static_8h.html#a79f823520ea0823e20084686978281e6":[12,0,1,0,3,1,9,14],
-"fixedwing_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6":[12,0,1,0,3,1,9,10],
-"fixedwing_2autopilot__static_8h.html#a88bb7604ef7a4e00b81fbf760a2ecd01":[12,0,1,0,3,1,9,4],
-"fixedwing_2autopilot__static_8h.html#a940a27ef24c6bd37e1a0dae1f651ba96":[12,0,1,0,3,1,9,2],
-"fixedwing_2autopilot__static_8h.html#a992e6194ee1d6c879faa66e51b72840a":[12,0,1,0,3,1,9,6]
+"fixedwing_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6":[12,0,1,0,3,1,9,10]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d":[12,0,1,0,6,2,3,6],
 "ahrs__aligner_8h.html#aaf9f84dd40ecc27b22541b3e22096c98":[12,0,1,0,6,2,3,0,3],
 "ahrs__aligner_8h.html#abe1c42a62eceda126bf111397c3e7571":[12,0,1,0,6,2,3,0,2],
 "ahrs__aligner_8h.html#abfbd315f6a7fc5b98831eb3741d07e55":[12,0,1,0,6,2,3,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "ahrs__float__invariant_8c_source.html":[12,0,1,0,6,2,16],
 "ahrs__float__invariant_8h.html":[12,0,1,0,6,2,17],
 "ahrs__float__invariant_8h.html#a1381bfad9d32941968667b05c9f0e620":[12,0,1,0,6,2,17,8],
-"ahrs__float__invariant_8h.html#a17b0a367a9de50dd79389a4cfef2dba8":[12,0,1,0,6,2,17,14],
-"ahrs__float__invariant_8h.html#a25943b331121e2836b4afdbce428b942":[12,0,1,0,6,2,17,5,5]
+"ahrs__float__invariant_8h.html#a17b0a367a9de50dd79389a4cfef2dba8":[12,0,1,0,6,2,17,14]
 };

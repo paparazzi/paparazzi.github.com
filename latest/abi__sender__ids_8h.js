@@ -74,6 +74,7 @@ var abi__sender__ids_8h =
     [ "IMU_F1E_ID", "abi__sender__ids_8h.html#ac71edc14a08cbfebbea3b4bfeb69cb3c", null ],
     [ "IMU_GL1_ID", "abi__sender__ids_8h.html#a4e112b1b877a642d6c35185d24bbcbe3", null ],
     [ "IMU_GX3_ID", "abi__sender__ids_8h.html#aa5a9a9327bda377c289472bcfb2477f3", null ],
+    [ "IMU_ICM42688_ID", "abi__sender__ids_8h.html#ab4e27f4fe45e858a4755b1d272475a97", null ],
     [ "IMU_MAG_PITOT_ID", "abi__sender__ids_8h.html#a57aa88225237bd212cfe064d25674817", null ],
     [ "IMU_MPU6000_HMC_ID", "abi__sender__ids_8h.html#a208f896d9b56d8b1f32440d576716df9", null ],
     [ "IMU_MPU6000_ID", "abi__sender__ids_8h.html#af77c469fd401327856d680914d69bd84", null ],

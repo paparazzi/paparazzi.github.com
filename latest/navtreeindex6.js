@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"ahrs__float__invariant_8h.html#a25943b331121e2836b4afdbce428b942":[12,0,1,0,6,2,17,5,5],
 "ahrs__float__invariant_8h.html#a31154c830fe4c8729366f9c9606fe775":[12,0,1,0,6,2,17,7],
 "ahrs__float__invariant_8h.html#a3f6eff164afe46bed763cc3719a3e9e4":[12,0,1,0,6,2,17,6],
 "ahrs__float__invariant_8h.html#a4111f176cb3e28593c2ff388169a86f9":[12,0,1,0,6,2,17,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "ahrs__madgwick_8h.html#aa9cd15a31ba3e64e0c81544c381f4026":[12,0,1,0,6,2,31,0,0],
 "ahrs__madgwick_8h.html#aad35ef1d8e209a830a0c77d488e56dcc":[12,0,1,0,6,2,31,1],
 "ahrs__madgwick_8h.html#ac9e0680c84358fcf73f0d872defdc0c1":[12,0,1,0,6,2,31,0,3],
-"ahrs__madgwick_8h.html#af307f45bc538474d935eff416bdf24e3":[12,0,1,0,6,2,31,2],
-"ahrs__madgwick_8h.html#aff027983bc3ce04b37cc1772cd92da25":[12,0,1,0,6,2,31,0,1]
+"ahrs__madgwick_8h.html#af307f45bc538474d935eff416bdf24e3":[12,0,1,0,6,2,31,2]
 };

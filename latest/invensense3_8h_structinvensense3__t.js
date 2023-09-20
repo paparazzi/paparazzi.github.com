@@ -1,0 +1,26 @@
+var invensense3_8h_structinvensense3__t =
+[
+    [ "abi_id", "invensense3_8h.html#aec7f73e2eda8dcf25ff23ae7d001d5d2", null ],
+    [ "accel_aaf", "invensense3_8h.html#a672316e8c9b9c828254ef58f47a72159", null ],
+    [ "accel_aaf_regs", "invensense3_8h.html#af0fee2e95a1489035f2fbf9daca6505e", null ],
+    [ "accel_odr", "invensense3_8h.html#a86bfe8cf0725729f50c9a3c6b1281410", null ],
+    [ "accel_range", "invensense3_8h.html#ac8f066387c57c7fefa4e35ae36947346", null ],
+    [ "accel_samplerate", "invensense3_8h.html#ac2810dc52e447d5ca1de536997db30fc", null ],
+    [ "bus", "invensense3_8h.html#a9506f2ea8112559521fbea202a28fd34", null ],
+    [ "config_idx", "invensense3_8h.html#a96743718572dc5257a5c1516dbf98073", null ],
+    [ "device", "invensense3_8h.html#abb1a234e7655d3dc3dc2605c0b8938a8", null ],
+    [ "gyro_aaf", "invensense3_8h.html#af275109cdeb83d48d6d4d1b603115796", null ],
+    [ "gyro_aaf_regs", "invensense3_8h.html#aea52cf66e32274d937594510b2dde856", null ],
+    [ "gyro_odr", "invensense3_8h.html#af2bc173f9c3073039161c3bbf7c7f799", null ],
+    [ "gyro_range", "invensense3_8h.html#a02f43b43d108de59511905a74b626137", null ],
+    [ "gyro_samplerate", "invensense3_8h.html#ac005d687a19fcf8e2865e452b1e6bb86", null ],
+    [ "parser", "invensense3_8h.html#a5698e60e2c703d7c40cdf08746ad7e7f", null ],
+    [ "register_bank", "invensense3_8h.html#a1c8912c619d09a5122279390b7438474", null ],
+    [ "rx_buffer", "invensense3_8h.html#a9acd6d97c38ac20b4c2701a5d9ee389f", null ],
+    [ "rx_length", "invensense3_8h.html#a289f30edd1eb38015956c43794030193", null ],
+    [ "sample_numbers", "invensense3_8h.html#ab762236c417a7a641114ac801bbc196f", null ],
+    [ "sample_size", "invensense3_8h.html#ac902b96263ea2d8670239c0d9ec9d6eb", null ],
+    [ "status", "invensense3_8h.html#a2000346e68e4c57de4690392ab9bc1fa", null ],
+    [ "timer", "invensense3_8h.html#a7f5221e01416b2c22c93ea73e9660c28", null ],
+    [ "tx_buffer", "invensense3_8h.html#ac09b370e049a747bc8222aa29afd3615", null ]
+];

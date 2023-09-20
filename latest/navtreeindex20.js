@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__threshold":[12,0,1,0,1,2,0,0,16,11],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__circle__pos__x__center":[12,0,1,0,1,2,0,0,16,4],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__circle__pos__x__squared":[12,0,1,0,1,2,0,0,16,5],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__circle__pos__y__center":[12,0,1,0,1,2,0,0,16,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b":[12,0,1,0,1,24,1],
 "baro__board__ms5611__i2c_8c.html#a54223cd96d37f2a235ffe717bf5b4423":[12,0,1,0,1,24,5],
 "baro__board__ms5611__i2c_8c.html#a9b25546908842f1d38fc56e438d46e21":[12,0,1,0,1,24,3],
-"baro__board__ms5611__i2c_8c.html#abd7fdff82b87848ef3a165026d497cd4":[12,0,1,0,1,24,0],
-"baro__board__ms5611__i2c_8c_source.html":[12,0,1,0,1,24]
+"baro__board__ms5611__i2c_8c.html#abd7fdff82b87848ef3a165026d497cd4":[12,0,1,0,1,24,0]
 };

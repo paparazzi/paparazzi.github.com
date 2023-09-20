@@ -369,8 +369,8 @@ $(document).ready(function(){initNavTree('invensense2_8c_source.html',''); initR
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="comment">// Send the scaled values over ABI</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  AbiSendMsgIMU_GYRO_RAW(inv-&gt;<a class="code" href="invensense2_8h.html#ae9a71ac09de206c4d99065b54254eba0">abi_id</a>, now_ts, gyro, samples, temp_f);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  AbiSendMsgIMU_ACCEL_RAW(inv-&gt;<a class="code" href="invensense2_8h.html#ae9a71ac09de206c4d99065b54254eba0">abi_id</a>, now_ts, accel, j, temp_f);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  AbiSendMsgIMU_GYRO_RAW(inv-&gt;<a class="code" href="invensense2_8h.html#ae9a71ac09de206c4d99065b54254eba0">abi_id</a>, now_ts, gyro, samples, gyro_samplerate, temp_f);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  AbiSendMsgIMU_ACCEL_RAW(inv-&gt;<a class="code" href="invensense2_8h.html#ae9a71ac09de206c4d99065b54254eba0">abi_id</a>, now_ts, accel, j, accel_samplerate, temp_f);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9">  326</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="invensense2_8c.html#ab69057e99231a05b0440c1b3396a28b9">invensense2_fix_config</a>(<span class="keyword">struct</span> <a class="code" href="invensense2_8h.html#structinvensense2__t">invensense2_t</a> *inv) {</div>
@@ -696,7 +696,7 @@ $(document).ready(function(){initNavTree('invensense2_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="invensense2_8c.html">invensense2.c</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 13:44:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 09:21:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1237,6 +1237,13 @@ var onboard_modules =
         [ "Raw imu_heater.xml file:", "module__imu_heater.html#module_xml__imu_heater", null ]
       ] ]
     ] ],
+    [ "imu_icm42688 module", "module__imu_icm42688.html", [
+      [ "Example for airframe file", "module__imu_icm42688.html#module_load_example__imu_icm42688", null ],
+      [ "Module configuration options", "module__imu_icm42688.html#configuration__imu_icm42688", null ],
+      [ "Module functions", "module__imu_icm42688.html#functions__imu_icm42688", [
+        [ "Raw imu_icm42688.xml file:", "module__imu_icm42688.html#module_xml__imu_icm42688", null ]
+      ] ]
+    ] ],
     [ "imu_lisa_m_v2.1 module", "module__imu_lisa_m_v2_1.html", [
       [ "Example for airframe file", "module__imu_lisa_m_v2_1.html#module_load_example__imu_lisa_m_v2_1", null ],
       [ "Module configuration options", "module__imu_lisa_m_v2_1.html#configuration__imu_lisa_m_v2_1", [
@@ -1255,8 +1262,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_matek_h743_slim module", "module__imu_matek_h743_slim.html", [
-      [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", null ],
-      [ "Auto-loaded modules", "module__imu_matek_h743_slim.html#autoloads__imu_matek_h743_slim", [
+      [ "Example for airframe file", "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim", [
         [ "Raw imu_matek_h743_slim.xml file:", "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim", null ]
       ] ]
     ] ],

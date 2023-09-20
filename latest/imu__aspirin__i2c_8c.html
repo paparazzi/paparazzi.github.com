@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('imu__aspirin__i2c_8c.html',''); initRe
 <code>#include &quot;<a class="el" href="imu_8h_source.html">modules/imu/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
+<code>#include &quot;generated/modules.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_aspirin_i2c.c:</div>
@@ -107,34 +108,35 @@ $(document).ready(function(){initNavTree('imu__aspirin__i2c_8c.html',''); initRe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__aspirin__i2c_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2imu_2imu__aspirin__i2c_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2imu_2imu__aspirin__i2c_8c" id="asw_2airborne_2modules_2imu_2imu__aspirin__i2c_8c">
-<area shape="rect" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1215,5,1383,47"/>
-<area shape="rect" href="imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="821,95,1007,136"/>
-<area shape="rect" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="495,184,643,211"/>
-<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="1105,355,1238,382"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1551,102,1698,129"/>
-<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1355,102,1497,129"/>
-<area shape="rect" title=" " alt="" coords="547,266,707,293"/>
-<area shape="rect" href="itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense." alt="" coords="926,266,1086,293"/>
-<area shape="rect" href="hmc58xx_8h.html" title=" " alt="" coords="731,266,902,293"/>
-<area shape="rect" href="adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="1111,259,1261,300"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="443,355,623,382"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="95,355,287,382"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="305,259,472,300"/>
-<area shape="rect" title=" " alt="" coords="841,527,896,553"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="267,445,423,471"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="597,445,751,471"/>
-<area shape="rect" title=" " alt="" coords="499,445,569,471"/>
-<area shape="rect" title=" " alt="" coords="181,527,244,553"/>
-<area shape="rect" title=" " alt="" coords="309,527,380,553"/>
-<area shape="rect" title=" " alt="" coords="5,527,73,553"/>
-<area shape="rect" title=" " alt="" coords="85,445,242,471"/>
-<area shape="rect" href="itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros." alt="" coords="932,348,1080,389"/>
-<area shape="rect" title=" " alt="" coords="966,445,1134,471"/>
-<area shape="rect" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers." alt="" coords="647,348,805,389"/>
-<area shape="rect" href="adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="1313,355,1475,382"/>
-<area shape="rect" href="adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="1313,437,1464,479"/>
-<area shape="rect" title=" " alt="" coords="1591,184,1717,211"/>
-<area shape="rect" title=" " alt="" coords="1337,184,1515,211"/>
+<area shape="rect" title="Driver for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="1114,5,1282,47"/>
+<area shape="rect" href="imu__aspirin__i2c_8h.html" title="Interface for the Aspirin v1.x IMU using I2C for the accelerometer." alt="" coords="858,95,1045,136"/>
+<area shape="rect" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="516,184,664,211"/>
+<area shape="rect" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="1109,355,1242,382"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1538,102,1685,129"/>
+<area shape="rect" title=" " alt="" coords="1350,102,1510,129"/>
+<area shape="rect" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1183,102,1325,129"/>
+<area shape="rect" title=" " alt="" coords="569,266,729,293"/>
+<area shape="rect" href="itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense." alt="" coords="753,266,913,293"/>
+<area shape="rect" href="hmc58xx_8h.html" title=" " alt="" coords="1173,266,1343,293"/>
+<area shape="rect" href="adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C." alt="" coords="937,259,1088,300"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="444,355,624,382"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="122,355,314,382"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="324,259,491,300"/>
+<area shape="rect" title=" " alt="" coords="832,527,887,553"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="265,445,421,471"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="592,445,745,471"/>
+<area shape="rect" title=" " alt="" coords="497,445,568,471"/>
+<area shape="rect" title=" " alt="" coords="5,527,68,553"/>
+<area shape="rect" title=" " alt="" coords="308,527,379,553"/>
+<area shape="rect" title=" " alt="" coords="175,527,243,553"/>
+<area shape="rect" title=" " alt="" coords="83,445,241,471"/>
+<area shape="rect" href="itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros." alt="" coords="648,348,796,389"/>
+<area shape="rect" title=" " alt="" coords="1149,445,1317,471"/>
+<area shape="rect" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers." alt="" coords="1267,348,1425,389"/>
+<area shape="rect" href="adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="922,355,1085,382"/>
+<area shape="rect" href="adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="923,437,1073,479"/>
+<area shape="rect" title=" " alt="" coords="1552,184,1679,211"/>
+<area shape="rect" title=" " alt="" coords="1173,184,1351,211"/>
 </map>
 </div>
 </div>
@@ -187,7 +189,7 @@ Variables</h2></td></tr>
 
 <p>adxl345 accelerometer output rate, lowpass is set to half of rate </p>
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00046">46</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00047">47</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -205,7 +207,7 @@ Variables</h2></td></tr>
 
 <p>gyro internal lowpass frequency </p>
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00059">59</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00060">60</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -223,7 +225,7 @@ Variables</h2></td></tr>
 
 <p>gyro sample rate divider </p>
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00072">72</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00073">73</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -239,7 +241,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00039">39</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00040">40</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -260,9 +262,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00151">151</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00152">152</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="adxl345__i2c_8c_source.html#l00114">adxl345_i2c_event()</a>, <a class="el" href="adxl345__i2c_8h.html#a00877bdde0990f52fd62aa8880c47f05">Adxl345_I2c::data</a>, <a class="el" href="hmc58xx_8h.html#a3c19435ba67a4ae0a7a8f3330b67735c">Hmc58xx::data</a>, <a class="el" href="itg3200_8h.html#a6639a12e7ae15eea762f611de8f63f20">Itg3200::data</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00044">Adxl345_I2c::data_available</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="itg3200_8h_source.html#l00075">Itg3200::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00082">imu_aspirin</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00307">IMU_ASPIRIN_ID</a>, <a class="el" href="itg3200_8c_source.html#l00126">itg3200_event()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="adxl345__i2c_8c_source.html#l00114">adxl345_i2c_event()</a>, <a class="el" href="adxl345__i2c_8h.html#a00877bdde0990f52fd62aa8880c47f05">Adxl345_I2c::data</a>, <a class="el" href="hmc58xx_8h.html#a3c19435ba67a4ae0a7a8f3330b67735c">Hmc58xx::data</a>, <a class="el" href="itg3200_8h.html#ad1b0802f301c51ffe418dbd234720b01">Itg3200::data</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00044">Adxl345_I2c::data_available</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="itg3200_8h_source.html#l00075">Itg3200::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00083">imu_aspirin</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00307">IMU_ASPIRIN_ID</a>, <a class="el" href="itg3200_8c_source.html#l00126">itg3200_event()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -305,9 +307,9 @@ Variables</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00084">84</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00085">85</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="navdata_8c_source.html#l00100">accel_scale</a>, <a class="el" href="adxl345__regs_8h_source.html#l00032">ADXL345_ADDR</a>, <a class="el" href="adxl345__i2c_8c_source.html#l00036">adxl345_i2c_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00046">ASPIRIN_ACCEL_RATE</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00059">ASPIRIN_GYRO_LOWPASS</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00072">ASPIRIN_GYRO_SMPLRT_DIV</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00039">ASPIRIN_I2C_DEV</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00049">Adxl345_I2c::config</a>, <a class="el" href="itg3200_8h_source.html#l00080">Itg3200::config</a>, <a class="el" href="itg3200_8h_source.html#l00055">Itg3200Config::dlpf_cfg</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00098">gpio_set()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="navdata_8c_source.html#l00092">gyro_scale</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="hmc58xx_8h_source.html#l00056">HMC_TYPE_5843</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00082">imu_aspirin</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00307">IMU_ASPIRIN_ID</a>, <a class="el" href="imu_8c_source.html#l00440">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00410">imu_set_defaults_gyro()</a>, <a class="el" href="itg3200__regs_8h_source.html#l00031">ITG3200_ADDR</a>, <a class="el" href="itg3200_8c_source.html#l00049">itg3200_init()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>, <a class="el" href="adxl345_8h_source.html#l00053">Adxl345Config::rate</a>, <a class="el" href="itg3200_8h_source.html#l00053">Itg3200Config::smplrt_div</a>, and <a class="el" href="hmc58xx_8h_source.html#l00071">Hmc58xx::type</a>.</p>
+<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="navdata_8c_source.html#l00100">accel_scale</a>, <a class="el" href="adxl345__regs_8h_source.html#l00032">ADXL345_ADDR</a>, <a class="el" href="adxl345__i2c_8c_source.html#l00036">adxl345_i2c_init()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00047">ASPIRIN_ACCEL_RATE</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00060">ASPIRIN_GYRO_LOWPASS</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00073">ASPIRIN_GYRO_SMPLRT_DIV</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00040">ASPIRIN_I2C_DEV</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00049">Adxl345_I2c::config</a>, <a class="el" href="itg3200_8h_source.html#l00080">Itg3200::config</a>, <a class="el" href="itg3200_8h_source.html#l00055">Itg3200Config::dlpf_cfg</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00098">gpio_set()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="navdata_8c_source.html#l00092">gyro_scale</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="hmc58xx_8h_source.html#l00056">HMC_TYPE_5843</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00083">imu_aspirin</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00307">IMU_ASPIRIN_ID</a>, <a class="el" href="imu_8c_source.html#l00440">imu_set_defaults_accel()</a>, <a class="el" href="imu_8c_source.html#l00410">imu_set_defaults_gyro()</a>, <a class="el" href="itg3200__regs_8h_source.html#l00031">ITG3200_ADDR</a>, <a class="el" href="itg3200_8c_source.html#l00049">itg3200_init()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>, <a class="el" href="adxl345_8h_source.html#l00053">Adxl345Config::rate</a>, <a class="el" href="itg3200_8h_source.html#l00053">Itg3200Config::smplrt_div</a>, and <a class="el" href="hmc58xx_8h_source.html#l00071">Hmc58xx::type</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -353,9 +355,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00140">140</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00141">141</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
-<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00059">adxl345_i2c_periodic()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00082">imu_aspirin</a>, <a class="el" href="itg3200_8h_source.html#l00093">itg3200_periodic()</a>, and <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>.</p>
+<p class="reference">References <a class="el" href="imu__aspirin__i2c_8h_source.html#l00041">ImuAspirinI2c::acc_adxl</a>, <a class="el" href="adxl345__i2c_8h_source.html#l00059">adxl345_i2c_periodic()</a>, <a class="el" href="imu__aspirin__i2c_8h_source.html#l00042">ImuAspirinI2c::gyro_itg</a>, <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00083">imu_aspirin</a>, <a class="el" href="itg3200_8h_source.html#l00093">itg3200_periodic()</a>, and <a class="el" href="imu__aspirin__i2c_8h_source.html#l00043">ImuAspirinI2c::mag_hmc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -401,7 +403,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="imu__aspirin__i2c_8c_source.html#l00001">1</a> of file <a class="el" href="imu__aspirin__i2c_8c_source.html">imu_aspirin_i2c.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="imu__aspirin__i2c_8c_source.html#l00151">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00084">imu_aspirin_i2c_init()</a>, and <a class="el" href="imu__aspirin__i2c_8c_source.html#l00140">imu_aspirin_i2c_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="imu__aspirin__i2c_8c_source.html#l00152">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00085">imu_aspirin_i2c_init()</a>, and <a class="el" href="imu__aspirin__i2c_8c_source.html#l00141">imu_aspirin_i2c_periodic()</a>.</p>
 
 </div>
 </div>
@@ -411,7 +413,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_fcd55c2d9795129c53a601ffc56fe50e.html">imu</a></li><li class="navelem"><a class="el" href="imu__aspirin__i2c_8c.html">imu_aspirin_i2c.c</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 13:44:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 09:21:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

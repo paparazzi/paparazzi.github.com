@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"ahrs__madgwick_8h.html#aff027983bc3ce04b37cc1772cd92da25":[12,0,1,0,6,2,31,0,1],
 "ahrs__madgwick_8h.html#structAhrsMadgwick":[12,0,1,0,6,2,31,0],
 "ahrs__madgwick_8h_source.html":[12,0,1,0,6,2,31],
 "ahrs__madgwick__wrapper_8c.html":[12,0,1,0,6,2,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "airspeed__ets_8c.html#aec292cf6d9ce120148d1de36a82cbd10":[12,0,1,0,6,60,7,0],
 "airspeed__ets_8c_source.html":[12,0,1,0,6,60,7],
 "airspeed__ets_8h.html":[12,0,1,0,6,60,8],
-"airspeed__ets_8h.html#a513caa9626faf5f98e1c53e64299f668":[12,0,1,0,6,60,8,4],
-"airspeed__ets_8h.html#a5b8d889aa0c63db46fe4465ba6c8fffb":[12,0,1,0,6,60,8,7]
+"airspeed__ets_8h.html#a513caa9626faf5f98e1c53e64299f668":[12,0,1,0,6,60,8,4]
 };

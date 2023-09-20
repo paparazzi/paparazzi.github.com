@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"apogee__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a":[12,0,1,0,1,22,160],
 "apogee__1_80_8h.html#a6404fc57b2246acd54fe7539e29aa9a6":[12,0,1,0,1,22,130],
 "apogee__1_80_8h.html#a665cb015c3504e5dcfd386c518de25c0":[12,0,1,0,1,22,122],
 "apogee__1_80_8h.html#a6794bf37bfcee74c487ca30fc674a229":[12,0,1,0,1,22,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#ad38c7c220eeb11d884a7c4c6779f3bda":[12,0,1,0,0,2,1,3,1,14],
 "arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#ae73eb249a7855e34f52f6b873bb64807":[12,0,1,0,0,2,1,3,1,11],
 "arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#ae7750310e4b912dcf8fc7743f820f937":[12,0,1,0,0,2,1,3,1,5],
-"arch_2sim_2modules_2ins_2ins__arduimu__basic_8c_source.html":[12,0,1,0,0,2,1,3,1],
-"arch_2sim_2modules_2radio__control_2rc__datalink_8c.html":[12,0,1,0,0,2,1,4,2]
+"arch_2sim_2modules_2ins_2ins__arduimu__basic_8c_source.html":[12,0,1,0,0,2,1,3,1]
 };

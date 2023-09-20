@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__edge__enhancement__color__reduction__filter_8h.html":[12,0,1,0,1,2,0,0,9],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a0d196ec14cef5af89a40d759e8f85b3b":[12,0,1,0,1,2,0,0,9,5,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a1336b7708077235f4ec3f315aa3660ef":[12,0,1,0,1,2,0,0,9,3,0],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a14a222186096af434c773c66114d747f":[12,0,1,0,1,2,0,0,9,6,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__beta_8____unnamed186____":[12,0,1,0,1,2,0,0,13,26],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem_8____unnamed196____":[12,0,1,0,1,2,0,0,13,31],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem__regs":[12,0,1,0,1,2,0,0,13,17],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed178____":[12,0,1,0,1,2,0,0,13,22],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h__inv_8____unnamed182____":[12,0,1,0,1,2,0,0,13,24]
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed178____":[12,0,1,0,1,2,0,0,13,22]
 };
