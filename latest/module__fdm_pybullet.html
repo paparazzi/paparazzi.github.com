@@ -141,7 +141,7 @@ Raw fdm_pybullet.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;nps|hitl&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">      <span class="keyword">nps.CFLAGS</span> += $(<span class="keyword">shell</span> <span class="keyword">python3-config</span> --<span class="keyword">cflags</span>) -<span class="keyword">fPIE</span></div>
-<div class="line">      <span class="keyword">nps.LDFLAGS</span> += $(<span class="keyword">shell</span> <span class="keyword">python3-config</span> --<span class="keyword">ldflags</span>) -<span class="keyword">lpython3.8</span></div>
+<div class="line">      <span class="keyword">nps.LDFLAGS</span> += $(<span class="keyword">shell</span> <span class="keyword">python3-config</span> --<span class="keyword">ldflags</span> --<span class="keyword">embed</span>) </div>
 <div class="line">      <span class="keyword">nps.CFLAGS</span> += -<span class="keyword">DPAPARAZZI_SRC</span>=\<span class="stringliteral">&quot;$(PAPARAZZI_SRC)\&quot;</span></div>
 <div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nps_fdm_pybullet.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;nps&quot;</span>/&gt;</div>
@@ -155,7 +155,7 @@ Raw fdm_pybullet.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Sep 21 2023 09:29:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 21 2023 12:45:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
