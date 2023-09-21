@@ -2754,6 +2754,13 @@ var onboard_modules =
         [ "Raw switch_uart.xml file:", "module__switch_uart.html#module_xml__switch_uart", null ]
       ] ]
     ] ],
+    [ "sys_id_auto_doublets module", "module__sys_id_auto_doublets.html", [
+      [ "Example for airframe file", "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets", null ],
+      [ "Module configuration options", "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets", null ],
+      [ "Module functions", "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets", [
+        [ "Raw sys_id_auto_doublets.xml file:", "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets", null ]
+      ] ]
+    ] ],
     [ "sys_id_chirp module", "module__sys_id_chirp.html", [
       [ "Example for airframe file", "module__sys_id_chirp.html#module_load_example__sys_id_chirp", null ],
       [ "Module configuration options", "module__sys_id_chirp.html#configuration__sys_id_chirp", null ],

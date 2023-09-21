@@ -268,6 +268,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AHRS_GYRO_BIAS_INT">AHRS_GYRO_BIAS_INT (ID 178)</a></li>
 <li class="level2"><a href="#AEROPROBE">AEROPROBE (ID 179)</a></li>
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
+<li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
@@ -3740,6 +3741,22 @@ FMS_TIME (ID 180)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">delay_ns   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="DOUBLET"></a>
+DOUBLET (ID 183)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">active   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Doublet is active    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">axis   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current doublet axis    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">amplitude   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Amplitude    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">current_value   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Current doublet value    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">doublet_mode_3211   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Mode 3211 enabled   </td></tr>
+</table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
 <table class="markdownTable">
@@ -6733,7 +6750,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 21 2023 12:45:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 21 2023 13:38:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

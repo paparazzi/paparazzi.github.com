@@ -2,7 +2,7 @@ var pprz__doublet_8h_structdoublet__t =
 [
     [ "current_time_s", "pprz__doublet_8h.html#ae91792ccf58fbf70d8faa23bb0292096", null ],
     [ "current_value", "pprz__doublet_8h.html#ab511f944c3ea48c9ee4077a40b53f030", null ],
-    [ "mod3211", "pprz__doublet_8h.html#aa91c81d83cc227715ab5fbdfb197c8b2", null ],
+    [ "mod", "pprz__doublet_8h.html#a8759961e28559d72b9fdb0482024e325", null ],
     [ "t0", "pprz__doublet_8h.html#ad36970eb88b1316c9187867452075d8f", null ],
     [ "t1", "pprz__doublet_8h.html#ac4fc7ed5ed89c931b272f33aed786031", null ],
     [ "t2", "pprz__doublet_8h.html#a1f787b48937fee5a14d62e22189a9026", null ],

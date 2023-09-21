@@ -1,5 +1,11 @@
 var NAVTREEINDEX187 =
 {
+"rover_2navigation_8c.html#afda5d6ecdad02e85658a6f1c94194141":[12,0,1,0,3,3,8,26],
+"rover_2navigation_8c.html#aff35ca4ac1b178feb34fcd9cf117ae6b":[12,0,1,0,3,3,8,18],
+"rover_2navigation_8c_source.html":[12,0,1,0,3,3,8],
+"rover_2navigation_8h.html":[12,0,1,0,3,3,9],
+"rover_2navigation_8h.html#a001e83820118d7d3a58ddd5b0d1f7879":[12,0,1,0,3,3,9,0,3],
+"rover_2navigation_8h.html#a069e6b8f68b2e117cbbe03f29e30a2e3":[12,0,1,0,3,3,9,48],
 "rover_2navigation_8h.html#a0800b5556b46580e64de21b701b78b08":[12,0,1,0,3,3,9,0,18],
 "rover_2navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e":[12,0,1,0,3,3,9,7],
 "rover_2navigation_8h.html#a107204ca2bbc31eaf93c6ceb0e051afe":[12,0,1,0,3,3,9,42],
@@ -243,11 +249,5 @@ var NAVTREEINDEX187 =
 "rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a":[12,0,1,0,6,60,75,1],
 "rpm__sensor_8c.html#ad04e33164164eac39848d671c94e5cec":[12,0,1,0,6,60,75,0],
 "rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177":[12,0,1,0,6,60,75,2],
-"rpm__sensor_8c_source.html":[12,0,1,0,6,60,75],
-"rpm__sensor_8h.html":[12,0,1,0,6,60,76],
-"rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2":[12,0,1,0,6,60,76,3],
-"rpm__sensor_8h.html#a7bd9698aa6ec5ae5e50583a7d0661963":[12,0,1,0,6,60,76,0],
-"rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a":[12,0,1,0,6,60,76,1],
-"rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177":[12,0,1,0,6,60,76,2],
-"rpm__sensor_8h_source.html":[12,0,1,0,6,60,76]
+"rpm__sensor_8c_source.html":[12,0,1,0,6,60,75]
 };
