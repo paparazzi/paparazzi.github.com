@@ -1,5 +1,11 @@
 var NAVTREEINDEX131 =
 {
+"module__imu_apogee.html":[1,170],
+"module__imu_apogee.html#functions__imu_apogee":[1,170,1],
+"module__imu_apogee.html#module_load_example__imu_apogee":[1,170,0],
+"module__imu_apogee.html#module_xml__imu_apogee":[1,170,1,0],
+"module__imu_apogee_mpu9150.html":[1,171],
+"module__imu_apogee_mpu9150.html#configuration__imu_apogee_mpu9150":[1,171,1],
 "module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150":[1,171,0],
 "module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150":[1,171,1,0],
 "module__imu_ardrone2.html":[1,172],
@@ -243,11 +249,5 @@ var NAVTREEINDEX131 =
 "module__ins_skeleton.html#configuration__ins_skeleton":[1,226,1],
 "module__ins_skeleton.html#functions__ins_skeleton":[1,226,2],
 "module__ins_skeleton.html#module_load_example__ins_skeleton":[1,226,0],
-"module__ins_skeleton.html#module_xml__ins_skeleton":[1,226,2,0],
-"module__ins_vectornav.html":[1,227],
-"module__ins_vectornav.html#configuration__ins_vectornav":[1,227,1],
-"module__ins_vectornav.html#functions__ins_vectornav":[1,227,2],
-"module__ins_vectornav.html#module_load_example__ins_vectornav":[1,227,0],
-"module__ins_vectornav.html#module_xml__ins_vectornav":[1,227,2,0],
-"module__ins_vn100.html":[1,228]
+"module__ins_skeleton.html#module_xml__ins_skeleton":[1,226,2,0]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"bmi088_8c_source.html":[12,0,1,0,7,17],
+"bmi088_8h.html":[12,0,1,0,7,18],
+"bmi088_8h.html#a01e9de7ea99be7b180e4f92d1fd6d44a":[12,0,1,0,7,18,15],
+"bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e":[12,0,1,0,7,18,32],
+"bmi088_8h.html#a0f2c05a102caf870f6d6fe0a98d70765":[12,0,1,0,7,18,10],
+"bmi088_8h.html#a141f18820ce1d4e9b4b347ec7342d389":[12,0,1,0,7,18,1],
 "bmi088_8h.html#a1ebc60689c9b9ad5f444a6b275f82eb9":[12,0,1,0,7,18,38],
 "bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8":[12,0,1,0,7,18,39],
 "bmi088_8h.html#a206871d87ca6c1005cf04048f21612d5":[12,0,1,0,7,18,0,1],
@@ -78,8 +84,8 @@ var NAVTREEINDEX23 =
 "bmi088__i2c_8h.html#a923a5de5f24fcb1bdce9a03b8250148c":[12,0,1,0,7,20,0,2],
 "bmi088__i2c_8h.html#aa5b51ce0c76da793600e92a784e262cb":[12,0,1,0,7,20,6],
 "bmi088__i2c_8h.html#aadcaf3a752d023936d0622d750ff0d29":[12,0,1,0,7,20,0,5],
-"bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,20,2,1],
 "bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,20,1,0],
+"bmi088__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,20,2,1],
 "bmi088__i2c_8h.html#abfa0649b89202681ccbf3f75f3aa1565":[12,0,1,0,7,20,3],
 "bmi088__i2c_8h.html#ac81013ece044127aaeefc6c226ac72a2":[12,0,1,0,7,20,0,4],
 "bmi088__i2c_8h.html#ad90e7d47b72b999e8915527178429943":[12,0,1,0,7,20,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX23 =
 "bmp085__regs_8h.html#ac17245d8b96c871793fe870a88eff55a":[12,0,1,0,7,24,21],
 "bmp085__regs_8h.html#ac193a80bbb4343288f30c34306717d4b":[12,0,1,0,7,24,3],
 "bmp085__regs_8h.html#ac2a8c8494bc9512f6d11fe223736995e":[12,0,1,0,7,24,15],
-"bmp085__regs_8h.html#ad46f1b73f4aaf27f1eb6495aab8f6418":[12,0,1,0,7,24,18],
-"bmp085__regs_8h.html#ad6333f6759ee600d611b18cdcad04541":[12,0,1,0,7,24,6],
-"bmp085__regs_8h.html#ada506f04ea72e25110fd49bf52e0e5aa":[12,0,1,0,7,24,5],
-"bmp085__regs_8h.html#ae923a679da4be5e59cd93599bf01935b":[12,0,1,0,7,24,10],
-"bmp085__regs_8h.html#af9d804b3f7acc3ec5c8a84e87214b0c2":[12,0,1,0,7,24,7],
-"bmp085__regs_8h_source.html":[12,0,1,0,7,24],
-"bmp280__i2c_8c.html":[12,0,1,0,7,25]
+"bmp085__regs_8h.html#ad46f1b73f4aaf27f1eb6495aab8f6418":[12,0,1,0,7,24,18]
 };

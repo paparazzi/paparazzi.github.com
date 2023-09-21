@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__lens__shading__correction_8h.html#ae66fb6c2ec75f04387ef3e08b0402340":[12,0,1,0,1,2,0,0,13,0,0],
+"avi__isp__lens__shading__correction_8h.html#aff85593c6af7302cca1455894002e02f":[12,0,1,0,1,2,0,0,13,11,8],
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__alpha_8____unnamed184____":[12,0,1,0,1,2,0,0,13,25],
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__bayer__cfa_8____unnamed170____":[12,0,1,0,1,2,0,0,13,18],
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__beta_8____unnamed186____":[12,0,1,0,1,2,0,0,13,26],
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem_8____unnamed196____":[12,0,1,0,1,2,0,0,13,31],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem__regs":[12,0,1,0,1,2,0,0,13,17],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed178____":[12,0,1,0,1,2,0,0,13,22],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h__inv_8____unnamed182____":[12,0,1,0,1,2,0,0,13,24],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__increments__log2_8____unnamed250____":[12,0,1,0,1,2,0,0,16,28],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__req_8____unnamed232____":[12,0,1,0,1,2,0,0,16,19],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__status_8____unnamed234____":[12,0,1,0,1,2,0,0,16,20],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__regs":[12,0,1,0,1,2,0,0,16,16],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__x_8____unnamed236____":[12,0,1,0,1,2,0,0,16,21],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__y_8____unnamed238____":[12,0,1,0,1,2,0,0,16,22],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__histogram__y":[12,0,1,0,1,2,0,0,16,17],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__nb__valid__y":[12,0,1,0,1,2,0,0,16,10],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__nb__grey__pixels":[12,0,1,0,1,2,0,0,16,15],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__u":[12,0,1,0,1,2,0,0,16,13]
+"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__regs":[12,0,1,0,1,2,0,0,16,16]
 };

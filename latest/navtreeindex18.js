@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"avi__isp__drop_8h.html#af723229de7276cba2260cbe45425ac3f":[12,0,1,0,1,2,0,0,8,1,0],
+"avi__isp__drop_8h.html#af924a9e681f238ee45a243f7527a56aa":[12,0,1,0,1,2,0,0,8,2,0],
+"avi__isp__drop_8h.html#structavi__isp__drop__offset__x_8____unnamed120____":[12,0,1,0,1,2,0,0,8,3],
+"avi__isp__drop_8h.html#structavi__isp__drop__offset__y_8____unnamed122____":[12,0,1,0,1,2,0,0,8,4],
+"avi__isp__drop_8h.html#structavi__isp__drop__regs":[12,0,1,0,1,2,0,0,8,2],
+"avi__isp__drop_8h.html#unionavi__isp__drop__offset__x":[12,0,1,0,1,2,0,0,8,0],
 "avi__isp__drop_8h.html#unionavi__isp__drop__offset__y":[12,0,1,0,1,2,0,0,8,1],
 "avi__isp__drop_8h_source.html":[12,0,1,0,1,2,0,0,8],
 "avi__isp__edge__enhancement__color__reduction__filter_8h.html":[12,0,1,0,1,2,0,0,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "avi__isp__lens__shading__correction_8h.html#adfad5a565ddd7d2d6172f2701ac8d57a":[12,0,1,0,1,2,0,0,13,39],
 "avi__isp__lens__shading__correction_8h.html#ae3e1668916d0e401d35eee4baa3badc0":[12,0,1,0,1,2,0,0,13,19,1],
 "avi__isp__lens__shading__correction_8h.html#ae55432d163a56345109d13dc209c8654":[12,0,1,0,1,2,0,0,13,17,0],
-"avi__isp__lens__shading__correction_8h.html#ae5cb540a6e21170c60296fc489664cac":[12,0,1,0,1,2,0,0,13,32],
-"avi__isp__lens__shading__correction_8h.html#ae66fb6c2ec75f04387ef3e08b0402340":[12,0,1,0,1,2,0,0,13,0,0],
-"avi__isp__lens__shading__correction_8h.html#aff85593c6af7302cca1455894002e02f":[12,0,1,0,1,2,0,0,13,11,8],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__alpha_8____unnamed184____":[12,0,1,0,1,2,0,0,13,25],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__bayer__cfa_8____unnamed170____":[12,0,1,0,1,2,0,0,13,18],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__beta_8____unnamed186____":[12,0,1,0,1,2,0,0,13,26],
-"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem_8____unnamed196____":[12,0,1,0,1,2,0,0,13,31]
+"avi__isp__lens__shading__correction_8h.html#ae5cb540a6e21170c60296fc489664cac":[12,0,1,0,1,2,0,0,13,32]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX194 =
 {
+"sst25vfxxxx_8h.html#a2b0ccc088e712ca98b878291d27cd7fc":[12,0,1,0,7,126,1],
+"sst25vfxxxx_8h.html#a2cc62a53e89b0f3e004518bd854bcf48":[12,0,1,0,7,126,12],
+"sst25vfxxxx_8h.html#a33a81c0a5e3f5f30f49777009c364a54":[12,0,1,0,7,126,0,0],
+"sst25vfxxxx_8h.html#a3c73b27a33b8a4b1de75dc1c8ddb9785":[12,0,1,0,7,126,20],
+"sst25vfxxxx_8h.html#a4f1d5cb01ec45490d365f9bfcfc7bed3":[12,0,1,0,7,126,24],
+"sst25vfxxxx_8h.html#a4ffa0c5d3c5d83e1864c8e18a7611cdd":[12,0,1,0,7,126,0,2],
 "sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623":[12,0,1,0,7,126,23],
 "sst25vfxxxx_8h.html#a5a59ea666265299fffd16e9dc0b7ff07":[12,0,1,0,7,126,10],
 "sst25vfxxxx_8h.html#a60b9e89bdfe50ccfd04250700218193d":[12,0,1,0,7,126,17],
@@ -74,8 +80,8 @@ var NAVTREEINDEX194 =
 "stabilization_8h.html#ac41f248e6265fdcd678691661a7f3c10":[12,0,1,0,3,2,23,13],
 "stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad":[12,0,1,0,3,2,23,19],
 "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a":[12,0,1,0,3,2,23,10],
-"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
 "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
+"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
 "stabilization_8h.html#af997ac8db0c8ededc57d411e8caa47b2":[12,0,1,0,3,2,23,14],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f":[12,0,1,0,3,2,23,3],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i":[12,0,1,0,3,2,23,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX194 =
 "stabilization__attitude__common__int_8h.html#ad199610cbcc6aab8f6782bc22794d89e":[12,0,1,0,3,2,1,4,0,4],
 "stabilization__attitude__common__int_8h.html#structInt32AttitudeGains":[12,0,1,0,3,2,1,4,0],
 "stabilization__attitude__common__int_8h_source.html":[12,0,1,0,3,2,1,4],
-"stabilization__attitude__euler__float_8c.html":[12,0,1,0,3,2,1,5],
-"stabilization__attitude__euler__float_8c.html#a015228f30f34102b8d41c6c08c752cc0":[12,0,1,0,3,2,1,5,14],
-"stabilization__attitude__euler__float_8c.html#a03d27593d891182c04fc5337766733d1":[12,0,1,0,3,2,1,5,5],
-"stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,1,5,4],
-"stabilization__attitude__euler__float_8c.html#a3dfdefa89d767c6a1872b18da76beddc":[12,0,1,0,3,2,1,5,10],
-"stabilization__attitude__euler__float_8c.html#a457dc37242ecee10254c28cb14d56ba7":[12,0,1,0,3,2,1,5,3],
-"stabilization__attitude__euler__float_8c.html#a4b5f85259a4d31fad7fe2ebd9492d576":[12,0,1,0,3,2,1,5,13]
+"stabilization__attitude__euler__float_8c.html":[12,0,1,0,3,2,1,5]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX7 =
 {
+"ahrs__madgwick_8h.html#a6cffc31c9a5475cd6724c3a6039a78b0":[12,0,1,0,6,2,31,4],
+"ahrs__madgwick_8h.html#a7a7cc12e020fe99d43c452dc36cd2432":[12,0,1,0,6,2,31,0,4],
+"ahrs__madgwick_8h.html#aa9cd15a31ba3e64e0c81544c381f4026":[12,0,1,0,6,2,31,0,0],
+"ahrs__madgwick_8h.html#aad35ef1d8e209a830a0c77d488e56dcc":[12,0,1,0,6,2,31,1],
+"ahrs__madgwick_8h.html#ac9e0680c84358fcf73f0d872defdc0c1":[12,0,1,0,6,2,31,0,3],
+"ahrs__madgwick_8h.html#af307f45bc538474d935eff416bdf24e3":[12,0,1,0,6,2,31,2],
 "ahrs__madgwick_8h.html#aff027983bc3ce04b37cc1772cd92da25":[12,0,1,0,6,2,31,0,1],
 "ahrs__madgwick_8h.html#structAhrsMadgwick":[12,0,1,0,6,2,31,0],
 "ahrs__madgwick_8h_source.html":[12,0,1,0,6,2,31],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "airspeed__ets_8c.html#a9ae4d72ff8be91700f01d7ad8fe628a3":[12,0,1,0,6,60,7,10],
 "airspeed__ets_8c.html#abb7d3e50dfe1b063513c305da6d955db":[12,0,1,0,6,60,7,12],
 "airspeed__ets_8c.html#ac3fb6cc666022010b71654cc7a262983":[12,0,1,0,6,60,7,3],
-"airspeed__ets_8c.html#ac7df2f3536354ecc842855a3e76c97fa":[12,0,1,0,6,60,7,20],
-"airspeed__ets_8c.html#ad71d44c9444fad51e74d531792ebea42":[12,0,1,0,6,60,7,15],
-"airspeed__ets_8c.html#ae8a93e4ad91b4d7b05a9adc00810d66c":[12,0,1,0,6,60,7,1],
-"airspeed__ets_8c.html#aec292cf6d9ce120148d1de36a82cbd10":[12,0,1,0,6,60,7,0],
-"airspeed__ets_8c_source.html":[12,0,1,0,6,60,7],
-"airspeed__ets_8h.html":[12,0,1,0,6,60,8],
-"airspeed__ets_8h.html#a513caa9626faf5f98e1c53e64299f668":[12,0,1,0,6,60,8,4]
+"airspeed__ets_8c.html#ac7df2f3536354ecc842855a3e76c97fa":[12,0,1,0,6,60,7,20]
 };

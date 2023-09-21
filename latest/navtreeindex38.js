@@ -1,5 +1,11 @@
 var NAVTREEINDEX38 =
 {
+"crazyflie_2chibios_2v2_81_2board_8h.html#a85a39a1261d7922e0ad7aaf1c2d36f02":[12,0,1,0,1,4,0,0,0,125],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a85cc7f89a91baf8b998240f2d026c35e":[12,0,1,0,1,4,0,0,0,3],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a86d84ad9e9ac21386417f3be60aaaa92":[12,0,1,0,1,4,0,0,0,100],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a87eb0a2d9c873701fa98dc9f572436a7":[12,0,1,0,1,4,0,0,0,228],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a897cb5f17f4e3ab19b3d5d1df77c31fd":[12,0,1,0,1,4,0,0,0,322],
+"crazyflie_2chibios_2v2_81_2board_8h.html#a89fa4656e988e929608905e5de142558":[12,0,1,0,1,4,0,0,0,67],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e":[12,0,1,0,1,4,0,0,0,49],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a8ac977a5042e9153c2b148730fc201ae":[12,0,1,0,1,4,0,0,0,244],
 "crazyflie_2chibios_2v2_81_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9":[12,0,1,0,1,4,0,0,0,289],
@@ -243,11 +249,5 @@ var NAVTREEINDEX38 =
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a54203015c2973969adee1dd719010d3a":[12,0,1,0,1,4,0,0,2,85],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a5498cae29922990f276ed50f25b90884":[12,0,1,0,1,4,0,0,2,181],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[12,0,1,0,1,4,0,0,2,166],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[12,0,1,0,1,4,0,0,2,190],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7":[12,0,1,0,1,4,0,0,2,255],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c":[12,0,1,0,1,4,0,0,2,72],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a58e21948e78c6cf50c04e64363637dd4":[12,0,1,0,1,4,0,0,2,10],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a59976b6c28b2561d2b6bd7e3940ea377":[12,0,1,0,1,4,0,0,2,197],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a5a1f7bc818507d43f4d6592bff2ad486":[12,0,1,0,1,4,0,0,2,2],
-"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a5a90d9b62fd7b1a0180c2aec7d00089d":[12,0,1,0,1,4,0,0,2,88]
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[12,0,1,0,1,4,0,0,2,190]
 };

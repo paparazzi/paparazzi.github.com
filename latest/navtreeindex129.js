@@ -1,5 +1,11 @@
 var NAVTREEINDEX129 =
 {
+"module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,85,0,0],
+"module__ctrl_module_outerloop_demo.html":[1,86],
+"module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,86,0],
+"module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,86,0,0],
+"module__ctrl_windtunnel.html":[1,87],
+"module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,87,1],
 "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel":[1,87,0],
 "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel":[1,87,1,0],
 "module__current_sensor.html":[1,432],
@@ -243,11 +249,5 @@ var NAVTREEINDEX129 =
 "module__formation_flight.html#datalink_functions__formation_flight":[1,293,2],
 "module__formation_flight.html#functions__formation_flight":[1,293,1],
 "module__formation_flight.html#module_load_example__formation_flight":[1,293,0],
-"module__formation_flight.html#module_xml__formation_flight":[1,293,2,0],
-"module__gain_scheduling.html":[1,90],
-"module__gain_scheduling.html#functions__gain_scheduling":[1,90,1],
-"module__gain_scheduling.html#module_load_example__gain_scheduling":[1,90,0],
-"module__gain_scheduling.html#module_xml__gain_scheduling":[1,90,1,0],
-"module__gas_engine_idle.html":[1,441],
-"module__gas_engine_idle.html#functions__gas_engine_idle":[1,441,1]
+"module__formation_flight.html#module_xml__formation_flight":[1,293,2,0]
 };

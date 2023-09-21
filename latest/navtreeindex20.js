@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__x_8____unnamed236____":[12,0,1,0,1,2,0,0,16,21],
+"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__y_8____unnamed238____":[12,0,1,0,1,2,0,0,16,22],
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__histogram__y":[12,0,1,0,1,2,0,0,16,17],
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__nb__valid__y":[12,0,1,0,1,2,0,0,16,10],
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__nb__grey__pixels":[12,0,1,0,1,2,0,0,16,15],
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__u":[12,0,1,0,1,2,0,0,16,13],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__v":[12,0,1,0,1,2,0,0,16,14],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__y":[12,0,1,0,1,2,0,0,16,12],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__threshold":[12,0,1,0,1,2,0,0,16,11],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "baro__board__common_8h.html":[12,0,1,0,6,60,35],
 "baro__board__common_8h.html#a55f55250d4fa4ead474b388b3edf5bb3":[12,0,1,0,6,60,35,0],
 "baro__board__common_8h.html#a63b378088aacd63bd09fb331c875dd91":[12,0,1,0,6,60,35,1],
-"baro__board__common_8h.html#aa018d39cda0714aa4b87955f478380e8":[12,0,1,0,6,60,35,2],
-"baro__board__common_8h_source.html":[12,0,1,0,6,60,35],
-"baro__board__ms5611__i2c_8c.html":[12,0,1,0,1,24],
-"baro__board__ms5611__i2c_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00":[12,0,1,0,1,24,4],
-"baro__board__ms5611__i2c_8c.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,24,2],
-"baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b":[12,0,1,0,1,24,1],
-"baro__board__ms5611__i2c_8c.html#a54223cd96d37f2a235ffe717bf5b4423":[12,0,1,0,1,24,5]
+"baro__board__common_8h.html#aa018d39cda0714aa4b87955f478380e8":[12,0,1,0,6,60,35,2]
 };

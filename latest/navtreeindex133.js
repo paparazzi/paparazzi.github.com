@@ -1,5 +1,11 @@
 var NAVTREEINDEX133 =
 {
+"module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff":[1,301,1,0],
+"module__nav_catapult.html":[1,302],
+"module__nav_catapult.html#configuration__nav_catapult":[1,302,1],
+"module__nav_catapult.html#functions__nav_catapult":[1,302,2],
+"module__nav_catapult.html#module_load_example__nav_catapult":[1,302,0],
+"module__nav_catapult.html#module_xml__nav_catapult":[1,302,2,0],
 "module__nav_cube.html":[1,303],
 "module__nav_cube.html#module_load_example__nav_cube":[1,303,0],
 "module__nav_cube.html#module_xml__nav_cube":[1,303,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX133 =
 "module__radio_control_common.html#module_xml__radio_control_common":[1,342,2,0],
 "module__radio_control_datalink.html":[1,343],
 "module__radio_control_datalink.html#configuration__radio_control_datalink":[1,343,1],
-"module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,343,3],
-"module__radio_control_datalink.html#functions__radio_control_datalink":[1,343,2],
-"module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,343,0],
-"module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,343,3,0],
-"module__radio_control_hott.html":[1,344],
-"module__radio_control_hott.html#configuration__radio_control_hott":[1,344,1],
-"module__radio_control_hott.html#functions__radio_control_hott":[1,344,2]
+"module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,343,3]
 };

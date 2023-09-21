@@ -1,5 +1,11 @@
 var NAVTREEINDEX139 =
 {
+"mpu9250__regs_8h.html#a5c2429651153b5d50126e112d452d9d3":[12,0,1,0,7,101,64],
+"mpu9250__regs_8h.html#a64d6c08c1543e8d5c407484436e1ea9a":[12,0,1,0,7,101,8],
+"mpu9250__regs_8h.html#a6d3f3a0828c4d1a2537d30df92226422":[12,0,1,0,7,101,24],
+"mpu9250__regs_8h.html#a70502d50df4c36071aa82b9537c562b3":[12,0,1,0,7,101,6],
+"mpu9250__regs_8h.html#a71ae10ae714332d78a4856c7790a8ed5":[12,0,1,0,7,101,41],
+"mpu9250__regs_8h.html#a794b32cb6f101cc808d9b05c6c55acac":[12,0,1,0,7,101,58],
 "mpu9250__regs_8h.html#a7be284f86c5080d3d336bcfcfde45e76":[12,0,1,0,7,101,65],
 "mpu9250__regs_8h.html#a7e8ead0fcec84a57aef97e0fb0b3f6f1":[12,0,1,0,7,101,25],
 "mpu9250__regs_8h.html#a7e9ca0bebc20de90ffa8f03acc80c9a3":[12,0,1,0,7,101,7],
@@ -96,8 +102,8 @@ var NAVTREEINDEX139 =
 "mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f":[12,0,1,0,7,103,8],
 "mpu9250__spi_8h.html#a8dc8003465b7482470f4a0cbb09162b5":[12,0,1,0,7,103,3],
 "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14":[12,0,1,0,7,103,0,7],
-"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,1,0],
+"mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,103,2,1],
 "mpu9250__spi_8h.html#ab18fbb08c6cdf28dc9941409cc1f8ab2":[12,0,1,0,7,103,0,8],
 "mpu9250__spi_8h.html#abd46fc21482208fb51aa03d4ca966ab0":[12,0,1,0,7,103,4],
 "mpu9250__spi_8h.html#ac453478af0b0181f1fc93ee5d4bfa656":[12,0,1,0,7,103,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX139 =
 "ms5611__regs_8h.html#ad807836603b80bcc5fe4d518d2a9e86b":[12,0,1,0,7,110,8],
 "ms5611__regs_8h.html#ae5b7beb5168d8ff22162a6555fc209ba":[12,0,1,0,7,110,5],
 "ms5611__regs_8h.html#aeb58924e14161f906b97aafc24e560df":[12,0,1,0,7,110,21],
-"ms5611__regs_8h.html#af22c2ea21d0cf2025145b3bb2283bac8":[12,0,1,0,7,110,12],
-"ms5611__regs_8h.html#af5d02eec3b5ef1326d8cf365a23d9f01":[12,0,1,0,7,110,19],
-"ms5611__regs_8h_source.html":[12,0,1,0,7,110],
-"ms5611__spi_8c.html":[12,0,1,0,7,111],
-"ms5611__spi_8c.html#a23682a3c5d36bc1c95f61b80ab101b53":[12,0,1,0,7,111,3],
-"ms5611__spi_8c.html#a7b23274ad291a9e686044d66f378d91d":[12,0,1,0,7,111,0],
-"ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9":[12,0,1,0,7,111,4]
+"ms5611__regs_8h.html#af22c2ea21d0cf2025145b3bb2283bac8":[12,0,1,0,7,110,12]
 };

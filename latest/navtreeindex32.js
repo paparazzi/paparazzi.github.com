@@ -1,5 +1,11 @@
 var NAVTREEINDEX32 =
 {
+"chimera_2chibios_2v1_80_2board_8h.html#a8c14c96a28bfd69b06f50f857f20d12b":[12,0,1,0,1,3,0,0,0,225],
+"chimera_2chibios_2v1_80_2board_8h.html#a8c91f3240413d91d202e16fdcb47614e":[12,0,1,0,1,3,0,0,0,103],
+"chimera_2chibios_2v1_80_2board_8h.html#a8caac326b725310f194d323d3ba20f5a":[12,0,1,0,1,3,0,0,0,353],
+"chimera_2chibios_2v1_80_2board_8h.html#a8cbcf9b646f7934aa48e6dfce9d4cf23":[12,0,1,0,1,3,0,0,0,191],
+"chimera_2chibios_2v1_80_2board_8h.html#a8cd7cb8ab8f2cdf6361177395ed720cb":[12,0,1,0,1,3,0,0,0,38],
+"chimera_2chibios_2v1_80_2board_8h.html#a8cde079f33594b124a570f0fe78d5cd5":[12,0,1,0,1,3,0,0,0,384],
 "chimera_2chibios_2v1_80_2board_8h.html#a8d144fc7492afe6eadfd5786be10949e":[12,0,1,0,1,3,0,0,0,349],
 "chimera_2chibios_2v1_80_2board_8h.html#a8d5bc76028d35c0181a59989316a488f":[12,0,1,0,1,3,0,0,0,167],
 "chimera_2chibios_2v1_80_2board_8h.html#a8d882bb038704714a229e5e85973ca64":[12,0,1,0,1,3,0,0,0,411],
@@ -243,11 +249,5 @@ var NAVTREEINDEX32 =
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a2f21ba8c5368006a26a3e5e1d7e60fdb":[12,0,1,0,1,3,0,0,2,101],
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a2fc47be2589d2a861f2a7e94048d7035":[12,0,1,0,1,3,0,0,2,18],
 "chimera_2chibios_2v1_80_2mcuconf_8h.html#a311306228435a4ddb879e8f0d80e3c10":[12,0,1,0,1,3,0,0,2,229],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a3170ef2ff695720e55d0957eb1951a99":[12,0,1,0,1,3,0,0,2,70],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a33922bdd7e2781286b82d9e778c98b3f":[12,0,1,0,1,3,0,0,2,166],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a366b4f70dd30f409ad8c14e609e4bbaa":[12,0,1,0,1,3,0,0,2,113],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a3670f3886d02bb3010016bbf0db0db83":[12,0,1,0,1,3,0,0,2,171],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a37a20a773e7abb09096b89faa85e8897":[12,0,1,0,1,3,0,0,2,26],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a389d0701902663f45e60555f50065a06":[12,0,1,0,1,3,0,0,2,269],
-"chimera_2chibios_2v1_80_2mcuconf_8h.html#a38fe6fb696c105d6e048bde844db0224":[12,0,1,0,1,3,0,0,2,112]
+"chimera_2chibios_2v1_80_2mcuconf_8h.html#a3170ef2ff695720e55d0957eb1951a99":[12,0,1,0,1,3,0,0,2,70]
 };

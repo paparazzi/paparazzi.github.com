@@ -1,5 +1,11 @@
 var NAVTREEINDEX128 =
 {
+"module__airspeed_ms45xx_i2c.html#configuration__airspeed_ms45xx_i2c":[1,360,1],
+"module__airspeed_ms45xx_i2c.html#functions__airspeed_ms45xx_i2c":[1,360,2],
+"module__airspeed_ms45xx_i2c.html#module_load_example__airspeed_ms45xx_i2c":[1,360,0],
+"module__airspeed_ms45xx_i2c.html#module_xml__airspeed_ms45xx_i2c":[1,360,2,0],
+"module__airspeed_otf.html":[1,361],
+"module__airspeed_otf.html#configuration__airspeed_otf":[1,361,1],
 "module__airspeed_otf.html#functions__airspeed_otf":[1,361,2],
 "module__airspeed_otf.html#module_load_example__airspeed_otf":[1,361,0],
 "module__airspeed_otf.html#module_xml__airspeed_otf":[1,361,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX128 =
 "module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling":[1,84,0],
 "module__ctrl_effectiveness_scheduling.html#module_xml__ctrl_effectiveness_scheduling":[1,84,1,0],
 "module__ctrl_module_innerloop_demo.html":[1,85],
-"module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,85,0],
-"module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,85,0,0],
-"module__ctrl_module_outerloop_demo.html":[1,86],
-"module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,86,0],
-"module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,86,0,0],
-"module__ctrl_windtunnel.html":[1,87],
-"module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,87,1]
+"module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,85,0]
 };
