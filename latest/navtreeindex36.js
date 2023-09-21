@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"common__board_8h.html#ad98f4e2cea6dda6a42bd485b87814709":[12,0,1,0,0,0,4,27],
+"common__board_8h.html#ad9b3763b028a22f31e74b55b8aa11dde":[12,0,1,0,0,0,4,4],
 "common__board_8h.html#aed15d8f5ffe14a760d9ce36c0df98621":[12,0,1,0,0,0,4,23],
 "common__board_8h_source.html":[12,0,1,0,0,0,4],
 "common__flight__plan_8c.html":[12,0,1,0,6,46,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "crazybee__f4__1_80_8h.html#ab822abb58fd88fe8e7c8ef46c25d9dad":[12,0,1,0,1,30,120],
 "crazybee__f4__1_80_8h.html#abb1d7a26f33f3c611234e22199d24209":[12,0,1,0,1,30,27],
 "crazybee__f4__1_80_8h.html#abbc7c54dc7ef033588e5b1ae4dcaf62d":[12,0,1,0,1,30,61],
-"crazybee__f4__1_80_8h.html#abdf3f086a6274a36ead16fc540d4a05c":[12,0,1,0,1,30,51],
-"crazybee__f4__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c":[12,0,1,0,1,30,100],
-"crazybee__f4__1_80_8h.html#ac45c35d6d6d9b1120517dcce64705e21":[12,0,1,0,1,30,103]
+"crazybee__f4__1_80_8h.html#abdf3f086a6274a36ead16fc540d4a05c":[12,0,1,0,1,30,51]
 };

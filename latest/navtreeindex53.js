@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"esc__dshot_8h.html#structDshotTelemetry_8____unnamed2_____8____unnamed4____":[12,0,1,0,0,0,1,0,5,7],
+"esc__dshot_8h.html#unionDshotDmaBuffer":[12,0,1,0,0,0,1,0,5,1],
 "esc__dshot_8h.html#unionDshotPacket":[12,0,1,0,0,0,1,0,5,3],
 "esc__dshot_8h.html#unionDshotTelemetry_8____unnamed2____":[12,0,1,0,0,0,1,0,5,6],
 "esc__dshot_8h_source.html":[12,0,1,0,0,0,1,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX53 =
 "fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67":[12,0,1,0,3,1,9,7],
 "fixedwing_2autopilot__static_8h.html#a416a33ea64cf8138cfc030da5b6ad469":[12,0,1,0,3,1,9,3],
 "fixedwing_2autopilot__static_8h.html#a441d493d96e925f5d95d208b6d88ec12":[12,0,1,0,3,1,9,5],
-"fixedwing_2autopilot__static_8h.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24":[12,0,1,0,3,1,9,8],
-"fixedwing_2autopilot__static_8h.html#a79f823520ea0823e20084686978281e6":[12,0,1,0,3,1,9,14],
-"fixedwing_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6":[12,0,1,0,3,1,9,10]
+"fixedwing_2autopilot__static_8h.html#a5d8bb91f4e3f32d4ef18ca56b5f38d24":[12,0,1,0,3,1,9,8]
 };

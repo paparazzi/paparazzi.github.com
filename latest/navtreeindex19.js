@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__blue__coeff__mem__regs":[12,0,1,0,1,2,0,0,13,17],
+"avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h_8____unnamed178____":[12,0,1,0,1,2,0,0,13,22],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__h__inv_8____unnamed182____":[12,0,1,0,1,2,0,0,13,24],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__id__x__y_8____unnamed174____":[12,0,1,0,1,2,0,0,13,20],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__cell__w_8____unnamed176____":[12,0,1,0,1,2,0,0,13,21],
@@ -86,8 +88,8 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__bayer_8h.html#a6197cbc141faca4bd1d30884b2a241a9":[12,0,1,0,1,2,0,0,15,28],
 "avi__isp__statistics__bayer_8h.html#a65ec61a811d060ffbd7f3aec11f4cf8e":[12,0,1,0,1,2,0,0,15,36],
 "avi__isp__statistics__bayer_8h.html#a72852829612fe240aa20686146c38545":[12,0,1,0,1,2,0,0,15,15,2],
-"avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,15,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,14,0],
+"avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,15,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,21,0],
 "avi__isp__statistics__bayer_8h.html#a74a47a7eac047138ff811ede153943e6":[12,0,1,0,1,2,0,0,15,24,0],
 "avi__isp__statistics__bayer_8h.html#a7a09e25c85aecd7479a633e3cc628e1a":[12,0,1,0,1,2,0,0,15,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__histogram__y":[12,0,1,0,1,2,0,0,16,17],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__nb__valid__y":[12,0,1,0,1,2,0,0,16,10],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__nb__grey__pixels":[12,0,1,0,1,2,0,0,16,15],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__u":[12,0,1,0,1,2,0,0,16,13],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__v":[12,0,1,0,1,2,0,0,16,14],
-"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__y":[12,0,1,0,1,2,0,0,16,12]
+"avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__awb__sum__u":[12,0,1,0,1,2,0,0,16,13]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"gvf__parametric__3d__lissajous_8h.html#structgvf__par__3d__lis__par":[12,0,1,0,6,30,1,0,5,0],
+"gvf__parametric__3d__lissajous_8h_source.html":[12,0,1,0,6,30,1,0,5],
 "gvf__parametric__low__level__control_8c.html":[12,0,1,0,6,30,1,3],
 "gvf__parametric__low__level__control_8c.html#af1fb4568d132561faadeccc3fd030192":[12,0,1,0,6,30,1,3,0],
 "gvf__parametric__low__level__control_8c.html#af7963fae247a2ac801862cbecccf5c22":[12,0,1,0,6,30,1,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "high__pass__filter_8h.html#a457ae193ef3786a2e14421befe115ba7":[12,0,1,0,2,2,5],
 "high__pass__filter_8h.html#a9e50260f4e914a971c37279f2fe4d84c":[12,0,1,0,2,2,0,2],
 "high__pass__filter_8h.html#aa902c6407f45dda6c874ce871650a2ca":[12,0,1,0,2,2,1,0],
-"high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca":[12,0,1,0,2,2,4],
-"high__pass__filter_8h.html#abde8c8ff9b42623f6ca935ec25a04268":[12,0,1,0,2,2,2],
-"high__pass__filter_8h.html#acad4e38ef946a0babc9d3abc91a79086":[12,0,1,0,2,2,6]
+"high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca":[12,0,1,0,2,2,4]
 };

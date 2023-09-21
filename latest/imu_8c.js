@@ -1,5 +1,6 @@
 var imu_8c =
 [
+    [ "IMU_ACCEL_ABI_SEND_ID", "imu_8c.html#aeff5bac25a73171d3bca65dacdfdbf57", null ],
     [ "IMU_ACCEL_CALIB", "imu_8c.html#a50873dfaf84ba90c9c947d638dd48ec8", null ],
     [ "IMU_ACCEL_X_SIGN", "imu_8c.html#a4198979ecdab243efc790d5b739a4645", null ],
     [ "IMU_ACCEL_Y_SIGN", "imu_8c.html#a20144cb4fd6b12baf8d74063f8dc87e3", null ],
@@ -7,11 +8,13 @@ var imu_8c =
     [ "IMU_BODY_TO_IMU_PHI", "imu_8c.html#a46eb7490c440a6456865b91fd7ece823", null ],
     [ "IMU_BODY_TO_IMU_PSI", "imu_8c.html#a82a39ecc102f002a754e0c97e096cf46", null ],
     [ "IMU_BODY_TO_IMU_THETA", "imu_8c.html#a145707cbd3cb3e88e6536ae94f901567", null ],
+    [ "IMU_GYRO_ABI_SEND_ID", "imu_8c.html#a0a7c7307967040b787a5ab1b620cafce", null ],
     [ "IMU_GYRO_CALIB", "imu_8c.html#a850579cb02cdac2d2e2502240617a731", null ],
     [ "IMU_GYRO_P_SIGN", "imu_8c.html#a1b1c79353b8a69a2d7faecd6721efbb8", null ],
     [ "IMU_GYRO_Q_SIGN", "imu_8c.html#affd63ad52249c74117b86454fe73d5b0", null ],
     [ "IMU_GYRO_R_SIGN", "imu_8c.html#a91fa3d93fbfb5edbdf7f3b34436b53da", null ],
     [ "IMU_INTEGRATION", "imu_8c.html#aa556a0a3392a07c221078515c16ca075", null ],
+    [ "IMU_MAG_ABI_SEND_ID", "imu_8c.html#a063289d7177864f26162b5f09947b94c", null ],
     [ "IMU_MAG_CALIB", "imu_8c.html#a0c1c31015cb92b423f7e35994456d9e5", null ],
     [ "IMU_MAG_X_SIGN", "imu_8c.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],
     [ "IMU_MAG_Y_SIGN", "imu_8c.html#a127929c4b5a458043f7ef2e0fa2a4e54", null ],

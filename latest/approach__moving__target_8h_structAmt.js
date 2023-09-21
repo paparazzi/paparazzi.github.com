@@ -1,7 +1,9 @@
 var approach__moving__target_8h_structAmt =
 [
+    [ "cutoff_freq_filters_hz", "approach__moving__target_8h.html#abfd83e82b549b493cb756f07dfcb31f7", null ],
     [ "distance", "approach__moving__target_8h.html#af9b1af44bc097c44fba4e692bddde218", null ],
     [ "enabled_time", "approach__moving__target_8h.html#a207ca472b476e280d38ba42a861a7894", null ],
+    [ "err_slowdown_gain", "approach__moving__target_8h.html#a9e89ab9c60aaad693e56d78bcd2e20ff", null ],
     [ "pos_gain", "approach__moving__target_8h.html#ab09026a4c80044488e3dee7d9d8f4493", null ],
     [ "psi_ref", "approach__moving__target_8h.html#a55a0f78d0e3e5f5f34806fbe486c4be1", null ],
     [ "rel_unit_vec", "approach__moving__target_8h.html#af71d66797d8d9ec7f6f2fd9a52c212b3", null ],

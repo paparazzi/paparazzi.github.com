@@ -1,5 +1,14 @@
 var NAVTREEINDEX200 =
 {
+"sts3032__regs_8h.html#a21a496ba5564d2e6f9a063ce9468e944":[12,0,1,0,7,127,10],
+"sts3032__regs_8h.html#a257c17de414b4edc622b3f2870a4d495":[12,0,1,0,7,127,29],
+"sts3032__regs_8h.html#a28fb6015f3fc4adf3a347b4507bfdcbc":[12,0,1,0,7,127,47],
+"sts3032__regs_8h.html#a2c0994e6f77bcf585d7dfde88c10441f":[12,0,1,0,7,127,4],
+"sts3032__regs_8h.html#a30869b935aaea3d647a95dab7b097922":[12,0,1,0,7,127,22],
+"sts3032__regs_8h.html#a30bb745b22759744a35d8ea9235692f3":[12,0,1,0,7,127,48],
+"sts3032__regs_8h.html#a3be8f776ac335d36d0b76277cc8c0767":[12,0,1,0,7,127,18],
+"sts3032__regs_8h.html#a4be22da728cc2a2c81f739003b63c7fc":[12,0,1,0,7,127,19],
+"sts3032__regs_8h.html#a4c6be8a6a0ac939e313c468d6af279d6":[12,0,1,0,7,127,11],
 "sts3032__regs_8h.html#a4ea740a5fed947ef79491edd621dedf3":[12,0,1,0,7,127,43],
 "sts3032__regs_8h.html#a509e8fb030784503b117fe1eaaba41d4":[12,0,1,0,7,127,17],
 "sts3032__regs_8h.html#a5474af19b4d6895b595b0b9570c0b078":[12,0,1,0,7,127,15],
@@ -240,14 +249,5 @@ var NAVTREEINDEX200 =
 "sys__id__wave_8c.html#a109f1299bac02f88b52b70b68c6ec176":[12,0,1,0,6,66,10,5],
 "sys__id__wave_8c.html#a274a42f78d7772bcaf57b02a6fd9c12a":[12,0,1,0,6,66,10,4],
 "sys__id__wave_8c.html#a593103ff7a1f5c472691e6e88580b18b":[12,0,1,0,6,66,10,3],
-"sys__id__wave_8c.html#a5b6405e8a3b5b15055e18fcdd958f10c":[12,0,1,0,6,66,10,17],
-"sys__id__wave_8c.html#a6507b3e4518ccc688963363f97a49886":[12,0,1,0,6,66,10,22],
-"sys__id__wave_8c.html#a96e61eeb83b9d42787125d5d59dd5a63":[12,0,1,0,6,66,10,11],
-"sys__id__wave_8c.html#a98d50fd729700690aaceba76cf5e8990":[12,0,1,0,6,66,10,13],
-"sys__id__wave_8c.html#a9cebd29ccecca5dcdb731e18b5ddebff":[12,0,1,0,6,66,10,0],
-"sys__id__wave_8c.html#a9f776791ac405f13db5799e8177a9e88":[12,0,1,0,6,66,10,8],
-"sys__id__wave_8c.html#aa3814c04dbc95a60e9e95f0efca296d6":[12,0,1,0,6,66,10,12],
-"sys__id__wave_8c.html#aa6d9d132d5087b42befa6c0ee28e2372":[12,0,1,0,6,66,10,2],
-"sys__id__wave_8c.html#ab0dd9ce602b4436219c73a074beee0f9":[12,0,1,0,6,66,10,19],
-"sys__id__wave_8c.html#abc439ba08f5598552ccb4a0ba213a64c":[12,0,1,0,6,66,10,21]
+"sys__id__wave_8c.html#a5b6405e8a3b5b15055e18fcdd958f10c":[12,0,1,0,6,66,10,17]
 };

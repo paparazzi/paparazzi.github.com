@@ -1,5 +1,13 @@
 var NAVTREEINDEX131 =
 {
+"module__imu_apogee_mpu9150.html#module_load_example__imu_apogee_mpu9150":[1,171,0],
+"module__imu_apogee_mpu9150.html#module_xml__imu_apogee_mpu9150":[1,171,1,0],
+"module__imu_ardrone2.html":[1,172],
+"module__imu_ardrone2.html#functions__imu_ardrone2":[1,172,1],
+"module__imu_ardrone2.html#module_load_example__imu_ardrone2":[1,172,0],
+"module__imu_ardrone2.html#module_xml__imu_ardrone2":[1,172,1,0],
+"module__imu_aspirin_common.html":[1,173],
+"module__imu_aspirin_common.html#configuration__imu_aspirin_common":[1,173,1],
 "module__imu_aspirin_common.html#functions__imu_aspirin_common":[1,173,2],
 "module__imu_aspirin_common.html#module_load_example__imu_aspirin_common":[1,173,0],
 "module__imu_aspirin_common.html#module_xml__imu_aspirin_common":[1,173,2,0],
@@ -43,9 +51,10 @@ var NAVTREEINDEX131 =
 "module__imu_chimera.html#module_load_example__imu_chimera":[1,184,0],
 "module__imu_chimera.html#module_xml__imu_chimera":[1,184,0,0],
 "module__imu_common.html":[1,185],
-"module__imu_common.html#functions__imu_common":[1,185,1],
+"module__imu_common.html#configuration__imu_common":[1,185,1],
+"module__imu_common.html#functions__imu_common":[1,185,2],
 "module__imu_common.html#module_load_example__imu_common":[1,185,0],
-"module__imu_common.html#module_xml__imu_common":[1,185,1,0],
+"module__imu_common.html#module_xml__imu_common":[1,185,2,0],
 "module__imu_cube.html":[1,186],
 "module__imu_cube.html#functions__imu_cube":[1,186,1],
 "module__imu_cube.html#module_load_example__imu_cube":[1,186,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX131 =
 "module__ins_vectornav.html#functions__ins_vectornav":[1,227,2],
 "module__ins_vectornav.html#module_load_example__ins_vectornav":[1,227,0],
 "module__ins_vectornav.html#module_xml__ins_vectornav":[1,227,2,0],
-"module__ins_vn100.html":[1,228],
-"module__ins_vn100.html#configuration__ins_vn100":[1,228,1],
-"module__ins_vn100.html#functions__ins_vn100":[1,228,2],
-"module__ins_vn100.html#module_load_example__ins_vn100":[1,228,0],
-"module__ins_vn100.html#module_xml__ins_vn100":[1,228,2,0],
-"module__ins_xsens.html":[1,229],
-"module__ins_xsens.html#configuration__ins_xsens":[1,229,1],
-"module__ins_xsens.html#functions__ins_xsens":[1,229,2],
-"module__ins_xsens.html#module_load_example__ins_xsens":[1,229,0],
-"module__ins_xsens.html#module_xml__ins_xsens":[1,229,2,0]
+"module__ins_vn100.html":[1,228]
 };

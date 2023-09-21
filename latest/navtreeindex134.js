@@ -1,5 +1,14 @@
 var NAVTREEINDEX134 =
 {
+"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,344,0],
+"module__radio_control_hott.html#module_xml__radio_control_hott":[1,344,2,0],
+"module__radio_control_intermcu.html":[1,345],
+"module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,345,2],
+"module__radio_control_intermcu.html#functions__radio_control_intermcu":[1,345,1],
+"module__radio_control_intermcu.html#module_load_example__radio_control_intermcu":[1,345,0],
+"module__radio_control_intermcu.html#module_xml__radio_control_intermcu":[1,345,2,0],
+"module__radio_control_ppm.html":[1,346],
+"module__radio_control_ppm.html#configuration__radio_control_ppm":[1,346,1],
 "module__radio_control_ppm.html#functions__radio_control_ppm":[1,346,2],
 "module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,346,0],
 "module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,346,2,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX134 =
 "module__tag_tracking.html#functions__tag_tracking":[1,64,2],
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,64,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,64,3,0],
-"module__takeoff_detect.html":[1,334],
-"module__takeoff_detect.html#configuration__takeoff_detect":[1,334,1],
-"module__takeoff_detect.html#functions__takeoff_detect":[1,334,2],
-"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,334,0],
-"module__takeoff_detect.html#module_xml__takeoff_detect":[1,334,2,0],
-"module__target_pos.html":[1,96],
-"module__target_pos.html#configuration__target_pos":[1,96,1],
-"module__target_pos.html#datalink_functions__target_pos":[1,96,3],
-"module__target_pos.html#functions__target_pos":[1,96,2],
-"module__target_pos.html#module_load_example__target_pos":[1,96,0]
+"module__takeoff_detect.html":[1,334]
 };

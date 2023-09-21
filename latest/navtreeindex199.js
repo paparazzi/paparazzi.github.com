@@ -1,5 +1,14 @@
 var NAVTREEINDEX199 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#structlocm3__spi__comm":[12,0,1,0,0,3,0,11,0],
+"stm32_2mcu__periph_2spi__arch_8c.html#structspi__periph__dma":[12,0,1,0,0,3,0,11,1],
+"stm32_2mcu__periph_2spi__arch_8c_source.html":[12,0,1,0,0,3,0,11],
+"stm32_2mcu__periph_2spi__arch_8h.html":[12,0,1,0,0,3,0,12],
+"stm32_2mcu__periph_2spi__arch_8h_source.html":[12,0,1,0,0,3,0,12],
+"stm32_2mcu__periph_2sys__time__arch_8c.html":[12,0,1,0,0,3,0,13],
+"stm32_2mcu__periph_2sys__time__arch_8c.html#a838a9b2f4b781fbdbc8e7de535ffed07":[12,0,1,0,0,3,0,13,0],
+"stm32_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4":[12,0,1,0,0,3,0,13,2],
+"stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a":[12,0,1,0,0,3,0,13,1],
 "stm32_2mcu__periph_2sys__time__arch_8c_source.html":[12,0,1,0,0,3,0,13],
 "stm32_2mcu__periph_2sys__time__arch_8h.html":[12,0,1,0,0,3,0,14],
 "stm32_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262":[12,0,1,0,0,3,0,14,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX199 =
 "sts3032__regs_8h.html#a177d9ebf698878e8b46b02265e71c59d":[12,0,1,0,7,127,16],
 "sts3032__regs_8h.html#a1bab75e01514263eea46938fcc95a23a":[12,0,1,0,7,127,7],
 "sts3032__regs_8h.html#a1c304d06170982719fd605a87c9101f0":[12,0,1,0,7,127,6],
-"sts3032__regs_8h.html#a1df3353e2abb102b39e5bf30d9ace234":[12,0,1,0,7,127,33],
-"sts3032__regs_8h.html#a21a496ba5564d2e6f9a063ce9468e944":[12,0,1,0,7,127,10],
-"sts3032__regs_8h.html#a257c17de414b4edc622b3f2870a4d495":[12,0,1,0,7,127,29],
-"sts3032__regs_8h.html#a28fb6015f3fc4adf3a347b4507bfdcbc":[12,0,1,0,7,127,47],
-"sts3032__regs_8h.html#a2c0994e6f77bcf585d7dfde88c10441f":[12,0,1,0,7,127,4],
-"sts3032__regs_8h.html#a30869b935aaea3d647a95dab7b097922":[12,0,1,0,7,127,22],
-"sts3032__regs_8h.html#a30bb745b22759744a35d8ea9235692f3":[12,0,1,0,7,127,48],
-"sts3032__regs_8h.html#a3be8f776ac335d36d0b76277cc8c0767":[12,0,1,0,7,127,18],
-"sts3032__regs_8h.html#a4be22da728cc2a2c81f739003b63c7fc":[12,0,1,0,7,127,19],
-"sts3032__regs_8h.html#a4c6be8a6a0ac939e313c468d6af279d6":[12,0,1,0,7,127,11]
+"sts3032__regs_8h.html#a1df3353e2abb102b39e5bf30d9ace234":[12,0,1,0,7,127,33]
 };

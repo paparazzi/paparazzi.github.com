@@ -1,5 +1,13 @@
 var NAVTREEINDEX94 =
 {
+"invensense2__regs_8h.html#aa51bdc357b586881fd72043ee6c62c97":[12,0,1,0,7,45,141],
+"invensense2__regs_8h.html#aa53de6389a4bcd79f3597d13b515625c":[12,0,1,0,7,45,122],
+"invensense2__regs_8h.html#aa54009198e82a355f6c867bde717e824":[12,0,1,0,7,45,109],
+"invensense2__regs_8h.html#aa752bc8cebba4e75c777175eb79d7d13":[12,0,1,0,7,45,181],
+"invensense2__regs_8h.html#aa7a900fd99810d9e0643e21c08c099d7":[12,0,1,0,7,45,132],
+"invensense2__regs_8h.html#aa82569e886bf2cd1d52735b36a4022ff":[12,0,1,0,7,45,168],
+"invensense2__regs_8h.html#aa852e6df801bebb0b9c4d3d171e560fd":[12,0,1,0,7,45,171],
+"invensense2__regs_8h.html#aa90a3c78567d57e114803af140d22011":[12,0,1,0,7,45,98],
 "invensense2__regs_8h.html#aab19ea84803f7d6e36f13f8d6b5714ce":[12,0,1,0,7,45,67],
 "invensense2__regs_8h.html#aabc755e12b76ee6a1797110871ad7a9b":[12,0,1,0,7,45,177],
 "invensense2__regs_8h.html#aae1efa4d760d6ad8de0f19422ac44ac3":[12,0,1,0,7,45,39],
@@ -241,13 +249,5 @@ var NAVTREEINDEX94 =
 "invensense3__regs_8h.html#a3eb91e6b3c3a8bc0a685400c4b2e16d2":[12,0,1,0,7,48,92],
 "invensense3__regs_8h.html#a4140a6581c67d00f796441880bb3c706":[12,0,1,0,7,48,0],
 "invensense3__regs_8h.html#a437efbd8bca4d3761384a4c2dfa02b31":[12,0,1,0,7,48,102],
-"invensense3__regs_8h.html#a452ba7c1ed86842226cec5f86ac76598":[12,0,1,0,7,48,142],
-"invensense3__regs_8h.html#a4781868c43ab0769cd27610ea3ce70d2":[12,0,1,0,7,48,46],
-"invensense3__regs_8h.html#a49442360a65c729e8c1201b2d261618d":[12,0,1,0,7,48,10],
-"invensense3__regs_8h.html#a4f453cfb0d7cd834b2e758e289c21263":[12,0,1,0,7,48,34],
-"invensense3__regs_8h.html#a504f044bf863ba4d8cde3d4bf9606edd":[12,0,1,0,7,48,3],
-"invensense3__regs_8h.html#a513beaba5af095b79bc8cd7351053cd7":[12,0,1,0,7,48,16],
-"invensense3__regs_8h.html#a51d05c2d7250d7dc7b56831dd2ff246f":[12,0,1,0,7,48,14],
-"invensense3__regs_8h.html#a520330fbb997e51e864f1e7e2356f7dc":[12,0,1,0,7,48,137],
-"invensense3__regs_8h.html#a56f1e4cc49a6eaf9db616a303b48edb2":[12,0,1,0,7,48,36]
+"invensense3__regs_8h.html#a452ba7c1ed86842226cec5f86ac76598":[12,0,1,0,7,48,142]
 };

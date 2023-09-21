@@ -1208,6 +1208,7 @@ var onboard_modules =
     ] ],
     [ "imu_common module", "module__imu_common.html", [
       [ "Example for airframe file", "module__imu_common.html#module_load_example__imu_common", null ],
+      [ "Module configuration options", "module__imu_common.html#configuration__imu_common", null ],
       [ "Module functions", "module__imu_common.html#functions__imu_common", [
         [ "Raw imu_common.xml file:", "module__imu_common.html#module_xml__imu_common", null ]
       ] ]

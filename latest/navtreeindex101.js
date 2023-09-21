@@ -1,5 +1,13 @@
 var NAVTREEINDEX101 =
 {
+"lidar__lite_8c.html#acf68e128fae798bdb2b8729934d5b50c":[12,0,1,0,6,39,0,2],
+"lidar__lite_8c.html#ad9de6c26f7a464d53a4aa70c65c944e6":[12,0,1,0,6,39,0,6],
+"lidar__lite_8c.html#af612b76cc7d462f3c82151ecdfe84a87":[12,0,1,0,6,39,0,0],
+"lidar__lite_8c.html#af963b51aa16d3dd51fb442fe423bc3c6":[12,0,1,0,6,39,0,7],
+"lidar__lite_8c_source.html":[12,0,1,0,6,39,0],
+"lidar__lite_8h.html":[12,0,1,0,6,39,1],
+"lidar__lite_8h.html#a1d3828547612582516524c05c2f3e76c":[12,0,1,0,6,39,1,0,3],
+"lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8b":[12,0,1,0,6,39,1,1],
 "lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba09939369f0fc3a3da8dde0f546b6950a":[12,0,1,0,6,39,1,1,1],
 "lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba1f74f9b608cec6ed152f4de279e9c5bf":[12,0,1,0,6,39,1,1,2],
 "lidar__lite_8h.html#a352b41ef5be6a2eed1f05b592dac2d8ba44ecff3198750be4b660fc8ab6de24e3":[12,0,1,0,6,39,1,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX101 =
 "linux_2mcu__periph_2gpio__arch_8c_source.html":[12,0,1,0,0,1,0,2],
 "linux_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,1,0,3],
 "linux_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de":[12,0,1,0,0,1,0,3,0],
-"linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85":[12,0,1,0,0,1,0,3,3],
-"linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8":[12,0,1,0,0,1,0,3,5],
-"linux_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8":[12,0,1,0,0,1,0,3,2],
-"linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7":[12,0,1,0,0,1,0,3,1],
-"linux_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a":[12,0,1,0,0,1,0,3,4],
-"linux_2mcu__periph_2gpio__arch_8h_source.html":[12,0,1,0,0,1,0,3],
-"linux_2mcu__periph_2i2c__arch_8c.html":[12,0,1,0,0,1,0,4],
-"linux_2mcu__periph_2i2c__arch_8c.html#a06cd65e0487bf672f1e279eaf0e2f276":[12,0,1,0,0,1,0,4,2],
-"linux_2mcu__periph_2i2c__arch_8c.html#a096bc72d165ba77a4e27e1a5ea396433":[12,0,1,0,0,1,0,4,6]
+"linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85":[12,0,1,0,0,1,0,3,3]
 };

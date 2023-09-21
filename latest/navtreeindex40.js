@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"crazyflie_8h.html#ad27dd2006e045ab78fc41052ec582d43":[12,0,1,0,1,4,0,0,1,60],
+"crazyflie_8h.html#ad51e6e15a7a0d5cbb5e787ffac021114":[12,0,1,0,1,4,0,0,1,47],
 "crazyflie_8h.html#ad5f76821cdd9ca9826c5b13902e7c16a":[12,0,1,0,1,4,0,0,1,91],
 "crazyflie_8h.html#ada248ea908ea4ee30983b56d29af8380":[12,0,1,0,1,4,0,0,1,67],
 "crazyflie_8h.html#adca9740b51ca9f7681d3c3f585a57836":[12,0,1,0,1,4,0,0,1,49],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "ctrl__module__outerloop__demo_8c.html#af839c8b40cdb94531cf1525d9868867f":[12,0,1,0,6,13,4,0,0],
 "ctrl__module__outerloop__demo_8c.html#af839c8b40cdb94531cf1525d9868867f":[12,0,1,0,6,13,6,0,0],
 "ctrl__module__outerloop__demo_8c.html#structctrl__module__demo__struct":[12,0,1,0,6,13,4,0],
-"ctrl__module__outerloop__demo_8c.html#structctrl__module__demo__struct":[12,0,1,0,6,13,6,0],
-"ctrl__module__outerloop__demo_8c_source.html":[12,0,1,0,6,13,6],
-"ctrl__module__outerloop__demo_8h.html":[12,0,1,0,6,13,7]
+"ctrl__module__outerloop__demo_8c.html#structctrl__module__demo__struct":[12,0,1,0,6,13,6,0]
 };

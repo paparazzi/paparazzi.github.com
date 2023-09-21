@@ -1,5 +1,14 @@
 var NAVTREEINDEX135 =
 {
+"module__takeoff_detect.html#configuration__takeoff_detect":[1,334,1],
+"module__takeoff_detect.html#functions__takeoff_detect":[1,334,2],
+"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,334,0],
+"module__takeoff_detect.html#module_xml__takeoff_detect":[1,334,2,0],
+"module__target_pos.html":[1,96],
+"module__target_pos.html#configuration__target_pos":[1,96,1],
+"module__target_pos.html#datalink_functions__target_pos":[1,96,3],
+"module__target_pos.html#functions__target_pos":[1,96,2],
+"module__target_pos.html#module_load_example__target_pos":[1,96,0],
 "module__target_pos.html#module_xml__target_pos":[1,96,3,0],
 "module__tcas.html":[1,296],
 "module__tcas.html#datalink_functions__tcas":[1,296,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX135 =
 "modules_2datalink_2superbitrf_8c.html#ab7cad7b2b636d70ece62e9cede876603":[12,0,1,0,6,14,27,28],
 "modules_2datalink_2superbitrf_8c.html#abefd806148689ae7eddc86cf9d0e9d21":[12,0,1,0,6,14,27,10],
 "modules_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7":[12,0,1,0,6,14,27,9],
-"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,14,27,4],
-"modules_2datalink_2superbitrf_8c.html#adacd094635c547fa34f427268c985abd":[12,0,1,0,6,14,27,19],
-"modules_2datalink_2superbitrf_8c.html#ade7ef70ed43ea8f759a330486554d623":[12,0,1,0,6,14,27,22],
-"modules_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6":[12,0,1,0,6,14,27,20],
-"modules_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827":[12,0,1,0,6,14,27,0],
-"modules_2datalink_2superbitrf_8c.html#af3aa1f553183ecf594fa1c016e79110e":[12,0,1,0,6,14,27,17],
-"modules_2datalink_2superbitrf_8c_source.html":[12,0,1,0,6,14,27],
-"modules_2datalink_2superbitrf_8h.html":[12,0,1,0,6,14,28],
-"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,6,14,28,0,1],
-"modules_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f":[12,0,1,0,0,2,1,2,1,0,1]
+"modules_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755":[12,0,1,0,6,14,27,4]
 };

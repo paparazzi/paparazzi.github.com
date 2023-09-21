@@ -1,5 +1,14 @@
 var NAVTREEINDEX132 =
 {
+"module__ins_vn100.html#configuration__ins_vn100":[1,228,1],
+"module__ins_vn100.html#functions__ins_vn100":[1,228,2],
+"module__ins_vn100.html#module_load_example__ins_vn100":[1,228,0],
+"module__ins_vn100.html#module_xml__ins_vn100":[1,228,2,0],
+"module__ins_xsens.html":[1,229],
+"module__ins_xsens.html#configuration__ins_xsens":[1,229,1],
+"module__ins_xsens.html#functions__ins_xsens":[1,229,2],
+"module__ins_xsens.html#module_load_example__ins_xsens":[1,229,0],
+"module__ins_xsens.html#module_xml__ins_xsens":[1,229,2,0],
 "module__ins_xsens700.html":[1,230],
 "module__ins_xsens700.html#configuration__ins_xsens700":[1,230,1],
 "module__ins_xsens700.html#functions__ins_xsens700":[1,230,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX132 =
 "module__nav_catapult.html#configuration__nav_catapult":[1,302,1],
 "module__nav_catapult.html#functions__nav_catapult":[1,302,2],
 "module__nav_catapult.html#module_load_example__nav_catapult":[1,302,0],
-"module__nav_catapult.html#module_xml__nav_catapult":[1,302,2,0],
-"module__nav_cube.html":[1,303],
-"module__nav_cube.html#module_load_example__nav_cube":[1,303,0],
-"module__nav_cube.html#module_xml__nav_cube":[1,303,0,0],
-"module__nav_drop.html":[1,304],
-"module__nav_drop.html#module_load_example__nav_drop":[1,304,0],
-"module__nav_drop.html#module_xml__nav_drop":[1,304,0,0],
-"module__nav_fish.html":[1,305],
-"module__nav_fish.html#configuration__nav_fish":[1,305,1],
-"module__nav_fish.html#functions__nav_fish":[1,305,2]
+"module__nav_catapult.html#module_xml__nav_catapult":[1,302,2,0]
 };

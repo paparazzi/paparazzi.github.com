@@ -1,5 +1,13 @@
 var NAVTREEINDEX128 =
 {
+"module__airspeed_otf.html#functions__airspeed_otf":[1,361,2],
+"module__airspeed_otf.html#module_load_example__airspeed_otf":[1,361,0],
+"module__airspeed_otf.html#module_xml__airspeed_otf":[1,361,2,0],
+"module__airspeed_sdp3x.html":[1,362],
+"module__airspeed_sdp3x.html#configuration__airspeed_sdp3x":[1,362,1],
+"module__airspeed_sdp3x.html#functions__airspeed_sdp3x":[1,362,2],
+"module__airspeed_sdp3x.html#module_load_example__airspeed_sdp3x":[1,362,0],
+"module__airspeed_sdp3x.html#module_xml__airspeed_sdp3x":[1,362,2,0],
 "module__airspeed_uadc.html":[1,363],
 "module__airspeed_uadc.html#configuration__airspeed_uadc":[1,363,1],
 "module__airspeed_uadc.html#functions__airspeed_uadc":[1,363,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX128 =
 "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,86,0],
 "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo":[1,86,0,0],
 "module__ctrl_windtunnel.html":[1,87],
-"module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,87,1],
-"module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel":[1,87,0],
-"module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel":[1,87,1,0],
-"module__current_sensor.html":[1,431],
-"module__current_sensor.html#configuration__current_sensor":[1,431,1],
-"module__current_sensor.html#module_load_example__current_sensor":[1,431,0],
-"module__current_sensor.html#module_xml__current_sensor":[1,431,1,0],
-"module__cv_blob_locator.html":[1,52],
-"module__cv_blob_locator.html#configuration__cv_blob_locator":[1,52,1]
+"module__ctrl_windtunnel.html#configuration__ctrl_windtunnel":[1,87,1]
 };

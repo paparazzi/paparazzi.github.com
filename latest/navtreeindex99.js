@@ -1,5 +1,13 @@
 var NAVTREEINDEX99 =
 {
+"l3gd20__spi_8c.html#a50685decd3b79232d66b5ac4867d3214":[12,0,1,0,7,60,1],
+"l3gd20__spi_8c.html#a6f9735ca528b6dd1e69529dc53c56155":[12,0,1,0,7,60,5],
+"l3gd20__spi_8c.html#a7ce0152bebd25be7add3b16f7d660f2e":[12,0,1,0,7,60,2],
+"l3gd20__spi_8c.html#ac58f3581bad688c53c7770caaab910b2":[12,0,1,0,7,60,3],
+"l3gd20__spi_8c.html#ad7095e98c10bc5285b717b2d05b0566d":[12,0,1,0,7,60,6],
+"l3gd20__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,60,0],
+"l3gd20__spi_8c_source.html":[12,0,1,0,7,60],
+"l3gd20__spi_8h.html":[12,0,1,0,7,61],
 "l3gd20__spi_8h.html#a1419e1910a4a3f22ab7523a276fd5a73":[12,0,1,0,7,61,0,7],
 "l3gd20__spi_8h.html#a3d5961070c05aa8b0d38ea18b1dcb3cf":[12,0,1,0,7,61,4],
 "l3gd20__spi_8h.html#a46da18df86619fbb9c50d325251599c8":[12,0,1,0,7,61,0,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX99 =
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a3d89a31bf8ff315d8c13102cea1284ac":[12,0,1,0,1,9,0,0,1,122],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a3f108deab28dba83858c5a6d5089a322":[12,0,1,0,1,9,0,0,1,77],
 "lia_2chibios_2v1_81_2mcuconf_8h.html#a3f29be9a3823107fef0db45e685c21c8":[12,0,1,0,1,9,0,0,1,20],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[12,0,1,0,1,9,0,0,1,115],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a44c0e5a4a20e05dbb598a408cf1ebee7":[12,0,1,0,1,9,0,0,1,23],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a46e4ff65179ddd52641c366865b6cfa6":[12,0,1,0,1,9,0,0,1,58],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a47d90eaca23f3eea99d74d1bb3539541":[12,0,1,0,1,9,0,0,1,97],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a4d41fed5b7b1c735e1ea5a26970dd564":[12,0,1,0,1,9,0,0,1,45],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a4f49346cf0c36ac85466517ceff6299b":[12,0,1,0,1,9,0,0,1,111],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a51083eefd4e7d0303f11081df496d2ed":[12,0,1,0,1,9,0,0,1,41],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a554728f749ad9aca0102d189cc6bb9e7":[12,0,1,0,1,9,0,0,1,74],
-"lia_2chibios_2v1_81_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0":[12,0,1,0,1,9,0,0,1,86]
+"lia_2chibios_2v1_81_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[12,0,1,0,1,9,0,0,1,115]
 };

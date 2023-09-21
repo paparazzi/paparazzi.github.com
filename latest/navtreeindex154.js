@@ -1,5 +1,14 @@
 var NAVTREEINDEX154 =
 {
+"nps__radio__control_8c.html#af7449dc6a7bc211dda84224dfed2cb05":[12,0,1,1,1,25,11],
+"nps__radio__control_8c_source.html":[12,0,1,1,1,25],
+"nps__radio__control_8h.html":[12,0,1,1,1,26],
+"nps__radio__control_8h.html#a1028b3dc0a115b1c2cbfbf478d60c1c7":[12,0,1,1,1,26,6],
+"nps__radio__control_8h.html#a2a652ae30e8858d65f3e811509a795dd":[12,0,1,1,1,26,5],
+"nps__radio__control_8h.html#a3b318a2b61335953b6e6f88b464f7436":[12,0,1,1,1,26,3],
+"nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544a":[12,0,1,1,1,26,4],
+"nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa3b0361d7c922463802f9a82f455e5c59":[12,0,1,1,1,26,4,2],
+"nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa65154c0ec97cb74cba7359ca02c4ab54":[12,0,1,1,1,26,4,0],
 "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c":[12,0,1,1,1,26,4,1],
 "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aad08e86eded6925a3b5aab67e6ab63aff":[12,0,1,1,1,26,4,3],
 "nps__radio__control_8h.html#a50236542116e595f4c2ad5e684b10283":[12,0,1,1,1,26,0,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX154 =
 "nps__sensor__sonar_8h.html#a529d2ed85681a2688782390ec1b21941":[12,0,1,1,1,50,0,0],
 "nps__sensor__sonar_8h.html#a7d9c95a4ab117fe0e86cc57779e4d14f":[12,0,1,1,1,50,1],
 "nps__sensor__sonar_8h.html#a82672e101d916cefff3a310103554a57":[12,0,1,1,1,50,0,3],
-"nps__sensor__sonar_8h.html#a85d311ca847386b735e4700da40f0550":[12,0,1,1,1,50,0,1],
-"nps__sensor__sonar_8h.html#abc158f4a738dc3c34fcca33b962c7849":[12,0,1,1,1,50,0,4],
-"nps__sensor__sonar_8h.html#afe851577f06a07e6e29d4002fefa0e96":[12,0,1,1,1,50,0,2],
-"nps__sensor__sonar_8h.html#structNpsSensorSonar":[12,0,1,1,1,50,0],
-"nps__sensor__sonar_8h_source.html":[12,0,1,1,1,50],
-"nps__sensor__temperature_8c.html":[12,0,1,1,1,51],
-"nps__sensor__temperature_8c.html#a025fded3d8708f13a3a8eb19e300a0bd":[12,0,1,1,1,51,2],
-"nps__sensor__temperature_8c.html#a910dec3e0ed2b752cacda7c913aaa20c":[12,0,1,1,1,51,0],
-"nps__sensor__temperature_8c.html#a9b3050705f61f467495ad96d989afd0c":[12,0,1,1,1,51,3],
-"nps__sensor__temperature_8c.html#afb0f0c34c50d3535ea5d6a13a9b12ea1":[12,0,1,1,1,51,1]
+"nps__sensor__sonar_8h.html#a85d311ca847386b735e4700da40f0550":[12,0,1,1,1,50,0,1]
 };

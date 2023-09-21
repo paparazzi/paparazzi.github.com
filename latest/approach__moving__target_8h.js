@@ -1,8 +1,10 @@
 var approach__moving__target_8h =
 [
     [ "Amt", "approach__moving__target_8h.html#structAmt", [
+      [ "cutoff_freq_filters_hz", "approach__moving__target_8h.html#abfd83e82b549b493cb756f07dfcb31f7", null ],
       [ "distance", "approach__moving__target_8h.html#af9b1af44bc097c44fba4e692bddde218", null ],
       [ "enabled_time", "approach__moving__target_8h.html#a207ca472b476e280d38ba42a861a7894", null ],
+      [ "err_slowdown_gain", "approach__moving__target_8h.html#a9e89ab9c60aaad693e56d78bcd2e20ff", null ],
       [ "pos_gain", "approach__moving__target_8h.html#ab09026a4c80044488e3dee7d9d8f4493", null ],
       [ "psi_ref", "approach__moving__target_8h.html#a55a0f78d0e3e5f5f34806fbe486c4be1", null ],
       [ "rel_unit_vec", "approach__moving__target_8h.html#af71d66797d8d9ec7f6f2fd9a52c212b3", null ],
@@ -16,8 +18,5 @@ var approach__moving__target_8h =
     [ "approach_moving_target_init", "approach__moving__target_8h.html#af218c6b9f65d50c4c93ab5979bbd70b4", null ],
     [ "approach_moving_target_set_low_pass_freq", "approach__moving__target_8h.html#a7be835abf9bc8452ef98739265c23463", null ],
     [ "follow_diagonal_approach", "approach__moving__target_8h.html#a1f8643bb0cf39eb19efba54eef8148a7", null ],
-    [ "amt", "approach__moving__target_8h.html#a6f9a6a0b3939c92602fc8d0e9bcbc9e3", null ],
-    [ "amt_err_slowdown_gain", "approach__moving__target_8h.html#a951e42f39214ec0b6c1fd9a0d001fb6c", null ],
-    [ "approach_moving_target_angle_deg", "approach__moving__target_8h.html#a177edd5c14136c448d4c45b1c1b6ec96", null ],
-    [ "cutoff_freq_filters_hz", "approach__moving__target_8h.html#a2f7f7d312db00ee93346c380c6c12856", null ]
+    [ "amt", "approach__moving__target_8h.html#a6f9a6a0b3939c92602fc8d0e9bcbc9e3", null ]
 ];
