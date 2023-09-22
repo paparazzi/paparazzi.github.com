@@ -1,5 +1,8 @@
 var NAVTREEINDEX25 =
 {
+"bmp3__regs_8h.html#ada014a76d335702bbffeb63bf16240bf":[12,0,1,0,7,30,26],
+"bmp3__regs_8h.html#adb896e9709481daa924987b266b782a5":[12,0,1,0,7,30,37],
+"bmp3__regs_8h.html#adcd5ec5214c62fd0c172022d020ecc1e":[12,0,1,0,7,30,64],
 "bmp3__regs_8h.html#add3927605719a9b1377aa8441ae8aad0":[12,0,1,0,7,30,44],
 "bmp3__regs_8h.html#adfec220bf580c3576a5fe031a6c7a67a":[12,0,1,0,7,30,56],
 "bmp3__regs_8h.html#ae48cbf815266a843270261557ba7f45c":[12,0,1,0,7,30,74],
@@ -24,11 +27,12 @@ var NAVTREEINDEX25 =
 "boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a":[12,0,1,0,1,1,0,15],
 "boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c":[12,0,1,0,1,1,0,10],
 "boards_2ardrone_2actuators_8c.html#a21534501570f1ec0e211bb029d6c5e95":[12,0,1,0,1,1,0,1],
+"boards_2ardrone_2actuators_8c.html#a31dfdeb0332592438855ae2d138b39e0":[12,0,1,0,1,1,0,18],
 "boards_2ardrone_2actuators_8c.html#a3e18bc7da29945523e0b38e96549ef24":[12,0,1,0,1,1,0,16],
 "boards_2ardrone_2actuators_8c.html#a4a0b61428ad6de1e20852693548d819a":[12,0,1,0,1,1,0,17],
 "boards_2ardrone_2actuators_8c.html#a5da29d56716601eea899e4c2299c7490":[12,0,1,0,1,1,0,2],
 "boards_2ardrone_2actuators_8c.html#a66817eeee5ae2f12c1a42abd2ff443ea":[12,0,1,0,1,1,0,11],
-"boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2":[12,0,1,0,1,1,0,18],
+"boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2":[12,0,1,0,1,1,0,19],
 "boards_2ardrone_2actuators_8c.html#a8643b68e3bff54891b4180367aaf4316":[12,0,1,0,1,1,0,14],
 "boards_2ardrone_2actuators_8c.html#a88d571d86aaeb214fc8d3d4e44c6ce24":[12,0,1,0,1,1,0,6],
 "boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517":[12,0,1,0,1,1,0,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "cam__segment_8h.html#abe68201ef4637abc9e9d7a4e424d6ff2":[12,0,1,0,6,8,5,1],
 "cam__segment_8h_source.html":[12,0,1,0,6,8,5],
 "can_8c.html":[12,0,1,0,5,1],
-"can_8c.html#a152615d451206e5d152705c704cdf89f":[12,0,1,0,5,1,2],
-"can_8c.html#a29e5282665581fc7533fb24eb96bf30c":[12,0,1,0,5,1,0],
-"can_8c.html#ac7e36a7bd650eb577df12f0437f270bc":[12,0,1,0,5,1,1],
-"can_8c.html#af22346933a97fb1c82d65e9841bd037e":[12,0,1,0,5,1,3],
-"can_8c_source.html":[12,0,1,0,5,1]
+"can_8c.html#a152615d451206e5d152705c704cdf89f":[12,0,1,0,5,1,2]
 };

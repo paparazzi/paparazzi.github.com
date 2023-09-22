@@ -1,5 +1,9 @@
 var NAVTREEINDEX129 =
 {
+"module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling":[1,84,0],
+"module__ctrl_effectiveness_scheduling.html#module_xml__ctrl_effectiveness_scheduling":[1,84,1,0],
+"module__ctrl_module_innerloop_demo.html":[1,85],
+"module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,85,0],
 "module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,85,0,0],
 "module__ctrl_module_outerloop_demo.html":[1,86],
 "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo":[1,86,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX129 =
 "module__follow_me.html#functions__follow_me":[1,89,2],
 "module__follow_me.html#module_load_example__follow_me":[1,89,0],
 "module__follow_me.html#module_xml__follow_me":[1,89,3,0],
-"module__formation_flight.html":[1,293],
-"module__formation_flight.html#datalink_functions__formation_flight":[1,293,2],
-"module__formation_flight.html#functions__formation_flight":[1,293,1],
-"module__formation_flight.html#module_load_example__formation_flight":[1,293,0],
-"module__formation_flight.html#module_xml__formation_flight":[1,293,2,0]
+"module__formation_flight.html":[1,293]
 };

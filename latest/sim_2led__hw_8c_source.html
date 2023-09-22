@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c_source.html',''); init
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">   11</a></span>&#160;value <a class="code" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">register_leds_cb</a>(value cb_name)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = caml_named_value(String_val(cb_name));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = (value *)caml_named_value(String_val(cb_name));</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim_2led__hw_8c.html">led_hw.c</a></li>
-    <li class="footer">Generated on Thu Sep 21 2023 17:58:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 10:09:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

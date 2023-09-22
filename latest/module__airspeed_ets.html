@@ -104,7 +104,6 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;offset&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;scale&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;delay&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SYNC_SEND&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_ETS_SDLOG&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n  &#39;</span></div>
@@ -127,8 +126,6 @@ Define Options</h2>
  Description: sensor scale factor for sensor in proprietary mode (default: 1.8)</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_START_DELAY</code> <b>value:</b> <em>delay</em> <br  />
  Description: set initial start delay in seconds</li>
-<li><b>name:</b> <code>AIRSPEED_ETS_SYNC_SEND</code> <b>value:</b> <em>None</em> <br  />
- Description: flag to transmit the data as it is acquired</li>
 <li><b>name:</b> <code>USE_AIRSPEED_ETS</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
  Description: set airspeed in state interface</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_3RD_PARTY_MODE</code> <b>value:</b> <em>None</em> <br  />
@@ -200,7 +197,6 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_OFFSET&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;offset&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor reading offset for sensor in proprietary mode (default: 0)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SCALE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;scale&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;sensor scale factor for sensor in proprietary mode  (default: 1.8)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_START_DELAY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;delay&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set initial start delay in seconds&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SYNC_SEND&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;flag to transmit the data as it is acquired&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_AIRSPEED_ETS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;set airspeed in state interface&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot;</span>  <span class="keyword">description</span>=<span class="stringliteral">&quot;read raw value for sensor in third-party mode&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_ETS_SDLOG&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;start logging to SD card&quot;</span>/&gt;</div>
@@ -225,6 +221,9 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_I2C0&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_AIRSPEED_ETS&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART0&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line"> </div>
@@ -237,7 +236,7 @@ Raw airspeed_ets.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Sep 21 2023 17:58:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 10:09:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

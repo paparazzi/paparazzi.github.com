@@ -18,5 +18,6 @@ var boards_2ardrone_2actuators_8c =
     [ "actuators_ardrone_set_leds", "boards_2ardrone_2actuators_8c.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a", null ],
     [ "actuators_ardrone_set_pwm", "boards_2ardrone_2actuators_8c.html#a3e18bc7da29945523e0b38e96549ef24", null ],
     [ "actuator_ardrone2_fd", "boards_2ardrone_2actuators_8c.html#a4a0b61428ad6de1e20852693548d819a", null ],
+    [ "actuators_pwm_values", "boards_2ardrone_2actuators_8c.html#a31dfdeb0332592438855ae2d138b39e0", null ],
     [ "led_hw_values", "boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2", null ]
 ];

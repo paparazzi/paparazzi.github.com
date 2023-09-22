@@ -1,5 +1,9 @@
 var NAVTREEINDEX154 =
 {
+"nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d":[12,0,1,1,1,24,1],
+"nps__main__sitl_8c_source.html":[12,0,1,1,1,24],
+"nps__radio__control_8c.html":[12,0,1,1,1,25],
+"nps__radio__control_8c.html#a06bd619ff104745ff531cac75dd3d8f9":[12,0,1,1,1,25,8],
 "nps__radio__control_8c.html#a1028b3dc0a115b1c2cbfbf478d60c1c7":[12,0,1,1,1,25,4],
 "nps__radio__control_8c.html#a15d78e9e98c06c84d0e58d0ad1fe22e3":[12,0,1,1,1,25,9],
 "nps__radio__control_8c.html#a174c7c23b37b8661af129872911138aa":[12,0,1,1,1,25,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX154 =
 "nps__sensor__sideslip_8h.html#a8ba6b5576c34a7f05ac73e80c8299cba":[12,0,1,1,1,48,0,3],
 "nps__sensor__sideslip_8h.html#ac9586b3051a603d9375a8b986a279cb3":[12,0,1,1,1,48,2],
 "nps__sensor__sideslip_8h.html#aed96c7a060e48218f92bb0dcdbada21f":[12,0,1,1,1,48,1],
-"nps__sensor__sideslip_8h.html#afb1ef797da8017b32d4a58a2bb8d4a1f":[12,0,1,1,1,48,0,2],
-"nps__sensor__sideslip_8h.html#structNpsSensorSideSlip":[12,0,1,1,1,48,0],
-"nps__sensor__sideslip_8h_source.html":[12,0,1,1,1,48],
-"nps__sensor__sonar_8c.html":[12,0,1,1,1,49],
-"nps__sensor__sonar_8c.html#a13238850064c31c0da2195fa38098e62":[12,0,1,1,1,49,2]
+"nps__sensor__sideslip_8h.html#afb1ef797da8017b32d4a58a2bb8d4a1f":[12,0,1,1,1,48,0,2]
 };

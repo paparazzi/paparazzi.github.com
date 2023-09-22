@@ -1,5 +1,8 @@
 var NAVTREEINDEX187 =
 {
+"rover_2navigation_8c.html#ab0ed2ee7b3192c24e5386a15a2b28d86":[12,0,1,0,3,3,8,28],
+"rover_2navigation_8c.html#abf18f00b953eff1d3133af7252e32379":[12,0,1,0,3,3,8,21],
+"rover_2navigation_8c.html#ac84aeea6cb272ef7192e4e2d0551be7b":[12,0,1,0,3,3,8,20],
 "rover_2navigation_8c.html#aceb147e5f4a4f8502edfc3f1d59d925d":[12,0,1,0,3,3,8,12],
 "rover_2navigation_8c.html#ad40d34bcd8520f64bb073fae4a08878e":[12,0,1,0,3,3,8,11],
 "rover_2navigation_8c.html#ad4370c1b677df6a67689358a5a8f5014":[12,0,1,0,3,3,8,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX187 =
 "rover__guidance__steering_8h_source.html":[12,0,1,0,3,3,0,5],
 "rover__telemetry_8c.html":[12,0,1,0,3,3,10],
 "rover__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,3,10,0],
-"rover__telemetry_8c_source.html":[12,0,1,0,3,3,10],
-"rpm__sensor_8c.html":[12,0,1,0,6,60,75],
-"rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634":[12,0,1,0,6,60,75,6],
-"rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c":[12,0,1,0,6,60,75,4]
+"rover__telemetry_8c_source.html":[12,0,1,0,3,3,10]
 };

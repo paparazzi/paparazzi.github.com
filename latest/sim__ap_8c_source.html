@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html',''); initResiz
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7">  107</a></span>&#160;value <a class="code" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7">set_datalink_message</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">int</span> n = string_length(<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">char</span> *ss = String_val(<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">char</span> *ss = (<span class="keywordtype">char</span> *)String_val(<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  assert(n &lt;= <a class="code" href="main__demo5_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">MSG_SIZE</a>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">int</span> i;</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__ap_8c.html">sim_ap.c</a></li>
-    <li class="footer">Generated on Thu Sep 21 2023 17:58:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 10:09:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

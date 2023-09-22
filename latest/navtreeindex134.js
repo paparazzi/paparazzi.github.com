@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__radio_control_common.html#module_xml__radio_control_common":[1,342,2,0],
+"module__radio_control_datalink.html":[1,343],
+"module__radio_control_datalink.html#configuration__radio_control_datalink":[1,343,1],
+"module__radio_control_datalink.html#datalink_functions__radio_control_datalink":[1,343,3],
 "module__radio_control_datalink.html#functions__radio_control_datalink":[1,343,2],
 "module__radio_control_datalink.html#module_load_example__radio_control_datalink":[1,343,0],
 "module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,343,3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__sys_time.html#configuration__sys_time":[1,258,1],
 "module__sys_time.html#module_load_example__sys_time":[1,258,0],
 "module__sys_time.html#module_xml__sys_time":[1,258,1,0],
-"module__syslink_dl.html":[1,469],
-"module__syslink_dl.html#configuration__syslink_dl":[1,469,1],
-"module__syslink_dl.html#functions__syslink_dl":[1,469,2],
-"module__syslink_dl.html#module_load_example__syslink_dl":[1,469,0],
-"module__syslink_dl.html#module_xml__syslink_dl":[1,469,2,0]
+"module__syslink_dl.html":[1,469]
 };

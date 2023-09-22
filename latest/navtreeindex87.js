@@ -1,5 +1,9 @@
 var NAVTREEINDEX87 =
 {
+"imu__heater_8h.html#a93d325efe49e225488130b1ad11d9c08":[12,0,1,0,6,35,21,0,1],
+"imu__heater_8h.html#ab10194c4ee7e23fcdee565959b5b50fe":[12,0,1,0,6,35,21,3],
+"imu__heater_8h.html#ab26ee97f1a4e4f761a490c5a75d45150":[12,0,1,0,6,35,21,2],
+"imu__heater_8h.html#ab644f678476110ca5978a4b4b12430e0":[12,0,1,0,6,35,21,0,7],
 "imu__heater_8h.html#ad69653cfc0f057f3ff1824b6ba0965f9":[12,0,1,0,6,35,21,0,3],
 "imu__heater_8h.html#ae36d1a0af429f05adaa89845a5380313":[12,0,1,0,6,35,21,0,0],
 "imu__heater_8h.html#afd0668e6a0c4d7b996f0d365abb9bb70":[12,0,1,0,6,35,21,1],
@@ -164,8 +168,8 @@ var NAVTREEINDEX87 =
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,35,35,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,35,35,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,35,35,4],
-"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,33,0,2],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,35,0,2],
+"imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,33,0,2],
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,35,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,35,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX87 =
 "imu__quality__assessment_8h.html#ad1c99c033f2be4910bbf61447e80274c":[12,0,1,0,6,5,5,0,2],
 "imu__quality__assessment_8h.html#ae36356e5880d69770e5b30a88d404059":[12,0,1,0,6,5,5,0,3],
 "imu__quality__assessment_8h.html#structimu__quality__assessment__data__struct":[12,0,1,0,6,5,5,0],
-"imu__quality__assessment_8h_source.html":[12,0,1,0,6,5,5],
-"imu__temp__ctrl_8c.html":[12,0,1,0,6,36,6],
-"imu__temp__ctrl_8c.html#a112e0589c156ec2791e608ad81bbf641":[12,0,1,0,6,36,6,2],
-"imu__temp__ctrl_8c.html#a253341b876fe39ce96c048542430d907":[12,0,1,0,6,36,6,1],
-"imu__temp__ctrl_8c.html#a9d11daed85da2d62015590ddde39a731":[12,0,1,0,6,36,6,0]
+"imu__quality__assessment_8h_source.html":[12,0,1,0,6,5,5]
 };

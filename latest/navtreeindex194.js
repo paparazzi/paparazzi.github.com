@@ -1,5 +1,8 @@
 var NAVTREEINDEX194 =
 {
+"sst25vfxxxx_8h.html#a1852cfed46b101ba2925ae3ba2781b5e":[12,0,1,0,7,126,3],
+"sst25vfxxxx_8h.html#a1be03b499050fa71161732d91d43d994":[12,0,1,0,7,126,25],
+"sst25vfxxxx_8h.html#a25bc602efe17d25c72a71204a7a23cb6":[12,0,1,0,7,126,6],
 "sst25vfxxxx_8h.html#a2b0ccc088e712ca98b878291d27cd7fc":[12,0,1,0,7,126,1],
 "sst25vfxxxx_8h.html#a2cc62a53e89b0f3e004518bd854bcf48":[12,0,1,0,7,126,12],
 "sst25vfxxxx_8h.html#a33a81c0a5e3f5f30f49777009c364a54":[12,0,1,0,7,126,0,0],
@@ -80,8 +83,8 @@ var NAVTREEINDEX194 =
 "stabilization_8h.html#ac41f248e6265fdcd678691661a7f3c10":[12,0,1,0,3,2,23,13],
 "stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad":[12,0,1,0,3,2,23,19],
 "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a":[12,0,1,0,3,2,23,10],
-"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
 "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,2,0],
+"stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1":[12,0,1,0,3,2,23,3,0],
 "stabilization_8h.html#af997ac8db0c8ededc57d411e8caa47b2":[12,0,1,0,3,2,23,14],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f":[12,0,1,0,3,2,23,3],
 "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i":[12,0,1,0,3,2,23,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX194 =
 "stabilization__attitude__common__int_8h.html#a6bbc38ebd4313ff8c277cbbeb168cdbc":[12,0,1,0,3,2,1,4,0,1],
 "stabilization__attitude__common__int_8h.html#a8adda5f8d9ba43761ce43e05703fed22":[12,0,1,0,3,2,1,4,1],
 "stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669":[12,0,1,0,3,2,1,4,0,3],
-"stabilization__attitude__common__int_8h.html#ad199610cbcc6aab8f6782bc22794d89e":[12,0,1,0,3,2,1,4,0,4],
-"stabilization__attitude__common__int_8h.html#structInt32AttitudeGains":[12,0,1,0,3,2,1,4,0],
-"stabilization__attitude__common__int_8h_source.html":[12,0,1,0,3,2,1,4],
-"stabilization__attitude__euler__float_8c.html":[12,0,1,0,3,2,1,5]
+"stabilization__attitude__common__int_8h.html#ad199610cbcc6aab8f6782bc22794d89e":[12,0,1,0,3,2,1,4,0,4]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX125 =
 {
+"max7456_8c.html#ae46cb108217d2126c9f484cf6b63c728":[12,0,1,0,6,19,0,36],
+"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,19,0,0,2],
+"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
+"max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,19,0,15],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,19,0,1],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,19,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX125 =
 "meteo__stick_8c.html#af72e234b04531004e3c2c1424443719c":[12,0,1,0,6,43,33,0],
 "meteo__stick_8c_source.html":[12,0,1,0,6,43,33],
 "meteo__stick_8h.html":[12,0,1,0,6,43,34],
-"meteo__stick_8h.html#a0d55b5d5c74fa9222a3fc8fc67fddc04":[12,0,1,0,6,43,34,3],
-"meteo__stick_8h.html#a1dec660888ebffb6eb9d1c25d7ab44c0":[12,0,1,0,6,43,34,6],
-"meteo__stick_8h.html#a414f5a2e36ce1e9a52ba3ae913926852":[12,0,1,0,6,43,34,0,2],
-"meteo__stick_8h.html#a44fbda9e381c4ee6cc86d1fb914c7d6b":[12,0,1,0,6,43,34,4],
-"meteo__stick_8h.html#a45a8536a8340bc57dd6539cf369a0c24":[12,0,1,0,6,43,34,0,5]
+"meteo__stick_8h.html#a0d55b5d5c74fa9222a3fc8fc67fddc04":[12,0,1,0,6,43,34,3]
 };

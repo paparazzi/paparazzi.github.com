@@ -10,6 +10,7 @@ var airspeed__ets_8c =
     [ "AIRSPEED_ETS_OFFSET_NBSAMPLES_INIT", "airspeed__ets_8c.html#a548d37e481b0dd9491cadcb9f57269a7", null ],
     [ "AIRSPEED_ETS_SCALE", "airspeed__ets_8c.html#a3161a24791f3734abc01da5e33221fc8", null ],
     [ "AIRSPEED_ETS_START_DELAY", "airspeed__ets_8c.html#a6096ce6a17ed8d333ef3764e1acebad6", null ],
+    [ "airspeed_ets_downlink", "airspeed__ets_8c.html#a156910cb8e807005edd4a740b42a40a2", null ],
     [ "airspeed_ets_init", "airspeed__ets_8c.html#a9ae4d72ff8be91700f01d7ad8fe628a3", null ],
     [ "airspeed_ets_read_event", "airspeed__ets_8c.html#a7f798514c3a1c93dcadd33c6ca0d9c5c", null ],
     [ "airspeed_ets_read_periodic", "airspeed__ets_8c.html#abb7d3e50dfe1b063513c305da6d955db", null ],

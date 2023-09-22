@@ -145,7 +145,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AIRSPEED">AIRSPEED (ID 54)</a></li>
 <li class="level2"><a href="#METEO_STICK">METEO_STICK (ID 55)</a></li>
 <li class="level2"><a href="#BARO_ETS">BARO_ETS (ID 56)</a></li>
-<li class="level2"><a href="#AIRSPEED_ETS">AIRSPEED_ETS (ID 57)</a></li>
 <li class="level2"><a href="#VISION_OUTBACK">VISION_OUTBACK (ID 58)</a></li>
 <li class="level2"><a href="#GPS_LLA">GPS_LLA (ID 59)</a></li>
 <li class="level2"><a href="#H_CTL_A">H_CTL_A (ID 60)</a></li>
@@ -226,7 +225,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#IMU_HEATER">IMU_HEATER (ID 135)</a></li>
 <li class="level2"><a href="#RATE_LOOP">RATE_LOOP (ID 136)</a></li>
 <li class="level2"><a href="#FILTER_ALIGNER">FILTER_ALIGNER (ID 137)</a></li>
-<li class="level2"><a href="#AIRSPEED_MS45XX">AIRSPEED_MS45XX (ID 138)</a></li>
+<li class="level2"><a href="#AIRSPEED_RAW">AIRSPEED_RAW (ID 138)</a></li>
 <li class="level2"><a href="#APPROACH_MOVING_TARGET">APPROACH_MOVING_TARGET (ID 139)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_INT">STAB_ATTITUDE_INT (ID 140)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_REF_INT">STAB_ATTITUDE_REF_INT (ID 141)</a></li>
@@ -1339,9 +1338,9 @@ AIRSPEED (ID 54)</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Fused airspeed from all sources    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">airspeed_sp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">airspeed_sp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">Airspeed setpoint    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">airspeed_cnt   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
@@ -1372,18 +1371,6 @@ METEO_STICK (ID 55)</h2>
 </table>
 <h2><a class="anchor" id="BARO_ETS"></a>
 BARO_ETS (ID 56)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">adc   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">offset   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scaled   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="AIRSPEED_ETS"></a>
-AIRSPEED_ETS (ID 57)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -2815,16 +2802,22 @@ FILTER_ALIGNER (ID 137)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">status   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">UNINIT, RUNNING, LOCKED   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="AIRSPEED_MS45XX"></a>
-AIRSPEED_MS45XX (ID 138)</h2>
+<h2><a class="anchor" id="AIRSPEED_RAW"></a>
+AIRSPEED_RAW (ID 138)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">diffPress   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Pa   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">sensor_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">temperature   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">0.1 deg_celcius   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">raw   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">offset   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Pa   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">diffPress   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Pa   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">temperature   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg_celcius   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="APPROACH_MOVING_TARGET"></a>
@@ -6752,7 +6745,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 21 2023 17:58:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 10:09:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
