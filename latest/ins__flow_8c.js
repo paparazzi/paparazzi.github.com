@@ -68,7 +68,7 @@ var ins__flow_8c =
     [ "ins_optical_flow_cb", "ins__flow_8c.html#aa19ff7047ba59f05ba743c732525d49c", null ],
     [ "ins_reset_filter", "ins__flow_8c.html#a989244f673b43f69d04dc0c7ea8ba60d", null ],
     [ "ins_reset_local_origin", "ins__flow_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
-    [ "ins_rpm_cb", "ins__flow_8c.html#aa88c8e2cd0181ec042c5121cf47e81ee", null ],
+    [ "ins_rpm_cb", "ins__flow_8c.html#a088a7b936253d33a0486d4edfd143102", null ],
     [ "print_ins_flow_state", "ins__flow_8c.html#a24705587252e38ffe0499f53b1c5faf6", null ],
     [ "print_true_state", "ins__flow_8c.html#a55c722921bb81fa0d3a9767dd6d787bf", null ],
     [ "send_bias", "ins__flow_8c.html#aca7f6371638faf5fca72deffe0c476d9", null ],

@@ -167,9 +167,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab3186fac0bc1064939e1d9a2139b9243"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243">rpm_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_act)</td></tr>
-<tr class="memdesc:ab3186fac0bc1064939e1d9a2139b9243"><td class="mdescLeft">&#160;</td><td class="mdescRight">RPM callback for RPM based control throttle curves.  <a href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243">More...</a><br /></td></tr>
-<tr class="separator:ab3186fac0bc1064939e1d9a2139b9243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea10d39a5f57393bddb0c79c95faf8b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8c.html#aea10d39a5f57393bddb0c79c95faf8b2">rpm_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a> *rpm_msg, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_act)</td></tr>
+<tr class="memdesc:aea10d39a5f57393bddb0c79c95faf8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RPM callback for RPM based control throttle curves.  <a href="throttle__curve_8c.html#aea10d39a5f57393bddb0c79c95faf8b2">More...</a><br /></td></tr>
+<tr class="separator:aea10d39a5f57393bddb0c79c95faf8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f584cc127d0e7a4cc646365f4513c9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8c.html#a6f584cc127d0e7a4cc646365f4513c9a">throttle_curve_send_telem</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="separator:a6f584cc127d0e7a4cc646365f4513c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dd506225a07a2ea4e6f39cfb34d6397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throttle__curve_8c.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve_init</a> (void)</td></tr>
@@ -315,8 +315,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3186fac0bc1064939e1d9a2139b9243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3186fac0bc1064939e1d9a2139b9243">&#9670;&nbsp;</a></span>rpm_cb()</h2>
+<a id="aea10d39a5f57393bddb0c79c95faf8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea10d39a5f57393bddb0c79c95faf8b2">&#9670;&nbsp;</a></span>rpm_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,8 +333,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
-          <td class="paramname"><em>rpm</em>, </td>
+          <td class="paramtype">struct <a class="el" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a> *&#160;</td>
+          <td class="paramname"><em>rpm_msg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -359,7 +359,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="throttle__curve_8c_source.html#l00102">102</a> of file <a class="el" href="throttle__curve_8c_source.html">throttle_curve.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rpm__sensor_8c_source.html#l00033">rpm</a>, <a class="el" href="throttle__curve_8h_source.html#l00053">throttle_curve_t::rpm_meas</a>, <a class="el" href="throttle__curve_8h_source.html#l00054">throttle_curve_t::rpm_measured</a>, <a class="el" href="throttle__curve_8c_source.html#l00060">throttle_curve</a>, and <a class="el" href="throttle__curve_8c_source.html#l00054">THROTTLE_CURVE_RPM_ACT</a>.</p>
+<p class="reference">References <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00046">rpm_act_t::rpm</a>, <a class="el" href="throttle__curve_8h_source.html#l00053">throttle_curve_t::rpm_meas</a>, <a class="el" href="throttle__curve_8h_source.html#l00054">throttle_curve_t::rpm_measured</a>, <a class="el" href="throttle__curve_8c_source.html#l00060">throttle_curve</a>, and <a class="el" href="throttle__curve_8c_source.html#l00054">THROTTLE_CURVE_RPM_ACT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="throttle__curve_8c_source.html#l00079">throttle_curve_init()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -367,8 +367,8 @@ Variables</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="throttle__curve_8c_ab3186fac0bc1064939e1d9a2139b9243_icgraph.png" border="0" usemap="#athrottle__curve_8c_ab3186fac0bc1064939e1d9a2139b9243_icgraph" alt=""/></div>
-<map name="athrottle__curve_8c_ab3186fac0bc1064939e1d9a2139b9243_icgraph" id="athrottle__curve_8c_ab3186fac0bc1064939e1d9a2139b9243_icgraph">
+<div class="center"><img src="throttle__curve_8c_aea10d39a5f57393bddb0c79c95faf8b2_icgraph.png" border="0" usemap="#athrottle__curve_8c_aea10d39a5f57393bddb0c79c95faf8b2_icgraph" alt=""/></div>
+<map name="athrottle__curve_8c_aea10d39a5f57393bddb0c79c95faf8b2_icgraph" id="athrottle__curve_8c_aea10d39a5f57393bddb0c79c95faf8b2_icgraph">
 <area shape="rect" title="RPM callback for RPM based control throttle curves." alt="" coords="195,5,265,32"/>
 <area shape="rect" href="throttle__curve_8c.html#a6dd506225a07a2ea4e6f39cfb34d6397" title="Initialize the default throttle curve values." alt="" coords="5,5,147,32"/>
 </map>
@@ -406,7 +406,7 @@ Variables</h2></td></tr>
 <map name="athrottle__curve_8c_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph" id="athrottle__curve_8c_a6dd506225a07a2ea4e6f39cfb34d6397_cgraph">
 <area shape="rect" title="Initialize the default throttle curve values." alt="" coords="5,56,147,83"/>
 <area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="195,5,397,32"/>
-<area shape="rect" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243" title="RPM callback for RPM based control throttle curves." alt="" coords="261,56,331,83"/>
+<area shape="rect" href="throttle__curve_8c.html#aea10d39a5f57393bddb0c79c95faf8b2" title="RPM callback for RPM based control throttle curves." alt="" coords="261,56,331,83"/>
 <area shape="rect" href="throttle__curve_8c.html#a6f584cc127d0e7a4cc646365f4513c9a" title=" " alt="" coords="221,107,371,149"/>
 </map>
 </div>
@@ -566,7 +566,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ced032e2525c5750f626a61130b62832.html">helicopter</a></li><li class="navelem"><a class="el" href="throttle__curve_8c.html">throttle_curve.c</a></li>
-    <li class="footer">Generated on Fri Sep 22 2023 11:17:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 12:15:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
