@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('rpm__sensor_8c_source.html',''); initR
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">struct </span><a class="code" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a> rpm_msg = {0, 0};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  rpm_msg.<a class="code" href="modules_2actuators_2actuators_8h.html#a13ace7395dcdf3bd252b2123ddbed66f">rpm</a> =  = <a class="code" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f">update_first_order_low_pass</a>(&amp;<a class="code" href="rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634">rpm_lp</a>, <a class="code" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor_get_rpm</a>());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  rpm_msg.<a class="code" href="modules_2actuators_2actuators_8h.html#a13ace7395dcdf3bd252b2123ddbed66f">rpm</a> = <a class="code" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f">update_first_order_low_pass</a>(&amp;<a class="code" href="rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634">rpm_lp</a>, <a class="code" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor_get_rpm</a>());</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  AbiSendMsgRPM(<a class="code" href="abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57">RPM_SENSOR_ID</a>, &amp;rpm_msg, 1);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('rpm__sensor_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="rpm__sensor_8c.html">rpm_sensor.c</a></li>
-    <li class="footer">Generated on Fri Sep 22 2023 14:42:45 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 23 2023 13:32:23 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
