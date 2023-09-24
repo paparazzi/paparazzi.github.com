@@ -103,6 +103,7 @@ Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ahrs_int_cmpl_quat&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_MAG_UPDATE_ALL_AXES&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_USE_GPS_HEADING&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_FLOATING_HEADING&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AHRS_PROPAGATE_LOW_PASS_RATES&quot; /&gt;\n    &#39;</span></div>
@@ -132,6 +133,8 @@ Define Options</h2>
  Description: Use magnetometer to update all axes and not only yaw</li>
 <li><b>name:</b> <code>AHRS_USE_GPS_HEADING</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: Use GPS course to update heading</li>
+<li><b>name:</b> <code>AHRS_FLOATING_HEADING</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: If no GPS and no Mag is available, define AHRS_FLOATING_HEADING to silent warnings.</li>
 <li><b>name:</b> <code>AHRS_GRAVITY_UPDATE_COORDINATED_TURN</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
  Description: Compensation of centrifugal force via GPS speed (to fly in circles with a fixedwing)</li>
 <li><b>name:</b> <code>AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
@@ -187,6 +190,7 @@ Raw ahrs_int_cmpl_quat.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_ALIGNER_LED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;LED number to indicate AHRS alignment, none to disable (default is board dependent)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_MAG_UPDATE_ALL_AXES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use magnetometer to update all axes and not only yaw&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_USE_GPS_HEADING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Use GPS course to update heading&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_FLOATING_HEADING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If no GPS and no Mag is available, define AHRS_FLOATING_HEADING to silent warnings.&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Compensation of centrifugal force via GPS speed (to fly in circles with a fixedwing)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN assumes the GPS speed is in the X axis direction. Quadshot, DelftaCopter and other hybrids can have the GPS speed in the negative Z direction&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AHRS_PROPAGATE_LOW_PASS_RATES&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;apply a low pass filter on rotational velocity&quot;</span>/&gt;</div>
@@ -261,7 +265,7 @@ Raw ahrs_int_cmpl_quat.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Sep 23 2023 13:32:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 24 2023 23:17:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

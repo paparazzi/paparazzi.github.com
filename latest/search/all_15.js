@@ -329,7 +329,7 @@ var searchData=
   ['texton_5fdistribution_24755',['texton_distribution',['../textons_8h.html#a37c1f9ffc95bdb92779d73f088750028',1,'texton_distribution():&#160;textons.c'],['../textons_8c.html#a37c1f9ffc95bdb92779d73f088750028',1,'texton_distribution():&#160;textons.c']]],
   ['texton_5fdistribution_5fpath_24756',['TEXTON_DISTRIBUTION_PATH',['../optical__flow__landing_8c.html#a04c14b557c702744150706a8a96d8d1b',1,'optical_flow_landing.c']]],
   ['texton_5fdistribution_5fstereoboard_24757',['texton_distribution_stereoboard',['../optical__flow__landing_8c.html#a893c6216b04b131ca01d183572ac5857',1,'optical_flow_landing.c']]],
-  ['texton_5ffunc_24758',['texton_func',['../textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd',1,'textons.c']]],
+  ['texton_5ffunc_24758',['texton_func',['../textons_8c.html#aee6f9cad557b037f261fc21e48faaf41',1,'textons.c']]],
   ['textons_2ec_24759',['textons.c',['../textons_8c.html',1,'']]],
   ['textons_2eh_24760',['textons.h',['../textons_8h.html',1,'']]],
   ['textons_5falpha_24761',['TEXTONS_ALPHA',['../textons_8c.html#a38c42458d6c8409b91d27227f297229d',1,'textons.c']]],

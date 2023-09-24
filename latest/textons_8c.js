@@ -20,7 +20,7 @@ var textons_8c =
     [ "get_entropy", "textons_8c.html#a99b36a3cb5143fc6eacbfa6049842535", null ],
     [ "load_texton_dictionary", "textons_8c.html#a21c316a603e6af19c1b7c42f5eabb16c", null ],
     [ "save_texton_dictionary", "textons_8c.html#a078d928dcb614af8cba4d1eefe4aa12d", null ],
-    [ "texton_func", "textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd", null ],
+    [ "texton_func", "textons_8c.html#aee6f9cad557b037f261fc21e48faaf41", null ],
     [ "textons_init", "textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d", null ],
     [ "textons_stop", "textons_8c.html#aba987c616eb0f83d63d1689238f4f7b6", null ],
     [ "alpha", "textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b", null ],

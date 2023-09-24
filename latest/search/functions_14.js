@@ -45,7 +45,7 @@ var searchData=
   ['terminal_5fnewline_34151',['terminal_newline',['../microrl_8c.html#abd2cca83a3e6069ba16ed5eccf3e1284',1,'microrl.c']]],
   ['terminal_5fprint_5fline_34152',['terminal_print_line',['../microrl_8c.html#a9b2a709ec6fb9a71a73e086c7142b42e',1,'microrl.c']]],
   ['terminal_5freset_5fcursor_34153',['terminal_reset_cursor',['../microrl_8c.html#a7606992a7e55d11cdad8eb8d1e9cee2b',1,'microrl.c']]],
-  ['texton_5ffunc_34154',['texton_func',['../textons_8c.html#af1e1ef8dc03056fdd2375a3207a62bfd',1,'textons.c']]],
+  ['texton_5ffunc_34154',['texton_func',['../textons_8c.html#aee6f9cad557b037f261fc21e48faaf41',1,'textons.c']]],
   ['textons_5finit_34155',['textons_init',['../textons_8c.html#ac363e3fda520a9cc84e35d929f01d62d',1,'textons_init(void):&#160;textons.c'],['../textons_8h.html#ac363e3fda520a9cc84e35d929f01d62d',1,'textons_init(void):&#160;textons.c']]],
   ['textons_5fstop_34156',['textons_stop',['../textons_8c.html#aba987c616eb0f83d63d1689238f4f7b6',1,'textons_stop(void):&#160;textons.c'],['../textons_8h.html#aba987c616eb0f83d63d1689238f4f7b6',1,'textons_stop(void):&#160;textons.c']]],
   ['tfmini_5fdownlink_34157',['tfmini_downlink',['../tfmini_8h.html#a9408bd3a8ca4ff25ea5d47ccff9d6ef8',1,'tfmini.h']]],

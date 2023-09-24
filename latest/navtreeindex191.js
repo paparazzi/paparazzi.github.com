@@ -208,7 +208,7 @@ var NAVTREEINDEX191 =
 "sim_2mcu__periph_2udp__arch_8h_source.html":[12,0,1,0,0,2,0,16],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html":[12,0,1,0,0,2,1,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29":[12,0,1,0,0,2,1,0,0,1],
-"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2":[12,0,1,0,0,2,1,0,0,2],
+"sim_2modules_2actuators_2actuators__dshot__arch_8c.html#aaf9aa75d1fc089615d8cee524e688cac":[12,0,1,0,0,2,1,0,0,2],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c.html#ae19151c72d42b6c277faf5da1962d3b3":[12,0,1,0,0,2,1,0,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8c_source.html":[12,0,1,0,0,2,1,0,0],
 "sim_2modules_2actuators_2actuators__dshot__arch_8h.html":[12,0,1,0,0,2,1,0,1],
