@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"motor__mixing_8h.html#aae6551feb36ac5137aaeb8246516e54c":[12,0,1,0,6,0,28,0,0],
-"motor__mixing_8h.html#af3d7567d0ca74f734e5c4e148d5c9b65":[12,0,1,0,6,0,28,0,3],
 "motor__mixing_8h.html#structMotorMixing":[12,0,1,0,6,0,28,0],
 "motor__mixing_8h_source.html":[12,0,1,0,6,0,28],
 "motor__mixing__types_8h.html":[12,0,1,0,6,0,29],
@@ -249,5 +247,7 @@ var NAVTREEINDEX137 =
 "mpu60x0__regs_8h.html#a727ebda4274f7acd1f42183c917a16ba":[12,0,1,0,7,94,55],
 "mpu60x0__regs_8h.html#a728170e530b6994de25d18357f6980f2":[12,0,1,0,7,94,71],
 "mpu60x0__regs_8h.html#a72e9404b0447c718c9e8d693932f39d1":[12,0,1,0,7,94,30],
-"mpu60x0__regs_8h.html#a77a774309e13c7973cf17c8b3d5cfc91":[12,0,1,0,7,94,51]
+"mpu60x0__regs_8h.html#a77a774309e13c7973cf17c8b3d5cfc91":[12,0,1,0,7,94,51],
+"mpu60x0__regs_8h.html#a7a2e9ee5a668374e5570c6c8954daecc":[12,0,1,0,7,94,26],
+"mpu60x0__regs_8h.html#a7ae214ad9475200976c1c2dd4031687a":[12,0,1,0,7,94,28]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"dw1000__arduino_8c.html#af3891630638703e550f2d4484c0d3814":[12,0,1,0,6,15,2,35],
-"dw1000__arduino_8c.html#afa73a5b09f692baf52aa4112369c18e5":[12,0,1,0,6,15,2,0,12],
-"dw1000__arduino_8c.html#afae3eacc11602b866a622a1aa47b84ac":[12,0,1,0,6,15,2,13],
-"dw1000__arduino_8c.html#structDW1000":[12,0,1,0,6,15,2,0],
 "dw1000__arduino_8c_source.html":[12,0,1,0,6,15,2],
 "dw1000__arduino_8h.html":[12,0,1,0,6,15,3],
 "dw1000__arduino_8h.html#a0eb39777eac135c917af2eed39cce7f1":[12,0,1,0,6,15,3,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX50 =
 "elle0__common_8h.html#a2a8241c19fc58341f2cac4db9d699c3a":[12,0,1,0,1,34,139],
 "elle0__common_8h.html#a2bfe3742638f101571e96416b9e73123":[12,0,1,0,1,34,40],
 "elle0__common_8h.html#a342eee19f66562516414e255f3db4cc4":[12,0,1,0,1,34,68],
-"elle0__common_8h.html#a345f7e7ea14339c4e1fab93846675d5e":[12,0,1,0,1,34,96]
+"elle0__common_8h.html#a345f7e7ea14339c4e1fab93846675d5e":[12,0,1,0,1,34,96],
+"elle0__common_8h.html#a3527010cfbb35e98ab1bba9ded57da14":[12,0,1,0,1,34,70],
+"elle0__common_8h.html#a362880424997bf76d4e742c8c8504014":[12,0,1,0,1,34,140],
+"elle0__common_8h.html#a37154c806d85fb9f9158f86bb55e9ee0":[12,0,1,0,1,34,26],
+"elle0__common_8h.html#a37def755123d949a1f843b002daa9408":[12,0,1,0,1,34,137]
 };

@@ -10,5 +10,6 @@ var invensense2_8h_structinvensense2__t =
     [ "gyro_range", "invensense2_8h.html#afc8e0743f3665e89e796ac06ad641507", null ],
     [ "register_bank", "invensense2_8h.html#a5a023d2d0501a3702f3a8ccbbe69384d", null ],
     [ "status", "invensense2_8h.html#a5fb84f30a65fc4f4aa21114473a2521a", null ],
+    [ "timebase_correction_pll", "invensense2_8h.html#a8be543f0d26f56ca89b8d2f08aeda759", null ],
     [ "timer", "invensense2_8h.html#ad14d6f1919238bb474ab1711c80e467d", null ]
 ];

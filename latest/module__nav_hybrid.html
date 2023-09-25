@@ -93,7 +93,18 @@ $(document).ready(function(){initNavTree('module__nav_hybrid.html',''); initResi
 <h1><a class="anchor" id="module_load_example__nav_hybrid"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;nav_hybrid&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__nav_hybrid"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__nav_hybrid"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>NAV_HYBRID</code> prefix: <code>NAV_HYBRID_</code> <ul>
+<li><b>name</b> <code>MAX_DECELERATION</code> <b>value:</b> <em>1.0</em> <br  />
+ Description: Maximum deceleration in [m/s2] when arriving to hover at a WP</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="functions__nav_hybrid"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -123,11 +134,15 @@ Raw nav_hybrid.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">Navigation</span> <span class="keyword">patterns</span> <span class="keyword">and</span> <span class="keyword">flight</span> <span class="keyword">plan</span> <span class="keyword">handling</span> <span class="keyword">for</span> <span class="keyword">hybrid</span> <span class="keyword">airframes</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_HYBRID&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NAV_HYBRID_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_DECELERATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum deceleration in [m/s2] when arriving to hover at a WP&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;nav_hybrid&quot;</span>&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_max_deceleration_sp&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;max_deceleration&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;NAV_HYBRID_MAX_DECELERATION&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
@@ -156,7 +171,7 @@ Raw nav_hybrid.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Sep 25 2023 09:33:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 25 2023 09:52:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -6,7 +6,6 @@ var disco_8h =
     [ "BOARD_DISCO", "disco_8h.html#a0bd4697e31b2ceddbb7f20f7c3928f77", null ],
     [ "DEFAULT_ACTUATORS", "disco_8h.html#aa7699f41fbe105c8f5061cc48a5f6307", null ],
     [ "GPS_UBX_ENABLE_NMEA_DATA_MASK", "disco_8h.html#a795637c038061d50a428834973f875ef", null ],
-    [ "MS45XX_AIRSPEED_SCALE", "disco_8h.html#a0653ab87779d024f8e2974d7f5278cff", null ],
     [ "MS45XX_I2C_DEV", "disco_8h.html#a3723de8b0fa913e00bb51cf175fbc10c", null ],
     [ "MS45XX_LOWPASS_TAU", "disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d", null ],
     [ "MS45XX_OUTPUT_TYPE", "disco_8h.html#a32a84107f1cd5e45239321240d480d0d", null ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__humid_sht.html":[1,270],
-"module__humid_sht.html#configuration__humid_sht":[1,270,1],
-"module__humid_sht.html#functions__humid_sht":[1,270,2],
 "module__humid_sht.html#module_load_example__humid_sht":[1,270,0],
 "module__humid_sht.html#module_xml__humid_sht":[1,270,2,0],
 "module__humid_sht_i2c.html":[1,271],
@@ -249,5 +246,8 @@ var NAVTREEINDEX131 =
 "module__ins_hff.html#functions__ins_hff":[1,221,2],
 "module__ins_hff.html#module_load_example__ins_hff":[1,221,0],
 "module__ins_hff.html#module_xml__ins_hff":[1,221,2,0],
-"module__ins_hff_extended.html":[1,222]
+"module__ins_hff_extended.html":[1,222],
+"module__ins_hff_extended.html#configuration__ins_hff_extended":[1,222,1],
+"module__ins_hff_extended.html#functions__ins_hff_extended":[1,222,2],
+"module__ins_hff_extended.html#module_load_example__ins_hff_extended":[1,222,0]
 };

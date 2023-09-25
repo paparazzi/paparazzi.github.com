@@ -141,6 +141,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a4b690e8c1727436ef525302049b1e823"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__rotorcraft__hybrid_8h.html#a4b690e8c1727436ef525302049b1e823">nav_max_speed</a></td></tr>
 <tr class="separator:a4b690e8c1727436ef525302049b1e823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016b21b84495b64eed8e59f0264e32de"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__rotorcraft__hybrid_8h.html#a016b21b84495b64eed8e59f0264e32de">nav_max_deceleration_sp</a></td></tr>
+<tr class="separator:a016b21b84495b64eed8e59f0264e32de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Specific navigation functions for hybrid aircraft. </p>
@@ -167,9 +169,9 @@ Variables</h2></td></tr>
 <p>Init and register nav functions. </p>
 <p>For hybrid vehicle nav Init should be called after the normal rotorcraft nav_init as we are reusing some of the functions and overwritting others </p>
 
-<p class="definition">Definition at line <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00244">244</a> of file <a class="el" href="nav__rotorcraft__hybrid_8c_source.html">nav_rotorcraft_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00250">250</a> of file <a class="el" href="nav__rotorcraft__hybrid_8c_source.html">nav_rotorcraft_hybrid.c</a>.</p>
 
-<p class="reference">References <a class="el" href="nav__base_8h_source.html#l00064">NavBase_t::circle</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00042">DEFAULT_CIRCLE_RADIUS</a>, <a class="el" href="nav__base_8h_source.html#l00063">NavBase_t::goto_wp</a>, <a class="el" href="nav__base_8h_source.html#l00040">NavGoto_t::leg_length</a>, <a class="el" href="nav__base_8h_source.html#l00039">NavGoto_t::leg_progress</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00140">nav_hybrid_approaching()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00179">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00059">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00091">nav_hybrid_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00419">nav_register_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00412">nav_register_goto_wp()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00030">nav_rotorcraft_base</a>, and <a class="el" href="nav__base_8h_source.html#l00047">NavCircle_t::radius</a>.</p>
+<p class="reference">References <a class="el" href="nav__base_8h_source.html#l00064">NavBase_t::circle</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00042">DEFAULT_CIRCLE_RADIUS</a>, <a class="el" href="nav__base_8h_source.html#l00063">NavBase_t::goto_wp</a>, <a class="el" href="nav__base_8h_source.html#l00040">NavGoto_t::leg_length</a>, <a class="el" href="nav__base_8h_source.html#l00039">NavGoto_t::leg_progress</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00146">nav_hybrid_approaching()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00185">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00061">nav_hybrid_goto()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00097">nav_hybrid_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00419">nav_register_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00412">nav_register_goto_wp()</a>, <a class="el" href="nav__rotorcraft__base_8c_source.html#l00030">nav_rotorcraft_base</a>, and <a class="el" href="nav__base_8h_source.html#l00047">NavCircle_t::radius</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -215,6 +217,32 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a016b21b84495b64eed8e59f0264e32de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016b21b84495b64eed8e59f0264e32de">&#9670;&nbsp;</a></span>nav_max_deceleration_sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float nav_max_deceleration_sp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00042">42</a> of file <a class="el" href="nav__rotorcraft__hybrid_8c_source.html">nav_rotorcraft_hybrid.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00061">nav_hybrid_goto()</a>.</p>
+
+</div>
+</div>
 <a id="a4b690e8c1727436ef525302049b1e823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b690e8c1727436ef525302049b1e823">&#9670;&nbsp;</a></span>nav_max_speed</h2>
 
@@ -237,7 +265,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00036">36</a> of file <a class="el" href="nav__rotorcraft__hybrid_8c_source.html">nav_rotorcraft_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00179">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00059">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00091">nav_hybrid_route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00185">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00061">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00097">nav_hybrid_route()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +275,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__rotorcraft__hybrid_8h.html">nav_rotorcraft_hybrid.h</a></li>
-    <li class="footer">Generated on Mon Sep 25 2023 09:33:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 25 2023 09:52:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

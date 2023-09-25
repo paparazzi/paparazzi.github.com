@@ -1,8 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__motor_mixing.html":[1,18],
-"module__motor_mixing.html#configuration__motor_mixing":[1,18,1],
-"module__motor_mixing.html#functions__motor_mixing":[1,18,2],
 "module__motor_mixing.html#module_load_example__motor_mixing":[1,18,0],
 "module__motor_mixing.html#module_xml__motor_mixing":[1,18,2,0],
 "module__mppt.html":[1,129],
@@ -50,9 +47,10 @@ var NAVTREEINDEX133 =
 "module__nav_heli_spinup.html#module_load_example__nav_heli_spinup":[1,309,0],
 "module__nav_heli_spinup.html#module_xml__nav_heli_spinup":[1,309,0,0],
 "module__nav_hybrid.html":[1,310],
-"module__nav_hybrid.html#functions__nav_hybrid":[1,310,1],
+"module__nav_hybrid.html#configuration__nav_hybrid":[1,310,1],
+"module__nav_hybrid.html#functions__nav_hybrid":[1,310,2],
 "module__nav_hybrid.html#module_load_example__nav_hybrid":[1,310,0],
-"module__nav_hybrid.html#module_xml__nav_hybrid":[1,310,1,0],
+"module__nav_hybrid.html#module_xml__nav_hybrid":[1,310,2,0],
 "module__nav_lace.html":[1,311],
 "module__nav_lace.html#functions__nav_lace":[1,311,1],
 "module__nav_lace.html#module_load_example__nav_lace":[1,311,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX133 =
 "module__px4_gimbal.html#functions__px4_gimbal":[1,464,2],
 "module__px4_gimbal.html#module_load_example__px4_gimbal":[1,464,0],
 "module__px4_gimbal.html#module_xml__px4_gimbal":[1,464,2,0],
-"module__px4flow.html":[1,338]
+"module__px4flow.html":[1,338],
+"module__px4flow.html#configuration__px4flow":[1,338,1],
+"module__px4flow.html#functions__px4flow":[1,338,2]
 };

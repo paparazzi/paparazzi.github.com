@@ -1,8 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__req_8____unnamed232____":[12,0,1,0,1,2,0,0,16,19],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__status_8____unnamed234____":[12,0,1,0,1,2,0,0,16,20],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__regs":[12,0,1,0,1,2,0,0,16,16],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__x_8____unnamed236____":[12,0,1,0,1,2,0,0,16,21],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__window__pos__y_8____unnamed238____":[12,0,1,0,1,2,0,0,16,22],
 "avi__isp__statistics__yuv_8h.html#unionavi__isp__statistics__yuv__ae__histogram__y":[12,0,1,0,1,2,0,0,16,17],
@@ -249,5 +246,8 @@ var NAVTREEINDEX20 =
 "baro__board__common_8c.html#a63b378088aacd63bd09fb331c875dd91":[12,0,1,0,6,60,34,1],
 "baro__board__common_8c.html#aa018d39cda0714aa4b87955f478380e8":[12,0,1,0,6,60,34,2],
 "baro__board__common_8c_source.html":[12,0,1,0,6,60,34],
-"baro__board__common_8h.html":[12,0,1,0,6,60,35]
+"baro__board__common_8h.html":[12,0,1,0,6,60,35],
+"baro__board__common_8h.html#a55f55250d4fa4ead474b388b3edf5bb3":[12,0,1,0,6,60,35,0],
+"baro__board__common_8h.html#a63b378088aacd63bd09fb331c875dd91":[12,0,1,0,6,60,35,1],
+"baro__board__common_8h.html#aa018d39cda0714aa4b87955f478380e8":[12,0,1,0,6,60,35,2]
 };

@@ -182,29 +182,28 @@ $(document).ready(function(){initNavTree('disco_8h_source.html',''); initResizab
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="disco_8h.html#a7761b57fc68d5793ad3c3ea2edab6cbc">   97</a></span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_TYPE 1</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="disco_8h.html#a32a84107f1cd5e45239321240d480d0d">   98</a></span>&#160;<span class="preprocessor">#define MS45XX_OUTPUT_TYPE 1</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="disco_8h.html#a0a6da70b0d6ba228fcd5d258f7bce7e7">   99</a></span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_OUTPUT_TYPE_InH2O 1</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="disco_8h.html#a0653ab87779d024f8e2974d7f5278cff">  100</a></span>&#160;<span class="preprocessor">#define MS45XX_AIRSPEED_SCALE 1.6327</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifndef USE_AIRSPEED_LOWPASS_FILTER</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="disco_8h.html#ae4db6d792956c6002d91d931d0beab12">  102</a></span>&#160;<span class="preprocessor">#define USE_AIRSPEED_LOWPASS_FILTER 1</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//#if USE_AIRSPEED_LOWPASS_FILTER /* Always used now */</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef MS45XX_LOWPASS_TAU</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d">  106</a></span>&#160;<span class="preprocessor">#define MS45XX_LOWPASS_TAU 0.15</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">//#endif</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">/* To be flexible and be able to disable use of airspeed in state this could have been in the airframe file ofcourse</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * but most users just want to have perfectly flying Disco, so enable per default... */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#ifndef USE_AIRSPEED</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">  113</a></span>&#160;<span class="preprocessor">#define USE_AIRSPEED 1</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">/* These are the default Disco values for sonar */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c">  117</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_HIGH_TO_LOW 0.75 </span><span class="comment">//m</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c">  118</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_LOW_TO_HIGH 1.5  </span><span class="comment">//m</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="disco_8h.html#a6017153886b228ceea828e5d7333a20b">  119</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_COUNT 50</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3">  120</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_PEAK_THRESHOLD 50</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_DISCO */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifndef USE_AIRSPEED_LOWPASS_FILTER</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="disco_8h.html#ae4db6d792956c6002d91d931d0beab12">  101</a></span>&#160;<span class="preprocessor">#define USE_AIRSPEED_LOWPASS_FILTER 1</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//#if USE_AIRSPEED_LOWPASS_FILTER /* Always used now */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifndef MS45XX_LOWPASS_TAU</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="disco_8h.html#a0e66f9da0ae757d8312ddc3e12e2b78d">  105</a></span>&#160;<span class="preprocessor">#define MS45XX_LOWPASS_TAU 0.15</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">/* To be flexible and be able to disable use of airspeed in state this could have been in the airframe file ofcourse</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * but most users just want to have perfectly flying Disco, so enable per default... */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#ifndef USE_AIRSPEED</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">  112</a></span>&#160;<span class="preprocessor">#define USE_AIRSPEED 1</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* These are the default Disco values for sonar */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c">  116</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_HIGH_TO_LOW 0.75 </span><span class="comment">//m</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c">  117</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_LOW_TO_HIGH 1.5  </span><span class="comment">//m</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="disco_8h.html#a6017153886b228ceea828e5d7333a20b">  118</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_TRANSITION_COUNT 50</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3">  119</a></span>&#160;<span class="preprocessor">#define SONAR_BEBOP_PEAK_THRESHOLD 50</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_DISCO */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="adisco_8h_html_abe211b229633c3f39cbfb50c5765b4b4"><div class="ttname"><a href="disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></div><div class="ttdeci">struct video_config_t front_camera</div><div class="ttdoc">Video thread dummy for simulation.</div><div class="ttdef"><b>Definition:</b> <a href="boards_2ardrone_2board_8c_source.html#l00001">board.c:43</a></div></div>
 <div class="ttc" id="adisco_8h_html_aebe228d13ad2e4e0c8528d945ad76a82"><div class="ttname"><a href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></div><div class="ttdeci">struct video_config_t bottom_camera</div><div class="ttdef"><b>Definition:</b> <a href="boards_2ardrone_2board_8c_source.html#l00001">board.c:68</a></div></div>
 <div class="ttc" id="amt9f002_8h_html"><div class="ttname"><a href="mt9f002_8h.html">mt9f002.h</a></div><div class="ttdoc">Initialization and configuration of the MT9F002 CMOS Chip.</div></div>
@@ -218,7 +217,7 @@ $(document).ready(function(){initNavTree('disco_8h_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="disco_8h.html">disco.h</a></li>
-    <li class="footer">Generated on Mon Sep 25 2023 09:33:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 25 2023 09:52:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
