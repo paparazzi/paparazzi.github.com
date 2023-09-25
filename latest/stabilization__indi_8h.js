@@ -15,6 +15,7 @@ var stabilization__indi_8h =
     [ "stabilization_indi_set_quat_setpoint_i", "stabilization__indi_8h.html#ae50a856798e14e1715cd3959c34b63df", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi_8h.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
     [ "stabilization_indi_set_stab_sp", "stabilization__indi_8h.html#aa20c753face711591a2a4eba30a7a635", null ],
+    [ "act_is_servo", "stabilization__indi_8h.html#a3099f5d69f8b2b84a9b1f7685f325adb", null ],
     [ "act_pref", "stabilization__indi_8h.html#a147581e222fb8f9b1cb2d3479a05aa01", null ],
     [ "actuator_state_filt_vect", "stabilization__indi_8h.html#aadec734a354c9ca37ceea556f59bcf8c", null ],
     [ "Bwls", "stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a", null ],

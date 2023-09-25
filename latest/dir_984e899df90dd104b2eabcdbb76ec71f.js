@@ -6,6 +6,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "common_flight_plan.h", "common__flight__plan_8h.html", "common__flight__plan_8h" ],
     [ "common_nav.c", "common__nav_8c.html", "common__nav_8c" ],
     [ "common_nav.h", "common__nav_8h.html", "common__nav_8h" ],
+    [ "ground_detect_sensor.c", "ground__detect__sensor_8c.html", "ground__detect__sensor_8c" ],
+    [ "ground_detect_sensor.h", "ground__detect__sensor_8h.html", "ground__detect__sensor_8h" ],
     [ "nav_airspeed.c", "nav__airspeed_8c.html", "nav__airspeed_8c" ],
     [ "nav_airspeed.h", "nav__airspeed_8h.html", "nav__airspeed_8h" ],
     [ "nav_base.h", "nav__base_8h.html", "nav__base_8h" ],

@@ -1947,6 +1947,13 @@ var onboard_modules =
         [ "Raw ballistic_touchdown.xml file:", "module__ballistic_touchdown.html#module_xml__ballistic_touchdown", null ]
       ] ]
     ] ],
+    [ "ground_detect_sensor module", "module__ground_detect_sensor.html", [
+      [ "Example for airframe file", "module__ground_detect_sensor.html#module_load_example__ground_detect_sensor", null ],
+      [ "Module configuration options", "module__ground_detect_sensor.html#configuration__ground_detect_sensor", null ],
+      [ "Module functions", "module__ground_detect_sensor.html#functions__ground_detect_sensor", [
+        [ "Raw ground_detect_sensor.xml file:", "module__ground_detect_sensor.html#module_xml__ground_detect_sensor", null ]
+      ] ]
+    ] ],
     [ "nav_basic_fw module", "module__nav_basic_fw.html", [
       [ "Example for airframe file", "module__nav_basic_fw.html#module_load_example__nav_basic_fw", null ],
       [ "Module configuration options", "module__nav_basic_fw.html#configuration__nav_basic_fw", null ],
