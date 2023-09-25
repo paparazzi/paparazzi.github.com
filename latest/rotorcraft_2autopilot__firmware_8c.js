@@ -8,6 +8,8 @@ var rotorcraft_2autopilot__firmware_8c =
     [ "autopilot_check_in_flight", "rotorcraft_2autopilot__firmware_8c.html#a8a5717e6ffce00d9926abc6c56336852", null ],
     [ "autopilot_event", "rotorcraft_2autopilot__firmware_8c.html#a0af571252a9b9c534b5fe24a4ef4d20d", null ],
     [ "autopilot_firmware_init", "rotorcraft_2autopilot__firmware_8c.html#a2bb31e995242a89c837b4eda1d08fe57", null ],
+    [ "autopilot_ground_detection", "rotorcraft_2autopilot__firmware_8c.html#acb7a04d359b7fe8a334138692c896517", null ],
+    [ "autopilot_in_flight_end_detection", "rotorcraft_2autopilot__firmware_8c.html#a54f23ae607362684743c5e660da4d0f5", null ],
     [ "autopilot_reset_in_flight_counter", "rotorcraft_2autopilot__firmware_8c.html#af07a7f0abf8699eb6b006f1b7a53daea", null ],
     [ "send_body_rates_accel", "rotorcraft_2autopilot__firmware_8c.html#a661acab8931d63576772359cda38acc2", null ],
     [ "send_energy", "rotorcraft_2autopilot__firmware_8c.html#a5b82f013ab4d5b172d8859488d3d6040", null ],
