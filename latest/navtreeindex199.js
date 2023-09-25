@@ -1,5 +1,7 @@
 var NAVTREEINDEX199 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#a1085933b98ac1dc4211b2d0d8a7fd6dc":[12,0,1,0,0,3,0,11,1,2],
+"stm32_2mcu__periph_2spi__arch_8c.html#a14f668fc1be63f17e24c4c3d16c625da":[12,0,1,0,0,3,0,11,1,15],
 "stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3":[12,0,1,0,0,3,0,11,3],
 "stm32_2mcu__periph_2spi__arch_8c.html#a1fcd46a62bab151ce1f91b72cdbe3568":[12,0,1,0,0,3,0,11,29],
 "stm32_2mcu__periph_2spi__arch_8c.html#a23f6cd09954b922f646d7f955bc167f2":[12,0,1,0,0,3,0,11,1,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX199 =
 "structUSBMassStorageConfig.html#a4ed2afe90449fca523bf5894dc3087ec":[11,0,967,1],
 "structUSBMassStorageConfig.html#a914c2c144276e24914e9855d2cb0fe45":[11,0,967,2],
 "structUSBMassStorageConfig.html#a9e0e4670c831a9487ea64d1aa093eb26":[11,0,967,6],
-"structUSBMassStorageConfig.html#ae3623b5fc5cbe67c108362db4b909330":[11,0,967,5],
-"structgec__transport.html":[11,0,512],
-"structgec__transport.html#a030bac4970b62ec023612987ccf5657d":[11,0,512,6]
+"structUSBMassStorageConfig.html#ae3623b5fc5cbe67c108362db4b909330":[11,0,967,5]
 };
