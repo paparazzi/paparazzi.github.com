@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"paparazzi_messages.html#DCF":[2,0,39],
+"paparazzi_messages.html#DCF_REG_TABLE":[2,1,56],
 "paparazzi_messages.html#DCF_THETA":[2,0,235],
 "paparazzi_messages.html#DC_INFO":[2,0,62],
 "paparazzi_messages.html#DC_SHOT":[2,0,108],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#TCAS_RESOLVE":[2,1,16],
 "paparazzi_messages.html#TCAS_RESOLVED":[2,0,120],
 "paparazzi_messages.html#TCAS_TA":[2,0,118],
-"paparazzi_messages.html#TELEMETRY_CLASS":[2,0],
-"paparazzi_messages.html#TELEMETRY_ERROR":[2,2,31],
-"paparazzi_messages.html#TELEMETRY_MESSAGE":[2,2,32]
+"paparazzi_messages.html#TELEMETRY_CLASS":[2,0]
 };

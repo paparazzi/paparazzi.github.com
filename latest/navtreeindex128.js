@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"module__airspeed_adc.html#configuration__airspeed_adc":[1,357,1],
+"module__airspeed_adc.html#functions__airspeed_adc":[1,357,2],
 "module__airspeed_adc.html#module_load_example__airspeed_adc":[1,357,0],
 "module__airspeed_adc.html#module_xml__airspeed_adc":[1,357,2,0],
 "module__airspeed_ads1114.html":[1,358],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "module__control_adaptive.html":[1,71],
 "module__control_adaptive.html#module_load_example__control_adaptive":[1,71,0],
 "module__control_adaptive.html#module_xml__control_adaptive":[1,71,0,0],
-"module__control_energy.html":[1,72],
-"module__control_energy.html#module_load_example__control_energy":[1,72,0],
-"module__control_energy.html#module_xml__control_energy":[1,72,0,0]
+"module__control_energy.html":[1,72]
 };

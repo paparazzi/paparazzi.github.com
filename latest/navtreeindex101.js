@@ -1,5 +1,7 @@
 var NAVTREEINDEX101 =
 {
+"libisp_8h.html#structlibisp__config":[12,0,1,0,1,2,0,2,1],
+"libisp_8h.html#structlibisp__context":[12,0,1,0,1,2,0,2,0],
 "libisp_8h_source.html":[12,0,1,0,1,2,0,2],
 "libisp__config_8h.html":[12,0,1,0,1,2,0,3],
 "libisp__config_8h.html#a1ba27b7f125e173ee8f6e130c8a84858":[12,0,1,0,1,2,0,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX101 =
 "linux_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,4,0],
 "linux_2mcu__arch_8h_source.html":[12,0,1,0,0,1,4],
 "linux_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,1,0,0],
-"linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234":[12,0,1,0,0,1,0,0,4],
-"linux_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824":[12,0,1,0,0,1,0,0,0],
-"linux_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0":[12,0,1,0,0,1,0,0,3]
+"linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234":[12,0,1,0,0,1,0,0,4]
 };

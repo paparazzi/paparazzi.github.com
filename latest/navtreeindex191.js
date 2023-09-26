@@ -1,5 +1,7 @@
 var NAVTREEINDEX191 =
 {
+"setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f":[12,0,1,0,3,4,0,7],
+"setup__actuators_8c.html#a528ae321c363421027b0480ac206a32a":[12,0,1,0,3,4,0,2],
 "setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[12,0,1,0,3,4,0,4],
 "setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe":[12,0,1,0,3,4,0,3],
 "setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b":[12,0,1,0,3,4,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX191 =
 "sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a697598adcd1b4a73e0f04eec132a8a4c":[12,0,1,0,0,2,1,0,3,0],
 "sim_2modules_2actuators_2actuators__dualpwm__arch_8h.html#aaa5eaaac2133ba043ff00d2924da989a":[12,0,1,0,0,2,1,0,3,1],
 "sim_2modules_2actuators_2actuators__dualpwm__arch_8h_source.html":[12,0,1,0,0,2,1,0,3],
-"sim_2modules_2actuators_2actuators__pwm__arch_8c.html":[12,0,1,0,0,2,1,0,4],
-"sim_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606":[12,0,1,0,0,2,1,0,4,0],
-"sim_2modules_2actuators_2actuators__pwm__arch_8c_source.html":[12,0,1,0,0,2,1,0,4]
+"sim_2modules_2actuators_2actuators__pwm__arch_8c.html":[12,0,1,0,0,2,1,0,4]
 };

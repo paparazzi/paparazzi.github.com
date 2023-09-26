@@ -1,5 +1,7 @@
 var NAVTREEINDEX200 =
 {
+"structStabilizationSetpoint.html#a7db7bdaadda5f616b7722c325a0cc710":[11,0,913,1],
+"structStabilizationSetpoint.html#af8ccfe3b97dae95a655b219d1f9f7f77":[11,0,913,2],
 "structUSBMassStorageConfig.html":[11,0,967],
 "structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,967,3],
 "structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,967,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX200 =
 "sys__id__chirp_8c.html#ad255f355f6f935c955a2237c76eb34a9":[12,0,1,0,6,66,8,3],
 "sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100":[12,0,1,0,6,66,8,6],
 "sys__id__chirp_8c.html#aeaacc8de78b225d2ae3fcbf2bea70cb1":[12,0,1,0,6,66,8,2],
-"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,66,8,14],
-"sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733":[12,0,1,0,6,66,8,15],
-"sys__id__chirp_8c.html#af5c1450c810c76b6542c912f0f7cce9d":[12,0,1,0,6,66,8,12]
+"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,66,8,14]
 };

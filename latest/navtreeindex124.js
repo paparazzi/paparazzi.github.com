@@ -1,17 +1,19 @@
 var NAVTREEINDEX124 =
 {
+"mav__exercise_8c.html#ac2fc0752f9ac5d1c38f991acadda7726":[12,0,1,0,6,42,0,11],
+"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3":[12,0,1,0,6,42,0,3],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a":[12,0,1,0,6,42,0,3,3],
-"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a":[12,0,1,0,6,49,0,5,3],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a":[12,0,1,0,6,49,2,3,3],
+"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3a9cfa27b414cab750fb14ec07cdf5cf6a":[12,0,1,0,6,49,0,5,3],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7":[12,0,1,0,6,42,0,3,2],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7":[12,0,1,0,6,49,2,3,2],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa1e81e4fe9fc3d41fffdb945abc5d4d7":[12,0,1,0,6,49,0,5,2],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,42,0,3,0],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,49,0,5,0],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,49,2,3,0],
-"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,42,0,3,1],
-"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,2,3,1],
 "mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,0,5,1],
+"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,2,3,1],
+"mav__exercise_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,42,0,3,1],
 "mav__exercise_8c.html#ae966a608a1c5346beea4d7fc29f31e90":[12,0,1,0,6,42,0,1],
 "mav__exercise_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,42,0,2],
 "mav__exercise_8c_source.html":[12,0,1,0,6,42,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX124 =
 "max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,19,0,24],
 "max7456_8c.html#ab6589475b928e58fdf044d03783fcb54":[12,0,1,0,6,19,0,12],
 "max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f":[12,0,1,0,6,19,0,20],
-"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,19,0,0,1],
-"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,8,6,0,1],
-"max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd":[12,0,1,0,6,19,0,10]
+"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,19,0,0,1]
 };

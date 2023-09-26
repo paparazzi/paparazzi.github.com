@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__mission_rotorcraft.html#module_load_example__mission_rotorcraft":[1,290,0],
+"module__mission_rotorcraft.html#module_xml__mission_rotorcraft":[1,290,0,0],
 "module__motor_mixing.html":[1,18],
 "module__motor_mixing.html#configuration__motor_mixing":[1,18,1],
 "module__motor_mixing.html#functions__motor_mixing":[1,18,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__px4_flash.html#module_xml__px4_flash":[1,463,2,0],
 "module__px4_gimbal.html":[1,464],
 "module__px4_gimbal.html#configuration__px4_gimbal":[1,464,1],
-"module__px4_gimbal.html#functions__px4_gimbal":[1,464,2],
-"module__px4_gimbal.html#module_load_example__px4_gimbal":[1,464,0],
-"module__px4_gimbal.html#module_xml__px4_gimbal":[1,464,2,0]
+"module__px4_gimbal.html#functions__px4_gimbal":[1,464,2]
 };

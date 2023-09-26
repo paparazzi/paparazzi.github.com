@@ -1,5 +1,7 @@
 var NAVTREEINDEX112 =
 {
+"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ad32cdf14cfbf6a083a29bcfa44bab720":[12,0,1,0,7,76,7,3],
+"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ae1062c47f520b7196cb87476df801465":[12,0,1,0,7,76,7,1],
 "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4aec72e9269aec62a2fb98b11e5d7a2b2d":[12,0,1,0,7,76,7,9],
 "lsm303dlhc_8h.html#a427d5584b0889473db9a789364090706":[12,0,1,0,7,76,1,2],
 "lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7":[12,0,1,0,7,76,8],
@@ -204,8 +206,8 @@ var NAVTREEINDEX112 =
 "lsm6ds33__i2c_8h.html#a87207bcdb47c2d7be96a8005f81ffe9b":[12,0,1,0,7,82,0,6],
 "lsm6ds33__i2c_8h.html#a8b7427850e3d14df1ec2f6897e738975":[12,0,1,0,7,82,0,2],
 "lsm6ds33__i2c_8h.html#a9106acb39d21133d8910d11995882632":[12,0,1,0,7,82,0,5],
-"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,82,1,0],
 "lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,82,2,1],
+"lsm6ds33__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,82,1,0],
 "lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130":[12,0,1,0,7,82,5],
 "lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999":[12,0,1,0,7,82,3],
 "lsm6ds33__i2c_8h.html#aca01e794d44828f26da9a7fd01efc4fe":[12,0,1,0,7,82,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX112 =
 "lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57":[12,0,1,0,7,83,62],
 "lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57a2d00b9c8c75356a35c5381072571bfc3":[12,0,1,0,7,83,62,3],
 "lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57a2febbc59fa8313f93ca9c085c6a1de2e":[12,0,1,0,7,83,62,0],
-"lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57a7877bd72045cdbaefe3c7f9d45ddfb44":[12,0,1,0,7,83,62,1],
-"lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57abab09aeb082db68ce29f0b9c1ea70041":[12,0,1,0,7,83,62,2],
-"lsm6ds33__regs_8h.html#a3c675713fb8258a20b1ca10f1264cc73":[12,0,1,0,7,83,21]
+"lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57a7877bd72045cdbaefe3c7f9d45ddfb44":[12,0,1,0,7,83,62,1]
 };
