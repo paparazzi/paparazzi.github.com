@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__px4flow.html":[1,338],
+"module__px4flow.html#configuration__px4flow":[1,338,1],
+"module__px4flow.html#functions__px4flow":[1,338,2],
 "module__px4flow.html#module_load_example__px4flow":[1,338,0],
 "module__px4flow.html#module_xml__px4flow":[1,338,2,0],
 "module__px4flow_i2c.html":[1,339],
@@ -246,8 +249,5 @@ var NAVTREEINDEX134 =
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,422,1],
 "module__sys_id_chirp.html#functions__sys_id_chirp":[1,422,2],
 "module__sys_id_chirp.html#module_load_example__sys_id_chirp":[1,422,0],
-"module__sys_id_chirp.html#module_xml__sys_id_chirp":[1,422,2,0],
-"module__sys_id_doublet.html":[1,423],
-"module__sys_id_doublet.html#configuration__sys_id_doublet":[1,423,1],
-"module__sys_id_doublet.html#functions__sys_id_doublet":[1,423,2]
+"module__sys_id_chirp.html#module_xml__sys_id_chirp":[1,422,2,0]
 };

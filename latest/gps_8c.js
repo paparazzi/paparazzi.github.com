@@ -8,6 +8,7 @@ var gps_8c =
     [ "ecef_vel_int_from_gps", "gps_8c.html#a5dc6e3f966bdb5440ffe748d7a0f80c3", null ],
     [ "gps_cb", "gps_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],
     [ "gps_day_number", "gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7", null ],
+    [ "gps_fix_valid", "gps_8c.html#adacd42babc7bbccac91aaffd58e2ae0d", null ],
     [ "gps_init", "gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771", null ],
     [ "gps_inject_data", "gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb", null ],
     [ "gps_parse_GPS_INJECT", "gps_8c.html#a5b1e34c27ba1044a445e23c93f7212ab", null ],

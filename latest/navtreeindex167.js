@@ -1,5 +1,8 @@
 var NAVTREEINDEX167 =
 {
+"paparazzi_messages.html#TELEMETRY_STATUS":[2,2,30],
+"paparazzi_messages.html#TEMP_ADC":[2,0,146],
+"paparazzi_messages.html#TEMP_TCOUPLE":[2,0,124],
 "paparazzi_messages.html#TEMT_STATUS":[2,0,95],
 "paparazzi_messages.html#THROTTLE_CURVE":[2,0,105],
 "paparazzi_messages.html#TIME":[2,0,208],
@@ -246,8 +249,5 @@ var NAVTREEINDEX167 =
 "photogrammetry__calculator_8h_source.html":[12,0,1,0,6,9,1],
 "pid_8h.html":[12,0,1,0,2,8],
 "pid_8h.html#a06d0a1645a489cc56c382512e5130398":[12,0,1,0,2,8,12],
-"pid_8h.html#a0ded46710487dac33f34194178e755ae":[12,0,1,0,2,8,6],
-"pid_8h.html#a183674cb7597315abe76ba91a4292948":[12,0,1,0,2,8,7],
-"pid_8h.html#a24be178a650ec27689b1d14f00adcb6c":[12,0,1,0,2,8,0,3],
-"pid_8h.html#a2987742f63279262f9ff30d3fe628388":[12,0,1,0,2,8,9]
+"pid_8h.html#a0ded46710487dac33f34194178e755ae":[12,0,1,0,2,8,6]
 };

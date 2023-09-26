@@ -1,5 +1,8 @@
 var NAVTREEINDEX132 =
 {
+"module__ins_hff_extended.html#configuration__ins_hff_extended":[1,222,1],
+"module__ins_hff_extended.html#functions__ins_hff_extended":[1,222,2],
+"module__ins_hff_extended.html#module_load_example__ins_hff_extended":[1,222,0],
 "module__ins_hff_extended.html#module_xml__ins_hff_extended":[1,222,2,0],
 "module__ins_mekf_wind.html":[1,223],
 "module__ins_mekf_wind.html#configuration__ins_mekf_wind":[1,223,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX132 =
 "module__mission_fw.html#module_xml__mission_fw":[1,289,0,0],
 "module__mission_rotorcraft.html":[1,290],
 "module__mission_rotorcraft.html#module_load_example__mission_rotorcraft":[1,290,0],
-"module__mission_rotorcraft.html#module_xml__mission_rotorcraft":[1,290,0,0],
-"module__motor_mixing.html":[1,18],
-"module__motor_mixing.html#configuration__motor_mixing":[1,18,1],
-"module__motor_mixing.html#functions__motor_mixing":[1,18,2]
+"module__mission_rotorcraft.html#module_xml__mission_rotorcraft":[1,290,0,0]
 };

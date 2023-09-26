@@ -1,13 +1,14 @@
 var stabilization__indi_8c =
 [
     [ "INDI_ALLOWED_G_FACTOR", "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b", null ],
+    [ "INDI_FILTER_RATES_SECOND_ORDER", "stabilization__indi_8c.html#affd3650a52433ac4b286e7ff5a911fc7", null ],
     [ "INDI_HROTTLE_LIMIT_AIRSPEED_FWD", "stabilization__indi_8c.html#a7bf5459db51ee8cf15b92aa18907488e", null ],
+    [ "STABILIZATION_INDI_ALLOCATION_PSEUDO_INVERSE", "stabilization__indi_8c.html#a66c986a966ec2363098607afcb1623e8", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_P", "stabilization__indi_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_Q", "stabilization__indi_8c.html#a51a4671d083da69c010c0985faf4d2f3", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_R", "stabilization__indi_8c.html#abae06312debbf68b936cfb6eb0ad8913", null ],
     [ "bound_g_mat", "stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45", null ],
     [ "calc_g1_element", "stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca", null ],
-    [ "calc_g1g2_pseudo_inv", "stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3", null ],
     [ "calc_g2_element", "stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326", null ],
     [ "get_actuator_state", "stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0", null ],
     [ "init_filters", "stabilization__indi_8c.html#af2e990d419fc562777944d2446ab1b32", null ],
