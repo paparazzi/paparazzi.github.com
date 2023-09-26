@@ -94,7 +94,26 @@ $(document).ready(function(){initNavTree('module__mission_common.html',''); init
 <h1><a class="anchor" id="module_load_example__mission_common"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mission_common&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__mission_common"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__mission_common"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>MISSION</code> prefix: <code>MISSION_</code> <ul>
+<li><b>name</b> <code>ELEMENT_NB</code> <b>value:</b> <em>20</em> <br  />
+ Description: maximum number of elements in the mission queue</li>
+<li><b>name</b> <code>REGISTER_NB</code> <b>value:</b> <em>6</em> <br  />
+ Description: maximum number of custom elemets to register</li>
+<li><b>name</b> <code>CHECK_UNIQUE_ID</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
+ Description: check before inserting that all elements ID are unique in the queue (default: TRUE)</li>
+<li><b>name</b> <code>ALT_PROXIMITY</code> <b>value:</b> <em>distance</em> <br  />
+ Description: if defined, enforce a vertical proximity to validate the target points (default: undefined)</li>
+<li><b>name</b> <code>WAIT_TIMEOUT</code> <b>value:</b> <em>time</em> <br  />
+ Description: time in waiting pattern when queue is empty before ending the mission (default: fixedwing=120, rotorcraft=30)</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="functions__mission_common"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -155,6 +174,13 @@ Raw mission_common.xml file:</h2>
 <div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">parse</span> <span class="keyword">datalink</span> <span class="keyword">commands</span> <span class="keyword">for</span> <span class="keyword">basic</span> <span class="keyword">navigation</span> <span class="keyword">routines</span></div>
 <div class="line">      <span class="keyword">and</span> <span class="keyword">store</span> <span class="keyword">them</span> <span class="keyword">in</span> <span class="keyword">a</span> <span class="keyword">queue.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MISSION&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;MISSION_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ELEMENT_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum number of elements in the mission queue&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;REGISTER_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;6&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum number of custom elemets to register&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CHECK_UNIQUE_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;check before inserting that all elements ID are unique in the queue (default: TRUE)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ALT_PROXIMITY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;distance&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;m&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;if defined, enforce a vertical proximity to validate the target points (default: undefined)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WAIT_TIMEOUT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;time&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;s&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;time in waiting pattern when queue is empty before ending the mission (default: fixedwing=120, rotorcraft=30)&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mission_common.h&quot;</span>/&gt;</div>
@@ -193,7 +219,7 @@ Raw mission_common.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 15:59:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 20:17:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

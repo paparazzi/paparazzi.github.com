@@ -9,7 +9,7 @@ var nav__survey__hybrid_8h =
     ] ],
     [ "nav_survey_hybrid_init", "nav__survey__hybrid_8h.html#a53df0159c400ec7c56b38209a0897a29", null ],
     [ "nav_survey_hybrid_run", "nav__survey__hybrid_8h.html#aad2e8c336e9d7c16f8f84430739aac9b", null ],
-    [ "nav_survey_hybrid_setup_orientation", "nav__survey__hybrid_8h.html#afdc3bdcabf15676630f631b05eaed42f", null ],
-    [ "nav_survey_hybrid_setup_towards", "nav__survey__hybrid_8h.html#a5e87d354f22e9b9077b6ce4e82769ddb", null ],
+    [ "nav_survey_hybrid_setup_orientation", "nav__survey__hybrid_8h.html#aafd69e03cfcb57e38dcc2baec41a81ef", null ],
+    [ "nav_survey_hybrid_setup_towards", "nav__survey__hybrid_8h.html#ac4cc415eb4b287268ec5952a779a46d4", null ],
     [ "survey_hybrid", "nav__survey__hybrid_8h.html#adbd24689adcb1f623b9c0d8687798031", null ]
 ];

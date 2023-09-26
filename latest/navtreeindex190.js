@@ -1,5 +1,8 @@
 var NAVTREEINDEX190 =
 {
+"sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086e":[12,0,1,0,7,124,6],
+"sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086ea2d9a5b8a5d8cbc3554845375ec149673":[12,0,1,0,7,124,6,1],
+"sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086ea2ee9870e0646e57c121bc35a9124d7a1":[12,0,1,0,7,124,6,3],
 "sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086ea69e80550252fe38e4511a6f5cf604e28":[12,0,1,0,7,124,6,0],
 "sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086ea9cf15f0cdf14db481424a0aa7cad732a":[12,0,1,0,7,124,6,2],
 "sdcard__spi_8h.html#ad74eeebda29a6102d9efda412bdba151":[12,0,1,0,7,124,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX190 =
 "settings_8h.html#a96bbf08af032ab9c1e7c15c66eb2d513":[12,0,1,0,6,12,11,2],
 "settings_8h.html#aaaafb969ffa6ec451b6bb2facd5736ee":[12,0,1,0,6,12,11,8],
 "settings_8h.html#abe2013fefe36cd9b1f7e800aa65ee9ea":[12,0,1,0,6,12,11,11],
-"settings_8h.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,11,9],
-"settings_8h_source.html":[12,0,1,0,6,12,11],
-"setup__actuators_8c.html":[12,0,1,0,3,4,0],
-"setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10":[12,0,1,0,3,4,0,5]
+"settings_8h.html#ada97d7166aa02d3c945ef0333770f640":[12,0,1,0,6,12,11,9]
 };

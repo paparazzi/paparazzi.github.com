@@ -21,5 +21,6 @@ var mission__common_8c =
     [ "mission_parse_UPDATE", "mission__common_8c.html#a8ae82a35d851ba67a7d044f4950db583", null ],
     [ "mission_register", "mission__common_8c.html#ac357198f4e5126c4c698d1ab2c8330c3", null ],
     [ "mission_status_report", "mission__common_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa", null ],
+    [ "send_mission_status", "mission__common_8c.html#a92589aec12981186b683aaf6415778f9", null ],
     [ "mission", "mission__common_8c.html#a06160041db75e80665ebf0f22f13cc98", null ]
 ];

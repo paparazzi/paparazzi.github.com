@@ -1,5 +1,8 @@
 var NAVTREEINDEX165 =
 {
+"opticflow__pmw3901_8c.html#a2322e65a95d068baae9381aace2519ee":[12,0,1,0,6,60,73,8],
+"opticflow__pmw3901_8c.html#a2351fcd899abe0185253547d1166f73c":[12,0,1,0,6,60,73,14],
+"opticflow__pmw3901_8c.html#a5584a920011028006d3e7aee4a8178aa":[12,0,1,0,6,60,73,3],
 "opticflow__pmw3901_8c.html#a5fb2c15d2dacf06185977f580770b596":[12,0,1,0,6,60,73,9],
 "opticflow__pmw3901_8c.html#a60140676d3a419b54d6a2a8294e4b994":[12,0,1,0,6,60,73,10],
 "opticflow__pmw3901_8c.html#a638703b0151fe6e287f8917113740fd5":[12,0,1,0,6,60,73,13],
@@ -50,9 +53,9 @@ var NAVTREEINDEX165 =
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,42,0,3,6],
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,49,0,5,6],
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,49,2,3,6],
+"orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,42,0,3,5],
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,2,3,5],
 "orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,0,5,5],
-"orange__avoider_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,42,0,3,5],
 "orange__avoider_8c.html#ae966a608a1c5346beea4d7fc29f31e90":[12,0,1,0,6,49,0,2],
 "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,49,0,3],
 "orange__avoider_8c.html#aeee6fa70f4e970f7ee09a92f4c70c005":[12,0,1,0,6,49,0,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX165 =
 "paparazzi_messages.html#COPILOT_STATUS_DL":[2,1,30],
 "paparazzi_messages.html#CSC_CAN_DEBUG":[2,0,173],
 "paparazzi_messages.html#CSC_CAN_MSG":[2,0,174],
-"paparazzi_messages.html#CSC_SERVO_CMD":[2,1,46],
-"paparazzi_messages.html#DATALINK_CLASS":[2,1],
-"paparazzi_messages.html#DATALINK_MESSAGE":[2,2,33],
-"paparazzi_messages.html#DATALINK_REPORT":[2,0,29]
+"paparazzi_messages.html#CSC_SERVO_CMD":[2,1,46]
 };

@@ -120,16 +120,17 @@ $(document).ready(function(){initNavTree('nav__rotorcraft__base_8h_source.html',
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#aa9aacd23ad02eee9d32481775bf9dd31">   41</a></span>&#160;<span class="preprocessor">#define NavCircleCount() nav_circle_get_count(&amp;nav_rotorcraft_base.circle)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a0809ecd41f0b888de7f9754e75caf82d">   42</a></span>&#160;<span class="preprocessor">#define NavCircleQdr() nav_circle_qdr(&amp;nav_rotorcraft_base.circle)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a9f9ad9045eda753a7ea58359bd6a0581">   46</a></span>&#160;<span class="preprocessor">#define NavQdrCloseTo(x) CloseDegAngles(x, NavCircleQdr())</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a68ab3f04c3fcd85380c950db512fd97e">   47</a></span>&#160;<span class="preprocessor">#define NavCourseCloseTo(x) CloseDegAngles(x, DegOfRad(stateGetHorizontalSpeedDir_f()))</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a39cedd908d5c36f785c250a72d4cff4c">   43</a></span>&#160;<span class="preprocessor">#define NavOvalCount nav_rotorcraft_base.oval.count</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a9f9ad9045eda753a7ea58359bd6a0581">   47</a></span>&#160;<span class="preprocessor">#define NavQdrCloseTo(x) CloseDegAngles(x, NavCircleQdr())</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="nav__rotorcraft__base_8h.html#a68ab3f04c3fcd85380c950db512fd97e">   48</a></span>&#160;<span class="preprocessor">#define NavCourseCloseTo(x) CloseDegAngles(x, DegOfRad(stateGetHorizontalSpeedDir_f()))</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="ttc" id="anav__base_8h_html"><div class="ttname"><a href="nav__base_8h.html">nav_base.h</a></div></div>
 <div class="ttc" id="anav__base_8h_html_structNavBase__t"><div class="ttname"><a href="nav__base_8h.html#structNavBase__t">NavBase_t</a></div><div class="ttdoc">Basic Nav struct.</div><div class="ttdef"><b>Definition:</b> <a href="nav__base_8h_source.html#l00062">nav_base.h:62</a></div></div>
-<div class="ttc" id="anav__rotorcraft__base_8h_html_a4735172c8b5bb941ce8a76c972b74b9f"><div class="ttname"><a href="nav__rotorcraft__base_8h.html#a4735172c8b5bb941ce8a76c972b74b9f">nav_rotorcraft_base</a></div><div class="ttdeci">struct NavBase_t nav_rotorcraft_base</div><div class="ttdoc">Basic Nav struct.</div><div class="ttdef"><b>Definition:</b> <a href="nav__rotorcraft__base_8c_source.html#l00001">nav_rotorcraft_base.c:30</a></div></div>
+<div class="ttc" id="anav__rotorcraft__base_8h_html_a4735172c8b5bb941ce8a76c972b74b9f"><div class="ttname"><a href="nav__rotorcraft__base_8h.html#a4735172c8b5bb941ce8a76c972b74b9f">nav_rotorcraft_base</a></div><div class="ttdeci">struct NavBase_t nav_rotorcraft_base</div><div class="ttdoc">Basic Nav struct.</div><div class="ttdef"><b>Definition:</b> <a href="nav__rotorcraft__base_8c_source.html#l00001">nav_rotorcraft_base.c:31</a></div></div>
 <div class="ttc" id="anav__rotorcraft__base_8h_html_aabec21757401b8f7b3fb00bec69f0afa"><div class="ttname"><a href="nav__rotorcraft__base_8h.html#aabec21757401b8f7b3fb00bec69f0afa">nav_rotorcraft_init</a></div><div class="ttdeci">void nav_rotorcraft_init(void)</div><div class="ttdoc">Init and register nav functions.</div><div class="ttdef"><b>Definition:</b> <a href="nav__rotorcraft__base_8c_source.html#l00298">nav_rotorcraft_base.c:298</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('nav__rotorcraft__base_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__rotorcraft__base_8h.html">nav_rotorcraft_base.h</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 15:59:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Sep 26 2023 20:17:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

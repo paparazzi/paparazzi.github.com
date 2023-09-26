@@ -1880,6 +1880,7 @@ var onboard_modules =
     ] ],
     [ "mission_common module", "module__mission_common.html", [
       [ "Example for airframe file", "module__mission_common.html#module_load_example__mission_common", null ],
+      [ "Module configuration options", "module__mission_common.html#configuration__mission_common", null ],
       [ "Module functions", "module__mission_common.html#functions__mission_common", null ],
       [ "Datalink Functions", "module__mission_common.html#datalink_functions__mission_common", [
         [ "Raw mission_common.xml file:", "module__mission_common.html#module_xml__mission_common", null ]
