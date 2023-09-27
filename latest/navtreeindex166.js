@@ -1,5 +1,16 @@
 var NAVTREEINDEX166 =
 {
+"paparazzi_messages.html#CIRCLE_STATUS":[2,2,20],
+"paparazzi_messages.html#CLOUD_SENSOR":[2,0,59],
+"paparazzi_messages.html#COMMANDS":[2,0,100],
+"paparazzi_messages.html#COMMANDS_RAW":[2,1,11],
+"paparazzi_messages.html#CONFIG":[2,2,9],
+"paparazzi_messages.html#CONFIG_REQ":[2,2,8],
+"paparazzi_messages.html#COPILOT_STATUS":[2,0,123],
+"paparazzi_messages.html#COPILOT_STATUS_DL":[2,1,30],
+"paparazzi_messages.html#CSC_CAN_DEBUG":[2,0,173],
+"paparazzi_messages.html#CSC_CAN_MSG":[2,0,174],
+"paparazzi_messages.html#CSC_SERVO_CMD":[2,1,46],
 "paparazzi_messages.html#DATALINK_CLASS":[2,1],
 "paparazzi_messages.html#DATALINK_MESSAGE":[2,2,33],
 "paparazzi_messages.html#DATALINK_REPORT":[2,0,29],
@@ -238,16 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#STEREOCAM_VELOCITY":[2,4,10],
 "paparazzi_messages.html#STEREO_IMG":[2,0,210],
 "paparazzi_messages.html#SUPERBITRF":[2,0,70],
-"paparazzi_messages.html#SURVEY":[2,0,26],
-"paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
-"paparazzi_messages.html#SVINFO":[2,0,24],
-"paparazzi_messages.html#SVSINFO":[2,2,15],
-"paparazzi_messages.html#SWARM_FISH":[2,0,75],
-"paparazzi_messages.html#SYS_MON":[2,0,32],
-"paparazzi_messages.html#TAKEOFF":[2,0,3],
-"paparazzi_messages.html#TARGET_POS":[2,1,41],
-"paparazzi_messages.html#TARGET_POS_INFO":[2,0,93],
-"paparazzi_messages.html#TCAS_DEBUG":[2,0,121],
-"paparazzi_messages.html#TCAS_RA":[2,0,119],
-"paparazzi_messages.html#TCAS_RESOLVE":[2,1,16]
+"paparazzi_messages.html#SURVEY":[2,0,26]
 };

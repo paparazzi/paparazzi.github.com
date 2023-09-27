@@ -83,7 +83,7 @@ var stabilization__indi_8c =
     [ "r_filt", "stabilization__indi_8c.html#a4ac9ff1a86e6ed214eb20621f830265c", null ],
     [ "rates_filt_fo", "stabilization__indi_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
     [ "rpm_ev", "stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4", null ],
-    [ "stab_att_ff_rates", "stabilization__indi_8c.html#a2a1090446a96875a21729aca636af624", null ],
+    [ "stab_att_ff_rates", "stabilization__indi_8c.html#af2d690d55e1d333e600be4dbcaab87ba", null ],
     [ "stab_att_sp_euler", "stabilization__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
     [ "stabilization_att_indi_cmd", "stabilization__indi_8c.html#a1ab1b3a18a465440c67159c392970573", null ],

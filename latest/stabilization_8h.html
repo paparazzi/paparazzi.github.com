@@ -193,6 +193,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:structStabilizationSetpoint_8sp_8ltp__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structStabilizationSetpoint_8sp_8ltp__f"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f">StabilizationSetpoint.sp.ltp_f</a></td></tr>
 <tr class="separator:structStabilizationSetpoint_8sp_8ltp__f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionStabilizationSetpoint_8r__sp"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#unionStabilizationSetpoint_8r__sp">StabilizationSetpoint.r_sp</a></td></tr>
+<tr class="separator:unionStabilizationSetpoint_8r__sp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -293,18 +295,6 @@ quat_f</td>
 quat_i</td>
 <td class="fielddoc">
 </td></tr>
-<tr><td class="fieldtype">
-<a id="a308ad4bc5a8ea5ca067b26939fe1bd4e"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a></td>
-<td class="fieldname">
-rates_f</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="aae2fdb99ecfaf41a78fd4b856e764874"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
-<td class="fieldname">
-rates_i</td>
-<td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
@@ -365,6 +355,37 @@ heading</td>
 <a id="a4384543978c11a2d3da5c6cfeed94998"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a></td>
 <td class="fieldname">
 vect</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionStabilizationSetpoint_8r__sp" id="unionStabilizationSetpoint_8r__sp"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionStabilizationSetpoint_8r__sp">&#9670;&nbsp;</a></span>StabilizationSetpoint.r_sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union StabilizationSetpoint.r_sp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00062">62</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a308ad4bc5a8ea5ca067b26939fe1bd4e"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a></td>
+<td class="fieldname">
+rates_f</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aae2fdb99ecfaf41a78fd4b856e764874"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></td>
+<td class="fieldname">
+rates_i</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -753,6 +774,20 @@ vect</td>
 
 <p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00459">stabilization_indi_set_stab_sp()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph.png" border="0" usemap="#astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph" alt=""/></div>
+<map name="astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph" id="astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph">
+<area shape="rect" title=" " alt="" coords="395,13,539,39"/>
+<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="213,5,347,47"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,5,165,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a45fd7e0c331ad443dfc4bd6b2e5e0aa0"></a>
@@ -772,20 +807,6 @@ vect</td>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00459">stabilization_indi_set_stab_sp()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization_8h_a45fd7e0c331ad443dfc4bd6b2e5e0aa0_icgraph.png" border="0" usemap="#astabilization_8h_a45fd7e0c331ad443dfc4bd6b2e5e0aa0_icgraph" alt=""/></div>
-<map name="astabilization_8h_a45fd7e0c331ad443dfc4bd6b2e5e0aa0_icgraph" id="astabilization_8h_a45fd7e0c331ad443dfc4bd6b2e5e0aa0_icgraph">
-<area shape="rect" title=" " alt="" coords="395,13,537,39"/>
-<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="213,5,347,47"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,5,165,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -879,7 +900,7 @@ vect</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="stabilization_8h.html">stabilization.h</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 06:58:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 27 2023 12:36:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

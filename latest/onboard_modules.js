@@ -810,10 +810,24 @@ var onboard_modules =
       ] ]
     ] ],
     [ "digital_cam module", "module__digital_cam.html", [
-      [ "Example for airframe file", "module__digital_cam.html#module_load_example__digital_cam", null ],
-      [ "Module configuration options", "module__digital_cam.html#configuration__digital_cam", null ],
-      [ "Module functions", "module__digital_cam.html#functions__digital_cam", [
+      [ "Example for airframe file", "module__digital_cam.html#module_load_example__digital_cam", [
         [ "Raw digital_cam.xml file:", "module__digital_cam.html#module_xml__digital_cam", null ]
+      ] ]
+    ] ],
+    [ "digital_cam_common module", "module__digital_cam_common.html", [
+      [ "Example for airframe file", "module__digital_cam_common.html#module_load_example__digital_cam_common", null ],
+      [ "Module configuration options", "module__digital_cam_common.html#configuration__digital_cam_common", null ],
+      [ "Module functions", "module__digital_cam_common.html#functions__digital_cam_common", [
+        [ "Raw digital_cam_common.xml file:", "module__digital_cam_common.html#module_xml__digital_cam_common", null ]
+      ] ]
+    ] ],
+    [ "digital_cam_gpio module", "module__digital_cam_gpio.html", [
+      [ "Example for airframe file", "module__digital_cam_gpio.html#module_load_example__digital_cam_gpio", null ],
+      [ "Module configuration options", "module__digital_cam_gpio.html#configuration__digital_cam_gpio", [
+        [ "Airframe file section", "module__digital_cam_gpio.html#af_section", null ]
+      ] ],
+      [ "Module functions", "module__digital_cam_gpio.html#functions__digital_cam_gpio", [
+        [ "Raw digital_cam_gpio.xml file:", "module__digital_cam_gpio.html#module_xml__digital_cam_gpio", null ]
       ] ]
     ] ],
     [ "digital_cam_i2c module", "module__digital_cam_i2c.html", [
@@ -822,6 +836,13 @@ var onboard_modules =
       [ "Module functions", "module__digital_cam_i2c.html#functions__digital_cam_i2c", null ],
       [ "Datalink Functions", "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c", [
         [ "Raw digital_cam_i2c.xml file:", "module__digital_cam_i2c.html#module_xml__digital_cam_i2c", null ]
+      ] ]
+    ] ],
+    [ "digital_cam_pprzlink module", "module__digital_cam_pprzlink.html", [
+      [ "Example for airframe file", "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink", null ],
+      [ "Module functions", "module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink", null ],
+      [ "Datalink Functions", "module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink", [
+        [ "Raw digital_cam_pprzlink.xml file:", "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink", null ]
       ] ]
     ] ],
     [ "digital_cam_servo module", "module__digital_cam_servo.html", [
@@ -840,14 +861,12 @@ var onboard_modules =
     ] ],
     [ "digital_cam_uart module", "module__digital_cam_uart.html", [
       [ "Example for airframe file", "module__digital_cam_uart.html#module_load_example__digital_cam_uart", null ],
-      [ "Module configuration options", "module__digital_cam_uart.html#configuration__digital_cam_uart", null ],
       [ "Module functions", "module__digital_cam_uart.html#functions__digital_cam_uart", [
         [ "Raw digital_cam_uart.xml file:", "module__digital_cam_uart.html#module_xml__digital_cam_uart", null ]
       ] ]
     ] ],
     [ "digital_cam_video module", "module__digital_cam_video.html", [
       [ "Example for airframe file", "module__digital_cam_video.html#module_load_example__digital_cam_video", null ],
-      [ "Module configuration options", "module__digital_cam_video.html#configuration__digital_cam_video", null ],
       [ "Module functions", "module__digital_cam_video.html#functions__digital_cam_video", [
         [ "Raw digital_cam_video.xml file:", "module__digital_cam_video.html#module_xml__digital_cam_video", null ]
       ] ]
@@ -2105,9 +2124,7 @@ var onboard_modules =
     ] ],
     [ "nav_survey_hybrid module", "module__nav_survey_hybrid.html", [
       [ "Example for airframe file", "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid", null ],
-      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", [
-        [ "Airframe file section", "module__nav_survey_hybrid.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid", null ],
       [ "Module functions", "module__nav_survey_hybrid.html#functions__nav_survey_hybrid", [
         [ "Raw nav_survey_hybrid.xml file:", "module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid", null ]
       ] ]

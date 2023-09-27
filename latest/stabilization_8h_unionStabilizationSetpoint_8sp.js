@@ -5,7 +5,5 @@ var stabilization_8h_unionStabilizationSetpoint_8sp =
     [ "ltp_f", "stabilization_8h.html#a4cfdfb33f8cf0e68b703f73cf9b9a060", null ],
     [ "ltp_i", "stabilization_8h.html#a032d8edeacbcb5e9364ebfa30b6d1cf6", null ],
     [ "quat_f", "stabilization_8h.html#ab3fbd0c20d034b8af0d7f4c44287e8e4", null ],
-    [ "quat_i", "stabilization_8h.html#aa8d4d7668b75a59cde944b57716c55fc", null ],
-    [ "rates_f", "stabilization_8h.html#a308ad4bc5a8ea5ca067b26939fe1bd4e", null ],
-    [ "rates_i", "stabilization_8h.html#aae2fdb99ecfaf41a78fd4b856e764874", null ]
+    [ "quat_i", "stabilization_8h.html#aa8d4d7668b75a59cde944b57716c55fc", null ]
 ];

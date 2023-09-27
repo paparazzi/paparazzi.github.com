@@ -148,7 +148,7 @@ var NAVTREEINDEX93 =
 "invensense2_8h.html#structinvensense2__i2c__t":[12,0,1,0,7,44,1],
 "invensense2_8h.html#structinvensense2__spi__t":[12,0,1,0,7,44,0],
 "invensense2_8h.html#structinvensense2__t":[12,0,1,0,7,44,2],
-"invensense2_8h.html#unioninvensense2__t_8____unnamed310____":[12,0,1,0,7,44,3],
+"invensense2_8h.html#unioninvensense2__t_8____unnamed311____":[12,0,1,0,7,44,3],
 "invensense2_8h_source.html":[12,0,1,0,7,44],
 "invensense2__regs_8h.html":[12,0,1,0,7,45],
 "invensense2__regs_8h.html#a0206d65f14097c0afc8c6576f126b1d8":[12,0,1,0,7,45,196],

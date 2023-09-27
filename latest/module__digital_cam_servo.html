@@ -89,37 +89,28 @@ $(document).ready(function(){initNavTree('module__digital_cam_servo.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Digital Photo Camera Triggering (using a servo)</b></p>
-<p>This module controls triggering of an attached external digital camera via a servo channel. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
+<p>This module controls triggering of an attached external digital camera via a servo channel.</p>
 <h1><a class="anchor" id="module_load_example__digital_cam_servo"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;digital_cam_servo&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_SHUTTER_SERVO&quot; value=&quot;servo&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_ZOOM_IN_SERVO&quot; value=&quot;servo&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_ZOOM_OUT_SERVO&quot; value=&quot;servo&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_POWER_SERVO&quot; value=&quot;servo&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_AUTOSHOOT_PERIOD&quot; value=&quot;0.5&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; /&gt;\n  &#39;</span></div>
-<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;digital_cam_servo&quot;</span>/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__digital_cam_servo"></a>
 Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
 <ul>
-<li><b>name:</b> <code>DC_SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em> <br  />
+<li><b>section</b> name: <code>DIGITAL_CAM</code> prefix: <code>DC_</code> <ul>
+<li><b>name</b> <code>SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em> <br  />
  Description: if defined, call dc_send_shot_postion on button release instead of on push</li>
-<li><b>name:</b> <code>DC_SHUTTER_SERVO</code> <b>value:</b> <em>servo</em> <br  />
+<li><b>name</b> <code>SHUTTER_SERVO</code> <b>value:</b> <em>servo</em> <br  />
  Description: mandatory, Servo to control shutter</li>
-<li><b>name:</b> <code>DC_ZOOM_IN_SERVO</code> <b>value:</b> <em>servo</em> <br  />
+<li><b>name</b> <code>ZOOM_IN_SERVO</code> <b>value:</b> <em>servo</em> <br  />
  Description: optional, Servo to activate zoom in</li>
-<li><b>name:</b> <code>DC_ZOOM_OUT_SERVO</code> <b>value:</b> <em>servo</em> <br  />
+<li><b>name</b> <code>ZOOM_OUT_SERVO</code> <b>value:</b> <em>servo</em> <br  />
  Description: optional, Servo to activate zoom out</li>
-<li><b>name:</b> <code>DC_POWER_SERVO</code> <b>value:</b> <em>servo</em> <br  />
+<li><b>name</b> <code>POWER_SERVO</code> <b>value:</b> <em>servo</em> <br  />
  Description: optional, Servo to control power</li>
-<li><b>name:</b> <code>DC_AUTOSHOOT_PERIOD</code> <b>value:</b> <em>0.5</em> <br  />
- Description: time period for DC_AUTOSHOOT_PERIODIC in seconds</li>
-<li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br  />
- Description: grid in meters</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="functions__digital_cam_servo"></a>
 Module functions</h1>
@@ -147,13 +138,11 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="servo__cam__ctrl_8h.html">servo_cam_ctrl.h</a></li>
-<li><a class="el" href="dc_8h.html">dc.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
 <li><a class="el" href="servo__cam__ctrl_8c.html">modules/digital_cam/servo_cam_ctrl.c</a></li>
-<li><a class="el" href="dc_8c.html">modules/digital_cam/dc.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__digital_cam_servo"></a>
 Raw digital_cam_servo.xml file:</h2>
@@ -165,38 +154,36 @@ Raw digital_cam_servo.xml file:</h2>
 <div class="line">      <span class="keyword">Digital</span> <span class="keyword">Photo</span> <span class="keyword">Camera</span> <span class="keyword">Triggering</span> (<span class="keyword">using</span> <span class="keyword">a</span> <span class="keyword">servo</span>)</div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">controls</span> <span class="keyword">triggering</span> <span class="keyword">of</span> <span class="keyword">an</span> <span class="keyword">attached</span> <span class="keyword">external</span> <span class="keyword">digital</span> <span class="keyword">camera</span> <span class="keyword">via</span> <span class="keyword">a</span> <span class="keyword">servo</span> <span class="keyword">channel.</span></div>
-<div class="line">      <span class="keyword">It</span> <span class="keyword">can</span> <span class="keyword">trigger</span> <span class="keyword">photos</span> <span class="keyword">based</span> <span class="keyword">on</span> <span class="keyword">GPS</span> <span class="keyword">distance</span>, <span class="keyword">time</span> <span class="keyword">or</span> <span class="keyword">circle</span> <span class="keyword">radius</span> <span class="keyword">in</span> <span class="keyword">both</span> <span class="keyword">fixedwings</span> <span class="keyword">and</span> <span class="keyword">rotorcraft.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_SHUTTER_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;mandatory, Servo to control shutter&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_ZOOM_IN_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to activate zoom in&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_ZOOM_OUT_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to activate zoom out&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_POWER_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to control power&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;time period for DC_AUTOSHOOT_PERIODIC in seconds&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;DC_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SHOOT_ON_BUTTON_RELEASE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SHUTTER_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;mandatory, Servo to control shutter&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ZOOM_IN_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to activate zoom in&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ZOOM_OUT_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to activate zoom out&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;POWER_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;servo&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;optional, Servo to control power&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">conflicts</span>&gt;<span class="keyword">digital_cam</span>,<span class="keyword">digital_cam_i2c</span>,<span class="keyword">digital_cam_uart</span>,<span class="keyword">digital_cam_video</span>&lt;/<span class="keywordtype">conflicts</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">digital_cam</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">digital_cam_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">conflicts</span>&gt;<span class="keyword">digital_cam_gpio</span>,<span class="keyword">digital_cam_i2c</span>,<span class="keyword">digital_cam_uart</span>,<span class="keyword">digital_cam_video</span>,<span class="keyword">digital_cam_pprzlink</span>&lt;/<span class="keywordtype">conflicts</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;servo_cam_ctrl.h&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dc.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;servo_cam_ctrl_init()&quot;</span>/&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;servo_cam_ctrl_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|sim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;servo_cam_ctrl.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_SHUTTER_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_TRANSPORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;pprz_tp&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOWNLINK_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_CAM_CTRL_PERIODIC_FREQ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10.&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -205,7 +192,7 @@ Raw digital_cam_servo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 06:58:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 27 2023 12:36:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

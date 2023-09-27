@@ -7,9 +7,7 @@ var stabilization_8h =
       [ "ltp_f", "stabilization_8h.html#a4cfdfb33f8cf0e68b703f73cf9b9a060", null ],
       [ "ltp_i", "stabilization_8h.html#a032d8edeacbcb5e9364ebfa30b6d1cf6", null ],
       [ "quat_f", "stabilization_8h.html#ab3fbd0c20d034b8af0d7f4c44287e8e4", null ],
-      [ "quat_i", "stabilization_8h.html#aa8d4d7668b75a59cde944b57716c55fc", null ],
-      [ "rates_f", "stabilization_8h.html#a308ad4bc5a8ea5ca067b26939fe1bd4e", null ],
-      [ "rates_i", "stabilization_8h.html#aae2fdb99ecfaf41a78fd4b856e764874", null ]
+      [ "quat_i", "stabilization_8h.html#aa8d4d7668b75a59cde944b57716c55fc", null ]
     ] ],
     [ "StabilizationSetpoint.sp.ltp_i", "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i", [
       [ "heading", "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1", null ],
@@ -18,6 +16,10 @@ var stabilization_8h =
     [ "StabilizationSetpoint.sp.ltp_f", "stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__f", [
       [ "heading", "stabilization_8h.html#af74f539fcf46601998e5b17104c7f4c1", null ],
       [ "vect", "stabilization_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
+    ] ],
+    [ "StabilizationSetpoint.r_sp", "stabilization_8h.html#unionStabilizationSetpoint_8r__sp", [
+      [ "rates_f", "stabilization_8h.html#a308ad4bc5a8ea5ca067b26939fe1bd4e", null ],
+      [ "rates_i", "stabilization_8h.html#aae2fdb99ecfaf41a78fd4b856e764874", null ]
     ] ],
     [ "stab_sp_from_eulers_f", "stabilization_8h.html#a844eeee3541745feb4361f870023c0d7", null ],
     [ "stab_sp_from_eulers_i", "stabilization_8h.html#ab4450b06845c4fe82ea4d45c2e2d4b20", null ],

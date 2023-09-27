@@ -89,29 +89,13 @@ $(document).ready(function(){initNavTree('module__digital_cam_uart.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Digital Photo Camera Triggering (using a UART link)</b></p>
-<p>This module controls triggering of an attached external digital camera via UART commands. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
-<p>This module fullfilss 4 functions: 1) send shoot commands over UART 2) Besides triggering the shooting of images, the module also sends attitude and other relevant data. Typically an external linux camera or linux computer will receive the attitude and position data and add it to the photos. 3) The module will also parse the replies received over the UART. This contains status but can also contain computer vision results to able to interact with the flightplan. 4) Finally, the module will also relay over telemetry all data it receives from the attached computer or camera using the PAYLOAD message. This can for instance be used to downlink thumbnails.</p>
+<p>This module controls triggering of an attached external digital camera via UART commands.</p>
+<p>This module fullfills 4 functions: 1) send shoot commands over UART 2) Besides triggering the shooting of images, the module also sends attitude and other relevant data. Typically an external linux camera or linux computer will receive the attitude and position data and add it to the photos. 3) The module will also parse the replies received over the UART. This contains status but can also contain computer vision results to able to interact with the flightplan. 4) Finally, the module will also relay over telemetry all data it receives from the attached computer or camera using the PAYLOAD message. This can for instance be used to downlink thumbnails.</p>
 <p>The linux program used to parse the UART command is given in the subdirectory.</p>
 <h1><a class="anchor" id="module_load_example__digital_cam_uart"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;digital_cam_uart&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_AUTOSHOOT_PERIOD&quot; value=&quot;0.5&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DC_SHOT_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n  &#39;</span></div>
-<div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="configuration__digital_cam_uart"></a>
-Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>DC_AUTOSHOOT_PERIOD</code> <b>value:</b> <em>0.5</em> <br  />
- Description: time period for DC_AUTOSHOOT_PERIODIC in seconds</li>
-<li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br  />
- Description: grid in meters</li>
-<li><b>name:</b> <code>DC_SHOT_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br  />
- Description: send DC_SHOT message when photo was taken (default: TRUE)</li>
-</ul>
-<h1><a class="anchor" id="functions__digital_cam_uart"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;digital_cam_uart&quot;</span>/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__digital_cam_uart"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -143,7 +127,6 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="uart__cam__ctrl_8h.html">uart_cam_ctrl.h</a></li>
-<li><a class="el" href="dc_8h.html">dc.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
@@ -151,7 +134,6 @@ Source Files</h2>
 <li><a class="el" href="serial_8c.html">modules/digital_cam/catia/serial.c</a></li>
 <li><a class="el" href="uart__cam__ctrl_8c.html">modules/digital_cam/uart_cam_ctrl.c</a></li>
 <li><a class="el" href="protocol_8c.html">modules/digital_cam/catia/protocol.c</a></li>
-<li><a class="el" href="dc_8c.html">modules/digital_cam/dc.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__digital_cam_uart"></a>
 Raw digital_cam_uart.xml file:</h2>
@@ -162,9 +144,8 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">      <span class="keyword">Digital</span> <span class="keyword">Photo</span> <span class="keyword">Camera</span> <span class="keyword">Triggering</span> (<span class="keyword">using</span> <span class="keyword">a</span> <span class="keyword">UART</span> <span class="keyword">link</span>)</div>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">controls</span> <span class="keyword">triggering</span> <span class="keyword">of</span> <span class="keyword">an</span> <span class="keyword">attached</span> <span class="keyword">external</span> <span class="keyword">digital</span> <span class="keyword">camera</span> <span class="keyword">via</span> <span class="keyword">UART</span> <span class="keyword">commands.</span></div>
-<div class="line">      <span class="keyword">It</span> <span class="keyword">can</span> <span class="keyword">trigger</span> <span class="keyword">photos</span> <span class="keyword">based</span> <span class="keyword">on</span> <span class="keyword">GPS</span> <span class="keyword">distance</span>, <span class="keyword">time</span> <span class="keyword">or</span> <span class="keyword">circle</span> <span class="keyword">radius</span> <span class="keyword">in</span> <span class="keyword">both</span> <span class="keyword">fixedwings</span> <span class="keyword">and</span> <span class="keyword">rotorcraft.</span></div>
 <div class="line"> </div>
-<div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">fullfilss</span> 4 <span class="keyword">functions:</span></div>
+<div class="line">      <span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">fullfills</span> 4 <span class="keyword">functions:</span></div>
 <div class="line">      1) <span class="keyword">send</span> <span class="keyword">shoot</span> <span class="keyword">commands</span> <span class="keyword">over</span> <span class="keyword">UART</span></div>
 <div class="line">      2) <span class="keyword">Besides</span> <span class="keyword">triggering</span> <span class="keyword">the</span> <span class="keyword">shooting</span> <span class="keyword">of</span> <span class="keyword">images</span>, <span class="keyword">the</span> <span class="keyword">module</span> <span class="keyword">also</span> <span class="keyword">sends</span> <span class="keyword">attitude</span> <span class="keyword">and</span> <span class="keyword">other</span> <span class="keyword">relevant</span> <span class="keyword">data.</span></div>
 <div class="line">      <span class="keyword">Typically</span> <span class="keyword">an</span> <span class="keyword">external</span> <span class="keyword">linux</span> <span class="keyword">camera</span> <span class="keyword">or</span> <span class="keyword">linux</span> <span class="keyword">computer</span> <span class="keyword">will</span> <span class="keyword">receive</span> <span class="keyword">the</span> <span class="keyword">attitude</span> <span class="keyword">and</span> <span class="keyword">position</span> <span class="keyword">data</span> <span class="keyword">and</span> <span class="keyword">add</span></div>
@@ -176,30 +157,9 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line"> </div>
 <div class="line">      <span class="keyword">The</span> <span class="keyword">linux</span> <span class="keyword">program</span> <span class="keyword">used</span> <span class="keyword">to</span> <span class="keyword">parse</span> <span class="keyword">the</span> <span class="keyword">UART</span> <span class="keyword">command</span> <span class="keyword">is</span> <span class="keyword">given</span> <span class="keyword">in</span> <span class="keyword">the</span> <span class="keyword">subdirectory.</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;time period for DC_AUTOSHOOT_PERIODIC in seconds&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DC_SHOT_SYNC_SEND&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;send DC_SHOT message when photo was taken (default: TRUE)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;control&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dc&quot;</span>&gt;</div>
-<div class="line"> </div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;255&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;digital_cam/dc&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;send_command&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;Shutter&quot;</span>&gt;</div>
-<div class="line">          &lt;<span class="keywordtype">strip_button</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Photo&quot;</span> <span class="keyword">icon</span>=<span class="stringliteral">&quot;digital-camera.png&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;32&quot;</span> <span class="keyword">group</span>=<span class="stringliteral">&quot;maindc&quot;</span>/&gt;</div>
-<div class="line">        &lt;/<span class="keywordtype">dl_setting</span>&gt;</div>
-<div class="line"> </div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_autoshoot&quot;</span> <span class="keyword">values</span>=<span class="stringliteral">&quot;STOP|PERIODIC|DISTANCE|EXT_TRIG&quot;</span>&gt;</div>
-<div class="line">          &lt;<span class="keywordtype">strip_button</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Start Autoshoot&quot;</span> <span class="keyword">icon</span>=<span class="stringliteral">&quot;dcstart.png&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">group</span>=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
-<div class="line">          &lt;<span class="keywordtype">strip_button</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Stop Autoshoot&quot;</span> <span class="keyword">icon</span>=<span class="stringliteral">&quot;dcstop.png&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">group</span>=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
-<div class="line">        &lt;/<span class="keywordtype">dl_setting</span>&gt;</div>
-<div class="line"> </div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;60&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_autoshoot_period&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;Periodic&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;sec&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;255&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_distance_interval&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;dist&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;meter&quot;</span>/&gt;</div>
-<div class="line"> </div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;250&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;digital_cam/dc&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_survey_interval&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;Survey&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;Survey-Interval&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;90&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;digital_cam/dc&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_circle_interval&quot;</span> <span class="keyword">handler</span>=<span class="stringliteral">&quot;Circle&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;Circle-Interval&quot;</span>/&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;dc_cam_tracing&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;Cam-Tracing&quot;</span>/&gt;</div>
-<div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;tb&quot;</span>&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;digital_cam_uart_thumbnails&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;thumbs&quot;</span>&gt;</div>
 <div class="line">          &lt;<span class="keywordtype">strip_button</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DL Thumbs High&quot;</span> <span class="keyword">icon</span>=<span class="stringliteral">&quot;on.png&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">group</span>=<span class="stringliteral">&quot;ticket&quot;</span>/&gt;</div>
@@ -211,12 +171,11 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">conflicts</span>&gt;<span class="keyword">digital_cam</span>,<span class="keyword">digital_cam_servo</span>,<span class="keyword">digital_cam_i2c</span>&lt;/<span class="keywordtype">conflicts</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">digital_cam</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">digital_cam_common</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">conflicts</span>&gt;<span class="keyword">digital_cam_gpio</span>,<span class="keyword">digital_cam_servo</span>,<span class="keyword">digital_cam_i2c</span>,<span class="keyword">digital_cam_pprzlink</span>&lt;/<span class="keywordtype">conflicts</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uart_cam_ctrl.h&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dc.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;digital_cam_uart_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;digital_cam_uart_periodic()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;10&quot;</span> <span class="keyword">autorun</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
@@ -226,14 +185,16 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;UART5_DEV&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ttyUSB0&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|sim|nps&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;uart_cam_ctrl.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;catia/protocol.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CAMERA_PORT&quot;</span> <span class="keyword">case</span>=<span class="stringliteral">&quot;upper|lower&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_$(CAMERA_PORT_UPPER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CAMERA_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(CAMERA_PORT_LOWER)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;$(CAMERA_PORT_UPPER)_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B115200&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;CAMERA_LINK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;uart0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_UART0&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -244,7 +205,7 @@ Raw digital_cam_uart.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 06:58:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 27 2023 12:36:50 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

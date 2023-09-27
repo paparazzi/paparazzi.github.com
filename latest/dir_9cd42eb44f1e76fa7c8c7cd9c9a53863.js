@@ -13,6 +13,8 @@ var dir_9cd42eb44f1e76fa7c8c7cd9c9a53863 =
     [ "gpio_cam_ctrl.h", "gpio__cam__ctrl_8h.html", "gpio__cam__ctrl_8h" ],
     [ "hackhd.c", "hackhd_8c.html", "hackhd_8c" ],
     [ "hackhd.h", "hackhd_8h.html", "hackhd_8h" ],
+    [ "pprzlink_cam_ctrl.c", "pprzlink__cam__ctrl_8c.html", "pprzlink__cam__ctrl_8c" ],
+    [ "pprzlink_cam_ctrl.h", "pprzlink__cam__ctrl_8h.html", "pprzlink__cam__ctrl_8h" ],
     [ "servo_cam_ctrl.c", "servo__cam__ctrl_8c.html", "servo__cam__ctrl_8c" ],
     [ "servo_cam_ctrl.h", "servo__cam__ctrl_8h.html", "servo__cam__ctrl_8h" ],
     [ "sim_i2c_cam_ctrl.c", "sim__i2c__cam__ctrl_8c.html", "sim__i2c__cam__ctrl_8c" ],
