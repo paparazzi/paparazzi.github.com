@@ -24,6 +24,7 @@ var stabilization_8h =
     [ "stab_sp_from_ltp_f", "stabilization_8h.html#a19495e791318d545a4d7444820651a71", null ],
     [ "stab_sp_from_ltp_i", "stabilization_8h.html#a122d87b92a54ae599a5616214e62e189", null ],
     [ "stab_sp_from_quat_f", "stabilization_8h.html#a66f4de42924ea662ae4f03e04c78d4bf", null ],
+    [ "stab_sp_from_quat_ff_rates_f", "stabilization_8h.html#a5bc93e5c06fb4401d9b0e54042f3d57a", null ],
     [ "stab_sp_from_quat_i", "stabilization_8h.html#a6cca581158ca616cb1ffda9a5da0c77a", null ],
     [ "stab_sp_from_rates_f", "stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a", null ],
     [ "stab_sp_from_rates_i", "stabilization_8h.html#a3043efd8d0c23638ed6424088e2e7bf3", null ],

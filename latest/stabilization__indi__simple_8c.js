@@ -29,6 +29,7 @@ var stabilization__indi__simple_8c =
     [ "stabilization_indi_simple_reset_r_filter_cutoff", "stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38", null ],
     [ "indi", "stabilization__indi__simple_8c.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ],
     [ "rates_filt_fo", "stabilization__indi__simple_8c.html#a362a37014aa4bb541a8de211a70ba00e", null ],
+    [ "stab_att_ff_rates", "stabilization__indi__simple_8c.html#a2a1090446a96875a21729aca636af624", null ],
     [ "stab_att_sp_euler", "stabilization__indi__simple_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi__simple_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
 ];
