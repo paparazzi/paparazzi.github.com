@@ -1,13 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"module__control_energy.html":[1,72],
-"module__control_energy.html#module_load_example__control_energy":[1,72,0],
-"module__control_energy.html#module_xml__control_energy":[1,72,0,0],
-"module__control_energyadaptive.html":[1,73],
-"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,73,0],
-"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,73,0,0],
-"module__control_new.html":[1,74],
-"module__control_new.html#module_load_example__control_new":[1,74,0],
 "module__control_new.html#module_xml__control_new":[1,74,0,0],
 "module__copilot.html":[1,290],
 "module__copilot.html#datalink_functions__copilot":[1,290,2],
@@ -130,7 +122,6 @@ var NAVTREEINDEX129 =
 "module__digital_cam_common.html#module_load_example__digital_cam_common":[1,123,0],
 "module__digital_cam_common.html#module_xml__digital_cam_common":[1,123,2,0],
 "module__digital_cam_gpio.html":[1,124],
-"module__digital_cam_gpio.html#af_section":[1,124,1,0],
 "module__digital_cam_gpio.html#configuration__digital_cam_gpio":[1,124,1],
 "module__digital_cam_gpio.html#functions__digital_cam_gpio":[1,124,2],
 "module__digital_cam_gpio.html#module_load_example__digital_cam_gpio":[1,124,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX129 =
 "module__fdm_pybullet.html#module_xml__fdm_pybullet":[1,138,1,0],
 "module__fdm_rover.html":[1,139],
 "module__fdm_rover.html#module_load_example__fdm_rover":[1,139,0],
-"module__fdm_rover.html#module_xml__fdm_rover":[1,139,0,0]
+"module__fdm_rover.html#module_xml__fdm_rover":[1,139,0,0],
+"module__filter_1euro_imu.html":[1,172],
+"module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,172,1],
+"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,172,2],
+"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,172,0],
+"module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,172,2,0],
+"module__flight_benchmark.html":[1,35],
+"module__flight_benchmark.html#configuration__flight_benchmark":[1,35,1],
+"module__flight_benchmark.html#functions__flight_benchmark":[1,35,2],
+"module__flight_benchmark.html#module_load_example__flight_benchmark":[1,35,0]
 };

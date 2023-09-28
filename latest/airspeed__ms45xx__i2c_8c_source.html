@@ -170,14 +170,14 @@ $(document).ready(function(){initNavTree('airspeed__ms45xx__i2c_8c_source.html',
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> * p_diff = (p_raw - 0.1*16383) * 2*RANGE/(0.8*16383) - RANGE</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * p_diff = p_raw * 2*RANGE/(0.8*16383) - (RANGE + (0.1 * 16383) * 2*RANGE/(0.8*16383)</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * p_diff = p_raw * 2*RANGE/(0.8*16383) - (1.25 * RANGE)</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * p_diff = p_raw * scale - offset</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * p_diff = (p_raw - offset) * scale</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * then convert to Pascal</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#ifndef MS45XX_PRESSURE_SCALE</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="airspeed__ms45xx__i2c_8c.html#adae5e5e9d5cdb17b0d994261a8d57a1f">  113</a></span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_SCALE (2 * MS45XX_PRESSURE_RANGE / (0.8 * 16383) * OutputPressureToPa)</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifndef MS45XX_PRESSURE_OFFSET</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="airspeed__ms45xx__i2c_8c.html#a990640387da29860439d0c6e04f3d783">  116</a></span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_OFFSET (1.25 * MS45XX_PRESSURE_RANGE * OutputPressureToPa)</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="airspeed__ms45xx__i2c_8c.html#a990640387da29860439d0c6e04f3d783">  116</a></span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_OFFSET (16383 / 2)</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#else </span><span class="comment">/* Can still be improved using another if statment with MS45XX_PRESSURE_TYPE etc. */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/* Offset and scaling for OUTPUT TYPE B:</span></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('airspeed__ms45xx__i2c_8c_source.html',
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_SCALE (MS45XX_PRESSURE_RANGE/(0.9*16383)*OutputPressureToPa)</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifndef MS45XX_PRESSURE_OFFSET</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_OFFSET (((MS45XX_PRESSURE_RANGE*0.05*16383)/(0.9*16383))*OutputPressureToPa)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define MS45XX_PRESSURE_OFFSET (0.05*16383)</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
@@ -293,10 +293,10 @@ $(document).ready(function(){initNavTree('airspeed__ms45xx__i2c_8c_source.html',
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">       * swings positive when Port 1&gt; Port 2. Output is 50% of total counts</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">       * when Port 1=Port 2.</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">       * For type Gauge</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">       * p_out = p_raw * scale - offset</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">       * p_out = (p_raw - offset) * scale</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">       */</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordtype">float</span> p_out = (p_raw * <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a">pressure_scale</a>) - <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0">pressure_offset</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordtype">float</span> p_out = (p_raw - <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0">pressure_offset</a>) * <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a">pressure_scale</a>;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;#ifdef <a class="code" href="airspeed__ms45xx__i2c_8c.html#ae4db6d792956c6002d91d931d0beab12">USE_AIRSPEED_LOWPASS_FILTER</a></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#abbf12da13b62c98226e4f4aa9d30053f">pressure</a> = <a class="code" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650">update_butterworth_2_low_pass</a>(&amp;<a class="code" href="airspeed__ms45xx__i2c_8c.html#aa6346e53de9c9c2738ae161ea704c5dc">ms45xx_filter</a>, p_out);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#else</span></div>
@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('airspeed__ms45xx__i2c_8c_source.html',
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a19827c5000cce05be28ccad145fb9194">autoset_offset</a>) {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">if</span> (autoset_nb &lt; <a class="code" href="airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501">AUTOSET_NB_MAX</a>) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          autoset_offset += p_raw * <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a">pressure_scale</a>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          autoset_offset += p_raw;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          autoset_nb++;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;          <a class="code" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">ms45xx</a>.<a class="code" href="airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0">pressure_offset</a> = autoset_offset / (float)autoset_nb;</div>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('airspeed__ms45xx__i2c_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__ms45xx__i2c_8c.html">airspeed_ms45xx_i2c.c</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 12:36:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 28 2023 07:44:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -178,7 +178,7 @@ Macros</h2></td></tr>
 <tr class="separator:a09255b3c584ad61082cacfbfceb7bb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adae5e5e9d5cdb17b0d994261a8d57a1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__ms45xx__i2c_8c.html#adae5e5e9d5cdb17b0d994261a8d57a1f">MS45XX_PRESSURE_SCALE</a>&#160;&#160;&#160;(2 * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a290e8bdfa317a6b511add38211c4bbd9">MS45XX_PRESSURE_RANGE</a> / (0.8 * 16383) * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a09255b3c584ad61082cacfbfceb7bb23">OutputPressureToPa</a>)</td></tr>
 <tr class="separator:adae5e5e9d5cdb17b0d994261a8d57a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a990640387da29860439d0c6e04f3d783"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__ms45xx__i2c_8c.html#a990640387da29860439d0c6e04f3d783">MS45XX_PRESSURE_OFFSET</a>&#160;&#160;&#160;(1.25 * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a290e8bdfa317a6b511add38211c4bbd9">MS45XX_PRESSURE_RANGE</a> * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a09255b3c584ad61082cacfbfceb7bb23">OutputPressureToPa</a>)</td></tr>
+<tr class="memitem:a990640387da29860439d0c6e04f3d783"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__ms45xx__i2c_8c.html#a990640387da29860439d0c6e04f3d783">MS45XX_PRESSURE_OFFSET</a>&#160;&#160;&#160;(16383 / 2)</td></tr>
 <tr class="separator:a990640387da29860439d0c6e04f3d783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0653ab87779d024f8e2974d7f5278cff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__ms45xx__i2c_8c.html#a0653ab87779d024f8e2974d7f5278cff">MS45XX_AIRSPEED_SCALE</a>&#160;&#160;&#160;1.6327</td></tr>
 <tr class="memdesc:a0653ab87779d024f8e2974d7f5278cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadratic scale factor for indicated airspeed.  <a href="airspeed__ms45xx__i2c_8c.html#a0653ab87779d024f8e2974d7f5278cff">More...</a><br /></td></tr>
@@ -348,7 +348,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MS45XX_PRESSURE_OFFSET&#160;&#160;&#160;(1.25 * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a290e8bdfa317a6b511add38211c4bbd9">MS45XX_PRESSURE_RANGE</a> * <a class="el" href="airspeed__ms45xx__i2c_8c.html#a09255b3c584ad61082cacfbfceb7bb23">OutputPressureToPa</a>)</td>
+          <td class="memname">#define MS45XX_PRESSURE_OFFSET&#160;&#160;&#160;(16383 / 2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -715,7 +715,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__ms45xx__i2c_8c.html">airspeed_ms45xx_i2c.c</a></li>
-    <li class="footer">Generated on Wed Sep 27 2023 12:36:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 28 2023 07:44:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

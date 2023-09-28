@@ -823,9 +823,7 @@ var onboard_modules =
     ] ],
     [ "digital_cam_gpio module", "module__digital_cam_gpio.html", [
       [ "Example for airframe file", "module__digital_cam_gpio.html#module_load_example__digital_cam_gpio", null ],
-      [ "Module configuration options", "module__digital_cam_gpio.html#configuration__digital_cam_gpio", [
-        [ "Airframe file section", "module__digital_cam_gpio.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__digital_cam_gpio.html#configuration__digital_cam_gpio", null ],
       [ "Module functions", "module__digital_cam_gpio.html#functions__digital_cam_gpio", [
         [ "Raw digital_cam_gpio.xml file:", "module__digital_cam_gpio.html#module_xml__digital_cam_gpio", null ]
       ] ]
@@ -1176,28 +1174,28 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1791,6 +1789,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__humid_sht_i2c.html#module_load_example__humid_sht_i2c", null ],
       [ "Module configuration options", "module__humid_sht_i2c.html#configuration__humid_sht_i2c", null ],
       [ "Module functions", "module__humid_sht_i2c.html#functions__humid_sht_i2c", [
+        [ "Event Functions", "module__humid_sht_i2c.html#event_functions", null ],
         [ "Raw humid_sht_i2c.xml file:", "module__humid_sht_i2c.html#module_xml__humid_sht_i2c", null ]
       ] ]
     ] ],
@@ -1835,7 +1834,10 @@ var onboard_modules =
     ] ],
     [ "mf_ptu module", "module__mf_ptu.html", [
       [ "Example for airframe file", "module__mf_ptu.html#module_load_example__mf_ptu", null ],
-      [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", null ],
+      [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", [
+        [ "Configure Options", "module__mf_ptu.html#configure", null ],
+        [ "Airframe file section", "module__mf_ptu.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__mf_ptu.html#functions__mf_ptu", [
         [ "Raw mf_ptu.xml file:", "module__mf_ptu.html#module_xml__mf_ptu", null ]
       ] ]
@@ -2392,9 +2394,7 @@ var onboard_modules =
     ] ],
     [ "airspeed_uavcan module", "module__airspeed_uavcan.html", [
       [ "Example for airframe file", "module__airspeed_uavcan.html#module_load_example__airspeed_uavcan", null ],
-      [ "Module configuration options", "module__airspeed_uavcan.html#configuration__airspeed_uavcan", [
-        [ "Define Options", "module__airspeed_uavcan.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__airspeed_uavcan.html#configuration__airspeed_uavcan", null ],
       [ "Module functions", "module__airspeed_uavcan.html#functions__airspeed_uavcan", [
         [ "Raw airspeed_uavcan.xml file:", "module__airspeed_uavcan.html#module_xml__airspeed_uavcan", null ]
       ] ]
@@ -2447,17 +2447,8 @@ var onboard_modules =
     ] ],
     [ "baro_board_common module", "module__baro_board_common.html", [
       [ "Example for airframe file", "module__baro_board_common.html#module_load_example__baro_board_common", null ],
-      [ "Module configuration options", "module__baro_board_common.html#configuration__baro_board_common", [
-        [ "Configure Options", "module__baro_board_common.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__baro_board_common.html#configuration__baro_board_common", null ],
       [ "Module functions", "module__baro_board_common.html#functions__baro_board_common", [
-        [ "Init Functions", "module__baro_board_common.html#init_functions", null ],
-        [ "Event Functions", "module__baro_board_common.html#event_functions", null ],
-        [ "Periodic Functions", "module__baro_board_common.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__baro_board_common.html#files", [
-        [ "Header Files", "module__baro_board_common.html#headers", null ],
-        [ "Source Files", "module__baro_board_common.html#sources", null ],
         [ "Raw baro_board_common.xml file:", "module__baro_board_common.html#module_xml__baro_board_common", null ]
       ] ]
     ] ],
@@ -3116,8 +3107,16 @@ var onboard_modules =
     ] ],
     [ "time_countdown module", "module__time_countdown.html", [
       [ "Example for airframe file", "module__time_countdown.html#module_load_example__time_countdown", null ],
-      [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", null ],
+      [ "Module configuration options", "module__time_countdown.html#configuration__time_countdown", [
+        [ "Define Options", "module__time_countdown.html#define", null ]
+      ] ],
       [ "Module functions", "module__time_countdown.html#functions__time_countdown", [
+        [ "Init Functions", "module__time_countdown.html#init_functions", null ],
+        [ "Periodic Functions", "module__time_countdown.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__time_countdown.html#files", [
+        [ "Header Files", "module__time_countdown.html#headers", null ],
+        [ "Source Files", "module__time_countdown.html#sources", null ],
         [ "Raw time_countdown.xml file:", "module__time_countdown.html#module_xml__time_countdown", null ]
       ] ]
     ] ],

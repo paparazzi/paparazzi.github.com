@@ -1,11 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__pwm_meas.html":[1,75],
-"module__pwm_meas.html#configuration__pwm_meas":[1,75,1],
-"module__pwm_meas.html#functions__pwm_meas":[1,75,2],
-"module__pwm_meas.html#module_load_example__pwm_meas":[1,75,0],
-"module__pwm_meas.html#module_xml__pwm_meas":[1,75,2,0],
-"module__px4_flash.html":[1,466],
 "module__px4_flash.html#configuration__px4_flash":[1,466,1],
 "module__px4_flash.html#functions__px4_flash":[1,466,2],
 "module__px4_flash.html#module_load_example__px4_flash":[1,466,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX134 =
 "module__switch_servo.html":[1,422],
 "module__switch_servo.html#configuration__switch_servo":[1,422,1],
 "module__switch_servo.html#functions__switch_servo":[1,422,2],
-"module__switch_servo.html#module_load_example__switch_servo":[1,422,0]
+"module__switch_servo.html#module_load_example__switch_servo":[1,422,0],
+"module__switch_servo.html#module_xml__switch_servo":[1,422,2,0],
+"module__switch_uart.html":[1,423],
+"module__switch_uart.html#functions__switch_uart":[1,423,1],
+"module__switch_uart.html#module_load_example__switch_uart":[1,423,0],
+"module__switch_uart.html#module_xml__switch_uart":[1,423,1,0],
+"module__sys_id_auto_doublets.html":[1,424]
 };
