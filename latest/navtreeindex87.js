@@ -1,5 +1,10 @@
 var NAVTREEINDEX87 =
 {
+"imu__heater_8c.html#a21efe70d95d89aff97410f75c971acc7":[12,0,1,0,6,35,20,3],
+"imu__heater_8c.html#a261a10bd67702378361f9580a2548347":[12,0,1,0,6,35,20,8],
+"imu__heater_8c.html#a3a803d686aec37ea84736067667ec881":[12,0,1,0,6,35,20,9],
+"imu__heater_8c.html#a8aa50eca85fac7945b12e7bcb5e6a37e":[12,0,1,0,6,35,20,10],
+"imu__heater_8c.html#a97878edd64154e185246480aaf76144d":[12,0,1,0,6,35,20,11],
 "imu__heater_8c.html#ab10194c4ee7e23fcdee565959b5b50fe":[12,0,1,0,6,35,20,7],
 "imu__heater_8c.html#ab26ee97f1a4e4f761a490c5a75d45150":[12,0,1,0,6,35,20,6],
 "imu__heater_8c.html#af02c035d5f3f3acb8434a2d43aabfd8a":[12,0,1,0,6,35,20,1],
@@ -185,8 +190,8 @@ var NAVTREEINDEX87 =
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,35,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,35,3],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,35,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,33,0],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,35,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,35,35],
 "imu__nps_8c.html":[12,0,1,0,6,35,36],
 "imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,35,36,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX87 =
 "imu__px4fmu__v2_84_8h.html#structImuPX4":[12,0,1,0,6,35,41,0],
 "imu__px4fmu__v2_84_8h_source.html":[12,0,1,0,6,35,41],
 "imu__quality__assessment_8c.html":[12,0,1,0,6,5,4],
-"imu__quality__assessment_8c.html#a357ee29b472868ca516eef72bacb7fba":[12,0,1,0,6,5,4,2],
-"imu__quality__assessment_8c.html#a59ce9aafecc2295a9b2629d12382c88f":[12,0,1,0,6,5,4,1],
-"imu__quality__assessment_8c.html#a87a0067e1dbafae2ccf897a150aca3b3":[12,0,1,0,6,5,4,4],
-"imu__quality__assessment_8c.html#ab28aa669695c89e7f5a92d20dea4a31a":[12,0,1,0,6,5,4,3],
-"imu__quality__assessment_8c.html#abb606820f03a8961832cb2da9eee3d4e":[12,0,1,0,6,5,4,0],
-"imu__quality__assessment_8c_source.html":[12,0,1,0,6,5,4]
+"imu__quality__assessment_8c.html#a357ee29b472868ca516eef72bacb7fba":[12,0,1,0,6,5,4,2]
 };

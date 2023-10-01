@@ -1,5 +1,10 @@
 var NAVTREEINDEX111 =
 {
+"lps25h__i2c_8c.html#a4384ffd790e5267a88536b55f9ed9b06":[12,0,1,0,7,69,5],
+"lps25h__i2c_8c.html#a5eae1a808c0624d5f0b07461fba908f7":[12,0,1,0,7,69,2],
+"lps25h__i2c_8c.html#aa4736bd7cbe27b3637e53a621b7e640f":[12,0,1,0,7,69,3],
+"lps25h__i2c_8c.html#ab3cba2a5e74bcc3df601e45df0089d4c":[12,0,1,0,7,69,6],
+"lps25h__i2c_8c.html#ad674a1066fdff1a0aabcdb1d0ace55d5":[12,0,1,0,7,69,8],
 "lps25h__i2c_8c_source.html":[12,0,1,0,7,69],
 "lps25h__i2c_8h.html":[12,0,1,0,7,70],
 "lps25h__i2c_8h.html#a05f15627f1c63b473d7a262610837495":[12,0,1,0,7,70,6],
@@ -220,8 +225,8 @@ var NAVTREEINDEX111 =
 "lsm303d__spi_8h.html#a156507f0889e5fdab594d71e7c485027":[12,0,1,0,7,75,4],
 "lsm303d__spi_8h.html#a1964fbd63e0704237a0b49a4bdae158e":[12,0,1,0,7,75,0,7],
 "lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9":[12,0,1,0,7,75,0,5],
-"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,1,1],
 "lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,2,1],
+"lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,1,1],
 "lsm303d__spi_8h.html#a46caf9f0043d121b803f30e9f8627f8d":[12,0,1,0,7,75,5],
 "lsm303d__spi_8h.html#a59de795e77f96d73a03d679aeb4cf94e":[12,0,1,0,7,75,0,8],
 "lsm303d__spi_8h.html#a65535201bffbea7cd33d3dfcf41e8430":[12,0,1,0,7,75,0,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX111 =
 "lsm303dlhc_8h.html#a2327df9cb8ac5c9421e5824cb61172d2":[12,0,1,0,7,76,2],
 "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4":[12,0,1,0,7,76,7],
 "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a0e064b11b8708c7849e73864027033bc":[12,0,1,0,7,76,7,5],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a30941a70f8d20429d503de74eaf99964":[12,0,1,0,7,76,7,8],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a4fa3dac07ba9b587cf85f685a7b1e8b6":[12,0,1,0,7,76,7,0],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a59cdd9e5f42433190db5903dfac1ae8f":[12,0,1,0,7,76,7,6],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a69ec61569c5789572a3b9fb831664b1f":[12,0,1,0,7,76,7,2],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a8c2c565f50407a137d10df7dd8193427":[12,0,1,0,7,76,7,4],
-"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4abde2e888ac705020dfdbc0d1f01ee88c":[12,0,1,0,7,76,7,7]
+"lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a30941a70f8d20429d503de74eaf99964":[12,0,1,0,7,76,7,8]
 };

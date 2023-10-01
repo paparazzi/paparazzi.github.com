@@ -1,5 +1,7 @@
 var guidance__indi__hybrid_8c =
 [
+    [ "GUIDANCE_INDI_CLIMB_SPEED_FWD", "guidance__indi__hybrid_8c.html#a1f5ab3b277c3bfa3043523b4f29506e4", null ],
+    [ "GUIDANCE_INDI_DESCEND_SPEED_FWD", "guidance__indi__hybrid_8c.html#ab5bf9986f362a7dddb4c5f91a2c7d184", null ],
     [ "GUIDANCE_INDI_FILTER_CUTOFF", "guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b", null ],
     [ "GUIDANCE_INDI_LIFTD_ASQ", "guidance__indi__hybrid_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8", null ],
     [ "GUIDANCE_INDI_LIFTD_P50", "guidance__indi__hybrid_8c.html#a945db3508eec97c51c7260e0c55da1ef", null ],
@@ -18,7 +20,7 @@ var guidance__indi__hybrid_8c =
     [ "compute_accel_from_speed_sp", "guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e", null ],
     [ "guidance_indi_calcg_wing", "guidance__indi__hybrid_8c.html#a63a53af0f115f0ba3f95d80d0a9ae6c2", null ],
     [ "guidance_indi_enter", "guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
-    [ "guidance_indi_get_liftd", "guidance__indi__hybrid_8c.html#a0cc4f659f2c506502ca65d0c17a45e70", null ],
+    [ "guidance_indi_get_liftd", "guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca", null ],
     [ "guidance_indi_init", "guidance__indi__hybrid_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_propagate_filters", "guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e", null ],
@@ -26,6 +28,8 @@ var guidance__indi__hybrid_8c =
     [ "send_guidance_indi_hybrid", "guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70", null ],
     [ "vel_sp_cb", "guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8", null ],
     [ "accely_filt", "guidance__indi__hybrid_8c.html#a104f167cc747937fb6f4d23e445148f2", null ],
+    [ "climb_vspeed_fwd", "guidance__indi__hybrid_8c.html#a3904cb81972d1f12bee3f55f1f350646", null ],
+    [ "descend_vspeed_fwd", "guidance__indi__hybrid_8c.html#a56417571b028cdd25c09e70e8517f9d7", null ],
     [ "desired_airspeed", "guidance__indi__hybrid_8c.html#afe53f56d0e04394c4cbe6046ea0f9769", null ],
     [ "euler_cmd", "guidance__indi__hybrid_8c.html#abbf0d721f775293cc953c71dc69be5b7", null ],
     [ "eulers_zxy", "guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba", null ],

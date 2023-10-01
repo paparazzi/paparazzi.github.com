@@ -1,5 +1,10 @@
 var NAVTREEINDEX135 =
 {
+"module__switch_uart.html":[1,423],
+"module__switch_uart.html#functions__switch_uart":[1,423,1],
+"module__switch_uart.html#module_load_example__switch_uart":[1,423,0],
+"module__switch_uart.html#module_xml__switch_uart":[1,423,1,0],
+"module__sys_id_auto_doublets.html":[1,424],
 "module__sys_id_auto_doublets.html#configuration__sys_id_auto_doublets":[1,424,1],
 "module__sys_id_auto_doublets.html#functions__sys_id_auto_doublets":[1,424,2],
 "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,424,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX135 =
 "module__wind_estimation_quadrotor.html#module_xml__wind_estimation_quadrotor":[1,286,2,0],
 "module__wind_estimator.html":[1,287],
 "module__wind_estimator.html#functions__wind_estimator":[1,287,1],
-"module__wind_estimator.html#module_load_example__wind_estimator":[1,287,0],
-"module__wind_estimator.html#module_xml__wind_estimator":[1,287,1,0],
-"module__wind_gfi.html":[1,288],
-"module__wind_gfi.html#functions__wind_gfi":[1,288,1],
-"module__wind_gfi.html#module_load_example__wind_gfi":[1,288,0],
-"module__wind_gfi.html#module_xml__wind_gfi":[1,288,1,0]
+"module__wind_estimator.html#module_load_example__wind_estimator":[1,287,0]
 };

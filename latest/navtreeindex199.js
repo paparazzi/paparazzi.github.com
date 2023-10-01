@@ -1,5 +1,15 @@
 var NAVTREEINDEX199 =
 {
+"stm32_2mcu__periph_2i2c__arch_8c.html#a11ecde7c6886706edcb76c6190fc2218":[12,0,1,0,0,3,0,6,21],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a24b4322c949865119cad583ec9e390af":[12,0,1,0,0,3,0,6,18],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a326070999b86b4e79164a2a31031469e":[12,0,1,0,0,3,0,6,24],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a33e9f35552e7f38ecce63213ae59221e":[12,0,1,0,0,3,0,6,12],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a388523ab234700b11b04fe8b810d0642":[12,0,1,0,0,3,0,6,19],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a39ca8cd22c06ced2a49fa8ca9d77fd9f":[12,0,1,0,0,3,0,6,3],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8":[12,0,1,0,0,3,0,6,9],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8a2bf43d2a6766ade733171703bb4f0ae1":[12,0,1,0,0,3,0,6,9,1],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8a4ed7b09a37e06d3f30b2e8592e77356a":[12,0,1,0,0,3,0,6,9,0],
+"stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8a657b9cff002b8bfa10f223178d9ec469":[12,0,1,0,0,3,0,6,9,2],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8aac32cddf112f82c12b7fa82bd28a0bac":[12,0,1,0,0,3,0,6,9,3],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a4197d7c4d5fe3d659ac058487a84e947":[12,0,1,0,0,3,0,6,8],
 "stm32_2mcu__periph_2i2c__arch_8c.html#a51ee0aafd3ec8a5ab3458cfb1e327f42":[12,0,1,0,0,3,0,6,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX199 =
 "stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd":[12,0,1,0,0,3,10,24],
 "stm32_2usb__ser__hw_8c.html#aa0151161b66418768106b15d2fc328fd":[12,0,1,0,0,3,10,28],
 "stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b":[12,0,1,0,0,3,10,27],
-"stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124":[12,0,1,0,0,3,10,44],
-"stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b":[12,0,1,0,0,3,10,16],
-"stm32_2usb__ser__hw_8c.html#ad4148a27686df68c8496d49427d52e36":[12,0,1,0,0,3,10,17],
-"stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1":[12,0,1,0,0,3,10,14],
-"stm32_2usb__ser__hw_8c.html#ae3001fd8504f8ad30ee40a958da7bf0c":[12,0,1,0,0,3,10,12],
-"stm32_2usb__ser__hw_8c.html#ae4318c752d87ae9cc59828f07ec04946":[12,0,1,0,0,3,10,21],
-"stm32_2usb__ser__hw_8c.html#ae608f21143f9de6b9d8ffec85681e81f":[12,0,1,0,0,3,10,2],
-"stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84":[12,0,1,0,0,3,10,34],
-"stm32_2usb__ser__hw_8c.html#af34cf0c102eb4cf7bc0df82cd25bf8ad":[12,0,1,0,0,3,10,45],
-"stm32_2usb__ser__hw_8c.html#af5328a6344acb61e9eb9a2797b80d005":[12,0,1,0,0,3,10,30],
-"stm32_2usb__ser__hw_8c.html#af67b401d141ad215f5eb4da16750c14c":[12,0,1,0,0,3,10,43]
+"stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124":[12,0,1,0,0,3,10,44]
 };

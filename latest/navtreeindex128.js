@@ -1,5 +1,10 @@
 var NAVTREEINDEX128 =
 {
+"module__air_data.html#module_xml__air_data":[1,428,3,0],
+"module__airborne_ant_track.html":[1,429],
+"module__airborne_ant_track.html#functions__airborne_ant_track":[1,429,1],
+"module__airborne_ant_track.html#module_load_example__airborne_ant_track":[1,429,0],
+"module__airborne_ant_track.html#module_xml__airborne_ant_track":[1,429,1,0],
 "module__airspeed_adc.html":[1,360],
 "module__airspeed_adc.html#configuration__airspeed_adc":[1,360,1],
 "module__airspeed_adc.html#functions__airspeed_adc":[1,360,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX128 =
 "module__control_adaptive.html#module_xml__control_adaptive":[1,71,0,0],
 "module__control_energy.html":[1,72],
 "module__control_energy.html#module_load_example__control_energy":[1,72,0],
-"module__control_energy.html#module_xml__control_energy":[1,72,0,0],
-"module__control_energyadaptive.html":[1,73],
-"module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,73,0],
-"module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,73,0,0],
-"module__control_new.html":[1,74],
-"module__control_new.html#module_load_example__control_new":[1,74,0]
+"module__control_energy.html#module_xml__control_energy":[1,72,0,0]
 };

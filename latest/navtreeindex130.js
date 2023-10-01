@@ -1,5 +1,10 @@
 var NAVTREEINDEX130 =
 {
+"module__filter_1euro_imu.html#module_xml__filter_1euro_imu":[1,172,2,0],
+"module__flight_benchmark.html":[1,35],
+"module__flight_benchmark.html#configuration__flight_benchmark":[1,35,1],
+"module__flight_benchmark.html#functions__flight_benchmark":[1,35,2],
+"module__flight_benchmark.html#module_load_example__flight_benchmark":[1,35,0],
 "module__flight_benchmark.html#module_xml__flight_benchmark":[1,35,2,0],
 "module__flight_recorder.html":[1,244],
 "module__flight_recorder.html#configuration__flight_recorder":[1,244,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX130 =
 "module__humid_dpicco.html#module_load_example__humid_dpicco":[1,269,0],
 "module__humid_dpicco.html#module_xml__humid_dpicco":[1,269,1,0],
 "module__humid_hih.html":[1,270],
-"module__humid_hih.html#functions__humid_hih":[1,270,1],
-"module__humid_hih.html#module_load_example__humid_hih":[1,270,0],
-"module__humid_hih.html#module_xml__humid_hih":[1,270,1,0],
-"module__humid_htm_b71.html":[1,271],
-"module__humid_htm_b71.html#configuration__humid_htm_b71":[1,271,1],
-"module__humid_htm_b71.html#functions__humid_htm_b71":[1,271,2]
+"module__humid_hih.html#functions__humid_hih":[1,270,1]
 };

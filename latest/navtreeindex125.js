@@ -1,5 +1,10 @@
 var NAVTREEINDEX125 =
 {
+"max7456_8c.html#ab5b10155f7136bcffe3c9ff1972b5a39":[12,0,1,0,6,19,0,7],
+"max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc":[12,0,1,0,6,19,0,24],
+"max7456_8c.html#ab6589475b928e58fdf044d03783fcb54":[12,0,1,0,6,19,0,12],
+"max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f":[12,0,1,0,6,19,0,20],
+"max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,19,0,0,1],
 "max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac":[12,0,1,0,6,8,6,0,1],
 "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd":[12,0,1,0,6,19,0,10],
 "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda3bf421e589163ab40526b2b873b18f62":[12,0,1,0,6,19,0,10,4],
@@ -16,11 +21,11 @@ var NAVTREEINDEX125 =
 "max7456_8c.html#adde21930790faec5566e34c25e7e95d6":[12,0,1,0,6,19,0,31],
 "max7456_8c.html#ae32c7c55a63dcd63a3e4182531bd56b7":[12,0,1,0,6,19,0,35],
 "max7456_8c.html#ae46cb108217d2126c9f484cf6b63c728":[12,0,1,0,6,19,0,36],
-"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,19,0,0,2],
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
+"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,19,0,0,2],
 "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,19,0,15],
-"max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,19,0,1],
+"max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,19,0,0],
 "max7456_8c.html#structVECTOR":[12,0,1,0,6,8,6,0],
 "max7456_8c_source.html":[12,0,1,0,6,19,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX125 =
 "meteo__stick_8c.html#a2d4342c4324b71e639c69bd580c0d33c":[12,0,1,0,6,43,33,18],
 "meteo__stick_8c.html#a3792ea7a9a5bb902952ebc5e6abaa270":[12,0,1,0,6,43,33,26],
 "meteo__stick_8c.html#a44fbda9e381c4ee6cc86d1fb914c7d6b":[12,0,1,0,6,43,33,21],
-"meteo__stick_8c.html#a45a1630fe3450253efeca588d2a271b3":[12,0,1,0,6,43,33,2],
-"meteo__stick_8c.html#a4e7f4148f67d50997efb2349984e3a61":[12,0,1,0,6,43,33,7],
-"meteo__stick_8c.html#a62b03a019029bd92128494bea2b7c4d9":[12,0,1,0,6,43,33,15],
-"meteo__stick_8c.html#a691b609a40be0367a7314fa72694726a":[12,0,1,0,6,43,33,14],
-"meteo__stick_8c.html#a6cbdc6734705855fe3654fe595c0b30d":[12,0,1,0,6,43,33,8],
-"meteo__stick_8c.html#a718f042907e206d918d2f5bf448dc3ff":[12,0,1,0,6,43,33,3]
+"meteo__stick_8c.html#a45a1630fe3450253efeca588d2a271b3":[12,0,1,0,6,43,33,2]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX196 =
 {
+"stabilization__attitude__quat__float_8c.html#a6ef156cacd8701fc42504415807c85a0":[12,0,1,0,3,2,1,13,25],
+"stabilization__attitude__quat__float_8c.html#a6f37bdacf24a1611005450a36f1f516c":[12,0,1,0,3,2,1,13,28],
+"stabilization__attitude__quat__float_8c.html#a865613eb261d886dab036a9133a524c8":[12,0,1,0,3,2,1,13,34],
+"stabilization__attitude__quat__float_8c.html#a87a434e9e144116b70f4b5f5edd58052":[12,0,1,0,3,2,1,13,39],
+"stabilization__attitude__quat__float_8c.html#a88471162c0f269059f892bf96fbc7260":[12,0,1,0,3,2,1,13,23],
 "stabilization__attitude__quat__float_8c.html#a8a7faa82a4a14113987c600d7e38d836":[12,0,1,0,3,2,1,13,36],
 "stabilization__attitude__quat__float_8c.html#a8d1663a7fdabd57f5429eca1990ba474":[12,0,1,0,3,2,1,13,29],
 "stabilization__attitude__quat__float_8c.html#a9262eaf623b6b1eba2f9904bd2717148":[12,0,1,0,3,2,1,13,20],
@@ -243,11 +248,6 @@ var NAVTREEINDEX196 =
 "stabilization__attitude__ref__quat__float_8h.html#a57167f229895fc447e48745902813cde":[12,0,1,0,3,2,1,30,2],
 "stabilization__attitude__ref__quat__float_8h.html#a6246617981d4269af34291dafdd9f1e3":[12,0,1,0,3,2,1,30,12],
 "stabilization__attitude__ref__quat__float_8h.html#a62d305e55fd4d335266cf18cb5af6525":[12,0,1,0,3,2,1,30,4],
-"stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,25,0,1],
 "stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,30,0,1],
-"stabilization__attitude__ref__quat__float_8h.html#a773a37e03a3c43043d6b051b8d17cd08":[12,0,1,0,3,2,1,30,1,4],
-"stabilization__attitude__ref__quat__float_8h.html#a7db3c49e65e9d2d4d273b1eaf4a7243b":[12,0,1,0,3,2,1,30,3],
-"stabilization__attitude__ref__quat__float_8h.html#a8ecae63302893cfddabac6f3ac1d3aeb":[12,0,1,0,3,2,1,30,11],
-"stabilization__attitude__ref__quat__float_8h.html#a95b1306fb1567237ddb6050284af5ec1":[12,0,1,0,3,2,1,30,1,3],
-"stabilization__attitude__ref__quat__float_8h.html#aa719423d614df48557e9cd8583d3eaa9":[12,0,1,0,3,2,1,30,5]
+"stabilization__attitude__ref__quat__float_8h.html#a6e8cc1912f8773090cf1e0cdaa453905":[12,0,1,0,3,2,1,25,0,1]
 };

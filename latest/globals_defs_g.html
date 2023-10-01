@@ -853,9 +853,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 : <a class="el" href="gps__ubx_8c.html#a35ca2a7a61d33ad148da82464549e769">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ENABLE_NMEA_DATA_MASK
-: <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
-, <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
+: <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
 , <a class="el" href="gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef">gps_ubx_ucenter.c</a>
+, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
 </li>
 <li>GPS_UBX_ERR_CHECKSUM
 : <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
@@ -1063,11 +1063,11 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#afde85d56c5c5d37ece2c4bfb640e72b5">guidance_h.h</a>
 </li>
 <li>GUIDANCE_H_MODE_MODULE_SETTING
-: <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
+: <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
+, <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
 , <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
-, <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
 , <a class="el" href="optical__flow__hover_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
 </li>
 <li>GUIDANCE_H_MODE_NAV
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a">guidance_h.h</a>
@@ -1110,6 +1110,12 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 </li>
 <li>GUIDANCE_INDI_ACCEL_SP_ID
 : <a class="el" href="guidance__indi_8c.html#a020db8e65be95b4dfa61423391d20434">guidance_indi.c</a>
+</li>
+<li>GUIDANCE_INDI_CLIMB_SPEED_FWD
+: <a class="el" href="guidance__indi__hybrid_8c.html#a1f5ab3b277c3bfa3043523b4f29506e4">guidance_indi_hybrid.c</a>
+</li>
+<li>GUIDANCE_INDI_DESCEND_SPEED_FWD
+: <a class="el" href="guidance__indi__hybrid_8c.html#ab5bf9986f362a7dddb4c5f91a2c7d184">guidance_indi_hybrid.c</a>
 </li>
 <li>GUIDANCE_INDI_FILTER_CUTOFF
 : <a class="el" href="guidance__indi_8c.html#aabdf5197f9c3258629ccee0bed08645b">guidance_indi.c</a>
@@ -1243,10 +1249,10 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 </li>
 <li>GUIDANCE_V_MODE_MODULE_SETTING
 : <a class="el" href="ctrl__module__innerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_innerloop_demo.h</a>
-, <a class="el" href="vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">vertical_ctrl_module_demo.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
-, <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
 , <a class="el" href="ctrl__module__outerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_outerloop_demo.h</a>
+, <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
+, <a class="el" href="vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">vertical_ctrl_module_demo.h</a>
 </li>
 <li>GUIDANCE_V_MODE_NAV
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#acf327c70e058c173f8a006360068759f">guidance_v.h</a>
@@ -1698,7 +1704,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 30 2023 11:11:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Oct 1 2023 18:47:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
