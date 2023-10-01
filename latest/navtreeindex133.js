@@ -1,5 +1,13 @@
 var NAVTREEINDEX133 =
 {
+"module__meteo_stick.html#configuration__meteo_stick":[1,280,1],
+"module__meteo_stick.html#functions__meteo_stick":[1,280,2],
+"module__meteo_stick.html#module_load_example__meteo_stick":[1,280,0],
+"module__meteo_stick.html#module_xml__meteo_stick":[1,280,2,0],
+"module__mf_ptu.html":[1,281],
+"module__mf_ptu.html#af_section":[1,281,1,1],
+"module__mf_ptu.html#configuration__mf_ptu":[1,281,1],
+"module__mf_ptu.html#configure":[1,281,1,0],
 "module__mf_ptu.html#functions__mf_ptu":[1,281,2],
 "module__mf_ptu.html#module_load_example__mf_ptu":[1,281,0],
 "module__mf_ptu.html#module_xml__mf_ptu":[1,281,2,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX133 =
 "module__potential.html#functions__potential":[1,297,1],
 "module__potential.html#module_load_example__potential":[1,297,0],
 "module__potential.html#module_xml__potential":[1,297,1,0],
-"module__power_switch.html":[1,43],
-"module__power_switch.html#functions__power_switch":[1,43,1],
-"module__power_switch.html#module_load_example__power_switch":[1,43,0],
-"module__power_switch.html#module_xml__power_switch":[1,43,1,0],
-"module__pprzlog.html":[1,253],
-"module__pprzlog.html#functions__pprzlog":[1,253,1],
-"module__pprzlog.html#module_load_example__pprzlog":[1,253,0],
-"module__pprzlog.html#module_xml__pprzlog":[1,253,1,0],
-"module__pwm_meas.html":[1,75]
+"module__power_switch.html":[1,43]
 };

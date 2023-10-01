@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"module__ins_float_invariant.html":[1,221],
+"module__ins_float_invariant.html#configuration__ins_float_invariant":[1,221,1],
+"module__ins_float_invariant.html#functions__ins_float_invariant":[1,221,2],
+"module__ins_float_invariant.html#module_load_example__ins_float_invariant":[1,221,0],
+"module__ins_float_invariant.html#module_xml__ins_float_invariant":[1,221,2,0],
+"module__ins_flow.html":[1,222],
+"module__ins_flow.html#functions__ins_flow":[1,222,1],
+"module__ins_flow.html#module_load_example__ins_flow":[1,222,0],
 "module__ins_flow.html#module_xml__ins_flow":[1,222,1,0],
 "module__ins_gps_passthrough.html":[1,223],
 "module__ins_gps_passthrough.html#configuration__ins_gps_passthrough":[1,223,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX132 =
 "module__meteo_france_daq.html#functions__meteo_france_daq":[1,279,1],
 "module__meteo_france_daq.html#module_load_example__meteo_france_daq":[1,279,0],
 "module__meteo_france_daq.html#module_xml__meteo_france_daq":[1,279,2,0],
-"module__meteo_stick.html":[1,280],
-"module__meteo_stick.html#configuration__meteo_stick":[1,280,1],
-"module__meteo_stick.html#functions__meteo_stick":[1,280,2],
-"module__meteo_stick.html#module_load_example__meteo_stick":[1,280,0],
-"module__meteo_stick.html#module_xml__meteo_stick":[1,280,2,0],
-"module__mf_ptu.html":[1,281],
-"module__mf_ptu.html#af_section":[1,281,1,1],
-"module__mf_ptu.html#configuration__mf_ptu":[1,281,1],
-"module__mf_ptu.html#configure":[1,281,1,0]
+"module__meteo_stick.html":[1,280]
 };

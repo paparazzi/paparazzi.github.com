@@ -1,6 +1,7 @@
 var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
 [
     [ "qr_solve", "dir_879cab577fd2f9083eff958fc2dd0263.html", "dir_879cab577fd2f9083eff958fc2dd0263" ],
+    [ "wls", "dir_80cbdabaa34c366b9f01eeb4ee10e21e.html", "dir_80cbdabaa34c366b9f01eeb4ee10e21e" ],
     [ "pprz_algebra.h", "pprz__algebra_8h.html", "pprz__algebra_8h" ],
     [ "pprz_algebra_double.c", "pprz__algebra__double_8c.html", "pprz__algebra__double_8c" ],
     [ "pprz_algebra_double.h", "pprz__algebra__double_8h.html", "pprz__algebra__double_8h" ],

@@ -30,6 +30,7 @@ var guidance__indi__hybrid_8h =
     [ "gih_params", "guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a", null ],
     [ "guidance_indi_max_airspeed", "guidance__indi__hybrid_8h.html#ada2fc126082d216494a972d8ecff1e30", null ],
     [ "guidance_indi_max_bank", "guidance__indi__hybrid_8h.html#a313939905cd50d33f06f8fb9d6960d10", null ],
+    [ "guidance_indi_min_pitch", "guidance__indi__hybrid_8h.html#a2fe10e27780836aaeffde34631eb03db", null ],
     [ "guidance_indi_specific_force_gain", "guidance__indi__hybrid_8h.html#ab8b7c1a3381bbab7edc1c3685cb0f7dc", null ],
     [ "sp_accel", "guidance__indi__hybrid_8h.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
     [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ]

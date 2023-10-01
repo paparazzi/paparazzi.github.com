@@ -1,5 +1,12 @@
 var NAVTREEINDEX76 =
 {
+"guidance__v__ref_8h.html#a61ea35c28ade47f77f09a012aa0f4fe4":[12,0,1,0,3,2,0,20,10],
+"guidance__v__ref_8h.html#a9438c4ab465cec426023d9fc3fb9cb07":[12,0,1,0,3,2,0,20,7],
+"guidance__v__ref_8h.html#a998c4eb852a2028e28e2987a31d783ad":[12,0,1,0,3,2,0,20,2],
+"guidance__v__ref_8h.html#ab36885cc677b3d2a0f89c148ffe6e9ba":[12,0,1,0,3,2,0,20,8],
+"guidance__v__ref_8h.html#ab8d8d8003fbd1c3d31ee72827ea1e25e":[12,0,1,0,3,2,0,20,9],
+"guidance__v__ref_8h.html#af5b4bf2932d63454e537de13ae5f58f3":[12,0,1,0,3,2,0,20,11],
+"guidance__v__ref_8h_source.html":[12,0,1,0,3,2,0,20],
 "gvf_8c.html":[12,0,1,0,6,30,0,2],
 "gvf_8c.html#a1d3d6f723a14fdd4a934b5d3483fb451":[12,0,1,0,6,30,0,2,12],
 "gvf_8c.html#a28e1da4e915425807dbc04310026ae8a":[12,0,1,0,6,30,0,2,16],
@@ -242,12 +249,5 @@ var NAVTREEINDEX76 =
 "gvf__parametric__3d__ellipse_8h.html#ae8a9e107c280e07d344b53ada69d8163":[12,0,1,0,6,30,1,0,3,0,0],
 "gvf__parametric__3d__ellipse_8h.html#aed40abdd38ae656d06a60ec82257261f":[12,0,1,0,6,30,1,0,3,0,1],
 "gvf__parametric__3d__ellipse_8h.html#af4bb5870aa7d46052d0f8e4a34b3d2cc":[12,0,1,0,6,30,1,0,3,2],
-"gvf__parametric__3d__ellipse_8h.html#structgvf__par__3d__ell__par":[12,0,1,0,6,30,1,0,3,0],
-"gvf__parametric__3d__ellipse_8h_source.html":[12,0,1,0,6,30,1,0,3],
-"gvf__parametric__3d__lissajous_8c.html":[12,0,1,0,6,30,1,0,4],
-"gvf__parametric__3d__lissajous_8c.html#a1b4975f89bfa8511a6d8a39144dd6f8a":[12,0,1,0,6,30,1,0,4,1],
-"gvf__parametric__3d__lissajous_8c.html#a39354f42026a015781031bbc2475f83c":[12,0,1,0,6,30,1,0,4,0],
-"gvf__parametric__3d__lissajous_8c.html#a458de947c5166e85daece42aafeaf054":[12,0,1,0,6,30,1,0,4,14],
-"gvf__parametric__3d__lissajous_8c.html#a48067d060868180355e419f37eacbedb":[12,0,1,0,6,30,1,0,4,7],
-"gvf__parametric__3d__lissajous_8c.html#a61d9094767475d47610720f7d6880317":[12,0,1,0,6,30,1,0,4,12]
+"gvf__parametric__3d__ellipse_8h.html#structgvf__par__3d__ell__par":[12,0,1,0,6,30,1,0,3,0]
 };

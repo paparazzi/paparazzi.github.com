@@ -1,5 +1,13 @@
 var NAVTREEINDEX134 =
 {
+"module__power_switch.html#functions__power_switch":[1,43,1],
+"module__power_switch.html#module_load_example__power_switch":[1,43,0],
+"module__power_switch.html#module_xml__power_switch":[1,43,1,0],
+"module__pprzlog.html":[1,253],
+"module__pprzlog.html#functions__pprzlog":[1,253,1],
+"module__pprzlog.html#module_load_example__pprzlog":[1,253,0],
+"module__pprzlog.html#module_xml__pprzlog":[1,253,1,0],
+"module__pwm_meas.html":[1,75],
 "module__pwm_meas.html#configuration__pwm_meas":[1,75,1],
 "module__pwm_meas.html#functions__pwm_meas":[1,75,2],
 "module__pwm_meas.html#module_load_example__pwm_meas":[1,75,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX134 =
 "module__stereocam_follow_me.html#module_load_example__stereocam_follow_me":[1,419,0],
 "module__stereocam_follow_me.html#module_xml__stereocam_follow_me":[1,419,0,0],
 "module__stereocam_nav_line_avoid.html":[1,420],
-"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,420,1],
-"module__stereocam_nav_line_avoid.html#functions__stereocam_nav_line_avoid":[1,420,2],
-"module__stereocam_nav_line_avoid.html#module_load_example__stereocam_nav_line_avoid":[1,420,0],
-"module__stereocam_nav_line_avoid.html#module_xml__stereocam_nav_line_avoid":[1,420,2,0],
-"module__switch_servo.html":[1,422],
-"module__switch_servo.html#configuration__switch_servo":[1,422,1],
-"module__switch_servo.html#functions__switch_servo":[1,422,2],
-"module__switch_servo.html#module_load_example__switch_servo":[1,422,0],
-"module__switch_servo.html#module_xml__switch_servo":[1,422,2,0]
+"module__stereocam_nav_line_avoid.html#configuration__stereocam_nav_line_avoid":[1,420,1]
 };

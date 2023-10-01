@@ -1,5 +1,12 @@
 var NAVTREEINDEX129 =
 {
+"module__control.html#module_xml__control":[1,70,0,0],
+"module__control_adaptive.html":[1,71],
+"module__control_adaptive.html#module_load_example__control_adaptive":[1,71,0],
+"module__control_adaptive.html#module_xml__control_adaptive":[1,71,0,0],
+"module__control_energy.html":[1,72],
+"module__control_energy.html#module_load_example__control_energy":[1,72,0],
+"module__control_energy.html#module_xml__control_energy":[1,72,0,0],
 "module__control_energyadaptive.html":[1,73],
 "module__control_energyadaptive.html#module_load_example__control_energyadaptive":[1,73,0],
 "module__control_energyadaptive.html#module_xml__control_energyadaptive":[1,73,0,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX129 =
 "module__fdm_pybullet.html":[1,138],
 "module__fdm_pybullet.html#configuration__fdm_pybullet":[1,138,1],
 "module__fdm_pybullet.html#module_load_example__fdm_pybullet":[1,138,0],
-"module__fdm_pybullet.html#module_xml__fdm_pybullet":[1,138,1,0],
-"module__fdm_rover.html":[1,139],
-"module__fdm_rover.html#module_load_example__fdm_rover":[1,139,0],
-"module__fdm_rover.html#module_xml__fdm_rover":[1,139,0,0],
-"module__filter_1euro_imu.html":[1,172],
-"module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,172,1],
-"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,172,2],
-"module__filter_1euro_imu.html#module_load_example__filter_1euro_imu":[1,172,0]
+"module__fdm_pybullet.html#module_xml__fdm_pybullet":[1,138,1,0]
 };

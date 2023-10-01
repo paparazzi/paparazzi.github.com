@@ -1085,6 +1085,7 @@ var onboard_modules =
     ] ],
     [ "guidance_indi_hybrid module", "module__guidance_indi_hybrid.html", [
       [ "Example for airframe file", "module__guidance_indi_hybrid.html#module_load_example__guidance_indi_hybrid", null ],
+      [ "Module configuration options", "module__guidance_indi_hybrid.html#configuration__guidance_indi_hybrid", null ],
       [ "Module functions", "module__guidance_indi_hybrid.html#functions__guidance_indi_hybrid", [
         [ "Raw guidance_indi_hybrid.xml file:", "module__guidance_indi_hybrid.html#module_xml__guidance_indi_hybrid", null ]
       ] ]
@@ -3146,6 +3147,12 @@ var onboard_modules =
       [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", null ],
       [ "Module functions", "module__wedgebug.html#functions__wedgebug", [
         [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
+      ] ]
+    ] ],
+    [ "wls module", "module__wls.html", [
+      [ "Example for airframe file", "module__wls.html#module_load_example__wls", null ],
+      [ "Module configuration options", "module__wls.html#configuration__wls", [
+        [ "Raw wls.xml file:", "module__wls.html#module_xml__wls", null ]
       ] ]
     ] ]
 ];
