@@ -19,6 +19,7 @@ var stabilization__indi_8h =
     [ "act_is_servo", "stabilization__indi_8h.html#a3099f5d69f8b2b84a9b1f7685f325adb", null ],
     [ "act_pref", "stabilization__indi_8h.html#a147581e222fb8f9b1cb2d3479a05aa01", null ],
     [ "actuator_state_filt_vect", "stabilization__indi_8h.html#aadec734a354c9ca37ceea556f59bcf8c", null ],
+    [ "actuator_thrust_bx_pprz", "stabilization__indi_8h.html#a74bfd6faffeed6e40628ce846f8119fd", null ],
     [ "Bwls", "stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a", null ],
     [ "du_max_stab_indi", "stabilization__indi_8h.html#a5d1e8adc7fab8f7ec8d54243d33ae1a9", null ],
     [ "du_min_stab_indi", "stabilization__indi_8h.html#a2e3e00bc03d8662b8b316513dbf78096", null ],
@@ -28,5 +29,8 @@ var stabilization__indi_8h =
     [ "indi_use_adaptive", "stabilization__indi_8h.html#abf1ef333c752f3f24a26a3efaede5fea", null ],
     [ "indi_Wu", "stabilization__indi_8h.html#a4ab8eb217dc373419dff7079543da047", null ],
     [ "stab_att_sp_euler", "stabilization__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
-    [ "stab_att_sp_quat", "stabilization__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
+    [ "stab_att_sp_quat", "stabilization__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
+    [ "thrust_bx_act_dyn", "stabilization__indi_8h.html#af99a0439f0598bdbce1ad28854646f6e", null ],
+    [ "thrust_bx_eff", "stabilization__indi_8h.html#af7b49650aef8a59b88d8b9e68aabb915", null ],
+    [ "thrust_bx_state_filt", "stabilization__indi_8h.html#a02b1d1b2b1052dff0707a5218f5346ad", null ]
 ];
