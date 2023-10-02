@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('wls__alloc_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8053b1e79e1b0395d86c381aa786434d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d">wls_alloc</a> (float *u, float *v, float *umin, float *umax, float **<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, float *u_guess, float *W_init, float *<a class="el" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, float *Wu, float *ud, float gamma, int imax)</td></tr>
-<tr class="memdesc:a8053b1e79e1b0395d86c381aa786434d"><td class="mdescLeft">&#160;</td><td class="mdescRight">active set algorithm for control allocation  <a href="wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d">More...</a><br /></td></tr>
-<tr class="separator:a8053b1e79e1b0395d86c381aa786434d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0f7bacd1d0551a17bea62d7b665c20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">wls_alloc</a> (float *u, float *v, float *umin, float *umax, float **<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, float *u_guess, float *W_init, float *<a class="el" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, float *Wu, float *ud, float gamma, int imax, int n_u, int n_v)</td></tr>
+<tr class="memdesc:a4b0f7bacd1d0551a17bea62d7b665c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">active set algorithm for control allocation  <a href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">More...</a><br /></td></tr>
+<tr class="separator:a4b0f7bacd1d0551a17bea62d7b665c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8053b1e79e1b0395d86c381aa786434d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8053b1e79e1b0395d86c381aa786434d">&#9670;&nbsp;</a></span>wls_alloc()</h2>
+<a id="a4b0f7bacd1d0551a17bea62d7b665c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0f7bacd1d0551a17bea62d7b665c20">&#9670;&nbsp;</a></span>wls_alloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imax</em>&#160;</td>
+          <td class="paramname"><em>imax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_v</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,8 +217,6 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">u</td><td>The control output vector </td></tr>
     <tr><td class="paramname">v</td><td>The control objective vector </td></tr>
-    <tr><td class="paramname">umin</td><td>The minimum u vector </td></tr>
-    <tr><td class="paramname">umax</td><td>The maximum u vector </td></tr>
     <tr><td class="paramname">B</td><td>The control effectiveness matrix </td></tr>
     <tr><td class="paramname">n_u</td><td>Length of u </td></tr>
     <tr><td class="paramname">n_v</td><td>Lenght of v </td></tr>
@@ -216,11 +226,13 @@ Functions</h2></td></tr>
     <tr><td class="paramname">Wu</td><td>Weighting on different controls </td></tr>
     <tr><td class="paramname">up</td><td>Preferred control vector </td></tr>
     <tr><td class="paramname">gamma_sq</td><td>Preference of satisfying control objective over desired control vector (sqare root of gamma) </td></tr>
-    <tr><td class="paramname">imax</td><td>Max number of iterations</td></tr>
+    <tr><td class="paramname">imax</td><td>Max number of iterations </td></tr>
+    <tr><td class="paramname">n_u</td><td>Length of u (the number of actuators) </td></tr>
+    <tr><td class="paramname">n_v</td><td>Lenght of v (the number of control objectives)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of iterations, -1 upon failure</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of iterations: (imax+1) means it ran out of iterations</dd></dl>
 <p>Takes the control objective and max and min inputs from pprz and calculates the inputs that will satisfy most of the control objective, subject to the weighting matrices Wv and Wu</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -229,23 +241,23 @@ Functions</h2></td></tr>
     <tr><td class="paramname">umin</td><td>The minimum u vector </td></tr>
     <tr><td class="paramname">umax</td><td>The maximum u vector </td></tr>
     <tr><td class="paramname">B</td><td>The control effectiveness matrix </td></tr>
-    <tr><td class="paramname">n_u</td><td>Length of u </td></tr>
-    <tr><td class="paramname">n_v</td><td>Lenght of v </td></tr>
     <tr><td class="paramname">u_guess</td><td>Initial value for u </td></tr>
     <tr><td class="paramname">W_init</td><td>Initial working set, if known </td></tr>
     <tr><td class="paramname">Wv</td><td>Weighting on different control objectives </td></tr>
     <tr><td class="paramname">Wu</td><td>Weighting on different controls </td></tr>
     <tr><td class="paramname">up</td><td>Preferred control vector </td></tr>
     <tr><td class="paramname">gamma_sq</td><td>Preference of satisfying control objective over desired control vector (sqare root of gamma) </td></tr>
-    <tr><td class="paramname">imax</td><td>Max number of iterations</td></tr>
+    <tr><td class="paramname">imax</td><td>Max number of iterations </td></tr>
+    <tr><td class="paramname">n_u</td><td>Length of u (the number of actuators) </td></tr>
+    <tr><td class="paramname">n_v</td><td>Lenght of v (the number of control objectives)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of iterations, -1 upon failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of iterations which is (imax+1) if it ran out of iterations </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="wls__alloc_8c_source.html#l00115">115</a> of file <a class="el" href="wls__alloc_8c_source.html">wls_alloc.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00132">alpha</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00101">B</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00257">lambda</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="wls__alloc_8c_source.html#l00077">qr_solve_wrapper()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">UNUSED</a>, <a class="el" href="light__solar_8c_source.html#l00048">up</a>, <a class="el" href="wls__alloc_8c_source.html#l00066">WLS_N_C</a>, <a class="el" href="wls__alloc_8c_source.html#l00059">WLS_N_U</a>, <a class="el" href="wls__alloc_8c_source.html#l00063">WLS_N_V</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00158">Wv</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00132">alpha</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00101">B</a>, <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00257">lambda</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="wls__alloc_8c_source.html#l00077">qr_solve_wrapper()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">UNUSED</a>, <a class="el" href="light__solar_8c_source.html#l00048">up</a>, <a class="el" href="wls__alloc_8c_source.html#l00066">WLS_N_C</a>, <a class="el" href="wls__alloc_8c_source.html#l00059">WLS_N_U</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00158">Wv</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00487">stabilization_indi_rate_run()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -253,8 +265,8 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="wls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_cgraph.png" border="0" usemap="#awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_cgraph" alt=""/></div>
-<map name="awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_cgraph" id="awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_cgraph">
+<div class="center"><img src="wls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_cgraph.png" border="0" usemap="#awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_cgraph" alt=""/></div>
+<map name="awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_cgraph" id="awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_cgraph">
 <area shape="rect" title="active set algorithm for control allocation" alt="" coords="5,157,88,184"/>
 <area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="136,157,273,184"/>
 <area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="321,157,399,184"/>
@@ -281,8 +293,8 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="wls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_icgraph.png" border="0" usemap="#awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_icgraph" alt=""/></div>
-<map name="awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_icgraph" id="awls__alloc_8h_a8053b1e79e1b0395d86c381aa786434d_icgraph">
+<div class="center"><img src="wls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_icgraph.png" border="0" usemap="#awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_icgraph" alt=""/></div>
+<map name="awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_icgraph" id="awls__alloc_8h_a4b0f7bacd1d0551a17bea62d7b665c20_icgraph">
 <area shape="rect" title="active set algorithm for control allocation" alt="" coords="633,42,716,69"/>
 <area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="452,35,585,76"/>
 <area shape="rect" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="256,5,389,47"/>
@@ -299,7 +311,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="dir_80cbdabaa34c366b9f01eeb4ee10e21e.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8h.html">wls_alloc.h</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 21:21:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 2 2023 09:36:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

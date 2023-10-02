@@ -244,7 +244,7 @@ var searchData=
   ['wing_5fpos_5flock_5fswitch_26970',['WING_POS_LOCK_SWITCH',['../glide__wing__lock_8c.html#ad35711a0d70379899d223cc341c59ca3',1,'glide_wing_lock.c']]],
   ['wing_5fpos_5fnominal_5fthrust_26971',['WING_POS_NOMINAL_THRUST',['../glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f',1,'glide_wing_lock.c']]],
   ['wls_20module_26972',['wls module',['../module__wls.html',1,'onboard_modules']]],
-  ['wls_5falloc_26973',['wls_alloc',['../wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d',1,'wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax):&#160;wls_alloc.c'],['../wls__alloc_8c.html#ac250d11d2fe928708ac372dbef5d547d',1,'wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *up, float gamma_sq, int imax):&#160;wls_alloc.c']]],
+  ['wls_5falloc_26973',['wls_alloc',['../wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20',1,'wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax, int n_u, int n_v):&#160;wls_alloc.c'],['../wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4',1,'wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *up, float gamma_sq, int imax, int n_u, int n_v):&#160;wls_alloc.c']]],
   ['wls_5falloc_2ec_26974',['wls_alloc.c',['../wls__alloc_8c.html',1,'']]],
   ['wls_5falloc_2eh_26975',['wls_alloc.h',['../wls__alloc_8h.html',1,'']]],
   ['wls_5fn_5fc_26976',['WLS_N_C',['../wls__alloc_8c.html#a9c9afc921f9a609ac54c173044a6447f',1,'wls_alloc.c']]],
