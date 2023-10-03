@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fixed_20point_20algebra_53488',['Fixed Point Algebra',['../group__math__algebra__int.html',1,'']]],
-  ['fixed_20point_20geodetic_20functions_53489',['Fixed Point Geodetic functions',['../group__math__geodetic__int.html',1,'']]],
-  ['float_20algebra_53490',['Float Algebra',['../group__math__algebra__float.html',1,'']]]
+  ['fixed_20point_20algebra_53503',['Fixed Point Algebra',['../group__math__algebra__int.html',1,'']]],
+  ['fixed_20point_20geodetic_20functions_53504',['Fixed Point Geodetic functions',['../group__math__geodetic__int.html',1,'']]],
+  ['float_20algebra_53505',['Float Algebra',['../group__math__algebra__float.html',1,'']]]
 ];

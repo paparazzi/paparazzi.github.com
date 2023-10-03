@@ -12,6 +12,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_indi.h", "guidance__indi_8h.html", "guidance__indi_8h" ],
     [ "guidance_indi_hybrid.c", "guidance__indi__hybrid_8c.html", "guidance__indi__hybrid_8c" ],
     [ "guidance_indi_hybrid.h", "guidance__indi__hybrid_8h.html", "guidance__indi__hybrid_8h" ],
+    [ "guidance_indi_hybrid_quadplanes.h", "guidance__indi__hybrid__quadplanes_8h.html", "guidance__indi__hybrid__quadplanes_8h" ],
+    [ "guidance_indi_hybrid_tailsitters.h", "guidance__indi__hybrid__tailsitters_8h.html", "guidance__indi__hybrid__tailsitters_8h" ],
     [ "guidance_module.h", "guidance__module_8h.html", null ],
     [ "guidance_pid.c", "guidance__pid_8c.html", "guidance__pid_8c" ],
     [ "guidance_pid.h", "guidance__pid_8h.html", "guidance__pid_8h" ],
