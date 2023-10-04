@@ -1,5 +1,10 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__color__correction_8h.html#a0283b949fd8101085126246d4ef13f3e":[12,0,1,0,1,2,0,0,5,10,0],
+"avi__isp__color__correction_8h.html#a04d080b1314b643dd92b83afaaed7cba":[12,0,1,0,1,2,0,0,5,11,0],
+"avi__isp__color__correction_8h.html#a06f490ab3db93e4ba5f3ac73f718d872":[12,0,1,0,1,2,0,0,5,11,3],
+"avi__isp__color__correction_8h.html#a0e806cb81a66db4abc2e4307ce828f56":[12,0,1,0,1,2,0,0,5,23],
+"avi__isp__color__correction_8h.html#a1145e02fda3218bb9fe254d34289ad75":[12,0,1,0,1,2,0,0,5,33],
 "avi__isp__color__correction_8h.html#a15eddccf2f75e5c115e8ee4a8c2560a8":[12,0,1,0,1,2,0,0,5,12,2],
 "avi__isp__color__correction_8h.html#a1b49a7b8edaee01de22acf38f94b5148":[12,0,1,0,1,2,0,0,5,25],
 "avi__isp__color__correction_8h.html#a1b4b24588c9a374148dbf58a0bd28ab3":[12,0,1,0,1,2,0,0,5,5,0],
@@ -16,8 +21,8 @@ var NAVTREEINDEX17 =
 "avi__isp__color__correction_8h.html#a4b9766227553d579c6d83f3bf63b89c8":[12,0,1,0,1,2,0,0,5,15,2],
 "avi__isp__color__correction_8h.html#a5511751a9e551e0cb248fc5dfabead9a":[12,0,1,0,1,2,0,0,5,4,0],
 "avi__isp__color__correction_8h.html#a5533baa88579605cff664a3b5a0a63d7":[12,0,1,0,1,2,0,0,5,29],
-"avi__isp__color__correction_8h.html#a55f842792771da3427869983b142acfa":[12,0,1,0,1,2,0,0,5,17,1],
 "avi__isp__color__correction_8h.html#a55f842792771da3427869983b142acfa":[12,0,1,0,1,2,0,0,5,19,1],
+"avi__isp__color__correction_8h.html#a55f842792771da3427869983b142acfa":[12,0,1,0,1,2,0,0,5,17,1],
 "avi__isp__color__correction_8h.html#a55f842792771da3427869983b142acfa":[12,0,1,0,1,2,0,0,5,21,1],
 "avi__isp__color__correction_8h.html#a5c6a449520d69e82bf16d2fe61d8f606":[12,0,1,0,1,2,0,0,5,8,0],
 "avi__isp__color__correction_8h.html#a5d18694549bafa77d1ed2101b4a463a0":[12,0,1,0,1,2,0,0,5,27],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__denoising_8h.html#unionavi__isp__denoising__lumocoeff__r__13__12":[12,0,1,0,1,2,0,0,7,4],
 "avi__isp__denoising_8h_source.html":[12,0,1,0,1,2,0,0,7],
 "avi__isp__drop_8h.html":[12,0,1,0,1,2,0,0,8],
-"avi__isp__drop_8h.html#a41c0c79933713cf884d2310f43da1bda":[12,0,1,0,1,2,0,0,8,4,0],
-"avi__isp__drop_8h.html#a68cce585fdf456ccecd3685767660df0":[12,0,1,0,1,2,0,0,8,0,0],
-"avi__isp__drop_8h.html#a872ac149c5e7dd439093a30d703c8ba1":[12,0,1,0,1,2,0,0,8,6],
-"avi__isp__drop_8h.html#ac14549e71238e808eb720779ce402c0d":[12,0,1,0,1,2,0,0,8,5],
-"avi__isp__drop_8h.html#ac82b8264aac6b920f9b860b48643a4a1":[12,0,1,0,1,2,0,0,8,2,1],
-"avi__isp__drop_8h.html#ae3e1668916d0e401d35eee4baa3badc0":[12,0,1,0,1,2,0,0,8,3,0]
+"avi__isp__drop_8h.html#a41c0c79933713cf884d2310f43da1bda":[12,0,1,0,1,2,0,0,8,4,0]
 };

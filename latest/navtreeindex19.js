@@ -1,5 +1,10 @@
 var NAVTREEINDEX19 =
 {
+"avi__isp__lens__shading__correction_8h.html#ad8b2b36fa8a81cd018b930670b742c92":[12,0,1,0,1,2,0,0,13,30,0],
+"avi__isp__lens__shading__correction_8h.html#adfad5a565ddd7d2d6172f2701ac8d57a":[12,0,1,0,1,2,0,0,13,39],
+"avi__isp__lens__shading__correction_8h.html#ae3e1668916d0e401d35eee4baa3badc0":[12,0,1,0,1,2,0,0,13,19,1],
+"avi__isp__lens__shading__correction_8h.html#ae55432d163a56345109d13dc209c8654":[12,0,1,0,1,2,0,0,13,17,0],
+"avi__isp__lens__shading__correction_8h.html#ae5cb540a6e21170c60296fc489664cac":[12,0,1,0,1,2,0,0,13,32],
 "avi__isp__lens__shading__correction_8h.html#ae66fb6c2ec75f04387ef3e08b0402340":[12,0,1,0,1,2,0,0,13,0,0],
 "avi__isp__lens__shading__correction_8h.html#aff85593c6af7302cca1455894002e02f":[12,0,1,0,1,2,0,0,13,11,8],
 "avi__isp__lens__shading__correction_8h.html#structavi__isp__lens__shading__correction__alpha_8____unnamed184____":[12,0,1,0,1,2,0,0,13,25],
@@ -244,10 +249,5 @@ var NAVTREEINDEX19 =
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__center_8____unnamed240____":[12,0,1,0,1,2,0,0,16,23],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__x__squared_8____unnamed242____":[12,0,1,0,1,2,0,0,16,24],
 "avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__center_8____unnamed244____":[12,0,1,0,1,2,0,0,16,25],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__squared_8____unnamed246____":[12,0,1,0,1,2,0,0,16,26],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__radius__squared_8____unnamed248____":[12,0,1,0,1,2,0,0,16,27],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__increments__log2_8____unnamed250____":[12,0,1,0,1,2,0,0,16,28],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__req_8____unnamed232____":[12,0,1,0,1,2,0,0,16,19],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__measure__status_8____unnamed234____":[12,0,1,0,1,2,0,0,16,20],
-"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__regs":[12,0,1,0,1,2,0,0,16,16]
+"avi__isp__statistics__yuv_8h.html#structavi__isp__statistics__yuv__circle__pos__y__squared_8____unnamed246____":[12,0,1,0,1,2,0,0,16,26]
 };

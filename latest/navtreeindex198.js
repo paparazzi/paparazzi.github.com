@@ -1,5 +1,15 @@
 var NAVTREEINDEX198 =
 {
+"stabilization__indi__simple_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8":[12,0,1,0,3,2,1,34,16],
+"stabilization__indi__simple_8c.html#a362a37014aa4bb541a8de211a70ba00e":[12,0,1,0,3,2,1,34,28],
+"stabilization__indi__simple_8c.html#a3c41519cb45ffcbf35b6f6228603e5cc":[12,0,1,0,3,2,1,34,1],
+"stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca":[12,0,1,0,3,2,1,34,13],
+"stabilization__indi__simple_8c.html#a487bd4ac66f844d9d1adfb696f950604":[12,0,1,0,3,2,1,34,21],
+"stabilization__indi__simple_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0":[12,0,1,0,3,2,1,34,3],
+"stabilization__indi__simple_8c.html#a51a4671d083da69c010c0985faf4d2f3":[12,0,1,0,3,2,1,34,4],
+"stabilization__indi__simple_8c.html#a53fa37c89df626ac39ce2b9bb4c6e175":[12,0,1,0,3,2,1,34,15],
+"stabilization__indi__simple_8c.html#a579eabe525912021499370675a0eaf38":[12,0,1,0,3,2,1,34,26],
+"stabilization__indi__simple_8c.html#a581a406cc0fef00c51a5466cadb0b180":[12,0,1,0,3,2,1,34,11],
 "stabilization__indi__simple_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42":[12,0,1,0,3,2,1,34,30],
 "stabilization__indi__simple_8c.html#a6b8e94ede31416d0e5b7251270d743bb":[12,0,1,0,3,2,1,34,8],
 "stabilization__indi__simple_8c.html#a83c932bd9792806ff65ff3ca266f410b":[12,0,1,0,3,2,1,34,19],
@@ -239,15 +249,5 @@ var NAVTREEINDEX198 =
 "stm32_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,3,4,11],
 "stm32_2led__hw_8h_source.html":[12,0,1,0,0,3,4],
 "stm32_2mcu__arch_8c.html":[12,0,1,0,0,3,5],
-"stm32_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,3,5,0],
-"stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c":[12,0,1,0,0,3,5,1],
-"stm32_2mcu__arch_8c_source.html":[12,0,1,0,0,3,5],
-"stm32_2mcu__arch_8h.html":[12,0,1,0,0,3,6],
-"stm32_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,3,6,1],
-"stm32_2mcu__arch_8h.html#a8cbdb764f8f91c3316423d59485f3a13":[12,0,1,0,0,3,6,0],
-"stm32_2mcu__arch_8h.html#ad5d712b19fd6e3df08c60d4db733a22c":[12,0,1,0,0,3,6,2],
-"stm32_2mcu__arch_8h_source.html":[12,0,1,0,0,3,6],
-"stm32_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,3,0,0],
-"stm32_2mcu__periph_2adc__arch_8c.html#a006a3e3f3935299ac3dfc03cb283c41e":[12,0,1,0,0,3,0,0,2],
-"stm32_2mcu__periph_2adc__arch_8c.html#a0a5a43d5ad57bb96dd80927c6bef75fd":[12,0,1,0,0,3,0,0,14]
+"stm32_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,3,5,0]
 };

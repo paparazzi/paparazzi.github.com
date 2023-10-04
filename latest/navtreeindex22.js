@@ -1,5 +1,10 @@
 var NAVTREEINDEX22 =
 {
+"battery__monitor_8c.html#ad5d27f2089d8318dbd4f23bdc574483f":[12,0,1,0,6,1,2,9],
+"battery__monitor_8c.html#ada976116d6f0d114e4c2d3f4b55e3d30":[12,0,1,0,6,1,2,3],
+"battery__monitor_8c.html#adee0aebd61dd74ed266c93ad31f15b24":[12,0,1,0,6,1,2,15],
+"battery__monitor_8c.html#ae96423be038e3982c804c87b5e45f36a":[12,0,1,0,6,1,2,17],
+"battery__monitor_8c_source.html":[12,0,1,0,6,1,2],
 "battery__monitor_8h.html":[12,0,1,0,6,1,3],
 "battery__monitor_8h.html#a09943056c34744771d7b18e092332828":[12,0,1,0,6,1,3,0,4],
 "battery__monitor_8h.html#a14abcaedde7d798d8fc0274e1eb5ba20":[12,0,1,0,6,1,3,30],
@@ -244,10 +249,5 @@ var NAVTREEINDEX22 =
 "bluegiga__dl_8h.html#aeda304a525f0030bb22051b2abaff6f3":[12,0,1,0,6,14,6,2],
 "bluegiga__dl_8h_source.html":[12,0,1,0,6,14,6],
 "bmi088_8c.html":[12,0,1,0,7,17],
-"bmi088_8c.html#a1ebc60689c9b9ad5f444a6b275f82eb9":[12,0,1,0,7,17,1],
-"bmi088_8c.html#a204cd9d13497f8b2ecefa26ee3a934f8":[12,0,1,0,7,17,2],
-"bmi088_8c.html#a4d9c09f013fce4f0a70fe73a56cd4dbc":[12,0,1,0,7,17,3],
-"bmi088_8c.html#a5625e56ef12de74a87d98eec0eefab9c":[12,0,1,0,7,17,0],
-"bmi088_8c.html#a8d41db65aea9c5021c6ae7b35e307fea":[12,0,1,0,7,17,5],
-"bmi088_8c.html#addcce42ce13cf7b00585ee7ef9cc1936":[12,0,1,0,7,17,4]
+"bmi088_8c.html#a1ebc60689c9b9ad5f444a6b275f82eb9":[12,0,1,0,7,17,1]
 };

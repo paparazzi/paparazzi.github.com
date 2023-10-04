@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('ins__flow_8c.html',''); initResizable(
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="motor__mixing_8h_source.html">modules/actuators/motor_mixing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization_8h_source.html">stabilization.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="telemetry_8h_source.html">modules/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
@@ -111,56 +112,56 @@ $(document).ready(function(){initNavTree('ins__flow_8c.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2ins_2ins__flow_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2ins_2ins__flow_8c" id="asw_2airborne_2modules_2ins_2ins__flow_8c">
-<area shape="rect" title=" " alt="" coords="1388,5,1546,47"/>
-<area shape="rect" href="ins__flow_8h.html" title=" " alt="" coords="497,95,584,121"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1280,445,1435,471"/>
-<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="312,355,486,382"/>
-<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="1011,266,1078,293"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1276,95,1423,121"/>
-<area shape="rect" title=" " alt="" coords="1726,445,1886,471"/>
-<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1421,177,1513,203"/>
-<area shape="rect" title=" " alt="" coords="1782,95,1954,121"/>
-<area shape="rect" href="motor__mixing_8h.html" title="Motor Mixing." alt="" coords="1899,259,2086,300"/>
-<area shape="rect" title=" " alt="" coords="2030,95,2096,121"/>
-<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2150,266,2363,293"/>
-<area shape="rect" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations." alt="" coords="55,266,210,293"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8h.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="457,169,624,211"/>
-<area shape="rect" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="32,355,238,382"/>
-<area shape="rect" href="ins_8h.html" title="Integrated Navigation System interface." alt="" coords="846,177,982,203"/>
-<area shape="rect" title=" " alt="" coords="1033,601,1088,628"/>
-<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="468,266,612,293"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="934,445,1077,471"/>
-<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="1065,348,1232,389"/>
-<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="838,348,989,389"/>
-<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="612,348,762,389"/>
-<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="784,445,910,471"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1713,527,1869,553"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="926,527,1080,553"/>
-<area shape="rect" title=" " alt="" coords="657,527,728,553"/>
-<area shape="rect" title=" " alt="" coords="1778,601,1841,628"/>
-<area shape="rect" title=" " alt="" coords="1885,601,1956,628"/>
-<area shape="rect" title=" " alt="" coords="1562,601,1630,628"/>
-<area shape="rect" title=" " alt="" coords="1278,527,1435,553"/>
-<area shape="rect" title=" " alt="" coords="1564,445,1650,471"/>
-<area shape="rect" title=" " alt="" coords="218,445,345,471"/>
-<area shape="rect" title=" " alt="" coords="369,437,530,479"/>
-<area shape="rect" title=" " alt="" coords="1270,177,1397,203"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1561,355,1658,382"/>
-<area shape="rect" title=" " alt="" coords="1305,266,1432,293"/>
-<area shape="rect" title=" " alt="" coords="1456,266,1614,293"/>
-<area shape="rect" title=" " alt="" coords="1638,266,1773,293"/>
-<area shape="rect" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types." alt="" coords="1908,355,2076,382"/>
-<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2652,527,2792,553"/>
-<area shape="rect" title=" " alt="" coords="2386,348,2530,389"/>
-<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2151,355,2362,382"/>
-<area shape="rect" title=" " alt="" coords="2530,601,2705,628"/>
-<area shape="rect" title=" " alt="" coords="2730,601,2922,628"/>
-<area shape="rect" title=" " alt="" coords="2374,445,2530,471"/>
-<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1961,445,2165,471"/>
-<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2554,445,2753,471"/>
-<area shape="rect" title=" " alt="" coords="2190,445,2350,471"/>
-<area shape="rect" title=" " alt="" coords="1995,527,2158,553"/>
-<area shape="rect" title=" " alt="" coords="2443,527,2627,553"/>
+<area shape="rect" title=" " alt="" coords="1670,5,1829,47"/>
+<area shape="rect" href="ins__flow_8h.html" title=" " alt="" coords="1301,95,1387,121"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="207,445,361,471"/>
+<area shape="rect" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1467,355,1640,382"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="725,266,792,293"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1621,95,1768,121"/>
+<area shape="rect" title=" " alt="" coords="2143,445,2303,471"/>
+<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="1791,177,1883,203"/>
+<area shape="rect" title=" " alt="" coords="1843,95,2015,121"/>
+<area shape="rect" href="motor__mixing_8h.html" title="Motor Mixing." alt="" coords="2255,259,2441,300"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="404,355,519,382"/>
+<area shape="rect" title=" " alt="" coords="2516,95,2583,121"/>
+<area shape="rect" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="2565,266,2779,293"/>
+<area shape="rect" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations." alt="" coords="1381,266,1536,293"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8h.html" title="Quaternion complementary filter (fixed&#45;point)." alt="" coords="1095,169,1262,211"/>
+<area shape="rect" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="1237,355,1443,382"/>
+<area shape="rect" href="ins_8h.html" title="Integrated Navigation System interface." alt="" coords="843,177,979,203"/>
+<area shape="rect" title=" " alt="" coords="1599,601,1654,628"/>
+<area shape="rect" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="1061,266,1205,293"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="757,445,899,471"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="645,348,811,389"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="835,348,986,389"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1062,348,1213,389"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="975,445,1100,471"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="219,527,375,553"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="751,527,905,553"/>
+<area shape="rect" title=" " alt="" coords="981,527,1051,553"/>
+<area shape="rect" title=" " alt="" coords="191,601,254,628"/>
+<area shape="rect" title=" " alt="" coords="319,601,390,628"/>
+<area shape="rect" title=" " alt="" coords="15,601,83,628"/>
+<area shape="rect" title=" " alt="" coords="37,527,195,553"/>
+<area shape="rect" title=" " alt="" coords="1943,445,2030,471"/>
+<area shape="rect" title=" " alt="" coords="1462,445,1589,471"/>
+<area shape="rect" title=" " alt="" coords="1277,437,1438,479"/>
+<area shape="rect" title=" " alt="" coords="1631,177,1758,203"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1938,355,2035,382"/>
+<area shape="rect" title=" " alt="" coords="2053,266,2179,293"/>
+<area shape="rect" title=" " alt="" coords="1661,266,1819,293"/>
+<area shape="rect" title=" " alt="" coords="1894,266,2029,293"/>
+<area shape="rect" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types." alt="" coords="2273,355,2441,382"/>
+<area shape="rect" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="2815,527,2955,553"/>
+<area shape="rect" title=" " alt="" coords="2801,348,2945,389"/>
+<area shape="rect" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="2567,355,2777,382"/>
+<area shape="rect" title=" " alt="" coords="2694,601,2869,628"/>
+<area shape="rect" title=" " alt="" coords="2893,601,3085,628"/>
+<area shape="rect" title=" " alt="" coords="2606,445,2762,471"/>
+<area shape="rect" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2378,445,2582,471"/>
+<area shape="rect" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol." alt="" coords="2786,445,2985,471"/>
+<area shape="rect" title=" " alt="" coords="3008,445,3168,471"/>
+<area shape="rect" title=" " alt="" coords="2428,527,2591,553"/>
 </map>
 </div>
 </div>
@@ -260,8 +261,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa19ff7047ba59f05ba743c732525d49c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#aa19ff7047ba59f05ba743c732525d49c">ins_optical_flow_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_x, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_y, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_x, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> flow_der_y, float quality, float size_divergence)</td></tr>
 <tr class="separator:aa19ff7047ba59f05ba743c732525d49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088a7b936253d33a0486d4edfd143102"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a088a7b936253d33a0486d4edfd143102">ins_rpm_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a> *<a class="el" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_act)</td></tr>
-<tr class="separator:a088a7b936253d33a0486d4edfd143102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8464cfb626789ad3e9eca6d8eed2029e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a8464cfb626789ad3e9eca6d8eed2029e">ins_act_feedback_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t">act_feedback_t</a> *feedback, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_act)</td></tr>
+<tr class="separator:a8464cfb626789ad3e9eca6d8eed2029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb508f672663ab1485eae5b9e1799f21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#abb508f672663ab1485eae5b9e1799f21">aligner_cb</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *lp_gyro, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *lp_accel, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *lp_mag)</td></tr>
 <tr class="separator:abb508f672663ab1485eae5b9e1799f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24705587252e38ffe0499f53b1c5faf6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a24705587252e38ffe0499f53b1c5faf6">print_ins_flow_state</a> (void)</td></tr>
@@ -307,8 +308,8 @@ Variables</h2></td></tr>
 <tr class="separator:af8c616627ecbb4860e359944c97dc718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2f18f4053ba60624659b6e03514023d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#ad2f18f4053ba60624659b6e03514023d">ins_optical_flow_ev</a></td></tr>
 <tr class="separator:ad2f18f4053ba60624659b6e03514023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85441c5c5417fc7cc00b7701eeb45af7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a85441c5c5417fc7cc00b7701eeb45af7">ins_RPM_ev</a></td></tr>
-<tr class="separator:a85441c5c5417fc7cc00b7701eeb45af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904c6ca0d350c1c2e2197d2a7993aed7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a904c6ca0d350c1c2e2197d2a7993aed7">ins_act_feedback_ev</a></td></tr>
+<tr class="separator:a904c6ca0d350c1c2e2197d2a7993aed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f52633ab63c8dbae84f2752938576f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#a77f52633ab63c8dbae84f2752938576f">aligner_ev</a></td></tr>
 <tr class="separator:a77f52633ab63c8dbae84f2752938576f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba624cbc9faeb343c3afa05f006c2e54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__flow_8c.html#aba624cbc9faeb343c3afa05f006c2e54">ahrs_icq_last_stamp</a></td></tr>
@@ -370,7 +371,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00137">137</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00138">138</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for InsFlow:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -515,7 +516,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00061">61</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00062">62</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -531,7 +532,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00048">48</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00049">49</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +552,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00057">57</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00058">58</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -571,7 +572,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00056">56</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00057">57</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -587,7 +588,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00073">73</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00074">74</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -603,7 +604,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00086">86</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00087">87</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -619,7 +620,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00067">67</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00068">68</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -635,7 +636,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00079">79</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00080">80</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -651,7 +652,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00092">92</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00093">93</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -667,7 +668,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00098">98</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00099">99</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -683,7 +684,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00172">172</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00173">173</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -699,7 +700,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00181">181</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00182">182</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -715,7 +716,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00261">261</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00262">262</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -731,7 +732,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00259">259</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00260">260</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -747,7 +748,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00262">262</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00263">263</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -763,7 +764,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00263">263</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00264">264</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -779,7 +780,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00264">264</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00265">265</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -795,7 +796,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00265">265</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00266">266</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -811,7 +812,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00278">278</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00279">279</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -827,7 +828,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00260">260</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00261">261</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -843,7 +844,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00273">273</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00274">274</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -859,7 +860,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00274">274</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00275">275</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -875,7 +876,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00275">275</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00276">276</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -891,7 +892,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00276">276</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00277">277</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -907,7 +908,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00277">277</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00278">278</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -923,7 +924,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00280">280</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00281">281</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -939,7 +940,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00281">281</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00282">282</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -955,7 +956,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00282">282</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00283">283</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -971,7 +972,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00283">283</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00284">284</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -987,7 +988,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00268">268</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00269">269</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1004,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00269">269</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00270">270</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1020,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00270">270</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00271">271</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1036,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00271">271</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00272">272</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1052,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00272">272</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00273">273</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1068,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00279">279</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00280">280</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1084,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00266">266</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00267">267</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1100,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00267">267</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00268">268</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1116,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00198">198</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00199">199</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 </div>
 </div>
@@ -1160,11 +1161,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01368">1368</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01369">1369</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00244">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, and <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00244">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, and <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -1257,9 +1258,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01552">1552</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01554">1554</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1314,11 +1315,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01480">1480</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01482">1482</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00525">ahrs_icq_update_gps()</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00055">float_rmat_inv()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00110">float_rmat_vmult()</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_3D</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00665">ins_reset_local_origin()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00071">INT32_POS_OF_CM_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00070">INT32_POS_OF_CM_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00076">INT32_SPEED_OF_CM_S_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00075">INT32_SPEED_OF_CM_S_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00291">INT32_VECT3_SCALE_2</a>, <a class="el" href="ins__flow_8c_source.html#l00140">InsFlow::ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_initialized</a>, <a class="el" href="ins__flow_8c_source.html#l00144">InsFlow::ltp_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00145">InsFlow::ltp_speed</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00116">ned_of_ecef_point_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00186">ned_of_ecef_vect_i()</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00189">use_filter</a>, <a class="el" href="ins__flow_8h_source.html#l00145">USE_HEIGHT</a>, <a class="el" href="ins__flow_8h_source.html#l00144">USE_VELOCITY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00525">ahrs_icq_update_gps()</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00055">float_rmat_inv()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00110">float_rmat_vmult()</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_3D</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00666">ins_reset_local_origin()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00071">INT32_POS_OF_CM_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00070">INT32_POS_OF_CM_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00076">INT32_SPEED_OF_CM_S_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00075">INT32_SPEED_OF_CM_S_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00291">INT32_VECT3_SCALE_2</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00142">InsFlow::ltp_initialized</a>, <a class="el" href="ins__flow_8c_source.html#l00145">InsFlow::ltp_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00146">InsFlow::ltp_speed</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00116">ned_of_ecef_point_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00186">ned_of_ecef_vect_i()</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00190">use_filter</a>, <a class="el" href="ins__flow_8h_source.html#l00145">USE_HEIGHT</a>, <a class="el" href="ins__flow_8h_source.html#l00144">USE_VELOCITY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -1415,11 +1416,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01335">1335</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01336">1336</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ins__flow_8c_source.html#l00132">ahrs_icq_last_stamp</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00190">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00042">AHRS_ICQ_RUNNING</a>, <a class="el" href="hf__float_8c_source.html#l00055">AHRS_PROPAGATE_FREQUENCY</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ins__flow_8c_source.html#l00186">lp_factor</a>, <a class="el" href="ins__flow_8c_source.html#l00159">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_roll</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::status</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_icq_last_stamp</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00190">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00042">AHRS_ICQ_RUNNING</a>, <a class="el" href="hf__float_8c_source.html#l00055">AHRS_PROPAGATE_FREQUENCY</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, <a class="el" href="ins__flow_8c_source.html#l00187">lp_factor</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_roll</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00101">AhrsIntCmplQuat::status</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -1462,6 +1463,65 @@ vision_time</td>
 
 </div>
 </div>
+<a id="a8464cfb626789ad3e9eca6d8eed2029e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8464cfb626789ad3e9eca6d8eed2029e">&#9670;&nbsp;</a></span>ins_act_feedback_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ins_act_feedback_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id&#160;</td>
+          <td class="paramname"><em>UNUSED</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t">act_feedback_t</a> *&#160;</td>
+          <td class="paramname"><em>feedback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>num_act</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01471">1471</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00051">act_feedback_t::rpm</a>, <a class="el" href="ins__flow_8c_source.html#l00157">InsFlow::RPM</a>, and <a class="el" href="ins__flow_8c_source.html#l00158">InsFlow::RPM_num_act</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__flow_8c_a8464cfb626789ad3e9eca6d8eed2029e_icgraph.png" border="0" usemap="#ains__flow_8c_a8464cfb626789ad3e9eca6d8eed2029e_icgraph" alt=""/></div>
+<map name="ains__flow_8c_a8464cfb626789ad3e9eca6d8eed2029e_icgraph" id="ains__flow_8c_a8464cfb626789ad3e9eca6d8eed2029e_icgraph">
+<area shape="rect" title=" " alt="" coords="156,5,313,32"/>
+<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="5,5,108,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4d53c3e64875914ced311f7381ae21f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d53c3e64875914ced311f7381ae21f7">&#9670;&nbsp;</a></span>ins_flow_init()</h2>
 
@@ -1478,66 +1538,66 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00536">536</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00537">537</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l01368">accel_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00104">accel_ev</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00084">ahrs_aligner_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00119">ahrs_icq_init()</a>, <a class="el" href="ins__flow_8c_source.html#l01552">aligner_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00108">aligner_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00392">ecef_of_lla_i()</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="ins__flow_8c_source.html#l01480">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00105">gps_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00194">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_theta</a>, <a class="el" href="ins__flow_8c_source.html#l01335">gyro_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00103">gyro_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00073">INS_FLOW_ACCEL_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00086">INS_FLOW_GPS_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00067">INS_FLOW_GYRO_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00079">INS_FLOW_IMU_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00674">ins_optical_flow_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00106">ins_optical_flow_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00092">INS_OPTICAL_FLOW_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>, <a class="el" href="ins__flow_8c_source.html#l01470">ins_rpm_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00107">ins_RPM_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00098">INS_RPM_ID</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__flow_8c_source.html#l00186">lp_factor</a>, <a class="el" href="ins__flow_8c_source.html#l00187">lp_factor_strong</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00159">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00165">InsFlow::lp_roll_command</a>, <a class="el" href="ins__flow_8c_source.html#l00164">InsFlow::lp_thrust</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00140">InsFlow::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_initialized</a>, <a class="el" href="ins__flow_8c_source.html#l00174">moment_ind</a>, <a class="el" href="ins__flow_8h_source.html#l00090">N_MEAS_OF_KF</a>, <a class="el" href="ins__flow_8c_source.html#l00153">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00133">OF_DIV_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00132">OF_LAT_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00136">OF_LAT_FLOW_X_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00185">of_prev_time</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_Q</a>, <a class="el" href="ins__flow_8c_source.html#l00179">OF_R</a>, <a class="el" href="ins__flow_8h_source.html#l00134">OF_RATE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00184">of_time</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00262">PAR_K0</a>, <a class="el" href="ins__flow_8c_source.html#l00263">PAR_K1</a>, <a class="el" href="ins__flow_8c_source.html#l00264">PAR_K2</a>, <a class="el" href="ins__flow_8c_source.html#l00265">PAR_K3</a>, <a class="el" href="ins__flow_8c_source.html#l00268">PAR_Q0</a>, <a class="el" href="ins__flow_8c_source.html#l00269">PAR_Q1</a>, <a class="el" href="ins__flow_8c_source.html#l00270">PAR_Q2</a>, <a class="el" href="ins__flow_8c_source.html#l00271">PAR_Q3</a>, <a class="el" href="ins__flow_8c_source.html#l00272">PAR_Q4</a>, <a class="el" href="ins__flow_8c_source.html#l00279">PAR_Q_TB</a>, <a class="el" href="ins__flow_8c_source.html#l00266">PAR_R0</a>, <a class="el" href="ins__flow_8c_source.html#l00267">PAR_R1</a>, <a class="el" href="ins__flow_8c_source.html#l00239">parameters</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ins__flow_8c_source.html#l00188">reset_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00182">RPM_FACTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00190">run_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00335">send_bias()</a>, <a class="el" href="ins__flow_8c_source.html#l00319">send_euler()</a>, <a class="el" href="ins__flow_8c_source.html#l00352">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00342">send_geo_mag()</a>, <a class="el" href="ins__flow_8c_source.html#l00364">send_ins()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, <a class="el" href="ins__flow_8c_source.html#l00380">send_ins_ref()</a>, <a class="el" href="ins__flow_8c_source.html#l00303">send_quat()</a>, <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00163">InsFlow::thrust_factor</a>, and <a class="el" href="ins__flow_8c_source.html#l00189">use_filter</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l01369">accel_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00105">accel_ev</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00084">ahrs_aligner_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00119">ahrs_icq_init()</a>, <a class="el" href="ins__flow_8c_source.html#l01554">aligner_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00109">aligner_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00392">ecef_of_lla_i()</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="ins__flow_8c_source.html#l01482">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00106">gps_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00196">GT_theta</a>, <a class="el" href="ins__flow_8c_source.html#l01336">gyro_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00104">gyro_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l01471">ins_act_feedback_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00108">ins_act_feedback_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00074">INS_FLOW_ACCEL_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00087">INS_FLOW_GPS_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00068">INS_FLOW_GYRO_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00080">INS_FLOW_IMU_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00675">ins_optical_flow_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00107">ins_optical_flow_ev</a>, <a class="el" href="ins__flow_8c_source.html#l00093">INS_OPTICAL_FLOW_ID</a>, <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>, <a class="el" href="ins__flow_8c_source.html#l00099">INS_RPM_ID</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__flow_8c_source.html#l00187">lp_factor</a>, <a class="el" href="ins__flow_8c_source.html#l00188">lp_factor_strong</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00163">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00166">InsFlow::lp_roll_command</a>, <a class="el" href="ins__flow_8c_source.html#l00165">InsFlow::lp_thrust</a>, <a class="el" href="gps__datalink_8c_source.html#l00048">ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00142">InsFlow::ltp_initialized</a>, <a class="el" href="ins__flow_8c_source.html#l00175">moment_ind</a>, <a class="el" href="ins__flow_8h_source.html#l00090">N_MEAS_OF_KF</a>, <a class="el" href="ins__flow_8c_source.html#l00154">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00133">OF_DIV_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00132">OF_LAT_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00136">OF_LAT_FLOW_X_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00186">of_prev_time</a>, <a class="el" href="ins__flow_8c_source.html#l00178">OF_Q</a>, <a class="el" href="ins__flow_8c_source.html#l00180">OF_R</a>, <a class="el" href="ins__flow_8h_source.html#l00134">OF_RATE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00185">of_time</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00263">PAR_K0</a>, <a class="el" href="ins__flow_8c_source.html#l00264">PAR_K1</a>, <a class="el" href="ins__flow_8c_source.html#l00265">PAR_K2</a>, <a class="el" href="ins__flow_8c_source.html#l00266">PAR_K3</a>, <a class="el" href="ins__flow_8c_source.html#l00269">PAR_Q0</a>, <a class="el" href="ins__flow_8c_source.html#l00270">PAR_Q1</a>, <a class="el" href="ins__flow_8c_source.html#l00271">PAR_Q2</a>, <a class="el" href="ins__flow_8c_source.html#l00272">PAR_Q3</a>, <a class="el" href="ins__flow_8c_source.html#l00273">PAR_Q4</a>, <a class="el" href="ins__flow_8c_source.html#l00280">PAR_Q_TB</a>, <a class="el" href="ins__flow_8c_source.html#l00267">PAR_R0</a>, <a class="el" href="ins__flow_8c_source.html#l00268">PAR_R1</a>, <a class="el" href="ins__flow_8c_source.html#l00240">parameters</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="ins__flow_8c_source.html#l00189">reset_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00183">RPM_FACTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00191">run_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00336">send_bias()</a>, <a class="el" href="ins__flow_8c_source.html#l00320">send_euler()</a>, <a class="el" href="ins__flow_8c_source.html#l00353">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00343">send_geo_mag()</a>, <a class="el" href="ins__flow_8c_source.html#l00365">send_ins()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, <a class="el" href="ins__flow_8c_source.html#l00381">send_ins_ref()</a>, <a class="el" href="ins__flow_8c_source.html#l00304">send_quat()</a>, <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00164">InsFlow::thrust_factor</a>, and <a class="el" href="ins__flow_8c_source.html#l00190">use_filter</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c_a4d53c3e64875914ced311f7381ae21f7_cgraph.png" border="0" usemap="#ains__flow_8c_a4d53c3e64875914ced311f7381ae21f7_cgraph" alt=""/></div>
 <map name="ains__flow_8c_a4d53c3e64875914ced311f7381ae21f7_cgraph" id="ains__flow_8c_a4d53c3e64875914ced311f7381ae21f7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,883,108,909"/>
-<area shape="rect" href="ins__flow_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="191,69,269,96"/>
-<area shape="rect" href="ins__flow_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="356,107,551,133"/>
-<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="165,309,295,336"/>
-<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="352,360,555,387"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a72a541828d1eaa1bbe23ff26680e63da" title=" " alt="" coords="178,503,282,529"/>
-<area shape="rect" href="ins__flow_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="185,567,275,593"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="178,617,282,644"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="157,668,303,695"/>
-<area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="197,883,263,909"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="607,908,758,935"/>
-<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="603,1060,763,1087"/>
-<area shape="rect" href="ins__flow_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="193,145,267,172"/>
-<area shape="rect" href="ins__flow_8c.html#aa19ff7047ba59f05ba743c732525d49c" title=" " alt="" coords="156,984,304,1011"/>
-<area shape="rect" href="ins__flow_8c.html#a989244f673b43f69d04dc0c7ea8ba60d" title=" " alt="" coords="171,1035,289,1061"/>
-<area shape="rect" href="ins__flow_8c.html#a088a7b936253d33a0486d4edfd143102" title=" " alt="" coords="182,1085,278,1112"/>
-<area shape="rect" href="ins__flow_8c.html#aca7f6371638faf5fca72deffe0c476d9" title=" " alt="" coords="187,1136,273,1163"/>
-<area shape="rect" href="ins__flow_8c.html#abcc3fa84d1a2a749aed66a3ebd79ea54" title=" " alt="" coords="183,1187,277,1213"/>
-<area shape="rect" href="ins__flow_8c.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="161,1237,299,1264"/>
-<area shape="rect" href="ins__flow_8c.html#a75bc5b3d5a5f89d58c4127b5d729599a" title=" " alt="" coords="170,1288,290,1315"/>
-<area shape="rect" href="ins__flow_8c.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="191,1339,269,1365"/>
-<area shape="rect" href="ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="173,807,287,833"/>
-<area shape="rect" href="ins__flow_8c.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="178,1389,282,1416"/>
-<area shape="rect" href="ins__flow_8c.html#a8c9c14edf7f1235080779f6d894be78d" title=" " alt="" coords="185,1440,275,1467"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a217936945482b6839441d4616eab56b7" title=" " alt="" coords="369,5,538,32"/>
-<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="375,56,531,83"/>
-<area shape="rect" href="ahrs__aligner_8c.html#aa098ebf986653894df0c6e03bf86354e" title=" " alt="" coords="377,208,529,235"/>
-<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="417,259,490,285"/>
-<area shape="rect" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="401,309,506,336"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#ab86bb2cef3f3250caa731bf7444b82aa" title="update pre&#45;computed inv_kp and inv_ki gains from acc_omega and acc_zeta" alt="" coords="381,411,525,453"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#ac7ceba3dd76d68435d752209115992d3" title="update pre&#45;computed kp and ki gains from mag_omega and mag_zeta" alt="" coords="363,477,544,504"/>
-<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="379,528,527,555"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="399,579,507,605"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="401,629,506,656"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449" title=" " alt="" coords="374,883,533,909"/>
-<area shape="rect" href="group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594" title="Inverse/transpose of a rotation matrix." alt="" coords="395,933,511,960"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e" title="rotate 3D vector by rotation matrix." alt="" coords="386,781,521,808"/>
-<area shape="rect" href="ins__flow_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset." alt="" coords="372,984,535,1011"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="377,1035,529,1061"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="380,1085,527,1112"/>
-<area shape="rect" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="355,832,552,859"/>
-<area shape="rect" href="group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="371,1136,536,1163"/>
-<area shape="rect" href="group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="377,1187,530,1213"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="844,879,948,905"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="811,930,981,971"/>
-<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c" title=" " alt="" coords="379,157,528,184"/>
-<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="374,1288,533,1315"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="352,1339,555,1365"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="380,1389,527,1416"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="373,731,533,757"/>
+<area shape="rect" href="ins__flow_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="195,69,274,96"/>
+<area shape="rect" href="ins__flow_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state." alt="" coords="365,107,560,133"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title=" " alt="" coords="169,309,300,336"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="361,360,564,387"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a72a541828d1eaa1bbe23ff26680e63da" title=" " alt="" coords="183,503,287,529"/>
+<area shape="rect" href="ins__flow_8c.html#abb508f672663ab1485eae5b9e1799f21" title=" " alt="" coords="190,567,279,593"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="183,617,287,644"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="162,668,307,695"/>
+<area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="201,883,268,909"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title=" " alt="" coords="617,908,767,935"/>
+<area shape="rect" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="612,1060,772,1087"/>
+<area shape="rect" href="ins__flow_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="198,145,271,172"/>
+<area shape="rect" href="ins__flow_8c.html#a8464cfb626789ad3e9eca6d8eed2029e" title=" " alt="" coords="156,984,313,1011"/>
+<area shape="rect" href="ins__flow_8c.html#aa19ff7047ba59f05ba743c732525d49c" title=" " alt="" coords="161,1035,309,1061"/>
+<area shape="rect" href="ins__flow_8c.html#a989244f673b43f69d04dc0c7ea8ba60d" title=" " alt="" coords="175,1085,294,1112"/>
+<area shape="rect" href="ins__flow_8c.html#aca7f6371638faf5fca72deffe0c476d9" title=" " alt="" coords="191,1136,278,1163"/>
+<area shape="rect" href="ins__flow_8c.html#abcc3fa84d1a2a749aed66a3ebd79ea54" title=" " alt="" coords="188,1187,281,1213"/>
+<area shape="rect" href="ins__flow_8c.html#a85585514fc863f0407a3f5e85ad9d398" title=" " alt="" coords="166,1237,303,1264"/>
+<area shape="rect" href="ins__flow_8c.html#a75bc5b3d5a5f89d58c4127b5d729599a" title=" " alt="" coords="175,1288,295,1315"/>
+<area shape="rect" href="ins__flow_8c.html#a2ba079af519dd03472aa3e6019b3a91f" title=" " alt="" coords="195,1339,274,1365"/>
+<area shape="rect" href="ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="178,807,291,833"/>
+<area shape="rect" href="ins__flow_8c.html#a6f4ee4900038e15bf441a679acfa913a" title=" " alt="" coords="183,1389,287,1416"/>
+<area shape="rect" href="ins__flow_8c.html#a8c9c14edf7f1235080779f6d894be78d" title=" " alt="" coords="190,1440,279,1467"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a217936945482b6839441d4616eab56b7" title=" " alt="" coords="378,5,547,32"/>
+<area shape="rect" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title=" " alt="" coords="385,56,541,83"/>
+<area shape="rect" href="ahrs__aligner_8c.html#aa098ebf986653894df0c6e03bf86354e" title=" " alt="" coords="387,208,539,235"/>
+<area shape="rect" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title=" " alt="" coords="426,259,499,285"/>
+<area shape="rect" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title=" " alt="" coords="410,309,515,336"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#ab86bb2cef3f3250caa731bf7444b82aa" title="update pre&#45;computed inv_kp and inv_ki gains from acc_omega and acc_zeta" alt="" coords="391,411,535,453"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#ac7ceba3dd76d68435d752209115992d3" title="update pre&#45;computed kp and ki gains from mag_omega and mag_zeta" alt="" coords="372,477,553,504"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="389,528,537,555"/>
+<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="409,579,517,605"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="410,629,515,656"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449" title=" " alt="" coords="383,883,542,909"/>
+<area shape="rect" href="group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594" title="Inverse/transpose of a rotation matrix." alt="" coords="405,933,521,960"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e" title="rotate 3D vector by rotation matrix." alt="" coords="395,781,530,808"/>
+<area shape="rect" href="ins__flow_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset." alt="" coords="381,984,544,1011"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="387,1035,539,1061"/>
+<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="389,1085,536,1112"/>
+<area shape="rect" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="364,832,561,859"/>
+<area shape="rect" href="group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="380,1136,545,1163"/>
+<area shape="rect" href="group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="386,1187,539,1213"/>
+<area shape="rect" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA." alt="" coords="853,879,957,905"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title=" " alt="" coords="820,930,991,971"/>
+<area shape="rect" href="ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c" title=" " alt="" coords="388,157,537,184"/>
+<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="383,1288,542,1315"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="361,1339,564,1365"/>
+<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="389,1389,536,1416"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="383,731,543,757"/>
 </map>
 </div>
 
@@ -1559,14 +1619,14 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00731">731</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00732">732</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8c_source.html#l00048">DEBUG_INS_FLOW</a>, <a class="el" href="ins__flow_8c_source.html#l00057">DEBUG_MAT_PRINT</a>, <a class="el" href="ins__flow_8c_source.html#l00056">DEBUG_PRINT</a>, <a class="el" href="ins__flow_8c_source.html#l00151">InsFlow::divergence</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00870">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00679">float_mat_diff()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00935">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00718">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00670">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00702">float_mat_transpose()</a>, <a class="el" href="ballistic__touchdown_8c_source.html#l00025">g</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="trilateration_8c_source.html#l00035">I</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ins__flow_8c_source.html#l00187">lp_factor_strong</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00159">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00165">InsFlow::lp_roll_command</a>, <a class="el" href="ins__flow_8c_source.html#l00164">InsFlow::lp_thrust</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00638">MAKE_MATRIX_PTR</a>, <a class="el" href="ins__flow_8h_source.html#l00090">N_MEAS_OF_KF</a>, <a class="el" href="ins__flow_8h_source.html#l00075">N_STATES_OF_KF</a>, <a class="el" href="ins__flow_8c_source.html#l00153">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00133">OF_DIV_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00036">OF_DRAG</a>, <a class="el" href="ins__flow_8h_source.html#l00132">OF_LAT_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00136">OF_LAT_FLOW_X_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00181">OF_N_ROTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00178">OF_P</a>, <a class="el" href="ins__flow_8c_source.html#l00185">of_prev_time</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_Q</a>, <a class="el" href="ins__flow_8c_source.html#l00179">OF_R</a>, <a class="el" href="ins__flow_8h_source.html#l00134">OF_RATE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00184">of_time</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00042">OF_USE_GYROS</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00149">InsFlow::optical_flow_x</a>, <a class="el" href="ins__flow_8c_source.html#l00150">InsFlow::optical_flow_y</a>, <a class="el" href="trilateration_8c_source.html#l00031">P</a>, <a class="el" href="ins__flow_8c_source.html#l00259">PAR_IX</a>, <a class="el" href="ins__flow_8c_source.html#l00278">PAR_KD</a>, <a class="el" href="ins__flow_8c_source.html#l00260">PAR_MASS</a>, <a class="el" href="ins__flow_8c_source.html#l00283">PAR_PRED_ROLL_3</a>, <a class="el" href="ins__flow_8c_source.html#l00239">parameters</a>, <a class="el" href="ins__flow_8h_source.html#l00044">PREDICT_GYROS</a>, <a class="el" href="ins__flow_8c_source.html#l00693">print_ins_flow_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00718">print_true_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00188">reset_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00156">InsFlow::RPM</a>, <a class="el" href="ins__flow_8c_source.html#l00182">RPM_FACTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00190">run_filter</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, <a class="el" href="ins__flow_8c_source.html#l00163">InsFlow::thrust_factor</a>, and <a class="el" href="ins__flow_8c_source.html#l00192">thrust_factor</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8c_source.html#l00049">DEBUG_INS_FLOW</a>, <a class="el" href="ins__flow_8c_source.html#l00058">DEBUG_MAT_PRINT</a>, <a class="el" href="ins__flow_8c_source.html#l00057">DEBUG_PRINT</a>, <a class="el" href="ins__flow_8c_source.html#l00152">InsFlow::divergence</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00870">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00679">float_mat_diff()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00935">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00718">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00670">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00702">float_mat_transpose()</a>, <a class="el" href="ballistic__touchdown_8c_source.html#l00025">g</a>, <a class="el" href="sys__time_8h_source.html#l00138">get_sys_time_float()</a>, <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="trilateration_8c_source.html#l00035">I</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>, <a class="el" href="undistort__image_8c_source.html#l00041">K</a>, <a class="el" href="ins__flow_8c_source.html#l00188">lp_factor_strong</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00163">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00166">InsFlow::lp_roll_command</a>, <a class="el" href="ins__flow_8c_source.html#l00165">InsFlow::lp_thrust</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00638">MAKE_MATRIX_PTR</a>, <a class="el" href="ins__flow_8h_source.html#l00090">N_MEAS_OF_KF</a>, <a class="el" href="ins__flow_8h_source.html#l00075">N_STATES_OF_KF</a>, <a class="el" href="ins__flow_8c_source.html#l00154">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00133">OF_DIV_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00036">OF_DRAG</a>, <a class="el" href="ins__flow_8h_source.html#l00132">OF_LAT_FLOW_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00136">OF_LAT_FLOW_X_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00182">OF_N_ROTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00179">OF_P</a>, <a class="el" href="ins__flow_8c_source.html#l00186">of_prev_time</a>, <a class="el" href="ins__flow_8c_source.html#l00178">OF_Q</a>, <a class="el" href="ins__flow_8c_source.html#l00180">OF_R</a>, <a class="el" href="ins__flow_8h_source.html#l00134">OF_RATE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00185">of_time</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00042">OF_USE_GYROS</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00150">InsFlow::optical_flow_x</a>, <a class="el" href="ins__flow_8c_source.html#l00151">InsFlow::optical_flow_y</a>, <a class="el" href="trilateration_8c_source.html#l00031">P</a>, <a class="el" href="ins__flow_8c_source.html#l00260">PAR_IX</a>, <a class="el" href="ins__flow_8c_source.html#l00279">PAR_KD</a>, <a class="el" href="ins__flow_8c_source.html#l00261">PAR_MASS</a>, <a class="el" href="ins__flow_8c_source.html#l00284">PAR_PRED_ROLL_3</a>, <a class="el" href="ins__flow_8c_source.html#l00240">parameters</a>, <a class="el" href="ins__flow_8h_source.html#l00044">PREDICT_GYROS</a>, <a class="el" href="ins__flow_8c_source.html#l00694">print_ins_flow_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00719">print_true_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00189">reset_filter</a>, <a class="el" href="ins__flow_8c_source.html#l00157">InsFlow::RPM</a>, <a class="el" href="ins__flow_8c_source.html#l00183">RPM_FACTORS</a>, <a class="el" href="ins__flow_8c_source.html#l00191">run_filter</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, <a class="el" href="ins__flow_8c_source.html#l00164">InsFlow::thrust_factor</a>, and <a class="el" href="ins__flow_8c_source.html#l00193">thrust_factor</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c_aaec1213e138f25bd822716c107ecde5e_cgraph.png" border="0" usemap="#ains__flow_8c_aaec1213e138f25bd822716c107ecde5e_cgraph" alt=""/></div>
 <map name="ains__flow_8c_aaec1213e138f25bd822716c107ecde5e_cgraph" id="ains__flow_8c_aaec1213e138f25bd822716c107ecde5e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,284,132,311"/>
@@ -1686,16 +1746,16 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00674">674</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00675">675</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00151">InsFlow::divergence</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00153">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8c_source.html#l00149">InsFlow::optical_flow_x</a>, <a class="el" href="ins__flow_8c_source.html#l00150">InsFlow::optical_flow_y</a>, and <a class="el" href="ins__flow_8c_source.html#l00152">InsFlow::vision_time</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00152">InsFlow::divergence</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00154">InsFlow::new_flow_measurement</a>, <a class="el" href="ins__flow_8c_source.html#l00150">InsFlow::optical_flow_x</a>, <a class="el" href="ins__flow_8c_source.html#l00151">InsFlow::optical_flow_y</a>, and <a class="el" href="ins__flow_8c_source.html#l00153">InsFlow::vision_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c_aa19ff7047ba59f05ba743c732525d49c_icgraph.png" border="0" usemap="#ains__flow_8c_aa19ff7047ba59f05ba743c732525d49c_icgraph" alt=""/></div>
 <map name="ains__flow_8c_aa19ff7047ba59f05ba743c732525d49c_icgraph" id="ains__flow_8c_aa19ff7047ba59f05ba743c732525d49c_icgraph">
 <area shape="rect" title=" " alt="" coords="156,5,304,32"/>
@@ -1729,16 +1789,16 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00493">493</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00494">494</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8c_source.html#l00191">counter</a>, <a class="el" href="ins__flow_8h_source.html#l00075">N_STATES_OF_KF</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00178">OF_P</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00273">PAR_P0</a>, <a class="el" href="ins__flow_8c_source.html#l00274">PAR_P1</a>, <a class="el" href="ins__flow_8c_source.html#l00275">PAR_P2</a>, <a class="el" href="ins__flow_8c_source.html#l00276">PAR_P3</a>, <a class="el" href="ins__flow_8c_source.html#l00277">PAR_P4</a>, <a class="el" href="ins__flow_8c_source.html#l00280">PAR_P_TB</a>, and <a class="el" href="ins__flow_8c_source.html#l00239">parameters</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8c_source.html#l00192">counter</a>, <a class="el" href="ins__flow_8h_source.html#l00075">N_STATES_OF_KF</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00179">OF_P</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00274">PAR_P0</a>, <a class="el" href="ins__flow_8c_source.html#l00275">PAR_P1</a>, <a class="el" href="ins__flow_8c_source.html#l00276">PAR_P2</a>, <a class="el" href="ins__flow_8c_source.html#l00277">PAR_P3</a>, <a class="el" href="ins__flow_8c_source.html#l00278">PAR_P4</a>, <a class="el" href="ins__flow_8c_source.html#l00281">PAR_P_TB</a>, and <a class="el" href="ins__flow_8c_source.html#l00240">parameters</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c_a989244f673b43f69d04dc0c7ea8ba60d_icgraph.png" border="0" usemap="#ains__flow_8c_a989244f673b43f69d04dc0c7ea8ba60d_icgraph" alt=""/></div>
 <map name="ains__flow_8c_a989244f673b43f69d04dc0c7ea8ba60d_icgraph" id="ains__flow_8c_a989244f673b43f69d04dc0c7ea8ba60d_icgraph">
 <area shape="rect" title=" " alt="" coords="180,31,299,57"/>
@@ -1769,16 +1829,16 @@ vision_time</td>
 <p>Reset horizontal and vertical reference to the current position. Does nothing if not implemented by specific INS algorithm.</p>
 <p>INS local origin reset. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00665">665</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00666">666</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_pos</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::lla_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00140">InsFlow::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_initialized</a>, and <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_pos</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::lla_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__flow_8c_source.html#l00142">InsFlow::ltp_initialized</a>, and <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01480">gps_cb()</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01482">gps_cb()</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph.png" border="0" usemap="#ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" alt=""/></div>
 <map name="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" id="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph">
 <area shape="rect" title="INS local origin reset." alt="" coords="5,85,168,112"/>
@@ -1790,74 +1850,15 @@ vision_time</td>
 <area shape="rect" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title=" " alt="" coords="644,56,749,83"/>
 </map>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph.png" border="0" usemap="#ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" alt=""/></div>
-<map name="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" id="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph">
-<area shape="rect" title="INS local origin reset." alt="" coords="271,5,433,32"/>
-<area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="156,5,223,32"/>
-<area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="5,5,108,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a088a7b936253d33a0486d4edfd143102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a088a7b936253d33a0486d4edfd143102">&#9670;&nbsp;</a></span>ins_rpm_cb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ins_rpm_cb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id&#160;</td>
-          <td class="paramname"><em>UNUSED</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a> *&#160;</td>
-          <td class="paramname"><em>rpm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>num_act</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01470">1470</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00046">rpm_act_t::rpm</a>, <a class="el" href="ins__flow_8c_source.html#l00156">InsFlow::RPM</a>, and <a class="el" href="ins__flow_8c_source.html#l00157">InsFlow::RPM_num_act</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__flow_8c_a088a7b936253d33a0486d4edfd143102_icgraph.png" border="0" usemap="#ains__flow_8c_a088a7b936253d33a0486d4edfd143102_icgraph" alt=""/></div>
-<map name="ains__flow_8c_a088a7b936253d33a0486d4edfd143102_icgraph" id="ains__flow_8c_a088a7b936253d33a0486d4edfd143102_icgraph">
-<area shape="rect" title=" " alt="" coords="156,5,252,32"/>
+<div class="center"><img src="ins__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph.png" border="0" usemap="#ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" alt=""/></div>
+<map name="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph" id="ains__flow_8c_a14cb66a86c67d8b9216a8c12f58c311b_icgraph">
+<area shape="rect" title="INS local origin reset." alt="" coords="271,5,433,32"/>
+<area shape="rect" href="ins__flow_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="156,5,223,32"/>
 <area shape="rect" href="ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="5,5,108,32"/>
 </map>
 </div>
@@ -1888,11 +1889,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00693">693</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00694">694</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, and <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, and <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1931,11 +1932,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00718">718</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00719">719</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 <p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -2019,11 +2020,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00335">335</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00336">336</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00134">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00049">AhrsIntCmplQuat::gyro_bias</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -2072,11 +2073,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00319">319</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00320">320</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00523">int32_eulers_of_quat()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00134">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00523">int32_eulers_of_quat()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -2140,11 +2141,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00352">352</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00353">353</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ins__flow_8c_source.html#l00132">ahrs_icq_last_stamp</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00134">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_icq_last_stamp</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00102">AhrsIntCmplQuat::is_aligned</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -2204,11 +2205,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00342">342</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00343">343</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00224">MAG_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00134">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00224">MAG_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00055">AhrsIntCmplQuat::mag_h</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
@@ -2257,11 +2258,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00364">364</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00365">365</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00146">InsFlow::ltp_accel</a>, <a class="el" href="ins__flow_8c_source.html#l00144">InsFlow::ltp_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00145">InsFlow::ltp_speed</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00147">InsFlow::ltp_accel</a>, <a class="el" href="ins__flow_8c_source.html#l00145">InsFlow::ltp_pos</a>, <a class="el" href="ins__flow_8c_source.html#l00146">InsFlow::ltp_speed</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -2310,11 +2311,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00394">394</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00395">395</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00110">float_rmat_vmult()</a>, <a class="el" href="ballistic__touchdown_8c_source.html#l00025">g</a>, <a class="el" href="ins__flow_8c_source.html#l00194">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_theta</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00159">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00181">OF_N_ROTORS</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="ins__flow_8c_source.html#l00260">PAR_MASS</a>, <a class="el" href="ins__flow_8c_source.html#l00239">parameters</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="ins__flow_8c_source.html#l00156">InsFlow::RPM</a>, <a class="el" href="ins__flow_8c_source.html#l00182">RPM_FACTORS</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="ins__flow_8c_source.html#l00192">thrust_factor</a>, <a class="el" href="ins__flow_8h_source.html#l00143">USE_ANGLE</a>, <a class="el" href="ins__flow_8c_source.html#l00189">use_filter</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8h_source.html#l00035">CONSTANT_ALT_FILTER</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00110">float_rmat_vmult()</a>, <a class="el" href="ballistic__touchdown_8c_source.html#l00025">g</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00196">GT_theta</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="ins__flow_8c_source.html#l00161">InsFlow::lp_gyro_bias_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00163">InsFlow::lp_gyro_bias_roll</a>, <a class="el" href="ins__flow_8c_source.html#l00160">InsFlow::lp_gyro_pitch</a>, <a class="el" href="ins__flow_8c_source.html#l00162">InsFlow::lp_gyro_roll</a>, <a class="el" href="ins__flow_8h_source.html#l00081">OF_ANGLE_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00182">OF_N_ROTORS</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00040">OF_THRUST_BIAS</a>, <a class="el" href="ins__flow_8h_source.html#l00085">OF_THRUST_BIAS_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8h_source.html#l00076">OF_V_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00080">OF_VX_IND</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="ins__flow_8h_source.html#l00097">OF_Z_DOT_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00078">OF_Z_IND</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="ins__flow_8c_source.html#l00261">PAR_MASS</a>, <a class="el" href="ins__flow_8c_source.html#l00240">parameters</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="ins__flow_8c_source.html#l00157">InsFlow::RPM</a>, <a class="el" href="ins__flow_8c_source.html#l00183">RPM_FACTORS</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="ins__flow_8c_source.html#l00193">thrust_factor</a>, <a class="el" href="ins__flow_8h_source.html#l00143">USE_ANGLE</a>, <a class="el" href="ins__flow_8c_source.html#l00190">use_filter</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
@@ -2403,11 +2404,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00380">380</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00381">381</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::ecef</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l00168">ins_flow</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__flow_8c_source.html#l00140">InsFlow::ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_initialized</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::ecef</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__flow_8c_source.html#l00169">ins_flow</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__flow_8c_source.html#l00141">InsFlow::ltp_def</a>, <a class="el" href="ins__flow_8c_source.html#l00142">InsFlow::ltp_initialized</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -2456,11 +2457,11 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00303">303</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00304">304</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00133">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="state_8h_source.html#l01113">stateGetNedToBodyQuat_i()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00060">AhrsIntCmplQuat::weight</a>.</p>
+<p class="reference">References <a class="el" href="ins__flow_8c_source.html#l00134">ahrs_flow_id</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="state_8h_source.html#l01113">stateGetNedToBodyQuat_i()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00060">AhrsIntCmplQuat::weight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -2517,11 +2518,11 @@ vision_time</td>
 
 <p>Rotate angles and rates from imu to body frame and set state. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01425">1425</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l01426">1426</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::body_rate</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00115">OrientationReps::eulers_f</a>, <a class="el" href="ins__flow_8c_source.html#l00194">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_theta</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8c_source.html#l00176">OF_X</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00198">orientationGetQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00073">ORREP_EULER_F</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00069">ORREP_QUAT_I</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00091">OrientationReps::quat_i</a>, <a class="el" href="state_8h_source.html#l01173">stateSetBodyRates_i()</a>, <a class="el" href="state_8h_source.html#l01075">stateSetNedToBodyQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00085">OrientationReps::status</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="ins__flow_8h_source.html#l00143">USE_ANGLE</a>, and <a class="el" href="ins__flow_8c_source.html#l00189">use_filter</a>.</p>
+<p class="reference">References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00114">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00050">AhrsIntCmplQuat::body_rate</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00115">OrientationReps::eulers_f</a>, <a class="el" href="ins__flow_8c_source.html#l00195">GT_phi</a>, <a class="el" href="ins__flow_8c_source.html#l00196">GT_theta</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00054">AhrsIntCmplQuat::ltp_to_body_quat</a>, <a class="el" href="ins__flow_8h_source.html#l00077">OF_ANGLE_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00079">OF_THETA_IND</a>, <a class="el" href="ins__flow_8h_source.html#l00038">OF_TWO_DIM</a>, <a class="el" href="ins__flow_8c_source.html#l00177">OF_X</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00198">orientationGetQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00073">ORREP_EULER_F</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00069">ORREP_QUAT_I</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00091">OrientationReps::quat_i</a>, <a class="el" href="state_8h_source.html#l01173">stateSetBodyRates_i()</a>, <a class="el" href="state_8h_source.html#l01075">stateSetNedToBodyQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00085">OrientationReps::status</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="ins__flow_8h_source.html#l00143">USE_ANGLE</a>, and <a class="el" href="ins__flow_8c_source.html#l00190">use_filter</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01368">accel_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l01335">gyro_cb()</a>, and <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01369">accel_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l01336">gyro_cb()</a>, and <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 <div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-31-summary" class="dynsummary" style="display:block;">
@@ -2581,9 +2582,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00104">104</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00105">105</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2609,9 +2610,9 @@ vision_time</td>
 
 <p>Component ID for FLOW. </p>
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00133">133</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00134">134</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00335">send_bias()</a>, <a class="el" href="ins__flow_8c_source.html#l00319">send_euler()</a>, <a class="el" href="ins__flow_8c_source.html#l00352">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00342">send_geo_mag()</a>, and <a class="el" href="ins__flow_8c_source.html#l00303">send_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00336">send_bias()</a>, <a class="el" href="ins__flow_8c_source.html#l00320">send_euler()</a>, <a class="el" href="ins__flow_8c_source.html#l00353">send_filter_status()</a>, <a class="el" href="ins__flow_8c_source.html#l00343">send_geo_mag()</a>, and <a class="el" href="ins__flow_8c_source.html#l00304">send_quat()</a>.</p>
 
 </div>
 </div>
@@ -2635,9 +2636,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00132">132</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00133">133</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01335">gyro_cb()</a>, and <a class="el" href="ins__flow_8c_source.html#l00352">send_filter_status()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01336">gyro_cb()</a>, and <a class="el" href="ins__flow_8c_source.html#l00353">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -2661,9 +2662,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00108">108</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00109">109</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2679,9 +2680,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00191">191</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00192">192</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="actuators__esc32_8c_source.html#l00275">actuators_esc32_play_melody()</a>, <a class="el" href="airspeed__otf_8c_source.html#l00058">airspeed_otf_parse()</a>, <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>, <a class="el" href="gec__dl_8c_source.html#l00371">gec_encrypt_message()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>, <a class="el" href="logger__file_8c_source.html#l00120">logger_file_start()</a>, <a class="el" href="motor__mixing_8c_source.html#l00168">motor_mixing_run_spinup()</a>, <a class="el" href="nav__fish_8c_source.html#l00487">nav_fish_velocity_run()</a>, <a class="el" href="light_8c_source.html#l00056">periodic_light()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00058">save_shot_on_disk()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00053">stereo_avoid_run()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00127">video_usb_logger_start()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00464">wind_estimator_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="actuators__esc32_8c_source.html#l00275">actuators_esc32_play_melody()</a>, <a class="el" href="airspeed__otf_8c_source.html#l00058">airspeed_otf_parse()</a>, <a class="el" href="gec__dl_8c_source.html#l00430">gec_decrypt_message()</a>, <a class="el" href="gec__dl_8c_source.html#l00371">gec_encrypt_message()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00059">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00519">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>, <a class="el" href="logger__file_8c_source.html#l00120">logger_file_start()</a>, <a class="el" href="motor__mixing_8c_source.html#l00168">motor_mixing_run_spinup()</a>, <a class="el" href="nav__fish_8c_source.html#l00487">nav_fish_velocity_run()</a>, <a class="el" href="light_8c_source.html#l00056">periodic_light()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00058">save_shot_on_disk()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00053">stereo_avoid_run()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00127">video_usb_logger_start()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00464">wind_estimator_init()</a>.</p>
 
 </div>
 </div>
@@ -2705,9 +2706,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00105">105</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00106">106</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2723,9 +2724,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00194">194</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00195">195</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>.</p>
 
 </div>
 </div>
@@ -2741,9 +2742,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00195">195</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00196">196</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>.</p>
 
 </div>
 </div>
@@ -2767,9 +2768,35 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00103">103</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00104">104</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
+
+</div>
+</div>
+<a id="a904c6ca0d350c1c2e2197d2a7993aed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904c6ca0d350c1c2e2197d2a7993aed7">&#9670;&nbsp;</a></span>ins_act_feedback_ev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> ins_act_feedback_ev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00108">108</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2785,9 +2812,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00135">135</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00136">136</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01480">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l01335">gyro_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00674">ins_optical_flow_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00665">ins_reset_local_origin()</a>, <a class="el" href="ins__flow_8c_source.html#l01470">ins_rpm_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00364">send_ins()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l00380">send_ins_ref()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01482">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l01336">gyro_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l01471">ins_act_feedback_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00675">ins_optical_flow_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00666">ins_reset_local_origin()</a>, <a class="el" href="ins__flow_8c_source.html#l00365">send_ins()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l00381">send_ins_ref()</a>.</p>
 
 </div>
 </div>
@@ -2811,35 +2838,9 @@ vision_time</td>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00106">106</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
-
-</div>
-</div>
-<a id="a85441c5c5417fc7cc00b7701eeb45af7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85441c5c5417fc7cc00b7701eeb45af7">&#9670;&nbsp;</a></span>ins_RPM_ev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> ins_RPM_ev</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00107">107</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2855,9 +2856,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00186">186</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00187">187</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01335">gyro_cb()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00429">horizontal_ctrl_module_run()</a>, <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="optical__flow__functions_8c_source.html#l00160">PID_divergence_control()</a>, <a class="el" href="optical__flow__functions_8c_source.html#l00132">PID_flow_control()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01083">update_errors()</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01336">gyro_cb()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00429">horizontal_ctrl_module_run()</a>, <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="optical__flow__functions_8c_source.html#l00160">PID_divergence_control()</a>, <a class="el" href="optical__flow__functions_8c_source.html#l00132">PID_flow_control()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01083">update_errors()</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
 
 </div>
 </div>
@@ -2873,9 +2874,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00187">187</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00188">188</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -2891,9 +2892,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00174">174</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00175">175</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>.</p>
 
 </div>
 </div>
@@ -2909,7 +2910,7 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00173">173</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00174">174</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opencv__contour_8cpp_source.html#l00079">find_contour()</a>.</p>
 
@@ -2927,9 +2928,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00178">178</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00179">179</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>.</p>
 
 </div>
 </div>
@@ -2945,9 +2946,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00185">185</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00186">186</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -2963,9 +2964,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00177">177</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00178">178</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -2981,9 +2982,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00179">179</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00180">180</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -2999,9 +3000,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00184">184</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00185">185</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -3017,9 +3018,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00176">176</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00177">177</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01480">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>, <a class="el" href="ins__flow_8c_source.html#l00693">print_ins_flow_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01482">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>, <a class="el" href="ins__flow_8c_source.html#l00694">print_ins_flow_state()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>.</p>
 
 </div>
 </div>
@@ -3035,9 +3036,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00239">239</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00240">240</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00529">fit_linear_model()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01390">fit_linear_model_OF()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00617">fit_linear_model_prior()</a>, <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00493">ins_reset_filter()</a>, and <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00529">fit_linear_model()</a>, <a class="el" href="optical__flow__landing_8c_source.html#l01390">fit_linear_model_OF()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00617">fit_linear_model_prior()</a>, <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00494">ins_reset_filter()</a>, and <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>.</p>
 
 </div>
 </div>
@@ -3053,9 +3054,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00188">188</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00189">189</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -3071,9 +3072,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00182">182</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00183">183</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>.</p>
 
 </div>
 </div>
@@ -3089,9 +3090,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00190">190</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00191">191</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, and <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>.</p>
 
 </div>
 </div>
@@ -3107,9 +3108,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00192">192</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00193">193</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00731">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, and <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>.</p>
 
 </div>
 </div>
@@ -3125,9 +3126,9 @@ vision_time</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00189">189</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ins__flow_8c_source.html#l00190">190</a> of file <a class="el" href="ins__flow_8c_source.html">ins_flow.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01480">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00536">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00394">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01425">set_body_state_from_quat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ins__flow_8c_source.html#l01482">gps_cb()</a>, <a class="el" href="ins__flow_8c_source.html#l00537">ins_flow_init()</a>, <a class="el" href="ins__flow_8c_source.html#l00395">send_ins_flow()</a>, and <a class="el" href="ins__flow_8c_source.html#l01426">set_body_state_from_quat()</a>.</p>
 
 </div>
 </div>
@@ -3137,7 +3138,7 @@ vision_time</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__flow_8c.html">ins_flow.c</a></li>
-    <li class="footer">Generated on Wed Oct 4 2023 06:27:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 14:35:55 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

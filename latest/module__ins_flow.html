@@ -170,10 +170,14 @@ Raw ins_flow.xml file:</h2>
 <div class="line">    <span class="comment">&lt;!-- &lt;file name=&quot;ahrs.c&quot; dir=&quot;subsystems&quot;/&gt; --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ahrs_aligner.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;modules/ahrs&quot;</span>/&gt;</div>
 <div class="line">    <span class="comment">&lt;!-- &lt;file name=&quot;pprz_algebra_float.c&quot; dir=&quot;math&quot;/&gt; --&gt;</span></div>
-<div class="line">  &lt;<span class="keywordtype">raw</span>&gt;</div>
-<div class="line">  $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DAHRS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/ins/ins_flow.h\&quot;</span></div>
-<div class="line">  $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_AHRS</span>=<span class="keyword">ahrs_icq</span></div>
-<div class="line">  &lt;/<span class="keywordtype">raw</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
+<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DAHRS_TYPE_H</span>=\<span class="stringliteral">&quot;modules/ins/ins_flow.h\&quot;</span></div>
+<div class="line">      $(<span class="keyword">TARGET</span>).<span class="keyword">CFLAGS</span> += -<span class="keyword">DPRIMARY_AHRS</span>=<span class="keyword">ahrs_icq</span></div>
+<div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MOTOR_MIXING_NB_MOTOR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_MAGNETOMETER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -184,7 +188,7 @@ Raw ins_flow.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 4 2023 06:27:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 14:35:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -182,6 +182,10 @@ Airframe file section</h2>
  Description: WLS control objective priorities: roll, pitch, thrust, yaw, thrust_x</li>
 <li><b>name</b> <code>WLS_WU</code> <b>value:</b> <em>{1, 1, 1, 1}</em> <br  />
  Description: WLS actuator cost (size of INDI_NUM_ACT)</li>
+<li><b>name</b> <code>RPM_FEEDBACK</code> <b>value:</b> <em>FALSE</em> <br  />
+ Description: enable RPM feedback</li>
+<li><b>name</b> <code>ACT_FEEDBACK_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+ Description: listening for RPM feedback on this ABI id</li>
 </ul>
 </li>
 </ul>
@@ -258,6 +262,8 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ADAPTIVE_MU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0001&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;adaptation parameter&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_PRIORITIES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1000, 1000, 1, 100, 100}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;WLS control objective priorities: roll, pitch, thrust, yaw, thrust_x&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_WU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1, 1, 1, 1}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;WLS actuator cost (size of INDI_NUM_ACT)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RPM_FEEDBACK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;enable RPM feedback&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_FEEDBACK_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;listening for RPM feedback on this ABI id&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -300,7 +306,7 @@ Raw stabilization_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 4 2023 06:27:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 14:35:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -152,8 +152,10 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators_8h.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:structrpm__act__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#structrpm__act__t">rpm_act_t</a></td></tr>
-<tr class="separator:structrpm__act__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structact__feedback__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t">act_feedback_t</a></td></tr>
+<tr class="separator:structact__feedback__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structact__feedback__t_1_1act__feedback__set__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t">act_feedback_t::act_feedback_set_t</a></td></tr>
+<tr class="separator:structact__feedback__t_1_1act__feedback__set__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -167,33 +169,87 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structrpm__act__t" id="structrpm__act__t"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structrpm__act__t">&#9670;&nbsp;</a></span>rpm_act_t</h2>
+<a name="structact__feedback__t" id="structact__feedback__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structact__feedback__t">&#9670;&nbsp;</a></span>act_feedback_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct rpm_act_t</td>
+          <td class="memname">struct act_feedback_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00044">44</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
-</div><table class="fieldtable">
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for act_feedback_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structact__feedback__t__coll__graph.png" border="0" usemap="#aact__feedback__t_coll__map" alt="Collaboration graph"/></div>
+<map name="aact__feedback__t_coll__map" id="aact__feedback__t_coll__map">
+<area shape="rect" title=" " alt="" coords="5,95,127,121"/>
+<area shape="rect" title=" " alt="" coords="37,5,95,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="adbf36510b4247d607c8b9ff42a8861de"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<a id="a63a6b3dbd104d8b663c39e25f3e27f76"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
-actuator_idx</td>
+idx</td>
 <td class="fielddoc">
-</td></tr>
+General index of the actuators (generated in airframe.h) </td></tr>
 <tr><td class="fieldtype">
-<a id="a13ace7395dcdf3bd252b2123ddbed66f"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<a id="acdc68e5e08a5d2294c38d1e7a5e6c126"></a>float</td>
+<td class="fieldname">
+position</td>
+<td class="fielddoc">
+In radians. </td></tr>
+<tr><td class="fieldtype">
+<a id="a25edb2720f6e479a47a6bb74b10d0256"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
 <td class="fieldname">
 rpm</td>
 <td class="fielddoc">
-</td></tr>
+RPM. </td></tr>
+<tr><td class="fieldtype">
+<a id="a3d40a68fe99dde3cf4c85c1cb1d2b15b"></a>struct <a class="el" href="modules_2actuators_2actuators_8h.html#structact__feedback__t_1_1act__feedback__set__t">act_feedback_set_t</a></td>
+<td class="fieldname">
+set</td>
+<td class="fielddoc">
+Bitset registering what is set as feedback. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structact__feedback__t_1_1act__feedback__set__t" id="structact__feedback__t_1_1act__feedback__set__t"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structact__feedback__t_1_1act__feedback__set__t">&#9670;&nbsp;</a></span>act_feedback_t::act_feedback_set_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct act_feedback_t::act_feedback_set_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8h_source.html#l00046">46</a> of file <a class="el" href="modules_2actuators_2actuators_8h_source.html">actuators.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a28ef1daca4f83b94650f5e12ae0adac6"></a>bool</td>
+<td class="fieldname">
+position: 1</td>
+<td class="fielddoc">
+Position is set. </td></tr>
+<tr><td class="fieldtype">
+<a id="a24f27beefe678936255666a7fe68d845"></a>bool</td>
+<td class="fieldname">
+rpm: 1</td>
+<td class="fielddoc">
+RPM is set. </td></tr>
 </table>
 
 </div>
@@ -218,11 +274,11 @@ rpm</td>
 <p class="definition">Definition at line <a class="el" href="modules_2actuators_2actuators_8c_source.html#l00122">122</a> of file <a class="el" href="modules_2actuators_2actuators_8c_source.html">actuators.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, and <a class="el" href="px4__gimbal_8c_source.html#l00036">px4_gimbal_init()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="modules_2actuators_2actuators_8h_a7ba1bde30e3a87694e878b244de10c47_icgraph.png" border="0" usemap="#amodules_2actuators_2actuators_8h_a7ba1bde30e3a87694e878b244de10c47_icgraph" alt=""/></div>
 <map name="amodules_2actuators_2actuators_8h_a7ba1bde30e3a87694e878b244de10c47_icgraph" id="amodules_2actuators_2actuators_8h_a7ba1bde30e3a87694e878b244de10c47_icgraph">
 <area shape="rect" title=" " alt="" coords="283,31,393,57"/>
@@ -260,7 +316,7 @@ rpm</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators_8h.html">actuators.h</a></li>
-    <li class="footer">Generated on Wed Oct 4 2023 06:27:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 14:35:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,10 @@
 var NAVTREEINDEX70 =
 {
+"group__math__isa.html#ga9bdc2f4f1eb8a54e79b08361726ccf63":[12,0,1,0,4,20,5],
+"group__math__isa.html#ga9bdc2f4f1eb8a54e79b08361726ccf63":[9,9,3,5],
+"group__math__isa.html#gac4015c2a2916f2ee2151f6bf6083a1ed":[12,0,1,0,4,20,19],
+"group__math__isa.html#gac4015c2a2916f2ee2151f6bf6083a1ed":[9,9,3,19],
+"group__math__isa.html#gac4f09249f783c161c64374c3ef5e26a6":[12,0,1,0,4,20,0],
 "group__math__isa.html#gac4f09249f783c161c64374c3ef5e26a6":[9,9,3,0],
 "group__math__isa.html#gacd1a8fc9002d54a26dbf04a59c358280":[12,0,1,0,4,20,8],
 "group__math__isa.html#gacd1a8fc9002d54a26dbf04a59c358280":[9,9,3,8],
@@ -96,8 +101,8 @@ var NAVTREEINDEX70 =
 "group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b":[12,0,1,0,22,5],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,0,0,8,3],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[9,0,5],
-"group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,22,3],
 "group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,21,2],
+"group__mcu__periph.html#gabd519c6c1966a7d45032bebf0040824d":[12,0,1,0,22,3],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[9,0,6],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[12,0,1,0,21,3],
 "group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07":[12,0,1,0,22,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX70 =
 "group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9":[12,0,1,0,5,15,6],
 "group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9":[12,0,1,0,5,16,39],
 "group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff":[9,0,1,4],
-"group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff":[12,0,1,0,5,16,3],
-"group__spi.html#gaf5b653936008438cdaad284e3aff2f22":[9,0,1,9],
-"group__spi.html#gaf5b653936008438cdaad284e3aff2f22":[12,0,1,0,5,16,8],
-"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,0,0,14,13],
-"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[12,0,1,0,0,1,0,11,12],
-"group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9":[9,0,1,32]
+"group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff":[12,0,1,0,5,16,3]
 };

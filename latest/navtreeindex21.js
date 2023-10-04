@@ -1,5 +1,10 @@
 var NAVTREEINDEX21 =
 {
+"baro__board__common_8c_source.html":[12,0,1,0,6,60,34],
+"baro__board__common_8h.html":[12,0,1,0,6,60,35],
+"baro__board__common_8h.html#a55f55250d4fa4ead474b388b3edf5bb3":[12,0,1,0,6,60,35,0],
+"baro__board__common_8h.html#a63b378088aacd63bd09fb331c875dd91":[12,0,1,0,6,60,35,1],
+"baro__board__common_8h.html#aa018d39cda0714aa4b87955f478380e8":[12,0,1,0,6,60,35,2],
 "baro__board__common_8h_source.html":[12,0,1,0,6,60,35],
 "baro__board__ms5611__i2c_8c.html":[12,0,1,0,1,24],
 "baro__board__ms5611__i2c_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00":[12,0,1,0,1,24,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX21 =
 "battery__monitor_8c.html#a811b9e4f42228b2a8c42ab6aa84e7485":[12,0,1,0,6,1,2,16],
 "battery__monitor_8c.html#a93939de227c0da3158450abb0b685187":[12,0,1,0,6,1,2,10],
 "battery__monitor_8c.html#ab58a356c583eae3f244dea45ffd665d5":[12,0,1,0,6,1,2,5],
-"battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a":[12,0,1,0,6,1,2,13],
-"battery__monitor_8c.html#ad5d27f2089d8318dbd4f23bdc574483f":[12,0,1,0,6,1,2,9],
-"battery__monitor_8c.html#ada976116d6f0d114e4c2d3f4b55e3d30":[12,0,1,0,6,1,2,3],
-"battery__monitor_8c.html#adee0aebd61dd74ed266c93ad31f15b24":[12,0,1,0,6,1,2,15],
-"battery__monitor_8c.html#ae96423be038e3982c804c87b5e45f36a":[12,0,1,0,6,1,2,17],
-"battery__monitor_8c_source.html":[12,0,1,0,6,1,2]
+"battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a":[12,0,1,0,6,1,2,13]
 };

@@ -96,7 +96,7 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_RPM_FB_P&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_RPM_FB_I&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_RPM_INC_LIMIT&quot; value=&quot;512&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_RPM_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_ACT_FEEDBACK_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;THROTTLE_CURVE_RPM_ACT&quot; value=&quot;0&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__heli_throttle_curve"></a>
@@ -110,10 +110,10 @@ Define Options</h2>
  Description: The RPM controller feeadback I gain of the PI controller</li>
 <li><b>name:</b> <code>THROTTLE_CURVE_RPM_INC_LIMIT</code> <b>value:</b> <em>512</em> <br  />
  Description: Amount of RPM the controller can increase or decrease per second</li>
-<li><b>name:</b> <code>THROTTLE_CURVE_RPM_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+<li><b>name:</b> <code>THROTTLE_CURVE_ACT_FEEDBACK_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: The ABI sender ID to listen for RPM messages</li>
 <li><b>name:</b> <code>THROTTLE_CURVE_RPM_ACT</code> <b>value:</b> <em>0</em> <br  />
- Description: The ABI RPM message motor index</li>
+ Description: The RPM message motor index (generated from airframe.h)</li>
 </ul>
 <h1><a class="anchor" id="functions__heli_throttle_curve"></a>
 Module functions</h1>
@@ -146,8 +146,8 @@ Raw heli_throttle_curve.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_FB_P&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The RPM controller feeadback P gain of the PI controller&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_FB_I&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The RPM controller feeadback I gain of the PI controller&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_INC_LIMIT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;512&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Amount of RPM the controller can increase or decrease per second&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The ABI sender ID to listen for RPM messages&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_ACT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The ABI RPM message motor index&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_ACT_FEEDBACK_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The ABI sender ID to listen for RPM messages&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_ACT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The RPM message motor index (generated from airframe.h)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
@@ -165,6 +165,15 @@ Raw heli_throttle_curve.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;throttle_curve.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_THROTTLE_CURVES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_RPM_ACT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_POINTS_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVES_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{{0}}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;THROTTLE_CURVE_MODE_INIT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RADIO_FMODE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;COMMAND_COLLECTIVE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 <div class="line"> </div>
@@ -175,7 +184,7 @@ Raw heli_throttle_curve.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Oct 4 2023 06:27:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 14:35:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

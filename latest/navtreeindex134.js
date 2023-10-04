@@ -1,5 +1,10 @@
 var NAVTREEINDEX134 =
 {
+"module__osd_max7456.html#module_xml__osd_max7456":[1,461,2,0],
+"module__pano_unwrap.html":[1,462],
+"module__pano_unwrap.html#configuration__pano_unwrap":[1,462,1],
+"module__pano_unwrap.html#functions__pano_unwrap":[1,462,2],
+"module__pano_unwrap.html#module_load_example__pano_unwrap":[1,462,0],
 "module__pano_unwrap.html#module_xml__pano_unwrap":[1,462,2,0],
 "module__pca9685.html":[1,463],
 "module__pca9685.html#functions__pca9685":[1,463,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX134 =
 "module__stabilization_rate.html":[1,414],
 "module__stabilization_rate.html#configuration__stabilization_rate":[1,414,1],
 "module__stabilization_rate.html#functions__stabilization_rate":[1,414,2],
-"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,414,0],
-"module__stabilization_rate.html#module_xml__stabilization_rate":[1,414,2,0],
-"module__stabilization_rate_indi.html":[1,415],
-"module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,415,1],
-"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,415,0],
-"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,415,1,0]
+"module__stabilization_rate.html#module_load_example__stabilization_rate":[1,414,0]
 };

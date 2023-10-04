@@ -1,5 +1,10 @@
 var NAVTREEINDEX31 =
 {
+"chimera_2chibios_2v1_80_2board_8h.html#a0e365d3de09d8572b5eb37f5d6be3fdf":[12,0,1,0,1,3,0,0,0,106],
+"chimera_2chibios_2v1_80_2board_8h.html#a0e8e824c2e5a92ed2b9a4e3aed1cbcba":[12,0,1,0,1,3,0,0,0,154],
+"chimera_2chibios_2v1_80_2board_8h.html#a0ea72811af3c3964000de07b6b092def":[12,0,1,0,1,3,0,0,0,302],
+"chimera_2chibios_2v1_80_2board_8h.html#a0fa4c6c51464068064a0341484b6a6b2":[12,0,1,0,1,3,0,0,0,185],
+"chimera_2chibios_2v1_80_2board_8h.html#a0fa5d3784db71d607cd116c9cba4f582":[12,0,1,0,1,3,0,0,0,280],
 "chimera_2chibios_2v1_80_2board_8h.html#a0fbc2f053dee2ff850f4ff5fc237b3f7":[12,0,1,0,1,3,0,0,0,194],
 "chimera_2chibios_2v1_80_2board_8h.html#a102ea35080ad690407b3c8aad2d085c6":[12,0,1,0,1,3,0,0,0,304],
 "chimera_2chibios_2v1_80_2board_8h.html#a115fa00cdec6073a009a590104732263":[12,0,1,0,1,3,0,0,0,198],
@@ -244,10 +249,5 @@ var NAVTREEINDEX31 =
 "chimera_2chibios_2v1_80_2board_8h.html#a87eb0a2d9c873701fa98dc9f572436a7":[12,0,1,0,1,3,0,0,0,258],
 "chimera_2chibios_2v1_80_2board_8h.html#a88a823723670b4ab6cc4c67094155b7f":[12,0,1,0,1,3,0,0,0,19],
 "chimera_2chibios_2v1_80_2board_8h.html#a88e90fe8e8e671220793712eda23c4ab":[12,0,1,0,1,3,0,0,0,379],
-"chimera_2chibios_2v1_80_2board_8h.html#a897cb5f17f4e3ab19b3d5d1df77c31fd":[12,0,1,0,1,3,0,0,0,415],
-"chimera_2chibios_2v1_80_2board_8h.html#a89fa4656e988e929608905e5de142558":[12,0,1,0,1,3,0,0,0,102],
-"chimera_2chibios_2v1_80_2board_8h.html#a8a275ff975b3c7f07a2009a32629e33e":[12,0,1,0,1,3,0,0,0,84],
-"chimera_2chibios_2v1_80_2board_8h.html#a8aa85ae9867fabf70ec72cd3bf6fb6b9":[12,0,1,0,1,3,0,0,0,107],
-"chimera_2chibios_2v1_80_2board_8h.html#a8ac977a5042e9153c2b148730fc201ae":[12,0,1,0,1,3,0,0,0,274],
-"chimera_2chibios_2v1_80_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9":[12,0,1,0,1,3,0,0,0,382]
+"chimera_2chibios_2v1_80_2board_8h.html#a897cb5f17f4e3ab19b3d5d1df77c31fd":[12,0,1,0,1,3,0,0,0,415]
 };

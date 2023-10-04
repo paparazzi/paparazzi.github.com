@@ -1,5 +1,10 @@
 var NAVTREEINDEX85 =
 {
+"i2c__smbus_8h.html#aef52b94d71c11d2849c6f3ae62d0e29b":[12,0,1,0,0,1,0,6,5],
+"i2c__smbus_8h.html#af023c6b90cc950f3673e98462ff52a59":[12,0,1,0,0,1,0,6,4],
+"i2c__smbus_8h.html#af0c92c143c24c0c49902f705a1ebe65c":[12,0,1,0,0,1,0,6,1,0],
+"i2c__smbus_8h.html#af571f99938f0eb2d1427fa4cd09a6d65":[12,0,1,0,0,1,0,6,61],
+"i2c__smbus_8h.html#afa3215f0aa766367f5d34bee80929152":[12,0,1,0,0,1,0,6,52],
 "i2c__smbus_8h.html#afb1764d4b58fb542306c715ad6a28a42":[12,0,1,0,0,1,0,6,36],
 "i2c__smbus_8h.html#structi2c__msg":[12,0,1,0,0,1,0,6,0],
 "i2c__smbus_8h.html#unioni2c__smbus__data":[12,0,1,0,0,1,0,6,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX85 =
 "imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f":[12,0,1,0,1,0,4,0,0],
 "imu__apogee_8h.html#afff4a758f055126720cafb4f1be1c956":[12,0,1,0,1,0,4,1],
 "imu__apogee_8h.html#structImuApogee":[12,0,1,0,1,0,4,0],
-"imu__apogee_8h_source.html":[12,0,1,0,1,0,4],
-"imu__ardrone2_8c.html":[12,0,1,0,6,35,4],
-"imu__ardrone2_8c.html#a64ed917b58febc5528b575b56549c9a4":[12,0,1,0,6,35,4,0],
-"imu__ardrone2_8c_source.html":[12,0,1,0,6,35,4],
-"imu__ardrone2_8h.html":[12,0,1,0,6,35,5],
-"imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4":[12,0,1,0,6,35,5,0]
+"imu__apogee_8h_source.html":[12,0,1,0,1,0,4]
 };

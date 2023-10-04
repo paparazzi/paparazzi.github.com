@@ -1,5 +1,14 @@
 var NAVTREEINDEX217 =
 {
+"wedgebug_8c.html#a243962d79a2ebd5d28098d21720bdf31":[12,0,1,0,6,70,0,80],
+"wedgebug_8c.html#a2551afb9106fa7bd714ee3a9a52528e0":[12,0,1,0,6,70,0,73],
+"wedgebug_8c.html#a26bf5265cbc2dc04f839381633e051a3":[12,0,1,0,6,70,0,72],
+"wedgebug_8c.html#a281d92d07d6594b36caae4fc85827407":[12,0,1,0,6,70,0,126],
+"wedgebug_8c.html#a2de0e3d5b813da8d4c3bae9ec5701626":[12,0,1,0,6,70,0,141],
+"wedgebug_8c.html#a2ec152206c4e5420ccefa65ed789ccee":[12,0,1,0,6,70,0,154],
+"wedgebug_8c.html#a37483dcff9c407f382e82b9e0a0a4729":[12,0,1,0,6,70,0,6],
+"wedgebug_8c.html#a3839ec2b492d902ef22378fff5cd7381":[12,0,1,0,6,70,0,34],
+"wedgebug_8c.html#a389bd7ed0bf2d35f49a3658a00c31ef2":[12,0,1,0,6,70,0,78],
 "wedgebug_8c.html#a39dd5d6393a55bc0e2e7c838c11eb5b0":[12,0,1,0,6,70,0,102],
 "wedgebug_8c.html#a46d7042f9db09f94c3d45cb8d08d5942":[12,0,1,0,6,70,0,57],
 "wedgebug_8c.html#a4756971f63deed4709003a0b7b21c793":[12,0,1,0,6,70,0,23],
@@ -240,14 +249,5 @@ var NAVTREEINDEX217 =
 "wind__estimation__quadrotor_8h.html#a5f027a6eacf02672bb320c90f1b76afd":[12,0,1,0,6,43,48,3],
 "wind__estimation__quadrotor_8h.html#a677f6eb1e2c4f6f4593a141057831f66":[12,0,1,0,6,43,48,1],
 "wind__estimation__quadrotor_8h.html#abb642b885c412d8d6c47e1300555817a":[12,0,1,0,6,43,48,0,1],
-"wind__estimation__quadrotor_8h.html#ae3004ac4576e61733219698c126d8f1f":[12,0,1,0,6,43,48,9],
-"wind__estimation__quadrotor_8h.html#ae8c13e8e5237f528b275945d6519c284":[12,0,1,0,6,43,48,0,2],
-"wind__estimation__quadrotor_8h.html#structwind__estimation__quadrotor__params":[12,0,1,0,6,43,48,0],
-"wind__estimation__quadrotor_8h_source.html":[12,0,1,0,6,43,48],
-"wind__estimator_8c.html":[12,0,1,0,6,43,49],
-"wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751":[12,0,1,0,6,43,49,22],
-"wind__estimator_8c.html#a1929777051168286cce7032efbbe3162":[12,0,1,0,6,43,49,25],
-"wind__estimator_8c.html#a296f346fc4344c960544819b42e89dfe":[12,0,1,0,6,43,49,15],
-"wind__estimator_8c.html#a2c5c69e32a4d868eeb83d3e0febfc963":[12,0,1,0,6,43,49,26],
-"wind__estimator_8c.html#a2c87f0af13dab41b9fb0bae1edf1aa2b":[12,0,1,0,6,43,49,1]
+"wind__estimation__quadrotor_8h.html#ae3004ac4576e61733219698c126d8f1f":[12,0,1,0,6,43,48,9]
 };

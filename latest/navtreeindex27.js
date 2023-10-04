@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"cc2500__compat_8h.html#aca446bd806e0535178ec65fdf44fece9a5ece00cdf17ed419a18dd824ad43689d":[12,0,1,0,6,55,0,3,64,0],
+"cc2500__compat_8h.html#aca446bd806e0535178ec65fdf44fece9a619716ecadfb8eb793687c6f3b804d5a":[12,0,1,0,6,55,0,3,64,1],
+"cc2500__compat_8h.html#aca446bd806e0535178ec65fdf44fece9a85414b20dfdec489d824b90535d8f01d":[12,0,1,0,6,55,0,3,64,4],
+"cc2500__compat_8h.html#aca446bd806e0535178ec65fdf44fece9ab35a8caf71b8b4225f8d42447ff908e0":[12,0,1,0,6,55,0,3,64,5],
+"cc2500__compat_8h.html#acc61717cfc2498f47df604de3f0278e9":[12,0,1,0,6,55,0,3,83],
 "cc2500__compat_8h.html#acd79985136a05b258fa9585116a23f3c":[12,0,1,0,6,55,0,3,75],
 "cc2500__compat_8h.html#ad4c71641946465d236a9acdbeccb79d4":[12,0,1,0,6,55,0,3,81],
 "cc2500__compat_8h.html#ad5b3ec1ce839fa1c4337a7d0312e9749":[12,0,1,0,6,55,0,3,39],
@@ -77,8 +82,8 @@ var NAVTREEINDEX27 =
 "cc2500__frsky__shared_8h.html#a08484161bfc8fc25f6587deed5438215":[12,0,1,0,6,55,0,7,1],
 "cc2500__frsky__shared_8h.html#a1793c116abf6558778081081eebefbf7":[12,0,1,0,6,55,0,7,10],
 "cc2500__frsky__shared_8h.html#a54bcae7a22dd669bf121c7c626e399dc":[12,0,1,0,6,55,0,7,9],
-"cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,55,0,7,3],
 "cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,55,0,7,4],
+"cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046":[12,0,1,0,6,55,0,7,3],
 "cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18":[12,0,1,0,6,55,0,7,8],
 "cc2500__frsky__shared_8h.html#a9edc11533b4625815af2ca31c562061e":[12,0,1,0,6,55,0,7,2],
 "cc2500__frsky__shared_8h.html#aad78fae7846fe4f56409cb30fa52947a":[12,0,1,0,6,55,0,7,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "cc2500__rx_8h.html#ac205ed213ca5e97d85dd6e8bd77efdd0":[12,0,1,0,6,55,0,13,15],
 "cc2500__rx_8h.html#ad2cdcbc37cc6ee54cae648c06acdd0eb":[12,0,1,0,6,55,0,13,16],
 "cc2500__rx_8h.html#ad9793138247af4fd9552f8170c5ed66b":[12,0,1,0,6,55,0,13,0,5],
-"cc2500__rx_8h.html#aefb73fac3483ad3de8a6474fc0d8a3d3":[12,0,1,0,6,55,0,13,0,1],
-"cc2500__rx_8h.html#afac38e8eaf7d8e854096e97e3df395bf":[12,0,1,0,6,55,0,13,3],
-"cc2500__rx_8h.html#structrxRuntimeConfig__s":[12,0,1,0,6,55,0,13,0],
-"cc2500__rx_8h_source.html":[12,0,1,0,6,55,0,13],
-"cc2500__rx__spi_8c.html":[12,0,1,0,6,55,0,14],
-"cc2500__rx__spi_8c.html#a02d8b7f5514a77246078c01f06e188e9":[12,0,1,0,6,55,0,14,1]
+"cc2500__rx_8h.html#aefb73fac3483ad3de8a6474fc0d8a3d3":[12,0,1,0,6,55,0,13,0,1]
 };

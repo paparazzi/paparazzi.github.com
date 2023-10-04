@@ -1,5 +1,10 @@
 var NAVTREEINDEX132 =
 {
+"module__ins_alt_float.html#functions__ins_alt_float":[1,215,2],
+"module__ins_alt_float.html#module_load_example__ins_alt_float":[1,215,0],
+"module__ins_alt_float.html#module_xml__ins_alt_float":[1,215,2,0],
+"module__ins_arduimu.html":[1,216],
+"module__ins_arduimu.html#functions__ins_arduimu":[1,216,1],
 "module__ins_arduimu.html#module_load_example__ins_arduimu":[1,216,0],
 "module__ins_arduimu.html#module_xml__ins_arduimu":[1,216,1,0],
 "module__ins_arduimu_basic.html":[1,217],
@@ -244,10 +249,5 @@ var NAVTREEINDEX132 =
 "module__mav_course_exercise.html":[1,458],
 "module__mav_course_exercise.html#dependencies__mav_course_exercise":[1,458,1],
 "module__mav_course_exercise.html#module_load_example__mav_course_exercise":[1,458,0],
-"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,458,1,0],
-"module__mavlink.html":[1,101],
-"module__mavlink.html#configuration__mavlink":[1,101,1],
-"module__mavlink.html#functions__mavlink":[1,101,2],
-"module__mavlink.html#module_load_example__mavlink":[1,101,0],
-"module__mavlink.html#module_xml__mavlink":[1,101,2,0]
+"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,458,1,0]
 };

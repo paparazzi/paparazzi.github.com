@@ -1,6 +1,10 @@
 var abi__sender__ids_8h =
 [
     [ "ACCEL_SP_FCR_ID", "abi__sender__ids_8h.html#a1048a5bb86fd2926327b1e13844b1279", null ],
+    [ "ACT_FEEDBACK_BOARD_ID", "abi__sender__ids_8h.html#a82abdacacccab7910a7e4dd77cb2519a", null ],
+    [ "ACT_FEEDBACK_DSHOT_ID", "abi__sender__ids_8h.html#aa0ceb400915254a7217e07d06d53164f", null ],
+    [ "ACT_FEEDBACK_RPM_SENSOR_ID", "abi__sender__ids_8h.html#a76425b4ca8a4be7999de690897e41eb6", null ],
+    [ "ACT_FEEDBACK_UAVCAN_ID", "abi__sender__ids_8h.html#afa84b6fb34e23a56f3748abe4981d6e3", null ],
     [ "AGL_LIDAR_LITE_ID", "abi__sender__ids_8h.html#ab91de3993845bafafb1dd1395dea222b", null ],
     [ "AGL_LIDAR_MATEKSYS_3901_L0X_ID", "abi__sender__ids_8h.html#a1f56a6476b397ac1970833428b8dad26", null ],
     [ "AGL_LIDAR_SF11_ID", "abi__sender__ids_8h.html#ab059fc3621b833d4e1c84d59b2c7394c", null ],
@@ -113,8 +117,6 @@ var abi__sender__ids_8h =
     [ "RADIO_CONTROL_SUPERBITRF_RC_ID", "abi__sender__ids_8h.html#a85acebd1b5837d538446e13d4eb1b28e", null ],
     [ "RANGE_FORCEFIELD_ID", "abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748", null ],
     [ "RELATIVE_LOCALIZATION_ID", "abi__sender__ids_8h.html#ad83f845fc9d1a98388403ea342aa331a", null ],
-    [ "RPM_DSHOT_ID", "abi__sender__ids_8h.html#afcc382a0981932c560d15e27d7c6c0f3", null ],
-    [ "RPM_SENSOR_ID", "abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57", null ],
     [ "RSSI_BLUEGIGA_ID", "abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db", null ],
     [ "SDP3X_SENDER_ID", "abi__sender__ids_8h.html#aaa3985b6f3b689ca90203cb1f3a7e627", null ],
     [ "THRUST_INCREMENT_ID", "abi__sender__ids_8h.html#aef2527d3e072d8a462222ec89d75727c", null ],
