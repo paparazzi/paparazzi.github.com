@@ -1,6 +1,5 @@
 var NAVTREEINDEX162 =
 {
-"opencv__example_8cpp.html#a6e9d13abcf561943ebba60b0b5f43565":[12,0,1,0,6,11,28,0],
 "opencv__example_8cpp_source.html":[12,0,1,0,6,11,28],
 "opencv__example_8h.html":[12,0,1,0,6,11,29],
 "opencv__example_8h.html#a6e9d13abcf561943ebba60b0b5f43565":[12,0,1,0,6,11,29,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX162 =
 "openpilot__revo__nano_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,1,56,1],
 "openpilot__revo__nano_8h.html#a697b8e633c428bd167844542c8c1453f":[12,0,1,0,1,56,104],
 "openpilot__revo__nano_8h.html#a709a999c99640032c159e61ceab7797a":[12,0,1,0,1,56,93],
-"openpilot__revo__nano_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,56,44]
+"openpilot__revo__nano_8h.html#a71122954f0f92371cc8f6124e291a016":[12,0,1,0,1,56,44],
+"openpilot__revo__nano_8h.html#a7177258266354e8bfdaa446881db27e1":[12,0,1,0,1,56,95]
 };

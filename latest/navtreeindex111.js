@@ -1,6 +1,5 @@
 var NAVTREEINDEX111 =
 {
-"low__pass__filter_8h.html#aaec7bc687afb767b2b84ac20da7e4055":[12,0,1,0,2,5,24],
 "low__pass__filter_8h.html#abf8bfdef66a33d7dac4225bd8e7372a2":[12,0,1,0,2,5,4,1],
 "low__pass__filter_8h.html#acce169cb1b8b0169b3a1a8fc94393f5c":[12,0,1,0,2,5,25],
 "low__pass__filter_8h.html#adc665d25f3161f1405e10055155da332":[12,0,1,0,2,5,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX111 =
 "lsm303d__spi_8c.html#ab4e49df07264189a6344fe0772d14f9f":[12,0,1,0,7,74,5],
 "lsm303d__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,74,0],
 "lsm303d__spi_8c.html#aed687119cc5a219108a4ddbcacc70380":[12,0,1,0,7,74,3],
-"lsm303d__spi_8c_source.html":[12,0,1,0,7,74]
+"lsm303d__spi_8c_source.html":[12,0,1,0,7,74],
+"lsm303d__spi_8h.html":[12,0,1,0,7,75]
 };

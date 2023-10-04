@@ -1,18 +1,17 @@
 <map id="update_butterworth_2_low_pass" name="update_butterworth_2_low_pass">
-<area shape="rect" id="node1" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="893,202,1044,243"/>
+<area shape="rect" id="node1" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="893,166,1044,207"/>
 <area shape="rect" id="node2" href="$airspeed__uavcan_8c.html#a0148a8aa0bf9dfd7f55e8fe27ea74347" title=" " alt="" coords="675,5,830,32"/>
 <area shape="rect" id="node4" href="$stabilization__indi__simple_8c.html#ac0d13e690fd500a3c737add9bf8a8574" title="Update butterworth filter for p, q and r of a FloatRates struct." alt="" coords="713,56,793,83"/>
-<area shape="rect" id="node8" href="$guidance__indi__hybrid_8c.html#a3be2753807135876452fd1792afff16a" title="Filter the thrust, such that it corresponds to the filtered acceleration." alt="" coords="678,107,827,149"/>
-<area shape="rect" id="node9" href="$guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="660,173,845,214"/>
-<area shape="rect" id="node10" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="691,239,814,265"/>
-<area shape="rect" id="node11" href="$stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="465,257,599,298"/>
-<area shape="rect" id="node15" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="681,340,825,367"/>
-<area shape="rect" id="node16" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="700,391,805,417"/>
+<area shape="rect" id="node8" href="$guidance__indi_8c.html#a777bf559723c4e1ba1e9ae8d51572fff" title="Low pass the accelerometer measurements to remove noise from vibrations." alt="" coords="660,107,845,149"/>
+<area shape="rect" id="node9" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="691,173,814,200"/>
+<area shape="rect" id="node10" href="$stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="465,205,599,246"/>
+<area shape="rect" id="node14" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="681,275,825,301"/>
+<area shape="rect" id="node15" href="$airspeed__sdp3x_8c.html#ad9a54cedd689655b7da28d76dbf60ac5" title=" " alt="" coords="700,325,805,352"/>
 <area shape="rect" id="node3" href="$airspeed__uavcan_8c.html#add8fef6742f9898bfb3c6ea203df890f" title=" " alt="" coords="452,5,612,32"/>
 <area shape="rect" id="node5" href="$stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca" title="This is a Least Mean Squares adaptive filter It estimates the actuator effectiveness online,..." alt="" coords="471,56,593,83"/>
-<area shape="rect" id="node6" href="$stabilization__indi__simple_8c.html#a83c932bd9792806ff65ff3ca266f410b" title="Does the INDI calculations." alt="" coords="256,74,389,115"/>
-<area shape="rect" id="node7" href="$stabilization__indi__simple_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title="runs stabilization indi" alt="" coords="33,74,166,115"/>
-<area shape="rect" id="node12" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="256,227,389,269"/>
-<area shape="rect" id="node14" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,293,404,320"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="5,235,193,261"/>
+<area shape="rect" id="node6" href="$stabilization__indi__simple_8c.html#a83c932bd9792806ff65ff3ca266f410b" title="Does the INDI calculations." alt="" coords="256,61,389,102"/>
+<area shape="rect" id="node7" href="$stabilization__indi__simple_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title="runs stabilization indi" alt="" coords="33,61,166,102"/>
+<area shape="rect" id="node11" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="256,149,389,190"/>
+<area shape="rect" id="node13" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,215,404,241"/>
+<area shape="rect" id="node12" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="5,156,193,183"/>
 </map>

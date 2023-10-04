@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['qmc5883l_28116',['Qmc5883l',['../qmc5883l_8h.html#structQmc5883l',1,'']]],
-  ['qmc5883l_2edata_28117',['Qmc5883l.data',['../qmc5883l_8h.html#unionQmc5883l_8data',1,'']]]
+  ['qmc5883l_28117',['Qmc5883l',['../qmc5883l_8h.html#structQmc5883l',1,'']]],
+  ['qmc5883l_2edata_28118',['Qmc5883l.data',['../qmc5883l_8h.html#unionQmc5883l_8data',1,'']]]
 ];

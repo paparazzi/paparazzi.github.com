@@ -1,6 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"linear__kalman__filter_8h.html#a429e73c19e37065a75b5d142c9378a1e":[12,0,1,0,2,4,0,8],
 "linear__kalman__filter_8h.html#a51d10a775815d028e0790e88e98578e3":[12,0,1,0,2,4,4],
 "linear__kalman__filter_8h.html#a5c53714cefcff29393bb1ea697ec1f86":[12,0,1,0,2,4,0,4],
 "linear__kalman__filter_8h.html#a5f6f64f6b7879cf6706a30004a626619":[12,0,1,0,2,4,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX102 =
 "lis3mdl_8c.html#a452746f7607927b3a5bd3b7a8b71ed1f":[12,0,1,0,7,66,19],
 "lis3mdl_8c.html#a4bfa1fdbdb023df16d1936d4444b8e33":[12,0,1,0,7,66,4],
 "lis3mdl_8c.html#a6bd5d58e25c47cf96038e013675539d9":[12,0,1,0,7,66,21],
-"lis3mdl_8c.html#a6f0930bbdf851d6c0042e3884d1ec3d6":[12,0,1,0,7,66,22]
+"lis3mdl_8c.html#a6f0930bbdf851d6c0042e3884d1ec3d6":[12,0,1,0,7,66,22],
+"lis3mdl_8c.html#a6f88cf7df908dc5c9651fbc8dde8b345":[12,0,1,0,7,66,26]
 };

@@ -90,7 +90,7 @@ var searchData=
   ['ack_5ffail_5fcnt_34852',['ack_fail_cnt',['../group__i2c.html#a5e18e74d9bc598907010196a760261fe',1,'i2c_errors']]],
   ['acksequenceid_34853',['ackSequenceId',['../cc2500__frsky__x_8c.html#a71aa9ab2038cc70a9ec57681422322a0',1,'telemetrySequenceMarkerData_s']]],
   ['act_5fdyn_34854',['act_dyn',['../stabilization__indi_8c.html#a9eecf38f2d009f9875d9479aabfeb7dc',1,'stabilization_indi.c']]],
-  ['act_5fis_5fservo_34855',['act_is_servo',['../stabilization__indi_8h.html#a3099f5d69f8b2b84a9b1f7685f325adb',1,'act_is_servo():&#160;stabilization_indi.h'],['../stabilization__indi_8c.html#a350721e1950425aa1af7dec0b156263f',1,'act_is_servo():&#160;stabilization_indi.c']]],
+  ['act_5fis_5fservo_34855',['act_is_servo',['../stabilization__indi_8h.html#a3099f5d69f8b2b84a9b1f7685f325adb',1,'act_is_servo():&#160;stabilization_indi.c'],['../stabilization__indi_8c.html#a3099f5d69f8b2b84a9b1f7685f325adb',1,'act_is_servo():&#160;stabilization_indi.c']]],
   ['act_5fis_5fthruster_5fx_34856',['act_is_thruster_x',['../stabilization__indi_8c.html#a2ddbfc7a123648e3be3a39e9d6518670',1,'stabilization_indi.c']]],
   ['act_5fis_5fthruster_5fz_34857',['act_is_thruster_z',['../stabilization__indi_8c.html#a80f3d04328aa2091889d0d302a53088b',1,'stabilization_indi.c']]],
   ['act_5fobs_34858',['act_obs',['../stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d',1,'stabilization_indi.c']]],

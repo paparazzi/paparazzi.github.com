@@ -18,7 +18,6 @@ var guidance__indi__hybrid_8c =
     [ "guidance_indi_calcg_wing", "guidance__indi__hybrid_8c.html#a8d2d8516cb72291696db4884faf9562c", null ],
     [ "guidance_indi_calcg_wing", "guidance__indi__hybrid_8c.html#a02524b5812e966b0dbe644d93b9147ed", null ],
     [ "guidance_indi_enter", "guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
-    [ "guidance_indi_filter_thrust", "guidance__indi__hybrid_8c.html#a3be2753807135876452fd1792afff16a", null ],
     [ "guidance_indi_get_liftd", "guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca", null ],
     [ "guidance_indi_hybrid_set_wls_settings", "guidance__indi__hybrid_8c.html#a8d41ad6a7a37cd222619bed5e1b1a80f", null ],
     [ "guidance_indi_init", "guidance__indi__hybrid_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],

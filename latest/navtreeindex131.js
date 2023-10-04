@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__hackhd.html":[1,131],
 "module__hackhd.html#configuration__hackhd":[1,131,1],
 "module__hackhd.html#functions__hackhd":[1,131,2],
 "module__hackhd.html#module_load_example__hackhd":[1,131,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX131 =
 "module__ins_alt_float.html#functions__ins_alt_float":[1,215,2],
 "module__ins_alt_float.html#module_load_example__ins_alt_float":[1,215,0],
 "module__ins_alt_float.html#module_xml__ins_alt_float":[1,215,2,0],
-"module__ins_arduimu.html":[1,216]
+"module__ins_arduimu.html":[1,216],
+"module__ins_arduimu.html#functions__ins_arduimu":[1,216,1]
 };

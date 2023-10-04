@@ -1,12 +1,12 @@
 var stabilization__indi_8c =
 [
     [ "INDI_ALLOWED_G_FACTOR", "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b", null ],
-    [ "INDI_FILTER_RATES_SECOND_ORDER", "stabilization__indi_8c.html#affd3650a52433ac4b286e7ff5a911fc7", null ],
-    [ "INDI_HROTTLE_LIMIT_AIRSPEED_FWD", "stabilization__indi_8c.html#a7bf5459db51ee8cf15b92aa18907488e", null ],
     [ "STABILIZATION_INDI_ALLOCATION_PSEUDO_INVERSE", "stabilization__indi_8c.html#a66c986a966ec2363098607afcb1623e8", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_P", "stabilization__indi_8c.html#a4c1fc302b71ee5443d5852307a4a9bc0", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_Q", "stabilization__indi_8c.html#a51a4671d083da69c010c0985faf4d2f3", null ],
     [ "STABILIZATION_INDI_FILT_CUTOFF_R", "stabilization__indi_8c.html#abae06312debbf68b936cfb6eb0ad8913", null ],
+    [ "STABILIZATION_INDI_FILTER_RATES_SECOND_ORDER", "stabilization__indi_8c.html#ad93af02050486dd73aca05113149dcd4", null ],
+    [ "STABILIZATION_INDI_THROTTLE_LIMIT_AIRSPEED_FWD", "stabilization__indi_8c.html#a291a2f242c128d34b15df433ee64fad0", null ],
     [ "bound_g_mat", "stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45", null ],
     [ "calc_g1_element", "stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca", null ],
     [ "calc_g2_element", "stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326", null ],
@@ -34,7 +34,7 @@ var stabilization__indi_8c =
     [ "thrust_cb", "stabilization__indi_8c.html#ab252710595b60c7cdcf823af1d5590f6", null ],
     [ "acceleration_lowpass_filter", "stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943", null ],
     [ "act_dyn", "stabilization__indi_8c.html#a9eecf38f2d009f9875d9479aabfeb7dc", null ],
-    [ "act_is_servo", "stabilization__indi_8c.html#a350721e1950425aa1af7dec0b156263f", null ],
+    [ "act_is_servo", "stabilization__indi_8c.html#a3099f5d69f8b2b84a9b1f7685f325adb", null ],
     [ "act_is_thruster_x", "stabilization__indi_8c.html#a2ddbfc7a123648e3be3a39e9d6518670", null ],
     [ "act_is_thruster_z", "stabilization__indi_8c.html#a80f3d04328aa2091889d0d302a53088b", null ],
     [ "act_obs", "stabilization__indi_8c.html#a91303701bcea4829efbe57687746fb3d", null ],

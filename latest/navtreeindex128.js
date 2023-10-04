@@ -1,6 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm":[1,28,1,0],
 "module__ahrs_float_invariant.html":[1,29],
 "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant":[1,29,1],
 "module__ahrs_float_invariant.html#module_load_example__ahrs_float_invariant":[1,29,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX128 =
 "module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger":[1,355,2,0],
 "module__charge_sens.html":[1,264],
 "module__charge_sens.html#functions__charge_sens":[1,264,1],
-"module__charge_sens.html#module_load_example__charge_sens":[1,264,0]
+"module__charge_sens.html#module_load_example__charge_sens":[1,264,0],
+"module__charge_sens.html#module_xml__charge_sens":[1,264,1,0]
 };

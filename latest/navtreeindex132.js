@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__ins_arduimu.html#functions__ins_arduimu":[1,216,1],
 "module__ins_arduimu.html#module_load_example__ins_arduimu":[1,216,0],
 "module__ins_arduimu.html#module_xml__ins_arduimu":[1,216,1,0],
 "module__ins_arduimu_basic.html":[1,217],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__mavlink.html":[1,101],
 "module__mavlink.html#configuration__mavlink":[1,101,1],
 "module__mavlink.html#functions__mavlink":[1,101,2],
-"module__mavlink.html#module_load_example__mavlink":[1,101,0]
+"module__mavlink.html#module_load_example__mavlink":[1,101,0],
+"module__mavlink.html#module_xml__mavlink":[1,101,2,0]
 };

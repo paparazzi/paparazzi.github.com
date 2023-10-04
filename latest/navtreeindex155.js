@@ -1,6 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"nps__sensor__baro_8h.html#structNpsSensorBaro":[12,0,1,1,1,40,0],
 "nps__sensor__baro_8h_source.html":[12,0,1,1,1,40],
 "nps__sensor__gps_8c.html":[12,0,1,1,1,41],
 "nps__sensor__gps_8c.html#a40c4a8c2522582017498b101e5d476ef":[12,0,1,1,1,41,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX155 =
 "nucleo144__f767zi_8h.html#a678c1093263b0645488de5a1a5f35e1a":[12,0,1,0,1,17,0,2,34],
 "nucleo144__f767zi_8h.html#a68386681137ae699e3b594ade89408c1":[12,0,1,0,1,17,0,2,124],
 "nucleo144__f767zi_8h.html#a689995b3ffce4727831c630e0c144b5e":[12,0,1,0,1,17,0,2,95],
-"nucleo144__f767zi_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1":[12,0,1,0,1,17,0,2,144]
+"nucleo144__f767zi_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1":[12,0,1,0,1,17,0,2,144],
+"nucleo144__f767zi_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,1,17,0,2,2]
 };

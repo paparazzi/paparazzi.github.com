@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('module__stabilization_indi.html',''); 
 <h1><a class="anchor" id="module_load_example__stabilization_indi"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_indi&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;TILT_TWIST_CTRL&quot; value=&quot;FALSE|TRUE&quot; /&gt;\n\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;INDI_OUTPUTS&quot; default=&quot;4&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;INDI_NUM_ACT&quot; default=&quot;4&quot; /&gt;\n\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -103,6 +104,12 @@ Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>INDI_OUTPUTS</code> <b>value:</b> <em>None</em></li>
 <li><b>name:</b> <code>INDI_NUM_ACT</code> <b>value:</b> <em>None</em></li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>TILT_TWIST_CTRL</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: assume twist is slower than tilt and solve separately</li>
 </ul>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
@@ -119,6 +126,8 @@ Airframe file section</h2>
 </ul>
 </li>
 <li><b>section</b> name: <code>STABILIZATION_ATTITUDE_INDI</code> prefix: <code>STABILIZATION_INDI_</code> <ul>
+<li><b>name</b> <code>ALLOCATION_PSEUDO_INVERSE</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: Master setting: leave false for WLS allocation, and use TRUE if not overactuated and no WLS</li>
 <li><b>name</b> <code>G1_ROLL</code> <b>value:</b> <em>{20 , -20, -20 , 20 }</em> <br  />
  Description: control effectiveness of every actuator on the roll axis</li>
 <li><b>name</b> <code>G1_PITCH</code> <b>value:</b> <em>{14 , 14, -14 , -14 }</em> <br  />
@@ -145,6 +154,8 @@ Airframe file section</h2>
  Description: max yaw rate</li>
 <li><b>name</b> <code>FILT_CUTOFF</code> <b>value:</b> <em>8.0</em> <br  />
  Description: second order cutoff frequency for angular accelerations in Hz</li>
+<li><b>name</b> <code>FILTER_RATES_SECOND_ORDER</code> <b>value:</b> <em>FALSE|TRUE</em> <br  />
+ Description: use second order rate filters instead of first order</li>
 <li><b>name</b> <code>STABILIZATION_INDI_FILT_CUTOFF_P</code> <b>value:</b> <em>20.0</em> <br  />
  Description: First order cutoff freq for angular rate in Hz</li>
 <li><b>name</b> <code>STABILIZATION_INDI_FILT_CUTOFF_Q</code> <b>value:</b> <em>20.0</em> <br  />
@@ -157,6 +168,8 @@ Airframe file section</h2>
  Description: actuator dynamics</li>
 <li><b>name</b> <code>ACT_IS_SERVO</code> <b>value:</b> <em>{0,0,0,0}</em> <br  />
  Description: 1 for every actuator that is a servo</li>
+<li><b>name</b> <code>ACT_IS_THRUSTER_X</code> <b>value:</b> <em>{0,0,0,0}</em> <br  />
+ Description: 1 for every actuator that is a thruster in the body-x direction</li>
 <li><b>name</b> <code>ACT_RATE_LIMIT</code> <b>value:</b> <em>{9600,9600,9600,9600}</em> <br  />
  Description: rate limit in PPRZ units per timestep (depends on control frequency)</li>
 <li><b>name</b> <code>ACT_PREF</code> <b>value:</b> <em>{0.0, 0.0, 0.0, 0.0}</em> <br  />
@@ -165,6 +178,10 @@ Airframe file section</h2>
  Description: enable adaptive gains</li>
 <li><b>name</b> <code>ADAPTIVE_MU</code> <b>value:</b> <em>0.0001</em> <br  />
  Description: adaptation parameter</li>
+<li><b>name</b> <code>WLS_PRIORITIES</code> <b>value:</b> <em>{1000, 1000, 1, 100, 100}</em> <br  />
+ Description: WLS control objective priorities: roll, pitch, thrust, yaw, thrust_x</li>
+<li><b>name</b> <code>WLS_WU</code> <b>value:</b> <em>{1, 1, 1, 1}</em> <br  />
+ Description: WLS actuator cost (size of INDI_NUM_ACT)</li>
 </ul>
 </li>
 </ul>
@@ -203,13 +220,17 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_OUTPUTS&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;4&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_NUM_ACT&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;4&quot;</span>/&gt;</div>
 <div class="line"> </div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TILT_TWIST_CTRL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;assume twist is slower than tilt and solve separately&quot;</span>/&gt;</div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;RC_SETPOINT&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;STABILIZATION_ATTITUDE_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SP_MAX_PHI&quot;</span>   <span class="keyword">value</span>=<span class="stringliteral">&quot;45.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max setpoint for roll angle&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SP_MAX_THETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;45.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max setpoint for pitch angle&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SP_MAX_R&quot;</span>     <span class="keyword">value</span>=<span class="stringliteral">&quot;90.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max setpoint for yaw rate&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;deg/s&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DEADBAND_R&quot;</span>   <span class="keyword">value</span>=<span class="stringliteral">&quot;250&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;deadband on yaw rate input&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_ATTITUDE_INDI&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;STABILIZATION_INDI_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ALLOCATION_PSEUDO_INVERSE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Master setting: leave false for WLS allocation, and use TRUE if not overactuated and no WLS&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;G1_ROLL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{20 , -20, -20 , 20 }&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;control effectiveness of every actuator on the roll axis&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;G1_PITCH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{14 , 14, -14 , -14 }&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;control effectiveness of every actuator on the pitch axis&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;G1_YAW&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{-1, 1, -1, 1}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;control effectiveness of every actuator on the yaw axis&quot;</span>/&gt;</div>
@@ -223,16 +244,20 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;REF_RATE_R&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;28.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;INDI gains linear controller&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_R&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;120.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;max yaw rate&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;deg/s&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILT_CUTOFF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;8.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;second order cutoff frequency for angular accelerations in Hz&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FILTER_RATES_SECOND_ORDER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;use second order rate filters instead of first order&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_INDI_FILT_CUTOFF_P&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;First order cutoff freq for angular rate in Hz&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_INDI_FILT_CUTOFF_Q&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;First order cutoff freq for angular rate in Hz&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_INDI_FILT_CUTOFF_R&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;20.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;First order cutoff freq for angular rate in Hz&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ESTIMATION_FILT_CUTOFF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;8.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;second order cutoff parameter&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_DYN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{0.1, 0.1, 0.1, 0.1}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;actuator dynamics&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_IS_SERVO&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{0,0,0,0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;1 for every actuator that is a servo&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_IS_THRUSTER_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{0,0,0,0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;1 for every actuator that is a thruster in the body-x direction&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_RATE_LIMIT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{9600,9600,9600,9600}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;rate limit in PPRZ units per timestep (depends on control frequency)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACT_PREF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{0.0, 0.0, 0.0, 0.0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;preferred (low energy) actuator value. Important when the system is over-determined!&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ADAPTIVE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;enable adaptive gains&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ADAPTIVE_MU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.0001&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;adaptation parameter&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_PRIORITIES&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1000, 1000, 1, 100, 100}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;WLS control objective priorities: roll, pitch, thrust, yaw, thrust_x&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;WLS_WU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1, 1, 1, 1}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;WLS actuator cost (size of INDI_NUM_ACT)&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -275,7 +300,7 @@ Raw stabilization_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Oct 3 2023 10:56:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 4 2023 06:27:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

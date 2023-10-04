@@ -1,6 +1,5 @@
 var NAVTREEINDEX209 =
 {
-"tawaki_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,21,0,0,1,192],
 "tawaki_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,21,0,0,1,1],
 "tawaki_8h.html#a402c216e512bc4a39616400af32b7c7f":[12,0,1,0,1,21,0,0,1,209],
 "tawaki_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,21,0,0,1,55],
@@ -249,5 +248,6 @@ var NAVTREEINDEX209 =
 "telemetry__common_8h.html#structperiodic__telemetry":[12,0,1,0,6,14,31,1],
 "telemetry__common_8h.html#structtelemetry__cb__slots":[12,0,1,0,6,14,31,0],
 "telemetry__common_8h_source.html":[12,0,1,0,6,14,31],
-"temp__adc_8c.html":[12,0,1,0,6,60,77]
+"temp__adc_8c.html":[12,0,1,0,6,60,77],
+"temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119":[12,0,1,0,6,60,77,7]
 };

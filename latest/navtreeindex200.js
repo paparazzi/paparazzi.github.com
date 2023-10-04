@@ -1,6 +1,5 @@
 var NAVTREEINDEX200 =
 {
-"stm32_2peripherals_2hmc5843__arch_8h_source.html":[12,0,1,0,0,3,2,1],
 "stm32_2peripherals_2max1168__arch_8c.html":[12,0,1,0,0,3,2,2],
 "stm32_2peripherals_2max1168__arch_8c.html#a40747dba0f93159403e51109a87575fd":[12,0,1,0,0,3,2,2,0],
 "stm32_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2":[12,0,1,0,0,3,2,2,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX200 =
 "swashplate__mixing_8h.html#acb5fda24765f4e23eadda871c3684b76":[12,0,1,0,6,33,1,9],
 "swashplate__mixing_8h.html#ad447670ce4543175271869b8233a46a0":[12,0,1,0,6,33,1,2],
 "swashplate__mixing_8h.html#ad7175326e6f7d5009563768413d5919f":[12,0,1,0,6,33,1,0,1],
-"swashplate__mixing_8h.html#af748c76a5f7dea790bb305c6378877a7":[12,0,1,0,6,33,1,1]
+"swashplate__mixing_8h.html#af748c76a5f7dea790bb305c6378877a7":[12,0,1,0,6,33,1,1],
+"swashplate__mixing_8h.html#structswashplate__mixing__t":[12,0,1,0,6,33,1,0]
 };

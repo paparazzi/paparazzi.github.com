@@ -1,6 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__mavlink.html#module_xml__mavlink":[1,101,2,0],
 "module__mavlink_decoder.html":[1,102],
 "module__mavlink_decoder.html#configuration__mavlink_decoder":[1,102,1],
 "module__mavlink_decoder.html#functions__mavlink_decoder":[1,102,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX133 =
 "module__osd_max7456.html#module_xml__osd_max7456":[1,461,2,0],
 "module__pano_unwrap.html":[1,462],
 "module__pano_unwrap.html#configuration__pano_unwrap":[1,462,1],
-"module__pano_unwrap.html#functions__pano_unwrap":[1,462,2]
+"module__pano_unwrap.html#functions__pano_unwrap":[1,462,2],
+"module__pano_unwrap.html#module_load_example__pano_unwrap":[1,462,0]
 };

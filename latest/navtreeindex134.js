@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__pano_unwrap.html#module_load_example__pano_unwrap":[1,462,0],
 "module__pano_unwrap.html#module_xml__pano_unwrap":[1,462,2,0],
 "module__pca9685.html":[1,463],
 "module__pca9685.html#functions__pca9685":[1,463,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX134 =
 "module__stabilization_rate.html#module_xml__stabilization_rate":[1,414,2,0],
 "module__stabilization_rate_indi.html":[1,415],
 "module__stabilization_rate_indi.html#functions__stabilization_rate_indi":[1,415,1],
-"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,415,0]
+"module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi":[1,415,0],
+"module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi":[1,415,1,0]
 };
