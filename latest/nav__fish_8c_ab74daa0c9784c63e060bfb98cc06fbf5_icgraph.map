@@ -1,11 +1,20 @@
 <map id="sign" name="sign">
-<area shape="rect" id="node1" title="sign function" alt="" coords="841,56,891,83"/>
-<area shape="rect" id="node2" href="$gec__dl_8c.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="642,5,787,32"/>
-<area shape="rect" id="node4" href="$nav__spiral__3D_8c.html#a34178cf2e3c93db5e920bb496f7d7cae" title="Initialize spiral 3D based on:" alt="" coords="636,56,793,83"/>
-<area shape="rect" id="node5" href="$nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav" alt="" coords="657,107,773,133"/>
-<area shape="rect" id="node3" href="$gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="459,5,567,32"/>
-<area shape="rect" id="node6" href="$nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs" alt="" coords="439,81,588,108"/>
-<area shape="rect" id="node9" href="$nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his" alt="" coords="441,132,586,159"/>
-<area shape="rect" id="node7" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="216,107,391,133"/>
-<area shape="rect" id="node8" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="5,107,168,133"/>
+<area shape="rect" id="node1" title="sign function" alt="" coords="996,157,1045,184"/>
+<area shape="rect" id="node2" href="$airspeed__uavcan_8c.html#a2c7c26b91476cf3e0c4d1eef627ee637" title=" " alt="" coords="744,17,943,44"/>
+<area shape="rect" id="node4" href="$air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure." alt="" coords="739,81,948,108"/>
+<area shape="rect" id="node10" href="$gec__dl_8c.html#a42846e875eaa39617e27780db81909bb" title="Process incoming message (expected MSG3) if the right (KEY_EXCHANGE) message received with the right ..." alt="" coords="771,132,916,159"/>
+<area shape="rect" id="node12" href="$airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca" title=" " alt="" coords="771,183,915,209"/>
+<area shape="rect" id="node13" href="$nav__spiral__3D_8c.html#a34178cf2e3c93db5e920bb496f7d7cae" title="Initialize spiral 3D based on:" alt="" coords="765,233,922,260"/>
+<area shape="rect" id="node14" href="$nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav" alt="" coords="785,284,901,311"/>
+<area shape="rect" id="node3" href="$airspeed__uavcan_8c.html#add8fef6742f9898bfb3c6ea203df890f" title=" " alt="" coords="507,5,667,32"/>
+<area shape="rect" id="node5" href="$air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title=" " alt="" coords="523,56,651,83"/>
+<area shape="rect" id="node7" href="$air__data_8c.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure." alt="" coords="484,107,691,133"/>
+<area shape="rect" id="node6" href="$air__data_8c.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization." alt="" coords="297,56,400,83"/>
+<area shape="rect" id="node8" href="$ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title=" " alt="" coords="285,107,413,133"/>
+<area shape="rect" id="node9" href="$ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function." alt="" coords="5,107,213,133"/>
+<area shape="rect" id="node11" href="$gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="533,157,641,184"/>
+<area shape="rect" id="node15" href="$nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs" alt="" coords="513,259,662,285"/>
+<area shape="rect" id="node18" href="$nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his" alt="" coords="515,309,660,336"/>
+<area shape="rect" id="node16" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state" alt="" coords="261,284,436,311"/>
+<area shape="rect" id="node17" href="$nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="28,284,191,311"/>
 </map>

@@ -2,7 +2,6 @@ var airspeed__ms45xx__i2c_8c =
 [
     [ "AUTOSET_NB_MAX", "airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501", null ],
     [ "InH2O_TO_PA", "airspeed__ms45xx__i2c_8c.html#a1e6d30c4805726ddb0ca103bd977a7ec", null ],
-    [ "MS45XX_AIRSPEED_SCALE", "airspeed__ms45xx__i2c_8c.html#a0653ab87779d024f8e2974d7f5278cff", null ],
     [ "MS45XX_I2C_ADDR", "airspeed__ms45xx__i2c_8c.html#a566b35ebe72a508fb5c0d3a307e53773", null ],
     [ "MS45XX_I2C_DEV", "airspeed__ms45xx__i2c_8c.html#a3723de8b0fa913e00bb51cf175fbc10c", null ],
     [ "MS45XX_LOWPASS_TAU", "airspeed__ms45xx__i2c_8c.html#a0e66f9da0ae757d8312ddc3e12e2b78d", null ],
@@ -12,6 +11,7 @@ var airspeed__ms45xx__i2c_8c =
     [ "MS45XX_PRESSURE_RANGE", "airspeed__ms45xx__i2c_8c.html#a290e8bdfa317a6b511add38211c4bbd9", null ],
     [ "MS45XX_PRESSURE_SCALE", "airspeed__ms45xx__i2c_8c.html#adae5e5e9d5cdb17b0d994261a8d57a1f", null ],
     [ "MS45XX_PRESSURE_TYPE", "airspeed__ms45xx__i2c_8c.html#a7761b57fc68d5793ad3c3ea2edab6cbc", null ],
+    [ "MS45XX_RHO_DIV_2", "airspeed__ms45xx__i2c_8c.html#a1920ee505e0c47884b5faf94dba0aac0", null ],
     [ "OutputPressureToPa", "airspeed__ms45xx__i2c_8c.html#a09255b3c584ad61082cacfbfceb7bb23", null ],
     [ "PSI_TO_PA", "airspeed__ms45xx__i2c_8c.html#a5539516b0ec6e66ff476abf13a585b3a", null ],
     [ "USE_AIRSPEED_LOWPASS_FILTER", "airspeed__ms45xx__i2c_8c.html#ae4db6d792956c6002d91d931d0beab12", null ],
