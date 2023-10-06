@@ -2,6 +2,8 @@ var dir_94757629c544be2d6d24b01569be56e6 =
 [
     [ "approach_moving_target.c", "approach__moving__target_8c.html", "approach__moving__target_8c" ],
     [ "approach_moving_target.h", "approach__moving__target_8h.html", "approach__moving__target_8h" ],
+    [ "ctrl_eff_sched_rot_wing.c", "ctrl__eff__sched__rot__wing_8c.html", "ctrl__eff__sched__rot__wing_8c" ],
+    [ "ctrl_eff_sched_rot_wing.h", "ctrl__eff__sched__rot__wing_8h.html", "ctrl__eff__sched__rot__wing_8h" ],
     [ "ctrl_effectiveness_scheduling.c", "ctrl__effectiveness__scheduling_8c.html", "ctrl__effectiveness__scheduling_8c" ],
     [ "ctrl_effectiveness_scheduling.h", "ctrl__effectiveness__scheduling_8h.html", "ctrl__effectiveness__scheduling_8h" ],
     [ "ctrl_module_innerloop_demo.c", "ctrl__module__innerloop__demo_8c.html", "ctrl__module__innerloop__demo_8c" ],

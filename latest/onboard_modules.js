@@ -564,6 +564,13 @@ var onboard_modules =
         [ "Raw approach_moving_target.xml file:", "module__approach_moving_target.html#module_xml__approach_moving_target", null ]
       ] ]
     ] ],
+    [ "ctrl_eff_sched_rot_wing module", "module__ctrl_eff_sched_rot_wing.html", [
+      [ "Example for airframe file", "module__ctrl_eff_sched_rot_wing.html#module_load_example__ctrl_eff_sched_rot_wing", null ],
+      [ "Module configuration options", "module__ctrl_eff_sched_rot_wing.html#configuration__ctrl_eff_sched_rot_wing", null ],
+      [ "Module functions", "module__ctrl_eff_sched_rot_wing.html#functions__ctrl_eff_sched_rot_wing", [
+        [ "Raw ctrl_eff_sched_rot_wing.xml file:", "module__ctrl_eff_sched_rot_wing.html#module_xml__ctrl_eff_sched_rot_wing", null ]
+      ] ]
+    ] ],
     [ "ctrl_effectiveness_scheduling module", "module__ctrl_effectiveness_scheduling.html", [
       [ "Example for airframe file", "module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling", null ],
       [ "Module functions", "module__ctrl_effectiveness_scheduling.html#functions__ctrl_effectiveness_scheduling", [

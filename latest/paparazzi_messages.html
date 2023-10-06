@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#WINDTURBINE_STATUS_">WINDTURBINE_STATUS_ (ID 50)</a></li>
 <li class="level2"><a href="#RC_3CH_">RC_3CH_ (ID 51)</a></li>
 <li class="level2"><a href="#MPPT">MPPT (ID 52)</a></li>
-<li class="level2"><a href="#DEBUG_IR_I2C">DEBUG_IR_I2C (ID 53)</a></li>
+<li class="level2"><a href="#DEBUG_VECT">DEBUG_VECT (ID 53)</a></li>
 <li class="level2"><a href="#AIRSPEED">AIRSPEED (ID 54)</a></li>
 <li class="level2"><a href="#METEO_STICK">METEO_STICK (ID 55)</a></li>
 <li class="level2"><a href="#BARO_ETS">BARO_ETS (ID 56)</a></li>
@@ -267,6 +267,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#AHRS_GYRO_BIAS_INT">AHRS_GYRO_BIAS_INT (ID 178)</a></li>
 <li class="level2"><a href="#AEROPROBE">AEROPROBE (ID 179)</a></li>
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
+<li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -1320,17 +1321,15 @@ MPPT (ID 52)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">values   </td><td class="markdownTableBodyNone">int16[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="DEBUG_IR_I2C"></a>
-DEBUG_IR_I2C (ID 53)</h2>
+<h2><a class="anchor" id="DEBUG_VECT"></a>
+DEBUG_VECT (ID 53)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ir1   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">adc   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">name   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ir2   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">adc   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">top   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone">adc   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">vector   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="AIRSPEED"></a>
 AIRSPEED (ID 54)</h2>
@@ -3733,6 +3732,24 @@ FMS_TIME (ID 180)</h2>
 <td class="markdownTableBodyNone">tv_nsec   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">delay_ns   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="ROTATING_WING_STATE"></a>
+ROTATING_WING_STATE (ID 181)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">current_state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">QUAD, SKEW, FW_THRUST, FW_IDLE, FW, FREE   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">desired_state   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">QUAD, SKEW, FW_THRUST, FW_IDLE, FW, FREE   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">wing_angle_deg   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">wing_angle_deg_sp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ADC_position   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pprz_cmd   </td><td class="markdownTableBodyNone">int32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="DOUBLET"></a>
 DOUBLET (ID 183)</h2>
@@ -6765,7 +6782,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 5 2023 19:25:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 6 2023 12:10:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
