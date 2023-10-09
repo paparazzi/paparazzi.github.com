@@ -13,7 +13,7 @@ var notch__filter__float_8h =
       [ "yn2", "notch__filter__float_8h.html#aa71bf2af738f6f2e6faaff7460e06c4e", null ],
       [ "yn2", "notch__filter__float_8h.html#a233a5099e9a34b0be7f2887f0f279b13", null ]
     ] ],
-    [ "notch_filter_get_output", "notch__filter__float_8h.html#a0eacf9b3cefbd4200ea8f78caed5faa2", null ],
+    [ "notch_filter_get_output", "notch__filter__float_8h.html#af33ac8a9ce4baa116149d7af4ced85eb", null ],
     [ "notch_filter_init", "notch__filter__float_8h.html#af50ebbdb691b29bda4339609b8c7a2ad", null ],
     [ "notch_filter_set_bandwidth", "notch__filter__float_8h.html#af0a68017635e730c83735978e2bf859a", null ],
     [ "notch_filter_set_filter_frequency", "notch__filter__float_8h.html#ab052430d9c7810e7aa7f4172abeedd66", null ],

@@ -1,5 +1,9 @@
 var rc__datalink_8h =
 [
+    [ "RADIO_AUX1", "rc__datalink_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18", null ],
+    [ "RADIO_AUX2", "rc__datalink_8h.html#a9fd86154b023cbc8a9981059db36497b", null ],
+    [ "RADIO_AUX4", "rc__datalink_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c", null ],
+    [ "RADIO_AUX6", "rc__datalink_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465", null ],
     [ "RADIO_MODE", "rc__datalink_8h.html#a2fab1464ab1748edb2a45a08cf7c422a", null ],
     [ "RADIO_PITCH", "rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023", null ],
     [ "RADIO_ROLL", "rc__datalink_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f", null ],

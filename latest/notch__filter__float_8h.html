@@ -136,9 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a07f9739ad734f4b0bc5e43d6a833a4b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0">notch_filter_update</a> (struct <a class="el" href="notch__filter__float_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, float *input_signal, float *output_signal)</td></tr>
 <tr class="memdesc:a07f9739ad734f4b0bc5e43d6a833a4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notch filter propagate.  <a href="notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0">More...</a><br /></td></tr>
 <tr class="separator:a07f9739ad734f4b0bc5e43d6a833a4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eacf9b3cefbd4200ea8f78caed5faa2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter__float_8h.html#a0eacf9b3cefbd4200ea8f78caed5faa2">notch_filter_get_output</a> (struct notch_filter_float *filter)</td></tr>
-<tr class="memdesc:a0eacf9b3cefbd4200ea8f78caed5faa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get notch filter output.  <a href="notch__filter__float_8h.html#a0eacf9b3cefbd4200ea8f78caed5faa2">More...</a><br /></td></tr>
-<tr class="separator:a0eacf9b3cefbd4200ea8f78caed5faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33ac8a9ce4baa116149d7af4ced85eb"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter__float_8h.html#af33ac8a9ce4baa116149d7af4ced85eb">notch_filter_get_output</a> (struct <a class="el" href="notch__filter__float_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter)</td></tr>
+<tr class="memdesc:af33ac8a9ce4baa116149d7af4ced85eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get notch filter output.  <a href="notch__filter__float_8h.html#af33ac8a9ce4baa116149d7af4ced85eb">More...</a><br /></td></tr>
+<tr class="separator:af33ac8a9ce4baa116149d7af4ced85eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50ebbdb691b29bda4339609b8c7a2ad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter__float_8h.html#af50ebbdb691b29bda4339609b8c7a2ad">notch_filter_init</a> (struct <a class="el" href="notch__filter__float_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, float cutoff_frequency, float bandwidth, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sample_frequency)</td></tr>
 <tr class="memdesc:af50ebbdb691b29bda4339609b8c7a2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize second order notch filter.  <a href="notch__filter__float_8h.html#af50ebbdb691b29bda4339609b8c7a2ad">More...</a><br /></td></tr>
 <tr class="separator:af50ebbdb691b29bda4339609b8c7a2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,8 +230,8 @@ yn2</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0eacf9b3cefbd4200ea8f78caed5faa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eacf9b3cefbd4200ea8f78caed5faa2">&#9670;&nbsp;</a></span>notch_filter_get_output()</h2>
+<a id="af33ac8a9ce4baa116149d7af4ced85eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33ac8a9ce4baa116149d7af4ced85eb">&#9670;&nbsp;</a></span>notch_filter_get_output()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ yn2</td>
         <tr>
           <td class="memname">static float notch_filter_get_output </td>
           <td>(</td>
-          <td class="paramtype">struct notch_filter_float *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="notch__filter__float_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *&#160;</td>
           <td class="paramname"><em>filter</em></td><td>)</td>
           <td></td>
         </tr>
@@ -264,6 +264,8 @@ yn2</td>
 <dl class="section return"><dt>Returns</dt><dd>Laterst filtered value </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="notch__filter__float_8h_source.html#l00104">104</a> of file <a class="el" href="notch__filter__float_8h_source.html">notch_filter_float.h</a>.</p>
+
+<p class="reference">References <a class="el" href="notch__filter_8h_source.html#l00038">SecondOrderNotchFilter::yn1</a>.</p>
 
 </div>
 </div>
@@ -593,7 +595,7 @@ yn2</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="notch__filter__float_8h.html">notch_filter_float.h</a></li>
-    <li class="footer">Generated on Fri Oct 6 2023 12:10:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 06:12:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

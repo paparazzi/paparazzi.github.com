@@ -1,5 +1,9 @@
 var NAVTREEINDEX191 =
 {
+"sdlog__chibios_8h.html#ab3743782ef6657c3fa7aceaff33bed1d":[12,0,1,0,6,41,21,2],
+"sdlog__chibios_8h.html#ad094fe3bc7f2da71d85d09484e25bfe6":[12,0,1,0,6,41,21,4],
+"sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a":[12,0,1,0,6,41,21,7],
+"sdlog__chibios_8h.html#structchibios__sdlog":[12,0,1,0,6,41,21,0],
 "sdlog__chibios_8h_source.html":[12,0,1,0,6,41,21],
 "sdlogger__spi__direct_8c.html":[12,0,1,0,6,41,22],
 "sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5":[12,0,1,0,6,41,22,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX191 =
 "shift__tracking_8h.html#afb9dd7379c32321b353d58dc8a60d970":[12,0,1,0,6,13,29,5],
 "shift__tracking_8h.html#structshift__tracking__t":[12,0,1,0,6,13,29,0],
 "shift__tracking_8h_source.html":[12,0,1,0,6,13,29],
-"sim_2led__hw_8c.html":[12,0,1,0,0,2,4],
-"sim_2led__hw_8c.html#a72d6c5ad3334b9f845e8a94ad99af511":[12,0,1,0,0,2,4,1],
-"sim_2led__hw_8c.html#a7c1ace06f3ca4d5712b23671a38424bc":[12,0,1,0,0,2,4,0],
-"sim_2led__hw_8c.html#aa2f024804847d7447b49616f4935e903":[12,0,1,0,0,2,4,4],
-"sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886":[12,0,1,0,0,2,4,3]
+"sim_2led__hw_8c.html":[12,0,1,0,0,2,4]
 };
