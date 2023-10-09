@@ -15,6 +15,7 @@ var optical__flow__landing_8h_structOpticalFlowLanding =
     [ "divergence", "optical__flow__landing_8h.html#aa687bc83e2cb282b099fa59f6589c11f", null ],
     [ "divergence_setpoint", "optical__flow__landing_8h.html#a74a182d3b575454ab7b7b3aa4c854044", null ],
     [ "elc_oscillate", "optical__flow__landing_8h.html#a82fa8cf603952d328b8238c966c8cb00", null ],
+    [ "front_div_threshold", "optical__flow__landing_8h.html#a3f06c4c9892deedab0591018289df4db", null ],
     [ "igain", "optical__flow__landing_8h.html#a0aa113a5ef979045542fe39aeb226e2c", null ],
     [ "igain_adaptive", "optical__flow__landing_8h.html#a1ef5923b467e6b890a11c8f1e4b6f803", null ],
     [ "igain_horizontal_factor", "optical__flow__landing_8h.html#ac081fa7e437c990d0fcb9fb558fd995b", null ],

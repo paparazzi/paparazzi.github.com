@@ -113,50 +113,51 @@ $(document).ready(function(){initNavTree('mt9v117_8h_source.html',''); initResiz
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i2c_8h.html">mcu_periph/i2c.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef MT9V117_TARGET_FPS</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a108882022c0a1efd7b85638cc4fb375a">   35</a></span>&#160;<span class="preprocessor">#define MT9V117_TARGET_FPS 0</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// parameters for undistortion, defaults are rough estimates</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef MT9V117_FOCAL_X</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a1cafc0e1693a202b10c1e36f4d6fee5a">   40</a></span>&#160;<span class="preprocessor">#define MT9V117_FOCAL_X 307.f</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef MT9V117_FOCAL_Y</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#acfbd7d02dcda2c63eabb888c8a79f729">   43</a></span>&#160;<span class="preprocessor">#define MT9V117_FOCAL_Y 307.f</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifndef MT9V117_CENTER_X</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a231e67d55f42f636ccdb8dd107cfb817">   46</a></span>&#160;<span class="preprocessor">#define MT9V117_CENTER_X 120.f</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifndef MT9V117_CENTER_Y</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a0c9205c4ec3dc158f72e1b1c29a36a40">   49</a></span>&#160;<span class="preprocessor">#define MT9V117_CENTER_Y 120.f</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef MT9V117_DHANE_K</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a12a181a479f894f21f2539dd898e806c">   52</a></span>&#160;<span class="preprocessor">#define MT9V117_DHANE_K 1.f</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifndef MT9V117_TARGET_LUMA</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a96668dc486fcd9487b64955af9f284c9">   55</a></span>&#160;<span class="preprocessor">#define MT9V117_TARGET_LUMA 18000</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="mt9v117_8h.html">   58</a></span>&#160;<span class="keyword">struct </span><a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> {</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">   59</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="code" href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">i2c_periph</a>;      </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> <a class="code" href="mt9v117_8h.html#a3f99c34d6091dadfe023149659bc9588">i2c_trans</a>;   </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> <a class="code" href="mt9v117_8h.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117_init</a>(<span class="keyword">struct</span> <a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MT9V117_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Camera parameters are defined in sections</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef MT9V117_TARGET_FPS</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a108882022c0a1efd7b85638cc4fb375a">   36</a></span>&#160;<span class="preprocessor">#define MT9V117_TARGET_FPS 0</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// parameters for undistortion, defaults are rough estimates</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef MT9V117_FOCAL_X</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a1cafc0e1693a202b10c1e36f4d6fee5a">   41</a></span>&#160;<span class="preprocessor">#define MT9V117_FOCAL_X 307.f</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef MT9V117_FOCAL_Y</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#acfbd7d02dcda2c63eabb888c8a79f729">   44</a></span>&#160;<span class="preprocessor">#define MT9V117_FOCAL_Y 307.f</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifndef MT9V117_CENTER_X</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a231e67d55f42f636ccdb8dd107cfb817">   47</a></span>&#160;<span class="preprocessor">#define MT9V117_CENTER_X 120.f</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifndef MT9V117_CENTER_Y</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a0c9205c4ec3dc158f72e1b1c29a36a40">   50</a></span>&#160;<span class="preprocessor">#define MT9V117_CENTER_Y 120.f</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef MT9V117_DHANE_K</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a12a181a479f894f21f2539dd898e806c">   53</a></span>&#160;<span class="preprocessor">#define MT9V117_DHANE_K 1.f</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef MT9V117_TARGET_LUMA</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#a96668dc486fcd9487b64955af9f284c9">   56</a></span>&#160;<span class="preprocessor">#define MT9V117_TARGET_LUMA 18000</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="mt9v117_8h.html">   59</a></span>&#160;<span class="keyword">struct </span><a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">   60</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="code" href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">i2c_periph</a>;      </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> <a class="code" href="mt9v117_8h.html#a3f99c34d6091dadfe023149659bc9588">i2c_trans</a>;   </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> <a class="code" href="mt9v117_8h.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117_init</a>(<span class="keyword">struct</span> <a class="code" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> *mt);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MT9V117_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="agroup__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00144">i2c.h:144</a></div></div>
 <div class="ttc" id="agroup__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure.</div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API.</div></div>
-<div class="ttc" id="amt9v117_8h_html_a3f99c34d6091dadfe023149659bc9588"><div class="ttname"><a href="mt9v117_8h.html#a3f99c34d6091dadfe023149659bc9588">mt9v117_t::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdoc">I2C transaction for comminication with CMOS chip.</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00059">mt9v117.h:60</a></div></div>
-<div class="ttc" id="amt9v117_8h_html_aa6ecb42ade7b40f50bc3cf8f306583a7"><div class="ttname"><a href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117_init</a></div><div class="ttdeci">void mt9v117_init(struct mt9v117_t *mt)</div><div class="ttdoc">Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera)</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00381">mt9v117.c:381</a></div></div>
-<div class="ttc" id="amt9v117_8h_html_ab76941cf4283f9487eb879374379c752"><div class="ttname"><a href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">mt9v117_t::i2c_periph</a></div><div class="ttdeci">struct i2c_periph * i2c_periph</div><div class="ttdoc">I2C peripheral used to communicate over.</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00059">mt9v117.h:59</a></div></div>
-<div class="ttc" id="amt9v117_8h_html_af2aace6511d89f4676f13ec941992bd4"><div class="ttname"><a href="mt9v117_8h.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a></div><div class="ttdeci">struct mt9v117_t mt9v117</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00001">mt9v117.c:81</a></div></div>
-<div class="ttc" id="amt9v117_8h_html_structmt9v117__t"><div class="ttname"><a href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a></div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00058">mt9v117.h:58</a></div></div>
+<div class="ttc" id="amt9v117_8h_html_a3f99c34d6091dadfe023149659bc9588"><div class="ttname"><a href="mt9v117_8h.html#a3f99c34d6091dadfe023149659bc9588">mt9v117_t::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdoc">I2C transaction for comminication with CMOS chip.</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00060">mt9v117.h:61</a></div></div>
+<div class="ttc" id="amt9v117_8h_html_aa6ecb42ade7b40f50bc3cf8f306583a7"><div class="ttname"><a href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117_init</a></div><div class="ttdeci">void mt9v117_init(struct mt9v117_t *mt)</div><div class="ttdoc">Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera)</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00380">mt9v117.c:380</a></div></div>
+<div class="ttc" id="amt9v117_8h_html_ab76941cf4283f9487eb879374379c752"><div class="ttname"><a href="mt9v117_8h.html#ab76941cf4283f9487eb879374379c752">mt9v117_t::i2c_periph</a></div><div class="ttdeci">struct i2c_periph * i2c_periph</div><div class="ttdoc">I2C peripheral used to communicate over.</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00060">mt9v117.h:60</a></div></div>
+<div class="ttc" id="amt9v117_8h_html_af2aace6511d89f4676f13ec941992bd4"><div class="ttname"><a href="mt9v117_8h.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a></div><div class="ttdeci">struct mt9v117_t mt9v117</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00001">mt9v117.c:80</a></div></div>
+<div class="ttc" id="amt9v117_8h_html_structmt9v117__t"><div class="ttname"><a href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a></div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8h_source.html#l00059">mt9v117.h:59</a></div></div>
 <div class="ttc" id="astd_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -164,7 +165,7 @@ $(document).ready(function(){initNavTree('mt9v117_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="mt9v117_8h.html">mt9v117.h</a></li>
-    <li class="footer">Generated on Mon Oct 9 2023 06:12:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 06:39:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

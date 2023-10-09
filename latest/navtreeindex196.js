@@ -1,5 +1,11 @@
 var NAVTREEINDEX196 =
 {
+"stabilization__attitude__euler__int_8c.html":[12,0,1,0,3,2,1,6],
+"stabilization__attitude__euler__int_8c.html#a03d27593d891182c04fc5337766733d1":[12,0,1,0,3,2,1,6,12],
+"stabilization__attitude__euler__int_8c.html#a0a9d2b9bafb223dc523c3a8299033b27":[12,0,1,0,3,2,1,6,7],
+"stabilization__attitude__euler__int_8c.html#a12f569e84b2838005e3c28f4476971e9":[12,0,1,0,3,2,1,6,3],
+"stabilization__attitude__euler__int_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,1,6,11],
+"stabilization__attitude__euler__int_8c.html#a398bf301d18e16d629f977e75256f157":[12,0,1,0,3,2,1,6,23],
 "stabilization__attitude__euler__int_8c.html#a3dfdefa89d767c6a1872b18da76beddc":[12,0,1,0,3,2,1,6,17],
 "stabilization__attitude__euler__int_8c.html#a457dc37242ecee10254c28cb14d56ba7":[12,0,1,0,3,2,1,6,10],
 "stabilization__attitude__euler__int_8c.html#a4706f4ac6871f6a031332d22ad0ebf75":[12,0,1,0,3,2,1,6,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX196 =
 "stabilization__attitude__quat__int_8h.html#a77a2c3c819140951eaf37efd466dad14":[12,0,1,0,3,2,1,17,1],
 "stabilization__attitude__quat__int_8h.html#ac063c768be8e9a996e5567f16b9d11e4":[12,0,1,0,3,2,1,17,3],
 "stabilization__attitude__quat__int_8h.html#ac35da78e2b609bc9dff38d6f6b5b63f3":[12,0,1,0,3,2,1,17,6],
-"stabilization__attitude__quat__int_8h.html#acec5709f25760d7094e4f0c9bb5be2ec":[12,0,1,0,3,2,1,17,8],
-"stabilization__attitude__quat__int_8h_source.html":[12,0,1,0,3,2,1,17],
-"stabilization__attitude__quat__transformations_8c.html":[12,0,1,0,3,2,1,18],
-"stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d":[12,0,1,0,3,2,1,18,2],
-"stabilization__attitude__quat__transformations_8c.html#a781fdef7edec84ea09c1faf34d1316e8":[12,0,1,0,3,2,1,18,3],
-"stabilization__attitude__quat__transformations_8c.html#a875d6ee5cde39474c4ce13dd340cb262":[12,0,1,0,3,2,1,18,0],
-"stabilization__attitude__quat__transformations_8c.html#acfb3bfa8af4aebad848717cd26aa78ee":[12,0,1,0,3,2,1,18,1]
+"stabilization__attitude__quat__int_8h.html#acec5709f25760d7094e4f0c9bb5be2ec":[12,0,1,0,3,2,1,17,8]
 };

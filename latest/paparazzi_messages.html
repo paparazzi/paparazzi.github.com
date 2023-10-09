@@ -270,6 +270,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
+<li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
 <li class="level2"><a href="#IMU_GYRO">IMU_GYRO (ID 200)</a></li>
@@ -3805,6 +3806,54 @@ AHRS_LKF (ID 193)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
+<h2><a class="anchor" id="AIRSPEED_WIND_ESTIMATOR_EKF"></a>
+AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">u_est   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">v_est   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">w_est   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mu_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mu_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">mu_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">offset_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">offset_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">offset_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">healthy   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">crashes_n   </td><td class="markdownTableBodyNone">uint16   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">innov_V_gnd_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">innov_V_gnd_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">innov_V_gnd_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">innov_acc_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">innov_acc_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">innov_acc_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">innov_V_pitot   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">debug_1   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">debug_2   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">debug_3   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="NPS_SENSORS_SCALED"></a>
 NPS_SENSORS_SCALED (ID 197)</h2>
 <table class="markdownTable">
@@ -4256,7 +4305,9 @@ DIVERGENCE (ID 224)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">pused   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">gain used for control, includes the effect of the p-gain of adaptive control (-)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sonar   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">measurement from the sonar (mm)   </td></tr>
+<td class="markdownTableBodyNone">sonar   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">measurement from the sonar (mm)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">front_divergence   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">divergence from front cam   </td></tr>
 </table>
 <h2><a class="anchor" id="VIDEO_SYNC"></a>
 VIDEO_SYNC (ID 225)</h2>
@@ -6782,7 +6833,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 9 2023 06:12:57 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 06:39:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
