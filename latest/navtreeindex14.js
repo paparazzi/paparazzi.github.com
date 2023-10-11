@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"apogee__1_80_8h.html#a4c4ac4255adc99302a7ae7ad828a121c":[12,0,1,0,1,22,214],
 "apogee__1_80_8h.html#a4cfa16f44aa48e98a2dc81b7034ba1c0":[12,0,1,0,1,22,6],
 "apogee__1_80_8h.html#a4da08b59c725550efa312cf16ecdd77c":[12,0,1,0,1,22,201],
 "apogee__1_80_8h.html#a4e4f1c1886d0b984d1e0bb2c9b811a0d":[12,0,1,0,1,22,171],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ad50815fefeb8e69fa4c70dd71edd41d7":[12,0,1,0,0,2,1,2,1,1,4],
 "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902":[12,0,1,0,6,14,28,10,2],
 "arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902":[12,0,1,0,0,2,1,2,1,1,2],
-"arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86":[12,0,1,0,0,2,1,2,1,4],
-"arch_2sim_2modules_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec":[12,0,1,0,0,2,1,2,1,3]
+"arch_2sim_2modules_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86":[12,0,1,0,0,2,1,2,1,4]
 };

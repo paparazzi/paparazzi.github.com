@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"arch_2sim_2modules_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec":[12,0,1,0,0,2,1,2,1,3],
 "arch_2sim_2modules_2datalink_2superbitrf_8h.html#ae345f2ad961222da07a6be6d68a04ea6":[12,0,1,0,0,2,1,2,1,2],
 "arch_2sim_2modules_2datalink_2superbitrf_8h_source.html":[12,0,1,0,0,2,1,2,1],
 "arch_2sim_2modules_2ins_2ins__arduimu_8c.html":[12,0,1,0,0,2,1,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3c67e7916fb25db63abc69e018731041":[12,0,1,0,3,2,4,0,7],
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3c67e7916fb25db63abc69e018731041":[12,0,1,0,3,2,6,4,7],
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c":[12,0,1,0,3,2,4,0,9],
-"autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c":[12,0,1,0,3,2,6,4,9],
-"autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e":[12,0,1,0,3,2,4,0,12]
+"autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c":[12,0,1,0,3,2,6,4,9]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"baro__bmp_8c.html#ac61db1c8d70ce52b2e2192350c1a4cba":[12,0,1,0,6,60,28,4],
 "baro__bmp_8c.html#ac9e2f079b03497055001c48b6fdbe21a":[12,0,1,0,6,60,28,2],
 "baro__bmp_8c.html#acb0831c824befa3750689297f62d4024":[12,0,1,0,6,60,28,10],
 "baro__bmp_8c.html#ae0cc4ae973472e626fe06f314cbfa3ef":[12,0,1,0,6,60,28,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "bat__voltage__ardrone2_8c.html#a29f655da1d6e283a278fa280cc567b01":[12,0,1,0,6,60,52,1],
 "bat__voltage__ardrone2_8c.html#a4ac53f6381d5f6f4c68a9a25aa9c4d10":[12,0,1,0,6,60,52,2],
 "bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b":[12,0,1,0,6,60,52,3],
-"bat__voltage__ardrone2_8c.html#ab9af5b4a5c98f740f8a494b3e13b6b5c":[12,0,1,0,6,60,52,0],
-"bat__voltage__ardrone2_8c_source.html":[12,0,1,0,6,60,52]
+"bat__voltage__ardrone2_8c.html#ab9af5b4a5c98f740f8a494b3e13b6b5c":[12,0,1,0,6,60,52,0]
 };

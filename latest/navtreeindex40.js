@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"crazyflie_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,4,0,0,1,42],
 "crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69],
 "crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,4,0,0,1,109],
 "crazyflie_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0":[12,0,1,0,1,4,0,0,1,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "ctrl__eff__sched__rot__wing_8h.html#aa6b26464c2bd9cfeda43d4610167c6c6":[12,0,1,0,6,13,3,1,1],
 "ctrl__eff__sched__rot__wing_8h.html#ab8dcde54dfec82f4a9ee88a6eaa9ec7f":[12,0,1,0,6,13,3,1,5],
 "ctrl__eff__sched__rot__wing_8h.html#ac122cce6b57a3b628a0a94ccb622b341":[12,0,1,0,6,13,3,5],
-"ctrl__eff__sched__rot__wing_8h.html#ad0f3aaba927457d3bb0962a08c2f025d":[12,0,1,0,6,13,3,0,3],
-"ctrl__eff__sched__rot__wing_8h.html#ad2aa7d960c4d5fd18a662aa6f5aff9d1":[12,0,1,0,6,13,3,0,5]
+"ctrl__eff__sched__rot__wing_8h.html#ad0f3aaba927457d3bb0962a08c2f025d":[12,0,1,0,6,13,3,0,3]
 };

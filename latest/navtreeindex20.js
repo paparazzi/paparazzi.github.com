@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"avi__isp__statistics__yuv_8h.html#af00da8c4779b261c96f33b4e37e9e0f6":[12,0,1,0,1,2,0,0,16,6,0],
 "avi__isp__statistics__yuv_8h.html#af1f05de8fd66a23372b36c36e8992a8e":[12,0,1,0,1,2,0,0,16,48],
 "avi__isp__statistics__yuv_8h.html#af6307d536d286573028f24c19dc16b43":[12,0,1,0,1,2,0,0,16,16,2],
 "avi__isp__statistics__yuv_8h.html#af8ff20a366cb2832f086db89a9d4c7d3":[12,0,1,0,1,2,0,0,16,36],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9":[12,0,1,0,6,60,28,9],
 "baro__bmp_8c.html#aa5e236975231b4db2818cdc4c997fea0":[12,0,1,0,6,60,28,3],
 "baro__bmp_8c.html#ac156dfea2a80620e6fbe7fe87b3cd19f":[12,0,1,0,6,60,28,1],
-"baro__bmp_8c.html#ac176f0c0c16d9146d8739e488a58d795":[12,0,1,0,6,60,28,7],
-"baro__bmp_8c.html#ac61db1c8d70ce52b2e2192350c1a4cba":[12,0,1,0,6,60,28,4]
+"baro__bmp_8c.html#ac176f0c0c16d9146d8739e488a58d795":[12,0,1,0,6,60,28,7]
 };

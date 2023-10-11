@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e":[12,0,1,0,3,2,4,0,12],
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e":[12,0,1,0,3,2,6,4,12],
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3":[12,0,1,0,3,2,4,0,4],
 "autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3":[12,0,1,0,3,2,6,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "avi__isp__chromatic__aberration_8h.html#afaf2deb7b461e4d8c9a3d1f6461ab47c":[12,0,1,0,1,2,0,0,4,9,2],
 "avi__isp__chromatic__aberration_8h.html#afe88ee52b3d3c02981a5d4863dd20593":[12,0,1,0,1,2,0,0,4,9,44],
 "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__cfa_8____unnamed54____":[12,0,1,0,1,2,0,0,4,16],
-"avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__center_8____unnamed46____":[12,0,1,0,1,2,0,0,4,12],
-"avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__squared_8____unnamed48____":[12,0,1,0,1,2,0,0,4,13]
+"avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__center_8____unnamed46____":[12,0,1,0,1,2,0,0,4,12]
 };

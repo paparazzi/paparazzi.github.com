@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__x__squared_8____unnamed48____":[12,0,1,0,1,2,0,0,4,13],
 "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__center_8____unnamed50____":[12,0,1,0,1,2,0,0,4,14],
 "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__circle__pos__y__squared_8____unnamed52____":[12,0,1,0,1,2,0,0,4,15],
 "avi__isp__chromatic__aberration_8h.html#structavi__isp__chromatic__aberration__displacement__coeffs_8____unnamed44____":[12,0,1,0,1,2,0,0,4,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__g__07__04_8____unnamed114____":[12,0,1,0,1,2,0,0,7,24],
 "avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__g__11__08_8____unnamed116____":[12,0,1,0,1,2,0,0,7,25],
 "avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__g__13__12_8____unnamed118____":[12,0,1,0,1,2,0,0,7,26],
-"avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__r__03__00_8____unnamed96____":[12,0,1,0,1,2,0,0,7,15],
-"avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__r__07__04_8____unnamed98____":[12,0,1,0,1,2,0,0,7,16]
+"avi__isp__denoising_8h.html#structavi__isp__denoising__lumocoeff__r__03__00_8____unnamed96____":[12,0,1,0,1,2,0,0,7,15]
 };

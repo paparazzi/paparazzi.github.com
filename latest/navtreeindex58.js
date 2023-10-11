@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"gpio__ardrone_8c.html#a35043adb1f2c8d18ed698c3925a0762a":[12,0,1,0,1,1,5,10],
 "gpio__ardrone_8c.html#a504d13ed192a0d97cb4eb9452a8e142c":[12,0,1,0,1,1,5,5],
 "gpio__ardrone_8c.html#a573af743c8006ae98e309d4bc9284c85":[12,0,1,0,1,1,5,9],
 "gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1":[12,0,1,0,1,1,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "gps_8h.html#a99902b8572da45ec09a010e4e1ffd3c1":[12,0,1,0,6,28,2,3,12],
 "gps_8h.html#a99d3853155238974cf63652c8e5f2403":[12,0,1,0,6,28,2,4,1],
 "gps_8h.html#a9d430d7c900b362327e4fd9551a6aae6":[12,0,1,0,6,28,2,1,14],
-"gps_8h.html#a9eb7e10f8a297f62eceb452a534264f2":[12,0,1,0,6,28,2,1,10],
-"gps_8h.html#aa0194e37ba0420998970bfe318d74a35":[12,0,1,0,6,28,2,1,17]
+"gps_8h.html#a9eb7e10f8a297f62eceb452a534264f2":[12,0,1,0,6,28,2,1,10]
 };

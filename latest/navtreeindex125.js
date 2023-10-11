@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"max11040_8h.html#af487ad16014706304f80627dd3f056fb":[12,0,1,0,6,1,5,12],
 "max11040_8h.html#af5dd5d72798ff7917741dd068a6776f5":[12,0,1,0,6,1,5,5],
 "max11040_8h_source.html":[12,0,1,0,6,1,5],
 "max1167__hw_8c.html":[12,0,1,0,0,2,6],
@@ -80,8 +81,8 @@ var NAVTREEINDEX125 =
 "max7456_8c.html#a8e735ff9578a0cfb24ce83935e0128cb":[12,0,1,0,6,8,6,0,0],
 "max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9":[12,0,1,0,6,19,0,38],
 "max7456_8c.html#a945116b36ac06fdbb6f4aef0c5e7f7ca":[12,0,1,0,6,19,0,17],
-"max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5":[12,0,1,0,6,19,0,1,8],
 "max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5":[12,0,1,0,6,8,6,1,8],
+"max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5":[12,0,1,0,6,19,0,1,8],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6e":[12,0,1,0,6,19,0,9],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea12a2a6771d7377cd51a2c8d76bc84019":[12,0,1,0,6,19,0,9,2],
 "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea2995e6e161483e588dfded4d2a10b32b":[12,0,1,0,6,19,0,9,7],
@@ -120,8 +121,8 @@ var NAVTREEINDEX125 =
 "max7456_8c.html#adde21930790faec5566e34c25e7e95d6":[12,0,1,0,6,19,0,31],
 "max7456_8c.html#ae32c7c55a63dcd63a3e4182531bd56b7":[12,0,1,0,6,19,0,35],
 "max7456_8c.html#ae46cb108217d2126c9f484cf6b63c728":[12,0,1,0,6,19,0,36],
-"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
 "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,19,0,0,2],
+"max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb":[12,0,1,0,6,8,6,0,2],
 "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20":[12,0,1,0,6,19,0,15],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,19,0,1],
 "max7456_8c.html#structMATRIX":[12,0,1,0,6,8,6,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "median__filter_8h.html#a6f7e2c836b0577b6b56ca2cf419c2aeb":[12,0,1,0,2,7,13],
 "median__filter_8h.html#a80a82ce3f7f2f5cda12feae1ea17c929":[12,0,1,0,2,7,1,0],
 "median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730":[12,0,1,0,2,7,29],
-"median__filter_8h.html#a8e5f3c3a6a2f6e5336a29bf7c5001d97":[12,0,1,0,2,7,2,3],
-"median__filter_8h.html#a8f61d793661ca71c01945f459bfbccca":[12,0,1,0,2,7,12]
+"median__filter_8h.html#a8e5f3c3a6a2f6e5336a29bf7c5001d97":[12,0,1,0,2,7,2,3]
 };

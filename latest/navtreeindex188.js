@@ -1,5 +1,6 @@
 var NAVTREEINDEX188 =
 {
+"rover_2navigation_8h.html#a397bca15d146964a80f93abd74763384":[12,0,1,0,3,3,9,36],
 "rover_2navigation_8h.html#a3a69d6983475e69fd53a8a94cf4dc56f":[12,0,1,0,3,3,9,25],
 "rover_2navigation_8h.html#a3a76cbdab8b19020bffad72d7768140d":[12,0,1,0,3,3,9,0,14],
 "rover_2navigation_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96":[12,0,1,0,3,3,9,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX188 =
 "rssi_8h.html#a36542a9ee32c8daa1fe6cc69720ec462":[12,0,1,0,6,45,12,1],
 "rssi_8h.html#a56cde70d7a6a02da543ac20d24edeac6":[12,0,1,0,6,45,12,6],
 "rssi_8h.html#a5dde64a283e85d2249ce9a8ec8ac494b":[12,0,1,0,6,45,12,0,0],
-"rssi_8h.html#a8525f713d3364a389ae96aced974e7f3":[12,0,1,0,6,45,12,7],
-"rssi_8h.html#a919690aaad3f7fefd2914a243294db59":[12,0,1,0,6,45,12,2]
+"rssi_8h.html#a8525f713d3364a389ae96aced974e7f3":[12,0,1,0,6,45,12,7]
 };

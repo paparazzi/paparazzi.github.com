@@ -1,5 +1,6 @@
 var NAVTREEINDEX198 =
 {
+"stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c":[12,0,1,0,3,2,1,32,76],
 "stabilization__indi_8c.html#a51a4671d083da69c010c0985faf4d2f3":[12,0,1,0,3,2,1,32,3],
 "stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2":[12,0,1,0,3,2,1,32,59],
 "stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326":[12,0,1,0,3,2,1,32,9],
@@ -174,8 +175,8 @@ var NAVTREEINDEX198 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,1,35,2,10],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,1,35,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,1,35,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,35,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,33,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,35,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,1,35],
 "stabilization__none_8c.html":[12,0,1,0,3,2,1,36],
 "stabilization__none_8c.html#a03faaedbd0839f6e8b94c5788feb4ff4":[12,0,1,0,3,2,1,36,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX198 =
 "stabilization__rate__indi_8h_source.html":[12,0,1,0,3,2,1,41],
 "state_8c.html":[12,0,1,0,28],
 "state_8c_source.html":[12,0,1,0,28],
-"state_8h.html":[12,0,1,0,29],
-"state_8h_source.html":[12,0,1,0,29]
+"state_8h.html":[12,0,1,0,29]
 };

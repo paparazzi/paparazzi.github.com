@@ -1,5 +1,6 @@
 var NAVTREEINDEX131 =
 {
+"module__gps_udp.html#functions__gps_udp":[1,159,2],
 "module__gps_udp.html#module_load_example__gps_udp":[1,159,0],
 "module__gps_udp.html#module_xml__gps_udp":[1,159,2,0],
 "module__ground_detect_sensor.html":[1,303],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__imu_mpu6000_hmc5883.html#module_xml__imu_mpu6000_hmc5883":[1,200,2,0],
 "module__imu_mpu60x0_i2c.html":[1,201],
 "module__imu_mpu60x0_i2c.html#configuration__imu_mpu60x0_i2c":[1,201,1],
-"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,201,2],
-"module__imu_mpu60x0_i2c.html#module_load_example__imu_mpu60x0_i2c":[1,201,0]
+"module__imu_mpu60x0_i2c.html#functions__imu_mpu60x0_i2c":[1,201,2]
 };

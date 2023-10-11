@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"geiger__counter_8c.html#a032776faf43a209e2c888e2bea72ec2c":[12,0,1,0,6,43,9,5],
 "geiger__counter_8c.html#a04dc0541640cf73d18fef78c549c1387":[12,0,1,0,6,43,9,4],
 "geiger__counter_8c.html#a0b1fac16331bf94c39da0007dfe6fb45":[12,0,1,0,6,43,9,0],
 "geiger__counter_8c.html#a540c1be1c58c71a3c93050ba104fe83d":[12,0,1,0,6,43,9,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "gpio__ardrone_8c.html":[12,0,1,0,1,1,5],
 "gpio__ardrone_8c.html#a1a5b0b764215bbcab9c8c675ef55deea":[12,0,1,0,1,1,5,4],
 "gpio__ardrone_8c.html#a1bc9d423219ebf62774476242acee215":[12,0,1,0,1,1,5,0,0],
-"gpio__ardrone_8c.html#a27bcb021564d77173d1dfa52ae9c79fb":[12,0,1,0,1,1,5,1,1],
-"gpio__ardrone_8c.html#a35043adb1f2c8d18ed698c3925a0762a":[12,0,1,0,1,1,5,10]
+"gpio__ardrone_8c.html#a27bcb021564d77173d1dfa52ae9c79fb":[12,0,1,0,1,1,5,1,1]
 };

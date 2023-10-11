@@ -110,6 +110,12 @@ Airframe file section</h2>
  Description: Correction factor for derotation (in x direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
 <li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_Y</code> <b>value:</b> <em>1.0</em> <br  />
  Description: Correction factor for derotation (in y direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
+<li><b>name</b> <code>BODY_TO_CAM_PHI</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around x axis</li>
+<li><b>name</b> <code>BODY_TO_CAM_THETA</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around y axis</li>
+<li><b>name</b> <code>BODY_TO_CAM_PSI</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around z axis</li>
 <li><b>name</b> <code>METHOD</code> <b>value:</b> <em>0</em> <br  />
  Description: Method used to calculate optical flow</li>
 <li><b>name</b> <code>WINDOW_SIZE</code> <b>value:</b> <em>10</em> <br  />
@@ -166,6 +172,12 @@ Airframe file section</h2>
  Description: Correction factor for derotation (in x direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
 <li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_Y_CAMERA2</code> <b>value:</b> <em>1.0</em> <br  />
  Description: Correction factor for derotation (in y direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
+<li><b>name</b> <code>BODY_TO_CAM_PHI_CAMERA2</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around x axis</li>
+<li><b>name</b> <code>BODY_TO_CAM_THETA_CAMERA2</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around y axis</li>
+<li><b>name</b> <code>BODY_TO_CAM_PSI_CAMERA2</code> <b>value:</b> <em>0</em> <br  />
+ Description: Rotation from body frame to camera frame around z axis</li>
 <li><b>name</b> <code>METHOD_CAMERA2</code> <b>value:</b> <em>0</em> <br  />
  Description: Method used to calculate optical flow</li>
 <li><b>name</b> <code>WINDOW_SIZE_CAMERA2</code> <b>value:</b> <em>10</em> <br  />
@@ -288,9 +300,9 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      <span class="comment">&lt;!-- Camera parameters --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DEROTATION_CORRECTION_FACTOR_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Correction factor for derotation (in x direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DEROTATION_CORRECTION_FACTOR_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Correction factor for derotation (in y direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PHI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around x axis&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_THETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around y axis&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PSI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around z axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PHI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around x axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_THETA&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around y axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PSI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around z axis&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">      <span class="comment">&lt;!-- General optical flow calculation parameters --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;METHOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Method used to calculate optical flow&quot;</span>/&gt;</div>
@@ -334,9 +346,9 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      <span class="comment">&lt;!-- Camera 2 parameters --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DEROTATION_CORRECTION_FACTOR_X_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Correction factor for derotation (in x direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DEROTATION_CORRECTION_FACTOR_Y_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Correction factor for derotation (in y direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PHI_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around x axis&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_THETA_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around y axis&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PSI_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around z axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PHI_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around x axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_THETA_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around y axis&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;BODY_TO_CAM_PSI_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Rotation from body frame to camera frame around z axis&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">      <span class="comment">&lt;!-- General optical flow calculation parameters for camera 2--&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;METHOD_CAMERA2&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Method used to calculate optical flow&quot;</span>/&gt;</div>
@@ -494,7 +506,7 @@ Raw cv_opticflow.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Oct 10 2023 11:10:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 11 2023 09:40:10 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

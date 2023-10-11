@@ -1,5 +1,6 @@
 var NAVTREEINDEX160 =
 {
+"nucleo_2144__f767zi_2mcuconf_8h.html#ac4581f94907ef0bab701971eb36af46e":[12,0,1,0,1,17,0,1,178],
 "nucleo_2144__f767zi_2mcuconf_8h.html#ac6180f96ab7e469c2640208eaaf092c6":[12,0,1,0,1,17,0,1,113],
 "nucleo_2144__f767zi_2mcuconf_8h.html#ac61edaa8b7ad1604d18591de6c66a744":[12,0,1,0,1,17,0,1,290],
 "nucleo_2144__f767zi_2mcuconf_8h.html#ac7822898d25e5d7f57e19db582c2291e":[12,0,1,0,1,17,0,1,126],
@@ -248,6 +249,5 @@ var NAVTREEINDEX160 =
 "onboard_modules.html#modules_category_misc":[1,0,41],
 "onboard_modules.html#modules_category_mission":[1,0,28],
 "onboard_modules.html#modules_category_multi":[1,0,29],
-"onboard_modules.html#modules_category_nav":[1,0,30],
-"onboard_modules.html#modules_category_optical_flow":[1,0,31]
+"onboard_modules.html#modules_category_nav":[1,0,30]
 };

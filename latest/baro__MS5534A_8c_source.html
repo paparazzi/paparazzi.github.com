@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('baro__MS5534A_8c_source.html',''); ini
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#ifndef BARO_NO_DOWNLINK</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="namespacesimple__quad__sim.html#af540984659576ece224206d5468a2c6f">debug</a>[4];</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;4; i++){</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#af540984659576ece224206d5468a2c6f">debug</a>[0] = <a class="code" href="baro__MS5534A_8c.html#aa7f86854b075f311643a2668c0a4898b">words</a>[0];</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="namespacesimple__quad__sim.html#af540984659576ece224206d5468a2c6f">debug</a>[i] = <a class="code" href="baro__MS5534A_8c.html#aa7f86854b075f311643a2668c0a4898b">words</a>[i];</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  DOWNLINK_SEND_DEBUG_VECT(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, <span class="stringliteral">&quot;baro_calib&quot;</span>, 4, <a class="code" href="namespacesimple__quad__sim.html#af540984659576ece224206d5468a2c6f">debug</a>);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -436,7 +436,7 @@ $(document).ready(function(){initNavTree('baro__MS5534A_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__MS5534A_8c.html">baro_MS5534A.c</a></li>
-    <li class="footer">Generated on Tue Oct 10 2023 11:10:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 11 2023 09:40:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
