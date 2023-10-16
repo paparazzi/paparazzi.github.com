@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('ctrl__eff__sched__rot__wing_8c_source.
 <div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="ctrl__eff__sched__rot__wing_8c.html#ad616616784d17dad05980d1f9ef4303e">  121</a></span>&#160;static <span class="keywordtype">void</span> <a class="code" href="ctrl__eff__sched__rot__wing_8c.html#ad616616784d17dad05980d1f9ef4303e">wing_position_cb</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id <a class="code" href="common__flight__plan_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>, struct <a class="code" href="modules_2actuators_2actuators_8h.html#structact__feedback__t">act_feedback_t</a> *pos_msg, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> num_act)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;num_act; i++){</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (pos_msg[i].set.position &amp;&amp; (pos_msg[i].idx =  SERVO_ROTATION_MECH))</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (pos_msg[i].set.position &amp;&amp; (pos_msg[i].idx == SERVO_ROTATION_MECH))</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">// Get wing rotation angle from sensor</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <a class="code" href="ctrl__eff__sched__rot__wing_8c.html#a63556a574330b5de51b6f46e0f2e92d1">eff_sched_var</a>.<a class="code" href="ctrl__eff__sched__rot__wing_8h.html#a5de7d3719b6d8049bb8f5ff5c9f8d4bd">wing_rotation_rad</a> = 0.5 * M_PI - pos_msg[i].position;</div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('ctrl__eff__sched__rot__wing_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="ctrl__eff__sched__rot__wing_8c.html">ctrl_eff_sched_rot_wing.c</a></li>
-    <li class="footer">Generated on Mon Oct 16 2023 10:34:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 16 2023 14:00:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
