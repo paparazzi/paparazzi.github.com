@@ -1,5 +1,6 @@
 var NAVTREEINDEX161 =
 {
+"onboard_modules.html#modules_category_nav":[1,0,30],
 "onboard_modules.html#modules_category_optical_flow":[1,0,31],
 "onboard_modules.html#modules_category_orange_avoider":[1,0,32],
 "onboard_modules.html#modules_category_radio_control":[1,0,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX161 =
 "opa__ftd__1_80_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,54,70],
 "opa__ftd__1_80_8h.html#a9368eb2ce24df35b20ad35da41dbebf2":[12,0,1,0,1,54,106],
 "opa__ftd__1_80_8h.html#a93f15522bec0f69dad61de7b7dbb9e18":[12,0,1,0,1,54,158],
-"opa__ftd__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,54,26],
-"opa__ftd__1_80_8h.html#a97486067a300c88b1f88f6ab8727c6cf":[12,0,1,0,1,54,176]
+"opa__ftd__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,54,26]
 };

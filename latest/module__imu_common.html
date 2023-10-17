@@ -114,6 +114,10 @@ Airframe file section</h2>
  Description: The accel ABI ID which is send over telemetry/logging</li>
 <li><b>name</b> <code>MAG_ABI_SEND_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
  Description: The mag ABI ID which is send over telemetry/logging</li>
+<li><b>name</b> <code>LOG_HIGHSPEED</code> <b>value:</b> <em>FALSE</em> <br  />
+ Description: Log all the accel/gyro measurements at the IMU sampling rates in floats</li>
+<li><b>name</b> <code>LOG_HIGHSPEED_DEVICE</code> <b>value:</b> <em>flightrecorder_sdlog</em> <br  />
+ Description: The device to log all the highspeeds measurements</li>
 </ul>
 </li>
 </ul>
@@ -157,6 +161,8 @@ Raw imu_common.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_ABI_SEND_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The gyro ABI ID which is send over telemetry/logging&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_ABI_SEND_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The accel ABI ID which is send over telemetry/logging&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAG_ABI_SEND_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The mag ABI ID which is send over telemetry/logging&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOG_HIGHSPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Log all the accel/gyro measurements at the IMU sampling rates in floats&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;LOG_HIGHSPEED_DEVICE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;flightrecorder_sdlog&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The device to log all the highspeeds measurements&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -193,7 +199,7 @@ Raw imu_common.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Oct 16 2023 14:00:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 17 2023 09:32:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

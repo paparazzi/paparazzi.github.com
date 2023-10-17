@@ -1,5 +1,6 @@
 var NAVTREEINDEX87 =
 {
+"imu__chimu_8h.html#a5690daa586c0c9551527d1ae24068a70":[12,0,1,0,6,36,5,4,1],
 "imu__chimu_8h.html#a57e331d44c44c34b20d06a7e0ea2b8d9":[12,0,1,0,6,36,5,21],
 "imu__chimu_8h.html#a5ac5cadefc3732464acb03f14c79149c":[12,0,1,0,6,36,5,40],
 "imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31":[12,0,1,0,6,36,5,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX87 =
 "imu__mpu9250__i2c_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,33,6],
 "imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,35,33,2],
 "imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,33,3],
-"imu__mpu9250__i2c_8h_source.html":[12,0,1,0,6,35,33],
-"imu__mpu9250__spi_8c.html":[12,0,1,0,6,35,34]
+"imu__mpu9250__i2c_8h_source.html":[12,0,1,0,6,35,33]
 };

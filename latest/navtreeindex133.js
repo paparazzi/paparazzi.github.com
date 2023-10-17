@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"module__logger_file.html#module_xml__logger_file":[1,248,2,0],
 "module__logger_sd_chibios.html":[1,249],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,249,1],
 "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,249,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,333,1],
 "module__nav_survey_rectangle_rotorcraft.html#functions__nav_survey_rectangle_rotorcraft":[1,333,2],
 "module__nav_survey_rectangle_rotorcraft.html#module_load_example__nav_survey_rectangle_rotorcraft":[1,333,0],
-"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,333,2,0],
-"module__nav_survey_zamboni.html":[1,334]
+"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,333,2,0]
 };

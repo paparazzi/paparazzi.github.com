@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"imu_8h.html#a3ce3df3bf961804f9af1616e53b98b7f":[12,0,1,0,6,35,3,4,3],
 "imu_8h.html#a3d98f79755c87e226545df348625c232":[12,0,1,0,6,35,3,2,8],
 "imu_8h.html#a3e25b56c5719a23e494568696083459e":[12,0,1,0,6,35,3,17],
 "imu_8h.html#a41526b13502f723afc3d6b3d79e8b2dd":[12,0,1,0,6,35,3,2,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX86 =
 "imu__chimu_8h.html#a45ea797c080d2caaba920bca40661f3d":[12,0,1,0,6,36,5,5,8],
 "imu__chimu_8h.html#a4b9cedec11ae88e5d30faf9b32bb1003":[12,0,1,0,6,36,5,19],
 "imu__chimu_8h.html#a52e80849b8ab097fee0f45fe7bafb1a4":[12,0,1,0,6,36,5,1,0],
-"imu__chimu_8h.html#a540bbc5a40973634a607d66075662134":[12,0,1,0,6,36,5,7],
-"imu__chimu_8h.html#a5690daa586c0c9551527d1ae24068a70":[12,0,1,0,6,36,5,4,1]
+"imu__chimu_8h.html#a540bbc5a40973634a607d66075662134":[12,0,1,0,6,36,5,7]
 };

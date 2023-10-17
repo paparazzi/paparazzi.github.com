@@ -14,6 +14,7 @@ var imu_8c =
     [ "IMU_GYRO_Q_SIGN", "imu_8c.html#affd63ad52249c74117b86454fe73d5b0", null ],
     [ "IMU_GYRO_R_SIGN", "imu_8c.html#a91fa3d93fbfb5edbdf7f3b34436b53da", null ],
     [ "IMU_INTEGRATION", "imu_8c.html#aa556a0a3392a07c221078515c16ca075", null ],
+    [ "IMU_LOG_HIGHSPEED_DEVICE", "imu_8c.html#a5cbf5da708f60c1c3eb3bebc8fa1d284", null ],
     [ "IMU_MAG_ABI_SEND_ID", "imu_8c.html#a063289d7177864f26162b5f09947b94c", null ],
     [ "IMU_MAG_CALIB", "imu_8c.html#a0c1c31015cb92b423f7e35994456d9e5", null ],
     [ "IMU_MAG_X_SIGN", "imu_8c.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],

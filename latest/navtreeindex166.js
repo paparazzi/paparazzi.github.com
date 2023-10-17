@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3":[12,0,1,0,6,49,2,3],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30":[12,0,1,0,6,42,0,3,12],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30":[12,0,1,0,6,49,2,3,12],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3a8863aefb155a524ae238e587b618cd30":[12,0,1,0,6,49,0,5,12],
@@ -9,12 +10,12 @@ var NAVTREEINDEX166 =
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,42,0,3,8],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,49,2,3,8],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,49,0,5,8],
-"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,42,0,3,10],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,49,0,5,10],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,42,0,3,10],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,49,2,3,10],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,42,0,3,9],
-"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,2,3,9],
 "orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,0,5,9],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,49,2,3,9],
 "orange__avoider__guided_8c.html#ae051cd0ad23cb5636414bd42eb5e1dda":[12,0,1,0,6,49,2,19],
 "orange__avoider__guided_8c.html#ae8b3ef53a7a869aec22a2a48a90e69cb":[12,0,1,0,6,49,2,7],
 "orange__avoider__guided_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,49,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "paparazzi_messages.html#IMCU_PAYLOAD":[2,4,16],
 "paparazzi_messages.html#IMCU_RADIO_COMMANDS":[2,4,1],
 "paparazzi_messages.html#IMCU_REMOTE_AIRSPEED":[2,4,6],
-"paparazzi_messages.html#IMCU_REMOTE_BARO":[2,4,5],
-"paparazzi_messages.html#IMCU_REMOTE_GPS":[2,4,8]
+"paparazzi_messages.html#IMCU_REMOTE_BARO":[2,4,5]
 };

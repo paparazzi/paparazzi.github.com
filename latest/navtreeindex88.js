@@ -1,5 +1,6 @@
 var NAVTREEINDEX88 =
 {
+"imu__mpu9250__spi_8c.html":[12,0,1,0,6,35,34],
 "imu__mpu9250__spi_8c.html#a0355ae7bf5650ac5372829934a8d222f":[12,0,1,0,6,35,34,5],
 "imu__mpu9250__spi_8c.html#a0c0ada82bd9bfa782cc3a9691240b025":[12,0,1,0,6,35,34,4],
 "imu__mpu9250__spi_8c.html#a0ecc59c6c3586c98cb7a7e9d88142237":[12,0,1,0,6,35,34,8],
@@ -29,10 +30,10 @@ var NAVTREEINDEX88 =
 "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005":[12,0,1,0,6,35,35,0,3],
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,35,33,0,0],
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,35,35,0,0],
-"imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,35,35,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,35,33,0,5],
-"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,35,33,0,1],
+"imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,35,35,0,5],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,35,35,0,1],
+"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,35,33,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,35,35,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,35,35,4],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,35,33,0,2],
@@ -40,8 +41,8 @@ var NAVTREEINDEX88 =
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,35,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,35,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,35,35,3],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,33,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,35,0],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,35,33,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,35,35],
 "imu__nps_8c.html":[12,0,1,0,6,35,36],
 "imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,35,36,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX88 =
 "ins__arduimu__basic_8h_source.html":[12,0,1,0,6,36,17],
 "ins__ekf2_8cpp.html":[12,0,1,0,6,36,18],
 "ins__ekf2_8cpp.html#a141009974fbc44658bdd3334ff2e1d62":[12,0,1,0,6,36,18,70],
-"ins__ekf2_8cpp.html#a14cb66a86c67d8b9216a8c12f58c311b":[12,0,1,0,6,36,18,48],
-"ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8":[12,0,1,0,6,36,18,39]
+"ins__ekf2_8cpp.html#a14cb66a86c67d8b9216a8c12f58c311b":[12,0,1,0,6,36,18,48]
 };
