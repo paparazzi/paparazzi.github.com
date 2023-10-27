@@ -1,10 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__radio_control_datalink.html#module_xml__radio_control_datalink":[1,349,3,0],
-"module__radio_control_hott.html":[1,350],
-"module__radio_control_hott.html#configuration__radio_control_hott":[1,350,1],
-"module__radio_control_hott.html#functions__radio_control_hott":[1,350,2],
-"module__radio_control_hott.html#module_load_example__radio_control_hott":[1,350,0],
 "module__radio_control_hott.html#module_xml__radio_control_hott":[1,350,2,0],
 "module__radio_control_intermcu.html":[1,351],
 "module__radio_control_intermcu.html#datalink_functions__radio_control_intermcu":[1,351,2],
@@ -143,7 +138,6 @@ var NAVTREEINDEX136 =
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,409,0],
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,409,2,0],
 "module__stabilization_heli_indi.html":[1,410],
-"module__stabilization_heli_indi.html#af_section":[1,410,1,0],
 "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,410,1],
 "module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,410,2],
 "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,410,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX136 =
 "module__syslink_dl.html#functions__syslink_dl":[1,475,2],
 "module__syslink_dl.html#module_load_example__syslink_dl":[1,475,0],
 "module__syslink_dl.html#module_xml__syslink_dl":[1,475,2,0],
-"module__system_core.html":[1,81]
+"module__system_core.html":[1,81],
+"module__system_core.html#functions__system_core":[1,81,1],
+"module__system_core.html#module_load_example__system_core":[1,81,0],
+"module__system_core.html#module_xml__system_core":[1,81,1,0],
+"module__tag_tracking.html":[1,64],
+"module__tag_tracking.html#configuration__tag_tracking":[1,64,1],
+"module__tag_tracking.html#datalink_functions__tag_tracking":[1,64,3]
 };

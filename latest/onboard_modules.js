@@ -296,12 +296,6 @@ var onboard_modules =
     [ "opa_controller module", "module__opa_controller.html", [
       [ "Example for airframe file", "module__opa_controller.html#module_load_example__opa_controller", null ],
       [ "Module functions", "module__opa_controller.html#functions__opa_controller", [
-        [ "Init Functions", "module__opa_controller.html#init_functions", null ],
-        [ "Periodic Functions", "module__opa_controller.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__opa_controller.html#files", [
-        [ "Header Files", "module__opa_controller.html#headers", null ],
-        [ "Source Files", "module__opa_controller.html#sources", null ],
         [ "Raw opa_controller.xml file:", "module__opa_controller.html#module_xml__opa_controller", null ]
       ] ]
     ] ],
@@ -674,11 +668,8 @@ var onboard_modules =
     ] ],
     [ "extra_dl module", "module__extra_dl.html", [
       [ "Example for airframe file", "module__extra_dl.html#module_load_example__extra_dl", null ],
-      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", [
-        [ "Configure Options", "module__extra_dl.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__extra_dl.html#configuration__extra_dl", null ],
       [ "Module functions", "module__extra_dl.html#functions__extra_dl", [
-        [ "Event Functions", "module__extra_dl.html#event_functions", null ],
         [ "Raw extra_dl.xml file:", "module__extra_dl.html#module_xml__extra_dl", null ]
       ] ]
     ] ],
@@ -774,8 +765,16 @@ var onboard_modules =
     ] ],
     [ "telemetry_transparent_udp module", "module__telemetry_transparent_udp.html", [
       [ "Example for airframe file", "module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp", null ],
-      [ "Module configuration options", "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp", null ],
+      [ "Module configuration options", "module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp", [
+        [ "Configure Options", "module__telemetry_transparent_udp.html#configure", null ]
+      ] ],
       [ "Module functions", "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp", [
+        [ "Init Functions", "module__telemetry_transparent_udp.html#init_functions", null ],
+        [ "Event Functions", "module__telemetry_transparent_udp.html#event_functions", null ]
+      ] ],
+      [ "Files", "module__telemetry_transparent_udp.html#files", [
+        [ "Header Files", "module__telemetry_transparent_udp.html#headers", null ],
+        [ "Source Files", "module__telemetry_transparent_udp.html#sources", null ],
         [ "Raw telemetry_transparent_udp.xml file:", "module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp", null ]
       ] ]
     ] ],
@@ -820,8 +819,11 @@ var onboard_modules =
     ] ],
     [ "dc_ctrl_parrot_mykonos module", "module__dc_ctrl_parrot_mykonos.html", [
       [ "Example for airframe file", "module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos", null ],
-      [ "Module configuration options", "module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos", null ],
+      [ "Module configuration options", "module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos", [
+        [ "Define Options", "module__dc_ctrl_parrot_mykonos.html#define", null ]
+      ] ],
       [ "Module functions", "module__dc_ctrl_parrot_mykonos.html#functions__dc_ctrl_parrot_mykonos", [
+        [ "Periodic Functions", "module__dc_ctrl_parrot_mykonos.html#periodic_functions", null ],
         [ "Raw dc_ctrl_parrot_mykonos.xml file:", "module__dc_ctrl_parrot_mykonos.html#module_xml__dc_ctrl_parrot_mykonos", null ]
       ] ]
     ] ],
@@ -1191,20 +1193,20 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -2118,6 +2120,7 @@ var onboard_modules =
     [ "nav_skid_landing module", "module__nav_skid_landing.html", [
       [ "Example for airframe file", "module__nav_skid_landing.html#module_load_example__nav_skid_landing", null ],
       [ "Module configuration options", "module__nav_skid_landing.html#configuration__nav_skid_landing", [
+        [ "Airframe file section", "module__nav_skid_landing.html#af_section", null ],
         [ "Raw nav_skid_landing.xml file:", "module__nav_skid_landing.html#module_xml__nav_skid_landing", null ]
       ] ]
     ] ],
@@ -2688,9 +2691,7 @@ var onboard_modules =
     ] ],
     [ "stabilization_heli_indi module", "module__stabilization_heli_indi.html", [
       [ "Example for airframe file", "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi", null ],
-      [ "Module configuration options", "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi", [
-        [ "Airframe file section", "module__stabilization_heli_indi.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi", null ],
       [ "Module functions", "module__stabilization_heli_indi.html#functions__stabilization_heli_indi", [
         [ "Raw stabilization_heli_indi.xml file:", "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi", null ]
       ] ]
@@ -3069,9 +3070,7 @@ var onboard_modules =
     ] ],
     [ "pose_history module", "module__pose_history.html", [
       [ "Example for airframe file", "module__pose_history.html#module_load_example__pose_history", null ],
-      [ "Module configuration options", "module__pose_history.html#configuration__pose_history", [
-        [ "Define Options", "module__pose_history.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__pose_history.html#configuration__pose_history", null ],
       [ "Module functions", "module__pose_history.html#functions__pose_history", [
         [ "Raw pose_history.xml file:", "module__pose_history.html#module_xml__pose_history", null ]
       ] ]
