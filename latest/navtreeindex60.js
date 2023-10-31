@@ -1,16 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"gps_8c.html#a6d3041cd1924b179b8c3940d7840476f":[12,0,1,0,6,28,1,12],
-"gps_8c.html#a759fae606fdb1c49a324d700e29282ff":[12,0,1,0,6,28,1,22],
-"gps_8c.html#a7eb08958254a390bf626ecfd6dbf37de":[12,0,1,0,6,28,1,27],
-"gps_8c.html#a938ba23671abdae703d2b14b930b55b8":[12,0,1,0,6,28,1,28],
-"gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb":[12,0,1,0,6,28,1,10],
-"gps_8c.html#aa1cf7efa927fe3fe8a07e97f8e58b746":[12,0,1,0,6,28,1,3],
-"gps_8c.html#aa7f0888726c4ca1b93e9b80d69669139":[12,0,1,0,6,28,1,19],
-"gps_8c.html#aaaa2d042cb07ce98aad5692c1369aee3":[12,0,1,0,6,28,1,16],
-"gps_8c.html#ab18ae177901bcfb8e7ac79113ab9b8f3":[12,0,1,0,6,28,1,24],
-"gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771":[12,0,1,0,6,28,1,9],
-"gps_8c.html#ac4630bfb6206a2643378e4a829a33bb7":[12,0,1,0,6,28,1,1],
 "gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600":[12,0,1,0,6,28,1,20],
 "gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd":[12,0,1,0,6,28,1,14],
 "gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7":[12,0,1,0,6,28,1,7],
@@ -249,5 +238,16 @@ var NAVTREEINDEX60 =
 "gps__nmea_8c.html#a5f93ed15c50e20c061a5d36b9905decf":[12,0,1,0,6,28,10,1],
 "gps__nmea_8c.html#a65c2ec11099ee032974266197e8d314d":[12,0,1,0,6,28,10,6],
 "gps__nmea_8c.html#a79f4e0b7097506dfef23b8a49cea0e64":[12,0,1,0,6,28,10,13],
-"gps__nmea_8c.html#a7ada001a707e893acb124d3668cb901e":[12,0,1,0,6,28,10,16]
+"gps__nmea_8c.html#a7ada001a707e893acb124d3668cb901e":[12,0,1,0,6,28,10,16],
+"gps__nmea_8c.html#a7d5a551d259e5f21f46eee9db6f3590a":[12,0,1,0,6,28,10,7],
+"gps__nmea_8c.html#a981e852925b15d4eafff5d582547fba0":[12,0,1,0,6,28,10,12],
+"gps__nmea_8c.html#a9c374269a14c7e2a806a594c9f9ec9ff":[12,0,1,0,6,28,10,5],
+"gps__nmea_8c.html#abd01a58a789d46fa43e0979f9c00c73b":[12,0,1,0,6,28,10,15],
+"gps__nmea_8c.html#ac4895fd95dc0cb8f5bb47a5ad64c3aee":[12,0,1,0,6,28,10,9],
+"gps__nmea_8c.html#ae8d3eab1077bcc022180d58fc1aa7980":[12,0,1,0,6,28,10,8],
+"gps__nmea_8c.html#ae9073dcac41338b742f6168a9c506679":[12,0,1,0,6,28,10,3],
+"gps__nmea_8c.html#aef72fe86b7c60b1a86920496456edeac":[12,0,1,0,6,28,10,4],
+"gps__nmea_8c.html#af2c40746dbb1a1371e3411033e64239a":[12,0,1,0,6,28,10,10],
+"gps__nmea_8c.html#af7b9faabc17bf7ec5926e45080b01171":[12,0,1,0,6,28,10,2],
+"gps__nmea_8c.html#afc502793fd8bcb919f0f34298ae4c0eb":[12,0,1,0,6,28,10,11]
 };

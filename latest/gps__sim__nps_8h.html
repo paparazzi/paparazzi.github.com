@@ -127,10 +127,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1acb1b66a5b2d172cff383fdb9b6de4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a> ()</td></tr>
-<tr class="separator:a1acb1b66a5b2d172cff383fdb9b6de4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1d6b0a4feb81df90127d47471a7365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a9b1d6b0a4feb81df90127d47471a7365">gps_nps_init</a> ()</td></tr>
-<tr class="separator:a9b1d6b0a4feb81df90127d47471a7365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf6eb34827c681440149b78bbc12dd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a4bf6eb34827c681440149b78bbc12dd0">gps_feed_value</a> (void)</td></tr>
+<tr class="separator:a4bf6eb34827c681440149b78bbc12dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad682268b59357d0938bfc3a7d937dbfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#ad682268b59357d0938bfc3a7d937dbfe">gps_nps_init</a> (void)</td></tr>
+<tr class="separator:ad682268b59357d0938bfc3a7d937dbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -176,8 +176,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1acb1b66a5b2d172cff383fdb9b6de4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acb1b66a5b2d172cff383fdb9b6de4d">&#9670;&nbsp;</a></span>gps_feed_value()</h2>
+<a id="a4bf6eb34827c681440149b78bbc12dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf6eb34827c681440149b78bbc12dd0">&#9670;&nbsp;</a></span>gps_feed_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,51 +185,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_feed_value </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00031">31</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
-
-<p class="reference">References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::ecef_vel</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00071">get_sys_time_usec()</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00040">GPS_FIX_NONE</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00029">gps_has_fix</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00028">gps_nps</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00276">GPS_SIM_ID</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00051">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00046">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00047">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::hacc</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::hmsl</a>, <a class="el" href="gps_8h_source.html#l00112">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00113">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00114">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00115">GpsState::last_msg_time</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00104">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::pdop</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::sacc</a>, <a class="el" href="cc2500__compat_8h_source.html#l00068">sensors</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::speed_3d</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::vacc</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::valid_fields</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::week</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00095">nps_autopilot_run_step()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph.png" border="0" usemap="#agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph" alt=""/></div>
-<map name="agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph" id="agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,129,83"/>
-<area shape="rect" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup." alt="" coords="181,5,328,32"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title=" " alt="" coords="177,56,332,83"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title=" " alt="" coords="179,107,330,133"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title=" " alt="" coords="401,56,509,83"/>
-<area shape="rect" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title=" " alt="" coords="380,107,531,133"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_icgraph.png" border="0" usemap="#agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_icgraph" alt=""/></div>
-<map name="agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_icgraph" id="agps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_icgraph">
-<area shape="rect" title=" " alt="" coords="724,5,848,32"/>
-<area shape="rect" href="nps__autopilot_8h.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="503,5,676,32"/>
-<area shape="rect" href="nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title=" " alt="" coords="276,5,455,32"/>
-<area shape="rect" href="nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title=" " alt="" coords="108,5,228,32"/>
-<area shape="rect" href="nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00032">32</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
 
 </div>
 </div>
-<a id="a9b1d6b0a4feb81df90127d47471a7365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b1d6b0a4feb81df90127d47471a7365">&#9670;&nbsp;</a></span>gps_nps_init()</h2>
+<a id="ad682268b59357d0938bfc3a7d937dbfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad682268b59357d0938bfc3a7d937dbfe">&#9670;&nbsp;</a></span>gps_nps_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,15 +205,16 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void gps_nps_init </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00103">103</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00104">104</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gps__sim__nps_8c_source.html#l00029">gps_has_fix</a>.</p>
+<p class="reference">References <a class="el" href="gps__sim__nps_8c_source.html#l00030">gps_has_fix</a>.</p>
 
 </div>
 </div>
@@ -270,9 +239,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00029">29</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00103">gps_nps_init()</a>, and <a class="el" href="nps__ivy_8c_source.html#l00094">on_WORLD_ENV()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00030">30</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
 
 </div>
 </div>
@@ -298,7 +265,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00001">1</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_feed_value()</a>.</p>
 
 </div>
 </div>
@@ -308,7 +275,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim__nps_8h.html">gps_sim_nps.h</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

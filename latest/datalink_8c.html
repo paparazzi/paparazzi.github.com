@@ -140,9 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa339c817b28d34ab69c529090598d800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datalink_8c.html#aa339c817b28d34ab69c529090598d800">datalink_periodic</a> (void)</td></tr>
 <tr class="memdesc:aa339c817b28d34ab69c529090598d800"><td class="mdescLeft">&#160;</td><td class="mdescRight">periodic function, should be called at 1Hz  <a href="datalink_8c.html#aa339c817b28d34ab69c529090598d800">More...</a><br /></td></tr>
 <tr class="separator:aa339c817b28d34ab69c529090598d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3659f41c204b7f4c9a380240265c4d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datalink_8c.html#ab3659f41c204b7f4c9a380240265c4d1">datalink_parse_PING</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:ab3659f41c204b7f4c9a380240265c4d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datalink_8c.html#ab3659f41c204b7f4c9a380240265c4d1">datalink_parse_PING</a> (struct link_device *<a class="el" href="nps__hitl__sensors_8c.html#a799a0772e9942aae42b7a46313862363">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:ab3659f41c204b7f4c9a380240265c4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf615e1bc24a985d0aa7b945890778a0"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0">dl_parse_msg</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memitem:acf615e1bc24a985d0aa7b945890778a0"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0">dl_parse_msg</a> (struct link_device *<a class="el" href="nps__hitl__sensors_8c.html#a799a0772e9942aae42b7a46313862363">dev</a>, struct transport_tx *trans, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:acf615e1bc24a985d0aa7b945890778a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be called when chars are available in dl_buffer.  <a href="datalink_8c.html#acf615e1bc24a985d0aa7b945890778a0">More...</a><br /></td></tr>
 <tr class="separator:acf615e1bc24a985d0aa7b945890778a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -342,15 +342,16 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="datalink_8c_acf615e1bc24a985d0aa7b945890778a0_icgraph.png" border="0" usemap="#adatalink_8c_acf615e1bc24a985d0aa7b945890778a0_icgraph" alt=""/></div>
 <map name="adatalink_8c_acf615e1bc24a985d0aa7b945890778a0_icgraph" id="adatalink_8c_acf615e1bc24a985d0aa7b945890778a0_icgraph">
-<area shape="rect" title="Should be called when chars are available in dl_buffer." alt="" coords="655,157,767,184"/>
-<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="471,157,607,184"/>
+<area shape="rect" title="Should be called when chars are available in dl_buffer." alt="" coords="655,183,767,209"/>
+<area shape="rect" href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611" title="Check for new message and parse." alt="" coords="471,183,607,209"/>
 <area shape="rect" href="bluegiga__dl_8c.html#a921065e8139e27fbe413ef7459ed51b3" title="Datalink Event." alt="" coords="268,5,409,32"/>
 <area shape="rect" href="extra__pprz__dl_8c.html#a95b5d2651fd6a78c616fe9ca1f556568" title="Datalink Event." alt="" coords="261,56,416,83"/>
 <area shape="rect" href="gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579" title="Parse incoming message bytes (PPRZ_STX..CHCKSUM B) and returns a new decrypted message if it is avail..." alt="" coords="285,107,393,133"/>
 <area shape="rect" href="pprz__dl_8c.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event." alt="" coords="282,157,395,184"/>
-<area shape="rect" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title=" " alt="" coords="255,208,423,235"/>
-<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="265,259,413,285"/>
-<area shape="rect" href="xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="280,309,397,336"/>
+<area shape="rect" href="sensors__hitl_8c.html#a2e965a44a3faef0df7d56cbed4f8b575" title=" " alt="" coords="267,208,411,235"/>
+<area shape="rect" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title=" " alt="" coords="255,259,423,285"/>
+<area shape="rect" href="modules_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad" title="The superbitrf datalink event call." alt="" coords="265,309,413,336"/>
+<area shape="rect" href="xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6" title="Datalink Event." alt="" coords="280,360,397,387"/>
 <area shape="rect" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10" title=" " alt="" coords="108,157,207,184"/>
 <area shape="rect" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,60,184"/>
 </map>
@@ -442,7 +443,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="datalink_8c.html">datalink.c</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:02 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

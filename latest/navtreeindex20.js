@@ -1,5 +1,14 @@
 var NAVTREEINDEX20 =
 {
+"avi__isp__statistics__yuv_8h.html#adfcff9324bab9bb7945d1350f51f5fd9":[12,0,1,0,1,2,0,0,16,44],
+"avi__isp__statistics__yuv_8h.html#ae11a5710685bc0bd38400865f60e3dcc":[12,0,1,0,1,2,0,0,16,16,3],
+"avi__isp__statistics__yuv_8h.html#ae581abd84884d89931f66dcfe8f88bcb":[12,0,1,0,1,2,0,0,16,23,0],
+"avi__isp__statistics__yuv_8h.html#ae5a6159cbfe90be4ee1e327d6f816efc":[12,0,1,0,1,2,0,0,16,16,17],
+"avi__isp__statistics__yuv_8h.html#ae5b44ea29d1f15ac86ce9be31969044d":[12,0,1,0,1,2,0,0,16,28,1],
+"avi__isp__statistics__yuv_8h.html#ae644ec2e6f7bd3f971b6430c825f2dc8":[12,0,1,0,1,2,0,0,16,14,0],
+"avi__isp__statistics__yuv_8h.html#ae96b6f693fb5b638360f766cb8efd608":[12,0,1,0,1,2,0,0,16,25,0],
+"avi__isp__statistics__yuv_8h.html#aeb52e9a49d4471dde50939719182630b":[12,0,1,0,1,2,0,0,16,16,6],
+"avi__isp__statistics__yuv_8h.html#aee71459ba74a6824dadb70c49c61420c":[12,0,1,0,1,2,0,0,16,38],
 "avi__isp__statistics__yuv_8h.html#af00da8c4779b261c96f33b4e37e9e0f6":[12,0,1,0,1,2,0,0,16,6,0],
 "avi__isp__statistics__yuv_8h.html#af1f05de8fd66a23372b36c36e8992a8e":[12,0,1,0,1,2,0,0,16,48],
 "avi__isp__statistics__yuv_8h.html#af6307d536d286573028f24c19dc16b43":[12,0,1,0,1,2,0,0,16,16,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX20 =
 "baro__bmp3_8h.html#a285e00e81516d1fa5f8c5131af10e436":[12,0,1,0,6,60,33,2],
 "baro__bmp3_8h.html#a5dc280ba80f08ff6984977480b9c5e03":[12,0,1,0,6,60,33,1],
 "baro__bmp3_8h.html#ad28e37c05782363bfcddbce502e22800":[12,0,1,0,6,60,33,0],
-"baro__bmp3_8h.html#aec661d066132bf644018e6a9e5d8d003":[12,0,1,0,6,60,33,3],
-"baro__bmp3_8h_source.html":[12,0,1,0,6,60,33],
-"baro__bmp_8c.html":[12,0,1,0,6,60,28],
-"baro__bmp_8c.html#a075628427eb8ce860c727b298b01173c":[12,0,1,0,6,60,28,8],
-"baro__bmp_8c.html#a09ccc68d1ef4027c7cb6c348ffb99cad":[12,0,1,0,6,60,28,6],
-"baro__bmp_8c.html#a2c8ab237cbb8ec936485236b89562181":[12,0,1,0,6,60,28,5],
-"baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9":[12,0,1,0,6,60,28,9],
-"baro__bmp_8c.html#aa5e236975231b4db2818cdc4c997fea0":[12,0,1,0,6,60,28,3],
-"baro__bmp_8c.html#ac156dfea2a80620e6fbe7fe87b3cd19f":[12,0,1,0,6,60,28,1],
-"baro__bmp_8c.html#ac176f0c0c16d9146d8739e488a58d795":[12,0,1,0,6,60,28,7]
+"baro__bmp3_8h.html#aec661d066132bf644018e6a9e5d8d003":[12,0,1,0,6,60,33,3]
 };

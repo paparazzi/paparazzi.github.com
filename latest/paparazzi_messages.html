@@ -331,8 +331,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#WIND_INFO">WIND_INFO (ID 3)</a></li>
 <li class="level2"><a href="#SETTING">SETTING (ID 4)</a></li>
 <li class="level2"><a href="#BLOCK">BLOCK (ID 5)</a></li>
-<li class="level2"><a href="#HITL_UBX">HITL_UBX (ID 6)</a></li>
-<li class="level2"><a href="#HITL_INFRARED">HITL_INFRARED (ID 7)</a></li>
 <li class="level2"><a href="#PING">PING (ID 8)</a></li>
 <li class="level2"><a href="#FORMATION_SLOT">FORMATION_SLOT (ID 9)</a></li>
 <li class="level2"><a href="#FORMATION_STATUS">FORMATION_STATUS (ID 10)</a></li>
@@ -369,6 +367,10 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#REMOTE_GPS_LOCAL">REMOTE_GPS_LOCAL (ID 56)</a></li>
 <li class="level2"><a href="#TARGET_POS">TARGET_POS (ID 57)</a></li>
 <li class="level2"><a href="#SMARTPROBE">SMARTPROBE (ID 60)</a></li>
+<li class="level2"><a href="#HITL_IMU">HITL_IMU (ID 70)</a></li>
+<li class="level2"><a href="#HITL_GPS">HITL_GPS (ID 71)</a></li>
+<li class="level2"><a href="#HITL_UBX">HITL_UBX (ID 72)</a></li>
+<li class="level2"><a href="#HITL_AIR_DATA">HITL_AIR_DATA (ID 73)</a></li>
 <li class="level2"><a href="#KITE_COMMAND">KITE_COMMAND (ID 96)</a></li>
 <li class="level2"><a href="#PAYLOAD_COMMAND">PAYLOAD_COMMAND (ID 97)</a></li>
 <li class="level2"><a href="#SET_ACTUATOR">SET_ACTUATOR (ID 100)</a></li>
@@ -4918,34 +4920,6 @@ BLOCK (ID 5)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="HITL_UBX"></a>
-HITL_UBX (ID 6)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">class   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ubx_payload   </td><td class="markdownTableBodyNone">uint8[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2><a class="anchor" id="HITL_INFRARED"></a>
-HITL_INFRARED (ID 7)</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">roll   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">pitch   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">top   </td><td class="markdownTableBodyNone">int16   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-</table>
 <h2><a class="anchor" id="PING"></a>
 PING (ID 8)</h2>
 <p>message has no fields</p>
@@ -5631,6 +5605,90 @@ SMARTPROBE (ID 60)</h2>
 <td class="markdownTableBodyNone">p_diff_V_raw   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Pa   </td><td class="markdownTableBodyNone">raw differential pressure for vertical sensor    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">t_diff_V_raw   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Celcius   </td><td class="markdownTableBodyNone">raw temperature for vertical sensor   </td></tr>
+</table>
+<h2><a class="anchor" id="HITL_IMU"></a>
+HITL_IMU (ID 70)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">gq   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">gr   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ax   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s-2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ay   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s-2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">az   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s-2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mx   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">my   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="HITL_GPS"></a>
+HITL_GPS (ID 71)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">lat   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lon   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">deg   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">alt   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">ellipsoid alt    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">hmsl   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">geoid alt    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ecef_vel_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ecef_vel_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ecef_vel_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">time   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fix   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="HITL_UBX"></a>
+HITL_UBX (ID 72)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">class   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ubx_payload   </td><td class="markdownTableBodyNone">uint8[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2><a class="anchor" id="HITL_AIR_DATA"></a>
+HITL_AIR_DATA (ID 73)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">baro   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">Pa   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">airspeed   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">aoa   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">sideslip   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">update_flag   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">bit 0: baro, bit 1: airspeed, bit 2: aoa, bit 3: sideslip    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ac_id   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="KITE_COMMAND"></a>
 KITE_COMMAND (ID 96)</h2>
@@ -6769,7 +6827,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:40 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

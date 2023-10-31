@@ -163,7 +163,7 @@ Macros</h2></td></tr>
 <tr class="separator:a9aa1ba1797214fecab34eca46f4b3534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a442b0b931977a325cfb9878f316d062e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a442b0b931977a325cfb9878f316d062e">StereoGetch</a>()&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a> -&gt;get_byte(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;periph)</td></tr>
 <tr class="separator:a442b0b931977a325cfb9878f316d062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985b4c4b4319aa0a457360e343c57ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a985b4c4b4319aa0a457360e343c57ab9">StereoSend1</a>(c)&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;put_byte(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;periph, 0, c)</td></tr>
+<tr class="memitem:a985b4c4b4319aa0a457360e343c57ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a985b4c4b4319aa0a457360e343c57ab9">StereoSend1</a>(c)&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;periph, 0, c)</td></tr>
 <tr class="separator:a985b4c4b4319aa0a457360e343c57ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd050a5b4d66e57d883cd9a2c401b44e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#acd050a5b4d66e57d883cd9a2c401b44e">StereoUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a985b4c4b4319aa0a457360e343c57ab9">StereoSend1</a>(c)</td></tr>
 <tr class="separator:acd050a5b4d66e57d883cd9a2c401b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +171,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac6c769a4ae2673751203d93939c60e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0e289c810eefcb77f52a2dcdfb16bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#aff0e289c810eefcb77f52a2dcdfb16bb">StereoUartSetBaudrate</a>(_b)&#160;&#160;&#160;<a class="el" href="uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_periph_set_baudrate</a>(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>, _b);</td></tr>
 <tr class="separator:aff0e289c810eefcb77f52a2dcdfb16bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56314c036e8c77409a2210aca22e8b2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f">StereoChAvailable</a>()&#160;&#160;&#160;(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;char_available(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;periph))</td></tr>
+<tr class="memitem:a56314c036e8c77409a2210aca22e8b2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f">StereoChAvailable</a>()&#160;&#160;&#160;(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#a863bdb431327986002253863c018b530">char_available</a>(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;periph))</td></tr>
 <tr class="separator:a56314c036e8c77409a2210aca22e8b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2978a46b47cbc9d17a0924014ff9658b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereocam__droplet_8c.html#a2978a46b47cbc9d17a0924014ff9658b">DOWNLINK_DEVICE</a>&#160;&#160;&#160;DOWNLINK_AP_DEVICE</td></tr>
 <tr class="separator:a2978a46b47cbc9d17a0924014ff9658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +279,7 @@ timeout</td>
           <td class="memname">#define StereoChAvailable</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;char_available(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;periph))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#a863bdb431327986002253863c018b530">char_available</a>(<a class="el" href="stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b">xdev</a>-&gt;periph))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -348,7 +348,7 @@ timeout</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;put_byte(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;periph, 0, c)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">STEREO_PORT</a>-&gt;periph, 0, c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -550,7 +550,7 @@ timeout</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_4d588d64fec5038373cf62d9f6d9efc5.html">droplet</a></li><li class="navelem"><a class="el" href="stereocam__droplet_8c.html">stereocam_droplet.c</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:38 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

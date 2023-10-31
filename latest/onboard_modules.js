@@ -93,6 +93,13 @@ var onboard_modules =
         [ "Raw actuators_esc32.xml file:", "module__actuators_esc32.html#module_xml__actuators_esc32", null ]
       ] ]
     ] ],
+    [ "actuators_hitl module", "module__actuators_hitl.html", [
+      [ "Example for airframe file", "module__actuators_hitl.html#module_load_example__actuators_hitl", null ],
+      [ "Module configuration options", "module__actuators_hitl.html#configuration__actuators_hitl", null ],
+      [ "Module functions", "module__actuators_hitl.html#functions__actuators_hitl", [
+        [ "Raw actuators_hitl.xml file:", "module__actuators_hitl.html#module_xml__actuators_hitl", null ]
+      ] ]
+    ] ],
     [ "actuators_md25 module", "module__actuators_md25.html", [
       [ "Example for airframe file", "module__actuators_md25.html#module_load_example__actuators_md25", null ],
       [ "Module configuration options", "module__actuators_md25.html#configuration__actuators_md25", null ],
@@ -1017,12 +1024,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__gps_sim.html#module_load_example__gps_sim", null ],
       [ "Module functions", "module__gps_sim.html#functions__gps_sim", [
         [ "Raw gps_sim.xml file:", "module__gps_sim.html#module_xml__gps_sim", null ]
-      ] ]
-    ] ],
-    [ "gps_sim_hitl module", "module__gps_sim_hitl.html", [
-      [ "Example for airframe file", "module__gps_sim_hitl.html#module_load_example__gps_sim_hitl", null ],
-      [ "Module functions", "module__gps_sim_hitl.html#functions__gps_sim_hitl", [
-        [ "Raw gps_sim_hitl.xml file:", "module__gps_sim_hitl.html#module_xml__gps_sim_hitl", null ]
       ] ]
     ] ],
     [ "gps_sirf module", "module__gps_sirf.html", [
@@ -2592,6 +2593,11 @@ var onboard_modules =
         [ "Raw mag_rm3100.xml file:", "module__mag_rm3100.html#module_xml__mag_rm3100", null ]
       ] ]
     ] ],
+    [ "nps_hitl_sensors module", "module__nps_hitl_sensors.html", [
+      [ "Example for airframe file", "module__nps_hitl_sensors.html#module_load_example__nps_hitl_sensors", [
+        [ "Raw nps_hitl_sensors.xml file:", "module__nps_hitl_sensors.html#module_xml__nps_hitl_sensors", null ]
+      ] ]
+    ] ],
     [ "opticflow_pmw3901 module", "module__opticflow_pmw3901.html", [
       [ "Example for airframe file", "module__opticflow_pmw3901.html#module_load_example__opticflow_pmw3901", null ],
       [ "Module configuration options", "module__opticflow_pmw3901.html#configuration__opticflow_pmw3901", null ],
@@ -2604,6 +2610,14 @@ var onboard_modules =
       [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
       [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
         [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
+      ] ]
+    ] ],
+    [ "sensors_hitl module", "module__sensors_hitl.html", [
+      [ "Example for airframe file", "module__sensors_hitl.html#module_load_example__sensors_hitl", null ],
+      [ "Module configuration options", "module__sensors_hitl.html#configuration__sensors_hitl", null ],
+      [ "Module functions", "module__sensors_hitl.html#functions__sensors_hitl", null ],
+      [ "Datalink Functions", "module__sensors_hitl.html#datalink_functions__sensors_hitl", [
+        [ "Raw sensors_hitl.xml file:", "module__sensors_hitl.html#module_xml__sensors_hitl", null ]
       ] ]
     ] ],
     [ "temp_adc module", "module__temp_adc.html", [

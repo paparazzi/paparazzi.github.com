@@ -129,13 +129,13 @@ $(document).ready(function(){initNavTree('humid__sht__uart_8h.html',''); initRes
 Macros</h2></td></tr>
 <tr class="memitem:a129256c086df2eae709892c77338017a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>&#160;&#160;&#160;(&amp;(MET_LINK).device)</td></tr>
 <tr class="separator:a129256c086df2eae709892c77338017a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c8b0c5097cc73e235f57b6e207dacc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">MetBuffer</a>()&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;char_available(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph)</td></tr>
+<tr class="memitem:a38c8b0c5097cc73e235f57b6e207dacc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">MetBuffer</a>()&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#a863bdb431327986002253863c018b530">char_available</a>(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph)</td></tr>
 <tr class="separator:a38c8b0c5097cc73e235f57b6e207dacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6279ed04caea16ab6ab0eb0f3a53cf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">MetGetch</a>()&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;get_byte(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph)</td></tr>
 <tr class="separator:ab6279ed04caea16ab6ab0eb0f3a53cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d90337932a2d91aadcd594f53bbede0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#a0d90337932a2d91aadcd594f53bbede0">ReadMetBuffer</a>()&#160;&#160;&#160;{ while (<a class="el" href="met__module_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">MetBuffer</a>()&amp;&amp;!met_msg_received) parse_met_buffer(<a class="el" href="met__module_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">MetGetch</a>()); }</td></tr>
 <tr class="separator:a0d90337932a2d91aadcd594f53bbede0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8da7d57fd856850000c369aae9761a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;put_byte(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph, 0, c)</td></tr>
+<tr class="memitem:ac8da7d57fd856850000c369aae9761a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph, 0, c)</td></tr>
 <tr class="separator:ac8da7d57fd856850000c369aae9761a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7eb0f3d418e9837ff5ee1fad3b91af6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht__uart_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">MetUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)</td></tr>
 <tr class="separator:ac7eb0f3d418e9837ff5ee1fad3b91af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Variables</h2></td></tr>
           <td class="memname">#define MetBuffer</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;char_available(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#a863bdb431327986002253863c018b530">char_available</a>(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -272,7 +272,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;put_byte(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph, 0, c)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">MetLinkDevice</a>-&gt;periph, 0, c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -576,7 +576,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="humid__sht__uart_8h.html">humid_sht_uart.h</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:04 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:37 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

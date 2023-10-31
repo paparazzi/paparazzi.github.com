@@ -945,7 +945,7 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 , <a class="el" href="notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0">notch_filter_float.h</a>
 </li>
 <li>nps_ap_data_loop()
-: <a class="el" href="nps__main__hitl_8c.html#a7ffa1bed622c627be15cef973d0378fe">nps_main_hitl.c</a>
+: <a class="el" href="nps__hitl__sensors_8c.html#a7ffa1bed622c627be15cef973d0378fe">nps_hitl_sensors.c</a>
 </li>
 <li>nps_atmosphere_init()
 : <a class="el" href="nps__atmosphere_8c.html#a5c5546f787b1d322ecf38dc10de13309">nps_atmosphere.c</a>
@@ -1059,28 +1059,29 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 : <a class="el" href="nps__flightgear_8h.html#abaad453431e1fcbe9da597d2389250b8">nps_flightgear.h</a>
 , <a class="el" href="nps__flightgear_8c.html#abaad453431e1fcbe9da597d2389250b8">nps_flightgear.c</a>
 </li>
-<li>nps_ins_data_loop()
-: <a class="el" href="nps__main__hitl_8c.html#ab7908d1183d09e9f1e7867a372d3399e">nps_main_hitl.c</a>
+<li>nps_hitl_impl_init()
+: <a class="el" href="nps__hitl__sensors_8c.html#aae868fe3ab60cc9a005166bd96156b1c">nps_hitl_sensors.c</a>
+, <a class="el" href="nps__main_8h.html#aae868fe3ab60cc9a005166bd96156b1c">nps_main.h</a>
 </li>
 <li>nps_ins_fetch_data()
-: <a class="el" href="nps__ins__vectornav_8c.html#a003d06964d78213c96100e9ca57c7979">nps_ins_vectornav.c</a>
-, <a class="el" href="nps__ins_8h.html#a003d06964d78213c96100e9ca57c7979">nps_ins.h</a>
+: <a class="el" href="nps__ins_8h.html#a003d06964d78213c96100e9ca57c7979">nps_ins.h</a>
 </li>
 <li>nps_ins_fill_buffer()
 : <a class="el" href="nps__ins_8h.html#a37df16d56213486a430d45f925225c71">nps_ins.h</a>
-, <a class="el" href="nps__ins__vectornav_8c.html#a37df16d56213486a430d45f925225c71">nps_ins_vectornav.c</a>
 </li>
 <li>nps_ins_init()
 : <a class="el" href="nps__ins_8h.html#a89c3c505d205dced5e7dc45d0e629cb8">nps_ins.h</a>
-, <a class="el" href="nps__ins__vectornav_8c.html#a89c3c505d205dced5e7dc45d0e629cb8">nps_ins_vectornav.c</a>
 </li>
 <li>nps_ivy_display()
 : <a class="el" href="nps__ivy_8c.html#ac8dd2616306bc17a53526c762dc08ee5">nps_ivy.c</a>
 , <a class="el" href="nps__ivy_8h.html#a805b39eccaf7a65bd6038d26c33ae1d4">nps_ivy.h</a>
 </li>
+<li>nps_ivy_hitl()
+: <a class="el" href="nps__ivy_8h.html#a93a351ac583fd0f53b6682ae7ec13d20">nps_ivy.h</a>
+</li>
 <li>nps_ivy_init()
-: <a class="el" href="nps__ivy_8h.html#ae574a471d006eb2993feb484bce72c40">nps_ivy.h</a>
-, <a class="el" href="nps__ivy_8c.html#ae574a471d006eb2993feb484bce72c40">nps_ivy.c</a>
+: <a class="el" href="nps__ivy_8c.html#ae574a471d006eb2993feb484bce72c40">nps_ivy.c</a>
+, <a class="el" href="nps__ivy_8h.html#ae574a471d006eb2993feb484bce72c40">nps_ivy.h</a>
 </li>
 <li>nps_ivy_send_WORLD_ENV_REQ()
 : <a class="el" href="nps__ivy_8c.html#a589ece9a25821a7a5e55d5996ee06bf3">nps_ivy.c</a>
@@ -1096,8 +1097,8 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 </li>
 <li>nps_main_loop()
 : <a class="el" href="nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d">nps_main_sitl.c</a>
-, <a class="el" href="nps__main__hitl_8c.html#afa201657c19f3eac2d07487bb11a261d">nps_main_hitl.c</a>
 , <a class="el" href="nps__main_8h.html#afa201657c19f3eac2d07487bb11a261d">nps_main.h</a>
+, <a class="el" href="nps__main__hitl_8c.html#afa201657c19f3eac2d07487bb11a261d">nps_main_hitl.c</a>
 </li>
 <li>nps_main_parse_options()
 : <a class="el" href="nps__main_8h.html#a9e2370130aa6e869a0ed56a22117cf3b">nps_main.h</a>
@@ -1130,8 +1131,8 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 , <a class="el" href="nps__radio__control__joystick_8h.html#a1a151842137fa61f5fdf80e57efa1c97">nps_radio_control_joystick.h</a>
 </li>
 <li>nps_radio_control_spektrum_init()
-: <a class="el" href="nps__radio__control__spektrum_8h.html#a5ef81d6ecf86b47643a0c2f0eae06c6c">nps_radio_control_spektrum.h</a>
-, <a class="el" href="nps__radio__control__spektrum_8c.html#a5ef81d6ecf86b47643a0c2f0eae06c6c">nps_radio_control_spektrum.c</a>
+: <a class="el" href="nps__radio__control__spektrum_8c.html#a5ef81d6ecf86b47643a0c2f0eae06c6c">nps_radio_control_spektrum.c</a>
+, <a class="el" href="nps__radio__control__spektrum_8h.html#a5ef81d6ecf86b47643a0c2f0eae06c6c">nps_radio_control_spektrum.h</a>
 </li>
 <li>nps_sensor_accel_init()
 : <a class="el" href="nps__sensor__accel_8c.html#a39331055a2db55cacdcda037c61c5a89">nps_sensor_accel.c</a>
@@ -1234,8 +1235,11 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 , <a class="el" href="nps__sensors_8h.html#a52657bb9a7ea166d9f6659502c746583">nps_sensors.h</a>
 </li>
 <li>nps_sensors_init()
-: <a class="el" href="nps__sensors_8c.html#a09b47018a69d874a1e3d3876e04f8a8f">nps_sensors.c</a>
-, <a class="el" href="nps__sensors_8h.html#a09b47018a69d874a1e3d3876e04f8a8f">nps_sensors.h</a>
+: <a class="el" href="nps__sensors_8h.html#a09b47018a69d874a1e3d3876e04f8a8f">nps_sensors.h</a>
+, <a class="el" href="nps__sensors_8c.html#a09b47018a69d874a1e3d3876e04f8a8f">nps_sensors.c</a>
+</li>
+<li>nps_sensors_loop()
+: <a class="el" href="nps__hitl__sensors_8c.html#a2ff48957491ba940275783f6afabca55">nps_hitl_sensors.c</a>
 </li>
 <li>nps_sensors_mag_available()
 : <a class="el" href="nps__sensors_8c.html#a52e8a37d2424731646987d22544007d8">nps_sensors.c</a>
@@ -1250,8 +1254,8 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 , <a class="el" href="nps__sensors_8h.html#adf960f9f56eb4fd5ac9d096b591fac7e">nps_sensors.h</a>
 </li>
 <li>nps_sensors_sonar_available()
-: <a class="el" href="nps__sensors_8c.html#a315436c4d4ba6802a27789ffd4ec148d">nps_sensors.c</a>
-, <a class="el" href="nps__sensors_8h.html#ad6979313fac5ae623bcc6320f33c3d55">nps_sensors.h</a>
+: <a class="el" href="nps__sensors_8h.html#ad6979313fac5ae623bcc6320f33c3d55">nps_sensors.h</a>
+, <a class="el" href="nps__sensors_8c.html#a315436c4d4ba6802a27789ffd4ec148d">nps_sensors.c</a>
 </li>
 <li>nps_sensors_temperature_available()
 : <a class="el" href="nps__sensors_8c.html#af63006fb01eb11e0ba786370dccc518e">nps_sensors.c</a>
@@ -1297,7 +1301,7 @@ $(document).ready(function(){initNavTree('globals_func_n.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

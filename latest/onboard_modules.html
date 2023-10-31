@@ -151,6 +151,7 @@ Actuators modules</h2>
 <li><a class="el" href="module__actuators_dualpwm.html">actuators_dualpwm module</a> : Actuators Driver for dual PWM output</li>
 <li><a class="el" href="module__actuators_dummy.html">actuators_dummy module</a> : Dummy actuators driver</li>
 <li><a class="el" href="module__actuators_esc32.html">actuators_esc32 module</a> : Actuators Driver for AutoQuad <a class="el" href="actuators__esc32_8h.html#structESC32">ESC32</a> over CAN</li>
+<li><a class="el" href="module__actuators_hitl.html">actuators_hitl module</a> : Sends commands or actuators for Hardware In The Loop simulation</li>
 <li><a class="el" href="module__actuators_md25.html">actuators_md25 module</a> : Driver for the MD25 rover controller board</li>
 <li><a class="el" href="module__actuators_nps.html">actuators_nps module</a> : Actuators for NPS (dummy pwm)</li>
 <li><a class="el" href="module__actuators_ostrich.html">actuators_ostrich module</a> : Driver for the Ostrich rover controller board</li>
@@ -362,7 +363,6 @@ Gps modules</h2>
 <li><a class="el" href="module__gps_optitrack.html">gps_optitrack module</a> : Optitrack used as indoor GPS.</li>
 <li><a class="el" href="module__gps_piksi.html">gps_piksi module</a> : Swift-Nav Piksi RTK GPS.</li>
 <li><a class="el" href="module__gps_sim.html">gps_sim module</a> : Simulated GPS</li>
-<li><a class="el" href="module__gps_sim_hitl.html">gps_sim_hitl module</a> : Sim HITL GPS</li>
 <li><a class="el" href="module__gps_sirf.html">gps_sirf module</a> : Sirf GPS (UART)</li>
 <li><a class="el" href="module__gps_skytraq.html">gps_skytraq module</a> : Skytraq GPS (UART)</li>
 <li><a class="el" href="module__gps_ublox.html">gps_ublox module</a> : U-blox GPS (UART)</li>
@@ -677,8 +677,10 @@ Sensors modules</h2>
 <li><a class="el" href="module__mag_pitot_uart.html">mag_pitot_uart module</a> : Remotely located magnetometer and pitot tube over uart (RS232) communication</li>
 <li><a class="el" href="module__mag_qmc5883l.html">mag_qmc5883l module</a> : Module to be able to use an QMC5883L magnetometer.</li>
 <li><a class="el" href="module__mag_rm3100.html">mag_rm3100 module</a> : PNI RM3100 magnetometer.</li>
+<li><a class="el" href="module__nps_hitl_sensors.html">nps_hitl_sensors module</a> : Send simulated sensors for HITL (HardwareInTheLoop).</li>
 <li><a class="el" href="module__opticflow_pmw3901.html">opticflow_pmw3901 module</a> : Driver for PMW3901 optical flow sensor</li>
 <li><a class="el" href="module__rpm_sensor.html">rpm_sensor module</a> : RPM sensor based on time difference between pulses</li>
+<li><a class="el" href="module__sensors_hitl.html">sensors_hitl module</a> : Simulated sensors for HITL (HardwareInTheLoop).</li>
 <li><a class="el" href="module__temp_adc.html">temp_adc module</a> : Temperature ADC</li>
 </ul>
 <h2><a class="anchor" id=""></a>
@@ -798,7 +800,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

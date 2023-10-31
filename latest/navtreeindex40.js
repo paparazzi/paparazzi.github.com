@@ -1,16 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"crazyflie_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,4,0,0,1,42],
-"crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69],
-"crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,4,0,0,1,109],
-"crazyflie_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0":[12,0,1,0,1,4,0,0,1,9],
-"crazyflie_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,4,0,0,1,58],
-"crazyflie_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,4,0,0,1,50],
-"crazyflie_8h.html#a9914c116b1e93a66882b48999c8efcd9":[12,0,1,0,1,4,0,0,1,7],
-"crazyflie_8h.html#a9b407aa30f1e3cf5bda8e8433315b7c4":[12,0,1,0,1,4,0,0,1,11],
-"crazyflie_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,4,0,0,1,106],
-"crazyflie_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa":[12,0,1,0,1,4,0,0,1,86],
-"crazyflie_8h.html#aa5ea83d926a661df064db0e68bc60690":[12,0,1,0,1,4,0,0,1,29],
 "crazyflie_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,4,0,0,1,26],
 "crazyflie_8h.html#aa6c753c425e10973deb0ae6a3cba0df3":[12,0,1,0,1,4,0,0,1,12],
 "crazyflie_8h.html#aa74338bcd6fb2d92e8da4797d14dea13":[12,0,1,0,1,4,0,0,1,87],
@@ -249,5 +238,16 @@ var NAVTREEINDEX40 =
 "ctrl__eff__sched__rot__wing_8h.html#aa6b26464c2bd9cfeda43d4610167c6c6":[12,0,1,0,6,13,3,1,1],
 "ctrl__eff__sched__rot__wing_8h.html#ab8dcde54dfec82f4a9ee88a6eaa9ec7f":[12,0,1,0,6,13,3,1,5],
 "ctrl__eff__sched__rot__wing_8h.html#ac122cce6b57a3b628a0a94ccb622b341":[12,0,1,0,6,13,3,5],
-"ctrl__eff__sched__rot__wing_8h.html#ad0f3aaba927457d3bb0962a08c2f025d":[12,0,1,0,6,13,3,0,3]
+"ctrl__eff__sched__rot__wing_8h.html#ad0f3aaba927457d3bb0962a08c2f025d":[12,0,1,0,6,13,3,0,3],
+"ctrl__eff__sched__rot__wing_8h.html#ad2aa7d960c4d5fd18a662aa6f5aff9d1":[12,0,1,0,6,13,3,0,5],
+"ctrl__eff__sched__rot__wing_8h.html#ad737d99b91821549a691e96d12624581":[12,0,1,0,6,13,3,1,2],
+"ctrl__eff__sched__rot__wing_8h.html#ad9852e6dbf1afa41908d0fab603a716d":[12,0,1,0,6,13,3,1,7],
+"ctrl__eff__sched__rot__wing_8h.html#ae289804af81d05171d2dc0486c575f9d":[12,0,1,0,6,13,3,1,6],
+"ctrl__eff__sched__rot__wing_8h.html#ae3040cf3d276c8e1476d98a01139137e":[12,0,1,0,6,13,3,1,4],
+"ctrl__eff__sched__rot__wing_8h.html#ae8abb7feac6b1daa9815a23db45a27ff":[12,0,1,0,6,13,3,0,1],
+"ctrl__eff__sched__rot__wing_8h.html#af7fe55b59cea14880269192c7b7e8588":[12,0,1,0,6,13,3,0,7],
+"ctrl__eff__sched__rot__wing_8h.html#structrot__wing__eff__sched__param__t":[12,0,1,0,6,13,3,0],
+"ctrl__eff__sched__rot__wing_8h.html#structrot__wing__eff__sched__var__t":[12,0,1,0,6,13,3,1],
+"ctrl__eff__sched__rot__wing_8h_source.html":[12,0,1,0,6,13,3],
+"ctrl__effectiveness__scheduling_8c.html":[12,0,1,0,6,13,4]
 };

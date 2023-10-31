@@ -128,16 +128,12 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2uart__arch_8c.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3eff2a82ddc632e5626c04ad4e717e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_periph_set_baudrate</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> baud)</td></tr>
-<tr class="memdesc:a3eff2a82ddc632e5626c04ad4e717e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set baudrate.  <a href="stm32_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">More...</a><br /></td></tr>
 <tr class="separator:a3eff2a82ddc632e5626c04ad4e717e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cdaf8266fcef9b52d422621b36413d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">uart_periph_set_bits_stop_parity</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> bits, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> stop, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> parity)</td></tr>
-<tr class="memdesc:a0cdaf8266fcef9b52d422621b36413d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parity and stop bits.  <a href="stm32_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6">More...</a><br /></td></tr>
 <tr class="separator:a0cdaf8266fcef9b52d422621b36413d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c8427d611bb45f1d3ba4e5ecc6654e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#a39c8427d611bb45f1d3ba4e5ecc6654e">uart_periph_set_mode</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, bool tx_enabled, bool rx_enabled, bool hw_flow_control)</td></tr>
-<tr class="memdesc:a39c8427d611bb45f1d3ba4e5ecc6654e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mode (not necessary, or can be set by SerialConfig)  <a href="stm32_2mcu__periph_2uart__arch_8c.html#a39c8427d611bb45f1d3ba4e5ecc6654e">More...</a><br /></td></tr>
 <tr class="separator:a39c8427d611bb45f1d3ba4e5ecc6654e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d332312effc31e88e688471daf02a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5">uart_put_byte</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
-<tr class="memdesc:a47d332312effc31e88e688471daf02a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart transmit implementation.  <a href="stm32_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5">More...</a><br /></td></tr>
 <tr class="separator:a47d332312effc31e88e688471daf02a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ce3e25719e0b3fc9b7b71fc1685625"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html#ad0ce3e25719e0b3fc9b7b71fc1685625">usart_isr</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="separator:ad0ce3e25719e0b3fc9b7b71fc1685625"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +170,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Set baudrate. </p>
 
 <p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00042">42</a> of file <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
@@ -221,8 +215,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set parity and stop bits. </p>
-
 <p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00063">63</a> of file <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="serial__port_8c_source.html#l00049">UBITS_7</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, <a class="el" href="serial__port_8c_source.html#l00056">UPARITY_ODD</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
@@ -267,11 +259,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set mode (not necessary, or can be set by SerialConfig) </p>
-
 <p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00092">92</a> of file <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="hott_2hott_8c_source.html#l00117">hott_enable_receiver()</a>, and <a class="el" href="hott_2hott_8c_source.html#l00111">hott_enable_transmitter()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stm32_2mcu__periph_2uart__arch_8c_a39c8427d611bb45f1d3ba4e5ecc6654e_icgraph.png" border="0" usemap="#astm32_2mcu__periph_2uart__arch_8c_a39c8427d611bb45f1d3ba4e5ecc6654e_icgraph" alt=""/></div>
+<map name="astm32_2mcu__periph_2uart__arch_8c_a39c8427d611bb45f1d3ba4e5ecc6654e_icgraph" id="astm32_2mcu__periph_2uart__arch_8c_a39c8427d611bb45f1d3ba4e5ecc6654e_icgraph">
+<area shape="rect" title=" " alt="" coords="812,31,979,57"/>
+<area shape="rect" href="hott_2hott_8c.html#a294b9a63370b058e7fbf22d6b9432553" title=" " alt="" coords="595,5,754,32"/>
+<area shape="rect" href="hott_2hott_8c.html#a4c59fc8220700c7af17e48e3d40d4a38" title=" " alt="" coords="585,56,764,83"/>
+<area shape="rect" href="hott_2hott_8c.html#a2dab589532cc67049d57fa67684616c8" title=" " alt="" coords="344,31,537,57"/>
+<area shape="rect" href="hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="145,31,296,57"/>
+<area shape="rect" href="hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="5,31,97,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -306,8 +313,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Uart transmit implementation. </p>
 
 <p class="definition">Definition at line <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00112">112</a> of file <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
@@ -379,7 +384,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2uart__arch_8c.html">uart_arch.c</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:50:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

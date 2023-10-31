@@ -18,6 +18,6 @@ var dir_b82140776176b28f52d7ab660bc0e8ab =
     [ "spi_arch.h", "chibios_2mcu__periph_2spi__arch_8h.html", null ],
     [ "sys_time_arch.c", "chibios_2mcu__periph_2sys__time__arch_8c.html", "chibios_2mcu__periph_2sys__time__arch_8c" ],
     [ "sys_time_arch.h", "chibios_2mcu__periph_2sys__time__arch_8h.html", "chibios_2mcu__periph_2sys__time__arch_8h" ],
-    [ "uart_arch.c", "chibios_2mcu__periph_2uart__arch_8c.html", "chibios_2mcu__periph_2uart__arch_8c" ],
+    [ "uart_arch.c", "chibios_2mcu__periph_2uart__arch_8c.html", null ],
     [ "uart_arch.h", "chibios_2mcu__periph_2uart__arch_8h.html", "chibios_2mcu__periph_2uart__arch_8h" ]
 ];

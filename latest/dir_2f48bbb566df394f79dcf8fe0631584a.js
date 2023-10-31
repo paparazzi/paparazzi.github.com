@@ -77,6 +77,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "opticflow_pmw3901.h", "opticflow__pmw3901_8h.html", "opticflow__pmw3901_8h" ],
     [ "rpm_sensor.c", "rpm__sensor_8c.html", "rpm__sensor_8c" ],
     [ "rpm_sensor.h", "rpm__sensor_8h.html", "rpm__sensor_8h" ],
+    [ "sensors_hitl.c", "sensors__hitl_8c.html", "sensors__hitl_8c" ],
+    [ "sensors_hitl.h", "sensors__hitl_8h.html", "sensors__hitl_8h" ],
     [ "temp_adc.c", "temp__adc_8c.html", "temp__adc_8c" ],
     [ "temp_adc.h", "temp__adc_8h.html", "temp__adc_8h" ]
 ];

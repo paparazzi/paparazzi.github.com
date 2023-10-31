@@ -139,7 +139,7 @@ Raw dfu_command.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dfu_command.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">event</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;dfu_command_event()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!fbw|sim|nps|hitl&quot;</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;!fbw|sim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERIAL_TTY&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;/dev/ttyACM0&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DFU_PRE_UPLOAD_CMD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;@(printf &#39;\043\012&#39; $(REDIRECT) $(SERIAL_TTY) $(AND) sleep 1 $(AND) printf &#39;bl\012&#39; $(REDIRECT) $(SERIAL_TTY) $(AND) sleep 1) $(OR) echo &#39;Warning: DFU command failed!&#39;&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DFU_UTIL_PRE_UPLOAD_CMD&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;@(printf &#39;\043\012&#39; $(REDIRECT) $(SERIAL_TTY) $(AND) sleep 1 $(AND) printf &#39;bl\012&#39; $(REDIRECT) $(SERIAL_TTY) $(AND) sleep 1) $(OR) echo &#39;Warning: DFU command failed!&#39;&quot;</span>/&gt;</div>
@@ -156,7 +156,7 @@ Raw dfu_command.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:06 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

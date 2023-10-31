@@ -24,6 +24,7 @@ var nps__main_8h =
     [ "SIM_DT", "nps__main_8h.html#aae9dac26905ad0476f41c25a333f0839", null ],
     [ "cont_hdl", "nps__main_8h.html#a61cf140bea933e01e341e54d1dbaa058", null ],
     [ "nps_flight_gear_loop", "nps__main_8h.html#a09501c15e6e1dd4d027eb3fc37787a4c", null ],
+    [ "nps_hitl_impl_init", "nps__main_8h.html#aae868fe3ab60cc9a005166bd96156b1c", null ],
     [ "nps_main_display", "nps__main_8h.html#a972dce1950de5bd5fd3d73b932a72e36", null ],
     [ "nps_main_init", "nps__main_8h.html#a92aad3720fb482042b695d66e633699a", null ],
     [ "nps_main_loop", "nps__main_8h.html#afa201657c19f3eac2d07487bb11a261d", null ],

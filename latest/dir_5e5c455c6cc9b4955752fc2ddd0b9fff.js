@@ -16,8 +16,6 @@ var dir_5e5c455c6cc9b4955752fc2ddd0b9fff =
     [ "gps_piksi.h", "gps__piksi_8h.html", "gps__piksi_8h" ],
     [ "gps_sim.c", "gps__sim_8c.html", "gps__sim_8c" ],
     [ "gps_sim.h", "gps__sim_8h.html", "gps__sim_8h" ],
-    [ "gps_sim_hitl.c", "gps__sim__hitl_8c.html", "gps__sim__hitl_8c" ],
-    [ "gps_sim_hitl.h", "gps__sim__hitl_8h.html", "gps__sim__hitl_8h" ],
     [ "gps_sim_nps.c", "gps__sim__nps_8c.html", "gps__sim__nps_8c" ],
     [ "gps_sim_nps.h", "gps__sim__nps_8h.html", "gps__sim__nps_8h" ],
     [ "gps_sirf.c", "gps__sirf_8c.html", "gps__sirf_8c" ],

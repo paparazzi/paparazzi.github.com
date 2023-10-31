@@ -164,7 +164,7 @@ Macros</h2></td></tr>
 <tr class="separator:a209a5df2f3b2ca2cff354b8b96f2cd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af174d6cd94fda273df23563c16e21b57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xsens__parser_8h.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(c)&#160;&#160;&#160;{ <a class="el" href="xsens__parser_8h.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> += c; }</td></tr>
 <tr class="separator:af174d6cd94fda273df23563c16e21b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94186f5c011013a6547f522974303cec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xsens__parser_8h.html#a94186f5c011013a6547f522974303cec">XsensUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;put_byte(<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;periph, 0, c)</td></tr>
+<tr class="memitem:a94186f5c011013a6547f522974303cec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xsens__parser_8h.html#a94186f5c011013a6547f522974303cec">XsensUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;periph, 0, c)</td></tr>
 <tr class="separator:a94186f5c011013a6547f522974303cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1346c87fd145b7be76f9ea35147f67d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xsens__parser_8h.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(c)&#160;&#160;&#160;{ <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=c; <a class="el" href="xsens__parser_8h.html#a94186f5c011013a6547f522974303cec">XsensUartSend1</a>(i8); <a class="el" href="xsens__parser_8h.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(i8); }</td></tr>
 <tr class="separator:a1346c87fd145b7be76f9ea35147f67d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -569,7 +569,7 @@ status</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">c</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;put_byte(<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;periph, 0, c)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;<a class="el" href="nps__hitl__sensors_8c.html#afeadfc5bf4101ed597c161b53eadb505">put_byte</a>(<a class="el" href="xsens__parser_8h.html#ae0b376bd2fdfdbf63f55d8ef7abe1df5">XsensLinkDevice</a>-&gt;periph, 0, c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -678,7 +678,7 @@ status</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="xsens__parser_8h.html">xsens_parser.h</a></li>
-    <li class="footer">Generated on Fri Oct 27 2023 09:51:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 13:55:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,14 @@
 var NAVTREEINDEX9 =
 {
+"ak8963__regs_8h.html#a5b505012658e64ec4a870faa01ac4136":[12,0,1,0,7,12,14],
+"ak8963__regs_8h.html#a5ebb126b5afe98c36bea0cd2bbc363e0":[12,0,1,0,7,12,18],
+"ak8963__regs_8h.html#a6c26acf709d0ca50665675ce16574232":[12,0,1,0,7,12,17],
+"ak8963__regs_8h.html#a7453f684e1e22c8b3771c98bfc672f9c":[12,0,1,0,7,12,3],
+"ak8963__regs_8h.html#a7c93b7557ea4731d18f4697056a22c2d":[12,0,1,0,7,12,20],
+"ak8963__regs_8h.html#a9b8d4621216d9a3d1366bd7038208dd3":[12,0,1,0,7,12,10],
+"ak8963__regs_8h.html#aa240e6cad7cc93da78d793ac4433f3f7":[12,0,1,0,7,12,9],
+"ak8963__regs_8h.html#abd12bbbc58c9cbc8f56c160444ba8896":[12,0,1,0,7,12,24],
+"ak8963__regs_8h.html#abe8bffac6f28d6df0c44f86c397438e2":[12,0,1,0,7,12,21],
 "ak8963__regs_8h.html#acc370664881faa50f9b562674a21b7d9":[12,0,1,0,7,12,5],
 "ak8963__regs_8h.html#ad3697d3562ea97ed3aa86e219c74e1ff":[12,0,1,0,7,12,22],
 "ak8963__regs_8h.html#adb133e52628c1273e0dd3d235c74078c":[12,0,1,0,7,12,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX9 =
 "aoa__pwm_8h.html#a200c6df581a7f7377cb6f17e98fa726a":[12,0,1,0,6,60,24,0,4],
 "aoa__pwm_8h.html#a2ba3b9042068f30280fb39813bf2638e":[12,0,1,0,6,60,24,6],
 "aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877f":[12,0,1,0,6,60,24,1],
-"aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877fa341340eec3418243c552f5fac334f01b":[12,0,1,0,6,60,24,1,1],
-"aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877fad8aa717e7e6cd0f5860564f6f6e6ed1c":[12,0,1,0,6,60,24,1,0],
-"aoa__pwm_8h.html#a3ce62a812d52b7876bed79f764ee5235":[12,0,1,0,6,60,24,0,0],
-"aoa__pwm_8h.html#a476071eccbdd52bf91879354f450ec4c":[12,0,1,0,6,60,24,0,2],
-"aoa__pwm_8h.html#a5ec02f062e99b4bee477baff537e006d":[12,0,1,0,6,60,24,2],
-"aoa__pwm_8h.html#ab594069977e44bb9cfedb7aadd00c6db":[12,0,1,0,6,60,24,4],
-"aoa__pwm_8h.html#ad218f9a74fbec56f87dd18f493fc01e3":[12,0,1,0,6,60,24,3],
-"aoa__pwm_8h.html#ad4525ad9638ff73a1ef4d214ded9aaab":[12,0,1,0,6,60,24,5],
-"aoa__pwm_8h.html#ae4402220d13d53d3ef4072ed99ffc49d":[12,0,1,0,6,60,24,0,3],
-"aoa__pwm_8h.html#afbad26a2eba59ddacf1969475a035cee":[12,0,1,0,6,60,24,0,1]
+"aoa__pwm_8h.html#a345c37618c011c46e5620d6c99eb877fa341340eec3418243c552f5fac334f01b":[12,0,1,0,6,60,24,1,1]
 };

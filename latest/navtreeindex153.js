@@ -1,17 +1,5 @@
 var NAVTREEINDEX153 =
 {
-"navdata_8h.html#structbmp180__calib__t":[12,0,1,0,1,1,7,1],
-"navdata_8h.html#structnavdata__measure__t":[12,0,1,0,1,1,7,0],
-"navdata_8h.html#structnavdata__t":[12,0,1,0,1,1,7,2],
-"navdata_8h_source.html":[12,0,1,0,1,1,7],
-"navstik__1_80_8h.html":[12,0,1,0,1,48],
-"navstik__1_80_8h.html#a01ac9d2f00660408bcc8c809020904f9":[12,0,1,0,1,48,8],
-"navstik__1_80_8h.html#a01f35b990dd64f2a26f879a0757dea09":[12,0,1,0,1,48,73],
-"navstik__1_80_8h.html#a0510f76eb567391e9c3e4185cc695628":[12,0,1,0,1,48,20],
-"navstik__1_80_8h.html#a0586532d3b207eaa44f525856e359f1d":[12,0,1,0,1,48,4],
-"navstik__1_80_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a":[12,0,1,0,1,48,76],
-"navstik__1_80_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b":[12,0,1,0,1,48,54],
-"navstik__1_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c":[12,0,1,0,1,48,112],
 "navstik__1_80_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,48,1],
 "navstik__1_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133":[12,0,1,0,1,48,111],
 "navstik__1_80_8h.html#a0ea4845cec9e43fa49b1169d0c2c32d5":[12,0,1,0,1,48,9],
@@ -249,5 +237,17 @@ var NAVTREEINDEX153 =
 "naze32__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377":[12,0,1,0,1,49,62],
 "naze32__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24":[12,0,1,0,1,49,72],
 "naze32__common_8h.html#acdff8432bd4f84cbc5ed4832ac36eca7":[12,0,1,0,1,49,64],
-"naze32__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e":[12,0,1,0,1,49,65]
+"naze32__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e":[12,0,1,0,1,49,65],
+"naze32__common_8h.html#ad2aa2755e250074295573801fe54cf9a":[12,0,1,0,1,49,15],
+"naze32__common_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce":[12,0,1,0,1,49,30],
+"naze32__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,49,8],
+"naze32__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f":[12,0,1,0,1,49,71],
+"naze32__common_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012":[12,0,1,0,1,49,87],
+"naze32__common_8h.html#ae10dee273909cfd97fce818474ddf186":[12,0,1,0,1,49,4],
+"naze32__common_8h.html#ae40a4e27a94283e513359632ceea8de0":[12,0,1,0,1,49,34],
+"naze32__common_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,49,102],
+"naze32__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e":[12,0,1,0,1,49,50],
+"naze32__common_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,49,97],
+"naze32__common_8h.html#ae926e4829833fe67cd614cd513096808":[12,0,1,0,1,49,81],
+"naze32__common_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70":[12,0,1,0,1,49,91]
 };
