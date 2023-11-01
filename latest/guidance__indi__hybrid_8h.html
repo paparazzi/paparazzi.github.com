@@ -417,9 +417,22 @@ speed_gainz</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The derivative of lift w.r.t. pitch </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00911">911</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00906">906</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 <p class="reference">References <a class="el" href="guidance__indi__hybrid_8c_source.html#l00071">gih_params</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00076">guidance_indi_hybrid_params::liftd_asq</a>, <a class="el" href="guidance__indi__hybrid_8h_source.html#l00078">guidance_indi_hybrid_params::liftd_p50</a>, and <a class="el" href="guidance__indi__hybrid_8h_source.html#l00077">guidance_indi_hybrid_params::liftd_p80</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00802">guidance_indi_calcg_wing()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="guidance__indi__hybrid_8h_a1bc7f33a3c8fd2d64a49fdeafc6f48fe_icgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_a1bc7f33a3c8fd2d64a49fdeafc6f48fe_icgraph" alt=""/></div>
+<map name="aguidance__indi__hybrid_8h_a1bc7f33a3c8fd2d64a49fdeafc6f48fe_icgraph" id="aguidance__indi__hybrid_8h_a1bc7f33a3c8fd2d64a49fdeafc6f48fe_icgraph">
+<area shape="rect" title="Get the derivative of lift w.r.t." alt="" coords="244,5,416,32"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html#a5ba3ee3c85f16baadfccd3feacfbaaa0" title="Calculate the matrix of partial derivatives of the roll, pitch and thrust w.r.t." alt="" coords="5,5,196,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -456,13 +469,12 @@ speed_gainz</td>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">body_v</td><td></td></tr>
+    <tr><td class="paramname">body_v</td><td>WEAK function to set the quadplane wls settings </td></tr>
   </table>
   </dd>
 </dl>
-<p>WEAK function to set the quadplane wls settings </p>
 
-<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00899">899</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00894">894</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
 </div>
 </div>
@@ -486,12 +498,12 @@ speed_gainz</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi_8c_source.html#l00147">147</a> of file <a class="el" href="guidance__indi_8c_source.html">guidance_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00427">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00070">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00209">filter_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00068">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid__quadplanes_8h_source.html#l00028">GUIDANCE_INDI_HYBRID_V</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00231">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00126">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00943">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00221">vel_sp_ev</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="guidance__indi_8c_source.html#l00427">accel_sp_cb()</a>, <a class="el" href="guidance__indi_8c_source.html#l00070">accel_sp_ev</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00183">accely_filt</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00179">filt_accel_ned</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00209">filter_cutoff</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00188">Ga</a>, <a class="el" href="guidance__indi_8c_source.html#l00068">GUIDANCE_INDI_ACCEL_SP_ID</a>, <a class="el" href="guidance__indi__hybrid__quadplanes_8h_source.html#l00028">GUIDANCE_INDI_HYBRID_V</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00219">GUIDANCE_INDI_VEL_SP_ID</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00181">pitch_filt</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00180">roll_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00231">send_guidance_indi_hybrid()</a>, <a class="el" href="guidance__indi_8c_source.html#l00126">send_indi_guidance()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00182">thrust_filt</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00938">vel_sp_cb()</a>, and <a class="el" href="guidance__indi__hybrid_8c_source.html#l00221">vel_sp_ev</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph.png" border="0" usemap="#aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph" alt=""/></div>
 <map name="aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph" id="aguidance__indi__hybrid_8h_aa1f448d3b1322b6c0bd3d84dbb5cf603_cgraph">
 <area shape="rect" title="Init function." alt="" coords="5,151,145,178"/>
@@ -738,7 +750,7 @@ speed_gainz</td>
 
 <p class="definition">Definition at line <a class="el" href="guidance__indi__hybrid_8c_source.html#l00001">1</a> of file <a class="el" href="guidance__indi__hybrid_8c_source.html">guidance_indi_hybrid.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00911">guidance_indi_get_liftd()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00185">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00061">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00097">nav_hybrid_route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__indi__hybrid_8c_source.html#l00906">guidance_indi_get_liftd()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00185">nav_hybrid_circle()</a>, <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00061">nav_hybrid_goto()</a>, and <a class="el" href="nav__rotorcraft__hybrid_8c_source.html#l00097">nav_hybrid_route()</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1016,7 @@ speed_gainz</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__indi__hybrid_8h.html">guidance_indi_hybrid.h</a></li>
-    <li class="footer">Generated on Tue Oct 31 2023 13:55:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 1 2023 09:21:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
