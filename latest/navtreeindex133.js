@@ -1,13 +1,16 @@
 var NAVTREEINDEX133 =
 {
-"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,181,0,0],
+"module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1":[1,180,0,0],
+"module__imu_aspirin_v1_0.html":[1,181],
+"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,181,0],
 "module__imu_aspirin_v1_5.html":[1,182],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,182,0],
+"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,182,0,0],
 "module__imu_aspirin_v2_1.html":[1,183],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,183,0],
-"module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,183,0,0],
 "module__imu_aspirin_v2_2.html":[1,184],
 "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2":[1,184,0],
+"module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2":[1,184,0,0],
 "module__imu_aspirin_v2_common.html":[1,185],
 "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common":[1,185,1],
 "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common":[1,185,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX133 =
 "module__intermcu_iomcu.html#module_xml__intermcu_iomcu":[1,235,1,0],
 "module__intermcu_uart.html":[1,236],
 "module__intermcu_uart.html#configuration__intermcu_uart":[1,236,1],
-"module__intermcu_uart.html#datalink_functions__intermcu_uart":[1,236,3],
-"module__intermcu_uart.html#functions__intermcu_uart":[1,236,2],
-"module__intermcu_uart.html#module_load_example__intermcu_uart":[1,236,0],
-"module__intermcu_uart.html#module_xml__intermcu_uart":[1,236,3,0]
+"module__intermcu_uart.html#datalink_functions__intermcu_uart":[1,236,3]
 };

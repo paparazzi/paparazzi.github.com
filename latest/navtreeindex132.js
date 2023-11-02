@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"module__gpio_ext_common.html":[1,142],
 "module__gpio_ext_common.html#module_load_example__gpio_ext_common":[1,142,0],
 "module__gpio_ext_common.html#module_xml__gpio_ext_common":[1,142,0,0],
 "module__gpio_ext_pca95xx.html":[1,143],
@@ -19,9 +20,11 @@ var NAVTREEINDEX132 =
 "module__gps_datalink.html#module_xml__gps_datalink":[1,145,2,0],
 "module__gps_furuno.html":[1,146],
 "module__gps_furuno.html#configuration__gps_furuno":[1,146,1],
+"module__gps_furuno.html#configure":[1,146,1,0],
+"module__gps_furuno.html#event_functions":[1,146,2,0],
 "module__gps_furuno.html#functions__gps_furuno":[1,146,2],
 "module__gps_furuno.html#module_load_example__gps_furuno":[1,146,0],
-"module__gps_furuno.html#module_xml__gps_furuno":[1,146,2,0],
+"module__gps_furuno.html#module_xml__gps_furuno":[1,146,2,1],
 "module__gps_intermcu.html":[1,147],
 "module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,147,2],
 "module__gps_intermcu.html#functions__gps_intermcu":[1,147,1],
@@ -245,9 +248,6 @@ var NAVTREEINDEX132 =
 "module__imu_aspirin_i2c_v1_0.html":[1,179],
 "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0":[1,179,1],
 "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0":[1,179,0],
-"module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1":[1,179,1,0],
 "module__imu_aspirin_i2c_v1_5.html":[1,180],
-"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,180,0],
-"module__imu_aspirin_v1_0.html":[1,181],
-"module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,181,0]
+"module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,180,0]
 };

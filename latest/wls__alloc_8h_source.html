@@ -113,24 +113,34 @@ $(document).ready(function(){initNavTree('wls__alloc_8h_source.html',''); initRe
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef WLS_ALLOC_HEADER</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define WLS_ALLOC_HEADER</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">wls_alloc</a>(<span class="keywordtype">float</span>* u, <span class="keywordtype">float</span>* v,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              <span class="keywordtype">float</span>* umin, <span class="keywordtype">float</span>* umax, <span class="keywordtype">float</span>** <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              <span class="keywordtype">float</span>* u_guess, <span class="keywordtype">float</span>* W_init, <span class="keywordtype">float</span>* <a class="code" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, <span class="keywordtype">float</span>* Wu,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              <span class="keywordtype">float</span>* ud, <span class="keywordtype">float</span> gamma, <span class="keywordtype">int</span> imax, <span class="keywordtype">int</span> n_u, <span class="keywordtype">int</span> n_v);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifndef WLS_N_U</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="wls__alloc_8h.html#a27c5da388f672376822a17defcadea2a">   58</a></span>&#160;<span class="preprocessor">#define WLS_N_U 6</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifndef WLS_N_V</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="wls__alloc_8h.html#ab77f5a5234e67a9e9ae11a1611700414">   62</a></span>&#160;<span class="preprocessor">#define WLS_N_V 4</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">wls_alloc</a>(<span class="keywordtype">float</span>* u, <span class="keywordtype">float</span>* v,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;              <span class="keywordtype">float</span>* umin, <span class="keywordtype">float</span>* umax, <span class="keywordtype">float</span>** <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              <span class="keywordtype">float</span>* u_guess, <span class="keywordtype">float</span>* W_init, <span class="keywordtype">float</span>* <a class="code" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, <span class="keywordtype">float</span>* Wu,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;              <span class="keywordtype">float</span>* ud, <span class="keywordtype">float</span> gamma, <span class="keywordtype">int</span> imax, <span class="keywordtype">int</span> n_u, <span class="keywordtype">int</span> n_v);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00101">ahrs_float_invariant.c:101</a></div></div>
 <div class="ttc" id="astabilization__indi_8c_html_a135981fcec0a59310c170cfdb95e491d"><div class="ttname"><a href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a></div><div class="ttdeci">static float Wv[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00174">stabilization_indi.c:174</a></div></div>
-<div class="ttc" id="awls__alloc_8h_html_a4b0f7bacd1d0551a17bea62d7b665c20"><div class="ttname"><a href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">wls_alloc</a></div><div class="ttdeci">int wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax, int n_u, int n_v)</div><div class="ttdoc">active set algorithm for control allocation</div><div class="ttdef"><b>Definition:</b> <a href="wls__alloc_8c_source.html#l00115">wls_alloc.c:115</a></div></div>
+<div class="ttc" id="awls__alloc_8h_html_a4b0f7bacd1d0551a17bea62d7b665c20"><div class="ttname"><a href="wls__alloc_8h.html#a4b0f7bacd1d0551a17bea62d7b665c20">wls_alloc</a></div><div class="ttdeci">int wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax, int n_u, int n_v)</div><div class="ttdoc">active set algorithm for control allocation</div><div class="ttdef"><b>Definition:</b> <a href="wls__alloc_8c_source.html#l00108">wls_alloc.c:108</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="dir_80cbdabaa34c366b9f01eeb4ee10e21e.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8h.html">wls_alloc.h</a></li>
-    <li class="footer">Generated on Wed Nov 1 2023 20:50:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Nov 2 2023 10:50:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

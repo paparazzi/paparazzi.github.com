@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__radio_control_sbus.html#configuration__radio_control_sbus":[1,353,1],
+"module__radio_control_sbus.html#functions__radio_control_sbus":[1,353,2],
+"module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,353,0],
+"module__radio_control_sbus.html#module_xml__radio_control_sbus":[1,353,2,0],
+"module__radio_control_sbus_dual.html":[1,354],
+"module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual":[1,354,1],
 "module__radio_control_sbus_dual.html#functions__radio_control_sbus_dual":[1,354,2],
 "module__radio_control_sbus_dual.html#module_load_example__radio_control_sbus_dual":[1,354,0],
 "module__radio_control_sbus_dual.html#module_xml__radio_control_sbus_dual":[1,354,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "module__tag_tracking.html#module_xml__tag_tracking":[1,65,3,0],
 "module__takeoff_detect.html":[1,340],
 "module__takeoff_detect.html#configuration__takeoff_detect":[1,340,1],
-"module__takeoff_detect.html#functions__takeoff_detect":[1,340,2],
-"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,340,0],
-"module__takeoff_detect.html#module_xml__takeoff_detect":[1,340,2,0],
-"module__target_pos.html":[1,98],
-"module__target_pos.html#configuration__target_pos":[1,98,1],
-"module__target_pos.html#datalink_functions__target_pos":[1,98,3],
-"module__target_pos.html#functions__target_pos":[1,98,2]
+"module__takeoff_detect.html#functions__takeoff_detect":[1,340,2]
 };

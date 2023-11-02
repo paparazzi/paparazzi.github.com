@@ -1,5 +1,8 @@
 var NAVTREEINDEX134 =
 {
+"module__intermcu_uart.html#functions__intermcu_uart":[1,236,2],
+"module__intermcu_uart.html#module_load_example__intermcu_uart":[1,236,0],
+"module__intermcu_uart.html#module_xml__intermcu_uart":[1,236,3,0],
 "module__ir_mlx.html":[1,278],
 "module__ir_mlx.html#functions__ir_mlx":[1,278,1],
 "module__ir_mlx.html#module_load_example__ir_mlx":[1,278,0],
@@ -215,9 +218,13 @@ var NAVTREEINDEX134 =
 "module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,305,0],
 "module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,305,3,0],
 "module__nav_basic_rotorcraft.html":[1,306],
+"module__nav_basic_rotorcraft.html#files":[1,306,2],
 "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,306,1],
+"module__nav_basic_rotorcraft.html#headers":[1,306,2,0],
+"module__nav_basic_rotorcraft.html#init_functions":[1,306,1,0],
 "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,306,0],
-"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,306,1,0],
+"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,306,2,2],
+"module__nav_basic_rotorcraft.html#sources":[1,306,2,1],
 "module__nav_bungee_takeoff.html":[1,307],
 "module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff":[1,307,1],
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,307,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX134 =
 "module__nav_flower.html#functions__nav_flower":[1,312,1],
 "module__nav_flower.html#module_load_example__nav_flower":[1,312,0],
 "module__nav_flower.html#module_xml__nav_flower":[1,312,1,0],
-"module__nav_gls.html":[1,313],
-"module__nav_gls.html#module_load_example__nav_gls":[1,313,0],
-"module__nav_gls.html#module_xml__nav_gls":[1,313,0,0],
-"module__nav_heli_spinup.html":[1,314],
-"module__nav_heli_spinup.html#module_load_example__nav_heli_spinup":[1,314,0],
-"module__nav_heli_spinup.html#module_xml__nav_heli_spinup":[1,314,0,0],
-"module__nav_hybrid.html":[1,315],
-"module__nav_hybrid.html#configuration__nav_hybrid":[1,315,1]
+"module__nav_gls.html":[1,313]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX135 =
 {
+"module__nav_gls.html#module_load_example__nav_gls":[1,313,0],
+"module__nav_gls.html#module_xml__nav_gls":[1,313,0,0],
+"module__nav_heli_spinup.html":[1,314],
+"module__nav_heli_spinup.html#module_load_example__nav_heli_spinup":[1,314,0],
+"module__nav_heli_spinup.html#module_xml__nav_heli_spinup":[1,314,0,0],
+"module__nav_hybrid.html":[1,315],
+"module__nav_hybrid.html#configuration__nav_hybrid":[1,315,1],
 "module__nav_hybrid.html#functions__nav_hybrid":[1,315,2],
 "module__nav_hybrid.html#module_load_example__nav_hybrid":[1,315,0],
 "module__nav_hybrid.html#module_xml__nav_hybrid":[1,315,2,0],
@@ -38,10 +45,9 @@ var NAVTREEINDEX135 =
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,324,0],
 "module__nav_rover_base.html#module_xml__nav_rover_base":[1,324,2,0],
 "module__nav_skid_landing.html":[1,325],
-"module__nav_skid_landing.html#af_section":[1,325,1,0],
 "module__nav_skid_landing.html#configuration__nav_skid_landing":[1,325,1],
 "module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,325,0],
-"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,325,1,1],
+"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,325,1,0],
 "module__nav_smooth.html":[1,326],
 "module__nav_smooth.html#module_load_example__nav_smooth":[1,326,0],
 "module__nav_smooth.html#module_xml__nav_smooth":[1,326,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX135 =
 "module__radio_control_ppm.html#functions__radio_control_ppm":[1,352,2],
 "module__radio_control_ppm.html#module_load_example__radio_control_ppm":[1,352,0],
 "module__radio_control_ppm.html#module_xml__radio_control_ppm":[1,352,2,0],
-"module__radio_control_sbus.html":[1,353],
-"module__radio_control_sbus.html#configuration__radio_control_sbus":[1,353,1],
-"module__radio_control_sbus.html#functions__radio_control_sbus":[1,353,2],
-"module__radio_control_sbus.html#module_load_example__radio_control_sbus":[1,353,0],
-"module__radio_control_sbus.html#module_xml__radio_control_sbus":[1,353,2,0],
-"module__radio_control_sbus_dual.html":[1,354],
-"module__radio_control_sbus_dual.html#configuration__radio_control_sbus_dual":[1,354,1]
+"module__radio_control_sbus.html":[1,353]
 };
