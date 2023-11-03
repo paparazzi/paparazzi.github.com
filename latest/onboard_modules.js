@@ -2989,6 +2989,11 @@ var onboard_modules =
         [ "Raw gumstix_qr_code_spi_link.xml file:", "module__gumstix_qr_code_spi_link.html#module_xml__gumstix_qr_code_spi_link", null ]
       ] ]
     ] ],
+    [ "gvf_common module", "module__gvf_common.html", [
+      [ "Example for airframe file", "module__gvf_common.html#module_load_example__gvf_common", [
+        [ "Raw gvf_common.xml file:", "module__gvf_common.html#module_xml__gvf_common", null ]
+      ] ]
+    ] ],
     [ "gvf_module module", "module__gvf_module.html", [
       [ "Example for airframe file", "module__gvf_module.html#module_load_example__gvf_module", null ],
       [ "Module configuration options", "module__gvf_module.html#configuration__gvf_module", null ],

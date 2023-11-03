@@ -1,37 +1,38 @@
 <map id="sw/airborne/modules/nav/common_nav.h" name="sw/airborne/modules/nav/common_nav.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5500,5,5659,47"/>
-<area shape="rect" id="node2" href="$sim__gps_8c.html" title=" " alt="" coords="2877,109,3036,151"/>
-<area shape="rect" id="node3" href="$nav_8h.html" title="Fixedwing Navigation library." alt="" coords="3243,109,3409,151"/>
-<area shape="rect" id="node21" href="$copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="6046,221,6251,262"/>
-<area shape="rect" id="node22" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft" alt="" coords="6275,221,6470,262"/>
-<area shape="rect" id="node36" href="$uav__recovery_8c.html" title=" " alt="" coords="6495,221,6709,262"/>
-<area shape="rect" id="node37" href="$cam_8c.html" title="Pan/Tilt camera library." alt="" coords="4937,109,5096,151"/>
-<area shape="rect" id="node38" href="$point_8c.html" title="Determines camera pan and tilt angles." alt="" coords="5120,109,5279,151"/>
-<area shape="rect" id="node39" href="$generic__com_8c.html" title=" " alt="" coords="5303,109,5461,151"/>
-<area shape="rect" id="node40" href="$gvf__ellipse_8c.html" title="Guidance algorithm based on vector fields 2D Ellipse trajectory." alt="" coords="5485,102,5673,158"/>
-<area shape="rect" id="node41" href="$gvf__line_8c.html" title="Guidance algorithm based on vector fields 2D straight line trajectory." alt="" coords="5697,102,5885,158"/>
-<area shape="rect" id="node42" href="$gvf__sin_8c.html" title="Guidance algorithm based on vector fields 2D sinusoidal trajectory." alt="" coords="5909,102,6097,158"/>
-<area shape="rect" id="node43" href="$gvf__parametric__2d__trefoil_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6122,95,6325,165"/>
-<area shape="rect" id="node44" href="$gvf__parametric__3d__ellipse_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6349,95,6551,165"/>
-<area shape="rect" id="node45" href="$gvf__parametric__3d__lissajous_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6575,95,6778,165"/>
-<area shape="rect" id="node46" href="$cloud__sim_8c.html" title=" " alt="" coords="6803,109,6961,151"/>
-<area shape="rect" id="node47" href="$ctc_8c.html" title=" " alt="" coords="6985,109,7144,151"/>
-<area shape="rect" id="node48" href="$dcf_8c.html" title=" " alt="" coords="7168,109,7327,151"/>
-<area shape="rect" id="node49" href="$common__nav_8c.html" title=" " alt="" coords="3060,109,3219,151"/>
-<area shape="rect" id="node50" href="$nav__poles_8c.html" title=" " alt="" coords="7351,109,7509,151"/>
-<area shape="rect" id="node4" href="$sim__ap_8c.html" title=" " alt="" coords="3435,221,3593,262"/>
-<area shape="rect" id="node5" href="$fixedwing_2autopilot__firmware_8c.html" title="Fixedwing specific autopilot interface and initialization." alt="" coords="3617,213,3784,269"/>
-<area shape="rect" id="node6" href="$fixedwing_2autopilot__static_8c.html" title=" " alt="" coords="3808,213,3975,269"/>
-<area shape="rect" id="node7" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="3999,213,4199,269"/>
-<area shape="rect" id="node8" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="4224,221,4463,262"/>
-<area shape="rect" id="node9" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="4487,221,4741,262"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5505,5,5664,47"/>
+<area shape="rect" id="node2" href="$sim__gps_8c.html" title=" " alt="" coords="2780,109,2939,151"/>
+<area shape="rect" id="node3" href="$nav_8h.html" title="Fixedwing Navigation library." alt="" coords="3145,109,3312,151"/>
+<area shape="rect" id="node21" href="$copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot),..." alt="" coords="5853,221,6058,262"/>
+<area shape="rect" id="node22" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft" alt="" coords="6082,221,6277,262"/>
+<area shape="rect" id="node35" href="$uav__recovery_8c.html" title=" " alt="" coords="6301,221,6516,262"/>
+<area shape="rect" id="node36" href="$cam_8c.html" title="Pan/Tilt camera library." alt="" coords="4837,109,4996,151"/>
+<area shape="rect" id="node37" href="$point_8c.html" title="Determines camera pan and tilt angles." alt="" coords="5020,109,5179,151"/>
+<area shape="rect" id="node38" href="$generic__com_8c.html" title=" " alt="" coords="5203,109,5361,151"/>
+<area shape="rect" id="node39" href="$gvf__ellipse_8c.html" title="Guidance algorithm based on vector fields 2D Ellipse trajectory." alt="" coords="5385,102,5573,158"/>
+<area shape="rect" id="node40" href="$gvf__line_8c.html" title="Guidance algorithm based on vector fields 2D straight line trajectory." alt="" coords="5597,102,5785,158"/>
+<area shape="rect" id="node41" href="$gvf__sin_8c.html" title="Guidance algorithm based on vector fields 2D sinusoidal trajectory." alt="" coords="5809,102,5997,158"/>
+<area shape="rect" id="node42" href="$gvf__parametric__2d__bezier__splines_8c.html" title=" " alt="" coords="6022,95,6225,165"/>
+<area shape="rect" id="node43" href="$gvf__parametric__2d__trefoil_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6249,95,6451,165"/>
+<area shape="rect" id="node44" href="$gvf__parametric__3d__ellipse_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6475,95,6678,165"/>
+<area shape="rect" id="node45" href="$gvf__parametric__3d__lissajous_8c.html" title="Guiding vector field algorithm for 2D and 3D complex trajectories." alt="" coords="6702,95,6905,165"/>
+<area shape="rect" id="node46" href="$cloud__sim_8c.html" title=" " alt="" coords="6929,109,7088,151"/>
+<area shape="rect" id="node47" href="$ctc_8c.html" title=" " alt="" coords="7112,109,7271,151"/>
+<area shape="rect" id="node48" href="$dcf_8c.html" title=" " alt="" coords="7295,109,7453,151"/>
+<area shape="rect" id="node49" href="$common__nav_8c.html" title=" " alt="" coords="2963,109,3121,151"/>
+<area shape="rect" id="node50" href="$nav__poles_8c.html" title=" " alt="" coords="7477,109,7636,151"/>
+<area shape="rect" id="node4" href="$sim__ap_8c.html" title=" " alt="" coords="3241,221,3400,262"/>
+<area shape="rect" id="node5" href="$fixedwing_2autopilot__firmware_8c.html" title="Fixedwing specific autopilot interface and initialization." alt="" coords="3424,213,3591,269"/>
+<area shape="rect" id="node6" href="$fixedwing_2autopilot__static_8c.html" title=" " alt="" coords="3615,213,3781,269"/>
+<area shape="rect" id="node7" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="3806,213,4006,269"/>
+<area shape="rect" id="node8" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="4031,221,4269,262"/>
+<area shape="rect" id="node9" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="4293,221,4548,262"/>
 <area shape="rect" id="node10" href="$nav_8c.html" title="Fixedwing functions to compute navigation." alt="" coords="5,221,172,262"/>
-<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html" title="Fixed wing adaptive control." alt="" coords="4766,213,4947,269"/>
-<area shape="rect" id="node12" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control." alt="" coords="4972,213,5147,269"/>
-<area shape="rect" id="node13" href="$flight__benchmark_8c.html" title=" " alt="" coords="5171,221,5398,262"/>
-<area shape="rect" id="node14" href="$cam__roll_8c.html" title=" " alt="" coords="5423,221,5600,262"/>
-<area shape="rect" id="node15" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="5625,221,5838,262"/>
-<area shape="rect" id="node16" href="$rc__settings_8c.html" title=" " alt="" coords="5863,221,6021,262"/>
+<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html" title="Fixed wing adaptive control." alt="" coords="4573,213,4754,269"/>
+<area shape="rect" id="node12" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control." alt="" coords="4779,213,4953,269"/>
+<area shape="rect" id="node13" href="$flight__benchmark_8c.html" title=" " alt="" coords="4978,221,5205,262"/>
+<area shape="rect" id="node14" href="$cam__roll_8c.html" title=" " alt="" coords="5229,221,5407,262"/>
+<area shape="rect" id="node15" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="5431,221,5645,262"/>
+<area shape="rect" id="node16" href="$rc__settings_8c.html" title=" " alt="" coords="5669,221,5828,262"/>
 <area shape="rect" id="node17" href="$shift__tracking_8c.html" title=" " alt="" coords="196,221,355,262"/>
 <area shape="rect" id="node18" href="$nav__survey__polygon__gvf_8c.html" title=" " alt="" coords="379,213,550,269"/>
 <area shape="rect" id="node19" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings." alt="" coords="575,221,733,262"/>
@@ -48,5 +49,4 @@
 <area shape="rect" id="node32" href="$nav__lace_8c.html" title=" " alt="" coords="2693,221,2852,262"/>
 <area shape="rect" id="node33" href="$nav__launcher_8c.html" title="Pneumatic launcher system See video of the system: https://www.youtube.com/watch?v=qc1uwH&#45;8Dbw Launch..." alt="" coords="2876,221,3035,262"/>
 <area shape="rect" id="node34" href="$nav__line_8c.html" title="Fixedwing navigation along a line with nice U&#45;turns." alt="" coords="3059,221,3217,262"/>
-<area shape="rect" id="node35" href="$nav__line__border_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction" alt="" coords="3242,221,3410,262"/>
 </map>

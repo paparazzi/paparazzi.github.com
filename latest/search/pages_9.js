@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['jevois_20module_54472',['jevois module',['../module__jevois.html',1,'onboard_modules']]],
-  ['jevois_5fmavlink_20module_54473',['jevois_mavlink module',['../module__jevois_mavlink.html',1,'onboard_modules']]],
-  ['joystick_20module_54474',['joystick module',['../module__joystick.html',1,'onboard_modules']]]
+  ['jevois_20module_54526',['jevois module',['../module__jevois.html',1,'onboard_modules']]],
+  ['jevois_5fmavlink_20module_54527',['jevois_mavlink module',['../module__jevois_mavlink.html',1,'onboard_modules']]],
+  ['joystick_20module_54528',['joystick module',['../module__joystick.html',1,'onboard_modules']]]
 ];

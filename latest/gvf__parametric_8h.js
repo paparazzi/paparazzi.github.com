@@ -26,8 +26,11 @@ var gvf__parametric_8h =
       [ "TREFOIL_2D", "gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a8c43a5798fe0770ff632c2ee4a8311b6", null ],
       [ "ELLIPSE_3D", "gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800ac2dc874fddb629c735c670ea8772f073", null ],
       [ "LISSAJOUS_3D", "gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a665e33b5de71a31410478c9bde0c4811", null ],
+      [ "BEZIER_2D", "gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a6d6307c969cf51481ea1c254e00c2406", null ],
       [ "NONE_PARAMETRIC", "gvf__parametric_8h.html#a1f89e28ef0e60a8ec5555b596db39800a4d26661256cfa3c489d65c854fe8886e", null ]
     ] ],
+    [ "gvf_parametric_2D_bezier_wp", "gvf__parametric_8h.html#af9f91e12efa2ceabb0fcece3135cda49", null ],
+    [ "gvf_parametric_2D_bezier_XY", "gvf__parametric_8h.html#a89f09c7f1b3aa6378e7c2f904f50d917", null ],
     [ "gvf_parametric_2D_trefoil_wp", "gvf__parametric_8h.html#a6588257572edece7320c5bf24724e6c0", null ],
     [ "gvf_parametric_2D_trefoil_XY", "gvf__parametric_8h.html#a6c8f08d6af72cdf0464bb4e5d045e468", null ],
     [ "gvf_parametric_3D_ellipse_wp", "gvf__parametric_8h.html#af24c780f81bd34eb0f06acdded52c7e0", null ],
@@ -39,6 +42,7 @@ var gvf__parametric_8h =
     [ "gvf_parametric_control_3D", "gvf__parametric_8h.html#a03440442b6ccf59e11311446f386186e", null ],
     [ "gvf_parametric_init", "gvf__parametric_8h.html#aa80145a553b0036341ea775c765d2496", null ],
     [ "gvf_parametric_set_direction", "gvf__parametric_8h.html#af24a622f0e72aab64554811a0952811c", null ],
+    [ "gvf_bezier_2D", "gvf__parametric_8h.html#a8a3641afb40f1768d84afefb749771e4", null ],
     [ "gvf_parametric_control", "gvf__parametric_8h.html#a025bede321e4e1dd30401bd4ef541161", null ],
     [ "gvf_parametric_trajectory", "gvf__parametric_8h.html#aa9aa4d9309789f867ce5d6347aba2e7b", null ]
 ];
