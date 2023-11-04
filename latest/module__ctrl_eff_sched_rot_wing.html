@@ -167,13 +167,6 @@ Raw ctrl_eff_sched_rot_wing.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;HOVER_ROLL_PITCH_COEF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{0,0}&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Eff_sched&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;rotation_angle_setpoint_deg&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;90&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;rotation&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;modules/ctrl/ctrl_eff_sched_rot_wing&quot;</span>/&gt;</div>
-<div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
-<div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ctrl_eff_sched_rot_wing.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
@@ -182,7 +175,14 @@ Raw ctrl_eff_sched_rot_wing.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ctrl_eff_sched_rot_wing.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_ROTATION_MECH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACTUATORS_NB&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_ROTATION_MECH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;8&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_MOTOR_FRONT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_MOTOR_RIGHT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_MOTOR_BACK&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;2&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_MOTOR_LEFT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_MOTOR_PUSH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;8&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;SERVO_SERVO_ELEVATOR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;5&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_NUM_ACT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;4&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INDI_OUTPUTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_IXX_BODY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
@@ -191,10 +191,21 @@ Raw ctrl_eff_sched_rot_wing.xml file:</h2>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_IXX_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_IYY_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_M&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_ROLL_ARM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_PITCH_ARM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_HOVER_DF_DPPRZ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_DM_DPPRZ_HOVER_PITCH&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_DM_DPPRZ_HOVER_ROLL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_HOVER_ROLL_PITCH_COEF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_HOVER_ROLL_ROLL_COEF&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_ELEVATOR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_RUDDER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_AILERON&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_FLAPERON&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_PUSHER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_ELEVATOR_DEFLECTION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_D_RUDDER_D_PPRZ&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_RPM_PPRZ_PUSHER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_LIFT_WING&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;{1,1}&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_LIFT_FUSELAGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROT_WING_EFF_SCHED_K_LIFT_TAIL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -205,7 +216,7 @@ Raw ctrl_eff_sched_rot_wing.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Nov 3 2023 20:36:05 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Nov 4 2023 19:18:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

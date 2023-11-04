@@ -26,7 +26,7 @@ var stabilization__indi_8c =
     [ "stabilization_indi_set_quat_setpoint_i", "stabilization__indi_8c.html#ae50a856798e14e1715cd3959c34b63df", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi_8c.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
     [ "stabilization_indi_set_stab_sp", "stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635", null ],
-    [ "stabilization_indi_set_wls_settings", "stabilization__indi_8c.html#ab4e899440097b24e65894db73df83c58", null ],
+    [ "stabilization_indi_set_wls_settings", "stabilization__indi_8c.html#a5e8d2fff75cab722278e60e10b36dff9", null ],
     [ "sum_g1_g2", "stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2", null ],
     [ "thrust_cb", "stabilization__indi_8c.html#a776faa8d6633f474494b56242c05e404", null ],
     [ "thrust_cb", "stabilization__indi_8c.html#ab252710595b60c7cdcf823af1d5590f6", null ],
