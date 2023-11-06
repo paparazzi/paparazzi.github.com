@@ -103,6 +103,19 @@ Airframe file section</h2>
  Description: Maximum deceleration in [m/s2] when arriving to hover at a WP</li>
 </ul>
 </li>
+<li><b>section</b> name: <code>GUIDANCE_INDI_HYBRID</code> prefix: <code>GUIDANCE_INDI_</code> <ul>
+<li><b>name</b> <code>MAX_AIRSPEED</code> <b>value:</b> <em>15.</em> <br  />
+ Description: maximum airspeed (required)</li>
+<li><b>name</b> <code>NAV_SPEED_MARGIN</code> <b>value:</b> <em>10.</em> <br  />
+ Description: maximum commanded ground speed is MAX_AIRSPEED + NAV_SPEED_MARGIN</li>
+<li><b>name</b> <code>GOTO_SPEED</code> <b>value:</b> <em>nav_max_speed</em> <br  />
+ Description: maximum speed when flying goto/stay routines (default is max speed)</li>
+<li><b>name</b> <code>NAV_LINE_DIST</code> <b>value:</b> <em>50</em> <br  />
+ Description: distance coefficient for line routine</li>
+<li><b>name</b> <code>NAV_CIRCLE_DIST</code> <b>value:</b> <em>40</em> <br  />
+ Description: distance coefficient for circle routine</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="functions__nav_hybrid"></a>
 Module functions</h1>
@@ -137,11 +150,19 @@ Raw nav_hybrid.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_HYBRID&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;NAV_HYBRID_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_DECELERATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum deceleration in [m/s2] when arriving to hover at a WP&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_AIRSPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;15.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum airspeed (required)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_SPEED_MARGIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;10.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum commanded ground speed is MAX_AIRSPEED + NAV_SPEED_MARGIN&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GOTO_SPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;maximum speed when flying goto/stay routines (default is max speed)&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_LINE_DIST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;50&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;distance coefficient for line routine&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;NAV_CIRCLE_DIST&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;40&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;distance coefficient for circle routine&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;nav_hybrid&quot;</span>&gt;</div>
-<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_max_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;50.0&quot;</span>/&gt;</div>
+<div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_hover_speed&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10.0&quot;</span>/&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;nav_max_deceleration_sp&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0.5&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10.0&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;max_deceleration&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;NAV_HYBRID_MAX_DECELERATION&quot;</span>/&gt;</div>
 <div class="line">      &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">dl_settings</span>&gt;</div>
@@ -171,7 +192,7 @@ Raw nav_hybrid.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Nov 4 2023 19:18:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 6 2023 09:05:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

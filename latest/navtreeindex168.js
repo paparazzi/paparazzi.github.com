@@ -1,5 +1,8 @@
 var NAVTREEINDEX168 =
 {
+"paparazzi_messages.html#AHRS_REF_QUAT":[2,0,163],
+"paparazzi_messages.html#AIRCRAFTS":[2,2,2],
+"paparazzi_messages.html#AIRCRAFTS_REQ":[2,2,3],
 "paparazzi_messages.html#AIRCRAFT_DIE":[2,2,1],
 "paparazzi_messages.html#AIRSPEED":[2,0,49],
 "paparazzi_messages.html#AIRSPEED_RAW":[2,0,132],
@@ -246,8 +249,5 @@ var NAVTREEINDEX168 =
 "paparazzi_messages.html#RC_3CH_":[2,0,46],
 "paparazzi_messages.html#RC_4CH":[2,1,34],
 "paparazzi_messages.html#RC_5CH":[2,1,35],
-"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,38],
-"paparazzi_messages.html#RLFILTER":[2,0,43],
-"paparazzi_messages.html#ROTATING_WING_STATE":[2,0,174],
-"paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,162]
+"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,38]
 };
