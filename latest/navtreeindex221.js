@@ -1,5 +1,9 @@
 var NAVTREEINDEX221 =
 {
+"xsens_8c_source.html":[12,0,1,0,6,36,55],
+"xsens_8h.html":[12,0,1,0,6,36,56],
+"xsens_8h.html#a47f12136c89e8cc13ff45e72caab8a19":[12,0,1,0,6,36,56,3],
+"xsens_8h.html#a6345aa5f7a6fc2de9539539d91bf0cba":[12,0,1,0,6,36,56,4],
 "xsens_8h.html#a7dcaa5041c2da4d7b3a8af364132770a":[12,0,1,0,6,36,56,2],
 "xsens_8h.html#ab70c0597795ff7438eb8a723923fc421":[12,0,1,0,6,36,56,5],
 "xsens_8h_source.html":[12,0,1,0,6,36,56],

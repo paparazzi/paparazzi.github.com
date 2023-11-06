@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"module__state_interface.html#module_load_example__state_interface":[1,80,0],
+"module__state_interface.html#module_xml__state_interface":[1,80,1,0],
+"module__stereocam.html":[1,423],
+"module__stereocam.html#configuration__stereocam":[1,423,1],
 "module__stereocam.html#functions__stereocam":[1,423,2],
 "module__stereocam.html#module_load_example__stereocam":[1,423,0],
 "module__stereocam.html#module_xml__stereocam":[1,423,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "module__video_thread.html#configuration__video_thread":[1,69,1],
 "module__video_thread.html#functions__video_thread":[1,69,2],
 "module__video_thread.html#module_load_example__video_thread":[1,69,0],
-"module__video_thread.html#module_xml__video_thread":[1,69,2,0],
-"module__video_usb_logger.html":[1,70],
-"module__video_usb_logger.html#configuration__video_usb_logger":[1,70,1],
-"module__video_usb_logger.html#functions__video_usb_logger":[1,70,2],
-"module__video_usb_logger.html#module_load_example__video_usb_logger":[1,70,0]
+"module__video_thread.html#module_xml__video_thread":[1,69,2,0]
 };

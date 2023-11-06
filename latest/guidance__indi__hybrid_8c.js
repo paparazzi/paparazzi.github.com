@@ -15,12 +15,14 @@ var guidance__indi__hybrid_8c =
     [ "TURN_AIRSPEED_TH", "guidance__indi__hybrid_8c.html#ad7560aca0c7426737ca6ee02586873c1", null ],
     [ "bound_vz_sp", "guidance__indi__hybrid_8c.html#abff8a99c2d28f03e60476e60abaf1354", null ],
     [ "compute_accel_from_speed_sp", "guidance__indi__hybrid_8c.html#ae979ffa821511343e510452707ebc23e", null ],
+    [ "debug", "guidance__indi__hybrid_8c.html#a693837019bc639c08bbe175dcbdb9cb1", null ],
     [ "guidance_indi_enter", "guidance__indi__hybrid_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_get_liftd", "guidance__indi__hybrid_8c.html#a8bca7c00836f29347bd6a9442f3b54ca", null ],
     [ "guidance_indi_init", "guidance__indi__hybrid_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_propagate_filters", "guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52", null ],
+    [ "send_guidance_indi_debug", "guidance__indi__hybrid_8c.html#a73fa8b3c541f4ba973c2b0d99652f7ab", null ],
     [ "send_guidance_indi_hybrid", "guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70", null ],
     [ "vel_sp_cb", "guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8", null ],
     [ "accely_filt", "guidance__indi__hybrid_8c.html#a104f167cc747937fb6f4d23e445148f2", null ],
@@ -51,5 +53,6 @@ var guidance__indi__hybrid_8c =
     [ "thrust_filt", "guidance__indi__hybrid_8c.html#af67f625ea892ab734e4e0bfd00abac23", null ],
     [ "thrust_in", "guidance__indi__hybrid_8c.html#a229063a3d344169961f5d0803de574c0", null ],
     [ "time_of_vel_sp", "guidance__indi__hybrid_8c.html#a17cb66c22ecad94f6da8c34538ecb5c7", null ],
+    [ "v_gih", "guidance__indi__hybrid_8c.html#af0feadcd36da1b3a804d75dc567f4a83", null ],
     [ "vel_sp_ev", "guidance__indi__hybrid_8c.html#af56dc6445dd449650ea8d54bc7a1ecc7", null ]
 ];

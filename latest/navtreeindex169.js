@@ -1,5 +1,9 @@
 var NAVTREEINDEX169 =
 {
+"paparazzi_messages.html#PPM":[2,0,94],
+"paparazzi_messages.html#PPRZ_DEBUG":[2,0,226],
+"paparazzi_messages.html#PPRZ_MODE":[2,0,9],
+"paparazzi_messages.html#RANGEFINDER":[2,0,25],
 "paparazzi_messages.html#RATE_LOOP":[2,0,130],
 "paparazzi_messages.html#RAW_DATALINK":[2,2,27],
 "paparazzi_messages.html#RC":[2,0,95],
@@ -245,9 +249,5 @@ var NAVTREEINDEX169 =
 "pca9685__i2c_8c.html#afcb804741158955a93c3ed7219de5a00":[12,0,1,0,6,51,0,47],
 "pca9685__i2c_8c.html#afd4712d8878471d78e8992cb86ae6efd":[12,0,1,0,6,51,0,55],
 "pca9685__i2c_8c_source.html":[12,0,1,0,6,51,0],
-"pca9685__i2c_8h.html":[12,0,1,0,6,51,1],
-"pca9685__i2c_8h.html#a113feceba05e72e9dd67ad6bfc48f7e0":[12,0,1,0,6,51,1,0],
-"pca9685__i2c_8h.html#a14e0203b6c952fcfd6a9b082874b6813":[12,0,1,0,6,51,1,18],
-"pca9685__i2c_8h.html#a2435d901ad521ed1a60629825feb6e44":[12,0,1,0,6,51,1,11],
-"pca9685__i2c_8h.html#a2c7a427ebd4e0153ac321ac496612add":[12,0,1,0,6,51,1,3]
+"pca9685__i2c_8h.html":[12,0,1,0,6,51,1]
 };

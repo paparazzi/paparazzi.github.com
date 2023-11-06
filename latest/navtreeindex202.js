@@ -1,5 +1,9 @@
 var NAVTREEINDEX202 =
 {
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a6d99f52ad5ec93b7cd153e6503429c34":[12,0,1,0,0,3,1,0,1,2],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0":[12,0,1,0,0,3,1,0,1,6],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#acd2f86fcb3553dedcde8e395b93b05e0":[12,0,1,0,0,3,1,0,1,5],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#af7a141f1f7e111b31bb1563e0f98c1cd":[12,0,1,0,0,3,1,0,1,9],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h_source.html":[12,0,1,0,0,3,1,0,1],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8c.html":[12,0,1,0,0,3,1,0,2],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8c.html#a11c780a31ca1af3dc366bba41f431989":[12,0,1,0,0,3,1,0,2,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX202 =
 "styledoxygen.html#styledoxyblocks":[0,1,1,0],
 "styledoxygen.html#styledoxytext":[0,1,1,2],
 "styleguide.html":[0,1],
-"stylepython.html":[0,1,2],
-"stylepython.html#stylecompat":[0,1,2,0],
-"superbitrf__rc_8c.html":[12,0,1,0,6,55,22],
-"superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[12,0,1,0,6,55,22,2],
-"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1]
+"stylepython.html":[0,1,2]
 };

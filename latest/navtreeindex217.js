@@ -1,5 +1,9 @@
 var NAVTREEINDEX217 =
 {
+"video__device_8h.html#ab7d8e2731b25c538b5826e6a5d882f20":[12,0,1,0,7,128,2,0],
+"video__device_8h.html#ac6e8e8ed1336fa93b7494d1aa8cb7775":[12,0,1,0,7,128,2,3],
+"video__device_8h.html#ae2ef10126f2c9dbdac9cf5ea3bacf794":[12,0,1,0,7,128,2,8],
+"video__device_8h.html#ae5f0b0d81df0d1915cb02c001ed78e61":[12,0,1,0,7,128,2,4],
 "video__device_8h.html#ae6e8852d59271631ee506533b63350c1":[12,0,1,0,7,128,0,0],
 "video__device_8h.html#aefdcc0d6a040bfdb68ac09242872be88":[12,0,1,0,7,128,2,9],
 "video__device_8h.html#afbd41528c39b7e21eeeee5554be74a29":[12,0,1,0,7,128,5],
@@ -137,10 +141,10 @@ var NAVTREEINDEX217 =
 "vl53l1__platform_8h.html#ab999b09c3be53bbc7715d25007750916":[12,0,1,0,7,130,8],
 "vl53l1__platform_8h.html#acc21e994d7d6651df18f96648afb37ea":[12,0,1,0,7,130,7],
 "vl53l1__platform_8h.html#adad89adbfd623ab80104043eba3c36db":[12,0,1,0,7,130,6],
-"vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,130,1,1],
 "vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,130,0,0,1],
-"vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,130,1,0],
+"vl53l1__platform_8h.html#aeb7db7b0bac0435abcb01543ea6e497f":[12,0,1,0,7,130,1,1],
 "vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,130,0,0,0],
+"vl53l1__platform_8h.html#afd9e1afcbaddbc13914cd0d0edbed68e":[12,0,1,0,7,130,1,0],
 "vl53l1__platform_8h.html#aff2180f6401addaf4701700ec4c1e9bb":[12,0,1,0,7,130,3],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t":[12,0,1,0,7,130,0],
 "vl53l1__platform_8h.html#structVL53L1__Dev__t_1_1NonBlocking":[12,0,1,0,7,130,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX217 =
 "vl53l1x__api_8h.html#a5b399afb0ef8423ddd5a83897a9974da":[12,0,1,0,7,133,62],
 "vl53l1x__api_8h.html#a5e8ca5c9b01cf3166f58495a93cd8358":[12,0,1,0,7,133,88],
 "vl53l1x__api_8h.html#a6093fa9bbeaa6844ad571a842f4c0345":[12,0,1,0,7,133,0,2],
-"vl53l1x__api_8h.html#a6a16e9c2ee589cd21957f1302d6654f1":[12,0,1,0,7,133,23],
-"vl53l1x__api_8h.html#a6a27dfef0795b6688aacd6cd158939be":[12,0,1,0,7,133,33],
-"vl53l1x__api_8h.html#a706cd1aa011becfc35c7b496f599a30f":[12,0,1,0,7,133,20],
-"vl53l1x__api_8h.html#a71be30985998f0500d22a3d76309f6d3":[12,0,1,0,7,133,63],
-"vl53l1x__api_8h.html#a74625341a79e3484830c401d8947443c":[12,0,1,0,7,133,24]
+"vl53l1x__api_8h.html#a6a16e9c2ee589cd21957f1302d6654f1":[12,0,1,0,7,133,23]
 };

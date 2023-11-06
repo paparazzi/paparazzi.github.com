@@ -1,5 +1,9 @@
 var NAVTREEINDEX134 =
 {
+"module__ins_extended.html":[1,223],
+"module__ins_extended.html#configuration__ins_extended":[1,223,1],
+"module__ins_extended.html#functions__ins_extended":[1,223,2],
+"module__ins_extended.html#module_load_example__ins_extended":[1,223,0],
 "module__ins_extended.html#module_xml__ins_extended":[1,223,2,0],
 "module__ins_float_invariant.html":[1,224],
 "module__ins_float_invariant.html#configuration__ins_float_invariant":[1,224,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX134 =
 "module__mcu.html#functions__mcu":[1,260,1],
 "module__mcu.html#module_load_example__mcu":[1,260,0],
 "module__mcu.html#module_xml__mcu":[1,260,1,0],
-"module__meteo_france_daq.html":[1,283],
-"module__meteo_france_daq.html#datalink_functions__meteo_france_daq":[1,283,2],
-"module__meteo_france_daq.html#functions__meteo_france_daq":[1,283,1],
-"module__meteo_france_daq.html#module_load_example__meteo_france_daq":[1,283,0],
-"module__meteo_france_daq.html#module_xml__meteo_france_daq":[1,283,2,0]
+"module__meteo_france_daq.html":[1,283]
 };

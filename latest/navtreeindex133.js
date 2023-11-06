@@ -1,5 +1,9 @@
 var NAVTREEINDEX133 =
 {
+"module__heli_throttle_curve.html#functions__heli_throttle_curve":[1,174,2],
+"module__heli_throttle_curve.html#module_load_example__heli_throttle_curve":[1,174,0],
+"module__heli_throttle_curve.html#module_xml__heli_throttle_curve":[1,174,2,0],
+"module__hott_telemetry.html":[1,461],
 "module__hott_telemetry.html#configuration__hott_telemetry":[1,461,1],
 "module__hott_telemetry.html#functions__hott_telemetry":[1,461,2],
 "module__hott_telemetry.html#module_load_example__hott_telemetry":[1,461,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX133 =
 "module__ins_ext_pose.html#datalink_functions__ins_ext_pose":[1,222,2],
 "module__ins_ext_pose.html#functions__ins_ext_pose":[1,222,1],
 "module__ins_ext_pose.html#module_load_example__ins_ext_pose":[1,222,0],
-"module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,222,2,0],
-"module__ins_extended.html":[1,223],
-"module__ins_extended.html#configuration__ins_extended":[1,223,1],
-"module__ins_extended.html#functions__ins_extended":[1,223,2],
-"module__ins_extended.html#module_load_example__ins_extended":[1,223,0]
+"module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,222,2,0]
 };

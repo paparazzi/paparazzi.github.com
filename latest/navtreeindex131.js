@@ -1,5 +1,9 @@
 var NAVTREEINDEX131 =
 {
+"module__copilot.html":[1,294],
+"module__copilot.html#datalink_functions__copilot":[1,294,2],
+"module__copilot.html#functions__copilot":[1,294,1],
+"module__copilot.html#module_load_example__copilot":[1,294,0],
 "module__copilot.html#module_xml__copilot":[1,294,2,0],
 "module__ctrl_eff_sched_rot_wing.html":[1,85],
 "module__ctrl_eff_sched_rot_wing.html#configuration__ctrl_eff_sched_rot_wing":[1,85,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "module__fdm_pybullet.html#module_load_example__fdm_pybullet":[1,140,0],
 "module__fdm_pybullet.html#module_xml__fdm_pybullet":[1,140,1,0],
 "module__fdm_rover.html":[1,141],
-"module__fdm_rover.html#module_load_example__fdm_rover":[1,141,0],
-"module__fdm_rover.html#module_xml__fdm_rover":[1,141,0,0],
-"module__filter_1euro_imu.html":[1,175],
-"module__filter_1euro_imu.html#configuration__filter_1euro_imu":[1,175,1],
-"module__filter_1euro_imu.html#functions__filter_1euro_imu":[1,175,2]
+"module__fdm_rover.html#module_load_example__fdm_rover":[1,141,0]
 };
