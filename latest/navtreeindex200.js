@@ -1,5 +1,13 @@
 var NAVTREEINDEX200 =
 {
+"stabilization__indi_8c.html#af2e990d419fc562777944d2446ab1b32":[12,0,1,0,3,2,1,32,11],
+"stabilization__indi_8c.html#af863b681c12e21d2b3ce94d6f523dbf4":[12,0,1,0,3,2,1,32,53],
+"stabilization__indi_8c.html#afce24724cf3afefacb13f024ffeabb1e":[12,0,1,0,3,2,1,32,67],
+"stabilization__indi_8c_source.html":[12,0,1,0,3,2,1,32],
+"stabilization__indi_8h.html":[12,0,1,0,3,2,1,33],
+"stabilization__indi_8h.html#a02b1d1b2b1052dff0707a5218f5346ad":[12,0,1,0,3,2,1,33,29],
+"stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5":[12,0,1,0,3,2,1,33,6],
+"stabilization__indi_8h.html#a121fd732c65156adade05ffb27fbaf52":[12,0,1,0,3,2,1,33,3],
 "stabilization__indi_8h.html#a147581e222fb8f9b1cb2d3479a05aa01":[12,0,1,0,3,2,1,33,14],
 "stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a":[12,0,1,0,3,2,1,33,17],
 "stabilization__indi_8h.html#a26af36c957621d1c4301561740eea35f":[12,0,1,0,3,2,1,33,22],
@@ -106,8 +114,8 @@ var NAVTREEINDEX200 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,1,35,2,10],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,1,35,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,1,35,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,33,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,35,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,1,33,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,1,35],
 "stabilization__none_8c.html":[12,0,1,0,3,2,1,36],
 "stabilization__none_8c.html#a03faaedbd0839f6e8b94c5788feb4ff4":[12,0,1,0,3,2,1,36,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX200 =
 "stereocam_8h.html#a43eef8b95b62159519b45e77763be4e1":[12,0,1,0,6,64,4,0,2],
 "stereocam_8h.html#a8e79296f77859c1cee9e52f993af1fd9":[12,0,1,0,6,64,4,1],
 "stereocam_8h.html#a95bf6b29adccc637ae2d86539a211d28":[12,0,1,0,6,64,4,2],
-"stereocam_8h.html#ab377e6fcaf5f92e2a5386a7c31368480":[12,0,1,0,6,64,4,0,1],
-"stereocam_8h.html#afbe232e688230973c9617786d3b94bab":[12,0,1,0,6,64,4,0,3],
-"stereocam_8h.html#afcbaf3696886da91d657b698b181cefb":[12,0,1,0,6,64,4,0,0],
-"stereocam_8h.html#structstereocam__t":[12,0,1,0,6,64,4,0],
-"stereocam_8h_source.html":[12,0,1,0,6,64,4],
-"stereocam__droplet_8c.html":[12,0,1,0,6,64,0,0],
-"stereocam__droplet_8c.html#a2978a46b47cbc9d17a0924014ff9658b":[12,0,1,0,6,64,0,0,1],
-"stereocam__droplet_8c.html#a2f6691e10b1cee8d874cecc9d358f11d":[12,0,1,0,6,64,0,0,10],
-"stereocam__droplet_8c.html#a304b77dceeec4285bad836b9bbced42d":[12,0,1,0,6,64,0,0,11]
+"stereocam_8h.html#ab377e6fcaf5f92e2a5386a7c31368480":[12,0,1,0,6,64,4,0,1]
 };

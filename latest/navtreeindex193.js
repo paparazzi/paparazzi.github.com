@@ -1,5 +1,13 @@
 var NAVTREEINDEX193 =
 {
+"sensors__hitl_8h.html#a2e965a44a3faef0df7d56cbed4f8b575":[12,0,1,0,6,60,78,4],
+"sensors__hitl_8h.html#a3d2ef80efbb3f4c7c13ecbe3a21e0b8b":[12,0,1,0,6,60,78,9],
+"sensors__hitl_8h.html#a3eda401c67dfeee490285016ec944e48":[12,0,1,0,6,60,78,2],
+"sensors__hitl_8h.html#a4bf6eb34827c681440149b78bbc12dd0":[12,0,1,0,6,60,78,1],
+"sensors__hitl_8h.html#a5b2450e8baa86636ae84529551d1846e":[12,0,1,0,6,60,78,10],
+"sensors__hitl_8h.html#a92225da86fa0d698820cb0eccf0993bd":[12,0,1,0,6,60,78,6],
+"sensors__hitl_8h.html#a96176da51679059e18b430b94f340cea":[12,0,1,0,6,60,78,7],
+"sensors__hitl_8h.html#ab02c176a29d35aa764066f573813f6b0":[12,0,1,0,6,60,78,8],
 "sensors__hitl_8h.html#ac7d8fc928d8f257b36ca337705ef8f8b":[12,0,1,0,6,60,78,5],
 "sensors__hitl_8h_source.html":[12,0,1,0,6,60,78],
 "serial_8c.html":[12,0,1,0,6,18,0,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX193 =
 "sim_2mcu__periph_2gpio__arch_8h.html#a5d3043fd1db106a844092560243b5ddf":[12,0,1,0,0,2,0,3,17],
 "sim_2mcu__periph_2gpio__arch_8h.html#a62fa810782439ccd99ea38f7ed500a94":[12,0,1,0,0,2,0,3,22],
 "sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd":[12,0,1,0,0,2,0,3,33],
-"sim_2mcu__periph_2gpio__arch_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7":[12,0,1,0,0,2,0,3,21],
-"sim_2mcu__periph_2gpio__arch_8h.html#a7580b1a929ea9df59725ba9c18eba6ac":[12,0,1,0,0,2,0,3,35],
-"sim_2mcu__periph_2gpio__arch_8h.html#a88a95401ea8409c83cbda42f31450cd0":[12,0,1,0,0,2,0,3,12],
-"sim_2mcu__periph_2gpio__arch_8h.html#a94a49952b3f69b89283461daa24374a0":[12,0,1,0,0,2,0,3,45],
-"sim_2mcu__periph_2gpio__arch_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8":[12,0,1,0,0,2,0,3,26],
-"sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20":[12,0,1,0,0,2,0,3,30],
-"sim_2mcu__periph_2gpio__arch_8h.html#aaa3c86348d99077ec718c2461f0d4a91":[12,0,1,0,0,2,0,3,10],
-"sim_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a":[12,0,1,0,0,2,0,3,7],
-"sim_2mcu__periph_2gpio__arch_8h.html#ab2aa0ef0d4e65930b0caa23b1bf65388":[12,0,1,0,0,2,0,3,24]
+"sim_2mcu__periph_2gpio__arch_8h.html#a6e5ccec6266bec3c50538e4b5a9cb0d7":[12,0,1,0,0,2,0,3,21]
 };

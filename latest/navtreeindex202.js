@@ -1,5 +1,13 @@
 var NAVTREEINDEX202 =
 {
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h_source.html":[12,0,1,0,0,3,1,0,1],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8c.html":[12,0,1,0,0,3,1,0,2],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8c.html#a11c780a31ca1af3dc366bba41f431989":[12,0,1,0,0,3,1,0,2,2],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606":[12,0,1,0,0,3,1,0,2,0],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8c.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab":[12,0,1,0,0,3,1,0,2,1],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8c_source.html":[12,0,1,0,0,3,1,0,2],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html":[12,0,1,0,0,3,1,0,3],
+"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989":[12,0,1,0,0,3,1,0,3,5],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4":[12,0,1,0,0,3,1,0,3,2],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f":[12,0,1,0,0,3,1,0,3,0],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,3,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX202 =
 "stylepython.html#stylecompat":[0,1,2,0],
 "superbitrf__rc_8c.html":[12,0,1,0,6,55,22],
 "superbitrf__rc_8c.html#a8abad32cff4826f8b0b9ac2d88520c4a":[12,0,1,0,6,55,22,2],
-"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1],
-"superbitrf__rc_8c.html#afc61e3ef036fe29a6dc2d34dd6919f10":[12,0,1,0,6,55,22,0],
-"superbitrf__rc_8c_source.html":[12,0,1,0,6,55,22],
-"superbitrf__rc_8h.html":[12,0,1,0,6,55,23],
-"superbitrf__rc_8h.html#a0a504ca751f60fabf7900b13916561a6":[12,0,1,0,6,55,23,15],
-"superbitrf__rc_8h.html#a2fab1464ab1748edb2a45a08cf7c422a":[12,0,1,0,6,55,23,11],
-"superbitrf__rc_8h.html#a393c67e7c336f4e58413e3cb07378511":[12,0,1,0,6,55,23,14],
-"superbitrf__rc_8h.html#a5fdc4625435a1756d996da7867bddc18":[12,0,1,0,6,55,23,7],
-"superbitrf__rc_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18":[12,0,1,0,6,55,23,0]
+"superbitrf__rc_8c.html#aae510ce05f3f3c15485616154918bad9":[12,0,1,0,6,55,22,1]
 };

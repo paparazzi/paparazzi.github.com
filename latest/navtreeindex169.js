@@ -1,5 +1,13 @@
 var NAVTREEINDEX169 =
 {
+"paparazzi_messages.html#RATE_LOOP":[2,0,130],
+"paparazzi_messages.html#RAW_DATALINK":[2,2,27],
+"paparazzi_messages.html#RC":[2,0,95],
+"paparazzi_messages.html#RC_3CH":[2,1,33],
+"paparazzi_messages.html#RC_3CH_":[2,0,46],
+"paparazzi_messages.html#RC_4CH":[2,1,34],
+"paparazzi_messages.html#RC_5CH":[2,1,35],
+"paparazzi_messages.html#REMOTE_GPS_LOCAL":[2,1,38],
 "paparazzi_messages.html#RLFILTER":[2,0,43],
 "paparazzi_messages.html#ROTATING_WING_STATE":[2,0,174],
 "paparazzi_messages.html#ROTORCRAFT_CAM":[2,0,162],
@@ -241,13 +249,5 @@ var NAVTREEINDEX169 =
 "pca9685__i2c_8h.html#a113feceba05e72e9dd67ad6bfc48f7e0":[12,0,1,0,6,51,1,0],
 "pca9685__i2c_8h.html#a14e0203b6c952fcfd6a9b082874b6813":[12,0,1,0,6,51,1,18],
 "pca9685__i2c_8h.html#a2435d901ad521ed1a60629825feb6e44":[12,0,1,0,6,51,1,11],
-"pca9685__i2c_8h.html#a2c7a427ebd4e0153ac321ac496612add":[12,0,1,0,6,51,1,3],
-"pca9685__i2c_8h.html#a3041b2ebfa023b77fc0cc9aefab2a6af":[12,0,1,0,6,51,1,10],
-"pca9685__i2c_8h.html#a37fe84e8d783437e09d27e282bc1ddca":[12,0,1,0,6,51,1,17],
-"pca9685__i2c_8h.html#a3f0cc7c6315f011bc2782d97097285cf":[12,0,1,0,6,51,1,12],
-"pca9685__i2c_8h.html#a4453dd93b736ea3ba7716657a558d21f":[12,0,1,0,6,51,1,16],
-"pca9685__i2c_8h.html#a53a9a2b1c25441384f4ccbf7567a4b7b":[12,0,1,0,6,51,1,9],
-"pca9685__i2c_8h.html#a5542edaf217dbdc49b2a588419908f18":[12,0,1,0,6,51,1,19],
-"pca9685__i2c_8h.html#a5bc4f8a2bfac1fa4e78b72361ab8875f":[12,0,1,0,6,51,1,5],
-"pca9685__i2c_8h.html#a6536b9013882e472f59d2b5f5b489e1f":[12,0,1,0,6,51,1,13]
+"pca9685__i2c_8h.html#a2c7a427ebd4e0153ac321ac496612add":[12,0,1,0,6,51,1,3]
 };

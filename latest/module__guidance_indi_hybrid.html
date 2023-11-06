@@ -88,8 +88,11 @@ $(document).ready(function(){initNavTree('module__guidance_indi_hybrid.html','')
 <div class="title">guidance_indi_hybrid module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Guidance controller for hybrids using INDI</b></p>
-<p>No detailed description...</p>
+<div class="textblock"><p><b>Common guidance controller code for hybrids using INDI: in your airframe file include one of the options:</b></p>
+<ul>
+<li>guidance_indi_hybid_tailsitter</li>
+<li>guidance_indi_hybid_quadplane</li>
+</ul>
 <h1><a class="anchor" id="module_load_example__guidance_indi_hybrid"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi_hybrid&quot;</span>/&gt;</div>
@@ -137,7 +140,9 @@ Raw guidance_indi_hybrid.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi_hybrid&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;guidance&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;control&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Guidance</span> <span class="keyword">controller</span> <span class="keyword">for</span> <span class="keyword">hybrids</span> <span class="keyword">using</span> <span class="keyword">INDI</span></div>
+<div class="line">      <span class="keyword">Common</span> <span class="keyword">guidance</span> <span class="keyword">controller</span> <span class="keyword">code</span> <span class="keyword">for</span> <span class="keyword">hybrids</span> <span class="keyword">using</span> <span class="keyword">INDI:</span> <span class="keyword">in</span> <span class="keyword">your</span> <span class="keyword">airframe</span> <span class="keyword">file</span> <span class="keyword">include</span> <span class="keyword">one</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">options:</span></div>
+<div class="line">       - <span class="keyword">guidance_indi_hybid_tailsitter</span></div>
+<div class="line">       - <span class="keyword">guidance_indi_hybid_quadplane</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID_&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_WLS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;use WLS allocation instead of matrix inversion (default: FALSE)&quot;</span>/&gt;</div>
@@ -165,14 +170,13 @@ Raw guidance_indi_hybrid.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;@<span class="keyword">navigation</span>,<span class="keyword">guidance_rotorcraft</span>,<span class="keyword">wls</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">guidance</span>,<span class="keyword">attitude_command</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">suggests</span>&gt;<span class="keyword">guidance_indi_hybrid_tailsitter</span>&lt;/<span class="keywordtype">suggests</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi_hybrid.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;guidance_indi_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;guidance_indi_enter()&quot;</span>/&gt;</div>
-<div class="line">  <span class="comment">&lt;!--&lt;periodic fun=&quot;guidance_indi_propagate_filters()&quot; freq=&quot;PERIODIC_FREQUENCY&quot; autorun=&quot;TRUE&quot;/&gt;--&gt;</span></div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_indi_hybrid.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/guidance&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GUIDANCE_INDI_HYBRID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
@@ -187,7 +191,7 @@ Raw guidance_indi_hybrid.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Nov 6 2023 09:05:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 6 2023 09:53:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

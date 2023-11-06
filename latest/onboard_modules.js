@@ -1103,6 +1103,17 @@ var onboard_modules =
         [ "Raw guidance_indi_hybrid.xml file:", "module__guidance_indi_hybrid.html#module_xml__guidance_indi_hybrid", null ]
       ] ]
     ] ],
+    [ "guidance_indi_hybrid_quadplane module", "module__guidance_indi_hybrid_quadplane.html", [
+      [ "Example for airframe file", "module__guidance_indi_hybrid_quadplane.html#module_load_example__guidance_indi_hybrid_quadplane", null ],
+      [ "Module functions", "module__guidance_indi_hybrid_quadplane.html#functions__guidance_indi_hybrid_quadplane", [
+        [ "Raw guidance_indi_hybrid_quadplane.xml file:", "module__guidance_indi_hybrid_quadplane.html#module_xml__guidance_indi_hybrid_quadplane", null ]
+      ] ]
+    ] ],
+    [ "guidance_indi_hybrid_tailsitter module", "module__guidance_indi_hybrid_tailsitter.html", [
+      [ "Example for airframe file", "module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter", [
+        [ "Raw guidance_indi_hybrid_tailsitter.xml file:", "module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter", null ]
+      ] ]
+    ] ],
     [ "guidance_pid_rotorcraft module", "module__guidance_pid_rotorcraft.html", [
       [ "Example for airframe file", "module__guidance_pid_rotorcraft.html#module_load_example__guidance_pid_rotorcraft", null ],
       [ "Module configuration options", "module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft", null ],

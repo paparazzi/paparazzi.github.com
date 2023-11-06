@@ -20,15 +20,12 @@ var guidance__indi__hybrid_8h =
       [ "GUIDANCE_INDI_HYBRID_V_SPEED", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007adc774fb6d59dd2fc2e83b93f4613d688", null ],
       [ "GUIDANCE_INDI_HYBRID_V_ACCEL", "guidance__indi__hybrid_8h.html#a370fb4a08b3c9c93112023e930952007addb1d763f8485caa2aee3823bb65d64d", null ]
     ] ],
+    [ "guidance_indi_calcg_wing", "guidance__indi__hybrid_8h.html#a02524b5812e966b0dbe644d93b9147ed", null ],
     [ "guidance_indi_enter", "guidance__indi__hybrid_8h.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_get_liftd", "guidance__indi__hybrid_8h.html#a1bc7f33a3c8fd2d64a49fdeafc6f48fe", null ],
-    [ "guidance_indi_hybrid_set_wls_settings", "guidance__indi__hybrid_8h.html#ae6f2842f21741d11d4bb8c91da691381", null ],
     [ "guidance_indi_init", "guidance__indi__hybrid_8h.html#aa1f448d3b1322b6c0bd3d84dbb5cf603", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8h.html#af4d00187ad311670f06d0dbbd8acb278", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8h.html#a505237cd381745af8b20a0d896b81e87", null ],
-    [ "du_max_gih", "guidance__indi__hybrid_8h.html#a350465f531c36bee137fc226a9a193ce", null ],
-    [ "du_min_gih", "guidance__indi__hybrid_8h.html#a82270a63daeb8a0805c1933f27263f43", null ],
-    [ "du_pref_gih", "guidance__indi__hybrid_8h.html#a228c0d62243a317dd9630bca184b9919", null ],
     [ "force_forward", "guidance__indi__hybrid_8h.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "gi_speed_sp", "guidance__indi__hybrid_8h.html#a27af36ef93fea1d415ff80db057b47e9", null ],
     [ "gih_params", "guidance__indi__hybrid_8h.html#a220bb859f2933240f886cccc7394368a", null ],
@@ -40,7 +37,5 @@ var guidance__indi__hybrid_8h =
     [ "guidance_indi_thrust_x_eff", "guidance__indi__hybrid_8h.html#a4b2fe5eaaf1c6b474eb17225903ba57c", null ],
     [ "guidance_indi_thrust_z_eff", "guidance__indi__hybrid_8h.html#a18e79dc1c72e8cefd39e46281c503eb6", null ],
     [ "sp_accel", "guidance__indi__hybrid_8h.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
-    [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ],
-    [ "Wu_gih", "guidance__indi__hybrid_8h.html#a1a9963a00423ef93c44fb2d92c17f208", null ],
-    [ "Wv_gih", "guidance__indi__hybrid_8h.html#a465668315affb6508646e9fb42c5a947", null ]
+    [ "take_heading_control", "guidance__indi__hybrid_8h.html#a77d8bba4c8f5141506c5cae265b0e6eb", null ]
 ];

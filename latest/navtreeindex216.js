@@ -1,5 +1,13 @@
 var NAVTREEINDEX216 =
 {
+"usb__serial_8h.html#ac479b2dfa0b2c36002beb8033c0e3124":[12,0,1,0,5,23,13],
+"usb__serial_8h.html#ac4a5ba4265da3e73b6d4247abe10bc4e":[12,0,1,0,5,23,1],
+"usb__serial_8h.html#ac5174fc12e59c6ad40ac3d471d77cf13":[12,0,1,0,5,23,0,3],
+"usb__serial_8h.html#ac892b8a5e844e5ada0baee4f63325b06":[12,0,1,0,5,23,0,1],
+"usb__serial_8h.html#ae4318c752d87ae9cc59828f07ec04946":[12,0,1,0,5,23,5],
+"usb__serial_8h.html#structusb__serial__periph":[12,0,1,0,5,23,0],
+"usb__serial_8h_source.html":[12,0,1,0,5,23],
+"usb__serial__stm32_8h.html":[12,0,1,0,6,10,2],
 "usb__serial__stm32_8h.html#a314b7a150d97d280b9d3f05fe1151ef6":[12,0,1,0,6,10,2,3],
 "usb__serial__stm32_8h.html#a679281777c658450dcd9ce77befa29f0":[12,0,1,0,6,10,2,2],
 "usb__serial__stm32_8h.html#ac73c5eebbfb361dcbf74a648eda5e007":[12,0,1,0,6,10,2,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX216 =
 "video__device_8h.html#ab7d8e2731b25c538b5826e6a5d882f20":[12,0,1,0,7,128,2,0],
 "video__device_8h.html#ac6e8e8ed1336fa93b7494d1aa8cb7775":[12,0,1,0,7,128,2,3],
 "video__device_8h.html#ae2ef10126f2c9dbdac9cf5ea3bacf794":[12,0,1,0,7,128,2,8],
-"video__device_8h.html#ae5f0b0d81df0d1915cb02c001ed78e61":[12,0,1,0,7,128,2,4],
-"video__device_8h.html#ae6e8852d59271631ee506533b63350c1":[12,0,1,0,7,128,0,0],
-"video__device_8h.html#aefdcc0d6a040bfdb68ac09242872be88":[12,0,1,0,7,128,2,9],
-"video__device_8h.html#afbd41528c39b7e21eeeee5554be74a29":[12,0,1,0,7,128,5],
-"video__device_8h.html#structcamera__intrinsics__t":[12,0,1,0,7,128,1],
-"video__device_8h.html#structvideo__config__t":[12,0,1,0,7,128,2],
-"video__device_8h.html#structvideo__thread__t":[12,0,1,0,7,128,0],
-"video__device_8h_source.html":[12,0,1,0,7,128],
-"video__thread_8c.html":[12,0,1,0,6,11,44]
+"video__device_8h.html#ae5f0b0d81df0d1915cb02c001ed78e61":[12,0,1,0,7,128,2,4]
 };
