@@ -265,6 +265,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
 <li class="level2"><a href="#ROTATING_WING_STATE">ROTATING_WING_STATE (ID 181)</a></li>
 <li class="level2"><a href="#DOUBLET">DOUBLET (ID 183)</a></li>
+<li class="level2"><a href="#GUIDANCE">GUIDANCE (ID 184)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
 <li class="level2"><a href="#AIRSPEED_WIND_ESTIMATOR_EKF">AIRSPEED_WIND_ESTIMATOR_EKF (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
@@ -284,7 +285,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#TUNE_VERT">TUNE_VERT (ID 213)</a></li>
 <li class="level2"><a href="#MF_DAQ_STATE">MF_DAQ_STATE (ID 214)</a></li>
 <li class="level2"><a href="#INFO_MSG">INFO_MSG (ID 215)</a></li>
-<li class="level2"><a href="#STAB_ATTITUDE_INDI">STAB_ATTITUDE_INDI (ID 216)</a></li>
+<li class="level2"><a href="#STAB_ATTITUDE">STAB_ATTITUDE (ID 216)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_FP_MIN">ROTORCRAFT_FP_MIN (ID 217)</a></li>
 <li class="level2"><a href="#BEBOP_ACTUATORS">BEBOP_ACTUATORS (ID 218)</a></li>
 <li class="level2"><a href="#WEATHER">WEATHER (ID 219)</a></li>
@@ -318,7 +319,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#PPRZ_DEBUG">PPRZ_DEBUG (ID 247)</a></li>
 <li class="level2"><a href="#BATTERY_MONITOR">BATTERY_MONITOR (ID 248)</a></li>
 <li class="level2"><a href="#GPS_RXMRTCM">GPS_RXMRTCM (ID 249)</a></li>
-<li class="level2"><a href="#INDI_G">INDI_G (ID 250)</a></li>
+<li class="level2"><a href="#EFF_MAT_G">EFF_MAT_G (ID 250)</a></li>
 <li class="level2"><a href="#GPS_RTK">GPS_RTK (ID 251)</a></li>
 <li class="level2"><a href="#GPS_SMALL">GPS_SMALL (ID 252)</a></li>
 <li class="level2"><a href="#I2C_ERRORS">I2C_ERRORS (ID 253)</a></li>
@@ -3706,6 +3707,54 @@ DOUBLET (ID 183)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">doublet_mode_3211   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Mode 3211 enabled   </td></tr>
 </table>
+<h2><a class="anchor" id="GUIDANCE"></a>
+GUIDANCE (ID 184)</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pos_N_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pos_E_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pos_D_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pos_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pos_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">pos_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vel_N_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vel_E_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vel_D_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vel_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">vel_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vel_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">acc_N_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">acc_E_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">acc_D_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">acc_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">acc_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">acc_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^2   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">jerk_N   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">jerk_E   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">jerk_D   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s^3   </td><td class="markdownTableBodyNone"></td></tr>
+</table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
 <table class="markdownTable">
@@ -4070,51 +4119,51 @@ INFO_MSG (ID 215)</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">msg   </td><td class="markdownTableBodyNone">char[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="STAB_ATTITUDE_INDI"></a>
-STAB_ATTITUDE_INDI (ID 216)</h2>
+<h2><a class="anchor" id="STAB_ATTITUDE"></a>
+STAB_ATTITUDE (ID 216)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">body_accel_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s2   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">phi   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">body_accel_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s2   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">theta   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">body_accel_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s2   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">psi   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">phi_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">theta_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">psi_ref   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_rate_p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_rate_q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_rate_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_rate_ref_p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_rate_ref_q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_rate_ref_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_accel_p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_accel_q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_accel_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_accel_ref_p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">angular_accel_ref_q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">angular_accel_ref_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">rad/s2   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">g1_p   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">g1_q   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">nu   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone">Input of control allocation    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">g1_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">g2_r   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">u   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">u   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone">Output of control allocation   </td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_FP_MIN"></a>
 ROTORCRAFT_FP_MIN (ID 217)</h2>
@@ -4711,20 +4760,26 @@ GPS_RXMRTCM (ID 249)</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Crc1087   </td><td class="markdownTableBodyNone">uint32   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h2><a class="anchor" id="INDI_G"></a>
-INDI_G (ID 250)</h2>
+<h2><a class="anchor" id="EFF_MAT_G"></a>
+EFF_MAT_G (ID 250)</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G1_aN   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">G1_aE   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G1_aZ   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">G1_roll   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">G1_pitch   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">G1_yaw   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">G1_thrust   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">G1_yaw   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G1_thrust   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">G2   </td><td class="markdownTableBodyNone">float[]   </td><td class="markdownTableBodyNone">none   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h2><a class="anchor" id="GPS_RTK"></a>
@@ -6827,7 +6882,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 7 2023 09:20:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 7 2023 13:21:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

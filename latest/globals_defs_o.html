@@ -386,13 +386,30 @@ $(document).ready(function(){initNavTree('globals_defs_o.html',''); initResizabl
 : <a class="el" href="stabilization__attitude__ref__euler__int_8c.html#a3ea4fc9c50e7b597184a93bc8e7a5248">stabilization_attitude_ref_euler_int.c</a>
 </li>
 <li>ONE_MHZ_CLK
-: <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65">pwm_input_arch.c</a>
+: <a class="el" href="actuators__shared__arch_8h.html#a644a06e4166982dcb58fbd25d65f1f65">actuators_shared_arch.h</a>
 , <a class="el" href="stm32_2modules_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65">ppm_arch.c</a>
-, <a class="el" href="actuators__shared__arch_8h.html#a644a06e4166982dcb58fbd25d65f1f65">actuators_shared_arch.h</a>
 , <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65">pwm_input_arch.c</a>
 </li>
 <li>ONE_MIN
 : <a class="el" href="pprz__trig__int_8h.html#a95b747c5c747d13e65890f1307801454">pprz_trig_int.h</a>
+</li>
+<li>ONELOOP_ANDI_AC_HAS_PUSHER
+: <a class="el" href="oneloop__andi_8c.html#ac1f3e5df8098e472814956077826ce22">oneloop_andi.c</a>
+</li>
+<li>ONELOOP_ANDI_DEBUG_MODE
+: <a class="el" href="oneloop__andi_8c.html#a56739f39cf9a6f9fcc6eee7adb7fe72c">oneloop_andi.c</a>
+</li>
+<li>ONELOOP_ANDI_FILT_CUTOFF_P
+: <a class="el" href="oneloop__andi_8c.html#ad33c307e52de67d417866b0d103090e0">oneloop_andi.c</a>
+</li>
+<li>ONELOOP_ANDI_FILT_CUTOFF_Q
+: <a class="el" href="oneloop__andi_8c.html#a9cd82ced2886ab68ba3145074e75d201">oneloop_andi.c</a>
+</li>
+<li>ONELOOP_ANDI_FILT_CUTOFF_R
+: <a class="el" href="oneloop__andi_8c.html#a81fb10f84e345ef03143a26d815f4fcd">oneloop_andi.c</a>
+</li>
+<li>ONELOOP_ANDI_PUSHER_IDX
+: <a class="el" href="oneloop__andi_8c.html#a483790b4f61b10984b23871737cbce06">oneloop_andi.c</a>
 </li>
 <li>OPENCVDEMO_FPS
 : <a class="el" href="cv__opencvdemo_8c.html#a6cb7d776ea092a7f1a777cdb42f7219b">cv_opencvdemo.c</a>
@@ -611,8 +628,8 @@ $(document).ready(function(){initNavTree('globals_defs_o.html',''); initResizabl
 : <a class="el" href="opticflow__calculator_8c.html#af5e0eefe1a20d305280ae0e02cc65e47">opticflow_calculator.c</a>
 </li>
 <li>ORANGE_AVOIDER_VERBOSE
-: <a class="el" href="orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider.c</a>
-, <a class="el" href="orange__avoider__guided_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider_guided.c</a>
+: <a class="el" href="orange__avoider__guided_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider_guided.c</a>
+, <a class="el" href="orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider.c</a>
 </li>
 <li>ORANGE_AVOIDER_VISUAL_DETECTION_ID
 : <a class="el" href="mav__exercise_8c.html#ae966a608a1c5346beea4d7fc29f31e90">mav_exercise.c</a>
@@ -637,10 +654,10 @@ $(document).ready(function(){initNavTree('globals_defs_o.html',''); initResizabl
 : <a class="el" href="group__math__orientation__representation.html#gaaa0eaf3eb87be02a80d6d1d47349f8dd">pprz_orientation_conversion.h</a>
 </li>
 <li>OSC32_IN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a036afca03f7df3a43eb1e964be532db2">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a036afca03f7df3a43eb1e964be532db2">board.h</a>
 </li>
 <li>OSC32_OUT
-: <a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a0fa4c6c51464068064a0341484b6a6b2">board.h</a>
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a0fa4c6c51464068064a0341484b6a6b2">board.h</a>
 </li>
 <li>OSC_IN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a40209933b84b34d0eb77e2997229667f">board.h</a>
@@ -822,7 +839,7 @@ $(document).ready(function(){initNavTree('globals_defs_o.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 7 2023 09:20:54 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 7 2023 13:21:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

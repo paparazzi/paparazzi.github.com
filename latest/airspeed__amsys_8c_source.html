@@ -212,8 +212,8 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#elif !defined USE_NPS</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="sim__airspeed_8c.html#ace3c7ebb7c161817631e5a3d72d7ff5d">sim_air_speed</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(<a class="code" href="sim__airspeed_8c.html#ace3c7ebb7c161817631e5a3d72d7ff5d">sim_air_speed</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">float</span> sim_air_speed;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a>(sim_air_speed);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SITL</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
@@ -356,7 +356,6 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div class="ttc" id="agroup__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01309">state.h:1309</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API.</div></div>
 <div class="ttc" id="ains__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
-<div class="ttc" id="asim__airspeed_8c_html_ace3c7ebb7c161817631e5a3d72d7ff5d"><div class="ttname"><a href="sim__airspeed_8c.html#ace3c7ebb7c161817631e5a3d72d7ff5d">sim_air_speed</a></div><div class="ttdeci">float sim_air_speed</div><div class="ttdef"><b>Definition:</b> <a href="sim__airspeed_8c_source.html#l00010">sim_airspeed.c:10</a></div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 <div class="ttc" id="auart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
@@ -366,7 +365,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__amsys_8c.html">airspeed_amsys.c</a></li>
-    <li class="footer">Generated on Tue Nov 7 2023 09:20:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 7 2023 13:21:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

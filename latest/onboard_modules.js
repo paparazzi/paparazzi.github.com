@@ -916,6 +916,11 @@ var onboard_modules =
         [ "Raw fdm_crrcsim.xml file:", "module__fdm_crrcsim.html#module_xml__fdm_crrcsim", null ]
       ] ]
     ] ],
+    [ "fdm_fixedwing_sim module", "module__fdm_fixedwing_sim.html", [
+      [ "Example for airframe file", "module__fdm_fixedwing_sim.html#module_load_example__fdm_fixedwing_sim", [
+        [ "Raw fdm_fixedwing_sim.xml file:", "module__fdm_fixedwing_sim.html#module_xml__fdm_fixedwing_sim", null ]
+      ] ]
+    ] ],
     [ "fdm_gazebo module", "module__fdm_gazebo.html", [
       [ "Example for airframe file", "module__fdm_gazebo.html#module_load_example__fdm_gazebo", null ],
       [ "Module configuration options", "module__fdm_gazebo.html#configuration__fdm_gazebo", [
@@ -1112,6 +1117,11 @@ var onboard_modules =
     [ "guidance_indi_hybrid_tailsitter module", "module__guidance_indi_hybrid_tailsitter.html", [
       [ "Example for airframe file", "module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter", [
         [ "Raw guidance_indi_hybrid_tailsitter.xml file:", "module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter", null ]
+      ] ]
+    ] ],
+    [ "guidance_oneloop module", "module__guidance_oneloop.html", [
+      [ "Example for airframe file", "module__guidance_oneloop.html#module_load_example__guidance_oneloop", [
+        [ "Raw guidance_oneloop.xml file:", "module__guidance_oneloop.html#module_xml__guidance_oneloop", null ]
       ] ]
     ] ],
     [ "guidance_pid_rotorcraft module", "module__guidance_pid_rotorcraft.html", [
@@ -2747,6 +2757,11 @@ var onboard_modules =
         [ "Raw stabilization_int_quat.xml file:", "module__stabilization_int_quat.html#module_xml__stabilization_int_quat", null ]
       ] ]
     ] ],
+    [ "stabilization_oneloop module", "module__stabilization_oneloop.html", [
+      [ "Example for airframe file", "module__stabilization_oneloop.html#module_load_example__stabilization_oneloop", [
+        [ "Raw stabilization_oneloop.xml file:", "module__stabilization_oneloop.html#module_xml__stabilization_oneloop", null ]
+      ] ]
+    ] ],
     [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
       [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", null ],
       [ "Module functions", "module__stabilization_passthrough.html#functions__stabilization_passthrough", [
@@ -3066,6 +3081,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__obstacle_avoidance.html#module_load_example__obstacle_avoidance", null ],
       [ "Module functions", "module__obstacle_avoidance.html#functions__obstacle_avoidance", [
         [ "Raw obstacle_avoidance.xml file:", "module__obstacle_avoidance.html#module_xml__obstacle_avoidance", null ]
+      ] ]
+    ] ],
+    [ "oneloop_andi module", "module__oneloop_andi.html", [
+      [ "Example for airframe file", "module__oneloop_andi.html#module_load_example__oneloop_andi", null ],
+      [ "Module functions", "module__oneloop_andi.html#functions__oneloop_andi", [
+        [ "Raw oneloop_andi.xml file:", "module__oneloop_andi.html#module_xml__oneloop_andi", null ]
       ] ]
     ] ],
     [ "opticflow_hover module", "module__opticflow_hover.html", [

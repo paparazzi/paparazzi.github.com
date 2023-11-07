@@ -1,13 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e":[9,9,1,3,118],
-"group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898":[12,0,1,0,4,8,5],
-"group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898":[9,9,1,3,22],
-"group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4":[12,0,1,0,4,8,94],
-"group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4":[9,9,1,3,111],
-"group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3":[12,0,1,0,4,8,10],
-"group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3":[9,9,1,3,27],
-"group__math__algebra__int.html#gafff0280f8ca7d9accdb4db59511b2e8d":[12,0,1,0,4,8,54],
 "group__math__algebra__int.html#gafff0280f8ca7d9accdb4db59511b2e8d":[9,9,1,3,71],
 "group__math__algebra__int.html#structInt16Eulers":[9,9,1,3,8],
 "group__math__algebra__int.html#structInt16Rates":[9,9,1,3,12],
@@ -249,5 +241,13 @@ var NAVTREEINDEX70 =
 "group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea":[12,0,1,0,4,15,56],
 "group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea":[9,9,2,2,62],
 "group__math__geodetic__int.html#gabb1435fcb8296834d43a124259de724b":[12,0,1,0,4,15,23],
-"group__math__geodetic__int.html#gabb1435fcb8296834d43a124259de724b":[9,9,2,2,29]
+"group__math__geodetic__int.html#gabb1435fcb8296834d43a124259de724b":[9,9,2,2,29],
+"group__math__geodetic__int.html#gabd0713b7771dfb7b32c32b0927b836e9":[12,0,1,0,4,15,12],
+"group__math__geodetic__int.html#gabd0713b7771dfb7b32c32b0927b836e9":[9,9,2,2,18],
+"group__math__geodetic__int.html#gac1c9373f4e9310feecc165355eaec87f":[12,0,1,0,4,15,0],
+"group__math__geodetic__int.html#gac1c9373f4e9310feecc165355eaec87f":[9,9,2,2,6],
+"group__math__geodetic__int.html#gac48ae52f3998895029678a09b16f30e1":[12,0,1,0,4,15,34],
+"group__math__geodetic__int.html#gac48ae52f3998895029678a09b16f30e1":[9,9,2,2,40],
+"group__math__geodetic__int.html#gac871be43c273aeef6bdbed13f7e1b2c0":[12,0,1,0,4,15,3],
+"group__math__geodetic__int.html#gac871be43c273aeef6bdbed13f7e1b2c0":[9,9,2,2,9]
 };

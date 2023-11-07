@@ -17,6 +17,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_indi_hybrid_tailsitter.c", "guidance__indi__hybrid__tailsitter_8c.html", "guidance__indi__hybrid__tailsitter_8c" ],
     [ "guidance_indi_hybrid_tailsitter.h", "guidance__indi__hybrid__tailsitter_8h.html", "guidance__indi__hybrid__tailsitter_8h" ],
     [ "guidance_module.h", "guidance__module_8h.html", null ],
+    [ "guidance_oneloop.c", "guidance__oneloop_8c.html", "guidance__oneloop_8c" ],
+    [ "guidance_oneloop.h", "guidance__oneloop_8h.html", "guidance__oneloop_8h" ],
     [ "guidance_pid.c", "guidance__pid_8c.html", "guidance__pid_8c" ],
     [ "guidance_pid.h", "guidance__pid_8h.html", "guidance__pid_8h" ],
     [ "guidance_v.c", "rotorcraft_2guidance_2guidance__v_8c.html", "rotorcraft_2guidance_2guidance__v_8c" ],

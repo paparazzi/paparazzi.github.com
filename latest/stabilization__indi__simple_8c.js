@@ -16,6 +16,7 @@ var stabilization__indi__simple_8c =
     [ "lms_estimation", "stabilization__indi__simple_8c.html#a4087c1b63b32e110813d687001ea96ca", null ],
     [ "send_ahrs_ref_quat", "stabilization__indi__simple_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474", null ],
     [ "send_att_indi", "stabilization__indi__simple_8c.html#a53fa37c89df626ac39ce2b9bb4c6e175", null ],
+    [ "send_eff_mat_g_indi_simple", "stabilization__indi__simple_8c.html#a7a43cdf875a7f58217dd5c865883cbac", null ],
     [ "stabilization_indi_attitude_run", "stabilization__indi__simple_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8", null ],
     [ "stabilization_indi_enter", "stabilization__indi__simple_8c.html#a121fd732c65156adade05ffb27fbaf52", null ],
     [ "stabilization_indi_init", "stabilization__indi__simple_8c.html#a9b355db7dd60fd053f3fff04eccdc11b", null ],

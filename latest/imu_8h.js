@@ -2,6 +2,7 @@ var imu_8h =
 [
     [ "imu_calib_t", "imu_8h.html#structimu__calib__t", [
       [ "current", "imu_8h.html#a4743f502dc4b207e85b5ac656ccab96e", null ],
+      [ "filter", "imu_8h.html#a3d1e9eddca3a776a7fb29e590f8278de", null ],
       [ "neutral", "imu_8h.html#aa89853a532ad4adf771289eea8832bd6", null ],
       [ "rotation", "imu_8h.html#ae401e507fd893576e3767b10a714a199", null ],
       [ "scale", "imu_8h.html#a1f3ebaad8dc8df7c8f2e56571996e514", null ]
@@ -10,6 +11,9 @@ var imu_8h =
       [ "abi_id", "imu_8h.html#a1b1d1ca0df754ef787eab7af507e96aa", null ],
       [ "body_to_sensor", "imu_8h.html#a86c26b2e762731fa6c0a5dccb2773710", null ],
       [ "calibrated", "imu_8h.html#aca02598e78983f91cb7658fca6dcec0d", null ],
+      [ "filter", "imu_8h.html#acaed69c7cd89b3bf37ab5843686bdd4c", null ],
+      [ "filter_freq", "imu_8h.html#ab7e87667c4e57871994ae8b601092164", null ],
+      [ "filter_sample_freq", "imu_8h.html#a3352b1d70080919208df42527dc2bdc6", null ],
       [ "last_stamp", "imu_8h.html#a009f4bed304da8f96ca2b3bd2396d2eb", null ],
       [ "neutral", "imu_8h.html#a4477c72a6c4437b60dda817ebcc5ff2e", null ],
       [ "scale", "imu_8h.html#a6f6fa9e950ab651e2f75051dd1203ad4", null ],
@@ -21,6 +25,9 @@ var imu_8h =
       [ "abi_id", "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858", null ],
       [ "body_to_sensor", "imu_8h.html#a0abd346b9314d9569fd000f773ce740d", null ],
       [ "calibrated", "imu_8h.html#a574e4bce16579490161479d0d2f44458", null ],
+      [ "filter", "imu_8h.html#a0ccf7e79eca9d02ede21d51e5a98d1ae", null ],
+      [ "filter_freq", "imu_8h.html#a244a1afcd81fdf251f85c5f945e13666", null ],
+      [ "filter_sample_freq", "imu_8h.html#a79cce8c9227c9107ed522e3d81c92b88", null ],
       [ "last_stamp", "imu_8h.html#a30bce24a5723d6d6f09bb1c8b71ff5a8", null ],
       [ "neutral", "imu_8h.html#ab4ee3eecaa0a9ae198eeb78900668bd4", null ],
       [ "scale", "imu_8h.html#aa87b0288f7f2adbad06b207bcf3b1a07", null ],

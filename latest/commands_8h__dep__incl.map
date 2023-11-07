@@ -1,48 +1,47 @@
 <map id="sw/airborne/modules/core/commands.h" name="sw/airborne/modules/core/commands.h">
-<area shape="rect" id="node1" title="Hardware independent code for commands handling." alt="" coords="2772,5,2931,47"/>
-<area shape="rect" id="node2" href="$sim__ap_8c.html" title=" " alt="" coords="5,102,164,143"/>
-<area shape="rect" id="node3" href="$autopilot_8c.html" title="Core autopilot interface common to all firmwares." alt="" coords="189,109,359,136"/>
-<area shape="rect" id="node4" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="383,102,602,143"/>
-<area shape="rect" id="node5" href="$fixedwing_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="627,95,793,151"/>
-<area shape="rect" id="node6" href="$main__recovery_8c.html" title="Recovery mode: run manual mode in case of hardfault Based on legacy FBW." alt="" coords="817,102,1016,143"/>
-<area shape="rect" id="node7" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="1040,95,1207,151"/>
-<area shape="rect" id="node8" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1231,95,1397,151"/>
-<area shape="rect" id="node9" href="$rotorcraft_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="1421,95,1588,151"/>
-<area shape="rect" id="node12" href="$rover_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="1612,102,1819,143"/>
-<area shape="rect" id="node13" href="$rover_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="1843,102,2012,143"/>
-<area shape="rect" id="node14" href="$modules_2actuators_2actuators_8c.html" title="Hardware independent actuators code." alt="" coords="2037,102,2199,143"/>
-<area shape="rect" id="node15" href="$actuators__hitl_8c.html" title=" " alt="" coords="2224,95,2383,151"/>
-<area shape="rect" id="node16" href="$cam_8h.html" title="Pan/Tilt camera API." alt="" coords="2407,102,2565,143"/>
-<area shape="rect" id="node21" href="$generic__com_8c.html" title=" " alt="" coords="2589,102,2748,143"/>
-<area shape="rect" id="node22" href="$commands_8c.html" title="Hardware independent data structures for commands handling." alt="" coords="2772,102,2931,143"/>
-<area shape="rect" id="node23" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation." alt="" coords="2955,102,3113,143"/>
-<area shape="rect" id="node24" href="$servo__cam__ctrl_8c.html" title="Digital Camera Control." alt="" coords="3137,95,3315,151"/>
-<area shape="rect" id="node25" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="3339,102,3497,143"/>
-<area shape="rect" id="node26" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="3521,102,3680,143"/>
-<area shape="rect" id="node27" href="$gas__engine__idle__trim_8c.html" title=" " alt="" coords="3705,95,3883,151"/>
-<area shape="rect" id="node28" href="$glide__wing__lock_8c.html" title=" " alt="" coords="3908,95,4075,151"/>
-<area shape="rect" id="node29" href="$throttle__curve_8c.html" title=" " alt="" coords="4099,95,4257,151"/>
-<area shape="rect" id="node30" href="$modules_2ins_2ins__arduimu__basic_8c.html" title=" " alt="" coords="4282,102,4463,143"/>
-<area shape="rect" id="node31" href="$intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="4488,102,4647,143"/>
-<area shape="rect" id="node42" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="4671,102,4829,143"/>
-<area shape="rect" id="node43" href="$servo__tester_8c.html" title="Module that has a setting to change the input to a servo Call the servo that you want to test SERVO_T..." alt="" coords="4853,95,5012,151"/>
-<area shape="rect" id="node44" href="$auto1__commands_8c.html" title=" " alt="" coords="5037,102,5255,143"/>
-<area shape="rect" id="node45" href="$uav__recovery_8c.html" title=" " alt="" coords="5280,102,5495,143"/>
-<area shape="rect" id="node46" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="5519,102,5685,143"/>
-<area shape="rect" id="node10" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1325,199,1492,255"/>
-<area shape="rect" id="node11" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1517,206,1685,247"/>
-<area shape="rect" id="node17" href="$cam_8c.html" title="Pan/Tilt camera library." alt="" coords="2104,206,2263,247"/>
-<area shape="rect" id="node18" href="$cam__roll_8c.html" title=" " alt="" coords="2287,206,2464,247"/>
-<area shape="rect" id="node19" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="2489,206,2702,247"/>
-<area shape="rect" id="node20" href="$point_8c.html" title="Determines camera pan and tilt angles." alt="" coords="2727,206,2885,247"/>
-<area shape="rect" id="node32" href="$opa__controller__ap_8c.html" title=" " alt="" coords="4024,206,4225,247"/>
-<area shape="rect" id="node33" href="$opa__controller__fbw_8c.html" title=" " alt="" coords="4250,206,4458,247"/>
-<area shape="rect" id="node34" href="$intermcu__dl_8c.html" title="datalink forwarder for InterMCU" alt="" coords="4482,206,4653,247"/>
-<area shape="rect" id="node35" href="$intermcu__ap_8h.html" title="Inter&#45;MCU on the AP side." alt="" coords="4677,206,4858,247"/>
-<area shape="rect" id="node39" href="$intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="4985,206,5173,247"/>
-<area shape="rect" id="node36" href="$intermcu__ap_8c.html" title="Inter&#45;MCU on the AP side." alt="" coords="4379,310,4559,351"/>
-<area shape="rect" id="node37" href="$px4__flash_8c.html" title=" " alt="" coords="4583,310,4749,351"/>
-<area shape="rect" id="node38" href="$spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="4773,303,4961,359"/>
-<area shape="rect" id="node40" href="$intermcu__fbw_8c.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="4986,310,5173,351"/>
-<area shape="rect" id="node41" href="$spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="5197,303,5391,359"/>
+<area shape="rect" id="node1" title="Hardware independent code for commands handling." alt="" coords="2679,5,2838,47"/>
+<area shape="rect" id="node2" href="$autopilot_8c.html" title="Core autopilot interface common to all firmwares." alt="" coords="5,109,176,136"/>
+<area shape="rect" id="node3" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators." alt="" coords="200,102,419,143"/>
+<area shape="rect" id="node4" href="$fixedwing_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="443,95,610,151"/>
+<area shape="rect" id="node5" href="$main__recovery_8c.html" title="Recovery mode: run manual mode in case of hardfault Based on legacy FBW." alt="" coords="634,102,833,143"/>
+<area shape="rect" id="node6" href="$rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="857,95,1023,151"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1047,95,1214,151"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="1238,95,1405,151"/>
+<area shape="rect" id="node11" href="$rover_2autopilot__generated_8c.html" title="Generated autopilot implementation." alt="" coords="1429,102,1635,143"/>
+<area shape="rect" id="node12" href="$rover_2autopilot__utils_8h.html" title="Utility functions and includes for autopilots." alt="" coords="1659,102,1829,143"/>
+<area shape="rect" id="node13" href="$modules_2actuators_2actuators_8c.html" title="Hardware independent actuators code." alt="" coords="1853,102,2016,143"/>
+<area shape="rect" id="node14" href="$actuators__hitl_8c.html" title=" " alt="" coords="2041,95,2199,151"/>
+<area shape="rect" id="node15" href="$cam_8h.html" title="Pan/Tilt camera API." alt="" coords="2223,102,2382,143"/>
+<area shape="rect" id="node20" href="$generic__com_8c.html" title=" " alt="" coords="2406,102,2565,143"/>
+<area shape="rect" id="node21" href="$commands_8c.html" title="Hardware independent data structures for commands handling." alt="" coords="2589,102,2747,143"/>
+<area shape="rect" id="node22" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation." alt="" coords="2771,102,2930,143"/>
+<area shape="rect" id="node23" href="$servo__cam__ctrl_8c.html" title="Digital Camera Control." alt="" coords="2954,95,3131,151"/>
+<area shape="rect" id="node24" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="3155,102,3314,143"/>
+<area shape="rect" id="node25" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc." alt="" coords="3338,102,3497,143"/>
+<area shape="rect" id="node26" href="$gas__engine__idle__trim_8c.html" title=" " alt="" coords="3521,95,3700,151"/>
+<area shape="rect" id="node27" href="$glide__wing__lock_8c.html" title=" " alt="" coords="3725,95,3891,151"/>
+<area shape="rect" id="node28" href="$throttle__curve_8c.html" title=" " alt="" coords="3915,95,4074,151"/>
+<area shape="rect" id="node29" href="$modules_2ins_2ins__arduimu__basic_8c.html" title=" " alt="" coords="4099,102,4280,143"/>
+<area shape="rect" id="node30" href="$intermcu_8h.html" title="Inter&#45;MCU interface." alt="" coords="4305,102,4463,143"/>
+<area shape="rect" id="node41" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed." alt="" coords="4487,102,4646,143"/>
+<area shape="rect" id="node42" href="$servo__tester_8c.html" title="Module that has a setting to change the input to a servo Call the servo that you want to test SERVO_T..." alt="" coords="4670,95,4829,151"/>
+<area shape="rect" id="node43" href="$auto1__commands_8c.html" title=" " alt="" coords="4853,102,5072,143"/>
+<area shape="rect" id="node44" href="$uav__recovery_8c.html" title=" " alt="" coords="5097,102,5311,143"/>
+<area shape="rect" id="node45" href="$nps__autopilot__fixedwing_8c.html" title=" " alt="" coords="5335,102,5502,143"/>
+<area shape="rect" id="node9" href="$rotorcraft_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1142,199,1309,255"/>
+<area shape="rect" id="node10" href="$rover_2autopilot__utils_8c.html" title="Utility functions and includes for autopilots." alt="" coords="1333,206,1501,247"/>
+<area shape="rect" id="node16" href="$cam_8c.html" title="Pan/Tilt camera library." alt="" coords="1921,206,2079,247"/>
+<area shape="rect" id="node17" href="$cam__roll_8c.html" title=" " alt="" coords="2103,206,2281,247"/>
+<area shape="rect" id="node18" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="2305,206,2519,247"/>
+<area shape="rect" id="node19" href="$point_8c.html" title="Determines camera pan and tilt angles." alt="" coords="2543,206,2702,247"/>
+<area shape="rect" id="node31" href="$opa__controller__ap_8c.html" title=" " alt="" coords="3841,206,4042,247"/>
+<area shape="rect" id="node32" href="$opa__controller__fbw_8c.html" title=" " alt="" coords="4067,206,4275,247"/>
+<area shape="rect" id="node33" href="$intermcu__dl_8c.html" title="datalink forwarder for InterMCU" alt="" coords="4299,206,4469,247"/>
+<area shape="rect" id="node34" href="$intermcu__ap_8h.html" title="Inter&#45;MCU on the AP side." alt="" coords="4493,206,4675,247"/>
+<area shape="rect" id="node38" href="$intermcu__fbw_8h.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="4802,206,4990,247"/>
+<area shape="rect" id="node35" href="$intermcu__ap_8c.html" title="Inter&#45;MCU on the AP side." alt="" coords="4195,310,4375,351"/>
+<area shape="rect" id="node36" href="$px4__flash_8c.html" title=" " alt="" coords="4400,310,4565,351"/>
+<area shape="rect" id="node37" href="$spektrum__soft__bind__ap_8c.html" title=" " alt="" coords="4590,303,4778,359"/>
+<area shape="rect" id="node39" href="$intermcu__fbw_8c.html" title="Inter&#45;MCU on FlyByWire side." alt="" coords="4803,310,4989,351"/>
+<area shape="rect" id="node40" href="$spektrum__soft__bind__fbw_8c.html" title=" " alt="" coords="5013,303,5208,359"/>
 </map>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['jevois_5fmsg_5ft_28338',['jevois_msg_t',['../jevois_8c.html#structjevois__msg__t',1,'']]],
-  ['jevois_5ft_28339',['jevois_t',['../jevois_8c.html#structjevois__t',1,'']]],
-  ['joystick_28340',['Joystick',['../joystick_8h.html#structJoystick',1,'']]],
-  ['jpeg_5fencoder_5fstructure_28341',['JPEG_ENCODER_STRUCTURE',['../jpeg_8c.html#structJPEG__ENCODER__STRUCTURE',1,'']]]
+  ['jevois_5fmsg_5ft_28492',['jevois_msg_t',['../jevois_8c.html#structjevois__msg__t',1,'']]],
+  ['jevois_5ft_28493',['jevois_t',['../jevois_8c.html#structjevois__t',1,'']]],
+  ['joystick_28494',['Joystick',['../joystick_8h.html#structJoystick',1,'']]],
+  ['jpeg_5fencoder_5fstructure_28495',['JPEG_ENCODER_STRUCTURE',['../jpeg_8c.html#structJPEG__ENCODER__STRUCTURE',1,'']]]
 ];

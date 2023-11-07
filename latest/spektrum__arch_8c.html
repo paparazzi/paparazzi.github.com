@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('spektrum__arch_8c.html',''); initResiz
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
 <code>#include &lt;inttypes.h&gt;</code><br />
-<code>#include &lt;caml/mlvalues.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="nps__radio__control_8h_source.html">nps_radio_control.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spektrum_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('spektrum__arch_8c.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spektrum__arch_8c__incl.png" border="0" usemap="#asw_2airborne_2arch_2sim_2modules_2radio__control_2spektrum__arch_8c" alt=""/></div>
 <map name="asw_2airborne_2arch_2sim_2modules_2radio__control_2spektrum__arch_8c" id="asw_2airborne_2arch_2sim_2modules_2radio__control_2spektrum__arch_8c">
-<area shape="rect" title="Simulator implementation for spektrum radio control." alt="" coords="351,5,521,61"/>
+<area shape="rect" title="Simulator implementation for spektrum radio control." alt="" coords="347,5,517,61"/>
 <area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="121,109,287,151"/>
 <area shape="rect" title=" " alt="" coords="238,273,325,300"/>
-<area shape="rect" href="spektrum_8h.html" title="Radio control spektrum interface." alt="" coords="414,109,581,151"/>
-<area shape="rect" title=" " alt="" coords="363,199,418,225"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="605,117,752,143"/>
-<area shape="rect" title=" " alt="" coords="776,117,907,143"/>
+<area shape="rect" href="spektrum_8h.html" title="Radio control spektrum interface." alt="" coords="587,109,754,151"/>
+<area shape="rect" title=" " alt="" coords="461,199,515,225"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="779,117,925,143"/>
+<area shape="rect" href="nps__radio__control_8h.html" title=" " alt="" coords="413,117,563,143"/>
 <area shape="rect" title=" " alt="" coords="5,199,165,225"/>
 <area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="190,199,287,225"/>
-<area shape="rect" href="spektrum__radio_8h.html" title="Radio control channels defaults, because they are digital." alt="" coords="443,199,579,225"/>
-<area shape="rect" title=" " alt="" coords="615,199,742,225"/>
+<area shape="rect" href="spektrum__radio_8h.html" title="Radio control channels defaults, because they are digital." alt="" coords="603,199,739,225"/>
+<area shape="rect" title=" " alt="" coords="789,199,915,225"/>
 </map>
 </div>
 </div>
@@ -131,10 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:a58c16366fa7fc51e87cf7c7bbdf54c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff8033ce4ec3eca45caafb45d2ba6760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spektrum__arch_8c.html#aff8033ce4ec3eca45caafb45d2ba6760">spektrum_try_bind</a> (void)</td></tr>
 <tr class="separator:aff8033ce4ec3eca45caafb45d2ba6760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c13e7e6658484cb5565f2f3c01b851"><td class="memItemLeft" align="right" valign="top">value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">update_rc_channel</a> (value c, value v)</td></tr>
-<tr class="separator:a50c13e7e6658484cb5565f2f3c01b851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c714aac41977d2adee4ad5054823ce"><td class="memItemLeft" align="right" valign="top">value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spektrum__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce">send_ppm</a> (value <a class="el" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>)</td></tr>
-<tr class="separator:ad5c714aac41977d2adee4ad5054823ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cddcc569654d438e16b99e54abf6c64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spektrum__arch_8c.html#a7cddcc569654d438e16b99e54abf6c64">radio_control_feed</a> (void)</td></tr>
+<tr class="separator:a7cddcc569654d438e16b99e54abf6c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -146,25 +144,25 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad5c714aac41977d2adee4ad5054823ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c714aac41977d2adee4ad5054823ce">&#9670;&nbsp;</a></span>send_ppm()</h2>
+<a id="a7cddcc569654d438e16b99e54abf6c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cddcc569654d438e16b99e54abf6c64">&#9670;&nbsp;</a></span>radio_control_feed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">value send_ppm </td>
+          <td class="memname">void radio_control_feed </td>
           <td>(</td>
-          <td class="paramtype">value&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00092">92</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00058">58</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="spektrum__arch_8c_source.html#l00041">spektrum_available</a>, and <a class="el" href="nav_8c_source.html#l00031">unit</a>.</p>
+<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="nps__radio__control_8h_source.html#l00049">NpsRadioControl::mode</a>, <a class="el" href="nps__radio__control_8c_source.html#l00031">nps_radio_control</a>, <a class="el" href="nps__radio__control_8h_source.html#l00047">NpsRadioControl::pitch</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00042">RADIO_MODE</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="nps__radio__control_8h_source.html#l00046">NpsRadioControl::roll</a>, <a class="el" href="spektrum__arch_8c_source.html#l00037">spektrum_available</a>, <a class="el" href="nps__radio__control_8h_source.html#l00045">NpsRadioControl::throttle</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, and <a class="el" href="nps__radio__control_8h_source.html#l00048">NpsRadioControl::yaw</a>.</p>
 
 </div>
 </div>
@@ -184,9 +182,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00048">48</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00044">44</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::frame_cpt</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00604">RADIO_CONTROL_SPEKTRUM_ID</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="spektrum__arch_8c_source.html#l00041">spektrum_available</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00062">RadioControl::time_since_last_frame</a>.</p>
+<p class="reference">References <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::frame_cpt</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00604">RADIO_CONTROL_SPEKTRUM_ID</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="spektrum__arch_8c_source.html#l00037">spektrum_available</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00062">RadioControl::time_since_last_frame</a>.</p>
 
 </div>
 </div>
@@ -206,9 +204,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00043">43</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00039">39</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="spektrum__arch_8c_source.html#l00041">spektrum_available</a>.</p>
+<p class="reference">References <a class="el" href="spektrum__arch_8c_source.html#l00037">spektrum_available</a>.</p>
 
 </div>
 </div>
@@ -228,39 +226,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00059">59</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-</div>
-</div>
-<a id="a50c13e7e6658484cb5565f2f3c01b851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50c13e7e6658484cb5565f2f3c01b851">&#9670;&nbsp;</a></span>update_rc_channel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">value update_rc_channel </td>
-          <td>(</td>
-          <td class="paramtype">value&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">value&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00078">78</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
+<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00055">55</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -285,9 +251,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00041">41</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00037">37</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="spektrum__arch_8c_source.html#l00092">send_ppm()</a>, <a class="el" href="spektrum__arch_8c_source.html#l00048">spektrum_event()</a>, and <a class="el" href="spektrum__arch_8c_source.html#l00043">spektrum_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="spektrum__arch_8c_source.html#l00058">radio_control_feed()</a>, <a class="el" href="spektrum__arch_8c_source.html#l00044">spektrum_event()</a>, and <a class="el" href="spektrum__arch_8c_source.html#l00039">spektrum_init()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +263,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_2b8fc0b1e96b9ae5b3950580235b3cc9.html">modules</a></li><li class="navelem"><a class="el" href="dir_a94dec59f6aecbdf1fdcbfc9c7458420.html">radio_control</a></li><li class="navelem"><a class="el" href="spektrum__arch_8c.html">spektrum_arch.c</a></li>
-    <li class="footer">Generated on Tue Nov 7 2023 09:20:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 7 2023 13:21:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

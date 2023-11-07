@@ -1,13 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194":[12,0,1,0,6,28,20,41],
-"gps__skytraq_8c.html#a94e6a47b1c8738e3e26b7b1d83815769":[12,0,1,0,6,28,20,28],
-"gps__skytraq_8c.html#a965e7430c8f11d32eb1c529af10704da":[12,0,1,0,6,28,20,35],
-"gps__skytraq_8c.html#a999669a94a88d88ca091e18b133cfc4b":[12,0,1,0,6,28,20,42],
-"gps__skytraq_8c.html#ab3e11113361a7e3fcc7615832b2a87f5":[12,0,1,0,6,28,20,30],
-"gps__skytraq_8c.html#abb2d151198dd918171ac69cedddc338b":[12,0,1,0,6,28,20,10],
-"gps__skytraq_8c.html#ac02345b1a22bad31db237c524fd236e8":[12,0,1,0,6,28,20,9],
-"gps__skytraq_8c.html#acdc9ae14bb6085ae11656bcdc52558b7":[12,0,1,0,6,28,20,32],
 "gps__skytraq_8c.html#ada32e6bdf968ea13294278923764ed3b":[12,0,1,0,6,28,20,44],
 "gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0":[12,0,1,0,6,28,20,38],
 "gps__skytraq_8c.html#ae333bafff036b3511790a916b93dd728":[12,0,1,0,6,28,20,34],
@@ -249,5 +241,13 @@ var NAVTREEINDEX62 =
 "gps__ubx__ucenter_8c.html#abee6910fe72461d911c3a8edbe1ab568":[12,0,1,0,6,28,26,50],
 "gps__ubx__ucenter_8c.html#ac0ff9d6eae1164d129297e1ed38482bb":[12,0,1,0,6,28,26,38],
 "gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664":[12,0,1,0,6,28,26,61],
-"gps__ubx__ucenter_8c.html#ac492d120179a5e76c52be729672dc1d7":[12,0,1,0,6,28,26,43]
+"gps__ubx__ucenter_8c.html#ac492d120179a5e76c52be729672dc1d7":[12,0,1,0,6,28,26,43],
+"gps__ubx__ucenter_8c.html#ac6a1621ccc20284a3c093f305445b11b":[12,0,1,0,6,28,26,42],
+"gps__ubx__ucenter_8c.html#ac7763fb450426e2c9fc2ae97eadc81a4":[12,0,1,0,6,28,26,47],
+"gps__ubx__ucenter_8c.html#ac78173e2ac3c7b1dd2071157d55cb695":[12,0,1,0,6,28,26,3],
+"gps__ubx__ucenter_8c.html#ac99cb919825d17a9f31af8d067313d8a":[12,0,1,0,6,28,26,10],
+"gps__ubx__ucenter_8c.html#acfcac8bbd38cddc52c8eddeef319e145":[12,0,1,0,6,28,26,24],
+"gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928":[12,0,1,0,6,28,26,4],
+"gps__ubx__ucenter_8c.html#ada3a15a43447b9a942c59c7488723b36":[12,0,1,0,6,28,26,58],
+"gps__ubx__ucenter_8c.html#ada44e94c8939b49533535f26af388379":[12,0,1,0,6,28,26,12]
 };

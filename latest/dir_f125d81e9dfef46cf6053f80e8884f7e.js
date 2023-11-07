@@ -9,7 +9,7 @@ var dir_f125d81e9dfef46cf6053f80e8884f7e =
     [ "ppm.h", "ppm_8h.html", "ppm_8h" ],
     [ "radio_control.c", "radio__control_8c.html", "radio__control_8c" ],
     [ "radio_control.h", "radio__control_8h.html", "radio__control_8h" ],
-    [ "rc_datalink.c", "modules_2radio__control_2rc__datalink_8c.html", "modules_2radio__control_2rc__datalink_8c" ],
+    [ "rc_datalink.c", "rc__datalink_8c.html", "rc__datalink_8c" ],
     [ "rc_datalink.h", "rc__datalink_8h.html", "rc__datalink_8h" ],
     [ "rc_intermcu.c", "rc__intermcu_8c.html", "rc__intermcu_8c" ],
     [ "rc_intermcu.h", "rc__intermcu_8h.html", "rc__intermcu_8h" ],

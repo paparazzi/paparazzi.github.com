@@ -1,6 +1,7 @@
 var dir_19bdda89d6219119fa616a46fa62e86b =
 [
     [ "pybullet", "dir_8d080aedfbadcf05fb7ee15f25486d0e.html", "dir_8d080aedfbadcf05fb7ee15f25486d0e" ],
+    [ "flight_gear.h", "flight__gear_8h.html", "flight__gear_8h" ],
     [ "nps_atmosphere.c", "nps__atmosphere_8c.html", "nps__atmosphere_8c" ],
     [ "nps_atmosphere.h", "nps__atmosphere_8h.html", "nps__atmosphere_8h" ],
     [ "nps_autopilot.h", "nps__autopilot_8h.html", "nps__autopilot_8h" ],
@@ -11,6 +12,7 @@ var dir_19bdda89d6219119fa616a46fa62e86b =
     [ "nps_electrical.h", "nps__electrical_8h.html", "nps__electrical_8h" ],
     [ "nps_fdm.h", "nps__fdm_8h.html", "nps__fdm_8h" ],
     [ "nps_fdm_crrcsim.c", "nps__fdm__crrcsim_8c.html", "nps__fdm__crrcsim_8c" ],
+    [ "nps_fdm_fixedwing_sim.c", "nps__fdm__fixedwing__sim_8c.html", "nps__fdm__fixedwing__sim_8c" ],
     [ "nps_fdm_gazebo.cpp", "nps__fdm__gazebo_8cpp.html", "nps__fdm__gazebo_8cpp" ],
     [ "nps_fdm_jsbsim.cpp", "nps__fdm__jsbsim_8cpp.html", "nps__fdm__jsbsim_8cpp" ],
     [ "nps_fdm_pybullet.c", "nps__fdm__pybullet_8c.html", "nps__fdm__pybullet_8c" ],

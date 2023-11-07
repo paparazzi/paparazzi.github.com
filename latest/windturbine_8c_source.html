@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html',''); initR
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="trigger__ext_8c.html#a6626bfaa95d889c188bff61bcd649cbf">trigger_ext_valid</a> == <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ac_id = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> turb_id = TURBINE_ID;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> sync_itow, cycle_time;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html',''); initR
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    cycle_time = <a class="code" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd">msec_of_sys_time_ticks</a>(<a class="code" href="trigger__ext_8c.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_delta_t0</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    DOWNLINK_SEND_WINDTURBINE_STATUS_(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                      &amp;<a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                      &amp;ac_id,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                      &amp;turb_id,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                      &amp;sync_itow,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                      &amp;cycle_time);</div>
@@ -145,7 +145,6 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html',''); initR
 <div class="ttc" id="adownlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00041">downlink.h:41</a></div></div>
 <div class="ttc" id="agps_8c_html_ad68ada7274989a4c9f08bc06d74ee5bd"><div class="ttname"><a href="gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd">gps_tow_from_sys_ticks</a></div><div class="ttdeci">uint32_t gps_tow_from_sys_ticks(uint32_t sys_ticks)</div><div class="ttdoc">Convert time in sys_time ticks to GPS time of week.</div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00366">gps.c:366</a></div></div>
 <div class="ttc" id="agps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface)</div></div>
-<div class="ttc" id="asim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00043">sim_ap.c:43</a></div></div>
 <div class="ttc" id="astd_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
 <div class="ttc" id="asys__time_8h_html_ab67b78f01783839deb76623ff83981dd"><div class="ttname"><a href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd">msec_of_sys_time_ticks</a></div><div class="ttdeci">static uint32_t msec_of_sys_time_ticks(uint32_t ticks)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00167">sys_time.h:167</a></div></div>
@@ -164,7 +163,7 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="windturbine_8c.html">windturbine.c</a></li>
-    <li class="footer">Generated on Tue Nov 7 2023 09:20:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 7 2023 13:21:27 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
