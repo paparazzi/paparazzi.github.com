@@ -1,5 +1,10 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#MOTOR_MIXING":[2,0,106],
+"paparazzi_messages.html#MOVE_WAYPOINT":[2,2,22],
+"paparazzi_messages.html#MOVE_WP":[2,1,1],
+"paparazzi_messages.html#MPL3115_BARO":[2,0,62],
+"paparazzi_messages.html#MPPT":[2,0,47],
 "paparazzi_messages.html#MS5611_COEFF":[2,0,111],
 "paparazzi_messages.html#MULTIGAZE_METERS":[2,0,103],
 "paparazzi_messages.html#NAVIGATION":[2,0,8],
@@ -244,10 +249,5 @@ var NAVTREEINDEX170 =
 "pca9685__i2c_8c.html#ab7bbcb4fd311296271ef39007308580a":[12,0,1,0,6,51,0,33],
 "pca9685__i2c_8c.html#ab95d82d459965467285eff7239cf61e2":[12,0,1,0,6,51,0,52],
 "pca9685__i2c_8c.html#aba9ac057336b0996a089e0501802807c":[12,0,1,0,6,51,0,85],
-"pca9685__i2c_8c.html#abedd7e19073cc82667796d19bbc1a294":[12,0,1,0,6,51,0,41],
-"pca9685__i2c_8c.html#ac0b90d867ece11e450f83eb7076dc2a7":[12,0,1,0,6,51,0,22],
-"pca9685__i2c_8c.html#ac0ce2769d5626dfe57392ce103e94fdb":[12,0,1,0,6,51,0,38],
-"pca9685__i2c_8c.html#ac199a3d9e6345d931e56c9934559b761":[12,0,1,0,6,51,0,7],
-"pca9685__i2c_8c.html#ac2c276feacd1e89609506f46c82cf20d":[12,0,1,0,6,51,0,67],
-"pca9685__i2c_8c.html#ac54d0f74686306310ca0270f5c7d093d":[12,0,1,0,6,51,0,72]
+"pca9685__i2c_8c.html#abedd7e19073cc82667796d19bbc1a294":[12,0,1,0,6,51,0,41]
 };

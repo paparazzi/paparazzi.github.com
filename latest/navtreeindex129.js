@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adcf63d3c05bbffb14423b8ba96a8db9c":[12,0,1,0,6,44,5,17,1],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adee6921ec8fea41804938fa1e0a7aa3f":[12,0,1,0,6,44,5,17,0],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adf596eb62434f0e84ed2404d474dbe70":[12,0,1,0,6,44,5,17,2],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752aeb45aac28e0ac2391c20d5105433edd3":[12,0,1,0,6,44,5,17,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "module__ahrs_sim.html#functions__ahrs_sim":[1,34,1],
 "module__ahrs_sim.html#module_load_example__ahrs_sim":[1,34,0],
 "module__ahrs_sim.html#module_xml__ahrs_sim":[1,34,1,0],
-"module__ahrs_vectornav.html":[1,35],
-"module__ahrs_vectornav.html#configuration__ahrs_vectornav":[1,35,1]
+"module__ahrs_vectornav.html":[1,35]
 };

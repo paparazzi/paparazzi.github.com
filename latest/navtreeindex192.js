@@ -1,5 +1,10 @@
 var NAVTREEINDEX192 =
 {
+"rtcm3_8h.html#a840e3562f195cf7320e842f6bb2f43cd":[12,0,1,0,6,28,0,2,33],
+"rtcm3_8h.html#a84375d858f472679dff12c1ed1f7b255":[12,0,1,0,6,28,0,2,1,9],
+"rtcm3_8h.html#a87420c9a4399f62b8087511c9b6957a1":[12,0,1,0,6,28,0,2,18],
+"rtcm3_8h.html#a8856577ec0bb8d2ded56dcbf465ebf84":[12,0,1,0,6,28,0,2,4],
+"rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc":[12,0,1,0,6,28,0,2,10],
 "rtcm3_8h.html#a8fa44963bdbaed08a67dd07fa8b75745":[12,0,1,0,6,28,0,2,35],
 "rtcm3_8h.html#a91b36270155ba0329e0a4ce357e806a5":[12,0,1,0,6,28,0,2,67],
 "rtcm3_8h.html#a95d6b090e5acb84fdbc78a2291b800e6":[12,0,1,0,6,28,0,2,45],
@@ -99,10 +104,10 @@ var NAVTREEINDEX192 =
 "rtwtypes_8h.html#af3b12d911332c30bc150743e1196660a":[12,0,1,0,6,43,0,0,5],
 "rtwtypes_8h.html#afc0fac7fa072abb8fc3da29d89a5a250":[12,0,1,0,6,43,0,0,3],
 "rtwtypes_8h_source.html":[12,0,1,0,6,43,0,0],
-"rust__demo__module_8h.html":[12,0,1,0,6,59,0,0],
-"rust__demo__module_8h.html#a0a68624e30eaebba98c150713144fb1e":[12,0,1,0,6,59,0,0,1],
-"rust__demo__module_8h.html#ab3c337f9afe5f3e50a211b3895d4334e":[12,0,1,0,6,59,0,0,0],
-"rust__demo__module_8h_source.html":[12,0,1,0,6,59,0,0],
+"rust__demo__module_8h.html":[12,0,1,0,6,60,0,0],
+"rust__demo__module_8h.html#a0a68624e30eaebba98c150713144fb1e":[12,0,1,0,6,60,0,0,1],
+"rust__demo__module_8h.html#ab3c337f9afe5f3e50a211b3895d4334e":[12,0,1,0,6,60,0,0,0],
+"rust__demo__module_8h_source.html":[12,0,1,0,6,60,0,0],
 "sbus_8c.html":[12,0,1,0,6,55,13],
 "sbus_8c.html#a0391a78ae3f30e6308e3bef30963823b":[12,0,1,0,6,55,13,1],
 "sbus_8c.html#a06629ac6d37929437d99cce1c4631330":[12,0,1,0,6,55,13,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX192 =
 "scheduling__indi__simple_8c.html#a80dcca086fcbf5ef61bfe9d420b5ae10":[12,0,1,0,6,13,26,2],
 "scheduling__indi__simple_8c.html#a81b7b71f58114d5bda479fadbd5ef3d9":[12,0,1,0,6,13,26,0],
 "scheduling__indi__simple_8c.html#abdf2fed343cf528f527d9fabb8e5a538":[12,0,1,0,6,13,26,3],
-"scheduling__indi__simple_8c.html#ae9eb94499931ad153f55629d056b658b":[12,0,1,0,6,13,26,4],
-"scheduling__indi__simple_8c.html#afa83ea9955eb8fb36341a2169a823af1":[12,0,1,0,6,13,26,1],
-"scheduling__indi__simple_8c_source.html":[12,0,1,0,6,13,26],
-"scheduling__indi__simple_8h.html":[12,0,1,0,6,13,27],
-"scheduling__indi__simple_8h.html#a3596b0a1acf5772a8692e4d9b9683906":[12,0,1,0,6,13,27,2],
-"scheduling__indi__simple_8h.html#a80dcca086fcbf5ef61bfe9d420b5ae10":[12,0,1,0,6,13,27,1]
+"scheduling__indi__simple_8c.html#ae9eb94499931ad153f55629d056b658b":[12,0,1,0,6,13,26,4]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX95 =
 {
+"intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17":[12,0,1,0,6,37,1,5],
 "intermcu__ap_8c.html#ae82256004044da90054c67c7a277048c":[12,0,1,0,6,37,1,9],
 "intermcu__ap_8c.html#af5ff84589199efa9195c642a64024b40":[12,0,1,0,6,37,1,2],
 "intermcu__ap_8c_source.html":[12,0,1,0,6,37,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX95 =
 "invensense2__regs_8h.html#a72d5b2517d0f4c34ed3fbd3be57b6872":[12,0,1,0,7,45,42],
 "invensense2__regs_8h.html#a744a4bd702f7591bd8883a1fa0072b71":[12,0,1,0,7,45,140],
 "invensense2__regs_8h.html#a74efd6dd0897bd3d2df94d20f4a429da":[12,0,1,0,7,45,65],
-"invensense2__regs_8h.html#a76da7de2109770b2076c8dab20325ff9":[12,0,1,0,7,45,91],
-"invensense2__regs_8h.html#a77068b82fea24f3d37717ef74b9e09b0":[12,0,1,0,7,45,116]
+"invensense2__regs_8h.html#a76da7de2109770b2076c8dab20325ff9":[12,0,1,0,7,45,91]
 };

@@ -3216,6 +3216,12 @@ var onboard_modules =
         [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
       ] ]
     ] ],
+    [ "wing_rotation_controller_servo module", "module__wing_rotation_controller_servo.html", [
+      [ "Example for airframe file", "module__wing_rotation_controller_servo.html#module_load_example__wing_rotation_controller_servo", null ],
+      [ "Module functions", "module__wing_rotation_controller_servo.html#functions__wing_rotation_controller_servo", [
+        [ "Raw wing_rotation_controller_servo.xml file:", "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo", null ]
+      ] ]
+    ] ],
     [ "wls module", "module__wls.html", [
       [ "Example for airframe file", "module__wls.html#module_load_example__wls", null ],
       [ "Module configuration options", "module__wls.html#configuration__wls", [

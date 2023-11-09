@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,419,0],
 "module__stabilization_int_euler.html#module_xml__stabilization_int_euler":[1,419,2,0],
 "module__stabilization_int_quat.html":[1,420],
 "module__stabilization_int_quat.html#configuration__stabilization_int_quat":[1,420,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__udp.html":[1,268],
 "module__udp.html#module_load_example__udp":[1,268,0],
 "module__udp.html#module_xml__udp":[1,268,0,0],
-"module__usb_serial_stm32_example1.html":[1,50],
-"module__usb_serial_stm32_example1.html#functions__usb_serial_stm32_example1":[1,50,1]
+"module__usb_serial_stm32_example1.html":[1,50]
 };

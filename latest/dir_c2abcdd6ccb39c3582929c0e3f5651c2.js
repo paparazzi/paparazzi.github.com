@@ -59,6 +59,7 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "range_finder", "dir_80a5891e1425a0a362a7328cd2bc25aa.html", "dir_80a5891e1425a0a362a7328cd2bc25aa" ],
     [ "range_forcefield", "dir_383aa5ecfbb15f18bd0448126dc1b607.html", "dir_383aa5ecfbb15f18bd0448126dc1b607" ],
     [ "relative_localization_filter", "dir_808b32a89de8baa3bfdbe89b0748a283.html", "dir_808b32a89de8baa3bfdbe89b0748a283" ],
+    [ "rot_wing_drone", "dir_df6c04e8f1089b06484d278c14f01724.html", "dir_df6c04e8f1089b06484d278c14f01724" ],
     [ "rust", "dir_19eaf27296313f09cdbfc5bb25e0962f.html", "dir_19eaf27296313f09cdbfc5bb25e0962f" ],
     [ "sensors", "dir_2f48bbb566df394f79dcf8fe0631584a.html", "dir_2f48bbb566df394f79dcf8fe0631584a" ],
     [ "servo_tester", "dir_c59999c9c4c3ce2ad9926d4ee931ee97.html", "dir_c59999c9c4c3ce2ad9926d4ee931ee97" ],

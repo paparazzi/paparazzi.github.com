@@ -16,6 +16,8 @@ var searchData=
   ['wind_5fgfi_2eh_30460',['wind_gfi.h',['../wind__gfi_8h.html',1,'']]],
   ['windturbine_2ec_30461',['windturbine.c',['../windturbine_8c.html',1,'']]],
   ['windturbine_2eh_30462',['windturbine.h',['../windturbine_8h.html',1,'']]],
-  ['wls_5falloc_2ec_30463',['wls_alloc.c',['../wls__alloc_8c.html',1,'']]],
-  ['wls_5falloc_2eh_30464',['wls_alloc.h',['../wls__alloc_8h.html',1,'']]]
+  ['wing_5frotation_5fcontroller_5fservo_2ec_30463',['wing_rotation_controller_servo.c',['../wing__rotation__controller__servo_8c.html',1,'']]],
+  ['wing_5frotation_5fcontroller_5fservo_2eh_30464',['wing_rotation_controller_servo.h',['../wing__rotation__controller__servo_8h.html',1,'']]],
+  ['wls_5falloc_2ec_30465',['wls_alloc.c',['../wls__alloc_8c.html',1,'']]],
+  ['wls_5falloc_2eh_30466',['wls_alloc.h',['../wls__alloc_8h.html',1,'']]]
 ];

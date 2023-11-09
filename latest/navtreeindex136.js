@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__orange_avoider_guided.html":[1,350],
 "module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,350,1],
 "module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,350,2],
 "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,350,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple":[1,418,2,0],
 "module__stabilization_int_euler.html":[1,419],
 "module__stabilization_int_euler.html#configuration__stabilization_int_euler":[1,419,1],
-"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,419,2],
-"module__stabilization_int_euler.html#module_load_example__stabilization_int_euler":[1,419,0]
+"module__stabilization_int_euler.html#functions__stabilization_int_euler":[1,419,2]
 };
