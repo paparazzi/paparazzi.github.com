@@ -1,8 +1,6 @@
 var wing__rotation__controller__servo_8h_structwing__rotation__controller__t =
 [
     [ "adc_wing_rotation", "wing__rotation__controller__servo_8h.html#a2d810f5e4fffc8c39feae3be6e2d35e0", null ],
-    [ "init_loop_count", "wing__rotation__controller__servo_8h.html#a363bea8ecefa397a31a215ca8df53110", null ],
-    [ "initialized", "wing__rotation__controller__servo_8h.html#ae2de83d8e8a3988c7ab4d9a0d0f337b5", null ],
     [ "servo_pprz_cmd", "wing__rotation__controller__servo_8h.html#a1ecfc9dac649d89de5dab84f3aed405a", null ],
     [ "wing_angle_deg", "wing__rotation__controller__servo_8h.html#ab1b54eff0248256f775b3c4de0fb0071", null ],
     [ "wing_angle_deg_sp", "wing__rotation__controller__servo_8h.html#a12c2c2d6210f372ca7c834f7ed8200d0", null ],

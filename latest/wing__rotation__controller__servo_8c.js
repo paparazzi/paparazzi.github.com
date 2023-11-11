@@ -8,7 +8,7 @@ var wing__rotation__controller__servo_8c =
     [ "wing_rotation_compute_pprz_cmd", "wing__rotation__controller__servo_8c.html#aa5851791e3773753e504294b9fcaa211", null ],
     [ "wing_rotation_event", "wing__rotation__controller__servo_8c.html#a2fd9d77b4c20ff864e460f044218727d", null ],
     [ "wing_rotation_init", "wing__rotation__controller__servo_8c.html#a9f647df09189323c671d7a759f91c55a", null ],
-    [ "wing_rotation_periodic", "wing__rotation__controller__servo_8c.html#aadfac426baf5a6bd2a5fae0dfe91fa66", null ],
     [ "buf_wing_rot_pos", "wing__rotation__controller__servo_8c.html#abadd15d20a41dc4ef85f695aa5518969", null ],
+    [ "in_transition", "wing__rotation__controller__servo_8c.html#a2678c40f30531e3f56f78bdbab3c6861", null ],
     [ "wing_rotation_controller", "wing__rotation__controller__servo_8c.html#aafb7f8cffc0b10463df274931bebe6c3", null ]
 ];

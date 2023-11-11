@@ -36,6 +36,7 @@ var onboard_modules =
       [ "Orange_Avoider modules", "onboard_modules.html#modules_category_orange_avoider", null ],
       [ "Radio_Control modules", "onboard_modules.html#modules_category_radio_control", null ],
       [ "Range_Finder modules", "onboard_modules.html#modules_category_range_finder", null ],
+      [ "Rot_Wing_Drone modules", "onboard_modules.html#modules_category_rot_wing_drone", null ],
       [ "Sensors modules", "onboard_modules.html#modules_category_sensors", null ],
       [ "Sonar modules", "onboard_modules.html#modules_category_sonar", null ],
       [ "Stabilization modules", "onboard_modules.html#modules_category_stabilization", null ],
@@ -2366,6 +2367,18 @@ var onboard_modules =
         [ "Raw teraranger_one.xml file:", "module__teraranger_one.html#module_xml__teraranger_one", null ]
       ] ]
     ] ],
+    [ "rotwing_state module", "module__rotwing_state.html", [
+      [ "Example for airframe file", "module__rotwing_state.html#module_load_example__rotwing_state", null ],
+      [ "Module functions", "module__rotwing_state.html#functions__rotwing_state", [
+        [ "Raw rotwing_state.xml file:", "module__rotwing_state.html#module_xml__rotwing_state", null ]
+      ] ]
+    ] ],
+    [ "wing_rotation_controller_servo module", "module__wing_rotation_controller_servo.html", [
+      [ "Example for airframe file", "module__wing_rotation_controller_servo.html#module_load_example__wing_rotation_controller_servo", null ],
+      [ "Module functions", "module__wing_rotation_controller_servo.html#functions__wing_rotation_controller_servo", [
+        [ "Raw wing_rotation_controller_servo.xml file:", "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo", null ]
+      ] ]
+    ] ],
     [ "aoa_adc module", "module__aoa_adc.html", [
       [ "Example for airframe file", "module__aoa_adc.html#module_load_example__aoa_adc", null ],
       [ "Module configuration options", "module__aoa_adc.html#configuration__aoa_adc", null ],
@@ -3214,12 +3227,6 @@ var onboard_modules =
       [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", null ],
       [ "Module functions", "module__wedgebug.html#functions__wedgebug", [
         [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
-      ] ]
-    ] ],
-    [ "wing_rotation_controller_servo module", "module__wing_rotation_controller_servo.html", [
-      [ "Example for airframe file", "module__wing_rotation_controller_servo.html#module_load_example__wing_rotation_controller_servo", null ],
-      [ "Module functions", "module__wing_rotation_controller_servo.html#functions__wing_rotation_controller_servo", [
-        [ "Raw wing_rotation_controller_servo.xml file:", "module__wing_rotation_controller_servo.html#module_xml__wing_rotation_controller_servo", null ]
       ] ]
     ] ],
     [ "wls module", "module__wls.html", [

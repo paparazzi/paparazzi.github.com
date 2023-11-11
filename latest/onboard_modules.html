@@ -124,6 +124,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html',''); initResizab
 <li class="level2"><a href="#modules_category_orange_avoider">Orange_Avoider modules</a></li>
 <li class="level2"><a href="#modules_category_radio_control">Radio_Control modules</a></li>
 <li class="level2"><a href="#modules_category_range_finder">Range_Finder modules</a></li>
+<li class="level2"><a href="#modules_category_rot_wing_drone">Rot_Wing_Drone modules</a></li>
 <li class="level2"><a href="#modules_category_sensors">Sensors modules</a></li>
 <li class="level2"><a href="#modules_category_sonar">Sonar modules</a></li>
 <li class="level2"><a href="#modules_category_stabilization">Stabilization modules</a></li>
@@ -642,6 +643,12 @@ Range_Finder modules</h2>
 <li><a class="el" href="module__laser_range_array.html">laser_range_array module</a> : Reads out values through uart of an laser range ring (array), containing multiple ToF IR laser range modules</li>
 <li><a class="el" href="module__teraranger_one.html">teraranger_one module</a> : Driver for the <a class="el" href="teraranger__one_8h.html#structTeraRanger">TeraRanger</a> One range finder (I2C)</li>
 </ul>
+<h2><a class="anchor" id="modules_category_rot_wing_drone"></a>
+Rot_Wing_Drone modules</h2>
+<ul>
+<li><a class="el" href="module__rotwing_state.html">rotwing_state module</a> : This module keeps track of the current state of a rotating wing drone and desired state set by the RC or flightplan</li>
+<li><a class="el" href="module__wing_rotation_controller_servo.html">wing_rotation_controller_servo module</a> : Module to control wing rotation servo command based on prefered angle setpoint</li>
+</ul>
 <h2><a class="anchor" id="modules_category_sensors"></a>
 Sensors modules</h2>
 <ul>
@@ -799,7 +806,6 @@ Misc modules</h2>
 <li><a class="el" href="module__uav_recovery.html">uav_recovery module</a> : Parachute</li>
 <li><a class="el" href="module__uavcan.html">uavcan module</a> : UAVCan interface for transmitting/receiving uavcan messages on CAN busses</li>
 <li><a class="el" href="module__wedgebug.html">wedgebug module</a> : An integration of the WegdeBug algorithm (Laubach 1999) for path finding, for drones with stereo vision.</li>
-<li><a class="el" href="module__wing_rotation_controller_servo.html">wing_rotation_controller_servo module</a> : Module to control wing rotation servo command based on prefered angle setpoint</li>
 <li><a class="el" href="module__wls.html">wls module</a> : Weighted Least Square optimization algorithm. </li>
 </ul>
 </div></div><!-- contents -->
@@ -808,7 +814,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 11 2023 09:31:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Nov 11 2023 14:55:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
