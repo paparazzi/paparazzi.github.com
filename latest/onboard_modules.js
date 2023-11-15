@@ -2367,6 +2367,13 @@ var onboard_modules =
         [ "Raw teraranger_one.xml file:", "module__teraranger_one.html#module_xml__teraranger_one", null ]
       ] ]
     ] ],
+    [ "rot_wing_automation module", "module__rot_wing_automation.html", [
+      [ "Example for airframe file", "module__rot_wing_automation.html#module_load_example__rot_wing_automation", null ],
+      [ "Module configuration options", "module__rot_wing_automation.html#configuration__rot_wing_automation", null ],
+      [ "Module functions", "module__rot_wing_automation.html#functions__rot_wing_automation", [
+        [ "Raw rot_wing_automation.xml file:", "module__rot_wing_automation.html#module_xml__rot_wing_automation", null ]
+      ] ]
+    ] ],
     [ "rotwing_state module", "module__rotwing_state.html", [
       [ "Example for airframe file", "module__rotwing_state.html#module_load_example__rotwing_state", null ],
       [ "Module functions", "module__rotwing_state.html#functions__rotwing_state", [

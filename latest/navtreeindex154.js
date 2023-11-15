@@ -1,5 +1,10 @@
 var NAVTREEINDEX154 =
 {
+"navstik__1_80_8h.html#ae718fb13d2500192855c74e78e6c9c5e":[12,0,1,0,1,48,74],
+"navstik__1_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[12,0,1,0,1,48,140],
+"navstik__1_80_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70":[12,0,1,0,1,48,124],
+"navstik__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a":[12,0,1,0,1,48,34],
+"navstik__1_80_8h.html#af31fda99a2cc43d62229ac1c47bbe56d":[12,0,1,0,1,48,31],
 "navstik__1_80_8h.html#af93888595216eb71acfec667e7b5bdd2":[12,0,1,0,1,48,125],
 "navstik__1_80_8h.html#af93dff0ad1b6edbef6e37c4bac7c8de3":[12,0,1,0,1,48,102],
 "navstik__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857":[12,0,1,0,1,48,85],
@@ -147,8 +152,8 @@ var NAVTREEINDEX154 =
 "notch__filter__float_8h.html#a3a64e9a242532eca76caa327259e2943":[12,0,1,0,2,8,0,1],
 "notch__filter__float_8h.html#a452d527dd7a5b92bf2985b7cf96fb146":[12,0,1,0,2,9,0,7],
 "notch__filter__float_8h.html#a452d527dd7a5b92bf2985b7cf96fb146":[12,0,1,0,2,8,0,7],
-"notch__filter__float_8h.html#a49c73dc1762d72be4cd3e0f384d20446":[12,0,1,0,2,8,0,2],
 "notch__filter__float_8h.html#a49c73dc1762d72be4cd3e0f384d20446":[12,0,1,0,2,9,0,2],
+"notch__filter__float_8h.html#a49c73dc1762d72be4cd3e0f384d20446":[12,0,1,0,2,8,0,2],
 "notch__filter__float_8h.html#a9f102b18d534f8383077cd7dc257766a":[12,0,1,0,2,9,5],
 "notch__filter__float_8h.html#aa71bf2af738f6f2e6faaff7460e06c4e":[12,0,1,0,2,9,0,9],
 "notch__filter__float_8h.html#aa71bf2af738f6f2e6faaff7460e06c4e":[12,0,1,0,2,8,0,9],
@@ -164,8 +169,8 @@ var NAVTREEINDEX154 =
 "notch__filter__float_8h.html#af0a68017635e730c83735978e2bf859a":[12,0,1,0,2,9,3],
 "notch__filter__float_8h.html#af33ac8a9ce4baa116149d7af4ced85eb":[12,0,1,0,2,9,1],
 "notch__filter__float_8h.html#af50ebbdb691b29bda4339609b8c7a2ad":[12,0,1,0,2,9,2],
-"notch__filter__float_8h.html#structSecondOrderNotchFilter":[12,0,1,0,2,9,0],
 "notch__filter__float_8h.html#structSecondOrderNotchFilter":[12,0,1,0,2,8,0],
+"notch__filter__float_8h.html#structSecondOrderNotchFilter":[12,0,1,0,2,9,0],
 "notch__filter__float_8h_source.html":[12,0,1,0,2,9],
 "nps__atmosphere_8c.html":[12,0,1,1,1,2],
 "nps__atmosphere_8c.html#a0c302a2aca854b5dbc792b93decc0fb2":[12,0,1,1,1,2,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX154 =
 "nps__autopilot__rover_8c.html#a7ac376c868e8cec83ef082ac3beb9487":[12,0,1,1,1,7,4],
 "nps__autopilot__rover_8c.html#abf3277c5d8e757db78d1d7d84cac144f":[12,0,1,1,1,7,5],
 "nps__autopilot__rover_8c.html#ac43e9310c9c7cafa544b09a8090c3d17":[12,0,1,1,1,7,0],
-"nps__autopilot__rover_8c_source.html":[12,0,1,1,1,7],
-"nps__electrical_8c.html":[12,0,1,1,1,8],
-"nps__electrical_8c.html#a43b51daf5684a2ff6891928d85eb1538":[12,0,1,1,1,8,2],
-"nps__electrical_8c.html#a9a38e15f4c115662205d7acfb92db20c":[12,0,1,1,1,8,0],
-"nps__electrical_8c.html#aec79a7c89cea748d7a4696ad97548796":[12,0,1,1,1,8,1],
-"nps__electrical_8c_source.html":[12,0,1,1,1,8]
+"nps__autopilot__rover_8c_source.html":[12,0,1,1,1,7]
 };

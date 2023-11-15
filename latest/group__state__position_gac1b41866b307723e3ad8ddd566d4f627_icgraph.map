@@ -1,7 +1,7 @@
 <map id="stateGetPositionNed_f" name="stateGetPositionNed_f">
-<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="1368,442,1536,469"/>
-<area shape="rect" id="node2" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="1143,71,1309,112"/>
-<area shape="rect" id="node5" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="1143,5,1309,47"/>
+<area shape="rect" id="node1" title="Get position in local NED coordinates (float)." alt="" coords="1368,471,1536,498"/>
+<area shape="rect" id="node2" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="1143,5,1309,47"/>
+<area shape="rect" id="node5" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="1143,71,1309,112"/>
 <area shape="rect" id="node6" href="$autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="1135,137,1317,163"/>
 <area shape="rect" id="node9" href="$obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2" title=" " alt="" coords="1149,189,1303,215"/>
 <area shape="rect" id="node11" href="$cv__target__localization_8c.html#a9dba1ee548dbeb610b39fced772c182b" title=" " alt="" coords="1173,239,1279,266"/>
@@ -13,10 +13,11 @@
 <area shape="rect" id="node28" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1157,610,1295,637"/>
 <area shape="rect" id="node29" href="$oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="910,594,1053,621"/>
 <area shape="rect" id="node35" href="$ins__flow_8c.html#a55c722921bb81fa0d3a9767dd6d787bf" title=" " alt="" coords="1163,661,1289,687"/>
-<area shape="rect" id="node37" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="1133,711,1319,738"/>
-<area shape="rect" id="node38" href="$ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="1169,762,1283,789"/>
-<area shape="rect" id="node40" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="1141,813,1311,855"/>
-<area shape="rect" id="node41" href="$tag__tracking_8c.html#aaee13ce9f831f3f3773208241db1a0c9" title=" " alt="" coords="1149,879,1303,906"/>
+<area shape="rect" id="node37" href="$rot__wing__automation_8c.html#aa7c1befad26f07177137801ac975b832" title=" " alt="" coords="1139,711,1313,738"/>
+<area shape="rect" id="node38" href="$rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3" title=" " alt="" coords="1133,762,1319,789"/>
+<area shape="rect" id="node39" href="$ins__flow_8c.html#afd0ef2bd7d5960d822e0198a23359a0d" title=" " alt="" coords="1169,813,1283,839"/>
+<area shape="rect" id="node41" href="$target__pos_8c.html#afb51a9b856b973a6fbae447c04912a20" title="Set the current measured distance and heading as offset." alt="" coords="1141,864,1311,905"/>
+<area shape="rect" id="node42" href="$tag__tracking_8c.html#aaee13ce9f831f3f3773208241db1a0c9" title=" " alt="" coords="1149,930,1303,957"/>
 <area shape="rect" id="node3" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="879,5,1084,47"/>
 <area shape="rect" id="node4" href="$mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="674,13,793,39"/>
 <area shape="rect" id="node7" href="$autopilot__guided_8c.html#a2e1c3e1b1fd34632e5de912da830ba26" title="Parse GUIDED_SETPOINT_NED messages from datalink." alt="" coords="894,123,1069,164"/>
@@ -39,8 +40,8 @@
 <area shape="rect" id="node33" href="$optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="642,746,825,773"/>
 <area shape="rect" id="node34" href="$optical__flow__landing_8c.html#a24ef9289dfa15084a7457a97ad7632c8" title=" " alt="" coords="408,746,588,773"/>
 <area shape="rect" id="node36" href="$ins__flow_8c.html#aaec1213e138f25bd822716c107ecde5e" title=" " alt="" coords="918,695,1045,722"/>
-<area shape="rect" id="node39" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="930,762,1033,789"/>
-<area shape="rect" id="node42" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="929,909,1034,935"/>
-<area shape="rect" id="node44" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="908,843,1055,884"/>
-<area shape="rect" id="node43" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="668,909,799,935"/>
+<area shape="rect" id="node40" href="$ins__flow_8c.html#a4d53c3e64875914ced311f7381ae21f7" title=" " alt="" coords="930,813,1033,839"/>
+<area shape="rect" id="node43" href="$tag__tracking_8c.html#a15f59888fc4727fbad2143fd66f7eb4c" title=" " alt="" coords="929,959,1034,986"/>
+<area shape="rect" id="node45" href="$tag__tracking_8c.html#a863781f1ab73455b0d2ed5915f87f52b" title=" " alt="" coords="908,893,1055,935"/>
+<area shape="rect" id="node44" href="$tag__tracking_8c.html#a1fb71ca2a878c2c905139dccff2b680f" title=" " alt="" coords="668,959,799,986"/>
 </map>
