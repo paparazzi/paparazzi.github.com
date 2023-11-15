@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__collective_tracking_control_target.html#functions__collective_tracking_control_target":[1,447,2],
+"module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target":[1,447,0],
 "module__collective_tracking_control_target.html#module_xml__collective_tracking_control_target":[1,447,3,0],
 "module__collective_tracking_control_target.html#periodic_functions":[1,447,2,0],
 "module__control.html":[1,71],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__fbw_datalink.html#module_xml__fbw_datalink":[1,102,1,0],
 "module__fc_rotor.html":[1,456],
 "module__fc_rotor.html#datalink_functions__fc_rotor":[1,456,2],
-"module__fc_rotor.html#functions__fc_rotor":[1,456,1],
-"module__fc_rotor.html#module_load_example__fc_rotor":[1,456,0],
-"module__fc_rotor.html#module_xml__fc_rotor":[1,456,2,0]
+"module__fc_rotor.html#functions__fc_rotor":[1,456,1]
 };

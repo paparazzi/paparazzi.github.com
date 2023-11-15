@@ -2,6 +2,7 @@ var airspeed__ms45xx__i2c_8h_structAirspeedMs45xx =
 [
     [ "airspeed", "airspeed__ms45xx__i2c_8h.html#af8f6282fba31101e1bfc23f0d393505a", null ],
     [ "autoset_offset", "airspeed__ms45xx__i2c_8h.html#a19827c5000cce05be28ccad145fb9194", null ],
+    [ "offset_set", "airspeed__ms45xx__i2c_8h.html#a9e3bcea9edd5d05dd931cf8c072295a0", null ],
     [ "pressure", "airspeed__ms45xx__i2c_8h.html#abbf12da13b62c98226e4f4aa9d30053f", null ],
     [ "pressure_offset", "airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0", null ],
     [ "pressure_scale", "airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a", null ],

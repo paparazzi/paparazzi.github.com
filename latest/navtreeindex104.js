@@ -1,5 +1,7 @@
 var NAVTREEINDEX104 =
 {
+"linux_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b":[12,0,1,0,0,1,2,4],
+"linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449":[12,0,1,0,0,1,2,5],
 "linux_2led__hw_8h_source.html":[12,0,1,0,0,1,2],
 "linux_2mcu__arch_8c.html":[12,0,1,0,0,1,3],
 "linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,1,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX104 =
 "lis3mdl_8h.html#a03b3aaf69228c15c50253c945d0d2763":[12,0,1,0,7,67,17],
 "lis3mdl_8h.html#a059b0e3fa760bde676246f4dc125e0b0":[12,0,1,0,7,67,13],
 "lis3mdl_8h.html#a07aa3fec4be032563140a4d7f35ffb64":[12,0,1,0,7,67,20],
-"lis3mdl_8h.html#a07dcc616e5b71be381f5c7016bd72c8e":[12,0,1,0,7,67,4],
-"lis3mdl_8h.html#a0d62d354b1d564097da57c7f627b426a":[12,0,1,0,7,67,15],
-"lis3mdl_8h.html#a12b0ebe073df3c8cef6e92bdb0aba922":[12,0,1,0,7,67,22]
+"lis3mdl_8h.html#a07dcc616e5b71be381f5c7016bd72c8e":[12,0,1,0,7,67,4]
 };

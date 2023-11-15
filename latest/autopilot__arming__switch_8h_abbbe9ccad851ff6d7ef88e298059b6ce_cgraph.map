@@ -1,6 +1,9 @@
 <map id="autopilot_arming_check_motors_on" name="autopilot_arming_check_motors_on">
-<area shape="rect" id="node1" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="5,49,184,90"/>
-<area shape="rect" id="node2" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="232,5,384,32"/>
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="242,56,374,83"/>
-<area shape="rect" id="node4" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94" title="Convenience macro for 3way switch." alt="" coords="239,107,377,149"/>
+<area shape="rect" id="node1" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="5,74,184,115"/>
+<area shape="rect" id="node2" href="$autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d" title="turn motors on/off during arming, not done automatically prevents takeoff with preflight checks" alt="" coords="232,5,441,32"/>
+<area shape="rect" id="node5" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="261,56,413,83"/>
+<area shape="rect" id="node6" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title=" " alt="" coords="271,107,403,133"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94" title="Convenience macro for 3way switch." alt="" coords="268,158,405,199"/>
+<area shape="rect" id="node3" href="$preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="489,5,611,32"/>
+<area shape="rect" id="node4" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="659,5,804,32"/>
 </map>

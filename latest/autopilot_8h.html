@@ -185,9 +185,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af214fdd6c2abaac49698a84ed8201245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#af214fdd6c2abaac49698a84ed8201245">autopilot_reset_flight_time</a> (void)</td></tr>
 <tr class="memdesc:af214fdd6c2abaac49698a84ed8201245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset flight time and launch status Also provide macro for dl_setting backward compatibility.  <a href="autopilot_8h.html#af214fdd6c2abaac49698a84ed8201245">More...</a><br /></td></tr>
 <tr class="separator:af214fdd6c2abaac49698a84ed8201245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984f4d5c6b86649c92c12acff12025f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#a984f4d5c6b86649c92c12acff12025f5">autopilot_set_motors_on</a> (bool motors_on)</td></tr>
-<tr class="memdesc:a984f4d5c6b86649c92c12acff12025f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop motors May have no effect if motors has auto-start based on throttle setpoint.  <a href="autopilot_8h.html#a984f4d5c6b86649c92c12acff12025f5">More...</a><br /></td></tr>
-<tr class="separator:a984f4d5c6b86649c92c12acff12025f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab61ed204f95786cbe8bd39a9b2c504b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#aab61ed204f95786cbe8bd39a9b2c504b">autopilot_force_motors_on</a> (bool motors_on)</td></tr>
+<tr class="memdesc:aab61ed204f95786cbe8bd39a9b2c504b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force start/stop the motors WARNING This will skip he preflight checks.  <a href="autopilot_8h.html#aab61ed204f95786cbe8bd39a9b2c504b">More...</a><br /></td></tr>
+<tr class="separator:aab61ed204f95786cbe8bd39a9b2c504b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50008257e3ec24dea8abbe8dc0a2ec16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#a50008257e3ec24dea8abbe8dc0a2ec16">autopilot_set_motors_on</a> (bool motors_on)</td></tr>
+<tr class="memdesc:a50008257e3ec24dea8abbe8dc0a2ec16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop motors May have no effect if motors has auto-start based on throttle setpoint or when the preflight checks are failing.  <a href="autopilot_8h.html#a50008257e3ec24dea8abbe8dc0a2ec16">More...</a><br /></td></tr>
+<tr class="separator:a50008257e3ec24dea8abbe8dc0a2ec16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf187eadad94890fe0ac5560128789d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#a9bf187eadad94890fe0ac5560128789d">autopilot_arming_motors_on</a> (bool motors_on)</td></tr>
+<tr class="memdesc:a9bf187eadad94890fe0ac5560128789d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop the motors during arming May not happen when preflight checks are failing.  <a href="autopilot_8h.html#a9bf187eadad94890fe0ac5560128789d">More...</a><br /></td></tr>
+<tr class="separator:a9bf187eadad94890fe0ac5560128789d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b52f0f9cd2cbf420a77029513ea6f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot_8h.html#a6b52f0f9cd2cbf420a77029513ea6f35">autopilot_get_motors_on</a> (void)</td></tr>
 <tr class="memdesc:a6b52f0f9cd2cbf420a77029513ea6f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get motor status.  <a href="autopilot_8h.html#a6b52f0f9cd2cbf420a77029513ea6f35">More...</a><br /></td></tr>
 <tr class="separator:a6b52f0f9cd2cbf420a77029513ea6f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,7 +349,7 @@ enable/disable RC input </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00187">187</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00204">204</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +369,7 @@ enable/disable RC input </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00144">144</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00161">161</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +409,7 @@ enable/disable RC input </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00180">180</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8h_source.html#l00197">197</a> of file <a class="el" href="autopilot_8h_source.html">autopilot.h</a>.</p>
 
 </div>
 </div>
@@ -424,6 +430,58 @@ enable/disable RC input </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9bf187eadad94890fe0ac5560128789d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf187eadad94890fe0ac5560128789d">&#9670;&nbsp;</a></span>autopilot_arming_motors_on()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool autopilot_arming_motors_on </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>motors_on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start or stop the motors during arming May not happen when preflight checks are failing. </p>
+<p>Start or stop the motors during arming May not happen when preflight checks are failing. </p>
+
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00268">268</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00047">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00070">preflight_check()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph.png" border="0" usemap="#aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph" alt=""/></div>
+<map name="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph" id="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_cgraph">
+<area shape="rect" title="Start or stop the motors during arming May not happen when preflight checks are failing." alt="" coords="5,5,215,32"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="263,5,384,32"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="432,5,577,32"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_a9bf187eadad94890fe0ac5560128789d_icgraph.png" border="0" usemap="#aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_icgraph" alt=""/></div>
+<map name="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_icgraph" id="aautopilot_8h_a9bf187eadad94890fe0ac5560128789d_icgraph">
+<area shape="rect" title="Start or stop the motors during arming May not happen when preflight checks are failing." alt="" coords="433,46,643,73"/>
+<area shape="rect" href="autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="207,39,385,80"/>
+<area shape="rect" href="rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title=" " alt="" coords="5,5,159,47"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="9,71,155,112"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a8a5717e6ffce00d9926abc6c56336852"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a5717e6ffce00d9926abc6c56336852">&#9670;&nbsp;</a></span>autopilot_check_in_flight()</h2>
 
@@ -449,16 +507,16 @@ enable/disable RC input </td></tr>
 </dl>
 <p>Check if airframe is in flight. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00270">270</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00316">316</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00072">AUTOPILOT_IN_FLIGHT_MIN_THRUST</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00057">AUTOPILOT_IN_FLIGHT_TIME</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, and <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00072">AUTOPILOT_IN_FLIGHT_MIN_THRUST</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00057">AUTOPILOT_IN_FLIGHT_TIME</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, and <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00145">autopilot_periodic()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a8a5717e6ffce00d9926abc6c56336852_cgraph.png" border="0" usemap="#aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_cgraph" id="aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_cgraph">
 <area shape="rect" title="Check if airframe is in flight." alt="" coords="5,23,149,65"/>
@@ -471,11 +529,11 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title=" " alt="" coords="588,56,749,83"/>
 </map>
 </div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a8a5717e6ffce00d9926abc6c56336852_icgraph.png" border="0" usemap="#aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_icgraph" id="aautopilot_8h_a8a5717e6ffce00d9926abc6c56336852_icgraph">
 <area shape="rect" title="Check if airframe is in flight." alt="" coords="192,5,336,47"/>
@@ -504,14 +562,14 @@ enable/disable RC input </td></tr>
 <p>Clear marked settings in flash try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 <p>Clear marked settings in flash try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00306">306</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00352">352</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00080">settings_clear()</a>, and <a class="el" href="settings_8c_source.html#l00043">settings_clear_flag</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00080">settings_clear()</a>, and <a class="el" href="settings_8c_source.html#l00043">settings_clear_flag</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_addcec3e042ad2a7a6a17e6ffa506b7ba_cgraph.png" border="0" usemap="#aautopilot_8h_addcec3e042ad2a7a6a17e6ffa506b7ba_cgraph" alt=""/></div>
 <map name="aautopilot_8h_addcec3e042ad2a7a6a17e6ffa506b7ba_cgraph" id="aautopilot_8h_addcec3e042ad2a7a6a17e6ffa506b7ba_cgraph">
 <area shape="rect" title="Clear marked settings in flash try to make sure that we don&#39;t write to flash while flying Also provid..." alt="" coords="5,5,184,32"/>
@@ -543,14 +601,14 @@ enable/disable RC input </td></tr>
 <p>Autopilot event check function.</p>
 <p>used for automatic ground detection </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00173">173</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00174">174</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00081">autopilot_ground_detection()</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00081">autopilot_ground_detection()</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a0af571252a9b9c534b5fe24a4ef4d20d_cgraph.png" border="0" usemap="#aautopilot_8h_a0af571252a9b9c534b5fe24a4ef4d20d_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a0af571252a9b9c534b5fe24a4ef4d20d_cgraph" id="aautopilot_8h_a0af571252a9b9c534b5fe24a4ef4d20d_cgraph">
 <area shape="rect" title="Autopilot event check function." alt="" coords="5,5,129,32"/>
@@ -593,16 +651,16 @@ enable/disable RC input </td></tr>
 </ul>
 <p>send mode if changed at the end </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00188">188</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00189">189</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00037">AP_MODE_AUTO1</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00038">AP_MODE_AUTO2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00053">AP_MODE_FLIP</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00040">AP_MODE_GPS_OUT_OF_ORDER</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00039">AP_MODE_HOME</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00036">AP_MODE_MANUAL</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00052">AP_MODE_MODULE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00216">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00244">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00324">autopilot_send_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00251">autopilot_set_kill_throttle()</a>, <a class="el" href="autopilot_8c_source.html#l00192">autopilot_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00050">Electrical::bat_critical</a>, <a class="el" href="nav__geofence_8h_source.html#l00045">datalink_lost()</a>, <a class="el" href="datalink_8c_source.html#l00039">datalink_time</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00185">GpsIsLost</a>, <a class="el" href="nav__geofence_8h_source.html#l00066">higher_than_max_altitude()</a>, <a class="el" href="gps_8h_source.html#l00113">GpsState::last_3dfix_time</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00362">pprz_mode_update()</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00094">radio_control_get()</a>, <a class="el" href="rc__intermcu_8h_source.html#l00040">RADIO_KILL_SWITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="radio__control_8h_source.html#l00076">RadioControlIsLost</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00050">RC_LOST_MODE</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="radio__control_8h_source.html#l00051">RC_REALLY_LOST</a>, <a class="el" href="rc__settings_8c_source.html#l00047">rc_settings()</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00051">THROTTLE_THRESHOLD_TAKEOFF</a>, <a class="el" href="common__nav_8c_source.html#l00036">too_far_from_home</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
+<p class="reference">References <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00037">AP_MODE_AUTO1</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00038">AP_MODE_AUTO2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00053">AP_MODE_FLIP</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00040">AP_MODE_GPS_OUT_OF_ORDER</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00039">AP_MODE_HOME</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00036">AP_MODE_MANUAL</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00052">AP_MODE_MODULE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00290">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00370">autopilot_send_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00297">autopilot_set_kill_throttle()</a>, <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00050">Electrical::bat_critical</a>, <a class="el" href="nav__geofence_8h_source.html#l00045">datalink_lost()</a>, <a class="el" href="datalink_8c_source.html#l00039">datalink_time</a>, <a class="el" href="electrical_8c_source.html#l00089">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00185">GpsIsLost</a>, <a class="el" href="nav__geofence_8h_source.html#l00066">higher_than_max_altitude()</a>, <a class="el" href="gps_8h_source.html#l00113">GpsState::last_3dfix_time</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00362">pprz_mode_update()</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00094">radio_control_get()</a>, <a class="el" href="rc__intermcu_8h_source.html#l00040">RADIO_KILL_SWITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="radio__control_8h_source.html#l00076">RadioControlIsLost</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00050">RC_LOST_MODE</a>, <a class="el" href="radio__control_8h_source.html#l00049">RC_OK</a>, <a class="el" href="radio__control_8h_source.html#l00051">RC_REALLY_LOST</a>, <a class="el" href="rc__settings_8c_source.html#l00047">rc_settings()</a>, <a class="el" href="radio__control_8h_source.html#l00061">RadioControl::status</a>, <a class="el" href="fixedwing_2autopilot__utils_8h_source.html#l00051">THROTTLE_THRESHOLD_TAKEOFF</a>, <a class="el" href="common__nav_8c_source.html#l00036">too_far_from_home</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00145">autopilot_periodic()</a>, and <a class="el" href="main__ap_8c_source.html#l00079">main_ap_init()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, and <a class="el" href="main__ap_8c_source.html#l00079">main_ap_init()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_cgraph.png" border="0" usemap="#aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_cgraph" alt=""/></div>
 <map name="aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_cgraph" id="aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_cgraph">
 <area shape="rect" title="Autopilot periodic failsafe checks." alt="" coords="5,225,141,267"/>
@@ -614,20 +672,23 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="nav__geofence_8h.html#aaaf24479c95e5a458c7612ccc75a2b6b" title=" " alt="" coords="232,375,339,402"/>
 <area shape="rect" href="nav__geofence_8h.html#a57c518618655d66ccd5f0dbbca309921" title=" " alt="" coords="189,426,381,453"/>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode from RC." alt="" coords="212,55,359,82"/>
-<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="453,157,588,183"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="453,151,588,178"/>
 <area shape="rect" href="rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181" title="Includes generated code from tuning_rc.xml." alt="" coords="239,477,332,503"/>
-<area shape="rect" href="autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="429,317,612,343"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="681,276,834,317"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="682,341,833,383"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="681,57,834,99"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="660,123,855,150"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="429,317,612,343"/>
+<area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="660,289,856,315"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="697,343,819,370"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="904,281,1057,323"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="905,216,1056,257"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="908,347,1053,374"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="681,57,835,99"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="661,123,855,150"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_icgraph.png" border="0" usemap="#aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_icgraph" alt=""/></div>
 <map name="aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_icgraph" id="aautopilot_8h_ade282c0ec62910f4a190c8146d9d34c7_icgraph">
 <area shape="rect" title="Autopilot periodic failsafe checks." alt="" coords="900,23,1036,65"/>
@@ -637,6 +698,84 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="nps__main__sitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title=" " alt="" coords="269,56,479,83"/>
 <area shape="rect" href="nps__main_8h.html#a92aad3720fb482042b695d66e633699a" title=" " alt="" coords="108,56,221,83"/>
 <area shape="rect" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,60,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab61ed204f95786cbe8bd39a9b2c504b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab61ed204f95786cbe8bd39a9b2c504b">&#9670;&nbsp;</a></span>autopilot_force_motors_on()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void autopilot_force_motors_on </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>motors_on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force start/stop the motors WARNING This will skip he preflight checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motors_on</td><td>Wheter the motors should be forced on/off</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Force start/stop the motors WARNING This will skip he preflight checks. </p>
+
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00232">232</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00245">autopilot_set_motors_on()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_cgraph.png" border="0" usemap="#aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_cgraph" alt=""/></div>
+<map name="aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_cgraph" id="aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_cgraph">
+<area shape="rect" title="Force start/stop the motors WARNING This will skip he preflight checks." alt="" coords="5,46,201,73"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="249,5,403,47"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="251,71,401,112"/>
+</map>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_icgraph.png" border="0" usemap="#aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_icgraph" alt=""/></div>
+<map name="aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_icgraph" id="aautopilot_8h_aab61ed204f95786cbe8bd39a9b2c504b_icgraph">
+<area shape="rect" title="Force start/stop the motors WARNING This will skip he preflight checks." alt="" coords="1165,304,1361,331"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="935,304,1117,331"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="691,45,877,86"/>
+<area shape="rect" href="boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="691,157,877,184"/>
+<area shape="rect" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="717,209,851,250"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="687,275,881,301"/>
+<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="681,326,887,367"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="721,392,847,419"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abb5b5b70fd1fe437f42847bb103aa952" title=" " alt="" coords="724,443,844,469"/>
+<area shape="rect" href="rotorcraft_2navigation_8h.html#abf64106cb814fd5078fba37a4bc6bc65" title=" " alt="" coords="729,493,839,520"/>
+<area shape="rect" href="boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="436,5,633,32"/>
+<area shape="rect" href="boards_2disco_2actuators_8c.html#a0181db6b0eea7688d52e6b73b141549b" title=" " alt="" coords="444,56,625,83"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Failsafe checks." alt="" coords="467,107,603,149"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3" title="Bungee takeoff run function." alt="" coords="444,173,625,200"/>
+<area shape="rect" href="nav__bungee__takeoff_8c.html#a81fb1ff1aa94a36356fd9ed6e2c72c61" title="Initialization function." alt="" coords="458,225,611,266"/>
+<area shape="rect" href="nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c" title=" " alt="" coords="453,291,616,317"/>
+<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="475,341,594,368"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="449,392,621,419"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="453,443,616,469"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="221,392,383,419"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="471,493,598,520"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="216,468,388,495"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="221,519,383,545"/>
+<area shape="rect" href="nav__takeoff__and__landing__rotorcraft_8c.html#a15715a5e523bc1763a8acf867b26461c" title=" " alt="" coords="5,468,168,495"/>
 </map>
 </div>
 
@@ -662,16 +801,16 @@ enable/disable RC input </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>current autopilot mode</dd></dl>
 <p>Get autopilot mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00216">216</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00217">217</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00054">autopilot_arming_set()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00059">autopilot_guided_goto_body_relative()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00036">autopilot_guided_goto_ned()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00047">autopilot_guided_goto_ned_relative()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00072">autopilot_guided_move_ned()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00152">autopilot_guided_parse_GUIDED()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00056">guidance_flip_enter()</a>, <a class="el" href="gvf__low__level__control_8c_source.html#l00052">gvf_low_level_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00036">gvf_parametric_low_level_control_2D()</a>, <a class="el" href="gvf__parametric__low__level__control_8c_source.html#l00057">gvf_parametric_low_level_control_3D()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="mavlink_8c_source.html#l00438">mavlink_send_heartbeat()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00163">navigation_task()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00232">NavKillThrottle()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00236">NavResurrect()</a>, <a class="el" href="auto1__commands_8c_source.html#l00029">periodic_auto1_commands()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00362">pprz_mode_update()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00128">send_fbw_status()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00151">stabilization_opticflow_vel_cb()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a23af2ac2d4bcb9b71c869a409de61cc4_icgraph.png" border="0" usemap="#aautopilot_8h_a23af2ac2d4bcb9b71c869a409de61cc4_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a23af2ac2d4bcb9b71c869a409de61cc4_icgraph" id="aautopilot_8h_a23af2ac2d4bcb9b71c869a409de61cc4_icgraph">
 <area shape="rect" title="Get autopilot mode." alt="" coords="927,1079,1079,1105"/>
@@ -749,58 +888,59 @@ enable/disable RC input </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if motors are running</dd></dl>
 <p>Get motor status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00244">244</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00290">290</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="actuators__esc32_8c_source.html#l00147">actuators_esc32_commit()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00400">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00145">autopilot_periodic()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01381">get_act_state_oneloop()</a>, <a class="el" href="hott_2hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="hott__gam_8h_source.html#l00134">hott_update_gam_msg()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00129">intermcu_send_commands()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00093">nps_autopilot_run_step()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00162">sdlogger_spi_direct_periodic()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00434">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00535">stabilization_indi_rate_run()</a>, and <a class="el" href="throttle__curve_8c_source.html#l00125">throttle_curve_run()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="actuators__esc32_8c_source.html#l00147">actuators_esc32_commit()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00389">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01381">get_act_state_oneloop()</a>, <a class="el" href="hott_2hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="hott__gam_8h_source.html#l00134">hott_update_gam_msg()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00129">intermcu_send_commands()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00093">nps_autopilot_run_step()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00162">sdlogger_spi_direct_periodic()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00434">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00535">stabilization_indi_rate_run()</a>, and <a class="el" href="throttle__curve_8c_source.html#l00125">throttle_curve_run()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a6b52f0f9cd2cbf420a77029513ea6f35_icgraph.png" border="0" usemap="#aautopilot_8h_a6b52f0f9cd2cbf420a77029513ea6f35_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a6b52f0f9cd2cbf420a77029513ea6f35_icgraph" id="aautopilot_8h_a6b52f0f9cd2cbf420a77029513ea6f35_icgraph">
-<area shape="rect" title="Get motor status." alt="" coords="1601,442,1785,469"/>
+<area shape="rect" title="Get motor status." alt="" coords="1601,482,1785,509"/>
 <area shape="rect" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="1357,5,1544,47"/>
 <area shape="rect" href="boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="1357,71,1544,98"/>
 <area shape="rect" href="actuators__esc32_8c.html#a699563136f20e59e607791d62ac81660" title="Commits the commands and sends them to the ESCs." alt="" coords="1358,122,1543,149"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Autopilot periodic failsafe checks." alt="" coords="1383,173,1519,215"/>
-<area shape="rect" href="autopilot_8c.html#a1914661233fbbed6c2ee653b99757652" title="AP periodic call." alt="" coords="1381,239,1520,266"/>
-<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="1366,290,1535,317"/>
-<area shape="rect" href="hott_2hott_8c.html#ad9ba717e808b0a9d9eabf747ba7abddb" title=" " alt="" coords="1365,341,1537,367"/>
-<area shape="rect" href="hott__eam_8h.html#a35e5d6a8530dfc81c2402694e03ea334" title=" " alt="" coords="1365,391,1536,418"/>
-<area shape="rect" href="hott__gam_8h.html#ac14007f36a1aa731606054e52dc3e783" title=" " alt="" coords="1365,442,1536,469"/>
-<area shape="rect" href="intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17" title="send command vector over intermcu link instead of actuators" alt="" coords="1352,493,1549,519"/>
-<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="1348,544,1553,585"/>
-<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="1387,610,1514,637"/>
-<area shape="rect" href="nps__autopilot__rotorcraft_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="1364,661,1537,687"/>
-<area shape="rect" href="sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="1377,712,1525,753"/>
-<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="1357,778,1545,805"/>
-<area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="1384,829,1517,871"/>
-<area shape="rect" href="throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314" title="Run the throttle curve and generate the output throttle and pitch This depends on the FMODE(flight mo..." alt="" coords="1380,895,1521,922"/>
+<area shape="rect" href="autopilot__arming__yaw_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF." alt="" coords="1361,173,1540,215"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#ade282c0ec62910f4a190c8146d9d34c7" title="Autopilot periodic failsafe checks." alt="" coords="1383,239,1519,280"/>
+<area shape="rect" href="autopilot_8c.html#a1914661233fbbed6c2ee653b99757652" title="AP periodic call." alt="" coords="1381,305,1520,331"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="1366,355,1535,382"/>
+<area shape="rect" href="hott_2hott_8c.html#ad9ba717e808b0a9d9eabf747ba7abddb" title=" " alt="" coords="1365,406,1537,433"/>
+<area shape="rect" href="hott__eam_8h.html#a35e5d6a8530dfc81c2402694e03ea334" title=" " alt="" coords="1365,457,1536,483"/>
+<area shape="rect" href="hott__gam_8h.html#ac14007f36a1aa731606054e52dc3e783" title=" " alt="" coords="1365,507,1536,534"/>
+<area shape="rect" href="intermcu__ap_8c.html#ae453063ef52eca0ba54eb284d6dfdd17" title="send command vector over intermcu link instead of actuators" alt="" coords="1352,558,1549,585"/>
+<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="1348,609,1553,651"/>
+<area shape="rect" href="nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3" title=" " alt="" coords="1387,675,1514,702"/>
+<area shape="rect" href="nps__autopilot__rotorcraft_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title=" " alt="" coords="1364,726,1537,753"/>
+<area shape="rect" href="sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency" alt="" coords="1377,777,1525,819"/>
+<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="1357,843,1545,870"/>
+<area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="1384,895,1517,936"/>
+<area shape="rect" href="throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314" title="Run the throttle curve and generate the output throttle and pitch This depends on the FMODE(flight mo..." alt="" coords="1380,961,1521,987"/>
 <area shape="rect" href="boards_2ardrone_2actuators_8c.html#a1e5faec000e4e1602bba080db2aec27c" title=" " alt="" coords="1103,13,1300,39"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1133,290,1270,317"/>
-<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="889,239,1032,266"/>
-<area shape="rect" href="stabilization__oneloop_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="867,290,1055,317"/>
-<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="430,163,566,190"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,239,360,266"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5" title="Set horizontal guidance from NAV and run control loop." alt="" coords="415,265,581,291"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control." alt="" coords="640,315,815,342"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title=" " alt="" coords="637,366,817,393"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="636,417,819,443"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,239,188,266"/>
-<area shape="rect" href="optical__flow__landing_8c.html#a24ef9289dfa15084a7457a97ad7632c8" title=" " alt="" coords="408,417,588,443"/>
-<area shape="rect" href="hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="1126,341,1277,367"/>
-<area shape="rect" href="hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="915,341,1007,367"/>
-<area shape="rect" href="hott_2hott_8c.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title=" " alt="" coords="1148,417,1255,443"/>
-<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="1142,551,1261,578"/>
-<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="1115,606,1287,633"/>
-<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="1120,657,1283,683"/>
-<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="879,606,1042,633"/>
-<area shape="rect" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="1135,800,1268,841"/>
-<area shape="rect" href="stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="1120,866,1283,893"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="867,807,1055,834"/>
+<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="1133,355,1270,382"/>
+<area shape="rect" href="oneloop__andi_8c.html#a6736554ab99b39f3562226f60b49efc8" title="Function that maps navigation inputs to the oneloop controller for the generated autopilot." alt="" coords="889,305,1032,331"/>
+<area shape="rect" href="stabilization__oneloop_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="867,355,1055,382"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="430,229,566,255"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,305,360,331"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5" title="Set horizontal guidance from NAV and run control loop." alt="" coords="415,330,581,357"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control." alt="" coords="640,381,815,407"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title=" " alt="" coords="637,431,817,458"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="636,482,819,509"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,305,188,331"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a24ef9289dfa15084a7457a97ad7632c8" title=" " alt="" coords="408,482,588,509"/>
+<area shape="rect" href="hott_2hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title=" " alt="" coords="1126,406,1277,433"/>
+<area shape="rect" href="hott_2hott_8c.html#afd6976c45645e710a8036805a913fc4c" title="RC event function." alt="" coords="915,406,1007,433"/>
+<area shape="rect" href="hott_2hott_8c.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title=" " alt="" coords="1148,482,1255,509"/>
+<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="1142,617,1261,643"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#abd42ad0ecd880e9feaf4c9281b5ee0b5" title="Takeoff from current location." alt="" coords="1115,671,1287,698"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a05d7faa79588bc0489c7512e676d53b0" title="Takeoff from a waypoint." alt="" coords="1120,722,1283,749"/>
+<area shape="rect" href="nav__takeoff__and__landing_8h.html#a70c9d3d8f400a5057ecb0a53f5ec4922" title="Takeoff from lat long location." alt="" coords="879,671,1042,698"/>
+<area shape="rect" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="1135,865,1268,907"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="1120,931,1283,958"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="867,873,1055,899"/>
 </map>
 </div>
 
@@ -826,16 +966,16 @@ enable/disable RC input </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if airframe in flight</dd></dl>
 <p>Get in flight status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00289">289</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00335">335</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00054">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00145">autopilot_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00328">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="ekf__aw__wrapper_8c_source.html#l00215">ekf_aw_wrapper_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00730">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00609">ins_ekf2_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="mav__exercise_8c_source.html#l00072">mav_exercise_periodic()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00278">nav_is_in_flight()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00100">orange_avoider_periodic()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00054">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00322">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="ekf__aw__wrapper_8c_source.html#l00215">ekf_aw_wrapper_periodic()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00730">ins_ekf2_publish_attitude()</a>, <a class="el" href="ins__ekf2_8cpp_source.html#l00609">ins_ekf2_update()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="mav__exercise_8c_source.html#l00072">mav_exercise_periodic()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00278">nav_is_in_flight()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00100">orange_avoider_periodic()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_aa0968d46fbee148348a7e062afac69a6_icgraph.png" border="0" usemap="#aautopilot_8h_aa0968d46fbee148348a7e062afac69a6_icgraph" alt=""/></div>
 <map name="aautopilot_8h_aa0968d46fbee148348a7e062afac69a6_icgraph" id="aautopilot_8h_aa0968d46fbee148348a7e062afac69a6_icgraph">
 <area shape="rect" title="Get in flight status." alt="" coords="828,357,967,383"/>
@@ -886,14 +1026,14 @@ enable/disable RC input </td></tr>
 
 <p>Autopilot initialization function. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00106">106</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00107">107</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00157">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="autopilot_8c_source.html#l00051">AUTOPILOT_RC_ID</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00064">pprz_autopilot::mode_auto2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00066">MODE_AUTO2</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot_8c_source.html#l00056">rc_cb()</a>, <a class="el" href="autopilot_8c_source.html#l00054">rc_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="autopilot_8c_source.html#l00070">send_alive()</a>, <a class="el" href="autopilot_8c_source.html#l00075">send_attitude()</a>, <a class="el" href="autopilot_8c_source.html#l00063">send_autopilot_version()</a>, <a class="el" href="autopilot_8c_source.html#l00081">send_dl_value()</a>, <a class="el" href="autopilot_8c_source.html#l00086">send_minimal_com()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00072">pprz_autopilot::use_rc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00157">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="autopilot_8c_source.html#l00052">AUTOPILOT_RC_ID</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="autopilot_8h_source.html#l00074">pprz_autopilot::detect_ground_once</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="autopilot_8h_source.html#l00073">pprz_autopilot::ground_detected</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="autopilot_8h_source.html#l00064">pprz_autopilot::mode_auto2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00066">MODE_AUTO2</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot_8c_source.html#l00057">rc_cb()</a>, <a class="el" href="autopilot_8c_source.html#l00055">rc_ev</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="autopilot_8c_source.html#l00071">send_alive()</a>, <a class="el" href="autopilot_8c_source.html#l00076">send_attitude()</a>, <a class="el" href="autopilot_8c_source.html#l00064">send_autopilot_version()</a>, <a class="el" href="autopilot_8c_source.html#l00082">send_dl_value()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="autopilot_8h_source.html#l00066">pprz_autopilot::throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00072">pprz_autopilot::use_rc</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a9d3557653abfc3d4c428724b249f6d5e_cgraph.png" border="0" usemap="#aautopilot_8h_a9d3557653abfc3d4c428724b249f6d5e_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a9d3557653abfc3d4c428724b249f6d5e_cgraph" id="aautopilot_8h_a9d3557653abfc3d4c428724b249f6d5e_cgraph">
 <area shape="rect" title="Autopilot initialization function." alt="" coords="5,408,113,435"/>
@@ -968,16 +1108,16 @@ enable/disable RC input </td></tr>
 <p>Autopilot RC input event hadler. </p>
 <p>Autopilot RC input event hadler. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00177">177</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00178">178</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00092">autopilot_generated_on_rc_frame()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00056">rc_cb()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00057">rc_cb()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a7339f5741706cb9c2e2186b1174cc770_cgraph.png" border="0" usemap="#aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_cgraph" id="aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_cgraph">
 <area shape="rect" title="Autopilot RC input event hadler." alt="" coords="5,46,173,73"/>
@@ -987,11 +1127,11 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="423,78,575,105"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a7339f5741706cb9c2e2186b1174cc770_icgraph.png" border="0" usemap="#aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_icgraph" id="aautopilot_8h_a7339f5741706cb9c2e2186b1174cc770_icgraph">
 <area shape="rect" title="Autopilot RC input event hadler." alt="" coords="265,5,433,32"/>
@@ -1021,14 +1161,14 @@ enable/disable RC input </td></tr>
 <p>Autopilot periodic call at PERIODIC_FREQUENCY. </p>
 <p>Autopilot periodic call at PERIODIC_FREQUENCY. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00145">145</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00146">146</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00270">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00188">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00244">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00093">autopilot_static_periodic()</a>, and <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00316">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00189">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00290">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00335">autopilot_in_flight()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00093">autopilot_static_periodic()</a>, and <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a1914661233fbbed6c2ee653b99757652_cgraph.png" border="0" usemap="#aautopilot_8h_a1914661233fbbed6c2ee653b99757652_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a1914661233fbbed6c2ee653b99757652_cgraph" id="aautopilot_8h_a1914661233fbbed6c2ee653b99757652_cgraph">
 <area shape="rect" title="Autopilot periodic call at PERIODIC_FREQUENCY." alt="" coords="5,173,144,199"/>
@@ -1062,9 +1202,9 @@ enable/disable RC input </td></tr>
 <p>Reset flight time and launch status Also provide macro for dl_setting backward compatibility. </p>
 <p>Reset flight time and launch status Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00223">223</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00224">224</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, and <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>.</p>
 
 </div>
 </div>
@@ -1087,16 +1227,16 @@ enable/disable RC input </td></tr>
 <p>reset in_flight counter actual implementation is firmware dependent </p>
 <p>reset in_flight counter actual implementation is firmware dependent </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00275">275</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00321">321</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00050">autopilot_in_flight_counter</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00279">autopilot_set_in_flight()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="autopilot_8c_source.html#l00325">autopilot_set_in_flight()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_af07a7f0abf8699eb6b006f1b7a53daea_icgraph.png" border="0" usemap="#aautopilot_8h_af07a7f0abf8699eb6b006f1b7a53daea_icgraph" alt=""/></div>
 <map name="aautopilot_8h_af07a7f0abf8699eb6b006f1b7a53daea_icgraph" id="aautopilot_8h_af07a7f0abf8699eb6b006f1b7a53daea_icgraph">
 <area shape="rect" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="893,64,1032,105"/>
@@ -1131,16 +1271,16 @@ enable/disable RC input </td></tr>
 <p>Report autopilot mode on default downlink channel. </p>
 <p>Report autopilot mode on default downlink channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00324">324</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00370">370</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_cgraph.png" border="0" usemap="#aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_cgraph" id="aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_cgraph">
 <area shape="rect" title="Report autopilot mode on default downlink channel." alt="" coords="5,5,168,32"/>
@@ -1148,11 +1288,11 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="361,5,513,32"/>
 </map>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_icgraph.png" border="0" usemap="#aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_icgraph" id="aautopilot_8h_a4c54f26fedcf128f909c7cc5dc071353_icgraph">
 <area shape="rect" title="Report autopilot mode on default downlink channel." alt="" coords="189,13,352,39"/>
@@ -1181,27 +1321,27 @@ enable/disable RC input </td></tr>
 <p>Report autopilot version on default downlink channel. </p>
 <p>Report autopilot version on default downlink channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00316">316</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00362">362</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="autopilot_8c_source.html#l00063">send_autopilot_version()</a>.</p>
+<p class="reference">References <a class="el" href="downlink_8h_source.html#l00041">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00045">DefaultDevice</a>, and <a class="el" href="autopilot_8c_source.html#l00064">send_autopilot_version()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="telemetry_8c_source.html#l00077">telemetry_reporting_task()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_cgraph.png" border="0" usemap="#aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_cgraph" alt=""/></div>
 <map name="aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_cgraph" id="aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_cgraph">
 <area shape="rect" title="Report autopilot version on default downlink channel." alt="" coords="5,5,179,32"/>
 <area shape="rect" href="autopilot_8c.html#a4f0db67f7344287a8e1e4eaca348b66c" title=" " alt="" coords="227,5,400,32"/>
 </map>
 </div>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_icgraph.png" border="0" usemap="#aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_icgraph" alt=""/></div>
 <map name="aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_icgraph" id="aautopilot_8h_ac26e7b23b69d3d3dc0fd390fb96efdbb_icgraph">
 <area shape="rect" title="Report autopilot version on default downlink channel." alt="" coords="240,5,413,32"/>
@@ -1236,27 +1376,27 @@ enable/disable RC input </td></tr>
 </dl>
 <p>Set in flight status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00279">279</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00325">325</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00275">autopilot_reset_in_flight_counter()</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00321">autopilot_reset_in_flight_counter()</a>, and <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, and <a class="el" href="nav__takeoff__and__landing__rotorcraft_8c_source.html#l00135">nav_takeoff_run()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a26de92899cae6ff28c3420315f10802d_cgraph.png" border="0" usemap="#aautopilot_8h_a26de92899cae6ff28c3420315f10802d_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a26de92899cae6ff28c3420315f10802d_cgraph" id="aautopilot_8h_a26de92899cae6ff28c3420315f10802d_cgraph">
 <area shape="rect" title="Set in flight status." alt="" coords="5,13,172,39"/>
 <area shape="rect" href="autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent" alt="" coords="220,5,359,47"/>
 </map>
 </div>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a26de92899cae6ff28c3420315f10802d_icgraph.png" border="0" usemap="#aautopilot_8h_a26de92899cae6ff28c3420315f10802d_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a26de92899cae6ff28c3420315f10802d_icgraph" id="aautopilot_8h_a26de92899cae6ff28c3420315f10802d_icgraph">
 <area shape="rect" title="Set in flight status." alt="" coords="679,71,845,98"/>
@@ -1296,29 +1436,32 @@ enable/disable RC input </td></tr>
 </dl>
 <p>Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00251">251</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00297">297</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00232">autopilot_set_motors_on()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00245">autopilot_set_motors_on()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="boards_2disco_2actuators_8c_source.html#l00108">actuators_disco_commit()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, and <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph.png" border="0" usemap="#aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph" alt=""/></div>
 <map name="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph" id="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_cgraph">
-<area shape="rect" title="Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibili..." alt="" coords="5,39,140,80"/>
-<area shape="rect" href="autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="188,46,371,73"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="419,5,572,47"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="420,71,571,112"/>
+<area shape="rect" title="Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibili..." alt="" coords="5,100,140,141"/>
+<area shape="rect" href="autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="188,107,371,134"/>
+<area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="419,78,615,105"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="456,133,577,159"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="663,5,816,47"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="664,71,815,112"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="667,137,812,163"/>
 </map>
 </div>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_icgraph.png" border="0" usemap="#aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_icgraph" alt=""/></div>
 <map name="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_icgraph" id="aautopilot_8h_ab83712cb24bab637f3f254d4a96ada1e_icgraph">
 <area shape="rect" title="Enable or disable motor control from autopilot Also provide macro for dl_setting backward compatibili..." alt="" coords="235,115,369,157"/>
@@ -1358,16 +1501,16 @@ enable/disable RC input </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if mode has changed</dd></dl>
 <p>Set new autopilot mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00192">192</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00193">193</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00400">nav_set_failsafe()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00362">pprz_mode_update()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a1b657630df5b70390e96f4964390210a_cgraph.png" border="0" usemap="#aautopilot_8h_a1b657630df5b70390e96f4964390210a_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a1b657630df5b70390e96f4964390210a_cgraph" id="aautopilot_8h_a1b657630df5b70390e96f4964390210a_cgraph">
 <area shape="rect" title="Set new autopilot mode." alt="" coords="5,42,156,69"/>
@@ -1375,11 +1518,11 @@ enable/disable RC input </td></tr>
 <area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="204,71,399,98"/>
 </map>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a1b657630df5b70390e96f4964390210a_icgraph.png" border="0" usemap="#aautopilot_8h_a1b657630df5b70390e96f4964390210a_icgraph" alt=""/></div>
 <map name="aautopilot_8h_a1b657630df5b70390e96f4964390210a_icgraph" id="aautopilot_8h_a1b657630df5b70390e96f4964390210a_icgraph">
 <area shape="rect" title="Set new autopilot mode." alt="" coords="673,107,824,133"/>
@@ -1396,14 +1539,14 @@ enable/disable RC input </td></tr>
 
 </div>
 </div>
-<a id="a984f4d5c6b86649c92c12acff12025f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a984f4d5c6b86649c92c12acff12025f5">&#9670;&nbsp;</a></span>autopilot_set_motors_on()</h2>
+<a id="a50008257e3ec24dea8abbe8dc0a2ec16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50008257e3ec24dea8abbe8dc0a2ec16">&#9670;&nbsp;</a></span>autopilot_set_motors_on()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void autopilot_set_motors_on </td>
+          <td class="memname">bool autopilot_set_motors_on </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>motors_on</em></td><td>)</td>
@@ -1412,40 +1555,46 @@ enable/disable RC input </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start or stop motors May have no effect if motors has auto-start based on throttle setpoint. </p>
+<p>Start or stop motors May have no effect if motors has auto-start based on throttle setpoint or when the preflight checks are failing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">motors_on</td><td>true to start motors, false to stop</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">motors_on</td><td>true to start motors, false to stop </td></tr>
   </table>
   </dd>
 </dl>
-<p>Start or stop motors May have no effect if motors has auto-start based on throttle setpoint. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The preflight checks are successful and motors are started/stopped </dd>
+<dd>
+false The preflight checks are failed</dd></dl>
+<p>Start or stop motors May have no effect if motors has auto-start based on throttle setpoint or when the preflight checks are failing. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00232">232</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00245">245</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, and <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8c_source.html#l00232">autopilot_force_motors_on()</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="preflight__checks_8c_source.html#l00047">preflight_bypass</a>, and <a class="el" href="preflight__checks_8c_source.html#l00070">preflight_check()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="autopilot_8c_source.html#l00251">autopilot_set_kill_throttle()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00232">NavKillThrottle()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00236">NavResurrect()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00171">actuators_ardrone_motor_status()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="autopilot_8c_source.html#l00297">autopilot_set_kill_throttle()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="mavlink_8c_source.html#l00223">mavlink_common_message_handler()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00232">NavKillThrottle()</a>, and <a class="el" href="rotorcraft_2navigation_8h_source.html#l00236">NavResurrect()</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot_8h_a984f4d5c6b86649c92c12acff12025f5_cgraph.png" border="0" usemap="#aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_cgraph" alt=""/></div>
-<map name="aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_cgraph" id="aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_cgraph">
-<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint." alt="" coords="5,46,188,73"/>
-<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="236,5,389,47"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="237,71,388,112"/>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph.png" border="0" usemap="#aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph" alt=""/></div>
+<map name="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph" id="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_cgraph">
+<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint or when t..." alt="" coords="5,107,188,134"/>
+<area shape="rect" href="autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b" title="Force the motors on/off skipping preflight checks." alt="" coords="236,78,432,105"/>
+<area shape="rect" href="preflight__checks_8c.html#ae885b124c74b27558830de225c7f82c6" title="Perform all the preflight checks." alt="" coords="273,133,395,159"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title=" " alt="" coords="480,5,633,47"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title=" " alt="" coords="481,71,632,112"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="484,137,629,163"/>
 </map>
 </div>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot_8h_a984f4d5c6b86649c92c12acff12025f5_icgraph.png" border="0" usemap="#aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_icgraph" alt=""/></div>
-<map name="aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_icgraph" id="aautopilot_8h_a984f4d5c6b86649c92c12acff12025f5_icgraph">
-<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint." alt="" coords="935,304,1117,331"/>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_icgraph.png" border="0" usemap="#aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_icgraph" alt=""/></div>
+<map name="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_icgraph" id="aautopilot_8h_a50008257e3ec24dea8abbe8dc0a2ec16_icgraph">
+<area shape="rect" title="Start or stop motors May have no effect if motors has auto&#45;start based on throttle setpoint or when t..." alt="" coords="935,304,1117,331"/>
 <area shape="rect" href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title=" " alt="" coords="691,45,877,86"/>
 <area shape="rect" href="boards_2bebop_2actuators_8c.html#ad8f645b7663a54e01ba60403a1e45645" title=" " alt="" coords="691,157,877,184"/>
 <area shape="rect" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e" title="set kill throttle" alt="" coords="717,209,851,250"/>
@@ -1492,14 +1641,14 @@ enable/disable RC input </td></tr>
 <p>Handler for setter function with dl_setting. </p>
 <p>Handler for setter function with dl_setting. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00205">205</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00206">206</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00071">autopilot_generated_SetModeHandler()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00147">autopilot_static_SetModeHandler()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00069">mode</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_a651a9f8c5088099dad4861cedcb3b956_cgraph.png" border="0" usemap="#aautopilot_8h_a651a9f8c5088099dad4861cedcb3b956_cgraph" alt=""/></div>
 <map name="aautopilot_8h_a651a9f8c5088099dad4861cedcb3b956_cgraph" id="aautopilot_8h_a651a9f8c5088099dad4861cedcb3b956_cgraph">
 <area shape="rect" title="Handler for setter function with dl_setting." alt="" coords="5,46,200,73"/>
@@ -1531,14 +1680,14 @@ enable/disable RC input </td></tr>
 <p>Store marked settings in flash Try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 <p>Store marked settings in flash Try to make sure that we don't write to flash while flying Also provide macro for dl_setting backward compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00296">296</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00342">342</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00060">settings_store()</a>, and <a class="el" href="settings_8c_source.html#l00041">settings_store_flag</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>, <a class="el" href="settings_8c_source.html#l00060">settings_store()</a>, and <a class="el" href="settings_8c_source.html#l00041">settings_store_flag</a>.</p>
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ad7f33b4013b136243b2e908436b911b9_cgraph.png" border="0" usemap="#aautopilot_8h_ad7f33b4013b136243b2e908436b911b9_cgraph" alt=""/></div>
 <map name="aautopilot_8h_ad7f33b4013b136243b2e908436b911b9_cgraph" id="aautopilot_8h_ad7f33b4013b136243b2e908436b911b9_cgraph">
 <area shape="rect" title="Store marked settings in flash Try to make sure that we don&#39;t write to flash while flying Also provid..." alt="" coords="5,5,184,32"/>
@@ -1569,16 +1718,16 @@ enable/disable RC input </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if motors are killed</dd></dl>
 <p>Get kill status. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00262">262</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00308">308</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00048">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, and <a class="el" href="autopilot_8h_source.html#l00069">pprz_autopilot::kill_throttle</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="electrical_8c_source.html#l00132">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00438">mavlink_send_heartbeat()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="electrical_8c_source.html#l00155">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00438">mavlink_send_heartbeat()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot_8h_ad0636a1ccc27b07219072341aec524d8_icgraph.png" border="0" usemap="#aautopilot_8h_ad0636a1ccc27b07219072341aec524d8_icgraph" alt=""/></div>
 <map name="aautopilot_8h_ad0636a1ccc27b07219072341aec524d8_icgraph" id="aautopilot_8h_ad0636a1ccc27b07219072341aec524d8_icgraph">
 <area shape="rect" title="Get kill status." alt="" coords="463,150,597,191"/>
@@ -1624,7 +1773,7 @@ enable/disable RC input </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="autopilot_8c_source.html#l00001">1</a> of file <a class="el" href="autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00282">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00306">autopilot_clear_settings()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00259">autopilot_event()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00216">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00244">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00289">autopilot_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00106">autopilot_init()</a>, <a class="el" href="autopilot_8c_source.html#l00145">autopilot_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00223">autopilot_reset_flight_time()</a>, <a class="el" href="autopilot_8c_source.html#l00279">autopilot_set_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00192">autopilot_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00232">autopilot_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00296">autopilot_store_settings()</a>, <a class="el" href="autopilot_8c_source.html#l00262">autopilot_throttle_killed()</a>, <a class="el" href="max7456_8c_source.html#l00403">calc_flight_time_left()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00382">Drift_correction()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00651">gazebo_write()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00058">guidance_h_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00067">guidance_h_module_read_rc()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="main__recovery_8c_source.html#l00089">main_recovery_init()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00199">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00184">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00271">nav_detect_ground()</a>, <a class="el" href="nav_8c_source.html#l00424">nav_home()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00095">nps_autopilot_run_step()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01253">oneloop_andi_run()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00118">parse_mf_daq_msg()</a>, <a class="el" href="rotwing__state_8c_source.html#l00213">rotwing_check_set_current_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00085">send_energy()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="autopilot_8c_source.html#l00086">send_minimal_com()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="uav__recovery_8c_source.html#l00115">uav_recovery_periodic()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00305">attitude_loop()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00098">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__throttle_8h_source.html#l00073">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot_8c_source.html#l00268">autopilot_arming_motors_on()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00282">autopilot_check_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00352">autopilot_clear_settings()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00259">autopilot_event()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00216">autopilot_failsafe_checks()</a>, <a class="el" href="autopilot_8c_source.html#l00232">autopilot_force_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00041">autopilot_generated_init()</a>, <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00077">autopilot_generated_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00085">autopilot_generated_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00290">autopilot_get_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00335">autopilot_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00107">autopilot_init()</a>, <a class="el" href="autopilot_8c_source.html#l00146">autopilot_periodic()</a>, <a class="el" href="autopilot_8c_source.html#l00224">autopilot_reset_flight_time()</a>, <a class="el" href="autopilot_8c_source.html#l00325">autopilot_set_in_flight()</a>, <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>, <a class="el" href="autopilot_8c_source.html#l00245">autopilot_set_motors_on()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00081">autopilot_static_init()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00100">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00152">autopilot_static_set_motors_on()</a>, <a class="el" href="autopilot_8c_source.html#l00342">autopilot_store_settings()</a>, <a class="el" href="autopilot_8c_source.html#l00308">autopilot_throttle_killed()</a>, <a class="el" href="max7456_8c_source.html#l00403">calc_flight_time_left()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00382">Drift_correction()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00147">e_identification_fr_periodic()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00651">gazebo_write()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00058">guidance_h_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00067">guidance_h_module_read_rc()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="main__recovery_8c_source.html#l00089">main_recovery_init()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00199">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__catapult_8c_source.html#l00102">nav_catapult_highrate_module()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00184">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00271">nav_detect_ground()</a>, <a class="el" href="nav_8c_source.html#l00424">nav_home()</a>, <a class="el" href="nav__takeoff__and__landing__fw_8c_source.html#l00149">nav_takeoff_run()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00095">nps_autopilot_run_step()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01253">oneloop_andi_run()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00118">parse_mf_daq_msg()</a>, <a class="el" href="rotwing__state_8c_source.html#l00213">rotwing_check_set_current_state()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00085">send_energy()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00151">send_fp()</a>, <a class="el" href="autopilot_8c_source.html#l00087">send_minimal_com()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00056">send_mode()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00114">send_status()</a>, <a class="el" href="uav__recovery_8c_source.html#l00115">uav_recovery_periodic()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00324">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00253">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00281">v_ctl_set_throttle()</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1783,7 @@ enable/disable RC input </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="autopilot_8h.html">autopilot.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2023 21:08:08 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 15 2023 22:00:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -136,9 +136,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af72725922c8f82a4bfa00f945376cede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2autopilot__utils_8h.html#af72725922c8f82a4bfa00f945376cede">ap_ahrs_is_aligned</a> (void)</td></tr>
-<tr class="memdesc:af72725922c8f82a4bfa00f945376cede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display descent speed in failsafe mode if needed.  <a href="rotorcraft_2autopilot__utils_8h.html#af72725922c8f82a4bfa00f945376cede">More...</a><br /></td></tr>
-<tr class="separator:af72725922c8f82a4bfa00f945376cede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0eea7b5b6451e8d115975b3391c50f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2autopilot__utils_8h.html#a9b0eea7b5b6451e8d115975b3391c50f">ap_mode_of_3way_switch</a> (void)</td></tr>
 <tr class="memdesc:a9b0eea7b5b6451e8d115975b3391c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get autopilot mode as set by RADIO_MODE 3-way switch  <a href="rotorcraft_2autopilot__utils_8h.html#a9b0eea7b5b6451e8d115975b3391c50f">More...</a><br /></td></tr>
 <tr class="separator:a9b0eea7b5b6451e8d115975b3391c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,33 +198,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8h_source.html#l00064">64</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8h_source.html#l00063">63</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8h_source.html">autopilot_utils.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af72725922c8f82a4bfa00f945376cede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af72725922c8f82a4bfa00f945376cede">&#9670;&nbsp;</a></span>ap_ahrs_is_aligned()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ap_ahrs_is_aligned </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Display descent speed in failsafe mode if needed. </p>
-
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00041">41</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
-
-</div>
-</div>
 <a id="a9b0eea7b5b6451e8d115975b3391c50f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b0eea7b5b6451e8d115975b3391c50f">&#9670;&nbsp;</a></span>ap_mode_of_3way_switch()</h2>
 
@@ -246,7 +221,7 @@ Functions</h2></td></tr>
 
 <p>get autopilot mode as set by RADIO_MODE 3-way switch </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00090">90</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00076">76</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
 
 </div>
 </div>
@@ -304,7 +279,7 @@ Functions</h2></td></tr>
 <p>RADIO_MODE switch just selectes between MANUAL and AUTO. If not MANUAL, the RADIO_AUTO_MODE switch selects between AUTO1 and AUTO2.</p>
 <p>This is mainly a cludge for entry level radios with no three-way switch, but two available two-way switches which can be used. Set Rotorcraft commands. Limit thrust and/or yaw depending of the in_flight and motors_on flag status </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00135">135</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
 
 </div>
 </div>
@@ -314,7 +289,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2autopilot__utils_8h.html">autopilot_utils.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2023 21:08:09 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 15 2023 22:00:44 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

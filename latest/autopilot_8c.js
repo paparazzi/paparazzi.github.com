@@ -1,10 +1,12 @@
 var autopilot_8c =
 [
     [ "AUTOPILOT_RC_ID", "autopilot_8c.html#a57fe5a6aa6eafa6e57b9b59e3929beb9", null ],
+    [ "autopilot_arming_motors_on", "autopilot_8c.html#a9bf187eadad94890fe0ac5560128789d", null ],
     [ "autopilot_check_in_flight", "autopilot_8c.html#af7ef1c5f60743ac47ec0ecfd5a262b8a", null ],
     [ "autopilot_clear_settings", "autopilot_8c.html#addcec3e042ad2a7a6a17e6ffa506b7ba", null ],
     [ "autopilot_event", "autopilot_8c.html#a0f3b1b95b1022b741ae2f876ae831e80", null ],
     [ "autopilot_failsafe_checks", "autopilot_8c.html#aba1dada707679f59947a724aaf02597d", null ],
+    [ "autopilot_force_motors_on", "autopilot_8c.html#aab61ed204f95786cbe8bd39a9b2c504b", null ],
     [ "autopilot_get_mode", "autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4", null ],
     [ "autopilot_get_motors_on", "autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35", null ],
     [ "autopilot_in_flight", "autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6", null ],
@@ -18,7 +20,7 @@ var autopilot_8c =
     [ "autopilot_set_in_flight", "autopilot_8c.html#a26de92899cae6ff28c3420315f10802d", null ],
     [ "autopilot_set_kill_throttle", "autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e", null ],
     [ "autopilot_set_mode", "autopilot_8c.html#a1b657630df5b70390e96f4964390210a", null ],
-    [ "autopilot_set_motors_on", "autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5", null ],
+    [ "autopilot_set_motors_on", "autopilot_8c.html#a50008257e3ec24dea8abbe8dc0a2ec16", null ],
     [ "autopilot_SetModeHandler", "autopilot_8c.html#a9cea92496fd699a395a86b92ce948e89", null ],
     [ "autopilot_store_settings", "autopilot_8c.html#ad7f33b4013b136243b2e908436b911b9", null ],
     [ "autopilot_throttle_killed", "autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8", null ],

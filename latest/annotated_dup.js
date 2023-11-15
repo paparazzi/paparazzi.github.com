@@ -869,6 +869,8 @@ var annotated_dup =
     [ "PolePlacement", "oneloop__andi_8h.html#structPolePlacement", "oneloop__andi_8h_structPolePlacement" ],
     [ "pose_t", "pose__history_8h.html#structpose__t", "pose__history_8h_structpose__t" ],
     [ "pprz_autopilot", "autopilot_8h.html#structpprz__autopilot", "autopilot_8h_structpprz__autopilot" ],
+    [ "preflight_check_t", "preflight__checks_8h.html#structpreflight__check__t", "preflight__checks_8h_structpreflight__check__t" ],
+    [ "preflight_result_t", "preflight__checks_8h.html#structpreflight__result__t", "preflight__checks_8h_structpreflight__result__t" ],
     [ "pt1Filter_s", "cc2500__compat_8h.html#structpt1Filter__s", "cc2500__compat_8h_structpt1Filter__s" ],
     [ "PWM_Sysfs", "pwm__sysfs_8h.html#structPWM__Sysfs", "pwm__sysfs_8h_structPWM__Sysfs" ],
     [ "px4flow_data", "px4flow__i2c_8h.html#structpx4flow__data", "px4flow__i2c_8h_structpx4flow__data" ],

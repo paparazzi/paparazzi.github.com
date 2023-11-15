@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__mav_course_exercise.html#module_load_example__mav_course_exercise":[1,471,0],
+"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,471,1,0],
 "module__mavlink.html":[1,103],
 "module__mavlink.html#configuration__mavlink":[1,103,1],
 "module__mavlink.html#functions__mavlink":[1,103,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901":[1,404,2,0],
 "module__orange_avoider.html":[1,349],
 "module__orange_avoider.html#configuration__orange_avoider":[1,349,1],
-"module__orange_avoider.html#functions__orange_avoider":[1,349,2],
-"module__orange_avoider.html#module_load_example__orange_avoider":[1,349,0],
-"module__orange_avoider.html#module_xml__orange_avoider":[1,349,2,0]
+"module__orange_avoider.html#functions__orange_avoider":[1,349,2]
 };

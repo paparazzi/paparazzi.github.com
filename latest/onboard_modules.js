@@ -3148,6 +3148,12 @@ var onboard_modules =
         [ "Raw pose_history.xml file:", "module__pose_history.html#module_xml__pose_history", null ]
       ] ]
     ] ],
+    [ "preflight_checks module", "module__preflight_checks.html", [
+      [ "Example for airframe file", "module__preflight_checks.html#module_load_example__preflight_checks", null ],
+      [ "Module configuration options", "module__preflight_checks.html#configuration__preflight_checks", [
+        [ "Raw preflight_checks.xml file:", "module__preflight_checks.html#module_xml__preflight_checks", null ]
+      ] ]
+    ] ],
     [ "px4_flash module", "module__px4_flash.html", [
       [ "Example for airframe file", "module__px4_flash.html#module_load_example__px4_flash", null ],
       [ "Module configuration options", "module__px4_flash.html#configuration__px4_flash", null ],
