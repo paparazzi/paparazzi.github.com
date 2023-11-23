@@ -247,7 +247,7 @@ var NAVTREEINDEX130 =
 "module__collective_tracking_control.html#module_load_example__collective_tracking_control":[1,446,0],
 "module__collective_tracking_control.html#module_xml__collective_tracking_control":[1,446,3,0],
 "module__collective_tracking_control_target.html":[1,447],
-"module__collective_tracking_control_target.html#af_section":[1,447,1,0],
 "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target":[1,447,1],
-"module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target":[1,447,3]
+"module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target":[1,447,3],
+"module__collective_tracking_control_target.html#functions__collective_tracking_control_target":[1,447,2]
 };

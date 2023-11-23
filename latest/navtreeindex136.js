@@ -1,11 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__orange_avoider.html#module_load_example__orange_avoider":[1,349,0],
-"module__orange_avoider.html#module_xml__orange_avoider":[1,349,2,0],
-"module__orange_avoider_guided.html":[1,350],
-"module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,350,1],
-"module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,350,2],
-"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,350,0],
 "module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,350,2,0],
 "module__osd_max7456.html":[1,475],
 "module__osd_max7456.html#configuration__osd_max7456":[1,475,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX136 =
 "module__stabilization_float_quat.html#module_xml__stabilization_float_quat":[1,418,2,0],
 "module__stabilization_heli_indi.html":[1,419],
 "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi":[1,419,1],
-"module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,419,2]
+"module__stabilization_heli_indi.html#functions__stabilization_heli_indi":[1,419,2],
+"module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi":[1,419,0],
+"module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi":[1,419,2,0],
+"module__stabilization_indi.html":[1,420],
+"module__stabilization_indi.html#configuration__stabilization_indi":[1,420,1],
+"module__stabilization_indi.html#functions__stabilization_indi":[1,420,2],
+"module__stabilization_indi.html#module_load_example__stabilization_indi":[1,420,0]
 };

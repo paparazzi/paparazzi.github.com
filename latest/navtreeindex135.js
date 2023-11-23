@@ -1,7 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__mav_course_exercise.html#module_load_example__mav_course_exercise":[1,471,0],
-"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,471,1,0],
 "module__mavlink.html":[1,103],
 "module__mavlink.html#configuration__mavlink":[1,103,1],
 "module__mavlink.html#functions__mavlink":[1,103,2],
@@ -67,13 +65,9 @@ var NAVTREEINDEX135 =
 "module__nav_basic_fw.html#module_load_example__nav_basic_fw":[1,309,0],
 "module__nav_basic_fw.html#module_xml__nav_basic_fw":[1,309,3,0],
 "module__nav_basic_rotorcraft.html":[1,310],
-"module__nav_basic_rotorcraft.html#files":[1,310,2],
 "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft":[1,310,1],
-"module__nav_basic_rotorcraft.html#headers":[1,310,2,0],
-"module__nav_basic_rotorcraft.html#init_functions":[1,310,1,0],
 "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft":[1,310,0],
-"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,310,2,2],
-"module__nav_basic_rotorcraft.html#sources":[1,310,2,1],
+"module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft":[1,310,1,0],
 "module__nav_bungee_takeoff.html":[1,311],
 "module__nav_bungee_takeoff.html#configuration__nav_bungee_takeoff":[1,311,1],
 "module__nav_bungee_takeoff.html#module_load_example__nav_bungee_takeoff":[1,311,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX135 =
 "module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901":[1,404,2,0],
 "module__orange_avoider.html":[1,349],
 "module__orange_avoider.html#configuration__orange_avoider":[1,349,1],
-"module__orange_avoider.html#functions__orange_avoider":[1,349,2]
+"module__orange_avoider.html#functions__orange_avoider":[1,349,2],
+"module__orange_avoider.html#module_load_example__orange_avoider":[1,349,0],
+"module__orange_avoider.html#module_xml__orange_avoider":[1,349,2,0],
+"module__orange_avoider_guided.html":[1,350],
+"module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,350,1],
+"module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,350,2],
+"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,350,0]
 };

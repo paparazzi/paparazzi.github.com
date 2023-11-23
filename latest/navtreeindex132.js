@@ -1,8 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"module__fc_rotor.html#module_load_example__fc_rotor":[1,456,0],
-"module__fc_rotor.html#module_xml__fc_rotor":[1,456,2,0],
-"module__fdm_crrcsim.html":[1,137],
 "module__fdm_crrcsim.html#module_load_example__fdm_crrcsim":[1,137,0],
 "module__fdm_crrcsim.html#module_xml__fdm_crrcsim":[1,137,0,0],
 "module__fdm_fixedwing_sim.html":[1,138],
@@ -106,11 +103,9 @@ var NAVTREEINDEX132 =
 "module__gps_datalink.html#module_xml__gps_datalink":[1,146,2,0],
 "module__gps_furuno.html":[1,147],
 "module__gps_furuno.html#configuration__gps_furuno":[1,147,1],
-"module__gps_furuno.html#configure":[1,147,1,0],
-"module__gps_furuno.html#event_functions":[1,147,2,0],
 "module__gps_furuno.html#functions__gps_furuno":[1,147,2],
 "module__gps_furuno.html#module_load_example__gps_furuno":[1,147,0],
-"module__gps_furuno.html#module_xml__gps_furuno":[1,147,2,1],
+"module__gps_furuno.html#module_xml__gps_furuno":[1,147,2,0],
 "module__gps_intermcu.html":[1,148],
 "module__gps_intermcu.html#datalink_functions__gps_intermcu":[1,148,2],
 "module__gps_intermcu.html#functions__gps_intermcu":[1,148,1],
@@ -249,5 +244,10 @@ var NAVTREEINDEX132 =
 "module__gvf_common.html#module_load_example__gvf_common":[1,462,0],
 "module__gvf_common.html#module_xml__gvf_common":[1,462,0,0],
 "module__gvf_module.html":[1,463],
-"module__gvf_module.html#configuration__gvf_module":[1,463,1]
+"module__gvf_module.html#configuration__gvf_module":[1,463,1],
+"module__gvf_module.html#functions__gvf_module":[1,463,2],
+"module__gvf_module.html#module_load_example__gvf_module":[1,463,0],
+"module__gvf_module.html#module_xml__gvf_module":[1,463,2,0],
+"module__gvf_parametric.html":[1,464],
+"module__gvf_parametric.html#functions__gvf_parametric":[1,464,1]
 };

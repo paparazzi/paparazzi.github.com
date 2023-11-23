@@ -381,9 +381,7 @@ var onboard_modules =
     ] ],
     [ "cv_detect_color_object module", "module__cv_detect_color_object.html", [
       [ "Example for airframe file", "module__cv_detect_color_object.html#module_load_example__cv_detect_color_object", null ],
-      [ "Module configuration options", "module__cv_detect_color_object.html#configuration__cv_detect_color_object", [
-        [ "Define Options", "module__cv_detect_color_object.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__cv_detect_color_object.html#configuration__cv_detect_color_object", null ],
       [ "Module functions", "module__cv_detect_color_object.html#functions__cv_detect_color_object", [
         [ "Raw cv_detect_color_object.xml file:", "module__cv_detect_color_object.html#module_xml__cv_detect_color_object", null ]
       ] ]
@@ -973,11 +971,8 @@ var onboard_modules =
     ] ],
     [ "gps_furuno module", "module__gps_furuno.html", [
       [ "Example for airframe file", "module__gps_furuno.html#module_load_example__gps_furuno", null ],
-      [ "Module configuration options", "module__gps_furuno.html#configuration__gps_furuno", [
-        [ "Configure Options", "module__gps_furuno.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__gps_furuno.html#configuration__gps_furuno", null ],
       [ "Module functions", "module__gps_furuno.html#functions__gps_furuno", [
-        [ "Event Functions", "module__gps_furuno.html#event_functions", null ],
         [ "Raw gps_furuno.xml file:", "module__gps_furuno.html#module_xml__gps_furuno", null ]
       ] ]
     ] ],
@@ -1210,28 +1205,28 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1343,8 +1338,12 @@ var onboard_modules =
     ] ],
     [ "imu_mpu9250 module", "module__imu_mpu9250.html", [
       [ "Example for airframe file", "module__imu_mpu9250.html#module_load_example__imu_mpu9250", null ],
-      [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", null ],
+      [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", [
+        [ "Configure Options", "module__imu_mpu9250.html#configure", null ],
+        [ "Define Options", "module__imu_mpu9250.html#define", null ]
+      ] ],
       [ "Module functions", "module__imu_mpu9250.html#functions__imu_mpu9250", [
+        [ "Event Functions", "module__imu_mpu9250.html#event_functions", null ],
         [ "Raw imu_mpu9250.xml file:", "module__imu_mpu9250.html#module_xml__imu_mpu9250", null ]
       ] ]
     ] ],
@@ -2026,11 +2025,6 @@ var onboard_modules =
     [ "nav_basic_rotorcraft module", "module__nav_basic_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft", null ],
       [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", [
-        [ "Init Functions", "module__nav_basic_rotorcraft.html#init_functions", null ]
-      ] ],
-      [ "Files", "module__nav_basic_rotorcraft.html#files", [
-        [ "Header Files", "module__nav_basic_rotorcraft.html#headers", null ],
-        [ "Source Files", "module__nav_basic_rotorcraft.html#sources", null ],
         [ "Raw nav_basic_rotorcraft.xml file:", "module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft", null ]
       ] ]
     ] ],
@@ -2868,8 +2862,16 @@ var onboard_modules =
     ] ],
     [ "sys_id_doublet module", "module__sys_id_doublet.html", [
       [ "Example for airframe file", "module__sys_id_doublet.html#module_load_example__sys_id_doublet", null ],
-      [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", null ],
+      [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", [
+        [ "Airframe file section", "module__sys_id_doublet.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__sys_id_doublet.html#functions__sys_id_doublet", [
+        [ "Init Functions", "module__sys_id_doublet.html#init_functions", null ],
+        [ "Periodic Functions", "module__sys_id_doublet.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__sys_id_doublet.html#files", [
+        [ "Header Files", "module__sys_id_doublet.html#headers", null ],
+        [ "Source Files", "module__sys_id_doublet.html#sources", null ],
         [ "Raw sys_id_doublet.xml file:", "module__sys_id_doublet.html#module_xml__sys_id_doublet", null ]
       ] ]
     ] ],
@@ -2930,12 +2932,8 @@ var onboard_modules =
     ] ],
     [ "collective_tracking_control_target module", "module__collective_tracking_control_target.html", [
       [ "Example for airframe file", "module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target", null ],
-      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", [
-        [ "Airframe file section", "module__collective_tracking_control_target.html#af_section", null ]
-      ] ],
-      [ "Module functions", "module__collective_tracking_control_target.html#functions__collective_tracking_control_target", [
-        [ "Periodic Functions", "module__collective_tracking_control_target.html#periodic_functions", null ]
-      ] ],
+      [ "Module configuration options", "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target", null ],
+      [ "Module functions", "module__collective_tracking_control_target.html#functions__collective_tracking_control_target", null ],
       [ "Datalink Functions", "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target", [
         [ "Raw collective_tracking_control_target.xml file:", "module__collective_tracking_control_target.html#module_xml__collective_tracking_control_target", null ]
       ] ]
