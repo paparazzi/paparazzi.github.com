@@ -1,6 +1,5 @@
 var NAVTREEINDEX130 =
 {
-"module__ahrs_sim.html#module_xml__ahrs_sim":[1,34,1,0],
 "module__ahrs_vectornav.html":[1,35],
 "module__ahrs_vectornav.html#configuration__ahrs_vectornav":[1,35,1],
 "module__ahrs_vectornav.html#functions__ahrs_vectornav":[1,35,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX130 =
 "module__collective_tracking_control_target.html":[1,447],
 "module__collective_tracking_control_target.html#configuration__collective_tracking_control_target":[1,447,1],
 "module__collective_tracking_control_target.html#datalink_functions__collective_tracking_control_target":[1,447,3],
-"module__collective_tracking_control_target.html#functions__collective_tracking_control_target":[1,447,2]
+"module__collective_tracking_control_target.html#functions__collective_tracking_control_target":[1,447,2],
+"module__collective_tracking_control_target.html#module_load_example__collective_tracking_control_target":[1,447,0]
 };

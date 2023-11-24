@@ -1,6 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__mavlink.html":[1,103],
 "module__mavlink.html#configuration__mavlink":[1,103,1],
 "module__mavlink.html#functions__mavlink":[1,103,2],
 "module__mavlink.html#module_load_example__mavlink":[1,103,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX135 =
 "module__orange_avoider_guided.html":[1,350],
 "module__orange_avoider_guided.html#configuration__orange_avoider_guided":[1,350,1],
 "module__orange_avoider_guided.html#functions__orange_avoider_guided":[1,350,2],
-"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,350,0]
+"module__orange_avoider_guided.html#module_load_example__orange_avoider_guided":[1,350,0],
+"module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,350,2,0]
 };

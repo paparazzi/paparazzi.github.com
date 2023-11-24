@@ -1,6 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752":[12,0,1,0,6,45,5,17],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752a2cd3753f9cd84674fcd6e205618dcce9":[12,0,1,0,6,45,5,17,4],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adcf63d3c05bbffb14423b8ba96a8db9c":[12,0,1,0,6,45,5,17,1],
 "mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adee6921ec8fea41804938fa1e0a7aa3f":[12,0,1,0,6,45,5,17,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX129 =
 "module__ahrs_madgwick.html#module_xml__ahrs_madgwick":[1,33,1,0],
 "module__ahrs_sim.html":[1,34],
 "module__ahrs_sim.html#functions__ahrs_sim":[1,34,1],
-"module__ahrs_sim.html#module_load_example__ahrs_sim":[1,34,0]
+"module__ahrs_sim.html#module_load_example__ahrs_sim":[1,34,0],
+"module__ahrs_sim.html#module_xml__ahrs_sim":[1,34,1,0]
 };

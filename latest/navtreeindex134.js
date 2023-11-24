@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__ins_alt_float.html#functions__ins_alt_float":[1,220,2],
 "module__ins_alt_float.html#module_load_example__ins_alt_float":[1,220,0],
 "module__ins_alt_float.html#module_xml__ins_alt_float":[1,220,2,0],
 "module__ins_arduimu.html":[1,221],
@@ -249,5 +248,6 @@ var NAVTREEINDEX134 =
 "module__mav_course_exercise.html":[1,471],
 "module__mav_course_exercise.html#dependencies__mav_course_exercise":[1,471,1],
 "module__mav_course_exercise.html#module_load_example__mav_course_exercise":[1,471,0],
-"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,471,1,0]
+"module__mav_course_exercise.html#module_xml__mav_course_exercise":[1,471,1,0],
+"module__mavlink.html":[1,103]
 };

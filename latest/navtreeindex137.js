@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__stabilization_indi.html#module_xml__stabilization_indi":[1,420,2,0],
 "module__stabilization_indi_simple.html":[1,421],
 "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple":[1,421,1],
 "module__stabilization_indi_simple.html#functions__stabilization_indi_simple":[1,421,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX137 =
 "module__tune_airspeed.html#module_load_example__tune_airspeed":[1,345,0],
 "module__tune_airspeed.html#module_xml__tune_airspeed":[1,345,1,0],
 "module__uart.html":[1,267],
-"module__uart.html#module_load_example__uart":[1,267,0]
+"module__uart.html#module_load_example__uart":[1,267,0],
+"module__uart.html#module_xml__uart":[1,267,0,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX192 =
 {
-"rover__guidance__holonomic_8c.html#ae49b3b5e2e2fdb245d57134c6b5c51b7":[12,0,1,0,3,3,0,2,6],
 "rover__guidance__holonomic_8c_source.html":[12,0,1,0,3,3,0,2],
 "rover__guidance__holonomic_8h.html":[12,0,1,0,3,3,0,3],
 "rover__guidance__holonomic_8h.html#a0850e02e1a09baacc6b79b0d1504e881":[12,0,1,0,3,3,0,3,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX192 =
 "rtwtypes_8h.html#a2532a6244e023eee49f315c10f1f7c53":[12,0,1,0,6,44,0,0,26],
 "rtwtypes_8h.html#a2a3d79bdfc1d71f98235f70e68914302":[12,0,1,0,6,44,0,0,23],
 "rtwtypes_8h.html#a2aa4d5510e52efd157ad1cd2c7635b48":[12,0,1,0,6,44,0,0,1],
-"rtwtypes_8h.html#a2e4078fe4daba4fe064f5c7614b361a2":[12,0,1,0,6,44,0,0,21]
+"rtwtypes_8h.html#a2e4078fe4daba4fe064f5c7614b361a2":[12,0,1,0,6,44,0,0,21],
+"rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc":[12,0,1,0,6,44,0,0,11]
 };

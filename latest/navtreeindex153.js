@@ -1,6 +1,5 @@
 var NAVTREEINDEX153 =
 {
-"nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68":[12,0,1,0,6,47,77,0,11],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b":[12,0,1,0,6,47,32,0,12],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b":[12,0,1,0,6,47,77,0,12],
 "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b":[12,0,1,0,6,47,32,0,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX153 =
 "navstik__1_80_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce":[12,0,1,0,1,48,41],
 "navstik__1_80_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,48,12],
 "navstik__1_80_8h.html#ada5c5036a84c550ab1f82c1af0bcd112":[12,0,1,0,1,48,52],
-"navstik__1_80_8h.html#adca9740b51ca9f7681d3c3f585a57836":[12,0,1,0,1,48,55]
+"navstik__1_80_8h.html#adca9740b51ca9f7681d3c3f585a57836":[12,0,1,0,1,48,55],
+"navstik__1_80_8h.html#add4f03b6c5c9bcabeba314491a310346":[12,0,1,0,1,48,13]
 };

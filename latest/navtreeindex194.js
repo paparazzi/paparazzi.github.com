@@ -1,6 +1,5 @@
 var NAVTREEINDEX194 =
 {
-"sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a89cbd2dcfc8b9cb34ecf168f9b1e4f63":[12,0,1,0,7,124,4,31],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7a94a35d6a5fa3f14fdbcb84e247c8b0b8":[12,0,1,0,7,124,4,6],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7aa3777df29ebf86047c500e0679eadcfe":[12,0,1,0,7,124,4,2],
 "sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7aa86962b1f4de1ee9b8717f647bfa0370":[12,0,1,0,7,124,4,30],
@@ -249,5 +248,6 @@ var NAVTREEINDEX194 =
 "serial__port_8c.html#a8af70d2ac65676d6dd797b3a0f5de1a9":[12,0,1,0,0,1,6,5],
 "serial__port_8c.html#a9e425ef705476c0a778712761281a232":[12,0,1,0,0,1,6,10],
 "serial__port_8c.html#ab7728b553a2579a9bd70e11fec0bbbc4":[12,0,1,0,0,1,6,7],
-"serial__port_8c.html#ab7b85461a451e02f63cf1383068cf0ca":[12,0,1,0,0,1,6,13]
+"serial__port_8c.html#ab7b85461a451e02f63cf1383068cf0ca":[12,0,1,0,0,1,6,13],
+"serial__port_8c.html#acd4dcaba3d4608ddde2fc364a1cf8f79":[12,0,1,0,0,1,6,9]
 };

@@ -1,11 +1,10 @@
 var NAVTREEINDEX139 =
 {
-"modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a6b6ab5263704d96de6ad4e5612205020":[12,0,1,0,6,15,28,12,0],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3aac5f33584234a0d65990816c597ebb61":[12,0,1,0,6,15,28,12,1],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3ad6382b69b46b58635e82e72e364a83fd":[12,0,1,0,6,15,28,12,2],
 "modules_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3af949af650a3a03cc323054fe6f9baaad":[12,0,1,0,6,15,28,12,5],
-"modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,6,15,28,0],
 "modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,0,2,1,2,1,0],
+"modules_2datalink_2superbitrf_8h.html#structSuperbitRF":[12,0,1,0,6,15,28,0],
 "modules_2datalink_2superbitrf_8h_source.html":[12,0,1,0,6,15,28],
 "modules_2ins_2ins__arduimu_8c.html":[12,0,1,0,6,37,14],
 "modules_2ins_2ins__arduimu_8c.html#a336d5d67196f2aee02defc9616be4cb0":[12,0,1,0,6,37,14,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX139 =
 "mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c":[12,0,1,0,7,92,2],
 "mpu60x0__i2c_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,92,0],
 "mpu60x0__i2c_8c.html#aedbe7307e6e7f522300178dd964c2f3b":[12,0,1,0,7,92,1],
-"mpu60x0__i2c_8c.html#af4a339056cedb3db951f3d042a509866":[12,0,1,0,7,92,4]
+"mpu60x0__i2c_8c.html#af4a339056cedb3db951f3d042a509866":[12,0,1,0,7,92,4],
+"mpu60x0__i2c_8c_source.html":[12,0,1,0,7,92]
 };
