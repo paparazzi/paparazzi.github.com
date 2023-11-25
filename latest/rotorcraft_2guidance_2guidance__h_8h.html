@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__h_8h.h
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__h_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__h_8hdep" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__h_8hdep" id="asw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__h_8hdep">
-<area shape="rect" title="Horizontal guidance for rotorcrafts." alt="" coords="1285,5,1452,61"/>
+<area shape="rect" title="Horizontal guidance for rotorcrafts." alt="" coords="1407,5,1573,61"/>
 <area shape="rect" href="guidance__flip_8c.html" title="Open Loop guidance for making a flip." alt="" coords="5,117,172,173"/>
 <area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="161,339,328,395"/>
 <area shape="rect" href="guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="368,339,535,395"/>
@@ -143,10 +143,12 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__h_8h.h
 <area shape="rect" href="guidance_8h.html" title=" " alt="" coords="1017,124,1184,165"/>
 <area shape="rect" href="scheduling__indi__simple_8c.html" title=" " alt="" coords="1839,339,1997,395"/>
 <area shape="rect" href="rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="1598,124,1769,165"/>
-<area shape="rect" href="ctrl__effectiveness__scheduling_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="1793,117,1960,173"/>
-<area shape="rect" href="nav__fish_8c.html" title=" " alt="" coords="1984,124,2143,165"/>
-<area shape="rect" href="orange__avoider__guided_8c.html" title=" " alt="" coords="2167,117,2343,173"/>
-<area shape="rect" href="wing__rotation__controller__servo_8c.html" title=" " alt="" coords="2368,109,2529,180"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html" title=" " alt="" coords="1793,117,1952,173"/>
+<area shape="rect" href="eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="1976,117,2135,173"/>
+<area shape="rect" href="eff__scheduling__generic_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="2159,117,2317,173"/>
+<area shape="rect" href="nav__fish_8c.html" title=" " alt="" coords="2341,124,2500,165"/>
+<area shape="rect" href="orange__avoider__guided_8c.html" title=" " alt="" coords="2525,117,2701,173"/>
+<area shape="rect" href="wing__rotation__controller__servo_8c.html" title=" " alt="" coords="2725,109,2887,180"/>
 <area shape="rect" href="guidance__pid_8c.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="299,228,465,284"/>
 <area shape="rect" href="autopilot__guided_8c.html" title="Autopilot guided mode interface." alt="" coords="732,228,899,284"/>
 <area shape="rect" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="923,228,1089,284"/>
@@ -2154,7 +2156,7 @@ use_ref</td>
 
 <p class="definition">Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00052">52</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html">guidance_h.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ctrl__effectiveness__scheduling_8c_source.html#l00094">ctrl_eff_scheduling_periodic_a()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00103">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00277">guidance_h_run()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00487">transition_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__generic_8c_source.html#l00074">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00074">eff_scheduling_periodic_a()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00103">guidance_h_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00277">guidance_h_run()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00487">transition_run()</a>.</p>
 
 </div>
 </div>
@@ -2164,7 +2166,7 @@ use_ref</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html">guidance_h.h</a></li>
-    <li class="footer">Generated on Fri Nov 24 2023 10:31:01 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Nov 25 2023 21:20:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

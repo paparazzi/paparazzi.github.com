@@ -572,19 +572,6 @@ var onboard_modules =
         [ "Raw approach_moving_target.xml file:", "module__approach_moving_target.html#module_xml__approach_moving_target", null ]
       ] ]
     ] ],
-    [ "ctrl_eff_sched_rot_wing module", "module__ctrl_eff_sched_rot_wing.html", [
-      [ "Example for airframe file", "module__ctrl_eff_sched_rot_wing.html#module_load_example__ctrl_eff_sched_rot_wing", null ],
-      [ "Module configuration options", "module__ctrl_eff_sched_rot_wing.html#configuration__ctrl_eff_sched_rot_wing", null ],
-      [ "Module functions", "module__ctrl_eff_sched_rot_wing.html#functions__ctrl_eff_sched_rot_wing", [
-        [ "Raw ctrl_eff_sched_rot_wing.xml file:", "module__ctrl_eff_sched_rot_wing.html#module_xml__ctrl_eff_sched_rot_wing", null ]
-      ] ]
-    ] ],
-    [ "ctrl_effectiveness_scheduling module", "module__ctrl_effectiveness_scheduling.html", [
-      [ "Example for airframe file", "module__ctrl_effectiveness_scheduling.html#module_load_example__ctrl_effectiveness_scheduling", null ],
-      [ "Module functions", "module__ctrl_effectiveness_scheduling.html#functions__ctrl_effectiveness_scheduling", [
-        [ "Raw ctrl_effectiveness_scheduling.xml file:", "module__ctrl_effectiveness_scheduling.html#module_xml__ctrl_effectiveness_scheduling", null ]
-      ] ]
-    ] ],
     [ "ctrl_module_innerloop_demo module", "module__ctrl_module_innerloop_demo.html", [
       [ "Example for airframe file", "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo", [
         [ "Raw ctrl_module_innerloop_demo.xml file:", "module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo", null ]
@@ -601,10 +588,35 @@ var onboard_modules =
         [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
       ] ]
     ] ],
+    [ "eff_scheduling_cyfoam module", "module__eff_scheduling_cyfoam.html", [
+      [ "Example for airframe file", "module__eff_scheduling_cyfoam.html#module_load_example__eff_scheduling_cyfoam", null ],
+      [ "Module functions", "module__eff_scheduling_cyfoam.html#functions__eff_scheduling_cyfoam", [
+        [ "Raw eff_scheduling_cyfoam.xml file:", "module__eff_scheduling_cyfoam.html#module_xml__eff_scheduling_cyfoam", null ]
+      ] ]
+    ] ],
+    [ "eff_scheduling_falcon module", "module__eff_scheduling_falcon.html", [
+      [ "Example for airframe file", "module__eff_scheduling_falcon.html#module_load_example__eff_scheduling_falcon", null ],
+      [ "Module functions", "module__eff_scheduling_falcon.html#functions__eff_scheduling_falcon", [
+        [ "Raw eff_scheduling_falcon.xml file:", "module__eff_scheduling_falcon.html#module_xml__eff_scheduling_falcon", null ]
+      ] ]
+    ] ],
+    [ "eff_scheduling_generic module", "module__eff_scheduling_generic.html", [
+      [ "Example for airframe file", "module__eff_scheduling_generic.html#module_load_example__eff_scheduling_generic", null ],
+      [ "Module functions", "module__eff_scheduling_generic.html#functions__eff_scheduling_generic", [
+        [ "Raw eff_scheduling_generic.xml file:", "module__eff_scheduling_generic.html#module_xml__eff_scheduling_generic", null ]
+      ] ]
+    ] ],
     [ "eff_scheduling_nederdrone module", "module__eff_scheduling_nederdrone.html", [
       [ "Example for airframe file", "module__eff_scheduling_nederdrone.html#module_load_example__eff_scheduling_nederdrone", null ],
       [ "Module functions", "module__eff_scheduling_nederdrone.html#functions__eff_scheduling_nederdrone", [
         [ "Raw eff_scheduling_nederdrone.xml file:", "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone", null ]
+      ] ]
+    ] ],
+    [ "eff_scheduling_rot_wing module", "module__eff_scheduling_rot_wing.html", [
+      [ "Example for airframe file", "module__eff_scheduling_rot_wing.html#module_load_example__eff_scheduling_rot_wing", null ],
+      [ "Module configuration options", "module__eff_scheduling_rot_wing.html#configuration__eff_scheduling_rot_wing", null ],
+      [ "Module functions", "module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing", [
+        [ "Raw eff_scheduling_rot_wing.xml file:", "module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing", null ]
       ] ]
     ] ],
     [ "follow_me module", "module__follow_me.html", [

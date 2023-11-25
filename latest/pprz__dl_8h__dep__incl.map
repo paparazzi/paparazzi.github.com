@@ -1,8 +1,8 @@
 <map id="sw/airborne/modules/datalink/pprz_dl.h" name="sw/airborne/modules/datalink/pprz_dl.h">
-<area shape="rect" id="node1" title="Datalink using PPRZ protocol." alt="" coords="3697,5,3855,47"/>
+<area shape="rect" id="node1" title="Datalink using PPRZ protocol." alt="" coords="3667,5,3826,47"/>
 <area shape="rect" id="node2" href="$setup__actuators_8c.html" title=" " alt="" coords="172,191,353,233"/>
-<area shape="rect" id="node3" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="3697,95,3855,136"/>
-<area shape="rect" id="node50" href="$pprz__dl_8c.html" title=" " alt="" coords="3879,95,4038,136"/>
+<area shape="rect" id="node3" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="3667,95,3826,136"/>
+<area shape="rect" id="node50" href="$pprz__dl_8c.html" title=" " alt="" coords="3850,95,4009,136"/>
 <area shape="rect" id="node4" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board." alt="" coords="7713,191,7882,233"/>
 <area shape="rect" id="node5" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="7907,191,8101,233"/>
 <area shape="rect" id="node6" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="8125,191,8320,233"/>
@@ -21,32 +21,32 @@
 <area shape="rect" id="node19" href="$tag__tracking_8c.html" title=" " alt="" coords="2647,184,2806,240"/>
 <area shape="rect" id="node20" href="$rtos__mon_8c.html" title=" " alt="" coords="2830,191,2989,233"/>
 <area shape="rect" id="node21" href="$sys__mon_8c.html" title="System monitoring for bare metal targets return cpu load, average exec time, ..." alt="" coords="3013,191,3171,233"/>
-<area shape="rect" id="node22" href="$datalink_8c.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="3195,191,3354,233"/>
-<area shape="rect" id="node23" href="$downlink_8c.html" title="Common code for AP and FBW telemetry." alt="" coords="622,288,781,329"/>
-<area shape="rect" id="node24" href="$telemetry_8c.html" title="Periodic telemetry system utility function." alt="" coords="805,288,963,329"/>
-<area shape="rect" id="node25" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="530,191,689,233"/>
-<area shape="rect" id="node26" href="$esc32_8c.html" title=" " alt="" coords="987,288,1146,329"/>
-<area shape="rect" id="node27" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info." alt="" coords="3378,191,3539,233"/>
-<area shape="rect" id="node28" href="$dw1000__arduino_8c.html" title=" " alt="" coords="3563,191,3778,233"/>
-<area shape="rect" id="node29" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="3802,184,3961,240"/>
-<area shape="rect" id="node30" href="$dc_8c.html" title="Standard Digital Camera Control Interface." alt="" coords="3985,191,4143,233"/>
-<area shape="rect" id="node31" href="$pprzlink__cam__ctrl_8c.html" title=" " alt="" coords="4167,184,4326,240"/>
-<area shape="rect" id="node32" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera." alt="" coords="4350,184,4509,240"/>
-<area shape="rect" id="node33" href="$MPPT_8c.html" title="Solar cells MPTT monitoring." alt="" coords="4533,191,4691,233"/>
-<area shape="rect" id="node34" href="$sim__MPPT_8c.html" title=" " alt="" coords="4715,191,4874,233"/>
-<area shape="rect" id="node35" href="$glide__wing__lock_8c.html" title=" " alt="" coords="4898,184,5065,240"/>
-<area shape="rect" id="node36" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="5089,191,5247,233"/>
-<area shape="rect" id="node37" href="$gps__ubx__i2c_8c.html" title="pprz link device for Ublox over I2C" alt="" coords="5271,191,5430,233"/>
-<area shape="rect" id="node38" href="$gps__ubx__ucenter_8c.html" title="Configure Ublox GPS." alt="" coords="5455,191,5628,233"/>
-<area shape="rect" id="node39" href="$gsm_8c.html" title=" " alt="" coords="5653,191,5811,233"/>
-<area shape="rect" id="node40" href="$guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems." alt="" coords="5836,184,6041,240"/>
-<area shape="rect" id="node41" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="6066,184,6227,240"/>
-<area shape="rect" id="node42" href="$imu__mpu9250_8c.html" title=" " alt="" coords="6251,191,6410,233"/>
-<area shape="rect" id="node43" href="$alt__filter_8c.html" title=" " alt="" coords="6434,191,6593,233"/>
-<area shape="rect" id="node44" href="$imu__temp__ctrl_8c.html" title="INS temperature control on pwm 6 for Bebop2, pwm 10 for DISCO." alt="" coords="6617,191,6775,233"/>
-<area shape="rect" id="node45" href="$modules_2ins_2ins__arduimu_8c.html" title=" " alt="" coords="6799,191,6958,233"/>
-<area shape="rect" id="node46" href="$ins__vn100_8c.html" title=" " alt="" coords="6982,191,7141,233"/>
-<area shape="rect" id="node47" href="$ins__xsens700_8c.html" title="Xsens700 as a full INS solution." alt="" coords="7165,191,7323,233"/>
-<area shape="rect" id="node48" href="$xsens_8c.html" title="Parser for the Xsens protocol." alt="" coords="7347,191,7506,233"/>
-<area shape="rect" id="node49" href="$lidar__lite_8c.html" title="driver for the Lidar&#45;Lite i2c lidar version 1 (silver label)" alt="" coords="7530,191,7689,233"/>
+<area shape="rect" id="node22" href="$eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="3195,184,3354,240"/>
+<area shape="rect" id="node23" href="$datalink_8c.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="3378,191,3537,233"/>
+<area shape="rect" id="node24" href="$downlink_8c.html" title="Common code for AP and FBW telemetry." alt="" coords="622,288,781,329"/>
+<area shape="rect" id="node25" href="$telemetry_8c.html" title="Periodic telemetry system utility function." alt="" coords="805,288,963,329"/>
+<area shape="rect" id="node26" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="530,191,689,233"/>
+<area shape="rect" id="node27" href="$esc32_8c.html" title=" " alt="" coords="987,288,1146,329"/>
+<area shape="rect" id="node28" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info." alt="" coords="3561,191,3722,233"/>
+<area shape="rect" id="node29" href="$dw1000__arduino_8c.html" title=" " alt="" coords="3746,191,3961,233"/>
+<area shape="rect" id="node30" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="3985,184,4143,240"/>
+<area shape="rect" id="node31" href="$dc_8c.html" title="Standard Digital Camera Control Interface." alt="" coords="4167,191,4326,233"/>
+<area shape="rect" id="node32" href="$pprzlink__cam__ctrl_8c.html" title=" " alt="" coords="4350,184,4509,240"/>
+<area shape="rect" id="node33" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera." alt="" coords="4533,184,4691,240"/>
+<area shape="rect" id="node34" href="$MPPT_8c.html" title="Solar cells MPTT monitoring." alt="" coords="4715,191,4874,233"/>
+<area shape="rect" id="node35" href="$sim__MPPT_8c.html" title=" " alt="" coords="4898,191,5057,233"/>
+<area shape="rect" id="node36" href="$glide__wing__lock_8c.html" title=" " alt="" coords="5081,184,5247,240"/>
+<area shape="rect" id="node37" href="$gps__datalink_8c.html" title="GPS system based on datalink." alt="" coords="5271,191,5430,233"/>
+<area shape="rect" id="node38" href="$gps__ubx__i2c_8c.html" title="pprz link device for Ublox over I2C" alt="" coords="5454,191,5613,233"/>
+<area shape="rect" id="node39" href="$gps__ubx__ucenter_8c.html" title="Configure Ublox GPS." alt="" coords="5637,191,5811,233"/>
+<area shape="rect" id="node40" href="$gsm_8c.html" title=" " alt="" coords="5835,191,5994,233"/>
+<area shape="rect" id="node41" href="$guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems." alt="" coords="6019,184,6224,240"/>
+<area shape="rect" id="node42" href="$qr__code__spi__link_8c.html" title=" " alt="" coords="6249,184,6410,240"/>
+<area shape="rect" id="node43" href="$imu__mpu9250_8c.html" title=" " alt="" coords="6434,191,6593,233"/>
+<area shape="rect" id="node44" href="$alt__filter_8c.html" title=" " alt="" coords="6617,191,6775,233"/>
+<area shape="rect" id="node45" href="$imu__temp__ctrl_8c.html" title="INS temperature control on pwm 6 for Bebop2, pwm 10 for DISCO." alt="" coords="6799,191,6958,233"/>
+<area shape="rect" id="node46" href="$modules_2ins_2ins__arduimu_8c.html" title=" " alt="" coords="6982,191,7141,233"/>
+<area shape="rect" id="node47" href="$ins__vn100_8c.html" title=" " alt="" coords="7165,191,7323,233"/>
+<area shape="rect" id="node48" href="$ins__xsens700_8c.html" title="Xsens700 as a full INS solution." alt="" coords="7347,191,7506,233"/>
+<area shape="rect" id="node49" href="$xsens_8c.html" title="Parser for the Xsens protocol." alt="" coords="7530,191,7689,233"/>
 </map>

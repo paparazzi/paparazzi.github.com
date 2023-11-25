@@ -1,0 +1,24 @@
+var eff__scheduling__rot__wing_8c =
+[
+    [ "WING_ROTATION_CAN_ROT_WING_ID", "eff__scheduling__rot__wing_8c.html#a817537c308cfbd3d627e87bc827a6edd", null ],
+    [ "eff_scheduling_rot_wing_init", "eff__scheduling__rot__wing_8c.html#a160bdad8355b622e3634294c818e7e45", null ],
+    [ "eff_scheduling_rot_wing_periodic", "eff__scheduling__rot__wing_8c.html#a5e05be74b9c83ef5f2146ecaf885af41", null ],
+    [ "eff_scheduling_rot_wing_schedule_liftd", "eff__scheduling__rot__wing_8c.html#a61d5125828ac446a23c7398b37f07a00", null ],
+    [ "eff_scheduling_rot_wing_update_aileron_effectiveness", "eff__scheduling__rot__wing_8c.html#aa57f655e085c035ab2f7660b9b12fb14", null ],
+    [ "eff_scheduling_rot_wing_update_airspeed", "eff__scheduling__rot__wing_8c.html#aea24cfe1417a041fa9f5c2bd8616c210", null ],
+    [ "eff_scheduling_rot_wing_update_cmd", "eff__scheduling__rot__wing_8c.html#abd44c603404e8aa8417d23ac554e79fa", null ],
+    [ "eff_scheduling_rot_wing_update_elevator_effectiveness", "eff__scheduling__rot__wing_8c.html#a5b69709f38b15506601da246d9c8c45d", null ],
+    [ "eff_scheduling_rot_wing_update_flaperon_effectiveness", "eff__scheduling__rot__wing_8c.html#ad8f2ec5cd9c21efaa8fc51633d97ceb6", null ],
+    [ "eff_scheduling_rot_wing_update_hover_motor_effectiveness", "eff__scheduling__rot__wing_8c.html#ab24a93e4980e77248cd46c6e04967504", null ],
+    [ "eff_scheduling_rot_wing_update_MMOI", "eff__scheduling__rot__wing_8c.html#ae0a0edd53fd9ec40ed255fc0832be7df", null ],
+    [ "eff_scheduling_rot_wing_update_pusher_effectiveness", "eff__scheduling__rot__wing_8c.html#a64bbe374421554bdaf05ad8eea0c37fc", null ],
+    [ "eff_scheduling_rot_wing_update_rudder_effectiveness", "eff__scheduling__rot__wing_8c.html#ac8b77afa13dbe4d2e672ff01c83e4885", null ],
+    [ "eff_scheduling_rot_wing_update_wing_angle", "eff__scheduling__rot__wing_8c.html#a010db5d1849f792ffb27ad0ddd38413f", null ],
+    [ "guidance_indi_get_liftd", "eff__scheduling__rot__wing_8c.html#a7787423cb34432d54738505c17618e4a", null ],
+    [ "stabilization_indi_set_wls_settings", "eff__scheduling__rot__wing_8c.html#a5e8d2fff75cab722278e60e10b36dff9", null ],
+    [ "wing_position_cb", "eff__scheduling__rot__wing_8c.html#ad616616784d17dad05980d1f9ef4303e", null ],
+    [ "eff_sched_p", "eff__scheduling__rot__wing_8c.html#a5f1036bfa14a180c6113283cca476e56", null ],
+    [ "eff_sched_var", "eff__scheduling__rot__wing_8c.html#a63556a574330b5de51b6f46e0f2e92d1", null ],
+    [ "eff_scheduling_rot_wing_lift_d", "eff__scheduling__rot__wing_8c.html#ad932f2eabb23a82d6e803ad0150eb710", null ],
+    [ "wing_position_ev", "eff__scheduling__rot__wing_8c.html#aae95f0c99e5a489d1081cc99201e1578", null ]
+];
