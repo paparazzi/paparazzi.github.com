@@ -21,7 +21,7 @@ var guidance__indi__hybrid_8c =
     [ "guidance_indi_propagate_filters", "guidance__indi__hybrid_8c.html#af16b07ee1dbc3c37e1d2c0b6bc1163e4", null ],
     [ "guidance_indi_run", "guidance__indi__hybrid_8c.html#aead321fae442f925321701b4b6269d8e", null ],
     [ "guidance_indi_run_mode", "guidance__indi__hybrid_8c.html#a3b8b6765dcee6ccef6317feae8ec9f52", null ],
-    [ "send_guidance_indi_debug", "guidance__indi__hybrid_8c.html#a641da76aa47ed06522777b95228328ed", null ],
+    [ "send_guidance_indi_debug", "guidance__indi__hybrid_8c.html#a59ce43e70385890b7e6eb2fb0c17b187", null ],
     [ "send_guidance_indi_hybrid", "guidance__indi__hybrid_8c.html#aa00a7dd7051392e9b93f2fb2e4e66f70", null ],
     [ "vel_sp_cb", "guidance__indi__hybrid_8c.html#a16488b5b0d74accbdaae2f418a20d8e8", null ],
     [ "accely_filt", "guidance__indi__hybrid_8c.html#a104f167cc747937fb6f4d23e445148f2", null ],
