@@ -1,5 +1,13 @@
 var NAVTREEINDEX40 =
 {
+"crazyflie_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,4,0,0,1,50],
+"crazyflie_8h.html#a9914c116b1e93a66882b48999c8efcd9":[12,0,1,0,1,4,0,0,1,7],
+"crazyflie_8h.html#a9b407aa30f1e3cf5bda8e8433315b7c4":[12,0,1,0,1,4,0,0,1,11],
+"crazyflie_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,4,0,0,1,106],
+"crazyflie_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa":[12,0,1,0,1,4,0,0,1,86],
+"crazyflie_8h.html#aa5ea83d926a661df064db0e68bc60690":[12,0,1,0,1,4,0,0,1,29],
+"crazyflie_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,4,0,0,1,26],
+"crazyflie_8h.html#aa6c753c425e10973deb0ae6a3cba0df3":[12,0,1,0,1,4,0,0,1,12],
 "crazyflie_8h.html#aa74338bcd6fb2d92e8da4797d14dea13":[12,0,1,0,1,4,0,0,1,87],
 "crazyflie_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,4,0,0,1,6],
 "crazyflie_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae":[12,0,1,0,1,4,0,0,1,43],
@@ -241,13 +249,5 @@ var NAVTREEINDEX40 =
 "ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,4,0,3],
 "ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb":[12,0,1,0,6,14,4,6],
 "ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,2,0,4],
-"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,4,0,4],
-"ctrl__module__outerloop__demo_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f":[12,0,1,0,6,14,4,4],
-"ctrl__module__outerloop__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502":[12,0,1,0,6,14,2,0,5],
-"ctrl__module__outerloop__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502":[12,0,1,0,6,14,4,0,5],
-"ctrl__module__outerloop__demo_8c.html#aa520a8ed7a4e070f40515a4408bf20ce":[12,0,1,0,6,14,4,5],
-"ctrl__module__outerloop__demo_8c.html#ab39ce31e4173de7b9aefa839324ec9a2":[12,0,1,0,6,14,4,2],
-"ctrl__module__outerloop__demo_8c.html#ab7cf892bc67e9ddff9c48bb38f49863b":[12,0,1,0,6,14,2,0,1],
-"ctrl__module__outerloop__demo_8c.html#ab7cf892bc67e9ddff9c48bb38f49863b":[12,0,1,0,6,14,4,0,1],
-"ctrl__module__outerloop__demo_8c.html#af0a3b4e238d064326406719e8244e92d":[12,0,1,0,6,14,4,1]
+"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,4,0,4]
 };

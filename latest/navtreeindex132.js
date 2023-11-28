@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"module__eff_scheduling_rot_wing.html#module_load_example__eff_scheduling_rot_wing":[1,92,0],
+"module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing":[1,92,2,0],
+"module__ekf_aw.html":[1,275],
+"module__ekf_aw.html#configuration__ekf_aw":[1,275,1],
+"module__ekf_aw.html#functions__ekf_aw":[1,275,2],
+"module__ekf_aw.html#module_load_example__ekf_aw":[1,275,0],
+"module__ekf_aw.html#module_xml__ekf_aw":[1,275,2,0],
+"module__electrical.html":[1,138],
 "module__electrical.html#functions__electrical":[1,138,1],
 "module__electrical.html#module_load_example__electrical":[1,138,0],
 "module__electrical.html#module_xml__electrical":[1,138,1,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX132 =
 "module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter":[1,170,0],
 "module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter":[1,170,0,0],
 "module__guidance_oneloop.html":[1,171],
-"module__guidance_oneloop.html#module_load_example__guidance_oneloop":[1,171,0],
-"module__guidance_oneloop.html#module_xml__guidance_oneloop":[1,171,0,0],
-"module__guidance_pid_rotorcraft.html":[1,172],
-"module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft":[1,172,1],
-"module__guidance_pid_rotorcraft.html#functions__guidance_pid_rotorcraft":[1,172,2],
-"module__guidance_pid_rotorcraft.html#module_load_example__guidance_pid_rotorcraft":[1,172,0],
-"module__guidance_pid_rotorcraft.html#module_xml__guidance_pid_rotorcraft":[1,172,2,0],
-"module__guidance_rotorcraft.html":[1,173],
-"module__guidance_rotorcraft.html#functions__guidance_rotorcraft":[1,173,1]
+"module__guidance_oneloop.html#module_load_example__guidance_oneloop":[1,171,0]
 };

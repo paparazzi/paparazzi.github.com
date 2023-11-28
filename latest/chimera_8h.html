@@ -454,6 +454,15 @@ Macros</h2></td></tr>
 <tr class="separator:ab68f28871d18c17e7e70ae63277d37c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ceadf6a913477832e04b0cb7cd17210"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chimera_8h.html#a0ceadf6a913477832e04b0cb7cd17210">ActuatorsDefaultCommit</a>()&#160;&#160;&#160;<a class="el" href="stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td></tr>
 <tr class="separator:a0ceadf6a913477832e04b0cb7cd17210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e208399ce330289bcaef37bd2e9b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chimera_8h.html#a17e208399ce330289bcaef37bd2e9b08">WS2812D1_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
+<tr class="memdesc:a17e208399ce330289bcaef37bd2e9b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">For WS2812.  <a href="chimera_8h.html#a17e208399ce330289bcaef37bd2e9b08">More...</a><br /></td></tr>
+<tr class="separator:a17e208399ce330289bcaef37bd2e9b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec52babc287e1d061dec870b9f43b083"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chimera_8h.html#aec52babc287e1d061dec870b9f43b083">WS2812D1_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a46027cd97ff756e5ddadcc10811b5699">GPIO6</a></td></tr>
+<tr class="separator:aec52babc287e1d061dec870b9f43b083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8cee2fb7cfce1b91317be24260b39c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chimera_8h.html#afd8cee2fb7cfce1b91317be24260b39c">WS2812D1_AF</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:afd8cee2fb7cfce1b91317be24260b39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c00198c3a1c3fabc5af8eb5b763dac5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chimera_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">WS2812D1_CFG_DEF</a></td></tr>
+<tr class="separator:a1c00198c3a1c3fabc5af8eb5b763dac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a00cbc08b2249df24b1d43d5ca62df28e"></a>
@@ -3258,13 +3267,89 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="afd8cee2fb7cfce1b91317be24260b39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8cee2fb7cfce1b91317be24260b39c">&#9670;&nbsp;</a></span>WS2812D1_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812D1_AF&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="chimera_8h_source.html#l00583">583</a> of file <a class="el" href="chimera_8h_source.html">chimera.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c00198c3a1c3fabc5af8eb5b763dac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c00198c3a1c3fabc5af8eb5b763dac5">&#9670;&nbsp;</a></span>WS2812D1_CFG_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812D1_CFG_DEF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  { \</div>
+<div class="line">  .dma_stream = <a class="code" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7ed5df6afbc2c3104eb8d1b898349c22">STM32_PWM8_UP_DMA_STREAM</a>, \</div>
+<div class="line">  .dma_channel = <a class="code" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a19ee4d92fe05757bcf2efd424accc7a5">STM32_PWM8_UP_DMA_CHANNEL</a>, \</div>
+<div class="line">  .dma_priority = <a class="code" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ac43c18020355b9fcbbf4085e3f0240d0">STM32_PWM8_UP_DMA_PRIORITY</a>, \</div>
+<div class="line">  .pwm_channel = 0, \</div>
+<div class="line">  .pwmp = &amp;PWMD8 \</div>
+<div class="line">}</div>
+<div class="ttc" id="achimera_2chibios_2v1_80_2mcuconf_8h_html_a19ee4d92fe05757bcf2efd424accc7a5"><div class="ttname"><a href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a19ee4d92fe05757bcf2efd424accc7a5">STM32_PWM8_UP_DMA_CHANNEL</a></div><div class="ttdeci">#define STM32_PWM8_UP_DMA_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="chimera_2chibios_2v1_80_2mcuconf_8h_source.html#l00334">mcuconf.h:334</a></div></div>
+<div class="ttc" id="achimera_2chibios_2v1_80_2mcuconf_8h_html_a7ed5df6afbc2c3104eb8d1b898349c22"><div class="ttname"><a href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7ed5df6afbc2c3104eb8d1b898349c22">STM32_PWM8_UP_DMA_STREAM</a></div><div class="ttdeci">#define STM32_PWM8_UP_DMA_STREAM</div><div class="ttdef"><b>Definition:</b> <a href="chimera_2chibios_2v1_80_2mcuconf_8h_source.html#l00333">mcuconf.h:333</a></div></div>
+<div class="ttc" id="achimera_2chibios_2v1_80_2mcuconf_8h_html_ac43c18020355b9fcbbf4085e3f0240d0"><div class="ttname"><a href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ac43c18020355b9fcbbf4085e3f0240d0">STM32_PWM8_UP_DMA_PRIORITY</a></div><div class="ttdeci">#define STM32_PWM8_UP_DMA_PRIORITY</div><div class="ttdef"><b>Definition:</b> <a href="chimera_2chibios_2v1_80_2mcuconf_8h_source.html#l00336">mcuconf.h:336</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="chimera_8h_source.html#l00584">584</a> of file <a class="el" href="chimera_8h_source.html">chimera.h</a>.</p>
+
+</div>
+</div>
+<a id="a17e208399ce330289bcaef37bd2e9b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e208399ce330289bcaef37bd2e9b08">&#9670;&nbsp;</a></span>WS2812D1_GPIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812D1_GPIO&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For WS2812. </p>
+
+<p class="definition">Definition at line <a class="el" href="chimera_8h_source.html#l00581">581</a> of file <a class="el" href="chimera_8h_source.html">chimera.h</a>.</p>
+
+</div>
+</div>
+<a id="aec52babc287e1d061dec870b9f43b083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec52babc287e1d061dec870b9f43b083">&#9670;&nbsp;</a></span>WS2812D1_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812D1_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a46027cd97ff756e5ddadcc10811b5699">GPIO6</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="chimera_8h_source.html#l00582">582</a> of file <a class="el" href="chimera_8h_source.html">chimera.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_130c85d5eb72b973f996af41d7a72ae6.html">chimera</a></li><li class="navelem"><a class="el" href="dir_1fd2f13934d0022eb60b6af9032fe9c6.html">chibios</a></li><li class="navelem"><a class="el" href="dir_2d35d2d623da4a8b343296d476467f83.html">v1.0</a></li><li class="navelem"><a class="el" href="chimera_8h.html">chimera.h</a></li>
-    <li class="footer">Generated on Mon Nov 27 2023 07:53:39 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 28 2023 08:24:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

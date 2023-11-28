@@ -1,5 +1,13 @@
 var NAVTREEINDEX131 =
 {
+"module__cf_deck_multi_ranger.html":[1,363],
+"module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger":[1,363,1],
+"module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger":[1,363,2],
+"module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger":[1,363,0],
+"module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger":[1,363,2,0],
+"module__charge_sens.html":[1,271],
+"module__charge_sens.html#functions__charge_sens":[1,271,1],
+"module__charge_sens.html#module_load_example__charge_sens":[1,271,0],
 "module__charge_sens.html#module_xml__charge_sens":[1,271,1,0],
 "module__cloud_sensor.html":[1,272],
 "module__cloud_sensor.html#datalink_functions__cloud_sensor":[1,272,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX131 =
 "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone":[1,91,1,0],
 "module__eff_scheduling_rot_wing.html":[1,92],
 "module__eff_scheduling_rot_wing.html#configuration__eff_scheduling_rot_wing":[1,92,1],
-"module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing":[1,92,2],
-"module__eff_scheduling_rot_wing.html#module_load_example__eff_scheduling_rot_wing":[1,92,0],
-"module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing":[1,92,2,0],
-"module__ekf_aw.html":[1,275],
-"module__ekf_aw.html#configuration__ekf_aw":[1,275,1],
-"module__ekf_aw.html#functions__ekf_aw":[1,275,2],
-"module__ekf_aw.html#module_load_example__ekf_aw":[1,275,0],
-"module__ekf_aw.html#module_xml__ekf_aw":[1,275,2,0],
-"module__electrical.html":[1,138]
+"module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing":[1,92,2]
 };

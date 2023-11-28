@@ -1,5 +1,13 @@
 var NAVTREEINDEX66 =
 {
+"group__math__algebra__double.html#a552b55ff2231e534d47c489e522d94bf":[9,9,1,2,2,3],
+"group__math__algebra__double.html#a679b4312c2296f17ed7e3d8625ceb6cb":[9,9,1,2,5,2],
+"group__math__algebra__double.html#a6d37a71e96d0d1cdf595002d6aacd715":[9,9,1,2,3,0],
+"group__math__algebra__double.html#a6e75853abc1bc1b6f125b1dbc7fc53ae":[9,9,1,2,1,2],
+"group__math__algebra__double.html#a73bba193cdc5815d6bbf2d0af7fce341":[9,9,1,2,6,1],
+"group__math__algebra__double.html#a7519f4492e3d607594df79b3d30ad082":[9,9,1,2,0,0],
+"group__math__algebra__double.html#a755f3938a6c152764ae2b73bc2994840":[9,9,1,2,1,0],
+"group__math__algebra__double.html#a77bc25333631f7933f890987eed9f577":[9,9,1,2,5,0],
 "group__math__algebra__double.html#a7900fc423e0731a60ec3b3a502cef75a":[9,9,1,2,6,2],
 "group__math__algebra__double.html#affadcf01db2266a4f51b772f6dde199d":[9,9,1,2,0,1],
 "group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d":[12,0,1,0,4,3,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d":[12,0,1,0,4,5,52],
 "group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d":[12,0,1,0,4,6,134],
 "group__math__algebra__float.html#ga60e53f8c14ae04aa5587f84f6eabbd86":[9,9,1,0,87],
-"group__math__algebra__float.html#ga60e53f8c14ae04aa5587f84f6eabbd86":[12,0,1,0,4,6,80],
-"group__math__algebra__float.html#ga617f13c7ecb041b375c76d14a2f8221e":[9,9,1,0,106],
-"group__math__algebra__float.html#ga617f13c7ecb041b375c76d14a2f8221e":[12,0,1,0,4,5,22],
-"group__math__algebra__float.html#ga617f13c7ecb041b375c76d14a2f8221e":[12,0,1,0,4,6,99],
-"group__math__algebra__float.html#ga643c5c972d01cc3d86d88b3fc23f55f3":[9,9,1,0,103],
-"group__math__algebra__float.html#ga643c5c972d01cc3d86d88b3fc23f55f3":[12,0,1,0,4,5,20],
-"group__math__algebra__float.html#ga643c5c972d01cc3d86d88b3fc23f55f3":[12,0,1,0,4,6,96],
-"group__math__algebra__float.html#ga66b3ab30f1332874326ed93969e496e0":[9,9,1,0,64],
-"group__math__algebra__float.html#ga66b3ab30f1332874326ed93969e496e0":[12,0,1,0,4,6,57]
+"group__math__algebra__float.html#ga60e53f8c14ae04aa5587f84f6eabbd86":[12,0,1,0,4,6,80]
 };

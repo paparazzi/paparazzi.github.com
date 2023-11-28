@@ -1,5 +1,13 @@
 var NAVTREEINDEX43 =
 {
+"cube_2orange_2board_8h.html#ad20a0f56de0d7124dd77defff219421a":[12,0,1,0,1,5,0,0,125],
+"cube_2orange_2board_8h.html#ad3054a8829149ddf9015a367c99b5959":[12,0,1,0,1,5,0,0,213],
+"cube_2orange_2board_8h.html#ad3b0de8eaa40c7afca2e3f9a7edea0dd":[12,0,1,0,1,5,0,0,55],
+"cube_2orange_2board_8h.html#ad3d34e20a2db918dfe3305521cb2c818":[12,0,1,0,1,5,0,0,61],
+"cube_2orange_2board_8h.html#ad48e3306c2d97d45e6b536b6b21c96d4":[12,0,1,0,1,5,0,0,5],
+"cube_2orange_2board_8h.html#ad4b68eeaf41f00b4f0e99488165d22db":[12,0,1,0,1,5,0,0,415],
+"cube_2orange_2board_8h.html#ad4b9998deb39ea401100fa3f6a996290":[12,0,1,0,1,5,0,0,47],
+"cube_2orange_2board_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,5,0,0,19],
 "cube_2orange_2board_8h.html#ad66f72305397b24d3732a5f47a89ed55":[12,0,1,0,1,5,0,0,463],
 "cube_2orange_2board_8h.html#ad693e52cced23e94bcd1241514098d97":[12,0,1,0,1,5,0,0,182],
 "cube_2orange_2board_8h.html#ad76674aa4b3a513d193ef12a7a9c3e0a":[12,0,1,0,1,5,0,0,196],
@@ -241,13 +249,5 @@ var NAVTREEINDEX43 =
 "cube_2orange_2mcuconf_8h.html#a7570f6862f2950a7fee73f18bb9358d5":[12,0,1,0,1,5,0,1,272],
 "cube_2orange_2mcuconf_8h.html#a7607417f985da8e638c7871afc61003a":[12,0,1,0,1,5,0,1,152],
 "cube_2orange_2mcuconf_8h.html#a78c57d64b293ef3b265175e2a2f9004a":[12,0,1,0,1,5,0,1,211],
-"cube_2orange_2mcuconf_8h.html#a794aeed07a5924823401511aad8297fa":[12,0,1,0,1,5,0,1,194],
-"cube_2orange_2mcuconf_8h.html#a7a2aae071a6b7909bee7a1a7b1595b98":[12,0,1,0,1,5,0,1,202],
-"cube_2orange_2mcuconf_8h.html#a7aa7622cf407262b87afcc9b100945d1":[12,0,1,0,1,5,0,1,126],
-"cube_2orange_2mcuconf_8h.html#a7b366b1eb660467c7ef9667705ad8308":[12,0,1,0,1,5,0,1,320],
-"cube_2orange_2mcuconf_8h.html#a7c6ca71505c504cbd011d772af8cf665":[12,0,1,0,1,5,0,1,330],
-"cube_2orange_2mcuconf_8h.html#a7e58662e757ecd7f20e8135c82393312":[12,0,1,0,1,5,0,1,313],
-"cube_2orange_2mcuconf_8h.html#a7ee9bb401607f9db475e93f466b29e91":[12,0,1,0,1,5,0,1,38],
-"cube_2orange_2mcuconf_8h.html#a7f657adda8b7f6aa955f0806a29b0b9d":[12,0,1,0,1,5,0,1,243],
-"cube_2orange_2mcuconf_8h.html#a7fafd3288056818d61ea1f1bcade3e76":[12,0,1,0,1,5,0,1,224]
+"cube_2orange_2mcuconf_8h.html#a794aeed07a5924823401511aad8297fa":[12,0,1,0,1,5,0,1,194]
 };

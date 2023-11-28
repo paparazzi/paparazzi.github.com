@@ -1,5 +1,13 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#IMCU_TELEMETRY":[2,4,14],
+"paparazzi_messages.html#IMU_ACCEL":[2,0,183],
+"paparazzi_messages.html#IMU_ACCEL_RAW":[2,0,185],
+"paparazzi_messages.html#IMU_ACCEL_SCALED":[2,0,126],
+"paparazzi_messages.html#IMU_GYRO":[2,0,181],
+"paparazzi_messages.html#IMU_GYRO_LP":[2,0,190],
+"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,184],
+"paparazzi_messages.html#IMU_GYRO_SCALED":[2,0,125],
 "paparazzi_messages.html#IMU_HEATER":[2,0,129],
 "paparazzi_messages.html#IMU_MAG":[2,0,182],
 "paparazzi_messages.html#IMU_MAG_CURRENT_CALIBRATION":[2,0,188],
@@ -241,13 +249,5 @@ var NAVTREEINDEX170 =
 "pca9685__i2c_8c.html#a073f702e96ce802d53cf26d5b403e374":[12,0,1,0,6,52,0,35],
 "pca9685__i2c_8c.html#a075d5e490e61c897fc498004b608b774":[12,0,1,0,6,52,0,93],
 "pca9685__i2c_8c.html#a086e6bc505e2748ba7febbfc814702d1":[12,0,1,0,6,52,0,28],
-"pca9685__i2c_8c.html#a092ed5612f0030ba5d5f6580cebe13c7":[12,0,1,0,6,52,0,65],
-"pca9685__i2c_8c.html#a09c1f9986c29a82600bcc8ab8e1b8111":[12,0,1,0,6,52,0,4],
-"pca9685__i2c_8c.html#a09fbd545b050a478f2d5712dac25a231":[12,0,1,0,6,52,0,62],
-"pca9685__i2c_8c.html#a0c621a58b301c1c7065216352ef50122":[12,0,1,0,6,52,0,18],
-"pca9685__i2c_8c.html#a12e03a7463abfd880fae4a91b784db95":[12,0,1,0,6,52,0,13],
-"pca9685__i2c_8c.html#a132a70f7130ed80aa1e1ea583dd96c95":[12,0,1,0,6,52,0,8],
-"pca9685__i2c_8c.html#a14e0203b6c952fcfd6a9b082874b6813":[12,0,1,0,6,52,0,89],
-"pca9685__i2c_8c.html#a187cf0a5c05c0cfd4f51aacca91bd9f0":[12,0,1,0,6,52,0,73],
-"pca9685__i2c_8c.html#a1cbd6845474a88781e8458ce4acb64c3":[12,0,1,0,6,52,0,23]
+"pca9685__i2c_8c.html#a092ed5612f0030ba5d5f6580cebe13c7":[12,0,1,0,6,52,0,65]
 };

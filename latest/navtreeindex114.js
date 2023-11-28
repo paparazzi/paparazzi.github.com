@@ -1,5 +1,13 @@
 var NAVTREEINDEX114 =
 {
+"lsm303d__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,74,0],
+"lsm303d__spi_8c.html#aed687119cc5a219108a4ddbcacc70380":[12,0,1,0,7,74,3],
+"lsm303d__spi_8c_source.html":[12,0,1,0,7,74],
+"lsm303d__spi_8h.html":[12,0,1,0,7,75],
+"lsm303d__spi_8h.html#a0d41ccb49235645e81eeec35393565aa":[12,0,1,0,7,75,3],
+"lsm303d__spi_8h.html#a11c3438a86fae5ef276c35d35166324b":[12,0,1,0,7,75,0,9],
+"lsm303d__spi_8h.html#a156507f0889e5fdab594d71e7c485027":[12,0,1,0,7,75,4],
+"lsm303d__spi_8h.html#a1964fbd63e0704237a0b49a4bdae158e":[12,0,1,0,7,75,0,7],
 "lsm303d__spi_8h.html#a1d07b5d2352114945362a660d7bb13a9":[12,0,1,0,7,75,0,5],
 "lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,1,1],
 "lsm303d__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998":[12,0,1,0,7,75,2,1],
@@ -11,8 +19,8 @@ var NAVTREEINDEX114 =
 "lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8":[12,0,1,0,7,75,0,2],
 "lsm303d__spi_8h.html#a8b2bbc4ff09e5ad5f1ac172c7395d5ca":[12,0,1,0,7,75,0,10],
 "lsm303d__spi_8h.html#aa02c102c0cd7e116f0f83be3d8483bca":[12,0,1,0,7,75,0,3],
-"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,1,0],
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab4e49df07264189a6344fe0772d14f9f":[12,0,1,0,7,75,7],
 "lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[12,0,1,0,7,75,0,11],
 "lsm303d__spi_8h.html#ad77c410e06c48f72b79b8767e56763af":[12,0,1,0,7,75,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX114 =
 "lsm6ds33__i2c_8h.html#ab535c69055846e6f741aab8112593130":[12,0,1,0,7,82,5],
 "lsm6ds33__i2c_8h.html#abdb25f3a5c149b15a0ed792d496a6999":[12,0,1,0,7,82,3],
 "lsm6ds33__i2c_8h.html#aca01e794d44828f26da9a7fd01efc4fe":[12,0,1,0,7,82,0,4],
-"lsm6ds33__i2c_8h.html#aed5df6a7c285b20aa66d2a7214dc51d5":[12,0,1,0,7,82,0,3],
-"lsm6ds33__i2c_8h.html#afb1df6b37f029f923653f966e5ebf951":[12,0,1,0,7,82,0,7],
-"lsm6ds33__i2c_8h.html#structLsm6__I2c":[12,0,1,0,7,82,0],
-"lsm6ds33__i2c_8h.html#unionLsm6__I2c_8data__g":[12,0,1,0,7,82,2],
-"lsm6ds33__i2c_8h.html#unionLsm6__I2c_8data__xl":[12,0,1,0,7,82,1],
-"lsm6ds33__i2c_8h_source.html":[12,0,1,0,7,82],
-"lsm6ds33__regs_8h.html":[12,0,1,0,7,83],
-"lsm6ds33__regs_8h.html#a001c4a079ec58f94bc698c8a341d80da":[12,0,1,0,7,83,15],
-"lsm6ds33__regs_8h.html#a0021f257221dacd226fdfc4b35a12709":[12,0,1,0,7,83,41]
+"lsm6ds33__i2c_8h.html#aed5df6a7c285b20aa66d2a7214dc51d5":[12,0,1,0,7,82,0,3]
 };

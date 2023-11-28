@@ -1,5 +1,13 @@
 var NAVTREEINDEX135 =
 {
+"module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,399,2],
+"module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,399,0],
+"module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,399,2,0],
+"module__mag_ist8310.html":[1,400],
+"module__mag_ist8310.html#configuration__mag_ist8310":[1,400,1],
+"module__mag_ist8310.html#functions__mag_ist8310":[1,400,2],
+"module__mag_ist8310.html#module_load_example__mag_ist8310":[1,400,0],
+"module__mag_ist8310.html#module_xml__mag_ist8310":[1,400,2,0],
 "module__mag_lis3mdl.html":[1,401],
 "module__mag_lis3mdl.html#configuration__mag_lis3mdl":[1,401,1],
 "module__mag_lis3mdl.html#functions__mag_lis3mdl":[1,401,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX135 =
 "module__oneloop_andi.html#module_xml__oneloop_andi":[1,475,1,0],
 "module__opa_controller.html":[1,43],
 "module__opa_controller.html#functions__opa_controller":[1,43,1],
-"module__opa_controller.html#module_load_example__opa_controller":[1,43,0],
-"module__opa_controller.html#module_xml__opa_controller":[1,43,1,0],
-"module__openlog.html":[1,259],
-"module__openlog.html#functions__openlog":[1,259,1],
-"module__openlog.html#module_load_example__openlog":[1,259,0],
-"module__openlog.html#module_xml__openlog":[1,259,1,0],
-"module__optical_flow_hover.html":[1,96],
-"module__optical_flow_hover.html#functions__optical_flow_hover":[1,96,1],
-"module__optical_flow_hover.html#module_load_example__optical_flow_hover":[1,96,0]
+"module__opa_controller.html#module_load_example__opa_controller":[1,43,0]
 };

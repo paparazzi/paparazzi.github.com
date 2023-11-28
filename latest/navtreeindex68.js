@@ -1,5 +1,13 @@
 var NAVTREEINDEX68 =
 {
+"group__math__algebra__generic.html#ga33b54941166ca05f8a51266181a59702":[12,0,1,0,4,2,90],
+"group__math__algebra__generic.html#ga33b54941166ca05f8a51266181a59702":[9,9,1,1,90],
+"group__math__algebra__generic.html#ga347df966f27dace81b154c97456482dd":[12,0,1,0,4,2,23],
+"group__math__algebra__generic.html#ga347df966f27dace81b154c97456482dd":[9,9,1,1,23],
+"group__math__algebra__generic.html#ga387c18418c58cec896203d82d019e05f":[9,9,1,1,45],
+"group__math__algebra__generic.html#ga387c18418c58cec896203d82d019e05f":[12,0,1,0,4,2,45],
+"group__math__algebra__generic.html#ga3be0e4a76ae654a7b0afa0f4c22a0c55":[9,9,1,1,39],
+"group__math__algebra__generic.html#ga3be0e4a76ae654a7b0afa0f4c22a0c55":[12,0,1,0,4,2,39],
 "group__math__algebra__generic.html#ga3e1d5e693e55ff1f5f34ed1079dca76e":[12,0,1,0,4,2,93],
 "group__math__algebra__generic.html#ga3e1d5e693e55ff1f5f34ed1079dca76e":[9,9,1,1,93],
 "group__math__algebra__generic.html#ga3f3302835b5631d50ea560180ebf7e59":[12,0,1,0,4,2,68],
@@ -241,13 +249,5 @@ var NAVTREEINDEX68 =
 "group__math__algebra__int.html#ga1d20e839a6dc485ee9ce841a402e8d45":[12,0,1,0,4,8,47],
 "group__math__algebra__int.html#ga1d20e839a6dc485ee9ce841a402e8d45":[9,9,1,3,64],
 "group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef":[12,0,1,0,4,8,113],
-"group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef":[9,9,1,3,130],
-"group__math__algebra__int.html#ga1ec0802a57d49a24545916346953dbcb":[12,0,1,0,4,8,27],
-"group__math__algebra__int.html#ga1ec0802a57d49a24545916346953dbcb":[9,9,1,3,44],
-"group__math__algebra__int.html#ga20697efff6a79e06e159d8b5ddf0b38f":[12,0,1,0,4,8,90],
-"group__math__algebra__int.html#ga20697efff6a79e06e159d8b5ddf0b38f":[9,9,1,3,107],
-"group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d":[12,0,1,0,4,8,18],
-"group__math__algebra__int.html#ga20c84fd80263a96be1cb38db0318305d":[9,9,1,3,35],
-"group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570":[12,0,1,0,4,8,52],
-"group__math__algebra__int.html#ga24baf88f9a3ca8016fdf5bc40b4f8570":[9,9,1,3,69]
+"group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef":[9,9,1,3,130]
 };

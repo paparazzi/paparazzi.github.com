@@ -1,5 +1,13 @@
 var NAVTREEINDEX133 =
 {
+"module__guidance_oneloop.html#module_xml__guidance_oneloop":[1,171,0,0],
+"module__guidance_pid_rotorcraft.html":[1,172],
+"module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft":[1,172,1],
+"module__guidance_pid_rotorcraft.html#functions__guidance_pid_rotorcraft":[1,172,2],
+"module__guidance_pid_rotorcraft.html#module_load_example__guidance_pid_rotorcraft":[1,172,0],
+"module__guidance_pid_rotorcraft.html#module_xml__guidance_pid_rotorcraft":[1,172,2,0],
+"module__guidance_rotorcraft.html":[1,173],
+"module__guidance_rotorcraft.html#functions__guidance_rotorcraft":[1,173,1],
 "module__guidance_rotorcraft.html#module_load_example__guidance_rotorcraft":[1,173,0],
 "module__guidance_rotorcraft.html#module_xml__guidance_rotorcraft":[1,173,1,0],
 "module__guidance_rover.html":[1,174],
@@ -241,13 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_openpilot_revo_nano.html#module_xml__imu_openpilot_revo_nano":[1,213,2,0],
 "module__imu_px4fmu_v1_7.html":[1,214],
 "module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,214,1],
-"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,214,2],
-"module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7":[1,214,0],
-"module__imu_px4fmu_v1_7.html#module_xml__imu_px4fmu_v1":[1,214,2,0],
-"module__imu_px4fmu_v2_4.html":[1,215],
-"module__imu_px4fmu_v2_4.html#configuration__imu_px4fmu_v2_4":[1,215,1],
-"module__imu_px4fmu_v2_4.html#functions__imu_px4fmu_v2_4":[1,215,2],
-"module__imu_px4fmu_v2_4.html#module_load_example__imu_px4fmu_v2_4":[1,215,0],
-"module__imu_px4fmu_v2_4.html#module_xml__imu_px4fmu_v2":[1,215,2,0],
-"module__imu_quality_assessment.html":[1,38]
+"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,214,2]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX169 =
 {
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,50,0,5,8],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3aa3a9adacc85c180950255762543c88ac":[12,0,1,0,6,50,2,3,8],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,50,2,3,10],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,43,0,3,10],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3abb87c653f25e38f517aabf9d64c5aaf1":[12,0,1,0,6,50,0,5,10],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,43,0,3,9],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,50,0,5,9],
+"orange__avoider__guided_8c.html#ad710ff56d81a195834d8503cc2a7aab3ad5e385df0458ed8d310d1f8cc0f5e22b":[12,0,1,0,6,50,2,3,9],
 "orange__avoider__guided_8c.html#ae051cd0ad23cb5636414bd42eb5e1dda":[12,0,1,0,6,50,2,19],
 "orange__avoider__guided_8c.html#ae8b3ef53a7a869aec22a2a48a90e69cb":[12,0,1,0,6,50,2,7],
 "orange__avoider__guided_8c.html#aee52c6162d4b084290ed778856a1ded4":[12,0,1,0,6,50,2,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX169 =
 "paparazzi_messages.html#IMCU_REMOTE_GPS":[2,4,8],
 "paparazzi_messages.html#IMCU_REMOTE_GROUND":[2,4,7],
 "paparazzi_messages.html#IMCU_REMOTE_MAG":[2,4,4],
-"paparazzi_messages.html#IMCU_SPEKTRUM_SOFT_BIND":[2,4,2],
-"paparazzi_messages.html#IMCU_TELEMETRY":[2,4,14],
-"paparazzi_messages.html#IMU_ACCEL":[2,0,183],
-"paparazzi_messages.html#IMU_ACCEL_RAW":[2,0,185],
-"paparazzi_messages.html#IMU_ACCEL_SCALED":[2,0,126],
-"paparazzi_messages.html#IMU_GYRO":[2,0,181],
-"paparazzi_messages.html#IMU_GYRO_LP":[2,0,190],
-"paparazzi_messages.html#IMU_GYRO_RAW":[2,0,184],
-"paparazzi_messages.html#IMU_GYRO_SCALED":[2,0,125]
+"paparazzi_messages.html#IMCU_SPEKTRUM_SOFT_BIND":[2,4,2]
 };

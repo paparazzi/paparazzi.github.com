@@ -1,5 +1,13 @@
 var NAVTREEINDEX39 =
 {
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662":[12,0,1,0,1,4,0,0,2,151],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[12,0,1,0,1,4,0,0,2,247],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4331268b38458a2ad2cb4ff49021e371":[12,0,1,0,1,4,0,0,2,109],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a43838b989448ecf9013b0e07e8bba565":[12,0,1,0,1,4,0,0,2,66],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a44a9902eb911602a3e113a64907cc051":[12,0,1,0,1,4,0,0,2,27],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a44c0e5a4a20e05dbb598a408cf1ebee7":[12,0,1,0,1,4,0,0,2,41],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a45424a47f5a33df11692d9763b72aa48":[12,0,1,0,1,4,0,0,2,6],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a47d90eaca23f3eea99d74d1bb3539541":[12,0,1,0,1,4,0,0,2,205],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a47f41637b35e1b3176029cd1ea95e481":[12,0,1,0,1,4,0,0,2,9],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4d41fed5b7b1c735e1ea5a26970dd564":[12,0,1,0,1,4,0,0,2,90],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4d7890ef7b4b607b90eb9eafae504f0d":[12,0,1,0,1,4,0,0,2,211],
@@ -241,13 +249,5 @@ var NAVTREEINDEX39 =
 "crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69],
 "crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,4,0,0,1,109],
 "crazyflie_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0":[12,0,1,0,1,4,0,0,1,9],
-"crazyflie_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,4,0,0,1,58],
-"crazyflie_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,4,0,0,1,50],
-"crazyflie_8h.html#a9914c116b1e93a66882b48999c8efcd9":[12,0,1,0,1,4,0,0,1,7],
-"crazyflie_8h.html#a9b407aa30f1e3cf5bda8e8433315b7c4":[12,0,1,0,1,4,0,0,1,11],
-"crazyflie_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,4,0,0,1,106],
-"crazyflie_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa":[12,0,1,0,1,4,0,0,1,86],
-"crazyflie_8h.html#aa5ea83d926a661df064db0e68bc60690":[12,0,1,0,1,4,0,0,1,29],
-"crazyflie_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c":[12,0,1,0,1,4,0,0,1,26],
-"crazyflie_8h.html#aa6c753c425e10973deb0ae6a3cba0df3":[12,0,1,0,1,4,0,0,1,12]
+"crazyflie_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,4,0,0,1,58]
 };

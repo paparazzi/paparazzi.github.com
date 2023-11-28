@@ -168,5 +168,9 @@ var chimera_8h =
     [ "USE_UART7_RX", "chimera_8h.html#a526d35c486f9bbecc076fb390660ba3c", null ],
     [ "USE_UART7_TX", "chimera_8h.html#adb7fac035d0574d7c19ed7a57d6100c1", null ],
     [ "VBAT_R1", "chimera_8h.html#ac03d872fb273de39fa9ebbf6d702a668", null ],
-    [ "VBAT_R2", "chimera_8h.html#a563096bba11519983f91f64d70b14e47", null ]
+    [ "VBAT_R2", "chimera_8h.html#a563096bba11519983f91f64d70b14e47", null ],
+    [ "WS2812D1_AF", "chimera_8h.html#afd8cee2fb7cfce1b91317be24260b39c", null ],
+    [ "WS2812D1_CFG_DEF", "chimera_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5", null ],
+    [ "WS2812D1_GPIO", "chimera_8h.html#a17e208399ce330289bcaef37bd2e9b08", null ],
+    [ "WS2812D1_PIN", "chimera_8h.html#aec52babc287e1d061dec870b9f43b083", null ]
 ];

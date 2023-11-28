@@ -1,5 +1,13 @@
 var NAVTREEINDEX130 =
 {
+"module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,27,1,0],
+"module__ahrs_float_cmpl_rmat.html":[1,28],
+"module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,28,1],
+"module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat":[1,28,0],
+"module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,28,1,0],
+"module__ahrs_float_dcm.html":[1,29],
+"module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,29,1],
+"module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm":[1,29,0],
 "module__ahrs_float_dcm.html#module_xml__ahrs_float_dcm":[1,29,1,0],
 "module__ahrs_float_invariant.html":[1,30],
 "module__ahrs_float_invariant.html#configuration__ahrs_float_invariant":[1,30,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX130 =
 "module__cam_segment.html":[1,47],
 "module__cam_segment.html#functions__cam_segment":[1,47,1],
 "module__cam_segment.html#module_load_example__cam_segment":[1,47,0],
-"module__cam_segment.html#module_xml__cam_segment":[1,47,1,0],
-"module__cf_deck_multi_ranger.html":[1,363],
-"module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger":[1,363,1],
-"module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger":[1,363,2],
-"module__cf_deck_multi_ranger.html#module_load_example__cf_deck_multi_ranger":[1,363,0],
-"module__cf_deck_multi_ranger.html#module_xml__cf_deck_multi_ranger":[1,363,2,0],
-"module__charge_sens.html":[1,271],
-"module__charge_sens.html#functions__charge_sens":[1,271,1],
-"module__charge_sens.html#module_load_example__charge_sens":[1,271,0]
+"module__cam_segment.html#module_xml__cam_segment":[1,47,1,0]
 };
