@@ -16,6 +16,7 @@ var stabilization__indi__simple_8h =
       [ "u_dd", "stabilization__indi__simple_8h.html#a1e7b9b7c29cfe870a3fee11237a1bb01", null ]
     ] ],
     [ "IndiVariables", "stabilization__indi__simple_8h.html#structIndiVariables", [
+      [ "act_dyn", "stabilization__indi__simple_8h.html#a1ef045183b6d9118e27c246004f24207", null ],
       [ "adaptive", "stabilization__indi__simple_8h.html#ab67e9db78639b858f3605e0c23ee2808", null ],
       [ "angular_accel_ref", "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342", null ],
       [ "attitude_max_yaw_rate", "stabilization__indi__simple_8h.html#aded0520120adfd64d960796a458cb38b", null ],

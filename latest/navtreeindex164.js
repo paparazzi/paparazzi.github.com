@@ -1,8 +1,10 @@
 var NAVTREEINDEX164 =
 {
+"oneloop__andi_8h.html#structOneloopStabilizationRef":[12,0,1,0,3,2,1,1,3],
+"oneloop__andi_8h.html#structOneloopStabilizationState":[12,0,1,0,3,2,1,1,4],
 "oneloop__andi_8h.html#structPolePlacement":[12,0,1,0,3,2,1,1,6],
-"oneloop__andi_8h.html#structguidance__indi__hybrid__params":[12,0,1,0,3,2,1,1,0],
 "oneloop__andi_8h.html#structguidance__indi__hybrid__params":[12,0,1,0,3,2,0,11,0],
+"oneloop__andi_8h.html#structguidance__indi__hybrid__params":[12,0,1,0,3,2,1,1,0],
 "oneloop__andi_8h_source.html":[12,0,1,0,3,2,1,1],
 "opa__ap_2baro__board_8h.html":[12,0,1,0,1,18,0],
 "opa__ap_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff":[12,0,1,0,1,18,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX164 =
 "opa__ftd__1_80_8h.html#a99df90574479e3cd4cf0ea51c63e1595":[12,0,1,0,1,54,150],
 "opa__ftd__1_80_8h.html#a9c90f2615bc6566f45e326285819f6d4":[12,0,1,0,1,54,95],
 "opa__ftd__1_80_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,54,183],
-"opa__ftd__1_80_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d":[12,0,1,0,1,54,83],
-"opa__ftd__1_80_8h.html#a9e5d073e545986232b0f4a999f179e0e":[12,0,1,0,1,54,43],
-"opa__ftd__1_80_8h.html#a9edea038e84fe10c9a71436253cc8ea1":[12,0,1,0,1,54,126]
+"opa__ftd__1_80_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d":[12,0,1,0,1,54,83]
 };

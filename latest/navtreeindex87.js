@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"image_8c.html":[12,0,1,0,6,12,1,3,7],
+"image_8c.html#a02932625f9aeb66da70c89a2f2d3a052":[12,0,1,0,6,12,1,3,7,4],
 "image_8c.html#a038faec3786d8baa2e38c7672129e276":[12,0,1,0,6,12,1,3,7,25],
 "image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee":[12,0,1,0,6,12,1,3,7,20],
 "image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5":[12,0,1,0,6,12,1,3,7,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "imu__apogee_8h.html#afff4a758f055126720cafb4f1be1c956":[12,0,1,0,1,0,4,1],
 "imu__apogee_8h.html#structImuApogee":[12,0,1,0,1,0,4,0],
 "imu__apogee_8h_source.html":[12,0,1,0,1,0,4],
-"imu__ardrone2_8c.html":[12,0,1,0,6,36,4],
-"imu__ardrone2_8c.html#a64ed917b58febc5528b575b56549c9a4":[12,0,1,0,6,36,4,0],
-"imu__ardrone2_8c_source.html":[12,0,1,0,6,36,4]
+"imu__ardrone2_8c.html":[12,0,1,0,6,36,4]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__cam_segment.html#module_load_example__cam_segment":[1,47,0],
+"module__cam_segment.html#module_xml__cam_segment":[1,47,1,0],
 "module__cf_deck_multi_ranger.html":[1,363],
 "module__cf_deck_multi_ranger.html#configuration__cf_deck_multi_ranger":[1,363,1],
 "module__cf_deck_multi_ranger.html#functions__cf_deck_multi_ranger":[1,363,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__eff_scheduling_nederdrone.html#functions__eff_scheduling_nederdrone":[1,91,1],
 "module__eff_scheduling_nederdrone.html#module_load_example__eff_scheduling_nederdrone":[1,91,0],
 "module__eff_scheduling_nederdrone.html#module_xml__eff_scheduling_nederdrone":[1,91,1,0],
-"module__eff_scheduling_rot_wing.html":[1,92],
-"module__eff_scheduling_rot_wing.html#configuration__eff_scheduling_rot_wing":[1,92,1],
-"module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing":[1,92,2]
+"module__eff_scheduling_rot_wing.html":[1,92]
 };

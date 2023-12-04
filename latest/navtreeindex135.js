@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__mag_hmc58xx.html":[1,399],
+"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,399,1],
 "module__mag_hmc58xx.html#functions__mag_hmc58xx":[1,399,2],
 "module__mag_hmc58xx.html#module_load_example__mag_hmc58xx":[1,399,0],
 "module__mag_hmc58xx.html#module_xml__mag_hmc58xx":[1,399,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__oneloop_andi.html#functions__oneloop_andi":[1,475,1],
 "module__oneloop_andi.html#module_load_example__oneloop_andi":[1,475,0],
 "module__oneloop_andi.html#module_xml__oneloop_andi":[1,475,1,0],
-"module__opa_controller.html":[1,43],
-"module__opa_controller.html#functions__opa_controller":[1,43,1],
-"module__opa_controller.html#module_load_example__opa_controller":[1,43,0]
+"module__opa_controller.html":[1,43]
 };

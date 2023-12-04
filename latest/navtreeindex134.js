@@ -1,5 +1,7 @@
 var NAVTREEINDEX134 =
 {
+"module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,214,1],
+"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,214,2],
 "module__imu_px4fmu_v1_7.html#module_load_example__imu_px4fmu_v1_7":[1,214,0],
 "module__imu_px4fmu_v1_7.html#module_xml__imu_px4fmu_v1":[1,214,2,0],
 "module__imu_px4fmu_v2_4.html":[1,215],
@@ -247,7 +249,5 @@ var NAVTREEINDEX134 =
 "module__mag_hmc5843.html#configuration__mag_hmc5843":[1,398,1],
 "module__mag_hmc5843.html#functions__mag_hmc5843":[1,398,2],
 "module__mag_hmc5843.html#module_load_example__mag_hmc5843":[1,398,0],
-"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,398,2,0],
-"module__mag_hmc58xx.html":[1,399],
-"module__mag_hmc58xx.html#configuration__mag_hmc58xx":[1,399,1]
+"module__mag_hmc5843.html#module_xml__mag_hmc5843":[1,398,2,0]
 };

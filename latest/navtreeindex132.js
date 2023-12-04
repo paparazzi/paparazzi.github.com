@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__eff_scheduling_rot_wing.html#configuration__eff_scheduling_rot_wing":[1,92,1],
+"module__eff_scheduling_rot_wing.html#functions__eff_scheduling_rot_wing":[1,92,2],
 "module__eff_scheduling_rot_wing.html#module_load_example__eff_scheduling_rot_wing":[1,92,0],
 "module__eff_scheduling_rot_wing.html#module_xml__eff_scheduling_rot_wing":[1,92,2,0],
 "module__ekf_aw.html":[1,275],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__guidance_indi_hybrid_quadplane.html#module_xml__guidance_indi_hybrid_quadplane":[1,169,1,0],
 "module__guidance_indi_hybrid_tailsitter.html":[1,170],
 "module__guidance_indi_hybrid_tailsitter.html#module_load_example__guidance_indi_hybrid_tailsitter":[1,170,0],
-"module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter":[1,170,0,0],
-"module__guidance_oneloop.html":[1,171],
-"module__guidance_oneloop.html#module_load_example__guidance_oneloop":[1,171,0]
+"module__guidance_indi_hybrid_tailsitter.html#module_xml__guidance_indi_hybrid_tailsitter":[1,170,0,0]
 };

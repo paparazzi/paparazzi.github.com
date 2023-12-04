@@ -1,5 +1,7 @@
 var NAVTREEINDEX157 =
 {
+"nps__radio__control__joystick_8c.html#a22f787f80b4bd6f7e674be157cd4c783":[12,0,1,1,1,29,8],
+"nps__radio__control__joystick_8c.html#a49a62a16298d026e879ec98d1edc6cbc":[12,0,1,1,1,29,7],
 "nps__radio__control__joystick_8c.html#a4edb9ffb2b6f923f55868c0329158058":[12,0,1,1,1,29,11],
 "nps__radio__control__joystick_8c.html#a6d3b12d855fc33982d80664b6ffbd6d1":[12,0,1,1,1,29,3],
 "nps__radio__control__joystick_8c.html#a79686e7b7826fa6976900c2d8fdd5a57":[12,0,1,1,1,29,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX157 =
 "nps__sensors_8c.html#a6471e7a5ca66a4873c85a486cc894d69":[12,0,1,1,1,55,3],
 "nps__sensors_8c.html#a7d784592fe366c7f75569573b5736cda":[12,0,1,1,1,55,8],
 "nps__sensors_8c.html#a9f0d5924c701b7e2fc354376eb732153":[12,0,1,1,1,55,1],
-"nps__sensors_8c.html#ab2b1a34f57c46d5023b6b55c5b542138":[12,0,1,1,1,55,2],
-"nps__sensors_8c.html#ab784120436efbbdf3c1e9a2b9796e39e":[12,0,1,1,1,55,4],
-"nps__sensors_8c.html#acce77f76dcc7946ef7dfd9a522b47b63":[12,0,1,1,1,55,7]
+"nps__sensors_8c.html#ab2b1a34f57c46d5023b6b55c5b542138":[12,0,1,1,1,55,2]
 };

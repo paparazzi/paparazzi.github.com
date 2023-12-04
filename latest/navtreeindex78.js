@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"gvf_8c.html#a67ba061ae20dfd1706c123e9136ec175":[12,0,1,0,6,31,0,2,22],
+"gvf_8c.html#a685f52908809609c5eb79676d03cd69e":[12,0,1,0,6,31,0,2,15],
 "gvf_8c.html#a6baa1605862f58c8d23bb54b6487913e":[12,0,1,0,6,31,0,2,3],
 "gvf_8c.html#a72f82c6d1210fc15d2469c5afeaf1302":[12,0,1,0,6,31,0,2,0],
 "gvf_8c.html#a7a131ef55dab41432c867c190f721656":[12,0,1,0,6,31,0,2,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "gvf__parametric__2d__trefoil_8h_source.html":[12,0,1,0,6,31,1,0,3],
 "gvf__parametric__3d__ellipse_8c.html":[12,0,1,0,6,31,1,0,4],
 "gvf__parametric__3d__ellipse_8c.html#a09adefb842c66b6f9359dbfbba815bb1":[12,0,1,0,6,31,1,0,4,1],
-"gvf__parametric__3d__ellipse_8c.html#a844b560b5e054c01e8f52b15600dc8dc":[12,0,1,0,6,31,1,0,4,2],
-"gvf__parametric__3d__ellipse_8c.html#a8e6ded4f6b547948e3811803887cd279":[12,0,1,0,6,31,1,0,4,5],
-"gvf__parametric__3d__ellipse_8c.html#a8eb239b143e2c861f83c48d3ffa669c1":[12,0,1,0,6,31,1,0,4,0]
+"gvf__parametric__3d__ellipse_8c.html#a844b560b5e054c01e8f52b15600dc8dc":[12,0,1,0,6,31,1,0,4,2]
 };

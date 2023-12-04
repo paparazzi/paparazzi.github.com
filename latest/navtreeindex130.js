@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"module__ahrs_float_cmpl_quat.html#configuration__ahrs_float_cmpl_quat":[1,27,1],
+"module__ahrs_float_cmpl_quat.html#module_load_example__ahrs_float_cmpl_quat":[1,27,0],
 "module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,27,1,0],
 "module__ahrs_float_cmpl_rmat.html":[1,28],
 "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,28,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "module__cam_roll.html#module_load_example__cam_roll":[1,46,0],
 "module__cam_roll.html#module_xml__cam_roll":[1,46,1,0],
 "module__cam_segment.html":[1,47],
-"module__cam_segment.html#functions__cam_segment":[1,47,1],
-"module__cam_segment.html#module_load_example__cam_segment":[1,47,0],
-"module__cam_segment.html#module_xml__cam_segment":[1,47,1,0]
+"module__cam_segment.html#functions__cam_segment":[1,47,1]
 };

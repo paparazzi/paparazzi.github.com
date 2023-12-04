@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#IMCU_REMOTE_MAG":[2,4,4],
+"paparazzi_messages.html#IMCU_SPEKTRUM_SOFT_BIND":[2,4,2],
 "paparazzi_messages.html#IMCU_TELEMETRY":[2,4,14],
 "paparazzi_messages.html#IMU_ACCEL":[2,0,183],
 "paparazzi_messages.html#IMU_ACCEL_RAW":[2,0,185],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "pca9685__i2c_8c.html#a05a6650af60e867c9a9ed01a3481e4f0":[12,0,1,0,6,52,0,76],
 "pca9685__i2c_8c.html#a0687ada8d7315792f50681df996d3dcf":[12,0,1,0,6,52,0,53],
 "pca9685__i2c_8c.html#a073f702e96ce802d53cf26d5b403e374":[12,0,1,0,6,52,0,35],
-"pca9685__i2c_8c.html#a075d5e490e61c897fc498004b608b774":[12,0,1,0,6,52,0,93],
-"pca9685__i2c_8c.html#a086e6bc505e2748ba7febbfc814702d1":[12,0,1,0,6,52,0,28],
-"pca9685__i2c_8c.html#a092ed5612f0030ba5d5f6580cebe13c7":[12,0,1,0,6,52,0,65]
+"pca9685__i2c_8c.html#a075d5e490e61c897fc498004b608b774":[12,0,1,0,6,52,0,93]
 };

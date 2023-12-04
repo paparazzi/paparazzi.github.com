@@ -1,52 +1,52 @@
 <map id="guidance_h_module_run" name="guidance_h_module_run">
-<area shape="rect" id="node1" title="Main guidance loop." alt="" coords="5,1321,185,1347"/>
-<area shape="rect" id="node2" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="233,878,421,905"/>
-<area shape="rect" id="node47" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title=" " alt="" coords="247,1727,407,1768"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="501,5,640,47"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="501,711,640,752"/>
-<area shape="rect" id="node6" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="485,477,656,519"/>
-<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="739,507,896,534"/>
-<area shape="rect" id="node13" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="724,558,911,585"/>
-<area shape="rect" id="node14" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="491,645,650,687"/>
-<area shape="rect" id="node18" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="737,777,898,803"/>
-<area shape="rect" id="node19" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="736,827,899,854"/>
-<area shape="rect" id="node21" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="722,878,913,905"/>
-<area shape="rect" id="node22" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="510,979,631,1006"/>
-<area shape="rect" id="node23" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="512,1030,629,1057"/>
-<area shape="rect" id="node24" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="479,1081,663,1107"/>
-<area shape="rect" id="node25" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="499,1131,643,1158"/>
-<area shape="rect" id="node26" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="490,1182,651,1209"/>
-<area shape="rect" id="node27" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="497,1233,645,1259"/>
-<area shape="rect" id="node28" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="501,1283,640,1310"/>
-<area shape="rect" id="node29" href="$group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="507,1334,635,1361"/>
-<area shape="rect" id="node30" href="$group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="511,1385,630,1411"/>
-<area shape="rect" id="node31" href="$group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="508,1435,633,1462"/>
-<area shape="rect" id="node32" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="502,1537,639,1563"/>
-<area shape="rect" id="node35" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="720,1595,915,1622"/>
-<area shape="rect" id="node36" href="$pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="515,929,627,955"/>
-<area shape="rect" id="node37" href="$pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="763,1183,872,1210"/>
-<area shape="rect" id="node38" href="$rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="491,71,650,98"/>
-<area shape="rect" id="node39" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="504,1588,637,1629"/>
-<area shape="rect" id="node40" href="$group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int)." alt="" coords="495,122,646,149"/>
-<area shape="rect" id="node41" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="491,173,651,199"/>
-<area shape="rect" id="node42" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="491,223,650,250"/>
-<area shape="rect" id="node43" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="469,274,672,301"/>
-<area shape="rect" id="node44" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="469,325,672,351"/>
-<area shape="rect" id="node45" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="474,375,667,402"/>
-<area shape="rect" id="node46" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="473,426,669,453"/>
-<area shape="rect" id="node4" href="$attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title=" " alt="" coords="750,97,885,139"/>
-<area shape="rect" id="node7" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="740,355,895,382"/>
-<area shape="rect" id="node8" href="$group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="752,406,883,433"/>
-<area shape="rect" id="node9" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="737,457,897,483"/>
-<area shape="rect" id="node10" href="$group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates." alt="" coords="735,254,900,281"/>
-<area shape="rect" id="node12" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="738,305,897,331"/>
-<area shape="rect" id="node15" href="$attitude__ref__saturate__naive_8h.html#aa1855c3eb78fd1895bb5306acd70ba17" title=" " alt="" coords="726,609,909,651"/>
-<area shape="rect" id="node16" href="$group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="738,675,897,702"/>
-<area shape="rect" id="node17" href="$group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e" title="Quaternion derivative from rotational velocity." alt="" coords="735,726,899,753"/>
-<area shape="rect" id="node20" href="$group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="963,827,1095,854"/>
-<area shape="rect" id="node33" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="745,1490,890,1517"/>
-<area shape="rect" id="node34" href="$oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153" title="Error Controller Definition for 2rd order system." alt="" coords="785,1541,850,1567"/>
-<area shape="rect" id="node48" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="493,1705,648,1731"/>
-<area shape="rect" id="node49" href="$group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="738,1793,897,1819"/>
-<area shape="rect" id="node50" href="$stabilization__indi_8c.html#aac24f92be2dd7af42e3e7906a1324fe9" title=" " alt="" coords="497,1756,645,1797"/>
+<area shape="rect" id="node1" title="Main guidance loop." alt="" coords="5,1324,185,1351"/>
+<area shape="rect" id="node2" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="233,893,421,920"/>
+<area shape="rect" id="node47" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title=" " alt="" coords="247,1722,407,1763"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="501,478,640,519"/>
+<area shape="rect" id="node5" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="501,711,640,753"/>
+<area shape="rect" id="node6" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="485,543,656,585"/>
+<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="739,605,896,632"/>
+<area shape="rect" id="node13" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="724,656,911,683"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="491,777,650,818"/>
+<area shape="rect" id="node18" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="737,875,898,901"/>
+<area shape="rect" id="node19" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="736,925,899,952"/>
+<area shape="rect" id="node21" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="722,976,913,1003"/>
+<area shape="rect" id="node22" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="510,995,631,1021"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="512,1045,629,1072"/>
+<area shape="rect" id="node24" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="479,1096,663,1123"/>
+<area shape="rect" id="node25" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="499,1147,643,1173"/>
+<area shape="rect" id="node26" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="490,1197,651,1224"/>
+<area shape="rect" id="node27" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="497,1248,645,1275"/>
+<area shape="rect" id="node28" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="501,1299,640,1325"/>
+<area shape="rect" id="node29" href="$group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="507,1349,635,1376"/>
+<area shape="rect" id="node30" href="$group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="511,1400,630,1427"/>
+<area shape="rect" id="node31" href="$group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="508,1451,633,1477"/>
+<area shape="rect" id="node32" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="502,1501,639,1528"/>
+<area shape="rect" id="node35" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="720,1552,915,1579"/>
+<area shape="rect" id="node36" href="$pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="515,1603,627,1629"/>
+<area shape="rect" id="node37" href="$pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="763,1628,872,1655"/>
+<area shape="rect" id="node38" href="$rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="491,5,650,32"/>
+<area shape="rect" id="node39" href="$stabilization__indi_8h.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="504,57,637,98"/>
+<area shape="rect" id="node40" href="$group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int)." alt="" coords="495,123,646,149"/>
+<area shape="rect" id="node41" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="491,173,651,200"/>
+<area shape="rect" id="node42" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="491,224,650,251"/>
+<area shape="rect" id="node43" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="469,275,672,301"/>
+<area shape="rect" id="node44" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="469,325,672,352"/>
+<area shape="rect" id="node45" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="474,376,667,403"/>
+<area shape="rect" id="node46" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="473,427,669,453"/>
+<area shape="rect" id="node4" href="$attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title=" " alt="" coords="750,286,885,327"/>
+<area shape="rect" id="node7" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="740,555,895,581"/>
+<area shape="rect" id="node8" href="$group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions." alt="" coords="752,352,883,379"/>
+<area shape="rect" id="node9" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity." alt="" coords="737,403,897,429"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates." alt="" coords="735,453,900,480"/>
+<area shape="rect" id="node12" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="738,504,897,531"/>
+<area shape="rect" id="node15" href="$attitude__ref__saturate__naive_8h.html#aa1855c3eb78fd1895bb5306acd70ba17" title=" " alt="" coords="726,707,909,749"/>
+<area shape="rect" id="node16" href="$group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="738,773,897,800"/>
+<area shape="rect" id="node17" href="$group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e" title="Quaternion derivative from rotational velocity." alt="" coords="735,824,899,851"/>
+<area shape="rect" id="node20" href="$group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion." alt="" coords="963,925,1095,952"/>
+<area shape="rect" id="node33" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="745,1451,890,1477"/>
+<area shape="rect" id="node34" href="$oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153" title="Error Controller Definition for 2rd order system." alt="" coords="785,1501,850,1528"/>
+<area shape="rect" id="node48" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="493,1704,648,1731"/>
+<area shape="rect" id="node49" href="$group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="491,1755,650,1781"/>
+<area shape="rect" id="node50" href="$stabilization__indi_8h.html#aac24f92be2dd7af42e3e7906a1324fe9" title=" " alt="" coords="497,1806,645,1847"/>
 </map>

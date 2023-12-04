@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__guidance_oneloop.html":[1,171],
+"module__guidance_oneloop.html#module_load_example__guidance_oneloop":[1,171,0],
 "module__guidance_oneloop.html#module_xml__guidance_oneloop":[1,171,0,0],
 "module__guidance_pid_rotorcraft.html":[1,172],
 "module__guidance_pid_rotorcraft.html#configuration__guidance_pid_rotorcraft":[1,172,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_openpilot_revo_nano.html#functions__imu_openpilot_revo_nano":[1,213,2],
 "module__imu_openpilot_revo_nano.html#module_load_example__imu_openpilot_revo_nano":[1,213,0],
 "module__imu_openpilot_revo_nano.html#module_xml__imu_openpilot_revo_nano":[1,213,2,0],
-"module__imu_px4fmu_v1_7.html":[1,214],
-"module__imu_px4fmu_v1_7.html#configuration__imu_px4fmu_v1_7":[1,214,1],
-"module__imu_px4fmu_v1_7.html#functions__imu_px4fmu_v1_7":[1,214,2]
+"module__imu_px4fmu_v1_7.html":[1,214]
 };

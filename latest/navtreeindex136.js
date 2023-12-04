@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__opa_controller.html#functions__opa_controller":[1,43,1],
+"module__opa_controller.html#module_load_example__opa_controller":[1,43,0],
 "module__opa_controller.html#module_xml__opa_controller":[1,43,1,0],
 "module__openlog.html":[1,259],
 "module__openlog.html#functions__openlog":[1,259,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__sonar_pwm.html#module_xml__sonar_pwm":[1,415,2,0],
 "module__sonar_vl53l1x.html":[1,416],
 "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x":[1,416,1],
-"module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,416,2],
-"module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x":[1,416,0],
-"module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,416,2,0]
+"module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,416,2]
 };
