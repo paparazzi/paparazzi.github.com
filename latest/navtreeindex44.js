@@ -1,5 +1,13 @@
 var NAVTREEINDEX44 =
 {
+"cube_2orange_2mcuconf_8h.html#a727ede2f8095445f9f304f7c4ed83099":[12,0,1,0,1,5,0,1,18],
+"cube_2orange_2mcuconf_8h.html#a730e1cfbd99b7f3a0e6cdf03b224c9f4":[12,0,1,0,1,5,0,1,33],
+"cube_2orange_2mcuconf_8h.html#a73a198b443047d1c7f0c8a63814f10b4":[12,0,1,0,1,5,0,1,124],
+"cube_2orange_2mcuconf_8h.html#a742ec02fd96ff66ed1de33aef54f0707":[12,0,1,0,1,5,0,1,52],
+"cube_2orange_2mcuconf_8h.html#a7570f6862f2950a7fee73f18bb9358d5":[12,0,1,0,1,5,0,1,272],
+"cube_2orange_2mcuconf_8h.html#a7607417f985da8e638c7871afc61003a":[12,0,1,0,1,5,0,1,152],
+"cube_2orange_2mcuconf_8h.html#a78c57d64b293ef3b265175e2a2f9004a":[12,0,1,0,1,5,0,1,211],
+"cube_2orange_2mcuconf_8h.html#a794aeed07a5924823401511aad8297fa":[12,0,1,0,1,5,0,1,194],
 "cube_2orange_2mcuconf_8h.html#a7a2aae071a6b7909bee7a1a7b1595b98":[12,0,1,0,1,5,0,1,202],
 "cube_2orange_2mcuconf_8h.html#a7aa7622cf407262b87afcc9b100945d1":[12,0,1,0,1,5,0,1,126],
 "cube_2orange_2mcuconf_8h.html#a7b366b1eb660467c7ef9667705ad8308":[12,0,1,0,1,5,0,1,320],
@@ -241,13 +249,5 @@ var NAVTREEINDEX44 =
 "cv__blob__locator_8h.html":[12,0,1,0,6,12,11],
 "cv__blob__locator_8h.html#a028a785eb4e92e36a242baac2c592b6b":[12,0,1,0,6,12,11,12],
 "cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d":[12,0,1,0,6,12,11,5],
-"cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29":[12,0,1,0,6,12,11,7],
-"cv__blob__locator_8h.html#a097367403a1933e2662a880988d3d21e":[12,0,1,0,6,12,11,21],
-"cv__blob__locator_8h.html#a178c4572aced8af31538a036d2d1c5df":[12,0,1,0,6,12,11,14],
-"cv__blob__locator_8h.html#a39149da1c7d12899680335e4cc339499":[12,0,1,0,6,12,11,15],
-"cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b":[12,0,1,0,6,12,11,4],
-"cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b":[12,0,1,0,6,12,11,6],
-"cv__blob__locator_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43":[12,0,1,0,6,12,11,17],
-"cv__blob__locator_8h.html#a72a4aa979afe374a531b18124cb16f19":[12,0,1,0,6,12,11,20],
-"cv__blob__locator_8h.html#a83032abdec3a3f45390ff8905fac77e6":[12,0,1,0,6,12,11,22]
+"cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29":[12,0,1,0,6,12,11,7]
 };

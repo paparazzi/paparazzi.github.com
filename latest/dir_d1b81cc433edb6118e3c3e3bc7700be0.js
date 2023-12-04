@@ -34,7 +34,7 @@ var dir_d1b81cc433edb6118e3c3e3bc7700be0 =
     [ "stabilization_attitude_ref_quat_int.h", "stabilization__attitude__ref__quat__int_8h.html", "stabilization__attitude__ref__quat__int_8h" ],
     [ "stabilization_indi.c", "stabilization__indi_8c.html", "stabilization__indi_8c" ],
     [ "stabilization_indi.h", "stabilization__indi_8h.html", "stabilization__indi_8h" ],
-    [ "stabilization_indi_simple.c", "stabilization__indi__simple_8c.html", null ],
+    [ "stabilization_indi_simple.c", "stabilization__indi__simple_8c.html", "stabilization__indi__simple_8c" ],
     [ "stabilization_indi_simple.h", "stabilization__indi__simple_8h.html", "stabilization__indi__simple_8h" ],
     [ "stabilization_none.c", "stabilization__none_8c.html", "stabilization__none_8c" ],
     [ "stabilization_none.h", "stabilization__none_8h.html", "stabilization__none_8h" ],

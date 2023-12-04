@@ -124,6 +124,8 @@ var lia_2chibios_2v1_81_2board_8h =
     [ "USE_PWM3", "lia_2chibios_2v1_81_2board_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a", null ],
     [ "USE_PWM4", "lia_2chibios_2v1_81_2board_8h.html#a8899afdbd830cb0b81968fc660291934", null ],
     [ "USE_PWM5", "lia_2chibios_2v1_81_2board_8h.html#a402c216e512bc4a39616400af32b7c7f", null ],
+    [ "USE_PWM_TIM3", "lia_2chibios_2v1_81_2board_8h.html#aeca90cc1a13d8f8b04c19bff3f6d4325", null ],
+    [ "USE_PWM_TIM5", "lia_2chibios_2v1_81_2board_8h.html#a133a8bd30af31224040168c0edacb37d", null ],
     [ "VAL_GPIOACRH", "lia_2chibios_2v1_81_2board_8h.html#afdf80c79c726763f2e39545c3a7c892d", null ],
     [ "VAL_GPIOACRL", "lia_2chibios_2v1_81_2board_8h.html#a426aaabe7101889f595f9e66c52c1baf", null ],
     [ "VAL_GPIOAODR", "lia_2chibios_2v1_81_2board_8h.html#a812539bb9c9ec00011c01462ce1c7128", null ],

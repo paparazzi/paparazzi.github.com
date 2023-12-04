@@ -1255,186 +1255,200 @@ $(document).ready(function(){initNavTree('lisa__mx_2chibios_2v2_81_2board_8h_sou
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160; </div>
 <div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;<span class="comment"> * PWM defines</span></div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="preprocessor">#ifndef USE_PWM0</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95"> 1170</a></span>&#160;<span class="preprocessor">#define USE_PWM0 1</span></div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;<span class="preprocessor">#if USE_PWM0</span></div>
-<div class="line"><a name="l01173"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a158db218ea012f792391e673e553c42f"> 1173</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0 0</span></div>
-<div class="line"><a name="l01174"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac77aac75ed1b4e6dbe67bf05e5ebf872"> 1174</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_GPIO GPIOC</span></div>
-<div class="line"><a name="l01175"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3345ce1ba187b37f40ed26a0800f17e6"> 1175</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_PIN GPIO6</span></div>
-<div class="line"><a name="l01176"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a4e6538aa8603788884e61d19d6e946ab"> 1176</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01177"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#afc59820d133bebfe19b892303031e83c"> 1177</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_DRIVER PWMD3</span></div>
-<div class="line"><a name="l01178"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#acfa985b6aac57ad232a12ba5eda530f3"> 1178</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_CHANNEL 0</span></div>
-<div class="line"><a name="l01179"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa42cd8667b810967cff72acf3985a029"> 1179</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_CONF pwmcfg3</span></div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160; </div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
-<div class="line"><a name="l01183"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65"> 1183</a></span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
-<div class="line"><a name="l01186"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a27260a99d1076f9d0d1cb786860066fd"> 1186</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1 1</span></div>
-<div class="line"><a name="l01187"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a86960c3aad4310e9c2963cd5d63e6392"> 1187</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOC</span></div>
-<div class="line"><a name="l01188"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae"> 1188</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN GPIO7</span></div>
-<div class="line"><a name="l01189"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35"> 1189</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01190"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aea377e267c55bbc84cb912db0764d937"> 1190</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_DRIVER PWMD3</span></div>
-<div class="line"><a name="l01191"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a332bb8fee0a9dce80f6f7151dde33121"> 1191</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CHANNEL 1</span></div>
-<div class="line"><a name="l01192"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3e0a0319f7d0ccb9078d58d798d5b8ca"> 1192</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CONF pwmcfg3</span></div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160; </div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
-<div class="line"><a name="l01196"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737"> 1196</a></span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
-<div class="line"><a name="l01199"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#abdf3f086a6274a36ead16fc540d4a05c"> 1199</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2 2</span></div>
-<div class="line"><a name="l01200"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#adca9740b51ca9f7681d3c3f585a57836"> 1200</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOC</span></div>
-<div class="line"><a name="l01201"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a93588ba4e78f8b0452867afb990c0264"> 1201</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN GPIO8</span></div>
-<div class="line"><a name="l01202"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b"> 1202</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae95899c782166bf67a3fbbee511ab475"> 1203</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_DRIVER PWMD3</span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aec7b78364221ed54cc971fb862a131ae"> 1204</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CHANNEL 2</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad51e6e15a7a0d5cbb5e787ffac021114"> 1205</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CONF pwmcfg3</span></div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160; </div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
-<div class="line"><a name="l01209"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a"> 1209</a></span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
-<div class="line"><a name="l01212"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a342eee19f66562516414e255f3db4cc4"> 1212</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3 3</span></div>
-<div class="line"><a name="l01213"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3527010cfbb35e98ab1bba9ded57da14"> 1213</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOC</span></div>
-<div class="line"><a name="l01214"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1f43b2c4250213826a1c0cae49004e3c"> 1214</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN GPIO9</span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1af3b0681135879303164ffd4953257b"> 1215</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01216"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad1cb6ca020e373fcc809766d29f3105f"> 1216</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_DRIVER PWMD3</span></div>
-<div class="line"><a name="l01217"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac4e4e11f5f39aca5fc5df91b7bb074f7"> 1217</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CHANNEL 3</span></div>
-<div class="line"><a name="l01218"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab64e9fe6667169b105ca8fd987b4491e"> 1218</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CONF pwmcfg3</span></div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160; </div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
-<div class="line"><a name="l01222"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a8899afdbd830cb0b81968fc660291934"> 1222</a></span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
-<div class="line"><a name="l01225"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5"> 1225</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4 4</span></div>
-<div class="line"><a name="l01226"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21"> 1226</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOA</span></div>
-<div class="line"><a name="l01227"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6404fc57b2246acd54fe7539e29aa9a6"> 1227</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN GPIO0</span></div>
-<div class="line"><a name="l01228"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a689995b3ffce4727831c630e0c144b5e"> 1228</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01229"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aef12248bbcb014a60358b87787a15765"> 1229</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_DRIVER PWMD5</span></div>
-<div class="line"><a name="l01230"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad27dd2006e045ab78fc41052ec582d43"> 1230</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CHANNEL 0</span></div>
-<div class="line"><a name="l01231"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a71adfcd60fc6d58fff4ef3053944cd9a"> 1231</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CONF pwmcfg5</span></div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160; </div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
-<div class="line"><a name="l01235"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a402c216e512bc4a39616400af32b7c7f"> 1235</a></span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
-<div class="line"><a name="l01238"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae718fb13d2500192855c74e78e6c9c5e"> 1238</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5 5</span></div>
-<div class="line"><a name="l01239"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a"> 1239</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
-<div class="line"><a name="l01240"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a7ca4d622269db724a3af09d3625280ee"> 1240</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN GPIO1</span></div>
-<div class="line"><a name="l01241"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14"> 1241</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01242"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a4c97c2261da958d745a70fe3079eefbf"> 1242</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_DRIVER PWMD5</span></div>
-<div class="line"><a name="l01243"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3e85874ffaac1fc23b9fd76eb06fd79e"> 1243</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CHANNEL 1</span></div>
-<div class="line"><a name="l01244"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aee1dfc4b6d002461055904d823ec7c11"> 1244</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CONF pwmcfg5</span></div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160; </div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;<span class="comment"> * enable TIM3, TIM4 and TIM5 by default</span></div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160; </div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;<span class="preprocessor">#ifndef USE_PWM_TIM3</span></div>
+<div class="line"><a name="l01172"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aeca90cc1a13d8f8b04c19bff3f6d4325"> 1172</a></span>&#160;<span class="preprocessor">#define USE_PWM_TIM3 1</span></div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;<span class="preprocessor">#ifndef USE_PWM_TIM4</span></div>
+<div class="line"><a name="l01176"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#afeadf07b12eaf0734ffdb1d057a59159"> 1176</a></span>&#160;<span class="preprocessor">#define USE_PWM_TIM4 1</span></div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160; </div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;<span class="preprocessor">#ifndef USE_PWM_TIM5</span></div>
+<div class="line"><a name="l01180"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a133a8bd30af31224040168c0edacb37d"> 1180</a></span>&#160;<span class="preprocessor">#define USE_PWM_TIM5 1</span></div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160; </div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;<span class="preprocessor">#ifndef USE_PWM0</span></div>
+<div class="line"><a name="l01184"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95"> 1184</a></span>&#160;<span class="preprocessor">#define USE_PWM0 1</span></div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;<span class="preprocessor">#if USE_PWM0</span></div>
+<div class="line"><a name="l01187"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a158db218ea012f792391e673e553c42f"> 1187</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0 0</span></div>
+<div class="line"><a name="l01188"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac77aac75ed1b4e6dbe67bf05e5ebf872"> 1188</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_GPIO GPIOC</span></div>
+<div class="line"><a name="l01189"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3345ce1ba187b37f40ed26a0800f17e6"> 1189</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_PIN GPIO6</span></div>
+<div class="line"><a name="l01190"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a4e6538aa8603788884e61d19d6e946ab"> 1190</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01191"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#afc59820d133bebfe19b892303031e83c"> 1191</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_DRIVER PWMD3</span></div>
+<div class="line"><a name="l01192"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#acfa985b6aac57ad232a12ba5eda530f3"> 1192</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_CHANNEL 0</span></div>
+<div class="line"><a name="l01193"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa42cd8667b810967cff72acf3985a029"> 1193</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_0_CONF pwmcfg3</span></div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160; </div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
+<div class="line"><a name="l01197"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65"> 1197</a></span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
+<div class="line"><a name="l01200"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a27260a99d1076f9d0d1cb786860066fd"> 1200</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1 1</span></div>
+<div class="line"><a name="l01201"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a86960c3aad4310e9c2963cd5d63e6392"> 1201</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOC</span></div>
+<div class="line"><a name="l01202"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae"> 1202</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN GPIO7</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35"> 1203</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aea377e267c55bbc84cb912db0764d937"> 1204</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_DRIVER PWMD3</span></div>
+<div class="line"><a name="l01205"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a332bb8fee0a9dce80f6f7151dde33121"> 1205</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CHANNEL 1</span></div>
+<div class="line"><a name="l01206"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3e0a0319f7d0ccb9078d58d798d5b8ca"> 1206</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CONF pwmcfg3</span></div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160; </div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
+<div class="line"><a name="l01210"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737"> 1210</a></span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#abdf3f086a6274a36ead16fc540d4a05c"> 1213</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2 2</span></div>
+<div class="line"><a name="l01214"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#adca9740b51ca9f7681d3c3f585a57836"> 1214</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOC</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a93588ba4e78f8b0452867afb990c0264"> 1215</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN GPIO8</span></div>
+<div class="line"><a name="l01216"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b"> 1216</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae95899c782166bf67a3fbbee511ab475"> 1217</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_DRIVER PWMD3</span></div>
+<div class="line"><a name="l01218"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aec7b78364221ed54cc971fb862a131ae"> 1218</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CHANNEL 2</span></div>
+<div class="line"><a name="l01219"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad51e6e15a7a0d5cbb5e787ffac021114"> 1219</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CONF pwmcfg3</span></div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160; </div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a"> 1223</a></span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
+<div class="line"><a name="l01226"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a342eee19f66562516414e255f3db4cc4"> 1226</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3 3</span></div>
+<div class="line"><a name="l01227"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3527010cfbb35e98ab1bba9ded57da14"> 1227</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOC</span></div>
+<div class="line"><a name="l01228"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1f43b2c4250213826a1c0cae49004e3c"> 1228</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN GPIO9</span></div>
+<div class="line"><a name="l01229"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1af3b0681135879303164ffd4953257b"> 1229</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01230"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad1cb6ca020e373fcc809766d29f3105f"> 1230</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_DRIVER PWMD3</span></div>
+<div class="line"><a name="l01231"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac4e4e11f5f39aca5fc5df91b7bb074f7"> 1231</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CHANNEL 3</span></div>
+<div class="line"><a name="l01232"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab64e9fe6667169b105ca8fd987b4491e"> 1232</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CONF pwmcfg3</span></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160; </div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
+<div class="line"><a name="l01236"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a8899afdbd830cb0b81968fc660291934"> 1236</a></span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
+<div class="line"><a name="l01239"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5"> 1239</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4 4</span></div>
+<div class="line"><a name="l01240"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21"> 1240</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOA</span></div>
+<div class="line"><a name="l01241"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6404fc57b2246acd54fe7539e29aa9a6"> 1241</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN GPIO0</span></div>
+<div class="line"><a name="l01242"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a689995b3ffce4727831c630e0c144b5e"> 1242</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01243"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aef12248bbcb014a60358b87787a15765"> 1243</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_DRIVER PWMD5</span></div>
+<div class="line"><a name="l01244"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad27dd2006e045ab78fc41052ec582d43"> 1244</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CHANNEL 0</span></div>
+<div class="line"><a name="l01245"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a71adfcd60fc6d58fff4ef3053944cd9a"> 1245</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CONF pwmcfg5</span></div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160; </div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;<span class="preprocessor">#if USE_SERVOS_7AND8</span></div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;<span class="preprocessor">  #if USE_I2C1</span></div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;<span class="preprocessor">    #error &quot;You cannot USE_SERVOS_7AND8 and USE_I2C1 at the same time&quot;</span></div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;<span class="preprocessor">  #else </span><span class="comment">/* !USE_I2C1 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;<span class="preprocessor">    #if USE_PWM6</span></div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6 6</span></div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_GPIO GPIOB</span></div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_PIN GPIO6</span></div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_DRIVER PWMD4</span></div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_CHANNEL 0</span></div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_CONF pwmcfg4</span></div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
+<div class="line"><a name="l01249"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a402c216e512bc4a39616400af32b7c7f"> 1249</a></span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
+<div class="line"><a name="l01252"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae718fb13d2500192855c74e78e6c9c5e"> 1252</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5 5</span></div>
+<div class="line"><a name="l01253"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a"> 1253</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
+<div class="line"><a name="l01254"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a7ca4d622269db724a3af09d3625280ee"> 1254</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN GPIO1</span></div>
+<div class="line"><a name="l01255"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14"> 1255</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01256"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a4c97c2261da958d745a70fe3079eefbf"> 1256</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_DRIVER PWMD5</span></div>
+<div class="line"><a name="l01257"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3e85874ffaac1fc23b9fd76eb06fd79e"> 1257</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CHANNEL 1</span></div>
+<div class="line"><a name="l01258"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aee1dfc4b6d002461055904d823ec7c11"> 1258</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CONF pwmcfg5</span></div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160; </div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160; </div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="preprocessor">    #if USE_PWM7</span></div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7 7</span></div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_GPIO GPIOB</span></div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_PIN GPIO7</span></div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_AF GPIO_AF2</span></div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_DRIVER PWMD4</span></div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_CHANNEL 1</span></div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_CONF pwmcfg4</span></div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;<span class="preprocessor">  #endif </span><span class="comment">/* USE_I2C1 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_SERVOS_7AND8 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160; </div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160; </div>
-<div class="line"><a name="l01278"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05"> 1278</a></span>&#160;<span class="preprocessor">#define RC_PPM_TICKS_PER_USEC 6</span></div>
-<div class="line"><a name="l01279"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1365ea029b2ef8463ee8c0865b81749b"> 1279</a></span>&#160;<span class="preprocessor">#define PPM_TIMER_FREQUENCY 6000000</span></div>
-<div class="line"><a name="l01280"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a"> 1280</a></span>&#160;<span class="preprocessor">#define PPM_CHANNEL ICU_CHANNEL_1</span></div>
-<div class="line"><a name="l01281"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a87537e4413a12b7b177ea61d489c2621"> 1281</a></span>&#160;<span class="preprocessor">#define PPM_TIMER ICUD1</span></div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160; </div>
-<div class="line"><a name="l01286"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac15ff38aa7a906c0cb5dc9a2f8803804"> 1286</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SCL                  PAL_LINE(GPIOB, 6U)</span></div>
-<div class="line"><a name="l01287"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0dc451bda5062cde685b36075f3954d6"> 1287</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SDA                  PAL_LINE(GPIOB, 7U)</span></div>
-<div class="line"><a name="l01288"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a22c39ad944259723eb9fbe773e294139"> 1288</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l01289"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9914c116b1e93a66882b48999c8efcd9"> 1289</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {       \</span></div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160; </div>
-<div class="line"><a name="l01295"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6ee26c2bcff0cc6a9b7c991a46e0fbf4"> 1295</a></span>&#160;<span class="preprocessor">#define LINE_I2C2_SCL                  PAL_LINE(GPIOB, 10U)</span></div>
-<div class="line"><a name="l01296"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a5f9812dc9a552b1e90934ccd1671c2a2"> 1296</a></span>&#160;<span class="preprocessor">#define LINE_I2C2_SDA                  PAL_LINE(GPIOB, 11U)</span></div>
-<div class="line"><a name="l01297"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045"> 1297</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l01298"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea"> 1298</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {       \</span></div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160; </div>
-<div class="line"><a name="l01307"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a62cb06db3908015c7305ca6833f90159"> 1307</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOA</span></div>
-<div class="line"><a name="l01308"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a697b8e633c428bd167844542c8c1453f"> 1308</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO15</span></div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160; </div>
-<div class="line"><a name="l01310"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#abed465f8e9387dc4c034b1d71989043c"> 1310</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOA</span></div>
-<div class="line"><a name="l01311"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6391f9c6d48eca04803022ab073df01a"> 1311</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO4</span></div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160; </div>
-<div class="line"><a name="l01313"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988"> 1313</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOB</span></div>
-<div class="line"><a name="l01314"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06"> 1314</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO12</span></div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
-<div class="line"><a name="l01316"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46"> 1316</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOC</span></div>
-<div class="line"><a name="l01317"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f"> 1317</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO13</span></div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160; </div>
-<div class="line"><a name="l01319"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1"> 1319</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOC</span></div>
-<div class="line"><a name="l01320"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaaf3b422873946314dfec6703a3a5580"> 1320</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO12</span></div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160; </div>
-<div class="line"><a name="l01322"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0bb8407cbad582149d6c82588b77f100"> 1322</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE5_PORT GPIOC</span></div>
-<div class="line"><a name="l01323"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a045b009e33c6c53c43c8ff352a2fd507"> 1323</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE5_PIN GPIO4</span></div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160; </div>
-<div class="line"><a name="l01325"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be"> 1325</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_NSS GPIOA</span></div>
-<div class="line"><a name="l01326"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a99df90574479e3cd4cf0ea51c63e1595"> 1326</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_NSS GPIO4</span></div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160; </div>
-<div class="line"><a name="l01328"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9d66c24ba631c924123fe12d89aae695"> 1328</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_NSS GPIOB</span></div>
-<div class="line"><a name="l01329"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a75623f9270b0dc2e890eefb7033282be"> 1329</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_NSS GPIO12</span></div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160; </div>
-<div class="line"><a name="l01331"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9b9a3bf9f095e4f2a8976d5889f81316"> 1331</a></span>&#160;<span class="preprocessor">#define SPI3_GPIO_PORT_NSS GPIO</span></div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="preprocessor">#if USE_SERVOS_7AND8</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;<span class="preprocessor">  #if USE_I2C1</span></div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;<span class="preprocessor">    #error &quot;You cannot USE_SERVOS_7AND8 and USE_I2C1 at the same time&quot;</span></div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;<span class="preprocessor">  #else </span><span class="comment">/* !USE_I2C1 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;<span class="preprocessor">    #if USE_PWM6</span></div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6 6</span></div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_GPIO GPIOB</span></div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_PIN GPIO6</span></div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_DRIVER PWMD4</span></div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_CHANNEL 0</span></div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;<span class="preprocessor">    #define PWM_SERVO_6_CONF pwmcfg4</span></div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160; </div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;<span class="preprocessor">    #if USE_PWM7</span></div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7 7</span></div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_GPIO GPIOB</span></div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_PIN GPIO7</span></div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_AF GPIO_AF2</span></div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_DRIVER PWMD4</span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_CHANNEL 1</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor">    #define PWM_SERVO_7_CONF pwmcfg4</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="preprocessor">  #endif </span><span class="comment">/* USE_I2C1 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_SERVOS_7AND8 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160; </div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160; </div>
+<div class="line"><a name="l01292"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05"> 1292</a></span>&#160;<span class="preprocessor">#define RC_PPM_TICKS_PER_USEC 6</span></div>
+<div class="line"><a name="l01293"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1365ea029b2ef8463ee8c0865b81749b"> 1293</a></span>&#160;<span class="preprocessor">#define PPM_TIMER_FREQUENCY 6000000</span></div>
+<div class="line"><a name="l01294"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a"> 1294</a></span>&#160;<span class="preprocessor">#define PPM_CHANNEL ICU_CHANNEL_1</span></div>
+<div class="line"><a name="l01295"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a87537e4413a12b7b177ea61d489c2621"> 1295</a></span>&#160;<span class="preprocessor">#define PPM_TIMER ICUD1</span></div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160; </div>
+<div class="line"><a name="l01300"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac15ff38aa7a906c0cb5dc9a2f8803804"> 1300</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SCL                  PAL_LINE(GPIOB, 6U)</span></div>
+<div class="line"><a name="l01301"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0dc451bda5062cde685b36075f3954d6"> 1301</a></span>&#160;<span class="preprocessor">#define LINE_I2C1_SDA                  PAL_LINE(GPIOB, 7U)</span></div>
+<div class="line"><a name="l01302"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a22c39ad944259723eb9fbe773e294139"> 1302</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l01303"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9914c116b1e93a66882b48999c8efcd9"> 1303</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {       \</span></div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160; </div>
+<div class="line"><a name="l01309"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6ee26c2bcff0cc6a9b7c991a46e0fbf4"> 1309</a></span>&#160;<span class="preprocessor">#define LINE_I2C2_SCL                  PAL_LINE(GPIOB, 10U)</span></div>
+<div class="line"><a name="l01310"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a5f9812dc9a552b1e90934ccd1671c2a2"> 1310</a></span>&#160;<span class="preprocessor">#define LINE_I2C2_SDA                  PAL_LINE(GPIOB, 11U)</span></div>
+<div class="line"><a name="l01311"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045"> 1311</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l01312"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea"> 1312</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {       \</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
+<div class="line"><a name="l01321"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a62cb06db3908015c7305ca6833f90159"> 1321</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOA</span></div>
+<div class="line"><a name="l01322"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a697b8e633c428bd167844542c8c1453f"> 1322</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO15</span></div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160; </div>
+<div class="line"><a name="l01324"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#abed465f8e9387dc4c034b1d71989043c"> 1324</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOA</span></div>
+<div class="line"><a name="l01325"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a6391f9c6d48eca04803022ab073df01a"> 1325</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO4</span></div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160; </div>
+<div class="line"><a name="l01327"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988"> 1327</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOB</span></div>
+<div class="line"><a name="l01328"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06"> 1328</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO12</span></div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160; </div>
+<div class="line"><a name="l01330"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46"> 1330</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOC</span></div>
+<div class="line"><a name="l01331"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f"> 1331</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO13</span></div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160; </div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a name="l01340"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d"> 1340</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160; </div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a name="l01347"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307"> 1347</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a name="l01348"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0"> 1348</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
-<div class="line"><a name="l01349"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1349</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a name="l01350"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1350</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160; </div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l01333"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1"> 1333</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOC</span></div>
+<div class="line"><a name="l01334"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaaf3b422873946314dfec6703a3a5580"> 1334</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO12</span></div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160; </div>
+<div class="line"><a name="l01336"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0bb8407cbad582149d6c82588b77f100"> 1336</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE5_PORT GPIOC</span></div>
+<div class="line"><a name="l01337"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a045b009e33c6c53c43c8ff352a2fd507"> 1337</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE5_PIN GPIO4</span></div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160; </div>
+<div class="line"><a name="l01339"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be"> 1339</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_NSS GPIOA</span></div>
+<div class="line"><a name="l01340"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a99df90574479e3cd4cf0ea51c63e1595"> 1340</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_NSS GPIO4</span></div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160; </div>
+<div class="line"><a name="l01342"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9d66c24ba631c924123fe12d89aae695"> 1342</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_NSS GPIOB</span></div>
+<div class="line"><a name="l01343"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a75623f9270b0dc2e890eefb7033282be"> 1343</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_NSS GPIO12</span></div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160; </div>
+<div class="line"><a name="l01345"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a9b9a3bf9f095e4f2a8976d5889f81316"> 1345</a></span>&#160;<span class="preprocessor">#define SPI3_GPIO_PORT_NSS GPIO</span></div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160; </div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a name="l01354"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d"> 1354</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
 <div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;}</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160; </div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160; </div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a name="l01361"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307"> 1361</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a name="l01362"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0"> 1362</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
+<div class="line"><a name="l01363"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1363</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a name="l01364"></a><span class="lineno"><a class="line" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1364</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160; </div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;}</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aapogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code.</div><div class="ttdef"><b>Definition:</b> <a href="arch_2chibios_2board_8c_source.html#l00312">board.c:312</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1442,7 +1456,7 @@ $(document).ready(function(){initNavTree('lisa__mx_2chibios_2v2_81_2board_8h_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_13f821e2f8bff88178f2fd4f9016e4b4.html">lisa_mx</a></li><li class="navelem"><a class="el" href="dir_62a8b3c4c119106cd0d98b4de509151c.html">chibios</a></li><li class="navelem"><a class="el" href="dir_d164457e190da0740cefc299fa5fbcbc.html">v2.1</a></li><li class="navelem"><a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Mon Dec 4 2023 08:12:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 4 2023 10:34:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -109,5 +109,7 @@ var crazyflie_8h =
     [ "USE_PWM1", "crazyflie_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65", null ],
     [ "USE_PWM2", "crazyflie_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737", null ],
     [ "USE_PWM3", "crazyflie_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a", null ],
-    [ "USE_PWM4", "crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934", null ]
+    [ "USE_PWM4", "crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934", null ],
+    [ "USE_PWM_TIM2", "crazyflie_8h.html#a4e705c111c9ec43b5223ad919b2e10ce", null ],
+    [ "USE_PWM_TIM4", "crazyflie_8h.html#afeadf07b12eaf0734ffdb1d057a59159", null ]
 ];

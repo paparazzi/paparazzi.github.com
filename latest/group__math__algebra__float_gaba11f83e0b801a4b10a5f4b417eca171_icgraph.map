@@ -1,27 +1,29 @@
 <map id="float_quat_vmult" name="float_quat_vmult">
-<area shape="rect" id="node1" title="rotate 3D vector by quaternion." alt="" coords="1084,231,1216,257"/>
-<area shape="rect" id="node2" href="$ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="901,5,1004,32"/>
-<area shape="rect" id="node6" href="$group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7" title="Tilt twist decomposition of a quaternion (z axis)" alt="" coords="877,56,1028,83"/>
-<area shape="rect" id="node7" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="881,158,1024,199"/>
-<area shape="rect" id="node10" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="881,223,1024,265"/>
-<area shape="rect" id="node12" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="889,107,1017,133"/>
-<area shape="rect" id="node13" href="$mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="880,289,1025,316"/>
-<area shape="rect" id="node15" href="$ahrs__float__mlkf_8c.html#a8a783da31e60cecc70580ab4840da0c7" title="Incorporate one 3D vector measurement." alt="" coords="899,340,1006,367"/>
-<area shape="rect" id="node22" href="$ahrs__float__mlkf_8c.html#a728279f726c100f831375b815a025ab6" title="Incorporate one 3D vector measurement, only correcting heading." alt="" coords="869,405,1036,432"/>
-<area shape="rect" id="node24" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="907,456,998,483"/>
-<area shape="rect" id="node3" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="645,49,795,90"/>
-<area shape="rect" id="node4" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="447,56,520,83"/>
-<area shape="rect" id="node5" href="$ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="197,49,348,90"/>
-<area shape="rect" id="node8" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="683,165,757,192"/>
-<area shape="rect" id="node9" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="412,183,555,225"/>
-<area shape="rect" id="node11" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="687,216,753,243"/>
-<area shape="rect" id="node14" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="647,267,793,293"/>
-<area shape="rect" id="node16" href="$ahrs__float__mlkf_8c.html#a49d6b43615e971ee5f098c86c2cf0edb" title=" " alt="" coords="630,317,810,344"/>
-<area shape="rect" id="node19" href="$ahrs__float__mlkf_8c.html#a7bb2235206c421516cfa4884d287fc65" title=" " alt="" coords="619,368,821,395"/>
-<area shape="rect" id="node17" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="233,317,312,344"/>
-<area shape="rect" id="node18" href="$ahrs__float__mlkf__wrapper_8c.html#adf9165ad7440f11e3dae35391f5844d6" title=" " alt="" coords="5,343,149,369"/>
-<area shape="rect" id="node20" href="$ahrs__float__mlkf_8c.html#a00e729bc2030aaee57ec7be58f58f569" title=" " alt="" coords="396,368,571,395"/>
-<area shape="rect" id="node21" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="236,368,309,395"/>
-<area shape="rect" id="node23" href="$ahrs__float__mlkf_8c.html#ab8a1a207877996d1ef506ad18510795e" title=" " alt="" coords="621,419,819,445"/>
-<area shape="rect" id="node25" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="673,469,767,496"/>
+<area shape="rect" id="node1" title="rotate 3D vector by quaternion." alt="" coords="1097,231,1229,257"/>
+<area shape="rect" id="node2" href="$ahrs__float__invariant_8c.html#a87598eb88ed06febda6397f5fbb5c937" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error )" alt="" coords="915,5,1017,32"/>
+<area shape="rect" id="node6" href="$group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7" title="Tilt twist decomposition of a quaternion (z axis)" alt="" coords="891,107,1041,133"/>
+<area shape="rect" id="node9" href="$ins__float__invariant_8c.html#a3295f5f304de90dd15c0465967c3b89f" title=" " alt="" coords="895,158,1037,199"/>
+<area shape="rect" id="node12" href="$ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382" title=" " alt="" coords="895,223,1037,265"/>
+<area shape="rect" id="node14" href="$ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode." alt="" coords="902,56,1030,83"/>
+<area shape="rect" id="node15" href="$mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0" title="Callback function run for every new mag measurement." alt="" coords="893,289,1039,316"/>
+<area shape="rect" id="node17" href="$ahrs__float__mlkf_8c.html#a8a783da31e60cecc70580ab4840da0c7" title="Incorporate one 3D vector measurement." alt="" coords="913,340,1019,367"/>
+<area shape="rect" id="node24" href="$ahrs__float__mlkf_8c.html#a728279f726c100f831375b815a025ab6" title="Incorporate one 3D vector measurement, only correcting heading." alt="" coords="883,405,1049,432"/>
+<area shape="rect" id="node26" href="$ins__int_8c.html#ab7a554a8b8a96f387e80452251fc404f" title=" " alt="" coords="921,456,1011,483"/>
+<area shape="rect" id="node3" href="$ahrs__float__invariant_8c.html#ace7071aaa0f0096495824e48e2e240ff" title=" " alt="" coords="658,17,809,58"/>
+<area shape="rect" id="node4" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements." alt="" coords="453,24,527,51"/>
+<area shape="rect" id="node5" href="$ahrs__float__invariant__wrapper_8c.html#af929b6f9cb8695819d29bdacca1f24f0" title=" " alt="" coords="197,17,348,58"/>
+<area shape="rect" id="node7" href="$stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="667,99,800,141"/>
+<area shape="rect" id="node8" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="396,107,584,133"/>
+<area shape="rect" id="node10" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements." alt="" coords="697,165,770,192"/>
+<area shape="rect" id="node11" href="$ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title=" " alt="" coords="419,183,561,225"/>
+<area shape="rect" id="node13" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title=" " alt="" coords="700,216,767,243"/>
+<area shape="rect" id="node16" href="$mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8" title=" " alt="" coords="661,267,806,293"/>
+<area shape="rect" id="node18" href="$ahrs__float__mlkf_8c.html#a49d6b43615e971ee5f098c86c2cf0edb" title=" " alt="" coords="643,317,823,344"/>
+<area shape="rect" id="node21" href="$ahrs__float__mlkf_8c.html#a7bb2235206c421516cfa4884d287fc65" title=" " alt="" coords="632,368,835,395"/>
+<area shape="rect" id="node19" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title=" " alt="" coords="233,317,312,344"/>
+<area shape="rect" id="node20" href="$ahrs__float__mlkf__wrapper_8c.html#adf9165ad7440f11e3dae35391f5844d6" title=" " alt="" coords="5,343,149,369"/>
+<area shape="rect" id="node22" href="$ahrs__float__mlkf_8c.html#a00e729bc2030aaee57ec7be58f58f569" title=" " alt="" coords="403,368,577,395"/>
+<area shape="rect" id="node23" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title=" " alt="" coords="236,368,309,395"/>
+<area shape="rect" id="node25" href="$ahrs__float__mlkf_8c.html#ab8a1a207877996d1ef506ad18510795e" title=" " alt="" coords="634,419,833,445"/>
+<area shape="rect" id="node27" href="$ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4" title=" " alt="" coords="687,469,780,496"/>
 </map>

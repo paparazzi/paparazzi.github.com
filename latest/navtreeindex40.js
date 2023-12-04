@@ -1,5 +1,10 @@
 var NAVTREEINDEX40 =
 {
+"crazyflie_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,4,0,0,1,42],
+"crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69],
+"crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,4,0,0,1,109],
+"crazyflie_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0":[12,0,1,0,1,4,0,0,1,9],
+"crazyflie_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,4,0,0,1,58],
 "crazyflie_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,4,0,0,1,50],
 "crazyflie_8h.html#a9914c116b1e93a66882b48999c8efcd9":[12,0,1,0,1,4,0,0,1,7],
 "crazyflie_8h.html#a9b407aa30f1e3cf5bda8e8433315b7c4":[12,0,1,0,1,4,0,0,1,11],
@@ -52,6 +57,7 @@ var NAVTREEINDEX40 =
 "crazyflie_8h.html#af754c909b4a07f3a9bfd585238432b00":[12,0,1,0,1,4,0,0,1,25],
 "crazyflie_8h.html#af93888595216eb71acfec667e7b5bdd2":[12,0,1,0,1,4,0,0,1,85],
 "crazyflie_8h.html#afe67bca9eb8da8654288c02124683016":[12,0,1,0,1,4,0,0,1,70],
+"crazyflie_8h.html#afeadf07b12eaf0734ffdb1d057a59159":[12,0,1,0,1,4,0,0,1,111],
 "crazyflie_8h_source.html":[12,0,1,0,1,4,0,0,1],
 "crtp_8h.html":[12,0,1,0,6,15,0,0],
 "crtp_8h.html#a02cbdd0c67d9a56d46af5ba44ebd7324":[12,0,1,0,6,15,0,0,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX40 =
 "ctrl__module__innerloop__demo_8h_source.html":[12,0,1,0,6,14,3],
 "ctrl__module__outerloop__demo_8c.html":[12,0,1,0,6,14,4],
 "ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17":[12,0,1,0,6,14,2,0,2],
-"ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17":[12,0,1,0,6,14,4,0,2],
-"ctrl__module__outerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082":[12,0,1,0,6,14,4,3],
-"ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,2,0,3],
-"ctrl__module__outerloop__demo_8c.html#a576f54ea6321f1f804c68c195a443361":[12,0,1,0,6,14,4,0,3],
-"ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb":[12,0,1,0,6,14,4,6],
-"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,2,0,4],
-"ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf":[12,0,1,0,6,14,4,0,4]
+"ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17":[12,0,1,0,6,14,4,0,2]
 };

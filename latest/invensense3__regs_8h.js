@@ -142,6 +142,7 @@ var invensense3__regs_8h =
     [ "INV3REG_INT_SOURCE3", "invensense3__regs_8h.html#a12f7456d08749936370a2067c41bb339", null ],
     [ "INV3REG_INT_STATUS", "invensense3__regs_8h.html#aa1fdddf176480ef2ffe7302c5820cdb2", null ],
     [ "INV3REG_INTF_CONFIG0", "invensense3__regs_8h.html#a8a2333839ede290b39f35040fa15e76c", null ],
+    [ "INV3REG_INTF_CONFIG1", "invensense3__regs_8h.html#a03fccba1b45971e4a8ac22de7a9c1685", null ],
     [ "INV3REG_PWR_MGMT0", "invensense3__regs_8h.html#a452ba7c1ed86842226cec5f86ac76598", null ],
     [ "INV3REG_SIGNAL_PATH_RESET", "invensense3__regs_8h.html#afa0bf32ea36e70d8e27364c4bf52b335", null ],
     [ "INV3REG_TEMP_DATA1", "invensense3__regs_8h.html#aaa24040e034750934032d2d22a7080f4", null ],

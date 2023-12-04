@@ -128,5 +128,7 @@ var px4fmu_8h =
     [ "USE_BARO_BOARD", "px4fmu_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "USE_LED_1", "px4fmu_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "px4fmu_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
-    [ "USE_LED_3", "px4fmu_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ]
+    [ "USE_LED_3", "px4fmu_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],
+    [ "USE_PWM_TIM1", "px4fmu_8h.html#a77be6fa093ec574ca4b520e7cf5f712c", null ],
+    [ "USE_PWM_TIM4", "px4fmu_8h.html#afeadf07b12eaf0734ffdb1d057a59159", null ]
 ];

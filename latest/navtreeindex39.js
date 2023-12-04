@@ -1,5 +1,9 @@
 var NAVTREEINDEX39 =
 {
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3f29be9a3823107fef0db45e685c21c8":[12,0,1,0,1,4,0,0,2,35],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4026ae95617bb7ee1cbc32248e97e263":[12,0,1,0,1,4,0,0,2,252],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a41843060367f2e2b20468f1a5769948b":[12,0,1,0,1,4,0,0,2,100],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42381c2949b271a74c562c3502403881":[12,0,1,0,1,4,0,0,2,31],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662":[12,0,1,0,1,4,0,0,2,151],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c":[12,0,1,0,1,4,0,0,2,247],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4331268b38458a2ad2cb4ff49021e371":[12,0,1,0,1,4,0,0,2,109],
@@ -220,6 +224,7 @@ var NAVTREEINDEX39 =
 "crazyflie_8h.html#a43f488034394a3e0c0749b96fdbdd08f":[12,0,1,0,1,4,0,0,1,79],
 "crazyflie_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002":[12,0,1,0,1,4,0,0,1,66],
 "crazyflie_8h.html#a4da08b59c725550efa312cf16ecdd77c":[12,0,1,0,1,4,0,0,1,103],
+"crazyflie_8h.html#a4e705c111c9ec43b5223ad919b2e10ce":[12,0,1,0,1,4,0,0,1,110],
 "crazyflie_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1":[12,0,1,0,1,4,0,0,1,16],
 "crazyflie_8h.html#a53d6198818143ce640add7be0555424f":[12,0,1,0,1,4,0,0,1,65],
 "crazyflie_8h.html#a5839c6584034c6fe16e4267590a994b5":[12,0,1,0,1,4,0,0,1,96],
@@ -244,10 +249,5 @@ var NAVTREEINDEX39 =
 "crazyflie_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,4,0,0,1,17],
 "crazyflie_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8":[12,0,1,0,1,4,0,0,1,68],
 "crazyflie_8h.html#a81a706c185f561248908b837ec5fd9d2":[12,0,1,0,1,4,0,0,1,90],
-"crazyflie_8h.html#a829f2071c863d3cbee8fc282ec1fe373":[12,0,1,0,1,4,0,0,1,93],
-"crazyflie_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,4,0,0,1,42],
-"crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69],
-"crazyflie_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,4,0,0,1,109],
-"crazyflie_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0":[12,0,1,0,1,4,0,0,1,9],
-"crazyflie_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,4,0,0,1,58]
+"crazyflie_8h.html#a829f2071c863d3cbee8fc282ec1fe373":[12,0,1,0,1,4,0,0,1,93]
 };

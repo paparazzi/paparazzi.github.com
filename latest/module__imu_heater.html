@@ -93,13 +93,6 @@ $(document).ready(function(){initNavTree('module__imu_heater.html',''); initResi
 <h1><a class="anchor" id="module_load_example__imu_heater"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;imu_heater&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_TARGET_TEMP&quot; value=&quot;55.&quot; unit=&quot;Celcius&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_P_GAIN&quot; value=&quot;200.&quot; unit=&quot;%/degC&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_I_GAIN&quot; value=&quot;0.3&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_GYRO_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_ACCEL_ID&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_GPIO&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;IMU_HEATER_GPIO_PIN&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INTERMCU_IOMCU&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__imu_heater"></a>
@@ -107,22 +100,31 @@ Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>IMU_HEATER_TARGET_TEMP</code> <b>value:</b> <em>55.</em> <br  />
- Description: Target temperature</li>
-<li><b>name:</b> <code>IMU_HEATER_P_GAIN</code> <b>value:</b> <em>200.</em> <br  />
- Description: kP gain for the heater</li>
-<li><b>name:</b> <code>IMU_HEATER_I_GAIN</code> <b>value:</b> <em>0.3</em> <br  />
- Description: kI gain for the heater</li>
-<li><b>name:</b> <code>IMU_HEATER_GYRO_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
- Description: Gyro ABI id for the temperature measurement</li>
-<li><b>name:</b> <code>IMU_HEATER_ACCEL_ID</code> <b>value:</b> <em>None</em> <br  />
- Description: Accel ABI id for the temperature measurement</li>
-<li><b>name:</b> <code>IMU_HEATER_GPIO</code> <b>value:</b> <em>None</em> <br  />
- Description: Heater GPIO port for resistor activation</li>
-<li><b>name:</b> <code>IMU_HEATER_GPIO_PIN</code> <b>value:</b> <em>None</em> <br  />
- Description: Heater GPIO pin for resistor activation</li>
 <li><b>name:</b> <code>INTERMCU_IOMCU</code> <b>value:</b> <em>None</em> <br  />
  Description: Heater IOMCU communication enabled</li>
+</ul>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>IMU_HEATER</code> prefix: <code>IMU_HEATER_</code> <ul>
+<li><b>name</b> <code>TARGET_TEMP</code> <b>value:</b> <em>55.</em> <br  />
+ Description: Target temperature</li>
+<li><b>name</b> <code>P_GAIN</code> <b>value:</b> <em>200.</em> <br  />
+ Description: kP gain for the heater</li>
+<li><b>name</b> <code>I_GAIN</code> <b>value:</b> <em>0.3</em> <br  />
+ Description: kI gain for the heater</li>
+<li><b>name</b> <code>GYRO_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br  />
+ Description: Gyro ABI id for the temperature measurement</li>
+<li><b>name</b> <code>ACCEL_ID</code> <b>value:</b> <em>None</em> <br  />
+ Description: Accel ABI id for the temperature measurement</li>
+<li><b>name</b> <code>GPIO</code> <b>value:</b> <em>None</em> <br  />
+ Description: Heater GPIO port for resistor activation</li>
+<li><b>name</b> <code>GPIO_PIN</code> <b>value:</b> <em>None</em> <br  />
+ Description: Heater GPIO pin for resistor activation</li>
+<li><b>name</b> <code>MAX_ERROR</code> <b>value:</b> <em>0.15</em> <br  />
+ Description: Maximum error for the heater preflight check</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="functions__imu_heater"></a>
 Module functions</h1>
@@ -171,13 +173,16 @@ Raw imu_heater.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
 <div class="line">      <span class="keyword">IMU</span> <span class="keyword">Heater</span> <span class="keyword">through</span> <span class="keyword">a</span> <span class="keyword">resistor</span> <span class="keyword">or</span> <span class="keyword">IO</span> <span class="keyword">co-processor</span></div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_TARGET_TEMP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;55.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Target temperature&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;Celcius&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_P_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;200.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;kP gain for the heater&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;%/degC&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_I_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;kI gain for the heater&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Gyro ABI id for the temperature measurement&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_ACCEL_ID&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Accel ABI id for the temperature measurement&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_GPIO&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Heater GPIO port for resistor activation&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER_GPIO_PIN&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Heater GPIO pin for resistor activation&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_HEATER&quot;</span>  <span class="keyword">prefix</span>=<span class="stringliteral">&quot;IMU_HEATER_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TARGET_TEMP&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;55.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Target temperature&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;Celcius&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;P_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;200.&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;kP gain for the heater&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;%/degC&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;I_GAIN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;kI gain for the heater&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GYRO_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;ABI_BROADCAST&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Gyro ABI id for the temperature measurement&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ACCEL_ID&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Accel ABI id for the temperature measurement&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPIO&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Heater GPIO port for resistor activation&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;GPIO_PIN&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Heater GPIO pin for resistor activation&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAX_ERROR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.15&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Maximum error for the heater preflight check&quot;</span> <span class="keyword">unit</span>=<span class="stringliteral">&quot;percentile&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INTERMCU_IOMCU&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Heater IOMCU communication enabled&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
@@ -206,7 +211,7 @@ Raw imu_heater.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Dec 4 2023 08:12:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 4 2023 10:34:51 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

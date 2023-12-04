@@ -1,5 +1,13 @@
 var NAVTREEINDEX66 =
 {
+"group__math__algebra__double.html":[9,9,1,2],
+"group__math__algebra__double.html#a00c6a387099e94f2eed59fcdae3a5e28":[9,9,1,2,5,1],
+"group__math__algebra__double.html#a01b62483d872e64b47e33d931c8ec2cc":[9,9,1,2,2,2],
+"group__math__algebra__double.html#a1e604dfad58d149b370252ea98f36888":[9,9,1,2,1,1],
+"group__math__algebra__double.html#a1f8142e3dfe541de26dc117698007423":[9,9,1,2,4,0],
+"group__math__algebra__double.html#a308df6fc15a5092f850ed3294a34ae84":[9,9,1,2,2,1],
+"group__math__algebra__double.html#a37b5d6d0b3733ce3ea196f6c8082eaef":[9,9,1,2,6,0],
+"group__math__algebra__double.html#a426587d46d9d560eaf329a93ed756dc9":[9,9,1,2,2,0],
 "group__math__algebra__double.html#a552b55ff2231e534d47c489e522d94bf":[9,9,1,2,2,3],
 "group__math__algebra__double.html#a679b4312c2296f17ed7e3d8625ceb6cb":[9,9,1,2,5,2],
 "group__math__algebra__double.html#a6d37a71e96d0d1cdf595002d6aacd715":[9,9,1,2,3,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4":[12,0,1,0,4,6,152],
 "group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[9,9,1,0,124],
 "group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[12,0,1,0,4,5,36],
-"group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[12,0,1,0,4,6,117],
-"group__math__algebra__float.html#ga564257f7c3e564bae7bb9dbe593cebef":[9,9,1,0,80],
-"group__math__algebra__float.html#ga564257f7c3e564bae7bb9dbe593cebef":[12,0,1,0,4,5,9],
-"group__math__algebra__float.html#ga564257f7c3e564bae7bb9dbe593cebef":[12,0,1,0,4,6,73],
-"group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d":[9,9,1,0,141],
-"group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d":[12,0,1,0,4,5,52],
-"group__math__algebra__float.html#ga5904f2d38832cebd78d192bceb00eb2d":[12,0,1,0,4,6,134],
-"group__math__algebra__float.html#ga60e53f8c14ae04aa5587f84f6eabbd86":[9,9,1,0,87],
-"group__math__algebra__float.html#ga60e53f8c14ae04aa5587f84f6eabbd86":[12,0,1,0,4,6,80]
+"group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[12,0,1,0,4,6,117]
 };

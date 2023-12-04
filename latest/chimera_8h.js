@@ -163,6 +163,8 @@ var chimera_8h =
     [ "USE_LED_7", "chimera_8h.html#a945f3794deb54dff239a60a2c91750a5", null ],
     [ "USE_LED_8", "chimera_8h.html#ab0e22e54cc214f3b5976b5a63d12096c", null ],
     [ "USE_LED_9", "chimera_8h.html#adb3a5575c74dc0deed2c7989b1525a46", null ],
+    [ "USE_PWM_TIM3", "chimera_8h.html#aeca90cc1a13d8f8b04c19bff3f6d4325", null ],
+    [ "USE_PWM_TIM4", "chimera_8h.html#afeadf07b12eaf0734ffdb1d057a59159", null ],
     [ "USE_UART4_RX", "chimera_8h.html#adec2bddc974c17463569c4ed49ae3fba", null ],
     [ "USE_UART4_TX", "chimera_8h.html#a47ab6305ed389bd1c4d814f9d330404d", null ],
     [ "USE_UART7_RX", "chimera_8h.html#a526d35c486f9bbecc076fb390660ba3c", null ],

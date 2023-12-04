@@ -182,301 +182,313 @@ $(document).ready(function(){initNavTree('px4fmu_8h_source.html',''); initResiza
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4d130fa14265d4aefded214285df4915">   99</a></span>&#160;<span class="preprocessor">#define MilliAmpereOfAdc(adc) ((3.3f/4096.0f) * 36367.51556f * adc)</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * PWM defines</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO1)</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * PWM TIM defines</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> * enable TIM1 and TIM4 by default</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef USE_PWM_TIM1</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a77be6fa093ec574ca4b520e7cf5f712c">  106</a></span>&#160;<span class="preprocessor">#define USE_PWM_TIM1 1</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define PWM_SERVO_1 0</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO    PAL_PORT(LINE_SERVO1)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN     PAL_PAD(LINE_SERVO1)</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF      AF_LINE_SERVO1</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO1_TIM)</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CHANNEL (SERVO1_TIM_CH-1)</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO1_TIM)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO2)</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define PWM_SERVO_2 1</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO    PAL_PORT(LINE_SERVO2)</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN     PAL_PAD(LINE_SERVO2)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF      AF_LINE_SERVO2</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO2_TIM)</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CHANNEL (SERVO2_TIM_CH-1)</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO2_TIM)</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO3)</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#define PWM_SERVO_3 2</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO    PAL_PORT(LINE_SERVO3)</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN     PAL_PAD(LINE_SERVO3)</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF      AF_LINE_SERVO3</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO3_TIM)</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CHANNEL (SERVO3_TIM_CH-1)</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO3_TIM)</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO4)</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define PWM_SERVO_4 3</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO    PAL_PORT(LINE_SERVO4)</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN     PAL_PAD(LINE_SERVO4)</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF      AF_LINE_SERVO4</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO4_TIM)</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CHANNEL (SERVO4_TIM_CH-1)</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO4_TIM)</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO5)</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#define PWM_SERVO_5 4</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO    PAL_PORT(LINE_SERVO5)</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN     PAL_PAD(LINE_SERVO5)</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF      AF_LINE_SERVO5</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO5_TIM)</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CHANNEL (SERVO5_TIM_CH-1)</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO5_TIM)</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO6)</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#ifndef USE_PWM6</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO    PAL_PORT(LINE_SERVO6)</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN     PAL_PAD(LINE_SERVO6)</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF      AF_LINE_SERVO6</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO6_TIM)</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_CHANNEL (SERVO6_TIM_CH-1)</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO6_TIM)</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO7)</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#ifndef USE_PWM7</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#define USE_PWM7 1</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#if USE_PWM7</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#define PWM_SERVO_7 6</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_GPIO    PAL_PORT(LINE_SERVO7)</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_PIN     PAL_PAD(LINE_SERVO7)</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_AF      AF_LINE_SERVO7</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO7_TIM)</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_CHANNEL (SERVO7_TIM_CH-1)</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO7_TIM)</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO8)</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#ifndef USE_PWM8</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#define USE_PWM8 1</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#if USE_PWM8</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#define PWM_SERVO_8 7</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_GPIO    PAL_PORT(LINE_SERVO8)</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_PIN     PAL_PAD(LINE_SERVO8)</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_AF      AF_LINE_SERVO8</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO8_TIM)</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_CHANNEL (SERVO8_TIM_CH-1)</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO8_TIM)</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a37def755123d949a1f843b002daa9408">  227</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_PORT_TX GPIOB</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2a8241c19fc58341f2cac4db9d699c3a">  228</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_TX GPIO6</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a67ca3992a81b2ce8b95bf16396a5d08e">  229</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_PORT_RX GPIOB</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012">  230</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_RX GPIO7</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a93f15522bec0f69dad61de7b7dbb9e18">  231</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_AF 7</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70">  233</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_PORT_TX GPIOD</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa">  234</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_TX GPIO5</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5ab66f34d0a05ab9b8080edaed3ddaa3">  235</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_PORT_RX GPIOD</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#af93888595216eb71acfec667e7b5bdd2">  236</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_RX GPIO6</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a362880424997bf76d4e742c8c8504014">  237</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_AF 7</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a81a706c185f561248908b837ec5fd9d2">  239</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_PORT_TX GPIOD</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289">  240</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_TX GPIO8</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae2fd7d9fbe28f2e0fd5c6b3582dcd883">  241</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_PORT_RX GPIOD</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad5f76821cdd9ca9826c5b13902e7c16a">  242</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_RX GPIO9</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a192437e223012d0a12e92c878e3c2877">  243</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_AF 7</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifndef USE_PWM_TIM4</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afeadf07b12eaf0734ffdb1d057a59159">  110</a></span>&#160;<span class="preprocessor">#define USE_PWM_TIM4 1</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> * PWM defines</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO1)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#define PWM_SERVO_1 0</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO    PAL_PORT(LINE_SERVO1)</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN     PAL_PAD(LINE_SERVO1)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF      AF_LINE_SERVO1</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO1_TIM)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CHANNEL (SERVO1_TIM_CH-1)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO1_TIM)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO2)</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#define PWM_SERVO_2 1</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO    PAL_PORT(LINE_SERVO2)</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN     PAL_PAD(LINE_SERVO2)</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF      AF_LINE_SERVO2</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO2_TIM)</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CHANNEL (SERVO2_TIM_CH-1)</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO2_TIM)</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO3)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define PWM_SERVO_3 2</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO    PAL_PORT(LINE_SERVO3)</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN     PAL_PAD(LINE_SERVO3)</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF      AF_LINE_SERVO3</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO3_TIM)</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CHANNEL (SERVO3_TIM_CH-1)</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO3_TIM)</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO4)</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#define PWM_SERVO_4 3</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO    PAL_PORT(LINE_SERVO4)</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN     PAL_PAD(LINE_SERVO4)</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF      AF_LINE_SERVO4</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO4_TIM)</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CHANNEL (SERVO4_TIM_CH-1)</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO4_TIM)</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO5)</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#define PWM_SERVO_5 4</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO    PAL_PORT(LINE_SERVO5)</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN     PAL_PAD(LINE_SERVO5)</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF      AF_LINE_SERVO5</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO5_TIM)</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CHANNEL (SERVO5_TIM_CH-1)</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO5_TIM)</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO6)</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#ifndef USE_PWM6</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO    PAL_PORT(LINE_SERVO6)</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN     PAL_PAD(LINE_SERVO6)</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF      AF_LINE_SERVO6</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO6_TIM)</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_CHANNEL (SERVO6_TIM_CH-1)</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO6_TIM)</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO7)</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#ifndef USE_PWM7</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#define USE_PWM7 1</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#if USE_PWM7</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#define PWM_SERVO_7 6</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_GPIO    PAL_PORT(LINE_SERVO7)</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_PIN     PAL_PAD(LINE_SERVO7)</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_AF      AF_LINE_SERVO7</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO7_TIM)</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_CHANNEL (SERVO7_TIM_CH-1)</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO7_TIM)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#if defined(LINE_SERVO8)</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#ifndef USE_PWM8</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#define USE_PWM8 1</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if USE_PWM8</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#define PWM_SERVO_8 7</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_GPIO    PAL_PORT(LINE_SERVO8)</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_PIN     PAL_PAD(LINE_SERVO8)</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_AF      AF_LINE_SERVO8</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_DRIVER  CONCAT_BOARD_PARAM(PWMD, SERVO8_TIM)</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_CHANNEL (SERVO8_TIM_CH-1)</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_CONF    CONCAT_BOARD_PARAM(pwmcfg, SERVO8_TIM)</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a37def755123d949a1f843b002daa9408">  239</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_PORT_TX GPIOB</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2a8241c19fc58341f2cac4db9d699c3a">  240</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_TX GPIO6</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a67ca3992a81b2ce8b95bf16396a5d08e">  241</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_PORT_RX GPIOB</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012">  242</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_RX GPIO7</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a93f15522bec0f69dad61de7b7dbb9e18">  243</a></span>&#160;<span class="preprocessor">#define UART1_GPIO_AF 7</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa6139b5c97fc9b81136faccec4e11e5">  245</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_PORT_TX GPIOA</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac9715b495518741b4819ca57cf4c93b0">  246</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_TX GPIO0</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a304df494998391b2e2797b31aeaa32bc">  247</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_PORT_RX GPIOA</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a549d4d49d1b0093e0e56bb63cb6f9729">  248</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_RX GPIO1</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aed15d8f5ffe14a760d9ce36c0df98621">  249</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_AF 8</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70">  245</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_PORT_TX GPIOD</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa3aead4ec0461d1a46bcaec8c51b70fa">  246</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_TX GPIO5</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5ab66f34d0a05ab9b8080edaed3ddaa3">  247</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_PORT_RX GPIOD</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#af93888595216eb71acfec667e7b5bdd2">  248</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_RX GPIO6</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a362880424997bf76d4e742c8c8504014">  249</a></span>&#160;<span class="preprocessor">#define UART2_GPIO_AF 7</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5839c6584034c6fe16e4267590a994b5">  251</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_PORT_RX GPIOC</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1a657746fc043e286c637302b06024a1">  252</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_RX GPIO7</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a829f2071c863d3cbee8fc282ec1fe373">  253</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_AF 8</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a322ad8c0a1668f81828cdeb6f6ebdbf7">  255</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_PORT_TX GPIOE</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4d767633a35c612f195676cc9389f6d8">  256</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_TX GPIO8</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac137564deb27ce767311c87e0a0daddd">  257</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_PORT_RX GPIOE</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2a036c8908b4ead0f335ab1b9ff946a5">  258</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_RX GPIO7</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a37b90735817fa4a1171bc23bb538eb67">  259</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_AF 8</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad0f53ac973c6b2ae484f979236b24a18">  261</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_PORT_TX GPIOE</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#adaa9756d35caf4f05302140e2a98e0d3">  262</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_TX GPIO1</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0347be15f136fd48ab8192fa101109db">  263</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_PORT_RX GPIOE</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf">  264</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_RX GPIO0</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad98f4e2cea6dda6a42bd485b87814709">  265</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_AF 8</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a81a706c185f561248908b837ec5fd9d2">  251</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_PORT_TX GPIOD</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289">  252</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_TX GPIO8</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae2fd7d9fbe28f2e0fd5c6b3582dcd883">  253</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_PORT_RX GPIOD</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad5f76821cdd9ca9826c5b13902e7c16a">  254</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_RX GPIO9</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a192437e223012d0a12e92c878e3c2877">  255</a></span>&#160;<span class="preprocessor">#define UART3_GPIO_AF 7</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa6139b5c97fc9b81136faccec4e11e5">  257</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_PORT_TX GPIOA</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac9715b495518741b4819ca57cf4c93b0">  258</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_TX GPIO0</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a304df494998391b2e2797b31aeaa32bc">  259</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_PORT_RX GPIOA</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a549d4d49d1b0093e0e56bb63cb6f9729">  260</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_RX GPIO1</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aed15d8f5ffe14a760d9ce36c0df98621">  261</a></span>&#160;<span class="preprocessor">#define UART4_GPIO_AF 8</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5839c6584034c6fe16e4267590a994b5">  263</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_PORT_RX GPIOC</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1a657746fc043e286c637302b06024a1">  264</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_RX GPIO7</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a829f2071c863d3cbee8fc282ec1fe373">  265</a></span>&#160;<span class="preprocessor">#define UART6_GPIO_AF 8</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">/* Soft binding Spektrum */</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab042e0008db1bdf057e4914a1a5810a6">  268</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_PORT GPIOE</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6142c3480c91e7bb5442a558f28287d1">  269</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_PIN GPIO4 </span><span class="comment">//SPEKTRUM POWER</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">  270</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_ON gpio_clear </span><span class="comment">// yes, inverted</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac3a85dd998d6a9692605087f79413899">  271</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_OFF gpio_set</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a322ad8c0a1668f81828cdeb6f6ebdbf7">  267</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_PORT_TX GPIOE</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4d767633a35c612f195676cc9389f6d8">  268</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_TX GPIO8</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac137564deb27ce767311c87e0a0daddd">  269</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_PORT_RX GPIOE</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2a036c8908b4ead0f335ab1b9ff946a5">  270</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_RX GPIO7</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a37b90735817fa4a1171bc23bb538eb67">  271</a></span>&#160;<span class="preprocessor">#define UART7_GPIO_AF 8</span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">//A receiver on powered on 3.3v</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">  274</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_PORT GPIOC </span><span class="comment">//VDD_3V3_PERIPHERAL_EN</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">  275</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_PIN GPIO5</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a25001fd394216ea752e12aace64b4302">  276</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_ON gpio_set</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0f3b0bf83503bf59a617cc862d27148f">  277</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_OFF gpio_clear</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad0f53ac973c6b2ae484f979236b24a18">  273</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_PORT_TX GPIOE</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#adaa9756d35caf4f05302140e2a98e0d3">  274</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_TX GPIO1</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0347be15f136fd48ab8192fa101109db">  275</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_PORT_RX GPIOE</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afe9c0c4cb75f1c36995b5d548b23e6cf">  276</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_RX GPIO0</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad98f4e2cea6dda6a42bd485b87814709">  277</a></span>&#160;<span class="preprocessor">#define UART8_GPIO_AF 8</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">// /**</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">//  * PPM radio defines TODO</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">//  */</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">// #define RC_PPM_TICKS_PER_USEC 2</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">// #define PPM_TIMER_FREQUENCY 2000000</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">// #define PPM_CHANNEL ICU_CHANNEL_1</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">// #define PPM_TIMER ICUD1</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">// /*</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">//  * PWM input TODO</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">//  */</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">// // PWM_INPUT 1 on PA8 (also PPM IN)</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">// #define PWM_INPUT1_ICU            ICUD1</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">// #define PWM_INPUT1_CHANNEL        ICU_CHANNEL_1</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">// // PPM in (aka PA8) is used: not compatible with PPM RC receiver</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_PORT      GPIOA</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_PIN       GPIO8</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_AF        GPIO_AF1</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">/* Soft binding Spektrum */</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab042e0008db1bdf057e4914a1a5810a6">  280</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_PORT GPIOE</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6142c3480c91e7bb5442a558f28287d1">  281</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_PIN GPIO4 </span><span class="comment">//SPEKTRUM POWER</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">  282</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_ON gpio_clear </span><span class="comment">// yes, inverted</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac3a85dd998d6a9692605087f79413899">  283</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_POWER_OFF gpio_set</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">//A receiver on powered on 3.3v</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8e7b3c5d82b12be80fac1830d161e43d">  286</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_PORT GPIOC </span><span class="comment">//VDD_3V3_PERIPHERAL_EN</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad119900ba3b8cbaeff9fc9f3a255f3a6">  287</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_PIN GPIO5</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a25001fd394216ea752e12aace64b4302">  288</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_ON gpio_set</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0f3b0bf83503bf59a617cc862d27148f">  289</a></span>&#160;<span class="preprocessor">#define PERIPHERAL3V3_ENABLE_OFF gpio_clear</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">// /**</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">//  * PPM radio defines TODO</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">//  */</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">// #define RC_PPM_TICKS_PER_USEC 2</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">// #define PPM_TIMER_FREQUENCY 2000000</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">// #define PPM_CHANNEL ICU_CHANNEL_1</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">// #define PPM_TIMER ICUD1</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#ifndef I2C1_CLOCK_SPEED</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22c39ad944259723eb9fbe773e294139">  303</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#if I2C1_CLOCK_SPEED == 400000</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0">  306</a></span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#elif I2C1_CLOCK_SPEED == 100000</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#error Invalid I2C1 clock speed</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9914c116b1e93a66882b48999c8efcd9">  312</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {        \</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">           I2C1_DUTY_CYCLE,   \</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#ifndef I2C2_CLOCK_SPEED</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac0a2e46dae466187803c62e2e9bef045">  319</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#if I2C2_CLOCK_SPEED == 400000</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a232ef1f09041be94a60f75e8adad0d98">  322</a></span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#elif I2C2_CLOCK_SPEED == 100000</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#error Invalid I2C2 clock speed</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#acc19e345342d6130dc5351e4dcd15fea">  328</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {        \</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">           I2C2_DUTY_CYCLE,   \</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">  340</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_AF GPIO_AF5</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a871d43c3d2837b5d0719389e347aa300">  341</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MISO GPIOA</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ada248ea908ea4ee30983b56d29af8380">  342</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MISO GPIO6</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afe67bca9eb8da8654288c02124683016">  343</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MOSI GPIOA</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">  344</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MOSI GPIO7</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">  345</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_SCK GPIOA</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">  346</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_SCK GPIO5</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7177258266354e8bfdaa446881db27e1">  348</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_AF GPIO_AF5</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac76e332864ead609bed1dff4f04092c9">  349</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_MISO GPIOB</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a68386681137ae699e3b594ade89408c1">  350</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_MISO GPIO14</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8498429e77239ef33e38cf77eeafdb02">  351</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_MOSI GPIOB</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">  352</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_MOSI GPIO15</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0d5b57671b99c1c787bce7ea23b44133">  353</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_SCK GPIOB</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0bbce43be56577bdd23c83ec945fb44c">  354</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_SCK GPIO10</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">/* SPI1_SLAVE1 -&gt; slave select pin for the ICM 20609-G*/</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a62cb06db3908015c7305ca6833f90159">  357</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOC</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a697b8e633c428bd167844542c8c1453f">  358</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO15</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">/* SPI1_SLAVE1 -&gt; slave select pin for the HMC5983 */</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abed465f8e9387dc4c034b1d71989043c">  360</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOE</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6391f9c6d48eca04803022ab073df01a">  361</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO15</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">// SPI1_SLAVE2 -&gt; slave select pin for the MPU9250</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad1fce2206d522b24623e9b742b1f2988">  363</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOC</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae006e4c20f82ac5d2104debcd8615f06">  364</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO2</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">// SPI1_SLAVE3 -&gt; slave select pin for the ms5611</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">  366</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOD</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a43f488034394a3e0c0749b96fdbdd08f">  367</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO7</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">// SPI1_SLAVE4 -&gt; slave select pin for the FRAM</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">  369</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOD</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aaaf3b422873946314dfec6703a3a5580">  370</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO10</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  379</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aead66bc65b8e434c97f28429baeb2800">  385</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PORT GPIOC</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  386</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PIN GPIO8</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  387</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PORT GPIOC</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  388</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PIN GPIO9</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a719da4653e9f8f406b223235e09bf853">  389</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PORT GPIOC</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9f35b196f10e4942483d526f7f25df31">  390</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PIN GPIO10</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  391</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PORT GPIOC</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad62e199253d055f0de7aa50ee2492263">  392</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PIN GPIO11</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  393</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PORT GPIOC</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7306050aa843659659499bde3429b417">  394</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PIN GPIO12</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  395</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PORT GPIOD</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  396</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PIN GPIO2</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  397</a></span>&#160;<span class="preprocessor">#define SDIO_AF 12</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">// bat monitoring for file closing</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a10df201a6a0340fdb61816a617b6bab9">  399</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_ADC ADCD1</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa171425c899787769e5d3612c80acd2">  400</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_CHAN AD1_1_CHANNEL</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">// usb led status</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3eca81ff4917508b17002a96844e0904">  402</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_LED 3</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  403</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PORT GPIOA</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22e2edaeffd24afc57074815c42628d7">  404</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PIN GPIO9</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  410</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  411</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  412</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  413</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PX4FMU_4_00_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">// /*</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">//  * PWM input TODO</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//  */</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">// // PWM_INPUT 1 on PA8 (also PPM IN)</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">// #define PWM_INPUT1_ICU            ICUD1</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">// #define PWM_INPUT1_CHANNEL        ICU_CHANNEL_1</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">// // PPM in (aka PA8) is used: not compatible with PPM RC receiver</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_PORT      GPIOA</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_PIN       GPIO8</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">// #define PWM_INPUT1_GPIO_AF        GPIO_AF1</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#ifndef I2C1_CLOCK_SPEED</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22c39ad944259723eb9fbe773e294139">  315</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#if I2C1_CLOCK_SPEED == 400000</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0">  318</a></span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">#elif I2C1_CLOCK_SPEED == 100000</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#error Invalid I2C1 clock speed</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9914c116b1e93a66882b48999c8efcd9">  324</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {        \</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">           I2C1_DUTY_CYCLE,   \</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#ifndef I2C2_CLOCK_SPEED</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac0a2e46dae466187803c62e2e9bef045">  331</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#if I2C2_CLOCK_SPEED == 400000</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a232ef1f09041be94a60f75e8adad0d98">  334</a></span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#elif I2C2_CLOCK_SPEED == 100000</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#error Invalid I2C2 clock speed</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#acc19e345342d6130dc5351e4dcd15fea">  340</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {        \</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">           I2C2_DUTY_CYCLE,   \</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">  352</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_AF GPIO_AF5</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a871d43c3d2837b5d0719389e347aa300">  353</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MISO GPIOA</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ada248ea908ea4ee30983b56d29af8380">  354</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MISO GPIO6</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afe67bca9eb8da8654288c02124683016">  355</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MOSI GPIOA</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">  356</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MOSI GPIO7</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">  357</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_SCK GPIOA</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">  358</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_SCK GPIO5</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7177258266354e8bfdaa446881db27e1">  360</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_AF GPIO_AF5</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ac76e332864ead609bed1dff4f04092c9">  361</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_MISO GPIOB</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a68386681137ae699e3b594ade89408c1">  362</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_MISO GPIO14</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8498429e77239ef33e38cf77eeafdb02">  363</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_MOSI GPIOB</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">  364</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_MOSI GPIO15</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0d5b57671b99c1c787bce7ea23b44133">  365</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_PORT_SCK GPIOB</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0bbce43be56577bdd23c83ec945fb44c">  366</a></span>&#160;<span class="preprocessor">#define SPI2_GPIO_SCK GPIO10</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">/* SPI1_SLAVE1 -&gt; slave select pin for the ICM 20609-G*/</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a62cb06db3908015c7305ca6833f90159">  369</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOC</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a697b8e633c428bd167844542c8c1453f">  370</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO15</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">/* SPI1_SLAVE1 -&gt; slave select pin for the HMC5983 */</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abed465f8e9387dc4c034b1d71989043c">  372</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOE</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a6391f9c6d48eca04803022ab073df01a">  373</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO15</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">// SPI1_SLAVE2 -&gt; slave select pin for the MPU9250</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad1fce2206d522b24623e9b742b1f2988">  375</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOC</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ae006e4c20f82ac5d2104debcd8615f06">  376</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO2</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">// SPI1_SLAVE3 -&gt; slave select pin for the ms5611</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">  378</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOD</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a43f488034394a3e0c0749b96fdbdd08f">  379</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO7</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">// SPI1_SLAVE4 -&gt; slave select pin for the FRAM</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">  381</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOD</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aaaf3b422873946314dfec6703a3a5580">  382</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO10</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  391</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aead66bc65b8e434c97f28429baeb2800">  397</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PORT GPIOC</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">  398</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PIN GPIO8</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#abf25aa536f76d47dc6dc73da99210ac7">  399</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PORT GPIOC</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7769af3a5d7785eb756c5d0378ed7051">  400</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PIN GPIO9</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a719da4653e9f8f406b223235e09bf853">  401</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PORT GPIOC</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9f35b196f10e4942483d526f7f25df31">  402</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PIN GPIO10</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a1307338bc6abca9bbc5a1b217eee257e">  403</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PORT GPIOC</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ad62e199253d055f0de7aa50ee2492263">  404</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PIN GPIO11</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">  405</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PORT GPIOC</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a7306050aa843659659499bde3429b417">  406</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PIN GPIO12</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a2f973750f9134ee2fa55e004db3c6edc">  407</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PORT GPIOD</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">  408</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PIN GPIO2</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">  409</a></span>&#160;<span class="preprocessor">#define SDIO_AF 12</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">// bat monitoring for file closing</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a10df201a6a0340fdb61816a617b6bab9">  411</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_ADC ADCD1</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#afa171425c899787769e5d3612c80acd2">  412</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_CHAN AD1_1_CHANNEL</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">// usb led status</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3eca81ff4917508b17002a96844e0904">  414</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_LED 3</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">  415</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PORT GPIOA</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a22e2edaeffd24afc57074815c42628d7">  416</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PIN GPIO9</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  422</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;modules/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  423</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  424</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="px4fmu_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  425</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PX4FMU_4_00_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="ttc" id="apx4fmu_2chibios_2v4_80_2board_8h_html"><div class="ttname"><a href="px4fmu_2chibios_2v4_80_2board_8h.html">board.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -484,7 +496,7 @@ $(document).ready(function(){initNavTree('px4fmu_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_a047bcdfdfeeaf1b1eee45d5b84ca8be.html">px4fmu</a></li><li class="navelem"><a class="el" href="dir_8f7644de6504f8dfc06338574588c3b1.html">chibios</a></li><li class="navelem"><a class="el" href="dir_d1a0996912fde68c928b05978f37c36b.html">v4.0</a></li><li class="navelem"><a class="el" href="px4fmu_8h.html">px4fmu.h</a></li>
-    <li class="footer">Generated on Mon Dec 4 2023 08:12:36 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 4 2023 10:34:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -430,6 +430,8 @@ var cube_2orange_2board_8h =
     [ "STM32_LSECLK", "cube_2orange_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793", null ],
     [ "STM32_LSEDRV", "cube_2orange_2board_8h.html#a744a10171d8d258a2459deafb6d08ce2", null ],
     [ "STM32H743xx", "cube_2orange_2board_8h.html#a975ab8159aa731adece78616b6739dee", null ],
+    [ "USE_PWM_TIM1", "cube_2orange_2board_8h.html#a77be6fa093ec574ca4b520e7cf5f712c", null ],
+    [ "USE_PWM_TIM4", "cube_2orange_2board_8h.html#afeadf07b12eaf0734ffdb1d057a59159", null ],
     [ "VAL_GPIOA_AFRH", "cube_2orange_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b", null ],
     [ "VAL_GPIOA_AFRL", "cube_2orange_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9", null ],
     [ "VAL_GPIOA_MODER", "cube_2orange_2board_8h.html#ad16dfcfb4a90d9b761e03c3ac6aadd2e", null ],

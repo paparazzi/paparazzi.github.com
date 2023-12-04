@@ -123,6 +123,8 @@ var px4fmu_2chibios_2v2_84_2board_8h =
     [ "USE_PWM3", "px4fmu_2chibios_2v2_84_2board_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a", null ],
     [ "USE_PWM4", "px4fmu_2chibios_2v2_84_2board_8h.html#a8899afdbd830cb0b81968fc660291934", null ],
     [ "USE_PWM5", "px4fmu_2chibios_2v2_84_2board_8h.html#a402c216e512bc4a39616400af32b7c7f", null ],
+    [ "USE_PWM_TIM2", "px4fmu_2chibios_2v2_84_2board_8h.html#a4e705c111c9ec43b5223ad919b2e10ce", null ],
+    [ "USE_PWM_TIM3", "px4fmu_2chibios_2v2_84_2board_8h.html#aeca90cc1a13d8f8b04c19bff3f6d4325", null ],
     [ "VAL_GPIOA_AFRH", "px4fmu_2chibios_2v2_84_2board_8h.html#a250f4c63cbd770a83e2186d130b5f41b", null ],
     [ "VAL_GPIOA_AFRL", "px4fmu_2chibios_2v2_84_2board_8h.html#a8b4e7aaf8051d3e479a6f3569a49e0a9", null ],
     [ "VAL_GPIOA_MODER", "px4fmu_2chibios_2v2_84_2board_8h.html#ad16dfcfb4a90d9b761e03c3ac6aadd2e", null ],

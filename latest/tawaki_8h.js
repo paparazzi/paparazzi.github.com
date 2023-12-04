@@ -214,6 +214,7 @@ var tawaki_8h =
     [ "USE_PWM7", "tawaki_8h.html#a6e88e081589d574ae0857021a855266f", null ],
     [ "USE_PWM8", "tawaki_8h.html#a0d8ddd81e41aff01329c07d725be9b64", null ],
     [ "USE_PWM9", "tawaki_8h.html#acfbb66d0393eea18786152185afbce05", null ],
+    [ "USE_PWM_TIM1", "tawaki_8h.html#a77be6fa093ec574ca4b520e7cf5f712c", null ],
     [ "USE_UART6_RX", "tawaki_8h.html#ab3853c8afa7d258d058324a953d03672", null ],
     [ "USE_UART6_TX", "tawaki_8h.html#acac1b4685b58fd2bb91ef309d8b6b4ea", null ],
     [ "USE_UART8_RX", "tawaki_8h.html#aa8a0c223a98c12a3591c1213c9d30365", null ],
