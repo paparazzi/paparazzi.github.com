@@ -32,6 +32,7 @@ var stabilization__indi_8c =
     [ "thrust_cb", "stabilization__indi_8c.html#ab252710595b60c7cdcf823af1d5590f6", null ],
     [ "acceleration_lowpass_filter", "stabilization__indi_8c.html#a0389a2b16a008beb79bb79b0ec6a1943", null ],
     [ "act_dyn_discrete", "stabilization__indi_8c.html#ab035369ed04b28d724833c9884d88ea4", null ],
+    [ "act_first_order_cutoff", "stabilization__indi_8c.html#aaf97d6f89fcdaa70835f0c4b8b8fbc23", null ],
     [ "act_is_servo", "stabilization__indi_8c.html#a3099f5d69f8b2b84a9b1f7685f325adb", null ],
     [ "act_is_thruster_x", "stabilization__indi_8c.html#a2ddbfc7a123648e3be3a39e9d6518670", null ],
     [ "act_is_thruster_z", "stabilization__indi_8c.html#a80f3d04328aa2091889d0d302a53088b", null ],

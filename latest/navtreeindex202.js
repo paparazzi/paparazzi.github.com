@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"stabilization__indi_8h.html#af7b49650aef8a59b88d8b9e68aabb915":[12,0,1,0,3,2,2,33,28],
 "stabilization__indi_8h.html#af99a0439f0598bdbce1ad28854646f6e":[12,0,1,0,3,2,2,33,27],
 "stabilization__indi_8h_source.html":[12,0,1,0,3,2,2,33],
 "stabilization__indi__simple_8c.html":[12,0,1,0,3,2,2,34],
@@ -63,8 +64,8 @@ var NAVTREEINDEX202 =
 "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21":[12,0,1,0,3,2,2,33,0,1],
 "stabilization__indi__simple_8h.html#a8a512f602804243e3bde436238f98342":[12,0,1,0,3,2,2,35,2,2],
 "stabilization__indi__simple_8h.html#a9338ac3a1ac35ecbeeb9e726610b3ff7":[12,0,1,0,3,2,2,35,1,4],
-"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,35,0,0],
 "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,33,0,0],
+"stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a":[12,0,1,0,3,2,2,35,0,0],
 "stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b":[12,0,1,0,3,2,2,35,5],
 "stabilization__indi__simple_8h.html#a9cd57664d6985e67d18ce07a319b903e":[12,0,1,0,3,2,2,35,1,2],
 "stabilization__indi__simple_8h.html#aa20c753face711591a2a4eba30a7a635":[12,0,1,0,3,2,2,35,12],
@@ -83,8 +84,8 @@ var NAVTREEINDEX202 =
 "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6":[12,0,1,0,3,2,2,35,2,11],
 "stabilization__indi__simple_8h.html#structIndiEstimation":[12,0,1,0,3,2,2,35,1],
 "stabilization__indi__simple_8h.html#structIndiVariables":[12,0,1,0,3,2,2,35,2],
-"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,33,0],
 "stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,35,0],
+"stabilization__indi__simple_8h.html#structIndi__gains":[12,0,1,0,3,2,2,33,0],
 "stabilization__indi__simple_8h_source.html":[12,0,1,0,3,2,2,35],
 "stabilization__none_8c.html":[12,0,1,0,3,2,2,36],
 "stabilization__none_8c.html#a03faaedbd0839f6e8b94c5788feb4ff4":[12,0,1,0,3,2,2,36,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "stereocam__droplet_8c.html#a2f6691e10b1cee8d874cecc9d358f11d":[12,0,1,0,6,66,0,0,10],
 "stereocam__droplet_8c.html#a304b77dceeec4285bad836b9bbced42d":[12,0,1,0,6,66,0,0,11],
 "stereocam__droplet_8c.html#a442b0b931977a325cfb9878f316d062e":[12,0,1,0,6,66,0,0,4],
-"stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f":[12,0,1,0,6,66,0,0,3],
-"stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b":[12,0,1,0,6,66,0,0,13]
+"stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f":[12,0,1,0,6,66,0,0,3]
 };
