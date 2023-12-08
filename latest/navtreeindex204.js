@@ -1,5 +1,6 @@
 var NAVTREEINDEX204 =
 {
+"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,0,3,1,0,3,1],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab":[12,0,1,0,0,3,1,0,3,4],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h_source.html":[12,0,1,0,0,3,1,0,3],
 "stm32_2modules_2core_2settings__arch_8c.html":[12,0,1,0,0,3,1,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "superbitrf__rc_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18":[12,0,1,0,6,56,23,0],
 "superbitrf__rc_8h.html#a7cc3813c8b10a6392586d6de2212ba06":[12,0,1,0,6,56,23,9],
 "superbitrf__rc_8h.html#a8b08ebd84535982413ca015939d18053":[12,0,1,0,6,56,23,2],
-"superbitrf__rc_8h.html#a8e61ffe584bf24170117b9fcb2da4023":[12,0,1,0,6,56,23,12],
-"superbitrf__rc_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465":[12,0,1,0,6,56,23,5]
+"superbitrf__rc_8h.html#a8e61ffe584bf24170117b9fcb2da4023":[12,0,1,0,6,56,23,12]
 };

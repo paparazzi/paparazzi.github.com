@@ -911,8 +911,16 @@ var onboard_modules =
     ] ],
     [ "bat_checker module", "module__bat_checker.html", [
       [ "Example for airframe file", "module__bat_checker.html#module_load_example__bat_checker", null ],
-      [ "Module configuration options", "module__bat_checker.html#configuration__bat_checker", null ],
+      [ "Module configuration options", "module__bat_checker.html#configuration__bat_checker", [
+        [ "Define Options", "module__bat_checker.html#define", null ]
+      ] ],
       [ "Module functions", "module__bat_checker.html#functions__bat_checker", [
+        [ "Init Functions", "module__bat_checker.html#init_functions", null ],
+        [ "Periodic Functions", "module__bat_checker.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__bat_checker.html#files", [
+        [ "Header Files", "module__bat_checker.html#headers", null ],
+        [ "Source Files", "module__bat_checker.html#sources", null ],
         [ "Raw bat_checker.xml file:", "module__bat_checker.html#module_xml__bat_checker", null ]
       ] ]
     ] ],
@@ -1217,20 +1225,20 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
-    ] ],
-    [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
       ] ]
     ] ],
+    [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+    ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1242,7 +1250,9 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
-      [ "Module configuration options", "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common", null ],
+      [ "Module configuration options", "module__imu_aspirin_v2_common.html#configuration__imu_aspirin_v2_common", [
+        [ "Configure Options", "module__imu_aspirin_v2_common.html#configure", null ]
+      ] ],
       [ "Module functions", "module__imu_aspirin_v2_common.html#functions__imu_aspirin_v2_common", [
         [ "Raw imu_aspirin_v2_common.xml file:", "module__imu_aspirin_v2_common.html#module_xml__imu_aspirin_v2_common", null ]
       ] ]
@@ -1350,12 +1360,8 @@ var onboard_modules =
     ] ],
     [ "imu_mpu9250 module", "module__imu_mpu9250.html", [
       [ "Example for airframe file", "module__imu_mpu9250.html#module_load_example__imu_mpu9250", null ],
-      [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", [
-        [ "Configure Options", "module__imu_mpu9250.html#configure", null ],
-        [ "Define Options", "module__imu_mpu9250.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__imu_mpu9250.html#configuration__imu_mpu9250", null ],
       [ "Module functions", "module__imu_mpu9250.html#functions__imu_mpu9250", [
-        [ "Event Functions", "module__imu_mpu9250.html#event_functions", null ],
         [ "Raw imu_mpu9250.xml file:", "module__imu_mpu9250.html#module_xml__imu_mpu9250", null ]
       ] ]
     ] ],
@@ -1829,6 +1835,7 @@ var onboard_modules =
     [ "humid_pcap01 module", "module__humid_pcap01.html", [
       [ "Example for airframe file", "module__humid_pcap01.html#module_load_example__humid_pcap01", null ],
       [ "Module functions", "module__humid_pcap01.html#functions__humid_pcap01", [
+        [ "Event Functions", "module__humid_pcap01.html#event_functions", null ],
         [ "Raw humid_pcap01.xml file:", "module__humid_pcap01.html#module_xml__humid_pcap01", null ]
       ] ]
     ] ],
@@ -2867,23 +2874,17 @@ var onboard_modules =
     ] ],
     [ "sys_id_chirp module", "module__sys_id_chirp.html", [
       [ "Example for airframe file", "module__sys_id_chirp.html#module_load_example__sys_id_chirp", null ],
-      [ "Module configuration options", "module__sys_id_chirp.html#configuration__sys_id_chirp", null ],
+      [ "Module configuration options", "module__sys_id_chirp.html#configuration__sys_id_chirp", [
+        [ "Airframe file section", "module__sys_id_chirp.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__sys_id_chirp.html#functions__sys_id_chirp", [
         [ "Raw sys_id_chirp.xml file:", "module__sys_id_chirp.html#module_xml__sys_id_chirp", null ]
       ] ]
     ] ],
     [ "sys_id_doublet module", "module__sys_id_doublet.html", [
       [ "Example for airframe file", "module__sys_id_doublet.html#module_load_example__sys_id_doublet", null ],
-      [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", [
-        [ "Airframe file section", "module__sys_id_doublet.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__sys_id_doublet.html#configuration__sys_id_doublet", null ],
       [ "Module functions", "module__sys_id_doublet.html#functions__sys_id_doublet", [
-        [ "Init Functions", "module__sys_id_doublet.html#init_functions", null ],
-        [ "Periodic Functions", "module__sys_id_doublet.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__sys_id_doublet.html#files", [
-        [ "Header Files", "module__sys_id_doublet.html#headers", null ],
-        [ "Source Files", "module__sys_id_doublet.html#sources", null ],
         [ "Raw sys_id_doublet.xml file:", "module__sys_id_doublet.html#module_xml__sys_id_doublet", null ]
       ] ]
     ] ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,18,0],
 "module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,18,1,0],
 "module__adc.html":[1,261],
 "module__adc.html#module_load_example__adc":[1,261,0],
@@ -233,21 +234,20 @@ var NAVTREEINDEX130 =
 "module__baro_sim.html#module_xml__baro_sim":[1,394,1,0],
 "module__bat_checker.html":[1,137],
 "module__bat_checker.html#configuration__bat_checker":[1,137,1],
+"module__bat_checker.html#define":[1,137,1,0],
+"module__bat_checker.html#files":[1,137,3],
 "module__bat_checker.html#functions__bat_checker":[1,137,2],
+"module__bat_checker.html#headers":[1,137,3,0],
+"module__bat_checker.html#init_functions":[1,137,2,0],
 "module__bat_checker.html#module_load_example__bat_checker":[1,137,0],
-"module__bat_checker.html#module_xml__bat_checker":[1,137,2,0],
+"module__bat_checker.html#module_xml__bat_checker":[1,137,3,2],
+"module__bat_checker.html#periodic_functions":[1,137,2,1],
+"module__bat_checker.html#sources":[1,137,3,1],
 "module__bat_voltage_ardrone2.html":[1,395],
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,395,1],
 "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,395,0],
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,395,1,0],
 "module__battery_monitor.html":[1,21],
 "module__battery_monitor.html#configuration__battery_monitor":[1,21,1],
-"module__battery_monitor.html#functions__battery_monitor":[1,21,2],
-"module__battery_monitor.html#module_load_example__battery_monitor":[1,21,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,21,2,0],
-"module__bebop_ae_awb.html":[1,52],
-"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,52,1],
-"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,52,2],
-"module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,52,0],
-"module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,52,2,0]
+"module__battery_monitor.html#functions__battery_monitor":[1,21,2]
 };

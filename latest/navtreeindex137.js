@@ -1,5 +1,11 @@
 var NAVTREEINDEX137 =
 {
+"module__settings.html":[1,77],
+"module__settings.html#datalink_functions__settings":[1,77,2],
+"module__settings.html#functions__settings":[1,77,1],
+"module__settings.html#module_load_example__settings":[1,77,0],
+"module__settings.html#module_xml__settings":[1,77,2,0],
+"module__settings_rc.html":[1,78],
 "module__settings_rc.html#module_load_example__settings_rc":[1,78,0],
 "module__settings_rc.html#module_xml__settings_rc":[1,78,0,0],
 "module__shell.html":[1,79],
@@ -141,21 +147,16 @@ var NAVTREEINDEX137 =
 "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,438,0],
 "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,438,2,0],
 "module__sys_id_chirp.html":[1,439],
+"module__sys_id_chirp.html#af_section":[1,439,1,0],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,439,1],
 "module__sys_id_chirp.html#functions__sys_id_chirp":[1,439,2],
 "module__sys_id_chirp.html#module_load_example__sys_id_chirp":[1,439,0],
 "module__sys_id_chirp.html#module_xml__sys_id_chirp":[1,439,2,0],
 "module__sys_id_doublet.html":[1,440],
-"module__sys_id_doublet.html#af_section":[1,440,1,0],
 "module__sys_id_doublet.html#configuration__sys_id_doublet":[1,440,1],
-"module__sys_id_doublet.html#files":[1,440,3],
 "module__sys_id_doublet.html#functions__sys_id_doublet":[1,440,2],
-"module__sys_id_doublet.html#headers":[1,440,3,0],
-"module__sys_id_doublet.html#init_functions":[1,440,2,0],
 "module__sys_id_doublet.html#module_load_example__sys_id_doublet":[1,440,0],
-"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,440,3,2],
-"module__sys_id_doublet.html#periodic_functions":[1,440,2,1],
-"module__sys_id_doublet.html#sources":[1,440,3,1],
+"module__sys_id_doublet.html#module_xml__sys_id_doublet":[1,440,2,0],
 "module__sys_id_wave.html":[1,441],
 "module__sys_id_wave.html#configuration__sys_id_wave":[1,441,1],
 "module__sys_id_wave.html#functions__sys_id_wave":[1,441,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_transparent_gec.html#functions__telemetry_transparent_gec":[1,117,1],
 "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec":[1,117,0],
 "module__telemetry_transparent_gec.html#module_xml__telemetry_transparent_gec":[1,117,1,0],
-"module__telemetry_transparent_udp.html":[1,118],
-"module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,118,1]
+"module__telemetry_transparent_udp.html":[1,118]
 };

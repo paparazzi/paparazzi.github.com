@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_survey_rectangle_rotorcraft.html#module_xml__nav_survey_rectangle_rotorcraft":[1,340,2,0],
+"module__nav_survey_zamboni.html":[1,341],
+"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,341,0],
+"module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni":[1,341,0,0],
+"module__nav_takeoff_and_landing.html":[1,342],
+"module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing":[1,342,1],
 "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,342,2],
 "module__nav_takeoff_and_landing.html#module_load_example__nav_takeoff_and_landing":[1,342,0],
 "module__nav_takeoff_and_landing.html#module_xml__nav_takeoff_and_landing":[1,342,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "module__servo_tester.html#configuration__servo_tester":[1,488,1],
 "module__servo_tester.html#functions__servo_tester":[1,488,2],
 "module__servo_tester.html#module_load_example__servo_tester":[1,488,0],
-"module__servo_tester.html#module_xml__servo_tester":[1,488,2,0],
-"module__settings.html":[1,77],
-"module__settings.html#datalink_functions__settings":[1,77,2],
-"module__settings.html#functions__settings":[1,77,1],
-"module__settings.html#module_load_example__settings":[1,77,0],
-"module__settings.html#module_xml__settings":[1,77,2,0],
-"module__settings_rc.html":[1,78]
+"module__servo_tester.html#module_xml__servo_tester":[1,488,2,0]
 };

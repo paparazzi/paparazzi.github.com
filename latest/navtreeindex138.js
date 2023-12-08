@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"module__telemetry_transparent_udp.html#configuration__telemetry_transparent_udp":[1,118,1],
 "module__telemetry_transparent_udp.html#functions__telemetry_transparent_udp":[1,118,2],
 "module__telemetry_transparent_udp.html#module_load_example__telemetry_transparent_udp":[1,118,0],
 "module__telemetry_transparent_udp.html#module_xml__telemetry_transparent_udp":[1,118,2,0],
@@ -237,8 +238,8 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635":[12,0,1,0,0,2,1,2,1,1,6],
 "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ad50815fefeb8e69fa4c70dd71edd41d7":[12,0,1,0,6,15,28,10,10],
 "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ad50815fefeb8e69fa4c70dd71edd41d7":[12,0,1,0,0,2,1,2,1,1,10],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902":[12,0,1,0,0,2,1,2,1,1,8],
 "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902":[12,0,1,0,6,15,28,10,8],
+"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902":[12,0,1,0,0,2,1,2,1,1,8],
 "modules_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795":[12,0,1,0,6,15,28,15],
 "modules_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86":[12,0,1,0,6,15,28,20],
 "modules_2datalink_2superbitrf_8h.html#a43e36e7561dc919d6f3e4032fee8e193":[12,0,1,0,6,15,28,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8h.html#a57ebae970a132e79970b3214a70a959b":[12,0,1,0,6,15,28,9],
 "modules_2datalink_2superbitrf_8h.html#a580221ec90db2b15bedb5be58c64f28e":[12,0,1,0,6,15,28,0,8],
 "modules_2datalink_2superbitrf_8h.html#a580221ec90db2b15bedb5be58c64f28e":[12,0,1,0,0,2,1,2,1,0,8],
-"modules_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec":[12,0,1,0,6,15,28,18],
-"modules_2datalink_2superbitrf_8h.html#a60752b418cec96550bc0dc27a2644f57":[12,0,1,0,6,15,28,6]
+"modules_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec":[12,0,1,0,6,15,28,18]
 };

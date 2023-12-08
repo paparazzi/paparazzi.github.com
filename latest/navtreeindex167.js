@@ -1,5 +1,6 @@
 var NAVTREEINDEX167 =
 {
+"optical__flow__functions_8h.html#structDesiredInputs":[12,0,1,0,6,14,25,4],
 "optical__flow__functions_8h.html#structGainsPID":[12,0,1,0,6,14,25,0],
 "optical__flow__functions_8h.html#structOFhistory":[12,0,1,0,6,14,25,1],
 "optical__flow__functions_8h.html#structOpticalFlowHover":[12,0,1,0,6,14,25,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX167 =
 "optical__flow__landing_8h.html#a535ad2dedb628ec10707a6c0448c525e":[12,0,1,0,6,14,29,10],
 "optical__flow__landing_8h.html#a54bfa82cd9bed1c6769d03663e4ea96a":[12,0,1,0,6,14,29,0,33],
 "optical__flow__landing_8h.html#a61d4fee4543f010e70afb17d7d9530fa":[12,0,1,0,6,14,29,0,40],
-"optical__flow__landing_8h.html#a74a182d3b575454ab7b7b3aa4c854044":[12,0,1,0,6,14,29,0,13],
-"optical__flow__landing_8h.html#a77f05df2acd1da23e187f1f3f5d5a26f":[12,0,1,0,6,14,29,8]
+"optical__flow__landing_8h.html#a74a182d3b575454ab7b7b3aa4c854044":[12,0,1,0,6,14,29,0,13]
 };

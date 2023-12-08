@@ -93,8 +93,9 @@ $(document).ready(function(){initNavTree('module__mavlink.html',''); initResizab
 <h1><a class="anchor" id="module_load_example__mavlink"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mavlink&quot;</span>&gt;</div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;MAV_AUTOPILOT_ID&quot; value=&quot;MAV_AUTOPILOT_PPZ|MAV_AUTOPILOT_ARDUPILOTMEGA&quot; /&gt;\n  &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MAVLINK_PORT&quot; value=&quot;UARTx|UDPx|UsbS&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MAVLINK_BAUD&quot; value=&quot;B57600&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;MAVLINK_BAUD&quot; value=&quot;B57600&quot; /&gt;\n    &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__mavlink"></a>
 Module configuration options</h1>
@@ -105,6 +106,12 @@ Configure Options</h2>
  Description: The port device to use for mavlink (default: UART1)</li>
 <li><b>name:</b> <code>MAVLINK_BAUD</code> <b>value:</b> <em>B57600</em> <br  />
  Description: Baud rate if MAVLINK_PORT is a UART</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>MAV_AUTOPILOT_ID</code> <b>value:</b> <em>MAV_AUTOPILOT_PPZ|MAV_AUTOPILOT_ARDUPILOTMEGA</em> <br  />
+ Description: Some MAVLink GCS/Devices require specific ID's to work. Default is to identify as MAV_AUTOPILOT_PPZ.</li>
 </ul>
 <h1><a class="anchor" id="functions__mavlink"></a>
 Module functions</h1>
@@ -162,6 +169,7 @@ Raw mavlink.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Basic</span> <span class="keyword">MAVLink</span> <span class="keyword">implementation</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAVLINK_PORT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;UARTx|UDPx|UsbS&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;The port device to use for mavlink (default: UART1)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAVLINK_BAUD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;B57600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Baud rate if MAVLINK_PORT is a UART&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;MAV_AUTOPILOT_ID&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;MAV_AUTOPILOT_PPZ|MAV_AUTOPILOT_ARDUPILOTMEGA&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Some MAVLink GCS/Devices require specific ID&#39;s to work. Default is to identify as MAV_AUTOPILOT_PPZ.&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;mavlink.h&quot;</span>/&gt;</div>
@@ -207,7 +215,7 @@ Raw mavlink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Dec 7 2023 19:23:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 8 2023 09:53:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

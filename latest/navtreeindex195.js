@@ -1,5 +1,6 @@
 var NAVTREEINDEX195 =
 {
+"sdlogger__spi__direct_8h.html#a80b30cf3301be1f5ad63d0343df44266":[12,0,1,0,6,42,23,15],
 "sdlogger__spi__direct_8h.html#a87128fdb4e3130609732b402ca3dd8ae":[12,0,1,0,6,42,23,0,7],
 "sdlogger__spi__direct_8h.html#a8ba172956b3686b7a8ccb47bb9215bf8":[12,0,1,0,6,42,23,9],
 "sdlogger__spi__direct_8h.html#a8c6f86e005e7052bdd22b62166cc3582":[12,0,1,0,6,42,23,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX195 =
 "sim_2mcu__periph_2adc__arch_8h_source.html":[12,0,1,0,0,2,0,1],
 "sim_2mcu__periph_2gpio__arch_8c.html":[12,0,1,0,0,2,0,2],
 "sim_2mcu__periph_2gpio__arch_8c_source.html":[12,0,1,0,0,2,0,2],
-"sim_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,2,0,3],
-"sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414":[12,0,1,0,0,2,0,3,38]
+"sim_2mcu__periph_2gpio__arch_8h.html":[12,0,1,0,0,2,0,3]
 };

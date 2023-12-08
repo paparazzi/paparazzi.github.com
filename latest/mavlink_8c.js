@@ -1,5 +1,6 @@
 var mavlink_8c =
 [
+    [ "MAV_AUTOPILOT_ID", "mavlink_8c.html#a4201e6ffa9267ed8c429f8d3c57caa39", null ],
     [ "MAVLINK_SYSID", "mavlink_8c.html#a68dca5c274abd4bd53d3f2f7cb85c14c", null ],
     [ "PERIODIC_C_MAVLINK", "mavlink_8c.html#a61a1a901939f646f9d819e363b97ae0b", null ],
     [ "PPM_OF_PPRZ", "mavlink_8c.html#a14aa83bf9f9e43ec0ae96b0a268a07ad", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX203 =
 {
+"stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f":[12,0,1,0,6,66,0,0,3],
 "stereocam__droplet_8c.html#a80da1bc91e0e7a9fb8033e1ad84c4c4b":[12,0,1,0,6,66,0,0,13],
 "stereocam__droplet_8c.html#a833feaee082cc0e3890e4af6ead43ad9":[12,0,1,0,6,66,0,0,9],
 "stereocam__droplet_8c.html#a985b4c4b4319aa0a457360e343c57ab9":[12,0,1,0,6,66,0,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX203 =
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989":[12,0,1,0,0,3,1,0,3,5],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4":[12,0,1,0,0,3,1,0,3,2],
 "stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f":[12,0,1,0,0,3,1,0,3,0],
-"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,3,3],
-"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b":[12,0,1,0,0,3,1,0,3,1]
+"stm32_2modules_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,3,3]
 };

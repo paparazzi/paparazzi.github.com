@@ -1,5 +1,6 @@
 var NAVTREEINDEX194 =
 {
+"scheduling__indi__simple_8h.html#a80dcca086fcbf5ef61bfe9d420b5ae10":[12,0,1,0,6,14,31,1],
 "scheduling__indi__simple_8h.html#afa83ea9955eb8fb36341a2169a823af1":[12,0,1,0,6,14,31,0],
 "scheduling__indi__simple_8h_source.html":[12,0,1,0,6,14,31],
 "sdLog_8c.html":[12,0,1,0,6,42,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX194 =
 "sdlogger__spi__direct_8h.html#a6639aaaf95233c065d96b92ed905c3ab":[12,0,1,0,6,42,23,0,12],
 "sdlogger__spi__direct_8h.html#a6f11b95174b38b15bd0a9cafb471daa2":[12,0,1,0,6,42,23,0,1],
 "sdlogger__spi__direct_8h.html#a73bad85291c740ad30c2d675b8157c33":[12,0,1,0,6,42,23,0,3],
-"sdlogger__spi__direct_8h.html#a76e9185c1183478c02cf5be47cf0da93":[12,0,1,0,6,42,23,12],
-"sdlogger__spi__direct_8h.html#a80b30cf3301be1f5ad63d0343df44266":[12,0,1,0,6,42,23,15]
+"sdlogger__spi__direct_8h.html#a76e9185c1183478c02cf5be47cf0da93":[12,0,1,0,6,42,23,12]
 };
