@@ -2657,6 +2657,12 @@ var onboard_modules =
         [ "Raw opticflow_pmw3901.xml file:", "module__opticflow_pmw3901.html#module_xml__opticflow_pmw3901", null ]
       ] ]
     ] ],
+    [ "range_sensor_uavcan module", "module__range_sensor_uavcan.html", [
+      [ "Example for airframe file", "module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan", null ],
+      [ "Module functions", "module__range_sensor_uavcan.html#functions__range_sensor_uavcan", [
+        [ "Raw range_sensor_uavcan.xml file:", "module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan", null ]
+      ] ]
+    ] ],
     [ "rpm_sensor module", "module__rpm_sensor.html", [
       [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
       [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],

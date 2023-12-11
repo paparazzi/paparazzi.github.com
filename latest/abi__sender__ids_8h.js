@@ -18,6 +18,7 @@ var abi__sender__ids_8h =
     [ "AGL_SONAR_PWM_ID", "abi__sender__ids_8h.html#aac93a193a136753365b6d5e55767c1a6", null ],
     [ "AGL_SONAR_PX4FLOW_ID", "abi__sender__ids_8h.html#a071007cc95b5ea7af87171928a27c588", null ],
     [ "AGL_TERARANGER_ONE_ID", "abi__sender__ids_8h.html#ac5506ad3bd2fdff89c509c45724396c0", null ],
+    [ "AGL_UAVCAN_ID", "abi__sender__ids_8h.html#a7a6ba9f9302be4bdb1c8a8e9439c2777", null ],
     [ "AGL_VL53L0_LASER_ARRAY_ID", "abi__sender__ids_8h.html#ab502712ce3ce4ccee06cdd471668196e", null ],
     [ "AGL_VL53L1X_ID", "abi__sender__ids_8h.html#a445c9cfbde5ffec4273b9ebc324d2076", null ],
     [ "AHRS_ALIGNER_ID", "abi__sender__ids_8h.html#aa7f24bb6aed27fdb849c69165faaf250", null ],

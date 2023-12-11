@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#GPS_SMALL":[2,0,232],
+"paparazzi_messages.html#GPS_SOL":[2,0,14],
 "paparazzi_messages.html#GROUND_CLASS":[2,2],
 "paparazzi_messages.html#GROUND_REF":[2,2,38],
 "paparazzi_messages.html#GUIDANCE":[2,0,176],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4":[12,0,1,0,1,57,7],
 "pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82":[12,0,1,0,1,57,6],
 "pc__sim_8h_source.html":[12,0,1,0,1,57],
-"pca95xx_8c.html":[12,0,1,0,7,113],
-"pca95xx_8c.html#a3720060e8e2b3aef1439b5dcd5363925":[12,0,1,0,7,113,2],
-"pca95xx_8c.html#a4894b1bc38d5d006fa97c0067f8617a7":[12,0,1,0,7,113,1]
+"pca95xx_8c.html":[12,0,1,0,7,113]
 };

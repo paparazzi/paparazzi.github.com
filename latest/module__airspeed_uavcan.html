@@ -88,15 +88,16 @@ $(document).ready(function(){initNavTree('module__airspeed_uavcan.html',''); ini
 <div class="title">airspeed_uavcan module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Airspeed sensor over the uavcan protocol</b></p>
-<p>Currently only subscribes to the</p>
+<div class="textblock"><p><b>Airspeed sensor over the uavcan protocol and optionally publishes over ABI.</b></p>
+<p><b></b></p>
+<p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__airspeed_uavcan"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_uavcan&quot;</span>&gt;</div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_UAVCAN_LOWPASS_FILTER&quot; value=&quot;TRUE|FALSE&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_UAVCAN_LOWPASS_TAU&quot; value=&quot;0.15&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_UAVCAN_LOWPASS_PERIOD&quot; value=&quot;0.1&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_UAVCAN_SEND_ABI&quot; value=&quot;1&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;AIRSPEED_UAVCAN_SEND_ABI&quot; value=&quot;true&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__airspeed_uavcan"></a>
 Module configuration options</h1>
@@ -109,8 +110,8 @@ Define Options</h2>
  Description: Time constant for second order Butterworth low pass filter</li>
 <li><b>name:</b> <code>AIRSPEED_UAVCAN_LOWPASS_PERIOD</code> <b>value:</b> <em>0.1</em> <br  />
  Description: Period at which the sensor is sending airspeed</li>
-<li><b>name:</b> <code>AIRSPEED_UAVCAN_SEND_ABI</code> <b>value:</b> <em>1</em> <br  />
- Description: 1 = Send ABI message, 0 = Log only</li>
+<li><b>name:</b> <code>AIRSPEED_UAVCAN_SEND_ABI</code> <b>value:</b> <em>true</em> <br  />
+ Description: Send the uavcan airspeed sensor over ABI</li>
 </ul>
 <h1><a class="anchor" id="functions__airspeed_uavcan"></a>
 Module functions</h1>
@@ -140,25 +141,21 @@ Raw airspeed_uavcan.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_uavcan&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;sensors&quot;</span> <span class="keyword">task</span>=<span class="stringliteral">&quot;sensors&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;</div>
-<div class="line">      <span class="keyword">Airspeed</span> <span class="keyword">sensor</span> <span class="keyword">over</span> <span class="keyword">the</span> <span class="keyword">uavcan</span> <span class="keyword">protocol.</span> <span class="keyword">Currently</span> <span class="keyword">only</span> <span class="keyword">subscribes</span> <span class="keyword">to</span> <span class="keyword">the</span> </div>
+<div class="line">      <span class="keyword">Airspeed</span> <span class="keyword">sensor</span> <span class="keyword">over</span> <span class="keyword">the</span> <span class="keyword">uavcan</span> <span class="keyword">protocol</span> <span class="keyword">and</span> <span class="keyword">optionally</span> <span class="keyword">publishes</span> <span class="keyword">over</span> <span class="keyword">ABI.</span> </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_UAVCAN_LOWPASS_FILTER&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Enable the lowpass filter for the airspeed&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_UAVCAN_LOWPASS_TAU&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.15&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Time constant for second order Butterworth low pass filter&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_UAVCAN_LOWPASS_PERIOD&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Period at which the sensor is sending airspeed&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_UAVCAN_SEND_ABI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;1 = Send ABI message, 0 = Log only&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;AIRSPEED_UAVCAN_SEND_ABI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;true&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Send the uavcan airspeed sensor over ABI&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">uavcan</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">airspeed</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_uavcan.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;airspeed_uavcan_init()&quot;</span>/&gt;</div>
-<div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;airspeed_uavcan.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -170,7 +167,7 @@ Raw airspeed_uavcan.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri Dec 8 2023 09:53:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 11 2023 19:44:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

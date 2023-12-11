@@ -1,7 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"bat__checker_8h.html":[12,0,1,0,6,23,1],
-"bat__checker_8h.html#a24e480bdb6c22d8baef30739b86a3f78":[12,0,1,0,6,23,1,1],
 "bat__checker_8h.html#a4a2f047828e01ad67b813f0b9242b5ad":[12,0,1,0,6,23,1,0],
 "bat__checker_8h_source.html":[12,0,1,0,6,23,1],
 "bat__voltage__ardrone2_8c.html":[12,0,1,0,6,62,52],
@@ -249,5 +247,7 @@ var NAVTREEINDEX22 =
 "bluegiga_8h.html#a1b8c01df06b4ac4228e908be130e9a18":[12,0,1,0,6,15,4,0,2],
 "bluegiga_8h.html#a319f8e3ab43913066407c2d009e8e366":[12,0,1,0,6,15,4,4],
 "bluegiga_8h.html#a3352aec80cd7804f967f77f142402afa":[12,0,1,0,6,15,4,0,4],
-"bluegiga_8h.html#a59308e111064cd1a2771e8696198a16e":[12,0,1,0,6,15,4,8]
+"bluegiga_8h.html#a59308e111064cd1a2771e8696198a16e":[12,0,1,0,6,15,4,8],
+"bluegiga_8h.html#a66315eb7fa09606080b4f65f0ab0149b":[12,0,1,0,6,15,4,5],
+"bluegiga_8h.html#a6c8184d1ea7b7eaae2435ac0c7bebde9":[12,0,1,0,6,15,4,0,11]
 };

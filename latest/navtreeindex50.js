@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"dw1000__arduino_8c.html#abb2b8df5c50cc7d6b56e24cbe01edeb3":[12,0,1,0,6,16,2,0,9],
-"dw1000__arduino_8c.html#abb359728eb2f69d8a0d52d94749b100f":[12,0,1,0,6,16,2,6],
 "dw1000__arduino_8c.html#ac5b039ee60472b103a7f4700df3c2c18":[12,0,1,0,6,16,2,15],
 "dw1000__arduino_8c.html#ac69c33f1afdbddc93f4606fc40376644":[12,0,1,0,6,16,2,20],
 "dw1000__arduino_8c.html#acac53dcc1b2e1d953c1642b3b15afe4c":[12,0,1,0,6,16,2,33],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "eff__scheduling__rot__wing_8h.html#a9cd33df91406509b532efd57da32e110":[12,0,1,0,6,14,17,0,7],
 "eff__scheduling__rot__wing_8h.html#a9e9367277edacb20fbcb048342bd7aca":[12,0,1,0,6,14,17,0,12],
 "eff__scheduling__rot__wing_8h.html#aa6b26464c2bd9cfeda43d4610167c6c6":[12,0,1,0,6,14,17,1,6],
-"eff__scheduling__rot__wing_8h.html#aa7454888c8b65f9c92af6e497bdd2a13":[12,0,1,0,6,14,17,0,14]
+"eff__scheduling__rot__wing_8h.html#aa7454888c8b65f9c92af6e497bdd2a13":[12,0,1,0,6,14,17,0,14],
+"eff__scheduling__rot__wing_8h.html#ab8dcde54dfec82f4a9ee88a6eaa9ec7f":[12,0,1,0,6,14,17,1,9],
+"eff__scheduling__rot__wing_8h.html#abf5269be8216262f6de63aa3ac317c3f":[12,0,1,0,6,14,17,1,13]
 };

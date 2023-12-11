@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"actuators__esc32_8c.html#a3bb04f25c575660bde096c9613fdf830":[12,0,1,0,6,0,8,7],
 "actuators__esc32_8c.html#a4f614c0bd8ad9ac8ad2e65589b11c591":[12,0,1,0,6,0,8,0],
 "actuators__esc32_8c.html#a65aac5d03b776508a6f8513a8889a8f3":[12,0,1,0,6,0,8,8],
 "actuators__esc32_8c.html#a699563136f20e59e607791d62ac81660":[12,0,1,0,6,0,8,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2":[12,0,1,0,6,0,20,0,1],
 "actuators__spektrum_8h.html#structActuatorsSpektrum":[12,0,1,0,6,0,20,0],
 "actuators__spektrum_8h_source.html":[12,0,1,0,6,0,20],
-"actuators__sts3032_8c.html":[12,0,1,0,6,0,21],
-"actuators__sts3032_8c.html#a0debee454ff1ccb307f3438045665f9f":[12,0,1,0,6,0,21,10]
+"actuators__sts3032_8c.html":[12,0,1,0,6,0,21]
 };

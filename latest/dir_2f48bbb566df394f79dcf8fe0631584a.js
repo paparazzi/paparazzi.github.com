@@ -75,6 +75,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "met_module.h", "met__module_8h.html", "met__module_8h" ],
     [ "opticflow_pmw3901.c", "opticflow__pmw3901_8c.html", "opticflow__pmw3901_8c" ],
     [ "opticflow_pmw3901.h", "opticflow__pmw3901_8h.html", "opticflow__pmw3901_8h" ],
+    [ "range_sensor_uavcan.c", "range__sensor__uavcan_8c.html", "range__sensor__uavcan_8c" ],
+    [ "range_sensor_uavcan.h", "range__sensor__uavcan_8h.html", "range__sensor__uavcan_8h" ],
     [ "rpm_sensor.c", "rpm__sensor_8c.html", "rpm__sensor_8c" ],
     [ "rpm_sensor.h", "rpm__sensor_8h.html", "rpm__sensor_8h" ],
     [ "sensors_hitl.c", "sensors__hitl_8c.html", "sensors__hitl_8c" ],
