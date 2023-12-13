@@ -1,5 +1,11 @@
 var NAVTREEINDEX204 =
 {
+"stm32_2mcu__periph_2uart__arch_8h_source.html":[12,0,1,0,0,3,0,16],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html":[12,0,1,0,0,3,1,0,0],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a001c5a2309b8056a9f6f4f407af4a4a4":[12,0,1,0,0,3,1,0,0,8],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a0f03cc6b22f1cb80e9cdf8fbe342d8e3":[12,0,1,0,0,3,1,0,0,7],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a2020e14708a65e7b0191865678610bf6":[12,0,1,0,0,3,1,0,0,4],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a3e22a148416d35c90344f04bb574e07a":[12,0,1,0,0,3,1,0,0,5],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a40854a0e0bb6575b76e4bb7d02d24c42":[12,0,1,0,0,3,1,0,0,0],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a562503833611ce2cc80e90dfb3540800":[12,0,1,0,0,3,1,0,0,1],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0":[12,0,1,0,0,3,1,0,0,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX204 =
 "sts3032__regs_8h.html#ae262ce95c73ca0bdb12bf56860ae3bbf":[12,0,1,0,7,127,12],
 "sts3032__regs_8h.html#ae2afd415cd9007f4688bf77507f0383e":[12,0,1,0,7,127,3],
 "sts3032__regs_8h.html#ae806c0d7f49372ca6fb6ce05a8081e16":[12,0,1,0,7,127,26],
-"sts3032__regs_8h.html#ae852d61abee41271a88b6ca700b36c03":[12,0,1,0,7,127,34],
-"sts3032__regs_8h.html#aeaa4b61ee11d45bd1a0cb932d7abaf77":[12,0,1,0,7,127,5],
-"sts3032__regs_8h.html#aecb107f6ab8f670c4fdef1dc46e1272a":[12,0,1,0,7,127,41],
-"sts3032__regs_8h.html#aed22cbc328d727a43c02647adf3772c4":[12,0,1,0,7,127,24],
-"sts3032__regs_8h.html#aff1dfded84ae825a24eb44dc5841339f":[12,0,1,0,7,127,32],
-"sts3032__regs_8h_source.html":[12,0,1,0,7,127],
-"stylec.html":[0,1,0]
+"sts3032__regs_8h.html#ae852d61abee41271a88b6ca700b36c03":[12,0,1,0,7,127,34]
 };

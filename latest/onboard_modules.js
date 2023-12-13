@@ -2389,8 +2389,16 @@ var onboard_modules =
     ] ],
     [ "rotwing_state module", "module__rotwing_state.html", [
       [ "Example for airframe file", "module__rotwing_state.html#module_load_example__rotwing_state", null ],
+      [ "Module configuration options", "module__rotwing_state.html#configuration__rotwing_state", null ],
       [ "Module functions", "module__rotwing_state.html#functions__rotwing_state", [
         [ "Raw rotwing_state.xml file:", "module__rotwing_state.html#module_xml__rotwing_state", null ]
+      ] ]
+    ] ],
+    [ "wing_rotation_adc_sensor module", "module__wing_rotation_adc_sensor.html", [
+      [ "Example for airframe file", "module__wing_rotation_adc_sensor.html#module_load_example__wing_rotation_adc_sensor", null ],
+      [ "Module configuration options", "module__wing_rotation_adc_sensor.html#configuration__wing_rotation_adc_sensor", null ],
+      [ "Module functions", "module__wing_rotation_adc_sensor.html#functions__wing_rotation_adc_sensor", [
+        [ "Raw wing_rotation_adc_sensor.xml file:", "module__wing_rotation_adc_sensor.html#module_xml__wing_rotation_adc_sensor", null ]
       ] ]
     ] ],
     [ "wing_rotation_controller_servo module", "module__wing_rotation_controller_servo.html", [

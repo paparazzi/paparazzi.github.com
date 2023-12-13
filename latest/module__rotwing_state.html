@@ -93,7 +93,18 @@ $(document).ready(function(){initNavTree('module__rotwing_state.html',''); initR
 <h1><a class="anchor" id="module_load_example__rotwing_state"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotwing_state&quot;</span>/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__rotwing_state"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__rotwing_state"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>ROTWING_STATE</code> prefix: <code>ROTWING_STATE_</code> <ul>
+<li><b>name</b> <code>USE_ROTATION_REF_MODEL</code> <b>value:</b> <em>FALSE</em> <br  />
+ Description: Slow down the wing rotation with a reference model</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="functions__rotwing_state"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -107,6 +118,12 @@ Periodic Functions</h2>
 <ul>
 <li><a class="el" href="rotwing__state_8c.html#aeb77669ee7369ed49ea36c28ce578d72">periodic_rotwing_state()</a><ul>
 <li>Frequency in Hz: <em>50</em> </li>
+<li>Autorun: <em>LOCK</em> <br  />
+ Periodic function automatically starts after init and can't be stopped.</li>
+</ul>
+</li>
+<li><a class="el" href="rotwing__state_8c.html#a36607fb6052d0d3d523115f5c73896fe">rotwing_state_skew_actuator_periodic()</a><ul>
+<li>Running at maximum module frequency.</li>
 <li>Autorun: <em>LOCK</em> <br  />
  Periodic function automatically starts after init and can't be stopped.</li>
 </ul>
@@ -131,6 +148,9 @@ Raw rotwing_state.xml file:</h2>
 <div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotwing_state&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;rot_wing_drone&quot;</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">This</span> <span class="keyword">module</span> <span class="keyword">keeps</span> <span class="keyword">track</span> <span class="keyword">of</span> <span class="keyword">the</span> <span class="keyword">current</span> <span class="keyword">state</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">rotating</span> <span class="keyword">wing</span> <span class="keyword">drone</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state</span> <span class="keyword">set</span> <span class="keyword">by</span> <span class="keyword">the</span> <span class="keyword">RC</span> <span class="keyword">or</span> <span class="keyword">flightplan.</span> <span class="keyword">Paramters</span> <span class="keyword">are</span> <span class="keyword">being</span> <span class="keyword">scheduled</span> <span class="keyword">in</span> <span class="keyword">each</span> <span class="keyword">change</span> <span class="keyword">of</span> <span class="keyword">a</span> <span class="keyword">current</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state.</span> <span class="keyword">Functions</span> <span class="keyword">are</span> <span class="keyword">defined</span> <span class="keyword">in</span> <span class="keyword">this</span> <span class="keyword">module</span> <span class="keyword">to</span> <span class="keyword">call</span> <span class="keyword">the</span> <span class="keyword">actual</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">desired</span> <span class="keyword">state</span> <span class="keyword">and</span> <span class="keyword">set</span> <span class="keyword">a</span> <span class="keyword">desired</span> <span class="keyword">state.</span>&lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">section</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ROTWING_STATE&quot;</span> <span class="keyword">prefix</span>=<span class="stringliteral">&quot;ROTWING_STATE_&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ROTATION_REF_MODEL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Slow down the wing rotation with a reference model&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">section</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">dl_settings</span>&gt;</div>
@@ -148,6 +168,7 @@ Raw rotwing_state.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;init_rotwing_state()&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;periodic_rotwing_state()&quot;</span> <span class="keyword">freq</span>=<span class="stringliteral">&quot;50&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">periodic</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;rotwing_state_skew_actuator_periodic()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;rotwing_state.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
@@ -159,7 +180,7 @@ Raw rotwing_state.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Dec 13 2023 12:26:42 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Dec 13 2023 13:28:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

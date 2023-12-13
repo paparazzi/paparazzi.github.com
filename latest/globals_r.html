@@ -1942,9 +1942,6 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>ROTWING_STATE_NUM_HOVER_RPM
 : <a class="el" href="rotwing__state_8c.html#a721fbe8c98ee0c98b5dc434732348fcb">rotwing_state.c</a>
 </li>
-<li>ROTWING_STATE_PD_WING_ROTATION
-: <a class="el" href="rotwing__state_8c.html#a0e930cc3a989b9087bf8b5e1484c0d30">rotwing_state.c</a>
-</li>
 <li>ROTWING_STATE_PITCH_FW_SETTING
 : <a class="el" href="rotwing__state_8h.html#ab1a67dc47e96a428849828cc8fb601b1">rotwing_state.h</a>
 </li>
@@ -1983,18 +1980,21 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>rotwing_state_skewer()
 : <a class="el" href="rotwing__state_8c.html#aad12195d52a6e354db43b1316df033bb">rotwing_state.c</a>
 </li>
-<li>ROTWING_STATE_SKEWING
-: <a class="el" href="rotwing__state_8h.html#a59710a620906ffce8ec8cb4b07dedb39">rotwing_state.h</a>
-</li>
 <li>rotwing_state_skewing
 : <a class="el" href="rotwing__state_8c.html#a5e6de09c521ca498b85269305e600cc4">rotwing_state.c</a>
 , <a class="el" href="rotwing__state_8h.html#a5e6de09c521ca498b85269305e600cc4">rotwing_state.h</a>
+</li>
+<li>ROTWING_STATE_SKEWING
+: <a class="el" href="rotwing__state_8h.html#a59710a620906ffce8ec8cb4b07dedb39">rotwing_state.h</a>
 </li>
 <li>rotwing_state_skewing_counter
 : <a class="el" href="rotwing__state_8c.html#a688aeba281deb8aef9babc7025adbc66">rotwing_state.c</a>
 </li>
 <li>ROTWING_STATE_TRANSITION_PREF_PITCH
 : <a class="el" href="rotwing__state_8c.html#aaf67c08273b9cfc2da2e747eddc425b0">rotwing_state.c</a>
+</li>
+<li>ROTWING_STATE_USE_ROTATION_REF_MODEL
+: <a class="el" href="rotwing__state_8c.html#a841fd4c8063c1a13b0eefd81f952715c">rotwing_state.c</a>
 </li>
 <li>ROTWING_STATE_WING_FW_SETTING
 : <a class="el" href="rotwing__state_8h.html#ac320b2ed662686090d77d002a0ad060f">rotwing_state.h</a>
@@ -2147,11 +2147,11 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>RSIZE
 : <a class="el" href="w5100_8c.html#a80a9583c56581301cc2877a18176b654">w5100.c</a>
 </li>
-<li>RSSI
-: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">board.h</a>
-</li>
 <li>rssi
 : <a class="el" href="cc2500__rx_8c.html#afb0dc2ef1295b6bbe7a561d3d8552dda">cc2500_rx.c</a>
+</li>
+<li>RSSI
+: <a class="el" href="holybro_2kakute__f7_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">board.h</a>
 </li>
 <li>rssi_acs
 : <a class="el" href="rssi_8c.html#a9176ffe23cd39ffcb2a57c35d5b2281d">rssi.c</a>
@@ -2579,12 +2579,14 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <li>rxChannelCount
 : <a class="el" href="cc2500__rx_8c.html#a3257da7b0b86faaad412287db96548e1">cc2500_rx.c</a>
 </li>
+<li>rxConfig()
+: <a class="el" href="cc2500__settings_8c.html#af06545e739401827aa40484c0ad98353">cc2500_settings.c</a>
+</li>
 <li>rxconfig
 : <a class="el" href="cc2500__settings_8c.html#abcec7bcb442b20891fa9277c18c5d9ea">cc2500_settings.c</a>
 </li>
 <li>rxConfig()
 : <a class="el" href="cc2500__settings_8h.html#af06545e739401827aa40484c0ad98353">cc2500_settings.h</a>
-, <a class="el" href="cc2500__settings_8c.html#af06545e739401827aa40484c0ad98353">cc2500_settings.c</a>
 </li>
 <li>rxConfig_t
 : <a class="el" href="cc2500__settings_8h.html#a98f5e83ed6cd438b86edea0a0ad46ba4">cc2500_settings.h</a>
@@ -2707,7 +2709,7 @@ $(document).ready(function(){initNavTree('globals_r.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Dec 13 2023 12:26:43 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Dec 13 2023 13:28:03 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

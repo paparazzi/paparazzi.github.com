@@ -1038,7 +1038,6 @@ var annotated_dup =
     [ "wind_estimation_quadrotor", "wind__estimation__quadrotor_8c.html#structwind__estimation__quadrotor", "wind__estimation__quadrotor_8c_structwind__estimation__quadrotor" ],
     [ "wind_estimation_quadrotor_params", "wind__estimation__quadrotor_8h.html#structwind__estimation__quadrotor__params", "wind__estimation__quadrotor_8h_structwind__estimation__quadrotor__params" ],
     [ "WindEstimator", "wind__estimator_8h.html#structWindEstimator", "wind__estimator_8h_structWindEstimator" ],
-    [ "wing_rotation_controller_t", "wing__rotation__controller__servo_8h.html#structwing__rotation__controller__t", "wing__rotation__controller__servo_8h_structwing__rotation__controller__t" ],
     [ "WS2812Config", "light__ws2812__arch_8c.html#structWS2812Config", "light__ws2812__arch_8c_structWS2812Config" ],
     [ "WS2812Driver", "light__ws2812__arch_8c.html#structWS2812Driver", "light__ws2812__arch_8c_structWS2812Driver" ],
     [ "Xsens", "xsens700_8h.html#structXsens", "xsens700_8h_structXsens" ],

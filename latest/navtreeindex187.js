@@ -1,5 +1,11 @@
 var NAVTREEINDEX187 =
 {
+"px4io__2_84_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2":[12,0,1,0,1,61,6],
+"px4io__2_84_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,61,52],
+"px4io__2_84_8h.html#a928661c4b9e032ff7d05f38a3bb952cb":[12,0,1,0,1,61,98],
+"px4io__2_84_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,61,43],
+"px4io__2_84_8h.html#a93f15522bec0f69dad61de7b7dbb9e18":[12,0,1,0,1,61,79],
+"px4io__2_84_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32":[12,0,1,0,1,61,30],
 "px4io__2_84_8h.html#a9bc80e11e3a131466e4a223108b55b6c":[12,0,1,0,1,61,25],
 "px4io__2_84_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65":[12,0,1,0,1,61,99],
 "px4io__2_84_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d":[12,0,1,0,1,61,56],
@@ -243,11 +249,5 @@ var NAVTREEINDEX187 =
 "radio__control_8h.html#structRadioControl":[12,0,1,0,6,56,8,0],
 "radio__control_8h_source.html":[12,0,1,0,6,56,8],
 "ram__arch_8h.html":[12,0,1,0,0,0,0,11],
-"ram__arch_8h.html#a1fb6d337679a1a195b83adabc1e10f0e":[12,0,1,0,0,0,0,11,7],
-"ram__arch_8h.html#a1ff42b8c14da0037178de9e538ab656c":[12,0,1,0,0,0,0,11,1],
-"ram__arch_8h.html#a208b3df92363a24cf81f80a93aa332b0":[12,0,1,0,0,0,0,11,2],
-"ram__arch_8h.html#a866f92844933aceabb2fe7c11fc3ea0b":[12,0,1,0,0,0,0,11,3],
-"ram__arch_8h.html#a96993d8acfacc6a56b9af4e1ebdb3426":[12,0,1,0,0,0,0,11,5],
-"ram__arch_8h.html#aa8ee831286ad88ee8413cb67f4a403c0":[12,0,1,0,0,0,0,11,6],
-"ram__arch_8h.html#aba77f36a1f094956e842ce979d2541e0":[12,0,1,0,0,0,0,11,4]
+"ram__arch_8h.html#a1fb6d337679a1a195b83adabc1e10f0e":[12,0,1,0,0,0,0,11,7]
 };
