@@ -1,5 +1,15 @@
 var NAVTREEINDEX204 =
 {
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a40854a0e0bb6575b76e4bb7d02d24c42":[12,0,1,0,0,3,1,0,0,0],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#a562503833611ce2cc80e90dfb3540800":[12,0,1,0,0,3,1,0,0,1],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0":[12,0,1,0,0,3,1,0,0,3],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#acd2f86fcb3553dedcde8e395b93b05e0":[12,0,1,0,0,3,1,0,0,2],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c.html#af7a141f1f7e111b31bb1563e0f98c1cd":[12,0,1,0,0,3,1,0,0,6],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8c_source.html":[12,0,1,0,0,3,1,0,0],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html":[12,0,1,0,0,3,1,0,1],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a2020e14708a65e7b0191865678610bf6":[12,0,1,0,0,3,1,0,1,7],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a233b9987dd347386efc0e8ae7a52123e":[12,0,1,0,0,3,1,0,1,1],
+"stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a3e22a148416d35c90344f04bb574e07a":[12,0,1,0,0,3,1,0,1,8],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35":[12,0,1,0,0,3,1,0,1,3],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a562503833611ce2cc80e90dfb3540800":[12,0,1,0,0,3,1,0,1,4],
 "stm32_2modules_2actuators_2actuators__dualpwm__arch_8h.html#a697598adcd1b4a73e0f04eec132a8a4c":[12,0,1,0,0,3,1,0,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX204 =
 "sts3032__regs_8h.html#aed22cbc328d727a43c02647adf3772c4":[12,0,1,0,7,127,24],
 "sts3032__regs_8h.html#aff1dfded84ae825a24eb44dc5841339f":[12,0,1,0,7,127,32],
 "sts3032__regs_8h_source.html":[12,0,1,0,7,127],
-"stylec.html":[0,1,0],
-"stylec.html#stylecpp":[0,1,0,6],
-"stylec.html#styleformat":[0,1,0,0],
-"stylec.html#stylefunc":[0,1,0,3],
-"stylec.html#styleif":[0,1,0,5],
-"stylec.html#stylenames":[0,1,0,1],
-"stylec.html#styleswitch":[0,1,0,4],
-"stylec.html#styletypes":[0,1,0,2],
-"styledoxygen.html":[0,1,1],
-"styledoxygen.html#styledoxyall":[0,1,1,1],
-"styledoxygen.html#styledoxyblocks":[0,1,1,0]
+"stylec.html":[0,1,0]
 };
