@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"module__nav_survey_zamboni.html#module_load_example__nav_survey_zamboni":[1,341,0],
-"module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni":[1,341,0,0],
 "module__nav_takeoff_and_landing.html":[1,342],
 "module__nav_takeoff_and_landing.html#configuration__nav_takeoff_and_landing":[1,342,1],
 "module__nav_takeoff_and_landing.html#functions__nav_takeoff_and_landing":[1,342,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "module__sensors_hitl.html#module_load_example__sensors_hitl":[1,410,0],
 "module__sensors_hitl.html#module_xml__sensors_hitl":[1,410,3,0],
 "module__servo_tester.html":[1,490],
-"module__servo_tester.html#configuration__servo_tester":[1,490,1]
+"module__servo_tester.html#configuration__servo_tester":[1,490,1],
+"module__servo_tester.html#functions__servo_tester":[1,490,2],
+"module__servo_tester.html#module_load_example__servo_tester":[1,490,0]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"module__servo_tester.html#functions__servo_tester":[1,490,2],
-"module__servo_tester.html#module_load_example__servo_tester":[1,490,0],
 "module__servo_tester.html#module_xml__servo_tester":[1,490,2,0],
 "module__settings.html":[1,77],
 "module__settings.html#datalink_functions__settings":[1,77,2],
@@ -38,6 +36,8 @@ var NAVTREEINDEX137 =
 "module__sonar_pwm.html#module_xml__sonar_pwm":[1,417,2,0],
 "module__sonar_vl53l1x.html":[1,418],
 "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x":[1,418,1],
+"module__sonar_vl53l1x.html#configure":[1,418,1,0],
+"module__sonar_vl53l1x.html#define":[1,418,1,1],
 "module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,418,2],
 "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x":[1,418,0],
 "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,418,2,0],
@@ -79,6 +79,7 @@ var NAVTREEINDEX137 =
 "module__stabilization_indi.html#module_load_example__stabilization_indi":[1,424,0],
 "module__stabilization_indi.html#module_xml__stabilization_indi":[1,424,2,0],
 "module__stabilization_indi_simple.html":[1,425],
+"module__stabilization_indi_simple.html#af_section":[1,425,1,0],
 "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple":[1,425,1],
 "module__stabilization_indi_simple.html#functions__stabilization_indi_simple":[1,425,2],
 "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple":[1,425,0],
@@ -150,7 +151,6 @@ var NAVTREEINDEX137 =
 "module__sys_id_auto_doublets.html#module_load_example__sys_id_auto_doublets":[1,440,0],
 "module__sys_id_auto_doublets.html#module_xml__sys_id_auto_doublets":[1,440,2,0],
 "module__sys_id_chirp.html":[1,441],
-"module__sys_id_chirp.html#af_section":[1,441,1,0],
 "module__sys_id_chirp.html#configuration__sys_id_chirp":[1,441,1],
 "module__sys_id_chirp.html#functions__sys_id_chirp":[1,441,2],
 "module__sys_id_chirp.html#module_load_example__sys_id_chirp":[1,441,0],
