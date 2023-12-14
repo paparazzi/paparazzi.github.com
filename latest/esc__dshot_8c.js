@@ -4,6 +4,7 @@ var esc__dshot_8c =
     [ "DCR_DBA", "esc__dshot_8c.html#aa28bfa199426ee8ae1d0c46c32e5c1c4", null ],
     [ "DCR_DBL", "esc__dshot_8c.html#ae28959e44bfeb6d94e2c4c57012b379a", null ],
     [ "DSHOT_BIT0_DUTY", "esc__dshot_8c.html#a85c3a3ac5a058d1c9651412742a8c6c3", null ],
+    [ "DSHOT_BIT0_DUTY_RATIO", "esc__dshot_8c.html#aae3c7683cda9d632d397c3b2492a1fb6", null ],
     [ "DSHOT_BIT1_DUTY", "esc__dshot_8c.html#ad2184ca46e2981e14691f44f7edf53d8", null ],
     [ "DSHOT_FREQ", "esc__dshot_8c.html#a36bdba10cfe02df997b2122301364ccd", null ],
     [ "DSHOT_MAX_VALUE", "esc__dshot_8c.html#a3c52b51bce8669ab42437677f7f7bbfb", null ],

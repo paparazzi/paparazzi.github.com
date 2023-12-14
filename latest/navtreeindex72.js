@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"group__math__orientation__representation.html#ga92513ffc4921e8b22fc7a65a583a79c1":[9,9,0,3],
+"group__math__orientation__representation.html#ga92513ffc4921e8b22fc7a65a583a79c1":[12,0,1,0,4,24,2],
 "group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8":[9,9,0,9],
 "group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8":[12,0,1,0,4,23,1],
 "group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8":[12,0,1,0,4,24,8],
@@ -18,8 +20,8 @@ var NAVTREEINDEX72 =
 "group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51":[12,0,1,0,4,24,17],
 "group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39":[9,9,0,15],
 "group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39":[12,0,1,0,4,24,14],
-"group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[12,0,1,0,4,24,4],
 "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[9,9,0,5],
+"group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2":[12,0,1,0,4,24,4],
 "group__math__orientation__representation.html#structOrientationReps":[9,9,0,0],
 "group__mcu__periph.html":[9,0],
 "group__mcu__periph.html#ga4c4b3d4809e69cc0f0ee9b2882081caa":[12,0,1,0,0,0,8,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba32d98a42e45177c17732d3388c7db470":[9,0,1,14,0],
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba32d98a42e45177c17732d3388c7db470":[12,0,1,0,5,16,13,0],
 "group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba5d633b4ee4d696627a0c4b437a20e2a9":[9,0,1,14,7],
-"group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba5d633b4ee4d696627a0c4b437a20e2a9":[12,0,1,0,5,16,13,7],
-"group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba82c78797afbfbba58ef1f977ef52691f":[9,0,1,14,6],
-"group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba82c78797afbfbba58ef1f977ef52691f":[12,0,1,0,5,16,13,6]
+"group__spi.html#ggaaabe4f085d398b1dabe6526437d0069ba5d633b4ee4d696627a0c4b437a20e2a9":[12,0,1,0,5,16,13,7]
 };

@@ -301,6 +301,11 @@ var onboard_modules =
         [ "Raw board_tawaki.xml file:", "module__board_tawaki.html#module_xml__board_tawaki", null ]
       ] ]
     ] ],
+    [ "board_tawaki_2.0 module", "module__board_tawaki_2_0.html", [
+      [ "Example for airframe file", "module__board_tawaki_2_0.html#module_load_example__board_tawaki_2_0", [
+        [ ".0 Raw board_tawaki_2.0.xml file:", "module__board_tawaki_2_0.html#module_xml__board_tawaki_2", null ]
+      ] ]
+    ] ],
     [ "opa_controller module", "module__opa_controller.html", [
       [ "Example for airframe file", "module__opa_controller.html#module_load_example__opa_controller", null ],
       [ "Module functions", "module__opa_controller.html#functions__opa_controller", [

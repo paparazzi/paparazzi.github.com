@@ -1,5 +1,11 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#GENERIC_COM":[2,0,75],
+"paparazzi_messages.html#GEO_MAG":[2,0,157],
+"paparazzi_messages.html#GET_DL_SETTING":[2,2,23],
+"paparazzi_messages.html#GET_SETTING":[2,1,13],
+"paparazzi_messages.html#GOTO_MISSION":[2,1,25],
+"paparazzi_messages.html#GP2Y_STATUS":[2,0,92],
 "paparazzi_messages.html#GPS":[2,0,6],
 "paparazzi_messages.html#GPS_INJECT":[2,1,53],
 "paparazzi_messages.html#GPS_INT":[2,0,149],
@@ -243,11 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#WP_MOVED_ENU":[2,0,44],
 "paparazzi_messages.html#WP_MOVED_LLA":[2,0,42],
 "paparazzi_messages.html#WT":[2,0,168],
-"paparazzi_messages.html#XTEND_RSSI":[2,0,64],
-"pc__sim_8h.html":[12,0,1,0,1,57],
-"pc__sim_8h.html#a0ceadf6a913477832e04b0cb7cd17210":[12,0,1,0,1,57,1],
-"pc__sim_8h.html#a3f7278cf218a92fa0a1514dea823cd9d":[12,0,1,0,1,57,5],
-"pc__sim_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,57,0],
-"pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,57,4],
-"pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307":[12,0,1,0,1,57,3]
+"paparazzi_messages.html#XTEND_RSSI":[2,0,64]
 };

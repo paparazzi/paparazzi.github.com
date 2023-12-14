@@ -1,5 +1,8 @@
 var NAVTREEINDEX88 =
 {
+"imu__apogee_8c.html#a839d39e78b58073f7c985a55fceda1e4":[12,0,1,0,1,0,3,0],
+"imu__apogee_8c.html#afb7b2003b22099951e5ca6486767a026":[12,0,1,0,1,0,3,3],
+"imu__apogee_8c_source.html":[12,0,1,0,1,0,3],
 "imu__apogee_8h.html":[12,0,1,0,1,0,4],
 "imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb":[12,0,1,0,1,0,4,6],
 "imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844":[12,0,1,0,1,0,4,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX88 =
 "imu__chimu_8h.html#ae840d0bbbea1e3c5df1bf0445b30d69a":[12,0,1,0,6,37,5,15],
 "imu__chimu_8h.html#aef84e707b8e8fbf399dbdbc3fdd4e903":[12,0,1,0,6,37,5,5,0],
 "imu__chimu_8h.html#af0e910c2b81bc5141dd9a8222ea50b51":[12,0,1,0,6,37,5,5,2],
-"imu__chimu_8h.html#af36a9cd2d5aab9289a9b689103e18a60":[12,0,1,0,6,37,5,20],
-"imu__chimu_8h.html#af38f85f3b77d92ff880ba0bb4ce46ae3":[12,0,1,0,6,37,5,29],
-"imu__chimu_8h.html#af6d1ee28ae20a33a297c72e95198d3d1":[12,0,1,0,6,37,5,32],
-"imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad":[12,0,1,0,6,37,5,5,5]
+"imu__chimu_8h.html#af36a9cd2d5aab9289a9b689103e18a60":[12,0,1,0,6,37,5,20]
 };

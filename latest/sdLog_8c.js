@@ -7,7 +7,7 @@ var sdLog_8c =
     [ "SDLOG_WRITE_BUFFER_SIZE", "sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77", null ],
     [ "flushWriteByteBuffer", "sdLog_8c.html#a870830d3ea4fe67badf79e52582f4fae", null ],
     [ "getFileName", "sdLog_8c.html#a510de29d16898e7e402fe7ea2dc7b992", null ],
-    [ "IN_DMA_SECTION", "sdLog_8c.html#ae82bd97eb545159246a84ebf2233421f", null ],
+    [ "IN_SDMMC_DMA_SECTION", "sdLog_8c.html#acc19261a02633b7b8cd1f9168794083d", null ],
     [ "removeEmptyLogs", "sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c", null ],
     [ "sdLogFinish", "sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051", null ],
     [ "sdLogInit", "sdLog_8c.html#a598888320386c21f975d32d68f29bcf3", null ],

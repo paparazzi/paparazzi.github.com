@@ -134,33 +134,43 @@ $(document).ready(function(){initNavTree('ram__arch_8h_source.html',''); initRes
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#elif defined(STM32H7XX)</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define STD_SECTION   &quot;.ram1&quot;</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define FAST_SECTION  &quot;.ram5&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define DMA_SECTION   &quot;.ram0&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define DMA_ALIGN     32</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#error &quot;section defined only for STM32F1, STM32F3, STM32F4, STM32F7 and STM32H7&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#ae0b2d22e9ec8c28c4ce8e1c3700026a6">   75</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION_NOINIT(var) var __attribute__ ((section(STD_SECTION), aligned(8)))</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a1fb6d337679a1a195b83adabc1e10f0e">   76</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION_CLEAR(var) var __attribute__ ((section(STD_SECTION &quot;_clear&quot;</span>), aligned(8)))</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#aa8ee831286ad88ee8413cb67f4a403c0">   77</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION(var) var __attribute__ ((section(STD_SECTION &quot;_init&quot;</span>), aligned(8)))</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a96993d8acfacc6a56b9af4e1ebdb3426">   79</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION_NOINIT(var) var __attribute__ ((section(FAST_SECTION), aligned(8)))</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#aba77f36a1f094956e842ce979d2541e0">   80</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION_CLEAR(var) var __attribute__ ((section(FAST_SECTION &quot;_clear&quot;</span>), aligned(8)))</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a866f92844933aceabb2fe7c11fc3ea0b">   81</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION(var) var __attribute__ ((section(FAST_SECTION &quot;_init&quot;</span>), aligned(8)))</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a208b3df92363a24cf81f80a93aa332b0">   83</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION_NOINIT(var) var __attribute__ ((section(DMA_SECTION), aligned(DMA_ALIGN)))</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a1ff42b8c14da0037178de9e538ab656c">   84</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION_CLEAR(var) var __attribute__ ((section(DMA_SECTION &quot;_clear&quot;</span>), aligned(DMA_ALIGN)))</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#abf99a797cbc54c55ddc1ed6606bf8043">   85</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION(var) var __attribute__ ((section(DMA_SECTION &quot;_init&quot;</span>), aligned(DMA_ALIGN)))</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define DMA_SECTION   &quot;.ram0nc&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define BDMA_SECTION  &quot;.ram4&quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define SDMMC_SECTION DMA_SECTION </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define DMA_ALIGN     32</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#error &quot;section defined only for STM32F1, STM32F3, STM32F4, STM32F7 and STM32H7&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#ae0b2d22e9ec8c28c4ce8e1c3700026a6">   77</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION_NOINIT(var) var __attribute__ ((section(STD_SECTION), aligned(8)))</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a1fb6d337679a1a195b83adabc1e10f0e">   78</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION_CLEAR(var) var __attribute__ ((section(STD_SECTION &quot;_clear&quot;</span>), aligned(8)))</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#aa8ee831286ad88ee8413cb67f4a403c0">   79</a></span>&#160;<span class="preprocessor">#define IN_STD_SECTION(var) var __attribute__ ((section(STD_SECTION &quot;_init&quot;</span>), aligned(8)))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a96993d8acfacc6a56b9af4e1ebdb3426">   81</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION_NOINIT(var) var __attribute__ ((section(FAST_SECTION), aligned(8)))</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#aba77f36a1f094956e842ce979d2541e0">   82</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION_CLEAR(var) var __attribute__ ((section(FAST_SECTION &quot;_clear&quot;</span>), aligned(8)))</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a866f92844933aceabb2fe7c11fc3ea0b">   83</a></span>&#160;<span class="preprocessor">#define IN_FAST_SECTION(var) var __attribute__ ((section(FAST_SECTION &quot;_init&quot;</span>), aligned(8)))</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a208b3df92363a24cf81f80a93aa332b0">   85</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION_NOINIT(var) var __attribute__ ((section(DMA_SECTION), aligned(DMA_ALIGN)))</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a1ff42b8c14da0037178de9e538ab656c">   86</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION_CLEAR(var) var __attribute__ ((section(DMA_SECTION &quot;_clear&quot;</span>), aligned(DMA_ALIGN)))</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#abf99a797cbc54c55ddc1ed6606bf8043">   87</a></span>&#160;<span class="preprocessor">#define IN_DMA_SECTION(var) var __attribute__ ((section(DMA_SECTION &quot;_init&quot;</span>), aligned(DMA_ALIGN)))</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#ab8604da09912d269dfeaf91d534983ea">   89</a></span>&#160;<span class="preprocessor">#define IN_BDMA_SECTION_NOINIT(var) var __attribute__ ((section(BDMA_SECTION), aligned(DMA_ALIGN)))</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a7cd9e4ab25112144f6b376a3c6dd3eb8">   90</a></span>&#160;<span class="preprocessor">#define IN_BDMA_SECTION_CLEAR(var) var __attribute__ ((section(BDMA_SECTION &quot;_clear&quot;</span>), aligned(DMA_ALIGN)))</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#aeecd15d3c20246f7a8faead14d8116c2">   91</a></span>&#160;<span class="preprocessor">#define IN_BDMA_SECTION(var) var __attribute__ ((section(BDMA_SECTION &quot;_init&quot;</span>), aligned(DMA_ALIGN)))</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a37ce9cf1d7184257ea3f207a134f1b80">   93</a></span>&#160;<span class="preprocessor">#define IN_SDMMC_SECTION_NOINIT(var) var __attribute__ ((section(SDMMC_SECTION), aligned(DMA_ALIGN)))</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a799c331e2fe5f898761977f1f89727ef">   94</a></span>&#160;<span class="preprocessor">#define IN_SDMMC_SECTION_CLEAR(var) var __attribute__ ((section(SDMMC_SECTION &quot;_clear&quot;</span>), aligned(DMA_ALIGN)))</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="ram__arch_8h.html#a5424d532e44ed0175f365c55351727fa">   95</a></span>&#160;<span class="preprocessor">#define IN_SDMMC_SECTION(var) var __attribute__ ((section(SDMMC_SECTION &quot;_init&quot;</span>), aligned(DMA_ALIGN)))</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="ram__arch_8h.html">ram_arch.h</a></li>
-    <li class="footer">Generated on Wed Dec 13 2023 16:11:56 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Dec 14 2023 10:24:46 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

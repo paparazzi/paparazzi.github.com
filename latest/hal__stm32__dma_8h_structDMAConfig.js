@@ -1,5 +1,6 @@
 var hal__stm32__dma_8h_structDMAConfig =
 [
+    [ "channel", "hal__stm32__dma_8h.html#ab1ed39e5f4ea56b5fec630c1547f5176", null ],
     [ "circular", "hal__stm32__dma_8h.html#a624066c1d4dc1989b64a93ffe4042c86", null ],
     [ "direction", "hal__stm32__dma_8h.html#acc5f20c162f22fc17d6818a7a626dee3", null ],
     [ "dma_priority", "hal__stm32__dma_8h.html#a45e66cd81b8b5cad8741161d6facdd72", null ],
