@@ -194,12 +194,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>DC_AUTOSHOOT_EXT_TRIG
 : <a class="el" href="dc_8h.html#ad2b9a0aaeabb230dc5e972d96593cc09aad601f4c383c684e0238e5c74d29d552">dc.h</a>
 </li>
+<li>DC_AUTOSHOOT_PERIOD
+: <a class="el" href="dc_8c.html#a0780b2bb0201d5099b0193f10f9a824f">dc.c</a>
+</li>
 <li>dc_autoshoot_period
 : <a class="el" href="dc_8h.html#aaa5f401f4c5c3df4df17ef738014516e">dc.h</a>
 , <a class="el" href="dc_8c.html#aaa5f401f4c5c3df4df17ef738014516e">dc.c</a>
-</li>
-<li>DC_AUTOSHOOT_PERIOD
-: <a class="el" href="dc_8c.html#a0780b2bb0201d5099b0193f10f9a824f">dc.c</a>
 </li>
 <li>DC_AUTOSHOOT_PERIODIC
 : <a class="el" href="dc_8h.html#ad2b9a0aaeabb230dc5e972d96593cc09a0eef5967a1a4b41eb31c266902c98813">dc.h</a>
@@ -450,19 +450,21 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 : <a class="el" href="gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">gpio_cam_ctrl.c</a>
 , <a class="el" href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">servo_cam_ctrl.c</a>
 </li>
+<li>dc_stop()
+: <a class="el" href="dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144">dc.c</a>
+</li>
 <li>dc_Stop
 : <a class="el" href="dc_8h.html#a9fa3be838c4c15559b76805ff40adae8">dc.h</a>
 </li>
 <li>dc_stop()
 : <a class="el" href="dc_8h.html#a47c625a53743f8ad41baaf54a6fcf144">dc.h</a>
-, <a class="el" href="dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144">dc.c</a>
-</li>
-<li>dc_Survey
-: <a class="el" href="dc_8h.html#a4dd1c5ffa5ca99523ce090e17d5ca9dc">dc.h</a>
 </li>
 <li>dc_survey()
 : <a class="el" href="dc_8c.html#a2b50d2725b576697bde98a8bdb358093">dc.c</a>
 , <a class="el" href="dc_8h.html#a2b50d2725b576697bde98a8bdb358093">dc.h</a>
+</li>
+<li>dc_Survey
+: <a class="el" href="dc_8h.html#a4dd1c5ffa5ca99523ce090e17d5ca9dc">dc.h</a>
 </li>
 <li>dc_survey_interval
 : <a class="el" href="dc_8c.html#a1d08f1a0a510dbd2b15071322e56449a">dc.c</a>
@@ -749,6 +751,9 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>DefaultPeriodic
 : <a class="el" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">telemetry.h</a>
 </li>
+<li>DefaultVBoardOfAdc
+: <a class="el" href="cube_2orange_2board_8h.html#adc7c1aed249cac10f9dfed57af50f9ab">board.h</a>
+</li>
 <li>DefaultVoltageOfAdc
 : <a class="el" href="matek__f405__wing__v1_8h.html#a94fa241ceca04635f282e09bdd829f5f">matek_f405_wing_v1.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
@@ -790,11 +795,11 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 , <a class="el" href="lisa__mx__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_mx_common.h</a>
 , <a class="el" href="lisa__mxs_2chibios_2v1_80_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
 </li>
-<li>DEG2RAD
-: <a class="el" href="nps__fdm__jsbsim_8cpp.html#af7e8592d0a634bd3642e9fd508ea8022">nps_fdm_jsbsim.cpp</a>
-</li>
 <li>deg2rad
 : <a class="el" href="ekf__aw_8cpp.html#a6fddc70e5c5cb4d77e0b6280159ec720">ekf_aw.cpp</a>
+</li>
+<li>DEG2RAD
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#af7e8592d0a634bd3642e9fd508ea8022">nps_fdm_jsbsim.cpp</a>
 </li>
 <li>DEG_OF_EM7DEG
 : <a class="el" href="group__math__geodetic__int.html#gaac4c67337721ee42a199ad45da6108bf">pprz_geodetic_int.h</a>
@@ -860,8 +865,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 , <a class="el" href="uav__recovery_8h.html#ae522f8da76f9ca209cc57fed0df3a7b7">uav_recovery.h</a>
 </li>
 <li>DeployParachute()
-: <a class="el" href="uav__recovery_8h.html#a36e5827383bef4449dd2a6907f698e31">uav_recovery.h</a>
-, <a class="el" href="uav__recovery_8c.html#a36e5827383bef4449dd2a6907f698e31">uav_recovery.c</a>
+: <a class="el" href="uav__recovery_8c.html#a36e5827383bef4449dd2a6907f698e31">uav_recovery.c</a>
+, <a class="el" href="uav__recovery_8h.html#a36e5827383bef4449dd2a6907f698e31">uav_recovery.h</a>
 </li>
 <li>depth_to_disp()
 : <a class="el" href="wedgebug_8c.html#a9d311947176aef213adcd384d2e74fb2">wedgebug.c</a>
@@ -1252,12 +1257,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 , <a class="el" href="discrete__ekf__no__north_8h.html#a3d3383daaaf3fcbf24151b6ababdbf2e">discrete_ekf_no_north.h</a>
 </li>
 <li>discrete_ekf_no_north_Hx()
-: <a class="el" href="discrete__ekf__no__north_8c.html#a3483746f88085fd9718bba006a89e253">discrete_ekf_no_north.c</a>
-, <a class="el" href="discrete__ekf__no__north_8h.html#a3483746f88085fd9718bba006a89e253">discrete_ekf_no_north.h</a>
+: <a class="el" href="discrete__ekf__no__north_8h.html#a3483746f88085fd9718bba006a89e253">discrete_ekf_no_north.h</a>
+, <a class="el" href="discrete__ekf__no__north_8c.html#a3483746f88085fd9718bba006a89e253">discrete_ekf_no_north.c</a>
 </li>
 <li>discrete_ekf_no_north_new()
-: <a class="el" href="discrete__ekf__no__north_8h.html#aa16a955fda91c1e21b3502d84dea38b6">discrete_ekf_no_north.h</a>
-, <a class="el" href="discrete__ekf__no__north_8c.html#aa16a955fda91c1e21b3502d84dea38b6">discrete_ekf_no_north.c</a>
+: <a class="el" href="discrete__ekf__no__north_8c.html#aa16a955fda91c1e21b3502d84dea38b6">discrete_ekf_no_north.c</a>
+, <a class="el" href="discrete__ekf__no__north_8h.html#aa16a955fda91c1e21b3502d84dea38b6">discrete_ekf_no_north.h</a>
 </li>
 <li>discrete_ekf_no_north_predict()
 : <a class="el" href="discrete__ekf__no__north_8c.html#a9c8f63c841b28afe4f2ef76ca5dbdb9c">discrete_ekf_no_north.c</a>
@@ -1268,12 +1273,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 , <a class="el" href="discrete__ekf__no__north_8h.html#afe8cf6573c09cf0dd03eac85b8534020">discrete_ekf_no_north.h</a>
 </li>
 <li>discrete_ekf_predict()
-: <a class="el" href="discrete__ekf_8c.html#a515b057a11f8b3433315e870ecd4e6d2">discrete_ekf.c</a>
-, <a class="el" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2">discrete_ekf.h</a>
+: <a class="el" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2">discrete_ekf.h</a>
+, <a class="el" href="discrete__ekf_8c.html#a515b057a11f8b3433315e870ecd4e6d2">discrete_ekf.c</a>
 </li>
 <li>discrete_ekf_update()
-: <a class="el" href="discrete__ekf_8h.html#a3f6d635a0d2c0d025b430d12add945e2">discrete_ekf.h</a>
-, <a class="el" href="discrete__ekf_8c.html#a0ee0e70847cd195e6924fa44c6123769">discrete_ekf.c</a>
+: <a class="el" href="discrete__ekf_8c.html#a0ee0e70847cd195e6924fa44c6123769">discrete_ekf.c</a>
+, <a class="el" href="discrete__ekf_8h.html#a3f6d635a0d2c0d025b430d12add945e2">discrete_ekf.h</a>
 </li>
 <li>DiscSurveyStatus
 : <a class="el" href="nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44">nav_survey_disc.c</a>
@@ -1381,8 +1386,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 : <a class="el" href="optical__flow__landing_8c.html#a6a8bf96823965c06683ab4c082a95c0a">optical_flow_landing.c</a>
 </li>
 <li>divergence_vision
-: <a class="el" href="optical__flow__hover_8c.html#a7a59ca2aeff4d163658a4e7e12a02dd8">optical_flow_hover.c</a>
-, <a class="el" href="optical__flow__landing_8c.html#a7a59ca2aeff4d163658a4e7e12a02dd8">optical_flow_landing.c</a>
+: <a class="el" href="optical__flow__landing_8c.html#a7a59ca2aeff4d163658a4e7e12a02dd8">optical_flow_landing.c</a>
+, <a class="el" href="optical__flow__hover_8c.html#a7a59ca2aeff4d163658a4e7e12a02dd8">optical_flow_hover.c</a>
 </li>
 <li>divergence_vision_dt
 : <a class="el" href="optical__flow__landing_8c.html#a99432c0bee7e762ef48150e334024ac6">optical_flow_landing.c</a>
@@ -1616,8 +1621,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__double.html#gaf56db5ad752a153d0b6960808754e84c">pprz_algebra_double.h</a>
 </li>
 <li>double_eulers_of_quat()
-: <a class="el" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d">pprz_algebra_double.c</a>
-, <a class="el" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d">pprz_algebra_double.h</a>
+, <a class="el" href="group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d">pprz_algebra_double.c</a>
 </li>
 <li>DOUBLE_OF_BFP
 : <a class="el" href="group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898">pprz_algebra_int.h</a>
@@ -1635,14 +1640,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>double_quat_normalize()
 : <a class="el" href="group__math__algebra__double.html#gaa150b70f2f007033bcf29a5e03e06758">pprz_algebra_double.h</a>
 </li>
-<li>double_quat_of_eulers()
-: <a class="el" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47">pprz_algebra_double.h</a>
-</li>
 <li>DOUBLE_QUAT_OF_EULERS
 : <a class="el" href="group__math__algebra__double.html#ga476c46d0dfb7cf3c974112af18f1b17c">pprz_algebra_double.h</a>
 </li>
 <li>double_quat_of_eulers()
 : <a class="el" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47">pprz_algebra_double.c</a>
+, <a class="el" href="group__math__algebra__double.html#gaa5c59899c8e47296ff62829cd74fcf47">pprz_algebra_double.h</a>
 </li>
 <li>double_quat_vmult()
 : <a class="el" href="group__math__algebra__double.html#ga2e224cbc8654aa54ef2ba538adb7b3f9">pprz_algebra_double.c</a>
@@ -1652,8 +1655,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 : <a class="el" href="group__math__algebra__double.html#ga8b4de978d8b67e4042773562f008e057">pprz_algebra_double.h</a>
 </li>
 <li>double_rmat_comp()
-: <a class="el" href="group__math__algebra__double.html#gadbb22b0185b31be6717553cfbae3ec14">pprz_algebra_double.c</a>
-, <a class="el" href="group__math__algebra__double.html#gadbb22b0185b31be6717553cfbae3ec14">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#gadbb22b0185b31be6717553cfbae3ec14">pprz_algebra_double.h</a>
+, <a class="el" href="group__math__algebra__double.html#gadbb22b0185b31be6717553cfbae3ec14">pprz_algebra_double.c</a>
 </li>
 <li>double_rmat_identity()
 : <a class="el" href="group__math__algebra__double.html#ga63fb4d799d7d67efd96eeeb15a1af97e">pprz_algebra_double.h</a>
@@ -1731,12 +1734,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 , <a class="el" href="sys__id__doublet_8h.html#a4606122df2fc5195e27a869c8d585967">sys_id_doublet.h</a>
 </li>
 <li>doublet_init()
-: <a class="el" href="pprz__doublet_8c.html#a53467e822577c53c418cbda5dde4b024">pprz_doublet.c</a>
-, <a class="el" href="pprz__doublet_8h.html#a418bb564f438636ccf920ded8c18ea85">pprz_doublet.h</a>
+: <a class="el" href="pprz__doublet_8h.html#a418bb564f438636ccf920ded8c18ea85">pprz_doublet.h</a>
+, <a class="el" href="pprz__doublet_8c.html#a53467e822577c53c418cbda5dde4b024">pprz_doublet.c</a>
 </li>
 <li>doublet_is_running()
-: <a class="el" href="pprz__doublet_8h.html#a6cbec4f0c3a7fbb7b42e913225be937c">pprz_doublet.h</a>
-, <a class="el" href="pprz__doublet_8c.html#a6cbec4f0c3a7fbb7b42e913225be937c">pprz_doublet.c</a>
+: <a class="el" href="pprz__doublet_8c.html#a6cbec4f0c3a7fbb7b42e913225be937c">pprz_doublet.c</a>
+, <a class="el" href="pprz__doublet_8h.html#a6cbec4f0c3a7fbb7b42e913225be937c">pprz_doublet.h</a>
 </li>
 <li>doublet_length_s
 : <a class="el" href="sys__id__doublet_8c.html#a76b8aafaaa7671fcf2e0bdc22ae49c3e">sys_id_doublet.c</a>
@@ -1892,12 +1895,12 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 : <a class="el" href="edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339">edge_flow.c</a>
 , <a class="el" href="edge__flow_8h.html#a3b033920386bfd9bd702b743b16d6339">edge_flow.h</a>
 </li>
+<li>DRAW_GATE
+: <a class="el" href="snake__gate__detection_8c.html#a9acc9ea21261e7b2f89a66252e7d200e">snake_gate_detection.c</a>
+</li>
 <li>draw_gate()
 : <a class="el" href="snake__gate__detection_8c.html#afa74197068ad47804df4125b8601b31c">snake_gate_detection.c</a>
 , <a class="el" href="snake__gate__detection_8h.html#afa74197068ad47804df4125b8601b31c">snake_gate_detection.h</a>
-</li>
-<li>DRAW_GATE
-: <a class="el" href="snake__gate__detection_8c.html#a9acc9ea21261e7b2f89a66252e7d200e">snake_gate_detection.c</a>
 </li>
 <li>draw_gate_color_polygon()
 : <a class="el" href="snake__gate__detection_8h.html#a187099f3c8b15ddf2fc47461c89e13fe">snake_gate_detection.h</a>
@@ -2695,7 +2698,7 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 18 2023 11:38:49 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 18 2023 13:57:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

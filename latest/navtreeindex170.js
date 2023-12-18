@@ -1,5 +1,9 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#FILTER":[2,0,128],
+"paparazzi_messages.html#FILTER_ALIGNER":[2,0,131],
+"paparazzi_messages.html#FLIGHT_BENCHMARK":[2,0,61],
+"paparazzi_messages.html#FLIGHT_PARAM":[2,2,10],
 "paparazzi_messages.html#FLY_BY_WIRE":[2,2,16],
 "paparazzi_messages.html#FMS_TIME":[2,0,173],
 "paparazzi_messages.html#FORMATION_SLOT":[2,1,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#WEATHER":[2,0,199],
 "paparazzi_messages.html#WIND":[2,2,7],
 "paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,192],
-"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,32],
-"paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,45],
-"paparazzi_messages.html#WIND_CLEAR":[2,2,6],
-"paparazzi_messages.html#WIND_INFO":[2,1,2],
-"paparazzi_messages.html#WIND_INFO_RET":[2,0,81]
+"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,32]
 };

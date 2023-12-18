@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"module__rust_demo_module.html#functions__rust_demo_module":[1,490,1],
+"module__rust_demo_module.html#module_load_example__rust_demo_module":[1,490,0],
+"module__rust_demo_module.html#module_xml__rust_demo_module":[1,490,1,0],
+"module__scheduling_indi_simple.html":[1,99],
 "module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,99,1],
 "module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,99,0],
 "module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,99,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_secure_common.html#module_load_example__telemetry_secure_common":[1,113,0],
 "module__telemetry_secure_common.html#module_xml__telemetry_secure_common":[1,113,1,0],
 "module__telemetry_sim.html":[1,114],
-"module__telemetry_sim.html#functions__telemetry_sim":[1,114,1],
-"module__telemetry_sim.html#module_load_example__telemetry_sim":[1,114,0],
-"module__telemetry_sim.html#module_xml__telemetry_sim":[1,114,1,0],
-"module__telemetry_superbitrf.html":[1,115],
-"module__telemetry_superbitrf.html#functions__telemetry_superbitrf":[1,115,1]
+"module__telemetry_sim.html#functions__telemetry_sim":[1,114,1]
 };

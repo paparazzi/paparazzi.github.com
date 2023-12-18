@@ -8,6 +8,7 @@ var electrical_8h =
       [ "charge", "electrical_8h.html#a9735c0e6cbd47d6f75e067f0d180b023", null ],
       [ "current", "electrical_8h.html#a66c55cf656b8005e05d38b78e8a88065", null ],
       [ "energy", "electrical_8h.html#a6426131a0ccee0da57ae320f5a7a8fe0", null ],
+      [ "vboard", "electrical_8h.html#ad41146a16b45a27522a6d7f9c7da4e65", null ],
       [ "vsupply", "electrical_8h.html#ad5e535e39613e6ec89d498019ef62030", null ]
     ] ],
     [ "CRITIC_BAT_LEVEL", "electrical_8h.html#a750ae88746939044885e47e1c11ea136", null ],

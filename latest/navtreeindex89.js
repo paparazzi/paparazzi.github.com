@@ -1,5 +1,9 @@
 var NAVTREEINDEX89 =
 {
+"imu__chimu_8h.html#acbcd14134a7f8d69c70047caf2e59a05":[12,0,1,0,6,37,5,8],
+"imu__chimu_8h.html#acc3e038070011c4d86e8c51674fdc117":[12,0,1,0,6,37,5,2,1],
+"imu__chimu_8h.html#ad0641613169f58385b1020cb9a417c78":[12,0,1,0,6,37,5,3,0],
+"imu__chimu_8h.html#ad231d33b8e3ac8f3f33deb853d49a9e8":[12,0,1,0,6,37,5,5,12],
 "imu__chimu_8h.html#ad5d57a3568081896cb1b93c91c5c99a6":[12,0,1,0,6,37,5,11],
 "imu__chimu_8h.html#ad92caacc7c52b5b3f4f208a08bd19192":[12,0,1,0,6,37,5,42],
 "imu__chimu_8h.html#ae4341b0de3991b9ed967e637f1ccd2a8":[12,0,1,0,6,37,5,5,1],
@@ -236,8 +240,8 @@ var NAVTREEINDEX89 =
 "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5":[12,0,1,0,6,36,35,0,0],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,35,0,5],
 "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274":[12,0,1,0,6,36,33,0,5],
-"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,35,0,1],
 "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,33,0,1],
+"imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0":[12,0,1,0,6,36,35,0,1],
 "imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097":[12,0,1,0,6,36,35,1],
 "imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3":[12,0,1,0,6,36,35,4],
 "imu__mpu9250__spi_8h.html#ab1c72cd8f92fed1c97a33a15b2ed4eec":[12,0,1,0,6,36,33,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX89 =
 "imu__mpu9250__spi_8h.html#adad553c3f90fb29838650e9d3306b1c4":[12,0,1,0,6,36,35,6],
 "imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2":[12,0,1,0,6,36,35,2],
 "imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,35,3],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,33,0],
-"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,35,0],
-"imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,36,35],
-"imu__nps_8c.html":[12,0,1,0,6,36,36],
-"imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,36,36,1]
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,33,0]
 };

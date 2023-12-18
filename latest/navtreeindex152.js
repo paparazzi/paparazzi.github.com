@@ -1,5 +1,9 @@
 var NAVTREEINDEX152 =
 {
+"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,36,0],
+"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,62,0],
+"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,60,0],
+"nav__survey__poly__rotorcraft_8c.html#structPoint2D":[12,0,1,0,6,47,30,0],
 "nav__survey__poly__rotorcraft_8c_source.html":[12,0,1,0,6,47,62],
 "nav__survey__poly__rotorcraft_8h.html":[12,0,1,0,6,47,63],
 "nav__survey__poly__rotorcraft_8h.html#a0732c4cd3ad453af9b741c7a52bcdbeb":[12,0,1,0,6,47,63,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX152 =
 "nav__takeoff__and__landing__fw_8c.html#a4314e8055cc33e6d397c34894646b70d":[12,0,1,0,6,47,73,18],
 "nav__takeoff__and__landing__fw_8c.html#a52e3ed7da14c84aa93bb0cc3619f7fdf":[12,0,1,0,6,47,73,11],
 "nav__takeoff__and__landing__fw_8c.html#a5b590cedd21b051984fa8c71d48496a3":[12,0,1,0,6,47,73,17],
-"nav__takeoff__and__landing__fw_8c.html#a6020a4f219cfb7e507355b25a7a57f38":[12,0,1,0,6,47,73,19],
-"nav__takeoff__and__landing__fw_8c.html#a61619fde12f2e1409255ddba3d77b13f":[12,0,1,0,6,47,73,9],
-"nav__takeoff__and__landing__fw_8c.html#a6abdcb687013a7224fdd2d5e76ad85bc":[12,0,1,0,6,47,73,4],
-"nav__takeoff__and__landing__fw_8c.html#a6bc92059c5c55474014f217f641288be":[12,0,1,0,6,47,73,12],
-"nav__takeoff__and__landing__fw_8c.html#a70c9d3d8f400a5057ecb0a53f5ec4922":[12,0,1,0,6,47,73,15]
+"nav__takeoff__and__landing__fw_8c.html#a6020a4f219cfb7e507355b25a7a57f38":[12,0,1,0,6,47,73,19]
 };

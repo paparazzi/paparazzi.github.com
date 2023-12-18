@@ -1,5 +1,9 @@
 var NAVTREEINDEX133 =
 {
+"module__gps_udp.html#module_load_example__gps_udp":[1,163,0],
+"module__gps_udp.html#module_xml__gps_udp":[1,163,2,0],
+"module__ground_detect_sensor.html":[1,311],
+"module__ground_detect_sensor.html#configuration__ground_detect_sensor":[1,311,1],
 "module__ground_detect_sensor.html#functions__ground_detect_sensor":[1,311,2],
 "module__ground_detect_sensor.html#module_load_example__ground_detect_sensor":[1,311,0],
 "module__ground_detect_sensor.html#module_xml__ground_detect_sensor":[1,311,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2":[1,203,0,0],
 "module__imu_lisa_s_v1_0.html":[1,204],
 "module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,204,1],
-"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,204,0],
-"module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,204,1,0],
-"module__imu_matek_h743_slim.html":[1,205],
-"module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,205,0],
-"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,205,0,0]
+"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,204,0]
 };

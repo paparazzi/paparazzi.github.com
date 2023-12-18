@@ -1,5 +1,9 @@
 var NAVTREEINDEX141 =
 {
+"mpu60x0__spi_8c.html":[12,0,1,0,7,95],
+"mpu60x0__spi_8c.html#a2c59e2f5faa545396c71ce296743a4fb":[12,0,1,0,7,95,4],
+"mpu60x0__spi_8c.html#a352dbef3019f057741cf1494e4b6f36d":[12,0,1,0,7,95,2],
+"mpu60x0__spi_8c.html#a85fc80c0c35e284d326d17fca254620c":[12,0,1,0,7,95,3],
 "mpu60x0__spi_8c.html#a8982a3f8243691d3980c136cfa9fcb5c":[12,0,1,0,7,95,5],
 "mpu60x0__spi_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966":[12,0,1,0,7,95,0],
 "mpu60x0__spi_8c.html#aedbe7307e6e7f522300178dd964c2f3b":[12,0,1,0,7,95,1],
@@ -29,8 +33,8 @@ var NAVTREEINDEX141 =
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edab22cde199f9df04496553671eb708e3a":[12,0,1,0,7,96,5,2],
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62":[12,0,1,0,7,96,5,3],
 "mpu60x0__spi_8h.html#aac2c5a39f64f336ccb130c06b247bebf":[12,0,1,0,7,96,0,5],
-"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,1,0],
 "mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,2,1],
+"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,1,0],
 "mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f":[12,0,1,0,7,96,8],
 "mpu60x0__spi_8h.html#ab850011ed8df616036bc796940768f35":[12,0,1,0,7,96,4],
 "mpu60x0__spi_8h.html#ab9385e953397c646a05ba8b11af7af35":[12,0,1,0,7,96,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX141 =
 "mpu9250__regs_8h.html#a9cb58e6b0474117ba9d0db2ae7c39641":[12,0,1,0,7,101,4],
 "mpu9250__regs_8h.html#a9f18e0a02e754726675f271fbfd8ef0e":[12,0,1,0,7,101,23],
 "mpu9250__regs_8h.html#aa41eed1582d22780f8731373bdf4cc1b":[12,0,1,0,7,101,5],
-"mpu9250__regs_8h.html#aa6c55daba80fdcca2a808a25d4b1f21b":[12,0,1,0,7,101,62],
-"mpu9250__regs_8h.html#aad78026509c5074ebb7addd2e3e801b8":[12,0,1,0,7,101,26],
-"mpu9250__regs_8h.html#ab028ee25ac9af6e18b2e3fc4637e98b0":[12,0,1,0,7,101,18],
-"mpu9250__regs_8h.html#ab3d5e2b82cf3eb91c531045479b8f81c":[12,0,1,0,7,101,47],
-"mpu9250__regs_8h.html#ab3dde79103c0e0d0c83416d6c74936a2":[12,0,1,0,7,101,46]
+"mpu9250__regs_8h.html#aa6c55daba80fdcca2a808a25d4b1f21b":[12,0,1,0,7,101,62]
 };

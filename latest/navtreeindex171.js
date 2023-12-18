@@ -1,5 +1,9 @@
 var NAVTREEINDEX171 =
 {
+"paparazzi_messages.html#WINDTURBINE_STATUS_":[2,0,45],
+"paparazzi_messages.html#WIND_CLEAR":[2,2,6],
+"paparazzi_messages.html#WIND_INFO":[2,1,2],
+"paparazzi_messages.html#WIND_INFO_RET":[2,0,81],
 "paparazzi_messages.html#WORLD_ENV":[2,2,18],
 "paparazzi_messages.html#WORLD_ENV_REQ":[2,2,19],
 "paparazzi_messages.html#WP_MOVED":[2,0,31],
@@ -245,9 +249,5 @@ var NAVTREEINDEX171 =
 "pid_8h.html#af145709db265ca4601eccdc3fba01773":[12,0,1,0,2,10,0,2],
 "pid_8h.html#afecedc77778a62fbd5a01e0269220578":[12,0,1,0,2,10,2,2],
 "pid_8h.html#structPID__df":[12,0,1,0,2,10,1],
-"pid_8h.html#structPID__f":[12,0,1,0,2,10,0],
-"pid_8h.html#structPI__D__df":[12,0,1,0,2,10,2],
-"pid_8h_source.html":[12,0,1,0,2,10],
-"pipe_8c.html":[12,0,1,0,5,7],
-"pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb":[12,0,1,0,5,7,3]
+"pid_8h.html#structPID__f":[12,0,1,0,2,10,0]
 };

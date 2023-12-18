@@ -1,5 +1,9 @@
 var NAVTREEINDEX131 =
 {
+"module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,397,1],
+"module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,397,0],
+"module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,397,1,0],
+"module__battery_monitor.html":[1,21],
 "module__battery_monitor.html#configuration__battery_monitor":[1,21,1],
 "module__battery_monitor.html#functions__battery_monitor":[1,21,2],
 "module__battery_monitor.html#module_load_example__battery_monitor":[1,21,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,251,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,251,2,0],
 "module__distributed_circular_formation.html":[1,457],
-"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,457,1],
-"module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,457,3],
-"module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,457,2],
-"module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,457,0],
-"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,457,3,0]
+"module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,457,1]
 };

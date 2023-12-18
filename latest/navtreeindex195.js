@@ -1,5 +1,9 @@
 var NAVTREEINDEX195 =
 {
+"sdlog__chibios_8h.html#a5c028b6a5d65d3475715d8d4ccb4fe81":[12,0,1,0,6,42,21,0,0],
+"sdlog__chibios_8h.html#a6d6d6039a7d735ec71df91793397de63":[12,0,1,0,6,42,21,8],
+"sdlog__chibios_8h.html#a6f2735648e3811dabee7dc1e995fb175":[12,0,1,0,6,42,21,5],
+"sdlog__chibios_8h.html#aa98230ec7c62b75b008363356fdefb4d":[12,0,1,0,6,42,21,9],
 "sdlog__chibios_8h.html#ab3743782ef6657c3fa7aceaff33bed1d":[12,0,1,0,6,42,21,2],
 "sdlog__chibios_8h.html#ad094fe3bc7f2da71d85d09484e25bfe6":[12,0,1,0,6,42,21,4],
 "sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a":[12,0,1,0,6,42,21,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX195 =
 "shell__arch_8c_source.html":[12,0,1,0,0,0,1,1,3],
 "shell__arch_8h.html":[12,0,1,0,0,0,1,1,4],
 "shell__arch_8h.html#a0d71d20b7713f8ddabd21f854e7ebbc4":[12,0,1,0,0,0,1,1,4,1],
-"shell__arch_8h.html#a9a514d3f4e3d42cfae8e2192b57a55fc":[12,0,1,0,0,0,1,1,4,0],
-"shell__arch_8h_source.html":[12,0,1,0,0,0,1,1,4],
-"shift__tracking_8c.html":[12,0,1,0,6,14,32],
-"shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2":[12,0,1,0,6,14,32,13],
-"shift__tracking_8c.html#a073a4c33a4fa3246e5c2e730831a363b":[12,0,1,0,6,14,32,2]
+"shell__arch_8h.html#a9a514d3f4e3d42cfae8e2192b57a55fc":[12,0,1,0,0,0,1,1,4,0]
 };

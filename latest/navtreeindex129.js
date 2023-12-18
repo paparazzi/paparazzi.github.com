@@ -1,5 +1,9 @@
 var NAVTREEINDEX129 =
 {
+"microrl_8h.html#a9e336bbc8d6c9e20517da19cfe46d973":[12,0,1,0,0,0,1,1,0,1,8],
+"microrl_8h.html#aa15d938f881d47f53bef3927b0f878d4":[12,0,1,0,0,0,1,1,0,1,43],
+"microrl_8h.html#aa326905cea393d426a44531a1bce61bb":[12,0,1,0,0,0,1,1,0,1,13],
+"microrl_8h.html#aa43a2c3e40c49bdf4f097e17e43daa60":[12,0,1,0,0,0,1,1,0,1,35],
 "microrl_8h.html#aa62e1831c95c764d5c383cf2720c8622":[12,0,1,0,0,0,1,1,0,1,31],
 "microrl_8h.html#aa64a1174b55ce1d1a39eb1ecaaa9f1cf":[12,0,1,0,0,0,1,1,0,1,6],
 "microrl_8h.html#aaf080aa1c6d9ae8733ec685a2ebbb89d":[12,0,1,0,0,0,1,1,0,1,16],
@@ -245,9 +249,5 @@ var NAVTREEINDEX129 =
 "module__actuators_pwm.html#module_xml__actuators_pwm":[1,14,0,0],
 "module__actuators_sbus.html":[1,15],
 "module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
-"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0],
-"module__actuators_sbus.html#module_xml__actuators_sbus":[1,15,1,0],
-"module__actuators_spektrum.html":[1,16],
-"module__actuators_spektrum.html#configuration__actuators_spektrum":[1,16,1],
-"module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,16,0]
+"module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0]
 };
