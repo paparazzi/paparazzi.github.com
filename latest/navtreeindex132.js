@@ -1,5 +1,12 @@
 var NAVTREEINDEX132 =
 {
+"module__dragspeed.html":[1,458],
+"module__dragspeed.html#autotoc_md7":[0],
+"module__dragspeed.html#autotoc_md8":[1],
+"module__dragspeed.html#autotoc_md9":[2],
+"module__dragspeed.html#configuration__dragspeed":[1,458,1],
+"module__dragspeed.html#functions__dragspeed":[1,458,2],
+"module__dragspeed.html#module_load_example__dragspeed":[1,458,0],
 "module__dragspeed.html#module_xml__dragspeed":[1,458,2,3],
 "module__drop_zone.html":[1,303],
 "module__drop_zone.html#module_load_example__drop_zone":[1,303,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX132 =
 "module__gps_udp.html#module_load_example__gps_udp":[1,163,0],
 "module__gps_udp.html#module_xml__gps_udp":[1,163,2,0],
 "module__ground_detect_sensor.html":[1,311],
-"module__ground_detect_sensor.html#configuration__ground_detect_sensor":[1,311,1],
-"module__ground_detect_sensor.html#functions__ground_detect_sensor":[1,311,2],
-"module__ground_detect_sensor.html#module_load_example__ground_detect_sensor":[1,311,0],
-"module__ground_detect_sensor.html#module_xml__ground_detect_sensor":[1,311,2,0],
-"module__gsm.html":[1,465],
-"module__gsm.html#functions__gsm":[1,465,1],
-"module__gsm.html#module_load_example__gsm":[1,465,0],
-"module__gsm.html#module_xml__gsm":[1,465,1,0]
+"module__ground_detect_sensor.html#configuration__ground_detect_sensor":[1,311,1]
 };

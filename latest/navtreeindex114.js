@@ -1,5 +1,12 @@
 var NAVTREEINDEX114 =
 {
+"lsm303d__regs_8h.html#accb47d1292b671cc23e5d2483fcaa438":[12,0,1,0,7,73,41],
+"lsm303d__regs_8h.html#ace79bad9d9f4baa09fb0dbdb793a47dc":[12,0,1,0,7,73,44],
+"lsm303d__regs_8h.html#ace9e61070dcb80ef451ac1eb3f64fe52":[12,0,1,0,7,73,77],
+"lsm303d__regs_8h.html#acf3355c0736dfc65b15d3e7393f27fdd":[12,0,1,0,7,73,24],
+"lsm303d__regs_8h.html#adcf19f685f004c3f692d85491fec49c1":[12,0,1,0,7,73,45],
+"lsm303d__regs_8h.html#addbd6a713636ae9fb8773a66997ecb1e":[12,0,1,0,7,73,8],
+"lsm303d__regs_8h.html#ade5681e03778b42605bd86065f8027fa":[12,0,1,0,7,73,69],
 "lsm303d__regs_8h.html#adebbcb19bf7f783cd6e375b98c1cf640":[12,0,1,0,7,73,27],
 "lsm303d__regs_8h.html#adf1e4d920c89df7728ee5db76c7e49ca":[12,0,1,0,7,73,93],
 "lsm303d__regs_8h.html#ae2d24e9e47b2f274439abb5aebc7ff98":[12,0,1,0,7,73,87],
@@ -44,8 +51,8 @@ var NAVTREEINDEX114 =
 "lsm303d__spi_8h.html#a839125a56cef2bc8c30e3863966676a8":[12,0,1,0,7,75,0,2],
 "lsm303d__spi_8h.html#a8b2bbc4ff09e5ad5f1ac172c7395d5ca":[12,0,1,0,7,75,0,10],
 "lsm303d__spi_8h.html#aa02c102c0cd7e116f0f83be3d8483bca":[12,0,1,0,7,75,0,3],
-"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,1,0],
+"lsm303d__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,75,2,0],
 "lsm303d__spi_8h.html#ab4e49df07264189a6344fe0772d14f9f":[12,0,1,0,7,75,7],
 "lsm303d__spi_8h.html#ac0b025eef4f446e794b523ba01e7d657":[12,0,1,0,7,75,0,11],
 "lsm303d__spi_8h.html#ad77c410e06c48f72b79b8767e56763af":[12,0,1,0,7,75,0,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX114 =
 "lsm6ds33_8h.html#aa9ce7bf6862cab674b83f0a3e3c77ce3":[12,0,1,0,7,80,30],
 "lsm6ds33_8h.html#ab2ef3727f0784a07f12c19fe2d154cfd":[12,0,1,0,7,80,10],
 "lsm6ds33_8h.html#aba8d97ccc3b83e3cc78e3f5b30bbaba1":[12,0,1,0,7,80,2],
-"lsm6ds33_8h.html#abb6a73ec0a035daac253e53cd22f10a1":[12,0,1,0,7,80,13],
-"lsm6ds33_8h.html#ad46496827bb422c3d801f2e81b78c174":[12,0,1,0,7,80,17],
-"lsm6ds33_8h.html#adf463426bd1cfd51921083ff7c246dc7":[12,0,1,0,7,80,12],
-"lsm6ds33_8h.html#ae1e50e27b3483d68b9244ec2ddf10cf7":[12,0,1,0,7,80,16],
-"lsm6ds33_8h.html#ae2e79522aed85d5d8863ce7d817b21cd":[12,0,1,0,7,80,23],
-"lsm6ds33_8h.html#structLsm6Config":[12,0,1,0,7,80,0],
-"lsm6ds33_8h_source.html":[12,0,1,0,7,80],
-"lsm6ds33__i2c_8c.html":[12,0,1,0,7,81]
+"lsm6ds33_8h.html#abb6a73ec0a035daac253e53cd22f10a1":[12,0,1,0,7,80,13]
 };

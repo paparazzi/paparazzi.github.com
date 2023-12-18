@@ -1,5 +1,6 @@
 var airspeed__ms45xx__i2c_8c =
 [
+    [ "AIRSPEED_MS45XX_SEND_ABI", "airspeed__ms45xx__i2c_8c.html#a2b99a65a077532c7e75c95c9291a20fe", null ],
     [ "AUTOSET_NB_MAX", "airspeed__ms45xx__i2c_8c.html#ab942d6c65130f05bbc94f0d872d7f501", null ],
     [ "InH2O_TO_PA", "airspeed__ms45xx__i2c_8c.html#a1e6d30c4805726ddb0ca103bd977a7ec", null ],
     [ "MS45XX_I2C_ADDR", "airspeed__ms45xx__i2c_8c.html#a566b35ebe72a508fb5c0d3a307e53773", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,16,1,0],
+"module__actuators_sts3032.html":[1,17],
+"module__actuators_sts3032.html#configuration__actuators_sts3032":[1,17,1],
+"module__actuators_sts3032.html#functions__actuators_sts3032":[1,17,2],
+"module__actuators_sts3032.html#module_load_example__actuators_sts3032":[1,17,0],
+"module__actuators_sts3032.html#module_xml__actuators_sts3032":[1,17,2,0],
+"module__actuators_uavcan.html":[1,18],
 "module__actuators_uavcan.html#configuration__actuators_uavcan":[1,18,1],
 "module__actuators_uavcan.html#module_load_example__actuators_uavcan":[1,18,0],
 "module__actuators_uavcan.html#module_xml__actuators_uavcan":[1,18,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX130 =
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,397,1],
 "module__bat_voltage_ardrone2.html#module_load_example__bat_voltage_ardrone2":[1,397,0],
 "module__bat_voltage_ardrone2.html#module_xml__bat_voltage_ardrone2":[1,397,1,0],
-"module__battery_monitor.html":[1,21],
-"module__battery_monitor.html#configuration__battery_monitor":[1,21,1],
-"module__battery_monitor.html#functions__battery_monitor":[1,21,2],
-"module__battery_monitor.html#module_load_example__battery_monitor":[1,21,0],
-"module__battery_monitor.html#module_xml__battery_monitor":[1,21,2,0],
-"module__bebop_ae_awb.html":[1,53],
-"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,53,1],
-"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,53,2]
+"module__battery_monitor.html":[1,21]
 };

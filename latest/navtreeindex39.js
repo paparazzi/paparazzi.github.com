@@ -1,5 +1,12 @@
 var NAVTREEINDEX39 =
 {
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a39e918aab997f42ca310524e74dc44ae":[12,0,1,0,1,4,0,0,2,38],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3bef70abed53b8df90c5edb807077e37":[12,0,1,0,1,4,0,0,2,251],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3d47540519839760fa98c1b07e38a15e":[12,0,1,0,1,4,0,0,2,107],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3d89a31bf8ff315d8c13102cea1284ac":[12,0,1,0,1,4,0,0,2,256],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3f108deab28dba83858c5a6d5089a322":[12,0,1,0,1,4,0,0,2,169],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3f29be9a3823107fef0db45e685c21c8":[12,0,1,0,1,4,0,0,2,35],
+"crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a4026ae95617bb7ee1cbc32248e97e263":[12,0,1,0,1,4,0,0,2,252],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a41843060367f2e2b20468f1a5769948b":[12,0,1,0,1,4,0,0,2,100],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42381c2949b271a74c562c3502403881":[12,0,1,0,1,4,0,0,2,31],
 "crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662":[12,0,1,0,1,4,0,0,2,151],
@@ -242,12 +249,5 @@ var NAVTREEINDEX39 =
 "crazyflie_8h.html#a6ff684395bd4a4c2b1cb2d3573fad289":[12,0,1,0,1,4,0,0,1,92],
 "crazyflie_8h.html#a71adfcd60fc6d58fff4ef3053944cd9a":[12,0,1,0,1,4,0,0,1,61],
 "crazyflie_8h.html#a73180441e4e94e67eac7d518dc8958a6":[12,0,1,0,1,4,0,0,1,81],
-"crazyflie_8h.html#a73225755857cd90c4c599337fa44de97":[12,0,1,0,1,4,0,0,1,97],
-"crazyflie_8h.html#a74a73d71b5a66c3cfea6788e42674c94":[12,0,1,0,1,4,0,0,1,24],
-"crazyflie_8h.html#a765749726b83cb80b82cdbe535e71de0":[12,0,1,0,1,4,0,0,1,17],
-"crazyflie_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8":[12,0,1,0,1,4,0,0,1,68],
-"crazyflie_8h.html#a81a706c185f561248908b837ec5fd9d2":[12,0,1,0,1,4,0,0,1,90],
-"crazyflie_8h.html#a829f2071c863d3cbee8fc282ec1fe373":[12,0,1,0,1,4,0,0,1,93],
-"crazyflie_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,4,0,0,1,42],
-"crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300":[12,0,1,0,1,4,0,0,1,69]
+"crazyflie_8h.html#a73225755857cd90c4c599337fa44de97":[12,0,1,0,1,4,0,0,1,97]
 };

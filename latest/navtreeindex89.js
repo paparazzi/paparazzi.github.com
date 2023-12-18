@@ -1,5 +1,12 @@
 var NAVTREEINDEX89 =
 {
+"imu__chimu_8h.html#ad5d57a3568081896cb1b93c91c5c99a6":[12,0,1,0,6,37,5,11],
+"imu__chimu_8h.html#ad92caacc7c52b5b3f4f208a08bd19192":[12,0,1,0,6,37,5,42],
+"imu__chimu_8h.html#ae4341b0de3991b9ed967e637f1ccd2a8":[12,0,1,0,6,37,5,5,1],
+"imu__chimu_8h.html#ae840d0bbbea1e3c5df1bf0445b30d69a":[12,0,1,0,6,37,5,15],
+"imu__chimu_8h.html#aef84e707b8e8fbf399dbdbc3fdd4e903":[12,0,1,0,6,37,5,5,0],
+"imu__chimu_8h.html#af0e910c2b81bc5141dd9a8222ea50b51":[12,0,1,0,6,37,5,5,2],
+"imu__chimu_8h.html#af36a9cd2d5aab9289a9b689103e18a60":[12,0,1,0,6,37,5,20],
 "imu__chimu_8h.html#af38f85f3b77d92ff880ba0bb4ce46ae3":[12,0,1,0,6,37,5,29],
 "imu__chimu_8h.html#af6d1ee28ae20a33a297c72e95198d3d1":[12,0,1,0,6,37,5,32],
 "imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad":[12,0,1,0,6,37,5,5,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX89 =
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,35,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,36,35],
 "imu__nps_8c.html":[12,0,1,0,6,36,36],
-"imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,36,36,1],
-"imu__nps_8c.html#a3eda401c67dfeee490285016ec944e48":[12,0,1,0,6,36,36,0],
-"imu__nps_8c.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac":[12,0,1,0,6,36,36,2],
-"imu__nps_8c.html#ad6e7c496430e1f1a0f673f23b5bcdb7d":[12,0,1,0,6,36,36,4],
-"imu__nps_8c.html#af25f098236ec92998a69e688afcfebed":[12,0,1,0,6,36,36,3],
-"imu__nps_8c_source.html":[12,0,1,0,6,36,36],
-"imu__nps_8h.html":[12,0,1,0,6,36,37],
-"imu__nps_8h.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,36,37,2]
+"imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e":[12,0,1,0,6,36,36,1]
 };

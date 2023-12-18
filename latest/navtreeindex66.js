@@ -1,5 +1,12 @@
 var NAVTREEINDEX66 =
 {
+"group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b":[9,0,0,12,2],
+"group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b":[12,0,1,0,5,6,9,2],
+"group__i2c.html#structi2c__errors":[9,0,0,2],
+"group__i2c.html#structi2c__periph":[9,0,0,1],
+"group__i2c.html#structi2c__transaction":[9,0,0,0],
+"group__math.html":[9,9],
+"group__math__algebra.html":[9,9,1],
 "group__math__algebra__double.html":[9,9,1,2],
 "group__math__algebra__double.html#a00c6a387099e94f2eed59fcdae3a5e28":[9,9,1,2,5,1],
 "group__math__algebra__double.html#a01b62483d872e64b47e33d931c8ec2cc":[9,9,1,2,2,2],
@@ -121,9 +128,9 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046":[12,0,1,0,4,6,51],
 "group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad":[9,9,1,0,7],
 "group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad":[12,0,1,0,4,6,0],
+"group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[9,9,1,0,129],
 "group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[12,0,1,0,4,5,40],
 "group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[12,0,1,0,4,6,122],
-"group__math__algebra__float.html#ga098d15766c940fc003d0db7289e1ab77":[9,9,1,0,129],
 "group__math__algebra__float.html#ga0a76eb680a60ea46d382cee034fbfeb8":[9,9,1,0,14],
 "group__math__algebra__float.html#ga0a76eb680a60ea46d382cee034fbfeb8":[12,0,1,0,4,6,7],
 "group__math__algebra__float.html#ga0a7d59fb7d31456ca480a31fec6deb19":[9,9,1,0,88],
@@ -215,8 +222,8 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga364136a53a6725df4bebcf3f553dce20":[12,0,1,0,4,6,67],
 "group__math__algebra__float.html#ga37771817d997b294fb506a9e0892c915":[9,9,1,0,30],
 "group__math__algebra__float.html#ga37771817d997b294fb506a9e0892c915":[12,0,1,0,4,6,23],
-"group__math__algebra__float.html#ga3d2fbccf8229c3bb390f1ff342defde7":[12,0,1,0,4,6,14],
 "group__math__algebra__float.html#ga3d2fbccf8229c3bb390f1ff342defde7":[9,9,1,0,21],
+"group__math__algebra__float.html#ga3d2fbccf8229c3bb390f1ff342defde7":[12,0,1,0,4,6,14],
 "group__math__algebra__float.html#ga3e14b0798bbad05e64ed477c027d1411":[9,9,1,0,160],
 "group__math__algebra__float.html#ga3e14b0798bbad05e64ed477c027d1411":[12,0,1,0,4,6,153],
 "group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913":[9,9,1,0,135],
@@ -242,12 +249,5 @@ var NAVTREEINDEX66 =
 "group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83":[12,0,1,0,4,6,88],
 "group__math__algebra__float.html#ga52cfb535525f92ea9535275cc3000edf":[9,9,1,0,42],
 "group__math__algebra__float.html#ga52cfb535525f92ea9535275cc3000edf":[12,0,1,0,4,6,35],
-"group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594":[9,9,1,0,128],
-"group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594":[12,0,1,0,4,5,39],
-"group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594":[12,0,1,0,4,6,121],
-"group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4":[9,9,1,0,159],
-"group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4":[12,0,1,0,4,6,152],
-"group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[9,9,1,0,124],
-"group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[12,0,1,0,4,5,36],
-"group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda":[12,0,1,0,4,6,117]
+"group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594":[9,9,1,0,128]
 };

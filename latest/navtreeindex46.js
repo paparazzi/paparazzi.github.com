@@ -1,5 +1,12 @@
 var NAVTREEINDEX46 =
 {
+"cyrf6936__regs_8h.html#a98d56d777f22293c7a3132a2201a9bb3":[12,0,1,0,7,35,34],
+"cyrf6936__regs_8h.html#a9fb32243724177c7c10bf1b9a978131c":[12,0,1,0,7,35,16],
+"cyrf6936__regs_8h.html#aa025b16164837fdbab0169cadd35d3a5":[12,0,1,0,7,35,3],
+"cyrf6936__regs_8h.html#aa2aff3ab3ba09789c032b66440aec886":[12,0,1,0,7,35,61],
+"cyrf6936__regs_8h.html#aa60a0169c4019a951588cba338cef112":[12,0,1,0,7,35,23],
+"cyrf6936__regs_8h.html#aa732d1b040b406d817e2f0e03dd232a1":[12,0,1,0,7,35,54],
+"cyrf6936__regs_8h.html#aa9e6c568534255c1038788ed6d8c7305":[12,0,1,0,7,35,74],
 "cyrf6936__regs_8h.html#ab389a398ada3feff95232bbb1a240162":[12,0,1,0,7,35,73],
 "cyrf6936__regs_8h.html#ab64752e434ff2149ca72acf62f758ffd":[12,0,1,0,7,35,69],
 "cyrf6936__regs_8h.html#ab7278ea7a8380eea095f66a3892d4daa":[12,0,1,0,7,35,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX46 =
 "decawave__anchorless__communication_8c.html#a69ac1f48fb128e861016b15f428e1a0b":[12,0,1,0,6,16,0,12],
 "decawave__anchorless__communication_8c.html#a6f0f4c1b9ff2bec58ef21c807003cdc6":[12,0,1,0,6,16,0,27],
 "decawave__anchorless__communication_8c.html#a701a0951ea5719144dc95167ec86eecf":[12,0,1,0,6,16,0,0,5],
-"decawave__anchorless__communication_8c.html#a71ed95cd99d66a324de4fb6a98e20c30":[12,0,1,0,6,16,0,0,4],
-"decawave__anchorless__communication_8c.html#a7555dd71206bfc350ea3bcec3f8508be":[12,0,1,0,6,16,0,4],
-"decawave__anchorless__communication_8c.html#a7902a609d7de5b34b0f4c738e90a067f":[12,0,1,0,6,16,0,18],
-"decawave__anchorless__communication_8c.html#a7e958d13be89b25b7812f105fa4c44b7":[12,0,1,0,6,16,0,26],
-"decawave__anchorless__communication_8c.html#a8b2cd6139f69cd35c2bf0a5742433c20":[12,0,1,0,6,16,0,13],
-"decawave__anchorless__communication_8c.html#a910d30be78da3d9d74bfaeedfb27aaf8":[12,0,1,0,6,16,0,23],
-"decawave__anchorless__communication_8c.html#a9eb167d39464b41399db2f6748f14d4d":[12,0,1,0,6,16,0,24],
-"decawave__anchorless__communication_8c.html#aa7b9dc1ba7e2335a58c97f268e2e5232":[12,0,1,0,6,16,0,22]
+"decawave__anchorless__communication_8c.html#a71ed95cd99d66a324de4fb6a98e20c30":[12,0,1,0,6,16,0,0,4]
 };

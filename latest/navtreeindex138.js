@@ -1,5 +1,12 @@
 var NAVTREEINDEX138 =
 {
+"module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf":[1,115,0],
+"module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,115,1,0],
+"module__telemetry_transparent.html":[1,116],
+"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,116,1],
+"module__telemetry_transparent.html#functions__telemetry_transparent":[1,116,2],
+"module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,116,0],
+"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,116,2,0],
 "module__telemetry_transparent_frsky_x.html":[1,117],
 "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x":[1,117,1],
 "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x":[1,117,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX138 =
 "modules_2datalink_2superbitrf_8h.html#a3555152215e84393787b670fe68d553d":[12,0,1,0,6,15,28,0,33],
 "modules_2datalink_2superbitrf_8h.html#a3555152215e84393787b670fe68d553d":[12,0,1,0,0,2,1,2,1,0,33],
 "modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3":[12,0,1,0,6,15,28,10],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[12,0,1,0,6,15,28,10,9],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[12,0,1,0,0,2,1,2,1,1,9],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[12,0,1,0,6,15,28,10,11],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[12,0,1,0,0,2,1,2,1,1,11],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb":[12,0,1,0,6,15,28,10,7],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb":[12,0,1,0,0,2,1,2,1,1,7],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635":[12,0,1,0,6,15,28,10,6],
-"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635":[12,0,1,0,0,2,1,2,1,1,6]
+"modules_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[12,0,1,0,6,15,28,10,9]
 };

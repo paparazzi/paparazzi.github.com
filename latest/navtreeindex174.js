@@ -1,5 +1,12 @@
 var NAVTREEINDEX174 =
 {
+"pprz__wave_8h.html#ac85402e169286d0336e39753767fc3f3":[12,0,1,0,6,68,5,0,5],
+"pprz__wave_8h.html#ad06c3c3c51a1d59562af352f5d5bb1a8":[12,0,1,0,6,68,5,0,3],
+"pprz__wave_8h.html#ae6796540fe74fa7f6c1b713eac123c8d":[12,0,1,0,6,68,5,2],
+"pprz__wave_8h.html#af57836491edc35674cfe78c46358a3b4":[12,0,1,0,6,68,5,1],
+"pprz__wave_8h.html#structwave__t":[12,0,1,0,6,68,5,0],
+"pprz__wave_8h_source.html":[12,0,1,0,6,68,5],
+"pprzlink__cam__ctrl_8c.html":[12,0,1,0,6,19,13],
 "pprzlink__cam__ctrl_8c.html#a180192eec8773a7fd3b14cb1beefeb8f":[12,0,1,0,6,19,13,2],
 "pprzlink__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95":[12,0,1,0,6,19,13,1],
 "pprzlink__cam__ctrl_8c.html#a91d9a18eaa90156e925416142df3f09b":[12,0,1,0,6,19,13,3],
@@ -235,19 +242,12 @@ var NAVTREEINDEX174 =
 "px4__flash_2protocol_8h.html#af93bcc4da79998ee51b20acb2b117233":[12,0,1,0,6,54,0,0,6],
 "px4__flash_2protocol_8h.html#afb3dca317fca5b21149cb11262e56a93":[12,0,1,0,6,54,0,88],
 "px4__flash_2protocol_8h.html#afcf7a7fc6a9ee75d98dbd7f09267b663":[12,0,1,0,6,54,0,23],
-"px4__flash_2protocol_8h.html#structIOPacket":[12,0,1,0,6,38,5,0],
 "px4__flash_2protocol_8h.html#structIOPacket":[12,0,1,0,6,54,0,0],
+"px4__flash_2protocol_8h.html#structIOPacket":[12,0,1,0,6,38,5,0],
 "px4__flash_2protocol_8h_source.html":[12,0,1,0,6,54,0],
 "px4__flash_8c.html":[12,0,1,0,6,54,1],
 "px4__flash_8c.html#a15e65e9f7a79599101e851c3b5aedaa6":[12,0,1,0,6,54,1,2],
 "px4__flash_8c.html#a4313d2648f76a38cc8649e4516879c98":[12,0,1,0,6,54,1,3],
 "px4__flash_8c.html#a4befa55956db0e72b85aa585d3414662":[12,0,1,0,6,54,1,7],
-"px4__flash_8c.html#a549d2202a0f0e54d1e27e32b4d05f2bf":[12,0,1,0,6,54,1,13],
-"px4__flash_8c.html#a567c3c8fe12503e149d031d1f99491b9":[12,0,1,0,6,54,1,8],
-"px4__flash_8c.html#a5bbeb4ac8fb18641568992822ee3ba00":[12,0,1,0,6,54,1,14],
-"px4__flash_8c.html#a5bd31c634f75483277de8119121a7da2":[12,0,1,0,6,54,1,1],
-"px4__flash_8c.html#a66b8a8e2bebaa8695e17140cf8175a8a":[12,0,1,0,6,54,1,12],
-"px4__flash_8c.html#a8ec4db105e08788ed95ae45283a87771":[12,0,1,0,6,54,1,16],
-"px4__flash_8c.html#a995e6f9cd68af5b43ba60da0492cdde0":[12,0,1,0,6,54,1,11],
-"px4__flash_8c.html#a99cffb3acd6338136e833e4cb00f46e5":[12,0,1,0,6,54,1,6]
+"px4__flash_8c.html#a549d2202a0f0e54d1e27e32b4d05f2bf":[12,0,1,0,6,54,1,13]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX135 =
 {
+"module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,253,2],
+"module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness":[1,253,0],
+"module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness":[1,253,2,0],
+"module__logger_dataflash.html":[1,254],
+"module__logger_dataflash.html#configuration__logger_dataflash":[1,254,1],
+"module__logger_dataflash.html#functions__logger_dataflash":[1,254,2],
+"module__logger_dataflash.html#module_load_example__logger_dataflash":[1,254,0],
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,254,2,0],
 "module__logger_file.html":[1,255],
 "module__logger_file.html#configuration__logger_file":[1,255,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,338,0],
 "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam":[1,338,1,0],
 "module__nav_survey_poly_rotorcraft.html":[1,339],
-"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,339,1],
-"module__nav_survey_poly_rotorcraft.html#module_load_example__nav_survey_poly_rotorcraft":[1,339,0],
-"module__nav_survey_poly_rotorcraft.html#module_xml__nav_survey_poly_rotorcraft":[1,339,1,0],
-"module__nav_survey_polygon.html":[1,340],
-"module__nav_survey_polygon.html#module_load_example__nav_survey_polygon":[1,340,0],
-"module__nav_survey_polygon.html#module_xml__nav_survey_polygon":[1,340,0,0],
-"module__nav_survey_rectangle_rotorcraft.html":[1,341],
-"module__nav_survey_rectangle_rotorcraft.html#configuration__nav_survey_rectangle_rotorcraft":[1,341,1]
+"module__nav_survey_poly_rotorcraft.html#configuration__nav_survey_poly_rotorcraft":[1,339,1]
 };

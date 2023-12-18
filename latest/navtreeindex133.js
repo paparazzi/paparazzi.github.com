@@ -1,5 +1,12 @@
 var NAVTREEINDEX133 =
 {
+"module__ground_detect_sensor.html#functions__ground_detect_sensor":[1,311,2],
+"module__ground_detect_sensor.html#module_load_example__ground_detect_sensor":[1,311,0],
+"module__ground_detect_sensor.html#module_xml__ground_detect_sensor":[1,311,2,0],
+"module__gsm.html":[1,465],
+"module__gsm.html#functions__gsm":[1,465,1],
+"module__gsm.html#module_load_example__gsm":[1,465,0],
+"module__gsm.html#module_xml__gsm":[1,465,1,0],
 "module__guidance_basic_fw.html":[1,164],
 "module__guidance_basic_fw.html#configuration__guidance_basic_fw":[1,164,1],
 "module__guidance_basic_fw.html#functions__guidance_basic_fw":[1,164,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,204,1,0],
 "module__imu_matek_h743_slim.html":[1,205],
 "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,205,0],
-"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,205,0,0],
-"module__imu_mpu6000.html":[1,206],
-"module__imu_mpu6000.html#configuration__imu_mpu6000":[1,206,1],
-"module__imu_mpu6000.html#functions__imu_mpu6000":[1,206,2],
-"module__imu_mpu6000.html#module_load_example__imu_mpu6000":[1,206,0],
-"module__imu_mpu6000.html#module_xml__imu_mpu6000":[1,206,2,0],
-"module__imu_mpu6000_hmc5883.html":[1,207],
-"module__imu_mpu6000_hmc5883.html#configuration__imu_mpu6000_hmc5883":[1,207,1]
+"module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,205,0,0]
 };

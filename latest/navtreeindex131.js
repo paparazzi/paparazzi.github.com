@@ -1,5 +1,12 @@
 var NAVTREEINDEX131 =
 {
+"module__battery_monitor.html#configuration__battery_monitor":[1,21,1],
+"module__battery_monitor.html#functions__battery_monitor":[1,21,2],
+"module__battery_monitor.html#module_load_example__battery_monitor":[1,21,0],
+"module__battery_monitor.html#module_xml__battery_monitor":[1,21,2,0],
+"module__bebop_ae_awb.html":[1,53],
+"module__bebop_ae_awb.html#configuration__bebop_ae_awb":[1,53,1],
+"module__bebop_ae_awb.html#functions__bebop_ae_awb":[1,53,2],
 "module__bebop_ae_awb.html#module_load_example__bebop_ae_awb":[1,53,0],
 "module__bebop_ae_awb.html#module_xml__bebop_ae_awb":[1,53,2,0],
 "module__bebop_cam.html":[1,450],
@@ -242,12 +249,5 @@ var NAVTREEINDEX131 =
 "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation":[1,457,3],
 "module__distributed_circular_formation.html#functions__distributed_circular_formation":[1,457,2],
 "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation":[1,457,0],
-"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,457,3,0],
-"module__dragspeed.html":[1,458],
-"module__dragspeed.html#autotoc_md7":[0],
-"module__dragspeed.html#autotoc_md8":[1],
-"module__dragspeed.html#autotoc_md9":[2],
-"module__dragspeed.html#configuration__dragspeed":[1,458,1],
-"module__dragspeed.html#functions__dragspeed":[1,458,2],
-"module__dragspeed.html#module_load_example__dragspeed":[1,458,0]
+"module__distributed_circular_formation.html#module_xml__distributed_circular_formation":[1,457,3,0]
 };

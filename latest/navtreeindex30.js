@@ -1,5 +1,12 @@
 var NAVTREEINDEX30 =
 {
+"chibios_2mcu__arch_8c.html#a0e8e546b23061d763841bfe2f6d3a8b4ad075c87656668345443a773a0cd7cade":[12,0,1,0,0,0,8,0,3],
+"chibios_2mcu__arch_8c.html#a0e8e546b23061d763841bfe2f6d3a8b4af2e96ee99e21c86a5b6ea3e130059385":[12,0,1,0,0,0,8,0,1],
+"chibios_2mcu__arch_8c.html#a0e8e546b23061d763841bfe2f6d3a8b4af519d17a1b0099ab10b257ea9aa40d42":[12,0,1,0,0,0,8,0,4],
+"chibios_2mcu__arch_8c.html#a1296057f718ade4eeb9674b9c3550cb8":[12,0,1,0,0,0,8,2],
+"chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,0,8,1],
+"chibios_2mcu__arch_8c_source.html":[12,0,1,0,0,0,8],
+"chibios_2mcu__arch_8h.html":[12,0,1,0,0,0,9],
 "chibios_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454":[12,0,1,0,0,0,9,0],
 "chibios_2mcu__arch_8h_source.html":[12,0,1,0,0,0,9],
 "chibios_2mcu__periph_2adc__arch_8c.html":[12,0,1,0,0,0,0,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX30 =
 "chimera_2chibios_2v1_80_2board_8h.html#a045ac704232142d337bc404bf3409f8c":[12,0,1,0,1,3,0,0,0,91],
 "chimera_2chibios_2v1_80_2board_8h.html#a04c59399cd6408e550745f68b5ff76e1":[12,0,1,0,1,3,0,0,0,332],
 "chimera_2chibios_2v1_80_2board_8h.html#a04d263388b961fa01d9f866570bd968b":[12,0,1,0,1,3,0,0,0,348],
-"chimera_2chibios_2v1_80_2board_8h.html#a0504dab00dae4bba91e1160a03efbdc7":[12,0,1,0,1,3,0,0,0,228],
-"chimera_2chibios_2v1_80_2board_8h.html#a061ddb84ec8527a4cb227cb5402cb009":[12,0,1,0,1,3,0,0,0,319],
-"chimera_2chibios_2v1_80_2board_8h.html#a068f3ab3d12aaac71fdc851668879886":[12,0,1,0,1,3,0,0,0,331],
-"chimera_2chibios_2v1_80_2board_8h.html#a0693cadf9e6293a59fd0f40bb700a31f":[12,0,1,0,1,3,0,0,0,458],
-"chimera_2chibios_2v1_80_2board_8h.html#a072c9e030f9b2e8444252399cfda3441":[12,0,1,0,1,3,0,0,0,121],
-"chimera_2chibios_2v1_80_2board_8h.html#a0900ecb25bf0bedd35dbd5ed62e562e3":[12,0,1,0,1,3,0,0,0,35],
-"chimera_2chibios_2v1_80_2board_8h.html#a09018f75c61279ce6da0d763fffe27fd":[12,0,1,0,1,3,0,0,0,249],
-"chimera_2chibios_2v1_80_2board_8h.html#a09e19504f72d0db3c726a7b731349a6a":[12,0,1,0,1,3,0,0,0,310]
+"chimera_2chibios_2v1_80_2board_8h.html#a0504dab00dae4bba91e1160a03efbdc7":[12,0,1,0,1,3,0,0,0,228]
 };

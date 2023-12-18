@@ -1,5 +1,12 @@
 var NAVTREEINDEX49 =
 {
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dda843d23e362da3d98099e5afa19b5e162":[12,0,1,0,6,42,2,2,0],
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dda8fd05fc80f0c6275cf41f6d629fff33e":[12,0,1,0,6,42,2,2,1],
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dda9e08c81b2cfd76c9e9b5cf47a077a0f5":[12,0,1,0,6,42,2,2,2],
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2ddab0f2ef279997794415b3a908cf2cce8e":[12,0,1,0,6,42,2,2,6],
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2ddab24e9b219e8cd11821666d62260e1571":[12,0,1,0,6,42,2,2,4],
+"direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2ddacee242aa0a04c32e30c8ba13cb8eb492":[12,0,1,0,6,42,2,2,7],
+"direct__memory__logger_8h.html#aeba90b7cb63c00c09889d56958933a68":[12,0,1,0,6,42,2,3],
 "direct__memory__logger_8h.html#aeccaae21b81b02cdd928bf6dcf0ceffd":[12,0,1,0,6,42,2,6],
 "direct__memory__logger_8h.html#afa53d452d5c1d9838643a62f697979ef":[12,0,1,0,6,42,2,0,1],
 "direct__memory__logger_8h.html#structDirectMemoryLogger":[12,0,1,0,6,42,2,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX49 =
 "dw1000__arduino_8c.html#a9a99d044574819defa8aeede4176a356":[12,0,1,0,6,16,2,10],
 "dw1000__arduino_8c.html#a9dc5d2e81fd68b0387254197e85c5b0e":[12,0,1,0,6,16,2,0,4],
 "dw1000__arduino_8c.html#a9dfdb2ad94a2a008dffdf9ab30cddda8":[12,0,1,0,6,16,2,27],
-"dw1000__arduino_8c.html#aa0b98483ecbbd828ed5dd2330c290892":[12,0,1,0,6,16,2,0,7],
-"dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206":[12,0,1,0,6,16,2,45],
-"dw1000__arduino_8c.html#aa4473bf20e67d96617e540794418fa3c":[12,0,1,0,6,16,2,1],
-"dw1000__arduino_8c.html#aafcc0d24f4842204a9d59e04a0638f74":[12,0,1,0,6,16,2,5],
-"dw1000__arduino_8c.html#ab0e90bacd19086fb47cf523e18514346":[12,0,1,0,6,16,2,11],
-"dw1000__arduino_8c.html#ab9d9265b1d597d80f5c459c19f082f2c":[12,0,1,0,6,16,2,26],
-"dw1000__arduino_8c.html#abafdc9764fc8e346891fc6d215cc8d89":[12,0,1,0,6,16,2,30],
-"dw1000__arduino_8c.html#abb2b8df5c50cc7d6b56e24cbe01edeb3":[12,0,1,0,6,16,2,0,9]
+"dw1000__arduino_8c.html#aa0b98483ecbbd828ed5dd2330c290892":[12,0,1,0,6,16,2,0,7]
 };

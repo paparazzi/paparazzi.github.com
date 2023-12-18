@@ -1,5 +1,12 @@
 var NAVTREEINDEX137 =
 {
+"module__scheduling_indi_simple.html#functions__scheduling_indi_simple":[1,99,1],
+"module__scheduling_indi_simple.html#module_load_example__scheduling_indi_simple":[1,99,0],
+"module__scheduling_indi_simple.html#module_xml__scheduling_indi_simple":[1,99,1,0],
+"module__sensors_hitl.html":[1,411],
+"module__sensors_hitl.html#configuration__sensors_hitl":[1,411,1],
+"module__sensors_hitl.html#datalink_functions__sensors_hitl":[1,411,3],
+"module__sensors_hitl.html#functions__sensors_hitl":[1,411,2],
 "module__sensors_hitl.html#module_load_example__sensors_hitl":[1,411,0],
 "module__sensors_hitl.html#module_xml__sensors_hitl":[1,411,3,0],
 "module__servo_tester.html":[1,491],
@@ -242,12 +249,5 @@ var NAVTREEINDEX137 =
 "module__telemetry_sim.html#module_load_example__telemetry_sim":[1,114,0],
 "module__telemetry_sim.html#module_xml__telemetry_sim":[1,114,1,0],
 "module__telemetry_superbitrf.html":[1,115],
-"module__telemetry_superbitrf.html#functions__telemetry_superbitrf":[1,115,1],
-"module__telemetry_superbitrf.html#module_load_example__telemetry_superbitrf":[1,115,0],
-"module__telemetry_superbitrf.html#module_xml__telemetry_superbitrf":[1,115,1,0],
-"module__telemetry_transparent.html":[1,116],
-"module__telemetry_transparent.html#configuration__telemetry_transparent":[1,116,1],
-"module__telemetry_transparent.html#functions__telemetry_transparent":[1,116,2],
-"module__telemetry_transparent.html#module_load_example__telemetry_transparent":[1,116,0],
-"module__telemetry_transparent.html#module_xml__telemetry_transparent":[1,116,2,0]
+"module__telemetry_superbitrf.html#functions__telemetry_superbitrf":[1,115,1]
 };

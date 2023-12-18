@@ -1,5 +1,12 @@
 var NAVTREEINDEX216 =
 {
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#a9cbc1fc95626919dd2c3ed0fa095e76e":[12,0,1,0,1,21,0,3,1,88],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#a9d125141e8f301e2b6d590067fd7890e":[12,0,1,0,1,21,0,3,1,90],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#a9d2286ff5fc5fdf03b469795a704619e":[12,0,1,0,1,21,0,3,1,98],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#a9e6d677685a457580ffcac5d4dc402e9":[12,0,1,0,1,21,0,3,1,39],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#a9f72e7206a6300a9d86bccf73f85279a":[12,0,1,0,1,21,0,3,1,250],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#aa16cf87c3dfc59ef20bfeb5c7cd7ab6e":[12,0,1,0,1,21,0,3,1,202],
+"tawaki_2chibios_2v2_80_2mcuconf_8h.html#aa2f70df5cf087cd6960d96a88fa9a8dc":[12,0,1,0,1,21,0,3,1,33],
 "tawaki_2chibios_2v2_80_2mcuconf_8h.html#aa433d13b7f1d816edf66e3bcdaddc88f":[12,0,1,0,1,21,0,3,1,237],
 "tawaki_2chibios_2v2_80_2mcuconf_8h.html#aa47364962a42df4876378ccf3a550f62":[12,0,1,0,1,21,0,3,1,224],
 "tawaki_2chibios_2v2_80_2mcuconf_8h.html#aa499e5a7c6352b58178e0651483d88ee":[12,0,1,0,1,21,0,3,1,253],
@@ -242,12 +249,5 @@ var NAVTREEINDEX216 =
 "tawaki_8h.html#a86960c3aad4310e9c2963cd5d63e6392":[12,0,1,0,1,21,0,0,1,85],
 "tawaki_8h.html#a87537e4413a12b7b177ea61d489c2621":[12,0,1,0,1,21,0,0,1,68],
 "tawaki_8h.html#a8899afdbd830cb0b81968fc660291934":[12,0,1,0,1,21,0,0,1,208],
-"tawaki_8h.html#a8a0caad43d7d3d22d60a13e85d97b80a":[12,0,1,0,1,21,0,0,1,5],
-"tawaki_8h.html#a8faef81f6f3f71405b3f2351cef48ab2":[12,0,1,0,1,21,0,0,1,111],
-"tawaki_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5":[12,0,1,0,1,21,0,0,1,101],
-"tawaki_8h.html#a93588ba4e78f8b0452867afb990c0264":[12,0,1,0,1,21,0,0,1,93],
-"tawaki_8h.html#a94fa241ceca04635f282e09bdd829f5f":[12,0,1,0,1,21,0,0,1,14],
-"tawaki_8h.html#a963a0cc2bef521f25be4098b1c7057ca":[12,0,1,0,1,21,0,0,1,17],
-"tawaki_8h.html#a97486067a300c88b1f88f6ab8727c6cf":[12,0,1,0,1,21,0,0,1,173],
-"tawaki_8h.html#a98254443629620eef091f4ac556bcb56":[12,0,1,0,1,21,0,0,1,15]
+"tawaki_8h.html#a8a0caad43d7d3d22d60a13e85d97b80a":[12,0,1,0,1,21,0,0,1,5]
 };
