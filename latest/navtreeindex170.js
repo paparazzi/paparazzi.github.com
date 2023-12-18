@@ -1,5 +1,11 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#ESTIMATOR":[2,0,38],
+"paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,51],
+"paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,54],
+"paparazzi_messages.html#EXTERNAL_POSE":[2,1,36],
+"paparazzi_messages.html#EXTERNAL_POSE_SMALL":[2,1,37],
+"paparazzi_messages.html#FBW_STATUS":[2,0,97],
 "paparazzi_messages.html#FILTER":[2,0,128],
 "paparazzi_messages.html#FILTER_ALIGNER":[2,0,131],
 "paparazzi_messages.html#FLIGHT_BENCHMARK":[2,0,61],
@@ -243,11 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#VIDEO_ROI":[2,1,55],
 "paparazzi_messages.html#VIDEO_SYNC":[2,0,205],
 "paparazzi_messages.html#VISION_OUTBACK":[2,0,52],
-"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,84],
-"paparazzi_messages.html#VISUALTARGET":[2,0,215],
-"paparazzi_messages.html#WAYPOINT_MOVED":[2,2,28],
-"paparazzi_messages.html#WEATHER":[2,0,199],
-"paparazzi_messages.html#WIND":[2,2,7],
-"paparazzi_messages.html#WINDTUNNEL_MEAS":[2,0,192],
-"paparazzi_messages.html#WINDTURBINE_STATUS":[2,1,32]
+"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,84]
 };

@@ -854,6 +854,8 @@ var annotated_dup =
     [ "pca95xx", "pca95xx_8h.html#structpca95xx", "pca95xx_8h_structpca95xx" ],
     [ "PCAP01VALUE", "humid__pcap01_8h.html#structPCAP01VALUE", "humid__pcap01_8h_structPCAP01VALUE" ],
     [ "periodic_telemetry", "telemetry__common_8h.html#structperiodic__telemetry", "telemetry__common_8h_structperiodic__telemetry" ],
+    [ "pfc_actuator_t", "pfc__actuators_8c.html#structpfc__actuator__t", "pfc__actuators_8c_structpfc__actuator__t" ],
+    [ "pfc_actuators_t", "pfc__actuators_8c.html#structpfc__actuators__t", "pfc__actuators_8c_structpfc__actuators__t" ],
     [ "physmem", "virt2phys_8h.html#structphysmem", "virt2phys_8h_structphysmem" ],
     [ "PI_D_df", "pid_8h.html#structPI__D__df", "pid_8h_structPI__D__df" ],
     [ "PID_df", "pid_8h.html#structPID__df", "pid_8h_structPID__df" ],

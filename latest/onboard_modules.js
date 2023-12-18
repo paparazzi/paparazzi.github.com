@@ -7,6 +7,7 @@ var onboard_modules =
       [ "Benchmark modules", "onboard_modules.html#modules_category_benchmark", null ],
       [ "Boards modules", "onboard_modules.html#modules_category_boards", null ],
       [ "Cam_Control modules", "onboard_modules.html#modules_category_cam_control", null ],
+      [ "Checks modules", "onboard_modules.html#modules_category_checks", null ],
       [ "Com modules", "onboard_modules.html#modules_category_com", null ],
       [ "Computer_Vision modules", "onboard_modules.html#modules_category_computer_vision", null ],
       [ "Control modules", "onboard_modules.html#modules_category_control", null ],
@@ -342,6 +343,19 @@ var onboard_modules =
       [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
       [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
         [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
+      ] ]
+    ] ],
+    [ "pfc_actuators module", "module__pfc_actuators.html", [
+      [ "Example for airframe file", "module__pfc_actuators.html#module_load_example__pfc_actuators", null ],
+      [ "Module configuration options", "module__pfc_actuators.html#configuration__pfc_actuators", null ],
+      [ "Module functions", "module__pfc_actuators.html#functions__pfc_actuators", [
+        [ "Raw pfc_actuators.xml file:", "module__pfc_actuators.html#module_xml__pfc_actuators", null ]
+      ] ]
+    ] ],
+    [ "preflight_checks module", "module__preflight_checks.html", [
+      [ "Example for airframe file", "module__preflight_checks.html#module_load_example__preflight_checks", null ],
+      [ "Module configuration options", "module__preflight_checks.html#configuration__preflight_checks", [
+        [ "Raw preflight_checks.xml file:", "module__preflight_checks.html#module_xml__preflight_checks", null ]
       ] ]
     ] ],
     [ "generic_com module", "module__generic_com.html", [
@@ -3175,12 +3189,6 @@ var onboard_modules =
       [ "Module configuration options", "module__pose_history.html#configuration__pose_history", null ],
       [ "Module functions", "module__pose_history.html#functions__pose_history", [
         [ "Raw pose_history.xml file:", "module__pose_history.html#module_xml__pose_history", null ]
-      ] ]
-    ] ],
-    [ "preflight_checks module", "module__preflight_checks.html", [
-      [ "Example for airframe file", "module__preflight_checks.html#module_load_example__preflight_checks", null ],
-      [ "Module configuration options", "module__preflight_checks.html#configuration__preflight_checks", [
-        [ "Raw preflight_checks.xml file:", "module__preflight_checks.html#module_xml__preflight_checks", null ]
       ] ]
     ] ],
     [ "px4_flash module", "module__px4_flash.html", [
