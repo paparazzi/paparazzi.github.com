@@ -261,61 +261,62 @@ $(document).ready(function(){initNavTree('eff__scheduling__nederdrone_8c_source.
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#error &quot;ctfl_eff_scheduling_nederdrone is very specific and only works for one Nederdrone configuration!&quot;</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (i&gt;3) {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordtype">float</span> wing_thrust = actuators_pprz[i-4];</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      Bound(wing_thrust,3000.0,9600.0);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      wing_thrust_scaling = wing_thrust/9600.0/0.8;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[0][i] *= wing_thrust_scaling;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[1][i] *= wing_thrust_scaling;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[2][i] *= wing_thrust_scaling;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">// Thrust effectiveness</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">float</span> ratio_spec_force = 0.0;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">float</span> airspeed_spec_force = airspeed;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  Bound(airspeed_spec_force, 8.0, 20.0);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  ratio_spec_force = (airspeed_spec_force-8.0) / 12.0;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// Thrust</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#ac696f404bb7cfc50d07de684ef6b6594">g_hover</a>[3][i] * (1.0 - ratio_spec_force) + <a class="code" href="eff__scheduling__nederdrone_8c.html#aeee273e33841db7719ed2c09f7e47896">g_forward</a>[3][i] * ratio_spec_force;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] *= <a class="code" href="eff__scheduling__nederdrone_8c.html#ac59ae4483fb410e96c5e4131f05c0ec4">thrust_eff_scaling</a>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// With this factor the thrust effectiveness of the back wing can be scaled</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span>( (i ==2) || (i==3)) {</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] *= <a class="code" href="eff__scheduling__nederdrone_8c.html#ac37d0548333ea56e9fdca775904d3c57">backwing_thrust_eff_scaling</a>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">bool</span> low_airspeed = <a class="code" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26">stateGetAirspeed_f</a>() &lt; <a class="code" href="eff__scheduling__nederdrone_8c.html#a00ec67e62acc58db22558ea6702985d3">INDI_SCHEDULING_LOW_AIRSPEED</a>;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="comment">// Tip prop ratio</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">float</span> pitch_deg = <a class="code" href="guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba">eulers_zxy</a>.<a class="code" href="group__math__algebra__float.html#a98f8790d7dbb4d3ef03e99cdf27f844e">theta</a> / M_PI * 180.f;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">float</span> pitch_range_deg = <a class="code" href="eff__scheduling__nederdrone_8c.html#a3ff47eb659628a1aaec104af4d1ddf76">sched_tip_prop_upper_pitch_limit_deg</a> - <a class="code" href="eff__scheduling__nederdrone_8c.html#ae33faed49115dc0b7e347da73637a4f9">sched_tip_prop_lower_pitch_limit_deg</a>;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="eff__scheduling__nederdrone_8c.html#ab3dd792283925fd31982b944ebc39413">sched_tip_props_always_on</a> || low_airspeed || <a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="rc__datalink_8h.html#a9fd86154b023cbc8a9981059db36497b">RADIO_AUX2</a>] &gt; 0) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a> = 1.0;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">float</span> pitch_offset = pitch_deg - <a class="code" href="eff__scheduling__nederdrone_8c.html#ae33faed49115dc0b7e347da73637a4f9">sched_tip_prop_lower_pitch_limit_deg</a>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a> = pitch_offset / pitch_range_deg;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  Bound(<a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a>, 0.0, 1.0);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// Blance the cost of using motors and aerodynamic surfaces</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">if</span>(airspeed &gt; 15.0) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 4; i++) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i]*<a class="code" href="eff__scheduling__nederdrone_8c.html#a37fdbf4eac3c4a93ada1e5ecf8767f3e">pref_flaps_factor</a>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">for</span> (i = 4; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i]/<a class="code" href="eff__scheduling__nederdrone_8c.html#a37fdbf4eac3c4a93ada1e5ecf8767f3e">pref_flaps_factor</a>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 8; i++) {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i];</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="comment">// Increase servo effectiveness depending on the thrust of the propeller of that wing: 0,1,2,3 = motors, 4,5,6,7 = flaps</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="keywordtype">float</span> wing_thrust = actuators_pprz[i-4];</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      Bound(wing_thrust,3000.0,9600.0);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      wing_thrust_scaling = wing_thrust/9600.0/0.8;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[0][i] *= wing_thrust_scaling;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[1][i] *= wing_thrust_scaling;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[2][i] *= wing_thrust_scaling;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">// Thrust effectiveness</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">float</span> ratio_spec_force = 0.0;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">float</span> airspeed_spec_force = airspeed;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  Bound(airspeed_spec_force, 8.0, 20.0);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  ratio_spec_force = (airspeed_spec_force-8.0) / 12.0;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; INDI_NUM_ACT; i++) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Thrust</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#ac696f404bb7cfc50d07de684ef6b6594">g_hover</a>[3][i] * (1.0 - ratio_spec_force) + <a class="code" href="eff__scheduling__nederdrone_8c.html#aeee273e33841db7719ed2c09f7e47896">g_forward</a>[3][i] * ratio_spec_force;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] *= <a class="code" href="eff__scheduling__nederdrone_8c.html#ac59ae4483fb410e96c5e4131f05c0ec4">thrust_eff_scaling</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// With this factor the thrust effectiveness of the back wing can be scaled</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span>( (i ==2) || (i==3)) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a58b9d284732ce9ce4df89c8cb5027fb2">g1g2</a>[3][i] *= <a class="code" href="eff__scheduling__nederdrone_8c.html#ac37d0548333ea56e9fdca775904d3c57">backwing_thrust_eff_scaling</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">bool</span> low_airspeed = <a class="code" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26">stateGetAirspeed_f</a>() &lt; <a class="code" href="eff__scheduling__nederdrone_8c.html#a00ec67e62acc58db22558ea6702985d3">INDI_SCHEDULING_LOW_AIRSPEED</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">// Tip prop ratio</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">float</span> pitch_deg = <a class="code" href="guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba">eulers_zxy</a>.<a class="code" href="group__math__algebra__float.html#a98f8790d7dbb4d3ef03e99cdf27f844e">theta</a> / M_PI * 180.f;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">float</span> pitch_range_deg = <a class="code" href="eff__scheduling__nederdrone_8c.html#a3ff47eb659628a1aaec104af4d1ddf76">sched_tip_prop_upper_pitch_limit_deg</a> - <a class="code" href="eff__scheduling__nederdrone_8c.html#ae33faed49115dc0b7e347da73637a4f9">sched_tip_prop_lower_pitch_limit_deg</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="eff__scheduling__nederdrone_8c.html#ab3dd792283925fd31982b944ebc39413">sched_tip_props_always_on</a> || low_airspeed || <a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="rc__datalink_8h.html#a9fd86154b023cbc8a9981059db36497b">RADIO_AUX2</a>] &gt; 0) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a> = 1.0;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">float</span> pitch_offset = pitch_deg - <a class="code" href="eff__scheduling__nederdrone_8c.html#ae33faed49115dc0b7e347da73637a4f9">sched_tip_prop_lower_pitch_limit_deg</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a> = pitch_offset / pitch_range_deg;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  Bound(<a class="code" href="eff__scheduling__nederdrone_8c.html#a77bd71c198f86335f6df6c1dccf86557">sched_ratio_tip_props</a>, 0.0, 1.0);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// Blance the cost of using motors and aerodynamic surfaces</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">if</span>(airspeed &gt; 15.0) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 4; i++) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i]*<a class="code" href="eff__scheduling__nederdrone_8c.html#a37fdbf4eac3c4a93ada1e5ecf8767f3e">pref_flaps_factor</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">for</span> (i = 4; i &lt; 8; i++) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i]/<a class="code" href="eff__scheduling__nederdrone_8c.html#a37fdbf4eac3c4a93ada1e5ecf8767f3e">pref_flaps_factor</a>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 8; i++) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <a class="code" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a>[i] = <a class="code" href="eff__scheduling__nederdrone_8c.html#a6adf20b0613ba12efe0b96bacfc15aa3">indi_Wu_original</a>[i];</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="ttc" id="aautopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares.</div></div>
 <div class="ttc" id="aeff__scheduling__nederdrone_8c_html_a00ec67e62acc58db22558ea6702985d3"><div class="ttname"><a href="eff__scheduling__nederdrone_8c.html#a00ec67e62acc58db22558ea6702985d3">INDI_SCHEDULING_LOW_AIRSPEED</a></div><div class="ttdeci">#define INDI_SCHEDULING_LOW_AIRSPEED</div><div class="ttdef"><b>Definition:</b> <a href="eff__scheduling__nederdrone_8c_source.html#l00041">eff_scheduling_nederdrone.c:41</a></div></div>
 <div class="ttc" id="aeff__scheduling__nederdrone_8c_html_a3596b0a1acf5772a8692e4d9b9683906"><div class="ttname"><a href="eff__scheduling__nederdrone_8c.html#a3596b0a1acf5772a8692e4d9b9683906">use_scheduling</a></div><div class="ttdeci">int32_t use_scheduling</div><div class="ttdef"><b>Definition:</b> <a href="eff__scheduling__nederdrone_8c_source.html#l00067">eff_scheduling_nederdrone.c:67</a></div></div>
@@ -344,7 +345,7 @@ $(document).ready(function(){initNavTree('eff__scheduling__nederdrone_8c_source.
 <div class="ttc" id="agroup__math__algebra__float_html_structFloatEulers"><div class="ttname"><a href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a></div><div class="ttdoc">euler angles</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00084">pprz_algebra_float.h:84</a></div></div>
 <div class="ttc" id="agroup__state__attitude_html_gae03bd8f94b7150506835b77060b73311"><div class="ttname"><a href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311">stateGetNedToBodyQuat_f</a></div><div class="ttdeci">static struct FloatQuat * stateGetNedToBodyQuat_f(void)</div><div class="ttdoc">Get vehicle body attitude quaternion (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01131">state.h:1131</a></div></div>
 <div class="ttc" id="agroup__state__wind__airspeed_html_gab0cc6ebb3671ec1b34ac2c33f11c6b26"><div class="ttname"><a href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26">stateGetAirspeed_f</a></div><div class="ttdeci">static float stateGetAirspeed_f(void)</div><div class="ttdoc">Get airspeed (float).</div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01407">state.h:1407</a></div></div>
-<div class="ttc" id="aguidance__indi__hybrid_8c_html_acc726e0c657cfeaae1f81dc88d0fbdba"><div class="ttname"><a href="guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba">eulers_zxy</a></div><div class="ttdeci">struct FloatEulers eulers_zxy</div><div class="ttdoc">state eulers in zxy order</div><div class="ttdef"><b>Definition:</b> <a href="guidance__indi__hybrid_8c_source.html#l00167">guidance_indi_hybrid.c:170</a></div></div>
+<div class="ttc" id="aguidance__indi__hybrid_8c_html_acc726e0c657cfeaae1f81dc88d0fbdba"><div class="ttname"><a href="guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba">eulers_zxy</a></div><div class="ttdeci">struct FloatEulers eulers_zxy</div><div class="ttdoc">state eulers in zxy order</div><div class="ttdef"><b>Definition:</b> <a href="guidance__indi__hybrid_8c_source.html#l00166">guidance_indi_hybrid.c:169</a></div></div>
 <div class="ttc" id="amodules_2actuators_2actuators_8h_html"><div class="ttname"><a href="modules_2actuators_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers).</div></div>
 <div class="ttc" id="aradio__control_8c_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00001">radio_control.c:33</a></div></div>
 <div class="ttc" id="aradio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div><div class="ttdoc">Generic interface for radio control modules.</div></div>
@@ -364,7 +365,7 @@ $(document).ready(function(){initNavTree('eff__scheduling__nederdrone_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="eff__scheduling__nederdrone_8c.html">eff_scheduling_nederdrone.c</a></li>
-    <li class="footer">Generated on Mon Dec 18 2023 14:51:52 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 18 2023 20:54:41 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
