@@ -18,7 +18,7 @@ var rotorcraft_2guidance_2guidance__h_8c =
     [ "reset_guidance_reference_from_current_position", "rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5", null ],
     [ "send_gh", "rotorcraft_2guidance_2guidance__h_8c.html#a2c7bb64eb9e09d8755a7c362079144e9", null ],
     [ "send_href", "rotorcraft_2guidance_2guidance__h_8c.html#a2a0ab4da7295b59d24b4846400fbc807", null ],
-    [ "send_tune_hover", "rotorcraft_2guidance_2guidance__h_8c.html#a4ac814331d59a84f6a8d55066dd47014", null ],
+    [ "send_tune_hover", "rotorcraft_2guidance_2guidance__h_8c.html#a3cc1309dc264e46bee92b995fa0b6e9f", null ],
     [ "transition_run", "rotorcraft_2guidance_2guidance__h_8c.html#ae0ff25590456201a3c9ff1dc7ea13415", null ],
     [ "guidance_h", "rotorcraft_2guidance_2guidance__h_8c.html#a8e334308c59e5430c7dd0ac7e222f07b", null ],
     [ "guidance_h_cmd", "rotorcraft_2guidance_2guidance__h_8c.html#a0ae9c09ec4ef8939102a1acc6c4e84d9", null ],
