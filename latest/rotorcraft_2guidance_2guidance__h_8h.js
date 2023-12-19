@@ -1,12 +1,6 @@
 var rotorcraft_2guidance_2guidance__h_8h =
 [
-    [ "HorizontalGuidanceSetpoint", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceSetpoint", [
-      [ "heading", "rotorcraft_2guidance_2guidance__h_8h.html#a902dfeb0c0690d6b80c472b1ae695f61", null ],
-      [ "heading_rate", "rotorcraft_2guidance_2guidance__h_8h.html#a75b6a5ffd5e710cfe2f935778b19e210", null ],
-      [ "mask", "rotorcraft_2guidance_2guidance__h_8h.html#a2853885ec3a53a0dbd5cec05ab04a928", null ],
-      [ "pos", "rotorcraft_2guidance_2guidance__h_8h.html#a47d7eee694eeefe375dcf58a632f5c37", null ],
-      [ "speed", "rotorcraft_2guidance_2guidance__h_8h.html#abf09060f037f857c6f12d08970aca3ae", null ]
-    ] ],
+    [ "HorizontalGuidanceSetpoint", "structHorizontalGuidanceSetpoint.html", "structHorizontalGuidanceSetpoint" ],
     [ "HorizontalGuidanceReference", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceReference", [
       [ "accel", "rotorcraft_2guidance_2guidance__h_8h.html#a2765280c9b7c5fb58c0e14cb6f3e10bf", null ],
       [ "pos", "rotorcraft_2guidance_2guidance__h_8h.html#aaf6014914323023e853868e4568862f1", null ],
@@ -46,6 +40,8 @@ var rotorcraft_2guidance_2guidance__h_8h =
     [ "guidance_h_run_enter", "rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12", null ],
     [ "guidance_h_run_pos", "rotorcraft_2guidance_2guidance__h_8h.html#a3dffbef3ddf74f16b735fb4b145c8fc7", null ],
     [ "guidance_h_run_speed", "rotorcraft_2guidance_2guidance__h_8h.html#a7754f053ce1b1c42b964128edbc686af", null ],
+    [ "guidance_h_set_acc", "rotorcraft_2guidance_2guidance__h_8h.html#a065219ed3851e0e6fef8103d4f416a03", null ],
+    [ "guidance_h_set_body_acc", "rotorcraft_2guidance_2guidance__h_8h.html#a428d3435a3e12c6d65ca0ecad97fa626", null ],
     [ "guidance_h_set_body_vel", "rotorcraft_2guidance_2guidance__h_8h.html#ad46ecaf35a5c2615a6656a91a041d27d", null ],
     [ "guidance_h_set_heading", "rotorcraft_2guidance_2guidance__h_8h.html#a6abe0b9253c64c03d81b853d05d3a731", null ],
     [ "guidance_h_set_heading_rate", "rotorcraft_2guidance_2guidance__h_8h.html#aedf5a496ce41e9f5eee14f3c08693e02", null ],

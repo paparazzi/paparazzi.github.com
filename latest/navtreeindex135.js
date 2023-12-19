@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"module__light_temt.html":[1,289],
+"module__light_temt.html#functions__light_temt":[1,289,1],
 "module__light_temt.html#module_load_example__light_temt":[1,289,0],
 "module__light_temt.html#module_xml__light_temt":[1,289,1,0],
 "module__logger_control_effectiveness.html":[1,255],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,339,1],
 "module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,339,2],
 "module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,339,0],
-"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,339,2,0],
-"module__nav_survey_poly_osam.html":[1,340],
-"module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,340,1]
+"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,339,2,0]
 };

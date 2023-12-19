@@ -22,6 +22,7 @@ var guidance__h__ref_8h =
     [ "gh_set_ref", "guidance__h__ref_8h.html#a5678a7ba89f6b2900826c485e0cec175", null ],
     [ "gh_set_tau", "guidance__h__ref_8h.html#a90318751b9bb56e087a74ed0c7c54b5b", null ],
     [ "gh_set_zeta", "guidance__h__ref_8h.html#a18d391215a4644b94009241b5c161cc9", null ],
+    [ "gh_update_ref_from_accel_sp", "guidance__h__ref_8h.html#a894200f1d209150365a211109f065f07", null ],
     [ "gh_update_ref_from_pos_sp", "guidance__h__ref_8h.html#ab81c55cf71ee8fc94433f9584c159710", null ],
     [ "gh_update_ref_from_speed_sp", "guidance__h__ref_8h.html#ab89906355cb2ce9a7f1e67ebf1f78682", null ],
     [ "gh_max_speed", "guidance__h__ref_8h.html#a27a72d721f8583a4596d8a435980b4ab", null ],

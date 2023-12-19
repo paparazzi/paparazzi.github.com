@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#ENGINE_STATUS":[2,2,14],
+"paparazzi_messages.html#ESC":[2,0,225],
 "paparazzi_messages.html#ESTIMATOR":[2,0,38],
 "paparazzi_messages.html#EXTERNAL_FILTER_SOLUTION":[2,1,51],
 "paparazzi_messages.html#EXTERNAL_MAG_RAW":[2,1,54],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#VFF":[2,0,156],
 "paparazzi_messages.html#VFF_EXTENDED":[2,0,155],
 "paparazzi_messages.html#VIDEO_ROI":[2,1,55],
-"paparazzi_messages.html#VIDEO_SYNC":[2,0,205],
-"paparazzi_messages.html#VISION_OUTBACK":[2,0,52],
-"paparazzi_messages.html#VISION_POSITION_ESTIMATE":[2,0,84]
+"paparazzi_messages.html#VIDEO_SYNC":[2,0,205]
 };

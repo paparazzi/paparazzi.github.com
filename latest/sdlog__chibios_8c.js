@@ -22,7 +22,7 @@ var sdlog__chibios_8c =
     [ "THD_WORKING_AREA", "sdlog__chibios_8c.html#ab0bee2b698df718ac9c34f76b0b4c322", null ],
     [ "chibios_sdlog", "sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63", null ],
     [ "chibios_sdlog_filenames", "sdlog__chibios_8c.html#ae10f69027b3fe9dc11978cbb6039f038", null ],
-    [ "chibios_sdlog_status", "sdlog__chibios_8c.html#a7d728282306645bdba4db727222343c5", null ],
+    [ "chibios_sdlog_status", "sdlog__chibios_8c.html#a5a0f57818082e490842fe41c702272fa", null ],
     [ "NO_FILE_NAME", "sdlog__chibios_8c.html#ac4906480516463672f35682ae66f139b", null ],
     [ "powerOutageListener", "sdlog__chibios_8c.html#aa1f82d465033fcb9e099049cb9bdc785", null ],
     [ "powerOutageSource", "sdlog__chibios_8c.html#a7d247e5ccfb8b9a4bb1eb4fe13c8fd53", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX90 =
 {
+"imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2":[12,0,1,0,6,36,35,3],
+"imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,33,0],
 "imu__mpu9250__spi_8h.html#structImuMpu9250":[12,0,1,0,6,36,35,0],
 "imu__mpu9250__spi_8h_source.html":[12,0,1,0,6,36,35],
 "imu__nps_8c.html":[12,0,1,0,6,36,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX90 =
 "ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398":[12,0,1,0,6,37,18,53],
 "ins__ekf2_8cpp.html#a85a06aacb3bfb03ed9b6fff25daebb2f":[12,0,1,0,6,37,18,7],
 "ins__ekf2_8cpp.html#a88d16ad920c23ca263000fec0fe3926e":[12,0,1,0,6,37,18,8],
-"ins__ekf2_8cpp.html#a8dafbb2069be4fda5f75d61fff5ce9f0":[12,0,1,0,6,37,18,5],
-"ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933":[12,0,1,0,6,37,18,38],
-"ins__ekf2_8cpp.html#a9b0c0a22f0f6677accb2ae4b27f3cd16":[12,0,1,0,6,37,18,41]
+"ins__ekf2_8cpp.html#a8dafbb2069be4fda5f75d61fff5ce9f0":[12,0,1,0,6,37,18,5]
 };

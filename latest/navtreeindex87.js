@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"i2c__smbus_8h.html#ab98217e0ad04cb3068e159c2de8fd84d":[12,0,1,0,0,1,0,6,6],
+"i2c__smbus_8h.html#abd0ad56a944b1a95435d51cc54db36c4":[12,0,1,0,0,1,0,6,49],
 "i2c__smbus_8h.html#abd274f9e86bb3c7ce4de64791d243619":[12,0,1,0,0,1,0,6,65],
 "i2c__smbus_8h.html#abe53ff15e0717ccbd1d4c656c09ee53a":[12,0,1,0,0,1,0,6,31],
 "i2c__smbus_8h.html#ac2dd8b77e329bba4a3ca9cd275f9bf50":[12,0,1,0,0,1,0,6,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "imu_8h.html#af2fb6f5563e3be6b4fd69d00dfc8c619":[12,0,1,0,6,36,3,4,4],
 "imu_8h.html#af6a4afca0574bbf6ee348aec2ae7b858":[12,0,1,0,6,36,3,2,0],
 "imu_8h.html#structImu":[12,0,1,0,6,36,3,4],
-"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2],
-"imu_8h.html#structimu__calib__t":[12,0,1,0,6,36,3,0],
-"imu_8h.html#structimu__gyro__t":[12,0,1,0,6,36,3,1]
+"imu_8h.html#structimu__accel__t":[12,0,1,0,6,36,3,2]
 };

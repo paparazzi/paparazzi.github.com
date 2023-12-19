@@ -128,21 +128,33 @@ $(document).ready(function(){initNavTree('gvf__low__level__control_8h_source.htm
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define GVF_MODE_WAYPOINT NAV_MODE_WAYPOINT</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define GVF_MODE_CIRCLE NAV_MODE_CIRCLE</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#error &quot;GVF does not support your firmware yet!&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// Low level control functions</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gvf__low__level__control_8h.html#ae27d2fdd26aa5b984a27c86c77544ac7">gvf_low_level_getState</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gvf__low__level__control_8h.html#a223ad1d855eda8d236a550e1cba2bada">gvf_low_level_control_2D</a>(<span class="keywordtype">float</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// GVF_LOW_LEVEL_CONTROL_H</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#elif defined(ROTORCRAFT_FIRMWARE)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define gvf_setNavMode(_navMode) (nav.horizontal_mode = _navMode)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define GVF_MODE_ROUTE NAV_HORIZONTAL_MODE_ROUTE</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define GVF_MODE_WAYPOINT NAV_HORIZONTAL_MODE_WAYPOINT</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define GVF_MODE_CIRCLE NAV_HORIZONTAL_MODE_CIRCLE</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//NAV_SETPOINT_MODE_POS</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//NAV_SETPOINT_MODE_SPEED</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//NAV_SETPOINT_MODE_ACCEL</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#error &quot;GVF does not support your firmware yet!&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// Low level control functions</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gvf__low__level__control_8h.html#ae27d2fdd26aa5b984a27c86c77544ac7">gvf_low_level_getState</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gvf__low__level__control_8h.html#a223ad1d855eda8d236a550e1cba2bada">gvf_low_level_control_2D</a>(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// GVF_LOW_LEVEL_CONTROL_H</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="ttc" id="acommon__nav_8h_html"><div class="ttname"><a href="common__nav_8h.html">common_nav.h</a></div></div>
 <div class="ttc" id="afixedwing_2stabilization_2stabilization__attitude_8h_html"><div class="ttname"><a href="fixedwing_2stabilization_2stabilization__attitude_8h.html">stabilization_attitude.h</a></div><div class="ttdoc">Fixed wing horizontal control.</div></div>
 <div class="ttc" id="agvf__low__level__control_8h_html_a223ad1d855eda8d236a550e1cba2bada"><div class="ttname"><a href="gvf__low__level__control_8h.html#a223ad1d855eda8d236a550e1cba2bada">gvf_low_level_control_2D</a></div><div class="ttdeci">void gvf_low_level_control_2D(float)</div><div class="ttdef"><b>Definition:</b> <a href="gvf__low__level__control_8c_source.html#l00052">gvf_low_level_control.c:52</a></div></div>
 <div class="ttc" id="agvf__low__level__control_8h_html_ae27d2fdd26aa5b984a27c86c77544ac7"><div class="ttname"><a href="gvf__low__level__control_8h.html#ae27d2fdd26aa5b984a27c86c77544ac7">gvf_low_level_getState</a></div><div class="ttdeci">void gvf_low_level_getState(void)</div><div class="ttdef"><b>Definition:</b> <a href="gvf__low__level__control_8c_source.html#l00035">gvf_low_level_control.c:35</a></div></div>
 <div class="ttc" id="anav_8h_html"><div class="ttname"><a href="nav_8h.html">nav.h</a></div><div class="ttdoc">Fixedwing Navigation library.</div></div>
+<div class="ttc" id="arotorcraft_2navigation_8h_html"><div class="ttname"><a href="rotorcraft_2navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions.</div></div>
 <div class="ttc" id="arover_2navigation_8h_html"><div class="ttname"><a href="rover_2navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rover navigation functions.</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -151,7 +163,7 @@ $(document).ready(function(){initNavTree('gvf__low__level__control_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_f11651931491444d54c9510df68bbdd5.html">gvf</a></li><li class="navelem"><a class="el" href="gvf__low__level__control_8h.html">gvf_low_level_control.h</a></li>
-    <li class="footer">Generated on Tue Dec 19 2023 13:38:48 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 19 2023 14:08:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

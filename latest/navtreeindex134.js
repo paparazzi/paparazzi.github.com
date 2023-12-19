@@ -1,5 +1,7 @@
 var NAVTREEINDEX134 =
 {
+"module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,206,1],
+"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,206,0],
 "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,206,1,0],
 "module__imu_matek_h743_slim.html":[1,207],
 "module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,207,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX134 =
 "module__light_solar.html":[1,288],
 "module__light_solar.html#functions__light_solar":[1,288,1],
 "module__light_solar.html#module_load_example__light_solar":[1,288,0],
-"module__light_solar.html#module_xml__light_solar":[1,288,1,0],
-"module__light_temt.html":[1,289],
-"module__light_temt.html#functions__light_temt":[1,289,1]
+"module__light_solar.html#module_xml__light_solar":[1,288,1,0]
 };

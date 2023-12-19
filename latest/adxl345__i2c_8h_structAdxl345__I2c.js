@@ -1,7 +1,7 @@
 var adxl345__i2c_8h_structAdxl345__I2c =
 [
     [ "config", "adxl345__i2c_8h.html#a1452312b7893660c3ab1a1d6b1ecb16d", null ],
-    [ "data", "adxl345__i2c_8h.html#a7516727773a8f288a576d61934253951", null ],
+    [ "data", "adxl345__i2c_8h.html#ab3c38f2bf8b577dc320fcb95c2373ebb", null ],
     [ "data_available", "adxl345__i2c_8h.html#a1dc74435279d34b33e03c5402789dff3", null ],
     [ "i2c_p", "adxl345__i2c_8h.html#a428a0ceb8df2c18d62aa93a31eef816c", null ],
     [ "i2c_trans", "adxl345__i2c_8h.html#ad3ab43e6fd2a09d14d8c2b01ffa05154", null ],
