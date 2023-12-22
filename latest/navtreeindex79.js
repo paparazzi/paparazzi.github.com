@@ -77,8 +77,9 @@ var NAVTREEINDEX79 =
 "gvf__parametric__3d__lissajous_8h.html#structgvf__par__3d__lis__par":[12,0,1,0,6,31,1,0,7,0],
 "gvf__parametric__3d__lissajous_8h_source.html":[12,0,1,0,6,31,1,0,7],
 "gvf__parametric__low__level__control_8c.html":[12,0,1,0,6,31,1,3],
-"gvf__parametric__low__level__control_8c.html#af1fb4568d132561faadeccc3fd030192":[12,0,1,0,6,31,1,3,0],
-"gvf__parametric__low__level__control_8c.html#af7963fae247a2ac801862cbecccf5c22":[12,0,1,0,6,31,1,3,1],
+"gvf__parametric__low__level__control_8c.html#a4206a2295cfc5badf016f34840f45534":[12,0,1,0,6,31,1,3,2],
+"gvf__parametric__low__level__control_8c.html#ab008c6cffec6428d659144e2b7b3e1d3":[12,0,1,0,6,31,1,3,0],
+"gvf__parametric__low__level__control_8c.html#ac6af39b23fb93a10664ec250f38a496d":[12,0,1,0,6,31,1,3,1],
 "gvf__parametric__low__level__control_8c_source.html":[12,0,1,0,6,31,1,3],
 "gvf__parametric__low__level__control_8h.html":[12,0,1,0,6,31,1,4],
 "gvf__parametric__low__level__control_8h.html#a051dd801f3933bbc2172cb05378e0974":[12,0,1,0,6,31,1,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "hf__float_8c.html#a0f6d3faa9b88134549ba3e51a099b5cc":[12,0,1,0,6,37,2,48],
 "hf__float_8c.html#a17d374e932baf307bb4cd7901a893e17":[12,0,1,0,6,37,2,13],
 "hf__float_8c.html#a19c12c9194c64b92c55ea848272566f0":[12,0,1,0,6,37,2,32],
-"hf__float_8c.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d":[12,0,1,0,6,37,2,19],
-"hf__float_8c.html#a1c5039e7e44e6773680ce40c1c5df75b":[12,0,1,0,6,37,2,37]
+"hf__float_8c.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d":[12,0,1,0,6,37,2,19]
 };

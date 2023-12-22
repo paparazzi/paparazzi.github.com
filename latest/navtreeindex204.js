@@ -1,5 +1,6 @@
 var NAVTREEINDEX204 =
 {
+"stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a":[12,0,1,0,0,3,0,11,4],
 "stm32_2mcu__periph_2spi__arch_8c.html#a1085933b98ac1dc4211b2d0d8a7fd6dc":[12,0,1,0,0,3,0,11,1,2],
 "stm32_2mcu__periph_2spi__arch_8c.html#a14f668fc1be63f17e24c4c3d16c625da":[12,0,1,0,0,3,0,11,1,15],
 "stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3":[12,0,1,0,0,3,0,11,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "structIndiController__int.html#ae86ce4ebaf7239ec8d12e7e7d499c63f":[11,0,619,4],
 "structStabilizationSetpoint.html":[11,0,947],
 "structStabilizationSetpoint.html#a351184abdc98c97e227e83350f7c868f":[11,0,947,0],
-"structStabilizationSetpoint.html#aa8a7460d3505d459210248a905d956ae":[11,0,947,2],
-"structStabilizationSetpoint.html#aa9be51c23b5502b0355a1e168cef4827":[11,0,947,1]
+"structStabilizationSetpoint.html#aa8a7460d3505d459210248a905d956ae":[11,0,947,2]
 };

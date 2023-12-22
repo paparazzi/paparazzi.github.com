@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_survey_hybrid.html#module_xml__nav_survey_hybrid":[1,339,2,0],
 "module__nav_survey_poly_osam.html":[1,340],
 "module__nav_survey_poly_osam.html#configuration__nav_survey_poly_osam":[1,340,1],
 "module__nav_survey_poly_osam.html#module_load_example__nav_survey_poly_osam":[1,340,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__rotwing_state.html#module_xml__rotwing_state":[1,370,2,0],
 "module__rpm_sensor.html":[1,412],
 "module__rpm_sensor.html#configuration__rpm_sensor":[1,412,1],
-"module__rpm_sensor.html#functions__rpm_sensor":[1,412,2],
-"module__rpm_sensor.html#module_load_example__rpm_sensor":[1,412,0]
+"module__rpm_sensor.html#functions__rpm_sensor":[1,412,2]
 };

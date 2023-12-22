@@ -1,5 +1,6 @@
 var NAVTREEINDEX192 =
 {
+"rover_2autopilot__utils_8h.html#aa415e804d1abe388b9cb19ce79189828":[12,0,1,0,3,3,7,2],
 "rover_2autopilot__utils_8h_source.html":[12,0,1,0,3,3,7],
 "rover_2navigation_8c.html":[12,0,1,0,3,3,8],
 "rover_2navigation_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3":[12,0,1,0,3,3,8,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX192 =
 "rover__guidance__steering_8h.html#a3c4b826163ee79a27d448d6238d92b2b":[12,0,1,0,3,3,0,5,1,2],
 "rover__guidance__steering_8h.html#a4dd411d8ddbf79b1853055422bd74726":[12,0,1,0,3,3,0,5,12],
 "rover__guidance__steering_8h.html#a4df08d33248e3499169ed183f69242d9":[12,0,1,0,3,3,0,5,4],
-"rover__guidance__steering_8h.html#a7101c08477da045a45739605723b960c":[12,0,1,0,3,3,0,5,15],
-"rover__guidance__steering_8h.html#a81c86a467dc91f38fefae20de37feba3":[12,0,1,0,3,3,0,5,17]
+"rover__guidance__steering_8h.html#a7101c08477da045a45739605723b960c":[12,0,1,0,3,3,0,5,15]
 };

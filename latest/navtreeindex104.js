@@ -1,5 +1,6 @@
 var NAVTREEINDEX104 =
 {
+"linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3":[12,0,1,0,6,12,2,1,5],
 "linear__flow__fit_8c.html#af78a3f26a6a8035bc0ca9cedebf02dfb":[12,0,1,0,6,12,2,1,0],
 "linear__flow__fit_8c_source.html":[12,0,1,0,6,12,2,1],
 "linear__flow__fit_8h.html":[12,0,1,0,6,12,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX104 =
 "lis302dl__spi_8c.html#a2c38f1d2a84f448dd9f0c7cae80f0a70":[12,0,1,0,7,64,0],
 "lis302dl__spi_8c.html#a77b7a80348f2cfa82cdee3fec764a2df":[12,0,1,0,7,64,2],
 "lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50":[12,0,1,0,7,64,1],
-"lis302dl__spi_8c.html#abda53cd19076e92c1fedf273a070906e":[12,0,1,0,7,64,4],
-"lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27":[12,0,1,0,7,64,5]
+"lis302dl__spi_8c.html#abda53cd19076e92c1fedf273a070906e":[12,0,1,0,7,64,4]
 };

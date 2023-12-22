@@ -1,5 +1,6 @@
 var NAVTREEINDEX154 =
 {
+"navstik__1_80_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0":[12,0,1,0,1,48,0],
 "navstik__1_80_8h.html#a402c216e512bc4a39616400af32b7c7f":[12,0,1,0,1,48,147],
 "navstik__1_80_8h.html#a4285bdd58098064c3bab3976a78b26fa":[12,0,1,0,1,48,33],
 "navstik__1_80_8h.html#a44b65d27b74c44237ceda3a108a438e0":[12,0,1,0,1,48,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX154 =
 "notch__filter_8h.html#af50ebbdb691b29bda4339609b8c7a2ad":[12,0,1,0,2,8,2],
 "notch__filter_8h_source.html":[12,0,1,0,2,8],
 "notch__filter__float_8h.html":[12,0,1,0,2,9],
-"notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0":[12,0,1,0,2,9,6],
-"notch__filter__float_8h.html#a0d0cb7997e2c22770807acf27d4d9a20":[12,0,1,0,2,8,0,8]
+"notch__filter__float_8h.html#a07f9739ad734f4b0bc5e43d6a833a4b0":[12,0,1,0,2,9,6]
 };

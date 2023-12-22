@@ -1,5 +1,6 @@
 var NAVTREEINDEX131 =
 {
+"module__bat_checker.html#module_load_example__bat_checker":[1,140,0],
 "module__bat_checker.html#module_xml__bat_checker":[1,140,2,0],
 "module__bat_voltage_ardrone2.html":[1,399],
 "module__bat_voltage_ardrone2.html#functions__bat_voltage_ardrone2":[1,399,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX131 =
 "module__direct_memory_logger.html":[1,253],
 "module__direct_memory_logger.html#configuration__direct_memory_logger":[1,253,1],
 "module__direct_memory_logger.html#functions__direct_memory_logger":[1,253,2],
-"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,253,0],
-"module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,253,2,0]
+"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,253,0]
 };

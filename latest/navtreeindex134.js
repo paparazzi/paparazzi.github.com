@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"module__imu_lisa_s_v1_0.html":[1,206],
 "module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,206,1],
 "module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,206,0],
 "module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,206,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "module__light_scheduler.html#module_xml__light_scheduler":[1,252,2,0],
 "module__light_solar.html":[1,288],
 "module__light_solar.html#functions__light_solar":[1,288,1],
-"module__light_solar.html#module_load_example__light_solar":[1,288,0],
-"module__light_solar.html#module_xml__light_solar":[1,288,1,0]
+"module__light_solar.html#module_load_example__light_solar":[1,288,0]
 };

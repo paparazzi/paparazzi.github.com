@@ -1,5 +1,6 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_sbus.html":[1,15],
 "module__actuators_sbus.html#configuration__actuators_sbus":[1,15,1],
 "module__actuators_sbus.html#module_load_example__actuators_sbus":[1,15,0],
 "module__actuators_sbus.html#module_xml__actuators_sbus":[1,15,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX130 =
 "module__baro_sim.html#module_xml__baro_sim":[1,398,1,0],
 "module__bat_checker.html":[1,140],
 "module__bat_checker.html#configuration__bat_checker":[1,140,1],
-"module__bat_checker.html#functions__bat_checker":[1,140,2],
-"module__bat_checker.html#module_load_example__bat_checker":[1,140,0]
+"module__bat_checker.html#functions__bat_checker":[1,140,2]
 };
