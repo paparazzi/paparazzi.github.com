@@ -291,9 +291,9 @@ Variables</h2></td></tr>
 
 <p>Initialises periodic loop;. </p>
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00088">88</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00092">92</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00073">g_forward</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00075">g_hover</a>, and <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00073">g_forward</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">g_hover</a>, and <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>.</p>
 
 </div>
 </div>
@@ -315,9 +315,9 @@ Variables</h2></td></tr>
 
 <p>Periodic function that interpolates between gain sets depending on the scheduling variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00104">104</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">108</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00167">act_pref</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">sched_ratio_tip_props</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00056">trim_elevator</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00057">trim_flaps</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00167">act_pref</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00082">sched_ratio_tip_props</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00056">trim_elevator</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00057">trim_flaps</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -359,11 +359,11 @@ Variables</h2></td></tr>
 <p>Function that calculates control effectiveness values for the Nederdrone inner loop. </p>
 <p>Default requency: 20 Hz. </p>
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">127</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">131</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00065">all_act_fwd_sched</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00071">backwing_pitch_eff_scaling</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00070">backwing_thrust_eff_scaling</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00169">eulers_zxy</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00269">g1g2</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00073">g_forward</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00075">g_hover</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00041">INDI_SCHEDULING_LOW_AIRSPEED</a>, <a class="el" href="stabilization__indi_8c_source.html#l00197">indi_Wu</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00063">indi_Wu_original</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00061">pref_flaps_factor</a>, <a class="el" href="rc__datalink_8h_source.html#l00044">RADIO_AUX2</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">sched_ratio_tip_props</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00082">sched_tip_prop_lower_pitch_limit_deg</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00080">sched_tip_prop_upper_pitch_limit_deg</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00084">sched_tip_props_always_on</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00069">thrust_eff_scaling</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00067">use_scheduling</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00065">all_act_fwd_sched</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00071">backwing_pitch_eff_scaling</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00070">backwing_thrust_eff_scaling</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00169">eulers_zxy</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00755">float_eulers_of_quat_zxy()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00273">g1g2</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00073">g_forward</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">g_hover</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00041">INDI_SCHEDULING_LOW_AIRSPEED</a>, <a class="el" href="stabilization__indi_8c_source.html#l00197">indi_Wu</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00063">indi_Wu_original</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00061">pref_flaps_factor</a>, <a class="el" href="rc__datalink_8h_source.html#l00044">RADIO_AUX2</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00082">sched_ratio_tip_props</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00086">sched_tip_prop_lower_pitch_limit_deg</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00084">sched_tip_prop_upper_pitch_limit_deg</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00088">sched_tip_props_always_on</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00069">thrust_eff_scaling</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00067">use_scheduling</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00104">ctrl_eff_scheduling_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -411,7 +411,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00065">65</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00071">71</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00070">70</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00073">73</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00088">ctrl_eff_scheduling_init()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00092">ctrl_eff_scheduling_init()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -497,9 +497,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00075">75</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">78</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00088">ctrl_eff_scheduling_init()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00092">ctrl_eff_scheduling_init()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00063">63</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00061">61</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -551,9 +551,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00078">78</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00082">82</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00104">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -569,9 +569,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00082">82</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00086">86</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +587,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00080">80</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00084">84</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -605,9 +605,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00084">84</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00088">88</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00069">69</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00056">56</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00104">ctrl_eff_scheduling_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>.</p>
 
 </div>
 </div>
@@ -661,7 +661,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00057">57</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00104">ctrl_eff_scheduling_periodic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>.</p>
 
 </div>
 </div>
@@ -679,7 +679,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00067">67</a> of file <a class="el" href="eff__scheduling__nederdrone_8c_source.html">eff_scheduling_nederdrone.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00127">schdule_control_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -689,7 +689,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="eff__scheduling__nederdrone_8c.html">eff_scheduling_nederdrone.c</a></li>
-    <li class="footer">Generated on Fri Dec 22 2023 11:05:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 9 2024 09:50:30 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
