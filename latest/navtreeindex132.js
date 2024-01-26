@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"module__digital_cam_video.html":[1,137],
+"module__digital_cam_video.html#functions__digital_cam_video":[1,137,1],
+"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,137,0],
+"module__digital_cam_video.html#module_xml__digital_cam_video":[1,137,1,0],
+"module__direct_memory_logger.html":[1,253],
+"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,253,1],
+"module__direct_memory_logger.html#functions__direct_memory_logger":[1,253,2],
+"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,253,0],
 "module__direct_memory_logger.html#module_xml__direct_memory_logger":[1,253,2,0],
 "module__distributed_circular_formation.html":[1,459],
 "module__distributed_circular_formation.html#configuration__distributed_circular_formation":[1,459,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX132 =
 "module__gps_ublox.html#module_load_example__gps_ublox":[1,162,0],
 "module__gps_ublox.html#module_xml__gps_ublox":[1,162,3,0],
 "module__gps_ubx_i2c.html":[1,163],
-"module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,163,1],
-"module__gps_ubx_i2c.html#functions__gps_ubx_i2c":[1,163,2],
-"module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c":[1,163,0],
-"module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c":[1,163,2,0],
-"module__gps_ubx_ucenter.html":[1,164],
-"module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter":[1,164,1],
-"module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter":[1,164,2],
-"module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter":[1,164,0],
-"module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter":[1,164,2,0]
+"module__gps_ubx_i2c.html#configuration__gps_ubx_i2c":[1,163,1]
 };

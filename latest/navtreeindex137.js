@@ -1,5 +1,8 @@
 var NAVTREEINDEX137 =
 {
+"module__rpm_sensor.html":[1,412],
+"module__rpm_sensor.html#configuration__rpm_sensor":[1,412,1],
+"module__rpm_sensor.html#functions__rpm_sensor":[1,412,2],
 "module__rpm_sensor.html#module_load_example__rpm_sensor":[1,412,0],
 "module__rpm_sensor.html#module_xml__rpm_sensor":[1,412,2,0],
 "module__rssi.html":[1,309],
@@ -61,8 +64,6 @@ var NAVTREEINDEX137 =
 "module__sonar_pwm.html#module_xml__sonar_pwm":[1,420,2,0],
 "module__sonar_vl53l1x.html":[1,421],
 "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x":[1,421,1],
-"module__sonar_vl53l1x.html#configure":[1,421,1,0],
-"module__sonar_vl53l1x.html#define":[1,421,1,1],
 "module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,421,2],
 "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x":[1,421,0],
 "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,421,2,0],
@@ -104,7 +105,6 @@ var NAVTREEINDEX137 =
 "module__stabilization_indi.html#module_load_example__stabilization_indi":[1,427,0],
 "module__stabilization_indi.html#module_xml__stabilization_indi":[1,427,2,0],
 "module__stabilization_indi_simple.html":[1,428],
-"module__stabilization_indi_simple.html#af_section":[1,428,1,0],
 "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple":[1,428,1],
 "module__stabilization_indi_simple.html#functions__stabilization_indi_simple":[1,428,2],
 "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple":[1,428,0],

@@ -9,7 +9,9 @@ var NAVTREEINDEX130 =
 "module__actuators_spektrum.html#module_load_example__actuators_spektrum":[1,16,0],
 "module__actuators_spektrum.html#module_xml__actuators_spektrum":[1,16,1,0],
 "module__actuators_sts3032.html":[1,17],
+"module__actuators_sts3032.html#af_section":[1,17,1,1],
 "module__actuators_sts3032.html#configuration__actuators_sts3032":[1,17,1],
+"module__actuators_sts3032.html#configure":[1,17,1,0],
 "module__actuators_sts3032.html#functions__actuators_sts3032":[1,17,2],
 "module__actuators_sts3032.html#module_load_example__actuators_sts3032":[1,17,0],
 "module__actuators_sts3032.html#module_xml__actuators_sts3032":[1,17,2,0],
@@ -165,6 +167,7 @@ var NAVTREEINDEX130 =
 "module__auto1_commands.html#module_xml__auto1_commands":[1,440,1,0],
 "module__autopilot_gnc.html":[1,449],
 "module__autopilot_gnc.html#datalink_functions__autopilot_gnc":[1,449,2],
+"module__autopilot_gnc.html#event_functions":[1,449,1,0],
 "module__autopilot_gnc.html#functions__autopilot_gnc":[1,449,1],
 "module__autopilot_gnc.html#module_load_example__autopilot_gnc":[1,449,0],
 "module__autopilot_gnc.html#module_xml__autopilot_gnc":[1,449,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX130 =
 "module__baro_sim.html":[1,398],
 "module__baro_sim.html#functions__baro_sim":[1,398,1],
 "module__baro_sim.html#module_load_example__baro_sim":[1,398,0],
-"module__baro_sim.html#module_xml__baro_sim":[1,398,1,0],
-"module__bat_checker.html":[1,140],
-"module__bat_checker.html#configuration__bat_checker":[1,140,1],
-"module__bat_checker.html#functions__bat_checker":[1,140,2]
+"module__baro_sim.html#module_xml__baro_sim":[1,398,1,0]
 };

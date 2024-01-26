@@ -1,5 +1,8 @@
 var NAVTREEINDEX135 =
 {
+"module__light_solar.html":[1,288],
+"module__light_solar.html#functions__light_solar":[1,288,1],
+"module__light_solar.html#module_load_example__light_solar":[1,288,0],
 "module__light_solar.html#module_xml__light_solar":[1,288,1,0],
 "module__light_temt.html":[1,289],
 "module__light_temt.html#functions__light_temt":[1,289,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX135 =
 "module__nav_survey_disc.html":[1,338],
 "module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,338,0],
 "module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,338,0,0],
-"module__nav_survey_hybrid.html":[1,339],
-"module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,339,1],
-"module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,339,2],
-"module__nav_survey_hybrid.html#module_load_example__nav_survey_hybrid":[1,339,0]
+"module__nav_survey_hybrid.html":[1,339]
 };

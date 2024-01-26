@@ -140,7 +140,10 @@ var onboard_modules =
     ] ],
     [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
       [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
-      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
+      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", [
+        [ "Configure Options", "module__actuators_sts3032.html#configure", null ],
+        [ "Airframe file section", "module__actuators_sts3032.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
         [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
       ] ]
@@ -1236,20 +1239,20 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
-        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
+        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
@@ -1498,7 +1501,9 @@ var onboard_modules =
     ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
-      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],
+      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
+        [ "Define Options", "module__ins_extended.html#define", null ]
+      ] ],
       [ "Module functions", "module__ins_extended.html#functions__ins_extended", [
         [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
       ] ]
@@ -1844,13 +1849,6 @@ var onboard_modules =
     [ "humid_pcap01 module", "module__humid_pcap01.html", [
       [ "Example for airframe file", "module__humid_pcap01.html#module_load_example__humid_pcap01", null ],
       [ "Module functions", "module__humid_pcap01.html#functions__humid_pcap01", [
-        [ "Init Functions", "module__humid_pcap01.html#init_functions", null ],
-        [ "Event Functions", "module__humid_pcap01.html#event_functions", null ],
-        [ "Periodic Functions", "module__humid_pcap01.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__humid_pcap01.html#files", [
-        [ "Header Files", "module__humid_pcap01.html#headers", null ],
-        [ "Source Files", "module__humid_pcap01.html#sources", null ],
         [ "Raw humid_pcap01.xml file:", "module__humid_pcap01.html#module_xml__humid_pcap01", null ]
       ] ]
     ] ],
@@ -1966,8 +1964,14 @@ var onboard_modules =
     ] ],
     [ "copilot module", "module__copilot.html", [
       [ "Example for airframe file", "module__copilot.html#module_load_example__copilot", null ],
-      [ "Module functions", "module__copilot.html#functions__copilot", null ],
-      [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", [
+      [ "Module functions", "module__copilot.html#functions__copilot", [
+        [ "Init Functions", "module__copilot.html#init_functions", null ],
+        [ "Periodic Functions", "module__copilot.html#periodic_functions", null ]
+      ] ],
+      [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", null ],
+      [ "Files", "module__copilot.html#files", [
+        [ "Header Files", "module__copilot.html#headers", null ],
+        [ "Source Files", "module__copilot.html#sources", null ],
         [ "Raw copilot.xml file:", "module__copilot.html#module_xml__copilot", null ]
       ] ]
     ] ],
@@ -2751,10 +2755,7 @@ var onboard_modules =
     ] ],
     [ "sonar_vl53l1x module", "module__sonar_vl53l1x.html", [
       [ "Example for airframe file", "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x", null ],
-      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", [
-        [ "Configure Options", "module__sonar_vl53l1x.html#configure", null ],
-        [ "Define Options", "module__sonar_vl53l1x.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", null ],
       [ "Module functions", "module__sonar_vl53l1x.html#functions__sonar_vl53l1x", [
         [ "Raw sonar_vl53l1x.xml file:", "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x", null ]
       ] ]
@@ -2803,9 +2804,7 @@ var onboard_modules =
     ] ],
     [ "stabilization_indi_simple module", "module__stabilization_indi_simple.html", [
       [ "Example for airframe file", "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple", null ],
-      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", [
-        [ "Airframe file section", "module__stabilization_indi_simple.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", null ],
       [ "Module functions", "module__stabilization_indi_simple.html#functions__stabilization_indi_simple", [
         [ "Raw stabilization_indi_simple.xml file:", "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple", null ]
       ] ]
@@ -2943,7 +2942,9 @@ var onboard_modules =
     ] ],
     [ "autopilot_gnc module", "module__autopilot_gnc.html", [
       [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
-      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
+      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", [
+        [ "Event Functions", "module__autopilot_gnc.html#event_functions", null ]
+      ] ],
       [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
         [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
       ] ]
