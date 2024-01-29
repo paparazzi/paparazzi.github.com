@@ -151,22 +151,22 @@ $(document).ready(function(){initNavTree('sensors__hitl_8c_source.html',''); ini
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// Set the default scaling</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> <a class="code" href="navdata_8c.html#aa9b6b5e2680cc20da8d283d72e2164ca">gyro_scale</a>[2] = {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {NPS_GYRO_SENSITIVITY_NUM, NPS_GYRO_SENSITIVITY_NUM, NPS_GYRO_SENSITIVITY_NUM},</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {NPS_GYRO_SENSITIVITY_DEN, NPS_GYRO_SENSITIVITY_DEN, NPS_GYRO_SENSITIVITY_DEN}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {NPS_GYRO_SENSITIVITY_PP_NUM, NPS_GYRO_SENSITIVITY_QQ_NUM, NPS_GYRO_SENSITIVITY_RR_NUM},</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {NPS_GYRO_SENSITIVITY_PP_DEN, NPS_GYRO_SENSITIVITY_QQ_DEN, NPS_GYRO_SENSITIVITY_RR_DEN}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> gyro_neutral = {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    NPS_GYRO_NEUTRAL_P, NPS_GYRO_NEUTRAL_Q, NPS_GYRO_NEUTRAL_R</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  };</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> <a class="code" href="navdata_8c.html#ad313e22e960d91c0e64a5d5831ed2a16">accel_scale</a>[2] = {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {NPS_ACCEL_SENSITIVITY_NUM, NPS_ACCEL_SENSITIVITY_NUM, NPS_ACCEL_SENSITIVITY_NUM},</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {NPS_ACCEL_SENSITIVITY_DEN, NPS_ACCEL_SENSITIVITY_DEN, NPS_ACCEL_SENSITIVITY_DEN}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {NPS_ACCEL_SENSITIVITY_XX_NUM, NPS_ACCEL_SENSITIVITY_YY_NUM, NPS_ACCEL_SENSITIVITY_ZZ_NUM},</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {NPS_ACCEL_SENSITIVITY_XX_DEN, NPS_ACCEL_SENSITIVITY_YY_DEN, NPS_ACCEL_SENSITIVITY_ZZ_DEN}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  };</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> <a class="code" href="navdata_8c.html#a4d4f07154c132bc17f5a828ded6b7ad3">accel_neutral</a> = {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    NPS_ACCEL_NEUTRAL_X, NPS_ACCEL_NEUTRAL_Y, NPS_ACCEL_NEUTRAL_Z</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> <a class="code" href="navdata_8c.html#a8a815877da279a732b720fe47b836518">mag_scale</a>[2] = {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {NPS_MAG_SENSITIVITY_NUM, NPS_MAG_SENSITIVITY_NUM, NPS_MAG_SENSITIVITY_NUM},</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {NPS_MAG_SENSITIVITY_DEN, NPS_MAG_SENSITIVITY_DEN, NPS_MAG_SENSITIVITY_DEN}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {NPS_MAG_SENSITIVITY_XX_NUM, NPS_MAG_SENSITIVITY_YY_NUM, NPS_MAG_SENSITIVITY_ZZ_NUM},</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {NPS_MAG_SENSITIVITY_XX_DEN, NPS_MAG_SENSITIVITY_YY_DEN, NPS_MAG_SENSITIVITY_ZZ_DEN}</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  };</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> mag_neutral = {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    NPS_MAG_NEUTRAL_X, NPS_MAG_NEUTRAL_Y, NPS_MAG_NEUTRAL_Z</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('sensors__hitl_8c_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="sensors__hitl_8c.html">sensors_hitl.c</a></li>
-    <li class="footer">Generated on Fri Jan 26 2024 08:05:23 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 29 2024 15:24:00 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
