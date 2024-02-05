@@ -49,7 +49,6 @@ var rover_2navigation_8h =
     [ "NavSetAltitudeReferenceHere", "rover_2navigation_8h.html#aaeae5c2d8073c868ce0016ada19aee8b", null ],
     [ "NavSetFailsafe", "rover_2navigation_8h.html#a5261b49b03ac8f13e89a3366e599d7b1", null ],
     [ "NavSetGroundReferenceHere", "rover_2navigation_8h.html#a1b58af4e8c7d8f13f39c63a25570ccd6", null ],
-    [ "NavSetManual", "rover_2navigation_8h.html#a323e44aef731ffc28245c066c8ddf3d4", null ],
     [ "NavSetWaypointHere", "rover_2navigation_8h.html#a35e565f43eb488070076145035800532", null ],
     [ "NavVerticalAltitudeMode", "rover_2navigation_8h.html#ad8b75deb4546e944bed16b5b19455ff5", null ],
     [ "NavVerticalAutoPitchMode", "rover_2navigation_8h.html#ad617b2ea9bb32ff976e4b172cd375483", null ],

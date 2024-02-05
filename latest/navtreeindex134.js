@@ -1,13 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"module__imu_lisa_mx_v2_1.html#module_load_example__imu_lisa_mx_v2_1":[1,205,0],
-"module__imu_lisa_mx_v2_1.html#module_xml__imu_lisa_mx_v2":[1,205,0,0],
-"module__imu_lisa_s_v1_0.html":[1,206],
-"module__imu_lisa_s_v1_0.html#configuration__imu_lisa_s_v1_0":[1,206,1],
-"module__imu_lisa_s_v1_0.html#module_load_example__imu_lisa_s_v1_0":[1,206,0],
-"module__imu_lisa_s_v1_0.html#module_xml__imu_lisa_s_v1":[1,206,1,0],
-"module__imu_matek_h743_slim.html":[1,207],
-"module__imu_matek_h743_slim.html#module_load_example__imu_matek_h743_slim":[1,207,0],
 "module__imu_matek_h743_slim.html#module_xml__imu_matek_h743_slim":[1,207,0,0],
 "module__imu_mpu6000.html":[1,208],
 "module__imu_mpu6000.html#configuration__imu_mpu6000":[1,208,1],
@@ -117,7 +109,6 @@ var NAVTREEINDEX134 =
 "module__ins_ext_pose.html#module_xml__ins_ext_pose":[1,229,2,0],
 "module__ins_extended.html":[1,230],
 "module__ins_extended.html#configuration__ins_extended":[1,230,1],
-"module__ins_extended.html#define":[1,230,1,0],
 "module__ins_extended.html#functions__ins_extended":[1,230,2],
 "module__ins_extended.html#module_load_example__ins_extended":[1,230,0],
 "module__ins_extended.html#module_xml__ins_extended":[1,230,2,0],
@@ -203,9 +194,10 @@ var NAVTREEINDEX134 =
 "module__jevois.html#module_load_example__jevois":[1,415,0],
 "module__jevois.html#module_xml__jevois":[1,415,2,0],
 "module__jevois_mavlink.html":[1,416],
+"module__jevois_mavlink.html#event_functions":[1,416,1,0],
 "module__jevois_mavlink.html#functions__jevois_mavlink":[1,416,1],
 "module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,416,0],
-"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,416,1,0],
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,416,1,1],
 "module__joystick.html":[1,475],
 "module__joystick.html#datalink_functions__joystick":[1,475,2],
 "module__joystick.html#functions__joystick":[1,475,1],
@@ -249,5 +241,13 @@ var NAVTREEINDEX134 =
 "module__light_scheduler.html#configuration__light_scheduler":[1,252,1],
 "module__light_scheduler.html#functions__light_scheduler":[1,252,2],
 "module__light_scheduler.html#module_load_example__light_scheduler":[1,252,0],
-"module__light_scheduler.html#module_xml__light_scheduler":[1,252,2,0]
+"module__light_scheduler.html#module_xml__light_scheduler":[1,252,2,0],
+"module__light_solar.html":[1,288],
+"module__light_solar.html#functions__light_solar":[1,288,1],
+"module__light_solar.html#module_load_example__light_solar":[1,288,0],
+"module__light_solar.html#module_xml__light_solar":[1,288,1,0],
+"module__light_temt.html":[1,289],
+"module__light_temt.html#functions__light_temt":[1,289,1],
+"module__light_temt.html#module_load_example__light_temt":[1,289,0],
+"module__light_temt.html#module_xml__light_temt":[1,289,1,0]
 };

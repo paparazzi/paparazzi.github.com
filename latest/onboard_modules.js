@@ -140,10 +140,7 @@ var onboard_modules =
     ] ],
     [ "actuators_sts3032 module", "module__actuators_sts3032.html", [
       [ "Example for airframe file", "module__actuators_sts3032.html#module_load_example__actuators_sts3032", null ],
-      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", [
-        [ "Configure Options", "module__actuators_sts3032.html#configure", null ],
-        [ "Airframe file section", "module__actuators_sts3032.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__actuators_sts3032.html#configuration__actuators_sts3032", null ],
       [ "Module functions", "module__actuators_sts3032.html#functions__actuators_sts3032", [
         [ "Raw actuators_sts3032.xml file:", "module__actuators_sts3032.html#module_xml__actuators_sts3032", null ]
       ] ]
@@ -665,12 +662,14 @@ var onboard_modules =
     [ "optical_flow_hover module", "module__optical_flow_hover.html", [
       [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
       [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
+        [ "Init Functions", "module__optical_flow_hover.html#init_functions", null ],
         [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
       ] ]
     ] ],
     [ "optical_flow_landing module", "module__optical_flow_landing.html", [
       [ "Example for airframe file", "module__optical_flow_landing.html#module_load_example__optical_flow_landing", null ],
       [ "Module configuration options", "module__optical_flow_landing.html#configuration__optical_flow_landing", [
+        [ "Airframe file section", "module__optical_flow_landing.html#af_section", null ],
         [ "Raw optical_flow_landing.xml file:", "module__optical_flow_landing.html#module_xml__optical_flow_landing", null ]
       ] ]
     ] ],
@@ -1247,20 +1246,20 @@ var onboard_modules =
       ] ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1501,9 +1500,7 @@ var onboard_modules =
     ] ],
     [ "ins_extended module", "module__ins_extended.html", [
       [ "Example for airframe file", "module__ins_extended.html#module_load_example__ins_extended", null ],
-      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", [
-        [ "Define Options", "module__ins_extended.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__ins_extended.html#configuration__ins_extended", null ],
       [ "Module functions", "module__ins_extended.html#functions__ins_extended", [
         [ "Raw ins_extended.xml file:", "module__ins_extended.html#module_xml__ins_extended", null ]
       ] ]
@@ -1689,8 +1686,16 @@ var onboard_modules =
     ] ],
     [ "logger_file module", "module__logger_file.html", [
       [ "Example for airframe file", "module__logger_file.html#module_load_example__logger_file", null ],
-      [ "Module configuration options", "module__logger_file.html#configuration__logger_file", null ],
+      [ "Module configuration options", "module__logger_file.html#configuration__logger_file", [
+        [ "Configure Options", "module__logger_file.html#configure", null ],
+        [ "Define Options", "module__logger_file.html#define", null ]
+      ] ],
       [ "Module functions", "module__logger_file.html#functions__logger_file", [
+        [ "Periodic Functions", "module__logger_file.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__logger_file.html#files", [
+        [ "Header Files", "module__logger_file.html#headers", null ],
+        [ "Source Files", "module__logger_file.html#sources", null ],
         [ "Raw logger_file.xml file:", "module__logger_file.html#module_xml__logger_file", null ]
       ] ]
     ] ],
@@ -1964,14 +1969,8 @@ var onboard_modules =
     ] ],
     [ "copilot module", "module__copilot.html", [
       [ "Example for airframe file", "module__copilot.html#module_load_example__copilot", null ],
-      [ "Module functions", "module__copilot.html#functions__copilot", [
-        [ "Init Functions", "module__copilot.html#init_functions", null ],
-        [ "Periodic Functions", "module__copilot.html#periodic_functions", null ]
-      ] ],
-      [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", null ],
-      [ "Files", "module__copilot.html#files", [
-        [ "Header Files", "module__copilot.html#headers", null ],
-        [ "Source Files", "module__copilot.html#sources", null ],
+      [ "Module functions", "module__copilot.html#functions__copilot", null ],
+      [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", [
         [ "Raw copilot.xml file:", "module__copilot.html#module_xml__copilot", null ]
       ] ]
     ] ],
@@ -2722,6 +2721,7 @@ var onboard_modules =
     [ "jevois_mavlink module", "module__jevois_mavlink.html", [
       [ "Example for airframe file", "module__jevois_mavlink.html#module_load_example__jevois_mavlink", null ],
       [ "Module functions", "module__jevois_mavlink.html#functions__jevois_mavlink", [
+        [ "Event Functions", "module__jevois_mavlink.html#event_functions", null ],
         [ "Raw jevois_mavlink.xml file:", "module__jevois_mavlink.html#module_xml__jevois_mavlink", null ]
       ] ]
     ] ],
@@ -2942,9 +2942,7 @@ var onboard_modules =
     ] ],
     [ "autopilot_gnc module", "module__autopilot_gnc.html", [
       [ "Example for airframe file", "module__autopilot_gnc.html#module_load_example__autopilot_gnc", null ],
-      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", [
-        [ "Event Functions", "module__autopilot_gnc.html#event_functions", null ]
-      ] ],
+      [ "Module functions", "module__autopilot_gnc.html#functions__autopilot_gnc", null ],
       [ "Datalink Functions", "module__autopilot_gnc.html#datalink_functions__autopilot_gnc", [
         [ "Raw autopilot_gnc.xml file:", "module__autopilot_gnc.html#module_xml__autopilot_gnc", null ]
       ] ]

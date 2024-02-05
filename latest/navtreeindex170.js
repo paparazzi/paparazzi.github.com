@@ -1,6 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"paparazzi_messages.html#ENERGY":[2,0,10],
 "paparazzi_messages.html#ENGINE_STATUS":[2,2,14],
 "paparazzi_messages.html#ESC":[2,0,225],
 "paparazzi_messages.html#ESTIMATOR":[2,0,38],
@@ -249,5 +248,6 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#VERT_LOOP":[2,0,139],
 "paparazzi_messages.html#VFF":[2,0,156],
 "paparazzi_messages.html#VFF_EXTENDED":[2,0,155],
-"paparazzi_messages.html#VIDEO_ROI":[2,1,55]
+"paparazzi_messages.html#VIDEO_ROI":[2,1,55],
+"paparazzi_messages.html#VIDEO_SYNC":[2,0,205]
 };

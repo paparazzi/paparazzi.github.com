@@ -1,13 +1,5 @@
 var NAVTREEINDEX195 =
 {
-"sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341a6b24860e5f54238d9b81b58f598263ab":[12,0,1,0,7,124,5,3],
-"sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341a71d4d36349a2be5103245e9cc667b6ed":[12,0,1,0,7,124,5,4],
-"sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341a79d2b8da45953de31eeb175f5ca03274":[12,0,1,0,7,124,5,2],
-"sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341a7a4386d2dcc8928d6fe0318042666df3":[12,0,1,0,7,124,5,0],
-"sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341a8e13543b0fe3497c71252de431d4aa27":[12,0,1,0,7,124,5,1],
-"sdcard__spi_8h.html#af40ce9cdaf7435d94db52d8ec687c26e":[12,0,1,0,7,124,10],
-"sdcard__spi_8h.html#structSDCard":[12,0,1,0,7,124,0],
-"sdcard__spi_8h_source.html":[12,0,1,0,7,124],
 "sdio_8h.html":[12,0,1,0,5,12],
 "sdio_8h.html#a1aaca4bd6a01a576869aa133f5fe0877":[12,0,1,0,5,12,2],
 "sdio_8h.html#a46b5eac7cb18806fb22adf89e65141e1":[12,0,1,0,5,12,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX195 =
 "servo__tester_8h.html#aaf6560d1c2849e84d5b3ea55d53263ba":[12,0,1,0,6,63,1,1],
 "servo__tester_8h_source.html":[12,0,1,0,6,63,1],
 "servos__nil_8h.html":[12,0,1,0,0,2,8],
-"servos__nil_8h.html#a07eabec879875ba0cdd5b193d1e4a515":[12,0,1,0,0,2,8,1]
+"servos__nil_8h.html#a07eabec879875ba0cdd5b193d1e4a515":[12,0,1,0,0,2,8,1],
+"servos__nil_8h.html#a186df72c413a002896efc22a0d70662b":[12,0,1,0,0,2,8,2],
+"servos__nil_8h.html#a3f3dc2facc39f9d40f3fae4b4c9f3d93":[12,0,1,0,0,2,8,3],
+"servos__nil_8h.html#a49853fbbf7f4c5d50207763da45af5ad":[12,0,1,0,0,2,8,0],
+"servos__nil_8h_source.html":[12,0,1,0,0,2,8],
+"settings_8c.html":[12,0,1,0,6,13,10],
+"settings_8c.html#a2d417ad7e2c3eeb9e2fd5375f50bf370":[12,0,1,0,6,13,10,6],
+"settings_8c.html#a3554f41536872c4a90af91d527f6593f":[12,0,1,0,6,13,10,2],
+"settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e":[12,0,1,0,6,13,10,1]
 };

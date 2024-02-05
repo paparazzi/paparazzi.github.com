@@ -1,13 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__light_solar.html":[1,288],
-"module__light_solar.html#functions__light_solar":[1,288,1],
-"module__light_solar.html#module_load_example__light_solar":[1,288,0],
-"module__light_solar.html#module_xml__light_solar":[1,288,1,0],
-"module__light_temt.html":[1,289],
-"module__light_temt.html#functions__light_temt":[1,289,1],
-"module__light_temt.html#module_load_example__light_temt":[1,289,0],
-"module__light_temt.html#module_xml__light_temt":[1,289,1,0],
 "module__logger_control_effectiveness.html":[1,255],
 "module__logger_control_effectiveness.html#configuration__logger_control_effectiveness":[1,255,1],
 "module__logger_control_effectiveness.html#functions__logger_control_effectiveness":[1,255,2],
@@ -20,9 +12,15 @@ var NAVTREEINDEX135 =
 "module__logger_dataflash.html#module_xml__logger_dataflash":[1,256,2,0],
 "module__logger_file.html":[1,257],
 "module__logger_file.html#configuration__logger_file":[1,257,1],
+"module__logger_file.html#configure":[1,257,1,0],
+"module__logger_file.html#define":[1,257,1,1],
+"module__logger_file.html#files":[1,257,3],
 "module__logger_file.html#functions__logger_file":[1,257,2],
+"module__logger_file.html#headers":[1,257,3,0],
 "module__logger_file.html#module_load_example__logger_file":[1,257,0],
-"module__logger_file.html#module_xml__logger_file":[1,257,2,0],
+"module__logger_file.html#module_xml__logger_file":[1,257,3,2],
+"module__logger_file.html#periodic_functions":[1,257,2,0],
+"module__logger_file.html#sources":[1,257,3,1],
 "module__logger_sd_chibios.html":[1,258],
 "module__logger_sd_chibios.html#configuration__logger_sd_chibios":[1,258,1],
 "module__logger_sd_chibios.html#datalink_functions__logger_sd_chibios":[1,258,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX135 =
 "module__nav_survey_disc.html":[1,338],
 "module__nav_survey_disc.html#module_load_example__nav_survey_disc":[1,338,0],
 "module__nav_survey_disc.html#module_xml__nav_survey_disc":[1,338,0,0],
-"module__nav_survey_hybrid.html":[1,339]
+"module__nav_survey_hybrid.html":[1,339],
+"module__nav_survey_hybrid.html#configuration__nav_survey_hybrid":[1,339,1],
+"module__nav_survey_hybrid.html#functions__nav_survey_hybrid":[1,339,2]
 };

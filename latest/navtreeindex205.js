@@ -1,13 +1,5 @@
 var NAVTREEINDEX205 =
 {
-"structStabilizationSetpoint.html#aa9be51c23b5502b0355a1e168cef4827":[11,0,947,1],
-"structStabilizationSetpoint.html#aaf6b564417d03a2836b83fd941ed7d92":[11,0,947,3],
-"structUSBMassStorageConfig.html":[11,0,1002],
-"structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,1002,3],
-"structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,1002,0],
-"structUSBMassStorageConfig.html#a4a36198660a33ab658a397f5512d0117":[11,0,1002,4],
-"structUSBMassStorageConfig.html#a4ed2afe90449fca523bf5894dc3087ec":[11,0,1002,1],
-"structUSBMassStorageConfig.html#a914c2c144276e24914e9855d2cb0fe45":[11,0,1002,2],
 "structUSBMassStorageConfig.html#a9e0e4670c831a9487ea64d1aa093eb26":[11,0,1002,6],
 "structUSBMassStorageConfig.html#ae3623b5fc5cbe67c108362db4b909330":[11,0,1002,5],
 "structgec__transport.html":[11,0,526],
@@ -249,5 +241,13 @@ var NAVTREEINDEX205 =
 "sys__id__chirp_8c.html#ad255f355f6f935c955a2237c76eb34a9":[12,0,1,0,6,68,8,3],
 "sys__id__chirp_8c.html#adcb98efd2f03586518ffbb29f2d24100":[12,0,1,0,6,68,8,6],
 "sys__id__chirp_8c.html#aeaacc8de78b225d2ae3fcbf2bea70cb1":[12,0,1,0,6,68,8,2],
-"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,68,8,14]
+"sys__id__chirp_8c.html#aeb7ec911b8f81318e1d622ef78645adf":[12,0,1,0,6,68,8,14],
+"sys__id__chirp_8c.html#aecab88b97c35be3430f78b20150b0733":[12,0,1,0,6,68,8,15],
+"sys__id__chirp_8c.html#af5c1450c810c76b6542c912f0f7cce9d":[12,0,1,0,6,68,8,12],
+"sys__id__chirp_8c_source.html":[12,0,1,0,6,68,8],
+"sys__id__chirp_8h.html":[12,0,1,0,6,68,9],
+"sys__id__chirp_8h.html#a0fee5f0e231935f156e57f48fbc3042b":[12,0,1,0,6,68,9,5],
+"sys__id__chirp_8h.html#a1cbb8a4687136879c07c39f554566a2c":[12,0,1,0,6,68,9,19],
+"sys__id__chirp_8h.html#a30a32b86811617f6c4fbd754c01ecbb8":[12,0,1,0,6,68,9,17],
+"sys__id__chirp_8h.html#a5231f5464d0fb971765403cf0660e84b":[12,0,1,0,6,68,9,0]
 };

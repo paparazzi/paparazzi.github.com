@@ -1,13 +1,5 @@
 var NAVTREEINDEX204 =
 {
-"stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a":[12,0,1,0,0,3,0,11,4],
-"stm32_2mcu__periph_2spi__arch_8c.html#a1085933b98ac1dc4211b2d0d8a7fd6dc":[12,0,1,0,0,3,0,11,1,2],
-"stm32_2mcu__periph_2spi__arch_8c.html#a14f668fc1be63f17e24c4c3d16c625da":[12,0,1,0,0,3,0,11,1,15],
-"stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3":[12,0,1,0,0,3,0,11,3],
-"stm32_2mcu__periph_2spi__arch_8c.html#a1fcd46a62bab151ce1f91b72cdbe3568":[12,0,1,0,0,3,0,11,29],
-"stm32_2mcu__periph_2spi__arch_8c.html#a23f6cd09954b922f646d7f955bc167f2":[12,0,1,0,0,3,0,11,1,6],
-"stm32_2mcu__periph_2spi__arch_8c.html#a269aac7aaa7cac92293b4046b41e9b90":[12,0,1,0,0,3,0,11,1,11],
-"stm32_2mcu__periph_2spi__arch_8c.html#a2d6e85fd897acec4e27477a36f62fdb4":[12,0,1,0,0,3,0,11,1,0],
 "stm32_2mcu__periph_2spi__arch_8c.html#a2dbd892c7ed0652659421468c469c8b7":[12,0,1,0,0,3,0,11,7],
 "stm32_2mcu__periph_2spi__arch_8c.html#a3c3c690f55570e4051fc97a5b8c3245a":[12,0,1,0,0,3,0,11,0,3],
 "stm32_2mcu__periph_2spi__arch_8c.html#a3ef76c50f4063e0bd8f6ad418ceb8d59":[12,0,1,0,0,3,0,11,31],
@@ -249,5 +241,13 @@ var NAVTREEINDEX204 =
 "structIndiController__int.html#ae86ce4ebaf7239ec8d12e7e7d499c63f":[11,0,619,4],
 "structStabilizationSetpoint.html":[11,0,947],
 "structStabilizationSetpoint.html#a351184abdc98c97e227e83350f7c868f":[11,0,947,0],
-"structStabilizationSetpoint.html#aa8a7460d3505d459210248a905d956ae":[11,0,947,2]
+"structStabilizationSetpoint.html#aa8a7460d3505d459210248a905d956ae":[11,0,947,2],
+"structStabilizationSetpoint.html#aa9be51c23b5502b0355a1e168cef4827":[11,0,947,1],
+"structStabilizationSetpoint.html#aaf6b564417d03a2836b83fd941ed7d92":[11,0,947,3],
+"structUSBMassStorageConfig.html":[11,0,1002],
+"structUSBMassStorageConfig.html#a2837cc1fc768bb2b1be4e2d3119064f0":[11,0,1002,3],
+"structUSBMassStorageConfig.html#a48035f5a2eb5644283c58c73a426fdfa":[11,0,1002,0],
+"structUSBMassStorageConfig.html#a4a36198660a33ab658a397f5512d0117":[11,0,1002,4],
+"structUSBMassStorageConfig.html#a4ed2afe90449fca523bf5894dc3087ec":[11,0,1002,1],
+"structUSBMassStorageConfig.html#a914c2c144276e24914e9855d2cb0fe45":[11,0,1002,2]
 };

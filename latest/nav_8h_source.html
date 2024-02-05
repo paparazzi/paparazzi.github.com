@@ -288,36 +288,34 @@ $(document).ready(function(){initNavTree('nav_8h_source.html',''); initResizable
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">    {h_ctl_roll_setpoint = _roll;} \</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="nav_8h.html#a323e44aef731ffc28245c066c8ddf3d4">  220</a></span>&#160;<span class="preprocessor">#define NavSetManual(_roll, _pitch, _yaw) _Pragma(&quot;GCC error \&quot;Manual mode in flight plan for fixedwing is not available\&quot;&quot;</span>)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="nav_8h.html#ade046c5227910bd6f3ea18f9b4d6c514">  221</a></span>&#160;<span class="preprocessor">#define nav_IncreaseShift(x) { if (x==0) nav_shift = 0; else nav_shift += x; }</span></div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="nav_8h.html#ade046c5227910bd6f3ea18f9b4d6c514">  223</a></span>&#160;<span class="preprocessor">#define nav_IncreaseShift(x) { if (x==0) nav_shift = 0; else nav_shift += x; }</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="nav_8h.html#ae1dfe610bee226ce313ba07538805322">  223</a></span>&#160;<span class="preprocessor">#define nav_SetNavRadius(x) { if (x==1) nav_radius = DEFAULT_CIRCLE_RADIUS; else if (x==-1) nav_radius = -DEFAULT_CIRCLE_RADIUS; else nav_radius = x; }</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="nav_8h.html#ae1dfe610bee226ce313ba07538805322">  225</a></span>&#160;<span class="preprocessor">#define nav_SetNavRadius(x) { if (x==1) nav_radius = DEFAULT_CIRCLE_RADIUS; else if (x==-1) nav_radius = -DEFAULT_CIRCLE_RADIUS; else nav_radius = x; }</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="nav_8h.html#ab4d16c33e2792978452a6b33e26df83c">  225</a></span>&#160;<span class="preprocessor">#define NavKillThrottle() { autopilot_set_kill_throttle(true); }</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="nav_8h.html#ab4d16c33e2792978452a6b33e26df83c">  227</a></span>&#160;<span class="preprocessor">#define NavKillThrottle() { autopilot_set_kill_throttle(true); }</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="nav_8h.html#ac500a50330425cb4a3054774289bb205">  230</a></span>&#160;<span class="preprocessor">#define GetPosX() (stateGetPositionEnu_f()-&gt;x)</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="nav_8h.html#a10961173ac6973d795af2f62eb67edca">  232</a></span>&#160;<span class="preprocessor">#define GetPosY() (stateGetPositionEnu_f()-&gt;y)</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">  234</a></span>&#160;<span class="preprocessor">#define GetPosAlt() (stateGetPositionUtm_f()-&gt;alt)</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="nav_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96">  236</a></span>&#160;<span class="preprocessor">#define GetPosHeight() (stateGetPositionEnu_f()-&gt;z)</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">  243</a></span>&#160;<span class="preprocessor">#define GetAltRef() (ground_alt)</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="nav_8h.html#a5b7ee5828a4a65359ce9393a365f5d2d">  246</a></span>&#160;<span class="preprocessor">#define SEND_NAVIGATION(_trans, _dev) { \</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">    uint8_t _circle_count = NavCircleCount(); \</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">    struct EnuCoor_f* pos = stateGetPositionEnu_f(); \</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">    float dist_wp = sqrtf(dist2_to_wp); \</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">    float dist_home = sqrtf(dist2_to_home); \</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">    uint8_t kill = (uint8_t)autopilot.kill_throttle; \</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">    pprz_msg_send_NAVIGATION(_trans, _dev, AC_ID, &amp;nav_block, &amp;nav_stage, &amp;(pos-&gt;x), &amp;(pos-&gt;y), &amp;dist_wp, &amp;dist_home, &amp;autopilot.flight_time, &amp;block_time, &amp;stage_time, &amp;kill, &amp;_circle_count, &amp;nav_oval_count); \</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="nav_8h.html#ac500a50330425cb4a3054774289bb205">  228</a></span>&#160;<span class="preprocessor">#define GetPosX() (stateGetPositionEnu_f()-&gt;x)</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="nav_8h.html#a10961173ac6973d795af2f62eb67edca">  230</a></span>&#160;<span class="preprocessor">#define GetPosY() (stateGetPositionEnu_f()-&gt;y)</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">  232</a></span>&#160;<span class="preprocessor">#define GetPosAlt() (stateGetPositionUtm_f()-&gt;alt)</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="nav_8h.html#a3ccc0bc7c0032f8d6674e287062d7d96">  234</a></span>&#160;<span class="preprocessor">#define GetPosHeight() (stateGetPositionEnu_f()-&gt;z)</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">  241</a></span>&#160;<span class="preprocessor">#define GetAltRef() (ground_alt)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="nav_8h.html#a5b7ee5828a4a65359ce9393a365f5d2d">  244</a></span>&#160;<span class="preprocessor">#define SEND_NAVIGATION(_trans, _dev) { \</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">    uint8_t _circle_count = NavCircleCount(); \</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">    struct EnuCoor_f* pos = stateGetPositionEnu_f(); \</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">    float dist_wp = sqrtf(dist2_to_wp); \</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">    float dist_home = sqrtf(dist2_to_home); \</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">    uint8_t kill = (uint8_t)autopilot.kill_throttle; \</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">    pprz_msg_send_NAVIGATION(_trans, _dev, AC_ID, &amp;nav_block, &amp;nav_stage, &amp;(pos-&gt;x), &amp;(pos-&gt;y), &amp;dist_wp, &amp;dist_home, &amp;autopilot.flight_time, &amp;block_time, &amp;stage_time, &amp;kill, &amp;_circle_count, &amp;nav_oval_count); \</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nav_8h.html#a97895e8dc3bcb1c6a1e7b4782f57ed2f">DownlinkSendWpNr</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nav_8h.html#a97895e8dc3bcb1c6a1e7b4782f57ed2f">DownlinkSendWpNr</a>(<a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOWNLINK */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DOWNLINK */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aautopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares.</div></div>
 <div class="ttc" id="acommon__flight__plan_8h_html"><div class="ttname"><a href="common__flight__plan_8h.html">common_flight_plan.h</a></div><div class="ttdoc">Common flight_plan functions shared between fixedwing and rotorcraft.</div></div>
 <div class="ttc" id="acommon__nav_8h_html"><div class="ttname"><a href="common__nav_8h.html">common_nav.h</a></div></div>
@@ -404,7 +402,7 @@ $(document).ready(function(){initNavTree('nav_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="nav_8h.html">nav.h</a></li>
-    <li class="footer">Generated on Mon Jan 29 2024 15:23:58 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 5 2024 08:43:47 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

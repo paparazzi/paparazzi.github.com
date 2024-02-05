@@ -1,8 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"module__bat_checker.html":[1,140],
-"module__bat_checker.html#configuration__bat_checker":[1,140,1],
-"module__bat_checker.html#functions__bat_checker":[1,140,2],
 "module__bat_checker.html#module_load_example__bat_checker":[1,140,0],
 "module__bat_checker.html#module_xml__bat_checker":[1,140,2,0],
 "module__bat_voltage_ardrone2.html":[1,399],
@@ -101,14 +98,9 @@ var NAVTREEINDEX131 =
 "module__control_new.html#module_xml__control_new":[1,78,0,0],
 "module__copilot.html":[1,301],
 "module__copilot.html#datalink_functions__copilot":[1,301,2],
-"module__copilot.html#files":[1,301,3],
 "module__copilot.html#functions__copilot":[1,301,1],
-"module__copilot.html#headers":[1,301,3,0],
-"module__copilot.html#init_functions":[1,301,1,0],
 "module__copilot.html#module_load_example__copilot":[1,301,0],
-"module__copilot.html#module_xml__copilot":[1,301,3,2],
-"module__copilot.html#periodic_functions":[1,301,1,1],
-"module__copilot.html#sources":[1,301,3,1],
+"module__copilot.html#module_xml__copilot":[1,301,2,0],
 "module__ctrl_module_innerloop_demo.html":[1,88],
 "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo":[1,88,0],
 "module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo":[1,88,0,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX131 =
 "module__digital_cam_uart.html":[1,136],
 "module__digital_cam_uart.html#functions__digital_cam_uart":[1,136,1],
 "module__digital_cam_uart.html#module_load_example__digital_cam_uart":[1,136,0],
-"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,136,1,0]
+"module__digital_cam_uart.html#module_xml__digital_cam_uart":[1,136,1,0],
+"module__digital_cam_video.html":[1,137],
+"module__digital_cam_video.html#functions__digital_cam_video":[1,137,1],
+"module__digital_cam_video.html#module_load_example__digital_cam_video":[1,137,0],
+"module__digital_cam_video.html#module_xml__digital_cam_video":[1,137,1,0],
+"module__direct_memory_logger.html":[1,253],
+"module__direct_memory_logger.html#configuration__direct_memory_logger":[1,253,1],
+"module__direct_memory_logger.html#functions__direct_memory_logger":[1,253,2],
+"module__direct_memory_logger.html#module_load_example__direct_memory_logger":[1,253,0]
 };

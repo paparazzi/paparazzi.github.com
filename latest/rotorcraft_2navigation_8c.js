@@ -38,7 +38,6 @@ var rotorcraft_2navigation_8c =
     [ "nav_set_heading_towards", "rotorcraft_2navigation_8c.html#a497df0753fcbcd7b681341695228527c", null ],
     [ "nav_set_heading_towards_target", "rotorcraft_2navigation_8c.html#a980612556418b4310bf871b118da9cc4", null ],
     [ "nav_set_heading_towards_waypoint", "rotorcraft_2navigation_8c.html#a3db1ed9a54dba70032a53de5dec69d9b", null ],
-    [ "nav_set_manual", "rotorcraft_2navigation_8c.html#a3278a0402583989151b9a64902706f04", null ],
     [ "flight_altitude", "rotorcraft_2navigation_8c.html#a1612ea0e1474e49b800cb3f497096523", null ],
     [ "max_dist2_from_home", "rotorcraft_2navigation_8c.html#ab0ed2ee7b3192c24e5386a15a2b28d86", null ],
     [ "max_dist_from_home", "rotorcraft_2navigation_8c.html#a39e68d4d623ea9227c80c01203ce97b5", null ],
