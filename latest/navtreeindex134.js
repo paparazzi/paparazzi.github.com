@@ -194,10 +194,9 @@ var NAVTREEINDEX134 =
 "module__jevois.html#module_load_example__jevois":[1,415,0],
 "module__jevois.html#module_xml__jevois":[1,415,2,0],
 "module__jevois_mavlink.html":[1,416],
-"module__jevois_mavlink.html#event_functions":[1,416,1,0],
 "module__jevois_mavlink.html#functions__jevois_mavlink":[1,416,1],
 "module__jevois_mavlink.html#module_load_example__jevois_mavlink":[1,416,0],
-"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,416,1,1],
+"module__jevois_mavlink.html#module_xml__jevois_mavlink":[1,416,1,0],
 "module__joystick.html":[1,475],
 "module__joystick.html#datalink_functions__joystick":[1,475,2],
 "module__joystick.html#functions__joystick":[1,475,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX134 =
 "module__light_temt.html":[1,289],
 "module__light_temt.html#functions__light_temt":[1,289,1],
 "module__light_temt.html#module_load_example__light_temt":[1,289,0],
-"module__light_temt.html#module_xml__light_temt":[1,289,1,0]
+"module__light_temt.html#module_xml__light_temt":[1,289,1,0],
+"module__logger_control_effectiveness.html":[1,255]
 };

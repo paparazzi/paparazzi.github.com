@@ -339,7 +339,9 @@ var onboard_modules =
     ] ],
     [ "rotorcraft_cam module", "module__rotorcraft_cam.html", [
       [ "Example for airframe file", "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam", null ],
-      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", null ],
+      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", [
+        [ "Airframe file section", "module__rotorcraft_cam.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
       [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
         [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
@@ -662,14 +664,12 @@ var onboard_modules =
     [ "optical_flow_hover module", "module__optical_flow_hover.html", [
       [ "Example for airframe file", "module__optical_flow_hover.html#module_load_example__optical_flow_hover", null ],
       [ "Module functions", "module__optical_flow_hover.html#functions__optical_flow_hover", [
-        [ "Init Functions", "module__optical_flow_hover.html#init_functions", null ],
         [ "Raw optical_flow_hover.xml file:", "module__optical_flow_hover.html#module_xml__optical_flow_hover", null ]
       ] ]
     ] ],
     [ "optical_flow_landing module", "module__optical_flow_landing.html", [
       [ "Example for airframe file", "module__optical_flow_landing.html#module_load_example__optical_flow_landing", null ],
       [ "Module configuration options", "module__optical_flow_landing.html#configuration__optical_flow_landing", [
-        [ "Airframe file section", "module__optical_flow_landing.html#af_section", null ],
         [ "Raw optical_flow_landing.xml file:", "module__optical_flow_landing.html#module_xml__optical_flow_landing", null ]
       ] ]
     ] ],
@@ -787,8 +787,11 @@ var onboard_modules =
     ] ],
     [ "telemetry_transparent module", "module__telemetry_transparent.html", [
       [ "Example for airframe file", "module__telemetry_transparent.html#module_load_example__telemetry_transparent", null ],
-      [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", null ],
+      [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", [
+        [ "Configure Options", "module__telemetry_transparent.html#configure", null ]
+      ] ],
       [ "Module functions", "module__telemetry_transparent.html#functions__telemetry_transparent", [
+        [ "Event Functions", "module__telemetry_transparent.html#event_functions", null ],
         [ "Raw telemetry_transparent.xml file:", "module__telemetry_transparent.html#module_xml__telemetry_transparent", null ]
       ] ]
     ] ],
@@ -1238,28 +1241,28 @@ var onboard_modules =
     ] ],
     [ "imu_aspirin_i2c_v1.0 module", "module__imu_aspirin_i2c_v1_0.html", [
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_0.html#module_load_example__imu_aspirin_i2c_v1_0", null ],
-      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", null ]
+      [ "Module configuration options", "module__imu_aspirin_i2c_v1_0.html#configuration__imu_aspirin_i2c_v1_0", [
+        [ ".0 Raw imu_aspirin_i2c_v1.0.xml file:", "module__imu_aspirin_i2c_v1_0.html#module_xml__imu_aspirin_i2c_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_i2c_v1.5 module", "module__imu_aspirin_i2c_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", [
-        [ ".5 Raw imu_aspirin_i2c_v1.5.xml file:", "module__imu_aspirin_i2c_v1_5.html#module_xml__imu_aspirin_i2c_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1686,16 +1689,8 @@ var onboard_modules =
     ] ],
     [ "logger_file module", "module__logger_file.html", [
       [ "Example for airframe file", "module__logger_file.html#module_load_example__logger_file", null ],
-      [ "Module configuration options", "module__logger_file.html#configuration__logger_file", [
-        [ "Configure Options", "module__logger_file.html#configure", null ],
-        [ "Define Options", "module__logger_file.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__logger_file.html#configuration__logger_file", null ],
       [ "Module functions", "module__logger_file.html#functions__logger_file", [
-        [ "Periodic Functions", "module__logger_file.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__logger_file.html#files", [
-        [ "Header Files", "module__logger_file.html#headers", null ],
-        [ "Source Files", "module__logger_file.html#sources", null ],
         [ "Raw logger_file.xml file:", "module__logger_file.html#module_xml__logger_file", null ]
       ] ]
     ] ],
@@ -2721,7 +2716,6 @@ var onboard_modules =
     [ "jevois_mavlink module", "module__jevois_mavlink.html", [
       [ "Example for airframe file", "module__jevois_mavlink.html#module_load_example__jevois_mavlink", null ],
       [ "Module functions", "module__jevois_mavlink.html#functions__jevois_mavlink", [
-        [ "Event Functions", "module__jevois_mavlink.html#event_functions", null ],
         [ "Raw jevois_mavlink.xml file:", "module__jevois_mavlink.html#module_xml__jevois_mavlink", null ]
       ] ]
     ] ],
@@ -3259,8 +3253,16 @@ var onboard_modules =
     ] ],
     [ "uav_recovery module", "module__uav_recovery.html", [
       [ "Example for airframe file", "module__uav_recovery.html#module_load_example__uav_recovery", null ],
-      [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", null ],
+      [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", [
+        [ "Define Options", "module__uav_recovery.html#define", null ]
+      ] ],
       [ "Module functions", "module__uav_recovery.html#functions__uav_recovery", [
+        [ "Init Functions", "module__uav_recovery.html#init_functions", null ],
+        [ "Periodic Functions", "module__uav_recovery.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__uav_recovery.html#files", [
+        [ "Header Files", "module__uav_recovery.html#headers", null ],
+        [ "Source Files", "module__uav_recovery.html#sources", null ],
         [ "Raw uav_recovery.xml file:", "module__uav_recovery.html#module_xml__uav_recovery", null ]
       ] ]
     ] ],
