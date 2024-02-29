@@ -1638,6 +1638,13 @@ var onboard_modules =
         [ "Raw lidar_tfmini_i2c.xml file:", "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c", null ]
       ] ]
     ] ],
+    [ "lidar_vl53l5cx module", "module__lidar_vl53l5cx.html", [
+      [ "Example for airframe file", "module__lidar_vl53l5cx.html#module_load_example__lidar_vl53l5cx", null ],
+      [ "Module configuration options", "module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx", null ],
+      [ "Module functions", "module__lidar_vl53l5cx.html#functions__lidar_vl53l5cx", [
+        [ "Raw lidar_vl53l5cx.xml file:", "module__lidar_vl53l5cx.html#module_xml__lidar_vl53l5cx", null ]
+      ] ]
+    ] ],
     [ "led_safety_status module", "module__led_safety_status.html", [
       [ "Example for airframe file", "module__led_safety_status.html#module_load_example__led_safety_status", null ],
       [ "Module functions", "module__led_safety_status.html#functions__led_safety_status", [

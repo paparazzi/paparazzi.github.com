@@ -7,5 +7,6 @@ var dir_f4ca31d105c4342227373714bf7859c8 =
     [ "tfmini.c", "tfmini_8c.html", "tfmini_8c" ],
     [ "tfmini.h", "tfmini_8h.html", "tfmini_8h" ],
     [ "tfmini_i2c.c", "tfmini__i2c_8c.html", "tfmini__i2c_8c" ],
-    [ "tfmini_i2c.h", "tfmini__i2c_8h.html", "tfmini__i2c_8h" ]
+    [ "tfmini_i2c.h", "tfmini__i2c_8h.html", "tfmini__i2c_8h" ],
+    [ "vl53l5cx_platform.h", "vl53l5cx__platform_8h.html", "vl53l5cx__platform_8h" ]
 ];

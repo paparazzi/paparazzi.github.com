@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"cyrf6936__regs_8h.html#a8edbcef64736225ce609706b8c3e5be8":[12,0,1,0,7,35,65],
 "cyrf6936__regs_8h.html#a947e4789cb17c335301e38a5174f3742":[12,0,1,0,7,35,25],
 "cyrf6936__regs_8h.html#a97ed533e5e6b10825ef4014782308a06":[12,0,1,0,7,35,47],
 "cyrf6936__regs_8h.html#a98d56d777f22293c7a3132a2201a9bb3":[12,0,1,0,7,35,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "decawave__anchorless__communication_8c.html#a4c8b864722cbb1595e04c537fa91b2a1":[12,0,1,0,6,16,0,2],
 "decawave__anchorless__communication_8c.html#a617e5fc09f1ac5290c594f2ca21ca959":[12,0,1,0,6,16,0,5],
 "decawave__anchorless__communication_8c.html#a666f8ed1285e6941cc47eeef8857a2bd":[12,0,1,0,6,16,0,19],
-"decawave__anchorless__communication_8c.html#a69ac1f48fb128e861016b15f428e1a0b":[12,0,1,0,6,16,0,12],
-"decawave__anchorless__communication_8c.html#a6f0f4c1b9ff2bec58ef21c807003cdc6":[12,0,1,0,6,16,0,27]
+"decawave__anchorless__communication_8c.html#a69ac1f48fb128e861016b15f428e1a0b":[12,0,1,0,6,16,0,12]
 };

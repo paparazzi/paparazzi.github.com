@@ -136,6 +136,9 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "vl53l1x_api.h", "vl53l1x__api_8h.html", "vl53l1x__api_8h" ],
     [ "vl53l1x_nonblocking.c", "vl53l1x__nonblocking_8c.html", "vl53l1x__nonblocking_8c" ],
     [ "vl53l1x_nonblocking.h", "vl53l1x__nonblocking_8h.html", "vl53l1x__nonblocking_8h" ],
+    [ "vl53l5cx_api.c", "vl53l5cx__api_8c.html", "vl53l5cx__api_8c" ],
+    [ "vl53l5cx_api.h", "vl53l5cx__api_8h.html", "vl53l5cx__api_8h" ],
+    [ "vl53l5cx_buffers.h", "vl53l5cx__buffers_8h.html", "vl53l5cx__buffers_8h" ],
     [ "vn200_serial.c", "vn200__serial_8c.html", "vn200__serial_8c" ],
     [ "vn200_serial.h", "vn200__serial_8h.html", "vn200__serial_8h" ]
 ];

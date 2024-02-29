@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"apogee__1_80_8h.html#a3527010cfbb35e98ab1bba9ded57da14":[12,0,1,0,1,22,120],
 "apogee__1_80_8h.html#a362880424997bf76d4e742c8c8504014":[12,0,1,0,1,22,183],
 "apogee__1_80_8h.html#a37154c806d85fb9f9158f86bb55e9ee0":[12,0,1,0,1,22,20],
 "apogee__1_80_8h.html#a37def755123d949a1f843b002daa9408":[12,0,1,0,1,22,180],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "arch_2sim_2baro__MS5534A_8h.html":[12,0,1,0,0,2,3],
 "arch_2sim_2baro__MS5534A_8h_source.html":[12,0,1,0,0,2,3],
 "arch_2sim_2modules_2datalink_2superbitrf_8c.html":[12,0,1,0,0,2,1,2,0],
-"arch_2sim_2modules_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86":[12,0,1,0,0,2,1,2,0,2],
-"arch_2sim_2modules_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec":[12,0,1,0,0,2,1,2,0,1]
+"arch_2sim_2modules_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86":[12,0,1,0,0,2,1,2,0,2]
 };

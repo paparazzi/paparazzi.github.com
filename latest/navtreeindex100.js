@@ -1,5 +1,7 @@
 var NAVTREEINDEX100 =
 {
+"krooz__sd_8h.html#a108d63fc5f8721b5cd6a69305c5b50c5":[12,0,1,0,1,35,70],
+"krooz__sd_8h.html#a1102abe6725b0ff8c4c4a248dd46e976":[12,0,1,0,1,35,160],
 "krooz__sd_8h.html#a158db218ea012f792391e673e553c42f":[12,0,1,0,1,35,64],
 "krooz__sd_8h.html#a192437e223012d0a12e92c878e3c2877":[12,0,1,0,1,35,176],
 "krooz__sd_8h.html#a1af3b0681135879303164ffd4953257b":[12,0,1,0,1,35,87],
@@ -247,7 +249,5 @@ var NAVTREEINDEX100 =
 "l3g4200__regs_8h.html#a2e21cbe774c18530e8169f0972b0b0a5":[12,0,1,0,7,57,12],
 "l3g4200__regs_8h.html#a2e485e5f52e052371e90b3f42cb14beb":[12,0,1,0,7,57,22],
 "l3g4200__regs_8h.html#a3701985e9fadbd49ea84ec42d6041b34":[12,0,1,0,7,57,6],
-"l3g4200__regs_8h.html#a534417d7359c6eec3d0efb515e8e09ad":[12,0,1,0,7,57,0],
-"l3g4200__regs_8h.html#a5bcef40399860b219d7c574c956b00c2":[12,0,1,0,7,57,15],
-"l3g4200__regs_8h.html#a5ce1e0507f24e5b56893edddd7a586e2":[12,0,1,0,7,57,16]
+"l3g4200__regs_8h.html#a534417d7359c6eec3d0efb515e8e09ad":[12,0,1,0,7,57,0]
 };

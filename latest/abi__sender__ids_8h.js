@@ -93,6 +93,7 @@ var abi__sender__ids_8h =
     [ "IMU_XSENS_ID", "abi__sender__ids_8h.html#a2b1288ad6009f02dd3f7aaa9a00c95b0", null ],
     [ "INCIDENCE_NPS_ID", "abi__sender__ids_8h.html#ab854447532f5ab2f3af8212a63c4b1f7", null ],
     [ "JOYSTICK_ID", "abi__sender__ids_8h.html#a282ea2232aeb43e13a86a84c6cedd975", null ],
+    [ "LIDAR_DATA_VL53L5CX_ID", "abi__sender__ids_8h.html#a88f6a29d4a58cbdf58f3f0c8211ffacd", null ],
     [ "LWC_SIM_ID", "abi__sender__ids_8h.html#a3239b6f4219256961c618f2d457850f6", null ],
     [ "MAG_CALIB_UKF_ID", "abi__sender__ids_8h.html#ae841f83efe6d9e822cc5379df3a8a050", null ],
     [ "MAG_DATALINK_SENDER_ID", "abi__sender__ids_8h.html#ab743940d41a4059f612706358e0b7da4", null ],
