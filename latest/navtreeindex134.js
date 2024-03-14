@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__imu_heater.html":[1,202],
+"module__imu_heater.html#configuration__imu_heater":[1,202,1],
+"module__imu_heater.html#functions__imu_heater":[1,202,2],
+"module__imu_heater.html#module_load_example__imu_heater":[1,202,0],
+"module__imu_heater.html#module_xml__imu_heater":[1,202,2,0],
+"module__imu_icm42688.html":[1,203],
 "module__imu_icm42688.html#configuration__imu_icm42688":[1,203,1],
 "module__imu_icm42688.html#functions__imu_icm42688":[1,203,2],
 "module__imu_icm42688.html#module_load_example__imu_icm42688":[1,203,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX134 =
 "module__lidar_tfmini.html#functions__lidar_tfmini":[1,248,2],
 "module__lidar_tfmini.html#module_load_example__lidar_tfmini":[1,248,0],
 "module__lidar_tfmini.html#module_xml__lidar_tfmini":[1,248,2,0],
-"module__lidar_tfmini_i2c.html":[1,249],
-"module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c":[1,249,1],
-"module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c":[1,249,2],
-"module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c":[1,249,0],
-"module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c":[1,249,2,0],
-"module__lidar_vl53l5cx.html":[1,250],
-"module__lidar_vl53l5cx.html#configuration__lidar_vl53l5cx":[1,250,1]
+"module__lidar_tfmini_i2c.html":[1,249]
 };

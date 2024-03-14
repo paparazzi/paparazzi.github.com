@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_skid_landing.html#configuration__nav_skid_landing":[1,335,1],
+"module__nav_skid_landing.html#module_load_example__nav_skid_landing":[1,335,0],
+"module__nav_skid_landing.html#module_xml__nav_skid_landing":[1,335,1,0],
+"module__nav_smooth.html":[1,336],
+"module__nav_smooth.html#module_load_example__nav_smooth":[1,336,0],
+"module__nav_smooth.html#module_xml__nav_smooth":[1,336,0,0],
 "module__nav_spiral.html":[1,337],
 "module__nav_spiral.html#configuration__nav_spiral":[1,337,1],
 "module__nav_spiral.html#module_load_example__nav_spiral":[1,337,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "module__relative_localization_filter.html":[1,491],
 "module__relative_localization_filter.html#functions__relative_localization_filter":[1,491,1],
 "module__relative_localization_filter.html#module_load_example__relative_localization_filter":[1,491,0],
-"module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,491,1,0],
-"module__rng.html":[1,270],
-"module__rng.html#module_load_example__rng":[1,270,0],
-"module__rng.html#module_xml__rng":[1,270,0,0],
-"module__rot_wing_automation.html":[1,370],
-"module__rot_wing_automation.html#configuration__rot_wing_automation":[1,370,1],
-"module__rot_wing_automation.html#functions__rot_wing_automation":[1,370,2]
+"module__relative_localization_filter.html#module_xml__relative_localization_filter":[1,491,1,0]
 };

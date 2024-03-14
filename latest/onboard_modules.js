@@ -339,9 +339,7 @@ var onboard_modules =
     ] ],
     [ "rotorcraft_cam module", "module__rotorcraft_cam.html", [
       [ "Example for airframe file", "module__rotorcraft_cam.html#module_load_example__rotorcraft_cam", null ],
-      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", [
-        [ "Airframe file section", "module__rotorcraft_cam.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__rotorcraft_cam.html#configuration__rotorcraft_cam", null ],
       [ "Module functions", "module__rotorcraft_cam.html#functions__rotorcraft_cam", null ],
       [ "Datalink Functions", "module__rotorcraft_cam.html#datalink_functions__rotorcraft_cam", [
         [ "Raw rotorcraft_cam.xml file:", "module__rotorcraft_cam.html#module_xml__rotorcraft_cam", null ]
@@ -688,7 +686,9 @@ var onboard_modules =
     ] ],
     [ "target_pos module", "module__target_pos.html", [
       [ "Example for airframe file", "module__target_pos.html#module_load_example__target_pos", null ],
-      [ "Module configuration options", "module__target_pos.html#configuration__target_pos", null ],
+      [ "Module configuration options", "module__target_pos.html#configuration__target_pos", [
+        [ "Airframe file section", "module__target_pos.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__target_pos.html#functions__target_pos", null ],
       [ "Datalink Functions", "module__target_pos.html#datalink_functions__target_pos", [
         [ "Raw target_pos.xml file:", "module__target_pos.html#module_xml__target_pos", null ]
@@ -787,11 +787,8 @@ var onboard_modules =
     ] ],
     [ "telemetry_transparent module", "module__telemetry_transparent.html", [
       [ "Example for airframe file", "module__telemetry_transparent.html#module_load_example__telemetry_transparent", null ],
-      [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", [
-        [ "Configure Options", "module__telemetry_transparent.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__telemetry_transparent.html#configuration__telemetry_transparent", null ],
       [ "Module functions", "module__telemetry_transparent.html#functions__telemetry_transparent", [
-        [ "Event Functions", "module__telemetry_transparent.html#event_functions", null ],
         [ "Raw telemetry_transparent.xml file:", "module__telemetry_transparent.html#module_xml__telemetry_transparent", null ]
       ] ]
     ] ],
@@ -1249,20 +1246,20 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -2001,8 +1998,16 @@ var onboard_modules =
     ] ],
     [ "follow module", "module__follow.html", [
       [ "Example for airframe file", "module__follow.html#module_load_example__follow", null ],
-      [ "Module configuration options", "module__follow.html#configuration__follow", null ],
+      [ "Module configuration options", "module__follow.html#configuration__follow", [
+        [ "Define Options", "module__follow.html#define", null ]
+      ] ],
       [ "Module functions", "module__follow.html#functions__follow", [
+        [ "Init Functions", "module__follow.html#init_functions", null ],
+        [ "Periodic Functions", "module__follow.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__follow.html#files", [
+        [ "Header Files", "module__follow.html#headers", null ],
+        [ "Source Files", "module__follow.html#sources", null ],
         [ "Raw follow.xml file:", "module__follow.html#module_xml__follow", null ]
       ] ]
     ] ],
@@ -2756,8 +2761,11 @@ var onboard_modules =
     ] ],
     [ "sonar_vl53l1x module", "module__sonar_vl53l1x.html", [
       [ "Example for airframe file", "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x", null ],
-      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", null ],
+      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", [
+        [ "Configure Options", "module__sonar_vl53l1x.html#configure", null ]
+      ] ],
       [ "Module functions", "module__sonar_vl53l1x.html#functions__sonar_vl53l1x", [
+        [ "Event Functions", "module__sonar_vl53l1x.html#event_functions", null ],
         [ "Raw sonar_vl53l1x.xml file:", "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x", null ]
       ] ]
     ] ],
@@ -3260,16 +3268,8 @@ var onboard_modules =
     ] ],
     [ "uav_recovery module", "module__uav_recovery.html", [
       [ "Example for airframe file", "module__uav_recovery.html#module_load_example__uav_recovery", null ],
-      [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", [
-        [ "Define Options", "module__uav_recovery.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", null ],
       [ "Module functions", "module__uav_recovery.html#functions__uav_recovery", [
-        [ "Init Functions", "module__uav_recovery.html#init_functions", null ],
-        [ "Periodic Functions", "module__uav_recovery.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__uav_recovery.html#files", [
-        [ "Header Files", "module__uav_recovery.html#headers", null ],
-        [ "Source Files", "module__uav_recovery.html#sources", null ],
         [ "Raw uav_recovery.xml file:", "module__uav_recovery.html#module_xml__uav_recovery", null ]
       ] ]
     ] ],
