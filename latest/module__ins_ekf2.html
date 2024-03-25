@@ -111,7 +111,7 @@ Example for airframe file</h1>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_GPS_POS_Z&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_X&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_Y&quot; value=&quot;0&quot; /&gt;\n    &#39;</span></div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_Z&quot; value=&quot;0&quot; /&gt;\n    \n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_FLOW_POS_Z&quot; value=&quot;0&quot; /&gt;\n\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_SONAR_MIN_RANGE&quot; value=&quot;0.05&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_SONAR_MAX_RANGE&quot; value=&quot;3&quot; /&gt;\n    &#39;</span></div>
 <div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;INS_EKF2_RANGE_MAIN_AGL&quot; value=&quot;1&quot; /&gt;\n    &#39;</span></div>
@@ -292,7 +292,7 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_X&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor X offset from CoG position [m]&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_Y&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor Y offset from CoG position [m]&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_FLOW_POS_Z&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Flow sensor Z offset from CoG position [m]&quot;</span>/&gt;</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_SONAR_MIN_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;0.05&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL sensor minimum range [m]&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_SONAR_MAX_RANGE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;AGL sensor maximum range [m]&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INS_EKF2_RANGE_MAIN_AGL&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;If enabled uses radar sensor as primary AGL source, if possible&quot;</span>/&gt;</div>
@@ -347,6 +347,7 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;__PAPARAZZI&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ECL_STANDALONE&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;IMU_INTEGRATION&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt; <span class="comment">&lt;!-- Needed to enable IMU integration --&gt;</span></div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_ALT_LLA_WAYPOINTS&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">&lt;!-- Compile needed ecl files --&gt;</span></div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;geo.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/geo&quot;</span>/&gt;</div>
@@ -370,7 +371,7 @@ Raw ins_ekf2.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;EKFGSF_yaw.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sensor_range_finder.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;utils.cpp&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;ecl/EKF&quot;</span>/&gt;</div>
-<div class="line">    </div>
+<div class="line"> </div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -380,7 +381,7 @@ Raw ins_ekf2.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Mar 14 2024 12:29:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 25 2024 10:24:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

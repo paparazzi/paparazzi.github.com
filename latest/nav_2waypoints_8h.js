@@ -22,6 +22,7 @@ var nav_2waypoints_8h =
     [ "waypoint_get_lat_deg", "nav_2waypoints_8h.html#a99eb42987dd9c48be7a9b0eb13737d79", null ],
     [ "waypoint_get_lat_rad", "nav_2waypoints_8h.html#aff1a8c5b31bc6ee294b5f4e43b9527fb", null ],
     [ "waypoint_get_lla", "nav_2waypoints_8h.html#a2ed9112b04893275873729d03176f490", null ],
+    [ "waypoint_get_lla_alt", "nav_2waypoints_8h.html#a992df6ab805be81c823d77547a12b2da", null ],
     [ "waypoint_get_lon_deg", "nav_2waypoints_8h.html#a7e084d884dfa3c91233a393dcfd15b01", null ],
     [ "waypoint_get_lon_rad", "nav_2waypoints_8h.html#a562790c04bfc9029c5ab2b62bb7fd8b0", null ],
     [ "waypoint_get_x", "nav_2waypoints_8h.html#a62061108340141e0fda55b7c0d8f0145", null ],

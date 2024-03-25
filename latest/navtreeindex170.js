@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#DATALINK_MESSAGE":[2,2,33],
+"paparazzi_messages.html#DATALINK_REPORT":[2,0,26],
 "paparazzi_messages.html#DCF":[2,0,36],
 "paparazzi_messages.html#DCF_REG_TABLE":[2,1,58],
 "paparazzi_messages.html#DCF_THETA":[2,0,234],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#TARGET_POS_INFO":[2,0,89],
 "paparazzi_messages.html#TCAS_DEBUG":[2,0,117],
 "paparazzi_messages.html#TCAS_RA":[2,0,115],
-"paparazzi_messages.html#TCAS_RESOLVE":[2,1,14],
-"paparazzi_messages.html#TCAS_RESOLVED":[2,0,116],
-"paparazzi_messages.html#TCAS_TA":[2,0,114]
+"paparazzi_messages.html#TCAS_RESOLVE":[2,1,14]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"paparazzi_messages.html#TCAS_RESOLVED":[2,0,116],
+"paparazzi_messages.html#TCAS_TA":[2,0,114],
 "paparazzi_messages.html#TELEMETRY_CLASS":[2,0],
 "paparazzi_messages.html#TELEMETRY_ERROR":[2,2,31],
 "paparazzi_messages.html#TELEMETRY_MESSAGE":[2,2,32],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "pfc__actuators_8c.html#abffaf2ab2af59819ffbfc16a42bb2ab3":[12,0,1,0,6,10,0,1,5],
 "pfc__actuators_8c.html#ad400c92fdbfefbf3fab529c0533e9072":[12,0,1,0,6,10,0,4],
 "pfc__actuators_8c.html#ad845a921e6a61949ebae99594a558025":[12,0,1,0,6,10,0,12],
-"pfc__actuators_8c.html#af9ae7748a2684ff1076a10bce93409ea":[12,0,1,0,6,10,0,15],
-"pfc__actuators_8c.html#aff893a8e3e5d18d255a170e047e19e87":[12,0,1,0,6,10,0,3],
-"pfc__actuators_8c.html#structpfc__actuator__t":[12,0,1,0,6,10,0,0]
+"pfc__actuators_8c.html#af9ae7748a2684ff1076a10bce93409ea":[12,0,1,0,6,10,0,15]
 };
