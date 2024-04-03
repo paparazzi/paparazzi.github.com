@@ -131,6 +131,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html',''); initResi
 <li class="level2"><a href="#TUNE_ROLL">TUNE_ROLL (ID 43)</a></li>
 <li class="level2"><a href="#BARO_MS5534A">BARO_MS5534A (ID 44)</a></li>
 <li class="level2"><a href="#CHIRP">CHIRP (ID 45)</a></li>
+<li class="level2"><a href="#EXTERNAL_POSE_DOWN">EXTERNAL_POSE_DOWN (ID 46)</a></li>
 <li class="level2"><a href="#WP_MOVED_LLA">WP_MOVED_LLA (ID 47)</a></li>
 <li class="level2"><a href="#RLFILTER">RLFILTER (ID 48)</a></li>
 <li class="level2"><a href="#WP_MOVED_ENU">WP_MOVED_ENU (ID 49)</a></li>
@@ -1173,6 +1174,35 @@ CHIRP (ID 45)</h2>
 <td class="markdownTableBodyNone">fade_in   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Fade in feature active    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">exponential   </td><td class="markdownTableBodyNone">uint8   </td><td class="markdownTableBodyNone">bool   </td><td class="markdownTableBodyNone">Exponential chirp active   </td></tr>
+</table>
+<h2><a class="anchor" id="EXTERNAL_POSE_DOWN"></a>
+EXTERNAL_POSE_DOWN (ID 46)</h2>
+<p>Position, speed and orientation in local frame from a remote vision system</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field name   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Unit/Values   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">timestamp   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">mus   </td><td class="markdownTableBodyNone">Timestamp from the measurement    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ned_x   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">NED x position in vision frame    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ned_y   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">NED y position in vision frame    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ned_z   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">NED z position in vision frame    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ned_xd   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">NED x speed in vision frame    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ned_yd   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">NED y speed in vision frame    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ned_zd   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone">m/s   </td><td class="markdownTableBodyNone">NED z speed in vision frame    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">body_qi   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion i in NED to body    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">body_qx   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion x in NED to body    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">body_qy   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion y in NED to body    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">body_qz   </td><td class="markdownTableBodyNone">float   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Body quaternion z in NED to body   </td></tr>
 </table>
 <h2><a class="anchor" id="WP_MOVED_LLA"></a>
 WP_MOVED_LLA (ID 47)</h2>
@@ -6884,7 +6914,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 26 2024 09:16:07 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 3 2024 13:06:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,12 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_esc32.html":[1,9],
+"module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
+"module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
+"module__actuators_hitl.html":[1,10],
+"module__actuators_hitl.html#configuration__actuators_hitl":[1,10,1],
+"module__actuators_hitl.html#functions__actuators_hitl":[1,10,2],
+"module__actuators_hitl.html#module_load_example__actuators_hitl":[1,10,0],
 "module__actuators_hitl.html#module_xml__actuators_hitl":[1,10,2,0],
 "module__actuators_md25.html":[1,11],
 "module__actuators_md25.html#configuration__actuators_md25":[1,11,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX130 =
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,395,0],
 "module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0],
 "module__baro_ms5534a.html":[1,386],
-"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1],
-"module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,386,0],
-"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,386,1,0],
-"module__baro_ms5611_i2c.html":[1,396],
-"module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,396,1],
-"module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,396,2],
-"module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,396,0],
-"module__baro_ms5611_i2c.html#module_xml__baro_ms5611_i2c":[1,396,2,0]
+"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1]
 };

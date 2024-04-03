@@ -1,5 +1,13 @@
 var NAVTREEINDEX200 =
 {
+"stabilization__attitude__common__float_8h.html#ae6861f4b294fb48e83d5796c5a26147d":[12,0,1,0,3,2,2,2,0,8],
+"stabilization__attitude__common__float_8h.html#af92656755f70798294413b0e009aac53":[12,0,1,0,3,2,2,2,0,2],
+"stabilization__attitude__common__float_8h.html#structFloatAttitudeGains":[12,0,1,0,3,2,2,2,0],
+"stabilization__attitude__common__float_8h_source.html":[12,0,1,0,3,2,2,2],
+"stabilization__attitude__common__int_8h.html":[12,0,1,0,3,2,2,3],
+"stabilization__attitude__common__int_8h.html#a1f2a582f86594155e1586c6d75a15d8b":[12,0,1,0,3,2,2,3,0,0],
+"stabilization__attitude__common__int_8h.html#a2c47a9d01aee2d7c2dd277cf6bdccc93":[12,0,1,0,3,2,2,3,0,2],
+"stabilization__attitude__common__int_8h.html#a398bf301d18e16d629f977e75256f157":[12,0,1,0,3,2,2,3,2],
 "stabilization__attitude__common__int_8h.html#a626e955f6f77d5690a9590dfc5ec4d19":[12,0,1,0,3,2,2,3,3],
 "stabilization__attitude__common__int_8h.html#a6bbc38ebd4313ff8c277cbbeb168cdbc":[12,0,1,0,3,2,2,3,0,1],
 "stabilization__attitude__common__int_8h.html#a8adda5f8d9ba43761ce43e05703fed22":[12,0,1,0,3,2,2,3,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX200 =
 "stabilization__attitude__quat__indi_8h.html":[12,0,1,0,3,2,2,15],
 "stabilization__attitude__quat__indi_8h_source.html":[12,0,1,0,3,2,2,15],
 "stabilization__attitude__quat__int_8c.html":[12,0,1,0,3,2,2,16],
-"stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1":[12,0,1,0,3,2,2,16,17],
-"stabilization__attitude__quat__int_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474":[12,0,1,0,3,2,2,16,13],
-"stabilization__attitude__quat__int_8c.html#a12f569e84b2838005e3c28f4476971e9":[12,0,1,0,3,2,2,16,7],
-"stabilization__attitude__quat__int_8c.html#a18a45e70bf2fae908ece863a764f777b":[12,0,1,0,3,2,2,16,19],
-"stabilization__attitude__quat__int_8c.html#a23f862ca823e6fd23fc9c111178be077":[12,0,1,0,3,2,2,16,16],
-"stabilization__attitude__quat__int_8c.html#a398bf301d18e16d629f977e75256f157":[12,0,1,0,3,2,2,16,29],
-"stabilization__attitude__quat__int_8c.html#a3dfdefa89d767c6a1872b18da76beddc":[12,0,1,0,3,2,2,16,22],
-"stabilization__attitude__quat__int_8c.html#a457dc37242ecee10254c28cb14d56ba7":[12,0,1,0,3,2,2,16,15],
-"stabilization__attitude__quat__int_8c.html#a4706f4ac6871f6a031332d22ad0ebf75":[12,0,1,0,3,2,2,16,9]
+"stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1":[12,0,1,0,3,2,2,16,17]
 };

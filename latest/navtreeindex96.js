@@ -1,5 +1,12 @@
 var NAVTREEINDEX96 =
 {
+"invensense2__regs_8h.html#a2171112cbd01bfe80f808ae41d039914":[12,0,1,0,7,45,113],
+"invensense2__regs_8h.html#a21776a563d3928af93d204294cc06fff":[12,0,1,0,7,45,15],
+"invensense2__regs_8h.html#a21d147b0ac0b92ee0729e10161e0c3c5":[12,0,1,0,7,45,68],
+"invensense2__regs_8h.html#a223c076d9ab7cf1e4a60676dd33a65a9":[12,0,1,0,7,45,63],
+"invensense2__regs_8h.html#a23d23b36962d34ff7370ef62308b7bd2":[12,0,1,0,7,45,51],
+"invensense2__regs_8h.html#a24fe1a726bd7b9e897c30d6e26f60942":[12,0,1,0,7,45,1],
+"invensense2__regs_8h.html#a2611aeb377a1ab0beefe87bcef2a3d4a":[12,0,1,0,7,45,194],
 "invensense2__regs_8h.html#a266be08614a0704fc4f25ad259deb5c0":[12,0,1,0,7,45,86],
 "invensense2__regs_8h.html#a26e0a61cd2e51e23a85796d401bd7803":[12,0,1,0,7,45,172],
 "invensense2__regs_8h.html#a2afb4ac102deb0ccd57341fe443d867f":[12,0,1,0,7,45,178],
@@ -242,12 +249,5 @@ var NAVTREEINDEX96 =
 "invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da03c315021fdee90e0a5bee756fb8ce4a":[12,0,1,0,7,47,6,3],
 "invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da1cbe21d60b578198d1a69b4e83073a55":[12,0,1,0,7,47,6,1],
 "invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da5433cfb7b84f9cb254989ba7dc312b92":[12,0,1,0,7,47,6,8],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da63e11bedcf12b435853f7f507b175eed":[12,0,1,0,7,47,6,0],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da72b0c762947717e7270ed80436e0e8d0":[12,0,1,0,7,47,6,4],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da8ee5b24703e3732b1a2562d007a316b7":[12,0,1,0,7,47,6,9],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da90806d16a2dfeedf78b637d338214a79":[12,0,1,0,7,47,6,13],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da9f8507fab735577714d4d0afc2f86903":[12,0,1,0,7,47,6,2],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929daa472c1342f5efae4b6484d6717728f77":[12,0,1,0,7,47,6,11],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929daa78a58d1054b3d8f4a7ca8cf7233b2f4":[12,0,1,0,7,47,6,6],
-"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929daca6893c7aeb506e8a6424e35b93bfae0":[12,0,1,0,7,47,6,7]
+"invensense3_8h.html#a8c21ff16d869099a77ca84594d81929da63e11bedcf12b435853f7f507b175eed":[12,0,1,0,7,47,6,0]
 };

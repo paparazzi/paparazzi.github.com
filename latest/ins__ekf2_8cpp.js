@@ -53,6 +53,7 @@ var ins__ekf2_8cpp =
     [ "optical_flow_cb", "ins__ekf2_8cpp.html#a3ee22d5c97c601731a135c1104958a4f", null ],
     [ "send_ahrs_bias", "ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769", null ],
     [ "send_ahrs_quat", "ins__ekf2_8cpp.html#ac6dea028352d916df62df0a02965c756", null ],
+    [ "send_external_pose_down", "ins__ekf2_8cpp.html#ae272d2b42a54b734aa093467c0912059", null ],
     [ "send_filter_status", "ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398", null ],
     [ "send_ins", "ins__ekf2_8cpp.html#a2ba079af519dd03472aa3e6019b3a91f", null ],
     [ "send_ins_ekf2", "ins__ekf2_8cpp.html#a30d9ada33d7b018cc4b2447c4d7ba155", null ],
@@ -71,5 +72,6 @@ var ins__ekf2_8cpp =
     [ "gyro_int_ev", "ins__ekf2_8cpp.html#a596ba14822e0851b21aff8465a9c32f6", null ],
     [ "mag_ev", "ins__ekf2_8cpp.html#a44d506760598e8c18e5da6e52dfc6b0d", null ],
     [ "optical_flow_ev", "ins__ekf2_8cpp.html#a141009974fbc44658bdd3334ff2e1d62", null ],
+    [ "sample_ev", "ins__ekf2_8cpp.html#adfd7a7b836b78f066f0d6d8cd453c8d2", null ],
     [ "temperature_ev", "ins__ekf2_8cpp.html#a38cb06612986df226f29ce29c93450e8", null ]
 ];
