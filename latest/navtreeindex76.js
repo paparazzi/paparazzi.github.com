@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"guidance__h__ref_8h.html#structGuidanceHRef":[12,0,1,0,3,2,0,5,0],
+"guidance__h__ref_8h_source.html":[12,0,1,0,3,2,0,5],
 "guidance__hybrid_8c.html":[12,0,1,0,3,2,0,6],
 "guidance__hybrid_8c.html#a045ecd33023708c4a0757e04955bc7fb":[12,0,1,0,3,2,0,6,16],
 "guidance__hybrid_8c.html#a07675b1eff91386f5a16977a05233fb0":[12,0,1,0,3,2,0,6,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "guidance__indi__hybrid__quadplane_8h_source.html":[12,0,1,0,3,2,0,13],
 "guidance__indi__hybrid__tailsitter_8c.html":[12,0,1,0,3,2,0,14],
 "guidance__indi__hybrid__tailsitter_8c.html#ac24605ed3b2910b6b5767a691516e073":[12,0,1,0,3,2,0,14,1],
-"guidance__indi__hybrid__tailsitter_8c.html#acedb2156e6867b5b21a2b938b5e09728":[12,0,1,0,3,2,0,14,0],
-"guidance__indi__hybrid__tailsitter_8c_source.html":[12,0,1,0,3,2,0,14],
-"guidance__indi__hybrid__tailsitter_8h.html":[12,0,1,0,3,2,0,15]
+"guidance__indi__hybrid__tailsitter_8c.html#acedb2156e6867b5b21a2b938b5e09728":[12,0,1,0,3,2,0,14,0]
 };

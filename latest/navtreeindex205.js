@@ -1,5 +1,8 @@
 var NAVTREEINDEX205 =
 {
+"structHorizontalGuidanceSetpoint.html#a902dfeb0c0690d6b80c472b1ae695f61":[11,0,584,2],
+"structHorizontalGuidanceSetpoint.html#a9e870dc90ef3a852138bfe455885426c":[11,0,584,0],
+"structHorizontalGuidanceSetpoint.html#abf09060f037f857c6f12d08970aca3ae":[11,0,584,5],
 "structIndiController__int.html":[11,0,621],
 "structIndiController__int.html#a053595e6dba820bac8537d74ed7c6a3a":[11,0,621,15],
 "structIndiController__int.html#a1eda0a1be0adab1f7f5c0acba577599e":[11,0,621,17],
@@ -246,8 +249,5 @@ var NAVTREEINDEX205 =
 "sys__id__chirp_8c.html":[12,0,1,0,6,68,8],
 "sys__id__chirp_8c.html#a075655def334ed92cb6db74ffcb995f3":[12,0,1,0,6,68,8,1],
 "sys__id__chirp_8c.html#a0fee5f0e231935f156e57f48fbc3042b":[12,0,1,0,6,68,8,13],
-"sys__id__chirp_8c.html#a118e867d3de75b3bdd6c49549030c72c":[12,0,1,0,6,68,8,18],
-"sys__id__chirp_8c.html#a1cbb8a4687136879c07c39f554566a2c":[12,0,1,0,6,68,8,28],
-"sys__id__chirp_8c.html#a30a32b86811617f6c4fbd754c01ecbb8":[12,0,1,0,6,68,8,26],
-"sys__id__chirp_8c.html#a455f47c2c7e9ed67f2eaebf10f6f9b7a":[12,0,1,0,6,68,8,0]
+"sys__id__chirp_8c.html#a118e867d3de75b3bdd6c49549030c72c":[12,0,1,0,6,68,8,18]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba66460b8dad8f39c37856b927507187e6":[12,0,1,0,7,124,3,11],
+"sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7b33c1a95ddf30bb1ee5e71d67c86e5c":[12,0,1,0,7,124,3,14],
 "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7d90dd1b89ea52c17e267516bc8c709f":[12,0,1,0,7,124,3,2],
 "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba85f08e2b90a3896094fac4f11665313e":[12,0,1,0,7,124,3,4],
 "sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba8ba30fefc5200f2bfebc2badd932d81c":[12,0,1,0,7,124,3,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28":[12,0,1,0,6,19,15,2],
 "servo__cam__ctrl_8c.html#aabfb61ec228b22380dfa49f35a689da7":[12,0,1,0,6,19,15,4],
 "servo__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532":[12,0,1,0,6,19,15,6],
-"servo__cam__ctrl_8c_source.html":[12,0,1,0,6,19,15],
-"servo__cam__ctrl_8h.html":[12,0,1,0,6,19,16],
-"servo__cam__ctrl_8h.html#a8fb28d260287fc333f4d1e110a68db27":[12,0,1,0,6,19,16,1]
+"servo__cam__ctrl_8c_source.html":[12,0,1,0,6,19,15]
 };

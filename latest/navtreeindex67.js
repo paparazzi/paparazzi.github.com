@@ -1,6 +1,8 @@
 var NAVTREEINDEX67 =
 {
+"group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc":[12,0,1,0,4,6,127],
 "group__math__algebra__float.html#ga51b4ff5b5105dd4259178c9183a06a4c":[9,9,1,0,32],
+"group__math__algebra__float.html#ga51b4ff5b5105dd4259178c9183a06a4c":[12,0,1,0,4,6,25],
 "group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83":[9,9,1,0,95],
 "group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83":[12,0,1,0,4,6,88],
 "group__math__algebra__float.html#ga52cfb535525f92ea9535275cc3000edf":[9,9,1,0,42],
@@ -187,8 +189,8 @@ var NAVTREEINDEX67 =
 "group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331":[9,9,1,0,72],
 "group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331":[12,0,1,0,4,5,4],
 "group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331":[12,0,1,0,4,6,65],
-"group__math__algebra__float.html#gae9cbbc42e76809d4cff619db90f8a56c":[12,0,1,0,4,6,50],
 "group__math__algebra__float.html#gae9cbbc42e76809d4cff619db90f8a56c":[9,9,1,0,57],
+"group__math__algebra__float.html#gae9cbbc42e76809d4cff619db90f8a56c":[12,0,1,0,4,6,50],
 "group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559":[9,9,1,0,10],
 "group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559":[12,0,1,0,4,6,3],
 "group__math__algebra__float.html#gaeaedda13a80ba0bda4fc891b10645b7e":[9,9,1,0,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "group__math__algebra__generic.html#ga00f24936416fef3008ef361e50a9e0c4":[12,0,1,0,4,2,95],
 "group__math__algebra__generic.html#ga029d09e9e3c56d45ca4a70e8b4599406":[9,9,1,1,82],
 "group__math__algebra__generic.html#ga029d09e9e3c56d45ca4a70e8b4599406":[12,0,1,0,4,2,82],
-"group__math__algebra__generic.html#ga032fb9e1e6734e83934ab3dc49306abf":[9,9,1,1,65],
-"group__math__algebra__generic.html#ga032fb9e1e6734e83934ab3dc49306abf":[12,0,1,0,4,2,65],
-"group__math__algebra__generic.html#ga04c20da68c3bfeee78325631aff95de4":[9,9,1,1,72]
+"group__math__algebra__generic.html#ga032fb9e1e6734e83934ab3dc49306abf":[9,9,1,1,65]
 };

@@ -15,7 +15,7 @@ var eff__scheduling__rot__wing_8c =
     [ "eff_scheduling_rot_wing_update_rudder_effectiveness", "eff__scheduling__rot__wing_8c.html#ac8b77afa13dbe4d2e672ff01c83e4885", null ],
     [ "eff_scheduling_rot_wing_update_wing_angle", "eff__scheduling__rot__wing_8c.html#a010db5d1849f792ffb27ad0ddd38413f", null ],
     [ "guidance_indi_get_liftd", "eff__scheduling__rot__wing_8c.html#a7787423cb34432d54738505c17618e4a", null ],
-    [ "stabilization_indi_set_wls_settings", "eff__scheduling__rot__wing_8c.html#a5e8d2fff75cab722278e60e10b36dff9", null ],
+    [ "stabilization_indi_set_wls_settings", "eff__scheduling__rot__wing_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2", null ],
     [ "wing_position_cb", "eff__scheduling__rot__wing_8c.html#ad616616784d17dad05980d1f9ef4303e", null ],
     [ "eff_sched_p", "eff__scheduling__rot__wing_8c.html#a5f1036bfa14a180c6113283cca476e56", null ],
     [ "eff_sched_var", "eff__scheduling__rot__wing_8c.html#a63556a574330b5de51b6f46e0f2e92d1", null ],

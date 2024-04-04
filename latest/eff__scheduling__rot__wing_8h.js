@@ -2,6 +2,7 @@ var eff__scheduling__rot__wing_8h =
 [
     [ "rot_wing_eff_sched_param_t", "eff__scheduling__rot__wing_8h.html#structrot__wing__eff__sched__param__t", [
       [ "d_rudder_d_pprz", "eff__scheduling__rot__wing_8h.html#a132dda0df2d266584b58a08b051c40e5", null ],
+      [ "DMdpprz_hover_roll", "eff__scheduling__rot__wing_8h.html#a8b34882fb9ea970442e99acc19d9dc32", null ],
       [ "hover_roll_pitch_coef", "eff__scheduling__rot__wing_8h.html#ae8abb7feac6b1daa9815a23db45a27ff", null ],
       [ "hover_roll_roll_coef", "eff__scheduling__rot__wing_8h.html#a0006298855e9b49e8aa30360e6d56840", null ],
       [ "Ixx_body", "eff__scheduling__rot__wing_8h.html#a31592b10160b656f6d1e42d8403fd5df", null ],
@@ -25,6 +26,7 @@ var eff__scheduling__rot__wing_8h =
       [ "airspeed", "eff__scheduling__rot__wing_8h.html#a35277cf772786c854b0113a6a19429da", null ],
       [ "airspeed2", "eff__scheduling__rot__wing_8h.html#ad72659f5448b3156f90440dd72e8fdda", null ],
       [ "cmd_elevator", "eff__scheduling__rot__wing_8h.html#a20e4d4c587b2149c93b29279e62eabd3", null ],
+      [ "cmd_pusher", "eff__scheduling__rot__wing_8h.html#a8637165a00daea4ceb18743bdb8eb421", null ],
       [ "cmd_pusher_scaled", "eff__scheduling__rot__wing_8h.html#ad06a3ca03a7a5d36f6eec55963367528", null ],
       [ "cmd_T_mean_scaled", "eff__scheduling__rot__wing_8h.html#a4961c1a19fa8b5abf7033e507c53b07e", null ],
       [ "cosr", "eff__scheduling__rot__wing_8h.html#a0e6c6fce1cc6d7637ab0b0fda0695b5d", null ],

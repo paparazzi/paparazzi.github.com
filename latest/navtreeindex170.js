@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"paparazzi_messages.html#COMMANDS_RAW":[2,1,9],
+"paparazzi_messages.html#CONFIG":[2,2,9],
 "paparazzi_messages.html#CONFIG_REQ":[2,2,8],
 "paparazzi_messages.html#COPILOT_STATUS":[2,0,120],
 "paparazzi_messages.html#COPILOT_STATUS_DL":[2,1,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "paparazzi_messages.html#STEREO_IMG":[2,0,210],
 "paparazzi_messages.html#SUPERBITRF":[2,0,67],
 "paparazzi_messages.html#SURVEY":[2,0,23],
-"paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
-"paparazzi_messages.html#SVINFO":[2,0,21],
-"paparazzi_messages.html#SVSINFO":[2,2,15]
+"paparazzi_messages.html#SURVEY_STATUS":[2,2,29]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"exif__module_8c.html#af57f40e9a23ea780c767fa1a988006dc":[12,0,1,0,6,12,1,1,0,3],
+"exif__module_8c.html#af60698a090ba723f77589c838cf73465":[12,0,1,0,6,12,1,1,0,10],
 "exif__module_8c_source.html":[12,0,1,0,6,12,1,1,0],
 "exif__module_8h.html":[12,0,1,0,6,12,1,1,1],
 "exif__module_8h.html#a5e636f6bee9bd1ab6d04ec780509dca5":[12,0,1,0,6,12,1,1,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "fixedwing_2autopilot__utils_8h.html#a1c2e8ec07daf2aa0b8e54a832ea70139":[12,0,1,0,3,1,11,15],
 "fixedwing_2autopilot__utils_8h.html#a45f375d76e6c0adae829e1e848346fa6":[12,0,1,0,3,1,11,8],
 "fixedwing_2autopilot__utils_8h.html#a4eacd8f8f25b3b9d1c9bc6aa4720c09a":[12,0,1,0,3,1,11,2],
-"fixedwing_2autopilot__utils_8h.html#a7d56ec91e72fa7e7a0ec17604a598791":[12,0,1,0,3,1,11,11],
-"fixedwing_2autopilot__utils_8h.html#a906afae9b500e1c1c76e7af775a8f809":[12,0,1,0,3,1,11,9],
-"fixedwing_2autopilot__utils_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b":[12,0,1,0,3,1,11,10]
+"fixedwing_2autopilot__utils_8h.html#a7d56ec91e72fa7e7a0ec17604a598791":[12,0,1,0,3,1,11,11]
 };

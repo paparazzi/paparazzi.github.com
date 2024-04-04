@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_dummy.html#module_load_example__actuators_dummy":[1,8,0],
+"module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
 "module__actuators_esc32.html":[1,9],
 "module__actuators_esc32.html#module_load_example__actuators_esc32":[1,9,0],
 "module__actuators_esc32.html#module_xml__actuators_esc32":[1,9,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "module__baro_mpl3115.html#configuration__baro_mpl3115":[1,395,1],
 "module__baro_mpl3115.html#functions__baro_mpl3115":[1,395,2],
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,395,0],
-"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0],
-"module__baro_ms5534a.html":[1,386],
-"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1]
+"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0]
 };

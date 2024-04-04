@@ -166,6 +166,12 @@ d_rudder_d_pprz</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
+<a id="a8b34882fb9ea970442e99acc19d9dc32"></a>float</td>
+<td class="fieldname">
+DMdpprz_hover_roll[2]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
 <a id="ae8abb7feac6b1daa9815a23db45a27ff"></a>float</td>
 <td class="fieldname">
 hover_roll_pitch_coef[2]</td>
@@ -289,7 +295,7 @@ m</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00053">53</a> of file <a class="el" href="eff__scheduling__rot__wing_8h_source.html">eff_scheduling_rot_wing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00054">54</a> of file <a class="el" href="eff__scheduling__rot__wing_8h_source.html">eff_scheduling_rot_wing.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -308,6 +314,12 @@ airspeed2</td>
 <a id="a20e4d4c587b2149c93b29279e62eabd3"></a>float</td>
 <td class="fieldname">
 cmd_elevator</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8637165a00daea4ceb18743bdb8eb421"></a>float</td>
+<td class="fieldname">
+cmd_pusher</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -409,9 +421,9 @@ wing_rotation_rad</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00186">186</a> of file <a class="el" href="eff__scheduling__rot__wing_8c_source.html">eff_scheduling_rot_wing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00187">187</a> of file <a class="el" href="eff__scheduling__rot__wing_8c_source.html">eff_scheduling_rot_wing.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00074">rot_wing_eff_sched_var_t::airspeed</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00075">rot_wing_eff_sched_var_t::airspeed2</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00069">rot_wing_eff_sched_var_t::cmd_elevator</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00070">rot_wing_eff_sched_var_t::cmd_pusher_scaled</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00071">rot_wing_eff_sched_var_t::cmd_T_mean_scaled</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00058">rot_wing_eff_sched_var_t::cosr</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00060">rot_wing_eff_sched_var_t::cosr2</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00124">eff_sched_p</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00146">eff_sched_var</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00054">rot_wing_eff_sched_var_t::Ixx</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00032">rot_wing_eff_sched_param_t::Ixx_body</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00035">rot_wing_eff_sched_param_t::Ixx_wing</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00055">rot_wing_eff_sched_var_t::Iyy</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00033">rot_wing_eff_sched_param_t::Iyy_body</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00036">rot_wing_eff_sched_param_t::Iyy_wing</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00065">rot_wing_eff_sched_var_t::pitch_motor_dMdpprz</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00066">rot_wing_eff_sched_var_t::roll_motor_dMdpprz</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00059">rot_wing_eff_sched_var_t::sinr</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00061">rot_wing_eff_sched_var_t::sinr2</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00062">rot_wing_eff_sched_var_t::sinr3</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00172">wing_position_cb()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00170">wing_position_ev</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00167">WING_ROTATION_CAN_ROT_WING_ID</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00057">rot_wing_eff_sched_var_t::wing_rotation_deg</a>, and <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00056">rot_wing_eff_sched_var_t::wing_rotation_rad</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00076">rot_wing_eff_sched_var_t::airspeed</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00077">rot_wing_eff_sched_var_t::airspeed2</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00070">rot_wing_eff_sched_var_t::cmd_elevator</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00071">rot_wing_eff_sched_var_t::cmd_pusher</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00072">rot_wing_eff_sched_var_t::cmd_pusher_scaled</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00073">rot_wing_eff_sched_var_t::cmd_T_mean_scaled</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00059">rot_wing_eff_sched_var_t::cosr</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00061">rot_wing_eff_sched_var_t::cosr2</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00038">rot_wing_eff_sched_param_t::DMdpprz_hover_roll</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00124">eff_sched_p</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00147">eff_sched_var</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00055">rot_wing_eff_sched_var_t::Ixx</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00032">rot_wing_eff_sched_param_t::Ixx_body</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00035">rot_wing_eff_sched_param_t::Ixx_wing</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00056">rot_wing_eff_sched_var_t::Iyy</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00033">rot_wing_eff_sched_param_t::Iyy_body</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00036">rot_wing_eff_sched_param_t::Iyy_wing</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00066">rot_wing_eff_sched_var_t::pitch_motor_dMdpprz</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00067">rot_wing_eff_sched_var_t::roll_motor_dMdpprz</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00060">rot_wing_eff_sched_var_t::sinr</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00062">rot_wing_eff_sched_var_t::sinr2</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00063">rot_wing_eff_sched_var_t::sinr3</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00173">wing_position_cb()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00171">wing_position_ev</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00168">WING_ROTATION_CAN_ROT_WING_ID</a>, <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00058">rot_wing_eff_sched_var_t::wing_rotation_deg</a>, and <a class="el" href="eff__scheduling__rot__wing_8h_source.html#l00057">rot_wing_eff_sched_var_t::wing_rotation_rad</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -442,9 +454,9 @@ wing_rotation_rad</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00214">214</a> of file <a class="el" href="eff__scheduling__rot__wing_8c_source.html">eff_scheduling_rot_wing.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00216">216</a> of file <a class="el" href="eff__scheduling__rot__wing_8c_source.html">eff_scheduling_rot_wing.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00373">eff_scheduling_rot_wing_schedule_liftd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00342">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00266">eff_scheduling_rot_wing_update_airspeed()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00258">eff_scheduling_rot_wing_update_cmd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00306">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00350">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00274">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00248">eff_scheduling_rot_wing_update_MMOI()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00358">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00324">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, and <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00233">eff_scheduling_rot_wing_update_wing_angle()</a>.</p>
+<p class="reference">References <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00384">eff_scheduling_rot_wing_schedule_liftd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00353">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00269">eff_scheduling_rot_wing_update_airspeed()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00260">eff_scheduling_rot_wing_update_cmd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00317">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00361">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00277">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00250">eff_scheduling_rot_wing_update_MMOI()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00369">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00335">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, and <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00235">eff_scheduling_rot_wing_update_wing_angle()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -549,7 +561,7 @@ wing_rotation_rad</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="eff__scheduling__rot__wing_8h.html">eff_scheduling_rot_wing.h</a></li>
-    <li class="footer">Generated on Wed Apr 3 2024 13:06:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 08:59:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

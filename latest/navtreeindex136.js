@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,333,1],
+"module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,333,0],
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,333,2,0],
 "module__nav_rover_base.html":[1,334],
 "module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,334,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "module__range_forcefield.html":[1,490],
 "module__range_forcefield.html#configuration__range_forcefield":[1,490,1],
 "module__range_forcefield.html#functions__range_forcefield":[1,490,2],
-"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0],
-"module__range_forcefield.html#module_xml__range_forcefield":[1,490,2,0],
-"module__range_sensor_uavcan.html":[1,412]
+"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0]
 };

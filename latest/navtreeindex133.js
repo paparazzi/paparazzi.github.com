@@ -1,5 +1,7 @@
 var NAVTREEINDEX133 =
 {
+"module__gps_piksi.html#module_load_example__gps_piksi":[1,158,0],
+"module__gps_piksi.html#module_xml__gps_piksi":[1,158,2,0],
 "module__gps_sim.html":[1,159],
 "module__gps_sim.html#functions__gps_sim":[1,159,1],
 "module__gps_sim.html#module_load_example__gps_sim":[1,159,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_common.html#module_xml__imu_common":[1,198,2,0],
 "module__imu_cube.html":[1,199],
 "module__imu_cube.html#functions__imu_cube":[1,199,1],
-"module__imu_cube.html#module_load_example__imu_cube":[1,199,0],
-"module__imu_cube.html#module_xml__imu_cube":[1,199,1,0],
-"module__imu_disco.html":[1,200]
+"module__imu_cube.html#module_load_example__imu_cube":[1,199,0]
 };

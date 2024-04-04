@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"module__baro_ms5534a.html":[1,386],
+"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1],
 "module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,386,0],
 "module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,386,1,0],
 "module__baro_ms5611_i2c.html":[1,396],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,132,2],
 "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,132,0],
 "module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,132,3,0],
-"module__digital_cam_pprzlink.html":[1,133],
-"module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink":[1,133,2],
-"module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink":[1,133,1]
+"module__digital_cam_pprzlink.html":[1,133]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX132 =
 {
+"module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink":[1,133,2],
+"module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink":[1,133,1],
 "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink":[1,133,0],
 "module__digital_cam_pprzlink.html#module_xml__digital_cam_pprzlink":[1,133,2,0],
 "module__digital_cam_servo.html":[1,134],
@@ -247,7 +249,5 @@ var NAVTREEINDEX132 =
 "module__gps_optitrack.html#module_xml__gps_optitrack":[1,157,0,0],
 "module__gps_piksi.html":[1,158],
 "module__gps_piksi.html#configuration__gps_piksi":[1,158,1],
-"module__gps_piksi.html#functions__gps_piksi":[1,158,2],
-"module__gps_piksi.html#module_load_example__gps_piksi":[1,158,0],
-"module__gps_piksi.html#module_xml__gps_piksi":[1,158,2,0]
+"module__gps_piksi.html#functions__gps_piksi":[1,158,2]
 };

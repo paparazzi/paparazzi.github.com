@@ -1,5 +1,7 @@
 var NAVTREEINDEX154 =
 {
+"navstik__1_80_8h.html#a01f35b990dd64f2a26f879a0757dea09":[12,0,1,0,1,48,73],
+"navstik__1_80_8h.html#a0510f76eb567391e9c3e4185cc695628":[12,0,1,0,1,48,20],
 "navstik__1_80_8h.html#a0586532d3b207eaa44f525856e359f1d":[12,0,1,0,1,48,4],
 "navstik__1_80_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a":[12,0,1,0,1,48,76],
 "navstik__1_80_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b":[12,0,1,0,1,48,54],
@@ -247,7 +249,5 @@ var NAVTREEINDEX154 =
 "naze32__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b":[12,0,1,0,1,49,8],
 "naze32__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f":[12,0,1,0,1,49,71],
 "naze32__common_8h.html#ae009e78fb9bed3f572cc2ddcf7d01012":[12,0,1,0,1,49,87],
-"naze32__common_8h.html#ae10dee273909cfd97fce818474ddf186":[12,0,1,0,1,49,4],
-"naze32__common_8h.html#ae40a4e27a94283e513359632ceea8de0":[12,0,1,0,1,49,34],
-"naze32__common_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a":[12,0,1,0,1,49,102]
+"naze32__common_8h.html#ae10dee273909cfd97fce818474ddf186":[12,0,1,0,1,49,4]
 };

@@ -231,8 +231,9 @@ Functions</h2></td></tr>
 <tr class="separator:aa20c753face711591a2a4eba30a7a635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c932bd9792806ff65ff3ca266f410b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b">stabilization_indi_rate_run</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> rate_sp, bool in_flight)</td></tr>
 <tr class="separator:a83c932bd9792806ff65ff3ca266f410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8d2fff75cab722278e60e10b36dff9"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a5e8d2fff75cab722278e60e10b36dff9">stabilization_indi_set_wls_settings</a> (float <a class="el" href="oneloop__andi_8c.html#abc84b72941fee1e2c41ab59d424df24e">use_increment</a>)</td></tr>
-<tr class="separator:a5e8d2fff75cab722278e60e10b36dff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2">stabilization_indi_set_wls_settings</a> (void)</td></tr>
+<tr class="memdesc:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that sets the du_min, du_max and du_pref if function not elsewhere defined.  <a href="stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2">More...</a><br /></td></tr>
+<tr class="separator:a28a3aa7ed36fb838f27a1d7533793ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32497fd2d2c56c87a83bddb1f7b62fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8">stabilization_indi_attitude_run</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> quat_sp, bool in_flight)</td></tr>
 <tr class="separator:a32497fd2d2c56c87a83bddb1f7b62fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12143cafcad8c2db6f07b2cc072851d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a12143cafcad8c2db6f07b2cc072851d5">stabilization_indi_read_rc</a> (bool in_flight, bool in_carefree, bool coordinated_turn)</td></tr>
@@ -243,12 +244,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a2e3e00bc03d8662b8b316513dbf78096"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a2e3e00bc03d8662b8b316513dbf78096">du_min_stab_indi</a> [INDI_NUM_ACT]</td></tr>
-<tr class="separator:a2e3e00bc03d8662b8b316513dbf78096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1e8adc7fab8f7ec8d54243d33ae1a9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a5d1e8adc7fab8f7ec8d54243d33ae1a9">du_max_stab_indi</a> [INDI_NUM_ACT]</td></tr>
-<tr class="separator:a5d1e8adc7fab8f7ec8d54243d33ae1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40f6f72d93a89227d37a7b1753e84728"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a40f6f72d93a89227d37a7b1753e84728">du_pref_stab_indi</a> [INDI_NUM_ACT]</td></tr>
-<tr class="separator:a40f6f72d93a89227d37a7b1753e84728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf96e7b61db53738987e9fb9d5c4d40"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a1bf96e7b61db53738987e9fb9d5c4d40">u_min_stab_indi</a> [INDI_NUM_ACT]</td></tr>
+<tr class="separator:a1bf96e7b61db53738987e9fb9d5c4d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e72c194dd0e8195c9a54998f7c174e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a4e72c194dd0e8195c9a54998f7c174e7">u_max_stab_indi</a> [INDI_NUM_ACT]</td></tr>
+<tr class="separator:a4e72c194dd0e8195c9a54998f7c174e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875453c949e1d95c4be77b9dd151334c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a875453c949e1d95c4be77b9dd151334c">u_pref_stab_indi</a> [INDI_NUM_ACT]</td></tr>
+<tr class="separator:a875453c949e1d95c4be77b9dd151334c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44b57fc0adf11ab14e901f470cf5c1e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#ae44b57fc0adf11ab14e901f470cf5c1e">indi_v</a> [INDI_OUTPUTS]</td></tr>
 <tr class="separator:ae44b57fc0adf11ab14e901f470cf5c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1953a1d7093d5fe41c2a4361577a837a"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a1953a1d7093d5fe41c2a4361577a837a">Bwls</a> [INDI_OUTPUTS]</td></tr>
@@ -278,6 +279,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a4ab8eb217dc373419dff7079543da047"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">indi_Wu</a> [INDI_NUM_ACT] = {[0 ... INDI_NUM_ACT - 1] = 1.0}</td></tr>
 <tr class="memdesc:a4ab8eb217dc373419dff7079543da047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weighting of different actuators in the cost function.  <a href="stabilization__indi_8c.html#a4ab8eb217dc373419dff7079543da047">More...</a><br /></td></tr>
 <tr class="separator:a4ab8eb217dc373419dff7079543da047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b259b8bcede01f9497459615608d78"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#aa9b259b8bcede01f9497459615608d78">stablization_indi_yaw_dist_limit</a> = 99999.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
+<tr class="memdesc:aa9b259b8bcede01f9497459615608d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limit the maximum specific moment that can be compensated (units rad/s^2)  <a href="stabilization__indi_8c.html#aa9b259b8bcede01f9497459615608d78">More...</a><br /></td></tr>
+<tr class="separator:aa9b259b8bcede01f9497459615608d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadec734a354c9ca37ceea556f59bcf8c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#aadec734a354c9ca37ceea556f59bcf8c">actuator_state_filt_vect</a> [INDI_NUM_ACT]</td></tr>
 <tr class="separator:aadec734a354c9ca37ceea556f59bcf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab20efc1eb71ca63097c48064b053f8d4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#ab20efc1eb71ca63097c48064b053f8d4">angular_accel_ref</a> = {0., 0., 0.}</td></tr>
@@ -290,10 +294,8 @@ Variables</h2></td></tr>
 <tr class="separator:acfcdbf1eececffcd6894a5115fb7f175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed042e627d7cf7c6e7c6cdfe931ba077"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#aed042e627d7cf7c6e7c6cdfe931ba077">indi_u</a> [INDI_NUM_ACT]</td></tr>
 <tr class="separator:aed042e627d7cf7c6e7c6cdfe931ba077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce24724cf3afefacb13f024ffeabb1e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#afce24724cf3afefacb13f024ffeabb1e">indi_du</a> [INDI_NUM_ACT]</td></tr>
-<tr class="separator:afce24724cf3afefacb13f024ffeabb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2dddd155320f8b4659819063eb894fc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#ac2dddd155320f8b4659819063eb894fc">g2_times_du</a></td></tr>
-<tr class="separator:ac2dddd155320f8b4659819063eb894fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d85604a5084e7824f4a74c24c6ed42"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#aa3d85604a5084e7824f4a74c24c6ed42">rate_vect_prev</a> [3] = {0., 0., 0.}</td></tr>
+<tr class="separator:aa3d85604a5084e7824f4a74c24c6ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ac8c1bac787aa8dd5ac7cedf7df8c4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a5ac8c1bac787aa8dd5ac7cedf7df8c4e">q_filt</a> = 0.0</td></tr>
 <tr class="separator:a5ac8c1bac787aa8dd5ac7cedf7df8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac9ff1a86e6ed214eb20621f830265c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__indi_8c.html#a4ac9ff1a86e6ed214eb20621f830265c">r_filt</a> = 0.0</td></tr>
@@ -507,11 +509,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l01068">1068</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l01085">1085</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00274">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00276">g1_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00277">g2_init</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00049">INDI_ALLOWED_G_FACTOR</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00282">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00284">g1_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00283">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00285">g2_init</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00049">INDI_ALLOWED_G_FACTOR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -586,11 +588,11 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that calculates an element of the G1 matrix. The elements are stored in a different matrix, because the old matrix is necessary to caclulate more elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00875">875</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00892">892</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00220">du_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00274">g1_est</a>, and <a class="el" href="nps__fdm__rover_8c_source.html#l00060">mu</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00228">du_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00282">g1_est</a>, and <a class="el" href="nps__fdm__rover_8c_source.html#l00060">mu</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -658,11 +660,11 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that calculates an element of the G2 matrix. The elements are stored in a different matrix, because the old matrix is necessary to caclulate more elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00889">889</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00906">906</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00221">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g2_est</a>, and <a class="el" href="nps__fdm__rover_8c_source.html#l00060">mu</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00229">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00283">g2_est</a>, and <a class="el" href="nps__fdm__rover_8c_source.html#l00060">mu</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -708,11 +710,11 @@ Variables</h2></td></tr>
 <p>Function that tries to get actuator feedback. </p>
 <p>If this is not available it will use a first order filter to approximate the actuator state. It is also possible to model rate limits (unit: PPRZ/loop cycle) </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00839">839</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00856">856</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00177">act_dyn_discrete</a>, <a class="el" href="stabilization__indi_8c_source.html#l00229">act_obs</a>, <a class="el" href="stabilization__indi_8c_source.html#l00205">actuator_state</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00206">indi_u</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00038">UNUSED</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00177">act_dyn_discrete</a>, <a class="el" href="stabilization__indi_8c_source.html#l00237">act_obs</a>, <a class="el" href="stabilization__indi_8c_source.html#l00214">actuator_state</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00215">indi_u</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00038">UNUSED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -759,11 +761,11 @@ Variables</h2></td></tr>
 
 <p>Function that resets the filters to zeros. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00436">436</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00446">446</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00283">acceleration_lowpass_filter</a>, <a class="el" href="stabilization__indi_8c_source.html#l00279">actuator_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00280">estimation_input_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00282">estimation_output_lowpass_filters</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00057">init_first_order_low_pass()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00281">measurement_lowpass_filters</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__indi_8c_source.html#l00287">rates_filt_fo</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00078">STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00057">STABILIZATION_INDI_FILT_CUTOFF</a>, <a class="el" href="stabilization__indi_8c_source.html#l00054">STABILIZATION_INDI_FILT_CUTOFF_P</a>, <a class="el" href="stabilization__indi_8c_source.html#l00060">STABILIZATION_INDI_FILT_CUTOFF_Q</a>, <a class="el" href="stabilization__indi_8c_source.html#l00066">STABILIZATION_INDI_FILT_CUTOFF_R</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00291">acceleration_lowpass_filter</a>, <a class="el" href="stabilization__indi_8c_source.html#l00287">actuator_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00288">estimation_input_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00290">estimation_output_lowpass_filters</a>, <a class="el" href="low__pass__filter_8h_source.html#l00280">init_butterworth_2_low_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00057">init_first_order_low_pass()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00289">measurement_lowpass_filters</a>, <a class="el" href="ins__alt__float_8c_source.html#l00257">p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__indi_8c_source.html#l00295">rates_filt_fo</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00078">STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00057">STABILIZATION_INDI_FILT_CUTOFF</a>, <a class="el" href="stabilization__indi_8c_source.html#l00054">STABILIZATION_INDI_FILT_CUTOFF_P</a>, <a class="el" href="stabilization__indi_8c_source.html#l00060">STABILIZATION_INDI_FILT_CUTOFF_Q</a>, <a class="el" href="stabilization__indi_8c_source.html#l00066">STABILIZATION_INDI_FILT_CUTOFF_R</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -820,11 +822,11 @@ Variables</h2></td></tr>
 <p>Function that estimates the control effectiveness of each actuator online. </p>
 <p>It is assumed that disturbances do not play a large role. All elements of the G1 and G2 matrices are be estimated. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00899">899</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00916">916</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00283">acceleration_lowpass_filter</a>, <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="stabilization__indi_8c_source.html#l00216">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00217">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00289">body_accel_f</a>, <a class="el" href="stabilization__indi_8c_source.html#l01068">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00875">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00889">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00221">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00220">du_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00219">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00591">float_vect_smul()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00267">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00274">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00257">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00224">mu1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">mu2</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="state_8h_source.html#l00953">stateGetAccelBody_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00982">sum_g1_g2()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00291">acceleration_lowpass_filter</a>, <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="stabilization__indi_8c_source.html#l00224">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00297">body_accel_f</a>, <a class="el" href="stabilization__indi_8c_source.html#l01085">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00892">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00906">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00229">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00228">du_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00227">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00591">float_vect_smul()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00282">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00265">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00283">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00232">mu1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00234">mu2</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="state_8h_source.html#l00953">stateGetAccelBody_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00999">sum_g1_g2()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -895,11 +897,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00310">310</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00318">318</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>, and <a class="el" href="state_8h_source.html#l01113">stateGetNedToBodyQuat_i()</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>, and <a class="el" href="state_8h_source.html#l01113">stateGetNedToBodyQuat_i()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -964,11 +966,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00324">324</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00332">332</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00202">angular_accel_ref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00204">angular_acceleration</a>, <a class="el" href="stabilization__indi_8c_source.html#l00203">angular_rate_ref</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00206">indi_u</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00211">angular_accel_ref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00213">angular_acceleration</a>, <a class="el" href="stabilization__indi_8c_source.html#l00212">angular_rate_ref</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00215">indi_u</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, and <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1029,11 +1031,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00296">296</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00304">304</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00273">g1g2</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00275">g2_est</a>.</p>
+<p class="reference">References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00074">dev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00281">g1g2</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00283">g2_est</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -1082,9 +1084,9 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that should be called to run the INDI controller </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00769">769</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00786">786</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00203">angular_rate_ref</a>, <a class="el" href="stabilization__indi_8h_source.html#l00056">Indi_gains::att</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00358">float_quat_inv_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00634">float_quat_tilt_twist()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00125">indi_gains</a>, <a class="el" href="stabilization__indi_8c_source.html#l00254">indi_thrust_increment_set</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra_8h_source.html#l00745">QUAT_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__indi_8h_source.html#l00057">Indi_gains::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="stabilization__indi_8c_source.html#l00237">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00212">angular_rate_ref</a>, <a class="el" href="stabilization__indi_8h_source.html#l00056">Indi_gains::att</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00358">float_quat_inv_comp_norm_shortest()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00634">float_quat_tilt_twist()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00125">indi_gains</a>, <a class="el" href="stabilization__indi_8c_source.html#l00262">indi_thrust_increment_set</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra_8h_source.html#l00745">QUAT_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__indi_8h_source.html#l00057">Indi_gains::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="stabilization__indi_8c_source.html#l00245">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, <a class="el" href="state_8h_source.html#l01131">stateGetNedToBodyQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00070">stabilization_attitude_run()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1094,56 +1096,56 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__indi_8c_a32497fd2d2c56c87a83bddb1f7b62fa8_cgraph.png" border="0" usemap="#astabilization__indi_8c_a32497fd2d2c56c87a83bddb1f7b62fa8_cgraph" alt=""/></div>
 <map name="astabilization__indi_8c_a32497fd2d2c56c87a83bddb1f7b62fa8_cgraph" id="astabilization__indi_8c_a32497fd2d2c56c87a83bddb1f7b62fa8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,323,139,365"/>
-<area shape="rect" href="group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="443,46,600,87"/>
-<area shape="rect" href="group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7" title="Tilt twist decomposition of a quaternion (z axis)" alt="" coords="209,163,359,189"/>
-<area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="217,491,351,533"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="187,760,381,787"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="676,56,833,83"/>
-<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="675,111,834,137"/>
-<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="661,5,848,32"/>
-<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="913,111,1041,137"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="455,163,587,189"/>
-<area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="455,213,587,240"/>
-<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="429,549,613,576"/>
-<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="693,549,817,576"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="461,264,582,291"/>
-<area shape="rect" href="stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0" title="Function that tries to get actuator feedback." alt="" coords="449,600,593,627"/>
-<area shape="rect" href="stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="460,701,583,728"/>
-<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="679,905,830,946"/>
-<area shape="rect" href="stabilization__indi_8c.html#a5e8d2fff75cab722278e60e10b36dff9" title=" " alt="" coords="453,315,590,357"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="441,381,601,408"/>
-<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="451,433,591,474"/>
-<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="480,499,563,525"/>
-<area shape="rect" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45" title=" " alt="" coords="699,752,810,779"/>
-<area shape="rect" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca" title=" " alt="" coords="689,803,821,829"/>
-<area shape="rect" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326" title=" " alt="" coords="689,853,821,880"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="692,600,817,627"/>
-<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="676,651,833,677"/>
-<area shape="rect" href="stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2" title="Function that sums g1 and g2 to obtain the g1g2 matrix It also undoes the scaling that was done to ma..." alt="" coords="707,701,803,728"/>
-<area shape="rect" href="low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value." alt="" coords="896,905,1057,946"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="681,323,828,349"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="901,323,1053,349"/>
-<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="672,381,837,408"/>
-<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="686,499,823,525"/>
-<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="938,499,1015,525"/>
-<area shape="rect" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title=" " alt="" coords="1145,423,1199,449"/>
-<area shape="rect" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title=" " alt="" coords="1127,473,1217,500"/>
-<area shape="rect" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af" title=" " alt="" coords="1119,524,1225,551"/>
-<area shape="rect" href="r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6" title=" " alt="" coords="1105,575,1239,601"/>
-<area shape="rect" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149" title=" " alt="" coords="1287,448,1353,475"/>
-<area shape="rect" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1" title=" " alt="" coords="1289,397,1351,424"/>
-<area shape="rect" href="qr__solve_8c.html#afaa40152476be17052f2c425914e744e" title=" " alt="" coords="1401,448,1460,475"/>
-<area shape="rect" href="r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca" title=" " alt="" coords="1508,499,1575,525"/>
-<area shape="rect" href="qr__solve_8c.html#aa1ea50a6db5ef08ed0c3617d761efe97" title=" " alt="" coords="1510,397,1573,424"/>
-<area shape="rect" href="qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135" title=" " alt="" coords="1516,347,1567,373"/>
-<area shape="rect" href="qr__solve_8c.html#adb1d7ac5915e3af7d8034232eb1b587d" title=" " alt="" coords="1509,549,1573,576"/>
-<area shape="rect" href="qr__solve_8c.html#ab1b00af76b78908d5f012c3023e8690f" title=" " alt="" coords="1513,448,1569,475"/>
-<area shape="rect" href="qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902" title=" " alt="" coords="1403,397,1458,424"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="442,887,601,913"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="673,971,837,997"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="899,971,1054,997"/>
-<area shape="rect" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix." alt="" coords="904,1021,1049,1048"/>
+<area shape="rect" title=" " alt="" coords="5,334,139,375"/>
+<area shape="rect" href="group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization." alt="" coords="443,47,600,89"/>
+<area shape="rect" href="group__math__algebra__float.html#gac82a112d67cbf3ca72e363790b6518f7" title="Tilt twist decomposition of a quaternion (z axis)" alt="" coords="209,164,359,191"/>
+<area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="217,537,351,578"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="187,821,381,848"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="676,5,833,32"/>
+<area shape="rect" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title=" " alt="" coords="675,109,834,136"/>
+<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="661,56,848,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title=" " alt="" coords="949,109,1077,136"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title=" " alt="" coords="455,164,587,191"/>
+<area shape="rect" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion." alt="" coords="455,215,587,241"/>
+<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="429,265,613,292"/>
+<area shape="rect" href="group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83" title="o = a * b" alt="" coords="446,316,597,343"/>
+<area shape="rect" href="group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd" title="o = a &#45; b" alt="" coords="464,367,579,393"/>
+<area shape="rect" href="group__math__algebra__float.html#ga88cf94d472e697d43c56185cf80a300c" title="a.b" alt="" coords="436,417,607,444"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="461,468,582,495"/>
+<area shape="rect" href="stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0" title="Function that tries to get actuator feedback." alt="" coords="449,519,593,545"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="502,785,541,812"/>
+<area shape="rect" href="stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="460,569,583,596"/>
+<area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="679,618,830,659"/>
+<area shape="rect" href="stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2" title="Function that sets the du_min, du_max and du_pref if function not elsewhere defined." alt="" coords="453,837,590,878"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="441,903,601,929"/>
+<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="451,954,591,995"/>
+<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="480,1049,563,1076"/>
+<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="693,263,817,289"/>
+<area shape="rect" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="721,684,788,711"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="674,735,835,761"/>
+<area shape="rect" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="721,785,788,812"/>
+<area shape="rect" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="685,887,824,913"/>
+<area shape="rect" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="719,836,790,863"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="713,937,797,964"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="694,988,815,1015"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="896,735,1129,761"/>
+<area shape="rect" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="933,785,1093,812"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="961,836,1064,863"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="946,887,1079,913"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="905,937,1121,964"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="957,988,1069,1015"/>
+<area shape="rect" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45" title=" " alt="" coords="699,313,810,340"/>
+<area shape="rect" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca" title=" " alt="" coords="689,364,821,391"/>
+<area shape="rect" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326" title=" " alt="" coords="689,415,821,441"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="692,465,817,492"/>
+<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="676,516,833,543"/>
+<area shape="rect" href="stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2" title="Function that sums g1 and g2 to obtain the g1g2 matrix It also undoes the scaling that was done to ma..." alt="" coords="707,567,803,593"/>
+<area shape="rect" href="low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value." alt="" coords="932,618,1093,659"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="681,1039,828,1065"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="672,1089,837,1116"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="686,1140,823,1167"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="442,1160,601,1187"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title=" " alt="" coords="673,1191,837,1217"/>
 </map>
 </div>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1179,9 +1181,9 @@ Variables</h2></td></tr>
 <p>Function that resets important values upon engaging INDI. </p>
 <p>Don't reset inputs and filters, because it is unlikely to switch stabilization in flight, and there are multiple modes that use (the same) stabilization. Resetting the controller is not so nice when you are flying. FIXME: Ideally we should detect when coming from something that is not INDI </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00424">424</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00432">432</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00221">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00220">du_estimation</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00235">stab_att_sp_euler</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00130">stabilization_attitude_get_heading_i()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00229">ddu_estimation</a>, <a class="el" href="stabilization__indi_8c_source.html#l00228">du_estimation</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00216">rate_vect_prev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00243">stab_att_sp_euler</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00130">stabilization_attitude_get_heading_i()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00040">stabilization_attitude_enter()</a>, and <a class="el" href="stabilization__rate__indi_8c_source.html#l00107">stabilization_rate_enter()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1234,9 +1236,9 @@ Variables</h2></td></tr>
 
 <p>Function that initializes important values upon engaging INDI. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00351">351</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00359">359</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00177">act_dyn_discrete</a>, <a class="el" href="throttle__curve_8c_source.html#l00110">act_feedback_cb()</a>, <a class="el" href="pfc__actuators_8c_source.html#l00105">act_feedback_ev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00176">act_first_order_cutoff</a>, <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00157">act_is_thruster_x</a>, <a class="el" href="stabilization__indi_8c_source.html#l00160">act_is_thruster_z</a>, <a class="el" href="stabilization__indi_8c_source.html#l00201">actuator_state_filt_vect</a>, <a class="el" href="stabilization__indi_8c_source.html#l00216">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00217">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00112">Bwls</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="stabilization__indi_8c_source.html#l00218">estimation_rate_d</a>, <a class="el" href="stabilization__indi_8c_source.html#l00219">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00267">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00274">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00276">g1_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00273">g1g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00257">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00277">g2_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00232">num_thrusters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00233">num_thrusters_x</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00310">send_ahrs_ref_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00324">send_att_full_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00296">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00982">sum_g1_g2()</a>, <a class="el" href="stabilization__indi_8c.html#a776faa8d6633f474494b56242c05e404">thrust_cb()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00251">thrust_ev</a>, and <a class="el" href="abi__sender__ids_8h_source.html#l00494">THRUST_INCREMENT_ID</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00177">act_dyn_discrete</a>, <a class="el" href="throttle__curve_8c_source.html#l00110">act_feedback_cb()</a>, <a class="el" href="pfc__actuators_8c_source.html#l00105">act_feedback_ev</a>, <a class="el" href="stabilization__indi_8c_source.html#l00176">act_first_order_cutoff</a>, <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00157">act_is_thruster_x</a>, <a class="el" href="stabilization__indi_8c_source.html#l00160">act_is_thruster_z</a>, <a class="el" href="stabilization__indi_8c_source.html#l00210">actuator_state_filt_vect</a>, <a class="el" href="stabilization__indi_8c_source.html#l00224">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00112">Bwls</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">estimation_rate_d</a>, <a class="el" href="stabilization__indi_8c_source.html#l00227">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00275">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00282">g1_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00284">g1_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00281">g1g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00265">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00283">g2_est</a>, <a class="el" href="stabilization__indi_8c_source.html#l00285">g2_init</a>, <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00240">num_thrusters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00241">num_thrusters_x</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00318">send_ahrs_ref_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00332">send_att_full_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00304">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00999">sum_g1_g2()</a>, <a class="el" href="stabilization__indi_8c.html#a776faa8d6633f474494b56242c05e404">thrust_cb()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00259">thrust_ev</a>, and <a class="el" href="abi__sender__ids_8h_source.html#l00494">THRUST_INCREMENT_ID</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1306,11 +1308,11 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that calculates the INDI commands </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00555">555</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00565">565</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00157">act_is_thruster_x</a>, <a class="el" href="stabilization__indi_8c_source.html#l00160">act_is_thruster_z</a>, <a class="el" href="stabilization__indi_8c_source.html#l00279">actuator_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00205">actuator_state</a>, <a class="el" href="stabilization__indi_8c_source.html#l00201">actuator_state_filt_vect</a>, <a class="el" href="stabilization__indi_8c_source.html#l00216">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00217">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00202">angular_accel_ref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00204">angular_acceleration</a>, <a class="el" href="autopilot_8c_source.html#l00290">autopilot_get_motors_on()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00112">Bwls</a>, <a class="el" href="stabilization__indi_8c_source.html#l00109">du_max_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00108">du_min_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00110">du_pref_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00280">estimation_input_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00282">estimation_output_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00218">estimation_rate_d</a>, <a class="el" href="stabilization__indi_8c_source.html#l00219">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00549">float_vect_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00556">float_vect_sum()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00256">g1g2_pseudo_inv</a>, <a class="el" href="stabilization__indi_8c_source.html#l00257">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00208">g2_times_du</a>, <a class="el" href="stabilization__indi_8c_source.html#l00839">get_actuator_state()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00207">indi_du</a>, <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>, <a class="el" href="stabilization__indi_8c_source.html#l00125">indi_gains</a>, <a class="el" href="stabilization__indi_8c_source.html#l00253">indi_thrust_increment</a>, <a class="el" href="stabilization__indi_8c_source.html#l00254">indi_thrust_increment_set</a>, <a class="el" href="stabilization__indi_8c_source.html#l00206">indi_u</a>, <a class="el" href="stabilization__indi_8c_source.html#l00141">indi_use_adaptive</a>, <a class="el" href="stabilization__indi_8c_source.html#l00111">indi_v</a>, <a class="el" href="stabilization__indi_8c_source.html#l00197">indi_Wu</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__indi_8c_source.html#l00281">measurement_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00113">num_iter</a>, <a class="el" href="stabilization__indi_8c_source.html#l00232">num_thrusters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00233">num_thrusters_x</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="stabilization__indi_8h_source.html#l00057">Indi_gains::rate</a>, <a class="el" href="stabilization__indi_8c_source.html#l00287">rates_filt_fo</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00071">update_first_order_low_pass()</a>, <a class="el" href="oneloop__andi_8c_source.html#l00409">use_increment</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, <a class="el" href="wls__alloc_8c_source.html#l00108">wls_alloc()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00187">Wv</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00157">act_is_thruster_x</a>, <a class="el" href="stabilization__indi_8c_source.html#l00160">act_is_thruster_z</a>, <a class="el" href="stabilization__indi_8c_source.html#l00287">actuator_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00214">actuator_state</a>, <a class="el" href="stabilization__indi_8c_source.html#l00210">actuator_state_filt_vect</a>, <a class="el" href="stabilization__indi_8c_source.html#l00224">actuator_state_filt_vectd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00225">actuator_state_filt_vectdd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00211">angular_accel_ref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00213">angular_acceleration</a>, <a class="el" href="autopilot_8c_source.html#l00290">autopilot_get_motors_on()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00112">Bwls</a>, <a class="el" href="stabilization__indi_8c_source.html#l00288">estimation_input_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00290">estimation_output_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00226">estimation_rate_d</a>, <a class="el" href="stabilization__indi_8c_source.html#l00227">estimation_rate_dd</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00785">float_mat_vect_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00563">float_vect_diff()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00623">float_vect_dot_product()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00542">float_vect_zero()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00264">g1g2_pseudo_inv</a>, <a class="el" href="stabilization__indi_8c_source.html#l00265">g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00856">get_actuator_state()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00159">if()</a>, <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>, <a class="el" href="stabilization__indi_8c_source.html#l00125">indi_gains</a>, <a class="el" href="stabilization__indi_8c_source.html#l00261">indi_thrust_increment</a>, <a class="el" href="stabilization__indi_8c_source.html#l00262">indi_thrust_increment_set</a>, <a class="el" href="stabilization__indi_8c_source.html#l00215">indi_u</a>, <a class="el" href="stabilization__indi_8c_source.html#l00141">indi_use_adaptive</a>, <a class="el" href="stabilization__indi_8c_source.html#l00111">indi_v</a>, <a class="el" href="stabilization__indi_8c_source.html#l00197">indi_Wu</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__indi_8c_source.html#l00289">measurement_lowpass_filters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00113">num_iter</a>, <a class="el" href="stabilization__indi_8c_source.html#l00240">num_thrusters</a>, <a class="el" href="stabilization__indi_8c_source.html#l00241">num_thrusters_x</a>, <a class="el" href="low__pass__filter_8h_source.html#l00140">SecondOrderLowPass::o</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="stabilization__indi_8h_source.html#l00057">Indi_gains::rate</a>, <a class="el" href="stabilization__indi_8c_source.html#l00295">rates_filt_fo</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00206">stablization_indi_yaw_dist_limit</a>, <a class="el" href="state_8h_source.html#l01200">stateGetBodyRates_f()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00109">u_max_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00108">u_min_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00110">u_pref_stab_indi</a>, <a class="el" href="low__pass__filter_8h_source.html#l00291">update_butterworth_2_low_pass()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00071">update_first_order_low_pass()</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, <a class="el" href="wls__alloc_8c_source.html#l00108">wls_alloc()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00187">Wv</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00769">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__rate__indi_8c_source.html#l00164">stabilization_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00786">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__rate__indi_8c_source.html#l00164">stabilization_rate_run()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -1318,45 +1320,56 @@ Variables</h2></td></tr>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__indi_8c_a83c932bd9792806ff65ff3ca266f410b_cgraph.png" border="0" usemap="#astabilization__indi_8c_a83c932bd9792806ff65ff3ca266f410b_cgraph" alt=""/></div>
 <map name="astabilization__indi_8c_a83c932bd9792806ff65ff3ca266f410b_cgraph" id="astabilization__indi_8c_a83c932bd9792806ff65ff3ca266f410b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,277,139,318"/>
-<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="187,56,371,83"/>
-<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="439,5,563,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="218,309,339,336"/>
-<area shape="rect" href="stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0" title="Function that tries to get actuator feedback." alt="" coords="207,157,351,184"/>
-<area shape="rect" href="stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="217,208,340,235"/>
+<area shape="rect" title=" " alt="" coords="5,302,139,343"/>
+<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="187,5,371,32"/>
+<area shape="rect" href="group__math__algebra__float.html#ga51d4918e372875631e37401779d07b83" title="o = a * b" alt="" coords="203,56,354,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gaa33d68b46bc4922889e1fc931c6318fd" title="o = a &#45; b" alt="" coords="221,107,336,133"/>
+<area shape="rect" href="group__math__algebra__float.html#ga88cf94d472e697d43c56185cf80a300c" title="a.b" alt="" coords="193,157,364,184"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="218,208,339,235"/>
+<area shape="rect" href="stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0" title="Function that tries to get actuator feedback." alt="" coords="207,259,351,285"/>
+<area shape="rect" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c" title=" " alt="" coords="259,528,298,555"/>
+<area shape="rect" href="stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online." alt="" coords="217,309,340,336"/>
 <area shape="rect" href="low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="426,361,577,402"/>
-<area shape="rect" href="stabilization__indi_8c.html#a5e8d2fff75cab722278e60e10b36dff9" title=" " alt="" coords="210,361,347,402"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="199,427,359,453"/>
-<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="209,478,349,519"/>
-<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="237,544,320,571"/>
-<area shape="rect" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45" title=" " alt="" coords="446,259,557,285"/>
-<area shape="rect" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca" title=" " alt="" coords="435,309,567,336"/>
-<area shape="rect" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326" title=" " alt="" coords="435,56,567,83"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="439,107,564,133"/>
-<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="423,157,580,184"/>
-<area shape="rect" href="stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2" title="Function that sums g1 and g2 to obtain the g1g2 matrix It also undoes the scaling that was done to ma..." alt="" coords="453,208,549,235"/>
-<area shape="rect" href="low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value." alt="" coords="632,361,793,402"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="428,427,575,453"/>
-<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="637,427,789,453"/>
-<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="419,477,584,504"/>
-<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="433,544,570,571"/>
-<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="674,544,751,571"/>
-<area shape="rect" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title=" " alt="" coords="881,468,935,495"/>
-<area shape="rect" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title=" " alt="" coords="863,519,953,545"/>
-<area shape="rect" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af" title=" " alt="" coords="855,569,961,596"/>
-<area shape="rect" href="r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6" title=" " alt="" coords="841,620,975,647"/>
-<area shape="rect" href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149" title=" " alt="" coords="1023,493,1089,520"/>
-<area shape="rect" href="qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1" title=" " alt="" coords="1025,443,1087,469"/>
-<area shape="rect" href="qr__solve_8c.html#afaa40152476be17052f2c425914e744e" title=" " alt="" coords="1137,544,1196,571"/>
-<area shape="rect" href="r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca" title=" " alt="" coords="1246,392,1313,419"/>
-<area shape="rect" href="qr__solve_8c.html#aa1ea50a6db5ef08ed0c3617d761efe97" title=" " alt="" coords="1248,443,1311,469"/>
-<area shape="rect" href="qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135" title=" " alt="" coords="1254,493,1305,520"/>
-<area shape="rect" href="qr__solve_8c.html#adb1d7ac5915e3af7d8034232eb1b587d" title=" " alt="" coords="1247,747,1311,773"/>
-<area shape="rect" href="qr__solve_8c.html#ab1b00af76b78908d5f012c3023e8690f" title=" " alt="" coords="1251,544,1307,571"/>
-<area shape="rect" href="qr__solve_8c.html#afa0182a4c21d9992eae335332c52a1f5" title=" " alt="" coords="1247,595,1311,621"/>
-<area shape="rect" href="r8lib__min_8c.html#a1fe667048dc6f8c87bd3cf219bdb928e" title=" " alt="" coords="1244,645,1315,672"/>
-<area shape="rect" href="r8lib__min_8c.html#abd6a2ff6da5741932ef4a7f7948b9768" title=" " alt="" coords="1245,696,1314,723"/>
-<area shape="rect" href="qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902" title=" " alt="" coords="1139,443,1194,469"/>
+<area shape="rect" href="stabilization__indi_8c.html#a28a3aa7ed36fb838f27a1d7533793ef2" title="Function that sets the du_min, du_max and du_pref if function not elsewhere defined." alt="" coords="210,579,347,621"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="199,645,359,672"/>
+<area shape="rect" href="low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="209,697,349,738"/>
+<area shape="rect" href="wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="237,823,320,849"/>
+<area shape="rect" href="group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="439,5,563,32"/>
+<area shape="rect" href="e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title=" " alt="" coords="468,427,535,453"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title=" " alt="" coords="421,477,582,504"/>
+<area shape="rect" href="e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title=" " alt="" coords="468,528,535,555"/>
+<area shape="rect" href="e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title=" " alt="" coords="432,629,571,656"/>
+<area shape="rect" href="e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title=" " alt="" coords="466,579,537,605"/>
+<area shape="rect" href="e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title=" " alt="" coords="459,680,543,707"/>
+<area shape="rect" href="uart_8c.html#a70569087d789605493bce97141e1664f" title=" " alt="" coords="441,731,562,757"/>
+<area shape="rect" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float)." alt="" coords="632,473,865,500"/>
+<area shape="rect" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title=" " alt="" coords="913,462,1104,503"/>
+<area shape="rect" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="669,528,829,555"/>
+<area shape="rect" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation." alt="" coords="926,528,1091,555"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title=" " alt="" coords="1152,553,1255,580"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title=" " alt="" coords="1303,524,1509,551"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1336,575,1476,617"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint." alt="" coords="682,629,815,656"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates" alt="" coords="935,629,1083,656"/>
+<area shape="rect" href="nav_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title=" " alt="" coords="935,680,1082,707"/>
+<area shape="rect" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float)." alt="" coords="641,680,857,707"/>
+<area shape="rect" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title=" " alt="" coords="913,731,1104,773"/>
+<area shape="rect" href="linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0" title=" " alt="" coords="693,731,805,757"/>
+<area shape="rect" href="stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45" title=" " alt="" coords="446,56,557,83"/>
+<area shape="rect" href="stabilization__indi_8c.html#a005e2826f380bfa4d2788e2d97d6b1ca" title=" " alt="" coords="435,107,567,133"/>
+<area shape="rect" href="stabilization__indi_8c.html#a5907834221e4b598caf344f032ef5326" title=" " alt="" coords="435,157,567,184"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s" alt="" coords="439,208,564,235"/>
+<area shape="rect" href="group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int)." alt="" coords="423,259,580,285"/>
+<area shape="rect" href="stabilization__indi_8c.html#aca7717126654b267ab68c107719e12d2" title="Function that sums g1 and g2 to obtain the g1g2 matrix It also undoes the scaling that was done to ma..." alt="" coords="453,309,549,336"/>
+<area shape="rect" href="low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value." alt="" coords="668,361,829,402"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="428,781,575,808"/>
+<area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="673,781,825,808"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="419,832,584,859"/>
+<area shape="rect" href="wls__alloc_8c.html#a04ca5b76a35ac3604e2bb5d8cc22cd61" title="Wrapper for qr solve." alt="" coords="433,883,570,909"/>
+<area shape="rect" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title=" " alt="" coords="710,883,787,909"/>
+<area shape="rect" href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title=" " alt="" coords="981,832,1036,859"/>
+<area shape="rect" href="r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title=" " alt="" coords="964,883,1053,909"/>
+<area shape="rect" href="r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af" title=" " alt="" coords="956,933,1061,960"/>
 </map>
 </div>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1407,9 +1420,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00821">821</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00838">838</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00752">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00427">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00374">stabilization_attitude_read_rc_setpoint_quat_f()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra_8h_source.html#l00752">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00427">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00374">stabilization_attitude_read_rc_setpoint_quat_f()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00075">stabilization_attitude_read_rc()</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1503,9 +1516,9 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that calculates the setpoint quaternion from a command in earth axes </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00518">518</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00528">528</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00048">quat_from_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00237">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00235">stab_att_sp_euler</a>, <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00048">quat_from_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00245">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00243">stab_att_sp_euler</a>, <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00060">stabilization_attitude_set_earth_cmd_i()</a>.</p>
 <div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1563,9 +1576,9 @@ Variables</h2></td></tr>
 
 <p>Function that calculates the failsafe setpoint. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00478">478</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00488">488</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00130">stabilization_attitude_get_heading_i()</a>.</p>
+<p class="reference">References <a class="el" href="pprz__trig__int_8h_source.html#l00112">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00111">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00100">Int32Quat::qi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00101">Int32Quat::qx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00102">Int32Quat::qy</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00103">Int32Quat::qz</a>, <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00130">stabilization_attitude_get_heading_i()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00045">stabilization_attitude_set_failsafe_setpoint()</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1620,9 +1633,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00505">505</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00515">515</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00523">int32_eulers_of_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00237">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00235">stab_att_sp_euler</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00523">int32_eulers_of_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00245">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00243">stab_att_sp_euler</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00055">stabilization_attitude_set_quat_setpoint_i()</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1673,9 +1686,9 @@ Variables</h2></td></tr>
 </dl>
 <p>Function that calculates the setpoint quaternion from rpy </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00493">493</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00503">503</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00375">int32_quat_of_eulers()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00237">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00235">stab_att_sp_euler</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00375">int32_quat_of_eulers()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00245">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00243">stab_att_sp_euler</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00050">stabilization_attitude_set_rpy_setpoint_i()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1729,9 +1742,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00541">541</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00551">551</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00237">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00235">stab_att_sp_euler</a>, <a class="el" href="stabilization__indi_8c_source.html#l00236">stab_att_sp_quat</a>, <a class="el" href="stabilization_8c_source.html#l00207">stab_sp_to_eulers_i()</a>, <a class="el" href="stabilization_8c_source.html#l00123">stab_sp_to_quat_i()</a>, and <a class="el" href="stabilization_8c_source.html#l00302">stab_sp_to_rates_f()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00245">stab_att_ff_rates</a>, <a class="el" href="stabilization__indi_8c_source.html#l00243">stab_att_sp_euler</a>, <a class="el" href="stabilization__indi_8c_source.html#l00244">stab_att_sp_quat</a>, <a class="el" href="stabilization_8c_source.html#l00207">stab_sp_to_eulers_i()</a>, <a class="el" href="stabilization_8c_source.html#l00123">stab_sp_to_quat_i()</a>, and <a class="el" href="stabilization_8c_source.html#l00302">stab_sp_to_rates_f()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00065">stabilization_attitude_set_stab_sp()</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1761,8 +1774,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e8d2fff75cab722278e60e10b36dff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e8d2fff75cab722278e60e10b36dff9">&#9670;&nbsp;</a></span>stabilization_indi_set_wls_settings()</h2>
+<a id="a28a3aa7ed36fb838f27a1d7533793ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a3aa7ed36fb838f27a1d7533793ef2">&#9670;&nbsp;</a></span>stabilization_indi_set_wls_settings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1770,32 +1783,28 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void stabilization_indi_set_wls_settings </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>use_increment</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">use_increment</td><td>Function that sets the du_min, du_max and du_pref if function not elsewhere defined </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00739">739</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p>Function that sets the du_min, du_max and du_pref if function not elsewhere defined. </p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00167">act_pref</a>, <a class="el" href="stabilization__indi_8c_source.html#l00201">actuator_state_filt_vect</a>, <a class="el" href="stabilization__indi_8c_source.html#l00109">du_max_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00108">du_min_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00110">du_pref_stab_indi</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00050">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00059">GUIDANCE_H_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00060">GUIDANCE_H_MODE_NAV</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00105">HorizontalGuidance::mode</a>, <a class="el" href="stabilization__indi_8c_source.html#l00081">STABILIZATION_INDI_THROTTLE_LIMIT_AIRSPEED_FWD</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, and <a class="el" href="oneloop__andi_8c_source.html#l00409">use_increment</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00756">756</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00151">act_is_servo</a>, <a class="el" href="stabilization__indi_8c_source.html#l00167">act_pref</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00050">guidance_h</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00059">GUIDANCE_H_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00060">GUIDANCE_H_MODE_NAV</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00105">HorizontalGuidance::mode</a>, <a class="el" href="stabilization__indi_8c_source.html#l00081">STABILIZATION_INDI_THROTTLE_LIMIT_AIRSPEED_FWD</a>, <a class="el" href="state_8h_source.html#l01407">stateGetAirspeed_f()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00109">u_max_stab_indi</a>, <a class="el" href="stabilization__indi_8c_source.html#l00108">u_min_stab_indi</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00110">u_pref_stab_indi</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 <div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-34-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_cgraph.png" border="0" usemap="#astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_cgraph" alt=""/></div>
-<map name="astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_cgraph" id="astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,143,47"/>
+<div class="center"><img src="stabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_cgraph.png" border="0" usemap="#astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_cgraph" alt=""/></div>
+<map name="astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_cgraph" id="astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_cgraph">
+<area shape="rect" title="Function that sets the du_min, du_max and du_pref if function not elsewhere defined." alt="" coords="5,5,143,47"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float)." alt="" coords="191,13,337,39"/>
 <area shape="rect" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title=" " alt="" coords="385,13,537,39"/>
 </map>
@@ -1805,9 +1814,9 @@ Variables</h2></td></tr>
 <div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-35-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_icgraph.png" border="0" usemap="#astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_icgraph" alt=""/></div>
-<map name="astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_icgraph" id="astabilization__indi_8c_a5e8d2fff75cab722278e60e10b36dff9_icgraph">
-<area shape="rect" title=" " alt="" coords="633,35,771,76"/>
+<div class="center"><img src="stabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_icgraph.png" border="0" usemap="#astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_icgraph" alt=""/></div>
+<map name="astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_icgraph" id="astabilization__indi_8c_a28a3aa7ed36fb838f27a1d7533793ef2_icgraph">
+<area shape="rect" title="Function that sets the du_min, du_max and du_pref if function not elsewhere defined." alt="" coords="633,35,771,76"/>
 <area shape="rect" href="stabilization__indi_8c.html#a83c932bd9792806ff65ff3ca266f410b" title=" " alt="" coords="452,35,585,76"/>
 <area shape="rect" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="256,5,389,47"/>
 <area shape="rect" href="stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="Run indi rate interface from the &quot;stabilization_rate_run&quot; function." alt="" coords="241,71,404,98"/>
@@ -1835,11 +1844,11 @@ Variables</h2></td></tr>
 
 <p>Function that sums g1 and g2 to obtain the g1g2 matrix It also undoes the scaling that was done to make the values readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00982">982</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00999">999</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00267">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00273">g1g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00257">g2</a>, and <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00275">g1</a>, <a class="el" href="stabilization__indi_8c_source.html#l00281">g1g2</a>, <a class="el" href="stabilization__indi_8c_source.html#l00265">g2</a>, and <a class="el" href="stabilization__indi_8h_source.html#l00031">INDI_G_SCALING</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-36-summary" class="dynsummary" style="display:block;">
@@ -1893,7 +1902,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 <div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-37-summary" class="dynsummary" style="display:block;">
@@ -1944,9 +1953,9 @@ Variables</h2></td></tr>
 
 <p>ABI callback that obtains the thrust increment from guidance INDI. </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l01062">1062</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l01079">1079</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00253">indi_thrust_increment</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00254">indi_thrust_increment_set</a>.</p>
+<p class="reference">References <a class="el" href="stabilization__indi_8c_source.html#l00261">indi_thrust_increment</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00262">indi_thrust_increment_set</a>.</p>
 
 </div>
 </div>
@@ -1963,9 +1972,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00283">283</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00291">291</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +1992,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00177">177</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00839">get_actuator_state()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00856">get_actuator_state()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +2010,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00176">176</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2019,7 +2028,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00151">151</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -2037,7 +2046,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00157">157</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2055,7 +2064,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00160">160</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2071,9 +2080,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00229">229</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00237">237</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00839">get_actuator_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00856">get_actuator_state()</a>.</p>
 
 </div>
 </div>
@@ -2091,7 +2100,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00167">167</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00108">ctrl_eff_scheduling_periodic()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -2107,9 +2116,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00279">279</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00287">287</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2125,9 +2134,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00205">205</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00214">214</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00839">get_actuator_state()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00856">get_actuator_state()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2143,9 +2152,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00201">201</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00210">210</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00140">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00632">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00140">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00260">eff_scheduling_rot_wing_update_cmd()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00277">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00632">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00403">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -2161,9 +2170,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00216">216</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00224">224</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2179,9 +2188,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00217">217</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00225">225</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2197,9 +2206,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00201">201</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00210">210</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00324">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00332">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2215,9 +2224,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00204">204</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00213">213</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00324">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00332">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2233,9 +2242,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00201">201</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00210">210</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00324">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00769">stabilization_indi_attitude_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00332">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00786">stabilization_indi_attitude_run()</a>.</p>
 
 </div>
 </div>
@@ -2251,9 +2260,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00283">283</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00291">291</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ekf__aw__wrapper_8c_source.html#l00338">ekf_aw_wrapper_fetch()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ekf__aw__wrapper_8c_source.html#l00338">ekf_aw_wrapper_fetch()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 
 </div>
 </div>
@@ -2271,7 +2280,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00112">112</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00140">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00140">eff_scheduling_cyfoam_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2287,9 +2296,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00221">221</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00229">229</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00889">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00424">stabilization_indi_enter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00906">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00432">stabilization_indi_enter()</a>.</p>
 
 </div>
 </div>
@@ -2305,63 +2314,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00220">220</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00228">228</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00875">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00424">stabilization_indi_enter()</a>.</p>
-
-</div>
-</div>
-<a id="a5d1e8adc7fab8f7ec8d54243d33ae1a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d1e8adc7fab8f7ec8d54243d33ae1a9">&#9670;&nbsp;</a></span>du_max_stab_indi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float du_max_stab_indi[INDI_NUM_ACT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00109">109</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
-
-</div>
-</div>
-<a id="a2e3e00bc03d8662b8b316513dbf78096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3e00bc03d8662b8b316513dbf78096">&#9670;&nbsp;</a></span>du_min_stab_indi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float du_min_stab_indi[INDI_NUM_ACT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00108">108</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
-
-</div>
-</div>
-<a id="a40f6f72d93a89227d37a7b1753e84728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40f6f72d93a89227d37a7b1753e84728">&#9670;&nbsp;</a></span>du_pref_stab_indi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float du_pref_stab_indi[INDI_NUM_ACT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00110">110</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00739">stabilization_indi_set_wls_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00892">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00432">stabilization_indi_enter()</a>.</p>
 
 </div>
 </div>
@@ -2377,9 +2332,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00280">280</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00288">288</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2395,9 +2350,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00282">282</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00290">290</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2413,9 +2368,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00218">218</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00226">226</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2431,9 +2386,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00219">219</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00227">227</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2452,9 +2407,9 @@ Variables</h2></td></tr>
 <div class="line">                                        STABILIZATION_INDI_G1_PITCH, STABILIZATION_INDI_G1_YAW, STABILIZATION_INDI_G1_THRUST</div>
 <div class="line">                                       }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00267">267</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00275">275</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gain__scheduling_8c_source.html#l00095">gain_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00982">sum_g1_g2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gain__scheduling_8c_source.html#l00095">gain_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00999">sum_g1_g2()</a>.</p>
 
 </div>
 </div>
@@ -2470,9 +2425,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00274">274</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00282">282</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01068">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00875">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01085">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00892">calc_g1_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2488,9 +2443,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00276">276</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00284">284</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01068">bound_g_mat()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01085">bound_g_mat()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2506,9 +2461,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00273">273</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00281">281</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__falcon_8c_source.html#l00049">eff_scheduling_falcon_init()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00113">eff_scheduling_falcon_report()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00342">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00306">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00350">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00274">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00358">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00324">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00632">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00296">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00982">sum_g1_g2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__falcon_8c_source.html#l00049">eff_scheduling_falcon_init()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00058">eff_scheduling_falcon_periodic()</a>, <a class="el" href="eff__scheduling__falcon_8c_source.html#l00113">eff_scheduling_falcon_report()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00353">eff_scheduling_rot_wing_update_aileron_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00317">eff_scheduling_rot_wing_update_elevator_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00361">eff_scheduling_rot_wing_update_flaperon_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00277">eff_scheduling_rot_wing_update_hover_motor_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00369">eff_scheduling_rot_wing_update_pusher_effectiveness()</a>, <a class="el" href="eff__scheduling__rot__wing_8c_source.html#l00335">eff_scheduling_rot_wing_update_rudder_effectiveness()</a>, <a class="el" href="ground__detect__sensor_8c_source.html#l00062">ground_detect_sensor_periodic()</a>, <a class="el" href="rotwing__state_8c_source.html#l00632">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00304">send_eff_mat_g_indi()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00999">sum_g1_g2()</a>.</p>
 
 </div>
 </div>
@@ -2524,9 +2479,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00256">256</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00264">264</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2542,7 +2497,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00214">214</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00222">222</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2513,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00215">215</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00223">223</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -2574,9 +2529,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00257">257</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00265">265</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gain__scheduling_8c_source.html#l00095">gain_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00982">sum_g1_g2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gain__scheduling_8c_source.html#l00095">gain_scheduling_periodic()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00999">sum_g1_g2()</a>.</p>
 
 </div>
 </div>
@@ -2592,9 +2547,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00275">275</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00283">283</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01068">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00889">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00296">send_eff_mat_g_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01085">bound_g_mat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00906">calc_g2_element()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00304">send_eff_mat_g_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2610,45 +2565,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00277">277</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00285">285</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01068">bound_g_mat()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
-
-</div>
-</div>
-<a id="ac2dddd155320f8b4659819063eb894fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2dddd155320f8b4659819063eb894fc">&#9670;&nbsp;</a></span>g2_times_du</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float g2_times_du</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00208">208</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
-
-</div>
-</div>
-<a id="afce24724cf3afefacb13f024ffeabb1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce24724cf3afefacb13f024ffeabb1e">&#9670;&nbsp;</a></span>indi_du</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float indi_du[INDI_NUM_ACT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00207">207</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l01085">bound_g_mat()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
 
 </div>
 </div>
@@ -2678,7 +2597,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00124">124</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00769">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00096">eff_scheduling_periodic_b()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00786">stabilization_indi_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2694,9 +2613,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00252">252</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00260">260</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l01062">thrust_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l01079">thrust_cb()</a>.</p>
 
 </div>
 </div>
@@ -2712,9 +2631,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00254">254</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00262">262</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00769">stabilization_indi_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l01062">thrust_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00786">stabilization_indi_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l01079">thrust_cb()</a>.</p>
 
 </div>
 </div>
@@ -2730,9 +2649,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00206">206</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00215">215</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00839">get_actuator_state()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00324">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00856">get_actuator_state()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00332">send_att_full_indi()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2750,7 +2669,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00141">141</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2768,7 +2687,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00111">111</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2788,7 +2707,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00197">197</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eff__scheduling__nederdrone_8c_source.html#l00131">schdule_control_effectiveness()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2804,9 +2723,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00281">281</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00289">289</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2822,9 +2741,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00224">224</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00232">232</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 
 </div>
 </div>
@@ -2840,9 +2759,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00226">226</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00234">234</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00899">lms_estimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00916">lms_estimation()</a>.</p>
 
 </div>
 </div>
@@ -2860,7 +2779,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00113">113</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2876,9 +2795,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00232">232</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00240">240</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2894,9 +2813,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00233">233</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00241">241</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2912,7 +2831,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00210">210</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00218">218</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
 </div>
 </div>
@@ -2928,7 +2847,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00211">211</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00219">219</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+</div>
+</div>
+<a id="aa3d85604a5084e7824f4a74c24c6ed42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d85604a5084e7824f4a74c24c6ed42">&#9670;&nbsp;</a></span>rate_vect_prev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rate_vect_prev[3] = {0., 0., 0.}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00216">216</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00432">stabilization_indi_enter()</a>.</p>
 
 </div>
 </div>
@@ -2952,9 +2889,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00283">283</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00291">291</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00436">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00446">init_filters()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2970,9 +2907,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00233">233</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00241">241</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00769">stabilization_indi_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00518">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00505">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00493">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00541">stabilization_indi_set_stab_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00786">stabilization_indi_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00528">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00515">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00503">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
 
 </div>
 </div>
@@ -2990,9 +2927,9 @@ Variables</h2></td></tr>
 
 <p>with <a class="el" href="group__math__algebra__int.html#gaa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00233">233</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00241">241</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00424">stabilization_indi_enter()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00518">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00505">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00493">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00541">stabilization_indi_set_stab_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00432">stabilization_indi_enter()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00528">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00515">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00503">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
 
 </div>
 </div>
@@ -3010,9 +2947,9 @@ Variables</h2></td></tr>
 
 <p>with <a class="el" href="group__math__algebra__int.html#gae28f97f9061b7542b7cf4c10c35e4824">INT32_QUAT_FRAC</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00233">233</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00241">241</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00310">send_ahrs_ref_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00821">stabilization_indi_read_rc()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00518">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00478">stabilization_indi_set_failsafe_setpoint()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00505">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00493">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00541">stabilization_indi_set_stab_sp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00318">send_ahrs_ref_quat()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00838">stabilization_indi_read_rc()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00528">stabilization_indi_set_earth_cmd_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00488">stabilization_indi_set_failsafe_setpoint()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00515">stabilization_indi_set_quat_setpoint_i()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00503">stabilization_indi_set_rpy_setpoint_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
 
 </div>
 </div>
@@ -3032,6 +2969,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa9b259b8bcede01f9497459615608d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b259b8bcede01f9497459615608d78">&#9670;&nbsp;</a></span>stablization_indi_yaw_dist_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stablization_indi_yaw_dist_limit = 99999.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limit the maximum specific moment that can be compensated (units rad/s^2) </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00206">206</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
+
+</div>
+</div>
 <a id="a796a47d113a5bb3cf4e5544205ea959e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a796a47d113a5bb3cf4e5544205ea959e">&#9670;&nbsp;</a></span>thrust_ev</h2>
 
@@ -3044,9 +3001,63 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00251">251</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00259">259</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00351">stabilization_indi_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00359">stabilization_indi_init()</a>.</p>
+
+</div>
+</div>
+<a id="a4e72c194dd0e8195c9a54998f7c174e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e72c194dd0e8195c9a54998f7c174e7">&#9670;&nbsp;</a></span>u_max_stab_indi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float u_max_stab_indi[INDI_NUM_ACT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00109">109</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>.</p>
+
+</div>
+</div>
+<a id="a1bf96e7b61db53738987e9fb9d5c4d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf96e7b61db53738987e9fb9d5c4d40">&#9670;&nbsp;</a></span>u_min_stab_indi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float u_min_stab_indi[INDI_NUM_ACT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00108">108</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>.</p>
+
+</div>
+</div>
+<a id="a875453c949e1d95c4be77b9dd151334c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875453c949e1d95c4be77b9dd151334c">&#9670;&nbsp;</a></span>u_pref_stab_indi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float u_pref_stab_indi[INDI_NUM_ACT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00110">110</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00756">stabilization_indi_set_wls_settings()</a>.</p>
 
 </div>
 </div>
@@ -3072,7 +3083,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stabilization__indi_8c_source.html#l00187">187</a> of file <a class="el" href="stabilization__indi_8c_source.html">stabilization_indi.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00555">stabilization_indi_rate_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -3082,7 +3093,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__indi_8c.html">stabilization_indi.c</a></li>
-    <li class="footer">Generated on Wed Apr 3 2024 13:06:28 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 4 2024 08:59:24 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,7 @@
 var eff__scheduling__rot__wing_8h_structrot__wing__eff__sched__param__t =
 [
     [ "d_rudder_d_pprz", "eff__scheduling__rot__wing_8h.html#a132dda0df2d266584b58a08b051c40e5", null ],
+    [ "DMdpprz_hover_roll", "eff__scheduling__rot__wing_8h.html#a8b34882fb9ea970442e99acc19d9dc32", null ],
     [ "hover_roll_pitch_coef", "eff__scheduling__rot__wing_8h.html#ae8abb7feac6b1daa9815a23db45a27ff", null ],
     [ "hover_roll_roll_coef", "eff__scheduling__rot__wing_8h.html#a0006298855e9b49e8aa30360e6d56840", null ],
     [ "Ixx_body", "eff__scheduling__rot__wing_8h.html#a31592b10160b656f6d1e42d8403fd5df", null ],
