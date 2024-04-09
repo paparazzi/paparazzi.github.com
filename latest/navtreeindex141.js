@@ -1,5 +1,9 @@
 var NAVTREEINDEX141 =
 {
+"mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a2b9a9607ff52acdfcd1a7f19b3e99d88":[12,0,1,0,7,94,74,7],
+"mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a36f4afcf6314d5f5513b611ad2cbe739":[12,0,1,0,7,94,74,0],
+"mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a7f04a4bd50a6d041030bf9d597970e96":[12,0,1,0,7,94,74,4],
+"mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a7f7b36b5067e079becb6d74dd74e7d8b":[12,0,1,0,7,94,74,6],
 "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a8cf39f8dee855364fbd84bf231c1c049":[12,0,1,0,7,94,74,3],
 "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786ad2684a8a9def8dc1e5d53a7945bae26d":[12,0,1,0,7,94,74,5],
 "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786adb15736092f0a3458047c36d3ee8a2ac":[12,0,1,0,7,94,74,1],
@@ -73,8 +77,8 @@ var NAVTREEINDEX141 =
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edab22cde199f9df04496553671eb708e3a":[12,0,1,0,7,96,5,2],
 "mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62":[12,0,1,0,7,96,5,3],
 "mpu60x0__spi_8h.html#aac2c5a39f64f336ccb130c06b247bebf":[12,0,1,0,7,96,0,5],
-"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,1,0],
 "mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,2,1],
+"mpu60x0__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383":[12,0,1,0,7,96,1,0],
 "mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f":[12,0,1,0,7,96,8],
 "mpu60x0__spi_8h.html#ab850011ed8df616036bc796940768f35":[12,0,1,0,7,96,4],
 "mpu60x0__spi_8h.html#ad9d2f2b58c6d875fb6e7cbce32145f0a":[12,0,1,0,7,96,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX141 =
 "mpu9250__regs_8h.html#a468c4b62a03c26d4153b5089a9d1a981":[12,0,1,0,7,101,36],
 "mpu9250__regs_8h.html#a477ee358fa3405486151453820dbf230":[12,0,1,0,7,101,22],
 "mpu9250__regs_8h.html#a47f59826ce33925b67e239753d2cdf6f":[12,0,1,0,7,101,68],
-"mpu9250__regs_8h.html#a53770e4355c4c1906bb1fcd474483121":[12,0,1,0,7,101,13],
-"mpu9250__regs_8h.html#a5aa06cba0c33a42a69af855b1e749c95":[12,0,1,0,7,101,57],
-"mpu9250__regs_8h.html#a5c2429651153b5d50126e112d452d9d3":[12,0,1,0,7,101,64],
-"mpu9250__regs_8h.html#a64d6c08c1543e8d5c407484436e1ea9a":[12,0,1,0,7,101,8],
-"mpu9250__regs_8h.html#a6d3f3a0828c4d1a2537d30df92226422":[12,0,1,0,7,101,24]
+"mpu9250__regs_8h.html#a53770e4355c4c1906bb1fcd474483121":[12,0,1,0,7,101,13]
 };

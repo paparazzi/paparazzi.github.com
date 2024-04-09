@@ -214,6 +214,8 @@ var onboard_modules =
     [ "ahrs_float_cmpl_rmat module", "module__ahrs_float_cmpl_rmat.html", [
       [ "Example for airframe file", "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat", null ],
       [ "Module configuration options", "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat", [
+        [ "Configure Options", "module__ahrs_float_cmpl_rmat.html#configure", null ],
+        [ "Define Options", "module__ahrs_float_cmpl_rmat.html#define", null ],
         [ "Raw ahrs_float_cmpl_rmat.xml file:", "module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat", null ]
       ] ]
     ] ],
@@ -448,8 +450,16 @@ var onboard_modules =
     ] ],
     [ "cv_target_localization module", "module__cv_target_localization.html", [
       [ "Example for airframe file", "module__cv_target_localization.html#module_load_example__cv_target_localization", null ],
-      [ "Module configuration options", "module__cv_target_localization.html#configuration__cv_target_localization", null ],
+      [ "Module configuration options", "module__cv_target_localization.html#configuration__cv_target_localization", [
+        [ "Airframe file section", "module__cv_target_localization.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__cv_target_localization.html#functions__cv_target_localization", [
+        [ "Init Functions", "module__cv_target_localization.html#init_functions", null ],
+        [ "Periodic Functions", "module__cv_target_localization.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__cv_target_localization.html#files", [
+        [ "Header Files", "module__cv_target_localization.html#headers", null ],
+        [ "Source Files", "module__cv_target_localization.html#sources", null ],
         [ "Raw cv_target_localization.xml file:", "module__cv_target_localization.html#module_xml__cv_target_localization", null ]
       ] ]
     ] ],
@@ -686,9 +696,7 @@ var onboard_modules =
     ] ],
     [ "target_pos module", "module__target_pos.html", [
       [ "Example for airframe file", "module__target_pos.html#module_load_example__target_pos", null ],
-      [ "Module configuration options", "module__target_pos.html#configuration__target_pos", [
-        [ "Airframe file section", "module__target_pos.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__target_pos.html#configuration__target_pos", null ],
       [ "Module functions", "module__target_pos.html#functions__target_pos", null ],
       [ "Datalink Functions", "module__target_pos.html#datalink_functions__target_pos", [
         [ "Raw target_pos.xml file:", "module__target_pos.html#module_xml__target_pos", null ]
@@ -1246,12 +1254,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
+        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
-        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
@@ -1998,16 +2006,8 @@ var onboard_modules =
     ] ],
     [ "follow module", "module__follow.html", [
       [ "Example for airframe file", "module__follow.html#module_load_example__follow", null ],
-      [ "Module configuration options", "module__follow.html#configuration__follow", [
-        [ "Define Options", "module__follow.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__follow.html#configuration__follow", null ],
       [ "Module functions", "module__follow.html#functions__follow", [
-        [ "Init Functions", "module__follow.html#init_functions", null ],
-        [ "Periodic Functions", "module__follow.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__follow.html#files", [
-        [ "Header Files", "module__follow.html#headers", null ],
-        [ "Source Files", "module__follow.html#sources", null ],
         [ "Raw follow.xml file:", "module__follow.html#module_xml__follow", null ]
       ] ]
     ] ],
@@ -2761,11 +2761,8 @@ var onboard_modules =
     ] ],
     [ "sonar_vl53l1x module", "module__sonar_vl53l1x.html", [
       [ "Example for airframe file", "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x", null ],
-      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", [
-        [ "Configure Options", "module__sonar_vl53l1x.html#configure", null ]
-      ] ],
+      [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", null ],
       [ "Module functions", "module__sonar_vl53l1x.html#functions__sonar_vl53l1x", [
-        [ "Event Functions", "module__sonar_vl53l1x.html#event_functions", null ],
         [ "Raw sonar_vl53l1x.xml file:", "module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x", null ]
       ] ]
     ] ],
@@ -3170,6 +3167,7 @@ var onboard_modules =
       [ "Example for airframe file", "module__osd_max7456.html#module_load_example__osd_max7456", null ],
       [ "Module configuration options", "module__osd_max7456.html#configuration__osd_max7456", null ],
       [ "Module functions", "module__osd_max7456.html#functions__osd_max7456", [
+        [ "Event Functions", "module__osd_max7456.html#event_functions", null ],
         [ "Raw osd_max7456.xml file:", "module__osd_max7456.html#module_xml__osd_max7456", null ]
       ] ]
     ] ],

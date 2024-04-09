@@ -1,5 +1,11 @@
 var NAVTREEINDEX134 =
 {
+"module__imu_common.html#functions__imu_common":[1,198,2],
+"module__imu_common.html#module_load_example__imu_common":[1,198,0],
+"module__imu_common.html#module_xml__imu_common":[1,198,2,0],
+"module__imu_cube.html":[1,199],
+"module__imu_cube.html#functions__imu_cube":[1,199,1],
+"module__imu_cube.html#module_load_example__imu_cube":[1,199,0],
 "module__imu_cube.html#module_xml__imu_cube":[1,199,1,0],
 "module__imu_disco.html":[1,200],
 "module__imu_disco.html#configuration__imu_disco":[1,200,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX134 =
 "module__led_safety_status.html#functions__led_safety_status":[1,251,1],
 "module__led_safety_status.html#module_load_example__led_safety_status":[1,251,0],
 "module__led_safety_status.html#module_xml__led_safety_status":[1,251,1,0],
-"module__lidar_lite.html":[1,246],
-"module__lidar_lite.html#configuration__lidar_lite":[1,246,1],
-"module__lidar_lite.html#functions__lidar_lite":[1,246,2],
-"module__lidar_lite.html#module_load_example__lidar_lite":[1,246,0],
-"module__lidar_lite.html#module_xml__lidar_lite":[1,246,2,0],
-"module__lidar_sf11.html":[1,247],
-"module__lidar_sf11.html#configuration__lidar_sf11":[1,247,1]
+"module__lidar_lite.html":[1,246]
 };

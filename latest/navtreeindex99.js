@@ -1,5 +1,9 @@
 var NAVTREEINDEX99 =
 {
+"itg3200_8h.html#structItg3200":[12,0,1,0,7,53,1],
+"itg3200_8h.html#structItg3200Config":[12,0,1,0,7,53,0],
+"itg3200_8h.html#unionItg3200_8data":[12,0,1,0,7,53,2],
+"itg3200_8h_source.html":[12,0,1,0,7,53],
 "itg3200__regs_8h.html":[12,0,1,0,7,54],
 "itg3200__regs_8h.html#a10962b8c53336d3aeb288c62dba5a47a":[12,0,1,0,7,54,6],
 "itg3200__regs_8h.html#a355f46a6c4c401c94d75a04ffef2161e":[12,0,1,0,7,54,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX99 =
 "jpeg_8h.html#aab11f0556a42e2f3b5a31b1e18b6904c":[12,0,1,0,6,12,1,0,1,3],
 "jpeg_8h.html#ac1a4731c71f3529891f1750260db2626":[12,0,1,0,6,12,1,0,1,6],
 "jpeg_8h.html#af4bb781d9da10288693eecf8e2382e53":[12,0,1,0,6,12,1,0,1,1],
-"jpeg_8h.html#af66629d6b00cab37ec92e3933efa4bcc":[12,0,1,0,6,12,1,0,1,4],
-"jpeg_8h_source.html":[12,0,1,0,6,12,1,0,1],
-"krooz__sd_8h.html":[12,0,1,0,1,35],
-"krooz__sd_8h.html#a01f35b990dd64f2a26f879a0757dea09":[12,0,1,0,1,35,99],
-"krooz__sd_8h.html#a0510f76eb567391e9c3e4185cc695628":[12,0,1,0,1,35,32]
+"jpeg_8h.html#af66629d6b00cab37ec92e3933efa4bcc":[12,0,1,0,6,12,1,0,1,4]
 };

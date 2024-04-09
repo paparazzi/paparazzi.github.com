@@ -1,5 +1,12 @@
 var NAVTREEINDEX137 =
 {
+"module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,366,2],
+"module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,366,0],
+"module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,366,2,0],
+"module__range_forcefield.html":[1,490],
+"module__range_forcefield.html#configuration__range_forcefield":[1,490,1],
+"module__range_forcefield.html#functions__range_forcefield":[1,490,2],
+"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0],
 "module__range_forcefield.html#module_xml__range_forcefield":[1,490,2,0],
 "module__range_sensor_uavcan.html":[1,412],
 "module__range_sensor_uavcan.html#functions__range_sensor_uavcan":[1,412,1],
@@ -92,11 +99,9 @@ var NAVTREEINDEX137 =
 "module__sonar_pwm.html#module_xml__sonar_pwm":[1,421,2,0],
 "module__sonar_vl53l1x.html":[1,422],
 "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x":[1,422,1],
-"module__sonar_vl53l1x.html#configure":[1,422,1,0],
-"module__sonar_vl53l1x.html#event_functions":[1,422,2,0],
 "module__sonar_vl53l1x.html#functions__sonar_vl53l1x":[1,422,2],
 "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x":[1,422,0],
-"module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,422,2,1],
+"module__sonar_vl53l1x.html#module_xml__sonar_vl53l1x":[1,422,2,0],
 "module__spektrum_soft_bind.html":[1,494],
 "module__spektrum_soft_bind.html#functions__spektrum_soft_bind":[1,494,1],
 "module__spektrum_soft_bind.html#module_load_example__spektrum_soft_bind":[1,494,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX137 =
 "module__tag_tracking.html#module_load_example__tag_tracking":[1,68,0],
 "module__tag_tracking.html#module_xml__tag_tracking":[1,68,3,0],
 "module__takeoff_detect.html":[1,350],
-"module__takeoff_detect.html#configuration__takeoff_detect":[1,350,1],
-"module__takeoff_detect.html#functions__takeoff_detect":[1,350,2],
-"module__takeoff_detect.html#module_load_example__takeoff_detect":[1,350,0],
-"module__takeoff_detect.html#module_xml__takeoff_detect":[1,350,2,0],
-"module__target_pos.html":[1,103],
-"module__target_pos.html#af_section":[1,103,1,0]
+"module__takeoff_detect.html#configuration__takeoff_detect":[1,350,1]
 };

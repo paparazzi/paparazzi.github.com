@@ -213,6 +213,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5b1f40ae3b945985c9f4d09bdd313de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8">image_draw_line_color</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *from, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *to, const <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *color)</td></tr>
 <tr class="memdesc:a5b1f40ae3b945985c9f4d09bdd313de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line on the image.  <a href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8">More...</a><br /></td></tr>
 <tr class="separator:a5b1f40ae3b945985c9f4d09bdd313de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0652830e349cafd5ae668e9a0229decb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="image_8c.html#a0652830e349cafd5ae668e9a0229decb">ker_mul_3x3</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> const *source, int_fast8_t const *kernel, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> total, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> setting, int width, int YUV)</td></tr>
+<tr class="memdesc:a0652830e349cafd5ae668e9a0229decb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel multiplication for a 3 x 3 kernel.  <a href="image_8c.html#a0652830e349cafd5ae668e9a0229decb">More...</a><br /></td></tr>
+<tr class="separator:a0652830e349cafd5ae668e9a0229decb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c35149d270f5a9307c679337fcba64f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="image_8c.html#a0c35149d270f5a9307c679337fcba64f">image_convolution_3x3</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *input, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *output, int_fast8_t const *kernel, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> kernel_total)</td></tr>
+<tr class="memdesc:a0c35149d270f5a9307c679337fcba64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image convolution for a 3x3 kernel.  <a href="image_8c.html#a0c35149d270f5a9307c679337fcba64f">More...</a><br /></td></tr>
+<tr class="separator:a0c35149d270f5a9307c679337fcba64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Image helper functions, like resizing, color filter, converters... </p>
@@ -495,6 +501,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0c35149d270f5a9307c679337fcba64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c35149d270f5a9307c679337fcba64f">&#9670;&nbsp;</a></span>image_convolution_3x3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void image_convolution_3x3 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int_fast8_t const *&#160;</td>
+          <td class="paramname"><em>kernel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>kernel_total</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Image convolution for a 3x3 kernel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Input image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">output</td><td>Output image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kernel</td><td>The kernel values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="image_8c_source.html#l01068">1068</a> of file <a class="el" href="image_8c_source.html">image.c</a>.</p>
+
+<p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="w5100_8c_source.html#l00099">dest</a>, <a class="el" href="image_8h_source.html#l00049">image_t::eulers</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8c_source.html#l01013">ker_mul_3x3()</a>, <a class="el" href="image_8h_source.html#l00050">image_t::pprz_ts</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="image_8c_a0c35149d270f5a9307c679337fcba64f_cgraph.png" border="0" usemap="#aimage_8c_a0c35149d270f5a9307c679337fcba64f_cgraph" alt=""/></div>
+<map name="aimage_8c_a0c35149d270f5a9307c679337fcba64f_cgraph" id="aimage_8c_a0c35149d270f5a9307c679337fcba64f_cgraph">
+<area shape="rect" title="Image convolution for a 3x3 kernel." alt="" coords="5,5,183,32"/>
+<area shape="rect" href="image_8c.html#a0652830e349cafd5ae668e9a0229decb" title="Kernel multiplication for a 3 x 3 kernel." alt="" coords="231,5,336,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a02932625f9aeb66da70c89a2f2d3a052"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02932625f9aeb66da70c89a2f2d3a052">&#9670;&nbsp;</a></span>image_copy()</h2>
 
@@ -535,11 +606,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00053">image_t::buf_size</a>, <a class="el" href="image_8h_source.html#l00049">image_t::eulers</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00050">image_t::pprz_ts</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>, <a class="el" href="cv_8c_source.html#l00112">cv_async_function()</a>, and <a class="el" href="undistort__image_8c_source.html#l00046">undistort_image_func()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a02932625f9aeb66da70c89a2f2d3a052_icgraph.png" border="0" usemap="#aimage_8c_a02932625f9aeb66da70c89a2f2d3a052_icgraph" alt=""/></div>
 <map name="aimage_8c_a02932625f9aeb66da70c89a2f2d3a052_icgraph" id="aimage_8c_a02932625f9aeb66da70c89a2f2d3a052_icgraph">
 <area shape="rect" title="Copy an image from inut to output This will only work if the formats are the same." alt="" coords="1068,56,1169,83"/>
@@ -613,11 +684,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00053">image_t::buf_size</a>, <a class="el" href="image_8c_source.html#l00033">CACHE_LINE_LENGTH</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00039">IMAGE_GRADIENT</a>, <a class="el" href="image_8h_source.html#l00040">IMAGE_INT16</a>, <a class="el" href="image_8h_source.html#l00038">IMAGE_JPEG</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>, <a class="el" href="cv_8c_source.html#l00112">cv_async_function()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00131">cv_blob_locator_func()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00084">cv_window_func()</a>, <a class="el" href="detect__window_8c_source.html#l00048">detect_window()</a>, <a class="el" href="image_8c_source.html#l00368">image_add_border()</a>, <a class="el" href="video__usb__logger_8c_source.html#l00114">log_image()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00313">pano_unwrap_init()</a>, <a class="el" href="image_8c_source.html#l00414">pyramid_next_level()</a>, <a class="el" href="qr__code_8c_source.html#l00054">qrscan()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00132">set_output_image_size()</a>, <a class="el" href="undistort__image_8c_source.html#l00046">undistort_image_func()</a>, <a class="el" href="video__capture_8c_source.html#l00114">video_capture_save()</a>, <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_ab5cc0250c461b9d2f043e4884f6b9a53_icgraph.png" border="0" usemap="#aimage_8c_ab5cc0250c461b9d2f043e4884f6b9a53_icgraph" alt=""/></div>
 <map name="aimage_8c_ab5cc0250c461b9d2f043e4884f6b9a53_icgraph" id="aimage_8c_ab5cc0250c461b9d2f043e4884f6b9a53_icgraph">
 <area shape="rect" title="Create a new image." alt="" coords="1532,411,1643,437"/>
@@ -706,11 +777,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, and <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a946e57aea5ff8c79adee46cb2c72dd80_icgraph.png" border="0" usemap="#aimage_8c_a946e57aea5ff8c79adee46cb2c72dd80_icgraph" alt=""/></div>
 <map name="aimage_8c_a946e57aea5ff8c79adee46cb2c72dd80_icgraph" id="aimage_8c_a946e57aea5ff8c79adee46cb2c72dd80_icgraph">
 <area shape="rect" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="1203,5,1337,32"/>
@@ -779,22 +850,22 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8c_source.html#l00932">image_draw_line_color()</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="snake__gate__detection_8c_source.html#l00491">draw_gate_color_polygon()</a>, <a class="el" href="snake__gate__detection_8c_source.html#l00538">draw_gate_color_square()</a>, <a class="el" href="image_8c_source.html#l00743">image_show_flow_color()</a>, <a class="el" href="image_8c_source.html#l00701">image_show_points_color()</a>, and <a class="el" href="snake__gate__detection_8c_source.html#l00135">snake_gate_detection()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a3855947fea757e63088255cd9e68fcda_cgraph.png" border="0" usemap="#aimage_8c_a3855947fea757e63088255cd9e68fcda_cgraph" alt=""/></div>
 <map name="aimage_8c_a3855947fea757e63088255cd9e68fcda_cgraph" id="aimage_8c_a3855947fea757e63088255cd9e68fcda_cgraph">
 <area shape="rect" title="Draw a cross&#45;hair on the image." alt="" coords="5,5,173,32"/>
 <area shape="rect" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="221,5,393,32"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a3855947fea757e63088255cd9e68fcda_icgraph.png" border="0" usemap="#aimage_8c_a3855947fea757e63088255cd9e68fcda_icgraph" alt=""/></div>
 <map name="aimage_8c_a3855947fea757e63088255cd9e68fcda_icgraph" id="aimage_8c_a3855947fea757e63088255cd9e68fcda_icgraph">
 <area shape="rect" title="Draw a cross&#45;hair on the image." alt="" coords="1320,208,1488,235"/>
@@ -866,22 +937,22 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8c_source.html#l00932">image_draw_line_color()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="edge__flow_8c_source.html#l00297">draw_edgeflow_img()</a>, and <a class="el" href="qr__code_8c_source.html#l00054">qrscan()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a40fe37e1ba3df58796c2aa29e04e8567_cgraph.png" border="0" usemap="#aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_cgraph" alt=""/></div>
 <map name="aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_cgraph" id="aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_cgraph">
 <area shape="rect" title="Draw a pink line on the image." alt="" coords="5,5,139,32"/>
 <area shape="rect" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="187,5,359,32"/>
 </map>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a40fe37e1ba3df58796c2aa29e04e8567_icgraph.png" border="0" usemap="#aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_icgraph" alt=""/></div>
 <map name="aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_icgraph" id="aimage_8c_a40fe37e1ba3df58796c2aa29e04e8567_icgraph">
 <area shape="rect" title="Draw a pink line on the image." alt="" coords="1032,31,1165,57"/>
@@ -951,11 +1022,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="snake__gate__detection_8c_source.html#l00491">draw_gate_color_polygon()</a>, <a class="el" href="snake__gate__detection_8c_source.html#l00538">draw_gate_color_square()</a>, <a class="el" href="image_8c_source.html#l00891">image_draw_crosshair()</a>, <a class="el" href="image_8c_source.html#l00917">image_draw_line()</a>, <a class="el" href="image_8c_source.html#l00849">image_draw_rectangle()</a>, and <a class="el" href="image_8c_source.html#l00743">image_show_flow_color()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a5b1f40ae3b945985c9f4d09bdd313de8_icgraph.png" border="0" usemap="#aimage_8c_a5b1f40ae3b945985c9f4d09bdd313de8_icgraph" alt=""/></div>
 <map name="aimage_8c_a5b1f40ae3b945985c9f4d09bdd313de8_icgraph" id="aimage_8c_a5b1f40ae3b945985c9f4d09bdd313de8_icgraph">
 <area shape="rect" title="Draw a line on the image." alt="" coords="1539,263,1711,289"/>
@@ -1053,11 +1124,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="image_8c_source.html#l00849">849</a> of file <a class="el" href="image_8c_source.html">image.c</a>.</p>
 
 <p class="reference">References <a class="el" href="image_8c_source.html#l00932">image_draw_line_color()</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a34fd967076d5e4e4b65730a80638bb09_cgraph.png" border="0" usemap="#aimage_8c_a34fd967076d5e4e4b65730a80638bb09_cgraph" alt=""/></div>
 <map name="aimage_8c_a34fd967076d5e4e4b65730a80638bb09_cgraph" id="aimage_8c_a34fd967076d5e4e4b65730a80638bb09_cgraph">
 <area shape="rect" title="Draw a rectangle on the image." alt="" coords="5,5,176,32"/>
@@ -1096,11 +1167,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="cv_8c_source.html#l00112">cv_async_function()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00131">cv_blob_locator_func()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00084">cv_window_func()</a>, <a class="el" href="detect__window_8c_source.html#l00048">detect_window()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>, <a class="el" href="image_8c_source.html#l00464">pyramid_build()</a>, <a class="el" href="pano__unwrap_8c_source.html#l00132">set_output_image_size()</a>, <a class="el" href="undistort__image_8c_source.html#l00046">undistort_image_func()</a>, <a class="el" href="video__capture_8c_source.html#l00114">video_capture_save()</a>, <a class="el" href="video__thread_8c_source.html#l00090">video_thread_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_aa09d6434519478ba26eab12a96d600ba_icgraph.png" border="0" usemap="#aimage_8c_aa09d6434519478ba26eab12a96d600ba_icgraph" alt=""/></div>
 <map name="aimage_8c_aa09d6434519478ba26eab12a96d600ba_icgraph" id="aimage_8c_aa09d6434519478ba26eab12a96d600ba_icgraph">
 <area shape="rect" title="Free the image." alt="" coords="1300,284,1396,311"/>
@@ -1196,11 +1267,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="act__fast_8c_source.html#l00058">act_fast()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a1cbeeba8965707f0e5e9cb1e256c70c5_icgraph.png" border="0" usemap="#aimage_8c_a1cbeeba8965707f0e5e9cb1e256c70c5_icgraph" alt=""/></div>
 <map name="aimage_8c_a1cbeeba8965707f0e5e9cb1e256c70c5_icgraph" id="aimage_8c_a1cbeeba8965707f0e5e9cb1e256c70c5_icgraph">
 <area shape="rect" title="Get the gradient at a pixel location." alt="" coords="999,5,1161,32"/>
@@ -1261,11 +1332,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, and <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a5b47fdb25a4d3b575a1a1e1960d5f5e3_icgraph.png" border="0" usemap="#aimage_8c_a5b47fdb25a4d3b575a1a1e1960d5f5e3_icgraph" alt=""/></div>
 <map name="aimage_8c_a5b47fdb25a4d3b575a1a1e1960d5f5e3_icgraph" id="aimage_8c_a5b47fdb25a4d3b575a1a1e1960d5f5e3_icgraph">
 <area shape="rect" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]." alt="" coords="1203,5,1333,32"/>
@@ -1328,11 +1399,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, and <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_afc5615de31e098e68a4d2e3b4b686a1b_icgraph.png" border="0" usemap="#aimage_8c_afc5615de31e098e68a4d2e3b4b686a1b_icgraph" alt=""/></div>
 <map name="aimage_8c_afc5615de31e098e68a4d2e3b4b686a1b_icgraph" id="aimage_8c_afc5615de31e098e68a4d2e3b4b686a1b_icgraph">
 <area shape="rect" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="1203,5,1327,32"/>
@@ -1388,11 +1459,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="image_8c_source.html#l00726">726</a> of file <a class="el" href="image_8c_source.html">image.c</a>.</p>
 
 <p class="reference">References <a class="el" href="image_8c_source.html#l00743">image_show_flow_color()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a94dcb784f31e65bdc562452321371a5f_cgraph.png" border="0" usemap="#aimage_8c_a94dcb784f31e65bdc562452321371a5f_cgraph" alt=""/></div>
 <map name="aimage_8c_a94dcb784f31e65bdc562452321371a5f_cgraph" id="aimage_8c_a94dcb784f31e65bdc562452321371a5f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,144,57"/>
@@ -1472,11 +1543,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00080">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00081">flow_t::flow_y</a>, <a class="el" href="image_8c_source.html#l00891">image_draw_crosshair()</a>, <a class="el" href="image_8c_source.html#l00932">image_draw_line_color()</a>, <a class="el" href="lucas__kanade_8h_source.html#l00037">LARGE_FLOW_ERROR</a>, <a class="el" href="image_8h_source.html#l00079">flow_t::pos</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>, and <a class="el" href="image_8c_source.html#l00726">image_show_flow()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a9745125ba8d5be3b499b8ff972e189ee_cgraph.png" border="0" usemap="#aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_cgraph" alt=""/></div>
 <map name="aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_cgraph" id="aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_cgraph">
 <area shape="rect" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="5,31,183,57"/>
@@ -1484,11 +1555,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="447,31,619,57"/>
 </map>
 </div>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a9745125ba8d5be3b499b8ff972e189ee_icgraph.png" border="0" usemap="#aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_icgraph" alt=""/></div>
 <map name="aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_icgraph" id="aimage_8c_a9745125ba8d5be3b499b8ff972e189ee_icgraph">
 <area shape="rect" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images." alt="" coords="876,31,1053,57"/>
@@ -1549,11 +1620,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8c_source.html#l00701">image_show_points_color()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a6b1f1f53bd730945826724d139048831_cgraph.png" border="0" usemap="#aimage_8c_a6b1f1f53bd730945826724d139048831_cgraph" alt=""/></div>
 <map name="aimage_8c_a6b1f1f53bd730945826724d139048831_cgraph" id="aimage_8c_a6b1f1f53bd730945826724d139048831_cgraph">
 <area shape="rect" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="5,5,156,32"/>
@@ -1562,11 +1633,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="659,5,831,32"/>
 </map>
 </div>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a6b1f1f53bd730945826724d139048831_icgraph.png" border="0" usemap="#aimage_8c_a6b1f1f53bd730945826724d139048831_icgraph" alt=""/></div>
 <map name="aimage_8c_a6b1f1f53bd730945826724d139048831_icgraph" id="aimage_8c_a6b1f1f53bd730945826724d139048831_icgraph">
 <area shape="rect" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="876,5,1027,32"/>
@@ -1633,11 +1704,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="image_8c_source.html#l00891">image_draw_crosshair()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="image_8c_source.html#l00679">image_show_points()</a>.</p>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a5943c9835fd07452f25e10ae27f16720_cgraph.png" border="0" usemap="#aimage_8c_a5943c9835fd07452f25e10ae27f16720_cgraph" alt=""/></div>
 <map name="aimage_8c_a5943c9835fd07452f25e10ae27f16720_cgraph" id="aimage_8c_a5943c9835fd07452f25e10ae27f16720_cgraph">
 <area shape="rect" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="5,5,196,32"/>
@@ -1645,11 +1716,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="image_8c.html#a5b1f40ae3b945985c9f4d09bdd313de8" title="Draw a line on the image." alt="" coords="460,5,632,32"/>
 </map>
 </div>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a5943c9835fd07452f25e10ae27f16720_icgraph.png" border="0" usemap="#aimage_8c_a5943c9835fd07452f25e10ae27f16720_icgraph" alt=""/></div>
 <map name="aimage_8c_a5943c9835fd07452f25e10ae27f16720_icgraph" id="aimage_8c_a5943c9835fd07452f25e10ae27f16720_icgraph">
 <area shape="rect" title="Show points in an image by coloring them through giving the pixels the maximum value." alt="" coords="1075,5,1265,32"/>
@@ -1724,11 +1795,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>, and <a class="el" href="lucas__kanade_8c_source.html#l00275">opticFlowLK_flat()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a527ba2bdc0c396a6eec8f56ee5b8e097_icgraph.png" border="0" usemap="#aimage_8c_a527ba2bdc0c396a6eec8f56ee5b8e097_icgraph" alt=""/></div>
 <map name="aimage_8c_a527ba2bdc0c396a6eec8f56ee5b8e097_icgraph" id="aimage_8c_a527ba2bdc0c396a6eec8f56ee5b8e097_icgraph">
 <area shape="rect" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="1203,5,1384,32"/>
@@ -1783,11 +1854,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a170da2d6e19d1b99084a4fb18bc1a2ee_icgraph.png" border="0" usemap="#aimage_8c_a170da2d6e19d1b99084a4fb18bc1a2ee_icgraph" alt=""/></div>
 <map name="aimage_8c_a170da2d6e19d1b99084a4fb18bc1a2ee_icgraph" id="aimage_8c_a170da2d6e19d1b99084a4fb18bc1a2ee_icgraph">
 <area shape="rect" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="876,5,988,32"/>
@@ -1840,11 +1911,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="w5100_8c_source.html#l00099">dest</a>, <a class="el" href="image_8h_source.html#l00049">image_t::eulers</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8h_source.html#l00050">image_t::pprz_ts</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00494">calc_fast9_lukas_kanade()</a>, <a class="el" href="cv__blob__locator_8c_source.html#l00084">cv_window_func()</a>, and <a class="el" href="detect__window_8c_source.html#l00048">detect_window()</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a74a32006a620503a7ca62e5b2a86abd1_icgraph.png" border="0" usemap="#aimage_8c_a74a32006a620503a7ca62e5b2a86abd1_icgraph" alt=""/></div>
 <map name="aimage_8c_a74a32006a620503a7ca62e5b2a86abd1_icgraph" id="aimage_8c_a74a32006a620503a7ca62e5b2a86abd1_icgraph">
 <area shape="rect" title="Convert an image to grayscale." alt="" coords="876,56,1029,83"/>
@@ -1944,11 +2015,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="w5100_8c_source.html#l00099">dest</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="colorfilter_8c_source.html#l00059">colorfilter_func()</a>, <a class="el" href="detect__gate_8c_source.html#l00134">detect_gate_func()</a>, and <a class="el" href="snake__gate__detection_8c_source.html#l00135">snake_gate_detection()</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_aa5bba6b2f386abf2ac701492f6a48bc9_icgraph.png" border="0" usemap="#aimage_8c_aa5bba6b2f386abf2ac701492f6a48bc9_icgraph" alt=""/></div>
 <map name="aimage_8c_aa5bba6b2f386abf2ac701492f6a48bc9_icgraph" id="aimage_8c_aa5bba6b2f386abf2ac701492f6a48bc9_icgraph">
 <area shape="rect" title="Filter colors in an YUV422 image." alt="" coords="575,56,749,83"/>
@@ -2011,15 +2082,96 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="w5100_8c_source.html#l00099">dest</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a7778908dd0a40a33f1fe20080d49f99c_icgraph.png" border="0" usemap="#aimage_8c_a7778908dd0a40a33f1fe20080d49f99c_icgraph" alt=""/></div>
 <map name="aimage_8c_a7778908dd0a40a33f1fe20080d49f99c_icgraph" id="aimage_8c_a7778908dd0a40a33f1fe20080d49f99c_icgraph">
 <area shape="rect" title="Simplified high&#45;speed low CPU downsample function without averaging downsample factor must be 1,..." alt="" coords="203,5,411,32"/>
 <area shape="rect" href="viewvideo_8c.html#a4796c0ca6ba23a9dd0172784d2e94d59" title="Handles all the video streaming and saving of the image shots This is a separate thread,..." alt="" coords="5,5,155,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0652830e349cafd5ae668e9a0229decb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0652830e349cafd5ae668e9a0229decb">&#9670;&nbsp;</a></span>ker_mul_3x3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ker_mul_3x3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> const *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int_fast8_t const *&#160;</td>
+          <td class="paramname"><em>kernel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>total</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>setting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>YUV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kernel multiplication for a 3 x 3 kernel. </p>
+<p>Pixels outside the edges are taken to be 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The source values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kernel</td><td>The kernel values </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">total</td><td>The kernel total, set to 1 if the result should not be normalised </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">setting</td><td>Variable is used to indicate which pixels the multiplication uses at a specific edges. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">YUV</td><td>A bool that adds an extra pixel offset if the YUV format is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="image_8c_source.html#l01013">1013</a> of file <a class="el" href="image_8c_source.html">image.c</a>.</p>
+
+<p class="reference">References <a class="el" href="dw1000__arduino_8c_source.html#l00199">offset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="image_8c_source.html#l01068">image_convolution_3x3()</a>.</p>
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="image_8c_a0652830e349cafd5ae668e9a0229decb_icgraph.png" border="0" usemap="#aimage_8c_a0652830e349cafd5ae668e9a0229decb_icgraph" alt=""/></div>
+<map name="aimage_8c_a0652830e349cafd5ae668e9a0229decb_icgraph" id="aimage_8c_a0652830e349cafd5ae668e9a0229decb_icgraph">
+<area shape="rect" title="Kernel multiplication for a 3 x 3 kernel." alt="" coords="231,5,336,32"/>
+<area shape="rect" href="image_8c.html#a0c35149d270f5a9307c679337fcba64f" title="Image convolution for a 3x3 kernel." alt="" coords="5,5,183,32"/>
 </map>
 </div>
 
@@ -2079,11 +2231,11 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8c_source.html#l00368">image_add_border()</a>, <a class="el" href="image_8c_source.html#l00075">image_free()</a>, and <a class="el" href="image_8c_source.html#l00414">pyramid_next_level()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00074">opticFlowLK()</a>.</p>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a6656ee75c4f8c05dbebbab3fae1b332a_cgraph.png" border="0" usemap="#aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_cgraph" alt=""/></div>
 <map name="aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_cgraph" id="aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_cgraph">
 <area shape="rect" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="5,56,120,83"/>
@@ -2093,11 +2245,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="367,56,477,83"/>
 </map>
 </div>
-<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a6656ee75c4f8c05dbebbab3fae1b332a_icgraph.png" border="0" usemap="#aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_icgraph" alt=""/></div>
 <map name="aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_icgraph" id="aimage_8c_a6656ee75c4f8c05dbebbab3fae1b332a_icgraph">
 <area shape="rect" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="1025,5,1140,32"/>
@@ -2159,22 +2311,22 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8h_source.html#l00045">image_t::type</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="image_8c_source.html#l00464">pyramid_build()</a>.</p>
-<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a038faec3786d8baa2e38c7672129e276_cgraph.png" border="0" usemap="#aimage_8c_a038faec3786d8baa2e38c7672129e276_cgraph" alt=""/></div>
 <map name="aimage_8c_a038faec3786d8baa2e38c7672129e276_cgraph" id="aimage_8c_a038faec3786d8baa2e38c7672129e276_cgraph">
 <area shape="rect" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="5,5,156,32"/>
 <area shape="rect" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image." alt="" coords="204,5,315,32"/>
 </map>
 </div>
-<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="image_8c_a038faec3786d8baa2e38c7672129e276_icgraph.png" border="0" usemap="#aimage_8c_a038faec3786d8baa2e38c7672129e276_icgraph" alt=""/></div>
 <map name="aimage_8c_a038faec3786d8baa2e38c7672129e276_icgraph" id="aimage_8c_a038faec3786d8baa2e38c7672129e276_icgraph">
 <area shape="rect" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding." alt="" coords="1188,5,1339,32"/>
@@ -2264,7 +2416,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_02b33bf6f772461f444923131a9a8dda.html">vision</a></li><li class="navelem"><a class="el" href="image_8c.html">image.c</a></li>
-    <li class="footer">Generated on Thu Apr 4 2024 08:59:25 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 09:29:26 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

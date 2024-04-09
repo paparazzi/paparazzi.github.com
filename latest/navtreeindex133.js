@@ -1,5 +1,11 @@
 var NAVTREEINDEX133 =
 {
+"module__gps_optitrack.html":[1,157],
+"module__gps_optitrack.html#module_load_example__gps_optitrack":[1,157,0],
+"module__gps_optitrack.html#module_xml__gps_optitrack":[1,157,0,0],
+"module__gps_piksi.html":[1,158],
+"module__gps_piksi.html#configuration__gps_piksi":[1,158,1],
+"module__gps_piksi.html#functions__gps_piksi":[1,158,2],
 "module__gps_piksi.html#module_load_example__gps_piksi":[1,158,0],
 "module__gps_piksi.html#module_xml__gps_piksi":[1,158,2,0],
 "module__gps_sim.html":[1,159],
@@ -216,9 +222,9 @@ var NAVTREEINDEX133 =
 "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5":[1,189,0],
 "module__imu_aspirin_v1_0.html":[1,190],
 "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0":[1,190,0],
+"module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1":[1,190,0,0],
 "module__imu_aspirin_v1_5.html":[1,191],
 "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5":[1,191,0],
-"module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1":[1,191,0,0],
 "module__imu_aspirin_v2_1.html":[1,192],
 "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1":[1,192,0],
 "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2":[1,192,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX133 =
 "module__imu_chimera.html#module_load_example__imu_chimera":[1,197,0],
 "module__imu_chimera.html#module_xml__imu_chimera":[1,197,0,0],
 "module__imu_common.html":[1,198],
-"module__imu_common.html#configuration__imu_common":[1,198,1],
-"module__imu_common.html#functions__imu_common":[1,198,2],
-"module__imu_common.html#module_load_example__imu_common":[1,198,0],
-"module__imu_common.html#module_xml__imu_common":[1,198,2,0],
-"module__imu_cube.html":[1,199],
-"module__imu_cube.html#functions__imu_cube":[1,199,1],
-"module__imu_cube.html#module_load_example__imu_cube":[1,199,0]
+"module__imu_common.html#configuration__imu_common":[1,198,1]
 };

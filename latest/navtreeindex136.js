@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"module__nav_rosette.html":[1,332],
+"module__nav_rosette.html#functions__nav_rosette":[1,332,1],
+"module__nav_rosette.html#module_load_example__nav_rosette":[1,332,0],
+"module__nav_rosette.html#module_xml__nav_rosette":[1,332,1,0],
+"module__nav_rotorcraft.html":[1,333],
+"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,333,2],
 "module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,333,1],
 "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,333,0],
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,333,2,0],
@@ -124,9 +130,10 @@ var NAVTREEINDEX136 =
 "module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,356,2,0],
 "module__osd_max7456.html":[1,483],
 "module__osd_max7456.html#configuration__osd_max7456":[1,483,1],
+"module__osd_max7456.html#event_functions":[1,483,2,0],
 "module__osd_max7456.html#functions__osd_max7456":[1,483,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,483,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,483,2,0],
+"module__osd_max7456.html#module_xml__osd_max7456":[1,483,2,1],
 "module__pano_unwrap.html":[1,484],
 "module__pano_unwrap.html#configuration__pano_unwrap":[1,484,1],
 "module__pano_unwrap.html#functions__pano_unwrap":[1,484,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX136 =
 "module__radio_control_spektrum.html#module_load_example__radio_control_spektrum":[1,365,0],
 "module__radio_control_spektrum.html#module_xml__radio_control_spektrum":[1,365,2,0],
 "module__radio_control_superbitrf_rc.html":[1,366],
-"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,366,1],
-"module__radio_control_superbitrf_rc.html#functions__radio_control_superbitrf_rc":[1,366,2],
-"module__radio_control_superbitrf_rc.html#module_load_example__radio_control_superbitrf_rc":[1,366,0],
-"module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,366,2,0],
-"module__range_forcefield.html":[1,490],
-"module__range_forcefield.html#configuration__range_forcefield":[1,490,1],
-"module__range_forcefield.html#functions__range_forcefield":[1,490,2],
-"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0]
+"module__radio_control_superbitrf_rc.html#configuration__radio_control_superbitrf_rc":[1,366,1]
 };

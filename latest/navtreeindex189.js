@@ -1,5 +1,9 @@
 var NAVTREEINDEX189 =
 {
+"reg__avi_8h.html#a94ad3df832c9797dfdc1bcca1002199c":[12,0,1,0,1,2,0,4,1],
+"reg__avi_8h.html#ab51bf78bd111d8adeb207049668a437e":[12,0,1,0,1,2,0,4,11],
+"reg__avi_8h.html#abd5682e22066c02fcd5a34d46d696fe5":[12,0,1,0,1,2,0,4,4],
+"reg__avi_8h.html#acb3647e9492596bdcf2e5c0f2e2166ed":[12,0,1,0,1,2,0,4,9],
 "reg__avi_8h.html#ad45bd5319fa2fc4027efa566b8d5087c":[12,0,1,0,1,2,0,4,8],
 "reg__avi_8h.html#af11dfe8e1fa4a63a24ceeb28d22d3bf2":[12,0,1,0,1,2,0,4,2],
 "reg__avi_8h.html#af4a63a51a2c89593dc2db8580f11b9e0":[12,0,1,0,1,2,0,4,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX189 =
 "rotorcraft_2autopilot__utils_8c.html#a042859caaa6cc4c56b7918a0715b674d":[12,0,1,0,3,2,17,1],
 "rotorcraft_2autopilot__utils_8c.html#a29020e550d0d136a0212ba92940fd672":[12,0,1,0,3,2,17,0],
 "rotorcraft_2autopilot__utils_8c.html#a2f9b6238e103bdbb862abb30b05768f2":[12,0,1,0,3,2,17,3],
-"rotorcraft_2autopilot__utils_8c.html#a9b0eea7b5b6451e8d115975b3391c50f":[12,0,1,0,3,2,17,2],
-"rotorcraft_2autopilot__utils_8c_source.html":[12,0,1,0,3,2,17],
-"rotorcraft_2autopilot__utils_8h.html":[12,0,1,0,3,2,18],
-"rotorcraft_2autopilot__utils_8h.html#a9b0eea7b5b6451e8d115975b3391c50f":[12,0,1,0,3,2,18,2],
-"rotorcraft_2autopilot__utils_8h.html#aa19a7b2696fa0558df180bdf5410ccc1":[12,0,1,0,3,2,18,1]
+"rotorcraft_2autopilot__utils_8c.html#a9b0eea7b5b6451e8d115975b3391c50f":[12,0,1,0,3,2,17,2]
 };

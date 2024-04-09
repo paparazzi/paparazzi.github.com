@@ -1,5 +1,6 @@
 var rotwing__state_8c =
 [
+    [ "ADC_WING_ROTATION", "rotwing__state_8c.html#a159f6ad896e81efd11ed55b73291ae03", null ],
     [ "AIRSPEED_IMPORTANCE_IN_FORWARD_WEIGHT", "rotwing__state_8c.html#a78e33cb22391187591dd40431725af17", null ],
     [ "ROTWING_HALF_SKEW_ANGLE_DEG", "rotwing__state_8c.html#acb45c024d028b8e1a5899d9102fb233f", null ],
     [ "ROTWING_HALF_SKEW_ANGLE_HALF_RANGE", "rotwing__state_8c.html#a7eab0f051269345019ffc70a3d4ebc11", null ],

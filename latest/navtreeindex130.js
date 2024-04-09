@@ -1,5 +1,9 @@
 var NAVTREEINDEX130 =
 {
+"module__actuators_dualpwm.html":[1,7],
+"module__actuators_dualpwm.html#module_load_example__actuators_dualpwm":[1,7,0],
+"module__actuators_dualpwm.html#module_xml__actuators_dualpwm":[1,7,0,0],
+"module__actuators_dummy.html":[1,8],
 "module__actuators_dummy.html#module_load_example__actuators_dummy":[1,8,0],
 "module__actuators_dummy.html#module_xml__actuators_dummy":[1,8,0,0],
 "module__actuators_esc32.html":[1,9],
@@ -77,8 +81,10 @@ var NAVTREEINDEX130 =
 "module__ahrs_float_cmpl_quat.html#module_xml__ahrs_float_cmpl_quat":[1,27,1,0],
 "module__ahrs_float_cmpl_rmat.html":[1,28],
 "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat":[1,28,1],
+"module__ahrs_float_cmpl_rmat.html#configure":[1,28,1,0],
+"module__ahrs_float_cmpl_rmat.html#define":[1,28,1,1],
 "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat":[1,28,0],
-"module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,28,1,0],
+"module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat":[1,28,1,2],
 "module__ahrs_float_dcm.html":[1,29],
 "module__ahrs_float_dcm.html#configuration__ahrs_float_dcm":[1,29,1],
 "module__ahrs_float_dcm.html#module_load_example__ahrs_float_dcm":[1,29,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX130 =
 "module__baro_hca.html":[1,394],
 "module__baro_hca.html#configuration__baro_hca":[1,394,1],
 "module__baro_hca.html#functions__baro_hca":[1,394,2],
-"module__baro_hca.html#module_load_example__baro_hca":[1,394,0],
-"module__baro_hca.html#module_xml__baro_hca":[1,394,2,0],
-"module__baro_mpl3115.html":[1,395],
-"module__baro_mpl3115.html#configuration__baro_mpl3115":[1,395,1],
-"module__baro_mpl3115.html#functions__baro_mpl3115":[1,395,2],
-"module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,395,0],
-"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0]
+"module__baro_hca.html#module_load_example__baro_hca":[1,394,0]
 };
