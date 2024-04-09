@@ -126,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a39be1be5c9162dcf8581eb6f9f03b7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html#a39be1be5c9162dcf8581eb6f9f03b7b1">gpio_setup_input_pulldown</a> (ioportid_t port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpios)</td></tr>
 <tr class="memdesc:a39be1be5c9162dcf8581eb6f9f03b7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup one or more pins of the given GPIO port as inputs with pull down resistors enabled.  <a href="chibios_2mcu__periph_2gpio__arch_8c.html#a39be1be5c9162dcf8581eb6f9f03b7b1">More...</a><br /></td></tr>
 <tr class="separator:a39be1be5c9162dcf8581eb6f9f03b7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173e80508bf07e53c2b7b5e3d460fbf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9">gpio_setup_pin_af_pullup</a> (ioportid_t port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af)</td></tr>
+<tr class="memdesc:a173e80508bf07e53c2b7b5e3d460fbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup a gpio for input pullup with alternate function.  <a href="chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9">More...</a><br /></td></tr>
+<tr class="separator:a173e80508bf07e53c2b7b5e3d460fbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528b4b25ff5b01c8fc531698281f80f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">gpio_setup_pin_af</a> (ioportid_t port, <a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af, bool is_output)</td></tr>
 <tr class="memdesc:a528b4b25ff5b01c8fc531698281f80f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup a gpio for input or output with alternate function.  <a href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">More...</a><br /></td></tr>
 <tr class="separator:a528b4b25ff5b01c8fc531698281f80f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,9 +487,9 @@ Functions</h2></td></tr>
 <p>Setup a gpio for input or output with alternate function. </p>
 <p>This is an STM32 specific helper funtion and should only be used in stm32 code. </p>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">61</a> of file <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">65</a> of file <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00133">actuators_dshot_arch_init()</a>, <a class="el" href="stm32_2modules_2actuators_2actuators__dualpwm__arch_8c_source.html#l00046">actuators_dualpwm_arch_init()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00267">actuators_pwm_arch_init()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>, <a class="el" href="stm32_2modules_2radio__control_2ppm__arch_8c_source.html#l00119">ppm_arch_init()</a>, <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00094">pwm_input_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00675">spi1_arch_init()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00766">spi2_arch_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00162">actuators_dshot_arch_init()</a>, <a class="el" href="stm32_2modules_2actuators_2actuators__dualpwm__arch_8c_source.html#l00046">actuators_dualpwm_arch_init()</a>, <a class="el" href="chibios_2modules_2actuators_2actuators__pwm__arch_8c_source.html#l00267">actuators_pwm_arch_init()</a>, <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>, <a class="el" href="stm32_2modules_2radio__control_2ppm__arch_8c_source.html#l00119">ppm_arch_init()</a>, <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00094">pwm_input_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00675">spi1_arch_init()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00766">spi2_arch_init()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -505,6 +508,58 @@ Functions</h2></td></tr>
 <area shape="rect" href="group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization." alt="" coords="253,360,365,387"/>
 <area shape="rect" href="light__scheduler_8c.html#a8306780e037cc4384e8a0a33da77bf8b" title=" " alt="" coords="5,157,155,184"/>
 <area shape="rect" href="pwm__meas_8c.html#a84d3630a1807bc21333ea5cf9e9357f8" title=" " alt="" coords="17,259,143,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a173e80508bf07e53c2b7b5e3d460fbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173e80508bf07e53c2b7b5e3d460fbf9">&#9670;&nbsp;</a></span>gpio_setup_pin_af_pullup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gpio_setup_pin_af_pullup </td>
+          <td>(</td>
+          <td class="paramtype">ioportid_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>af</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup a gpio for input pullup with alternate function. </p>
+<p>This is an STM32 specific helper funtion and should only be used in stm32 code. </p>
+
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">61</a> of file <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00162">actuators_dshot_arch_init()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2mcu__periph_2gpio__arch_8c_a173e80508bf07e53c2b7b5e3d460fbf9_icgraph.png" border="0" usemap="#achibios_2mcu__periph_2gpio__arch_8c_a173e80508bf07e53c2b7b5e3d460fbf9_icgraph" alt=""/></div>
+<map name="achibios_2mcu__periph_2gpio__arch_8c_a173e80508bf07e53c2b7b5e3d460fbf9_icgraph" id="achibios_2mcu__periph_2gpio__arch_8c_a173e80508bf07e53c2b7b5e3d460fbf9_icgraph">
+<area shape="rect" title="Setup a gpio for input pullup with alternate function." alt="" coords="243,5,429,32"/>
+<area shape="rect" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#a1d673a4808cd523c8c47d82ef0c56f29" title="Arch dependent init." alt="" coords="5,5,195,32"/>
 </map>
 </div>
 
@@ -545,14 +600,14 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00086">86</a> of file <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00090">90</a> of file <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00332">adc_init()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2gpio__arch_8c_ae9cae0077ed50d293b5288fe4c15bbb6_icgraph.png" border="0" usemap="#achibios_2mcu__periph_2gpio__arch_8c_ae9cae0077ed50d293b5288fe4c15bbb6_icgraph" alt=""/></div>
 <map name="achibios_2mcu__periph_2gpio__arch_8c_ae9cae0077ed50d293b5288fe4c15bbb6_icgraph" id="achibios_2mcu__periph_2gpio__arch_8c_ae9cae0077ed50d293b5288fe4c15bbb6_icgraph">
 <area shape="rect" title="Setup a gpio for analog use." alt="" coords="487,31,657,57"/>
@@ -572,7 +627,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html">gpio_arch.c</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

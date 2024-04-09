@@ -1,7 +1,7 @@
 var adxl345__spi_8h_structAdxl345__Spi =
 [
     [ "config", "adxl345__spi_8h.html#a512217bb149d9b72cad0218cef323d66", null ],
-    [ "data", "adxl345__spi_8h.html#a677d8335b10fee87a31c6d519354ae61", null ],
+    [ "data", "adxl345__spi_8h.html#acf87bff19a90d118ebc765c592c586a1", null ],
     [ "data_available", "adxl345__spi_8h.html#aa75edce03dc0f14c3712d23a534173b2", null ],
     [ "init_status", "adxl345__spi_8h.html#aa6540d8535d83c0b6749431846d63fe4", null ],
     [ "initialized", "adxl345__spi_8h.html#a859fc044d9d5ade66994d9b8db4d9d05", null ],

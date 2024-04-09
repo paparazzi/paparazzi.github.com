@@ -2,10 +2,10 @@ var mpu60x0__spi_8h =
 [
     [ "Mpu60x0_Spi", "mpu60x0__spi_8h.html#structMpu60x0__Spi", [
       [ "config", "mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a", null ],
-      [ "data_accel", "mpu60x0__spi_8h.html#a980206dc83e0f764d4604492dcfa97ec", null ],
+      [ "data_accel", "mpu60x0__spi_8h.html#ab4e9390b3d406d2fecc3854bbb10bb6c", null ],
       [ "data_available", "mpu60x0__spi_8h.html#a01156712858fdf12eabe83b08eab5a9a", null ],
       [ "data_ext", "mpu60x0__spi_8h.html#a20028497bd8f071099b0f020462ac3f6", null ],
-      [ "data_rates", "mpu60x0__spi_8h.html#a763983e7dffb2b7798193a2b96185653", null ],
+      [ "data_rates", "mpu60x0__spi_8h.html#aa38e22e5d80fcaf07a8f22cbbc904e54", null ],
       [ "rx_buf", "mpu60x0__spi_8h.html#aac2c5a39f64f336ccb130c06b247bebf", null ],
       [ "slave_init_status", "mpu60x0__spi_8h.html#a9beb9ee594db50aaa29bb140cb0ac68c", null ],
       [ "spi_p", "mpu60x0__spi_8h.html#aa090ea7e13c44b8cc98ca965601e351c", null ],

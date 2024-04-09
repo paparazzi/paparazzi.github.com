@@ -106,10 +106,11 @@ $(document).ready(function(){initNavTree('structDSHOTDriver.html',''); initResiz
 <area shape="rect" title="DSHOT driver structure." alt="" coords="142,288,250,315"/>
 <area shape="rect" href="esc__dshot_8h.html#structDSHOTConfig" title="DSHOT Driver configuration structure." alt="" coords="22,184,130,211"/>
 <area shape="rect" href="esc__dshot_8h.html#unionDshotDmaBuffer" title=" " alt="" coords="5,95,136,121"/>
-<area shape="rect" title=" " alt="" coords="165,5,224,32"/>
+<area shape="rect" title=" " alt="" coords="177,5,236,32"/>
 <area shape="rect" href="esc__dshot_8h.html#unionDshotPacket" title=" " alt="" coords="211,95,314,121"/>
 <area shape="rect" href="esc__dshot_8h.html#structDshotPackets" title=" " alt="" coords="211,184,320,211"/>
-<area shape="rect" href="esc__dshot_8h.html#structDshotTelemetry" title="telemetry packed as sent by some KISS ESC" alt="" coords="339,95,464,121"/>
+<area shape="rect" href="esc__dshot_8h.html#structDshotTelemetry" title="telemetry with timestamp" alt="" coords="339,95,464,121"/>
+<area shape="rect" href="esc__dshot_8h.html#structDshotTelemetryFrame" title="telemetry packed as sent by some KISS ESC" alt="" coords="318,5,485,32"/>
 <area shape="rect" href="hal__stm32__dma_8h.html#structDMAConfig" title="DMA stream configuration structure." alt="" coords="386,184,481,211"/>
 <area shape="rect" href="hal__stm32__dma_8h.html#structDMADriver" title="Structure representing a DMA driver." alt="" coords="424,288,517,315"/>
 </map>
@@ -144,13 +145,21 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2d919233183b582c8e5b0159a7a72f88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDSHOTDriver.html#a2d919233183b582c8e5b0159a7a72f88">crc_errors</a></td></tr>
 <tr class="memdesc:a2d919233183b582c8e5b0159a7a72f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of crc errors  <a href="structDSHOTDriver.html#a2d919233183b582c8e5b0159a7a72f88">More...</a><br /></td></tr>
 <tr class="separator:a2d919233183b582c8e5b0159a7a72f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef409e13aba1ac9ca83dc141cca09bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDSHOTDriver.html#abef409e13aba1ac9ca83dc141cca09bb">tlm_frame_nb</a></td></tr>
+<tr class="memdesc:abef409e13aba1ac9ca83dc141cca09bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of sucessful telemetry frame received  <a href="structDSHOTDriver.html#abef409e13aba1ac9ca83dc141cca09bb">More...</a><br /></td></tr>
+<tr class="separator:abef409e13aba1ac9ca83dc141cca09bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0661fe630b9a902d9228864c4cf77b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDSHOTDriver.html#adc0661fe630b9a902d9228864c4cf77b">bit0Duty</a></td></tr>
+<tr class="separator:adc0661fe630b9a902d9228864c4cf77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88717bf24f98fe712d23c49106ba60fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDSHOTDriver.html#a88717bf24f98fe712d23c49106ba60fc">bit1Duty</a></td></tr>
+<tr class="separator:a88717bf24f98fe712d23c49106ba60fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3760849831455c2dc6a5e1e229286f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="esc__dshot_8h.html#structDshotPackets">DshotPackets</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a">dshotMotors</a></td></tr>
+<tr class="memdesc:a3760849831455c2dc6a5e1e229286f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">object managing dma control frame for outgoing command  <a href="structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a">More...</a><br /></td></tr>
 <tr class="separator:a3760849831455c2dc6a5e1e229286f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DSHOT driver structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00239">239</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00287">287</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aae0d2fcfcd2b66f865ae6c955ac6d60a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae0d2fcfcd2b66f865ae6c955ac6d60a">&#9670;&nbsp;</a></span>THD_WORKING_AREA()</h2>
@@ -197,9 +206,45 @@ Data Fields</h2></td></tr>
 
 <p>mailbox buffer for dshot telemetry thread </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00263">263</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00311">311</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>.</p>
+
+</div>
+</div>
+<a id="adc0661fe630b9a902d9228864c4cf77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0661fe630b9a902d9228864c4cf77b">&#9670;&nbsp;</a></span>bit0Duty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> DSHOTDriver::bit0Duty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00329">329</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>.</p>
+
+</div>
+</div>
+<a id="a88717bf24f98fe712d23c49106ba60fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88717bf24f98fe712d23c49106ba60fc">&#9670;&nbsp;</a></span>bit1Duty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> DSHOTDriver::bit1Duty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00330">330</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>.</p>
 
 </div>
 </div>
@@ -217,9 +262,9 @@ Data Fields</h2></td></tr>
 
 <p>DMA config associated with pwm timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00243">243</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00291">291</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00322">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00259">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00482">dshotTlmRec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00623">buildDshotDmaBuffer()</a>, <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00330">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, <a class="el" href="esc__dshot_8c_source.html#l00260">dshotStop()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00712">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -237,9 +282,9 @@ Data Fields</h2></td></tr>
 
 <p>number of crc errors </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00273">273</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00321">321</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00349">dshotGetCrcErrorsCount()</a>, <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00482">dshotTlmRec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00442">dshotGetCrcErrorCount()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00712">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -257,9 +302,9 @@ Data Fields</h2></td></tr>
 
 <p>DMA config associated with pwm timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00248">248</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00296">296</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>.</p>
 
 </div>
 </div>
@@ -277,9 +322,9 @@ Data Fields</h2></td></tr>
 
 <p>DMA driver associated with pwm timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00258">258</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00306">306</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00322">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00260">dshotStop()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +340,11 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00280">280</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p>object managing dma control frame for outgoing command </p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00362">dshotGetTelemetry()</a>, <a class="el" href="esc__dshot_8c_source.html#l00322">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00259">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00306">dshotSendThrottles()</a>, <a class="el" href="esc__dshot_8c_source.html#l00230">dshotSetThrottle()</a>, <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00482">dshotTlmRec()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00356">356</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00623">buildDshotDmaBuffer()</a>, <a class="el" href="esc__dshot_8c_source.html#l00468">dshotGetTelemetry()</a>, <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00330">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00385">dshotSendThrottles()</a>, <a class="el" href="esc__dshot_8c_source.html#l00301">dshotSetThrottle()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00712">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -315,9 +362,9 @@ Data Fields</h2></td></tr>
 
 <p>mailbox for dshot telemetry thread </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00268">268</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00316">316</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00322">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00482">dshotTlmRec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00404">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00712">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -335,9 +382,29 @@ Data Fields</h2></td></tr>
 
 <p>PWM config associated with pwm timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00253">253</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00301">301</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00138">dshotStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>.</p>
+
+</div>
+</div>
+<a id="abef409e13aba1ac9ca83dc141cca09bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef409e13aba1ac9ca83dc141cca09bb">&#9670;&nbsp;</a></span>tlm_frame_nb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> DSHOTDriver::tlm_frame_nb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of sucessful telemetry frame received </p>
+
+<p class="definition">Definition at line <a class="el" href="esc__dshot_8h_source.html#l00326">326</a> of file <a class="el" href="esc__dshot_8h_source.html">esc_dshot.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="esc__dshot_8c_source.html#l00454">dshotGetTelemetryFrameCount()</a>, <a class="el" href="esc__dshot_8c_source.html#l00154">dshotStart()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00712">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -350,7 +417,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structDSHOTDriver.html">DSHOTDriver</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -91,13 +91,24 @@ $(document).ready(function(){initNavTree('module__actuators_dshot.html',''); ini
 <div class="textblock"><p><b>Driver for DSHOT speed controller.</b></p>
 <p><b></b></p>
 <p>Beware that servo output from the same timer cannot mix PWM and DSHOT. It might be required to disable by hand some PWM output to avoid conflicts when they are activated by default on a board. Currently only implemented over ChibiOS.</p>
+<p>Configure DSHOT_BIDIR to TRUE to enable bidirectionnal DSHOT. It overrides the rpm values from the UART dshot telemetry. UART dshot telemetry is still usefull for current and voltage telemetry.</p>
 <h1><a class="anchor" id="module_load_example__actuators_dshot"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">module</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot&quot;</span>&gt;</div>
-<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DSHOT_SPEED&quot; value=&quot;600&quot; /&gt;\n  &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;define name=&quot;DSHOT_SPEED&quot; value=&quot;600&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;DSHOT_BIDIR&quot; value=&quot;FALSE&quot; /&gt;\n    &#39;</span></div>
+<div class="line">  <span class="keyword">b</span><span class="stringliteral">&#39;&lt;configure name=&quot;DSHOT1_GPT_TIM&quot; value=&quot;7&quot; /&gt;\n  &#39;</span></div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__actuators_dshot"></a>
 Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>DSHOT_BIDIR</code> <b>value:</b> <em>FALSE</em> <br  />
+ Description: Bidirectionnal DSHOT for fast rpm feedback</li>
+<li><b>name:</b> <code>DSHOT1_GPT_TIM</code> <b>value:</b> <em>7</em> <br  />
+ Description: GPT driver used for telemetry timeout</li>
+</ul>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
@@ -118,6 +129,10 @@ Source Files</h2>
 <li>arch dependent: modules/actuators/actuators_dshot_arch.c</li>
 <li>arch dependent: <a class="el" href="esc__dshot_8c.html" title="DSHOT driver based on ChibiOS.">modules/actuators/esc_dshot.c</a></li>
 <li>arch dependent: <a class="el" href="hal__stm32__dma_8c.html" title="STM32 DMA subsystem driver header.">mcu_periph/hal_stm32_dma.c</a></li>
+<li>arch dependent: <a class="el" href="dshot__rpmCapture_8c.html">modules/actuators/dshot_rpmCapture.c</a></li>
+<li>arch dependent: <a class="el" href="dshot__erps_8c.html">modules/actuators/dshot_erps.c</a></li>
+<li>arch dependent: <a class="el" href="input__capture__arch_8c.html">mcu_periph/input_capture_arch.c</a></li>
+<li>arch dependent: <a class="el" href="timerDmaCache_8c.html">mcu_periph/timerDmaCache.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__actuators_dshot"></a>
 Raw actuators_dshot.xml file:</h2>
@@ -131,8 +146,15 @@ Raw actuators_dshot.xml file:</h2>
 <div class="line">      <span class="keyword">Beware</span> <span class="keyword">that</span> <span class="keyword">servo</span> <span class="keyword">output</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">same</span> <span class="keyword">timer</span> <span class="keyword">cannot</span> <span class="keyword">mix</span> <span class="keyword">PWM</span> <span class="keyword">and</span> <span class="keyword">DSHOT.</span></div>
 <div class="line">      <span class="keyword">It</span> <span class="keyword">might</span> <span class="keyword">be</span> <span class="keyword">required</span> <span class="keyword">to</span> <span class="keyword">disable</span> <span class="keyword">by</span> <span class="keyword">hand</span> <span class="keyword">some</span> <span class="keyword">PWM</span> <span class="keyword">output</span> <span class="keyword">to</span> <span class="keyword">avoid</span> <span class="keyword">conflicts</span> <span class="keyword">when</span> <span class="keyword">they</span> <span class="keyword">are</span> <span class="keyword">activated</span> <span class="keyword">by</span> <span class="keyword">default</span> <span class="keyword">on</span> <span class="keyword">a</span> <span class="keyword">board.</span></div>
 <div class="line">      <span class="keyword">Currently</span> <span class="keyword">only</span> <span class="keyword">implemented</span> <span class="keyword">over</span> <span class="keyword">ChibiOS.</span></div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">Configure</span> <span class="keyword">DSHOT_BIDIR</span> <span class="keyword">to</span> <span class="keyword">TRUE</span> <span class="keyword">to</span> <span class="keyword">enable</span> <span class="keyword">bidirectionnal</span> <span class="keyword">DSHOT.</span></div>
+<div class="line">      <span class="keyword">It</span> <span class="keyword">overrides</span> <span class="keyword">the</span> <span class="keyword">rpm</span> <span class="keyword">values</span> <span class="keyword">from</span> <span class="keyword">the</span> <span class="keyword">UART</span> <span class="keyword">dshot</span> <span class="keyword">telemetry.</span></div>
+<div class="line">      <span class="keyword">UART</span> <span class="keyword">dshot</span> <span class="keyword">telemetry</span> <span class="keyword">is</span> <span class="keyword">still</span> <span class="keyword">usefull</span> <span class="keyword">for</span> <span class="keyword">current</span> <span class="keyword">and</span> <span class="keyword">voltage</span> <span class="keyword">telemetry.</span></div>
+<div class="line"> </div>
 <div class="line">    &lt;/<span class="keywordtype">description</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_BIDIR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;FALSE&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;Bidirectionnal DSHOT for fast rpm feedback&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_SPEED&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;600&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;DSHOT speed (150,300,600,1200)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT1_GPT_TIM&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;7&quot;</span> <span class="keyword">description</span>=<span class="stringliteral">&quot;GPT driver used for telemetry timeout&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">depends</span>&gt;<span class="keyword">actuators</span>,@<span class="keyword">commands</span>&lt;/<span class="keywordtype">depends</span>&gt;</div>
@@ -142,9 +164,20 @@ Raw actuators_dshot.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">configure</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_BIDIR&quot;</span> <span class="keyword">default</span>=<span class="stringliteral">&quot;FALSE&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;actuators_dshot_arch.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;esc_dshot.c&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(RTOS),chibios)&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;hal_stm32_dma.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(RTOS),chibios)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span>/&gt;</div>
+<div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">cond</span>=<span class="stringliteral">&quot;ifeq ($(DSHOT_BIDIR),TRUE)&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT_BIDIR&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;$(DSHOT_BIDIR)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;USE_GPT$(DSHOT1_GPT_TIM)&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSHOT1_BIDIR_GPT&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;GPTD$(DSHOT1_GPT_TIM)&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dshot_rpmCapture.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;dshot_erps.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;input_capture_arch.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file_arch</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;timerDmaCache.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">test</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -156,7 +189,7 @@ Raw actuators_dshot.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:20 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

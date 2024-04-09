@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"digital__cam_2catia_2protocol_8h.html#unionmora__status__union":[12,0,1,0,6,19,0,4,1],
+"digital__cam_2catia_2protocol_8h_source.html":[12,0,1,0,6,19,0,4],
 "dir_0052b60a5651ac9f93ab63c946b53cbf.html":[12,0,1,0,6,16],
 "dir_01fcd3835fb4e7d9331b722d86291b65.html":[12,0,1],
 "dir_023361752fe22268717f3f29b9cee4fa.html":[12,0,1,0,6,15,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "direct__memory__logger_8h.html":[12,0,1,0,6,42,2],
 "direct__memory__logger_8h.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f":[12,0,1,0,6,42,2,4],
 "direct__memory__logger_8h.html#a1f89c68657c02dd081932b1b8cccb137":[12,0,1,0,6,42,2,1],
-"direct__memory__logger_8h.html#a3cdd0af0832de4e34e48da56ce97a61b":[12,0,1,0,6,42,2,0,2],
-"direct__memory__logger_8h.html#a3dd91ed9d78ffbe365c25a38298b5199":[12,0,1,0,6,42,2,0,3],
-"direct__memory__logger_8h.html#a81d0b466f395d48f2608821b9a648667":[12,0,1,0,6,42,2,0,0]
+"direct__memory__logger_8h.html#a3cdd0af0832de4e34e48da56ce97a61b":[12,0,1,0,6,42,2,0,2]
 };

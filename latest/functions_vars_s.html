@@ -530,7 +530,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#af29476ba6c51442bad1a9bb589796c98">HorizontalGuidance</a>
 , <a class="el" href="rover__guidance_8h.html#a4b8b4c6873e954691168d5b7fcd41e47">RoverGuidance</a>
 , <a class="el" href="rover__guidance__holonomic_8h.html#ab3f9840e3c50a1de4a2b52553fe75e99">RoverHoloGuidance</a>
-, <a class="el" href="structStabilizationSetpoint.html#aa8a7460d3505d459210248a905d956ae">StabilizationSetpoint</a>
+, <a class="el" href="structStabilizationSetpoint.html#a632c80c243fb808a15e136573cf70a91">StabilizationSetpoint</a>
 </li>
 <li>sp_offset_pitch
 : <a class="el" href="structIndiController__int.html#a1eda0a1be0adab1f7f5c0acba577599e">IndiController_int</a>
@@ -588,6 +588,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>speed_history
 : <a class="el" href="nps__sensor__gps_8h.html#a5edeb7228915e8111c52eae7e452de58">NpsSensorGps</a>
+</li>
+<li>speed_khz
+: <a class="el" href="esc__dshot_8h.html#a5fec4bceb0f3228e4444d349ddc3cfc4">DSHOTConfig</a>
 </li>
 <li>speed_L
 : <a class="el" href="hott__eam_8h.html#a30d2f0209bc589f6ea2fc1c8d1583be3">HOTT_EAM_MSG</a>
@@ -741,6 +744,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 , <a class="el" href="syslink__dl_8h.html#a5f8083b0ff32915bbec7a6730e2d121f">syslink_dl</a>
 , <a class="el" href="syslink_8h.html#a08ac04320cfb10ccdcea1c880ea74437">syslink_parse_state</a>
 , <a class="el" href="takeoff__detect_8c.html#a219cf5c2864bb180fff667068c237fbf">takeoff_detect_struct</a>
+, <a class="el" href="input__capture__arch_8h.html#aa39b487c2c02d608c5293820cf480378">TimICDriver</a>
 , <a class="el" href="usb__msd_8h.html#a52f7b107fe3f584294fdd1a01811ecbc">USBMassStorageDriver</a>
 , <a class="el" href="vl53l1__platform_8h.html#a1d5cd600ac54573791bd7df3485e60f5">VL53L1_Dev_t::NonBlocking</a>
 </li>
@@ -783,6 +787,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 , <a class="el" href="direct__memory__logger_8h.html#a3cdd0af0832de4e34e48da56ce97a61b">DirectMemoryLogger</a>
 , <a class="el" href="boards_2disco_2actuators_8c.html#a0717ef8e85bf0a88706884af5fee4760">disco_bldc_obs</a>
 , <a class="el" href="nav__survey__disc_8c.html#a58a6a2433387b5d68b91cf3645604cab">DiscSurvey</a>
+, <a class="el" href="esc__dshot_8h.html#a73bcba08e38531fbda46d11cfded500d">DshotTelemetry</a>
 , <a class="el" href="actuators__esc32_8h.html#ab1c5e8844004228b0669a75fdbfb15af">ESC32</a>
 , <a class="el" href="actuators__esc32_8h.html#a75e60a56707a23daf43a1ef294b6e324">ESC32_com</a>
 , <a class="el" href="gps__ubx__ucenter_8h.html#a9eb5300629b8f9068553070d0b93ecb6">gps_ubx_ucenter_struct</a>
@@ -881,6 +886,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 </li>
 <li>stream
 : <a class="el" href="hal__stm32__dma_8h.html#a853f47fc596886119b818dbc674864ea">DMAConfig</a>
+, <a class="el" href="dshot__rpmCapture_8h.html#a014a5d616b4df056c7487b4abfc2bfe4">DshotDmaStreamChan</a>
 </li>
 <li>streamcount
 : <a class="el" href="vl53l5cx__api_8h.html#afb473e09933d048b046cfa23b0e7b53a">VL53L5CX_Configuration</a>
@@ -888,6 +894,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <li>strength
 : <a class="el" href="tfmini_8h.html#ae43b2fea312ab6f20c9efdca60fbf375">TFMini</a>
 , <a class="el" href="tfmini__i2c_8h.html#a91d34a70bcc9b71817f64b8cfa35d2c0">TFMiniI2C</a>
+</li>
+<li>stress
+: <a class="el" href="esc__dshot_8h.html#a7651cf14eb2d138bb1234a5761d794e4">DshotTelemetry</a>
 </li>
 <li>sts
 : <a class="el" href="structgec__transport.html#a5a0ff65ba8f65d3dd4df47b492f7f966">gec_transport</a>
@@ -1017,7 +1026,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

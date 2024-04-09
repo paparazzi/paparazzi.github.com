@@ -1,7 +1,7 @@
 var hmc5843_8h =
 [
     [ "Hmc5843", "hmc5843_8h.html#structHmc5843", [
-      [ "data", "hmc5843_8h.html#a2b56edaa40a7acfa6306bf70524a3533", null ],
+      [ "data", "hmc5843_8h.html#a940dee6d77672c27a924a94549b2e306", null ],
       [ "data_available", "hmc5843_8h.html#aac1003c5a9ee5a5fb898a4b33d1140eb", null ],
       [ "i2c_trans", "hmc5843_8h.html#ad8b9aedbaea8a1dd228b6e2370f31f76", null ],
       [ "initialized", "hmc5843_8h.html#a2865aacd8f0c1dd4f38f4c40ea7eeba9", null ],

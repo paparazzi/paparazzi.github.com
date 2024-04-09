@@ -9,6 +9,8 @@ var dir_b82140776176b28f52d7ab660bc0e8ab =
     [ "hal_stm32_dma.h", "hal__stm32__dma_8h.html", "hal__stm32__dma_8h" ],
     [ "i2c_arch.c", "chibios_2mcu__periph_2i2c__arch_8c.html", "chibios_2mcu__periph_2i2c__arch_8c" ],
     [ "i2c_arch.h", "chibios_2mcu__periph_2i2c__arch_8h.html", null ],
+    [ "input_capture_arch.c", "input__capture__arch_8c.html", "input__capture__arch_8c" ],
+    [ "input_capture_arch.h", "input__capture__arch_8h.html", "input__capture__arch_8h" ],
     [ "pwm_input_arch.c", "chibios_2mcu__periph_2pwm__input__arch_8c.html", "chibios_2mcu__periph_2pwm__input__arch_8c" ],
     [ "pwm_input_arch.h", "chibios_2mcu__periph_2pwm__input__arch_8h.html", "chibios_2mcu__periph_2pwm__input__arch_8h" ],
     [ "ram_arch.h", "ram__arch_8h.html", "ram__arch_8h" ],
@@ -18,6 +20,8 @@ var dir_b82140776176b28f52d7ab660bc0e8ab =
     [ "spi_arch.h", "chibios_2mcu__periph_2spi__arch_8h.html", null ],
     [ "sys_time_arch.c", "chibios_2mcu__periph_2sys__time__arch_8c.html", "chibios_2mcu__periph_2sys__time__arch_8c" ],
     [ "sys_time_arch.h", "chibios_2mcu__periph_2sys__time__arch_8h.html", "chibios_2mcu__periph_2sys__time__arch_8h" ],
+    [ "timerDmaCache.c", "timerDmaCache_8c.html", "timerDmaCache_8c" ],
+    [ "timerDmaCache.h", "timerDmaCache_8h.html", "timerDmaCache_8h" ],
     [ "uart_arch.c", "chibios_2mcu__periph_2uart__arch_8c.html", null ],
     [ "uart_arch.h", "chibios_2mcu__periph_2uart__arch_8h.html", "chibios_2mcu__periph_2uart__arch_8h" ]
 ];

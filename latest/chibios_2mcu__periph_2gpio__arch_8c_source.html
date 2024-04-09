@@ -144,44 +144,49 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2gpio__arch_8c_so
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  chSysUnlock();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">gpio_setup_pin_af</a>(ioportid_t port, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af, <span class="keywordtype">bool</span> is_output)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  chSysLock();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// architecture dependent settings</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if defined(STM32F1XX)</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// FIXME: STM32F1xx doesn&#39;t support several alternate modes, is it needed for drivers?</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  (void)port;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  (void)pin;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  (void)af;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  (void)is_output;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// STM32F4xx, STM32F3xx, STM32F7xx and STM32H7xx</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (af) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    palSetPadMode(port, pin, PAL_MODE_ALTERNATE(af));</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (is_output) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      palSetPadMode(port, pin, PAL_MODE_OUTPUT_PUSHPULL);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      palSetPadMode(port, pin, PAL_MODE_INPUT);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  chSysUnlock();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">gpio_setup_pin_analog</a>(ioportid_t port, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  chSysLock();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  palSetPadMode(port, pin, PAL_MODE_INPUT_ANALOG);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  chSysUnlock();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9">gpio_setup_pin_af_pullup</a>(ioportid_t port, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  palSetPadMode(port, pin, PAL_MODE_ALTERNATE(af) | PAL_STM32_PUPDR_PULLUP);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">gpio_setup_pin_af</a>(ioportid_t port, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af, <span class="keywordtype">bool</span> is_output)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  chSysLock();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// architecture dependent settings</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if defined(STM32F1XX)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// FIXME: STM32F1xx doesn&#39;t support several alternate modes, is it needed for drivers?</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  (void)port;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  (void)pin;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  (void)af;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  (void)is_output;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// STM32F4xx, STM32F3xx, STM32F7xx and STM32H7xx</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (af) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    palSetPadMode(port, pin, PAL_MODE_ALTERNATE(af));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (is_output) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      palSetPadMode(port, pin, PAL_MODE_OUTPUT_PUSHPULL);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      palSetPadMode(port, pin, PAL_MODE_INPUT);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  chSysUnlock();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">gpio_setup_pin_analog</a>(ioportid_t port, <a class="code" href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  chSysLock();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  palSetPadMode(port, pin, PAL_MODE_INPUT_ANALOG);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  chSysUnlock();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a173e80508bf07e53c2b7b5e3d460fbf9"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a173e80508bf07e53c2b7b5e3d460fbf9">gpio_setup_pin_af_pullup</a></div><div class="ttdeci">void gpio_setup_pin_af_pullup(ioportid_t port, uint16_t pin, uint8_t af)</div><div class="ttdoc">Setup a gpio for input pullup with alternate function.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_arch.c:61</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a37fe4e6fcefe371821cc61a78ed34711"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a37fe4e6fcefe371821cc61a78ed34711">gpio_setup_input_pullup</a></div><div class="ttdeci">void gpio_setup_input_pullup(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00047">gpio_arch.c:47</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a39be1be5c9162dcf8581eb6f9f03b7b1"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a39be1be5c9162dcf8581eb6f9f03b7b1">gpio_setup_input_pulldown</a></div><div class="ttdeci">void gpio_setup_input_pulldown(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as inputs with pull down resistors enabled.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00054">gpio_arch.c:54</a></div></div>
-<div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a528b4b25ff5b01c8fc531698281f80f1"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">gpio_setup_pin_af</a></div><div class="ttdeci">void gpio_setup_pin_af(ioportid_t port, uint16_t pin, uint8_t af, bool is_output)</div><div class="ttdoc">Setup a gpio for input or output with alternate function.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_arch.c:61</a></div></div>
+<div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a528b4b25ff5b01c8fc531698281f80f1"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1">gpio_setup_pin_af</a></div><div class="ttdeci">void gpio_setup_pin_af(ioportid_t port, uint16_t pin, uint8_t af, bool is_output)</div><div class="ttdoc">Setup a gpio for input or output with alternate function.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00065">gpio_arch.c:65</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_a614c4a447f1e43381d92c682ac3b953f"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a></div><div class="ttdeci">void gpio_setup_output(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as outputs.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_arch.c:33</a></div></div>
 <div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_ae7d0172a824f41338c10872b96cc541b"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b">gpio_setup_input</a></div><div class="ttdeci">void gpio_setup_input(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as inputs.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00040">gpio_arch.c:40</a></div></div>
-<div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_ae9cae0077ed50d293b5288fe4c15bbb6"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">gpio_setup_pin_analog</a></div><div class="ttdeci">void gpio_setup_pin_analog(ioportid_t port, uint16_t pin)</div><div class="ttdoc">Setup a gpio for analog use.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00086">gpio_arch.c:86</a></div></div>
+<div class="ttc" id="achibios_2mcu__periph_2gpio__arch_8c_html_ae9cae0077ed50d293b5288fe4c15bbb6"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#ae9cae0077ed50d293b5288fe4c15bbb6">gpio_setup_pin_analog</a></div><div class="ttdeci">void gpio_setup_pin_analog(ioportid_t port, uint16_t pin)</div><div class="ttdoc">Setup a gpio for analog use.</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00090">gpio_arch.c:90</a></div></div>
 <div class="ttc" id="agpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Some architecture independent helper functions for GPIOs.</div></div>
 <div class="ttc" id="avl53l1__types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdoc">Typedef defining 16 bit unsigned short type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00088">vl53l1_types.h:88</a></div></div>
 <div class="ttc" id="avl53l1__types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdoc">Typedef defining 8 bit unsigned char type.</div><div class="ttdef"><b>Definition:</b> <a href="vl53l1__types_8h_source.html#l00098">vl53l1_types.h:98</a></div></div>
@@ -191,7 +196,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2gpio__arch_8c_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2gpio__arch_8c.html">gpio_arch.c</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:13 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

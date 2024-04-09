@@ -110,6 +110,9 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <li>cacc
 : <a class="el" href="gps_8h.html#a2d6027f58f74a82bd49944931a2a2beb">GpsState</a>
 </li>
+<li>cache
+: <a class="el" href="dshot__rpmCapture_8h.html#a47cf174a4454abb242a44344f90926fa">DshotRpmCapture</a>
+</li>
 <li>calc_airspeed
 : <a class="el" href="air__data_8h.html#a8fefbbe89e05ee86424a7d5495d5920e">AirData</a>
 </li>
@@ -189,6 +192,9 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 </li>
 <li>capacity_list_length
 : <a class="el" href="usb__msd_8h.html#a70eebd2d73abf7c27cdab993899a9b98">PACK_STRUCT_STRUCT</a>
+</li>
+<li>capture_cb
+: <a class="el" href="input__capture__arch_8h.html#a4879633ea788c8f171de3d1c31e03cdf">TimICConfig</a>
 </li>
 <li>card_type
 : <a class="el" href="sdcard__spi_8h.html#a5e1b9d1782e36c8da33889cfd5e03e9c">SDCard</a>
@@ -374,7 +380,9 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <li>channel
 : <a class="el" href="hal__stm32__dma_8h.html#ab1ed39e5f4ea56b5fec630c1547f5176">DMAConfig</a>
 , <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html#af27677c00bbfec0f35e4d2fa178ac6ff">dshot_private</a>
+, <a class="el" href="dshot__rpmCapture_8h.html#a9b2afac07a04ee7222c5cc461908243c">DshotDmaStreamChan</a>
 , <a class="el" href="modules_2datalink_2superbitrf_8h.html#abf5441e62ef825a3a1e22b7fe7ef9cc5">SuperbitRF</a>
+, <a class="el" href="input__capture__arch_8h.html#a4a58693ec44bb6bc0059c55f0d0a1d48">TimICDriver</a>
 </li>
 <li>channel_idx
 : <a class="el" href="modules_2datalink_2superbitrf_8h.html#a43e36e7561dc919d6f3e4032fee8e193">SuperbitRF</a>
@@ -460,9 +468,6 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 </li>
 <li>circle_turns
 : <a class="el" href="nav__survey__hybrid_8c.html#a8954b5069f45ad861cf99dbdc45065b4">SurveyHybridPrivate</a>
-</li>
-<li>circular
-: <a class="el" href="hal__stm32__dma_8h.html#a624066c1d4dc1989b64a93ffe4042c86">DMAConfig</a>
 </li>
 <li>ck
 : <a class="el" href="dw1000__arduino_8c.html#a5e956d60ebe1dd764d9795afdb2f1f7a">DW1000</a>
@@ -738,18 +743,20 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="bmi088__i2c_8h.html#a923a5de5f24fcb1bdce9a03b8250148c">Bmi088_I2c</a>
 , <a class="el" href="hal__stm32__dma_8h.html#a621863ff1a5af295e0d991fac9ed1426">DMADriver</a>
 , <a class="el" href="structDSHOTDriver.html#a8af9e29758141560572c026b7c7d2a40">DSHOTDriver</a>
+, <a class="el" href="dshot__rpmCapture_8h.html#a469d99e398b49f5c11e14ffba01b4a1e">DshotRpmCapture</a>
 , <a class="el" href="hmc58xx_8h.html#abfe2a2d471e118c32fc8d8e864b5d8df">Hmc58xx</a>
 , <a class="el" href="itg3200_8h.html#afa4cc1e1d75f91db123a836b1cd86534">Itg3200</a>
 , <a class="el" href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">L3g4200</a>
 , <a class="el" href="l3gd20__spi_8h.html#aa50b7c629972b0971d6b4096fdac442c">L3gd20_Spi</a>
 , <a class="el" href="lis302dl__spi_8h.html#aa81037d166efd26a319348f8f41f669c">Lis302dl_Spi</a>
 , <a class="el" href="lps25h__i2c_8h.html#ae2454aba91551b505e34f870253eaa25">Lps25h_I2c</a>
-, <a class="el" href="lsm303dlhc__i2c_8h.html#a4e499fc1cdf331bd8a536b2c9cca09ad">Lsm303dlhc_i2c</a>
+, <a class="el" href="lsm303dlhc__i2c_8h.html#a2ed2916530980dd4ac2c9cae1a0b4288">Lsm303dlhc_i2c</a>
 , <a class="el" href="lsm6ds33__i2c_8h.html#a5ee1aaf09889205b87a09afc46e5c397">Lsm6_I2c</a>
 , <a class="el" href="mpu60x0__i2c_8h.html#ac45f59044e30e1a4ee17083ba692fba0">Mpu60x0_I2c</a>
 , <a class="el" href="mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a">Mpu60x0_Spi</a>
 , <a class="el" href="mpu9250__i2c_8h.html#a0b753109039b6cd0d61e63f8ab61a8d4">Mpu9250_I2c</a>
 , <a class="el" href="mpu9250__spi_8h.html#a5dab7d8e6829b61e1b95c86b7085c9a3">Mpu9250_Spi</a>
+, <a class="el" href="input__capture__arch_8h.html#abe8a4771f963c5965caeb2902a7a85b9">TimICDriver</a>
 , <a class="el" href="usb__msd_8h.html#a14e13977e7420c10f170e738a82eefbe">USBMassStorageDriver</a>
 , <a class="el" href="light__ws2812__arch_8c.html#a4df0c3729a5ad63a72f67439a9d1bfda">WS2812Driver</a>
 </li>
@@ -924,7 +931,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 : <a class="el" href="gps_8h.html#a407f430c7fd01e7f821b3f50b87e21a8">RtcmMan</a>
 </li>
 <li>crc8
-: <a class="el" href="esc__dshot_8h.html#aace3b7bbd6ac541ba88e49a204e1d251">DshotTelemetry</a>
+: <a class="el" href="esc__dshot_8h.html#a2ba2fc1f50c4743a5ea9daeaa54998cf">DshotTelemetryFrame</a>
 </li>
 <li>crc_errors
 : <a class="el" href="structDSHOTDriver.html#a2d919233183b582c8e5b0159a7a72f88">DSHOTDriver</a>
@@ -1042,7 +1049,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 , <a class="el" href="pprz__wave_8h.html#a399b5545624a3838e0c6962988691b07">wave_t</a>
 </li>
 <li>currentTlmQry
-: <a class="el" href="esc__dshot_8h.html#affc195048e99fecf2ebfa6c2a2249699">DshotPackets</a>
+: <a class="el" href="esc__dshot_8h.html#afe095cd1f5a44be1ac5b2ac9b8fea1c0">DshotPackets</a>
 </li>
 <li>cursor
 : <a class="el" href="structmicrorl__t.html#a9bcb0263e2569f03189f58de89029669">microrl_t</a>
@@ -1080,7 +1087,7 @@ $(document).ready(function(){initNavTree('functions_vars_c.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 9 2024 11:40:22 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 22:49:21 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
