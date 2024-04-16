@@ -1,6 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"module__range_sensor_uavcan.html#module_xml__range_sensor_uavcan":[1,412,1,0],
 "module__relative_localization_filter.html":[1,491],
 "module__relative_localization_filter.html#functions__relative_localization_filter":[1,491,1],
 "module__relative_localization_filter.html#module_load_example__relative_localization_filter":[1,491,0],
@@ -114,6 +113,7 @@ var NAVTREEINDEX138 =
 "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler":[1,425,0],
 "module__stabilization_float_euler.html#module_xml__stabilization_float_euler":[1,425,2,0],
 "module__stabilization_float_quat.html":[1,426],
+"module__stabilization_float_quat.html#af_section":[1,426,1,0],
 "module__stabilization_float_quat.html#configuration__stabilization_float_quat":[1,426,1],
 "module__stabilization_float_quat.html#functions__stabilization_float_quat":[1,426,2],
 "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat":[1,426,0],
