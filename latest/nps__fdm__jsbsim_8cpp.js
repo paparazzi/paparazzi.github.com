@@ -6,6 +6,7 @@ var nps__fdm__jsbsim_8cpp =
     [ "JSBSIM_PATH", "nps__fdm__jsbsim_8cpp.html#ab3c5997079f9fc0ccc2eca4aaae82ebc", null ],
     [ "MetersOfFeet", "nps__fdm__jsbsim_8cpp.html#ae57c01310b61537f760496c6c18cda82", null ],
     [ "MIN_DT", "nps__fdm__jsbsim_8cpp.html#a4cc2cf474974fa0f2e5af1774528c73d", null ],
+    [ "NPS_AUTOMATIC_JSBSIM_ACTUATOR_NAMES", "nps__fdm__jsbsim_8cpp.html#a577af04264328da7554d90048d124e00", null ],
     [ "NPS_JSBSIM_AILERON_MAX_RAD", "nps__fdm__jsbsim_8cpp.html#ad8d78221c73dcd385ee23240fd879161", null ],
     [ "NPS_JSBSIM_ELEVATOR_MAX_RAD", "nps__fdm__jsbsim_8cpp.html#a74d40dceb64627c9504664a1c59d40c9", null ],
     [ "NPS_JSBSIM_FLAP_MAX_RAD", "nps__fdm__jsbsim_8cpp.html#a76c616230e01a3485a22157d18931d73", null ],

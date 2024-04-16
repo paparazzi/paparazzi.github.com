@@ -1,9 +1,5 @@
 var oneloop__andi_8c =
 [
-    [ "ANDI_NUM_ACT", "oneloop__andi_8c.html#a615cabf06239821e16868da30d7c7835", null ],
-    [ "ANDI_NUM_ACT_TOT", "oneloop__andi_8c.html#aa0836f863a9acfbb74f77503b47cc139", null ],
-    [ "ANDI_NUM_VIRTUAL_ACT", "oneloop__andi_8c.html#a5ec1df5803052366c74bf249a48130f1", null ],
-    [ "ANDI_OUTPUTS", "oneloop__andi_8c.html#ad2493c7384798b6068806a9b9a20640d", null ],
     [ "GUIDANCE_INDI_LIFTD_ASQ", "oneloop__andi_8c.html#a5e36a7c3c7f2b4d52c674ca7752533f8", null ],
     [ "GUIDANCE_INDI_LIFTD_P50", "oneloop__andi_8c.html#a945db3508eec97c51c7260e0c55da1ef", null ],
     [ "GUIDANCE_INDI_LIFTD_P80", "oneloop__andi_8c.html#af4ea2de4c5c630e5de071877aeff1e07", null ],
@@ -17,8 +13,6 @@ var oneloop__andi_8c =
     [ "ONELOOP_ANDI_FILT_CUTOFF_Q", "oneloop__andi_8c.html#a9cd82ced2886ab68ba3145074e75d201", null ],
     [ "ONELOOP_ANDI_FILT_CUTOFF_R", "oneloop__andi_8c.html#a81fb10f84e345ef03143a26d815f4fcd", null ],
     [ "ONELOOP_ANDI_PUSHER_IDX", "oneloop__andi_8c.html#a483790b4f61b10984b23871737cbce06", null ],
-    [ "WLS_N_U", "oneloop__andi_8c.html#a27c5da388f672376822a17defcadea2a", null ],
-    [ "WLS_N_V", "oneloop__andi_8c.html#ab77f5a5234e67a9e9ae11a1611700414", null ],
     [ "calc_model", "oneloop__andi_8c.html#ab4593fc438daf954a267626af1124263", null ],
     [ "calc_normalization", "oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7", null ],
     [ "ec_2rd", "oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153", null ],

@@ -54,6 +54,11 @@ var oneloop__andi_8h =
       [ "k3", "oneloop__andi_8h.html#ae8bb07c64dfe01a679d9184d6012390f", null ]
     ] ],
     [ "ANDI_G_SCALING", "oneloop__andi_8h.html#a61c6acc1df1a24298fe39aca96349bc0", null ],
+    [ "ANDI_NUM_ACT", "oneloop__andi_8h.html#a615cabf06239821e16868da30d7c7835", null ],
+    [ "ANDI_NUM_ACT_TOT", "oneloop__andi_8h.html#aa0836f863a9acfbb74f77503b47cc139", null ],
+    [ "ANDI_NUM_VIRTUAL_ACT", "oneloop__andi_8h.html#a5ec1df5803052366c74bf249a48130f1", null ],
+    [ "ANDI_NUM_VIRTUAL_ACT", "oneloop__andi_8h.html#a5ec1df5803052366c74bf249a48130f1", null ],
+    [ "ANDI_OUTPUTS", "oneloop__andi_8h.html#ad2493c7384798b6068806a9b9a20640d", null ],
     [ "oneloop_andi_enter", "oneloop__andi_8h.html#acc520a1793d4fa59654715e75b139ccb", null ],
     [ "oneloop_andi_init", "oneloop__andi_8h.html#accb008a2b3851434c56824df7b7b8c15", null ],
     [ "oneloop_andi_read_rc", "oneloop__andi_8h.html#a037a42846b4c0b00fcb1c5a10c2c07c7", null ],
