@@ -1,5 +1,10 @@
 var NAVTREEINDEX132 =
 {
+"module__baro_ms5534a.html":[1,386],
+"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1],
+"module__baro_ms5534a.html#module_load_example__baro_ms5534a":[1,386,0],
+"module__baro_ms5534a.html#module_xml__baro_ms5534a":[1,386,1,0],
+"module__baro_ms5611_i2c.html":[1,396],
 "module__baro_ms5611_i2c.html#configuration__baro_ms5611_i2c":[1,396,1],
 "module__baro_ms5611_i2c.html#functions__baro_ms5611_i2c":[1,396,2],
 "module__baro_ms5611_i2c.html#module_load_example__baro_ms5611_i2c":[1,396,0],
@@ -186,16 +191,10 @@ var NAVTREEINDEX132 =
 "module__cv_qrcode.html#module_load_example__cv_qrcode":[1,457,0],
 "module__cv_qrcode.html#module_xml__cv_qrcode":[1,457,2,0],
 "module__cv_target_localization.html":[1,65],
-"module__cv_target_localization.html#af_section":[1,65,1,0],
 "module__cv_target_localization.html#configuration__cv_target_localization":[1,65,1],
-"module__cv_target_localization.html#files":[1,65,3],
 "module__cv_target_localization.html#functions__cv_target_localization":[1,65,2],
-"module__cv_target_localization.html#headers":[1,65,3,0],
-"module__cv_target_localization.html#init_functions":[1,65,2,0],
 "module__cv_target_localization.html#module_load_example__cv_target_localization":[1,65,0],
-"module__cv_target_localization.html#module_xml__cv_target_localization":[1,65,3,2],
-"module__cv_target_localization.html#periodic_functions":[1,65,2,1],
-"module__cv_target_localization.html#sources":[1,65,3,1],
+"module__cv_target_localization.html#module_xml__cv_target_localization":[1,65,2,0],
 "module__cv_textons.html":[1,66],
 "module__cv_textons.html#configuration__cv_textons":[1,66,1],
 "module__cv_textons.html#functions__cv_textons":[1,66,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c":[1,132,3],
 "module__digital_cam_i2c.html#functions__digital_cam_i2c":[1,132,2],
 "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c":[1,132,0],
-"module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,132,3,0]
+"module__digital_cam_i2c.html#module_xml__digital_cam_i2c":[1,132,3,0],
+"module__digital_cam_pprzlink.html":[1,133]
 };

@@ -1,5 +1,6 @@
 var guidance__indi__hybrid_8c =
 [
+    [ "GUIDANCE_INDI_AIRSPEED_FILT_CUTOFF", "guidance__indi__hybrid_8c.html#ad2c4269977e0fdfe7b084aa0e6b4072f", null ],
     [ "GUIDANCE_INDI_CLIMB_SPEED_FWD", "guidance__indi__hybrid_8c.html#a1f5ab3b277c3bfa3043523b4f29506e4", null ],
     [ "GUIDANCE_INDI_DESCEND_SPEED_FWD", "guidance__indi__hybrid_8c.html#ab5bf9986f362a7dddb4c5f91a2c7d184", null ],
     [ "GUIDANCE_INDI_FILTER_CUTOFF", "guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b", null ],
@@ -37,6 +38,9 @@ var guidance__indi__hybrid_8c =
     [ "gi_speed_sp", "guidance__indi__hybrid_8c.html#a27af36ef93fea1d415ff80db057b47e9", null ],
     [ "gih_params", "guidance__indi__hybrid_8c.html#a220bb859f2933240f886cccc7394368a", null ],
     [ "guidance_euler_cmd", "guidance__indi__hybrid_8c.html#a5b09e7ee40698be8ecabadfe7c5a6a92", null ],
+    [ "guidance_indi_airspeed_filt", "guidance__indi__hybrid_8c.html#a691feca21ce12501456ed21e08375f22", null ],
+    [ "guidance_indi_airspeed_filt_cutoff", "guidance__indi__hybrid_8c.html#a602289c89072809de925902139088be5", null ],
+    [ "guidance_indi_airspeed_filtering", "guidance__indi__hybrid_8c.html#af19fdcf0b0b3ba9f2240c28403611248", null ],
     [ "guidance_indi_hybrid_heading_sp", "guidance__indi__hybrid_8c.html#a81f66af9e04ab33cd7c8f3b6f0b26b39", null ],
     [ "guidance_indi_max_airspeed", "guidance__indi__hybrid_8c.html#ada2fc126082d216494a972d8ecff1e30", null ],
     [ "guidance_indi_max_bank", "guidance__indi__hybrid_8c.html#a313939905cd50d33f06f8fb9d6960d10", null ],

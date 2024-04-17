@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_20type_20definition_55888',['Basic type definition',['../group__porting__type.html',1,'']]]
+  ['basic_20type_20definition_55886',['Basic type definition',['../group__porting__type.html',1,'']]]
 ];

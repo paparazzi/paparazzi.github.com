@@ -1,6 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"module__digital_cam_pprzlink.html":[1,133],
 "module__digital_cam_pprzlink.html#datalink_functions__digital_cam_pprzlink":[1,133,2],
 "module__digital_cam_pprzlink.html#functions__digital_cam_pprzlink":[1,133,1],
 "module__digital_cam_pprzlink.html#module_load_example__digital_cam_pprzlink":[1,133,0],
@@ -86,9 +85,14 @@ var NAVTREEINDEX133 =
 "module__ekf_aw.html#module_load_example__ekf_aw":[1,279,0],
 "module__ekf_aw.html#module_xml__ekf_aw":[1,279,2,0],
 "module__electrical.html":[1,141],
+"module__electrical.html#files":[1,141,2],
 "module__electrical.html#functions__electrical":[1,141,1],
+"module__electrical.html#headers":[1,141,2,0],
+"module__electrical.html#init_functions":[1,141,1,0],
 "module__electrical.html#module_load_example__electrical":[1,141,0],
-"module__electrical.html#module_xml__electrical":[1,141,1,0],
+"module__electrical.html#module_xml__electrical":[1,141,2,2],
+"module__electrical.html#periodic_functions":[1,141,1,1],
+"module__electrical.html#sources":[1,141,2,1],
 "module__esc32.html":[1,463],
 "module__esc32.html#configuration__esc32":[1,463,1],
 "module__esc32.html#functions__esc32":[1,463,2],
@@ -106,8 +110,9 @@ var NAVTREEINDEX133 =
 "module__ezcurrent.html#module_xml__ezcurrent":[1,401,2,0],
 "module__fbw_datalink.html":[1,107],
 "module__fbw_datalink.html#configuration__fbw_datalink":[1,107,1],
+"module__fbw_datalink.html#configure":[1,107,1,0],
 "module__fbw_datalink.html#module_load_example__fbw_datalink":[1,107,0],
-"module__fbw_datalink.html#module_xml__fbw_datalink":[1,107,1,0],
+"module__fbw_datalink.html#module_xml__fbw_datalink":[1,107,1,1],
 "module__fc_rotor.html":[1,464],
 "module__fc_rotor.html#datalink_functions__fc_rotor":[1,464,2],
 "module__fc_rotor.html#functions__fc_rotor":[1,464,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX133 =
 "module__gps_optitrack.html#module_xml__gps_optitrack":[1,157,0,0],
 "module__gps_piksi.html":[1,158],
 "module__gps_piksi.html#configuration__gps_piksi":[1,158,1],
-"module__gps_piksi.html#functions__gps_piksi":[1,158,2],
-"module__gps_piksi.html#module_load_example__gps_piksi":[1,158,0],
-"module__gps_piksi.html#module_xml__gps_piksi":[1,158,2,0],
-"module__gps_sim.html":[1,159],
-"module__gps_sim.html#functions__gps_sim":[1,159,1],
-"module__gps_sim.html#module_load_example__gps_sim":[1,159,0]
+"module__gps_piksi.html#functions__gps_piksi":[1,158,2]
 };

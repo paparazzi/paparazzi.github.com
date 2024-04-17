@@ -1,5 +1,10 @@
 var NAVTREEINDEX137 =
 {
+"module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,333,1],
+"module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,333,0],
+"module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,333,2,0],
+"module__nav_rover_base.html":[1,334],
+"module__nav_rover_base.html#datalink_functions__nav_rover_base":[1,334,2],
 "module__nav_rover_base.html#functions__nav_rover_base":[1,334,1],
 "module__nav_rover_base.html#module_load_example__nav_rover_base":[1,334,0],
 "module__nav_rover_base.html#module_xml__nav_rover_base":[1,334,2,0],
@@ -119,10 +124,9 @@ var NAVTREEINDEX137 =
 "module__orange_avoider_guided.html#module_xml__orange_avoider_guided":[1,356,2,0],
 "module__osd_max7456.html":[1,483],
 "module__osd_max7456.html#configuration__osd_max7456":[1,483,1],
-"module__osd_max7456.html#event_functions":[1,483,2,0],
 "module__osd_max7456.html#functions__osd_max7456":[1,483,2],
 "module__osd_max7456.html#module_load_example__osd_max7456":[1,483,0],
-"module__osd_max7456.html#module_xml__osd_max7456":[1,483,2,1],
+"module__osd_max7456.html#module_xml__osd_max7456":[1,483,2,0],
 "module__pano_unwrap.html":[1,484],
 "module__pano_unwrap.html#configuration__pano_unwrap":[1,484,1],
 "module__pano_unwrap.html#functions__pano_unwrap":[1,484,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "module__range_forcefield.html":[1,490],
 "module__range_forcefield.html#configuration__range_forcefield":[1,490,1],
 "module__range_forcefield.html#functions__range_forcefield":[1,490,2],
-"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0],
-"module__range_forcefield.html#module_xml__range_forcefield":[1,490,2,0],
-"module__range_sensor_uavcan.html":[1,412],
-"module__range_sensor_uavcan.html#functions__range_sensor_uavcan":[1,412,1],
-"module__range_sensor_uavcan.html#module_load_example__range_sensor_uavcan":[1,412,0]
+"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0]
 };

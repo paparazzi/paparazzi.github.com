@@ -1,5 +1,10 @@
 var NAVTREEINDEX171 =
 {
+"paparazzi_messages.html#CONFIG_REQ":[2,2,8],
+"paparazzi_messages.html#COPILOT_STATUS":[2,0,120],
+"paparazzi_messages.html#COPILOT_STATUS_DL":[2,1,28],
+"paparazzi_messages.html#CSC_CAN_DEBUG":[2,0,170],
+"paparazzi_messages.html#CSC_CAN_MSG":[2,0,171],
 "paparazzi_messages.html#CSC_SERVO_CMD":[2,1,48],
 "paparazzi_messages.html#DATALINK_CLASS":[2,1],
 "paparazzi_messages.html#DATALINK_MESSAGE":[2,2,33],
@@ -244,10 +249,5 @@ var NAVTREEINDEX171 =
 "paparazzi_messages.html#SURVEY":[2,0,23],
 "paparazzi_messages.html#SURVEY_STATUS":[2,2,29],
 "paparazzi_messages.html#SVINFO":[2,0,21],
-"paparazzi_messages.html#SVSINFO":[2,2,15],
-"paparazzi_messages.html#SWARM_FISH":[2,0,72],
-"paparazzi_messages.html#SYS_MON":[2,0,29],
-"paparazzi_messages.html#TAKEOFF":[2,0,3],
-"paparazzi_messages.html#TARGET_POS":[2,1,39],
-"paparazzi_messages.html#TARGET_POS_INFO":[2,0,90]
+"paparazzi_messages.html#SVSINFO":[2,2,15]
 };

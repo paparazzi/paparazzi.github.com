@@ -186,8 +186,11 @@ var onboard_modules =
     ] ],
     [ "ahrs_chimu_spi module", "module__ahrs_chimu_spi.html", [
       [ "Example for airframe file", "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi", null ],
-      [ "Module configuration options", "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi", null ],
+      [ "Module configuration options", "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi", [
+        [ "Define Options", "module__ahrs_chimu_spi.html#define", null ]
+      ] ],
       [ "Module functions", "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi", [
+        [ "Event Functions", "module__ahrs_chimu_spi.html#event_functions", null ],
         [ "Raw ahrs_chimu_spi.xml file:", "module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi", null ]
       ] ]
     ] ],
@@ -214,8 +217,6 @@ var onboard_modules =
     [ "ahrs_float_cmpl_rmat module", "module__ahrs_float_cmpl_rmat.html", [
       [ "Example for airframe file", "module__ahrs_float_cmpl_rmat.html#module_load_example__ahrs_float_cmpl_rmat", null ],
       [ "Module configuration options", "module__ahrs_float_cmpl_rmat.html#configuration__ahrs_float_cmpl_rmat", [
-        [ "Configure Options", "module__ahrs_float_cmpl_rmat.html#configure", null ],
-        [ "Define Options", "module__ahrs_float_cmpl_rmat.html#define", null ],
         [ "Raw ahrs_float_cmpl_rmat.xml file:", "module__ahrs_float_cmpl_rmat.html#module_xml__ahrs_float_cmpl_rmat", null ]
       ] ]
     ] ],
@@ -450,16 +451,8 @@ var onboard_modules =
     ] ],
     [ "cv_target_localization module", "module__cv_target_localization.html", [
       [ "Example for airframe file", "module__cv_target_localization.html#module_load_example__cv_target_localization", null ],
-      [ "Module configuration options", "module__cv_target_localization.html#configuration__cv_target_localization", [
-        [ "Airframe file section", "module__cv_target_localization.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__cv_target_localization.html#configuration__cv_target_localization", null ],
       [ "Module functions", "module__cv_target_localization.html#functions__cv_target_localization", [
-        [ "Init Functions", "module__cv_target_localization.html#init_functions", null ],
-        [ "Periodic Functions", "module__cv_target_localization.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__cv_target_localization.html#files", [
-        [ "Header Files", "module__cv_target_localization.html#headers", null ],
-        [ "Source Files", "module__cv_target_localization.html#sources", null ],
         [ "Raw cv_target_localization.xml file:", "module__cv_target_localization.html#module_xml__cv_target_localization", null ]
       ] ]
     ] ],
@@ -725,6 +718,7 @@ var onboard_modules =
     [ "fbw_datalink module", "module__fbw_datalink.html", [
       [ "Example for airframe file", "module__fbw_datalink.html#module_load_example__fbw_datalink", null ],
       [ "Module configuration options", "module__fbw_datalink.html#configuration__fbw_datalink", [
+        [ "Configure Options", "module__fbw_datalink.html#configure", null ],
         [ "Raw fbw_datalink.xml file:", "module__fbw_datalink.html#module_xml__fbw_datalink", null ]
       ] ]
     ] ],
@@ -948,6 +942,12 @@ var onboard_modules =
     [ "electrical module", "module__electrical.html", [
       [ "Example for airframe file", "module__electrical.html#module_load_example__electrical", null ],
       [ "Module functions", "module__electrical.html#functions__electrical", [
+        [ "Init Functions", "module__electrical.html#init_functions", null ],
+        [ "Periodic Functions", "module__electrical.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__electrical.html#files", [
+        [ "Header Files", "module__electrical.html#headers", null ],
+        [ "Source Files", "module__electrical.html#sources", null ],
         [ "Raw electrical.xml file:", "module__electrical.html#module_xml__electrical", null ]
       ] ]
     ] ],
@@ -1262,12 +1262,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
-        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
+        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -2789,7 +2789,9 @@ var onboard_modules =
     ] ],
     [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
       [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
-      [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
+      [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", [
+        [ "Airframe file section", "module__stabilization_float_quat.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
         [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
       ] ]
@@ -3167,7 +3169,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__osd_max7456.html#module_load_example__osd_max7456", null ],
       [ "Module configuration options", "module__osd_max7456.html#configuration__osd_max7456", null ],
       [ "Module functions", "module__osd_max7456.html#functions__osd_max7456", [
-        [ "Event Functions", "module__osd_max7456.html#event_functions", null ],
         [ "Raw osd_max7456.xml file:", "module__osd_max7456.html#module_xml__osd_max7456", null ]
       ] ]
     ] ],

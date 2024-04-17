@@ -1,5 +1,10 @@
 var NAVTREEINDEX193 =
 {
+"rover_2autopilot__generated_8h.html#aaebd02adde63c5f836bea4ec5fabe997":[12,0,1,0,3,3,4,1],
+"rover_2autopilot__generated_8h.html#ae22ba131f3568b0ef1e9b5b57bdf74ab":[12,0,1,0,3,3,4,4],
+"rover_2autopilot__generated_8h.html#af8a88318eb9987a9a42010173dbcf65d":[12,0,1,0,3,3,4,5],
+"rover_2autopilot__generated_8h_source.html":[12,0,1,0,3,3,4],
+"rover_2autopilot__rc__helpers_8h.html":[12,0,1,0,3,3,5],
 "rover_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b":[12,0,1,0,3,3,5,5],
 "rover_2autopilot__rc__helpers_8h.html#a4283b5e77477e4c499cfba6c902cdea7":[12,0,1,0,3,3,5,4],
 "rover_2autopilot__rc__helpers_8h.html#a5541af1f39db9db37eb4e4d1673aac4c":[12,0,1,0,3,3,5,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX193 =
 "rover__guidance__holonomic_8h.html#structRoverHoloGuidanceControl":[12,0,1,0,3,3,0,3,2],
 "rover__guidance__holonomic_8h.html#structRoverHoloGuidancePID":[12,0,1,0,3,3,0,3,1],
 "rover__guidance__holonomic_8h.html#structRoverHoloGuidanceSetpoint":[12,0,1,0,3,3,0,3,0],
-"rover__guidance__holonomic_8h_source.html":[12,0,1,0,3,3,0,3],
-"rover__guidance__steering_8c.html":[12,0,1,0,3,3,0,4],
-"rover__guidance__steering_8c.html#a0185a8119f285985444db413c3b51863":[12,0,1,0,3,3,0,4,3],
-"rover__guidance__steering_8c.html#a0574e5ae0a737b0139e08d33f71c1003":[12,0,1,0,3,3,0,4,7],
-"rover__guidance__steering_8c.html#a208b846ae96f3e4f7919a19522f6b72f":[12,0,1,0,3,3,0,4,6],
-"rover__guidance__steering_8c.html#a20c52f51bc92edd57a7ebbfe56c27e1a":[12,0,1,0,3,3,0,4,0]
+"rover__guidance__holonomic_8h_source.html":[12,0,1,0,3,3,0,3]
 };
