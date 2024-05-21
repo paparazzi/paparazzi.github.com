@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,333,2],
 "module__nav_rotorcraft.html#functions__nav_rotorcraft":[1,333,1],
 "module__nav_rotorcraft.html#module_load_example__nav_rotorcraft":[1,333,0],
 "module__nav_rotorcraft.html#module_xml__nav_rotorcraft":[1,333,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "module__radio_control_superbitrf_rc.html#module_xml__radio_control_superbitrf_rc":[1,366,2,0],
 "module__range_forcefield.html":[1,490],
 "module__range_forcefield.html#configuration__range_forcefield":[1,490,1],
-"module__range_forcefield.html#functions__range_forcefield":[1,490,2],
-"module__range_forcefield.html#module_load_example__range_forcefield":[1,490,0]
+"module__range_forcefield.html#functions__range_forcefield":[1,490,2]
 };

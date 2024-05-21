@@ -56,11 +56,9 @@ var NAVTREEINDEX131 =
 "module__agl_dist.html#module_xml__agl_dist":[1,418,2,0],
 "module__ahrs_chimu_spi.html":[1,24],
 "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi":[1,24,1],
-"module__ahrs_chimu_spi.html#define":[1,24,1,0],
-"module__ahrs_chimu_spi.html#event_functions":[1,24,2,0],
 "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi":[1,24,2],
 "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi":[1,24,0],
-"module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,24,2,1],
+"module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi":[1,24,2,0],
 "module__ahrs_chimu_uart.html":[1,25],
 "module__ahrs_chimu_uart.html#configuration__ahrs_chimu_uart":[1,25,1],
 "module__ahrs_chimu_uart.html#functions__ahrs_chimu_uart":[1,25,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX131 =
 "module__baro_mpl3115.html#configuration__baro_mpl3115":[1,395,1],
 "module__baro_mpl3115.html#functions__baro_mpl3115":[1,395,2],
 "module__baro_mpl3115.html#module_load_example__baro_mpl3115":[1,395,0],
-"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0]
+"module__baro_mpl3115.html#module_xml__baro_mpl3115":[1,395,2,0],
+"module__baro_ms5534a.html":[1,386],
+"module__baro_ms5534a.html#functions__baro_ms5534a":[1,386,1]
 };

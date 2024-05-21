@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"module__lidar_sf11.html#configuration__lidar_sf11":[1,247,1],
 "module__lidar_sf11.html#functions__lidar_sf11":[1,247,2],
 "module__lidar_sf11.html#module_load_example__lidar_sf11":[1,247,0],
 "module__lidar_sf11.html#module_xml__lidar_sf11":[1,247,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "module__nav_rosette.html#functions__nav_rosette":[1,332,1],
 "module__nav_rosette.html#module_load_example__nav_rosette":[1,332,0],
 "module__nav_rosette.html#module_xml__nav_rosette":[1,332,1,0],
-"module__nav_rotorcraft.html":[1,333],
-"module__nav_rotorcraft.html#datalink_functions__nav_rotorcraft":[1,333,2]
+"module__nav_rotorcraft.html":[1,333]
 };

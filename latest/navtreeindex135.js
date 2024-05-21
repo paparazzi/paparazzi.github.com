@@ -1,12 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"module__imu_cube.html#module_xml__imu_cube":[1,199,1,0],
-"module__imu_disco.html":[1,200],
-"module__imu_disco.html#configuration__imu_disco":[1,200,1],
-"module__imu_disco.html#functions__imu_disco":[1,200,2],
-"module__imu_disco.html#module_load_example__imu_disco":[1,200,0],
-"module__imu_disco.html#module_xml__imu_disco":[1,200,2,0],
-"module__imu_elle0.html":[1,201],
 "module__imu_elle0.html#module_load_example__imu_elle0":[1,201,0],
 "module__imu_elle0.html#module_xml__imu_elle0":[1,201,0,0],
 "module__imu_heater.html":[1,202],
@@ -55,9 +48,17 @@ var NAVTREEINDEX135 =
 "module__imu_mpu9250.html#module_xml__imu_mpu9250":[1,211,2,0],
 "module__imu_mpu9250_i2c.html":[1,212],
 "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c":[1,212,1],
+"module__imu_mpu9250_i2c.html#configure":[1,212,1,0],
+"module__imu_mpu9250_i2c.html#define":[1,212,1,1],
+"module__imu_mpu9250_i2c.html#event_functions":[1,212,2,1],
+"module__imu_mpu9250_i2c.html#files":[1,212,3],
 "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c":[1,212,2],
+"module__imu_mpu9250_i2c.html#headers":[1,212,3,0],
+"module__imu_mpu9250_i2c.html#init_functions":[1,212,2,0],
 "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c":[1,212,0],
-"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,212,2,0],
+"module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c":[1,212,3,2],
+"module__imu_mpu9250_i2c.html#periodic_functions":[1,212,2,2],
+"module__imu_mpu9250_i2c.html#sources":[1,212,3,1],
 "module__imu_mpu9250_spi.html":[1,213],
 "module__imu_mpu9250_spi.html#configuration__imu_mpu9250_spi":[1,213,1],
 "module__imu_mpu9250_spi.html#functions__imu_mpu9250_spi":[1,213,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX135 =
 "module__lidar_lite.html#functions__lidar_lite":[1,246,2],
 "module__lidar_lite.html#module_load_example__lidar_lite":[1,246,0],
 "module__lidar_lite.html#module_xml__lidar_lite":[1,246,2,0],
-"module__lidar_sf11.html":[1,247],
-"module__lidar_sf11.html#configuration__lidar_sf11":[1,247,1]
+"module__lidar_sf11.html":[1,247]
 };

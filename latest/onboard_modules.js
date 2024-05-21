@@ -186,11 +186,8 @@ var onboard_modules =
     ] ],
     [ "ahrs_chimu_spi module", "module__ahrs_chimu_spi.html", [
       [ "Example for airframe file", "module__ahrs_chimu_spi.html#module_load_example__ahrs_chimu_spi", null ],
-      [ "Module configuration options", "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi", [
-        [ "Define Options", "module__ahrs_chimu_spi.html#define", null ]
-      ] ],
+      [ "Module configuration options", "module__ahrs_chimu_spi.html#configuration__ahrs_chimu_spi", null ],
       [ "Module functions", "module__ahrs_chimu_spi.html#functions__ahrs_chimu_spi", [
-        [ "Event Functions", "module__ahrs_chimu_spi.html#event_functions", null ],
         [ "Raw ahrs_chimu_spi.xml file:", "module__ahrs_chimu_spi.html#module_xml__ahrs_chimu_spi", null ]
       ] ]
     ] ],
@@ -718,7 +715,6 @@ var onboard_modules =
     [ "fbw_datalink module", "module__fbw_datalink.html", [
       [ "Example for airframe file", "module__fbw_datalink.html#module_load_example__fbw_datalink", null ],
       [ "Module configuration options", "module__fbw_datalink.html#configuration__fbw_datalink", [
-        [ "Configure Options", "module__fbw_datalink.html#configure", null ],
         [ "Raw fbw_datalink.xml file:", "module__fbw_datalink.html#module_xml__fbw_datalink", null ]
       ] ]
     ] ],
@@ -942,12 +938,6 @@ var onboard_modules =
     [ "electrical module", "module__electrical.html", [
       [ "Example for airframe file", "module__electrical.html#module_load_example__electrical", null ],
       [ "Module functions", "module__electrical.html#functions__electrical", [
-        [ "Init Functions", "module__electrical.html#init_functions", null ],
-        [ "Periodic Functions", "module__electrical.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__electrical.html#files", [
-        [ "Header Files", "module__electrical.html#headers", null ],
-        [ "Source Files", "module__electrical.html#sources", null ],
         [ "Raw electrical.xml file:", "module__electrical.html#module_xml__electrical", null ]
       ] ]
     ] ],
@@ -1207,7 +1197,9 @@ var onboard_modules =
     ] ],
     [ "filter_1euro_imu module", "module__filter_1euro_imu.html", [
       [ "Example for airframe file", "module__filter_1euro_imu.html#module_load_example__filter_1euro_imu", null ],
-      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", null ],
+      [ "Module configuration options", "module__filter_1euro_imu.html#configuration__filter_1euro_imu", [
+        [ "Airframe file section", "module__filter_1euro_imu.html#af_section", null ]
+      ] ],
       [ "Module functions", "module__filter_1euro_imu.html#functions__filter_1euro_imu", [
         [ "Raw filter_1euro_imu.xml file:", "module__filter_1euro_imu.html#module_xml__filter_1euro_imu", null ]
       ] ]
@@ -1254,20 +1246,20 @@ var onboard_modules =
       [ "Example for airframe file", "module__imu_aspirin_i2c_v1_5.html#module_load_example__imu_aspirin_i2c_v1_5", null ]
     ] ],
     [ "imu_aspirin_v1.0 module", "module__imu_aspirin_v1_0.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", [
-        [ ".0 Raw imu_aspirin_v1.0.xml file:", "module__imu_aspirin_v1_0.html#module_xml__imu_aspirin_v1", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_0.html#module_load_example__imu_aspirin_v1_0", null ]
     ] ],
     [ "imu_aspirin_v1.5 module", "module__imu_aspirin_v1_5.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v1_5.html#module_load_example__imu_aspirin_v1_5", [
+        [ ".5 Raw imu_aspirin_v1.5.xml file:", "module__imu_aspirin_v1_5.html#module_xml__imu_aspirin_v1", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.1 module", "module__imu_aspirin_v2_1.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", null ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_1.html#module_load_example__imu_aspirin_v2_1", [
+        [ ".1 Raw imu_aspirin_v2.1.xml file:", "module__imu_aspirin_v2_1.html#module_xml__imu_aspirin_v2", null ]
+      ] ]
     ] ],
     [ "imu_aspirin_v2.2 module", "module__imu_aspirin_v2_2.html", [
-      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", [
-        [ ".2 Raw imu_aspirin_v2.2.xml file:", "module__imu_aspirin_v2_2.html#module_xml__imu_aspirin_v2", null ]
-      ] ]
+      [ "Example for airframe file", "module__imu_aspirin_v2_2.html#module_load_example__imu_aspirin_v2_2", null ]
     ] ],
     [ "imu_aspirin_v2_common module", "module__imu_aspirin_v2_common.html", [
       [ "Example for airframe file", "module__imu_aspirin_v2_common.html#module_load_example__imu_aspirin_v2_common", null ],
@@ -1386,8 +1378,18 @@ var onboard_modules =
     ] ],
     [ "imu_mpu9250_i2c module", "module__imu_mpu9250_i2c.html", [
       [ "Example for airframe file", "module__imu_mpu9250_i2c.html#module_load_example__imu_mpu9250_i2c", null ],
-      [ "Module configuration options", "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c", null ],
+      [ "Module configuration options", "module__imu_mpu9250_i2c.html#configuration__imu_mpu9250_i2c", [
+        [ "Configure Options", "module__imu_mpu9250_i2c.html#configure", null ],
+        [ "Define Options", "module__imu_mpu9250_i2c.html#define", null ]
+      ] ],
       [ "Module functions", "module__imu_mpu9250_i2c.html#functions__imu_mpu9250_i2c", [
+        [ "Init Functions", "module__imu_mpu9250_i2c.html#init_functions", null ],
+        [ "Event Functions", "module__imu_mpu9250_i2c.html#event_functions", null ],
+        [ "Periodic Functions", "module__imu_mpu9250_i2c.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__imu_mpu9250_i2c.html#files", [
+        [ "Header Files", "module__imu_mpu9250_i2c.html#headers", null ],
+        [ "Source Files", "module__imu_mpu9250_i2c.html#sources", null ],
         [ "Raw imu_mpu9250_i2c.xml file:", "module__imu_mpu9250_i2c.html#module_xml__imu_mpu9250_i2c", null ]
       ] ]
     ] ],
@@ -2789,9 +2791,7 @@ var onboard_modules =
     ] ],
     [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
       [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
-      [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", [
-        [ "Airframe file section", "module__stabilization_float_quat.html#af_section", null ]
-      ] ],
+      [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
       [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
         [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
       ] ]
