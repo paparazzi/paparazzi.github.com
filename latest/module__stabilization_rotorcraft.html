@@ -118,8 +118,8 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad">stabilization_init()</a></li>
-<li><a class="el" href="stabilization__none_8c.html#a7afeae412bd051903e86eee6736549ad">stabilization_none_init()</a></li>
+<li><a class="el" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function.">stabilization_init()</a></li>
+<li><a class="el" href="stabilization__direct_8c.html#ab87d77a89482fbf4a2008614a6a1d689">stabilization_direct_init()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -128,13 +128,13 @@ Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
 <li><a class="el" href="stabilization_8h.html">stabilization.h</a></li>
-<li><a class="el" href="stabilization__none_8h.html">stabilization_none.h</a></li>
+<li><a class="el" href="stabilization__direct_8h.html">stabilization_direct.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
 <li>/stabilization.c</li>
-<li>/stabilization/stabilization_none.c</li>
+<li>/stabilization/stabilization_direct.c</li>
 <li>/stabilization/stabilization_attitude_rc_setpoint.c</li>
 <li>/stabilization/stabilization_attitude_quat_transformations.c</li>
 </ul>
@@ -162,15 +162,18 @@ Raw stabilization_rotorcraft.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization.h&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;firmwares/rotorcraft&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_none.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_direct.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;stabilization_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;stabilization_none_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;stabilization_direct_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_none.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_direct.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude_rc_setpoint.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude_quat_transformations.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PERIODIC_FREQUENCY&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;500&quot;</span>/&gt;</div>
+<div class="line">    &lt;/<span class="keywordtype">test</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -180,7 +183,7 @@ Raw stabilization_rotorcraft.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

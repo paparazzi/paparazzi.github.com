@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('stabilization_8h.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -99,6 +100,7 @@ $(document).ready(function(){initNavTree('stabilization_8h.html',''); initResiza
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization__attitude__rc__setpoint_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_rc_setpoint.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,18 +108,22 @@ $(document).ready(function(){initNavTree('stabilization_8h.html',''); initResiza
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_8h" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8h" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8h">
-<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="218,5,400,47"/>
-<area shape="rect" title=" " alt="" coords="72,244,127,271"/>
-<area shape="rect" title=" " alt="" coords="576,95,736,121"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="114,95,294,121"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="360,95,552,121"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="304,169,460,196"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="127,169,280,196"/>
-<area shape="rect" title=" " alt="" coords="32,169,103,196"/>
-<area shape="rect" title=" " alt="" coords="428,244,491,271"/>
-<area shape="rect" title=" " alt="" coords="334,244,404,271"/>
-<area shape="rect" title=" " alt="" coords="515,244,583,271"/>
-<area shape="rect" title=" " alt="" coords="586,169,744,196"/>
+<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="250,5,433,47"/>
+<area shape="rect" title=" " alt="" coords="81,363,135,389"/>
+<area shape="rect" title=" " alt="" coords="819,288,979,315"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="99,206,279,233"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="407,206,599,233"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="246,95,437,151"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="355,288,511,315"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="31,288,185,315"/>
+<area shape="rect" title=" " alt="" coords="209,288,279,315"/>
+<area shape="rect" title=" " alt="" coords="479,363,542,389"/>
+<area shape="rect" title=" " alt="" coords="385,363,455,389"/>
+<area shape="rect" title=" " alt="" coords="566,363,634,389"/>
+<area shape="rect" title=" " alt="" coords="637,288,795,315"/>
+<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="815,199,982,240"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1003,288,1101,315"/>
+<area shape="rect" title=" " alt="" coords="1009,363,1095,389"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,56 +133,56 @@ $(document).ready(function(){initNavTree('stabilization_8h.html',''); initResiza
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_8hdep" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8hdep" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_8hdep">
-<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="2437,5,2619,47"/>
-<area shape="rect" href="boards_2bebop_2actuators_8c.html" title="Actuator driver for the bebop and bebop 2." alt="" coords="5,102,152,143"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="1423,317,1590,373"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1734,429,1901,485"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="2753,95,2919,151"/>
-<area shape="rect" href="guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="342,429,509,485"/>
-<area shape="rect" href="guidance__pid_8c.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="2254,317,2421,373"/>
-<area shape="rect" href="guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="1966,317,2133,373"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="1946,429,2113,485"/>
-<area shape="rect" href="guidance__indi_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="281,317,447,373"/>
-<area shape="rect" href="guidance__indi__hybrid_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="3383,317,3559,373"/>
-<area shape="rect" href="oneloop__andi_8h.html" title=" " alt="" coords="3714,95,3913,151"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="816,95,992,151"/>
-<area shape="rect" href="stabilization__attitude__passthrough_8c.html" title="passthrough attitude stabilization" alt="" coords="277,199,448,269"/>
-<area shape="rect" href="ctrl__module__outerloop__demo_8c.html" title="example empty controller" alt="" coords="1064,206,1261,262"/>
-<area shape="rect" href="optical__flow__hover_8c.html" title=" " alt="" coords="1286,213,1469,255"/>
-<area shape="rect" href="optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="1544,213,1739,255"/>
-<area shape="rect" href="stabilization__indi_8h.html" title=" " alt="" coords="3419,95,3589,151"/>
-<area shape="rect" href="stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="4024,206,4205,262"/>
-<area shape="rect" href="stabilization__indi__simple_8h.html" title=" " alt="" coords="1984,95,2184,151"/>
-<area shape="rect" href="stabilization__none_8c.html" title="Dummy stabilization for rotorcrafts." alt="" coords="3937,95,4108,151"/>
-<area shape="rect" href="stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="4132,95,4303,151"/>
-<area shape="rect" href="stabilization_8c.html" title="General stabilization interface for rotorcrafts." alt="" coords="4327,102,4508,143"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html" title="example empty controller" alt="" coords="4533,95,4729,151"/>
-<area shape="rect" href="ctrl__windtunnel_8c.html" title="Windtunnel automatic step controller." alt="" coords="4753,102,4916,143"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html" title="example vertical controller" alt="" coords="4941,95,5099,151"/>
-<area shape="rect" href="ins__flow_8c.html" title=" " alt="" coords="5123,102,5282,143"/>
-<area shape="rect" href="direct__memory__logger_8c.html" title="Write logs directly to flash memory chips." alt="" coords="5306,95,5483,151"/>
-<area shape="rect" href="nav__heli__spinup_8c.html" title=" " alt="" coords="5508,102,5679,143"/>
-<area shape="rect" href="guidance__flip_8c.html" title="Open Loop guidance for making a flip." alt="" coords="2753,206,2919,262"/>
-<area shape="rect" href="guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="2289,429,2455,485"/>
-<area shape="rect" href="guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="4210,317,4377,373"/>
-<area shape="rect" href="guidance__pid_8h.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="2510,206,2677,262"/>
-<area shape="rect" href="guidance_8h.html" title=" " alt="" coords="1966,213,2133,255"/>
-<area shape="rect" href="scheduling__indi__simple_8c.html" title=" " alt="" coords="2878,429,3037,485"/>
-<area shape="rect" href="rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="2995,213,3165,255"/>
-<area shape="rect" href="eff__scheduling__cyfoam_8c.html" title=" " alt="" coords="3790,206,3949,262"/>
-<area shape="rect" href="eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="3425,206,3583,262"/>
-<area shape="rect" href="eff__scheduling__generic_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="3607,206,3766,262"/>
-<area shape="rect" href="nav__fish_8c.html" title=" " alt="" coords="3190,213,3349,255"/>
-<area shape="rect" href="orange__avoider__guided_8c.html" title=" " alt="" coords="2309,206,2485,262"/>
-<area shape="rect" href="guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="3189,429,3363,485"/>
-<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="3387,421,3554,492"/>
-<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html" title=" " alt="" coords="3578,421,3745,492"/>
-<area shape="rect" href="rotwing__state_8c.html" title=" " alt="" coords="3833,429,4012,485"/>
-<area shape="rect" href="guidance__oneloop_8h.html" title="A dummy guidance mode to run the oneloop_andi controller." alt="" coords="4553,206,4719,262"/>
-<area shape="rect" href="oneloop__andi_8c.html" title=" " alt="" coords="4330,206,4529,262"/>
-<area shape="rect" href="stabilization__oneloop_8c.html" title=" " alt="" coords="4744,206,4920,262"/>
-<area shape="rect" href="stabilization__attitude__euler__float_8c.html" title="Rotorcraft attitude stabilization in euler float version." alt="" coords="819,199,989,269"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html" title="Rotorcraft attitude stabilization in euler int version." alt="" coords="523,199,693,269"/>
+<area shape="rect" title="General stabilization interface for rotorcrafts." alt="" coords="3585,5,3767,47"/>
+<area shape="rect" href="boards_2bebop_2actuators_8c.html" title="Actuator driver for the bebop and bebop 2." alt="" coords="5,109,152,151"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation." alt="" coords="2366,317,2533,373"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1779,213,1946,269"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1445,102,1611,158"/>
+<area shape="rect" href="guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="793,429,959,485"/>
+<area shape="rect" href="guidance__pid_8c.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="758,317,925,373"/>
+<area shape="rect" href="guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="1993,317,2159,373"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts." alt="" coords="2538,429,2705,485"/>
+<area shape="rect" href="guidance__indi_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion." alt="" coords="949,317,1115,373"/>
+<area shape="rect" href="guidance__indi__hybrid_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more!" alt="" coords="3528,317,3704,373"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html" title="example vertical controller" alt="" coords="329,213,487,269"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts." alt="" coords="2733,102,2899,158"/>
+<area shape="rect" href="ctrl__module__outerloop__demo_8c.html" title="example empty controller" alt="" coords="2904,213,3101,269"/>
+<area shape="rect" href="optical__flow__hover_8c.html" title=" " alt="" coords="3309,221,3491,262"/>
+<area shape="rect" href="optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant." alt="" coords="3933,325,4128,366"/>
+<area shape="rect" href="oneloop__andi_8h.html" title=" " alt="" coords="2263,102,2462,158"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="3588,102,3764,158"/>
+<area shape="rect" href="stabilization__indi_8h.html" title=" " alt="" coords="2507,213,2677,269"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html" title="Rate stabilization for rotorcrafts based on INDI by Ewoud Smeur." alt="" coords="3728,317,3909,373"/>
+<area shape="rect" href="stabilization__indi__simple_8h.html" title=" " alt="" coords="3999,213,4199,269"/>
+<area shape="rect" href="stabilization_8c.html" title="General stabilization interface for rotorcrafts." alt="" coords="4273,221,4455,262"/>
+<area shape="rect" href="stabilization__attitude__passthrough_8c.html" title="passthrough attitude stabilization" alt="" coords="4100,95,4271,165"/>
+<area shape="rect" href="stabilization__direct_8c.html" title="Dummy stabilization for rotorcrafts." alt="" coords="4479,213,4649,269"/>
+<area shape="rect" href="stabilization__direct_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="4295,102,4465,158"/>
+<area shape="rect" href="stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts." alt="" coords="4673,213,4844,269"/>
+<area shape="rect" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="4540,102,4711,158"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html" title="example empty controller" alt="" coords="4786,102,4982,158"/>
+<area shape="rect" href="ctrl__windtunnel_8c.html" title="Windtunnel automatic step controller." alt="" coords="5007,109,5169,151"/>
+<area shape="rect" href="ins__flow_8c.html" title=" " alt="" coords="5194,109,5353,151"/>
+<area shape="rect" href="direct__memory__logger_8c.html" title="Write logs directly to flash memory chips." alt="" coords="5377,102,5554,158"/>
+<area shape="rect" href="nav__heli__spinup_8c.html" title=" " alt="" coords="5579,109,5749,151"/>
+<area shape="rect" href="guidance__flip_8c.html" title="Open Loop guidance for making a flip." alt="" coords="1142,213,1309,269"/>
+<area shape="rect" href="guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations." alt="" coords="1993,429,2159,485"/>
+<area shape="rect" href="guidance__oneloop_8c.html" title="A dummy guidance module to run the oneloop_andi controller." alt="" coords="2265,213,2431,269"/>
+<area shape="rect" href="guidance__pid_8h.html" title="Guidance controller with PID for rotorcrafts." alt="" coords="1385,213,1551,269"/>
+<area shape="rect" href="guidance_8h.html" title=" " alt="" coords="2022,221,2189,262"/>
+<area shape="rect" href="scheduling__indi__simple_8c.html" title=" " alt="" coords="4003,429,4162,485"/>
+<area shape="rect" href="rotorcraft_2navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="512,221,683,262"/>
+<area shape="rect" href="eff__scheduling__cyfoam_8c.html" title=" " alt="" coords="1627,317,1786,373"/>
+<area shape="rect" href="eff__scheduling__falcon_8c.html" title="Interpolation of control effectivenss matrix of the Falcon hybrid plane." alt="" coords="1810,317,1969,373"/>
+<area shape="rect" href="eff__scheduling__generic_8c.html" title="Module that interpolates gainsets in flight based on the transition percentage." alt="" coords="2183,317,2342,373"/>
+<area shape="rect" href="nav__fish_8c.html" title=" " alt="" coords="758,221,917,262"/>
+<area shape="rect" href="orange__avoider__guided_8c.html" title=" " alt="" coords="941,213,1117,269"/>
+<area shape="rect" href="guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more!" alt="" coords="3805,429,3979,485"/>
+<area shape="rect" href="guidance__indi__hybrid__quadplane_8c.html" title=" " alt="" coords="3423,421,3590,492"/>
+<area shape="rect" href="guidance__indi__hybrid__tailsitter_8c.html" title=" " alt="" coords="3614,421,3781,492"/>
+<area shape="rect" href="rotwing__state_8c.html" title=" " alt="" coords="3220,429,3399,485"/>
+<area shape="rect" href="guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems." alt="" coords="3516,213,3721,269"/>
+<area shape="rect" href="guidance__OA_8c.html" title="Guidance for the obstacle avoidance methods." alt="" coords="3126,213,3285,269"/>
 </map>
 </div>
 </div>
@@ -185,8 +191,14 @@ $(document).ready(function(){initNavTree('stabilization_8h.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stabilization setpoint.  <a href="structStabilizationSetpoint.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> setpoint.  <a href="structStabilizationSetpoint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrust setpoint // TODO to a setpoint header Structure to store the desired thrust vector with different format.  <a href="structThrustSetpoint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structStabilization"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#structStabilization">Stabilization</a></td></tr>
+<tr class="memdesc:structStabilization"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> structure.  <a href="stabilization_8h.html#structStabilization">More...</a><br /></td></tr>
+<tr class="separator:structStabilization"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:unionStabilizationSetpoint_8sp"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#unionStabilizationSetpoint_8sp">StabilizationSetpoint.sp</a></td></tr>
 <tr class="separator:unionStabilizationSetpoint_8sp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structStabilizationSetpoint_8sp_8ltp__i"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#structStabilizationSetpoint_8sp_8ltp__i">StabilizationSetpoint.sp.ltp_i</a></td></tr>
@@ -195,12 +207,54 @@ Data Structures</h2></td></tr>
 <tr class="separator:structStabilizationSetpoint_8sp_8ltp__f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:unionStabilizationSetpoint_8r__sp"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#unionStabilizationSetpoint_8r__sp">StabilizationSetpoint.r_sp</a></td></tr>
 <tr class="separator:unionStabilizationSetpoint_8r__sp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionThrustSetpoint_8sp"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#unionThrustSetpoint_8sp">ThrustSetpoint.sp</a></td></tr>
+<tr class="separator:unionThrustSetpoint_8sp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:acc21777cd31989326b46de5f54143db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#acc21777cd31989326b46de5f54143db2">STABILIZATION_MODE_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:acc21777cd31989326b46de5f54143db2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> modes.  <a href="stabilization_8h.html#acc21777cd31989326b46de5f54143db2">More...</a><br /></td></tr>
+<tr class="separator:acc21777cd31989326b46de5f54143db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8e272547e56b6fdfd15320dc71cace"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#aca8e272547e56b6fdfd15320dc71cace">STABILIZATION_MODE_DIRECT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aca8e272547e56b6fdfd15320dc71cace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e7c08327f5d8959ae531e6ef8eb77f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ab2e7c08327f5d8959ae531e6ef8eb77f">STABILIZATION_MODE_RATE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ab2e7c08327f5d8959ae531e6ef8eb77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52102c2366a304dd851ad0a57eef3ed4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a52102c2366a304dd851ad0a57eef3ed4">STABILIZATION_MODE_ATTITUDE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a52102c2366a304dd851ad0a57eef3ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ffed43ba1c015bf4fd655e4e85b476"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a71ffed43ba1c015bf4fd655e4e85b476">STABILIZATION_ATT_SUBMODE_HEADING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a71ffed43ba1c015bf4fd655e4e85b476"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> sub-modes for attitude.  <a href="stabilization_8h.html#a71ffed43ba1c015bf4fd655e4e85b476">More...</a><br /></td></tr>
+<tr class="separator:a71ffed43ba1c015bf4fd655e4e85b476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263638d908c0c686f3d413e0e6915620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a263638d908c0c686f3d413e0e6915620">STABILIZATION_ATT_SUBMODE_CARE_FREE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a263638d908c0c686f3d413e0e6915620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b4c2786f9b583d69193db90a64b58a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a82b4c2786f9b583d69193db90a64b58a">STABILIZATION_ATT_SUBMODE_FORWARD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a82b4c2786f9b583d69193db90a64b58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e56bab479e8b806443b3bec36f3113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a75e56bab479e8b806443b3bec36f3113">THRUST_AXIS_X</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a75e56bab479e8b806443b3bec36f3113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a34970c905560227720c6b575a1309"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ab2a34970c905560227720c6b575a1309">THRUST_AXIS_Y</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ab2a34970c905560227720c6b575a1309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e60210614c385a7a544f0f68c6cc7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a82e60210614c385a7a544f0f68c6cc7f">THRUST_AXIS_Z</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a82e60210614c385a7a544f0f68c6cc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7161b555068a7752a59125513a8c81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#abe7161b555068a7752a59125513a8c81">STAB_SP_SET_EULERS_ZERO</a>(_sp)</td></tr>
+<tr class="separator:abe7161b555068a7752a59125513a8c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062b09ee031d76c720b209da5f39aac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a062b09ee031d76c720b209da5f39aac7">THRUST_SP_SET_ZERO</a>(_sp)</td></tr>
+<tr class="separator:a062b09ee031d76c720b209da5f39aac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adfc80da254aa5bbac3fc038eaaa3d9ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad">stabilization_init</a> (void)</td></tr>
+<tr class="memdesc:adfc80da254aa5bbac3fc038eaaa3d9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="stabilization_8h.html#adfc80da254aa5bbac3fc038eaaa3d9ad">More...</a><br /></td></tr>
 <tr class="separator:adfc80da254aa5bbac3fc038eaaa3d9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163ba30896a625790e1b83f72f02d2a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a163ba30896a625790e1b83f72f02d2a1">stabilization_mode_changed</a> (<a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_mode, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> submode)</td></tr>
+<tr class="memdesc:a163ba30896a625790e1b83f72f02d2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check mode change.  <a href="stabilization_8h.html#a163ba30896a625790e1b83f72f02d2a1">More...</a><br /></td></tr>
+<tr class="separator:a163ba30896a625790e1b83f72f02d2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6340487673196d115af96fafd83a6d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a6340487673196d115af96fafd83a6d5e">stabilization_run</a> (bool in_flight, struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp, struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *thrust, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *cmd)</td></tr>
+<tr class="memdesc:a6340487673196d115af96fafd83a6d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call default stabilization control.  <a href="stabilization_8h.html#a6340487673196d115af96fafd83a6d5e">More...</a><br /></td></tr>
+<tr class="separator:a6340487673196d115af96fafd83a6d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6249a54ee536ed29d3dd9243f12bda3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ad6249a54ee536ed29d3dd9243f12bda3">stabilization_get_failsafe_sp</a> (void)</td></tr>
+<tr class="memdesc:ad6249a54ee536ed29d3dd9243f12bda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stabilization setpoint for failsafe.  <a href="stabilization_8h.html#ad6249a54ee536ed29d3dd9243f12bda3">More...</a><br /></td></tr>
+<tr class="separator:ad6249a54ee536ed29d3dd9243f12bda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7ccfe18fa4b4c7d686ddb7f9b3a731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a2e7ccfe18fa4b4c7d686ddb7f9b3a731">stabilization_filter_commands</a> (void)</td></tr>
+<tr class="memdesc:a2e7ccfe18fa4b4c7d686ddb7f9b3a731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command filter for vibrating airframes.  <a href="stabilization_8h.html#a2e7ccfe18fa4b4c7d686ddb7f9b3a731">More...</a><br /></td></tr>
 <tr class="separator:a2e7ccfe18fa4b4c7d686ddb7f9b3a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933a2abf3187537a85e675731038606c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a933a2abf3187537a85e675731038606c">stab_sp_to_quat_i</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
 <tr class="separator:a933a2abf3187537a85e675731038606c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +268,14 @@ Functions</h2></td></tr>
 <tr class="separator:a45fd7e0c331ad443dfc4bd6b2e5e0aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838406e69a08c86fb7f1427aaac5629f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a838406e69a08c86fb7f1427aaac5629f">stab_sp_to_rates_f</a> (struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *sp)</td></tr>
 <tr class="separator:a838406e69a08c86fb7f1427aaac5629f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1c34e4df8582150dd77b44ae73a1db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#aff1c34e4df8582150dd77b44ae73a1db">th_sp_to_thrust_i</a> (struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *th, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:aff1c34e4df8582150dd77b44ae73a1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad59d5e15279645d0324dd622976112e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#aad59d5e15279645d0324dd622976112e">th_sp_to_thrust_f</a> (struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *th, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:aad59d5e15279645d0324dd622976112e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68434376930aabf9900a375d991c213e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a68434376930aabf9900a375d991c213e">th_sp_to_incr_i</a> (struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *th, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:a68434376930aabf9900a375d991c213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8879789937e2ebcfac887de04352e6cd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a8879789937e2ebcfac887de04352e6cd">th_sp_to_incr_f</a> (struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *th, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:a8879789937e2ebcfac887de04352e6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cca581158ca616cb1ffda9a5da0c77a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a6cca581158ca616cb1ffda9a5da0c77a">stab_sp_from_quat_i</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Quat">Int32Quat</a> *quat)</td></tr>
 <tr class="separator:a6cca581158ca616cb1ffda9a5da0c77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f4de42924ea662ae4f03e04c78d4bf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a66f4de42924ea662ae4f03e04c78d4bf">stab_sp_from_quat_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *quat)</td></tr>
@@ -232,18 +294,106 @@ Functions</h2></td></tr>
 <tr class="separator:a3043efd8d0c23638ed6424088e2e7bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d2dc9d742cd2ce9038f6ea0ef4b96a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ae2d2dc9d742cd2ce9038f6ea0ef4b96a">stab_sp_from_rates_f</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *rates)</td></tr>
 <tr class="separator:ae2d2dc9d742cd2ce9038f6ea0ef4b96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9100967a3aba7417a3e6f0ed2111dac"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ad9100967a3aba7417a3e6f0ed2111dac">th_sp_from_thrust_i</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:ad9100967a3aba7417a3e6f0ed2111dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057132685a68b5ca5fce4a765c78e1d8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a057132685a68b5ca5fce4a765c78e1d8">th_sp_from_thrust_f</a> (float thrust, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:a057132685a68b5ca5fce4a765c78e1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f7368d05056ec13976fd2907b6c794"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a13f7368d05056ec13976fd2907b6c794">th_sp_from_incr_i</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> th_increment, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:a13f7368d05056ec13976fd2907b6c794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac216c75df4ac56939368ac23b054f66a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#ac216c75df4ac56939368ac23b054f66a">th_sp_from_incr_f</a> (float th_increment, <a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> axis)</td></tr>
+<tr class="separator:ac216c75df4ac56939368ac23b054f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72119ad76f5485433505e64ac524aaa4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a72119ad76f5485433505e64ac524aaa4">th_sp_from_thrust_vect_i</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> thrust[3])</td></tr>
+<tr class="separator:a72119ad76f5485433505e64ac524aaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c61318c08728686b00187068015ccfc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a6c61318c08728686b00187068015ccfc">th_sp_from_thrust_vect_f</a> (float thrust[3])</td></tr>
+<tr class="separator:a6c61318c08728686b00187068015ccfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7753f90ff4ecbd409c23080a71c9626d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a7753f90ff4ecbd409c23080a71c9626d">th_sp_from_incr_vect_i</a> (<a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> th_increment[3])</td></tr>
+<tr class="separator:a7753f90ff4ecbd409c23080a71c9626d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad2f16e91577fd7ea31db87f9d79147"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a5ad2f16e91577fd7ea31db87f9d79147">th_sp_from_incr_vect_f</a> (float th_increment[3])</td></tr>
+<tr class="separator:a5ad2f16e91577fd7ea31db87f9d79147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7db6cb929d989e142cf136ac4af10add"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a7db6cb929d989e142cf136ac4af10add">stabilization_cmd</a> [COMMANDS_NB]</td></tr>
-<tr class="memdesc:a7db6cb929d989e142cf136ac4af10add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stabilization commands.  <a href="stabilization_8h.html#a7db6cb929d989e142cf136ac4af10add">More...</a><br /></td></tr>
-<tr class="separator:a7db6cb929d989e142cf136ac4af10add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3d2f9aa609726bcb530a1905f2a89c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="stabilization_8h.html#structStabilization">Stabilization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization_8h.html#a0c3d2f9aa609726bcb530a1905f2a89c">stabilization</a></td></tr>
+<tr class="separator:a0c3d2f9aa609726bcb530a1905f2a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General stabilization interface for rotorcrafts. </p>
 
 <p class="definition">Definition in file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structStabilization" id="structStabilization"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structStabilization">&#9670;&nbsp;</a></span>Stabilization</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct Stabilization</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> structure. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00102">102</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Stabilization:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structStabilization__coll__graph.png" border="0" usemap="#aStabilization_coll__map" alt="Collaboration graph"/></div>
+<map name="aStabilization_coll__map" id="aStabilization_coll__map">
+<area shape="rect" title="Stabilization structure." alt="" coords="5,124,108,151"/>
+<area shape="rect" title=" " alt="" coords="27,5,86,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a79be1687af91edd094a135748f00b7d2"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+att_submode</td>
+<td class="fielddoc">
+current attitude sub-mode </td></tr>
+<tr><td class="fieldtype">
+<a id="aac8fe30a06c5797b485a32866c3bdd18"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+cmd[COMMANDS_NB]</td>
+<td class="fielddoc">
+output command vector, range from [-MAX_PPRZ:MAX_PPRZ] (store for messages) </td></tr>
+<tr><td class="fieldtype">
+<a id="a224c7c4e678ae31cbac4140cc1adaa0d"></a><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+mode</td>
+<td class="fielddoc">
+current mode </td></tr>
+<tr><td class="fieldtype">
+<a id="af1bb87c9fa89d61c47e4832c274de406"></a>struct <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#structAttitudeRCInput">AttitudeRCInput</a></td>
+<td class="fieldname">
+rc_in</td>
+<td class="fielddoc">
+RC input. </td></tr>
+<tr><td class="fieldtype">
+<a id="a9d17bbcf58aa111577d4e40fdd67243f"></a>struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a></td>
+<td class="fieldname">
+rc_sp</td>
+<td class="fielddoc">
+Keep it ? FIXME. </td></tr>
+<tr><td class="fieldtype">
+<a id="a08d8e9543f1a7e13b096c2eee6305b98"></a>struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a></td>
+<td class="fieldname">
+sp</td>
+<td class="fielddoc">
+current attitude setpoint (store for messages) </td></tr>
+<tr><td class="fieldtype">
+<a id="a95e4603269e35fbb304aecda71f9ba9c"></a>float</td>
+<td class="fieldname">
+transition_ratio</td>
+<td class="fielddoc">
+transition percentage for hybrids (0.: hover; 1.: forward) </td></tr>
+</table>
+
+</div>
+</div>
 <a name="unionStabilizationSetpoint_8sp" id="unionStabilizationSetpoint_8sp"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#unionStabilizationSetpoint_8sp">&#9670;&nbsp;</a></span>StabilizationSetpoint.sp</h2>
 
@@ -256,7 +406,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00054">54</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00065">65</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -311,7 +461,7 @@ quat_i</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00059">59</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00070">70</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -342,7 +492,7 @@ vect</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00060">60</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00071">71</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -373,7 +523,7 @@ vect</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00062">62</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00073">73</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -389,6 +539,268 @@ rates_i</td>
 <td class="fielddoc">
 </td></tr>
 </table>
+
+</div>
+</div>
+<a name="unionThrustSetpoint_8sp" id="unionThrustSetpoint_8sp"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionThrustSetpoint_8sp">&#9670;&nbsp;</a></span>ThrustSetpoint.sp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union ThrustSetpoint.sp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00091">91</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="a5fecb3c8c5619e5c2d9753c12258cd8d"></a>float</td>
+<td class="fieldname">
+th_incr_f[3]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5fc2aecc1e3fced82472f0dcfd5deec8"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+th_incr_i[3]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a42d99bf1477f4f89c530e56b5094baa5"></a>float</td>
+<td class="fieldname">
+thrust_f[3]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac66f6442e21bdb264f6461dd11b9cbe3"></a><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a></td>
+<td class="fieldname">
+thrust_i[3]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="abe7161b555068a7752a59125513a8c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7161b555068a7752a59125513a8c81">&#9670;&nbsp;</a></span>STAB_SP_SET_EULERS_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STAB_SP_SET_EULERS_ZERO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_sp</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  { \</div>
+<div class="line">  _sp.type = STAB_SP_EULERS;  \</div>
+<div class="line">  _sp.format = STAB_SP_INT;   \</div>
+<div class="line">  _sp.sp.eulers_i.phi = 0;    \</div>
+<div class="line">  _sp.sp.eulers_i.theta = 0;  \</div>
+<div class="line">  _sp.sp.eulers_i.psi = 0;    \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00176">176</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a263638d908c0c686f3d413e0e6915620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263638d908c0c686f3d413e0e6915620">&#9670;&nbsp;</a></span>STABILIZATION_ATT_SUBMODE_CARE_FREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_ATT_SUBMODE_CARE_FREE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00046">46</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a82b4c2786f9b583d69193db90a64b58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b4c2786f9b583d69193db90a64b58a">&#9670;&nbsp;</a></span>STABILIZATION_ATT_SUBMODE_FORWARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_ATT_SUBMODE_FORWARD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00047">47</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a71ffed43ba1c015bf4fd655e4e85b476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ffed43ba1c015bf4fd655e4e85b476">&#9670;&nbsp;</a></span>STABILIZATION_ATT_SUBMODE_HEADING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_ATT_SUBMODE_HEADING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> sub-modes for attitude. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00045">45</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a52102c2366a304dd851ad0a57eef3ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52102c2366a304dd851ad0a57eef3ed4">&#9670;&nbsp;</a></span>STABILIZATION_MODE_ATTITUDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_MODE_ATTITUDE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00041">41</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="aca8e272547e56b6fdfd15320dc71cace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8e272547e56b6fdfd15320dc71cace">&#9670;&nbsp;</a></span>STABILIZATION_MODE_DIRECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_MODE_DIRECT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00039">39</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="acc21777cd31989326b46de5f54143db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc21777cd31989326b46de5f54143db2">&#9670;&nbsp;</a></span>STABILIZATION_MODE_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_MODE_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> modes. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00038">38</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="ab2e7c08327f5d8959ae531e6ef8eb77f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e7c08327f5d8959ae531e6ef8eb77f">&#9670;&nbsp;</a></span>STABILIZATION_MODE_RATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STABILIZATION_MODE_RATE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00040">40</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a75e56bab479e8b806443b3bec36f3113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75e56bab479e8b806443b3bec36f3113">&#9670;&nbsp;</a></span>THRUST_AXIS_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRUST_AXIS_X&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00172">172</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="ab2a34970c905560227720c6b575a1309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a34970c905560227720c6b575a1309">&#9670;&nbsp;</a></span>THRUST_AXIS_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRUST_AXIS_Y&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00173">173</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a82e60210614c385a7a544f0f68c6cc7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e60210614c385a7a544f0f68c6cc7f">&#9670;&nbsp;</a></span>THRUST_AXIS_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRUST_AXIS_Z&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00174">174</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
+
+</div>
+</div>
+<a id="a062b09ee031d76c720b209da5f39aac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062b09ee031d76c720b209da5f39aac7">&#9670;&nbsp;</a></span>THRUST_SP_SET_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRUST_SP_SET_ZERO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_sp</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  { \</div>
+<div class="line">  _sp.type = THRUST_SP;       \</div>
+<div class="line">  _sp.format = THRUST_SP_INT; \</div>
+<div class="line">  _sp.sp.thrust_i[0] = 0;     \</div>
+<div class="line">  _sp.sp.thrust_i[1] = 0;     \</div>
+<div class="line">  _sp.sp.thrust_i[2] = 0;     \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="stabilization_8h_source.html#l00184">184</a> of file <a class="el" href="stabilization_8h_source.html">stabilization.h</a>.</p>
 
 </div>
 </div>
@@ -409,20 +821,9 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">References <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, and <a class="el" href="low__pass__filter_8h_source.html#l00239">update_second_order_low_pass_int()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization_8h_a844eeee3541745feb4361f870023c0d7_cgraph.png" border="0" usemap="#astabilization_8h_a844eeee3541745feb4361f870023c0d7_cgraph" alt=""/></div>
-<map name="astabilization_8h_a844eeee3541745feb4361f870023c0d7_cgraph" id="astabilization_8h_a844eeee3541745feb4361f870023c0d7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,175,39"/>
-<area shape="rect" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="223,5,384,47"/>
-</map>
-</div>
+<p class="reference">References <a class="el" href="structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784">ThrustSetpoint::format</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, and <a class="el" href="structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb">ThrustSetpoint::type</a>.</p>
 
 </div>
 </div>
@@ -442,7 +843,22 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_ab4450b06845c4fe82ea4d45c2e2d4b20_icgraph.png" border="0" usemap="#astabilization_8h_ab4450b06845c4fe82ea4d45c2e2d4b20_icgraph" alt=""/></div>
+<map name="astabilization_8h_ab4450b06845c4fe82ea4d45c2e2d4b20_icgraph" id="astabilization_8h_ab4450b06845c4fe82ea4d45c2e2d4b20_icgraph">
+<area shape="rect" title=" " alt="" coords="449,31,617,57"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="227,5,393,32"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="219,56,401,83"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,56,171,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -472,7 +888,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -502,7 +918,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -522,7 +938,23 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization_8c_source.html#l00132">stabilization_attitude_reset_rc()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_a66f4de42924ea662ae4f03e04c78d4bf_icgraph.png" border="0" usemap="#astabilization_8h_a66f4de42924ea662ae4f03e04c78d4bf_icgraph" alt=""/></div>
+<map name="astabilization_8h_a66f4de42924ea662ae4f03e04c78d4bf_icgraph" id="astabilization_8h_a66f4de42924ea662ae4f03e04c78d4bf_icgraph">
+<area shape="rect" title=" " alt="" coords="704,13,863,39"/>
+<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="496,5,656,47"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#aaff770beb67d0854a99599724b3042a5" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="288,5,448,47"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="184,13,240,39"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="5,13,136,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -552,7 +984,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -572,7 +1004,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -592,7 +1024,21 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_attitude_run()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_ae2d2dc9d742cd2ce9038f6ea0ef4b96a_icgraph.png" border="0" usemap="#astabilization_8h_ae2d2dc9d742cd2ce9038f6ea0ef4b96a_icgraph" alt=""/></div>
+<map name="astabilization_8h_ae2d2dc9d742cd2ce9038f6ea0ef4b96a_icgraph" id="astabilization_8h_ae2d2dc9d742cd2ce9038f6ea0ef4b96a_icgraph">
+<area shape="rect" title=" " alt="" coords="423,13,585,39"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="241,5,375,47"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,13,193,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -612,7 +1058,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -632,22 +1078,36 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00181">stabilization_attitude_set_stab_sp()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, and <a class="el" href="low__pass__filter_8h_source.html#l00239">update_second_order_low_pass_int()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_cgraph.png" border="0" usemap="#astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_cgraph" alt=""/></div>
+<map name="astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_cgraph" id="astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,156,39"/>
+<area shape="rect" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="204,5,365,47"/>
+</map>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_icgraph.png" border="0" usemap="#astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_icgraph" alt=""/></div>
 <map name="astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_icgraph" id="astabilization_8h_a149e8580cd750bf54e879e86bc85bcd5_icgraph">
-<area shape="rect" title=" " alt="" coords="1052,31,1203,57"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="844,23,1004,65"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5" title="Set horizontal guidance from NAV and run control loop." alt="" coords="408,5,573,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control." alt="" coords="621,56,796,83"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,31,360,57"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,31,188,57"/>
+<area shape="rect" title=" " alt="" coords="685,81,836,108"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="449,81,637,108"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="242,5,378,32"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="227,56,393,83"/>
+<area shape="rect" href="stabilization_8c.html#a75c4fbd3740da152c0742c639489c3be" title=" " alt="" coords="245,107,375,133"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="219,157,401,184"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,157,171,184"/>
 </map>
 </div>
 
@@ -669,20 +1129,23 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00212">stabilization_attitude_set_stab_sp()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="optical__flow__hover_8c_source.html#l00304">reset_horizontal_vars()</a>, <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00180">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_attitude_run()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_ac41f248e6265fdcd678691661a7f3c10_icgraph.png" border="0" usemap="#astabilization_8h_ac41f248e6265fdcd678691661a7f3c10_icgraph" alt=""/></div>
 <map name="astabilization_8h_ac41f248e6265fdcd678691661a7f3c10_icgraph" id="astabilization_8h_ac41f248e6265fdcd678691661a7f3c10_icgraph">
-<area shape="rect" title=" " alt="" coords="421,46,572,73"/>
-<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="213,5,373,47"/>
-<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="227,71,360,112"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,71,165,112"/>
+<area shape="rect" title=" " alt="" coords="477,81,628,108"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="254,31,417,57"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,81,429,108"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,133,402,174"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4" title="Entering the module (user switched to module)" alt="" coords="10,5,189,32"/>
+<area shape="rect" href="optical__flow__hover_8c.html#ab066974e62c3e2267c4dfc11fc84d169" title=" " alt="" coords="13,56,185,83"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,140,193,167"/>
 </map>
 </div>
 
@@ -704,18 +1167,20 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00254">stabilization_attitude_set_stab_sp()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00279">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_attitude_run()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_af997ac8db0c8ededc57d411e8caa47b2_icgraph.png" border="0" usemap="#astabilization_8h_af997ac8db0c8ededc57d411e8caa47b2_icgraph" alt=""/></div>
 <map name="astabilization_8h_af997ac8db0c8ededc57d411e8caa47b2_icgraph" id="astabilization_8h_af997ac8db0c8ededc57d411e8caa47b2_icgraph">
-<area shape="rect" title=" " alt="" coords="213,13,353,39"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,5,165,47"/>
+<area shape="rect" title=" " alt="" coords="477,35,617,61"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a3fc3c4f46fbbcf2ac02b28d59ee3052b" title="Attitude control run function." alt="" coords="241,5,429,32"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,57,402,98"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,64,193,91"/>
 </map>
 </div>
 
@@ -737,20 +1202,20 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00612">stabilization_attitude_set_stab_sp()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00422">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_attitude_run()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_a933a2abf3187537a85e675731038606c_icgraph.png" border="0" usemap="#astabilization_8h_a933a2abf3187537a85e675731038606c_icgraph" alt=""/></div>
 <map name="astabilization_8h_a933a2abf3187537a85e675731038606c_icgraph" id="astabilization_8h_a933a2abf3187537a85e675731038606c_icgraph">
-<area shape="rect" title=" " alt="" coords="421,46,560,73"/>
-<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="213,5,373,47"/>
-<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="227,71,360,112"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,71,165,112"/>
+<area shape="rect" title=" " alt="" coords="477,35,616,61"/>
+<area shape="rect" href="stabilization__attitude__heli__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="241,5,429,32"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="269,57,402,98"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,64,193,91"/>
 </map>
 </div>
 
@@ -772,19 +1237,24 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00551">stabilization_indi_set_stab_sp()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00716">stabilization_indi_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00493">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00158">stabilization_rate_read_rc()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph.png" border="0" usemap="#astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph" alt=""/></div>
 <map name="astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph" id="astabilization_8h_a838406e69a08c86fb7f1427aaac5629f_icgraph">
-<area shape="rect" title=" " alt="" coords="395,13,539,39"/>
-<area shape="rect" href="stabilization__indi_8c.html#aa20c753face711591a2a4eba30a7a635" title="Set attitude setpoint from stabilization setpoint struct." alt="" coords="213,5,347,47"/>
-<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a9262eaf623b6b1eba2f9904bd2717148" title=" " alt="" coords="5,5,165,47"/>
+<area shape="rect" title=" " alt="" coords="607,71,751,98"/>
+<area shape="rect" href="stabilization__indi_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title=" " alt="" coords="242,5,375,47"/>
+<area shape="rect" href="stabilization__indi_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title=" " alt="" coords="425,64,558,105"/>
+<area shape="rect" href="stabilization__rate_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="424,129,559,171"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="5,13,193,39"/>
+<area shape="rect" href="stabilization__rate__indi_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="241,71,376,112"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="281,137,337,163"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="34,137,165,163"/>
 </map>
 </div>
 
@@ -806,7 +1276,7 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
 </div>
 </div>
@@ -826,19 +1296,55 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Command filter for vibrating airframes. </p>
 
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00283">guidance_h_run()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00314">314</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization_8c_source.html#l00301">stab_sp_rotate_f()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization_8h_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph.png" border="0" usemap="#astabilization_8h_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" alt=""/></div>
 <map name="astabilization_8h_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph" id="astabilization_8h_a2e7ccfe18fa4b4c7d686ddb7f9b3a731_icgraph">
-<area shape="rect" title=" " alt="" coords="408,5,547,47"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,13,360,39"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" title="Command filter for vibrating airframes." alt="" coords="184,5,323,47"/>
+<area shape="rect" href="stabilization_8c.html#a75c4fbd3740da152c0742c639489c3be" title=" " alt="" coords="5,13,136,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6249a54ee536ed29d3dd9243f12bda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6249a54ee536ed29d3dd9243f12bda3">&#9670;&nbsp;</a></span>stabilization_get_failsafe_sp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> stabilization_get_failsafe_sp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get stabilization setpoint for failsafe. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00242">242</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_ad6249a54ee536ed29d3dd9243f12bda3_icgraph.png" border="0" usemap="#astabilization_8h_ad6249a54ee536ed29d3dd9243f12bda3_icgraph" alt=""/></div>
+<map name="astabilization_8h_ad6249a54ee536ed29d3dd9243f12bda3_icgraph" id="astabilization_8h_ad6249a54ee536ed29d3dd9243f12bda3_icgraph">
+<area shape="rect" title="Get stabilization setpoint for failsafe." alt="" coords="236,5,444,32"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -860,13 +1366,577 @@ rates_i</td>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+<p>Init function. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00094">94</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="stabilization_8h_source.html#l00104">Stabilization::att_submode</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="low__pass__filter_8h_source.html#l00197">SecondOrderLowPass_int::i</a>, <a class="el" href="low__pass__filter_8h_source.html#l00210">init_second_order_low_pass_int()</a>, <a class="el" href="stabilization_8h_source.html#l00103">Stabilization::mode</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="stabilization_8c_source.html#l00069">rc_ev</a>, <a class="el" href="stabilization_8h_source.html#l00105">Stabilization::rc_in</a>, <a class="el" href="stabilization_8h_source.html#l00106">Stabilization::rc_sp</a>, <a class="el" href="telemetry_8c_source.html#l00051">register_periodic_telemetry()</a>, <a class="el" href="stabilization_8c_source.html#l00075">send_tune_hover()</a>, <a class="el" href="stabilization_8h_source.html#l00176">STAB_SP_SET_EULERS_ZERO</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8h_source.html#l00045">STABILIZATION_ATT_SUBMODE_HEADING</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00102">stabilization_attitude_rc_setpoint_init()</a>, <a class="el" href="stabilization_8h_source.html#l00038">STABILIZATION_MODE_NONE</a>, and <a class="el" href="stabilization_8c_source.html#l00066">STABILIZATION_RC_ID</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph.png" border="0" usemap="#astabilization_8h_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph" alt=""/></div>
+<map name="astabilization_8h_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph" id="astabilization_8h_adfc80da254aa5bbac3fc038eaaa3d9ad_cgraph">
+<area shape="rect" title="Init function." alt="" coords="5,314,136,341"/>
+<area shape="rect" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="202,197,369,239"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="257,639,313,666"/>
+<area shape="rect" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function." alt="" coords="184,690,387,717"/>
+<area shape="rect" href="stabilization_8c.html#a3cc1309dc264e46bee92b995fa0b6e9f" title=" " alt="" coords="219,314,352,341"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a82f7009f999bec86327b0f7c411b89eb" title="Init rc input." alt="" coords="435,5,595,47"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="445,730,584,757"/>
+<area shape="rect" href="stabilization_8c.html#ac7a492a4d563a518c14c8621d828d34f" title="Retrun attitude setpoint from RC as euler angles." alt="" coords="435,599,595,640"/>
+<area shape="rect" href="stabilization__direct_8c.html#a9c6ac236cb0e9e4aaa757bab18343a88" title=" " alt="" coords="441,664,588,705"/>
+<area shape="rect" href="stabilization__rate_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="447,992,582,1033"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="Attitude control enter function." alt="" coords="657,457,817,499"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a092699ea3e3b036ad15668b2884088b5" title="reset the heading for care&#45;free mode to current heading" alt="" coords="643,599,832,640"/>
+<area shape="rect" href="stabilization_8c.html#a2a89b96d9e4fb36e975dccd515db474b" title=" " alt="" coords="657,807,817,848"/>
+<area shape="rect" href="stabilization__direct_8c.html#ac6bc06cdf1f21827a7712b0f6e35b22f" title=" " alt="" coords="664,664,811,705"/>
+<area shape="rect" href="stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title=" " alt="" coords="670,392,805,433"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title=" " alt="" coords="907,392,1046,433"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title=" " alt="" coords="891,523,1062,564"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title=" " alt="" coords="897,588,1056,629"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="905,122,1049,149"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="903,654,1051,681"/>
+<area shape="rect" href="oneloop__andi_8c.html#acc520a1793d4fa59654715e75b139ccb" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="901,290,1052,317"/>
+<area shape="rect" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title=" " alt="" coords="1131,122,1314,149"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="Get attitude heading as float (avoiding jumps)" alt="" coords="897,457,1057,499"/>
+<area shape="rect" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI." alt="" coords="910,224,1043,265"/>
+<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="1125,814,1320,841"/>
+<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="880,341,1073,367"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title=" " alt="" coords="1169,543,1276,570"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="1150,290,1295,317"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="1162,239,1283,266"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="1167,341,1279,367"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="1183,442,1263,469"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="1169,391,1277,418"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1403,290,1543,317"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="1393,759,1553,786"/>
+<area shape="rect" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title=" " alt="" coords="1623,759,1789,786"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1372,122,1575,149"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1623,122,1789,149"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title=" " alt="" coords="1837,122,2009,149"/>
+<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="2058,97,2217,123"/>
+<area shape="rect" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title=" " alt="" coords="2057,147,2217,174"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1121,705,1324,731"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="1389,705,1557,731"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="Get attitude heading as int (avoiding jumps)" alt="" coords="1143,173,1303,215"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="1394,814,1553,841"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int)." alt="" coords="1143,493,1302,519"/>
+<area shape="rect" href="stabilization_8c.html#a66f4de42924ea662ae4f03e04c78d4bf" title=" " alt="" coords="897,873,1056,899"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a6f187143a37ebe93003c5c1bf441704c" title="reset to current state" alt="" coords="897,807,1057,848"/>
+<area shape="rect" href="radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="670,873,805,899"/>
+<area shape="rect" href="stabilization_8c.html#a838406e69a08c86fb7f1427aaac5629f" title=" " alt="" coords="665,1025,809,1051"/>
+<area shape="rect" href="stabilization_8c.html#aff1c34e4df8582150dd77b44ae73a1db" title=" " alt="" coords="671,1075,804,1102"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a163ba30896a625790e1b83f72f02d2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163ba30896a625790e1b83f72f02d2a1">&#9670;&nbsp;</a></span>stabilization_mode_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_mode_changed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>new_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>submode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check mode change. </p>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00138">138</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00212">autopilot_static_set_mode()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_a163ba30896a625790e1b83f72f02d2a1_icgraph.png" border="0" usemap="#astabilization_8h_a163ba30896a625790e1b83f72f02d2a1_icgraph" alt=""/></div>
+<map name="astabilization_8h_a163ba30896a625790e1b83f72f02d2a1_icgraph" id="astabilization_8h_a163ba30896a625790e1b83f72f02d2a1_icgraph">
+<area shape="rect" title="Check mode change." alt="" coords="248,5,395,47"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,13,200,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6340487673196d115af96fafd83a6d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6340487673196d115af96fafd83a6d5e">&#9670;&nbsp;</a></span>stabilization_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_run </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>in_flight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structStabilizationSetpoint.html">StabilizationSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call default stabilization control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_flight</td><td>true if rotorcraft is flying </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sp</td><td>pointer to the stabilization setpoint, computed in guidance or from RC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thrust</td><td>pointer to thrust setpoint computed by vertical guidance </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cmd</td><td>pointer to the output command vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00242">242</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00105">guidance_module_run()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_a6340487673196d115af96fafd83a6d5e_icgraph.png" border="0" usemap="#astabilization_8h_a6340487673196d115af96fafd83a6d5e_icgraph" alt=""/></div>
+<map name="astabilization_8h_a6340487673196d115af96fafd83a6d5e_icgraph" id="astabilization_8h_a6340487673196d115af96fafd83a6d5e_icgraph">
+<area shape="rect" title="Call default stabilization control." alt="" coords="236,31,367,57"/>
+<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="14,56,179,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac216c75df4ac56939368ac23b054f66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac216c75df4ac56939368ac23b054f66a">&#9670;&nbsp;</a></span>th_sp_from_incr_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_incr_f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>th_increment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a13f7368d05056ec13976fd2907b6c794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f7368d05056ec13976fd2907b6c794">&#9670;&nbsp;</a></span>th_sp_from_incr_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_incr_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>th_increment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a5ad2f16e91577fd7ea31db87f9d79147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad2f16e91577fd7ea31db87f9d79147">&#9670;&nbsp;</a></span>th_sp_from_incr_vect_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_incr_vect_f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>th_increment</em>[3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a7753f90ff4ecbd409c23080a71c9626d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7753f90ff4ecbd409c23080a71c9626d">&#9670;&nbsp;</a></span>th_sp_from_incr_vect_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_incr_vect_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>th_increment</em>[3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a057132685a68b5ca5fce4a765c78e1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057132685a68b5ca5fce4a765c78e1d8">&#9670;&nbsp;</a></span>th_sp_from_thrust_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_thrust_f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="ad9100967a3aba7417a3e6f0ed2111dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9100967a3aba7417a3e6f0ed2111dac">&#9670;&nbsp;</a></span>th_sp_from_thrust_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_thrust_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_ad9100967a3aba7417a3e6f0ed2111dac_icgraph.png" border="0" usemap="#astabilization_8h_ad9100967a3aba7417a3e6f0ed2111dac_icgraph" alt=""/></div>
+<map name="astabilization_8h_ad9100967a3aba7417a3e6f0ed2111dac_icgraph" id="astabilization_8h_ad9100967a3aba7417a3e6f0ed2111dac_icgraph">
+<area shape="rect" title=" " alt="" coords="449,31,600,57"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="227,5,393,32"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="219,56,401,83"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,56,171,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c61318c08728686b00187068015ccfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c61318c08728686b00187068015ccfc">&#9670;&nbsp;</a></span>th_sp_from_thrust_vect_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_thrust_vect_f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>thrust</em>[3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a72119ad76f5485433505e64ac524aaa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72119ad76f5485433505e64ac524aaa4">&#9670;&nbsp;</a></span>th_sp_from_thrust_vect_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> th_sp_from_thrust_vect_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>[3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a8879789937e2ebcfac887de04352e6cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8879789937e2ebcfac887de04352e6cd">&#9670;&nbsp;</a></span>th_sp_to_incr_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float th_sp_to_incr_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>th</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00579">579</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+</div>
+</div>
+<a id="a68434376930aabf9900a375d991c213e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68434376930aabf9900a375d991c213e">&#9670;&nbsp;</a></span>th_sp_to_incr_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> th_sp_to_incr_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>th</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00562">562</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784">ThrustSetpoint::format</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, and <a class="el" href="structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb">ThrustSetpoint::type</a>.</p>
+
+</div>
+</div>
+<a id="aad59d5e15279645d0324dd622976112e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad59d5e15279645d0324dd622976112e">&#9670;&nbsp;</a></span>th_sp_to_thrust_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float th_sp_to_thrust_f </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>th</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00544">544</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784">ThrustSetpoint::format</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, and <a class="el" href="structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb">ThrustSetpoint::type</a>.</p>
+
+</div>
+</div>
+<a id="aff1c34e4df8582150dd77b44ae73a1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1c34e4df8582150dd77b44ae73a1db">&#9670;&nbsp;</a></span>th_sp_to_thrust_i()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> th_sp_to_thrust_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> *&#160;</td>
+          <td class="paramname"><em>th</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a>&#160;</td>
+          <td class="paramname"><em>thrust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00527">527</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
+
+<p class="reference">References <a class="el" href="structThrustSetpoint.html#ac77634dee66afe4e97d7e449929d0784">ThrustSetpoint::format</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, and <a class="el" href="structThrustSetpoint.html#abb0ea6bc9aabcc5525a624d6bc5573eb">ThrustSetpoint::type</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization__direct_8c_source.html#l00057">stabilization_direct_run()</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00318">stabilization_indi_rate_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00158">stabilization_rate_read_rc()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization_8h_aff1c34e4df8582150dd77b44ae73a1db_icgraph.png" border="0" usemap="#astabilization_8h_aff1c34e4df8582150dd77b44ae73a1db_icgraph" alt=""/></div>
+<map name="astabilization_8h_aff1c34e4df8582150dd77b44ae73a1db_icgraph" id="astabilization_8h_aff1c34e4df8582150dd77b44ae73a1db_icgraph">
+<area shape="rect" title=" " alt="" coords="685,187,819,213"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="449,107,637,133"/>
+<area shape="rect" href="stabilization__direct_8c.html#af43c431cfa3e85865f1adb9ccde42403" title=" " alt="" coords="456,157,631,184"/>
+<area shape="rect" href="stabilization__indi__simple_8c.html#aae752b3cc69a5ad88f6729b3ea17d233" title="Does the INDI calculations." alt="" coords="477,209,610,250"/>
+<area shape="rect" href="stabilization__rate_8c.html#a407235bde22206e1a5dac29a60eb2cfb" title=" " alt="" coords="476,274,611,315"/>
+<area shape="rect" href="guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title=" " alt="" coords="242,5,378,32"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="227,56,393,83"/>
+<area shape="rect" href="stabilization_8c.html#a75c4fbd3740da152c0742c639489c3be" title=" " alt="" coords="245,157,375,184"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module." alt="" coords="219,107,401,133"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,107,171,133"/>
+<area shape="rect" href="stabilization__indi__simple_8c.html#aad408aa55ec7cd11f1354db45fa08c39" title="runs stabilization indi" alt="" coords="243,209,377,250"/>
+<area shape="rect" href="stabilization_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b" title=" " alt="" coords="282,281,338,308"/>
+<area shape="rect" href="stabilization_8c.html#adfc80da254aa5bbac3fc038eaaa3d9ad" title="Init function." alt="" coords="23,281,153,308"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a7db6cb929d989e142cf136ac4af10add"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7db6cb929d989e142cf136ac4af10add">&#9670;&nbsp;</a></span>stabilization_cmd</h2>
+<a id="a0c3d2f9aa609726bcb530a1905f2a89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3d2f9aa609726bcb530a1905f2a89c">&#9670;&nbsp;</a></span>stabilization</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -875,7 +1945,7 @@ rates_i</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> stabilization_cmd[COMMANDS_NB]</td>
+          <td class="memname">struct <a class="el" href="stabilization_8h.html#structStabilization">Stabilization</a> stabilization</td>
         </tr>
       </table>
   </td>
@@ -885,12 +1955,9 @@ rates_i</td>
 </table>
 </div><div class="memdoc">
 
-<p>Stabilization commands. </p>
-<p>Contains the resulting stabilization commands, regardless of whether rate or attitude is currently used. Range -MAX_PPRZ:MAX_PPRZ </p>
+<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00001">1</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stabilization_8c_source.html#l00034">34</a> of file <a class="el" href="stabilization_8c_source.html">stabilization.c</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00286">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00111">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00192">autopilot_static_set_mode()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00575">compute_accel_from_speed_sp()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00057">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="guidance__indi_8c_source.html#l00169">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00137">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00317">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00359">guidance_v_guided_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00633">guidance_v_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00224">guidance_v_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00203">guidance_v_thrust_adapt()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="rotwing__state_8c_source.html#l00240">rotwing_check_set_current_state()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00099">send_rate()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00063">send_windtunnel_meas()</a>, <a class="el" href="stabilization_8c_source.html#l00360">stab_sp_from_eulers_f()</a>, <a class="el" href="stabilization_8c_source.html#l00093">stab_sp_rotate_f()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00188">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00565">stabilization_indi_rate_run()</a>, <a class="el" href="stabilization__none_8c_source.html#l00056">stabilization_none_run()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00288">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00092">autopilot_in_flight_end_detection()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00110">autopilot_static_periodic()</a>, <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00212">autopilot_static_set_mode()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00569">compute_accel_from_speed_sp()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00055">ctrl_module_run()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="max7456_8c_source.html#l00656">draw_osd()</a>, <a class="el" href="eff__scheduling__generic_8c_source.html#l00082">eff_scheduling_generic_periodic()</a>, <a class="el" href="eff__scheduling__cyfoam_8c_source.html#l00082">eff_scheduling_periodic_a()</a>, <a class="el" href="guidance__flip_8c_source.html#l00065">guidance_flip_run()</a>, <a class="el" href="guidance__indi_8c_source.html#l00168">guidance_indi_enter()</a>, <a class="el" href="guidance__indi__hybrid__quadplane_8c_source.html#l00128">guidance_indi_hybrid_set_wls_settings()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00600">guidance_module_enter()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00616">guidance_module_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00221">guidance_v_run()</a>, <a class="el" href="ins__flow_8c_source.html#l00732">ins_flow_update()</a>, <a class="el" href="logger__control__effectiveness_8c_source.html#l00098">logger_control_effectiveness_periodic()</a>, <a class="el" href="logger__file_8c_source.html#l00091">logger_file_write_row()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00064">nav_heli_spinup_run()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00040">nav_heli_spinup_setup()</a>, <a class="el" href="oneloop__andi_8c_source.html#l01231">oneloop_andi_run()</a>, <a class="el" href="stabilization_8c_source.html#l00184">rc_cb()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00304">reset_horizontal_vars()</a>, <a class="el" href="rotwing__state_8c_source.html#l00240">rotwing_check_set_current_state()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00054">send_att()</a>, <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00039">send_bebop_actuators()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00076">send_rate()</a>, <a class="el" href="stabilization_8c_source.html#l00075">send_tune_hover()</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00061">send_windtunnel_meas()</a>, <a class="el" href="stabilization_8c_source.html#l00301">stab_sp_rotate_f()</a>, <a class="el" href="stabilization_8c_source.html#l00454">stab_sp_to_eulers_f()</a>, <a class="el" href="stabilization_8c_source.html#l00172">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00132">stabilization_attitude_reset_rc()</a>, <a class="el" href="stabilization_8c_source.html#l00094">stabilization_init()</a>, <a class="el" href="stabilization_8c_source.html#l00229">transition_run()</a>, and <a class="el" href="optical__flow__landing_8c_source.html#l00510">vertical_ctrl_module_run()</a>.</p>
 
 </div>
 </div>
@@ -900,7 +1967,7 @@ rates_i</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="stabilization_8h.html">stabilization.h</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,13 +1,16 @@
 var rotorcraft_2guidance_2guidance__h_8c =
 [
-    [ "guidance_h_from_nav", "rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5", null ],
-    [ "guidance_h_guided_run", "rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045", null ],
+    [ "GUIDANCE_H_DEADBAND_R", "rotorcraft_2guidance_2guidance__h_8c.html#a3b2ff13f00d21640eb2cdb2006531f23", null ],
+    [ "GUIDANCE_H_RC_ID", "rotorcraft_2guidance_2guidance__h_8c.html#a9bd6988bf8d1c880da2a98d62891b48d", null ],
+    [ "GUIDANCE_H_SP_MAX_R", "rotorcraft_2guidance_2guidance__h_8c.html#aec6d36788d6fc081e66f1121fbeff796", null ],
+    [ "YAW_DEADBAND_EXCEEDED", "rotorcraft_2guidance_2guidance__h_8c.html#ad57a6eff5cb4253280fc1fb99fda6b20", null ],
+    [ "guidance_h_from_nav", "rotorcraft_2guidance_2guidance__h_8c.html#a07c4eb67ad899ac8fe96f34c312e9ffb", null ],
+    [ "guidance_h_guided_run", "rotorcraft_2guidance_2guidance__h_8c.html#a044777b26382a7559508a4b2b8a328b5", null ],
     [ "guidance_h_hover_enter", "rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162", null ],
     [ "guidance_h_init", "rotorcraft_2guidance_2guidance__h_8c.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80", null ],
     [ "guidance_h_mode_changed", "rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225", null ],
     [ "guidance_h_nav_enter", "rotorcraft_2guidance_2guidance__h_8c.html#aaecb10d1d18788c0de654dd479441b20", null ],
-    [ "guidance_h_read_rc", "rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0", null ],
-    [ "guidance_h_run", "rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554", null ],
+    [ "guidance_h_run", "rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f", null ],
     [ "guidance_h_set_acc", "rotorcraft_2guidance_2guidance__h_8c.html#a065219ed3851e0e6fef8103d4f416a03", null ],
     [ "guidance_h_set_body_acc", "rotorcraft_2guidance_2guidance__h_8c.html#a428d3435a3e12c6d65ca0ecad97fa626", null ],
     [ "guidance_h_set_body_vel", "rotorcraft_2guidance_2guidance__h_8c.html#ad46ecaf35a5c2615a6656a91a041d27d", null ],
@@ -16,13 +19,13 @@ var rotorcraft_2guidance_2guidance__h_8c =
     [ "guidance_h_set_pos", "rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14", null ],
     [ "guidance_h_set_vel", "rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a", null ],
     [ "guidance_h_update_reference", "rotorcraft_2guidance_2guidance__h_8c.html#aaef8fae11f920120aee046f87777fe9f", null ],
-    [ "read_rc_setpoint_speed_i", "rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648", null ],
+    [ "rc_cb", "rotorcraft_2guidance_2guidance__h_8c.html#a37fa1944ac0b798f7d2ab252262f8c4b", null ],
+    [ "read_rc_setpoint_heading", "rotorcraft_2guidance_2guidance__h_8c.html#a99e3dfb6c1619cf9d9f900d103548b1c", null ],
+    [ "read_rc_setpoint_speed_i", "rotorcraft_2guidance_2guidance__h_8c.html#a907803c43efde52188070fb09bf36f4c", null ],
     [ "reset_guidance_reference_from_current_position", "rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5", null ],
     [ "send_gh", "rotorcraft_2guidance_2guidance__h_8c.html#a2c7bb64eb9e09d8755a7c362079144e9", null ],
     [ "send_href", "rotorcraft_2guidance_2guidance__h_8c.html#a2a0ab4da7295b59d24b4846400fbc807", null ],
-    [ "send_tune_hover", "rotorcraft_2guidance_2guidance__h_8c.html#a3cc1309dc264e46bee92b995fa0b6e9f", null ],
-    [ "transition_run", "rotorcraft_2guidance_2guidance__h_8c.html#ae0ff25590456201a3c9ff1dc7ea13415", null ],
     [ "guidance_h", "rotorcraft_2guidance_2guidance__h_8c.html#a8e334308c59e5430c7dd0ac7e222f07b", null ],
     [ "guidance_h_cmd", "rotorcraft_2guidance_2guidance__h_8c.html#a0ae9c09ec4ef8939102a1acc6c4e84d9", null ],
-    [ "transition_percentage", "rotorcraft_2guidance_2guidance__h_8c.html#a03b606d1a31f9d006700fcbbc60d7293", null ]
+    [ "rc_ev", "rotorcraft_2guidance_2guidance__h_8c.html#ad60be3b55721e6ed2db813c544401981", null ]
 ];

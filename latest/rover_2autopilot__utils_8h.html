@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9b0eea7b5b6451e8d115975b3391c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get autopilot mode as set by RADIO_MODE 3-way switch  <a href="rover_2autopilot__utils_8h.html#a9b0eea7b5b6451e8d115975b3391c50f">More...</a><br /></td></tr>
 <tr class="separator:a9b0eea7b5b6451e8d115975b3391c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa415e804d1abe388b9cb19ce79189828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rover_2autopilot__utils_8h.html#aa415e804d1abe388b9cb19ce79189828">set_rotorcraft_commands</a> (<a class="el" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> *cmd_out, <a class="el" href="vl53l1__types_8h.html#a32f2e37ee053cf2ce8ca28d1f74630e5">int32_t</a> *cmd_in, bool in_flight, bool motors_on)</td></tr>
-<tr class="memdesc:aa415e804d1abe388b9cb19ce79189828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get autopilot mode from two 2way switches.  <a href="rover_2autopilot__utils_8h.html#aa415e804d1abe388b9cb19ce79189828">More...</a><br /></td></tr>
+<tr class="memdesc:aa415e804d1abe388b9cb19ce79189828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display descent speed in failsafe mode if needed.  <a href="rover_2autopilot__utils_8h.html#aa415e804d1abe388b9cb19ce79189828">More...</a><br /></td></tr>
 <tr class="separator:aa415e804d1abe388b9cb19ce79189828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -188,22 +188,7 @@ Functions</h2></td></tr>
 
 <p>get autopilot mode as set by RADIO_MODE 3-way switch </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00076">76</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
-
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00049">autopilot_mode_auto2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00063">MODE_AUTO1</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00066">MODE_AUTO2</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00060">MODE_MANUAL</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00042">RADIO_MODE</a>, <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00072">THRESHOLD_1_PPRZ</a>, <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00073">THRESHOLD_2_PPRZ</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00322">autopilot_static_on_rc_frame()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rover_2autopilot__utils_8h_a9b0eea7b5b6451e8d115975b3391c50f_icgraph.png" border="0" usemap="#arover_2autopilot__utils_8h_a9b0eea7b5b6451e8d115975b3391c50f_icgraph" alt=""/></div>
-<map name="arover_2autopilot__utils_8h_a9b0eea7b5b6451e8d115975b3391c50f_icgraph" id="arover_2autopilot__utils_8h_a9b0eea7b5b6451e8d115975b3391c50f_icgraph">
-<area shape="rect" title="get autopilot mode as set by RADIO_MODE 3&#45;way switch" alt="" coords="200,13,393,39"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="5,5,152,47"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="rover_2autopilot__utils_8c_source.html#l00041">41</a> of file <a class="el" href="rover_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
 
 </div>
 </div>
@@ -245,11 +230,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get autopilot mode from two 2way switches. </p>
+<p>Display descent speed in failsafe mode if needed. </p>
 <p>Set Rotorcraft commands.</p>
-<p>RADIO_MODE switch just selectes between MANUAL and AUTO. If not MANUAL, the RADIO_AUTO_MODE switch selects between AUTO1 and AUTO2.</p>
-<p>This is mainly a cludge for entry level radios with no three-way switch, but two available two-way switches which can be used. Set Rotorcraft commands. Limit thrust and/or yaw depending of the in_flight and motors_on flag status</p>
-<p>Get autopilot mode from two 2way switches.</p>
+<p>Set Rotorcraft commands. Limit thrust and/or yaw depending of the in_flight and motors_on flag status</p>
+<p>Display descent speed in failsafe mode if needed.</p>
 <p>Limit thrust and/or yaw depending of the in_flight and motors_on flag status</p>
 <p>A default implementation is provided, but the function can be redefined</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -262,10 +246,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Set Rotorcraft commands.</p>
-<p>RADIO_MODE switch just selectes between MANUAL and AUTO. If not MANUAL, the RADIO_AUTO_MODE switch selects between AUTO1 and AUTO2.</p>
-<p>This is mainly a cludge for entry level radios with no three-way switch, but two available two-way switches which can be used. Set Rotorcraft commands. Limit thrust and/or yaw depending of the in_flight and motors_on flag status </p>
+<p>Set Rotorcraft commands. Limit thrust and/or yaw depending of the in_flight and motors_on flag status </p>
 
-<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00123">123</a> of file <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html">autopilot_utils.c</a>.</p>
 
 <p class="reference">References <a class="el" href="glide__wing__lock_8c_source.html#l00039">lock_wings</a>, and <a class="el" href="glide__wing__lock_8c_source.html#l00051">WING_POS_NOMINAL_THRUST</a>.</p>
 
@@ -277,7 +260,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_414bebee49467d45198ced6169b2555f.html">rover</a></li><li class="navelem"><a class="el" href="rover_2autopilot__utils_8h.html">autopilot_utils.h</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:31 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

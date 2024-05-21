@@ -154,6 +154,14 @@ Airframe file section</h2>
 </ul>
 </li>
 </ul>
+<h1><a class="anchor" id="functions__optical_flow_landing"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="optical__flow__landing_8c.html#a7a0b06dc3e95e1ebf35b3da222aa6d44" title="Initialize the optical flow landing module.">optical_flow_landing_init()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -258,11 +266,13 @@ Raw optical_flow_landing.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;optical_flow_landing.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;optical_flow_landing_init()&quot;</span>/&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;optical_flow_landing.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;pprz_algebra_float.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;pprz_matrix_decomp_float.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -273,7 +283,7 @@ Raw optical_flow_landing.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

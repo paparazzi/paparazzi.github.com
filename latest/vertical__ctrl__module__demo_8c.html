@@ -97,8 +97,10 @@ $(document).ready(function(){initNavTree('vertical__ctrl__module__demo_8c.html',
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="vertical__ctrl__module__demo_8h_source.html">modules/ctrl/vertical_ctrl_module_demo.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="paparazzi_8h_source.html">paparazzi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">modules/core/abi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html">firmwares/rotorcraft/guidance/guidance_h.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for vertical_ctrl_module_demo.c:</div>
@@ -107,24 +109,37 @@ $(document).ready(function(){initNavTree('vertical__ctrl__module__demo_8c.html',
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vertical__ctrl__module__demo_8c__incl.png" border="0" usemap="#asw_2airborne_2modules_2ctrl_2vertical__ctrl__module__demo_8c" alt=""/></div>
 <map name="asw_2airborne_2modules_2ctrl_2vertical__ctrl__module__demo_8c" id="asw_2airborne_2modules_2ctrl_2vertical__ctrl__module__demo_8c">
-<area shape="rect" title="example vertical controller" alt="" coords="619,5,778,61"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8h.html" title="example vertical" alt="" coords="81,109,244,151"/>
-<area shape="rect" title=" " alt="" coords="619,199,779,225"/>
-<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="759,117,857,143"/>
-<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="892,117,1039,143"/>
-<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="423,109,574,151"/>
-<area shape="rect" title=" " alt="" coords="162,348,217,375"/>
-<area shape="rect" title=" " alt="" coords="803,199,890,225"/>
-<area shape="rect" title=" " alt="" coords="914,199,1041,225"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="198,199,378,225"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="403,199,595,225"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="405,273,561,300"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="227,273,381,300"/>
-<area shape="rect" title=" " alt="" coords="81,273,151,300"/>
-<area shape="rect" title=" " alt="" coords="758,348,821,375"/>
-<area shape="rect" title=" " alt="" coords="447,348,518,375"/>
-<area shape="rect" title=" " alt="" coords="625,348,693,375"/>
-<area shape="rect" title=" " alt="" coords="585,273,743,300"/>
+<area shape="rect" title="example vertical controller" alt="" coords="1306,5,1464,61"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8h.html" title="example vertical" alt="" coords="124,109,286,151"/>
+<area shape="rect" title=" " alt="" coords="1746,481,1906,508"/>
+<area shape="rect" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares." alt="" coords="542,117,634,143"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="1514,481,1611,508"/>
+<area shape="rect" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="1990,117,2137,143"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="1298,109,1472,151"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="1120,199,1271,240"/>
+<area shape="rect" title=" " alt="" coords="482,556,536,583"/>
+<area shape="rect" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="589,206,656,233"/>
+<area shape="rect" title=" " alt="" coords="46,206,172,233"/>
+<area shape="rect" title=" " alt="" coords="197,206,354,233"/>
+<area shape="rect" title=" " alt="" coords="379,206,514,233"/>
+<area shape="rect" title=" " alt="" coords="1542,556,1628,583"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="743,399,923,426"/>
+<area shape="rect" title=" " alt="" coords="988,556,1059,583"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1076,399,1268,426"/>
+<area shape="rect" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="183,295,334,337"/>
+<area shape="rect" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="358,295,508,337"/>
+<area shape="rect" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions." alt="" coords="686,295,852,337"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="1231,481,1387,508"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="623,481,776,508"/>
+<area shape="rect" title=" " alt="" coords="852,481,923,508"/>
+<area shape="rect" title=" " alt="" coords="1294,556,1356,583"/>
+<area shape="rect" title=" " alt="" coords="1419,556,1487,583"/>
+<area shape="rect" title=" " alt="" coords="998,481,1156,508"/>
+<area shape="rect" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations." alt="" coords="270,399,396,426"/>
+<area shape="rect" title=" " alt="" coords="2000,206,2127,233"/>
+<area shape="rect" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance." alt="" coords="1447,295,1646,337"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="1030,288,1220,344"/>
+<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="1444,392,1611,433"/>
 </map>
 </div>
 </div>
@@ -146,15 +161,13 @@ Functions</h2></td></tr>
 <tr class="separator:a464d4cb1ef2592f8bccd19df1dcec849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089aaff33040a49a6598aad79528dd1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a089aaff33040a49a6598aad79528dd1e">vertical_ctrl_module_init</a> (void)</td></tr>
 <tr class="separator:a089aaff33040a49a6598aad79528dd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9628e4f2b9a046bb7ff80c208ab85daa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa">vertical_ctrl_module_run</a> (bool in_flight)</td></tr>
-<tr class="separator:a9628e4f2b9a046bb7ff80c208ab85daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a535ad2dedb628ec10707a6c0448c525e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e">guidance_v_module_init</a> (void)</td></tr>
-<tr class="separator:a535ad2dedb628ec10707a6c0448c525e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1288433c507106e865034b02ae79b2d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6">guidance_v_module_enter</a> (void)</td></tr>
-<tr class="memdesc:a1288433c507106e865034b02ae79b2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entering the vertical module (user switched to module)  <a href="vertical__ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6">More...</a><br /></td></tr>
-<tr class="separator:a1288433c507106e865034b02ae79b2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ef9289dfa15084a7457a97ad7632c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a24ef9289dfa15084a7457a97ad7632c8">guidance_v_module_run</a> (bool in_flight)</td></tr>
-<tr class="separator:a24ef9289dfa15084a7457a97ad7632c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae125cdea458cff0ab88d0689ef61e30d"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#ae125cdea458cff0ab88d0689ef61e30d">vertical_ctrl_module_run</a> (bool in_flight)</td></tr>
+<tr class="separator:ae125cdea458cff0ab88d0689ef61e30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4">guidance_module_enter</a> (void)</td></tr>
+<tr class="memdesc:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entering the module (user switched to module)  <a href="vertical__ctrl__module__demo_8c.html#a8b360bd61a56cd0c066db71cfbdc37a4">More...</a><br /></td></tr>
+<tr class="separator:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930fc2d7668ebfeaf878439804b73478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478">guidance_module_run</a> (bool in_flight)</td></tr>
+<tr class="separator:a930fc2d7668ebfeaf878439804b73478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -181,7 +194,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00036">36</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00038">38</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
 </div>
 </div>
@@ -197,7 +210,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00045">45</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00047">47</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
 </div>
 </div>
@@ -213,19 +226,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00041">41</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00043">43</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1288433c507106e865034b02ae79b2d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1288433c507106e865034b02ae79b2d6">&#9670;&nbsp;</a></span>guidance_v_module_enter()</h2>
+<a id="a8b360bd61a56cd0c066db71cfbdc37a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b360bd61a56cd0c066db71cfbdc37a4">&#9670;&nbsp;</a></span>guidance_module_enter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void guidance_v_module_enter </td>
+          <td class="memname">void guidance_module_enter </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -234,57 +247,81 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Entering the vertical module (user switched to module) </p>
-<p>Entering the vertical module (user switched to module) </p>
+<p>Entering the module (user switched to module) </p>
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00101">101</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00097">97</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00053">v_ctrl</a>.</p>
-
-</div>
-</div>
-<a id="a535ad2dedb628ec10707a6c0448c525e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a535ad2dedb628ec10707a6c0448c525e">&#9670;&nbsp;</a></span>guidance_v_module_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void guidance_v_module_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00096">96</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
-
-<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00059">vertical_ctrl_module_init()</a>.</p>
+<p class="reference">References <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00128">guidance_h_mode_changed()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00057">GUIDANCE_H_MODE_HOVER</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00055">v_ctrl</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vertical__ctrl__module__demo_8c_a535ad2dedb628ec10707a6c0448c525e_cgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a535ad2dedb628ec10707a6c0448c525e_cgraph" alt=""/></div>
-<map name="avertical__ctrl__module__demo_8c_a535ad2dedb628ec10707a6c0448c525e_cgraph" id="avertical__ctrl__module__demo_8c_a535ad2dedb628ec10707a6c0448c525e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,185,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a089aaff33040a49a6598aad79528dd1e" title=" " alt="" coords="233,5,416,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a464d4cb1ef2592f8bccd19df1dcec849" title="Callback function of the ground altitude." alt="" coords="464,5,612,32"/>
+<div class="center"><img src="vertical__ctrl__module__demo_8c_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph" alt=""/></div>
+<map name="avertical__ctrl__module__demo_8c_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph" id="avertical__ctrl__module__demo_8c_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph">
+<area shape="rect" title="Entering the module (user switched to module)" alt="" coords="5,1026,184,1053"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="232,1026,435,1053"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="483,1001,664,1028"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#aaecb10d1d18788c0de654dd479441b20" title=" " alt="" coords="489,1052,657,1078"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="731,794,896,821"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="722,925,905,952"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="737,1026,890,1053"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="963,968,1153,1010"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="712,1128,915,1154"/>
+<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="974,1077,1142,1104"/>
+<area shape="rect" href="oneloop__andi_8c.html#acc520a1793d4fa59654715e75b139ccb" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="983,769,1133,796"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="1215,174,1361,201"/>
+<area shape="rect" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="1227,744,1349,770"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="1232,402,1344,429"/>
+<area shape="rect" href="oneloop__andi_8c.html#a16b6596036f8039fb59c7604686e146f" title="Initialize the filters." alt="" coords="1248,794,1328,821"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="1234,845,1342,872"/>
+<area shape="rect" href="oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="1657,352,1797,378"/>
+<area shape="rect" href="oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="1471,706,1557,733"/>
+<area shape="rect" href="oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="1471,48,1557,74"/>
+<area shape="rect" href="oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="1459,98,1569,125"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="1471,149,1557,176"/>
+<area shape="rect" href="oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="1471,200,1557,226"/>
+<area shape="rect" href="oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="1459,250,1569,277"/>
+<area shape="rect" href="oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="1471,301,1557,328"/>
+<area shape="rect" href="oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="1459,352,1569,378"/>
+<area shape="rect" href="oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="1465,402,1563,429"/>
+<area shape="rect" href="oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="1465,453,1563,480"/>
+<area shape="rect" href="oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="1465,504,1563,530"/>
+<area shape="rect" href="oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="1465,554,1563,581"/>
+<area shape="rect" href="oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="1465,605,1563,632"/>
+<area shape="rect" href="oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="1471,656,1557,682"/>
+<area shape="rect" href="low__pass__filter_8h.html#a7745ad78cfe5224f6d9ebef0950d0610" title="Init a second order Butterworth filter." alt="" coords="1443,758,1585,799"/>
+<area shape="rect" href="low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter." alt="" coords="1423,824,1605,850"/>
+<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="1434,874,1594,901"/>
+<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="1243,976,1333,1002"/>
+<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1205,1026,1371,1053"/>
+<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="1211,925,1365,952"/>
+<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1428,1026,1600,1053"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="2049,1153,2155,1180"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1848,1280,2001,1306"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1853,1026,1996,1053"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1661,1026,1792,1053"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1675,1128,1778,1154"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1873,1153,1977,1180"/>
+<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1434,925,1594,952"/>
+<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1653,874,1800,901"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="974,1128,1142,1154"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1201,1128,1375,1154"/>
+<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1427,1204,1601,1230"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1656,1330,1797,1357"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a24ef9289dfa15084a7457a97ad7632c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24ef9289dfa15084a7457a97ad7632c8">&#9670;&nbsp;</a></span>guidance_v_module_run()</h2>
+<a id="a930fc2d7668ebfeaf878439804b73478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930fc2d7668ebfeaf878439804b73478">&#9670;&nbsp;</a></span>guidance_module_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void guidance_v_module_run </td>
+          <td class="memname">void guidance_module_run </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
@@ -293,22 +330,34 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00107">107</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00105">105</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00050">Electrical::bat_low</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00521">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">References <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00244">guidance_h_run()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00071">vertical_ctrl_module_run()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vertical__ctrl__module__demo_8c_a24ef9289dfa15084a7457a97ad7632c8_cgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a24ef9289dfa15084a7457a97ad7632c8_cgraph" alt=""/></div>
-<map name="avertical__ctrl__module__demo_8c_a24ef9289dfa15084a7457a97ad7632c8_cgraph" id="avertical__ctrl__module__demo_8c_a24ef9289dfa15084a7457a97ad7632c8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,185,57"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="233,5,428,32"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the vertical optical flow hover module." alt="" coords="239,56,422,83"/>
-<area shape="rect" href="optical__flow__functions_8c.html#a2488841685962503d134003daaae77f8" title="Determine and set the thrust for constant divergence control." alt="" coords="476,31,651,57"/>
-<area shape="rect" href="optical__flow__functions_8c.html#a43d4f7bf1b6e93b4b62a84bbfb3d4813" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="514,81,613,108"/>
-<area shape="rect" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="699,81,804,108"/>
+<div class="center"><img src="vertical__ctrl__module__demo_8c_a930fc2d7668ebfeaf878439804b73478_cgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a930fc2d7668ebfeaf878439804b73478_cgraph" alt=""/></div>
+<map name="avertical__ctrl__module__demo_8c_a930fc2d7668ebfeaf878439804b73478_cgraph" id="avertical__ctrl__module__demo_8c_a930fc2d7668ebfeaf878439804b73478_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,171,133"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="248,56,372,83"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="245,107,375,133"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#ae125cdea458cff0ab88d0689ef61e30d" title=" " alt="" coords="219,157,401,184"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="475,5,613,32"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a99e3dfb6c1619cf9d9f900d103548b1c" title=" " alt="" coords="449,56,639,83"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a907803c43efde52188070fb09bf36f4c" title="read speed setpoint from RC" alt="" coords="451,107,637,133"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="715,5,861,32"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="687,56,889,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="937,56,1105,83"/>
+<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1153,56,1327,83"/>
+<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1377,5,1532,32"/>
+<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1377,56,1533,83"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="687,107,889,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="938,107,1105,133"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title=" " alt="" coords="1154,107,1326,133"/>
+<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="1375,107,1534,133"/>
+<area shape="rect" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title=" " alt="" coords="1375,157,1535,184"/>
 </map>
 </div>
 
@@ -356,11 +405,11 @@ Variables</h2></td></tr>
 
 <p>Callback function of the ground altitude. </p>
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00088">88</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00089">89</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00034">VerticalCtrlDemo::agl</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00053">v_ctrl</a>.</p>
+<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00034">VerticalCtrlDemo::agl</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00055">v_ctrl</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00059">vertical_ctrl_module_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00058">vertical_ctrl_module_init()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -368,9 +417,8 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vertical__ctrl__module__demo_8c_a464d4cb1ef2592f8bccd19df1dcec849_icgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a464d4cb1ef2592f8bccd19df1dcec849_icgraph" alt=""/></div>
 <map name="avertical__ctrl__module__demo_8c_a464d4cb1ef2592f8bccd19df1dcec849_icgraph" id="avertical__ctrl__module__demo_8c_a464d4cb1ef2592f8bccd19df1dcec849_icgraph">
-<area shape="rect" title="Callback function of the ground altitude." alt="" coords="464,5,612,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a089aaff33040a49a6598aad79528dd1e" title=" " alt="" coords="233,5,416,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" title="Callback function of the ground altitude." alt="" coords="236,5,384,32"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a089aaff33040a49a6598aad79528dd1e" title=" " alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -392,11 +440,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00059">59</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00058">58</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00034">VerticalCtrlDemo::agl</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00048">agl_ev</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00037">VerticalCtrlDemo::igain</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00036">VerticalCtrlDemo::pgain</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00035">VerticalCtrlDemo::setpoint</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00053">v_ctrl</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00088">vertical_ctrl_agl_cb()</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00036">VERTICAL_CTRL_MODULE_AGL_ID</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00045">VERTICAL_CTRL_MODULE_IGAIN</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00041">VERTICAL_CTRL_MODULE_PGAIN</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00096">guidance_v_module_init()</a>.</p>
+<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00034">VerticalCtrlDemo::agl</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00050">agl_ev</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00037">VerticalCtrlDemo::igain</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00036">VerticalCtrlDemo::pgain</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00035">VerticalCtrlDemo::setpoint</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00055">v_ctrl</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00089">vertical_ctrl_agl_cb()</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00038">VERTICAL_CTRL_MODULE_AGL_ID</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00047">VERTICAL_CTRL_MODULE_IGAIN</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00043">VERTICAL_CTRL_MODULE_PGAIN</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -408,50 +454,45 @@ Variables</h2></td></tr>
 <area shape="rect" href="vertical__ctrl__module__demo_8c.html#a464d4cb1ef2592f8bccd19df1dcec849" title="Callback function of the ground altitude." alt="" coords="236,5,384,32"/>
 </map>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vertical__ctrl__module__demo_8c_a089aaff33040a49a6598aad79528dd1e_icgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a089aaff33040a49a6598aad79528dd1e_icgraph" alt=""/></div>
-<map name="avertical__ctrl__module__demo_8c_a089aaff33040a49a6598aad79528dd1e_icgraph" id="avertical__ctrl__module__demo_8c_a089aaff33040a49a6598aad79528dd1e_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,416,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e" title=" " alt="" coords="5,5,185,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a9628e4f2b9a046bb7ff80c208ab85daa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9628e4f2b9a046bb7ff80c208ab85daa">&#9670;&nbsp;</a></span>vertical_ctrl_module_run()</h2>
+<a id="ae125cdea458cff0ab88d0689ef61e30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae125cdea458cff0ab88d0689ef61e30d">&#9670;&nbsp;</a></span>vertical_ctrl_module_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vertical_ctrl_module_run </td>
+          <td class="memname">static struct <a class="el" href="structThrustSetpoint.html">ThrustSetpoint</a> vertical_ctrl_module_run </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00072">72</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00058">58</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00034">VerticalCtrlDemo::agl</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00037">VerticalCtrlDemo::igain</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00036">VerticalCtrlDemo::pgain</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00035">VerticalCtrlDemo::setpoint</a>, <a class="el" href="stabilization_8c_source.html#l00034">stabilization_cmd</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00053">v_ctrl</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00107">guidance_v_module_run()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00105">guidance_module_run()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vertical__ctrl__module__demo_8c_a9628e4f2b9a046bb7ff80c208ab85daa_icgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_a9628e4f2b9a046bb7ff80c208ab85daa_icgraph" alt=""/></div>
-<map name="avertical__ctrl__module__demo_8c_a9628e4f2b9a046bb7ff80c208ab85daa_icgraph" id="avertical__ctrl__module__demo_8c_a9628e4f2b9a046bb7ff80c208ab85daa_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,416,32"/>
-<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a24ef9289dfa15084a7457a97ad7632c8" title=" " alt="" coords="5,5,185,32"/>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="vertical__ctrl__module__demo_8c_ae125cdea458cff0ab88d0689ef61e30d_icgraph.png" border="0" usemap="#avertical__ctrl__module__demo_8c_ae125cdea458cff0ab88d0689ef61e30d_icgraph" alt=""/></div>
+<map name="avertical__ctrl__module__demo_8c_ae125cdea458cff0ab88d0689ef61e30d_icgraph" id="avertical__ctrl__module__demo_8c_ae125cdea458cff0ab88d0689ef61e30d_icgraph">
+<area shape="rect" title=" " alt="" coords="219,5,401,32"/>
+<area shape="rect" href="vertical__ctrl__module__demo_8c.html#a930fc2d7668ebfeaf878439804b73478" title=" " alt="" coords="5,5,171,32"/>
 </map>
 </div>
 
@@ -480,9 +521,9 @@ Variables</h2></td></tr>
 
 <p>The altitude ABI event. </p>
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00048">48</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00050">50</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00059">vertical_ctrl_module_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00058">vertical_ctrl_module_init()</a>.</p>
 
 </div>
 </div>
@@ -498,9 +539,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00051">51</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00053">53</a> of file <a class="el" href="vertical__ctrl__module__demo_8c_source.html">vertical_ctrl_module_demo.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00101">guidance_v_module_enter()</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00088">vertical_ctrl_agl_cb()</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00059">vertical_ctrl_module_init()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00072">vertical_ctrl_module_run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00097">guidance_module_enter()</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00089">vertical_ctrl_agl_cb()</a>, and <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00058">vertical_ctrl_module_init()</a>.</p>
 
 </div>
 </div>
@@ -510,7 +551,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="vertical__ctrl__module__demo_8c.html">vertical_ctrl_module_demo.c</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:16 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:33 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

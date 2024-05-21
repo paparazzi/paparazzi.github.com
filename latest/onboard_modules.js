@@ -592,18 +592,21 @@ var onboard_modules =
       ] ]
     ] ],
     [ "ctrl_module_innerloop_demo module", "module__ctrl_module_innerloop_demo.html", [
-      [ "Example for airframe file", "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo", [
+      [ "Example for airframe file", "module__ctrl_module_innerloop_demo.html#module_load_example__ctrl_module_innerloop_demo", null ],
+      [ "Module functions", "module__ctrl_module_innerloop_demo.html#functions__ctrl_module_innerloop_demo", [
         [ "Raw ctrl_module_innerloop_demo.xml file:", "module__ctrl_module_innerloop_demo.html#module_xml__ctrl_module_innerloop_demo", null ]
       ] ]
     ] ],
     [ "ctrl_module_outerloop_demo module", "module__ctrl_module_outerloop_demo.html", [
-      [ "Example for airframe file", "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo", [
+      [ "Example for airframe file", "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo", null ],
+      [ "Module functions", "module__ctrl_module_outerloop_demo.html#functions__ctrl_module_outerloop_demo", [
         [ "Raw ctrl_module_outerloop_demo.xml file:", "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo", null ]
       ] ]
     ] ],
     [ "ctrl_windtunnel module", "module__ctrl_windtunnel.html", [
       [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
-      [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", [
+      [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", null ],
+      [ "Module functions", "module__ctrl_windtunnel.html#functions__ctrl_windtunnel", [
         [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
       ] ]
     ] ],
@@ -667,7 +670,8 @@ var onboard_modules =
     ] ],
     [ "optical_flow_landing module", "module__optical_flow_landing.html", [
       [ "Example for airframe file", "module__optical_flow_landing.html#module_load_example__optical_flow_landing", null ],
-      [ "Module configuration options", "module__optical_flow_landing.html#configuration__optical_flow_landing", [
+      [ "Module configuration options", "module__optical_flow_landing.html#configuration__optical_flow_landing", null ],
+      [ "Module functions", "module__optical_flow_landing.html#functions__optical_flow_landing", [
         [ "Raw optical_flow_landing.xml file:", "module__optical_flow_landing.html#module_xml__optical_flow_landing", null ]
       ] ]
     ] ],
@@ -694,7 +698,8 @@ var onboard_modules =
     ] ],
     [ "vertical_ctrl_module_demo module", "module__vertical_ctrl_module_demo.html", [
       [ "Example for airframe file", "module__vertical_ctrl_module_demo.html#module_load_example__vertical_ctrl_module_demo", null ],
-      [ "Module configuration options", "module__vertical_ctrl_module_demo.html#configuration__vertical_ctrl_module_demo", [
+      [ "Module configuration options", "module__vertical_ctrl_module_demo.html#configuration__vertical_ctrl_module_demo", null ],
+      [ "Module functions", "module__vertical_ctrl_module_demo.html#functions__vertical_ctrl_module_demo", [
         [ "Raw vertical_ctrl_module_demo.xml file:", "module__vertical_ctrl_module_demo.html#module_xml__vertical_ctrl_module_demo", null ]
       ] ]
     ] ],
@@ -2837,8 +2842,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
-      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", null ],
-      [ "Module functions", "module__stabilization_passthrough.html#functions__stabilization_passthrough", [
+      [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", [
         [ "Raw stabilization_passthrough.xml file:", "module__stabilization_passthrough.html#module_xml__stabilization_passthrough", null ]
       ] ]
     ] ],
@@ -3161,7 +3165,8 @@ var onboard_modules =
     ] ],
     [ "opticflow_hover module", "module__opticflow_hover.html", [
       [ "Example for airframe file", "module__opticflow_hover.html#module_load_example__opticflow_hover", null ],
-      [ "Module configuration options", "module__opticflow_hover.html#configuration__opticflow_hover", [
+      [ "Module configuration options", "module__opticflow_hover.html#configuration__opticflow_hover", null ],
+      [ "Module functions", "module__opticflow_hover.html#functions__opticflow_hover", [
         [ "Raw opticflow_hover.xml file:", "module__opticflow_hover.html#module_xml__opticflow_hover", null ]
       ] ]
     ] ],

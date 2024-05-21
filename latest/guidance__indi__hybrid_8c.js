@@ -56,6 +56,7 @@ var guidance__indi__hybrid_8c =
     [ "thrust_dyn", "guidance__indi__hybrid_8c.html#ade12d600937b2d985403d94c09b3e71e", null ],
     [ "thrust_filt", "guidance__indi__hybrid_8c.html#af67f625ea892ab734e4e0bfd00abac23", null ],
     [ "thrust_in", "guidance__indi__hybrid_8c.html#a229063a3d344169961f5d0803de574c0", null ],
+    [ "thrust_sp", "guidance__indi__hybrid_8c.html#a92c27d98d97d2547f41110b4d4e93f92", null ],
     [ "time_of_vel_sp", "guidance__indi__hybrid_8c.html#a17cb66c22ecad94f6da8c34538ecb5c7", null ],
     [ "v_gih", "guidance__indi__hybrid_8c.html#af0feadcd36da1b3a804d75dc567f4a83", null ],
     [ "vel_sp_ev", "guidance__indi__hybrid_8c.html#af56dc6445dd449650ea8d54bc7a1ecc7", null ]

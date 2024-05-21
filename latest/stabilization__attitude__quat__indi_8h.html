@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__indi_8h
 
 <p>This is the header file of the corresponding c file.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="stabilization__indi_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization__indi_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_indi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_attitude_quat_indi.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -99,24 +100,40 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__indi_8h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__quat__indi_8h__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8h" alt=""/></div>
 <map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8h" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8h">
-<area shape="rect" title="This is the header file of the corresponding c file." alt="" coords="210,5,381,76"/>
-<area shape="rect" href="stabilization__indi_8h.html" title=" " alt="" coords="200,124,391,180"/>
-<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="220,339,371,381"/>
-<area shape="rect" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="5,332,196,388"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="472,228,663,284"/>
-<area shape="rect" title=" " alt="" coords="349,585,404,612"/>
-<area shape="rect" title=" " alt="" coords="22,436,182,463"/>
-<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="323,436,503,463"/>
-<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="679,436,871,463"/>
-<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="581,511,737,537"/>
-<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="404,511,557,537"/>
-<area shape="rect" title=" " alt="" coords="309,511,380,537"/>
-<area shape="rect" title=" " alt="" coords="705,585,768,612"/>
-<area shape="rect" title=" " alt="" coords="611,585,681,612"/>
-<area shape="rect" title=" " alt="" coords="792,585,860,612"/>
-<area shape="rect" title=" " alt="" coords="863,511,1021,537"/>
-<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title="Rotorcraft attitude reference generation API." alt="" coords="395,339,555,381"/>
-<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="580,339,739,381"/>
+<area shape="rect" title="This is the header file of the corresponding c file." alt="" coords="173,5,343,76"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="96,228,287,284"/>
+<area shape="rect" href="stabilization__indi_8h.html" title=" " alt="" coords="229,124,420,180"/>
+<area shape="rect" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="363,339,513,381"/>
+<area shape="rect" href="radio__control_8h.html" title="Generic interface for radio control modules." alt="" coords="5,540,172,581"/>
+<area shape="rect" title=" " alt="" coords="452,704,507,731"/>
+<area shape="rect" title=" " alt="" coords="146,629,306,656"/>
+<area shape="rect" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="548,547,728,574"/>
+<area shape="rect" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="890,547,1082,574"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="409,436,600,492"/>
+<area shape="rect" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros." alt="" coords="789,629,945,656"/>
+<area shape="rect" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions." alt="" coords="517,629,671,656"/>
+<area shape="rect" title=" " alt="" coords="695,629,765,656"/>
+<area shape="rect" title=" " alt="" coords="913,704,976,731"/>
+<area shape="rect" title=" " alt="" coords="819,704,889,731"/>
+<area shape="rect" title=" " alt="" coords="1000,704,1068,731"/>
+<area shape="rect" title=" " alt="" coords="1071,629,1229,656"/>
+<area shape="rect" href="paparazzi_8h.html" title=" " alt="" coords="24,629,121,656"/>
+<area shape="rect" title=" " alt="" coords="29,704,116,731"/>
+<area shape="rect" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="92,436,283,492"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation." alt="" coords="803,332,993,388"/>
+<area shape="rect" href="stabilization__attitude__ref__int_8h.html" title="Rotorcraft attitude reference generation API." alt="" coords="726,443,886,485"/>
+<area shape="rect" href="attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation." alt="" coords="911,443,1069,485"/>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization__attitude__quat__indi_8h__dep__incl.png" border="0" usemap="#asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8hdep" alt=""/></div>
+<map name="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8hdep" id="asw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__indi_8hdep">
+<area shape="rect" title="This is the header file of the corresponding c file." alt="" coords="5,5,176,76"/>
+<area shape="rect" href="stabilization__attitude__quat__indi_8c.html" title="MAVLab Delft University of Technology This control algorithm is Incremental Nonlinear Dynamic Inversi..." alt="" coords="5,124,176,195"/>
 </map>
 </div>
 </div>
@@ -131,7 +148,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__indi_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__quat__indi_8h.html">stabilization_attitude_quat_indi.h</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

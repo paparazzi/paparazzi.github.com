@@ -23,8 +23,8 @@ var guidance__pid_8h =
     [ "guidance_pid_set_h_igain", "guidance__pid_8h.html#a0c9dec36d9a085108d10891d67471023", null ],
     [ "guidance_pid_set_v_igain", "guidance__pid_8h.html#a51cb235d25f9a8fec88ddd0462a0a053", null ],
     [ "guidance_pid_v_enter", "guidance__pid_8h.html#ae87c38743fb42ecd3293e445521ea6e4", null ],
-    [ "guidance_pid_v_run_accel", "guidance__pid_8h.html#a26c803778408c9a68cd8525232a186b8", null ],
-    [ "guidance_pid_v_run_pos", "guidance__pid_8h.html#ad00befe4ebd843b1f3728fb90408c7cf", null ],
-    [ "guidance_pid_v_run_speed", "guidance__pid_8h.html#ad3c5ebc28a1581edb86ea727867190f6", null ],
+    [ "guidance_pid_v_run_accel", "guidance__pid_8h.html#ab0541a0a1532b2ae0bd6b9a8e63276b4", null ],
+    [ "guidance_pid_v_run_pos", "guidance__pid_8h.html#a37494a4f6666280aa2ff1cada89aecc6", null ],
+    [ "guidance_pid_v_run_speed", "guidance__pid_8h.html#a7ced9c754cb5d0f65e5745ea29bdd0c9", null ],
     [ "guidance_pid", "guidance__pid_8h.html#a8cc1d35f634c24213fe65641854f29e1", null ]
 ];

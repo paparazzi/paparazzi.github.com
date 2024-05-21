@@ -9,8 +9,8 @@ var vertical__ctrl__module__demo_8h =
     ] ],
     [ "GUIDANCE_H_MODE_MODULE_SETTING", "vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd", null ],
     [ "GUIDANCE_V_MODE_MODULE_SETTING", "vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5", null ],
-    [ "guidance_v_module_enter", "vertical__ctrl__module__demo_8h.html#a1288433c507106e865034b02ae79b2d6", null ],
-    [ "guidance_v_module_init", "vertical__ctrl__module__demo_8h.html#a535ad2dedb628ec10707a6c0448c525e", null ],
-    [ "guidance_v_module_run", "vertical__ctrl__module__demo_8h.html#a24ef9289dfa15084a7457a97ad7632c8", null ],
+    [ "guidance_module_enter", "vertical__ctrl__module__demo_8h.html#a8b360bd61a56cd0c066db71cfbdc37a4", null ],
+    [ "guidance_module_run", "vertical__ctrl__module__demo_8h.html#a930fc2d7668ebfeaf878439804b73478", null ],
+    [ "vertical_ctrl_module_init", "vertical__ctrl__module__demo_8h.html#a089aaff33040a49a6598aad79528dd1e", null ],
     [ "v_ctrl", "vertical__ctrl__module__demo_8h.html#ad3ed9b885a495d0115b9543c39a79a4d", null ]
 ];

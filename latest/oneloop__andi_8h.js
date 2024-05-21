@@ -64,7 +64,6 @@ var oneloop__andi_8h =
     [ "oneloop_andi_read_rc", "oneloop__andi_8h.html#a037a42846b4c0b00fcb1c5a10c2c07c7", null ],
     [ "oneloop_andi_RM", "oneloop__andi_8h.html#a6d4db60ee32c86bf768d4422e524c993", null ],
     [ "oneloop_andi_run", "oneloop__andi_8h.html#a86a6264b40528bbf108446e1081a2ff0", null ],
-    [ "oneloop_andi_set_failsafe_setpoint", "oneloop__andi_8h.html#a78bf6173807834294cbb3da36e379cc0", null ],
     [ "oneloop_from_nav", "oneloop__andi_8h.html#a6736554ab99b39f3562226f60b49efc8", null ],
     [ "act_state_filt_vect_1l", "oneloop__andi_8h.html#ae22fe28f936daf28c5b72fa02501a182", null ],
     [ "actuator_state_1l", "oneloop__andi_8h.html#ae767ef515cbb5bc849b0604ebeed5760", null ],

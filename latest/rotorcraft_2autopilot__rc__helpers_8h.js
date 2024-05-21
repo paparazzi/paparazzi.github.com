@@ -6,6 +6,7 @@ var rotorcraft_2autopilot__rc__helpers_8h =
     [ "PITCH_STICK_CENTERED", "rotorcraft_2autopilot__rc__helpers_8h.html#a5541af1f39db9db37eb4e4d1673aac4c", null ],
     [ "ROLL_STICK_CENTERED", "rotorcraft_2autopilot__rc__helpers_8h.html#a4283b5e77477e4c499cfba6c902cdea7", null ],
     [ "THROTTLE_STICK_DOWN", "rotorcraft_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b", null ],
+    [ "THROTTLE_STICK_DOWN_FROM_RC", "rotorcraft_2autopilot__rc__helpers_8h.html#ab8710a9fdb1676d471b3cd82cc6b0b0a", null ],
     [ "YAW_STICK_CENTERED", "rotorcraft_2autopilot__rc__helpers_8h.html#aa893fedb4c84c86bcbc8f7ec075ced57", null ],
     [ "YAW_STICK_PUSHED", "rotorcraft_2autopilot__rc__helpers_8h.html#acd1ef4f5d7952bb8e3088e8800fa1ce5", null ],
     [ "kill_switch_is_on", "rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094", null ],

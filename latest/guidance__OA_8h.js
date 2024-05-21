@@ -20,10 +20,8 @@ var guidance__OA_8h =
       [ "SAFETYZONE", "guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7", null ],
       [ "LOGICBASED", "guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a28efa0e77bfeccb51b3e25bc4a4f32cb", null ]
     ] ],
-    [ "guidance_h_module_enter", "guidance__OA_8h.html#af0a3b4e238d064326406719e8244e92d", null ],
-    [ "guidance_h_module_init", "guidance__OA_8h.html#ab39ce31e4173de7b9aefa839324ec9a2", null ],
-    [ "guidance_h_module_read_rc", "guidance__OA_8h.html#a4c33bfc7d07ffb6d33a1af63799da082", null ],
-    [ "guidance_h_module_run", "guidance__OA_8h.html#a77f05df2acd1da23e187f1f3f5d5a26f", null ],
+    [ "guidance_module_enter", "guidance__OA_8h.html#a8b360bd61a56cd0c066db71cfbdc37a4", null ],
+    [ "guidance_module_run", "guidance__OA_8h.html#a930fc2d7668ebfeaf878439804b73478", null ],
     [ "OA_update", "guidance__OA_8h.html#ae9523792204e84a5ff5dd0af6f49b225", null ],
     [ "filter_flag", "guidance__OA_8h.html#a1bcf98385e35e852bb77f25ef6d8466d", null ],
     [ "OA_method_flag", "guidance__OA_8h.html#a7d1d6db717ff7b9a6930693f66f630d6", null ],

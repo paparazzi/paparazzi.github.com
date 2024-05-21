@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['generic_20algebra_20macros_55885',['Generic Algebra macros',['../group__math__algebra__generic.html',1,'']]],
-  ['generic_20geodetic_20macros_2e_55886',['Generic Geodetic macros.',['../group__math__geodetic__generic.html',1,'']]],
-  ['generic_20orientation_20representations_55887',['Generic Orientation Representations',['../group__math__orientation__representation.html',1,'']]],
-  ['geodetic_20functions_55888',['Geodetic functions',['../group__math__geodetic.html',1,'']]],
-  ['geomagnetic_20field_20model_55889',['Geomagnetic field model',['../group__math__geodetic__wmm.html',1,'']]]
+  ['generic_20algebra_20macros_55953',['Generic Algebra macros',['../group__math__algebra__generic.html',1,'']]],
+  ['generic_20geodetic_20macros_2e_55954',['Generic Geodetic macros.',['../group__math__geodetic__generic.html',1,'']]],
+  ['generic_20orientation_20representations_55955',['Generic Orientation Representations',['../group__math__orientation__representation.html',1,'']]],
+  ['geodetic_20functions_55956',['Geodetic functions',['../group__math__geodetic.html',1,'']]],
+  ['geomagnetic_20field_20model_55957',['Geomagnetic field model',['../group__math__geodetic__wmm.html',1,'']]]
 ];

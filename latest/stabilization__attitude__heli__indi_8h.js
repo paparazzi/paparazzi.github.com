@@ -15,11 +15,10 @@ var stabilization__attitude__heli__indi_8h =
     [ "INDI_THRUST", "stabilization__attitude__heli__indi_8h.html#af9532d05fdcb19e4b95492f59362d7c4", null ],
     [ "INDI_YAW", "stabilization__attitude__heli__indi_8h.html#abc003ca717dfbc4de1b329ea2d95be38", null ],
     [ "INDI_YAW_BUFFER_SIZE", "stabilization__attitude__heli__indi_8h.html#a71d66c3a664bda58192836608175e207", null ],
+    [ "stabilization_attitude_heli_indi_init", "stabilization__attitude__heli__indi_8h.html#a968e30fa01e3e2f461d8289f5aa4dd5f", null ],
     [ "stabilization_attitude_heli_indi_set_steadystate_pitch", "stabilization__attitude__heli__indi_8h.html#a3f6db3c7496be39d608c12bfd4770fa9", null ],
     [ "stabilization_attitude_heli_indi_set_steadystate_pitchroll", "stabilization__attitude__heli__indi_8h.html#a7e6a1b925bdb9ba1e48a46a642cc603e", null ],
     [ "stabilization_attitude_heli_indi_set_steadystate_roll", "stabilization__attitude__heli__indi_8h.html#a233b33e7242fb862ab436131bb53d517", null ],
     [ "actuator_model", "stabilization__attitude__heli__indi_8h.html#a0c50afa4090a66625d9f93a3e8e62447", null ],
-    [ "heli_indi_gains", "stabilization__attitude__heli__indi_8h.html#ab2b95b36439327dbf4f413b555f62f53", null ],
-    [ "stab_att_sp_euler", "stabilization__attitude__heli__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
-    [ "stab_att_sp_quat", "stabilization__attitude__heli__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
+    [ "heli_indi_gains", "stabilization__attitude__heli__indi_8h.html#ab2b95b36439327dbf4f413b555f62f53", null ]
 ];

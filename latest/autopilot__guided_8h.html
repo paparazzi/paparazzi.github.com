@@ -393,60 +393,14 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in AP_MODE_GUIDED) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00059">59</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
-
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00036">autopilot_guided_goto_ned()</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00508">stateIsLocalCoordinateValid()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00186">186</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_cgraph.png" border="0" usemap="#aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_cgraph" id="aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_cgraph">
-<area shape="rect" title="Set position and heading setpoints wrt." alt="" coords="5,302,172,343"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="486,107,638,133"/>
-<area shape="rect" href="autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode." alt="" coords="222,208,421,235"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,360,423,387"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="713,309,881,336"/>
-<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="220,411,423,437"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="471,208,653,235"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="485,157,639,184"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="493,259,631,285"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="701,150,892,191"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="978,157,1069,184"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="940,208,1107,235"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="946,56,1101,83"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1155,208,1327,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1796,204,1901,231"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1571,423,1724,449"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1576,153,1719,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1384,208,1515,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1398,309,1501,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1772,423,1925,449"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1777,153,1920,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1973,153,2125,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1595,204,1699,231"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1795,255,1903,281"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1571,255,1723,281"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1577,306,1717,347"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1161,31,1321,57"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1376,5,1523,32"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1574,5,1721,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="478,360,646,387"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="710,360,883,387"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="946,360,1101,387"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="945,411,1101,437"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1155,309,1328,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1379,360,1520,387"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_icgraph.png" border="0" usemap="#aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_icgraph" alt=""/></div>
 <map name="aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_icgraph" id="aautopilot__guided_8h_acb5ff8d624f7583075e58303f46b9890_icgraph">
 <area shape="rect" title="Set position and heading setpoints wrt." alt="" coords="425,5,592,47"/>
@@ -507,57 +461,21 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in AP_MODE_GUIDED) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00036">36</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00168">168</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00588">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00578">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00393">guidance_v_set_z()</a>, and <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot__guided_8c_source.html#l00059">autopilot_guided_goto_body_relative()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00047">autopilot_guided_goto_ned_relative()</a>, and <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_cgraph.png" border="0" usemap="#aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_cgraph" id="aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_cgraph">
-<area shape="rect" title="Set position and heading setpoints in GUIDED mode." alt="" coords="5,198,204,225"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="267,122,419,149"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="252,173,435,199"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="267,223,420,250"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="275,274,412,301"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="483,216,673,257"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="759,173,850,199"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="721,223,888,250"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="727,274,882,301"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="936,198,1108,225"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1577,147,1683,174"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1156,173,1309,199"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1363,274,1505,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1167,223,1298,250"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1181,71,1284,98"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1357,173,1511,199"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1559,274,1701,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1749,274,1901,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1382,223,1486,250"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1576,223,1684,250"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1358,71,1510,98"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1364,5,1504,47"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="942,274,1102,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1159,325,1306,351"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1361,325,1507,351"/>
-</map>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_icgraph.png" border="0" usemap="#aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_icgraph" alt=""/></div>
 <map name="aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_icgraph" id="aautopilot__guided_8h_ae4f59fae723f5116a979c7c5b923c180_icgraph">
-<area shape="rect" title="Set position and heading setpoints in GUIDED mode." alt="" coords="640,71,839,98"/>
-<area shape="rect" href="autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt." alt="" coords="425,5,592,47"/>
-<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="172,64,377,105"/>
-<area shape="rect" href="autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt." alt="" coords="425,123,592,164"/>
-<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="5,71,124,98"/>
+<area shape="rect" title="Set position and heading setpoints in GUIDED mode." alt="" coords="425,13,624,39"/>
+<area shape="rect" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title=" " alt="" coords="172,5,377,47"/>
+<area shape="rect" href="mavlink_8c.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls." alt="" coords="5,13,124,39"/>
 </map>
 </div>
 
@@ -613,60 +531,14 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in AP_MODE_GUIDED) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00047">47</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
-
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="autopilot__guided_8c_source.html#l00036">autopilot_guided_goto_ned()</a>, <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00508">stateIsLocalCoordinateValid()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00177">177</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_cgraph.png" border="0" usemap="#aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_cgraph" id="aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_cgraph">
-<area shape="rect" title="Set position and heading setpoints wrt." alt="" coords="5,302,172,343"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="486,107,638,133"/>
-<area shape="rect" href="autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode." alt="" coords="222,208,421,235"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,360,423,387"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="713,309,881,336"/>
-<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="220,411,423,437"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="471,208,653,235"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="485,157,639,184"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="493,259,631,285"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="701,150,892,191"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="978,157,1069,184"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="940,208,1107,235"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="946,56,1101,83"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1155,208,1327,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1796,204,1901,231"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1571,423,1724,449"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1576,153,1719,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1384,208,1515,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1398,309,1501,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1772,423,1925,449"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1777,153,1920,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1973,153,2125,180"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1595,204,1699,231"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1795,255,1903,281"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1571,255,1723,281"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1577,306,1717,347"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1161,31,1321,57"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1376,5,1523,32"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1574,5,1721,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="478,360,646,387"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="710,360,883,387"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="946,360,1101,387"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="945,411,1101,437"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1155,309,1328,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1379,360,1520,387"/>
-</map>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_icgraph.png" border="0" usemap="#aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_icgraph" alt=""/></div>
 <map name="aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_icgraph" id="aautopilot__guided_8h_a32b83e461c091c64ffa38e4f08f6a312_icgraph">
 <area shape="rect" title="Set position and heading setpoints wrt." alt="" coords="425,5,592,47"/>
@@ -727,50 +599,16 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in AP_MODE_GUIDED) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00072">72</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00195">195</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00588">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00603">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00403">guidance_v_set_vz()</a>, and <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>.</p>
+<p class="reference">References <a class="el" href="wedgebug_8c_source.html#l00258">heading</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mavlink_8c_source.html#l00228">mavlink_common_message_handler()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_cgraph.png" border="0" usemap="#aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_cgraph" id="aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_cgraph">
-<area shape="rect" title="Set velocity and heading setpoints in GUIDED mode." alt="" coords="5,198,212,225"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="275,122,427,149"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="260,173,443,199"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a" title="Set horizontal acceleration setpoint." alt="" coords="276,223,427,250"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a11bc5a0aad4e7ceef172ba43e9547a5d" title="Set z velocity setpoint." alt="" coords="279,274,424,301"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="491,216,681,257"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="767,173,858,199"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="729,223,896,250"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="735,274,890,301"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="944,198,1116,225"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1585,147,1691,174"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1164,173,1317,199"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1371,274,1513,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1175,223,1306,250"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1189,71,1292,98"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1365,173,1519,199"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1567,274,1709,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1757,274,1909,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1390,223,1494,250"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1584,223,1692,250"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1366,71,1518,98"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1372,5,1512,47"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="950,274,1110,301"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1167,325,1314,351"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1369,325,1515,351"/>
-</map>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_icgraph.png" border="0" usemap="#aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_icgraph" alt=""/></div>
 <map name="aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_icgraph" id="aautopilot__guided_8h_a113a26863eee267edc78f72876ec8f69_icgraph">
 <area shape="rect" title="Set velocity and heading setpoints in GUIDED mode." alt="" coords="425,13,632,39"/>
@@ -799,57 +637,7 @@ Functions</h2></td></tr>
 
 <p>Parse GUIDED_SETPOINT_NED messages from datalink. </p>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00152">152</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
-
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00054">AP_MODE_GUIDED</a>, <a class="el" href="autopilot_8c_source.html#l00217">autopilot_get_mode()</a>, and <a class="el" href="autopilot__guided_8c_source.html#l00096">autopilot_guided_update()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_a2e1c3e1b1fd34632e5de912da830ba26_cgraph.png" border="0" usemap="#aautopilot__guided_8h_a2e1c3e1b1fd34632e5de912da830ba26_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_a2e1c3e1b1fd34632e5de912da830ba26_cgraph" id="aautopilot__guided_8h_a2e1c3e1b1fd34632e5de912da830ba26_cgraph">
-<area shape="rect" title="Parse GUIDED_SETPOINT_NED messages from datalink." alt="" coords="5,302,180,343"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="243,284,395,311"/>
-<area shape="rect" href="autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="228,335,411,361"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad46ecaf35a5c2615a6656a91a041d27d" title="Set body relative horizontal velocity setpoint." alt="" coords="471,208,661,235"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a" title="Set horizontal acceleration setpoint." alt="" coords="747,157,898,184"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="721,233,924,260"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="475,360,657,387"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#aedf5a496ce41e9f5eee14f3c08693e02" title="Set heading rate setpoint." alt="" coords="459,411,673,437"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="746,107,899,133"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a11bc5a0aad4e7ceef172ba43e9547a5d" title="Set z velocity setpoint." alt="" coords="493,461,639,488"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="497,512,635,539"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="983,309,1151,336"/>
-<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="465,563,667,589"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="972,99,1163,141"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="1252,56,1343,83"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1214,157,1381,184"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="1220,107,1375,133"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1433,157,1605,184"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="2073,200,2179,227"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1848,419,2001,445"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1853,149,1996,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1661,208,1792,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1675,309,1778,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="2049,419,2203,445"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="2055,149,2197,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="2251,149,2403,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1873,200,1977,227"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="2072,251,2180,277"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1849,317,2001,344"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1855,251,1995,293"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1439,56,1599,83"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1653,5,1800,32"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1851,5,1998,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="983,233,1151,260"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="1211,233,1384,260"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1441,259,1596,285"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1441,208,1597,235"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1432,309,1605,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1656,360,1797,387"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00215">215</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
 </div>
 </div>
@@ -909,67 +697,20 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00096">96</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="autopilot__guided_8c_source.html#l00204">204</a> of file <a class="el" href="autopilot__guided_8c_source.html">autopilot_guided.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00595">guidance_h_set_body_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00588">guidance_h_set_heading()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00631">guidance_h_set_heading_rate()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00578">guidance_h_set_pos()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00603">guidance_h_set_vel()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00403">guidance_v_set_vz()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00393">guidance_v_set_z()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00710">stateGetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00508">stateIsLocalCoordinateValid()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p class="reference">References <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="autopilot__guided_8c_source.html#l00152">autopilot_guided_parse_GUIDED()</a>, and <a class="el" href="nav__fish_8c_source.html#l00487">nav_fish_velocity_run()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="nav__fish_8c_source.html#l00487">nav_fish_velocity_run()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="autopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_cgraph.png" border="0" usemap="#aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_cgraph" alt=""/></div>
-<map name="aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_cgraph" id="aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_cgraph">
-<area shape="rect" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="5,335,188,361"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad46ecaf35a5c2615a6656a91a041d27d" title="Set body relative horizontal velocity setpoint." alt="" coords="249,208,438,235"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ac7ed8795e4d4916debdd7447561c803a" title="Set horizontal acceleration setpoint." alt="" coords="525,157,675,184"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="499,233,701,260"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="252,360,435,387"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#aedf5a496ce41e9f5eee14f3c08693e02" title="Set heading rate setpoint." alt="" coords="236,411,451,437"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="523,107,677,133"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a11bc5a0aad4e7ceef172ba43e9547a5d" title="Set z velocity setpoint." alt="" coords="271,461,416,488"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="275,512,412,539"/>
-<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="761,309,929,336"/>
-<area shape="rect" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid." alt="" coords="242,563,445,589"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="749,99,940,141"/>
-<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="1029,56,1120,83"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="991,157,1158,184"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="997,107,1152,133"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1210,157,1382,184"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1851,200,1956,227"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1625,419,1779,445"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1631,149,1773,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1439,208,1569,235"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1453,309,1555,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="1827,419,1980,445"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1832,149,1975,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="2028,149,2180,176"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1650,200,1754,227"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1849,251,1957,277"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="1626,317,1778,344"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="1632,251,1772,293"/>
-<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1216,56,1376,83"/>
-<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1431,5,1577,32"/>
-<area shape="rect" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="1629,5,1775,32"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="761,233,929,260"/>
-<area shape="rect" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title=" " alt="" coords="988,233,1161,260"/>
-<area shape="rect" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39;" alt="" coords="1219,259,1373,285"/>
-<area shape="rect" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title=" " alt="" coords="1218,208,1374,235"/>
-<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1209,309,1383,336"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title=" " alt="" coords="1433,360,1575,387"/>
-</map>
-</div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_icgraph.png" border="0" usemap="#aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_icgraph" alt=""/></div>
 <map name="aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_icgraph" id="aautopilot__guided_8h_a07ce763874e77faf62f5c9506bdad43d_icgraph">
-<area shape="rect" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="228,42,411,69"/>
-<area shape="rect" href="autopilot__guided_8c.html#a2e1c3e1b1fd34632e5de912da830ba26" title="Parse GUIDED_SETPOINT_NED messages from datalink." alt="" coords="5,5,180,47"/>
-<area shape="rect" href="nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="11,71,174,98"/>
+<area shape="rect" title="Set guided setpoints using flag mask in GUIDED mode." alt="" coords="216,5,399,32"/>
+<area shape="rect" href="nav__fish_8c.html#ae25f7a8ee455c00944445f6b12b3a49f" title="runs the uav according to fish movement model using velocity control" alt="" coords="5,5,168,32"/>
 </map>
 </div>
 
@@ -981,7 +722,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="autopilot__guided_8h.html">autopilot_guided.h</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:15 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:32 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

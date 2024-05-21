@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('module__stabilization_float_euler.html
 <div class="title">stabilization_float_euler module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Stabilization controller for rotorcraft using float euler implementation</b></p>
+<div class="textblock"><p><b><a class="el" href="stabilization_8h.html#structStabilization" title="Stabilization structure.">Stabilization</a> controller for rotorcraft using float euler implementation</b></p>
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__stabilization_float_euler"></a>
 Example for airframe file</h1>
@@ -164,7 +164,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init">stabilization_attitude_init()</a></li>
+<li><a class="el" href="stabilization__attitude__euler__float_8c.html#a22338d6f808e54dd924fd6f440cc80c2">stabilization_attitude_euler_float_init()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -172,7 +172,6 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html">stabilization_attitude.h</a></li>
 <li><a class="el" href="stabilization__attitude__euler__float_8h.html">stabilization_attitude_euler_float.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
@@ -247,15 +246,12 @@ Raw stabilization_float_euler.xml file:</h2>
 <div class="line">    &lt;<span class="keywordtype">provides</span>&gt;<span class="keyword">commands</span>&lt;/<span class="keywordtype">provides</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">dep</span>&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude_euler_float.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;stabilization_attitude_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;stabilization_attitude_euler_float_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span> <span class="keyword">target</span>=<span class="stringliteral">&quot;ap|nps&quot;</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude_euler_float.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;stabilization_attitude_ref_euler_float.c&quot;</span> <span class="keyword">dir</span>=<span class="stringliteral">&quot;$(SRC_FIRMWARE)/stabilization&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_ATTITUDE_TYPE_FLOAT&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">define</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;STABILIZATION_ATTITUDE_TYPE_H&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;stabilization_attitude_euler_float.h&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -265,7 +261,7 @@ Raw stabilization_float_euler.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

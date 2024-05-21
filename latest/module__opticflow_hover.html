@@ -119,6 +119,14 @@ Airframe file section</h2>
 </ul>
 </li>
 </ul>
+<h1><a class="anchor" id="functions__opticflow_hover"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="guidance__opticflow__hover_8c.html#a801bbef32b7cb5638a0429be31d76fa9" title="Initialization of horizontal guidance module.">guidance_opticflow_hover_init()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -159,7 +167,7 @@ Raw opticflow_hover.xml file:</h2>
 <div class="line">  &lt;/<span class="keywordtype">doc</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">settings</span>&gt;</div>
-<div class="line">  &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Vision stabilization&quot;</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">NAME</span>=<span class="stringliteral">&quot;Vision stabilization&quot;</span>&gt;</div>
 <div class="line">      <span class="comment">&lt;!-- Satabilization loop parameters and gains --&gt;</span></div>
 <div class="line">      &lt;<span class="keywordtype">dl_settings</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;vision_stab&quot;</span>&gt;</div>
 <div class="line">        &lt;<span class="keywordtype">dl_setting</span> <span class="keyword">var</span>=<span class="stringliteral">&quot;opticflow_stab.phi_pgain&quot;</span> <span class="keyword">module</span>=<span class="stringliteral">&quot;guidance_opticflow/guidance_opticflow_hover&quot;</span> <span class="keyword">min</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">step</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">max</span>=<span class="stringliteral">&quot;10000&quot;</span> <span class="keyword">shortname</span>=<span class="stringliteral">&quot;kp_v_phi&quot;</span> <span class="keyword">param</span>=<span class="stringliteral">&quot;VISION_PHI_PGAIN&quot;</span>/&gt;</div>
@@ -179,13 +187,10 @@ Raw opticflow_hover.xml file:</h2>
 <div class="line">  &lt;<span class="keywordtype">header</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_opticflow_hover.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">header</span>&gt;</div>
-<div class="line"> </div>
+<div class="line">  &lt;<span class="keywordtype">init</span> <span class="keyword">fun</span>=<span class="stringliteral">&quot;guidance_opticflow_hover_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">file</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;guidance_opticflow_hover.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">raw</span>&gt;</div>
-<div class="line">      <span class="keyword">ap.CFLAGS</span> += -<span class="keyword">DGUIDANCE_V_MODE_MODULE_SETTING</span>=<span class="keyword">GUIDANCE_V_MODE_HOVER</span></div>
-<div class="line">      <span class="keyword">ap.CFLAGS</span> += -<span class="keyword">DGUIDANCE_H_MODE_MODULE_SETTING</span>=<span class="keyword">GUIDANCE_H_MODE_MODULE</span></div>
-<div class="line">    &lt;/<span class="keywordtype">raw</span>&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">test</span> <span class="keyword">firmware</span>=<span class="stringliteral">&quot;rotorcraft&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">makefile</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">module</span>&gt;</div>
@@ -196,7 +201,7 @@ Raw opticflow_hover.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:19 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:35 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

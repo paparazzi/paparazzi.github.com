@@ -33,18 +33,10 @@ var stabilization__indi__simple_8h =
       [ "u_act_dyn", "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20", null ],
       [ "u_in", "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4", null ]
     ] ],
-    [ "stabilization_indi_attitude_run", "stabilization__indi__simple_8h.html#a32497fd2d2c56c87a83bddb1f7b62fa8", null ],
+    [ "stabilization_indi_attitude_run", "stabilization__indi__simple_8h.html#aad408aa55ec7cd11f1354db45fa08c39", null ],
     [ "stabilization_indi_enter", "stabilization__indi__simple_8h.html#a121fd732c65156adade05ffb27fbaf52", null ],
     [ "stabilization_indi_init", "stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b", null ],
-    [ "stabilization_indi_rate_run", "stabilization__indi__simple_8h.html#abb616d415224721c6dbb6cc648b696c2", null ],
-    [ "stabilization_indi_read_rc", "stabilization__indi__simple_8h.html#a12143cafcad8c2db6f07b2cc072851d5", null ],
-    [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604", null ],
-    [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi__simple_8h.html#a2d7051eac973a8507897f6753deaf818", null ],
-    [ "stabilization_indi_set_quat_setpoint_i", "stabilization__indi__simple_8h.html#ae50a856798e14e1715cd3959c34b63df", null ],
-    [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi__simple_8h.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],
-    [ "stabilization_indi_set_stab_sp", "stabilization__indi__simple_8h.html#aa20c753face711591a2a4eba30a7a635", null ],
+    [ "stabilization_indi_rate_run", "stabilization__indi__simple_8h.html#a179cea231681ee1bbf1d336c72c7062c", null ],
     [ "stabilization_indi_simple_reset_r_filter_cutoff", "stabilization__indi__simple_8h.html#a579eabe525912021499370675a0eaf38", null ],
-    [ "indi", "stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ],
-    [ "stab_att_sp_euler", "stabilization__indi__simple_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
-    [ "stab_att_sp_quat", "stabilization__indi__simple_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
+    [ "indi", "stabilization__indi__simple_8h.html#ab7d1e27c6059abe21e47ced97e3b89e5", null ]
 ];

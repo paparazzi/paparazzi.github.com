@@ -1,0 +1,52 @@
+<map id="stabilization_attitude_run" name="stabilization_attitude_run">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1365,193,1392"/>
+<area shape="rect" id="node2" href="$oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="241,1365,379,1392"/>
+<area shape="rect" id="node3" href="$oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="451,174,597,201"/>
+<area shape="rect" id="node5" href="$oneloop__andi_8c.html#a951cb266b45fd50fd93ddf6b4624d153" title="Error Controller Definition for 2rd order system." alt="" coords="491,656,557,682"/>
+<area shape="rect" id="node6" href="$oneloop__andi_8c.html#a30a9db0f462cea6f64387df28700b52d" title="Error Controller Definition for 3rd order system." alt="" coords="491,706,557,733"/>
+<area shape="rect" id="node7" href="$oneloop__andi_8c.html#a1e2ff436265e81e75f7d74580f7da63e" title="Error Controller Definition for 3rd order system specific to attitude." alt="" coords="479,1289,569,1316"/>
+<area shape="rect" id="node9" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b" alt="" coords="909,1112,1033,1138"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b" alt="" coords="701,1365,822,1392"/>
+<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1" title="euler rotation &#39;ZXY&#39; This rotation order is useful if you need 90 deg pitch" alt="" coords="432,1390,616,1417"/>
+<area shape="rect" id="node12" href="$oneloop__andi_8c.html#a8eb6045d42103fc6aec2ffc6d6a1cae8" title="Function to reconstruct actuator state using first order dynamics." alt="" coords="439,1441,609,1468"/>
+<area shape="rect" id="node14" href="$oneloop__andi_8c.html#ac29359072fd9c8d897c4a5cceaad5ead" title="Initialize Controller Gains FIXME: Calculate the gains dynamically for transition." alt="" coords="468,402,580,429"/>
+<area shape="rect" id="node29" href="$oneloop__andi_8c.html#a454511ee574ac76452f4d4d3f62933a0" title="Propagate the filters." alt="" coords="433,1492,615,1534"/>
+<area shape="rect" id="node35" href="$oneloop__andi_8c.html#a6d4db60ee32c86bf768d4422e524c993" title="Function to generate the reference signals for the oneloop controller." alt="" coords="455,1036,593,1062"/>
+<area shape="rect" id="node44" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="427,1558,621,1585"/>
+<area shape="rect" id="node46" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="440,1609,608,1636"/>
+<area shape="rect" id="node48" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="446,1660,602,1686"/>
+<area shape="rect" id="node49" href="$oneloop__andi_8c.html#ad767aaed346c49a3be6a7b1ebaaa0025" title="Function that sums g1 and g2 to obtain the g1_g2 matrix." alt="" coords="470,1710,578,1737"/>
+<area shape="rect" id="node50" href="$wls__alloc_8c.html#ab89e6472eb93285d4bdc408f2bf8a2c4" title="active set algorithm for control allocation" alt="" coords="483,1761,565,1788"/>
+<area shape="rect" id="node4" href="$oneloop__andi_8c.html#a74447b45717217880aa60c4b5ac50360" title="Function to make sure that inputs are positive non zero vaues." alt="" coords="901,352,1041,378"/>
+<area shape="rect" id="node8" href="$oneloop__andi_8c.html#aabf00bf644fcbbbcf1e8d179ec137c79" title="Calculate Scaled Error between two 3D arrays." alt="" coords="940,1213,1003,1240"/>
+<area shape="rect" id="node13" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="669,1416,853,1442"/>
+<area shape="rect" id="node15" href="$oneloop__andi_8c.html#a942b91944e3bab77745b6c47ae0c6f2f" title=" " alt="" coords="718,48,805,74"/>
+<area shape="rect" id="node16" href="$oneloop__andi_8c.html#a022786dd61e329cc9259492f11c1ba08" title="Error Controller Gain Design." alt="" coords="718,98,805,125"/>
+<area shape="rect" id="node17" href="$oneloop__andi_8c.html#aaf72bdbfa2e974c98c5a795f2609e7b9" title=" " alt="" coords="706,149,817,176"/>
+<area shape="rect" id="node18" href="$oneloop__andi_8c.html#ad313d7996a86e13a2f0c1352473a2981" title=" " alt="" coords="718,200,805,226"/>
+<area shape="rect" id="node19" href="$oneloop__andi_8c.html#ac2b96351213227cc6fca5e2632dac8b6" title=" " alt="" coords="718,250,805,277"/>
+<area shape="rect" id="node20" href="$oneloop__andi_8c.html#a1e00a9e7ba5ed46fe47136668a0364a2" title=" " alt="" coords="706,301,817,328"/>
+<area shape="rect" id="node21" href="$oneloop__andi_8c.html#a10ce6b4c1e233def8ac07ea0c4466890" title=" " alt="" coords="718,352,805,378"/>
+<area shape="rect" id="node22" href="$oneloop__andi_8c.html#a0149493b3e60fd2577e343d5b0511e75" title=" " alt="" coords="706,402,817,429"/>
+<area shape="rect" id="node23" href="$oneloop__andi_8c.html#af42f6349829436d09187fb9dabe1b74d" title=" " alt="" coords="713,453,810,480"/>
+<area shape="rect" id="node24" href="$oneloop__andi_8c.html#ad0de73c7095e4e3acca991b62f9c5bc1" title="Reference Model Gain Design." alt="" coords="713,504,810,530"/>
+<area shape="rect" id="node25" href="$oneloop__andi_8c.html#ade145c37e6deff69377d9d45c7969db0" title=" " alt="" coords="713,554,810,581"/>
+<area shape="rect" id="node26" href="$oneloop__andi_8c.html#af74bd8ac4966207a1198d32900af82b1" title=" " alt="" coords="713,605,810,632"/>
+<area shape="rect" id="node27" href="$oneloop__andi_8c.html#a31aaef2286e26b8774cb1257a42edd73" title=" " alt="" coords="713,656,810,682"/>
+<area shape="rect" id="node28" href="$oneloop__andi_8c.html#a02bca45958fe0a2be236152e309ec9ce" title="Third Order to First Order Dynamics Approximation." alt="" coords="719,706,804,733"/>
+<area shape="rect" id="node30" href="$oneloop__andi_8c.html#ab4593fc438daf954a267626af1124263" title="Function that calculates the model prediction for the complementary filter." alt="" coords="713,1649,809,1676"/>
+<area shape="rect" id="node31" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="686,1700,837,1726"/>
+<area shape="rect" id="node32" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="681,1466,841,1493"/>
+<area shape="rect" id="node33" href="$low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value." alt="" coords="686,1518,837,1559"/>
+<area shape="rect" id="node34" href="$low__pass__filter_8h.html#a4ea211d4b5976d245c96408ff2d2803f" title="Update first order low pass filter state with a new value." alt="" coords="691,1583,831,1624"/>
+<area shape="rect" id="node36" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0" alt="" coords="701,858,822,885"/>
+<area shape="rect" id="node37" href="$radio__control_8h.html#a912ad5540c93dd124d032ca87dbe1adb" title="Get a radio control channel value." alt="" coords="694,909,829,936"/>
+<area shape="rect" id="node38" href="$oneloop__andi_8c.html#a450478d50f560f44e72a663e7f410e8c" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="713,1264,810,1290"/>
+<area shape="rect" id="node39" href="$oneloop__andi_8c.html#aee2673b358d1bee44c3dbc56bfcb12c7" title="Reference Model Definition for 2nd order system." alt="" coords="726,960,797,986"/>
+<area shape="rect" id="node40" href="$oneloop__andi_8c.html#a8b30a5644c29d73d333e7a0e3a94d408" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="711,1061,812,1088"/>
+<area shape="rect" id="node41" href="$oneloop__andi_8c.html#a7ec8f7884b0a2f587cd439989be4aaf3" title="Reference Model Definition for 3rd order system." alt="" coords="727,1010,795,1037"/>
+<area shape="rect" id="node42" href="$oneloop__andi_8c.html#a20ab7b965735469de2cca4dbe192aa0f" title="Reference Model Definition for 3rd order system with attitude conversion functions." alt="" coords="698,1213,825,1240"/>
+<area shape="rect" id="node43" href="$oneloop__andi_8c.html#acae0258231eeae5ebf534d6e6b8b37b4" title="Reference Model Definition for 3rd order system specific to positioning with bounds." alt="" coords="712,1162,811,1189"/>
+<area shape="rect" id="node45" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="682,1750,841,1777"/>
+<area shape="rect" id="node47" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="675,1801,848,1828"/>
+</map>

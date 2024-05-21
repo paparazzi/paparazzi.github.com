@@ -10,5 +10,6 @@ var optical__flow__functions_8c =
     [ "cov_array_filledXY", "optical__flow__functions_8c.html#a10b81db25639f8d958f56a19830300c1", null ],
     [ "cov_array_filledZ", "optical__flow__functions_8c.html#aa8b63c1d9c106ddfa2259b7b1afb68e3", null ],
     [ "ind_histXY", "optical__flow__functions_8c.html#a846754c5d365ec3a73b3c5788b4b3f38", null ],
-    [ "ind_histZ", "optical__flow__functions_8c.html#a9d58e53336093f253473c8a52924f515", null ]
+    [ "ind_histZ", "optical__flow__functions_8c.html#a9d58e53336093f253473c8a52924f515", null ],
+    [ "of_hover", "optical__flow__functions_8c.html#a360611e23c40f699b1dcc9bde6c714a3", null ]
 ];

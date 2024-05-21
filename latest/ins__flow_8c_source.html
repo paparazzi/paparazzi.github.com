@@ -532,13 +532,13 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="comment">// normally:</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> = phi_dot;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="comment">// when estimating the gyros:</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="comment">// // p = -1.8457e-04 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">// p = -2.0e-03 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="comment">// // p = -1.8457e-04 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">// p = -2.0e-03 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="comment">// TODO: expand the full filter later as well, to include q:</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    q = q_GT;</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> = <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#aa52487eb478a72a2379553db60544a42">lp_gyro_roll</a> - <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#adc5cf1f2f46607bec942e17b6f04243f">lp_gyro_bias_roll</a>;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// p = -2.0e-03 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// p = -2.0e-03 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    q = <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#a78fcd0222649f64b7efde5fcffee1490">lp_gyro_pitch</a> - <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#aaaa873822e3020e948312eceb8c79ace">lp_gyro_bias_pitch</a>;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  }</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
@@ -838,11 +838,11 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  }</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  <span class="comment">// same assumption for the roll command: assuming a close-to-hover situation and roll trim for staying in place:</span></div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#ad7fea5410e3c96bc4a46b9d9898e09c9">lp_roll_command</a> = <a class="code" href="ins__flow_8c.html#aa51bff147908c04e1b9e9860a069416d">lp_factor_strong</a> * <a class="code" href="ins__flow_8c.html#a8adde9e717ef5e547fa76d598489359c">ins_flow</a>.<a class="code" href="ins__flow_8c.html#ad7fea5410e3c96bc4a46b9d9898e09c9">lp_roll_command</a> + (1 - <a class="code" href="ins__flow_8c.html#aa51bff147908c04e1b9e9860a069416d">lp_factor_strong</a>) *</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                             <a class="code" href="stabilization_8c.html#a7db6cb929d989e142cf136ac4af10add">stabilization_cmd</a>[COMMAND_ROLL];</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                             <a class="code" href="stabilization_8c.html#a0c3d2f9aa609726bcb530a1905f2a89c">stabilization</a>.<a class="code" href="stabilization_8h.html#aac8fe30a06c5797b485a32866c3bdd18">cmd</a>[COMMAND_ROLL];</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; </div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <span class="comment">// only start estimation when flying (and above 1 meter: || position-&gt;z &gt; -1.0f )</span></div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="comment">// I removed the condition on height, since (1) we need to start the filter anyway explicitly now, and (2) it created a dependence on GPS fix.</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6">autopilot_in_flight</a>()) {</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <a class="code" href="e__identification__fr_8c.html#ae42fb17fa70ad0cb94e7ebee1f24073c">if</a> (!<a class="code" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6">autopilot_in_flight</a>()) {</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  }</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
@@ -918,7 +918,7 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160; </div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;<span class="comment">  moments[moment_ind] = Ix *(-0.000553060716181365 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command) -3.23315441805895 * OF_X[OF_ANGLE_DOT_IND]);</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;<span class="comment">  moments[moment_ind] = Ix *(-0.000553060716181365 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command) -3.23315441805895 * OF_X[OF_ANGLE_DOT_IND]);</span></div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="comment">  int select_ind = moment_ind - MOMENT_DELAY;</span></div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="comment">  if(select_ind &lt; 0) {</span></div>
@@ -934,7 +934,7 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;<span class="comment">  moment_ind = 0;</span></div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="comment">  }</span></div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="comment">// moment = Ix *(-0.000553060716181365 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command) -3.23315441805895 * OF_X[OF_ANGLE_DOT_IND]);</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="comment">// moment = Ix *(-0.000553060716181365 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command) -3.23315441805895 * OF_X[OF_ANGLE_DOT_IND]);</span></div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  moment = 0;</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
@@ -960,7 +960,7 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;<span class="comment">    } */</span></div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160; </div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="comment">// temporary insertion of gyro estimate here, for quicker effect:</span></div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="comment">// OF_X[OF_ANGLE_IND] += dt * -2.0e-03 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="comment">// OF_X[OF_ANGLE_IND] += dt * -2.0e-03 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160; </div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <a class="code" href="ins__flow_8c.html#a5ace3c9fdda48a81cd8113e6e275936b">OF_X</a>[<a class="code" href="ins__flow_8h.html#a740937395635cd9c3c437fea70045f82">OF_ANGLE_IND</a>] += dt * <a class="code" href="ins__flow_8c.html#a5ace3c9fdda48a81cd8113e6e275936b">OF_X</a>[<a class="code" href="ins__flow_8h.html#a6ce727481be43d49b79adb816864551c">OF_ANGLE_DOT_IND</a>];</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <a class="code" href="ins__flow_8c.html#a5ace3c9fdda48a81cd8113e6e275936b">OF_X</a>[<a class="code" href="ins__flow_8h.html#a6ce727481be43d49b79adb816864551c">OF_ANGLE_DOT_IND</a>] += dt * (moment / Ix);</div>
@@ -1317,10 +1317,10 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="comment">// TODO: You can fake gyros here by estimating them as follows:</span></div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;        <span class="comment">// rate_p_filt_est = -1.8457e-04 * cmd_roll;</span></div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <span class="comment">// gyro_meas_roll = -1.8457e-04 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;        <span class="comment">// gyro_meas_roll = -2.0e-03 * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <span class="comment">// gyro_meas_roll = -1.8457e-04 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;        <span class="comment">// gyro_meas_roll = -2.0e-03 * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160; </div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        <span class="comment">// gyro_meas_roll = 1e-04 * parameters[PAR_PRED_ROLL_1] * (stabilization_cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        <span class="comment">// gyro_meas_roll = 1e-04 * parameters[PAR_PRED_ROLL_1] * (stabilization.cmd[COMMAND_ROLL]-ins_flow.lp_roll_command);</span></div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        <span class="comment">// gyro_meas_roll = parameters[PAR_PRED_ROLL_2] * gyro_meas_roll + 1E-3 * parameters[PAR_PRED_ROLL_3] * ins_flow.optical_flow_x;</span></div>
 <div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160; </div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;        <span class="comment">// only flow:</span></div>
@@ -1914,8 +1914,9 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div class="ttc" id="apprz__geodetic__float_8h_html_af9886cfc8aa06ca66f993ac42500c4a7"><div class="ttname"><a href="pprz__geodetic__float_8h.html#af9886cfc8aa06ca66f993ac42500c4a7">NedCoor_f::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">in meters</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00065">pprz_geodetic_float.h:65</a></div></div>
 <div class="ttc" id="apprz__geodetic__float_8h_html_structNedCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a></div><div class="ttdoc">vector in North East Down coordinates Units: meters</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00063">pprz_geodetic_float.h:63</a></div></div>
 <div class="ttc" id="apprz__simple__matrix_8h_html"><div class="ttname"><a href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></div><div class="ttdoc">Simple matrix helper macros.</div></div>
-<div class="ttc" id="astabilization_8c_html_a7db6cb929d989e142cf136ac4af10add"><div class="ttname"><a href="stabilization_8c.html#a7db6cb929d989e142cf136ac4af10add">stabilization_cmd</a></div><div class="ttdeci">int32_t stabilization_cmd[COMMANDS_NB]</div><div class="ttdoc">Stabilization commands.</div><div class="ttdef"><b>Definition:</b> <a href="stabilization_8c_source.html#l00034">stabilization.c:34</a></div></div>
+<div class="ttc" id="astabilization_8c_html_a0c3d2f9aa609726bcb530a1905f2a89c"><div class="ttname"><a href="stabilization_8c.html#a0c3d2f9aa609726bcb530a1905f2a89c">stabilization</a></div><div class="ttdeci">struct Stabilization stabilization</div><div class="ttdef"><b>Definition:</b> <a href="stabilization_8c_source.html#l00001">stabilization.c:41</a></div></div>
 <div class="ttc" id="astabilization_8h_html"><div class="ttname"><a href="stabilization_8h.html">stabilization.h</a></div><div class="ttdoc">General stabilization interface for rotorcrafts.</div></div>
+<div class="ttc" id="astabilization_8h_html_aac8fe30a06c5797b485a32866c3bdd18"><div class="ttname"><a href="stabilization_8h.html#aac8fe30a06c5797b485a32866c3bdd18">Stabilization::cmd</a></div><div class="ttdeci">int32_t cmd[COMMANDS_NB]</div><div class="ttdoc">output command vector, range from [-MAX_PPRZ:MAX_PPRZ] (store for messages)</div><div class="ttdef"><b>Definition:</b> <a href="stabilization_8h_source.html#l00108">stabilization.h:108</a></div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states.</div></div>
 <div class="ttc" id="astm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00072">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="asys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions.</div></div>
@@ -1937,7 +1938,7 @@ $(document).ready(function(){initNavTree('ins__flow_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__flow_8c.html">ins_flow.c</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:12 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:29 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -166,18 +166,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab39ce31e4173de7b9aefa839324ec9a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#ab39ce31e4173de7b9aefa839324ec9a2">guidance_h_module_init</a> (void)</td></tr>
-<tr class="memdesc:ab39ce31e4173de7b9aefa839324ec9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of horizontal guidance module.  <a href="guidance__OA_8h.html#ab39ce31e4173de7b9aefa839324ec9a2">More...</a><br /></td></tr>
-<tr class="separator:ab39ce31e4173de7b9aefa839324ec9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a3b4e238d064326406719e8244e92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#af0a3b4e238d064326406719e8244e92d">guidance_h_module_enter</a> (void)</td></tr>
-<tr class="memdesc:af0a3b4e238d064326406719e8244e92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entering the horizontal module (user switched to module)  <a href="guidance__OA_8h.html#af0a3b4e238d064326406719e8244e92d">More...</a><br /></td></tr>
-<tr class="separator:af0a3b4e238d064326406719e8244e92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c33bfc7d07ffb6d33a1af63799da082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#a4c33bfc7d07ffb6d33a1af63799da082">guidance_h_module_read_rc</a> (void)</td></tr>
-<tr class="memdesc:a4c33bfc7d07ffb6d33a1af63799da082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the RC commands.  <a href="guidance__OA_8h.html#a4c33bfc7d07ffb6d33a1af63799da082">More...</a><br /></td></tr>
-<tr class="separator:a4c33bfc7d07ffb6d33a1af63799da082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77f05df2acd1da23e187f1f3f5d5a26f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#a77f05df2acd1da23e187f1f3f5d5a26f">guidance_h_module_run</a> (bool in_flight)</td></tr>
-<tr class="memdesc:a77f05df2acd1da23e187f1f3f5d5a26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main guidance loop.  <a href="guidance__OA_8h.html#a77f05df2acd1da23e187f1f3f5d5a26f">More...</a><br /></td></tr>
-<tr class="separator:a77f05df2acd1da23e187f1f3f5d5a26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#a8b360bd61a56cd0c066db71cfbdc37a4">guidance_module_enter</a> (void)</td></tr>
+<tr class="memdesc:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entering the module (user switched to module)  <a href="guidance__OA_8h.html#a8b360bd61a56cd0c066db71cfbdc37a4">More...</a><br /></td></tr>
+<tr class="separator:a8b360bd61a56cd0c066db71cfbdc37a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930fc2d7668ebfeaf878439804b73478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#a930fc2d7668ebfeaf878439804b73478">guidance_module_run</a> (bool in_flight)</td></tr>
+<tr class="memdesc:a930fc2d7668ebfeaf878439804b73478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main guidance loop.  <a href="guidance__OA_8h.html#a930fc2d7668ebfeaf878439804b73478">More...</a><br /></td></tr>
+<tr class="separator:a930fc2d7668ebfeaf878439804b73478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9523792204e84a5ff5dd0af6f49b225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#ae9523792204e84a5ff5dd0af6f49b225">OA_update</a> (void)</td></tr>
 <tr class="memdesc:ae9523792204e84a5ff5dd0af6f49b225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the controls based on a vision result.  <a href="guidance__OA_8h.html#ae9523792204e84a5ff5dd0af6f49b225">More...</a><br /></td></tr>
 <tr class="separator:ae9523792204e84a5ff5dd0af6f49b225"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,14 +315,14 @@ The pitch P gain on the err_vy. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af0a3b4e238d064326406719e8244e92d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0a3b4e238d064326406719e8244e92d">&#9670;&nbsp;</a></span>guidance_h_module_enter()</h2>
+<a id="a8b360bd61a56cd0c066db71cfbdc37a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b360bd61a56cd0c066db71cfbdc37a4">&#9670;&nbsp;</a></span>guidance_module_enter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void guidance_h_module_enter </td>
+          <td class="memname">void guidance_module_enter </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -337,191 +331,82 @@ The pitch P gain on the err_vy. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Entering the horizontal module (user switched to module) </p>
-<p>Entering the horizontal module (user switched to module) </p>
+<p>Entering the module (user switched to module) </p>
+<p>Entering the module (user switched to module) </p>
 
-<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00085">85</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00077">77</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00042">ctrl_module_demo_struct::cmd</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb">ctrl</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00048">ctrl_module_init()</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00045">opticflow_stab_t::err_vx_int</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00046">opticflow_stab_t::err_vy_int</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="guidance__OA_8c_source.html#l00114">new_heading</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00243">of_hover_ref_pos</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00194">ofh_sp_eu</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00090">opticflow_stab</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00039">ctrl_module_demo_struct::rc_sp</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00322">reset_horizontal_vars()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00665">stateGetPositionNed_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00151">guidance_h_mode_changed()</a>.</p>
+<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00335">autopilot_in_flight()</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00044">ctrl_module_demo_struct::cmd</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb">ctrl</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00046">ctrl_module_init()</a>, <a class="el" href="ctrl__windtunnel_8c.html#afa94848ac35182a9246a96d095241cd2">ctrl_windtunnel</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00182">des_inputs</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00045">opticflow_stab_t::err_vx_int</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00046">opticflow_stab_t::err_vy_int</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00128">guidance_h_mode_changed()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00057">GUIDANCE_H_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00132">guidance_v_mode_changed()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00039">GUIDANCE_V_MODE_HOVER</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="guidance__OA_8c_source.html#l00114">new_heading</a>, <a class="el" href="optical__flow__landing_8h_source.html#l00065">OpticalFlowLanding::nominal_thrust</a>, <a class="el" href="optical__flow__functions_8h_source.html#l00046">OpticalFlowHoverControl::nominal_value</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00209">of_hover_ctrl_Z</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00243">of_hover_ref_pos</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00297">of_landing_ctrl</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00196">ofh_sp_eu</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00090">opticflow_stab</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00048">ctrl_windtunnel_struct::rc_pitch</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00047">ctrl_windtunnel_struct::rc_roll</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00041">ctrl_module_demo_struct::rc_sp</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00046">ctrl_windtunnel_struct::rc_throttle</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00049">ctrl_windtunnel_struct::rc_yaw</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00448">reset_all_vars()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00304">reset_horizontal_vars()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00377">reset_vertical_vars()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00255">stabilization_attitude_read_rc_setpoint_eulers()</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00665">stateGetPositionNed_i()</a>, <a class="el" href="vertical__ctrl__module__demo_8h_source.html#l00038">VerticalCtrlDemo::sum_err</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="optical__flow__functions_8h_source.html#l00065">DesiredInputs::thrust</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00249">thrust_set</a>, <a class="el" href="vertical__ctrl__module__demo_8c_source.html#l00055">v_ctrl</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00068">VECT2_COPY</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_af0a3b4e238d064326406719e8244e92d_cgraph.png" border="0" usemap="#aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_cgraph" alt=""/></div>
-<map name="aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_cgraph" id="aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_cgraph">
-<area shape="rect" title="Entering the horizontal module (user switched to module)" alt="" coords="5,181,199,208"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06" title=" " alt="" coords="275,21,402,48"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="257,72,420,98"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="247,174,431,215"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="699,232,901,258"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="255,417,422,444"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="492,46,637,73"/>
-<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="1385,16,1543,42"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="514,316,615,342"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="519,97,610,124"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="517,148,613,174"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="485,199,645,240"/>
-<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="949,122,1116,149"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title=" " alt="" coords="1164,104,1336,130"/>
-<area shape="rect" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title=" " alt="" coords="1384,104,1544,130"/>
-<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="479,417,651,444"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="1197,366,1303,393"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="723,518,877,545"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="961,468,1104,494"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="735,417,865,444"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="749,308,851,334"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="956,518,1109,545"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1179,468,1321,494"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1388,468,1540,494"/>
-<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="981,417,1085,444"/>
-<area shape="rect" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title=" " alt="" coords="1196,417,1304,444"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="957,249,1109,276"/>
-<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="963,300,1103,342"/>
-</map>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_af0a3b4e238d064326406719e8244e92d_icgraph.png" border="0" usemap="#aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_icgraph" alt=""/></div>
-<map name="aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_icgraph" id="aguidance__OA_8h_af0a3b4e238d064326406719e8244e92d_icgraph">
-<area shape="rect" title="Entering the horizontal module (user switched to module)" alt="" coords="499,5,692,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="248,5,451,32"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="5,5,200,32"/>
+<div class="center"><img src="guidance__OA_8h_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph.png" border="0" usemap="#aguidance__OA_8h_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph" alt=""/></div>
+<map name="aguidance__OA_8h_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph" id="aguidance__OA_8h_a8b360bd61a56cd0c066db71cfbdc37a4_cgraph">
+<area shape="rect" title="Entering the module (user switched to module)" alt="" coords="5,393,184,420"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="264,157,403,184"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06" title=" " alt="" coords="270,208,397,235"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a2903786227eb11507928f99870099225" title=" " alt="" coords="232,259,435,285"/>
+<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1202,309,1369,336"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title=" " alt="" coords="712,411,915,437"/>
+<area shape="rect" href="optical__flow__landing_8c.html#a46c9da8aa58fea58306c6a47b9f21c89" title="Reset all variables:" alt="" coords="277,469,390,496"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="252,520,415,547"/>
+<area shape="rect" href="optical__flow__hover_8c.html#aa1f1ab30f74e185f0cc6c922cb0e2354" title="Reset all vertical variables:" alt="" coords="260,419,407,445"/>
+<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ab7bf04727380ab51b2649aab80fd4459" title="Read attitude setpoint from RC as euler angles Only the euler format is updated and returned." alt="" coords="241,571,425,613"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="232,655,435,681"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a32c1c61b5aa933b712fd75a1a9bdc162" title=" " alt="" coords="483,157,664,184"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#aaecb10d1d18788c0de654dd479441b20" title=" " alt="" coords="489,259,657,285"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8h.html#a2afa7b624f2b934fa128725a23891a12" title=" " alt="" coords="731,5,896,32"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a6abe0b9253c64c03d81b853d05d3a731" title="Set heading setpoint." alt="" coords="722,56,905,83"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ddfe5ce3ffb45d8eb3dce770d927c14" title="Set horizontal position setpoint." alt="" coords="737,107,890,133"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title=" " alt="" coords="963,142,1153,183"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="712,208,915,235"/>
+<area shape="rect" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float)." alt="" coords="1201,411,1369,437"/>
+<area shape="rect" href="oneloop__andi_8c.html#acc520a1793d4fa59654715e75b139ccb" title="Function that resets important values upon engaging Oneloop ANDI." alt="" coords="983,5,1133,32"/>
+<area shape="rect" href="oneloop__andi_8c.html#a8035781eb93a7ad261b01346766af8f7" title="Calculate Normalization of actuators and discrete actuator dynamics" alt="" coords="1213,5,1358,32"/>
+<area shape="rect" href="guidance__h__ref_8c.html#a5678a7ba89f6b2900826c485e0cec175" title=" " alt="" coords="1240,149,1331,176"/>
+<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="1208,360,1363,387"/>
+<area shape="rect" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title=" " alt="" coords="1417,291,1589,317"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title=" " alt="" coords="2084,348,2189,375"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title=" " alt="" coords="1859,272,2012,299"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1864,323,2007,349"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED." alt="" coords="1659,323,1789,349"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title=" " alt="" coords="1884,475,1987,501"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title=" " alt="" coords="2060,399,2213,425"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="2065,449,2208,476"/>
+<area shape="rect" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF." alt="" coords="1883,373,1987,400"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title=" " alt="" coords="2061,500,2213,527"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title=" " alt="" coords="2067,551,2207,593"/>
+<area shape="rect" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title=" " alt="" coords="1423,392,1583,419"/>
+<area shape="rect" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="1651,424,1797,451"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="974,208,1142,235"/>
+<area shape="rect" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title=" " alt="" coords="1637,475,1811,501"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a726df520277832e62c3f28e00518394b" title="Enter GUIDED mode control." alt="" coords="964,461,1152,488"/>
+<area shape="rect" href="guidance__oneloop_8c.html#a642dab951988b0727ee833c94db9e428" title=" " alt="" coords="1203,512,1368,539"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a723f12dd716d47e391d6370214c7001c" title="Set z position setpoint." alt="" coords="1217,461,1354,488"/>
+<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="501,469,646,496"/>
+<area shape="rect" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="1420,537,1587,564"/>
+<area shape="rect" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title=" " alt="" coords="1639,525,1809,552"/>
+<area shape="rect" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title=" " alt="" coords="1865,424,2006,451"/>
+<area shape="rect" href="stabilization_8c.html#ac41f248e6265fdcd678691661a7f3c10" title=" " alt="" coords="498,613,649,640"/>
+<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="490,664,657,691"/>
+<area shape="rect" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title=" " alt="" coords="727,664,899,691"/>
+<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="979,639,1137,665"/>
+<area shape="rect" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title=" " alt="" coords="978,689,1138,716"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab39ce31e4173de7b9aefa839324ec9a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab39ce31e4173de7b9aefa839324ec9a2">&#9670;&nbsp;</a></span>guidance_h_module_init()</h2>
+<a id="a930fc2d7668ebfeaf878439804b73478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930fc2d7668ebfeaf878439804b73478">&#9670;&nbsp;</a></span>guidance_module_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void guidance_h_module_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialization of horizontal guidance module. </p>
-
-<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00080">80</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00048">ctrl_module_init()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00313">horizontal_ctrl_module_init()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00151">stabilization_opticflow_vel_cb()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00087">velocity_est_ev</a>, and <a class="el" href="guidance__opticflow__hover_8c_source.html#l00043">VISION_VELOCITY_ESTIMATE_ID</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00107">guidance_h_init()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph.png" border="0" usemap="#aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph" alt=""/></div>
-<map name="aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph" id="aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph">
-<area shape="rect" title="Initialization of horizontal guidance module." alt="" coords="5,56,185,83"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06" title=" " alt="" coords="269,5,396,32"/>
-<area shape="rect" href="optical__flow__hover_8c.html#ab10a886e73d13b8c525a5bdee70a19af" title="Initialize the horizontal optical flow hover module." alt="" coords="233,56,432,83"/>
-<area shape="rect" href="guidance__opticflow__hover_8c.html#a781dbde7c535e9a3c38caeb2026d9ebb" title="Update the controls on a new VELOCITY_ESTIMATE ABI message." alt="" coords="249,107,417,149"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087" title="Reset all horizontal variables:" alt="" coords="480,56,643,83"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="697,31,843,57"/>
-<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="691,81,849,108"/>
-<area shape="rect" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode" alt="" coords="485,115,637,141"/>
-</map>
-</div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph.png" border="0" usemap="#aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph" alt=""/></div>
-<map name="aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph" id="aguidance__OA_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph">
-<area shape="rect" title="Initialization of horizontal guidance module." alt="" coords="177,5,357,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80" title=" " alt="" coords="5,5,129,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4c33bfc7d07ffb6d33a1af63799da082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c33bfc7d07ffb6d33a1af63799da082">&#9670;&nbsp;</a></span>guidance_h_module_read_rc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void guidance_h_module_read_rc </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Read the RC commands. </p>
-
-<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">90</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
-
-<p class="reference">References <a class="el" href="autopilot_8c_source.html#l00049">autopilot</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a65d1374971ec8fcd7acb34d920dccacb">ctrl</a>, <a class="el" href="ctrl__module__innerloop__demo_8c.html#a6e8003c0ae48a02b2d0032810c69fa88">ctrl_module_demo</a>, <a class="el" href="ctrl__windtunnel_8c.html#afa94848ac35182a9246a96d095241cd2">ctrl_windtunnel</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00048">ctrl_windtunnel_struct::rc_pitch</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00047">ctrl_windtunnel_struct::rc_roll</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00039">ctrl_module_demo_struct::rc_sp</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00036">ctrl_module_demo_struct::rc_t</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00046">ctrl_windtunnel_struct::rc_throttle</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00033">ctrl_module_demo_struct::rc_x</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00034">ctrl_module_demo_struct::rc_y</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00049">ctrl_windtunnel_struct::rc_yaw</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00035">ctrl_module_demo_struct::rc_z</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>, and <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00224">guidance_h_read_rc()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_cgraph.png" border="0" usemap="#aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_cgraph" alt=""/></div>
-<map name="aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_cgraph" id="aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_cgraph">
-<area shape="rect" title="Read the RC commands." alt="" coords="5,132,212,159"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles." alt="" coords="260,125,444,166"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title=" " alt="" coords="521,5,623,32"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title=" " alt="" coords="527,56,617,83"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title=" " alt="" coords="524,107,620,133"/>
-<area shape="rect" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup." alt="" coords="499,157,645,184"/>
-<area shape="rect" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title=" " alt="" coords="492,209,652,250"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="700,245,903,272"/>
-<area shape="rect" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="951,245,1117,272"/>
-<area shape="rect" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title=" " alt="" coords="1165,245,1337,272"/>
-<area shape="rect" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title=" " alt="" coords="1386,220,1545,247"/>
-<area shape="rect" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title=" " alt="" coords="1385,271,1545,297"/>
-</map>
-</div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph.png" border="0" usemap="#aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph" alt=""/></div>
-<map name="aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph" id="aguidance__OA_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph">
-<area shape="rect" title="Read the RC commands." alt="" coords="745,42,952,69"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title=" " alt="" coords="547,42,697,69"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available." alt="" coords="331,5,477,47"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading." alt="" coords="309,71,499,98"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a4f29de55a1400c23355664fd24c7910b" title=" " alt="" coords="159,46,261,73"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#ad132ffbe3cfdff1815722346bfca610b" title=" " alt="" coords="161,97,259,123"/>
-<area shape="rect" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4" title=" " alt="" coords="5,71,111,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a77f05df2acd1da23e187f1f3f5d5a26f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77f05df2acd1da23e187f1f3f5d5a26f">&#9670;&nbsp;</a></span>guidance_h_module_run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void guidance_h_module_run </td>
+          <td class="memname">void guidance_module_run </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
@@ -538,80 +423,66 @@ The pitch P gain on the err_vy. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00099">99</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00082">82</a> of file <a class="el" href="ctrl__module__innerloop__demo_8c_source.html">ctrl_module_innerloop_demo.c</a>.</p>
 
-<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00140">autopilot_static_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00050">Electrical::bat_low</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00057">ctrl_module_run()</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00429">horizontal_ctrl_module_run()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00090">opticflow_stab</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00188">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00283">guidance_h_run()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00048">AP_MODE_NAV</a>, <a class="el" href="autopilot_8c_source.html#l00193">autopilot_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00050">Electrical::bat_low</a>, <a class="el" href="stabilization_8h_source.html#l00108">Stabilization::cmd</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__innerloop__demo_8c.html#a6e8003c0ae48a02b2d0032810c69fa88">ctrl_module_demo</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00055">ctrl_module_run()</a>, <a class="el" href="ctrl__windtunnel_8c.html#afa94848ac35182a9246a96d095241cd2">ctrl_windtunnel</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00182">des_inputs</a>, <a class="el" href="electrical_8c_source.html#l00092">electrical</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00244">guidance_h_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00221">guidance_v_run()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00409">horizontal_ctrl_module_run()</a>, <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00196">ofh_sp_eu</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00090">opticflow_stab</a>, <a class="el" href="radio__control_8c_source.html#l00033">radio_control</a>, <a class="el" href="rc__datalink_8h_source.html#l00039">RADIO_PITCH</a>, <a class="el" href="rc__datalink_8h_source.html#l00038">RADIO_ROLL</a>, <a class="el" href="rc__datalink_8h_source.html#l00041">RADIO_THROTTLE</a>, <a class="el" href="rc__datalink_8h_source.html#l00040">RADIO_YAW</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00048">ctrl_windtunnel_struct::rc_pitch</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00047">ctrl_windtunnel_struct::rc_roll</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00037">ctrl_module_demo_struct::rc_t</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00046">ctrl_windtunnel_struct::rc_throttle</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00034">ctrl_module_demo_struct::rc_x</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00035">ctrl_module_demo_struct::rc_y</a>, <a class="el" href="ctrl__windtunnel_8c_source.html#l00049">ctrl_windtunnel_struct::rc_yaw</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00036">ctrl_module_demo_struct::rc_z</a>, <a class="el" href="structStabilizationSetpoint.html#a632c80c243fb808a15e136573cf70a91">StabilizationSetpoint::sp</a>, <a class="el" href="structThrustSetpoint.html#afdaa16596fe95fd4cb8ba37f44ad0d82">ThrustSetpoint::sp</a>, <a class="el" href="stabilization_8c_source.html#l00628">stab_sp_from_eulers_i()</a>, <a class="el" href="stabilization_8c_source.html#l00041">stabilization</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_run()</a>, <a class="el" href="stabilization_8c_source.html#l00242">stabilization_run()</a>, <a class="el" href="stabilization_8c_source.html#l00690">th_sp_from_thrust_i()</a>, <a class="el" href="optical__flow__functions_8h_source.html#l00065">DesiredInputs::thrust</a>, <a class="el" href="stabilization_8h_source.html#l00174">THRUST_AXIS_Z</a>, <a class="el" href="radio__control_8h_source.html#l00067">RadioControl::values</a>, and <a class="el" href="optical__flow__hover_8c_source.html#l00499">vertical_ctrl_module_run()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_cgraph.png" border="0" usemap="#aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_cgraph" alt=""/></div>
-<map name="aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_cgraph" id="aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_cgraph">
-<area shape="rect" title="Main guidance loop." alt="" coords="5,281,185,308"/>
-<area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="235,139,430,165"/>
-<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a246e056658d0e550e72754ab59707a78" title=" " alt="" coords="269,387,396,413"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a1d6a689f380b3efc01bc97ed28ece11d" title="Run the horizontal optical flow hover module." alt="" coords="233,189,432,216"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title=" " alt="" coords="501,209,661,250"/>
-<area shape="rect" href="guidance__OA_8c.html#aeedb2b02de7cc2259cbbc6187e17f8d6" title="Update the controls based on a vision result." alt="" coords="286,311,379,337"/>
-<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#add1138c9aae1adaafdb42ddf2f0c039a" title=" " alt="" coords="239,1136,427,1163"/>
-<area shape="rect" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="502,427,661,453"/>
-<area shape="rect" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title=" " alt="" coords="750,427,914,453"/>
-<area shape="rect" href="optical__flow__hover_8c.html#a04b77d27bd41ebc387425f8ea0d1166b" title="Get the desired Euler angles for optitrack stabilization." alt="" coords="511,107,651,133"/>
-<area shape="rect" href="optical__flow__functions_8c.html#a4e855e460d661070d0c98015f433fcd7" title="Determine and set the desired angle for constant flow control." alt="" coords="516,157,647,184"/>
-<area shape="rect" href="optical__flow__functions_8c.html#ab8a8e1a36d1906e82bd10e15b5736484" title="Set the covariance of the flow and past flow / desired angle This funciton should only be called once..." alt="" coords="528,31,635,57"/>
-<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="731,325,933,352"/>
-<area shape="rect" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="749,107,915,133"/>
-<area shape="rect" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="755,56,909,83"/>
-<area shape="rect" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="779,5,885,32"/>
-<area shape="rect" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39;" alt="" coords="755,275,909,301"/>
-<area shape="rect" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles." alt="" coords="981,187,1140,213"/>
-<area shape="rect" href="stabilization__indi_8c.html#aac24f92be2dd7af42e3e7906a1324fe9" title=" " alt="" coords="758,209,906,250"/>
-<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="480,376,683,403"/>
-<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="754,756,910,783"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="512,1506,651,1547"/>
-<area shape="rect" href="stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="512,1571,651,1613"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="496,1689,667,1730"/>
-<area shape="rect" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="753,1667,911,1693"/>
-<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="739,1736,925,1763"/>
-<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="502,1857,661,1898"/>
-<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="751,1839,913,1865"/>
-<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="751,1891,913,1917"/>
-<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="737,1945,927,1972"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="521,2024,642,2051"/>
-<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="523,528,640,555"/>
-<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="489,579,673,605"/>
-<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="509,629,653,656"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="501,680,662,707"/>
-<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="507,731,655,757"/>
-<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="512,781,651,808"/>
-<area shape="rect" href="group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="517,832,645,859"/>
-<area shape="rect" href="group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="522,883,641,909"/>
-<area shape="rect" href="group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="519,933,644,960"/>
-<area shape="rect" href="oneloop__andi_8c.html#a86a6264b40528bbf108446e1081a2ff0" title="Main function that runs the controller and performs control allocation." alt="" coords="513,1035,650,1061"/>
-<area shape="rect" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="735,1389,929,1416"/>
-<area shape="rect" href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="525,1339,637,1365"/>
-<area shape="rect" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="777,1161,887,1188"/>
-<area shape="rect" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="502,1085,661,1112"/>
-<area shape="rect" href="stabilization__indi_8c.html#a32497fd2d2c56c87a83bddb1f7b62fa8" title=" " alt="" coords="515,1441,648,1482"/>
-<area shape="rect" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int)." alt="" coords="506,1136,657,1163"/>
-<area shape="rect" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="501,1187,661,1213"/>
-<area shape="rect" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int)." alt="" coords="485,1237,678,1264"/>
-<area shape="rect" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="483,1288,679,1315"/>
-</map>
-</div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_icgraph.png" border="0" usemap="#aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_icgraph" alt=""/></div>
-<map name="aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_icgraph" id="aguidance__OA_8h_a77f05df2acd1da23e187f1f3f5d5a26f_icgraph">
-<area shape="rect" title="Main guidance loop." alt="" coords="408,5,588,32"/>
-<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title=" " alt="" coords="236,5,360,32"/>
-<area shape="rect" href="rotorcraft_2autopilot__static_8c.html#a81ff7c3a0611cb76bfbd35fc817070d6" title=" " alt="" coords="5,5,188,32"/>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="guidance__OA_8h_a930fc2d7668ebfeaf878439804b73478_cgraph.png" border="0" usemap="#aguidance__OA_8h_a930fc2d7668ebfeaf878439804b73478_cgraph" alt=""/></div>
+<map name="aguidance__OA_8h_a930fc2d7668ebfeaf878439804b73478_cgraph" id="aguidance__OA_8h_a930fc2d7668ebfeaf878439804b73478_cgraph">
+<area shape="rect" title="Main guidance loop." alt="" coords="5,695,171,722"/>
+<area shape="rect" href="autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode" alt="" coords="243,71,393,98"/>
+<area shape="rect" href="ctrl__module__innerloop__demo_8c.html#a6dbfe79bbecd265d25ec3d8d21cb095b" title=" " alt="" coords="255,695,381,722"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#ab89e3d722147dde999c97d1afdca3c9f" title=" " alt="" coords="256,223,380,250"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#af7b4baa154425fe61d4807656a01ab06" title="Guidance vertical run functions." alt="" coords="256,594,380,621"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a1c52c94e6c6055b3877353aabf09f01c" title="Run the horizontal optical flow hover module." alt="" coords="219,401,417,427"/>
+<area shape="rect" href="guidance__OA_8c.html#aeedb2b02de7cc2259cbbc6187e17f8d6" title="Update the controls based on a vision result." alt="" coords="516,223,609,250"/>
+<area shape="rect" href="stabilization_8c.html#ab4450b06845c4fe82ea4d45c2e2d4b20" title=" " alt="" coords="234,1233,402,1259"/>
+<area shape="rect" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a08849596f1ed44740256f2f07c988f9d" title="Attitude control run function." alt="" coords="224,1182,412,1209"/>
+<area shape="rect" href="stabilization_8c.html#a6340487673196d115af96fafd83a6d5e" title="Call default stabilization control." alt="" coords="253,1283,383,1310"/>
+<area shape="rect" href="stabilization_8c.html#ad9100967a3aba7417a3e6f0ed2111dac" title=" " alt="" coords="243,1334,393,1361"/>
+<area shape="rect" href="optical__flow__hover_8c.html#adb3f4ca3b244c129124f343d186511f9" title="Run the vertical optical flow hover module." alt="" coords="227,1385,409,1411"/>
+<area shape="rect" href="fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title=" " alt="" coords="486,5,639,47"/>
+<area shape="rect" href="fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title=" " alt="" coords="465,71,660,98"/>
+<area shape="rect" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="483,695,642,722"/>
+<area shape="rect" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag" alt="" coords="493,122,632,149"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a99e3dfb6c1619cf9d9f900d103548b1c" title=" " alt="" coords="468,173,657,199"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__h_8c.html#a907803c43efde52188070fb09bf36f4c" title="read speed setpoint from RC" alt="" coords="469,274,656,301"/>
+<area shape="rect" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="708,198,911,225"/>
+<area shape="rect" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="708,375,911,402"/>
+<area shape="rect" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector" alt="" coords="491,528,635,569"/>
+<area shape="rect" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title=" " alt="" coords="507,594,618,621"/>
+<area shape="rect" href="guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function." alt="" coords="507,477,618,503"/>
+<area shape="rect" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int)." alt="" coords="487,645,638,671"/>
+<area shape="rect" href="optical__flow__hover_8c.html#a04b77d27bd41ebc387425f8ea0d1166b" title="Get the desired Euler angles for optitrack stabilization." alt="" coords="493,426,633,453"/>
+<area shape="rect" href="optical__flow__functions_8c.html#a4e855e460d661070d0c98015f433fcd7" title="Determine and set the desired angle for constant flow control." alt="" coords="497,375,628,402"/>
+<area shape="rect" href="optical__flow__functions_8c.html#ab8a8e1a36d1906e82bd10e15b5736484" title="Set the covariance of the flow and past flow / desired angle This funciton should only be called once..." alt="" coords="509,325,616,351"/>
+<area shape="rect" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="731,249,887,275"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title=" " alt="" coords="493,1051,632,1092"/>
+<area shape="rect" href="stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model." alt="" coords="493,1116,632,1157"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title=" " alt="" coords="477,1284,648,1325"/>
+<area shape="rect" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions." alt="" coords="731,1262,888,1289"/>
+<area shape="rect" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title=" " alt="" coords="716,1331,903,1358"/>
+<area shape="rect" href="stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference." alt="" coords="483,1503,642,1544"/>
+<area shape="rect" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions." alt="" coords="729,1495,890,1522"/>
+<area shape="rect" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace" alt="" coords="728,1550,891,1577"/>
+<area shape="rect" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title=" " alt="" coords="714,1430,905,1457"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title=" " alt="" coords="502,1619,623,1646"/>
+<area shape="rect" href="stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title=" " alt="" coords="504,1670,621,1697"/>
+<area shape="rect" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status" alt="" coords="471,1721,655,1747"/>
+<area shape="rect" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity" alt="" coords="491,1771,635,1798"/>
+<area shape="rect" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions." alt="" coords="482,1822,643,1849"/>
+<area shape="rect" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity" alt="" coords="489,1873,637,1899"/>
+<area shape="rect" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix." alt="" coords="493,1923,632,1950"/>
+<area shape="rect" href="group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e" title="a = b" alt="" coords="499,1974,627,2001"/>
+<area shape="rect" href="group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492" title="o = a &#45; b" alt="" coords="503,847,622,874"/>
+<area shape="rect" href="group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3" title="o = a + b" alt="" coords="500,898,625,925"/>
+<area shape="rect" href="pprz__trig__int_8c.html#a728b04d5a78d866cd79c86b0c3c6c5a0" title=" " alt="" coords="507,999,619,1026"/>
+<area shape="rect" href="pprz__trig__int_8c.html#aab62d96cc0a5f76ed59b60d27332d663" title=" " alt="" coords="755,1091,864,1118"/>
+<area shape="rect" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title=" " alt="" coords="483,949,642,975"/>
 </map>
 </div>
 
@@ -641,16 +512,16 @@ The pitch P gain on the err_vy. </td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00189">189</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00177">177</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
 <p class="reference">References <a class="el" href="guidance__OA_8c_source.html#l00112">alpha_fil</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_BFP_OF_REAL</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="guidance__OA_8c_source.html#l00041">CMD_OF_SAT</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00042">opticflow_stab_t::desired_vx</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00043">opticflow_stab_t::desired_vy</a>, <a class="el" href="guidance__OA_8c_source.html#l00123">err_vx</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00045">opticflow_stab_t::err_vx_int</a>, <a class="el" href="guidance__OA_8c_source.html#l00124">err_vy</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00046">opticflow_stab_t::err_vy_int</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">LOGICBASED</a>, <a class="el" href="guidance__OA_8c_source.html#l00114">new_heading</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">NO_OBSTACLE_AVOIDANCE</a>, <a class="el" href="guidance__OA_8c_source.html#l00096">OA_method_flag</a>, <a class="el" href="guidance__OA_8c_source.html#l00098">opti_speed_flag</a>, <a class="el" href="guidance__OA_8c_source.html#l00129">opti_speed_read</a>, <a class="el" href="guidance__OA_8c_source.html#l00083">opticflow_stab</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00039">opticflow_stab_t::phi_igain</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00038">opticflow_stab_t::phi_pgain</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">PINGPONG</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">POT_HEADING</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="guidance__OA_8c_source.html#l00107">r_dot_new</a>, <a class="el" href="guidance__OA_8c_source.html#l00103">ref_pitch</a>, <a class="el" href="guidance__OA_8c_source.html#l00104">ref_roll</a>, <a class="el" href="guidance__OA_8h_source.html#l00052">SAFETYZONE</a>, <a class="el" href="guidance__OA_8c_source.html#l00110">speed_pot</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00908">stateGetSpeedNed_f()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00041">opticflow_stab_t::theta_igain</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00040">opticflow_stab_t::theta_pgain</a>, <a class="el" href="guidance__OA_8c_source.html#l00126">Total_Kan_x</a>, <a class="el" href="guidance__OA_8c_source.html#l00127">Total_Kan_y</a>, <a class="el" href="guidance__OA_8c_source.html#l00099">vref_max</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, and <a class="el" href="guidance__OA_8c_source.html#l00117">yaw_rate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__OA_8c_source.html#l00175">guidance_h_module_run()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="guidance__OA_8c_source.html#l00164">guidance_module_run()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_cgraph.png" border="0" usemap="#aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_cgraph" alt=""/></div>
 <map name="aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_cgraph" id="aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_cgraph">
 <area shape="rect" title="Update the controls based on a vision result." alt="" coords="5,109,99,136"/>
@@ -670,15 +541,15 @@ The pitch P gain on the err_vy. </td></tr>
 <area shape="rect" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title=" " alt="" coords="841,208,989,235"/>
 </map>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_icgraph.png" border="0" usemap="#aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_icgraph" alt=""/></div>
 <map name="aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_icgraph" id="aguidance__OA_8h_ae9523792204e84a5ff5dd0af6f49b225_icgraph">
-<area shape="rect" title="Update the controls based on a vision result." alt="" coords="233,5,327,32"/>
-<area shape="rect" href="guidance__OA_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title="Main guidance loop." alt="" coords="5,5,185,32"/>
+<area shape="rect" title="Update the controls based on a vision result." alt="" coords="219,5,312,32"/>
+<area shape="rect" href="guidance__OA_8c.html#a930fc2d7668ebfeaf878439804b73478" title="Main guidance loop." alt="" coords="5,5,171,32"/>
 </map>
 </div>
 
@@ -731,7 +602,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00096">96</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00176">serial_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00321">CN_calculate_target()</a>, <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00176">serial_update()</a>.</p>
 
 </div>
 </div>
@@ -757,7 +628,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00098">98</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>.</p>
 
 </div>
 </div>
@@ -783,7 +654,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__opticflow__hover_8c_source.html#l00087">87</a> of file <a class="el" href="guidance__opticflow__hover_8c_source.html">guidance_opticflow_hover.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="guidance__opticflow__hover_8c_source.html#l00115">guidance_h_module_enter()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00139">guidance_h_module_run()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="guidance__opticflow__hover_8c_source.html#l00151">stabilization_opticflow_vel_cb()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="guidance__opticflow__hover_8c_source.html#l00115">guidance_module_enter()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00133">guidance_module_run()</a>, <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>, and <a class="el" href="guidance__opticflow__hover_8c_source.html#l00144">stabilization_opticflow_vel_cb()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +680,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00107">107</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>.</p>
 
 </div>
 </div>
@@ -909,7 +780,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00110">110</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>.</p>
 
 </div>
 </div>
@@ -935,7 +806,7 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p class="definition">Definition at line <a class="el" href="guidance__OA_8c_source.html#l00099">99</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, and <a class="el" href="guidance__OA_8c_source.html#l00177">OA_update()</a>.</p>
 
 </div>
 </div>
@@ -945,7 +816,7 @@ The pitch P gain on the err_vy. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_e1bb5e76ffaaafe6f13f5c4932daceba.html">obstacle_avoidance</a></li><li class="navelem"><a class="el" href="guidance__OA_8h.html">guidance_OA.h</a></li>
-    <li class="footer">Generated on Tue May 21 2024 14:14:17 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 21 2024 15:05:34 for Paparazzi UAS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

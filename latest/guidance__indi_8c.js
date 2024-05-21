@@ -32,6 +32,7 @@ var guidance__indi_8c =
     [ "thrust_dyn", "guidance__indi_8c.html#ade12d600937b2d985403d94c09b3e71e", null ],
     [ "thrust_filt", "guidance__indi_8c.html#af67f625ea892ab734e4e0bfd00abac23", null ],
     [ "thrust_in", "guidance__indi_8c.html#a229063a3d344169961f5d0803de574c0", null ],
+    [ "thrust_sp", "guidance__indi_8c.html#a92c27d98d97d2547f41110b4d4e93f92", null ],
     [ "time_of_accel_sp_2d", "guidance__indi_8c.html#ada1058d9f876baa193cebc5aa30daa76", null ],
     [ "time_of_accel_sp_3d", "guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269", null ]
 ];

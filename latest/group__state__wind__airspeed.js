@@ -41,11 +41,11 @@ var group__state__wind__airspeed =
     [ "airspeed_i", "group__state__wind__airspeed.html#ga162d7334f4d02234f786432d17099ca7", null ],
     [ "angle_of_attack_f", "group__state__wind__airspeed.html#gae0942f9776a840e9c063ea6fc88b9078", null ],
     [ "sideslip_f", "group__state__wind__airspeed.html#gac66f1a9684122eaae083c3dae67a8ed2", null ],
-    [ "vect2", "group__state__wind__airspeed.html#gaaa750191c2ea35deae035b7934537729", null ],
-    [ "vect2", "group__state__wind__airspeed.html#ga22434173a9d3a59b1a18c4bb3dade734", null ],
-    [ "vect3", "group__state__wind__airspeed.html#ga847aff9db396872802995ac59454b5bf", null ],
-    [ "vect3", "group__state__wind__airspeed.html#ga6347178c99ee7f12739532fdc53229bd", null ],
+    [ "vect2", "group__state__wind__airspeed.html#ga330b2a075bef5319511a2615b6464413", null ],
+    [ "vect2", "group__state__wind__airspeed.html#gaad08a367e5429b4644f9920dc3641bd6", null ],
+    [ "vect3", "group__state__wind__airspeed.html#gacc900dc3901a705bf1112f23ce4579bb", null ],
+    [ "vect3", "group__state__wind__airspeed.html#gad77794552bfdc1100f35c205a33273f2", null ],
     [ "wind_air_status", "group__state__wind__airspeed.html#ga4fc58d1ad5b89c1cacf4dd22d2f5864d", null ],
-    [ "windspeed_f", "group__state__wind__airspeed.html#ga0177517ab11c50a8f16b66e12e8435b5", null ],
-    [ "windspeed_i", "group__state__wind__airspeed.html#ga0d51a71ee6dc92eed09d31149fbb53d8", null ]
+    [ "windspeed_f", "group__state__wind__airspeed.html#gaba54b25770da19c9ac0530abe8533de5", null ],
+    [ "windspeed_i", "group__state__wind__airspeed.html#gaac1c5e25cb8fad703e9c6a868b738869", null ]
 ];
